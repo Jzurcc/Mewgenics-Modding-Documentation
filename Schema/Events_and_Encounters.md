@@ -66,7 +66,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Nodes}`](./Engine_Events.md) | Block | **(Supports Multiple)** An event outcome node. See Engine_Events.md. |  |
 | [`common`](#context-common) | Block | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
 | [`rare`](#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 72 |
@@ -107,7 +106,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Nodes}`](./Engine_Events.md) | Block | **(Supports Multiple)** An event outcome node. See Engine_Events.md. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 608 |
 | `set_frame` | Number |  | 150 |
 | [`self_status_next_fight`](#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
@@ -180,7 +178,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Nodes}`](./Engine_Events.md) | Block | **(Supports Multiple)** An event outcome node. See Engine_Events.md. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 612 |
 | `set_frame` | Number |  | 179 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 124 |
@@ -273,7 +270,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Nodes}`](./Engine_Events.md) | Block | **(Supports Multiple)** An event outcome node. See Engine_Events.md. |  |
 | [`reward`](#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
 | `set_frame` | Number |  | 285 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 185 |
@@ -348,7 +344,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Nodes}`](./Engine_Events.md) | Block | **(Supports Multiple)** An event outcome node. See Engine_Events.md. |  |
 | [`reward`](#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
 | `set_frame` | Number |  | 219 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 38 |
@@ -417,7 +412,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Nodes}`](./Engine_Events.md) | Block | **(Supports Multiple)** An event outcome node. See Engine_Events.md. |  |
 | [`options`](#context-options) | Block | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 208 |
 | [`setup`](#context-setup) | Block | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
@@ -1528,7 +1522,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 5 |
 
@@ -1777,7 +1770,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `count` | Number | Quantity. | 3 |
 

@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: Engine: Passive IDs
 
-> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Engine: Passive IDs
 
@@ -8,7 +8,7 @@ This document lists every confirmed Passive ID found across all game data files.
 
 > **Note:** With 910+ unique passive IDs, this is one of the largest systems in the game. Many passives are the names of other blocks (e.g. `AddStatusToBasicAttack`) — granting the passive gives the character that reactive behaviour permanently.
 
-### All Confirmed `{Passives}` Values
+### All Confirmed `[passive_id]` Values
 
 <details>
 <summary><b>Expand</b></summary>
@@ -229,7 +229,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `Burn` | Number | Applies or references the 'Burn' effect/state. |
 | `CCImmunity` | Number | Applies the 'CCImmunity' effect. |
 | `CanLevelUpWhenDead` | Number | Applies or references the 'CanLevelUpWhenDead' effect/state. |
-| `CanMutateTo` | Array | Applies or references the 'CanMutateTo' effect/state. |
+| `CanMutateTo` | Enum | Applies or references the 'CanMutateTo' effect/state. |
 | `CanRemoveCursedItems` | Number |  |
 | `CanShield` | Number | Applies or references the 'CanShield' effect/state. |
 | `CantCatchDiseases` | Number | Applies or references the 'CantCatchDiseases' effect/state. |
@@ -239,7 +239,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `CapDamageFromAllies` | Number | Applies the 'CapDamageFromAllies' effect. |
 | `CapMovementAbilityRange` | Number | Applies or references the 'CapMovementAbilityRange' effect/state. |
 | `CapReceivedDamage` | Number | Applies or references the 'CapReceivedDamage' effect/state. |
-| `CapTechSpent` | Number | Applies the 'CapTechSpent' effect. |
+| `CapTechSpent` | Number | Applies or references the 'CapTechSpent' effect/state. |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. |
 | `CatAPultAnimation` | Block | Applies the 'CatAPultAnimation' effect. |
 | `CatPartsSizeScale` | Block | Applies or references the 'CatPartsSizeScale' effect/state. |
@@ -253,7 +253,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `ChanceToAmbush` | Number | Applies or references the 'ChanceToAmbush' effect/state. |
 | `ChanceToBackflip` | Block | Applies or references the 'ChanceToBackflip' effect/state. |
 | `ChanceToBlock` | Number | Applies or references the 'ChanceToBlock' effect/state. |
-| `ChanceToBlockAndCounter` | Block | Applies or references the 'ChanceToBlockAndCounter' effect/state. |
+| `ChanceToBlockAndCounter` | Number | Applies or references the 'ChanceToBlockAndCounter' effect/state. |
 | `ChanceToDisableActionsIfNotCharmed` | Number | Applies or references the 'ChanceToDisableActionsIfNotCharmed' effect/state. |
 | `ChanceToForceEvent` | Block | Applies or references the 'ChanceToForceEvent' effect/state. |
 | `ChanceToFormChangeOnAbilityDamage` | Block | Reaction: Probability to change forms when taking ability damage. |
@@ -324,7 +324,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `DicerArt` | Array | Applies or references the 'DicerArt' effect/state. |
 | `DieWhenOnlyGolemsLeft` | Number | Applies or references the 'DieWhenOnlyGolemsLeft' effect/state. |
 | `DieWhenSpawnerDies` | Number | Applies or references the 'DieWhenSpawnerDies' effect/state. |
-| `DiesToElement` | Block | Vulnerability: Character dies instantly if hit by this element. |
+| `DiesToElement` | Enum | Vulnerability: Character dies instantly if hit by this element. |
 | `DiesToPiercingAndSpikes` | Block | Vulnerability: Character dies instantly if hit by piercing attacks or spikes. |
 | `DigestDeadBodies` | Enum | Applies or references the 'DigestDeadBodies' effect/state. |
 | `DirtyClaws` | Number | Applies the 'DirtyClaws' effect. |
@@ -338,7 +338,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `DisplayDangerAOE` | Enum | Applies or references the 'DisplayDangerAOE' effect/state. |
 | `DissuadeInstakills` | Number | Applies or references the 'DissuadeInstakills' effect/state. |
 | `Divide4OnDeath` | Enum | Applies or references the 'Divide4OnDeath' effect/state. |
-| `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. |
+| `DivineShield` | Number | Applies the 'DivineShield' effect. |
 | `DivineShieldPickup` | Number | Applies or references the 'DivineShieldPickup' effect/state. |
 | `DodgeChance` | Number |  |
 | `DodgeChanceWithBlindSpot` | Number | Applies or references the 'DodgeChanceWithBlindSpot' effect/state. |
@@ -430,7 +430,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `FollowUp` | Enum | Applies the 'FollowUp' effect. |
 | `ForceAttack` | Number | Forces the character to execute an immediate attack. |
 | `ForceDodgeEverything` | Number | Applies or references the 'ForceDodgeEverything' effect/state. |
-| `ForceSpecificInjury` | Equation | Applies the 'ForceSpecificInjury' effect. |
+| `ForceSpecificInjury` | Enum | Applies the 'ForceSpecificInjury' effect. |
 | `ForceUseAbility` | Enum | Applies the 'ForceUseAbility' effect. |
 | `FormChange` | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). |
 | `FormChangeDuringWeatherElement` | Block | Logic: Changes form automatically during specific weather conditions. |
@@ -541,7 +541,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `LimitHeal` | Number | Applies or references the 'LimitHeal' effect/state. |
 | `LimitSelfKnockbackDamage` | Number | Applies the 'LimitSelfKnockbackDamage' effect. |
 | `LimitedTileTrail` | Enum | Applies the 'LimitedTileTrail' effect. |
-| `LineOfSightTrueSightAura` | Number | Applies the 'LineOfSightTrueSightAura' effect. |
+| `LineOfSightTrueSightAura` | Enum | Applies the 'LineOfSightTrueSightAura' effect. |
 | `LobbedHook` | Number | Applies the 'LobbedHook' effect. |
 | `LockOrientationFaceTile` | Array | Applies or references the 'LockOrientationFaceTile' effect/state. |
 | `LoopingSoundWhileAlive` | Enum | Applies or references the 'LoopingSoundWhileAlive' effect/state. |
@@ -588,7 +588,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. |
 | `MoveRandomly` | Number | Applies the 'MoveRandomly' effect. |
 | `MoveSpeedMultiplier` | Enum | Applies or references the 'MoveSpeedMultiplier' effect/state. |
-| `MoveTowardsDamageSource` | Block | AI Movement: Closes distance on the last source of damage. |
+| `MoveTowardsDamageSource` | Enum | AI Movement: Closes distance on the last source of damage. |
 | `MoveTowardsKillers` | Enum | AI Movement: Seeks out entities that have recently killed an ally. |
 | `MoveWhenDamaged` | Enum | AI Movement: Forces a reposition when taking damage. |
 | `MovementReaction` | Block | Reaction: Triggers an effect or ability when forced to move. |
@@ -661,7 +661,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `PoisonMultiplier` | Number | Applies the 'PoisonMultiplier' effect. |
 | `PoisonThorns` | Number | Applies or references the 'PoisonThorns' effect/state. |
 | `PoopWhenHit` | Enum |  |
-| `PreventSpecificInjury` | Equation | Applies or references the 'PreventSpecificInjury' effect/state. |
+| `PreventSpecificInjury` | Enum | Applies or references the 'PreventSpecificInjury' effect/state. |
 | `PrioritizeAggroTarget` | Number | Applies or references the 'PrioritizeAggroTarget' effect/state. |
 | `PrioritizeFarAwayTargets` | Number | Applies or references the 'PrioritizeFarAwayTargets' effect/state. |
 | `PrioritizeHitDifferentTargets` | Number | Applies or references the 'PrioritizeHitDifferentTargets' effect/state. |
@@ -711,7 +711,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `ReplaceSpawnedObjects` | Array | Applies the 'ReplaceSpawnedObjects' effect. |
 | `ReplaceSpellsWhenDead` | Enum | Applies the 'ReplaceSpellsWhenDead' effect. |
 | `RerollItemsOnBattleEnd` | Number | Applies or references the 'RerollItemsOnBattleEnd' effect/state. |
-| `ReturnBoundItemOnBattleEnd` | Number | Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state. |
+| `ReturnBoundItemOnBattleEnd` | Number |  |
 | `RevengeDamage` | Block |  |
 | `ReviveNextRound` | Block | Queues the character to be resurrected at the start of the next combat round. |
 | `ReviveOnWin` | Number | Applies the 'ReviveOnWin' effect. |
@@ -827,7 +827,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `StatusCollector` | Block | Passive: Gains benefits based on the number of statuses applied to them. |
 | `StatusDamagers` | Block | Event Trigger: Applies nested statuses to damagers. |
 | `StatusEachRoundBegin` | Block |  |
-| `StatusEachRoundEnd` | Block |  |
+| `StatusEachRoundEnd` | Block | Applies or references the 'StatusEachRoundEnd' effect/state. |
 | `StatusEachTurnBegin` | Block | Event Trigger: Applies nested statuses to each turn begin. |
 | `StatusEachTurnBeginIfHasStatus` | Block | Event Trigger: Applies a status at the start of the turn if a prerequisite status is met. |
 | `StatusEachTurnEnd` | Block | Applies or references the 'StatusEachTurnEnd' effect/state. |
@@ -1006,7 +1006,7 @@ This document lists every confirmed Passive ID found across all game data files.
 | `XIsConsumedCharacterMaxHP` | Number | Applies or references the 'XIsConsumedCharacterMaxHP' effect/state. |
 | `XIsCountDeaths` | Number | Applies or references the 'XIsCountDeaths' effect/state. |
 | `XIsCountStatusStacks` | Enum | Applies or references the 'XIsCountStatusStacks' effect/state. |
-| `XIsFormulaLockedUntilComplete` | Equation | Applies or references the 'XIsFormulaLockedUntilComplete' effect/state. |
+| `XIsFormulaLockedUntilComplete` | Enum | Applies or references the 'XIsFormulaLockedUntilComplete' effect/state. |
 | `XIsFreeArmorSlots` | Number | Applies or references the 'XIsFreeArmorSlots' effect/state. |
 | `XIsIncreaseEachTurn` | Number | Applies or references the 'XIsIncreaseEachTurn' effect/state. |
 | `XIsLivingAlliesWithTag` | Enum | Applies or references the 'XIsLivingAlliesWithTag' effect/state. |
@@ -1019,6 +1019,8 @@ This document lists every confirmed Passive ID found across all game data files.
 | `XIsTimesDamageTaken` | Number | Applies or references the 'XIsTimesDamageTaken' effect/state. |
 | `YOffset` | Enum | Applies or references the 'YOffset' effect/state. |
 | `ZeroKnockbackDamage` | Number | Applies or references the 'ZeroKnockbackDamage' effect/state. |
+| `{Damage Blocks}` | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |
+| `{Passives}` | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |
 
 </details>
 

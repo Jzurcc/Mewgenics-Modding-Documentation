@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: Engine: Graphics Block
 
-> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Engine: Graphics Block
 
@@ -22,7 +22,7 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `alt_animations` | Array |  |
 | `always_huge_mask` | Boolean |  |
 | `always_play_animations` | Boolean | Bypasses speed-up/skip logic. |
-| `animate_name` | Enum | Animates the ability name text on cast. |
+| `animate_name` | String | Animates the ability name text on cast. |
 | `animation` | Enum | The primary flash animation label triggered. |
 | `animation_in` | Enum | Used for transition states (like burrowing). |
 | `animation_out` | Enum | Used for transition states (like burrowing). |
@@ -82,7 +82,7 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `fall_randomize_timing` | Enum |  |
 | `first_castpoint_is_self_damage_only` | Boolean |  |
 | `fixed_jump_height` | Number |  |
-| `fixed_jump_speed` | Enum |  |
+| `fixed_jump_speed` | Number |  |
 | `four_way_animations` | Boolean |  |
 | `full_jump_animation` | Enum |  |
 | `full_jump_sync_frames` | Number |  |
@@ -95,7 +95,7 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `hud_palette` | Number |  |
 | `ignore_slowtiles` | Boolean |  |
 | `jump_attack_animation` | Enum | Overrides for jump physics. |
-| `jump_height_multiplier` | Number | Overrides for jump physics. |
+| `jump_height_multiplier` | Enum | Overrides for jump physics. |
 | `jump_speed_multiplier` | Number |  |
 | `jump_start_animation` | Enum |  |
 | `land_animation` | Enum |  |

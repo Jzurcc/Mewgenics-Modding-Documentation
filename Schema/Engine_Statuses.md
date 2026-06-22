@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: Engine: Status IDs
 
-> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Engine: Status IDs
 
@@ -8,15 +8,15 @@ This document lists every confirmed Status ID found across all game data files. 
 
 > **Note:** This list reflects confirmed base-game usage. Many additional statuses likely exist or can be synthesized by the engine.
 
-### All Confirmed `{Statuses}` Values
+### All Confirmed `[status_id]` Values
 
 <details>
 <summary><b>Expand</b></summary>
 
 | ID | Type | Notes |
 | :--- | :--- | :--- |
-| `AbilityOnBattleStart` | Enum | Applies or references the 'AbilityOnBattleStart' effect/state. |
-| `AbilityOnBattleStart_Immediate` | Enum | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. |
+| `AbilityOnBattleStart` | Enum/String | Applies or references the 'AbilityOnBattleStart' effect/state. |
+| `AbilityOnBattleStart_Immediate` | Enum/String | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. |
 | `AddInitiative` | Number | Applies or references the 'AddInitiative' effect/state. |
 | `AddRandomEliteBuff` | Number |  |
 | `AddStartingMana` | Number | Applies or references the 'AddStartingMana' effect/state. |
@@ -32,7 +32,7 @@ This document lists every confirmed Status ID found across all game data files. 
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. |
 | `BleedThorns` | Number | Applies or references the 'BleedThorns' effect/state. |
 | `BlessingOfPeace` | Number | Applies or references the 'BlessingOfPeace' effect/state. |
-| `Blind` | Number |  |
+| `Blind` | Number | Applies or references the 'Blind' effect/state. |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. |
 | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. |
 | `BounceObject` | Enum | Spawns a physics object that visually bounces off the target. |
@@ -50,14 +50,14 @@ This document lists every confirmed Status ID found across all game data files. 
 | `Burn` | Number | Applies or references the 'Burn' effect/state. |
 | `ChanceToBreak` | Number | Applies the 'ChanceToBreak' effect. |
 | `ChangeTile` | Enum |  |
-| `ChangeTileUnderCharacterAtStart` | Enum | Applies or references the 'ChangeTileUnderCharacterAtStart' effect/state. |
+| `ChangeTileUnderCharacterAtStart` | Enum/String | Applies or references the 'ChangeTileUnderCharacterAtStart' effect/state. |
 | `ChangeTilesUnder` | Enum | Applies or references the 'ChangeTilesUnder' effect/state. |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. |
 | `CharismaUp` | Number | Applies or references the 'CharismaUp' effect/state. |
-| `Charmed` | Number | Applies the 'Charmed' effect. |
+| `Charmed` | Array | Applies the 'Charmed' effect. |
 | `Cleanse` | Number | Applies the 'Cleanse' effect. |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. |
-| `Confusion` | Number | Applies the 'Confusion' effect. |
+| `Confusion` | Array |  |
 | `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. |
 | `Consumed` | Block | State triggered when the entity is eaten/consumed. |
 | `Craft` | Block | Synthesizes or spawns a new item from a specific pool. |
@@ -71,7 +71,7 @@ This document lists every confirmed Status ID found across all game data files. 
 | `DestroyEquipmentAndAttachParasite` | Block | Removes an equipped item and replaces it with a parasite from a specified pool. |
 | `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. |
 | `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. |
-| `DiminishingHealthRegen` | Number | Applies or references the 'DiminishingHealthRegen' effect/state. |
+| `DiminishingHealthRegen` | Number | Applies the 'DiminishingHealthRegen' effect. |
 | `DistanceBonusDamage` | Block | Applies the 'DistanceBonusDamage' effect. |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. |
 | `DoDamage` | Block | Explicitly triggers a secondary damage instance independent of the main attack. |
@@ -96,7 +96,7 @@ This document lists every confirmed Status ID found across all game data files. 
 | `ForceUseAbility` | Enum | Applies or references the 'ForceUseAbility' effect/state. |
 | `ForceUseAbilityOnTarget` | Block | Applies or references the 'ForceUseAbilityOnTarget' effect/state. |
 | `FormChange` | Block | Transforms the character into a different state or form (e.g., Rage, HasCat). |
-| `Freeze` | Number | Applies the 'Freeze' effect. |
+| `Freeze` | Array | Applies the 'Freeze' effect. |
 | `FullHeal` | Number | Applies the 'FullHeal' effect. |
 | `GainCoins` | Number | Applies or references the 'GainCoins' effect/state. |
 | `GainCoinsRange` | Block | Grants the player a randomized amount of coins within a min/max range. |
@@ -111,10 +111,10 @@ This document lists every confirmed Status ID found across all game data files. 
 | `IncAuxCounterClamped` | Block | Increments a generic auxiliary counter on the character, capped by a maximum value. |
 | `Infested` | Number | Applies or references the 'Infested' effect/state. |
 | `Instakill` | Array |  |
-| `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. |
+| `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. |
 | `KineticSpikes` | Number | Applies or references the 'KineticSpikes' effect/state. |
-| `KnockOutCoin` | Array | Forces the target to drop coins. |
-| `KnockUpAndAway` | Block |  |
+| `KnockOutCoin` | Number | Forces the target to drop coins. |
+| `KnockUpAndAway` | Block | Displaces the target vertically and horizontally away from the source. |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. |
 | `KnockbackIfCrit` | Block | Applies or references the 'KnockbackIfCrit' effect/state. |
 | `LeaveBehindRockOnKnockback` | Number | Applies the 'LeaveBehindRockOnKnockback' effect. |
@@ -122,14 +122,14 @@ This document lists every confirmed Status ID found across all game data files. 
 | `LeechPercent` | Number | Applies the 'LeechPercent' effect. |
 | `Leeches` | Number |  |
 | `Lifesteal` | Number | Applies or references the 'Lifesteal' effect/state. |
-| `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. |
+| `LuckUp` | Number | Applies the 'LuckUp' effect. |
 | `Madness` | Number | Applies the Madness debuff/status effect. |
-| `MagicWeakness` | Number | Applies or references the 'MagicWeakness' effect/state. |
+| `MagicWeakness` | Number | Applies the 'MagicWeakness' effect. |
 | `ManaGain` | Equation | Applies or references the 'ManaGain' effect/state. |
 | `ManaGainRange` | Block | Applies or references the 'ManaGainRange' effect/state. |
 | `ManaLeeches` | Number | Applies or references the 'ManaLeeches' effect/state. |
 | `Marked` | Number | Applies or references the 'Marked' effect/state. |
-| `MissChance` | Number | Applies or references the 'MissChance' effect/state. |
+| `MissChance` | Number |  |
 | `MoveQuivered` | Number | Applies or references the 'MoveQuivered' effect/state. |
 | `MovementUp` | Number | Applies the 'MovementUp' effect. |
 | `NextBattleStatus` | Block | Applies the 'NextBattleStatus' effect. |
@@ -148,11 +148,11 @@ This document lists every confirmed Status ID found across all game data files. 
 | `PermanentConfusion` | Number | Applies or references the 'PermanentConfusion' effect/state. |
 | `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. |
 | `PermanentDexterity` | Number | Applies the 'PermanentDexterity' effect. |
-| `PermanentIntelligence` | Number | Applies or references the 'PermanentIntelligence' effect/state. |
+| `PermanentIntelligence` | Number |  |
 | `PermanentLuck` | Number | Applies or references the 'PermanentLuck' effect/state. |
 | `PermanentMadness` | Number | Applies the 'PermanentMadness' effect. |
 | `PermanentSpeed` | Number | Applies the 'PermanentSpeed' effect. |
-| `PermanentStrength` | Number | Applies or references the 'PermanentStrength' effect/state. |
+| `PermanentStrength` | Number | Applies the 'PermanentStrength' effect. |
 | `Petrify` | Number | Applies the 'Petrify' effect. |
 | `Piercing` | Number | Applies the 'Piercing' effect. |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. |
@@ -171,7 +171,7 @@ This document lists every confirmed Status ID found across all game data files. 
 | `RandomPermanentStatsDistinct` | Block |  |
 | `RandomStatDown` | Number |  |
 | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. |
-| `RandomStatusFromPool` | Block | Selects and applies a random status effect from the provided nested block. |
+| `RandomStatusFromPool` | Block |  |
 | `RandomTaggedMutation` | Enum | Applies or references the 'RandomTaggedMutation' effect/state. |
 | `RangeUp` | Number | Applies the 'RangeUp' effect. |
 | `Reanimate` | Number | Applies the 'Reanimate' effect. |
@@ -187,22 +187,22 @@ This document lists every confirmed Status ID found across all game data files. 
 | `RemoveStatusStacks` | Block | Logic: Removes stacks of a specific status effect. |
 | `RepairAll` | Number | Applies or references the 'RepairAll' effect/state. |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. |
-| `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. |
+| `RepairWeapon` | Array | Applies or references the 'RepairWeapon' effect/state. |
 | `RepairWeaponCondition` | Number | Applies the 'RepairWeaponCondition' effect. |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. |
 | `ReviveNextRound` | Block | Queues the character to be resurrected at the start of the next combat round. |
 | `Rot` | Number | Applies or references the 'Rot' effect/state. |
 | `SafeDie` | Number | Applies or references the 'SafeDie' effect/state. |
-| `ScatterCoins` | Array |  |
+| `ScatterCoins` | Number |  |
 | `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. |
 | `SetItemAux` | Block | Applies or references the 'SetItemAux' effect/state. |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. |
-| `Sleep` | Number | Applies the 'Sleep' effect. |
+| `Sleep` | Number | Applies or references the 'Sleep' effect/state. |
 | `Slow` | Number | Applies or references the 'Slow' effect/state. |
 | `SoulLink` | Number | Applies the 'SoulLink' effect. |
 | `SpawnBearTrapOnMiss` | Number | Applies the 'SpawnBearTrapOnMiss' effect. |
-| `SpawnCoinAnywhere` | Number | Applies the 'SpawnCoinAnywhere' effect. |
+| `SpawnCoinAnywhere` | Number | Applies or references the 'SpawnCoinAnywhere' effect/state. |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. |
 | `SpeedUp_WithoutInitiative` | Number | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. |
 | `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. |
@@ -212,10 +212,10 @@ This document lists every confirmed Status ID found across all game data files. 
 | `StackingSandstorm` | Number |  |
 | `StatusAfterXStacks` | Block | Applies or references the 'StatusAfterXStacks' effect/state. |
 | `StatusGroup` | Block | Groups multiple status effects together for batch application. |
-| `Stealth` | Number | Applies the 'Stealth' effect. |
+| `Stealth` | Array | Applies or references the 'Stealth' effect/state. |
 | `StealthUntilBasicAttack` | Number | Applies or references the 'StealthUntilBasicAttack' effect/state. |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. |
-| `Stun` | Number | Applies the 'Stun' effect. |
+| `Stun` | Array |  |
 | `TakeBonusTurnWithStatus` | Block | Grants the character an immediate extra turn while afflicted with specific statuses. |
 | `TakeExtraTurn` | Number | Applies the 'TakeExtraTurn' effect. |
 | `Tangled` | Array | Applies a tangled/ensnared status effect, often modifying visual sprites. |
@@ -233,7 +233,7 @@ This document lists every confirmed Status ID found across all game data files. 
 | `Temporary` | Block | A wrapper block for applying status effects that automatically expire. |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. |
 | `TransformWeapon` | Block | Transforms the equipped weapon into another specific weapon state. |
-| `UseAbility` | Enum |  |
+| `UseAbility` | Enum | Forces the character or target to instantly use a specified ability. |
 | `UseAbility_Madness` | Enum | Applies the 'UseAbility_Madness' effect. |
 | `UseAbility_NonStack` | Enum | Applies or references the 'UseAbility_NonStack' effect/state. |
 | `VaporizeInanimate` | Number |  |
@@ -242,6 +242,9 @@ This document lists every confirmed Status ID found across all game data files. 
 | `Webbed` | Number | Applies or references the 'Webbed' effect/state. |
 | `Wet` | Number | Applies or references the 'Wet' effect/state. |
 | `Zombie` | Number |  |
+| `{Damage Blocks}` | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |
+| `{Passives}` | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |
+| `{Statuses}` | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |
 
 </details>
 
