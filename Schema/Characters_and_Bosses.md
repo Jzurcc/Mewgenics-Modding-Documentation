@@ -230,6 +230,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Graphics.md`](./Engine_Graphics.md) for the full list of valid nested blocks.
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1017,6 +1019,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1562,6 +1566,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Context: `Consumed`
+
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3660,6 +3666,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `CreateGlobalModifiers`
 
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_GlobalModifiers.md`](./Engine_GlobalModifiers.md) for the full list of valid nested blocks.
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3956,6 +3964,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Context: `Else`
+
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7331,6 +7341,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Context: `damage_instance`
+
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Damage.md`](./Engine_Damage.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>

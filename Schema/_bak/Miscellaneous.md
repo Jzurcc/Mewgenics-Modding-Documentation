@@ -162,6 +162,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `reward`
 
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -201,6 +203,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Context: `common`
+
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -273,6 +277,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Context: `rare`
+
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>

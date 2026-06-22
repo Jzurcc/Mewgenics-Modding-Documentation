@@ -64,6 +64,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -143,6 +145,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Context: `Else`
+
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>

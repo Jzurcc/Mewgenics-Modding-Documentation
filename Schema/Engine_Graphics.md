@@ -4,6 +4,8 @@
 
 This document defines the `graphics {}` schema. This block configures all visual and animation properties for an ability, character, or class. It is shared across Abilities & Spells, Characters & Bosses, and Cat Classes.
 
+> **Referenced by:** [`graphics` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-graphics), [`graphics` (Cat_Classes)](./Cat_Classes.md#context-graphics), [`graphics` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-graphics)
+
 ### Valid Property Keys
 
 <details>

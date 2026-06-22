@@ -4,6 +4,8 @@
 
 This document defines the shared schema for all Damage Instance blocks (`damage_instance`, `splash_damage`, `self_damage`, `bonk_damage`). Each of these blocks configures a discrete hit: its base damage, element, knockback, accuracy, and any on-hit effects.
 
+> **Referenced by:** [`damage_instance` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-damage_instance), [`self_damage` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-self_damage), [`splash_damage` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-splash_damage), [`bonk_damage` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-bonk_damage), [`damage_instance` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-damage_instance), [`damage_instance` (Items_and_Equipment)](./Items_and_Equipment.md#context-damage_instance)
+
 ### Valid Property Keys
 
 <details>
@@ -31,7 +33,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | [`final_hit_bonus_damage`](./Math_Equations.md) | Equation | Extra damage applied on the last hit of a multihit. |
 | `force_adjacent_and_diagonal_contact` | Boolean | Treats diagonal hits as physical contact. |
 | `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). |
-| `force_no_knockback` | Boolean |  |
+| `force_no_knockback` | Boolean | Prevents the target from being pushed. |
 | `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. |
 | `heal` | Number | Restores health instead of dealing damage. |
 | `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. |

@@ -41,6 +41,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
+> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Graphics.md`](./Engine_Graphics.md) for the full list of valid nested blocks.
+
 <details>
 <summary><b>Expand</b></summary>
 

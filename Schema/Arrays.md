@@ -394,6 +394,37 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ Holy ]`
 `[ Holy ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `Fire` | |
+| `Holy` | |
+| `Explosion` | |
+| `Electric` | |
+| `Wind` | |
+| `Ice` | |
+| `Water` | |
+| `Gravity` | |
+| `Earth` | |
+| `Napalm` | |
+| `Grass` | |
+| `Rock` | |
+| `Mutate` | |
+| `Poison` | |
+| `Metal` | |
+| `Bloom` | |
+| `Dust` | |
+| `Heat` | |
+| `Spikes` | |
+| `Break_Web` | |
+| `Conducted` | |
+| `HOLY` | |
+| `Lesser_Water` | |
+| `Quake` | |
+| `Shadow` | |
+| `dont_break_tentacles` | |
+
 </details>
 
 ---
@@ -411,6 +442,640 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ BirdFly ]`
 `[ SpawnBomb BombRatTurtle RockToss_BomberRat ]`
 `[ TrampleDash MoveOne ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `MoveOne` | |
+| `DoNothing` | |
+| `DefaultMove` | |
+| `CaveCatEnrageOne` | |
+| `CaveCatEnrageTwo` | |
+| `Magnetize` | |
+| `ZaratanaVSRevenge` | |
+| `BombRatTurtle` | |
+| `CaveBabyFoodMove` | |
+| `CaveBabyGrow` | |
+| `CaveManChestPound` | |
+| `CaveManPickupSpear` | |
+| `CaveManSpearRun` | |
+| `CaveManTransform` | |
+| `CaveWomanBirth` | |
+| `CaveWomanDrop` | |
+| `CaveWomanDropTransform` | |
+| `CaveWomanGrab` | |
+| `CaveWomanThrow` | |
+| `ChainDash` | |
+| `ClotFailEvolve` | |
+| `CrowFlutter` | |
+| `DCBirthSquirrel` | |
+| `DCSquirrelForm` | |
+| `DrinkUp` | |
+| `Guillotina2Rage` | |
+| `LabPillarDrop` | |
+| `MegafetusMelee` | |
+| `MoveTwo` | |
+| `PyrophinaSoloFlamethrower` | |
+| `PyrophinaVSRun` | |
+| `PyrophinaVSWeatherRoar` | |
+| `ReaperRevenge` | |
+| `Reload` | |
+| `RockToss_BomberRat` | |
+| `RockToss_ColorlessCat` | |
+| `RockToss_ColorlessCat_AsCloseAsPossible` | |
+| `SabertoothCatTransformSwipe` | |
+| `ShamblerToss` | |
+| `Shove` | |
+| `SpawnBomb` | |
+| `Spin_Enemy` | |
+| `SwapPositions_TankCat` | |
+| `TrampleDash` | |
+| `WereManPounce` | |
+| `WereManTransformSwipe` | |
+| `WolfLeap` | |
+| `YeetTowardsBuddy` | |
+| `ZaratanaSoloBombardment` | |
+| `ZaratanaVSExitTurtle` | |
+| `AZ_BreakArm` | |
+| `AZ_BreakLeg` | |
+| `AZ_Jump` | |
+| `AZ_LoseHead` | |
+| `AZ_Scream` | |
+| `AlienBeastEat` | |
+| `AlienBeastGoop` | |
+| `AlienBeastMoveOne` | |
+| `AlienBeastOpenEyes` | |
+| `AlienBeastPuke` | |
+| `AlienBeastRampage` | |
+| `AlienBeastScream` | |
+| `AnkyloSpin` | |
+| `BBBless` | |
+| `BBCut` | |
+| `BBPickupCrown` | |
+| `BBPullBomb` | |
+| `BBSpin` | |
+| `BBToss` | |
+| `BBTransformMutant` | |
+| `BBTransformZealot` | |
+| `BHoleSuck` | |
+| `BadBone_copy` | |
+| `BearTrap_CaveBaby` | |
+| `BearTrap_Enemy` | |
+| `BearTrap_Enemy_Cantrip` | |
+| `BecomeTheDestroyer` | |
+| `BellyPound` | |
+| `BirdFly` | |
+| `BirthwortHeal` | |
+| `BirthwortReactionShot` | |
+| `BirthwortTrample` | |
+| `BloatEyeMovement2` | |
+| `BloatLeap` | |
+| `BloatLoseFirstEye` | |
+| `BloatLoseSecondEye` | |
+| `BloatSideLaser` | |
+| `BloatyExplodey` | |
+| `BoomerCatExplode` | |
+| `BoyDinoCry` | |
+| `BoyDinoHeadBash` | |
+| `BrambleBabyEntangle` | |
+| `BumbleButt` | |
+| `BumblefootAttemptEatCat` | |
+| `BumblefootBoneShot` | |
+| `BumblefootEatCat` | |
+| `BumblefootEatCorpse` | |
+| `BumblefootLeap` | |
+| `BungaEatCat` | |
+| `BungaEntrance` | |
+| `BungaRoar` | |
+| `BungaSwipe` | |
+| `ButtFart` | |
+| `ButtFlip` | |
+| `ButtWeb` | |
+| `ButtWeb_AlreadyEnraged` | |
+| `CBReload` | |
+| `CBShoot_ZodiacStyle` | |
+| `CHCry` | |
+| `CHSpawn` | |
+| `CHuskCatShade` | |
+| `CHuskDrop` | |
+| `CHuskDropFail` | |
+| `CHuskGrab` | |
+| `CanCreeperSlide` | |
+| `CancerExplode` | |
+| `CatCall` | |
+| `CatGoop` | |
+| `CaveChiefBat` | |
+| `CaveChiefFear` | |
+| `CaveChiefRally` | |
+| `CaveMom_Heal` | |
+| `CaveMom_TossDad` | |
+| `CaveMom_TossElsewhere` | |
+| `CerberubsBarrage` | |
+| `CerberubsCalm` | |
+| `CerberubsShotgunReaction` | |
+| `CerberubsShotgunReactionX` | |
+| `CerberubsStraightReaction` | |
+| `CerberubsThrow` | |
+| `ChaosSpawnIn` | |
+| `ChaosSwitchForms` | |
+| `ChaosSwitchSides` | |
+| `CherubAttract` | |
+| `CherubDoom` | |
+| `CherubimLeave` | |
+| `CherubimReturn` | |
+| `ChubsGoop` | |
+| `ChubsRage` | |
+| `ChumShot_Maggot` | |
+| `ClotEvolve` | |
+| `ClotEvolveCatCopy` | |
+| `CollectiveCounter` | |
+| `ColorlessCat_BoulderDrop` | |
+| `CoreFreakFury` | |
+| `Counterspell` | |
+| `CovenFamine` | |
+| `CovenPestilence` | |
+| `CovenRise1` | |
+| `CovenRise2` | |
+| `CovenRise3` | |
+| `CovenRise4` | |
+| `CovenSummon` | |
+| `CovenWar` | |
+| `CraterCreeperSlide` | |
+| `CrowFlap` | |
+| `CrowFlap2` | |
+| `CrowFlap3` | |
+| `CrowFlutter2` | |
+| `CrowFlutter3` | |
+| `CultistCut` | |
+| `CutterCut` | |
+| `D6Confused` | |
+| `D6Fizzle` | |
+| `D6Laser` | |
+| `D6Poop` | |
+| `D6Quake` | |
+| `D6Storm` | |
+| `D6Wrath` | |
+| `DCAeroblast` | |
+| `DCT_SummonCrow` | |
+| `DH_MeatHook` | |
+| `DbgBackgroundTransitionTest` | |
+| `DbgChaosSwitchFormsA` | |
+| `DbgChaosSwitchFormsP` | |
+| `Dclaude_Declaw` | |
+| `DeathWormEat` | |
+| `DeathWormReturn` | |
+| `DeathWormTrampleDash_Reaction` | |
+| `DecoyExplode` | |
+| `DemonRockThrow` | |
+| `Destroyer2HolyAttack` | |
+| `Destroyer2Pulse` | |
+| `DestroyerBreakShield` | |
+| `DestroyerChargeBackflips` | |
+| `DestroyerDashAttack` | |
+| `DestroyerDodge` | |
+| `DestroyerHolyAttack` | |
+| `DestroyerPulse` | |
+| `DestroyerRaise` | |
+| `DestroyerThrowShield` | |
+| `DiceLeap` | |
+| `Digest` | |
+| `Disguise` | |
+| `DoctorPickup` | |
+| `DoctorSpawn` | |
+| `DoubleDistanceMove` | |
+| `DrDGlare` | |
+| `DustDash` | |
+| `DustTeleport` | |
+| `DybbukEscape` | |
+| `DybbukPossess` | |
+| `DybbukRePossess` | |
+| `DybbukReanimate` | |
+| `DybbukReturn` | |
+| `DybbukWisps` | |
+| `ExtraMove` | |
+| `FatLeap` | |
+| `FearMelee` | |
+| `FetusAirstrikeTrigger` | |
+| `FetusPullBomb` | |
+| `FleshLadUppercut` | |
+| `FleshyMindConfusion` | |
+| `FloastSpawn` | |
+| `FloastThrow` | |
+| `FlushX` | |
+| `FormGrowThree` | |
+| `FormGrowThreeSnakey` | |
+| `FormGrowTwo` | |
+| `FormGrowTwoSnakey` | |
+| `FormShrinkFour` | |
+| `FormShrinkOne` | |
+| `FormShrinkOneSnakey` | |
+| `FormShrinkThree` | |
+| `FormShrinkTwo` | |
+| `FormShrinkTwoSnakey` | |
+| `FutureBotPunchAggro` | |
+| `FutureBotSuplex` | |
+| `FuzzerJump_post` | |
+| `FuzzerReact` | |
+| `G3CallForHelp` | |
+| `G3CoughFly` | |
+| `G3GrabHead` | |
+| `G3RageShake` | |
+| `G3RunToHead` | |
+| `G3Scream_Hex` | |
+| `G3Shake` | |
+| `G3SpawnMama` | |
+| `G3TossHead` | |
+| `GA_Counterspell` | |
+| `GA_Megablast` | |
+| `GA_PrimeExplode` | |
+| `GA_Suggest` | |
+| `GKLeap` | |
+| `GKSpawn` | |
+| `GP_Probe` | |
+| `GSOpen` | |
+| `GSScream` | |
+| `GSSuck` | |
+| `GametePop` | |
+| `GasserExplode` | |
+| `GeminiSpecial` | |
+| `GeminiSwipe` | |
+| `GenericRage` | |
+| `GirlDinoCry` | |
+| `GirlDinoHeadBash` | |
+| `GirlDinoPoop` | |
+| `GirlDinoThrow` | |
+| `GlowingMushroomGiveMana` | |
+| `GlowingMushroomGiveMana2` | |
+| `GoodBone` | |
+| `GoodBone_copy` | |
+| `GorgerRun` | |
+| `GrenadeExplode` | |
+| `Guillotina1Rage` | |
+| `GuillotinaTossCollide` | |
+| `HCHumanDie` | |
+| `HangerBotLeave` | |
+| `HangerBotReturn` | |
+| `HangerBotSpawn` | |
+| `HarpoonTrapPull` | |
+| `HeadTumorResponse` | |
+| `HealSelf` | |
+| `HemBounce` | |
+| `HemDeathPop` | |
+| `HemHeal` | |
+| `HitlerCloneHeil` | |
+| `HitlerCloneLick` | |
+| `HitlerCloneTransform` | |
+| `HitlerHeadGrowA` | |
+| `HitlerHeadGrowB` | |
+| `HitlerHeadTransform` | |
+| `HitlerHeil` | |
+| `HitlerNuke` | |
+| `HitlerPulp1` | |
+| `HitlerPulp2` | |
+| `HitlerPulp3` | |
+| `HitlerPulp4` | |
+| `HitlerPulp5` | |
+| `HitlerPulp6` | |
+| `HitlerSuicide` | |
+| `HostShove` | |
+| `IDBrambleBurst` | |
+| `IDBrambleShot` | |
+| `IDSprout` | |
+| `IceElementalBlizzard` | |
+| `IceElementalBreath` | |
+| `JackShield` | |
+| `JarHeadOrder` | |
+| `JohnnyBlast` | |
+| `JohnnyCryOne` | |
+| `JohnnyCryTwo` | |
+| `JohnnyMegaBlast` | |
+| `JohnnyMindControl` | |
+| `JohnnyPull` | |
+| `JohnnyPush` | |
+| `LELeave` | |
+| `LEPortFar` | |
+| `LEReturn` | |
+| `Leave` | |
+| `LennyCatDies` | |
+| `LennyCatSlap` | |
+| `LennyDrop` | |
+| `LennyGrab` | |
+| `LennyGrabDead` | |
+| `LennyHug` | |
+| `LennyStruggleFail` | |
+| `LickyLicky` | |
+| `LoveBotCounter` | |
+| `MCBlizzard` | |
+| `MCFlamethrower` | |
+| `MCHadouken` | |
+| `MCKineticCharge` | |
+| `MCStorm` | |
+| `MD_HeadDrop` | |
+| `MD_HeadLeave` | |
+| `MD_Kick` | |
+| `MD_LegLeave` | |
+| `MD_LegReturn` | |
+| `MD_Lift` | |
+| `MD_Poop` | |
+| `MM_Grab` | |
+| `MM_Guard` | |
+| `MM_Quake` | |
+| `MM_Unguard` | |
+| `MaelestesPickup` | |
+| `MaelestesSteal` | |
+| `MammothBabyStomp` | |
+| `MammothStomp` | |
+| `MammothTrampleDash` | |
+| `ManglerEnrage` | |
+| `ManglerFumbleEven` | |
+| `ManglerFumbleOdd` | |
+| `ManglerMonsterExplode` | |
+| `ManglerMonsterHeartAttack` | |
+| `ManglerSpin` | |
+| `ManglerThrowRemote` | |
+| `MarshmallowConvert` | |
+| `MarshmallowZealot` | |
+| `MechSuitBarrage` | |
+| `MechSuitDash` | |
+| `MechSuitEject` | |
+| `MegaGuppy_SlamLeft` | |
+| `MegaGuppy_SlamRight` | |
+| `MegaGuppy_SummonTheChild` | |
+| `MegaGuppy_TransformBoris` | |
+| `MegaGuppy_TransformExplosive` | |
+| `MegaGuppy_TransformHoly` | |
+| `MegablastX` | |
+| `Metronome_Enemy` | |
+| `MiniNukeExplodey` | |
+| `MiniVolcano_Spurt` | |
+| `MoonHandDash` | |
+| `MoonHandDrop` | |
+| `MoonHandDrop_Deathrattle` | |
+| `MoonHandGrab` | |
+| `MoonHandMegaSqueeze` | |
+| `MoonHandPunchHead` | |
+| `MoonHandThrow` | |
+| `MoonHead_Barrage` | |
+| `MoonHead_BeginCharge` | |
+| `MoonHead_Blow` | |
+| `MoonHead_CallForHelp` | |
+| `MoonHead_ChewCat` | |
+| `MoonHead_CommandHeadPunch` | |
+| `MoonHead_Digest` | |
+| `MoonHead_EatCat` | |
+| `MoonHead_Finisher` | |
+| `MoonHead_RefreshBrace` | |
+| `MoonHead_SacrificeHand` | |
+| `MoonHead_SpawnHand` | |
+| `MoonHead_SpitCat` | |
+| `MoonHead_SpitCat_AndDie` | |
+| `MoonWormCurl` | |
+| `MotherConsume` | |
+| `MotherTumorGrow` | |
+| `MoveTwoCantrip` | |
+| `MutateAOE` | |
+| `NCGravecrawl` | |
+| `NCReanimate` | |
+| `NeckSnap` | |
+| `NeutronExplode` | |
+| `NeutronRumble` | |
+| `NubsCatJumpReaction` | |
+| `NubsGoop` | |
+| `NubsNuke` | |
+| `NurseBotHeal` | |
+| `Parasaurolophus_Throw` | |
+| `ParasiterSpawn` | |
+| `PeashyStab` | |
+| `PickupRock` | |
+| `PokerPokeAlly` | |
+| `PokerPokeCat` | |
+| `PsychicCatBackflip` | |
+| `PsychicChoke_Enemy` | |
+| `PteroEscape` | |
+| `PteroGrab` | |
+| `PyrophinaSoloCatThrow` | |
+| `PyrophinaSoloEarthquakeStomp` | |
+| `PyrophinaSoloRoar` | |
+| `PyrophinaVSCatThrow` | |
+| `PyrophinaVSEarthquakeStomp` | |
+| `PyrophinaVSFlamethrower` | |
+| `PyrophinaVSRoar` | |
+| `PyrophinaVSSpinThrow` | |
+| `QuakeJump` | |
+| `QueenHippoAttack` | |
+| `QueenHippoHeartAttack` | |
+| `QueenHippoTire` | |
+| `QueenHippoUppercut` | |
+| `QueenMinis` | |
+| `QueenWeb` | |
+| `RageUp` | |
+| `RallyMaggots` | |
+| `RangedHeal_Enemy` | |
+| `RatKing2Spawn` | |
+| `RatKingSpawn` | |
+| `RatKingTransform` | |
+| `RattleSnakeTrap` | |
+| `RockSong` | |
+| `RockToss_CaveDad` | |
+| `RollDice` | |
+| `SBotAnger` | |
+| `SBotAngryMove` | |
+| `SBotRecharge` | |
+| `SCSneakUp` | |
+| `SM_BleedCounter` | |
+| `SM_Flamethrower` | |
+| `SM_IceShards` | |
+| `SM_LightningStorm` | |
+| `SM_MagicMissile` | |
+| `SZBBackflipDodge` | |
+| `SZBReload` | |
+| `SabertoothCatDoubleSwipe` | |
+| `SabertoothCubLick` | |
+| `ScaryHaunt` | |
+| `ScorpionHold` | |
+| `SeraphimRevive` | |
+| `ShadeDuplicate` | |
+| `ShadowstepDodge` | |
+| `SharkDash` | |
+| `SimonFlopper_SpawnMinion` | |
+| `SimonFlopper_Tentacle` | |
+| `SimonFlopper_WiggleChance` | |
+| `SimonFlopper_WiggleFake` | |
+| `SimonFlopper_WiggleGuaranteed` | |
+| `SimonSays_ComeHere` | |
+| `SimonSays_GoAway` | |
+| `SimonSays_Scatter` | |
+| `Simon_Shot` | |
+| `Simon_Tentacle` | |
+| `Simon_Trash` | |
+| `SlagSpawn` | |
+| `SleepPowder` | |
+| `SlotMachine_DeathExplode` | |
+| `SlotResult_Explode` | |
+| `SlotResult_Jackpot_Coins` | |
+| `SlotResult_Nothing` | |
+| `SlotResult_RandomPickup` | |
+| `SmallSpiderMelee` | |
+| `SmallTrampleDash` | |
+| `SpawnClot` | |
+| `SpawnDip` | |
+| `SpawnGasAOE` | |
+| `SpawnJunk` | |
+| `SpawnMaggots` | |
+| `SpawnRat` | |
+| `SpawnWisp` | |
+| `SpewerBarf_Lava` | |
+| `SpewerBarf_Normal` | |
+| `SpewerBarf_Tar` | |
+| `SpewerSuckLava` | |
+| `SpewerSuckNormal` | |
+| `SpewerSuckPill` | |
+| `SpewerSuckTar` | |
+| `SpewerTransformFire` | |
+| `SpewerTransformNormal` | |
+| `SpewerTransformTar` | |
+| `SpiderReturn` | |
+| `SpiderSpawn` | |
+| `Spider_CalmDown` | |
+| `Spider_GoInsane` | |
+| `SpreadX` | |
+| `Sprout` | |
+| `StacyHeal` | |
+| `StegoEatGrass` | |
+| `StegoGrassStomp` | |
+| `StegoSpin` | |
+| `T1ChokeReaction` | |
+| `T1Pummel` | |
+| `T1SwapWeapon` | |
+| `T1ThrowGrenadeA` | |
+| `T1ThrowGrenadeB` | |
+| `T2Clone` | |
+| `T2GoopRun` | |
+| `T2UnClone` | |
+| `T3Counter` | |
+| `T3Intro` | |
+| `T3JoinFight` | |
+| `T3LickyLicky` | |
+| `T3Pebbles_BoulderDrop` | |
+| `T3Pebbles_PrimeBoulderDrop` | |
+| `T3RipAndTear` | |
+| `T3Spawn_Butcher` | |
+| `T3Spawn_Colorless` | |
+| `T3Spawn_Druid` | |
+| `T3Spawn_Fighter` | |
+| `T3Spawn_Hunter` | |
+| `T3Spawn_Jester` | |
+| `T3Spawn_Mage` | |
+| `T3Spawn_Medic` | |
+| `T3Spawn_Monk` | |
+| `T3Spawn_Necromancer` | |
+| `T3Spawn_Psychic` | |
+| `T3Spawn_Tank` | |
+| `T3Spawn_Thief` | |
+| `T3Spawn_Tinkerer` | |
+| `TCCatBot` | |
+| `TCMechSuit` | |
+| `TC_DashReaction` | |
+| `THC_CoinRoll` | |
+| `THC_PoisonSwat` | |
+| `THC_Roll` | |
+| `TKNG_DeathExplode` | |
+| `TKNG_GoAway` | |
+| `TKNG_Hop` | |
+| `TKNG_Kneel` | |
+| `TKNG_Roulette` | |
+| `TKNG_Spawn` | |
+| `TKNG_Spread` | |
+| `TKNG_Trash` | |
+| `TNTExplodey` | |
+| `TT_ManaBurn` | |
+| `TVChangeDie` | |
+| `TVChangeDumb` | |
+| `TVChangeObey` | |
+| `TVChangeStop` | |
+| `TVOff` | |
+| `TallBotRocket` | |
+| `TattersFear` | |
+| `Taunt` | |
+| `TeleportFlipUp` | |
+| `TheChild_Pulse` | |
+| `TheChild_ReleaseBeams` | |
+| `TheChild_TargetBeam` | |
+| `TheChild_TransformBoris` | |
+| `TheChild_TransformExplosive` | |
+| `TheChild_TransformHoly` | |
+| `TheChild_Wrath` | |
+| `TheCreator_Reaction` | |
+| `TheCreator_SpawnCloneTeam` | |
+| `TheMother_Birth` | |
+| `ThornUp` | |
+| `ThornUpX` | |
+| `ThrobShot_Reaction` | |
+| `Tina2Call` | |
+| `TinaBasicJump` | |
+| `TinaBodySlamMax` | |
+| `TinaBodySlamRage` | |
+| `TinaJumpAttack` | |
+| `TinaSpit` | |
+| `TinaSpit2` | |
+| `TinaSuck` | |
+| `TinaSuck2` | |
+| `TinaTantrum` | |
+| `TinaThrow` | |
+| `TormentorBite` | |
+| `TormentorRuneAbsorb` | |
+| `TormentorSpawn` | |
+| `TormentorSuck` | |
+| `ToxGasBlast` | |
+| `TrampyDrink` | |
+| `TrampyDump` | |
+| `TrampyFleas` | |
+| `TrampySleep` | |
+| `TrampySpit` | |
+| `TrembloEat` | |
+| `TrembloSuck` | |
+| `TrexReacquireTarget` | |
+| `TrexStomp` | |
+| `TrexSwitchTarget` | |
+| `TriceratopsTrample` | |
+| `TumorPowerup` | |
+| `TwistingFlames` | |
+| `UFO_BigShield` | |
+| `UFO_Detect` | |
+| `UFO_Megalaser` | |
+| `UFO_Shield` | |
+| `UFO_Summon` | |
+| `WaggleClone` | |
+| `WaterTrailMove` | |
+| `WhispererThrowBuff` | |
+| `WhispererWhisper` | |
+| `WizBlizzard` | |
+| `WizFlamethrower` | |
+| `WizSpellShield` | |
+| `WizStorm` | |
+| `XLightning` | |
+| `YA_Charge` | |
+| `YA_Jetpack` | |
+| `YetiBite` | |
+| `YetiIceBreath` | |
+| `YetiKick` | |
+| `ZaratanaSoloMagnet` | |
+| `ZaratanaSoloRoar` | |
+| `ZaratanaSoloSpinDash` | |
+| `ZaratanaSoloTurtle` | |
+| `ZaratanaSoloWeatherRoar` | |
+| `ZaratanaVSBombardment` | |
+| `ZaratanaVSMagnet` | |
+| `ZaratanaVSRoar` | |
+| `ZaratanaVSSpinDash` | |
+| `ZaratanaVSTurtle` | |
+| `ZaratanaVSTurtleGuaranteed` | |
+| `ZaratanaVSWeatherRoar` | |
+| `ZombieFeast` | |
+| `ZombieFeastSmall` | |
+| `set_GrubFamiliarReturn` | |
+| `tw_TriachnidSpawn` | |
 
 </details>
 
@@ -537,6 +1202,173 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ attack Simon_Shot ]`
 `[ BumblefootEatCorpse BumblefootEatCat BumblefootBoneShot ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `attack` | |
+| `*attack` | |
+| `move` | |
+| `*ZaratanaSoloWeatherRoar` | |
+| `BBPickupCrown` | |
+| `RockToss_ColorlessCat` | |
+| `ShamblerToss` | |
+| `SpiderSpawn` | |
+| `TinaJumpAttack` | |
+| `**DestroyerThrowShield` | |
+| `*Guillotina1Rage` | |
+| `*PyrophinaVSWeatherRoar` | |
+| `*SpewerTransformFire` | |
+| `*SpewerTransformNormal` | |
+| `*SpewerTransformTar` | |
+| `QueenMinis` | |
+| `SpawnMaggots` | |
+| `*HitlerHeil` | |
+| `*RockToss_BomberRat` | |
+| `*TinaThrow` | |
+| `BBBless` | |
+| `BBCut` | |
+| `BBSpin` | |
+| `BBToss` | |
+| `BellyPound` | |
+| `BloatLeap` | |
+| `CaveManChestPound` | |
+| `ColorlessCat_BoulderDrop` | |
+| `DashRandomly` | |
+| `DrinkUp` | |
+| `HitlerHeadTransform` | |
+| `MutateAOE` | |
+| `RockToss_BomberRat` | |
+| `SmallSpiderMelee` | |
+| `SpiderReturn` | |
+| `TF_TargetAllies` | |
+| `TF_TargetEnemies` | |
+| `TinaThrow` | |
+| `TormentorBite` | |
+| `TormentorSpawn` | |
+| `WebShot` | |
+| `ZaratanaSoloBombardment` | |
+| `*CarnibulbEat` | |
+| `*CatCall` | |
+| `*CaveMom_TossDad` | |
+| `*CaveMom_TossElsewhere` | |
+| `*CultistCut` | |
+| `*FloastThrow` | |
+| `*G3GrabHead` | |
+| `*Parasaurolophus_Push` | |
+| `*PyrophinaSoloCatThrow` | |
+| `*PyrophinaSoloEarthquakeStomp` | |
+| `*PyrophinaSoloFlamethrower` | |
+| `*QueenMinis` | |
+| `*QueenWeb` | |
+| `*SBotRecharge` | |
+| `*Sprout` | |
+| `*StegoSpin` | |
+| `*TCMechSuit` | |
+| `*TinaBodySlam` | |
+| `*TinaBodySlamMax` | |
+| `*TinaSuck` | |
+| `*TinaSuck2` | |
+| `*TrampyDrink` | |
+| `*ZaratanaSoloTurtle` | |
+| `AZ_Scream` | |
+| `BumblefootBoneShot` | |
+| `BumblefootEatCat` | |
+| `BumblefootEatCorpse` | |
+| `CHToss` | |
+| `CHuskGrab` | |
+| `CarnibulbEat` | |
+| `CatCall` | |
+| `CaveChiefBat` | |
+| `CaveChiefFear` | |
+| `CaveChiefRally` | |
+| `CaveMom_Heal` | |
+| `CaveWomanBirth` | |
+| `CaveWomanGrab` | |
+| `CaveWomanThrow` | |
+| `CherubimLeave` | |
+| `CherubimReturn` | |
+| `ChumShot_Damage` | |
+| `ChumShot_Maggot` | |
+| `DestroyerHolyAttack` | |
+| `DipShot` | |
+| `DoctorBotHeal` | |
+| `DoctorPickup` | |
+| `DoctorSpawn` | |
+| `FloastPull` | |
+| `FloastSpawn` | |
+| `G3CallForHelp` | |
+| `G3GrabHead` | |
+| `GP_Probe` | |
+| `GSSuck` | |
+| `GorgerRun` | |
+| `HangerBotSpawn` | |
+| `HitlerCloneLick` | |
+| `HitlerHeadGrowA` | |
+| `HitlerHeadGrowB` | |
+| `HostShove` | |
+| `HostSpit` | |
+| `IDBrambleShot` | |
+| `JackShield` | |
+| `JarHeadOrder` | |
+| `LEReturn` | |
+| `Leave` | |
+| `LickyLicky` | |
+| `MaelestesPickup` | |
+| `MaelestesSteal` | |
+| `Magnetize` | |
+| `MoveAway` | |
+| `MoveClose` | |
+| `MoveForThrow` | |
+| `NCGravecrawlFAR` | |
+| `NCReanimate` | |
+| `NurseBotHeal` | |
+| `NurseBotHealCat` | |
+| `Parasaurolophus_Push` | |
+| `Parasaurolophus_Throw` | |
+| `ParasiterShoot` | |
+| `ParasiterSpawn` | |
+| `PeashyStab` | |
+| `PickupRock` | |
+| `PteroGrab` | |
+| `QueenWeb` | |
+| `ReturnA` | |
+| `RockToss_CaveDad` | |
+| `RunFar` | |
+| `SabertoothCubLick` | |
+| `SeraphimRevive` | |
+| `Simon_Shot` | |
+| `SpawnClot` | |
+| `SpawnDip` | |
+| `Spider_CalmDown` | |
+| `StacyCharm` | |
+| `StacyHeal` | |
+| `StegoSpin` | |
+| `T3LickyLicky` | |
+| `TCMechSuit` | |
+| `ThrobShot` | |
+| `TinaBodySlam` | |
+| `TinaBodySlamMax` | |
+| `TinaSuck2` | |
+| `TrampyDrink` | |
+| `TrembloEat` | |
+| `UFO_CrossLasers` | |
+| `UFO_Detect` | |
+| `UFO_Shield` | |
+| `WereManPounce` | |
+| `WhispererThrowBuff` | |
+| `WhispererThrowDamage` | |
+| `WhispererWhisper` | |
+| `WolfDash` | |
+| `WolfLeap` | |
+| `YeetTowardsBuddy` | |
+| `ZaratanaSoloMagnet` | |
+| `ZaratanaVSTurtleGuaranteed` | |
+| `ZombieFeast` | |
+| `ZombieFeastSmall` | |
+| `trinket` | |
+| `weapon` | |
+
 </details>
 
 ---
@@ -591,6 +1423,12 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ -999 999 -999 999 -999 999 ]`
 `[ -999 999 -999 999 -999 999 ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `-.2` | |
+
 </details>
 
 ---
@@ -608,6 +1446,171 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ attack DustTeleport ]`
 `[ attack AlienBeastOpenEyes ]`
 `[ *AlienBeastScream *AlienBeastEat *AlienBeastPuke *AlienBeastRampage ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `attack` | |
+| `move` | |
+| `*attack` | |
+| `ChaosSwitchForms` | |
+| `ChaosSwitchSides` | |
+| `*PyrophinaVSWeatherRoar` | |
+| `*ZaratanaVSWeatherRoar` | |
+| `FlushX` | |
+| `MegablastX` | |
+| `ZaratanaVSTurtle` | |
+| `weapon` | |
+| `MoveClose` | |
+| `SpewerSuckPill` | |
+| `*BungaEatCat` | |
+| `*DCBirthSquirrel` | |
+| `*DestroyerDashAttack` | |
+| `*GA_Counterspell` | |
+| `*MM_Slap` | |
+| `*MammothStomp` | |
+| `*QueenHippoUppercut` | |
+| `*weapon` | |
+| `BungaRoar` | |
+| `CaveManChestPound` | |
+| `CaveManPickupSpear` | |
+| `CloseConvert` | |
+| `DCBirthSquirrel` | |
+| `DCSquirrelForm` | |
+| `DestroyerChargeBackflips` | |
+| `DestroyerDashAttack` | |
+| `FoodMove` | |
+| `MoonHead_CallForHelp` | |
+| `MoonHead_RefreshBrace` | |
+| `MoveAway` | |
+| `MoveSpaced` | |
+| `PsychicChoke_Enemy` | |
+| `QueenHippoAttack` | |
+| `Reload` | |
+| `SpearRun` | |
+| `T1SwapWeapon` | |
+| `attack~` | |
+| `*AlienBeastEat` | |
+| `*AlienBeastPuke` | |
+| `*AlienBeastRampage` | |
+| `*AlienBeastScream` | |
+| `*BirthwortTrample` | |
+| `*ButtFart` | |
+| `*CoreFreakFury` | |
+| `*DCT_SummonCrow` | |
+| `*DemonRockThrow` | |
+| `*DrDGlare` | |
+| `*FutureBotSuplex` | |
+| `*GKSpawn` | |
+| `*IceElementalBlizzard` | |
+| `*IceElementalBreath` | |
+| `*MammothBabyStomp` | |
+| `*ManglerSpin` | |
+| `*MarshmallowZealot` | |
+| `*PyrophinaSoloRoar` | |
+| `*PyrophinaVSCatThrow` | |
+| `*SabertoothCatDoubleSwipe` | |
+| `*ShadeDuplicate` | |
+| `*SpawnGasAOE` | |
+| `*T1Pummel` | |
+| `*T1ThrowGrenadeA` | |
+| `*T1ThrowGrenadeB` | |
+| `*T2Clone` | |
+| `*T3RipAndTear` | |
+| `*TCCatBot` | |
+| `*THC_CoinRoll` | |
+| `*THC_PoisonSwat` | |
+| `*THC_Roll` | |
+| `*TrembloEat` | |
+| `*TrexReacquireTarget` | |
+| `*TumorPowerup` | |
+| `*ZaratanaSoloRoar` | |
+| `*ZaratanaSoloWeatherRoar` | |
+| `*ZaratanaVSBombardment` | |
+| `*attack~` | |
+| `AlienBeastOpenEyes` | |
+| `BasicMelee` | |
+| `BearTrap_CaveBaby` | |
+| `BearTrap_Enemy_Cantrip` | |
+| `BirthwortHeal` | |
+| `BrambleBabyEntangle` | |
+| `CBReload` | |
+| `CherubAttract` | |
+| `CovenFamine` | |
+| `CovenPestilence` | |
+| `CovenRise2` | |
+| `CovenRise3` | |
+| `CovenRise4` | |
+| `CovenWar` | |
+| `DCAeroblast` | |
+| `DH_MeatHook` | |
+| `DeathWormReturn` | |
+| `DefaultMove` | |
+| `DemonUppercut` | |
+| `Disguise` | |
+| `DrDRockets` | |
+| `DustTeleport` | |
+| `FleshLadUppercut` | |
+| `ForceTrample` | |
+| `FormGrowThreeSnakey` | |
+| `FormGrowTwoSnakey` | |
+| `FutureBotPunchAggro` | |
+| `FutureBotSuplex` | |
+| `G3RageShake` | |
+| `GA_Megablast` | |
+| `GA_Suggest` | |
+| `HemHeal` | |
+| `HexShot` | |
+| `LeapClose` | |
+| `MM_Grab` | |
+| `MM_Quake` | |
+| `MammothBabyThrow` | |
+| `MammothTrampleDash` | |
+| `Metronome_Enemy` | |
+| `MoonHead_ChewCat` | |
+| `MotherConsume` | |
+| `MoveForBarrage` | |
+| `MoveForDash` | |
+| `MoveForGrass` | |
+| `MoveForPounce` | |
+| `MoveForSpin` | |
+| `MoveForThrow` | |
+| `MoveTowards` | |
+| `NeckSnap` | |
+| `PsychicCatBackflip` | |
+| `PyrophinaVSEarthquakeStomp` | |
+| `PyrophinaVSFlamethrower` | |
+| `PyrophinaVSSpinThrow` | |
+| `QuakeJump` | |
+| `QueenHippoTire` | |
+| `RatKing2Spawn` | |
+| `RunFar` | |
+| `SM_Flamethrower` | |
+| `SM_IceShards` | |
+| `SM_LightningStorm` | |
+| `SZBReload` | |
+| `SabertoothCatTransformSwipe` | |
+| `ShadeDuplicate` | |
+| `SpawnMotherSpike` | |
+| `SpawnWisp` | |
+| `SpewerBarf_Lava` | |
+| `SpewerBarf_Normal` | |
+| `SpewerBarf_Tar` | |
+| `SpookieLick` | |
+| `StegoEatGrass` | |
+| `StegoSpin` | |
+| `THC_CoinRoll` | |
+| `TheMother_Birth` | |
+| `TrembloEat` | |
+| `TrembloSuck` | |
+| `TrexStomp` | |
+| `TumorDash` | |
+| `Unflip` | |
+| `WaggleClone` | |
+| `YA_Charge` | |
+| `ZaratanaVSMagnet` | |
+| `ZaratanaVSSpinDash` | |
 
 </details>
 
@@ -915,6 +1918,19 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ Twin ]`
 `[ Twin ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `Twin` | |
+| `Shielded1` | |
+| `Shielded2` | |
+| `Shielded3` | |
+| `Shielded4` | |
+| `Protected` | |
+| `Depressing` | |
+| `Mad` | |
+
 </details>
 
 ---
@@ -1005,6 +2021,123 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ BOSS_ERROR_MINIBOSS_QUOTE_1 ]`
 `[ BOSS_PEBBLES_QUOTE_1 ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BOSS_ALIENQUEEN_QUOTE_1` | |
+| `BOSS_ALIENQUEEN_QUOTE_2` | |
+| `BOSS_BORIS_QUOTE_1` | |
+| `BOSS_BORIS_QUOTE_2` | |
+| `BOSS_BORIS_QUOTE_3` | |
+| `BOSS_BORIS_QUOTE_4` | |
+| `BOSS_BORIS_QUOTE_5` | |
+| `BOSS_BUMBLEFOOT_QUOTE_1` | |
+| `BOSS_BUMBLEFOOT_QUOTE_2` | |
+| `BOSS_BUMBLEFOOT_QUOTE_3` | |
+| `BOSS_BUMBLEFOOT_QUOTE_4` | |
+| `BOSS_CHAOS_QUOTE_1` | |
+| `BOSS_CHUBSANDNUBS_QUOTE_1` | |
+| `BOSS_CHUBSANDNUBS_QUOTE_2` | |
+| `BOSS_CHUBSANDNUBS_QUOTE_3` | |
+| `BOSS_CHUBSANDNUBS_QUOTE_4` | |
+| `BOSS_CHUBSANDNUBS_QUOTE_5` | |
+| `BOSS_COVEN_QUOTE_1` | |
+| `BOSS_COVEN_QUOTE_2` | |
+| `BOSS_COVEN_QUOTE_3` | |
+| `BOSS_COVEN_QUOTE_4` | |
+| `BOSS_DUSTDEVIL_QUOTE_1` | |
+| `BOSS_DUSTDEVIL_QUOTE_2` | |
+| `BOSS_DUSTDEVIL_QUOTE_3` | |
+| `BOSS_DUSTDEVIL_QUOTE_4` | |
+| `BOSS_DYBBUK_QUOTE_1` | |
+| `BOSS_DYBBUK_QUOTE_2` | |
+| `BOSS_DYBBUK_QUOTE_3` | |
+| `BOSS_DYBBUK_QUOTE_4` | |
+| `BOSS_DYBBUK_QUOTE_5` | |
+| `BOSS_ERROR_MINIBOSS_QUOTE_1` | |
+| `BOSS_ERROR_QUOTE_1` | |
+| `BOSS_GAMBIT_QUOTE_1` | |
+| `BOSS_GAMBIT_QUOTE_2` | |
+| `BOSS_GAMBIT_QUOTE_3` | |
+| `BOSS_GAMBIT_QUOTE_4` | |
+| `BOSS_GAMBIT_QUOTE_5` | |
+| `BOSS_GUILLOTINA_1_QUOTE_1` | |
+| `BOSS_GUILLOTINA_1_QUOTE_2` | |
+| `BOSS_GUILLOTINA_1_QUOTE_3` | |
+| `BOSS_GUILLOTINA_1_QUOTE_4` | |
+| `BOSS_GUILLOTINA_2_QUOTE_1` | |
+| `BOSS_GUILLOTINA_2_QUOTE_2` | |
+| `BOSS_GUILLOTINA_2_QUOTE_3` | |
+| `BOSS_GUILLOTINA_3_QUOTE_1` | |
+| `BOSS_GUILLOTINA_3_QUOTE_2` | |
+| `BOSS_GUILLOTINA_3_QUOTE_3` | |
+| `BOSS_HITLER_QUOTE_1` | |
+| `BOSS_HITLER_QUOTE_2` | |
+| `BOSS_HITLER_QUOTE_3` | |
+| `BOSS_JOHNNY_QUOTE_1` | |
+| `BOSS_JOHNNY_QUOTE_2` | |
+| `BOSS_JOHNNY_QUOTE_3` | |
+| `BOSS_JOHNNY_QUOTE_4` | |
+| `BOSS_LORDBUNGA_QUOTE_1` | |
+| `BOSS_LORDBUNGA_QUOTE_2` | |
+| `BOSS_MEGADINO_QUOTE_1` | |
+| `BOSS_MOONHEAD_QUOTE_1` | |
+| `BOSS_MOONHEAD_QUOTE_2` | |
+| `BOSS_MOONHEAD_QUOTE_3` | |
+| `BOSS_MOONHEAD_QUOTE_4` | |
+| `BOSS_PEBBLES_QUOTE_1` | |
+| `BOSS_PYROPHINA_QUOTE_1` | |
+| `BOSS_PYROPHINA_QUOTE_2` | |
+| `BOSS_PYROPHINA_VS_ZARATANA_QUOTE_1` | |
+| `BOSS_QUEENHIPPO_QUOTE_1` | |
+| `BOSS_QUEENHIPPO_QUOTE_2` | |
+| `BOSS_QUEENHIPPO_QUOTE_3` | |
+| `BOSS_QUEENHIPPO_QUOTE_4` | |
+| `BOSS_QUEENHIPPO_QUOTE_5` | |
+| `BOSS_RADICALRAT_QUOTE_1` | |
+| `BOSS_RADICALRAT_QUOTE_2` | |
+| `BOSS_RADICALRAT_QUOTE_3` | |
+| `BOSS_RADICALRAT_QUOTE_4` | |
+| `BOSS_RADICALRAT_QUOTE_5` | |
+| `BOSS_SPEWER_QUOTE_1` | |
+| `BOSS_SPEWER_QUOTE_2` | |
+| `BOSS_SPEWER_QUOTE_3` | |
+| `BOSS_SPEWER_QUOTE_4` | |
+| `BOSS_SPIDERKITTEN_QUOTE_1` | |
+| `BOSS_SPIDERKITTEN_QUOTE_2` | |
+| `BOSS_SPIDERQUEEN_QUOTE_1` | |
+| `BOSS_SPIDERQUEEN_QUOTE_2` | |
+| `BOSS_SPIDERQUEEN_QUOTE_3` | |
+| `BOSS_SPIDERQUEEN_QUOTE_4` | |
+| `BOSS_SPIDERQUEEN_QUOTE_5` | |
+| `BOSS_SPIDERQUEEN_QUOTE_6` | |
+| `BOSS_STACY_QUOTE_1` | |
+| `BOSS_STACY_QUOTE_2` | |
+| `BOSS_STACY_QUOTE_3` | |
+| `BOSS_TERMINATOR_1_QUOTE_1` | |
+| `BOSS_TERMINATOR_1_QUOTE_2` | |
+| `BOSS_TERMINATOR_1_QUOTE_3` | |
+| `BOSS_TERMINATOR_2_QUOTE_1` | |
+| `BOSS_TERMINATOR_3_QUOTE_1` | |
+| `BOSS_TERMINATOR_3_QUOTE_2` | |
+| `BOSS_THECREATOR_QUOTE_1` | |
+| `BOSS_THECREATOR_QUOTE_2` | |
+| `BOSS_THECREATOR_QUOTE_3` | |
+| `BOSS_THEMOTHER_QUOTE_1` | |
+| `BOSS_THEMOTHER_QUOTE_2` | |
+| `BOSS_THEMOTHER_QUOTE_3` | |
+| `BOSS_THROBBINGKING_QUOTE_1` | |
+| `BOSS_THROBBINGKING_QUOTE_2` | |
+| `BOSS_THROBBINGKING_QUOTE_3` | |
+| `BOSS_THROBBINGKING_QUOTE_4` | |
+| `BOSS_ZARATANA_QUOTE_1` | |
+| `BOSS_ZARATANA_QUOTE_2` | |
+| `BOSS_ZODIAC_QUOTE_1` | |
+| `BOSS_ZODIAC_QUOTE_2` | |
+| `BOSS_ZODIAC_QUOTE_3` | |
+| `BOSS_ZODIAC_QUOTE_4` | |
+
 </details>
 
 ---
@@ -1040,6 +2173,42 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ .3 .7 1 ]`
 `[ .3 .7 1 ]`
 `[ .8 .9 1 ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `.7` | |
+| `.74` | |
+| `.9` | |
+| `.39` | |
+| `.3` | |
+| `.71` | |
+| `.75` | |
+| `.8` | |
+| `.10` | |
+| `.12` | |
+| `.21` | |
+| `.43` | |
+| `.5` | |
+| `.50` | |
+| `.76` | |
+| `.80` | |
+| `.83` | |
+| `.18` | |
+| `.27` | |
+| `.32` | |
+| `.37` | |
+| `.45` | |
+| `.47` | |
+| `.54` | |
+| `.58` | |
+| `.60` | |
+| `.63` | |
+| `.73` | |
+| `.91` | |
+| `.94` | |
+| `.99` | |
 
 </details>
 
@@ -1185,6 +2354,59 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ AmoebaHat AmoebaNeck AmoebaFace ]`
 `[ TerminatorShotgun TerminatorSniper TerminatorUzi ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `WaterBottle_Empty` | |
+| `FlyHat` | |
+| `FlyMask` | |
+| `FlyNeck` | |
+| `FurnitureBox` | |
+| `FurnitureBox_Rare` | |
+| `LearnAbility` | |
+| `WaterBottle_Full` | |
+| `WaterBottle_Half` | |
+| `AmoebaFace` | |
+| `AmoebaHat` | |
+| `AmoebaNeck` | |
+| `AncestorsBones` | |
+| `AncestorsJaw` | |
+| `AncestorsSkull` | |
+| `FaceGrub` | |
+| `GlowingBone` | |
+| `HeadGrub` | |
+| `Hiss` | |
+| `Hit` | |
+| `IrradiatedObject_Bleed` | |
+| `IrradiatedObject_Bruise` | |
+| `IrradiatedObject_Burn` | |
+| `IrradiatedObject_Charmed` | |
+| `IrradiatedObject_Confusion` | |
+| `IrradiatedObject_Fear` | |
+| `IrradiatedObject_Poison` | |
+| `IrradiatedObject_Sleep` | |
+| `IrradiatedObject_Stun` | |
+| `IrradiatedObject_Weakness` | |
+| `LargeMeteor` | |
+| `LearnPassive` | |
+| `MoneyBag_Huge` | |
+| `MoneyBag_Large` | |
+| `MoneyBag_Medium` | |
+| `NeckGrub` | |
+| `Normal` | |
+| `Ping` | |
+| `Reduce` | |
+| `Shockwave` | |
+| `SmallMeteor` | |
+| `Stasis` | |
+| `Telefrag` | |
+| `TerminatorShotgun` | |
+| `TerminatorSniper` | |
+| `TerminatorUzi` | |
+| `TutorialStick` | |
+| `Zealot` | |
+
 </details>
 
 ---
@@ -1203,6 +2425,73 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ firework_bursta firework_burstb ]`
 `[ MegaBlastA MegaBlastB ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `WindDust` | |
+| `Firestorm_Distortion` | |
+| `WindDebris` | |
+| `WindWisps` | |
+| `BloodBounce` | |
+| `BloodBounceCrit` | |
+| `BloodBounceCrit_Absorb` | |
+| `BloodBounce_Absorb` | |
+| `BloodPoof` | |
+| `BloodPoofCrit` | |
+| `BloodPoofCrit_Absorb` | |
+| `BloodPoof_Absorb` | |
+| `BloodPopCrit` | |
+| `BloodPopCrit_Absorb` | |
+| `FevaporateDark` | |
+| `FevaporateLight` | |
+| `FireBase` | |
+| `FireBaseLarge` | |
+| `FireBaseSmall` | |
+| `FireExtinguish_Steam` | |
+| `FirePlumes` | |
+| `FirePlumesLarge` | |
+| `FirePlumesSmall` | |
+| `FireSmoke` | |
+| `FireSmokeLarge` | |
+| `FireSmokeSmall` | |
+| `FireWaves` | |
+| `FireWavesLarge` | |
+| `FireWavesSmall` | |
+| `FireWhites` | |
+| `FireWhitesLarge` | |
+| `FireWhitesSmall` | |
+| `Firenado_Embers` | |
+| `Firenado_Fire` | |
+| `Firestorm_Embers` | |
+| `Firestorm_Fire` | |
+| `GravityBurstB` | |
+| `GravityBurstS` | |
+| `HeatWave_Distortion` | |
+| `HeatWave_Particles` | |
+| `MegaBlastA` | |
+| `MegaBlastB` | |
+| `RainB` | |
+| `RainF` | |
+| `RainM` | |
+| `SnowB` | |
+| `SnowF` | |
+| `SnowM` | |
+| `SplatterXL` | |
+| `TRainB` | |
+| `TRainF` | |
+| `TRainM` | |
+| `TormentorGuts` | |
+| `WindLeaves` | |
+| `WindLeavesB` | |
+| `WindLeavesF` | |
+| `coolLaserBeamInner` | |
+| `coolLaserBeamOuter` | |
+| `fartoom_burst` | |
+| `fartoom_trail` | |
+| `firework_bursta` | |
+| `firework_burstb` | |
+
 </details>
 
 ---
@@ -1220,6 +2509,14 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ 0 3 ]`
 `[ 10 100 ]`
 `[ 50,100 ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `0,2` | |
+| `1,2` | |
+| `50,100` | |
 
 </details>
 
@@ -1274,6 +2571,76 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ CarvingKnife RazorBlade ButterflyKnife ]`
 `[ GutsHeart GutsLiver GutsIntestines ]`
 `[ MinerHat MinerMask MinerArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `CatHideArmor` | |
+| `CatHideHat` | |
+| `CatHideMask` | |
+| `GutsHeart` | |
+| `GutsIntestines` | |
+| `GutsLiver` | |
+| `BigRockHat` | |
+| `BigRockMask` | |
+| `BigRockNecklace` | |
+| `BonesHat` | |
+| `Catnip` | |
+| `CatnipBig` | |
+| `CavemanBeard` | |
+| `CavemanEyebrows` | |
+| `CavemanNecklace` | |
+| `CavemanWig` | |
+| `DinoHat` | |
+| `DinoMask` | |
+| `DinoNecklace` | |
+| `FrozenHat` | |
+| `FrozenMask` | |
+| `FrozenNecklace` | |
+| `LeafyHat` | |
+| `LeafyMask` | |
+| `LeafyNecklace` | |
+| `PhoenixHat` | |
+| `PhoenixMask` | |
+| `PhoenixNecklace` | |
+| `RazorBlade` | |
+| `SaberToothedHat` | |
+| `SaberToothedPelt` | |
+| `BagOfGlass` | |
+| `BagOfSeeds` | |
+| `BlackMushroom` | |
+| `BonesMask` | |
+| `BurningCoal` | |
+| `ButterflyKnife` | |
+| `CarvingKnife` | |
+| `DryBoneHat` | |
+| `Ember` | |
+| `FireFlower` | |
+| `FishHook` | |
+| `FishNecklace` | |
+| `FoodBig` | |
+| `FoodMedium` | |
+| `GlassShard` | |
+| `GlowingSeed` | |
+| `HumanBrain` | |
+| `HumanFleshMask` | |
+| `HumanHead` | |
+| `KiloOfCatnip` | |
+| `LargeMeteor` | |
+| `MagicSeed` | |
+| `MatchStick` | |
+| `MinerArmor` | |
+| `MinerHat` | |
+| `MinerMask` | |
+| `Mushrooms` | |
+| `Pearl` | |
+| `PurpleMushroom` | |
+| `RedMushroom` | |
+| `RustyRazor` | |
+| `SmallMeteor` | |
+| `SpottedMushroom` | |
+| `VibratingMeteorite` | |
 
 </details>
 
@@ -1382,6 +2749,28 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ common alley_events.gon ]`
 `[ common boneyard_events.gon ]`
 `[ common bunker_events.gon ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `common` | |
+| `alley_events.gon` | |
+| `boneyard_events.gon` | |
+| `bunker_events.gon` | |
+| `caves_events.gon` | |
+| `core_events.gon` | |
+| `crater_events.gon` | |
+| `desert_events.gon` | |
+| `future_events.gon` | |
+| `iceage_events.gon` | |
+| `junkyard_events.gon` | |
+| `jurassic_events.gon` | |
+| `lab_events.gon` | |
+| `moon_events.gon` | |
+| `sewer_events.gon` | |
+| `special_events.gon` | |
+| `theend_events.gon` | |
 
 </details>
 
@@ -2131,6 +3520,18 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ con str lck ]`
 `[ cha int str ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `int` | |
+| `cha` | |
+| `con` | |
+| `dex` | |
+| `spd` | |
+| `str` | |
+| `lck` | |
+
 </details>
 
 ---
@@ -2148,6 +3549,377 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ SafeSwitching Mixup Turnabout MonkeyStyle BrickSkin JaggedEdges MindBreaker CobraStyle Tenderize LongArms SpreadThePain Harden IronSkin JetFists EnergyFists Unstoppable UnburdenedMotion UnburdenedStrikes UnburdenedThoughts RunningJab PerfectTechnique RapidFlow CounterBarrage FlowState DancingLights ]`
 `[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutton Hooked Stompy Barbed GrapplingHook PainGain WideSwing Confrontational HeaveHook Harpooner LordOfTheFlies Schadenfreude Gurgitator LooseMeat Hack BowlingBall Testy Indigestion Incubator DukeOfFlies ]`
 `[ SuperCrow NaturesGuidance PoisonIvy Pathfinder EmptyVessels WildAnimals BarkSkin SoothingSong Teamwork Bouquet GoodVibrations VersatileVocalist LikeAFish Encore SpecialFriends SneakAttack WildStyle BuddySystem FlowerPower SuicideSquad Feral RapGod Animalistic Maestro MegaMinions ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AfterImage` | |
+| `Agile` | |
+| `AlmsForThePoor` | |
+| `AlphaStrike` | |
+| `Amped` | |
+| `Amplify` | |
+| `AngelicInspiration` | |
+| `AnimalControl` | |
+| `AnimalHandler` | |
+| `Animalistic` | |
+| `ArmorSpecialist` | |
+| `ArmoredPlating` | |
+| `Avenger` | |
+| `Backstabber` | |
+| `Barbed` | |
+| `BareMinimum` | |
+| `BarkSkin` | |
+| `Beckon` | |
+| `BedBugs` | |
+| `Blacksmith` | |
+| `Blessed` | |
+| `BlessingOfHolyFire` | |
+| `BlessingOfSpirit` | |
+| `Blink` | |
+| `BloodLust` | |
+| `Boned` | |
+| `BoobyTrap` | |
+| `Bouncer` | |
+| `BountyHunter` | |
+| `Bouquet` | |
+| `BowlingBall` | |
+| `BreathOfLife` | |
+| `BrickSkin` | |
+| `BroodMother` | |
+| `BuddySystem` | |
+| `Burgle` | |
+| `BurningPaws` | |
+| `ButchersSoul` | |
+| `CambionConception` | |
+| `Careful` | |
+| `Caretaker` | |
+| `CatAPult` | |
+| `CatchProjectiles` | |
+| `ChainKnockback` | |
+| `ChainsOfGuilt` | |
+| `ChargeUp` | |
+| `Charming` | |
+| `ClericsSoul` | |
+| `CobraStyle` | |
+| `Conductor` | |
+| `Confrontational` | |
+| `CorpseConnoisseur` | |
+| `CounterBarrage` | |
+| `Cripple` | |
+| `Critical` | |
+| `DancingLights` | |
+| `DarkPriest` | |
+| `Daunt` | |
+| `Dealer` | |
+| `DeathBoon` | |
+| `DeathIncarnate` | |
+| `DeathProof` | |
+| `DeathsDoor` | |
+| `DemoMan` | |
+| `DirtyClaws` | |
+| `DoubleThrow` | |
+| `Drag` | |
+| `DruidsSoul` | |
+| `DualWield` | |
+| `DuctTape` | |
+| `DukeOfFlies` | |
+| `DumbMuscle` | |
+| `EMP` | |
+| `ETank` | |
+| `EldritchVisage` | |
+| `ElementalAttunement` | |
+| `EmptyVessels` | |
+| `EnchantedRelic` | |
+| `Encore` | |
+| `Energizer` | |
+| `EnergyFists` | |
+| `EnergyStorm` | |
+| `Enlightened` | |
+| `EscapeSequence` | |
+| `Eternal` | |
+| `EternalHealth` | |
+| `EvilPatron` | |
+| `FastFooted` | |
+| `FasterWhenHit` | |
+| `Feral` | |
+| `FightMe` | |
+| `FightersSoul` | |
+| `FireArmor` | |
+| `FirstImpression` | |
+| `Five` | |
+| `Fleabag` | |
+| `FlipACoin` | |
+| `Flourish` | |
+| `FlowState` | |
+| `FlowerPower` | |
+| `Flying` | |
+| `FollowUp` | |
+| `Four` | |
+| `FreshMeat` | |
+| `FullPower` | |
+| `Furious` | |
+| `FuzzyFeet` | |
+| `Gassy` | |
+| `Glow` | |
+| `Glutton` | |
+| `GodWarrior` | |
+| `Godspeed` | |
+| `GoldenClaws` | |
+| `GoodVibrations` | |
+| `Goofball` | |
+| `GrapplingHook` | |
+| `GravityFalls` | |
+| `GravityWell` | |
+| `Gurgitator` | |
+| `Hack` | |
+| `HamsterStyle` | |
+| `HardHead` | |
+| `Harden` | |
+| `Hardy` | |
+| `Harpooner` | |
+| `HawkEye` | |
+| `Hazardous` | |
+| `HealingAura` | |
+| `Heathens` | |
+| `HeaveHook` | |
+| `HeavyHanded` | |
+| `HighAsYouCanCount` | |
+| `HitMe` | |
+| `HolyMantel` | |
+| `HomeRun` | |
+| `Hooked` | |
+| `Host` | |
+| `HotBlooded` | |
+| `HuntersBoon` | |
+| `HuntersSoul` | |
+| `IceArmor` | |
+| `IcePaws` | |
+| `ImmortalLeeches` | |
+| `Incubator` | |
+| `Indigestion` | |
+| `Infected` | |
+| `Infested` | |
+| `InfiniteRebirth` | |
+| `Ingenuity` | |
+| `IronSkin` | |
+| `ItemProxy` | |
+| `ItsAlive` | |
+| `JaggedEdges` | |
+| `JestersSoul` | |
+| `JetFists` | |
+| `KillsHeal` | |
+| `LastGasp` | |
+| `LateBloomer` | |
+| `LatentEnergy` | |
+| `Leader` | |
+| `LearnFromMe` | |
+| `Leechmother` | |
+| `LightUpTheStage` | |
+| `LightningArmor` | |
+| `LightningPaws` | |
+| `LightningRod` | |
+| `LikeAFish` | |
+| `LivingBattery` | |
+| `LongArms` | |
+| `LongCast` | |
+| `LongShot` | |
+| `LooseMeat` | |
+| `LootHoarder` | |
+| `Looter` | |
+| `LordOfTheFlies` | |
+| `LuckDrain` | |
+| `LuckSwing` | |
+| `Lucky` | |
+| `MadVisage` | |
+| `Maestro` | |
+| `MagesSoul` | |
+| `MagicGuru` | |
+| `MainCourse` | |
+| `Mange` | |
+| `Mania` | |
+| `Masochist` | |
+| `MegaMinions` | |
+| `MentalStorm` | |
+| `MetalDetector` | |
+| `Micronaps` | |
+| `MindBreaker` | |
+| `MindTempest` | |
+| `MiniMe` | |
+| `Mixup` | |
+| `MonkeyStyle` | |
+| `MonksSoul` | |
+| `MoraleBoost` | |
+| `MostValuableCat` | |
+| `MountainForm` | |
+| `MrMega` | |
+| `MyLeg` | |
+| `Nanobots` | |
+| `Napalm` | |
+| `NaturalHealer` | |
+| `NaturalHealing` | |
+| `NaturesGuidance` | |
+| `NecromancersSoul` | |
+| `NeverFull` | |
+| `NumbingLeeches` | |
+| `OffloadPain` | |
+| `Omniscience` | |
+| `One` | |
+| `OneEighty` | |
+| `OneWithNothing` | |
+| `OverConfident` | |
+| `Overflow` | |
+| `Overload` | |
+| `Overpowered` | |
+| `PainGain` | |
+| `Parasitic` | |
+| `Pathfinder` | |
+| `Patience` | |
+| `PawMissile` | |
+| `Penetrate` | |
+| `PerfectTechnique` | |
+| `PetRocks` | |
+| `Pinpoint` | |
+| `Plow` | |
+| `PoisonIvy` | |
+| `PoisonTips` | |
+| `PowerUp` | |
+| `PressurePoints` | |
+| `PriorityTarget` | |
+| `ProtectTheWeak` | |
+| `Protection` | |
+| `ProtectiveAura` | |
+| `PsionicRepel` | |
+| `PsySmack` | |
+| `PsychicsSoul` | |
+| `Pulp` | |
+| `PunchFace` | |
+| `Purifier` | |
+| `Putrefy` | |
+| `Quiver` | |
+| `Radiation` | |
+| `RangedMedic` | |
+| `RapGod` | |
+| `RapidFlow` | |
+| `RatStyle` | |
+| `RazorClaws` | |
+| `ReactiveArmor` | |
+| `RealityShatter` | |
+| `Recharged` | |
+| `Recoil` | |
+| `ReflexPunch` | |
+| `RelentlessDead` | |
+| `RepressedMemories` | |
+| `Resonance` | |
+| `RobotArms` | |
+| `RockAspect` | |
+| `Rockin` | |
+| `RubberArrows` | |
+| `RunningJab` | |
+| `SacrificialLamb` | |
+| `SafeSwitching` | |
+| `SantaSangre` | |
+| `Scabs` | |
+| `Scars` | |
+| `Scavenger` | |
+| `Schadenfreude` | |
+| `Scrapper` | |
+| `SelfAssured` | |
+| `SerialKiller` | |
+| `Shadow` | |
+| `ShakeDown` | |
+| `Shank` | |
+| `SharingIsCaring` | |
+| `Shiv` | |
+| `ShoulderCheck` | |
+| `ShovingMatch` | |
+| `Shrapnel` | |
+| `Shrapnel_Tinkerer` | |
+| `SkillShare` | |
+| `SkullSmash` | |
+| `SlackOff` | |
+| `SleepDarts` | |
+| `SlowAndSteady` | |
+| `Slugger` | |
+| `Smash` | |
+| `SneakAttack` | |
+| `Sniper` | |
+| `SoothingSong` | |
+| `SoulBound` | |
+| `SoulShatter` | |
+| `SpecialFriends` | |
+| `SplitShot` | |
+| `Spotters` | |
+| `SpreadSorrow` | |
+| `SpreadThePain` | |
+| `Stoic` | |
+| `Stompy` | |
+| `StrengthInNumbers` | |
+| `Study` | |
+| `SuicideSquad` | |
+| `SuperCrow` | |
+| `SuperLuck` | |
+| `Superstition` | |
+| `Survivalist` | |
+| `SweetSpot` | |
+| `SwiftKiller` | |
+| `TaintedMother` | |
+| `TakeAim` | |
+| `TalkToAnimals` | |
+| `TanksSoul` | |
+| `Teamwork` | |
+| `Tenderize` | |
+| `Testy` | |
+| `ThickSkull` | |
+| `ThiefsSoul` | |
+| `ThornArrows` | |
+| `Thorns` | |
+| `ThouShaltNotCovet` | |
+| `ThouShaltNotKill` | |
+| `ThouShaltObey` | |
+| `ThrillOfTheHunt` | |
+| `ThunderThighs` | |
+| `TinkerersSoul` | |
+| `ToadStyle` | |
+| `TopOff` | |
+| `Torpor` | |
+| `TowerDefense` | |
+| `Traps` | |
+| `TrickyTraps` | |
+| `TrueSight` | |
+| `Turnabout` | |
+| `TurtleStyle` | |
+| `Twiddle` | |
+| `Two` | |
+| `UnburdenedMotion` | |
+| `UnburdenedStrikes` | |
+| `UnburdenedThoughts` | |
+| `Undeath` | |
+| `Unrestricted` | |
+| `Unstoppable` | |
+| `Untouched` | |
+| `Vampirism` | |
+| `VeneratedTouch` | |
+| `Vengeful` | |
+| `VersatileVocalist` | |
+| `VersionTwo` | |
+| `VoidSoul` | |
+| `WeakSpot` | |
+| `WeaponMaster` | |
+| `WeaponProficiency` | |
+| `WhipCracker` | |
+| `WideLoad` | |
+| `WideSwing` | |
+| `Wiggly` | |
+| `WildAnimals` | |
+| `WildStyle` | |
+| `Wither` | |
+| `WormLord` | |
+| `Worms` | |
+| `Wrestlemaniac` | |
+| `ZenkaiBoost` | |
+| `Zip` | |
 
 </details>
 
@@ -2221,6 +3993,43 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ Escape attack DybbukReanimate ]`
 `[ Escape attack DybbukReanimate DybbukWisps ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `attack` | |
+| `DybbukReanimate` | |
+| `Escape` | |
+| `Tina2Call` | |
+| `**TVChangeDumb` | |
+| `**TVChangeObey` | |
+| `**TVChangeStop` | |
+| `AZ_BreakArm` | |
+| `AZ_BreakLeg` | |
+| `AZ_BreakNeck` | |
+| `CHCry` | |
+| `CHSpawn` | |
+| `DybbukWisps` | |
+| `GuillotinaTossCollide` | |
+| `Magnetize` | |
+| `NeutronExplode` | |
+| `NeutronRumble` | |
+| `PyrophinaSoloFlamethrower` | |
+| `ScaryFear` | |
+| `ScaryHaunt` | |
+| `SimonSays_ComeHere` | |
+| `SimonSays_GoAway` | |
+| `SimonSays_Scatter` | |
+| `TKNG_GoAway` | |
+| `TKNG_Kneel` | |
+| `TKNG_Roulette` | |
+| `TKNG_Spread` | |
+| `UFO_Dash` | |
+| `UFO_Megalaser` | |
+| `UFO_Summon` | |
+| `YeetTowardsBuddy` | |
+| `ZaratanaSoloBombardment` | |
+
 </details>
 
 ---
@@ -2238,6 +4047,29 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ *WizSpellShield WizBlizzard ]`
 `[ WizFlamethrower ]`
 `[ WizStorm ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `MoveCenter` | |
+| `attack` | |
+| `**FuzzerJump_post` | |
+| `*CanCreeperSlide` | |
+| `*CoreFreakFury` | |
+| `*CraterCreeperSlide` | |
+| `*WizSpellShield` | |
+| `*attack` | |
+| `BasicMelee` | |
+| `MCBlizzard` | |
+| `MCFlamethrower` | |
+| `MCStorm` | |
+| `MoveAway` | |
+| `PokerPokeCat` | |
+| `RageUp` | |
+| `WizBlizzard` | |
+| `WizFlamethrower` | |
+| `WizStorm` | |
 
 </details>
 
@@ -2310,6 +4142,24 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ all_cats_are_jester ]`
 `[ fail_all_events ]`
 `[ always_ambushed ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `increase_event_difficulty` | |
+| `trigger_extra_event` | |
+| `all_cats_are_jester` | |
+| `all_normal_events_are_weather` | |
+| `always_ambushed` | |
+| `disorder_levelup_quest` | |
+| `fail_all_events` | |
+| `increase_difficulty` | |
+| `item_levelup_quest` | |
+| `pyrophina_following` | |
+| `superchaos_levelups` | |
+| `upgrade_basic_combats_to_hard` | |
+| `zaratana_following` | |
 
 </details>
 
@@ -2455,6 +4305,16 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ 1 WaterBottle_Half ]`
 `[ 0 WaterBottle_Empty ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `EstusFlask_Half` | |
+| `EstusFlask_Empty` | |
+| `WaterBottle_Empty` | |
+| `WaterBottle_Half` | |
+| `JarOfNothing` | |
+
 </details>
 
 ---
@@ -2472,6 +4332,19 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ CaveDrip ]`
 `[ CaveDrip ]`
 `[ Mist ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `CaveDrip` | |
+| `AngelClouds` | |
+| `CoreHeatWave_Distortion` | |
+| `Mist` | |
+| `CraterLeaves` | |
+| `Embers` | |
+| `GlitchShards` | |
+| `MeatCaveDrip` | |
 
 </details>
 
@@ -2983,6 +4856,12 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ test.lvl ]`
 `[ test.lvl ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `test.lvl` | |
+
 </details>
 
 ---
@@ -3109,6 +4988,43 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ Hazardous Traps CatchProjectiles Host SleepDarts Survivalist ]`
 `[ ElementalAttunement LatentEnergy MagicGuru One Two Four Five ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AfterImage` | |
+| `Agile` | |
+| `BlessingOfHolyFire` | |
+| `BlessingOfSpirit` | |
+| `BountyHunter` | |
+| `CatchProjectiles` | |
+| `ChainKnockback` | |
+| `DumbMuscle` | |
+| `ElementalAttunement` | |
+| `Five` | |
+| `FlipACoin` | |
+| `Four` | |
+| `Hazardous` | |
+| `HitMe` | |
+| `Host` | |
+| `LatentEnergy` | |
+| `MagicGuru` | |
+| `MostValuableCat` | |
+| `MyLeg` | |
+| `One` | |
+| `Plow` | |
+| `RangedMedic` | |
+| `ShoulderCheck` | |
+| `ShovingMatch` | |
+| `SleepDarts` | |
+| `SlowAndSteady` | |
+| `Survivalist` | |
+| `ThickSkull` | |
+| `ThouShaltNotKill` | |
+| `Traps` | |
+| `Two` | |
+| `Wrestlemaniac` | |
+
 </details>
 
 ---
@@ -3180,6 +5096,14 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ 10 MoneyBag_Small ]`
 `[ 10 MoneyBag_Small ]`
 `[ 25 MoneyBag_Medium ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `MoneyBag_Small` | |
+| `MoneyBag_Medium` | |
+| `MoneyBag_Large` | |
 
 </details>
 
@@ -3396,6 +5320,25 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ CrimsonMask_Cursed RedCap_Cursed PoundOfFlesh_Cursed ]`
 `[ AmoebaHat AmoebaNeck AmoebaFace ]`
 `[ Tapeworm Pinworm Ringworm Heartworm EyeWorm Parousworm Hookworm Roundworm ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `EyeWorm` | |
+| `Heartworm` | |
+| `Hookworm` | |
+| `Parousworm` | |
+| `Pinworm` | |
+| `Ringworm` | |
+| `Roundworm` | |
+| `Tapeworm` | |
+| `AmoebaFace` | |
+| `AmoebaHat` | |
+| `AmoebaNeck` | |
+| `CrimsonMask_Cursed` | |
+| `PoundOfFlesh_Cursed` | |
+| `RedCap_Cursed` | |
 
 </details>
 
@@ -3955,6 +5898,16 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ CerberubsJumpBlind CerberubsJumpNormal ]`
 `[ ClotEvolve ClotFailEvolve ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `ClotFailEvolve` | |
+| `CerberubsJumpBlind` | |
+| `CerberubsJumpNormal` | |
+| `ClotEvolve` | |
+| `ClotEvolveCatCopy` | |
+
 </details>
 
 ---
@@ -4415,6 +6368,15 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ **PyrophinaVSWeatherRoar **PyrophinaVSRoar ]`
 `[ **ZaratanaVSWeatherRoar **ZaratanaVSRoar ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `**PyrophinaVSRoar` | |
+| `**PyrophinaVSWeatherRoar` | |
+| `**ZaratanaVSRoar` | |
+| `**ZaratanaVSWeatherRoar` | |
+
 </details>
 
 ---
@@ -4499,6 +6461,13 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Dwarfism ]`
 `[ Gigantism ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `Dwarfism` | |
+| `Gigantism` | |
 
 </details>
 
@@ -4617,6 +6586,15 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ AlienBeastScream AlienBeastEat AlienBeastPuke AlienBeastRampage ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AlienBeastEat` | |
+| `AlienBeastPuke` | |
+| `AlienBeastRampage` | |
+| `AlienBeastScream` | |
+
 </details>
 
 ---
@@ -4681,6 +6659,19 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ BirdHead BirdFeed Feather FeatheredMask FeatheredWing Turkey Chicken BirdPoopHat ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BirdFeed` | |
+| `BirdHead` | |
+| `BirdPoopHat` | |
+| `Chicken` | |
+| `Feather` | |
+| `FeatheredMask` | |
+| `FeatheredWing` | |
+| `Turkey` | |
+
 </details>
 
 ---
@@ -4728,6 +6719,21 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ BloodyCoin GlowingCoin ElectricCoin CounterfeitCoin LuckyCoin MoneyBag_Small MoneyBag_Medium MoneyBag_Large MoneyBag_Huge RollOfPennies ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BloodyCoin` | |
+| `CounterfeitCoin` | |
+| `ElectricCoin` | |
+| `GlowingCoin` | |
+| `LuckyCoin` | |
+| `MoneyBag_Huge` | |
+| `MoneyBag_Large` | |
+| `MoneyBag_Medium` | |
+| `MoneyBag_Small` | |
+| `RollOfPennies` | |
 
 </details>
 
@@ -4840,6 +6846,19 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ MysteriousEye BlinkingEyeball SmallEye GorgonsEye ConjoinedEye ThirdEye Eyeball WitchsEye ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BlinkingEyeball` | |
+| `ConjoinedEye` | |
+| `Eyeball` | |
+| `GorgonsEye` | |
+| `MysteriousEye` | |
+| `SmallEye` | |
+| `ThirdEye` | |
+| `WitchsEye` | |
 
 </details>
 
@@ -5161,6 +7180,21 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Invincible Paranoia Triskaidekaphobia Autism Bipolar Premonitions Dyslexia Schizophrenia Insomnia ADHD ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `ADHD` | |
+| `Autism` | |
+| `Bipolar` | |
+| `Dyslexia` | |
+| `Insomnia` | |
+| `Invincible` | |
+| `Paranoia` | |
+| `Premonitions` | |
+| `Schizophrenia` | |
+| `Triskaidekaphobia` | |
+
 </details>
 
 ---
@@ -5176,6 +7210,12 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ 3 X-8 ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `X-8` | |
 
 </details>
 
@@ -5289,6 +7329,15 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererStick TinkererBigStick TinkererBiggestStick TinkererLog ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinkererBigStick` | |
+| `TinkererBiggestStick` | |
+| `TinkererLog` | |
+| `TinkererStick` | |
+
 </details>
 
 ---
@@ -5321,6 +7370,13 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererBiggestStick TinkererLog ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinkererBiggestStick` | |
+| `TinkererLog` | |
+
 </details>
 
 ---
@@ -5336,6 +7392,12 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ TinkererLog ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinkererLog` | |
 
 </details>
 
@@ -5385,6 +7447,14 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ BarbedHat BarbedMask BarbedNeck ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BarbedHat` | |
+| `BarbedMask` | |
+| `BarbedNeck` | |
+
 </details>
 
 ---
@@ -5400,6 +7470,15 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ BarbedPaw BarbedHat BarbedMask BarbedNeck ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BarbedHat` | |
+| `BarbedMask` | |
+| `BarbedNeck` | |
+| `BarbedPaw` | |
 
 </details>
 
@@ -5417,6 +7496,32 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Autism Tourettes Narcolepsy Albinism Diabetes Dyslexia Dwarfism PrimordialDwarf WobblyCat GlassBones Anemia SpinaBifida WilliamsSyndrome SavantSyndrome Tachysensia DownsSyndrome Depression OCD Tourettes Bipolar Schizophrenia ADHD ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `Tourettes` | |
+| `ADHD` | |
+| `Albinism` | |
+| `Anemia` | |
+| `Autism` | |
+| `Bipolar` | |
+| `Depression` | |
+| `Diabetes` | |
+| `DownsSyndrome` | |
+| `Dwarfism` | |
+| `Dyslexia` | |
+| `GlassBones` | |
+| `Narcolepsy` | |
+| `OCD` | |
+| `PrimordialDwarf` | |
+| `SavantSyndrome` | |
+| `Schizophrenia` | |
+| `SpinaBifida` | |
+| `Tachysensia` | |
+| `WilliamsSyndrome` | |
+| `WobblyCat` | |
+
 </details>
 
 ---
@@ -5432,6 +7537,26 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ GutsHeart GutsLiver GutsIntestines SackOfMeat SacredHeart BoneMarrow Stomach LeakyBrain SnaggleTooth BoneMarrow ExtraLimb CatPaw CrimsonMask RedCap PoundOfFlesh LostSoul ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BoneMarrow` | |
+| `CatPaw` | |
+| `CrimsonMask` | |
+| `ExtraLimb` | |
+| `GutsHeart` | |
+| `GutsIntestines` | |
+| `GutsLiver` | |
+| `LeakyBrain` | |
+| `LostSoul` | |
+| `PoundOfFlesh` | |
+| `RedCap` | |
+| `SackOfMeat` | |
+| `SacredHeart` | |
+| `SnaggleTooth` | |
+| `Stomach` | |
 
 </details>
 
@@ -5449,6 +7574,24 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ MeatBomb BloodyStick BucketOfBlood BloodyButterflyKnife BloodyBearTraps BloodyBagOfGlass MeatSlugger BloodyMeatHook BloodySoulClaw BloodBucket BloodySpikes BottlesOfBlood BloodyRazor ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BloodBucket` | |
+| `BloodyBagOfGlass` | |
+| `BloodyBearTraps` | |
+| `BloodyButterflyKnife` | |
+| `BloodyMeatHook` | |
+| `BloodyRazor` | |
+| `BloodySoulClaw` | |
+| `BloodySpikes` | |
+| `BloodyStick` | |
+| `BottlesOfBlood` | |
+| `BucketOfBlood` | |
+| `MeatBomb` | |
+| `MeatSlugger` | |
+
 </details>
 
 ---
@@ -5464,6 +7607,12 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ SmallBomb ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `SmallBomb` | |
 
 </details>
 
@@ -5529,6 +7678,17 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ BonesHat BonesMask BonesNeck DryBoneMask DryBoneHat DryBoneNecklace ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BonesHat` | |
+| `BonesMask` | |
+| `BonesNeck` | |
+| `DryBoneHat` | |
+| `DryBoneMask` | |
+| `DryBoneNecklace` | |
+
 </details>
 
 ---
@@ -5544,6 +7704,24 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ BonesHat BonesMask BonesNeck BoneClub Molars VibratingSkull BoneMarrow CatRib HumanLeg DryBoneMask DryBoneHat DryBoneNecklace FingerBone ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BoneClub` | |
+| `BoneMarrow` | |
+| `BonesHat` | |
+| `BonesMask` | |
+| `BonesNeck` | |
+| `CatRib` | |
+| `DryBoneHat` | |
+| `DryBoneMask` | |
+| `DryBoneNecklace` | |
+| `FingerBone` | |
+| `HumanLeg` | |
+| `Molars` | |
+| `VibratingSkull` | |
 
 </details>
 
@@ -5609,6 +7787,12 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ SixPack ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `SixPack` | |
+
 </details>
 
 ---
@@ -5640,6 +7824,14 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ CatHideHat CatHideMask CatHideArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `CatHideArmor` | |
+| `CatHideHat` | |
+| `CatHideMask` | |
 
 </details>
 
@@ -5705,6 +7897,13 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ GenFlag_Boss_Stacy GenFlag_Boss_Spewer ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `GenFlag_Boss_Spewer` | |
+| `GenFlag_Boss_Stacy` | |
+
 </details>
 
 ---
@@ -5721,6 +7920,25 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ FighterSeal HunterSeal TankSeal ClericSeal ThiefSeal MageSeal ColorlessSeal PsychicSeal JesterSeal TinkererSeal ButcherSeal DruidSeal MonkSeal NecromancerSeal ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `ButcherSeal` | |
+| `ClericSeal` | |
+| `ColorlessSeal` | |
+| `DruidSeal` | |
+| `FighterSeal` | |
+| `HunterSeal` | |
+| `JesterSeal` | |
+| `MageSeal` | |
+| `MonkSeal` | |
+| `NecromancerSeal` | |
+| `PsychicSeal` | |
+| `TankSeal` | |
+| `ThiefSeal` | |
+| `TinkererSeal` | |
+
 </details>
 
 ---
@@ -5736,6 +7954,17 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ dead_body.gon monster.gon misc_events.gon npc_events.gon treasure_box.gon legacy_events.gon ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `dead_body.gon` | |
+| `legacy_events.gon` | |
+| `misc_events.gon` | |
+| `monster.gon` | |
+| `npc_events.gon` | |
+| `treasure_box.gon` | |
 
 </details>
 
@@ -5913,6 +8142,27 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ BonesHat BonesMask BonesNeck BoneClub Molars VibratingSkull BoneMarrow CatRib HumanLeg DryBoneMask DryBoneHat DryBoneNecklace FingerBone BoneClub Molars FingerBone CatHideHat CatHideMask CatHideArmor ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BoneClub` | |
+| `FingerBone` | |
+| `Molars` | |
+| `BoneMarrow` | |
+| `BonesHat` | |
+| `BonesMask` | |
+| `BonesNeck` | |
+| `CatHideArmor` | |
+| `CatHideHat` | |
+| `CatHideMask` | |
+| `CatRib` | |
+| `DryBoneHat` | |
+| `DryBoneMask` | |
+| `DryBoneNecklace` | |
+| `HumanLeg` | |
+| `VibratingSkull` | |
+
 </details>
 
 ---
@@ -5961,6 +8211,18 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ BlackCandle CrownOfHorns ObsidianChunk DemonicHat DemonicMask DemonicNecklace DarkFriend ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BlackCandle` | |
+| `CrownOfHorns` | |
+| `DarkFriend` | |
+| `DemonicHat` | |
+| `DemonicMask` | |
+| `DemonicNecklace` | |
+| `ObsidianChunk` | |
+
 </details>
 
 ---
@@ -5992,6 +8254,18 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ D6Fizzle D6Confused D6Poop D6Laser D6Quake D6Storm D6Wrath ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `D6Confused` | |
+| `D6Fizzle` | |
+| `D6Laser` | |
+| `D6Poop` | |
+| `D6Quake` | |
+| `D6Storm` | |
+| `D6Wrath` | |
 
 </details>
 
@@ -6041,6 +8315,19 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ attack spell0 spell1 spell2 spell3 spell4 weapon trinket ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `attack` | |
+| `spell0` | |
+| `spell1` | |
+| `spell2` | |
+| `spell3` | |
+| `spell4` | |
+| `trinket` | |
+| `weapon` | |
+
 </details>
 
 ---
@@ -6072,6 +8359,18 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ Shotgun 22Rifle Uzi RocketLauncher Revolver Sniper Grenade ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `22Rifle` | |
+| `Grenade` | |
+| `Revolver` | |
+| `RocketLauncher` | |
+| `Shotgun` | |
+| `Sniper` | |
+| `Uzi` | |
 
 </details>
 
@@ -6121,6 +8420,17 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ SmallEye GorgonsEye Eyeball WitchsEye BlinkingEyeball ConjoinedEye ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BlinkingEyeball` | |
+| `ConjoinedEye` | |
+| `Eyeball` | |
+| `GorgonsEye` | |
+| `SmallEye` | |
+| `WitchsEye` | |
+
 </details>
 
 ---
@@ -6152,6 +8462,18 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ PoundOfFlesh HumanFleshMask HumanFleshHat HumanFleshArmor HumanHead HumanHand HumanToe ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `HumanFleshArmor` | |
+| `HumanFleshHat` | |
+| `HumanFleshMask` | |
+| `HumanHand` | |
+| `HumanHead` | |
+| `HumanToe` | |
+| `PoundOfFlesh` | |
 
 </details>
 
@@ -6201,6 +8523,16 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Psychosis BorrowedTime Schizophrenia Insomnia TheHunger ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BorrowedTime` | |
+| `Insomnia` | |
+| `Psychosis` | |
+| `Schizophrenia` | |
+| `TheHunger` | |
+
 </details>
 
 ---
@@ -6233,6 +8565,14 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ GutsHeart GutsLiver GutsIntestines ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `GutsHeart` | |
+| `GutsIntestines` | |
+| `GutsLiver` | |
+
 </details>
 
 ---
@@ -6248,6 +8588,21 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ BarbedScrap LeatherHideMask RecycledGimpMask GemstoneBones CoolRocks MinerImplant RottenGuts PaperRags DirtyBionicArmor LuckyTwine ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BarbedScrap` | |
+| `CoolRocks` | |
+| `DirtyBionicArmor` | |
+| `GemstoneBones` | |
+| `LeatherHideMask` | |
+| `LuckyTwine` | |
+| `MinerImplant` | |
+| `PaperRags` | |
+| `RecycledGimpMask` | |
+| `RottenGuts` | |
 
 </details>
 
@@ -6265,6 +8620,21 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ BlessedHalo HolyTears EyeOfGod TheMind TheBody TheSoul Scapular CrownOfThorns ImmaculateHeart BlessedAnointingOil ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BlessedAnointingOil` | |
+| `BlessedHalo` | |
+| `CrownOfThorns` | |
+| `EyeOfGod` | |
+| `HolyTears` | |
+| `ImmaculateHeart` | |
+| `Scapular` | |
+| `TheBody` | |
+| `TheMind` | |
+| `TheSoul` | |
+
 </details>
 
 ---
@@ -6281,6 +8651,15 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ BestBud SoulSucker AngryWorm HealWorm ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AngryWorm` | |
+| `BestBud` | |
+| `HealWorm` | |
+| `SoulSucker` | |
+
 </details>
 
 ---
@@ -6296,6 +8675,24 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ BagOfGrass SeedBombs GlowingSeed MagicSeed TwineHat TwineMask TwineArmor LeafyMask LeafyHat LeafyNecklace KiloOfCatnip CatnipBig LuckyMask ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BagOfGrass` | |
+| `CatnipBig` | |
+| `GlowingSeed` | |
+| `KiloOfCatnip` | |
+| `LeafyHat` | |
+| `LeafyMask` | |
+| `LeafyNecklace` | |
+| `LuckyMask` | |
+| `MagicSeed` | |
+| `SeedBombs` | |
+| `TwineArmor` | |
+| `TwineHat` | |
+| `TwineMask` | |
 
 </details>
 
@@ -6329,6 +8726,14 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ FaceGrub HeadGrub NeckGrub ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `FaceGrub` | |
+| `HeadGrub` | |
+| `NeckGrub` | |
+
 </details>
 
 ---
@@ -6344,6 +8749,20 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ GutsHeart GutsLiver GutsIntestines BoneMarrow Stomach LeakyBrain HumanBrain HumanHeart MysteriousEye ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BoneMarrow` | |
+| `GutsHeart` | |
+| `GutsIntestines` | |
+| `GutsLiver` | |
+| `HumanBrain` | |
+| `HumanHeart` | |
+| `LeakyBrain` | |
+| `MysteriousEye` | |
+| `Stomach` | |
 
 </details>
 
@@ -6409,6 +8828,18 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ CatHideHat CatHideMask CatHideArmor ThickHide RatHat RatMask RatNecklace ThickHide ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `ThickHide` | |
+| `CatHideArmor` | |
+| `CatHideHat` | |
+| `CatHideMask` | |
+| `RatHat` | |
+| `RatMask` | |
+| `RatNecklace` | |
+
 </details>
 
 ---
@@ -6473,6 +8904,25 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Technology D6 RazorBlade Teleport MomsRing ButterBean SacredHeart FetusInAJar Breakfast Ipecac SoyMilk SpoonBender Cancer Wafer ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `Breakfast` | |
+| `ButterBean` | |
+| `Cancer` | |
+| `D6` | |
+| `FetusInAJar` | |
+| `Ipecac` | |
+| `MomsRing` | |
+| `RazorBlade` | |
+| `SacredHeart` | |
+| `SoyMilk` | |
+| `SpoonBender` | |
+| `Technology` | |
+| `Teleport` | |
+| `Wafer` | |
+
 </details>
 
 ---
@@ -6504,6 +8954,25 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ ScrapHat ScrapMask ScrapArmor RubberHat RubberMask RubberArmor BarbedHat BarbedMask BarbedNeck RecycledHat RecycledMask RecycledArmor BagOfChum HumanHead ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BagOfChum` | |
+| `BarbedHat` | |
+| `BarbedMask` | |
+| `BarbedNeck` | |
+| `HumanHead` | |
+| `RecycledArmor` | |
+| `RecycledHat` | |
+| `RecycledMask` | |
+| `RubberArmor` | |
+| `RubberHat` | |
+| `RubberMask` | |
+| `ScrapArmor` | |
+| `ScrapHat` | |
+| `ScrapMask` | |
 
 </details>
 
@@ -6729,6 +9198,31 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ ChaosDevice MagicMirror MeStone AngryFace FartFace SpiderInjector PartyDetonator AirHorn TheLoner GlassCannon PrincessHat HardPill BubbleBoy Redacted Stopwatch StorageLocker MysteriousDice ExperimentalTreatment UltraVision3000 NuclearKnife ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AirHorn` | |
+| `AngryFace` | |
+| `BubbleBoy` | |
+| `ChaosDevice` | |
+| `ExperimentalTreatment` | |
+| `FartFace` | |
+| `GlassCannon` | |
+| `HardPill` | |
+| `MagicMirror` | |
+| `MeStone` | |
+| `MysteriousDice` | |
+| `NuclearKnife` | |
+| `PartyDetonator` | |
+| `PrincessHat` | |
+| `Redacted` | |
+| `SpiderInjector` | |
+| `Stopwatch` | |
+| `StorageLocker` | |
+| `TheLoner` | |
+| `UltraVision3000` | |
+
 </details>
 
 ---
@@ -6761,6 +9255,18 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ RottenMeat BagOfMeat GutsHeart GutsLiver GutsIntestines BoneMarrow SackOfMeat ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BagOfMeat` | |
+| `BoneMarrow` | |
+| `GutsHeart` | |
+| `GutsIntestines` | |
+| `GutsLiver` | |
+| `RottenMeat` | |
+| `SackOfMeat` | |
+
 </details>
 
 ---
@@ -6792,6 +9298,55 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ Depression OCD PTSD Dyskinesia Empath ASRFight ASRFlight BloodFrenzy Shunned BrainDamage Anxiety Traumatophobia StockholmSyndrome ViolentOutbursts GamblingAddict Pacifist ImposterSyndrome Vegan Psychosis Fidgety Narcolepsy Paranoia EatingDisorder Hypomania Hypersomnia Triskaidekaphobia Tourettes SleepParalysis Bipolar Premonitions Brave Scatological Cannibal Pica Dyslexia Nudist Sociopathy SkillShare_Disorder Schizophrenia Lycanthropy Singleton Insomnia Phony ADHD ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `ADHD` | |
+| `ASRFight` | |
+| `ASRFlight` | |
+| `Anxiety` | |
+| `Bipolar` | |
+| `BloodFrenzy` | |
+| `BrainDamage` | |
+| `Brave` | |
+| `Cannibal` | |
+| `Depression` | |
+| `Dyskinesia` | |
+| `Dyslexia` | |
+| `EatingDisorder` | |
+| `Empath` | |
+| `Fidgety` | |
+| `GamblingAddict` | |
+| `Hypersomnia` | |
+| `Hypomania` | |
+| `ImposterSyndrome` | |
+| `Insomnia` | |
+| `Lycanthropy` | |
+| `Narcolepsy` | |
+| `Nudist` | |
+| `OCD` | |
+| `PTSD` | |
+| `Pacifist` | |
+| `Paranoia` | |
+| `Phony` | |
+| `Pica` | |
+| `Premonitions` | |
+| `Psychosis` | |
+| `Scatological` | |
+| `Schizophrenia` | |
+| `Shunned` | |
+| `Singleton` | |
+| `SkillShare_Disorder` | |
+| `SleepParalysis` | |
+| `Sociopathy` | |
+| `StockholmSyndrome` | |
+| `Tourettes` | |
+| `Traumatophobia` | |
+| `Triskaidekaphobia` | |
+| `Vegan` | |
+| `ViolentOutbursts` | |
 
 </details>
 
@@ -6873,6 +9428,14 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinyTumorA TinyTumorB TinyTumorC ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinyTumorA` | |
+| `TinyTumorB` | |
+| `TinyTumorC` | |
+
 </details>
 
 ---
@@ -6904,6 +9467,12 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ nemesis ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `nemesis` | |
 
 </details>
 
@@ -6976,6 +9545,32 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Tapeworm Pinworm Ringworm Heartworm BotflyLarva BrainMaggot Cordyceps CymothoaExigua EyeWorm Malaria NaegleriaFowleri Scabies BeanParasite EuhaplorchisCaliforniensis Roundworm SacculinaCarcini Lice Cooties Hookworm Parousworm TheTick ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BeanParasite` | |
+| `BotflyLarva` | |
+| `BrainMaggot` | |
+| `Cooties` | |
+| `Cordyceps` | |
+| `CymothoaExigua` | |
+| `EuhaplorchisCaliforniensis` | |
+| `EyeWorm` | |
+| `Heartworm` | |
+| `Hookworm` | |
+| `Lice` | |
+| `Malaria` | |
+| `NaegleriaFowleri` | |
+| `Parousworm` | |
+| `Pinworm` | |
+| `Ringworm` | |
+| `Roundworm` | |
+| `SacculinaCarcini` | |
+| `Scabies` | |
+| `Tapeworm` | |
+| `TheTick` | |
+
 </details>
 
 ---
@@ -6991,6 +9586,14 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ CatHideHat CatHideMask CatHideArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `CatHideArmor` | |
+| `CatHideHat` | |
+| `CatHideMask` | |
 
 </details>
 
@@ -7023,6 +9626,18 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ RoidRage SpeedBall BrainCandy DiscoBiscuit Clover Upper Percs ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BrainCandy` | |
+| `Clover` | |
+| `DiscoBiscuit` | |
+| `Percs` | |
+| `RoidRage` | |
+| `SpeedBall` | |
+| `Upper` | |
 
 </details>
 
@@ -7088,6 +9703,20 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ RatTail RatHeart RatBeezer RatHat RatMask RatNecklace HybridMask PetrifiedPinky RatBomb ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `HybridMask` | |
+| `PetrifiedPinky` | |
+| `RatBeezer` | |
+| `RatBomb` | |
+| `RatHat` | |
+| `RatHeart` | |
+| `RatMask` | |
+| `RatNecklace` | |
+| `RatTail` | |
+
 </details>
 
 ---
@@ -7103,6 +9732,14 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ RecycledHat RecycledMask RecycledArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `RecycledArmor` | |
+| `RecycledHat` | |
+| `RecycledMask` | |
 
 </details>
 
@@ -7120,6 +9757,31 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ MundaneStone MindStone TinyPebble SkillStone Neverstone HeavyRock Geode StoneOrbit StoneHelmet StoneHelmet StoneHelmet StoneHelmet Rocks Rocks Rocks Rocks Rocks BagOfRocks RockHat RockMask RockArmor RockyMask RockyHat RockyNecklace BigRockHat BigRockMask BigRockNecklace ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `Rocks` | |
+| `StoneHelmet` | |
+| `BagOfRocks` | |
+| `BigRockHat` | |
+| `BigRockMask` | |
+| `BigRockNecklace` | |
+| `Geode` | |
+| `HeavyRock` | |
+| `MindStone` | |
+| `MundaneStone` | |
+| `Neverstone` | |
+| `RockArmor` | |
+| `RockHat` | |
+| `RockMask` | |
+| `RockyHat` | |
+| `RockyMask` | |
+| `RockyNecklace` | |
+| `SkillStone` | |
+| `StoneOrbit` | |
+| `TinyPebble` | |
+
 </details>
 
 ---
@@ -7135,6 +9797,14 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ RottenHat RottenMask RottenArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `RottenArmor` | |
+| `RottenHat` | |
+| `RottenMask` | |
 
 </details>
 
@@ -7264,6 +9934,12 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererStick ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinkererStick` | |
+
 </details>
 
 ---
@@ -7279,6 +9955,12 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ TinkererBigStick ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinkererBigStick` | |
 
 </details>
 
@@ -7296,6 +9978,12 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererBiggestStick ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinkererBiggestStick` | |
+
 </details>
 
 ---
@@ -7311,6 +9999,12 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ TinkererLog ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `TinkererLog` | |
 
 </details>
 
@@ -7344,6 +10038,12 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ crit ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `crit` | |
+
 </details>
 
 ---
@@ -7359,6 +10059,26 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ Technology FrankBolts RadarDish RoboArm HappyHelmet VisionPlugin OcularChip CerebralChip SpinalChip BionicHat BionicMask BionicArmor CyborgHat CyborgMask CyborgArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `BionicArmor` | |
+| `BionicHat` | |
+| `BionicMask` | |
+| `CerebralChip` | |
+| `CyborgArmor` | |
+| `CyborgHat` | |
+| `CyborgMask` | |
+| `FrankBolts` | |
+| `HappyHelmet` | |
+| `OcularChip` | |
+| `RadarDish` | |
+| `RoboArm` | |
+| `SpinalChip` | |
+| `Technology` | |
+| `VisionPlugin` | |
 
 </details>
 
@@ -7392,6 +10112,20 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererStick TinkererGlassShard PogoStick SmallBomb TinkererBattery Spitball JankAlloyHat JankAlloyMask JankAlloyArmor ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `JankAlloyArmor` | |
+| `JankAlloyHat` | |
+| `JankAlloyMask` | |
+| `PogoStick` | |
+| `SmallBomb` | |
+| `Spitball` | |
+| `TinkererBattery` | |
+| `TinkererGlassShard` | |
+| `TinkererStick` | |
+
 </details>
 
 ---
@@ -7407,6 +10141,15 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ SmallBomb JankAlloyHat JankAlloyMask JankAlloyArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `JankAlloyArmor` | |
+| `JankAlloyHat` | |
+| `JankAlloyMask` | |
+| `SmallBomb` | |
 
 </details>
 
@@ -7424,6 +10167,20 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererBigStick StunGun MiniJetpack TinkererBottles TinkererSlingShot Bomb AlloyHat AlloyMask AlloyArmor ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AlloyArmor` | |
+| `AlloyHat` | |
+| `AlloyMask` | |
+| `Bomb` | |
+| `MiniJetpack` | |
+| `StunGun` | |
+| `TinkererBigStick` | |
+| `TinkererBottles` | |
+| `TinkererSlingShot` | |
+
 </details>
 
 ---
@@ -7439,6 +10196,15 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ Bomb AlloyHat AlloyMask AlloyArmor ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AlloyArmor` | |
+| `AlloyHat` | |
+| `AlloyMask` | |
+| `Bomb` | |
 
 </details>
 
@@ -7456,6 +10222,20 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererBiggestStick NailBoard BucketOfAcid TinkererTaser TinkererCrossbow Deathbot AdvancedAlloyHat AdvancedAlloyMask AdvancedAlloyArmor ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `AdvancedAlloyArmor` | |
+| `AdvancedAlloyHat` | |
+| `AdvancedAlloyMask` | |
+| `BucketOfAcid` | |
+| `Deathbot` | |
+| `NailBoard` | |
+| `TinkererBiggestStick` | |
+| `TinkererCrossbow` | |
+| `TinkererTaser` | |
+
 </details>
 
 ---
@@ -7472,6 +10252,20 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ TinkererLog Shotgun 22Rifle Uzi RocketLauncher TeslaCannon EliteAlloyHat EliteAlloyMask EliteAlloyArmor ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `22Rifle` | |
+| `EliteAlloyArmor` | |
+| `EliteAlloyHat` | |
+| `EliteAlloyMask` | |
+| `RocketLauncher` | |
+| `Shotgun` | |
+| `TeslaCannon` | |
+| `TinkererLog` | |
+| `Uzi` | |
+
 </details>
 
 ---
@@ -7487,6 +10281,18 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ special_comfortidol special_appealidol special_healthidol special_evolutionidol special_stimulationidol special_fightidol special_suppressoridol ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `special_appealidol` | |
+| `special_comfortidol` | |
+| `special_evolutionidol` | |
+| `special_fightidol` | |
+| `special_healthidol` | |
+| `special_stimulationidol` | |
+| `special_suppressoridol` | |
 
 </details>
 
@@ -7568,6 +10374,15 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Furious PressurePoints LateBloomer ZenkaiBoost ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `Furious` | |
+| `LateBloomer` | |
+| `PressurePoints` | |
+| `ZenkaiBoost` | |
+
 </details>
 
 ---
@@ -7600,6 +10415,18 @@ This document provides exhaustive lists of all array properties found in the bas
 **Examples:**
 `[ Shotgun Revolver Sniper 22Rifle RocketLauncher MomsKnife Grenade ]`
 
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `22Rifle` | |
+| `Grenade` | |
+| `MomsKnife` | |
+| `Revolver` | |
+| `RocketLauncher` | |
+| `Shotgun` | |
+| `Sniper` | |
+
 </details>
 
 ---
@@ -7631,6 +10458,124 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Examples:**
 `[ GlassShard RailSpikes NailBoard LilSlugger ChumBucket MeatHook Kebab Pipe ObsidianChunk SoulClaw Bomb BoneClub Molars Whetstone Hairspray Lighter SeedBombs Battery OldHose SixPack IceCubes DryIce Bottles Stick RubberFist BarbedPaw GnarledClaw Garbage Shotgun Revolver Sniper SmallBomb PogoStick Spitball MiniJetpack BigStick BiggestStick Log Taser Deathbot Crossbow BucketOfAcid StunGun SlingShot 22Rifle Uzi BagOfRocks Textbook BucketOfLard NailGun StrongMagnet SawBlades OddRemote ButterflyKnife BearTraps RustyRazor Bricks Mjolnir Blackjack BigSpring Grenade Pinwheel CrispPaper PurpleMushroom BlackMushroom RedMushroom PoisonVial PopCap CreepyPhoto FingerBone SpringBoard Shovel Trowel StaffOfFlame LacedNeedle BattleAxe TractorBeam RollOfPennies GrapplingHook Chainsaw BurningCoal RainbowRemote RubberBat RustedRod MeatCleaver SharpStraw BagOfGlass BagOfMeat BagOfGlitter BagOfStuff Pickaxe RocketLauncher MiniNuke FreyedWires OldExtinguisher TrashCanLid Kandarian Geode Rocks ExtraLimb GripTrainer ShoeHorn Cheese LipFiller EnergyDrink CatPaw FlowerMix PuzzleBox Crowbar FireFlower Bible CarBattery ModelingClay ]`
+
+**All Possible Values:**
+
+| Value | Definition |
+| :--- | :--- |
+| `22Rifle` | |
+| `BagOfGlass` | |
+| `BagOfGlitter` | |
+| `BagOfMeat` | |
+| `BagOfRocks` | |
+| `BagOfStuff` | |
+| `BarbedPaw` | |
+| `Battery` | |
+| `BattleAxe` | |
+| `BearTraps` | |
+| `Bible` | |
+| `BigSpring` | |
+| `BigStick` | |
+| `BiggestStick` | |
+| `BlackMushroom` | |
+| `Blackjack` | |
+| `Bomb` | |
+| `BoneClub` | |
+| `Bottles` | |
+| `Bricks` | |
+| `BucketOfAcid` | |
+| `BucketOfLard` | |
+| `BurningCoal` | |
+| `ButterflyKnife` | |
+| `CarBattery` | |
+| `CatPaw` | |
+| `Chainsaw` | |
+| `Cheese` | |
+| `ChumBucket` | |
+| `CreepyPhoto` | |
+| `CrispPaper` | |
+| `Crossbow` | |
+| `Crowbar` | |
+| `Deathbot` | |
+| `DryIce` | |
+| `EnergyDrink` | |
+| `ExtraLimb` | |
+| `FingerBone` | |
+| `FireFlower` | |
+| `FlowerMix` | |
+| `FreyedWires` | |
+| `Garbage` | |
+| `Geode` | |
+| `GlassShard` | |
+| `GnarledClaw` | |
+| `GrapplingHook` | |
+| `Grenade` | |
+| `GripTrainer` | |
+| `Hairspray` | |
+| `IceCubes` | |
+| `Kandarian` | |
+| `Kebab` | |
+| `LacedNeedle` | |
+| `Lighter` | |
+| `LilSlugger` | |
+| `LipFiller` | |
+| `Log` | |
+| `MeatCleaver` | |
+| `MeatHook` | |
+| `MiniJetpack` | |
+| `MiniNuke` | |
+| `Mjolnir` | |
+| `ModelingClay` | |
+| `Molars` | |
+| `NailBoard` | |
+| `NailGun` | |
+| `ObsidianChunk` | |
+| `OddRemote` | |
+| `OldExtinguisher` | |
+| `OldHose` | |
+| `Pickaxe` | |
+| `Pinwheel` | |
+| `Pipe` | |
+| `PogoStick` | |
+| `PoisonVial` | |
+| `PopCap` | |
+| `PurpleMushroom` | |
+| `PuzzleBox` | |
+| `RailSpikes` | |
+| `RainbowRemote` | |
+| `RedMushroom` | |
+| `Revolver` | |
+| `RocketLauncher` | |
+| `Rocks` | |
+| `RollOfPennies` | |
+| `RubberBat` | |
+| `RubberFist` | |
+| `RustedRod` | |
+| `RustyRazor` | |
+| `SawBlades` | |
+| `SeedBombs` | |
+| `SharpStraw` | |
+| `ShoeHorn` | |
+| `Shotgun` | |
+| `Shovel` | |
+| `SixPack` | |
+| `SlingShot` | |
+| `SmallBomb` | |
+| `Sniper` | |
+| `SoulClaw` | |
+| `Spitball` | |
+| `SpringBoard` | |
+| `StaffOfFlame` | |
+| `Stick` | |
+| `StrongMagnet` | |
+| `StunGun` | |
+| `Taser` | |
+| `Textbook` | |
+| `TractorBeam` | |
+| `TrashCanLid` | |
+| `Trowel` | |
+| `Uzi` | |
+| `Whetstone` | |
 
 </details>
 
