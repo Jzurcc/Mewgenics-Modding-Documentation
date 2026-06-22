@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: Engine: Event Nodes
 
-> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Engine: Event Nodes
 
@@ -33,7 +33,7 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `copy_party_items` | Number |  |
 | `cutscene` | String | Event Node: Triggers a narrative cutscene. |
 | `cutscene_on_exit` | Enum |  |
-| `damage` | Array | Event Node: Story branch or dialog option representing the 'Damage' action. |
+| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. |
 | `decrement_legacy_counter` | Enum |  |
 | `event_now` | Enum |  |
 | `event_now_same_cat` | Enum |  |
@@ -55,16 +55,16 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `global_effect_next_fight` | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. |
 | `goto` | Enum |  |
 | `heal` | Number |  |
-| `heal_disorder` | Enum |  |
+| `heal_disorder` | Number |  |
 | `heal_injury` | Number |  |
 | `hide_appearance_changes` | Number |  |
 | `increment_legacy_counter` | Enum |  |
-| `injury` | Equation |  |
+| `injury` | Enum |  |
 | `kill` | Enum |  |
 | `learn_ability` | Enum |  |
 | `learn_ability_from_pool` | Array |  |
 | `learn_passive` | Enum |  |
-| `learn_passive_from_pool` | Enum |  |
+| `learn_passive_from_pool` | Array |  |
 | `leave` | Block | Event Node: Story branch or dialog option representing the 'Leave' action. |
 | `leave_party_temporarily` | Block | Event Action: Removes a character from the active team until the next hub area. |
 | `level_up` | Enum |  |

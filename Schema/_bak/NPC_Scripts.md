@@ -36,8 +36,8 @@ sequences {
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| `movieclip` | Enum/String | The scene/room identifier for this NPC's UI screen. |
-| `default_npc` | Enum/String | The NPC this script is attached to. |
+| `movieclip` | Enum | The scene/room identifier for this NPC's UI screen. |
+| `default_npc` | Enum | The NPC this script is attached to. |
 | `states_and_transitions` | Block | Defines named animation/camera states and (unused) transition rules. |
 | `sequences` | Block | Contains all named sequence blocks — the main scripting body. |
 
@@ -58,7 +58,7 @@ They execute top-to-bottom when the engine triggers the named sequence.
 | `do_sequence` | Sequence Name | Jump to and execute another named sequence immediately. | `forward_to_tips`, `forward_to_tips`, `forward_to_tips` |
 | `force_current_cat_use_ability` | Ability Name | Force the currently-selected cat to use a specified ability (used in tutorials). |  |
 | `gather_questitem_info` | (none) | Populate internal quest item data for display in the next dialog. | `newest`, `newest`, `success` |
-| `get` | Enum/String | Trigger a get-reward action. Common value: `npc_reward` (give the player the NPC's queued reward). | `npc_reward`, `npc_reward`, `sidequest_reward` |
+| `get` | Enum | Trigger a get-reward action. Common value: `npc_reward` (give the player the NPC's queued reward). | `npc_reward`, `npc_reward`, `sidequest_reward` |
 | `get_random_furniture_piece` | (none) | Select a random furniture piece to reference in subsequent dialog. |  |
 | `get_token` | Token ID | Retrieve a specific game token/flag value. |  |
 | `if` | Condition | Conditional branch — executes next block only if condition is true. |  |
@@ -78,7 +78,7 @@ They execute top-to-bottom when the engine triggers the named sequence.
 | `unlock_class` | Class Name | Unlock a player class for use in future runs. | `Medic`, `Thief`, `Necromancer` |
 | `unlock_controls` | Number (1) | Re-enable player input after a `lock_controls`. | `1`, `1`, `1` |
 | `unlock_mouse` | Number (1) | Re-enable mouse cursor input. |  |
-| `wait_for` | Enum/String | Pause execution until a specific engine event fires. | `choose_cat1`, `choose_cat2`, `reject_cat` |
+| `wait_for` | Enum | Pause execution until a specific engine event fires. | `choose_cat1`, `choose_cat2`, `reject_cat` |
 | `wait_for_cancel` | Number | Pause execution for N seconds, or until the player cancels if the sequence is cancelable. | `1`, `1`, `1` |
 
 ---

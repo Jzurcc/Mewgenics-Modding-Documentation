@@ -1,21 +1,10 @@
 # Mewgenics Mod Developer Documentation: Engine: Damage Instances
 
-> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Engine: Damage Instances
 
 This document defines the shared schema for all Damage Instance blocks (`damage_instance`, `splash_damage`, `self_damage`, `bonk_damage`). Each of these blocks configures a discrete hit: its base damage, element, knockback, accuracy, and any on-hit effects.
-
-### All Confirmed `{Damage Blocks}` Values
-
-<details>
-<summary><b>Expand</b></summary>
-
-| ID | Type | Notes |
-| :--- | :--- | :--- |
-| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. |
-
-</details>
 
 ### Known Explicit Parameters
 
@@ -52,7 +41,7 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. |
 | `hit_animation_alt` | Enum | Custom flinch animation for the target. |
 | `incidentally_collects_pickups` | Boolean | Automatically grabs items in the AoE. |
-| `knockback` | Equation | The base physics pushing power (in tiles). |
+| `knockback` | Number | The base physics pushing power (in tiles). |
 | `layer` | Enum | Z-index targeting (e.g., `characters`, `self`). |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. |
 | `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. |
@@ -60,7 +49,7 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `piercing` | Boolean | Ignores a percentage of target defense/armor. |
 | `ranged` | Boolean | Boolean flagging the damage as explicitly ranged. |
 | `raw_damage` | Equation | Unmitigated, unscaled base numbers. |
-| `raw_heal` | Equation | Unmitigated, unscaled base numbers. |
+| `raw_heal` | String | Unmitigated, unscaled base numbers. |
 | `show_damage_on_0` | Boolean | Forces the "-0" floater text to appear. |
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. |
 | `type` | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). |

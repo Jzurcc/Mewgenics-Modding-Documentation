@@ -2,20 +2,23 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Custom Cats
 
 > **Associated Files:** `data/custom_cats.gon`
 
 
-### Context: `ROOT` (211 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 211
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | `texture` | Number |  | 211 |
 | `default_frame` | Number |  | 210 |
 | `palette` | Number |  | 210 |
@@ -44,10 +47,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `arm1` (2 instances)
+### Context: `arm1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -58,10 +63,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `arm2` (2 instances)
+### Context: `arm2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |

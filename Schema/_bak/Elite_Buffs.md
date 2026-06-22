@@ -2,22 +2,25 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Elite Buffs
 
 > **Associated Files:** `data/elite_buffs.gon, data/boss_elite_buffs.gon`
 
 
-### Context: `ROOT` (54 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 54
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | `icon_frame` | Number |  | 54 |
-| [`passives`](./Elite_Buffs.md#context-passives) | Block |  | 54 |
+| [`passives`](#context-passives) | Block |  | 54 |
 | `value` | Number |  | 54 |
 | `unique` | Boolean |  | 36 |
 | `specific_chapter` | Number |  | 8 |
@@ -31,68 +34,76 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passives` (54 instances)
+### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Elite_Buffs.md#context-root)
+**Total Count:** 54
 
-> **Engine Schema:** This block is a `[passive_id]` container. [View all confirmed values in Engine_Passives.md](./Engine_Passives.md)
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean | Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |
-| [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage) | Block |  | 3 |
-| [`RevengeDamage`](./Elite_Buffs.md#context-revengedamage) | Block |  | 2 |
-| [`StatusEachTurnEnd`](./Elite_Buffs.md#context-statuseachturnend) | Block |  | 2 |
-| [`AddStatusToBasicAttack`](./Elite_Buffs.md#context-addstatustobasicattack) | Block |  | 1 |
-| [`StatusEachRoundEnd`](./Elite_Buffs.md#context-statuseachroundend) | Block |  | 1 |
-| [`StatusOnDie`](./Elite_Buffs.md#context-statusondie) | Block |  | 1 |
-| [`StatusOnKill`](./Elite_Buffs.md#context-statusonkill) | Block |  | 1 |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`MeleeRevengeDamage`](#context-meleerevengedamage) | Block |  | 3 |
+| [`RevengeDamage`](#context-revengedamage) | Block |  | 2 |
+| [`StatusEachTurnEnd`](#context-statuseachturnend) | Block |  | 2 |
+| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block |  | 1 |
+| [`StatusEachRoundEnd`](#context-statuseachroundend) | Block |  | 1 |
+| [`StatusOnDie`](#context-statusondie) | Block |  | 1 |
+| [`StatusOnKill`](#context-statusonkill) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusEachRoundBegin` (8 instances)
+### Context: `StatusEachRoundBegin`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 8
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | `NonStackingShield` | Number |  | 8 |
 
 </details>
 
 ---
 
-### Context: `effects` (5 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage), [`RevengeDamage`](./Elite_Buffs.md#context-revengedamage)
+**Total Count:** 5
 
-> **Engine Schema:** This block is a `[effect_block]` container. [View all confirmed values in Engine_Effects.md](./Engine_Effects.md)
+> **Referenced by:** [`DamageNeighborsAfterMove`](#context-damageneighborsaftermove), [`MeleeRevengeDamage`](#context-meleerevengedamage), [`RevengeDamage`](#context-revengedamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |
-
+| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 </details>
 
 ---
 
-### Context: `DepressionAura` (4 instances)
+### Context: `DepressionAura`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -104,54 +115,58 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeleeRevengeDamage` (3 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 3
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | `knockback` | Number |  | 2 |
-| [`effects`](./Elite_Buffs.md#context-effects) | Block |  | 1 |
+| [`effects`](#context-effects) | Block |  | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
 </details>
 
 ---
 
-### Context: `ChanceToRevive` (2 instances)
+### Context: `ChanceToRevive`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `health` | Number |  | 2 |
 | `stacks` | Number |  | 2 |
-| [`statuses`](./Elite_Buffs.md#context-statuses) | Block |  | 2 |
+| [`statuses`](#context-statuses) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `DamageNeighborsAfterMove` (2 instances)
+### Context: `DamageNeighborsAfterMove`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number |  | 2 |
-| [`effects`](./Elite_Buffs.md#context-effects) | Block |  | 2 |
+| [`effects`](#context-effects) | Block |  | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 2 |
 
@@ -159,30 +174,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (2 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 2
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
-| [`effects`](./Elite_Buffs.md#context-effects) | Block |  | 2 |
+| [`effects`](#context-effects) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `SpawnOnBattleStart` (2 instances)
+### Context: `SpawnOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -193,63 +209,63 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEnd` (2 instances)
+### Context: `StatusEachTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 2
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
-
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 </details>
 
 ---
 
-### Context: `statuses` (2 instances)
+### Context: `statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChanceToRevive`](./Elite_Buffs.md#context-chancetorevive)
+**Total Count:** 2
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
+> **Referenced by:** [`ChanceToRevive`](#context-chancetorevive)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+</details>
+ | `Zombie` | Number |  | 2 | 
 
+---
+
+### Context: `AddStatusToBasicAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 </details>
 
 ---
 
-### Context: `AddStatusToBasicAttack` (1 instances)
+### Context: `ReflectProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 1
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
-
-</details>
-
----
-
-### Context: `ReflectProjectiles` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -259,49 +275,50 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachRoundEnd` (1 instances)
+### Context: `StatusEachRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 1
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
-
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 </details>
 
 ---
 
-### Context: `StatusOnDie` (1 instances)
+### Context: `StatusOnDie`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 1
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
-
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 </details>
 
 ---
 
-### Context: `StatusOnEnemyCastSpell` (1 instances)
+### Context: `StatusOnEnemyCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | `AllStatsUp` | Number |  | 1 |
 | `HealthGain` | Number |  | 1 |
 
@@ -309,19 +326,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnKill` (1 instances)
+### Context: `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+**Total Count:** 1
 
-> **Engine Schema:** This block is a `[status_id]` container. [View all confirmed values in Engine_Statuses.md](./Engine_Statuses.md)
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number | Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |
-
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 </details>
 
 ---

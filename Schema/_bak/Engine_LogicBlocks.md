@@ -1,14 +1,14 @@
-# Mewgenics Mod Developer Documentation: Engine: Effects & Conditionals
+# Mewgenics Mod Developer Documentation: Engine: Logic Blocks
 
-> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
-## Engine: Effects & Conditionals
+## Engine: Logic Blocks
 
-This document is the authoritative reference for the `effects {}` engine schema. All of the contexts below can appear as keys inside an `effects {}` block. Many of these are conditional wrappers that evaluate a condition before executing their nested effect block.
+This document is the authoritative reference for Logic Blocks. All of the contexts below can appear as dynamic keys inside an `effects {}` block, or directly inside abilities. Many of these are conditional wrappers that evaluate a condition before executing their nested block, while others redirect execution flow (e.g. `ApplyToSource`).
 
-> **Note:** Because many of these contexts accept arbitrary nested effects, any entry marked `[effect_block]` recursively refers back to this same document.
+> **Note:** Because many of these contexts accept arbitrary nested Logic Blocks, any entry marked `{Logic Blocks}` recursively refers back to this same document.
 
-### All Confirmed `{Effect Blocks}` Values
+### All Confirmed `[logic_block]` Values
 
 <details>
 <summary><b>Expand</b></summary>
@@ -22,7 +22,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `AddPostProcessEffect` | Block |  |
 | `AddSpiritBombCharges` | Number | Applies or references the 'AddSpiritBombCharges' effect/state. |
 | `AddTilesetObjects` | Block |  |
-| `AddWeaponAux` | Equation | Applies or references the 'AddWeaponAux' effect/state. |
+| `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. |
 | `Adrenaline` | Number | Applies or references the 'Adrenaline' effect/state. |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. |
 | `AlliesTakeExtraTurn` | Number | Applies or references the 'AlliesTakeExtraTurn' effect/state. |
@@ -49,7 +49,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `BlackHoleSuck` | Number | Applies or references the 'BlackHoleSuck' effect/state. |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. |
 | `BleedThorns` | Number | Applies or references the 'BleedThorns' effect/state. |
-| `Blind` | Array | Applies or references the 'Blind' effect/state. |
+| `Blind` | Number | Applies or references the 'Blind' effect/state. |
 | `Bloodzerked` | Number | Applies or references the 'Bloodzerked' effect/state. |
 | `BodyGuard` | Block | Protects an ally by intercepting attacks directed at them. |
 | `BombRatTurtle` | Number | Applies or references the 'BombRatTurtle' effect/state. |
@@ -64,7 +64,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `Brace` | Number | Applies or references the 'Brace' effect/state. |
 | `BramblesOnHit` | Number | Applies or references the 'BramblesOnHit' effect/state. |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. |
-| `BurgleCoin` | Array | Applies or references the 'BurgleCoin' effect/state. |
+| `BurgleCoin` | Number | Applies or references the 'BurgleCoin' effect/state. |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. |
 | `ButterflySwarm` | Number |  |
 | `BypassRockKnockback` | Number | Applies or references the 'BypassRockKnockback' effect/state. |
@@ -88,7 +88,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `Charge` | Number | Applies or references the 'Charge' effect/state. |
 | `ChargeFists` | Number | Applies or references the 'ChargeFists' effect/state. |
 | `CharismaUp` | Number | Applies or references the 'CharismaUp' effect/state. |
-| `Charmed` | Array | Applies or references the 'Charmed' effect/state. |
+| `Charmed` | Number | Applies or references the 'Charmed' effect/state. |
 | `CharmedFacingForceAttack` | Number | Applies or references the 'CharmedFacingForceAttack' effect/state. |
 | `CharmedForceAttack` | Number | Applies or references the 'CharmedForceAttack' effect/state. |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. |
@@ -99,7 +99,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. |
 | `CloneWeaponTemp` | Number | Applies or references the 'CloneWeaponTemp' effect/state. |
 | `CockroachSwarm` | Number |  |
-| `CoinTossBounce` | Equation | Applies or references the 'CoinTossBounce' effect/state. |
+| `CoinTossBounce` | Enum | Applies or references the 'CoinTossBounce' effect/state. |
 | `CollectsPickups` | Number | Applies or references the 'CollectsPickups' effect/state. |
 | `CollectsPickupsWithAltEffects` | Block | Triggers alternative nested effects when collecting items or pickups. |
 | `CollideWithConsumed` | Equation | Applies or references the 'CollideWithConsumed' effect/state. |
@@ -109,7 +109,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `ConjureBonusAbility` | Enum | Adds a temporary bonus ability to the character's hand/deck. |
 | `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. |
 | `ConjureSingleUseBonusAbility` | Enum | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. |
-| `ConstitutionUp` | Array | Applies or references the 'ConstitutionUp' effect/state. |
+| `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. |
 | `Consumed` | Block | State block triggered when this object or entity is eaten/consumed by another character. |
 | `ContextualHeal` | Number | Applies or references the 'ContextualHeal' effect/state. |
 | `CopySpells` | Number | Duplicates existing spells currently in the character's hand. |
@@ -130,7 +130,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `DeathwormUnderground` | Enum | Applies or references the 'DeathwormUnderground' effect/state. |
 | `DecoySwapper` | Number | Applies or references the 'DecoySwapper' effect/state. |
 | `DeferVaporize` | Number | Applies or references the 'DeferVaporize' effect/state. |
-| `DelayCastAbility` | Enum | Queues an ability to be cast automatically after a certain delay or trigger. |
+| `DelayCastAbility` | Block | Queues an ability to be cast automatically after a certain delay or trigger. |
 | `DelayedFury` | Number | Applies or references the 'DelayedFury' effect/state. |
 | `DelayedWindCone` | Block | Creates a delayed Area of Effect cone. |
 | `DeleteInanimateObjectsChance` | Number |  |
@@ -212,7 +212,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `FireflySwarm` | Number |  |
 | `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. |
 | `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. |
-| `FlatLeechIfDamaged` | Number | Applies or references the 'FlatLeechIfDamaged' effect/state. |
+| `FlatLeechIfDamaged` | Number | Applies the 'FlatLeechIfDamaged' effect. |
 | `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. |
 | `FlowersOnHit` | Number | Applies or references the 'FlowersOnHit' effect/state. |
 | `FlySwarm` | Number |  |
@@ -281,7 +281,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `KnockUpAndAway` | Block | Displaces the target vertically and horizontally away from the source. |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. |
 | `KnockbackDamageImmuneUntilSettled` | Number | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. |
-| `KnockbackDirectionIsFacingDirection` | Enum | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. |
+| `KnockbackDirectionIsFacingDirection` | Number | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. |
 | `LateStatusApplication` | Block | Applies a status effect after all primary damage and effects have fully resolved. |
 | `LaunchOffScreen` | Equation | Applies or references the 'LaunchOffScreen' effect/state. |
 | `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. |
@@ -297,7 +297,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. |
 | `MagicWeakness` | Number | Applies or references the 'MagicWeakness' effect/state. |
 | `MakeWeaponUnbreakable` | Number | Applies or references the 'MakeWeaponUnbreakable' effect/state. |
-| `ManaGain` | Equation | Applies or references the 'ManaGain' effect/state. |
+| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. |
 | `ManaLeeches` | Number | Applies or references the 'ManaLeeches' effect/state. |
 | `ManaSteal` | Number | Applies or references the 'ManaSteal' effect/state. |
 | `ManaStealToHealth` | Number | Applies or references the 'ManaStealToHealth' effect/state. |
@@ -337,7 +337,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `OverrideChainKnockback` | Number | Applies or references the 'OverrideChainKnockback' effect/state. |
 | `OverrideChainKnockbackDamage` | Equation | Applies or references the 'OverrideChainKnockbackDamage' effect/state. |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. |
-| `OverrideKnockbackDamage` | Number | Applies or references the 'OverrideKnockbackDamage' effect/state. |
+| `OverrideKnockbackDamage` | Enum | Applies or references the 'OverrideKnockbackDamage' effect/state. |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. |
 | `PartialPurge` | Number | Applies or references the 'PartialPurge' effect/state. |
 | `PermanentCharisma` | Number | Applies or references the 'PermanentCharisma' effect/state. |
@@ -352,10 +352,10 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `PermanentUpgradeRandomActive` | Number | Applies or references the 'PermanentUpgradeRandomActive' effect/state. |
 | `PermanentUpgradeRandomActiveOrPassive` | Number | Applies or references the 'PermanentUpgradeRandomActiveOrPassive' effect/state. |
 | `PersistentElement` | Enum |  |
-| `Petrify` | Array | Applies or references the 'Petrify' effect/state. |
+| `Petrify` | Number | Applies or references the 'Petrify' effect/state. |
 | `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. |
-| `PoisonLace` | Equation | Applies or references the 'PoisonLace' effect/state. |
+| `PoisonLace` | Number | Applies or references the 'PoisonLace' effect/state. |
 | `PoolMetronome` | Block | Executes a random ability drawn from a specific pool. |
 | `PopAndSpawn` | Enum | Destroys the target and replaces it with a new spawned entity. |
 | `Possessed` | Number | Applies or references the 'Possessed' effect/state. |
@@ -421,12 +421,12 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `SafeDoomed` | Number | Applies the 'SafeDoomed' effect. |
 | `Sandstorm` | Number |  |
 | `ScatterCoins` | Block | Throws coins out into the level randomly. |
-| `ScatterHeldCoin` | Array | Applies or references the 'ScatterHeldCoin' effect/state. |
+| `ScatterHeldCoin` | Number | Applies or references the 'ScatterHeldCoin' effect/state. |
 | `ScatterRandomPickups` | Number | Applies or references the 'ScatterRandomPickups' effect/state. |
 | `ScrambleEverything` | Number | Applies or references the 'ScrambleEverything' effect/state. |
 | `ScrambleLastUsedSpell` | Block | Randomizes or scrambles the properties of the last spell cast. |
 | `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. |
-| `SelfStun` | Array | Applies or references the 'SelfStun' effect/state. |
+| `SelfStun` | Number | Applies or references the 'SelfStun' effect/state. |
 | `SendRock` | Number | Applies or references the 'SendRock' effect/state. |
 | `SetAnimationAlts` | Block | Overrides specific animation states with alternative animations. |
 | `SetCrazyEyeBackgroundWeights` | Block | Adjusts visual rendering weights for the 'Crazy Eye' background effect. |
@@ -438,7 +438,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `SetShield` | Number | Applies or references the 'SetShield' effect/state. |
 | `ShadowCrit` | Number | Applies or references the 'ShadowCrit' effect/state. |
 | `Shatter` | Number | Applies or references the 'Shatter' effect/state. |
-| `Shield` | Equation | Applies or references the 'Shield' effect/state. |
+| `Shield` | Number | Applies or references the 'Shield' effect/state. |
 | `ShootHereCommand` | Number | Applies or references the 'ShootHereCommand' effect/state. |
 | `ShootHereReceiver` | Number | Applies or references the 'ShootHereReceiver' effect/state. |
 | `ShortCircuit` | Number | Applies or references the 'ShortCircuit' effect/state. |
@@ -458,7 +458,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `SourceSwapsBackEndOfTurn` | Enum | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. |
 | `SpawnBearTrap` | Number | Applies or references the 'SpawnBearTrap' effect/state. |
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. |
-| `SpawnCoinAnywhere` | Array | Applies or references the 'SpawnCoinAnywhere' effect/state. |
+| `SpawnCoinAnywhere` | Number | Applies or references the 'SpawnCoinAnywhere' effect/state. |
 | `SpawnCreep` | Number | Applies or references the 'SpawnCreep' effect/state. |
 | `SpawnCustomTrap` | Enum | Applies or references the 'SpawnCustomTrap' effect/state. |
 | `SpawnExtraThingsOnBattleStart` | Block |  |
@@ -471,7 +471,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `SpawnWebTrap` | Number | Applies or references the 'SpawnWebTrap' effect/state. |
 | `SpecialBossMultipartInstakill` | Enum | Applies or references the 'SpecialBossMultipartInstakill' effect/state. |
 | `SpecialGodRays` | Block |  |
-| `SpecificInjury` | Equation | Applies or references the 'SpecificInjury' effect/state. |
+| `SpecificInjury` | Enum | Applies or references the 'SpecificInjury' effect/state. |
 | `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. |
 | `SpellDamageUp` | Number | Applies or references the 'SpellDamageUp' effect/state. |
@@ -494,7 +494,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `Stealth` | Number | Applies or references the 'Stealth' effect/state. |
 | `StealthCritChance` | Number | Applies or references the 'StealthCritChance' effect/state. |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. |
-| `Stun` | Array | Applies or references the 'Stun' effect/state. |
+| `Stun` | Number | Applies or references the 'Stun' effect/state. |
 | `SwallowSmallCharacter` | Number | Applies or references the 'SwallowSmallCharacter' effect/state. |
 | `SwapHighestAndLowestStat` | Number | Applies or references the 'SwapHighestAndLowestStat' effect/state. |
 | `SwapWeapon` | Block | Replaces the character's currently equipped weapon with one from a specified pool. |
@@ -525,7 +525,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `TempCounterAttack` | Number | Applies or references the 'TempCounterAttack' effect/state. |
 | `TempCritChanceUp` | Number | Applies or references the 'TempCritChanceUp' effect/state. |
 | `TempDamageUp` | Number | Applies or references the 'TempDamageUp' effect/state. |
-| `TempDexterityUp` | Equation | Applies or references the 'TempDexterityUp' effect/state. |
+| `TempDexterityUp` | Enum | Applies or references the 'TempDexterityUp' effect/state. |
 | `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. |
 | `TempInjuryImmunity` | Number | Applies or references the 'TempInjuryImmunity' effect/state. |
 | `TempLuckUp` | Number | Applies or references the 'TempLuckUp' effect/state. |
@@ -536,9 +536,9 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `TempPenetrate` | Number | Applies or references the 'TempPenetrate' effect/state. |
 | `TempPreEmptiveCounterAttack` | Number | Applies or references the 'TempPreEmptiveCounterAttack' effect/state. |
 | `TempRangeUp` | Number | Applies or references the 'TempRangeUp' effect/state. |
-| `TempSpeedUp` | Number | Applies or references the 'TempSpeedUp' effect/state. |
+| `TempSpeedUp` | Enum | Applies or references the 'TempSpeedUp' effect/state. |
 | `TempSpellDamageUp` | Number | Applies or references the 'TempSpellDamageUp' effect/state. |
-| `TempStrengthUp` | Equation | Applies or references the 'TempStrengthUp' effect/state. |
+| `TempStrengthUp` | Enum | Applies or references the 'TempStrengthUp' effect/state. |
 | `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. |
 | `Temporary` | Block | A wrapper block for applying status effects that automatically expire. |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. |
@@ -592,6 +592,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `Webbed` | Number | Applies or references the 'Webbed' effect/state. |
 | `Windy` | Number |  |
 | `XIsTargetHealth` | Block | Math variable assignment: Evaluates X as the target's current health. |
+| `{Global Modifiers}` | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |
 
 </details>
 
@@ -656,841 +657,21 @@ These are hardcoded configuration keys found within these blocks (not dynamic ID
 | `extra_statuses` | Block | Additional generic status applications. |
 | `force_contact` | Boolean | If true, enforces physical overlap. |
 | `form` | Enum | The specific form ID to check for. |
-| `formula` | Equation | The math expression to evaluate. |
+| `formula` | Enum | The math expression to evaluate. |
 | `instant` | Boolean |  |
 | `key` | Enum | A unique string identifier to track this specific application. |
 | `kill_on_consume` | Boolean |  |
-| `mount_mode` | Enum | If true, treats the consumption as riding/mounting instead of eating. |
+| `mount_mode` | Boolean | If true, treats the consumption as riding/mounting instead of eating. |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
 | `status` | Enum | The specific status ID to check for. |
 | `struggle_ability` | Enum | Ability triggered by the consumed entity while inside the consumer. |
 | `tag` | Enum | The specific string tag to check for. |
-| `threshold_expr` | Equation |  |
+| `threshold_expr` | Enum |  |
 | `threshold_flat` | Number | A flat numerical health value threshold. |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). |
 | `use_placeholder` | Boolean |  |
 | `weather` | Array | An array of weather states to check against. |
 | `wet` | Boolean |  |
-
-</details>
-
-### Context Index
-
-The following Conditional and targeting blocks all behave as `[effect_block]` containers. Each has its own unique parameters listed below its entry.
-
----
-
-#### `ApplyToRandomPartyMemberIfPossible`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `ApplyToSource`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `ApplyToSourceOnKill`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_ActiveWeather_Any`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `weather` | Array | An array of weather states to check against. |
-
-</details>
-
----
-
-#### `Conditional_Adjacent`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_Ally`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_PlayerCat`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_AffectedByElement`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `element` | Enum | The specific element type to check for. |
-| [`Conditional_Speculative`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_Ally`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_Corpse`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_PlayerCat`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_Backstab`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_BadRoll`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `odds` | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. |
-
-</details>
-
----
-
-#### `Conditional_Boss`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_HasStatus`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_BossOrBig`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_Buddy`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_InForm`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_CanBeHealed`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_Corpse`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_Enemy`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_DebuffRoll`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. |
-
-</details>
-
----
-
-#### `Conditional_DestructibleCorpse`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_Displaceable`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_Enemy`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_FinishedSpawning`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_NotBoss`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_PartyMember`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_Familiar`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_FirstApplicationThisTurn`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `key` | Enum | A unique string identifier to track this specific application. |
-
-</details>
-
----
-
-#### `Conditional_FormulaIsPositive`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `formula` | Equation | The math expression to evaluate. |
-
-</details>
-
----
-
-#### `Conditional_GoodRoll`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
-| [`Conditional_Corpse`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_HasKnockback`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_HasStatus`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `status` | Enum | The specific status ID to check for. |
-
-</details>
-
----
-
-#### `Conditional_HasTag`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `tag` | Enum | The specific string tag to check for. |
-| [`Conditional_Boss`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_InForm`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_NotBoss`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_HealthThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `threshold_expr` | Equation |  |
-| `threshold_flat` | Number | A flat numerical health value threshold. |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). |
-| [`Conditional_OncePerBattle`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_InForm`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `form` | Enum | The specific form ID to check for. |
-
-</details>
-
----
-
-#### `Conditional_IsPhysicalAttack`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_IsSelf`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_IsTrample`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_LastHit`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_LivingPlayerCat`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_ManaThreshold`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `threshold_flat` | Number |  |
-
-</details>
-
----
-
-#### `Conditional_NotAlly`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_NotBig`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_NotBoss`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_Enemy`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HealthThreshold`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_NotBossOrBig`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_NotShielded`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_Object`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_HasTag`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_OncePerBattle`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `key` | Enum |  |
-
-</details>
-
----
-
-#### `Conditional_PartyMember`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_IsSelf`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_PlayerCat`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_RandomChance`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `odds` | Number |  |
-
-</details>
-
----
-
-#### `Conditional_Shielded`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-
-</details>
-
----
-
-#### `Conditional_SourceAbilityHasTag`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `tag` | Enum | Specific entity tag required. |
-
-</details>
-
----
-
-#### `Conditional_SourceHasStatus`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `status` | Enum | ID of the status effect to apply or check. |
-
-</details>
-
----
-
-#### `Conditional_SourceHasTag`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `tag` | Enum | The specific entity tag required or applied. |
-| [`Conditional_Ally`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Conditional_Speculative`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_HealthThreshold`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `Consumed`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| `do_not_pop_corpse` | Boolean |  |
-| `drop_body_ability` | Enum |  |
-| `drop_on_death` | Boolean |  |
-| `drop_on_self_death` | Boolean |  |
-| `extra_statuses` | Block | Additional generic status applications. |
-| `force_contact` | Boolean | If true, enforces physical overlap. |
-| `instant` | Boolean |  |
-| `kill_on_consume` | Boolean |  |
-| `mount_mode` | Enum | If true, treats the consumption as riding/mounting instead of eating. |
-| `struggle_ability` | Enum | Ability triggered by the consumed entity while inside the consumer. |
-| `use_placeholder` | Boolean |  |
-| `wet` | Boolean |  |
-
-</details>
-
----
-
-#### `Else`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_Displaceable`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_GoodRoll`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HasKnockback`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HasStatus`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HasTag`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HealthThreshold`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Object`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Speculative`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-
-</details>
-
----
-
-#### `effects`
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Property Key | Type | Notes |
-| :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`Conditional_AbilityTargetIsSelf`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_ActiveWeather_Any`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_AffectedByElement`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Ally`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Backstab`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_BadRoll`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Boss`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_BossOrBig`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Buddy`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_CanBeHealed`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Corpse`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_DebuffRoll`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_DestructibleCorpse`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Displaceable`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Enemy`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Familiar`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_FirstApplicationThisTurn`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_FormulaIsPositive`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_GoodRoll`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HasCleansableDebuffs`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HasStatus`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HasTag`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_HealthThreshold`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_InForm`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_IsSelf`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_IsTrample`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_LastHit`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_LivingPlayerCat`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_NotAlly`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_NotBig`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_NotBoss`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_NotBossOrBig`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_NotShielded`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Object`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_OncePerBattle`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_PlayerCat`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_RandomChance`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Shielded`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_SourceAbilityHasTag`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_SourceHasStatus`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
-| [`Conditional_Speculative`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
 </details>
 

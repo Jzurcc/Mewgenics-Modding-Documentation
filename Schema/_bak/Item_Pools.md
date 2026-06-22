@@ -2,28 +2,31 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Item Pools
 
 > **Associated Files:** `data/item_pools/`
 
 
-### Context: `ROOT` (13 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 13
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | `rare` | Number |  | 13 |
 | `uncommon` | Number |  | 12 |
 | `very_rare` | Number |  | 11 |
 | `common` | Number |  | 10 |
-| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Enum |  | 6 |
-| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Enum |  | 6 |
-| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Enum |  | 6 |
-| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Enum |  | 6 |
+| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Number |  | 6 |
+| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Number |  | 6 |
+| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Number |  | 6 |
+| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Number |  | 6 |
 | `chapter_rare` | Number |  | 5 |
 | `Chicken` | Number |  | 3 |
 | `chapter` | Number |  | 3 |

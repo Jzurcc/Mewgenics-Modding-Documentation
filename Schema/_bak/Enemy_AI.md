@@ -2,25 +2,28 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Enemy AI
 
 > **Associated Files:** `data/ai_presets/`
 
 
-### Context: `ROOT` (55 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 55
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | `distance_to_ally` | Number |  | 55 |
 | `distance_to_character` | Number |  | 55 |
 | `distance_to_enemy` | Number |  | 55 |
 | `face_closest_enemy` | Number |  | 55 |
-| `preferred_distance` | Number |  | 55 |
+| `preferred_distance` | Equation |  | 55 |
 | `total_distance_moved` | Number |  | 55 |
 | `accurate_knockback` | Boolean |  | 32 |
 | `buff_ally` | Number |  | 32 |
@@ -47,7 +50,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `revive_enemy_corpse` | Number |  | 32 |
 | `spawn_object` | Number |  | 32 |
 | [`spawn_object_distance_to_ally`](./Enums.md#enum-spawn_object_distance_to_ally) | Enum |  | 32 |
-| `spawn_object_distance_to_enemy` | Number |  | 32 |
+| `spawn_object_distance_to_enemy` | Enum |  | 32 |
 | [`spend_mana_scale`](./Enums.md#enum-spend_mana_scale) | Enum |  | 32 |
 | `flat_cast_bonus` | Number |  | 5 |
 | `randomness` | Number |  | 5 |
@@ -55,10 +58,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consider_aoe` | Boolean |  | 3 |
 | `danger_avoidance` | Number |  | 3 |
 | `distance_to_aggro_target` | Number |  | 3 |
-| `distance_to_corpse` | Number |  | 3 |
+| `distance_to_corpse` | Enum |  | 3 |
 | `simple` | Boolean |  | 3 |
 | `cap_distance_to_enemy` | Number |  | 2 |
-| [`distance_to_water`](./Enums.md#enum-distance_to_water) | Enum |  | 2 |
+| [`distance_to_water`](./Enums.md#enum-distance_to_water) | Number |  | 2 |
 | `face_aggro_target` | Number |  | 2 |
 | `spawn_object_preferred_distance` | Number |  | 2 |
 | `cap_distance_to_character` | Number |  | 1 |
