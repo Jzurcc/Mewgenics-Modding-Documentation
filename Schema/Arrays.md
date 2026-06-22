@@ -11,370 +11,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor), [`editor`](./Miscellaneous.md#context-editor)
 
 **Accepted Elements:**
-- `String`
+- List of [Enum: `image`](./Enums.md#enum-image)
 
 **Examples:**
 `[ "shadow.png" "cat.png" ]`
 `[ "rat.png" ]`
 `[ "fly.png" ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `ground.png` | |
-| `ground_spots.png` | |
-| `south_arrow.png` | |
-| `west_arrow.png` | |
-| `cat.png` | |
-| `east_arrow.png` | |
-| `harpoontrap.png` | |
-| `north_arrow.png` | |
-| `tire.png` | |
-| `cultist.png` | |
-| `fightercat.png` | |
-| `megafetus.png` | |
-| `ornstein.png` | |
-| `reaper.png` | |
-| `smough.png` | |
-| `spewerpill.png` | |
-| `waterkitten.png` | |
-| `woc_wall.png` | |
-| `1.png` | |
-| `albinotomtom.png` | |
-| `amoeba.png` | |
-| `ankylosaurus.png` | |
-| `astro.png` | |
-| `atomickitten.png` | |
-| `babydeathworm.png` | |
-| `babyshark.png` | |
-| `bat.png` | |
-| `belcher.png` | |
-| `bigasteroid.png` | |
-| `bigdemon.png` | |
-| `bigufo.png` | |
-| `birthwort.png` | |
-| `bishop.png` | |
-| `bishophat.png` | |
-| `blessing.png` | |
-| `boomer.png` | |
-| `boyshade.png` | |
-| `braindrain.png` | |
-| `bramblebaby.png` | |
-| `bungaelite.png` | |
-| `butchercat.png` | |
-| `buttzombie.png` | |
-| `cancercat.png` | |
-| `carcus.png` | |
-| `carnibulb.png` | |
-| `catcaller.png` | |
-| `catcultist.png` | |
-| `cathuman.png` | |
-| `cavebaby.png` | |
-| `cavechief.png` | |
-| `caveman.png` | |
-| `cavemannospear.png` | |
-| `cavewoman.png` | |
-| `chaosboss.png` | |
-| `chumbag.png` | |
-| `chummy.png` | |
-| `cloakeddemon.png` | |
-| `cloud.png` | |
-| `collectivecat.png` | |
-| `copbot.png` | |
-| `corefreak.png` | |
-| `cratercreeper.png` | |
-| `daddyshark.png` | |
-| `deathworm.png` | |
-| `demonhooker.png` | |
-| `dinoeggs.png` | |
-| `dip.png` | |
-| `doctorbot.png` | |
-| `doublehusk.png` | |
-| `drcat.png` | |
-| `drditto.png` | |
-| `fatcat.png` | |
-| `fatman.png` | |
-| `fatwoman.png` | |
-| `fetus.png` | |
-| `fetusgusher.png` | |
-| `fetusjar.png` | |
-| `fetusnojar.png` | |
-| `flea.png` | |
-| `floast.png` | |
-| `floater.png` | |
-| `fly.png` | |
-| `flyswarm.png` | |
-| `food.png` | |
-| `futurebot.png` | |
-| `fuzzer.png` | |
-| `gamete.png` | |
-| `gasper.png` | |
-| `gassy.png` | |
-| `geolad.png` | |
-| `girlshade.png` | |
-| `glassspitter.png` | |
-| `gorger.png` | |
-| `graveworm.png` | |
-| `greenprober.png` | |
-| `greyalien.png` | |
-| `guncat.png` | |
-| `hangerbot.png` | |
-| `headtumor.png` | |
-| `hemlock.png` | |
-| `hornycat.png` | |
-| `host.png` | |
-| `humancat.png` | |
-| `husk.png` | |
-| `infested.png` | |
-| `invader.png` | |
-| `jarhead.png` | |
-| `jekyll.png` | |
-| `killdozer.png` | |
-| `kirbyfetus.png` | |
-| `kitten.png` | |
-| `leaper.png` | |
-| `lovebot.png` | |
-| `lumpy.png` | |
-| `maelestes.png` | |
-| `maggot.png` | |
-| `mammoth.png` | |
-| `mammothbaby.png` | |
-| `mangy.png` | |
-| `mangy2.png` | |
-| `mangy3.png` | |
-| `megamutant.png` | |
-| `megatumor.png` | |
-| `moonworm.png` | |
-| `mutant.png` | |
-| `needlecat.png` | |
-| `nettle.png` | |
-| `nubscat.png` | |
-| `parasaurolophus.png` | |
-| `pile.png` | |
-| `pinky.png` | |
-| `pokerdemon.png` | |
-| `pooter.png` | |
-| `popeye.png` | |
-| `prehistoricpooter.png` | |
-| `pterodactyl.png` | |
-| `pyrophina.png` | |
-| `raptor.png` | |
-| `raptorbaby.png` | |
-| `rat.png` | |
-| `ratcat.png` | |
-| `rattlesnake.png` | |
-| `robotom.png` | |
-| `rockhead.png` | |
-| `rover.png` | |
-| `sabertoothcat.png` | |
-| `sabertoothcub.png` | |
-| `scary.png` | |
-| `scorpioncat.png` | |
-| `securitybot.png` | |
-| `shadecat.png` | |
-| `shambler.png` | |
-| `sharky.png` | |
-| `siren.png` | |
-| `skeletoncat.png` | |
-| `skeletonshambler.png` | |
-| `skullooze.png` | |
-| `slag.png` | |
-| `smallasteroid.png` | |
-| `smallufo.png` | |
-| `snakeybones.png` | |
-| `soldierbot.png` | |
-| `spewerpilltube.png` | |
-| `spidercat.png` | |
-| `spiky.png` | |
-| `spookie.png` | |
-| `stacy2p0.png` | |
-| `stego.png` | |
-| `suseuspeashy.png` | |
-| `tallbot.png` | |
-| `tallrobes.png` | |
-| `tallskeletoncat.png` | |
-| `tallspidercat.png` | |
-| `talltumor.png` | |
-| `tatters.png` | |
-| `tentickles.png` | |
-| `thump.png` | |
-| `tinyspider.png` | |
-| `toadie.png` | |
-| `toadie_hidden.png` | |
-| `tomtom.png` | |
-| `tremblo.png` | |
-| `trex.png` | |
-| `triceratops.png` | |
-| `tumorbarrier.png` | |
-| `tumorcat.png` | |
-| `tvbot.png` | |
-| `waggle.png` | |
-| `waterleech.png` | |
-| `wereman.png` | |
-| `whisperer.png` | |
-| `wisp.png` | |
-| `wolfcat.png` | |
-| `yellowblaster.png` | |
-| `yeti.png` | |
-| `yeticat.png` | |
-| `zaratana.png` | |
-| `zealot.png` | |
-| `zombiecat.png` | |
-| `alienbeast.png` | |
-| `angelcat.png` | |
-| `angelkitten.png` | |
-| `astrozombie.png` | |
-| `beaniesrat.png` | |
-| `bgcandle.png` | |
-| `biggravel.png` | |
-| `bigslime.png` | |
-| `blackhole.png` | |
-| `bloat.png` | |
-| `bomb.png` | |
-| `bomberrat.png` | |
-| `bombfly.png` | |
-| `boulder.png` | |
-| `boydino.png` | |
-| `bricks.png` | |
-| `bumblefoot.png` | |
-| `butchtink.png` | |
-| `cactus.png` | |
-| `cager.png` | |
-| `cancreeper.png` | |
-| `catnip.png` | |
-| `cavecatdad.png` | |
-| `cavecatkitten.png` | |
-| `cavecatmom.png` | |
-| `cerberubs.png` | |
-| `chargeymaggot.png` | |
-| `cherubim.png` | |
-| `chubs.png` | |
-| `cloningvat.png` | |
-| `clot.png` | |
-| `coin.png` | |
-| `corpse.png` | |
-| `covencandle.png` | |
-| `crate.png` | |
-| `drmangler.png` | |
-| `druidcat.png` | |
-| `druidcrow.png` | |
-| `dumpster.png` | |
-| `dustdevil.png` | |
-| `dybbuk.png` | |
-| `enemycat.png` | |
-| `fatso.png` | |
-| `finalboss.png` | |
-| `fleshlad.png` | |
-| `fleshymind.png` | |
-| `floatinghive.png` | |
-| `flushmaster.png` | |
-| `frankkorbee.png` | |
-| `frankpinky.png` | |
-| `gambit.png` | |
-| `gascan.png` | |
-| `gasser.png` | |
-| `gatekeeper.png` | |
-| `ghosttombstone.png` | |
-| `girldino.png` | |
-| `golemcat.png` | |
-| `gravel.png` | |
-| `ground_shards.png` | |
-| `groundedspear.png` | |
-| `gunslinger.png` | |
-| `hellhand.png` | |
-| `hitler.png` | |
-| `hitlerfetus.png` | |
-| `hitleriii.png` | |
-| `hive.png` | |
-| `huntercat.png` | |
-| `hydrant.png` | |
-| `icecube.png` | |
-| `iceelemental.png` | |
-| `infestedduo.png` | |
-| `jackcat.png` | |
-| `jestercat.png` | |
-| `johnny.png` | |
-| `junk.png` | |
-| `labpillar.png` | |
-| `lenny.png` | |
-| `lightning.png` | |
-| `lordbunga.png` | |
-| `madlad.png` | |
-| `magecat.png` | |
-| `maggotlord.png` | |
-| `manaidol.png` | |
-| `manglersmonster.png` | |
-| `meatminion.png` | |
-| `meatslime.png` | |
-| `mediccat.png` | |
-| `medslime.png` | |
-| `megadinohead.png` | |
-| `megadinoleg.png` | |
-| `megagup.png` | |
-| `mininuke.png` | |
-| `minivolcano.png` | |
-| `monkcat.png` | |
-| `moonhand.png` | |
-| `moonhead.png` | |
-| `mothertumorbig.png` | |
-| `mothertumorsmall.png` | |
-| `multicat.png` | |
-| `necrocat.png` | |
-| `neutronstar.png` | |
-| `nohead.png` | |
-| `nubs.png` | |
-| `organzodiac.png` | |
-| `parasiter.png` | |
-| `phonebooth.png` | |
-| `pole.png` | |
-| `poop.png` | |
-| `psychiccat.png` | |
-| `queenhippo.png` | |
-| `ratking.png` | |
-| `ratpile.png` | |
-| `rock.png` | |
-| `rocky.png` | |
-| `rubble.png` | |
-| `scrap.png` | |
-| `seraphim.png` | |
-| `shadow.png` | |
-| `skinned.png` | |
-| `slotmachine.png` | |
-| `smallrock.png` | |
-| `smallslime.png` | |
-| `smcandle.png` | |
-| `spewer.png` | |
-| `spiderqueen.png` | |
-| `spiderweb.png` | |
-| `spikyrock.png` | |
-| `stacy3.png` | |
-| `stacymutant.png` | |
-| `staticcactus.png` | |
-| `staticcactus_2x2.png` | |
-| `staticcactus_tall.png` | |
-| `stemcat.png` | |
-| `stevenslime.png` | |
-| `swappymaggot.png` | |
-| `tankcat.png` | |
-| `tarbaby.png` | |
-| `terminator1.png` | |
-| `terminator2.png` | |
-| `thechild.png` | |
-| `thecoven.png` | |
-| `themother.png` | |
-| `thiefcat.png` | |
-| `throb.png` | |
-| `throbbingking.png` | |
-| `throbbingturret.png` | |
-| `tinkerercat.png` | |
-| `tnt.png` | |
-| `tracyfetus.png` | |
-| `trampy.png` | |
-| `trash.png` | |
-| `urn.png` | |
-| `worm.png` | |
-| `zombietombstone.png` | |
 
 </details>
 
@@ -441,7 +84,6 @@ This document provides exhaustive lists of all array properties found in the bas
 **Accepted Elements:**
 - `Array`
   - `Integer` *(inner elements)*
-  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ 0 1 0 ]`
@@ -485,179 +127,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern), [`round_start_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_start_bonusturn_pattern)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 **Examples:**
 `[ *RockToss_BomberRat RockToss_BomberRat ]`
 `[ attack Simon_Shot ]`
 `[ BumblefootEatCorpse BumblefootEatCat BumblefootBoneShot ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `attack` | |
-| `*attack` | |
-| `move` | |
-| `*ZaratanaSoloWeatherRoar` | |
-| `BBPickupCrown` | |
-| `RockToss_ColorlessCat` | |
-| `ShamblerToss` | |
-| `SpiderSpawn` | |
-| `TinaJumpAttack` | |
-| `**DestroyerThrowShield` | |
-| `*Guillotina1Rage` | |
-| `*PyrophinaVSWeatherRoar` | |
-| `*SpewerTransformFire` | |
-| `*SpewerTransformNormal` | |
-| `*SpewerTransformTar` | |
-| `QueenMinis` | |
-| `SpawnMaggots` | |
-| `*HitlerHeil` | |
-| `*RockToss_BomberRat` | |
-| `*TinaThrow` | |
-| `BBBless` | |
-| `BBCut` | |
-| `BBSpin` | |
-| `BBToss` | |
-| `BellyPound` | |
-| `BloatLeap` | |
-| `CaveManChestPound` | |
-| `ColorlessCat_BoulderDrop` | |
-| `DashRandomly` | |
-| `DrinkUp` | |
-| `HitlerHeadTransform` | |
-| `MutateAOE` | |
-| `RockToss_BomberRat` | |
-| `SmallSpiderMelee` | |
-| `SpiderReturn` | |
-| `TF_TargetAllies` | |
-| `TF_TargetEnemies` | |
-| `TinaThrow` | |
-| `TormentorBite` | |
-| `TormentorSpawn` | |
-| `WebShot` | |
-| `ZaratanaSoloBombardment` | |
-| `*CarnibulbEat` | |
-| `*CatCall` | |
-| `*CaveMom_TossDad` | |
-| `*CaveMom_TossElsewhere` | |
-| `*CultistCut` | |
-| `*FloastThrow` | |
-| `*G3GrabHead` | |
-| `*Parasaurolophus_Push` | |
-| `*PyrophinaSoloCatThrow` | |
-| `*PyrophinaSoloEarthquakeStomp` | |
-| `*PyrophinaSoloFlamethrower` | |
-| `*QueenMinis` | |
-| `*QueenWeb` | |
-| `*SBotRecharge` | |
-| `*Sprout` | |
-| `*StegoSpin` | |
-| `*TCMechSuit` | |
-| `*TinaBodySlam` | |
-| `*TinaBodySlamMax` | |
-| `*TinaSuck` | |
-| `*TinaSuck2` | |
-| `*TrampyDrink` | |
-| `*ZaratanaSoloTurtle` | |
-| `AZ_Scream` | |
-| `BumblefootBoneShot` | |
-| `BumblefootEatCat` | |
-| `BumblefootEatCorpse` | |
-| `CHToss` | |
-| `CHuskGrab` | |
-| `CarnibulbEat` | |
-| `CatCall` | |
-| `CaveChiefBat` | |
-| `CaveChiefFear` | |
-| `CaveChiefRally` | |
-| `CaveMom_Heal` | |
-| `CaveWomanBirth` | |
-| `CaveWomanGrab` | |
-| `CaveWomanThrow` | |
-| `CherubimLeave` | |
-| `CherubimReturn` | |
-| `ChumShot_Damage` | |
-| `ChumShot_Maggot` | |
-| `DestroyerHolyAttack` | |
-| `DipShot` | |
-| `DoctorBotHeal` | |
-| `DoctorPickup` | |
-| `DoctorSpawn` | |
-| `FloastPull` | |
-| `FloastSpawn` | |
-| `G3CallForHelp` | |
-| `G3GrabHead` | |
-| `GP_Probe` | |
-| `GSSuck` | |
-| `GorgerRun` | |
-| `HangerBotSpawn` | |
-| `HitlerCloneLick` | |
-| `HitlerHeadGrowA` | |
-| `HitlerHeadGrowB` | |
-| `HostShove` | |
-| `HostSpit` | |
-| `IDBrambleShot` | |
-| `JackShield` | |
-| `JarHeadOrder` | |
-| `LEReturn` | |
-| `Leave` | |
-| `LickyLicky` | |
-| `MaelestesPickup` | |
-| `MaelestesSteal` | |
-| `Magnetize` | |
-| `MoveAway` | |
-| `MoveClose` | |
-| `MoveForThrow` | |
-| `NCGravecrawlFAR` | |
-| `NCReanimate` | |
-| `NurseBotHeal` | |
-| `NurseBotHealCat` | |
-| `Parasaurolophus_Push` | |
-| `Parasaurolophus_Throw` | |
-| `ParasiterShoot` | |
-| `ParasiterSpawn` | |
-| `PeashyStab` | |
-| `PickupRock` | |
-| `PteroGrab` | |
-| `QueenWeb` | |
-| `ReturnA` | |
-| `RockToss_CaveDad` | |
-| `RunFar` | |
-| `SabertoothCubLick` | |
-| `SeraphimRevive` | |
-| `Simon_Shot` | |
-| `SpawnClot` | |
-| `SpawnDip` | |
-| `Spider_CalmDown` | |
-| `StacyCharm` | |
-| `StacyHeal` | |
-| `StegoSpin` | |
-| `T3LickyLicky` | |
-| `TCMechSuit` | |
-| `ThrobShot` | |
-| `TinaBodySlam` | |
-| `TinaBodySlamMax` | |
-| `TinaSuck2` | |
-| `TrampyDrink` | |
-| `TrembloEat` | |
-| `UFO_CrossLasers` | |
-| `UFO_Detect` | |
-| `UFO_Shield` | |
-| `WereManPounce` | |
-| `WhispererThrowBuff` | |
-| `WhispererThrowDamage` | |
-| `WhispererWhisper` | |
-| `WolfDash` | |
-| `WolfLeap` | |
-| `YeetTowardsBuddy` | |
-| `ZaratanaSoloMagnet` | |
-| `ZaratanaVSTurtleGuaranteed` | |
-| `ZombieFeast` | |
-| `ZombieFeastSmall` | |
-| `trinket` | |
-| `weapon` | |
 
 </details>
 
@@ -730,177 +206,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 **Examples:**
 `[ attack DustTeleport ]`
 `[ attack AlienBeastOpenEyes ]`
 `[ *AlienBeastScream *AlienBeastEat *AlienBeastPuke *AlienBeastRampage ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `attack` | |
-| `move` | |
-| `*attack` | |
-| `ChaosSwitchForms` | |
-| `ChaosSwitchSides` | |
-| `*PyrophinaVSWeatherRoar` | |
-| `*ZaratanaVSWeatherRoar` | |
-| `FlushX` | |
-| `MegablastX` | |
-| `ZaratanaVSTurtle` | |
-| `weapon` | |
-| `MoveClose` | |
-| `SpewerSuckPill` | |
-| `*BungaEatCat` | |
-| `*DCBirthSquirrel` | |
-| `*DestroyerDashAttack` | |
-| `*GA_Counterspell` | |
-| `*MM_Slap` | |
-| `*MammothStomp` | |
-| `*QueenHippoUppercut` | |
-| `*weapon` | |
-| `BungaRoar` | |
-| `CaveManChestPound` | |
-| `CaveManPickupSpear` | |
-| `CloseConvert` | |
-| `DCBirthSquirrel` | |
-| `DCSquirrelForm` | |
-| `DestroyerChargeBackflips` | |
-| `DestroyerDashAttack` | |
-| `FoodMove` | |
-| `MoonHead_CallForHelp` | |
-| `MoonHead_RefreshBrace` | |
-| `MoveAway` | |
-| `MoveSpaced` | |
-| `PsychicChoke_Enemy` | |
-| `QueenHippoAttack` | |
-| `Reload` | |
-| `SpearRun` | |
-| `T1SwapWeapon` | |
-| `attack~` | |
-| `*AlienBeastEat` | |
-| `*AlienBeastPuke` | |
-| `*AlienBeastRampage` | |
-| `*AlienBeastScream` | |
-| `*BirthwortTrample` | |
-| `*ButtFart` | |
-| `*CoreFreakFury` | |
-| `*DCT_SummonCrow` | |
-| `*DemonRockThrow` | |
-| `*DrDGlare` | |
-| `*FutureBotSuplex` | |
-| `*GKSpawn` | |
-| `*IceElementalBlizzard` | |
-| `*IceElementalBreath` | |
-| `*MammothBabyStomp` | |
-| `*ManglerSpin` | |
-| `*MarshmallowZealot` | |
-| `*PyrophinaSoloRoar` | |
-| `*PyrophinaVSCatThrow` | |
-| `*SabertoothCatDoubleSwipe` | |
-| `*ShadeDuplicate` | |
-| `*SpawnGasAOE` | |
-| `*T1Pummel` | |
-| `*T1ThrowGrenadeA` | |
-| `*T1ThrowGrenadeB` | |
-| `*T2Clone` | |
-| `*T3RipAndTear` | |
-| `*TCCatBot` | |
-| `*THC_CoinRoll` | |
-| `*THC_PoisonSwat` | |
-| `*THC_Roll` | |
-| `*TrembloEat` | |
-| `*TrexReacquireTarget` | |
-| `*TumorPowerup` | |
-| `*ZaratanaSoloRoar` | |
-| `*ZaratanaSoloWeatherRoar` | |
-| `*ZaratanaVSBombardment` | |
-| `*attack~` | |
-| `AlienBeastOpenEyes` | |
-| `BasicMelee` | |
-| `BearTrap_CaveBaby` | |
-| `BearTrap_Enemy_Cantrip` | |
-| `BirthwortHeal` | |
-| `BrambleBabyEntangle` | |
-| `CBReload` | |
-| `CherubAttract` | |
-| `CovenFamine` | |
-| `CovenPestilence` | |
-| `CovenRise2` | |
-| `CovenRise3` | |
-| `CovenRise4` | |
-| `CovenWar` | |
-| `DCAeroblast` | |
-| `DH_MeatHook` | |
-| `DeathWormReturn` | |
-| `DefaultMove` | |
-| `DemonUppercut` | |
-| `Disguise` | |
-| `DrDRockets` | |
-| `DustTeleport` | |
-| `FleshLadUppercut` | |
-| `ForceTrample` | |
-| `FormGrowThreeSnakey` | |
-| `FormGrowTwoSnakey` | |
-| `FutureBotPunchAggro` | |
-| `FutureBotSuplex` | |
-| `G3RageShake` | |
-| `GA_Megablast` | |
-| `GA_Suggest` | |
-| `HemHeal` | |
-| `HexShot` | |
-| `LeapClose` | |
-| `MM_Grab` | |
-| `MM_Quake` | |
-| `MammothBabyThrow` | |
-| `MammothTrampleDash` | |
-| `Metronome_Enemy` | |
-| `MoonHead_ChewCat` | |
-| `MotherConsume` | |
-| `MoveForBarrage` | |
-| `MoveForDash` | |
-| `MoveForGrass` | |
-| `MoveForPounce` | |
-| `MoveForSpin` | |
-| `MoveForThrow` | |
-| `MoveTowards` | |
-| `NeckSnap` | |
-| `PsychicCatBackflip` | |
-| `PyrophinaVSEarthquakeStomp` | |
-| `PyrophinaVSFlamethrower` | |
-| `PyrophinaVSSpinThrow` | |
-| `QuakeJump` | |
-| `QueenHippoTire` | |
-| `RatKing2Spawn` | |
-| `RunFar` | |
-| `SM_Flamethrower` | |
-| `SM_IceShards` | |
-| `SM_LightningStorm` | |
-| `SZBReload` | |
-| `SabertoothCatTransformSwipe` | |
-| `ShadeDuplicate` | |
-| `SpawnMotherSpike` | |
-| `SpawnWisp` | |
-| `SpewerBarf_Lava` | |
-| `SpewerBarf_Normal` | |
-| `SpewerBarf_Tar` | |
-| `SpookieLick` | |
-| `StegoEatGrass` | |
-| `StegoSpin` | |
-| `THC_CoinRoll` | |
-| `TheMother_Birth` | |
-| `TrembloEat` | |
-| `TrembloSuck` | |
-| `TrexStomp` | |
-| `TumorDash` | |
-| `Unflip` | |
-| `WaggleClone` | |
-| `YA_Charge` | |
-| `ZaratanaVSMagnet` | |
-| `ZaratanaVSSpinDash` | |
 
 </details>
 
@@ -986,7 +298,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(coordinate pair: x, y)*
 
 **Examples:**
 `[ [ 1 1 ] [ 1 0 ] ]`
@@ -1059,7 +371,8 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - [Enum: `sound`](./Enums.md#enum-sound) *(sound ID to replace)*
+  - [Enum: `sound`](./Enums.md#enum-sound) *(replacement sound ID)*
 
 **Examples:**
 `[ [ SE_BirdSmall_DyingCall SE_BirdDying_Blackbird ] ]`
@@ -1096,7 +409,8 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - [Enum: `animation`](./Enums.md#enum-animation) *(animation state to replace)*
+  - [Enum: `animation`](./Enums.md#enum-animation) *(replacement animation state)*
 
 **Examples:**
 `[ [ idle girlyIdle ] ]`
@@ -1300,141 +614,6 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ---
 
-### Array: `quotes`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#context-root)
-
-**Accepted Elements:**
-- `Unknown`
-
-**Examples:**
-`[ BOSS_ERROR_QUOTE_1 ]`
-`[ BOSS_ERROR_MINIBOSS_QUOTE_1 ]`
-`[ BOSS_PEBBLES_QUOTE_1 ]`
-
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BOSS_ALIENQUEEN_QUOTE_1` | |
-| `BOSS_ALIENQUEEN_QUOTE_2` | |
-| `BOSS_BORIS_QUOTE_1` | |
-| `BOSS_BORIS_QUOTE_2` | |
-| `BOSS_BORIS_QUOTE_3` | |
-| `BOSS_BORIS_QUOTE_4` | |
-| `BOSS_BORIS_QUOTE_5` | |
-| `BOSS_BUMBLEFOOT_QUOTE_1` | |
-| `BOSS_BUMBLEFOOT_QUOTE_2` | |
-| `BOSS_BUMBLEFOOT_QUOTE_3` | |
-| `BOSS_BUMBLEFOOT_QUOTE_4` | |
-| `BOSS_CHAOS_QUOTE_1` | |
-| `BOSS_CHUBSANDNUBS_QUOTE_1` | |
-| `BOSS_CHUBSANDNUBS_QUOTE_2` | |
-| `BOSS_CHUBSANDNUBS_QUOTE_3` | |
-| `BOSS_CHUBSANDNUBS_QUOTE_4` | |
-| `BOSS_CHUBSANDNUBS_QUOTE_5` | |
-| `BOSS_COVEN_QUOTE_1` | |
-| `BOSS_COVEN_QUOTE_2` | |
-| `BOSS_COVEN_QUOTE_3` | |
-| `BOSS_COVEN_QUOTE_4` | |
-| `BOSS_DUSTDEVIL_QUOTE_1` | |
-| `BOSS_DUSTDEVIL_QUOTE_2` | |
-| `BOSS_DUSTDEVIL_QUOTE_3` | |
-| `BOSS_DUSTDEVIL_QUOTE_4` | |
-| `BOSS_DYBBUK_QUOTE_1` | |
-| `BOSS_DYBBUK_QUOTE_2` | |
-| `BOSS_DYBBUK_QUOTE_3` | |
-| `BOSS_DYBBUK_QUOTE_4` | |
-| `BOSS_DYBBUK_QUOTE_5` | |
-| `BOSS_ERROR_MINIBOSS_QUOTE_1` | |
-| `BOSS_ERROR_QUOTE_1` | |
-| `BOSS_GAMBIT_QUOTE_1` | |
-| `BOSS_GAMBIT_QUOTE_2` | |
-| `BOSS_GAMBIT_QUOTE_3` | |
-| `BOSS_GAMBIT_QUOTE_4` | |
-| `BOSS_GAMBIT_QUOTE_5` | |
-| `BOSS_GUILLOTINA_1_QUOTE_1` | |
-| `BOSS_GUILLOTINA_1_QUOTE_2` | |
-| `BOSS_GUILLOTINA_1_QUOTE_3` | |
-| `BOSS_GUILLOTINA_1_QUOTE_4` | |
-| `BOSS_GUILLOTINA_2_QUOTE_1` | |
-| `BOSS_GUILLOTINA_2_QUOTE_2` | |
-| `BOSS_GUILLOTINA_2_QUOTE_3` | |
-| `BOSS_GUILLOTINA_3_QUOTE_1` | |
-| `BOSS_GUILLOTINA_3_QUOTE_2` | |
-| `BOSS_GUILLOTINA_3_QUOTE_3` | |
-| `BOSS_HITLER_QUOTE_1` | |
-| `BOSS_HITLER_QUOTE_2` | |
-| `BOSS_HITLER_QUOTE_3` | |
-| `BOSS_JOHNNY_QUOTE_1` | |
-| `BOSS_JOHNNY_QUOTE_2` | |
-| `BOSS_JOHNNY_QUOTE_3` | |
-| `BOSS_JOHNNY_QUOTE_4` | |
-| `BOSS_LORDBUNGA_QUOTE_1` | |
-| `BOSS_LORDBUNGA_QUOTE_2` | |
-| `BOSS_MEGADINO_QUOTE_1` | |
-| `BOSS_MOONHEAD_QUOTE_1` | |
-| `BOSS_MOONHEAD_QUOTE_2` | |
-| `BOSS_MOONHEAD_QUOTE_3` | |
-| `BOSS_MOONHEAD_QUOTE_4` | |
-| `BOSS_PEBBLES_QUOTE_1` | |
-| `BOSS_PYROPHINA_QUOTE_1` | |
-| `BOSS_PYROPHINA_QUOTE_2` | |
-| `BOSS_PYROPHINA_VS_ZARATANA_QUOTE_1` | |
-| `BOSS_QUEENHIPPO_QUOTE_1` | |
-| `BOSS_QUEENHIPPO_QUOTE_2` | |
-| `BOSS_QUEENHIPPO_QUOTE_3` | |
-| `BOSS_QUEENHIPPO_QUOTE_4` | |
-| `BOSS_QUEENHIPPO_QUOTE_5` | |
-| `BOSS_RADICALRAT_QUOTE_1` | |
-| `BOSS_RADICALRAT_QUOTE_2` | |
-| `BOSS_RADICALRAT_QUOTE_3` | |
-| `BOSS_RADICALRAT_QUOTE_4` | |
-| `BOSS_RADICALRAT_QUOTE_5` | |
-| `BOSS_SPEWER_QUOTE_1` | |
-| `BOSS_SPEWER_QUOTE_2` | |
-| `BOSS_SPEWER_QUOTE_3` | |
-| `BOSS_SPEWER_QUOTE_4` | |
-| `BOSS_SPIDERKITTEN_QUOTE_1` | |
-| `BOSS_SPIDERKITTEN_QUOTE_2` | |
-| `BOSS_SPIDERQUEEN_QUOTE_1` | |
-| `BOSS_SPIDERQUEEN_QUOTE_2` | |
-| `BOSS_SPIDERQUEEN_QUOTE_3` | |
-| `BOSS_SPIDERQUEEN_QUOTE_4` | |
-| `BOSS_SPIDERQUEEN_QUOTE_5` | |
-| `BOSS_SPIDERQUEEN_QUOTE_6` | |
-| `BOSS_STACY_QUOTE_1` | |
-| `BOSS_STACY_QUOTE_2` | |
-| `BOSS_STACY_QUOTE_3` | |
-| `BOSS_TERMINATOR_1_QUOTE_1` | |
-| `BOSS_TERMINATOR_1_QUOTE_2` | |
-| `BOSS_TERMINATOR_1_QUOTE_3` | |
-| `BOSS_TERMINATOR_2_QUOTE_1` | |
-| `BOSS_TERMINATOR_3_QUOTE_1` | |
-| `BOSS_TERMINATOR_3_QUOTE_2` | |
-| `BOSS_THECREATOR_QUOTE_1` | |
-| `BOSS_THECREATOR_QUOTE_2` | |
-| `BOSS_THECREATOR_QUOTE_3` | |
-| `BOSS_THEMOTHER_QUOTE_1` | |
-| `BOSS_THEMOTHER_QUOTE_2` | |
-| `BOSS_THEMOTHER_QUOTE_3` | |
-| `BOSS_THROBBINGKING_QUOTE_1` | |
-| `BOSS_THROBBINGKING_QUOTE_2` | |
-| `BOSS_THROBBINGKING_QUOTE_3` | |
-| `BOSS_THROBBINGKING_QUOTE_4` | |
-| `BOSS_ZARATANA_QUOTE_1` | |
-| `BOSS_ZARATANA_QUOTE_2` | |
-| `BOSS_ZODIAC_QUOTE_1` | |
-| `BOSS_ZODIAC_QUOTE_2` | |
-| `BOSS_ZODIAC_QUOTE_3` | |
-| `BOSS_ZODIAC_QUOTE_4` | |
-
-</details>
-
----
-
 ### Array: `gain_coins`
 <details>
 <summary><b>Expand</b></summary>
@@ -1532,9 +711,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`Else`](./House_and_Environment.md#context-else), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`StatusDamagers`](./Passives_and_Statuses.md#context-statusdamagers), [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
 **Accepted Elements:**
-- `Array`
-  - `Float` *(inner elements)*
-  - `Float` *(inner elements)*
+- `Integer` *(stacks)*
+- `Float` *(chance)*
 
 **Examples:**
 `[ 1 .25 ]`
@@ -1713,79 +891,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `combo_effect`](./Enums.md#enum-combo-effect)
 
 **Examples:**
 `[ FevaporateLight FevaporateDark ]`
 `[ firework_bursta firework_burstb ]`
 `[ MegaBlastA MegaBlastB ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `WindDust` | |
-| `Firestorm_Distortion` | |
-| `WindDebris` | |
-| `WindWisps` | |
-| `BloodBounce` | |
-| `BloodBounceCrit` | |
-| `BloodBounceCrit_Absorb` | |
-| `BloodBounce_Absorb` | |
-| `BloodPoof` | |
-| `BloodPoofCrit` | |
-| `BloodPoofCrit_Absorb` | |
-| `BloodPoof_Absorb` | |
-| `BloodPopCrit` | |
-| `BloodPopCrit_Absorb` | |
-| `FevaporateDark` | |
-| `FevaporateLight` | |
-| `FireBase` | |
-| `FireBaseLarge` | |
-| `FireBaseSmall` | |
-| `FireExtinguish_Steam` | |
-| `FirePlumes` | |
-| `FirePlumesLarge` | |
-| `FirePlumesSmall` | |
-| `FireSmoke` | |
-| `FireSmokeLarge` | |
-| `FireSmokeSmall` | |
-| `FireWaves` | |
-| `FireWavesLarge` | |
-| `FireWavesSmall` | |
-| `FireWhites` | |
-| `FireWhitesLarge` | |
-| `FireWhitesSmall` | |
-| `Firenado_Embers` | |
-| `Firenado_Fire` | |
-| `Firestorm_Embers` | |
-| `Firestorm_Fire` | |
-| `GravityBurstB` | |
-| `GravityBurstS` | |
-| `HeatWave_Distortion` | |
-| `HeatWave_Particles` | |
-| `MegaBlastA` | |
-| `MegaBlastB` | |
-| `RainB` | |
-| `RainF` | |
-| `RainM` | |
-| `SnowB` | |
-| `SnowF` | |
-| `SnowM` | |
-| `SplatterXL` | |
-| `TRainB` | |
-| `TRainF` | |
-| `TRainM` | |
-| `TormentorGuts` | |
-| `WindLeaves` | |
-| `WindLeavesB` | |
-| `WindLeavesF` | |
-| `coolLaserBeamInner` | |
-| `coolLaserBeamOuter` | |
-| `fartoom_burst` | |
-| `fartoom_trail` | |
-| `firework_bursta` | |
-| `firework_burstb` | |
 
 </details>
 
@@ -1860,82 +972,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ CarvingKnife RazorBlade ButterflyKnife ]`
 `[ GutsHeart GutsLiver GutsIntestines ]`
 `[ MinerHat MinerMask MinerArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `CatHideArmor` | |
-| `CatHideHat` | |
-| `CatHideMask` | |
-| `GutsHeart` | |
-| `GutsIntestines` | |
-| `GutsLiver` | |
-| `BigRockHat` | |
-| `BigRockMask` | |
-| `BigRockNecklace` | |
-| `BonesHat` | |
-| `Catnip` | |
-| `CatnipBig` | |
-| `CavemanBeard` | |
-| `CavemanEyebrows` | |
-| `CavemanNecklace` | |
-| `CavemanWig` | |
-| `DinoHat` | |
-| `DinoMask` | |
-| `DinoNecklace` | |
-| `FrozenHat` | |
-| `FrozenMask` | |
-| `FrozenNecklace` | |
-| `LeafyHat` | |
-| `LeafyMask` | |
-| `LeafyNecklace` | |
-| `PhoenixHat` | |
-| `PhoenixMask` | |
-| `PhoenixNecklace` | |
-| `RazorBlade` | |
-| `SaberToothedHat` | |
-| `SaberToothedPelt` | |
-| `BagOfGlass` | |
-| `BagOfSeeds` | |
-| `BlackMushroom` | |
-| `BonesMask` | |
-| `BurningCoal` | |
-| `ButterflyKnife` | |
-| `CarvingKnife` | |
-| `DryBoneHat` | |
-| `Ember` | |
-| `FireFlower` | |
-| `FishHook` | |
-| `FishNecklace` | |
-| `FoodBig` | |
-| `FoodMedium` | |
-| `GlassShard` | |
-| `GlowingSeed` | |
-| `HumanBrain` | |
-| `HumanFleshMask` | |
-| `HumanHead` | |
-| `KiloOfCatnip` | |
-| `LargeMeteor` | |
-| `MagicSeed` | |
-| `MatchStick` | |
-| `MinerArmor` | |
-| `MinerHat` | |
-| `MinerMask` | |
-| `Mushrooms` | |
-| `Pearl` | |
-| `PurpleMushroom` | |
-| `RedMushroom` | |
-| `RustyRazor` | |
-| `SmallMeteor` | |
-| `SpottedMushroom` | |
-| `VibratingMeteorite` | |
 
 </details>
 
@@ -2038,34 +1081,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `event_file`](./Enums.md#enum-event-file)
 
 **Examples:**
 `[ common alley_events.gon ]`
 `[ common boneyard_events.gon ]`
 `[ common bunker_events.gon ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `common` | |
-| `alley_events.gon` | |
-| `boneyard_events.gon` | |
-| `bunker_events.gon` | |
-| `caves_events.gon` | |
-| `core_events.gon` | |
-| `crater_events.gon` | |
-| `desert_events.gon` | |
-| `future_events.gon` | |
-| `iceage_events.gon` | |
-| `junkyard_events.gon` | |
-| `jurassic_events.gon` | |
-| `lab_events.gon` | |
-| `moon_events.gon` | |
-| `sewer_events.gon` | |
-| `special_events.gon` | |
-| `theend_events.gon` | |
 
 </details>
 
@@ -2318,207 +1340,6 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ---
 
-### Array: `adjectives`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#team-names)
-
-**Accepted Elements:**
-- `Enum`
-
-**Examples:**
-`[ "TEAMNAME_ADJECTIVE_FIGHTER0" "TEAMNAME_ADJECTIVE_FIGHTER1" "TEAMNAME_ADJECTIVE_FIGHTER2" "TEAMNAME_ADJECTIVE_FIGHTER3" "TEAMNAME_ADJECTIVE_FIGHTER4" "TEAMNAME_ADJECTIVE_FIGHTER5" "TEAMNAME_ADJECTIVE_FIGHTER6" "TEAMNAME_ADJECTIVE_FIGHTER7" "TEAMNAME_ADJECTIVE_FIGHTER8" "TEAMNAME_ADJECTIVE_FIGHTER9" "TEAMNAME_ADJECTIVE_FIGHTER10" "TEAMNAME_ADJECTIVE_FIGHTER11" "TEAMNAME_ADJECTIVE_FIGHTER12" "TEAMNAME_ADJECTIVE_FIGHTER13" ]`
-`[ "TEAMNAME_ADJECTIVE_HUNTER0" "TEAMNAME_ADJECTIVE_HUNTER1" "TEAMNAME_ADJECTIVE_HUNTER2" "TEAMNAME_ADJECTIVE_HUNTER3" "TEAMNAME_ADJECTIVE_HUNTER4" "TEAMNAME_ADJECTIVE_HUNTER5" "TEAMNAME_ADJECTIVE_HUNTER6" "TEAMNAME_ADJECTIVE_HUNTER7" "TEAMNAME_ADJECTIVE_HUNTER8" "TEAMNAME_ADJECTIVE_HUNTER9" "TEAMNAME_ADJECTIVE_HUNTER10" "TEAMNAME_ADJECTIVE_HUNTER11" ]`
-`[ "TEAMNAME_ADJECTIVE_MEDIC0" "TEAMNAME_ADJECTIVE_MEDIC1" "TEAMNAME_ADJECTIVE_MEDIC2" "TEAMNAME_ADJECTIVE_MEDIC3" "TEAMNAME_ADJECTIVE_MEDIC4" "TEAMNAME_ADJECTIVE_MEDIC5" "TEAMNAME_ADJECTIVE_MEDIC6" "TEAMNAME_ADJECTIVE_MEDIC7" "TEAMNAME_ADJECTIVE_MEDIC8" "TEAMNAME_ADJECTIVE_MEDIC9" "TEAMNAME_ADJECTIVE_MEDIC10" ]`
-
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TEAMNAME_ADJECTIVE_BUTCHER0` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER1` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER10` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER2` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER3` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER4` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER5` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER6` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER7` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER8` | |
-| `TEAMNAME_ADJECTIVE_BUTCHER9` | |
-| `TEAMNAME_ADJECTIVE_COLORLESS0` | |
-| `TEAMNAME_ADJECTIVE_COLORLESS1` | |
-| `TEAMNAME_ADJECTIVE_COLORLESS2` | |
-| `TEAMNAME_ADJECTIVE_DRUID0` | |
-| `TEAMNAME_ADJECTIVE_DRUID1` | |
-| `TEAMNAME_ADJECTIVE_DRUID10` | |
-| `TEAMNAME_ADJECTIVE_DRUID11` | |
-| `TEAMNAME_ADJECTIVE_DRUID2` | |
-| `TEAMNAME_ADJECTIVE_DRUID3` | |
-| `TEAMNAME_ADJECTIVE_DRUID4` | |
-| `TEAMNAME_ADJECTIVE_DRUID5` | |
-| `TEAMNAME_ADJECTIVE_DRUID6` | |
-| `TEAMNAME_ADJECTIVE_DRUID7` | |
-| `TEAMNAME_ADJECTIVE_DRUID8` | |
-| `TEAMNAME_ADJECTIVE_DRUID9` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER0` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER1` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER10` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER11` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER12` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER13` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER2` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER3` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER4` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER5` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER6` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER7` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER8` | |
-| `TEAMNAME_ADJECTIVE_FIGHTER9` | |
-| `TEAMNAME_ADJECTIVE_HUNTER0` | |
-| `TEAMNAME_ADJECTIVE_HUNTER1` | |
-| `TEAMNAME_ADJECTIVE_HUNTER10` | |
-| `TEAMNAME_ADJECTIVE_HUNTER11` | |
-| `TEAMNAME_ADJECTIVE_HUNTER2` | |
-| `TEAMNAME_ADJECTIVE_HUNTER3` | |
-| `TEAMNAME_ADJECTIVE_HUNTER4` | |
-| `TEAMNAME_ADJECTIVE_HUNTER5` | |
-| `TEAMNAME_ADJECTIVE_HUNTER6` | |
-| `TEAMNAME_ADJECTIVE_HUNTER7` | |
-| `TEAMNAME_ADJECTIVE_HUNTER8` | |
-| `TEAMNAME_ADJECTIVE_HUNTER9` | |
-| `TEAMNAME_ADJECTIVE_JESTER0` | |
-| `TEAMNAME_ADJECTIVE_JESTER1` | |
-| `TEAMNAME_ADJECTIVE_JESTER10` | |
-| `TEAMNAME_ADJECTIVE_JESTER11` | |
-| `TEAMNAME_ADJECTIVE_JESTER12` | |
-| `TEAMNAME_ADJECTIVE_JESTER13` | |
-| `TEAMNAME_ADJECTIVE_JESTER14` | |
-| `TEAMNAME_ADJECTIVE_JESTER2` | |
-| `TEAMNAME_ADJECTIVE_JESTER3` | |
-| `TEAMNAME_ADJECTIVE_JESTER4` | |
-| `TEAMNAME_ADJECTIVE_JESTER5` | |
-| `TEAMNAME_ADJECTIVE_JESTER6` | |
-| `TEAMNAME_ADJECTIVE_JESTER7` | |
-| `TEAMNAME_ADJECTIVE_JESTER8` | |
-| `TEAMNAME_ADJECTIVE_JESTER9` | |
-| `TEAMNAME_ADJECTIVE_MAGE0` | |
-| `TEAMNAME_ADJECTIVE_MAGE1` | |
-| `TEAMNAME_ADJECTIVE_MAGE10` | |
-| `TEAMNAME_ADJECTIVE_MAGE11` | |
-| `TEAMNAME_ADJECTIVE_MAGE2` | |
-| `TEAMNAME_ADJECTIVE_MAGE3` | |
-| `TEAMNAME_ADJECTIVE_MAGE4` | |
-| `TEAMNAME_ADJECTIVE_MAGE5` | |
-| `TEAMNAME_ADJECTIVE_MAGE6` | |
-| `TEAMNAME_ADJECTIVE_MAGE7` | |
-| `TEAMNAME_ADJECTIVE_MAGE8` | |
-| `TEAMNAME_ADJECTIVE_MAGE9` | |
-| `TEAMNAME_ADJECTIVE_MEDIC0` | |
-| `TEAMNAME_ADJECTIVE_MEDIC1` | |
-| `TEAMNAME_ADJECTIVE_MEDIC10` | |
-| `TEAMNAME_ADJECTIVE_MEDIC2` | |
-| `TEAMNAME_ADJECTIVE_MEDIC3` | |
-| `TEAMNAME_ADJECTIVE_MEDIC4` | |
-| `TEAMNAME_ADJECTIVE_MEDIC5` | |
-| `TEAMNAME_ADJECTIVE_MEDIC6` | |
-| `TEAMNAME_ADJECTIVE_MEDIC7` | |
-| `TEAMNAME_ADJECTIVE_MEDIC8` | |
-| `TEAMNAME_ADJECTIVE_MEDIC9` | |
-| `TEAMNAME_ADJECTIVE_MISC0` | |
-| `TEAMNAME_ADJECTIVE_MISC1` | |
-| `TEAMNAME_ADJECTIVE_MISC2` | |
-| `TEAMNAME_ADJECTIVE_MISC3` | |
-| `TEAMNAME_ADJECTIVE_MONK0` | |
-| `TEAMNAME_ADJECTIVE_MONK1` | |
-| `TEAMNAME_ADJECTIVE_MONK10` | |
-| `TEAMNAME_ADJECTIVE_MONK11` | |
-| `TEAMNAME_ADJECTIVE_MONK12` | |
-| `TEAMNAME_ADJECTIVE_MONK2` | |
-| `TEAMNAME_ADJECTIVE_MONK3` | |
-| `TEAMNAME_ADJECTIVE_MONK4` | |
-| `TEAMNAME_ADJECTIVE_MONK5` | |
-| `TEAMNAME_ADJECTIVE_MONK6` | |
-| `TEAMNAME_ADJECTIVE_MONK7` | |
-| `TEAMNAME_ADJECTIVE_MONK8` | |
-| `TEAMNAME_ADJECTIVE_MONK9` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER0` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER1` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER10` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER11` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER12` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER2` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER3` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER4` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER5` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER6` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER7` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER8` | |
-| `TEAMNAME_ADJECTIVE_NECROMANCER9` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC0` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC1` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC10` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC11` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC12` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC2` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC3` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC4` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC5` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC6` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC7` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC8` | |
-| `TEAMNAME_ADJECTIVE_PSYCHIC9` | |
-| `TEAMNAME_ADJECTIVE_TANK0` | |
-| `TEAMNAME_ADJECTIVE_TANK1` | |
-| `TEAMNAME_ADJECTIVE_TANK10` | |
-| `TEAMNAME_ADJECTIVE_TANK11` | |
-| `TEAMNAME_ADJECTIVE_TANK12` | |
-| `TEAMNAME_ADJECTIVE_TANK13` | |
-| `TEAMNAME_ADJECTIVE_TANK14` | |
-| `TEAMNAME_ADJECTIVE_TANK15` | |
-| `TEAMNAME_ADJECTIVE_TANK16` | |
-| `TEAMNAME_ADJECTIVE_TANK2` | |
-| `TEAMNAME_ADJECTIVE_TANK3` | |
-| `TEAMNAME_ADJECTIVE_TANK4` | |
-| `TEAMNAME_ADJECTIVE_TANK5` | |
-| `TEAMNAME_ADJECTIVE_TANK6` | |
-| `TEAMNAME_ADJECTIVE_TANK7` | |
-| `TEAMNAME_ADJECTIVE_TANK8` | |
-| `TEAMNAME_ADJECTIVE_TANK9` | |
-| `TEAMNAME_ADJECTIVE_THIEF0` | |
-| `TEAMNAME_ADJECTIVE_THIEF1` | |
-| `TEAMNAME_ADJECTIVE_THIEF10` | |
-| `TEAMNAME_ADJECTIVE_THIEF11` | |
-| `TEAMNAME_ADJECTIVE_THIEF12` | |
-| `TEAMNAME_ADJECTIVE_THIEF13` | |
-| `TEAMNAME_ADJECTIVE_THIEF2` | |
-| `TEAMNAME_ADJECTIVE_THIEF3` | |
-| `TEAMNAME_ADJECTIVE_THIEF4` | |
-| `TEAMNAME_ADJECTIVE_THIEF5` | |
-| `TEAMNAME_ADJECTIVE_THIEF6` | |
-| `TEAMNAME_ADJECTIVE_THIEF7` | |
-| `TEAMNAME_ADJECTIVE_THIEF8` | |
-| `TEAMNAME_ADJECTIVE_THIEF9` | |
-| `TEAMNAME_ADJECTIVE_TINKERER0` | |
-| `TEAMNAME_ADJECTIVE_TINKERER1` | |
-| `TEAMNAME_ADJECTIVE_TINKERER10` | |
-| `TEAMNAME_ADJECTIVE_TINKERER11` | |
-| `TEAMNAME_ADJECTIVE_TINKERER12` | |
-| `TEAMNAME_ADJECTIVE_TINKERER13` | |
-| `TEAMNAME_ADJECTIVE_TINKERER2` | |
-| `TEAMNAME_ADJECTIVE_TINKERER3` | |
-| `TEAMNAME_ADJECTIVE_TINKERER4` | |
-| `TEAMNAME_ADJECTIVE_TINKERER5` | |
-| `TEAMNAME_ADJECTIVE_TINKERER6` | |
-| `TEAMNAME_ADJECTIVE_TINKERER7` | |
-| `TEAMNAME_ADJECTIVE_TINKERER8` | |
-| `TEAMNAME_ADJECTIVE_TINKERER9` | |
-
-</details>
-
----
-
 ### Array: `damage`
 <details>
 <summary><b>Expand</b></summary>
@@ -2532,193 +1353,6 @@ This document provides exhaustive lists of all array properties found in the bas
 `[ 5 10 ]`
 `[ 3 6 ]`
 `[ 2 4 ]`
-
-</details>
-
----
-
-### Array: `nouns`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#team-names)
-
-**Accepted Elements:**
-- `Enum`
-
-**Examples:**
-`[ "TEAMNAME_NOUN_FIGHTER0" "TEAMNAME_NOUN_FIGHTER1" "TEAMNAME_NOUN_FIGHTER2" "TEAMNAME_NOUN_FIGHTER3" "TEAMNAME_NOUN_FIGHTER4" "TEAMNAME_NOUN_FIGHTER5" "TEAMNAME_NOUN_FIGHTER6" "TEAMNAME_NOUN_FIGHTER7" "TEAMNAME_NOUN_FIGHTER8" "TEAMNAME_NOUN_FIGHTER9" "TEAMNAME_NOUN_FIGHTER10" "TEAMNAME_NOUN_FIGHTER11" ]`
-`[ "TEAMNAME_NOUN_HUNTER0" "TEAMNAME_NOUN_HUNTER1" "TEAMNAME_NOUN_HUNTER2" "TEAMNAME_NOUN_HUNTER3" "TEAMNAME_NOUN_HUNTER4" "TEAMNAME_NOUN_HUNTER5" "TEAMNAME_NOUN_HUNTER6" "TEAMNAME_NOUN_HUNTER7" "TEAMNAME_NOUN_HUNTER8" "TEAMNAME_NOUN_HUNTER9" "TEAMNAME_NOUN_HUNTER10" "TEAMNAME_NOUN_HUNTER11" "TEAMNAME_NOUN_HUNTER12" ]`
-`[ "TEAMNAME_NOUN_MEDIC0" "TEAMNAME_NOUN_MEDIC1" "TEAMNAME_NOUN_MEDIC2" "TEAMNAME_NOUN_MEDIC3" "TEAMNAME_NOUN_MEDIC4" "TEAMNAME_NOUN_MEDIC5" "TEAMNAME_NOUN_MEDIC6" "TEAMNAME_NOUN_MEDIC7" "TEAMNAME_NOUN_MEDIC8" "TEAMNAME_NOUN_MEDIC9" ]`
-
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TEAMNAME_NOUN_BUTCHER0` | |
-| `TEAMNAME_NOUN_BUTCHER1` | |
-| `TEAMNAME_NOUN_BUTCHER10` | |
-| `TEAMNAME_NOUN_BUTCHER11` | |
-| `TEAMNAME_NOUN_BUTCHER2` | |
-| `TEAMNAME_NOUN_BUTCHER3` | |
-| `TEAMNAME_NOUN_BUTCHER4` | |
-| `TEAMNAME_NOUN_BUTCHER5` | |
-| `TEAMNAME_NOUN_BUTCHER6` | |
-| `TEAMNAME_NOUN_BUTCHER7` | |
-| `TEAMNAME_NOUN_BUTCHER8` | |
-| `TEAMNAME_NOUN_BUTCHER9` | |
-| `TEAMNAME_NOUN_COLORLESS0` | |
-| `TEAMNAME_NOUN_COLORLESS1` | |
-| `TEAMNAME_NOUN_COLORLESS2` | |
-| `TEAMNAME_NOUN_DRUID0` | |
-| `TEAMNAME_NOUN_DRUID1` | |
-| `TEAMNAME_NOUN_DRUID10` | |
-| `TEAMNAME_NOUN_DRUID11` | |
-| `TEAMNAME_NOUN_DRUID2` | |
-| `TEAMNAME_NOUN_DRUID3` | |
-| `TEAMNAME_NOUN_DRUID4` | |
-| `TEAMNAME_NOUN_DRUID5` | |
-| `TEAMNAME_NOUN_DRUID6` | |
-| `TEAMNAME_NOUN_DRUID7` | |
-| `TEAMNAME_NOUN_DRUID8` | |
-| `TEAMNAME_NOUN_DRUID9` | |
-| `TEAMNAME_NOUN_FIGHTER0` | |
-| `TEAMNAME_NOUN_FIGHTER1` | |
-| `TEAMNAME_NOUN_FIGHTER10` | |
-| `TEAMNAME_NOUN_FIGHTER11` | |
-| `TEAMNAME_NOUN_FIGHTER2` | |
-| `TEAMNAME_NOUN_FIGHTER3` | |
-| `TEAMNAME_NOUN_FIGHTER4` | |
-| `TEAMNAME_NOUN_FIGHTER5` | |
-| `TEAMNAME_NOUN_FIGHTER6` | |
-| `TEAMNAME_NOUN_FIGHTER7` | |
-| `TEAMNAME_NOUN_FIGHTER8` | |
-| `TEAMNAME_NOUN_FIGHTER9` | |
-| `TEAMNAME_NOUN_HUNTER0` | |
-| `TEAMNAME_NOUN_HUNTER1` | |
-| `TEAMNAME_NOUN_HUNTER10` | |
-| `TEAMNAME_NOUN_HUNTER11` | |
-| `TEAMNAME_NOUN_HUNTER12` | |
-| `TEAMNAME_NOUN_HUNTER2` | |
-| `TEAMNAME_NOUN_HUNTER3` | |
-| `TEAMNAME_NOUN_HUNTER4` | |
-| `TEAMNAME_NOUN_HUNTER5` | |
-| `TEAMNAME_NOUN_HUNTER6` | |
-| `TEAMNAME_NOUN_HUNTER7` | |
-| `TEAMNAME_NOUN_HUNTER8` | |
-| `TEAMNAME_NOUN_HUNTER9` | |
-| `TEAMNAME_NOUN_JESTER0` | |
-| `TEAMNAME_NOUN_JESTER1` | |
-| `TEAMNAME_NOUN_JESTER10` | |
-| `TEAMNAME_NOUN_JESTER11` | |
-| `TEAMNAME_NOUN_JESTER2` | |
-| `TEAMNAME_NOUN_JESTER3` | |
-| `TEAMNAME_NOUN_JESTER4` | |
-| `TEAMNAME_NOUN_JESTER5` | |
-| `TEAMNAME_NOUN_JESTER6` | |
-| `TEAMNAME_NOUN_JESTER7` | |
-| `TEAMNAME_NOUN_JESTER8` | |
-| `TEAMNAME_NOUN_JESTER9` | |
-| `TEAMNAME_NOUN_MAGE0` | |
-| `TEAMNAME_NOUN_MAGE1` | |
-| `TEAMNAME_NOUN_MAGE2` | |
-| `TEAMNAME_NOUN_MAGE3` | |
-| `TEAMNAME_NOUN_MAGE4` | |
-| `TEAMNAME_NOUN_MAGE5` | |
-| `TEAMNAME_NOUN_MAGE6` | |
-| `TEAMNAME_NOUN_MAGE7` | |
-| `TEAMNAME_NOUN_MAGE8` | |
-| `TEAMNAME_NOUN_MEDIC0` | |
-| `TEAMNAME_NOUN_MEDIC1` | |
-| `TEAMNAME_NOUN_MEDIC2` | |
-| `TEAMNAME_NOUN_MEDIC3` | |
-| `TEAMNAME_NOUN_MEDIC4` | |
-| `TEAMNAME_NOUN_MEDIC5` | |
-| `TEAMNAME_NOUN_MEDIC6` | |
-| `TEAMNAME_NOUN_MEDIC7` | |
-| `TEAMNAME_NOUN_MEDIC8` | |
-| `TEAMNAME_NOUN_MEDIC9` | |
-| `TEAMNAME_NOUN_MISC0` | |
-| `TEAMNAME_NOUN_MISC1` | |
-| `TEAMNAME_NOUN_MISC2` | |
-| `TEAMNAME_NOUN_MISC3` | |
-| `TEAMNAME_NOUN_MISC4` | |
-| `TEAMNAME_NOUN_MISC5` | |
-| `TEAMNAME_NOUN_MISC6` | |
-| `TEAMNAME_NOUN_MISC7` | |
-| `TEAMNAME_NOUN_MISC8` | |
-| `TEAMNAME_NOUN_MISC9` | |
-| `TEAMNAME_NOUN_MONK0` | |
-| `TEAMNAME_NOUN_MONK1` | |
-| `TEAMNAME_NOUN_MONK10` | |
-| `TEAMNAME_NOUN_MONK11` | |
-| `TEAMNAME_NOUN_MONK12` | |
-| `TEAMNAME_NOUN_MONK2` | |
-| `TEAMNAME_NOUN_MONK3` | |
-| `TEAMNAME_NOUN_MONK4` | |
-| `TEAMNAME_NOUN_MONK5` | |
-| `TEAMNAME_NOUN_MONK6` | |
-| `TEAMNAME_NOUN_MONK7` | |
-| `TEAMNAME_NOUN_MONK8` | |
-| `TEAMNAME_NOUN_MONK9` | |
-| `TEAMNAME_NOUN_NECROMANCER0` | |
-| `TEAMNAME_NOUN_NECROMANCER1` | |
-| `TEAMNAME_NOUN_NECROMANCER10` | |
-| `TEAMNAME_NOUN_NECROMANCER2` | |
-| `TEAMNAME_NOUN_NECROMANCER3` | |
-| `TEAMNAME_NOUN_NECROMANCER4` | |
-| `TEAMNAME_NOUN_NECROMANCER5` | |
-| `TEAMNAME_NOUN_NECROMANCER6` | |
-| `TEAMNAME_NOUN_NECROMANCER7` | |
-| `TEAMNAME_NOUN_NECROMANCER8` | |
-| `TEAMNAME_NOUN_NECROMANCER9` | |
-| `TEAMNAME_NOUN_PSYCHIC0` | |
-| `TEAMNAME_NOUN_PSYCHIC1` | |
-| `TEAMNAME_NOUN_PSYCHIC2` | |
-| `TEAMNAME_NOUN_PSYCHIC3` | |
-| `TEAMNAME_NOUN_PSYCHIC4` | |
-| `TEAMNAME_NOUN_PSYCHIC5` | |
-| `TEAMNAME_NOUN_PSYCHIC6` | |
-| `TEAMNAME_NOUN_PSYCHIC7` | |
-| `TEAMNAME_NOUN_PSYCHIC8` | |
-| `TEAMNAME_NOUN_PSYCHIC9` | |
-| `TEAMNAME_NOUN_TANK0` | |
-| `TEAMNAME_NOUN_TANK1` | |
-| `TEAMNAME_NOUN_TANK10` | |
-| `TEAMNAME_NOUN_TANK11` | |
-| `TEAMNAME_NOUN_TANK12` | |
-| `TEAMNAME_NOUN_TANK2` | |
-| `TEAMNAME_NOUN_TANK3` | |
-| `TEAMNAME_NOUN_TANK4` | |
-| `TEAMNAME_NOUN_TANK5` | |
-| `TEAMNAME_NOUN_TANK6` | |
-| `TEAMNAME_NOUN_TANK7` | |
-| `TEAMNAME_NOUN_TANK8` | |
-| `TEAMNAME_NOUN_TANK9` | |
-| `TEAMNAME_NOUN_THIEF0` | |
-| `TEAMNAME_NOUN_THIEF1` | |
-| `TEAMNAME_NOUN_THIEF10` | |
-| `TEAMNAME_NOUN_THIEF11` | |
-| `TEAMNAME_NOUN_THIEF2` | |
-| `TEAMNAME_NOUN_THIEF3` | |
-| `TEAMNAME_NOUN_THIEF4` | |
-| `TEAMNAME_NOUN_THIEF5` | |
-| `TEAMNAME_NOUN_THIEF6` | |
-| `TEAMNAME_NOUN_THIEF7` | |
-| `TEAMNAME_NOUN_THIEF8` | |
-| `TEAMNAME_NOUN_THIEF9` | |
-| `TEAMNAME_NOUN_TINKERER0` | |
-| `TEAMNAME_NOUN_TINKERER1` | |
-| `TEAMNAME_NOUN_TINKERER10` | |
-| `TEAMNAME_NOUN_TINKERER11` | |
-| `TEAMNAME_NOUN_TINKERER2` | |
-| `TEAMNAME_NOUN_TINKERER3` | |
-| `TEAMNAME_NOUN_TINKERER4` | |
-| `TEAMNAME_NOUN_TINKERER5` | |
-| `TEAMNAME_NOUN_TINKERER6` | |
-| `TEAMNAME_NOUN_TINKERER7` | |
-| `TEAMNAME_NOUN_TINKERER8` | |
-| `TEAMNAME_NOUN_TINKERER9` | |
 
 </details>
 
@@ -2883,7 +1517,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ 0 [ -20 20 ] 0 ]`
@@ -2901,49 +1535,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`fallback`](./Characters_and_Bosses.md#context-fallback), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 **Examples:**
 `[ SimonSays_Scatter SimonSays_ComeHere SimonSays_GoAway ]`
 `[ Escape attack DybbukReanimate ]`
 `[ Escape attack DybbukReanimate DybbukWisps ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `attack` | |
-| `DybbukReanimate` | |
-| `Escape` | |
-| `Tina2Call` | |
-| `**TVChangeDumb` | |
-| `**TVChangeObey` | |
-| `**TVChangeStop` | |
-| `AZ_BreakArm` | |
-| `AZ_BreakLeg` | |
-| `AZ_BreakNeck` | |
-| `CHCry` | |
-| `CHSpawn` | |
-| `DybbukWisps` | |
-| `GuillotinaTossCollide` | |
-| `Magnetize` | |
-| `NeutronExplode` | |
-| `NeutronRumble` | |
-| `PyrophinaSoloFlamethrower` | |
-| `ScaryFear` | |
-| `ScaryHaunt` | |
-| `SimonSays_ComeHere` | |
-| `SimonSays_GoAway` | |
-| `SimonSays_Scatter` | |
-| `TKNG_GoAway` | |
-| `TKNG_Kneel` | |
-| `TKNG_Roulette` | |
-| `TKNG_Spread` | |
-| `UFO_Dash` | |
-| `UFO_Megalaser` | |
-| `UFO_Summon` | |
-| `YeetTowardsBuddy` | |
-| `ZaratanaSoloBombardment` | |
 
 </details>
 
@@ -2956,35 +1554,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 **Examples:**
 `[ *WizSpellShield WizBlizzard ]`
 `[ WizFlamethrower ]`
 `[ WizStorm ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `MoveCenter` | |
-| `attack` | |
-| `**FuzzerJump_post` | |
-| `*CanCreeperSlide` | |
-| `*CoreFreakFury` | |
-| `*CraterCreeperSlide` | |
-| `*WizSpellShield` | |
-| `*attack` | |
-| `BasicMelee` | |
-| `MCBlizzard` | |
-| `MCFlamethrower` | |
-| `MCStorm` | |
-| `MoveAway` | |
-| `PokerPokeCat` | |
-| `RageUp` | |
-| `WizBlizzard` | |
-| `WizFlamethrower` | |
-| `WizStorm` | |
 
 </details>
 
@@ -3046,30 +1622,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `global_tags`](./Enums.md#enum-global-tags)
 
 **Examples:**
 `[ all_cats_are_jester ]`
 `[ fail_all_events ]`
 `[ always_ambushed ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `increase_event_difficulty` | |
-| `trigger_extra_event` | |
-| `all_cats_are_jester` | |
-| `all_normal_events_are_weather` | |
-| `always_ambushed` | |
-| `disorder_levelup_quest` | |
-| `fail_all_events` | |
-| `increase_difficulty` | |
-| `item_levelup_quest` | |
-| `pyrophina_following` | |
-| `superchaos_levelups` | |
-| `upgrade_basic_combats_to_hard` | |
-| `zaratana_following` | |
 
 </details>
 
@@ -3231,25 +1790,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `global_particles`](./Enums.md#enum-global-particles)
 
 **Examples:**
 `[ CaveDrip ]`
 `[ CaveDrip ]`
 `[ Mist ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `CaveDrip` | |
-| `AngelClouds` | |
-| `CoreHeatWave_Distortion` | |
-| `Mist` | |
-| `CraterLeaves` | |
-| `Embers` | |
-| `GlitchShards` | |
-| `MeatCaveDrip` | |
 
 </details>
 
@@ -3280,9 +1827,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_BossOrBig`](./Abilities_and_Spells.md#context-conditional_bossorbig), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack)
 
 **Accepted Elements:**
-- `Array`
-  - `Float` *(inner elements)*
-  - `Float` *(inner elements)*
+- `Integer` *(stacks)*
+- `Float` *(chance)*
 
 **Examples:**
 `[ 1 .25 ]`
@@ -3662,7 +2208,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ 0 -20 0 ]`
@@ -3681,7 +2227,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ [ -2 0 ] [ -2 -1 ] [ -1 -2 ] [ 0 -2 ] [ -1 1 ] [ 0 1 ] [ 1 0 ] [ 1 -1 ] ]`
@@ -3700,7 +2246,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ 0 [ 40 120 ] 0 ]`
@@ -3886,49 +2432,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `passive_pool`](./Enums.md#enum-passive-pool)
 
 **Examples:**
 `[ ShoulderCheck DumbMuscle ThickSkull MostValuableCat HitMe ]`
 `[ Hazardous Traps CatchProjectiles Host SleepDarts Survivalist ]`
 `[ ElementalAttunement LatentEnergy MagicGuru One Two Four Five ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AfterImage` | |
-| `Agile` | |
-| `BlessingOfHolyFire` | |
-| `BlessingOfSpirit` | |
-| `BountyHunter` | |
-| `CatchProjectiles` | |
-| `ChainKnockback` | |
-| `DumbMuscle` | |
-| `ElementalAttunement` | |
-| `Five` | |
-| `FlipACoin` | |
-| `Four` | |
-| `Hazardous` | |
-| `HitMe` | |
-| `Host` | |
-| `LatentEnergy` | |
-| `MagicGuru` | |
-| `MostValuableCat` | |
-| `MyLeg` | |
-| `One` | |
-| `Plow` | |
-| `RangedMedic` | |
-| `ShoulderCheck` | |
-| `ShovingMatch` | |
-| `SleepDarts` | |
-| `SlowAndSteady` | |
-| `Survivalist` | |
-| `ThickSkull` | |
-| `ThouShaltNotKill` | |
-| `Traps` | |
-| `Two` | |
-| `Wrestlemaniac` | |
 
 </details>
 
@@ -3942,7 +2452,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ [ 0 1 ] [ 1 1 ] [ 0 0 ] [ 1 0 ] ]`
@@ -4161,9 +2671,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`GlobalFlowerTrapperAura`](./Items_and_Equipment.md#context-globalflowertrapperaura)
 
 **Accepted Elements:**
-- `Array`
-  - `Float` *(inner elements)*
-  - `Float` *(inner elements)*
+- `Integer` *(stacks)*
+- `Float` *(chance)*
 
 **Examples:**
 `[ 1 .05 ]`
@@ -4217,31 +2726,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `parasite`](./Enums.md#enum-parasite)
 
 **Examples:**
 `[ CrimsonMask_Cursed RedCap_Cursed PoundOfFlesh_Cursed ]`
 `[ AmoebaHat AmoebaNeck AmoebaFace ]`
 `[ Tapeworm Pinworm Ringworm Heartworm EyeWorm Parousworm Hookworm Roundworm ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `EyeWorm` | |
-| `Heartworm` | |
-| `Hookworm` | |
-| `Parousworm` | |
-| `Pinworm` | |
-| `Ringworm` | |
-| `Roundworm` | |
-| `Tapeworm` | |
-| `AmoebaFace` | |
-| `AmoebaHat` | |
-| `AmoebaNeck` | |
-| `CrimsonMask_Cursed` | |
-| `PoundOfFlesh_Cursed` | |
-| `RedCap_Cursed` | |
 
 </details>
 
@@ -4789,22 +3280,13 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 **Examples:**
 `[ ClotEvolveCatCopy ClotFailEvolve ]`
 `[ CerberubsJumpBlind CerberubsJumpNormal ]`
 `[ ClotEvolve ClotFailEvolve ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `ClotFailEvolve` | |
-| `CerberubsJumpBlind` | |
-| `CerberubsJumpNormal` | |
-| `ClotEvolve` | |
-| `ClotEvolveCatCopy` | |
 
 </details>
 
@@ -5210,7 +3692,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ [ 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 ] [ 6 6 6 6 6 6 6 6 6 8 8 6 6 6 6 6 6 6 6 6 ] [ 6 6 6 6 6 6 6 8 7 0 0 7 8 6 6 6 6 6 6 6 ] [ 6 6 6 6 6 8 7 0 0 0 0 0 0 7 8 6 6 6 6 6 ] [ 6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6 ] [ 6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6 ] [ 6 8 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 8 6 ] ]`
@@ -5355,18 +3837,12 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `disorder`](./Enums.md#enum-disorder)
 
 **Examples:**
 `[ Dwarfism ]`
 `[ Gigantism ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `Dwarfism` | |
-| `Gigantism` | |
 
 </details>
 
@@ -5413,9 +3889,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- `Array`
-  - `Float` *(inner elements)*
-  - `Float` *(inner elements)*
+- `Float`
 
 **Examples:**
 `[ 0 1.6 ]`
@@ -5446,7 +3920,8 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(threshold value)*
+  - [Enum: `movieclip`](./Enums.md#enum-movieclip) *(animation state at threshold)*
 
 **Examples:**
 `[ [ 5 bite2 ] [ 10 bite3 ] ]`
@@ -5479,19 +3954,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 **Examples:**
 `[ AlienBeastScream AlienBeastEat AlienBeastPuke AlienBeastRampage ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AlienBeastEat` | |
-| `AlienBeastPuke` | |
-| `AlienBeastRampage` | |
-| `AlienBeastScream` | |
 
 </details>
 
@@ -5552,23 +4019,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BirdHead BirdFeed Feather FeatheredMask FeatheredWing Turkey Chicken BirdPoopHat ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BirdFeed` | |
-| `BirdHead` | |
-| `BirdPoopHat` | |
-| `Chicken` | |
-| `Feather` | |
-| `FeatheredMask` | |
-| `FeatheredWing` | |
-| `Turkey` | |
 
 </details>
 
@@ -5613,25 +4068,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BloodyCoin GlowingCoin ElectricCoin CounterfeitCoin LuckyCoin MoneyBag_Small MoneyBag_Medium MoneyBag_Large MoneyBag_Huge RollOfPennies ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BloodyCoin` | |
-| `CounterfeitCoin` | |
-| `ElectricCoin` | |
-| `GlowingCoin` | |
-| `LuckyCoin` | |
-| `MoneyBag_Huge` | |
-| `MoneyBag_Large` | |
-| `MoneyBag_Medium` | |
-| `MoneyBag_Small` | |
-| `RollOfPennies` | |
 
 </details>
 
@@ -5740,23 +4181,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ MysteriousEye BlinkingEyeball SmallEye GorgonsEye ConjoinedEye ThirdEye Eyeball WitchsEye ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BlinkingEyeball` | |
-| `ConjoinedEye` | |
-| `Eyeball` | |
-| `GorgonsEye` | |
-| `MysteriousEye` | |
-| `SmallEye` | |
-| `ThirdEye` | |
-| `WitchsEye` | |
 
 </details>
 
@@ -6073,25 +4502,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `disorder`](./Enums.md#enum-disorder)
 
 **Examples:**
 `[ Invincible Paranoia Triskaidekaphobia Autism Bipolar Premonitions Dyslexia Schizophrenia Insomnia ADHD ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `ADHD` | |
-| `Autism` | |
-| `Bipolar` | |
-| `Dyslexia` | |
-| `Insomnia` | |
-| `Invincible` | |
-| `Paranoia` | |
-| `Premonitions` | |
-| `Schizophrenia` | |
-| `Triskaidekaphobia` | |
 
 </details>
 
@@ -6222,19 +4637,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererStick TinkererBigStick TinkererBiggestStick TinkererLog ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinkererBigStick` | |
-| `TinkererBiggestStick` | |
-| `TinkererLog` | |
-| `TinkererStick` | |
 
 </details>
 
@@ -6263,17 +4670,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererBiggestStick TinkererLog ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinkererBiggestStick` | |
-| `TinkererLog` | |
 
 </details>
 
@@ -6286,16 +4687,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererLog ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinkererLog` | |
 
 </details>
 
@@ -6340,18 +4736,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BarbedHat BarbedMask BarbedNeck ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BarbedHat` | |
-| `BarbedMask` | |
-| `BarbedNeck` | |
 
 </details>
 
@@ -6364,19 +4753,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BarbedPaw BarbedHat BarbedMask BarbedNeck ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BarbedHat` | |
-| `BarbedMask` | |
-| `BarbedNeck` | |
-| `BarbedPaw` | |
 
 </details>
 
@@ -6389,36 +4770,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `disorder`](./Enums.md#enum-disorder)
 
 **Examples:**
 `[ Autism Tourettes Narcolepsy Albinism Diabetes Dyslexia Dwarfism PrimordialDwarf WobblyCat GlassBones Anemia SpinaBifida WilliamsSyndrome SavantSyndrome Tachysensia DownsSyndrome Depression OCD Tourettes Bipolar Schizophrenia ADHD ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `Tourettes` | |
-| `ADHD` | |
-| `Albinism` | |
-| `Anemia` | |
-| `Autism` | |
-| `Bipolar` | |
-| `Depression` | |
-| `Diabetes` | |
-| `DownsSyndrome` | |
-| `Dwarfism` | |
-| `Dyslexia` | |
-| `GlassBones` | |
-| `Narcolepsy` | |
-| `OCD` | |
-| `PrimordialDwarf` | |
-| `SavantSyndrome` | |
-| `Schizophrenia` | |
-| `SpinaBifida` | |
-| `Tachysensia` | |
-| `WilliamsSyndrome` | |
-| `WobblyCat` | |
 
 </details>
 
@@ -6431,30 +4787,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ GutsHeart GutsLiver GutsIntestines SackOfMeat SacredHeart BoneMarrow Stomach LeakyBrain SnaggleTooth BoneMarrow ExtraLimb CatPaw CrimsonMask RedCap PoundOfFlesh LostSoul ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BoneMarrow` | |
-| `CatPaw` | |
-| `CrimsonMask` | |
-| `ExtraLimb` | |
-| `GutsHeart` | |
-| `GutsIntestines` | |
-| `GutsLiver` | |
-| `LeakyBrain` | |
-| `LostSoul` | |
-| `PoundOfFlesh` | |
-| `RedCap` | |
-| `SackOfMeat` | |
-| `SacredHeart` | |
-| `SnaggleTooth` | |
-| `Stomach` | |
 
 </details>
 
@@ -6467,28 +4804,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ MeatBomb BloodyStick BucketOfBlood BloodyButterflyKnife BloodyBearTraps BloodyBagOfGlass MeatSlugger BloodyMeatHook BloodySoulClaw BloodBucket BloodySpikes BottlesOfBlood BloodyRazor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BloodBucket` | |
-| `BloodyBagOfGlass` | |
-| `BloodyBearTraps` | |
-| `BloodyButterflyKnife` | |
-| `BloodyMeatHook` | |
-| `BloodyRazor` | |
-| `BloodySoulClaw` | |
-| `BloodySpikes` | |
-| `BloodyStick` | |
-| `BottlesOfBlood` | |
-| `BucketOfBlood` | |
-| `MeatBomb` | |
-| `MeatSlugger` | |
 
 </details>
 
@@ -6501,16 +4821,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ SmallBomb ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `SmallBomb` | |
 
 </details>
 
@@ -6571,21 +4886,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BonesHat BonesMask BonesNeck DryBoneMask DryBoneHat DryBoneNecklace ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BonesHat` | |
-| `BonesMask` | |
-| `BonesNeck` | |
-| `DryBoneHat` | |
-| `DryBoneMask` | |
-| `DryBoneNecklace` | |
 
 </details>
 
@@ -6598,28 +4903,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BonesHat BonesMask BonesNeck BoneClub Molars VibratingSkull BoneMarrow CatRib HumanLeg DryBoneMask DryBoneHat DryBoneNecklace FingerBone ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BoneClub` | |
-| `BoneMarrow` | |
-| `BonesHat` | |
-| `BonesMask` | |
-| `BonesNeck` | |
-| `CatRib` | |
-| `DryBoneHat` | |
-| `DryBoneMask` | |
-| `DryBoneNecklace` | |
-| `FingerBone` | |
-| `HumanLeg` | |
-| `Molars` | |
-| `VibratingSkull` | |
 
 </details>
 
@@ -6680,16 +4968,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ SixPack ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `SixPack` | |
 
 </details>
 
@@ -6718,18 +5001,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ CatHideHat CatHideMask CatHideArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `CatHideArmor` | |
-| `CatHideHat` | |
-| `CatHideMask` | |
 
 </details>
 
@@ -6813,29 +5089,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `class_seals`](./Enums.md#enum-class-seals)
 
 **Examples:**
 `[ FighterSeal HunterSeal TankSeal ClericSeal ThiefSeal MageSeal ColorlessSeal PsychicSeal JesterSeal TinkererSeal ButcherSeal DruidSeal MonkSeal NecromancerSeal ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `ButcherSeal` | |
-| `ClericSeal` | |
-| `ColorlessSeal` | |
-| `DruidSeal` | |
-| `FighterSeal` | |
-| `HunterSeal` | |
-| `JesterSeal` | |
-| `MageSeal` | |
-| `MonkSeal` | |
-| `NecromancerSeal` | |
-| `PsychicSeal` | |
-| `TankSeal` | |
-| `ThiefSeal` | |
-| `TinkererSeal` | |
 
 </details>
 
@@ -6848,21 +5106,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Event_Pools)](./Event_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `event_file`](./Enums.md#enum-event-file)
 
 **Examples:**
 `[ dead_body.gon monster.gon misc_events.gon npc_events.gon treasure_box.gon legacy_events.gon ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `dead_body.gon` | |
-| `legacy_events.gon` | |
-| `misc_events.gon` | |
-| `monster.gon` | |
-| `npc_events.gon` | |
-| `treasure_box.gon` | |
 
 </details>
 
@@ -6988,7 +5236,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ [ 1 0 ] [ 1 0 ] [ 1 0 ] [ 1 0 ] [ 1 0 ] [ 1 0 ] ]`
@@ -7005,7 +5253,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ [ 1 1 ] [ 1 0 ] [ 1 1 ] [ 1 0 ] [ 1 1 ] [ 1 0 ] ]`
@@ -7022,7 +5270,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - `Integer` *(each inner array element)*
 
 **Examples:**
 `[ [ 0 damagescale_zero ] [ 1 damagescale_small ] [ 5 damagescale_medium ] [ 10 damagescale_large ] [ 25 damagescale_extreme ] ]`
@@ -7038,31 +5286,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BonesHat BonesMask BonesNeck BoneClub Molars VibratingSkull BoneMarrow CatRib HumanLeg DryBoneMask DryBoneHat DryBoneNecklace FingerBone BoneClub Molars FingerBone CatHideHat CatHideMask CatHideArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BoneClub` | |
-| `FingerBone` | |
-| `Molars` | |
-| `BoneMarrow` | |
-| `BonesHat` | |
-| `BonesMask` | |
-| `BonesNeck` | |
-| `CatHideArmor` | |
-| `CatHideHat` | |
-| `CatHideMask` | |
-| `CatRib` | |
-| `DryBoneHat` | |
-| `DryBoneMask` | |
-| `DryBoneNecklace` | |
-| `HumanLeg` | |
-| `VibratingSkull` | |
 
 </details>
 
@@ -7107,22 +5335,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BlackCandle CrownOfHorns ObsidianChunk DemonicHat DemonicMask DemonicNecklace DarkFriend ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BlackCandle` | |
-| `CrownOfHorns` | |
-| `DarkFriend` | |
-| `DemonicHat` | |
-| `DemonicMask` | |
-| `DemonicNecklace` | |
-| `ObsidianChunk` | |
 
 </details>
 
@@ -7151,22 +5368,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 **Examples:**
 `[ D6Fizzle D6Confused D6Poop D6Laser D6Quake D6Storm D6Wrath ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `D6Confused` | |
-| `D6Fizzle` | |
-| `D6Laser` | |
-| `D6Poop` | |
-| `D6Quake` | |
-| `D6Storm` | |
-| `D6Wrath` | |
 
 </details>
 
@@ -7256,22 +5462,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ Shotgun 22Rifle Uzi RocketLauncher Revolver Sniper Grenade ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `22Rifle` | |
-| `Grenade` | |
-| `Revolver` | |
-| `RocketLauncher` | |
-| `Shotgun` | |
-| `Sniper` | |
-| `Uzi` | |
 
 </details>
 
@@ -7316,21 +5511,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ SmallEye GorgonsEye Eyeball WitchsEye BlinkingEyeball ConjoinedEye ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BlinkingEyeball` | |
-| `ConjoinedEye` | |
-| `Eyeball` | |
-| `GorgonsEye` | |
-| `SmallEye` | |
-| `WitchsEye` | |
 
 </details>
 
@@ -7359,22 +5544,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ PoundOfFlesh HumanFleshMask HumanFleshHat HumanFleshArmor HumanHead HumanHand HumanToe ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `HumanFleshArmor` | |
-| `HumanFleshHat` | |
-| `HumanFleshMask` | |
-| `HumanHand` | |
-| `HumanHead` | |
-| `HumanToe` | |
-| `PoundOfFlesh` | |
 
 </details>
 
@@ -7419,20 +5593,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `disorder`](./Enums.md#enum-disorder)
 
 **Examples:**
 `[ Psychosis BorrowedTime Schizophrenia Insomnia TheHunger ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BorrowedTime` | |
-| `Insomnia` | |
-| `Psychosis` | |
-| `Schizophrenia` | |
-| `TheHunger` | |
 
 </details>
 
@@ -7461,18 +5626,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ GutsHeart GutsLiver GutsIntestines ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `GutsHeart` | |
-| `GutsIntestines` | |
-| `GutsLiver` | |
 
 </details>
 
@@ -7485,25 +5643,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BarbedScrap LeatherHideMask RecycledGimpMask GemstoneBones CoolRocks MinerImplant RottenGuts PaperRags DirtyBionicArmor LuckyTwine ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BarbedScrap` | |
-| `CoolRocks` | |
-| `DirtyBionicArmor` | |
-| `GemstoneBones` | |
-| `LeatherHideMask` | |
-| `LuckyTwine` | |
-| `MinerImplant` | |
-| `PaperRags` | |
-| `RecycledGimpMask` | |
-| `RottenGuts` | |
 
 </details>
 
@@ -7516,25 +5660,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BlessedHalo HolyTears EyeOfGod TheMind TheBody TheSoul Scapular CrownOfThorns ImmaculateHeart BlessedAnointingOil ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BlessedAnointingOil` | |
-| `BlessedHalo` | |
-| `CrownOfThorns` | |
-| `EyeOfGod` | |
-| `HolyTears` | |
-| `ImmaculateHeart` | |
-| `Scapular` | |
-| `TheBody` | |
-| `TheMind` | |
-| `TheSoul` | |
 
 </details>
 
@@ -7547,19 +5677,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `parasite`](./Enums.md#enum-parasite)
 
 **Examples:**
 `[ BestBud SoulSucker AngryWorm HealWorm ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AngryWorm` | |
-| `BestBud` | |
-| `HealWorm` | |
-| `SoulSucker` | |
 
 </details>
 
@@ -7572,28 +5694,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ BagOfGrass SeedBombs GlowingSeed MagicSeed TwineHat TwineMask TwineArmor LeafyMask LeafyHat LeafyNecklace KiloOfCatnip CatnipBig LuckyMask ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BagOfGrass` | |
-| `CatnipBig` | |
-| `GlowingSeed` | |
-| `KiloOfCatnip` | |
-| `LeafyHat` | |
-| `LeafyMask` | |
-| `LeafyNecklace` | |
-| `LuckyMask` | |
-| `MagicSeed` | |
-| `SeedBombs` | |
-| `TwineArmor` | |
-| `TwineHat` | |
-| `TwineMask` | |
 
 </details>
 
@@ -7622,18 +5727,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ FaceGrub HeadGrub NeckGrub ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `FaceGrub` | |
-| `HeadGrub` | |
-| `NeckGrub` | |
 
 </details>
 
@@ -7646,24 +5744,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ GutsHeart GutsLiver GutsIntestines BoneMarrow Stomach LeakyBrain HumanBrain HumanHeart MysteriousEye ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BoneMarrow` | |
-| `GutsHeart` | |
-| `GutsIntestines` | |
-| `GutsLiver` | |
-| `HumanBrain` | |
-| `HumanHeart` | |
-| `LeakyBrain` | |
-| `MysteriousEye` | |
-| `Stomach` | |
 
 </details>
 
@@ -7724,22 +5809,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ CatHideHat CatHideMask CatHideArmor ThickHide RatHat RatMask RatNecklace ThickHide ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `ThickHide` | |
-| `CatHideArmor` | |
-| `CatHideHat` | |
-| `CatHideMask` | |
-| `RatHat` | |
-| `RatMask` | |
-| `RatNecklace` | |
 
 </details>
 
@@ -7800,29 +5874,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ Technology D6 RazorBlade Teleport MomsRing ButterBean SacredHeart FetusInAJar Breakfast Ipecac SoyMilk SpoonBender Cancer Wafer ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `Breakfast` | |
-| `ButterBean` | |
-| `Cancer` | |
-| `D6` | |
-| `FetusInAJar` | |
-| `Ipecac` | |
-| `MomsRing` | |
-| `RazorBlade` | |
-| `SacredHeart` | |
-| `SoyMilk` | |
-| `SpoonBender` | |
-| `Technology` | |
-| `Teleport` | |
-| `Wafer` | |
 
 </details>
 
@@ -7851,29 +5907,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ ScrapHat ScrapMask ScrapArmor RubberHat RubberMask RubberArmor BarbedHat BarbedMask BarbedNeck RecycledHat RecycledMask RecycledArmor BagOfChum HumanHead ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BagOfChum` | |
-| `BarbedHat` | |
-| `BarbedMask` | |
-| `BarbedNeck` | |
-| `HumanHead` | |
-| `RecycledArmor` | |
-| `RecycledHat` | |
-| `RecycledMask` | |
-| `RubberArmor` | |
-| `RubberHat` | |
-| `RubberMask` | |
-| `ScrapArmor` | |
-| `ScrapHat` | |
-| `ScrapMask` | |
 
 </details>
 
@@ -8094,35 +6132,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ ChaosDevice MagicMirror MeStone AngryFace FartFace SpiderInjector PartyDetonator AirHorn TheLoner GlassCannon PrincessHat HardPill BubbleBoy Redacted Stopwatch StorageLocker MysteriousDice ExperimentalTreatment UltraVision3000 NuclearKnife ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AirHorn` | |
-| `AngryFace` | |
-| `BubbleBoy` | |
-| `ChaosDevice` | |
-| `ExperimentalTreatment` | |
-| `FartFace` | |
-| `GlassCannon` | |
-| `HardPill` | |
-| `MagicMirror` | |
-| `MeStone` | |
-| `MysteriousDice` | |
-| `NuclearKnife` | |
-| `PartyDetonator` | |
-| `PrincessHat` | |
-| `Redacted` | |
-| `SpiderInjector` | |
-| `Stopwatch` | |
-| `StorageLocker` | |
-| `TheLoner` | |
-| `UltraVision3000` | |
 
 </details>
 
@@ -8151,22 +6165,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ RottenMeat BagOfMeat GutsHeart GutsLiver GutsIntestines BoneMarrow SackOfMeat ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BagOfMeat` | |
-| `BoneMarrow` | |
-| `GutsHeart` | |
-| `GutsIntestines` | |
-| `GutsLiver` | |
-| `RottenMeat` | |
-| `SackOfMeat` | |
 
 </details>
 
@@ -8195,59 +6198,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `disorder`](./Enums.md#enum-disorder)
 
 **Examples:**
 `[ Depression OCD PTSD Dyskinesia Empath ASRFight ASRFlight BloodFrenzy Shunned BrainDamage Anxiety Traumatophobia StockholmSyndrome ViolentOutbursts GamblingAddict Pacifist ImposterSyndrome Vegan Psychosis Fidgety Narcolepsy Paranoia EatingDisorder Hypomania Hypersomnia Triskaidekaphobia Tourettes SleepParalysis Bipolar Premonitions Brave Scatological Cannibal Pica Dyslexia Nudist Sociopathy SkillShare_Disorder Schizophrenia Lycanthropy Singleton Insomnia Phony ADHD ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `ADHD` | |
-| `ASRFight` | |
-| `ASRFlight` | |
-| `Anxiety` | |
-| `Bipolar` | |
-| `BloodFrenzy` | |
-| `BrainDamage` | |
-| `Brave` | |
-| `Cannibal` | |
-| `Depression` | |
-| `Dyskinesia` | |
-| `Dyslexia` | |
-| `EatingDisorder` | |
-| `Empath` | |
-| `Fidgety` | |
-| `GamblingAddict` | |
-| `Hypersomnia` | |
-| `Hypomania` | |
-| `ImposterSyndrome` | |
-| `Insomnia` | |
-| `Lycanthropy` | |
-| `Narcolepsy` | |
-| `Nudist` | |
-| `OCD` | |
-| `PTSD` | |
-| `Pacifist` | |
-| `Paranoia` | |
-| `Phony` | |
-| `Pica` | |
-| `Premonitions` | |
-| `Psychosis` | |
-| `Scatological` | |
-| `Schizophrenia` | |
-| `Shunned` | |
-| `Singleton` | |
-| `SkillShare_Disorder` | |
-| `SleepParalysis` | |
-| `Sociopathy` | |
-| `StockholmSyndrome` | |
-| `Tourettes` | |
-| `Traumatophobia` | |
-| `Triskaidekaphobia` | |
-| `Vegan` | |
-| `ViolentOutbursts` | |
 
 </details>
 
@@ -8324,18 +6279,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `animation`](./Enums.md#enum-animation)
 
 **Examples:**
 `[ TinyTumorA TinyTumorB TinyTumorC ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinyTumorA` | |
-| `TinyTumorB` | |
-| `TinyTumorC` | |
 
 </details>
 
@@ -8441,36 +6389,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `parasite`](./Enums.md#enum-parasite)
 
 **Examples:**
 `[ Tapeworm Pinworm Ringworm Heartworm BotflyLarva BrainMaggot Cordyceps CymothoaExigua EyeWorm Malaria NaegleriaFowleri Scabies BeanParasite EuhaplorchisCaliforniensis Roundworm SacculinaCarcini Lice Cooties Hookworm Parousworm TheTick ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BeanParasite` | |
-| `BotflyLarva` | |
-| `BrainMaggot` | |
-| `Cooties` | |
-| `Cordyceps` | |
-| `CymothoaExigua` | |
-| `EuhaplorchisCaliforniensis` | |
-| `EyeWorm` | |
-| `Heartworm` | |
-| `Hookworm` | |
-| `Lice` | |
-| `Malaria` | |
-| `NaegleriaFowleri` | |
-| `Parousworm` | |
-| `Pinworm` | |
-| `Ringworm` | |
-| `Roundworm` | |
-| `SacculinaCarcini` | |
-| `Scabies` | |
-| `Tapeworm` | |
-| `TheTick` | |
 
 </details>
 
@@ -8483,18 +6406,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ CatHideHat CatHideMask CatHideArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `CatHideArmor` | |
-| `CatHideHat` | |
-| `CatHideMask` | |
 
 </details>
 
@@ -8523,22 +6439,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ RoidRage SpeedBall BrainCandy DiscoBiscuit Clover Upper Percs ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BrainCandy` | |
-| `Clover` | |
-| `DiscoBiscuit` | |
-| `Percs` | |
-| `RoidRage` | |
-| `SpeedBall` | |
-| `Upper` | |
 
 </details>
 
@@ -8596,24 +6501,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ RatTail RatHeart RatBeezer RatHat RatMask RatNecklace HybridMask PetrifiedPinky RatBomb ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `HybridMask` | |
-| `PetrifiedPinky` | |
-| `RatBeezer` | |
-| `RatBomb` | |
-| `RatHat` | |
-| `RatHeart` | |
-| `RatMask` | |
-| `RatNecklace` | |
-| `RatTail` | |
 
 </details>
 
@@ -8626,18 +6518,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ RecycledHat RecycledMask RecycledArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `RecycledArmor` | |
-| `RecycledHat` | |
-| `RecycledMask` | |
 
 </details>
 
@@ -8650,35 +6535,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ MundaneStone MindStone TinyPebble SkillStone Neverstone HeavyRock Geode StoneOrbit StoneHelmet StoneHelmet StoneHelmet StoneHelmet Rocks Rocks Rocks Rocks Rocks BagOfRocks RockHat RockMask RockArmor RockyMask RockyHat RockyNecklace BigRockHat BigRockMask BigRockNecklace ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `Rocks` | |
-| `StoneHelmet` | |
-| `BagOfRocks` | |
-| `BigRockHat` | |
-| `BigRockMask` | |
-| `BigRockNecklace` | |
-| `Geode` | |
-| `HeavyRock` | |
-| `MindStone` | |
-| `MundaneStone` | |
-| `Neverstone` | |
-| `RockArmor` | |
-| `RockHat` | |
-| `RockMask` | |
-| `RockyHat` | |
-| `RockyMask` | |
-| `RockyNecklace` | |
-| `SkillStone` | |
-| `StoneOrbit` | |
-| `TinyPebble` | |
 
 </details>
 
@@ -8691,18 +6552,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ RottenHat RottenMask RottenArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `RottenArmor` | |
-| `RottenHat` | |
-| `RottenMask` | |
 
 </details>
 
@@ -8777,7 +6631,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 **Accepted Elements:**
 - `Array`
-  - `Integer` *(inner elements)*
+  - [Enum: `spells`](./Enums.md#enum-spells) *(each inner array element)*
 
 **Examples:**
 `[ [ T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Tank T3Spawn_Mage T3Spawn_Hunter T3Spawn_Thief T3Spawn_Medic T3Spawn_Fighter T3Spawn_Necromancer T3Spawn_Tinkerer T3Spawn_Butcher T3Spawn_Psychic T3Spawn_Druid T3Spawn_Jester ] [ T3Spawn_Colorless ] [ T3JoinFight ] ]`
@@ -8822,16 +6676,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererStick ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinkererStick` | |
 
 </details>
 
@@ -8844,16 +6693,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererBigStick ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinkererBigStick` | |
 
 </details>
 
@@ -8866,16 +6710,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererBiggestStick ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinkererBiggestStick` | |
 
 </details>
 
@@ -8888,16 +6727,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererLog ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `TinkererLog` | |
 
 </details>
 
@@ -8945,30 +6779,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ Technology FrankBolts RadarDish RoboArm HappyHelmet VisionPlugin OcularChip CerebralChip SpinalChip BionicHat BionicMask BionicArmor CyborgHat CyborgMask CyborgArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `BionicArmor` | |
-| `BionicHat` | |
-| `BionicMask` | |
-| `CerebralChip` | |
-| `CyborgArmor` | |
-| `CyborgHat` | |
-| `CyborgMask` | |
-| `FrankBolts` | |
-| `HappyHelmet` | |
-| `OcularChip` | |
-| `RadarDish` | |
-| `RoboArm` | |
-| `SpinalChip` | |
-| `Technology` | |
-| `VisionPlugin` | |
 
 </details>
 
@@ -8997,24 +6812,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererStick TinkererGlassShard PogoStick SmallBomb TinkererBattery Spitball JankAlloyHat JankAlloyMask JankAlloyArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `JankAlloyArmor` | |
-| `JankAlloyHat` | |
-| `JankAlloyMask` | |
-| `PogoStick` | |
-| `SmallBomb` | |
-| `Spitball` | |
-| `TinkererBattery` | |
-| `TinkererGlassShard` | |
-| `TinkererStick` | |
 
 </details>
 
@@ -9027,19 +6829,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ SmallBomb JankAlloyHat JankAlloyMask JankAlloyArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `JankAlloyArmor` | |
-| `JankAlloyHat` | |
-| `JankAlloyMask` | |
-| `SmallBomb` | |
 
 </details>
 
@@ -9052,24 +6846,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererBigStick StunGun MiniJetpack TinkererBottles TinkererSlingShot Bomb AlloyHat AlloyMask AlloyArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AlloyArmor` | |
-| `AlloyHat` | |
-| `AlloyMask` | |
-| `Bomb` | |
-| `MiniJetpack` | |
-| `StunGun` | |
-| `TinkererBigStick` | |
-| `TinkererBottles` | |
-| `TinkererSlingShot` | |
 
 </details>
 
@@ -9082,19 +6863,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ Bomb AlloyHat AlloyMask AlloyArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AlloyArmor` | |
-| `AlloyHat` | |
-| `AlloyMask` | |
-| `Bomb` | |
 
 </details>
 
@@ -9107,24 +6880,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererBiggestStick NailBoard BucketOfAcid TinkererTaser TinkererCrossbow Deathbot AdvancedAlloyHat AdvancedAlloyMask AdvancedAlloyArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AdvancedAlloyArmor` | |
-| `AdvancedAlloyHat` | |
-| `AdvancedAlloyMask` | |
-| `BucketOfAcid` | |
-| `Deathbot` | |
-| `NailBoard` | |
-| `TinkererBiggestStick` | |
-| `TinkererCrossbow` | |
-| `TinkererTaser` | |
 
 </details>
 
@@ -9137,24 +6897,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ TinkererLog Shotgun 22Rifle Uzi RocketLauncher TeslaCannon EliteAlloyHat EliteAlloyMask EliteAlloyArmor ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `22Rifle` | |
-| `EliteAlloyArmor` | |
-| `EliteAlloyHat` | |
-| `EliteAlloyMask` | |
-| `RocketLauncher` | |
-| `Shotgun` | |
-| `TeslaCannon` | |
-| `TinkererLog` | |
-| `Uzi` | |
 
 </details>
 
@@ -9167,22 +6914,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ special_comfortidol special_appealidol special_healthidol special_evolutionidol special_stimulationidol special_fightidol special_suppressoridol ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `special_appealidol` | |
-| `special_comfortidol` | |
-| `special_evolutionidol` | |
-| `special_fightidol` | |
-| `special_healthidol` | |
-| `special_stimulationidol` | |
-| `special_suppressoridol` | |
 
 </details>
 
@@ -9256,19 +6992,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- [Enum: `passive_pool`](./Enums.md#enum-passive-pool)
 
 **Examples:**
 `[ Furious PressurePoints LateBloomer ZenkaiBoost ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `Furious` | |
-| `LateBloomer` | |
-| `PressurePoints` | |
-| `ZenkaiBoost` | |
 
 </details>
 
@@ -9294,22 +7022,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ Shotgun Revolver Sniper 22Rifle RocketLauncher MomsKnife Grenade ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `22Rifle` | |
-| `Grenade` | |
-| `MomsKnife` | |
-| `Revolver` | |
-| `RocketLauncher` | |
-| `Shotgun` | |
-| `Sniper` | |
 
 </details>
 
@@ -9338,128 +7055,11 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
+- List of [Enum: `item`](./Enums.md#enum-item)
 
 **Examples:**
 `[ GlassShard RailSpikes NailBoard LilSlugger ChumBucket MeatHook Kebab Pipe ObsidianChunk SoulClaw Bomb BoneClub Molars Whetstone Hairspray Lighter SeedBombs Battery OldHose SixPack IceCubes DryIce Bottles Stick RubberFist BarbedPaw GnarledClaw Garbage Shotgun Revolver Sniper SmallBomb PogoStick Spitball MiniJetpack BigStick BiggestStick Log Taser Deathbot Crossbow BucketOfAcid StunGun SlingShot 22Rifle Uzi BagOfRocks Textbook BucketOfLard NailGun StrongMagnet SawBlades OddRemote ButterflyKnife BearTraps RustyRazor Bricks Mjolnir Blackjack BigSpring Grenade Pinwheel CrispPaper PurpleMushroom BlackMushroom RedMushroom PoisonVial PopCap CreepyPhoto FingerBone SpringBoard Shovel Trowel StaffOfFlame LacedNeedle BattleAxe TractorBeam RollOfPennies GrapplingHook Chainsaw BurningCoal RainbowRemote RubberBat RustedRod MeatCleaver SharpStraw BagOfGlass BagOfMeat BagOfGlitter BagOfStuff Pickaxe RocketLauncher MiniNuke FreyedWires OldExtinguisher TrashCanLid Kandarian Geode Rocks ExtraLimb GripTrainer ShoeHorn Cheese LipFiller EnergyDrink CatPaw FlowerMix PuzzleBox Crowbar FireFlower Bible CarBattery ModelingClay ]`
 
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `22Rifle` | |
-| `BagOfGlass` | |
-| `BagOfGlitter` | |
-| `BagOfMeat` | |
-| `BagOfRocks` | |
-| `BagOfStuff` | |
-| `BarbedPaw` | |
-| `Battery` | |
-| `BattleAxe` | |
-| `BearTraps` | |
-| `Bible` | |
-| `BigSpring` | |
-| `BigStick` | |
-| `BiggestStick` | |
-| `BlackMushroom` | |
-| `Blackjack` | |
-| `Bomb` | |
-| `BoneClub` | |
-| `Bottles` | |
-| `Bricks` | |
-| `BucketOfAcid` | |
-| `BucketOfLard` | |
-| `BurningCoal` | |
-| `ButterflyKnife` | |
-| `CarBattery` | |
-| `CatPaw` | |
-| `Chainsaw` | |
-| `Cheese` | |
-| `ChumBucket` | |
-| `CreepyPhoto` | |
-| `CrispPaper` | |
-| `Crossbow` | |
-| `Crowbar` | |
-| `Deathbot` | |
-| `DryIce` | |
-| `EnergyDrink` | |
-| `ExtraLimb` | |
-| `FingerBone` | |
-| `FireFlower` | |
-| `FlowerMix` | |
-| `FreyedWires` | |
-| `Garbage` | |
-| `Geode` | |
-| `GlassShard` | |
-| `GnarledClaw` | |
-| `GrapplingHook` | |
-| `Grenade` | |
-| `GripTrainer` | |
-| `Hairspray` | |
-| `IceCubes` | |
-| `Kandarian` | |
-| `Kebab` | |
-| `LacedNeedle` | |
-| `Lighter` | |
-| `LilSlugger` | |
-| `LipFiller` | |
-| `Log` | |
-| `MeatCleaver` | |
-| `MeatHook` | |
-| `MiniJetpack` | |
-| `MiniNuke` | |
-| `Mjolnir` | |
-| `ModelingClay` | |
-| `Molars` | |
-| `NailBoard` | |
-| `NailGun` | |
-| `ObsidianChunk` | |
-| `OddRemote` | |
-| `OldExtinguisher` | |
-| `OldHose` | |
-| `Pickaxe` | |
-| `Pinwheel` | |
-| `Pipe` | |
-| `PogoStick` | |
-| `PoisonVial` | |
-| `PopCap` | |
-| `PurpleMushroom` | |
-| `PuzzleBox` | |
-| `RailSpikes` | |
-| `RainbowRemote` | |
-| `RedMushroom` | |
-| `Revolver` | |
-| `RocketLauncher` | |
-| `Rocks` | |
-| `RollOfPennies` | |
-| `RubberBat` | |
-| `RubberFist` | |
-| `RustedRod` | |
-| `RustyRazor` | |
-| `SawBlades` | |
-| `SeedBombs` | |
-| `SharpStraw` | |
-| `ShoeHorn` | |
-| `Shotgun` | |
-| `Shovel` | |
-| `SixPack` | |
-| `SlingShot` | |
-| `SmallBomb` | |
-| `Sniper` | |
-| `SoulClaw` | |
-| `Spitball` | |
-| `SpringBoard` | |
-| `StaffOfFlame` | |
-| `Stick` | |
-| `StrongMagnet` | |
-| `StunGun` | |
-| `Taser` | |
-| `Textbook` | |
-| `TractorBeam` | |
-| `TrashCanLid` | |
-| `Trowel` | |
-| `Uzi` | |
-| `Whetstone` | |
 
 </details>
 
