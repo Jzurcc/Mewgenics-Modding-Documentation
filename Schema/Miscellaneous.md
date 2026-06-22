@@ -646,7 +646,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum |  | 18 |
 | [`complete_house_boss`](./Enums.md#enum-complete_house_boss) | Enum |  | 9 |
-| [`save_file_flag`](./Enums.md#enum-save_file_flag) | Enum |  | 9 |
+| [`save_file_flag`](./Enums.md#enum-save_file_flag) | String |  | 9 |
 | [`max_npc`](./Enums.md#enum-max_npc) | Enum |  | 7 |
 | [`adventure_unlock`](./Enums.md#enum-adventure_unlock) | Enum |  | 5 |
 | [`complete_checkmarks`](./Miscellaneous.md#context-complete_checkmarks) | Block |  | 1 |

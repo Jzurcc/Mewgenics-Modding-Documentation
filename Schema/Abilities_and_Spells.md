@@ -54,11 +54,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1785 |
 | `damage` | Number | The base damage properties of an attack. | 1446 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 358 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 352 |
-| [`knockback`](./Math_Equations.md) | Equation | The base physics pushing power (in tiles). | 254 |
+| [`knockback`](./Math_Equations.md) | Number | The base physics pushing power (in tiles). | 254 |
 | `ai_base_score` | Number | How highly the AI values using this ability. | 223 |
 | `heal` | Number | Restores health instead of dealing damage. | 122 |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 110 |
@@ -82,7 +83,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. | 2 |
 | `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). | 2 |
 | `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. | 2 |
-| [`raw_heal`](./Math_Equations.md) | Equation | Unmitigated, unscaled base numbers. | 2 |
+| [`raw_heal`](./Math_Equations.md) | String | Unmitigated, unscaled base numbers. | 2 |
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 2 |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. | 1 |
 | [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 1 |
@@ -112,13 +113,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type_icon`](./Strings.md#string-type_icon) | String |  | 283 |
 | `animate_name` | Boolean | If true, adds a visual pop/animation to the name text when cast. | 177 |
 | [`icon_shell_frame`](./Strings.md#string-icon_shell_frame) | String |  | 28 |
-| [`is_move`](./Enums.md#enum-is_move) | Enum |  | 20 |
-| [`ability_icon`](./Enums.md#enum-ability_icon) | Enum | The UI icon to display in the action bar. | 14 |
+| [`is_move`](./Enums.md#enum-is_move) | Boolean |  | 20 |
+| [`ability_icon`](./Enums.md#enum-ability_icon) | String | The UI icon to display in the action bar. | 14 |
 | [`tooltip_values`](./Arrays.md#array-tooltip_values) | Array |  | 9 |
 | [`icon_damage_display`](./Strings.md#string-icon_damage_display) | String |  | 8 |
-| [`icon_damage_display_eq`](./Math_Equations.md) | Equation |  | 7 |
+| [`icon_damage_display_eq`](./Math_Equations.md) | String |  | 7 |
 | `is_basic_attack` | Boolean |  | 4 |
-| [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | Enum |  | 3 |
+| [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | String |  | 3 |
 | `is_trinket` | Boolean |  | 3 |
 | `dont_visualize_ai` | Boolean |  | 2 |
 | [`icon_damage_display_suffix`](./Strings.md#string-icon_damage_display_suffix) | String |  | 2 |
@@ -138,6 +139,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[graphic_block]`](./Engine_Graphics.md#all-confirmed-graphic-block-values) | Block | A visual/animation configuration. See Engine_Graphics.md for the full schema. |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 1559 |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. | 488 |
 | [`projectile`](./Enums.md#enum-projectile) | Enum | References a projectile entity. | 228 |
@@ -210,7 +212,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `decelerate` | Number | Visual slowdown at the end of a movement. | 3 |
 | `delay_from_map_edge` | Boolean | Delays effect based on distance from the screen edge. | 3 |
 | `easing` | Number | Smoothing function for movement animations. | 3 |
-| [`fixed_jump_speed`](./Enums.md#enum-fixed_jump_speed) | Enum |  | 3 |
+| [`fixed_jump_speed`](./Enums.md#enum-fixed_jump_speed) | Number |  | 3 |
 | [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  | 3 |
 | [`lob_yoff`](./Enums.md#enum-lob_yoff) | Enum | Adjustments for arcing projectiles. | 3 |
 | `lock_orientation_during_dash` | Boolean | Prevents the sprite from flipping mid-dash. | 3 |
@@ -219,7 +221,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `always_play_animations` | Boolean | Bypasses speed-up/skip logic. | 2 |
 | `detatched_animation_cutoff` | Boolean |  | 2 |
 | `do_damage_immediately` | Boolean | Applies math before the animation actually hits. | 2 |
-| `jump_height_multiplier` | Number | Overrides for jump physics. | 2 |
+| `jump_height_multiplier` | Enum | Overrides for jump physics. | 2 |
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum |  | 2 |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  | 2 |
 | `max_throw_height` | Number |  | 2 |
@@ -233,7 +235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `use_hit_alts` | Boolean |  | 2 |
 | [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Visuals applied to the target receiving the effect. | 1 |
 | [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Distinct animation used when targeting a friendly unit. | 1 |
-| [`animate_name`](./Enums.md#enum-animate_name) | Enum | Animates the ability name text on cast. | 1 |
+| [`animate_name`](./Enums.md#enum-animate_name) | String | Animates the ability name text on cast. | 1 |
 | `apex_distance` | Number | Calculations for the peak of a jump/lob arc. | 1 |
 | [`apex_time`](./Enums.md#enum-apex_time) | Enum | Calculations for the peak of a jump/lob arc. | 1 |
 | `bypass_combatspeed` | Boolean |  | 1 |
@@ -270,6 +272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 59 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 27 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 15 |
@@ -300,7 +303,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `max_aoe` | Number | The maximum and minimum radius/length of the AoE. | 795 |
 | `min_range` | Number | The maximum and minimum distance required to cast. | 583 |
 | [`target_mode`](./Enums.md#enum-target_mode) | Enum | How the cursor operates (`tile`, `direction`, `none`). | 503 |
-| [`restrictions`](./Arrays.md#array-restrictions) | Array | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 463 |
+| [`restrictions`](./Arrays.md#array-restrictions) | Enum | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 463 |
 | [`aoe_mode`](./Enums.md#enum-aoe_mode) | Enum | The shape of the area (`standard`, `line`, `cross`, `square`, `custom`). | 432 |
 | [`knockback_mode`](./Enums.md#enum-knockback_mode) | Enum | How physics vectors apply (`character_to_tile`, `pull_to_character`, `zero`, `orientation`). | 265 |
 | `min_aoe` | Number | The maximum and minimum radius/length of the AoE. | 253 |
@@ -354,7 +357,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shuffle_tile_order` | Boolean | Randomizes the execution order of AoE tiles. | 4 |
 | `upgrade_straight_shot_to_boomerang` | Boolean | Makes the projectile return to caster. | 4 |
 | `dont_orient` | Boolean | Prevents the character from turning to face the target. | 3 |
-| `low_health_character_threshold` | Number | AI targeting threshold for seeking weak targets. | 3 |
+| `low_health_character_threshold` | Enum | AI targeting threshold for seeking weak targets. | 3 |
 | `randomize_target_within_range` | Number | Picks a random valid tile instead of the user's click. | 3 |
 | [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | Targets only tiles with this specific tag. | 3 |
 | `track_target` | Boolean | Projectile/Effect follows moving targets. | 3 |
@@ -417,7 +420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `move_points` | Number | Consumes movement points. | 59 |
 | `prime` | Number | Requires a "priming" turn before it fires. | 30 |
 | `allow_offmap_casts` | Boolean | Can be used while the character is hidden/removed from grid. | 22 |
-| `cant_cast` | Boolean | Explicitly disables casting (used for passive-triggered only abilities). | 18 |
+| `cant_cast` | Enum | Explicitly disables casting (used for passive-triggered only abilities). | 18 |
 | `must_be_consuming` | Boolean | Requires the character to be eating/holding something. | 17 |
 | `charge` | Number | Cooldown timers measured in turns. | 16 |
 | `must_not_be_consuming` | Boolean | Cannot be holding/eating an entity. | 14 |
@@ -435,7 +438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `must_not_be_a_summon` | Boolean | Summons/Familiars cannot cast this. | 7 |
 | `start_reloaded` | Boolean | Spawns with the ability pre-loaded. | 7 |
 | `must_be_first_action` | Boolean | Can only be used at the very start of the turn. | 4 |
-| [`enabled_formula`](./Math_Equations.md) | Equation | Mathematical string required to be >0 to cast. | 3 |
+| [`enabled_formula`](./Math_Equations.md) | Number | Mathematical string required to be >0 to cast. | 3 |
 | `must_be_first_nonmove_action` | Boolean | Can move first, but cannot use other abilities first. | 3 |
 | `must_have_weapon` | Boolean | Requires a weapon equipped in the item slot. | 2 |
 | `can_be_refreshed` | Boolean | Passives/Effects can reset this ability's cooldown. | 1 |
@@ -466,8 +469,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 200 |
-| `damage` | Number | The base damage properties of an attack. | 47 |
+| `damage` | Equation | The base damage properties of an attack. | 47 |
 | `piercing` | Boolean |  | 12 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 |
 | `cant_miss` | Boolean |  | 10 |
@@ -526,6 +530,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
 | [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
 | [`RevengeDamage`](./Abilities_and_Spells.md#context-revengedamage) | Block | Reaction trigger: Deals damage to the attacker when hit. | 1 |
 | [`StatusKillers`](./Abilities_and_Spells.md#context-statuskillers) | Block | Instantly kills the target if they possess the specified status effects. | 1 |
@@ -572,6 +577,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
@@ -591,6 +597,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -604,6 +611,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 41 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 2 |
@@ -662,6 +670,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
 | [`Conditional_FinishedSpawning`](./Abilities_and_Spells.md#context-conditional_finishedspawning) | Block | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 1 |
@@ -679,6 +688,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `damage` | Number | The base damage properties of an attack. | 32 |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 17 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 13 |
@@ -705,6 +715,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
 
@@ -721,6 +732,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[keyword_id]`](./Engine_Statuses.md#all-confirmed-keyword-id-values) | String | A Status or Keyword ID whose tooltip text is defined here. See Engine_Statuses.md for all IDs. |  |
 </details>
 
 ---
@@ -735,7 +747,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `distance` | Number | The distance in tiles to knock the target away. | 20 |
-| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 18 |
+| [`stacks`](./Math_Equations.md) | Number | Number of stacks or intensity to apply. | 18 |
 | `height` | Number |  | 2 |
 | `circular_variance` | Number |  | 1 |
 
@@ -752,6 +764,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -765,6 +778,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -778,10 +792,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 13 |
 | `force_contact` | Boolean | If true, enforces physical overlap. | 11 |
 | `instant` | Boolean |  | 8 |
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Enum | If true, treats the consumption as riding/mounting instead of eating. | 8 |
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 8 |
 | `wet` | Boolean |  | 8 |
 | `do_not_pop_corpse` | Boolean |  | 7 |
 | `drop_on_death` | Boolean |  | 7 |
@@ -804,6 +819,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 4 |
 
 </details>
@@ -819,6 +835,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -883,6 +900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -912,6 +930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 13 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
@@ -942,6 +961,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
@@ -959,6 +979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
 </details>
@@ -1022,6 +1043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
 | [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 3 |
 
 </details>
@@ -1037,7 +1059,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`formula`](./Math_Equations.md) | Enum | The math expression to evaluate. | 8 |
 
 </details>
 
@@ -1070,6 +1093,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 6 |
 
 </details>
@@ -1085,6 +1109,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1098,6 +1123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 
 </details>
@@ -1113,10 +1139,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`threshold_expr`](./Math_Equations.md) | Equation |  | 1 |
+| [`threshold_expr`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -1131,6 +1158,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 
 </details>
@@ -1146,6 +1174,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
@@ -1233,7 +1262,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 5 |
+| [`pool`](./Arrays.md#array-pool) | Enum | The item pool to draw the parasite from. | 5 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
 
 </details>
@@ -1317,6 +1346,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1391,6 +1421,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -1482,7 +1513,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 3 |
-| [`stacks`](./Math_Equations.md) | Equation | The number of times the nested effects block should be repeatedly executed. | 3 |
+| [`stacks`](./Math_Equations.md) | Enum | The number of times the nested effects block should be repeatedly executed. | 3 |
 
 </details>
 
@@ -1530,6 +1561,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 
 </details>
@@ -1545,6 +1577,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
 
 </details>
@@ -1560,6 +1593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1619,6 +1653,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 3 |
 
 </details>
@@ -1634,6 +1669,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -1647,6 +1683,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -1676,6 +1713,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1737,6 +1775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 
 </details>
@@ -1752,6 +1791,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1765,6 +1805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
@@ -1781,6 +1822,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1794,6 +1836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1807,6 +1850,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1820,6 +1864,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1833,6 +1878,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1846,6 +1892,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1859,6 +1906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`key`](./Enums.md#enum-key) | Enum |  | 2 |
 
 </details>
@@ -1874,6 +1922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -1901,6 +1950,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[global_modifier_id]`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 </details>
 
 ---
@@ -1992,6 +2042,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 
 </details>
@@ -2115,7 +2166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `stackable` | Boolean | If true, multiple instances of this trigger can stack. | 2 |
-| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 2 |
+| [`stacks`](./Math_Equations.md) | Enum | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -2130,6 +2181,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 2 |
 
 </details>
@@ -2278,6 +2330,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
 
 </details>
@@ -2293,6 +2346,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -2306,6 +2360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 
 </details>
@@ -2321,6 +2376,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 |
 
 </details>
@@ -2368,6 +2424,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -2381,6 +2438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 
@@ -2397,6 +2455,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 </details>
 
 ---
@@ -2410,6 +2469,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
@@ -2426,6 +2486,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
 
@@ -2442,6 +2503,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
 </details>
@@ -2736,6 +2798,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 
 </details>
@@ -2847,6 +2910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -2860,6 +2924,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -3011,6 +3076,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `damage` | Number | The base damage properties of an attack. | 1 |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 

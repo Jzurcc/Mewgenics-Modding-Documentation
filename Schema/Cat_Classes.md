@@ -47,6 +47,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[graphic_block]`](./Engine_Graphics.md#all-confirmed-graphic-block-values) | Block | A visual/animation configuration. See Engine_Graphics.md for the full schema. |  |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |
 | `palette` | Number |  | 13 |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 13 |

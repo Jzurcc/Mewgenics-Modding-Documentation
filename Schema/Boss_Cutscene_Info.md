@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`frame_label`](./Enums.md#enum-frame_label) | Enum |  | 67 |
-| [`name`](./Enums.md#enum-name) | Enum |  | 67 |
+| [`name`](./Enums.md#enum-name) | String |  | 67 |
 | [`quotes`](./Arrays.md#array-quotes) | Array |  | 36 |
 
 </details>

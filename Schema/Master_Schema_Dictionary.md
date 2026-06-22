@@ -52,7 +52,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `damage` | Number | The base damage properties of an attack. | 1446 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 358 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 352 |
-| [`knockback`](./Math_Equations.md) | Equation | The base physics pushing power (in tiles). | 254 |
+| [`knockback`](./Math_Equations.md) | Number | The base physics pushing power (in tiles). | 254 |
 | `ai_base_score` | Number | How highly the AI values using this ability. | 223 |
 | `heal` | Number | Restores health instead of dealing damage. | 122 |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 110 |
@@ -76,7 +76,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. | 2 |
 | `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). | 2 |
 | `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. | 2 |
-| [`raw_heal`](./Math_Equations.md) | Equation | Unmitigated, unscaled base numbers. | 2 |
+| [`raw_heal`](./Math_Equations.md) | String | Unmitigated, unscaled base numbers. | 2 |
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 2 |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. | 1 |
@@ -107,13 +107,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type_icon`](./Strings.md#string-type_icon) | String |  | 283 |
 | `animate_name` | Boolean | If true, adds a visual pop/animation to the name text when cast. | 177 |
 | [`icon_shell_frame`](./Strings.md#string-icon_shell_frame) | String |  | 28 |
-| [`is_move`](./Enums.md#enum-is_move) | Enum |  | 20 |
-| [`ability_icon`](./Enums.md#enum-ability_icon) | Enum | The UI icon to display in the action bar. | 14 |
+| [`is_move`](./Enums.md#enum-is_move) | Boolean |  | 20 |
+| [`ability_icon`](./Enums.md#enum-ability_icon) | String | The UI icon to display in the action bar. | 14 |
 | [`tooltip_values`](./Arrays.md#array-tooltip_values) | Array |  | 9 |
 | [`icon_damage_display`](./Strings.md#string-icon_damage_display) | String |  | 8 |
-| [`icon_damage_display_eq`](./Math_Equations.md) | Equation |  | 7 |
+| [`icon_damage_display_eq`](./Math_Equations.md) | String |  | 7 |
 | `is_basic_attack` | Boolean |  | 4 |
-| [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | Enum |  | 3 |
+| [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | String |  | 3 |
 | `is_trinket` | Boolean |  | 3 |
 | `dont_visualize_ai` | Boolean |  | 2 |
 | [`icon_damage_display_suffix`](./Strings.md#string-icon_damage_display_suffix) | String |  | 2 |
@@ -205,7 +205,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `decelerate` | Number | Visual slowdown at the end of a movement. | 3 |
 | `delay_from_map_edge` | Boolean | Delays effect based on distance from the screen edge. | 3 |
 | `easing` | Number | Smoothing function for movement animations. | 3 |
-| [`fixed_jump_speed`](./Enums.md#enum-fixed_jump_speed) | Enum |  | 3 |
+| [`fixed_jump_speed`](./Enums.md#enum-fixed_jump_speed) | Number |  | 3 |
 | [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  | 3 |
 | [`lob_yoff`](./Enums.md#enum-lob_yoff) | Enum | Adjustments for arcing projectiles. | 3 |
 | `lock_orientation_during_dash` | Boolean | Prevents the sprite from flipping mid-dash. | 3 |
@@ -214,7 +214,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `always_play_animations` | Boolean | Bypasses speed-up/skip logic. | 2 |
 | `detatched_animation_cutoff` | Boolean |  | 2 |
 | `do_damage_immediately` | Boolean | Applies math before the animation actually hits. | 2 |
-| `jump_height_multiplier` | Number | Overrides for jump physics. | 2 |
+| `jump_height_multiplier` | Enum | Overrides for jump physics. | 2 |
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum |  | 2 |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  | 2 |
 | `max_throw_height` | Number |  | 2 |
@@ -228,7 +228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `use_hit_alts` | Boolean |  | 2 |
 | [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Visuals applied to the target receiving the effect. | 1 |
 | [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Distinct animation used when targeting a friendly unit. | 1 |
-| [`animate_name`](./Enums.md#enum-animate_name) | Enum | Animates the ability name text on cast. | 1 |
+| [`animate_name`](./Enums.md#enum-animate_name) | String | Animates the ability name text on cast. | 1 |
 | `apex_distance` | Number | Calculations for the peak of a jump/lob arc. | 1 |
 | [`apex_time`](./Enums.md#enum-apex_time) | Enum | Calculations for the peak of a jump/lob arc. | 1 |
 | `bypass_combatspeed` | Boolean |  | 1 |
@@ -266,7 +266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 102 |
-| [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 89 |
+| [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 89 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 76 |
 | `IgnoreSelf` | Number | Applies or references the 'IgnoreSelf' effect/state. | 75 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 70 |
@@ -274,7 +274,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 62 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 59 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 54 |
-| [`Shield`](./Math_Equations.md) | Equation | Applies or references the 'Shield' effect/state. | 49 |
+| [`Shield`](./Math_Equations.md) | Number | Applies or references the 'Shield' effect/state. | 49 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 44 |
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 38 |
 | [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 35 |
@@ -286,20 +286,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 28 |
 | [`TransformAbility`](./Enums.md#enum-transformability) | Enum | Applies or references the 'TransformAbility' effect/state. | 28 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 27 |
-| [`ManaGain`](./Math_Equations.md) | Equation | Applies or references the 'ManaGain' effect/state. | 26 |
+| [`ManaGain`](./Math_Equations.md) | Number | Applies or references the 'ManaGain' effect/state. | 26 |
 | [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 25 |
 | `Slow` | Number | Applies or references the 'Slow' effect/state. | 25 |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 23 |
 | `Weakness` | Number | Applies or references the 'Weakness' effect/state. | 23 |
-| [`Blind`](./Arrays.md#array-blind) | Array | Applies or references the 'Blind' effect/state. | 22 |
+| [`Blind`](./Arrays.md#array-blind) | Number | Applies or references the 'Blind' effect/state. | 22 |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 22 |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 22 |
-| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array | Applies or references the 'ConstitutionUp' effect/state. | 21 |
+| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Number | Applies or references the 'ConstitutionUp' effect/state. | 21 |
 | [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 21 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 21 |
 | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 21 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies or references the 'VisualFXTile' effect/state. | 21 |
-| [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 20 |
+| [`Charmed`](./Arrays.md#array-charmed) | Number | Applies or references the 'Charmed' effect/state. | 20 |
 | `Sleep` | Number | Applies or references the 'Sleep' effect/state. | 20 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 20 |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 19 |
@@ -308,7 +308,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Block | Displaces the target vertically and horizontally away from the source. | 17 |
 | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 17 |
 | `Freeze` | Number | Applies or references the 'Freeze' effect/state. | 16 |
-| `OverrideKnockbackDamage` | Number | Applies or references the 'OverrideKnockbackDamage' effect/state. | 16 |
+| `OverrideKnockbackDamage` | Enum | Applies or references the 'OverrideKnockbackDamage' effect/state. | 16 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 15 |
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 15 |
 | [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Applies or references the 'ChangeCatClass' effect/state. | 14 |
@@ -322,7 +322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 13 |
 | `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 13 |
 | `Leeches` | Number | Applies or references the 'Leeches' effect/state. | 13 |
-| [`Petrify`](./Arrays.md#array-petrify) | Array | Applies or references the 'Petrify' effect/state. | 13 |
+| [`Petrify`](./Arrays.md#array-petrify) | Number | Applies or references the 'Petrify' effect/state. | 13 |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 13 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 13 |
 | `Displace` | Number | Applies or references the 'Displace' effect/state. | 12 |
@@ -375,7 +375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 6 |
 | `RandomInjury` | Number | Applies or references the 'RandomInjury' effect/state. | 6 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 6 |
-| [`ScatterHeldCoin`](./Arrays.md#array-scatterheldcoin) | Array | Applies or references the 'ScatterHeldCoin' effect/state. | 6 |
+| [`ScatterHeldCoin`](./Arrays.md#array-scatterheldcoin) | Number | Applies or references the 'ScatterHeldCoin' effect/state. | 6 |
 | `SetDistanceDisplace` | Number | Applies or references the 'SetDistanceDisplace' effect/state. | 6 |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 6 |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 6 |
@@ -397,7 +397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 5 |
 | `HitExplosion` | Number | Applies or references the 'HitExplosion' effect/state. | 5 |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 5 |
-| [`KnockbackDirectionIsFacingDirection`](./Enums.md#enum-knockbackdirectionisfacingdirection) | Enum | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. | 5 |
+| [`KnockbackDirectionIsFacingDirection`](./Enums.md#enum-knockbackdirectionisfacingdirection) | Number | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. | 5 |
 | `MonkStanceSwitch` | Number | Applies or references the 'MonkStanceSwitch' effect/state. | 5 |
 | `MovementUp` | Number | Applies or references the 'MovementUp' effect/state. | 5 |
 | [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | Spawns a specific physics/item object upon impact. | 5 |
@@ -416,7 +416,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Webbed` | Number | Applies or references the 'Webbed' effect/state. | 5 |
 | [`ApplyToConsumed`](./Abilities_and_Spells.md#context-applytoconsumed) | Block | Redirects the nested effects to apply to the entity that just consumed this object. | 4 |
 | [`ArcLightning`](./Abilities_and_Spells.md#context-arclightning) | Block | Executes a chain-lightning logic block that bounces between targets. | 4 |
-| [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array | Applies or references the 'BurgleCoin' effect/state. | 4 |
+| [`BurgleCoin`](./Arrays.md#array-burglecoin) | Number | Applies or references the 'BurgleCoin' effect/state. | 4 |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 4 |
 | [`Conditional_Familiar`](./Abilities_and_Spells.md#context-conditional_familiar) | Block | Conditional trigger: Executes nested logic if the target is a familiar. | 4 |
 | [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Applies or references the 'EnableWeather' effect/state. | 4 |
@@ -429,7 +429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Reanimate` | Number | Applies or references the 'Reanimate' effect/state. | 4 |
 | `RemoveActPoints` | Number | Applies or references the 'RemoveActPoints' effect/state. | 4 |
 | `SendRock` | Number | Applies or references the 'SendRock' effect/state. | 4 |
-| [`SpecificInjury`](./Math_Equations.md) | Equation | Applies or references the 'SpecificInjury' effect/state. | 4 |
+| [`SpecificInjury`](./Math_Equations.md) | Enum | Applies or references the 'SpecificInjury' effect/state. | 4 |
 | [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic) | Block | Changes the background music track or layer during combat. | 4 |
 | [`TakeBonusTurnWithStatus`](./Abilities_and_Spells.md#context-takebonusturnwithstatus) | Block | Grants the character an immediate extra turn while afflicted with specific statuses. | 4 |
 | [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication) | Block | Delays the nested effects by a specified amount of real-time seconds. | 4 |
@@ -463,7 +463,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 3 |
 | `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. | 3 |
 | `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 3 |
-| [`PoisonLace`](./Math_Equations.md) | Equation | Applies or references the 'PoisonLace' effect/state. | 3 |
+| [`PoisonLace`](./Math_Equations.md) | Number | Applies or references the 'PoisonLace' effect/state. | 3 |
 | `PullSourceToTarget` | Number | Applies or references the 'PullSourceToTarget' effect/state. | 3 |
 | `Reflect` | Number | Applies or references the 'Reflect' effect/state. | 3 |
 | `RefreshWeaponAbility` | Number | Applies or references the 'RefreshWeaponAbility' effect/state. | 3 |
@@ -475,8 +475,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnNeutralWebTrapOnMiss` | Number | Applies or references the 'SpawnNeutralWebTrapOnMiss' effect/state. | 3 |
 | `SpellDamageUp` | Number | Applies or references the 'SpellDamageUp' effect/state. | 3 |
 | `Tangled` | Number | Applies a tangled/ensnared status effect, often modifying visual sprites. | 3 |
-| `TempSpeedUp` | Number | Applies or references the 'TempSpeedUp' effect/state. | 3 |
-| [`TempStrengthUp`](./Math_Equations.md) | Equation | Applies or references the 'TempStrengthUp' effect/state. | 3 |
+| `TempSpeedUp` | Enum | Applies or references the 'TempSpeedUp' effect/state. | 3 |
+| [`TempStrengthUp`](./Math_Equations.md) | Enum | Applies or references the 'TempStrengthUp' effect/state. | 3 |
 | `VaporizeTarget` | Number | Applies or references the 'VaporizeTarget' effect/state. | 3 |
 | `AddSpiritBombCharges` | Number | Applies or references the 'AddSpiritBombCharges' effect/state. | 2 |
 | [`BodyGuard`](./Abilities_and_Spells.md#context-bodyguard) | Block | Protects an ally by intercepting attacks directed at them. | 2 |
@@ -545,20 +545,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RepairWeaponCondition` | Number | Applies or references the 'RepairWeaponCondition' effect/state. | 2 |
 | `ResetArmorShield` | Number | Applies or references the 'ResetArmorShield' effect/state. | 2 |
 | `ScrambleEverything` | Number | Applies or references the 'ScrambleEverything' effect/state. | 2 |
-| [`SelfStun`](./Arrays.md#array-selfstun) | Array | Applies or references the 'SelfStun' effect/state. | 2 |
+| [`SelfStun`](./Arrays.md#array-selfstun) | Number | Applies or references the 'SelfStun' effect/state. | 2 |
 | `SetShield` | Number | Applies or references the 'SetShield' effect/state. | 2 |
 | `Shatter` | Number | Applies or references the 'Shatter' effect/state. | 2 |
 | `SignalFinalBossShieldBroke` | Number | Applies or references the 'SignalFinalBossShieldBroke' effect/state. | 2 |
 | [`SizeScale`](./Enums.md#enum-sizescale) | Enum | Applies or references the 'SizeScale' effect/state. | 2 |
 | `SmartMetronome` | Number | Executes a 'smart' random ability that aims to be beneficial based on context. | 2 |
-| [`SpawnCoinAnywhere`](./Arrays.md#array-spawncoinanywhere) | Array | Applies or references the 'SpawnCoinAnywhere' effect/state. | 2 |
+| [`SpawnCoinAnywhere`](./Arrays.md#array-spawncoinanywhere) | Number | Applies or references the 'SpawnCoinAnywhere' effect/state. | 2 |
 | [`SpawnFlames`](./Arrays.md#array-spawnflames) | Array | Applies or references the 'SpawnFlames' effect/state. | 2 |
 | `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 2 |
 | `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 2 |
 | `SwallowSmallCharacter` | Number | Applies or references the 'SwallowSmallCharacter' effect/state. | 2 |
 | [`TakeBonusTurnWithAIControl`](./Abilities_and_Spells.md#context-takebonusturnwithaicontrol) | Block | Grants the character an immediate extra turn, but forces the AI to control them during it. | 2 |
 | `TempCritChanceUp` | Number | Applies or references the 'TempCritChanceUp' effect/state. | 2 |
-| [`TempDexterityUp`](./Math_Equations.md) | Equation | Applies or references the 'TempDexterityUp' effect/state. | 2 |
+| [`TempDexterityUp`](./Math_Equations.md) | Enum | Applies or references the 'TempDexterityUp' effect/state. | 2 |
 | `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. | 2 |
 | `TempMovement` | Number | Applies or references the 'TempMovement' effect/state. | 2 |
 | `TempSpellDamageUp` | Number | Applies or references the 'TempSpellDamageUp' effect/state. | 2 |
@@ -589,7 +589,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `CharmedFacingForceAttack` | Number | Applies or references the 'CharmedFacingForceAttack' effect/state. | 1 |
 | `ClearFinalBossBattlefield` | Number | Applies or references the 'ClearFinalBossBattlefield' effect/state. | 1 |
 | `CloneWeaponTemp` | Number | Applies or references the 'CloneWeaponTemp' effect/state. | 1 |
-| [`CoinTossBounce`](./Math_Equations.md) | Equation | Applies or references the 'CoinTossBounce' effect/state. | 1 |
+| [`CoinTossBounce`](./Math_Equations.md) | Enum | Applies or references the 'CoinTossBounce' effect/state. | 1 |
 | `Conditional_AbilityTargetIsSelf` | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 | [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#context-conditional_activeweather_any) | Block | Conditional trigger: Executes nested logic if the current map weather matches any in the list. | 1 |
 | [`Conditional_Backstab`](./Abilities_and_Spells.md#context-conditional_backstab) | Block | Conditional trigger: Executes nested logic if the attacker is positioned behind the target. | 1 |
@@ -794,7 +794,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `max_aoe` | Number | The maximum and minimum radius/length of the AoE. | 795 |
 | `min_range` | Number | The maximum and minimum distance required to cast. | 583 |
 | [`target_mode`](./Enums.md#enum-target_mode) | Enum | How the cursor operates (`tile`, `direction`, `none`). | 503 |
-| [`restrictions`](./Arrays.md#array-restrictions) | Array | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 463 |
+| [`restrictions`](./Arrays.md#array-restrictions) | Enum | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 463 |
 | [`aoe_mode`](./Enums.md#enum-aoe_mode) | Enum | The shape of the area (`standard`, `line`, `cross`, `square`, `custom`). | 432 |
 | [`knockback_mode`](./Enums.md#enum-knockback_mode) | Enum | How physics vectors apply (`character_to_tile`, `pull_to_character`, `zero`, `orientation`). | 265 |
 | `min_aoe` | Number | The maximum and minimum radius/length of the AoE. | 253 |
@@ -848,7 +848,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shuffle_tile_order` | Boolean | Randomizes the execution order of AoE tiles. | 4 |
 | `upgrade_straight_shot_to_boomerang` | Boolean | Makes the projectile return to caster. | 4 |
 | `dont_orient` | Boolean | Prevents the character from turning to face the target. | 3 |
-| `low_health_character_threshold` | Number | AI targeting threshold for seeking weak targets. | 3 |
+| `low_health_character_threshold` | Enum | AI targeting threshold for seeking weak targets. | 3 |
 | `randomize_target_within_range` | Number | Picks a random valid tile instead of the user's click. | 3 |
 | [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | Targets only tiles with this specific tag. | 3 |
 | `track_target` | Boolean | Projectile/Effect follows moving targets. | 3 |
@@ -911,7 +911,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `move_points` | Number | Consumes movement points. | 59 |
 | `prime` | Number | Requires a "priming" turn before it fires. | 30 |
 | `allow_offmap_casts` | Boolean | Can be used while the character is hidden/removed from grid. | 22 |
-| `cant_cast` | Boolean | Explicitly disables casting (used for passive-triggered only abilities). | 18 |
+| `cant_cast` | Enum | Explicitly disables casting (used for passive-triggered only abilities). | 18 |
 | `must_be_consuming` | Boolean | Requires the character to be eating/holding something. | 17 |
 | `charge` | Number | Cooldown timers measured in turns. | 16 |
 | `must_not_be_consuming` | Boolean | Cannot be holding/eating an entity. | 14 |
@@ -929,7 +929,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `must_not_be_a_summon` | Boolean | Summons/Familiars cannot cast this. | 7 |
 | `start_reloaded` | Boolean | Spawns with the ability pre-loaded. | 7 |
 | `must_be_first_action` | Boolean | Can only be used at the very start of the turn. | 4 |
-| [`enabled_formula`](./Math_Equations.md) | Equation | Mathematical string required to be >0 to cast. | 3 |
+| [`enabled_formula`](./Math_Equations.md) | Number | Mathematical string required to be >0 to cast. | 3 |
 | `must_be_first_nonmove_action` | Boolean | Can move first, but cannot use other abilities first. | 3 |
 | `must_have_weapon` | Boolean | Requires a weapon equipped in the item slot. | 2 |
 | `can_be_refreshed` | Boolean | Passives/Effects can reset this ability's cooldown. | 1 |
@@ -961,7 +961,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 200 |
-| `damage` | Number | The base damage properties of an attack. | 47 |
+| `damage` | Equation | The base damage properties of an attack. | 47 |
 | `piercing` | Boolean |  | 12 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 |
 | `cant_miss` | Boolean |  | 10 |
@@ -1090,7 +1090,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `XIsConsumedCharacterMaxHP` | Number | Applies or references the 'XIsConsumedCharacterMaxHP' effect/state. | 1 |
 | `XIsCountDeaths` | Number | Applies or references the 'XIsCountDeaths' effect/state. | 1 |
 | [`XIsCountStatusStacks`](./Enums.md#enum-xiscountstatusstacks) | Enum | Applies or references the 'XIsCountStatusStacks' effect/state. | 1 |
-| [`XIsFormulaLockedUntilComplete`](./Math_Equations.md) | Equation | Applies or references the 'XIsFormulaLockedUntilComplete' effect/state. | 1 |
+| [`XIsFormulaLockedUntilComplete`](./Math_Equations.md) | Enum | Applies or references the 'XIsFormulaLockedUntilComplete' effect/state. | 1 |
 | `XIsIncreaseEachTurn` | Number | Applies or references the 'XIsIncreaseEachTurn' effect/state. | 1 |
 | `XIsRampAndReset` | Number | Applies or references the 'XIsRampAndReset' effect/state. | 1 |
 | `XIsRecycleCostReduction` | Number | Applies or references the 'XIsRecycleCostReduction' effect/state. | 1 |
@@ -1222,7 +1222,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 4 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 4 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 4 |
-| [`AddWeaponAux`](./Math_Equations.md) | Equation | Applies or references the 'AddWeaponAux' effect/state. | 3 |
+| [`AddWeaponAux`](./Math_Equations.md) | Number | Applies or references the 'AddWeaponAux' effect/state. | 3 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 3 |
 | `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. | 3 |
 | [`Craft`](./Abilities_and_Spells.md#context-craft) | Block | Synthesizes or spawns a new item from a specific pool. | 3 |
@@ -1248,7 +1248,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 1 |
 | `MoveQuivered` | Number | Applies or references the 'MoveQuivered' effect/state. | 1 |
 | `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 1 |
-| [`SpecificInjury`](./Math_Equations.md) | Equation | Applies or references the 'SpecificInjury' effect/state. | 1 |
+| [`SpecificInjury`](./Math_Equations.md) | Enum | Applies or references the 'SpecificInjury' effect/state. | 1 |
 | `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 1 |
 | `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 1 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
@@ -1479,7 +1479,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `distance` | Number | The distance in tiles to knock the target away. | 20 |
-| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 18 |
+| [`stacks`](./Math_Equations.md) | Number | Number of stacks or intensity to apply. | 18 |
 | `height` | Number |  | 2 |
 | `circular_variance` | Number |  | 1 |
 
@@ -1604,7 +1604,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 13 |
 | `force_contact` | Boolean | If true, enforces physical overlap. | 11 |
 | `instant` | Boolean |  | 8 |
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Enum | If true, treats the consumption as riding/mounting instead of eating. | 8 |
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 8 |
 | `wet` | Boolean |  | 8 |
 | `do_not_pop_corpse` | Boolean |  | 7 |
 | `drop_on_death` | Boolean |  | 7 |
@@ -1926,13 +1926,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
-| [`Burn`](./Math_Equations.md) | Equation | Applies or references the 'Burn' effect/state. | 2 |
+| [`formula`](./Math_Equations.md) | Enum | The math expression to evaluate. | 8 |
+| [`Burn`](./Math_Equations.md) | Enum | Applies or references the 'Burn' effect/state. | 2 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 2 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 2 |
 | `Freeze` | Number | Applies or references the 'Freeze' effect/state. | 1 |
-| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | Applies or references the 'OverrideKnockbackDamage' effect/state. | 1 |
-| [`Slow`](./Math_Equations.md) | Equation | Applies or references the 'Slow' effect/state. | 1 |
+| [`OverrideKnockbackDamage`](./Math_Equations.md) | Enum | Applies or references the 'OverrideKnockbackDamage' effect/state. | 1 |
+| [`Slow`](./Math_Equations.md) | Enum | Applies or references the 'Slow' effect/state. | 1 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 1 |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 1 |
 
@@ -2039,7 +2039,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |
 | `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 1 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 1 |
-| [`threshold_expr`](./Math_Equations.md) | Equation |  | 1 |
+| [`threshold_expr`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2166,7 +2166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 5 |
+| [`pool`](./Arrays.md#array-pool) | Enum | The item pool to draw the parasite from. | 5 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
 
 </details>
@@ -2425,7 +2425,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 3 |
-| [`stacks`](./Math_Equations.md) | Equation | The number of times the nested effects block should be repeatedly executed. | 3 |
+| [`stacks`](./Math_Equations.md) | Enum | The number of times the nested effects block should be repeatedly executed. | 3 |
 
 </details>
 
@@ -2861,7 +2861,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. | 2 |
-| [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 1 |
+| [`BonusDamage`](./Math_Equations.md) | Enum | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 1 |
 
 </details>
@@ -3108,7 +3108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `stackable` | Boolean | If true, multiple instances of this trigger can stack. | 2 |
-| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 2 |
+| [`stacks`](./Math_Equations.md) | Enum | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -4070,7 +4070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`frame_label`](./Enums.md#enum-frame_label) | Enum |  | 67 |
-| [`name`](./Enums.md#enum-name) | Enum |  | 67 |
+| [`name`](./Enums.md#enum-name) | String |  | 67 |
 | [`quotes`](./Arrays.md#array-quotes) | Array |  | 36 |
 
 </details>
@@ -4364,7 +4364,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `Knockback` | Number |  | 6 |
-| [`Bleed`](./Arrays.md#array-bleed) | Array |  | 5 |
+| [`Bleed`](./Arrays.md#array-bleed) | Number |  | 5 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum |  | 5 |
 | [`Fear`](./Arrays.md#array-fear) | Array |  | 5 |
 | `Poison` | Number |  | 5 |
@@ -5028,7 +5028,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array |  | 6 |
+| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Number |  | 6 |
 
 </details>
 
@@ -5761,7 +5761,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 8 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 8 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 8 |
 | `cha` | Number |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
@@ -6007,7 +6007,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 5 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 5 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 5 |
 | `spd` | Number |  | 2 |
 | `cha` | Number |  | 1 |
@@ -6026,7 +6026,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 5 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 5 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 4 |
 | `cha` | Number |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
@@ -7165,7 +7165,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 6 |
 | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies or references the 'InnateElement' effect/state. | 6 |
 | `KaijuKnockbackImmune` | Number | Applies or references the 'KaijuKnockbackImmune' effect/state. | 6 |
-| [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource) | Block | AI Movement: Closes distance on the last source of damage. | 6 |
+| [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource) | Enum | AI Movement: Closes distance on the last source of damage. | 6 |
 | `OverrideMaxHealth` | Number | Applies or references the 'OverrideMaxHealth' effect/state. | 6 |
 | [`SecurityBotProtect`](./Characters_and_Bosses.md#context-securitybotprotect) | Block | AI Logic: Guarding behavior for Security Bot units. | 6 |
 | [`TagGreed`](./Enums.md#enum-taggreed) | Enum | Applies or references the 'TagGreed' effect/state. | 6 |
@@ -7206,7 +7206,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ArmorPickup`](./Characters_and_Bosses.md#context-armorpickup) | Block | Pickup Logic: Defines what happens when an armor item is collected. | 3 |
 | [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Enum | Applies or references the 'BaseStatMultiply' effect/state. | 3 |
 | [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Applies or references the 'BonusTurnPattern' effect/state. | 3 |
-| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array | Applies or references the 'CanMutateTo' effect/state. | 3 |
+| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Enum | Applies or references the 'CanMutateTo' effect/state. | 3 |
 | [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | Applies or references the 'DigestDeadBodies' effect/state. | 3 |
 | `FaceShield` | Number | Applies or references the 'FaceShield' effect/state. | 3 |
 | [`FormChangeHealthThreshold`](./Characters_and_Bosses.md#context-formchangehealththreshold) | Block | Logic: Changes form when health crosses a threshold. | 3 |
@@ -7240,7 +7240,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | Applies or references the 'ChangeTileOnDeath' effect/state. | 2 |
 | [`CherubimReaction`](./Characters_and_Bosses.md#context-cherubimreaction) | Block | Reaction: Custom reaction triggers for Cherubim enemies. | 2 |
 | `DemonicGlyphFrames` | Number | Applies or references the 'DemonicGlyphFrames' effect/state. | 2 |
-| [`DiesToElement`](./Characters_and_Bosses.md#context-diestoelement) | Block | Vulnerability: Character dies instantly if hit by this element. | 2 |
+| [`DiesToElement`](./Characters_and_Bosses.md#context-diestoelement) | Enum | Vulnerability: Character dies instantly if hit by this element. | 2 |
 | `DissuadeInstakills` | Number | Applies or references the 'DissuadeInstakills' effect/state. | 2 |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 2 |
 | `ExpireOnSpawnerTurnEnd` | Number | Applies or references the 'ExpireOnSpawnerTurnEnd' effect/state. | 2 |
@@ -7476,7 +7476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Arrays.md#array-tag) | Array | Specific entity tag required. | 399 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 280 |
 | `movement` | Number |  | 278 |
-| `corpse_health` | Number |  | 195 |
+| `corpse_health` | Enum |  | 195 |
 | `inherit_faction` | Boolean |  | 115 |
 | `dispersed_bonus_turns` | Number |  | 104 |
 | `base_mana_regen` | Number |  | 90 |
@@ -7491,7 +7491,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mana` | Number | Base maximum mana pool. | 50 |
 | `flying` | Boolean |  | 47 |
 | [`banned_elite_buffs`](./Arrays.md#array-banned_elite_buffs) | Array |  | 45 |
-| [`hidden_tag`](./Arrays.md#array-hidden_tag) | Array |  | 38 |
+| [`hidden_tag`](./Arrays.md#array-hidden_tag) | Enum |  | 38 |
 | `weak_threshold` | Number |  | 32 |
 | `knockback_immune` | Boolean |  | 25 |
 | `can_be_champion` | Boolean |  | 20 |
@@ -7502,7 +7502,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`elements`](./Arrays.md#array-elements) | Array |  | 16 |
 | `inanimate` | Boolean |  | 16 |
 | `disperse_main_turns` | Boolean |  | 15 |
-| [`hidden_tags`](./Arrays.md#array-hidden_tags) | Array |  | 14 |
+| [`hidden_tags`](./Arrays.md#array-hidden_tags) | Enum |  | 14 |
 | [`tags`](./Arrays.md#array-tags) | Array |  | 14 |
 | `evenly_dispersed_bonus_turns` | Number |  | 13 |
 | `exclude_from_hallucinate` | Boolean |  | 13 |
@@ -8399,12 +8399,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 12 |
-| [`threshold`](./Enums.md#enum-threshold) | Enum |  | 11 |
+| [`threshold`](./Enums.md#enum-threshold) | Number |  | 11 |
 | `even_if_stunned` | Boolean |  | 6 |
 | `immediate` | Boolean |  | 5 |
 | `use_ai` | Boolean |  | 2 |
 | `also_use_if_buddy_is_dead` | Boolean |  | 1 |
-| [`threshold_min`](./Math_Equations.md) | Equation |  | 1 |
+| [`threshold_min`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -9181,7 +9181,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`form_above`](./Enums.md#enum-form_above) | Enum |  | 3 |
 | [`form_below`](./Enums.md#enum-form_below) | Enum |  | 3 |
-| [`threshold`](./Math_Equations.md) | Equation |  | 3 |
+| [`threshold`](./Math_Equations.md) | Enum |  | 3 |
 | `count_shield` | Boolean |  | 1 |
 
 </details>
@@ -9908,7 +9908,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 2 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | String |  | 1 |
 
 </details>
 
@@ -11512,7 +11512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`clipname`](./Enums.md#enum-clipname) | Enum |  | 1 |
+| [`clipname`](./Enums.md#enum-clipname) | String |  | 1 |
 | [`thresholds`](./Arrays.md#array-thresholds) | Array |  | 1 |
 
 </details>
@@ -12615,7 +12615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 
@@ -12636,7 +12636,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 
@@ -12657,7 +12657,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 
@@ -12678,7 +12678,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 
@@ -12699,7 +12699,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 
@@ -12720,7 +12720,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
 | `uifloaters_offset` | Number |  | 1 |
 
@@ -14442,8 +14442,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`color`](./Arrays.md#array-color) | Array |  | 26 |
-| [`right_icon`](./Enums.md#enum-right_icon) | Enum |  | 10 |
-| [`back_icon`](./Enums.md#enum-back_icon) | Enum |  | 8 |
+| [`right_icon`](./Enums.md#enum-right_icon) | String |  | 10 |
+| [`back_icon`](./Enums.md#enum-back_icon) | String |  | 8 |
 | `scale` | Number |  | 4 |
 | [`outline_color`](./Enums.md#enum-outline_color) | Enum |  | 2 |
 | [`suffix`](./Strings.md#string-suffix) | String |  | 1 |
@@ -14865,7 +14865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `distance_to_character` | Number |  | 55 |
 | `distance_to_enemy` | Number |  | 55 |
 | `face_closest_enemy` | Number |  | 55 |
-| `preferred_distance` | Number |  | 55 |
+| `preferred_distance` | Equation |  | 55 |
 | `total_distance_moved` | Number |  | 55 |
 | `accurate_knockback` | Boolean |  | 32 |
 | `buff_ally` | Number |  | 32 |
@@ -14892,7 +14892,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `revive_enemy_corpse` | Number |  | 32 |
 | `spawn_object` | Number |  | 32 |
 | [`spawn_object_distance_to_ally`](./Enums.md#enum-spawn_object_distance_to_ally) | Enum |  | 32 |
-| `spawn_object_distance_to_enemy` | Number |  | 32 |
+| `spawn_object_distance_to_enemy` | Enum |  | 32 |
 | [`spend_mana_scale`](./Enums.md#enum-spend_mana_scale) | Enum |  | 32 |
 | `flat_cast_bonus` | Number |  | 5 |
 | `randomness` | Number |  | 5 |
@@ -14900,10 +14900,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consider_aoe` | Boolean |  | 3 |
 | `danger_avoidance` | Number |  | 3 |
 | `distance_to_aggro_target` | Number |  | 3 |
-| `distance_to_corpse` | Number |  | 3 |
+| `distance_to_corpse` | Enum |  | 3 |
 | `simple` | Boolean |  | 3 |
 | `cap_distance_to_enemy` | Number |  | 2 |
-| [`distance_to_water`](./Enums.md#enum-distance_to_water) | Enum |  | 2 |
+| [`distance_to_water`](./Enums.md#enum-distance_to_water) | Number |  | 2 |
 | `face_aggro_target` | Number |  | 2 |
 | `spawn_object_preferred_distance` | Number |  | 2 |
 | `cap_distance_to_character` | Number |  | 1 |
@@ -15119,7 +15119,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`intro`](./Events_and_Encounters.md#context-intro) | Block | Event Node: The initial text block when a story event first loads. | 214 |
 | [`main`](./Events_and_Encounters.md#context-main) | Block | Event Node: The central hub or recurring menu of a story event. | 214 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
-| [`stat`](./Math_Equations.md) | Equation |  | 15 |
+| [`stat`](./Math_Equations.md) | Enum |  | 15 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 12 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 10 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 9 |
@@ -15132,7 +15132,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 3 |
 | `stat_max` | Number |  | 3 |
 | `stat_min` | Number |  | 3 |
-| `weight` | Number | Probability weight for this outcome. | 3 |
+| `weight` | Enum | Probability weight for this outcome. | 3 |
 | `cha` | Number |  | 2 |
 | `con` | Number |  | 2 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Block | Event Node: Story branch or dialog option representing the 'Ignore' action. | 2 |
@@ -15176,7 +15176,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`play_animation`](./Arrays.md#array-play_animation) | Array |  | 4 |
 | [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum |  | 3 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 2 |
-| [`injury`](./Math_Equations.md) | Equation |  | 2 |
+| [`injury`](./Math_Equations.md) | Enum |  | 2 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 1 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 1 |
@@ -15206,14 +15206,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 71 |
 | [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 36 |
-| [`damage`](./Arrays.md#array-damage) | Array | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 |
+| [`damage`](./Arrays.md#array-damage) | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 28 |
-| [`injury`](./Math_Equations.md) | Equation |  | 27 |
+| [`injury`](./Math_Equations.md) | Enum |  | 27 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 26 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 25 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum |  | 24 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 24 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 23 |
+| [`play_animation`](./Enums.md#enum-play_animation) | Array |  | 23 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum |  | 21 |
 | [`gain_food`](./Arrays.md#array-gain_food) | Array |  | 21 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 19 |
@@ -15223,7 +15223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 14 |
 | `heal` | Number |  | 13 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum |  | 12 |
-| [`get_parasite_from_pool`](./Arrays.md#array-get_parasite_from_pool) | Array |  | 11 |
+| [`get_parasite_from_pool`](./Arrays.md#array-get_parasite_from_pool) | Enum |  | 11 |
 | [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String |  | 11 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#context-party_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
 | `ally_ambush_next_fights` | Number |  | 10 |
@@ -15276,7 +15276,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum |  | 65 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 51 |
-| [`injury`](./Math_Equations.md) | Equation |  | 51 |
+| [`injury`](./Math_Equations.md) | Enum |  | 51 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 41 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 40 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
@@ -15381,7 +15381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 6 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 5 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 5 |
-| [`heal_disorder`](./Enums.md#enum-heal_disorder) | Enum |  | 5 |
+| [`heal_disorder`](./Enums.md#enum-heal_disorder) | Number |  | 5 |
 | [`injury`](./Enums.md#enum-injury) | Enum |  | 4 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 4 |
 | [`mutation`](./Events_and_Encounters.md#context-mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
@@ -15397,7 +15397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `full_heal` | Number |  | 2 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 2 |
 | [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array |  | 2 |
-| [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Enum |  | 2 |
+| [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Array |  | 2 |
 | [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String |  | 2 |
 | [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array |  | 2 |
 | `ally_ambush_next_fights` | Number |  | 1 |
@@ -15435,9 +15435,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
 | `set_frame` | Number |  | 219 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 38 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 10 |
+| [`play_animation`](./Enums.md#enum-play_animation) | Array |  | 10 |
 | [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 9 |
-| [`injury`](./Math_Equations.md) | Equation |  | 8 |
+| [`injury`](./Math_Equations.md) | Enum |  | 8 |
 | [`battle`](./Math_Equations.md) | Equation |  | 4 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 4 |
 | [`kill`](./Enums.md#enum-kill) | Enum |  | 4 |
@@ -15476,7 +15476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum |  | 17 |
 | `different_from_last_x_cats` | Number |  | 3 |
 | `subject_frame_inner` | Number |  | 3 |
-| [`choose_cat_with_highest_stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`choose_cat_with_highest_stat`](./Math_Equations.md) | Enum |  | 1 |
 | [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum |  | 1 |
 | `choose_cat_with_min_health` | Number |  | 1 |
 | `choose_cat_with_most_injuries` | Boolean |  | 1 |
@@ -15880,7 +15880,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 57 |
 | [`label`](./Strings.md#string-label) | String |  | 57 |
-| [`stat`](./Math_Equations.md) | Equation |  | 56 |
+| [`stat`](./Math_Equations.md) | Enum |  | 56 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 55 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
@@ -15900,7 +15900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 43 |
-| [`stat`](./Math_Equations.md) | Equation |  | 43 |
+| [`stat`](./Math_Equations.md) | Enum |  | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 41 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 2 |
@@ -15935,7 +15935,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 40 |
+| [`object`](./Arrays.md#array-object) | Enum |  | 40 |
 | `count` | Number | Quantity. | 34 |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum |  | 31 |
 | [`side`](./Enums.md#enum-side) | Enum |  | 3 |
@@ -15984,7 +15984,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
-| [`stat`](./Math_Equations.md) | Equation |  | 30 |
+| [`stat`](./Math_Equations.md) | Enum |  | 30 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 28 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 
@@ -16003,8 +16003,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 25 |
-| [`label`](./Strings.md#string-label) | String |  | 25 |
-| [`stat`](./Math_Equations.md) | Equation |  | 25 |
+| [`label`](./Strings.md#string-label) | Enum |  | 25 |
+| [`stat`](./Math_Equations.md) | Enum |  | 25 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`rare`](./Events_and_Encounters.md#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
@@ -16054,7 +16054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 23 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 23 |
-| [`stat`](./Math_Equations.md) | Equation |  | 23 |
+| [`stat`](./Math_Equations.md) | Enum |  | 23 |
 
 </details>
 
@@ -16139,7 +16139,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
-| [`stat`](./Math_Equations.md) | Equation |  | 15 |
+| [`stat`](./Math_Equations.md) | Enum |  | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 14 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
@@ -16159,7 +16159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
-| [`stat`](./Math_Equations.md) | Equation |  | 14 |
+| [`stat`](./Math_Equations.md) | Enum |  | 14 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 13 |
 
 </details>
@@ -16178,7 +16178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 12 |
 | [`label`](./Strings.md#string-label) | String |  | 12 |
-| [`stat`](./Math_Equations.md) | Equation |  | 12 |
+| [`stat`](./Math_Equations.md) | Enum |  | 12 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -16196,8 +16196,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 11 |
-| [`label`](./Strings.md#string-label) | String |  | 11 |
-| [`stat`](./Math_Equations.md) | Equation |  | 11 |
+| [`label`](./Strings.md#string-label) | Enum |  | 11 |
+| [`stat`](./Math_Equations.md) | Enum |  | 11 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -16232,7 +16232,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
-| [`stat`](./Math_Equations.md) | Equation |  | 8 |
+| [`stat`](./Math_Equations.md) | Enum |  | 8 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
@@ -16253,7 +16253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 8 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
-| [`stat`](./Math_Equations.md) | Equation |  | 8 |
+| [`stat`](./Math_Equations.md) | Enum |  | 8 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
@@ -16288,7 +16288,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`rare`](./Events_and_Encounters.md#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
@@ -16344,8 +16344,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
-| [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`label`](./Strings.md#string-label) | Enum |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -16363,7 +16363,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
@@ -16398,8 +16398,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
-| [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`label`](./Strings.md#string-label) | Enum |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 
@@ -16475,7 +16475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 
@@ -16495,7 +16495,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
-| [`stat`](./Math_Equations.md) | Equation |  | 6 |
+| [`stat`](./Math_Equations.md) | Enum |  | 6 |
 
 </details>
 
@@ -16512,7 +16512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
-| [`stat`](./Math_Equations.md) | Equation |  | 6 |
+| [`stat`](./Math_Equations.md) | Enum |  | 6 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -16550,8 +16550,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 5 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`label`](./Enums.md#enum-label) | String |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 
 </details>
 
@@ -16569,7 +16569,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 
 </details>
 
@@ -16587,7 +16587,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
@@ -16608,7 +16608,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
-| [`stat`](./Math_Equations.md) | Equation |  | 4 |
+| [`stat`](./Math_Equations.md) | Enum |  | 4 |
 
 </details>
 
@@ -16644,7 +16644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
-| [`stat`](./Math_Equations.md) | Equation |  | 3 |
+| [`stat`](./Math_Equations.md) | Enum |  | 3 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 
 </details>
@@ -16792,7 +16792,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
-| [`stat`](./Math_Equations.md) | Equation |  | 3 |
+| [`stat`](./Math_Equations.md) | Enum |  | 3 |
 
 </details>
 
@@ -16827,7 +16827,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
-| [`stat`](./Math_Equations.md) | Equation |  | 3 |
+| [`stat`](./Math_Equations.md) | Enum |  | 3 |
 
 </details>
 
@@ -16915,7 +16915,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -16933,7 +16933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -16985,7 +16985,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -17054,7 +17054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
@@ -17110,7 +17110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -17195,7 +17195,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17252,7 +17252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17270,7 +17270,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17308,7 +17308,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17396,7 +17396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17414,7 +17414,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17475,7 +17475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17493,7 +17493,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17546,7 +17546,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17564,7 +17564,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17582,7 +17582,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17600,7 +17600,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17618,7 +17618,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17654,7 +17654,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17689,7 +17689,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17707,7 +17707,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17725,7 +17725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17743,7 +17743,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17778,7 +17778,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17797,7 +17797,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17815,7 +17815,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17833,7 +17833,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17979,7 +17979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -17997,7 +17997,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18120,7 +18120,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18138,7 +18138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18223,7 +18223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18331,7 +18331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18385,7 +18385,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18403,7 +18403,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18421,7 +18421,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18456,7 +18456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18511,7 +18511,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18550,7 +18550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18586,7 +18586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18708,7 +18708,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18726,7 +18726,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18744,7 +18744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18762,7 +18762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18834,7 +18834,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18887,7 +18887,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18922,7 +18922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -18962,7 +18962,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19012,7 +19012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19030,7 +19030,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19088,7 +19088,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19124,7 +19124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19142,7 +19142,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19178,7 +19178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19196,7 +19196,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19214,7 +19214,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19234,7 +19234,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19252,7 +19252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19290,7 +19290,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19364,7 +19364,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19382,7 +19382,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19400,7 +19400,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19419,7 +19419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19503,7 +19503,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19521,7 +19521,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19539,7 +19539,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19576,7 +19576,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19594,7 +19594,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19630,7 +19630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19666,7 +19666,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19720,7 +19720,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19738,7 +19738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19756,7 +19756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -19774,7 +19774,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -20025,7 +20025,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -20043,7 +20043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -20062,7 +20062,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -20077,8 +20077,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 634 |
-| [`name`](./Enums.md#enum-name) | Enum |  | 634 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 634 |
+| [`name`](./Enums.md#enum-name) | String |  | 634 |
 | `Comfort` | Number | Applies or references the 'Comfort' effect/state. | 406 |
 | `Appeal` | Number | Applies or references the 'Appeal' effect/state. | 338 |
 | `Stimulation` | Number | Applies or references the 'Stimulation' effect/state. | 268 |
@@ -20216,7 +20216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array |  | 27 |
-| [`object`](./Arrays.md#array-object) | Array |  | 19 |
+| [`object`](./Arrays.md#array-object) | Enum |  | 19 |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 7 |
 | [`trap`](./Enums.md#enum-trap) | Enum |  | 2 |
 
@@ -20286,8 +20286,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
 | `max_radius` | Number |  | 2 |
-| [`min_radius`](./Enums.md#enum-min_radius) | Enum |  | 2 |
-| [`puddle_tile`](./Enums.md#enum-puddle_tile) | Enum |  | 2 |
+| [`min_radius`](./Enums.md#enum-min_radius) | Number |  | 2 |
+| [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array |  | 2 |
 | [`number`](./Arrays.md#array-number) | Array |  | 1 |
 
 </details>
@@ -21201,10 +21201,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `uncommon` | Number |  | 12 |
 | `very_rare` | Number |  | 11 |
 | `common` | Number |  | 10 |
-| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Enum |  | 6 |
-| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Enum |  | 6 |
-| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Enum |  | 6 |
-| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Enum |  | 6 |
+| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Number |  | 6 |
+| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Number |  | 6 |
+| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Number |  | 6 |
+| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Number |  | 6 |
 | `chapter_rare` | Number |  | 5 |
 | `Chicken` | Number |  | 3 |
 | `chapter` | Number |  | 3 |
@@ -21300,7 +21300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `randomize_piece_frames` | Boolean |  | 4 |
 | `str_aux_is_copy_passive` | Boolean |  | 4 |
 | `fragile` | Boolean |  | 3 |
-| [`icon_hint`](./Enums.md#enum-icon_hint) | Enum |  | 3 |
+| [`icon_hint`](./Enums.md#enum-icon_hint) | String |  | 3 |
 | `max_health` | Number |  | 3 |
 | `reset_aux_on_store` | Number |  | 3 |
 | `sticky` | Boolean |  | 3 |
@@ -21358,7 +21358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SpawnEachTurn`](./Items_and_Equipment.md#context-spawneachturn) | Block | Applies or references the 'SpawnEachTurn' effect/state. | 12 |
 | `AddBonusRange` | Number | Applies or references the 'AddBonusRange' effect/state. | 11 |
 | `BleedThorns` | Number | Applies or references the 'BleedThorns' effect/state. | 10 |
-| [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 10 |
+| [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Array | Applies or references the 'StatusImmunity' effect/state. | 10 |
 | [`RevengeDamage`](./Items_and_Equipment.md#context-revengedamage) | Block | Reaction trigger: Deals damage to the attacker when hit. | 9 |
 | [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. | 9 |
 | [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin) | Block | Applies or references the 'StatusEachTurnBegin' effect/state. | 9 |
@@ -21407,7 +21407,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Applies or references the 'AmplifyStatus' effect/state. | 4 |
 | `BreakAtAux` | Number | Applies or references the 'BreakAtAux' effect/state. | 4 |
 | [`ClassManaCostReduction`](./Items_and_Equipment.md#context-classmanacostreduction) | Block | Applies or references the 'ClassManaCostReduction' effect/state. | 4 |
-| [`DeathRattle`](./Enums.md#enum-deathrattle) | Enum | Applies or references the 'DeathRattle' effect/state. | 4 |
+| [`DeathRattle`](./Enums.md#enum-deathrattle) | Block | Applies or references the 'DeathRattle' effect/state. | 4 |
 | `DepressionAura` | Number | Applies or references the 'DepressionAura' effect/state. | 4 |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 4 |
 | `ExtraBasicAttacks` | Number | Applies or references the 'ExtraBasicAttacks' effect/state. | 4 |
@@ -21468,7 +21468,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `BreakWhenNoShield` | Number | Applies or references the 'BreakWhenNoShield' effect/state. | 2 |
 | `CanLevelUpWhenDead` | Number | Applies or references the 'CanLevelUpWhenDead' effect/state. | 2 |
 | [`ChanceToBackflip`](./Items_and_Equipment.md#context-chancetobackflip) | Block | Applies or references the 'ChanceToBackflip' effect/state. | 2 |
-| [`ChanceToBlockAndCounter`](./Items_and_Equipment.md#context-chancetoblockandcounter) | Block | Applies or references the 'ChanceToBlockAndCounter' effect/state. | 2 |
+| [`ChanceToBlockAndCounter`](./Items_and_Equipment.md#context-chancetoblockandcounter) | Number | Applies or references the 'ChanceToBlockAndCounter' effect/state. | 2 |
 | `DisablePassiveSlot` | Number | Applies or references the 'DisablePassiveSlot' effect/state. | 2 |
 | `DodgeChance` | Number | Applies or references the 'DodgeChance' effect/state. | 2 |
 | [`ElementalManaCostReduction`](./Items_and_Equipment.md#context-elementalmanacostreduction) | Block | Applies or references the 'ElementalManaCostReduction' effect/state. | 2 |
@@ -21606,7 +21606,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`PassiveWhileShielded`](./Items_and_Equipment.md#context-passivewhileshielded) | Block | Applies or references the 'PassiveWhileShielded' effect/state. | 1 |
 | `PhysicalAttacksMiss` | Number | Applies or references the 'PhysicalAttacksMiss' effect/state. | 1 |
 | [`PoopWhenHit`](./Items_and_Equipment.md#context-poopwhenhit) | Block | Applies or references the 'PoopWhenHit' effect/state. | 1 |
-| [`PreventSpecificInjury`](./Math_Equations.md) | Equation | Applies or references the 'PreventSpecificInjury' effect/state. | 1 |
+| [`PreventSpecificInjury`](./Math_Equations.md) | Enum | Applies or references the 'PreventSpecificInjury' effect/state. | 1 |
 | `ReclaimItemOnBreak` | Number | Applies or references the 'ReclaimItemOnBreak' effect/state. | 1 |
 | `ReduceManaCost` | Number | Applies or references the 'ReduceManaCost' effect/state. | 1 |
 | `ReduceSpellCostsPerDisorder` | Number | Applies or references the 'ReduceSpellCostsPerDisorder' effect/state. | 1 |
@@ -21821,7 +21821,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 22 |
-| [`number`](./Arrays.md#array-number) | Array |  | 16 |
+| [`number`](./Arrays.md#array-number) | Number |  | 16 |
 
 </details>
 
@@ -21967,7 +21967,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`Craft`](./Items_and_Equipment.md#context-craft) | Block | Synthesizes or spawns a new item from a specific pool. | 3 |
 | `SafeDie` | Number | Applies or references the 'SafeDie' effect/state. | 2 |
-| [`Brace`](./Math_Equations.md) | Equation | Applies or references the 'Brace' effect/state. | 1 |
+| [`Brace`](./Math_Equations.md) | Enum | Applies or references the 'Brace' effect/state. | 1 |
 | [`DestroyEquipmentAndAttachParasite`](./Items_and_Equipment.md#context-destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 1 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
@@ -21990,7 +21990,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 12 |
+| [`object`](./Arrays.md#array-object) | Enum |  | 12 |
 | [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 11 |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum |  | 5 |
 
@@ -22186,7 +22186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`passives`](./Items_and_Equipment.md#context-passives) | Block | Passives granted by equipping this. | 7 |
-| [`value`](./Math_Equations.md) | Equation |  | 7 |
+| [`value`](./Math_Equations.md) | Enum |  | 7 |
 
 </details>
 
@@ -22649,7 +22649,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`slot`](./Enums.md#enum-slot) | Enum | Equipment slot (weapon, hat, face, chest, etc.). | 3 |
-| [`value`](./Math_Equations.md) | Equation |  | 3 |
+| [`value`](./Math_Equations.md) | Enum |  | 3 |
 
 </details>
 
@@ -23239,7 +23239,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 1 |
+| [`BackflipWhenTargeted`](./Math_Equations.md) | Enum | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 1 |
 | [`Craft`](./Items_and_Equipment.md#context-craft) | Block | Synthesizes or spawns a new item from a specific pool. | 1 |
 
 </details>
@@ -23320,7 +23320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |
-| [`Shield`](./Math_Equations.md) | Equation | Applies or references the 'Shield' effect/state. | 1 |
+| [`Shield`](./Math_Equations.md) | Enum | Applies or references the 'Shield' effect/state. | 1 |
 
 </details>
 
@@ -26207,7 +26207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Trample` | Number | Applies the 'Trample' effect. | 9 |
 | [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Applies the 'AmplifyStatus' effect. | 8 |
 | [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum | Applies the 'EquipTemporaryItem' effect. | 8 |
-| [`ForceSpecificInjury`](./Math_Equations.md) | Equation | Applies the 'ForceSpecificInjury' effect. | 8 |
+| [`ForceSpecificInjury`](./Math_Equations.md) | Enum | Applies the 'ForceSpecificInjury' effect. | 8 |
 | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 8 |
 | [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 8 |
 | [`PassiveIfAllArmorEmpty`](./Passives_and_Statuses.md#context-passiveifallarmorempty) | Block | Applies the 'PassiveIfAllArmorEmpty' effect. | 8 |
@@ -26411,7 +26411,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LateBloomer`](./Passives_and_Statuses.md#context-latebloomer) | Block | Applies the 'LateBloomer' effect. | 2 |
 | `LightningAspectCharge` | Number | Applies the 'LightningAspectCharge' effect. | 2 |
 | [`LightningRod`](./Passives_and_Statuses.md#context-lightningrod) | Block | Applies the 'LightningRod' effect. | 2 |
-| `LineOfSightTrueSightAura` | Number | Applies the 'LineOfSightTrueSightAura' effect. | 2 |
+| `LineOfSightTrueSightAura` | Enum | Applies the 'LineOfSightTrueSightAura' effect. | 2 |
 | `LobbedHook` | Number | Applies the 'LobbedHook' effect. | 2 |
 | [`LowHealthAllyDodgeChanceAura`](./Passives_and_Statuses.md#context-lowhealthallydodgechanceaura) | Block | Applies the 'LowHealthAllyDodgeChanceAura' effect. | 2 |
 | `MakeBasicAttackPassThroughThings` | Number | Applies the 'MakeBasicAttackPassThroughThings' effect. | 2 |
@@ -26697,7 +26697,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Array | Applies the 'Poison' effect. | 12 |
+| [`Poison`](./Arrays.md#array-poison) | Number | Applies the 'Poison' effect. | 12 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 8 |
 | `Knockback` | Number | Applies the 'Knockback' effect. | 7 |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 5 |
@@ -26719,7 +26719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_Shielded`](./Passives_and_Statuses.md#context-conditional_shielded) | Block | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 2 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies the 'Fear' effect. | 2 |
 | [`Freeze`](./Arrays.md#array-freeze) | Array | Applies the 'Freeze' effect. | 2 |
-| [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Array | Forces the target to drop coins. | 2 |
+| [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Number | Forces the target to drop coins. | 2 |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 2 |
 | `MagicWeakness` | Number | Applies the 'MagicWeakness' effect. | 2 |
@@ -26756,7 +26756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies the 'VisualFXTile' effect. | 12 |
 | [`SpreadDisease`](./Passives_and_Statuses.md#context-spreaddisease) | Block | Provides a chance to transmit a disease status to adjacent targets. | 7 |
-| [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 6 |
+| [`Stun`](./Arrays.md#array-stun) | Number | Applies the 'Stun' effect. | 6 |
 | [`Freeze`](./Arrays.md#array-freeze) | Array | Applies the 'Freeze' effect. | 3 |
 | `Burn` | Number | Applies the 'Burn' effect. | 2 |
 | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies the 'Charmed' effect. | 2 |
@@ -26948,8 +26948,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 14 |
-| [`number`](./Arrays.md#array-number) | Array |  | 13 |
+| [`object`](./Arrays.md#array-object) | Enum |  | 14 |
+| [`number`](./Arrays.md#array-number) | Number |  | 13 |
 
 </details>
 
@@ -27022,7 +27022,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array | Applies the 'AllStatsUp' effect. | 2 |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `Cleanse` | Number | Applies the 'Cleanse' effect. | 2 |
 | `ClearNegativeEffects` | Number | Applies the 'ClearNegativeEffects' effect. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
@@ -27475,8 +27475,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 6 |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 5 |
+| [`object`](./Arrays.md#array-object) | Enum |  | 6 |
+| `chance` | Enum | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 5 |
 | `number` | Number |  | 2 |
 | `good` | Boolean |  | 1 |
 
@@ -28024,7 +28024,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Arrays.md#array-element) | Array | The specific element type required or applied. | 3 |
+| [`element`](./Arrays.md#array-element) | Enum | The specific element type required or applied. | 3 |
 | `reduction` | Number |  | 3 |
 
 </details>
@@ -28794,7 +28794,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage`](./Math_Equations.md) | Equation | The base damage properties of an attack. | 2 |
+| [`damage`](./Math_Equations.md) | Enum | The base damage properties of an attack. | 2 |
 | [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
@@ -28829,7 +28829,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage`](./Math_Equations.md) | Equation | The base damage properties of an attack. | 2 |
+| [`damage`](./Math_Equations.md) | Enum | The base damage properties of an attack. | 2 |
 
 </details>
 
@@ -28932,7 +28932,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Burn`](./Math_Equations.md) | Equation | Applies the 'Burn' effect. | 2 |
+| [`Burn`](./Math_Equations.md) | Enum | Applies the 'Burn' effect. | 2 |
 
 </details>
 
@@ -28947,7 +28947,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Poison`](./Math_Equations.md) | Equation | Applies the 'Poison' effect. | 2 |
+| [`Poison`](./Math_Equations.md) | Enum | Applies the 'Poison' effect. | 2 |
 
 </details>
 
@@ -28962,7 +28962,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Weakness`](./Math_Equations.md) | Equation | Applies the 'Weakness' effect. | 2 |
+| [`Weakness`](./Math_Equations.md) | Enum | Applies the 'Weakness' effect. | 2 |
 
 </details>
 
@@ -29013,7 +29013,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FlatLeech`](./Math_Equations.md) | Equation | Applies the 'FlatLeech' effect. | 2 |
+| [`FlatLeech`](./Math_Equations.md) | Enum | Applies the 'FlatLeech' effect. | 2 |
 
 </details>
 
@@ -29044,7 +29044,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Slow`](./Math_Equations.md) | Equation | Applies the 'Slow' effect. | 2 |
+| [`Slow`](./Math_Equations.md) | Enum | Applies the 'Slow' effect. | 2 |
 
 </details>
 
@@ -29187,7 +29187,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`injury`](./Math_Equations.md) | Equation |  | 2 |
+| [`injury`](./Math_Equations.md) | Enum |  | 2 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 2 |
 | [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 2 |
 | `threshold` | Number |  | 2 |
@@ -29396,7 +29396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Math_Equations.md) | Equation |  | 2 |
+| [`crit_chance`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -29894,7 +29894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `cap` | Number |  | 2 |
-| [`injury`](./Math_Equations.md) | Equation |  | 2 |
+| [`injury`](./Math_Equations.md) | Enum |  | 2 |
 | `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 1 |
 
 </details>
@@ -29941,7 +29941,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`HealthGain`](./Math_Equations.md) | Equation | Applies the 'HealthGain' effect. | 2 |
+| [`HealthGain`](./Math_Equations.md) | Enum | Applies the 'HealthGain' effect. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 2 |
 
 </details>
@@ -29973,7 +29973,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AOEPuddle`](./Math_Equations.md) | Equation | Applies the 'AOEPuddle' effect. | 2 |
+| [`AOEPuddle`](./Math_Equations.md) | Enum | Applies the 'AOEPuddle' effect. | 2 |
 
 </details>
 
@@ -29988,7 +29988,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`knockback`](./Math_Equations.md) | Equation |  | 2 |
+| [`knockback`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -30463,8 +30463,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Shield`](./Math_Equations.md) | Equation | Applies the 'Shield' effect. | 1 |
-| [`SizeScalePercent`](./Math_Equations.md) | Equation | Applies the 'SizeScalePercent' effect. | 1 |
+| [`Shield`](./Math_Equations.md) | String | Applies the 'Shield' effect. | 1 |
+| [`SizeScalePercent`](./Math_Equations.md) | String | Applies the 'SizeScalePercent' effect. | 1 |
 | [`Trample`](./Arrays.md#array-trample) | Array | Applies the 'Trample' effect. | 1 |
 
 </details>
@@ -30914,7 +30914,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `divine_shield` | Number |  | 3 |
 | [`keyword_tooltips`](./Passives_and_Statuses.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 3 |
 | [`empty_armor_scaled_stats`](./Passives_and_Statuses.md#context-empty_armor_scaled_stats) | Block |  | 2 |
-| [`icon`](./Enums.md#enum-icon) | Enum |  | 1 |
+| [`icon`](./Enums.md#enum-icon) | String |  | 1 |
 | [`schadenfreude_scaled_stats`](./Passives_and_Statuses.md#context-schadenfreude_scaled_stats) | Block |  | 1 |
 
 </details>
@@ -30952,7 +30952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 2 |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 1 |
-| [`icon`](./Enums.md#enum-icon) | Enum |  | 1 |
+| [`icon`](./Enums.md#enum-icon) | String |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the passive's display name. | 1 |
 
 </details>
@@ -31083,7 +31083,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum |  | 8 |
 | [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum |  | 8 |
 | [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum |  | 6 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 6 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 6 |
 | [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum |  | 6 |
 | [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum |  | 4 |
 | `fully_complete_difficulty` | Number |  | 4 |
@@ -31110,7 +31110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`house_upgrade_attic`](./Progression_Unlocks.md#context-house_upgrade_attic) | Block |  | 1 |
 | [`house_upgrade_largehouse`](./Progression_Unlocks.md#context-house_upgrade_largehouse) | Block |  | 1 |
 | [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#context-house_upgrade_mediumhouse) | Block |  | 1 |
-| [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | Enum |  | 1 |
+| [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String |  | 1 |
 | [`intro`](./Arrays.md#array-intro) | Array |  | 1 |
 | [`jack_max_intro`](./Progression_Unlocks.md#context-jack_max_intro) | Block |  | 1 |
 | [`jack_max_repeating`](./Progression_Unlocks.md#context-jack_max_repeating) | Block |  | 1 |
@@ -31687,7 +31687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -31704,7 +31704,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -31721,7 +31721,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -31792,7 +31792,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -31809,7 +31809,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -31826,7 +31826,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -32542,7 +32542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum |  | 18 |
 | [`complete_house_boss`](./Enums.md#enum-complete_house_boss) | Enum |  | 9 |
-| [`save_file_flag`](./Enums.md#enum-save_file_flag) | Enum |  | 9 |
+| [`save_file_flag`](./Enums.md#enum-save_file_flag) | String |  | 9 |
 | [`max_npc`](./Enums.md#enum-max_npc) | Enum |  | 7 |
 | [`adventure_unlock`](./Enums.md#enum-adventure_unlock) | Enum |  | 5 |
 | [`complete_checkmarks`](./Miscellaneous.md#context-complete_checkmarks) | Block |  | 1 |

@@ -18,112 +18,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
 | [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack) | Block |  | 52 |
-| `Thorns` | Number |  | 16 |
-| [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum |  | 13 |
-| `HealthRegenUp` | Number |  | 13 |
-| `DodgeChance` | Number |  | 12 |
 | [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#context-passivewhenaffectedbyelement) | Block |  | 12 |
 | [`RevengeDamage`](./Cat_Mutations.md#context-revengedamage) | Block |  | 9 |
 | [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage) | Block |  | 7 |
-| [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum |  | 7 |
-| [`SpawnThingOnDamage`](./Cat_Mutations.md#context-spawnthingondamage) | Block |  | 7 |
-| `AddBonusRange` | Number |  | 6 |
 | [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack) | Block |  | 6 |
-| `Brace` | Number |  | 6 |
 | [`StatusOnTookDamage`](./Cat_Mutations.md#context-statusontookdamage) | Block |  | 6 |
 | [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin) | Block |  | 5 |
-| `WaterWalk` | Number |  | 5 |
-| [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum |  | 4 |
-| `Bleed` | Number |  | 4 |
-| `BleedThorns` | Number |  | 4 |
-| [`DisableAbilitiesWithTag`](./Enums.md#enum-disableabilitieswithtag) | Enum |  | 4 |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum |  | 4 |
-| `IgnoreTiles` | Number |  | 4 |
-| [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum |  | 4 |
-| [`SpawnEachTurn`](./Cat_Mutations.md#context-spawneachturn) | Block |  | 4 |
 | [`StatusEachTurnEnd`](./Cat_Mutations.md#context-statuseachturnend) | Block |  | 4 |
-| `AddBonusMeleeRange` | Number |  | 3 |
-| `AddCorpseHealth` | Number |  | 3 |
-| `AddLevelUpRerolls` | Number |  | 3 |
-| `AddManaRegen` | Number |  | 3 |
-| `AddMovement` | Number |  | 3 |
-| `AllStatsUp` | Number |  | 3 |
-| `Blind` | Number |  | 3 |
-| `Bruise` | Number |  | 3 |
-| `KineticSpikes` | Number |  | 3 |
-| `Quivered` | Number |  | 3 |
-| [`ReplaceBasicMove`](./Enums.md#enum-replacebasicmove) | Enum |  | 3 |
-| [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum |  | 3 |
-| [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#context-spawnonbattlestartrandomemptytile) | Block |  | 3 |
-| `Trample` | Number |  | 3 |
-| [`YOffset`](./Enums.md#enum-yoffset) | Enum |  | 3 |
-| `AddKnockbackDamage` | Number |  | 2 |
-| `BackstabImmunity` | Number |  | 2 |
-| `Confusion` | Number |  | 2 |
-| `CritChanceUp` | Number |  | 2 |
-| `DamageUp` | Number |  | 2 |
-| [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum |  | 2 |
-| `HouseFoodRequirementMultiplier` | Number |  | 2 |
-| `Immobile` | Number |  | 2 |
-| `MissChance` | Number |  | 2 |
-| `Poison` | Number |  | 2 |
-| `PoisonThorns` | Number |  | 2 |
-| [`PoopWhenHit`](./Enums.md#enum-poopwhenhit) | Enum |  | 2 |
-| `ReflectProjectiles` | Number |  | 2 |
-| `ShowHiddenThings` | Number |  | 2 |
 | [`StatusEveryXSpellCasts`](./Cat_Mutations.md#context-statuseveryxspellcasts) | Block |  | 2 |
 | [`StatusKilledCharacters`](./Cat_Mutations.md#context-statuskilledcharacters) | Block |  | 2 |
 | [`StatusOnBattleEnd`](./Cat_Mutations.md#context-statusonbattleend) | Block |  | 2 |
 | [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove) | Block |  | 2 |
 | [`StatusOnTookDamageFromAbility`](./Cat_Mutations.md#context-statusontookdamagefromability) | Block |  | 2 |
-| `Vegan` | Number |  | 2 |
-| [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum |  | 1 |
-| [`AbilityWhenTaggedCharacterMovesNear`](./Cat_Mutations.md#context-abilitywhentaggedcharactermovesnear) | Block |  | 1 |
-| [`AddDamageToElementDamage`](./Cat_Mutations.md#context-adddamagetoelementdamage) | Block |  | 1 |
-| `AddInitiative` | Number |  | 1 |
-| `AddLootMultiplier` | Number |  | 1 |
-| [`AddTemporaryEffectsToBasicAttack`](./Cat_Mutations.md#context-addtemporaryeffectstobasicattack) | Block |  | 1 |
-| `AlphaTurns` | Number |  | 1 |
-| [`BackflipWhenTargeted`](./Cat_Mutations.md#context-backflipwhentargeted) | Block |  | 1 |
-| `BackstabFront` | Number |  | 1 |
-| `BasicAttackCantMiss` | Number |  | 1 |
-| `BoostWeaponDamage` | Number |  | 1 |
-| `CanRemoveCursedItems` | Number |  | 1 |
-| [`ChanceToBackflip`](./Cat_Mutations.md#context-chancetobackflip) | Block |  | 1 |
-| [`ClassManaCostReduction`](./Cat_Mutations.md#context-classmanacostreduction) | Block |  | 1 |
-| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum |  | 1 |
-| [`CounterAttack`](./Cat_Mutations.md#context-counterattack) | Block |  | 1 |
-| `DepressionAura` | Number |  | 1 |
-| `DodgeChance_Status` | Number |  | 1 |
-| `DrinkWater` | Number |  | 1 |
-| [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum |  | 1 |
-| `ExtraBasicAttacks` | Number |  | 1 |
-| `FlatHealWhenDealDamage` | Number |  | 1 |
-| [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum |  | 1 |
-| `GainManaWhenAnythingDies` | Number |  | 1 |
-| `KnockbackImmunity` | Number |  | 1 |
-| `MakeBasicAttackPull` | Number |  | 1 |
-| `ManaCostReduction` | Number |  | 1 |
-| [`MoveAwayFromDamageSource`](./Enums.md#enum-moveawayfromdamagesource) | Enum |  | 1 |
-| [`MoveWhenDamaged`](./Cat_Mutations.md#context-movewhendamaged) | Block |  | 1 |
 | [`PassiveWhenAtFullMana`](./Cat_Mutations.md#context-passivewhenatfullmana) | Block |  | 1 |
 | [`PassiveWhileHasStatus`](./Cat_Mutations.md#context-passivewhilehasstatus) | Block |  | 1 |
-| `RandomStatUp` | Number |  | 1 |
-| [`ReplaceBasicAttack_Mutation`](./Enums.md#enum-replacebasicattack_mutation) | Enum |  | 1 |
-| `Slow` | Number |  | 1 |
-| [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#context-spawnextrathingsonbattlestart) | Block |  | 1 |
 | [`StatusEachRoundEnd`](./Cat_Mutations.md#context-statuseachroundend) | Block |  | 1 |
-| [`StatusEveryXSpellCastsEachTurn`](./Cat_Mutations.md#context-statuseveryxspellcastseachturn) | Block |  | 1 |
-| [`StatusIfDidntMove`](./Cat_Mutations.md#context-statusifdidntmove) | Block |  | 1 |
 | [`StatusIfUnusedMovePoints`](./Cat_Mutations.md#context-statusifunusedmovepoints) | Block |  | 1 |
-| [`StatusImmunity`](./Arrays.md#array-statusimmunity) | Array |  | 1 |
 | [`StatusOnAllyCatDeath`](./Cat_Mutations.md#context-statusonallycatdeath) | Block |  | 1 |
 | [`StatusOnCastSpell`](./Cat_Mutations.md#context-statusoncastspell) | Block |  | 1 |
 | [`StatusOnDie`](./Cat_Mutations.md#context-statusondie) | Block |  | 1 |
 | [`StatusOnEatFood`](./Cat_Mutations.md#context-statusoneatfood) | Block |  | 1 |
 | [`StatusOnKill`](./Cat_Mutations.md#context-statusonkill) | Block |  | 1 |
-| `SwapHighestAndLowestStat` | Number |  | 1 |
 
 </details>
 
@@ -138,29 +55,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Knockback` | Number |  | 6 |
-| [`Bleed`](./Arrays.md#array-bleed) | Array |  | 5 |
-| [`ChangeTile`](./Enums.md#enum-changetile) | Enum |  | 5 |
-| [`Fear`](./Arrays.md#array-fear) | Array |  | 5 |
-| `Poison` | Number |  | 5 |
-| `Burn` | Number |  | 4 |
-| [`Confusion`](./Arrays.md#array-confusion) | Array |  | 3 |
-| [`Stun`](./Arrays.md#array-stun) | Array |  | 3 |
-| `Bruise` | Number |  | 2 |
-| `Leeches` | Number |  | 2 |
-| `Slow` | Number |  | 2 |
-| [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum |  | 2 |
-| [`Charmed`](./Arrays.md#array-charmed) | Array |  | 1 |
-| `FaceAway` | Number |  | 1 |
-| `FlatLeech` | Number |  | 1 |
-| [`Freeze`](./Arrays.md#array-freeze) | Array |  | 1 |
-| [`Immobile`](./Arrays.md#array-immobile) | Array |  | 1 |
-| [`Instakill`](./Arrays.md#array-instakill) | Array |  | 1 |
-| [`Petrify`](./Arrays.md#array-petrify) | Array |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Block |  | 1 |
-| `SoulLink` | Number |  | 1 |
-| `VaporizeInanimate` | Number |  | 1 |
-| [`Webbed`](./Arrays.md#array-webbed) | Array |  | 1 |
 
 </details>
 
@@ -175,6 +71,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
 | [`element`](./Enums.md#enum-element) | Enum |  | 12 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 12 |
 
@@ -191,11 +88,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Fear`](./Arrays.md#array-fear) | Array |  | 4 |
-| [`Confusion`](./Arrays.md#array-confusion) | Array |  | 2 |
-| [`Blind`](./Arrays.md#array-blind) | Array |  | 1 |
-| [`Charmed`](./Arrays.md#array-charmed) | Array |  | 1 |
-| [`Petrify`](./Arrays.md#array-petrify) | Array |  | 1 |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Block |  | 1 |
 
 </details>
@@ -211,6 +104,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | [`effects`](./Cat_Mutations.md#context-effects) | Block |  | 9 |
 | `damage` | Number |  | 4 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 4 |
@@ -228,11 +122,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | `knockback` | Number |  | 4 |
 | `damage` | Number |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 2 |
-| [`Freeze`](./Arrays.md#array-freeze) | Array |  | 1 |
-| `Immobile` | Number |  | 1 |
 | [`effects`](./Cat_Mutations.md#context-effects) | Block |  | 1 |
 
 </details>
@@ -265,10 +158,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Bleed` | Number |  | 2 |
-| `Knockback` | Number |  | 2 |
-| [`Immobile`](./Arrays.md#array-immobile) | Array |  | 1 |
-| [`KnockUpAndAway`](./Cat_Mutations.md#context-knockupandaway) | Block |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -283,9 +173,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Charge` | Number |  | 3 |
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum |  | 2 |
-| `LuckUp` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -300,10 +188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Quivered`](./Arrays.md#array-quivered) | Array |  | 2 |
-| `MissChance` | Number |  | 1 |
-| [`MoveQuivered`](./Arrays.md#array-movequivered) | Array |  | 1 |
-| `SpeedUp` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -318,17 +203,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Bleed` | Number |  | 2 |
-| `Blind` | Number |  | 2 |
-| `Burn` | Number |  | 2 |
-| `Charge` | Number |  | 2 |
-| `DiminishingHealthRegen` | Number |  | 2 |
-| `KineticSpikes` | Number |  | 2 |
-| `Poison` | Number |  | 2 |
-| `RandomStatUp` | Number |  | 2 |
-| `Shield` | Number |  | 2 |
-| `Thorns` | Number |  | 2 |
-| `Weakness` | Number |  | 2 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -360,11 +235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `RandomStatUp` | Number |  | 2 |
-| `Charge` | Number |  | 1 |
-| `IntelligenceUp` | Number |  | 1 |
-| `RandomStatDown` | Number |  | 1 |
-| `Shield` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -395,7 +266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AutoReanimate` | Number |  | 2 |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | `odds` | Number |  | 2 |
 
 </details>
@@ -411,9 +282,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | `stacks` | Number |  | 2 |
-| `Charge` | Number |  | 1 |
-| `RandomMagicMissile` | Number |  | 1 |
 
 </details>
 
@@ -428,7 +298,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_RandomChance`](./Cat_Mutations.md#context-conditional_randomchance) | Block |  | 2 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Evaluates the nested condition before applying. |  |
 
 </details>
 
@@ -443,8 +314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum |  | 1 |
-| `PermanentIntelligence` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -459,8 +329,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_FirstApplicationThisTurn`](./Cat_Mutations.md#context-conditional_firstapplicationthisturn) | Block |  | 1 |
-| [`Conditional_GoodRoll`](./Cat_Mutations.md#context-conditional_goodroll) | Block |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Evaluates the nested condition before applying. |  |
 
 </details>
 
@@ -475,6 +345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Block |  | 2 |
 
 </details>
@@ -586,7 +457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Charge` | Number |  | 1 |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 
 </details>
 
@@ -601,7 +472,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum |  | 1 |
+| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | `odds` | Number |  | 1 |
 
 </details>
@@ -665,7 +536,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DamageUp` | Number |  | 1 |
+| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
 
 </details>
 
@@ -680,6 +551,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 1 |
 | [`status`](./Enums.md#enum-status) | Enum |  | 1 |
 
@@ -712,7 +584,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`UseAbility`](./Enums.md#enum-useability) | Enum |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -758,7 +630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ManaGain` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -773,7 +645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DamageUp` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -788,7 +660,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Charge` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -803,7 +675,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array |  | 6 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -818,7 +690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -833,7 +705,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `RangeUp` | Number |  | 1 |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 
 </details>
 
@@ -1536,7 +1408,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 8 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 8 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 8 |
 | `cha` | Number |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
@@ -1782,7 +1654,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 5 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 5 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 5 |
 | `spd` | Number |  | 2 |
 | `cha` | Number |  | 1 |
@@ -1801,7 +1673,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 5 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 5 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 4 |
 | `cha` | Number |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |

@@ -39,7 +39,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum |  | 8 |
 | [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum |  | 8 |
 | [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum |  | 6 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 6 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 6 |
 | [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum |  | 6 |
 | [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum |  | 4 |
 | `fully_complete_difficulty` | Number |  | 4 |
@@ -66,7 +66,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`house_upgrade_attic`](./Progression_Unlocks.md#context-house_upgrade_attic) | Block |  | 1 |
 | [`house_upgrade_largehouse`](./Progression_Unlocks.md#context-house_upgrade_largehouse) | Block |  | 1 |
 | [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#context-house_upgrade_mediumhouse) | Block |  | 1 |
-| [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | Enum |  | 1 |
+| [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String |  | 1 |
 | [`intro`](./Arrays.md#array-intro) | Array |  | 1 |
 | [`jack_max_intro`](./Progression_Unlocks.md#context-jack_max_intro) | Block |  | 1 |
 | [`jack_max_repeating`](./Progression_Unlocks.md#context-jack_max_repeating) | Block |  | 1 |
@@ -643,7 +643,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -660,7 +660,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -677,7 +677,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -748,7 +748,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -765,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 
@@ -782,7 +782,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `favor` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum |  | 1 |
+| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
 </details>
 

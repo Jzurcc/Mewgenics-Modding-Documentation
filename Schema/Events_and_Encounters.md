@@ -19,7 +19,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`intro`](./Events_and_Encounters.md#context-intro) | Block | Event Node: The initial text block when a story event first loads. | 214 |
 | [`main`](./Events_and_Encounters.md#context-main) | Block | Event Node: The central hub or recurring menu of a story event. | 214 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
-| [`stat`](./Math_Equations.md) | Equation |  | 15 |
+| [`stat`](./Math_Equations.md) | Enum |  | 15 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 12 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 10 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 9 |
@@ -32,7 +32,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 3 |
 | `stat_max` | Number |  | 3 |
 | `stat_min` | Number |  | 3 |
-| `weight` | Number | Probability weight for this outcome. | 3 |
+| `weight` | Enum | Probability weight for this outcome. | 3 |
 | `cha` | Number |  | 2 |
 | `con` | Number |  | 2 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Block | Event Node: Story branch or dialog option representing the 'Ignore' action. | 2 |
@@ -62,6 +62,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[event_node]`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`common`](./Events_and_Encounters.md#context-common) | Block | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
 | [`rare`](./Events_and_Encounters.md#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 72 |
@@ -76,7 +77,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`play_animation`](./Arrays.md#array-play_animation) | Array |  | 4 |
 | [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum |  | 3 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 2 |
-| [`injury`](./Math_Equations.md) | Equation |  | 2 |
+| [`injury`](./Math_Equations.md) | Enum |  | 2 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 1 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 1 |
@@ -100,20 +101,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[event_node]`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 608 |
 | `set_frame` | Number |  | 150 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 71 |
 | [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 36 |
-| [`damage`](./Arrays.md#array-damage) | Array | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 |
+| [`damage`](./Arrays.md#array-damage) | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 28 |
-| [`injury`](./Math_Equations.md) | Equation |  | 27 |
+| [`injury`](./Math_Equations.md) | Enum |  | 27 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 26 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 25 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum |  | 24 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 24 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 23 |
+| [`play_animation`](./Enums.md#enum-play_animation) | Array |  | 23 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum |  | 21 |
 | [`gain_food`](./Arrays.md#array-gain_food) | Array |  | 21 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 19 |
@@ -123,7 +125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 14 |
 | `heal` | Number |  | 13 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum |  | 12 |
-| [`get_parasite_from_pool`](./Arrays.md#array-get_parasite_from_pool) | Array |  | 11 |
+| [`get_parasite_from_pool`](./Arrays.md#array-get_parasite_from_pool) | Enum |  | 11 |
 | [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String |  | 11 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#context-party_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
 | `ally_ambush_next_fights` | Number |  | 10 |
@@ -170,13 +172,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[event_node]`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 612 |
 | `set_frame` | Number |  | 179 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 124 |
 | [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum |  | 65 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 51 |
-| [`injury`](./Math_Equations.md) | Equation |  | 51 |
+| [`injury`](./Math_Equations.md) | Enum |  | 51 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 41 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 40 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
@@ -260,6 +263,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[event_node]`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`reward`](./Events_and_Encounters.md#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
 | `set_frame` | Number |  | 285 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 185 |
@@ -281,7 +285,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 6 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 5 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 5 |
-| [`heal_disorder`](./Enums.md#enum-heal_disorder) | Enum |  | 5 |
+| [`heal_disorder`](./Enums.md#enum-heal_disorder) | Number |  | 5 |
 | [`injury`](./Enums.md#enum-injury) | Enum |  | 4 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 4 |
 | [`mutation`](./Events_and_Encounters.md#context-mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
@@ -297,7 +301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `full_heal` | Number |  | 2 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 2 |
 | [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array |  | 2 |
-| [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Enum |  | 2 |
+| [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Array |  | 2 |
 | [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String |  | 2 |
 | [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array |  | 2 |
 | `ally_ambush_next_fights` | Number |  | 1 |
@@ -332,12 +336,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[event_node]`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`reward`](./Events_and_Encounters.md#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
 | `set_frame` | Number |  | 219 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 38 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 10 |
+| [`play_animation`](./Enums.md#enum-play_animation) | Array |  | 10 |
 | [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 9 |
-| [`injury`](./Math_Equations.md) | Equation |  | 8 |
+| [`injury`](./Math_Equations.md) | Enum |  | 8 |
 | [`battle`](./Math_Equations.md) | Equation |  | 4 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 4 |
 | [`kill`](./Enums.md#enum-kill) | Enum |  | 4 |
@@ -376,7 +381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum |  | 17 |
 | `different_from_last_x_cats` | Number |  | 3 |
 | `subject_frame_inner` | Number |  | 3 |
-| [`choose_cat_with_highest_stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`choose_cat_with_highest_stat`](./Math_Equations.md) | Enum |  | 1 |
 | [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum |  | 1 |
 | `choose_cat_with_min_health` | Number |  | 1 |
 | `choose_cat_with_most_injuries` | Boolean |  | 1 |
@@ -396,6 +401,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[event_node]`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`options`](./Events_and_Encounters.md#context-options) | Block | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 208 |
 | [`setup`](./Events_and_Encounters.md#context-setup) | Block | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
@@ -685,6 +691,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -740,7 +747,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 57 |
 | [`label`](./Strings.md#string-label) | String |  | 57 |
-| [`stat`](./Math_Equations.md) | Equation |  | 56 |
+| [`stat`](./Math_Equations.md) | Enum |  | 56 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 55 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
@@ -760,7 +767,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 43 |
-| [`stat`](./Math_Equations.md) | Equation |  | 43 |
+| [`stat`](./Math_Equations.md) | Enum |  | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 41 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 2 |
@@ -795,7 +802,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 40 |
+| [`object`](./Arrays.md#array-object) | Enum |  | 40 |
 | `count` | Number | Quantity. | 34 |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum |  | 31 |
 | [`side`](./Enums.md#enum-side) | Enum |  | 3 |
@@ -844,7 +851,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
-| [`stat`](./Math_Equations.md) | Equation |  | 30 |
+| [`stat`](./Math_Equations.md) | Enum |  | 30 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 28 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 
@@ -863,8 +870,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 25 |
-| [`label`](./Strings.md#string-label) | String |  | 25 |
-| [`stat`](./Math_Equations.md) | Equation |  | 25 |
+| [`label`](./Strings.md#string-label) | Enum |  | 25 |
+| [`stat`](./Math_Equations.md) | Enum |  | 25 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`rare`](./Events_and_Encounters.md#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
@@ -914,7 +921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 23 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 23 |
-| [`stat`](./Math_Equations.md) | Equation |  | 23 |
+| [`stat`](./Math_Equations.md) | Enum |  | 23 |
 
 </details>
 
@@ -929,6 +936,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 </details>
 
 ---
@@ -987,7 +995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
-| [`stat`](./Math_Equations.md) | Equation |  | 15 |
+| [`stat`](./Math_Equations.md) | Enum |  | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 14 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
@@ -1007,7 +1015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
-| [`stat`](./Math_Equations.md) | Equation |  | 14 |
+| [`stat`](./Math_Equations.md) | Enum |  | 14 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 13 |
 
 </details>
@@ -1026,7 +1034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 12 |
 | [`label`](./Strings.md#string-label) | String |  | 12 |
-| [`stat`](./Math_Equations.md) | Equation |  | 12 |
+| [`stat`](./Math_Equations.md) | Enum |  | 12 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -1044,8 +1052,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 11 |
-| [`label`](./Strings.md#string-label) | String |  | 11 |
-| [`stat`](./Math_Equations.md) | Equation |  | 11 |
+| [`label`](./Strings.md#string-label) | Enum |  | 11 |
+| [`stat`](./Math_Equations.md) | Enum |  | 11 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -1080,7 +1088,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
-| [`stat`](./Math_Equations.md) | Equation |  | 8 |
+| [`stat`](./Math_Equations.md) | Enum |  | 8 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
@@ -1101,7 +1109,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 8 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
-| [`stat`](./Math_Equations.md) | Equation |  | 8 |
+| [`stat`](./Math_Equations.md) | Enum |  | 8 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
@@ -1136,7 +1144,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`rare`](./Events_and_Encounters.md#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
@@ -1192,8 +1200,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
-| [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`label`](./Strings.md#string-label) | Enum |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -1211,7 +1219,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
@@ -1246,8 +1254,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
-| [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`label`](./Strings.md#string-label) | Enum |  | 7 |
+| [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 
@@ -1323,7 +1331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 
@@ -1343,7 +1351,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
-| [`stat`](./Math_Equations.md) | Equation |  | 6 |
+| [`stat`](./Math_Equations.md) | Enum |  | 6 |
 
 </details>
 
@@ -1360,7 +1368,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
-| [`stat`](./Math_Equations.md) | Equation |  | 6 |
+| [`stat`](./Math_Equations.md) | Enum |  | 6 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -1378,6 +1386,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 5 |
 
 </details>
@@ -1395,8 +1404,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 5 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`label`](./Enums.md#enum-label) | String |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 
 </details>
 
@@ -1414,7 +1423,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 
 </details>
 
@@ -1432,7 +1441,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`stat`](./Math_Equations.md) | Enum |  | 5 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
@@ -1453,7 +1462,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
-| [`stat`](./Math_Equations.md) | Equation |  | 4 |
+| [`stat`](./Math_Equations.md) | Enum |  | 4 |
 
 </details>
 
@@ -1489,7 +1498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
-| [`stat`](./Math_Equations.md) | Equation |  | 3 |
+| [`stat`](./Math_Equations.md) | Enum |  | 3 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 
 </details>
@@ -1601,6 +1610,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
 | `count` | Number | Quantity. | 3 |
 
 </details>
@@ -1635,7 +1645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
-| [`stat`](./Math_Equations.md) | Equation |  | 3 |
+| [`stat`](./Math_Equations.md) | Enum |  | 3 |
 
 </details>
 
@@ -1670,7 +1680,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
-| [`stat`](./Math_Equations.md) | Equation |  | 3 |
+| [`stat`](./Math_Equations.md) | Enum |  | 3 |
 
 </details>
 
@@ -1758,7 +1768,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -1776,7 +1786,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -1828,7 +1838,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -1897,7 +1907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
@@ -1953,7 +1963,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`stat`](./Math_Equations.md) | Enum |  | 2 |
 
 </details>
 
@@ -2038,7 +2048,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2095,7 +2105,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2113,7 +2123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2151,7 +2161,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2239,7 +2249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2257,7 +2267,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2318,7 +2328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2336,7 +2346,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2389,7 +2399,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2407,7 +2417,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2425,7 +2435,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2443,7 +2453,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2461,7 +2471,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2497,7 +2507,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2532,7 +2542,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2550,7 +2560,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2568,7 +2578,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2586,7 +2596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2621,7 +2631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2640,7 +2650,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2658,7 +2668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2676,7 +2686,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2822,7 +2832,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2840,7 +2850,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2963,7 +2973,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -2981,7 +2991,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3066,7 +3076,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3174,7 +3184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3228,7 +3238,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3246,7 +3256,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3264,7 +3274,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3299,7 +3309,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3354,7 +3364,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3393,7 +3403,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3429,7 +3439,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3551,7 +3561,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3569,7 +3579,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3587,7 +3597,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3605,7 +3615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3677,7 +3687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3730,7 +3740,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3765,7 +3775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3805,7 +3815,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3855,7 +3865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3873,7 +3883,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3931,7 +3941,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3967,7 +3977,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -3985,7 +3995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4021,7 +4031,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4039,7 +4049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4057,7 +4067,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4077,7 +4087,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4095,7 +4105,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4133,7 +4143,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4207,7 +4217,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4225,7 +4235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4243,7 +4253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4262,7 +4272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4346,7 +4356,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4364,7 +4374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4382,7 +4392,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4419,7 +4429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4437,7 +4447,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4473,7 +4483,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4509,7 +4519,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4563,7 +4573,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4581,7 +4591,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4599,7 +4609,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4617,7 +4627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4868,7 +4878,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4886,7 +4896,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
@@ -4905,7 +4915,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 

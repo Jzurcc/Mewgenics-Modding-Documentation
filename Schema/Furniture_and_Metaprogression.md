@@ -16,8 +16,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum |  | 634 |
-| [`name`](./Enums.md#enum-name) | Enum |  | 634 |
+| [`desc`](./Enums.md#enum-desc) | String |  | 634 |
+| [`name`](./Enums.md#enum-name) | String |  | 634 |
 | `Comfort` | Number | Applies or references the 'Comfort' effect/state. | 406 |
 | `Appeal` | Number | Applies or references the 'Appeal' effect/state. | 338 |
 | `Stimulation` | Number | Applies or references the 'Stimulation' effect/state. | 268 |
