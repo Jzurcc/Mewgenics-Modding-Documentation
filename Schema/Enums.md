@@ -7207,30 +7207,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `scale`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-root), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.8` | |
-| `.75` | |
-| `.85` | |
-| `.9` | |
-| `.7` | |
-| `.5` | |
-| `.80` | |
-| `.6` | |
-
-</details>
-
-
----
-
 ### Enum: `custom_additional_ai_weight`
 <details>
 <summary><b>Expand</b></summary>
@@ -7898,52 +7874,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `speed_scale`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.2` | |
-| `.05` | |
-| `.25` | |
-| `.5` | |
-| `.3` | |
-| `.4` | |
-| `.50` | |
-
-</details>
-
-
----
-
-### Enum: `pitch`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Custom_Cats)](./Custom_Cats.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.7` | |
-| `.8` | |
-| `.6` | |
-| `.5` | |
-| `.9` | |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `set_adventure_token`
 <details>
 <summary><b>Expand</b></summary>
@@ -8186,36 +8116,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `shadow_size`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.8` | |
-| `.50` | |
-| `.5` | |
-| `.75` | |
-| `.25` | |
-| `.4` | |
-| `.6` | |
-| `.70` | |
-| `.85` | |
-| `.9` | |
-| `.20` | |
-| `.40` | |
-| `.60` | |
-| `.7` | |
-
-</details>
-
-
----
-
 ### Enum: `alias`
 <details>
 <summary><b>Expand</b></summary>
@@ -8300,27 +8200,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Squirrel` | |
 | `Toad` | |
 | `Turtle` | |
-
-</details>
-
-
----
-
-### Enum: `dampening`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ParticleBouncePlane`](./Miscellaneous.md#context-particlebounceplane), [`ParticleBouncePlane`](./Miscellaneous.md#context-particlebounceplane), [`ParticleLineCollisions`](./Miscellaneous.md#context-particlelinecollisions)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.75` | |
-| `.5` | |
-| `.95` | |
-| `.25` | |
-| `.1` | |
 
 </details>
 
@@ -8447,25 +8326,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AdventureToken_HasTakenNeedle` | |
 | `AdventureToken_RedNeedle` | |
 | `AdventureToken_YellowNeedle` | |
-
-</details>
-
-
----
-
-### Enum: `consumable_chance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`boss`](./Combat_Rewards.md#context-boss), [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.3` | |
-| `.5` | |
 
 </details>
 
@@ -8617,28 +8477,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `steven_unlock_zara_hard` | |
 | `steven_unlock_zara_impossible` | |
 | `time_machine_quest_finalstep` | |
-
-</details>
-
-
----
-
-### Enum: `amount`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`reverb_empty`](./House_and_Environment.md#context-reverb_empty), [`reverb_full`](./House_and_Environment.md#context-reverb_full), [`ParticleGlobalForce`](./Miscellaneous.md#context-particleglobalforce), [`battle`](./Miscellaneous.md#context-battle)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.65` | |
-| `.25` | |
-| `.35` | |
-| `.5` | |
-| `.1` | |
-| `.4` | |
 
 </details>
 
@@ -9030,24 +8868,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `item_chance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `preset`
 <details>
 <summary><b>Expand</b></summary>
@@ -9066,54 +8886,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ParkingLot` | |
 | `STONEROOM` | |
 | `StoneRoom` | |
-
-</details>
-
-
----
-
-### Enum: `size_start`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.2` | |
-| `.1` | |
-| `.3` | |
-| `.7` | |
-| `.6` | |
-| `.65` | |
-
-</details>
-
-
----
-
-### Enum: `alpha`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.3` | |
-| `.01` | |
-| `.1` | |
-| `.03` | |
-| `.005` | |
-| `.05` | |
-| `.10` | |
-| `.2` | |
 
 </details>
 
@@ -9223,23 +8995,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `negative_weight_scale`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.99` | |
-
-</details>
-
-
----
-
 ### Enum: `ontrigger`
 <details>
 <summary><b>Expand</b></summary>
@@ -9298,23 +9053,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | :--- | :--- |
 | `back` | |
 | `right` | |
-
-</details>
-
-
----
-
-### Enum: `spend_mana_scale`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.99` | |
 
 </details>
 
@@ -9850,25 +9588,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `alpha_out`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.2` | |
-| `.5` | |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `aoe_symmetry`
 <details>
 <summary><b>Expand</b></summary>
@@ -9959,23 +9678,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random_empty_armor_or_weapon` | |
 | `neck` | |
 | `random_empty` | |
-
-</details>
-
-
----
-
-### Enum: `spawn_object_distance_to_enemy`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `-.01` | |
 
 </details>
 
@@ -10077,51 +9779,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `alpha_in`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.2` | |
-| `.1` | |
-| `.3` | |
-| `.5` | |
-| `.01` | |
-| `.05` | |
-
-</details>
-
-
----
-
-### Enum: `emit_radius`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.4` | |
-| `.2` | |
-| `.1` | |
-| `.3` | |
-| `.05` | |
-| `.25` | |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `full_jump_animation`
 <details>
 <summary><b>Expand</b></summary>
@@ -10149,28 +9806,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `possess` | |
 | `pounce` | |
 | `walk` | |
-
-</details>
-
-
----
-
-### Enum: `size_end`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.2` | |
-| `.3` | |
-| `.5` | |
-| `.6` | |
-| `.7` | |
 
 </details>
 
@@ -10259,29 +9894,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SignalAmplifier` | |
 | `ThrobbingGristle` | |
 | `TransmitterAntenna` | |
-
-</details>
-
-
----
-
-### Enum: `chance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ArcLightning`](./Abilities_and_Spells.md#context-arclightning), [`BounceObject`](./Abilities_and_Spells.md#context-bounceobject), [`ChangeTile`](./Abilities_and_Spells.md#context-changetile), [`Cleave`](./Abilities_and_Spells.md#context-cleave), [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite), [`FindItemFromPool`](./Abilities_and_Spells.md#context-finditemfrompool), [`KnockOutCoin`](./Abilities_and_Spells.md#context-knockoutcoin), [`ObjectOnHitCharacter`](./Abilities_and_Spells.md#context-objectonhitcharacter), [`GainDisorderFromPool`](./Characters_and_Bosses.md#context-gaindisorderfrompool), [`SpawnThingOnDamage`](./Characters_and_Bosses.md#context-spawnthingondamage), [`DestroyEquipmentAndAttachParasite`](./Items_and_Equipment.md#context-destroyequipmentandattachparasite), [`SpawnEachTurn`](./Items_and_Equipment.md#context-spawneachturn), [`SpawnThingOnDamage`](./Items_and_Equipment.md#context-spawnthingondamage), [`FindItemFromPool`](./Passives_and_Statuses.md#context-finditemfrompool), [`ForceUseAbility`](./Passives_and_Statuses.md#context-forceuseability), [`SpawnEachTurn`](./Passives_and_Statuses.md#context-spawneachturn)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.25` | |
-| `.15` | |
-| `.2` | |
-| `.02` | |
-| `.1` | |
-| `.75` | |
 
 </details>
 
@@ -10393,23 +10005,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `QEVENT_THROBBINGARTERY_NAME` | |
 | `QEVENT_THROBBINGARTERY_NAME2` | |
 | `QEVENT_VOLCANO_NAME` | |
-
-</details>
-
-
----
-
-### Enum: `value`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -11276,25 +10871,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `spawn_object_distance_to_ally`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.0001` | |
-| `-.0001` | |
-| `-.01` | |
-
-</details>
-
-
----
-
 ### Enum: `tileset`
 <details>
 <summary><b>Expand</b></summary>
@@ -11600,25 +11176,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `head_HeadBrandJump` | |
 | `set_SpaceArmorJump` | |
 | `set_WitchJump` | |
-
-</details>
-
-
----
-
-### Enum: `ai_scale`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.25` | |
-| `.01` | |
 
 </details>
 
@@ -12229,24 +11786,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tank` | |
 | `Thief` | |
 | `Tinkerer` | |
-
-</details>
-
-
----
-
-### Enum: `HealthMultiplier`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.8` | |
-| `.5` | |
 
 </details>
 
@@ -13038,27 +12577,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `SizeScale`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`StacyMutant_Speed`](./Characters_and_Bosses.md#context-stacymutant_speed), [`passives`](./Elite_Buffs.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.75` | |
-| `.6` | |
-| `.8` | |
-| `.4` | |
-| `.7` | |
-
-</details>
-
-
----
-
 ### Enum: `StatusImmunity`
 <details>
 <summary><b>Expand</b></summary>
@@ -13244,63 +12762,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `size_in`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.3` | |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `size_out`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.9` | |
-| `.25` | |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `YOffset`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives), [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Characters_and_Bosses.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.35` | |
-| `-.18` | |
-
-</details>
-
-
----
-
 ### Enum: `animation_fail`
 <details>
 <summary><b>Expand</b></summary>
@@ -13312,24 +12773,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `choice_no_coins` | |
-
-</details>
-
-
----
-
-### Enum: `chain_distance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.38` | |
 
 </details>
 
@@ -13520,27 +12963,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `ambient`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`Lighting`](./Miscellaneous.md#context-lighting)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.7` | |
-| `.4` | |
-| `.6` | |
-| `.5` | |
-| `.8` | |
-
-</details>
-
-
----
-
 ### Enum: `beam_cap`
 <details>
 <summary><b>Expand</b></summary>
@@ -13604,23 +13026,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `emit_rate`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `end`
 <details>
 <summary><b>Expand</b></summary>
@@ -13636,25 +13041,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `lickAttack` | |
 | `monkAttack` | |
 | `upswipe` | |
-
-</details>
-
-
----
-
-### Enum: `friction`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ParticleBouncePlane`](./Miscellaneous.md#context-particlebounceplane)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.5` | |
-| `.2` | |
 
 </details>
 
@@ -13696,25 +13082,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `spinattackloop` | |
 | `lickAttack` | |
 | `monkAttack` | |
-
-</details>
-
-
----
-
-### Enum: `move_speed_multiplier`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`graphics`](./Characters_and_Bosses.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.66` | |
-| `.75` | |
 
 </details>
 
@@ -13949,24 +13316,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `weight`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `AmplifyStatus`
 <details>
 <summary><b>Expand</b></summary>
@@ -14027,24 +13376,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `npc_houseboss_intro_terminator_2` | |
 | `npc_houseboss_intro_terminator_3` | |
 | `npc_houseboss_intro_zaratana` | |
-
-</details>
-
-
----
-
-### Enum: `champ_chance_mini`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`easy`](./Difficulties.md#context-easy), [`hard`](./Difficulties.md#context-hard)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.5` | |
 
 </details>
 
@@ -14182,26 +13513,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_DimensionXUnlocked` | |
 | `mapflag_MeatWorldUnlockedFull` | |
 | `mapflag_MoonObeliskUnlocked` | |
-
-</details>
-
-
----
-
-### Enum: `speed_start`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.001` | |
-| `.1` | |
-| `.5` | |
-| `.8` | |
 
 </details>
 
@@ -14366,26 +13677,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `2+level` | |
 | `3+2*level` | |
 | `5+level` | |
-
-</details>
-
-
----
-
-### Enum: `odds`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`Conditional_BadRoll`](./Abilities_and_Spells.md#context-conditional_badroll), [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll), [`Conditional_BadRoll`](./Items_and_Equipment.md#context-conditional_badroll), [`Conditional_BadRoll`](./Passives_and_Statuses.md#context-conditional_badroll)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.16666666` | |
-| `.3` | |
-| `.5` | |
 
 </details>
 
@@ -14587,25 +13878,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `ReverbDelay`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`battle`](./Miscellaneous.md#context-battle)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.45` | |
-| `.2` | |
-| `.25` | |
-
-</details>
-
-
----
-
 ### Enum: `damage`
 <details>
 <summary><b>Expand</b></summary>
@@ -14638,24 +13910,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WorldEventLegacyCounter_CrackInTheWall` | |
 | `WorldEventLegacyToken_StartDigging` | |
 | `WorldEventLegacyCounter_CustomTokenString` | |
-
-</details>
-
-
----
-
-### Enum: `elite_chance_mini`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`easy`](./Difficulties.md#context-easy), [`hard`](./Difficulties.md#context-hard)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.5` | |
 
 </details>
 
@@ -14997,24 +14251,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `crit_chance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`BoostWeaponDamage`](./Items_and_Equipment.md#context-boostweapondamage), [`BoostWeaponDamage`](./Passives_and_Statuses.md#context-boostweapondamage)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.25` | |
-
-</details>
-
-
----
-
 ### Enum: `custom_priming_animation`
 <details>
 <summary><b>Expand</b></summary>
@@ -15049,23 +14285,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `water` | |
 | `SpellDamageUp` | |
 | `fire` | |
-
-</details>
-
-
----
-
-### Enum: `fall_randomize_timing`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
 
 </details>
 
@@ -15689,26 +14908,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `depth_offset`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `-.1` | |
-| `.01` | |
-| `.015` | |
-| `.1` | |
-
-</details>
-
-
----
-
 ### Enum: `detatched_animation`
 <details>
 <summary><b>Expand</b></summary>
@@ -15723,25 +14922,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LiquidMetalSpear` | |
 | `SpearGuyAttack` | |
 | `TinaSpear` | |
-
-</details>
-
-
----
-
-### Enum: `distance_to_enemy`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.01` | |
-| `-.01` | |
-| `-.5` | |
 
 </details>
 
@@ -15942,23 +15122,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `FireExtinguish` | |
-
-</details>
-
-
----
-
-### Enum: `speed`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -16191,23 +15354,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `DownRankAIIfWeaponUsable`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.001` | |
-
-</details>
-
-
----
-
 ### Enum: `EnableWeather`
 <details>
 <summary><b>Expand</b></summary>
@@ -16416,25 +15562,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `aoe_chance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.33` | |
-| `.4+.2*level` | |
-
-</details>
-
-
----
-
 ### Enum: `damage_tiles`
 <details>
 <summary><b>Expand</b></summary>
@@ -16446,42 +15573,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `all` | |
-
-</details>
-
-
----
-
-### Enum: `emit_shell`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `emit_timespread`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.25` | |
-| `.75` | |
 
 </details>
 
@@ -16799,24 +15890,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `time`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.75` | |
-
-</details>
-
-
----
-
 ### Enum: `trap`
 <details>
 <summary><b>Expand</b></summary>
@@ -16851,23 +15924,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `frank_caves_intro` | |
 | `jack_desert_intro` | |
 | `organ_boneyard_intro` | |
-
-</details>
-
-
----
-
-### Enum: `uifloaters_offset`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -16965,59 +16021,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sp_pill_fire` | |
 | `sp_pill_normal` | |
 | `sp_pill_tar` | |
-
-</details>
-
-
----
-
-### Enum: `Antidote`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`alt_spawn_pool`](./Characters_and_Bosses.md#context-alt_spawn_pool)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `BaseStatMultiply`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-| `.5` | |
-| `.666` | |
-
-</details>
-
-
----
-
-### Enum: `Blessing`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`alt_spawn_pool`](./Characters_and_Bosses.md#context-alt_spawn_pool)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -17381,41 +16384,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | :--- | :--- |
 | `BBTransformZealot` | |
 | `GenericRage` | |
-
-</details>
-
-
----
-
-### Enum: `accuracy`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `alpha_start`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.8` | |
-| `.5` | |
 
 </details>
 
@@ -17822,24 +16790,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `inherit_speed`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.15` | |
-
-</details>
-
-
----
-
 ### Enum: `initial_cutscene_day`
 <details>
 <summary><b>Expand</b></summary>
@@ -17907,23 +16857,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | :--- | :--- |
 | `Necromancer` | |
 | `AnyUnlocked` | |
-
-</details>
-
-
----
-
-### Enum: `lob_yoff`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `-.5` | |
 
 </details>
 
@@ -18354,25 +17287,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `zoomout_catvolume`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.6` | |
-| `.7` | |
-| `.8` | |
-
-</details>
-
-
----
-
 ### Enum: `AbilityEnabledIfHasStatus`
 <details>
 <summary><b>Expand</b></summary>
@@ -18560,24 +17474,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | :--- | :--- |
 | `DonateEnergy` | |
 | `DonateEnergy2` | |
-
-</details>
-
-
----
-
-### Enum: `Chicken`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.01` | |
-| `.1` | |
 
 </details>
 
@@ -18886,23 +17782,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `MoveSpeedMultiplier`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `MoveTowardsKillers`
 <details>
 <summary><b>Expand</b></summary>
@@ -19044,23 +17923,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `TriggerWerewolfTransform`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `UpgradeLevelUpClassActives`
 <details>
 <summary><b>Expand</b></summary>
@@ -19143,24 +18005,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | :--- | :--- |
 | `AREA_NAME_ALLEY` | |
 | `departed_first_real_adventure` | |
-
-</details>
-
-
----
-
-### Enum: `alpha_end`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.2` | |
-| `.5` | |
 
 </details>
 
@@ -19292,24 +18136,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `coins_bonus`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-| `.75` | |
-
-</details>
-
-
----
-
 ### Enum: `complete_adventure`
 <details>
 <summary><b>Expand</b></summary>
@@ -19357,24 +18183,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | :--- | :--- |
 | `attack2` | |
 | `bite1` | |
-
-</details>
-
-
----
-
-### Enum: `delay`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-| `.25` | |
 
 </details>
 
@@ -19673,23 +18481,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | :--- | :--- |
 | `AREA_NAME_MEATWORLD` | |
 | `mapflag_MeatWorldUnlockedFull` | |
-
-</details>
-
-
----
-
-### Enum: `movieclip_timescale`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -20097,23 +18888,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `very_rare`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.01` | |
-
-</details>
-
-
----
-
 ### Enum: `water_alt_shader`
 <details>
 <summary><b>Expand</b></summary>
@@ -20370,91 +19144,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `BackstabCritChance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-
-</details>
-
-
----
-
-### Enum: `BagOfSeeds`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
-### Enum: `BasicAttackCritChance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-
-</details>
-
-
----
-
-### Enum: `BirdFeed`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
-### Enum: `BirdPoopHat`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `BloatEyePassive2`
 <details>
 <summary><b>Expand</b></summary>
@@ -20557,23 +19246,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `Coin10`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`alt_spawn_pool`](./Characters_and_Bosses.md#context-alt_spawn_pool)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-
-</details>
-
-
----
-
 ### Enum: `ConfusionEffectOnTaggedAbilities`
 <details>
 <summary><b>Expand</b></summary>
@@ -20619,23 +19291,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `Telekinesis` | |
-
-</details>
-
-
----
-
-### Enum: `DeadHummingbird`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
 
 </details>
 
@@ -20897,40 +19552,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `GlowingSeed`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
-### Enum: `GoldenEgg`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `HarpoonTrapPassive`
 <details>
 <summary><b>Expand</b></summary>
@@ -20942,23 +19563,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `HarpoonTrapPull` | |
-
-</details>
-
-
----
-
-### Enum: `HarpysClaw`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -21101,40 +19705,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `LineOfSightTrueSightAura`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `LostSoul`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `Madness`
 <details>
 <summary><b>Expand</b></summary>
@@ -21146,23 +19716,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `level` | |
-
-</details>
-
-
----
-
-### Enum: `MagicSeed`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
 
 </details>
 
@@ -21237,57 +19790,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `Parousworm`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `PeaceSymbol`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
-### Enum: `PeaceSymbolFacePaint`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `Peralta`
 <details>
 <summary><b>Expand</b></summary>
@@ -21337,40 +19839,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `RaptorEgg`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-
-</details>
-
-
----
-
-### Enum: `RavenFeather`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `ReloadOnElementalDamageReceived`
 <details>
 <summary><b>Expand</b></summary>
@@ -21399,23 +19867,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `rock` | |
-
-</details>
-
-
----
-
-### Enum: `RemoveAmbientLightEffects`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -21467,23 +19918,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `Spook` | |
-
-</details>
-
-
----
-
-### Enum: `RockyArmorSalvage`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.75` | |
 
 </details>
 
@@ -21881,23 +20315,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `TieDyeBandana`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `TileElementDamageImmunity`
 <details>
 <summary><b>Expand</b></summary>
@@ -22000,23 +20417,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `TurnControlDelay`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-
-</details>
-
-
----
-
 ### Enum: `UseAbilityWhenShieldDepleted`
 <details>
 <summary><b>Expand</b></summary>
@@ -22051,40 +20451,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `WeaponAuxMultiplier`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `WeirdEgg`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
-
-</details>
-
-
----
-
 ### Enum: `WhitelistPickupType`
 <details>
 <summary><b>Expand</b></summary>
@@ -22096,23 +20462,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `food` | |
-
-</details>
-
-
----
-
-### Enum: `WishBone`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.3` | |
 
 </details>
 
@@ -22370,23 +20719,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `apex_time`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.35` | |
-
-</details>
-
-
----
-
 ### Enum: `appearance`
 <details>
 <summary><b>Expand</b></summary>
@@ -22608,23 +20940,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `chain_chance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.9` | |
-
-</details>
-
-
----
-
 ### Enum: `chapter`
 <details>
 <summary><b>Expand</b></summary>
@@ -22727,57 +21042,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `damage_ally`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `damage_enemy_corpse`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-
-</details>
-
-
----
-
-### Enum: `danger_avoidance`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-
-</details>
-
-
----
-
 ### Enum: `dash_bonk_animation`
 <details>
 <summary><b>Expand</b></summary>
@@ -22789,23 +21053,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `bonk` | |
-
-</details>
-
-
----
-
-### Enum: `debuff_ally`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
 
 </details>
 
@@ -22861,23 +21108,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `depth_bias`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-
-</details>
-
-
----
-
 ### Enum: `dex`
 <details>
 <summary><b>Expand</b></summary>
@@ -22906,57 +21136,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `auto` | |
-
-</details>
-
-
----
-
-### Enum: `distance_to_ally`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `-.1` | |
-
-</details>
-
-
----
-
-### Enum: `distance_to_corpse`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `-.1` | |
-
-</details>
-
-
----
-
-### Enum: `distance_to_water`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `-.0001` | |
 
 </details>
 
@@ -23252,23 +21431,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `fixed_jump_speed`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.8` | |
-
-</details>
-
-
----
-
 ### Enum: `flushmaster`
 <details>
 <summary><b>Expand</b></summary>
@@ -23488,23 +21650,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `hang_time`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.6` | |
-
-</details>
-
-
----
-
 ### Enum: `head_drop`
 <details>
 <summary><b>Expand</b></summary>
@@ -23641,23 +21786,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `inherit_velocity`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ParticleCharacterCollision`](./Miscellaneous.md#context-particlecharactercollision)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `int`
 <details>
 <summary><b>Expand</b></summary>
@@ -23669,40 +21797,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `aux` | |
-
-</details>
-
-
----
-
-### Enum: `jump_height_multiplier`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-
-</details>
-
-
----
-
-### Enum: `kill_enemy`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.2` | |
 
 </details>
 
@@ -23845,23 +21939,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `lob_speed`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
 ### Enum: `magecat`
 <details>
 <summary><b>Expand</b></summary>
@@ -23890,40 +21967,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `auto` | |
-
-</details>
-
-
----
-
-### Enum: `min_radius`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.2` | |
-
-</details>
-
-
----
-
-### Enum: `min_throw_height`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
 
 </details>
 
@@ -24226,23 +22269,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `precast_delay`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.25` | |
-
-</details>
-
-
----
-
 ### Enum: `preferred_distance`
 <details>
 <summary><b>Expand</b></summary>
@@ -24458,40 +22484,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `for` | |
-
-</details>
-
-
----
-
-### Enum: `reset_center_because_no_target_halflife`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
-
-</details>
-
-
----
-
-### Enum: `reset_center_because_of_animation_halflife`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.05` | |
 
 </details>
 
@@ -24787,23 +22779,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-### Enum: `teleport_tracking_halflife`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.01` | |
-
-</details>
-
-
----
-
 ### Enum: `thebloat`
 <details>
 <summary><b>Expand</b></summary>
@@ -24849,40 +22824,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | Value | Definition |
 | :--- | :--- |
 | `auto` | |
-
-</details>
-
-
----
-
-### Enum: `total_distance_moved`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.5` | |
-
-</details>
-
-
----
-
-### Enum: `tracking_acquisition_halflife`
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
-
-**Confirmed Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `.1` | |
 
 </details>
 

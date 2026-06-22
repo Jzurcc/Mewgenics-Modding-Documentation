@@ -53,10 +53,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |
-| `palette` | Number |  | 13 |
+| `palette` | Integer |  | 13 |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 13 |
 | [`default_face`](./Enums.md#enum-default_face) | Enum |  | 1 |
-| `hud_palette` | Number |  | 1 |
+| `hud_palette` | Integer |  | 1 |
 
 </details>
 
@@ -91,13 +91,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `cha` | Number |  | 7 |
-| `int` | Number |  | 6 |
-| `spd` | Number |  | 6 |
-| `str` | Number |  | 6 |
-| `dex` | Number |  | 4 |
-| `lck` | Number |  | 4 |
+| `con` | Integer |  | 9 |
+| `cha` | Integer |  | 7 |
+| `int` | Integer |  | 6 |
+| `spd` | Integer |  | 6 |
+| `str` | Integer |  | 6 |
+| `dex` | Integer |  | 4 |
+| `lck` | Integer |  | 4 |
 
 </details>
 
@@ -135,7 +135,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddStartingMana` | Number |  | 1 |
+| `AddStartingMana` | Integer |  | 1 |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array |  | 1 |
 | [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum |  | 1 |
 | [`TinkererBasicAttackSwitching`](#context-tinkererbasicattackswitching) | Block |  | 1 |

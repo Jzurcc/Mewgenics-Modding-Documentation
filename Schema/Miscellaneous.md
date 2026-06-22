@@ -95,32 +95,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `Fights` | Number |  | 3 |
-| `Poison` | Number |  | 3 |
-| `count` | Number |  | 3 |
+| `Fights` | Integer |  | 3 |
+| `Poison` | Integer |  | 3 |
+| `count` | Integer |  | 3 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 3 |
-| `con` | Number |  | 2 |
-| `ears` | Number |  | 2 |
-| `fights_skipped` | Number |  | 2 |
-| `mouth` | Number |  | 2 |
+| `con` | Integer |  | 2 |
+| `ears` | Integer |  | 2 |
+| `fights_skipped` | Integer |  | 2 |
+| `mouth` | Integer |  | 2 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 2 |
-| `str` | Number |  | 2 |
-| `tail` | Number |  | 2 |
+| `str` | Integer |  | 2 |
+| `tail` | Integer |  | 2 |
 | [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block |  | 1 |
 | `asymmetric` | Boolean |  | 1 |
-| `chance` | Number |  | 1 |
-| `choose_cat_with_min_health` | Number |  | 1 |
+| `chance` | Integer |  | 1 |
+| `choose_cat_with_min_health` | Integer |  | 1 |
 | [`common`](#context-common) | Block |  | 1 |
 | [`conditional_reward`](#context-conditional_reward) | Block |  | 1 |
 | [`cutscene`](./Strings.md#string-cutscene) | String |  | 1 |
 | [`else`](#context-else) | Block |  | 1 |
 | [`event`](./Enums.md#enum-event) | Enum |  | 1 |
-| `fights` | Number |  | 1 |
-| `initial_health` | Number |  | 1 |
+| `fights` | Integer |  | 1 |
+| `initial_health` | Integer |  | 1 |
 | [`mutation`](#context-mutation) | Block |  | 1 |
 | [`pool`](./Enums.md#enum-pool) | Enum |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
-| `random` | Number |  | 1 |
+| `random` | Integer |  | 1 |
 | [`rare`](#context-rare) | Block |  | 1 |
 | [`requirements`](#context-requirements) | Block |  | 1 |
 | [`restrict`](./Enums.md#enum-restrict) | Enum |  | 1 |
@@ -128,7 +128,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`return_during`](./Enums.md#enum-return_during) | Enum |  | 1 |
 | [`reward`](#context-reward) | Block |  | 1 |
 | `same_cat` | Boolean |  | 1 |
-| `set_frame` | Number |  | 1 |
+| `set_frame` | Integer |  | 1 |
 | `skip_result_screen` | Boolean |  | 1 |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum |  | 1 |
 
@@ -173,8 +173,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ambush_next_basic_fights` | Number |  | 1 |
-| `gain_coins` | Number |  | 1 |
+| `ambush_next_basic_fights` | Integer |  | 1 |
+| `gain_coins` | Integer |  | 1 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
 | [`set_subject`](./Enums.md#enum-set_subject) | Enum |  | 1 |
@@ -195,7 +195,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Fear` | Number |  | 1 |
+| `Fear` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -216,7 +216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
-| `set_frame` | Number |  | 1 |
+| `set_frame` | Integer |  | 1 |
 
 </details>
 
@@ -252,7 +252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum |  | 1 |
-| `party_damage` | Number |  | 1 |
+| `party_damage` | Integer |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
 
 </details>
@@ -270,7 +270,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `eyes` | Number |  | 1 |
+| `eyes` | Integer |  | 1 |
 
 </details>
 
@@ -290,7 +290,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
-| `set_frame` | Number |  | 1 |
+| `set_frame` | Integer |  | 1 |
 
 </details>
 
@@ -310,11 +310,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `act` | Number |  | 9 |
+| `act` | Integer |  | 9 |
 | [`arrival_unlock`](./Enums.md#enum-arrival_unlock) | Enum |  | 9 |
-| `index` | Number |  | 9 |
+| `index` | Integer |  | 9 |
 | [`initial_cooldown`](./Arrays.md#array-initial_cooldown) | Array |  | 9 |
-| `lead_time` | Number |  | 9 |
+| `lead_time` | Integer |  | 9 |
 | [`level`](./Math_Equations.md) | Equation |  | 9 |
 | [`music`](./Enums.md#enum-music) | Enum |  | 9 |
 | [`rematch_cooldown`](./Arrays.md#array-rematch_cooldown) | Array |  | 9 |
@@ -346,60 +346,60 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 154 |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum |  | 140 |
-| `emit_amount` | Number |  | 139 |
-| `emit_rate` | Number |  | 139 |
+| `emit_amount` | Integer |  | 139 |
+| `emit_rate` | Float |  | 139 |
 | [`particle_lifetime`](./Arrays.md#array-particle_lifetime) | Array |  | 138 |
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum |  | 138 |
 | [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum |  | 137 |
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array |  | 132 |
-| `emit_spread` | Number |  | 125 |
-| `speed_start` | Number |  | 120 |
+| `emit_spread` | Integer |  | 125 |
+| `speed_start` | Float |  | 120 |
 | [`live_bounds`](./Arrays.md#array-live_bounds) | Array |  | 103 |
 | [`size_start`](./Arrays.md#array-size_start) | Array |  | 94 |
 | [`scripts`](#context-scripts) | Block |  | 90 |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array |  | 81 |
-| `size_end` | Number |  | 76 |
+| `size_end` | Float |  | 76 |
 | [`friction`](./Arrays.md#array-friction) | Array |  | 72 |
 | `face_moving_direction` | Boolean |  | 64 |
-| `alpha_end` | Number |  | 61 |
+| `alpha_end` | Float |  | 61 |
 | [`speed_scale`](./Arrays.md#array-speed_scale) | Array |  | 58 |
-| `alpha_start` | Number |  | 53 |
+| `alpha_start` | Float |  | 53 |
 | [`rotation`](./Arrays.md#array-rotation) | Array |  | 52 |
 | [`size`](./Enums.md#enum-size) | Enum |  | 44 |
-| [`emit_radius`](./Enums.md#enum-emit_radius) | Enum |  | 30 |
+| `emit_radius` | Float |  | 30 |
 | [`rotation_speed_start`](./Arrays.md#array-rotation_speed_start) | Array |  | 28 |
 | [`force_start`](./Arrays.md#array-force_start) | Array |  | 26 |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum |  | 26 |
-| [`alpha_out`](./Enums.md#enum-alpha_out) | Enum |  | 25 |
-| `alpha` | Number |  | 23 |
+| `alpha_out` | Float |  | 25 |
+| `alpha` | Float |  | 23 |
 | [`ownership`](./Enums.md#enum-ownership) | Enum |  | 23 |
-| [`alpha_in`](./Enums.md#enum-alpha_in) | Enum |  | 21 |
+| `alpha_in` | Float |  | 21 |
 | [`combo`](./Arrays.md#array-combo) | Array |  | 19 |
-| `rotation_speed_end` | Number |  | 19 |
+| `rotation_speed_end` | Integer |  | 19 |
 | [`speed`](./Arrays.md#array-speed) | Array |  | 17 |
-| `depth_bias` | Number |  | 16 |
+| `depth_bias` | Float |  | 16 |
 | `flat_movement` | Boolean |  | 16 |
 | [`force_end`](./Arrays.md#array-force_end) | Array |  | 16 |
 | [`force`](./Arrays.md#array-force) | Array |  | 15 |
 | [`chain`](./Enums.md#enum-chain) | Enum |  | 14 |
-| `inherit_speed` | Number |  | 14 |
+| `inherit_speed` | Float |  | 14 |
 | [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array |  | 12 |
-| [`size_in`](./Enums.md#enum-size_in) | Enum |  | 11 |
+| `size_in` | Float |  | 11 |
 | `unlit` | Boolean |  | 9 |
 | [`render_layer`](./Enums.md#enum-render_layer) | Enum |  | 8 |
 | [`rotation_start`](./Arrays.md#array-rotation_start) | Array |  | 8 |
-| [`size_out`](./Enums.md#enum-size_out) | Enum |  | 8 |
-| `emit_shell` | Number |  | 5 |
-| [`emit_timespread`](./Enums.md#enum-emit_timespread) | Enum |  | 5 |
+| `size_out` | Float |  | 8 |
+| `emit_shell` | Float |  | 5 |
+| `emit_timespread` | Float |  | 5 |
 | [`friction_end`](./Arrays.md#array-friction_end) | Array |  | 5 |
 | [`material`](./Enums.md#enum-material) | Enum |  | 5 |
 | [`spurt`](./Enums.md#enum-spurt) | Enum |  | 5 |
 | [`friction_start`](./Arrays.md#array-friction_start) | Array |  | 4 |
 | [`emit_timespread_curve`](./Enums.md#enum-emit_timespread_curve) | Enum |  | 3 |
-| `speed_end` | Number |  | 3 |
-| `max_particles` | Number |  | 2 |
-| [`movieclip_timescale`](./Enums.md#enum-movieclip_timescale) | Enum |  | 2 |
-| [`chain_chance`](./Enums.md#enum-chain_chance) | Enum |  | 1 |
+| `speed_end` | Integer |  | 3 |
+| `max_particles` | Integer |  | 2 |
+| `movieclip_timescale` | Float |  | 2 |
+| `chain_chance` | Float |  | 1 |
 | `continual_emission` | Boolean |  | 1 |
 | [`emitshape_scale`](./Arrays.md#array-emitshape_scale) | Array |  | 1 |
 | `is_3D` | Boolean |  | 1 |
@@ -423,7 +423,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ParticleGlobalForce`](#context-particleglobalforce) | Block |  | 27 |
 | [`ParticleTornadoForce`](#context-particletornadoforce) | Block |  | 19 |
 | [`ParticleRandomForce`](./Arrays.md#array-particlerandomforce) | Array |  | 18 |
-| `ParticleAttractor` | Number |  | 9 |
+| `ParticleAttractor` | Integer |  | 9 |
 | [`ParticleCharacterCollision`](#context-particlecharactercollision) | Block |  | 1 |
 
 </details>
@@ -441,11 +441,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`dampening`](./Enums.md#enum-dampening) | Enum |  | 69 |
-| `friction` | Number |  | 65 |
+| `dampening` | Float |  | 69 |
+| `friction` | Float |  | 65 |
 | [`plane`](./Enums.md#enum-plane) | Enum |  | 32 |
-| `position` | Number |  | 32 |
-| `rotation_dampening` | Number |  | 1 |
+| `position` | Integer |  | 32 |
+| `rotation_dampening` | Integer |  | 1 |
 
 </details>
 
@@ -462,7 +462,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `amount` | Number |  | 27 |
+| `amount` | Float |  | 27 |
 | [`id`](./Enums.md#enum-id) | Enum |  | 27 |
 
 </details>
@@ -481,7 +481,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`axis`](./Arrays.md#array-axis) | Array |  | 19 |
-| `force` | Number |  | 19 |
+| `force` | Integer |  | 19 |
 | [`point`](./Arrays.md#array-point) | Array |  | 19 |
 
 </details>
@@ -498,9 +498,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`towards`](./Arrays.md#array-towards) | Array |  | 7 |
-| `force_end` | Number |  | 6 |
-| `force_start` | Number |  | 6 |
-| `force` | Number |  | 1 |
+| `force_end` | Integer |  | 6 |
+| `force_start` | Integer |  | 6 |
+| `force` | Integer |  | 1 |
 
 </details>
 
@@ -533,9 +533,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `character_sphere_offset` | Number |  | 1 |
-| [`inherit_velocity`](./Enums.md#enum-inherit_velocity) | Enum |  | 1 |
-| `pushforce` | Number |  | 1 |
+| `character_sphere_offset` | Integer |  | 1 |
+| `inherit_velocity` | Float |  | 1 |
+| `pushforce` | Integer |  | 1 |
 
 </details>
 
@@ -558,35 +558,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`emit_amount`](./Arrays.md#array-emit_amount) | Array |  | 19 |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array |  | 19 |
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array |  | 19 |
-| `emit_rate` | Number |  | 19 |
-| `emit_spread` | Number |  | 19 |
+| `emit_rate` | Float |  | 19 |
+| `emit_spread` | Integer |  | 19 |
 | [`live_bounds`](./Arrays.md#array-live_bounds) | Array |  | 19 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 19 |
-| `particle_lifetime` | Number |  | 19 |
+| `particle_lifetime` | Integer |  | 19 |
 | [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum |  | 19 |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum |  | 19 |
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum |  | 19 |
 | [`speed_start`](./Arrays.md#array-speed_start) | Array |  | 19 |
-| [`alpha`](./Enums.md#enum-alpha) | Enum |  | 18 |
+| `alpha` | Float |  | 18 |
 | [`scripts`](#context-scripts) | Block |  | 18 |
 | [`force`](./Arrays.md#array-force) | Array |  | 13 |
 | `face_moving_direction` | Boolean |  | 12 |
-| [`size_start`](./Enums.md#enum-size_start) | Enum |  | 11 |
-| [`speed_scale`](./Enums.md#enum-speed_scale) | Enum |  | 11 |
+| `size_start` | Float |  | 11 |
+| `speed_scale` | Float |  | 11 |
 | [`size`](./Arrays.md#array-size) | Array |  | 9 |
 | [`chain`](./Enums.md#enum-chain) | Enum |  | 8 |
 | [`friction_end`](./Arrays.md#array-friction_end) | Array |  | 5 |
 | [`friction_start`](./Arrays.md#array-friction_start) | Array |  | 5 |
 | [`render_layer`](./Enums.md#enum-render_layer) | Enum |  | 5 |
-| `size_end` | Number |  | 5 |
+| `size_end` | Float |  | 5 |
 | [`combo`](./Arrays.md#array-combo) | Array |  | 4 |
-| [`size_out`](./Enums.md#enum-size_out) | Enum |  | 4 |
-| [`alpha_in`](./Enums.md#enum-alpha_in) | Enum |  | 3 |
-| [`alpha_out`](./Enums.md#enum-alpha_out) | Enum |  | 3 |
+| `size_out` | Float |  | 4 |
+| `alpha_in` | Float |  | 3 |
+| `alpha_out` | Float |  | 3 |
 | [`rotation`](./Arrays.md#array-rotation) | Array |  | 3 |
 | [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array |  | 3 |
-| `rotation_speed_end` | Number |  | 3 |
-| [`size_in`](./Enums.md#enum-size_in) | Enum |  | 1 |
+| `rotation_speed_end` | Integer |  | 3 |
+| `size_in` | Float |  | 1 |
 
 </details>
 
@@ -622,8 +622,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dampening` | Number |  | 6 |
-| `friction` | Number |  | 6 |
+| `dampening` | Float |  | 6 |
+| `friction` | Float |  | 6 |
 | `end_on_collision` | Boolean |  | 2 |
 
 </details>
@@ -641,8 +641,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dampening` | Number |  | 5 |
-| `friction` | Number |  | 5 |
+| `dampening` | Float |  | 5 |
+| `friction` | Float |  | 5 |
 
 </details>
 
@@ -665,7 +665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`areas`](./Arrays.md#array-areas) | Array |  | 6 |
 | [`classes`](./Arrays.md#array-classes) | Array |  | 6 |
-| `min_difficulty` | Number |  | 6 |
+| `min_difficulty` | Integer |  | 6 |
 | `mono_cat_run` | Boolean |  | 6 |
 | `solo_cat_run` | Boolean |  | 6 |
 
@@ -771,11 +771,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`image`](./Strings.md#string-image) | String |  | 27 |
 | [`name`](./Strings.md#string-name) | String |  | 27 |
-| `category` | Number |  | 26 |
+| `category` | Integer |  | 26 |
 | [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 26 |
 | `paint` | Boolean |  | 26 |
-| `subcategory` | Number |  | 26 |
-| `tile_layer` | Number |  | 26 |
+| `subcategory` | Integer |  | 26 |
+| `tile_layer` | Integer |  | 26 |
 
 </details>
 
@@ -790,9 +790,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `BlankTile` | Number |  | 2 |
-| `GrassTile` | Number |  | 2 |
-| `TallGrassTile` | Number |  | 2 |
+| `BlankTile` | Integer |  | 2 |
+| `GrassTile` | Integer |  | 2 |
+| `TallGrassTile` | Integer |  | 2 |
 
 </details>
 
@@ -868,11 +868,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `volume_adjustment` | Number |  | 15 |
-| [`amount`](./Enums.md#enum-amount) | Enum |  | 14 |
+| `volume_adjustment` | Integer |  | 15 |
+| `amount` | Float |  | 14 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 14 |
-| `DecayTime` | Number |  | 11 |
-| [`ReverbDelay`](./Enums.md#enum-reverbdelay) | Enum |  | 7 |
+| `DecayTime` | Integer |  | 11 |
+| `ReverbDelay` | Float |  | 7 |
 
 </details>
 
@@ -906,7 +906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ambient`](./Enums.md#enum-ambient) | Enum |  | 10 |
+| `ambient` | Float |  | 10 |
 | [`bigrays`](./Arrays.md#array-bigrays) | Array |  | 6 |
 | [`smallrays`](./Arrays.md#array-smallrays) | Array |  | 6 |
 | [`smallray_clip`](./Enums.md#enum-smallray_clip) | Enum |  | 2 |

@@ -25,16 +25,16 @@ This document defines the `graphics {}` schema. This block configures all visual
 | [`animation_in`](./Enums.md#enum-animation_in) | Enum | Used for transition states (like burrowing). |
 | [`animation_out`](./Enums.md#enum-animation_out) | Enum | Used for transition states (like burrowing). |
 | `aoe_spell_on_land` | Boolean | Visual trigger when a jump lands. |
-| `apex_distance` | Number | Calculations for the peak of a jump/lob arc. |
-| [`apex_time`](./Enums.md#enum-apex_time) | Enum | Calculations for the peak of a jump/lob arc. |
+| `apex_distance` | Integer | Calculations for the peak of a jump/lob arc. |
+| `apex_time` | Float | Calculations for the peak of a jump/lob arc. |
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum | Specific spawn points for particles. |
-| `art_flip` | Number |  |
+| `art_flip` | Integer |  |
 | [`beam_cap`](./Enums.md#enum-beam_cap) | Enum | Flash movieclips used to render continuous laser beams. |
 | [`beam_clip`](./Enums.md#enum-beam_clip) | Enum | Flash movieclips used to render continuous laser beams. |
 | `bounce_on_hit` | Boolean | Visual hop when striking a target. |
 | `bypass_combatspeed` | Boolean |  |
 | [`center_particle`](./Enums.md#enum-center_particle) | Enum | Specific spawn points for particles. |
-| [`chain_distance`](./Enums.md#enum-chain_distance) | Enum | Creates a tethered repeating graphic (like a hook). |
+| `chain_distance` | Float | Creates a tethered repeating graphic (like a hook). |
 | [`chain_movieclip`](./Enums.md#enum-chain_movieclip) | Enum | Creates a tethered repeating graphic (like a hook). |
 | [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum |  |
 | [`custom_priming_animation`](./Enums.md#enum-custom_priming_animation) | Enum | Animation used while charging an ability. |
@@ -51,18 +51,18 @@ This document defines the `graphics {}` schema. This block configures all visual
 | [`dash_start_animation`](./Enums.md#enum-dash_start_animation) | Enum |  |
 | [`dead`](./Enums.md#enum-dead) | Enum |  |
 | [`deadhit`](./Enums.md#enum-deadhit) | Enum |  |
-| `decelerate` | Number | Visual slowdown at the end of a movement. |
+| `decelerate` | Integer | Visual slowdown at the end of a movement. |
 | [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum |  |
 | [`default_face`](./Enums.md#enum-default_face) | Enum |  |
-| `delay` | Number | Frame delay before firing projectile/effect. |
+| `delay` | Float | Frame delay before firing projectile/effect. |
 | `delay_from_map_center` | Boolean | Positional based timing delays. |
 | `delay_from_map_edge` | Boolean | Delays effect based on distance from the screen edge. |
 | `delay_from_reverse_map_edge` | Boolean |  |
-| [`depth_offset`](./Enums.md#enum-depth_offset) | Enum |  |
+| `depth_offset` | Float |  |
 | `desc` | String | Localization key for the character's desc. |
 | [`detatched_animation`](./Enums.md#enum-detatched_animation) | Enum | Plays an animation separated from the character body. |
 | `detatched_animation_cutoff` | Boolean |  |
-| `detatched_animation_reach` | Number |  |
+| `detatched_animation_reach` | Integer |  |
 | `do_animation_offscreen` | Boolean |  |
 | `do_damage_immediately` | Boolean | Applies math before the animation actually hits. |
 | `do_not_clear_placeholder` | Boolean |  |
@@ -71,51 +71,51 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `dont_sink` | Boolean |  |
 | `dont_visualize_ai` | Boolean |  |
 | [`dying`](./Enums.md#enum-dying) | Enum |  |
-| `easing` | Number | Smoothing function for movement animations. |
+| `easing` | Integer | Smoothing function for movement animations. |
 | [`empty_animation`](./Enums.md#enum-empty_animation) | Enum |  |
 | [`end`](./Enums.md#enum-end) | Enum | Segments for continuous channeled animations. |
 | `face_targets` | Boolean | Forces the sprite to look at the target tile. |
 | `face_toss_target` | Boolean |  |
 | `fall_from_sky` | Boolean | Spawns the projectile from the top of the screen. |
-| [`fall_randomize_timing`](./Enums.md#enum-fall_randomize_timing) | Enum |  |
+| `fall_randomize_timing` | Float |  |
 | `first_castpoint_is_self_damage_only` | Boolean |  |
-| `fixed_jump_height` | Number |  |
-| `fixed_jump_speed` | Number |  |
+| `fixed_jump_height` | Integer |  |
+| `fixed_jump_speed` | Float |  |
 | `four_way_animations` | Boolean |  |
 | [`full_jump_animation`](./Enums.md#enum-full_jump_animation) | Enum |  |
-| `full_jump_sync_frames` | Number |  |
-| `full_jump_windup_frames` | Number |  |
+| `full_jump_sync_frames` | Integer |  |
+| `full_jump_windup_frames` | Integer |  |
 | `fx_is_placeholder_animation` | Boolean |  |
 | `fx_random_flip` | Boolean |  |
 | [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  |
-| [`hang_time`](./Enums.md#enum-hang_time) | Enum |  |
+| `hang_time` | Float |  |
 | [`hit`](./Enums.md#enum-hit) | Enum |  |
-| `hud_palette` | Number |  |
+| `hud_palette` | Integer |  |
 | `ignore_slowtiles` | Boolean |  |
 | [`jump_attack_animation`](./Enums.md#enum-jump_attack_animation) | Enum | Overrides for jump physics. |
-| [`jump_height_multiplier`](./Enums.md#enum-jump_height_multiplier) | Enum | Overrides for jump physics. |
-| `jump_speed_multiplier` | Number |  |
+| `jump_height_multiplier` | Float | Overrides for jump physics. |
+| `jump_speed_multiplier` | Integer |  |
 | [`jump_start_animation`](./Enums.md#enum-jump_start_animation) | Enum |  |
 | [`land_animation`](./Enums.md#enum-land_animation) | Enum |  |
 | `lob` | Boolean |  |
-| `lob_height` | Number | Adjustments for arcing projectiles. |
-| [`lob_speed`](./Enums.md#enum-lob_speed) | Enum | Adjustments for arcing projectiles. |
-| [`lob_yoff`](./Enums.md#enum-lob_yoff) | Enum | Adjustments for arcing projectiles. |
+| `lob_height` | Integer | Adjustments for arcing projectiles. |
+| `lob_speed` | Float | Adjustments for arcing projectiles. |
+| `lob_yoff` | Float | Adjustments for arcing projectiles. |
 | `lock_orientation_during_dash` | Boolean | Prevents the sprite from flipping mid-dash. |
 | [`loop`](./Enums.md#enum-loop) | Enum | Segments for continuous channeled animations. |
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum |  |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  |
-| `max_range` | Number | The maximum and minimum distance required to cast. |
-| `max_throw_height` | Number |  |
-| `max_tiles_single_loop` | Number |  |
-| `min_range` | Number | The maximum and minimum distance required to cast. |
-| `min_throw_height` | Number |  |
+| `max_range` | Integer | The maximum and minimum distance required to cast. |
+| `max_throw_height` | Integer |  |
+| `max_tiles_single_loop` | Integer |  |
+| `min_range` | Integer | The maximum and minimum distance required to cast. |
+| `min_throw_height` | Float |  |
 | [`miss_particle`](./Enums.md#enum-miss_particle) | Enum | Specific spawn points for particles. |
 | [`miss_random_delay`](./Arrays.md#array-miss_random_delay) | Array |  |
 | [`mode`](./Enums.md#enum-mode) | Enum |  |
 | [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum |  |
-| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Enum |  |
-| `move_speed_sync_frames` | Number |  |
+| `move_speed_multiplier` | Float |  |
+| `move_speed_sync_frames` | Integer |  |
 | [`move_start_animation`](./Enums.md#enum-move_start_animation) | Enum |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  |
 | `name` | String | Localization key for the character's name. |
@@ -124,12 +124,12 @@ This document defines the `graphics {}` schema. This block configures all visual
 | [`non_blocking_animations`](./Arrays.md#array-non_blocking_animations) | Array |  |
 | `othercat_placeholder_available` | Boolean |  |
 | [`override_portrait`](./Enums.md#enum-override_portrait) | Enum |  |
-| `palette` | Number | Swaps the color palette ID. |
+| `palette` | Integer | Swaps the color palette ID. |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. |
 | [`particle_mat`](./Enums.md#enum-particle_mat) | Enum |  |
-| `piece_alt_frame` | Number |  |
+| `piece_alt_frame` | Integer |  |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  |
-| [`precast_delay`](./Enums.md#enum-precast_delay) | Enum |  |
+| `precast_delay` | Float |  |
 | [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum |  |
 | [`prime_animation`](./Enums.md#enum-prime_animation) | Enum |  |
 | `primed_alt_animation` | String |  |
@@ -140,25 +140,25 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `randomize_starting_frame` | Boolean |  |
 | `reverse_orientation` | Boolean |  |
 | [`rocket_swirl`](#rocket_swirl) | Block | Visual parameters for swirling projectile paths. |
-| [`scale`](./Enums.md#enum-scale) | Enum |  |
+| `scale` | Float |  |
 | `self_damage_mid_port` | Boolean |  |
 | `shade_occluded_objects` | Boolean |  |
 | [`shadow`](./Enums.md#enum-shadow) | Enum |  |
-| `shadow_size` | Number |  |
+| `shadow_size` | Float |  |
 | `show_infinity_damage_warning` | Boolean |  |
 | `single_projectile` | Boolean |  |
 | [`spawn_offset`](./Arrays.md#array-spawn_offset) | Array |  |
 | `spawnin_animation` | String |  |
-| `speed` | Number | Rotations per second. |
+| `speed` | Float | Rotations per second. |
 | [`start`](./Enums.md#enum-start) | Enum | Segments for continuous channeled animations. |
-| `status_display_count_max` | Number |  |
+| `status_display_count_max` | Integer |  |
 | [`stunned`](./Enums.md#enum-stunned) | Enum |  |
-| `sync_frames` | Number |  |
-| `sync_speed` | Number |  |
-| `throw_speed` | Number |  |
+| `sync_frames` | Integer |  |
+| `sync_speed` | Integer |  |
+| `throw_speed` | Integer |  |
 | [`tint`](./Arrays.md#array-tint) | Array |  |
 | `tooltip` | String |  |
-| `uifloaters_offset` | Number |  |
+| `uifloaters_offset` | Float |  |
 | `uncatchable` | Boolean |  |
 | `use_directional_animations` | Boolean |  |
 | `use_hit_alts` | Boolean |  |
@@ -169,7 +169,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `use_rotation` | Boolean |  |
 | `use_rotation_once` | Boolean |  |
 | `use_super_armor` | Boolean | Prevents flinch animations from interrupting this cast. |
-| `visual_delay_but_simultaneous_damage` | Number |  |
+| `visual_delay_but_simultaneous_damage` | Integer |  |
 | [`walk`](./Enums.md#enum-walk) | Enum |  |
 | [`water_mask`](./Enums.md#enum-water_mask) | Enum |  |
 | [`weak`](./Enums.md#enum-weak) | Enum |  |
@@ -202,16 +202,16 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | [`animation_in`](./Enums.md#enum-animation_in) | Enum | Used for transition states (like burrowing). |
 | [`animation_out`](./Enums.md#enum-animation_out) | Enum | Used for transition states (like burrowing). |
 | `aoe_spell_on_land` | Boolean | Visual trigger when a jump lands. |
-| `apex_distance` | Number | Calculations for the peak of a jump/lob arc. |
-| [`apex_time`](./Enums.md#enum-apex_time) | Enum | Calculations for the peak of a jump/lob arc. |
+| `apex_distance` | Integer | Calculations for the peak of a jump/lob arc. |
+| `apex_time` | Float | Calculations for the peak of a jump/lob arc. |
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum | Specific spawn points for particles. |
-| `art_flip` | Number |  |
+| `art_flip` | Integer |  |
 | [`beam_cap`](./Enums.md#enum-beam_cap) | Enum | Flash movieclips used to render continuous laser beams. |
 | [`beam_clip`](./Enums.md#enum-beam_clip) | Enum | Flash movieclips used to render continuous laser beams. |
 | `bounce_on_hit` | Boolean | Visual hop when striking a target. |
 | `bypass_combatspeed` | Boolean |  |
 | [`center_particle`](./Enums.md#enum-center_particle) | Enum | Specific spawn points for particles. |
-| [`chain_distance`](./Enums.md#enum-chain_distance) | Enum | Creates a tethered repeating graphic (like a hook). |
+| `chain_distance` | Float | Creates a tethered repeating graphic (like a hook). |
 | [`chain_movieclip`](./Enums.md#enum-chain_movieclip) | Enum | Creates a tethered repeating graphic (like a hook). |
 | [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum |  |
 | [`custom_priming_animation`](./Enums.md#enum-custom_priming_animation) | Enum | Animation used while charging an ability. |
@@ -228,18 +228,18 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | [`dash_start_animation`](./Enums.md#enum-dash_start_animation) | Enum |  |
 | [`dead`](./Enums.md#enum-dead) | Enum |  |
 | [`deadhit`](./Enums.md#enum-deadhit) | Enum |  |
-| `decelerate` | Number | Visual slowdown at the end of a movement. |
+| `decelerate` | Integer | Visual slowdown at the end of a movement. |
 | [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum |  |
 | [`default_face`](./Enums.md#enum-default_face) | Enum |  |
-| `delay` | Number | Frame delay before firing projectile/effect. |
+| `delay` | Float | Frame delay before firing projectile/effect. |
 | `delay_from_map_center` | Boolean | Positional based timing delays. |
 | `delay_from_map_edge` | Boolean | Delays effect based on distance from the screen edge. |
 | `delay_from_reverse_map_edge` | Boolean |  |
-| [`depth_offset`](./Enums.md#enum-depth_offset) | Enum |  |
+| `depth_offset` | Float |  |
 | `desc` | String | Localization key for the character's desc. |
 | [`detatched_animation`](./Enums.md#enum-detatched_animation) | Enum | Plays an animation separated from the character body. |
 | `detatched_animation_cutoff` | Boolean |  |
-| `detatched_animation_reach` | Number |  |
+| `detatched_animation_reach` | Integer |  |
 | `do_animation_offscreen` | Boolean |  |
 | `do_damage_immediately` | Boolean | Applies math before the animation actually hits. |
 | `do_not_clear_placeholder` | Boolean |  |
@@ -248,51 +248,51 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | `dont_sink` | Boolean |  |
 | `dont_visualize_ai` | Boolean |  |
 | [`dying`](./Enums.md#enum-dying) | Enum |  |
-| `easing` | Number | Smoothing function for movement animations. |
+| `easing` | Integer | Smoothing function for movement animations. |
 | [`empty_animation`](./Enums.md#enum-empty_animation) | Enum |  |
 | [`end`](./Enums.md#enum-end) | Enum | Segments for continuous channeled animations. |
 | `face_targets` | Boolean | Forces the sprite to look at the target tile. |
 | `face_toss_target` | Boolean |  |
 | `fall_from_sky` | Boolean | Spawns the projectile from the top of the screen. |
-| [`fall_randomize_timing`](./Enums.md#enum-fall_randomize_timing) | Enum |  |
+| `fall_randomize_timing` | Float |  |
 | `first_castpoint_is_self_damage_only` | Boolean |  |
-| `fixed_jump_height` | Number |  |
-| `fixed_jump_speed` | Number |  |
+| `fixed_jump_height` | Integer |  |
+| `fixed_jump_speed` | Float |  |
 | `four_way_animations` | Boolean |  |
 | [`full_jump_animation`](./Enums.md#enum-full_jump_animation) | Enum |  |
-| `full_jump_sync_frames` | Number |  |
-| `full_jump_windup_frames` | Number |  |
+| `full_jump_sync_frames` | Integer |  |
+| `full_jump_windup_frames` | Integer |  |
 | `fx_is_placeholder_animation` | Boolean |  |
 | `fx_random_flip` | Boolean |  |
 | [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  |
-| [`hang_time`](./Enums.md#enum-hang_time) | Enum |  |
+| `hang_time` | Float |  |
 | [`hit`](./Enums.md#enum-hit) | Enum |  |
-| `hud_palette` | Number |  |
+| `hud_palette` | Integer |  |
 | `ignore_slowtiles` | Boolean |  |
 | [`jump_attack_animation`](./Enums.md#enum-jump_attack_animation) | Enum | Overrides for jump physics. |
-| [`jump_height_multiplier`](./Enums.md#enum-jump_height_multiplier) | Enum | Overrides for jump physics. |
-| `jump_speed_multiplier` | Number |  |
+| `jump_height_multiplier` | Float | Overrides for jump physics. |
+| `jump_speed_multiplier` | Integer |  |
 | [`jump_start_animation`](./Enums.md#enum-jump_start_animation) | Enum |  |
 | [`land_animation`](./Enums.md#enum-land_animation) | Enum |  |
 | `lob` | Boolean |  |
-| `lob_height` | Number | Adjustments for arcing projectiles. |
-| [`lob_speed`](./Enums.md#enum-lob_speed) | Enum | Adjustments for arcing projectiles. |
-| [`lob_yoff`](./Enums.md#enum-lob_yoff) | Enum | Adjustments for arcing projectiles. |
+| `lob_height` | Integer | Adjustments for arcing projectiles. |
+| `lob_speed` | Float | Adjustments for arcing projectiles. |
+| `lob_yoff` | Float | Adjustments for arcing projectiles. |
 | `lock_orientation_during_dash` | Boolean | Prevents the sprite from flipping mid-dash. |
 | [`loop`](./Enums.md#enum-loop) | Enum | Segments for continuous channeled animations. |
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum |  |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  |
-| `max_range` | Number | The maximum and minimum distance required to cast. |
-| `max_throw_height` | Number |  |
-| `max_tiles_single_loop` | Number |  |
-| `min_range` | Number | The maximum and minimum distance required to cast. |
-| `min_throw_height` | Number |  |
+| `max_range` | Integer | The maximum and minimum distance required to cast. |
+| `max_throw_height` | Integer |  |
+| `max_tiles_single_loop` | Integer |  |
+| `min_range` | Integer | The maximum and minimum distance required to cast. |
+| `min_throw_height` | Float |  |
 | [`miss_particle`](./Enums.md#enum-miss_particle) | Enum | Specific spawn points for particles. |
 | [`miss_random_delay`](./Arrays.md#array-miss_random_delay) | Array |  |
 | [`mode`](./Enums.md#enum-mode) | Enum |  |
 | [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum |  |
-| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Enum |  |
-| `move_speed_sync_frames` | Number |  |
+| `move_speed_multiplier` | Float |  |
+| `move_speed_sync_frames` | Integer |  |
 | [`move_start_animation`](./Enums.md#enum-move_start_animation) | Enum |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  |
 | `name` | String | Localization key for the character's name. |
@@ -301,12 +301,12 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | [`non_blocking_animations`](./Arrays.md#array-non_blocking_animations) | Array |  |
 | `othercat_placeholder_available` | Boolean |  |
 | [`override_portrait`](./Enums.md#enum-override_portrait) | Enum |  |
-| `palette` | Number | Swaps the color palette ID. |
+| `palette` | Integer | Swaps the color palette ID. |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. |
 | [`particle_mat`](./Enums.md#enum-particle_mat) | Enum |  |
-| `piece_alt_frame` | Number |  |
+| `piece_alt_frame` | Integer |  |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  |
-| [`precast_delay`](./Enums.md#enum-precast_delay) | Enum |  |
+| `precast_delay` | Float |  |
 | [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum |  |
 | [`prime_animation`](./Enums.md#enum-prime_animation) | Enum |  |
 | `primed_alt_animation` | String |  |
@@ -317,25 +317,25 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | `randomize_starting_frame` | Boolean |  |
 | `reverse_orientation` | Boolean |  |
 | [`rocket_swirl`](#rocket_swirl) | Block | Visual parameters for swirling projectile paths. |
-| [`scale`](./Enums.md#enum-scale) | Enum |  |
+| `scale` | Float |  |
 | `self_damage_mid_port` | Boolean |  |
 | `shade_occluded_objects` | Boolean |  |
 | [`shadow`](./Enums.md#enum-shadow) | Enum |  |
-| `shadow_size` | Number |  |
+| `shadow_size` | Float |  |
 | `show_infinity_damage_warning` | Boolean |  |
 | `single_projectile` | Boolean |  |
 | [`spawn_offset`](./Arrays.md#array-spawn_offset) | Array |  |
 | `spawnin_animation` | String |  |
-| `speed` | Number | Rotations per second. |
+| `speed` | Float | Rotations per second. |
 | [`start`](./Enums.md#enum-start) | Enum | Segments for continuous channeled animations. |
-| `status_display_count_max` | Number |  |
+| `status_display_count_max` | Integer |  |
 | [`stunned`](./Enums.md#enum-stunned) | Enum |  |
-| `sync_frames` | Number |  |
-| `sync_speed` | Number |  |
-| `throw_speed` | Number |  |
+| `sync_frames` | Integer |  |
+| `sync_speed` | Integer |  |
+| `throw_speed` | Integer |  |
 | [`tint`](./Arrays.md#array-tint) | Array |  |
 | `tooltip` | String |  |
-| `uifloaters_offset` | Number |  |
+| `uifloaters_offset` | Float |  |
 | `uncatchable` | Boolean |  |
 | `use_directional_animations` | Boolean |  |
 | `use_hit_alts` | Boolean |  |
@@ -346,7 +346,7 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | `use_rotation` | Boolean |  |
 | `use_rotation_once` | Boolean |  |
 | `use_super_armor` | Boolean | Prevents flinch animations from interrupting this cast. |
-| `visual_delay_but_simultaneous_damage` | Number |  |
+| `visual_delay_but_simultaneous_damage` | Integer |  |
 | [`walk`](./Enums.md#enum-walk) | Enum |  |
 | [`water_mask`](./Enums.md#enum-water_mask) | Enum |  |
 | [`weak`](./Enums.md#enum-weak) | Enum |  |

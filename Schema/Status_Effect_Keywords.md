@@ -22,7 +22,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip_stackless`](./Strings.md#string-tooltip_stackless) | String |  | 76 |
 | [`tooltip_stacks`](./Strings.md#string-tooltip_stacks) | String |  | 69 |
 | [`alias`](./Enums.md#enum-alias) | Enum |  | 57 |
-| `icon_frame` | Number |  | 20 |
+| `icon_frame` | Integer |  | 20 |
 | [`tooltip_stacks_singular`](./Strings.md#string-tooltip_stacks_singular) | String |  | 15 |
 | [`tooltip_stacks_neg`](./Strings.md#string-tooltip_stacks_neg) | String |  | 13 |
 | [`name_stacks_neg`](./Strings.md#string-name_stacks_neg) | String |  | 11 |

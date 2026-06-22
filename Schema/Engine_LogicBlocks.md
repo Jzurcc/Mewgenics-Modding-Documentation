@@ -15,24 +15,24 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| `AIFavorLowHealth` | Number | Applies or references the 'AIFavorLowHealth' effect/state. |
-| `AcidRain` | Number |  |
-| `AddExtraTurnsBeforeRun` | Number |  |
-| `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. |
+| `AIFavorLowHealth` | Integer | Applies or references the 'AIFavorLowHealth' effect/state. |
+| `AcidRain` | Integer |  |
+| `AddExtraTurnsBeforeRun` | Integer |  |
+| `AddLeechesStatus` | Integer | Applies or references the 'AddLeechesStatus' effect/state. |
 | [`AddPostProcessEffect`](#addpostprocesseffect) | Block |  |
-| `AddSpiritBombCharges` | Number | Applies or references the 'AddSpiritBombCharges' effect/state. |
+| `AddSpiritBombCharges` | Integer | Applies or references the 'AddSpiritBombCharges' effect/state. |
 | [`AddTilesetObjects`](#addtilesetobjects) | Block |  |
-| `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. |
-| `Adrenaline` | Number | Applies or references the 'Adrenaline' effect/state. |
-| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. |
-| `AlliesTakeExtraTurn` | Number | Applies or references the 'AlliesTakeExtraTurn' effect/state. |
+| `AddWeaponAux` | Integer | Applies or references the 'AddWeaponAux' effect/state. |
+| `Adrenaline` | Integer | Applies or references the 'Adrenaline' effect/state. |
+| `AllStatsUp` | Integer | Applies or references the 'AllStatsUp' effect/state. |
+| `AlliesTakeExtraTurn` | Integer | Applies or references the 'AlliesTakeExtraTurn' effect/state. |
 | [`AllyInfested`](#allyinfested) | Block |  |
-| `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. |
+| `AlphaCat` | Integer | Applies or references the 'AlphaCat' effect/state. |
 | [`AlternateIdleAnimation`](./Enums.md#enum-alternateidleanimation) | Enum | Applies or references the 'AlternateIdleAnimation' effect/state. |
-| `Ammo` | Number | Applies or references the 'Ammo' effect/state. |
+| `Ammo` | Integer | Applies or references the 'Ammo' effect/state. |
 | [`ApplyMultipleTimes`](#applymultipletimes) | Block | A loop block that executes its nested logic multiple times. |
 | [`ApplyPassives`](#applypassives) | Block | Grants the nested passive abilities dynamically. |
-| `ApplyShieldToApplierBasedOnMaxHealth` | Number | Applies or references the 'ApplyShieldToApplierBasedOnMaxHealth' effect/state. |
+| `ApplyShieldToApplierBasedOnMaxHealth` | Integer | Applies or references the 'ApplyShieldToApplierBasedOnMaxHealth' effect/state. |
 | [`ApplyStatusIfCrit`](#applystatusifcrit) | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. |
 | [`ApplyStatusesNextTurnBegin`](#applystatusesnextturnbegin) | Block | Delays the application of the nested status effects until the start of the target's next turn. |
 | [`ApplyToConsumed`](#applytoconsumed) | Block | Redirects the nested effects to apply to the entity that just consumed this object. |
@@ -43,67 +43,67 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`ApplyToSourceOnKill`](#applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. |
 | [`ApplyToTile`](#applytotile) | Block | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. |
 | [`ArcLightning`](#arclightning) | Block | Executes a chain-lightning logic block that bounces between targets. |
-| `Attraction` | Number | Applies or references the 'Attraction' effect/state. |
-| `AutoReanimate` | Number |  |
-| `BackflipWhenTargeted` | Number | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. |
-| `BlackHoleSuck` | Number | Applies or references the 'BlackHoleSuck' effect/state. |
-| `Bleed` | Number | Applies or references the 'Bleed' effect/state. |
-| `BleedThorns` | Number | Applies or references the 'BleedThorns' effect/state. |
-| `Blind` | Number | Applies or references the 'Blind' effect/state. |
-| `Bloodzerked` | Number | Applies or references the 'Bloodzerked' effect/state. |
+| `Attraction` | Integer | Applies or references the 'Attraction' effect/state. |
+| `AutoReanimate` | Integer |  |
+| `BackflipWhenTargeted` | Integer | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. |
+| `BlackHoleSuck` | Integer | Applies or references the 'BlackHoleSuck' effect/state. |
+| `Bleed` | Integer | Applies or references the 'Bleed' effect/state. |
+| `BleedThorns` | Integer | Applies or references the 'BleedThorns' effect/state. |
+| `Blind` | Integer | Applies or references the 'Blind' effect/state. |
+| `Bloodzerked` | Integer | Applies or references the 'Bloodzerked' effect/state. |
 | [`BodyGuard`](#bodyguard) | Block | Protects an ally by intercepting attacks directed at them. |
-| `BombRatTurtle` | Number | Applies or references the 'BombRatTurtle' effect/state. |
-| `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. |
-| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. |
-| `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. |
-| `BonusDamageBasedOnMana` | Number | Applies or references the 'BonusDamageBasedOnMana' effect/state. |
-| `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. |
+| `BombRatTurtle` | Integer | Applies or references the 'BombRatTurtle' effect/state. |
+| `BonusCritChance` | Integer | Applies or references the 'BonusCritChance' effect/state. |
+| `BonusDamage` | Integer | Applies or references the 'BonusDamage' effect/state. |
+| `BonusDamageBasedOnDistance` | Integer | Applies or references the 'BonusDamageBasedOnDistance' effect/state. |
+| `BonusDamageBasedOnMana` | Integer | Applies or references the 'BonusDamageBasedOnMana' effect/state. |
+| `BonusKnockbackDamage` | Integer | Applies or references the 'BonusKnockbackDamage' effect/state. |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Spawns a physics object that visually bounces off the target. |
 | [`BounceRock`](./Enums.md#enum-bouncerock) | Enum | Applies or references the 'BounceRock' effect/state. |
-| `Bound` | Number | Applies or references the 'Bound' effect/state. |
-| `Brace` | Number | Applies or references the 'Brace' effect/state. |
-| `BramblesOnHit` | Number | Applies or references the 'BramblesOnHit' effect/state. |
-| `Bruise` | Number | Applies or references the 'Bruise' effect/state. |
-| `BurgleCoin` | Number | Applies or references the 'BurgleCoin' effect/state. |
-| `Burn` | Number | Applies or references the 'Burn' effect/state. |
-| `ButterflySwarm` | Number |  |
-| `BypassRockKnockback` | Number | Applies or references the 'BypassRockKnockback' effect/state. |
+| `Bound` | Integer | Applies or references the 'Bound' effect/state. |
+| `Brace` | Integer | Applies or references the 'Brace' effect/state. |
+| `BramblesOnHit` | Integer | Applies or references the 'BramblesOnHit' effect/state. |
+| `Bruise` | Integer | Applies or references the 'Bruise' effect/state. |
+| `BurgleCoin` | Integer | Applies or references the 'BurgleCoin' effect/state. |
+| `Burn` | Integer | Applies or references the 'Burn' effect/state. |
+| `ButterflySwarm` | Integer |  |
+| `BypassRockKnockback` | Integer | Applies or references the 'BypassRockKnockback' effect/state. |
 | [`CanApplyToInanimate`](#canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. |
-| `CancelPrimedAbilities` | Number | Applies or references the 'CancelPrimedAbilities' effect/state. |
-| `CanceledQueuedInput` | Number | Applies or references the 'CanceledQueuedInput' effect/state. |
-| `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. |
-| `CaptureFamiliar` | Number | Applies the 'CaptureFamiliar' effect. |
+| `CancelPrimedAbilities` | Integer | Applies or references the 'CancelPrimedAbilities' effect/state. |
+| `CanceledQueuedInput` | Integer | Applies or references the 'CanceledQueuedInput' effect/state. |
+| `CapDamage` | Integer | Applies or references the 'CapDamage' effect/state. |
+| `CaptureFamiliar` | Integer | Applies the 'CaptureFamiliar' effect. |
 | [`CatPartsSizeScaleStatus`](#catpartssizescalestatus) | Block | Visually scales specific body parts of a character. |
 | [`CatPartsTransform`](#catpartstransform) | Block | Transforms specific body parts into different visual variants. |
-| `ChampionUpgradeNextMinion` | Number | Applies or references the 'ChampionUpgradeNextMinion' effect/state. |
-| `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. |
+| `ChampionUpgradeNextMinion` | Integer | Applies or references the 'ChampionUpgradeNextMinion' effect/state. |
+| `ChanceToBreak` | Integer | Applies or references the 'ChanceToBreak' effect/state. |
 | [`ChanceToBreakFree`](#chancetobreakfree) | Block | Provides a probability to escape a grapple or restraining effect. |
 | [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Applies or references the 'ChangeCatClass' effect/state. |
 | [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Applies or references the 'ChangeFaction' effect/state. |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. |
-| `ChaosBossFlipMidTeleport` | Number | Applies or references the 'ChaosBossFlipMidTeleport' effect/state. |
-| `ChaosBossFormChange` | Number | Applies or references the 'ChaosBossFormChange' effect/state. |
+| `ChaosBossFlipMidTeleport` | Integer | Applies or references the 'ChaosBossFlipMidTeleport' effect/state. |
+| `ChaosBossFormChange` | Integer | Applies or references the 'ChaosBossFormChange' effect/state. |
 | [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Block |  |
-| `Charge` | Number | Applies or references the 'Charge' effect/state. |
-| `ChargeFists` | Number | Applies or references the 'ChargeFists' effect/state. |
-| `CharismaUp` | Number | Applies or references the 'CharismaUp' effect/state. |
-| `Charmed` | Number | Applies or references the 'Charmed' effect/state. |
-| `CharmedFacingForceAttack` | Number | Applies or references the 'CharmedFacingForceAttack' effect/state. |
-| `CharmedForceAttack` | Number | Applies or references the 'CharmedForceAttack' effect/state. |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. |
-| `ClearDefaultDebris` | Number |  |
-| `ClearFinalBossBattlefield` | Number | Applies or references the 'ClearFinalBossBattlefield' effect/state. |
-| `ClearNegativeEffects` | Number | Applies the 'ClearNegativeEffects' effect. |
-| `ClearStarving` | Number | Applies or references the 'ClearStarving' effect/state. |
-| `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. |
-| `CloneWeaponTemp` | Number | Applies or references the 'CloneWeaponTemp' effect/state. |
-| `CockroachSwarm` | Number |  |
+| `Charge` | Integer | Applies or references the 'Charge' effect/state. |
+| `ChargeFists` | Integer | Applies or references the 'ChargeFists' effect/state. |
+| `CharismaUp` | Integer | Applies or references the 'CharismaUp' effect/state. |
+| `Charmed` | Integer | Applies or references the 'Charmed' effect/state. |
+| `CharmedFacingForceAttack` | Integer | Applies or references the 'CharmedFacingForceAttack' effect/state. |
+| `CharmedForceAttack` | Integer | Applies or references the 'CharmedForceAttack' effect/state. |
+| `Cleanse` | Integer | Applies or references the 'Cleanse' effect/state. |
+| `ClearDefaultDebris` | Integer |  |
+| `ClearFinalBossBattlefield` | Integer | Applies or references the 'ClearFinalBossBattlefield' effect/state. |
+| `ClearNegativeEffects` | Integer | Applies the 'ClearNegativeEffects' effect. |
+| `ClearStarving` | Integer | Applies or references the 'ClearStarving' effect/state. |
+| `Cleave` | Integer | Causes the attack to hit adjacent enemies alongside the primary target. |
+| `CloneWeaponTemp` | Integer | Applies or references the 'CloneWeaponTemp' effect/state. |
+| `CockroachSwarm` | Integer |  |
 | [`CoinTossBounce`](./Enums.md#enum-cointossbounce) | Enum | Applies or references the 'CoinTossBounce' effect/state. |
-| `CollectsPickups` | Number | Applies or references the 'CollectsPickups' effect/state. |
+| `CollectsPickups` | Integer | Applies or references the 'CollectsPickups' effect/state. |
 | [`CollectsPickupsWithAltEffects`](#collectspickupswithalteffects) | Block | Triggers alternative nested effects when collecting items or pickups. |
 | [`CollideWithConsumed`](./Math_Equations.md) | Equation | Applies or references the 'CollideWithConsumed' effect/state. |
-| `CollideWithThrowTarget` | Number | Applies or references the 'CollideWithThrowTarget' effect/state. |
+| `CollideWithThrowTarget` | Integer | Applies or references the 'CollideWithThrowTarget' effect/state. |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. |
 | [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Block | Conditional constraint. Nested properties only trigger if this is true. |
 | [`Conditional_ActiveWeather_Any`](#conditional_activeweather_any) | Block | Conditional trigger: Executes nested logic if the current map weather matches any in the list. |
@@ -149,492 +149,492 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Block | Conditional trigger: Executes nested logic if the ability that triggered this effect has the specified tag. |
 | [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Block | Conditional trigger: Executes nested logic if the caster currently has the specified status. |
 | [`Conditional_Speculative`](#conditional_speculative) | Block | A simulation block used by the AI to test hypothetical outcomes before committing to an action. |
-| `Confusion` | Number | Applies or references the 'Confusion' effect/state. |
+| `Confusion` | Integer | Applies or references the 'Confusion' effect/state. |
 | [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum | Adds a temporary bonus ability to the character's hand/deck. |
-| `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. |
+| `ConjureRandomAbilityFromCat` | Integer | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. |
 | [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. |
-| `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. |
+| `ConstitutionUp` | Integer | Applies or references the 'ConstitutionUp' effect/state. |
 | [`Consumed`](#consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. |
-| `ContextualHeal` | Number | Applies or references the 'ContextualHeal' effect/state. |
-| `CopySpells` | Number | Duplicates existing spells currently in the character's hand. |
-| `CorpseVaporizer` | Number | Applies or references the 'CorpseVaporizer' effect/state. |
-| `Counterspell` | Number | Applies or references the 'Counterspell' effect/state. |
-| `CrackMoonHead` | Number | Applies or references the 'CrackMoonHead' effect/state. |
+| `ContextualHeal` | Integer | Applies or references the 'ContextualHeal' effect/state. |
+| `CopySpells` | Integer | Duplicates existing spells currently in the character's hand. |
+| `CorpseVaporizer` | Integer | Applies or references the 'CorpseVaporizer' effect/state. |
+| `Counterspell` | Integer | Applies or references the 'Counterspell' effect/state. |
+| `CrackMoonHead` | Integer | Applies or references the 'CrackMoonHead' effect/state. |
 | [`Craft`](#craft) | Block | Synthesizes or spawns a new item from a specific pool. |
 | [`CreateGlobalModifiers`](#createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. |
-| `CritChanceUp` | Number | Applies or references the 'CritChanceUp' effect/state. |
-| `CurrentWeaponAddElectricElement` | Number | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. |
-| `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. |
-| `DamageBasedOnMissingHealth` | Number | Applies or references the 'DamageBasedOnMissingHealth' effect/state. |
-| `DamageDistanceAOEFalloff` | Number | Applies or references the 'DamageDistanceAOEFalloff' effect/state. |
-| `DamageOrHealConditionally` | Number | Applies or references the 'DamageOrHealConditionally' effect/state. |
-| `DamageTrinket` | Number | Applies or references the 'DamageTrinket' effect/state. |
-| `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. |
-| `DamageWeapon` | Number | Applies or references the 'DamageWeapon' effect/state. |
+| `CritChanceUp` | Integer | Applies or references the 'CritChanceUp' effect/state. |
+| `CurrentWeaponAddElectricElement` | Integer | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. |
+| `CurrentWeaponDamageUp` | Integer | Applies or references the 'CurrentWeaponDamageUp' effect/state. |
+| `DamageBasedOnMissingHealth` | Integer | Applies or references the 'DamageBasedOnMissingHealth' effect/state. |
+| `DamageDistanceAOEFalloff` | Integer | Applies or references the 'DamageDistanceAOEFalloff' effect/state. |
+| `DamageOrHealConditionally` | Integer | Applies or references the 'DamageOrHealConditionally' effect/state. |
+| `DamageTrinket` | Integer | Applies or references the 'DamageTrinket' effect/state. |
+| `DamageUp` | Integer | Applies or references the 'DamageUp' effect/state. |
+| `DamageWeapon` | Integer | Applies or references the 'DamageWeapon' effect/state. |
 | [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the 'DeathwormUnderground' effect/state. |
-| `DecoySwapper` | Number | Applies or references the 'DecoySwapper' effect/state. |
-| `DeferVaporize` | Number | Applies or references the 'DeferVaporize' effect/state. |
+| `DecoySwapper` | Integer | Applies or references the 'DecoySwapper' effect/state. |
+| `DeferVaporize` | Integer | Applies or references the 'DeferVaporize' effect/state. |
 | [`DelayCastAbility`](#delaycastability) | Block | Queues an ability to be cast automatically after a certain delay or trigger. |
-| `DelayedFury` | Number | Applies or references the 'DelayedFury' effect/state. |
+| `DelayedFury` | Integer | Applies or references the 'DelayedFury' effect/state. |
 | [`DelayedWindCone`](#delayedwindcone) | Block | Creates a delayed Area of Effect cone. |
-| `DeleteInanimateObjectsChance` | Number |  |
-| `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. |
-| `DeleteTraps` | Number | Applies or references the 'DeleteTraps' effect/state. |
+| `DeleteInanimateObjectsChance` | Integer |  |
+| `DeleteObject` | Integer | Applies or references the 'DeleteObject' effect/state. |
+| `DeleteTraps` | Integer | Applies or references the 'DeleteTraps' effect/state. |
 | [`DestroyEquipmentAndAttachParasite`](#destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. |
-| `DestroyNeckArmor` | Number | Applies or references the 'DestroyNeckArmor' effect/state. |
-| `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. |
-| `DestroyWeapon` | Number | Applies or references the 'DestroyWeapon' effect/state. |
-| `DestroyWeaponThrow` | Number | Applies or references the 'DestroyWeaponThrow' effect/state. |
-| `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. |
-| `Die` | Number | Applies or references the 'Die' effect/state. |
-| `DieViaAbilityInternally` | Number | Applies or references the 'DieViaAbilityInternally' effect/state. |
-| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. |
-| `DiminishingHealthRegen` | Number | Applies or references the 'DiminishingHealthRegen' effect/state. |
+| `DestroyNeckArmor` | Integer | Applies or references the 'DestroyNeckArmor' effect/state. |
+| `DestroyTrinket` | Integer | Applies or references the 'DestroyTrinket' effect/state. |
+| `DestroyWeapon` | Integer | Applies or references the 'DestroyWeapon' effect/state. |
+| `DestroyWeaponThrow` | Integer | Applies or references the 'DestroyWeaponThrow' effect/state. |
+| `DexterityUp` | Integer | Applies or references the 'DexterityUp' effect/state. |
+| `Die` | Integer | Applies or references the 'Die' effect/state. |
+| `DieViaAbilityInternally` | Integer | Applies or references the 'DieViaAbilityInternally' effect/state. |
+| `DieViolently` | Integer | Applies or references the 'DieViolently' effect/state. |
+| `DiminishingHealthRegen` | Integer | Applies or references the 'DiminishingHealthRegen' effect/state. |
 | [`DinoLegAnimation`](./Enums.md#enum-dinoleganimation) | Enum | Applies or references the 'DinoLegAnimation' effect/state. |
-| `DisableWeapon` | Number | Applies or references the 'DisableWeapon' effect/state. |
-| `Disguised` | Number | Applies or references the 'Disguised' effect/state. |
-| `Displace` | Number | Applies or references the 'Displace' effect/state. |
-| `DisplaceToAbilityTarget` | Number | Applies or references the 'DisplaceToAbilityTarget' effect/state. |
-| `DisplaceToOriginalPosition` | Number | Applies or references the 'DisplaceToOriginalPosition' effect/state. |
-| `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. |
-| `DissolveRandomArmorPiece` | Number | Applies or references the 'DissolveRandomArmorPiece' effect/state. |
-| `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. |
+| `DisableWeapon` | Integer | Applies or references the 'DisableWeapon' effect/state. |
+| `Disguised` | Integer | Applies or references the 'Disguised' effect/state. |
+| `Displace` | Integer | Applies or references the 'Displace' effect/state. |
+| `DisplaceToAbilityTarget` | Integer | Applies or references the 'DisplaceToAbilityTarget' effect/state. |
+| `DisplaceToOriginalPosition` | Integer | Applies or references the 'DisplaceToOriginalPosition' effect/state. |
+| `DisplaceTowardsSource` | Integer | Applies or references the 'DisplaceTowardsSource' effect/state. |
+| `DissolveRandomArmorPiece` | Integer | Applies or references the 'DissolveRandomArmorPiece' effect/state. |
+| `DivineShield` | Integer | Applies or references the 'DivineShield' effect/state. |
 | [`DoDamage`](#dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. |
 | [`DoDistortionRing`](#dodistortionring) | Block | Creates a visual distortion ring effect on the screen. |
 | [`DoScreenShake`](#doscreenshake) | Block | Triggers a camera screen shake effect. |
-| `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. |
-| `DontHealEnemies` | Number | Applies or references the 'DontHealEnemies' effect/state. |
-| `Doomed` | Number | Applies or references the 'Doomed' effect/state. |
-| `DoubleCast` | Number | Applies or references the 'DoubleCast' effect/state. |
-| `DoubleCastSpell` | Number | Applies or references the 'DoubleCastSpell' effect/state. |
-| `DoubleCastSpellsEachTurn_Status` | Number | Applies or references the 'DoubleCastSpellsEachTurn_Status' effect/state. |
-| `DoubleLoot` | Number | Applies or references the 'DoubleLoot' effect/state. |
+| `DodgeChance_Status` | Integer | Applies or references the 'DodgeChance_Status' effect/state. |
+| `DontHealEnemies` | Integer | Applies or references the 'DontHealEnemies' effect/state. |
+| `Doomed` | Integer | Applies or references the 'Doomed' effect/state. |
+| `DoubleCast` | Integer | Applies or references the 'DoubleCast' effect/state. |
+| `DoubleCastSpell` | Integer | Applies or references the 'DoubleCastSpell' effect/state. |
+| `DoubleCastSpellsEachTurn_Status` | Integer | Applies or references the 'DoubleCastSpellsEachTurn_Status' effect/state. |
+| `DoubleLoot` | Integer | Applies or references the 'DoubleLoot' effect/state. |
 | [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Applies or references the 'DoubleStatus' effect/state. |
-| `DrainAllyCatsForFleshGolem` | Number | Applies or references the 'DrainAllyCatsForFleshGolem' effect/state. |
-| `DrinkWater` | Number | Applies or references the 'DrinkWater' effect/state. |
-| `Drowsy` | Number | Applies or references the 'Drowsy' effect/state. |
-| `DuplicateRandomEquippedItem` | Number | Applies or references the 'DuplicateRandomEquippedItem' effect/state. |
+| `DrainAllyCatsForFleshGolem` | Integer | Applies or references the 'DrainAllyCatsForFleshGolem' effect/state. |
+| `DrinkWater` | Integer | Applies or references the 'DrinkWater' effect/state. |
+| `Drowsy` | Integer | Applies or references the 'Drowsy' effect/state. |
+| `DuplicateRandomEquippedItem` | Integer | Applies or references the 'DuplicateRandomEquippedItem' effect/state. |
 | [`DustOnHit`](#dustonhit) | Block | Spawns a specific particle or cloud object upon impact. |
 | [`DybbukPossessed`](#dybbukpossessed) | Block | Defines the abilities and behaviors available when possessing another entity. |
-| `EliteUpgradeNextMinion` | Number | Applies or references the 'EliteUpgradeNextMinion' effect/state. |
+| `EliteUpgradeNextMinion` | Integer | Applies or references the 'EliteUpgradeNextMinion' effect/state. |
 | [`Else`](#else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. |
-| `EmptyMind` | Number | Applies or references the 'EmptyMind' effect/state. |
+| `EmptyMind` | Integer | Applies or references the 'EmptyMind' effect/state. |
 | [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Applies or references the 'EnableWeather' effect/state. |
-| `EndTurn` | Number | Applies or references the 'EndTurn' effect/state. |
-| `Enlarge` | Number | Applies or references the 'Enlarge' effect/state. |
+| `EndTurn` | Integer | Applies or references the 'EndTurn' effect/state. |
+| `Enlarge` | Integer | Applies or references the 'Enlarge' effect/state. |
 | [`EnterMount`](./Enums.md#enum-entermount) | Enum | Applies or references the 'EnterMount' effect/state. |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies or references the 'EquipPermanentItem' effect/state. |
-| `EventBounty` | Number | Applies or references the 'EventBounty' effect/state. |
+| `EventBounty` | Integer | Applies or references the 'EventBounty' effect/state. |
 | [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. |
-| `ExistUntilIdleUpkeep` | Number | Applies or references the 'ExistUntilIdleUpkeep' effect/state. |
-| `ExplodeCharacter` | Number | Applies or references the 'ExplodeCharacter' effect/state. |
-| `ExplodeCharacter_DeathBloom` | Number | Applies or references the 'ExplodeCharacter_DeathBloom' effect/state. |
-| `ExplodeCharacter_DeathBloom2` | Number | Applies or references the 'ExplodeCharacter_DeathBloom2' effect/state. |
-| `ExplodeCharacter_NoDie` | Number | Applies or references the 'ExplodeCharacter_NoDie' effect/state. |
-| `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. |
-| `ExplodeCharacter_PartyBoss` | Number | Applies or references the 'ExplodeCharacter_PartyBoss' effect/state. |
-| `ExplodeCharacter_RockCrusher` | Number | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. |
-| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Number | Applies or references the 'ExplodeCharacter_RockCrusher_PetrifyBreak' effect/state. |
-| `ExplosionIfHitSomething` | Number | Applies or references the 'ExplosionIfHitSomething' effect/state. |
-| `ExtraBasicAttacks_Status` | Number | Applies or references the 'ExtraBasicAttacks_Status' effect/state. |
-| `ExtraBasicMoves_Status` | Number | Applies or references the 'ExtraBasicMoves_Status' effect/state. |
-| `FaceAway` | Number | Applies or references the 'FaceAway' effect/state. |
-| `FaceCamera` | Number | Applies or references the 'FaceCamera' effect/state. |
-| `FactionConversion` | Number | Applies the 'FactionConversion' effect. |
-| `FactionDisguiseSource` | Number | Applies or references the 'FactionDisguiseSource' effect/state. |
+| `ExistUntilIdleUpkeep` | Integer | Applies or references the 'ExistUntilIdleUpkeep' effect/state. |
+| `ExplodeCharacter` | Integer | Applies or references the 'ExplodeCharacter' effect/state. |
+| `ExplodeCharacter_DeathBloom` | Integer | Applies or references the 'ExplodeCharacter_DeathBloom' effect/state. |
+| `ExplodeCharacter_DeathBloom2` | Integer | Applies or references the 'ExplodeCharacter_DeathBloom2' effect/state. |
+| `ExplodeCharacter_NoDie` | Integer | Applies or references the 'ExplodeCharacter_NoDie' effect/state. |
+| `ExplodeCharacter_Party` | Integer | Applies or references the 'ExplodeCharacter_Party' effect/state. |
+| `ExplodeCharacter_PartyBoss` | Integer | Applies or references the 'ExplodeCharacter_PartyBoss' effect/state. |
+| `ExplodeCharacter_RockCrusher` | Integer | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. |
+| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | Applies or references the 'ExplodeCharacter_RockCrusher_PetrifyBreak' effect/state. |
+| `ExplosionIfHitSomething` | Integer | Applies or references the 'ExplosionIfHitSomething' effect/state. |
+| `ExtraBasicAttacks_Status` | Integer | Applies or references the 'ExtraBasicAttacks_Status' effect/state. |
+| `ExtraBasicMoves_Status` | Integer | Applies or references the 'ExtraBasicMoves_Status' effect/state. |
+| `FaceAway` | Integer | Applies or references the 'FaceAway' effect/state. |
+| `FaceCamera` | Integer | Applies or references the 'FaceCamera' effect/state. |
+| `FactionConversion` | Integer | Applies the 'FactionConversion' effect. |
+| `FactionDisguiseSource` | Integer | Applies or references the 'FactionDisguiseSource' effect/state. |
 | [`FactionUprising`](./Enums.md#enum-factionuprising) | Enum |  |
-| `FastKnockback` | Number | Applies or references the 'FastKnockback' effect/state. |
-| `Fear` | Number | Applies or references the 'Fear' effect/state. |
-| `FillMana` | Number | Applies or references the 'FillMana' effect/state. |
-| `FinalBossQueueBeam` | Number | Applies or references the 'FinalBossQueueBeam' effect/state. |
+| `FastKnockback` | Integer | Applies or references the 'FastKnockback' effect/state. |
+| `Fear` | Integer | Applies or references the 'Fear' effect/state. |
+| `FillMana` | Integer | Applies or references the 'FillMana' effect/state. |
+| `FinalBossQueueBeam` | Integer | Applies or references the 'FinalBossQueueBeam' effect/state. |
 | [`FindExtraItemFromPoolOnBattleEnd`](./Enums.md#enum-findextraitemfrompoolonbattleend) | Enum |  |
 | [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. |
-| `FireArmor` | Number | Applies or references the 'FireArmor' effect/state. |
-| `FireArmor2` | Number | Applies or references the 'FireArmor2' effect/state. |
-| `FireStorm` | Number |  |
-| `FireflySwarm` | Number |  |
-| `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. |
-| `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. |
-| `FlatLeechIfDamaged` | Number | Applies the 'FlatLeechIfDamaged' effect. |
-| `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. |
-| `FlowersOnHit` | Number | Applies or references the 'FlowersOnHit' effect/state. |
-| `FlySwarm` | Number |  |
-| `Fog` | Number |  |
-| `ForceAttack` | Number | Forces the character to execute an immediate attack. |
-| `ForceCollectsPickups` | Number | Applies or references the 'ForceCollectsPickups' effect/state. |
-| `ForceDisplace` | Number | Applies or references the 'ForceDisplace' effect/state. |
-| `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. |
+| `FireArmor` | Integer | Applies or references the 'FireArmor' effect/state. |
+| `FireArmor2` | Integer | Applies or references the 'FireArmor2' effect/state. |
+| `FireStorm` | Integer |  |
+| `FireflySwarm` | Integer |  |
+| `FlatAIBonus` | Integer | Applies or references the 'FlatAIBonus' effect/state. |
+| `FlatLeech` | Integer | Applies or references the 'FlatLeech' effect/state. |
+| `FlatLeechIfDamaged` | Integer | Applies the 'FlatLeechIfDamaged' effect. |
+| `FloatingRockTrap` | Integer | Applies or references the 'FloatingRockTrap' effect/state. |
+| `FlowersOnHit` | Integer | Applies or references the 'FlowersOnHit' effect/state. |
+| `FlySwarm` | Integer |  |
+| `Fog` | Integer |  |
+| `ForceAttack` | Integer | Forces the character to execute an immediate attack. |
+| `ForceCollectsPickups` | Integer | Applies or references the 'ForceCollectsPickups' effect/state. |
+| `ForceDisplace` | Integer | Applies or references the 'ForceDisplace' effect/state. |
+| `ForceImmediateMove` | Integer | Applies or references the 'ForceImmediateMove' effect/state. |
 | [`ForceImmediateMoveAndAttack`](#forceimmediatemoveandattack) | Block | Forces the character to immediately move to a target and use a specified ability. |
-| `ForceMoveAndAttack` | Number | Applies or references the 'ForceMoveAndAttack' effect/state. |
-| `ForceMoveAway` | Number | Applies or references the 'ForceMoveAway' effect/state. |
-| `ForceMoveNonAlliesInRangeTowardsTile` | Number | Applies or references the 'ForceMoveNonAlliesInRangeTowardsTile' effect/state. |
-| `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. |
-| `ForceMoveTowardsEnemies` | Number | Applies or references the 'ForceMoveTowardsEnemies' effect/state. |
+| `ForceMoveAndAttack` | Integer | Applies or references the 'ForceMoveAndAttack' effect/state. |
+| `ForceMoveAway` | Integer | Applies or references the 'ForceMoveAway' effect/state. |
+| `ForceMoveNonAlliesInRangeTowardsTile` | Integer | Applies or references the 'ForceMoveNonAlliesInRangeTowardsTile' effect/state. |
+| `ForceMoveTowards` | Integer | Applies or references the 'ForceMoveTowards' effect/state. |
+| `ForceMoveTowardsEnemies` | Integer | Applies or references the 'ForceMoveTowardsEnemies' effect/state. |
 | [`ForceMoveTowardsTaggedObject`](#forcemovetowardstaggedobject) | Block | Forces the character to move towards the nearest object with a specific tag. |
-| `ForceTransferWeapon` | Number | Applies or references the 'ForceTransferWeapon' effect/state. |
+| `ForceTransferWeapon` | Integer | Applies or references the 'ForceTransferWeapon' effect/state. |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies or references the 'ForceUseAbility_NonStack' effect/state. |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). |
-| `FreeSpell` | Number | Applies or references the 'FreeSpell' effect/state. |
-| `Freeze` | Number | Applies or references the 'Freeze' effect/state. |
-| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. |
+| `FreeSpell` | Integer | Applies or references the 'FreeSpell' effect/state. |
+| `Freeze` | Integer | Applies or references the 'Freeze' effect/state. |
+| `FullHeal` | Integer | Applies or references the 'FullHeal' effect/state. |
 | [`GainCoinsRange`](#gaincoinsrange) | Block | Grants the player a randomized amount of coins within a min/max range. |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. |
 | [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Enum | Applies or references the 'GainDisorderFromPool' effect/state. |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. |
-| `GenericBuff` | Number | Applies or references the 'GenericBuff' effect/state. |
-| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. |
-| `GiveBoundItemToTarget` | Number | Applies or references the 'GiveBoundItemToTarget' effect/state. |
-| `GlobalHealthRegenAura` | Number |  |
+| `GenericBuff` | Integer | Applies or references the 'GenericBuff' effect/state. |
+| `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. |
+| `GiveBoundItemToTarget` | Integer | Applies or references the 'GiveBoundItemToTarget' effect/state. |
+| `GlobalHealthRegenAura` | Integer |  |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. |
 | [`GlobalSpawnOnRoundEnd`](#globalspawnonroundend) | Block |  |
-| `Grappled` | Number | Applies or references the 'Grappled' effect/state. |
-| `HealPercentMaxHP` | Number | Applies or references the 'HealPercentMaxHP' effect/state. |
-| `HealRandomInjury` | Number | Applies or references the 'HealRandomInjury' effect/state. |
-| `HealTo` | Number | Applies or references the 'HealTo' effect/state. |
-| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. |
-| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. |
-| `HeatWave` | Number |  |
-| `HeavyHits` | Number | Applies or references the 'HeavyHits' effect/state. |
-| `Hex` | Number | Applies or references the 'Hex' effect/state. |
-| `HitExplosion` | Number | Applies or references the 'HitExplosion' effect/state. |
-| `IceArmor` | Number | Applies or references the 'IceArmor' effect/state. |
-| `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. |
-| `IgnoreDebuffs` | Number | Applies or references the 'IgnoreDebuffs' effect/state. |
-| `IgnoreSelf` | Number | Applies or references the 'IgnoreSelf' effect/state. |
+| `Grappled` | Integer | Applies or references the 'Grappled' effect/state. |
+| `HealPercentMaxHP` | Integer | Applies or references the 'HealPercentMaxHP' effect/state. |
+| `HealRandomInjury` | Integer | Applies or references the 'HealRandomInjury' effect/state. |
+| `HealTo` | Integer | Applies or references the 'HealTo' effect/state. |
+| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. |
+| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. |
+| `HeatWave` | Integer |  |
+| `HeavyHits` | Integer | Applies or references the 'HeavyHits' effect/state. |
+| `Hex` | Integer | Applies or references the 'Hex' effect/state. |
+| `HitExplosion` | Integer | Applies or references the 'HitExplosion' effect/state. |
+| `IceArmor` | Integer | Applies or references the 'IceArmor' effect/state. |
+| `IgnoreDamage` | Integer | Applies or references the 'IgnoreDamage' effect/state. |
+| `IgnoreDebuffs` | Integer | Applies or references the 'IgnoreDebuffs' effect/state. |
+| `IgnoreSelf` | Integer | Applies or references the 'IgnoreSelf' effect/state. |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. |
 | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. |
 | [`ImmediateUseDirectionalAbility`](./Enums.md#enum-immediateusedirectionalability) | Enum | Applies or references the 'ImmediateUseDirectionalAbility' effect/state. |
-| `Immobile` | Number | Applies or references the 'Immobile' effect/state. |
+| `Immobile` | Integer | Applies or references the 'Immobile' effect/state. |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. |
 | [`IncAuxCounterCycle`](#incauxcountercycle) | Block | Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum. |
-| `IncreaseCumulativeBlastDamage` | Number | Applies or references the 'IncreaseCumulativeBlastDamage' effect/state. |
-| `IncreaseItemAuxOnKill` | Number | Applies or references the 'IncreaseItemAuxOnKill' effect/state. |
-| `Infested` | Number | Applies or references the 'Infested' effect/state. |
-| `Instakill` | Number | Applies or references the 'Instakill' effect/state. |
-| `InstantMaxHealthUp` | Number | Applies or references the 'InstantMaxHealthUp' effect/state. |
-| `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. |
-| `InterchangeMoveActPoints` | Number | Applies or references the 'InterchangeMoveActPoints' effect/state. |
-| `Invulnerable` | Number | Applies or references the 'Invulnerable' effect/state. |
-| `JohnnyCriesForWashers` | Number | Applies or references the 'JohnnyCriesForWashers' effect/state. |
-| `JudgementDay` | Number |  |
-| `KineticSpikes` | Number | Applies or references the 'KineticSpikes' effect/state. |
+| `IncreaseCumulativeBlastDamage` | Integer | Applies or references the 'IncreaseCumulativeBlastDamage' effect/state. |
+| `IncreaseItemAuxOnKill` | Integer | Applies or references the 'IncreaseItemAuxOnKill' effect/state. |
+| `Infested` | Integer | Applies or references the 'Infested' effect/state. |
+| `Instakill` | Integer | Applies or references the 'Instakill' effect/state. |
+| `InstantMaxHealthUp` | Integer | Applies or references the 'InstantMaxHealthUp' effect/state. |
+| `IntelligenceUp` | Integer | Applies or references the 'IntelligenceUp' effect/state. |
+| `InterchangeMoveActPoints` | Integer | Applies or references the 'InterchangeMoveActPoints' effect/state. |
+| `Invulnerable` | Integer | Applies or references the 'Invulnerable' effect/state. |
+| `JohnnyCriesForWashers` | Integer | Applies or references the 'JohnnyCriesForWashers' effect/state. |
+| `JudgementDay` | Integer |  |
+| `KineticSpikes` | Integer | Applies or references the 'KineticSpikes' effect/state. |
 | [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. |
-| `KnockOutCoin` | Number | Forces the target to drop coins. |
+| `KnockOutCoin` | Integer | Forces the target to drop coins. |
 | [`KnockUpAndAway`](#knockupandaway) | Block | Displaces the target vertically and horizontally away from the source. |
-| `Knockback` | Number | Applies or references the 'Knockback' effect/state. |
-| `KnockbackDamageImmuneUntilSettled` | Number | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. |
-| `KnockbackDirectionIsFacingDirection` | Number | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. |
+| `Knockback` | Integer | Applies or references the 'Knockback' effect/state. |
+| `KnockbackDamageImmuneUntilSettled` | Integer | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. |
+| `KnockbackDirectionIsFacingDirection` | Integer | Applies or references the 'KnockbackDirectionIsFacingDirection' effect/state. |
 | [`LateStatusApplication`](#latestatusapplication) | Block | Applies a status effect after all primary damage and effects have fully resolved. |
 | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. |
-| `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. |
-| `LeaveBehindRockOnKnockback` | Number | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. |
-| `Leech` | Number | Applies or references the 'Leech' effect/state. |
-| `Leeches` | Number | Applies or references the 'Leeches' effect/state. |
-| `Lifesteal` | Number | Applies or references the 'Lifesteal' effect/state. |
-| `LowGravityKnockbackBoost` | Number |  |
-| `LowGravityRangeBoost` | Number |  |
-| `LowerAmbientLight` | Number |  |
-| `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. |
-| `Madness` | Number | Applies the Madness debuff/status effect. |
-| `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. |
-| `MagicWeakness` | Number | Applies or references the 'MagicWeakness' effect/state. |
-| `MakeWeaponUnbreakable` | Number | Applies or references the 'MakeWeaponUnbreakable' effect/state. |
-| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. |
-| `ManaLeeches` | Number | Applies or references the 'ManaLeeches' effect/state. |
-| `ManaSteal` | Number | Applies or references the 'ManaSteal' effect/state. |
-| `ManaStealToHealth` | Number | Applies or references the 'ManaStealToHealth' effect/state. |
-| `ManglerAttack` | Number | Applies or references the 'ManglerAttack' effect/state. |
+| `LaunchOffScreenInstakill` | Integer | Applies or references the 'LaunchOffScreenInstakill' effect/state. |
+| `LeaveBehindRockOnKnockback` | Integer | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. |
+| `Leech` | Integer | Applies or references the 'Leech' effect/state. |
+| `Leeches` | Integer | Applies or references the 'Leeches' effect/state. |
+| `Lifesteal` | Integer | Applies or references the 'Lifesteal' effect/state. |
+| `LowGravityKnockbackBoost` | Integer |  |
+| `LowGravityRangeBoost` | Integer |  |
+| `LowerAmbientLight` | Integer |  |
+| `LuckUp` | Integer | Applies or references the 'LuckUp' effect/state. |
+| `Madness` | Integer | Applies the Madness debuff/status effect. |
+| `MadnessChanceOnTurnBegin` | Integer | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. |
+| `MagicWeakness` | Integer | Applies or references the 'MagicWeakness' effect/state. |
+| `MakeWeaponUnbreakable` | Integer | Applies or references the 'MakeWeaponUnbreakable' effect/state. |
+| `ManaGain` | Integer | Applies or references the 'ManaGain' effect/state. |
+| `ManaLeeches` | Integer | Applies or references the 'ManaLeeches' effect/state. |
+| `ManaSteal` | Integer | Applies or references the 'ManaSteal' effect/state. |
+| `ManaStealToHealth` | Integer | Applies or references the 'ManaStealToHealth' effect/state. |
+| `ManglerAttack` | Integer | Applies or references the 'ManglerAttack' effect/state. |
 | `ManglerShuffle` | Boolean | Applies or references the 'ManglerShuffle' effect/state. |
-| `Marked` | Number | Applies or references the 'Marked' effect/state. |
-| `MassAttackThis` | Number | Applies or references the 'MassAttackThis' effect/state. |
+| `Marked` | Integer | Applies or references the 'Marked' effect/state. |
+| `MassAttackThis` | Integer | Applies or references the 'MassAttackThis' effect/state. |
 | [`Math`](#math) | Block | Triggers the Tinkerer's Math ability sequence. |
-| `MaxHPUp` | Number | Applies or references the 'MaxHPUp' effect/state. |
-| `Meaty` | Number | Applies or references the 'Meaty' effect/state. |
+| `MaxHPUp` | Integer | Applies or references the 'MaxHPUp' effect/state. |
+| `Meaty` | Integer | Applies or references the 'Meaty' effect/state. |
 | [`MergeDamageInstance`](#mergedamageinstance) | Block | Combines damage numbers or visual hit effects. |
-| `MeteorShower` | Number |  |
-| `Meteornado` | Number |  |
-| `Metronome` | Number | Executes a random musical or metronome ability. |
-| `MimicMetronome` | Number | Applies or references the 'MimicMetronome' effect/state. |
-| `MonkStanceSwitch` | Number | Applies or references the 'MonkStanceSwitch' effect/state. |
-| `MotherTumorDebugForcePass` | Number | Applies or references the 'MotherTumorDebugForcePass' effect/state. |
-| `MoveQuivered` | Number | Applies or references the 'MoveQuivered' effect/state. |
-| `MovementUp` | Number | Applies or references the 'MovementUp' effect/state. |
-| `Muted` | Number | Applies or references the 'Muted' effect/state. |
-| `NextAbilityHeals` | Number | Applies or references the 'NextAbilityHeals' effect/state. |
-| `NextActionLuckUp` | Number | Applies or references the 'NextActionLuckUp' effect/state. |
-| `NextAttackBonusRange` | Number | Applies or references the 'NextAttackBonusRange' effect/state. |
-| `NextAttackSpecialCrit` | Number | Modifies the character's next attack to have special critical properties. |
+| `MeteorShower` | Integer |  |
+| `Meteornado` | Integer |  |
+| `Metronome` | Integer | Executes a random musical or metronome ability. |
+| `MimicMetronome` | Integer | Applies or references the 'MimicMetronome' effect/state. |
+| `MonkStanceSwitch` | Integer | Applies or references the 'MonkStanceSwitch' effect/state. |
+| `MotherTumorDebugForcePass` | Integer | Applies or references the 'MotherTumorDebugForcePass' effect/state. |
+| `MoveQuivered` | Integer | Applies or references the 'MoveQuivered' effect/state. |
+| `MovementUp` | Integer | Applies or references the 'MovementUp' effect/state. |
+| `Muted` | Integer | Applies or references the 'Muted' effect/state. |
+| `NextAbilityHeals` | Integer | Applies or references the 'NextAbilityHeals' effect/state. |
+| `NextActionLuckUp` | Integer | Applies or references the 'NextActionLuckUp' effect/state. |
+| `NextAttackBonusRange` | Integer | Applies or references the 'NextAttackBonusRange' effect/state. |
+| `NextAttackSpecialCrit` | Integer | Modifies the character's next attack to have special critical properties. |
 | [`NextBasicAttackCritsThisTurn`](#nextbasicattackcritsthisturn) | Block | Guarantees the next basic attack executed this turn will be a critical hit. |
 | [`NextBattleStatusStacks`](#nextbattlestatusstacks) | Block | Carries over the specified status effects into the next encounter/battle. |
-| `NextDamageReduceAndHealAllies` | Number | Applies or references the 'NextDamageReduceAndHealAllies' effect/state. |
-| `NextTurnDoubleRangedDamage` | Number | Applies or references the 'NextTurnDoubleRangedDamage' effect/state. |
-| `NonStackingDivineShield` | Number | Applies or references the 'NonStackingDivineShield' effect/state. |
+| `NextDamageReduceAndHealAllies` | Integer | Applies or references the 'NextDamageReduceAndHealAllies' effect/state. |
+| `NextTurnDoubleRangedDamage` | Integer | Applies or references the 'NextTurnDoubleRangedDamage' effect/state. |
+| `NonStackingDivineShield` | Integer | Applies or references the 'NonStackingDivineShield' effect/state. |
 | [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | Spawns a specific physics/item object upon impact. |
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. |
 | [`ObjectOnHitEmpty`](./Enums.md#enum-objectonhitempty) | Enum | Applies or references the 'ObjectOnHitEmpty' effect/state. |
 | [`ObjectOnHitFullyEmpty`](./Enums.md#enum-objectonhitfullyempty) | Enum | Applies or references the 'ObjectOnHitFullyEmpty' effect/state. |
-| `Ostracized` | Number | Applies or references the 'Ostracized' effect/state. |
-| `OverHealToShield` | Number | Applies or references the 'OverHealToShield' effect/state. |
+| `Ostracized` | Integer | Applies or references the 'Ostracized' effect/state. |
+| `OverHealToShield` | Integer | Applies or references the 'OverHealToShield' effect/state. |
 | [`OverHealToStatuses`](#overhealtostatuses) | Block | Converts excessive healing beyond maximum health into specific status effects. |
-| `OverrideChainKnockback` | Number | Applies or references the 'OverrideChainKnockback' effect/state. |
+| `OverrideChainKnockback` | Integer | Applies or references the 'OverrideChainKnockback' effect/state. |
 | [`OverrideChainKnockbackDamage`](./Math_Equations.md) | Equation | Applies or references the 'OverrideChainKnockbackDamage' effect/state. |
-| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. |
+| `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. |
 | [`OverrideKnockbackDamage`](./Enums.md#enum-overrideknockbackdamage) | Enum | Applies or references the 'OverrideKnockbackDamage' effect/state. |
-| `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. |
-| `PartialPurge` | Number | Applies or references the 'PartialPurge' effect/state. |
-| `PermanentCharisma` | Number | Applies or references the 'PermanentCharisma' effect/state. |
-| `PermanentCharm` | Number | Applies the 'PermanentCharm' effect. |
-| `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. |
-| `PermanentDexterity` | Number | Applies or references the 'PermanentDexterity' effect/state. |
-| `PermanentImmobile` | Number | Applies or references the 'PermanentImmobile' effect/state. |
-| `PermanentIntelligence` | Number | Applies or references the 'PermanentIntelligence' effect/state. |
-| `PermanentLuck` | Number | Applies or references the 'PermanentLuck' effect/state. |
-| `PermanentSpeed` | Number | Applies or references the 'PermanentSpeed' effect/state. |
-| `PermanentStrength` | Number | Applies or references the 'PermanentStrength' effect/state. |
-| `PermanentUpgradeRandomActive` | Number | Applies or references the 'PermanentUpgradeRandomActive' effect/state. |
-| `PermanentUpgradeRandomActiveOrPassive` | Number | Applies or references the 'PermanentUpgradeRandomActiveOrPassive' effect/state. |
+| `PartialCleanse` | Integer | Applies or references the 'PartialCleanse' effect/state. |
+| `PartialPurge` | Integer | Applies or references the 'PartialPurge' effect/state. |
+| `PermanentCharisma` | Integer | Applies or references the 'PermanentCharisma' effect/state. |
+| `PermanentCharm` | Integer | Applies the 'PermanentCharm' effect. |
+| `PermanentConstitution` | Integer | Applies or references the 'PermanentConstitution' effect/state. |
+| `PermanentDexterity` | Integer | Applies or references the 'PermanentDexterity' effect/state. |
+| `PermanentImmobile` | Integer | Applies or references the 'PermanentImmobile' effect/state. |
+| `PermanentIntelligence` | Integer | Applies or references the 'PermanentIntelligence' effect/state. |
+| `PermanentLuck` | Integer | Applies or references the 'PermanentLuck' effect/state. |
+| `PermanentSpeed` | Integer | Applies or references the 'PermanentSpeed' effect/state. |
+| `PermanentStrength` | Integer | Applies or references the 'PermanentStrength' effect/state. |
+| `PermanentUpgradeRandomActive` | Integer | Applies or references the 'PermanentUpgradeRandomActive' effect/state. |
+| `PermanentUpgradeRandomActiveOrPassive` | Integer | Applies or references the 'PermanentUpgradeRandomActiveOrPassive' effect/state. |
 | [`PersistentElement`](./Enums.md#enum-persistentelement) | Enum |  |
-| `Petrify` | Number | Applies or references the 'Petrify' effect/state. |
-| `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. |
-| `Poison` | Number | Applies or references the 'Poison' effect/state. |
-| `PoisonLace` | Number | Applies or references the 'PoisonLace' effect/state. |
+| `Petrify` | Integer | Applies or references the 'Petrify' effect/state. |
+| `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. |
+| `Poison` | Integer | Applies or references the 'Poison' effect/state. |
+| `PoisonLace` | Integer | Applies or references the 'PoisonLace' effect/state. |
 | [`PoolMetronome`](#poolmetronome) | Block | Executes a random ability drawn from a specific pool. |
 | [`PopAndSpawn`](./Enums.md#enum-popandspawn) | Enum | Destroys the target and replaces it with a new spawned entity. |
-| `Possessed` | Number | Applies or references the 'Possessed' effect/state. |
-| `ProbeCharmed` | Number | Applies or references the 'ProbeCharmed' effect/state. |
-| `PullSourceToKnockbackImmuneTarget` | Number | Applies or references the 'PullSourceToKnockbackImmuneTarget' effect/state. |
-| `PullSourceToTarget` | Number | Applies or references the 'PullSourceToTarget' effect/state. |
-| `Purge` | Number | Applies or references the 'Purge' effect/state. |
-| `PurgeAll` | Number | Applies or references the 'PurgeAll' effect/state. |
+| `Possessed` | Integer | Applies or references the 'Possessed' effect/state. |
+| `ProbeCharmed` | Integer | Applies or references the 'ProbeCharmed' effect/state. |
+| `PullSourceToKnockbackImmuneTarget` | Integer | Applies or references the 'PullSourceToKnockbackImmuneTarget' effect/state. |
+| `PullSourceToTarget` | Integer | Applies or references the 'PullSourceToTarget' effect/state. |
+| `Purge` | Integer | Applies or references the 'Purge' effect/state. |
+| `PurgeAll` | Integer | Applies or references the 'PurgeAll' effect/state. |
 | [`QuakeAreaChance`](#quakeareachance) | Block | Provides a probability to trigger an earthquake Area of Effect. |
 | [`QueueUseAbility`](./Enums.md#enum-queueuseability) | Enum | Applies or references the 'QueueUseAbility' effect/state. |
-| `Quivered` | Number | Applies or references the 'Quivered' effect/state. |
-| `RNGCannonRandomDamage` | Number | Applies or references the 'RNGCannonRandomDamage' effect/state. |
-| `Rain` | Number |  |
-| `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. |
-| `RandomDistanceDisplace` | Number | Displaces the target by a randomized distance. |
-| `RandomInjury` | Number | Applies or references the 'RandomInjury' effect/state. |
+| `Quivered` | Integer | Applies or references the 'Quivered' effect/state. |
+| `RNGCannonRandomDamage` | Integer | Applies or references the 'RNGCannonRandomDamage' effect/state. |
+| `Rain` | Integer |  |
+| `RandomBonusDamage` | Integer | Applies or references the 'RandomBonusDamage' effect/state. |
+| `RandomDistanceDisplace` | Integer | Displaces the target by a randomized distance. |
+| `RandomInjury` | Integer | Applies or references the 'RandomInjury' effect/state. |
 | [`RandomKnockback`](#randomknockback) | Block | Applies a randomized amount of knockback force. |
-| `RandomKnockbackDirection` | Number | Applies or references the 'RandomKnockbackDirection' effect/state. |
-| `RandomLightning` | Number |  |
-| `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. |
-| `RandomMutation` | Number | Applies or references the 'RandomMutation' effect/state. |
-| `RandomPermanentStat` | Number | Applies or references the 'RandomPermanentStat' effect/state. |
-| `RandomStatDown` | Number | Applies or references the 'RandomStatDown' effect/state. |
-| `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. |
+| `RandomKnockbackDirection` | Integer | Applies or references the 'RandomKnockbackDirection' effect/state. |
+| `RandomLightning` | Integer |  |
+| `RandomMagicMissile` | Integer | Fires a randomized number of magic missiles. |
+| `RandomMutation` | Integer | Applies or references the 'RandomMutation' effect/state. |
+| `RandomPermanentStat` | Integer | Applies or references the 'RandomPermanentStat' effect/state. |
+| `RandomStatDown` | Integer | Applies or references the 'RandomStatDown' effect/state. |
+| `RandomStatUp` | Integer | Applies or references the 'RandomStatUp' effect/state. |
 | [`RandomStatusFromPool`](#randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. |
 | [`RandomWeatherEachFight`](./Arrays.md#array-randomweathereachfight) | Array |  |
-| `RangeUp` | Number | Applies or references the 'RangeUp' effect/state. |
-| `Reanimate` | Number | Applies or references the 'Reanimate' effect/state. |
-| `RebukeDamage` | Number | Applies or references the 'RebukeDamage' effect/state. |
-| `ReduceManaCost` | Number | Applies or references the 'ReduceManaCost' effect/state. |
-| `ReduceManaCostExcludeBrainstorm` | Number | Applies or references the 'ReduceManaCostExcludeBrainstorm' effect/state. |
-| `Reflect` | Number | Applies or references the 'Reflect' effect/state. |
-| `ReformMoonHead` | Number | Applies or references the 'ReformMoonHead' effect/state. |
-| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. |
-| `RefreshItemAbilities` | Number | Applies or references the 'RefreshItemAbilities' effect/state. |
-| `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. |
-| `RefreshMovePointsIfHit` | Number | Applies or references the 'RefreshMovePointsIfHit' effect/state. |
-| `RefreshNonManaItemAbilities` | Number | Applies or references the 'RefreshNonManaItemAbilities' effect/state. |
-| `RefreshOncePerFightAbilities` | Number | Applies or references the 'RefreshOncePerFightAbilities' effect/state. |
-| `RefreshWeaponAbility` | Number | Applies or references the 'RefreshWeaponAbility' effect/state. |
-| `Regurge` | Number | Applies or references the 'Regurge' effect/state. |
-| `RemoveActPoints` | Number | Applies or references the 'RemoveActPoints' effect/state. |
+| `RangeUp` | Integer | Applies or references the 'RangeUp' effect/state. |
+| `Reanimate` | Integer | Applies or references the 'Reanimate' effect/state. |
+| `RebukeDamage` | Integer | Applies or references the 'RebukeDamage' effect/state. |
+| `ReduceManaCost` | Integer | Applies or references the 'ReduceManaCost' effect/state. |
+| `ReduceManaCostExcludeBrainstorm` | Integer | Applies or references the 'ReduceManaCostExcludeBrainstorm' effect/state. |
+| `Reflect` | Integer | Applies or references the 'Reflect' effect/state. |
+| `ReformMoonHead` | Integer | Applies or references the 'ReformMoonHead' effect/state. |
+| `RefreshActPoints` | Integer | Applies or references the 'RefreshActPoints' effect/state. |
+| `RefreshItemAbilities` | Integer | Applies or references the 'RefreshItemAbilities' effect/state. |
+| `RefreshMovePoints` | Integer | Applies or references the 'RefreshMovePoints' effect/state. |
+| `RefreshMovePointsIfHit` | Integer | Applies or references the 'RefreshMovePointsIfHit' effect/state. |
+| `RefreshNonManaItemAbilities` | Integer | Applies or references the 'RefreshNonManaItemAbilities' effect/state. |
+| `RefreshOncePerFightAbilities` | Integer | Applies or references the 'RefreshOncePerFightAbilities' effect/state. |
+| `RefreshWeaponAbility` | Integer | Applies or references the 'RefreshWeaponAbility' effect/state. |
+| `Regurge` | Integer | Applies or references the 'Regurge' effect/state. |
+| `RemoveActPoints` | Integer | Applies or references the 'RemoveActPoints' effect/state. |
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. |
-| `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. |
-| `RemoveMovePoints` | Number | Applies or references the 'RemoveMovePoints' effect/state. |
+| `RemoveKnockback` | Integer | Applies or references the 'RemoveKnockback' effect/state. |
+| `RemoveMovePoints` | Integer | Applies or references the 'RemoveMovePoints' effect/state. |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. |
 | [`RemoveStatusStacks`](#removestatusstacks) | Block | Removes a specific number of stacks of a status effect. |
-| `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. |
-| `RepairAll` | Number | Applies or references the 'RepairAll' effect/state. |
-| `RepairAllCondition` | Number | Applies or references the 'RepairAllCondition' effect/state. |
-| `RepairArmorCondition` | Number | Applies or references the 'RepairArmorCondition' effect/state. |
-| `RepairOnKill` | Number | Applies or references the 'RepairOnKill' effect/state. |
-| `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. |
-| `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. |
-| `RepairWeaponCondition` | Number | Applies or references the 'RepairWeaponCondition' effect/state. |
-| `RerollEnemy` | Number | Applies or references the 'RerollEnemy' effect/state. |
-| `ResetArmorShield` | Number | Applies or references the 'ResetArmorShield' effect/state. |
-| `ReturnDinoLegs` | Number | Applies or references the 'ReturnDinoLegs' effect/state. |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. |
-| `ReviveNextRound` | Number | Queues the character to be resurrected at the start of the next combat round. |
-| `Rot` | Number | Applies or references the 'Rot' effect/state. |
-| `SafeDie` | Number | Applies or references the 'SafeDie' effect/state. |
-| `SafeDoomed` | Number | Applies the 'SafeDoomed' effect. |
-| `Sandstorm` | Number |  |
+| `RemoveTurnsThisRound` | Integer | Applies or references the 'RemoveTurnsThisRound' effect/state. |
+| `RepairAll` | Integer | Applies or references the 'RepairAll' effect/state. |
+| `RepairAllCondition` | Integer | Applies or references the 'RepairAllCondition' effect/state. |
+| `RepairArmorCondition` | Integer | Applies or references the 'RepairArmorCondition' effect/state. |
+| `RepairOnKill` | Integer | Applies or references the 'RepairOnKill' effect/state. |
+| `RepairTrinket` | Integer | Applies or references the 'RepairTrinket' effect/state. |
+| `RepairWeapon` | Integer | Applies or references the 'RepairWeapon' effect/state. |
+| `RepairWeaponCondition` | Integer | Applies or references the 'RepairWeaponCondition' effect/state. |
+| `RerollEnemy` | Integer | Applies or references the 'RerollEnemy' effect/state. |
+| `ResetArmorShield` | Integer | Applies or references the 'ResetArmorShield' effect/state. |
+| `ReturnDinoLegs` | Integer | Applies or references the 'ReturnDinoLegs' effect/state. |
+| `Revive` | Integer | Applies or references the 'Revive' effect/state. |
+| `ReviveNextRound` | Integer | Queues the character to be resurrected at the start of the next combat round. |
+| `Rot` | Integer | Applies or references the 'Rot' effect/state. |
+| `SafeDie` | Integer | Applies or references the 'SafeDie' effect/state. |
+| `SafeDoomed` | Integer | Applies the 'SafeDoomed' effect. |
+| `Sandstorm` | Integer |  |
 | [`ScatterCoins`](#scattercoins) | Block | Throws coins out into the level randomly. |
-| `ScatterHeldCoin` | Number | Applies or references the 'ScatterHeldCoin' effect/state. |
-| `ScatterRandomPickups` | Number | Applies or references the 'ScatterRandomPickups' effect/state. |
-| `ScrambleEverything` | Number | Applies or references the 'ScrambleEverything' effect/state. |
+| `ScatterHeldCoin` | Integer | Applies or references the 'ScatterHeldCoin' effect/state. |
+| `ScatterRandomPickups` | Integer | Applies or references the 'ScatterRandomPickups' effect/state. |
+| `ScrambleEverything` | Integer | Applies or references the 'ScrambleEverything' effect/state. |
 | [`ScrambleLastUsedSpell`](#scramblelastusedspell) | Block | Randomizes or scrambles the properties of the last spell cast. |
-| `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. |
-| `SelfStun` | Number | Applies or references the 'SelfStun' effect/state. |
-| `SendRock` | Number | Applies or references the 'SendRock' effect/state. |
+| `Scrambled` | Integer | Applies or references the 'Scrambled' effect/state. |
+| `SelfStun` | Integer | Applies or references the 'SelfStun' effect/state. |
+| `SendRock` | Integer | Applies or references the 'SendRock' effect/state. |
 | [`SetAnimationAlts`](#setanimationalts) | Block | Overrides specific animation states with alternative animations. |
 | [`SetCrazyEyeBackgroundWeights`](#setcrazyeyebackgroundweights) | Block | Adjusts visual rendering weights for the 'Crazy Eye' background effect. |
 | [`SetDefaultFace`](./Enums.md#enum-setdefaultface) | Enum | Applies or references the 'SetDefaultFace' effect/state. |
-| `SetDistanceDisplace` | Number | Applies or references the 'SetDistanceDisplace' effect/state. |
-| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. |
+| `SetDistanceDisplace` | Integer | Applies or references the 'SetDistanceDisplace' effect/state. |
+| `SetHealth` | Integer | Applies or references the 'SetHealth' effect/state. |
 | [`SetItemAux`](#setitemaux) | Block | Applies or references the 'SetItemAux' effect/state. |
-| `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. |
-| `SetShield` | Number | Applies or references the 'SetShield' effect/state. |
-| `ShadowCrit` | Number | Applies or references the 'ShadowCrit' effect/state. |
-| `Shatter` | Number | Applies or references the 'Shatter' effect/state. |
-| `Shield` | Number | Applies or references the 'Shield' effect/state. |
-| `ShootHereCommand` | Number | Applies or references the 'ShootHereCommand' effect/state. |
-| `ShootHereReceiver` | Number | Applies or references the 'ShootHereReceiver' effect/state. |
-| `ShortCircuit` | Number | Applies or references the 'ShortCircuit' effect/state. |
+| `SetKnockback` | Integer | Applies or references the 'SetKnockback' effect/state. |
+| `SetShield` | Integer | Applies or references the 'SetShield' effect/state. |
+| `ShadowCrit` | Integer | Applies or references the 'ShadowCrit' effect/state. |
+| `Shatter` | Integer | Applies or references the 'Shatter' effect/state. |
+| `Shield` | Integer | Applies or references the 'Shield' effect/state. |
+| `ShootHereCommand` | Integer | Applies or references the 'ShootHereCommand' effect/state. |
+| `ShootHereReceiver` | Integer | Applies or references the 'ShootHereReceiver' effect/state. |
+| `ShortCircuit` | Integer | Applies or references the 'ShortCircuit' effect/state. |
 | [`ShowFakeDamage`](#showfakedamage) | Block | Displays a visual damage number without actually modifying health. |
 | `ShowText` | String | Applies or references the 'ShowText' effect/state. |
-| `SignalFinalBossShieldBroke` | Number | Applies or references the 'SignalFinalBossShieldBroke' effect/state. |
-| [`SizeScale`](./Enums.md#enum-sizescale) | Enum | Applies or references the 'SizeScale' effect/state. |
-| `Sleep` | Number | Applies or references the 'Sleep' effect/state. |
-| `Slow` | Number | Applies or references the 'Slow' effect/state. |
-| `SmallHitExplosion` | Number | Applies or references the 'SmallHitExplosion' effect/state. |
-| `SmartMetronome` | Number | Executes a 'smart' random ability that aims to be beneficial based on context. |
-| `SmellBlood` | Number | Applies or references the 'SmellBlood' effect/state. |
-| `Snow` | Number |  |
+| `SignalFinalBossShieldBroke` | Integer | Applies or references the 'SignalFinalBossShieldBroke' effect/state. |
+| `SizeScale` | Float | Applies or references the 'SizeScale' effect/state. |
+| `Sleep` | Integer | Applies or references the 'Sleep' effect/state. |
+| `Slow` | Integer | Applies or references the 'Slow' effect/state. |
+| `SmallHitExplosion` | Integer | Applies or references the 'SmallHitExplosion' effect/state. |
+| `SmartMetronome` | Integer | Executes a 'smart' random ability that aims to be beneficial based on context. |
+| `SmellBlood` | Integer | Applies or references the 'SmellBlood' effect/state. |
+| `Snow` | Integer |  |
 | [`SolarFlare`](#solarflare) | Block |  |
-| `SoulLink` | Number | Applies or references the 'SoulLink' effect/state. |
+| `SoulLink` | Integer | Applies or references the 'SoulLink' effect/state. |
 | [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Applies or references the 'SoundEventOnHit' effect/state. |
 | [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. |
-| `SpawnBearTrap` | Number | Applies or references the 'SpawnBearTrap' effect/state. |
-| `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. |
-| `SpawnCoinAnywhere` | Number | Applies or references the 'SpawnCoinAnywhere' effect/state. |
-| `SpawnCreep` | Number | Applies or references the 'SpawnCreep' effect/state. |
+| `SpawnBearTrap` | Integer | Applies or references the 'SpawnBearTrap' effect/state. |
+| `SpawnBearTrapIfHitKills` | Integer | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. |
+| `SpawnCoinAnywhere` | Integer | Applies or references the 'SpawnCoinAnywhere' effect/state. |
+| `SpawnCreep` | Integer | Applies or references the 'SpawnCreep' effect/state. |
 | [`SpawnCustomTrap`](./Enums.md#enum-spawncustomtrap) | Enum | Applies or references the 'SpawnCustomTrap' effect/state. |
 | [`SpawnExtraThingsOnBattleStart`](#spawnextrathingsonbattlestart) | Block |  |
 | [`SpawnFlames`](./Arrays.md#array-spawnflames) | Array | Applies or references the 'SpawnFlames' effect/state. |
-| `SpawnNeutralWebTrapOnMiss` | Number | Applies or references the 'SpawnNeutralWebTrapOnMiss' effect/state. |
-| `SpawnRock` | Number | Applies or references the 'SpawnRock' effect/state. |
+| `SpawnNeutralWebTrapOnMiss` | Integer | Applies or references the 'SpawnNeutralWebTrapOnMiss' effect/state. |
+| `SpawnRock` | Integer | Applies or references the 'SpawnRock' effect/state. |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. |
 | [`SpawnTilePuddleOnBattleStart`](#spawntilepuddleonbattlestart) | Block |  |
 | [`SpawnVolcanoOnBattleStart`](#spawnvolcanoonbattlestart) | Block |  |
-| `SpawnWebTrap` | Number | Applies or references the 'SpawnWebTrap' effect/state. |
+| `SpawnWebTrap` | Integer | Applies or references the 'SpawnWebTrap' effect/state. |
 | [`SpecialBossMultipartInstakill`](./Enums.md#enum-specialbossmultipartinstakill) | Enum | Applies or references the 'SpecialBossMultipartInstakill' effect/state. |
 | [`SpecialGodRays`](#specialgodrays) | Block |  |
 | [`SpecificInjury`](./Enums.md#enum-specificinjury) | Enum | Applies or references the 'SpecificInjury' effect/state. |
-| `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. |
-| `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. |
-| `SpellDamageUp` | Number | Applies or references the 'SpellDamageUp' effect/state. |
-| `SpellShield` | Number | Applies or references the 'SpellShield' effect/state. |
-| `SpiderInfested` | Number | Applies or references the 'SpiderInfested' effect/state. |
-| `SpitConsumed` | Number | Applies or references the 'SpitConsumed' effect/state. |
-| `SplashDamage` | Number | Applies or references the 'SplashDamage' effect/state. |
+| `SpeculativeMoveSelfCorpseOffMap` | Integer | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. |
+| `SpeedUp` | Integer | Applies or references the 'SpeedUp' effect/state. |
+| `SpellDamageUp` | Integer | Applies or references the 'SpellDamageUp' effect/state. |
+| `SpellShield` | Integer | Applies or references the 'SpellShield' effect/state. |
+| `SpiderInfested` | Integer | Applies or references the 'SpiderInfested' effect/state. |
+| `SpitConsumed` | Integer | Applies or references the 'SpitConsumed' effect/state. |
+| `SplashDamage` | Integer | Applies or references the 'SplashDamage' effect/state. |
 | [`SpreadDisease`](#spreaddisease) | Block | Provides a chance to transmit a disease status to adjacent targets. |
-| `StackingSandstorm` | Number | Applies or references the 'StackingSandstorm' effect/state. |
-| `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. |
-| `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. |
-| `StatBounty` | Number | Applies or references the 'StatBounty' effect/state. |
+| `StackingSandstorm` | Integer | Applies or references the 'StackingSandstorm' effect/state. |
+| `StanceSwitchToMelee` | Integer | Applies or references the 'StanceSwitchToMelee' effect/state. |
+| `StanceSwitchToRanged` | Integer | Applies or references the 'StanceSwitchToRanged' effect/state. |
+| `StatBounty` | Integer | Applies or references the 'StatBounty' effect/state. |
 | [`StatusAllCharactersOnSpawn`](#statusallcharactersonspawn) | Block |  |
 | [`StatusCharactersOnRoundEnd`](#statuscharactersonroundend) | Block |  |
 | [`StatusCharactersOnRoundStart`](#statuscharactersonroundstart) | Block |  |
 | [`StatusGroup`](#statusgroup) | Block | Groups multiple status effects together for batch application. |
-| `StealDemonicGlyph` | Number | Applies or references the 'StealDemonicGlyph' effect/state. |
+| `StealDemonicGlyph` | Integer | Applies or references the 'StealDemonicGlyph' effect/state. |
 | [`StealEquipment`](./Enums.md#enum-stealequipment) | Enum | Applies or references the 'StealEquipment' effect/state. |
-| `StealTurn` | Number | Applies or references the 'StealTurn' effect/state. |
-| `Stealth` | Number | Applies or references the 'Stealth' effect/state. |
-| `StealthCritChance` | Number | Applies or references the 'StealthCritChance' effect/state. |
-| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. |
-| `Stun` | Number | Applies or references the 'Stun' effect/state. |
-| `SwallowSmallCharacter` | Number | Applies or references the 'SwallowSmallCharacter' effect/state. |
-| `SwapHighestAndLowestStat` | Number | Applies or references the 'SwapHighestAndLowestStat' effect/state. |
+| `StealTurn` | Integer | Applies or references the 'StealTurn' effect/state. |
+| `Stealth` | Integer | Applies or references the 'Stealth' effect/state. |
+| `StealthCritChance` | Integer | Applies or references the 'StealthCritChance' effect/state. |
+| `StrengthUp` | Integer | Applies or references the 'StrengthUp' effect/state. |
+| `Stun` | Integer | Applies or references the 'Stun' effect/state. |
+| `SwallowSmallCharacter` | Integer | Applies or references the 'SwallowSmallCharacter' effect/state. |
+| `SwapHighestAndLowestStat` | Integer | Applies or references the 'SwapHighestAndLowestStat' effect/state. |
 | [`SwapWeapon`](#swapweapon) | Block | Replaces the character's currently equipped weapon with one from a specified pool. |
 | [`SwitchMusic`](#switchmusic) | Block | Changes the background music track or layer during combat. |
-| `Switcheroo` | Number | Applies or references the 'Switcheroo' effect/state. |
-| `T2CopyCat` | Number | Applies or references the 'T2CopyCat' effect/state. |
-| `T3HitlerTriggerInitialSpawns` | Number | Applies or references the 'T3HitlerTriggerInitialSpawns' effect/state. |
+| `Switcheroo` | Integer | Applies or references the 'Switcheroo' effect/state. |
+| `T2CopyCat` | Integer | Applies or references the 'T2CopyCat' effect/state. |
+| `T3HitlerTriggerInitialSpawns` | Integer | Applies or references the 'T3HitlerTriggerInitialSpawns' effect/state. |
 | [`TagMetronome`](./Enums.md#enum-tagmetronome) | Enum | Applies or references the 'TagMetronome' effect/state. |
 | [`TakeBonusTurnWithAIControl`](#takebonusturnwithaicontrol) | Block | Grants the character an immediate extra turn, but forces the AI to control them during it. |
 | [`TakeBonusTurnWithStatus`](#takebonusturnwithstatus) | Block | Grants the character an immediate extra turn while afflicted with specific statuses. |
-| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. |
-| `TakeExtraTurnEndOfRound` | Number | Applies or references the 'TakeExtraTurnEndOfRound' effect/state. |
-| `Tangled` | Number | Applies a tangled/ensnared status effect, often modifying visual sprites. |
-| `TargetedMetronome` | Number | Applies or references the 'TargetedMetronome' effect/state. |
-| `Tarred` | Number | Applies or references the 'Tarred' effect/state. |
-| `Taunting` | Number | Applies or references the 'Taunting' effect/state. |
+| `TakeExtraTurn` | Integer | Applies or references the 'TakeExtraTurn' effect/state. |
+| `TakeExtraTurnEndOfRound` | Integer | Applies or references the 'TakeExtraTurnEndOfRound' effect/state. |
+| `Tangled` | Integer | Applies a tangled/ensnared status effect, often modifying visual sprites. |
+| `TargetedMetronome` | Integer | Applies or references the 'TargetedMetronome' effect/state. |
+| `Tarred` | Integer | Applies or references the 'Tarred' effect/state. |
+| `Taunting` | Integer | Applies or references the 'Taunting' effect/state. |
 | [`TeamBonusAbility`](./Enums.md#enum-teambonusability) | Enum | Applies or references the 'TeamBonusAbility' effect/state. |
 | [`TeamCastAbility`](./Enums.md#enum-teamcastability) | Enum | Requires or involves multiple characters to execute the ability. |
-| `Tech` | Number | Applies or references the 'Tech' effect/state. |
+| `Tech` | Integer | Applies or references the 'Tech' effect/state. |
 | [`TeleportBackAtTurnEnd`](./Enums.md#enum-teleportbackatturnend) | Enum | Applies or references the 'TeleportBackAtTurnEnd' effect/state. |
-| `TempBackstab` | Number | Applies or references the 'TempBackstab' effect/state. |
-| `TempBackstabBleed` | Number | Applies or references the 'TempBackstabBleed' effect/state. |
-| `TempBackstabPiercing` | Number | Applies or references the 'TempBackstabPiercing' effect/state. |
-| `TempBackstabPoison` | Number | Applies or references the 'TempBackstabPoison' effect/state. |
-| `TempBasicAttackBonusAOE` | Number | Applies or references the 'TempBasicAttackBonusAOE' effect/state. |
-| `TempBonusKnockback` | Number | Applies or references the 'TempBonusKnockback' effect/state. |
-| `TempBonusKnockbackDamage` | Number | Applies or references the 'TempBonusKnockbackDamage' effect/state. |
-| `TempCounterAttack` | Number | Applies or references the 'TempCounterAttack' effect/state. |
-| `TempCritChanceUp` | Number | Applies or references the 'TempCritChanceUp' effect/state. |
-| `TempDamageUp` | Number | Applies or references the 'TempDamageUp' effect/state. |
+| `TempBackstab` | Integer | Applies or references the 'TempBackstab' effect/state. |
+| `TempBackstabBleed` | Integer | Applies or references the 'TempBackstabBleed' effect/state. |
+| `TempBackstabPiercing` | Integer | Applies or references the 'TempBackstabPiercing' effect/state. |
+| `TempBackstabPoison` | Integer | Applies or references the 'TempBackstabPoison' effect/state. |
+| `TempBasicAttackBonusAOE` | Integer | Applies or references the 'TempBasicAttackBonusAOE' effect/state. |
+| `TempBonusKnockback` | Integer | Applies or references the 'TempBonusKnockback' effect/state. |
+| `TempBonusKnockbackDamage` | Integer | Applies or references the 'TempBonusKnockbackDamage' effect/state. |
+| `TempCounterAttack` | Integer | Applies or references the 'TempCounterAttack' effect/state. |
+| `TempCritChanceUp` | Integer | Applies or references the 'TempCritChanceUp' effect/state. |
+| `TempDamageUp` | Integer | Applies or references the 'TempDamageUp' effect/state. |
 | [`TempDexterityUp`](./Enums.md#enum-tempdexterityup) | Enum | Applies or references the 'TempDexterityUp' effect/state. |
-| `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. |
-| `TempInjuryImmunity` | Number | Applies or references the 'TempInjuryImmunity' effect/state. |
-| `TempLuckUp` | Number | Applies or references the 'TempLuckUp' effect/state. |
-| `TempManaCostReduction` | Number | Applies or references the 'TempManaCostReduction' effect/state. |
-| `TempMovement` | Number | Applies or references the 'TempMovement' effect/state. |
+| `TempInitiativeChange` | Integer | Applies or references the 'TempInitiativeChange' effect/state. |
+| `TempInjuryImmunity` | Integer | Applies or references the 'TempInjuryImmunity' effect/state. |
+| `TempLuckUp` | Integer | Applies or references the 'TempLuckUp' effect/state. |
+| `TempManaCostReduction` | Integer | Applies or references the 'TempManaCostReduction' effect/state. |
+| `TempMovement` | Integer | Applies or references the 'TempMovement' effect/state. |
 | [`TempPassiveUntilSettled`](#temppassiveuntilsettled) | Block | Passive: Active only until the physics engine stops moving the character. |
 | [`TempPassiveWhileHasStatus`](#temppassivewhilehasstatus) | Block | Grants nested passives only while the character possesses the specified status. |
-| `TempPenetrate` | Number | Applies or references the 'TempPenetrate' effect/state. |
-| `TempPreEmptiveCounterAttack` | Number | Applies or references the 'TempPreEmptiveCounterAttack' effect/state. |
-| `TempRangeUp` | Number | Applies or references the 'TempRangeUp' effect/state. |
+| `TempPenetrate` | Integer | Applies or references the 'TempPenetrate' effect/state. |
+| `TempPreEmptiveCounterAttack` | Integer | Applies or references the 'TempPreEmptiveCounterAttack' effect/state. |
+| `TempRangeUp` | Integer | Applies or references the 'TempRangeUp' effect/state. |
 | [`TempSpeedUp`](./Enums.md#enum-tempspeedup) | Enum | Applies or references the 'TempSpeedUp' effect/state. |
-| `TempSpellDamageUp` | Number | Applies or references the 'TempSpellDamageUp' effect/state. |
+| `TempSpellDamageUp` | Integer | Applies or references the 'TempSpellDamageUp' effect/state. |
 | [`TempStrengthUp`](./Enums.md#enum-tempstrengthup) | Enum | Applies or references the 'TempStrengthUp' effect/state. |
-| `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. |
+| `TempTrampleUntilSettled` | Integer | Applies or references the 'TempTrampleUntilSettled' effect/state. |
 | [`Temporary`](#temporary) | Block | A wrapper block for applying status effects that automatically expire. |
-| `Thorns` | Number | Applies or references the 'Thorns' effect/state. |
-| `ThornsDamageImmuneUntilSettled` | Number | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. |
+| `Thorns` | Integer | Applies or references the 'Thorns' effect/state. |
+| `ThornsDamageImmuneUntilSettled` | Integer | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. |
 | [`TickDownStatus`](./Enums.md#enum-tickdownstatus) | Enum | Applies or references the 'TickDownStatus' effect/state. |
-| `TileDamageImmuneUntilSettled` | Number | Applies or references the 'TileDamageImmuneUntilSettled' effect/state. |
-| `TilesMovedToCritChance` | Number | Applies or references the 'TilesMovedToCritChance' effect/state. |
-| `TilesMovedToMana` | Number | Applies or references the 'TilesMovedToMana' effect/state. |
+| `TileDamageImmuneUntilSettled` | Integer | Applies or references the 'TileDamageImmuneUntilSettled' effect/state. |
+| `TilesMovedToCritChance` | Integer | Applies or references the 'TilesMovedToCritChance' effect/state. |
+| `TilesMovedToMana` | Integer | Applies or references the 'TilesMovedToMana' effect/state. |
 | [`TilesMovedToNeighborHeal`](./Enums.md#enum-tilesmovedtoneighborheal) | Enum | Applies or references the 'TilesMovedToNeighborHeal' effect/state. |
-| `TilesMovedToStrength` | Number | Applies or references the 'TilesMovedToStrength' effect/state. |
+| `TilesMovedToStrength` | Integer | Applies or references the 'TilesMovedToStrength' effect/state. |
 | [`TimeDelayStatusApplication`](#timedelaystatusapplication) | Block | Delays the nested effects by a specified amount of real-time seconds. |
-| `TowerDefenseStatus` | Number | Applies or references the 'TowerDefenseStatus' effect/state. |
-| `TowerDefenseStatus2` | Number | Applies or references the 'TowerDefenseStatus2' effect/state. |
-| `TradeLife` | Number | Applies or references the 'TradeLife' effect/state. |
-| `TrailBlazer` | Number | Applies or references the 'TrailBlazer' effect/state. |
-| `Trample` | Number | Applies or references the 'Trample' effect/state. |
+| `TowerDefenseStatus` | Integer | Applies or references the 'TowerDefenseStatus' effect/state. |
+| `TowerDefenseStatus2` | Integer | Applies or references the 'TowerDefenseStatus2' effect/state. |
+| `TradeLife` | Integer | Applies or references the 'TradeLife' effect/state. |
+| `TrailBlazer` | Integer | Applies or references the 'TrailBlazer' effect/state. |
+| `Trample` | Integer | Applies or references the 'Trample' effect/state. |
 | [`TransformAbility`](./Enums.md#enum-transformability) | Enum | Applies or references the 'TransformAbility' effect/state. |
 | [`TransformBasicAttack`](./Enums.md#enum-transformbasicattack) | Enum | Applies or references the 'TransformBasicAttack' effect/state. |
 | [`TransformBasicMove`](./Enums.md#enum-transformbasicmove) | Enum | Applies or references the 'TransformBasicMove' effect/state. |
 | [`TransformEquipment`](#transformequipment) | Block | Upgrades or transforms a specific equipped item into another. |
 | [`TransformNow`](./Enums.md#enum-transformnow) | Enum | Applies or references the 'TransformNow' effect/state. |
 | [`TransformWeapon`](#transformweapon) | Block | Transforms the equipped weapon into another specific weapon state. |
-| `Trapper_Status` | Number | Applies or references the 'Trapper_Status' effect/state. |
-| `TriggerDOTStatuses` | Number | Applies or references the 'TriggerDOTStatuses' effect/state. |
-| `TriggerGameEnding` | Number | Applies or references the 'TriggerGameEnding' effect/state. |
-| `TriggerMotherConsume` | Number | Applies or references the 'TriggerMotherConsume' effect/state. |
-| `TriggerMotherGrow` | Number | Applies or references the 'TriggerMotherGrow' effect/state. |
+| `Trapper_Status` | Integer | Applies or references the 'Trapper_Status' effect/state. |
+| `TriggerDOTStatuses` | Integer | Applies or references the 'TriggerDOTStatuses' effect/state. |
+| `TriggerGameEnding` | Integer | Applies or references the 'TriggerGameEnding' effect/state. |
+| `TriggerMotherConsume` | Integer | Applies or references the 'TriggerMotherConsume' effect/state. |
+| `TriggerMotherGrow` | Integer | Applies or references the 'TriggerMotherGrow' effect/state. |
 | [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array | Applies or references the 'TriggerWerewolfTransform' effect/state. |
-| `TurnAround` | Number | Applies or references the 'TurnAround' effect/state. |
-| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Enum | Applies or references the 'TurnControlDelay' effect/state. |
-| `TurnRight` | Number | Applies or references the 'TurnRight' effect/state. |
+| `TurnAround` | Integer | Applies or references the 'TurnAround' effect/state. |
+| `TurnControlDelay` | Float | Applies or references the 'TurnControlDelay' effect/state. |
+| `TurnRight` | Integer | Applies or references the 'TurnRight' effect/state. |
 | [`TwisterDisplaceWithDamage`](#twisterdisplacewithdamage) | Block | A whirlwind effect that randomly displaces targets and deals damage. |
-| `UndoDamage` | Number | Applies or references the 'UndoDamage' effect/state. |
-| `UpgradeRandomAbility` | Number | Applies or references the 'UpgradeRandomAbility' effect/state. |
+| `UndoDamage` | Integer | Applies or references the 'UndoDamage' effect/state. |
+| `UpgradeRandomAbility` | Integer | Applies or references the 'UpgradeRandomAbility' effect/state. |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. |
 | [`UseMoveAbilityWithAI`](#usemoveabilitywithai) | Block | Forces the character to execute a movement ability using specific AI weights. |
-| `UseRandomSpell_Madness` | Number | Applies the 'UseRandomSpell_Madness' effect. |
-| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. |
-| `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. |
+| `UseRandomSpell_Madness` | Integer | Applies the 'UseRandomSpell_Madness' effect. |
+| `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. |
+| `VaporizeCorpse` | Integer | Applies or references the 'VaporizeCorpse' effect/state. |
 | [`VaporizeCorpseFlipAdvantage`](./Arrays.md#array-vaporizecorpseflipadvantage) | Array | Applies or references the 'VaporizeCorpseFlipAdvantage' effect/state. |
-| `VaporizeDice` | Number | Applies or references the 'VaporizeDice' effect/state. |
-| `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. |
-| `VaporizeTarget` | Number | Applies or references the 'VaporizeTarget' effect/state. |
+| `VaporizeDice` | Integer | Applies or references the 'VaporizeDice' effect/state. |
+| `VaporizeInanimate` | Integer | Applies or references the 'VaporizeInanimate' effect/state. |
+| `VaporizeTarget` | Integer | Applies or references the 'VaporizeTarget' effect/state. |
 | [`VisualCountDownThenApplyStatus`](#visualcountdownthenapplystatus) | Block | Displays a visual countdown above the target before applying the nested effects. |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Applies or references the 'VisualFX' effect/state. |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies or references the 'VisualFXTile' effect/state. |
-| `VisualFlySwarm` | Number |  |
+| `VisualFlySwarm` | Integer |  |
 | [`WaggleClone`](#waggleclone) | Block | Spawns visual clones or alternative hitbox variants of the projectile. |
-| `Weakness` | Number | Applies or references the 'Weakness' effect/state. |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Enum | Applies or references the 'WeaponAuxMultiplier' effect/state. |
-| `Webbed` | Number | Applies or references the 'Webbed' effect/state. |
-| `Windy` | Number |  |
+| `Weakness` | Integer | Applies or references the 'Weakness' effect/state. |
+| `WeaponAuxMultiplier` | Float | Applies or references the 'WeaponAuxMultiplier' effect/state. |
+| `Webbed` | Integer | Applies or references the 'Webbed' effect/state. |
+| `Windy` | Integer |  |
 | [`XIsTargetHealth`](#xistargethealth) | Block | Math variable assignment: Evaluates X as the target's current health. |
 | `do_not_pop_corpse` | Boolean |  |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum |  |
@@ -649,13 +649,13 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. |
 | `kill_on_consume` | Boolean |  |
 | `mount_mode` | Boolean | If true, treats the consumption as riding/mounting instead of eating. |
-| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
+| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. |
 | [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum |  |
-| `threshold_flat` | Number | A flat numerical health value threshold. |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). |
+| `threshold_flat` | Integer | A flat numerical health value threshold. |
+| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). |
 | `use_placeholder` | Boolean |  |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. |
 | `wet` | Boolean |  |
@@ -790,7 +790,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. |
+| [`odds`](./Math_Equations.md) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) |
 
 </details>
 
@@ -872,7 +872,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. |
+| `odds` | Integer | The probability (0.0 to 1.0) of applying the debuff. |
 
 </details>
 
@@ -969,7 +969,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
+| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
 | [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
 
 </details>
@@ -1029,8 +1029,8 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
 | [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum |  |
-| `threshold_flat` | Number | A flat numerical health value threshold. |
-| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). |
+| `threshold_flat` | Integer | A flat numerical health value threshold. |
+| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). |
 | [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Block | Nested conditional. |
 
 </details>
@@ -1124,7 +1124,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `threshold_flat` | Number |  |
+| `threshold_flat` | Integer |  |
 
 </details>
 
@@ -1260,7 +1260,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `odds` | Number |  |
+| `odds` | Integer |  |
 
 </details>
 

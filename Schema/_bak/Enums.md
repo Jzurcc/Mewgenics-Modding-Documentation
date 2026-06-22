@@ -40,6 +40,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `jump_move` | |
 | `multihit_self_buff` | |
 
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -446,6 +449,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `yellb` | |
 | `zombie` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`template`](#enum-template), [`type`](#enum-type), [`particle`](#enum-particle), [`projectile`](#enum-projectile), [`aoe_symmetry`](#enum-aoe_symmetry), [`dash_attack_animation`](#enum-dash_attack_animation), [`start`](#enum-start), [`loop`](#enum-loop), [`end`](#enum-end), [`jump_attack_animation`](#enum-jump_attack_animation), [`tag`](#enum-tag), [`type_icon`](#enum-type_icon), [`ElementImmune`](#enum-elementimmune), [`dash_end_animation`](#enum-dash_end_animation), [`SetDefaultFace`](#enum-setdefaultface), [`TeamCastAbility`](#enum-teamcastability), [`prime_animation`](#enum-prime_animation), [`FormChange`](#enum-formchange), [`detatched_animation`](#enum-detatched_animation), [`element`](#enum-element), [`CompleteItemQuest`](#enum-completeitemquest), [`spawnin_animation`](#enum-spawnin_animation), [`decision_weights`](#enum-decision_weights), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement), [`attack`](#enum-attack), [`exclude`](#enum-exclude), [`form_onmap`](#enum-form_onmap), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`form_hasnot`](#enum-form_hasnot), [`DigestDeadBodies`](#enum-digestdeadbodies), [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority), [`TagGreed`](#enum-taggreed), [`stat`](#enum-stat), [`default_face`](#enum-default_face), [`fail_item_quest`](#enum-fail_item_quest), [`unlock_ability`](#enum-unlock_ability), [`right_icon`](#enum-right_icon).
+
 </details>
 
 
@@ -503,6 +509,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TeleportAbility` | |
 | `ThrowAbility` | |
 | `TrampleDashAbility` | |
+
+
+> **Note:** This enum overlaps significantly with [`FormChange`](#enum-formchange), [`set`](#enum-set). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`pool`](#enum-pool), [`ConjureBonusAbility`](#enum-conjurebonusability), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`palette`](#enum-palette), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`class_anis`](#enum-class_anis).
 
 </details>
 
@@ -1496,6 +1507,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `neck` | |
 | `modifier` | |
 
+
+> **Note:** This enum overlaps significantly with [`slot`](#enum-slot). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`restrict`](#enum-restrict), [`lose_item`](#enum-lose_item).
+
 </details>
 
 
@@ -1521,6 +1537,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `consumable_rare` | |
 | `consumable_uncommon` | |
 | `consumable_very_rare` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`stat`](#enum-stat).
 
 </details>
 
@@ -2356,6 +2375,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Hippie` | |
 | `Rune` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`class`](#enum-class), [`pool`](#enum-pool), [`tag`](#enum-tag), [`ConjureBonusAbility`](#enum-conjurebonusability), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`AddTag`](#enum-addtag), [`FormChange`](#enum-formchange), [`Imprison`](#enum-imprison), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`DisableAbilitiesWithTag`](#enum-disableabilitieswithtag), [`tag_filter`](#enum-tag_filter), [`stack_key`](#enum-stack_key), [`SetFragileImmune`](#enum-setfragileimmune), [`SetBrittleImmune`](#enum-setbrittleimmune), [`palette`](#enum-palette), [`lose_item`](#enum-lose_item), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`unlock_npc_tomorrow`](#enum-unlock_npc_tomorrow), [`class_anis`](#enum-class_anis).
+
 </details>
 
 
@@ -2430,6 +2452,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `trash` | |
 | `weapon_throw` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`set`](#enum-set). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`target_requires_tag`](#enum-target_requires_tag), [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`AddTag`](#enum-addtag), [`Imprison`](#enum-imprison), [`XIsLivingAlliesWithTag`](#enum-xislivingallieswithtag), [`AddHiddenTag`](#enum-addhiddentag), [`DisableAbilitiesWithTag`](#enum-disableabilitieswithtag), [`tag_filter`](#enum-tag_filter), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`hidden_tag`](#enum-hidden_tag), [`TagGreed`](#enum-taggreed), [`FactionUprising`](#enum-factionuprising).
+
 </details>
 
 
@@ -2481,6 +2508,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `spawn` | |
 | `trample` | |
 | `treasure_box` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`ability`](#enum-ability), [`do`](#enum-do). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`template`](#enum-template), [`aoe_symmetry`](#enum-aoe_symmetry), [`start`](#enum-start), [`loop`](#enum-loop), [`type_icon`](#enum-type_icon), [`new_layer`](#enum-new_layer), [`dead`](#enum-dead), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`stat`](#enum-stat).
 
 </details>
 
@@ -4917,6 +4949,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `wp_ZodiacsSixshooter` | |
 | `wp_ZodiacsSixshooter_Auto` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`type`](#enum-type), [`aoe_symmetry`](#enum-aoe_symmetry), [`start`](#enum-start), [`loop`](#enum-loop), [`ConjureBonusAbility`](#enum-conjurebonusability), [`fail_ability`](#enum-fail_ability), [`sub_ability`](#enum-sub_ability), [`move`](#enum-move), [`attack`](#enum-attack), [`do`](#enum-do), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`stat`](#enum-stat), [`restrict`](#enum-restrict), [`lose_item`](#enum-lose_item).
+
 </details>
 
 
@@ -4968,6 +5003,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 | `kaiju1` | |
 | `kaiju2` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`form_onmap`](#enum-form_onmap), [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority), [`spawn_side`](#enum-spawn_side), [`stat`](#enum-stat).
 
 </details>
 
@@ -5031,6 +5069,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `terminator_stay_close` | |
 | `trampy_chaos` | |
 | `wash_johnny` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`weights`](#enum-weights).
 
 </details>
 
@@ -5327,6 +5368,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ZodiacShootX` | |
 | `attack` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`ability`](#enum-ability). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`ability_icon`](#enum-ability_icon), [`start`](#enum-start), [`loop`](#enum-loop), [`center_particle`](#enum-center_particle), [`ReplaceBasicAttack`](#enum-replacebasicattack), [`override_basic_attack`](#enum-override_basic_attack), [`OverrideBasicAttack`](#enum-overridebasicattack), [`CounterAttack`](#enum-counterattack), [`DeathRattleRevive`](#enum-deathrattlerevive), [`do`](#enum-do), [`move_then_do`](#enum-move_then_do), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -5370,6 +5416,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `util_target_allies` | |
 | `util_target_enemies` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`form_onmap`](#enum-form_onmap), [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority), [`default_face`](#enum-default_face).
+
 </details>
 
 
@@ -5392,6 +5443,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `direction8` | |
 | `random_closest_tile` | |
 | `random_farthest_tile` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
 
 </details>
 
@@ -5461,6 +5515,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `fx_shield` | |
 | `rebuke` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`affected_particle`](#enum-affected_particle), [`aoe_symmetry`](#enum-aoe_symmetry), [`center_particle`](#enum-center_particle), [`VisualFXTile`](#enum-visualfxtile), [`area_particle`](#enum-area_particle), [`VisualFX`](#enum-visualfx), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -5502,6 +5561,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ThumpSlam_Mov` | |
 | `TwisterMove` | |
 
+
+> **Note:** This enum overlaps significantly with [`ability`](#enum-ability). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`DeathRattleRevive`](#enum-deathrattlerevive), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -5540,6 +5604,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 | `normal` | |
 | `pierce_cross` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`range_mode`](#enum-range_mode), [`aoe_symmetry`](#enum-aoe_symmetry), [`water_mask`](#enum-water_mask), [`stat`](#enum-stat).
 
 </details>
 
@@ -5848,6 +5915,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `must_have_line_of_sight_unpurgable` | |
 | `must_have_liquid` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_restrictions`](#enum-aoe_restrictions), [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -5883,6 +5953,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random` | |
 | `right_orientation` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`ConjureBonusAbility`](#enum-conjurebonusability), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -5901,6 +5974,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 | `quest` | |
 | `coins` | |
+
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`animation`](#enum-animation), [`range_mode`](#enum-range_mode), [`particle`](#enum-particle), [`target_mode`](#enum-target_mode), [`aoe_mode`](#enum-aoe_mode), [`aoe_restrictions`](#enum-aoe_restrictions), [`knockback_mode`](#enum-knockback_mode), [`restrictions`](#enum-restrictions), [`projectile`](#enum-projectile), [`aoe_symmetry`](#enum-aoe_symmetry), [`faction`](#enum-faction), [`dash_start_animation`](#enum-dash_start_animation), [`dash_attack_animation`](#enum-dash_attack_animation), [`center_particle`](#enum-center_particle), [`jump_attack_animation`](#enum-jump_attack_animation), [`ability`](#enum-ability), [`move_start_animation`](#enum-move_start_animation), [`move_end_animation`](#enum-move_end_animation), [`area_particle`](#enum-area_particle), [`dash_end_animation`](#enum-dash_end_animation), [`jump_start_animation`](#enum-jump_start_animation), [`FindItemFromPool`](#enum-finditemfrompool), [`move`](#enum-move), [`rarity`](#enum-rarity), [`attack`](#enum-attack), [`do`](#enum-do), [`tooltip`](#enum-tooltip), [`shadow`](#enum-shadow), [`intro_cutscene`](#enum-intro_cutscene), [`voice`](#enum-voice). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -5989,6 +6065,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bubbleshot` | |
 | `knifeprojectile` | |
 | `source_trinket` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`BounceObject`](#enum-bounceobject), [`ObjectOnHitEmpty`](#enum-objectonhitempty), [`SpawnCustomTrap`](#enum-spawncustomtrap), [`BounceRock`](#enum-bouncerock), [`form_onmap`](#enum-form_onmap), [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority), [`stat`](#enum-stat), [`trap`](#enum-trap).
 
 </details>
 
@@ -6239,6 +6320,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `womans_purse` | |
 | `writhing_pile_of_maggots` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`event`](#enum-event), [`event_now`](#enum-event_now), [`event_now_same_cat`](#enum-event_now_same_cat), [`next_event_from_set`](#enum-next_event_from_set), [`set_subject`](#enum-set_subject), [`requires_unlocked_npc`](#enum-requires_unlocked_npc), [`unlock_npc_tomorrow`](#enum-unlock_npc_tomorrow), [`max_npc`](#enum-max_npc).
+
 </details>
 
 
@@ -6314,6 +6398,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `male89` | |
 | `male95` | |
 | `spidercat` | |
+
+
+> **Note:** This enum overlaps significantly with [`custom_cat_data`](#enum-custom_cat_data). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
 
 </details>
 
@@ -6432,6 +6521,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `XLightning` | |
 | `YetiIceBreath` | |
 
+
+> **Note:** This enum overlaps significantly with [`ability`](#enum-ability), [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`type`](#enum-type), [`aoe_symmetry`](#enum-aoe_symmetry), [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`stat`](#enum-stat), [`restrict`](#enum-restrict), [`lose_item`](#enum-lose_item).
+
 </details>
 
 
@@ -6493,6 +6587,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `recycled_items` | |
 | `rotten_armor` | |
 | `unique` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`pool`](#enum-pool), [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`FindItemFromPool`](#enum-finditemfrompool), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`TagGreed`](#enum-taggreed), [`restrict`](#enum-restrict).
 
 </details>
 
@@ -6634,6 +6731,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `must_have_target_line_of_sight` | |
 | `tile_must_have_element` | |
 
+
+> **Note:** This enum overlaps significantly with [`restrictions`](#enum-restrictions). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -6692,6 +6794,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `T2CopyCatInternal` | |
 | `Trample` | |
 | `Undead` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`DoubleStatus`](#enum-doublestatus), [`RemoveStatus`](#enum-removestatus), [`AmplifyStatus`](#enum-amplifystatus), [`StatusImmunity`](#enum-statusimmunity), [`alias`](#enum-alias), [`back_icon`](#enum-back_icon).
 
 </details>
 
@@ -6827,6 +6932,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WhiteRabbit` | |
 | `WolfCat` | |
 | `Yeticat` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`unlock_boss`](#enum-unlock_boss), [`voice`](#enum-voice), [`frame_label`](#enum-frame_label).
 
 </details>
 
@@ -7000,6 +7108,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `map_edges` | |
 | `water_move` | |
 
+
+> **Note:** This enum overlaps significantly with [`aoe_mode`](#enum-aoe_mode). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`water_mask`](#enum-water_mask), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -7051,6 +7164,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `stick` | |
 | `treasure_easy` | |
 | `treasure_hard` | |
+
+
+> **Note:** This enum overlaps significantly with [`class`](#enum-class), [`FormChange`](#enum-formchange), [`set`](#enum-set), [`get_item_from_pool`](#enum-get_item_from_pool). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`FindItemFromPool`](#enum-finditemfrompool), [`palette`](#enum-palette), [`heal_disorder`](#enum-heal_disorder), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`class_anis`](#enum-class_anis).
 
 </details>
 
@@ -7109,6 +7227,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TamperedGenes` | |
 | `Touched` | |
 | `Vegan` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`heal_disorder`](#enum-heal_disorder).
 
 </details>
 
@@ -7226,6 +7347,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.80` | |
 | `.6` | |
 
+
+> **Note:** This enum overlaps significantly with [`shadow_size`](#enum-shadow_size). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`chance`](#enum-chance), [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -7300,6 +7426,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `5x10` | |
 | `gemini` | |
 
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`speed_scale`](#enum-speed_scale), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`ReverbDelay`](#enum-reverbdelay), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -7319,6 +7450,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `medium` | |
 | `medmed` | |
 | `big` | |
+
+
+> **Note:** This enum overlaps significantly with [`range_mode`](#enum-range_mode), [`aoe_mode`](#enum-aoe_mode), [`FormChange`](#enum-formchange), [`initial_form`](#enum-initial_form), [`form_hasnot`](#enum-form_hasnot), [`animation_suffix`](#enum-animation_suffix). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -7371,6 +7505,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_JurassicUnlocked` | |
 | `mapflag_TheEndUnlocked` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_prerequisite_flag`](#enum-hint_prerequisite_flag), [`not_has_token`](#enum-not_has_token), [`set_legacy_token`](#enum-set_legacy_token), [`set_adventure_token`](#enum-set_adventure_token), [`clear_adventure_token`](#enum-clear_adventure_token), [`moon`](#enum-moon), [`core`](#enum-core), [`dimensionx`](#enum-dimensionx), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime), [`save_file_flag`](#enum-save_file_flag).
+
 </details>
 
 
@@ -7394,6 +7531,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Crazy_disorders` | |
 | `stomach_disorders` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`heal_disorder`](#enum-heal_disorder).
+
 </details>
 
 
@@ -7415,6 +7555,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BiggestFood` | |
 | `FrankPinky` | |
 | `NonChampionFlySwarm` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`ObjectOnHit`](#enum-objectonhit).
 
 </details>
 
@@ -7441,6 +7584,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Ice` | |
 | `very_hot` | |
 | `wind` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ElementImmune`](#enum-elementimmune), [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement), [`exclude`](#enum-exclude), [`background_extra_shader`](#enum-background_extra_shader).
 
 </details>
 
@@ -7508,6 +7656,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `UnmarkedGrave` | |
 | `UseTheToilet` | |
 
+
+> **Note:** This enum overlaps significantly with [`subject_frame`](#enum-subject_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`event`](#enum-event), [`event_now`](#enum-event_now), [`next_event_from_set`](#enum-next_event_from_set).
+
 </details>
 
 
@@ -7532,6 +7685,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WorldEventLegacyCounter_FooCounter` | |
 | `WorldEventLegacyCounter_SealedCrypt` | |
 | `WorldEventLegacyCounter_TestLegacyFoo` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`decrement_legacy_counter`](#enum-decrement_legacy_counter).
 
 </details>
 
@@ -7614,6 +7770,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `zaratana` | |
 | `zodiac` | |
 
+
+> **Note:** This enum overlaps significantly with [`custom_cat_data`](#enum-custom_cat_data). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`boss_cutscene`](#enum-boss_cutscene), [`override_music`](#enum-override_music), [`unlock_boss`](#enum-unlock_boss), [`trigger_house_boss`](#enum-trigger_house_boss), [`beat_house_boss`](#enum-beat_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`initial_cutscene_night`](#enum-initial_cutscene_night).
+
 </details>
 
 
@@ -7681,6 +7842,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Thief` | |
 | `Tinkerer` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`set`](#enum-set). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`class`](#enum-class), [`pool`](#enum-pool), [`ConjureBonusAbility`](#enum-conjurebonusability), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`CompleteItemQuest`](#enum-completeitemquest), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`initial_form`](#enum-initial_form), [`water_mask`](#enum-water_mask), [`form_offmap`](#enum-form_offmap), [`form_onmap`](#enum-form_onmap), [`not_priming`](#enum-not_priming), [`animation_suffix`](#enum-animation_suffix), [`form_above`](#enum-form_above), [`formchange`](#enum-formchange), [`auto_run_priority`](#enum-auto_run_priority), [`palette`](#enum-palette), [`fail_item_quest`](#enum-fail_item_quest), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`class_anis`](#enum-class_anis).
+
 </details>
 
 
@@ -7709,6 +7875,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `spinattackloop` | |
 | `thrustersLoop` | |
 | `timberDash` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`loop`](#enum-loop).
 
 </details>
 
@@ -7802,6 +7971,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `thrustersStart` | |
 | `timberStart` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -7834,6 +8006,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `RandomDifferentTile` | |
 | `TallFlowerTile` | |
 | `WaterTile_Current` | |
+
+
+> **Note:** This enum overlaps significantly with [`tile`](#enum-tile). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`TileTrail`](#enum-tiletrail), [`TileTrail_Ahead`](#enum-tiletrail_ahead), [`ChangeTilesUnder`](#enum-changetilesunder), [`ChangeTileOnPop`](#enum-changetileonpop).
 
 </details>
 
@@ -7893,6 +8070,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinyPebble` | |
 | `ViperBottle` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`FindItem`](#enum-finditem), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`get_and_equip_item`](#enum-get_and_equip_item), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped), [`unlock_item_quest`](#enum-unlock_item_quest).
+
 </details>
 
 
@@ -7917,6 +8097,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.4` | |
 | `.50` | |
 
+
+> **Note:** This enum overlaps significantly with [`shadow_size`](#enum-shadow_size), [`alpha`](#enum-alpha). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`chance`](#enum-chance), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -7938,6 +8123,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.5` | |
 | `.9` | |
 | `.3` | |
+
+
+> **Note:** This enum overlaps significantly with [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`particle_lifetime`](#enum-particle_lifetime), [`alpha_out`](#enum-alpha_out), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -7984,6 +8174,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `StacyMutant_Mirror` | |
 | `StacyMutant_Speed` | |
 | `StacyMutant_Thorns` | |
+
+
+> **Note:** This enum overlaps significantly with [`has_token`](#enum-has_token). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`not_has_token`](#enum-not_has_token), [`clear_adventure_token`](#enum-clear_adventure_token).
 
 </details>
 
@@ -8052,6 +8247,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Water` | |
 | `WereMan` | |
 | `Zealot` | |
+
+
+> **Note:** This enum overlaps significantly with [`FormChange`](#enum-formchange). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element), [`form`](#enum-form), [`dead`](#enum-dead), [`exclude`](#enum-exclude), [`water_mask`](#enum-water_mask), [`form_offmap`](#enum-form_offmap), [`form_onmap`](#enum-form_onmap), [`not_priming`](#enum-not_priming), [`form_hasnot`](#enum-form_hasnot), [`animation_suffix`](#enum-animation_suffix), [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority), [`background_extra_shader`](#enum-background_extra_shader).
 
 </details>
 
@@ -8147,6 +8347,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tracy_introduction` | |
 | `tracy_kaijufight` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`preempt_npc_sequence`](#enum-preempt_npc_sequence), [`reset_npc_sequence`](#enum-reset_npc_sequence).
+
 </details>
 
 
@@ -8181,6 +8384,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `meatworld` | |
 | `theend` | |
 
+
+> **Note:** This enum overlaps significantly with [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`folder`](#enum-folder), [`music`](#enum-music), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime).
+
 </details>
 
 
@@ -8210,6 +8418,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.40` | |
 | `.60` | |
 | `.7` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`chance`](#enum-chance), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`scale`](#enum-scale), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -8259,6 +8470,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Shield` | |
 | `TransformInXTurns` | |
 
+
+> **Note:** This enum overlaps significantly with [`status`](#enum-status). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`exclude`](#enum-exclude), [`right_icon`](#enum-right_icon).
+
 </details>
 
 
@@ -8301,6 +8517,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Toad` | |
 | `Turtle` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnOnDowned`](#enum-spawnondowned), [`gain_immortal_familiar`](#enum-gain_immortal_familiar).
+
 </details>
 
 
@@ -8322,6 +8541,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.25` | |
 | `.1` | |
 
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`amount`](#enum-amount), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`ReverbDelay`](#enum-reverbdelay), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -8341,6 +8565,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Creep` | |
 | `Ice` | |
 | `Electric` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`element`](#enum-element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement), [`form_hasnot`](#enum-form_hasnot). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`exclude`](#enum-exclude).
 
 </details>
 
@@ -8373,6 +8602,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `fx_shield` | |
 | `fx_statdown` | |
 
+
+> **Note:** This enum overlaps significantly with [`particle`](#enum-particle). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -8402,6 +8634,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ENTITY_GLOWMUSHROOM2_DESC` | |
 | `ENTITY_GLOWMUSHROOM_DESC` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -8428,6 +8663,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `zaratana` | |
 | `any` | |
 
+
+> **Note:** This enum overlaps significantly with [`frame_label`](#enum-frame_label). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`initial_cutscene_night`](#enum-initial_cutscene_night).
+
 </details>
 
 
@@ -8448,6 +8688,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AdventureToken_RedNeedle` | |
 | `AdventureToken_YellowNeedle` | |
 
+
+> **Note:** This enum overlaps significantly with [`not_has_token`](#enum-not_has_token), [`set_adventure_token`](#enum-set_adventure_token), [`has_token`](#enum-has_token). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -8466,6 +8709,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.25` | |
 | `.3` | |
 | `.5` | |
+
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`move_speed_multiplier`](#enum-move_speed_multiplier), [`emit_timespread`](#enum-emit_timespread), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -8498,6 +8746,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `knockswatatk` | |
 | `spin` | |
 | `spinattackloop` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`loop`](#enum-loop), [`jump_attack_animation`](#enum-jump_attack_animation), [`dash_end_animation`](#enum-dash_end_animation), [`TeamCastAbility`](#enum-teamcastability), [`stat`](#enum-stat).
 
 </details>
 
@@ -8618,6 +8871,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `steven_unlock_zara_impossible` | |
 | `time_machine_quest_finalstep` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`trigger_adventure_unlock`](#enum-trigger_adventure_unlock).
+
 </details>
 
 
@@ -8639,6 +8895,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.5` | |
 | `.1` | |
 | `.4` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -8663,6 +8924,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `liquidteleportIn` | |
 | `portIn` | |
 | `teleportIn` | |
+
+
+> **Note:** This enum overlaps significantly with [`spawnin_animation`](#enum-spawnin_animation). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -8725,6 +8989,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SupercooledWater` | |
 | `TallFlowerTile` | |
 | `TallGrassTile` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ChangeTile`](#enum-changetile), [`TileTrail`](#enum-tiletrail), [`TileTrail_Ahead`](#enum-tiletrail_ahead), [`ChangeTilesUnder`](#enum-changetilesunder), [`ChangeTileOnPop`](#enum-changetileonpop).
 
 </details>
 
@@ -8808,6 +9075,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `seagull_pool` | |
 | `turkey_pool` | |
 
+
+> **Note:** This enum overlaps significantly with [`pool`](#enum-pool), [`get_item_from_pool`](#enum-get_item_from_pool). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat), [`restrict`](#enum-restrict).
+
 </details>
 
 
@@ -8836,6 +9108,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Psychic` | |
 | `Tank` | |
 | `Tinkerer` | |
+
+
+> **Note:** This enum overlaps significantly with [`class`](#enum-class), [`pool`](#enum-pool), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`FormChange`](#enum-formchange), [`set`](#enum-set), [`complete_checklist_with_class`](#enum-complete_checklist_with_class). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`palette`](#enum-palette).
 
 </details>
 
@@ -8871,6 +9148,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `themotherspike` | |
 | `unlit_candle` | |
 
+
+> **Note:** This enum overlaps significantly with [`tag`](#enum-tag). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`AddTag`](#enum-addtag), [`XIsLivingAlliesWithTag`](#enum-xislivingallieswithtag), [`AddHiddenTag`](#enum-addhiddentag), [`tag_filter`](#enum-tag_filter), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`TagGreed`](#enum-taggreed), [`FactionUprising`](#enum-factionuprising).
+
 </details>
 
 
@@ -8898,6 +9180,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `HealBig` | |
 | `sytheCut` | |
 
+
+> **Note:** This enum overlaps significantly with [`particle`](#enum-particle). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`center_particle`](#enum-center_particle), [`area_particle`](#enum-area_particle), [`VisualFX`](#enum-visualfx).
+
 </details>
 
 
@@ -8919,6 +9206,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `block` | |
 | `entrance_land` | |
 | `gravitySlamEnd` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`dash_attack_animation`](#enum-dash_attack_animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
 
 </details>
 
@@ -8969,6 +9261,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_ThrobbingArteryDone` | |
 | `mapflag_VolcanoAntennaAttached` | |
 | `mapflag_WallOfFleshDone` | |
+
+
+> **Note:** This enum overlaps significantly with [`has_token`](#enum-has_token). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`not_has_token`](#enum-not_has_token), [`requires_flag`](#enum-requires_flag), [`save_file_flag`](#enum-save_file_flag).
 
 </details>
 
@@ -9024,6 +9321,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Dip` | |
 | `GroundedSpear` | |
 | `TinySpider` | |
+
+
+> **Note:** This enum overlaps significantly with [`projectile`](#enum-projectile). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ObjectOnHitCharacter`](#enum-objectonhitcharacter), [`Imprison`](#enum-imprison), [`BounceRock`](#enum-bouncerock), [`SpawnOnBattleStart`](#enum-spawnonbattlestart), [`gain_immortal_familiar`](#enum-gain_immortal_familiar).
 
 </details>
 
@@ -9090,6 +9392,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.6` | |
 | `.65` | |
 
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`speed_scale`](#enum-speed_scale), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`aoe_chance`](#enum-aoe_chance), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -9114,6 +9421,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.05` | |
 | `.10` | |
 | `.2` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`chance`](#enum-chance), [`aoe_chance`](#enum-aoe_chance), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`distance_to_enemy`](#enum-distance_to_enemy), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -9152,6 +9462,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TeslaBolt` | |
 | `TrexSwitchTarget` | |
 | `YeticatSnowball_Counter` | |
+
+
+> **Note:** This enum overlaps significantly with [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
 
 </details>
 
@@ -9197,6 +9512,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `summonspawnin` | |
 | `tinaspawnin` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`animation_in`](#enum-animation_in).
+
 </details>
 
 
@@ -9217,6 +9537,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cursed` | |
 | `bleeding` | |
 | `burned` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability).
 
 </details>
 
@@ -9350,6 +9673,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sewers` | |
 | `theend` | |
 
+
+> **Note:** This enum overlaps significantly with [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`folder`](#enum-folder), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`complete_chapter`](#enum-complete_chapter), [`visit_chapter`](#enum-visit_chapter), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime).
+
 </details>
 
 
@@ -9388,6 +9716,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sp_pill_tar` | |
 | `sprout` | |
 | `the_coven` | |
+
+
+> **Note:** This enum overlaps significantly with [`tag`](#enum-tag). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`PopAndSpawn`](#enum-popandspawn), [`AbilityEnableIfConsumedCharacterHasTag`](#enum-abilityenableifconsumedcharacterhastag), [`tag_restriction`](#enum-tag_restriction), [`XIsLivingAlliesWithTag`](#enum-xislivingallieswithtag), [`tag_filter`](#enum-tag_filter).
 
 </details>
 
@@ -9430,6 +9763,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WorldEventLegacyToken_StartDigging` | |
 | `WorldEventLegacyToken_TapeRecorderDestroyed` | |
 
+
+> **Note:** This enum overlaps significantly with [`set_legacy_token`](#enum-set_legacy_token), [`set_adventure_token`](#enum-set_adventure_token), [`has_token`](#enum-has_token). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`decrement_legacy_counter`](#enum-decrement_legacy_counter), [`clear_adventure_token`](#enum-clear_adventure_token).
+
 </details>
 
 
@@ -9448,6 +9786,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `enemies` | |
 | `cats` | |
 | `anywhere` | |
+
+
+> **Note:** This enum overlaps significantly with [`faction`](#enum-faction). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -9496,6 +9837,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Supernova` | |
 | `Suplex` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -9521,6 +9865,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tar` | |
 | `CaveWoman` | |
 | `Close` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`form`](#enum-form), [`initial_form`](#enum-initial_form). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ElementImmune`](#enum-elementimmune), [`dead`](#enum-dead), [`exclude`](#enum-exclude), [`water_mask`](#enum-water_mask), [`form_onmap`](#enum-form_onmap), [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority).
 
 </details>
 
@@ -9638,6 +9987,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sewers` | |
 | `theend` | |
 | `tutorial` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`intro_cutscene`](#enum-intro_cutscene), [`folder`](#enum-folder), [`complete_chapter`](#enum-complete_chapter), [`visit_chapter`](#enum-visit_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime), [`event_piece_frame`](#enum-event_piece_frame).
 
 </details>
 
@@ -9801,6 +10153,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tank` | |
 | `Tinkerer` | |
 
+
+> **Note:** This enum overlaps significantly with [`class`](#enum-class), [`pool`](#enum-pool), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`FormChange`](#enum-formchange), [`set`](#enum-set), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`class_anis`](#enum-class_anis). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`palette`](#enum-palette).
+
 </details>
 
 
@@ -9864,6 +10221,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.5` | |
 | `.3` | |
 
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`consumable_chance`](#enum-consumable_chance), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -9882,6 +10244,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 | `four_way` | |
 | `eight_way` | |
+
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`animation`](#enum-animation), [`range_mode`](#enum-range_mode), [`particle`](#enum-particle), [`target_mode`](#enum-target_mode), [`aoe_mode`](#enum-aoe_mode), [`aoe_restrictions`](#enum-aoe_restrictions), [`knockback_mode`](#enum-knockback_mode), [`restrictions`](#enum-restrictions), [`projectile`](#enum-projectile), [`faction`](#enum-faction), [`dash_start_animation`](#enum-dash_start_animation), [`dash_attack_animation`](#enum-dash_attack_animation), [`center_particle`](#enum-center_particle), [`jump_attack_animation`](#enum-jump_attack_animation), [`ability`](#enum-ability), [`move_start_animation`](#enum-move_start_animation), [`move_end_animation`](#enum-move_end_animation), [`area_particle`](#enum-area_particle), [`dash_end_animation`](#enum-dash_end_animation), [`jump_start_animation`](#enum-jump_start_animation), [`FindItemFromPool`](#enum-finditemfrompool), [`move`](#enum-move), [`attack`](#enum-attack), [`do`](#enum-do), [`tooltip`](#enum-tooltip), [`shadow`](#enum-shadow), [`intro_cutscene`](#enum-intro_cutscene), [`voice`](#enum-voice). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`stat`](#enum-stat).
 
 </details>
 
@@ -9915,6 +10282,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SmallHolding` | |
 | `SmallHoldingCat` | |
 
+
+> **Note:** This enum overlaps significantly with [`initial_form`](#enum-initial_form). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`form_onmap`](#enum-form_onmap), [`partial_animation_suffix`](#enum-partial_animation_suffix), [`form_hasnot`](#enum-form_hasnot), [`form_above`](#enum-form_above), [`formchange`](#enum-formchange), [`auto_run_priority`](#enum-auto_run_priority), [`adventure_weather`](#enum-adventure_weather).
+
 </details>
 
 
@@ -9935,6 +10307,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `multihit_attack` | |
 | `damage` | |
 | `nodamage` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
 
 </details>
 
@@ -9959,6 +10334,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random_empty_armor_or_weapon` | |
 | `neck` | |
 | `random_empty` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`kind`](#enum-kind), [`restrict`](#enum-restrict), [`lose_item`](#enum-lose_item).
 
 </details>
 
@@ -10015,6 +10393,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SM_LightningDash` | |
 | `head_Pestilence` | |
 
+
+> **Note:** This enum overlaps significantly with [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ability_icon`](#enum-ability_icon), [`override_basic_attack`](#enum-override_basic_attack), [`OverrideBasicAttack`](#enum-overridebasicattack).
+
 </details>
 
 
@@ -10045,6 +10428,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Primed` | |
 | `Transformed` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`form_above`](#enum-form_above).
+
 </details>
 
 
@@ -10072,6 +10458,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SkeletonCatFamiliar` | |
 | `SmallRock` | |
 
+
+> **Note:** This enum overlaps significantly with [`BounceObject`](#enum-bounceobject). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ObjectOnHitEmpty`](#enum-objectonhitempty), [`Imprison`](#enum-imprison), [`BounceRock`](#enum-bouncerock), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse).
+
 </details>
 
 
@@ -10093,6 +10484,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.5` | |
 | `.01` | |
 | `.05` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`size`](#enum-size), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`aoe_chance`](#enum-aoe_chance), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`distance_to_enemy`](#enum-distance_to_enemy), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`size_end`](#enum-size_end), [`dampening`](#enum-dampening), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -10116,6 +10512,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.05` | |
 | `.25` | |
 | `.5` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`speed_scale`](#enum-speed_scale), [`alpha`](#enum-alpha). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -10150,6 +10551,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `pounce` | |
 | `walk` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
+
 </details>
 
 
@@ -10171,6 +10575,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.5` | |
 | `.6` | |
 | `.7` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`aoe_chance`](#enum-aoe_chance), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -10194,6 +10603,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Holy` | |
 | `Wind` | |
 | `Gravity` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`element`](#enum-element). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ElementImmune`](#enum-elementimmune), [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element), [`InnateElement`](#enum-innateelement), [`exclude`](#enum-exclude), [`background_extra_shader`](#enum-background_extra_shader).
 
 </details>
 
@@ -10231,6 +10645,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `UFO_BigExplode` | |
 | `neck_NukeExplode` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`DisplayDangerAOE`](#enum-displaydangeraoe).
+
 </details>
 
 
@@ -10260,6 +10677,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ThrobbingGristle` | |
 | `TransmitterAntenna` | |
 
+
+> **Note:** This enum overlaps significantly with [`complete_item_quest`](#enum-complete_item_quest). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`choose_cat_with_item`](#enum-choose_cat_with_item), [`lose_specific_item`](#enum-lose_specific_item), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped), [`unlock_item_quest`](#enum-unlock_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item), [`fail_item_quest`](#enum-fail_item_quest).
+
 </details>
 
 
@@ -10282,6 +10704,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.02` | |
 | `.1` | |
 | `.75` | |
+
+
+> **Note:** This enum overlaps significantly with [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`speed_scale`](#enum-speed_scale), [`alpha`](#enum-alpha). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -10359,6 +10786,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BigSlimeShadow` | |
 | `SmallSlimeShadow` | |
 | `TormentorShadow` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
 
 </details>
 
@@ -10438,6 +10868,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Birdemic` | |
 | `Rain` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`adventure_weather`](#enum-adventure_weather).
+
 </details>
 
 
@@ -10503,6 +10936,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TransmitterAntenna` | |
 | `ZaratanasCollar` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`CompleteItemQuest`](#enum-completeitemquest), [`RemoveItem`](#enum-removeitem), [`choose_cat_with_item`](#enum-choose_cat_with_item), [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`lose_specific_item`](#enum-lose_specific_item), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped), [`unlock_item_quest`](#enum-unlock_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item), [`fail_item_quest`](#enum-fail_item_quest).
+
 </details>
 
 
@@ -10524,6 +10960,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 | `thrustersEnd` | |
 | `timberEnd` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`dash_attack_animation`](#enum-dash_attack_animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
 
 </details>
 
@@ -10549,6 +10990,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MysteriousMachine_Bad` | |
 | `MysteriousMachine_Good` | |
 | `Tragedy` | |
+
+
+> **Note:** This enum overlaps significantly with [`subject_frame`](#enum-subject_frame), [`event_now_same_cat`](#enum-event_now_same_cat). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`event`](#enum-event), [`next_event_from_set`](#enum-next_event_from_set).
 
 </details>
 
@@ -10630,6 +11076,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Holybeam` | |
 | `None` | |
 | `TenTicklesAttack` | |
+
+
+> **Note:** This enum overlaps significantly with [`particle`](#enum-particle), [`VisualFXTile`](#enum-visualfxtile), [`area_particle`](#enum-area_particle), [`VisualFX`](#enum-visualfx), [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
 
 </details>
 
@@ -10775,6 +11226,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `therift` | |
 | `tutorial` | |
 
+
+> **Note:** This enum overlaps significantly with [`chapter_id`](#enum-chapter_id), [`music`](#enum-music). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`intro_cutscene`](#enum-intro_cutscene), [`folder`](#enum-folder), [`complete_chapter`](#enum-complete_chapter), [`visit_chapter`](#enum-visit_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss).
+
 </details>
 
 
@@ -10817,6 +11273,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.025` | |
 | `.35` | |
 
+
+> **Note:** This enum overlaps significantly with [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`alpha_out`](#enum-alpha_out), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -10852,6 +11313,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SmallPipes` | |
 | `StaticJunkSmall` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`static_1x1_b`](#enum-static_1x1_b), [`static_1x1_c`](#enum-static_1x1_c).
+
 </details>
 
 
@@ -10886,6 +11350,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Riftobjects` | |
 | `Stump` | |
 
+
+> **Note:** This enum overlaps significantly with [`static_1x1_a`](#enum-static_1x1_a). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`static_1x1_c`](#enum-static_1x1_c).
+
 </details>
 
 
@@ -10918,6 +11387,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MoonObjects2` | |
 | `Riftobjects` | |
 | `Sludge` | |
+
+
+> **Note:** This enum overlaps significantly with [`static_1x1_a`](#enum-static_1x1_a), [`static_1x1_b`](#enum-static_1x1_b). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -10954,6 +11426,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `future2x2` | |
 | `thepath2x2` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`static_2x2_b`](#enum-static_2x2_b).
+
 </details>
 
 
@@ -10975,6 +11450,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Moon2x22` | |
 | `BigCaveRock1` | |
 | `BigGraveRocks1` | |
+
+
+> **Note:** This enum overlaps significantly with [`static_2x2_a`](#enum-static_2x2_a). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -11099,6 +11577,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Holybeam` | |
 | `MagicMissleBlast` | |
 
+
+> **Note:** This enum overlaps significantly with [`particle`](#enum-particle), [`VisualFXTile`](#enum-visualfxtile), [`VisualFX`](#enum-visualfx). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`center_particle`](#enum-center_particle), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -11132,6 +11615,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sewers` | |
 | `theend` | |
 | `tutorial` | |
+
+
+> **Note:** This enum overlaps significantly with [`music`](#enum-music). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`intro_cutscene`](#enum-intro_cutscene), [`folder`](#enum-folder), [`complete_chapter`](#enum-complete_chapter), [`visit_chapter`](#enum-visit_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime), [`event_piece_frame`](#enum-event_piece_frame).
 
 </details>
 
@@ -11204,6 +11692,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `theinfinite` | |
 | `tutorial` | |
 
+
+> **Note:** This enum overlaps significantly with [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`world_name_frame`](#enum-world_name_frame), [`intro_cutscene`](#enum-intro_cutscene), [`complete_chapter`](#enum-complete_chapter), [`visit_chapter`](#enum-visit_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss).
+
 </details>
 
 
@@ -11271,6 +11764,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sewers.gon` | |
 | `theend.gon` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`begin_chapter`](#enum-begin_chapter).
+
 </details>
 
 
@@ -11289,6 +11785,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.0001` | |
 | `-.0001` | |
 | `-.01` | |
+
+
+> **Note:** This enum overlaps significantly with [`distance_to_enemy`](#enum-distance_to_enemy). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -11325,6 +11824,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `theinfinite` | |
 | `therift` | |
 | `tutorial` | |
+
+
+> **Note:** This enum overlaps significantly with [`chapter_id`](#enum-chapter_id), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`world_name_frame`](#enum-world_name_frame), [`intro_cutscene`](#enum-intro_cutscene), [`folder`](#enum-folder), [`override_music`](#enum-override_music), [`complete_chapter`](#enum-complete_chapter), [`visit_chapter`](#enum-visit_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss).
 
 </details>
 
@@ -11386,6 +11890,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AREA_NAME_SEWERS` | |
 | `AREA_NAME_THEEND` | |
 | `AREA_NAME_TUTORIAL` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`moon`](#enum-moon), [`core`](#enum-core), [`dimensionx`](#enum-dimensionx), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime).
 
 </details>
 
@@ -11480,6 +11987,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `therift` | |
 | `tutorial` | |
 
+
+> **Note:** This enum overlaps significantly with [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`folder`](#enum-folder), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`complete_chapter`](#enum-complete_chapter), [`visit_chapter`](#enum-visit_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss).
+
 </details>
 
 
@@ -11533,6 +12045,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Electric` | |
 | `Water` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`element`](#enum-element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ElementImmune`](#enum-elementimmune), [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element), [`exclude`](#enum-exclude), [`background_extra_shader`](#enum-background_extra_shader).
+
 </details>
 
 
@@ -11552,6 +12069,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `weapon` | |
 | `consumables` | |
 | `armor` | |
+
+
+> **Note:** This enum overlaps significantly with [`slot`](#enum-slot), [`ability`](#enum-ability), [`FindItemFromPool`](#enum-finditemfrompool), [`kind`](#enum-kind), [`do`](#enum-do), [`get_item_from_pool`](#enum-get_item_from_pool), [`lose_item`](#enum-lose_item). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -11620,6 +12140,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.25` | |
 | `.01` | |
 
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`YOffset`](#enum-yoffset), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`BaseStatMultiply`](#enum-basestatmultiply), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`consumable_chance`](#enum-consumable_chance), [`distance_to_enemy`](#enum-distance_to_enemy), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -11679,6 +12204,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `themother` | |
 | `throbbingking` | |
 
+
+> **Note:** This enum overlaps significantly with [`frame_label`](#enum-frame_label). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`override_music`](#enum-override_music).
+
 </details>
 
 
@@ -11715,6 +12245,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `equipped` | |
 | `parasite` | |
 | `weapon` | |
+
+
+> **Note:** This enum overlaps significantly with [`slot`](#enum-slot), [`ability`](#enum-ability), [`kind`](#enum-kind), [`set`](#enum-set), [`do`](#enum-do). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`restrict`](#enum-restrict).
 
 </details>
 
@@ -11785,6 +12320,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SpeedUp_WithoutInitiative` | |
 | `T2CopyCatInternal` | |
 
+
+> **Note:** This enum overlaps significantly with [`status`](#enum-status). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -11807,6 +12345,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CharmedGamete` | |
 | `Crow` | |
 | `ZombieCatFamiliar` | |
+
+
+> **Note:** This enum overlaps significantly with [`BounceObject`](#enum-bounceobject). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`Imprison`](#enum-imprison), [`tag_filter`](#enum-tag_filter).
 
 </details>
 
@@ -11834,6 +12377,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TheIntruder` | |
 | `ZombieCatFamiliar` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`TagGreed`](#enum-taggreed), [`gain_immortal_familiar`](#enum-gain_immortal_familiar).
+
 </details>
 
 
@@ -11852,6 +12398,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `support` | |
 | `stationary` | |
 | `default` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`projectile`](#enum-projectile), [`faction`](#enum-faction), [`FormChange`](#enum-formchange), [`form`](#enum-form), [`decision_weights`](#enum-decision_weights), [`initial_form`](#enum-initial_form), [`form_onmap`](#enum-form_onmap), [`form_hasnot`](#enum-form_hasnot), [`prereq`](#enum-prereq). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`form_above`](#enum-form_above).
 
 </details>
 
@@ -11872,6 +12423,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `worried` | |
 | `happy` | |
 | `angry` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`prime_animation`](#enum-prime_animation), [`decision_weights`](#enum-decision_weights). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SetDefaultFace`](#enum-setdefaultface).
 
 </details>
 
@@ -11931,6 +12487,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `lab` | |
 | `theend` | |
 
+
+> **Note:** This enum overlaps significantly with [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`folder`](#enum-folder), [`music`](#enum-music), [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime).
+
 </details>
 
 
@@ -11973,6 +12534,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `PyrophinaVSSpinThrow` | |
 | `StegoEatGrass` | |
 | `ZaratanaVSBombardment` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
 
 </details>
 
@@ -12068,6 +12632,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `attack` | |
 | `head_EmoSong` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
+
 </details>
 
 
@@ -12154,6 +12721,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `RockSong` | |
 | `SimonFlopper_SpawnMinion` | |
 
+
+> **Note:** This enum overlaps significantly with [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
+
 </details>
 
 
@@ -12230,6 +12802,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Thief` | |
 | `Tinkerer` | |
 
+
+> **Note:** This enum overlaps significantly with [`class`](#enum-class), [`pool`](#enum-pool), [`FormChange`](#enum-formchange), [`set`](#enum-set). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`palette`](#enum-palette), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`class_anis`](#enum-class_anis).
+
 </details>
 
 
@@ -12272,6 +12849,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GlassTile` | |
 | `ShadowTile` | |
 | `WaterTile` | |
+
+
+> **Note:** This enum overlaps significantly with [`ChangeTile`](#enum-changetile), [`tile`](#enum-tile). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`TileTrail_Ahead`](#enum-tiletrail_ahead), [`ChangeTilesUnder`](#enum-changetilesunder), [`ChangeTileOnPop`](#enum-changetileonpop).
 
 </details>
 
@@ -12324,6 +12906,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Explosion` | |
 | `Holyatk` | |
 
+
+> **Note:** This enum overlaps significantly with [`particle`](#enum-particle), [`VisualFXTile`](#enum-visualfxtile). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`center_particle`](#enum-center_particle), [`area_particle`](#enum-area_particle).
+
 </details>
 
 
@@ -12350,6 +12937,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Off` | |
 | `Open` | |
 | `OpenCat` | |
+
+
+> **Note:** This enum overlaps significantly with [`FormChange`](#enum-formchange), [`initial_form`](#enum-initial_form). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`CompleteItemQuest`](#enum-completeitemquest), [`water_mask`](#enum-water_mask), [`form_above`](#enum-form_above), [`fail_item_quest`](#enum-fail_item_quest).
 
 </details>
 
@@ -12380,6 +12972,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tank` | |
 | `Thief` | |
 | `Tinkerer` | |
+
+
+> **Note:** This enum overlaps significantly with [`class`](#enum-class), [`pool`](#enum-pool), [`ChangeCatClass`](#enum-changecatclass), [`FormChange`](#enum-formchange), [`set`](#enum-set). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`palette`](#enum-palette), [`class_anis`](#enum-class_anis).
 
 </details>
 
@@ -12473,6 +13070,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 | `runStart` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -12560,6 +13160,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Thief` | |
 | `Tinkerer` | |
 
+
+> **Note:** This enum overlaps significantly with [`class`](#enum-class), [`pool`](#enum-pool), [`ChangeCatClass`](#enum-changecatclass), [`FormChange`](#enum-formchange), [`set`](#enum-set), [`complete_checklist_with_class`](#enum-complete_checklist_with_class). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`palette`](#enum-palette), [`class_anis`](#enum-class_anis).
+
 </details>
 
 
@@ -12640,6 +13245,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `future.gon` | |
 | `jurassic.gon` | |
 | `theend.gon` | |
+
+
+> **Note:** This enum overlaps significantly with [`next_map`](#enum-next_map). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -12729,6 +13337,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `jurassic` | |
 | `theend` | |
 
+
+> **Note:** This enum overlaps significantly with [`hint_destination`](#enum-hint_destination), [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`folder`](#enum-folder), [`music`](#enum-music), [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`visit_chapter`](#enum-visit_chapter), [`jurassic`](#enum-jurassic), [`theend`](#enum-theend), [`endoftime`](#enum-endoftime).
+
 </details>
 
 
@@ -12754,6 +13367,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ThrobbingGristle` | |
 | `TransmitterAntenna` | |
 | `ZaratanasCollar` | |
+
+
+> **Note:** This enum overlaps significantly with [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`choose_cat_with_item`](#enum-choose_cat_with_item), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped), [`unlock_item_quest`](#enum-unlock_item_quest).
 
 </details>
 
@@ -12804,6 +13422,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `moveEnd` | |
 | `none` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -12831,6 +13452,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SmallLavaRock` | |
 | `TallSkeletonCatCorpse` | |
 | `ZaratanaVS` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`Imprison`](#enum-imprison), [`BounceRock`](#enum-bouncerock).
 
 </details>
 
@@ -12905,6 +13529,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `time_machine_quest_finalstep` | |
 | `time_machine_quest_trigger` | |
 
+
+> **Note:** This enum overlaps significantly with [`adventure_unlock`](#enum-adventure_unlock). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -12934,6 +13561,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TransmitterAntenna` | |
 | `ZaratanasCollar` | |
 
+
+> **Note:** This enum overlaps significantly with [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`CompleteItemQuest`](#enum-completeitemquest), [`RemoveItem`](#enum-removeitem), [`choose_cat_with_item`](#enum-choose_cat_with_item), [`lose_specific_item`](#enum-lose_specific_item), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped), [`fail_item_quest`](#enum-fail_item_quest).
+
 </details>
 
 
@@ -12956,6 +13588,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `plant` | |
 | `squirrel` | |
 | `tumor` | |
+
+
+> **Note:** This enum overlaps significantly with [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag), [`set`](#enum-set). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`Imprison`](#enum-imprison), [`tag_filter`](#enum-tag_filter).
 
 </details>
 
@@ -13009,6 +13646,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FoodMedium` | |
 | `WaterBottle_Full` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`from`](#enum-from), [`to`](#enum-to), [`item`](#enum-item).
+
 </details>
 
 
@@ -13054,6 +13694,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.4` | |
 | `.7` | |
 
+
+> **Note:** This enum overlaps significantly with [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`pitch`](#enum-pitch), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`move_speed_multiplier`](#enum-move_speed_multiplier), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`ambient`](#enum-ambient), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start).
+
 </details>
 
 
@@ -13073,6 +13718,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Poison` | |
 | `Burn` | |
 | `Tarred` | |
+
+
+> **Note:** This enum overlaps significantly with [`status`](#enum-status), [`AmplifyStatus`](#enum-amplifystatus), [`back_icon`](#enum-back_icon). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`DoubleStatus`](#enum-doublestatus).
 
 </details>
 
@@ -13101,6 +13751,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tatters` | |
 | `ThrobbingKing2` | |
 | `TumorBarrier` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ObjectOnHit`](#enum-objectonhit).
 
 </details>
 
@@ -13194,6 +13847,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Thief` | |
 | `Tinkerer` | |
 
+
+> **Note:** This enum overlaps significantly with [`class`](#enum-class), [`pool`](#enum-pool), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`FormChange`](#enum-formchange), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`set`](#enum-set), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`class_anis`](#enum-class_anis). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ConjureBonusAbility`](#enum-conjurebonusability).
+
 </details>
 
 
@@ -13258,6 +13916,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.3` | |
 | `.5` | |
 
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`aoe_chance`](#enum-aoe_chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius), [`friction`](#enum-friction). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`size_out`](#enum-size_out).
+
 </details>
 
 
@@ -13277,6 +13940,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.25` | |
 | `.5` | |
 
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius), [`size_in`](#enum-size_in), [`friction`](#enum-friction). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -13295,6 +13961,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.25` | |
 | `.35` | |
 | `-.18` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`BaseStatMultiply`](#enum-basestatmultiply), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`speed_scale`](#enum-speed_scale), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ai_scale`](#enum-ai_scale), [`consumable_chance`](#enum-consumable_chance), [`emit_timespread`](#enum-emit_timespread), [`size_out`](#enum-size_out).
 
 </details>
 
@@ -13400,6 +14071,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Unwashed` | |
 | `primed` | |
 
+
+> **Note:** This enum overlaps significantly with [`form`](#enum-form). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -13422,6 +14096,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasementUpgrade2` | |
 | `BasementUpgrade3` | |
 | `BasementUpgrade4` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`form_onmap`](#enum-form_onmap), [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority), [`house_upgrade`](#enum-house_upgrade).
 
 </details>
 
@@ -13450,6 +14127,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `volcano2` | |
 | `wall_of_flesh_noartery` | |
 
+
+> **Note:** This enum overlaps significantly with [`subject_frame`](#enum-subject_frame). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -13469,6 +14149,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `chaotic` | |
 | `bat_chaos_runaway` | |
 | `stay_near_allies_always_move` | |
+
+
+> **Note:** This enum overlaps significantly with [`move_weights`](#enum-move_weights). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -13515,6 +14198,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BigFood` | |
 | `BiggestFood` | |
 
+
+> **Note:** This enum overlaps significantly with [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag), [`ObjectOnHit`](#enum-objectonhit), [`SpawnThingOnDeath`](#enum-spawnthingondeath), [`SpawnOnDeath`](#enum-spawnondeath), [`Divide4OnDeath`](#enum-divide4ondeath), [`get_item_from_pool`](#enum-get_item_from_pool). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`TagGreed`](#enum-taggreed).
+
 </details>
 
 
@@ -13535,6 +14223,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.6` | |
 | `.5` | |
 | `.8` | |
+
+
+> **Note:** This enum overlaps significantly with [`SizeScale`](#enum-sizescale), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`particle_lifetime`](#enum-particle_lifetime), [`alpha_out`](#enum-alpha_out), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -13637,6 +14330,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `monkAttack` | |
 | `upswipe` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
+
 </details>
 
 
@@ -13655,6 +14353,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.1` | |
 | `.5` | |
 | `.2` | |
+
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`aoe_chance`](#enum-aoe_chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`move_speed_multiplier`](#enum-move_speed_multiplier), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out).
 
 </details>
 
@@ -13677,6 +14380,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `gravitySlamStart` | |
 | `leapattackwindup` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -13697,6 +14403,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `lickAttack` | |
 | `monkAttack` | |
 
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`animation`](#enum-animation), [`dash_animation`](#enum-dash_animation), [`dash_attack_animation`](#enum-dash_attack_animation), [`end`](#enum-end), [`ability`](#enum-ability), [`icon_shell_frame`](#enum-icon_shell_frame), [`type_icon`](#enum-type_icon), [`full_jump_animation`](#enum-full_jump_animation), [`AbilityReaction`](#enum-abilityreaction), [`CounterAttack`](#enum-counterattack), [`attack`](#enum-attack), [`do`](#enum-do), [`move_then_do`](#enum-move_then_do), [`move_for_ability`](#enum-move_for_ability), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`weapon`](#enum-weapon). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start).
+
 </details>
 
 
@@ -13715,6 +14426,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.5` | |
 | `.66` | |
 | `.75` | |
+
+
+> **Note:** This enum overlaps significantly with [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`chance`](#enum-chance), [`aoe_chance`](#enum-aoe_chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius), [`friction`](#enum-friction). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`size_in`](#enum-size_in), [`size_out`](#enum-size_out).
 
 </details>
 
@@ -13785,6 +14501,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasicMelee` | |
 | `GerdShot` | |
 
+
+> **Note:** This enum overlaps significantly with [`ReplaceBasicAttack`](#enum-replacebasicattack), [`OverrideBasicAttack`](#enum-overridebasicattack), [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ability_icon`](#enum-ability_icon).
+
 </details>
 
 
@@ -13809,6 +14530,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `command4` | |
 | `prouder` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`default_face`](#enum-default_face).
+
 </details>
 
 
@@ -13830,6 +14556,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `coin` | |
 | `heal` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`alias`](#enum-alias). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse).
+
 </details>
 
 
@@ -13850,6 +14581,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `EMPTY_GENERATOR` | |
 | `FANNY_PACK` | |
 
+
+> **Note:** This enum overlaps significantly with [`set`](#enum-set). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -13869,6 +14603,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `spinattackstart` | |
 | `lickAttack` | |
 | `monkAttack` | |
+
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`animation`](#enum-animation), [`loop`](#enum-loop), [`end`](#enum-end), [`ability`](#enum-ability), [`icon_shell_frame`](#enum-icon_shell_frame), [`type_icon`](#enum-type_icon), [`full_jump_animation`](#enum-full_jump_animation), [`AbilityReaction`](#enum-abilityreaction), [`CounterAttack`](#enum-counterattack), [`attack`](#enum-attack), [`do`](#enum-do), [`move_then_do`](#enum-move_then_do), [`move_for_ability`](#enum-move_for_ability), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`weapon`](#enum-weapon). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -13894,6 +14631,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `terminator_2` | |
 | `terminator_3` | |
 | `zaratana` | |
+
+
+> **Note:** This enum overlaps significantly with [`beat_house_boss`](#enum-beat_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`frame_label`](#enum-frame_label). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`initial_cutscene_night`](#enum-initial_cutscene_night).
 
 </details>
 
@@ -13944,6 +14686,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `OddRemote_Enemy` | |
 | `attack` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
+
 </details>
 
 
@@ -13982,6 +14727,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Rot` | |
 | `Burn` | |
 
+
+> **Note:** This enum overlaps significantly with [`status`](#enum-status), [`back_icon`](#enum-back_icon). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`DoubleStatus`](#enum-doublestatus), [`StatusImmunity`](#enum-statusimmunity).
+
 </details>
 
 
@@ -14002,6 +14752,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LavaTile` | |
 | `DirtTile` | |
 | `TallGrassTile` | |
+
+
+> **Note:** This enum overlaps significantly with [`ChangeTile`](#enum-changetile), [`TileTrail`](#enum-tiletrail), [`tile`](#enum-tile). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`TileTrail_Ahead`](#enum-tiletrail_ahead).
 
 </details>
 
@@ -14068,6 +14823,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GuillotinasHead` | |
 | `ReceiverAntenna` | |
 
+
+> **Note:** This enum overlaps significantly with [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`lose_specific_item`](#enum-lose_specific_item), [`unlock_quest_item`](#enum-unlock_quest_item). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped), [`unlock_item_quest`](#enum-unlock_item_quest).
+
 </details>
 
 
@@ -14092,6 +14852,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `terminator_2` | |
 | `terminator_3` | |
 | `zaratana` | |
+
+
+> **Note:** This enum overlaps significantly with [`beat_house_boss`](#enum-beat_house_boss), [`frame_label`](#enum-frame_label). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`trigger_house_boss`](#enum-trigger_house_boss), [`initial_cutscene_night`](#enum-initial_cutscene_night).
 
 </details>
 
@@ -14140,6 +14905,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 | `sewers` | |
 
+
+> **Note:** This enum overlaps significantly with [`hint_destination`](#enum-hint_destination), [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`folder`](#enum-folder), [`music`](#enum-music), [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_symmetry`](#enum-aoe_symmetry), [`stat`](#enum-stat).
+
 </details>
 
 
@@ -14183,6 +14953,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_MeatWorldUnlockedFull` | |
 | `mapflag_MoonObeliskUnlocked` | |
 
+
+> **Note:** This enum overlaps significantly with [`set_legacy_token`](#enum-set_legacy_token), [`has_token`](#enum-has_token). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`hint_prerequisite_flag`](#enum-hint_prerequisite_flag), [`dimensionx`](#enum-dimensionx).
+
 </details>
 
 
@@ -14202,6 +14977,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.1` | |
 | `.5` | |
 | `.8` | |
+
+
+> **Note:** This enum overlaps significantly with [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`zoomout_catvolume`](#enum-zoomout_catvolume), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -14258,6 +15038,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CharmedFly` | |
 | `CharmedSpookie` | |
 
+
+> **Note:** This enum overlaps significantly with [`gain_familiar`](#enum-gain_familiar). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -14281,6 +15064,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mana_leech` | |
 | `poison` | |
 | `thorns` | |
+
+
+> **Note:** This enum overlaps significantly with [`status`](#enum-status). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`DoubleStatus`](#enum-doublestatus), [`AmplifyStatus`](#enum-amplifystatus), [`StatusImmunity`](#enum-statusimmunity).
 
 </details>
 
@@ -14326,6 +15114,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SpawningPhase` | |
 | `Start_Ceiling` | |
 
+
+> **Note:** This enum overlaps significantly with [`FormChange`](#enum-formchange), [`initial_form`](#enum-initial_form). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -14345,6 +15136,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Default` | |
 | `Insane_Ground` | |
 | `FightPhase` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`projectile`](#enum-projectile), [`faction`](#enum-faction), [`FormChange`](#enum-formchange), [`form`](#enum-form), [`decision_weights`](#enum-decision_weights), [`initial_form`](#enum-initial_form), [`form_hasnot`](#enum-form_hasnot), [`prereq`](#enum-prereq). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`form_above`](#enum-form_above), [`auto_run_priority`](#enum-auto_run_priority).
 
 </details>
 
@@ -14367,6 +15163,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `3+2*level` | |
 | `5+level` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`damage`](#enum-damage).
+
 </details>
 
 
@@ -14386,6 +15185,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.16666666` | |
 | `.3` | |
 | `.5` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`depth_offset`](#enum-depth_offset), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -14474,6 +15278,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `beanies_bombquest_fail_jarofradiation` | |
 | `beanies_bombquest_fail_nuke` | |
 
+
+> **Note:** This enum overlaps significantly with [`trigger_npc_sequence`](#enum-trigger_npc_sequence). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`preempt_npc_sequence`](#enum-preempt_npc_sequence).
+
 </details>
 
 
@@ -14498,6 +15307,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TeamFlex_Impl` | |
 | `neck_NukeExplode` | |
 
+
+> **Note:** This enum overlaps significantly with [`ability`](#enum-ability). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`TeamCastAbility`](#enum-teamcastability).
+
 </details>
 
 
@@ -14519,6 +15333,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `melee` | |
 | `movement` | |
 | `spawn` | |
+
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop), [`DisplayDangerAOE`](#enum-displaydangeraoe).
 
 </details>
 
@@ -14582,6 +15401,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GerdShot` | |
 | `IsaacBasicAttack` | |
 
+
+> **Note:** This enum overlaps significantly with [`ReplaceBasicAttack`](#enum-replacebasicattack), [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`override_basic_attack`](#enum-override_basic_attack).
+
 </details>
 
 
@@ -14600,6 +15424,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.45` | |
 | `.2` | |
 | `.25` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`size`](#enum-size), [`BaseStatMultiply`](#enum-basestatmultiply), [`amount`](#enum-amount), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`YOffset`](#enum-yoffset), [`ai_scale`](#enum-ai_scale), [`consumable_chance`](#enum-consumable_chance), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -14620,6 +15449,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `durability` | |
 | `level` | |
 
+
+> **Note:** This enum overlaps significantly with [`max_range`](#enum-max_range). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -14638,6 +15470,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WorldEventLegacyCounter_CrackInTheWall` | |
 | `WorldEventLegacyToken_StartDigging` | |
 | `WorldEventLegacyCounter_CustomTokenString` | |
+
+
+> **Note:** This enum overlaps significantly with [`not_has_token`](#enum-not_has_token), [`increment_legacy_counter`](#enum-increment_legacy_counter). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -14675,6 +15510,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tragedy` | |
 | `Blessing` | |
 | `Death` | |
+
+
+> **Note:** This enum overlaps significantly with [`subject_frame`](#enum-subject_frame), [`event_now`](#enum-event_now), [`event_now_same_cat`](#enum-event_now_same_cat), [`next_event_from_set`](#enum-next_event_from_set). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -14716,6 +15554,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tink` | |
 | `Tracy` | |
 
+
+> **Note:** This enum overlaps significantly with [`subject_frame`](#enum-subject_frame). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`requires_unlocked_npc`](#enum-requires_unlocked_npc), [`unlock_npc_tomorrow`](#enum-unlock_npc_tomorrow).
+
 </details>
 
 
@@ -14751,6 +15594,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `battle` | |
 | `event` | |
 | `map` | |
+
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -14790,6 +15636,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `the_nuke_bearer` | |
 | `unlit_candle` | |
 
+
+> **Note:** This enum overlaps significantly with [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`XIsLivingAlliesWithTag`](#enum-xislivingallieswithtag).
+
 </details>
 
 
@@ -14809,6 +15660,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Class` | |
 | `Colorless` | |
 | `Mage` | |
+
+
+> **Note:** This enum overlaps significantly with [`knockback_mode`](#enum-knockback_mode), [`class`](#enum-class), [`pool`](#enum-pool), [`ability`](#enum-ability), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`ChangeCatClass`](#enum-changecatclass), [`FormChange`](#enum-formchange), [`move_weights`](#enum-move_weights), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`set`](#enum-set), [`palette`](#enum-palette), [`event_now`](#enum-event_now), [`event_now_same_cat`](#enum-event_now_same_cat), [`injury`](#enum-injury), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`class_anis`](#enum-class_anis). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -14831,6 +15685,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MedSlimeX` | |
 | `SmallSlime` | |
 | `SmallSlimeX` | |
+
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`ObjectOnHit`](#enum-objectonhit).
 
 </details>
 
@@ -14870,6 +15727,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BeefyCharmedLeech` | |
 | `CharmedLeech` | |
 | `Fly` | |
+
+
+> **Note:** This enum overlaps significantly with [`tag`](#enum-tag), [`ObjectOnHitCharacter`](#enum-objectonhitcharacter), [`BounceObject`](#enum-bounceobject), [`AddTag`](#enum-addtag), [`obj`](#enum-obj), [`SpawnOnBattleStart`](#enum-spawnonbattlestart), [`set`](#enum-set). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -14932,6 +15792,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Paper` | |
 | `Wood` | |
 
+
+> **Note:** This enum overlaps significantly with [`set`](#enum-set). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -14950,6 +15813,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bishop_hat` | |
 | `pickup` | |
 | `food` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag), [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`SpawnThingOnDeath`](#enum-spawnthingondeath), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`get_item_from_pool`](#enum-get_item_from_pool). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -14972,6 +15838,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasicStraightShot` | |
 | `Pestilence` | |
 | `Poke` | |
+
+
+> **Note:** This enum overlaps significantly with [`ReplaceBasicAttack`](#enum-replacebasicattack), [`override_basic_attack`](#enum-override_basic_attack), [`attack`](#enum-attack). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -15031,6 +15900,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `idleCommand3` | |
 | `idleCommand4` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`priming`](#enum-priming).
+
 </details>
 
 
@@ -15049,6 +15921,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `water` | |
 | `SpellDamageUp` | |
 | `fire` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`ElementImmune`](#enum-elementimmune), [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element), [`element`](#enum-element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement), [`initial_form`](#enum-initial_form), [`form_hasnot`](#enum-form_hasnot), [`alias`](#enum-alias), [`background_extra_shader`](#enum-background_extra_shader). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -15087,6 +15962,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SmallHolding` | |
 | `SmallHoldingCat` | |
 
+
+> **Note:** This enum overlaps significantly with [`FormChange`](#enum-formchange), [`form`](#enum-form). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15109,6 +15987,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MediumHouse_SmallRoom` | |
 | `SmallHouse_Attic` | |
 
+
+> **Note:** This enum overlaps significantly with [`prereq`](#enum-prereq). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15130,6 +16011,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `hitler_intro` | |
 | `t1000_intro` | |
 | `terminator_intro` | |
+
+
+> **Note:** This enum overlaps significantly with [`trigger_house_boss`](#enum-trigger_house_boss), [`beat_house_boss`](#enum-beat_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`frame_label`](#enum-frame_label). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -15209,6 +16093,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NotPriming` | |
 | `SwordAndShield` | |
 
+
+> **Note:** This enum overlaps significantly with [`FormChange`](#enum-formchange), [`initial_form`](#enum-initial_form). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15228,6 +16115,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `beanies_bombquest_3` | |
 | `beanies_bombquest_amnesia` | |
 
+
+> **Note:** This enum overlaps significantly with [`trigger_npc_sequence`](#enum-trigger_npc_sequence), [`reset_npc_sequence`](#enum-reset_npc_sequence). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15246,6 +16136,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `DualSword_Primed` | |
 | `Priming` | |
 | `SwordAndShield_Primed` | |
+
+
+> **Note:** This enum overlaps significantly with [`custom_priming_animation`](#enum-custom_priming_animation). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -15291,6 +16184,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `StrangeEggsUnlocked` | |
 | `TheShimmerUnlocked` | |
 
+
+> **Note:** This enum overlaps significantly with [`set_legacy_token`](#enum-set_legacy_token). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15330,6 +16226,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `jestercat` | |
 | `queenhippo` | |
 | `ratking` | |
+
+
+> **Note:** This enum overlaps significantly with [`custom_cat_data`](#enum-custom_cat_data), [`frame_label`](#enum-frame_label). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -15386,6 +16285,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Nuke` | |
 | `ScaldingOrb` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`FormChange`](#enum-formchange), [`animation_suffix`](#enum-animation_suffix), [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item), [`fail_item_quest`](#enum-fail_item_quest). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`RemoveItem`](#enum-removeitem).
+
 </details>
 
 
@@ -15406,6 +16310,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ToxPuff` | |
 | `tk_PetrifiedPinky` | |
 
+
+> **Note:** This enum overlaps significantly with [`move`](#enum-move), [`attack`](#enum-attack). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15424,6 +16331,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `consumable` | |
 | `musical` | |
 | `meat` | |
+
+
+> **Note:** This enum overlaps significantly with [`tag`](#enum-tag), [`set`](#enum-set). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -15480,6 +16390,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Carcus` | |
 | `FetusNoJar` | |
 
+
+> **Note:** This enum overlaps significantly with [`TransformOnDeath`](#enum-transformondeath), [`SpawnOnDeath`](#enum-spawnondeath), [`Divide4OnDeath`](#enum-divide4ondeath). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills).
+
 </details>
 
 
@@ -15500,6 +16415,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `HeadTumor` | |
 | `Maggot` | |
 | `SmallRock` | |
+
+
+> **Note:** This enum overlaps significantly with [`projectile`](#enum-projectile), [`ObjectOnHitCharacter`](#enum-objectonhitcharacter). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`BounceRock`](#enum-bouncerock).
 
 </details>
 
@@ -15522,6 +16442,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `JankAlloy` | |
 | `Paper` | |
 
+
+> **Note:** This enum overlaps significantly with [`set`](#enum-set). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15540,6 +16463,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Food` | |
 | `Catnip` | |
 | `Coin` | |
+
+
+> **Note:** This enum overlaps significantly with [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag), [`ObjectOnHitCharacter`](#enum-objectonhitcharacter), [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`SpawnThingOnDeath`](#enum-spawnthingondeath), [`get_item_from_pool`](#enum-get_item_from_pool), [`get_item`](#enum-get_item), [`right_icon`](#enum-right_icon). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`TagGreed`](#enum-taggreed), [`get_and_equip_item`](#enum-get_and_equip_item).
 
 </details>
 
@@ -15560,6 +16488,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `terminator_mini` | |
 | `hitler_clone_fetus` | |
 
+
+> **Note:** This enum overlaps significantly with [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag), [`AddHiddenTag`](#enum-addhiddentag), [`hidden_tag`](#enum-hidden_tag). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15578,6 +16509,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Grass` | |
 | `Water` | |
 | `Earth` | |
+
+
+> **Note:** This enum overlaps significantly with [`element`](#enum-element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement), [`initial_form`](#enum-initial_form). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`exclude`](#enum-exclude), [`background_extra_shader`](#enum-background_extra_shader).
 
 </details>
 
@@ -15684,6 +16620,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `deadShot` | |
 | `empty` | |
 
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`initial_form`](#enum-initial_form), [`form_hasnot`](#enum-form_hasnot). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15703,6 +16642,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.01` | |
 | `.015` | |
 | `.1` | |
+
+
+> **Note:** This enum overlaps significantly with [`chance`](#enum-chance), [`amount`](#enum-amount), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`odds`](#enum-odds), [`ai_scale`](#enum-ai_scale), [`distance_to_enemy`](#enum-distance_to_enemy), [`emit_timespread`](#enum-emit_timespread), [`speed_start`](#enum-speed_start), [`size_in`](#enum-size_in), [`friction`](#enum-friction).
 
 </details>
 
@@ -15724,6 +16668,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SpearGuyAttack` | |
 | `TinaSpear` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -15742,6 +16689,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.01` | |
 | `-.01` | |
 | `-.5` | |
+
+
+> **Note:** This enum overlaps significantly with [`depth_offset`](#enum-depth_offset), [`ai_scale`](#enum-ai_scale), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`spawn_object_distance_to_ally`](#enum-spawn_object_distance_to_ally).
 
 </details>
 
@@ -15816,6 +16768,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_MeatWorldUnlocked` | |
 | `mapflag_MeatWorldUnlockedFull` | |
 
+
+> **Note:** This enum overlaps significantly with [`has_token`](#enum-has_token), [`save_file_flag`](#enum-save_file_flag). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`dimensionx`](#enum-dimensionx).
+
 </details>
 
 
@@ -15834,6 +16791,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `EstusFlask_Full` | |
 | `WaterBottle_Full` | |
 | `GallonOfWater` | |
+
+
+> **Note:** This enum overlaps significantly with [`EquipTemporaryItem`](#enum-equiptemporaryitem). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -16000,6 +16960,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FinalBossTheChildLocation` | |
 | `HitlerMiniInitial` | |
 
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`special_tile_tag`](#enum-special_tile_tag).
+
 </details>
 
 
@@ -16018,6 +16981,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `collective` | |
 | `dinofamily` | |
 | `dc_cat` | |
+
+
+> **Note:** This enum overlaps significantly with [`hidden_tag`](#enum-hidden_tag). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -16110,6 +17076,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LavaBoulder` | |
 | `SmallRock` | |
 
+
+> **Note:** This enum overlaps significantly with [`projectile`](#enum-projectile), [`ObjectOnHitCharacter`](#enum-objectonhitcharacter), [`BounceObject`](#enum-bounceobject), [`ObjectOnHitEmpty`](#enum-objectonhitempty), [`obj`](#enum-obj). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -16146,6 +17115,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CreepTile` | |
 | `GlitchTile` | |
 | `OilTile` | |
+
+
+> **Note:** This enum overlaps significantly with [`ChangeTile`](#enum-changetile), [`TileTrail`](#enum-tiletrail), [`TileTrail_Ahead`](#enum-tiletrail_ahead), [`tile`](#enum-tile). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -16185,6 +17157,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MoonHead_Blow` | |
 | `TheChild_Wrath` | |
 | `attack` | |
+
+
+> **Note:** This enum overlaps significantly with [`type`](#enum-type), [`animation`](#enum-animation), [`end`](#enum-end), [`ability`](#enum-ability), [`icon_shell_frame`](#enum-icon_shell_frame), [`type_icon`](#enum-type_icon), [`full_jump_animation`](#enum-full_jump_animation), [`AbilityReaction`](#enum-abilityreaction), [`DeathRattle`](#enum-deathrattle), [`CounterAttack`](#enum-counterattack), [`attack`](#enum-attack), [`do`](#enum-do), [`move_then_do`](#enum-move_then_do), [`move_for_ability`](#enum-move_for_ability), [`weapon`](#enum-weapon). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`start`](#enum-start), [`loop`](#enum-loop).
 
 </details>
 
@@ -16314,6 +17291,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TheDestroyer` | |
 | `Tormentor` | |
 
+
+> **Note:** This enum overlaps significantly with [`hidden_tag`](#enum-hidden_tag). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -16332,6 +17312,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BlackShard_Glowing` | |
 | `BlackShard` | |
 | `ScaldingOrb` | |
+
+
+> **Note:** This enum overlaps significantly with [`CompleteItemQuest`](#enum-completeitemquest), [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -16353,6 +17336,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TeamFlex_Impl` | |
 | `TeamFlex_Impl2` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`dash_attack_animation`](#enum-dash_attack_animation), [`sub_ability`](#enum-sub_ability). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -16372,6 +17358,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FlowerTile` | |
 | `OilTile` | |
 | `WaterTile` | |
+
+
+> **Note:** This enum overlaps significantly with [`ChangeTile`](#enum-changetile), [`TileTrail`](#enum-tiletrail), [`tile`](#enum-tile), [`ChangeTilesUnder`](#enum-changetilesunder). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`ChangeTileOnPop`](#enum-changetileonpop).
 
 </details>
 
@@ -16411,6 +17402,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Thunderstorm` | |
 | `Windy` | |
 
+
+> **Note:** This enum overlaps significantly with [`form`](#enum-form), [`add_weather`](#enum-add_weather). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -16429,6 +17423,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.5` | |
 | `.33` | |
 | `.4+.2*level` | |
+
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha_out`](#enum-alpha_out), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`move_speed_multiplier`](#enum-move_speed_multiplier), [`consumable_chance`](#enum-consumable_chance), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -16483,6 +17482,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.25` | |
 | `.75` | |
 
+
+> **Note:** This enum overlaps significantly with [`SizeScale`](#enum-sizescale), [`odds`](#enum-odds), [`chance`](#enum-chance), [`YOffset`](#enum-yoffset), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`depth_offset`](#enum-depth_offset), [`ai_scale`](#enum-ai_scale), [`BaseStatMultiply`](#enum-basestatmultiply), [`consumable_chance`](#enum-consumable_chance), [`amount`](#enum-amount), [`ReverbDelay`](#enum-reverbdelay), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`move_speed_multiplier`](#enum-move_speed_multiplier), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
+
 </details>
 
 
@@ -16502,6 +17506,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `JarOfRadiatedBlood` | |
 | `JarOfRadiation` | |
 | `Nuke` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`FormChange`](#enum-formchange), [`animation_suffix`](#enum-animation_suffix), [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`from`](#enum-from), [`CompleteItemQuest`](#enum-completeitemquest), [`unlock_item_quest`](#enum-unlock_item_quest).
 
 </details>
 
@@ -16538,6 +17547,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mental_disorders` | |
 | `Anxiety` | |
 | `diseases` | |
+
+
+> **Note:** This enum overlaps significantly with [`pool`](#enum-pool), [`gain_disorder_from_pool`](#enum-gain_disorder_from_pool), [`gain_disorder`](#enum-gain_disorder). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -16628,6 +17640,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tragedy` | |
 | `WatchingHead2` | |
 | `misc_events.gon` | |
+
+
+> **Note:** This enum overlaps significantly with [`subject_frame`](#enum-subject_frame), [`event_now`](#enum-event_now), [`event_now_same_cat`](#enum-event_now_same_cat). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`event`](#enum-event).
 
 </details>
 
@@ -16757,6 +17774,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `grub_familiar` | |
 | `rock` | |
 
+
+> **Note:** This enum overlaps significantly with [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag), [`AddTag`](#enum-addtag), [`SpawnOnBattleStart`](#enum-spawnonbattlestart), [`set`](#enum-set), [`hidden_tag`](#enum-hidden_tag). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -16832,6 +17852,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WaterKittenTrap` | |
 | `WebTrap` | |
 
+
+> **Note:** This enum overlaps significantly with [`projectile`](#enum-projectile). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -16889,6 +17912,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `JarOfRadiatedBlood` | |
 | `TinasHead` | |
 
+
+> **Note:** This enum overlaps significantly with [`get_item`](#enum-get_item), [`choose_cat_with_item`](#enum-choose_cat_with_item), [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`lose_specific_item`](#enum-lose_specific_item), [`fail_item_quest`](#enum-fail_item_quest). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`from`](#enum-from), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped).
+
 </details>
 
 
@@ -16909,6 +17937,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `steven` | |
 | `tracy` | |
 
+
+> **Note:** This enum overlaps significantly with [`set`](#enum-set), [`subject_frame`](#enum-subject_frame), [`max_npc`](#enum-max_npc). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`requires_unlocked_npc`](#enum-requires_unlocked_npc).
+
 </details>
 
 
@@ -16928,6 +17961,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `future` | |
 | `iceage` | |
 | `theend` | |
+
+
+> **Note:** This enum overlaps significantly with [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`folder`](#enum-folder), [`music`](#enum-music), [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`event_piece_frame`](#enum-event_piece_frame). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -16966,6 +18002,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sp_pill_normal` | |
 | `sp_pill_tar` | |
 
+
+> **Note:** This enum overlaps significantly with [`hidden_tag`](#enum-hidden_tag). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -17001,6 +18040,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.25` | |
 | `.5` | |
 | `.666` | |
+
+
+> **Note:** This enum overlaps significantly with [`odds`](#enum-odds), [`chance`](#enum-chance), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`size`](#enum-size), [`pitch`](#enum-pitch), [`amount`](#enum-amount), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`speed_scale`](#enum-speed_scale), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`dampening`](#enum-dampening), [`alpha_in`](#enum-alpha_in), [`alpha`](#enum-alpha), [`speed_start`](#enum-speed_start), [`emit_radius`](#enum-emit_radius). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`YOffset`](#enum-yoffset), [`aoe_chance`](#enum-aoe_chance), [`move_speed_multiplier`](#enum-move_speed_multiplier), [`ai_scale`](#enum-ai_scale), [`consumable_chance`](#enum-consumable_chance), [`ReverbDelay`](#enum-reverbdelay), [`alpha_out`](#enum-alpha_out), [`emit_timespread`](#enum-emit_timespread), [`size_in`](#enum-size_in), [`size_out`](#enum-size_out), [`friction`](#enum-friction).
 
 </details>
 
@@ -17072,6 +18116,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LennyCatDies` | |
 | `MoonHead_Digest` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -17090,6 +18137,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Bleed` | |
 | `Burn` | |
 | `Poison` | |
+
+
+> **Note:** This enum overlaps significantly with [`status`](#enum-status), [`AmplifyStatus`](#enum-amplifystatus), [`StatusImmunity`](#enum-statusimmunity), [`back_icon`](#enum-back_icon). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -17129,6 +18179,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ghost` | |
 | `robot` | |
 
+
+> **Note:** This enum overlaps significantly with [`target_requires_tag`](#enum-target_requires_tag), [`tag`](#enum-tag). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -17165,6 +18218,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BoneClub` | |
 | `Molars` | |
 | `Pearl` | |
+
+
+> **Note:** This enum overlaps significantly with [`get_item`](#enum-get_item). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -17309,6 +18365,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `insane` | |
 | `sad` | |
 
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`default_face`](#enum-default_face). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -17345,6 +18404,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CharmTrap` | |
 | `EggSackTrap` | |
 | `SpikeTrap` | |
+
+
+> **Note:** This enum overlaps significantly with [`projectile`](#enum-projectile). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -17453,6 +18515,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `meatpulse` | |
 | `water` | |
 
+
+> **Note:** This enum overlaps significantly with [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element), [`element`](#enum-element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement), [`initial_form`](#enum-initial_form). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`exclude`](#enum-exclude).
+
 </details>
 
 
@@ -17489,6 +18556,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AREA_NAME_CORE` | |
 | `mapflag_CoreUnlocked` | |
 | `mapflag_IceAgeUnlocked` | |
+
+
+> **Note:** This enum overlaps significantly with [`has_token`](#enum-has_token), [`area_name`](#enum-area_name). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`moon`](#enum-moon), [`dimensionx`](#enum-dimensionx).
 
 </details>
 
@@ -17560,6 +18632,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_DimensionXUnlocked` | |
 | `mapflag_IceAgeUnlocked` | |
 
+
+> **Note:** This enum overlaps significantly with [`hint_prerequisite_flag`](#enum-hint_prerequisite_flag), [`has_token`](#enum-has_token), [`area_name`](#enum-area_name), [`core`](#enum-core), [`save_file_flag`](#enum-save_file_flag). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`moon`](#enum-moon).
+
 </details>
 
 
@@ -17614,6 +18691,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `endoftime` | |
 | `mapflag_EndOfTimeUnlocked` | |
 
+
+> **Note:** This enum overlaps significantly with [`hint_destination`](#enum-hint_destination), [`has_token`](#enum-has_token), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`chapter_id`](#enum-chapter_id), [`area_name`](#enum-area_name), [`music`](#enum-music), [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`jurassic`](#enum-jurassic), [`theend`](#enum-theend).
+
 </details>
 
 
@@ -17633,6 +18715,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LennyStruggleFail` | |
 | `XXX` | |
 
+
+> **Note:** This enum overlaps significantly with [`ability`](#enum-ability). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -17651,6 +18736,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Default` | |
 | `Full` | |
 | `Standing` | |
+
+
+> **Note:** This enum overlaps significantly with [`animation`](#enum-animation), [`projectile`](#enum-projectile), [`faction`](#enum-faction), [`FormChange`](#enum-formchange), [`form`](#enum-form), [`decision_weights`](#enum-decision_weights), [`initial_form`](#enum-initial_form), [`form_onmap`](#enum-form_onmap), [`form_has`](#enum-form_has), [`form_hasnot`](#enum-form_hasnot), [`animation_suffix`](#enum-animation_suffix), [`auto_run_priority`](#enum-auto_run_priority), [`prereq`](#enum-prereq). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -17690,6 +18778,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Necro_SoulDagger_Charged` | |
 | `Necro_SoulDagger_Uncharged` | |
 
+
+> **Note:** This enum overlaps significantly with [`EquipTemporaryItem`](#enum-equiptemporaryitem), [`unlock_item_quest`](#enum-unlock_item_quest), [`fail_item_quest`](#enum-fail_item_quest). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`to`](#enum-to).
+
 </details>
 
 
@@ -17709,6 +18802,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CharmedFleaSpecial` | |
 | `CharmedPooter` | |
 
+
+> **Note:** This enum overlaps significantly with [`BounceObject`](#enum-bounceobject), [`SpawnThingOnDeath`](#enum-spawnthingondeath), [`gain_familiar`](#enum-gain_familiar). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -17727,6 +18823,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Antenna` | |
 | `Catnip` | |
 | `FlyLarva` | |
+
+
+> **Note:** This enum overlaps significantly with [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`get_item`](#enum-get_item). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -17890,6 +18989,11 @@ This document provides exhaustive lists of all enum and string values found in t
 | `endoftime` | |
 | `mapflag_JurassicUnlocked` | |
 
+
+> **Note:** This enum overlaps significantly with [`hint_destination`](#enum-hint_destination), [`has_token`](#enum-has_token), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`chapter_id`](#enum-chapter_id), [`area_name`](#enum-area_name), [`music`](#enum-music), [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`endoftime`](#enum-endoftime). Values from those larger enums may also be valid here.
+
+> **Note:** Values from this enum are also seen in smaller subsets like: [`theend`](#enum-theend).
+
 </details>
 
 
@@ -17980,6 +19084,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_IceAgeUnlocked` | |
 | `mapflag_MoonUnlocked` | |
 
+
+> **Note:** This enum overlaps significantly with [`has_token`](#enum-has_token), [`area_name`](#enum-area_name), [`core`](#enum-core), [`dimensionx`](#enum-dimensionx). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -18037,6 +19144,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GuillotinasHead` | |
 | `Horns` | |
 
+
+> **Note:** This enum overlaps significantly with [`get_item`](#enum-get_item), [`choose_cat_with_item`](#enum-choose_cat_with_item), [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`lose_specific_item`](#enum-lose_specific_item), [`unlock_item_quest`](#enum-unlock_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -18092,6 +19202,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `finalboss` | |
 | `throbbingking` | |
 
+
+> **Note:** This enum overlaps significantly with [`tileset`](#enum-tileset), [`boss_cutscene`](#enum-boss_cutscene), [`frame_label`](#enum-frame_label). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -18129,6 +19242,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `frank` | |
 | `jack` | |
 | `tracy` | |
+
+
+> **Note:** This enum overlaps significantly with [`subject_frame`](#enum-subject_frame), [`unlock_npc_tomorrow`](#enum-unlock_npc_tomorrow), [`max_npc`](#enum-max_npc). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -18202,6 +19318,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FinalBossCloneSpot` | |
 | `FinalBossTheChildLocation` | |
 
+
+> **Note:** This enum overlaps significantly with [`tag_location`](#enum-tag_location). Values from those larger enums may also be valid here.
+
 </details>
 
 
@@ -18237,6 +19356,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AREA_NAME_THEEND` | |
 | `endoftime` | |
 | `mapflag_TheEndUnlocked` | |
+
+
+> **Note:** This enum overlaps significantly with [`hint_destination`](#enum-hint_destination), [`has_token`](#enum-has_token), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`chapter_id`](#enum-chapter_id), [`area_name`](#enum-area_name), [`music`](#enum-music), [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`jurassic`](#enum-jurassic), [`endoftime`](#enum-endoftime). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -18292,6 +19414,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `JarOfNothing` | |
 | `Necro_SoulDagger_Charged` | |
 | `Necro_SoulDagger_Uncharged` | |
+
+
+> **Note:** This enum overlaps significantly with [`from`](#enum-from), [`EquipTemporaryItem`](#enum-equiptemporaryitem). Values from those larger enums may also be valid here.
 
 </details>
 
@@ -18367,6 +19492,9 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.6` | |
 | `.7` | |
 | `.8` | |
+
+
+> **Note:** This enum overlaps significantly with [`SizeScale`](#enum-sizescale), [`shadow_size`](#enum-shadow_size), [`scale`](#enum-scale), [`pitch`](#enum-pitch), [`ambient`](#enum-ambient), [`size_end`](#enum-size_end), [`size_start`](#enum-size_start), [`particle_lifetime`](#enum-particle_lifetime), [`speed_start`](#enum-speed_start). Values from those larger enums may also be valid here.
 
 </details>
 

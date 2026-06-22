@@ -97,9 +97,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 | [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
 
 </details>
@@ -118,7 +115,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`effects`](#context-effects) | Block |  | 9 |
-| `damage` | Number |  | 4 |
+| `damage` | Integer |  | 4 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 4 |
 
 </details>
@@ -137,8 +134,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `knockback` | Number |  | 4 |
-| `damage` | Number |  | 2 |
+| `knockback` | Integer |  | 4 |
+| `damage` | Integer |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 2 |
 | [`effects`](#context-effects) | Block |  | 1 |
 
@@ -157,7 +154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number |  | 7 |
+| `chance` | Integer |  | 7 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 7 |
 | `good` | Boolean |  | 5 |
 
@@ -244,7 +241,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number |  | 4 |
+| `chance` | Integer |  | 4 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 4 |
 | `good` | Boolean |  | 1 |
 
@@ -281,7 +278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
-| `number` | Number |  | 2 |
+| `number` | Integer |  | 2 |
 
 </details>
 
@@ -300,7 +297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Number |  | 2 |
+| `odds` | Integer |  | 2 |
 
 </details>
 
@@ -318,7 +315,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `stacks` | Number |  | 2 |
+| `stacks` | Integer |  | 2 |
 
 </details>
 
@@ -406,7 +403,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `range` | Number |  | 1 |
+| `range` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -424,7 +421,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number |  | 1 |
+| `damage` | Integer |  | 1 |
 | [`element`](./Enums.md#enum-element) | Enum |  | 1 |
 
 </details>
@@ -442,7 +439,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Fury` | Number |  | 1 |
+| `Fury` | Integer |  | 1 |
 
 </details>
 
@@ -460,7 +457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `stacks` | Number |  | 1 |
+| `stacks` | Integer |  | 1 |
 
 </details>
 
@@ -478,7 +475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `chance` | Number |  | 1 |
+| `chance` | Integer |  | 1 |
 
 </details>
 
@@ -496,7 +493,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`class`](./Enums.md#enum-class) | Enum |  | 1 |
-| `reduction` | Number |  | 1 |
+| `reduction` | Integer |  | 1 |
 
 </details>
 
@@ -533,7 +530,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Number |  | 1 |
+| `odds` | Integer |  | 1 |
 
 </details>
 
@@ -551,7 +548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `chance` | Number |  | 1 |
+| `chance` | Integer |  | 1 |
 
 </details>
 
@@ -568,8 +565,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Number |  | 1 |
-| `stacks` | Number |  | 1 |
+| `distance` | Integer |  | 1 |
+| `stacks` | Integer |  | 1 |
 
 </details>
 
@@ -675,8 +672,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `HealthGain` | Number |  | 1 |
-| `stacks` | Number |  | 1 |
+| `HealthGain` | Integer |  | 1 |
+| `stacks` | Integer |  | 1 |
 
 </details>
 
@@ -694,7 +691,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Charge` | Number |  | 1 |
+| `Charge` | Integer |  | 1 |
 
 </details>
 
@@ -815,8 +812,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -832,8 +829,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -849,8 +846,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -866,8 +863,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `int` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -883,8 +880,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `spd` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `spd` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -900,8 +897,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `lck` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `lck` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -917,8 +914,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -934,8 +931,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `dex` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `dex` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -951,8 +948,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `con` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `con` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -968,8 +965,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `int` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `int` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -985,8 +982,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1002,8 +999,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1019,8 +1016,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `dex` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `dex` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1036,8 +1033,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1053,8 +1050,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `dex` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `dex` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1070,8 +1067,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `int` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `int` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1087,8 +1084,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1104,8 +1101,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1121,8 +1118,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `int` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `int` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1138,8 +1135,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `int` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `int` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1155,8 +1152,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `int` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `int` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1172,8 +1169,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `int` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1189,8 +1186,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `int` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1206,8 +1203,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `int` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1223,8 +1220,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `con` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `con` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1240,8 +1237,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `dex` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `dex` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1257,8 +1254,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1274,8 +1271,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `int` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `int` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1291,8 +1288,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1308,8 +1305,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1325,8 +1322,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1342,8 +1339,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1359,8 +1356,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1376,8 +1373,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number |  | 9 |
-| `lck` | Number |  | 9 |
+| `int` | Integer |  | 9 |
+| `lck` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1393,8 +1390,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `lck` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `lck` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1410,8 +1407,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `lck` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `lck` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1427,8 +1424,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `con` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1444,8 +1441,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `spd` | Number |  | 9 |
-| `str` | Number |  | 9 |
+| `spd` | Integer |  | 9 |
+| `str` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1461,8 +1458,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `cha` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1478,8 +1475,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `int` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1495,8 +1492,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dex` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `dex` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1512,8 +1509,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `lck` | Number |  | 9 |
-| `spd` | Number |  | 9 |
+| `lck` | Integer |  | 9 |
+| `spd` | Integer |  | 9 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
 
 </details>
@@ -1530,11 +1527,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-| `cha` | Number |  | 3 |
-| `lck` | Number |  | 3 |
-| `con` | Number |  | 1 |
-| `int` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `cha` | Integer |  | 3 |
+| `lck` | Integer |  | 3 |
+| `con` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -1550,13 +1547,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-| `cha` | Number |  | 3 |
-| `dex` | Number |  | 2 |
-| `int` | Number |  | 2 |
-| `spd` | Number |  | 2 |
-| `lck` | Number |  | 1 |
-| `shield` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `cha` | Integer |  | 3 |
+| `dex` | Integer |  | 2 |
+| `int` | Integer |  | 2 |
+| `spd` | Integer |  | 2 |
+| `lck` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -1573,8 +1570,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 8 |
 | [`passives`](#context-passives) | Block |  | 8 |
-| `divine_shield` | Number |  | 1 |
-| `shield` | Number |  | 1 |
+| `divine_shield` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -1592,7 +1589,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 8 |
 | [`passives`](#context-passives) | Block |  | 8 |
-| `cha` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -1628,11 +1625,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 8 |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
-| `cha` | Number |  | 2 |
-| `str` | Number |  | 2 |
-| `con` | Number |  | 1 |
-| `lck` | Number |  | 1 |
-| `spd` | Number |  | 1 |
+| `cha` | Integer |  | 2 |
+| `str` | Integer |  | 2 |
+| `con` | Integer |  | 1 |
+| `lck` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -1650,8 +1647,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String |  | 7 |
 | [`passives`](#context-passives) | Block |  | 7 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `cha` | Number |  | 1 |
-| `lck` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
+| `lck` | Integer |  | 1 |
 
 </details>
 
@@ -1668,7 +1665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 7 |
 | [`passives`](#context-passives) | Block |  | 7 |
-| `con` | Number |  | 1 |
+| `con` | Integer |  | 1 |
 
 </details>
 
@@ -1703,10 +1700,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 7 |
 | [`desc`](./Strings.md#string-desc) | String |  | 6 |
 | [`passives`](#context-passives) | Block |  | 6 |
-| `con` | Number |  | 2 |
-| `cha` | Number |  | 1 |
-| `int` | Number |  | 1 |
-| `spd` | Number |  | 1 |
+| `con` | Integer |  | 2 |
+| `cha` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -1724,11 +1721,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String |  | 6 |
 | [`passives`](#context-passives) | Block |  | 6 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `int` | Number |  | 2 |
-| `con` | Number |  | 1 |
-| `dex` | Number |  | 1 |
-| `spd` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `int` | Integer |  | 2 |
+| `con` | Integer |  | 1 |
+| `dex` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -1746,7 +1743,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String |  | 6 |
 | [`passives`](#context-passives) | Block |  | 6 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `divine_shield` | Number |  | 1 |
+| `divine_shield` | Integer |  | 1 |
 
 </details>
 
@@ -1762,12 +1759,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 6 |
-| `int` | Number |  | 3 |
-| `cha` | Number |  | 2 |
-| `con` | Number |  | 2 |
+| `int` | Integer |  | 3 |
+| `cha` | Integer |  | 2 |
+| `con` | Integer |  | 2 |
 | [`desc`](./Strings.md#string-desc) | String |  | 1 |
 | [`passives`](#context-passives) | Block |  | 1 |
-| `spd` | Number |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -1784,9 +1781,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 6 |
 | [`passives`](#context-passives) | Block |  | 6 |
-| `spd` | Number |  | 2 |
-| `cha` | Number |  | 1 |
-| `con` | Number |  | 1 |
+| `spd` | Integer |  | 2 |
+| `cha` | Integer |  | 1 |
+| `con` | Integer |  | 1 |
 
 </details>
 
@@ -1803,9 +1800,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 5 |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| `dex` | Number |  | 2 |
+| `dex` | Integer |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `cha` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
 
 </details>
 
@@ -1823,11 +1820,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `shield` | Number |  | 2 |
-| `con` | Number |  | 1 |
-| `int` | Number |  | 1 |
-| `lck` | Number |  | 1 |
-| `spd` | Number |  | 1 |
+| `shield` | Integer |  | 2 |
+| `con` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
+| `lck` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -1845,11 +1842,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `cha` | Number |  | 2 |
-| `int` | Number |  | 2 |
-| `shield` | Number |  | 1 |
-| `spd` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `cha` | Integer |  | 2 |
+| `int` | Integer |  | 2 |
+| `shield` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -1866,10 +1863,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
-| `spd` | Number |  | 2 |
-| `cha` | Number |  | 1 |
-| `int` | Number |  | 1 |
-| `shield` | Number |  | 1 |
+| `spd` | Integer |  | 2 |
+| `cha` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -1887,11 +1884,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `cha` | Number |  | 2 |
+| `cha` | Integer |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `int` | Number |  | 1 |
+| `int` | Integer |  | 1 |
 | [`override_move`](./Enums.md#enum-override_move) | Enum |  | 1 |
-| `shield` | Number |  | 1 |
+| `shield` | Integer |  | 1 |
 
 </details>
 
@@ -1908,7 +1905,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
-| `con` | Number |  | 2 |
+| `con` | Integer |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -1926,9 +1923,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
-| `divine_shield` | Number |  | 1 |
-| `shield` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `divine_shield` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -1945,8 +1942,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
-| `cha` | Number |  | 1 |
-| `shield` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -1980,8 +1977,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
-| `cha` | Number |  | 1 |
-| `int` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -1999,7 +1996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
-| `spd` | Number |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -2017,10 +2014,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `str` | Number |  | 3 |
-| `con` | Number |  | 2 |
-| `cha` | Number |  | 1 |
-| `spd` | Number |  | 1 |
+| `str` | Integer |  | 3 |
+| `con` | Integer |  | 2 |
+| `cha` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -2038,11 +2035,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `cha` | Number |  | 2 |
-| `dex` | Number |  | 2 |
-| `int` | Number |  | 1 |
-| `spd` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `cha` | Integer |  | 2 |
+| `dex` | Integer |  | 2 |
+| `int` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -2059,12 +2056,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `cha` | Number |  | 3 |
-| `lck` | Number |  | 2 |
-| `str` | Number |  | 2 |
+| `cha` | Integer |  | 3 |
+| `lck` | Integer |  | 2 |
+| `str` | Integer |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `con` | Number |  | 1 |
-| `int` | Number |  | 1 |
+| `con` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
 
 </details>
 
@@ -2081,7 +2078,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `shield` | Number |  | 1 |
+| `shield` | Integer |  | 1 |
 
 </details>
 
@@ -2098,8 +2095,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `int` | Number |  | 1 |
-| `shield` | Number |  | 1 |
+| `int` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2117,7 +2114,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Number |  | 2 |
+| `spd` | Integer |  | 2 |
 
 </details>
 
@@ -2134,7 +2131,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Number |  | 1 |
+| `spd` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2152,7 +2149,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `cha` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2221,7 +2218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Number |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -2238,7 +2235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `str` | Number |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -2289,7 +2286,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Number |  | 1 |
+| `spd` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2324,10 +2321,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`desc`](./Strings.md#string-desc) | String |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `cha` | Number |  | 2 |
+| `cha` | Integer |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| `int` | Number |  | 1 |
-| `speed` | Number |  | 1 |
+| `int` | Integer |  | 1 |
+| `speed` | Float |  | 1 |
 
 </details>
 
@@ -2345,8 +2342,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `cha` | Number |  | 2 |
-| `spd` | Number |  | 1 |
+| `cha` | Integer |  | 2 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -2380,7 +2377,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 3 |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `dex` | Number |  | 1 |
+| `dex` | Integer |  | 1 |
 
 </details>
 
@@ -2397,12 +2394,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `int` | Number |  | 2 |
-| `lck` | Number |  | 2 |
-| `cha` | Number |  | 1 |
-| `dex` | Number |  | 1 |
-| `shield` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `int` | Integer |  | 2 |
+| `lck` | Integer |  | 2 |
+| `cha` | Integer |  | 1 |
+| `dex` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -2419,13 +2416,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `con` | Number |  | 2 |
+| `con` | Integer |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `dex` | Number |  | 1 |
-| `int` | Number |  | 1 |
-| `shield` | Number |  | 1 |
-| `spd` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `dex` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
+| `shield` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 
 </details>
 
@@ -2442,9 +2439,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `cha` | Number |  | 1 |
-| `con` | Number |  | 1 |
-| `str` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
+| `con` | Integer |  | 1 |
+| `str` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2462,8 +2459,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `con` | Number |  | 1 |
-| `spd` | Number |  | 1 |
+| `con` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -2512,7 +2509,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `con` | Number |  | 1 |
+| `con` | Integer |  | 1 |
 
 </details>
 
@@ -2546,7 +2543,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `int` | Number |  | 1 |
+| `int` | Integer |  | 1 |
 
 </details>
 
@@ -2563,7 +2560,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 3 |
 | [`passives`](#context-passives) | Block |  | 3 |
-| `spd` | Number |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -2596,7 +2593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `shield` | Number |  | 1 |
+| `shield` | Integer |  | 1 |
 
 </details>
 
@@ -2613,7 +2610,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `divine_shield` | Number |  | 1 |
+| `divine_shield` | Integer |  | 1 |
 
 </details>
 
@@ -2663,7 +2660,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `con` | Number |  | 1 |
+| `con` | Integer |  | 1 |
 
 </details>
 
@@ -2680,7 +2677,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `con` | Number |  | 1 |
+| `con` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2698,7 +2695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `shield` | Number |  | 1 |
+| `shield` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2716,7 +2713,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `con` | Number |  | 1 |
+| `con` | Integer |  | 1 |
 
 </details>
 
@@ -2782,7 +2779,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 1 |
 | [`passives`](#context-passives) | Block |  | 1 |
-| `shield` | Number |  | 1 |
+| `shield` | Integer |  | 1 |
 
 </details>
 
@@ -2894,7 +2891,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 1 |
+| `cha` | Integer |  | 1 |
 | [`desc`](./Strings.md#string-desc) | String |  | 1 |
 | [`passives`](#context-passives) | Block |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
@@ -2914,7 +2911,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 1 |
 | [`passives`](#context-passives) | Block |  | 1 |
-| `str` | Number |  | 1 |
+| `str` | Integer |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -2931,9 +2928,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| `int` | Number |  | 1 |
+| `int` | Integer |  | 1 |
 | [`passives`](#context-passives) | Block |  | 1 |
-| `spd` | Number |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 

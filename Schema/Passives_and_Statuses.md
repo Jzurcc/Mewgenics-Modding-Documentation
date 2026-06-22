@@ -28,7 +28,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`name_mod`](./Strings.md#string-name_mod) | String |  | 4 |
 | [`tags`](./Arrays.md#array-tags) | Array |  | 3 |
 | [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum |  | 2 |
-| `shield` | Number |  | 2 |
+| `shield` | Integer |  | 2 |
 | [`bonus_items`](./Arrays.md#array-bonus_items) | Array | Flat addition to a base value. | 1 |
 | [`grant_ability`](./Enums.md#enum-grant_ability) | Enum |  | 1 |
 
@@ -118,13 +118,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 48 |
-| `spd` | Number |  | 41 |
-| `cha` | Number |  | 33 |
-| `int` | Number |  | 32 |
-| `str` | Number |  | 31 |
-| `dex` | Number |  | 23 |
-| `lck` | Number |  | 21 |
+| `con` | Integer |  | 48 |
+| `spd` | Integer |  | 41 |
+| `cha` | Integer |  | 33 |
+| `int` | Integer |  | 32 |
+| `str` | Integer |  | 31 |
+| `dex` | Integer |  | 23 |
+| `lck` | Integer |  | 21 |
 
 </details>
 
@@ -165,9 +165,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 </details>
 
 ---
@@ -276,7 +273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`slot`](./Enums.md#enum-slot) | Enum |  | 16 |
-| `frame` | Number |  | 3 |
+| `frame` | Integer |  | 3 |
 
 </details>
 
@@ -292,7 +289,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Enum |  | 14 |
-| [`number`](./Arrays.md#array-number) | Number |  | 13 |
+| [`number`](./Arrays.md#array-number) | Integer |  | 13 |
 
 </details>
 
@@ -311,12 +308,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 6 |
+| `RandomMagicMissile` | Integer | Fires a randomized number of magic missiles. | 6 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies the 'ForceUseAbility' effect. | 2 |
-| `NextBasicAttackCritsThisTurn` | Number | Guarantees the next basic attack executed this turn will be a critical hit. | 2 |
-| `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 2 |
-| `Shield` | Number | Applies the 'Shield' effect. | 2 |
-| `PartialCleanse` | Number | Applies the 'PartialCleanse' effect. | 1 |
+| `NextBasicAttackCritsThisTurn` | Integer | Guarantees the next basic attack executed this turn will be a critical hit. | 2 |
+| `RandomStatUp` | Integer | Applies the 'RandomStatUp' effect. | 2 |
+| `Shield` | Integer | Applies the 'Shield' effect. | 2 |
+| `PartialCleanse` | Integer | Applies the 'PartialCleanse' effect. | 1 |
 
 </details>
 
@@ -334,7 +331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`disease`](./Enums.md#enum-disease) | Enum | The specific status effect ID representing the disease. | 12 |
-| `chance` | Number | Probability (0.0 to 1.0 or percentage) of transmitting. | 11 |
+| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of transmitting. | 11 |
 | `can_apply_to_anything` | Boolean |  | 6 |
 
 </details>
@@ -406,9 +403,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 11 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 11 |
 | [`status`](./Enums.md#enum-status) | Enum | The status effect to apply. | 11 |
-| `turns` | Number | Duration in turns. | 8 |
+| `turns` | Integer | Duration in turns. | 8 |
 | `expires_on_end_turn` | Boolean |  | 6 |
 | `expires_on_begin_turn` | Boolean | If true, ticks down at the start of the turn rather than the end. | 5 |
 
@@ -446,9 +443,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number |  | 6 |
-| `cha` | Number |  | 2 |
-| `spd` | Number |  | 2 |
+| `int` | Integer |  | 6 |
+| `cha` | Integer |  | 2 |
+| `spd` | Integer |  | 2 |
 
 </details>
 
@@ -466,7 +463,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 8 |
-| `knockback` | Number |  | 2 |
+| `knockback` | Integer |  | 2 |
 
 </details>
 
@@ -485,7 +482,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 7 |
-| `damage` | Number | The base damage properties of an attack. | 4 |
+| `damage` | Integer | The base damage properties of an attack. | 4 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 4 |
 
 </details>
@@ -504,13 +501,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddSpellDamage` | Number | Applies the 'AddSpellDamage' effect. | 2 |
+| `AddSpellDamage` | Integer | Applies the 'AddSpellDamage' effect. | 2 |
 | [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | Applies the 'CounterAttack' effect. | 2 |
-| `ExtraMovePoints` | Number | Applies the 'ExtraMovePoints' effect. | 2 |
-| `ManaCostReduction` | Number | Applies the 'ManaCostReduction' effect. | 2 |
+| `ExtraMovePoints` | Integer | Applies the 'ExtraMovePoints' effect. | 2 |
+| `ManaCostReduction` | Integer | Applies the 'ManaCostReduction' effect. | 2 |
 | [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
 | [`CritsApplyStatus`](#context-critsapplystatus) | Block | Applies the 'CritsApplyStatus' effect. | 1 |
-| `Flying` | Number | Applies the 'Flying' effect. | 1 |
+| `Flying` | Integer | Applies the 'Flying' effect. | 1 |
 
 </details>
 
@@ -546,11 +543,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `LuckUp` | Number | Applies the 'LuckUp' effect. | 3 |
-| `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
-| `Shield` | Number | Applies the 'Shield' effect. | 2 |
-| `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 1 |
-| `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 1 |
+| `LuckUp` | Integer | Applies the 'LuckUp' effect. | 3 |
+| `DamageUp` | Integer | Combat Trigger: Deals damage to up. | 2 |
+| `Shield` | Integer | Applies the 'Shield' effect. | 2 |
+| `CritChanceUp` | Integer | Applies the 'CritChanceUp' effect. | 1 |
+| `RandomStatUp` | Integer | Applies the 'RandomStatUp' effect. | 1 |
 
 </details>
 
@@ -587,11 +584,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 7 |
+| `damage` | Integer | The base damage properties of an attack. | 7 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 7 |
 | `cant_miss` | Boolean |  | 6 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 6 |
-| `knockback` | Number |  | 1 |
+| `knockback` | Integer |  | 1 |
 
 </details>
 
@@ -609,11 +606,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
-| `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
-| `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
+| `AddCritMultiplier` | Integer | Applies the 'AddCritMultiplier' effect. | 2 |
+| `CritChanceUp` | Integer | Applies the 'CritChanceUp' effect. | 2 |
+| `DodgeChance` | Integer | Applies the 'DodgeChance' effect. | 2 |
 | [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
-| `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
+| `KineticSpikes` | Integer | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
@@ -631,11 +628,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
-| `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
-| `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
+| `AddCritMultiplier` | Integer | Applies the 'AddCritMultiplier' effect. | 2 |
+| `CritChanceUp` | Integer | Applies the 'CritChanceUp' effect. | 2 |
+| `DodgeChance` | Integer | Applies the 'DodgeChance' effect. | 2 |
 | [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
-| `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
+| `KineticSpikes` | Integer | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
@@ -653,11 +650,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
-| `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
-| `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
+| `AddCritMultiplier` | Integer | Applies the 'AddCritMultiplier' effect. | 2 |
+| `CritChanceUp` | Integer | Applies the 'CritChanceUp' effect. | 2 |
+| `DodgeChance` | Integer | Applies the 'DodgeChance' effect. | 2 |
 | [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
-| `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
+| `KineticSpikes` | Integer | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
@@ -675,7 +672,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `triggers_limit` | Number |  | 2 |
+| `triggers_limit` | Integer |  | 2 |
 
 </details>
 
@@ -694,12 +691,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 7 |
-| `RefreshActPoints` | Number | Applies the 'RefreshActPoints' effect. | 3 |
+| `RefreshActPoints` | Integer | Applies the 'RefreshActPoints' effect. | 3 |
 | [`Conditional_FirstApplicationThisTurn`](#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 2 |
-| `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
+| `DamageUp` | Integer | Combat Trigger: Deals damage to up. | 2 |
 | `exclude_basicattack` | Boolean |  | 2 |
-| `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
-| `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 1 |
+| `HealthGain` | Integer | Applies the 'HealthGain' effect. | 1 |
+| `RandomStatUp` | Integer | Applies the 'RandomStatUp' effect. | 1 |
 
 </details>
 
@@ -721,7 +718,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 2 |
 | [`Conditional_Ally`](#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 2 |
 | [`Conditional_Enemy`](#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |
-| `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
+| `Bleed` | Integer | Applies the 'Bleed' effect. | 1 |
 
 </details>
 
@@ -754,7 +751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 6 |
+| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 6 |
 | [`disease`](./Enums.md#enum-disease) | Enum |  | 6 |
 | `can_apply_to_anything` | Boolean |  | 1 |
 
@@ -792,7 +789,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `reduction` | Number |  | 6 |
+| `reduction` | Integer |  | 6 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 6 |
 
 </details>
@@ -811,8 +808,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Enum |  | 6 |
-| `chance` | Enum | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 5 |
-| `number` | Number |  | 2 |
+| [`chance`](./Math_Equations.md) | Equation | The probability (0.0 to 1.0 or percentage) of this effect triggering. (Must be float values) | 5 |
+| `number` | Integer |  | 2 |
 | `good` | Boolean |  | 1 |
 
 </details>
@@ -918,9 +915,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies the 'ForceUseAbility_NonStack' effect. | 2 |
-| `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 2 |
-| `CurrentWeaponDamageUp` | Number | Applies the 'CurrentWeaponDamageUp' effect. | 1 |
-| `SpawnScaledRotFly` | Number | Applies the 'SpawnScaledRotFly' effect. | 1 |
+| `StrengthUp` | Integer | Applies the 'StrengthUp' effect. | 2 |
+| `CurrentWeaponDamageUp` | Integer | Applies the 'CurrentWeaponDamageUp' effect. | 1 |
+| `SpawnScaledRotFly` | Integer | Applies the 'SpawnScaledRotFly' effect. | 1 |
 
 </details>
 
@@ -937,7 +934,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 4 |
+| `damage` | Integer | The base damage properties of an attack. | 4 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
 
 </details>
@@ -993,7 +990,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`AddElement`](./Enums.md#enum-addelement) | Enum | Applies the 'AddElement' effect. | 8 |
-| `Burn` | Number | Applies the 'Burn' effect. | 4 |
+| `Burn` | Integer | Applies the 'Burn' effect. | 4 |
 
 </details>
 
@@ -1011,7 +1008,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 4 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 4 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 4 |
 
 </details>
 
@@ -1064,8 +1061,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `min_range` | Number |  | 4 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 4 |
+| `min_range` | Integer |  | 4 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 4 |
 
 </details>
 
@@ -1102,7 +1099,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 4 |
 | [`passives`](#context-passives) | Block |  | 4 |
-| `threshold` | Number |  | 4 |
+| `threshold` | Integer |  | 4 |
 
 </details>
 
@@ -1156,9 +1153,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
-| `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
-| `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 2 |
+| `DamageUp` | Integer | Combat Trigger: Deals damage to up. | 2 |
+| `HealthGain` | Integer | Applies the 'HealthGain' effect. | 1 |
 
 </details>
 
@@ -1193,10 +1190,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `spells` | Number |  | 4 |
-| `DoubleCastSpell` | Number | Applies the 'DoubleCastSpell' effect. | 2 |
-| `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
-| `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. | 1 |
+| `spells` | Integer |  | 4 |
+| `DoubleCastSpell` | Integer | Applies the 'DoubleCastSpell' effect. | 2 |
+| `Quivered` | Integer | Applies the 'Quivered' effect. | 2 |
+| `MoveQuivered` | Integer | Applies the 'MoveQuivered' effect. | 1 |
 
 </details>
 
@@ -1215,11 +1212,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `mana` | Number |  | 4 |
-| `FreeSpell` | Number | Applies the 'FreeSpell' effect. | 2 |
-| `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
-| `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. | 1 |
-| `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 1 |
+| `mana` | Integer |  | 4 |
+| `FreeSpell` | Integer | Applies the 'FreeSpell' effect. | 2 |
+| `Quivered` | Integer | Applies the 'Quivered' effect. | 2 |
+| `MoveQuivered` | Integer | Applies the 'MoveQuivered' effect. | 1 |
+| `SpellDamageUp` | Integer | Applies the 'SpellDamageUp' effect. | 1 |
 
 </details>
 
@@ -1237,14 +1234,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `mana` | Number |  | 4 |
+| `mana` | Integer |  | 4 |
 | [`Temporary`](#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 3 |
-| `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
-| `Shield` | Number | Applies the 'Shield' effect. | 2 |
-| `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 2 |
-| `DivineShield` | Number | Applies the 'DivineShield' effect. | 1 |
-| `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
-| `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
+| `IntelligenceUp` | Integer | Applies the 'IntelligenceUp' effect. | 2 |
+| `Shield` | Integer | Applies the 'Shield' effect. | 2 |
+| `SpellDamageUp` | Integer | Applies the 'SpellDamageUp' effect. | 2 |
+| `DivineShield` | Integer | Applies the 'DivineShield' effect. | 1 |
+| `HealthGain` | Integer | Applies the 'HealthGain' effect. | 1 |
+| `KineticSpikes` | Integer | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
@@ -1261,9 +1258,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 2 |
-| `int` | Number |  | 2 |
-| `spd` | Number |  | 2 |
+| `cha` | Integer |  | 2 |
+| `int` | Integer |  | 2 |
+| `spd` | Integer |  | 2 |
 
 </details>
 
@@ -1282,7 +1279,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum |  | 4 |
 | [`center_particle`](./Enums.md#enum-center_particle) | Enum |  | 4 |
-| `palette` | Number |  | 4 |
+| `palette` | Integer |  | 4 |
 | [`particle`](./Enums.md#enum-particle) | Enum |  | 4 |
 
 </details>
@@ -1316,8 +1313,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `CastAgain` | Number | Applies the 'CastAgain' effect. | 2 |
-| `Fury` | Number | Applies the 'Fury' effect. | 1 |
+| `CastAgain` | Integer | Applies the 'CastAgain' effect. | 2 |
+| `Fury` | Integer | Applies the 'Fury' effect. | 1 |
 
 </details>
 
@@ -1332,7 +1329,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `addstacks` | Number |  | 3 |
+| `addstacks` | Integer |  | 3 |
 | [`status`](./Enums.md#enum-status) | Enum | The ID of the status effect to check or apply. | 3 |
 
 </details>
@@ -1352,7 +1349,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 3 |
+| [`odds`](./Math_Equations.md) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 3 |
 
 </details>
 
@@ -1407,7 +1404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Arrays.md#array-element) | Enum | The specific element type required or applied. | 3 |
-| `reduction` | Number |  | 3 |
+| `reduction` | Integer |  | 3 |
 
 </details>
 
@@ -1443,7 +1440,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 3 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 3 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 3 |
 
 </details>
 
@@ -1497,7 +1494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 3 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 3 |
 
 </details>
 
@@ -1685,7 +1682,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
-| `range` | Number | Distance or area of effect in tiles. | 2 |
+| `range` | Integer | Distance or area of effect in tiles. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 2 |
 
 </details>
@@ -1703,8 +1700,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AddFilledMaxHealth` | Number | Applies the 'AddFilledMaxHealth' effect. | 2 |
-| `JoinSpawnerFaction` | Number | Applies the 'JoinSpawnerFaction' effect. | 2 |
+| `AddFilledMaxHealth` | Integer | Applies the 'AddFilledMaxHealth' effect. | 2 |
+| `JoinSpawnerFaction` | Integer | Applies the 'JoinSpawnerFaction' effect. | 2 |
 
 </details>
 
@@ -1722,9 +1719,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
-| `Doomed` | Number | Applies the 'Doomed' effect. | 2 |
-| `MovementUp` | Number | Applies the 'MovementUp' effect. | 2 |
+| `DamageUp` | Integer | Combat Trigger: Deals damage to up. | 2 |
+| `Doomed` | Integer | Applies the 'Doomed' effect. | 2 |
+| `MovementUp` | Integer | Applies the 'MovementUp' effect. | 2 |
 
 </details>
 
@@ -1758,9 +1755,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
-| `Piercing` | Number | Applies the 'Piercing' effect. | 1 |
-| `Weakness` | Number | Applies the 'Weakness' effect. | 1 |
+| `Bleed` | Integer | Applies the 'Bleed' effect. | 1 |
+| `Piercing` | Integer | Applies the 'Piercing' effect. | 1 |
+| `Weakness` | Integer | Applies the 'Weakness' effect. | 1 |
 
 </details>
 
@@ -1778,7 +1775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `CharmedForceAttack` | Number | Applies the 'CharmedForceAttack' effect. | 2 |
+| `CharmedForceAttack` | Integer | Applies the 'CharmedForceAttack' effect. | 2 |
 
 </details>
 
@@ -1796,7 +1793,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
+| `Charmed` | Integer | Applies the 'Charmed' effect. | 2 |
 
 </details>
 
@@ -1865,7 +1862,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 2 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -1917,7 +1914,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `count` | Number | The numerical quantity. | 1 |
+| `count` | Integer | The numerical quantity. | 1 |
 
 </details>
 
@@ -1967,8 +1964,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Enum |  | 2 |
-| `damage` | Number | The base damage properties of an attack. | 2 |
+| [`crit_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
+| `damage` | Integer | The base damage properties of an attack. | 2 |
 
 </details>
 
@@ -1985,8 +1982,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max_bounces` | Number |  | 2 |
-| `max_range` | Number |  | 2 |
+| `max_bounces` | Integer |  | 2 |
+| `max_range` | Integer |  | 2 |
 
 </details>
 
@@ -2022,8 +2019,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `ally_chance` | Number |  | 2 |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
+| `ally_chance` | Integer |  | 2 |
+| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
  | `Quivered` | Number | Applies the 'Quivered' effect. | 2 | 
  | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 | 
 
@@ -2043,7 +2040,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
+| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
 
 </details>
 
@@ -2061,7 +2058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 2 |
-| `reduction` | Number |  | 2 |
+| `reduction` | Integer |  | 2 |
 
 </details>
 
@@ -2259,7 +2256,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean |  | 2 |
 | [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 2 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2338,8 +2335,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `RandomDistanceDisplace` | Number | Displaces the target by a randomized distance. | 2 |
-| `SafeExplosionIfHitSomething` | Number | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
+| `RandomDistanceDisplace` | Integer | Displaces the target by a randomized distance. | 2 |
+| `SafeExplosionIfHitSomething` | Integer | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
 
 </details>
 
@@ -2357,10 +2354,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `health_percent` | Number |  | 2 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
-| `TakeExtraTurn` | Number | Applies the 'TakeExtraTurn' effect. | 1 |
+| `health_percent` | Integer |  | 2 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 2 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 1 |
+| `TakeExtraTurn` | Integer | Applies the 'TakeExtraTurn' effect. | 1 |
 
 </details>
 
@@ -2447,7 +2444,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `cant_miss` | Boolean |  | 2 |
-| `damage` | Number | The base damage properties of an attack. | 2 |
+| `damage` | Integer | The base damage properties of an attack. | 2 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
@@ -2468,8 +2465,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `exclude_self` | Boolean |  | 2 |
-| `mana` | Number |  | 2 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
+| `mana` | Integer |  | 2 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2505,8 +2502,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Burn` | Number | Applies the 'Burn' effect. | 2 |
-| `damage_multiplier` | Number |  | 2 |
+| `Burn` | Integer | Applies the 'Burn' effect. | 2 |
+| `damage_multiplier` | Integer |  | 2 |
 
 </details>
 
@@ -2542,9 +2539,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `TempSpeedUp` | Number | Applies the 'TempSpeedUp' effect. | 2 |
-| `health` | Number |  | 2 |
-| `playercat_health` | Number |  | 2 |
+| `TempSpeedUp` | Integer | Applies the 'TempSpeedUp' effect. | 2 |
+| `health` | Integer |  | 2 |
+| `playercat_health` | Integer |  | 2 |
 
 </details>
 
@@ -2562,8 +2559,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 2 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2581,7 +2578,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Tech` | Number | Applies the 'Tech' effect. | 2 |
+| `Tech` | Integer | Applies the 'Tech' effect. | 2 |
 
 </details>
 
@@ -2598,8 +2595,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
-| `theshold` | Number |  | 2 |
+| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
+| `theshold` | Integer |  | 2 |
 
 </details>
 
@@ -2635,8 +2632,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
-| `FullHeal` | Number | Applies the 'FullHeal' effect. | 2 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 2 |
+| `FullHeal` | Integer | Applies the 'FullHeal' effect. | 2 |
 
 </details>
 
@@ -2654,7 +2651,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2672,8 +2669,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `ManaCostReduction` | Number | Applies the 'ManaCostReduction' effect. | 2 |
-| `TakeExtraDamage` | Number | Applies the 'TakeExtraDamage' effect. | 2 |
+| `ManaCostReduction` | Integer | Applies the 'ManaCostReduction' effect. | 2 |
+| `TakeExtraDamage` | Integer | Applies the 'TakeExtraDamage' effect. | 2 |
 
 </details>
 
@@ -2693,7 +2690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`injury`](./Math_Equations.md) | Enum |  | 2 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 2 |
 | [`passives`](#context-passives) | Block |  | 2 |
-| `threshold` | Number |  | 2 |
+| `threshold` | Integer |  | 2 |
 
 </details>
 
@@ -2762,7 +2759,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `TogglableRoundEndExtraTurn` | Number | Applies the 'TogglableRoundEndExtraTurn' effect. | 2 |
+| `TogglableRoundEndExtraTurn` | Integer | Applies the 'TogglableRoundEndExtraTurn' effect. | 2 |
 
 </details>
 
@@ -2796,9 +2793,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddBonusRange` | Number | Applies the 'AddBonusRange' effect. | 2 |
-| `AddSpellDamage` | Number | Applies the 'AddSpellDamage' effect. | 2 |
-| `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
+| `AddBonusRange` | Integer | Applies the 'AddBonusRange' effect. | 2 |
+| `AddSpellDamage` | Integer | Applies the 'AddSpellDamage' effect. | 2 |
+| `KineticSpikes` | Integer | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
@@ -2816,7 +2813,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddBonusRange` | Number | Applies the 'AddBonusRange' effect. | 2 |
+| `AddBonusRange` | Integer | Applies the 'AddBonusRange' effect. | 2 |
 
 </details>
 
@@ -2851,7 +2848,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum |  | 2 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2869,8 +2866,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 2 |
-| `Cleanse` | Number | Applies the 'Cleanse' effect. | 1 |
+| `RandomMagicMissile` | Integer | Fires a randomized number of magic missiles. | 2 |
+| `Cleanse` | Integer | Applies the 'Cleanse' effect. | 1 |
 
 </details>
 
@@ -2923,7 +2920,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Math_Equations.md) | Enum |  | 2 |
+| [`crit_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
 
 </details>
 
@@ -2940,7 +2937,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 2 |
+| `damage` | Integer | The base damage properties of an attack. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
@@ -2961,8 +2958,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
-| `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 2 |
+| `HealthGain` | Integer | Applies the 'HealthGain' effect. | 2 |
 
 </details>
 
@@ -2979,9 +2976,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `threshold` | Number |  | 2 |
-| `speed` | Number |  | 1 |
-| `strength` | Number |  | 1 |
+| `threshold` | Integer |  | 2 |
+| `speed` | Float |  | 1 |
+| `strength` | Integer |  | 1 |
 
 </details>
 
@@ -3031,8 +3028,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
-| `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
+| `HealthGain` | Integer | Applies the 'HealthGain' effect. | 2 |
+| `LuckUp` | Integer | Applies the 'LuckUp' effect. | 2 |
 | `scaled` | Boolean |  | 1 |
 
 </details>
@@ -3051,8 +3048,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
-| `threshold` | Number |  | 2 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 2 |
+| `threshold` | Integer |  | 2 |
 
 </details>
 
@@ -3070,7 +3067,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AlphaCat` | Number | Applies the 'AlphaCat' effect. | 2 |
+| `AlphaCat` | Integer | Applies the 'AlphaCat' effect. | 2 |
 
 </details>
 
@@ -3088,7 +3085,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
+| `LuckUp` | Integer | Applies the 'LuckUp' effect. | 2 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies the 'Fear' effect. | 1 |
 
 </details>
@@ -3141,8 +3138,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
-| `Freeze` | Number | Applies the 'Freeze' effect. | 2 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 2 |
+| `Freeze` | Integer | Applies the 'Freeze' effect. | 2 |
 
 </details>
 
@@ -3160,8 +3157,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `DivineShield` | Number | Applies the 'DivineShield' effect. | 2 |
-| `turns` | Number | The duration of the effect in turns. | 2 |
+| `DivineShield` | Integer | Applies the 'DivineShield' effect. | 2 |
+| `turns` | Integer | The duration of the effect in turns. | 2 |
 
 </details>
 
@@ -3197,7 +3194,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
+| `LuckUp` | Integer | Applies the 'LuckUp' effect. | 2 |
 
 </details>
 
@@ -3214,7 +3211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `kills` | Number |  | 2 |
+| `kills` | Integer |  | 2 |
 | [`statuses`](#context-statuses) | Block |  | 2 |
 
 </details>
@@ -3266,9 +3263,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `TempDexterityUp` | Number | Applies the 'TempDexterityUp' effect. | 2 |
-| `TempStrengthUp` | Number | Applies the 'TempStrengthUp' effect. | 2 |
-| `TempLuckUp` | Number | Applies the 'TempLuckUp' effect. | 1 |
+| `TempDexterityUp` | Integer | Applies the 'TempDexterityUp' effect. | 2 |
+| `TempStrengthUp` | Integer | Applies the 'TempStrengthUp' effect. | 2 |
+| `TempLuckUp` | Integer | Applies the 'TempLuckUp' effect. | 1 |
 
 </details>
 
@@ -3286,12 +3283,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `RefreshMovePoints` | Number | Applies the 'RefreshMovePoints' effect. | 2 |
-| `Shield` | Number | Applies the 'Shield' effect. | 2 |
+| `RefreshMovePoints` | Integer | Applies the 'RefreshMovePoints' effect. | 2 |
+| `Shield` | Integer | Applies the 'Shield' effect. | 2 |
 | `count_overkill` | Boolean |  | 2 |
 | `ignore_during_movement` | Boolean |  | 2 |
-| `threshold` | Number |  | 2 |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
+| `threshold` | Integer |  | 2 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 1 |
 
 </details>
 
@@ -3343,8 +3340,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 2 |
-| `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 1 |
+| `SpeedUp` | Integer | Applies the 'SpeedUp' effect. | 2 |
+| `RandomStatUp` | Integer | Applies the 'RandomStatUp' effect. | 1 |
 
 </details>
 
@@ -3362,9 +3359,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
-| `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 2 |
-| `DivineShield` | Number | Applies the 'DivineShield' effect. | 1 |
+| `IntelligenceUp` | Integer | Applies the 'IntelligenceUp' effect. | 2 |
+| `SpellDamageUp` | Integer | Applies the 'SpellDamageUp' effect. | 2 |
+| `DivineShield` | Integer | Applies the 'DivineShield' effect. | 1 |
 
 </details>
 
@@ -3414,8 +3411,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
-| `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. | 1 |
+| `Quivered` | Integer | Applies the 'Quivered' effect. | 2 |
+| `MoveQuivered` | Integer | Applies the 'MoveQuivered' effect. | 1 |
 
 </details>
 
@@ -3433,8 +3430,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `DexterityUp` | Number | Applies the 'DexterityUp' effect. | 2 |
-| `Quivered` | Number | Applies the 'Quivered' effect. | 1 |
+| `DexterityUp` | Integer | Applies the 'DexterityUp' effect. | 2 |
+| `Quivered` | Integer | Applies the 'Quivered' effect. | 1 |
 
 </details>
 
@@ -3468,7 +3465,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 2 |
+| `SpeedUp` | Integer | Applies the 'SpeedUp' effect. | 2 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 2 |
 
 </details>
@@ -3487,10 +3484,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Shield` | Number | Applies the 'Shield' effect. | 2 |
-| `cap` | Number |  | 2 |
+| `Shield` | Integer | Applies the 'Shield' effect. | 2 |
+| `cap` | Integer |  | 2 |
 | [`injury`](./Math_Equations.md) | Enum |  | 2 |
-| `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 1 |
+| `StrengthUp` | Integer | Applies the 'StrengthUp' effect. | 1 |
 
 </details>
 
@@ -3507,7 +3504,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Drag` | Number | Applies the 'Drag' effect. | 2 |
+| `Drag` | Integer | Applies the 'Drag' effect. | 2 |
 
 </details>
 
@@ -3559,8 +3556,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 2 |
-| `range` | Number | Distance or area of effect in tiles. | 2 |
+| `damage` | Integer | The base damage properties of an attack. | 2 |
+| `range` | Integer | Distance or area of effect in tiles. | 2 |
 
 </details>
 
@@ -3611,7 +3608,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `SafeExplosionIfHitSomething` | Number | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
+| `SafeExplosionIfHitSomething` | Integer | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
 
 </details>
 
@@ -3629,7 +3626,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `HitExplosion` | Number | Applies the 'HitExplosion' effect. | 2 |
+| `HitExplosion` | Integer | Applies the 'HitExplosion' effect. | 2 |
 
 </details>
 
@@ -3646,13 +3643,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 2 |
-| `str` | Number |  | 2 |
-| `cha` | Number |  | 1 |
-| `dex` | Number |  | 1 |
-| `int` | Number |  | 1 |
-| `lck` | Number |  | 1 |
-| `spd` | Number |  | 1 |
+| `con` | Integer |  | 2 |
+| `str` | Integer |  | 2 |
+| `cha` | Integer |  | 1 |
+| `dex` | Integer |  | 1 |
+| `int` | Integer |  | 1 |
+| `lck` | Integer |  | 1 |
+| `spd` | Integer |  | 1 |
 
 </details>
 
@@ -3669,8 +3666,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `advantage_softcap` | Number |  | 1 |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
+| `advantage_softcap` | Integer |  | 1 |
+| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -3687,7 +3684,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
 | `ability_damage_only` | Boolean |  | 1 |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
+| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -3754,7 +3751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Burn` | Number | Applies the 'Burn' effect. | 1 |
+| `Burn` | Integer | Applies the 'Burn' effect. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
 </details>
@@ -3773,7 +3770,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Burn` | Number | Applies the 'Burn' effect. | 1 |
+| `Burn` | Integer | Applies the 'Burn' effect. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
 </details>
@@ -3791,7 +3788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `CastAgain` | Number | Applies the 'CastAgain' effect. | 1 |
+| `CastAgain` | Integer | Applies the 'CastAgain' effect. | 1 |
 
 </details>
 
@@ -3808,8 +3805,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `innate` | Number |  | 1 |
-| `learned` | Number |  | 1 |
+| `innate` | Integer |  | 1 |
+| `learned` | Integer |  | 1 |
 
 </details>
 
@@ -3825,8 +3822,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
-| `advantage_polarity` | Number |  | 1 |
-| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
+| `advantage_polarity` | Integer |  | 1 |
+| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -3841,7 +3838,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 1 |
 | [`statuses`](#context-statuses) | Block |  | 1 |
 
 </details>
@@ -3857,7 +3854,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `aoe` | Number | The area of effect or distance in tiles. | 1 |
+| `aoe` | Integer | The area of effect or distance in tiles. | 1 |
 | [`tile`](./Enums.md#enum-tile) | Enum | The specific tile type to change into (e.g., GlassTile). | 1 |
 
 </details>
@@ -3910,7 +3907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
+| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
 
 </details>
 
@@ -3945,7 +3942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
-| `damage` | Number | The base damage properties of an attack. | 1 |
+| `damage` | Integer | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -3962,7 +3959,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Number | The area of effect or distance in tiles. | 1 |
+| `distance` | Integer | The area of effect or distance in tiles. | 1 |
 
 </details>
 
@@ -3979,7 +3976,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Number | The area of effect or distance in tiles. | 1 |
+| `distance` | Integer | The area of effect or distance in tiles. | 1 |
 
 </details>
 
@@ -3997,8 +3994,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
-| `Confusion` | Number | Applies the 'Confusion' effect. | 1 |
+| `AllStatsUp` | Integer | Applies the 'AllStatsUp' effect. | 1 |
+| `Confusion` | Integer | Applies the 'Confusion' effect. | 1 |
 
 </details>
 
@@ -4013,8 +4010,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cycle_start` | Number |  | 1 |
-| `period` | Number |  | 1 |
+| `cycle_start` | Integer |  | 1 |
+| `period` | Integer |  | 1 |
 
 </details>
 
@@ -4029,7 +4026,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | Probability of finding the item. | 1 |
+| [`chance`](./Math_Equations.md) | Equation | Probability of finding the item. (Must be float values) | 1 |
 | [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw from. | 1 |
 
 </details>
@@ -4065,7 +4062,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 3 |
-| [`chance`](./Enums.md#enum-chance) | Enum | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 3 |
+| [`chance`](./Math_Equations.md) | Equation | The probability (0.0 to 1.0 or percentage) of this effect triggering. (Must be float values) | 3 |
 
 </details>
 
@@ -4082,9 +4079,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Appeal` | Number | Applies the 'Appeal' effect. | 1 |
-| `Comfort` | Number | Applies the 'Comfort' effect. | 1 |
-| `Stimulation` | Number | Applies the 'Stimulation' effect. | 1 |
+| `Appeal` | Integer | Applies the 'Appeal' effect. | 1 |
+| `Comfort` | Integer | Applies the 'Comfort' effect. | 1 |
+| `Stimulation` | Integer | Applies the 'Stimulation' effect. | 1 |
 
 </details>
 
@@ -4099,8 +4096,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cycle_start` | Number |  | 1 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
+| `cycle_start` | Integer |  | 1 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 1 |
 
 </details>
 
@@ -4209,7 +4206,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Charge` | Number | Applies the 'Charge' effect. | 1 |
+| `Charge` | Integer | Applies the 'Charge' effect. | 1 |
 
 </details>
 
@@ -4227,7 +4224,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Thorns` | Number | Applies the 'Thorns' effect. | 1 |
+| `Thorns` | Integer | Applies the 'Thorns' effect. | 1 |
 
 </details>
 
@@ -4244,7 +4241,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `SpawnScaledRotFly` | Number | Applies the 'SpawnScaledRotFly' effect. | 1 |
+| `SpawnScaledRotFly` | Integer | Applies the 'SpawnScaledRotFly' effect. | 1 |
 
 </details>
 
@@ -4261,7 +4258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 1 |
+| `damage` | Integer | The base damage properties of an attack. | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
 </details>
@@ -4279,8 +4276,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `amount` | Number | The numerical quantity. | 1 |
-| `cap` | Number |  | 1 |
+| `amount` | Float | The numerical quantity. | 1 |
+| `cap` | Integer |  | 1 |
 
 </details>
 
@@ -4334,7 +4331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
+| `ManaGain` | Integer | Applies the 'ManaGain' effect. | 1 |
 
 </details>
 
@@ -4352,7 +4349,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `LuckUp` | Number | Applies the 'LuckUp' effect. | 1 |
+| `LuckUp` | Integer | Applies the 'LuckUp' effect. | 1 |
 
 </details>
 
@@ -4370,7 +4367,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `PermanentMadness` | Number | Applies the 'PermanentMadness' effect. | 1 |
+| `PermanentMadness` | Integer | Applies the 'PermanentMadness' effect. | 1 |
 
 </details>
 
@@ -4404,7 +4401,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Thorns` | Number | Applies the 'Thorns' effect. | 1 |
+| `Thorns` | Integer | Applies the 'Thorns' effect. | 1 |
 
 </details>
 
@@ -4422,7 +4419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `PermanentConstitution` | Number | Applies the 'PermanentConstitution' effect. | 1 |
+| `PermanentConstitution` | Integer | Applies the 'PermanentConstitution' effect. | 1 |
 
 </details>
 
@@ -4440,7 +4437,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
+| `ManaGain` | Integer | Applies the 'ManaGain' effect. | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
 </details>
@@ -4457,7 +4454,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `count_self` | Boolean |  | 1 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 1 |
 
 </details>
 
@@ -4472,8 +4469,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `marked` | Number |  | 1 |
-| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
+| `marked` | Integer |  | 1 |
+| `stacks` | Integer | The number of stacks, duration, or intensity to apply. | 1 |
 
 </details>
 
@@ -4507,7 +4504,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Madness` | Number | Applies the Madness debuff/status effect. | 1 |
+| `Madness` | Integer | Applies the Madness debuff/status effect. | 1 |
 
 </details>
 
@@ -4522,8 +4519,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ally_multiplier` | Number |  | 1 |
-| `multiplier` | Number | Multiplicative modifier to a base value. | 1 |
+| `ally_multiplier` | Integer |  | 1 |
+| `multiplier` | Integer | Multiplicative modifier to a base value. | 1 |
 
 </details>
 
@@ -4558,7 +4555,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 1 |
+| `damage` | Integer | The base damage properties of an attack. | 1 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
@@ -4578,7 +4575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 1 |
+| `damage` | Integer | The base damage properties of an attack. | 1 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
@@ -4598,7 +4595,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 1 |
+| `damage` | Integer | The base damage properties of an attack. | 1 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
@@ -4618,7 +4615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | The base damage properties of an attack. | 1 |
+| `damage` | Integer | The base damage properties of an attack. | 1 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
@@ -4645,9 +4642,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stats`](#context-stats) | Block |  | 36 |
 | [`desc_multiclass`](./Strings.md#string-desc_multiclass) | String |  | 5 |
 | [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum |  | 4 |
-| `shield` | Number |  | 4 |
+| `shield` | Integer |  | 4 |
 | [`bonus_items`](./Arrays.md#array-bonus_items) | Array | Flat addition to a base value. | 3 |
-| `divine_shield` | Number |  | 3 |
+| `divine_shield` | Integer |  | 3 |
 | [`keyword_tooltips`](#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 3 |
 | [`empty_armor_scaled_stats`](#context-empty_armor_scaled_stats) | Block |  | 2 |
 | [`icon`](./Enums.md#enum-icon) | String |  | 1 |
@@ -4670,9 +4667,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stats`](#context-stats) | Block |  | 26 |
 | [`bonus_items`](./Arrays.md#array-bonus_items) | Array | Flat addition to a base value. | 4 |
 | [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum |  | 4 |
-| `divine_shield` | Number |  | 3 |
+| `divine_shield` | Integer |  | 3 |
 | [`keyword_tooltips`](#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 3 |
-| `shield` | Number |  | 3 |
+| `shield` | Integer |  | 3 |
 | [`empty_armor_scaled_stats`](#context-empty_armor_scaled_stats) | Block |  | 2 |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 1 |
 | [`schadenfreude_scaled_stats`](#context-schadenfreude_scaled_stats) | Block |  | 1 |

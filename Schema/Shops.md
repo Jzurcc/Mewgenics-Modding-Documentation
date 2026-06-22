@@ -43,9 +43,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum |  | 37 |
-| `cost` | Number |  | 21 |
+| `cost` | Integer |  | 21 |
 | `mandatory` | Boolean |  | 14 |
-| `weight` | Number |  | 2 |
+| `weight` | Float |  | 2 |
 
 </details>
 
@@ -65,12 +65,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 25 |
 | `treasure_room` | Boolean |  | 14 |
 | `delay_enable_tooltips` | Boolean |  | 7 |
-| `keeper` | Number |  | 7 |
+| `keeper` | Integer |  | 7 |
 | [`npc_script`](./Enums.md#enum-npc_script) | Enum |  | 7 |
 | [`shopkeeper_fights`](./Arrays.md#array-shopkeeper_fights) | Array |  | 7 |
 | `house_shop` | Boolean |  | 4 |
 | [`welcome_message`](./Enums.md#enum-welcome_message) | Enum |  | 2 |
-| `pick_n` | Number |  | 1 |
+| `pick_n` | Integer |  | 1 |
 
 </details>
 
@@ -87,15 +87,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `treasure` | Number |  | 14 |
-| `pool` | Number |  | 6 |
-| `levelup` | Number |  | 3 |
-| `mandatory` | Number |  | 3 |
-| `consumable` | Number |  | 2 |
-| `guaranteed_food` | Number |  | 2 |
-| `mostly_food` | Number |  | 2 |
-| `empty` | Number |  | 1 |
-| `item` | Number |  | 1 |
+| `treasure` | Integer |  | 14 |
+| `pool` | Integer |  | 6 |
+| `levelup` | Integer |  | 3 |
+| `mandatory` | Integer |  | 3 |
+| `consumable` | Integer |  | 2 |
+| `guaranteed_food` | Integer |  | 2 |
+| `mostly_food` | Integer |  | 2 |
+| `empty` | Integer |  | 1 |
+| `item` | Integer |  | 1 |
 
 </details>
 
@@ -155,14 +155,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `common` | Number |  | 9 |
-| `consumable_common` | Number |  | 9 |
-| `consumable_rare` | Number |  | 9 |
-| `consumable_uncommon` | Number |  | 9 |
-| `consumable_very_rare` | Number |  | 9 |
-| `rare` | Number |  | 9 |
-| `uncommon` | Number |  | 9 |
-| `very_rare` | Number |  | 9 |
+| `common` | Integer |  | 9 |
+| `consumable_common` | Integer |  | 9 |
+| `consumable_rare` | Integer |  | 9 |
+| `consumable_uncommon` | Integer |  | 9 |
+| `consumable_very_rare` | Integer |  | 9 |
+| `rare` | Integer |  | 9 |
+| `uncommon` | Integer |  | 9 |
+| `very_rare` | Float |  | 9 |
 
 </details>
 
@@ -232,9 +232,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `allow_duplicates` | Boolean |  | 4 |
-| `amount` | Number |  | 4 |
-| `cost` | Number |  | 4 |
-| `weight` | Number |  | 2 |
+| `amount` | Float |  | 4 |
+| `cost` | Integer |  | 4 |
+| `weight` | Float |  | 2 |
 
 </details>
 
@@ -251,7 +251,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cost` | Number |  | 3 |
+| `cost` | Integer |  | 3 |
 
 </details>
 
@@ -285,11 +285,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `common_item` | Number |  | 2 |
-| `consumable` | Number |  | 2 |
-| `guaranteed_food` | Number |  | 2 |
-| `mostly_food` | Number |  | 2 |
-| `item` | Number |  | 1 |
+| `common_item` | Integer |  | 2 |
+| `consumable` | Integer |  | 2 |
+| `guaranteed_food` | Integer |  | 2 |
+| `mostly_food` | Integer |  | 2 |
+| `item` | Integer |  | 1 |
 
 </details>
 
@@ -306,10 +306,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `common_item` | Number |  | 2 |
-| `consumable` | Number |  | 2 |
-| `guaranteed_food` | Number |  | 2 |
-| `item` | Number |  | 1 |
+| `common_item` | Integer |  | 2 |
+| `consumable` | Integer |  | 2 |
+| `guaranteed_food` | Integer |  | 2 |
+| `item` | Integer |  | 1 |
 
 </details>
 
@@ -326,10 +326,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `common_item` | Number |  | 2 |
-| `consumable` | Number |  | 2 |
-| `guaranteed_food` | Number |  | 2 |
-| `item` | Number |  | 2 |
+| `common_item` | Integer |  | 2 |
+| `consumable` | Integer |  | 2 |
+| `guaranteed_food` | Integer |  | 2 |
+| `item` | Integer |  | 2 |
 
 </details>
 

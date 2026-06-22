@@ -17,15 +17,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `bonus_itemroll_luck` | Number |  | 8 |
-| `boss_health_multiplier` | Number |  | 8 |
-| `coins_multiplier` | Number |  | 8 |
+| `bonus_itemroll_luck` | Integer |  | 8 |
+| `boss_health_multiplier` | Integer |  | 8 |
+| `coins_multiplier` | Integer |  | 8 |
 | [`easy`](#context-easy) | Block |  | 8 |
-| `event_difficulty` | Number |  | 8 |
-| `food_multiplier` | Number |  | 8 |
+| `event_difficulty` | Integer |  | 8 |
+| `food_multiplier` | Integer |  | 8 |
 | [`hard`](#context-hard) | Block |  | 8 |
-| `wallet_size` | Number |  | 8 |
-| `boss_elite_buffs` | Number |  | 7 |
+| `wallet_size` | Integer |  | 8 |
+| `boss_elite_buffs` | Integer |  | 7 |
 
 </details>
 
@@ -42,12 +42,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `champ_budget` | Number |  | 8 |
-| `elite_budget` | Number |  | 8 |
-| `elite_buffs` | Number |  | 8 |
-| `rare_elite_buffs` | Number |  | 8 |
-| [`champ_chance_mini`](./Enums.md#enum-champ_chance_mini) | Enum |  | 7 |
-| [`elite_chance_mini`](./Enums.md#enum-elite_chance_mini) | Enum |  | 6 |
+| `champ_budget` | Integer |  | 8 |
+| `elite_budget` | Integer |  | 8 |
+| `elite_buffs` | Integer |  | 8 |
+| `rare_elite_buffs` | Integer |  | 8 |
+| `champ_chance_mini` | Float |  | 7 |
+| `elite_chance_mini` | Float |  | 6 |
 
 </details>
 
@@ -64,12 +64,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `champ_budget` | Number |  | 8 |
-| [`champ_chance_mini`](./Enums.md#enum-champ_chance_mini) | Enum |  | 8 |
-| `elite_buffs` | Number |  | 8 |
-| `rare_elite_buffs` | Number |  | 8 |
-| `elite_budget` | Number |  | 7 |
-| [`elite_chance_mini`](./Enums.md#enum-elite_chance_mini) | Enum |  | 7 |
+| `champ_budget` | Integer |  | 8 |
+| `champ_chance_mini` | Float |  | 8 |
+| `elite_buffs` | Integer |  | 8 |
+| `rare_elite_buffs` | Integer |  | 8 |
+| `elite_budget` | Integer |  | 7 |
+| `elite_chance_mini` | Float |  | 7 |
 
 </details>
 

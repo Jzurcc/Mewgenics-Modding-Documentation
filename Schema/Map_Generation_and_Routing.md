@@ -65,7 +65,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ThrobbingArteryDone`](#context-throbbingarterydone) | Block | Applies or references the 'ThrobbingArteryDone' effect/state. | 1 |
 | [`WallOfFleshDone`](#context-walloffleshdone) | Block | Applies or references the 'WallOfFleshDone' effect/state. | 1 |
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum |  | 1 |
-| `advance` | Number |  | 1 |
+| `advance` | Integer |  | 1 |
 | `alley` | Block |  | 1 |
 | [`battle`](#context-battle) | Block |  | 1 |
 | `boneyard` | Block |  | 1 |
@@ -93,7 +93,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`flushmaster`](./Enums.md#enum-flushmaster) | Enum |  | 1 |
 | [`future`](#context-future) | Block |  | 1 |
 | [`gambit`](./Enums.md#enum-gambit) | Enum |  | 1 |
-| `head_start` | Number |  | 1 |
+| `head_start` | Integer |  | 1 |
 | [`home`](#context-home) | Block |  | 1 |
 | [`huntercat`](./Enums.md#enum-huntercat) | Enum |  | 1 |
 | [`iceage`](#context-iceage) | Block |  | 1 |

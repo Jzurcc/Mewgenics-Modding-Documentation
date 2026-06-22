@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
-| `id` | Number |  | 13 |
+| `id` | Integer |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |
 | [`stats`](#context-stats) | Block |  | 12 |
 | [`scars`](#context-scars) | Block |  | 10 |
@@ -39,13 +39,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 3 |
-| `lck` | Number |  | 3 |
-| `cha` | Number |  | 2 |
-| `dex` | Number |  | 2 |
-| `int` | Number |  | 2 |
-| `str` | Number |  | 2 |
-| `spd` | Number |  | 1 |
+| `con` | Integer |  | 3 |
+| `lck` | Integer |  | 3 |
+| `cha` | Integer |  | 2 |
+| `dex` | Integer |  | 2 |
+| `int` | Integer |  | 2 |
+| `str` | Integer |  | 2 |
+| `spd` | Integer |  | 1 |
 
 </details>
 

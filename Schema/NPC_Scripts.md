@@ -66,7 +66,7 @@ They execute top-to-bottom when the engine triggers the named sequence.
 | `lock_mouse` | Number (1) | Disable mouse cursor input specifically. |  |
 | `play_cutscene` | Cutscene ID | Trigger a full cutscene by ID. | `credits_1` |
 | `restart_npc_music` | (none) | Restart the background music track for this NPC's scene. | `1` |
-| `screenshake` | Number | Trigger a screenshake effect of the given intensity. | `[1, 30]`, `[.5, 10]` |
+| `screenshake` | Integer | Trigger a screenshake effect of the given intensity. | `[1, 30]`, `[.5, 10]` |
 | `set_npc_voice` | Voice ID | Switch the NPC's voice/audio profile. | `beanies` |
 | `set_organ_name` | String | Set the name of the Organ Grinder (used during naming sequence). | `"Tyler"`, `"Tyler"` |
 | `set_state` | State Name | Change the NPC's animation/camera state (e.g. `idle`, `closeup`, `zoomedout`). | `verycloseup`, `closeup`, `zoomedout` |
@@ -79,7 +79,7 @@ They execute top-to-bottom when the engine triggers the named sequence.
 | `unlock_controls` | Number (1) | Re-enable player input after a `lock_controls`. | `1`, `1`, `1` |
 | `unlock_mouse` | Number (1) | Re-enable mouse cursor input. |  |
 | `wait_for` | Enum | Pause execution until a specific engine event fires. | `choose_cat1`, `choose_cat2`, `reject_cat` |
-| `wait_for_cancel` | Number | Pause execution for N seconds, or until the player cancels if the sequence is cancelable. | `1`, `1`, `1` |
+| `wait_for_cancel` | Integer | Pause execution for N seconds, or until the player cancels if the sequence is cancelable. | `1`, `1`, `1` |
 
 ---
 

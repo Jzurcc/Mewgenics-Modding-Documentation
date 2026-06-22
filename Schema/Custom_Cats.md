@@ -17,29 +17,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `texture` | Number |  | 211 |
-| `default_frame` | Number |  | 210 |
-| `palette` | Number |  | 210 |
-| `righteye` | Number |  | 200 |
+| `texture` | Integer |  | 211 |
+| `default_frame` | Integer |  | 210 |
+| `palette` | Integer |  | 210 |
+| `righteye` | Integer |  | 200 |
 | [`voice`](./Enums.md#enum-voice) | Enum |  | 200 |
-| `lefteye` | Number |  | 198 |
-| `claws` | Number |  | 196 |
-| `mouth` | Number |  | 192 |
-| `rightear` | Number |  | 188 |
-| `leftear` | Number |  | 187 |
-| `head` | Number |  | 184 |
-| `tail` | Number |  | 180 |
-| `arm2` | Number |  | 179 |
-| `arm1` | Number |  | 177 |
-| `righteyebrow` | Number |  | 176 |
-| `lefteyebrow` | Number |  | 175 |
-| `leg1` | Number |  | 174 |
-| `body` | Number |  | 173 |
-| `leg2` | Number |  | 172 |
-| [`pitch`](./Enums.md#enum-pitch) | Enum |  | 116 |
+| `lefteye` | Integer |  | 198 |
+| `claws` | Integer |  | 196 |
+| `mouth` | Integer |  | 192 |
+| `rightear` | Integer |  | 188 |
+| `leftear` | Integer |  | 187 |
+| `head` | Integer |  | 184 |
+| `tail` | Integer |  | 180 |
+| `arm2` | Integer |  | 179 |
+| `arm1` | Integer |  | 177 |
+| `righteyebrow` | Integer |  | 176 |
+| `lefteyebrow` | Integer |  | 175 |
+| `leg1` | Integer |  | 174 |
+| `body` | Integer |  | 173 |
+| `leg2` | Integer |  | 172 |
+| `pitch` | Float |  | 116 |
 | [`class_anis`](./Enums.md#enum-class_anis) | Enum |  | 40 |
 | [`default_face`](./Enums.md#enum-default_face) | Enum |  | 15 |
-| `face` | Number |  | 2 |
+| `face` | Integer |  | 2 |
 
 </details>
 
@@ -54,8 +54,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `frame` | Number |  | 2 |
-| `texture` | Number |  | 2 |
+| `frame` | Integer |  | 2 |
+| `texture` | Integer |  | 2 |
 
 </details>
 
@@ -70,8 +70,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `frame` | Number |  | 2 |
-| `texture` | Number |  | 2 |
+| `frame` | Integer |  | 2 |
+| `texture` | Integer |  | 2 |
 
 </details>
 

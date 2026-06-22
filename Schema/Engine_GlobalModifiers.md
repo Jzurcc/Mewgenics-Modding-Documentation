@@ -13,10 +13,10 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| `BloodRain` | Number | Applies or references the 'BloodRain' effect/state. |
+| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. |
 | [`LowerAmbientLight`](#lowerambientlight) | Block | A visual effect that dims the map's lighting. |
-| `NextPlayerCatTakesExtraTurn` | Number | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. |
-| `NoCorpses` | Number | Applies or references the 'NoCorpses' effect/state. |
+| `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. |
+| `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. |
 | `{Global Modifiers}` | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |
 
 </details>

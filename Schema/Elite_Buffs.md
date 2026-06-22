@@ -17,16 +17,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `icon_frame` | Number |  | 54 |
+| `icon_frame` | Integer |  | 54 |
 | [`passives`](#context-passives) | Block |  | 54 |
-| `value` | Number |  | 54 |
+| `value` | Float |  | 54 |
 | `unique` | Boolean |  | 36 |
-| `specific_chapter` | Number |  | 8 |
+| `specific_chapter` | Integer |  | 8 |
 | [`minion_alt`](./Enums.md#enum-minion_alt) | Enum |  | 5 |
 | `rollable` | Boolean |  | 5 |
 | `only_at_battle_start` | Boolean |  | 2 |
 | `requires_corpse` | Boolean |  | 2 |
-| `roll_limit` | Number |  | 2 |
+| `roll_limit` | Integer |  | 2 |
 
 </details>
 
@@ -68,7 +68,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `NonStackingShield` | Number |  | 8 |
+| `NonStackingShield` | Integer |  | 8 |
 
 </details>
 
@@ -89,9 +89,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 </details>
 
 ---
@@ -108,8 +105,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `aura_effects_allies` | Boolean |  | 4 |
-| `range` | Number |  | 4 |
-| `stacks` | Number |  | 4 |
+| `range` | Integer |  | 4 |
+| `stacks` | Integer |  | 4 |
 
 </details>
 
@@ -127,7 +124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `knockback` | Number |  | 2 |
+| `knockback` | Integer |  | 2 |
 | [`effects`](#context-effects) | Block |  | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
@@ -146,8 +143,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `health` | Number |  | 2 |
-| `stacks` | Number |  | 2 |
+| `health` | Integer |  | 2 |
+| `stacks` | Integer |  | 2 |
 | [`statuses`](#context-statuses) | Block |  | 2 |
 
 </details>
@@ -165,7 +162,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number |  | 2 |
+| `damage` | Integer |  | 2 |
 | [`effects`](#context-effects) | Block |  | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 2 |
@@ -269,7 +266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `self_damage` | Number |  | 1 |
+| `self_damage` | Integer |  | 1 |
 
 </details>
 
@@ -319,8 +316,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AllStatsUp` | Number |  | 1 |
-| `HealthGain` | Number |  | 1 |
+| `AllStatsUp` | Integer |  | 1 |
+| `HealthGain` | Integer |  | 1 |
 
 </details>
 

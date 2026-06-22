@@ -22,16 +22,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`effects`](#context-effects) | Block |  | 58 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array |  | 12 |
-| `height` | Number |  | 8 |
+| `height` | Integer |  | 8 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 8 |
-| `width` | Number |  | 8 |
+| `width` | Integer |  | 8 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 7 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 7 |
-| [`amount`](./Enums.md#enum-amount) | Enum |  | 4 |
+| `amount` | Float |  | 4 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 4 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 3 |
 | [`n`](./Arrays.md#array-n) | Array |  | 2 |
-| `volume_adjustment` | Number |  | 2 |
+| `volume_adjustment` | Integer |  | 2 |
 | [`BasementUpgrade`](#context-basementupgrade) | Block |  | 1 |
 | [`BasementUpgrade2`](#context-basementupgrade2) | Block |  | 1 |
 | [`BasementUpgrade3`](#context-basementupgrade3) | Block |  | 1 |
@@ -75,11 +75,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `LowerAmbientLight` | Number |  | 4 |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
-| [`{Global Modifiers}`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 | [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block |  | 2 |
 | [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn) | Block |  | 2 |
 
@@ -118,9 +116,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`amount`](./Enums.md#enum-amount) | Enum |  | 9 |
+| `amount` | Float |  | 9 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 9 |
-| `volume_adjustment` | Number |  | 9 |
+| `volume_adjustment` | Integer |  | 9 |
 
 </details>
 
@@ -137,7 +135,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`amount`](./Enums.md#enum-amount) | Enum |  | 9 |
+| `amount` | Float |  | 9 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 9 |
 
 </details>
@@ -177,8 +175,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
-| `max_radius` | Number |  | 2 |
-| [`min_radius`](./Enums.md#enum-min_radius) | Number |  | 2 |
+| `max_radius` | Integer |  | 2 |
+| [`min_radius`](./Enums.md#enum-min_radius) | Float |  | 2 |
 | [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array |  | 2 |
 | [`number`](./Arrays.md#array-number) | Array |  | 1 |
 
@@ -200,8 +198,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
-| `FloatingRockTrap` | Number |  | 1 |
-| `Thorns` | Number |  | 1 |
+| `FloatingRockTrap` | Integer |  | 1 |
+| `Thorns` | Integer |  | 1 |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum |  | 1 |
 
 </details>
@@ -326,7 +324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`odds`](./Enums.md#enum-odds) | Enum |  | 2 |
+| [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
 | [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
 
 </details>
@@ -667,7 +665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `count` | Number |  | 1 |
+| `count` | Integer |  | 1 |
 
 </details>
 
@@ -684,12 +682,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `height` | Number |  | 1 |
+| `height` | Integer |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 1 |
-| `width` | Number |  | 1 |
+| `width` | Integer |  | 1 |
 
 </details>
 
@@ -706,12 +704,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `height` | Number |  | 1 |
+| `height` | Integer |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 1 |
-| `width` | Number |  | 1 |
+| `width` | Integer |  | 1 |
 
 </details>
 
@@ -733,7 +731,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
 | [`room_positions`](#context-room_positions) | Block |  | 1 |
-| [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum |  | 1 |
+| `zoomout_catvolume` | Float |  | 1 |
 
 </details>
 
@@ -755,7 +753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
 | [`room_positions`](#context-room_positions) | Block |  | 1 |
-| [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum |  | 1 |
+| `zoomout_catvolume` | Float |  | 1 |
 
 </details>
 
@@ -777,7 +775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
 | [`room_positions`](#context-room_positions) | Block |  | 1 |
-| [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum |  | 1 |
+| `zoomout_catvolume` | Float |  | 1 |
 
 </details>
 
@@ -887,7 +885,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum |  | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array |  | 1 |
-| `prewarm` | Number |  | 1 |
+| `prewarm` | Integer |  | 1 |
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum |  | 1 |
 
 </details>
@@ -906,12 +904,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array |  | 1 |
-| `height` | Number |  | 1 |
+| `height` | Integer |  | 1 |
 | [`id`](./Enums.md#enum-id) | Enum |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
 | [`n`](./Arrays.md#array-n) | Array |  | 1 |
-| `width` | Number |  | 1 |
+| `width` | Integer |  | 1 |
 
 </details>
 
@@ -949,7 +947,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum |  | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array |  | 1 |
-| `prewarm` | Number |  | 1 |
+| `prewarm` | Integer |  | 1 |
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum |  | 1 |
 
 </details>
@@ -967,7 +965,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number |  | 1 |
+| `damage` | Integer |  | 1 |
 | [`effects`](#context-effects) | Block |  | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
@@ -986,8 +984,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max_radius` | Number |  | 1 |
-| `min_radius` | Number |  | 1 |
+| `max_radius` | Integer |  | 1 |
+| `min_radius` | Float |  | 1 |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 1 |
 
 </details>
@@ -1025,7 +1023,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
 | `lightning_fx` | Boolean |  | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array |  | 1 |
-| `prewarm` | Number |  | 1 |
+| `prewarm` | Integer |  | 1 |
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum |  | 1 |
 
 </details>
@@ -1046,7 +1044,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum |  | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array |  | 1 |
-| `prewarm` | Number |  | 1 |
+| `prewarm` | Integer |  | 1 |
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum |  | 1 |
 
 </details>

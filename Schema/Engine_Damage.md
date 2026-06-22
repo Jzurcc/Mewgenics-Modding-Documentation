@@ -13,18 +13,18 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`accuracy`](./Enums.md#enum-accuracy) | Enum | Hit chance modifier. |
-| `ai_base_score` | Number | How highly the AI values using this ability. |
+| `accuracy` | Float | Hit chance modifier. |
+| `ai_base_score` | Integer | How highly the AI values using this ability. |
 | [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. |
-| `blocked_multiplier` | Number | Multiplier applied when hitting a blocking target. |
+| `blocked_multiplier` | Integer | Multiplier applied when hitting a blocking target. |
 | `can_collect_pickups` | Boolean | The damage instance can grab items on the ground. |
 | `can_instapop` | Boolean | Allows the attack to instantly destroy specific weak entities. |
 | `can_revive` | Boolean | Healing instance that can bring dead allies back to life. |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. |
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. |
-| `crit_chance` | Number | Override for base critical hit probability. |
+| `crit_chance` | Integer | Override for base critical hit probability. |
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). |
-| `damage` | Number | The base damage properties of an attack. |
+| `damage` | Integer | The base damage properties of an attack. |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. |
 | `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
@@ -35,11 +35,11 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). |
 | `force_no_knockback` | Boolean | Prevents the target from being pushed. |
 | `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. |
-| `heal` | Number | Restores health instead of dealing damage. |
+| `heal` | Integer | Restores health instead of dealing damage. |
 | `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. |
 | [`hit_animation_alt`](./Enums.md#enum-hit_animation_alt) | Enum | Custom flinch animation for the target. |
 | `incidentally_collects_pickups` | Boolean | Automatically grabs items in the AoE. |
-| `knockback` | Number | The base physics pushing power (in tiles). |
+| `knockback` | Integer | The base physics pushing power (in tiles). |
 | [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. |
 | `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. |
@@ -69,7 +69,7 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `damage` | Number | The base damage properties of an attack. |
+| `damage` | Integer | The base damage properties of an attack. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
 
 </details>
@@ -84,18 +84,18 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| [`accuracy`](./Enums.md#enum-accuracy) | Enum | Hit chance modifier. |
-| `ai_base_score` | Number | How highly the AI values using this ability. |
+| `accuracy` | Float | Hit chance modifier. |
+| `ai_base_score` | Integer | How highly the AI values using this ability. |
 | [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. |
-| `blocked_multiplier` | Number | Multiplier applied when hitting a blocking target. |
+| `blocked_multiplier` | Integer | Multiplier applied when hitting a blocking target. |
 | `can_collect_pickups` | Boolean | The damage instance can grab items on the ground. |
 | `can_instapop` | Boolean | Allows the attack to instantly destroy specific weak entities. |
 | `can_revive` | Boolean | Healing instance that can bring dead allies back to life. |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. |
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. |
-| `crit_chance` | Number | Override for base critical hit probability. |
+| `crit_chance` | Integer | Override for base critical hit probability. |
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). |
-| `damage` | Number | The base damage properties of an attack. |
+| `damage` | Integer | The base damage properties of an attack. |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. |
 | `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
@@ -106,11 +106,11 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 | `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). |
 | `force_no_knockback` | Boolean | Prevents the target from being pushed. |
 | `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. |
-| `heal` | Number | Restores health instead of dealing damage. |
+| `heal` | Integer | Restores health instead of dealing damage. |
 | `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. |
 | [`hit_animation_alt`](./Enums.md#enum-hit_animation_alt) | Enum | Custom flinch animation for the target. |
 | `incidentally_collects_pickups` | Boolean | Automatically grabs items in the AoE. |
-| `knockback` | Number | The base physics pushing power (in tiles). |
+| `knockback` | Integer | The base physics pushing power (in tiles). |
 | [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. |
 | `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. |
@@ -135,13 +135,13 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `ai_base_score` | Number |  |
+| `ai_base_score` | Integer |  |
 | `cant_miss` | Boolean |  |
 | [`damage`](./Math_Equations.md) | Equation | The base damage properties of an attack. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
 | [`elements`](./Arrays.md#array-elements) | Array |  |
-| `heal` | Number |  |
-| `knockback` | Number |  |
+| `heal` | Integer |  |
+| `knockback` | Integer |  |
 | `non_lethal` | Boolean |  |
 | `piercing` | Boolean |  |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. |
@@ -158,14 +158,14 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `ai_base_score` | Number |  |
-| `crit_chance` | Number |  |
-| `damage` | Number | The base damage properties of an attack. |
+| `ai_base_score` | Integer |  |
+| `crit_chance` | Integer |  |
+| `damage` | Integer | The base damage properties of an attack. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
 | [`elements`](./Arrays.md#array-elements) | Array |  |
 | `force_no_knockback` | Boolean |  |
 | `force_play_hit_animation` | Boolean |  |
-| `knockback` | Number | Knockback force of the splash blast. |
+| `knockback` | Integer | Knockback force of the splash blast. |
 | [`layer`](./Enums.md#enum-layer) | Enum |  |
 | `makes_contact` | Boolean |  |
 | `override_trample_damage` | Boolean |  |

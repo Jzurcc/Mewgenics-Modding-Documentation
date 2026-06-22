@@ -23,8 +23,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum |  | 55 |
 | [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum |  | 48 |
 | [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum |  | 36 |
-| `required_difficulty` | Number |  | 36 |
-| `repeat` | Number |  | 32 |
+| `required_difficulty` | Integer |  | 36 |
+| `repeat` | Integer |  | 32 |
 | [`beat_chapter_boss`](./Enums.md#enum-beat_chapter_boss) | Enum |  | 31 |
 | [`unlock_ability`](./Enums.md#enum-unlock_ability) | Enum |  | 31 |
 | [`unlock_passive`](./Enums.md#enum-unlock_passive) | Enum |  | 29 |
@@ -43,7 +43,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 6 |
 | [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum |  | 6 |
 | [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum |  | 4 |
-| `fully_complete_difficulty` | Number |  | 4 |
+| `fully_complete_difficulty` | Integer |  | 4 |
 | [`post_combat_cutscene`](./Enums.md#enum-post_combat_cutscene) | Enum |  | 4 |
 | [`trigger_npc_sequence_tomorrow`](./Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum |  | 4 |
 | [`unlock_npc_tomorrow`](./Enums.md#enum-unlock_npc_tomorrow) | Enum |  | 4 |
@@ -168,7 +168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cost` | Number |  | 22 |
+| `cost` | Integer |  | 22 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 22 |
 
 </details>
@@ -186,7 +186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
@@ -205,7 +205,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
@@ -226,15 +226,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `boneyard` | Number |  | 1 |
-| `caves` | Number |  | 1 |
-| `core` | Number |  | 1 |
-| `dimensionx` | Number |  | 1 |
-| `endoftime` | Number |  | 1 |
-| `jurassic` | Number |  | 1 |
-| `meatworld` | Number |  | 1 |
-| `moon` | Number |  | 1 |
-| `theend` | Number |  | 1 |
+| `boneyard` | Integer |  | 1 |
+| `caves` | Integer |  | 1 |
+| `core` | Integer |  | 1 |
+| `dimensionx` | Integer |  | 1 |
+| `endoftime` | Integer |  | 1 |
+| `jurassic` | Integer |  | 1 |
+| `meatworld` | Integer |  | 1 |
+| `moon` | Integer |  | 1 |
+| `theend` | Integer |  | 1 |
 
 </details>
 
@@ -251,7 +251,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -271,7 +271,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
@@ -292,7 +292,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
@@ -311,7 +311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
@@ -331,7 +331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 2 |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>
@@ -350,7 +350,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 2 |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>
@@ -368,9 +368,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `rep_reward_count` | Number |  | 1 |
+| `rep_reward_count` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>
@@ -388,9 +388,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `rep_reward_count` | Number |  | 1 |
+| `rep_reward_count` | Integer |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
@@ -409,9 +409,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -428,9 +428,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -447,9 +447,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -466,9 +466,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -485,7 +485,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`gift_item`](./Enums.md#enum-gift_item) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -505,7 +505,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`gift_item`](./Enums.md#enum-gift_item) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
@@ -526,9 +526,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -545,9 +545,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -564,9 +564,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -583,9 +583,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -602,9 +602,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -621,9 +621,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -640,9 +640,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 
 </details>
 
@@ -681,7 +681,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
 
@@ -700,7 +700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
@@ -719,7 +719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
@@ -738,7 +738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
@@ -757,8 +757,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `coins` | Number |  | 1 |
-| `favor` | Number |  | 1 |
+| `coins` | Integer |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
@@ -777,8 +777,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `coins` | Number |  | 1 |
-| `favor` | Number |  | 1 |
+| `coins` | Integer |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -798,7 +798,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`gift_item`](./Enums.md#enum-gift_item) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
@@ -817,7 +817,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
@@ -836,7 +836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
@@ -855,7 +855,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
 
@@ -874,10 +874,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -895,10 +895,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -916,10 +916,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -937,10 +937,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -958,10 +958,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -979,10 +979,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1000,10 +1000,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1021,10 +1021,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1042,10 +1042,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1063,10 +1063,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1084,10 +1084,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1105,10 +1105,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1126,10 +1126,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1147,10 +1147,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1168,10 +1168,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1189,10 +1189,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1210,10 +1210,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1231,10 +1231,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1252,10 +1252,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1273,10 +1273,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_age` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `shop_level_up` | Number |  | 1 |
+| `shop_level_up` | Integer |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
@@ -1294,9 +1294,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `required_age` | Number |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
@@ -1315,10 +1315,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
-| `required_age` | Number |  | 1 |
+| `required_age` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
@@ -1337,11 +1337,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `storage_expansion` | Number |  | 1 |
+| `storage_expansion` | Integer |  | 1 |
 
 </details>
 
@@ -1358,11 +1358,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `storage_expansion` | Number |  | 1 |
+| `storage_expansion` | Integer |  | 1 |
 
 </details>
 
@@ -1379,11 +1379,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `storage_expansion` | Number |  | 1 |
+| `storage_expansion` | Integer |  | 1 |
 
 </details>
 
@@ -1400,11 +1400,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `storage_expansion` | Number |  | 1 |
+| `storage_expansion` | Integer |  | 1 |
 
 </details>
 
@@ -1421,11 +1421,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `storage_expansion` | Number |  | 1 |
+| `storage_expansion` | Integer |  | 1 |
 
 </details>
 
@@ -1442,11 +1442,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `storage_expansion` | Number |  | 1 |
+| `storage_expansion` | Integer |  | 1 |
 
 </details>
 
@@ -1463,11 +1463,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| `storage_expansion` | Number |  | 1 |
+| `storage_expansion` | Integer |  | 1 |
 
 </details>
 
@@ -1484,13 +1484,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `rep_reward_count` | Number |  | 1 |
-| `repeat` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
-| `required_difficulty` | Number |  | 1 |
+| `rep_reward_count` | Integer |  | 1 |
+| `repeat` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
+| `required_difficulty` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>
@@ -1508,13 +1508,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `rep_reward_count` | Number |  | 1 |
-| `repeat` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
-| `required_difficulty` | Number |  | 1 |
+| `rep_reward_count` | Integer |  | 1 |
+| `repeat` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
+| `required_difficulty` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>
@@ -1532,13 +1532,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `rep_reward_count` | Number |  | 1 |
+| `rep_reward_count` | Integer |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
-| `required_difficulty` | Number |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
+| `required_difficulty` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>
@@ -1556,12 +1556,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `rep_reward_count` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
-| `required_difficulty` | Number |  | 1 |
+| `rep_reward_count` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
+| `required_difficulty` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>
@@ -1579,13 +1579,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `favor` | Number |  | 1 |
+| `favor` | Integer |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
-| `rep_reward_count` | Number |  | 1 |
-| `repeat` | Number |  | 1 |
-| `required_act` | Number |  | 1 |
-| `required_chapter` | Number |  | 1 |
-| `required_difficulty` | Number |  | 1 |
+| `rep_reward_count` | Integer |  | 1 |
+| `repeat` | Integer |  | 1 |
+| `required_act` | Integer |  | 1 |
+| `required_chapter` | Integer |  | 1 |
+| `required_difficulty` | Integer |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 
 </details>

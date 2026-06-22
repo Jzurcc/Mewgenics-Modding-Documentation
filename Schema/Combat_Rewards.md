@@ -19,9 +19,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| `item_chance` | Number |  | 12 |
+| `item_chance` | Integer |  | 12 |
 
 </details>
 
@@ -39,9 +39,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| [`item_chance`](./Enums.md#enum-item_chance) | Enum |  | 12 |
+| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 
 </details>
 
@@ -59,9 +59,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| [`item_chance`](./Enums.md#enum-item_chance) | Enum |  | 12 |
+| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 
 </details>
 
@@ -79,9 +79,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| [`item_chance`](./Enums.md#enum-item_chance) | Enum |  | 12 |
+| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 
 </details>
 
@@ -100,8 +100,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Number |  | 4 |
-| `food_bonus` | Number |  | 4 |
+| `coins_bonus` | Float |  | 4 |
+| `food_bonus` | Integer |  | 4 |
 | [`boss`](#context-boss) | Block |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
@@ -121,8 +121,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Number |  | 4 |
-| `food_bonus` | Number |  | 4 |
+| `coins_bonus` | Float |  | 4 |
+| `food_bonus` | Integer |  | 4 |
 | [`boss`](#context-boss) | Block |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
@@ -142,8 +142,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Number |  | 4 |
-| `food_bonus` | Number |  | 4 |
+| `coins_bonus` | Float |  | 4 |
+| `food_bonus` | Integer |  | 4 |
 | [`boss`](#context-boss) | Block |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
@@ -164,8 +164,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`boss`](#context-boss) | Block |  | 3 |
-| `coins_bonus` | Number |  | 3 |
-| `food_bonus` | Number |  | 3 |
+| `coins_bonus` | Float |  | 3 |
+| `food_bonus` | Integer |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
 | [`normal`](#context-normal) | Block |  | 3 |

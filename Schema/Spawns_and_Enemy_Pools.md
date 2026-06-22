@@ -19,7 +19,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`editor`](#context-editor) | Block |  | 550 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 543 |
-| `value` | Number |  | 377 |
+| `value` | Float |  | 377 |
 | `early_spawn` | Boolean |  | 10 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 6 |
 | [`tag_location`](./Enums.md#enum-tag_location) | Enum |  | 5 |
@@ -46,13 +46,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `category` | Number |  | 551 |
+| `category` | Integer |  | 551 |
 | [`image`](./Arrays.md#array-image) | Array |  | 550 |
 | [`name`](./Strings.md#string-name) | String |  | 550 |
 | `paint` | Boolean |  | 550 |
 | [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 196 |
-| `subcategory` | Number |  | 9 |
-| `layer` | Number |  | 3 |
+| `subcategory` | Integer |  | 9 |
+| `layer` | Integer |  | 3 |
 
 </details>
 

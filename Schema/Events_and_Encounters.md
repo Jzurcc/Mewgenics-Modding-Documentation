@@ -24,29 +24,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 12 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 10 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 9 |
-| `set_frame` | Number |  | 9 |
+| `set_frame` | Integer |  | 9 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 8 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 5 |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`reward`](#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 4 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 3 |
-| `stat_max` | Number |  | 3 |
-| `stat_min` | Number |  | 3 |
-| `weight` | Enum | Probability weight for this outcome. | 3 |
-| `cha` | Number |  | 2 |
-| `con` | Number |  | 2 |
+| `stat_max` | Integer |  | 3 |
+| `stat_min` | Integer |  | 3 |
+| `weight` | Float | Probability weight for this outcome. | 3 |
+| `cha` | Integer |  | 2 |
+| `con` | Integer |  | 2 |
 | [`ignore`](#context-ignore) | Block | Event Node: Story branch or dialog option representing the 'Ignore' action. | 2 |
-| `int` | Number |  | 2 |
-| `lck` | Number |  | 2 |
-| `spd` | Number |  | 2 |
-| `str` | Number |  | 2 |
+| `int` | Integer |  | 2 |
+| `lck` | Integer |  | 2 |
+| `spd` | Integer |  | 2 |
+| `str` | Integer |  | 2 |
 | [`10coins`](#context-10coins) | Block | Event Action: Grants or consumes 10 coins. | 1 |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  | 1 |
 | [`destroy`](#context-destroy) | Block | Event Node: Story branch or dialog option representing the 'Destroy' action. | 1 |
-| `dex` | Number |  | 1 |
+| `dex` | Integer |  | 1 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 1 |
-| `next_event_bonus` | Number |  | 1 |
+| `next_event_bonus` | Integer |  | 1 |
 | [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 1 |
 | [`self_status_next_fight`](#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 
@@ -70,13 +70,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`common`](#context-common) | Block | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
 | [`rare`](#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 72 |
-| `set_frame` | Number |  | 54 |
+| `set_frame` | Integer |  | 54 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum |  | 24 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 14 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum |  | 9 |
 | [`set_subject`](./Enums.md#enum-set_subject) | Enum |  | 9 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 8 |
-| `next_event_bonus` | Number |  | 5 |
+| `next_event_bonus` | Integer |  | 5 |
 | [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum |  | 5 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array |  | 4 |
 | [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum |  | 3 |
@@ -90,7 +90,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`party_damage`](./Arrays.md#array-party_damage) | Array |  | 1 |
 | [`random_chance`](#context-random_chance) | Block | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum |  | 1 |
-| `weight` | Number | Probability weight for this outcome. | 1 |
+| `weight` | Float | Probability weight for this outcome. | 1 |
 
 </details>
 
@@ -110,16 +110,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 608 |
-| `set_frame` | Number |  | 150 |
+| `set_frame` | Integer |  | 150 |
 | [`self_status_next_fight`](#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 71 |
 | [`permanent_stats`](#context-permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 36 |
-| [`damage`](./Arrays.md#array-damage) | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 |
+| [`damage`](./Arrays.md#array-damage) | Integer | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 28 |
 | [`injury`](./Math_Equations.md) | Enum |  | 27 |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 26 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 25 |
+| `self_damage` | Integer | Recoil or self-inflicted damage/effects applied to the caster. | 26 |
+| `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 25 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum |  | 24 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 24 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Array |  | 23 |
@@ -128,21 +128,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 19 |
 | [`spawn_unit_next_fight`](#context-spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 |
 | [`party_damage`](./Arrays.md#array-party_damage) | Array |  | 15 |
-| `party_heal` | Number |  | 15 |
+| `party_heal` | Integer |  | 15 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 14 |
-| `heal` | Number |  | 13 |
+| `heal` | Integer |  | 13 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum |  | 12 |
 | [`get_parasite_from_pool`](./Arrays.md#array-get_parasite_from_pool) | Enum |  | 11 |
 | [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String |  | 11 |
 | [`party_status_next_fight`](#context-party_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
-| `ally_ambush_next_fights` | Number |  | 10 |
-| `full_heal` | Number |  | 10 |
-| `ambush_next_basic_fights` | Number |  | 9 |
+| `ally_ambush_next_fights` | Integer |  | 10 |
+| `full_heal` | Integer |  | 10 |
+| `ambush_next_basic_fights` | Integer |  | 9 |
 | [`conditional_reward`](#context-conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 9 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum |  | 9 |
 | [`random_mutation_from_set`](#context-random_mutation_from_set) | Block | Event Reward: Applies a random mutation to a character from a specific pool. | 8 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum |  | 7 |
-| `next_event_bonus` | Number |  | 7 |
+| `next_event_bonus` | Integer |  | 7 |
 | [`global_effect_next_fight`](#context-global_effect_next_fight) | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum |  | 6 |
 | [`kill`](./Enums.md#enum-kill) | Enum |  | 5 |
@@ -152,17 +152,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 2 |
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum |  | 2 |
 | [`next_event_from_set`](#context-next_event_from_set) | Block | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 |
-| `party_heal_disorder` | Number |  | 2 |
+| `party_heal_disorder` | Integer |  | 2 |
 | [`party_permanent_stats_exclude_self`](#context-party_permanent_stats_exclude_self) | Block | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
 | [`spin`](./Enums.md#enum-spin) | Enum |  | 2 |
-| `clear_result_animation` | Number |  | 1 |
+| `clear_result_animation` | Integer |  | 1 |
 | [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum |  | 1 |
 | [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum |  | 1 |
-| `heal_disorder` | Number |  | 1 |
-| `heal_injury` | Number |  | 1 |
+| `heal_disorder` | Integer |  | 1 |
+| `heal_injury` | Integer |  | 1 |
 | [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum |  | 1 |
 | [`mutation`](#context-mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `self_heal` | Number |  | 1 |
+| `self_heal` | Integer |  | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum |  | 1 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum |  | 1 |
 
@@ -184,14 +184,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 612 |
-| `set_frame` | Number |  | 179 |
+| `set_frame` | Integer |  | 179 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 124 |
 | [`permanent_stats`](#context-permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum |  | 65 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 51 |
 | [`injury`](./Math_Equations.md) | Enum |  | 51 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 41 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 40 |
+| `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 40 |
 | [`self_status_next_fight`](#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum |  | 30 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum |  | 30 |
@@ -201,54 +201,54 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`conditional_reward`](#context-conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 22 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum |  | 22 |
 | [`spawn_unit_next_fight`](#context-spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 18 |
+| `damage` | Integer | Event Node: Story branch or dialog option representing the 'Damage' action. | 18 |
 | [`mutation`](#context-mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array |  | 17 |
-| `next_event_bonus` | Number |  | 14 |
+| `next_event_bonus` | Integer |  | 14 |
 | [`random_mutation_from_set`](#context-random_mutation_from_set) | Block | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 13 |
+| `self_damage` | Integer | Recoil or self-inflicted damage/effects applied to the caster. | 13 |
 | [`party_status_next_fight`](#context-party_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array |  | 11 |
 | [`learn_passive`](./Enums.md#enum-learn_passive) | Enum |  | 10 |
-| `party_damage` | Number |  | 10 |
-| `party_heal` | Number |  | 10 |
+| `party_damage` | Integer |  | 10 |
+| `party_heal` | Integer |  | 10 |
 | [`battle`](./Math_Equations.md) | Equation |  | 9 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum |  | 9 |
 | [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String |  | 8 |
-| `party_random_mutation` | Number |  | 8 |
-| `ambush_next_basic_fights` | Number |  | 7 |
+| `party_random_mutation` | Integer |  | 8 |
+| `ambush_next_basic_fights` | Integer |  | 7 |
 | [`leave_party_temporarily`](#context-leave_party_temporarily) | Block | Event Action: Removes a character from the active team until the next hub area. | 7 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum |  | 7 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum |  | 7 |
 | [`gain_food`](./Arrays.md#array-gain_food) | Array |  | 6 |
-| `hide_appearance_changes` | Number |  | 6 |
+| `hide_appearance_changes` | Integer |  | 6 |
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum |  | 6 |
-| `ally_ambush_next_fights` | Number |  | 5 |
+| `ally_ambush_next_fights` | Integer |  | 5 |
 | [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum |  | 5 |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  | 4 |
-| `full_heal` | Number |  | 4 |
+| `full_heal` | Integer |  | 4 |
 | [`learn_ability`](./Enums.md#enum-learn_ability) | Enum |  | 4 |
-| `gain_cat_familiar` | Number |  | 3 |
+| `gain_cat_familiar` | Integer |  | 3 |
 | [`global_effect_next_fight`](#context-global_effect_next_fight) | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 |
 | [`kill`](./Enums.md#enum-kill) | Enum |  | 3 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 3 |
 | [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum |  | 3 |
 | [`make_old`](./Enums.md#enum-make_old) | Enum |  | 3 |
 | [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 3 |
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 |
+| `spawn_reflection_next_fight` | Integer | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 2 |
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum |  | 2 |
-| `party_heal_disorder` | Number |  | 2 |
-| `party_heal_injury` | Number |  | 2 |
+| `party_heal_disorder` | Integer |  | 2 |
+| `party_heal_injury` | Integer |  | 2 |
 | [`party_permanent_stats_exclude_self`](#context-party_permanent_stats_exclude_self) | Block | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
-| `set_age` | Number |  | 2 |
+| `set_age` | Integer |  | 2 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum |  | 2 |
 | [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum |  | 2 |
 | [`ambush`](./Math_Equations.md) | Equation |  | 1 |
-| `clear_result_animation` | Number |  | 1 |
+| `clear_result_animation` | Integer |  | 1 |
 | [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum |  | 1 |
 | [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum |  | 1 |
-| `heal_disorder` | Number |  | 1 |
+| `heal_disorder` | Integer |  | 1 |
 | [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum |  | 1 |
 | [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Enum |  | 1 |
 | [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum |  | 1 |
@@ -278,7 +278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward`](#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
-| `set_frame` | Number |  | 285 |
+| `set_frame` | Integer |  | 285 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 185 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Enum |  | 111 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum |  | 52 |
@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`cutscene`](./Strings.md#string-cutscene) | String | Event Node: Triggers a narrative cutscene. | 19 |
 | [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum |  | 12 |
 | [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum |  | 12 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 12 |
+| `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 12 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum |  | 12 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 9 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum |  | 9 |
@@ -298,41 +298,41 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 6 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum |  | 5 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 5 |
-| [`heal_disorder`](./Enums.md#enum-heal_disorder) | Number |  | 5 |
+| [`heal_disorder`](./Enums.md#enum-heal_disorder) | Integer |  | 5 |
 | [`injury`](./Enums.md#enum-injury) | Enum |  | 4 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 4 |
 | [`mutation`](#context-mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
 | [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array |  | 4 |
 | [`rare`](#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum |  | 3 |
-| `heal_injury` | Number |  | 3 |
+| `heal_injury` | Integer |  | 3 |
 | [`kill`](./Enums.md#enum-kill) | Enum |  | 3 |
 | [`transform_item`](./Arrays.md#array-transform_item) | Array |  | 3 |
 | [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum |  | 3 |
 | [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum |  | 2 |
 | [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum |  | 2 |
-| `full_heal` | Number |  | 2 |
+| `full_heal` | Integer |  | 2 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum |  | 2 |
 | [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array |  | 2 |
 | [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Array |  | 2 |
 | [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String |  | 2 |
 | [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array |  | 2 |
-| `ally_ambush_next_fights` | Number |  | 1 |
-| `clone_self_to_party` | Number |  | 1 |
-| `copy_items_to_party` | Number |  | 1 |
-| `copy_party_items` | Number |  | 1 |
+| `ally_ambush_next_fights` | Integer |  | 1 |
+| `clone_self_to_party` | Integer |  | 1 |
+| `copy_items_to_party` | Integer |  | 1 |
+| `copy_party_items` | Integer |  | 1 |
 | [`gain_clone_familiar`](#context-gain_clone_familiar) | Block | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`gain_food`](./Arrays.md#array-gain_food) | Array |  | 1 |
 | [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum |  | 1 |
 | [`global_effect_next_fight`](#context-global_effect_next_fight) | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 |
-| `heal` | Number |  | 1 |
+| `heal` | Integer |  | 1 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum |  | 1 |
-| `next_event_bonus` | Number |  | 1 |
+| `next_event_bonus` | Integer |  | 1 |
 | [`next_event_from_set`](#context-next_event_from_set) | Block | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
 | [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum |  | 1 |
 | [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum |  | 1 |
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum |  | 1 |
-| `trigger_butterfly_effect` | Number |  | 1 |
+| `trigger_butterfly_effect` | Integer |  | 1 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum |  | 1 |
 | [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum |  | 1 |
 
@@ -354,7 +354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward`](#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
-| `set_frame` | Number |  | 219 |
+| `set_frame` | Integer |  | 219 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 38 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Array |  | 10 |
 | [`conditional_reward`](#context-conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 9 |
@@ -367,7 +367,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 3 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum |  | 3 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum |  | 3 |
-| `next_event_bonus` | Number |  | 2 |
+| `next_event_bonus` | Integer |  | 2 |
 | [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum |  | 1 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum |  | 1 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum |  | 1 |
@@ -397,14 +397,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`subject_frame`](./Enums.md#enum-subject_frame) | Enum |  | 214 |
 | [`title`](./Strings.md#string-title) | String |  | 214 |
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum |  | 17 |
-| `different_from_last_x_cats` | Number |  | 3 |
-| `subject_frame_inner` | Number |  | 3 |
+| `different_from_last_x_cats` | Integer |  | 3 |
+| `subject_frame_inner` | Integer |  | 3 |
 | [`choose_cat_with_highest_stat`](./Math_Equations.md) | Enum |  | 1 |
 | [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum |  | 1 |
-| `choose_cat_with_min_health` | Number |  | 1 |
+| `choose_cat_with_min_health` | Integer |  | 1 |
 | `choose_cat_with_most_injuries` | Boolean |  | 1 |
 | `choose_cat_with_parasite` | Boolean |  | 1 |
-| `set_frame` | Number |  | 1 |
+| `set_frame` | Integer |  | 1 |
 
 </details>
 
@@ -429,15 +429,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`goto`](./Enums.md#enum-goto) | Enum |  | 4 |
 | [`outcome`](#context-outcome) | Block | Event Block: Logic and text executed after selecting a specific dialog option. | 4 |
-| `max_options` | Number |  | 3 |
-| `set_frame` | Number |  | 3 |
+| `max_options` | Integer |  | 3 |
+| `set_frame` | Integer |  | 3 |
 | `shuffle_options` | Boolean |  | 3 |
-| [`weight`](./Enums.md#enum-weight) | Enum | Probability weight for this outcome. | 2 |
+| `weight` | Float | Probability weight for this outcome. | 2 |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  | 1 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 1 |
 | [`leave`](#context-leave) | Block | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
 | [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
-| `party_heal` | Number |  | 1 |
+| `party_heal` | Integer |  | 1 |
 | [`party_permanent_stats`](#context-party_permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array |  | 1 |
 | [`rare`](#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
@@ -663,7 +663,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`w5`](#context-w5) | Block | Event Node: Story branch or dialog option representing the 'W5' action. | 1 |
 | [`w6`](#context-w6) | Block | Event Node: Story branch or dialog option representing the 'W6' action. | 1 |
 | [`wealth`](#context-wealth) | Block | Event Node: Story branch or dialog option representing the 'Wealth' action. | 1 |
-| [`weight`](./Enums.md#enum-weight) | Enum | Probability weight for this outcome. | 1 |
+| `weight` | Float | Probability weight for this outcome. | 1 |
 | [`wheezies`](#context-wheezies) | Block | Event Node: Story branch or dialog option representing the 'Wheezies' action. | 1 |
 | [`wish_genes`](#context-wish_genes) | Block | Event Node: Story branch or dialog option representing the 'Wish Genes' action. | 1 |
 | [`wish_items`](#context-wish_items) | Block | Event Node: Story branch or dialog option representing the 'Wish Items' action. | 1 |
@@ -696,10 +696,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`counter_maximum`](./Arrays.md#array-counter_maximum) | Array |  | 18 |
 | [`is_not_chapter`](./Arrays.md#array-is_not_chapter) | Array |  | 16 |
 | [`is_chapter`](./Arrays.md#array-is_chapter) | Array |  | 8 |
-| `minimum_party_size` | Number |  | 2 |
+| `minimum_party_size` | Integer |  | 2 |
 | [`not_cat_has_item_equipped`](./Enums.md#enum-not_cat_has_item_equipped) | Enum |  | 2 |
-| `not_on_quest` | Number |  | 2 |
-| `cat_has_injury_count_min` | Number |  | 1 |
+| `not_on_quest` | Integer |  | 2 |
+| `cat_has_injury_count_min` | Integer |  | 1 |
 | [`cat_has_item_slot_equipped`](./Enums.md#enum-cat_has_item_slot_equipped) | Enum |  | 1 |
 | `cat_has_parasite` | Boolean |  | 1 |
 
@@ -773,14 +773,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 35 |
-| `random` | Number |  | 25 |
-| `int` | Number |  | 21 |
-| `lck` | Number |  | 18 |
-| `spd` | Number |  | 18 |
-| `str` | Number |  | 16 |
-| `cha` | Number |  | 14 |
-| `dex` | Number |  | 9 |
+| `con` | Integer |  | 35 |
+| `random` | Integer |  | 25 |
+| `int` | Integer |  | 21 |
+| `lck` | Integer |  | 18 |
+| `spd` | Integer |  | 18 |
+| `str` | Integer |  | 16 |
+| `cha` | Integer |  | 14 |
+| `dex` | Integer |  | 9 |
 
 </details>
 
@@ -881,7 +881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Enum |  | 40 |
-| `count` | Number | Quantity. | 34 |
+| `count` | Integer | Quantity. | 34 |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum |  | 31 |
 | [`side`](./Enums.md#enum-side) | Enum |  | 3 |
 
@@ -903,15 +903,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Strings.md#string-prompt) | String |  | 19 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum |  | 6 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum |  | 6 |
-| `party_damage` | Number |  | 5 |
-| `set_frame` | Number |  | 5 |
+| `party_damage` | Integer |  | 5 |
+| `set_frame` | Integer |  | 5 |
 | [`conditional_reward`](#context-conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 4 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum |  | 4 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array |  | 3 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum |  | 2 |
 | [`get_item_from_pool`](./Arrays.md#array-get_item_from_pool) | Array | Event Action: Rewards the player with an item drawn from a specific loot pool. | 2 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
+| `damage` | Integer | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |
+| `next_event_bonus` | Integer |  | 1 |
 | [`random_mutation`](#context-random_mutation) | Block | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`self_status_next_fight`](#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum |  | 1 |
@@ -975,21 +975,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `eyes` | Number |  | 12 |
-| `mouth` | Number |  | 11 |
-| `ears` | Number |  | 10 |
-| `eyebrows` | Number |  | 8 |
-| `head` | Number | Event Node: Story branch or dialog option representing the 'Head' action. | 7 |
-| `legs` | Number |  | 7 |
-| `arms` | Number |  | 6 |
-| `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 6 |
-| `tail` | Number | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 |
-| `eye1` | Number |  | 3 |
-| `arm1` | Number |  | 2 |
-| `ear1` | Number |  | 2 |
-| `eyebrow1` | Number |  | 2 |
-| `leg1` | Number |  | 2 |
-| `eye2` | Number |  | 1 |
+| `eyes` | Integer |  | 12 |
+| `mouth` | Integer |  | 11 |
+| `ears` | Integer |  | 10 |
+| `eyebrows` | Integer |  | 8 |
+| `head` | Integer | Event Node: Story branch or dialog option representing the 'Head' action. | 7 |
+| `legs` | Integer |  | 7 |
+| `arms` | Integer |  | 6 |
+| `body` | Integer | Event Node: Story branch or dialog option representing the 'Body' action. | 6 |
+| `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 |
+| `eye1` | Integer |  | 3 |
+| `arm1` | Integer |  | 2 |
+| `ear1` | Integer |  | 2 |
+| `eyebrow1` | Integer |  | 2 |
+| `leg1` | Integer |  | 2 |
+| `eye2` | Integer |  | 1 |
 
 </details>
 
@@ -1054,7 +1054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`conditional_reward`](#context-conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 42 |
-| `set_frame` | Number |  | 3 |
+| `set_frame` | Integer |  | 3 |
 
 </details>
 
@@ -1071,20 +1071,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `mouth` | Number |  | 9 |
-| `count` | Number | Quantity. | 8 |
-| `tail` | Number | Event Node: Story branch or dialog option representing the 'Tail' action. | 7 |
-| `ears` | Number |  | 5 |
-| `eyes` | Number |  | 5 |
-| `legs` | Number |  | 5 |
-| `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 4 |
-| `eyebrows` | Number |  | 3 |
-| `head` | Number | Event Node: Story branch or dialog option representing the 'Head' action. | 3 |
-| `arm1` | Number |  | 2 |
-| `arm2` | Number |  | 2 |
-| `leg1` | Number |  | 1 |
-| `leg2` | Number |  | 1 |
-| `texture` | Number |  | 1 |
+| `mouth` | Integer |  | 9 |
+| `count` | Integer | Quantity. | 8 |
+| `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 7 |
+| `ears` | Integer |  | 5 |
+| `eyes` | Integer |  | 5 |
+| `legs` | Integer |  | 5 |
+| `body` | Integer | Event Node: Story branch or dialog option representing the 'Body' action. | 4 |
+| `eyebrows` | Integer |  | 3 |
+| `head` | Integer | Event Node: Story branch or dialog option representing the 'Head' action. | 3 |
+| `arm1` | Integer |  | 2 |
+| `arm2` | Integer |  | 2 |
+| `leg1` | Integer |  | 1 |
+| `leg2` | Integer |  | 1 |
+| `texture` | Integer |  | 1 |
 
 </details>
 
@@ -1186,7 +1186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Fights` | Number | Applies or references the 'Fights' effect/state. | 6 |
+| `Fights` | Integer | Applies or references the 'Fights' effect/state. | 6 |
 | [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 5 |
 | [`StatusRandomEnemiesOnBattleStart`](#context-statusrandomenemiesonbattlestart) | Block | Encounter Modifier: Applies a status effect to a random number of enemies at the start of battle. | 3 |
 | [`KillEnemyOfTypeAtBattleStart`](#context-killenemyoftypeatbattlestart) | Block | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 |
@@ -1371,7 +1371,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `fights_skipped` | Number |  | 7 |
+| `fights_skipped` | Integer |  | 7 |
 | [`return_as`](./Enums.md#enum-return_as) | Enum |  | 3 |
 | [`return_during`](./Enums.md#enum-return_during) | Enum |  | 3 |
 
@@ -1720,13 +1720,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number |  | 4 |
-| `con` | Number |  | 4 |
-| `dex` | Number |  | 4 |
-| `int` | Number |  | 4 |
-| `lck` | Number |  | 4 |
-| `spd` | Number |  | 4 |
-| `str` | Number |  | 4 |
+| `cha` | Integer |  | 4 |
+| `con` | Integer |  | 4 |
+| `dex` | Integer |  | 4 |
+| `int` | Integer |  | 4 |
+| `lck` | Integer |  | 4 |
+| `spd` | Integer |  | 4 |
+| `str` | Integer |  | 4 |
 
 </details>
 
@@ -1786,7 +1786,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `count` | Number | Quantity. | 3 |
+| `count` | Integer | Quantity. | 3 |
 
 </details>
 
@@ -1843,7 +1843,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`event`](./Enums.md#enum-event) | Enum |  | 5 |
 | `same_cat` | Boolean |  | 5 |
-| `count` | Number | Quantity. | 4 |
+| `count` | Integer | Quantity. | 4 |
 
 </details>
 
@@ -1998,7 +1998,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number |  | 2 |
+| `con` | Integer |  | 2 |
 
 </details>
 
@@ -2015,11 +2015,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `count` | Number | Quantity. | 2 |
-| `ears` | Number |  | 2 |
-| `eyebrows` | Number |  | 2 |
-| `eyes` | Number |  | 2 |
-| `mouth` | Number |  | 2 |
+| `count` | Integer | Quantity. | 2 |
+| `ears` | Integer |  | 2 |
+| `eyebrows` | Integer |  | 2 |
+| `eyes` | Integer |  | 2 |
+| `mouth` | Integer |  | 2 |
 
 </details>
 
@@ -2201,11 +2201,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
-| `set_frame` | Number |  | 1 |
+| `set_frame` | Integer |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
-| `weight` | Number | Probability weight for this outcome. | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
+| `weight` | Float | Probability weight for this outcome. | 1 |
 
 </details>
 
@@ -2228,11 +2228,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
-| `set_frame` | Number |  | 1 |
+| `set_frame` | Integer |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
-| `weight` | Number | Probability weight for this outcome. | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
+| `weight` | Float | Probability weight for this outcome. | 1 |
 
 </details>
 
@@ -2373,7 +2373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
-| `fixed_chance` | Number |  | 1 |
+| `fixed_chance` | Integer |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -2533,7 +2533,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
-| `fixed_chance` | Number |  | 1 |
+| `fixed_chance` | Integer |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -2559,9 +2559,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
 | [`self_status_next_fight`](#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
-| `weight` | Number | Probability weight for this outcome. | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
+| `weight` | Float | Probability weight for this outcome. | 1 |
 
 </details>
 
@@ -3023,8 +3023,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
 
 </details>
 
@@ -3048,8 +3048,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
 
 </details>
 
@@ -3073,8 +3073,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
 
 </details>
 
@@ -3098,8 +3098,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
 
 </details>
 
@@ -3370,7 +3370,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `initial_health` | Number |  | 1 |
+| `initial_health` | Integer |  | 1 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 1 |
 
 </details>
@@ -3750,7 +3750,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| `fixed_chance` | Number |  | 1 |
+| `fixed_chance` | Integer |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
@@ -4211,8 +4211,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
+| `stat_max` | Integer |  | 1 |
+| `stat_min` | Integer |  | 1 |
 
 </details>
 
@@ -4249,7 +4249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | Probability weight for this outcome. | 1 |
+| `chance` | Integer | Probability weight for this outcome. | 1 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 |
 
 </details>
@@ -4267,7 +4267,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `count` | Number | Quantity. | 15 |
+| `count` | Integer | Quantity. | 15 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 12 |
 | `asymmetric` | Boolean |  | 8 |
 
@@ -4348,7 +4348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| `fixed_chance` | Number |  | 1 |
+| `fixed_chance` | Integer |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
