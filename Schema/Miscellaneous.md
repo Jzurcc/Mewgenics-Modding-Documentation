@@ -102,13 +102,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `con` | Integer |  | 2 |
 | `ears` | Integer |  | 2 |
 | `fights_skipped` | Integer |  | 2 |
-| `mouth` | Integer |  | 2 |
+| `mouth` | Float |  | 2 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 2 |
 | `str` | Integer |  | 2 |
 | `tail` | Integer |  | 2 |
 | [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block |  | 1 |
 | `asymmetric` | Boolean |  | 1 |
-| `chance` | Integer |  | 1 |
+| `chance` | Float |  | 1 |
 | `choose_cat_with_min_health` | Integer |  | 1 |
 | [`common`](#context-common) | Block |  | 1 |
 | [`conditional_reward`](#context-conditional_reward) | Block |  | 1 |
@@ -162,7 +162,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `reward`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -173,6 +172,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | `ambush_next_basic_fights` | Integer |  | 1 |
 | `gain_coins` | Integer |  | 1 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum |  | 1 |
@@ -204,7 +204,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `common`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -215,6 +214,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
 | `set_frame` | Integer |  | 1 |
 
@@ -278,7 +278,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `rare`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -289,6 +288,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
 | `set_frame` | Integer |  | 1 |
 
@@ -444,7 +444,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `dampening` | Float |  | 69 |
 | `friction` | Float |  | 65 |
 | [`plane`](./Enums.md#enum-plane) | Enum |  | 32 |
-| `position` | Integer |  | 32 |
+| `position` | Float |  | 32 |
 | `rotation_dampening` | Integer |  | 1 |
 
 </details>
@@ -481,7 +481,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`axis`](./Arrays.md#array-axis) | Array |  | 19 |
-| `force` | Integer |  | 19 |
+| `force` | Float |  | 19 |
 | [`point`](./Arrays.md#array-point) | Array |  | 19 |
 
 </details>
@@ -500,7 +500,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`towards`](./Arrays.md#array-towards) | Array |  | 7 |
 | `force_end` | Integer |  | 6 |
 | `force_start` | Integer |  | 6 |
-| `force` | Integer |  | 1 |
+| `force` | Float |  | 1 |
 
 </details>
 
@@ -562,7 +562,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `emit_spread` | Integer |  | 19 |
 | [`live_bounds`](./Arrays.md#array-live_bounds) | Array |  | 19 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 19 |
-| `particle_lifetime` | Integer |  | 19 |
+| `particle_lifetime` | Float |  | 19 |
 | [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum |  | 19 |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum |  | 19 |
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum |  | 19 |
@@ -868,10 +868,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `volume_adjustment` | Integer |  | 15 |
+| `volume_adjustment` | Float |  | 15 |
 | `amount` | Float |  | 14 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 14 |
-| `DecayTime` | Integer |  | 11 |
+| `DecayTime` | Float |  | 11 |
 | `ReverbDelay` | Float |  | 7 |
 
 </details>

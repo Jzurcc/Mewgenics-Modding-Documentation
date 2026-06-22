@@ -21,7 +21,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
 | [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| `item_chance` | Integer |  | 12 |
+| `item_chance` | Float |  | 12 |
 
 </details>
 
@@ -101,7 +101,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `coins_bonus` | Float |  | 4 |
-| `food_bonus` | Integer |  | 4 |
+| `food_bonus` | Float |  | 4 |
 | [`boss`](#context-boss) | Block |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
@@ -122,7 +122,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `coins_bonus` | Float |  | 4 |
-| `food_bonus` | Integer |  | 4 |
+| `food_bonus` | Float |  | 4 |
 | [`boss`](#context-boss) | Block |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
@@ -143,7 +143,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `coins_bonus` | Float |  | 4 |
-| `food_bonus` | Integer |  | 4 |
+| `food_bonus` | Float |  | 4 |
 | [`boss`](#context-boss) | Block |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
@@ -165,7 +165,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`boss`](#context-boss) | Block |  | 3 |
 | `coins_bonus` | Float |  | 3 |
-| `food_bonus` | Integer |  | 3 |
+| `food_bonus` | Float |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
 | [`normal`](#context-normal) | Block |  | 3 |

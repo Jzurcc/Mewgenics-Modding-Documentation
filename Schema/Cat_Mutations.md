@@ -84,7 +84,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -154,7 +153,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer |  | 7 |
+| `chance` | Float |  | 7 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 7 |
 | `good` | Boolean |  | 5 |
 
@@ -241,7 +240,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer |  | 4 |
+| `chance` | Float |  | 4 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 4 |
 | `good` | Boolean |  | 1 |
 
@@ -297,7 +296,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer |  | 2 |
+| `odds` | Float |  | 2 |
 
 </details>
 
@@ -475,7 +474,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `chance` | Integer |  | 1 |
+| `chance` | Float |  | 1 |
 
 </details>
 
@@ -530,7 +529,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer |  | 1 |
+| `odds` | Float |  | 1 |
 
 </details>
 
@@ -548,7 +547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `chance` | Integer |  | 1 |
+| `chance` | Float |  | 1 |
 
 </details>
 

@@ -53,7 +53,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Bloodzerked` | Integer | Applies or references the 'Bloodzerked' effect/state. |
 | [`BodyGuard`](#bodyguard) | Block | Protects an ally by intercepting attacks directed at them. |
 | `BombRatTurtle` | Integer | Applies or references the 'BombRatTurtle' effect/state. |
-| `BonusCritChance` | Integer | Applies or references the 'BonusCritChance' effect/state. |
+| `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. |
 | `BonusDamage` | Integer | Applies or references the 'BonusDamage' effect/state. |
 | `BonusDamageBasedOnDistance` | Integer | Applies or references the 'BonusDamageBasedOnDistance' effect/state. |
 | `BonusDamageBasedOnMana` | Integer | Applies or references the 'BonusDamageBasedOnMana' effect/state. |
@@ -72,7 +72,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `CancelPrimedAbilities` | Integer | Applies or references the 'CancelPrimedAbilities' effect/state. |
 | `CanceledQueuedInput` | Integer | Applies or references the 'CanceledQueuedInput' effect/state. |
 | `CapDamage` | Integer | Applies or references the 'CapDamage' effect/state. |
-| `CaptureFamiliar` | Integer | Applies the 'CaptureFamiliar' effect. |
+| `CaptureFamiliar` | Integer | Applies or references the 'CaptureFamiliar' effect/state. |
 | [`CatPartsSizeScaleStatus`](#catpartssizescalestatus) | Block | Visually scales specific body parts of a character. |
 | [`CatPartsTransform`](#catpartstransform) | Block | Transforms specific body parts into different visual variants. |
 | `ChampionUpgradeNextMinion` | Integer | Applies or references the 'ChampionUpgradeNextMinion' effect/state. |
@@ -174,7 +174,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the 'DeathwormUnderground' effect/state. |
 | `DecoySwapper` | Integer | Applies or references the 'DecoySwapper' effect/state. |
 | `DeferVaporize` | Integer | Applies or references the 'DeferVaporize' effect/state. |
-| [`DelayCastAbility`](#delaycastability) | Block | Queues an ability to be cast automatically after a certain delay or trigger. |
+| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | Queues an ability to be cast automatically after a certain delay or trigger. |
 | `DelayedFury` | Integer | Applies or references the 'DelayedFury' effect/state. |
 | [`DelayedWindCone`](#delayedwindcone) | Block | Creates a delayed Area of Effect cone. |
 | `DeleteInanimateObjectsChance` | Integer |  |
@@ -240,7 +240,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ExtraBasicMoves_Status` | Integer | Applies or references the 'ExtraBasicMoves_Status' effect/state. |
 | `FaceAway` | Integer | Applies or references the 'FaceAway' effect/state. |
 | `FaceCamera` | Integer | Applies or references the 'FaceCamera' effect/state. |
-| `FactionConversion` | Integer | Applies the 'FactionConversion' effect. |
+| `FactionConversion` | Integer | Applies or references the 'FactionConversion' effect/state. |
 | `FactionDisguiseSource` | Integer | Applies or references the 'FactionDisguiseSource' effect/state. |
 | [`FactionUprising`](./Enums.md#enum-factionuprising) | Enum |  |
 | `FastKnockback` | Integer | Applies or references the 'FastKnockback' effect/state. |
@@ -256,7 +256,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `FireflySwarm` | Integer |  |
 | `FlatAIBonus` | Integer | Applies or references the 'FlatAIBonus' effect/state. |
 | `FlatLeech` | Integer | Applies or references the 'FlatLeech' effect/state. |
-| `FlatLeechIfDamaged` | Integer | Applies the 'FlatLeechIfDamaged' effect. |
+| `FlatLeechIfDamaged` | Integer | Applies or references the 'FlatLeechIfDamaged' effect/state. |
 | `FloatingRockTrap` | Integer | Applies or references the 'FloatingRockTrap' effect/state. |
 | `FlowersOnHit` | Integer | Applies or references the 'FlowersOnHit' effect/state. |
 | `FlySwarm` | Integer |  |
@@ -335,7 +335,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Lifesteal` | Integer | Applies or references the 'Lifesteal' effect/state. |
 | `LowGravityKnockbackBoost` | Integer |  |
 | `LowGravityRangeBoost` | Integer |  |
-| `LowerAmbientLight` | Integer |  |
+| `LowerAmbientLight` | Number |  |
 | `LuckUp` | Integer | Applies or references the 'LuckUp' effect/state. |
 | `Madness` | Integer | Applies the Madness debuff/status effect. |
 | `MadnessChanceOnTurnBegin` | Integer | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. |
@@ -649,7 +649,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. |
 | `kill_on_consume` | Boolean |  |
 | `mount_mode` | Boolean | If true, treats the consumption as riding/mounting instead of eating. |
-| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
+| `odds` | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. |
@@ -659,7 +659,6 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `use_placeholder` | Boolean |  |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. |
 | `wet` | Boolean |  |
-| `{Global Modifiers}` | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |
 | [`{Logic Blocks}`](#{logic blocks}) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |
 | `{Statuses / Passives}` | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |
 
@@ -872,7 +871,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `odds` | Integer | The probability (0.0 to 1.0) of applying the debuff. |
+| `odds` | Float | The probability (0.0 to 1.0) of applying the debuff. |
 
 </details>
 
@@ -969,7 +968,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
+| `odds` | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
 | [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
 
 </details>
@@ -1260,7 +1259,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
-| `odds` | Integer |  |
+| `odds` | Float |  |
 
 </details>
 
@@ -1390,6 +1389,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
 | [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `LowerAmbientLight` | Number |  |
 | [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Block | Nested conditional. |
 | [`Conditional_ActiveWeather_Any`](#conditional_activeweather_any) | Block | Nested conditional. |
 | [`Conditional_AffectedByElement`](#conditional_affectedbyelement) | Block | Nested conditional. |

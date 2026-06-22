@@ -22,7 +22,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `can_revive` | Boolean | Healing instance that can bring dead allies back to life. |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. |
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. |
-| `crit_chance` | Integer | Override for base critical hit probability. |
+| `crit_chance` | Float | Override for base critical hit probability. |
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). |
 | `damage` | Integer | The base damage properties of an attack. |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. |
@@ -93,7 +93,7 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 | `can_revive` | Boolean | Healing instance that can bring dead allies back to life. |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. |
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. |
-| `crit_chance` | Integer | Override for base critical hit probability. |
+| `crit_chance` | Float | Override for base critical hit probability. |
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). |
 | `damage` | Integer | The base damage properties of an attack. |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. |
@@ -159,7 +159,7 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 | :--- | :--- | :--- |
 | [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
 | `ai_base_score` | Integer |  |
-| `crit_chance` | Integer |  |
+| `crit_chance` | Float |  |
 | `damage` | Integer | The base damage properties of an attack. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
 | [`elements`](./Arrays.md#array-elements) | Array |  |

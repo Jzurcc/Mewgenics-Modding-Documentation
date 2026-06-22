@@ -18,11 +18,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | `bonus_itemroll_luck` | Integer |  | 8 |
-| `boss_health_multiplier` | Integer |  | 8 |
-| `coins_multiplier` | Integer |  | 8 |
+| `boss_health_multiplier` | Float |  | 8 |
+| `coins_multiplier` | Float |  | 8 |
 | [`easy`](#context-easy) | Block |  | 8 |
 | `event_difficulty` | Integer |  | 8 |
-| `food_multiplier` | Integer |  | 8 |
+| `food_multiplier` | Float |  | 8 |
 | [`hard`](#context-hard) | Block |  | 8 |
 | `wallet_size` | Integer |  | 8 |
 | `boss_elite_buffs` | Integer |  | 7 |
@@ -42,7 +42,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `champ_budget` | Integer |  | 8 |
+| `champ_budget` | Float |  | 8 |
 | `elite_budget` | Integer |  | 8 |
 | `elite_buffs` | Integer |  | 8 |
 | `rare_elite_buffs` | Integer |  | 8 |
@@ -64,7 +64,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `champ_budget` | Integer |  | 8 |
+| `champ_budget` | Float |  | 8 |
 | `champ_chance_mini` | Float |  | 8 |
 | `elite_buffs` | Integer |  | 8 |
 | `rare_elite_buffs` | Integer |  | 8 |

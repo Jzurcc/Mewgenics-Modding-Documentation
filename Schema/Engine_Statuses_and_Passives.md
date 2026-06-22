@@ -19,7 +19,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AOEBonus` | Integer | Applies or references the 'AOEBonus' effect/state. |
 | [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | Applies or references the 'AbilityAfterEnemyCastSpell_Stackable' effect/state. |
 | [`AbilityChargeRefundChance`](#abilitychargerefundchance) | Block | Applies the 'AbilityChargeRefundChance' effect. |
-| `AbilityDamageMultiplier` | Integer |  |
+| `AbilityDamageMultiplier` | Float |  |
 | `AbilityDisableIfLivingCrow` | Integer | Applies or references the 'AbilityDisableIfLivingCrow' effect/state. |
 | [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Applies or references the 'AbilityEnableIfConsumedCharacterHasTag' effect/state. |
 | `AbilityEnabledAtHealthThreshold` | Integer | Applies or references the 'AbilityEnabledAtHealthThreshold' effect/state. |
@@ -80,7 +80,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AddSelfStatusToWeapons`](#addselfstatustoweapons) | Block | Applies the 'AddSelfStatusToWeapons' effect. |
 | `AddSpeed` | Integer | Applies the 'AddSpeed' effect. |
 | `AddSpellDamage` | Integer | Applies the 'AddSpellDamage' effect. |
-| `AddStartingMana` | Integer | Applies or references the 'AddStartingMana' effect/state. |
+| `AddStartingMana` | Number | Applies or references the 'AddStartingMana' effect/state. |
 | [`AddStatusToAllDamage`](#addstatustoalldamage) | Block | Modifier: Injects a status effect into a specific action. |
 | [`AddStatusToAllDamageAbilities`](#addstatustoalldamageabilities) | Block | Applies the 'AddStatusToAllDamageAbilities' effect. |
 | [`AddStatusToBackstabs`](#addstatustobackstabs) | Block | Modifier: Injects a status effect into a specific action. |
@@ -123,7 +123,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AllSpellsCostActPoints` | Integer | Applies or references the 'AllSpellsCostActPoints' effect/state. |
 | `AllSpellsCostCharge` | Integer | Applies or references the 'AllSpellsCostCharge' effect/state. |
 | [`AllStatsAura`](#allstatsaura) | Block | Passive: Projects an aura that modifies all primary stats of nearby characters. |
-| `AllStatsUp` | Integer | Applies or references the 'AllStatsUp' effect/state. |
+| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. |
 | `AllStatsUpPerDisorder` | Integer | Applies or references the 'AllStatsUpPerDisorder' effect/state. |
 | `AllUnitsExplodeOnDeath` | Integer | Applies or references the 'AllUnitsExplodeOnDeath' effect/state. |
 | `AlliesAvoidTraps` | Integer | Applies the 'AlliesAvoidTraps' effect. |
@@ -174,17 +174,17 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AwardCoinsOnDeath` | Integer | Applies or references the 'AwardCoinsOnDeath' effect/state. |
 | `BackflipWhenTargeted` | Integer | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. |
 | `BackstabAllDirections` | Integer | Applies or references the 'BackstabAllDirections' effect/state. |
-| `BackstabCritChance` | Integer | Applies the 'BackstabCritChance' effect. |
+| `BackstabCritChance` | Float | Applies the 'BackstabCritChance' effect. |
 | `BackstabFront` | Integer |  |
 | `BackstabImmunity` | Integer | Applies or references the 'BackstabImmunity' effect/state. |
-| `BackstabWeakness` | Integer | Applies the 'BackstabWeakness' effect. |
+| `BackstabWeakness` | Float | Applies the 'BackstabWeakness' effect. |
 | [`BaitAura`](#baitaura) | Block | Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots). |
 | `BalanceStats` | Integer | Applies or references the 'BalanceStats' effect/state. |
 | `BaseStatMultiply` | Float | Applies or references the 'BaseStatMultiply' effect/state. |
 | `BasicAIDangerZone` | Integer | Applies or references the 'BasicAIDangerZone' effect/state. |
 | `BasicAttackAOEBonus` | Integer | Applies the 'BasicAttackAOEBonus' effect. |
 | `BasicAttackCantMiss` | Integer |  |
-| `BasicAttackCritChance` | Integer | Applies the 'BasicAttackCritChance' effect. |
+| `BasicAttackCritChance` | Float | Applies the 'BasicAttackCritChance' effect. |
 | `BasicAttackDamageMultiplier` | Integer | Applies the 'BasicAttackDamageMultiplier' effect. |
 | `BasicAttackStatusCarefulness` | Integer | Applies the 'BasicAttackStatusCarefulness' effect. |
 | [`BasicAttackStatusSwap`](./Arrays.md#array-basicattackstatusswap) | Array | Applies the 'BasicAttackStatusSwap' effect. |
@@ -195,7 +195,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BlackHolePassive` | Integer | Applies or references the 'BlackHolePassive' effect/state. |
 | [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum |  |
 | `BlastResistance` | Integer | Applies the 'BlastResistance' effect. |
-| `Bleed` | Integer | Applies or references the 'Bleed' effect/state. |
+| `Bleed` | Number | Applies or references the 'Bleed' effect/state. |
 | `BleedThorns` | Integer | Applies or references the 'BleedThorns' effect/state. |
 | `BlessingOfPeace` | Integer | Applies or references the 'BlessingOfPeace' effect/state. |
 | `Blind` | Integer |  |
@@ -294,10 +294,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Charge` | Integer | Applies or references the 'Charge' effect/state. |
 | [`ChargeSpiritBombAura`](./Enums.md#enum-chargespiritbombaura) | Enum | Applies or references the 'ChargeSpiritBombAura' effect/state. |
 | `CharismaIsMaxStat` | Integer | Applies or references the 'CharismaIsMaxStat' effect/state. |
-| `CharismaUp` | Integer | Applies or references the 'CharismaUp' effect/state. |
+| `CharismaUp` | Number | Applies or references the 'CharismaUp' effect/state. |
 | `CharmAllFlies` | Integer | Applies the 'CharmAllFlies' effect. |
 | `CharmImmunity` | Integer | Applies or references the 'CharmImmunity' effect/state. |
-| `Charmed` | Integer | Applies the 'Charmed' effect. |
+| [`Charmed`](./Arrays.md#array-charmed) | Array | Applies the 'Charmed' effect. |
 | [`CherubimReaction`](#cherubimreaction) | Block | Reaction: Custom reaction triggers for Cherubim enemies. |
 | [`ClassManaCostReduction`](#classmanacostreduction) | Block | Applies or references the 'ClassManaCostReduction' effect/state. |
 | `Cleanse` | Integer |  |
@@ -328,7 +328,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Conditional_Tiny`](#conditional_tiny) | Block |  |
 | `Conductor` | Integer | Applies the 'Conductor' effect. |
 | `ConductorManaRegen` | Integer | Applies the 'ConductorManaRegen' effect. |
-| `Confusion` | Integer | Applies the 'Confusion' effect. |
+| `Confusion` | Integer | Applies or references the 'Confusion' effect/state. |
 | [`ConfusionEffectOnTaggedAbilities`](./Enums.md#enum-confusioneffectontaggedabilities) | Enum | Applies the 'ConfusionEffectOnTaggedAbilities' effect. |
 | [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum |  |
 | `ConjureCastSpellsForAllies` | Integer | Applies the 'ConjureCastSpellsForAllies' effect. |
@@ -414,7 +414,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DoubleReceivedNegativeStatus` | Integer | Applies or references the 'DoubleReceivedNegativeStatus' effect/state. |
 | `DoubleReceivedPositiveStatus` | Integer | Applies or references the 'DoubleReceivedPositiveStatus' effect/state. |
 | `DownRankAIIfWeaponUsable` | Float | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. |
-| `DrinkWater` | Integer | Applies or references the 'DrinkWater' effect/state. |
+| `DrinkWater` | Integer |  |
 | [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Applies or references the 'DropAsFamiliarOnArmorBreak' effect/state. |
 | [`DropAsFamiliarOnTookDamage`](./Enums.md#enum-dropasfamiliarontookdamage) | Enum | Applies or references the 'DropAsFamiliarOnTookDamage' effect/state. |
 | [`DropSoulJarOnDeath`](./Enums.md#enum-dropsouljarondeath) | Enum | Applies or references the 'DropSoulJarOnDeath' effect/state. |
@@ -473,8 +473,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `FadeInsteadOfDie` | Integer | Applies or references the 'FadeInsteadOfDie' effect/state. |
 | [`FamiliarBonusAbility`](./Enums.md#enum-familiarbonusability) | Enum | Applies the 'FamiliarBonusAbility' effect. |
 | `FamiliarSecondaryDamageImmunity` | Integer | Applies the 'FamiliarSecondaryDamageImmunity' effect. |
-| `Fear` | Integer | Applies or references the 'Fear' effect/state. |
-| `Fights` | Integer | Applies or references the 'Fights' effect/state. |
+| `Fear` | Number | Applies or references the 'Fear' effect/state. |
+| `Fights` | Number | Applies or references the 'Fights' effect/state. |
 | [`FillMana`](./Arrays.md#array-fillmana) | Array | Applies the 'FillMana' effect. |
 | [`FinalBossBeamQueue`](#finalbossbeamqueue) | Block | Boss Logic: Attack queue for the final boss beam. |
 | [`FinalBossBecomeTheChild`](#finalbossbecomethechild) | Block | Boss Logic: Phase transition for the final boss. |
@@ -506,7 +506,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ForceSpecificInjury`](./Enums.md#enum-forcespecificinjury) | Enum | Applies the 'ForceSpecificInjury' effect. |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. |
 | [`ForceUseAbilityOnTarget`](#forceuseabilityontarget) | Block | Applies or references the 'ForceUseAbilityOnTarget' effect/state. |
-| [`FormChange`](#formchange) | Block | Transforms the character into a different state or form (e.g., Rage, HasCat). |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). |
 | [`FormChangeDuringWeatherElement`](#formchangeduringweatherelement) | Block | Logic: Changes form automatically during specific weather conditions. |
 | [`FormChangeHealthThreshold`](#formchangehealththreshold) | Block | Logic: Changes form when health crosses a threshold. |
 | [`FormChangeOffMap`](#formchangeoffmap) | Block | Logic: Changes form when pushed off the map. |
@@ -523,7 +523,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `FreeFirstCastEachMatch` | Integer | Applies or references the 'FreeFirstCastEachMatch' effect/state. |
 | [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum | Applies the 'FreePathfindElement' effect. |
 | `FreeSpellsAtFullMana` | Integer | Applies the 'FreeSpellsAtFullMana' effect. |
-| `Freeze` | Integer | Applies the 'Freeze' effect. |
+| [`Freeze`](./Arrays.md#array-freeze) | Array | Applies the 'Freeze' effect. |
 | `FreezePiercing` | Integer | Applies the 'FreezePiercing' effect. |
 | `FrontstabBasicAttackCritChance` | Integer | Applies the 'FrontstabBasicAttackCritChance' effect. |
 | `FrontstabCritChance` | Integer | Applies the 'FrontstabCritChance' effect. |
@@ -586,7 +586,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `IllusionTint` | Integer | Applies or references the 'IllusionTint' effect/state. |
 | [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Enum | Reaction: Executes an ability instantly, interrupting the current sequence. |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. |
-| `Immobile` | Integer | Applies the 'Immobile' effect. |
+| `Immobile` | Integer |  |
 | `ImmobilePassive` | Integer | Applies or references the 'ImmobilePassive' effect/state. |
 | `ImmortalLeeches` | Integer | Applies the 'ImmortalLeeches' effect. |
 | [`IncAuxCounterClamped`](#incauxcounterclamped) | Block | Increments a generic auxiliary counter on the character, capped by a maximum value. |
@@ -615,7 +615,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`KillsToMeat`](./Enums.md#enum-killstomeat) | Enum | Applies or references the 'KillsToMeat' effect/state. |
 | `KineticSpikes` | Integer | Applies or references the 'KineticSpikes' effect/state. |
 | `KnockOutCoin` | Integer | Forces the target to drop coins. |
-| [`KnockUpAndAway`](#knockupandaway) | Block |  |
+| [`KnockUpAndAway`](#knockupandaway) | Block | Displaces the target vertically and horizontally away from the source. |
 | `Knockback` | Integer | Applies or references the 'Knockback' effect/state. |
 | [`KnockbackIfCrit`](#knockbackifcrit) | Block | Applies or references the 'KnockbackIfCrit' effect/state. |
 | `KnockbackImmunity` | Integer | Applies the 'KnockbackImmunity' effect. |
@@ -639,10 +639,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | Applies or references the 'LockOrientationFaceTile' effect/state. |
 | [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum | Applies or references the 'LoopingSoundWhileAlive' effect/state. |
 | [`LowHealthAllyDodgeChanceAura`](#lowhealthallydodgechanceaura) | Block | Applies the 'LowHealthAllyDodgeChanceAura' effect. |
-| `LuckUp` | Integer | Applies or references the 'LuckUp' effect/state. |
+| `LuckUp` | Integer |  |
 | `Madness` | Integer | Applies the Madness debuff/status effect. |
 | `MagicDamageImmune` | Integer | Applies or references the 'MagicDamageImmune' effect/state. |
-| `MagicWeakness` | Integer | Applies or references the 'MagicWeakness' effect/state. |
+| `MagicWeakness` | Integer | Applies the 'MagicWeakness' effect. |
 | `MakeBasicAttackPassThroughThings` | Integer | Applies the 'MakeBasicAttackPassThroughThings' effect. |
 | `MakeBasicAttackPull` | Integer |  |
 | `MakeSpellsRequireCharge` | Integer | Applies the 'MakeSpellsRequireCharge' effect. |
@@ -702,7 +702,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `NeckArmorPassiveMultiplierBonus` | Integer | Applies or references the 'NeckArmorPassiveMultiplierBonus' effect/state. |
 | [`NextBattleStatus`](#nextbattlestatus) | Block | Applies the 'NextBattleStatus' effect. |
 | `NoHealthOnlyShield` | Integer | Applies or references the 'NoHealthOnlyShield' effect/state. |
-| `NoHealthRegen` | Integer | Applies or references the 'NoHealthRegen' effect/state. |
+| `NoHealthRegen` | Number | Applies or references the 'NoHealthRegen' effect/state. |
 | `NoManaRegen` | Integer | Applies the 'NoManaRegen' effect. |
 | `NoReflection` | Integer | Applies the 'NoReflection' effect. |
 | `NonLethal` | Integer | Applies the 'NonLethal' effect. |
@@ -760,7 +760,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`PassiveWhileWearingMetal`](#passivewhilewearingmetal) | Block | Applies the 'PassiveWhileWearingMetal' effect. |
 | `PercentHeal` | Integer | Applies the 'PercentHeal' effect. |
 | `PermanentCharisma` | Integer | Applies or references the 'PermanentCharisma' effect/state. |
-| `PermanentConfusion` | Integer | Applies or references the 'PermanentConfusion' effect/state. |
+| `PermanentConfusion` | Number | Applies or references the 'PermanentConfusion' effect/state. |
 | `PermanentConstitution` | Integer | Applies or references the 'PermanentConstitution' effect/state. |
 | `PermanentDexterity` | Integer | Applies the 'PermanentDexterity' effect. |
 | `PermanentImmobile` | Integer | Applies the 'PermanentImmobile' effect. |
@@ -776,7 +776,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PhysicalAttacksMiss` | Integer | Applies or references the 'PhysicalAttacksMiss' effect/state. |
 | `Piercing` | Integer | Applies the 'Piercing' effect. |
 | `Plant` | Integer | Applies or references the 'Plant' effect/state. |
-| `Poison` | Integer | Applies or references the 'Poison' effect/state. |
+| `Poison` | Number | Applies or references the 'Poison' effect/state. |
 | `PoisonLace` | Integer | Applies or references the 'PoisonLace' effect/state. |
 | `PoisonMultiplier` | Integer | Applies the 'PoisonMultiplier' effect. |
 | `PoisonThorns` | Integer | Applies or references the 'PoisonThorns' effect/state. |
@@ -789,7 +789,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PrioritizeHitDifferentTargets` | Integer | Applies or references the 'PrioritizeHitDifferentTargets' effect/state. |
 | `PrioritizePlayerCats` | Integer | Applies or references the 'PrioritizePlayerCats' effect/state. |
 | `PrioritizeWeakestEnemy` | Integer | Applies or references the 'PrioritizeWeakestEnemy' effect/state. |
-| `ProbeCharmed` | Integer | Applies or references the 'ProbeCharmed' effect/state. |
+| `ProbeCharmed` | Number | Applies or references the 'ProbeCharmed' effect/state. |
 | [`ProtectTargetedAllies`](#protecttargetedallies) | Block | AI Logic: Navigates to intercept attacks directed at allies. |
 | `PullSourceToKnockbackImmuneTarget` | Integer | Applies the 'PullSourceToKnockbackImmuneTarget' effect. |
 | `PullSourceToTarget` | Integer | Applies or references the 'PullSourceToTarget' effect/state. |
@@ -814,7 +814,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Reanimate` | Integer | Applies the 'Reanimate' effect. |
 | [`ReceivedStatusReplacement`](./Arrays.md#array-receivedstatusreplacement) | Array | Applies the 'ReceivedStatusReplacement' effect. |
 | `ReclaimItemOnBreak` | Integer | Applies or references the 'ReclaimItemOnBreak' effect/state. |
-| `ReduceManaCost` | Integer | Applies the 'ReduceManaCost' effect. |
+| `ReduceManaCost` | Integer | Applies or references the 'ReduceManaCost' effect/state. |
 | `ReduceSpellCostsPerDisorder` | Integer | Applies or references the 'ReduceSpellCostsPerDisorder' effect/state. |
 | `ReduceSpellCostsPerParasite` | Integer | Applies or references the 'ReduceSpellCostsPerParasite' effect/state. |
 | `Reflect` | Integer | Applies or references the 'Reflect' effect/state. |
@@ -847,7 +847,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`RemoveStatusStacks`](#removestatusstacks) | Block | Logic: Removes stacks of a specific status effect. |
 | `RepairAll` | Integer | Applies or references the 'RepairAll' effect/state. |
 | `RepairTrinket` | Integer | Applies or references the 'RepairTrinket' effect/state. |
-| `RepairWeapon` | Integer | Applies the 'RepairWeapon' effect. |
+| `RepairWeapon` | Integer | Applies or references the 'RepairWeapon' effect/state. |
 | `RepairWeaponCondition` | Integer | Applies the 'RepairWeaponCondition' effect. |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. |
 | [`ReplaceBasicAttackWhenCastable`](./Enums.md#enum-replacebasicattackwhencastable) | Enum | Applies the 'ReplaceBasicAttackWhenCastable' effect. |
@@ -861,7 +861,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ReplaceSpell`](#replacespell) | Block | Replaces a spell in the character's hand/deck with a different one. |
 | [`ReplaceSpellsWhenDead`](./Enums.md#enum-replacespellswhendead) | Enum | Applies the 'ReplaceSpellsWhenDead' effect. |
 | `RerollItemsOnBattleEnd` | Integer | Applies or references the 'RerollItemsOnBattleEnd' effect/state. |
-| `ReturnBoundItemOnBattleEnd` | Integer |  |
+| `ReturnBoundItemOnBattleEnd` | Integer | Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state. |
 | [`RevengeDamage`](#revengedamage) | Block |  |
 | `Revive` | Integer | Applies or references the 'Revive' effect/state. |
 | [`ReviveNextRound`](#revivenextround) | Block | Queues the character to be resurrected at the start of the next combat round. |
@@ -942,7 +942,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. |
 | `SpawnerCatDataReference` | Integer | Applies or references the 'SpawnerCatDataReference' effect/state. |
 | [`SpecialFriends`](#specialfriends) | Block | Applies the 'SpecialFriends' effect. |
-| `SpeedUp` | Integer | Applies or references the 'SpeedUp' effect/state. |
+| `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. |
 | `SpeedUp_WithoutInitiative` | Integer | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. |
 | `SpellDamageUp` | Integer | Applies or references the 'SpellDamageUp' effect/state. |
 | [`SpewerAltGraphics`](#speweraltgraphics) | Block | Visual: Alternative graphics for Spewer enemies. |
@@ -994,7 +994,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusCollector`](#statuscollector) | Block | Passive: Gains benefits based on the number of statuses applied to them. |
 | [`StatusDamagers`](#statusdamagers) | Block | Event Trigger: Applies nested statuses to damagers. |
 | [`StatusEachRoundBegin`](#statuseachroundbegin) | Block |  |
-| [`StatusEachRoundEnd`](#statuseachroundend) | Block |  |
+| [`StatusEachRoundEnd`](#statuseachroundend) | Block | Applies or references the 'StatusEachRoundEnd' effect/state. |
 | [`StatusEachTurnBegin`](#statuseachturnbegin) | Block | Event Trigger: Applies nested statuses to each turn begin. |
 | [`StatusEachTurnBeginIfHasStatus`](#statuseachturnbeginifhasstatus) | Block | Event Trigger: Applies a status at the start of the turn if a prerequisite status is met. |
 | [`StatusEachTurnEnd`](#statuseachturnend) | Block | Applies or references the 'StatusEachTurnEnd' effect/state. |
@@ -1075,7 +1075,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `StevenBolts` | Integer | Applies or references the 'StevenBolts' effect/state. |
 | `StrengthForEachNeighboringEnemy` | Integer | Applies the 'StrengthForEachNeighboringEnemy' effect. |
 | `StrengthInNumbersAura` | Integer | Applies the 'StrengthInNumbersAura' effect. |
-| `StrengthUp` | Integer | Applies or references the 'StrengthUp' effect/state. |
+| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. |
 | `StrictLimitDamage` | Integer | Applies the 'StrictLimitDamage' effect. |
 | `StripKnockback` | Integer | Applies or references the 'StripKnockback' effect/state. |
 | `StripStatuses` | Integer | Applies or references the 'StripStatuses' effect/state. |
@@ -1114,7 +1114,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TempPassiveUntilSettled`](#temppassiveuntilsettled) | Block | Applies or references the 'TempPassiveUntilSettled' effect/state. |
 | `TempRangeUp` | Integer | Applies or references the 'TempRangeUp' effect/state. |
 | `TempSpellDamageUp` | Integer | Applies the 'TempSpellDamageUp' effect. |
-| `TempStrengthUp` | Integer | Applies or references the 'TempStrengthUp' effect/state. |
+| `TempStrengthUp` | Number | Applies or references the 'TempStrengthUp' effect/state. |
 | [`Temporary`](#temporary) | Block | A wrapper block for applying status effects that automatically expire. |
 | [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum | Applies or references the 'Terminator2Chase' effect/state. |
 | [`Terminator2Run`](#terminator2run) | Block | AI Movement: Specific run logic for Terminator2. |
@@ -1186,7 +1186,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `WeaponDamageMultiplierBonus` | Integer | Applies the 'WeaponDamageMultiplierBonus' effect. |
 | `WeaponPassiveMultiplierBonus` | Integer |  |
 | `WeaponsDontLoseDurability` | Integer | Applies or references the 'WeaponsDontLoseDurability' effect/state. |
-| `Webbed` | Integer | Applies or references the 'Webbed' effect/state. |
+| `Webbed` | Number | Applies or references the 'Webbed' effect/state. |
 | [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | Applies or references the 'WeremanTransformationReceiver' effect/state. |
 | `Wet` | Integer | Applies or references the 'Wet' effect/state. |
 | [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | Applies or references the 'WhitelistPickupType' effect/state. |
@@ -1209,10 +1209,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `XIsTimesDamageTaken` | Integer | Applies or references the 'XIsTimesDamageTaken' effect/state. |
 | `YOffset` | Float | Applies or references the 'YOffset' effect/state. |
 | `ZeroKnockbackDamage` | Integer | Applies or references the 'ZeroKnockbackDamage' effect/state. |
-| `Zombie` | Integer |  |
+| `Zombie` | Number |  |
 | `ally_chance` | Integer |  |
 | `cant_miss` | Boolean |  |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. |
 | `count` | Integer | Quantity. |
 | `damage` | Integer | The base damage properties of an attack. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
@@ -1476,7 +1476,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 | :--- | :--- | :--- |
 | [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
 | `ally_chance` | Integer |  |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. |
 
 </details>
 

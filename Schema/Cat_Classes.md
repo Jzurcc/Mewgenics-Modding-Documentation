@@ -41,7 +41,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Graphics.md`](./Engine_Graphics.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -52,6 +51,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Graphics Blocks}`](./Engine_Graphics.md#all-confirmed-graphic-block-values) | Block | A visual/animation configuration. See Engine_Graphics.md for the full schema. |  |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |
 | `palette` | Integer |  | 13 |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 13 |

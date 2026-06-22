@@ -48,7 +48,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `damage_instance`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Damage.md`](./Engine_Damage.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -59,6 +58,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1785 |
 | `damage` | Integer | The base damage properties of an attack. | 1446 |
@@ -75,7 +75,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 26 |
 | [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. | 24 |
 | [`raw_damage`](./Math_Equations.md) | Equation | Unmitigated, unscaled base numbers. | 22 |
-| `crit_chance` | Integer | Override for base critical hit probability. | 16 |
+| `crit_chance` | Float | Override for base critical hit probability. | 16 |
 | `override_trample_damage` | Boolean | Custom damage value for trample moves. | 15 |
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 14 |
 | `can_revive` | Boolean | Healing instance that can bring dead allies back to life. | 8 |
@@ -139,7 +139,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Graphics.md`](./Engine_Graphics.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -150,6 +149,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Graphics Blocks}`](./Engine_Graphics.md#all-confirmed-graphic-block-values) | Block | A visual/animation configuration. See Engine_Graphics.md for the full schema. |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 1559 |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. | 488 |
 | [`projectile`](./Enums.md#enum-projectile) | Enum | References a projectile entity. | 228 |
@@ -215,7 +215,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `detatched_animation_reach` | Integer |  | 5 |
 | [`empty_animation`](./Enums.md#enum-empty_animation) | Enum |  | 5 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 5 |
-| `fixed_jump_height` | Integer |  | 4 |
+| `fixed_jump_height` | Float |  | 4 |
 | [`rocket_swirl`](#context-rocket_swirl) | Block | Visual parameters for swirling projectile paths. | 4 |
 | `sync_frames` | Integer |  | 4 |
 | [`dash_decelerating_animation`](./Enums.md#enum-dash_decelerating_animation) | Enum |  | 3 |
@@ -234,7 +234,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `jump_height_multiplier` | Float | Overrides for jump physics. | 2 |
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum |  | 2 |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  | 2 |
-| `max_throw_height` | Integer |  | 2 |
+| `max_throw_height` | Float |  | 2 |
 | [`particle_mat`](./Enums.md#enum-particle_mat) | Enum |  | 2 |
 | [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum |  | 2 |
 | [`primed_alt_animation`](./Strings.md#string-primed_alt_animation) | String |  | 2 |
@@ -246,7 +246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Visuals applied to the target receiving the effect. | 1 |
 | [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Distinct animation used when targeting a friendly unit. | 1 |
 | [`animate_name`](./Enums.md#enum-animate_name) | String | Animates the ability name text on cast. | 1 |
-| `apex_distance` | Integer | Calculations for the peak of a jump/lob arc. | 1 |
+| `apex_distance` | Float | Calculations for the peak of a jump/lob arc. | 1 |
 | `apex_time` | Float | Calculations for the peak of a jump/lob arc. | 1 |
 | `bypass_combatspeed` | Boolean |  | 1 |
 | [`damage_threshold_altanimations`](#context-damage_threshold_altanimations) | Block | Triggers different hit animations based on the amount of damage dealt. | 1 |
@@ -258,7 +258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `face_targets` | Boolean | Forces the sprite to look at the target tile. | 1 |
 | `first_castpoint_is_self_damage_only` | Boolean |  | 1 |
 | `hang_time` | Float |  | 1 |
-| `jump_speed_multiplier` | Integer |  | 1 |
+| `jump_speed_multiplier` | Float |  | 1 |
 | `lob_speed` | Float | Adjustments for arcing projectiles. | 1 |
 | `max_range` | Integer | The maximum and minimum distance required to cast. | 1 |
 | `min_range` | Integer | The maximum and minimum distance required to cast. | 1 |
@@ -275,7 +275,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -482,7 +481,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `self_damage`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Damage.md`](./Engine_Damage.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -493,6 +491,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 200 |
 | `damage` | Equation | The base damage properties of an attack. | 47 |
 | `piercing` | Boolean |  | 12 |
@@ -601,7 +600,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `Else`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -730,7 +728,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `splash_damage`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Damage.md`](./Engine_Damage.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -741,6 +738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `damage` | Integer | The base damage properties of an attack. | 32 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 17 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 13 |
@@ -749,7 +747,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `makes_contact` | Boolean |  | 6 |
 | `override_trample_damage` | Boolean |  | 2 |
 | `ai_base_score` | Integer |  | 1 |
-| `crit_chance` | Integer |  | 1 |
+| `crit_chance` | Float |  | 1 |
 | `force_no_knockback` | Boolean |  | 1 |
 | `force_play_hit_animation` | Boolean |  | 1 |
 | [`layer`](./Enums.md#enum-layer) | Enum |  | 1 |
@@ -849,7 +847,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `Consumed`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -952,14 +949,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ear1` | Integer | Sprite variant ID for the front ear. | 10 |
 | `tail` | Integer | Sprite variant ID for the tail. | 10 |
 | `ear2` | Integer |  | 9 |
-| `arm2` | Integer |  | 8 |
-| `mouth` | Integer |  | 8 |
-| `arm1` | Integer | Sprite variant ID for the front arm. | 7 |
+| `arm2` | Float |  | 8 |
+| `mouth` | Float |  | 8 |
+| `arm1` | Float | Sprite variant ID for the front arm. | 7 |
 | `leg1` | Integer | Sprite variant ID for the front leg. | 5 |
 | `leg2` | Integer |  | 5 |
-| `head` | Integer | Sprite variant ID for the head. | 3 |
+| `head` | Float | Sprite variant ID for the head. | 3 |
 | `texture` | Integer |  | 3 |
-| `body` | Integer | Sprite variant ID for the body. | 2 |
+| `body` | Float | Sprite variant ID for the body. | 2 |
 | `eye1` | Integer |  | 1 |
 | `eye2` | Integer |  | 1 |
 | `eyebrow1` | Integer |  | 1 |
@@ -999,7 +996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`form`](./Strings.md#string-form) | String |  | 75 |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -1054,7 +1051,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
+| `odds` | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
 | [`ApplyToRandomPartyMemberIfPossible`](#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
 | [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
@@ -1399,7 +1396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Arrays.md#array-pool) | Enum | The item pool to draw the parasite from. | 5 |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
 
 </details>
 
@@ -1721,10 +1718,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `arm1` | Integer | Scale multiplier for the front arm. | 1 |
-| `arm2` | Integer | Scale multiplier for the back arm. | 1 |
-| `body` | Integer |  | 1 |
-| `mouth` | Integer |  | 1 |
+| `arm1` | Float | Scale multiplier for the front arm. | 1 |
+| `arm2` | Float | Scale multiplier for the back arm. | 1 |
+| `body` | Float |  | 1 |
+| `mouth` | Float |  | 1 |
 
 </details>
 
@@ -2185,7 +2182,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `CreateGlobalModifiers`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_GlobalModifiers.md`](./Engine_GlobalModifiers.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2351,7 +2347,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0) of spawning. | 2 |
+| `chance` | Float | Probability (0.0 to 1.0) of spawning. | 2 |
 | [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 2 |
 
 </details>
@@ -2389,7 +2385,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability of triggering the quake. | 2 |
+| `chance` | Float | Probability of triggering the quake. | 2 |
 | `radius` | Integer | The tile radius of the quake. | 2 |
 
 </details>
@@ -2687,7 +2683,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer | The probability (0.0 to 1.0) of applying the debuff. | 1 |
+| `odds` | Float | The probability (0.0 to 1.0) of applying the debuff. | 1 |
 
 </details>
 
@@ -2798,7 +2794,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`ApplyPassives`](#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
-| `odds` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `odds` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -3277,7 +3273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of transmitting. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of transmitting. | 1 |
 | [`disease`](./Enums.md#enum-disease) | Enum | The specific status effect ID representing the disease. | 1 |
 
 </details>
@@ -3476,7 +3472,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `bonk_damage`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Damage.md`](./Engine_Damage.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3487,6 +3482,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `damage` | Integer | The base damage properties of an attack. | 1 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 

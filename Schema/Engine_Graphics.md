@@ -25,7 +25,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | [`animation_in`](./Enums.md#enum-animation_in) | Enum | Used for transition states (like burrowing). |
 | [`animation_out`](./Enums.md#enum-animation_out) | Enum | Used for transition states (like burrowing). |
 | `aoe_spell_on_land` | Boolean | Visual trigger when a jump lands. |
-| `apex_distance` | Integer | Calculations for the peak of a jump/lob arc. |
+| `apex_distance` | Float | Calculations for the peak of a jump/lob arc. |
 | `apex_time` | Float | Calculations for the peak of a jump/lob arc. |
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum | Specific spawn points for particles. |
 | `art_flip` | Integer |  |
@@ -79,7 +79,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `fall_from_sky` | Boolean | Spawns the projectile from the top of the screen. |
 | `fall_randomize_timing` | Float |  |
 | `first_castpoint_is_self_damage_only` | Boolean |  |
-| `fixed_jump_height` | Integer |  |
+| `fixed_jump_height` | Float |  |
 | `fixed_jump_speed` | Float |  |
 | `four_way_animations` | Boolean |  |
 | [`full_jump_animation`](./Enums.md#enum-full_jump_animation) | Enum |  |
@@ -94,7 +94,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `ignore_slowtiles` | Boolean |  |
 | [`jump_attack_animation`](./Enums.md#enum-jump_attack_animation) | Enum | Overrides for jump physics. |
 | `jump_height_multiplier` | Float | Overrides for jump physics. |
-| `jump_speed_multiplier` | Integer |  |
+| `jump_speed_multiplier` | Float |  |
 | [`jump_start_animation`](./Enums.md#enum-jump_start_animation) | Enum |  |
 | [`land_animation`](./Enums.md#enum-land_animation) | Enum |  |
 | `lob` | Boolean |  |
@@ -106,7 +106,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum |  |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  |
 | `max_range` | Integer | The maximum and minimum distance required to cast. |
-| `max_throw_height` | Integer |  |
+| `max_throw_height` | Float |  |
 | `max_tiles_single_loop` | Integer |  |
 | `min_range` | Integer | The maximum and minimum distance required to cast. |
 | `min_throw_height` | Float |  |
@@ -115,7 +115,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | [`mode`](./Enums.md#enum-mode) | Enum |  |
 | [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum |  |
 | `move_speed_multiplier` | Float |  |
-| `move_speed_sync_frames` | Integer |  |
+| `move_speed_sync_frames` | Float |  |
 | [`move_start_animation`](./Enums.md#enum-move_start_animation) | Enum |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  |
 | `name` | String | Localization key for the character's name. |
@@ -202,7 +202,7 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | [`animation_in`](./Enums.md#enum-animation_in) | Enum | Used for transition states (like burrowing). |
 | [`animation_out`](./Enums.md#enum-animation_out) | Enum | Used for transition states (like burrowing). |
 | `aoe_spell_on_land` | Boolean | Visual trigger when a jump lands. |
-| `apex_distance` | Integer | Calculations for the peak of a jump/lob arc. |
+| `apex_distance` | Float | Calculations for the peak of a jump/lob arc. |
 | `apex_time` | Float | Calculations for the peak of a jump/lob arc. |
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum | Specific spawn points for particles. |
 | `art_flip` | Integer |  |
@@ -256,7 +256,7 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | `fall_from_sky` | Boolean | Spawns the projectile from the top of the screen. |
 | `fall_randomize_timing` | Float |  |
 | `first_castpoint_is_self_damage_only` | Boolean |  |
-| `fixed_jump_height` | Integer |  |
+| `fixed_jump_height` | Float |  |
 | `fixed_jump_speed` | Float |  |
 | `four_way_animations` | Boolean |  |
 | [`full_jump_animation`](./Enums.md#enum-full_jump_animation) | Enum |  |
@@ -271,7 +271,7 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | `ignore_slowtiles` | Boolean |  |
 | [`jump_attack_animation`](./Enums.md#enum-jump_attack_animation) | Enum | Overrides for jump physics. |
 | `jump_height_multiplier` | Float | Overrides for jump physics. |
-| `jump_speed_multiplier` | Integer |  |
+| `jump_speed_multiplier` | Float |  |
 | [`jump_start_animation`](./Enums.md#enum-jump_start_animation) | Enum |  |
 | [`land_animation`](./Enums.md#enum-land_animation) | Enum |  |
 | `lob` | Boolean |  |
@@ -283,7 +283,7 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | [`mask_center`](./Enums.md#enum-mask_center) | Enum |  |
 | [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  |
 | `max_range` | Integer | The maximum and minimum distance required to cast. |
-| `max_throw_height` | Integer |  |
+| `max_throw_height` | Float |  |
 | `max_tiles_single_loop` | Integer |  |
 | `min_range` | Integer | The maximum and minimum distance required to cast. |
 | `min_throw_height` | Float |  |
@@ -292,7 +292,7 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 | [`mode`](./Enums.md#enum-mode) | Enum |  |
 | [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum |  |
 | `move_speed_multiplier` | Float |  |
-| `move_speed_sync_frames` | Integer |  |
+| `move_speed_sync_frames` | Float |  |
 | [`move_start_animation`](./Enums.md#enum-move_start_animation) | Enum |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  |
 | `name` | String | Localization key for the character's name. |

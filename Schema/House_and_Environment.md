@@ -31,7 +31,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 4 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 3 |
 | [`n`](./Arrays.md#array-n) | Array |  | 2 |
-| `volume_adjustment` | Integer |  | 2 |
+| `volume_adjustment` | Float |  | 2 |
 | [`BasementUpgrade`](#context-basementupgrade) | Block |  | 1 |
 | [`BasementUpgrade2`](#context-basementupgrade2) | Block |  | 1 |
 | [`BasementUpgrade3`](#context-basementupgrade3) | Block |  | 1 |
@@ -64,7 +64,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -118,7 +117,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `amount` | Float |  | 9 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 9 |
-| `volume_adjustment` | Integer |  | 9 |
+| `volume_adjustment` | Float |  | 9 |
 
 </details>
 
@@ -144,7 +143,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `Else`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -175,7 +173,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
-| `max_radius` | Integer |  | 2 |
+| `max_radius` | Float |  | 2 |
 | [`min_radius`](./Enums.md#enum-min_radius) | Float |  | 2 |
 | [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array |  | 2 |
 | [`number`](./Arrays.md#array-number) | Array |  | 1 |
@@ -984,7 +982,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max_radius` | Integer |  | 1 |
+| `max_radius` | Float |  | 1 |
 | `min_radius` | Float |  | 1 |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 1 |
 

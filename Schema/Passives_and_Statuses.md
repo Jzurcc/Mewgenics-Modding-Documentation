@@ -152,7 +152,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -331,7 +330,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`disease`](./Enums.md#enum-disease) | Enum | The specific status effect ID representing the disease. | 12 |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of transmitting. | 11 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of transmitting. | 11 |
 | `can_apply_to_anything` | Boolean |  | 6 |
 
 </details>
@@ -751,7 +750,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 6 |
+| `chance` | Float | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 6 |
 | [`disease`](./Enums.md#enum-disease) | Enum |  | 6 |
 | `can_apply_to_anything` | Boolean |  | 1 |
 
@@ -761,7 +760,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `Else`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2020,7 +2018,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | `ally_chance` | Integer |  | 2 |
-| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
+| `chance` | Float | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
  | `Quivered` | Number | Applies the 'Quivered' effect. | 2 | 
  | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 | 
 
@@ -2040,7 +2038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
-| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
+| `chance` | Float | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
 
 </details>
 
@@ -2595,7 +2593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
+| `chance` | Float | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
 | `theshold` | Integer |  | 2 |
 
 </details>
@@ -3666,8 +3664,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `advantage_softcap` | Integer |  | 1 |
-| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
+| `advantage_softcap` | Float |  | 1 |
+| `chance` | Float | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -3684,7 +3682,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
 | `ability_damage_only` | Boolean |  | 1 |
-| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
+| `chance` | Float | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -3823,7 +3821,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
 | `advantage_polarity` | Integer |  | 1 |
-| `chance` | Integer | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
+| `chance` | Float | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -3907,7 +3905,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
+| `odds` | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
 
 </details>
 

@@ -34,10 +34,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `damage_ally_corpse` | Integer |  | 32 |
 | `damage_enemy` | Integer |  | 32 |
 | `damage_enemy_corpse` | Float |  | 32 |
-| `damage_self` | Integer |  | 32 |
+| `damage_self` | Float |  | 32 |
 | `debuff_ally` | Float |  | 32 |
 | `debuff_enemy` | Integer |  | 32 |
-| `debuff_self` | Integer |  | 32 |
+| `debuff_self` | Float |  | 32 |
 | `heal_ally` | Integer |  | 32 |
 | `heal_enemy` | Integer |  | 32 |
 | `heal_self` | Integer |  | 32 |

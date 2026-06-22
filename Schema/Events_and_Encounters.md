@@ -56,7 +56,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `reward`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -67,6 +66,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`common`](#context-common) | Block | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
 | [`rare`](#context-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 72 |
@@ -98,7 +98,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `common`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -109,6 +108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 608 |
 | `set_frame` | Integer |  | 150 |
 | [`self_status_next_fight`](#context-self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
@@ -172,7 +172,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `rare`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -183,6 +182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 612 |
 | `set_frame` | Integer |  | 179 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 124 |
@@ -266,7 +266,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `good`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -277,6 +276,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`reward`](#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
 | `set_frame` | Integer |  | 285 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 185 |
@@ -342,7 +342,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `bad`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -353,6 +352,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`reward`](#context-reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
 | `set_frame` | Integer |  | 219 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 38 |
@@ -412,7 +412,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `main`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Events.md`](./Engine_Events.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -423,6 +422,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Nodes}`](./Engine_Events.md#all-confirmed-event-node-values) | Block | An event outcome node. See Engine_Events.md for the full schema. |  |
 | [`options`](#context-options) | Block | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 208 |
 | [`setup`](#context-setup) | Block | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
@@ -976,16 +976,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `eyes` | Integer |  | 12 |
-| `mouth` | Integer |  | 11 |
+| `mouth` | Float |  | 11 |
 | `ears` | Integer |  | 10 |
 | `eyebrows` | Integer |  | 8 |
-| `head` | Integer | Event Node: Story branch or dialog option representing the 'Head' action. | 7 |
+| `head` | Float | Event Node: Story branch or dialog option representing the 'Head' action. | 7 |
 | `legs` | Integer |  | 7 |
 | `arms` | Integer |  | 6 |
-| `body` | Integer | Event Node: Story branch or dialog option representing the 'Body' action. | 6 |
+| `body` | Float | Event Node: Story branch or dialog option representing the 'Body' action. | 6 |
 | `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 |
 | `eye1` | Integer |  | 3 |
-| `arm1` | Integer |  | 2 |
+| `arm1` | Float |  | 2 |
 | `ear1` | Integer |  | 2 |
 | `eyebrow1` | Integer |  | 2 |
 | `leg1` | Integer |  | 2 |
@@ -1071,17 +1071,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `mouth` | Integer |  | 9 |
+| `mouth` | Float |  | 9 |
 | `count` | Integer | Quantity. | 8 |
 | `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 7 |
 | `ears` | Integer |  | 5 |
 | `eyes` | Integer |  | 5 |
 | `legs` | Integer |  | 5 |
-| `body` | Integer | Event Node: Story branch or dialog option representing the 'Body' action. | 4 |
+| `body` | Float | Event Node: Story branch or dialog option representing the 'Body' action. | 4 |
 | `eyebrows` | Integer |  | 3 |
-| `head` | Integer | Event Node: Story branch or dialog option representing the 'Head' action. | 3 |
-| `arm1` | Integer |  | 2 |
-| `arm2` | Integer |  | 2 |
+| `head` | Float | Event Node: Story branch or dialog option representing the 'Head' action. | 3 |
+| `arm1` | Float |  | 2 |
+| `arm2` | Float |  | 2 |
 | `leg1` | Integer |  | 1 |
 | `leg2` | Integer |  | 1 |
 | `texture` | Integer |  | 1 |
@@ -2019,7 +2019,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ears` | Integer |  | 2 |
 | `eyebrows` | Integer |  | 2 |
 | `eyes` | Integer |  | 2 |
-| `mouth` | Integer |  | 2 |
+| `mouth` | Float |  | 2 |
 
 </details>
 
@@ -4249,7 +4249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability weight for this outcome. | 1 |
+| `chance` | Float | Probability weight for this outcome. | 1 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 |
 
 </details>

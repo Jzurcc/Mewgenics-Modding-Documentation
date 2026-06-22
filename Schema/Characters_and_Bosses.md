@@ -230,7 +230,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Graphics.md`](./Engine_Graphics.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -241,6 +240,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Graphics Blocks}`](./Engine_Graphics.md#all-confirmed-graphic-block-values) | Block | A visual/animation configuration. See Engine_Graphics.md for the full schema. |  |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 517 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 461 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 409 |
@@ -253,7 +253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 33 |
 | `piece_alt_frame` | Integer |  | 27 |
 | [`shadow`](./Enums.md#enum-shadow) | Enum |  | 23 |
-| `move_speed_sync_frames` | Integer |  | 20 |
+| `move_speed_sync_frames` | Float |  | 20 |
 | `no_splatter` | Boolean |  | 17 |
 | [`projectile_spawn_offset`](./Arrays.md#array-projectile_spawn_offset) | Array |  | 17 |
 | [`tint`](./Arrays.md#array-tint) | Array |  | 17 |
@@ -773,11 +773,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`palette`](./Enums.md#enum-palette) | Enum |  | 16 |
-| `arm1` | Integer | Sprite variant ID for the front arm. | 3 |
-| `arm2` | Integer |  | 3 |
-| `body` | Integer | Sprite variant ID for the body. | 3 |
+| `arm1` | Float | Sprite variant ID for the front arm. | 3 |
+| `arm2` | Float |  | 3 |
+| `body` | Float | Sprite variant ID for the body. | 3 |
 | `ear1` | Integer | Sprite variant ID for the front ear. | 3 |
-| `head` | Integer | Sprite variant ID for the head. | 3 |
+| `head` | Float | Sprite variant ID for the head. | 3 |
 | `leg1` | Integer | Sprite variant ID for the front leg. | 3 |
 | `leg2` | Integer |  | 3 |
 | `tail` | Integer | Sprite variant ID for the tail. | 3 |
@@ -906,7 +906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Antidote` | Float | Applies or references the 'Antidote' effect/state. | 5 |
 | `Blessing` | Float | Applies or references the 'Blessing' effect/state. | 5 |
 | `BigCatnip` | Integer | Applies or references the 'BigCatnip' effect/state. | 4 |
-| `BigScrap` | Integer | Applies or references the 'BigScrap' effect/state. | 4 |
+| `BigScrap` | Float | Applies or references the 'BigScrap' effect/state. | 4 |
 | `BiggestFood` | Integer | Applies or references the 'BiggestFood' effect/state. | 4 |
 | `Coin` | Integer | Applies or references the 'Coin' effect/state. | 4 |
 | `BigFood` | Integer | Applies or references the 'BigFood' effect/state. | 2 |
@@ -915,7 +915,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Coin4` | Integer | Applies or references the 'Coin4' effect/state. | 2 |
 | `MedCatnip` | Integer | Applies or references the 'MedCatnip' effect/state. | 2 |
 | `MedScrap` | Integer | Applies or references the 'MedScrap' effect/state. | 2 |
-| `RandomArmorPickup` | Integer | Applies or references the 'RandomArmorPickup' effect/state. | 2 |
+| `RandomArmorPickup` | Float | Applies or references the 'RandomArmorPickup' effect/state. | 2 |
 | `RandomCatnipPickup` | Integer | Applies or references the 'RandomCatnipPickup' effect/state. | 2 |
 | `RandomFoodPickup` | Integer | Applies or references the 'RandomFoodPickup' effect/state. | 2 |
 | `Bear` | Integer | Applies or references the 'Bear' effect/state. | 1 |
@@ -937,7 +937,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `MedBirdPool` | Integer | Applies or references the 'MedBirdPool' effect/state. | 1 |
 | `Mutant` | Integer | Character Form: Behavior and stats for the 'Mutant' state. | 1 |
 | `Pigeon` | Integer | Applies or references the 'Pigeon' effect/state. | 1 |
-| `RandomBiggerArmorPickup` | Integer | Applies or references the 'RandomBiggerArmorPickup' effect/state. | 1 |
+| `RandomBiggerArmorPickup` | Float | Applies or references the 'RandomBiggerArmorPickup' effect/state. | 1 |
 | `RandomBiggerCatnipPickup` | Integer | Applies or references the 'RandomBiggerCatnipPickup' effect/state. | 1 |
 | `RandomBiggerFoodPickup` | Integer | Applies or references the 'RandomBiggerFoodPickup' effect/state. | 1 |
 | `Raven` | Integer | Applies or references the 'Raven' effect/state. | 1 |
@@ -1019,7 +1019,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1565,7 +1564,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `Consumed`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2282,7 +2280,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 2 |
+| `odds` | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 2 |
 
 </details>
 
@@ -3458,7 +3456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
-| `chance` | Integer | Probability (0.0 to 1.0) of executing this action. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0) of executing this action. | 1 |
 
 </details>
 
@@ -3475,7 +3473,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0) of executing this action. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0) of executing this action. | 1 |
 | [`form`](./Enums.md#enum-form) | Enum |  | 1 |
 
 </details>
@@ -3606,7 +3604,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 1 |
+| `odds` | Float | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 1 |
 
 </details>
 
@@ -3664,7 +3662,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `CreateGlobalModifiers`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_GlobalModifiers.md`](./Engine_GlobalModifiers.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3961,7 +3958,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `Else`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7338,7 +7334,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `damage_instance`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Damage.md`](./Engine_Damage.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7349,6 +7344,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`effects`](#context-effects) | Block | Non-damaging impact triggers. | 1 |
 

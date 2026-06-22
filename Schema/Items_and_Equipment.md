@@ -178,7 +178,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -298,7 +297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Integer | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 19 |
+| `odds` | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 19 |
 
 </details>
 
@@ -828,7 +827,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `Else`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_LogicBlocks.md`](./Engine_LogicBlocks.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -944,7 +942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | `ally_chance` | Integer |  | 3 |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
  | `Quivered` | Number | Applies or references the 'Quivered' effect/state. | 3 | 
 
 </details>
@@ -1311,7 +1309,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `crit_chance` | Integer |  | 2 |
+| `crit_chance` | Float |  | 2 |
 | `damage` | Integer | The base damage properties of an attack. | 2 |
 
 </details>
@@ -1330,7 +1328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 2 |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 2 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 2 |
 
 </details>
 
@@ -1348,7 +1346,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `backstab_only` | Boolean |  | 1 |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -1463,7 +1461,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `CreateGlobalModifiers`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_GlobalModifiers.md`](./Engine_GlobalModifiers.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2122,7 +2119,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | [`damage_instance`](#context-damage_instance) | Block |  | 1 |
 
 </details>
@@ -2140,7 +2137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | `range` | Integer | Distance or area of effect in tiles. | 1 |
 
 </details>
@@ -2265,7 +2262,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `head` | Integer |  | 1 |
+| `head` | Float |  | 1 |
 
 </details>
 
@@ -2282,7 +2279,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | [`event`](./Enums.md#enum-event) | Enum |  | 1 |
 
 </details>
@@ -2427,7 +2424,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | [`ApplyPassives`](#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
-| `odds` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `odds` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -2571,7 +2568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -2693,7 +2690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 1 |
 
 </details>
@@ -2781,7 +2778,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Integer | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 1 |
 
 </details>
@@ -3426,7 +3423,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `crit_chance` | Integer |  | 1 |
+| `crit_chance` | Float |  | 1 |
 
 </details>
 
@@ -3434,7 +3431,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `damage_instance`
 
-> **Engine Dictionary:** This block accepts dynamic nodes. See [`Engine_Damage.md`](./Engine_Damage.md) for the full list of valid nested blocks.
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3445,6 +3441,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | `damage` | Integer | The base damage properties of an attack. | 1 |
 | [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
