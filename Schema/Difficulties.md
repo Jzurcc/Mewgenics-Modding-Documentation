@@ -9,39 +9,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ROOT`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/8) |
 | :--- | :--- | :--- | :--- |
-| `bonus_itemroll_luck` | Number | `8, 0, 16` |  |
-| `boss_health_multiplier` | Number | `1.4, 1, 1.2` |  |
-| `coins_multiplier` | Number | `1, 1.5, 1.25` |  |
-| `easy` | [`Block`](./Difficulties.md#context-easy) | `{ ... }` |  |
-| `event_difficulty` | Number | `1, 2, 0` |  |
-| `food_multiplier` | Number | `1, 1.5, 1.25` |  |
-| `hard` | [`Block`](./Difficulties.md#context-hard) | `{ ... }` |  |
-| `wallet_size` | Number | `99` |  |
-| `boss_elite_buffs` | Number | `2, 1, 3` |  |
-
-</details>
-
----
-
-### Context: `hard`
-
-<details>
-<summary><b>Click to View Properties</b></summary>
-
-> **Referenced by:** [`ROOT`](./Difficulties.md#context-root)
-
-| Property Key | Type | Example | Definition |
-| :--- | :--- | :--- | :--- |
-| `champ_budget` | Number | `2, 1, 1.5` |  |
-| `champ_chance_mini` | Number | `1, .5, .25` |  |
-| `elite_buffs` | Number | `2, 1, 3` |  |
-| `rare_elite_buffs` | Number | `2, 1, 3` |  |
-| `elite_budget` | Number | `2, 1, 3` |  |
-| `elite_chance_mini` | Number | `1, .5, .25` |  |
+| `bonus_itemroll_luck` | Number |  | 8 |
+| `boss_health_multiplier` | Number |  | 8 |
+| `coins_multiplier` | Number |  | 8 |
+| [`easy`](./Difficulties.md#context-easy) | Block |  | 8 |
+| `event_difficulty` | Number |  | 8 |
+| `food_multiplier` | Number |  | 8 |
+| [`hard`](./Difficulties.md#context-hard) | Block |  | 8 |
+| `wallet_size` | Number |  | 8 |
+| `boss_elite_buffs` | Number |  | 7 |
 
 </details>
 
@@ -50,18 +30,38 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `easy`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Difficulties.md#context-root)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/8) |
 | :--- | :--- | :--- | :--- |
-| `champ_budget` | Number | `1, 0, 999` |  |
-| `elite_budget` | Number | `1, 2, 0` |  |
-| `elite_buffs` | Number | `2, 1, 3` |  |
-| `rare_elite_buffs` | Number | `2, 1, 3` |  |
-| `champ_chance_mini` | Number | `1, .5, .25` |  |
-| `elite_chance_mini` | Number | `1, .5, .25` |  |
+| `champ_budget` | Number |  | 8 |
+| `elite_budget` | Number |  | 8 |
+| `elite_buffs` | Number |  | 8 |
+| `rare_elite_buffs` | Number |  | 8 |
+| [`champ_chance_mini`](./Enums.md#enum-champ_chance_mini) | Enum/String |  | 7 |
+| [`elite_chance_mini`](./Enums.md#enum-elite_chance_mini) | Enum/String |  | 6 |
+
+</details>
+
+---
+
+### Context: `hard`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Difficulties.md#context-root)
+
+| Property Key | Type | Definition | Count (X/8) |
+| :--- | :--- | :--- | :--- |
+| `champ_budget` | Number |  | 8 |
+| [`champ_chance_mini`](./Enums.md#enum-champ_chance_mini) | Enum/String |  | 8 |
+| `elite_buffs` | Number |  | 8 |
+| `rare_elite_buffs` | Number |  | 8 |
+| `elite_budget` | Number |  | 7 |
+| [`elite_chance_mini`](./Enums.md#enum-elite_chance_mini) | Enum/String |  | 7 |
 
 </details>
 

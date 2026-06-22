@@ -9,64 +9,64 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ROOT`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/55) |
 | :--- | :--- | :--- | :--- |
-| `distance_to_ally` | Number | `1, 0, -1` |  |
-| `distance_to_character` | Number | `1, 0, -1` |  |
-| `distance_to_enemy` | Number | `1, 0, -1` |  |
-| `face_closest_enemy` | Number | `0, 1` |  |
-| `preferred_distance` | Number | `0, mov, mov+5` |  |
-| `total_distance_moved` | Number | `-0.01, 0.01, -1` |  |
-| `accurate_knockback` | Boolean | `false` |  |
-| `buff_ally` | Number | `0, 1, 10` |  |
-| `buff_enemy` | Number | `1, 0, -1` |  |
-| `buff_self` | Number | `0, -1` |  |
-| `consider_overkill` | Boolean | `false, true` |  |
-| `consider_secondary_damage` | Boolean | `false, true` |  |
-| `consider_total_damage` | Boolean | `false, true` |  |
-| `damage_ally` | Number | `1, 0, -1` |  |
-| `damage_ally_corpse` | Number | `1, 100, 0` |  |
-| `damage_enemy` | Number | `0, 1, 100` |  |
-| `damage_enemy_corpse` | Number | `1, 100, 0` |  |
-| `damage_self` | Number | `-0.1, 0, -1` |  |
-| `debuff_ally` | Number | `1, 0, -1` |  |
-| `debuff_enemy` | Number | `0, 1, 100` |  |
-| `debuff_self` | Number | `-0.1, 0, -1` |  |
-| `heal_ally` | Number | `0, 1, 100` |  |
-| `heal_enemy` | Number | `1, 0, -1` |  |
-| `heal_self` | Number | `-100, 0, -1` |  |
-| `kill_ally` | Number | `40, 0` |  |
-| `kill_enemy` | [`Enum/String`](./Enums.md#enum-kill_enemy) | `.2, 50, 0` |  |
-| `negative_weight_scale` | [`Enum/String`](./Enums.md#enum-negative_weight_scale) | `.99` |  |
-| `revive_ally_corpse` | Number | `0, 1, 100` |  |
-| `revive_enemy_corpse` | Number | `1, 0, -1` |  |
-| `spawn_object` | Number | `0, 1` |  |
-| `spawn_object_distance_to_ally` | [`Enum/String`](./Enums.md#enum-spawn_object_distance_to_ally) | `.0001, 0, -.01` |  |
-| `spawn_object_distance_to_enemy` | Number | `1, 0, -.01` |  |
-| `spend_mana_scale` | [`Enum/String`](./Enums.md#enum-spend_mana_scale) | `.99` |  |
-| `flat_cast_bonus` | Number | `99999` |  |
-| `randomness` | Number | `6, 50, 4` |  |
-| `cap_distance_to_ally` | Number | `7, 2, 4` |  |
-| `consider_aoe` | Boolean | `false, true` |  |
-| `danger_avoidance` | Number | `1000, 20, .1` |  |
-| `distance_to_aggro_target` | Number | `-10, -1` |  |
-| `distance_to_corpse` | Number | `0, -100, -.1` |  |
-| `simple` | Boolean | `true` |  |
-| `cap_distance_to_enemy` | Number | `2, 5` |  |
-| `distance_to_water` | [`Enum/String`](./Enums.md#enum-distance_to_water) | `-.0001, -1` |  |
-| `face_aggro_target` | Number | `10, 1` |  |
-| `spawn_object_preferred_distance` | Number | `5, 4` |  |
-| `cap_distance_to_character` | Number | `2` |  |
-| `cap_total_distance_moved` | Number | `1` |  |
-| `consider_aggro_target_enemy` | Boolean | `true` |  |
-| `count_nomove_in_eval` | Boolean | `false` |  |
-| `distance_to_center` | Number | `-1` |  |
-| `exclude_characters_tagged` | [`Enum/String`](./Enums.md#enum-exclude_characters_tagged) | `siren` |  |
-| `face_camera` | Number | `1000` |  |
-| `lava` | Number | `5` |  |
-| `tall_grass` | Number | `5` |  |
+| `distance_to_ally` | Number |  | 55 |
+| `distance_to_character` | Number |  | 55 |
+| `distance_to_enemy` | Number |  | 55 |
+| `face_closest_enemy` | Number |  | 55 |
+| [`preferred_distance`](./Enums.md#enum-preferred_distance) | Enum/String |  | 55 |
+| `total_distance_moved` | Number |  | 55 |
+| `accurate_knockback` | Boolean |  | 32 |
+| `buff_ally` | Number |  | 32 |
+| `buff_enemy` | Number |  | 32 |
+| `buff_self` | Number |  | 32 |
+| `consider_overkill` | Boolean |  | 32 |
+| `consider_secondary_damage` | Boolean |  | 32 |
+| `consider_total_damage` | Boolean |  | 32 |
+| `damage_ally` | Number |  | 32 |
+| `damage_ally_corpse` | Number |  | 32 |
+| `damage_enemy` | Number |  | 32 |
+| `damage_enemy_corpse` | Number |  | 32 |
+| `damage_self` | Number |  | 32 |
+| `debuff_ally` | Number |  | 32 |
+| `debuff_enemy` | Number |  | 32 |
+| `debuff_self` | Number |  | 32 |
+| `heal_ally` | Number |  | 32 |
+| `heal_enemy` | Number |  | 32 |
+| `heal_self` | Number |  | 32 |
+| `kill_ally` | Number |  | 32 |
+| `kill_enemy` | Number |  | 32 |
+| [`negative_weight_scale`](./Enums.md#enum-negative_weight_scale) | Enum/String |  | 32 |
+| `revive_ally_corpse` | Number |  | 32 |
+| `revive_enemy_corpse` | Number |  | 32 |
+| `spawn_object` | Number |  | 32 |
+| `spawn_object_distance_to_ally` | Number |  | 32 |
+| `spawn_object_distance_to_enemy` | Number |  | 32 |
+| [`spend_mana_scale`](./Enums.md#enum-spend_mana_scale) | Enum/String |  | 32 |
+| `flat_cast_bonus` | Number |  | 5 |
+| `randomness` | Number |  | 5 |
+| `cap_distance_to_ally` | Number |  | 4 |
+| `consider_aoe` | Boolean |  | 3 |
+| `danger_avoidance` | Number |  | 3 |
+| `distance_to_aggro_target` | Number |  | 3 |
+| [`distance_to_corpse`](./Enums.md#enum-distance_to_corpse) | Enum/String |  | 3 |
+| `simple` | Boolean |  | 3 |
+| `cap_distance_to_enemy` | Number |  | 2 |
+| [`distance_to_water`](./Enums.md#enum-distance_to_water) | Enum/String |  | 2 |
+| `face_aggro_target` | Number |  | 2 |
+| `spawn_object_preferred_distance` | Number |  | 2 |
+| `cap_distance_to_character` | Number |  | 1 |
+| `cap_total_distance_moved` | Number |  | 1 |
+| `consider_aggro_target_enemy` | Boolean |  | 1 |
+| `count_nomove_in_eval` | Boolean |  | 1 |
+| `distance_to_center` | Number |  | 1 |
+| [`exclude_characters_tagged`](./Enums.md#enum-exclude_characters_tagged) | Enum/String |  | 1 |
+| `face_camera` | Number |  | 1 |
+| `lava` | Number |  | 1 |
+| `tall_grass` | Number |  | 1 |
 
 </details>
 

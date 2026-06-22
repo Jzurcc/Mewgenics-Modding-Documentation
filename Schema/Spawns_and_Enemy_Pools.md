@@ -9,21 +9,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ROOT`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/550) |
 | :--- | :--- | :--- | :--- |
-| `object` | [`Enum/String`](./Enums.md#enum-object) | `Fly, Worm, Rat` |  |
-| `value` | Number | `0, 1, .5` |  |
-| `early_spawn` | Boolean | `true` |  |
-| `orientation` | [`Enum/String`](./Enums.md#enum-orientation) | `east, north, south` |  |
-| `tag_location` | [`Enum/String`](./Enums.md#enum-tag_location) | `FinalBossCloneSpot, ChaosValidPosition, HitlerMiniInitial` |  |
-| `forced_placement` | Boolean | `true` |  |
-| `trap` | [`Enum/String`](./Enums.md#enum-trap) | `WaterKittenTrap, WebTrap` |  |
-| `image` | String | `"empty.png"` |  |
-| `name` | String | `"Empty"` |  |
-| `reserved` | [`Enum/String`](./Enums.md#enum-reserved) | `for` |  |
-| `utility` | [`Enum/String`](./Enums.md#enum-utility) | `PlayerSpawn` |  |
+| [`editor`](./Spawns_and_Enemy_Pools.md#context-editor) | Block |  | 550 |
+| [`object`](./Enums.md#enum-object) | Enum/String |  | 543 |
+| [`value`](./Enums.md#enum-value) | Enum/String |  | 377 |
+| `early_spawn` | Boolean |  | 10 |
+| [`orientation`](./Enums.md#enum-orientation) | Enum/String |  | 6 |
+| [`tag_location`](./Enums.md#enum-tag_location) | Enum/String |  | 5 |
+| `forced_placement` | Boolean |  | 3 |
+| [`trap`](./Enums.md#enum-trap) | Enum/String |  | 2 |
+| `image` | String |  | 1 |
+| `name` | String |  | 1 |
+| [`reserved`](./Enums.md#enum-reserved) | Enum/String |  | 1 |
+| [`utility`](./Enums.md#enum-utility) | Enum/String |  | 1 |
+| [`weather_element_alt`](./Spawns_and_Enemy_Pools.md#context-weather_element_alt) | Block |  | 1 |
 
 </details>
 
@@ -32,17 +34,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `editor`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+> **Referenced by:** [`ROOT`](./Spawns_and_Enemy_Pools.md#context-root)
+
+| Property Key | Type | Definition | Count (X/551) |
 | :--- | :--- | :--- | :--- |
-| `category` | Number | `4, 1, 3` |  |
-| `image` | [`Array`](./Arrays.md#array-image) | `[ "fly.png" ], [ "rat.png" ], [ "shadow.png" "cat.png" ]` |  |
-| `name` | String | `"Fly", "Rat", "Player Cat Spawn"` |  |
-| `paint` | Boolean | `false, true` |  |
-| `image_tint` | [`Array`](./Arrays.md#array-image_tint) | `[ blue none ], [ yellow ], [ blue ]` |  |
-| `subcategory` | Number | `2, 1, 3` |  |
-| `layer` | Number | `2` |  |
+| `category` | Number |  | 551 |
+| [`image`](./Arrays.md#array-image) | Array |  | 550 |
+| `name` | String |  | 550 |
+| `paint` | Boolean |  | 550 |
+| [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 196 |
+| `subcategory` | Number |  | 9 |
+| `layer` | Number |  | 3 |
 
 </details>
 
@@ -51,12 +55,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `weather_element_alt`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+> **Referenced by:** [`ROOT`](./Spawns_and_Enemy_Pools.md#context-root)
+
+| Property Key | Type | Definition | Count (X/1) |
 | :--- | :--- | :--- | :--- |
-| `element` | [`Enum/String`](./Enums.md#enum-element) | `Ice` | Specific element type required or applied. |
-| `object` | [`Enum/String`](./Enums.md#enum-object) | `IceElemental` |  |
+| [`element`](./Enums.md#enum-element) | Enum/String | Specific element type required or applied. | 1 |
+| [`object`](./Enums.md#enum-object) | Enum/String |  | 1 |
 
 </details>
 

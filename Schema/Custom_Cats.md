@@ -9,33 +9,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ROOT`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/211) |
 | :--- | :--- | :--- | :--- |
-| `texture` | Number | `1000, 1002, 1050` |  |
-| `default_frame` | Number | `1000, 1001, 1002` |  |
-| `palette` | Number | `137, 9, 16` |  |
-| `righteye` | Number | `1001, 1, 1006` |  |
-| `voice` | [`Enum/String`](./Enums.md#enum-voice) | `male1, male4, female2` |  |
-| `lefteye` | Number | `1001, 1033, 1006` |  |
-| `claws` | Number | `2, 1032, 1` |  |
-| `mouth` | Number | `2, 1001, 1005` |  |
-| `rightear` | Number | `1001, 1004, 3` |  |
-| `leftear` | Number | `1005, 1, 1004` |  |
-| `head` | Number | `1001, 1080, 1028` |  |
-| `tail` | Number | `1001, 1010, 26` |  |
-| `arm2` | Number | `1001, 42, 3` |  |
-| `arm1` | Number | `2, 1018, 3` |  |
-| `righteyebrow` | Number | `1001, 1005, 1006` |  |
-| `lefteyebrow` | Number | `1001, 1005, 1006` |  |
-| `leg1` | Number | `1001, 1, 3` |  |
-| `body` | Number | `1000, 1001, 1028` |  |
-| `leg2` | Number | `1019, 1001, 3` |  |
-| `pitch` | Number | `2, .7, .5` |  |
-| `class_anis` | [`Enum/String`](./Enums.md#enum-class_anis) | `Tank, Mage, Hunter` |  |
-| `default_face` | [`Enum/String`](./Enums.md#enum-default_face) | `mad, worried, happy` |  |
-| `face` | Number | `1019, 1004` |  |
+| `texture` | Number |  | 211 |
+| `default_frame` | Number |  | 210 |
+| `palette` | Number |  | 210 |
+| `righteye` | Number |  | 200 |
+| [`voice`](./Enums.md#enum-voice) | Enum/String |  | 200 |
+| `lefteye` | Number |  | 198 |
+| `claws` | Number |  | 196 |
+| `mouth` | Number |  | 192 |
+| `rightear` | Number |  | 188 |
+| `leftear` | Number |  | 187 |
+| `head` | Number |  | 184 |
+| `tail` | Number |  | 180 |
+| `arm2` | Number |  | 179 |
+| `arm1` | Number |  | 177 |
+| `righteyebrow` | Number |  | 176 |
+| `lefteyebrow` | Number |  | 175 |
+| `leg1` | Number |  | 174 |
+| `body` | Number |  | 173 |
+| `leg2` | Number |  | 172 |
+| [`pitch`](./Enums.md#enum-pitch) | Enum/String |  | 116 |
+| [`class_anis`](./Enums.md#enum-class_anis) | Enum/String |  | 40 |
+| [`default_face`](./Enums.md#enum-default_face) | Enum/String |  | 15 |
+| `face` | Number |  | 2 |
 
 </details>
 
@@ -44,12 +44,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `arm1`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `frame` | Number | `1040` |  |
-| `texture` | Number | `1` |  |
+| `frame` | Number |  | 2 |
+| `texture` | Number |  | 2 |
 
 </details>
 
@@ -58,12 +58,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `arm2`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `frame` | Number | `1040` |  |
-| `texture` | Number | `1` |  |
+| `frame` | Number |  | 2 |
+| `texture` | Number |  | 2 |
 
 </details>
 

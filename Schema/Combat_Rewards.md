@@ -9,16 +9,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `boss`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/12) |
 | :--- | :--- | :--- | :--- |
-| `coins` | [`Array`](./Arrays.md#array-coins) | `[ 10 20 ]` |  |
-| `consumable_chance` | [`Enum/String`](./Enums.md#enum-consumable_chance) | `.5` |  |
-| `food` | [`Array`](./Arrays.md#array-food) | `[ 5 8 ], [ 6 12 ], [ 10 15 ]` |  |
-| `item_chance` | Number | `1` |  |
+| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
+| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum/String |  | 12 |
+| [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| `item_chance` | Number |  | 12 |
 
 </details>
 
@@ -27,16 +27,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `hard`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/12) |
 | :--- | :--- | :--- | :--- |
-| `coins` | [`Array`](./Arrays.md#array-coins) | `[ 1 6 ]` |  |
-| `consumable_chance` | [`Enum/String`](./Enums.md#enum-consumable_chance) | `.25` |  |
-| `food` | [`Array`](./Arrays.md#array-food) | `[ 4 7 ]` |  |
-| `item_chance` | [`Enum/String`](./Enums.md#enum-item_chance) | `.25` |  |
+| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
+| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum/String |  | 12 |
+| [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`item_chance`](./Enums.md#enum-item_chance) | Enum/String |  | 12 |
 
 </details>
 
@@ -45,16 +45,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `miniboss`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/12) |
 | :--- | :--- | :--- | :--- |
-| `coins` | [`Array`](./Arrays.md#array-coins) | `[ 10 20 ]` |  |
-| `consumable_chance` | [`Enum/String`](./Enums.md#enum-consumable_chance) | `.3` |  |
-| `food` | [`Array`](./Arrays.md#array-food) | `[ 5 10 ], [ 2 5 ], [ 4 8 ]` |  |
-| `item_chance` | [`Enum/String`](./Enums.md#enum-item_chance) | `.5` |  |
+| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
+| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum/String |  | 12 |
+| [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`item_chance`](./Enums.md#enum-item_chance) | Enum/String |  | 12 |
 
 </details>
 
@@ -63,16 +63,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `normal`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/12) |
 | :--- | :--- | :--- | :--- |
-| `coins` | [`Array`](./Arrays.md#array-coins) | `[ 1 6 ]` |  |
-| `consumable_chance` | [`Enum/String`](./Enums.md#enum-consumable_chance) | `.25` |  |
-| `food` | [`Array`](./Arrays.md#array-food) | `[ 1 3 ]` |  |
-| `item_chance` | [`Enum/String`](./Enums.md#enum-item_chance) | `.25` |  |
+| [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
+| [`consumable_chance`](./Enums.md#enum-consumable_chance) | Enum/String |  | 12 |
+| [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`item_chance`](./Enums.md#enum-item_chance) | Enum/String |  | 12 |
 
 </details>
 
@@ -81,17 +81,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `1`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/4) |
 | :--- | :--- | :--- | :--- |
-| `coins_bonus` | [`Enum/String`](./Enums.md#enum-coins_bonus) | `.5, 1` |  |
-| `food_bonus` | Number | `1` |  |
-| `boss` | [`Block`](./Combat_Rewards.md#context-boss) | `{ ... }` |  |
-| `hard` | [`Block`](./Combat_Rewards.md#context-hard) | `{ ... }` |  |
-| `miniboss` | [`Block`](./Combat_Rewards.md#context-miniboss) | `{ ... }` |  |
-| `normal` | [`Block`](./Combat_Rewards.md#context-normal) | `{ ... }` |  |
-| `chapters` | Block | `{ ... }` |  |
+| [`coins_bonus`](./Enums.md#enum-coins_bonus) | Enum/String |  | 4 |
+| `food_bonus` | Number |  | 4 |
+| [`boss`](./Combat_Rewards.md#context-boss) | Block |  | 3 |
+| [`hard`](./Combat_Rewards.md#context-hard) | Block |  | 3 |
+| [`miniboss`](./Combat_Rewards.md#context-miniboss) | Block |  | 3 |
+| [`normal`](./Combat_Rewards.md#context-normal) | Block |  | 3 |
+| `chapters` | Block |  | 1 |
 
 </details>
 
@@ -100,17 +100,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `2`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/4) |
 | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Number | `1, .75` |  |
-| `food_bonus` | Number | `1, 1.75` |  |
-| `boss` | [`Block`](./Combat_Rewards.md#context-boss) | `{ ... }` |  |
-| `hard` | [`Block`](./Combat_Rewards.md#context-hard) | `{ ... }` |  |
-| `miniboss` | [`Block`](./Combat_Rewards.md#context-miniboss) | `{ ... }` |  |
-| `normal` | [`Block`](./Combat_Rewards.md#context-normal) | `{ ... }` |  |
-| `chapters` | Block | `{ ... }` |  |
+| `coins_bonus` | Number |  | 4 |
+| `food_bonus` | Number |  | 4 |
+| [`boss`](./Combat_Rewards.md#context-boss) | Block |  | 3 |
+| [`hard`](./Combat_Rewards.md#context-hard) | Block |  | 3 |
+| [`miniboss`](./Combat_Rewards.md#context-miniboss) | Block |  | 3 |
+| [`normal`](./Combat_Rewards.md#context-normal) | Block |  | 3 |
+| `chapters` | Block |  | 1 |
 
 </details>
 
@@ -119,17 +119,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `3`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/4) |
 | :--- | :--- | :--- | :--- |
-| `coins_bonus` | Number | `1` |  |
-| `food_bonus` | Number | `2.5, 1` |  |
-| `boss` | [`Block`](./Combat_Rewards.md#context-boss) | `{ ... }` |  |
-| `hard` | [`Block`](./Combat_Rewards.md#context-hard) | `{ ... }` |  |
-| `miniboss` | [`Block`](./Combat_Rewards.md#context-miniboss) | `{ ... }` |  |
-| `normal` | [`Block`](./Combat_Rewards.md#context-normal) | `{ ... }` |  |
-| `chapters` | Block | `{ ... }` |  |
+| `coins_bonus` | Number |  | 4 |
+| `food_bonus` | Number |  | 4 |
+| [`boss`](./Combat_Rewards.md#context-boss) | Block |  | 3 |
+| [`hard`](./Combat_Rewards.md#context-hard) | Block |  | 3 |
+| [`miniboss`](./Combat_Rewards.md#context-miniboss) | Block |  | 3 |
+| [`normal`](./Combat_Rewards.md#context-normal) | Block |  | 3 |
+| `chapters` | Block |  | 1 |
 
 </details>
 
@@ -138,16 +138,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `4`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/3) |
 | :--- | :--- | :--- | :--- |
-| `boss` | [`Block`](./Combat_Rewards.md#context-boss) | `{ ... }` |  |
-| `coins_bonus` | Number | `1` |  |
-| `food_bonus` | Number | `1` |  |
-| `hard` | [`Block`](./Combat_Rewards.md#context-hard) | `{ ... }` |  |
-| `miniboss` | [`Block`](./Combat_Rewards.md#context-miniboss) | `{ ... }` |  |
-| `normal` | [`Block`](./Combat_Rewards.md#context-normal) | `{ ... }` |  |
+| [`boss`](./Combat_Rewards.md#context-boss) | Block |  | 3 |
+| `coins_bonus` | Number |  | 3 |
+| `food_bonus` | Number |  | 3 |
+| [`hard`](./Combat_Rewards.md#context-hard) | Block |  | 3 |
+| [`miniboss`](./Combat_Rewards.md#context-miniboss) | Block |  | 3 |
+| [`normal`](./Combat_Rewards.md#context-normal) | Block |  | 3 |
 
 </details>
 

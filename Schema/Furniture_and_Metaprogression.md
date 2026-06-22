@@ -9,25 +9,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ROOT`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/634) |
 | :--- | :--- | :--- | :--- |
-| `desc` | [`Enum/String`](./Enums.md#enum-desc) | `FURNITURE_DESC_AUTOFEEDER, FURNITURE_DESC_SPECIAL_FOODBOX, FURNITURE_DESC_POOP` |  |
-| `name` | [`Enum/String`](./Enums.md#enum-name) | `FURNITURE_NAME_SPECIAL_FOODBOX, FURNITURE_NAME_AUTOFEEDER, FURNITURE_NAME_POOP` |  |
-| `Comfort` | Number | `-5, -2, 5` | Applies or references the 'Comfort' effect/state. |
-| `Appeal` | Number | `2, 1, 5` | Applies or references the 'Appeal' effect/state. |
-| `Stimulation` | Number | `2, 1, 5` | Applies or references the 'Stimulation' effect/state. |
-| `set` | [`Enum/String`](./Enums.md#enum-set) | `spider, sewn, junk` |  |
-| `Health` | Number | `-2, 5, -1` | Applies or references the 'Health' effect/state. |
-| `Evolution` | Number | `2, 1, 5` | Applies or references the 'Evolution' effect/state. |
-| `can_be_rare` | Boolean | `false` |  |
-| `special` | Boolean | `true` |  |
-| `BreedSuppression` | Number | `1` | Applies or references the 'BreedSuppression' effect/state. |
-| `FightBonusRewards` | Number | `1` | Applies or references the 'FightBonusRewards' effect/state. |
-| `FightRisk` | Number | `2` | Applies or references the 'FightRisk' effect/state. |
-| `FoodStorage` | Number | `40` | Applies or references the 'FoodStorage' effect/state. |
-| `removed` | Boolean | `true` |  |
+| [`desc`](./Enums.md#enum-desc) | Enum/String |  | 634 |
+| [`name`](./Enums.md#enum-name) | Enum/String |  | 634 |
+| `Comfort` | Number | Applies or references the 'Comfort' effect/state. | 406 |
+| `Appeal` | Number | Applies or references the 'Appeal' effect/state. | 338 |
+| `Stimulation` | Number | Applies or references the 'Stimulation' effect/state. | 268 |
+| [`set`](./Enums.md#enum-set) | Enum/String |  | 220 |
+| `Health` | Number | Applies or references the 'Health' effect/state. | 67 |
+| `Evolution` | Number | Applies or references the 'Evolution' effect/state. | 53 |
+| `can_be_rare` | Boolean |  | 10 |
+| `special` | Boolean |  | 10 |
+| `BreedSuppression` | Number | Applies or references the 'BreedSuppression' effect/state. | 1 |
+| `FightBonusRewards` | Number | Applies or references the 'FightBonusRewards' effect/state. | 1 |
+| `FightRisk` | Number | Applies or references the 'FightRisk' effect/state. | 1 |
+| `FoodStorage` | Number | Applies or references the 'FoodStorage' effect/state. | 1 |
+| `removed` | Boolean |  | 1 |
 
 </details>
 

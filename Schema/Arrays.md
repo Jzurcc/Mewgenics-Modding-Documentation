@@ -8,7 +8,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `image`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor)
 
@@ -381,7 +381,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `elements`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#context-dodamage), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`self_damage`](./Abilities_and_Spells.md#context-self_damage), [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage), [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage), [`properties`](./Characters_and_Bosses.md#context-properties), [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage), [`SolarFlare`](./House_and_Environment.md#context-solarflare), [`RevengeDamage`](./Items_and_Equipment.md#context-revengedamage), [`AddStatusesIfPersistentWeatherElement`](./Passives_and_Statuses.md#context-addstatusesifpersistentweatherelement), [`AddStatusesToReceivedElementalDamage`](./Passives_and_Statuses.md#context-addstatusestoreceivedelementaldamage), [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#context-damageneighborsaftermove), [`GravityWell`](./Passives_and_Statuses.md#context-gravitywell), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#context-smiteenemieswhokill), [`fire`](./Passives_and_Statuses.md#context-fire), [`ice`](./Passives_and_Statuses.md#context-ice), [`lightning`](./Passives_and_Statuses.md#context-lightning), [`triattack`](./Passives_and_Statuses.md#context-triattack)
 
@@ -430,7 +430,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `spells`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`abilities`](./Characters_and_Bosses.md#context-abilities)
 
@@ -1082,7 +1082,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tags`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root), [`properties`](./Characters_and_Bosses.md#context-properties), [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -1100,7 +1100,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `image_tint`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor)
 
@@ -1118,7 +1118,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `restrictions`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -1136,7 +1136,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tag`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
@@ -1154,7 +1154,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_priority`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern), [`round_start_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_start_bonusturn_pattern)
 
@@ -1339,7 +1339,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `complete_chapter_with_class`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -1357,7 +1357,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `set`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
@@ -1375,7 +1375,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_all`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
 
@@ -1558,7 +1558,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `play_animation`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`outcome`](./Events_and_Encounters.md#context-outcome), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -1576,7 +1576,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `random_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`outcome`](./Events_and_Encounters.md#context-outcome), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -1594,7 +1594,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `custom_aoe`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -1612,7 +1612,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Stun`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`TakeBonusTurnWithStatus`](./Abilities_and_Spells.md#context-takebonusturnwithstatus), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`AddStatusToElementDamage`](./Items_and_Equipment.md#context-addstatustoelementdamage), [`AddStatusToKnockbackDamage`](./Items_and_Equipment.md#context-addstatustoknockbackdamage), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Passives_and_Statuses.md#context-addstatustobasicmeleeattack), [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy), [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`Electric`](./Passives_and_Statuses.md#context-electric), [`effects`](./Passives_and_Statuses.md#context-effects)
 
@@ -1630,7 +1630,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `alt_sounds`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
 
@@ -1648,7 +1648,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `aoe_restrictions`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -1666,7 +1666,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `alt_animations`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT`](./Injuries.md#context-root)
 
@@ -1684,7 +1684,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `coins`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`boss`](./Combat_Rewards.md#context-boss), [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
 
@@ -1702,7 +1702,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `food`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`boss`](./Combat_Rewards.md#context-boss), [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
 
@@ -1720,7 +1720,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `banned_elite_buffs`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
@@ -1751,7 +1751,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `object`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn), [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns), [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`SpawnEachTurn`](./Items_and_Equipment.md#context-spawneachturn), [`SpawnEachTurn`](./Passives_and_Statuses.md#context-spawneachturn), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#context-spawnonbattlestart)
 
@@ -1769,7 +1769,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `number`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#context-spawnextrathingsonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#context-spawnonbattlestartrandomemptytile), [`GlobalSpawnOnRoundEnd`](./House_and_Environment.md#context-globalspawnonroundend), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart), [`SpawnExtraThingsOnBattleStart`](./Items_and_Equipment.md#context-spawnextrathingsonbattlestart), [`SpawnOnBattleStart`](./Items_and_Equipment.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Items_and_Equipment.md#context-spawnonbattlestartrandomemptytile), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Passives_and_Statuses.md#context-spawnonbattlestartrandomemptytile)
 
@@ -1787,7 +1787,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `durability`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
@@ -1805,7 +1805,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `counter_range`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
 
@@ -1823,7 +1823,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `gain_coins`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -1841,7 +1841,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `EliteTint`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -1859,7 +1859,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Fear`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`Else`](./House_and_Environment.md#context-else), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`StatusDamagers`](./Passives_and_Statuses.md#context-statusdamagers), [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
@@ -1877,7 +1877,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `StatusImmunity`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -1895,7 +1895,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite), [`PoolMetronome`](./Abilities_and_Spells.md#context-poolmetronome), [`SwapWeapon`](./Abilities_and_Spells.md#context-swapweapon), [`DestroyEquipmentAndAttachParasite`](./Items_and_Equipment.md#context-destroyequipmentandattachparasite), [`TourettesMeows`](./Passives_and_Statuses.md#context-tourettesmeows), [`Item`](./Shops.md#context-item)
 
@@ -1966,7 +1966,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `counter_minimum`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
 
@@ -1984,7 +1984,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `frame_range`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ArmorPickup`](./Characters_and_Bosses.md#context-armorpickup), [`HealthPickup`](./Characters_and_Bosses.md#context-healthpickup), [`ManaPickup`](./Characters_and_Bosses.md#context-manapickup)
 
@@ -2002,7 +2002,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `gain_food`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2020,7 +2020,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `boss`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2038,7 +2038,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `easy`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2056,7 +2056,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `get_item_from_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2144,7 +2144,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `hard`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2162,7 +2162,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `miniboss`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2180,7 +2180,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `normal`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2220,7 +2220,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `rare`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2238,7 +2238,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `large`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2256,7 +2256,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `lock_orientation`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
@@ -2274,7 +2274,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `medium`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2292,7 +2292,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `small`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2310,7 +2310,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `special`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -2328,7 +2328,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `counter_maximum`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
 
@@ -2346,7 +2346,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `projectile_spawn_offset`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
@@ -2364,7 +2364,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `color`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#context-characterlightsource)
 
@@ -2382,7 +2382,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `is_not_chapter`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
 
@@ -2400,7 +2400,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ReplaceSpawnedObjects`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -2418,7 +2418,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ability_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -2436,7 +2436,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `attack_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -2454,7 +2454,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `damage`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2472,7 +2472,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `levelup_stats`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -2490,7 +2490,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `passive_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -2879,7 +2879,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tint`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
@@ -2897,7 +2897,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Freeze`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#context-effects)
 
@@ -2915,7 +2915,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_random`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`fallback`](./Characters_and_Bosses.md#context-fallback), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
 
@@ -2970,7 +2970,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_strict`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -3011,7 +3011,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `restrict`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool)
 
@@ -3029,7 +3029,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Confusion`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects)
 
@@ -3047,7 +3047,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `attack`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
 
@@ -3065,7 +3065,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `global_tags`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
@@ -3101,7 +3101,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `hint_persistent_elements`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -3119,7 +3119,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `misc`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
 
@@ -3137,7 +3137,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `move`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
 
@@ -3155,7 +3155,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `starter_abilities`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -3173,7 +3173,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Charmed`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#context-effects)
 
@@ -3191,7 +3191,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `EliteFlatTint`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -3209,7 +3209,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Petrify`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`effects`](./Passives_and_Statuses.md#context-effects)
 
@@ -3227,7 +3227,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `eq`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`DurabilityTransform`](./Items_and_Equipment.md#context-durabilitytransform)
 
@@ -3255,7 +3255,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Immobile`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Conditional_BossOrBig`](./Abilities_and_Spells.md#context-conditional_bossorbig), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack)
 
@@ -3273,7 +3273,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `defense`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
 
@@ -3291,7 +3291,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `party_damage`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -3309,7 +3309,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `complete_act_difficulty`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -3327,7 +3327,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `random_delay`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
@@ -3345,7 +3345,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tooltip_values`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
 
@@ -3363,7 +3363,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `unlock_act_difficulty`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -3381,7 +3381,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Poison`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`Else`](./House_and_Environment.md#context-else), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
@@ -3399,7 +3399,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `RandomizeAIWeightsEachTurn`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -3417,7 +3417,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bonus_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2), [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -3435,7 +3435,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `choose_cat_with_item`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
 
@@ -3453,7 +3453,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `glow`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#context-characterlightsource)
 
@@ -3471,7 +3471,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `is_chapter`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
 
@@ -3489,7 +3489,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tile`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ChangeTile`](./Abilities_and_Spells.md#context-changetile), [`PassiveWhenOnTile`](./Items_and_Equipment.md#context-passivewhenontile)
 
@@ -3507,7 +3507,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Burn`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3525,7 +3525,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `custom_range`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -3543,7 +3543,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `gain_disorder_from_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -3580,7 +3580,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `held_coins`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
@@ -3598,7 +3598,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `hidden_tag`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
@@ -3616,7 +3616,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `shopkeeper_fights`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`meta`](./Shops.md#context-meta)
 
@@ -3640,7 +3640,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Bleed`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage)
 
@@ -3658,7 +3658,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `complicated_abilities`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -3676,7 +3676,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `complicated_passives`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -3731,7 +3731,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `custom_aoe_util`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -3749,7 +3749,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ge`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`DurabilityTransform`](./Items_and_Equipment.md#context-durabilitytransform), [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform)
 
@@ -3767,7 +3767,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `head`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
@@ -3785,7 +3785,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `le`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform)
 
@@ -3811,7 +3811,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `miss_random_delay`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
@@ -3829,7 +3829,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `slot`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`lock_item_slot`](./Passives_and_Statuses.md#context-lock_item_slot)
 
@@ -3847,7 +3847,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Blind`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`effects`](./Cat_Mutations.md#context-effects)
 
@@ -3865,7 +3865,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Bruise`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3883,7 +3883,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ScatterCoins`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusOnDie`](./Cat_Mutations.md#context-statusondie)
 
@@ -3901,7 +3901,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Slow`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
 
@@ -3919,7 +3919,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Tangled`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`GlobalFlowerTrapperAura`](./Items_and_Equipment.md#context-globalflowertrapperaura)
 
@@ -3937,7 +3937,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `TriggerWerewolfTransform`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3955,7 +3955,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_nothing`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`fallback`](./Characters_and_Bosses.md#context-fallback), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
 
@@ -3973,7 +3973,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `get_parasite_from_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -4010,7 +4010,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `self_damage`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -4028,7 +4028,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Grappled`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Items_and_Equipment.md#context-effects)
 
@@ -4046,7 +4046,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `RandomSeededStatModifier`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -4064,7 +4064,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ScatterHeldCoin`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4082,7 +4082,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Weakness`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4100,7 +4100,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `element`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence), [`ElementalManaCostReduction`](./Items_and_Equipment.md#context-elementalmanacostreduction), [`ElementalManaCostReduction`](./Passives_and_Statuses.md#context-elementalmanacostreduction)
 
@@ -4118,7 +4118,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `mouse_offset`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -4136,7 +4136,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `particles`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Rain`](./House_and_Environment.md#context-rain), [`Snow`](./House_and_Environment.md#context-snow), [`Thunderstorm`](./House_and_Environment.md#context-thunderstorm), [`Windy`](./House_and_Environment.md#context-windy)
 
@@ -4154,7 +4154,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `radius`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#context-rocket_swirl)
 
@@ -4172,7 +4172,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `random_pool_consider_luck`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
@@ -4190,7 +4190,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `speed`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#context-rocket_swirl)
 
@@ -4208,7 +4208,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `BonusTurnPattern`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -4226,7 +4226,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ButchBox`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
@@ -4244,7 +4244,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `DivineShield`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
@@ -4262,7 +4262,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Floor1_Large`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4280,7 +4280,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `HousePipe`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
@@ -4298,7 +4298,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Madness`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#context-statuscharactersonroundstart)
 
@@ -4316,7 +4316,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Quivered`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin), [`AddSelfStatusToBasicAttack`](./Items_and_Equipment.md#context-addselfstatustobasicattack)
 
@@ -4340,7 +4340,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `RandomStatDown`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4358,7 +4358,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Roof_LeftEdge`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
@@ -4376,7 +4376,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Roof_RightEdge`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
@@ -4394,7 +4394,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Roof_Top`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
@@ -4412,7 +4412,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `StraySpawn`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
@@ -4430,7 +4430,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `XIsMultipliedPercentHealth`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
@@ -4448,7 +4448,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `amount`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight), [`LowerAmbientLight`](./Characters_and_Bosses.md#context-lowerambientlight)
 
@@ -4466,7 +4466,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `body`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
@@ -4484,7 +4484,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `character_filter`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`MoveTowardsKillers`](./Characters_and_Bosses.md#context-movetowardskillers)
 
@@ -4502,7 +4502,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `complete_chapters`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -4520,7 +4520,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `count`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`MultiSpawnOnDeath`](./Characters_and_Bosses.md#context-multispawnondeath), [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight), [`SpawnRandomPickupsOnTaggedUnitKilled`](./Items_and_Equipment.md#context-spawnrandompickupsontaggedunitkilled)
 
@@ -4538,7 +4538,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `innate_weather`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -4556,7 +4556,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `move_then_do_priority`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -4574,7 +4574,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `move_then_do_random`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -4602,7 +4602,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `transform_item`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
@@ -4620,7 +4620,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `weights`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`SetCrazyEyeBackgroundWeights`](./Abilities_and_Spells.md#context-setcrazyeyebackgroundweights)
 
@@ -4638,7 +4638,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Basement0`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4655,7 +4655,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Basement1`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4672,7 +4672,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Basement2`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4689,7 +4689,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Basement3`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4706,7 +4706,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Basement4`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4723,7 +4723,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `BounceRock`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4740,7 +4740,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `BurgleCoin`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4757,7 +4757,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `CanMutateTo`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -4774,7 +4774,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Dyslexia`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -4791,7 +4791,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `FillMana`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
@@ -4808,7 +4808,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Floor1_Small`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4825,7 +4825,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `LargeAttic`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -4842,7 +4842,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `MagicWeakness`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4859,7 +4859,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Marked`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4876,7 +4876,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Rot`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4893,7 +4893,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Sleep`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4910,7 +4910,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `SpawnFlames`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4927,7 +4927,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `SpawnRock`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4944,7 +4944,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `StatusReplacement`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -4961,7 +4961,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Tarred`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -4978,7 +4978,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `active_pieces`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ChaosBossFormChangeGuide`](./Characters_and_Bosses.md#context-chaosbossformchangeguide), [`ChaosBossPieces`](./Characters_and_Bosses.md#context-chaosbosspieces)
 
@@ -4995,7 +4995,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `built_in_collision`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`LargeAttic`](./House_and_Environment.md#context-largeattic), [`SmallAttic`](./House_and_Environment.md#context-smallattic)
 
@@ -5012,7 +5012,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_all_shuffle`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -5029,7 +5029,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_best`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`fallback`](./Characters_and_Bosses.md#context-fallback), [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -5046,7 +5046,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_one`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
 
@@ -5072,7 +5072,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `extra_bound_planes`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`LargeAttic`](./House_and_Environment.md#context-largeattic), [`SmallAttic`](./House_and_Environment.md#context-smallattic)
 
@@ -5089,7 +5089,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `obj`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath)
 
@@ -5106,7 +5106,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `party_gain_disorder_from_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
@@ -5130,7 +5130,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `passive_pieces`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ChaosBossFormChangeGuide`](./Characters_and_Bosses.md#context-chaosbossformchangeguide), [`ChaosBossPieces`](./Characters_and_Bosses.md#context-chaosbosspieces)
 
@@ -5147,7 +5147,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `position`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Big`](./House_and_Environment.md#context-big)
 
@@ -5164,7 +5164,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `target_requires_element`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -5181,7 +5181,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `thresholds`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`HPAltStates`](./Characters_and_Bosses.md#context-hpaltstates), [`ScalingAttackAnimation`](./Characters_and_Bosses.md#context-scalingattackanimation)
 
@@ -5198,7 +5198,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `AdvancedTint`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -5214,7 +5214,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `AlienBeastDangerZones`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -5239,7 +5239,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `AllStatsUp`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally)
 
@@ -5255,7 +5255,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `BasicAttackStatusSwap`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -5271,7 +5271,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Bird_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5300,7 +5300,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Coin_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5331,7 +5331,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ConstitutionUp`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -5347,7 +5347,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `CounterAttack`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -5363,7 +5363,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Crazy_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -5379,7 +5379,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `DicerArt`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -5395,7 +5395,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Eye_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5424,7 +5424,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Floor2_Large`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -5440,7 +5440,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Floor2_Small`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -5456,7 +5456,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Forecast`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -5472,7 +5472,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `GainCoins`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
@@ -5488,7 +5488,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ImmediateAbilityReaction`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -5504,7 +5504,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Instakill`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
 
@@ -5520,7 +5520,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `KnockOutCoin`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
@@ -5536,7 +5536,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `LockOrientationFaceTile`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -5552,7 +5552,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `MonkStances`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`innate_passives`](./Cat_Classes.md#context-innate_passives)
 
@@ -5568,7 +5568,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `MoveQuivered`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin)
 
@@ -5584,7 +5584,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `RandomWeatherEachFight`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -5600,7 +5600,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `ReceivedStatusReplacement`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -5616,7 +5616,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `RemoveGlobalModifiers`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusOnDie`](./Characters_and_Bosses.md#context-statusondie)
 
@@ -5632,7 +5632,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `RepairWeapon`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`AddSelfStatusToWeapons`](./Items_and_Equipment.md#context-addselfstatustoweapons)
 
@@ -5648,7 +5648,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `SelfStun`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -5664,7 +5664,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `SmallAttic`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
@@ -5680,7 +5680,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `SpawnCoinAnywhere`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -5696,7 +5696,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Stealth`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
 
@@ -5712,7 +5712,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Steven_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -5743,7 +5743,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Trample`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`PassiveLevelScaledStatus`](./Passives_and_Statuses.md#context-passivelevelscaledstatus)
 
@@ -5765,7 +5765,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `TransformOnDeath`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -5781,7 +5781,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `VaporizeCorpseFlipAdvantage`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -5797,7 +5797,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `Webbed`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
 
@@ -5813,7 +5813,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `add`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`TintItem`](./Items_and_Equipment.md#context-tintitem)
 
@@ -5829,7 +5829,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `all_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -5845,7 +5845,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `allsticks_0`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5870,7 +5870,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `allsticks_1`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5886,7 +5886,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `allsticks_2`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5909,7 +5909,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `allsticks_3`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5931,7 +5931,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `arms`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
@@ -5947,7 +5947,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `banned_abilities`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Metronome`](./Abilities_and_Spells.md#context-metronome)
 
@@ -5963,7 +5963,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `barbed_armor`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -5987,7 +5987,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `barbed_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6012,7 +6012,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `birth_defects`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -6054,7 +6054,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `blood_altar_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6090,7 +6090,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bloody_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6124,7 +6124,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bombs_0`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6146,7 +6146,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bombs_1`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6162,7 +6162,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bombs_2`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6178,7 +6178,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bombs_3`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6194,7 +6194,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bone_armor`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6221,7 +6221,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bone_equipment`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6255,7 +6255,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `bone_weapons`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6271,7 +6271,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `can_items_common`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6293,7 +6293,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `can_items_rare`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6309,7 +6309,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `cat_armor`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6333,7 +6333,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `choose_one`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -6356,7 +6356,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `class_seals`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6391,7 +6391,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `common_bones`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6407,7 +6407,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `considered_forms`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive)
 
@@ -6423,7 +6423,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `cooldown`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`TourettesMeows`](./Passives_and_Statuses.md#context-tourettesmeows)
 
@@ -6439,7 +6439,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `cursed_barbed_wire_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6455,7 +6455,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `cursed_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6471,7 +6471,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `custom_aoe_mirror`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -6487,7 +6487,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `custom_aoe_util_mirror`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
@@ -6503,7 +6503,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `deadcat_equipment`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6540,7 +6540,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `demon_themed_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6568,7 +6568,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `dice_abilities`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -6596,7 +6596,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `diseases`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -6612,7 +6612,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_best_multiple`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -6641,7 +6641,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `do_priority_alternating`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -6657,7 +6657,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `eagle_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6685,7 +6685,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `eyes_nonrare`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6712,7 +6712,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `fallback_spawn`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart)
 
@@ -6728,7 +6728,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `flesh_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6756,7 +6756,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `fleshhead_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6772,7 +6772,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `forbidden_spell_consequences`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -6788,7 +6788,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `forbidden_spell_consequences_crippling`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -6814,7 +6814,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `glitched_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6845,7 +6845,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `godly_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6876,7 +6876,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `good_parasites`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6901,7 +6901,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `grass_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6935,7 +6935,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `groups`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`TerminatorSkin`](./Characters_and_Bosses.md#context-terminatorskin)
 
@@ -6951,7 +6951,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `grub_armor`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -6975,7 +6975,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `guts_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7005,7 +7005,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `hidden_tags`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
@@ -7021,7 +7021,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `hide_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7049,7 +7049,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `inanimate_can_receive_specific_statuses`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
@@ -7065,7 +7065,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `intro`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -7081,7 +7081,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `isaac_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7116,7 +7116,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `junkyard_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7151,7 +7151,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `learn_ability_from_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
@@ -7167,7 +7167,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `learn_passive_from_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
@@ -7183,7 +7183,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `legs`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
@@ -7199,7 +7199,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `limbs`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
@@ -7215,7 +7215,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `look_at_offset`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
 
@@ -7231,7 +7231,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `low_hygeine_in_house_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -7247,7 +7247,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `lt`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform)
 
@@ -7263,7 +7263,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `magic_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -7279,7 +7279,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `main_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -7320,7 +7320,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `meat_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7348,7 +7348,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `mental_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -7413,7 +7413,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `mom_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7429,7 +7429,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `move_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -7445,7 +7445,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `move_then_do_all`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
 
@@ -7461,7 +7461,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `movieclip`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
@@ -7485,7 +7485,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `mul`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`TintItem`](./Items_and_Equipment.md#context-tintitem)
 
@@ -7501,7 +7501,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `nemesis`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -7523,7 +7523,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `non_blocking_animations`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
@@ -7546,7 +7546,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `options`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`AddAdvantageToEvent`](./Items_and_Equipment.md#context-addadvantagetoevent)
 
@@ -7562,7 +7562,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `palette`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
 
@@ -7578,7 +7578,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `parasites`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7620,7 +7620,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `pelts`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7644,7 +7644,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `physical_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -7660,7 +7660,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `pills`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7688,7 +7688,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `poop_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7704,7 +7704,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `puddle_tile`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart)
 
@@ -7720,7 +7720,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `raptor_nest_eggs`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7736,7 +7736,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `rat_trinkets`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7766,7 +7766,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `recycled_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7790,7 +7790,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `rock_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7831,7 +7831,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `rotten_armor`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7855,7 +7855,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `sludge_armor`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7871,7 +7871,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `spawn_offset`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
@@ -7887,7 +7887,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `spell_use_groups`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`T3HitlerSpawningPhase`](./Characters_and_Bosses.md#context-t3hitlerspawningphase)
 
@@ -7903,7 +7903,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `state_health`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`FinalBossShieldHealth`](./Characters_and_Bosses.md#context-finalbossshieldhealth)
 
@@ -7919,7 +7919,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `stats`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`RandomPermanentStatsDistinct`](./Items_and_Equipment.md#context-randompermanentstatsdistinct)
 
@@ -7935,7 +7935,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `stick_0`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7957,7 +7957,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `stick_1`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -7979,7 +7979,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `stick_2`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8001,7 +8001,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `stick_3`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8023,7 +8023,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `stomach_disorders`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -8039,7 +8039,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `style`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ShowFakeDamage`](./Abilities_and_Spells.md#context-showfakedamage)
 
@@ -8061,7 +8061,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tech_items`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8097,7 +8097,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tinkerer_0`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8127,7 +8127,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tinkerer_0_bombs`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8152,7 +8152,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tinkerer_1`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8182,7 +8182,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tinkerer_1_bombs`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8207,7 +8207,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tinkerer_2`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8237,7 +8237,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tinkerer_3`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8267,7 +8267,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tracy_idols`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -8295,7 +8295,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `turns`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns)
 
@@ -8311,7 +8311,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tutorial_levelup_active_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -8327,7 +8327,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tutorial_levelup_active_pool_2`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -8343,7 +8343,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `tutorial_levelup_passive_pool`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -8368,7 +8368,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `type`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Items_and_Equipment.md#context-statusonturnendifdidntcastabilitytypes)
 
@@ -8384,7 +8384,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `unique`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8412,7 +8412,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `virtual_head_position`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
 
@@ -8428,7 +8428,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `weapons`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Item_Pools.md#context-root)
 
@@ -8562,7 +8562,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `weather`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#context-conditional_activeweather_any)
 
@@ -8578,7 +8578,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ### Array: `weather_roll`
 <details>
-<summary><b>Click to View References & Elements</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`outcome`](./Events_and_Encounters.md#context-outcome)
 

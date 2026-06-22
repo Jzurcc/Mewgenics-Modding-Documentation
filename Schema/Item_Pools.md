@@ -9,57 +9,57 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ROOT`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/13) |
 | :--- | :--- | :--- | :--- |
-| `rare` | Number | `10, 40, 15` |  |
-| `uncommon` | Number | `75, 35, 60` |  |
-| `very_rare` | Number | `2, 1, .01` |  |
-| `common` | Number | `55, 50, 60` |  |
-| `current_chapter_common` | [`Enum/String`](./Enums.md#enum-current_chapter_common) | `auto, 55` |  |
-| `current_chapter_rare` | [`Enum/String`](./Enums.md#enum-current_chapter_rare) | `auto, 10` |  |
-| `current_chapter_uncommon` | [`Enum/String`](./Enums.md#enum-current_chapter_uncommon) | `auto, 35` |  |
-| `current_chapter_very_rare` | [`Enum/String`](./Enums.md#enum-current_chapter_very_rare) | `auto, 1` |  |
-| `chapter_rare` | Number | `1` |  |
-| `Chicken` | Number | `2, .01, .1` |  |
-| `chapter` | Number | `1` |  |
-| `chapter_common` | Number | `1` |  |
-| `consumables` | Number | `10, 60` |  |
-| `FoodBig` | Number | `2, 1` |  |
-| `FoodMedium` | Number | `1, 5` |  |
-| `basic_consumables` | Number | `90, 100` |  |
-| `shop_common` | Number | `1` |  |
-| `Antidote` | Number | `1` |  |
-| `BagOfSeeds` | [`Enum/String`](./Enums.md#enum-bagofseeds) | `.3` |  |
-| `BirdFeed` | [`Enum/String`](./Enums.md#enum-birdfeed) | `.3` |  |
-| `BirdPoopHat` | [`Enum/String`](./Enums.md#enum-birdpoophat) | `.3` |  |
-| `Catnip` | Number | `3` |  |
-| `CatnipBig` | Number | `2` |  |
-| `DeadHummingbird` | [`Enum/String`](./Enums.md#enum-deadhummingbird) | `.3` |  |
-| `GlowingSeed` | [`Enum/String`](./Enums.md#enum-glowingseed) | `.3` |  |
-| `GoldenEgg` | [`Enum/String`](./Enums.md#enum-goldenegg) | `.3` |  |
-| `HarpysClaw` | [`Enum/String`](./Enums.md#enum-harpysclaw) | `.5` |  |
-| `LostSoul` | [`Enum/String`](./Enums.md#enum-lostsoul) | `.5` |  |
-| `MagicSeed` | [`Enum/String`](./Enums.md#enum-magicseed) | `.3` |  |
-| `Parousworm` | [`Enum/String`](./Enums.md#enum-parousworm) | `.5` |  |
-| `PeaceSymbol` | [`Enum/String`](./Enums.md#enum-peacesymbol) | `.3` |  |
-| `PeaceSymbolFacePaint` | [`Enum/String`](./Enums.md#enum-peacesymbolfacepaint) | `.3` |  |
-| `RaptorEgg` | [`Enum/String`](./Enums.md#enum-raptoregg) | `.1` |  |
-| `RavenFeather` | [`Enum/String`](./Enums.md#enum-ravenfeather) | `.3` |  |
-| `TieDyeBandana` | [`Enum/String`](./Enums.md#enum-tiedyebandana) | `.3` |  |
-| `Turkey` | Number | `2` |  |
-| `WeirdEgg` | [`Enum/String`](./Enums.md#enum-weirdegg) | `.3` |  |
-| `WishBone` | [`Enum/String`](./Enums.md#enum-wishbone) | `.3` |  |
-| `consumables_consumable_common` | Number | `50` |  |
-| `consumables_consumable_rare` | Number | `15` |  |
-| `consumables_consumable_uncommon` | Number | `35` |  |
-| `consumables_consumable_very_rare` | Number | `1` |  |
-| `general_common` | [`Enum/String`](./Enums.md#enum-general_common) | `auto` |  |
-| `general_rare` | [`Enum/String`](./Enums.md#enum-general_rare) | `auto` |  |
-| `general_uncommon` | [`Enum/String`](./Enums.md#enum-general_uncommon) | `auto` |  |
-| `general_very_rare` | [`Enum/String`](./Enums.md#enum-general_very_rare) | `auto` |  |
-| `pills` | Number | `7` |  |
+| `rare` | Number |  | 13 |
+| `uncommon` | Number |  | 12 |
+| `very_rare` | Number |  | 11 |
+| `common` | Number |  | 10 |
+| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Enum/String |  | 6 |
+| `current_chapter_rare` | Number |  | 6 |
+| `current_chapter_uncommon` | Number |  | 6 |
+| `current_chapter_very_rare` | Number |  | 6 |
+| `chapter_rare` | Number |  | 5 |
+| `Chicken` | Number |  | 3 |
+| `chapter` | Number |  | 3 |
+| `chapter_common` | Number |  | 3 |
+| `consumables` | Number |  | 3 |
+| `FoodBig` | Number |  | 2 |
+| `FoodMedium` | Number |  | 2 |
+| `basic_consumables` | Number |  | 2 |
+| `shop_common` | Number |  | 2 |
+| `Antidote` | Number |  | 1 |
+| [`BagOfSeeds`](./Enums.md#enum-bagofseeds) | Enum/String |  | 1 |
+| [`BirdFeed`](./Enums.md#enum-birdfeed) | Enum/String |  | 1 |
+| [`BirdPoopHat`](./Enums.md#enum-birdpoophat) | Enum/String |  | 1 |
+| `Catnip` | Number |  | 1 |
+| `CatnipBig` | Number |  | 1 |
+| [`DeadHummingbird`](./Enums.md#enum-deadhummingbird) | Enum/String |  | 1 |
+| [`GlowingSeed`](./Enums.md#enum-glowingseed) | Enum/String |  | 1 |
+| [`GoldenEgg`](./Enums.md#enum-goldenegg) | Enum/String |  | 1 |
+| [`HarpysClaw`](./Enums.md#enum-harpysclaw) | Enum/String |  | 1 |
+| [`LostSoul`](./Enums.md#enum-lostsoul) | Enum/String |  | 1 |
+| [`MagicSeed`](./Enums.md#enum-magicseed) | Enum/String |  | 1 |
+| [`Parousworm`](./Enums.md#enum-parousworm) | Enum/String |  | 1 |
+| [`PeaceSymbol`](./Enums.md#enum-peacesymbol) | Enum/String |  | 1 |
+| [`PeaceSymbolFacePaint`](./Enums.md#enum-peacesymbolfacepaint) | Enum/String |  | 1 |
+| [`RaptorEgg`](./Enums.md#enum-raptoregg) | Enum/String |  | 1 |
+| [`RavenFeather`](./Enums.md#enum-ravenfeather) | Enum/String |  | 1 |
+| [`TieDyeBandana`](./Enums.md#enum-tiedyebandana) | Enum/String |  | 1 |
+| `Turkey` | Number |  | 1 |
+| [`WeirdEgg`](./Enums.md#enum-weirdegg) | Enum/String |  | 1 |
+| [`WishBone`](./Enums.md#enum-wishbone) | Enum/String |  | 1 |
+| `consumables_consumable_common` | Number |  | 1 |
+| `consumables_consumable_rare` | Number |  | 1 |
+| `consumables_consumable_uncommon` | Number |  | 1 |
+| `consumables_consumable_very_rare` | Number |  | 1 |
+| [`general_common`](./Enums.md#enum-general_common) | Enum/String |  | 1 |
+| [`general_rare`](./Enums.md#enum-general_rare) | Enum/String |  | 1 |
+| [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum/String |  | 1 |
+| [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum/String |  | 1 |
+| `pills` | Number |  | 1 |
 
 </details>
 

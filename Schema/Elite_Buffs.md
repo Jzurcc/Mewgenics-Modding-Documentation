@@ -9,20 +9,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ROOT`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/54) |
 | :--- | :--- | :--- | :--- |
-| `icon_frame` | Number | `500, 501, 502` |  |
-| `passives` | [`Block`](./Elite_Buffs.md#context-passives) | `{ ... }` |  |
-| `value` | Number | `1` |  |
-| `unique` | Boolean | `true` |  |
-| `specific_chapter` | Number | `2, 1, 3` |  |
-| `minion_alt` | [`Enum/String`](./Enums.md#enum-minion_alt) | `SlightlyDepressing, SubUndying, SubTwin` |  |
-| `rollable` | Boolean | `false` |  |
-| `only_at_battle_start` | Boolean | `true` |  |
-| `requires_corpse` | Boolean | `true` |  |
-| `roll_limit` | Number | `2` |  |
+| `icon_frame` | Number |  | 54 |
+| [`passives`](./Elite_Buffs.md#context-passives) | Block |  | 54 |
+| `value` | Number |  | 54 |
+| `unique` | Boolean |  | 36 |
+| `specific_chapter` | Number |  | 8 |
+| [`minion_alt`](./Enums.md#enum-minion_alt) | Enum/String |  | 5 |
+| `rollable` | Boolean |  | 5 |
+| `only_at_battle_start` | Boolean |  | 2 |
+| `requires_corpse` | Boolean |  | 2 |
+| `roll_limit` | Number |  | 2 |
 
 </details>
 
@@ -31,92 +31,57 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `passives`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ROOT`](./Elite_Buffs.md#context-root)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/30) |
 | :--- | :--- | :--- | :--- |
-| `EliteTint` | [`Array`](./Arrays.md#array-elitetint) | `[ .4 .4 .4 ], [ .6 .6 .6 .50 ], red` |  |
-| `EliteParticle` | [`Enum/String`](./Enums.md#enum-eliteparticle) | `SparkleBuff, Lava_Distortion, SpikeBuff` |  |
-| `HealthMultiplier` | [`Enum/String`](./Enums.md#enum-healthmultiplier) | `.5, 1.5, .8` |  |
-| `EliteFlatTint` | [`Array`](./Arrays.md#array-eliteflattint) | `[ 1.1 1.1 1.3 ], [ 1.1 1.1 1.1 ], [ 1.1 1.1 1 ]` |  |
-| `NonStackingShield` | Number | `7, 5, 3` |  |
-| `SizeScale` | Number | `1.2, .8, .75` |  |
-| `StatusEachRoundBegin` | [`Block`](./Elite_Buffs.md#context-statuseachroundbegin) | `{ ... }` |  |
-| `DepressionAura` | [`Block`](./Elite_Buffs.md#context-depressionaura) | `{ ... }` |  |
-| `DodgeChance` | Number | `10%` |  |
-| `ElementImmune` | [`Enum/String`](./Enums.md#enum-elementimmune) | `Creep, Fire` |  |
-| `MeleeRevengeDamage` | [`Block`](./Elite_Buffs.md#context-meleerevengedamage) | `{ ... }` |  |
-| `TileTrail` | [`Enum/String`](./Enums.md#enum-tiletrail) | `FireTile, CreepTile` |  |
-| `AddCorpseHealth` | Number | `-999999, 2` |  |
-| `Brace` | Number | `2, 1` |  |
-| `ChanceToRevive` | [`Block`](./Elite_Buffs.md#context-chancetorevive) | `{ ... }` |  |
-| `CritChanceUp` | Number | `10` |  |
-| `DamageNeighborsAfterMove` | [`Block`](./Elite_Buffs.md#context-damageneighborsaftermove) | `{ ... }` |  |
-| `DamageUp` | Number | `2` |  |
-| `ExtraDispersedTurns` | Number | `1, -1` |  |
-| `GlobalManaBurnAura` | Number | `-1` |  |
-| `InnateElement` | [`Enum/String`](./Enums.md#enum-innateelement) | `Fire` |  |
-| `KineticSpikes` | Number | `1` |  |
-| `LuckUp` | Number | `3` |  |
-| `MinimumKnockbackFromAllDamage` | Number | `1` |  |
-| `NonStackingDivineShield` | Number | `1` |  |
-| `RevengeDamage` | [`Block`](./Elite_Buffs.md#context-revengedamage) | `{ ... }` |  |
-| `SpawnOnBattleStart` | [`Block`](./Elite_Buffs.md#context-spawnonbattlestart) | `{ ... }` |  |
-| `SpeedUp` | Number | `4` |  |
-| `StatusEachTurnEnd` | [`Block`](./Elite_Buffs.md#context-statuseachturnend) | `{ ... }` |  |
-| `StunImmunity` | Number | `1` |  |
-| `Thorns` | Number | `2, 1` |  |
-| `AbilityDamageMultiplier` | Number | `1.5` |  |
-| `AddStatusToBasicAttack` | [`Block`](./Elite_Buffs.md#context-addstatustobasicattack) | `{ ... }` |  |
-| `AddUnfilledMaxHealth` | Number | `20` |  |
-| `HealthRegenUp` | Number | `3` |  |
-| `MoveTowardsDamageSource` | [`Enum/String`](./Enums.md#enum-movetowardsdamagesource) | `MoveOne` |  |
-| `PermanentMadness` | Number | `1` |  |
-| `ReflectProjectiles` | [`Block`](./Elite_Buffs.md#context-reflectprojectiles) | `{ ... }` |  |
-| `RemoveExtraDispersedTurn` | Number | `1` |  |
-| `SpawnOnDeath` | [`Enum/String`](./Enums.md#enum-spawnondeath) | `NonChampionFlySwarm` |  |
-| `StatusEachRoundEnd` | [`Block`](./Elite_Buffs.md#context-statuseachroundend) | `{ ... }` |  |
-| `StatusOnDie` | [`Block`](./Elite_Buffs.md#context-statusondie) | `{ ... }` |  |
-| `StatusOnEnemyCastSpell` | [`Block`](./Elite_Buffs.md#context-statusonenemycastspell) | `{ ... }` |  |
-| `StatusOnKill` | [`Block`](./Elite_Buffs.md#context-statusonkill) | `{ ... }` |  |
-| `Trample` | Number | `3` |  |
-
-</details>
-
----
-
-### Context: `DepressionAura`
-
-<details>
-<summary><b>Click to View Properties</b></summary>
-
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
-
-| Property Key | Type | Example | Definition |
-| :--- | :--- | :--- | :--- |
-| `aura_effects_allies` | Boolean | `false` |  |
-| `range` | Number | `1, global` |  |
-| `stacks` | Number | `1` |  |
-
-</details>
-
----
-
-### Context: `DamageNeighborsAfterMove`
-
-<details>
-<summary><b>Click to View Properties</b></summary>
-
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
-
-| Property Key | Type | Example | Definition |
-| :--- | :--- | :--- | :--- |
-| `damage` | Number | `1` |  |
-| `effects` | [`Block`](./Elite_Buffs.md#context-effects) | `{ ... }` |  |
-| `elements` | [`Array`](./Arrays.md#array-elements) | `[ Electric ]` |  |
-| `type` | [`Enum/String`](./Enums.md#enum-type) | `spell` |  |
+| [`EliteTint`](./Arrays.md#array-elitetint) | Array |  | 30 |
+| [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum/String |  | 19 |
+| `HealthMultiplier` | Number |  | 15 |
+| [`EliteFlatTint`](./Arrays.md#array-eliteflattint) | Array |  | 11 |
+| `NonStackingShield` | Number |  | 8 |
+| `SizeScale` | Number |  | 8 |
+| [`StatusEachRoundBegin`](./Elite_Buffs.md#context-statuseachroundbegin) | Block |  | 8 |
+| [`DepressionAura`](./Elite_Buffs.md#context-depressionaura) | Block |  | 4 |
+| `DodgeChance` | Number |  | 3 |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum/String |  | 3 |
+| [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage) | Block |  | 3 |
+| [`TileTrail`](./Enums.md#enum-tiletrail) | Enum/String |  | 3 |
+| `AddCorpseHealth` | Number |  | 2 |
+| `Brace` | Number |  | 2 |
+| [`ChanceToRevive`](./Elite_Buffs.md#context-chancetorevive) | Block |  | 2 |
+| `CritChanceUp` | Number |  | 2 |
+| [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove) | Block |  | 2 |
+| `DamageUp` | Number |  | 2 |
+| `ExtraDispersedTurns` | Number |  | 2 |
+| `GlobalManaBurnAura` | Number |  | 2 |
+| [`InnateElement`](./Enums.md#enum-innateelement) | Enum/String |  | 2 |
+| `KineticSpikes` | Number |  | 2 |
+| `LuckUp` | Number |  | 2 |
+| `MinimumKnockbackFromAllDamage` | Number |  | 2 |
+| `NonStackingDivineShield` | Number |  | 2 |
+| [`RevengeDamage`](./Elite_Buffs.md#context-revengedamage) | Block |  | 2 |
+| [`SpawnOnBattleStart`](./Elite_Buffs.md#context-spawnonbattlestart) | Block |  | 2 |
+| `SpeedUp` | Number |  | 2 |
+| [`StatusEachTurnEnd`](./Elite_Buffs.md#context-statuseachturnend) | Block |  | 2 |
+| `StunImmunity` | Number |  | 2 |
+| `Thorns` | Number |  | 2 |
+| `AbilityDamageMultiplier` | Number |  | 1 |
+| [`AddStatusToBasicAttack`](./Elite_Buffs.md#context-addstatustobasicattack) | Block |  | 1 |
+| `AddUnfilledMaxHealth` | Number |  | 1 |
+| `HealthRegenUp` | Number |  | 1 |
+| [`MoveTowardsDamageSource`](./Enums.md#enum-movetowardsdamagesource) | Enum/String |  | 1 |
+| `PermanentMadness` | Number |  | 1 |
+| [`ReflectProjectiles`](./Elite_Buffs.md#context-reflectprojectiles) | Block |  | 1 |
+| `RemoveExtraDispersedTurn` | Number |  | 1 |
+| [`SpawnOnDeath`](./Enums.md#enum-spawnondeath) | Enum/String |  | 1 |
+| [`StatusEachRoundEnd`](./Elite_Buffs.md#context-statuseachroundend) | Block |  | 1 |
+| [`StatusOnDie`](./Elite_Buffs.md#context-statusondie) | Block |  | 1 |
+| [`StatusOnEnemyCastSpell`](./Elite_Buffs.md#context-statusonenemycastspell) | Block |  | 1 |
+| [`StatusOnKill`](./Elite_Buffs.md#context-statusonkill) | Block |  | 1 |
+| `Trample` | Number |  | 1 |
 
 </details>
 
@@ -125,13 +90,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `StatusEachRoundBegin`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/8) |
 | :--- | :--- | :--- | :--- |
-| `NonStackingShield` | Number | `7, 5, 3` |  |
+| `NonStackingShield` | Number |  | 8 |
+
+</details>
+
+---
+
+### Context: `DepressionAura`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+
+| Property Key | Type | Definition | Count (X/4) |
+| :--- | :--- | :--- | :--- |
+| `aura_effects_allies` | Boolean |  | 4 |
+| `range` | Number |  | 4 |
+| `stacks` | Number |  | 4 |
 
 </details>
 
@@ -140,32 +122,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ChanceToRevive`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `health` | Number | `50%` |  |
-| `stacks` | Number | `100` |  |
-| `statuses` | [`Block`](./Elite_Buffs.md#context-statuses) | `{ ... }` |  |
+| `health` | Number |  | 2 |
+| `stacks` | Number |  | 2 |
+| [`statuses`](./Elite_Buffs.md#context-statuses) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `effects`
+### Context: `DamageNeighborsAfterMove`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage), [`RevengeDamage`](./Elite_Buffs.md#context-revengedamage)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `Tarred` | Number | `1` |  |
-| `VisualFXTile` | [`Enum/String`](./Enums.md#enum-visualfxtile) | `WaterConduct` |  |
-| `Burn` | Number | `1` |  |
+| `damage` | Number |  | 2 |
+| [`effects`](./Elite_Buffs.md#context-effects) | Block |  | 2 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
+| [`type`](./Enums.md#enum-type) | Enum/String |  | 2 |
 
 </details>
 
@@ -174,31 +157,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `MeleeRevengeDamage`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `knockback` | Number | `1` |  |
-| `effects` | [`Block`](./Elite_Buffs.md#context-effects) | `{ ... }` |  |
-| `elements` | [`Array`](./Arrays.md#array-elements) | `[ Fire ]` |  |
-
-</details>
-
----
-
-### Context: `SpawnOnBattleStart`
-
-<details>
-<summary><b>Click to View Properties</b></summary>
-
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
-
-| Property Key | Type | Example | Definition |
-| :--- | :--- | :--- | :--- |
-| `object` | [`Enum/String`](./Enums.md#enum-object) | `twin` |  |
-| `prevent_chain_tag` | [`Enum/String`](./Enums.md#enum-prevent_chain_tag) | `eb_twin` |  |
+| `knockback` | Number |  | 2 |
+| [`effects`](./Elite_Buffs.md#context-effects) | Block |  | 1 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
 </details>
 
@@ -207,13 +174,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `RevengeDamage`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `effects` | [`Block`](./Elite_Buffs.md#context-effects) | `{ ... }` |  |
+| [`effects`](./Elite_Buffs.md#context-effects) | Block |  | 2 |
+
+</details>
+
+---
+
+### Context: `SpawnOnBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+
+| Property Key | Type | Definition | Count (X/2) |
+| :--- | :--- | :--- | :--- |
+| [`object`](./Enums.md#enum-object) | Enum/String |  | 2 |
+| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum/String |  | 2 |
 
 </details>
 
@@ -222,45 +205,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `StatusEachTurnEnd`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `NonStackingDivineShield` | Number | `1` |  |
+| `NonStackingDivineShield` | Number |  | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEnemyCastSpell`
+### Context: `effects`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+> **Referenced by:** [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage), [`RevengeDamage`](./Elite_Buffs.md#context-revengedamage)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Number | `1` |  |
-| `HealthGain` | Number | `1` |  |
-
-</details>
-
----
-
-### Context: `StatusOnKill`
-
-<details>
-<summary><b>Click to View Properties</b></summary>
-
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
-
-| Property Key | Type | Example | Definition |
-| :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Number | `1` |  |
-| `HealthGain` | Number | `4` |  |
+| `Tarred` | Number |  | 2 |
+| [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum/String |  | 2 |
+| `Burn` | Number |  | 1 |
 
 </details>
 
@@ -269,13 +237,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `statuses`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`ChanceToRevive`](./Elite_Buffs.md#context-chancetorevive)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| `Zombie` | Number | `1` |  |
+| `Zombie` | Number |  | 2 |
 
 </details>
 
@@ -284,13 +252,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `AddStatusToBasicAttack`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/1) |
 | :--- | :--- | :--- | :--- |
-| `Poison` | Number | `1` |  |
+| `Poison` | Number |  | 1 |
 
 </details>
 
@@ -299,13 +267,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `ReflectProjectiles`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/1) |
 | :--- | :--- | :--- | :--- |
-| `self_damage` | Number | `2` |  |
+| `self_damage` | Number |  | 1 |
 
 </details>
 
@@ -314,13 +282,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `StatusEachRoundEnd`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/1) |
 | :--- | :--- | :--- | :--- |
-| `AddRandomEliteBuff` | Number | `1` |  |
+| `AddRandomEliteBuff` | Number |  | 1 |
 
 </details>
 
@@ -329,13 +297,45 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Context: `StatusOnDie`
 
 <details>
-<summary><b>Click to View Properties</b></summary>
+<summary><b>Expand</b></summary>
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
-| Property Key | Type | Example | Definition |
+| Property Key | Type | Definition | Count (X/1) |
 | :--- | :--- | :--- | :--- |
-| `StackingSandstorm` | Number | `1` |  |
+| `StackingSandstorm` | Number |  | 1 |
+
+</details>
+
+---
+
+### Context: `StatusOnEnemyCastSpell`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+
+| Property Key | Type | Definition | Count (X/1) |
+| :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Number |  | 1 |
+| `HealthGain` | Number |  | 1 |
+
+</details>
+
+---
+
+### Context: `StatusOnKill`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+
+| Property Key | Type | Definition | Count (X/1) |
+| :--- | :--- | :--- | :--- |
+| `AllStatsUp` | Number |  | 1 |
+| `HealthGain` | Number |  | 1 |
 
 </details>
 
