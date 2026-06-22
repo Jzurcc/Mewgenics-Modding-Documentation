@@ -11,7 +11,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor), [`editor`](./Miscellaneous.md#context-editor)
 
 **Accepted Elements:**
-- `String/Enum`
+- `String`
 
 **Examples:**
 `[ "shadow.png" "cat.png" ]`
@@ -387,43 +387,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#context-dodamage), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`self_damage`](./Abilities_and_Spells.md#context-self_damage), [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage), [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage), [`properties`](./Characters_and_Bosses.md#context-properties), [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage), [`SolarFlare`](./House_and_Environment.md#context-solarflare), [`RevengeDamage`](./Items_and_Equipment.md#context-revengedamage), [`AddStatusesIfPersistentWeatherElement`](./Passives_and_Statuses.md#context-addstatusesifpersistentweatherelement), [`AddStatusesToReceivedElementalDamage`](./Passives_and_Statuses.md#context-addstatusestoreceivedelementaldamage), [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#context-damageneighborsaftermove), [`GravityWell`](./Passives_and_Statuses.md#context-gravitywell), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#context-smiteenemieswhokill), [`fire`](./Passives_and_Statuses.md#context-fire), [`ice`](./Passives_and_Statuses.md#context-ice), [`lightning`](./Passives_and_Statuses.md#context-lightning), [`triattack`](./Passives_and_Statuses.md#context-triattack)
 
 **Accepted Elements:**
-- `Unknown`
-
-**Examples:**
-`[ Gravity ]`
-`[ Holy ]`
-`[ Holy ]`
-
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `Fire` | |
-| `Holy` | |
-| `Explosion` | |
-| `Electric` | |
-| `Wind` | |
-| `Ice` | |
-| `Water` | |
-| `Gravity` | |
-| `Earth` | |
-| `Napalm` | |
-| `Grass` | |
-| `Rock` | |
-| `Mutate` | |
-| `Poison` | |
-| `Metal` | |
-| `Bloom` | |
-| `Dust` | |
-| `Heat` | |
-| `Spikes` | |
-| `Break_Web` | |
-| `Conducted` | |
-| `HOLY` | |
-| `Lesser_Water` | |
-| `Quake` | |
-| `Shadow` | |
-| `dont_break_tentacles` | |
+- [Enum: `element`](./Enums.md#enum-element)
 
 </details>
 
@@ -436,646 +400,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`abilities`](./Characters_and_Bosses.md#context-abilities)
 
 **Accepted Elements:**
-- `Unknown`
-
-**Examples:**
-`[ BirdFly ]`
-`[ SpawnBomb BombRatTurtle RockToss_BomberRat ]`
-`[ TrampleDash MoveOne ]`
-
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `MoveOne` | |
-| `DoNothing` | |
-| `DefaultMove` | |
-| `CaveCatEnrageOne` | |
-| `CaveCatEnrageTwo` | |
-| `Magnetize` | |
-| `ZaratanaVSRevenge` | |
-| `BombRatTurtle` | |
-| `CaveBabyFoodMove` | |
-| `CaveBabyGrow` | |
-| `CaveManChestPound` | |
-| `CaveManPickupSpear` | |
-| `CaveManSpearRun` | |
-| `CaveManTransform` | |
-| `CaveWomanBirth` | |
-| `CaveWomanDrop` | |
-| `CaveWomanDropTransform` | |
-| `CaveWomanGrab` | |
-| `CaveWomanThrow` | |
-| `ChainDash` | |
-| `ClotFailEvolve` | |
-| `CrowFlutter` | |
-| `DCBirthSquirrel` | |
-| `DCSquirrelForm` | |
-| `DrinkUp` | |
-| `Guillotina2Rage` | |
-| `LabPillarDrop` | |
-| `MegafetusMelee` | |
-| `MoveTwo` | |
-| `PyrophinaSoloFlamethrower` | |
-| `PyrophinaVSRun` | |
-| `PyrophinaVSWeatherRoar` | |
-| `ReaperRevenge` | |
-| `Reload` | |
-| `RockToss_BomberRat` | |
-| `RockToss_ColorlessCat` | |
-| `RockToss_ColorlessCat_AsCloseAsPossible` | |
-| `SabertoothCatTransformSwipe` | |
-| `ShamblerToss` | |
-| `Shove` | |
-| `SpawnBomb` | |
-| `Spin_Enemy` | |
-| `SwapPositions_TankCat` | |
-| `TrampleDash` | |
-| `WereManPounce` | |
-| `WereManTransformSwipe` | |
-| `WolfLeap` | |
-| `YeetTowardsBuddy` | |
-| `ZaratanaSoloBombardment` | |
-| `ZaratanaVSExitTurtle` | |
-| `AZ_BreakArm` | |
-| `AZ_BreakLeg` | |
-| `AZ_Jump` | |
-| `AZ_LoseHead` | |
-| `AZ_Scream` | |
-| `AlienBeastEat` | |
-| `AlienBeastGoop` | |
-| `AlienBeastMoveOne` | |
-| `AlienBeastOpenEyes` | |
-| `AlienBeastPuke` | |
-| `AlienBeastRampage` | |
-| `AlienBeastScream` | |
-| `AnkyloSpin` | |
-| `BBBless` | |
-| `BBCut` | |
-| `BBPickupCrown` | |
-| `BBPullBomb` | |
-| `BBSpin` | |
-| `BBToss` | |
-| `BBTransformMutant` | |
-| `BBTransformZealot` | |
-| `BHoleSuck` | |
-| `BadBone_copy` | |
-| `BearTrap_CaveBaby` | |
-| `BearTrap_Enemy` | |
-| `BearTrap_Enemy_Cantrip` | |
-| `BecomeTheDestroyer` | |
-| `BellyPound` | |
-| `BirdFly` | |
-| `BirthwortHeal` | |
-| `BirthwortReactionShot` | |
-| `BirthwortTrample` | |
-| `BloatEyeMovement2` | |
-| `BloatLeap` | |
-| `BloatLoseFirstEye` | |
-| `BloatLoseSecondEye` | |
-| `BloatSideLaser` | |
-| `BloatyExplodey` | |
-| `BoomerCatExplode` | |
-| `BoyDinoCry` | |
-| `BoyDinoHeadBash` | |
-| `BrambleBabyEntangle` | |
-| `BumbleButt` | |
-| `BumblefootAttemptEatCat` | |
-| `BumblefootBoneShot` | |
-| `BumblefootEatCat` | |
-| `BumblefootEatCorpse` | |
-| `BumblefootLeap` | |
-| `BungaEatCat` | |
-| `BungaEntrance` | |
-| `BungaRoar` | |
-| `BungaSwipe` | |
-| `ButtFart` | |
-| `ButtFlip` | |
-| `ButtWeb` | |
-| `ButtWeb_AlreadyEnraged` | |
-| `CBReload` | |
-| `CBShoot_ZodiacStyle` | |
-| `CHCry` | |
-| `CHSpawn` | |
-| `CHuskCatShade` | |
-| `CHuskDrop` | |
-| `CHuskDropFail` | |
-| `CHuskGrab` | |
-| `CanCreeperSlide` | |
-| `CancerExplode` | |
-| `CatCall` | |
-| `CatGoop` | |
-| `CaveChiefBat` | |
-| `CaveChiefFear` | |
-| `CaveChiefRally` | |
-| `CaveMom_Heal` | |
-| `CaveMom_TossDad` | |
-| `CaveMom_TossElsewhere` | |
-| `CerberubsBarrage` | |
-| `CerberubsCalm` | |
-| `CerberubsShotgunReaction` | |
-| `CerberubsShotgunReactionX` | |
-| `CerberubsStraightReaction` | |
-| `CerberubsThrow` | |
-| `ChaosSpawnIn` | |
-| `ChaosSwitchForms` | |
-| `ChaosSwitchSides` | |
-| `CherubAttract` | |
-| `CherubDoom` | |
-| `CherubimLeave` | |
-| `CherubimReturn` | |
-| `ChubsGoop` | |
-| `ChubsRage` | |
-| `ChumShot_Maggot` | |
-| `ClotEvolve` | |
-| `ClotEvolveCatCopy` | |
-| `CollectiveCounter` | |
-| `ColorlessCat_BoulderDrop` | |
-| `CoreFreakFury` | |
-| `Counterspell` | |
-| `CovenFamine` | |
-| `CovenPestilence` | |
-| `CovenRise1` | |
-| `CovenRise2` | |
-| `CovenRise3` | |
-| `CovenRise4` | |
-| `CovenSummon` | |
-| `CovenWar` | |
-| `CraterCreeperSlide` | |
-| `CrowFlap` | |
-| `CrowFlap2` | |
-| `CrowFlap3` | |
-| `CrowFlutter2` | |
-| `CrowFlutter3` | |
-| `CultistCut` | |
-| `CutterCut` | |
-| `D6Confused` | |
-| `D6Fizzle` | |
-| `D6Laser` | |
-| `D6Poop` | |
-| `D6Quake` | |
-| `D6Storm` | |
-| `D6Wrath` | |
-| `DCAeroblast` | |
-| `DCT_SummonCrow` | |
-| `DH_MeatHook` | |
-| `DbgBackgroundTransitionTest` | |
-| `DbgChaosSwitchFormsA` | |
-| `DbgChaosSwitchFormsP` | |
-| `Dclaude_Declaw` | |
-| `DeathWormEat` | |
-| `DeathWormReturn` | |
-| `DeathWormTrampleDash_Reaction` | |
-| `DecoyExplode` | |
-| `DemonRockThrow` | |
-| `Destroyer2HolyAttack` | |
-| `Destroyer2Pulse` | |
-| `DestroyerBreakShield` | |
-| `DestroyerChargeBackflips` | |
-| `DestroyerDashAttack` | |
-| `DestroyerDodge` | |
-| `DestroyerHolyAttack` | |
-| `DestroyerPulse` | |
-| `DestroyerRaise` | |
-| `DestroyerThrowShield` | |
-| `DiceLeap` | |
-| `Digest` | |
-| `Disguise` | |
-| `DoctorPickup` | |
-| `DoctorSpawn` | |
-| `DoubleDistanceMove` | |
-| `DrDGlare` | |
-| `DustDash` | |
-| `DustTeleport` | |
-| `DybbukEscape` | |
-| `DybbukPossess` | |
-| `DybbukRePossess` | |
-| `DybbukReanimate` | |
-| `DybbukReturn` | |
-| `DybbukWisps` | |
-| `ExtraMove` | |
-| `FatLeap` | |
-| `FearMelee` | |
-| `FetusAirstrikeTrigger` | |
-| `FetusPullBomb` | |
-| `FleshLadUppercut` | |
-| `FleshyMindConfusion` | |
-| `FloastSpawn` | |
-| `FloastThrow` | |
-| `FlushX` | |
-| `FormGrowThree` | |
-| `FormGrowThreeSnakey` | |
-| `FormGrowTwo` | |
-| `FormGrowTwoSnakey` | |
-| `FormShrinkFour` | |
-| `FormShrinkOne` | |
-| `FormShrinkOneSnakey` | |
-| `FormShrinkThree` | |
-| `FormShrinkTwo` | |
-| `FormShrinkTwoSnakey` | |
-| `FutureBotPunchAggro` | |
-| `FutureBotSuplex` | |
-| `FuzzerJump_post` | |
-| `FuzzerReact` | |
-| `G3CallForHelp` | |
-| `G3CoughFly` | |
-| `G3GrabHead` | |
-| `G3RageShake` | |
-| `G3RunToHead` | |
-| `G3Scream_Hex` | |
-| `G3Shake` | |
-| `G3SpawnMama` | |
-| `G3TossHead` | |
-| `GA_Counterspell` | |
-| `GA_Megablast` | |
-| `GA_PrimeExplode` | |
-| `GA_Suggest` | |
-| `GKLeap` | |
-| `GKSpawn` | |
-| `GP_Probe` | |
-| `GSOpen` | |
-| `GSScream` | |
-| `GSSuck` | |
-| `GametePop` | |
-| `GasserExplode` | |
-| `GeminiSpecial` | |
-| `GeminiSwipe` | |
-| `GenericRage` | |
-| `GirlDinoCry` | |
-| `GirlDinoHeadBash` | |
-| `GirlDinoPoop` | |
-| `GirlDinoThrow` | |
-| `GlowingMushroomGiveMana` | |
-| `GlowingMushroomGiveMana2` | |
-| `GoodBone` | |
-| `GoodBone_copy` | |
-| `GorgerRun` | |
-| `GrenadeExplode` | |
-| `Guillotina1Rage` | |
-| `GuillotinaTossCollide` | |
-| `HCHumanDie` | |
-| `HangerBotLeave` | |
-| `HangerBotReturn` | |
-| `HangerBotSpawn` | |
-| `HarpoonTrapPull` | |
-| `HeadTumorResponse` | |
-| `HealSelf` | |
-| `HemBounce` | |
-| `HemDeathPop` | |
-| `HemHeal` | |
-| `HitlerCloneHeil` | |
-| `HitlerCloneLick` | |
-| `HitlerCloneTransform` | |
-| `HitlerHeadGrowA` | |
-| `HitlerHeadGrowB` | |
-| `HitlerHeadTransform` | |
-| `HitlerHeil` | |
-| `HitlerNuke` | |
-| `HitlerPulp1` | |
-| `HitlerPulp2` | |
-| `HitlerPulp3` | |
-| `HitlerPulp4` | |
-| `HitlerPulp5` | |
-| `HitlerPulp6` | |
-| `HitlerSuicide` | |
-| `HostShove` | |
-| `IDBrambleBurst` | |
-| `IDBrambleShot` | |
-| `IDSprout` | |
-| `IceElementalBlizzard` | |
-| `IceElementalBreath` | |
-| `JackShield` | |
-| `JarHeadOrder` | |
-| `JohnnyBlast` | |
-| `JohnnyCryOne` | |
-| `JohnnyCryTwo` | |
-| `JohnnyMegaBlast` | |
-| `JohnnyMindControl` | |
-| `JohnnyPull` | |
-| `JohnnyPush` | |
-| `LELeave` | |
-| `LEPortFar` | |
-| `LEReturn` | |
-| `Leave` | |
-| `LennyCatDies` | |
-| `LennyCatSlap` | |
-| `LennyDrop` | |
-| `LennyGrab` | |
-| `LennyGrabDead` | |
-| `LennyHug` | |
-| `LennyStruggleFail` | |
-| `LickyLicky` | |
-| `LoveBotCounter` | |
-| `MCBlizzard` | |
-| `MCFlamethrower` | |
-| `MCHadouken` | |
-| `MCKineticCharge` | |
-| `MCStorm` | |
-| `MD_HeadDrop` | |
-| `MD_HeadLeave` | |
-| `MD_Kick` | |
-| `MD_LegLeave` | |
-| `MD_LegReturn` | |
-| `MD_Lift` | |
-| `MD_Poop` | |
-| `MM_Grab` | |
-| `MM_Guard` | |
-| `MM_Quake` | |
-| `MM_Unguard` | |
-| `MaelestesPickup` | |
-| `MaelestesSteal` | |
-| `MammothBabyStomp` | |
-| `MammothStomp` | |
-| `MammothTrampleDash` | |
-| `ManglerEnrage` | |
-| `ManglerFumbleEven` | |
-| `ManglerFumbleOdd` | |
-| `ManglerMonsterExplode` | |
-| `ManglerMonsterHeartAttack` | |
-| `ManglerSpin` | |
-| `ManglerThrowRemote` | |
-| `MarshmallowConvert` | |
-| `MarshmallowZealot` | |
-| `MechSuitBarrage` | |
-| `MechSuitDash` | |
-| `MechSuitEject` | |
-| `MegaGuppy_SlamLeft` | |
-| `MegaGuppy_SlamRight` | |
-| `MegaGuppy_SummonTheChild` | |
-| `MegaGuppy_TransformBoris` | |
-| `MegaGuppy_TransformExplosive` | |
-| `MegaGuppy_TransformHoly` | |
-| `MegablastX` | |
-| `Metronome_Enemy` | |
-| `MiniNukeExplodey` | |
-| `MiniVolcano_Spurt` | |
-| `MoonHandDash` | |
-| `MoonHandDrop` | |
-| `MoonHandDrop_Deathrattle` | |
-| `MoonHandGrab` | |
-| `MoonHandMegaSqueeze` | |
-| `MoonHandPunchHead` | |
-| `MoonHandThrow` | |
-| `MoonHead_Barrage` | |
-| `MoonHead_BeginCharge` | |
-| `MoonHead_Blow` | |
-| `MoonHead_CallForHelp` | |
-| `MoonHead_ChewCat` | |
-| `MoonHead_CommandHeadPunch` | |
-| `MoonHead_Digest` | |
-| `MoonHead_EatCat` | |
-| `MoonHead_Finisher` | |
-| `MoonHead_RefreshBrace` | |
-| `MoonHead_SacrificeHand` | |
-| `MoonHead_SpawnHand` | |
-| `MoonHead_SpitCat` | |
-| `MoonHead_SpitCat_AndDie` | |
-| `MoonWormCurl` | |
-| `MotherConsume` | |
-| `MotherTumorGrow` | |
-| `MoveTwoCantrip` | |
-| `MutateAOE` | |
-| `NCGravecrawl` | |
-| `NCReanimate` | |
-| `NeckSnap` | |
-| `NeutronExplode` | |
-| `NeutronRumble` | |
-| `NubsCatJumpReaction` | |
-| `NubsGoop` | |
-| `NubsNuke` | |
-| `NurseBotHeal` | |
-| `Parasaurolophus_Throw` | |
-| `ParasiterSpawn` | |
-| `PeashyStab` | |
-| `PickupRock` | |
-| `PokerPokeAlly` | |
-| `PokerPokeCat` | |
-| `PsychicCatBackflip` | |
-| `PsychicChoke_Enemy` | |
-| `PteroEscape` | |
-| `PteroGrab` | |
-| `PyrophinaSoloCatThrow` | |
-| `PyrophinaSoloEarthquakeStomp` | |
-| `PyrophinaSoloRoar` | |
-| `PyrophinaVSCatThrow` | |
-| `PyrophinaVSEarthquakeStomp` | |
-| `PyrophinaVSFlamethrower` | |
-| `PyrophinaVSRoar` | |
-| `PyrophinaVSSpinThrow` | |
-| `QuakeJump` | |
-| `QueenHippoAttack` | |
-| `QueenHippoHeartAttack` | |
-| `QueenHippoTire` | |
-| `QueenHippoUppercut` | |
-| `QueenMinis` | |
-| `QueenWeb` | |
-| `RageUp` | |
-| `RallyMaggots` | |
-| `RangedHeal_Enemy` | |
-| `RatKing2Spawn` | |
-| `RatKingSpawn` | |
-| `RatKingTransform` | |
-| `RattleSnakeTrap` | |
-| `RockSong` | |
-| `RockToss_CaveDad` | |
-| `RollDice` | |
-| `SBotAnger` | |
-| `SBotAngryMove` | |
-| `SBotRecharge` | |
-| `SCSneakUp` | |
-| `SM_BleedCounter` | |
-| `SM_Flamethrower` | |
-| `SM_IceShards` | |
-| `SM_LightningStorm` | |
-| `SM_MagicMissile` | |
-| `SZBBackflipDodge` | |
-| `SZBReload` | |
-| `SabertoothCatDoubleSwipe` | |
-| `SabertoothCubLick` | |
-| `ScaryHaunt` | |
-| `ScorpionHold` | |
-| `SeraphimRevive` | |
-| `ShadeDuplicate` | |
-| `ShadowstepDodge` | |
-| `SharkDash` | |
-| `SimonFlopper_SpawnMinion` | |
-| `SimonFlopper_Tentacle` | |
-| `SimonFlopper_WiggleChance` | |
-| `SimonFlopper_WiggleFake` | |
-| `SimonFlopper_WiggleGuaranteed` | |
-| `SimonSays_ComeHere` | |
-| `SimonSays_GoAway` | |
-| `SimonSays_Scatter` | |
-| `Simon_Shot` | |
-| `Simon_Tentacle` | |
-| `Simon_Trash` | |
-| `SlagSpawn` | |
-| `SleepPowder` | |
-| `SlotMachine_DeathExplode` | |
-| `SlotResult_Explode` | |
-| `SlotResult_Jackpot_Coins` | |
-| `SlotResult_Nothing` | |
-| `SlotResult_RandomPickup` | |
-| `SmallSpiderMelee` | |
-| `SmallTrampleDash` | |
-| `SpawnClot` | |
-| `SpawnDip` | |
-| `SpawnGasAOE` | |
-| `SpawnJunk` | |
-| `SpawnMaggots` | |
-| `SpawnRat` | |
-| `SpawnWisp` | |
-| `SpewerBarf_Lava` | |
-| `SpewerBarf_Normal` | |
-| `SpewerBarf_Tar` | |
-| `SpewerSuckLava` | |
-| `SpewerSuckNormal` | |
-| `SpewerSuckPill` | |
-| `SpewerSuckTar` | |
-| `SpewerTransformFire` | |
-| `SpewerTransformNormal` | |
-| `SpewerTransformTar` | |
-| `SpiderReturn` | |
-| `SpiderSpawn` | |
-| `Spider_CalmDown` | |
-| `Spider_GoInsane` | |
-| `SpreadX` | |
-| `Sprout` | |
-| `StacyHeal` | |
-| `StegoEatGrass` | |
-| `StegoGrassStomp` | |
-| `StegoSpin` | |
-| `T1ChokeReaction` | |
-| `T1Pummel` | |
-| `T1SwapWeapon` | |
-| `T1ThrowGrenadeA` | |
-| `T1ThrowGrenadeB` | |
-| `T2Clone` | |
-| `T2GoopRun` | |
-| `T2UnClone` | |
-| `T3Counter` | |
-| `T3Intro` | |
-| `T3JoinFight` | |
-| `T3LickyLicky` | |
-| `T3Pebbles_BoulderDrop` | |
-| `T3Pebbles_PrimeBoulderDrop` | |
-| `T3RipAndTear` | |
-| `T3Spawn_Butcher` | |
-| `T3Spawn_Colorless` | |
-| `T3Spawn_Druid` | |
-| `T3Spawn_Fighter` | |
-| `T3Spawn_Hunter` | |
-| `T3Spawn_Jester` | |
-| `T3Spawn_Mage` | |
-| `T3Spawn_Medic` | |
-| `T3Spawn_Monk` | |
-| `T3Spawn_Necromancer` | |
-| `T3Spawn_Psychic` | |
-| `T3Spawn_Tank` | |
-| `T3Spawn_Thief` | |
-| `T3Spawn_Tinkerer` | |
-| `TCCatBot` | |
-| `TCMechSuit` | |
-| `TC_DashReaction` | |
-| `THC_CoinRoll` | |
-| `THC_PoisonSwat` | |
-| `THC_Roll` | |
-| `TKNG_DeathExplode` | |
-| `TKNG_GoAway` | |
-| `TKNG_Hop` | |
-| `TKNG_Kneel` | |
-| `TKNG_Roulette` | |
-| `TKNG_Spawn` | |
-| `TKNG_Spread` | |
-| `TKNG_Trash` | |
-| `TNTExplodey` | |
-| `TT_ManaBurn` | |
-| `TVChangeDie` | |
-| `TVChangeDumb` | |
-| `TVChangeObey` | |
-| `TVChangeStop` | |
-| `TVOff` | |
-| `TallBotRocket` | |
-| `TattersFear` | |
-| `Taunt` | |
-| `TeleportFlipUp` | |
-| `TheChild_Pulse` | |
-| `TheChild_ReleaseBeams` | |
-| `TheChild_TargetBeam` | |
-| `TheChild_TransformBoris` | |
-| `TheChild_TransformExplosive` | |
-| `TheChild_TransformHoly` | |
-| `TheChild_Wrath` | |
-| `TheCreator_Reaction` | |
-| `TheCreator_SpawnCloneTeam` | |
-| `TheMother_Birth` | |
-| `ThornUp` | |
-| `ThornUpX` | |
-| `ThrobShot_Reaction` | |
-| `Tina2Call` | |
-| `TinaBasicJump` | |
-| `TinaBodySlamMax` | |
-| `TinaBodySlamRage` | |
-| `TinaJumpAttack` | |
-| `TinaSpit` | |
-| `TinaSpit2` | |
-| `TinaSuck` | |
-| `TinaSuck2` | |
-| `TinaTantrum` | |
-| `TinaThrow` | |
-| `TormentorBite` | |
-| `TormentorRuneAbsorb` | |
-| `TormentorSpawn` | |
-| `TormentorSuck` | |
-| `ToxGasBlast` | |
-| `TrampyDrink` | |
-| `TrampyDump` | |
-| `TrampyFleas` | |
-| `TrampySleep` | |
-| `TrampySpit` | |
-| `TrembloEat` | |
-| `TrembloSuck` | |
-| `TrexReacquireTarget` | |
-| `TrexStomp` | |
-| `TrexSwitchTarget` | |
-| `TriceratopsTrample` | |
-| `TumorPowerup` | |
-| `TwistingFlames` | |
-| `UFO_BigShield` | |
-| `UFO_Detect` | |
-| `UFO_Megalaser` | |
-| `UFO_Shield` | |
-| `UFO_Summon` | |
-| `WaggleClone` | |
-| `WaterTrailMove` | |
-| `WhispererThrowBuff` | |
-| `WhispererWhisper` | |
-| `WizBlizzard` | |
-| `WizFlamethrower` | |
-| `WizSpellShield` | |
-| `WizStorm` | |
-| `XLightning` | |
-| `YA_Charge` | |
-| `YA_Jetpack` | |
-| `YetiBite` | |
-| `YetiIceBreath` | |
-| `YetiKick` | |
-| `ZaratanaSoloMagnet` | |
-| `ZaratanaSoloRoar` | |
-| `ZaratanaSoloSpinDash` | |
-| `ZaratanaSoloTurtle` | |
-| `ZaratanaSoloWeatherRoar` | |
-| `ZaratanaVSBombardment` | |
-| `ZaratanaVSMagnet` | |
-| `ZaratanaVSRoar` | |
-| `ZaratanaVSSpinDash` | |
-| `ZaratanaVSTurtle` | |
-| `ZaratanaVSTurtleGuaranteed` | |
-| `ZaratanaVSWeatherRoar` | |
-| `ZombieFeast` | |
-| `ZombieFeastSmall` | |
-| `set_GrubFamiliarReturn` | |
-| `tw_TriachnidSpawn` | |
+- [Enum: `spells`](./Enums.md#enum-spells)
 
 </details>
 
@@ -1088,12 +413,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root), [`properties`](./Characters_and_Bosses.md#context-properties), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
 
 **Accepted Elements:**
-- List of [`Enum: tag`](./Enums.md#enum-tag)
-
-**Examples:**
-`[ summon ]`
-`[ musical ]`
-`[ summon ]`
+- [Enum: `tags`](./Enums.md#enum-tags)
 
 </details>
 
@@ -1106,29 +426,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor), [`editor`](./Miscellaneous.md#context-editor)
 
 **Accepted Elements:**
-- `Nested Array`
-
-**Examples:**
-`[ blue none ]`
-`[ blue ]`
-`[ yellow ]`
-
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `yellow` | |
-| `blue` | |
-| `none` | |
-| `red` | |
-| `green` | |
-| `black` | |
-| `grey` | |
-| `purple` | |
-| `brown` | |
-| `cyan` | |
-| `orange` | |
-| `pink` | |
+- [Enum: `image_tint`](./Enums.md#enum-image-tint)
 
 </details>
 
@@ -1141,7 +439,9 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: speed_scale`](./Enums.md#enum-speed_scale)
+- `Array`
+  - `Integer` *(inner elements)*
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ 0 1 0 ]`
@@ -1159,12 +459,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- List of [`Enum: restrictions`](./Enums.md#enum-restrictions)
-
-**Examples:**
-`[ must_have_buddy must_have_living_character ]`
-`[ aoe_must_be_displaceable must_have_character ]`
-`[ must_be_moveable must_have_tag must_move ]`
+- [Enum: `restrictions`](./Enums.md#enum-restrictions)
 
 </details>
 
@@ -1177,12 +472,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
 **Accepted Elements:**
-- List of [`Enum: tag`](./Enums.md#enum-tag)
-
-**Examples:**
-`[ cat blob ]`
-`[ cat rock ]`
-`[ humanoid tumor ]`
+- [Enum: `tag`](./Enums.md#enum-tag)
 
 </details>
 
@@ -1416,7 +706,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ -999 999 -999 999 -999 999 ]`
@@ -1641,7 +931,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: alpha`](./Enums.md#enum-alpha)
+- `Float`
 
 **Examples:**
 `[ 0 10 10 10 0 10 ]`
@@ -1659,7 +949,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .1 2 ]`
@@ -1695,7 +985,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ 1 1 ] [ 1 0 ] ]`
@@ -1713,7 +1004,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`TakeBonusTurnWithStatus`](./Abilities_and_Spells.md#context-takebonusturnwithstatus), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`AddStatusToElementDamage`](./Items_and_Equipment.md#context-addstatustoelementdamage), [`AddStatusToKnockbackDamage`](./Items_and_Equipment.md#context-addstatustoknockbackdamage), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Passives_and_Statuses.md#context-addstatustobasicmeleeattack), [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy), [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`Electric`](./Passives_and_Statuses.md#context-electric), [`effects`](./Passives_and_Statuses.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -1731,7 +1022,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: alpha`](./Enums.md#enum-alpha)
+- `Float`
 
 **Examples:**
 `[ .1 .1 .1 ]`
@@ -1749,7 +1040,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 0 4 ]`
@@ -1767,7 +1058,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ SE_BirdSmall_DyingCall SE_BirdDying_Blackbird ] ]`
@@ -1803,7 +1095,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (Injuries)](./Injuries.md#context-root)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ idle girlyIdle ] ]`
@@ -1821,7 +1114,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 360 ]`
@@ -1839,7 +1132,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .3 .8 ]`
@@ -1857,7 +1150,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`boss`](./Combat_Rewards.md#context-boss), [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 6 ]`
@@ -1875,7 +1168,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`boss`](./Combat_Rewards.md#context-boss), [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 3 ]`
@@ -1893,7 +1186,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .1 1 ]`
@@ -1960,7 +1253,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#context-spawnextrathingsonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#context-spawnonbattlestartrandomemptytile), [`GlobalSpawnOnRoundEnd`](./House_and_Environment.md#context-globalspawnonroundend), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart), [`SpawnExtraThingsOnBattleStart`](./Items_and_Equipment.md#context-spawnextrathingsonbattlestart), [`SpawnOnBattleStart`](./Items_and_Equipment.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Items_and_Equipment.md#context-spawnonbattlestartrandomemptytile), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Passives_and_Statuses.md#context-spawnonbattlestartrandomemptytile)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 2 3 ]`
@@ -1978,7 +1271,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 2 4 ]`
@@ -2149,7 +1442,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 4 8 ]`
@@ -2167,7 +1460,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#context-characterlightsource), [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ .3 .7 1 ]`
@@ -2221,7 +1514,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .6 .6 .6 .50 ]`
@@ -2239,7 +1532,9 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`Else`](./House_and_Environment.md#context-else), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`StatusDamagers`](./Passives_and_Statuses.md#context-statusdamagers), [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
 **Accepted Elements:**
-- List of [`Enum: speed_scale`](./Enums.md#enum-speed_scale)
+- `Array`
+  - `Float` *(inner elements)*
+  - `Float` *(inner elements)*
 
 **Examples:**
 `[ 1 .25 ]`
@@ -2257,7 +1552,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: lob_yoff`](./Enums.md#enum-lob_yoff)
+- `Float`
 
 **Examples:**
 `[ 0 -10 0 ]`
@@ -2275,7 +1570,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ -900 900 ]`
@@ -2329,7 +1624,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 -70 0 ]`
@@ -2503,7 +1798,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 3 ]`
@@ -2529,7 +1824,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 5 10 ]`
@@ -2547,7 +1842,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ArmorPickup`](./Characters_and_Bosses.md#context-armorpickup), [`HealthPickup`](./Characters_and_Bosses.md#context-healthpickup), [`ManaPickup`](./Characters_and_Bosses.md#context-manapickup)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 2 ]`
@@ -2653,7 +1948,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#context-rocket_swirl), [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1.5 2.5 ]`
@@ -2801,7 +2096,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ParticleTornadoForce`](./Miscellaneous.md#context-particletornadoforce)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 0 1 0 ]`
@@ -2855,7 +2150,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ -1 0 ]`
@@ -2891,7 +2186,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ParticleTornadoForce`](./Miscellaneous.md#context-particletornadoforce)
 
 **Accepted Elements:**
-- List of [`Enum: SizeScale`](./Enums.md#enum-sizescale)
+- `Float`
 
 **Examples:**
 `[ 5 0 5 ]`
@@ -2909,12 +2204,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
 
 **Accepted Elements:**
-- List of [`Enum: object`](./Enums.md#enum-object)
-
-**Examples:**
-`[ Maggot Fly Flea Pinky ]`
-`[ Flea Wisp Fly Maggot ]`
-`[  ]`
+- [Enum: `object`](./Enums.md#enum-object)
 
 </details>
 
@@ -2945,7 +2235,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ .25 1 ]`
@@ -2963,7 +2253,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 90 0 ]`
@@ -2999,7 +2289,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .5 1 ]`
@@ -3035,7 +2325,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#team-names)
 
 **Accepted Elements:**
-- `String/Enum`
+- `Enum`
 
 **Examples:**
 `[ "TEAMNAME_ADJECTIVE_FIGHTER0" "TEAMNAME_ADJECTIVE_FIGHTER1" "TEAMNAME_ADJECTIVE_FIGHTER2" "TEAMNAME_ADJECTIVE_FIGHTER3" "TEAMNAME_ADJECTIVE_FIGHTER4" "TEAMNAME_ADJECTIVE_FIGHTER5" "TEAMNAME_ADJECTIVE_FIGHTER6" "TEAMNAME_ADJECTIVE_FIGHTER7" "TEAMNAME_ADJECTIVE_FIGHTER8" "TEAMNAME_ADJECTIVE_FIGHTER9" "TEAMNAME_ADJECTIVE_FIGHTER10" "TEAMNAME_ADJECTIVE_FIGHTER11" "TEAMNAME_ADJECTIVE_FIGHTER12" "TEAMNAME_ADJECTIVE_FIGHTER13" ]`
@@ -3236,7 +2526,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 5 10 ]`
@@ -3254,7 +2544,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#team-names)
 
 **Accepted Elements:**
-- `String/Enum`
+- `Enum`
 
 **Examples:**
 `[ "TEAMNAME_NOUN_FIGHTER0" "TEAMNAME_NOUN_FIGHTER1" "TEAMNAME_NOUN_FIGHTER2" "TEAMNAME_NOUN_FIGHTER3" "TEAMNAME_NOUN_FIGHTER4" "TEAMNAME_NOUN_FIGHTER5" "TEAMNAME_NOUN_FIGHTER6" "TEAMNAME_NOUN_FIGHTER7" "TEAMNAME_NOUN_FIGHTER8" "TEAMNAME_NOUN_FIGHTER9" "TEAMNAME_NOUN_FIGHTER10" "TEAMNAME_NOUN_FIGHTER11" ]`
@@ -3441,7 +2731,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ -100 100 ]`
@@ -3495,7 +2785,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`MultiSpawnOnDeath`](./Characters_and_Bosses.md#context-multispawnondeath), [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight), [`SpawnRandomPickupsOnTaggedUnitKilled`](./Items_and_Equipment.md#context-spawnrandompickupsontaggedunitkilled), [`Cockroach`](./Miscellaneous.md#context-cockroach), [`Firefly`](./Miscellaneous.md#context-firefly), [`Fly`](./Miscellaneous.md#context-fly)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 2 3 ]`
@@ -3543,383 +2833,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
 
 **Accepted Elements:**
-- `Unknown`
-
-**Examples:**
-`[ SafeSwitching Mixup Turnabout MonkeyStyle BrickSkin JaggedEdges MindBreaker CobraStyle Tenderize LongArms SpreadThePain Harden IronSkin JetFists EnergyFists Unstoppable UnburdenedMotion UnburdenedStrikes UnburdenedThoughts RunningJab PerfectTechnique RapidFlow CounterBarrage FlowState DancingLights ]`
-`[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutton Hooked Stompy Barbed GrapplingHook PainGain WideSwing Confrontational HeaveHook Harpooner LordOfTheFlies Schadenfreude Gurgitator LooseMeat Hack BowlingBall Testy Indigestion Incubator DukeOfFlies ]`
-`[ SuperCrow NaturesGuidance PoisonIvy Pathfinder EmptyVessels WildAnimals BarkSkin SoothingSong Teamwork Bouquet GoodVibrations VersatileVocalist LikeAFish Encore SpecialFriends SneakAttack WildStyle BuddySystem FlowerPower SuicideSquad Feral RapGod Animalistic Maestro MegaMinions ]`
-
-**All Possible Values:**
-
-| Value | Definition |
-| :--- | :--- |
-| `AfterImage` | |
-| `Agile` | |
-| `AlmsForThePoor` | |
-| `AlphaStrike` | |
-| `Amped` | |
-| `Amplify` | |
-| `AngelicInspiration` | |
-| `AnimalControl` | |
-| `AnimalHandler` | |
-| `Animalistic` | |
-| `ArmorSpecialist` | |
-| `ArmoredPlating` | |
-| `Avenger` | |
-| `Backstabber` | |
-| `Barbed` | |
-| `BareMinimum` | |
-| `BarkSkin` | |
-| `Beckon` | |
-| `BedBugs` | |
-| `Blacksmith` | |
-| `Blessed` | |
-| `BlessingOfHolyFire` | |
-| `BlessingOfSpirit` | |
-| `Blink` | |
-| `BloodLust` | |
-| `Boned` | |
-| `BoobyTrap` | |
-| `Bouncer` | |
-| `BountyHunter` | |
-| `Bouquet` | |
-| `BowlingBall` | |
-| `BreathOfLife` | |
-| `BrickSkin` | |
-| `BroodMother` | |
-| `BuddySystem` | |
-| `Burgle` | |
-| `BurningPaws` | |
-| `ButchersSoul` | |
-| `CambionConception` | |
-| `Careful` | |
-| `Caretaker` | |
-| `CatAPult` | |
-| `CatchProjectiles` | |
-| `ChainKnockback` | |
-| `ChainsOfGuilt` | |
-| `ChargeUp` | |
-| `Charming` | |
-| `ClericsSoul` | |
-| `CobraStyle` | |
-| `Conductor` | |
-| `Confrontational` | |
-| `CorpseConnoisseur` | |
-| `CounterBarrage` | |
-| `Cripple` | |
-| `Critical` | |
-| `DancingLights` | |
-| `DarkPriest` | |
-| `Daunt` | |
-| `Dealer` | |
-| `DeathBoon` | |
-| `DeathIncarnate` | |
-| `DeathProof` | |
-| `DeathsDoor` | |
-| `DemoMan` | |
-| `DirtyClaws` | |
-| `DoubleThrow` | |
-| `Drag` | |
-| `DruidsSoul` | |
-| `DualWield` | |
-| `DuctTape` | |
-| `DukeOfFlies` | |
-| `DumbMuscle` | |
-| `EMP` | |
-| `ETank` | |
-| `EldritchVisage` | |
-| `ElementalAttunement` | |
-| `EmptyVessels` | |
-| `EnchantedRelic` | |
-| `Encore` | |
-| `Energizer` | |
-| `EnergyFists` | |
-| `EnergyStorm` | |
-| `Enlightened` | |
-| `EscapeSequence` | |
-| `Eternal` | |
-| `EternalHealth` | |
-| `EvilPatron` | |
-| `FastFooted` | |
-| `FasterWhenHit` | |
-| `Feral` | |
-| `FightMe` | |
-| `FightersSoul` | |
-| `FireArmor` | |
-| `FirstImpression` | |
-| `Five` | |
-| `Fleabag` | |
-| `FlipACoin` | |
-| `Flourish` | |
-| `FlowState` | |
-| `FlowerPower` | |
-| `Flying` | |
-| `FollowUp` | |
-| `Four` | |
-| `FreshMeat` | |
-| `FullPower` | |
-| `Furious` | |
-| `FuzzyFeet` | |
-| `Gassy` | |
-| `Glow` | |
-| `Glutton` | |
-| `GodWarrior` | |
-| `Godspeed` | |
-| `GoldenClaws` | |
-| `GoodVibrations` | |
-| `Goofball` | |
-| `GrapplingHook` | |
-| `GravityFalls` | |
-| `GravityWell` | |
-| `Gurgitator` | |
-| `Hack` | |
-| `HamsterStyle` | |
-| `HardHead` | |
-| `Harden` | |
-| `Hardy` | |
-| `Harpooner` | |
-| `HawkEye` | |
-| `Hazardous` | |
-| `HealingAura` | |
-| `Heathens` | |
-| `HeaveHook` | |
-| `HeavyHanded` | |
-| `HighAsYouCanCount` | |
-| `HitMe` | |
-| `HolyMantel` | |
-| `HomeRun` | |
-| `Hooked` | |
-| `Host` | |
-| `HotBlooded` | |
-| `HuntersBoon` | |
-| `HuntersSoul` | |
-| `IceArmor` | |
-| `IcePaws` | |
-| `ImmortalLeeches` | |
-| `Incubator` | |
-| `Indigestion` | |
-| `Infected` | |
-| `Infested` | |
-| `InfiniteRebirth` | |
-| `Ingenuity` | |
-| `IronSkin` | |
-| `ItemProxy` | |
-| `ItsAlive` | |
-| `JaggedEdges` | |
-| `JestersSoul` | |
-| `JetFists` | |
-| `KillsHeal` | |
-| `LastGasp` | |
-| `LateBloomer` | |
-| `LatentEnergy` | |
-| `Leader` | |
-| `LearnFromMe` | |
-| `Leechmother` | |
-| `LightUpTheStage` | |
-| `LightningArmor` | |
-| `LightningPaws` | |
-| `LightningRod` | |
-| `LikeAFish` | |
-| `LivingBattery` | |
-| `LongArms` | |
-| `LongCast` | |
-| `LongShot` | |
-| `LooseMeat` | |
-| `LootHoarder` | |
-| `Looter` | |
-| `LordOfTheFlies` | |
-| `LuckDrain` | |
-| `LuckSwing` | |
-| `Lucky` | |
-| `MadVisage` | |
-| `Maestro` | |
-| `MagesSoul` | |
-| `MagicGuru` | |
-| `MainCourse` | |
-| `Mange` | |
-| `Mania` | |
-| `Masochist` | |
-| `MegaMinions` | |
-| `MentalStorm` | |
-| `MetalDetector` | |
-| `Micronaps` | |
-| `MindBreaker` | |
-| `MindTempest` | |
-| `MiniMe` | |
-| `Mixup` | |
-| `MonkeyStyle` | |
-| `MonksSoul` | |
-| `MoraleBoost` | |
-| `MostValuableCat` | |
-| `MountainForm` | |
-| `MrMega` | |
-| `MyLeg` | |
-| `Nanobots` | |
-| `Napalm` | |
-| `NaturalHealer` | |
-| `NaturalHealing` | |
-| `NaturesGuidance` | |
-| `NecromancersSoul` | |
-| `NeverFull` | |
-| `NumbingLeeches` | |
-| `OffloadPain` | |
-| `Omniscience` | |
-| `One` | |
-| `OneEighty` | |
-| `OneWithNothing` | |
-| `OverConfident` | |
-| `Overflow` | |
-| `Overload` | |
-| `Overpowered` | |
-| `PainGain` | |
-| `Parasitic` | |
-| `Pathfinder` | |
-| `Patience` | |
-| `PawMissile` | |
-| `Penetrate` | |
-| `PerfectTechnique` | |
-| `PetRocks` | |
-| `Pinpoint` | |
-| `Plow` | |
-| `PoisonIvy` | |
-| `PoisonTips` | |
-| `PowerUp` | |
-| `PressurePoints` | |
-| `PriorityTarget` | |
-| `ProtectTheWeak` | |
-| `Protection` | |
-| `ProtectiveAura` | |
-| `PsionicRepel` | |
-| `PsySmack` | |
-| `PsychicsSoul` | |
-| `Pulp` | |
-| `PunchFace` | |
-| `Purifier` | |
-| `Putrefy` | |
-| `Quiver` | |
-| `Radiation` | |
-| `RangedMedic` | |
-| `RapGod` | |
-| `RapidFlow` | |
-| `RatStyle` | |
-| `RazorClaws` | |
-| `ReactiveArmor` | |
-| `RealityShatter` | |
-| `Recharged` | |
-| `Recoil` | |
-| `ReflexPunch` | |
-| `RelentlessDead` | |
-| `RepressedMemories` | |
-| `Resonance` | |
-| `RobotArms` | |
-| `RockAspect` | |
-| `Rockin` | |
-| `RubberArrows` | |
-| `RunningJab` | |
-| `SacrificialLamb` | |
-| `SafeSwitching` | |
-| `SantaSangre` | |
-| `Scabs` | |
-| `Scars` | |
-| `Scavenger` | |
-| `Schadenfreude` | |
-| `Scrapper` | |
-| `SelfAssured` | |
-| `SerialKiller` | |
-| `Shadow` | |
-| `ShakeDown` | |
-| `Shank` | |
-| `SharingIsCaring` | |
-| `Shiv` | |
-| `ShoulderCheck` | |
-| `ShovingMatch` | |
-| `Shrapnel` | |
-| `Shrapnel_Tinkerer` | |
-| `SkillShare` | |
-| `SkullSmash` | |
-| `SlackOff` | |
-| `SleepDarts` | |
-| `SlowAndSteady` | |
-| `Slugger` | |
-| `Smash` | |
-| `SneakAttack` | |
-| `Sniper` | |
-| `SoothingSong` | |
-| `SoulBound` | |
-| `SoulShatter` | |
-| `SpecialFriends` | |
-| `SplitShot` | |
-| `Spotters` | |
-| `SpreadSorrow` | |
-| `SpreadThePain` | |
-| `Stoic` | |
-| `Stompy` | |
-| `StrengthInNumbers` | |
-| `Study` | |
-| `SuicideSquad` | |
-| `SuperCrow` | |
-| `SuperLuck` | |
-| `Superstition` | |
-| `Survivalist` | |
-| `SweetSpot` | |
-| `SwiftKiller` | |
-| `TaintedMother` | |
-| `TakeAim` | |
-| `TalkToAnimals` | |
-| `TanksSoul` | |
-| `Teamwork` | |
-| `Tenderize` | |
-| `Testy` | |
-| `ThickSkull` | |
-| `ThiefsSoul` | |
-| `ThornArrows` | |
-| `Thorns` | |
-| `ThouShaltNotCovet` | |
-| `ThouShaltNotKill` | |
-| `ThouShaltObey` | |
-| `ThrillOfTheHunt` | |
-| `ThunderThighs` | |
-| `TinkerersSoul` | |
-| `ToadStyle` | |
-| `TopOff` | |
-| `Torpor` | |
-| `TowerDefense` | |
-| `Traps` | |
-| `TrickyTraps` | |
-| `TrueSight` | |
-| `Turnabout` | |
-| `TurtleStyle` | |
-| `Twiddle` | |
-| `Two` | |
-| `UnburdenedMotion` | |
-| `UnburdenedStrikes` | |
-| `UnburdenedThoughts` | |
-| `Undeath` | |
-| `Unrestricted` | |
-| `Unstoppable` | |
-| `Untouched` | |
-| `Vampirism` | |
-| `VeneratedTouch` | |
-| `Vengeful` | |
-| `VersatileVocalist` | |
-| `VersionTwo` | |
-| `VoidSoul` | |
-| `WeakSpot` | |
-| `WeaponMaster` | |
-| `WeaponProficiency` | |
-| `WhipCracker` | |
-| `WideLoad` | |
-| `WideSwing` | |
-| `Wiggly` | |
-| `WildAnimals` | |
-| `WildStyle` | |
-| `Wither` | |
-| `WormLord` | |
-| `Worms` | |
-| `Wrestlemaniac` | |
-| `ZenkaiBoost` | |
-| `Zip` | |
+- [Enum: `passive_pool`](./Enums.md#enum-passive-pool)
 
 </details>
 
@@ -3932,7 +2846,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
 **Accepted Elements:**
-- List of [`Enum: SizeScale`](./Enums.md#enum-sizescale)
+- `Float`
 
 **Examples:**
 `[ 0 0 0 1 ]`
@@ -3950,7 +2864,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -3968,7 +2882,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts), [`scripts`](./Miscellaneous.md#context-scripts)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ 0 [ -20 20 ] 0 ]`
@@ -4082,12 +2997,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool)
 
 **Accepted Elements:**
-- List of [`Enum: restrict`](./Enums.md#enum-restrict)
-
-**Examples:**
-`[ weapon trinket armor ]`
-`[ weapon trinket armor ]`
-`[ weapon trinket armor ]`
+- [Enum: `restrict`](./Enums.md#enum-restrict)
 
 </details>
 
@@ -4100,7 +3010,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .2 ]`
@@ -4226,12 +3136,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
 
 **Accepted Elements:**
-- List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
-
-**Examples:**
-`[ Propell Pogo ComboThrow ComboPull Bruise Anneal Hadouken ReallyFastRun Finisher UnbridledHits ]`
-`[ Succ HogRush Chomp BodySlam Vurp Tromp Spoil Grill Sharpen SliceAndDice ]`
-`[ SummonSquirrel SummonToad Encourage Protection SongOfSpring BattleCry SafetyDance TigerForm RhinoForm InspirationalSong ]`
+- [Enum: `do`](./Enums.md#enum-do)
 
 </details>
 
@@ -4244,7 +3149,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .1+.02*cha ]`
@@ -4262,7 +3167,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 **Accepted Elements:**
-- List of [`Enum: SizeScale`](./Enums.md#enum-sizescale)
+- `Float`
 
 **Examples:**
 `[ 1.1 1.1 1.1 ]`
@@ -4280,7 +3185,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`effects`](./Passives_and_Statuses.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -4298,7 +3203,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`DurabilityTransform`](./Items_and_Equipment.md#context-durabilitytransform)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 JarOfNothing ]`
@@ -4357,7 +3262,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 5 10 ]`
@@ -4375,7 +3280,9 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_BossOrBig`](./Abilities_and_Spells.md#context-conditional_bossorbig), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack)
 
 **Accepted Elements:**
-- List of [`Enum: speed_scale`](./Enums.md#enum-speed_scale)
+- `Array`
+  - `Float` *(inner elements)*
+  - `Float` *(inner elements)*
 
 **Examples:**
 `[ 1 .25 ]`
@@ -4411,7 +3318,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 1 1 ]`
@@ -4429,7 +3336,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 0 ]`
@@ -4447,7 +3354,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ .2 .2 .2 ]`
@@ -4465,7 +3372,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 ]`
@@ -4483,7 +3390,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 30 50 ]`
@@ -4501,7 +3408,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 3 7 ]`
@@ -4519,7 +3426,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
 
 **Accepted Elements:**
-- `String/Enum`
+- `Enum`
 
 **Examples:**
 `[ "max((X-1)*2, 0)" ]`
@@ -4543,7 +3450,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 1 ]`
@@ -4561,7 +3468,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`Else`](./House_and_Environment.md#context-else), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .2 ]`
@@ -4633,7 +3540,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .5 1 ]`
@@ -4669,7 +3576,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#context-characterlightsource)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .3 .7 1 .5 ]`
@@ -4705,7 +3612,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 360 ]`
@@ -4723,12 +3630,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ChangeTile`](./Abilities_and_Spells.md#context-changetile), [`PassiveWhenOnTile`](./Items_and_Equipment.md#context-passivewhenontile)
 
 **Accepted Elements:**
-- List of [`Enum: ChangeTile`](./Enums.md#enum-changetile)
-
-**Examples:**
-`[ TallGrassTile TallFlowerTile BrambleTile ]`
-`[ TallGrassTile TallFlowerTile ]`
-`[ TallGrassTile TallFlowerTile ]`
+- [Enum: `tile`](./Enums.md#enum-tile)
 
 </details>
 
@@ -4741,7 +3643,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .25 ]`
@@ -4759,7 +3661,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ParticleRandomForce`](./Miscellaneous.md#context-particlerandomforce)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ 0 -20 0 ]`
@@ -4777,7 +3680,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ -2 0 ] [ -2 -1 ] [ -1 -2 ] [ 0 -2 ] [ -1 1 ] [ 0 1 ] [ 1 0 ] [ 1 -1 ] ]`
@@ -4795,7 +3699,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ParticleRandomForce`](./Miscellaneous.md#context-particlerandomforce)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ 0 [ 40 120 ] 0 ]`
@@ -4813,7 +3718,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 5 10 ]`
@@ -4873,7 +3778,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ParticleAttractor`](./Miscellaneous.md#context-particleattractor)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 5 0 5 ]`
@@ -4891,7 +3796,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .2 ]`
@@ -4927,7 +3832,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Lighting`](./Miscellaneous.md#context-lighting)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 1 ]`
@@ -5036,7 +3941,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ 0 1 ] [ 1 1 ] [ 0 0 ] [ 1 0 ] ]`
@@ -5072,7 +3978,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 23 33 ]`
@@ -5090,7 +3996,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 10 MoneyBag_Small ]`
@@ -5116,7 +4022,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 20 ]`
@@ -5152,12 +4058,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`lock_item_slot`](./Passives_and_Statuses.md#context-lock_item_slot)
 
 **Accepted Elements:**
-- List of [`Enum: slot`](./Enums.md#enum-slot)
-
-**Examples:**
-`[ face head neck ]`
-`[ head neck trinket weapon ]`
-`[ face head neck weapon ]`
+- [Enum: `slot`](./Enums.md#enum-slot)
 
 </details>
 
@@ -5170,7 +4071,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Lighting`](./Miscellaneous.md#context-lighting)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 2 ]`
@@ -5188,7 +4089,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`effects`](./Cat_Mutations.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .25 ]`
@@ -5206,7 +4107,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .25 ]`
@@ -5224,7 +4125,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusOnDie`](./Cat_Mutations.md#context-statusondie)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -5242,7 +4143,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .25 ]`
@@ -5260,7 +4161,9 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`GlobalFlowerTrapperAura`](./Items_and_Equipment.md#context-globalflowertrapperaura)
 
 **Accepted Elements:**
-- List of [`Enum: speed_scale`](./Enums.md#enum-speed_scale)
+- `Array`
+  - `Float` *(inner elements)*
+  - `Float` *(inner elements)*
 
 **Examples:**
 `[ 1 .05 ]`
@@ -5278,7 +4181,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .15 ]`
@@ -5351,7 +4254,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 10 ]`
@@ -5369,7 +4272,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Items_and_Equipment.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ 1 .50 ]`
@@ -5387,7 +4290,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 2 -1 ]`
@@ -5405,7 +4308,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -5423,7 +4326,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .25 ]`
@@ -5459,7 +4362,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ 5 30 ]`
@@ -5477,7 +4380,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ .5 .5 ]`
@@ -5513,7 +4416,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#context-rocket_swirl)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ .5 1 ]`
@@ -5531,12 +4434,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`good`](./Events_and_Encounters.md#context-good)
 
 **Accepted Elements:**
-- List of [`Enum: cat_has_item_equipped`](./Enums.md#enum-cat_has_item_equipped)
-
-**Examples:**
-`[ CryogenicTimeChamber_Empty CryogenicTimeChamber_Full ]`
-`[ JarOfRadiation JarOfRadiatedBlood ]`
-`[ JarOfRadiatedBlood JarOfChaos ]`
+- [Enum: `item`](./Enums.md#enum-item)
 
 </details>
 
@@ -5567,7 +4465,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 21 0 ]`
@@ -5585,7 +4483,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
 **Accepted Elements:**
-- List of [`Enum: aoe_chance`](./Enums.md#enum-aoe_chance)
+- [Equation: `aoe_chance`](./Math_Equations.md#equation-aoe-chance)
 
 **Examples:**
 `[ 1 .33 ]`
@@ -5603,7 +4501,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 1 ]`
@@ -5621,7 +4519,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ -2 0 ]`
@@ -5639,7 +4537,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#context-statuscharactersonroundstart)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -5657,7 +4555,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin), [`AddSelfStatusToBasicAttack`](./Items_and_Equipment.md#context-addselfstatustobasicattack)
 
 **Accepted Elements:**
-- List of [`Enum: alpha`](./Enums.md#enum-alpha)
+- `Float`
 
 **Examples:**
 `[ 1 .10 ]`
@@ -5675,7 +4573,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chain_distance`](./Enums.md#enum-chain_distance)
+- `Float`
 
 **Examples:**
 `[ 1 .25 ]`
@@ -5693,7 +4591,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ -3.388 8.138 ]`
@@ -5711,7 +4609,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 21.548 8.175 ]`
@@ -5729,7 +4627,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 8.983 14.4 ]`
@@ -5747,7 +4645,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ -3 0 ]`
@@ -5765,7 +4663,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 12 ]`
@@ -5783,7 +4681,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight), [`LowerAmbientLight`](./Characters_and_Bosses.md#context-lowerambientlight)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 50% 60% 60% ]`
@@ -5801,7 +4699,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 2 9 ]`
@@ -5919,7 +4817,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`SetCrazyEyeBackgroundWeights`](./Abilities_and_Spells.md#context-setcrazyeyebackgroundweights)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 0 0 ]`
@@ -5937,7 +4835,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 -6 ]`
@@ -5954,7 +4852,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 -12 ]`
@@ -5971,7 +4869,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 -18 ]`
@@ -5988,7 +4886,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 -24 ]`
@@ -6005,7 +4903,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 -30 ]`
@@ -6022,7 +4920,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: chance`](./Enums.md#enum-chance)
+- `Float`
 
 **Examples:**
 `[ 1 .2 ]`
@@ -6039,7 +4937,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -6073,7 +4971,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 3 5 ]`
@@ -6090,7 +4988,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
 **Accepted Elements:**
-- List of [`Enum: chain_distance`](./Enums.md#enum-chain_distance)
+- `Float`
 
 **Examples:**
 `[ 1 .10 ]`
@@ -6107,7 +5005,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 18 1 ]`
@@ -6124,7 +5022,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 9 ]`
@@ -6141,7 +5039,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -6158,7 +5056,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -6175,7 +5073,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -6192,7 +5090,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -6209,7 +5107,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ 1 .20 ]`
@@ -6226,7 +5124,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ 1 .20 ]`
@@ -6260,7 +5158,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -6294,7 +5192,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 3 ]`
@@ -6311,7 +5209,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`LargeAttic`](./House_and_Environment.md#context-largeattic), [`SmallAttic`](./House_and_Environment.md#context-smallattic)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 ] [ 6 6 6 6 6 6 6 6 6 8 8 6 6 6 6 6 6 6 6 6 ] [ 6 6 6 6 6 6 6 8 7 0 0 7 8 6 6 6 6 6 6 6 ] [ 6 6 6 6 6 8 7 0 0 0 0 0 0 7 8 6 6 6 6 6 ] [ 6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6 ] [ 6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6 ] [ 6 8 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 8 6 ] ]`
@@ -6497,7 +5396,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Big`](./House_and_Environment.md#context-big)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 4.5 4.5 ]`
@@ -6514,7 +5413,9 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- List of [`Enum: speed_scale`](./Enums.md#enum-speed_scale)
+- `Array`
+  - `Float` *(inner elements)*
+  - `Float` *(inner elements)*
 
 **Examples:**
 `[ 0 1.6 ]`
@@ -6531,11 +5432,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- List of [`Enum: element`](./Enums.md#enum-element)
-
-**Examples:**
-`[ grass ]`
-`[ grass water ]`
+- [Enum: `element`](./Enums.md#enum-element)
 
 </details>
 
@@ -6548,7 +5445,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`HPAltStates`](./Characters_and_Bosses.md#context-hpaltstates), [`ScalingAttackAnimation`](./Characters_and_Bosses.md#context-scalingattackanimation)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ 5 bite2 ] [ 10 bite3 ] ]`
@@ -6565,7 +5463,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 **Accepted Elements:**
-- List of [`Enum: shadow_size`](./Enums.md#enum-shadow_size)
+- `Float`
 
 **Examples:**
 `[ .6 .6 .6 1 .5 .5 .5 0 ]`
@@ -6606,7 +5504,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -6778,7 +5676,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -6826,7 +5724,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 59 52 65 50 54 63 64 ]`
@@ -6871,7 +5769,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 18 9 ]`
@@ -6887,7 +5785,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 9 ]`
@@ -6919,7 +5817,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 3 5 ]`
@@ -6951,7 +5849,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
 
 **Accepted Elements:**
-- List of [`Enum: depth_offset`](./Enums.md#enum-depth_offset)
+- `Float`
 
 **Examples:**
 `[ 25 .01 ]`
@@ -6967,7 +5865,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -6983,7 +5881,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 0 ]`
@@ -7015,7 +5913,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 1 0.1 ]`
@@ -7079,7 +5977,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`AddSelfStatusToWeapons`](./Items_and_Equipment.md#context-addselfstatustoweapons)
 
 **Accepted Elements:**
-- List of [`Enum: chain_distance`](./Enums.md#enum-chain_distance)
+- `Float`
 
 **Examples:**
 `[ 1 .25 ]`
@@ -7095,7 +5993,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -7111,7 +6009,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 0 9 ]`
@@ -7143,7 +6041,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 1 .5 ]`
@@ -7159,7 +6057,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -7206,7 +6104,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`PassiveLevelScaledStatus`](./Passives_and_Statuses.md#context-passivelevelscaledstatus)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 3 X-8 ]`
@@ -7244,7 +6142,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 **Accepted Elements:**
-- List of [`Enum: aoe_chance`](./Enums.md#enum-aoe_chance)
+- [Equation: `aoe_chance`](./Math_Equations.md#equation-aoe-chance)
 
 **Examples:**
 `[ 1 .33 ]`
@@ -7260,7 +6158,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
 
 **Accepted Elements:**
-- List of [`Enum: odds`](./Enums.md#enum-odds)
+- `Float`
 
 **Examples:**
 `[ 1 .1 ]`
@@ -7276,7 +6174,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`TintItem`](./Items_and_Equipment.md#context-tintitem)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 0.05 0.05 0.05 ]`
@@ -7410,7 +6308,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 10 20 ]`
@@ -8009,7 +6907,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`TourettesMeows`](./Passives_and_Statuses.md#context-tourettesmeows)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 8 15 ]`
@@ -8089,7 +6987,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ 1 0 ] [ 1 0 ] [ 1 0 ] [ 1 0 ] [ 1 0 ] [ 1 0 ] ]`
@@ -8105,7 +7004,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ 1 1 ] [ 1 0 ] [ 1 1 ] [ 1 0 ] [ 1 1 ] [ 1 0 ] ]`
@@ -8121,7 +7021,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ 0 damagescale_zero ] [ 1 damagescale_small ] [ 5 damagescale_medium ] [ 10 damagescale_large ] [ 25 damagescale_extreme ] ]`
@@ -8383,7 +7284,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 1 0.5625 ]`
@@ -8775,7 +7676,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 5 10 ]`
@@ -9017,7 +7918,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 2 9 ]`
@@ -9033,7 +7934,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`scars`](./Injuries.md#context-scars)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 21 31 ]`
@@ -9129,7 +8030,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 0 2.5 0 ]`
@@ -9447,7 +8348,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`TintItem`](./Items_and_Equipment.md#context-tintitem)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 0.45 0.3 0.25 ]`
@@ -9485,7 +8386,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
 
 **Accepted Elements:**
-- `String/Enum`
+- `Enum`
 
 **Examples:**
 `[ "hit" "critical" ]`
@@ -9524,7 +8425,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 54 50 55 52 51 53 66 64 63 65 68 62 ]`
@@ -9682,10 +8583,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- List of [`Enum: get_item`](./Enums.md#enum-get_item)
-
-**Examples:**
-`[ GoldenEgg WeirdEgg RaptorEgg ]`
+- [Enum: `raptor_nest_eggs`](./Enums.md#enum-raptor-nest-eggs)
 
 </details>
 
@@ -9833,10 +8731,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
 
 **Accepted Elements:**
-- List of [`Enum: get_parasite`](./Enums.md#enum-get_parasite)
-
-**Examples:**
-`[ SludgeMask SludgeNeck SludgeHat ]`
+- [Enum: `sludge_armor`](./Enums.md#enum-sludge-armor)
 
 </details>
 
@@ -9849,7 +8744,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
 **Accepted Elements:**
-- List of [`Enum: speed`](./Enums.md#enum-speed)
+- `Float`
 
 **Examples:**
 `[ 0 .5 0 ]`
@@ -9865,7 +8760,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
 **Accepted Elements:**
-- `Number`
+- `Float`
 
 **Examples:**
 `[ 0.7 1 ]`
@@ -9881,7 +8776,8 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`T3HitlerSpawningPhase`](./Characters_and_Bosses.md#context-t3hitlerspawningphase)
 
 **Accepted Elements:**
-- `Nested Array`
+- `Array`
+  - `Integer` *(inner elements)*
 
 **Examples:**
 `[ [ T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Tank T3Spawn_Mage T3Spawn_Hunter T3Spawn_Thief T3Spawn_Medic T3Spawn_Fighter T3Spawn_Necromancer T3Spawn_Tinkerer T3Spawn_Butcher T3Spawn_Psychic T3Spawn_Druid T3Spawn_Jester ] [ T3Spawn_Colorless ] [ T3JoinFight ] ]`
@@ -9897,10 +8793,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`FinalBossShieldHealth`](./Characters_and_Bosses.md#context-finalbossshieldhealth)
 
 **Accepted Elements:**
-- `Number`
-
-**Examples:**
-`[ 0 35 35 35 35 0 ]`
+- [Enum: `state_health`](./Enums.md#enum-state-health)
 
 </details>
 
@@ -9913,7 +8806,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`RandomPermanentStatsDistinct`](./Items_and_Equipment.md#context-randompermanentstatsdistinct)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 -1 ]`
@@ -10017,10 +8910,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
 
 **Accepted Elements:**
-- List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
-
-**Examples:**
-`[ Dysentery IBS ExplosiveGas Gastritis CrohnsDisease AcidReflux ]`
+- [Enum: `gain_disorder`](./Enums.md#enum-gain-disorder)
 
 </details>
 
@@ -10305,7 +9195,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 1 4 ]`
@@ -10353,10 +9243,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
 
 **Accepted Elements:**
-- List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
-
-**Examples:**
-`[ GainThorns ButtScoot Burst HireHitman ]`
+- [Enum: `do`](./Enums.md#enum-do)
 
 </details>
 
@@ -10394,10 +9281,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Items_and_Equipment.md#context-statusonturnendifdidntcastabilitytypes)
 
 **Accepted Elements:**
-- List of [`Enum: type`](./Enums.md#enum-type)
-
-**Examples:**
-`[ attack move spell ]`
+- [Enum: `type`](./Enums.md#enum-type)
 
 </details>
 
@@ -10438,7 +9322,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
 
 **Accepted Elements:**
-- `Number`
+- `Integer`
 
 **Examples:**
 `[ 11 2 11 ]`
@@ -10588,10 +9472,7 @@ This document provides exhaustive lists of all array properties found in the bas
 > **Referenced by:** [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#context-conditional_activeweather_any)
 
 **Accepted Elements:**
-- List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
-
-**Examples:**
-`[ FlySwarm FireflySwarm ButterflySwarm ]`
+- [Enum: `add_weather`](./Enums.md#enum-add-weather)
 
 </details>
 
