@@ -1,50 +1,48 @@
 # Mewgenics Mod Developer Documentation: Engine: Statuses and Passives
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
-
 ## Engine: Statuses and Passives
 
 This document lists every confirmed Status and Passive ID found across all game data files. These IDs are used as **dynamic keys** in any Status or Passive Container block (e.g. `statuses`, `passives`, `AddStatusToBasicAttack`, `bonus_passives`). The value paired with each key depends on the context: typically a stack count or duration for statuses, or a boolean/nested block for passives.
 
 > **Note:** With over 1,200 unique IDs, this is the largest system in the game. Granting a character an ID (like `AddStatusToBasicAttack`) gives the character that reactive behaviour permanently.
 
-### All Confirmed `[status_passive_id]` Values
+### Valid Property Keys
 
 <details>
 <summary><b>Expand</b></summary>
 
-| ID | Type | Notes |
+| Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| `AIControlNextTurn` | Block | Applies or references the 'AIControlNextTurn' effect/state. |
+| [`AIControlNextTurn`](#aicontrolnextturn) | Block | Applies or references the 'AIControlNextTurn' effect/state. |
 | `AOEBonus` | Number | Applies or references the 'AOEBonus' effect/state. |
-| `AbilityAfterEnemyCastSpell_Stackable` | Enum | Applies or references the 'AbilityAfterEnemyCastSpell_Stackable' effect/state. |
-| `AbilityChargeRefundChance` | Block | Applies the 'AbilityChargeRefundChance' effect. |
+| [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | Applies or references the 'AbilityAfterEnemyCastSpell_Stackable' effect/state. |
+| [`AbilityChargeRefundChance`](#abilitychargerefundchance) | Block | Applies the 'AbilityChargeRefundChance' effect. |
 | `AbilityDamageMultiplier` | Number |  |
 | `AbilityDisableIfLivingCrow` | Number | Applies or references the 'AbilityDisableIfLivingCrow' effect/state. |
-| `AbilityEnableIfConsumedCharacterHasTag` | Enum | Applies or references the 'AbilityEnableIfConsumedCharacterHasTag' effect/state. |
+| [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Applies or references the 'AbilityEnableIfConsumedCharacterHasTag' effect/state. |
 | `AbilityEnabledAtHealthThreshold` | Number | Applies or references the 'AbilityEnabledAtHealthThreshold' effect/state. |
 | `AbilityEnabledIfBasicAttackUsedThisTurn` | Number | Applies or references the 'AbilityEnabledIfBasicAttackUsedThisTurn' effect/state. |
-| `AbilityEnabledIfHasStatus` | Enum | Applies or references the 'AbilityEnabledIfHasStatus' effect/state. |
+| [`AbilityEnabledIfHasStatus`](./Enums.md#enum-abilityenabledifhasstatus) | Enum | Applies or references the 'AbilityEnabledIfHasStatus' effect/state. |
 | `AbilityEnabledIfMovementTrapped` | Number | Applies or references the 'AbilityEnabledIfMovementTrapped' effect/state. |
 | `AbilityEnabledIfNoAggroTarget` | Number | Applies or references the 'AbilityEnabledIfNoAggroTarget' effect/state. |
-| `AbilityEnabledIfNotHasStatus` | Enum | Applies or references the 'AbilityEnabledIfNotHasStatus' effect/state. |
-| `AbilityEnabledIfSpecificItemEquipped` | Enum | Applies or references the 'AbilityEnabledIfSpecificItemEquipped' effect/state. |
+| [`AbilityEnabledIfNotHasStatus`](./Enums.md#enum-abilityenabledifnothasstatus) | Enum | Applies or references the 'AbilityEnabledIfNotHasStatus' effect/state. |
+| [`AbilityEnabledIfSpecificItemEquipped`](./Enums.md#enum-abilityenabledifspecificitemequipped) | Enum | Applies or references the 'AbilityEnabledIfSpecificItemEquipped' effect/state. |
 | `AbilityEnabledOncePerFightAtHealthThreshold` | Number | Applies or references the 'AbilityEnabledOncePerFightAtHealthThreshold' effect/state. |
 | `AbilityEnabledOncePerRound` | Number | Applies or references the 'AbilityEnabledOncePerRound' effect/state. |
 | `AbilityEnabledPercentEachTurn` | Number | Applies or references the 'AbilityEnabledPercentEachTurn' effect/state. |
-| `AbilityHealthThreshold` | Block | AI Trigger: Executes an ability when health drops below a specific threshold. |
+| [`AbilityHealthThreshold`](#abilityhealththreshold) | Block | AI Trigger: Executes an ability when health drops below a specific threshold. |
 | `AbilityInheritsWeaponEffects` | Number | Applies or references the 'AbilityInheritsWeaponEffects' effect/state. |
-| `AbilityOnBattleStart` | Enum | Applies or references the 'AbilityOnBattleStart' effect/state. |
+| [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum | Applies or references the 'AbilityOnBattleStart' effect/state. |
 | `AbilityOnBattleStart_Immediate` | Enum/String | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. |
-| `AbilityOnBattleStart_UseAI` | Enum | Applies or references the 'AbilityOnBattleStart_UseAI' effect/state. |
-| `AbilityOnRoundEnd` | Block | AI Trigger: Executes an ability at the end of the combat round. |
-| `AbilityOnRoundEndOnce` | Block | Applies or references the 'AbilityOnRoundEndOnce' effect/state. |
-| `AbilityReaction` | Enum | AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage). |
-| `AbilityWhenBuddyDies` | Enum | Applies or references the 'AbilityWhenBuddyDies' effect/state. |
-| `AbilityWhenTaggedCharacterMovesNear` | Block | AI Trigger: Executes an ability when a character with a specific tag moves adjacent. |
+| [`AbilityOnBattleStart_UseAI`](./Enums.md#enum-abilityonbattlestart_useai) | Enum | Applies or references the 'AbilityOnBattleStart_UseAI' effect/state. |
+| [`AbilityOnRoundEnd`](#abilityonroundend) | Block | AI Trigger: Executes an ability at the end of the combat round. |
+| [`AbilityOnRoundEndOnce`](#abilityonroundendonce) | Block | Applies or references the 'AbilityOnRoundEndOnce' effect/state. |
+| [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum | AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage). |
+| [`AbilityWhenBuddyDies`](./Enums.md#enum-abilitywhenbuddydies) | Enum | Applies or references the 'AbilityWhenBuddyDies' effect/state. |
+| [`AbilityWhenTaggedCharacterMovesNear`](#abilitywhentaggedcharactermovesnear) | Block | AI Trigger: Executes an ability when a character with a specific tag moves adjacent. |
 | `AbsorbManaAura` | Number | Applies the 'AbsorbManaAura' effect. |
 | `AbsorbManaFromOtherSpells` | Number | Applies or references the 'AbsorbManaFromOtherSpells' effect/state. |
-| `AddAdvantageToEvent` | Block | Applies or references the 'AddAdvantageToEvent' effect/state. |
+| [`AddAdvantageToEvent`](#addadvantagetoevent) | Block | Applies or references the 'AddAdvantageToEvent' effect/state. |
 | `AddAllyNeighborsToAbilityRange` | Number | Applies the 'AddAllyNeighborsToAbilityRange' effect. |
 | `AddAllyNeighborsToAttackRange` | Number | Applies the 'AddAllyNeighborsToAttackRange' effect. |
 | `AddBonusMeleeRange` | Number | Applies the 'AddBonusMeleeRange' effect. |
@@ -55,11 +53,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. |
 | `AddDamage` | Number | Applies or references the 'AddDamage' effect/state. |
 | `AddDamageToBasicAttack` | Number | Applies the 'AddDamageToBasicAttack' effect. |
-| `AddDamageToElementDamage` | Block | Applies or references the 'AddDamageToElementDamage' effect/state. |
-| `AddElementsToBasicAttack` | Enum |  |
-| `AddElementsToSpells` | Enum | Applies or references the 'AddElementsToSpells' effect/state. |
+| [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Block | Applies or references the 'AddDamageToElementDamage' effect/state. |
+| [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum |  |
+| [`AddElementsToSpells`](./Enums.md#enum-addelementstospells) | Enum | Applies or references the 'AddElementsToSpells' effect/state. |
 | `AddEndOfCombatRegen` | Number | Applies or references the 'AddEndOfCombatRegen' effect/state. |
-| `AddHiddenTag` | Enum | Applies or references the 'AddHiddenTag' effect/state. |
+| [`AddHiddenTag`](./Enums.md#enum-addhiddentag) | Enum | Applies or references the 'AddHiddenTag' effect/state. |
 | `AddInitiative` | Number | Applies or references the 'AddInitiative' effect/state. |
 | `AddKnockbackDamage` | Number | Applies or references the 'AddKnockbackDamage' effect/state. |
 | `AddKnockbackToEverything` | Number | Applies the 'AddKnockbackToEverything' effect. |
@@ -70,106 +68,106 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddMaxHealth` | Number | Applies or references the 'AddMaxHealth' effect/state. |
 | `AddMeleeKnockback` | Number | Applies or references the 'AddMeleeKnockback' effect/state. |
 | `AddMovement` | Number | Applies or references the 'AddMovement' effect/state. |
-| `AddPassiveToSpawnedRocks` | Block | Applies the 'AddPassiveToSpawnedRocks' effect. |
-| `AddPassivesToCharmed` | Block | Applies the 'AddPassivesToCharmed' effect. |
-| `AddPassivesToMinions` | Block | Applies the 'AddPassivesToMinions' effect. |
-| `AddPassivesToSummonAbilityMinions` | Block | Applies the 'AddPassivesToSummonAbilityMinions' effect. |
+| [`AddPassiveToSpawnedRocks`](#addpassivetospawnedrocks) | Block | Applies the 'AddPassiveToSpawnedRocks' effect. |
+| [`AddPassivesToCharmed`](#addpassivestocharmed) | Block | Applies the 'AddPassivesToCharmed' effect. |
+| [`AddPassivesToMinions`](#addpassivestominions) | Block | Applies the 'AddPassivesToMinions' effect. |
+| [`AddPassivesToSummonAbilityMinions`](#addpassivestosummonabilityminions) | Block | Applies the 'AddPassivesToSummonAbilityMinions' effect. |
 | `AddRandomEliteBuff` | Number |  |
 | `AddRangedCritChance` | Number | Applies the 'AddRangedCritChance' effect. |
-| `AddSelfStatusToBasicAttack` | Block | Applies or references the 'AddSelfStatusToBasicAttack' effect/state. |
-| `AddSelfStatusToWeapons` | Block | Applies the 'AddSelfStatusToWeapons' effect. |
+| [`AddSelfStatusToBasicAttack`](#addselfstatustobasicattack) | Block | Applies or references the 'AddSelfStatusToBasicAttack' effect/state. |
+| [`AddSelfStatusToWeapons`](#addselfstatustoweapons) | Block | Applies the 'AddSelfStatusToWeapons' effect. |
 | `AddSpeed` | Number | Applies the 'AddSpeed' effect. |
 | `AddSpellDamage` | Number | Applies the 'AddSpellDamage' effect. |
 | `AddStartingMana` | Number | Applies or references the 'AddStartingMana' effect/state. |
-| `AddStatusToAllDamage` | Block | Modifier: Injects a status effect into a specific action. |
-| `AddStatusToAllDamageAbilities` | Block | Applies the 'AddStatusToAllDamageAbilities' effect. |
-| `AddStatusToBackstabs` | Block | Modifier: Injects a status effect into a specific action. |
-| `AddStatusToBasicAttack` | Block | Injects a status effect payload that applies whenever the character performs a basic attack. |
-| `AddStatusToBasicAttackWithCooldown` | Block | Applies the 'AddStatusToBasicAttackWithCooldown' effect. |
-| `AddStatusToBasicMeleeAttack` | Block |  |
-| `AddStatusToElementAbilities` | Block | Applies the 'AddStatusToElementAbilities' effect. |
-| `AddStatusToElementDamage` | Block | Applies the 'AddStatusToElementDamage' effect. |
-| `AddStatusToExplosions` | Block | Applies the 'AddStatusToExplosions' effect. |
-| `AddStatusToFirstBasicAttack` | Block | Applies the 'AddStatusToFirstBasicAttack' effect. |
-| `AddStatusToFirstSpellEachTurn` | Block |  |
-| `AddStatusToKnockbackDamage` | Block | Modifier: Injects a status effect into a specific action. |
-| `AddStatusToMeleeDamage` | Block | Applies the 'AddStatusToMeleeDamage' effect. |
-| `AddStatusToReceivedDamage` | Block | Modifier: Applies a status effect whenever the character takes damage. |
-| `AddStatusToReceivedDamage_ExcludeStatuses` | Block | Applies the 'AddStatusToReceivedDamage_ExcludeStatuses' effect. |
-| `AddStatusToSpells` | Block | Modifier: Injects a status effect into a specific action. |
-| `AddStatusToTrampleDamage` | Block | Applies the 'AddStatusToTrampleDamage' effect. |
-| `AddStatusToWeapons` | Block | Applies the 'AddStatusToWeapons' effect. |
-| `AddStatusesIfPersistentWeatherElement` | Block | Applies the 'AddStatusesIfPersistentWeatherElement' effect. |
-| `AddStatusesToReceivedElementalDamage` | Block | Applies the 'AddStatusesToReceivedElementalDamage' effect. |
-| `AddTag` | Enum | Applies or references the 'AddTag' effect/state. |
-| `AddTemporaryEffectsToBasicAttack` | Block | Applies the 'AddTemporaryEffectsToBasicAttack' effect. |
-| `AddTemporaryEffectsToEquipment` | Block | Applies the 'AddTemporaryEffectsToEquipment' effect. |
+| [`AddStatusToAllDamage`](#addstatustoalldamage) | Block | Modifier: Injects a status effect into a specific action. |
+| [`AddStatusToAllDamageAbilities`](#addstatustoalldamageabilities) | Block | Applies the 'AddStatusToAllDamageAbilities' effect. |
+| [`AddStatusToBackstabs`](#addstatustobackstabs) | Block | Modifier: Injects a status effect into a specific action. |
+| [`AddStatusToBasicAttack`](#addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. |
+| [`AddStatusToBasicAttackWithCooldown`](#addstatustobasicattackwithcooldown) | Block | Applies the 'AddStatusToBasicAttackWithCooldown' effect. |
+| [`AddStatusToBasicMeleeAttack`](#addstatustobasicmeleeattack) | Block |  |
+| [`AddStatusToElementAbilities`](#addstatustoelementabilities) | Block | Applies the 'AddStatusToElementAbilities' effect. |
+| [`AddStatusToElementDamage`](#addstatustoelementdamage) | Block | Applies the 'AddStatusToElementDamage' effect. |
+| [`AddStatusToExplosions`](#addstatustoexplosions) | Block | Applies the 'AddStatusToExplosions' effect. |
+| [`AddStatusToFirstBasicAttack`](#addstatustofirstbasicattack) | Block | Applies the 'AddStatusToFirstBasicAttack' effect. |
+| [`AddStatusToFirstSpellEachTurn`](#addstatustofirstspelleachturn) | Block |  |
+| [`AddStatusToKnockbackDamage`](#addstatustoknockbackdamage) | Block | Modifier: Injects a status effect into a specific action. |
+| [`AddStatusToMeleeDamage`](#addstatustomeleedamage) | Block | Applies the 'AddStatusToMeleeDamage' effect. |
+| [`AddStatusToReceivedDamage`](#addstatustoreceiveddamage) | Block | Modifier: Applies a status effect whenever the character takes damage. |
+| [`AddStatusToReceivedDamage_ExcludeStatuses`](#addstatustoreceiveddamage_excludestatuses) | Block | Applies the 'AddStatusToReceivedDamage_ExcludeStatuses' effect. |
+| [`AddStatusToSpells`](#addstatustospells) | Block | Modifier: Injects a status effect into a specific action. |
+| [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Block | Applies the 'AddStatusToTrampleDamage' effect. |
+| [`AddStatusToWeapons`](#addstatustoweapons) | Block | Applies the 'AddStatusToWeapons' effect. |
+| [`AddStatusesIfPersistentWeatherElement`](#addstatusesifpersistentweatherelement) | Block | Applies the 'AddStatusesIfPersistentWeatherElement' effect. |
+| [`AddStatusesToReceivedElementalDamage`](#addstatusestoreceivedelementaldamage) | Block | Applies the 'AddStatusesToReceivedElementalDamage' effect. |
+| [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. |
+| [`AddTemporaryEffectsToBasicAttack`](#addtemporaryeffectstobasicattack) | Block | Applies the 'AddTemporaryEffectsToBasicAttack' effect. |
+| [`AddTemporaryEffectsToEquipment`](#addtemporaryeffectstoequipment) | Block | Applies the 'AddTemporaryEffectsToEquipment' effect. |
 | `AddUnfilledMaxHealth` | Number | Applies the 'AddUnfilledMaxHealth' effect. |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. |
 | `AddWeaponScaling` | Number | Applies the 'AddWeaponScaling' effect. |
-| `AdvancedTint` | Array | Applies or references the 'AdvancedTint' effect/state. |
-| `AdventureTokenPassivePool` | Block | Map/Metaprogression: Pool of passive modifiers applied by adventure tokens. |
-| `AfterImage` | Enum | Spawns a visual decoy or shade at the caster's previous location. |
+| [`AdvancedTint`](./Arrays.md#array-advancedtint) | Array | Applies or references the 'AdvancedTint' effect/state. |
+| [`AdventureTokenPassivePool`](#adventuretokenpassivepool) | Block | Map/Metaprogression: Pool of passive modifiers applied by adventure tokens. |
+| [`AfterImage`](./Enums.md#enum-afterimage) | Enum | Spawns a visual decoy or shade at the caster's previous location. |
 | `AggroTargetIsBuddy` | Number | Applies or references the 'AggroTargetIsBuddy' effect/state. |
 | `AggroTargetIsCurrentTurn` | Number | Applies or references the 'AggroTargetIsCurrentTurn' effect/state. |
-| `AggroTargetIsGovernedByHitEffect` | Block | AI Logic: Forces the character's aggro to follow specific hit effects rather than default proximity. |
+| [`AggroTargetIsGovernedByHitEffect`](#aggrotargetisgovernedbyhiteffect) | Block | AI Logic: Forces the character's aggro to follow specific hit effects rather than default proximity. |
 | `AggroTargetIsLastEnemyThatDealtDamage` | Number | Applies or references the 'AggroTargetIsLastEnemyThatDealtDamage' effect/state. |
 | `AggroTargetIsLowestHealthEnemyTillItDies` | Number | Applies or references the 'AggroTargetIsLowestHealthEnemyTillItDies' effect/state. |
 | `AggroTargetIsLowestMaxHealthCat` | Number | Applies or references the 'AggroTargetIsLowestMaxHealthCat' effect/state. |
-| `AlienBeastDangerZones` | Array | Applies or references the 'AlienBeastDangerZones' effect/state. |
+| [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array | Applies or references the 'AlienBeastDangerZones' effect/state. |
 | `AlienBeastEyeStalks` | Number | Applies or references the 'AlienBeastEyeStalks' effect/state. |
 | `AllDamageCrits` | Number | Applies the 'AllDamageCrits' effect. |
 | `AllDamageImmune_IncludingSpeculative` | Number | Applies or references the 'AllDamageImmune_IncludingSpeculative' effect/state. |
 | `AllSpellsCostActPoints` | Number | Applies or references the 'AllSpellsCostActPoints' effect/state. |
 | `AllSpellsCostCharge` | Number | Applies or references the 'AllSpellsCostCharge' effect/state. |
-| `AllStatsAura` | Block | Passive: Projects an aura that modifies all primary stats of nearby characters. |
+| [`AllStatsAura`](#allstatsaura) | Block | Passive: Projects an aura that modifies all primary stats of nearby characters. |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. |
 | `AllStatsUpPerDisorder` | Number | Applies or references the 'AllStatsUpPerDisorder' effect/state. |
 | `AllUnitsExplodeOnDeath` | Number | Applies or references the 'AllUnitsExplodeOnDeath' effect/state. |
 | `AlliesAvoidTraps` | Number | Applies the 'AlliesAvoidTraps' effect. |
 | `AlliesScrambleSpellAfterCast` | Number | Applies or references the 'AlliesScrambleSpellAfterCast' effect/state. |
 | `AllowPassTurn` | Number | Applies the 'AllowPassTurn' effect. |
-| `AlluringDoodieEater` | Block | Applies or references the 'AlluringDoodieEater' effect/state. |
-| `AllyBonusAbilityAura` | Enum | Applies the 'AllyBonusAbilityAura' effect. |
+| [`AlluringDoodieEater`](#alluringdoodieeater) | Block | Applies or references the 'AlluringDoodieEater' effect/state. |
+| [`AllyBonusAbilityAura`](./Enums.md#enum-allybonusabilityaura) | Enum | Applies the 'AllyBonusAbilityAura' effect. |
 | `AllyChainKnockback` | Number | Applies the 'AllyChainKnockback' effect. |
-| `AllyDamageReaction` | Enum | Applies the 'AllyDamageReaction' effect. |
+| [`AllyDamageReaction`](./Enums.md#enum-allydamagereaction) | Enum | Applies the 'AllyDamageReaction' effect. |
 | `AllyDamageReduction` | Number | Applies the 'AllyDamageReduction' effect. |
-| `AllyDodgeChanceAura` | Block | Applies or references the 'AllyDodgeChanceAura' effect/state. |
-| `AllyHealthRegenAura` | Block | Applies the 'AllyHealthRegenAura' effect. |
-| `AllyManaRegenAura` | Block | Applies the 'AllyManaRegenAura' effect. |
-| `AllyMoveAbilityAura` | Enum | Applies the 'AllyMoveAbilityAura' effect. |
+| [`AllyDodgeChanceAura`](#allydodgechanceaura) | Block | Applies or references the 'AllyDodgeChanceAura' effect/state. |
+| [`AllyHealthRegenAura`](#allyhealthregenaura) | Block | Applies the 'AllyHealthRegenAura' effect. |
+| [`AllyManaRegenAura`](#allymanaregenaura) | Block | Applies the 'AllyManaRegenAura' effect. |
+| [`AllyMoveAbilityAura`](./Enums.md#enum-allymoveabilityaura) | Enum | Applies the 'AllyMoveAbilityAura' effect. |
 | `AllyMultiplyKnockbackDamage` | Number | Applies the 'AllyMultiplyKnockbackDamage' effect. |
 | `AllyMultiplyKnockbackDistance` | Number | Applies the 'AllyMultiplyKnockbackDistance' effect. |
 | `AllyUncappedHPAura` | Number | Applies the 'AllyUncappedHPAura' effect. |
 | `AlphaAllStatsUp` | Number | Applies or references the 'AlphaAllStatsUp' effect/state. |
 | `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. |
 | `AlphaDodgeChance` | Number | Applies or references the 'AlphaDodgeChance' effect/state. |
-| `AlphaStatusOnTurnBegin` | Block | Grants a specific status effect to the 'Alpha' (the party leader) at the start of their turn. |
+| [`AlphaStatusOnTurnBegin`](#alphastatusonturnbegin) | Block | Grants a specific status effect to the 'Alpha' (the party leader) at the start of their turn. |
 | `AlphaTurns` | Number | Applies the 'AlphaTurns' effect. |
-| `AlternateCraftingPools` | Block | Applies the 'AlternateCraftingPools' effect. |
+| [`AlternateCraftingPools`](#alternatecraftingpools) | Block | Applies the 'AlternateCraftingPools' effect. |
 | `AlwaysChosenForLevelUp` | Number | Applies or references the 'AlwaysChosenForLevelUp' effect/state. |
 | `AlwaysHitDifferentTargets` | Number | Applies or references the 'AlwaysHitDifferentTargets' effect/state. |
 | `Ammo` | Number | Applies or references the 'Ammo' effect/state. |
 | `AmplifyKnockback` | Number | Applies the 'AmplifyKnockback' effect. |
 | `AmplifyNegativeStatus` | Number | Applies the 'AmplifyNegativeStatus' effect. |
 | `AmplifyPositiveStatus` | Number | Applies the 'AmplifyPositiveStatus' effect. |
-| `AmplifyStatus` | Enum | Applies the 'AmplifyStatus' effect. |
+| [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Applies the 'AmplifyStatus' effect. |
 | `Angel` | Number | Applies or references the 'Angel' effect/state. |
-| `ApplyPassivesToSpawnerWhileAlive` | Block | Grants nested passives to the entity that spawned this object, lasting only as long as this object remains alive. |
-| `ApplyStatusIfCrit` | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. |
-| `ApplyStatusesToRandomEnemiesEachTurn` | Block | Applies or references the 'ApplyStatusesToRandomEnemiesEachTurn' effect/state. |
-| `ApplyToRandomPartyMemberIfPossible` | Block | Redirects the nested effects to apply to a random living member of the player's party. |
-| `ApplyToSource` | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. |
-| `ArmorBreakOnHit` | Block | Applies or references the 'ArmorBreakOnHit' effect/state. |
+| [`ApplyPassivesToSpawnerWhileAlive`](#applypassivestospawnerwhilealive) | Block | Grants nested passives to the entity that spawned this object, lasting only as long as this object remains alive. |
+| [`ApplyStatusIfCrit`](#applystatusifcrit) | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. |
+| [`ApplyStatusesToRandomEnemiesEachTurn`](#applystatusestorandomenemieseachturn) | Block | Applies or references the 'ApplyStatusesToRandomEnemiesEachTurn' effect/state. |
+| [`ApplyToRandomPartyMemberIfPossible`](#applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. |
+| [`ApplyToSource`](#applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. |
+| [`ArmorBreakOnHit`](#armorbreakonhit) | Block | Applies or references the 'ArmorBreakOnHit' effect/state. |
 | `ArmorDodgeChance` | Number | Applies or references the 'ArmorDodgeChance' effect/state. |
-| `ArmorPickup` | Block | Pickup Logic: Defines what happens when an armor item is collected. |
-| `Autism` | Block | Applies the 'Autism' effect. |
+| [`ArmorPickup`](#armorpickup) | Block | Pickup Logic: Defines what happens when an armor item is collected. |
+| [`Autism`](#autism) | Block | Applies the 'Autism' effect. |
 | `AutoCritLowDamage` | Number | Applies the 'AutoCritLowDamage' effect. |
 | `AutoEquipConsumables` | Number | Applies or references the 'AutoEquipConsumables' effect/state. |
 | `AutoReanimate` | Number | Applies the 'AutoReanimate' effect. |
-| `AutocastEachRound` | Block | Forces the character to automatically cast a specific ability at the start of each combat round. |
-| `AutocastEachTurn` | Enum | Applies the 'AutocastEachTurn' effect. |
-| `AutocastEachTurnBegin` | Enum | Applies the 'AutocastEachTurnBegin' effect. |
+| [`AutocastEachRound`](#autocasteachround) | Block | Forces the character to automatically cast a specific ability at the start of each combat round. |
+| [`AutocastEachTurn`](./Enums.md#enum-autocasteachturn) | Enum | Applies the 'AutocastEachTurn' effect. |
+| [`AutocastEachTurnBegin`](./Enums.md#enum-autocasteachturnbegin) | Enum | Applies the 'AutocastEachTurnBegin' effect. |
 | `AvoidDamagingCharmedEnemies` | Number | Applies or references the 'AvoidDamagingCharmedEnemies' effect/state. |
 | `AwardCoinsOnDeath` | Number | Applies or references the 'AwardCoinsOnDeath' effect/state. |
 | `BackflipWhenTargeted` | Number | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. |
@@ -178,43 +176,43 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BackstabFront` | Number |  |
 | `BackstabImmunity` | Number | Applies or references the 'BackstabImmunity' effect/state. |
 | `BackstabWeakness` | Number | Applies the 'BackstabWeakness' effect. |
-| `BaitAura` | Block | Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots). |
+| [`BaitAura`](#baitaura) | Block | Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots). |
 | `BalanceStats` | Number | Applies or references the 'BalanceStats' effect/state. |
-| `BaseStatMultiply` | Enum | Applies or references the 'BaseStatMultiply' effect/state. |
+| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Enum | Applies or references the 'BaseStatMultiply' effect/state. |
 | `BasicAIDangerZone` | Number | Applies or references the 'BasicAIDangerZone' effect/state. |
 | `BasicAttackAOEBonus` | Number | Applies the 'BasicAttackAOEBonus' effect. |
 | `BasicAttackCantMiss` | Number |  |
 | `BasicAttackCritChance` | Number | Applies the 'BasicAttackCritChance' effect. |
 | `BasicAttackDamageMultiplier` | Number | Applies the 'BasicAttackDamageMultiplier' effect. |
 | `BasicAttackStatusCarefulness` | Number | Applies the 'BasicAttackStatusCarefulness' effect. |
-| `BasicAttackStatusSwap` | Array | Applies the 'BasicAttackStatusSwap' effect. |
-| `BattlefieldUniqueRandomPassive` | Block | Map Rule: Grants a unique random passive modifier to the battlefield. |
+| [`BasicAttackStatusSwap`](./Arrays.md#array-basicattackstatusswap) | Array | Applies the 'BasicAttackStatusSwap' effect. |
+| [`BattlefieldUniqueRandomPassive`](#battlefielduniquerandompassive) | Block | Map Rule: Grants a unique random passive modifier to the battlefield. |
 | `BigSplashDamage` | Number | Applies the 'BigSplashDamage' effect. |
-| `Bird` | Enum | Applies or references the 'Bird' effect/state. |
-| `BirdRewards` | Block | Loot logic: Rewards dropped by bird-type enemies. |
+| [`Bird`](./Enums.md#enum-bird) | Enum | Applies or references the 'Bird' effect/state. |
+| [`BirdRewards`](#birdrewards) | Block | Loot logic: Rewards dropped by bird-type enemies. |
 | `BlackHolePassive` | Number | Applies or references the 'BlackHolePassive' effect/state. |
-| `BlacklistPickupType` | Enum |  |
+| [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum |  |
 | `BlastResistance` | Number | Applies the 'BlastResistance' effect. |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. |
 | `BleedThorns` | Number | Applies or references the 'BleedThorns' effect/state. |
 | `BlessingOfPeace` | Number | Applies or references the 'BlessingOfPeace' effect/state. |
 | `Blind` | Number |  |
-| `BloatEyePassive2` | Enum | Applies or references the 'BloatEyePassive2' effect/state. |
+| [`BloatEyePassive2`](./Enums.md#enum-bloateyepassive2) | Enum | Applies or references the 'BloatEyePassive2' effect/state. |
 | `BlockAllDamage` | Number | Applies or references the 'BlockAllDamage' effect/state. |
 | `BlockDamageUnderThreshold` | Number | Applies or references the 'BlockDamageUnderThreshold' effect/state. |
 | `BlockNegativeStatus` | Number | Applies or references the 'BlockNegativeStatus' effect/state. |
 | `BombBehavior` | Number | Applies or references the 'BombBehavior' effect/state. |
 | `BoneArmorPassive` | Number | Applies or references the 'BoneArmorPassive' effect/state. |
-| `BonusAbility` | Enum | Applies the 'BonusAbility' effect. |
-| `BonusAbility_DelayedApplication` | Enum | Applies or references the 'BonusAbility_DelayedApplication' effect/state. |
+| [`BonusAbility`](./Enums.md#enum-bonusability) | Enum | Applies the 'BonusAbility' effect. |
+| [`BonusAbility_DelayedApplication`](./Enums.md#enum-bonusability_delayedapplication) | Enum | Applies or references the 'BonusAbility_DelayedApplication' effect/state. |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. |
 | `BonusFoodEachBattle` | Number | Applies the 'BonusFoodEachBattle' effect. |
 | `BonusHealthRegenBasedOnDex` | Number | Applies the 'BonusHealthRegenBasedOnDex' effect. |
 | `BonusHealthRegenPerDisorder` | Number |  |
 | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. |
 | `BonusRangeBasedOnDex` | Number | Applies the 'BonusRangeBasedOnDex' effect. |
-| `BonusTurnPattern` | Array | Applies or references the 'BonusTurnPattern' effect/state. |
-| `BoobyTrapItems` | Block | Applies the 'BoobyTrapItems' effect. |
+| [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Applies or references the 'BonusTurnPattern' effect/state. |
+| [`BoobyTrapItems`](#boobytrapitems) | Block | Applies the 'BoobyTrapItems' effect. |
 | `BoostAllyStatsOnDeath` | Number | Applies the 'BoostAllyStatsOnDeath' effect. |
 | `BoostDamageAura` | Number | Applies the 'BoostDamageAura' effect. |
 | `BoostDamageGlobalAura` | Number | Applies the 'BoostDamageGlobalAura' effect. |
@@ -223,34 +221,34 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BoostRangeGlobalAura` | Number | Applies the 'BoostRangeGlobalAura' effect. |
 | `BoostReceivedHealing` | Number | Applies or references the 'BoostReceivedHealing' effect/state. |
 | `BoostWeaponDamage` | Number | Applies the 'BoostWeaponDamage' effect. |
-| `BossRewards` | Block | Loot logic: Rewards dropped upon defeating a boss. |
-| `BounceObject` | Enum | Spawns a physics object that visually bounces off the target. |
-| `BouncyProjectiles` | Block | Applies the 'BouncyProjectiles' effect. |
+| [`BossRewards`](#bossrewards) | Block | Loot logic: Rewards dropped upon defeating a boss. |
+| [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Spawns a physics object that visually bounces off the target. |
+| [`BouncyProjectiles`](#bouncyprojectiles) | Block | Applies the 'BouncyProjectiles' effect. |
 | `Bounty` | Number | Applies the 'Bounty' effect. |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. |
 | `BraceForEachNeighboringEnemy` | Number | Applies the 'BraceForEachNeighboringEnemy' effect. |
 | `BreakAtAux` | Number | Applies or references the 'BreakAtAux' effect/state. |
-| `BreakOnElement` | Enum | Applies or references the 'BreakOnElement' effect/state. |
+| [`BreakOnElement`](./Enums.md#enum-breakonelement) | Enum | Applies or references the 'BreakOnElement' effect/state. |
 | `BreakWhenNoShield` | Number | Applies or references the 'BreakWhenNoShield' effect/state. |
 | `Brittle` | Number | Applies or references the 'Brittle' effect/state. |
 | `BrittleCharismaUp` | Number | Applies or references the 'BrittleCharismaUp' effect/state. |
 | `BrittleConstitutionUp` | Number | Applies or references the 'BrittleConstitutionUp' effect/state. |
 | `BrittleDexterityUp` | Number | Applies or references the 'BrittleDexterityUp' effect/state. |
-| `BrittleDuringElement` | Enum | Applies or references the 'BrittleDuringElement' effect/state. |
+| [`BrittleDuringElement`](./Enums.md#enum-brittleduringelement) | Enum | Applies or references the 'BrittleDuringElement' effect/state. |
 | `BrittleIntelligenceUp` | Number | Applies or references the 'BrittleIntelligenceUp' effect/state. |
 | `BrittleLuckUp` | Number | Applies or references the 'BrittleLuckUp' effect/state. |
 | `BrittleSpeedUp` | Number | Applies or references the 'BrittleSpeedUp' effect/state. |
 | `BrittleStrengthUp` | Number | Applies or references the 'BrittleStrengthUp' effect/state. |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. |
-| `Buddy` | Enum | Character Form / AI State: Behavior and stats for the 'Buddy' familiar state. |
+| [`Buddy`](./Enums.md#enum-buddy) | Enum | Character Form / AI State: Behavior and stats for the 'Buddy' familiar state. |
 | `BuffImmunity` | Number | Applies or references the 'BuffImmunity' effect/state. |
-| `BungaCheers` | Block | Animation/AI State: Bunga cheering animation logic. |
-| `BungaEntrance` | Block | Animation/AI State: Bunga entering the arena. |
+| [`BungaCheers`](#bungacheers) | Block | Animation/AI State: Bunga cheering animation logic. |
+| [`BungaEntrance`](#bungaentrance) | Block | Animation/AI State: Bunga entering the arena. |
 | `BurgleCoin` | Number | Applies the 'BurgleCoin' effect. |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. |
 | `CCImmunity` | Number | Applies the 'CCImmunity' effect. |
 | `CanLevelUpWhenDead` | Number | Applies or references the 'CanLevelUpWhenDead' effect/state. |
-| `CanMutateTo` | Enum | Applies or references the 'CanMutateTo' effect/state. |
+| [`CanMutateTo`](./Enums.md#enum-canmutateto) | Enum | Applies or references the 'CanMutateTo' effect/state. |
 | `CanRemoveCursedItems` | Number |  |
 | `CanShield` | Number | Applies or references the 'CanShield' effect/state. |
 | `CantCatchDiseases` | Number | Applies or references the 'CantCatchDiseases' effect/state. |
@@ -260,177 +258,197 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CapDamageFromAllies` | Number | Applies the 'CapDamageFromAllies' effect. |
 | `CapMovementAbilityRange` | Number | Applies or references the 'CapMovementAbilityRange' effect/state. |
 | `CapReceivedDamage` | Number | Applies or references the 'CapReceivedDamage' effect/state. |
-| `CapTechSpent` | Number | Applies or references the 'CapTechSpent' effect/state. |
+| `CapTechSpent` | Number | Applies the 'CapTechSpent' effect. |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. |
-| `CatAPultAnimation` | Block | Applies the 'CatAPultAnimation' effect. |
-| `CatPartsSizeScale` | Block | Applies or references the 'CatPartsSizeScale' effect/state. |
-| `CatPartsTransform` | Block | Visual: Transforms specific body parts of the character. |
+| [`CatAPultAnimation`](#catapultanimation) | Block | Applies the 'CatAPultAnimation' effect. |
+| [`CatPartsSizeScale`](#catpartssizescale) | Block | Applies or references the 'CatPartsSizeScale' effect/state. |
+| [`CatPartsTransform`](#catpartstransform) | Block | Visual: Transforms specific body parts of the character. |
 | `CatchBoomerang` | Number | Applies or references the 'CatchBoomerang' effect/state. |
-| `CatchProjectiles` | Block | Applies or references the 'CatchProjectiles' effect/state. |
-| `CaveFamilyEnrage` | Block | AI Trigger: Enrage logic triggered when a cave family member is killed. |
+| [`CatchProjectiles`](#catchprojectiles) | Block | Applies or references the 'CatchProjectiles' effect/state. |
+| [`CaveFamilyEnrage`](#cavefamilyenrage) | Block | AI Trigger: Enrage logic triggered when a cave family member is killed. |
 | `CaveWomanBirthControl` | Number | Applies or references the 'CaveWomanBirthControl' effect/state. |
-| `CerberubsAggroTargetBehavior` | Block | AI Logic: Custom aggro targeting rules for Cerberubs. |
+| [`CerberubsAggroTargetBehavior`](#cerberubsaggrotargetbehavior) | Block | AI Logic: Custom aggro targeting rules for Cerberubs. |
 | `ChainKnockback` | Number | Applies the 'ChainKnockback' effect. |
 | `ChanceToAmbush` | Number | Applies or references the 'ChanceToAmbush' effect/state. |
-| `ChanceToBackflip` | Block | Applies or references the 'ChanceToBackflip' effect/state. |
+| [`ChanceToBackflip`](#chancetobackflip) | Block | Applies or references the 'ChanceToBackflip' effect/state. |
 | `ChanceToBlock` | Number | Applies or references the 'ChanceToBlock' effect/state. |
 | `ChanceToBlockAndCounter` | Number | Applies or references the 'ChanceToBlockAndCounter' effect/state. |
 | `ChanceToBreak` | Number | Applies the 'ChanceToBreak' effect. |
 | `ChanceToDisableActionsIfNotCharmed` | Number | Applies or references the 'ChanceToDisableActionsIfNotCharmed' effect/state. |
-| `ChanceToForceEvent` | Block | Applies or references the 'ChanceToForceEvent' effect/state. |
-| `ChanceToFormChangeOnAbilityDamage` | Block | Reaction: Probability to change forms when taking ability damage. |
+| [`ChanceToForceEvent`](#chancetoforceevent) | Block | Applies or references the 'ChanceToForceEvent' effect/state. |
+| [`ChanceToFormChangeOnAbilityDamage`](#chancetoformchangeonabilitydamage) | Block | Reaction: Probability to change forms when taking ability damage. |
 | `ChanceToRevive` | Number | Applies or references the 'ChanceToRevive' effect/state. |
-| `ChanceToSpitOnDamage` | Block | Reaction: Probability to use a spit counter-attack when damaged. |
+| [`ChanceToSpitOnDamage`](#chancetospitondamage) | Block | Reaction: Probability to use a spit counter-attack when damaged. |
 | `ChangeTauntPriority` | Number | Applies the 'ChangeTauntPriority' effect. |
-| `ChangeTile` | Enum |  |
-| `ChangeTileOnDeath` | Enum | Applies or references the 'ChangeTileOnDeath' effect/state. |
-| `ChangeTileOnPop` | Enum | Applies or references the 'ChangeTileOnPop' effect/state. |
+| [`ChangeTile`](./Enums.md#enum-changetile) | Enum |  |
+| [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | Applies or references the 'ChangeTileOnDeath' effect/state. |
+| [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | Applies or references the 'ChangeTileOnPop' effect/state. |
 | `ChangeTileUnderCharacterAtStart` | Enum/String | Applies or references the 'ChangeTileUnderCharacterAtStart' effect/state. |
-| `ChangeTilesUnder` | Enum | Applies or references the 'ChangeTilesUnder' effect/state. |
-| `ChaosBossFormChangeGuide` | Block | Boss Logic: Maps the form transition phases for the Chaos Boss. |
-| `ChaosBossPieces` | Block | Boss Logic: Defines the separate destructible pieces of the Chaos Boss. |
-| `ChaosHeadDropIn` | Block | Boss Logic: Drop-in attack/animation for the Chaos Head. |
-| `CharacterLightSource` | Block | Visual: Attaches a dynamic lighting source to the character. |
+| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. |
+| [`ChaosBossFormChangeGuide`](#chaosbossformchangeguide) | Block | Boss Logic: Maps the form transition phases for the Chaos Boss. |
+| [`ChaosBossPieces`](#chaosbosspieces) | Block | Boss Logic: Defines the separate destructible pieces of the Chaos Boss. |
+| [`ChaosHeadDropIn`](#chaosheaddropin) | Block | Boss Logic: Drop-in attack/animation for the Chaos Head. |
+| [`CharacterLightSource`](#characterlightsource) | Block | Visual: Attaches a dynamic lighting source to the character. |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. |
-| `ChargeSpiritBombAura` | Enum | Applies or references the 'ChargeSpiritBombAura' effect/state. |
+| [`ChargeSpiritBombAura`](./Enums.md#enum-chargespiritbombaura) | Enum | Applies or references the 'ChargeSpiritBombAura' effect/state. |
 | `CharismaIsMaxStat` | Number | Applies or references the 'CharismaIsMaxStat' effect/state. |
 | `CharismaUp` | Number | Applies or references the 'CharismaUp' effect/state. |
 | `CharmAllFlies` | Number | Applies the 'CharmAllFlies' effect. |
 | `CharmImmunity` | Number | Applies or references the 'CharmImmunity' effect/state. |
 | `Charmed` | Number | Applies the 'Charmed' effect. |
-| `CherubimReaction` | Block | Reaction: Custom reaction triggers for Cherubim enemies. |
-| `ClassManaCostReduction` | Block | Applies or references the 'ClassManaCostReduction' effect/state. |
-| `Cleanse` | Number |  |
+| [`CherubimReaction`](#cherubimreaction) | Block | Reaction: Custom reaction triggers for Cherubim enemies. |
+| [`ClassManaCostReduction`](#classmanacostreduction) | Block | Applies or references the 'ClassManaCostReduction' effect/state. |
+| `Cleanse` | Number | Applies the 'Cleanse' effect. |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. |
-| `CobraReflex` | Enum | Applies the 'CobraReflex' effect. |
+| [`CobraReflex`](./Enums.md#enum-cobrareflex) | Enum | Applies the 'CobraReflex' effect. |
 | `CoinPickup` | Number | Applies or references the 'CoinPickup' effect/state. |
 | `CoinsAddDamage` | Number | Applies the 'CoinsAddDamage' effect. |
 | `CollectPickupsOnBattleEnd` | Number | Applies the 'CollectPickupsOnBattleEnd' effect. |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Block | Conditional block: Executes nested logic only if the target is/has Adjacent. |
+| [`Conditional_Ally`](#conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. |
+| [`Conditional_BadRoll`](#conditional_badroll) | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. |
+| [`Conditional_Boss`](#conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. |
+| [`Conditional_Corpse`](#conditional_corpse) | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. |
+| [`Conditional_Enemy`](#conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. |
+| [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. |
+| [`Conditional_Flying`](#conditional_flying) | Block |  |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. |
+| [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Block |  |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. |
+| [`Conditional_HasTag`](#conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. |
+| [`Conditional_ManaThreshold`](#conditional_manathreshold) | Block | Conditional constraint. Nested properties only trigger if this is true. |
+| [`Conditional_NotBoss`](#conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. |
+| [`Conditional_PartyMember`](#conditional_partymember) | Block | Conditional constraint. Nested properties only trigger if this is true. |
+| [`Conditional_RandomChance`](#conditional_randomchance) | Block |  |
+| [`Conditional_Shielded`](#conditional_shielded) | Block | Conditional trigger: Executes nested logic if the target currently has a Shield status. |
+| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Block | Conditional block: Executes nested logic only if the target is/has SourceHasTag. |
+| [`Conditional_Tiny`](#conditional_tiny) | Block |  |
 | `Conductor` | Number | Applies the 'Conductor' effect. |
 | `ConductorManaRegen` | Number | Applies the 'ConductorManaRegen' effect. |
-| `Confusion` | Number | Applies or references the 'Confusion' effect/state. |
-| `ConfusionEffectOnTaggedAbilities` | Enum | Applies the 'ConfusionEffectOnTaggedAbilities' effect. |
-| `ConjureBonusAbility` | Enum |  |
+| [`Confusion`](./Arrays.md#array-confusion) | Array |  |
+| [`ConfusionEffectOnTaggedAbilities`](./Enums.md#enum-confusioneffectontaggedabilities) | Enum | Applies the 'ConfusionEffectOnTaggedAbilities' effect. |
+| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum |  |
 | `ConjureCastSpellsForAllies` | Number | Applies the 'ConjureCastSpellsForAllies' effect. |
 | `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. |
 | `ConsumableEffectsMultiplierBonus` | Number | Applies the 'ConsumableEffectsMultiplierBonus' effect. |
 | `ConsumablesInfiniteRange` | Number | Applies the 'ConsumablesInfiniteRange' effect. |
 | `ConsumablesMeleeRange` | Number | Applies the 'ConsumablesMeleeRange' effect. |
-| `Consumed` | Block | State triggered when the entity is eaten/consumed. |
-| `ConvertDamageToScaledStatus` | Block | Applies or references the 'ConvertDamageToScaledStatus' effect/state. |
+| [`Consumed`](#consumed) | Block | State triggered when the entity is eaten/consumed. |
+| [`ConvertDamageToScaledStatus`](#convertdamagetoscaledstatus) | Block | Applies or references the 'ConvertDamageToScaledStatus' effect/state. |
 | `CopyBasicAttackEffects` | Number | Applies or references the 'CopyBasicAttackEffects' effect/state. |
 | `CopyCatPassive_Initializer` | Number | Applies or references the 'CopyCatPassive_Initializer' effect/state. |
 | `CopyPassiveSlot` | Number | Applies or references the 'CopyPassiveSlot' effect/state. |
 | `CountAsCorpse` | Number | Applies or references the 'CountAsCorpse' effect/state. |
-| `CounterAttack` | Enum | Reaction: Executes a counter-attack ability when hit. |
-| `CounterAttackAfterEnemyCastSpell` | Enum | Applies or references the 'CounterAttackAfterEnemyCastSpell' effect/state. |
+| [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | Reaction: Executes a counter-attack ability when hit. |
+| [`CounterAttackAfterEnemyCastSpell`](./Enums.md#enum-counterattackafterenemycastspell) | Enum | Applies or references the 'CounterAttackAfterEnemyCastSpell' effect/state. |
 | `CounterNextAttacks` | Number | Applies or references the 'CounterNextAttacks' effect/state. |
-| `Craft` | Block | Synthesizes or spawns a new item from a specific pool. |
-| `CreateGlobalModifiers` | Block | Generates global map or encounter rules/modifiers. |
+| [`Craft`](#craft) | Block | Synthesizes or spawns a new item from a specific pool. |
+| [`CreateGlobalModifiers`](#createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. |
-| `CritsApplyStatus` | Block | Applies the 'CritsApplyStatus' effect. |
+| [`CritsApplyStatus`](#critsapplystatus) | Block | Applies the 'CritsApplyStatus' effect. |
 | `CrowAttackLink` | Number | Applies or references the 'CrowAttackLink' effect/state. |
-| `CureDisease` | Block | Applies the 'CureDisease' effect. |
+| [`CureDisease`](#curedisease) | Block | Applies the 'CureDisease' effect. |
 | `CurrentWeaponDamageUp` | Number | Applies the 'CurrentWeaponDamageUp' effect. |
-| `CyborgTurns` | Block |  |
+| [`CyborgTurns`](#cyborgturns) | Block |  |
 | `DamageEnemiesOnHeal` | Number | Combat Trigger: Deals damage to enemies on heal. |
 | `DamageEnemiesOnKill` | Number | Combat Trigger: Deals damage to enemies on kill. |
 | `DamageFromBehindOnly` | Number | Applies or references the 'DamageFromBehindOnly' effect/state. |
-| `DamageIfDidntUseSpecificAbility` | Block | Combat Trigger: Deals damage to if didnt use specific ability. |
-| `DamageNeighborTilesWhenCastSpell` | Block | Combat Trigger: Deals damage to neighbor tiles when cast spell. |
-| `DamageNeighborsAfterMove` | Block |  |
-| `DamageNeighborsOnEndMove` | Block | Combat Trigger: Deals damage to neighbors on end move. |
+| [`DamageIfDidntUseSpecificAbility`](#damageifdidntusespecificability) | Block | Combat Trigger: Deals damage to if didnt use specific ability. |
+| [`DamageNeighborTilesWhenCastSpell`](#damageneighbortileswhencastspell) | Block | Combat Trigger: Deals damage to neighbor tiles when cast spell. |
+| [`DamageNeighborsAfterMove`](#damageneighborsaftermove) | Block |  |
+| [`DamageNeighborsOnEndMove`](#damageneighborsonendmove) | Block | Combat Trigger: Deals damage to neighbors on end move. |
 | `DamageOrHealConditionally` | Number | Applies or references the 'DamageOrHealConditionally' effect/state. |
-| `DamageReductionAura` | Block | Combat Trigger: Deals damage to reduction aura. |
+| [`DamageReductionAura`](#damagereductionaura) | Block | Combat Trigger: Deals damage to reduction aura. |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. |
-| `DeadAltAbility` | Enum | Applies or references the 'DeadAltAbility' effect/state. |
+| [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Applies or references the 'DeadAltAbility' effect/state. |
 | `DeathChill` | Number | Applies the 'DeathChill' effect. |
-| `DeathRattle` | Enum | Event Trigger: Executes logic or abilities exactly when the character dies. |
-| `DeathRattleRevive` | Block | Event Trigger: Revives the character immediately upon death. |
+| [`DeathRattle`](./Enums.md#enum-deathrattle) | Enum | Event Trigger: Executes logic or abilities exactly when the character dies. |
+| [`DeathRattleRevive`](#deathrattlerevive) | Block | Event Trigger: Revives the character immediately upon death. |
 | `DebuffImmunity` | Number | Applies or references the 'DebuffImmunity' effect/state. |
 | `DejaVu` | Number | Applies the 'DejaVu' effect. |
-| `DelayedAutoRevive` | Block | Applies or references the 'DelayedAutoRevive' effect/state. |
+| [`DelayedAutoRevive`](#delayedautorevive) | Block | Applies or references the 'DelayedAutoRevive' effect/state. |
 | `DelayedPain` | Number | Applies or references the 'DelayedPain' effect/state. |
 | `DemonicGlyphFrames` | Number | Applies or references the 'DemonicGlyphFrames' effect/state. |
 | `DemonicGlyphStealer` | Number | Applies or references the 'DemonicGlyphStealer' effect/state. |
-| `DepressionAura` | Block |  |
-| `DestroyEquipmentAndAttachParasite` | Block | Removes an equipped item and replaces it with a parasite from a specified pool. |
+| [`DepressionAura`](#depressionaura) | Block |  |
+| [`DestroyEquipmentAndAttachParasite`](#destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. |
 | `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. |
 | `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. |
-| `Diabetes` | Block | Applies the 'Diabetes' effect. |
-| `DiceBehavior` | Block | AI Logic: Custom behavior for Dice enemies. |
-| `DicerArt` | Array | Applies or references the 'DicerArt' effect/state. |
+| [`Diabetes`](#diabetes) | Block | Applies the 'Diabetes' effect. |
+| [`DiceBehavior`](#dicebehavior) | Block | AI Logic: Custom behavior for Dice enemies. |
+| [`DicerArt`](./Arrays.md#array-dicerart) | Array | Applies or references the 'DicerArt' effect/state. |
 | `DieWhenOnlyGolemsLeft` | Number | Applies or references the 'DieWhenOnlyGolemsLeft' effect/state. |
 | `DieWhenSpawnerDies` | Number | Applies or references the 'DieWhenSpawnerDies' effect/state. |
-| `DiesToElement` | Enum | Vulnerability: Character dies instantly if hit by this element. |
-| `DiesToPiercingAndSpikes` | Block | Vulnerability: Character dies instantly if hit by piercing attacks or spikes. |
-| `DigestDeadBodies` | Enum | Applies or references the 'DigestDeadBodies' effect/state. |
+| [`DiesToElement`](./Enums.md#enum-diestoelement) | Enum | Vulnerability: Character dies instantly if hit by this element. |
+| [`DiesToPiercingAndSpikes`](#diestopiercingandspikes) | Block | Vulnerability: Character dies instantly if hit by piercing attacks or spikes. |
+| [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | Applies or references the 'DigestDeadBodies' effect/state. |
 | `DiminishingHealthRegen` | Number | Applies or references the 'DiminishingHealthRegen' effect/state. |
 | `DirtyClaws` | Number | Applies the 'DirtyClaws' effect. |
-| `DisableAbilities` | Enum | Applies or references the 'DisableAbilities' effect/state. |
-| `DisableAbilitiesWithTag` | Enum |  |
+| [`DisableAbilities`](./Enums.md#enum-disableabilities) | Enum | Applies or references the 'DisableAbilities' effect/state. |
+| [`DisableAbilitiesWithTag`](./Enums.md#enum-disableabilitieswithtag) | Enum |  |
 | `DisablePassiveSlot` | Number | Applies or references the 'DisablePassiveSlot' effect/state. |
 | `DisableSpells` | Number | Applies or references the 'DisableSpells' effect/state. |
 | `Disguised` | Number | Applies or references the 'Disguised' effect/state. |
-| `DisguisedTrapper` | Enum | Applies or references the 'DisguisedTrapper' effect/state. |
+| [`DisguisedTrapper`](./Enums.md#enum-disguisedtrapper) | Enum | Applies or references the 'DisguisedTrapper' effect/state. |
 | `DisplayBuddyCatOnSpawn` | Number | Applies or references the 'DisplayBuddyCatOnSpawn' effect/state. |
-| `DisplayDangerAOE` | Enum | Applies or references the 'DisplayDangerAOE' effect/state. |
+| [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum | Applies or references the 'DisplayDangerAOE' effect/state. |
 | `DissuadeInstakills` | Number | Applies or references the 'DissuadeInstakills' effect/state. |
-| `DistanceBonusDamage` | Block | Applies the 'DistanceBonusDamage' effect. |
-| `Divide4OnDeath` | Enum | Applies or references the 'Divide4OnDeath' effect/state. |
+| [`DistanceBonusDamage`](#distancebonusdamage) | Block | Applies the 'DistanceBonusDamage' effect. |
+| [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum | Applies or references the 'Divide4OnDeath' effect/state. |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. |
 | `DivineShieldPickup` | Number | Applies or references the 'DivineShieldPickup' effect/state. |
-| `DoDamage` | Block | Explicitly triggers a secondary damage instance independent of the main attack. |
+| [`DoDamage`](#dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. |
 | `DodgeChance` | Number |  |
 | `DodgeChanceWithBlindSpot` | Number | Applies or references the 'DodgeChanceWithBlindSpot' effect/state. |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. |
-| `DodgeWhenTargeted` | Block | Reaction: Executes a dodge maneuver when targeted. |
+| [`DodgeWhenTargeted`](#dodgewhentargeted) | Block | Reaction: Executes a dodge maneuver when targeted. |
 | `Doomed` | Number | Applies the 'Doomed' effect. |
 | `DoubleCastSpellIfManaCostUnderThreshold` | Number | Applies or references the 'DoubleCastSpellIfManaCostUnderThreshold' effect/state. |
 | `DoubleCastSpellThisTurn` | Number | Applies or references the 'DoubleCastSpellThisTurn' effect/state. |
 | `DoubleCastSpellsEachTurn_Status` | Number |  |
-| `DoubleCastTaggedSpells` | Enum | Applies or references the 'DoubleCastTaggedSpells' effect/state. |
+| [`DoubleCastTaggedSpells`](./Enums.md#enum-doublecasttaggedspells) | Enum | Applies or references the 'DoubleCastTaggedSpells' effect/state. |
 | `DoubleCastWeapons` | Number | Applies the 'DoubleCastWeapons' effect. |
 | `DoubleReceivedNegativeStatus` | Number | Applies or references the 'DoubleReceivedNegativeStatus' effect/state. |
 | `DoubleReceivedPositiveStatus` | Number | Applies or references the 'DoubleReceivedPositiveStatus' effect/state. |
-| `DownRankAIIfWeaponUsable` | Enum | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. |
+| [`DownRankAIIfWeaponUsable`](./Enums.md#enum-downrankaiifweaponusable) | Enum | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. |
 | `DrinkWater` | Number |  |
-| `DropAsFamiliarOnArmorBreak` | Enum | Applies or references the 'DropAsFamiliarOnArmorBreak' effect/state. |
-| `DropAsFamiliarOnTookDamage` | Enum | Applies or references the 'DropAsFamiliarOnTookDamage' effect/state. |
-| `DropSoulJarOnDeath` | Enum | Applies or references the 'DropSoulJarOnDeath' effect/state. |
+| [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Applies or references the 'DropAsFamiliarOnArmorBreak' effect/state. |
+| [`DropAsFamiliarOnTookDamage`](./Enums.md#enum-dropasfamiliarontookdamage) | Enum | Applies or references the 'DropAsFamiliarOnTookDamage' effect/state. |
+| [`DropSoulJarOnDeath`](./Enums.md#enum-dropsouljarondeath) | Enum | Applies or references the 'DropSoulJarOnDeath' effect/state. |
 | `Drowsy` | Number |  |
 | `DukeOfFlies` | Number | Applies the 'DukeOfFlies' effect. |
-| `DurabilityTransform` | Block | Applies or references the 'DurabilityTransform' effect/state. |
+| [`DurabilityTransform`](#durabilitytransform) | Block | Applies or references the 'DurabilityTransform' effect/state. |
 | `DustCloudBehavior` | Number | Applies or references the 'DustCloudBehavior' effect/state. |
 | `Dybbuk1HPTracker` | Number | Applies or references the 'Dybbuk1HPTracker' effect/state. |
-| `DybbukPossessionFallback` | Block | Logic: Fallback state when a Dybbuk possession fails. |
-| `Dyslexia` | Array | Applies the 'Dyslexia' effect. |
-| `EMP` | Block | Applies the 'EMP' effect. |
+| [`DybbukPossessionFallback`](#dybbukpossessionfallback) | Block | Logic: Fallback state when a Dybbuk possession fails. |
+| [`Dyslexia`](./Arrays.md#array-dyslexia) | Array | Applies the 'Dyslexia' effect. |
+| [`EMP`](#emp) | Block | Applies the 'EMP' effect. |
 | `EachSpellFreeAtFullMana` | Number | Applies the 'EachSpellFreeAtFullMana' effect. |
 | `ElectricArcs` | Number | Applies or references the 'ElectricArcs' effect/state. |
-| `ElementImmune` | Enum | Applies or references the 'ElementImmune' effect/state. |
-| `ElementWeakness` | Enum | Applies or references the 'ElementWeakness' effect/state. |
-| `ElementalAttunement` | Block | Applies the 'ElementalAttunement' effect. |
-| `ElementalManaCostReduction` | Block | Applies the 'ElementalManaCostReduction' effect. |
-| `EliteFlatTint` | Array |  |
-| `EliteParticle` | Enum |  |
-| `EliteTint` | Array |  |
-| `Else` | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. |
+| [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum | Applies or references the 'ElementWeakness' effect/state. |
+| [`ElementalAttunement`](#elementalattunement) | Block | Applies the 'ElementalAttunement' effect. |
+| [`ElementalManaCostReduction`](#elementalmanacostreduction) | Block | Applies the 'ElementalManaCostReduction' effect. |
+| [`EliteFlatTint`](./Arrays.md#array-eliteflattint) | Array |  |
+| [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum |  |
+| [`EliteTint`](./Arrays.md#array-elitetint) | Array |  |
+| [`Else`](#else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. |
 | `Empath` | Number | Applies the 'Empath' effect. |
 | `EmptyMana` | Number | Applies the 'EmptyMana' effect. |
 | `EnemiesGetPickupsKnockedOut` | Number | Applies the 'EnemiesGetPickupsKnockedOut' effect. |
 | `EnergyStorm` | Number | Applies the 'EnergyStorm' effect. |
 | `EnrageOnDamage` | Number | Applies or references the 'EnrageOnDamage' effect/state. |
-| `EquipPermanentItem` | Enum | Applies the 'EquipPermanentItem' effect. |
-| `EquipRandomTemporaryItemFromPool` | Enum |  |
-| `EquipTemporaryItem` | Enum | Applies the 'EquipTemporaryItem' effect. |
+| [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies the 'EquipPermanentItem' effect. |
+| [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum |  |
+| [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum | Applies the 'EquipTemporaryItem' effect. |
 | `EquipmentPassiveMultiplierBonus` | Number | Applies the 'EquipmentPassiveMultiplierBonus' effect. |
 | `EquipmentSetBonusBonus` | Number | Applies the 'EquipmentSetBonusBonus' effect. |
 | `EraseSpawnCoins` | Number | Applies or references the 'EraseSpawnCoins' effect/state. |
-| `EscapeSequence` | Block | Applies the 'EscapeSequence' effect. |
-| `Eternal` | Block | Applies the 'Eternal' effect. |
+| [`EscapeSequence`](#escapesequence) | Block | Applies the 'EscapeSequence' effect. |
+| [`Eternal`](#eternal) | Block | Applies the 'Eternal' effect. |
 | `EventBounterHunterPassive` | Number | Applies or references the 'EventBounterHunterPassive' effect/state. |
-| `ExcludeFromEvents` | Enum | Applies or references the 'ExcludeFromEvents' effect/state. |
+| [`ExcludeFromEvents`](./Enums.md#enum-excludefromevents) | Enum | Applies or references the 'ExcludeFromEvents' effect/state. |
 | `ExhaustionRoundChange` | Number | Applies the 'ExhaustionRoundChange' effect. |
 | `ExpireOnSpawnerTurnEnd` | Number | Applies or references the 'ExpireOnSpawnerTurnEnd' effect/state. |
 | `ExplodeOverkilledEnemies` | Number | Applies the 'ExplodeOverkilledEnemies' effect. |
@@ -441,33 +459,33 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ExtraDispersedTurns` | Number | Applies or references the 'ExtraDispersedTurns' effect/state. |
 | `ExtraInjuryOnDeath` | Number | Applies the 'ExtraInjuryOnDeath' effect. |
 | `ExtraMovePoints` | Number | Applies the 'ExtraMovePoints' effect. |
-| `ExtraStatusWhenDealingDamage` | Block | Applies or references the 'ExtraStatusWhenDealingDamage' effect/state. |
+| [`ExtraStatusWhenDealingDamage`](#extrastatuswhendealingdamage) | Block | Applies or references the 'ExtraStatusWhenDealingDamage' effect/state. |
 | `ExtraTrinketUses` | Number | Applies or references the 'ExtraTrinketUses' effect/state. |
-| `ExtraTurnsPerTaggedUnit` | Enum | Applies or references the 'ExtraTurnsPerTaggedUnit' effect/state. |
+| [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum | Applies or references the 'ExtraTurnsPerTaggedUnit' effect/state. |
 | `ExtraWeaponAttacks` | Number | Applies the 'ExtraWeaponAttacks' effect. |
 | `FaceArmorPassiveMultiplierBonus` | Number | Applies or references the 'FaceArmorPassiveMultiplierBonus' effect/state. |
 | `FaceAway` | Number | Applies the 'FaceAway' effect. |
-| `FaceAwayLastDamage` | Block | Reaction: Forces the character to face away from the last damage source. |
+| [`FaceAwayLastDamage`](#faceawaylastdamage) | Block | Reaction: Forces the character to face away from the last damage source. |
 | `FaceLastDamage` | Number | Reaction: Forces the character to face towards the last damage source. |
 | `FaceShield` | Number | Applies or references the 'FaceShield' effect/state. |
 | `FadeInsteadOfDie` | Number | Applies or references the 'FadeInsteadOfDie' effect/state. |
-| `FamiliarBonusAbility` | Enum | Applies the 'FamiliarBonusAbility' effect. |
+| [`FamiliarBonusAbility`](./Enums.md#enum-familiarbonusability) | Enum | Applies the 'FamiliarBonusAbility' effect. |
 | `FamiliarSecondaryDamageImmunity` | Number | Applies the 'FamiliarSecondaryDamageImmunity' effect. |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. |
 | `Fights` | Number | Applies or references the 'Fights' effect/state. |
-| `FillMana` | Array | Applies the 'FillMana' effect. |
-| `FinalBossBeamQueue` | Block | Boss Logic: Attack queue for the final boss beam. |
-| `FinalBossBecomeTheChild` | Block | Boss Logic: Phase transition for the final boss. |
-| `FinalBossHitCountdownBoris` | Block | Boss Logic: Countdown trigger for Boris. |
-| `FinalBossHitCountdownExplosive` | Block | Boss Logic: Countdown trigger for explosives. |
-| `FinalBossHitCountdownHoly` | Block | Boss Logic: Countdown trigger for holy attacks. |
-| `FinalBossPupils` | Block | Boss Logic: Pupil state management. |
-| `FinalBossShield` | Enum | Applies or references the 'FinalBossShield' effect/state. |
-| `FinalBossShieldHealth` | Block | Boss Logic: Shield health management. |
-| `FinalBossSyncAnimations` | Block | Boss Logic: Synchronizes multi-part boss animations. |
-| `FindExtraItemFromPoolOnBattleEnd` | Enum | Applies or references the 'FindExtraItemFromPoolOnBattleEnd' effect/state. |
-| `FindItem` | Enum | Applies or references the 'FindItem' effect/state. |
-| `FindItemFromPool` | Enum | Generates an item drop from the specified loot pool. |
+| [`FillMana`](./Arrays.md#array-fillmana) | Array | Applies the 'FillMana' effect. |
+| [`FinalBossBeamQueue`](#finalbossbeamqueue) | Block | Boss Logic: Attack queue for the final boss beam. |
+| [`FinalBossBecomeTheChild`](#finalbossbecomethechild) | Block | Boss Logic: Phase transition for the final boss. |
+| [`FinalBossHitCountdownBoris`](#finalbosshitcountdownboris) | Block | Boss Logic: Countdown trigger for Boris. |
+| [`FinalBossHitCountdownExplosive`](#finalbosshitcountdownexplosive) | Block | Boss Logic: Countdown trigger for explosives. |
+| [`FinalBossHitCountdownHoly`](#finalbosshitcountdownholy) | Block | Boss Logic: Countdown trigger for holy attacks. |
+| [`FinalBossPupils`](#finalbosspupils) | Block | Boss Logic: Pupil state management. |
+| [`FinalBossShield`](./Enums.md#enum-finalbossshield) | Enum | Applies or references the 'FinalBossShield' effect/state. |
+| [`FinalBossShieldHealth`](#finalbossshieldhealth) | Block | Boss Logic: Shield health management. |
+| [`FinalBossSyncAnimations`](#finalbosssyncanimations) | Block | Boss Logic: Synchronizes multi-part boss animations. |
+| [`FindExtraItemFromPoolOnBattleEnd`](./Enums.md#enum-findextraitemfrompoolonbattleend) | Enum | Applies or references the 'FindExtraItemFromPoolOnBattleEnd' effect/state. |
+| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. |
 | `FistOfFateUniqueEnemyTracker` | Number | Applies or references the 'FistOfFateUniqueEnemyTracker' effect/state. |
 | `Flammable` | Number | Applies or references the 'Flammable' effect/state. |
 | `FlatHealWhenDealDamage` | Number |  |
@@ -477,31 +495,31 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `FlowerPowerAuraBrace` | Number | Applies the 'FlowerPowerAuraBrace' effect. |
 | `FlowerPowerAuraStrength` | Number | Applies the 'FlowerPowerAuraStrength' effect. |
 | `FlowersOnEndTurn` | Number | Applies or references the 'FlowersOnEndTurn' effect/state. |
-| `FlushmasterCelebration` | Enum | Applies or references the 'FlushmasterCelebration' effect/state. |
+| [`FlushmasterCelebration`](./Enums.md#enum-flushmastercelebration) | Enum | Applies or references the 'FlushmasterCelebration' effect/state. |
 | `FlyDamageIncrease` | Number | Applies the 'FlyDamageIncrease' effect. |
 | `Flying` | Number | Applies or references the 'Flying' effect/state. |
-| `FollowUp` | Enum | Applies the 'FollowUp' effect. |
+| [`FollowUp`](./Enums.md#enum-followup) | Enum | Applies the 'FollowUp' effect. |
 | `ForceAttack` | Number | Forces the character to execute an immediate attack. |
 | `ForceDodgeEverything` | Number | Applies or references the 'ForceDodgeEverything' effect/state. |
-| `ForceSpecificInjury` | Enum | Applies the 'ForceSpecificInjury' effect. |
-| `ForceUseAbility` | Enum | Applies or references the 'ForceUseAbility' effect/state. |
-| `ForceUseAbilityOnTarget` | Block | Applies or references the 'ForceUseAbilityOnTarget' effect/state. |
-| `FormChange` | Block | Transforms the character into a different state or form (e.g., Rage, HasCat). |
-| `FormChangeDuringWeatherElement` | Block | Logic: Changes form automatically during specific weather conditions. |
-| `FormChangeHealthThreshold` | Block | Logic: Changes form when health crosses a threshold. |
-| `FormChangeOffMap` | Block | Logic: Changes form when pushed off the map. |
-| `FormChangeOnElementInfluence` | Block | Logic: Changes form when affected by an element. |
-| `FormChangeWhenBuddyDies` | Enum | Applies or references the 'FormChangeWhenBuddyDies' effect/state. |
-| `FormChangeWhileHasStatus` | Block | Logic: Changes form automatically while possessing a specific status. |
-| `FormChangeWhilePrimingAbility` | Block | Logic: Changes form while preparing/priming a specific ability. |
-| `FormChanger` | Block | AI Role: Designates the character as one that frequently shifts forms. |
+| [`ForceSpecificInjury`](./Enums.md#enum-forcespecificinjury) | Enum | Applies the 'ForceSpecificInjury' effect. |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. |
+| [`ForceUseAbilityOnTarget`](#forceuseabilityontarget) | Block | Applies or references the 'ForceUseAbilityOnTarget' effect/state. |
+| [`FormChange`](#formchange) | Block | Transforms the character into a different state or form (e.g., Rage, HasCat). |
+| [`FormChangeDuringWeatherElement`](#formchangeduringweatherelement) | Block | Logic: Changes form automatically during specific weather conditions. |
+| [`FormChangeHealthThreshold`](#formchangehealththreshold) | Block | Logic: Changes form when health crosses a threshold. |
+| [`FormChangeOffMap`](#formchangeoffmap) | Block | Logic: Changes form when pushed off the map. |
+| [`FormChangeOnElementInfluence`](#formchangeonelementinfluence) | Block | Logic: Changes form when affected by an element. |
+| [`FormChangeWhenBuddyDies`](./Enums.md#enum-formchangewhenbuddydies) | Enum | Applies or references the 'FormChangeWhenBuddyDies' effect/state. |
+| [`FormChangeWhileHasStatus`](#formchangewhilehasstatus) | Block | Logic: Changes form automatically while possessing a specific status. |
+| [`FormChangeWhilePrimingAbility`](#formchangewhileprimingability) | Block | Logic: Changes form while preparing/priming a specific ability. |
+| [`FormChanger`](#formchanger) | Block | AI Role: Designates the character as one that frequently shifts forms. |
 | `Fragile` | Number | Applies or references the 'Fragile' effect/state. |
-| `FragileDuringElement` | Enum | Applies or references the 'FragileDuringElement' effect/state. |
+| [`FragileDuringElement`](./Enums.md#enum-fragileduringelement) | Enum | Applies or references the 'FragileDuringElement' effect/state. |
 | `FrankBolts` | Number | Applies or references the 'FrankBolts' effect/state. |
 | `FreeFirstCast` | Number | Applies or references the 'FreeFirstCast' effect/state. |
 | `FreeFirstCastAndAfterSpendMana` | Number | Applies or references the 'FreeFirstCastAndAfterSpendMana' effect/state. |
 | `FreeFirstCastEachMatch` | Number | Applies or references the 'FreeFirstCastEachMatch' effect/state. |
-| `FreePathfindElement` | Enum | Applies the 'FreePathfindElement' effect. |
+| [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum | Applies the 'FreePathfindElement' effect. |
 | `FreeSpellsAtFullMana` | Number | Applies the 'FreeSpellsAtFullMana' effect. |
 | `Freeze` | Number | Applies the 'Freeze' effect. |
 | `FreezePiercing` | Number | Applies the 'FreezePiercing' effect. |
@@ -514,11 +532,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `FullHealthCritChance` | Number | Applies the 'FullHealthCritChance' effect. |
 | `FullHealthManaRegen` | Number | Applies the 'FullHealthManaRegen' effect. |
 | `FullPower` | Number | Applies the 'FullPower' effect. |
-| `FurnitureStats` | Block | Applies the 'FurnitureStats' effect. |
+| [`FurnitureStats`](#furniturestats) | Block | Applies the 'FurnitureStats' effect. |
 | `GainCoins` | Number | Applies or references the 'GainCoins' effect/state. |
-| `GainCoinsRange` | Block | Grants the player a randomized amount of coins within a min/max range. |
-| `GainDisorder` | Enum | Applies or references the 'GainDisorder' effect/state. |
-| `GainDisorderFromPool` | Block | Logic: Applies a negative mutation/disorder from a specific pool. |
+| [`GainCoinsRange`](#gaincoinsrange) | Block | Grants the player a randomized amount of coins within a min/max range. |
+| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. |
+| [`GainDisorderFromPool`](#gaindisorderfrompool) | Block | Logic: Applies a negative mutation/disorder from a specific pool. |
 | `GainExtraShield` | Number | Applies the 'GainExtraShield' effect. |
 | `GainManaWhenAnythingDies` | Number |  |
 | `GasCanBehavior` | Number | Applies or references the 'GasCanBehavior' effect/state. |
@@ -526,99 +544,99 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `GeminiTwin` | Number | Applies or references the 'GeminiTwin' effect/state. |
 | `GlobalFamiliarDamageBoost` | Number |  |
 | `GlobalFamiliarMoveBoost` | Number |  |
-| `GlobalFlowerTrapperAura` | Block |  |
+| [`GlobalFlowerTrapperAura`](#globalflowertrapperaura) | Block |  |
 | `GlobalManaBurnAura` | Number |  |
 | `GlobalManaDrainAura` | Number | Applies or references the 'GlobalManaDrainAura' effect/state. |
-| `GlobalMeleeRevengeDamage` | Block | Applies or references the 'GlobalMeleeRevengeDamage' effect/state. |
+| [`GlobalMeleeRevengeDamage`](#globalmeleerevengedamage) | Block | Applies or references the 'GlobalMeleeRevengeDamage' effect/state. |
 | `GoopImmunity` | Number | Applies or references the 'GoopImmunity' effect/state. |
 | `GoopWalk` | Number | Applies or references the 'GoopWalk' effect/state. |
 | `GrassTileHealing` | Number | Applies the 'GrassTileHealing' effect. |
-| `GravityWell` | Block | Applies the 'GravityWell' effect. |
-| `GroundFlopper` | Enum | Applies or references the 'GroundFlopper' effect/state. |
+| [`GravityWell`](#gravitywell) | Block | Applies the 'GravityWell' effect. |
+| [`GroundFlopper`](./Enums.md#enum-groundflopper) | Enum | Applies or references the 'GroundFlopper' effect/state. |
 | `GuillotinaDeathHead` | Number | Applies or references the 'GuillotinaDeathHead' effect/state. |
-| `HPAltStates` | Block | Visual: Alternative sprite states based on current health. |
+| [`HPAltStates`](#hpaltstates) | Block | Visual: Alternative sprite states based on current health. |
 | `HPGainBlock` | Number | Applies or references the 'HPGainBlock' effect/state. |
-| `HarpoonTrapPassive` | Enum | Applies or references the 'HarpoonTrapPassive' effect/state. |
+| [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | Applies or references the 'HarpoonTrapPassive' effect/state. |
 | `HeadArmorPassiveMultiplierBonus` | Number | Applies or references the 'HeadArmorPassiveMultiplierBonus' effect/state. |
 | `HealAndOverhealToShield` | Number | Applies the 'HealAndOverhealToShield' effect. |
 | `HealAtStart` | Number | Applies the 'HealAtStart' effect. |
 | `HealDamagesEnemies` | Number | Applies the 'HealDamagesEnemies' effect. |
-| `HealNeighborsEachTurn` | Block | Passive: Restores health to adjacent allies at the start of the turn. |
+| [`HealNeighborsEachTurn`](#healneighborseachturn) | Block | Passive: Restores health to adjacent allies at the start of the turn. |
 | `HealingAura` | Number | Applies the 'HealingAura' effect. |
 | `HealsAlsoRegenMana` | Number | Applies the 'HealsAlsoRegenMana' effect. |
 | `HealsCanRevive` | Number | Applies the 'HealsCanRevive' effect. |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. |
-| `HealthMultiplier` | Enum |  |
-| `HealthPickup` | Block | Pickup Logic: Defines what happens when a health item is collected. |
+| [`HealthMultiplier`](./Enums.md#enum-healthmultiplier) | Enum |  |
+| [`HealthPickup`](#healthpickup) | Block | Pickup Logic: Defines what happens when a health item is collected. |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. |
 | `Hex` | Number | Applies or references the 'Hex' effect/state. |
 | `HiddenDoomed` | Number | Applies or references the 'HiddenDoomed' effect/state. |
-| `HideEquipment` | Enum | Applies or references the 'HideEquipment' effect/state. |
+| [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. |
 | `HideSomeHudStuff` | Number | Applies or references the 'HideSomeHudStuff' effect/state. |
-| `HitlerExecute` | Block | Boss Logic: Specific execution or ultimate attack state. |
+| [`HitlerExecute`](#hitlerexecute) | Block | Boss Logic: Specific execution or ultimate attack state. |
 | `HolyDamageMultiplierBonus` | Number | Applies the 'HolyDamageMultiplierBonus' effect. |
 | `HolyShieldTransferToSpawner` | Number | Applies the 'HolyShieldTransferToSpawner' effect. |
-| `HolyShieldTransferToTaggedMinions` | Enum | Applies the 'HolyShieldTransferToTaggedMinions' effect. |
+| [`HolyShieldTransferToTaggedMinions`](./Enums.md#enum-holyshieldtransfertotaggedminions) | Enum | Applies the 'HolyShieldTransferToTaggedMinions' effect. |
 | `HouseFoodRequirementMultiplier` | Number |  |
 | `Hypomania` | Number | Applies the 'Hypomania' effect. |
 | `IceBlockBehavior` | Number | Applies or references the 'IceBlockBehavior' effect/state. |
 | `IgnoreTiles` | Number |  |
 | `IllusionTint` | Number | Applies or references the 'IllusionTint' effect/state. |
-| `ImmediateAbilityReaction` | Enum | Reaction: Executes an ability instantly, interrupting the current sequence. |
-| `ImmediateUseAbility` | Enum | Applies or references the 'ImmediateUseAbility' effect/state. |
+| [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Enum | Reaction: Executes an ability instantly, interrupting the current sequence. |
+| [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. |
 | `Immobile` | Number | Applies the 'Immobile' effect. |
 | `ImmobilePassive` | Number | Applies or references the 'ImmobilePassive' effect/state. |
 | `ImmortalLeeches` | Number | Applies the 'ImmortalLeeches' effect. |
-| `IncAuxCounterClamped` | Block | Increments a generic auxiliary counter on the character, capped by a maximum value. |
+| [`IncAuxCounterClamped`](#incauxcounterclamped) | Block | Increments a generic auxiliary counter on the character, capped by a maximum value. |
 | `IncreaseExplosionDamage` | Number | Applies the 'IncreaseExplosionDamage' effect. |
 | `IncreaseExplosionSize` | Number | Applies or references the 'IncreaseExplosionSize' effect/state. |
 | `IncreaseHealingSpellRange` | Number | Applies the 'IncreaseHealingSpellRange' effect. |
 | `IncreaseItemUsesOnEquip` | Number | Applies the 'IncreaseItemUsesOnEquip' effect. |
 | `IncreaseSpellRange` | Number | Applies or references the 'IncreaseSpellRange' effect/state. |
 | `Infested` | Number | Applies or references the 'Infested' effect/state. |
-| `InfiniteRebirth` | Block | Applies the 'InfiniteRebirth' effect. |
+| [`InfiniteRebirth`](#infiniterebirth) | Block | Applies the 'InfiniteRebirth' effect. |
 | `InheritSpawnerStats` | Number | Applies or references the 'InheritSpawnerStats' effect/state. |
 | `InjuryImmunity` | Number | Applies or references the 'InjuryImmunity' effect/state. |
-| `InnateElement` | Enum | Applies the 'InnateElement' effect. |
+| [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. |
 | `InsertIntoBackgroundPlaceholder` | Number | Applies or references the 'InsertIntoBackgroundPlaceholder' effect/state. |
-| `Instakill` | Array |  |
+| [`Instakill`](./Arrays.md#array-instakill) | Array |  |
 | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. |
 | `InterchangeDisabler` | Number | Applies or references the 'InterchangeDisabler' effect/state. |
 | `InvertBrainFaction` | Number | Applies the 'InvertBrainFaction' effect. |
-| `ItemAuxTransform` | Block | Applies or references the 'ItemAuxTransform' effect/state. |
+| [`ItemAuxTransform`](#itemauxtransform) | Block | Applies or references the 'ItemAuxTransform' effect/state. |
 | `JesterLevelUpRerolls` | Number | Applies or references the 'JesterLevelUpRerolls' effect/state. |
-| `JohnnyNeedsWashing` | Block | Character Form: Behavior and stats for the 'JohnnyNeedsWashing' state. |
-| `JohnnyWasher` | Enum | Applies or references the 'JohnnyWasher' effect/state. |
+| [`JohnnyNeedsWashing`](#johnnyneedswashing) | Block | Character Form: Behavior and stats for the 'JohnnyNeedsWashing' state. |
+| [`JohnnyWasher`](./Enums.md#enum-johnnywasher) | Enum | Applies or references the 'JohnnyWasher' effect/state. |
 | `KaijuKnockbackImmune` | Number | Applies or references the 'KaijuKnockbackImmune' effect/state. |
-| `KaijuWinCon` | Enum | Applies or references the 'KaijuWinCon' effect/state. |
+| [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum | Applies or references the 'KaijuWinCon' effect/state. |
 | `KillsHeal` | Number | Applies the 'KillsHeal' effect. |
-| `KillsToMeat` | Enum | Applies or references the 'KillsToMeat' effect/state. |
+| [`KillsToMeat`](./Enums.md#enum-killstomeat) | Enum | Applies or references the 'KillsToMeat' effect/state. |
 | `KineticSpikes` | Number | Applies or references the 'KineticSpikes' effect/state. |
 | `KnockOutCoin` | Number | Forces the target to drop coins. |
-| `KnockUpAndAway` | Block | Displaces the target vertically and horizontally away from the source. |
+| [`KnockUpAndAway`](#knockupandaway) | Block | Displaces the target vertically and horizontally away from the source. |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. |
-| `KnockbackIfCrit` | Block | Applies or references the 'KnockbackIfCrit' effect/state. |
+| [`KnockbackIfCrit`](#knockbackifcrit) | Block | Applies or references the 'KnockbackIfCrit' effect/state. |
 | `KnockbackImmunity` | Number | Applies the 'KnockbackImmunity' effect. |
-| `LateBloomer` | Block | Applies the 'LateBloomer' effect. |
-| `LeaveBehindOnceEachMove` | Enum | Applies or references the 'LeaveBehindOnceEachMove' effect/state. |
+| [`LateBloomer`](#latebloomer) | Block | Applies the 'LateBloomer' effect. |
+| [`LeaveBehindOnceEachMove`](./Enums.md#enum-leavebehindonceeachmove) | Enum | Applies or references the 'LeaveBehindOnceEachMove' effect/state. |
 | `LeaveBehindRockOnKnockback` | Number | Applies the 'LeaveBehindRockOnKnockback' effect. |
 | `Leech` | Number | Applies the 'Leech' effect. |
 | `LeechPercent` | Number | Applies the 'LeechPercent' effect. |
 | `Leeches` | Number |  |
-| `LegacySpawnSavedCatIfExists` | Enum | Applies or references the 'LegacySpawnSavedCatIfExists' effect/state. |
-| `LevelUpClassOverride` | Enum | Applies the 'LevelUpClassOverride' effect. |
+| [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum | Applies or references the 'LegacySpawnSavedCatIfExists' effect/state. |
+| [`LevelUpClassOverride`](./Enums.md#enum-levelupclassoverride) | Enum | Applies the 'LevelUpClassOverride' effect. |
 | `Lifesteal` | Number | Applies or references the 'Lifesteal' effect/state. |
 | `LightningAspectCharge` | Number | Applies the 'LightningAspectCharge' effect. |
-| `LightningRod` | Block | Applies the 'LightningRod' effect. |
+| [`LightningRod`](#lightningrod) | Block | Applies the 'LightningRod' effect. |
 | `LimitDamage` | Number | Applies or references the 'LimitDamage' effect/state. |
 | `LimitHeal` | Number | Applies or references the 'LimitHeal' effect/state. |
 | `LimitSelfKnockbackDamage` | Number | Applies the 'LimitSelfKnockbackDamage' effect. |
-| `LimitedTileTrail` | Enum | Applies the 'LimitedTileTrail' effect. |
-| `LineOfSightTrueSightAura` | Enum | Applies the 'LineOfSightTrueSightAura' effect. |
+| [`LimitedTileTrail`](./Enums.md#enum-limitedtiletrail) | Enum | Applies the 'LimitedTileTrail' effect. |
+| [`LineOfSightTrueSightAura`](./Enums.md#enum-lineofsighttruesightaura) | Enum | Applies the 'LineOfSightTrueSightAura' effect. |
 | `LobbedHook` | Number | Applies the 'LobbedHook' effect. |
-| `LockOrientationFaceTile` | Array | Applies or references the 'LockOrientationFaceTile' effect/state. |
-| `LoopingSoundWhileAlive` | Enum | Applies or references the 'LoopingSoundWhileAlive' effect/state. |
-| `LowHealthAllyDodgeChanceAura` | Block | Applies the 'LowHealthAllyDodgeChanceAura' effect. |
+| [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | Applies or references the 'LockOrientationFaceTile' effect/state. |
+| [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum | Applies or references the 'LoopingSoundWhileAlive' effect/state. |
+| [`LowHealthAllyDodgeChanceAura`](#lowhealthallydodgechanceaura) | Block | Applies the 'LowHealthAllyDodgeChanceAura' effect. |
 | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. |
 | `Madness` | Number | Applies the Madness debuff/status effect. |
 | `MagicDamageImmune` | Number | Applies or references the 'MagicDamageImmune' effect/state. |
@@ -628,59 +646,59 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MakeSpellsRequireCharge` | Number | Applies the 'MakeSpellsRequireCharge' effect. |
 | `MamaCatAnimations` | Number | Applies or references the 'MamaCatAnimations' effect/state. |
 | `ManaCostReduction` | Number | Applies or references the 'ManaCostReduction' effect/state. |
-| `ManaCostReductionTagged` | Block | Applies the 'ManaCostReductionTagged' effect. |
-| `ManaGain` | Equation | Applies or references the 'ManaGain' effect/state. |
-| `ManaGainRange` | Block | Applies or references the 'ManaGainRange' effect/state. |
+| [`ManaCostReductionTagged`](#manacostreductiontagged) | Block | Applies the 'ManaCostReductionTagged' effect. |
+| [`ManaGain`](./Math_Equations.md) | Equation | Applies or references the 'ManaGain' effect/state. |
+| [`ManaGainRange`](#managainrange) | Block | Applies or references the 'ManaGainRange' effect/state. |
 | `ManaLeeches` | Number | Applies or references the 'ManaLeeches' effect/state. |
-| `ManaPickup` | Block | Pickup Logic: Defines what happens when a mana item is collected. |
+| [`ManaPickup`](#manapickup) | Block | Pickup Logic: Defines what happens when a mana item is collected. |
 | `ManaRegenMultiplierIfManaEmpty` | Number | Applies the 'ManaRegenMultiplierIfManaEmpty' effect. |
-| `ManglerMonsterPassive` | Enum | Applies or references the 'ManglerMonsterPassive' effect/state. |
+| [`ManglerMonsterPassive`](./Enums.md#enum-manglermonsterpassive) | Enum | Applies or references the 'ManglerMonsterPassive' effect/state. |
 | `Marked` | Number | Applies or references the 'Marked' effect/state. |
 | `MaxAccuracy` | Number | Applies the 'MaxAccuracy' effect. |
 | `MaxStartingMana` | Number | Applies the 'MaxStartingMana' effect. |
-| `MegaDinoDropController` | Block | Boss Logic: Manages loot drops for the Mega Dino. |
+| [`MegaDinoDropController`](#megadinodropcontroller) | Block | Boss Logic: Manages loot drops for the Mega Dino. |
 | `MegaMinions` | Number | Applies the 'MegaMinions' effect. |
-| `MeleeRevengeDamage` | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. |
+| [`MeleeRevengeDamage`](#meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. |
 | `Metal` | Number | Applies or references the 'Metal' effect/state. |
 | `MetalDetector` | Number | Applies the 'MetalDetector' effect. |
 | `MimicSpawnerAttacks` | Number | Applies or references the 'MimicSpawnerAttacks' effect/state. |
-| `MiniVolcanoReaction` | Enum | Applies or references the 'MiniVolcanoReaction' effect/state. |
+| [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | Applies or references the 'MiniVolcanoReaction' effect/state. |
 | `MinimumKnockbackFromAllDamage` | Number | Applies or references the 'MinimumKnockbackFromAllDamage' effect/state. |
 | `MinimumKnockbackFromPhysicalAttacks` | Number | Applies or references the 'MinimumKnockbackFromPhysicalAttacks' effect/state. |
 | `MinimumTech` | Number | Applies the 'MinimumTech' effect. |
 | `MissChance` | Number | Applies the 'MissChance' effect. |
 | `ModelingClayPassive` | Number | Applies or references the 'ModelingClayPassive' effect/state. |
-| `ModifyAbility` | Block | Applies or references the 'ModifyAbility' effect/state. |
-| `ModularPickup` | Block | Pickup Logic: Defines what happens when a modular item is collected. |
-| `MonkCatReactionAbilities` | Block | Reaction: Specific counter-attack or dodge abilities used by the Monk class. |
-| `MoonHeadCrackedVisual` | Enum | Applies or references the 'MoonHeadCrackedVisual' effect/state. |
+| [`ModifyAbility`](#modifyability) | Block | Applies or references the 'ModifyAbility' effect/state. |
+| [`ModularPickup`](#modularpickup) | Block | Pickup Logic: Defines what happens when a modular item is collected. |
+| [`MonkCatReactionAbilities`](#monkcatreactionabilities) | Block | Reaction: Specific counter-attack or dodge abilities used by the Monk class. |
+| [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum | Applies or references the 'MoonHeadCrackedVisual' effect/state. |
 | `MoonHeadFinisherEnabler` | Number | Applies or references the 'MoonHeadFinisherEnabler' effect/state. |
-| `MotherGrowController` | Block | Boss Logic: Manages the growth phases of the Mother boss. |
-| `MotherTumorPassive` | Block | Boss Logic: Passive effects applied to the Mother's tumors. |
-| `MotherTumorSpawnInCapture` | Block | Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning. |
-| `Mount` | Block | Character Form: Behavior and stats for the 'Mount' state. |
-| `MoveAfterAnyAttemptedAttack` | Block | AI Movement: Forces a move action immediately after attacking, even if it missed. |
-| `MoveAndUseAbilityEachTurnBeginIfPossible` | Enum | Applies the 'MoveAndUseAbilityEachTurnBeginIfPossible' effect. |
-| `MoveAwayFromDamageSource` | Enum |  |
-| `MoveAwayWhenEnemyAdjacent` | Block | AI Movement: Moves away if an enemy enters an adjacent tile. |
+| [`MotherGrowController`](#mothergrowcontroller) | Block | Boss Logic: Manages the growth phases of the Mother boss. |
+| [`MotherTumorPassive`](#mothertumorpassive) | Block | Boss Logic: Passive effects applied to the Mother's tumors. |
+| [`MotherTumorSpawnInCapture`](#mothertumorspawnincapture) | Block | Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning. |
+| [`Mount`](#mount) | Block | Character Form: Behavior and stats for the 'Mount' state. |
+| [`MoveAfterAnyAttemptedAttack`](#moveafteranyattemptedattack) | Block | AI Movement: Forces a move action immediately after attacking, even if it missed. |
+| [`MoveAndUseAbilityEachTurnBeginIfPossible`](./Enums.md#enum-moveanduseabilityeachturnbeginifpossible) | Enum | Applies the 'MoveAndUseAbilityEachTurnBeginIfPossible' effect. |
+| [`MoveAwayFromDamageSource`](./Enums.md#enum-moveawayfromdamagesource) | Enum |  |
+| [`MoveAwayWhenEnemyAdjacent`](#moveawaywhenenemyadjacent) | Block | AI Movement: Moves away if an enemy enters an adjacent tile. |
 | `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. |
 | `MoveRandomly` | Number | Applies the 'MoveRandomly' effect. |
-| `MoveSpeedMultiplier` | Enum | Applies or references the 'MoveSpeedMultiplier' effect/state. |
-| `MoveTowardsDamageSource` | Enum | AI Movement: Closes distance on the last source of damage. |
-| `MoveTowardsKillers` | Enum | AI Movement: Seeks out entities that have recently killed an ally. |
-| `MoveWhenDamaged` | Enum | AI Movement: Forces a reposition when taking damage. |
-| `MovementReaction` | Block | Reaction: Triggers an effect or ability when forced to move. |
+| [`MoveSpeedMultiplier`](./Enums.md#enum-movespeedmultiplier) | Enum | Applies or references the 'MoveSpeedMultiplier' effect/state. |
+| [`MoveTowardsDamageSource`](./Enums.md#enum-movetowardsdamagesource) | Enum | AI Movement: Closes distance on the last source of damage. |
+| [`MoveTowardsKillers`](./Enums.md#enum-movetowardskillers) | Enum | AI Movement: Seeks out entities that have recently killed an ally. |
+| [`MoveWhenDamaged`](./Enums.md#enum-movewhendamaged) | Enum | AI Movement: Forces a reposition when taking damage. |
+| [`MovementReaction`](#movementreaction) | Block | Reaction: Triggers an effect or ability when forced to move. |
 | `MovementUp` | Number | Applies the 'MovementUp' effect. |
-| `MultiSpawnOnDeath` | Block | Event Trigger: Spawns multiple entities upon death. |
+| [`MultiSpawnOnDeath`](#multispawnondeath) | Block | Event Trigger: Spawns multiple entities upon death. |
 | `MulticatHeads` | Number | Applies or references the 'MulticatHeads' effect/state. |
-| `MulticlassLevelUp` | Enum | Applies the 'MulticlassLevelUp' effect. |
+| [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum | Applies the 'MulticlassLevelUp' effect. |
 | `MultiplyCoinsOnBattleStart` | Number | Applies or references the 'MultiplyCoinsOnBattleStart' effect/state. |
 | `MultiplyReceivedHealing` | Number | Applies or references the 'MultiplyReceivedHealing' effect/state. |
 | `MutateAfterXTurns` | Number | Applies or references the 'MutateAfterXTurns' effect/state. |
-| `MutateViaAbility` | Enum | Applies or references the 'MutateViaAbility' effect/state. |
+| [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum | Applies or references the 'MutateViaAbility' effect/state. |
 | `MuteDemonicGlyphDisplay` | Number | Applies or references the 'MuteDemonicGlyphDisplay' effect/state. |
 | `NeckArmorPassiveMultiplierBonus` | Number | Applies or references the 'NeckArmorPassiveMultiplierBonus' effect/state. |
-| `NextBattleStatus` | Block | Applies the 'NextBattleStatus' effect. |
+| [`NextBattleStatus`](#nextbattlestatus) | Block | Applies the 'NextBattleStatus' effect. |
 | `NoHealthOnlyShield` | Number | Applies or references the 'NoHealthOnlyShield' effect/state. |
 | `NoHealthRegen` | Number | Applies or references the 'NoHealthRegen' effect/state. |
 | `NoManaRegen` | Number | Applies the 'NoManaRegen' effect. |
@@ -689,55 +707,55 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `NonStackingDivineShield` | Number | Applies the 'NonStackingDivineShield' effect. |
 | `NonStackingShield` | Number |  |
 | `NubbyTossPriority` | Number | Applies the 'NubbyTossPriority' effect. |
-| `NukeQuestFinalBossModifications` | Block | Special encounter trigger for the Nuke Quest ending. |
+| [`NukeQuestFinalBossModifications`](#nukequestfinalbossmodifications) | Block | Special encounter trigger for the Nuke Quest ending. |
 | `NumbingLeeches` | Number | Applies the 'NumbingLeeches' effect. |
-| `ObjectDetector` | Block | Applies or references the 'ObjectDetector' effect/state. |
-| `ObjectOnHitCharacter` | Enum | Spawns a specific character or entity upon impact. |
+| [`ObjectDetector`](#objectdetector) | Block | Applies or references the 'ObjectDetector' effect/state. |
+| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. |
 | `OneUseSpellDamageUp` | Number | Applies the 'OneUseSpellDamageUp' effect. |
 | `OrthogonalAIDangerZone` | Number | Applies or references the 'OrthogonalAIDangerZone' effect/state. |
 | `Ostracized` | Number | Applies or references the 'Ostracized' effect/state. |
 | `OverManaReducesManaCosts` | Number |  |
 | `OverhealGainsBothShield` | Number | Applies the 'OverhealGainsBothShield' effect. |
-| `OverrideBasicAttack` | Enum | Applies or references the 'OverrideBasicAttack' effect/state. |
+| [`OverrideBasicAttack`](./Enums.md#enum-overridebasicattack) | Enum | Applies or references the 'OverrideBasicAttack' effect/state. |
 | `OverrideChainKnockback` | Number | Applies or references the 'OverrideChainKnockback' effect/state. |
 | `OverrideChainKnockbackDamage` | Number | Applies the 'OverrideChainKnockbackDamage' effect. |
 | `OverrideMaxHealth` | Number | Applies or references the 'OverrideMaxHealth' effect/state. |
 | `OverrideMaxMana` | Number | Applies the 'OverrideMaxMana' effect. |
 | `OverridePalette` | Number | Applies the 'OverridePalette' effect. |
 | `PackHunting` | Number | Applies or references the 'PackHunting' effect/state. |
-| `Paranoia` | Enum | Applies the 'Paranoia' effect. |
+| [`Paranoia`](./Enums.md#enum-paranoia) | Enum | Applies the 'Paranoia' effect. |
 | `ParasitesArentCursed` | Number | Applies the 'ParasitesArentCursed' effect. |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. |
-| `PassiveAfterXKills` | Block | Applies or references the 'PassiveAfterXKills' effect/state. |
-| `PassiveAtFullHealth` | Block | Applies the 'PassiveAtFullHealth' effect. |
-| `PassiveAtHealthThreshold` | Block | Applies or references the 'PassiveAtHealthThreshold' effect/state. |
-| `PassiveAtInjuryThreshold` | Block | Applies the 'PassiveAtInjuryThreshold' effect. |
-| `PassiveAtStatThreshold` | Block | Applies the 'PassiveAtStatThreshold' effect. |
-| `PassiveGroup` | Block | Passive: A collection of passives grouped together for easier management. |
-| `PassiveIfAllArmorEmpty` | Block | Applies the 'PassiveIfAllArmorEmpty' effect. |
-| `PassiveIfEmptyFace` | Block | Applies the 'PassiveIfEmptyFace' effect. |
-| `PassiveIfEmptyHead` | Block | Applies the 'PassiveIfEmptyHead' effect. |
-| `PassiveIfEmptyNeck` | Block | Applies the 'PassiveIfEmptyNeck' effect. |
-| `PassiveIfStrAuxEquals` | Block | Applies or references the 'PassiveIfStrAuxEquals' effect/state. |
-| `PassiveIfWeaponIsUsable` | Block | Applies or references the 'PassiveIfWeaponIsUsable' effect/state. |
-| `PassiveLevelScaledStatus` | Block | Applies the 'PassiveLevelScaledStatus' effect. |
+| [`PassiveAfterXKills`](#passiveafterxkills) | Block | Applies or references the 'PassiveAfterXKills' effect/state. |
+| [`PassiveAtFullHealth`](#passiveatfullhealth) | Block | Applies the 'PassiveAtFullHealth' effect. |
+| [`PassiveAtHealthThreshold`](#passiveathealththreshold) | Block | Applies or references the 'PassiveAtHealthThreshold' effect/state. |
+| [`PassiveAtInjuryThreshold`](#passiveatinjurythreshold) | Block | Applies the 'PassiveAtInjuryThreshold' effect. |
+| [`PassiveAtStatThreshold`](#passiveatstatthreshold) | Block | Applies the 'PassiveAtStatThreshold' effect. |
+| [`PassiveGroup`](#passivegroup) | Block | Passive: A collection of passives grouped together for easier management. |
+| [`PassiveIfAllArmorEmpty`](#passiveifallarmorempty) | Block | Applies the 'PassiveIfAllArmorEmpty' effect. |
+| [`PassiveIfEmptyFace`](#passiveifemptyface) | Block | Applies the 'PassiveIfEmptyFace' effect. |
+| [`PassiveIfEmptyHead`](#passiveifemptyhead) | Block | Applies the 'PassiveIfEmptyHead' effect. |
+| [`PassiveIfEmptyNeck`](#passiveifemptyneck) | Block | Applies the 'PassiveIfEmptyNeck' effect. |
+| [`PassiveIfStrAuxEquals`](#passiveifstrauxequals) | Block | Applies or references the 'PassiveIfStrAuxEquals' effect/state. |
+| [`PassiveIfWeaponIsUsable`](#passiveifweaponisusable) | Block | Applies or references the 'PassiveIfWeaponIsUsable' effect/state. |
+| [`PassiveLevelScaledStatus`](#passivelevelscaledstatus) | Block | Applies the 'PassiveLevelScaledStatus' effect. |
 | `PassiveLevelUpAtCombatEnd` | Number | Applies the 'PassiveLevelUpAtCombatEnd' effect. |
-| `PassiveUntilCastSpell` | Block | Applies the 'PassiveUntilCastSpell' effect. |
-| `PassiveUntilGetKill` | Block | Applies the 'PassiveUntilGetKill' effect. |
-| `PassiveWhenAffectedByElement` | Block |  |
-| `PassiveWhenAtFullMana` | Block | State Trigger: Grants nested passives when at full mana. |
-| `PassiveWhenDead` | Block | State Trigger: Grants passives when this condition is met. |
-| `PassiveWhenOnTile` | Block | State Trigger: Grants passives when this condition is met. |
-| `PassiveWhenTheAlpha` | Block | State Trigger: Grants nested passives when the alpha. |
-| `PassiveWhileHasDurability` | Block | Applies or references the 'PassiveWhileHasDurability' effect/state. |
-| `PassiveWhileHasStatus` | Block | Passive: Activates only while the character has the specified status. |
-| `PassiveWhileInMonkMeleeStance` | Block | Applies the 'PassiveWhileInMonkMeleeStance' effect. |
-| `PassiveWhileInMonkRangedStance` | Block | Applies the 'PassiveWhileInMonkRangedStance' effect. |
-| `PassiveWhileNotHasStatus` | Block | Passive: Activates only while the character does NOT have the specified status. |
-| `PassiveWhileNotTakingTurn` | Block | Grants nested passives that are only active while it is NOT the character's turn. |
-| `PassiveWhilePreviewingMonkRangedStance` | Block | Applies the 'PassiveWhilePreviewingMonkRangedStance' effect. |
-| `PassiveWhileShielded` | Block | Applies or references the 'PassiveWhileShielded' effect/state. |
-| `PassiveWhileWearingMetal` | Block | Applies the 'PassiveWhileWearingMetal' effect. |
+| [`PassiveUntilCastSpell`](#passiveuntilcastspell) | Block | Applies the 'PassiveUntilCastSpell' effect. |
+| [`PassiveUntilGetKill`](#passiveuntilgetkill) | Block | Applies the 'PassiveUntilGetKill' effect. |
+| [`PassiveWhenAffectedByElement`](#passivewhenaffectedbyelement) | Block |  |
+| [`PassiveWhenAtFullMana`](#passivewhenatfullmana) | Block | State Trigger: Grants nested passives when at full mana. |
+| [`PassiveWhenDead`](#passivewhendead) | Block | State Trigger: Grants passives when this condition is met. |
+| [`PassiveWhenOnTile`](#passivewhenontile) | Block | State Trigger: Grants passives when this condition is met. |
+| [`PassiveWhenTheAlpha`](#passivewhenthealpha) | Block | State Trigger: Grants nested passives when the alpha. |
+| [`PassiveWhileHasDurability`](#passivewhilehasdurability) | Block | Applies or references the 'PassiveWhileHasDurability' effect/state. |
+| [`PassiveWhileHasStatus`](#passivewhilehasstatus) | Block | Passive: Activates only while the character has the specified status. |
+| [`PassiveWhileInMonkMeleeStance`](#passivewhileinmonkmeleestance) | Block | Applies the 'PassiveWhileInMonkMeleeStance' effect. |
+| [`PassiveWhileInMonkRangedStance`](#passivewhileinmonkrangedstance) | Block | Applies the 'PassiveWhileInMonkRangedStance' effect. |
+| [`PassiveWhileNotHasStatus`](#passivewhilenothasstatus) | Block | Passive: Activates only while the character does NOT have the specified status. |
+| [`PassiveWhileNotTakingTurn`](#passivewhilenottakingturn) | Block | Grants nested passives that are only active while it is NOT the character's turn. |
+| [`PassiveWhilePreviewingMonkRangedStance`](#passivewhilepreviewingmonkrangedstance) | Block | Applies the 'PassiveWhilePreviewingMonkRangedStance' effect. |
+| [`PassiveWhileShielded`](#passivewhileshielded) | Block | Applies or references the 'PassiveWhileShielded' effect/state. |
+| [`PassiveWhileWearingMetal`](#passivewhilewearingmetal) | Block | Applies the 'PassiveWhileWearingMetal' effect. |
 | `PercentHeal` | Number | Applies the 'PercentHeal' effect. |
 | `PermanentCharisma` | Number | Applies or references the 'PermanentCharisma' effect/state. |
 | `PermanentConfusion` | Number | Applies or references the 'PermanentConfusion' effect/state. |
@@ -760,17 +778,17 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PoisonLace` | Number | Applies or references the 'PoisonLace' effect/state. |
 | `PoisonMultiplier` | Number | Applies the 'PoisonMultiplier' effect. |
 | `PoisonThorns` | Number | Applies or references the 'PoisonThorns' effect/state. |
-| `PoopWhenHit` | Enum |  |
+| [`PoopWhenHit`](./Enums.md#enum-poopwhenhit) | Enum |  |
 | `Possessed` | Number | Applies or references the 'Possessed' effect/state. |
 | `PreEmptiveCounterNextAttacks` | Number | Applies or references the 'PreEmptiveCounterNextAttacks' effect/state. |
-| `PreventSpecificInjury` | Enum | Applies or references the 'PreventSpecificInjury' effect/state. |
+| [`PreventSpecificInjury`](./Enums.md#enum-preventspecificinjury) | Enum | Applies or references the 'PreventSpecificInjury' effect/state. |
 | `PrioritizeAggroTarget` | Number | Applies or references the 'PrioritizeAggroTarget' effect/state. |
 | `PrioritizeFarAwayTargets` | Number | Applies or references the 'PrioritizeFarAwayTargets' effect/state. |
 | `PrioritizeHitDifferentTargets` | Number | Applies or references the 'PrioritizeHitDifferentTargets' effect/state. |
 | `PrioritizePlayerCats` | Number | Applies or references the 'PrioritizePlayerCats' effect/state. |
 | `PrioritizeWeakestEnemy` | Number | Applies or references the 'PrioritizeWeakestEnemy' effect/state. |
 | `ProbeCharmed` | Number | Applies or references the 'ProbeCharmed' effect/state. |
-| `ProtectTargetedAllies` | Block | AI Logic: Navigates to intercept attacks directed at allies. |
+| [`ProtectTargetedAllies`](#protecttargetedallies) | Block | AI Logic: Navigates to intercept attacks directed at allies. |
 | `PullSourceToKnockbackImmuneTarget` | Number | Applies the 'PullSourceToKnockbackImmuneTarget' effect. |
 | `PullSourceToTarget` | Number | Applies or references the 'PullSourceToTarget' effect/state. |
 | `Purge` | Number | Applies the 'Purge' effect. |
@@ -779,40 +797,40 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `RandomInjury` | Number | Applies the 'RandomInjury' effect. |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. |
 | `RandomMutation` | Number | Applies or references the 'RandomMutation' effect/state. |
-| `RandomPassivePool` | Block | Logic: Grants a random passive from the specified pool upon spawning. |
+| [`RandomPassivePool`](#randompassivepool) | Block | Logic: Grants a random passive from the specified pool upon spawning. |
 | `RandomPermanentStat` | Number | Applies or references the 'RandomPermanentStat' effect/state. |
-| `RandomPermanentStatsDistinct` | Block |  |
-| `RandomSeededStatModifier` | Array | Applies or references the 'RandomSeededStatModifier' effect/state. |
+| [`RandomPermanentStatsDistinct`](#randompermanentstatsdistinct) | Block |  |
+| [`RandomSeededStatModifier`](./Arrays.md#array-randomseededstatmodifier) | Array | Applies or references the 'RandomSeededStatModifier' effect/state. |
 | `RandomStatDown` | Number |  |
 | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. |
-| `RandomStatusFromPool` | Block | Selects and applies a random status effect from the provided nested block. |
-| `RandomTaggedMutation` | Enum | Applies or references the 'RandomTaggedMutation' effect/state. |
-| `RandomizeAIWeightsEachTurn` | Array | Applies or references the 'RandomizeAIWeightsEachTurn' effect/state. |
+| [`RandomStatusFromPool`](#randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. |
+| [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Applies or references the 'RandomTaggedMutation' effect/state. |
+| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | Applies or references the 'RandomizeAIWeightsEachTurn' effect/state. |
 | `RangeUp` | Number | Applies the 'RangeUp' effect. |
 | `RangedTrueShot` | Number | Applies or references the 'RangedTrueShot' effect/state. |
 | `RealTimePressure_OneUnit` | Number | Applies the 'RealTimePressure_OneUnit' effect. |
 | `Reanimate` | Number | Applies the 'Reanimate' effect. |
-| `ReceivedStatusReplacement` | Array | Applies the 'ReceivedStatusReplacement' effect. |
+| [`ReceivedStatusReplacement`](./Arrays.md#array-receivedstatusreplacement) | Array | Applies the 'ReceivedStatusReplacement' effect. |
 | `ReclaimItemOnBreak` | Number | Applies or references the 'ReclaimItemOnBreak' effect/state. |
-| `ReduceManaCost` | Number | Applies or references the 'ReduceManaCost' effect/state. |
+| `ReduceManaCost` | Number | Applies the 'ReduceManaCost' effect. |
 | `ReduceSpellCostsPerDisorder` | Number | Applies or references the 'ReduceSpellCostsPerDisorder' effect/state. |
 | `ReduceSpellCostsPerParasite` | Number | Applies or references the 'ReduceSpellCostsPerParasite' effect/state. |
 | `Reflect` | Number | Applies or references the 'Reflect' effect/state. |
 | `ReflectProjectiles` | Number | Passive: Reflects incoming projectiles back at the attacker. |
 | `RefreshActPoints` | Number | Applies the 'RefreshActPoints' effect. |
-| `RefreshEquipmentAbilityOnElement` | Block | Applies or references the 'RefreshEquipmentAbilityOnElement' effect/state. |
+| [`RefreshEquipmentAbilityOnElement`](#refreshequipmentabilityonelement) | Block | Applies or references the 'RefreshEquipmentAbilityOnElement' effect/state. |
 | `RefreshMoveOnWeaponConnect` | Number | Applies the 'RefreshMoveOnWeaponConnect' effect. |
 | `RefreshMovePoints` | Number | Applies the 'RefreshMovePoints' effect. |
 | `ReloadOnAllyCatDies` | Number | Applies or references the 'ReloadOnAllyCatDies' effect/state. |
 | `ReloadOnAllyDies` | Number | Applies or references the 'ReloadOnAllyDies' effect/state. |
 | `ReloadOnAnyDamage` | Number | Applies or references the 'ReloadOnAnyDamage' effect/state. |
 | `ReloadOnBackstab` | Number | Applies or references the 'ReloadOnBackstab' effect/state. |
-| `ReloadOnElementalDamageReceived` | Enum | Applies or references the 'ReloadOnElementalDamageReceived' effect/state. |
+| [`ReloadOnElementalDamageReceived`](./Enums.md#enum-reloadonelementaldamagereceived) | Enum | Applies or references the 'ReloadOnElementalDamageReceived' effect/state. |
 | `ReloadOnGainCoins` | Number | Applies or references the 'ReloadOnGainCoins' effect/state. |
 | `ReloadOnGainDivineShield` | Number | Applies or references the 'ReloadOnGainDivineShield' effect/state. |
 | `ReloadOnKill` | Number | Applies or references the 'ReloadOnKill' effect/state. |
 | `ReloadOnKillEnemy` | Number | Applies or references the 'ReloadOnKillEnemy' effect/state. |
-| `ReloadOnKillTagged` | Enum | Applies or references the 'ReloadOnKillTagged' effect/state. |
+| [`ReloadOnKillTagged`](./Enums.md#enum-reloadonkilltagged) | Enum | Applies or references the 'ReloadOnKillTagged' effect/state. |
 | `ReloadOnSpendMana` | Number | Applies or references the 'ReloadOnSpendMana' effect/state. |
 | `ReloadOnTotalDamageReceived` | Number | Applies or references the 'ReloadOnTotalDamageReceived' effect/state. |
 | `ReloadOnUseAbilityWithManaCost` | Number | Applies or references the 'ReloadOnUseAbilityWithManaCost' effect/state. |
@@ -820,68 +838,68 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `RemoteLeech` | Number | Applies or references the 'RemoteLeech' effect/state. |
 | `RemoveAmbientLightEffects` | Number | Applies or references the 'RemoveAmbientLightEffects' effect/state. |
 | `RemoveExtraDispersedTurn` | Number |  |
-| `RemoveGlobalModifiers` | Array | Applies or references the 'RemoveGlobalModifiers' effect/state. |
+| [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array | Applies or references the 'RemoveGlobalModifiers' effect/state. |
 | `RemoveLineOfSightRestrictions` | Number | Applies the 'RemoveLineOfSightRestrictions' effect. |
 | `RemoveOncePerFightRestriction` | Number | Applies the 'RemoveOncePerFightRestriction' effect. |
-| `RemoveStatus` | Enum | Applies or references the 'RemoveStatus' effect/state. |
-| `RemoveStatusStacks` | Block | Logic: Removes stacks of a specific status effect. |
+| [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. |
+| [`RemoveStatusStacks`](#removestatusstacks) | Block | Logic: Removes stacks of a specific status effect. |
 | `RepairAll` | Number | Applies or references the 'RepairAll' effect/state. |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. |
-| `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. |
+| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array | Applies or references the 'RepairWeapon' effect/state. |
 | `RepairWeaponCondition` | Number | Applies the 'RepairWeaponCondition' effect. |
-| `ReplaceBasicAttack` | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. |
-| `ReplaceBasicAttackWhenCastable` | Enum | Applies the 'ReplaceBasicAttackWhenCastable' effect. |
-| `ReplaceBasicAttackWhenDead` | Enum | Applies the 'ReplaceBasicAttackWhenDead' effect. |
-| `ReplaceBasicAttack_Mutation` | Enum |  |
-| `ReplaceBasicMove` | Enum | Applies or references the 'ReplaceBasicMove' effect/state. |
-| `ReplaceBasicMove_Mutation` | Enum |  |
-| `ReplaceBlankTilesOnBattleStart` | Enum | Applies or references the 'ReplaceBlankTilesOnBattleStart' effect/state. |
-| `ReplaceBrain` | Block | Applies the 'ReplaceBrain' effect. |
-| `ReplaceSpawnedObjects` | Array | Applies the 'ReplaceSpawnedObjects' effect. |
-| `ReplaceSpell` | Block | Replaces a spell in the character's hand/deck with a different one. |
-| `ReplaceSpellsWhenDead` | Enum | Applies the 'ReplaceSpellsWhenDead' effect. |
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. |
+| [`ReplaceBasicAttackWhenCastable`](./Enums.md#enum-replacebasicattackwhencastable) | Enum | Applies the 'ReplaceBasicAttackWhenCastable' effect. |
+| [`ReplaceBasicAttackWhenDead`](./Enums.md#enum-replacebasicattackwhendead) | Enum | Applies the 'ReplaceBasicAttackWhenDead' effect. |
+| [`ReplaceBasicAttack_Mutation`](./Enums.md#enum-replacebasicattack_mutation) | Enum |  |
+| [`ReplaceBasicMove`](./Enums.md#enum-replacebasicmove) | Enum | Applies or references the 'ReplaceBasicMove' effect/state. |
+| [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum |  |
+| [`ReplaceBlankTilesOnBattleStart`](./Enums.md#enum-replaceblanktilesonbattlestart) | Enum | Applies or references the 'ReplaceBlankTilesOnBattleStart' effect/state. |
+| [`ReplaceBrain`](#replacebrain) | Block | Applies the 'ReplaceBrain' effect. |
+| [`ReplaceSpawnedObjects`](./Arrays.md#array-replacespawnedobjects) | Array | Applies the 'ReplaceSpawnedObjects' effect. |
+| [`ReplaceSpell`](#replacespell) | Block | Replaces a spell in the character's hand/deck with a different one. |
+| [`ReplaceSpellsWhenDead`](./Enums.md#enum-replacespellswhendead) | Enum | Applies the 'ReplaceSpellsWhenDead' effect. |
 | `RerollItemsOnBattleEnd` | Number | Applies or references the 'RerollItemsOnBattleEnd' effect/state. |
-| `ReturnBoundItemOnBattleEnd` | Number | Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state. |
-| `RevengeDamage` | Block |  |
+| `ReturnBoundItemOnBattleEnd` | Number |  |
+| [`RevengeDamage`](#revengedamage) | Block |  |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. |
-| `ReviveNextRound` | Block | Queues the character to be resurrected at the start of the next combat round. |
+| [`ReviveNextRound`](#revivenextround) | Block | Queues the character to be resurrected at the start of the next combat round. |
 | `ReviveOnWin` | Number | Applies the 'ReviveOnWin' effect. |
 | `Robot` | Number | Character Form: Behavior and stats for the 'Robot' state. |
 | `RobotsInheritArmor` | Number | Applies the 'RobotsInheritArmor' effect. |
 | `RockDetector` | Number | Applies the 'RockDetector' effect. |
 | `RockyArmorPassive` | Number | Applies or references the 'RockyArmorPassive' effect/state. |
-| `RockyArmorSalvage` | Enum |  |
+| [`RockyArmorSalvage`](./Enums.md#enum-rockyarmorsalvage) | Enum |  |
 | `Rot` | Number | Applies or references the 'Rot' effect/state. |
 | `RunInXTurns` | Number | Applies or references the 'RunInXTurns' effect/state. |
 | `RunWhenKittensDead` | Number | Applies or references the 'RunWhenKittensDead' effect/state. |
-| `RunWhenLastPlayerCatIsCharmed` | Block | AI Logic: Flee logic when the player team is entirely crowd-controlled. |
+| [`RunWhenLastPlayerCatIsCharmed`](#runwhenlastplayercatischarmed) | Block | AI Logic: Flee logic when the player team is entirely crowd-controlled. |
 | `SafeDie` | Number | Applies or references the 'SafeDie' effect/state. |
 | `SafeDoomed` | Number | Applies or references the 'SafeDoomed' effect/state. |
 | `SafeExplosions` | Number | Applies the 'SafeExplosions' effect. |
-| `ScaldingOrbMoonBossOneShot` | Block | Applies or references the 'ScaldingOrbMoonBossOneShot' effect/state. |
-| `ScaledStatusAlliesOnSpendMana` | Block | Applies or references the 'ScaledStatusAlliesOnSpendMana' effect/state. |
-| `ScaledStatusOnBleedDamage` | Block | Applies the 'ScaledStatusOnBleedDamage' effect. |
-| `ScaledStatusOnHolyShieldBlock` | Block | Applies or references the 'ScaledStatusOnHolyShieldBlock' effect/state. |
-| `ScaledStatusOnLoseShield` | Block | Applies the 'ScaledStatusOnLoseShield' effect. |
-| `ScaledStatusOnOverHealed` | Block | Applies the 'ScaledStatusOnOverHealed' effect. |
-| `ScaledStatusOnOverMana` | Block | Applies the 'ScaledStatusOnOverMana' effect. |
-| `ScaledStatusOnSpendMana` | Block | Applies the 'ScaledStatusOnSpendMana' effect. |
-| `ScalingAttackAnimation` | Block | Visual: Animation scales based on damage output. |
+| [`ScaldingOrbMoonBossOneShot`](#scaldingorbmoonbossoneshot) | Block | Applies or references the 'ScaldingOrbMoonBossOneShot' effect/state. |
+| [`ScaledStatusAlliesOnSpendMana`](#scaledstatusalliesonspendmana) | Block | Applies or references the 'ScaledStatusAlliesOnSpendMana' effect/state. |
+| [`ScaledStatusOnBleedDamage`](#scaledstatusonbleeddamage) | Block | Applies the 'ScaledStatusOnBleedDamage' effect. |
+| [`ScaledStatusOnHolyShieldBlock`](#scaledstatusonholyshieldblock) | Block | Applies or references the 'ScaledStatusOnHolyShieldBlock' effect/state. |
+| [`ScaledStatusOnLoseShield`](#scaledstatusonloseshield) | Block | Applies the 'ScaledStatusOnLoseShield' effect. |
+| [`ScaledStatusOnOverHealed`](#scaledstatusonoverhealed) | Block | Applies the 'ScaledStatusOnOverHealed' effect. |
+| [`ScaledStatusOnOverMana`](#scaledstatusonovermana) | Block | Applies the 'ScaledStatusOnOverMana' effect. |
+| [`ScaledStatusOnSpendMana`](#scaledstatusonspendmana) | Block | Applies the 'ScaledStatusOnSpendMana' effect. |
+| [`ScalingAttackAnimation`](#scalingattackanimation) | Block | Visual: Animation scales based on damage output. |
 | `ScatterCoins` | Number |  |
 | `SchizoIllusionAIModifier` | Number | Applies or references the 'SchizoIllusionAIModifier' effect/state. |
 | `SchrodingerDisorder` | Number | Applies the 'SchrodingerDisorder' effect. |
 | `Scleroderma` | Number | Applies the 'Scleroderma' effect. |
 | `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. |
-| `SecurityBotProtect` | Block | AI Logic: Guarding behavior for Security Bot units. |
-| `SelfDamageWhenDealDamage` | Block | Applies the 'SelfDamageWhenDealDamage' effect. |
+| [`SecurityBotProtect`](#securitybotprotect) | Block | AI Logic: Guarding behavior for Security Bot units. |
+| [`SelfDamageWhenDealDamage`](#selfdamagewhendealdamage) | Block | Applies the 'SelfDamageWhenDealDamage' effect. |
 | `SelfStatusCarefulness` | Number | Applies or references the 'SelfStatusCarefulness' effect/state. |
-| `SetBrittleImmune` | Enum | Applies or references the 'SetBrittleImmune' effect/state. |
-| `SetDefaultFace` | Enum | Applies the 'SetDefaultFace' effect. |
-| `SetDefaultFacePassive` | Enum | Applies or references the 'SetDefaultFacePassive' effect/state. |
-| `SetFaction` | Enum | Applies or references the 'SetFaction' effect/state. |
-| `SetFragileImmune` | Enum | Applies or references the 'SetFragileImmune' effect/state. |
+| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | Enum | Applies or references the 'SetBrittleImmune' effect/state. |
+| [`SetDefaultFace`](./Enums.md#enum-setdefaultface) | Enum | Applies the 'SetDefaultFace' effect. |
+| [`SetDefaultFacePassive`](./Enums.md#enum-setdefaultfacepassive) | Enum | Applies or references the 'SetDefaultFacePassive' effect/state. |
+| [`SetFaction`](./Enums.md#enum-setfaction) | Enum | Applies or references the 'SetFaction' effect/state. |
+| [`SetFragileImmune`](./Enums.md#enum-setfragileimmune) | Enum | Applies or references the 'SetFragileImmune' effect/state. |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. |
-| `SetItemAux` | Block | Applies or references the 'SetItemAux' effect/state. |
+| [`SetItemAux`](#setitemaux) | Block | Applies or references the 'SetItemAux' effect/state. |
 | `SetSpellCosts` | Number | Applies the 'SetSpellCosts' effect. |
 | `ShareHealthRegen` | Number | Applies the 'ShareHealthRegen' effect. |
 | `SharePickups` | Number | Applies the 'SharePickups' effect. |
@@ -889,167 +907,167 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SharkySmellsBlood` | Number | Applies or references the 'SharkySmellsBlood' effect/state. |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. |
 | `ShoulderCheck` | Number | Applies the 'ShoulderCheck' effect. |
-| `ShovingMatch` | Enum | Applies the 'ShovingMatch' effect. |
+| [`ShovingMatch`](./Enums.md#enum-shovingmatch) | Enum | Applies the 'ShovingMatch' effect. |
 | `ShowHiddenThings` | Number |  |
-| `SizeScale` | Enum |  |
-| `SkipFirstRounds` | Block | AI Logic: Passes turn for the first X rounds of combat. |
+| [`SizeScale`](./Enums.md#enum-sizescale) | Enum |  |
+| [`SkipFirstRounds`](#skipfirstrounds) | Block | AI Logic: Passes turn for the first X rounds of combat. |
 | `Sleep` | Number | Applies the 'Sleep' effect. |
-| `SlotMachineRollPool` | Block | Logic: Defines the possible outcomes for slot machine enemies. |
+| [`SlotMachineRollPool`](#slotmachinerollpool) | Block | Logic: Defines the possible outcomes for slot machine enemies. |
 | `Slow` | Number | Applies or references the 'Slow' effect/state. |
 | `SmallEnemiesIgnoreYou` | Number | Applies the 'SmallEnemiesIgnoreYou' effect. |
 | `SmallRockBehavior` | Number | AI Logic: Movement/interaction profile for small rocks. |
-| `SmiteEnemiesWhoKill` | Block | Applies the 'SmiteEnemiesWhoKill' effect. |
+| [`SmiteEnemiesWhoKill`](#smiteenemieswhokill) | Block | Applies the 'SmiteEnemiesWhoKill' effect. |
 | `SoulLink` | Number | Applies the 'SoulLink' effect. |
 | `SpawnBearTrapOnMiss` | Number | Applies the 'SpawnBearTrapOnMiss' effect. |
 | `SpawnCatCloneOnCorpsePopped` | Number | Applies or references the 'SpawnCatCloneOnCorpsePopped' effect/state. |
-| `SpawnCatCopyOnBattleStart` | Block | Applies the 'SpawnCatCopyOnBattleStart' effect. |
-| `SpawnCatCopyWhenDowned` | Block |  |
-| `SpawnCoinAnywhere` | Number | Applies or references the 'SpawnCoinAnywhere' effect/state. |
+| [`SpawnCatCopyOnBattleStart`](#spawncatcopyonbattlestart) | Block | Applies the 'SpawnCatCopyOnBattleStart' effect. |
+| [`SpawnCatCopyWhenDowned`](#spawncatcopywhendowned) | Block |  |
+| `SpawnCoinAnywhere` | Number | Applies the 'SpawnCoinAnywhere' effect. |
 | `SpawnCreepOnHit` | Number | Applies or references the 'SpawnCreepOnHit' effect/state. |
 | `SpawnCreepOnHitKnockback` | Number | Applies or references the 'SpawnCreepOnHitKnockback' effect/state. |
-| `SpawnEachTurn` | Block | Applies or references the 'SpawnEachTurn' effect/state. |
-| `SpawnExtraThingsOnBattleStart` | Block | Applies or references the 'SpawnExtraThingsOnBattleStart' effect/state. |
-| `SpawnItemLinkedFamiliar` | Block | Applies or references the 'SpawnItemLinkedFamiliar' effect/state. |
-| `SpawnMeatOnMove` | Enum | Applies the 'SpawnMeatOnMove' effect. |
+| [`SpawnEachTurn`](#spawneachturn) | Block | Applies or references the 'SpawnEachTurn' effect/state. |
+| [`SpawnExtraThingsOnBattleStart`](#spawnextrathingsonbattlestart) | Block | Applies or references the 'SpawnExtraThingsOnBattleStart' effect/state. |
+| [`SpawnItemLinkedFamiliar`](#spawnitemlinkedfamiliar) | Block | Applies or references the 'SpawnItemLinkedFamiliar' effect/state. |
+| [`SpawnMeatOnMove`](./Enums.md#enum-spawnmeatonmove) | Enum | Applies the 'SpawnMeatOnMove' effect. |
 | `SpawnNearEnemies` | Number | Applies or references the 'SpawnNearEnemies' effect/state. |
-| `SpawnObjectOnPopCorpse` | Enum | Applies or references the 'SpawnObjectOnPopCorpse' effect/state. |
-| `SpawnOnBattleStart` | Enum | Applies or references the 'SpawnOnBattleStart' effect/state. |
-| `SpawnOnBattleStartRandomEmptyTile` | Block | Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state. |
-| `SpawnOnDeath` | Block | Event Trigger: Spawns a specific entity when killed. |
-| `SpawnOnDowned` | Enum |  |
-| `SpawnRandomPickupsOnTaggedUnitKilled` | Block | Applies or references the 'SpawnRandomPickupsOnTaggedUnitKilled' effect/state. |
-| `SpawnThingOnDamage` | Block | Applies or references the 'SpawnThingOnDamage' effect/state. |
-| `SpawnThingOnDeath` | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. |
+| [`SpawnObjectOnPopCorpse`](./Enums.md#enum-spawnobjectonpopcorpse) | Enum | Applies or references the 'SpawnObjectOnPopCorpse' effect/state. |
+| [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum | Applies or references the 'SpawnOnBattleStart' effect/state. |
+| [`SpawnOnBattleStartRandomEmptyTile`](#spawnonbattlestartrandomemptytile) | Block | Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state. |
+| [`SpawnOnDeath`](#spawnondeath) | Block | Event Trigger: Spawns a specific entity when killed. |
+| [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum |  |
+| [`SpawnRandomPickupsOnTaggedUnitKilled`](#spawnrandompickupsontaggedunitkilled) | Block | Applies or references the 'SpawnRandomPickupsOnTaggedUnitKilled' effect/state. |
+| [`SpawnThingOnDamage`](#spawnthingondamage) | Block | Applies or references the 'SpawnThingOnDamage' effect/state. |
+| [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | Applies or references the 'SpawnThingOnDeath' effect/state. |
 | `SpawnerCatDataReference` | Number | Applies or references the 'SpawnerCatDataReference' effect/state. |
-| `SpecialFriends` | Block | Applies the 'SpecialFriends' effect. |
+| [`SpecialFriends`](#specialfriends) | Block | Applies the 'SpecialFriends' effect. |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. |
 | `SpeedUp_WithoutInitiative` | Number | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. |
 | `SpellDamageUp` | Number | Applies or references the 'SpellDamageUp' effect/state. |
-| `SpewerAltGraphics` | Block | Visual: Alternative graphics for Spewer enemies. |
+| [`SpewerAltGraphics`](#speweraltgraphics) | Block | Visual: Alternative graphics for Spewer enemies. |
 | `SpiderInfested` | Number | Applies or references the 'SpiderInfested' effect/state. |
 | `SplashDamage` | Number | Applies the 'SplashDamage' effect. |
 | `SplittableMove` | Number | Applies the 'SplittableMove' effect. |
-| `SpreadDisease` | Block | Provides a chance to transmit a disease status to adjacent targets. |
+| [`SpreadDisease`](#spreaddisease) | Block | Provides a chance to transmit a disease status to adjacent targets. |
 | `SpreadExtraDebuffs` | Number | Applies the 'SpreadExtraDebuffs' effect. |
 | `SpreadPainBonus` | Number | Applies the 'SpreadPainBonus' effect. |
 | `SpreadPainBonusCrit` | Number | Applies the 'SpreadPainBonusCrit' effect. |
 | `SpreadWater` | Number | Applies or references the 'SpreadWater' effect/state. |
 | `SproutsGrantMovement` | Number | Applies or references the 'SproutsGrantMovement' effect/state. |
-| `StackingDodgeChanceOnTookDamage` | Block | Applies the 'StackingDodgeChanceOnTookDamage' effect. |
-| `StackingFlowerTrail` | Block | Applies or references the 'StackingFlowerTrail' effect/state. |
+| [`StackingDodgeChanceOnTookDamage`](#stackingdodgechanceontookdamage) | Block | Applies the 'StackingDodgeChanceOnTookDamage' effect. |
+| [`StackingFlowerTrail`](#stackingflowertrail) | Block | Applies or references the 'StackingFlowerTrail' effect/state. |
 | `StackingSandstorm` | Number |  |
-| `StacyMutant_Brace` | Block | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. |
-| `StacyMutant_Counter` | Block | Character Form: Behavior and stats for the 'StacyMutant_Counter' state. |
-| `StacyMutant_Damage` | Block | Character Form: Behavior and stats for the 'StacyMutant_Damage' state. |
-| `StacyMutant_DoubleHead` | Block | Character Form: Behavior and stats for the 'StacyMutant_DoubleHead' state. |
-| `StacyMutant_Fire` | Block | Character Form: Behavior and stats for the 'StacyMutant_Fire' state. |
-| `StacyMutant_Health` | Block | Character Form: Behavior and stats for the 'StacyMutant_Health' state. |
-| `StacyMutant_Holy` | Block | Character Form: Behavior and stats for the 'StacyMutant_Holy' state. |
-| `StacyMutant_Ice` | Block | Character Form: Behavior and stats for the 'StacyMutant_Ice' state. |
-| `StacyMutant_Lightning` | Block | Character Form: Behavior and stats for the 'StacyMutant_Lightning' state. |
-| `StacyMutant_Mirror` | Block | Character Form: Behavior and stats for the 'StacyMutant_Mirror' state. |
-| `StacyMutant_Speed` | Block | Character Form: Behavior and stats for the 'StacyMutant_Speed' state. |
-| `StacyMutant_Thorns` | Block | Character Form: Behavior and stats for the 'StacyMutant_Thorns' state. |
+| [`StacyMutant_Brace`](#stacymutant_brace) | Block | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. |
+| [`StacyMutant_Counter`](#stacymutant_counter) | Block | Character Form: Behavior and stats for the 'StacyMutant_Counter' state. |
+| [`StacyMutant_Damage`](#stacymutant_damage) | Block | Character Form: Behavior and stats for the 'StacyMutant_Damage' state. |
+| [`StacyMutant_DoubleHead`](#stacymutant_doublehead) | Block | Character Form: Behavior and stats for the 'StacyMutant_DoubleHead' state. |
+| [`StacyMutant_Fire`](#stacymutant_fire) | Block | Character Form: Behavior and stats for the 'StacyMutant_Fire' state. |
+| [`StacyMutant_Health`](#stacymutant_health) | Block | Character Form: Behavior and stats for the 'StacyMutant_Health' state. |
+| [`StacyMutant_Holy`](#stacymutant_holy) | Block | Character Form: Behavior and stats for the 'StacyMutant_Holy' state. |
+| [`StacyMutant_Ice`](#stacymutant_ice) | Block | Character Form: Behavior and stats for the 'StacyMutant_Ice' state. |
+| [`StacyMutant_Lightning`](#stacymutant_lightning) | Block | Character Form: Behavior and stats for the 'StacyMutant_Lightning' state. |
+| [`StacyMutant_Mirror`](#stacymutant_mirror) | Block | Character Form: Behavior and stats for the 'StacyMutant_Mirror' state. |
+| [`StacyMutant_Speed`](#stacymutant_speed) | Block | Character Form: Behavior and stats for the 'StacyMutant_Speed' state. |
+| [`StacyMutant_Thorns`](#stacymutant_thorns) | Block | Character Form: Behavior and stats for the 'StacyMutant_Thorns' state. |
 | `StartDead` | Number | Applies or references the 'StartDead' effect/state. |
 | `StartOffMap` | Number | Applies or references the 'StartOffMap' effect/state. |
-| `StatDependentPassive` | Block | Applies or references the 'StatDependentPassive' effect/state. |
+| [`StatDependentPassive`](#statdependentpassive) | Block | Applies or references the 'StatDependentPassive' effect/state. |
 | `StatMinimum` | Number | Applies the 'StatMinimum' effect. |
-| `StatsAtLowHealth` | Block | Applies the 'StatsAtLowHealth' effect. |
-| `StatusAdjacentOnTheirTurnBegin` | Block | Event Trigger: Applies nested statuses to adjacent on their turn begin. |
-| `StatusAdjacentOnTheirTurnEnd` | Block | Applies or references the 'StatusAdjacentOnTheirTurnEnd' effect/state. |
-| `StatusAfterCastSpell` | Block | Applies or references the 'StatusAfterCastSpell' effect/state. |
-| `StatusAfterXStacks` | Block | Applies or references the 'StatusAfterXStacks' effect/state. |
-| `StatusAfterXTurns` | Block | Event Trigger: Applies a status effect after X turns have passed. |
-| `StatusAllCharactersOnSpawn` | Block | Applies or references the 'StatusAllCharactersOnSpawn' effect/state. |
-| `StatusAlliesEachTurn` | Block | Applies or references the 'StatusAlliesEachTurn' effect/state. |
-| `StatusAlliesOnBattleStart` | Block | Applies or references the 'StatusAlliesOnBattleStart' effect/state. |
-| `StatusAlliesOnDeath` | Block | Event Trigger: Applies nested statuses to allies on death. |
-| `StatusAlliesOnGainCoins` | Block | Event Trigger: Applies nested statuses to allies on gain coins. |
-| `StatusAlliesOnKill` | Block | Event Trigger: Applies nested statuses to allies on kill. |
-| `StatusAlliesOnSpendMana` | Block | Event Trigger: Applies nested statuses to allies on spend mana. |
-| `StatusAlliesScaledByCursedOnDeath` | Block | Event Trigger: Applies nested statuses to allies scaled by cursed on death. |
-| `StatusAllyWhenAllySpendsMana` | Block | Event Trigger: Applies nested statuses to ally when ally spends mana. |
-| `StatusAnyCatAllyWhoKills` | Block | Event Trigger: Applies nested statuses to any cat ally who kills. |
+| [`StatsAtLowHealth`](#statsatlowhealth) | Block | Applies the 'StatsAtLowHealth' effect. |
+| [`StatusAdjacentOnTheirTurnBegin`](#statusadjacentontheirturnbegin) | Block | Event Trigger: Applies nested statuses to adjacent on their turn begin. |
+| [`StatusAdjacentOnTheirTurnEnd`](#statusadjacentontheirturnend) | Block | Applies or references the 'StatusAdjacentOnTheirTurnEnd' effect/state. |
+| [`StatusAfterCastSpell`](#statusaftercastspell) | Block | Applies or references the 'StatusAfterCastSpell' effect/state. |
+| [`StatusAfterXStacks`](#statusafterxstacks) | Block | Applies or references the 'StatusAfterXStacks' effect/state. |
+| [`StatusAfterXTurns`](#statusafterxturns) | Block | Event Trigger: Applies a status effect after X turns have passed. |
+| [`StatusAllCharactersOnSpawn`](#statusallcharactersonspawn) | Block | Applies or references the 'StatusAllCharactersOnSpawn' effect/state. |
+| [`StatusAlliesEachTurn`](#statusallieseachturn) | Block | Applies or references the 'StatusAlliesEachTurn' effect/state. |
+| [`StatusAlliesOnBattleStart`](#statusalliesonbattlestart) | Block | Applies or references the 'StatusAlliesOnBattleStart' effect/state. |
+| [`StatusAlliesOnDeath`](#statusalliesondeath) | Block | Event Trigger: Applies nested statuses to allies on death. |
+| [`StatusAlliesOnGainCoins`](#statusalliesongaincoins) | Block | Event Trigger: Applies nested statuses to allies on gain coins. |
+| [`StatusAlliesOnKill`](#statusalliesonkill) | Block | Event Trigger: Applies nested statuses to allies on kill. |
+| [`StatusAlliesOnSpendMana`](#statusalliesonspendmana) | Block | Event Trigger: Applies nested statuses to allies on spend mana. |
+| [`StatusAlliesScaledByCursedOnDeath`](#statusalliesscaledbycursedondeath) | Block | Event Trigger: Applies nested statuses to allies scaled by cursed on death. |
+| [`StatusAllyWhenAllySpendsMana`](#statusallywhenallyspendsmana) | Block | Event Trigger: Applies nested statuses to ally when ally spends mana. |
+| [`StatusAnyCatAllyWhoKills`](#statusanycatallywhokills) | Block | Event Trigger: Applies nested statuses to any cat ally who kills. |
 | `StatusCarefulness` | Number | Applies or references the 'StatusCarefulness' effect/state. |
-| `StatusCollector` | Block | Passive: Gains benefits based on the number of statuses applied to them. |
-| `StatusDamagers` | Block | Event Trigger: Applies nested statuses to damagers. |
-| `StatusEachRoundBegin` | Block |  |
-| `StatusEachRoundEnd` | Block |  |
-| `StatusEachTurnBegin` | Block | Event Trigger: Applies nested statuses to each turn begin. |
-| `StatusEachTurnBeginIfHasStatus` | Block | Event Trigger: Applies a status at the start of the turn if a prerequisite status is met. |
-| `StatusEachTurnEnd` | Block | Applies or references the 'StatusEachTurnEnd' effect/state. |
-| `StatusEachTurnEndForEachTurn` | Block | Event Trigger: Applies nested statuses to each turn end for each turn. |
-| `StatusEachTurnEndIfEnabledAtStartOfTurn` | Block | Event Trigger: Applies a status at the end of the turn if an enabling condition was met at the start. |
-| `StatusEachTurnEndPerEnemyKill` | Block | Event Trigger: Applies nested statuses to each turn end per enemy kill. |
-| `StatusEnemiesOnDeath` | Block | Event Trigger: Applies nested statuses to enemies on death. |
-| `StatusEveryXSpellCasts` | Block | Applies or references the 'StatusEveryXSpellCasts' effect/state. |
-| `StatusEveryXSpellCastsEachTurn` | Block |  |
-| `StatusEveryXTurnBegins` | Block | Event Trigger: Applies nested statuses to every x turn begins. |
-| `StatusGroup` | Block | Groups multiple status effects together for batch application. |
-| `StatusIfBattleAlreadyBegan` | Block | Event Trigger: Applies nested statuses to if battle already began. |
-| `StatusIfDidntMove` | Block |  |
-| `StatusIfUnusedActPoints` | Block | Applies or references the 'StatusIfUnusedActPoints' effect/state. |
-| `StatusIfUnusedMovePoints` | Block | Event Trigger: Applies nested statuses to if unused move points. |
-| `StatusImmunity` | Enum | Applies or references the 'StatusImmunity' effect/state. |
-| `StatusKilledCharacters` | Block | Event Trigger: Applies nested statuses to killed characters. |
-| `StatusKillers` | Block | Instantly kills the target if they possess the specified status effects. |
-| `StatusOnAllyCatDeath` | Block | Event Trigger: Applies nested statuses when ally cat death. |
-| `StatusOnAnyDeath` | Block | Event Trigger: Applies nested statuses when any death. |
-| `StatusOnBackstab` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnBattleEnd` | Block | Applies the nested status effects when the encounter finishes. |
-| `StatusOnBattleEndIfKillThresholdMet` | Block | Event Trigger: Applies nested statuses when battle end if kill threshold met. |
-| `StatusOnBattleStart` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnBreak` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnBreakItem` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnCastSpell` | Block | Event Trigger: Applies nested statuses when cast spell. |
-| `StatusOnCollectPickup` | Block | Event Trigger: Applies nested statuses when collect pickup. |
-| `StatusOnCrit` | Block | Event Trigger: Applies nested statuses when crit. |
-| `StatusOnDealtDamage` | Block | Event Trigger: Applies nested statuses when dealt damage. |
-| `StatusOnDealtDamageThreshold` | Block | Event Trigger: Applies nested statuses when dealt damage threshold. |
-| `StatusOnDie` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnDodge` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnEatFood` | Block | Event Trigger: Applies nested statuses when eat food. |
-| `StatusOnEatPill` | Block |  |
-| `StatusOnEndMove` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnEnemyCastSpell` | Block |  |
-| `StatusOnEnemyConfused` | Block | Event Trigger: Applies statuses when an enemy becomes confused. |
-| `StatusOnEnemyDeath` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnFallAsleep` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnFullMana` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnGainCoins` | Block | Event Trigger: Applies nested statuses when gain coins. |
-| `StatusOnGainShield` | Block | Event Trigger: Applies nested statuses when gain shield. |
-| `StatusOnHeal` | Block | Event Trigger: Applies nested statuses when heal. |
-| `StatusOnHealed` | Block | Event Trigger: Applies nested statuses when healed. |
-| `StatusOnKill` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnKillEnemy` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnLoseShield` | Block | Event Trigger: Applies nested statuses when lose shield. |
-| `StatusOnOverHealed` | Block | Event Trigger: Applies nested statuses when over healed. |
-| `StatusOnOverMana` | Block | Event Trigger: Applies nested statuses when over mana. |
-| `StatusOnPickupCoins` | Block | Event Trigger: Applies nested statuses when pickup coins. |
-| `StatusOnPopCorpse` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnSetPieceBreak` | Block |  |
-| `StatusOnSpawnIn` | Block | Event Trigger: Applies statuses immediately when spawned. |
-| `StatusOnStanceSwitch` | Block | Event Trigger: Applies nested statuses when stance switch. |
-| `StatusOnTakeHealthDamage` | Block | Event Trigger: Applies nested statuses when take health damage. |
-| `StatusOnTakeHealthOrShieldDamage` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnTookDamage` | Block | Event Trigger: Applies nested statuses when took damage. |
-| `StatusOnTookDamageFromAbility` | Block | Event Trigger: Applies statuses when taking damage from an ability. |
-| `StatusOnTookDamageFromEnemyAbility` | Block | Event Trigger: Applies nested statuses when took damage from enemy ability. |
-| `StatusOnTriggerTrap` | Block | Event Trigger: Applies nested statuses when trigger trap. |
-| `StatusOnTurnEndIfCastNSpells` | Block | Event Trigger: Applies nested statuses when turn end if cast n spells. |
-| `StatusOnTurnEndIfDidntCastAbilityTypes` | Block | Event Trigger: Applies statuses when this action occurs. |
-| `StatusOnTurnEndIfManaExact` | Block | Event Trigger: Applies nested statuses when turn end if mana exact. |
-| `StatusOnTurnEndIfManaOrHealthExact` | Block | Event Trigger: Applies nested statuses when turn end if mana or health exact. |
-| `StatusOnUseAbilityWithTag` | Block | Event Trigger: Applies nested statuses when use ability with tag. |
-| `StatusOnUseBasicAttack` | Block | Event Trigger: Applies nested statuses when use basic attack. |
-| `StatusOnUseElementAbility` | Block | Event Trigger: Applies nested statuses when use element ability. |
-| `StatusOverlappingCharactersAndDie` | Block | Event Trigger: Applies statuses to overlapping entities, then destroys self. |
-| `StatusPerInjury` | Block | Event Trigger: Applies nested statuses to per injury. |
-| `StatusRandomEnemiesOnBattleStart` | Block | Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state. |
-| `StatusReplacement` | Array | Event Trigger: Applies nested statuses to replacement. |
-| `StatusThingsKnockedBack` | Block | Event Trigger: Applies nested statuses to things knocked back. |
-| `StatusWhenAllySpendsMana` | Block | Event Trigger: Applies nested statuses to when ally spends mana. |
-| `StatusWhenStatusCompletelyRemoved` | Block | Event Trigger: Applies statuses when a tracked status effect is fully cleansed. |
+| [`StatusCollector`](#statuscollector) | Block | Passive: Gains benefits based on the number of statuses applied to them. |
+| [`StatusDamagers`](#statusdamagers) | Block | Event Trigger: Applies nested statuses to damagers. |
+| [`StatusEachRoundBegin`](#statuseachroundbegin) | Block |  |
+| [`StatusEachRoundEnd`](#statuseachroundend) | Block | Applies or references the 'StatusEachRoundEnd' effect/state. |
+| [`StatusEachTurnBegin`](#statuseachturnbegin) | Block | Event Trigger: Applies nested statuses to each turn begin. |
+| [`StatusEachTurnBeginIfHasStatus`](#statuseachturnbeginifhasstatus) | Block | Event Trigger: Applies a status at the start of the turn if a prerequisite status is met. |
+| [`StatusEachTurnEnd`](#statuseachturnend) | Block | Applies or references the 'StatusEachTurnEnd' effect/state. |
+| [`StatusEachTurnEndForEachTurn`](#statuseachturnendforeachturn) | Block | Event Trigger: Applies nested statuses to each turn end for each turn. |
+| [`StatusEachTurnEndIfEnabledAtStartOfTurn`](#statuseachturnendifenabledatstartofturn) | Block | Event Trigger: Applies a status at the end of the turn if an enabling condition was met at the start. |
+| [`StatusEachTurnEndPerEnemyKill`](#statuseachturnendperenemykill) | Block | Event Trigger: Applies nested statuses to each turn end per enemy kill. |
+| [`StatusEnemiesOnDeath`](#statusenemiesondeath) | Block | Event Trigger: Applies nested statuses to enemies on death. |
+| [`StatusEveryXSpellCasts`](#statuseveryxspellcasts) | Block | Applies or references the 'StatusEveryXSpellCasts' effect/state. |
+| [`StatusEveryXSpellCastsEachTurn`](#statuseveryxspellcastseachturn) | Block |  |
+| [`StatusEveryXTurnBegins`](#statuseveryxturnbegins) | Block | Event Trigger: Applies nested statuses to every x turn begins. |
+| [`StatusGroup`](#statusgroup) | Block | Groups multiple status effects together for batch application. |
+| [`StatusIfBattleAlreadyBegan`](#statusifbattlealreadybegan) | Block | Event Trigger: Applies nested statuses to if battle already began. |
+| [`StatusIfDidntMove`](#statusifdidntmove) | Block |  |
+| [`StatusIfUnusedActPoints`](#statusifunusedactpoints) | Block | Applies or references the 'StatusIfUnusedActPoints' effect/state. |
+| [`StatusIfUnusedMovePoints`](#statusifunusedmovepoints) | Block | Event Trigger: Applies nested statuses to if unused move points. |
+| [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. |
+| [`StatusKilledCharacters`](#statuskilledcharacters) | Block | Event Trigger: Applies nested statuses to killed characters. |
+| [`StatusKillers`](#statuskillers) | Block | Instantly kills the target if they possess the specified status effects. |
+| [`StatusOnAllyCatDeath`](#statusonallycatdeath) | Block | Event Trigger: Applies nested statuses when ally cat death. |
+| [`StatusOnAnyDeath`](#statusonanydeath) | Block | Event Trigger: Applies nested statuses when any death. |
+| [`StatusOnBackstab`](#statusonbackstab) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnBattleEnd`](#statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. |
+| [`StatusOnBattleEndIfKillThresholdMet`](#statusonbattleendifkillthresholdmet) | Block | Event Trigger: Applies nested statuses when battle end if kill threshold met. |
+| [`StatusOnBattleStart`](#statusonbattlestart) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnBreak`](#statusonbreak) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnBreakItem`](#statusonbreakitem) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnCastSpell`](#statusoncastspell) | Block | Event Trigger: Applies nested statuses when cast spell. |
+| [`StatusOnCollectPickup`](#statusoncollectpickup) | Block | Event Trigger: Applies nested statuses when collect pickup. |
+| [`StatusOnCrit`](#statusoncrit) | Block | Event Trigger: Applies nested statuses when crit. |
+| [`StatusOnDealtDamage`](#statusondealtdamage) | Block | Event Trigger: Applies nested statuses when dealt damage. |
+| [`StatusOnDealtDamageThreshold`](#statusondealtdamagethreshold) | Block | Event Trigger: Applies nested statuses when dealt damage threshold. |
+| [`StatusOnDie`](#statusondie) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnDodge`](#statusondodge) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnEatFood`](#statusoneatfood) | Block | Event Trigger: Applies nested statuses when eat food. |
+| [`StatusOnEatPill`](#statusoneatpill) | Block |  |
+| [`StatusOnEndMove`](#statusonendmove) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnEnemyCastSpell`](#statusonenemycastspell) | Block |  |
+| [`StatusOnEnemyConfused`](#statusonenemyconfused) | Block | Event Trigger: Applies statuses when an enemy becomes confused. |
+| [`StatusOnEnemyDeath`](#statusonenemydeath) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnFallAsleep`](#statusonfallasleep) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnFullMana`](#statusonfullmana) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnGainCoins`](#statusongaincoins) | Block | Event Trigger: Applies nested statuses when gain coins. |
+| [`StatusOnGainShield`](#statusongainshield) | Block | Event Trigger: Applies nested statuses when gain shield. |
+| [`StatusOnHeal`](#statusonheal) | Block | Event Trigger: Applies nested statuses when heal. |
+| [`StatusOnHealed`](#statusonhealed) | Block | Event Trigger: Applies nested statuses when healed. |
+| [`StatusOnKill`](#statusonkill) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnKillEnemy`](#statusonkillenemy) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnLoseShield`](#statusonloseshield) | Block | Event Trigger: Applies nested statuses when lose shield. |
+| [`StatusOnOverHealed`](#statusonoverhealed) | Block | Event Trigger: Applies nested statuses when over healed. |
+| [`StatusOnOverMana`](#statusonovermana) | Block | Event Trigger: Applies nested statuses when over mana. |
+| [`StatusOnPickupCoins`](#statusonpickupcoins) | Block | Event Trigger: Applies nested statuses when pickup coins. |
+| [`StatusOnPopCorpse`](#statusonpopcorpse) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnSetPieceBreak`](#statusonsetpiecebreak) | Block |  |
+| [`StatusOnSpawnIn`](#statusonspawnin) | Block | Event Trigger: Applies statuses immediately when spawned. |
+| [`StatusOnStanceSwitch`](#statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. |
+| [`StatusOnTakeHealthDamage`](#statusontakehealthdamage) | Block | Event Trigger: Applies nested statuses when take health damage. |
+| [`StatusOnTakeHealthOrShieldDamage`](#statusontakehealthorshielddamage) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnTookDamage`](#statusontookdamage) | Block | Event Trigger: Applies nested statuses when took damage. |
+| [`StatusOnTookDamageFromAbility`](#statusontookdamagefromability) | Block | Event Trigger: Applies statuses when taking damage from an ability. |
+| [`StatusOnTookDamageFromEnemyAbility`](#statusontookdamagefromenemyability) | Block | Event Trigger: Applies nested statuses when took damage from enemy ability. |
+| [`StatusOnTriggerTrap`](#statusontriggertrap) | Block | Event Trigger: Applies nested statuses when trigger trap. |
+| [`StatusOnTurnEndIfCastNSpells`](#statusonturnendifcastnspells) | Block | Event Trigger: Applies nested statuses when turn end if cast n spells. |
+| [`StatusOnTurnEndIfDidntCastAbilityTypes`](#statusonturnendifdidntcastabilitytypes) | Block | Event Trigger: Applies statuses when this action occurs. |
+| [`StatusOnTurnEndIfManaExact`](#statusonturnendifmanaexact) | Block | Event Trigger: Applies nested statuses when turn end if mana exact. |
+| [`StatusOnTurnEndIfManaOrHealthExact`](#statusonturnendifmanaorhealthexact) | Block | Event Trigger: Applies nested statuses when turn end if mana or health exact. |
+| [`StatusOnUseAbilityWithTag`](#statusonuseabilitywithtag) | Block | Event Trigger: Applies nested statuses when use ability with tag. |
+| [`StatusOnUseBasicAttack`](#statusonusebasicattack) | Block | Event Trigger: Applies nested statuses when use basic attack. |
+| [`StatusOnUseElementAbility`](#statusonuseelementability) | Block | Event Trigger: Applies nested statuses when use element ability. |
+| [`StatusOverlappingCharactersAndDie`](#statusoverlappingcharactersanddie) | Block | Event Trigger: Applies statuses to overlapping entities, then destroys self. |
+| [`StatusPerInjury`](#statusperinjury) | Block | Event Trigger: Applies nested statuses to per injury. |
+| [`StatusRandomEnemiesOnBattleStart`](#statusrandomenemiesonbattlestart) | Block | Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state. |
+| [`StatusReplacement`](./Arrays.md#array-statusreplacement) | Array | Event Trigger: Applies nested statuses to replacement. |
+| [`StatusThingsKnockedBack`](#statusthingsknockedback) | Block | Event Trigger: Applies nested statuses to things knocked back. |
+| [`StatusWhenAllySpendsMana`](#statuswhenallyspendsmana) | Block | Event Trigger: Applies nested statuses to when ally spends mana. |
+| [`StatusWhenStatusCompletelyRemoved`](#statuswhenstatuscompletelyremoved) | Block | Event Trigger: Applies statuses when a tracked status effect is fully cleansed. |
 | `Stealth` | Number | Applies the 'Stealth' effect. |
 | `StealthUntilBasicAttack` | Number | Applies or references the 'StealthUntilBasicAttack' effect/state. |
 | `StevenBolts` | Number | Applies or references the 'StevenBolts' effect/state. |
@@ -1060,27 +1078,27 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `StripKnockback` | Number | Applies or references the 'StripKnockback' effect/state. |
 | `StripStatuses` | Number | Applies or references the 'StripStatuses' effect/state. |
 | `Study` | Number | Applies the 'Study' effect. |
-| `Stun` | Array |  |
+| [`Stun`](./Arrays.md#array-stun) | Array |  |
 | `StunImmunity` | Number | Passive: Prevents Stun from being applied. |
-| `SupportDieInsteadOfRun` | Block | AI Logic: Forces a support unit to die rather than flee. |
-| `SupportFormChangeInsteadOfRun` | Enum | AI Logic: Forces a support unit to transform rather than flee. |
+| [`SupportDieInsteadOfRun`](#supportdieinsteadofrun) | Block | AI Logic: Forces a support unit to die rather than flee. |
+| [`SupportFormChangeInsteadOfRun`](./Enums.md#enum-supportformchangeinsteadofrun) | Enum | AI Logic: Forces a support unit to transform rather than flee. |
 | `SurviveAt1HP` | Number | Applies or references the 'SurviveAt1HP' effect/state. |
 | `SwapHighestAndLowestStat` | Number |  |
-| `SwimmingFormChange` | Block | Logic: Automates form change when entering/exiting water. |
-| `SyncFormsWithBuddy` | Block | Logic: Forces this character's form to match their familiar/buddy. |
-| `T3HitlerSpawningPhase` | Block | Boss Logic: Minion spawn phase for the T3 Hitler boss. |
+| [`SwimmingFormChange`](#swimmingformchange) | Block | Logic: Automates form change when entering/exiting water. |
+| [`SyncFormsWithBuddy`](#syncformswithbuddy) | Block | Logic: Forces this character's form to match their familiar/buddy. |
+| [`T3HitlerSpawningPhase`](#t3hitlerspawningphase) | Block | Boss Logic: Minion spawn phase for the T3 Hitler boss. |
 | `TVBotDisableAttack` | Number | Applies or references the 'TVBotDisableAttack' effect/state. |
 | `TVBotDisableMove` | Number | Applies or references the 'TVBotDisableMove' effect/state. |
 | `TVBotDisableSpells` | Number | Applies or references the 'TVBotDisableSpells' effect/state. |
-| `TVBotScreen` | Block | Visual: TV Bot screen state. |
-| `TagGreed` | Enum | Applies or references the 'TagGreed' effect/state. |
-| `TaggedPickupEffectReplacement` | Block | Applies the 'TaggedPickupEffectReplacement' effect. |
-| `TakeBonusTurnWithStatus` | Block | Grants the character an immediate extra turn while afflicted with specific statuses. |
+| [`TVBotScreen`](#tvbotscreen) | Block | Visual: TV Bot screen state. |
+| [`TagGreed`](./Enums.md#enum-taggreed) | Enum | Applies or references the 'TagGreed' effect/state. |
+| [`TaggedPickupEffectReplacement`](#taggedpickupeffectreplacement) | Block | Applies the 'TaggedPickupEffectReplacement' effect. |
+| [`TakeBonusTurnWithStatus`](#takebonusturnwithstatus) | Block | Grants the character an immediate extra turn while afflicted with specific statuses. |
 | `TakeExtraTurn` | Number | Applies the 'TakeExtraTurn' effect. |
 | `TakeWeaponFromSpawner` | Number | Applies or references the 'TakeWeaponFromSpawner' effect/state. |
 | `Tall` | Number | Applies or references the 'Tall' effect/state. |
-| `TallTumorManaBurn` | Enum | Applies or references the 'TallTumorManaBurn' effect/state. |
-| `Tangled` | Array | Applies a tangled/ensnared status effect, often modifying visual sprites. |
+| [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum | Applies or references the 'TallTumorManaBurn' effect/state. |
+| [`Tangled`](./Arrays.md#array-tangled) | Array | Applies a tangled/ensnared status effect, often modifying visual sprites. |
 | `Tarred` | Number | Applies or references the 'Tarred' effect/state. |
 | `TauntAlways` | Number | Applies the 'TauntAlways' effect. |
 | `TauntAtFullHealth` | Number | Applies the 'TauntAtFullHealth' effect. |
@@ -1091,73 +1109,73 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `TempMeleeRangeUp` | Number | Applies or references the 'TempMeleeRangeUp' effect/state. |
 | `TempMovement` | Number | Applies the 'TempMovement' effect. |
 | `TempNoManaRegen` | Number | Applies or references the 'TempNoManaRegen' effect/state. |
-| `TempPassiveUntilSettled` | Block | Applies or references the 'TempPassiveUntilSettled' effect/state. |
+| [`TempPassiveUntilSettled`](#temppassiveuntilsettled) | Block | Applies or references the 'TempPassiveUntilSettled' effect/state. |
 | `TempRangeUp` | Number | Applies or references the 'TempRangeUp' effect/state. |
 | `TempSpellDamageUp` | Number | Applies the 'TempSpellDamageUp' effect. |
 | `TempStrengthUp` | Number | Applies or references the 'TempStrengthUp' effect/state. |
-| `Temporary` | Block | A wrapper block for applying status effects that automatically expire. |
-| `Terminator2Chase` | Enum | Applies or references the 'Terminator2Chase' effect/state. |
-| `Terminator2Run` | Block | AI Movement: Specific run logic for Terminator2. |
-| `TerminatorChase` | Block | AI Movement: Specific chase logic for Terminator. |
-| `TerminatorSkin` | Block | Visual: Skin definition for Terminator. |
-| `TheHunger` | Block | Applies the 'TheHunger' effect. |
+| [`Temporary`](#temporary) | Block | A wrapper block for applying status effects that automatically expire. |
+| [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum | Applies or references the 'Terminator2Chase' effect/state. |
+| [`Terminator2Run`](#terminator2run) | Block | AI Movement: Specific run logic for Terminator2. |
+| [`TerminatorChase`](#terminatorchase) | Block | AI Movement: Specific chase logic for Terminator. |
+| [`TerminatorSkin`](#terminatorskin) | Block | Visual: Skin definition for Terminator. |
+| [`TheHunger`](#thehunger) | Block | Applies the 'TheHunger' effect. |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. |
 | `TileDamageMultiplier` | Number | Applies the 'TileDamageMultiplier' effect. |
-| `TileElementDamageImmunity` | Enum | Applies or references the 'TileElementDamageImmunity' effect/state. |
-| `TileTrail` | Enum |  |
-| `TileTrail_Ahead` | Enum | Applies or references the 'TileTrail_Ahead' effect/state. |
-| `TinkererBasicAttackSwitching` | Block | Logic: Allows Tinkerer to swap basic attacks. |
-| `TintItem` | Block | Applies or references the 'TintItem' effect/state. |
+| [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum | Applies or references the 'TileElementDamageImmunity' effect/state. |
+| [`TileTrail`](./Enums.md#enum-tiletrail) | Enum |  |
+| [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | Applies or references the 'TileTrail_Ahead' effect/state. |
+| [`TinkererBasicAttackSwitching`](#tinkererbasicattackswitching) | Block | Logic: Allows Tinkerer to swap basic attacks. |
+| [`TintItem`](#tintitem) | Block | Applies or references the 'TintItem' effect/state. |
 | `TireBehavior` | Number | Applies or references the 'TireBehavior' effect/state. |
 | `TormentorHeal` | Number | Applies or references the 'TormentorHeal' effect/state. |
 | `TossTargetIsAggroTarget` | Number | Applies or references the 'TossTargetIsAggroTarget' effect/state. |
 | `TossTargetIsBuddy` | Number | Applies or references the 'TossTargetIsBuddy' effect/state. |
 | `TossTargetIsNotInWater` | Number | Applies or references the 'TossTargetIsNotInWater' effect/state. |
-| `TourettesMeows` | Block | Applies the 'TourettesMeows' effect. |
-| `TowerDefense` | Block | Applies the 'TowerDefense' effect. |
-| `TowerDefenseReflex` | Enum | Applies the 'TowerDefenseReflex' effect. |
-| `TrackAmountKilledByPlayer` | Enum | Applies or references the 'TrackAmountKilledByPlayer' effect/state. |
+| [`TourettesMeows`](#tourettesmeows) | Block | Applies the 'TourettesMeows' effect. |
+| [`TowerDefense`](#towerdefense) | Block | Applies the 'TowerDefense' effect. |
+| [`TowerDefenseReflex`](./Enums.md#enum-towerdefensereflex) | Enum | Applies the 'TowerDefenseReflex' effect. |
+| [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum | Applies or references the 'TrackAmountKilledByPlayer' effect/state. |
 | `Trample` | Number | Applies or references the 'Trample' effect/state. |
-| `TransformInXTurns` | Block | Logic: Forces a form change after X turns. |
-| `TransformItemOnElementInfluence` | Block | Applies or references the 'TransformItemOnElementInfluence' effect/state. |
-| `TransformOnDeath` | Enum | Applies or references the 'TransformOnDeath' effect/state. |
-| `TransformOnDeathImmediately` | Enum | Logic: Bypasses death sequence to instantly assume a new form. |
-| `TransformOnElementInfluence` | Block | Logic: Changes form when affected by elements. |
-| `TransformOnElementInfluencex` | Block | Logic: Variant element influence transformation. |
-| `TransformOnStatusThreshold` | Block | Logic: Changes form when a status effect reaches a certain stack count. |
-| `TransformWeapon` | Block | Transforms the equipped weapon into another specific weapon state. |
-| `TransformWhenBuddyDies` | Enum | Applies or references the 'TransformWhenBuddyDies' effect/state. |
+| [`TransformInXTurns`](#transforminxturns) | Block | Logic: Forces a form change after X turns. |
+| [`TransformItemOnElementInfluence`](#transformitemonelementinfluence) | Block | Applies or references the 'TransformItemOnElementInfluence' effect/state. |
+| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Enum | Applies or references the 'TransformOnDeath' effect/state. |
+| [`TransformOnDeathImmediately`](./Enums.md#enum-transformondeathimmediately) | Enum | Logic: Bypasses death sequence to instantly assume a new form. |
+| [`TransformOnElementInfluence`](#transformonelementinfluence) | Block | Logic: Changes form when affected by elements. |
+| [`TransformOnElementInfluencex`](#transformonelementinfluencex) | Block | Logic: Variant element influence transformation. |
+| [`TransformOnStatusThreshold`](#transformonstatusthreshold) | Block | Logic: Changes form when a status effect reaches a certain stack count. |
+| [`TransformWeapon`](#transformweapon) | Block | Transforms the equipped weapon into another specific weapon state. |
+| [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | Applies or references the 'TransformWhenBuddyDies' effect/state. |
 | `TrapEffectsMultiplier` | Number | Applies the 'TrapEffectsMultiplier' effect. |
-| `Trapper` | Block | Character Form: Behavior and stats for the 'Trapper' state. |
+| [`Trapper`](#trapper) | Block | Character Form: Behavior and stats for the 'Trapper' state. |
 | `TriggerBleedOnBleed` | Number |  |
 | `TrinketActiveEffectsMultiplierBonus` | Number | Applies or references the 'TrinketActiveEffectsMultiplierBonus' effect/state. |
 | `TrinketPassiveMultiplierBonus` | Number | Applies or references the 'TrinketPassiveMultiplierBonus' effect/state. |
 | `Triskaidekaphobia` | Number | Applies the 'Triskaidekaphobia' effect. |
 | `TrueShot` | Number | Applies or references the 'TrueShot' effect/state. |
-| `TunnelVision` | Block | Applies or references the 'TunnelVision' effect/state. |
+| [`TunnelVision`](#tunnelvision) | Block | Applies or references the 'TunnelVision' effect/state. |
 | `TutorialBossRiggedFight` | Number | Applies or references the 'TutorialBossRiggedFight' effect/state. |
-| `TwisterFling` | Block | Logic: Fling behavior for tornado attacks. |
+| [`TwisterFling`](#twisterfling) | Block | Logic: Fling behavior for tornado attacks. |
 | `UncappedHP` | Number | Applies the 'UncappedHP' effect. |
 | `UncappedHPBonusStr` | Number | Applies the 'UncappedHPBonusStr' effect. |
 | `UncappedMana` | Number | Applies the 'UncappedMana' effect. |
 | `Uncontrollable` | Number | Applies or references the 'Uncontrollable' effect/state. |
 | `Undead` | Number | Applies or references the 'Undead' effect/state. |
-| `UnlimitedDeathRattleRevive` | Block | Logic: Endless resurrection on death. |
+| [`UnlimitedDeathRattleRevive`](#unlimiteddeathrattlerevive) | Block | Logic: Endless resurrection on death. |
 | `UnlockOrientation` | Number | Applies or references the 'UnlockOrientation' effect/state. |
 | `UpTireBehavior` | Number | Applies or references the 'UpTireBehavior' effect/state. |
-| `UpgradeLevelUpClassActives` | Enum | Applies the 'UpgradeLevelUpClassActives' effect. |
-| `UpgradeLevelUpClassPassives` | Enum | Applies the 'UpgradeLevelUpClassPassives' effect. |
+| [`UpgradeLevelUpClassActives`](./Enums.md#enum-upgradelevelupclassactives) | Enum | Applies the 'UpgradeLevelUpClassActives' effect. |
+| [`UpgradeLevelUpClassPassives`](./Enums.md#enum-upgradelevelupclasspassives) | Enum | Applies the 'UpgradeLevelUpClassPassives' effect. |
 | `UpgradeSpawnedPickups` | Number | Applies the 'UpgradeSpawnedPickups' effect. |
-| `UpgradeTaggedSpawnsToChampions` | Enum |  |
-| `UseAbility` | Enum | Logic: Forces execution of an ability. |
-| `UseAbilityWhenOutOfStatus` | Block | Logic: Casts a specific ability the moment a status effect expires. |
-| `UseAbilityWhenShieldDepleted` | Enum | Applies or references the 'UseAbilityWhenShieldDepleted' effect/state. |
-| `UseAbility_Madness` | Enum | Applies the 'UseAbility_Madness' effect. |
-| `UseAbility_NonStack` | Enum | Applies or references the 'UseAbility_NonStack' effect/state. |
+| [`UpgradeTaggedSpawnsToChampions`](./Enums.md#enum-upgradetaggedspawnstochampions) | Enum |  |
+| [`UseAbility`](./Enums.md#enum-useability) | Enum | Logic: Forces execution of an ability. |
+| [`UseAbilityWhenOutOfStatus`](#useabilitywhenoutofstatus) | Block | Logic: Casts a specific ability the moment a status effect expires. |
+| [`UseAbilityWhenShieldDepleted`](./Enums.md#enum-useabilitywhenshielddepleted) | Enum | Applies or references the 'UseAbilityWhenShieldDepleted' effect/state. |
+| [`UseAbility_Madness`](./Enums.md#enum-useability_madness) | Enum | Applies the 'UseAbility_Madness' effect. |
+| [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. |
 | `VaporizeInanimate` | Number |  |
 | `Vegan` | Number |  |
 | `Vengeful` | Number | Applies the 'Vengeful' effect. |
-| `VisualFXTile` | Enum |  |
+| [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum |  |
 | `Wall` | Number | Applies or references the 'Wall' effect/state. |
 | `WaterWalk` | Number | Applies or references the 'WaterWalk' effect/state. |
 | `Weakness` | Number | Applies the 'Weakness' effect. |
@@ -1167,85 +1185,1177 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `WeaponPassiveMultiplierBonus` | Number |  |
 | `WeaponsDontLoseDurability` | Number | Applies or references the 'WeaponsDontLoseDurability' effect/state. |
 | `Webbed` | Number | Applies or references the 'Webbed' effect/state. |
-| `WeremanTransformationReceiver` | Enum | Applies or references the 'WeremanTransformationReceiver' effect/state. |
+| [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | Applies or references the 'WeremanTransformationReceiver' effect/state. |
 | `Wet` | Number | Applies or references the 'Wet' effect/state. |
-| `WhitelistPickupType` | Enum | Applies or references the 'WhitelistPickupType' effect/state. |
+| [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | Applies or references the 'WhitelistPickupType' effect/state. |
 | `WideBackstab` | Number | Applies or references the 'WideBackstab' effect/state. |
 | `WispDodge` | Number | Applies or references the 'WispDodge' effect/state. |
 | `WobblyCat` | Number | Applies the 'WobblyCat' effect. |
 | `XIsConsumedCharacterMaxHP` | Number | Applies or references the 'XIsConsumedCharacterMaxHP' effect/state. |
 | `XIsCountDeaths` | Number | Applies or references the 'XIsCountDeaths' effect/state. |
-| `XIsCountStatusStacks` | Enum | Applies or references the 'XIsCountStatusStacks' effect/state. |
-| `XIsFormulaLockedUntilComplete` | Enum | Applies or references the 'XIsFormulaLockedUntilComplete' effect/state. |
+| [`XIsCountStatusStacks`](./Enums.md#enum-xiscountstatusstacks) | Enum | Applies or references the 'XIsCountStatusStacks' effect/state. |
+| [`XIsFormulaLockedUntilComplete`](./Enums.md#enum-xisformulalockeduntilcomplete) | Enum | Applies or references the 'XIsFormulaLockedUntilComplete' effect/state. |
 | `XIsFreeArmorSlots` | Number | Applies or references the 'XIsFreeArmorSlots' effect/state. |
 | `XIsIncreaseEachTurn` | Number | Applies or references the 'XIsIncreaseEachTurn' effect/state. |
-| `XIsLivingAlliesWithTag` | Enum | Applies or references the 'XIsLivingAlliesWithTag' effect/state. |
-| `XIsLivingCharactersWithTag` | Enum | Applies or references the 'XIsLivingCharactersWithTag' effect/state. |
-| `XIsMultipliedPercentHealth` | Array | Applies or references the 'XIsMultipliedPercentHealth' effect/state. |
+| [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum | Applies or references the 'XIsLivingAlliesWithTag' effect/state. |
+| [`XIsLivingCharactersWithTag`](./Enums.md#enum-xislivingcharacterswithtag) | Enum | Applies or references the 'XIsLivingCharactersWithTag' effect/state. |
+| [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | Applies or references the 'XIsMultipliedPercentHealth' effect/state. |
 | `XIsOtherHealsThisTurn` | Number | Applies or references the 'XIsOtherHealsThisTurn' effect/state. |
 | `XIsRampAndReset` | Number | Applies or references the 'XIsRampAndReset' effect/state. |
 | `XIsRecycleCostReduction` | Number | Applies or references the 'XIsRecycleCostReduction' effect/state. |
 | `XIsSpellStormRampAndReset` | Number | Math variable assignment: Evaluates X based on Spell Storm stacks, then resets them. |
 | `XIsTimesDamageTaken` | Number | Applies or references the 'XIsTimesDamageTaken' effect/state. |
-| `YOffset` | Enum | Applies or references the 'YOffset' effect/state. |
+| [`YOffset`](./Enums.md#enum-yoffset) | Enum | Applies or references the 'YOffset' effect/state. |
 | `ZeroKnockbackDamage` | Number | Applies or references the 'ZeroKnockbackDamage' effect/state. |
 | `Zombie` | Number |  |
-| `{Damage Blocks}` | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |
-
-</details>
-
-### Known Explicit Parameters
-
-These are hardcoded configuration keys found within these blocks (not dynamic IDs).
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Parameter | Type | Notes |
-| :--- | :--- | :--- |
-| `Conditional_Adjacent` | Block | Conditional block: Executes nested logic only if the target is/has Adjacent. |
-| `Conditional_Ally` | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. |
-| `Conditional_BadRoll` | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. |
-| `Conditional_Boss` | Block | Conditional trigger: Executes nested logic if the target is a Boss. |
-| `Conditional_Corpse` | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. |
-| `Conditional_Enemy` | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. |
-| `Conditional_FirstApplicationThisTurn` | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. |
-| `Conditional_Flying` | Block |  |
-| `Conditional_GoodRoll` | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. |
-| `Conditional_HasCleansableDebuffs` | Block |  |
-| `Conditional_HasStatus` | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. |
-| `Conditional_HasTag` | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. |
-| `Conditional_HealthThreshold` | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. |
-| `Conditional_ManaThreshold` | Block | Conditional constraint. Nested properties only trigger if this is true. |
-| `Conditional_NotBoss` | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. |
-| `Conditional_PartyMember` | Block | Conditional constraint. Nested properties only trigger if this is true. |
-| `Conditional_RandomChance` | Block |  |
-| `Conditional_Shielded` | Block | Conditional trigger: Executes nested logic if the target currently has a Shield status. |
-| `Conditional_SourceHasTag` | Block | Conditional block: Executes nested logic only if the target is/has SourceHasTag. |
-| `Conditional_Tiny` | Block |  |
 | `ally_chance` | Number |  |
 | `cant_miss` | Boolean |  |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. |
 | `count` | Number | Quantity. |
 | `damage` | Number | The base damage properties of an attack. |
-| `effects` | Block | Non-damaging status applications and logic triggers executed on impact. |
-| `element` | Enum |  |
-| `elements` | Array |  |
+| [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
+| [`element`](./Enums.md#enum-element) | Enum |  |
+| [`elements`](./Arrays.md#array-elements) | Array |  |
 | `end_of_round` | Boolean |  |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. |
 | `exclude_self` | Boolean |  |
 | `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. |
 | `knockback` | Number |  |
-| `mode` | Enum |  |
+| [`mode`](./Enums.md#enum-mode) | Enum |  |
 | `must_do_damage` | Boolean |  |
-| `passives` | Block |  |
+| [`passives`](#passives) | Block |  |
 | `stacks` | Number | Number of stacks or intensity to apply. |
-| `status` | Enum | ID of the status effect to apply or check. |
-| `tag` | Enum | Specific entity tag required. |
-| `tag_filter` | Enum |  |
-| `threshold` | Block |  |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. |
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum |  |
+| [`threshold`](#threshold) | Block |  |
 | `triggers_limit` | Number |  |
-| `type` | Enum | Classification/category type. |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. |
+| [`{Damage Blocks}`](#{damage blocks}) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |
+| `{Statuses / Passives}` | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |
+
+</details>
+
+### Valid Nested Blocks
+
+The following blocks all behave as `[status_passive_id]` containers. Each has its own unique parameters listed below its entry.
+
+---
+
+#### `AddPassivesToCharmed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `AddPassivesToMinions`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum |  |
+
+</details>
+
+---
+
+#### `AddSelfStatusToBasicAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `AddSelfStatusToWeapons`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `AddStatusToAllDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `must_do_damage` | Boolean |  |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. |
+| [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `AddStatusToBasicAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Block | Nested conditional. |
+| [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
+| [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
+| [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. |
+| [`Conditional_Shielded`](#conditional_shielded) | Block | Nested conditional. |
+| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `AddStatusToBasicMeleeAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `AddStatusToElementDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. |
+| [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `AddStatusToKnockbackDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `AddStatusToSpells`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `AddStatusToTrampleDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `AddStatusToWeapons`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `AdventureTokenPassivePool`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `ApplyPassives`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `ApplyStatusIfCrit`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `ApplyStatusesToRandomEnemiesEachTurn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `count` | Number | Quantity. |
+
+</details>
+
+---
+
+#### `CatchProjectiles`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `ally_chance` | Number |  |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. |
+
+</details>
+
+---
+
+#### `CharacterTypeGainsStatusAtBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. |
+| [`Conditional_Flying`](#conditional_flying) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `CritsApplyStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `ExtraStatusWhenDealingDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
+| [`Conditional_PartyMember`](#conditional_partymember) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `MeleeRevengeDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `cant_miss` | Boolean |  |
+| `damage` | Number | The base damage properties of an attack. |
+| [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
+| [`elements`](./Arrays.md#array-elements) | Array |  |
+| `knockback` | Number |  |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. |
+
+</details>
+
+---
+
+#### `PassiveAfterXKills`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`passives`](#passives) | Block | Passives granted by equipping this. |
+| `stacks` | Number | Number of stacks or intensity to apply. |
+
+</details>
+
+---
+
+#### `PassiveAtHealthThreshold`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`mode`](./Enums.md#enum-mode) | Enum |  |
+| [`passives`](#passives) | Block | Passives granted by equipping this. |
+| `threshold` | Number |  |
+
+</details>
+
+---
+
+#### `PassiveAtStatThreshold`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`mode`](./Enums.md#enum-mode) | Enum |  |
+| [`passives`](#passives) | Block |  |
+| [`threshold`](#threshold) | Block |  |
+
+</details>
+
+---
+
+#### `PassiveGroup`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `PassiveWhenAffectedByElement`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`element`](./Enums.md#enum-element) | Enum |  |
+| [`passives`](#passives) | Block |  |
+
+</details>
+
+---
+
+#### `PassiveWhenAtFullMana`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `PassiveWhenDead`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `PassiveWhileHasStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`passives`](#passives) | Block | Block listing intrinsic passive modifiers. |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. |
+
+</details>
+
+---
+
+#### `PassiveWhileInMonkMeleeStance`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `RandomPassivePool`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `RandomStatusFromPool`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `RevengeDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `damage` | Number |  |
+| [`effects`](#effects) | Block |  |
+| [`elements`](./Arrays.md#array-elements) | Array |  |
+| `knockback` | Number |  |
+| [`type`](./Enums.md#enum-type) | Enum |  |
+
+</details>
+
+---
+
+#### `StatusAfterCastSpell`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusAfterXTurns`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `stacks` | Number | Number of stacks or intensity to apply. |
+
+</details>
+
+---
+
+#### `StatusAllCharactersOnSpawn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_Boss`](#conditional_boss) | Block | Nested conditional. |
+| [`Conditional_PartyMember`](#conditional_partymember) | Block | Nested conditional. |
+| [`Conditional_Tiny`](#conditional_tiny) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusAlliesEachTurn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `exclude_self` | Boolean |  |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusAlliesOnBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusAlliesOnDeath`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `triggers_limit` | Number |  |
+
+</details>
+
+---
+
+#### `StatusEachRoundEnd`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusEachTurnBegin`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_BadRoll`](#conditional_badroll) | Block | Nested conditional. |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusEachTurnEnd`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_BadRoll`](#conditional_badroll) | Block | Nested conditional. |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
+| [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Block | Nested conditional. |
+| [`Conditional_ManaThreshold`](#conditional_manathreshold) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusEachTurnEndForEachTurn`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusEveryXSpellCasts`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `stacks` | Number | Number of stacks or intensity to apply. |
+
+</details>
+
+---
+
+#### `StatusGroup`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusIfUnusedMovePoints`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusKilledCharacters`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
+| [`Conditional_RandomChance`](#conditional_randomchance) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusKillers`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_Boss`](#conditional_boss) | Block | Nested conditional. |
+| [`Conditional_NotBoss`](#conditional_notboss) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusOnAllyCatDeath`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnBattleEnd`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. |
+| [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
+| [`Conditional_Shielded`](#conditional_shielded) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusOnBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnBreak`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnBreakItem`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnCastSpell`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnCollectPickup`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnDie`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_RandomChance`](#conditional_randomchance) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusOnEatFood`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnEatPill`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnEndMove`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Block | Nested conditional. |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusOnGainCoins`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnHealed`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnKill`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Block | Nested conditional. |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusOnKillEnemy`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnPickupCoins`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnPopCorpse`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnTookDamage`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `StatusOnTookDamageFromAbility`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusOnUseBasicAttack`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `StatusRandomEnemiesOnBattleStart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `count` | Number | Quantity. |
+
+</details>
+
+---
+
+#### `StatusWhenAllySpendsMana`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `TakeBonusTurnWithAIControl`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| `end_of_round` | Boolean |  |
+| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. |
+
+</details>
+
+---
+
+#### `TakeBonusTurnWithStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `TempPassiveWhileHasStatus`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`status`](./Enums.md#enum-status) | Enum | The required status effect. |
+
+</details>
+
+---
+
+#### `additional_passives`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `bonus_passives`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `extra_statuses`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. |
+
+</details>
+
+---
+
+#### `party_status_next_fight`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `passives`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `self_status_next_fight`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+
+</details>
+
+---
+
+#### `statuses`
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Property Key | Type | Definition |
+| :--- | :--- | :--- |
+| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
 
 </details>
 

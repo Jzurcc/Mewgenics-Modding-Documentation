@@ -4086,7 +4086,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `desc`
@@ -8031,7 +8030,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `prompt`
@@ -9621,7 +9619,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `tooltip`
@@ -10169,7 +10166,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `label`
@@ -10401,7 +10397,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `type_icon`
@@ -10429,7 +10424,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"ranged"` | |
 
 </details>
-
 
 ---
 
@@ -10618,7 +10612,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `tooltip_stacks`
@@ -10703,7 +10696,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `reward_text`
@@ -10740,7 +10732,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"FAVOR_TINK_TAGS"` | |
 
 </details>
-
 
 ---
 
@@ -10798,7 +10789,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `form`
@@ -10854,7 +10844,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"ZealotBomb"` | |
 
 </details>
-
 
 ---
 
@@ -10924,7 +10913,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `cutscene`
@@ -10959,7 +10947,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `override_end_option_prompt`
@@ -10988,7 +10975,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `#include`
@@ -11004,7 +10990,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"standard_nodes.gon"` | |
 
 </details>
-
 
 ---
 
@@ -11035,7 +11020,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `description`
@@ -11065,7 +11049,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `partial_animation_suffix`
@@ -11091,7 +11074,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Water"` | |
 
 </details>
-
 
 ---
 
@@ -11121,7 +11103,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `tooltip_stacks_singular`
@@ -11150,7 +11131,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `name_stacks_neg`
@@ -11177,7 +11157,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `desc_multiclass`
@@ -11202,7 +11181,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"PASSIVE_HOOKED_MULTICLASS_DESC"` | |
 
 </details>
-
 
 ---
 
@@ -11229,7 +11207,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `tooltip_stacks_pos`
@@ -11255,7 +11232,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `savefile_string`
@@ -11280,7 +11256,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `ability_icon`
@@ -11303,7 +11278,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `icon_damage_display`
@@ -11324,7 +11298,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `spawnin_animation`
@@ -11341,7 +11314,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"howl"` | |
 
 </details>
-
 
 ---
 
@@ -11361,7 +11333,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `name_reference_applier`
@@ -11379,7 +11350,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_MANALEECHES_NAME_APPLIER"` | |
 
 </details>
-
 
 ---
 
@@ -11399,7 +11369,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `tooltip_stackless_neg`
@@ -11418,7 +11387,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `animation`
@@ -11435,7 +11403,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"rally"` | |
 
 </details>
-
 
 ---
 
@@ -11454,7 +11421,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `icon_damage_display_suffix`
@@ -11472,7 +11438,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `image`
@@ -11489,7 +11454,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `primed_alt_animation`
@@ -11505,7 +11469,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"shootPrimed"` | |
 
 </details>
-
 
 ---
 
@@ -11524,7 +11487,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `SetBrittleImmune`
@@ -11540,7 +11502,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `""` | |
 
 </details>
-
 
 ---
 
@@ -11558,7 +11519,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `damage`
@@ -11574,7 +11534,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"durability"` | |
 
 </details>
-
 
 ---
 
@@ -11592,7 +11551,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `format`
@@ -11608,7 +11566,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"TEAMNAME_FORMAT"` | |
 
 </details>
-
 
 ---
 
@@ -11626,7 +11583,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `icon_shell_frame`
@@ -11643,7 +11599,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `next_fight_from_set`
@@ -11657,7 +11612,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"special/ratlevels"` | |
 
 </details>
-
 
 ---
 
@@ -11675,7 +11629,6 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
 
 ### String: `suffix`
@@ -11692,9 +11645,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -12472,9 +12423,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13193,9 +13142,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13457,9 +13404,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13520,9 +13465,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13557,9 +13500,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13593,9 +13534,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13614,9 +13553,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13634,9 +13571,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13654,9 +13589,7 @@ This document provides exhaustive lists of all pure string values found in the b
 
 </details>
 
-
 ---
-
 
 ---
 
@@ -13673,7 +13606,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `AREA_NAME_TUTORIAL` | |
 
 </details>
-
 
 ---
 

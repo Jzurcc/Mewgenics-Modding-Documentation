@@ -2,12 +2,10 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Chapter ID Enum
 
 > **Associated Files:** `data/chapter_id_enum.gon`
-
 
 ### Context: `ROOT`
 
@@ -86,7 +84,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ## Event Reward Samples
 
 > **Associated Files:** `data/event_rewards_samples.gon`
-
 
 ### Context: `ROOT`
 
@@ -297,7 +294,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/house_boss_info.gon`
 
-
 ### Context: `ROOT`
 
 <details>
@@ -331,7 +327,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ## Particles
 
 > **Associated Files:** `data/particles.gon`
-
 
 ### Context: `ROOT`
 
@@ -544,7 +539,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/particles2d.gon`
 
-
 ### Context: `ROOT`
 
 <details>
@@ -652,7 +646,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/save_file_percentages.gon`
 
-
 ### Context: `complete_checkmarks`
 
 <details>
@@ -677,7 +670,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Numerical Contexts
 
 > The following contexts are numeric keys or array indices.
-
 
 ### Context: `1`
 
@@ -719,7 +711,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/teamnames.gon`
 
-
 ### Context: `ROOT`
 
 <details>
@@ -742,7 +733,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ## Tiles
 
 > **Associated Files:** `data/tiles.gon`
-
 
 ### Context: `ROOT`
 
@@ -805,7 +795,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ## Tilesets
 
 > **Associated Files:** `data/tilesets.gon`
-
 
 ### Context: `ROOT`
 
