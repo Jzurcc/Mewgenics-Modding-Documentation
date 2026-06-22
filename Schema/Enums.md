@@ -23885,6 +23885,8 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
+> **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_Displaceable`](./Abilities_and_Spells.md#context-conditional_displaceable), [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold), [`Else`](./Abilities_and_Spells.md#context-else), [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool), [`XIsTargetHealth`](./Abilities_and_Spells.md#context-xistargethealth), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`effects`](./Abilities_and_Spells.md#context-effects), [`self_damage`](./Abilities_and_Spells.md#context-self_damage), [`ROOT`](./Enemy_AI.md#context-root), [`bad`](./Events_and_Encounters.md#context-bad), [`rare`](./Events_and_Encounters.md#context-rare), [`AbilityHealthThreshold`](./Items_and_Equipment.md#context-abilityhealththreshold), [`StatDependentPassive`](./Items_and_Equipment.md#context-statdependentpassive)
+
 This is not a strict Enum, but rather a representation of inline math equations. In the Mewgenics engine, many numeric fields can accept a math equation string instead of a raw number.
 
 **Supported Functions:**<br>

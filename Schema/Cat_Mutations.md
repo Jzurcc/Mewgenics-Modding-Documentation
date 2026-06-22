@@ -834,7 +834,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/8) |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum/String |  | 8 |
+| `desc` | String |  | 8 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 8 |
 | `divine_shield` | Number |  | 1 |
 | `shield` | Number |  | 1 |
@@ -851,7 +851,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/8) |
 | :--- | :--- | :--- | :--- |
-| `desc` | String |  | 8 |
+| [`desc`](./Enums.md#enum-desc) | Enum/String |  | 8 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 8 |
 | `cha` | Number |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum/String |  | 1 |
@@ -1040,7 +1040,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/6) |
 | :--- | :--- | :--- | :--- |
-| `desc` | String |  | 6 |
+| [`desc`](./Enums.md#enum-desc) | Enum/String |  | 6 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 6 |
 | `spd` | Number |  | 2 |
 | `cha` | Number |  | 1 |
@@ -1096,7 +1096,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/6) |
 | :--- | :--- | :--- | :--- |
-| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array |  | 6 |
+| `ScatterCoins` | Number |  | 6 |
 
 </details>
 
@@ -1204,7 +1204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/5) |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | Enum/String |  | 5 |
+| `desc` | String |  | 5 |
 | [`passives`](./Cat_Mutations.md#context-passives) | Block |  | 5 |
 | `con` | Number |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum/String |  | 1 |

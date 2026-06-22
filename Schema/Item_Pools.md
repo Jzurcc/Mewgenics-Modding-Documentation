@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `uncommon` | Number |  | 12 |
 | `very_rare` | Number |  | 11 |
 | `common` | Number |  | 10 |
-| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Enum/String |  | 6 |
+| `current_chapter_common` | Number |  | 6 |
 | `current_chapter_rare` | Number |  | 6 |
 | `current_chapter_uncommon` | Number |  | 6 |
 | `current_chapter_very_rare` | Number |  | 6 |

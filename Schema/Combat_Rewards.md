@@ -85,7 +85,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/4) |
 | :--- | :--- | :--- | :--- |
-| [`coins_bonus`](./Enums.md#enum-coins_bonus) | Enum/String |  | 4 |
+| `coins_bonus` | Number |  | 4 |
 | `food_bonus` | Number |  | 4 |
 | [`boss`](./Combat_Rewards.md#context-boss) | Block |  | 3 |
 | [`hard`](./Combat_Rewards.md#context-hard) | Block |  | 3 |

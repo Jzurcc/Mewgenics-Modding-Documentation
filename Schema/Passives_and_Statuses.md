@@ -617,8 +617,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/14) |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 14 |
-| [`number`](./Arrays.md#array-number) | Array |  | 13 |
+| [`object`](./Enums.md#enum-object) | Enum/String |  | 14 |
+| `number` | Number |  | 13 |
 
 </details>
 
@@ -709,7 +709,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum/String | Applies the 'VisualFXTile' effect. | 12 |
 | [`SpreadDisease`](./Passives_and_Statuses.md#context-spreaddisease) | Block | Provides a chance to transmit a disease status to adjacent targets. | 7 |
-| [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 6 |
+| `Stun` | Number | Applies the 'Stun' effect. | 6 |
 | [`Freeze`](./Arrays.md#array-freeze) | Array | Applies the 'Freeze' effect. | 3 |
 | `Burn` | Number | Applies the 'Burn' effect. | 2 |
 | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies the 'Charmed' effect. | 2 |
@@ -1428,7 +1428,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/3) |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Arrays.md#array-element) | Array | The specific element type required or applied. | 3 |
+| [`element`](./Enums.md#enum-element) | Enum/String | The specific element type required or applied. | 3 |
 | `reduction` | Number |  | 3 |
 
 </details>
@@ -1684,7 +1684,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum/String | The ID of the ability to trigger or reference. | 2 |
-| [`range`](./Enums.md#enum-range) | Enum/String | Distance or area of effect in tiles. | 2 |
+| `range` | Number | Distance or area of effect in tiles. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum/String | The specific entity tag required or applied. | 2 |
 
 </details>

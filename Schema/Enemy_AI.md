@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `distance_to_character` | Number |  | 55 |
 | `distance_to_enemy` | Number |  | 55 |
 | `face_closest_enemy` | Number |  | 55 |
-| [`preferred_distance`](./Enums.md#enum-preferred_distance) | Enum/String |  | 55 |
+| [`preferred_distance`](./Enums.md#enum-math_equation) | Equation |  | 55 |
 | `total_distance_moved` | Number |  | 55 |
 | `accurate_knockback` | Boolean |  | 32 |
 | `buff_ally` | Number |  | 32 |
@@ -43,8 +43,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `revive_ally_corpse` | Number |  | 32 |
 | `revive_enemy_corpse` | Number |  | 32 |
 | `spawn_object` | Number |  | 32 |
-| `spawn_object_distance_to_ally` | Number |  | 32 |
-| `spawn_object_distance_to_enemy` | Number |  | 32 |
+| [`spawn_object_distance_to_ally`](./Enums.md#enum-spawn_object_distance_to_ally) | Enum/String |  | 32 |
+| [`spawn_object_distance_to_enemy`](./Enums.md#enum-spawn_object_distance_to_enemy) | Enum/String |  | 32 |
 | [`spend_mana_scale`](./Enums.md#enum-spend_mana_scale) | Enum/String |  | 32 |
 | `flat_cast_bonus` | Number |  | 5 |
 | `randomness` | Number |  | 5 |
@@ -55,7 +55,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`distance_to_corpse`](./Enums.md#enum-distance_to_corpse) | Enum/String |  | 3 |
 | `simple` | Boolean |  | 3 |
 | `cap_distance_to_enemy` | Number |  | 2 |
-| [`distance_to_water`](./Enums.md#enum-distance_to_water) | Enum/String |  | 2 |
+| `distance_to_water` | Number |  | 2 |
 | `face_aggro_target` | Number |  | 2 |
 | `spawn_object_preferred_distance` | Number |  | 2 |
 | `cap_distance_to_character` | Number |  | 1 |

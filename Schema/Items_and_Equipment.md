@@ -141,7 +141,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum/String | Applies or references the 'ElementImmune' effect/state. | 6 |
 | `Flying` | Number | Applies or references the 'Flying' effect/state. | 6 |
 | [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform) | Block | Applies or references the 'ItemAuxTransform' effect/state. | 6 |
-| `SetBrittleImmune` | String | Applies or references the 'SetBrittleImmune' effect/state. | 6 |
+| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | Enum/String | Applies or references the 'SetBrittleImmune' effect/state. | 6 |
 | [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie) | Block | Event Trigger: Applies statuses when this action occurs. | 6 |
 | `Trample` | Number | Applies or references the 'Trample' effect/state. | 6 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 5 |
@@ -162,7 +162,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum/String | Applies or references the 'AmplifyStatus' effect/state. | 4 |
 | `BreakAtAux` | Number | Applies or references the 'BreakAtAux' effect/state. | 4 |
 | [`ClassManaCostReduction`](./Items_and_Equipment.md#context-classmanacostreduction) | Block | Applies or references the 'ClassManaCostReduction' effect/state. | 4 |
-| [`DeathRattle`](./Enums.md#enum-deathrattle) | Enum/String | Applies or references the 'DeathRattle' effect/state. | 4 |
+| [`DeathRattle`](./Items_and_Equipment.md#context-deathrattle) | Block | Applies or references the 'DeathRattle' effect/state. | 4 |
 | `DepressionAura` | Number | Applies or references the 'DepressionAura' effect/state. | 4 |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 4 |
 | `ExtraBasicAttacks` | Number | Applies or references the 'ExtraBasicAttacks' effect/state. | 4 |
@@ -217,7 +217,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyStatusesToRandomEnemiesEachTurn`](./Items_and_Equipment.md#context-applystatusestorandomenemieseachturn) | Block | Applies or references the 'ApplyStatusesToRandomEnemiesEachTurn' effect/state. | 2 |
 | [`ArmorBreakOnHit`](./Items_and_Equipment.md#context-armorbreakonhit) | Block | Applies or references the 'ArmorBreakOnHit' effect/state. | 2 |
 | `AutoEquipConsumables` | Number | Applies or references the 'AutoEquipConsumables' effect/state. | 2 |
-| `BackstabCritChance` | Number | Applies or references the 'BackstabCritChance' effect/state. | 2 |
+| [`BackstabCritChance`](./Enums.md#enum-backstabcritchance) | Enum/String | Applies or references the 'BackstabCritChance' effect/state. | 2 |
 | [`BonusAbility`](./Enums.md#enum-bonusability) | Enum/String | Applies or references the 'BonusAbility' effect/state. | 2 |
 | [`BoostWeaponDamage`](./Items_and_Equipment.md#context-boostweapondamage) | Block | Applies or references the 'BoostWeaponDamage' effect/state. | 2 |
 | `BreakWhenNoShield` | Number | Applies or references the 'BreakWhenNoShield' effect/state. | 2 |
@@ -498,8 +498,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/12) |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 12 |
-| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 11 |
+| [`object`](./Enums.md#enum-object) | Enum/String |  | 12 |
+| [`chance`](./Enums.md#enum-chance) | Enum/String | Probability (0.0 to 1.0 or percentage) of this occurring. | 11 |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum/String |  | 5 |
 
 </details>
@@ -1172,6 +1172,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+
 | Property Key | Type | Definition | Count (X/3) |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum/String |  | 3 |
@@ -1430,7 +1432,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Enum/String |  | 2 |
+| `crit_chance` | Number |  | 2 |
 | `damage` | Number | The base damage properties of an attack. | 2 |
 
 </details>

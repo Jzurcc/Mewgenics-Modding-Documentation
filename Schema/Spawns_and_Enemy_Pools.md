@@ -15,7 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`editor`](./Spawns_and_Enemy_Pools.md#context-editor) | Block |  | 550 |
 | [`object`](./Enums.md#enum-object) | Enum/String |  | 543 |
-| [`value`](./Enums.md#enum-value) | Enum/String |  | 377 |
+| `value` | Number |  | 377 |
 | `early_spawn` | Boolean |  | 10 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum/String |  | 6 |
 | [`tag_location`](./Enums.md#enum-tag_location) | Enum/String |  | 5 |

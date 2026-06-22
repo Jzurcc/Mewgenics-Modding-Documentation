@@ -123,7 +123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count (X/27) |
 | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array |  | 27 |
-| [`object`](./Arrays.md#array-object) | Array |  | 19 |
+| [`object`](./Enums.md#enum-object) | Enum/String |  | 19 |
 | [`tile`](./Enums.md#enum-tile) | Enum/String |  | 7 |
 | [`trap`](./Enums.md#enum-trap) | Enum/String |  | 2 |
 
@@ -206,7 +206,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Enums.md#enum-object) | Enum/String |  | 3 |
 | `max_radius` | Number |  | 2 |
 | `min_radius` | Number |  | 2 |
-| [`puddle_tile`](./Enums.md#enum-puddle_tile) | Enum/String |  | 2 |
+| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array |  | 2 |
 | [`number`](./Arrays.md#array-number) | Array |  | 1 |
 
 </details>

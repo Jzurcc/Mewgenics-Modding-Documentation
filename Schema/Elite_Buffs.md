@@ -39,10 +39,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`EliteTint`](./Arrays.md#array-elitetint) | Array |  | 30 |
 | [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum/String |  | 19 |
-| `HealthMultiplier` | Number |  | 15 |
+| [`HealthMultiplier`](./Enums.md#enum-healthmultiplier) | Enum/String |  | 15 |
 | [`EliteFlatTint`](./Arrays.md#array-eliteflattint) | Array |  | 11 |
 | `NonStackingShield` | Number |  | 8 |
-| `SizeScale` | Number |  | 8 |
+| [`SizeScale`](./Enums.md#enum-sizescale) | Enum/String |  | 8 |
 | [`StatusEachRoundBegin`](./Elite_Buffs.md#context-statuseachroundbegin) | Block |  | 8 |
 | [`DepressionAura`](./Elite_Buffs.md#context-depressionaura) | Block |  | 4 |
 | `DodgeChance` | Number |  | 3 |

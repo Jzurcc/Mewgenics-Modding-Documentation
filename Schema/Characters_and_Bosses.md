@@ -84,12 +84,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `name` | String | Localization key for the character's name. | 517 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum/String |  | 461 |
 | `tooltip` | String |  | 409 |
-| [`shadow_size`](./Enums.md#enum-shadow_size) | Enum/String |  | 151 |
+| `shadow_size` | Number |  | 151 |
 | [`scale`](./Enums.md#enum-scale) | Enum/String |  | 149 |
 | `uifloaters_offset` | Number |  | 149 |
 | [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum/String |  | 127 |
 | [`water_mask`](./Enums.md#enum-water_mask) | Enum/String |  | 83 |
-| [`spawnin_animation`](./Enums.md#enum-spawnin_animation) | Enum/String |  | 37 |
+| `spawnin_animation` | String |  | 37 |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 33 |
 | `piece_alt_frame` | Number |  | 27 |
 | [`shadow`](./Enums.md#enum-shadow) | Enum/String |  | 23 |
@@ -174,7 +174,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `can_collect_coins` | Boolean |  | 10 |
 | `deathpoof_size` | Number |  | 10 |
 | `dispersed_bonus_turns_consider_initiative` | Boolean |  | 10 |
-| [`held_coins`](./Arrays.md#array-held_coins) | Array |  | 10 |
+| `held_coins` | Number |  | 10 |
 | `initial_health` | Number |  | 10 |
 | `can_eat_food` | Boolean |  | 9 |
 | `can_grant_extra_turns` | Boolean |  | 8 |
@@ -314,7 +314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count (X/106) |
 | :--- | :--- | :--- | :--- |
 | [`FormChanger`](./Characters_and_Bosses.md#context-formchanger) | Block | AI Role: Designates the character as one that frequently shifts forms. | 106 |
-| [`SpawnOnDeath`](./Enums.md#enum-spawnondeath) | Enum/String | Event Trigger: Spawns a specific entity when killed. | 79 |
+| [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath) | Block | Event Trigger: Spawns a specific entity when killed. | 79 |
 | `Trample` | Number | Applies or references the 'Trample' effect/state. | 76 |
 | `Robot` | Number | Character Form: Behavior and stats for the 'Robot' state. | 46 |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 38 |
@@ -367,7 +367,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 6 |
 | [`InnateElement`](./Enums.md#enum-innateelement) | Enum/String | Applies or references the 'InnateElement' effect/state. | 6 |
 | `KaijuKnockbackImmune` | Number | Applies or references the 'KaijuKnockbackImmune' effect/state. | 6 |
-| [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource) | Block | AI Movement: Closes distance on the last source of damage. | 6 |
+| [`MoveTowardsDamageSource`](./Enums.md#enum-movetowardsdamagesource) | Enum/String | AI Movement: Closes distance on the last source of damage. | 6 |
 | `OverrideMaxHealth` | Number | Applies or references the 'OverrideMaxHealth' effect/state. | 6 |
 | [`SecurityBotProtect`](./Characters_and_Bosses.md#context-securitybotprotect) | Block | AI Logic: Guarding behavior for Security Bot units. | 6 |
 | [`TagGreed`](./Enums.md#enum-taggreed) | Enum/String | Applies or references the 'TagGreed' effect/state. | 6 |
@@ -408,7 +408,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ArmorPickup`](./Characters_and_Bosses.md#context-armorpickup) | Block | Pickup Logic: Defines what happens when an armor item is collected. | 3 |
 | [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Enum/String | Applies or references the 'BaseStatMultiply' effect/state. | 3 |
 | [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Applies or references the 'BonusTurnPattern' effect/state. | 3 |
-| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array | Applies or references the 'CanMutateTo' effect/state. | 3 |
+| [`CanMutateTo`](./Enums.md#enum-canmutateto) | Enum/String | Applies or references the 'CanMutateTo' effect/state. | 3 |
 | [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum/String | Applies or references the 'DigestDeadBodies' effect/state. | 3 |
 | `FaceShield` | Number | Applies or references the 'FaceShield' effect/state. | 3 |
 | [`FormChangeHealthThreshold`](./Characters_and_Bosses.md#context-formchangehealththreshold) | Block | Logic: Changes form when health crosses a threshold. | 3 |
@@ -1113,7 +1113,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count (X/12) |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum/String | The specific ability ID to cast. | 12 |
-| [`threshold`](./Enums.md#enum-threshold) | Enum/String |  | 11 |
+| `threshold` | Number |  | 11 |
 | `even_if_stunned` | Boolean |  | 6 |
 | `immediate` | Boolean |  | 5 |
 | `use_ai` | Boolean |  | 2 |
@@ -1174,7 +1174,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Enums.md#enum-object) | Enum/String |  | 12 |
 | `good` | Boolean |  | 8 |
 | `spawn_on_death_hit` | Boolean |  | 6 |
-| `chance` | Number | Probability (0.0 to 1.0) of executing this action. | 4 |
+| [`chance`](./Enums.md#enum-chance) | Enum/String | Probability (0.0 to 1.0) of executing this action. | 4 |
 | `coins` | Number |  | 2 |
 | [`auto_cast`](./Enums.md#enum-auto_cast) | Enum/String |  | 1 |
 | `consider_all_layers` | Boolean |  | 1 |
@@ -1627,8 +1627,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count (X/5) |
 | :--- | :--- | :--- | :--- |
-| [`Antidote`](./Enums.md#enum-antidote) | Enum/String | Applies or references the 'Antidote' effect/state. | 5 |
-| [`Blessing`](./Enums.md#enum-blessing) | Enum/String | Applies or references the 'Blessing' effect/state. | 5 |
+| `Antidote` | Number | Applies or references the 'Antidote' effect/state. | 5 |
+| `Blessing` | Number | Applies or references the 'Blessing' effect/state. | 5 |
 | `BigCatnip` | Number | Applies or references the 'BigCatnip' effect/state. | 4 |
 | `BigScrap` | Number | Applies or references the 'BigScrap' effect/state. | 4 |
 | `BiggestFood` | Number | Applies or references the 'BiggestFood' effect/state. | 4 |
@@ -1999,7 +1999,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`form_above`](./Enums.md#enum-form_above) | Enum/String |  | 3 |
 | [`form_below`](./Enums.md#enum-form_below) | Enum/String |  | 3 |
-| `threshold` | Number |  | 3 |
+| [`threshold`](./Enums.md#enum-threshold) | Enum/String |  | 3 |
 | `count_shield` | Boolean |  | 1 |
 
 </details>
@@ -2107,6 +2107,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 <details>
 <summary><b>Expand</b></summary>
+
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count (X/3) |
 | :--- | :--- | :--- | :--- |
@@ -2658,8 +2660,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 <details>
 <summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count (X/2) |
 | :--- | :--- | :--- | :--- |
