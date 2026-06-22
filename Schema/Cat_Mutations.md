@@ -1,46 +1,166 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
-
 ## Cat Mutations
 
 > **Associated Files:** `data/mutations/`
+
+
+### Context: `ROOT`
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 489
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 489 |
+| [`desc`](./Strings.md#string-desc) | String | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 272 |
+| [`passives`](./Cat_Mutations.md#context-passives) | Block | Examples: `{ ... }` | 271 |
+| `cha` | Number | Examples: `2, -1, 1` | 144 |
+| `spd` | Number | Examples: `1, -1, -2` | 133 |
+| `int` | Number | Examples: `2, -1, 1` | 132 |
+| `con` | Number | Examples: `-2, -3, 1` | 131 |
+| `str` | Number | Examples: `2, -1, 1` | 126 |
+| `lck` | Number | Examples: `2, -1, 1` | 119 |
+| `dex` | Number | Examples: `2, -1, -2` | 118 |
+| [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack) | Block | Examples: `{ ... }` | 51 |
+| `Thorns` | Number | Examples: `2, 1` | 16 |
+| `shield` | Number | Examples: `12, 5, 10` | 16 |
+| [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum | Examples: `Ice, Electric, Water` | 13 |
+| `DodgeChance` | Number | Examples: `2, 5, 10` | 12 |
+| [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#context-passivewhenaffectedbyelement) | Block | Examples: `{ ... }` | 11 |
+| [`RevengeDamage`](./Cat_Mutations.md#context-revengedamage) | Block | Examples: `{ ... }` | 9 |
+| `HealthRegenUp` | Number | Examples: `2, 1` | 7 |
+| [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage) | Block | Examples: `{ ... }` | 7 |
+| [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum | Examples: `CharmedKitten, CharmedFly` | 7 |
+| [`SpawnThingOnDamage`](./Cat_Mutations.md#context-spawnthingondamage) | Block | Examples: `{ ... }` | 7 |
+| `AddBonusRange` | Number | Examples: `1` | 6 |
+| [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack) | Block | Examples: `{ ... }` | 6 |
+| [`StatusOnTookDamage`](./Cat_Mutations.md#context-statusontookdamage) | Block | Examples: `{ ... }` | 6 |
+| `Brace` | Number | Examples: `1` | 5 |
+| [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin) | Block | Examples: `{ ... }` | 5 |
+| [`BlacklistPickupType`](./Enums.md#enum-blacklistpickuptype) | Enum | Examples: `food, catnip` | 4 |
+| `Bleed` | Number | Examples: `1` | 4 |
+| `BleedThorns` | Number | Examples: `2, 1` | 4 |
+| [`DisableAbilitiesWithTag`](./Enums.md#enum-disableabilitieswithtag) | Enum | Examples: `musical, consumable` | 4 |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Examples: `Ice, Electric` | 4 |
+| `IgnoreTiles` | Number | Examples: `1` | 4 |
+| [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum | Examples: `Fighter, Mage, Hunter` | 4 |
+| [`SpawnEachTurn`](./Cat_Mutations.md#context-spawneachturn) | Block | Examples: `{ ... }` | 4 |
+| `WaterWalk` | Number | Examples: `1` | 4 |
+| `divine_shield` | Number | Examples: `1` | 4 |
+| `AddBonusMeleeRange` | Number | Examples: `1` | 3 |
+| `AddCorpseHealth` | Number | Examples: `2, 100` | 3 |
+| `AddLevelUpRerolls` | Number | Examples: `1` | 3 |
+| `Blind` | Number | Examples: `-1` | 3 |
+| `Bruise` | Number | Examples: `2, 1` | 3 |
+| `KineticSpikes` | Number | Examples: `1` | 3 |
+| `Quivered` | Number | Examples: `1` | 3 |
+| [`ReplaceBasicMove`](./Enums.md#enum-replacebasicmove) | Enum | Examples: `Shadowstep, ToadJump_BasicMove` | 3 |
+| [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum | Examples: `BasicJump, BasicDig` | 3 |
+| [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#context-spawnonbattlestartrandomemptytile) | Block | Examples: `{ ... }` | 3 |
+| [`StatusEachTurnEnd`](./Cat_Mutations.md#context-statuseachturnend) | Block | Examples: `{ ... }` | 3 |
+| `Trample` | Number | Examples: `3` | 3 |
+| [`YOffset`](./Enums.md#enum-yoffset) | Enum | Examples: `.25` | 3 |
+| `AddKnockbackDamage` | Number | Examples: `1` | 2 |
+| `BackstabImmunity` | Number | Examples: `1` | 2 |
+| `Confusion` | Number | Examples: `2` | 2 |
+| `CritChanceUp` | Number | Examples: `5, 10` | 2 |
+| [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum | Examples: `Bottles, WaterBottle_Full` | 2 |
+| `HouseFoodRequirementMultiplier` | Number | Examples: `0` | 2 |
+| `Immobile` | Number | Examples: `1` | 2 |
+| `MissChance` | Number | Examples: `20, 10` | 2 |
+| `Poison` | Number | Examples: `1` | 2 |
+| `PoisonThorns` | Number | Examples: `2, 1` | 2 |
+| [`PoopWhenHit`](./Enums.md#enum-poopwhenhit) | Enum | Examples: `Poop` | 2 |
+| `ReflectProjectiles` | Number | Examples: `25, 10` | 2 |
+| `ShowHiddenThings` | Number | Examples: `1` | 2 |
+| [`StatusEveryXSpellCasts`](./Cat_Mutations.md#context-statuseveryxspellcasts) | Block | Examples: `{ ... }` | 2 |
+| [`StatusKilledCharacters`](./Cat_Mutations.md#context-statuskilledcharacters) | Block | Examples: `{ ... }` | 2 |
+| [`StatusOnBattleEnd`](./Cat_Mutations.md#context-statusonbattleend) | Block | Examples: `{ ... }` | 2 |
+| [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove) | Block | Examples: `{ ... }` | 2 |
+| [`StatusOnTookDamageFromAbility`](./Cat_Mutations.md#context-statusontookdamagefromability) | Block | Examples: `{ ... }` | 2 |
+| `Vegan` | Number | Examples: `1` | 2 |
+| [`override_move`](./Enums.md#enum-override_move) | Enum | Examples: `BasicJump` | 2 |
+| [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum | Examples: `SkunkTail` | 1 |
+| [`AbilityWhenTaggedCharacterMovesNear`](./Cat_Mutations.md#context-abilitywhentaggedcharactermovesnear) | Block | Examples: `{ ... }` | 1 |
+| [`AddDamageToElementDamage`](./Cat_Mutations.md#context-adddamagetoelementdamage) | Block | Examples: `{ ... }` | 1 |
+| `AddInitiative` | Number | Examples: `-20` | 1 |
+| `AddLootMultiplier` | Number | Examples: `1` | 1 |
+| `AddManaRegen` | Number | Examples: `1` | 1 |
+| `AddMovement` | Number | Examples: `1` | 1 |
+| [`AddTemporaryEffectsToBasicAttack`](./Cat_Mutations.md#context-addtemporaryeffectstobasicattack) | Block | Examples: `{ ... }` | 1 |
+| `AlphaTurns` | Number | Examples: `1` | 1 |
+| [`BackflipWhenTargeted`](./Cat_Mutations.md#context-backflipwhentargeted) | Block | Examples: `{ ... }` | 1 |
+| `BackstabFront` | Number | Examples: `1` | 1 |
+| `BasicAttackCantMiss` | Number | Examples: `1` | 1 |
+| `BoostWeaponDamage` | Number | Examples: `1` | 1 |
+| `CanRemoveCursedItems` | Number | Examples: `1` | 1 |
+| [`ChanceToBackflip`](./Cat_Mutations.md#context-chancetobackflip) | Block | Examples: `{ ... }` | 1 |
+| [`ClassManaCostReduction`](./Cat_Mutations.md#context-classmanacostreduction) | Block | Examples: `{ ... }` | 1 |
+| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum | Examples: `random` | 1 |
+| [`CounterAttack`](./Cat_Mutations.md#context-counterattack) | Block | Examples: `{ ... }` | 1 |
+| `DamageUp` | Number | Examples: `1` | 1 |
+| `DepressionAura` | Number | Examples: `1` | 1 |
+| `DodgeChance_Status` | Number | Examples: `10` | 1 |
+| `DrinkWater` | Number | Examples: `1` | 1 |
+| [`EquipRandomTemporaryItemFromPool`](./Enums.md#enum-equiprandomtemporaryitemfrompool) | Enum | Examples: `pills` | 1 |
+| `ExtraBasicAttacks` | Number | Examples: `2` | 1 |
+| `FlatHealWhenDealDamage` | Number | Examples: `1` | 1 |
+| [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum | Examples: `Water` | 1 |
+| `GainManaWhenAnythingDies` | Number | Examples: `1` | 1 |
+| `KnockbackImmunity` | Number | Examples: `1` | 1 |
+| `MakeBasicAttackPull` | Number | Examples: `1` | 1 |
+| `ManaCostReduction` | Number | Examples: `1` | 1 |
+| [`MoveAwayFromDamageSource`](./Enums.md#enum-moveawayfromdamagesource) | Enum | Examples: `BasicJump` | 1 |
+| [`MoveWhenDamaged`](./Cat_Mutations.md#context-movewhendamaged) | Block | Examples: `{ ... }` | 1 |
+| [`PassiveWhenAtFullMana`](./Cat_Mutations.md#context-passivewhenatfullmana) | Block | Examples: `{ ... }` | 1 |
+| [`PassiveWhileHasStatus`](./Cat_Mutations.md#context-passivewhilehasstatus) | Block | Examples: `{ ... }` | 1 |
+| `RandomStatUp` | Number | Examples: `1` | 1 |
+| [`ReplaceBasicAttack_Mutation`](./Enums.md#enum-replacebasicattack_mutation) | Enum | Examples: `FetusSpit` | 1 |
+| `Slow` | Number | Examples: `-1` | 1 |
+| [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#context-spawnextrathingsonbattlestart) | Block | Examples: `{ ... }` | 1 |
+| [`StatusEachRoundEnd`](./Cat_Mutations.md#context-statuseachroundend) | Block | Examples: `{ ... }` | 1 |
+| [`StatusEveryXSpellCastsEachTurn`](./Cat_Mutations.md#context-statuseveryxspellcastseachturn) | Block | Examples: `{ ... }` | 1 |
+| [`StatusIfDidntMove`](./Cat_Mutations.md#context-statusifdidntmove) | Block | Examples: `{ ... }` | 1 |
+| [`StatusIfUnusedMovePoints`](./Cat_Mutations.md#context-statusifunusedmovepoints) | Block | Examples: `{ ... }` | 1 |
+| [`StatusImmunity`](./Arrays.md#array-statusimmunity) | Array | Examples: `[ Freeze Slow ]` | 1 |
+| [`StatusOnAllyCatDeath`](./Cat_Mutations.md#context-statusonallycatdeath) | Block | Examples: `{ ... }` | 1 |
+| [`StatusOnCastSpell`](./Cat_Mutations.md#context-statusoncastspell) | Block | Examples: `{ ... }` | 1 |
+| [`StatusOnDie`](./Cat_Mutations.md#context-statusondie) | Block | Examples: `{ ... }` | 1 |
+| [`StatusOnEatFood`](./Cat_Mutations.md#context-statusoneatfood) | Block | Examples: `{ ... }` | 1 |
+| [`StatusOnKill`](./Cat_Mutations.md#context-statusonkill) | Block | Examples: `{ ... }` | 1 |
+| `SwapHighestAndLowestStat` | Number | Examples: `1` | 1 |
+| [`attack`](./Enums.md#enum-attack) | Enum | Examples: `FetusSpit` | 1 |
+| `speed` | Number | Examples: `-4` | 1 |
+
+</details>
+
+---
 
 ### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 284
+> **Total Count:** 284
 
-> **Referenced by:** [`-2`](#context--2), [`1026`](#context-1026), [`1029`](#context-1029), [`1500`](#context-1500), [`300`](#context-300), [`301`](#context-301), [`302`](#context-302), [`303`](#context-303), [`304`](#context-304), [`305`](#context-305), [`306`](#context-306), [`307`](#context-307), [`308`](#context-308), [`309`](#context-309), [`310`](#context-310), [`311`](#context-311), [`312`](#context-312), [`313`](#context-313), [`314`](#context-314), [`315`](#context-315), [`316`](#context-316), [`317`](#context-317), [`318`](#context-318), [`319`](#context-319), [`320`](#context-320), [`321`](#context-321), [`322`](#context-322), [`323`](#context-323), [`324`](#context-324), [`325`](#context-325), [`326`](#context-326), [`327`](#context-327), [`328`](#context-328), [`329`](#context-329), [`330`](#context-330), [`331`](#context-331), [`332`](#context-332), [`333`](#context-333), [`334`](#context-334), [`335`](#context-335), [`336`](#context-336), [`337`](#context-337), [`338`](#context-338), [`339`](#context-339), [`340`](#context-340), [`341`](#context-341), [`342`](#context-342), [`343`](#context-343), [`344`](#context-344), [`345`](#context-345), [`346`](#context-346), [`347`](#context-347), [`348`](#context-348), [`349`](#context-349), [`351`](#context-351), [`352`](#context-352), [`353`](#context-353), [`442`](#context-442), [`702`](#context-702), [`703`](#context-703), [`704`](#context-704), [`705`](#context-705), [`706`](#context-706), [`707`](#context-707), [`750`](#context-750), [`751`](#context-751), [`752`](#context-752), [`753`](#context-753), [`754`](#context-754), [`755`](#context-755), [`756`](#context-756), [`757`](#context-757), [`758`](#context-758), [`759`](#context-759), [`760`](#context-760), [`761`](#context-761), [`762`](#context-762), [`763`](#context-763), [`900`](#context-900), [`PassiveWhenAffectedByElement`](#context-passivewhenaffectedbyelement), [`PassiveWhileHasStatus`](#context-passivewhilehasstatus)
+> **Referenced by:** [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#context-passivewhenaffectedbyelement), [`PassiveWhileHasStatus`](./Cat_Mutations.md#context-passivewhilehasstatus), [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block |  | 52 |
-| [`PassiveWhenAffectedByElement`](#context-passivewhenaffectedbyelement) | Block |  | 12 |
-| [`RevengeDamage`](#context-revengedamage) | Block |  | 9 |
-| [`MeleeRevengeDamage`](#context-meleerevengedamage) | Block |  | 7 |
-| [`AddStatusToBasicMeleeAttack`](#context-addstatustobasicmeleeattack) | Block |  | 6 |
-| [`StatusOnTookDamage`](#context-statusontookdamage) | Block |  | 6 |
-| [`StatusEachTurnBegin`](#context-statuseachturnbegin) | Block |  | 5 |
-| [`StatusEachTurnEnd`](#context-statuseachturnend) | Block |  | 4 |
-| [`StatusEveryXSpellCasts`](#context-statuseveryxspellcasts) | Block |  | 2 |
-| [`StatusKilledCharacters`](#context-statuskilledcharacters) | Block |  | 2 |
-| [`StatusOnBattleEnd`](#context-statusonbattleend) | Block |  | 2 |
-| [`StatusOnEndMove`](#context-statusonendmove) | Block |  | 2 |
-| [`StatusOnTookDamageFromAbility`](#context-statusontookdamagefromability) | Block |  | 2 |
-| [`PassiveWhenAtFullMana`](#context-passivewhenatfullmana) | Block |  | 1 |
-| [`PassiveWhileHasStatus`](#context-passivewhilehasstatus) | Block |  | 1 |
-| [`StatusEachRoundEnd`](#context-statuseachroundend) | Block |  | 1 |
-| [`StatusIfUnusedMovePoints`](#context-statusifunusedmovepoints) | Block |  | 1 |
-| [`StatusOnAllyCatDeath`](#context-statusonallycatdeath) | Block |  | 1 |
-| [`StatusOnCastSpell`](#context-statusoncastspell) | Block |  | 1 |
-| [`StatusOnDie`](#context-statusondie) | Block |  | 1 |
-| [`StatusOnEatFood`](#context-statusoneatfood) | Block |  | 1 |
-| [`StatusOnKill`](#context-statusonkill) | Block |  | 1 |
+| `HealthRegenUp` | Number | Examples: `2, 1` | 6 |
+| `AllStatsUp` | Number | Examples: `1` | 3 |
+| `AddManaRegen` | Number | Examples: `1` | 2 |
+| `AddMovement` | Number | Examples: `1` | 2 |
+| [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack) | Block | Examples: `{ ... }` | 1 |
+| `Brace` | Number | Examples: `1` | 1 |
+| `DamageUp` | Number | Examples: `2` | 1 |
+| [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#context-passivewhenaffectedbyelement) | Block | Examples: `{ ... }` | 1 |
+| [`StatusEachTurnEnd`](./Cat_Mutations.md#context-statuseachturnend) | Block | Examples: `{ ... }` | 1 |
+| `WaterWalk` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -51,14 +171,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 52
+> **Total Count:** 52
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root), [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
+| `Knockback` | Number | Examples: `2, 1` | 6 |
+| [`Bleed`](./Arrays.md#array-bleed) | Array | Examples: `[ 3 .1 ], 1` | 5 |
+| [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Examples: `WaterTile, DirtTile` | 5 |
+| [`Fear`](./Arrays.md#array-fear) | Array | Examples: `[ 1 .1 ], [ 1 .15 ], [ 1 .05 ]` | 5 |
+| `Poison` | Number | Examples: `1` | 5 |
+| `Burn` | Number | Examples: `1` | 4 |
+| [`Confusion`](./Arrays.md#array-confusion) | Array | Examples: `[ 3 .1 ], [ 1 .15 ], [ 2 .15 ]` | 3 |
+| [`Stun`](./Arrays.md#array-stun) | Array | Examples: `[ 1 .05 ]` | 3 |
+| `Bruise` | Number | Examples: `1` | 2 |
+| `Leeches` | Number | Examples: `1` | 2 |
+| [`Slow`](./Arrays.md#array-slow) | Array | Examples: `[ 1 .1 ], 1` | 2 |
+| [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Examples: `fx_windSpell` | 2 |
+| [`Charmed`](./Arrays.md#array-charmed) | Array | Examples: `[ 1 .10 ]` | 1 |
+| `FaceAway` | Number | Examples: `1` | 1 |
+| `FlatLeech` | Number | Examples: `1` | 1 |
+| [`Freeze`](./Arrays.md#array-freeze) | Array | Examples: `[ 1 .01 ]` | 1 |
+| [`Immobile`](./Arrays.md#array-immobile) | Array | Examples: `[ 1 .05 ]` | 1 |
+| [`Instakill`](./Arrays.md#array-instakill) | Array | Examples: `[ 25 .01 ]` | 1 |
+| [`Petrify`](./Arrays.md#array-petrify) | Array | Examples: `[ 1 .05 ]` | 1 |
+| [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 1 |
+| `SoulLink` | Number | Examples: `1` | 1 |
+| `VaporizeInanimate` | Number | Examples: `1` | 1 |
+| [`Webbed`](./Arrays.md#array-webbed) | Array | Examples: `[ 1 .1 ]` | 1 |
 
 </details>
 
@@ -69,14 +210,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 12
+> **Total Count:** 12
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root), [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum |  | 12 |
-| [`passives`](#context-passives) | Block |  | 12 |
+| [`element`](./Enums.md#enum-element) | Enum | Examples: `water` | 12 |
+| [`passives`](./Cat_Mutations.md#context-passives) | Block | Examples: `{ ... }` | 12 |
 
 </details>
 
@@ -84,19 +225,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `effects`
 
-
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 10
+> **Total Count:** 10
 
-> **Referenced by:** [`MeleeRevengeDamage`](#context-meleerevengedamage), [`RevengeDamage`](#context-revengedamage)
+> **Referenced by:** [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage), [`RevengeDamage`](./Cat_Mutations.md#context-revengedamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
+| [`Fear`](./Arrays.md#array-fear) | Array | Examples: `[ 1 .05 ]` | 4 |
+| [`Confusion`](./Arrays.md#array-confusion) | Array | Examples: `[ 1 .1 ]` | 2 |
+| [`Blind`](./Arrays.md#array-blind) | Array | Examples: `[ 1 .10 ]` | 1 |
+| [`Charmed`](./Arrays.md#array-charmed) | Array | Examples: `[ 1 .15 ]` | 1 |
+| [`Petrify`](./Arrays.md#array-petrify) | Array | Examples: `[ 1 .05 ]` | 1 |
+| [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -107,15 +250,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 9
+> **Total Count:** 9
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#context-effects) | Block |  | 9 |
-| `damage` | Integer |  | 4 |
-| [`type`](./Enums.md#enum-type) | Enum |  | 4 |
+| [`effects`](./Cat_Mutations.md#context-effects) | Block | Examples: `{ ... }` | 9 |
+| `damage` | Number | Examples: `0` | 4 |
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 4 |
 
 </details>
 
@@ -126,17 +269,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 7
+> **Total Count:** 7
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `knockback` | Integer |  | 4 |
-| `damage` | Integer |  | 2 |
-| [`type`](./Enums.md#enum-type) | Enum |  | 2 |
-| [`effects`](#context-effects) | Block |  | 1 |
+| `knockback` | Number | Examples: `2, 1` | 4 |
+| `damage` | Number | Examples: `0` | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 2 |
+| [`Freeze`](./Arrays.md#array-freeze) | Array | Examples: `[ 1 0.15 ]` | 1 |
+| `Immobile` | Number | Examples: `10` | 1 |
+| [`effects`](./Cat_Mutations.md#context-effects) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -147,15 +291,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 7
+> **Total Count:** 7
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Float |  | 7 |
-| [`object`](./Enums.md#enum-object) | Enum |  | 7 |
-| `good` | Boolean |  | 5 |
+| `chance` | Number | Examples: `20, 100, 10` | 7 |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedFlea, SmallRock, Coin` | 7 |
+| `good` | Boolean | Examples: `false` | 5 |
 
 </details>
 
@@ -166,13 +310,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 6
+> **Total Count:** 6
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `Bleed` | Number | Examples: `1` | 2 |
+| `Knockback` | Number | Examples: `1` | 2 |
+| [`Immobile`](./Arrays.md#array-immobile) | Array | Examples: `[ 1 .1 ]` | 1 |
+| [`KnockUpAndAway`](./Cat_Mutations.md#context-knockupandaway) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -183,13 +330,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 6
+> **Total Count:** 6
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `Charge` | Number | Examples: `1` | 3 |
+| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Examples: `GlassTile` | 2 |
+| `LuckUp` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -200,13 +349,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 5
+> **Total Count:** 5
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`Quivered`](./Arrays.md#array-quivered) | Array | Examples: `[ 1 0.1 ]` | 2 |
+| `MissChance` | Number | Examples: `5` | 1 |
+| [`MoveQuivered`](./Arrays.md#array-movequivered) | Array | Examples: `[ 1 0.1 ]` | 1 |
+| `SpeedUp` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -217,13 +369,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 4
+> **Total Count:** 4
 
-> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack), [`StatusOnTookDamageFromAbility`](#context-statusontookdamagefromability), [`effects`](#context-effects)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`StatusOnTookDamageFromAbility`](./Cat_Mutations.md#context-statusontookdamagefromability), [`effects`](./Cat_Mutations.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `Bleed` | Number | Examples: `1` | 2 |
+| `Blind` | Number | Examples: `1` | 2 |
+| `Burn` | Number | Examples: `1` | 2 |
+| `Charge` | Number | Examples: `1` | 2 |
+| `DiminishingHealthRegen` | Number | Examples: `1` | 2 |
+| `KineticSpikes` | Number | Examples: `1` | 2 |
+| `Poison` | Number | Examples: `1` | 2 |
+| `RandomStatUp` | Number | Examples: `1` | 2 |
+| `Shield` | Number | Examples: `1` | 2 |
+| `Thorns` | Number | Examples: `1` | 2 |
+| `Weakness` | Number | Examples: `1` | 2 |
 
 </details>
 
@@ -234,15 +396,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 4
+> **Total Count:** 4
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Float |  | 4 |
-| [`object`](./Enums.md#enum-object) | Enum |  | 4 |
-| `good` | Boolean |  | 1 |
+| `chance` | Number | Examples: `50, 5, 25` | 4 |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 4 |
+| `good` | Boolean | Examples: `false` | 1 |
 
 </details>
 
@@ -253,13 +415,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 4
+> **Total Count:** 4
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root), [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `RandomStatUp` | Number | Examples: `2, 1` | 2 |
+| `Charge` | Number | Examples: `1` | 1 |
+| `IntelligenceUp` | Number | Examples: `1` | 1 |
+| `RandomStatDown` | Number | Examples: `1` | 1 |
+| `Shield` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -270,14 +436,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 3
+> **Total Count:** 3
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 3 |
-| `number` | Integer |  | 2 |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `Coin, RandomFoodPickup` | 3 |
+| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 3 ], 2` | 2 |
 
 </details>
 
@@ -288,15 +454,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+> **Total Count:** 2
 
-> **Referenced by:** [`StatusKilledCharacters`](#context-statuskilledcharacters)
+> **Referenced by:** [`StatusKilledCharacters`](./Cat_Mutations.md#context-statuskilledcharacters)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Float |  | 2 |
+| `AutoReanimate` | Number | Examples: `50` | 2 |
+| `odds` | Number | Examples: `10` | 2 |
 
 </details>
 
@@ -307,14 +472,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+> **Total Count:** 2
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `stacks` | Integer |  | 2 |
+| `stacks` | Number | Examples: `4, 8` | 2 |
+| `Charge` | Number | Examples: `2` | 1 |
+| `RandomMagicMissile` | Number | Examples: `4` | 1 |
 
 </details>
 
@@ -325,14 +491,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+> **Total Count:** 2
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
- | [`Conditional_RandomChance`](./Cat_Mutations.md#context-conditional_randomchance) | Block |  | 2 | 
+| [`Conditional_RandomChance`](./Cat_Mutations.md#context-conditional_randomchance) | Block | Examples: `{ ... }` | 2 |
 
 </details>
 
@@ -343,13 +508,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+> **Total Count:** 2
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `consumables` | 1 |
+| `PermanentIntelligence` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -360,13 +526,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+> **Total Count:** 2
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`Conditional_FirstApplicationThisTurn`](./Cat_Mutations.md#context-conditional_firstapplicationthisturn) | Block | Examples: `{ ... }` | 1 |
+| [`Conditional_GoodRoll`](./Cat_Mutations.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -377,14 +544,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+> **Total Count:** 2
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 2 |
+| [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 2 |
 
 </details>
 
@@ -395,15 +561,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `range` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move` | 1 |
+| `range` | Number | Examples: `2` | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 1 |
 
 </details>
 
@@ -414,14 +580,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Integer |  | 1 |
-| [`element`](./Enums.md#enum-element) | Enum |  | 1 |
+| `damage` | Number | Examples: `1` | 1 |
+| [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 1 |
 
 </details>
 
@@ -432,13 +598,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Fury` | Integer |  | 1 |
+| `Fury` | Number | Examples: `10` | 1 |
 
 </details>
 
@@ -449,14 +615,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `stacks` | Integer |  | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BackflipDodge` | 1 |
+| `stacks` | Number | Examples: `2` | 1 |
 
 </details>
 
@@ -467,14 +633,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `chance` | Float |  | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `BackflipDodge` | 1 |
+| `chance` | Number | Examples: `10` | 1 |
 
 </details>
 
@@ -485,14 +651,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`class`](./Enums.md#enum-class) | Enum |  | 1 |
-| `reduction` | Integer |  | 1 |
+| [`class`](./Enums.md#enum-class) | Enum | Examples: `Colorless` | 1 |
+| `reduction` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -503,14 +669,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`StatusOnEndMove`](#context-statusonendmove)
+> **Referenced by:** [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `Charge` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -521,15 +686,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`StatusOnEndMove`](#context-statusonendmove)
+> **Referenced by:** [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `odds` | Float |  | 1 |
+| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Examples: `TallGrassTile` | 1 |
+| `odds` | Number | Examples: `25` | 1 |
 
 </details>
 
@@ -540,14 +704,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum |  | 1 |
-| `chance` | Float |  | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | Examples: `ChainLightning` | 1 |
+| `chance` | Number | Examples: `15` | 1 |
 
 </details>
 
@@ -558,14 +722,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`AddStatusToBasicMeleeAttack`](#context-addstatustobasicmeleeattack)
+> **Referenced by:** [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Integer |  | 1 |
-| `stacks` | Integer |  | 1 |
+| `distance` | Number | Examples: `3` | 1 |
+| `stacks` | Number | Examples: `3` | 1 |
 
 </details>
 
@@ -576,14 +740,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum |  | 1 |
-| [`weights`](./Enums.md#enum-weights) | Enum |  | 1 |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `MoveOne` | 1 |
+| [`weights`](./Enums.md#enum-weights) | Enum | Examples: `chaotic` | 1 |
 
 </details>
 
@@ -594,13 +758,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `DamageUp` | Number | Examples: `2` | 1 |
 
 </details>
 
@@ -611,14 +775,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](#context-passives) | Block |  | 1 |
-| [`status`](./Enums.md#enum-status) | Enum |  | 1 |
+| [`passives`](./Cat_Mutations.md#context-passives) | Block | Examples: `{ ... }` | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | Examples: `Bleed` | 1 |
 
 </details>
 
@@ -629,14 +793,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`number`](./Arrays.md#array-number) | Array |  | 1 |
-| [`object`](./Enums.md#enum-object) | Enum |  | 1 |
+| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 1 |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup` | 1 |
 
 </details>
 
@@ -647,13 +811,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`UseAbility`](./Enums.md#enum-useability) | Enum | Examples: `Spit` | 1 |
 
 </details>
 
@@ -664,15 +828,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `HealthGain` | Integer |  | 1 |
-| `stacks` | Integer |  | 1 |
+| `HealthGain` | Number | Examples: `2` | 1 |
+| `stacks` | Number | Examples: `3` | 1 |
 
 </details>
 
@@ -683,14 +846,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `Charge` | Integer |  | 1 |
+| `Charge` | Number | Examples: `3` | 1 |
 
 </details>
 
@@ -701,13 +863,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `ManaGain` | Number | Examples: `3` | 1 |
 
 </details>
 
@@ -718,13 +880,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `DamageUp` | Number | Examples: `2` | 1 |
 
 </details>
 
@@ -735,13 +897,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `Charge` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -752,13 +914,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array | Examples: `5, [ 1 .5 ]` | 6 |
 
 </details>
 
@@ -769,13 +931,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| `HealthRegenUp` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -786,2198 +948,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`passives`](#context-passives)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-
-</details>
-
----
-
-### Numerical Contexts
-
-> The following contexts are numeric keys or array indices.
-
-### Context: `400`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `401`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `402`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `403`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `int` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `404`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `spd` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `405`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `lck` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `406`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `407`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `dex` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `408`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `con` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `409`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `int` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `410`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `411`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `412`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `dex` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `413`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `414`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `dex` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `415`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `int` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `416`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `417`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `418`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `int` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `419`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `int` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `420`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `int` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `421`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `int` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `422`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `int` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `423`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `int` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `424`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `con` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `425`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `dex` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `426`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `427`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `int` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `428`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `429`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `430`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `431`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `432`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `433`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `int` | Integer |  | 9 |
-| `lck` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `434`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `lck` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `435`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `lck` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `436`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `437`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `spd` | Integer |  | 9 |
-| `str` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `438`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `439`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `int` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `440`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `dex` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `441`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `lck` | Integer |  | 9 |
-| `spd` | Integer |  | 9 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-
-</details>
-
----
-
-### Context: `700`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-| `cha` | Integer |  | 3 |
-| `lck` | Integer |  | 3 |
-| `con` | Integer |  | 1 |
-| `int` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `701`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 9
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 9 |
-| `cha` | Integer |  | 3 |
-| `dex` | Integer |  | 2 |
-| `int` | Integer |  | 2 |
-| `spd` | Integer |  | 2 |
-| `lck` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `313`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 8
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 8 |
-| [`passives`](#context-passives) | Block |  | 8 |
-| `divine_shield` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `314`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 8
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 8 |
-| [`passives`](#context-passives) | Block |  | 8 |
-| `cha` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `315`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 8
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 8 |
-| [`passives`](#context-passives) | Block |  | 8 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `704`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 8
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 8 |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| `cha` | Integer |  | 2 |
-| `str` | Integer |  | 2 |
-| `con` | Integer |  | 1 |
-| `lck` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `309`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 7
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 7 |
-| [`passives`](#context-passives) | Block |  | 7 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `cha` | Integer |  | 1 |
-| `lck` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `317`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 7
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 7 |
-| [`passives`](#context-passives) | Block |  | 7 |
-| `con` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `319`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 7
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 7 |
-| [`passives`](#context-passives) | Block |  | 7 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `703`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 7
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 7 |
-| [`desc`](./Strings.md#string-desc) | String |  | 6 |
-| [`passives`](#context-passives) | Block |  | 6 |
-| `con` | Integer |  | 2 |
-| `cha` | Integer |  | 1 |
-| `int` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `301`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 6
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 6 |
-| [`passives`](#context-passives) | Block |  | 6 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `int` | Integer |  | 2 |
-| `con` | Integer |  | 1 |
-| `dex` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `318`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 6
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 6 |
-| [`passives`](#context-passives) | Block |  | 6 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `divine_shield` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `702`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 6
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 6 |
-| `int` | Integer |  | 3 |
-| `cha` | Integer |  | 2 |
-| `con` | Integer |  | 2 |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `900`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 6
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 6 |
-| [`passives`](#context-passives) | Block |  | 6 |
-| `spd` | Integer |  | 2 |
-| `cha` | Integer |  | 1 |
-| `con` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `-2`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 5 |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| `dex` | Integer |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `cha` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `302`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `shield` | Integer |  | 2 |
-| `con` | Integer |  | 1 |
-| `int` | Integer |  | 1 |
-| `lck` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `303`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `cha` | Integer |  | 2 |
-| `int` | Integer |  | 2 |
-| `shield` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `307`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| `spd` | Integer |  | 2 |
-| `cha` | Integer |  | 1 |
-| `int` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `310`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `cha` | Integer |  | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `int` | Integer |  | 1 |
-| [`override_move`](./Enums.md#enum-override_move) | Enum |  | 1 |
-| `shield` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `311`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| `con` | Integer |  | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `312`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| `divine_shield` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `316`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| `cha` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `326`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-
-</details>
-
----
-
-### Context: `750`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| `cha` | Integer |  | 1 |
-| `int` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `754`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 5
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 5 |
-| [`passives`](#context-passives) | Block |  | 5 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `300`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `str` | Integer |  | 3 |
-| `con` | Integer |  | 2 |
-| `cha` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `304`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `cha` | Integer |  | 2 |
-| `dex` | Integer |  | 2 |
-| `int` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `308`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `cha` | Integer |  | 3 |
-| `lck` | Integer |  | 2 |
-| `str` | Integer |  | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `con` | Integer |  | 1 |
-| `int` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `320`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `shield` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `321`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `int` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `323`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Integer |  | 2 |
-
-</details>
-
----
-
-### Context: `325`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `327`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `cha` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `328`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-
-</details>
-
----
-
-### Context: `329`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `331`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| [`override_move`](./Enums.md#enum-override_move) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `332`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `334`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `336`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `337`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `339`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| `spd` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `341`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-
-</details>
-
----
-
-### Context: `705`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| `cha` | Integer |  | 2 |
-| [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| `int` | Integer |  | 1 |
-| `speed` | Float |  | 1 |
-
-</details>
-
----
-
-### Context: `706`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 4 |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `cha` | Integer |  | 2 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `755`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 4
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 4 |
-| [`passives`](#context-passives) | Block |  | 4 |
-
-</details>
-
----
-
-### Context: `1500`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 3 |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `dex` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `305`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `int` | Integer |  | 2 |
-| `lck` | Integer |  | 2 |
-| `cha` | Integer |  | 1 |
-| `dex` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `306`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `con` | Integer |  | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `dex` | Integer |  | 1 |
-| `int` | Integer |  | 1 |
-| `shield` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `322`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `cha` | Integer |  | 1 |
-| `con` | Integer |  | 1 |
-| `str` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `324`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `con` | Integer |  | 1 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `335`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-
-</details>
-
----
-
-### Context: `338`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-
-</details>
-
----
-
-### Context: `342`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `con` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `343`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `757`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `int` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `759`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 3
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 3 |
-| [`passives`](#context-passives) | Block |  | 3 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `330`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-
-</details>
-
----
-
-### Context: `333`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `shield` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `340`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `divine_shield` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `344`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-
-</details>
-
----
-
-### Context: `345`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `751`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `con` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `752`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `con` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `753`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `shield` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `758`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-| `con` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `760`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 2 |
-| [`passives`](#context-passives) | Block |  | 2 |
-
-</details>
-
----
-
-### Context: `1026`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `1029`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `346`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-| `shield` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `347`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `348`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `349`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `351`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `352`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `353`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `442`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `cha` | Integer |  | 1 |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `707`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-| `str` | Integer |  | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `756`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| `int` | Integer |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-| `spd` | Integer |  | 1 |
-
-</details>
-
----
-
-### Context: `761`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `762`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
-
-</details>
-
----
-
-### Context: `763`
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 1
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | String |  | 1 |
-| [`passives`](#context-passives) | Block |  | 1 |
+| `RangeUp` | Number | Examples: `1` | 1 |
 
 </details>
 

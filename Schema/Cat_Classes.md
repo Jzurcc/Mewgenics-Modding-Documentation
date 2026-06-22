@@ -1,39 +1,37 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
-
 ## Cat Classes
 
 > **Associated Files:** `data/classes/`
+
 
 ### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 14
+> **Total Count:** 14
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`ability_pool`](./Arrays.md#array-ability_pool) | Array |  | 14 |
-| [`attack_pool`](./Arrays.md#array-attack_pool) | Array |  | 14 |
-| [`graphics`](#context-graphics) | Block |  | 14 |
-| [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array |  | 14 |
-| [`meta`](#context-meta) | Block |  | 14 |
-| [`passive_pool`](./Arrays.md#array-passive_pool) | Array |  | 14 |
-| [`stat_mods`](#context-stat_mods) | Block |  | 13 |
-| [`ability_groups`](#context-ability_groups) | Block |  | 12 |
-| [`starter_abilities`](./Arrays.md#array-starter_abilities) | Array |  | 12 |
-| [`complicated_abilities`](./Arrays.md#array-complicated_abilities) | Array |  | 6 |
-| [`complicated_passives`](./Arrays.md#array-complicated_passives) | Array |  | 6 |
-| [`innate_passives`](#context-innate_passives) | Block |  | 4 |
-| [`innate_items`](#context-innate_items) | Block |  | 2 |
-| [`move_pool`](./Arrays.md#array-move_pool) | Array |  | 1 |
-| [`tutorial_levelup_active_pool`](./Arrays.md#array-tutorial_levelup_active_pool) | Array |  | 1 |
-| [`tutorial_levelup_active_pool_2`](./Arrays.md#array-tutorial_levelup_active_pool_2) | Array |  | 1 |
-| [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array |  | 1 |
+| [`ability_pool`](./Arrays.md#array-ability_pool) | Array | Examples: `[ HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate Sk..., [ Propell Hadou...` | 14 |
+| [`attack_pool`](./Arrays.md#array-attack_pool) | Array | Examples: `[ BasicButcherMelee ], [ BasicDruidAbility ], [ BasicMonkMelee ]` | 14 |
+| [`graphics`](./Cat_Classes.md#context-graphics) | Block | Examples: `{ ... }` | 14 |
+| [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array | Examples: `[ int str lck ], [ con str lck ], [ cha int str ]` | 14 |
+| [`meta`](./Cat_Classes.md#context-meta) | Block | Examples: `{ ... }` | 14 |
+| [`passive_pool`](./Arrays.md#array-passive_pool) | Array | Examples: `[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutto..., [ SafeSwitching...` | 14 |
+| [`stat_mods`](./Cat_Classes.md#context-stat_mods) | Block | Examples: `{ ... }` | 13 |
+| [`ability_groups`](./Cat_Classes.md#context-ability_groups) | Block | Examples: `{ ... }` | 12 |
+| [`starter_abilities`](./Arrays.md#array-starter_abilities) | Array | Examples: `[ SummonSquirrel SummonToad Encourage Protection SongOfSp..., [ Succ HogRush ...` | 12 |
+| [`complicated_abilities`](./Arrays.md#array-complicated_abilities) | Array | Examples: `[ FalconPunch Exert Challenge Stoopzerk Grapple ThinkTooH..., [ DealWithTheDe...` | 6 |
+| [`complicated_passives`](./Arrays.md#array-complicated_passives) | Array | Examples: `[ ElementalAttunement LatentEnergy MagicGuru One Two Four..., [ ShoulderCheck...` | 6 |
+| [`innate_passives`](./Cat_Classes.md#context-innate_passives) | Block | Examples: `{ ... }` | 4 |
+| [`innate_items`](./Cat_Classes.md#context-innate_items) | Block | Examples: `{ ... }` | 2 |
+| [`move_pool`](./Arrays.md#array-move_pool) | Array | Examples: `[ DefaultMove ]` | 1 |
+| [`tutorial_levelup_active_pool`](./Arrays.md#array-tutorial_levelup_active_pool) | Array | Examples: `[ Block LickHeal Dump ]` | 1 |
+| [`tutorial_levelup_active_pool_2`](./Arrays.md#array-tutorial_levelup_active_pool_2) | Array | Examples: `[ GainThorns ButtScoot Burst HireHitman ]` | 1 |
+| [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array | Examples: `[ Furious PressurePoints LateBloomer ZenkaiBoost ]` | 1 |
 
 </details>
 
@@ -41,22 +39,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
-
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 14
+> **Total Count:** 14
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Blocks}`](./Engine_Graphics.md#all-confirmed-graphic-block-values) | Block | A visual/animation configuration. See Engine_Graphics.md for the full schema. |  |
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |
-| `palette` | Integer |  | 13 |
-| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 13 |
-| [`default_face`](./Enums.md#enum-default_face) | Enum |  | 1 |
-| `hud_palette` | Integer |  | 1 |
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array | Examples: `[ [ idle ButcherIdle ], [ [ idle DruidIdle ], [ [ idle MonkIdle ]` | 14 |
+| `palette` | Number | Examples: `66, 64, 65` | 13 |
+| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum | Examples: `monk_portrait, druid_portrait, butcher_portrait` | 13 |
+| [`default_face`](./Enums.md#enum-default_face) | Enum | Examples: `happy` | 1 |
+| `hud_palette` | Number | Examples: `11` | 1 |
 
 </details>
 
@@ -67,14 +63,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 14
+> **Total Count:** 14
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`description`](./Strings.md#string-description) | String |  | 14 |
-| [`name`](./Strings.md#string-name) | String |  | 14 |
+| [`description`](./Strings.md#string-description) | String | Examples: `"CAT_CLASS_DRUID_DESC", "CAT_CLASS_MONK_DESC", "CAT_CLASS_BUTCHER_DESC"` | 14 |
+| [`name`](./Strings.md#string-name) | String | Examples: `"CAT_CLASS_MONK_NAME", "CAT_CLASS_BUTCHER_NAME", "CAT_CLASS_DRUID_NAME"` | 14 |
 
 </details>
 
@@ -85,19 +81,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 13
+> **Total Count:** 13
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 9 |
-| `cha` | Integer |  | 7 |
-| `int` | Integer |  | 6 |
-| `spd` | Integer |  | 6 |
-| `str` | Integer |  | 6 |
-| `dex` | Integer |  | 4 |
-| `lck` | Integer |  | 4 |
+| `con` | Number | Examples: `3, 2, -2` | 9 |
+| `cha` | Number | Examples: `3, 2, -1` | 7 |
+| `int` | Number | Examples: `4, 2, 1` | 6 |
+| `spd` | Number | Examples: `1, -1, -2` | 6 |
+| `str` | Number | Examples: `2, -1, -2` | 6 |
+| `dex` | Number | Examples: `3, -1` | 4 |
+| `lck` | Number | Examples: `2, -1, 1` | 4 |
 
 </details>
 
@@ -108,16 +104,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 12
+> **Total Count:** 12
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`attack`](./Arrays.md#array-attack) | Array |  | 12 |
-| [`misc`](./Arrays.md#array-misc) | Array |  | 12 |
-| [`move`](./Arrays.md#array-move) | Array |  | 12 |
-| [`defense`](./Arrays.md#array-defense) | Array |  | 10 |
+| [`attack`](./Arrays.md#array-attack) | Array | Examples: `[ Fartoom Mutilate SkullBash Shred Chomp BodySlam SliceAn..., [ SquirrelSquad...` | 12 |
+| [`misc`](./Arrays.md#array-misc) | Array | Examples: `[ SelfMutilate Succ Consume BloodMagic SmellBlood Vurp Li..., [ StoneFists Br...` | 12 |
+| [`move`](./Arrays.md#array-move) | Array | Examples: `[ DruidSwap FlowerFeet ThornyFeet RaccoonForm HydroPump C..., [ HogRush Trudg...` | 12 |
+| [`defense`](./Arrays.md#array-defense) | Array | Examples: `[ SongOfSpring SummonTurtle PullToSafety Protection Safet..., [ Burp ForceFee...` | 10 |
 
 </details>
 
@@ -128,17 +124,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 4
+> **Total Count:** 4
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
-| `AddStartingMana` | Integer |  | 1 |
-| [`MonkStances`](./Arrays.md#array-monkstances) | Array |  | 1 |
-| [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum |  | 1 |
-| [`TinkererBasicAttackSwitching`](#context-tinkererbasicattackswitching) | Block |  | 1 |
+| `AddStartingMana` | Number | Examples: `5` | 1 |
+| [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 |
+| [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum | Examples: `Crow` | 1 |
+| [`TinkererBasicAttackSwitching`](./Cat_Classes.md#context-tinkererbasicattackswitching) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -149,14 +144,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+> **Total Count:** 2
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`weapon`](./Enums.md#enum-weapon) | Enum |  | 2 |
-| [`trinket`](./Enums.md#enum-trinket) | Enum |  | 1 |
+| [`weapon`](./Enums.md#enum-weapon) | Enum | Examples: `MonkFist, ButcherHook` | 2 |
+| [`trinket`](./Enums.md#enum-trinket) | Enum | Examples: `MonkStyleChanger` | 1 |
 
 </details>
 
@@ -167,14 +162,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+> **Total Count:** 1
 
-> **Referenced by:** [`innate_passives`](#context-innate_passives)
+> **Referenced by:** [`innate_passives`](./Cat_Classes.md#context-innate_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum |  | 1 |
-| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum |  | 1 |
+| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum | Examples: `TinkererCraft` | 1 |
+| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | Examples: `TinkererThrow` | 1 |
 
 </details>
 

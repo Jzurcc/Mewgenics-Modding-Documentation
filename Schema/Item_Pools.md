@@ -1,69 +1,67 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
-
-
 ## Item Pools
 
 > **Associated Files:** `data/item_pools/`
+
 
 ### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 13
+> **Total Count:** 13
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| `rare` | Integer |  | 13 |
-| `uncommon` | Integer |  | 12 |
-| `very_rare` | Float |  | 11 |
-| `common` | Integer |  | 10 |
-| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Integer |  | 6 |
-| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Integer |  | 6 |
-| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Integer |  | 6 |
-| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Integer |  | 6 |
-| `chapter_rare` | Integer |  | 5 |
-| `Chicken` | Float |  | 3 |
-| `chapter` | Integer |  | 3 |
-| `chapter_common` | Integer |  | 3 |
-| `consumables` | Integer |  | 3 |
-| `FoodBig` | Integer |  | 2 |
-| `FoodMedium` | Integer |  | 2 |
-| `basic_consumables` | Integer |  | 2 |
-| `shop_common` | Integer |  | 2 |
-| `Antidote` | Float |  | 1 |
-| `BagOfSeeds` | Float |  | 1 |
-| `BirdFeed` | Float |  | 1 |
-| `BirdPoopHat` | Float |  | 1 |
-| `Catnip` | Integer |  | 1 |
-| `CatnipBig` | Integer |  | 1 |
-| `DeadHummingbird` | Float |  | 1 |
-| `GlowingSeed` | Float |  | 1 |
-| `GoldenEgg` | Float |  | 1 |
-| `HarpysClaw` | Float |  | 1 |
-| `LostSoul` | Float |  | 1 |
-| `MagicSeed` | Float |  | 1 |
-| `Parousworm` | Float |  | 1 |
-| `PeaceSymbol` | Float |  | 1 |
-| `PeaceSymbolFacePaint` | Float |  | 1 |
-| `RaptorEgg` | Float |  | 1 |
-| `RavenFeather` | Float |  | 1 |
-| `TieDyeBandana` | Float |  | 1 |
-| `Turkey` | Integer |  | 1 |
-| `WeirdEgg` | Float |  | 1 |
-| `WishBone` | Float |  | 1 |
-| `consumables_consumable_common` | Integer |  | 1 |
-| `consumables_consumable_rare` | Integer |  | 1 |
-| `consumables_consumable_uncommon` | Integer |  | 1 |
-| `consumables_consumable_very_rare` | Integer |  | 1 |
-| [`general_common`](./Enums.md#enum-general_common) | Enum |  | 1 |
-| [`general_rare`](./Enums.md#enum-general_rare) | Enum |  | 1 |
-| [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum |  | 1 |
-| [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum |  | 1 |
-| `pills` | Integer |  | 1 |
+| `rare` | Number | Examples: `40, 15, 10` | 13 |
+| `uncommon` | Number | Examples: `35, 75, 60` | 12 |
+| `very_rare` | Mixed | Examples: `.01, 2, 1` | 11 |
+| `common` | Number | Examples: `50, 55, 60` | 10 |
+| `current_chapter_common` | Mixed | Examples: `auto, 55` | 6 |
+| `current_chapter_rare` | Mixed | Examples: `auto, 10` | 6 |
+| `current_chapter_uncommon` | Mixed | Examples: `35, auto` | 6 |
+| `current_chapter_very_rare` | Mixed | Examples: `auto, 1` | 6 |
+| `chapter_rare` | Number | Examples: `1` | 5 |
+| `Chicken` | Mixed | Examples: `.1, 2, .01` | 3 |
+| `chapter` | Number | Examples: `1` | 3 |
+| `chapter_common` | Number | Examples: `1` | 3 |
+| `consumables` | Number | Examples: `60, 10` | 3 |
+| `FoodBig` | Number | Examples: `2, 1` | 2 |
+| `FoodMedium` | Number | Examples: `1, 5` | 2 |
+| `basic_consumables` | Number | Examples: `90, 100` | 2 |
+| `shop_common` | Number | Examples: `1` | 2 |
+| `Antidote` | Number | Examples: `1` | 1 |
+| [`BagOfSeeds`](./Enums.md#enum-bagofseeds) | Enum | Examples: `.3` | 1 |
+| [`BirdFeed`](./Enums.md#enum-birdfeed) | Enum | Examples: `.3` | 1 |
+| [`BirdPoopHat`](./Enums.md#enum-birdpoophat) | Enum | Examples: `.3` | 1 |
+| `Catnip` | Number | Examples: `3` | 1 |
+| `CatnipBig` | Number | Examples: `2` | 1 |
+| [`DeadHummingbird`](./Enums.md#enum-deadhummingbird) | Enum | Examples: `.3` | 1 |
+| [`GlowingSeed`](./Enums.md#enum-glowingseed) | Enum | Examples: `.3` | 1 |
+| [`GoldenEgg`](./Enums.md#enum-goldenegg) | Enum | Examples: `.3` | 1 |
+| [`HarpysClaw`](./Enums.md#enum-harpysclaw) | Enum | Examples: `.5` | 1 |
+| [`LostSoul`](./Enums.md#enum-lostsoul) | Enum | Examples: `.5` | 1 |
+| [`MagicSeed`](./Enums.md#enum-magicseed) | Enum | Examples: `.3` | 1 |
+| [`Parousworm`](./Enums.md#enum-parousworm) | Enum | Examples: `.5` | 1 |
+| [`PeaceSymbol`](./Enums.md#enum-peacesymbol) | Enum | Examples: `.3` | 1 |
+| [`PeaceSymbolFacePaint`](./Enums.md#enum-peacesymbolfacepaint) | Enum | Examples: `.3` | 1 |
+| [`RaptorEgg`](./Enums.md#enum-raptoregg) | Enum | Examples: `.1` | 1 |
+| [`RavenFeather`](./Enums.md#enum-ravenfeather) | Enum | Examples: `.3` | 1 |
+| [`TieDyeBandana`](./Enums.md#enum-tiedyebandana) | Enum | Examples: `.3` | 1 |
+| `Turkey` | Number | Examples: `2` | 1 |
+| [`WeirdEgg`](./Enums.md#enum-weirdegg) | Enum | Examples: `.3` | 1 |
+| [`WishBone`](./Enums.md#enum-wishbone) | Enum | Examples: `.3` | 1 |
+| `consumables_consumable_common` | Number | Examples: `50` | 1 |
+| `consumables_consumable_rare` | Number | Examples: `15` | 1 |
+| `consumables_consumable_uncommon` | Number | Examples: `35` | 1 |
+| `consumables_consumable_very_rare` | Number | Examples: `1` | 1 |
+| [`general_common`](./Enums.md#enum-general_common) | Enum | Examples: `auto` | 1 |
+| [`general_rare`](./Enums.md#enum-general_rare) | Enum | Examples: `auto` | 1 |
+| [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum | Examples: `auto` | 1 |
+| [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum | Examples: `auto` | 1 |
+| `pills` | Number | Examples: `7` | 1 |
 
 </details>
 
