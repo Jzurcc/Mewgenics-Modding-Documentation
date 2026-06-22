@@ -18,9 +18,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`desc`](./Enums.md#enum-desc) | String |  | 634 |
-| [`name`](./Enums.md#enum-name) | String |  | 634 |
+| [`desc`](./Strings.md#string-desc) | String |  | 634 |
+| [`name`](./Strings.md#string-name) | String |  | 634 |
 | `Comfort` | Number | Applies or references the 'Comfort' effect/state. | 406 |
 | `Appeal` | Number | Applies or references the 'Appeal' effect/state. | 338 |
 | `Stimulation` | Number | Applies or references the 'Stimulation' effect/state. | 268 |

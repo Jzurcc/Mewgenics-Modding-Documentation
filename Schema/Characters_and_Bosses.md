@@ -18,7 +18,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`properties`](#context-properties) | Block | General engine properties. | 600 |
 | [`graphics`](#context-graphics) | Block | Visual parameters and animation bindings. | 558 |
 | [`passives`](#context-passives) | Block | Block listing intrinsic passive modifiers. | 544 |
@@ -371,7 +370,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`initial_form`](./Enums.md#enum-initial_form) | Enum |  | 59 |
 | [`Default`](#context-default) | Block | Character Form: The baseline default behavior state. | 37 |
 | [`Normal`](#context-normal) | Block | Character Form: Behavior and stats for the 'Normal' state. | 11 |
@@ -887,7 +885,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 16 |
 | [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block | Conditional: Executes logic on a good RNG roll. | 2 |
 | [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Logic: Applies a random status from the pool. | 1 |
@@ -1245,7 +1242,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 7 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 4 |
 | `Slow` | Number | Applies or references the 'Slow' effect/state. | 4 |
@@ -1304,9 +1300,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Consumed`](#context-consumed) | Block | State triggered when the entity is eaten/consumed. | 4 |
+ | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 3 | 
 
 </details>
 
@@ -2454,7 +2449,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`passives`](#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
 
@@ -2765,8 +2759,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 1 |
 
@@ -2818,7 +2810,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`MeleeRevengeDamage`](#context-meleerevengedamage) | Block | Reaction: Deals damage or status effects to an attacker upon receiving melee damage. | 2 |
 
 </details>
@@ -2910,7 +2901,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 |
 | `SpellDamageUp` | Number | Applies or references the 'SpellDamageUp' effect/state. | 1 |
 
@@ -2946,7 +2936,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 
 </details>
@@ -2964,7 +2953,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Logic: Forces execution of an ability. | 2 |
 
 </details>
@@ -2982,7 +2970,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_IsPhysicalAttack`](#context-conditional_isphysicalattack) | Block | Conditional: Executes logic if the triggering attack is physical. | 1 |
 | [`Else`](#context-else) | Block | Fallback logic block for conditionals. | 1 |
 
@@ -4099,7 +4086,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
 | `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |
 | [`SwitchMusic`](#context-switchmusic) | Block | Event Trigger: Changes background music track. | 1 |
@@ -4119,7 +4105,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 2 |
 | `icon` | Number |  | 1 |
 | `icon_ready` | Number |  | 1 |
@@ -4140,7 +4125,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 2 |
 | `icon` | Number |  | 1 |
 | `icon_ready` | Number |  | 1 |
@@ -4239,7 +4223,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ai`](#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`passives`](#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
@@ -4723,7 +4706,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `health` | Number |  | 1 |
 | `immediate` | Boolean |  | 1 |
 | `playercat_health` | Number |  | 1 |
@@ -5024,7 +5006,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 1 |
 | [`sound_event`](./Enums.md#enum-sound_event) | Enum |  | 1 |
 
@@ -6138,7 +6119,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 1 |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 
@@ -6157,7 +6137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block | Modifier: Injects a status effect payload into the character's basic attacks. | 1 |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | Reaction: Executes a counter-attack ability when hit. | 1 |
@@ -6177,7 +6156,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddDamage` | Number | Applies or references the 'AddDamage' effect/state. | 1 |
 | `AddMaxHealth` | Number | Applies or references the 'AddMaxHealth' effect/state. | 1 |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
@@ -6197,7 +6175,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `ExtraDispersedTurns` | Number | Applies or references the 'ExtraDispersedTurns' effect/state. | 1 |
 
@@ -6216,7 +6193,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 1 |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 1 |
@@ -6237,7 +6213,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddMaxHealth` | Number | Applies or references the 'AddMaxHealth' effect/state. | 1 |
 | `AddSpeed` | Number | Applies or references the 'AddSpeed' effect/state. | 1 |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
@@ -6258,7 +6233,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 
@@ -6277,7 +6251,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddMovement` | Number | Applies or references the 'AddMovement' effect/state. | 1 |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 1 |
@@ -6299,7 +6272,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 1 |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 1 |
@@ -6320,7 +6292,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `ReflectProjectiles` | Number | Passive: Reflects incoming projectiles back at the attacker. | 1 |
 | [`StatusEachTurnEndForEachTurn`](#context-statuseachturnendforeachturn) | Block | Event Trigger: Applies a scaling status at the end of every turn based on turn count. | 1 |
@@ -6340,7 +6311,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddDamage` | Number | Applies or references the 'AddDamage' effect/state. | 1 |
 | `AddSpeed` | Number | Applies or references the 'AddSpeed' effect/state. | 1 |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
@@ -6361,7 +6331,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. | 1 |
 
@@ -6458,7 +6427,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 1 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
@@ -6498,7 +6466,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 1 |
 
 </details>
@@ -6550,7 +6517,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |
 
 </details>
@@ -6585,7 +6551,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 1 |
 
 </details>
@@ -6603,7 +6568,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`UseAbility`](#context-useability) | Block | Logic: Forces execution of an ability. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
@@ -6839,7 +6803,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Die` | Number | Character Form / Logic: Forces the character to die. | 1 |
 | `Dumb` | Number | AI Profile: A simplified, less optimal decision-making profile. | 1 |
 | `Fuck` | Number | Applies or references the 'Fuck' effect/state. | 1 |
@@ -7333,7 +7296,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `PermanentMadness` | Number | Applies or references the 'PermanentMadness' effect/state. | 1 |
 
 </details>

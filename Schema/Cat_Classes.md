@@ -18,7 +18,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ability_pool`](./Arrays.md#array-ability_pool) | Array |  | 14 |
 | [`attack_pool`](./Arrays.md#array-attack_pool) | Array |  | 14 |
 | [`graphics`](#context-graphics) | Block |  | 14 |
@@ -135,7 +134,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddStartingMana` | Number |  | 1 |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array |  | 1 |
 | [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum |  | 1 |

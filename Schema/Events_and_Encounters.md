@@ -18,7 +18,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`intro`](#context-intro) | Block | Event Node: The initial text block when a story event first loads. | 214 |
 | [`main`](#context-main) | Block | Event Node: The central hub or recurring menu of a story event. | 214 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
@@ -714,10 +713,46 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
+ | `Fear` | Number | Applies or references the 'Fear' effect/state. | 29 | 
+ | `Poison` | Number | Applies or references the 'Poison' effect/state. | 28 | 
+ | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 20 | 
+ | [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum/String | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. | 14 | 
+ | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 7 | 
+ | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 5 | 
+ | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 5 | 
+ | `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. | 4 | 
+ | `AddStartingMana` | Number | Applies or references the 'AddStartingMana' effect/state. | 3 | 
+ | `Burn` | Number | Applies or references the 'Burn' effect/state. | 3 | 
+ | `CharismaUp` | Number | Applies or references the 'CharismaUp' effect/state. | 3 | 
+ | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 3 | 
+ | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 3 | 
+ | `Webbed` | Number | Applies or references the 'Webbed' effect/state. | 3 | 
+ | `Blind` | Number | Applies or references the 'Blind' effect/state. | 2 | 
+ | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 2 | 
+ | `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. | 2 | 
+ | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 2 | 
+ | `NoHealthRegen` | Number | Applies or references the 'NoHealthRegen' effect/state. | 2 | 
+ | `Sleep` | Number | Applies or references the 'Sleep' effect/state. | 2 | 
+ | `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 | 
+ | [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum/String | Applies or references the 'AbilityOnBattleStart' effect/state. | 1 | 
+ | `AddInitiative` | Number | Applies or references the 'AddInitiative' effect/state. | 1 | 
+ | `AlphaTurns` | Number | Applies or references the 'AlphaTurns' effect/state. | 1 | 
+ | [`ChangeTileUnderCharacterAtStart`](./Enums.md#enum-changetileundercharacteratstart) | Enum/String | Applies or references the 'ChangeTileUnderCharacterAtStart' effect/state. | 1 | 
+ | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 | 
+ | `Fights` | Number | Applies or references the 'Fights' effect/state. | 1 | 
+ | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 | 
+ | `Madness` | Number | Applies the Madness debuff/status effect. | 1 | 
+ | `MissChance` | Number | Applies or references the 'MissChance' effect/state. | 1 | 
+ | `NoManaRegen` | Number | Applies or references the 'NoManaRegen' effect/state. | 1 | 
+ | `PermanentConfusion` | Number | Applies or references the 'PermanentConfusion' effect/state. | 1 | 
+ | `ProbeCharmed` | Number | Applies or references the 'ProbeCharmed' effect/state. | 1 | 
+ | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 1 | 
+ | `Rot` | Number | Applies or references the 'Rot' effect/state. | 1 | 
+ | `Slow` | Number | Applies or references the 'Slow' effect/state. | 1 | 
+ | `SpiderInfested` | Number | Applies or references the 'SpiderInfested' effect/state. | 1 | 
+ | `Tarred` | Number | Applies or references the 'Tarred' effect/state. | 1 | 
+ | `TempStrengthUp` | Number | Applies or references the 'TempStrengthUp' effect/state. | 1 | 
 
 ---
 
@@ -913,7 +948,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 25 |
-| [`label`](./Strings.md#string-label) | Enum |  | 25 |
+| [`label`](./Strings.md#string-label) | String |  | 25 |
 | [`stat`](./Math_Equations.md) | Enum |  | 25 |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
@@ -967,7 +1002,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 23 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 23 |
+| [`label`](./Strings.md#string-label) | String |  | 23 |
 | [`stat`](./Math_Equations.md) | Enum |  | 23 |
 
 </details>
@@ -985,10 +1020,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
+ | `Fear` | Number | Applies or references the 'Fear' effect/state. | 6 | 
+ | `Poison` | Number | Applies or references the 'Poison' effect/state. | 5 | 
+ | [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum/String | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. | 3 | 
+ | `NoHealthRegen` | Number | Applies or references the 'NoHealthRegen' effect/state. | 3 | 
+ | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 | 
+ | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 | 
+ | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 | 
+ | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 1 | 
+ | `Tangled` | Number | Applies a tangled/ensnared status effect, often modifying visual sprites. | 1 | 
+ | `Tarred` | Number | Applies or references the 'Tarred' effect/state. | 1 | 
+ | `Webbed` | Number | Applies or references the 'Webbed' effect/state. | 1 | 
 
 ---
 
@@ -1115,7 +1158,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 11 |
-| [`label`](./Strings.md#string-label) | Enum |  | 11 |
+| [`label`](./Strings.md#string-label) | String |  | 11 |
 | [`stat`](./Math_Equations.md) | Enum |  | 11 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
@@ -1134,9 +1177,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Fights` | Number | Applies or references the 'Fights' effect/state. | 6 |
 | [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 5 |
 | [`StatusRandomEnemiesOnBattleStart`](#context-statusrandomenemiesonbattlestart) | Block | Encounter Modifier: Applies a status effect to a random number of enemies at the start of battle. | 3 |
@@ -1282,7 +1322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
-| [`label`](./Strings.md#string-label) | Enum |  | 7 |
+| [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
@@ -1342,7 +1382,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 7 |
-| [`label`](./Strings.md#string-label) | Enum |  | 7 |
+| [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Math_Equations.md) | Enum |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
@@ -1364,7 +1404,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 6 |
+| [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
 
@@ -1385,7 +1425,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 6 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 6 |
+| [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
 
@@ -1509,7 +1549,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 5 |
-| [`label`](./Enums.md#enum-label) | String |  | 5 |
+| [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Enum |  | 5 |
 
 </details>
@@ -1572,7 +1612,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 4 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 4 |
+| [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Math_Equations.md) | Enum |  | 4 |
 
 </details>
@@ -1634,7 +1674,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 4 |
+| [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
 
 </details>
@@ -1698,7 +1738,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 4 |
+| [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
 
@@ -1853,7 +1893,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 2 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 2 |
+| [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
 
@@ -2243,7 +2283,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -2264,7 +2304,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -2367,7 +2407,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -2466,7 +2506,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
@@ -3148,7 +3188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -3169,7 +3209,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -3289,7 +3329,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -3462,7 +3502,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -3785,7 +3825,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -3805,7 +3845,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -3845,7 +3885,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -4002,7 +4042,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -4022,7 +4062,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -4403,7 +4443,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -4547,7 +4587,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
@@ -4590,7 +4630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -4710,7 +4750,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
@@ -4845,7 +4885,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
@@ -4866,7 +4906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`bad`](#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
@@ -5245,7 +5285,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`good`](#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>

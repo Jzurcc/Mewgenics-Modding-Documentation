@@ -18,7 +18,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `bonus_itemroll_luck` | Number |  | 8 |
 | `boss_health_multiplier` | Number |  | 8 |
 | `coins_multiplier` | Number |  | 8 |

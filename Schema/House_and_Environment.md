@@ -18,7 +18,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`desc`](./Strings.md#string-desc) | String |  | 59 |
 | [`name`](./Strings.md#string-name) | String |  | 59 |
 | [`effects`](#context-effects) | Block |  | 58 |
@@ -196,8 +195,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
 | `FloatingRockTrap` | Number |  | 1 |
 | `Thorns` | Number |  | 1 |
@@ -418,8 +415,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
 | [`Else`](#context-else) | Block |  | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array |  | 1 |
@@ -1071,9 +1066,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
+ | `AllStatsUp` | Number |  | 1 | 
+ | [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag) | Block |  | 1 | 
+ | `HealthGain` | Number |  | 1 | 
 
 ---
 

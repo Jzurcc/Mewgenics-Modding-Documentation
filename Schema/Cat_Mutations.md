@@ -347,9 +347,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+ | [`Conditional_RandomChance`](./Cat_Mutations.md#context-conditional_randomchance) | Block |  | 2 | 
 
 </details>
 
@@ -696,7 +694,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `HealthGain` | Number |  | 1 |
 | `stacks` | Number |  | 1 |
 
@@ -715,7 +712,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Charge` | Number |  | 1 |
 
 </details>
@@ -1621,7 +1617,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | String |  | 8 |
+| [`desc`](./Strings.md#string-desc) | String |  | 8 |
 | [`passives`](#context-passives) | Block |  | 8 |
 | `cha` | Number |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
@@ -1895,7 +1891,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | String |  | 5 |
+| [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 5 |
 | `spd` | Number |  | 2 |
 | `cha` | Number |  | 1 |
@@ -1916,7 +1912,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`desc`](./Enums.md#enum-desc) | String |  | 5 |
+| [`desc`](./Strings.md#string-desc) | String |  | 5 |
 | [`passives`](#context-passives) | Block |  | 4 |
 | `cha` | Number |  | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |

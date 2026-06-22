@@ -18,7 +18,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
 | `id` | Number |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |

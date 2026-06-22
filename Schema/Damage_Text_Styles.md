@@ -18,7 +18,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`color`](./Arrays.md#array-color) | Array |  | 26 |
 | [`right_icon`](./Enums.md#enum-right_icon) | String |  | 10 |
 | [`back_icon`](./Enums.md#enum-back_icon) | String |  | 8 |
