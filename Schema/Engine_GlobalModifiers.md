@@ -17,7 +17,7 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 | `LowerAmbientLight` | Block | A visual effect that dims the map's lighting. |
 | `NextPlayerCatTakesExtraTurn` | Number | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. |
 | `NoCorpses` | Number | Applies or references the 'NoCorpses' effect/state. |
-| `{Global Modifiers}` | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |
+| `{Global Modifiers}` | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |
 
 </details>
 

@@ -300,7 +300,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Charmed` | Number | Applies the 'Charmed' effect. |
 | `CherubimReaction` | Block | Reaction: Custom reaction triggers for Cherubim enemies. |
 | `ClassManaCostReduction` | Block | Applies or references the 'ClassManaCostReduction' effect/state. |
-| `Cleanse` | Number | Applies the 'Cleanse' effect. |
+| `Cleanse` | Number |  |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. |
 | `CobraReflex` | Enum | Applies the 'CobraReflex' effect. |
 | `CoinPickup` | Number | Applies or references the 'CoinPickup' effect/state. |
@@ -308,7 +308,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CollectPickupsOnBattleEnd` | Number | Applies the 'CollectPickupsOnBattleEnd' effect. |
 | `Conductor` | Number | Applies the 'Conductor' effect. |
 | `ConductorManaRegen` | Number | Applies the 'ConductorManaRegen' effect. |
-| `Confusion` | Array |  |
+| `Confusion` | Number | Applies or references the 'Confusion' effect/state. |
 | `ConfusionEffectOnTaggedAbilities` | Enum | Applies the 'ConfusionEffectOnTaggedAbilities' effect. |
 | `ConjureBonusAbility` | Enum |  |
 | `ConjureCastSpellsForAllies` | Number | Applies the 'ConjureCastSpellsForAllies' effect. |
@@ -326,7 +326,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CounterAttackAfterEnemyCastSpell` | Enum | Applies or references the 'CounterAttackAfterEnemyCastSpell' effect/state. |
 | `CounterNextAttacks` | Number | Applies or references the 'CounterNextAttacks' effect/state. |
 | `Craft` | Block | Synthesizes or spawns a new item from a specific pool. |
-| `CreateGlobalModifiers` | Block | Encounter Rule: Generates map-wide modifiers. |
+| `CreateGlobalModifiers` | Block | Generates global map or encounter rules/modifiers. |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. |
 | `CritsApplyStatus` | Block | Applies the 'CritsApplyStatus' effect. |
 | `CrowAttackLink` | Number | Applies or references the 'CrowAttackLink' effect/state. |
@@ -394,7 +394,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `DoubleReceivedNegativeStatus` | Number | Applies or references the 'DoubleReceivedNegativeStatus' effect/state. |
 | `DoubleReceivedPositiveStatus` | Number | Applies or references the 'DoubleReceivedPositiveStatus' effect/state. |
 | `DownRankAIIfWeaponUsable` | Enum | Applies or references the 'DownRankAIIfWeaponUsable' effect/state. |
-| `DrinkWater` | Number | Applies or references the 'DrinkWater' effect/state. |
+| `DrinkWater` | Number |  |
 | `DropAsFamiliarOnArmorBreak` | Enum | Applies or references the 'DropAsFamiliarOnArmorBreak' effect/state. |
 | `DropAsFamiliarOnTookDamage` | Enum | Applies or references the 'DropAsFamiliarOnTookDamage' effect/state. |
 | `DropSoulJarOnDeath` | Enum | Applies or references the 'DropSoulJarOnDeath' effect/state. |
@@ -466,7 +466,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `FinalBossShieldHealth` | Block | Boss Logic: Shield health management. |
 | `FinalBossSyncAnimations` | Block | Boss Logic: Synchronizes multi-part boss animations. |
 | `FindExtraItemFromPoolOnBattleEnd` | Enum | Applies or references the 'FindExtraItemFromPoolOnBattleEnd' effect/state. |
-| `FindItem` | Enum |  |
+| `FindItem` | Enum | Applies or references the 'FindItem' effect/state. |
 | `FindItemFromPool` | Enum | Generates an item drop from the specified loot pool. |
 | `FistOfFateUniqueEnemyTracker` | Number | Applies or references the 'FistOfFateUniqueEnemyTracker' effect/state. |
 | `Flammable` | Number | Applies or references the 'Flammable' effect/state. |
@@ -582,7 +582,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `InnateElement` | Enum | Applies the 'InnateElement' effect. |
 | `InsertIntoBackgroundPlaceholder` | Number | Applies or references the 'InsertIntoBackgroundPlaceholder' effect/state. |
 | `Instakill` | Array |  |
-| `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. |
+| `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. |
 | `InterchangeDisabler` | Number | Applies or references the 'InterchangeDisabler' effect/state. |
 | `InvertBrainFaction` | Number | Applies the 'InvertBrainFaction' effect. |
 | `ItemAuxTransform` | Block | Applies or references the 'ItemAuxTransform' effect/state. |
@@ -683,7 +683,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `NextBattleStatus` | Block | Applies the 'NextBattleStatus' effect. |
 | `NoHealthOnlyShield` | Number | Applies or references the 'NoHealthOnlyShield' effect/state. |
 | `NoHealthRegen` | Number | Applies or references the 'NoHealthRegen' effect/state. |
-| `NoManaRegen` | Number | Applies or references the 'NoManaRegen' effect/state. |
+| `NoManaRegen` | Number | Applies the 'NoManaRegen' effect. |
 | `NoReflection` | Number | Applies the 'NoReflection' effect. |
 | `NonLethal` | Number | Applies the 'NonLethal' effect. |
 | `NonStackingDivineShield` | Number | Applies the 'NonStackingDivineShield' effect. |
@@ -794,7 +794,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Reanimate` | Number | Applies the 'Reanimate' effect. |
 | `ReceivedStatusReplacement` | Array | Applies the 'ReceivedStatusReplacement' effect. |
 | `ReclaimItemOnBreak` | Number | Applies or references the 'ReclaimItemOnBreak' effect/state. |
-| `ReduceManaCost` | Number | Applies the 'ReduceManaCost' effect. |
+| `ReduceManaCost` | Number | Applies or references the 'ReduceManaCost' effect/state. |
 | `ReduceSpellCostsPerDisorder` | Number | Applies or references the 'ReduceSpellCostsPerDisorder' effect/state. |
 | `ReduceSpellCostsPerParasite` | Number | Applies or references the 'ReduceSpellCostsPerParasite' effect/state. |
 | `Reflect` | Number | Applies or references the 'Reflect' effect/state. |
@@ -841,7 +841,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ReplaceSpell` | Block | Replaces a spell in the character's hand/deck with a different one. |
 | `ReplaceSpellsWhenDead` | Enum | Applies the 'ReplaceSpellsWhenDead' effect. |
 | `RerollItemsOnBattleEnd` | Number | Applies or references the 'RerollItemsOnBattleEnd' effect/state. |
-| `ReturnBoundItemOnBattleEnd` | Number |  |
+| `ReturnBoundItemOnBattleEnd` | Number | Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state. |
 | `RevengeDamage` | Block |  |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. |
 | `ReviveNextRound` | Block | Queues the character to be resurrected at the start of the next combat round. |
@@ -904,7 +904,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SpawnCatCloneOnCorpsePopped` | Number | Applies or references the 'SpawnCatCloneOnCorpsePopped' effect/state. |
 | `SpawnCatCopyOnBattleStart` | Block | Applies the 'SpawnCatCopyOnBattleStart' effect. |
 | `SpawnCatCopyWhenDowned` | Block |  |
-| `SpawnCoinAnywhere` | Number | Applies the 'SpawnCoinAnywhere' effect. |
+| `SpawnCoinAnywhere` | Number | Applies or references the 'SpawnCoinAnywhere' effect/state. |
 | `SpawnCreepOnHit` | Number | Applies or references the 'SpawnCreepOnHit' effect/state. |
 | `SpawnCreepOnHitKnockback` | Number | Applies or references the 'SpawnCreepOnHitKnockback' effect/state. |
 | `SpawnEachTurn` | Block | Applies or references the 'SpawnEachTurn' effect/state. |
@@ -974,7 +974,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `StatusCollector` | Block | Passive: Gains benefits based on the number of statuses applied to them. |
 | `StatusDamagers` | Block | Event Trigger: Applies nested statuses to damagers. |
 | `StatusEachRoundBegin` | Block |  |
-| `StatusEachRoundEnd` | Block | Applies or references the 'StatusEachRoundEnd' effect/state. |
+| `StatusEachRoundEnd` | Block |  |
 | `StatusEachTurnBegin` | Block | Event Trigger: Applies nested statuses to each turn begin. |
 | `StatusEachTurnBeginIfHasStatus` | Block | Event Trigger: Applies a status at the start of the turn if a prerequisite status is met. |
 | `StatusEachTurnEnd` | Block | Applies or references the 'StatusEachTurnEnd' effect/state. |
