@@ -18,6 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`frame_label`](./Enums.md#enum-frame_label) | Enum |  | 67 |
 | [`name`](./Strings.md#string-name) | String |  | 67 |
 | [`quotes`](./Arrays.md#array-quotes) | Array |  | 36 |

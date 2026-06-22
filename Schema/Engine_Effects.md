@@ -212,7 +212,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `FireflySwarm` | Number |  |
 | `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. |
 | `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. |
-| `FlatLeechIfDamaged` | Number | Applies the 'FlatLeechIfDamaged' effect. |
+| `FlatLeechIfDamaged` | Number | Applies or references the 'FlatLeechIfDamaged' effect/state. |
 | `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. |
 | `FlowersOnHit` | Number | Applies or references the 'FlowersOnHit' effect/state. |
 | `FlySwarm` | Number |  |
@@ -593,8 +593,6 @@ This document is the authoritative reference for the `effects {}` engine schema.
 | `Windy` | Number |  |
 | `XIsTargetHealth` | Block | Math variable assignment: Evaluates X as the target's current health. |
 | `{Effect Blocks}` | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |
-| `{Passives}` | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |
-| `{Statuses}` | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |
 
 </details>
 

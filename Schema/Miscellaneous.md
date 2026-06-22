@@ -18,6 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`alley`](./Enums.md#enum-alley) | Enum |  | 2 |
 | [`boneyard`](./Enums.md#enum-boneyard) | Enum |  | 2 |
 | [`bunker`](./Enums.md#enum-bunker) | Enum |  | 2 |
@@ -96,6 +97,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Fights` | Number |  | 3 |
 | `Poison` | Number |  | 3 |
 | `count` | Number |  | 3 |
@@ -193,7 +195,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
 | `Fear` | Number |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
@@ -305,6 +307,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | `act` | Number |  | 9 |
 | [`arrival_unlock`](./Enums.md#enum-arrival_unlock) | Enum |  | 9 |
 | `index` | Number |  | 9 |
@@ -339,6 +342,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 154 |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum |  | 140 |
 | `emit_amount` | Number |  | 139 |
@@ -550,6 +554,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`emit_amount`](./Arrays.md#array-emit_amount) | Array |  | 19 |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array |  | 19 |
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array |  | 19 |
@@ -724,6 +729,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`adjectives`](./Arrays.md#array-adjectives) | Array |  | 15 |
 | [`nouns`](./Arrays.md#array-nouns) | Array |  | 15 |
 | [`format`](./Strings.md#string-format) | String |  | 1 |
@@ -747,6 +753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`editor`](#context-editor) | Block |  | 27 |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 26 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 4 |
@@ -809,6 +816,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`global_objects`](#context-global_objects) | Block |  | 22 |
 | [`combat_background`](./Enums.md#enum-combat_background) | Enum |  | 21 |
 | [`combat_ui_background`](./Enums.md#enum-combat_ui_background) | Enum |  | 21 |

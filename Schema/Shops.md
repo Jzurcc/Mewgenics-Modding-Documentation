@@ -18,6 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`meta`](#context-meta) | Block |  | 25 |
 | [`breakdown`](#context-breakdown) | Block |  | 24 |
 | [`item_groups`](#context-item_groups) | Block |  | 24 |

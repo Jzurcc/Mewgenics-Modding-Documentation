@@ -18,6 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effects}`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`editor`](#context-editor) | Block |  | 550 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 543 |
 | `value` | Number |  | 377 |
