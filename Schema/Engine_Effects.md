@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: Engine: Effects & Conditionals
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Engine: Effects & Conditionals
 
@@ -8,7 +8,7 @@ This document is the authoritative reference for the `effects {}` engine schema.
 
 > **Note:** Because many of these contexts accept arbitrary nested effects, any entry marked `[effect_block]` recursively refers back to this same document.
 
-### All Confirmed `[effect_block]` Values
+### All Confirmed `{Effect Blocks}` Values
 
 <details>
 <summary><b>Expand</b></summary>
@@ -687,7 +687,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -700,7 +701,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -713,7 +715,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -726,7 +729,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `weather` | Array | An array of weather states to check against. |
 
 </details>
@@ -740,7 +744,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_Ally`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_PlayerCat`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
@@ -755,7 +760,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `element` | Enum | The specific element type to check for. |
 | [`Conditional_Speculative`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
@@ -770,7 +776,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_Corpse`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_PlayerCat`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
@@ -785,7 +792,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -798,7 +806,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `odds` | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. |
 
 </details>
@@ -812,7 +821,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_HasStatus`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
 </details>
@@ -826,7 +836,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -839,7 +850,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_InForm`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
 </details>
@@ -853,7 +865,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -866,7 +879,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_Enemy`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
 </details>
@@ -880,7 +894,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. |
 
 </details>
@@ -894,7 +909,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -907,7 +923,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -920,7 +937,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_FinishedSpawning`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_NotBoss`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_PartyMember`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
@@ -936,7 +954,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -949,7 +968,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `key` | Enum | A unique string identifier to track this specific application. |
 
 </details>
@@ -963,7 +983,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `formula` | Equation | The math expression to evaluate. |
 
 </details>
@@ -977,7 +998,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
 | [`Conditional_Corpse`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
@@ -992,7 +1014,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1005,7 +1028,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `status` | Enum | The specific status ID to check for. |
 
 </details>
@@ -1019,7 +1043,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `tag` | Enum | The specific string tag to check for. |
 | [`Conditional_Boss`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_InForm`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
@@ -1036,7 +1061,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `threshold_expr` | Equation |  |
 | `threshold_flat` | Number | A flat numerical health value threshold. |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). |
@@ -1053,7 +1079,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `form` | Enum | The specific form ID to check for. |
 
 </details>
@@ -1067,7 +1094,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1080,7 +1108,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1093,7 +1122,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1106,7 +1136,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1119,7 +1150,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1132,7 +1164,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `threshold_flat` | Number |  |
 
 </details>
@@ -1146,7 +1179,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1159,7 +1193,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1172,7 +1207,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_Enemy`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_HealthThreshold`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
@@ -1187,7 +1223,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1200,7 +1237,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1213,7 +1251,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_HasTag`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
 </details>
@@ -1227,7 +1266,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `key` | Enum |  |
 
 </details>
@@ -1241,7 +1281,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_IsSelf`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
 </details>
@@ -1255,7 +1296,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1268,7 +1310,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `odds` | Number |  |
 
 </details>
@@ -1282,7 +1325,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 
 </details>
 
@@ -1295,7 +1339,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `tag` | Enum | Specific entity tag required. |
 
 </details>
@@ -1309,7 +1354,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `status` | Enum | ID of the status effect to apply or check. |
 
 </details>
@@ -1323,7 +1369,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `tag` | Enum | The specific entity tag required or applied. |
 | [`Conditional_Ally`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
@@ -1338,7 +1385,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_HealthThreshold`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 
 </details>
@@ -1352,7 +1400,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `do_not_pop_corpse` | Boolean |  |
 | `drop_body_ability` | Enum |  |
 | `drop_on_death` | Boolean |  |
@@ -1377,7 +1426,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_Displaceable`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_GoodRoll`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_HasKnockback`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
@@ -1398,7 +1448,8 @@ The following Conditional and targeting blocks all behave as `[effect_block]` co
 
 | Property Key | Type | Notes |
 | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect_block-values) | Block | Any valid effect from the global effects schema. |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_AbilityTargetIsSelf`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_ActiveWeather_Any`](./Engine_Effects.md#context-index) | Block | Nested conditional. |
 | [`Conditional_AffectedByElement`](./Engine_Effects.md#context-index) | Block | Nested conditional. |

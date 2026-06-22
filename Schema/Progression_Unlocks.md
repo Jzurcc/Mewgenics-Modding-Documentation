@@ -2,21 +2,24 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Progression Unlocks
 
 > **Associated Files:** `data/adventure_progression_unlocks.gon, data/npc_favor_unlocks.gon`
 
 
-### Context: `ROOT` (266 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 266
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`popup`](./Progression_Unlocks.md#context-popup) | Block |  | 266 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`popup`](#context-popup) | Block |  | 266 |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum |  | 127 |
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum |  | 55 |
@@ -55,94 +58,96 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`require_mapgen_flag`](./Enums.md#enum-require_mapgen_flag) | Enum |  | 2 |
 | [`surviving_kaiju`](./Enums.md#enum-surviving_kaiju) | Enum |  | 2 |
 | [`unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup) | Enum |  | 2 |
-| [`beanies_quests_intro`](./Progression_Unlocks.md#context-beanies_quests_intro) | Block |  | 1 |
-| [`beanies_quests_repeat`](./Progression_Unlocks.md#context-beanies_quests_repeat) | Block |  | 1 |
-| [`destinations`](./Progression_Unlocks.md#context-destinations) | Block |  | 1 |
+| [`beanies_quests_intro`](#context-beanies_quests_intro) | Block |  | 1 |
+| [`beanies_quests_repeat`](#context-beanies_quests_repeat) | Block |  | 1 |
+| [`destinations`](#context-destinations) | Block |  | 1 |
 | [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum |  | 1 |
 | [`finish_quest`](./Enums.md#enum-finish_quest) | Enum |  | 1 |
-| [`frank_max_intro`](./Progression_Unlocks.md#context-frank_max_intro) | Block |  | 1 |
-| [`frank_max_repeating`](./Progression_Unlocks.md#context-frank_max_repeating) | Block |  | 1 |
-| [`house_upgrade_4throom`](./Progression_Unlocks.md#context-house_upgrade_4throom) | Block |  | 1 |
-| [`house_upgrade_attic`](./Progression_Unlocks.md#context-house_upgrade_attic) | Block |  | 1 |
-| [`house_upgrade_largehouse`](./Progression_Unlocks.md#context-house_upgrade_largehouse) | Block |  | 1 |
-| [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#context-house_upgrade_mediumhouse) | Block |  | 1 |
+| [`frank_max_intro`](#context-frank_max_intro) | Block |  | 1 |
+| [`frank_max_repeating`](#context-frank_max_repeating) | Block |  | 1 |
+| [`house_upgrade_4throom`](#context-house_upgrade_4throom) | Block |  | 1 |
+| [`house_upgrade_attic`](#context-house_upgrade_attic) | Block |  | 1 |
+| [`house_upgrade_largehouse`](#context-house_upgrade_largehouse) | Block |  | 1 |
+| [`house_upgrade_mediumhouse`](#context-house_upgrade_mediumhouse) | Block |  | 1 |
 | [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String |  | 1 |
 | [`intro`](./Arrays.md#array-intro) | Array |  | 1 |
-| [`jack_max_intro`](./Progression_Unlocks.md#context-jack_max_intro) | Block |  | 1 |
-| [`jack_max_repeating`](./Progression_Unlocks.md#context-jack_max_repeating) | Block |  | 1 |
-| [`jack_shopupgrade1`](./Progression_Unlocks.md#context-jack_shopupgrade1) | Block |  | 1 |
-| [`jack_shopupgrade2`](./Progression_Unlocks.md#context-jack_shopupgrade2) | Block |  | 1 |
-| [`jack_shopupgrade3`](./Progression_Unlocks.md#context-jack_shopupgrade3) | Block |  | 1 |
-| [`jack_shopupgrade4`](./Progression_Unlocks.md#context-jack_shopupgrade4) | Block |  | 1 |
+| [`jack_max_intro`](#context-jack_max_intro) | Block |  | 1 |
+| [`jack_max_repeating`](#context-jack_max_repeating) | Block |  | 1 |
+| [`jack_shopupgrade1`](#context-jack_shopupgrade1) | Block |  | 1 |
+| [`jack_shopupgrade2`](#context-jack_shopupgrade2) | Block |  | 1 |
+| [`jack_shopupgrade3`](#context-jack_shopupgrade3) | Block |  | 1 |
+| [`jack_shopupgrade4`](#context-jack_shopupgrade4) | Block |  | 1 |
 | [`main_pool`](./Arrays.md#array-main_pool) | Array |  | 1 |
-| [`organ_max_intro`](./Progression_Unlocks.md#context-organ_max_intro) | Block |  | 1 |
-| [`organ_max_repeating`](./Progression_Unlocks.md#context-organ_max_repeating) | Block |  | 1 |
-| [`organ_unlock`](./Progression_Unlocks.md#context-organ_unlock) | Block |  | 1 |
-| [`organ_upgrade1`](./Progression_Unlocks.md#context-organ_upgrade1) | Block |  | 1 |
-| [`organ_upgrade2`](./Progression_Unlocks.md#context-organ_upgrade2) | Block |  | 1 |
-| [`organ_upgrade3`](./Progression_Unlocks.md#context-organ_upgrade3) | Block |  | 1 |
-| [`organ_upgrade4`](./Progression_Unlocks.md#context-organ_upgrade4) | Block |  | 1 |
-| [`organ_upgrade5`](./Progression_Unlocks.md#context-organ_upgrade5) | Block |  | 1 |
-| [`organ_upgrade6`](./Progression_Unlocks.md#context-organ_upgrade6) | Block |  | 1 |
-| [`prereqs`](./Progression_Unlocks.md#context-prereqs) | Block |  | 1 |
+| [`organ_max_intro`](#context-organ_max_intro) | Block |  | 1 |
+| [`organ_max_repeating`](#context-organ_max_repeating) | Block |  | 1 |
+| [`organ_unlock`](#context-organ_unlock) | Block |  | 1 |
+| [`organ_upgrade1`](#context-organ_upgrade1) | Block |  | 1 |
+| [`organ_upgrade2`](#context-organ_upgrade2) | Block |  | 1 |
+| [`organ_upgrade3`](#context-organ_upgrade3) | Block |  | 1 |
+| [`organ_upgrade4`](#context-organ_upgrade4) | Block |  | 1 |
+| [`organ_upgrade5`](#context-organ_upgrade5) | Block |  | 1 |
+| [`organ_upgrade6`](#context-organ_upgrade6) | Block |  | 1 |
+| [`prereqs`](#context-prereqs) | Block |  | 1 |
 | `requires_hard_path` | Boolean |  | 1 |
 | [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum |  | 1 |
-| [`steven_milliontrashed`](./Progression_Unlocks.md#context-steven_milliontrashed) | Block |  | 1 |
-| [`tink_aggression`](./Progression_Unlocks.md#context-tink_aggression) | Block |  | 1 |
-| [`tink_basestats`](./Progression_Unlocks.md#context-tink_basestats) | Block |  | 1 |
-| [`tink_inbreeding`](./Progression_Unlocks.md#context-tink_inbreeding) | Block |  | 1 |
-| [`tink_max_intro`](./Progression_Unlocks.md#context-tink_max_intro) | Block |  | 1 |
-| [`tink_max_repeating`](./Progression_Unlocks.md#context-tink_max_repeating) | Block |  | 1 |
-| [`tink_prettybow`](./Progression_Unlocks.md#context-tink_prettybow) | Block |  | 1 |
-| [`tink_relationships`](./Progression_Unlocks.md#context-tink_relationships) | Block |  | 1 |
-| [`tink_sexuality`](./Progression_Unlocks.md#context-tink_sexuality) | Block |  | 1 |
-| [`tink_tags`](./Progression_Unlocks.md#context-tink_tags) | Block |  | 1 |
-| [`tracy_blankcollar1`](./Progression_Unlocks.md#context-tracy_blankcollar1) | Block |  | 1 |
-| [`tracy_blankcollar2`](./Progression_Unlocks.md#context-tracy_blankcollar2) | Block |  | 1 |
-| [`tracy_blankcollar3`](./Progression_Unlocks.md#context-tracy_blankcollar3) | Block |  | 1 |
-| [`tracy_foodstorage1`](./Progression_Unlocks.md#context-tracy_foodstorage1) | Block |  | 1 |
-| [`tracy_foodstorage10`](./Progression_Unlocks.md#context-tracy_foodstorage10) | Block |  | 1 |
-| [`tracy_foodstorage2`](./Progression_Unlocks.md#context-tracy_foodstorage2) | Block |  | 1 |
-| [`tracy_foodstorage3`](./Progression_Unlocks.md#context-tracy_foodstorage3) | Block |  | 1 |
-| [`tracy_foodstorage4`](./Progression_Unlocks.md#context-tracy_foodstorage4) | Block |  | 1 |
-| [`tracy_foodstorage5`](./Progression_Unlocks.md#context-tracy_foodstorage5) | Block |  | 1 |
-| [`tracy_foodstorage6`](./Progression_Unlocks.md#context-tracy_foodstorage6) | Block |  | 1 |
-| [`tracy_foodstorage7`](./Progression_Unlocks.md#context-tracy_foodstorage7) | Block |  | 1 |
-| [`tracy_foodstorage8`](./Progression_Unlocks.md#context-tracy_foodstorage8) | Block |  | 1 |
-| [`tracy_foodstorage9`](./Progression_Unlocks.md#context-tracy_foodstorage9) | Block |  | 1 |
-| [`tracy_idol1`](./Progression_Unlocks.md#context-tracy_idol1) | Block |  | 1 |
-| [`tracy_idol2`](./Progression_Unlocks.md#context-tracy_idol2) | Block |  | 1 |
-| [`tracy_idol3`](./Progression_Unlocks.md#context-tracy_idol3) | Block |  | 1 |
-| [`tracy_idol4`](./Progression_Unlocks.md#context-tracy_idol4) | Block |  | 1 |
-| [`tracy_idol5`](./Progression_Unlocks.md#context-tracy_idol5) | Block |  | 1 |
-| [`tracy_idol6`](./Progression_Unlocks.md#context-tracy_idol6) | Block |  | 1 |
-| [`tracy_idol7`](./Progression_Unlocks.md#context-tracy_idol7) | Block |  | 1 |
-| [`tracy_max_intro`](./Progression_Unlocks.md#context-tracy_max_intro) | Block |  | 1 |
-| [`tracy_max_repeating`](./Progression_Unlocks.md#context-tracy_max_repeating) | Block |  | 1 |
+| [`steven_milliontrashed`](#context-steven_milliontrashed) | Block |  | 1 |
+| [`tink_aggression`](#context-tink_aggression) | Block |  | 1 |
+| [`tink_basestats`](#context-tink_basestats) | Block |  | 1 |
+| [`tink_inbreeding`](#context-tink_inbreeding) | Block |  | 1 |
+| [`tink_max_intro`](#context-tink_max_intro) | Block |  | 1 |
+| [`tink_max_repeating`](#context-tink_max_repeating) | Block |  | 1 |
+| [`tink_prettybow`](#context-tink_prettybow) | Block |  | 1 |
+| [`tink_relationships`](#context-tink_relationships) | Block |  | 1 |
+| [`tink_sexuality`](#context-tink_sexuality) | Block |  | 1 |
+| [`tink_tags`](#context-tink_tags) | Block |  | 1 |
+| [`tracy_blankcollar1`](#context-tracy_blankcollar1) | Block |  | 1 |
+| [`tracy_blankcollar2`](#context-tracy_blankcollar2) | Block |  | 1 |
+| [`tracy_blankcollar3`](#context-tracy_blankcollar3) | Block |  | 1 |
+| [`tracy_foodstorage1`](#context-tracy_foodstorage1) | Block |  | 1 |
+| [`tracy_foodstorage10`](#context-tracy_foodstorage10) | Block |  | 1 |
+| [`tracy_foodstorage2`](#context-tracy_foodstorage2) | Block |  | 1 |
+| [`tracy_foodstorage3`](#context-tracy_foodstorage3) | Block |  | 1 |
+| [`tracy_foodstorage4`](#context-tracy_foodstorage4) | Block |  | 1 |
+| [`tracy_foodstorage5`](#context-tracy_foodstorage5) | Block |  | 1 |
+| [`tracy_foodstorage6`](#context-tracy_foodstorage6) | Block |  | 1 |
+| [`tracy_foodstorage7`](#context-tracy_foodstorage7) | Block |  | 1 |
+| [`tracy_foodstorage8`](#context-tracy_foodstorage8) | Block |  | 1 |
+| [`tracy_foodstorage9`](#context-tracy_foodstorage9) | Block |  | 1 |
+| [`tracy_idol1`](#context-tracy_idol1) | Block |  | 1 |
+| [`tracy_idol2`](#context-tracy_idol2) | Block |  | 1 |
+| [`tracy_idol3`](#context-tracy_idol3) | Block |  | 1 |
+| [`tracy_idol4`](#context-tracy_idol4) | Block |  | 1 |
+| [`tracy_idol5`](#context-tracy_idol5) | Block |  | 1 |
+| [`tracy_idol6`](#context-tracy_idol6) | Block |  | 1 |
+| [`tracy_idol7`](#context-tracy_idol7) | Block |  | 1 |
+| [`tracy_max_intro`](#context-tracy_max_intro) | Block |  | 1 |
+| [`tracy_max_repeating`](#context-tracy_max_repeating) | Block |  | 1 |
 | [`unlock_item`](./Enums.md#enum-unlock_item) | Enum |  | 1 |
-| [`upgrade_storage_1`](./Progression_Unlocks.md#context-upgrade_storage_1) | Block |  | 1 |
-| [`upgrade_storage_2`](./Progression_Unlocks.md#context-upgrade_storage_2) | Block |  | 1 |
-| [`upgrade_storage_3`](./Progression_Unlocks.md#context-upgrade_storage_3) | Block |  | 1 |
-| [`upgrade_storage_4`](./Progression_Unlocks.md#context-upgrade_storage_4) | Block |  | 1 |
-| [`upgrade_storage_5`](./Progression_Unlocks.md#context-upgrade_storage_5) | Block |  | 1 |
-| [`upgrade_storage_6`](./Progression_Unlocks.md#context-upgrade_storage_6) | Block |  | 1 |
-| [`upgrade_storage_7`](./Progression_Unlocks.md#context-upgrade_storage_7) | Block |  | 1 |
-| [`upgrade_storage_repeating_crazy`](./Progression_Unlocks.md#context-upgrade_storage_repeating_crazy) | Block |  | 1 |
-| [`upgrade_storage_repeating_hard`](./Progression_Unlocks.md#context-upgrade_storage_repeating_hard) | Block |  | 1 |
-| [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#context-upgrade_storage_repeating_impossible) | Block |  | 1 |
-| [`upgrade_storage_repeating_intro`](./Progression_Unlocks.md#context-upgrade_storage_repeating_intro) | Block |  | 1 |
-| [`upgrade_storage_repeating_normal`](./Progression_Unlocks.md#context-upgrade_storage_repeating_normal) | Block |  | 1 |
+| [`upgrade_storage_1`](#context-upgrade_storage_1) | Block |  | 1 |
+| [`upgrade_storage_2`](#context-upgrade_storage_2) | Block |  | 1 |
+| [`upgrade_storage_3`](#context-upgrade_storage_3) | Block |  | 1 |
+| [`upgrade_storage_4`](#context-upgrade_storage_4) | Block |  | 1 |
+| [`upgrade_storage_5`](#context-upgrade_storage_5) | Block |  | 1 |
+| [`upgrade_storage_6`](#context-upgrade_storage_6) | Block |  | 1 |
+| [`upgrade_storage_7`](#context-upgrade_storage_7) | Block |  | 1 |
+| [`upgrade_storage_repeating_crazy`](#context-upgrade_storage_repeating_crazy) | Block |  | 1 |
+| [`upgrade_storage_repeating_hard`](#context-upgrade_storage_repeating_hard) | Block |  | 1 |
+| [`upgrade_storage_repeating_impossible`](#context-upgrade_storage_repeating_impossible) | Block |  | 1 |
+| [`upgrade_storage_repeating_intro`](#context-upgrade_storage_repeating_intro) | Block |  | 1 |
+| [`upgrade_storage_repeating_normal`](#context-upgrade_storage_repeating_normal) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `popup` (266 instances)
+### Context: `popup`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 266
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -154,12 +159,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_special_item` (22 instances)
+### Context: `tracy_special_item`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`tracy_blankcollar1`](./Progression_Unlocks.md#context-tracy_blankcollar1), [`tracy_blankcollar2`](./Progression_Unlocks.md#context-tracy_blankcollar2), [`tracy_blankcollar3`](./Progression_Unlocks.md#context-tracy_blankcollar3), [`tracy_foodstorage1`](./Progression_Unlocks.md#context-tracy_foodstorage1), [`tracy_foodstorage10`](./Progression_Unlocks.md#context-tracy_foodstorage10), [`tracy_foodstorage2`](./Progression_Unlocks.md#context-tracy_foodstorage2), [`tracy_foodstorage3`](./Progression_Unlocks.md#context-tracy_foodstorage3), [`tracy_foodstorage4`](./Progression_Unlocks.md#context-tracy_foodstorage4), [`tracy_foodstorage5`](./Progression_Unlocks.md#context-tracy_foodstorage5), [`tracy_foodstorage6`](./Progression_Unlocks.md#context-tracy_foodstorage6), [`tracy_foodstorage7`](./Progression_Unlocks.md#context-tracy_foodstorage7), [`tracy_foodstorage8`](./Progression_Unlocks.md#context-tracy_foodstorage8), [`tracy_foodstorage9`](./Progression_Unlocks.md#context-tracy_foodstorage9), [`tracy_idol1`](./Progression_Unlocks.md#context-tracy_idol1), [`tracy_idol2`](./Progression_Unlocks.md#context-tracy_idol2), [`tracy_idol3`](./Progression_Unlocks.md#context-tracy_idol3), [`tracy_idol4`](./Progression_Unlocks.md#context-tracy_idol4), [`tracy_idol5`](./Progression_Unlocks.md#context-tracy_idol5), [`tracy_idol6`](./Progression_Unlocks.md#context-tracy_idol6), [`tracy_idol7`](./Progression_Unlocks.md#context-tracy_idol7), [`tracy_max_intro`](./Progression_Unlocks.md#context-tracy_max_intro), [`tracy_max_repeating`](./Progression_Unlocks.md#context-tracy_max_repeating)
+**Total Count:** 22
+
+> **Referenced by:** [`tracy_blankcollar1`](#context-tracy_blankcollar1), [`tracy_blankcollar2`](#context-tracy_blankcollar2), [`tracy_blankcollar3`](#context-tracy_blankcollar3), [`tracy_foodstorage1`](#context-tracy_foodstorage1), [`tracy_foodstorage10`](#context-tracy_foodstorage10), [`tracy_foodstorage2`](#context-tracy_foodstorage2), [`tracy_foodstorage3`](#context-tracy_foodstorage3), [`tracy_foodstorage4`](#context-tracy_foodstorage4), [`tracy_foodstorage5`](#context-tracy_foodstorage5), [`tracy_foodstorage6`](#context-tracy_foodstorage6), [`tracy_foodstorage7`](#context-tracy_foodstorage7), [`tracy_foodstorage8`](#context-tracy_foodstorage8), [`tracy_foodstorage9`](#context-tracy_foodstorage9), [`tracy_idol1`](#context-tracy_idol1), [`tracy_idol2`](#context-tracy_idol2), [`tracy_idol3`](#context-tracy_idol3), [`tracy_idol4`](#context-tracy_idol4), [`tracy_idol5`](#context-tracy_idol5), [`tracy_idol6`](#context-tracy_idol6), [`tracy_idol7`](#context-tracy_idol7), [`tracy_max_intro`](#context-tracy_max_intro), [`tracy_max_repeating`](#context-tracy_max_repeating)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -170,12 +177,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `beanies_quests_intro` (1 instances)
+### Context: `beanies_quests_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -187,12 +196,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `beanies_quests_repeat` (1 instances)
+### Context: `beanies_quests_repeat`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -206,12 +217,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `destinations` (1 instances)
+### Context: `destinations`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -229,12 +242,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `frank_max_intro` (1 instances)
+### Context: `frank_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -247,12 +262,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `frank_max_repeating` (1 instances)
+### Context: `frank_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -266,12 +283,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_4throom` (1 instances)
+### Context: `house_upgrade_4throom`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -283,12 +302,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_attic` (1 instances)
+### Context: `house_upgrade_attic`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -300,12 +321,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_largehouse` (1 instances)
+### Context: `house_upgrade_largehouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -317,12 +340,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_mediumhouse` (1 instances)
+### Context: `house_upgrade_mediumhouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -334,12 +359,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_max_intro` (1 instances)
+### Context: `jack_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -352,12 +379,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_max_repeating` (1 instances)
+### Context: `jack_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -371,12 +400,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade1` (1 instances)
+### Context: `jack_shopupgrade1`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -388,12 +419,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade2` (1 instances)
+### Context: `jack_shopupgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -405,12 +438,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade3` (1 instances)
+### Context: `jack_shopupgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -422,12 +457,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade4` (1 instances)
+### Context: `jack_shopupgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -439,12 +476,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_max_intro` (1 instances)
+### Context: `organ_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -457,12 +496,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_max_repeating` (1 instances)
+### Context: `organ_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -476,12 +517,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_unlock` (1 instances)
+### Context: `organ_unlock`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -493,12 +536,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade1` (1 instances)
+### Context: `organ_upgrade1`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -510,12 +555,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade2` (1 instances)
+### Context: `organ_upgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -527,12 +574,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade3` (1 instances)
+### Context: `organ_upgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -544,12 +593,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade4` (1 instances)
+### Context: `organ_upgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -561,12 +612,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade5` (1 instances)
+### Context: `organ_upgrade5`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -578,12 +631,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade6` (1 instances)
+### Context: `organ_upgrade6`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -595,12 +650,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `prereqs` (1 instances)
+### Context: `prereqs`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -615,12 +672,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `steven_milliontrashed` (1 instances)
+### Context: `steven_milliontrashed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -632,12 +691,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_aggression` (1 instances)
+### Context: `tink_aggression`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -649,12 +710,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_basestats` (1 instances)
+### Context: `tink_basestats`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -666,12 +729,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_inbreeding` (1 instances)
+### Context: `tink_inbreeding`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -683,12 +748,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_max_intro` (1 instances)
+### Context: `tink_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -701,12 +768,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_max_repeating` (1 instances)
+### Context: `tink_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -720,12 +789,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_prettybow` (1 instances)
+### Context: `tink_prettybow`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -737,12 +808,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_relationships` (1 instances)
+### Context: `tink_relationships`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -754,12 +827,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_sexuality` (1 instances)
+### Context: `tink_sexuality`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -771,12 +846,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_tags` (1 instances)
+### Context: `tink_tags`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -788,12 +865,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_blankcollar1` (1 instances)
+### Context: `tracy_blankcollar1`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -801,18 +880,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_blankcollar2` (1 instances)
+### Context: `tracy_blankcollar2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -820,18 +901,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_blankcollar3` (1 instances)
+### Context: `tracy_blankcollar3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -839,18 +922,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage1` (1 instances)
+### Context: `tracy_foodstorage1`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -858,18 +943,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage10` (1 instances)
+### Context: `tracy_foodstorage10`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -877,18 +964,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage2` (1 instances)
+### Context: `tracy_foodstorage2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -896,18 +985,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage3` (1 instances)
+### Context: `tracy_foodstorage3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -915,18 +1006,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage4` (1 instances)
+### Context: `tracy_foodstorage4`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -934,18 +1027,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage5` (1 instances)
+### Context: `tracy_foodstorage5`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -953,18 +1048,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage6` (1 instances)
+### Context: `tracy_foodstorage6`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -972,18 +1069,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage7` (1 instances)
+### Context: `tracy_foodstorage7`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -991,18 +1090,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage8` (1 instances)
+### Context: `tracy_foodstorage8`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1010,18 +1111,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_foodstorage9` (1 instances)
+### Context: `tracy_foodstorage9`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1029,18 +1132,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_idol1` (1 instances)
+### Context: `tracy_idol1`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1048,18 +1153,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_idol2` (1 instances)
+### Context: `tracy_idol2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1067,18 +1174,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_idol3` (1 instances)
+### Context: `tracy_idol3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1086,18 +1195,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_idol4` (1 instances)
+### Context: `tracy_idol4`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1105,18 +1216,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_idol5` (1 instances)
+### Context: `tracy_idol5`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1124,18 +1237,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_idol6` (1 instances)
+### Context: `tracy_idol6`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1143,18 +1258,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_idol7` (1 instances)
+### Context: `tracy_idol7`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1162,18 +1279,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `shop_level_up` | Number |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_max_intro` (1 instances)
+### Context: `tracy_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1181,18 +1300,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `tracy_max_repeating` (1 instances)
+### Context: `tracy_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1201,18 +1322,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
 | `required_age` | Number |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `upgrade_storage_1` (1 instances)
+### Context: `upgrade_storage_1`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1226,12 +1349,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_2` (1 instances)
+### Context: `upgrade_storage_2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1245,12 +1370,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_3` (1 instances)
+### Context: `upgrade_storage_3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1264,12 +1391,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_4` (1 instances)
+### Context: `upgrade_storage_4`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1283,12 +1412,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_5` (1 instances)
+### Context: `upgrade_storage_5`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1302,12 +1433,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_6` (1 instances)
+### Context: `upgrade_storage_6`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1321,12 +1454,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_7` (1 instances)
+### Context: `upgrade_storage_7`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1340,12 +1475,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_crazy` (1 instances)
+### Context: `upgrade_storage_repeating_crazy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1362,12 +1499,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_hard` (1 instances)
+### Context: `upgrade_storage_repeating_hard`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1384,12 +1523,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_impossible` (1 instances)
+### Context: `upgrade_storage_repeating_impossible`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1406,12 +1547,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_intro` (1 instances)
+### Context: `upgrade_storage_repeating_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1427,12 +1570,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_normal` (1 instances)
+### Context: `upgrade_storage_repeating_normal`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |

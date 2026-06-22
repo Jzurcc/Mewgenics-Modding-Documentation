@@ -2,20 +2,23 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Chapter ID Enum
 
 > **Associated Files:** `data/chapter_id_enum.gon`
 
 
-### Context: `ROOT` (2 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 2
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`alley`](./Enums.md#enum-alley) | Enum |  | 2 |
 | [`boneyard`](./Enums.md#enum-boneyard) | Enum |  | 2 |
 | [`bunker`](./Enums.md#enum-bunker) | Enum |  | 2 |
@@ -39,18 +42,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`CompletionCheckmarkTooltip`](./Arrays.md#array-completioncheckmarktooltip) | Array |  | 1 |
 | [`SmallCompletionCheckmarkTooltip`](./Arrays.md#array-smallcompletioncheckmarktooltip) | Array |  | 1 |
 | [`major_class_checkmarks`](./Arrays.md#array-major_class_checkmarks) | Array |  | 1 |
-| [`map_areas`](./Miscellaneous.md#context-map_areas) | Block |  | 1 |
+| [`map_areas`](#context-map_areas) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `map_areas` (1 instances)
+### Context: `map_areas`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#chapter-id-enum)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -83,13 +88,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/event_rewards_samples.gon`
 
 
-### Context: `ROOT` (3 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 3
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Fights` | Number |  | 3 |
 | `Poison` | Number |  | 3 |
 | `count` | Number |  | 3 |
@@ -101,27 +109,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Enums.md#enum-object) | Enum |  | 2 |
 | `str` | Number |  | 2 |
 | `tail` | Number |  | 2 |
-| [`CharacterTypeGainsStatusAtBattleStart`](./Miscellaneous.md#context-charactertypegainsstatusatbattlestart) | Block |  | 1 |
+| [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block |  | 1 |
 | `asymmetric` | Boolean |  | 1 |
 | `chance` | Number |  | 1 |
 | `choose_cat_with_min_health` | Number |  | 1 |
-| [`common`](./Miscellaneous.md#context-common) | Block |  | 1 |
-| [`conditional_reward`](./Miscellaneous.md#context-conditional_reward) | Block |  | 1 |
+| [`common`](#context-common) | Block |  | 1 |
+| [`conditional_reward`](#context-conditional_reward) | Block |  | 1 |
 | [`cutscene`](./Strings.md#string-cutscene) | String |  | 1 |
-| [`else`](./Miscellaneous.md#context-else) | Block |  | 1 |
+| [`else`](#context-else) | Block |  | 1 |
 | [`event`](./Enums.md#enum-event) | Enum |  | 1 |
 | `fights` | Number |  | 1 |
 | `initial_health` | Number |  | 1 |
-| [`mutation`](./Miscellaneous.md#context-mutation) | Block |  | 1 |
+| [`mutation`](#context-mutation) | Block |  | 1 |
 | [`pool`](./Enums.md#enum-pool) | Enum |  | 1 |
 | [`prompt`](./Strings.md#string-prompt) | String |  | 1 |
 | `random` | Number |  | 1 |
-| [`rare`](./Miscellaneous.md#context-rare) | Block |  | 1 |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Block |  | 1 |
+| [`rare`](#context-rare) | Block |  | 1 |
+| [`requirements`](#context-requirements) | Block |  | 1 |
 | [`restrict`](./Enums.md#enum-restrict) | Enum |  | 1 |
 | [`return_as`](./Enums.md#enum-return_as) | Enum |  | 1 |
 | [`return_during`](./Enums.md#enum-return_during) | Enum |  | 1 |
-| [`reward`](./Miscellaneous.md#context-reward) | Block |  | 1 |
+| [`reward`](#context-reward) | Block |  | 1 |
 | `same_cat` | Boolean |  | 1 |
 | `set_frame` | Number |  | 1 |
 | `skip_result_screen` | Boolean |  | 1 |
@@ -131,12 +139,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `requirements` (2 instances)
+### Context: `requirements`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`conditional_reward`](./Miscellaneous.md#context-conditional_reward)
+**Total Count:** 2
+
+> **Referenced by:** [`ROOT`](#event-reward-samples), [`conditional_reward`](#context-conditional_reward)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -153,12 +163,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reward` (2 instances)
+### Context: `reward`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`conditional_reward`](./Miscellaneous.md#context-conditional_reward)
+**Total Count:** 2
+
+> **Referenced by:** [`ROOT`](#event-reward-samples), [`conditional_reward`](#context-conditional_reward)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -172,15 +184,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CharacterTypeGainsStatusAtBattleStart` (1 instances)
+### Context: `CharacterTypeGainsStatusAtBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#event-reward-samples)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Fear` | Number |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
@@ -188,12 +204,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `common` (1 instances)
+### Context: `common`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#event-reward-samples)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -204,28 +222,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `conditional_reward` (1 instances)
+### Context: `conditional_reward`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#event-reward-samples)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`requirements`](./Miscellaneous.md#context-requirements) | Block |  | 1 |
-| [`reward`](./Miscellaneous.md#context-reward) | Block |  | 1 |
+| [`requirements`](#context-requirements) | Block |  | 1 |
+| [`reward`](#context-reward) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `else` (1 instances)
+### Context: `else`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#event-reward-samples)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -237,12 +259,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mutation` (1 instances)
+### Context: `mutation`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#event-reward-samples)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -252,12 +276,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `rare` (1 instances)
+### Context: `rare`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#event-reward-samples)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -273,13 +299,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/house_boss_info.gon`
 
 
-### Context: `ROOT` (9 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 9
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `act` | Number |  | 9 |
 | [`arrival_unlock`](./Enums.md#enum-arrival_unlock) | Enum |  | 9 |
 | `index` | Number |  | 9 |
@@ -305,13 +334,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/particles.gon`
 
 
-### Context: `ROOT` (154 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 154
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 154 |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum |  | 140 |
 | `emit_amount` | Number |  | 139 |
@@ -324,7 +356,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `speed_start` | Number |  | 120 |
 | [`live_bounds`](./Arrays.md#array-live_bounds) | Array |  | 103 |
 | [`size_start`](./Arrays.md#array-size_start) | Array |  | 94 |
-| [`scripts`](./Miscellaneous.md#context-scripts) | Block |  | 90 |
+| [`scripts`](#context-scripts) | Block |  | 90 |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array |  | 81 |
 | `size_end` | Number |  | 76 |
 | [`friction`](./Arrays.md#array-friction) | Array |  | 72 |
@@ -376,32 +408,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `scripts` (90 instances)
+### Context: `scripts`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+**Total Count:** 90
+
+> **Referenced by:** [`ROOT`](#particles)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ParticleBouncePlane`](./Miscellaneous.md#context-particlebounceplane) | Block |  | 69 |
-| [`ParticleGlobalForce`](./Miscellaneous.md#context-particleglobalforce) | Block |  | 27 |
-| [`ParticleTornadoForce`](./Miscellaneous.md#context-particletornadoforce) | Block |  | 19 |
+| [`ParticleBouncePlane`](#context-particlebounceplane) | Block |  | 69 |
+| [`ParticleGlobalForce`](#context-particleglobalforce) | Block |  | 27 |
+| [`ParticleTornadoForce`](#context-particletornadoforce) | Block |  | 19 |
 | [`ParticleRandomForce`](./Arrays.md#array-particlerandomforce) | Array |  | 18 |
 | `ParticleAttractor` | Number |  | 9 |
-| [`ParticleCharacterCollision`](./Miscellaneous.md#context-particlecharactercollision) | Block |  | 1 |
+| [`ParticleCharacterCollision`](#context-particlecharactercollision) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `ParticleBouncePlane` (69 instances)
+### Context: `ParticleBouncePlane`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
+**Total Count:** 69
+
+> **Referenced by:** [`scripts`](#context-scripts)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -415,12 +451,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleGlobalForce` (27 instances)
+### Context: `ParticleGlobalForce`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
+**Total Count:** 27
+
+> **Referenced by:** [`scripts`](#context-scripts)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -431,12 +469,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleTornadoForce` (19 instances)
+### Context: `ParticleTornadoForce`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
+**Total Count:** 19
+
+> **Referenced by:** [`scripts`](#context-scripts)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -448,10 +488,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleAttractor` (7 instances)
+### Context: `ParticleAttractor`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -464,10 +506,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleRandomForce` (7 instances)
+### Context: `ParticleRandomForce`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -478,12 +522,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleCharacterCollision` (1 instances)
+### Context: `ParticleCharacterCollision`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
+**Total Count:** 1
+
+> **Referenced by:** [`scripts`](#context-scripts)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -500,13 +546,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/particles2d.gon`
 
 
-### Context: `ROOT` (19 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 19
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`emit_amount`](./Arrays.md#array-emit_amount) | Array |  | 19 |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array |  | 19 |
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array |  | 19 |
@@ -520,7 +569,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`simulation_space`](./Enums.md#enum-simulation_space) | Enum |  | 19 |
 | [`speed_start`](./Arrays.md#array-speed_start) | Array |  | 19 |
 | [`alpha`](./Enums.md#enum-alpha) | Enum |  | 18 |
-| [`scripts`](./Miscellaneous.md#context-scripts) | Block |  | 18 |
+| [`scripts`](#context-scripts) | Block |  | 18 |
 | [`force`](./Arrays.md#array-force) | Array |  | 13 |
 | `face_moving_direction` | Boolean |  | 12 |
 | [`size_start`](./Enums.md#enum-size_start) | Enum |  | 11 |
@@ -544,29 +593,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `scripts` (18 instances)
+### Context: `scripts`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles-2d)
+**Total Count:** 18
+
+> **Referenced by:** [`ROOT`](#particles-2d)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ParticleLineCollisions`](./Miscellaneous.md#context-particlelinecollisions) | Block |  | 8 |
-| [`ParticleBouncePlane`](./Miscellaneous.md#context-particlebounceplane) | Block |  | 5 |
+| [`ParticleLineCollisions`](#context-particlelinecollisions) | Block |  | 8 |
+| [`ParticleBouncePlane`](#context-particlebounceplane) | Block |  | 5 |
 | [`ParticleRandomForce`](./Arrays.md#array-particlerandomforce) | Array |  | 2 |
 
 </details>
 
 ---
 
-### Context: `ParticleLineCollisions` (8 instances)
+### Context: `ParticleLineCollisions`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
+**Total Count:** 8
+
+> **Referenced by:** [`scripts`](#context-scripts)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -578,12 +631,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleBouncePlane` (5 instances)
+### Context: `ParticleBouncePlane`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
+**Total Count:** 5
+
+> **Referenced by:** [`scripts`](#context-scripts)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -599,12 +654,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/save_file_percentages.gon`
 
 
-### Context: `complete_checkmarks` (6 instances)
+### Context: `complete_checkmarks`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Miscellaneous.md#context-1), [`20`](./Miscellaneous.md#context-20)
+**Total Count:** 6
+
+> **Referenced by:** [`1`](#context-1), [`20`](#context-20)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -623,24 +680,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following contexts are numeric keys or array indices.
 
 
-### Context: `1` (39 instances)
+### Context: `1`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 39
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`adventure_unlock`](./Enums.md#enum-adventure_unlock) | Enum |  | 39 |
-| [`complete_checkmarks`](./Miscellaneous.md#context-complete_checkmarks) | Block |  | 5 |
+| [`complete_checkmarks`](#context-complete_checkmarks) | Block |  | 5 |
 
 </details>
 
 ---
 
-### Context: `20` (18 instances)
+### Context: `20`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -649,7 +710,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`save_file_flag`](./Enums.md#enum-save_file_flag) | String |  | 9 |
 | [`max_npc`](./Enums.md#enum-max_npc) | Enum |  | 7 |
 | [`adventure_unlock`](./Enums.md#enum-adventure_unlock) | Enum |  | 5 |
-| [`complete_checkmarks`](./Miscellaneous.md#context-complete_checkmarks) | Block |  | 1 |
+| [`complete_checkmarks`](#context-complete_checkmarks) | Block |  | 1 |
 
 </details>
 
@@ -660,13 +721,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/teamnames.gon`
 
 
-### Context: `ROOT` (15 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 15
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`adjectives`](./Arrays.md#array-adjectives) | Array |  | 15 |
 | [`nouns`](./Arrays.md#array-nouns) | Array |  | 15 |
 | [`format`](./Strings.md#string-format) | String |  | 1 |
@@ -681,14 +745,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/tiles.gon`
 
 
-### Context: `ROOT` (27 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 27
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`editor`](./Miscellaneous.md#context-editor) | Block |  | 27 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`editor`](#context-editor) | Block |  | 27 |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 26 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 4 |
 
@@ -696,12 +763,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `editor` (27 instances)
+### Context: `editor`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tiles)
+**Total Count:** 27
+
+> **Referenced by:** [`ROOT`](#tiles)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -717,10 +786,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tile` (2 instances)
+### Context: `tile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -737,14 +808,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/tilesets.gon`
 
 
-### Context: `ROOT` (22 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 22
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`global_objects`](./Miscellaneous.md#context-global_objects) | Block |  | 22 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`global_objects`](#context-global_objects) | Block |  | 22 |
 | [`combat_background`](./Enums.md#enum-combat_background) | Enum |  | 21 |
 | [`combat_ui_background`](./Enums.md#enum-combat_ui_background) | Enum |  | 21 |
 | [`debris`](./Enums.md#enum-debris) | Enum |  | 21 |
@@ -756,7 +830,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`static_2x2_b`](./Enums.md#enum-static_2x2_b) | Enum |  | 21 |
 | [`static_tall_a`](./Enums.md#enum-static_tall_a) | Enum |  | 21 |
 | [`static_tall_b`](./Enums.md#enum-static_tall_b) | Enum |  | 21 |
-| [`reverb`](./Miscellaneous.md#context-reverb) | Block |  | 14 |
+| [`reverb`](#context-reverb) | Block |  | 14 |
 | [`global_particles`](./Arrays.md#array-global_particles) | Array |  | 11 |
 | [`background_extra_shader`](./Enums.md#enum-background_extra_shader) | Enum |  | 3 |
 | [`water_alt_shader`](./Enums.md#enum-water_alt_shader) | Enum |  | 2 |
@@ -769,30 +843,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `global_objects` (22 instances)
+### Context: `global_objects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+**Total Count:** 22
+
+> **Referenced by:** [`ROOT`](#tilesets)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Lighting`](./Miscellaneous.md#context-lighting) | Block |  | 10 |
-| [`Fly`](./Miscellaneous.md#context-fly) | Block |  | 7 |
-| [`Cockroach`](./Miscellaneous.md#context-cockroach) | Block |  | 3 |
-| [`Firefly`](./Miscellaneous.md#context-firefly) | Block |  | 1 |
+| [`Lighting`](#context-lighting) | Block |  | 10 |
+| [`Fly`](#context-fly) | Block |  | 7 |
+| [`Cockroach`](#context-cockroach) | Block |  | 3 |
+| [`Firefly`](#context-firefly) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `battle` (14 instances)
+### Context: `battle`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`reverb`](./Miscellaneous.md#context-reverb)
+**Total Count:** 14
+
+> **Referenced by:** [`reverb`](#context-reverb)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -806,27 +884,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb` (14 instances)
+### Context: `reverb`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+**Total Count:** 14
+
+> **Referenced by:** [`ROOT`](#tilesets)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`battle`](./Miscellaneous.md#context-battle) | Block |  | 14 |
+| [`battle`](#context-battle) | Block |  | 14 |
 
 </details>
 
 ---
 
-### Context: `Lighting` (10 instances)
+### Context: `Lighting`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
+**Total Count:** 10
+
+> **Referenced by:** [`global_objects`](#context-global_objects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -839,12 +921,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Fly` (7 instances)
+### Context: `Fly`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
+**Total Count:** 7
+
+> **Referenced by:** [`global_objects`](#context-global_objects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -854,12 +938,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Cockroach` (3 instances)
+### Context: `Cockroach`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
+**Total Count:** 3
+
+> **Referenced by:** [`global_objects`](#context-global_objects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -869,12 +955,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Firefly` (1 instances)
+### Context: `Firefly`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
+**Total Count:** 1
+
+> **Referenced by:** [`global_objects`](#context-global_objects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |

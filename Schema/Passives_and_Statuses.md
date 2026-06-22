@@ -2,26 +2,29 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Passives & Statuses
 
 > **Associated Files:** `data/passives/, data/passive_pools.gon`
 
 
-### Context: `ROOT` (511 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 511
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`name`](./Strings.md#string-name) | String | Localization key for the passive's display name. | 511 |
 | [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 510 |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 510 |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 116 |
-| [`stats`](./Passives_and_Statuses.md#context-stats) | Block |  | 35 |
-| [`lock_item_slot`](./Passives_and_Statuses.md#context-lock_item_slot) | Block |  | 16 |
+| [`passives`](#context-passives) | Block |  | 116 |
+| [`stats`](#context-stats) | Block |  | 35 |
+| [`lock_item_slot`](#context-lock_item_slot) | Block |  | 16 |
 | [`desc_multiclass`](./Strings.md#string-desc_multiclass) | String |  | 5 |
 | `auto_plus_signs_on_name` | Boolean |  | 4 |
 | [`name_mod`](./Strings.md#string-name_mod) | String |  | 4 |
@@ -35,81 +38,86 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passives` (884 instances)
+### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`10`](./Passives_and_Statuses.md#context-10), [`2`](./Passives_and_Statuses.md#context-2), [`3`](./Passives_and_Statuses.md#context-3), [`4`](./Passives_and_Statuses.md#context-4), [`5`](./Passives_and_Statuses.md#context-5), [`6`](./Passives_and_Statuses.md#context-6), [`7`](./Passives_and_Statuses.md#context-7), [`8`](./Passives_and_Statuses.md#context-8), [`9`](./Passives_and_Statuses.md#context-9), [`PassiveAfterXKills`](./Passives_and_Statuses.md#context-passiveafterxkills), [`PassiveAtHealthThreshold`](./Passives_and_Statuses.md#context-passiveathealththreshold), [`PassiveAtInjuryThreshold`](./Passives_and_Statuses.md#context-passiveatinjurythreshold), [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#context-passiveatstatthreshold), [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#context-passivewhenaffectedbyelement), [`ROOT`](./Passives_and_Statuses.md#context-root)
+**Total Count:** 884
+
+> **Referenced by:** [`1`](#context-1), [`10`](#context-10), [`2`](#context-2), [`3`](#context-3), [`4`](#context-4), [`5`](#context-5), [`6`](#context-6), [`7`](#context-7), [`8`](#context-8), [`9`](#context-9), [`PassiveAfterXKills`](#context-passiveafterxkills), [`PassiveAtHealthThreshold`](#context-passiveathealththreshold), [`PassiveAtInjuryThreshold`](#context-passiveatinjurythreshold), [`PassiveAtStatThreshold`](#context-passiveatstatthreshold), [`PassiveWhenAffectedByElement`](#context-passivewhenaffectedbyelement), [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 80 |
-| [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions) | Block | Applies the 'AddPassivesToMinions' effect. | 29 |
-| [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage) | Block | Event Trigger: Applies nested statuses when took damage. | 21 |
-| [`StatusEachTurnEnd`](./Passives_and_Statuses.md#context-statuseachturnend) | Block | Event Trigger: Applies nested statuses to each turn end. | 20 |
-| [`StatusOnBattleEnd`](./Passives_and_Statuses.md#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 16 |
-| [`StatusOnKill`](./Passives_and_Statuses.md#context-statusonkill) | Block | Event Trigger: Applies nested statuses when kill. | 14 |
-| [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin) | Block | Event Trigger: Applies nested statuses to each turn begin. | 12 |
-| [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus) | Block | Applies the 'CritsApplyStatus' effect. | 10 |
-| [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#context-passiveatstatthreshold) | Block | Applies the 'PassiveAtStatThreshold' effect. | 10 |
-| [`RevengeDamage`](./Passives_and_Statuses.md#context-revengedamage) | Block | Reaction trigger: Deals damage to the attacker when hit. | 9 |
-| [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 8 |
-| [`StatusAlliesOnDeath`](./Passives_and_Statuses.md#context-statusalliesondeath) | Block | Event Trigger: Applies nested statuses to allies on death. | 7 |
-| [`AddStatusToWeapons`](./Passives_and_Statuses.md#context-addstatustoweapons) | Block | Applies the 'AddStatusToWeapons' effect. | 6 |
-| [`AddStatusToAllDamage`](./Passives_and_Statuses.md#context-addstatustoalldamage) | Block | Applies the 'AddStatusToAllDamage' effect. | 5 |
-| [`AddStatusToBasicMeleeAttack`](./Passives_and_Statuses.md#context-addstatustobasicmeleeattack) | Block | Applies the 'AddStatusToBasicMeleeAttack' effect. | 5 |
-| [`StatusOnCastSpell`](./Passives_and_Statuses.md#context-statusoncastspell) | Block | Event Trigger: Applies nested statuses when cast spell. | 5 |
-| [`AddPassivesToCharmed`](./Passives_and_Statuses.md#context-addpassivestocharmed) | Block | Applies the 'AddPassivesToCharmed' effect. | 4 |
-| [`AddStatusToElementDamage`](./Passives_and_Statuses.md#context-addstatustoelementdamage) | Block | Applies the 'AddStatusToElementDamage' effect. | 4 |
-| [`PassiveAtHealthThreshold`](./Passives_and_Statuses.md#context-passiveathealththreshold) | Block | Applies the 'PassiveAtHealthThreshold' effect. | 4 |
-| [`PassiveWhenAtFullMana`](./Passives_and_Statuses.md#context-passivewhenatfullmana) | Block | State Trigger: Grants nested passives when at full mana. | 4 |
-| [`StatusIfUnusedMovePoints`](./Passives_and_Statuses.md#context-statusifunusedmovepoints) | Block | Event Trigger: Applies nested statuses to if unused move points. | 4 |
-| [`AddSelfStatusToBasicAttack`](./Passives_and_Statuses.md#context-addselfstatustobasicattack) | Block | Applies the 'AddSelfStatusToBasicAttack' effect. | 3 |
-| [`StatusEveryXSpellCasts`](./Passives_and_Statuses.md#context-statuseveryxspellcasts) | Block | Event Trigger: Applies nested statuses to every x spell casts. | 3 |
-| [`StatusKilledCharacters`](./Passives_and_Statuses.md#context-statuskilledcharacters) | Block | Event Trigger: Applies nested statuses to killed characters. | 3 |
-| [`StatusOnAllyCatDeath`](./Passives_and_Statuses.md#context-statusonallycatdeath) | Block | Event Trigger: Applies nested statuses when ally cat death. | 3 |
-| [`StatusOnBattleStart`](./Passives_and_Statuses.md#context-statusonbattlestart) | Block | Event Trigger: Applies nested statuses when battle start. | 3 |
-| [`StatusOnEatFood`](./Passives_and_Statuses.md#context-statusoneatfood) | Block | Event Trigger: Applies nested statuses when eat food. | 3 |
-| [`StatusOnGainCoins`](./Passives_and_Statuses.md#context-statusongaincoins) | Block | Event Trigger: Applies nested statuses when gain coins. | 3 |
-| [`StatusOnHealed`](./Passives_and_Statuses.md#context-statusonhealed) | Block | Event Trigger: Applies nested statuses when healed. | 3 |
-| [`StatusOnKillEnemy`](./Passives_and_Statuses.md#context-statusonkillenemy) | Block | Event Trigger: Applies nested statuses when kill enemy. | 3 |
-| [`StatusOnTookDamageFromAbility`](./Passives_and_Statuses.md#context-statusontookdamagefromability) | Block | Event Trigger: Applies nested statuses when took damage from ability. | 3 |
-| [`AddSelfStatusToWeapons`](./Passives_and_Statuses.md#context-addselfstatustoweapons) | Block | Applies the 'AddSelfStatusToWeapons' effect. | 2 |
-| [`AddStatusToTrampleDamage`](./Passives_and_Statuses.md#context-addstatustotrampledamage) | Block | Applies the 'AddStatusToTrampleDamage' effect. | 2 |
-| [`ApplyStatusesToRandomEnemiesEachTurn`](./Passives_and_Statuses.md#context-applystatusestorandomenemieseachturn) | Block | Applies the 'ApplyStatusesToRandomEnemiesEachTurn' effect. | 2 |
-| [`CatchProjectiles`](./Passives_and_Statuses.md#context-catchprojectiles) | Block | Applies the 'CatchProjectiles' effect. | 2 |
-| [`ExtraStatusWhenDealingDamage`](./Passives_and_Statuses.md#context-extrastatuswhendealingdamage) | Block | Applies the 'ExtraStatusWhenDealingDamage' effect. | 2 |
-| [`PassiveAfterXKills`](./Passives_and_Statuses.md#context-passiveafterxkills) | Block | Applies the 'PassiveAfterXKills' effect. | 2 |
-| [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#context-passivewhenaffectedbyelement) | Block | State Trigger: Grants nested passives when affected by element. | 2 |
-| [`PassiveWhileInMonkMeleeStance`](./Passives_and_Statuses.md#context-passivewhileinmonkmeleestance) | Block | Applies the 'PassiveWhileInMonkMeleeStance' effect. | 2 |
-| [`StatusAfterCastSpell`](./Passives_and_Statuses.md#context-statusaftercastspell) | Block | Event Trigger: Applies nested statuses to after cast spell. | 2 |
-| [`StatusAlliesOnBattleStart`](./Passives_and_Statuses.md#context-statusalliesonbattlestart) | Block | Event Trigger: Applies nested statuses to allies on battle start. | 2 |
-| [`StatusEachTurnEndForEachTurn`](./Passives_and_Statuses.md#context-statuseachturnendforeachturn) | Block | Event Trigger: Applies nested statuses to each turn end for each turn. | 2 |
-| [`StatusKillers`](./Passives_and_Statuses.md#context-statuskillers) | Block | Instantly kills the target if they possess the specified status effects. | 2 |
-| [`StatusOnBreakItem`](./Passives_and_Statuses.md#context-statusonbreakitem) | Block | Event Trigger: Applies nested statuses when break item. | 2 |
-| [`StatusOnCollectPickup`](./Passives_and_Statuses.md#context-statusoncollectpickup) | Block | Event Trigger: Applies nested statuses when collect pickup. | 2 |
-| [`StatusOnEndMove`](./Passives_and_Statuses.md#context-statusonendmove) | Block | Event Trigger: Applies nested statuses when end move. | 2 |
-| [`StatusOnPickupCoins`](./Passives_and_Statuses.md#context-statusonpickupcoins) | Block | Event Trigger: Applies nested statuses when pickup coins. | 2 |
-| [`StatusOnPopCorpse`](./Passives_and_Statuses.md#context-statusonpopcorpse) | Block | Event Trigger: Applies nested statuses when pop corpse. | 2 |
-| [`StatusOnUseBasicAttack`](./Passives_and_Statuses.md#context-statusonusebasicattack) | Block | Event Trigger: Applies nested statuses when use basic attack. | 2 |
-| [`StatusWhenAllySpendsMana`](./Passives_and_Statuses.md#context-statuswhenallyspendsmana) | Block | Event Trigger: Applies nested statuses to when ally spends mana. | 2 |
-| [`AddStatusToKnockbackDamage`](./Passives_and_Statuses.md#context-addstatustoknockbackdamage) | Block | Applies the 'AddStatusToKnockbackDamage' effect. | 1 |
-| [`AddStatusToSpells`](./Passives_and_Statuses.md#context-addstatustospells) | Block | Applies the 'AddStatusToSpells' effect. | 1 |
-| [`RandomPassivePool`](./Passives_and_Statuses.md#context-randompassivepool) | Block | Applies the 'RandomPassivePool' effect. | 1 |
-| [`StatusOnEatPill`](./Passives_and_Statuses.md#context-statusoneatpill) | Block | Event Trigger: Applies nested statuses when eat pill. | 1 |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 80 |
+| [`AddPassivesToMinions`](#context-addpassivestominions) | Block | Applies the 'AddPassivesToMinions' effect. | 29 |
+| [`StatusOnTookDamage`](#context-statusontookdamage) | Block | Event Trigger: Applies nested statuses when took damage. | 21 |
+| [`StatusEachTurnEnd`](#context-statuseachturnend) | Block | Event Trigger: Applies nested statuses to each turn end. | 20 |
+| [`StatusOnBattleEnd`](#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 16 |
+| [`StatusOnKill`](#context-statusonkill) | Block | Event Trigger: Applies nested statuses when kill. | 14 |
+| [`StatusEachTurnBegin`](#context-statuseachturnbegin) | Block | Event Trigger: Applies nested statuses to each turn begin. | 12 |
+| [`CritsApplyStatus`](#context-critsapplystatus) | Block | Applies the 'CritsApplyStatus' effect. | 10 |
+| [`PassiveAtStatThreshold`](#context-passiveatstatthreshold) | Block | Applies the 'PassiveAtStatThreshold' effect. | 10 |
+| [`RevengeDamage`](#context-revengedamage) | Block | Reaction trigger: Deals damage to the attacker when hit. | 9 |
+| [`MeleeRevengeDamage`](#context-meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 8 |
+| [`StatusAlliesOnDeath`](#context-statusalliesondeath) | Block | Event Trigger: Applies nested statuses to allies on death. | 7 |
+| [`AddStatusToWeapons`](#context-addstatustoweapons) | Block | Applies the 'AddStatusToWeapons' effect. | 6 |
+| [`AddStatusToAllDamage`](#context-addstatustoalldamage) | Block | Applies the 'AddStatusToAllDamage' effect. | 5 |
+| [`AddStatusToBasicMeleeAttack`](#context-addstatustobasicmeleeattack) | Block | Applies the 'AddStatusToBasicMeleeAttack' effect. | 5 |
+| [`StatusOnCastSpell`](#context-statusoncastspell) | Block | Event Trigger: Applies nested statuses when cast spell. | 5 |
+| [`AddPassivesToCharmed`](#context-addpassivestocharmed) | Block | Applies the 'AddPassivesToCharmed' effect. | 4 |
+| [`AddStatusToElementDamage`](#context-addstatustoelementdamage) | Block | Applies the 'AddStatusToElementDamage' effect. | 4 |
+| [`PassiveAtHealthThreshold`](#context-passiveathealththreshold) | Block | Applies the 'PassiveAtHealthThreshold' effect. | 4 |
+| [`PassiveWhenAtFullMana`](#context-passivewhenatfullmana) | Block | State Trigger: Grants nested passives when at full mana. | 4 |
+| [`StatusIfUnusedMovePoints`](#context-statusifunusedmovepoints) | Block | Event Trigger: Applies nested statuses to if unused move points. | 4 |
+| [`AddSelfStatusToBasicAttack`](#context-addselfstatustobasicattack) | Block | Applies the 'AddSelfStatusToBasicAttack' effect. | 3 |
+| [`StatusEveryXSpellCasts`](#context-statuseveryxspellcasts) | Block | Event Trigger: Applies nested statuses to every x spell casts. | 3 |
+| [`StatusKilledCharacters`](#context-statuskilledcharacters) | Block | Event Trigger: Applies nested statuses to killed characters. | 3 |
+| [`StatusOnAllyCatDeath`](#context-statusonallycatdeath) | Block | Event Trigger: Applies nested statuses when ally cat death. | 3 |
+| [`StatusOnBattleStart`](#context-statusonbattlestart) | Block | Event Trigger: Applies nested statuses when battle start. | 3 |
+| [`StatusOnEatFood`](#context-statusoneatfood) | Block | Event Trigger: Applies nested statuses when eat food. | 3 |
+| [`StatusOnGainCoins`](#context-statusongaincoins) | Block | Event Trigger: Applies nested statuses when gain coins. | 3 |
+| [`StatusOnHealed`](#context-statusonhealed) | Block | Event Trigger: Applies nested statuses when healed. | 3 |
+| [`StatusOnKillEnemy`](#context-statusonkillenemy) | Block | Event Trigger: Applies nested statuses when kill enemy. | 3 |
+| [`StatusOnTookDamageFromAbility`](#context-statusontookdamagefromability) | Block | Event Trigger: Applies nested statuses when took damage from ability. | 3 |
+| [`AddSelfStatusToWeapons`](#context-addselfstatustoweapons) | Block | Applies the 'AddSelfStatusToWeapons' effect. | 2 |
+| [`AddStatusToTrampleDamage`](#context-addstatustotrampledamage) | Block | Applies the 'AddStatusToTrampleDamage' effect. | 2 |
+| [`ApplyStatusesToRandomEnemiesEachTurn`](#context-applystatusestorandomenemieseachturn) | Block | Applies the 'ApplyStatusesToRandomEnemiesEachTurn' effect. | 2 |
+| [`CatchProjectiles`](#context-catchprojectiles) | Block | Applies the 'CatchProjectiles' effect. | 2 |
+| [`ExtraStatusWhenDealingDamage`](#context-extrastatuswhendealingdamage) | Block | Applies the 'ExtraStatusWhenDealingDamage' effect. | 2 |
+| [`PassiveAfterXKills`](#context-passiveafterxkills) | Block | Applies the 'PassiveAfterXKills' effect. | 2 |
+| [`PassiveWhenAffectedByElement`](#context-passivewhenaffectedbyelement) | Block | State Trigger: Grants nested passives when affected by element. | 2 |
+| [`PassiveWhileInMonkMeleeStance`](#context-passivewhileinmonkmeleestance) | Block | Applies the 'PassiveWhileInMonkMeleeStance' effect. | 2 |
+| [`StatusAfterCastSpell`](#context-statusaftercastspell) | Block | Event Trigger: Applies nested statuses to after cast spell. | 2 |
+| [`StatusAlliesOnBattleStart`](#context-statusalliesonbattlestart) | Block | Event Trigger: Applies nested statuses to allies on battle start. | 2 |
+| [`StatusEachTurnEndForEachTurn`](#context-statuseachturnendforeachturn) | Block | Event Trigger: Applies nested statuses to each turn end for each turn. | 2 |
+| [`StatusKillers`](#context-statuskillers) | Block | Instantly kills the target if they possess the specified status effects. | 2 |
+| [`StatusOnBreakItem`](#context-statusonbreakitem) | Block | Event Trigger: Applies nested statuses when break item. | 2 |
+| [`StatusOnCollectPickup`](#context-statusoncollectpickup) | Block | Event Trigger: Applies nested statuses when collect pickup. | 2 |
+| [`StatusOnEndMove`](#context-statusonendmove) | Block | Event Trigger: Applies nested statuses when end move. | 2 |
+| [`StatusOnPickupCoins`](#context-statusonpickupcoins) | Block | Event Trigger: Applies nested statuses when pickup coins. | 2 |
+| [`StatusOnPopCorpse`](#context-statusonpopcorpse) | Block | Event Trigger: Applies nested statuses when pop corpse. | 2 |
+| [`StatusOnUseBasicAttack`](#context-statusonusebasicattack) | Block | Event Trigger: Applies nested statuses when use basic attack. | 2 |
+| [`StatusWhenAllySpendsMana`](#context-statuswhenallyspendsmana) | Block | Event Trigger: Applies nested statuses to when ally spends mana. | 2 |
+| [`AddStatusToKnockbackDamage`](#context-addstatustoknockbackdamage) | Block | Applies the 'AddStatusToKnockbackDamage' effect. | 1 |
+| [`AddStatusToSpells`](#context-addstatustospells) | Block | Applies the 'AddStatusToSpells' effect. | 1 |
+| [`RandomPassivePool`](#context-randompassivepool) | Block | Applies the 'RandomPassivePool' effect. | 1 |
+| [`StatusOnEatPill`](#context-statusoneatpill) | Block | Event Trigger: Applies nested statuses when eat pill. | 1 |
 
 </details>
 
 ---
 
-### Context: `stats` (97 instances)
+### Context: `stats`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2), [`ROOT`](./Passives_and_Statuses.md#context-root)
+**Total Count:** 97
+
+> **Referenced by:** [`1`](#context-1), [`2`](#context-2), [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -125,126 +133,152 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttack` (92 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToCharmed`](./Passives_and_Statuses.md#context-addpassivestocharmed), [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`PassiveWhenAtFullMana`](./Passives_and_Statuses.md#context-passivewhenatfullmana), [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 92
+
+> **Referenced by:** [`AddPassivesToCharmed`](#context-addpassivestocharmed), [`AddPassivesToMinions`](#context-addpassivestominions), [`PassiveWhenAtFullMana`](#context-passivewhenatfullmana), [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`ApplyStatusIfCrit`](./Passives_and_Statuses.md#context-applystatusifcrit) | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 2 |
-| [`ApplyToSource`](./Passives_and_Statuses.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyStatusIfCrit`](#context-applystatusifcrit) | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 2 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
 </details>
 
 ---
 
-### Context: `effects` (30 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#context-damageneighborsaftermove), [`DamageNeighborsOnEndMove`](./Passives_and_Statuses.md#context-damageneighborsonendmove), [`GravityWell`](./Passives_and_Statuses.md#context-gravitywell), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage), [`RevengeDamage`](./Passives_and_Statuses.md#context-revengedamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#context-smiteenemieswhokill), [`fire`](./Passives_and_Statuses.md#context-fire), [`ice`](./Passives_and_Statuses.md#context-ice), [`lightning`](./Passives_and_Statuses.md#context-lightning), [`triattack`](./Passives_and_Statuses.md#context-triattack)
+**Total Count:** 30
+
+> **Referenced by:** [`DamageNeighborsAfterMove`](#context-damageneighborsaftermove), [`DamageNeighborsOnEndMove`](#context-damageneighborsonendmove), [`GravityWell`](#context-gravitywell), [`MeleeRevengeDamage`](#context-meleerevengedamage), [`RevengeDamage`](#context-revengedamage), [`SmiteEnemiesWhoKill`](#context-smiteenemieswhokill), [`fire`](#context-fire), [`ice`](#context-ice), [`lightning`](#context-lightning), [`triattack`](#context-triattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AddPassivesToMinions` (29 instances)
+### Context: `AddPassivesToMinions`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 29
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 5 |
-| [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#context-passivewhenaffectedbyelement) | Block | State Trigger: Grants nested passives when affected by element. | 2 |
-| [`StatusOnKill`](./Passives_and_Statuses.md#context-statusonkill) | Block | Event Trigger: Applies nested statuses when kill. | 2 |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 5 |
+| [`PassiveWhenAffectedByElement`](#context-passivewhenaffectedbyelement) | Block | State Trigger: Grants nested passives when affected by element. | 2 |
+| [`StatusOnKill`](#context-statusonkill) | Block | Event Trigger: Applies nested statuses when kill. | 2 |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum |  | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTookDamage` (21 instances)
+### Context: `StatusOnTookDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 21
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusEachTurnEnd` (20 instances)
+### Context: `StatusEachTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 20
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnBattleEnd` (16 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 16
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 10 |
 
 </details>
 
 ---
 
-### Context: `StatusOnKill` (16 instances)
+### Context: `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 16
+
+> **Referenced by:** [`AddPassivesToMinions`](#context-addpassivestominions), [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`TakeBonusTurnWithStatus`](./Passives_and_Statuses.md#context-takebonusturnwithstatus) | Block | Grants the character an immediate extra turn while afflicted with specific statuses. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`TakeBonusTurnWithStatus`](#context-takebonusturnwithstatus) | Block | Grants the character an immediate extra turn while afflicted with specific statuses. | 1 |
 
 </details>
 
 ---
 
-### Context: `lock_item_slot` (16 instances)
+### Context: `lock_item_slot`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
+**Total Count:** 16
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -255,10 +289,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStart` (14 instances)
+### Context: `SpawnOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -269,15 +305,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnStanceSwitch` (14 instances)
+### Context: `StatusOnStanceSwitch`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveIfAllArmorEmpty`](./Passives_and_Statuses.md#context-passiveifallarmorempty), [`PassiveIfEmptyFace`](./Passives_and_Statuses.md#context-passiveifemptyface), [`PassiveIfEmptyHead`](./Passives_and_Statuses.md#context-passiveifemptyhead), [`PassiveIfEmptyNeck`](./Passives_and_Statuses.md#context-passiveifemptyneck), [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 14
+
+> **Referenced by:** [`PassiveIfAllArmorEmpty`](#context-passiveifallarmorempty), [`PassiveIfEmptyFace`](#context-passiveifemptyface), [`PassiveIfEmptyHead`](#context-passiveifemptyhead), [`PassiveIfEmptyNeck`](#context-passiveifemptyneck), [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 6 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies the 'ForceUseAbility' effect. | 2 |
 | `NextBasicAttackCritsThisTurn` | Number | Guarantees the next basic attack executed this turn will be a critical hit. | 2 |
@@ -289,12 +330,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpreadDisease` (12 instances)
+### Context: `SpreadDisease`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Passives_and_Statuses.md#context-addstatustobasicmeleeattack), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage), [`effects`](./Passives_and_Statuses.md#context-effects)
+**Total Count:** 12
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](#context-addstatustobasicmeleeattack), [`MeleeRevengeDamage`](#context-meleerevengedamage), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -306,59 +349,71 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnBegin` (12 instances)
+### Context: `StatusEachTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 12
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_Ally` (11 instances)
+### Context: `Conditional_Ally`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#context-addstatustoelementabilities), [`Conditional_SourceHasTag`](./Passives_and_Statuses.md#context-conditional_sourcehastag), [`ExtraStatusWhenDealingDamage`](./Passives_and_Statuses.md#context-extrastatuswhendealingdamage), [`StatusKilledCharacters`](./Passives_and_Statuses.md#context-statuskilledcharacters)
+**Total Count:** 11
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack), [`AddStatusToElementAbilities`](#context-addstatustoelementabilities), [`Conditional_SourceHasTag`](#context-conditional_sourcehastag), [`ExtraStatusWhenDealingDamage`](#context-extrastatuswhendealingdamage), [`StatusKilledCharacters`](#context-statuskilledcharacters)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
-| [`ApplyToSource`](./Passives_and_Statuses.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-
-</details>
-
----
-
-### Context: `CritsApplyStatus` (11 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`PassiveIfAllArmorEmpty`](./Passives_and_Statuses.md#context-passiveifallarmorempty), [`passives`](./Passives_and_Statuses.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
 
 ---
 
-### Context: `Temporary` (11 instances)
+### Context: `CritsApplyStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_BadRoll`](./Passives_and_Statuses.md#context-conditional_badroll), [`StatusOnGainShield`](./Passives_and_Statuses.md#context-statusongainshield), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage), [`StatusOnTurnEndIfManaOrHealthExact`](./Passives_and_Statuses.md#context-statusonturnendifmanaorhealthexact)
+**Total Count:** 11
+
+> **Referenced by:** [`PassiveIfAllArmorEmpty`](#context-passiveifallarmorempty), [`passives`](#context-passives)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
+
+</details>
+
+---
+
+### Context: `Temporary`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 11
+
+> **Referenced by:** [`Conditional_BadRoll`](#context-conditional_badroll), [`StatusOnGainShield`](#context-statusongainshield), [`StatusOnTookDamage`](#context-statusontookdamage), [`StatusOnTurnEndIfManaOrHealthExact`](#context-statusonturnendifmanaorhealthexact)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -372,30 +427,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtStatThreshold` (10 instances)
+### Context: `PassiveAtStatThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 10
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 10 |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 10 |
-| [`threshold`](./Passives_and_Statuses.md#context-threshold) | Block |  | 10 |
+| [`passives`](#context-passives) | Block |  | 10 |
+| [`threshold`](#context-threshold) | Block |  | 10 |
 
 </details>
 
 ---
 
-### Context: `threshold` (10 instances)
+### Context: `threshold`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#context-passiveatstatthreshold)
+**Total Count:** 10
+
+> **Referenced by:** [`PassiveAtStatThreshold`](#context-passiveatstatthreshold)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -407,34 +466,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (9 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 9
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 8 |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 8 |
 | `knockback` | Number |  | 2 |
 
 </details>
 
 ---
 
-### Context: `MeleeRevengeDamage` (8 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 8
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 7 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 7 |
 | `damage` | Number | The base damage properties of an attack. | 4 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 4 |
 
@@ -442,52 +506,62 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfAllArmorEmpty` (8 instances)
+### Context: `PassiveIfAllArmorEmpty`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 8
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddSpellDamage` | Number | Applies the 'AddSpellDamage' effect. | 2 |
 | [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | Applies the 'CounterAttack' effect. | 2 |
 | `ExtraMovePoints` | Number | Applies the 'ExtraMovePoints' effect. | 2 |
 | `ManaCostReduction` | Number | Applies the 'ManaCostReduction' effect. | 2 |
-| [`StatusOnStanceSwitch`](./Passives_and_Statuses.md#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
-| [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus) | Block | Applies the 'CritsApplyStatus' effect. | 1 |
+| [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
+| [`CritsApplyStatus`](#context-critsapplystatus) | Block | Applies the 'CritsApplyStatus' effect. | 1 |
 | `Flying` | Number | Applies the 'Flying' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `RandomStatusFromPool` (8 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally), [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy), [`StatusOnGainCoins`](./Passives_and_Statuses.md#context-statusongaincoins), [`StatusOnHealed`](./Passives_and_Statuses.md#context-statusonhealed), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
+**Total Count:** 8
+
+> **Referenced by:** [`Conditional_Ally`](#context-conditional_ally), [`Conditional_Enemy`](#context-conditional_enemy), [`StatusOnGainCoins`](#context-statusongaincoins), [`StatusOnHealed`](#context-statusonhealed), [`StatusOnTookDamage`](#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`StatusGroup`](./Passives_and_Statuses.md#context-statusgroup) | Block | Groups multiple status effects together for batch application. | 3 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`StatusGroup`](#context-statusgroup) | Block | Groups multiple status effects together for batch application. | 3 |
 
 </details>
 
 ---
 
-### Context: `StatusOnCrit` (8 instances)
+### Context: `StatusOnCrit`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 8
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 3 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
@@ -498,127 +572,149 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Enemy` (7 instances)
+### Context: `Conditional_Enemy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#context-addstatustoelementabilities), [`Conditional_NotBoss`](./Passives_and_Statuses.md#context-conditional_notboss)
+**Total Count:** 7
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack), [`AddStatusToElementAbilities`](#context-addstatustoelementabilities), [`Conditional_NotBoss`](#context-conditional_notboss)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
 
 </details>
 
 ---
 
-### Context: `DamageNeighborsOnEndMove` (7 instances)
+### Context: `DamageNeighborsOnEndMove`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 7
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | The base damage properties of an attack. | 7 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 7 |
 | `cant_miss` | Boolean |  | 6 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 6 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 6 |
 | `knockback` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveIfEmptyFace` (7 instances)
+### Context: `PassiveIfEmptyFace`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 7
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
 | `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
-| [`StatusOnStanceSwitch`](./Passives_and_Statuses.md#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
+| [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
 | `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveIfEmptyHead` (7 instances)
+### Context: `PassiveIfEmptyHead`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 7
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
 | `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
-| [`StatusOnStanceSwitch`](./Passives_and_Statuses.md#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
+| [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
 | `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveIfEmptyNeck` (7 instances)
+### Context: `PassiveIfEmptyNeck`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 7
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
 | `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
-| [`StatusOnStanceSwitch`](./Passives_and_Statuses.md#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
+| [`StatusOnStanceSwitch`](#context-statusonstanceswitch) | Block | Event Trigger: Applies nested statuses when stance switch. | 2 |
 | `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesOnDeath` (7 instances)
+### Context: `StatusAlliesOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 7
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `triggers_limit` | Number |  | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnUseAbilityWithTag` (7 instances)
+### Context: `StatusOnUseAbilityWithTag`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 7
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 7 |
 | `RefreshActPoints` | Number | Applies the 'RefreshActPoints' effect. | 3 |
-| [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 2 |
+| [`Conditional_FirstApplicationThisTurn`](#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `exclude_basicattack` | Boolean |  | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
@@ -628,45 +724,54 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToElementAbilities` (6 instances)
+### Context: `AddStatusToElementAbilities`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 6
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 6 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 2 |
-| [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 2 |
-| [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |
+| [`Conditional_Ally`](#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 2 |
+| [`Conditional_Enemy`](#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToWeapons` (6 instances)
+### Context: `AddStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 6
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `CureDisease` (6 instances)
+### Context: `CureDisease`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Passives_and_Statuses.md#context-statusonbattleend)
+**Total Count:** 6
+
+> **Referenced by:** [`StatusOnBattleEnd`](#context-statusonbattleend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -678,26 +783,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (6 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy), [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
+**Total Count:** 6
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack), [`Conditional_Enemy`](#context-conditional_enemy), [`CritsApplyStatus`](#context-critsapplystatus), [`StatusOnTookDamage`](#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `ManaCostReductionTagged` (6 instances)
+### Context: `ManaCostReductionTagged`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 6
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -708,12 +819,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnEachTurn` (6 instances)
+### Context: `SpawnEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 6
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -726,12 +839,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnThingOnDamage` (6 instances)
+### Context: `SpawnThingOnDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 6
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -744,71 +859,89 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `keyword_tooltips` (6 instances)
+### Context: `keyword_tooltips`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2)
+**Total Count:** 6
+
+> **Referenced by:** [`1`](#context-1), [`2`](#context-2)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[keyword_id]`](./Engine_Statuses.md#all-confirmed-keyword-id-values) | String | A Status or Keyword ID whose tooltip text is defined here. See Engine_Statuses.md for all IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`[keyword_id]`](./Engine_Statuses.md#all-confirmed-keyword_id-values) | String | A Status or Keyword ID whose tooltip text is defined here. See Engine_Statuses.md for all IDs. |  |
 </details>
 
 ---
 
-### Context: `AddStatusToAllDamage` (5 instances)
+### Context: `AddStatusToAllDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 5
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AddStatusToBasicMeleeAttack` (5 instances)
+### Context: `AddStatusToBasicMeleeAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 5
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnCastSpell` (5 instances)
+### Context: `StatusOnCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 5
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnOverHealed` (5 instances)
+### Context: `StatusOnOverHealed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 5
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies the 'ForceUseAbility_NonStack' effect. | 2 |
 | `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 2 |
 | `CurrentWeaponDamageUp` | Number | Applies the 'CurrentWeaponDamageUp' effect. | 1 |
@@ -818,12 +951,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddDamageToElementDamage` (4 instances)
+### Context: `AddDamageToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -834,47 +969,55 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToCharmed` (4 instances)
+### Context: `AddPassivesToCharmed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 5 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 5 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToElementDamage` (4 instances)
+### Context: `AddStatusToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToExplosions` (4 instances)
+### Context: `AddStatusToExplosions`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`AddPassivesToMinions`](#context-addpassivestominions), [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddElement`](./Enums.md#enum-addelement) | Enum | Applies the 'AddElement' effect. | 8 |
 | `Burn` | Number | Applies the 'Burn' effect. | 4 |
 
@@ -882,12 +1025,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllyManaRegenAura` (4 instances)
+### Context: `AllyManaRegenAura`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -898,12 +1043,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachRound` (4 instances)
+### Context: `AutocastEachRound`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -915,26 +1062,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_FirstApplicationThisTurn` (4 instances)
+### Context: `Conditional_FirstApplicationThisTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnKill`](./Passives_and_Statuses.md#context-statusonkill), [`StatusOnUseAbilityWithTag`](./Passives_and_Statuses.md#context-statusonuseabilitywithtag)
+**Total Count:** 4
+
+> **Referenced by:** [`StatusOnKill`](#context-statusonkill), [`StatusOnUseAbilityWithTag`](#context-statusonuseabilitywithtag)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `DistanceBonusDamage` (4 instances)
+### Context: `DistanceBonusDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+**Total Count:** 4
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -945,82 +1098,93 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `EMP` (4 instances)
+### Context: `EMP`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`AddPassivesToMinions`](#context-addpassivestominions), [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`spell_graphics_override`](./Passives_and_Statuses.md#context-spell_graphics_override) | Block |  | 4 |
+| [`spell_graphics_override`](#context-spell_graphics_override) | Block |  | 4 |
 | [`status_explosion_override`](./Enums.md#enum-status_explosion_override) | Enum |  | 4 |
 
 </details>
 
 ---
 
-### Context: `PassiveAtHealthThreshold` (4 instances)
+### Context: `PassiveAtHealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 4 |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 4 |
+| [`passives`](#context-passives) | Block |  | 4 |
 | `threshold` | Number |  | 4 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhenAffectedByElement` (4 instances)
+### Context: `PassiveWhenAffectedByElement`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`AddPassivesToMinions`](#context-addpassivestominions), [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 4 |
+| [`passives`](#context-passives) | Block |  | 4 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhenAtFullMana` (4 instances)
+### Context: `PassiveWhenAtFullMana`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 2 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesOnKill` (4 instances)
+### Context: `StatusAlliesOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`AddPassivesToMinions`](#context-addpassivestominions), [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
@@ -1029,29 +1193,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusIfUnusedMovePoints` (4 instances)
+### Context: `StatusIfUnusedMovePoints`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnTurnEndIfCastNSpells` (4 instances)
+### Context: `StatusOnTurnEndIfCastNSpells`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `spells` | Number |  | 4 |
 | `DoubleCastSpell` | Number | Applies the 'DoubleCastSpell' effect. | 2 |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
@@ -1061,15 +1232,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTurnEndIfManaExact` (4 instances)
+### Context: `StatusOnTurnEndIfManaExact`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `mana` | Number |  | 4 |
 | `FreeSpell` | Number | Applies the 'FreeSpell' effect. | 2 |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
@@ -1080,17 +1255,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTurnEndIfManaOrHealthExact` (4 instances)
+### Context: `StatusOnTurnEndIfManaOrHealthExact`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 4
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `mana` | Number |  | 4 |
-| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 3 |
+| [`Temporary`](#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 3 |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 2 |
@@ -1102,12 +1281,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `empty_armor_scaled_stats` (4 instances)
+### Context: `empty_armor_scaled_stats`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2)
+**Total Count:** 4
+
+> **Referenced by:** [`1`](#context-1), [`2`](#context-2)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1119,12 +1300,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `spell_graphics_override` (4 instances)
+### Context: `spell_graphics_override`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`EMP`](./Passives_and_Statuses.md#context-emp)
+**Total Count:** 4
+
+> **Referenced by:** [`EMP`](#context-emp)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1137,26 +1320,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddSelfStatusToBasicAttack` (3 instances)
+### Context: `AddSelfStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AddTemporaryEffectsToBasicAttack` (3 instances)
+### Context: `AddTemporaryEffectsToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1167,10 +1355,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AmplifyStatus` (3 instances)
+### Context: `AmplifyStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1181,44 +1371,54 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_BadRoll` (3 instances)
+### Context: `Conditional_BadRoll`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
+**Total Count:** 3
+
+> **Referenced by:** [`StatusEachTurnBegin`](#context-statuseachturnbegin)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 3 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HasStatus` (3 instances)
+### Context: `Conditional_HasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
+**Total Count:** 3
+
+> **Referenced by:** [`CritsApplyStatus`](#context-critsapplystatus), [`StatusOnTookDamage`](#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 3 |
 
 </details>
 
 ---
 
-### Context: `DeathRattle` (3 instances)
+### Context: `DeathRattle`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1229,12 +1429,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ElementalManaCostReduction` (3 instances)
+### Context: `ElementalManaCostReduction`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1245,12 +1447,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveTowardsDamageSource` (3 instances)
+### Context: `MoveTowardsDamageSource`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1261,12 +1465,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectOnHitCharacter` (3 instances)
+### Context: `ObjectOnHitCharacter`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Passives_and_Statuses.md#context-statuseachturnend), [`StatusEachTurnEndPerEnemyKill`](./Passives_and_Statuses.md#context-statuseachturnendperenemykill)
+**Total Count:** 3
+
+> **Referenced by:** [`StatusEachTurnEnd`](#context-statuseachturnend), [`StatusEachTurnEndPerEnemyKill`](#context-statuseachturnendperenemykill)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1277,12 +1483,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnCatCopyOnBattleStart` (3 instances)
+### Context: `SpawnCatCopyOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1293,12 +1501,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStartRandomEmptyTile` (3 instances)
+### Context: `SpawnOnBattleStartRandomEmptyTile`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1309,172 +1519,208 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEveryXSpellCasts` (3 instances)
+### Context: `StatusEveryXSpellCasts`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 3 |
 
 </details>
 
 ---
 
-### Context: `StatusGroup` (3 instances)
+### Context: `StatusGroup`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool)
+**Total Count:** 3
+
+> **Referenced by:** [`RandomStatusFromPool`](#context-randomstatusfrompool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusKilledCharacters` (3 instances)
+### Context: `StatusKilledCharacters`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnAllyCatDeath` (3 instances)
+### Context: `StatusOnAllyCatDeath`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnBattleStart` (3 instances)
+### Context: `StatusOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnEatFood` (3 instances)
+### Context: `StatusOnEatFood`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnGainCoins` (3 instances)
+### Context: `StatusOnGainCoins`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
-
-</details>
-
----
-
-### Context: `StatusOnHealed` (3 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnKillEnemy` (3 instances)
+### Context: `StatusOnHealed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
+
 </details>
 
 ---
 
-### Context: `StatusOnTookDamageFromAbility` (3 instances)
+### Context: `StatusOnKillEnemy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `statuses` (3 instances)
+### Context: `StatusOnTookDamageFromAbility`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChanceToRevive`](./Passives_and_Statuses.md#context-chancetorevive), [`StatusOnBattleEndIfKillThresholdMet`](./Passives_and_Statuses.md#context-statusonbattleendifkillthresholdmet)
+**Total Count:** 3
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AbilityWhenTaggedCharacterMovesNear` (2 instances)
+### Context: `statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 3
+
+> **Referenced by:** [`ChanceToRevive`](#context-chancetorevive), [`StatusOnBattleEndIfKillThresholdMet`](#context-statusonbattleendifkillthresholdmet)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+</details>
+
+---
+
+### Context: `AbilityWhenTaggedCharacterMovesNear`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1486,12 +1732,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassiveToSpawnedRocks` (2 instances)
+### Context: `AddPassiveToSpawnedRocks`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1502,15 +1750,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToSummonAbilityMinions` (2 instances)
+### Context: `AddPassivesToSummonAbilityMinions`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `Doomed` | Number | Applies the 'Doomed' effect. | 2 |
 | `MovementUp` | Number | Applies the 'MovementUp' effect. | 2 |
@@ -1519,29 +1771,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddSelfStatusToWeapons` (2 instances)
+### Context: `AddSelfStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AddStatusToAllDamageAbilities` (2 instances)
+### Context: `AddStatusToAllDamageAbilities`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
 | `Piercing` | Number | Applies the 'Piercing' effect. | 1 |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 1 |
@@ -1550,70 +1808,84 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttackWithCooldown` (2 instances)
+### Context: `AddStatusToBasicAttackWithCooldown`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `CharmedForceAttack` | Number | Applies the 'CharmedForceAttack' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToFirstBasicAttack` (2 instances)
+### Context: `AddStatusToFirstBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToMeleeDamage` (2 instances)
+### Context: `AddStatusToMeleeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`DelayedWind`](./Passives_and_Statuses.md#context-delayedwind) | Block | Applies the 'DelayedWind' effect. | 1 |
-| [`DelayedWindCone`](./Passives_and_Statuses.md#context-delayedwindcone) | Block | Creates a delayed Area of Effect cone. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`DelayedWind`](#context-delayedwind) | Block | Applies the 'DelayedWind' effect. | 1 |
+| [`DelayedWindCone`](#context-delayedwindcone) | Block | Creates a delayed Area of Effect cone. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToTrampleDamage` (2 instances)
+### Context: `AddStatusToTrampleDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AllyBonusAbilityAura` (2 instances)
+### Context: `AllyBonusAbilityAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1624,12 +1896,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllyHealthRegenAura` (2 instances)
+### Context: `AllyHealthRegenAura`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1640,12 +1914,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AlternateCraftingPools` (2 instances)
+### Context: `AlternateCraftingPools`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1656,70 +1932,83 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyStatusIfCrit` (2 instances)
+### Context: `ApplyStatusIfCrit`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+**Total Count:** 2
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `ApplyStatusesToRandomEnemiesEachTurn` (2 instances)
+### Context: `ApplyStatusesToRandomEnemiesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `count` | Number | The numerical quantity. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyToSource` (2 instances)
+### Context: `ApplyToSource`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally)
+**Total Count:** 2
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack), [`Conditional_Ally`](#context-conditional_ally)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `BoobyTrapItems` (2 instances)
+### Context: `BoobyTrapItems`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`on_break`](./Passives_and_Statuses.md#context-on_break) | Block |  | 2 |
-| [`on_throw`](./Passives_and_Statuses.md#context-on_throw) | Block |  | 2 |
+| [`on_break`](#context-on_break) | Block |  | 2 |
+| [`on_throw`](#context-on_throw) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `BoostWeaponDamage` (2 instances)
+### Context: `BoostWeaponDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1730,12 +2019,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BouncyProjectiles` (2 instances)
+### Context: `BouncyProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1746,12 +2037,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatAPultAnimation` (2 instances)
+### Context: `CatAPultAnimation`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1762,16 +2055,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatchProjectiles` (2 instances)
+### Context: `CatchProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `ally_chance` | Number |  | 2 |
 | `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
 
@@ -1779,12 +2075,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBackflip` (2 instances)
+### Context: `ChanceToBackflip`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1795,12 +2093,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ClassManaCostReduction` (2 instances)
+### Context: `ClassManaCostReduction`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1811,112 +2111,140 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Adjacent` (2 instances)
+### Context: `Conditional_Adjacent`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+**Total Count:** 2
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_Boss` (2 instances)
+### Context: `Conditional_Boss`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusKillers`](./Passives_and_Statuses.md#context-statuskillers)
+**Total Count:** 2
+
+> **Referenced by:** [`StatusKillers`](#context-statuskillers)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_Corpse` (2 instances)
+### Context: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToElementDamage`](./Passives_and_Statuses.md#context-addstatustoelementdamage)
+**Total Count:** 2
+
+> **Referenced by:** [`AddStatusToElementDamage`](#context-addstatustoelementdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_HasTag` (2 instances)
+### Context: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToAllDamage`](./Passives_and_Statuses.md#context-addstatustoalldamage), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+**Total Count:** 2
+
+> **Referenced by:** [`AddStatusToAllDamage`](#context-addstatustoalldamage), [`AddStatusToBasicAttack`](#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_NotBoss` (2 instances)
+### Context: `Conditional_NotBoss`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusKillers`](./Passives_and_Statuses.md#context-statuskillers)
+**Total Count:** 2
+
+> **Referenced by:** [`StatusKillers`](#context-statuskillers)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_PartyMember` (2 instances)
+### Context: `Conditional_PartyMember`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy)
+**Total Count:** 2
+
+> **Referenced by:** [`Conditional_Enemy`](#context-conditional_enemy)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_Shielded` (2 instances)
+### Context: `Conditional_Shielded`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+**Total Count:** 2
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Craft` (2 instances)
+### Context: `Craft`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
+**Total Count:** 2
+
+> **Referenced by:** [`StatusOnTookDamage`](#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1927,35 +2255,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageNeighborTilesWhenCastSpell` (2 instances)
+### Context: `DamageNeighborTilesWhenCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`fire`](./Passives_and_Statuses.md#context-fire) | Block |  | 1 |
-| [`ice`](./Passives_and_Statuses.md#context-ice) | Block |  | 1 |
-| [`lightning`](./Passives_and_Statuses.md#context-lightning) | Block |  | 1 |
-| [`triattack`](./Passives_and_Statuses.md#context-triattack) | Block |  | 1 |
+| [`fire`](#context-fire) | Block |  | 1 |
+| [`ice`](#context-ice) | Block |  | 1 |
+| [`lightning`](#context-lightning) | Block |  | 1 |
+| [`triattack`](#context-triattack) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `DamageNeighborsAfterMove` (2 instances)
+### Context: `DamageNeighborsAfterMove`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`damage`](./Math_Equations.md) | Enum | The base damage properties of an attack. | 2 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
 
@@ -1963,12 +2295,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageReductionAura` (2 instances)
+### Context: `DamageReductionAura`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1980,12 +2314,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Earth` (2 instances)
+### Context: `Earth`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1995,54 +2331,62 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Electric` (2 instances)
+### Context: `Electric`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `ElementalAttunement` (2 instances)
+### Context: `ElementalAttunement`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Earth`](./Passives_and_Statuses.md#context-earth) | Block | Applies the 'Earth' effect. | 2 |
-| [`Electric`](./Passives_and_Statuses.md#context-electric) | Block | Applies the 'Electric' effect. | 2 |
-| [`Fire`](./Passives_and_Statuses.md#context-fire) | Block | Applies the 'Fire' effect. | 2 |
-| [`Grass`](./Passives_and_Statuses.md#context-grass) | Block | Applies the 'Grass' effect. | 2 |
-| [`Gravity`](./Passives_and_Statuses.md#context-gravity) | Block | Applies the 'Gravity' effect. | 2 |
-| [`Holy`](./Passives_and_Statuses.md#context-holy) | Block | Applies the 'Holy' effect. | 2 |
-| [`Ice`](./Passives_and_Statuses.md#context-ice) | Block | Applies the 'Ice' effect. | 2 |
-| [`Shadow`](./Passives_and_Statuses.md#context-shadow) | Block | Applies the 'Shadow' effect. | 2 |
-| [`Water`](./Passives_and_Statuses.md#context-water) | Block | Applies the 'Water' effect. | 2 |
-| [`Wind`](./Passives_and_Statuses.md#context-wind) | Block | Applies the 'Wind' effect. | 2 |
+| [`Earth`](#context-earth) | Block | Applies the 'Earth' effect. | 2 |
+| [`Electric`](#context-electric) | Block | Applies the 'Electric' effect. | 2 |
+| [`Fire`](#context-fire) | Block | Applies the 'Fire' effect. | 2 |
+| [`Grass`](#context-grass) | Block | Applies the 'Grass' effect. | 2 |
+| [`Gravity`](#context-gravity) | Block | Applies the 'Gravity' effect. | 2 |
+| [`Holy`](#context-holy) | Block | Applies the 'Holy' effect. | 2 |
+| [`Ice`](#context-ice) | Block | Applies the 'Ice' effect. | 2 |
+| [`Shadow`](#context-shadow) | Block | Applies the 'Shadow' effect. | 2 |
+| [`Water`](#context-water) | Block | Applies the 'Water' effect. | 2 |
+| [`Wind`](#context-wind) | Block | Applies the 'Wind' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `EscapeSequence` (2 instances)
+### Context: `EscapeSequence`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `RandomDistanceDisplace` | Number | Displaces the target by a randomized distance. | 2 |
 | `SafeExplosionIfHitSomething` | Number | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
 
@@ -2050,15 +2394,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Eternal` (2 instances)
+### Context: `Eternal`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `health_percent` | Number |  | 2 |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
@@ -2068,77 +2415,90 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ExtraStatusWhenDealingDamage` (2 instances)
+### Context: `ExtraStatusWhenDealingDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Fire` (2 instances)
+### Context: `Fire`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Burn`](./Math_Equations.md) | Enum | Applies the 'Burn' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `Grass` (2 instances)
+### Context: `Grass`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Poison`](./Math_Equations.md) | Enum | Applies the 'Poison' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `Gravity` (2 instances)
+### Context: `Gravity`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Weakness`](./Math_Equations.md) | Enum | Applies the 'Weakness' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `GravityWell` (2 instances)
+### Context: `GravityWell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `cant_miss` | Boolean |  | 2 |
 | `damage` | Number | The base damage properties of an attack. | 2 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
 
@@ -2146,12 +2506,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HealAlliesEachTurn` (2 instances)
+### Context: `HealAlliesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveUntilCastSpell`](./Passives_and_Statuses.md#context-passiveuntilcastspell)
+**Total Count:** 2
+
+> **Referenced by:** [`PassiveUntilCastSpell`](#context-passiveuntilcastspell)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2163,30 +2525,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Holy` (2 instances)
+### Context: `Holy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FlatLeech`](./Math_Equations.md) | Enum | Applies the 'FlatLeech' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `HolyDamageBlessing` (2 instances)
+### Context: `HolyDamageBlessing`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveUntilGetKill`](./Passives_and_Statuses.md#context-passiveuntilgetkill)
+**Total Count:** 2
+
+> **Referenced by:** [`PassiveUntilGetKill`](#context-passiveuntilgetkill)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Burn` | Number | Applies the 'Burn' effect. | 2 |
 | `damage_multiplier` | Number |  | 2 |
 
@@ -2194,30 +2562,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Ice` (2 instances)
+### Context: `Ice`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Slow`](./Math_Equations.md) | Enum | Applies the 'Slow' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `InfiniteRebirth` (2 instances)
+### Context: `InfiniteRebirth`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `TempSpeedUp` | Number | Applies the 'TempSpeedUp' effect. | 2 |
 | `health` | Number |  | 2 |
 | `playercat_health` | Number |  | 2 |
@@ -2226,15 +2600,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LateBloomer` (2 instances)
+### Context: `LateBloomer`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
@@ -2242,27 +2619,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LightningRod` (2 instances)
+### Context: `LightningRod`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Tech` | Number | Applies the 'Tech' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `LowHealthAllyDodgeChanceAura` (2 instances)
+### Context: `LowHealthAllyDodgeChanceAura`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2273,12 +2655,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MovementReaction` (2 instances)
+### Context: `MovementReaction`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2289,15 +2673,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextBattleStatus` (2 instances)
+### Context: `NextBattleStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Passives_and_Statuses.md#context-statusonbattleend)
+**Total Count:** 2
+
+> **Referenced by:** [`StatusOnBattleEnd`](#context-statusonbattleend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `FullHeal` | Number | Applies the 'FullHeal' effect. | 2 |
 
@@ -2305,32 +2692,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAfterXKills` (2 instances)
+### Context: `PassiveAfterXKills`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 2 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`passives`](#context-passives) | Block |  | 2 |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
 ---
 
-### Context: `PassiveAtFullHealth` (2 instances)
+### Context: `PassiveAtFullHealth`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `ManaCostReduction` | Number | Applies the 'ManaCostReduction' effect. | 2 |
 | `TakeExtraDamage` | Number | Applies the 'TakeExtraDamage' effect. | 2 |
 
@@ -2338,75 +2730,86 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtInjuryThreshold` (2 instances)
+### Context: `PassiveAtInjuryThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`injury`](./Math_Equations.md) | Enum |  | 2 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 2 |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 2 |
+| [`passives`](#context-passives) | Block |  | 2 |
 | `threshold` | Number |  | 2 |
 
 </details>
 
 ---
 
-### Context: `PassiveGroup` (2 instances)
+### Context: `PassiveGroup`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`RandomPassivePool`](./Passives_and_Statuses.md#context-randompassivepool)
+**Total Count:** 2
+
+> **Referenced by:** [`RandomPassivePool`](#context-randompassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 </details>
 
 ---
 
-### Context: `PassiveUntilCastSpell` (2 instances)
+### Context: `PassiveUntilCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`HealAlliesEachTurn`](./Passives_and_Statuses.md#context-healallieseachturn) | Block | Applies the 'HealAlliesEachTurn' effect. | 2 |
-| [`StatusAlliesEachTurn`](./Passives_and_Statuses.md#context-statusallieseachturn) | Block | Event Trigger: Applies nested statuses to allies each turn. | 1 |
-
-</details>
-
----
-
-### Context: `PassiveUntilGetKill` (2 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`HolyDamageBlessing`](./Passives_and_Statuses.md#context-holydamageblessing) | Block | Applies the 'HolyDamageBlessing' effect. | 2 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`HealAlliesEachTurn`](#context-healallieseachturn) | Block | Applies the 'HealAlliesEachTurn' effect. | 2 |
+| [`StatusAlliesEachTurn`](#context-statusallieseachturn) | Block | Event Trigger: Applies nested statuses to allies each turn. | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhenTheAlpha` (2 instances)
+### Context: `PassiveUntilGetKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`HolyDamageBlessing`](#context-holydamageblessing) | Block | Applies the 'HolyDamageBlessing' effect. | 2 |
+
+</details>
+
+---
+
+### Context: `PassiveWhenTheAlpha`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2416,29 +2819,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileInMonkMeleeStance` (2 instances)
+### Context: `PassiveWhileInMonkMeleeStance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 </details>
 
 ---
 
-### Context: `PassiveWhileInMonkRangedStance` (2 instances)
+### Context: `PassiveWhileInMonkRangedStance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddBonusRange` | Number | Applies the 'AddBonusRange' effect. | 2 |
 | `AddSpellDamage` | Number | Applies the 'AddSpellDamage' effect. | 2 |
 | `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
@@ -2447,27 +2856,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhilePreviewingMonkRangedStance` (2 instances)
+### Context: `PassiveWhilePreviewingMonkRangedStance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddBonusRange` | Number | Applies the 'AddBonusRange' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileWearingMetal` (2 instances)
+### Context: `PassiveWhileWearingMetal`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2477,12 +2891,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RepressedMemoriesMetronome` (2 instances)
+### Context: `RepressedMemoriesMetronome`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ScaledStatusOnSpendMana`](./Passives_and_Statuses.md#context-scaledstatusonspendmana)
+**Total Count:** 2
+
+> **Referenced by:** [`ScaledStatusOnSpendMana`](#context-scaledstatusonspendmana)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2493,15 +2909,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusOnOverMana` (2 instances)
+### Context: `ScaledStatusOnOverMana`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 2 |
 | `Cleanse` | Number | Applies the 'Cleanse' effect. | 1 |
 
@@ -2509,27 +2928,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusOnSpendMana` (2 instances)
+### Context: `ScaledStatusOnSpendMana`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#context-repressedmemoriesmetronome) | Block | Applies the 'RepressedMemoriesMetronome' effect. | 2 |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`RepressedMemoriesMetronome`](#context-repressedmemoriesmetronome) | Block | Applies the 'RepressedMemoriesMetronome' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `SecurityBotProtect` (2 instances)
+### Context: `SecurityBotProtect`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2540,12 +2964,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Shadow` (2 instances)
+### Context: `Shadow`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2555,33 +2981,38 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmiteEnemiesWhoKill` (2 instances)
+### Context: `SmiteEnemiesWhoKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | The base damage properties of an attack. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 
 </details>
 
 ---
 
-### Context: `SpecialFriends` (2 instances)
+### Context: `SpecialFriends`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
 
@@ -2589,12 +3020,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatsAtLowHealth` (2 instances)
+### Context: `StatsAtLowHealth`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2606,43 +3039,52 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAfterCastSpell` (2 instances)
+### Context: `StatusAfterCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusAlliesOnBattleStart` (2 instances)
+### Context: `StatusAlliesOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusAlliesOnGainCoins` (2 instances)
+### Context: `StatusAlliesOnGainCoins`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 | `scaled` | Boolean |  | 1 |
@@ -2651,15 +3093,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAllyWhenAllySpendsMana` (2 instances)
+### Context: `StatusAllyWhenAllySpendsMana`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `threshold` | Number |  | 2 |
 
@@ -2667,30 +3112,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAnyCatAllyWhoKills` (2 instances)
+### Context: `StatusAnyCatAllyWhoKills`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AlphaCat` | Number | Applies the 'AlphaCat' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusDamagers` (2 instances)
+### Context: `StatusDamagers`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies the 'Fear' effect. | 1 |
 
@@ -2698,44 +3150,54 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEndForEachTurn` (2 instances)
+### Context: `StatusEachTurnEndForEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusEachTurnEndPerEnemyKill` (2 instances)
+### Context: `StatusEachTurnEndPerEnemyKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#context-objectonhitcharacter) | Block | Spawns a specific character or entity upon impact. | 2 |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ObjectOnHitCharacter`](#context-objectonhitcharacter) | Block | Spawns a specific character or entity upon impact. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusEnemiesOnDeath` (2 instances)
+### Context: `StatusEnemiesOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `Freeze` | Number | Applies the 'Freeze' effect. | 2 |
 
@@ -2743,15 +3205,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEveryXTurnBegins` (2 instances)
+### Context: `StatusEveryXTurnBegins`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `DivineShield` | Number | Applies the 'DivineShield' effect. | 2 |
 | `turns` | Number | The duration of the effect in turns. | 2 |
 
@@ -2759,88 +3224,106 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusKillers` (2 instances)
+### Context: `StatusKillers`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnAnyDeath` (2 instances)
+### Context: `StatusOnAnyDeath`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBattleEndIfKillThresholdMet` (2 instances)
+### Context: `StatusOnBattleEndIfKillThresholdMet`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `kills` | Number |  | 2 |
-| [`statuses`](./Passives_and_Statuses.md#context-statuses) | Block |  | 2 |
+| [`statuses`](#context-statuses) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBreakItem` (2 instances)
+### Context: `StatusOnBreakItem`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnCollectPickup` (2 instances)
+### Context: `StatusOnCollectPickup`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnDealtDamage` (2 instances)
+### Context: `StatusOnDealtDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `TempDexterityUp` | Number | Applies the 'TempDexterityUp' effect. | 2 |
 | `TempStrengthUp` | Number | Applies the 'TempStrengthUp' effect. | 2 |
 | `TempLuckUp` | Number | Applies the 'TempLuckUp' effect. | 1 |
@@ -2849,15 +3332,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnDealtDamageThreshold` (2 instances)
+### Context: `StatusOnDealtDamageThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RefreshMovePoints` | Number | Applies the 'RefreshMovePoints' effect. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `count_overkill` | Boolean |  | 2 |
@@ -2869,44 +3356,53 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEndMove` (2 instances)
+### Context: `StatusOnEndMove`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnGainShield` (2 instances)
+### Context: `StatusOnGainShield`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 2 |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Temporary`](#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnHeal` (2 instances)
+### Context: `StatusOnHeal`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 2 |
 | `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 1 |
 
@@ -2914,15 +3410,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnOverMana` (2 instances)
+### Context: `StatusOnOverMana`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
 | `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 2 |
 | `DivineShield` | Number | Applies the 'DivineShield' effect. | 1 |
@@ -2931,43 +3430,52 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnPickupCoins` (2 instances)
+### Context: `StatusOnPickupCoins`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnPopCorpse` (2 instances)
+### Context: `StatusOnPopCorpse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnTookDamageFromEnemyAbility` (2 instances)
+### Context: `StatusOnTookDamageFromEnemyAbility`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
 | `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. | 1 |
 
@@ -2975,15 +3483,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTriggerTrap` (2 instances)
+### Context: `StatusOnTriggerTrap`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DexterityUp` | Number | Applies the 'DexterityUp' effect. | 2 |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 1 |
 
@@ -2991,29 +3503,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnUseBasicAttack` (2 instances)
+### Context: `StatusOnUseBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnUseElementAbility` (2 instances)
+### Context: `StatusOnUseElementAbility`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 2 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 2 |
 
@@ -3021,15 +3539,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusPerInjury` (2 instances)
+### Context: `StatusPerInjury`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `cap` | Number |  | 2 |
 | [`injury`](./Math_Equations.md) | Enum |  | 2 |
@@ -3039,12 +3560,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusThingsKnockedBack` (2 instances)
+### Context: `StatusThingsKnockedBack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3054,29 +3577,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusWhenAllySpendsMana` (2 instances)
+### Context: `StatusWhenAllySpendsMana`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `TaggedPickupEffectReplacement` (2 instances)
+### Context: `TaggedPickupEffectReplacement`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`HealthGain`](./Math_Equations.md) | Enum | Applies the 'HealthGain' effect. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 2 |
 
@@ -3084,12 +3613,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TowerDefense` (2 instances)
+### Context: `TowerDefense`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 2
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3100,12 +3631,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Water` (2 instances)
+### Context: `Water`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3115,12 +3648,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Wind` (2 instances)
+### Context: `Wind`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
+**Total Count:** 2
+
+> **Referenced by:** [`ElementalAttunement`](#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3130,12 +3665,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `on_break` (2 instances)
+### Context: `on_break`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BoobyTrapItems`](./Passives_and_Statuses.md#context-boobytrapitems)
+**Total Count:** 2
+
+> **Referenced by:** [`BoobyTrapItems`](#context-boobytrapitems)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3145,27 +3682,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `on_throw` (2 instances)
+### Context: `on_throw`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BoobyTrapItems`](./Passives_and_Statuses.md#context-boobytrapitems)
+**Total Count:** 2
+
+> **Referenced by:** [`BoobyTrapItems`](#context-boobytrapitems)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `HitExplosion` | Number | Applies the 'HitExplosion' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `schadenfreude_scaled_stats` (2 instances)
+### Context: `schadenfreude_scaled_stats`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2)
+**Total Count:** 2
+
+> **Referenced by:** [`1`](#context-1), [`2`](#context-2)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3181,12 +3723,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityChargeRefundChance` (1 instances)
+### Context: `AbilityChargeRefundChance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3197,10 +3741,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityReaction` (1 instances)
+### Context: `AbilityReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3212,58 +3758,68 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToKnockbackDamage` (1 instances)
+### Context: `AddStatusToKnockbackDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AddStatusToReceivedDamage_ExcludeStatuses` (1 instances)
+### Context: `AddStatusToReceivedDamage_ExcludeStatuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage) | Block | Conditional block: Executes nested logic only if the target is/has DoesDamage. | 1 |
+| [`Conditional_DoesDamage`](#context-conditional_doesdamage) | Block | Conditional block: Executes nested logic only if the target is/has DoesDamage. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToSpells` (1 instances)
+### Context: `AddStatusToSpells`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AddStatusesIfPersistentWeatherElement` (1 instances)
+### Context: `AddStatusesIfPersistentWeatherElement`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Burn` | Number | Applies the 'Burn' effect. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
@@ -3271,15 +3827,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusesToReceivedElementalDamage` (1 instances)
+### Context: `AddStatusesToReceivedElementalDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Burn` | Number | Applies the 'Burn' effect. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
@@ -3287,12 +3846,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddTemporaryEffectsToEquipment` (1 instances)
+### Context: `AddTemporaryEffectsToEquipment`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3302,12 +3863,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Autism` (1 instances)
+### Context: `Autism`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3318,10 +3881,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachTurnBegin` (1 instances)
+### Context: `AutocastEachTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3333,24 +3898,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToRevive` (1 instances)
+### Context: `ChanceToRevive`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
-| [`statuses`](./Passives_and_Statuses.md#context-statuses) | Block |  | 1 |
+| [`statuses`](#context-statuses) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `ChangeTile` (1 instances)
+### Context: `ChangeTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3361,10 +3930,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CollectPickupsOnBattleEnd` (1 instances)
+### Context: `CollectPickupsOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3374,59 +3945,71 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_DoesDamage` (1 instances)
+### Context: `Conditional_DoesDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToReceivedDamage_ExcludeStatuses`](./Passives_and_Statuses.md#context-addstatustoreceiveddamage_excludestatuses)
+**Total Count:** 1
+
+> **Referenced by:** [`AddStatusToReceivedDamage_ExcludeStatuses`](#context-addstatustoreceiveddamage_excludestatuses)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Bleed`](./Arrays.md#array-bleed) | Array | Applies the 'Bleed' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_GoodRoll` (1 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
+**Total Count:** 1
+
+> **Referenced by:** [`StatusEachTurnBegin`](#context-statuseachturnbegin)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_SourceHasTag` (1 instances)
+### Context: `Conditional_SourceHasTag`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+**Total Count:** 1
+
+> **Referenced by:** [`AddStatusToBasicAttack`](#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 1 |
 
 </details>
 
 ---
 
-### Context: `DamageIfDidntUseSpecificAbility` (1 instances)
+### Context: `DamageIfDidntUseSpecificAbility`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3437,12 +4020,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedWind` (1 instances)
+### Context: `DelayedWind`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToMeleeDamage`](./Passives_and_Statuses.md#context-addstatustomeleedamage)
+**Total Count:** 1
+
+> **Referenced by:** [`AddStatusToMeleeDamage`](#context-addstatustomeleedamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3452,12 +4037,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedWindCone` (1 instances)
+### Context: `DelayedWindCone`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToMeleeDamage`](./Passives_and_Statuses.md#context-addstatustomeleedamage)
+**Total Count:** 1
+
+> **Referenced by:** [`AddStatusToMeleeDamage`](#context-addstatustomeleedamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3467,15 +4054,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Diabetes` (1 instances)
+### Context: `Diabetes`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 1 |
 
@@ -3483,10 +4073,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `EnergyStorm` (1 instances)
+### Context: `EnergyStorm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3497,10 +4089,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FindItemFromPool` (1 instances)
+### Context: `FindItemFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3511,12 +4105,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceMoveAway` (1 instances)
+### Context: `ForceMoveAway`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusAdjacentOnTheirTurnBegin`](./Passives_and_Statuses.md#context-statusadjacentontheirturnbegin)
+**Total Count:** 1
+
+> **Referenced by:** [`StatusAdjacentOnTheirTurnBegin`](#context-statusadjacentontheirturnbegin)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3526,12 +4122,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceUseAbility` (1 instances)
+### Context: `ForceUseAbility`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
+**Total Count:** 1
+
+> **Referenced by:** [`StatusEachTurnBegin`](#context-statuseachturnbegin)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3542,12 +4140,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FurnitureStats` (1 instances)
+### Context: `FurnitureStats`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3559,10 +4159,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MegaMinions` (1 instances)
+### Context: `MegaMinions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3573,12 +4175,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveWhenDamaged` (1 instances)
+### Context: `MoveWhenDamaged`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3588,15 +4192,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveLevelScaledStatus` (1 instances)
+### Context: `PassiveLevelScaledStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Shield`](./Math_Equations.md) | String | Applies the 'Shield' effect. | 1 |
 | [`SizeScalePercent`](./Math_Equations.md) | String | Applies the 'SizeScalePercent' effect. | 1 |
 | [`Trample`](./Arrays.md#array-trample) | Array | Applies the 'Trample' effect. | 1 |
@@ -3605,28 +4212,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomPassivePool` (1 instances)
+### Context: `RandomPassivePool`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`PassiveGroup`](./Passives_and_Statuses.md#context-passivegroup) | Block | Applies the 'PassiveGroup' effect. | 2 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`PassiveGroup`](#context-passivegroup) | Block | Applies the 'PassiveGroup' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `ReplaceBrain` (1 instances)
+### Context: `ReplaceBrain`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3638,12 +4249,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Robot` (1 instances)
+### Context: `Robot`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3653,42 +4266,50 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusOnBleedDamage` (1 instances)
+### Context: `ScaledStatusOnBleedDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Charge` | Number | Applies the 'Charge' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusOnLoseShield` (1 instances)
+### Context: `ScaledStatusOnLoseShield`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Thorns` | Number | Applies the 'Thorns' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusOnOverHealed` (1 instances)
+### Context: `ScaledStatusOnOverHealed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3698,12 +4319,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SelfDamageWhenDealDamage` (1 instances)
+### Context: `SelfDamageWhenDealDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3714,12 +4337,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StackingDodgeChanceOnTookDamage` (1 instances)
+### Context: `StackingDodgeChanceOnTookDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3730,135 +4355,164 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAdjacentOnTheirTurnBegin` (1 instances)
+### Context: `StatusAdjacentOnTheirTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceMoveAway`](./Passives_and_Statuses.md#context-forcemoveaway) | Block | Applies the 'ForceMoveAway' effect. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`ForceMoveAway`](#context-forcemoveaway) | Block | Applies the 'ForceMoveAway' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesEachTurn` (1 instances)
+### Context: `StatusAlliesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveUntilCastSpell`](./Passives_and_Statuses.md#context-passiveuntilcastspell)
+**Total Count:** 1
+
+> **Referenced by:** [`PassiveUntilCastSpell`](#context-passiveuntilcastspell)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `exclude_self` | Boolean |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesOnSpendMana` (1 instances)
+### Context: `StatusAlliesOnSpendMana`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesScaledByCursedOnDeath` (1 instances)
+### Context: `StatusAlliesScaledByCursedOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusIfBattleAlreadyBegan` (1 instances)
+### Context: `StatusIfBattleAlreadyBegan`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `PermanentMadness` | Number | Applies the 'PermanentMadness' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEatPill` (1 instances)
+### Context: `StatusOnEatPill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusOnLoseShield` (1 instances)
+### Context: `StatusOnLoseShield`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Thorns` | Number | Applies the 'Thorns' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTakeHealthDamage` (1 instances)
+### Context: `StatusOnTakeHealthDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `PermanentConstitution` | Number | Applies the 'PermanentConstitution' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTurnEndIfDidntCastAbilityTypes` (1 instances)
+### Context: `StatusOnTurnEndIfDidntCastAbilityTypes`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
@@ -3866,10 +4520,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StrengthInNumbersAura` (1 instances)
+### Context: `StrengthInNumbersAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3880,10 +4536,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Study` (1 instances)
+### Context: `Study`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3894,39 +4552,47 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TakeBonusTurnWithStatus` (1 instances)
+### Context: `TakeBonusTurnWithStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnKill`](./Passives_and_Statuses.md#context-statusonkill)
+**Total Count:** 1
+
+> **Referenced by:** [`StatusOnKill`](#context-statusonkill)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `TheHunger` (1 instances)
+### Context: `TheHunger`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `TileDamageMultiplier` (1 instances)
+### Context: `TileDamageMultiplier`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3937,12 +4603,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TourettesMeows` (1 instances)
+### Context: `TourettesMeows`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+**Total Count:** 1
+
+> **Referenced by:** [`passives`](#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3953,17 +4621,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `fire` (1 instances)
+### Context: `fire`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
+**Total Count:** 1
+
+> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](#context-damageneighbortileswhencastspell)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
@@ -3971,17 +4641,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ice` (1 instances)
+### Context: `ice`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
+**Total Count:** 1
+
+> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](#context-damageneighbortileswhencastspell)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
@@ -3989,17 +4661,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `lightning` (1 instances)
+### Context: `lightning`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
+**Total Count:** 1
+
+> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](#context-damageneighbortileswhencastspell)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
@@ -4007,17 +4681,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `triattack` (1 instances)
+### Context: `triattack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
+**Total Count:** 1
+
+> **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](#context-damageneighbortileswhencastspell)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
@@ -4030,60 +4706,66 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following contexts are numeric keys or array indices.
 
 
-### Context: `2` (372 instances)
+### Context: `2`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 372
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 372 |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 369 |
-| [`stats`](./Passives_and_Statuses.md#context-stats) | Block |  | 36 |
+| [`passives`](#context-passives) | Block |  | 369 |
+| [`stats`](#context-stats) | Block |  | 36 |
 | [`desc_multiclass`](./Strings.md#string-desc_multiclass) | String |  | 5 |
 | [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum |  | 4 |
 | `shield` | Number |  | 4 |
 | [`bonus_items`](./Arrays.md#array-bonus_items) | Array | Flat addition to a base value. | 3 |
 | `divine_shield` | Number |  | 3 |
-| [`keyword_tooltips`](./Passives_and_Statuses.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 3 |
-| [`empty_armor_scaled_stats`](./Passives_and_Statuses.md#context-empty_armor_scaled_stats) | Block |  | 2 |
+| [`keyword_tooltips`](#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 3 |
+| [`empty_armor_scaled_stats`](#context-empty_armor_scaled_stats) | Block |  | 2 |
 | [`icon`](./Enums.md#enum-icon) | String |  | 1 |
-| [`schadenfreude_scaled_stats`](./Passives_and_Statuses.md#context-schadenfreude_scaled_stats) | Block |  | 1 |
+| [`schadenfreude_scaled_stats`](#context-schadenfreude_scaled_stats) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `1` (368 instances)
+### Context: `1`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 368
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 368 |
-| [`stats`](./Passives_and_Statuses.md#context-stats) | Block |  | 26 |
+| [`passives`](#context-passives) | Block |  | 368 |
+| [`stats`](#context-stats) | Block |  | 26 |
 | [`bonus_items`](./Arrays.md#array-bonus_items) | Array | Flat addition to a base value. | 4 |
 | [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum |  | 4 |
 | `divine_shield` | Number |  | 3 |
-| [`keyword_tooltips`](./Passives_and_Statuses.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 3 |
+| [`keyword_tooltips`](#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 3 |
 | `shield` | Number |  | 3 |
-| [`empty_armor_scaled_stats`](./Passives_and_Statuses.md#context-empty_armor_scaled_stats) | Block |  | 2 |
+| [`empty_armor_scaled_stats`](#context-empty_armor_scaled_stats) | Block |  | 2 |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 1 |
-| [`schadenfreude_scaled_stats`](./Passives_and_Statuses.md#context-schadenfreude_scaled_stats) | Block |  | 1 |
+| [`schadenfreude_scaled_stats`](#context-schadenfreude_scaled_stats) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `3` (2 instances)
+### Context: `3`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 2
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 2 |
+| [`passives`](#context-passives) | Block |  | 2 |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 1 |
 | [`icon`](./Enums.md#enum-icon) | String |  | 1 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the passive's display name. | 1 |
@@ -4092,93 +4774,107 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `10` (1 instances)
+### Context: `10`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 1 |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 1 |
+| [`passives`](#context-passives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `4` (1 instances)
+### Context: `4`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 1 |
+| [`passives`](#context-passives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `5` (1 instances)
+### Context: `5`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 1 |
+| [`passives`](#context-passives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `6` (1 instances)
+### Context: `6`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 1 |
+| [`passives`](#context-passives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `7` (1 instances)
+### Context: `7`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 1 |
+| [`passives`](#context-passives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `8` (1 instances)
+### Context: `8`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 1 |
+| [`passives`](#context-passives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `9` (1 instances)
+### Context: `9`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Passives_and_Statuses.md#context-passives) | Block |  | 1 |
+| [`passives`](#context-passives) | Block |  | 1 |
 
 </details>
 

@@ -3,13 +3,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Abilities & Spells
 
-### Context: `ROOT` (2343 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 2343
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block | Block defining the combat math and status effects applied upon successful hit. | 2343 |
 | [`meta`](./Abilities_and_Spells.md#context-meta) | Block | Block defining UI display data (Name, Description, Icon). | 2333 |
 | [`template`](./Enums.md#enum-template) | Enum | Inherits baseline internal logic from a hardcoded engine template. | 2174 |
@@ -39,15 +42,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage_instance` (2344 instances)
+### Context: `damage_instance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2344
 
 > **Referenced by:** [`NukeQuestFinalBossModifications`](./Abilities_and_Spells.md#context-nukequestfinalbossmodifications), [`ROOT`](./Abilities_and_Spells.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1785 |
 | `damage` | Number | The base damage properties of an attack. | 1446 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 358 |
@@ -92,10 +98,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `meta` (2333 instances)
+### Context: `meta`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2333
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -124,10 +132,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `graphics` (2037 instances)
+### Context: `graphics`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2037
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -256,15 +266,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (2012 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2012
 
 > **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#context-dodamage), [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage), [`ROOT`](./Abilities_and_Spells.md#context-root), [`RevengeDamage`](./Abilities_and_Spells.md#context-revengedamage), [`bonk_damage`](./Abilities_and_Spells.md#context-bonk_damage), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`empty_self_damage`](./Abilities_and_Spells.md#context-empty_self_damage), [`self_damage`](./Abilities_and_Spells.md#context-self_damage), [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 102 |
 | [`Stun`](./Arrays.md#array-stun) | Number | Applies or references the 'Stun' effect/state. | 89 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 76 |
@@ -781,10 +798,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `target` (1862 instances)
+### Context: `target`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1862
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -894,10 +913,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `cost` (1851 instances)
+### Context: `cost`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1851
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -951,10 +972,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `self_damage` (220 instances)
+### Context: `self_damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 220
 
 > **Referenced by:** [`NukeQuestFinalBossModifications`](./Abilities_and_Spells.md#context-nukequestfinalbossmodifications), [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -975,10 +998,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `spawn` (192 instances)
+### Context: `spawn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 192
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -1011,15 +1036,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bonus_passives` (136 instances)
+### Context: `bonus_passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 136
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Applies or references the 'DeadAltAbility' effect/state. | 12 |
 | `AbilityEnabledOncePerFightAtHealthThreshold` | Number | Applies or references the 'AbilityEnabledOncePerFightAtHealthThreshold' effect/state. | 7 |
 | `XIsFreeArmorSlots` | Number | Applies or references the 'XIsFreeArmorSlots' effect/state. | 7 |
@@ -1099,15 +1128,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `temporary_effects` (88 instances)
+### Context: `temporary_effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 88
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Trample` | Number | Applies or references the 'Trample' effect/state. | 26 |
 | `CastAgain` | Number | Applies or references the 'CastAgain' effect/state. | 20 |
 | `DisableTrample` | Number | Applies or references the 'DisableTrample' effect/state. | 10 |
@@ -1128,15 +1161,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (71 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 71
 
 > **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`Conditional_Buddy`](./Abilities_and_Spells.md#context-conditional_buddy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object), [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 7 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 6 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
@@ -1208,15 +1246,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyToSource` (51 instances)
+### Context: `ApplyToSource`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 51
 
 > **Referenced by:** [`ApplyStatusIfCrit`](./Abilities_and_Spells.md#context-applystatusifcrit), [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate), [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold), [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#context-conditional_livingplayercat), [`Conditional_PlayerCat`](./Abilities_and_Spells.md#context-conditional_playercat), [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#context-conditional_sourceabilityhastag), [`Else`](./Abilities_and_Spells.md#context-else), [`Math`](./Abilities_and_Spells.md#context-math), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 5 |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 5 |
 | [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 4 |
@@ -1259,15 +1302,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasTag` (42 instances)
+### Context: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 42
 
 > **Referenced by:** [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 41 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 6 |
 | `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. | 6 |
@@ -1304,10 +1352,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Temporary` (41 instances)
+### Context: `Temporary`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 41
 
 > **Referenced by:** [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate), [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_NotAlly`](./Abilities_and_Spells.md#context-conditional_notally), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -1326,10 +1376,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sounds` (39 instances)
+### Context: `sounds`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 39
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -1344,15 +1396,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Enemy` (36 instances)
+### Context: `Conditional_Enemy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 36
 
 > **Referenced by:** [`Conditional_Corpse`](./Abilities_and_Spells.md#context-conditional_corpse), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 6 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 3 |
 | `DisplaceToAbilityTarget` | Number | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 3 |
@@ -1382,10 +1439,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `splash_damage` (35 instances)
+### Context: `splash_damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 35
 
 > **Referenced by:** [`NukeQuestFinalBossModifications`](./Abilities_and_Spells.md#context-nukequestfinalbossmodifications), [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -1408,15 +1467,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Ally` (25 instances)
+### Context: `Conditional_Ally`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 25
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 4 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 3 |
 | `KnockbackDamageImmuneUntilSettled` | Number | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 3 |
@@ -1444,15 +1508,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `keyword_tooltips` (23 instances)
+### Context: `keyword_tooltips`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 23
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`BonusAbility`](./Enums.md#enum-bonusability) | Enum | Applies or references the 'BonusAbility' effect/state. | 5 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 2 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 2 |
@@ -1469,10 +1537,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockUpAndAway` (21 instances)
+### Context: `KnockUpAndAway`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 21
 
 > **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Conditional_LastHit`](./Abilities_and_Spells.md#context-conditional_lasthit), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -1487,15 +1557,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `additional_passives` (20 instances)
+### Context: `additional_passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 20
 
 > **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `SafeDoomed` | Number | Applies or references the 'SafeDoomed' effect/state. | 11 |
 | `InjuryImmunity` | Number | Applies or references the 'InjuryImmunity' effect/state. | 7 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
@@ -1516,15 +1589,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool` (19 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 19
 
 > **Referenced by:** [`ApplyMultipleTimes`](./Abilities_and_Spells.md#context-applymultipletimes), [`Conditional_CanBeHealed`](./Abilities_and_Spells.md#context-conditional_canbehealed), [`Conditional_HasCleansableDebuffs`](./Abilities_and_Spells.md#context-conditional_hascleansabledebuffs), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`FormChange`](./Abilities_and_Spells.md#context-formchange) | Block | Transforms the character into a different state or form (e.g., Rage, HasCat). | 12 |
 | `GainCoins` | Number | Applies or references the 'GainCoins' effect/state. | 7 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 7 |
@@ -1592,10 +1670,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Consumed` (18 instances)
+### Context: `Consumed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 > **Referenced by:** [`Conditional_Buddy`](./Abilities_and_Spells.md#context-conditional_buddy), [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#context-conditional_livingplayercat), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -1618,15 +1698,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Boss` (17 instances)
+### Context: `Conditional_Boss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 17
 
 > **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 6 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 4 |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 4 |
@@ -1646,15 +1731,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyToSourceOnKill` (15 instances)
+### Context: `ApplyToSourceOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 15
 
 > **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 |
 | `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 2 |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
@@ -1673,15 +1763,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CanApplyToInanimate` (15 instances)
+### Context: `CanApplyToInanimate`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 15
 
 > **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 10 |
 | [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 4 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
@@ -1694,10 +1788,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatPartsTransform` (14 instances)
+### Context: `CatPartsTransform`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -1724,15 +1820,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_NotBoss` (14 instances)
+### Context: `Conditional_NotBoss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 2 |
 | `Doomed` | Number | Applies or references the 'Doomed' effect/state. | 2 |
 | `ExplodeCharacter_RockCrusher` | Number | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 2 |
@@ -1748,10 +1849,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChange` (14 instances)
+### Context: `FormChange`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool)
 
@@ -1764,15 +1867,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasStatus` (13 instances)
+### Context: `Conditional_HasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 > **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 13 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 6 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 2 |
@@ -1788,10 +1896,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `EvolveAbilityFromPool` (13 instances)
+### Context: `EvolveAbilityFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1802,15 +1912,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_GoodRoll` (12 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 7 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
@@ -1824,15 +1939,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Speculative` (12 instances)
+### Context: `Conditional_Speculative`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#context-conditional_affectedbyelement), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 3 |
 | `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 2 |
@@ -1846,10 +1965,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DoScreenShake` (12 instances)
+### Context: `DoScreenShake`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -1862,10 +1983,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBreakFree` (11 instances)
+### Context: `ChanceToBreakFree`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -1879,10 +2002,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChangeTile` (11 instances)
+### Context: `ChangeTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1894,15 +2019,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyPassives` (10 instances)
+### Context: `ApplyPassives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`Conditional_RandomChance`](./Abilities_and_Spells.md#context-conditional_randomchance), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 3 |
 | [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 |
 | `Flying` | Number | Applies or references the 'Flying' effect/state. | 2 |
@@ -1917,15 +2045,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_FormulaIsPositive` (10 instances)
+### Context: `Conditional_FormulaIsPositive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`formula`](./Math_Equations.md) | Enum | The math expression to evaluate. | 8 |
 | [`Burn`](./Math_Equations.md) | Enum | Applies or references the 'Burn' effect/state. | 2 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 2 |
@@ -1940,10 +2073,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Craft` (9 instances)
+### Context: `Craft`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -1958,15 +2093,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyStatusIfCrit` (7 instances)
+### Context: `ApplyStatusIfCrit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 6 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 3 |
 | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |
@@ -1975,15 +2114,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Corpse` (7 instances)
+### Context: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 4 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 | [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 1 |
@@ -1995,15 +2139,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_InForm` (7 instances)
+### Context: `Conditional_InForm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`Conditional_Buddy`](./Abilities_and_Spells.md#context-conditional_buddy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 |
 | `CritChanceUp` | Number | Applies or references the 'CritChanceUp' effect/state. | 1 |
@@ -2017,15 +2165,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HealthThreshold` (6 instances)
+### Context: `Conditional_HealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 2 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
@@ -2045,15 +2198,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Object` (6 instances)
+### Context: `Conditional_Object`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 3 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
@@ -2063,15 +2220,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_PlayerCat` (6 instances)
+### Context: `Conditional_PlayerCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |
 | `Adrenaline` | Number | Applies or references the 'Adrenaline' effect/state. | 1 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
@@ -2085,10 +2247,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DoDistortionRing` (6 instances)
+### Context: `DoDistortionRing`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2102,10 +2266,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SwitchMusic` (6 instances)
+### Context: `SwitchMusic`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2119,10 +2285,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TwisterDisplaceWithDamage` (6 instances)
+### Context: `TwisterDisplaceWithDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2137,15 +2305,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CollectsPickupsWithAltEffects` (5 instances)
+### Context: `CollectsPickupsWithAltEffects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Tech` | Number | Applies or references the 'Tech' effect/state. | 2 |
 | `CurrentWeaponAddPoison` | Number | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 |
 | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |
@@ -2157,10 +2328,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DestroyEquipmentAndAttachParasite` (5 instances)
+### Context: `DestroyEquipmentAndAttachParasite`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#context-conditional_activeweather_any), [`Conditional_DebuffRoll`](./Abilities_and_Spells.md#context-conditional_debuffroll), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2173,10 +2346,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DoDamage` (5 instances)
+### Context: `DoDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Else`](./Abilities_and_Spells.md#context-else), [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses)
 
@@ -2192,15 +2367,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyToConsumed` (4 instances)
+### Context: `ApplyToConsumed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 3 |
 | `Die` | Number | Applies or references the 'Die' effect/state. | 1 |
 
@@ -2208,10 +2386,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ArcLightning` (4 instances)
+### Context: `ArcLightning`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2227,10 +2407,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BackflipWhenTargeted` (4 instances)
+### Context: `BackflipWhenTargeted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2241,15 +2423,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Familiar` (4 instances)
+### Context: `Conditional_Familiar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 2 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
@@ -2259,10 +2445,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GainCoinsRange` (4 instances)
+### Context: `GainCoinsRange`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2275,15 +2463,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LateStatusApplication` (4 instances)
+### Context: `LateStatusApplication`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 1 |
 
@@ -2291,10 +2482,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LeaveBehind` (4 instances)
+### Context: `LeaveBehind`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2304,10 +2497,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ReplaceSpell` (4 instances)
+### Context: `ReplaceSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus)
 
@@ -2320,15 +2515,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TakeBonusTurnWithStatus` (4 instances)
+### Context: `TakeBonusTurnWithStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 2 |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 |
 | `TempNoManaRegen` | Number | Applies or references the 'TempNoManaRegen' effect/state. | 2 |
@@ -2338,15 +2537,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TempPassiveWhileHasStatus` (4 instances)
+### Context: `TempPassiveWhileHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`Conditional_FirstApplicationThisTurn`](./Abilities_and_Spells.md#context-conditional_firstapplicationthisturn), [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#context-conditional_livingplayercat)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell) | Block | Replaces a spell in the character's hand/deck with a different one. | 4 |
 | [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
 | [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 2 |
@@ -2357,15 +2560,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TimeDelayStatusApplication` (4 instances)
+### Context: `TimeDelayStatusApplication`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`delay`](./Enums.md#enum-delay) | Enum | The float time delay in seconds. | 4 |
 | [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic) | Block | Changes the background music track or layer during combat. | 2 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 1 |
@@ -2382,15 +2590,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `post_spawn_statuses` (4 instances)
+### Context: `post_spawn_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`DoDamage`](./Abilities_and_Spells.md#context-dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. | 2 |
 | [`EnterMount`](./Enums.md#enum-entermount) | Enum | Applies or references the 'EnterMount' effect/state. | 1 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies or references the 'VisualFXTile' effect/state. | 1 |
@@ -2399,10 +2611,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `rocket_swirl` (4 instances)
+### Context: `rocket_swirl`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
@@ -2415,15 +2629,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyMultipleTimes` (3 instances)
+### Context: `ApplyMultipleTimes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 3 |
 | [`stacks`](./Math_Equations.md) | Enum | The number of times the nested effects block should be repeatedly executed. | 3 |
 
@@ -2431,10 +2648,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BounceObject` (3 instances)
+### Context: `BounceObject`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2446,10 +2665,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatPartsSizeScaleStatus` (3 instances)
+### Context: `CatPartsSizeScaleStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2464,15 +2685,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_AffectedByElement` (3 instances)
+### Context: `Conditional_AffectedByElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 2 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
@@ -2482,15 +2707,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_FirstApplicationThisTurn` (3 instances)
+### Context: `Conditional_FirstApplicationThisTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus) | Block | Grants nested passives only while the character possesses the specified status. | 3 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
 
@@ -2498,15 +2728,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_LastHit` (3 instances)
+### Context: `Conditional_LastHit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Block | Displaces the target vertically and horizontally away from the source. | 2 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
@@ -2516,10 +2751,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DustOnHit` (3 instances)
+### Context: `DustOnHit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2531,10 +2768,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `IncAuxCounterClamped` (3 instances)
+### Context: `IncAuxCounterClamped`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool)
 
@@ -2547,10 +2786,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SetCrazyEyeBackgroundWeights` (3 instances)
+### Context: `SetCrazyEyeBackgroundWeights`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2562,15 +2803,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleEnd` (3 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 3 |
 | [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Applies or references the 'RandomTaggedMutation' effect/state. | 2 |
 | `RandomMutation` | Number | Applies or references the 'RandomMutation' effect/state. | 1 |
@@ -2579,15 +2823,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `extra_statuses` (3 instances)
+### Context: `extra_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#context-consumed)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 1 |
 | `Tarred` | Number | Applies or references the 'Tarred' effect/state. | 1 |
@@ -2596,15 +2844,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttack` (2 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`PassiveWhileNotTakingTurn`](./Abilities_and_Spells.md#context-passivewhilenottakingturn), [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
@@ -2612,10 +2864,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AfterImage` (2 instances)
+### Context: `AfterImage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects)
 
@@ -2628,30 +2882,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyToRandomPartyMemberIfPossible` (2 instances)
+### Context: `ApplyToRandomPartyMemberIfPossible`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`Else`](./Abilities_and_Spells.md#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `ApplyToTile` (2 instances)
+### Context: `ApplyToTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_DestructibleCorpse`](./Abilities_and_Spells.md#context-conditional_destructiblecorpse)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | Spawns a specific physics/item object upon impact. | 2 |
 | `SpawnBearTrap` | Number | Applies or references the 'SpawnBearTrap' effect/state. | 2 |
 
@@ -2659,10 +2920,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachRound` (2 instances)
+### Context: `AutocastEachRound`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
@@ -2675,10 +2938,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BodyGuard` (2 instances)
+### Context: `BodyGuard`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2691,15 +2956,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_BadRoll` (2 instances)
+### Context: `Conditional_BadRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 | `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 1 |
 | `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 1 |
@@ -2708,30 +2978,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_BossOrBig` (2 instances)
+### Context: `Conditional_BossOrBig`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Immobile`](./Arrays.md#array-immobile) | Array | Applies or references the 'Immobile' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Buddy` (2 instances)
+### Context: `Conditional_Buddy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform) | Block | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
@@ -2740,15 +3016,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_DestructibleCorpse` (2 instances)
+### Context: `Conditional_DestructibleCorpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToTile`](./Abilities_and_Spells.md#context-applytotile) | Block | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 2 |
 
@@ -2756,15 +3035,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Displaceable` (2 instances)
+### Context: `Conditional_Displaceable`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 1 |
 | `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 |
 | `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. | 1 |
@@ -2773,30 +3056,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_IsSelf` (2 instances)
+### Context: `Conditional_IsSelf`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_NotAlly` (2 instances)
+### Context: `Conditional_NotAlly`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 1 |
 | [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
 
@@ -2804,45 +3094,55 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_NotBossOrBig` (2 instances)
+### Context: `Conditional_NotBossOrBig`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_NotShielded` (2 instances)
+### Context: `Conditional_NotShielded`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_OncePerBattle` (2 instances)
+### Context: `Conditional_OncePerBattle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
 | `TriggerGameEnding` | Number | Applies or references the 'TriggerGameEnding' effect/state. | 2 |
 | [`key`](./Enums.md#enum-key) | Enum |  | 2 |
@@ -2851,15 +3151,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Shielded` (2 instances)
+### Context: `Conditional_Shielded`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. | 2 |
 | [`BonusDamage`](./Math_Equations.md) | Enum | Applies or references the 'BonusDamage' effect/state. | 1 |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 1 |
@@ -2868,10 +3172,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ConjureBonusAbility` (2 instances)
+### Context: `ConjureBonusAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2882,15 +3188,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CreateGlobalModifiers` (2 instances)
+### Context: `CreateGlobalModifiers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 | `BloodRain` | Number | Applies or references the 'BloodRain' effect/state. | 2 |
 | [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight) | Block | A visual effect that dims the map's lighting. | 2 |
 
@@ -2898,10 +3207,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FindItemFromPool` (2 instances)
+### Context: `FindItemFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource)
 
@@ -2914,10 +3225,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceAttack` (2 instances)
+### Context: `ForceAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2927,10 +3240,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceMoveTowardsTaggedObject` (2 instances)
+### Context: `ForceMoveTowardsTaggedObject`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -2943,10 +3258,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LowerAmbientLight` (2 instances)
+### Context: `LowerAmbientLight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers)
 
@@ -2959,15 +3276,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Math` (2 instances)
+### Context: `Math`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
@@ -2976,25 +3296,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeleeRevengeDamage` (2 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 
 </details>
 
 ---
 
-### Context: `NukeQuestFinalBossModifications` (2 instances)
+### Context: `NukeQuestFinalBossModifications`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
@@ -3008,10 +3334,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectOnHit` (2 instances)
+### Context: `ObjectOnHit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3021,10 +3349,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectOnHitCharacter` (2 instances)
+### Context: `ObjectOnHitCharacter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3035,15 +3365,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `OverHealToStatuses` (2 instances)
+### Context: `OverHealToStatuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 1 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
 | `stack_scale` | Number |  | 1 |
@@ -3052,10 +3385,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `QuakeAreaChance` (2 instances)
+### Context: `QuakeAreaChance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3068,10 +3403,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomKnockback` (2 instances)
+### Context: `RandomKnockback`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3084,10 +3421,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomMagicMissile` (2 instances)
+### Context: `RandomMagicMissile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3098,10 +3437,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScatterCoins` (2 instances)
+### Context: `ScatterCoins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#context-conditional_sourceabilityhastag), [`Else`](./Abilities_and_Spells.md#context-else)
 
@@ -3114,10 +3455,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TakeBonusTurnWithAIControl` (2 instances)
+### Context: `TakeBonusTurnWithAIControl`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3129,10 +3472,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TeamCastAbility` (2 instances)
+### Context: `TeamCastAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3144,25 +3489,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `XIsTargetHealth` (2 instances)
+### Context: `XIsTargetHealth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`Else`](./Abilities_and_Spells.md#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `empty_self_damage` (2 instances)
+### Context: `empty_self_damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -3174,85 +3524,102 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AlphaStatusOnTurnBegin` (1 instances)
+### Context: `AlphaStatusOnTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DoubleCastSpellThisTurn` | Number | Applies or references the 'DoubleCastSpellThisTurn' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyPassivesToSpawnerWhileAlive` (1 instances)
+### Context: `ApplyPassivesToSpawnerWhileAlive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyStatusesNextTurnBegin` (1 instances)
+### Context: `ApplyStatusesNextTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Quivered` | Number | Applies or references the 'Quivered' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyToOthersWithSharedTagAndFaction` (1 instances)
+### Context: `ApplyToOthersWithSharedTagAndFaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Marked` | Number | Applies or references the 'Marked' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyToRandomClosestAlly` (1 instances)
+### Context: `ApplyToRandomClosestAlly`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Cleave` (1 instances)
+### Context: `Cleave`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3262,15 +3629,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_ActiveWeather_Any` (1 instances)
+### Context: `Conditional_ActiveWeather_Any`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
 
@@ -3278,15 +3648,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Backstab` (1 instances)
+### Context: `Conditional_Backstab`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 1 |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 1 |
 
@@ -3294,30 +3668,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_CanBeHealed` (1 instances)
+### Context: `Conditional_CanBeHealed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_DebuffRoll` (1 instances)
+### Context: `Conditional_DebuffRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 |
 
@@ -3325,30 +3705,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_FinishedSpawning` (1 instances)
+### Context: `Conditional_FinishedSpawning`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HasCleansableDebuffs` (1 instances)
+### Context: `Conditional_HasCleansableDebuffs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `GenericBuff` | Number | Applies or references the 'GenericBuff' effect/state. | 1 |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 1 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
@@ -3357,30 +3744,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_IsTrample` (1 instances)
+### Context: `Conditional_IsTrample`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_LivingPlayerCat` (1 instances)
+### Context: `Conditional_LivingPlayerCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus) | Block | Grants nested passives only while the character possesses the specified status. | 1 |
@@ -3389,30 +3783,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_NotBig` (1 instances)
+### Context: `Conditional_NotBig`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_RandomChance` (1 instances)
+### Context: `Conditional_RandomChance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
@@ -3420,15 +3821,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_SourceAbilityHasTag` (1 instances)
+### Context: `Conditional_SourceAbilityHasTag`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`ScatterCoins`](./Abilities_and_Spells.md#context-scattercoins) | Block | Throws coins out into the level randomly. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
@@ -3437,15 +3841,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_SourceHasStatus` (1 instances)
+### Context: `Conditional_SourceHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
@@ -3453,10 +3860,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CopySpells` (1 instances)
+### Context: `CopySpells`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3467,10 +3876,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayCastAbility` (1 instances)
+### Context: `DelayCastAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3484,10 +3895,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedWindCone` (1 instances)
+### Context: `DelayedWindCone`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3500,10 +3913,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DybbukPossessed` (1 instances)
+### Context: `DybbukPossessed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else)
 
@@ -3516,10 +3931,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceImmediateMoveAndAttack` (1 instances)
+### Context: `ForceImmediateMoveAndAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform)
 
@@ -3532,10 +3949,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `IncAuxCounterCycle` (1 instances)
+### Context: `IncAuxCounterCycle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3548,10 +3967,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockOutCoin` (1 instances)
+### Context: `KnockOutCoin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3562,10 +3983,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Madness` (1 instances)
+### Context: `Madness`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3576,10 +3999,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MergeDamageInstance` (1 instances)
+### Context: `MergeDamageInstance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag)
 
@@ -3592,10 +4017,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Metronome` (1 instances)
+### Context: `Metronome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3606,10 +4033,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextAttackSpecialCrit` (1 instances)
+### Context: `NextAttackSpecialCrit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3621,10 +4050,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextBasicAttackCritsThisTurn` (1 instances)
+### Context: `NextBasicAttackCritsThisTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3638,15 +4069,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextBattleStatusStacks` (1 instances)
+### Context: `NextBattleStatusStacks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |
 | `fights` | Number | The number of encounters this buff/debuff persists for. | 1 |
 
@@ -3654,25 +4088,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileNotTakingTurn` (1 instances)
+### Context: `PassiveWhileNotTakingTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
 
 </details>
 
 ---
 
-### Context: `PoolMetronome` (1 instances)
+### Context: `PoolMetronome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3684,10 +4123,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PopAndSpawn` (1 instances)
+### Context: `PopAndSpawn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag)
 
@@ -3702,10 +4143,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomDistanceDisplace` (1 instances)
+### Context: `RandomDistanceDisplace`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3716,10 +4159,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RemoveStatusStacks` (1 instances)
+### Context: `RemoveStatusStacks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3732,10 +4177,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (1 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
@@ -3747,15 +4194,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ReviveNextRound` (1 instances)
+### Context: `ReviveNextRound`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `revive_health` | Number | The flat amount of health to revive with. | 3 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 2 |
@@ -3766,10 +4216,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScrambleLastUsedSpell` (1 instances)
+### Context: `ScrambleLastUsedSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3781,10 +4233,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SetAnimationAlts` (1 instances)
+### Context: `SetAnimationAlts`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag)
 
@@ -3797,10 +4251,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ShowFakeDamage` (1 instances)
+### Context: `ShowFakeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else)
 
@@ -3813,10 +4269,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmartMetronome` (1 instances)
+### Context: `SmartMetronome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3827,10 +4285,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpreadDisease` (1 instances)
+### Context: `SpreadDisease`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3843,15 +4303,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusGroup` (1 instances)
+### Context: `StatusGroup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DamageOrHealConditionally` | Number | Applies or references the 'DamageOrHealConditionally' effect/state. | 1 |
 | `Freeze` | Number | Applies or references the 'Freeze' effect/state. | 1 |
 
@@ -3859,25 +4323,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusKillers` (1 instances)
+### Context: `StatusKillers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `SwapWeapon` (1 instances)
+### Context: `SwapWeapon`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3889,10 +4358,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Tangled` (1 instances)
+### Context: `Tangled`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3903,10 +4374,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformEquipment` (1 instances)
+### Context: `TransformEquipment`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3919,10 +4392,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformWeapon` (1 instances)
+### Context: `TransformWeapon`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill)
 
@@ -3935,10 +4410,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `UseAbility` (1 instances)
+### Context: `UseAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3949,10 +4426,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `UseMoveAbilityWithAI` (1 instances)
+### Context: `UseMoveAbilityWithAI`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3965,25 +4444,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `VisualCountDownThenApplyStatus` (1 instances)
+### Context: `VisualCountDownThenApplyStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `WaggleClone` (1 instances)
+### Context: `WaggleClone`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
 
@@ -3998,10 +4482,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `XIsSpellStormRampAndReset` (1 instances)
+### Context: `XIsSpellStormRampAndReset`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -4012,10 +4498,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bonk_damage` (1 instances)
+### Context: `bonk_damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -4028,10 +4516,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage` (1 instances)
+### Context: `damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
 
@@ -4044,10 +4534,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage_threshold_altanimations` (1 instances)
+### Context: `damage_threshold_altanimations`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
 
@@ -4062,13 +4554,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Boss Cutscene Info
 
-### Context: `ROOT` (67 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 67
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`frame_label`](./Enums.md#enum-frame_label) | Enum |  | 67 |
 | [`name`](./Enums.md#enum-name) | String |  | 67 |
 | [`quotes`](./Arrays.md#array-quotes) | Array |  | 36 |
@@ -4079,13 +4574,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Cat Classes
 
-### Context: `ROOT` (14 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 14
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ability_pool`](./Arrays.md#array-ability_pool) | Array |  | 14 |
 | [`attack_pool`](./Arrays.md#array-attack_pool) | Array |  | 14 |
 | [`graphics`](./Cat_Classes.md#context-graphics) | Block |  | 14 |
@@ -4108,10 +4606,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `graphics` (14 instances)
+### Context: `graphics`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -4127,10 +4627,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `meta` (14 instances)
+### Context: `meta`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -4143,10 +4645,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `stat_mods` (13 instances)
+### Context: `stat_mods`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -4164,10 +4668,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ability_groups` (12 instances)
+### Context: `ability_groups`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -4182,15 +4688,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `innate_passives` (4 instances)
+### Context: `innate_passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddStartingMana` | Number |  | 1 |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array |  | 1 |
 | [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum |  | 1 |
@@ -4200,10 +4709,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `innate_items` (2 instances)
+### Context: `innate_items`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
 
@@ -4216,10 +4727,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TinkererBasicAttackSwitching` (1 instances)
+### Context: `TinkererBasicAttackSwitching`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`innate_passives`](./Cat_Classes.md#context-innate_passives)
 
@@ -4234,15 +4747,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Cat Mutations
 
-### Context: `passives` (284 instances)
+### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 284
 
 > **Referenced by:** [`-2`](./Cat_Mutations.md#context--2), [`1026`](./Cat_Mutations.md#context-1026), [`1029`](./Cat_Mutations.md#context-1029), [`1500`](./Cat_Mutations.md#context-1500), [`300`](./Cat_Mutations.md#context-300), [`301`](./Cat_Mutations.md#context-301), [`302`](./Cat_Mutations.md#context-302), [`303`](./Cat_Mutations.md#context-303), [`304`](./Cat_Mutations.md#context-304), [`305`](./Cat_Mutations.md#context-305), [`306`](./Cat_Mutations.md#context-306), [`307`](./Cat_Mutations.md#context-307), [`308`](./Cat_Mutations.md#context-308), [`309`](./Cat_Mutations.md#context-309), [`310`](./Cat_Mutations.md#context-310), [`311`](./Cat_Mutations.md#context-311), [`312`](./Cat_Mutations.md#context-312), [`313`](./Cat_Mutations.md#context-313), [`314`](./Cat_Mutations.md#context-314), [`315`](./Cat_Mutations.md#context-315), [`316`](./Cat_Mutations.md#context-316), [`317`](./Cat_Mutations.md#context-317), [`318`](./Cat_Mutations.md#context-318), [`319`](./Cat_Mutations.md#context-319), [`320`](./Cat_Mutations.md#context-320), [`321`](./Cat_Mutations.md#context-321), [`322`](./Cat_Mutations.md#context-322), [`323`](./Cat_Mutations.md#context-323), [`324`](./Cat_Mutations.md#context-324), [`325`](./Cat_Mutations.md#context-325), [`326`](./Cat_Mutations.md#context-326), [`327`](./Cat_Mutations.md#context-327), [`328`](./Cat_Mutations.md#context-328), [`329`](./Cat_Mutations.md#context-329), [`330`](./Cat_Mutations.md#context-330), [`331`](./Cat_Mutations.md#context-331), [`332`](./Cat_Mutations.md#context-332), [`333`](./Cat_Mutations.md#context-333), [`334`](./Cat_Mutations.md#context-334), [`335`](./Cat_Mutations.md#context-335), [`336`](./Cat_Mutations.md#context-336), [`337`](./Cat_Mutations.md#context-337), [`338`](./Cat_Mutations.md#context-338), [`339`](./Cat_Mutations.md#context-339), [`340`](./Cat_Mutations.md#context-340), [`341`](./Cat_Mutations.md#context-341), [`342`](./Cat_Mutations.md#context-342), [`343`](./Cat_Mutations.md#context-343), [`344`](./Cat_Mutations.md#context-344), [`345`](./Cat_Mutations.md#context-345), [`346`](./Cat_Mutations.md#context-346), [`347`](./Cat_Mutations.md#context-347), [`348`](./Cat_Mutations.md#context-348), [`349`](./Cat_Mutations.md#context-349), [`351`](./Cat_Mutations.md#context-351), [`352`](./Cat_Mutations.md#context-352), [`353`](./Cat_Mutations.md#context-353), [`442`](./Cat_Mutations.md#context-442), [`702`](./Cat_Mutations.md#context-702), [`703`](./Cat_Mutations.md#context-703), [`704`](./Cat_Mutations.md#context-704), [`705`](./Cat_Mutations.md#context-705), [`706`](./Cat_Mutations.md#context-706), [`707`](./Cat_Mutations.md#context-707), [`750`](./Cat_Mutations.md#context-750), [`751`](./Cat_Mutations.md#context-751), [`752`](./Cat_Mutations.md#context-752), [`753`](./Cat_Mutations.md#context-753), [`754`](./Cat_Mutations.md#context-754), [`755`](./Cat_Mutations.md#context-755), [`756`](./Cat_Mutations.md#context-756), [`757`](./Cat_Mutations.md#context-757), [`758`](./Cat_Mutations.md#context-758), [`759`](./Cat_Mutations.md#context-759), [`760`](./Cat_Mutations.md#context-760), [`761`](./Cat_Mutations.md#context-761), [`762`](./Cat_Mutations.md#context-762), [`763`](./Cat_Mutations.md#context-763), [`900`](./Cat_Mutations.md#context-900), [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#context-passivewhenaffectedbyelement), [`PassiveWhileHasStatus`](./Cat_Mutations.md#context-passivewhilehasstatus)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack) | Block |  | 52 |
 | `Thorns` | Number |  | 16 |
 | [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum |  | 13 |
@@ -4354,15 +4871,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttack` (52 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 52
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Knockback` | Number |  | 6 |
 | [`Bleed`](./Arrays.md#array-bleed) | Number |  | 5 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum |  | 5 |
@@ -4391,10 +4912,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenAffectedByElement` (12 instances)
+### Context: `PassiveWhenAffectedByElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4407,15 +4930,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (10 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage), [`RevengeDamage`](./Cat_Mutations.md#context-revengedamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Fear`](./Arrays.md#array-fear) | Array |  | 4 |
 | [`Confusion`](./Arrays.md#array-confusion) | Array |  | 2 |
 | [`Blind`](./Arrays.md#array-blind) | Array |  | 1 |
@@ -4427,10 +4957,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (9 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4444,15 +4976,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeleeRevengeDamage` (7 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `knockback` | Number |  | 4 |
 | `damage` | Number |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 2 |
@@ -4464,10 +5000,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnThingOnDamage` (7 instances)
+### Context: `SpawnThingOnDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4481,15 +5019,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicMeleeAttack` (6 instances)
+### Context: `AddStatusToBasicMeleeAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number |  | 2 |
 | `Knockback` | Number |  | 2 |
 | [`Immobile`](./Arrays.md#array-immobile) | Array |  | 1 |
@@ -4499,15 +5041,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTookDamage` (6 instances)
+### Context: `StatusOnTookDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number |  | 3 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum |  | 2 |
 | `LuckUp` | Number |  | 1 |
@@ -4516,15 +5062,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnBegin` (5 instances)
+### Context: `StatusEachTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Quivered`](./Arrays.md#array-quivered) | Array |  | 2 |
 | `MissChance` | Number |  | 1 |
 | [`MoveQuivered`](./Arrays.md#array-movequivered) | Array |  | 1 |
@@ -4534,15 +5084,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool` (4 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`StatusOnTookDamageFromAbility`](./Cat_Mutations.md#context-statusontookdamagefromability), [`effects`](./Cat_Mutations.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `Bleed` | Number |  | 2 |
 | `Blind` | Number |  | 2 |
 | `Burn` | Number |  | 2 |
@@ -4559,10 +5114,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnEachTurn` (4 instances)
+### Context: `SpawnEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4576,15 +5133,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEnd` (4 instances)
+### Context: `StatusEachTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomStatUp` | Number |  | 2 |
 | `Charge` | Number |  | 1 |
 | `IntelligenceUp` | Number |  | 1 |
@@ -4595,10 +5156,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStartRandomEmptyTile` (3 instances)
+### Context: `SpawnOnBattleStartRandomEmptyTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4611,15 +5174,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_RandomChance` (2 instances)
+### Context: `Conditional_RandomChance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusKilledCharacters`](./Cat_Mutations.md#context-statuskilledcharacters)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `AutoReanimate` | Number |  | 2 |
 | `odds` | Number |  | 2 |
 
@@ -4627,15 +5194,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEveryXSpellCasts` (2 instances)
+### Context: `StatusEveryXSpellCasts`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `stacks` | Number |  | 2 |
 | `Charge` | Number |  | 1 |
 | `RandomMagicMissile` | Number |  | 1 |
@@ -4644,30 +5215,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusKilledCharacters` (2 instances)
+### Context: `StatusKilledCharacters`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_RandomChance`](./Cat_Mutations.md#context-conditional_randomchance) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBattleEnd` (2 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum |  | 1 |
 | `PermanentIntelligence` | Number |  | 1 |
 
@@ -4675,15 +5252,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEndMove` (2 instances)
+### Context: `StatusOnEndMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_FirstApplicationThisTurn`](./Cat_Mutations.md#context-conditional_firstapplicationthisturn) | Block |  | 1 |
 | [`Conditional_GoodRoll`](./Cat_Mutations.md#context-conditional_goodroll) | Block |  | 1 |
 
@@ -4691,25 +5272,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTookDamageFromAbility` (2 instances)
+### Context: `StatusOnTookDamageFromAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`RandomStatusFromPool`](./Cat_Mutations.md#context-randomstatusfrompool) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `AbilityWhenTaggedCharacterMovesNear` (1 instances)
+### Context: `AbilityWhenTaggedCharacterMovesNear`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4723,10 +5311,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddDamageToElementDamage` (1 instances)
+### Context: `AddDamageToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4739,10 +5329,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddTemporaryEffectsToBasicAttack` (1 instances)
+### Context: `AddTemporaryEffectsToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4754,10 +5346,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BackflipWhenTargeted` (1 instances)
+### Context: `BackflipWhenTargeted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4770,10 +5364,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBackflip` (1 instances)
+### Context: `ChanceToBackflip`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4786,10 +5382,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ClassManaCostReduction` (1 instances)
+### Context: `ClassManaCostReduction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4802,30 +5400,40 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_FirstApplicationThisTurn` (1 instances)
+### Context: `Conditional_FirstApplicationThisTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Charge` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_GoodRoll` (1 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnEndMove`](./Cat_Mutations.md#context-statusonendmove)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum |  | 1 |
 | `odds` | Number |  | 1 |
 
@@ -4833,10 +5441,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CounterAttack` (1 instances)
+### Context: `CounterAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4849,10 +5459,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockUpAndAway` (1 instances)
+### Context: `KnockUpAndAway`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack)
 
@@ -4865,10 +5477,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveWhenDamaged` (1 instances)
+### Context: `MoveWhenDamaged`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4881,25 +5495,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenAtFullMana` (1 instances)
+### Context: `PassiveWhenAtFullMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `DamageUp` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileHasStatus` (1 instances)
+### Context: `PassiveWhileHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4912,10 +5531,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnExtraThingsOnBattleStart` (1 instances)
+### Context: `SpawnExtraThingsOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
@@ -4928,30 +5549,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachRoundEnd` (1 instances)
+### Context: `StatusEachRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusEveryXSpellCastsEachTurn` (1 instances)
+### Context: `StatusEveryXSpellCastsEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `HealthGain` | Number |  | 1 |
 | `stacks` | Number |  | 1 |
 
@@ -4959,105 +5587,134 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusIfDidntMove` (1 instances)
+### Context: `StatusIfDidntMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Charge` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusIfUnusedMovePoints` (1 instances)
+### Context: `StatusIfUnusedMovePoints`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `ManaGain` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnAllyCatDeath` (1 instances)
+### Context: `StatusOnAllyCatDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DamageUp` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnCastSpell` (1 instances)
+### Context: `StatusOnCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnDie` (1 instances)
+### Context: `StatusOnDie`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Number |  | 6 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEatFood` (1 instances)
+### Context: `StatusOnEatFood`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `HealthRegenUp` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnKill` (1 instances)
+### Context: `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `RangeUp` | Number |  | 1 |
 
 </details>
@@ -5069,10 +5726,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following contexts are numeric keys or array indices.
 
 
-### Context: `400` (9 instances)
+### Context: `400`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5084,10 +5743,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `401` (9 instances)
+### Context: `401`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5099,10 +5760,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `402` (9 instances)
+### Context: `402`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5114,10 +5777,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `403` (9 instances)
+### Context: `403`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5129,10 +5794,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `404` (9 instances)
+### Context: `404`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5144,10 +5811,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `405` (9 instances)
+### Context: `405`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5159,10 +5828,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `406` (9 instances)
+### Context: `406`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5174,10 +5845,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `407` (9 instances)
+### Context: `407`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5189,10 +5862,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `408` (9 instances)
+### Context: `408`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5204,10 +5879,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `409` (9 instances)
+### Context: `409`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5219,10 +5896,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `410` (9 instances)
+### Context: `410`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5234,10 +5913,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `411` (9 instances)
+### Context: `411`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5249,10 +5930,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `412` (9 instances)
+### Context: `412`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5264,10 +5947,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `413` (9 instances)
+### Context: `413`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5279,10 +5964,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `414` (9 instances)
+### Context: `414`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5294,10 +5981,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `415` (9 instances)
+### Context: `415`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5309,10 +5998,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `416` (9 instances)
+### Context: `416`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5324,10 +6015,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `417` (9 instances)
+### Context: `417`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5339,10 +6032,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `418` (9 instances)
+### Context: `418`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5354,10 +6049,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `419` (9 instances)
+### Context: `419`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5369,10 +6066,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `420` (9 instances)
+### Context: `420`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5384,10 +6083,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `421` (9 instances)
+### Context: `421`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5399,10 +6100,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `422` (9 instances)
+### Context: `422`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5414,10 +6117,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `423` (9 instances)
+### Context: `423`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5429,10 +6134,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `424` (9 instances)
+### Context: `424`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5444,10 +6151,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `425` (9 instances)
+### Context: `425`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5459,10 +6168,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `426` (9 instances)
+### Context: `426`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5474,10 +6185,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `427` (9 instances)
+### Context: `427`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5489,10 +6202,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `428` (9 instances)
+### Context: `428`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5504,10 +6219,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `429` (9 instances)
+### Context: `429`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5519,10 +6236,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `430` (9 instances)
+### Context: `430`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5534,10 +6253,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `431` (9 instances)
+### Context: `431`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5549,10 +6270,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `432` (9 instances)
+### Context: `432`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5564,10 +6287,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `433` (9 instances)
+### Context: `433`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5579,10 +6304,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `434` (9 instances)
+### Context: `434`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5594,10 +6321,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `435` (9 instances)
+### Context: `435`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5609,10 +6338,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `436` (9 instances)
+### Context: `436`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5624,10 +6355,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `437` (9 instances)
+### Context: `437`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5639,10 +6372,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `438` (9 instances)
+### Context: `438`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5654,10 +6389,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `439` (9 instances)
+### Context: `439`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5669,10 +6406,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `440` (9 instances)
+### Context: `440`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5684,10 +6423,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `441` (9 instances)
+### Context: `441`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5699,10 +6440,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `700` (9 instances)
+### Context: `700`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5717,10 +6460,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `701` (9 instances)
+### Context: `701`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5737,10 +6482,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `313` (8 instances)
+### Context: `313`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5754,10 +6501,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `314` (8 instances)
+### Context: `314`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5770,10 +6519,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `315` (8 instances)
+### Context: `315`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5785,10 +6536,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `704` (8 instances)
+### Context: `704`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5805,10 +6558,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `309` (7 instances)
+### Context: `309`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5822,10 +6577,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `317` (7 instances)
+### Context: `317`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5837,10 +6594,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `319` (7 instances)
+### Context: `319`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5852,10 +6611,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `703` (7 instances)
+### Context: `703`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5871,10 +6632,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `301` (6 instances)
+### Context: `301`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5891,10 +6654,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `318` (6 instances)
+### Context: `318`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5907,10 +6672,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `702` (6 instances)
+### Context: `702`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5926,10 +6693,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `900` (6 instances)
+### Context: `900`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5943,10 +6712,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `-2` (5 instances)
+### Context: `-2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5960,10 +6731,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `302` (5 instances)
+### Context: `302`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -5980,10 +6753,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `303` (5 instances)
+### Context: `303`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6000,10 +6775,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `307` (5 instances)
+### Context: `307`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6019,10 +6796,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `310` (5 instances)
+### Context: `310`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6038,10 +6817,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `311` (5 instances)
+### Context: `311`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6054,10 +6835,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `312` (5 instances)
+### Context: `312`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6071,10 +6854,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `316` (5 instances)
+### Context: `316`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6088,10 +6873,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `326` (5 instances)
+### Context: `326`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6102,10 +6889,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `750` (5 instances)
+### Context: `750`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6119,10 +6908,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `754` (5 instances)
+### Context: `754`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6134,10 +6925,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `300` (4 instances)
+### Context: `300`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6153,10 +6946,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `304` (4 instances)
+### Context: `304`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6173,10 +6968,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `308` (4 instances)
+### Context: `308`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6193,10 +6990,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `320` (4 instances)
+### Context: `320`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6208,10 +7007,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `321` (4 instances)
+### Context: `321`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6225,10 +7026,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `323` (4 instances)
+### Context: `323`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6240,10 +7043,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `325` (4 instances)
+### Context: `325`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6256,10 +7061,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `327` (4 instances)
+### Context: `327`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6272,10 +7079,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `328` (4 instances)
+### Context: `328`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6287,10 +7096,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `329` (4 instances)
+### Context: `329`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6302,10 +7113,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `331` (4 instances)
+### Context: `331`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6317,10 +7130,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `332` (4 instances)
+### Context: `332`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6332,10 +7147,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `334` (4 instances)
+### Context: `334`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6347,10 +7164,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `336` (4 instances)
+### Context: `336`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6362,10 +7181,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `337` (4 instances)
+### Context: `337`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6377,10 +7198,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `339` (4 instances)
+### Context: `339`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6393,10 +7216,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `341` (4 instances)
+### Context: `341`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6407,10 +7232,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `705` (4 instances)
+### Context: `705`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6426,10 +7253,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `706` (4 instances)
+### Context: `706`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6443,10 +7272,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `755` (4 instances)
+### Context: `755`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6457,10 +7288,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `1500` (3 instances)
+### Context: `1500`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6473,10 +7306,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `305` (3 instances)
+### Context: `305`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6493,10 +7328,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `306` (3 instances)
+### Context: `306`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6514,10 +7351,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `322` (3 instances)
+### Context: `322`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6532,10 +7371,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `324` (3 instances)
+### Context: `324`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6548,10 +7389,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `335` (3 instances)
+### Context: `335`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6562,10 +7405,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `338` (3 instances)
+### Context: `338`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6576,10 +7421,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `342` (3 instances)
+### Context: `342`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6591,10 +7438,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `343` (3 instances)
+### Context: `343`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6606,10 +7455,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `757` (3 instances)
+### Context: `757`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6621,10 +7472,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `759` (3 instances)
+### Context: `759`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6636,10 +7489,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `330` (2 instances)
+### Context: `330`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6650,10 +7505,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `333` (2 instances)
+### Context: `333`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6665,10 +7522,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `340` (2 instances)
+### Context: `340`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6680,10 +7539,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `344` (2 instances)
+### Context: `344`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6694,10 +7555,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `345` (2 instances)
+### Context: `345`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6709,10 +7572,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `751` (2 instances)
+### Context: `751`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6724,10 +7589,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `752` (2 instances)
+### Context: `752`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6740,10 +7607,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `753` (2 instances)
+### Context: `753`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6756,10 +7625,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `758` (2 instances)
+### Context: `758`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6771,10 +7642,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `760` (2 instances)
+### Context: `760`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6785,10 +7658,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `1026` (1 instances)
+### Context: `1026`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6800,10 +7675,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `1029` (1 instances)
+### Context: `1029`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6814,10 +7691,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `346` (1 instances)
+### Context: `346`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6829,10 +7708,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `347` (1 instances)
+### Context: `347`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6843,10 +7724,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `348` (1 instances)
+### Context: `348`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6857,10 +7740,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `349` (1 instances)
+### Context: `349`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6871,10 +7756,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `351` (1 instances)
+### Context: `351`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6885,10 +7772,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `352` (1 instances)
+### Context: `352`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6899,10 +7788,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `353` (1 instances)
+### Context: `353`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6914,10 +7805,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `442` (1 instances)
+### Context: `442`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6930,10 +7823,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `707` (1 instances)
+### Context: `707`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6946,10 +7841,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `756` (1 instances)
+### Context: `756`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6962,10 +7859,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `761` (1 instances)
+### Context: `761`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6976,10 +7875,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `762` (1 instances)
+### Context: `762`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -6990,10 +7891,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `763` (1 instances)
+### Context: `763`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -7006,13 +7909,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Chapter ID Enum
 
-### Context: `ROOT` (2 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 2
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`alley`](./Enums.md#enum-alley) | Enum |  | 2 |
 | [`boneyard`](./Enums.md#enum-boneyard) | Enum |  | 2 |
 | [`bunker`](./Enums.md#enum-bunker) | Enum |  | 2 |
@@ -7042,10 +7948,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `map_areas` (1 instances)
+### Context: `map_areas`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
 
@@ -7077,13 +7985,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Characters & Bosses
 
-### Context: `ROOT` (600 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 600
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`properties`](./Characters_and_Bosses.md#context-properties) | Block | General engine properties. | 600 |
 | [`graphics`](./Characters_and_Bosses.md#context-graphics) | Block | Visual parameters and animation bindings. | 558 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 544 |
@@ -7102,15 +8013,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passives` (733 instances)
+### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 733
 
 > **Referenced by:** [`1`](./Characters_and_Bosses.md#context-1), [`2`](./Characters_and_Bosses.md#context-2), [`3`](./Characters_and_Bosses.md#context-3), [`4`](./Characters_and_Bosses.md#context-4), [`5`](./Characters_and_Bosses.md#context-5), [`Alert`](./Characters_and_Bosses.md#context-alert), [`AllAlive`](./Characters_and_Bosses.md#context-allalive), [`BellyFull`](./Characters_and_Bosses.md#context-bellyfull), [`Big`](./Characters_and_Bosses.md#context-big), [`BigHolding`](./Characters_and_Bosses.md#context-bigholding), [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat), [`Bishop`](./Characters_and_Bosses.md#context-bishop), [`BlackHole`](./Characters_and_Bosses.md#context-blackhole), [`Bomb`](./Characters_and_Bosses.md#context-bomb), [`Boris`](./Characters_and_Bosses.md#context-boris), [`Bully`](./Characters_and_Bosses.md#context-bully), [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#context-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat), [`Charging`](./Characters_and_Bosses.md#context-charging), [`Close`](./Characters_and_Bosses.md#context-close), [`Cultist`](./Characters_and_Bosses.md#context-cultist), [`Default`](./Characters_and_Bosses.md#context-default), [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling), [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground), [`Die`](./Characters_and_Bosses.md#context-die), [`Down`](./Characters_and_Bosses.md#context-down), [`DualSword`](./Characters_and_Bosses.md#context-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed), [`Dumb`](./Characters_and_Bosses.md#context-dumb), [`Explody`](./Characters_and_Bosses.md#context-explody), [`Explosive`](./Characters_and_Bosses.md#context-explosive), [`FightPhase`](./Characters_and_Bosses.md#context-fightphase), [`Fire`](./Characters_and_Bosses.md#context-fire), [`FireFull`](./Characters_and_Bosses.md#context-firefull), [`Flop`](./Characters_and_Bosses.md#context-flop), [`Flop2`](./Characters_and_Bosses.md#context-flop2), [`FlushBubs`](./Characters_and_Bosses.md#context-flushbubs), [`FlushHost`](./Characters_and_Bosses.md#context-flushhost), [`FlushNettle`](./Characters_and_Bosses.md#context-flushnettle), [`Full`](./Characters_and_Bosses.md#context-full), [`Grown`](./Characters_and_Bosses.md#context-grown), [`GuaranteedJackpot`](./Characters_and_Bosses.md#context-guaranteedjackpot), [`Guarding`](./Characters_and_Bosses.md#context-guarding), [`HalfDead`](./Characters_and_Bosses.md#context-halfdead), [`HasCat`](./Characters_and_Bosses.md#context-hascat), [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat), [`Headless`](./Characters_and_Bosses.md#context-headless), [`Holding`](./Characters_and_Bosses.md#context-holding), [`Holy`](./Characters_and_Bosses.md#context-holy), [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase), [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling), [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground), [`JohnnyBubs`](./Characters_and_Bosses.md#context-johnnybubs), [`JohnnyHost`](./Characters_and_Bosses.md#context-johnnyhost), [`JohnnyNettle`](./Characters_and_Bosses.md#context-johnnynettle), [`Joystick`](./Characters_and_Bosses.md#context-joystick), [`Lifted`](./Characters_and_Bosses.md#context-lifted), [`Lit`](./Characters_and_Bosses.md#context-lit), [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull), [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar), [`Normal`](./Characters_and_Bosses.md#context-normal), [`NormalFull`](./Characters_and_Bosses.md#context-normalfull), [`NotPriming`](./Characters_and_Bosses.md#context-notpriming), [`Nuke`](./Characters_and_Bosses.md#context-nuke), [`Obey`](./Characters_and_Bosses.md#context-obey), [`OffScreen`](./Characters_and_Bosses.md#context-offscreen), [`OneAlive`](./Characters_and_Bosses.md#context-onealive), [`OneEye`](./Characters_and_Bosses.md#context-oneeye), [`Open`](./Characters_and_Bosses.md#context-open), [`OpenCat`](./Characters_and_Bosses.md#context-opencat), [`Out`](./Characters_and_Bosses.md#context-out), [`PassiveWhenAffectedByElement`](./Characters_and_Bosses.md#context-passivewhenaffectedbyelement), [`PassiveWhileHasStatus`](./Characters_and_Bosses.md#context-passivewhilehasstatus), [`PassiveWhileNotHasStatus`](./Characters_and_Bosses.md#context-passivewhilenothasstatus), [`Possessing`](./Characters_and_Bosses.md#context-possessing), [`Primed`](./Characters_and_Bosses.md#context-primed), [`Priming`](./Characters_and_Bosses.md#context-priming), [`Pulp2`](./Characters_and_Bosses.md#context-pulp2), [`Pulp3`](./Characters_and_Bosses.md#context-pulp3), [`Pulp4`](./Characters_and_Bosses.md#context-pulp4), [`Pulp5`](./Characters_and_Bosses.md#context-pulp5), [`Pulp6`](./Characters_and_Bosses.md#context-pulp6), [`Pulp7`](./Characters_and_Bosses.md#context-pulp7), [`ROOT`](./Characters_and_Bosses.md#context-root), [`Rage`](./Characters_and_Bosses.md#context-rage), [`Sitting`](./Characters_and_Bosses.md#context-sitting), [`SmallHolding`](./Characters_and_Bosses.md#context-smallholding), [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat), [`SpawningPhase`](./Characters_and_Bosses.md#context-spawningphase), [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform), [`Standing`](./Characters_and_Bosses.md#context-standing), [`Standing2`](./Characters_and_Bosses.md#context-standing2), [`Start_Ceiling`](./Characters_and_Bosses.md#context-start_ceiling), [`Stop`](./Characters_and_Bosses.md#context-stop), [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield), [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed), [`Tar`](./Characters_and_Bosses.md#context-tar), [`TarFull`](./Characters_and_Bosses.md#context-tarfull), [`ThrobBubs`](./Characters_and_Bosses.md#context-throbbubs), [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost), [`ThrobNettle`](./Characters_and_Bosses.md#context-throbnettle), [`Transformed`](./Characters_and_Bosses.md#context-transformed), [`Turtled`](./Characters_and_Bosses.md#context-turtled), [`TwoAlive`](./Characters_and_Bosses.md#context-twoalive), [`TwoEyes`](./Characters_and_Bosses.md#context-twoeyes), [`Unlit`](./Characters_and_Bosses.md#context-unlit), [`Up`](./Characters_and_Bosses.md#context-up), [`Washed`](./Characters_and_Bosses.md#context-washed), [`Washer`](./Characters_and_Bosses.md#context-washer), [`Water`](./Characters_and_Bosses.md#context-water), [`WereMan`](./Characters_and_Bosses.md#context-wereman), [`Zealot`](./Characters_and_Bosses.md#context-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb), [`active`](./Characters_and_Bosses.md#context-active), [`default`](./Characters_and_Bosses.md#context-default), [`hot`](./Characters_and_Bosses.md#context-hot)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`FormChanger`](./Characters_and_Bosses.md#context-formchanger) | Block | AI Role: Designates the character as one that frequently shifts forms. | 106 |
 | [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath) | Block | Event Trigger: Spawns a specific entity when killed. | 79 |
 | `Trample` | Number | Applies or references the 'Trample' effect/state. | 76 |
@@ -7462,10 +8377,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `properties` (600 instances)
+### Context: `properties`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 600
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -7574,10 +8491,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ai` (583 instances)
+### Context: `ai`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 583
 
 > **Referenced by:** [`0`](./Characters_and_Bosses.md#context-0), [`1`](./Characters_and_Bosses.md#context-1), [`2`](./Characters_and_Bosses.md#context-2), [`3`](./Characters_and_Bosses.md#context-3), [`4`](./Characters_and_Bosses.md#context-4), [`Alert`](./Characters_and_Bosses.md#context-alert), [`Angry`](./Characters_and_Bosses.md#context-angry), [`Attacker`](./Characters_and_Bosses.md#context-attacker), [`BellyFull`](./Characters_and_Bosses.md#context-bellyfull), [`Bishop`](./Characters_and_Bosses.md#context-bishop), [`BlackHole`](./Characters_and_Bosses.md#context-blackhole), [`Bully`](./Characters_and_Bosses.md#context-bully), [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#context-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat), [`Charging`](./Characters_and_Bosses.md#context-charging), [`Cultist`](./Characters_and_Bosses.md#context-cultist), [`Damaged`](./Characters_and_Bosses.md#context-damaged), [`Default`](./Characters_and_Bosses.md#context-default), [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling), [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground), [`DesireMech`](./Characters_and_Bosses.md#context-desiremech), [`Down`](./Characters_and_Bosses.md#context-down), [`DualSword`](./Characters_and_Bosses.md#context-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed), [`Explody`](./Characters_and_Bosses.md#context-explody), [`FightPhase`](./Characters_and_Bosses.md#context-fightphase), [`Fire`](./Characters_and_Bosses.md#context-fire), [`FireFull`](./Characters_and_Bosses.md#context-firefull), [`Flop`](./Characters_and_Bosses.md#context-flop), [`Flop2`](./Characters_and_Bosses.md#context-flop2), [`Flush`](./Characters_and_Bosses.md#context-flush), [`FlushBubs`](./Characters_and_Bosses.md#context-flushbubs), [`FlushHost`](./Characters_and_Bosses.md#context-flushhost), [`FlushNettle`](./Characters_and_Bosses.md#context-flushnettle), [`Full`](./Characters_and_Bosses.md#context-full), [`Grown`](./Characters_and_Bosses.md#context-grown), [`Guarding`](./Characters_and_Bosses.md#context-guarding), [`HalfDead`](./Characters_and_Bosses.md#context-halfdead), [`HasCat`](./Characters_and_Bosses.md#context-hascat), [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat), [`HasRock`](./Characters_and_Bosses.md#context-hasrock), [`Headless`](./Characters_and_Bosses.md#context-headless), [`Holding`](./Characters_and_Bosses.md#context-holding), [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase), [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling), [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground), [`Johnny`](./Characters_and_Bosses.md#context-johnny), [`JohnnyBubs`](./Characters_and_Bosses.md#context-johnnybubs), [`JohnnyHost`](./Characters_and_Bosses.md#context-johnnyhost), [`JohnnyNettle`](./Characters_and_Bosses.md#context-johnnynettle), [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull), [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar), [`NoStick`](./Characters_and_Bosses.md#context-nostick), [`Normal`](./Characters_and_Bosses.md#context-normal), [`NormalFull`](./Characters_and_Bosses.md#context-normalfull), [`Nuke`](./Characters_and_Bosses.md#context-nuke), [`OffMap`](./Characters_and_Bosses.md#context-offmap), [`Open`](./Characters_and_Bosses.md#context-open), [`Primed`](./Characters_and_Bosses.md#context-primed), [`ROOT`](./Characters_and_Bosses.md#context-root), [`Rage`](./Characters_and_Bosses.md#context-rage), [`Rain`](./Characters_and_Bosses.md#context-rain), [`Sitting`](./Characters_and_Bosses.md#context-sitting), [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform), [`Standing`](./Characters_and_Bosses.md#context-standing), [`Standing2`](./Characters_and_Bosses.md#context-standing2), [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield), [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed), [`Tar`](./Characters_and_Bosses.md#context-tar), [`TarFull`](./Characters_and_Bosses.md#context-tarfull), [`Throb`](./Characters_and_Bosses.md#context-throb), [`ThrobBubs`](./Characters_and_Bosses.md#context-throbbubs), [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost), [`ThrobNettle`](./Characters_and_Bosses.md#context-throbnettle), [`Transformed`](./Characters_and_Bosses.md#context-transformed), [`Turtled`](./Characters_and_Bosses.md#context-turtled), [`Unwashed`](./Characters_and_Bosses.md#context-unwashed), [`Up`](./Characters_and_Bosses.md#context-up), [`Washed`](./Characters_and_Bosses.md#context-washed), [`Washer`](./Characters_and_Bosses.md#context-washer), [`WereMan`](./Characters_and_Bosses.md#context-wereman), [`Zealot`](./Characters_and_Bosses.md#context-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb)
 
@@ -7615,10 +8534,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `graphics` (558 instances)
+### Context: `graphics`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 558
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -7668,10 +8589,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `abilities` (458 instances)
+### Context: `abilities`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 458
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -7686,10 +8609,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `stats` (388 instances)
+### Context: `stats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 388
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -7707,10 +8632,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `pattern` (296 instances)
+### Context: `pattern`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 296
 
 > **Referenced by:** [`ReplaceBrain`](./Characters_and_Bosses.md#context-replacebrain), [`ai`](./Characters_and_Bosses.md#context-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#context-ai_if_spawned_as_enemy)
 
@@ -7735,15 +8662,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChanger` (106 instances)
+### Context: `FormChanger`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 106
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`initial_form`](./Enums.md#enum-initial_form) | Enum |  | 59 |
 | [`Default`](./Characters_and_Bosses.md#context-default) | Block | Character Form: The baseline default behavior state. | 37 |
 | [`Normal`](./Characters_and_Bosses.md#context-normal) | Block | Character Form: Behavior and stats for the 'Normal' state. | 11 |
@@ -7902,10 +8832,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnDeath` (79 instances)
+### Context: `SpawnOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 79
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -7919,10 +8851,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sound` (62 instances)
+### Context: `sound`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 62
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -7944,10 +8878,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `turns` (45 instances)
+### Context: `turns`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 45
 
 > **Referenced by:** [`Bishop`](./Characters_and_Bosses.md#context-bishop), [`Bully`](./Characters_and_Bosses.md#context-bully), [`Default`](./Characters_and_Bosses.md#context-default), [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling), [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground), [`FightPhase`](./Characters_and_Bosses.md#context-fightphase), [`Holding`](./Characters_and_Bosses.md#context-holding), [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase), [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling), [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground), [`LastHit`](./Characters_and_Bosses.md#context-lasthit), [`Lifted`](./Characters_and_Bosses.md#context-lifted), [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`Normal`](./Characters_and_Bosses.md#context-normal), [`NotPriming`](./Characters_and_Bosses.md#context-notpriming), [`Nuke`](./Characters_and_Bosses.md#context-nuke), [`OffMap`](./Characters_and_Bosses.md#context-offmap), [`OffScreen`](./Characters_and_Bosses.md#context-offscreen), [`OneAlive`](./Characters_and_Bosses.md#context-onealive), [`Possessing`](./Characters_and_Bosses.md#context-possessing), [`Priming`](./Characters_and_Bosses.md#context-priming), [`Pulp2`](./Characters_and_Bosses.md#context-pulp2), [`Pulp3`](./Characters_and_Bosses.md#context-pulp3), [`Pulp4`](./Characters_and_Bosses.md#context-pulp4), [`Pulp5`](./Characters_and_Bosses.md#context-pulp5), [`Pulp6`](./Characters_and_Bosses.md#context-pulp6), [`Pulp7`](./Characters_and_Bosses.md#context-pulp7), [`Rage`](./Characters_and_Bosses.md#context-rage), [`Sitting`](./Characters_and_Bosses.md#context-sitting), [`SpawningPhase`](./Characters_and_Bosses.md#context-spawningphase), [`Standing`](./Characters_and_Bosses.md#context-standing), [`Standing2`](./Characters_and_Bosses.md#context-standing2), [`TwoAlive`](./Characters_and_Bosses.md#context-twoalive)
 
@@ -7965,10 +8901,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `equipment` (44 instances)
+### Context: `equipment`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 44
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -7983,10 +8921,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mainturn_pattern` (44 instances)
+### Context: `mainturn_pattern`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 44
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -8002,10 +8942,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Default` (37 instances)
+### Context: `Default`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 37
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -8022,10 +8964,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChangeWhileHasStatus` (35 instances)
+### Context: `FormChangeWhileHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 35
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8039,10 +8983,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `virtual_abilities` (35 instances)
+### Context: `virtual_abilities`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 35
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -8082,15 +9028,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttack` (32 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 32
 
 > **Referenced by:** [`RandomPassivePool`](./Characters_and_Bosses.md#context-randompassivepool), [`StacyMutant_Counter`](./Characters_and_Bosses.md#context-stacymutant_counter), [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 6 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 4 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 4 |
@@ -8115,10 +9065,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bonusturn_pattern` (27 instances)
+### Context: `bonusturn_pattern`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 27
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -8134,10 +9086,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatPartsTransform` (25 instances)
+### Context: `CatPartsTransform`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 25
 
 > **Referenced by:** [`PassiveGroup`](./Characters_and_Bosses.md#context-passivegroup), [`StacyMutant_Brace`](./Characters_and_Bosses.md#context-stacymutant_brace), [`StacyMutant_Counter`](./Characters_and_Bosses.md#context-stacymutant_counter), [`StacyMutant_Damage`](./Characters_and_Bosses.md#context-stacymutant_damage), [`StacyMutant_DoubleHead`](./Characters_and_Bosses.md#context-stacymutant_doublehead), [`StacyMutant_Fire`](./Characters_and_Bosses.md#context-stacymutant_fire), [`StacyMutant_Health`](./Characters_and_Bosses.md#context-stacymutant_health), [`StacyMutant_Holy`](./Characters_and_Bosses.md#context-stacymutant_holy), [`StacyMutant_Ice`](./Characters_and_Bosses.md#context-stacymutant_ice), [`StacyMutant_Lightning`](./Characters_and_Bosses.md#context-stacymutant_lightning), [`StacyMutant_Mirror`](./Characters_and_Bosses.md#context-stacymutant_mirror), [`StacyMutant_Speed`](./Characters_and_Bosses.md#context-stacymutant_speed), [`StacyMutant_Thorns`](./Characters_and_Bosses.md#context-stacymutant_thorns), [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8161,10 +9115,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `fallback` (23 instances)
+### Context: `fallback`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 23
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -8182,10 +9138,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BossRewards` (20 instances)
+### Context: `BossRewards`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 20
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8198,15 +9156,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeleeRevengeDamage` (19 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 19
 
 > **Referenced by:** [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled), [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `damage` | Number | The base damage properties of an attack. | 11 |
 | [`effects`](./Characters_and_Bosses.md#context-effects) | Block | Non-damaging impact triggers. | 11 |
 | `knockback` | Number |  | 9 |
@@ -8218,10 +9180,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BirdRewards` (18 instances)
+### Context: `BirdRewards`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8234,15 +9198,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ally_rewards` (18 instances)
+### Context: `ally_rewards`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 > **Referenced by:** [`BirdRewards`](./Characters_and_Bosses.md#context-birdrewards)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 16 |
 | [`Conditional_GoodRoll`](./Characters_and_Bosses.md#context-conditional_goodroll) | Block | Conditional: Executes logic on a good RNG roll. | 2 |
 | [`RandomStatusFromPool`](./Characters_and_Bosses.md#context-randomstatusfrompool) | Block | Logic: Applies a random status from the pool. | 1 |
@@ -8251,10 +9218,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `alt_spawn_pool` (18 instances)
+### Context: `alt_spawn_pool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -8311,10 +9280,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CharacterLightSource` (16 instances)
+### Context: `CharacterLightSource`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 16
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8328,10 +9299,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HealthPickup` (16 instances)
+### Context: `HealthPickup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 16
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8347,10 +9320,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ImmediateAbilityReaction` (13 instances)
+### Context: `ImmediateAbilityReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -8368,15 +9343,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (13 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 > **Referenced by:** [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage), [`damage_instance`](./Characters_and_Bosses.md#context-damage_instance), [`eat_damage`](./Characters_and_Bosses.md#context-eat_damage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 5 |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. | 2 |
@@ -8389,10 +9371,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityHealthThreshold` (12 instances)
+### Context: `AbilityHealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8410,15 +9394,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveGroup` (12 instances)
+### Context: `PassiveGroup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`RandomPassivePool`](./Characters_and_Bosses.md#context-randompassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 12 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 12 |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 11 |
@@ -8431,10 +9418,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnThingOnDamage` (12 instances)
+### Context: `SpawnThingOnDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8453,10 +9442,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `round_end_bonusturn_pattern` (12 instances)
+### Context: `round_end_bonusturn_pattern`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -8473,10 +9464,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Normal` (11 instances)
+### Context: `Normal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -8492,10 +9485,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DeathRattleRevive` (10 instances)
+### Context: `DeathRattleRevive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8508,10 +9503,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Rage` (10 instances)
+### Context: `Rage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -8529,10 +9526,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityReaction` (9 instances)
+### Context: `AbilityReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -8552,10 +9551,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChangeOnElementInfluence` (9 instances)
+### Context: `FormChangeOnElementInfluence`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8571,15 +9572,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusCollector` (9 instances)
+### Context: `StatusCollector`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 7 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 4 |
 | `Slow` | Number | Applies or references the 'Slow' effect/state. | 4 |
@@ -8588,10 +9592,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformInXTurns` (9 instances)
+### Context: `TransformInXTurns`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`RandomPassivePool`](./Characters_and_Bosses.md#context-randompassivepool), [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8607,10 +9613,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformOnElementInfluence` (9 instances)
+### Context: `TransformOnElementInfluence`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8623,15 +9631,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `statuses` (9 instances)
+### Context: `statuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`BirdRewards`](./Characters_and_Bosses.md#context-birdrewards), [`Cat`](./Characters_and_Bosses.md#context-cat), [`NonCat`](./Characters_and_Bosses.md#context-noncat)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Consumed`](./Characters_and_Bosses.md#context-consumed) | Block | State triggered when the entity is eaten/consumed. | 4 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 3 |
 
@@ -8639,10 +9651,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DeathRattle` (8 instances)
+### Context: `DeathRattle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -8658,10 +9672,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChangeOffMap` (8 instances)
+### Context: `FormChangeOffMap`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8674,10 +9690,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToSpitOnDamage` (7 instances)
+### Context: `ChanceToSpitOnDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8693,10 +9711,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveWhenDamaged` (7 instances)
+### Context: `MoveWhenDamaged`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -8707,10 +9727,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MovementReaction` (7 instances)
+### Context: `MovementReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8728,10 +9750,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ReflectProjectiles` (7 instances)
+### Context: `ReflectProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -8741,10 +9765,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CaveFamilyEnrage` (6 instances)
+### Context: `CaveFamilyEnrage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8758,10 +9784,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChangeWhilePrimingAbility` (6 instances)
+### Context: `FormChangeWhilePrimingAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8774,10 +9802,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveTowardsDamageSource` (6 instances)
+### Context: `MoveTowardsDamageSource`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8798,10 +9828,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SecurityBotProtect` (6 instances)
+### Context: `SecurityBotProtect`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8817,10 +9849,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HasCat` (5 instances)
+### Context: `HasCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -8837,10 +9871,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileHasStatus` (5 instances)
+### Context: `PassiveWhileHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8853,10 +9889,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BaitAura` (4 instances)
+### Context: `BaitAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -8868,10 +9906,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Consumed` (4 instances)
+### Context: `Consumed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`statuses`](./Characters_and_Bosses.md#context-statuses)
 
@@ -8889,10 +9929,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveAway` (4 instances)
+### Context: `MoveAway`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -8905,10 +9947,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveClose` (4 instances)
+### Context: `MoveClose`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -8922,10 +9966,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `OffMap` (4 instances)
+### Context: `OffMap`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -8938,10 +9984,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallRockBehavior` (4 instances)
+### Context: `SmallRockBehavior`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -8953,15 +10001,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEnd` (4 instances)
+### Context: `StatusEachTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | [`Conditional_BadRoll`](./Characters_and_Bosses.md#context-conditional_badroll) | Block | Conditional: Executes logic on a bad RNG roll. | 1 |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
@@ -8972,15 +10024,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnKill` (4 instances)
+### Context: `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 3 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 2 |
 
@@ -8988,15 +10045,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTookDamageFromAbility` (4 instances)
+### Context: `StatusOnTookDamageFromAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `ExtraBasicAttacks_Status` | Number | Applies or references the 'ExtraBasicAttacks_Status' effect/state. | 2 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 |
@@ -9006,10 +10068,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformOnDeathImmediately` (4 instances)
+### Context: `TransformOnDeathImmediately`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -9020,10 +10084,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Trapper` (4 instances)
+### Context: `Trapper`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9038,10 +10104,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `default` (4 instances)
+### Context: `default`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9053,10 +10121,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `hot` (4 instances)
+### Context: `hot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9070,15 +10140,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `keyword_tooltips` (4 instances)
+### Context: `keyword_tooltips`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`Die`](./Characters_and_Bosses.md#context-die), [`Dumb`](./Characters_and_Bosses.md#context-dumb), [`Obey`](./Characters_and_Bosses.md#context-obey), [`Stop`](./Characters_and_Bosses.md#context-stop)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `TVBotDie` | Number | Applies or references the 'TVBotDie' effect/state. | 1 |
 | `TVBotDumb` | Number | Applies or references the 'TVBotDumb' effect/state. | 1 |
 | `TVBotObey` | Number | Applies or references the 'TVBotObey' effect/state. | 1 |
@@ -9088,10 +10162,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllAlive` (3 instances)
+### Context: `AllAlive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9103,10 +10179,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ArmorPickup` (3 instances)
+### Context: `ArmorPickup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9119,10 +10197,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Buddy` (3 instances)
+### Context: `Buddy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -9134,10 +10214,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Cat` (3 instances)
+### Context: `Cat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive), [`MotherTumorSpawnInCapture`](./Characters_and_Bosses.md#context-mothertumorspawnincapture)
 
@@ -9151,10 +10233,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Down` (3 instances)
+### Context: `Down`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9170,10 +10254,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChangeHealthThreshold` (3 instances)
+### Context: `FormChangeHealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9188,10 +10274,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Full` (3 instances)
+### Context: `Full`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9207,10 +10295,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ManaPickup` (3 instances)
+### Context: `ManaPickup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9223,10 +10313,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveTowardsKillers` (3 instances)
+### Context: `MoveTowardsKillers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -9237,10 +10329,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NonCat` (3 instances)
+### Context: `NonCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive), [`MotherTumorSpawnInCapture`](./Characters_and_Bosses.md#context-mothertumorspawnincapture)
 
@@ -9254,10 +10348,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `OneAlive` (3 instances)
+### Context: `OneAlive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9270,15 +10366,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomPassivePool` (3 instances)
+### Context: `RandomPassivePool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`PassiveGroup`](./Characters_and_Bosses.md#context-passivegroup) | Block | Passive: A collection of passives grouped together for easier management. | 12 |
 | [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#context-addstatustobasicattack) | Block | Modifier: Injects a status effect payload into the character's basic attacks. | 10 |
 | [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns) | Block | Logic: Forces a form change after X turns. | 2 |
@@ -9287,10 +10386,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ReplaceBrain` (3 instances)
+### Context: `ReplaceBrain`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`StacyMutant_Fire`](./Characters_and_Bosses.md#context-stacymutant_fire), [`StacyMutant_Ice`](./Characters_and_Bosses.md#context-stacymutant_ice), [`StacyMutant_Lightning`](./Characters_and_Bosses.md#context-stacymutant_lightning)
 
@@ -9305,10 +10406,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TwoAlive` (3 instances)
+### Context: `TwoAlive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9321,10 +10424,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Up` (3 instances)
+### Context: `Up`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9339,10 +10444,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityOnRoundEnd` (2 instances)
+### Context: `AbilityOnRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9355,10 +10462,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityWhenTaggedCharacterMovesNear` (2 instances)
+### Context: `AbilityWhenTaggedCharacterMovesNear`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9372,10 +10481,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddTemporaryEffectsToBasicAttack` (2 instances)
+### Context: `AddTemporaryEffectsToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9387,10 +10498,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachRound` (2 instances)
+### Context: `AutocastEachRound`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9403,10 +10516,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Big` (2 instances)
+### Context: `Big`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9420,10 +10535,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Boris` (2 instances)
+### Context: `Boris`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9436,10 +10553,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BungaEntrance` (2 instances)
+### Context: `BungaEntrance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9454,10 +10573,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CaveMan` (2 instances)
+### Context: `CaveMan`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9474,10 +10595,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CaveManSpear` (2 instances)
+### Context: `CaveManSpear`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9494,10 +10617,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CherubimReaction` (2 instances)
+### Context: `CherubimReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9510,15 +10635,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_GoodRoll` (2 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ally_rewards`](./Characters_and_Bosses.md#context-ally_rewards)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 2 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 2 |
 
@@ -9526,10 +10656,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DashRandomly` (2 instances)
+### Context: `DashRandomly`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -9542,10 +10674,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DiesToElement` (2 instances)
+### Context: `DiesToElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9558,10 +10692,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Empty` (2 instances)
+### Context: `Empty`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9573,10 +10709,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Escape` (2 instances)
+### Context: `Escape`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -9589,10 +10727,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Explosive` (2 instances)
+### Context: `Explosive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9605,10 +10745,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceUseAbility` (2 instances)
+### Context: `ForceUseAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -9619,10 +10761,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FormChangeDuringWeatherElement` (2 instances)
+### Context: `FormChangeDuringWeatherElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9635,10 +10779,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Holding` (2 instances)
+### Context: `Holding`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9653,15 +10799,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Holy` (2 instances)
+### Context: `Holy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
 
@@ -9669,10 +10818,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockUpAndAway` (2 instances)
+### Context: `KnockUpAndAway`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_HasKnockback`](./Characters_and_Bosses.md#context-conditional_hasknockback), [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack)
 
@@ -9687,10 +10838,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MotherTumorSpawnInCapture` (2 instances)
+### Context: `MotherTumorSpawnInCapture`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9704,10 +10857,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveCenter` (2 instances)
+### Context: `MoveCenter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -9720,10 +10875,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveForThrow` (2 instances)
+### Context: `MoveForThrow`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -9737,10 +10894,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NotPriming` (2 instances)
+### Context: `NotPriming`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9753,10 +10912,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileNotHasStatus` (2 instances)
+### Context: `PassiveWhileNotHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9769,10 +10930,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Priming` (2 instances)
+### Context: `Priming`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9785,10 +10948,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ProtectTargetedAllies` (2 instances)
+### Context: `ProtectTargetedAllies`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9801,10 +10966,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Rain` (2 instances)
+### Context: `Rain`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9816,10 +10983,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RemoveStatusStacks` (2 instances)
+### Context: `RemoveStatusStacks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusOnEndMove`](./Characters_and_Bosses.md#context-statusonendmove), [`StatusOnTookDamage`](./Characters_and_Bosses.md#context-statusontookdamage)
 
@@ -9832,10 +11001,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Robot` (2 instances)
+### Context: `Robot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -9845,10 +11016,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SlotMachineRollPool` (2 instances)
+### Context: `SlotMachineRollPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -9863,10 +11036,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Small` (2 instances)
+### Context: `Small`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9879,10 +11054,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpearRun` (2 instances)
+### Context: `SpearRun`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -9896,10 +11073,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SquirrelForm` (2 instances)
+### Context: `SquirrelForm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -9914,30 +11093,38 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusGroup` (2 instances)
+### Context: `StatusGroup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`RandomStatusFromPool`](./Characters_and_Bosses.md#context-randomstatusfrompool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 4 |
 
 </details>
 
 ---
 
-### Context: `StatusOnSpawnIn` (2 instances)
+### Context: `StatusOnSpawnIn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 1 |
 
@@ -9945,15 +11132,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTookDamage` (2 instances)
+### Context: `StatusOnTookDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. | 1 |
 | [`RemoveStatusStacks`](./Characters_and_Bosses.md#context-removestatusstacks) | Block | Logic: Removes stacks of a specific status effect. | 1 |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 1 |
@@ -9962,10 +11153,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SupportFormChangeInsteadOfRun` (2 instances)
+### Context: `SupportFormChangeInsteadOfRun`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -9976,25 +11169,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TempPassiveUntilSettled` (2 instances)
+### Context: `TempPassiveUntilSettled`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_HasKnockback`](./Characters_and_Bosses.md#context-conditional_hasknockback), [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage) | Block | Reaction: Deals damage or status effects to an attacker upon receiving melee damage. | 2 |
 
 </details>
 
 ---
 
-### Context: `TinkererBasicAttackSwitching` (2 instances)
+### Context: `TinkererBasicAttackSwitching`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`PassiveGroup`](./Characters_and_Bosses.md#context-passivegroup), [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10007,10 +11205,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformOnElementInfluencex` (2 instances)
+### Context: `TransformOnElementInfluencex`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10023,10 +11223,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Turtled` (2 instances)
+### Context: `Turtled`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10042,10 +11244,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `active` (2 instances)
+### Context: `active`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10057,15 +11261,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `alternate_energized_effect` (2 instances)
+### Context: `alternate_energized_effect`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Robot`](./Characters_and_Bosses.md#context-robot)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 |
 | `SpellDamageUp` | Number | Applies or references the 'SpellDamageUp' effect/state. | 1 |
 
@@ -10073,10 +11280,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `dispersed_bonusturn_pattern` (2 instances)
+### Context: `dispersed_bonusturn_pattern`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -10088,45 +11297,54 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passive` (2 instances)
+### Context: `passive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 
 </details>
 
 ---
 
-### Context: `statuses_on_enter_form` (2 instances)
+### Context: `statuses_on_enter_form`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Full`](./Characters_and_Bosses.md#context-full)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Logic: Forces execution of an ability. | 2 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToReceivedDamage` (1 instances)
+### Context: `AddStatusToReceivedDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack) | Block | Conditional: Executes logic if the triggering attack is physical. | 1 |
 | [`Else`](./Characters_and_Bosses.md#context-else) | Block | Fallback logic block for conditionals. | 1 |
 
@@ -10134,60 +11352,74 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToSpells` (1 instances)
+### Context: `AddStatusToSpells`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToTrampleDamage` (1 instances)
+### Context: `AddStatusToTrampleDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`PassiveWhenDead`](./Characters_and_Bosses.md#context-passivewhendead)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToWeapons` (1 instances)
+### Context: `AddStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AdventureTokenPassivePool` (1 instances)
+### Context: `AdventureTokenPassivePool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`StacyMutant_Brace`](./Characters_and_Bosses.md#context-stacymutant_brace) | Block | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 |
 | [`StacyMutant_Counter`](./Characters_and_Bosses.md#context-stacymutant_counter) | Block | Character Form: Behavior and stats for the 'StacyMutant_Counter' state. | 1 |
 | [`StacyMutant_Damage`](./Characters_and_Bosses.md#context-stacymutant_damage) | Block | Character Form: Behavior and stats for the 'StacyMutant_Damage' state. | 1 |
@@ -10205,10 +11437,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AggroTargetIsGovernedByHitEffect` (1 instances)
+### Context: `AggroTargetIsGovernedByHitEffect`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10220,10 +11454,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Alert` (1 instances)
+### Context: `Alert`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10237,10 +11473,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllStatsAura` (1 instances)
+### Context: `AllStatsAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10254,10 +11492,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Angry` (1 instances)
+### Context: `Angry`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10270,10 +11510,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Attacker` (1 instances)
+### Context: `Attacker`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10285,10 +11527,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BackflipWhenTargeted` (1 instances)
+### Context: `BackflipWhenTargeted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnGainCoins`](./Characters_and_Bosses.md#context-statusongaincoins)
 
@@ -10301,10 +11545,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BattlefieldUniqueRandomPassive` (1 instances)
+### Context: `BattlefieldUniqueRandomPassive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10320,10 +11566,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BellyFull` (1 instances)
+### Context: `BellyFull`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10337,10 +11585,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BigHolding` (1 instances)
+### Context: `BigHolding`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10353,10 +11603,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BigHoldingCat` (1 instances)
+### Context: `BigHoldingCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10369,10 +11621,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Bishop` (1 instances)
+### Context: `Bishop`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10391,10 +11645,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BlackHole` (1 instances)
+### Context: `BlackHole`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10410,10 +11666,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Bomb` (1 instances)
+### Context: `Bomb`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10426,10 +11684,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Bully` (1 instances)
+### Context: `Bully`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10443,10 +11703,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BungaCheers` (1 instances)
+### Context: `BungaCheers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10462,10 +11724,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CaveBaby` (1 instances)
+### Context: `CaveBaby`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10482,10 +11746,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CaveWoman` (1 instances)
+### Context: `CaveWoman`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10502,10 +11768,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CaveWomanHasCat` (1 instances)
+### Context: `CaveWomanHasCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10522,10 +11790,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CerberubsAggroTargetBehavior` (1 instances)
+### Context: `CerberubsAggroTargetBehavior`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10538,10 +11808,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CerberubsJumpBlind` (1 instances)
+### Context: `CerberubsJumpBlind`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -10554,10 +11826,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CerberubsJumpNormal` (1 instances)
+### Context: `CerberubsJumpNormal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -10570,10 +11844,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBackflip` (1 instances)
+### Context: `ChanceToBackflip`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10586,10 +11862,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToFormChangeOnAbilityDamage` (1 instances)
+### Context: `ChanceToFormChangeOnAbilityDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10602,10 +11880,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChaosBossFormChangeGuide` (1 instances)
+### Context: `ChaosBossFormChangeGuide`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10619,10 +11899,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChaosBossPieces` (1 instances)
+### Context: `ChaosBossPieces`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10635,10 +11917,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChaosHeadDropIn` (1 instances)
+### Context: `ChaosHeadDropIn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10652,10 +11936,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Charging` (1 instances)
+### Context: `Charging`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10670,10 +11956,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Close` (1 instances)
+### Context: `Close`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10685,10 +11973,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CloseConvert` (1 instances)
+### Context: `CloseConvert`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -10701,15 +11991,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_BadRoll` (1 instances)
+### Context: `Conditional_BadRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusEachTurnEnd`](./Characters_and_Bosses.md#context-statuseachturnend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 1 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 1 |
 
@@ -10717,15 +12012,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasKnockback` (1 instances)
+### Context: `Conditional_HasKnockback`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Else`](./Characters_and_Bosses.md#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | Logic: Applies vertical and horizontal displacement. | 1 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
 | [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | Passive: Active only until the physics engine stops moving the character. | 1 |
@@ -10734,15 +12033,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_IsPhysicalAttack` (1 instances)
+### Context: `Conditional_IsPhysicalAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToReceivedDamage`](./Characters_and_Bosses.md#context-addstatustoreceiveddamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | Logic: Applies vertical and horizontal displacement. | 1 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
 | [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | Passive: Active only until the physics engine stops moving the character. | 1 |
@@ -10751,10 +12054,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CounterAttack` (1 instances)
+### Context: `CounterAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -10765,15 +12070,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CreateGlobalModifiers` (1 instances)
+### Context: `CreateGlobalModifiers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 | `BloodRain` | Number | Applies or references the 'BloodRain' effect/state. | 1 |
 | [`LowerAmbientLight`](./Characters_and_Bosses.md#context-lowerambientlight) | Block | Visual: Dims the map lighting. | 1 |
 
@@ -10781,10 +12089,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Cultist` (1 instances)
+### Context: `Cultist`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10801,10 +12111,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Damaged` (1 instances)
+### Context: `Damaged`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10816,27 +12128,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Default_Ceiling` (1 instances)
+### Context: `Default_Ceiling`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
-| [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
-
-</details>
-
----
-
-### Context: `Default_Ground` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10850,10 +12147,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedAutoRevive` (1 instances)
+### Context: `Default_Ground`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
+| [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
+
+</details>
+
+---
+
+### Context: `DelayedAutoRevive`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10866,10 +12184,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DesireMech` (1 instances)
+### Context: `DesireMech`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10881,10 +12201,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DiceBehavior` (1 instances)
+### Context: `DiceBehavior`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10897,10 +12219,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Die` (1 instances)
+### Context: `Die`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10913,10 +12237,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DiesToPiercingAndSpikes` (1 instances)
+### Context: `DiesToPiercingAndSpikes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10928,10 +12254,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DodgeWhenTargeted` (1 instances)
+### Context: `DodgeWhenTargeted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -10943,10 +12271,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Drunker` (1 instances)
+### Context: `Drunker`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10958,10 +12288,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DualSword` (1 instances)
+### Context: `DualSword`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10978,10 +12310,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DualSword_Primed` (1 instances)
+### Context: `DualSword_Primed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -10998,10 +12332,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Dumb` (1 instances)
+### Context: `Dumb`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11014,10 +12350,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DybbukPossessionFallback` (1 instances)
+### Context: `DybbukPossessionFallback`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11030,25 +12368,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (1 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToReceivedDamage`](./Characters_and_Bosses.md#context-addstatustoreceiveddamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_HasKnockback`](./Characters_and_Bosses.md#context-conditional_hasknockback) | Block | Conditional: Executes logic if the triggering attack deals knockback. | 1 |
 
 </details>
 
 ---
 
-### Context: `Explody` (1 instances)
+### Context: `Explody`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11064,10 +12409,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FaceAwayLastDamage` (1 instances)
+### Context: `FaceAwayLastDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11081,10 +12428,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FaceLastDamage` (1 instances)
+### Context: `FaceLastDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -11094,10 +12443,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FightPhase` (1 instances)
+### Context: `FightPhase`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11113,10 +12464,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossBeamQueue` (1 instances)
+### Context: `FinalBossBeamQueue`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11130,15 +12483,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossBecomeTheChild` (1 instances)
+### Context: `FinalBossBecomeTheChild`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
 | `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |
 | [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic) | Block | Event Trigger: Changes background music track. | 1 |
@@ -11147,15 +12503,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossHitCountdownBoris` (1 instances)
+### Context: `FinalBossHitCountdownBoris`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 2 |
 | `icon` | Number |  | 1 |
 | `icon_ready` | Number |  | 1 |
@@ -11165,15 +12524,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossHitCountdownExplosive` (1 instances)
+### Context: `FinalBossHitCountdownExplosive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 2 |
 | `icon` | Number |  | 1 |
 | `icon_ready` | Number |  | 1 |
@@ -11183,10 +12545,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossHitCountdownHoly` (1 instances)
+### Context: `FinalBossHitCountdownHoly`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11200,10 +12564,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossPupils` (1 instances)
+### Context: `FinalBossPupils`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11221,10 +12587,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossShieldHealth` (1 instances)
+### Context: `FinalBossShieldHealth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11237,10 +12605,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FinalBossSyncAnimations` (1 instances)
+### Context: `FinalBossSyncAnimations`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11253,15 +12623,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Fire` (1 instances)
+### Context: `Fire`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
@@ -11270,10 +12643,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FireFull` (1 instances)
+### Context: `FireFull`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11288,10 +12663,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Flop` (1 instances)
+### Context: `Flop`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11305,10 +12682,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Flop2` (1 instances)
+### Context: `Flop2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11322,10 +12701,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Flush` (1 instances)
+### Context: `Flush`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11337,10 +12718,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FlushBubs` (1 instances)
+### Context: `FlushBubs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11353,10 +12736,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FlushHost` (1 instances)
+### Context: `FlushHost`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11370,10 +12755,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FlushNettle` (1 instances)
+### Context: `FlushNettle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11386,10 +12773,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FoodMove` (1 instances)
+### Context: `FoodMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -11402,10 +12791,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceTrample` (1 instances)
+### Context: `ForceTrample`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -11418,10 +12809,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GainDisorderFromPool` (1 instances)
+### Context: `GainDisorderFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#context-addstatustobasicattack)
 
@@ -11434,10 +12827,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Grappling` (1 instances)
+### Context: `Grappling`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11450,10 +12845,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Grown` (1 instances)
+### Context: `Grown`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11471,10 +12868,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GuaranteedJackpot` (1 instances)
+### Context: `GuaranteedJackpot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11486,10 +12885,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Guarding` (1 instances)
+### Context: `Guarding`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11503,10 +12904,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HPAltStates` (1 instances)
+### Context: `HPAltStates`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11519,10 +12922,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HalfDead` (1 instances)
+### Context: `HalfDead`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11537,10 +12942,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HasDeadCat` (1 instances)
+### Context: `HasDeadCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11555,10 +12962,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HasRock` (1 instances)
+### Context: `HasRock`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11572,10 +12981,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Headless` (1 instances)
+### Context: `Headless`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11589,10 +13000,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HealNeighborsEachTurn` (1 instances)
+### Context: `HealNeighborsEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11605,10 +13018,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Hint_CrackedVisuals` (1 instances)
+### Context: `Hint_CrackedVisuals`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11620,10 +13035,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Hint_CrackedVisuals2` (1 instances)
+### Context: `Hint_CrackedVisuals2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11635,10 +13052,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Hint_CrackedVisuals3` (1 instances)
+### Context: `Hint_CrackedVisuals3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11650,10 +13069,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HitlerExecute` (1 instances)
+### Context: `HitlerExecute`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11667,10 +13088,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HumanDead` (1 instances)
+### Context: `HumanDead`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11684,15 +13107,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `InfiniteRebirth` (1 instances)
+### Context: `InfiniteRebirth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `health` | Number |  | 1 |
 | `immediate` | Boolean |  | 1 |
 | `playercat_health` | Number |  | 1 |
@@ -11701,10 +13127,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `InitialPhase` (1 instances)
+### Context: `InitialPhase`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11720,10 +13148,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Insane_Ceiling` (1 instances)
+### Context: `Insane_Ceiling`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11738,10 +13168,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Insane_Ground` (1 instances)
+### Context: `Insane_Ground`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11756,10 +13188,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Johnny` (1 instances)
+### Context: `Johnny`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11771,10 +13205,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `JohnnyBubs` (1 instances)
+### Context: `JohnnyBubs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11787,10 +13223,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `JohnnyHost` (1 instances)
+### Context: `JohnnyHost`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11804,10 +13242,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `JohnnyNeedsWashing` (1 instances)
+### Context: `JohnnyNeedsWashing`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11820,10 +13260,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `JohnnyNettle` (1 instances)
+### Context: `JohnnyNettle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11836,10 +13278,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Joystick` (1 instances)
+### Context: `Joystick`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11852,10 +13296,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LastHit` (1 instances)
+### Context: `LastHit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11867,10 +13313,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LeapClose` (1 instances)
+### Context: `LeapClose`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -11883,10 +13331,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Lifted` (1 instances)
+### Context: `Lifted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11902,10 +13352,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Lit` (1 instances)
+### Context: `Lit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -11918,10 +13370,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LowerAmbientLight` (1 instances)
+### Context: `LowerAmbientLight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`CreateGlobalModifiers`](./Characters_and_Bosses.md#context-createglobalmodifiers)
 
@@ -11934,10 +13388,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MegaDinoDropController` (1 instances)
+### Context: `MegaDinoDropController`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11952,15 +13408,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ModularPickup` (1 instances)
+### Context: `ModularPickup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 1 |
 | [`sound_event`](./Enums.md#enum-sound_event) | Enum |  | 1 |
 
@@ -11968,10 +13427,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MonkCatReactionAbilities` (1 instances)
+### Context: `MonkCatReactionAbilities`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -11987,10 +13448,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MotherGrowController` (1 instances)
+### Context: `MotherGrowController`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12003,10 +13466,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MotherTumorPassive` (1 instances)
+### Context: `MotherTumorPassive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12023,10 +13488,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Mount` (1 instances)
+### Context: `Mount`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12039,10 +13506,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Mounted` (1 instances)
+### Context: `Mounted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12054,10 +13523,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MouthFull` (1 instances)
+### Context: `MouthFull`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12071,10 +13542,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveAfterAnyAttemptedAttack` (1 instances)
+### Context: `MoveAfterAnyAttemptedAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12086,10 +13559,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveAwayFromDamageSource` (1 instances)
+### Context: `MoveAwayFromDamageSource`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12101,10 +13576,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveAwayWhenEnemyAdjacent` (1 instances)
+### Context: `MoveAwayWhenEnemyAdjacent`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12118,10 +13595,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveForBarrage` (1 instances)
+### Context: `MoveForBarrage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12135,10 +13614,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveForDash` (1 instances)
+### Context: `MoveForDash`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12152,10 +13633,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveForGrass` (1 instances)
+### Context: `MoveForGrass`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12169,10 +13652,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveForPounce` (1 instances)
+### Context: `MoveForPounce`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12186,10 +13671,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveForSpin` (1 instances)
+### Context: `MoveForSpin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12203,10 +13690,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveOneForPuke` (1 instances)
+### Context: `MoveOneForPuke`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12220,10 +13709,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveSpaced` (1 instances)
+### Context: `MoveSpaced`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12236,27 +13727,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveToHead` (1 instances)
+### Context: `MoveToHead`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
-| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum |  | 1 |
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `MoveTowards` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12270,10 +13746,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MultiSpawnOnDeath` (1 instances)
+### Context: `MoveTowards`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
+| [`move_for_ability`](./Enums.md#enum-move_for_ability) | Enum |  | 1 |
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `MultiSpawnOnDeath`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12286,10 +13783,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Mutant` (1 instances)
+### Context: `Mutant`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12308,10 +13807,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NCGravecrawlFAR` (1 instances)
+### Context: `NCGravecrawlFAR`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12324,10 +13825,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NeutronStar` (1 instances)
+### Context: `NeutronStar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12340,10 +13843,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NoEyes` (1 instances)
+### Context: `NoEyes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12355,10 +13860,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NoStick` (1 instances)
+### Context: `NoStick`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12371,10 +13878,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NormalFull` (1 instances)
+### Context: `NormalFull`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12389,10 +13898,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Nothing` (1 instances)
+### Context: `Nothing`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`MotherTumorSpawnInCapture`](./Characters_and_Bosses.md#context-mothertumorspawnincapture)
 
@@ -12404,10 +13915,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Nuke` (1 instances)
+### Context: `Nuke`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12424,10 +13937,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Obey` (1 instances)
+### Context: `Obey`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12440,10 +13955,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Off` (1 instances)
+### Context: `Off`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12455,10 +13972,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `OffScreen` (1 instances)
+### Context: `OffScreen`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12471,10 +13990,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `OneEye` (1 instances)
+### Context: `OneEye`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12487,10 +14008,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Open` (1 instances)
+### Context: `Open`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12505,10 +14028,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `OpenCat` (1 instances)
+### Context: `OpenCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12521,10 +14046,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Out` (1 instances)
+### Context: `Out`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12536,10 +14063,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenAffectedByElement` (1 instances)
+### Context: `PassiveWhenAffectedByElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12552,25 +14081,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenDead` (1 instances)
+### Context: `PassiveWhenDead`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddStatusToTrampleDamage`](./Characters_and_Bosses.md#context-addstatustotrampledamage) | Block | Modifier: Injects a status effect into the character's trample damage. | 1 |
 
 </details>
 
 ---
 
-### Context: `Possessing` (1 instances)
+### Context: `Possessing`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12584,10 +14118,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Primed` (1 instances)
+### Context: `Primed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12602,10 +14138,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Pulp2` (1 instances)
+### Context: `Pulp2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12623,10 +14161,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Pulp3` (1 instances)
+### Context: `Pulp3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12644,10 +14184,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Pulp4` (1 instances)
+### Context: `Pulp4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12665,10 +14207,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Pulp5` (1 instances)
+### Context: `Pulp5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12686,10 +14230,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Pulp6` (1 instances)
+### Context: `Pulp6`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12707,10 +14253,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Pulp7` (1 instances)
+### Context: `Pulp7`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12728,25 +14276,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool` (1 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ally_rewards`](./Characters_and_Bosses.md#context-ally_rewards)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`StatusGroup`](./Characters_and_Bosses.md#context-statusgroup) | Block | Logic: Groups statuses for batch application. | 2 |
 
 </details>
 
 ---
 
-### Context: `ReturnA` (1 instances)
+### Context: `ReturnA`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12759,10 +14314,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (1 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12776,10 +14333,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RunFar` (1 instances)
+### Context: `RunFar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -12792,10 +14351,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RunWhenLastPlayerCatIsCharmed` (1 instances)
+### Context: `RunWhenLastPlayerCatIsCharmed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12808,10 +14369,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScalingAttackAnimation` (1 instances)
+### Context: `ScalingAttackAnimation`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12824,10 +14387,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SharePickups` (1 instances)
+### Context: `SharePickups`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12839,10 +14404,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Sitting` (1 instances)
+### Context: `Sitting`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12859,10 +14426,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SkipFirstRounds` (1 instances)
+### Context: `SkipFirstRounds`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12875,10 +14444,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallHolding` (1 instances)
+### Context: `SmallHolding`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12891,10 +14462,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallHoldingCat` (1 instances)
+### Context: `SmallHoldingCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12907,10 +14480,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawningPhase` (1 instances)
+### Context: `SpawningPhase`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -12923,10 +14498,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpewerAltGraphics` (1 instances)
+### Context: `SpewerAltGraphics`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -12943,15 +14520,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Brace` (1 instances)
+### Context: `StacyMutant_Brace`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 1 |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 
@@ -12959,15 +14539,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Counter` (1 instances)
+### Context: `StacyMutant_Counter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#context-addstatustobasicattack) | Block | Modifier: Injects a status effect payload into the character's basic attacks. | 1 |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | Reaction: Executes a counter-attack ability when hit. | 1 |
@@ -12976,15 +14559,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Damage` (1 instances)
+### Context: `StacyMutant_Damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddDamage` | Number | Applies or references the 'AddDamage' effect/state. | 1 |
 | `AddMaxHealth` | Number | Applies or references the 'AddMaxHealth' effect/state. | 1 |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
@@ -12993,15 +14579,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_DoubleHead` (1 instances)
+### Context: `StacyMutant_DoubleHead`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `ExtraDispersedTurns` | Number | Applies or references the 'ExtraDispersedTurns' effect/state. | 1 |
 
@@ -13009,15 +14598,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Fire` (1 instances)
+### Context: `StacyMutant_Fire`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 1 |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 1 |
@@ -13027,15 +14619,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Health` (1 instances)
+### Context: `StacyMutant_Health`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddMaxHealth` | Number | Applies or references the 'AddMaxHealth' effect/state. | 1 |
 | `AddSpeed` | Number | Applies or references the 'AddSpeed' effect/state. | 1 |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
@@ -13045,15 +14640,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Holy` (1 instances)
+### Context: `StacyMutant_Holy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 
@@ -13061,15 +14659,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Ice` (1 instances)
+### Context: `StacyMutant_Ice`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddMovement` | Number | Applies or references the 'AddMovement' effect/state. | 1 |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 1 |
@@ -13080,15 +14681,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Lightning` (1 instances)
+### Context: `StacyMutant_Lightning`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 1 |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 1 |
@@ -13098,15 +14702,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Mirror` (1 instances)
+### Context: `StacyMutant_Mirror`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `ReflectProjectiles` | Number | Passive: Reflects incoming projectiles back at the attacker. | 1 |
 | [`StatusEachTurnEndForEachTurn`](./Characters_and_Bosses.md#context-statuseachturnendforeachturn) | Block | Event Trigger: Applies a scaling status at the end of every turn based on turn count. | 1 |
@@ -13115,15 +14722,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Speed` (1 instances)
+### Context: `StacyMutant_Speed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddDamage` | Number | Applies or references the 'AddDamage' effect/state. | 1 |
 | `AddSpeed` | Number | Applies or references the 'AddSpeed' effect/state. | 1 |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
@@ -13133,15 +14743,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StacyMutant_Thorns` (1 instances)
+### Context: `StacyMutant_Thorns`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | Visual: Transforms specific body parts of the character. | 1 |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. | 1 |
 
@@ -13149,10 +14762,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Standing` (1 instances)
+### Context: `Standing`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13168,10 +14783,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Standing2` (1 instances)
+### Context: `Standing2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13187,10 +14804,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Start_Ceiling` (1 instances)
+### Context: `Start_Ceiling`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13202,15 +14821,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAfterXTurns` (1 instances)
+### Context: `StatusAfterXTurns`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
@@ -13218,15 +14840,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnBeginIfHasStatus` (1 instances)
+### Context: `StatusEachTurnBeginIfHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 1 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
@@ -13238,45 +14863,56 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEndForEachTurn` (1 instances)
+### Context: `StatusEachTurnEndForEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StacyMutant_Mirror`](./Characters_and_Bosses.md#context-stacymutant_mirror)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusEachTurnEndIfEnabledAtStartOfTurn` (1 instances)
+### Context: `StatusEachTurnEndIfEnabledAtStartOfTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnDie` (1 instances)
+### Context: `StatusOnDie`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RemoveAmbientLightEffects` | Number | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |
 | [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array | Applies or references the 'RemoveGlobalModifiers' effect/state. | 1 |
 
@@ -13284,15 +14920,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEndMove` (1 instances)
+### Context: `StatusOnEndMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`RemoveStatusStacks`](./Characters_and_Bosses.md#context-removestatusstacks) | Block | Logic: Removes stacks of a specific status effect. | 1 |
 | `SpeedUp_WithoutInitiative` | Number | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. | 1 |
 
@@ -13300,60 +14940,73 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEnemyConfused` (1 instances)
+### Context: `StatusOnEnemyConfused`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnGainCoins` (1 instances)
+### Context: `StatusOnGainCoins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`BackflipWhenTargeted`](./Characters_and_Bosses.md#context-backflipwhentargeted) | Block | Reaction: Character executes a backflip dodge when targeted by an attack. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOverlappingCharactersAndDie` (1 instances)
+### Context: `StatusOverlappingCharactersAndDie`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusWhenStatusCompletelyRemoved` (1 instances)
+### Context: `StatusWhenStatusCompletelyRemoved`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`UseAbility`](./Characters_and_Bosses.md#context-useability) | Block | Logic: Forces execution of an ability. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
@@ -13361,10 +15014,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Stop` (1 instances)
+### Context: `Stop`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13377,10 +15032,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StunImmunity` (1 instances)
+### Context: `StunImmunity`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -13390,10 +15047,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SuckMF` (1 instances)
+### Context: `SuckMF`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -13407,10 +15066,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SupportDieInsteadOfRun` (1 instances)
+### Context: `SupportDieInsteadOfRun`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13423,10 +15084,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SwimmingFormChange` (1 instances)
+### Context: `SwimmingFormChange`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13439,10 +15102,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SwitchMusic` (1 instances)
+### Context: `SwitchMusic`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FinalBossBecomeTheChild`](./Characters_and_Bosses.md#context-finalbossbecomethechild)
 
@@ -13455,10 +15120,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SwordAndShield` (1 instances)
+### Context: `SwordAndShield`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13472,10 +15139,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SwordAndShield_Primed` (1 instances)
+### Context: `SwordAndShield_Primed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13490,10 +15159,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SyncFormsWithBuddy` (1 instances)
+### Context: `SyncFormsWithBuddy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13505,10 +15176,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `T3HitlerSpawningPhase` (1 instances)
+### Context: `T3HitlerSpawningPhase`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13522,10 +15195,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TF_TargetAllies` (1 instances)
+### Context: `TF_TargetAllies`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -13538,10 +15213,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TF_TargetEnemies` (1 instances)
+### Context: `TF_TargetEnemies`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -13554,15 +15231,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TVBotScreen` (1 instances)
+### Context: `TVBotScreen`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Die` | Number | Character Form / Logic: Forces the character to die. | 1 |
 | `Dumb` | Number | AI Profile: A simplified, less optimal decision-making profile. | 1 |
 | `Fuck` | Number | Applies or references the 'Fuck' effect/state. | 1 |
@@ -13574,10 +15254,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Tar` (1 instances)
+### Context: `Tar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13591,10 +15273,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TarFull` (1 instances)
+### Context: `TarFull`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13609,10 +15293,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Terminator2Run` (1 instances)
+### Context: `Terminator2Run`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13625,10 +15311,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TerminatorChase` (1 instances)
+### Context: `TerminatorChase`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13641,10 +15329,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TerminatorSkin` (1 instances)
+### Context: `TerminatorSkin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13657,10 +15347,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Throb` (1 instances)
+### Context: `Throb`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13672,10 +15364,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ThrobBubs` (1 instances)
+### Context: `ThrobBubs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13688,10 +15382,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ThrobHost` (1 instances)
+### Context: `ThrobHost`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13705,10 +15401,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ThrobNettle` (1 instances)
+### Context: `ThrobNettle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13721,10 +15419,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformOnStatusThreshold` (1 instances)
+### Context: `TransformOnStatusThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13738,10 +15438,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Transformed` (1 instances)
+### Context: `Transformed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13754,10 +15456,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TwisterFling` (1 instances)
+### Context: `TwisterFling`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13771,10 +15475,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TwoEyes` (1 instances)
+### Context: `TwoEyes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13786,10 +15492,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Unflip` (1 instances)
+### Context: `Unflip`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`virtual_abilities`](./Characters_and_Bosses.md#context-virtual_abilities)
 
@@ -13803,10 +15511,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `UnlimitedDeathRattleRevive` (1 instances)
+### Context: `UnlimitedDeathRattleRevive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13819,10 +15529,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Unlit` (1 instances)
+### Context: `Unlit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13835,10 +15547,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Unwashed` (1 instances)
+### Context: `Unwashed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13851,10 +15565,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `UseAbility` (1 instances)
+### Context: `UseAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusWhenStatusCompletelyRemoved`](./Characters_and_Bosses.md#context-statuswhenstatuscompletelyremoved)
 
@@ -13867,10 +15583,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `UseAbilityWhenOutOfStatus` (1 instances)
+### Context: `UseAbilityWhenOutOfStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
 
@@ -13883,10 +15601,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Washed` (1 instances)
+### Context: `Washed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13899,10 +15619,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Washer` (1 instances)
+### Context: `Washer`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13919,10 +15641,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Water` (1 instances)
+### Context: `Water`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13935,10 +15659,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `WereMan` (1 instances)
+### Context: `WereMan`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13955,10 +15681,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Zealot` (1 instances)
+### Context: `Zealot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13975,10 +15703,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ZealotBomb` (1 instances)
+### Context: `ZealotBomb`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
 
@@ -13995,25 +15725,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `additional_statuses` (1 instances)
+### Context: `additional_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `PermanentMadness` | Number | Applies or references the 'PermanentMadness' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ai_if_spawned_as_enemy` (1 instances)
+### Context: `ai_if_spawned_as_enemy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
@@ -14028,25 +15763,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage_instance` (1 instances)
+### Context: `damage_instance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`effects`](./Characters_and_Bosses.md#context-effects) | Block | Non-damaging impact triggers. | 1 |
 
 </details>
 
 ---
 
-### Context: `eat_damage` (1 instances)
+### Context: `eat_damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`MotherGrowController`](./Characters_and_Bosses.md#context-mothergrowcontroller)
 
@@ -14063,10 +15803,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit_animations` (1 instances)
+### Context: `exit_animations`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Grappling`](./Characters_and_Bosses.md#context-grappling)
 
@@ -14078,10 +15820,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `other_form_change_abilities` (1 instances)
+### Context: `other_form_change_abilities`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FinalBossSyncAnimations`](./Characters_and_Bosses.md#context-finalbosssyncanimations)
 
@@ -14095,10 +15839,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `round_start_bonusturn_pattern` (1 instances)
+### Context: `round_start_bonusturn_pattern`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
 
@@ -14115,10 +15861,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following contexts are numeric keys or array indices.
 
 
-### Context: `1` (2 instances)
+### Context: `1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14132,10 +15880,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `2` (2 instances)
+### Context: `2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14150,10 +15900,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `3` (2 instances)
+### Context: `3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14168,10 +15920,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `0` (1 instances)
+### Context: `0`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14181,10 +15935,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `4` (1 instances)
+### Context: `4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14198,10 +15954,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `5` (1 instances)
+### Context: `5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14215,10 +15973,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Combat Rewards
 
-### Context: `boss` (12 instances)
+### Context: `boss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
@@ -14233,10 +15993,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `hard` (12 instances)
+### Context: `hard`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
@@ -14251,10 +16013,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `miniboss` (12 instances)
+### Context: `miniboss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
@@ -14269,10 +16033,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `normal` (12 instances)
+### Context: `normal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`1`](./Combat_Rewards.md#context-1), [`2`](./Combat_Rewards.md#context-2), [`3`](./Combat_Rewards.md#context-3), [`4`](./Combat_Rewards.md#context-4)
 
@@ -14292,10 +16058,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following contexts are numeric keys or array indices.
 
 
-### Context: `1` (4 instances)
+### Context: `1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14311,10 +16079,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `2` (4 instances)
+### Context: `2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14330,10 +16100,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `3` (4 instances)
+### Context: `3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14349,10 +16121,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `4` (3 instances)
+### Context: `4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14369,13 +16143,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Custom Cats
 
-### Context: `ROOT` (211 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 211
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `texture` | Number |  | 211 |
 | `default_frame` | Number |  | 210 |
 | `palette` | Number |  | 210 |
@@ -14404,10 +16181,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `arm1` (2 instances)
+### Context: `arm1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14418,10 +16197,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `arm2` (2 instances)
+### Context: `arm2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -14434,13 +16215,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Damage Text Styles
 
-### Context: `ROOT` (26 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 26
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`color`](./Arrays.md#array-color) | Array |  | 26 |
 | [`right_icon`](./Enums.md#enum-right_icon) | String |  | 10 |
 | [`back_icon`](./Enums.md#enum-back_icon) | String |  | 8 |
@@ -14454,13 +16238,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Difficulties
 
-### Context: `ROOT` (8 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 8
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `bonus_itemroll_luck` | Number |  | 8 |
 | `boss_health_multiplier` | Number |  | 8 |
 | `coins_multiplier` | Number |  | 8 |
@@ -14475,10 +16262,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `easy` (8 instances)
+### Context: `easy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`ROOT`](./Difficulties.md#context-root)
 
@@ -14495,10 +16284,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `hard` (8 instances)
+### Context: `hard`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`ROOT`](./Difficulties.md#context-root)
 
@@ -14517,13 +16308,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Elite Buffs
 
-### Context: `ROOT` (54 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 54
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `icon_frame` | Number |  | 54 |
 | [`passives`](./Elite_Buffs.md#context-passives) | Block |  | 54 |
 | `value` | Number |  | 54 |
@@ -14539,15 +16333,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passives` (54 instances)
+### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 54
 
 > **Referenced by:** [`ROOT`](./Elite_Buffs.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`EliteTint`](./Arrays.md#array-elitetint) | Array |  | 30 |
 | [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum |  | 19 |
 | [`HealthMultiplier`](./Enums.md#enum-healthmultiplier) | Enum |  | 15 |
@@ -14598,30 +16396,40 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachRoundBegin` (8 instances)
+### Context: `StatusEachRoundBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `NonStackingShield` | Number |  | 8 |
 
 </details>
 
 ---
 
-### Context: `effects` (5 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage), [`RevengeDamage`](./Elite_Buffs.md#context-revengedamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Tarred` | Number |  | 2 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum |  | 2 |
 | `Burn` | Number |  | 1 |
@@ -14630,10 +16438,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DepressionAura` (4 instances)
+### Context: `DepressionAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -14647,15 +16457,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeleeRevengeDamage` (3 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `knockback` | Number |  | 2 |
 | [`effects`](./Elite_Buffs.md#context-effects) | Block |  | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
@@ -14664,10 +16478,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToRevive` (2 instances)
+### Context: `ChanceToRevive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -14681,10 +16497,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageNeighborsAfterMove` (2 instances)
+### Context: `DamageNeighborsAfterMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -14699,10 +16517,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (2 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -14714,10 +16534,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStart` (2 instances)
+### Context: `SpawnOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -14730,55 +16552,69 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEnd` (2 instances)
+### Context: `StatusEachTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `NonStackingDivineShield` | Number |  | 2 |
 
 </details>
 
 ---
 
-### Context: `statuses` (2 instances)
+### Context: `statuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ChanceToRevive`](./Elite_Buffs.md#context-chancetorevive)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Zombie` | Number |  | 2 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToBasicAttack` (1 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Poison` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `ReflectProjectiles` (1 instances)
+### Context: `ReflectProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
@@ -14790,45 +16626,56 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachRoundEnd` (1 instances)
+### Context: `StatusEachRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AddRandomEliteBuff` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnDie` (1 instances)
+### Context: `StatusOnDie`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `StackingSandstorm` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEnemyCastSpell` (1 instances)
+### Context: `StatusOnEnemyCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number |  | 1 |
 | `HealthGain` | Number |  | 1 |
 
@@ -14836,15 +16683,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnKill` (1 instances)
+### Context: `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `AllStatsUp` | Number |  | 1 |
 | `HealthGain` | Number |  | 1 |
 
@@ -14854,13 +16706,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Enemy AI
 
-### Context: `ROOT` (55 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 55
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `distance_to_ally` | Number |  | 55 |
 | `distance_to_character` | Number |  | 55 |
 | `distance_to_enemy` | Number |  | 55 |
@@ -14922,13 +16777,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Event Reward Samples
 
-### Context: `ROOT` (3 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 3
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Fights` | Number |  | 3 |
 | `Poison` | Number |  | 3 |
 | `count` | Number |  | 3 |
@@ -14970,10 +16828,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `requirements` (2 instances)
+### Context: `requirements`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`conditional_reward`](./Miscellaneous.md#context-conditional_reward)
 
@@ -14992,10 +16852,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reward` (2 instances)
+### Context: `reward`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`conditional_reward`](./Miscellaneous.md#context-conditional_reward)
 
@@ -15011,15 +16873,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CharacterTypeGainsStatusAtBattleStart` (1 instances)
+### Context: `CharacterTypeGainsStatusAtBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Fear` | Number |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
@@ -15027,10 +16893,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `common` (1 instances)
+### Context: `common`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
@@ -15043,10 +16911,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `conditional_reward` (1 instances)
+### Context: `conditional_reward`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
@@ -15059,10 +16929,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `else` (1 instances)
+### Context: `else`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
@@ -15076,10 +16948,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mutation` (1 instances)
+### Context: `mutation`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
@@ -15091,10 +16965,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `rare` (1 instances)
+### Context: `rare`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
 
@@ -15109,13 +16985,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Events & Encounters
 
-### Context: `ROOT` (214 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 214
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`intro`](./Events_and_Encounters.md#context-intro) | Block | Event Node: The initial text block when a story event first loads. | 214 |
 | [`main`](./Events_and_Encounters.md#context-main) | Block | Event Node: The central hub or recurring menu of a story event. | 214 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
@@ -15153,10 +17032,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reward` (757 instances)
+### Context: `reward`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 757
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`bad`](./Events_and_Encounters.md#context-bad), [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward), [`good`](./Events_and_Encounters.md#context-good)
 
@@ -15191,10 +17072,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `common` (633 instances)
+### Context: `common`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 633
 
 > **Referenced by:** [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -15261,10 +17144,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `rare` (633 instances)
+### Context: `rare`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 633
 
 > **Referenced by:** [`attack`](./Events_and_Encounters.md#context-attack), [`good`](./Events_and_Encounters.md#context-good), [`loot`](./Events_and_Encounters.md#context-loot), [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options), [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -15351,10 +17236,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `good` (550 instances)
+### Context: `good`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 550
 
 > **Referenced by:** [`10coins`](./Events_and_Encounters.md#context-10coins), [`5coins`](./Events_and_Encounters.md#context-5coins), [`ROOT`](./Events_and_Encounters.md#context-root), [`a`](./Events_and_Encounters.md#context-a), [`activate_p`](./Events_and_Encounters.md#context-activate_p), [`activate_z`](./Events_and_Encounters.md#context-activate_z), [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice), [`arm`](./Events_and_Encounters.md#context-arm), [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#context-attach_leech), [`attack`](./Events_and_Encounters.md#context-attack), [`b`](./Events_and_Encounters.md#context-b), [`bash`](./Events_and_Encounters.md#context-bash), [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt), [`bite`](./Events_and_Encounters.md#context-bite), [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off), [`blue_needle`](./Events_and_Encounters.md#context-blue_needle), [`boogers`](./Events_and_Encounters.md#context-boogers), [`book`](./Events_and_Encounters.md#context-book), [`brace`](./Events_and_Encounters.md#context-brace), [`break_ice`](./Events_and_Encounters.md#context-break_ice), [`break_lock`](./Events_and_Encounters.md#context-break_lock), [`bribe`](./Events_and_Encounters.md#context-bribe), [`buy1`](./Events_and_Encounters.md#context-buy1), [`c`](./Events_and_Encounters.md#context-c), [`catch`](./Events_and_Encounters.md#context-catch), [`challenge_to_game`](./Events_and_Encounters.md#context-challenge_to_game), [`chaos_ending`](./Events_and_Encounters.md#context-chaos_ending), [`chapter_cutscene`](./Events_and_Encounters.md#context-chapter_cutscene), [`charm`](./Events_and_Encounters.md#context-charm), [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt), [`climb`](./Events_and_Encounters.md#context-climb), [`comfort`](./Events_and_Encounters.md#context-comfort), [`communicate`](./Events_and_Encounters.md#context-communicate), [`concheck`](./Events_and_Encounters.md#context-concheck), [`copy`](./Events_and_Encounters.md#context-copy), [`counter`](./Events_and_Encounters.md#context-counter), [`crack_open`](./Events_and_Encounters.md#context-crack_open), [`cross`](./Events_and_Encounters.md#context-cross), [`cut_wires`](./Events_and_Encounters.md#context-cut_wires), [`d`](./Events_and_Encounters.md#context-d), [`damage`](./Events_and_Encounters.md#context-damage), [`damage_1`](./Events_and_Encounters.md#context-damage_1), [`damage_full`](./Events_and_Encounters.md#context-damage_full), [`damage_half`](./Events_and_Encounters.md#context-damage_half), [`desert_cutscene`](./Events_and_Encounters.md#context-desert_cutscene), [`destroy`](./Events_and_Encounters.md#context-destroy), [`dexcheck`](./Events_and_Encounters.md#context-dexcheck), [`dig`](./Events_and_Encounters.md#context-dig), [`disarm`](./Events_and_Encounters.md#context-disarm), [`dive`](./Events_and_Encounters.md#context-dive), [`donate`](./Events_and_Encounters.md#context-donate), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`double`](./Events_and_Encounters.md#context-double), [`drink`](./Events_and_Encounters.md#context-drink), [`eat`](./Events_and_Encounters.md#context-eat), [`eat_meat`](./Events_and_Encounters.md#context-eat_meat), [`enter`](./Events_and_Encounters.md#context-enter), [`enter_crater`](./Events_and_Encounters.md#context-enter_crater), [`examine`](./Events_and_Encounters.md#context-examine), [`face`](./Events_and_Encounters.md#context-face), [`fiddle`](./Events_and_Encounters.md#context-fiddle), [`fight`](./Events_and_Encounters.md#context-fight), [`fill_jar`](./Events_and_Encounters.md#context-fill_jar), [`find`](./Events_and_Encounters.md#context-find), [`find_another_way`](./Events_and_Encounters.md#context-find_another_way), [`fire`](./Events_and_Encounters.md#context-fire), [`flush_yourself`](./Events_and_Encounters.md#context-flush_yourself), [`follow`](./Events_and_Encounters.md#context-follow), [`free`](./Events_and_Encounters.md#context-free), [`future`](./Events_and_Encounters.md#context-future), [`give_parasite`](./Events_and_Encounters.md#context-give_parasite), [`go_around`](./Events_and_Encounters.md#context-go_around), [`hack`](./Events_and_Encounters.md#context-hack), [`head`](./Events_and_Encounters.md#context-head), [`holy`](./Events_and_Encounters.md#context-holy), [`home`](./Events_and_Encounters.md#context-home), [`hp`](./Events_and_Encounters.md#context-hp), [`ice`](./Events_and_Encounters.md#context-ice), [`ignore`](./Events_and_Encounters.md#context-ignore), [`infinite`](./Events_and_Encounters.md#context-infinite), [`inspect`](./Events_and_Encounters.md#context-inspect), [`intcheck`](./Events_and_Encounters.md#context-intcheck), [`intimidation`](./Events_and_Encounters.md#context-intimidation), [`investigate`](./Events_and_Encounters.md#context-investigate), [`join`](./Events_and_Encounters.md#context-join), [`jump`](./Events_and_Encounters.md#context-jump), [`jump_over`](./Events_and_Encounters.md#context-jump_over), [`keep_going`](./Events_and_Encounters.md#context-keep_going), [`kiss`](./Events_and_Encounters.md#context-kiss), [`kiss_meat`](./Events_and_Encounters.md#context-kiss_meat), [`knife`](./Events_and_Encounters.md#context-knife), [`leave`](./Events_and_Encounters.md#context-leave), [`leave_it_in`](./Events_and_Encounters.md#context-leave_it_in), [`leg`](./Events_and_Encounters.md#context-leg), [`lever`](./Events_and_Encounters.md#context-lever), [`lick`](./Events_and_Encounters.md#context-lick), [`lick_alt`](./Events_and_Encounters.md#context-lick_alt), [`lightning`](./Events_and_Encounters.md#context-lightning), [`listen`](./Events_and_Encounters.md#context-listen), [`looks`](./Events_and_Encounters.md#context-looks), [`loot`](./Events_and_Encounters.md#context-loot), [`loot_heart`](./Events_and_Encounters.md#context-loot_heart), [`makeup`](./Events_and_Encounters.md#context-makeup), [`move_closer`](./Events_and_Encounters.md#context-move_closer), [`neck`](./Events_and_Encounters.md#context-neck), [`nothanks`](./Events_and_Encounters.md#context-nothanks), [`open`](./Events_and_Encounters.md#context-open), [`outsmart`](./Events_and_Encounters.md#context-outsmart), [`past`](./Events_and_Encounters.md#context-past), [`patch_up`](./Events_and_Encounters.md#context-patch_up), [`pick_lock`](./Events_and_Encounters.md#context-pick_lock), [`pilfer`](./Events_and_Encounters.md#context-pilfer), [`pirouette`](./Events_and_Encounters.md#context-pirouette), [`place_gristle`](./Events_and_Encounters.md#context-place_gristle), [`play`](./Events_and_Encounters.md#context-play), [`poop`](./Events_and_Encounters.md#context-poop), [`power`](./Events_and_Encounters.md#context-power), [`print`](./Events_and_Encounters.md#context-print), [`protection`](./Events_and_Encounters.md#context-protection), [`pull`](./Events_and_Encounters.md#context-pull), [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out), [`pull_lever`](./Events_and_Encounters.md#context-pull_lever), [`purify`](./Events_and_Encounters.md#context-purify), [`push_buttons`](./Events_and_Encounters.md#context-push_buttons), [`push_through`](./Events_and_Encounters.md#context-push_through), [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins), [`put_out_of_misery`](./Events_and_Encounters.md#context-put_out_of_misery), [`reach_inside`](./Events_and_Encounters.md#context-reach_inside), [`read`](./Events_and_Encounters.md#context-read), [`receive`](./Events_and_Encounters.md#context-receive), [`red`](./Events_and_Encounters.md#context-red), [`red_needle`](./Events_and_Encounters.md#context-red_needle), [`reflect`](./Events_and_Encounters.md#context-reflect), [`remove`](./Events_and_Encounters.md#context-remove), [`remove_the_nail`](./Events_and_Encounters.md#context-remove_the_nail), [`repair`](./Events_and_Encounters.md#context-repair), [`repair_quest`](./Events_and_Encounters.md#context-repair_quest), [`repell`](./Events_and_Encounters.md#context-repell), [`rest`](./Events_and_Encounters.md#context-rest), [`revive`](./Events_and_Encounters.md#context-revive), [`rub`](./Events_and_Encounters.md#context-rub), [`run`](./Events_and_Encounters.md#context-run), [`run_again`](./Events_and_Encounters.md#context-run_again), [`run_away`](./Events_and_Encounters.md#context-run_away), [`sacrifice`](./Events_and_Encounters.md#context-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#context-sacrifice_full_favor), [`sacrifice_normal`](./Events_and_Encounters.md#context-sacrifice_normal), [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor), [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest), [`scale`](./Events_and_Encounters.md#context-scale), [`scream`](./Events_and_Encounters.md#context-scream), [`shake`](./Events_and_Encounters.md#context-shake), [`slip_through`](./Events_and_Encounters.md#context-slip_through), [`smash`](./Events_and_Encounters.md#context-smash), [`sneak`](./Events_and_Encounters.md#context-sneak), [`sneak_by`](./Events_and_Encounters.md#context-sneak_by), [`sneak_past_alt`](./Events_and_Encounters.md#context-sneak_past_alt), [`speed`](./Events_and_Encounters.md#context-speed), [`surprise`](./Events_and_Encounters.md#context-surprise), [`sweet_talk`](./Events_and_Encounters.md#context-sweet_talk), [`swim`](./Events_and_Encounters.md#context-swim), [`tail`](./Events_and_Encounters.md#context-tail), [`take`](./Events_and_Encounters.md#context-take), [`take_blood`](./Events_and_Encounters.md#context-take_blood), [`talk`](./Events_and_Encounters.md#context-talk), [`talk_to`](./Events_and_Encounters.md#context-talk_to), [`tappytoes`](./Events_and_Encounters.md#context-tappytoes), [`teleport`](./Events_and_Encounters.md#context-teleport), [`thorns`](./Events_and_Encounters.md#context-thorns), [`throw`](./Events_and_Encounters.md#context-throw), [`timemachine`](./Events_and_Encounters.md#context-timemachine), [`touch`](./Events_and_Encounters.md#context-touch), [`traverse`](./Events_and_Encounters.md#context-traverse), [`turnon`](./Events_and_Encounters.md#context-turnon), [`upgrade_yourself`](./Events_and_Encounters.md#context-upgrade_yourself), [`use_item`](./Events_and_Encounters.md#context-use_item), [`use_toilet_con`](./Events_and_Encounters.md#context-use_toilet_con), [`use_toilet_str`](./Events_and_Encounters.md#context-use_toilet_str), [`use_weapon`](./Events_and_Encounters.md#context-use_weapon), [`w1`](./Events_and_Encounters.md#context-w1), [`w2`](./Events_and_Encounters.md#context-w2), [`w3`](./Events_and_Encounters.md#context-w3), [`w4`](./Events_and_Encounters.md#context-w4), [`w5`](./Events_and_Encounters.md#context-w5), [`w6`](./Events_and_Encounters.md#context-w6), [`wealth`](./Events_and_Encounters.md#context-wealth), [`wish_genes`](./Events_and_Encounters.md#context-wish_genes), [`wish_items`](./Events_and_Encounters.md#context-wish_items), [`wish_levelups`](./Events_and_Encounters.md#context-wish_levelups), [`wish_strength`](./Events_and_Encounters.md#context-wish_strength), [`withstand`](./Events_and_Encounters.md#context-withstand), [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out), [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle)
 
@@ -15423,10 +17310,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bad` (336 instances)
+### Context: `bad`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 336
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`arm`](./Events_and_Encounters.md#context-arm), [`attack`](./Events_and_Encounters.md#context-attack), [`bash`](./Events_and_Encounters.md#context-bash), [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt), [`bite`](./Events_and_Encounters.md#context-bite), [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off), [`blue_needle`](./Events_and_Encounters.md#context-blue_needle), [`body`](./Events_and_Encounters.md#context-body), [`break_ice`](./Events_and_Encounters.md#context-break_ice), [`break_lock`](./Events_and_Encounters.md#context-break_lock), [`bribe`](./Events_and_Encounters.md#context-bribe), [`catch`](./Events_and_Encounters.md#context-catch), [`challenge_to_game`](./Events_and_Encounters.md#context-challenge_to_game), [`charm`](./Events_and_Encounters.md#context-charm), [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt), [`climb`](./Events_and_Encounters.md#context-climb), [`comfort`](./Events_and_Encounters.md#context-comfort), [`communicate`](./Events_and_Encounters.md#context-communicate), [`concheck`](./Events_and_Encounters.md#context-concheck), [`crack_open`](./Events_and_Encounters.md#context-crack_open), [`cross`](./Events_and_Encounters.md#context-cross), [`cut_wires`](./Events_and_Encounters.md#context-cut_wires), [`damage_1`](./Events_and_Encounters.md#context-damage_1), [`damage_full`](./Events_and_Encounters.md#context-damage_full), [`damage_half`](./Events_and_Encounters.md#context-damage_half), [`destroy`](./Events_and_Encounters.md#context-destroy), [`dexcheck`](./Events_and_Encounters.md#context-dexcheck), [`dig`](./Events_and_Encounters.md#context-dig), [`disarm`](./Events_and_Encounters.md#context-disarm), [`dive`](./Events_and_Encounters.md#context-dive), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`drink`](./Events_and_Encounters.md#context-drink), [`eat`](./Events_and_Encounters.md#context-eat), [`eat_meat`](./Events_and_Encounters.md#context-eat_meat), [`enter`](./Events_and_Encounters.md#context-enter), [`enter_crater`](./Events_and_Encounters.md#context-enter_crater), [`examine`](./Events_and_Encounters.md#context-examine), [`fight`](./Events_and_Encounters.md#context-fight), [`find_another_way`](./Events_and_Encounters.md#context-find_another_way), [`follow`](./Events_and_Encounters.md#context-follow), [`free`](./Events_and_Encounters.md#context-free), [`give_parasite`](./Events_and_Encounters.md#context-give_parasite), [`go_around`](./Events_and_Encounters.md#context-go_around), [`hack`](./Events_and_Encounters.md#context-hack), [`ignore`](./Events_and_Encounters.md#context-ignore), [`inspect`](./Events_and_Encounters.md#context-inspect), [`intcheck`](./Events_and_Encounters.md#context-intcheck), [`investigate`](./Events_and_Encounters.md#context-investigate), [`itchies`](./Events_and_Encounters.md#context-itchies), [`join`](./Events_and_Encounters.md#context-join), [`jump`](./Events_and_Encounters.md#context-jump), [`jump_over`](./Events_and_Encounters.md#context-jump_over), [`keep_going`](./Events_and_Encounters.md#context-keep_going), [`kiss`](./Events_and_Encounters.md#context-kiss), [`kiss_meat`](./Events_and_Encounters.md#context-kiss_meat), [`leave`](./Events_and_Encounters.md#context-leave), [`leave_it_in`](./Events_and_Encounters.md#context-leave_it_in), [`leg`](./Events_and_Encounters.md#context-leg), [`lever`](./Events_and_Encounters.md#context-lever), [`lick`](./Events_and_Encounters.md#context-lick), [`lick_alt`](./Events_and_Encounters.md#context-lick_alt), [`listen`](./Events_and_Encounters.md#context-listen), [`loot`](./Events_and_Encounters.md#context-loot), [`main`](./Events_and_Encounters.md#context-main), [`mind`](./Events_and_Encounters.md#context-mind), [`move_closer`](./Events_and_Encounters.md#context-move_closer), [`open`](./Events_and_Encounters.md#context-open), [`options`](./Events_and_Encounters.md#context-options), [`patch_up`](./Events_and_Encounters.md#context-patch_up), [`pick_lock`](./Events_and_Encounters.md#context-pick_lock), [`pilfer`](./Events_and_Encounters.md#context-pilfer), [`play`](./Events_and_Encounters.md#context-play), [`pull`](./Events_and_Encounters.md#context-pull), [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out), [`pull_lever`](./Events_and_Encounters.md#context-pull_lever), [`purify`](./Events_and_Encounters.md#context-purify), [`push_buttons`](./Events_and_Encounters.md#context-push_buttons), [`push_through`](./Events_and_Encounters.md#context-push_through), [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins), [`put_out_of_misery`](./Events_and_Encounters.md#context-put_out_of_misery), [`read`](./Events_and_Encounters.md#context-read), [`red`](./Events_and_Encounters.md#context-red), [`red_needle`](./Events_and_Encounters.md#context-red_needle), [`remove`](./Events_and_Encounters.md#context-remove), [`remove_the_nail`](./Events_and_Encounters.md#context-remove_the_nail), [`repair`](./Events_and_Encounters.md#context-repair), [`repell`](./Events_and_Encounters.md#context-repell), [`rest`](./Events_and_Encounters.md#context-rest), [`revive`](./Events_and_Encounters.md#context-revive), [`rub`](./Events_and_Encounters.md#context-rub), [`run`](./Events_and_Encounters.md#context-run), [`run_again`](./Events_and_Encounters.md#context-run_again), [`run_away`](./Events_and_Encounters.md#context-run_away), [`sacrifice`](./Events_and_Encounters.md#context-sacrifice), [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor), [`shake`](./Events_and_Encounters.md#context-shake), [`skip`](./Events_and_Encounters.md#context-skip), [`slip_through`](./Events_and_Encounters.md#context-slip_through), [`smash`](./Events_and_Encounters.md#context-smash), [`sneak`](./Events_and_Encounters.md#context-sneak), [`sneak_by`](./Events_and_Encounters.md#context-sneak_by), [`sneak_past_alt`](./Events_and_Encounters.md#context-sneak_past_alt), [`soul`](./Events_and_Encounters.md#context-soul), [`sweet_talk`](./Events_and_Encounters.md#context-sweet_talk), [`swim`](./Events_and_Encounters.md#context-swim), [`tail`](./Events_and_Encounters.md#context-tail), [`take`](./Events_and_Encounters.md#context-take), [`talk`](./Events_and_Encounters.md#context-talk), [`talk_to`](./Events_and_Encounters.md#context-talk_to), [`teleport`](./Events_and_Encounters.md#context-teleport), [`throw`](./Events_and_Encounters.md#context-throw), [`touch`](./Events_and_Encounters.md#context-touch), [`turnon`](./Events_and_Encounters.md#context-turnon), [`upgrade_yourself`](./Events_and_Encounters.md#context-upgrade_yourself), [`use_item`](./Events_and_Encounters.md#context-use_item), [`use_toilet_con`](./Events_and_Encounters.md#context-use_toilet_con), [`use_toilet_str`](./Events_and_Encounters.md#context-use_toilet_str), [`use_weapon`](./Events_and_Encounters.md#context-use_weapon), [`wheezies`](./Events_and_Encounters.md#context-wheezies), [`withstand`](./Events_and_Encounters.md#context-withstand), [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out), [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle)
 
@@ -15459,10 +17348,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `intro` (214 instances)
+### Context: `intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 214
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root)
 
@@ -15487,10 +17378,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `main` (214 instances)
+### Context: `main`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 214
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root)
 
@@ -15523,10 +17416,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `options` (210 instances)
+### Context: `options`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 210
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main)
 
@@ -15748,10 +17643,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `requirements` (203 instances)
+### Context: `requirements`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 203
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`activate_p`](./Events_and_Encounters.md#context-activate_p), [`activate_z`](./Events_and_Encounters.md#context-activate_z), [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#context-attach_leech), [`bash`](./Events_and_Encounters.md#context-bash), [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt), [`blue_needle`](./Events_and_Encounters.md#context-blue_needle), [`charm`](./Events_and_Encounters.md#context-charm), [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt), [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward), [`dig`](./Events_and_Encounters.md#context-dig), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`fiddle`](./Events_and_Encounters.md#context-fiddle), [`fight`](./Events_and_Encounters.md#context-fight), [`fill_jar`](./Events_and_Encounters.md#context-fill_jar), [`flush_yourself`](./Events_and_Encounters.md#context-flush_yourself), [`future`](./Events_and_Encounters.md#context-future), [`give_parasite`](./Events_and_Encounters.md#context-give_parasite), [`ignore`](./Events_and_Encounters.md#context-ignore), [`infinite`](./Events_and_Encounters.md#context-infinite), [`lick`](./Events_and_Encounters.md#context-lick), [`lick_alt`](./Events_and_Encounters.md#context-lick_alt), [`loot`](./Events_and_Encounters.md#context-loot), [`loot_heart`](./Events_and_Encounters.md#context-loot_heart), [`past`](./Events_and_Encounters.md#context-past), [`place_gristle`](./Events_and_Encounters.md#context-place_gristle), [`receive`](./Events_and_Encounters.md#context-receive), [`red_needle`](./Events_and_Encounters.md#context-red_needle), [`repair`](./Events_and_Encounters.md#context-repair), [`repair_quest`](./Events_and_Encounters.md#context-repair_quest), [`run`](./Events_and_Encounters.md#context-run), [`run_again`](./Events_and_Encounters.md#context-run_again), [`sacrifice`](./Events_and_Encounters.md#context-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#context-sacrifice_full_favor), [`sacrifice_normal`](./Events_and_Encounters.md#context-sacrifice_normal), [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor), [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest), [`sneak`](./Events_and_Encounters.md#context-sneak), [`sneak_past_alt`](./Events_and_Encounters.md#context-sneak_past_alt), [`take_blood`](./Events_and_Encounters.md#context-take_blood), [`use_weapon`](./Events_and_Encounters.md#context-use_weapon), [`wish_genes`](./Events_and_Encounters.md#context-wish_genes), [`wish_items`](./Events_and_Encounters.md#context-wish_items), [`wish_levelups`](./Events_and_Encounters.md#context-wish_levelups), [`wish_strength`](./Events_and_Encounters.md#context-wish_strength), [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle)
 
@@ -15776,15 +17673,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `self_status_next_fight` (141 instances)
+### Context: `self_status_next_fight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 141
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`bad`](./Events_and_Encounters.md#context-bad), [`buy1`](./Events_and_Encounters.md#context-buy1), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 29 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 28 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 20 |
@@ -15829,10 +17731,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `permanent_stats` (126 instances)
+### Context: `permanent_stats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 126
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -15851,10 +17755,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `conditional_reward` (124 instances)
+### Context: `conditional_reward`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 124
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`setup`](./Events_and_Encounters.md#context-setup)
 
@@ -15869,10 +17775,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ignore` (57 instances)
+### Context: `ignore`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 57
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
 
@@ -15890,10 +17798,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `examine` (43 instances)
+### Context: `examine`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 43
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -15911,10 +17821,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `get_item_from_pool` (40 instances)
+### Context: `get_item_from_pool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 40
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -15926,10 +17838,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `spawn_unit_next_fight` (40 instances)
+### Context: `spawn_unit_next_fight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 40
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -15944,10 +17858,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `else` (37 instances)
+### Context: `else`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 37
 
 > **Referenced by:** [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward)
 
@@ -15973,10 +17889,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `leave` (30 instances)
+### Context: `leave`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 30
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options)
 
@@ -15992,10 +17910,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `loot` (25 instances)
+### Context: `loot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 25
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16013,10 +17933,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mutation` (24 instances)
+### Context: `mutation`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 24
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`spawn_reflection_next_fight`](./Events_and_Encounters.md#context-spawn_reflection_next_fight)
 
@@ -16042,10 +17964,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `eat` (23 instances)
+### Context: `eat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 23
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16060,15 +17984,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `party_status_next_fight` (23 instances)
+### Context: `party_status_next_fight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 23
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 6 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 5 |
 | [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | Applies or references the 'AbilityOnBattleStart_Immediate' effect/state. | 3 |
@@ -16085,10 +18014,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `setup` (23 instances)
+### Context: `setup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 23
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main)
 
@@ -16101,10 +18032,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `random_mutation_from_set` (21 instances)
+### Context: `random_mutation_from_set`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 21
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -16129,10 +18062,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `smash` (15 instances)
+### Context: `smash`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 15
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16148,10 +18083,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `destroy` (14 instances)
+### Context: `destroy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16166,10 +18103,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bash` (12 instances)
+### Context: `bash`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16185,10 +18124,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sneak` (11 instances)
+### Context: `sneak`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16204,15 +18145,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `global_effect_next_fight` (10 instances)
+### Context: `global_effect_next_fight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Fights` | Number | Applies or references the 'Fights' effect/state. | 6 |
 | [`CharacterTypeGainsStatusAtBattleStart`](./Events_and_Encounters.md#context-charactertypegainsstatusatbattlestart) | Block | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 5 |
 | [`StatusRandomEnemiesOnBattleStart`](./Events_and_Encounters.md#context-statusrandomenemiesonbattlestart) | Block | Encounter Modifier: Applies a status effect to a random number of enemies at the start of battle. | 3 |
@@ -16222,10 +18168,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `open` (8 instances)
+### Context: `open`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16241,10 +18189,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `take` (8 instances)
+### Context: `take`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16260,10 +18210,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `a` (7 instances)
+### Context: `a`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16278,10 +18230,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `attack` (7 instances)
+### Context: `attack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16297,10 +18251,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `b` (7 instances)
+### Context: `b`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16315,10 +18271,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `c` (7 instances)
+### Context: `c`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16333,10 +18291,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `charm` (7 instances)
+### Context: `charm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16352,10 +18312,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `fight` (7 instances)
+### Context: `fight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16371,10 +18333,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `leave_party_temporarily` (7 instances)
+### Context: `leave_party_temporarily`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -16388,10 +18352,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `touch` (7 instances)
+### Context: `touch`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16407,10 +18373,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `activate_p` (6 instances)
+### Context: `activate_p`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16426,10 +18394,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `activate_z` (6 instances)
+### Context: `activate_z`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16445,10 +18415,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `d` (6 instances)
+### Context: `d`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16463,10 +18435,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `enter` (6 instances)
+### Context: `enter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16483,10 +18457,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `inspect` (6 instances)
+### Context: `inspect`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16501,10 +18477,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `lick` (6 instances)
+### Context: `lick`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16521,15 +18499,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CharacterTypeGainsStatusAtBattleStart` (5 instances)
+### Context: `CharacterTypeGainsStatusAtBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 5 |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 2 |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 |
@@ -16539,10 +18521,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `drink` (5 instances)
+### Context: `drink`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16557,10 +18541,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `kiss` (5 instances)
+### Context: `kiss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16575,10 +18561,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `run` (5 instances)
+### Context: `run`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16595,10 +18583,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bite` (4 instances)
+### Context: `bite`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16614,10 +18604,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage` (4 instances)
+### Context: `damage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16632,10 +18624,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `go_around` (4 instances)
+### Context: `go_around`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16651,10 +18645,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `home` (4 instances)
+### Context: `home`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16670,10 +18666,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `outcome` (4 instances)
+### Context: `outcome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main)
 
@@ -16688,10 +18686,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `party_permanent_stats_exclude_self` (4 instances)
+### Context: `party_permanent_stats_exclude_self`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -16709,10 +18709,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `past` (4 instances)
+### Context: `past`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16729,10 +18731,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `skip` (4 instances)
+### Context: `skip`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16747,15 +18751,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusRandomEnemiesOnBattleStart` (3 instances)
+### Context: `StatusRandomEnemiesOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `count` | Number | Quantity. | 3 |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 2 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
@@ -16764,10 +18772,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `cutscene` (3 instances)
+### Context: `cutscene`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad)
 
@@ -16780,10 +18790,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `investigate` (3 instances)
+### Context: `investigate`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16798,10 +18810,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `next_event_from_set` (3 instances)
+### Context: `next_event_from_set`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good)
 
@@ -16815,10 +18829,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `repell` (3 instances)
+### Context: `repell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16833,10 +18849,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KillEnemyOfTypeAtBattleStart` (2 instances)
+### Context: `KillEnemyOfTypeAtBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
 
@@ -16849,10 +18867,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `attach_antenna` (2 instances)
+### Context: `attach_antenna`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16868,10 +18888,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `boogers` (2 instances)
+### Context: `boogers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16886,10 +18908,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `copy` (2 instances)
+### Context: `copy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16902,10 +18926,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `find_another_way` (2 instances)
+### Context: `find_another_way`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16921,10 +18947,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `move_closer` (2 instances)
+### Context: `move_closer`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16939,10 +18967,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `party_permanent_stats` (2 instances)
+### Context: `party_permanent_stats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -16954,10 +18984,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `party_random_mutation_from_set` (2 instances)
+### Context: `party_random_mutation_from_set`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -16973,10 +19005,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `play` (2 instances)
+### Context: `play`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -16991,10 +19025,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `poop` (2 instances)
+### Context: `poop`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17009,10 +19045,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `print` (2 instances)
+### Context: `print`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17025,10 +19063,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `protection` (2 instances)
+### Context: `protection`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17043,10 +19083,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `repair` (2 instances)
+### Context: `repair`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17062,10 +19104,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sacrifice` (2 instances)
+### Context: `sacrifice`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17082,10 +19126,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `scale` (2 instances)
+### Context: `scale`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17098,10 +19144,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `turnon` (2 instances)
+### Context: `turnon`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17116,10 +19164,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `10coins` (1 instances)
+### Context: `10coins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root)
 
@@ -17141,10 +19191,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `5coins` (1 instances)
+### Context: `5coins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17166,10 +19218,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `altar_sacrifice` (1 instances)
+### Context: `altar_sacrifice`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17183,10 +19237,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `arm` (1 instances)
+### Context: `arm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17201,10 +19257,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `attach_amplifier` (1 instances)
+### Context: `attach_amplifier`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17220,10 +19278,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `attach_leech` (1 instances)
+### Context: `attach_leech`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17239,10 +19299,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bash_past_alt` (1 instances)
+### Context: `bash_past_alt`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17258,10 +19320,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bite_it_off` (1 instances)
+### Context: `bite_it_off`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17276,10 +19340,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `blue` (1 instances)
+### Context: `blue`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17295,10 +19361,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `blue_needle` (1 instances)
+### Context: `blue_needle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17314,10 +19382,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `body` (1 instances)
+### Context: `body`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17331,10 +19401,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `book` (1 instances)
+### Context: `book`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17349,10 +19421,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `brace` (1 instances)
+### Context: `brace`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17367,10 +19441,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `break_ice` (1 instances)
+### Context: `break_ice`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17384,10 +19460,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `break_lock` (1 instances)
+### Context: `break_lock`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17402,10 +19480,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bribe` (1 instances)
+### Context: `bribe`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17420,10 +19500,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `button` (1 instances)
+### Context: `button`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17439,10 +19521,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `buy1` (1 instances)
+### Context: `buy1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17463,10 +19547,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `catch` (1 instances)
+### Context: `catch`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17481,10 +19567,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `challenge_to_game` (1 instances)
+### Context: `challenge_to_game`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17499,10 +19587,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `chaos_ending` (1 instances)
+### Context: `chaos_ending`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17516,10 +19606,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `chapter_cutscene` (1 instances)
+### Context: `chapter_cutscene`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17533,10 +19625,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `charm_past_alt` (1 instances)
+### Context: `charm_past_alt`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17552,10 +19646,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `climb` (1 instances)
+### Context: `climb`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17570,10 +19666,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `comfort` (1 instances)
+### Context: `comfort`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17588,10 +19686,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `communicate` (1 instances)
+### Context: `communicate`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17606,10 +19706,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `concheck` (1 instances)
+### Context: `concheck`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17624,10 +19726,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `counter` (1 instances)
+### Context: `counter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17642,10 +19746,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `crack_open` (1 instances)
+### Context: `crack_open`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17660,10 +19766,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `cross` (1 instances)
+### Context: `cross`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17677,28 +19785,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `cut_wires` (1 instances)
+### Context: `cut_wires`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `damage_1` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17713,10 +19805,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage_full` (1 instances)
+### Context: `damage_1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17731,10 +19825,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage_half` (1 instances)
+### Context: `damage_full`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17749,10 +19845,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `desert_cutscene` (1 instances)
+### Context: `damage_half`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `desert_cutscene`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17766,10 +19884,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `dexcheck` (1 instances)
+### Context: `dexcheck`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17784,10 +19904,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `dig` (1 instances)
+### Context: `dig`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17803,10 +19925,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `disarm` (1 instances)
+### Context: `disarm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17821,10 +19945,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `dive` (1 instances)
+### Context: `dive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17839,10 +19965,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `donate` (1 instances)
+### Context: `donate`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17857,10 +19985,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `donate_10` (1 instances)
+### Context: `donate_10`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17880,10 +20010,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `donate_15` (1 instances)
+### Context: `donate_15`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17903,10 +20035,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `donate_20` (1 instances)
+### Context: `donate_20`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17926,10 +20060,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `donate_5` (1 instances)
+### Context: `donate_5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17949,10 +20085,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `double` (1 instances)
+### Context: `double`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17967,10 +20105,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `eat_meat` (1 instances)
+### Context: `eat_meat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -17985,10 +20125,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `enter_crater` (1 instances)
+### Context: `enter_crater`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18003,10 +20145,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `face` (1 instances)
+### Context: `face`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18019,10 +20163,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `fiddle` (1 instances)
+### Context: `fiddle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18037,10 +20183,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `fill_jar` (1 instances)
+### Context: `fill_jar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18056,10 +20204,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `find` (1 instances)
+### Context: `find`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18073,10 +20223,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `fire` (1 instances)
+### Context: `fire`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18091,10 +20243,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `flush_yourself` (1 instances)
+### Context: `flush_yourself`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18108,10 +20262,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `follow` (1 instances)
+### Context: `follow`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18126,10 +20282,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `free` (1 instances)
+### Context: `free`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18144,10 +20302,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `future` (1 instances)
+### Context: `future`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18164,10 +20324,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `gain_clone_familiar` (1 instances)
+### Context: `gain_clone_familiar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
@@ -18179,10 +20341,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `gain_familiar` (1 instances)
+### Context: `gain_familiar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -18193,10 +20357,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `give_parasite` (1 instances)
+### Context: `give_parasite`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18211,10 +20377,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `hack` (1 instances)
+### Context: `hack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18229,10 +20397,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `head` (1 instances)
+### Context: `head`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18245,28 +20415,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `holy` (1 instances)
+### Context: `holy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `hp` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18281,10 +20435,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ice` (1 instances)
+### Context: `hp`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18299,10 +20455,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `infinite` (1 instances)
+### Context: `ice`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `infinite`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18319,10 +20497,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `intcheck` (1 instances)
+### Context: `intcheck`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18337,10 +20517,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `intimidation` (1 instances)
+### Context: `intimidation`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18355,10 +20537,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `itchies` (1 instances)
+### Context: `itchies`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18373,10 +20557,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `join` (1 instances)
+### Context: `join`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18391,10 +20577,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jump` (1 instances)
+### Context: `jump`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18409,10 +20597,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jump_over` (1 instances)
+### Context: `jump_over`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18427,10 +20617,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `keep_going` (1 instances)
+### Context: `keep_going`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18444,10 +20636,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `kiss_meat` (1 instances)
+### Context: `kiss_meat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18462,10 +20656,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `knife` (1 instances)
+### Context: `knife`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18480,10 +20676,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `leave_it_in` (1 instances)
+### Context: `leave_it_in`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18499,10 +20697,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `leg` (1 instances)
+### Context: `leg`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18517,10 +20717,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `lever` (1 instances)
+### Context: `lever`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18537,10 +20739,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `lick_alt` (1 instances)
+### Context: `lick_alt`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18556,10 +20760,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `lightning` (1 instances)
+### Context: `lightning`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18574,10 +20780,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `listen` (1 instances)
+### Context: `listen`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18592,10 +20800,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `looks` (1 instances)
+### Context: `looks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18609,187 +20819,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `loot_heart` (1 instances)
+### Context: `loot_heart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `makeup` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `mind` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `neck` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-
-</details>
-
----
-
-### Context: `nothanks` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `outsmart` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `patch_up` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `pick_lock` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `pilfer` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `pirouette` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `place_gristle` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18805,10 +20840,209 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `power` (1 instances)
+### Context: `makeup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `mind`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `neck`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+
+</details>
+
+---
+
+### Context: `nothanks`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `outsmart`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `patch_up`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `pick_lock`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `pilfer`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `pirouette`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `place_gristle`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `power`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18822,10 +21056,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `pull` (1 instances)
+### Context: `pull`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18840,10 +21076,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `pull_it_out` (1 instances)
+### Context: `pull_it_out`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18858,10 +21096,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `pull_lever` (1 instances)
+### Context: `pull_lever`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18875,45 +21115,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `purify` (1 instances)
+### Context: `purify`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `push_buttons` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-
-</details>
-
----
-
-### Context: `push_through` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18928,10 +21135,51 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `put_in_coins` (1 instances)
+### Context: `push_buttons`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+
+</details>
+
+---
+
+### Context: `push_through`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `put_in_coins`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18950,10 +21198,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `put_out_of_misery` (1 instances)
+### Context: `put_out_of_misery`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -18968,10 +21218,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `random_chance` (1 instances)
+### Context: `random_chance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -18984,10 +21236,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `random_mutation` (1 instances)
+### Context: `random_mutation`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`else`](./Events_and_Encounters.md#context-else)
 
@@ -19001,10 +21255,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reach_inside` (1 instances)
+### Context: `reach_inside`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19018,10 +21274,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `read` (1 instances)
+### Context: `read`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19036,10 +21294,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `receive` (1 instances)
+### Context: `receive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19055,10 +21315,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `red` (1 instances)
+### Context: `red`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19075,10 +21337,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `red_needle` (1 instances)
+### Context: `red_needle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19094,10 +21358,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reflect` (1 instances)
+### Context: `reflect`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19112,10 +21378,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `remove` (1 instances)
+### Context: `remove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19130,10 +21398,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `remove_the_nail` (1 instances)
+### Context: `remove_the_nail`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19148,10 +21418,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `repair_quest` (1 instances)
+### Context: `repair_quest`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19166,10 +21438,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `rest` (1 instances)
+### Context: `rest`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19184,10 +21458,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `revive` (1 instances)
+### Context: `revive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19202,10 +21478,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `rub` (1 instances)
+### Context: `rub`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19220,10 +21498,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `run_again` (1 instances)
+### Context: `run_again`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19240,10 +21520,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `run_away` (1 instances)
+### Context: `run_away`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19258,55 +21540,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sacrifice_full_favor` (1 instances)
+### Context: `sacrifice_full_favor`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `sacrifice_normal` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
-| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Enum |  | 1 |
-
-</details>
-
----
-
-### Context: `sacrifice_partial_favor` (1 instances)
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -19316,10 +21561,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sacrifice_quest` (1 instances)
+### Context: `sacrifice_normal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19329,16 +21576,61 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `sacrifice_partial_favor`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#context-bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `scream` (1 instances)
+### Context: `sacrifice_quest`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
+| [`label`](./Enums.md#enum-label) | Enum |  | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Context: `scream`
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19352,10 +21644,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `shake` (1 instances)
+### Context: `shake`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19370,10 +21664,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `slip_through` (1 instances)
+### Context: `slip_through`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19388,10 +21684,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sneak_by` (1 instances)
+### Context: `sneak_by`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19406,10 +21704,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sneak_past_alt` (1 instances)
+### Context: `sneak_past_alt`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19425,10 +21725,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `soul` (1 instances)
+### Context: `soul`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19442,10 +21744,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `spawn_reflection_next_fight` (1 instances)
+### Context: `spawn_reflection_next_fight`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -19455,10 +21759,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `speed` (1 instances)
+### Context: `speed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19473,10 +21779,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `surprise` (1 instances)
+### Context: `surprise`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19491,10 +21799,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sweet_talk` (1 instances)
+### Context: `sweet_talk`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19509,10 +21819,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `swim` (1 instances)
+### Context: `swim`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19527,10 +21839,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tail` (1 instances)
+### Context: `tail`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19545,10 +21859,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `take_blood` (1 instances)
+### Context: `take_blood`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19564,10 +21880,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `talk` (1 instances)
+### Context: `talk`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19582,10 +21900,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `talk_to` (1 instances)
+### Context: `talk_to`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19600,10 +21920,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tappytoes` (1 instances)
+### Context: `tappytoes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19618,10 +21940,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `teleport` (1 instances)
+### Context: `teleport`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19636,10 +21960,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `thorns` (1 instances)
+### Context: `thorns`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19654,10 +21980,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `throw` (1 instances)
+### Context: `throw`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19672,10 +22000,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `timemachine` (1 instances)
+### Context: `timemachine`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19689,10 +22019,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `traverse` (1 instances)
+### Context: `traverse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19708,10 +22040,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_yourself` (1 instances)
+### Context: `upgrade_yourself`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19726,10 +22060,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `use_item` (1 instances)
+### Context: `use_item`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19744,10 +22080,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `use_toilet_con` (1 instances)
+### Context: `use_toilet_con`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19762,10 +22100,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `use_toilet_str` (1 instances)
+### Context: `use_toilet_str`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19780,10 +22120,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `use_weapon` (1 instances)
+### Context: `use_weapon`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19798,10 +22140,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `w1` (1 instances)
+### Context: `w1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19816,10 +22160,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `w2` (1 instances)
+### Context: `w2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19834,10 +22180,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `w3` (1 instances)
+### Context: `w3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19852,10 +22200,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `w4` (1 instances)
+### Context: `w4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19870,10 +22220,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `w5` (1 instances)
+### Context: `w5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19888,10 +22240,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `w6` (1 instances)
+### Context: `w6`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19906,10 +22260,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `wealth` (1 instances)
+### Context: `wealth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19923,10 +22279,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `wheezies` (1 instances)
+### Context: `wheezies`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19941,10 +22299,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `wish_genes` (1 instances)
+### Context: `wish_genes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19959,10 +22319,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `wish_items` (1 instances)
+### Context: `wish_items`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19977,10 +22339,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `wish_levelups` (1 instances)
+### Context: `wish_levelups`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -19995,10 +22359,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `wish_strength` (1 instances)
+### Context: `wish_strength`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -20013,10 +22379,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `withstand` (1 instances)
+### Context: `withstand`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -20031,10 +22399,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `yank_it_out` (1 instances)
+### Context: `yank_it_out`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -20049,10 +22419,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `yellow_needle` (1 instances)
+### Context: `yellow_needle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -20070,13 +22442,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Furniture & Metaprogression
 
-### Context: `ROOT` (634 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 634
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`desc`](./Enums.md#enum-desc) | String |  | 634 |
 | [`name`](./Enums.md#enum-name) | String |  | 634 |
 | `Comfort` | Number | Applies or references the 'Comfort' effect/state. | 406 |
@@ -20099,13 +22474,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## House & Environment
 
-### Context: `ROOT` (59 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 59
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`desc`](./Strings.md#string-desc) | String |  | 59 |
 | [`name`](./Strings.md#string-name) | String |  | 59 |
 | [`effects`](./House_and_Environment.md#context-effects) | Block |  | 58 |
@@ -20151,15 +22529,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (59 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 59
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root), [`SolarFlare`](./House_and_Environment.md#context-solarflare)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart) | Block |  | 28 |
 | [`FactionUprising`](./Enums.md#enum-factionuprising) | Enum |  | 4 |
 | `LowerAmbientLight` | Number |  | 4 |
@@ -20206,10 +22591,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnExtraThingsOnBattleStart` (28 instances)
+### Context: `SpawnExtraThingsOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 28
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -20224,10 +22611,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb_empty` (9 instances)
+### Context: `reverb_empty`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#context-floor1_large), [`Floor1_Small`](./House_and_Environment.md#context-floor1_small), [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20241,10 +22630,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb_full` (9 instances)
+### Context: `reverb_full`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#context-floor1_large), [`Floor1_Small`](./House_and_Environment.md#context-floor1_small), [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20257,15 +22648,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (3 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](./House_and_Environment.md#context-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](./House_and_Environment.md#context-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#context-statuscharactersonroundstart)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`AllyInfested`](./House_and_Environment.md#context-allyinfested) | Block |  | 1 |
 | [`Fear`](./Arrays.md#array-fear) | Array |  | 1 |
 | [`Poison`](./Arrays.md#array-poison) | Array |  | 1 |
@@ -20275,10 +22671,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnVolcanoOnBattleStart` (3 instances)
+### Context: `SpawnVolcanoOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -20294,15 +22692,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusCharactersOnRoundEnd` (3 instances)
+### Context: `StatusCharactersOnRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll) | Block |  | 1 |
 | `FloatingRockTrap` | Number |  | 1 |
 | `Thorns` | Number |  | 1 |
@@ -20312,10 +22714,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `aux_positions` (3 instances)
+### Context: `aux_positions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
 
@@ -20332,10 +22736,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `room_positions` (3 instances)
+### Context: `room_positions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
 
@@ -20357,15 +22763,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyPassives` (2 instances)
+### Context: `ApplyPassives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag), [`Conditional_PartyMember`](./House_and_Environment.md#context-conditional_partymember)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddInitiative` | Number |  | 1 |
 | [`StatusOnBattleEnd`](./House_and_Environment.md#context-statusonbattleend) | Block |  | 1 |
 
@@ -20373,10 +22782,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Big` (2 instances)
+### Context: `Big`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`SpecialGodRays`](./House_and_Environment.md#context-specialgodrays)
 
@@ -20389,15 +22800,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CharacterTypeGainsStatusAtBattleStart` (2 instances)
+### Context: `CharacterTypeGainsStatusAtBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
 | `Conditional_Flying` | Block |  | 1 |
 | [`Else`](./House_and_Environment.md#context-else) | Block |  | 1 |
@@ -20407,15 +22822,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_GoodRoll` (2 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusCharactersOnRoundEnd`](./House_and_Environment.md#context-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#context-statuscharactersonroundstart)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`odds`](./Enums.md#enum-odds) | Enum |  | 2 |
 | [`Conditional_Corpse`](./House_and_Environment.md#context-conditional_corpse) | Block |  | 1 |
 | [`RandomStatusFromPool`](./House_and_Environment.md#context-randomstatusfrompool) | Block |  | 1 |
@@ -20424,10 +22844,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GlobalSpawnOnRoundEnd` (2 instances)
+### Context: `GlobalSpawnOnRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -20440,15 +22862,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool` (2 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll), [`Else`](./House_and_Environment.md#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `RandomStatDown` | Number |  | 4 |
 | `RandomStatUp` | Number |  | 4 |
 | `Bleed` | Number |  | 1 |
@@ -20470,10 +22897,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpecialGodRays` (2 instances)
+### Context: `SpecialGodRays`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -20485,15 +22914,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAllCharactersOnSpawn` (2 instances)
+### Context: `StatusAllCharactersOnSpawn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_PartyMember`](./House_and_Environment.md#context-conditional_partymember) | Block |  | 1 |
 | `Conditional_Tiny` | Block |  | 1 |
 | [`Else`](./House_and_Environment.md#context-else) | Block |  | 1 |
@@ -20502,15 +22935,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusCharactersOnRoundStart` (2 instances)
+### Context: `StatusCharactersOnRoundStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll) | Block |  | 1 |
 | [`Else`](./House_and_Environment.md#context-else) | Block |  | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array |  | 1 |
@@ -20519,10 +22956,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPostProcessEffect` (1 instances)
+### Context: `AddPostProcessEffect`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -20535,10 +22974,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddTilesetObjects` (1 instances)
+### Context: `AddTilesetObjects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -20550,10 +22991,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllyInfested` (1 instances)
+### Context: `AllyInfested`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Else`](./House_and_Environment.md#context-else)
 
@@ -20566,10 +23009,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade` (1 instances)
+### Context: `BasementUpgrade`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20582,10 +23027,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade2` (1 instances)
+### Context: `BasementUpgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20598,10 +23045,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade3` (1 instances)
+### Context: `BasementUpgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20614,10 +23063,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade4` (1 instances)
+### Context: `BasementUpgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20630,10 +23081,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade5` (1 instances)
+### Context: `BasementUpgrade5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20646,15 +23099,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Corpse` (1 instances)
+### Context: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Madness` | Number |  | 1 |
 | `Revive` | Number |  | 1 |
 
@@ -20662,15 +23120,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasTag` (1 instances)
+### Context: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`extra_statuses`](./House_and_Environment.md#context-extra_statuses)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `AddExtraTurnsBeforeRun` | Number |  | 1 |
 | [`ApplyPassives`](./House_and_Environment.md#context-applypassives) | Block |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
@@ -20679,25 +23142,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_PartyMember` (1 instances)
+### Context: `Conditional_PartyMember`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusAllCharactersOnSpawn`](./House_and_Environment.md#context-statusallcharactersonspawn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyPassives`](./House_and_Environment.md#context-applypassives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Default` (1 instances)
+### Context: `Default`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20710,10 +23179,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FactionUprising` (1 instances)
+### Context: `FactionUprising`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -20724,10 +23195,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FloatingDebris` (1 instances)
+### Context: `FloatingDebris`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddTilesetObjects`](./House_and_Environment.md#context-addtilesetobjects)
 
@@ -20739,10 +23212,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Floor1_Large` (1 instances)
+### Context: `Floor1_Large`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20759,10 +23234,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Floor1_Small` (1 instances)
+### Context: `Floor1_Small`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20779,10 +23256,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `House1` (1 instances)
+### Context: `House1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20799,10 +23278,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `House2` (1 instances)
+### Context: `House2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20819,10 +23300,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `House3` (1 instances)
+### Context: `House3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20839,10 +23322,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LargeHouse` (1 instances)
+### Context: `LargeHouse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20855,10 +23340,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LargeHouse_Floor2Large` (1 instances)
+### Context: `LargeHouse_Floor2Large`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20871,10 +23358,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LargeHouse_Floor2Small` (1 instances)
+### Context: `LargeHouse_Floor2Small`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20887,10 +23376,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MediumHouse` (1 instances)
+### Context: `MediumHouse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20903,10 +23394,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MediumHouse_SmallRoom` (1 instances)
+### Context: `MediumHouse_SmallRoom`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20919,10 +23412,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Rain` (1 instances)
+### Context: `Rain`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20938,10 +23433,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallAttic` (1 instances)
+### Context: `SmallAttic`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20959,10 +23456,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallHouse_Attic` (1 instances)
+### Context: `SmallHouse_Attic`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20975,10 +23474,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Snow` (1 instances)
+### Context: `Snow`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -20994,10 +23495,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SolarFlare` (1 instances)
+### Context: `SolarFlare`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -21011,10 +23514,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnTilePuddleOnBattleStart` (1 instances)
+### Context: `SpawnTilePuddleOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
 
@@ -21028,25 +23533,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleEnd` (1 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ApplyPassives`](./House_and_Environment.md#context-applypassives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMutation` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Thunderstorm` (1 instances)
+### Context: `Thunderstorm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -21063,10 +23573,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Windy` (1 instances)
+### Context: `Windy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
 
@@ -21082,15 +23594,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `extra_statuses` (1 instances)
+### Context: `extra_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`FactionUprising`](./House_and_Environment.md#context-factionuprising)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AllStatsUp` | Number |  | 1 |
 | [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag) | Block |  | 1 |
 | `HealthGain` | Number |  | 1 |
@@ -21101,13 +23617,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## House Boss Info
 
-### Context: `ROOT` (9 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 9
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `act` | Number |  | 9 |
 | [`arrival_unlock`](./Enums.md#enum-arrival_unlock) | Enum |  | 9 |
 | `index` | Number |  | 9 |
@@ -21130,13 +23649,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Injuries
 
-### Context: `ROOT` (13 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 13
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
 | `id` | Number |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |
@@ -21148,10 +23670,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `stats` (12 instances)
+### Context: `stats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`ROOT`](./Injuries.md#context-root)
 
@@ -21169,10 +23693,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `scars` (10 instances)
+### Context: `scars`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`ROOT`](./Injuries.md#context-root)
 
@@ -21190,13 +23716,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Item Pools
 
-### Context: `ROOT` (13 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 13
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `rare` | Number |  | 13 |
 | `uncommon` | Number |  | 12 |
 | `very_rare` | Number |  | 11 |
@@ -21251,13 +23780,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Items & Equipment
 
-### Context: `ROOT` (1217 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1217
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the item's desc. | 1217 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the item's name. | 1206 |
 | `frame` | Number |  | 1106 |
@@ -21327,15 +23859,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passives` (848 instances)
+### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 848
 
 > **Referenced by:** [`PassiveAfterXKills`](./Items_and_Equipment.md#context-passiveafterxkills), [`PassiveAtHealthThreshold`](./Items_and_Equipment.md#context-passiveathealththreshold), [`PassiveAtStatThreshold`](./Items_and_Equipment.md#context-passiveatstatthreshold), [`PassiveIfStrAuxEquals`](./Items_and_Equipment.md#context-passiveifstrauxequals), [`PassiveWhenAffectedByElement`](./Items_and_Equipment.md#context-passivewhenaffectedbyelement), [`PassiveWhenOnTile`](./Items_and_Equipment.md#context-passivewhenontile), [`ROOT`](./Items_and_Equipment.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `Metal` | Number | Applies or references the 'Metal' effect/state. | 89 |
 | [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 68 |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 47 |
@@ -21662,15 +24198,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttack` (69 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 69
 
 > **Referenced by:** [`AddPassivesToMinions`](./Items_and_Equipment.md#context-addpassivestominions), [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 10 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 10 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 7 |
@@ -21706,15 +24246,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (37 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 37
 
 > **Referenced by:** [`DoDamage`](./Items_and_Equipment.md#context-dodamage), [`MeleeRevengeDamage`](./Items_and_Equipment.md#context-meleerevengedamage), [`RevengeDamage`](./Items_and_Equipment.md#context-revengedamage), [`damage_instance`](./Items_and_Equipment.md#context-damage_instance)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 9 |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Spawns a physics object that visually bounces off the target. | 4 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 4 |
@@ -21736,15 +24283,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeleeRevengeDamage` (34 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 34
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`effects`](./Items_and_Equipment.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 25 |
 | `knockback` | Number |  | 9 |
 | `damage` | Number | The base damage properties of an attack. | 5 |
@@ -21753,15 +24304,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleEnd` (31 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 31
 
 > **Referenced by:** [`ApplyPassives`](./Items_and_Equipment.md#context-applypassives), [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 12 |
 | `RandomPermanentStat` | Number | Applies or references the 'RandomPermanentStat' effect/state. | 7 |
 | [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 6 |
@@ -21784,15 +24338,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEnd` (27 instances)
+### Context: `StatusEachTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 27
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 6 |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 4 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 4 |
@@ -21813,10 +24371,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStart` (22 instances)
+### Context: `SpawnOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 22
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -21827,15 +24387,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBreak` (22 instances)
+### Context: `StatusOnBreak`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 22
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`GainCoinsRange`](./Items_and_Equipment.md#context-gaincoinsrange) | Block | Grants the player a randomized amount of coins within a min/max range. | 5 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 3 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 3 |
@@ -21856,15 +24421,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_GoodRoll` (19 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 19
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend), [`StatusOnKill`](./Items_and_Equipment.md#context-statusonkill), [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`effects`](./Items_and_Equipment.md#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 19 |
 | `Freeze` | Number | Applies or references the 'Freeze' effect/state. | 6 |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 4 |
@@ -21877,15 +24447,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnKill` (18 instances)
+### Context: `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 4 |
 | `BrittleCharismaUp` | Number | Applies or references the 'BrittleCharismaUp' effect/state. | 1 |
 | `BrittleConstitutionUp` | Number | Applies or references the 'BrittleConstitutionUp' effect/state. | 1 |
@@ -21910,15 +24485,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTookDamage` (17 instances)
+### Context: `StatusOnTookDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 17
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 5 |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. | 2 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
@@ -21936,10 +24515,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnThingOnDamage` (13 instances)
+### Context: `SpawnThingOnDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -21956,15 +24537,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleStart` (13 instances)
+### Context: `StatusOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Craft`](./Items_and_Equipment.md#context-craft) | Block | Synthesizes or spawns a new item from a specific pool. | 3 |
 | `SafeDie` | Number | Applies or references the 'SafeDie' effect/state. | 2 |
 | [`Brace`](./Math_Equations.md) | Enum | Applies or references the 'Brace' effect/state. | 1 |
@@ -21981,10 +24566,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnEachTurn` (12 instances)
+### Context: `SpawnEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -21998,15 +24585,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnBegin` (10 instances)
+### Context: `StatusEachTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead), [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_BadRoll`](./Items_and_Equipment.md#context-conditional_badroll) | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 2 |
 | `BlessingOfPeace` | Number | Applies or references the 'BlessingOfPeace' effect/state. | 1 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
@@ -22024,10 +24615,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (9 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22041,15 +24634,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddSelfStatusToBasicAttack` (8 instances)
+### Context: `AddSelfStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 4 |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
@@ -22060,15 +24657,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToAllDamage` (8 instances)
+### Context: `AddStatusToAllDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 3 |
 | `must_do_damage` | Boolean |  | 3 |
 | [`Conditional_HasTag`](./Items_and_Equipment.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 2 |
@@ -22080,15 +24681,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAlliesOnBattleStart` (8 instances)
+### Context: `StatusAlliesOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 2 |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 1 |
 | `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. | 1 |
@@ -22102,15 +24707,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnKillEnemy` (8 instances)
+### Context: `StatusOnKillEnemy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 4 |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 1 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
@@ -22121,15 +24730,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToMinions` (7 instances)
+### Context: `AddPassivesToMinions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 5 |
 | `AddMaxHealth` | Number | Applies or references the 'AddMaxHealth' effect/state. | 4 |
 | `DamageUp` | Number |  | 3 |
@@ -22144,10 +24757,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DurabilityTransform` (7 instances)
+### Context: `DurabilityTransform`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22160,10 +24775,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GainCoinsRange` (7 instances)
+### Context: `GainCoinsRange`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend), [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak), [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
 
@@ -22176,10 +24793,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfStrAuxEquals` (7 instances)
+### Context: `PassiveIfStrAuxEquals`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22192,10 +24811,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenOnTile` (7 instances)
+### Context: `PassiveWhenOnTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22208,15 +24829,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyToSource` (6 instances)
+### Context: `ApplyToSource`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus), [`Else`](./Items_and_Equipment.md#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 2 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
@@ -22227,10 +24853,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ItemAuxTransform` (6 instances)
+### Context: `ItemAuxTransform`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22244,15 +24872,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnDie` (6 instances)
+### Context: `StatusOnDie`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_RandomChance`](./Items_and_Equipment.md#context-conditional_randomchance) | Block | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 1 |
 | [`CreateGlobalModifiers`](./Items_and_Equipment.md#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 1 |
@@ -22264,10 +24896,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedAutoRevive` (5 instances)
+### Context: `DelayedAutoRevive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22280,10 +24914,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtHealthThreshold` (5 instances)
+### Context: `PassiveAtHealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22297,10 +24933,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStartRandomEmptyTile` (5 instances)
+### Context: `SpawnOnBattleStartRandomEmptyTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22313,15 +24951,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEndMove` (5 instances)
+### Context: `StatusOnEndMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 3 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 3 |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
@@ -22331,10 +24973,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Temporary` (5 instances)
+### Context: `Temporary`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`Conditional_BadRoll`](./Items_and_Equipment.md#context-conditional_badroll), [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
@@ -22350,10 +24994,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformItemOnElementInfluence` (5 instances)
+### Context: `TransformItemOnElementInfluence`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22367,10 +25013,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddDamageToElementDamage` (4 instances)
+### Context: `AddDamageToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22383,10 +25031,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ClassManaCostReduction` (4 instances)
+### Context: `ClassManaCostReduction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22399,15 +25049,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasStatus` (4 instances)
+### Context: `Conditional_HasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 4 |
 | [`ApplyToSource`](./Items_and_Equipment.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 2 |
 | `FlatLeechIfDamaged` | Number | Applies or references the 'FlatLeechIfDamaged' effect/state. | 1 |
@@ -22418,10 +25073,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Craft` (4 instances)
+### Context: `Craft`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`StatusIfUnusedActPoints`](./Items_and_Equipment.md#context-statusifunusedactpoints), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
@@ -22435,15 +25092,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (4 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddStatusToFirstSpellEachTurn`](./Items_and_Equipment.md#context-addstatustofirstspelleachturn), [`Conditional_PartyMember`](./Items_and_Equipment.md#context-conditional_partymember)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyToSource`](./Items_and_Equipment.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | `Webbed` | Number |  | 1 |
 
@@ -22451,15 +25113,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTakeHealthOrShieldDamage` (4 instances)
+### Context: `StatusOnTakeHealthOrShieldDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 2 |
 | [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 1 |
 | `Metronome` | Number | Executes a random musical or metronome ability. | 1 |
@@ -22468,15 +25134,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTurnEndIfDidntCastAbilityTypes` (4 instances)
+### Context: `StatusOnTurnEndIfDidntCastAbilityTypes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 4 |
 | `AllStatsUp` | Number |  | 1 |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
@@ -22490,15 +25161,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusRandomEnemiesOnBattleStart` (4 instances)
+### Context: `StatusRandomEnemiesOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `count` | Number | Quantity. | 4 |
 | `Charmed` | Number | Applies or references the 'Charmed' effect/state. | 1 |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 1 |
@@ -22509,15 +25184,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `global_passives` (4 instances)
+### Context: `global_passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 | `GlobalEnemyAutoRevive` | Number | Applies or references the 'GlobalEnemyAutoRevive' effect/state. | 2 |
 | `NoCorpses` | Number | Applies or references the 'NoCorpses' effect/state. | 1 |
 | `RealTimePressure` | Number | Applies or references the 'RealTimePressure' effect/state. | 1 |
@@ -22526,15 +25204,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatchProjectiles` (3 instances)
+### Context: `CatchProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Quivered` | Number | Applies or references the 'Quivered' effect/state. | 3 |
 | `ally_chance` | Number |  | 3 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
@@ -22543,15 +25224,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_PartyMember` (3 instances)
+### Context: `Conditional_PartyMember`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`ExtraStatusWhenDealingDamage`](./Items_and_Equipment.md#context-extrastatuswhendealingdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_IsSelf`](./Abilities_and_Spells.md#context-conditional_isself) | Block | Conditional trigger: Executes nested logic if the target is the caster themselves. | 3 |
 | [`Else`](./Items_and_Equipment.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 
@@ -22559,10 +25244,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CounterAttack` (3 instances)
+### Context: `CounterAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22576,10 +25263,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DeathRattle` (3 instances)
+### Context: `DeathRattle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -22590,10 +25279,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ExtraStatusWhenDealingDamage` (3 instances)
+### Context: `ExtraStatusWhenDealingDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22605,10 +25296,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtStatThreshold` (3 instances)
+### Context: `PassiveAtStatThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22622,15 +25315,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenDead` (3 instances)
+### Context: `PassiveWhenDead`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AutocastEachRound`](./Items_and_Equipment.md#context-autocasteachround) | Block | Forces the character to automatically cast a specific ability at the start of each combat round. | 1 |
 | [`StatusEachRoundEnd`](./Items_and_Equipment.md#context-statuseachroundend) | Block | Applies or references the 'StatusEachRoundEnd' effect/state. | 1 |
 | [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin) | Block | Applies or references the 'StatusEachTurnBegin' effect/state. | 1 |
@@ -22639,10 +25335,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SetItemAux` (3 instances)
+### Context: `SetItemAux`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`Conditional_Shielded`](./Items_and_Equipment.md#context-conditional_shielded), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
@@ -22655,10 +25353,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnExtraThingsOnBattleStart` (3 instances)
+### Context: `SpawnExtraThingsOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22671,10 +25371,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StackingFlowerTrail` (3 instances)
+### Context: `StackingFlowerTrail`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22687,15 +25389,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAllCharactersOnSpawn` (3 instances)
+### Context: `StatusAllCharactersOnSpawn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_Boss`](./Items_and_Equipment.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 2 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 1 |
 
@@ -22703,15 +25409,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEveryXSpellCasts` (3 instances)
+### Context: `StatusEveryXSpellCasts`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `stacks` | Number | Number of stacks or intensity to apply. | 3 |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
 | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 1 |
@@ -22721,15 +25431,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusIfUnusedMovePoints` (3 instances)
+### Context: `StatusIfUnusedMovePoints`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 2 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 2 |
 | `DivineShield` | Number |  | 1 |
@@ -22738,15 +25452,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnPopCorpse` (3 instances)
+### Context: `StatusOnPopCorpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |
 | `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. | 1 |
@@ -22755,10 +25473,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `threshold` (3 instances)
+### Context: `threshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`PassiveAtStatThreshold`](./Items_and_Equipment.md#context-passiveatstatthreshold)
 
@@ -22771,15 +25491,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToElementDamage` (2 instances)
+### Context: `AddStatusToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 2 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 1 |
@@ -22788,15 +25512,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToKnockbackDamage` (2 instances)
+### Context: `AddStatusToKnockbackDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 1 |
 
@@ -22804,15 +25532,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToSpells` (2 instances)
+### Context: `AddStatusToSpells`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_Enemy`](./Items_and_Equipment.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 1 |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 1 |
 
@@ -22820,15 +25551,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyStatusesToRandomEnemiesEachTurn` (2 instances)
+### Context: `ApplyStatusesToRandomEnemiesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bounty` | Number | Applies or references the 'Bounty' effect/state. | 1 |
 | `Marked` | Number | Applies or references the 'Marked' effect/state. | 1 |
 | `count` | Number | Quantity. | 1 |
@@ -22837,10 +25571,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ArmorBreakOnHit` (2 instances)
+### Context: `ArmorBreakOnHit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22853,10 +25589,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachRound` (2 instances)
+### Context: `AutocastEachRound`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead), [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22869,10 +25607,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BoostWeaponDamage` (2 instances)
+### Context: `BoostWeaponDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22885,10 +25625,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBackflip` (2 instances)
+### Context: `ChanceToBackflip`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22901,10 +25643,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBlockAndCounter` (2 instances)
+### Context: `ChanceToBlockAndCounter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -22917,10 +25661,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToRevive` (2 instances)
+### Context: `ChanceToRevive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -22931,15 +25677,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Adjacent` (2 instances)
+### Context: `Conditional_Adjacent`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ScaledStatusAlliesOnSpendMana`](./Items_and_Equipment.md#context-scaledstatusalliesonspendmana), [`StatusAlliesEachTurn`](./Items_and_Equipment.md#context-statusallieseachturn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_Ally`](./Items_and_Equipment.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 1 |
 | [`Conditional_PlayerCat`](./Items_and_Equipment.md#context-conditional_playercat) | Block | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 1 |
 
@@ -22947,15 +25698,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_BadRoll` (2 instances)
+### Context: `Conditional_BadRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Temporary`](./Items_and_Equipment.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 3 |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 
@@ -22963,30 +25719,40 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Boss` (2 instances)
+### Context: `Conditional_Boss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusAllCharactersOnSpawn`](./Items_and_Equipment.md#context-statusallcharactersonspawn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HasTag` (2 instances)
+### Context: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 2 |
 | `BonusCritChance` | Number |  | 1 |
 | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. | 1 |
@@ -22996,15 +25762,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_OncePerBattle` (2 instances)
+### Context: `Conditional_OncePerBattle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_HealthThreshold`](./Items_and_Equipment.md#context-conditional_healththreshold), [`StatusOnFullMana`](./Items_and_Equipment.md#context-statusonfullmana)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `ReduceManaCost` | Number | Applies or references the 'ReduceManaCost' effect/state. | 1 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 1 |
 | [`ShowText`](./Strings.md#string-showtext) | String | Applies or references the 'ShowText' effect/state. | 1 |
@@ -23015,15 +25785,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CreateGlobalModifiers` (2 instances)
+### Context: `CreateGlobalModifiers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie), [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 | `NextPlayerCatTakesExtraTurn` | Number | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. | 1 |
 | `NoCorpses` | Number | Applies or references the 'NoCorpses' effect/state. | 1 |
 
@@ -23031,10 +25804,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DoDamage` (2 instances)
+### Context: `DoDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusEachRoundEnd`](./Items_and_Equipment.md#context-statuseachroundend), [`StatusOnBreakItem`](./Items_and_Equipment.md#context-statusonbreakitem)
 
@@ -23049,10 +25824,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ElementalManaCostReduction` (2 instances)
+### Context: `ElementalManaCostReduction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23065,10 +25842,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ModifyAbility` (2 instances)
+### Context: `ModifyAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`bonus_passives`](./Items_and_Equipment.md#context-bonus_passives)
 
@@ -23081,10 +25860,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MovementReaction` (2 instances)
+### Context: `MovementReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`PassiveWhileHasDurability`](./Items_and_Equipment.md#context-passivewhilehasdurability), [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23099,10 +25880,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectOnHitCharacter` (2 instances)
+### Context: `ObjectOnHitCharacter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusEveryXSpellCasts`](./Items_and_Equipment.md#context-statuseveryxspellcasts), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
@@ -23115,10 +25898,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAfterXKills` (2 instances)
+### Context: `PassiveAfterXKills`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23131,25 +25916,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfWeaponIsUsable` (2 instances)
+### Context: `PassiveIfWeaponIsUsable`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `RefreshEquipmentAbilityOnElement` (2 instances)
+### Context: `RefreshEquipmentAbilityOnElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23162,10 +25952,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnCatCopyWhenDowned` (2 instances)
+### Context: `SpawnCatCopyWhenDowned`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23178,10 +25970,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnItemLinkedFamiliar` (2 instances)
+### Context: `SpawnItemLinkedFamiliar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23194,15 +25988,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAfterCastSpell` (2 instances)
+### Context: `StatusAfterCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `TempMeleeRangeUp` | Number | Applies or references the 'TempMeleeRangeUp' effect/state. | 1 |
 | `TempRangeUp` | Number | Applies or references the 'TempRangeUp' effect/state. | 1 |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 1 |
@@ -23211,15 +26009,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAfterXStacks` (2 instances)
+### Context: `StatusAfterXStacks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ScaledStatusOnSpendMana`](./Items_and_Equipment.md#context-scaledstatusonspendmana), [`StatusOnCollectPickup`](./Items_and_Equipment.md#context-statusoncollectpickup)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum |  | 2 |
 | `threshold` | Number |  | 2 |
 | `ExtraBasicMoves_Status` | Number | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 1 |
@@ -23230,15 +26032,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusIfUnusedActPoints` (2 instances)
+### Context: `StatusIfUnusedActPoints`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`BackflipWhenTargeted`](./Math_Equations.md) | Enum | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 1 |
 | [`Craft`](./Items_and_Equipment.md#context-craft) | Block | Synthesizes or spawns a new item from a specific pool. | 1 |
 
@@ -23246,15 +26052,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnAllyCatDeath` (2 instances)
+### Context: `StatusOnAllyCatDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |
 
@@ -23262,15 +26072,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBackstab` (2 instances)
+### Context: `StatusOnBackstab`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
 | `SerratedClaws` | Number | Applies or references the 'SerratedClaws' effect/state. | 1 |
 
@@ -23278,15 +26091,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBreakItem` (2 instances)
+### Context: `StatusOnBreakItem`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`DoDamage`](./Items_and_Equipment.md#context-dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. | 1 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 1 |
 
@@ -23294,15 +26111,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnCastSpell` (2 instances)
+### Context: `StatusOnCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 1 |
 
@@ -23310,15 +26131,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnGainCoins` (2 instances)
+### Context: `StatusOnGainCoins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |
 | [`Shield`](./Math_Equations.md) | Enum | Applies or references the 'Shield' effect/state. | 1 |
 
@@ -23326,15 +26151,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnSetPieceBreak` (2 instances)
+### Context: `StatusOnSetPieceBreak`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum |  | 1 |
 | `PermanentCharisma` | Number |  | 1 |
 | `PermanentConstitution` | Number |  | 1 |
@@ -23349,25 +26177,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bonus_passives` (2 instances)
+### Context: `bonus_passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`str_aux_is_copy_ability`](./Items_and_Equipment.md#context-str_aux_is_copy_ability)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`ModifyAbility`](./Items_and_Equipment.md#context-modifyability) | Block | Applies or references the 'ModifyAbility' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `cost` (2 instances)
+### Context: `cost`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#context-modifyability)
 
@@ -23380,15 +26214,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `keyword_tooltips` (2 instances)
+### Context: `keyword_tooltips`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 1 |
 
@@ -23396,10 +26234,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `meta` (2 instances)
+### Context: `meta`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#context-modifyability)
 
@@ -23412,25 +26252,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passive` (2 instances)
+### Context: `passive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Metal` | Number | Applies or references the 'Metal' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `str_aux_is_copy_ability` (2 instances)
+### Context: `str_aux_is_copy_ability`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
@@ -23442,10 +26287,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AIControlNextTurn` (1 instances)
+### Context: `AIControlNextTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23458,10 +26305,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityHealthThreshold` (1 instances)
+### Context: `AbilityHealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23477,10 +26326,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityOnRoundEndOnce` (1 instances)
+### Context: `AbilityOnRoundEndOnce`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23493,10 +26344,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddAdvantageToEvent` (1 instances)
+### Context: `AddAdvantageToEvent`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23510,60 +26363,72 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToCharmed` (1 instances)
+### Context: `AddPassivesToCharmed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddSelfStatusToWeapons` (1 instances)
+### Context: `AddSelfStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array | Applies or references the 'RepairWeapon' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToBackstabs` (1 instances)
+### Context: `AddStatusToBackstabs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToFirstSpellEachTurn` (1 instances)
+### Context: `AddStatusToFirstSpellEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_IsSelf`](./Abilities_and_Spells.md#context-conditional_isself) | Block |  | 1 |
 | [`Else`](./Items_and_Equipment.md#context-else) | Block |  | 1 |
 
@@ -23571,25 +26436,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToWeapons` (1 instances)
+### Context: `AddStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddTemporaryEffectsToBasicAttack` (1 instances)
+### Context: `AddTemporaryEffectsToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23601,10 +26472,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AlluringDoodieEater` (1 instances)
+### Context: `AlluringDoodieEater`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23617,10 +26490,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllyDodgeChanceAura` (1 instances)
+### Context: `AllyDodgeChanceAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23633,40 +26508,49 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyPassives` (1 instances)
+### Context: `ApplyPassives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_RandomChance`](./Items_and_Equipment.md#context-conditional_randomchance)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyToRandomPartyMemberIfPossible` (1 instances)
+### Context: `ApplyToRandomPartyMemberIfPossible`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Enum | Applies or references the 'GainDisorderFromPool' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `BackflipWhenTargeted` (1 instances)
+### Context: `BackflipWhenTargeted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23679,10 +26563,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BouncyProjectiles` (1 instances)
+### Context: `BouncyProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23695,10 +26581,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BuffImmunity` (1 instances)
+### Context: `BuffImmunity`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23710,15 +26598,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CastAgainWithStatus` (1 instances)
+### Context: `CastAgainWithStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddTemporaryEffectsToBasicAttack`](./Items_and_Equipment.md#context-addtemporaryeffectstobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
@@ -23726,10 +26617,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatPartsSizeScale` (1 instances)
+### Context: `CatPartsSizeScale`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23741,10 +26634,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToForceEvent` (1 instances)
+### Context: `ChanceToForceEvent`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23757,75 +26652,99 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Ally` (1 instances)
+### Context: `Conditional_Ally`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Corpse` (1 instances)
+### Context: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `RandomMutation` | Number | Applies or references the 'RandomMutation' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Enemy` (1 instances)
+### Context: `Conditional_Enemy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToSpells`](./Items_and_Equipment.md#context-addstatustospells)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Leeches` | Number | Applies or references the 'Leeches' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HasCleansableDebuffs` (1 instances)
+### Context: `Conditional_HasCleansableDebuffs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HealthThreshold` (1 instances)
+### Context: `Conditional_HealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle) | Block | Conditional trigger: Executes nested logic only once per encounter/battle. | 1 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 1 |
 
@@ -23833,15 +26752,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_ManaThreshold` (1 instances)
+### Context: `Conditional_ManaThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |
 | `threshold_flat` | Number |  | 1 |
 
@@ -23849,30 +26771,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_PlayerCat` (1 instances)
+### Context: `Conditional_PlayerCat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_RandomChance` (1 instances)
+### Context: `Conditional_RandomChance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ApplyPassives`](./Items_and_Equipment.md#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
@@ -23880,30 +26811,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Shielded` (1 instances)
+### Context: `Conditional_Shielded`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`SetItemAux`](./Items_and_Equipment.md#context-setitemaux) | Block | Applies or references the 'SetItemAux' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ConvertDamageToScaledStatus` (1 instances)
+### Context: `ConvertDamageToScaledStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DelayedPain` | Number | Applies or references the 'DelayedPain' effect/state. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
@@ -23911,30 +26849,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CritsApplyStatus` (1 instances)
+### Context: `CritsApplyStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Fear` | Number | Applies or references the 'Fear' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `CyborgTurns` (1 instances)
+### Context: `CyborgTurns`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`TakeBonusTurnWithAIControl`](./Items_and_Equipment.md#context-takebonusturnwithaicontrol) | Block |  | 1 |
 | `stacks` | Number |  | 1 |
 
@@ -23942,10 +26887,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DestroyEquipmentAndAttachParasite` (1 instances)
+### Context: `DestroyEquipmentAndAttachParasite`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
@@ -23958,15 +26905,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Eternal` (1 instances)
+### Context: `Eternal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `health_percent` | Number |  | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
@@ -23974,10 +26924,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FlyDamageIncrease` (1 instances)
+### Context: `FlyDamageIncrease`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -23990,10 +26942,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceUseAbilityOnTarget` (1 instances)
+### Context: `ForceUseAbilityOnTarget`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack)
 
@@ -24006,25 +26960,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GlobalFlowerTrapperAura` (1 instances)
+### Context: `GlobalFlowerTrapperAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Tangled`](./Arrays.md#array-tangled) | Array |  | 1 |
 
 </details>
 
 ---
 
-### Context: `GlobalMeleeRevengeDamage` (1 instances)
+### Context: `GlobalMeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24036,10 +26995,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ImmediateUseAbility` (1 instances)
+### Context: `ImmediateUseAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -24050,10 +27011,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockUpAndAway` (1 instances)
+### Context: `KnockUpAndAway`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack)
 
@@ -24066,10 +27029,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockbackIfCrit` (1 instances)
+### Context: `KnockbackIfCrit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage)
 
@@ -24082,10 +27047,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ManaGainRange` (1 instances)
+### Context: `ManaGainRange`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
 
@@ -24098,10 +27065,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectDetector` (1 instances)
+### Context: `ObjectDetector`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24114,10 +27083,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenAffectedByElement` (1 instances)
+### Context: `PassiveWhenAffectedByElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24130,55 +27101,67 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileHasDurability` (1 instances)
+### Context: `PassiveWhileHasDurability`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`MovementReaction`](./Items_and_Equipment.md#context-movementreaction) | Block | Applies or references the 'MovementReaction' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileInMonkMeleeStance` (1 instances)
+### Context: `PassiveWhileInMonkMeleeStance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `Brace` | Number | Applies or references the 'Brace' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileShielded` (1 instances)
+### Context: `PassiveWhileShielded`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `PoopWhenHit` (1 instances)
+### Context: `PoopWhenHit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24191,10 +27174,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomPermanentStatsDistinct` (1 instances)
+### Context: `RandomPermanentStatsDistinct`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnEatPill`](./Items_and_Equipment.md#context-statusoneatpill)
 
@@ -24206,15 +27191,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool` (1 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `PermanentCharisma` | Number | Applies or references the 'PermanentCharisma' effect/state. | 1 |
 | `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. | 1 |
 | `PermanentDexterity` | Number | Applies or references the 'PermanentDexterity' effect/state. | 1 |
@@ -24227,10 +27217,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RemoveStatusStacks` (1 instances)
+### Context: `RemoveStatusStacks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus)
 
@@ -24243,15 +27235,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ReviveNextRound` (1 instances)
+### Context: `ReviveNextRound`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 1 |
 | `revive_health` | Number | The flat amount of health to revive with. | 1 |
 
@@ -24259,10 +27254,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Robot` (1 instances)
+### Context: `Robot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24274,15 +27271,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaldingOrbMoonBossOneShot` (1 instances)
+### Context: `ScaldingOrbMoonBossOneShot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 1 |
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 1 |
 
@@ -24290,10 +27290,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusAlliesOnSpendMana` (1 instances)
+### Context: `ScaledStatusAlliesOnSpendMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24305,40 +27307,48 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusOnHolyShieldBlock` (1 instances)
+### Context: `ScaledStatusOnHolyShieldBlock`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 1 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusOnSpendMana` (1 instances)
+### Context: `ScaledStatusOnSpendMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`StatusAfterXStacks`](./Items_and_Equipment.md#context-statusafterxstacks) | Block | Applies or references the 'StatusAfterXStacks' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `SpawnCatCopyOnBattleStart` (1 instances)
+### Context: `SpawnCatCopyOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24351,10 +27361,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnObjectOnPopCorpse` (1 instances)
+### Context: `SpawnObjectOnPopCorpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -24366,10 +27378,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnDeath` (1 instances)
+### Context: `SpawnOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24382,10 +27396,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnRandomPickupsOnTaggedUnitKilled` (1 instances)
+### Context: `SpawnRandomPickupsOnTaggedUnitKilled`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24398,45 +27414,54 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatDependentPassive` (1 instances)
+### Context: `StatDependentPassive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddDamageToBasicAttack`](./Math_Equations.md) | Equation | Applies or references the 'AddDamageToBasicAttack' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAdjacentOnTheirTurnEnd` (1 instances)
+### Context: `StatusAdjacentOnTheirTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `ForceMoveAway` | Number | Applies or references the 'ForceMoveAway' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAfterXTurns` (1 instances)
+### Context: `StatusAfterXTurns`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
@@ -24444,105 +27469,132 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAlliesEachTurn` (1 instances)
+### Context: `StatusAlliesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesOnDeath` (1 instances)
+### Context: `StatusAlliesOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusEachRoundEnd` (1 instances)
+### Context: `StatusEachRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`DoDamage`](./Items_and_Equipment.md#context-dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusEachTurnEndForEachTurn` (1 instances)
+### Context: `StatusEachTurnEndForEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnCollectPickup` (1 instances)
+### Context: `StatusOnCollectPickup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`StatusAfterXStacks`](./Items_and_Equipment.md#context-statusafterxstacks) | Block | Applies or references the 'StatusAfterXStacks' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnDodge` (1 instances)
+### Context: `StatusOnDodge`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEatFood` (1 instances)
+### Context: `StatusOnEatFood`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |
 | [`TempPassiveUntilSettled`](./Items_and_Equipment.md#context-temppassiveuntilsettled) | Block | Applies or references the 'TempPassiveUntilSettled' effect/state. | 1 |
 
@@ -24550,45 +27602,56 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEatPill` (1 instances)
+### Context: `StatusOnEatPill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`RandomPermanentStatsDistinct`](./Items_and_Equipment.md#context-randompermanentstatsdistinct) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEnemyDeath` (1 instances)
+### Context: `StatusOnEnemyDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnFallAsleep` (1 instances)
+### Context: `StatusOnFallAsleep`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `FillMana` | Number | Applies or references the 'FillMana' effect/state. | 1 |
 | `HealRandomInjury` | Number | Applies or references the 'HealRandomInjury' effect/state. | 1 |
@@ -24597,10 +27660,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnFullMana` (1 instances)
+### Context: `StatusOnFullMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24612,45 +27677,57 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnHealed` (1 instances)
+### Context: `StatusOnHealed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnPickupCoins` (1 instances)
+### Context: `StatusOnPickupCoins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `GainCoins` | Number | Applies or references the 'GainCoins' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTurnEndIfCastNSpells` (1 instances)
+### Context: `StatusOnTurnEndIfCastNSpells`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `DoubleCastSpell` | Number |  | 1 |
 | `spells` | Number |  | 1 |
 
@@ -24658,15 +27735,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnUseBasicAttack` (1 instances)
+### Context: `StatusOnUseBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 1 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
 
@@ -24674,25 +27755,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusWhenAllySpendsMana` (1 instances)
+### Context: `StatusWhenAllySpendsMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `TakeBonusTurnWithAIControl` (1 instances)
+### Context: `TakeBonusTurnWithAIControl`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`CyborgTurns`](./Items_and_Equipment.md#context-cyborgturns)
 
@@ -24705,25 +27792,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TempPassiveUntilSettled` (1 instances)
+### Context: `TempPassiveUntilSettled`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnEatFood`](./Items_and_Equipment.md#context-statusoneatfood)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `LimitHeal` | Number | Applies or references the 'LimitHeal' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `TintItem` (1 instances)
+### Context: `TintItem`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24737,10 +27829,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformWeapon` (1 instances)
+### Context: `TransformWeapon`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
@@ -24753,10 +27847,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TunnelVision` (1 instances)
+### Context: `TunnelVision`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
@@ -24768,15 +27864,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage_instance` (1 instances)
+### Context: `damage_instance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AlluringDoodieEater`](./Items_and_Equipment.md#context-alluringdoodieeater)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `damage` | Number | The base damage properties of an attack. | 1 |
 | [`effects`](./Items_and_Equipment.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
@@ -24787,13 +27886,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Map Generation & Routing
 
-### Context: `ROOT` (39 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 39
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`boss`](./Map_Generation_and_Routing.md#context-boss) | Block |  | 39 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 27 |
 | [`easy`](./Arrays.md#array-easy) | Array |  | 20 |
@@ -24928,10 +28030,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `boss` (41 instances)
+### Context: `boss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 41
 
 > **Referenced by:** [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#context-genflag_boss_spewer), [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -24949,10 +28053,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit0` (27 instances)
+### Context: `exit0`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 27
 
 > **Referenced by:** [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#context-boneyardunlocked), [`BunkerUnlocked`](./Map_Generation_and_Routing.md#context-bunkerunlocked), [`CavesUnlocked`](./Map_Generation_and_Routing.md#context-cavesunlocked), [`CoreUnlocked`](./Map_Generation_and_Routing.md#context-coreunlocked), [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#context-endoftimeunlocked), [`JurassicUnlocked`](./Map_Generation_and_Routing.md#context-jurassicunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonUnlocked`](./Map_Generation_and_Routing.md#context-moonunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`SewersUnlocked`](./Map_Generation_and_Routing.md#context-sewersunlocked), [`TheEndUnlocked`](./Map_Generation_and_Routing.md#context-theendunlocked)
 
@@ -24968,10 +28074,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `quest_event` (24 instances)
+### Context: `quest_event`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 24
 
 > **Referenced by:** [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#context-bothobelisksunlocked), [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#context-chaosantennaattached), [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#context-coreobeliskunlocked), [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#context-dimensionxunlocked), [`FutureUnlocked`](./Map_Generation_and_Routing.md#context-futureunlocked), [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#context-iceageunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#context-moonobeliskunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#context-throbbingarterydone), [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached), [`WallOfFleshDone`](./Map_Generation_and_Routing.md#context-walloffleshdone)
 
@@ -24985,10 +28093,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit1` (5 instances)
+### Context: `exit1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`CraterUnlocked`](./Map_Generation_and_Routing.md#context-craterunlocked), [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#context-junkyardunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25003,10 +28113,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `hard_initial` (4 instances)
+### Context: `hard_initial`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`HardPathUnlocked`](./Map_Generation_and_Routing.md#context-hardpathunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25019,10 +28131,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `time_machine` (4 instances)
+### Context: `time_machine`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25036,10 +28150,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BothObelisksUnlocked` (2 instances)
+### Context: `BothObelisksUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25051,10 +28167,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DimensionXUnlocked` (2 instances)
+### Context: `DimensionXUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25066,10 +28184,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `EndOfTimeUnlocked` (2 instances)
+### Context: `EndOfTimeUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25081,10 +28201,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HardPathUnlocked` (2 instances)
+### Context: `HardPathUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25096,10 +28218,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeatWorldUnlocked` (2 instances)
+### Context: `MeatWorldUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25112,10 +28236,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `VolcanoAntennaAttached` (2 instances)
+### Context: `VolcanoAntennaAttached`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25127,10 +28253,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `miniboss_event` (2 instances)
+### Context: `miniboss_event`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25143,10 +28271,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_battle1` (2 instances)
+### Context: `mw_battle1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25159,10 +28289,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_boss` (2 instances)
+### Context: `mw_boss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25177,10 +28309,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_earlyhome` (2 instances)
+### Context: `mw_earlyhome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25193,10 +28327,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_event1` (2 instances)
+### Context: `mw_event1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25209,10 +28345,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_hard1` (2 instances)
+### Context: `mw_hard1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25226,10 +28364,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_home` (2 instances)
+### Context: `mw_home`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25242,10 +28382,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_quest_event` (2 instances)
+### Context: `mw_quest_event`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25260,10 +28402,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_treasure` (2 instances)
+### Context: `mw_treasure`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25276,10 +28420,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BoneyardUnlocked` (1 instances)
+### Context: `BoneyardUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25291,10 +28437,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BunkerUnlocked` (1 instances)
+### Context: `BunkerUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25306,10 +28454,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CavesUnlocked` (1 instances)
+### Context: `CavesUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25321,10 +28471,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChaosAntennaAttached` (1 instances)
+### Context: `ChaosAntennaAttached`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25336,10 +28488,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CoreObeliskUnlocked` (1 instances)
+### Context: `CoreObeliskUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25351,10 +28505,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CoreUnlocked` (1 instances)
+### Context: `CoreUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25366,10 +28522,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CraterUnlocked` (1 instances)
+### Context: `CraterUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25381,10 +28539,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FutureUnlocked` (1 instances)
+### Context: `FutureUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25396,10 +28556,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GenFlag_Boss_Spewer` (1 instances)
+### Context: `GenFlag_Boss_Spewer`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25411,10 +28573,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GenFlag_Boss_Stacy` (1 instances)
+### Context: `GenFlag_Boss_Stacy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25427,10 +28591,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `IceAgeUnlocked` (1 instances)
+### Context: `IceAgeUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25442,10 +28608,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `JunkyardUnlocked` (1 instances)
+### Context: `JunkyardUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25457,10 +28625,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `JurassicUnlocked` (1 instances)
+### Context: `JurassicUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25472,10 +28642,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeatWorldUnlockedFull` (1 instances)
+### Context: `MeatWorldUnlockedFull`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25494,10 +28666,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoonObeliskUnlocked` (1 instances)
+### Context: `MoonObeliskUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25509,10 +28683,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoonUnlocked` (1 instances)
+### Context: `MoonUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25524,10 +28700,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SewersUnlocked` (1 instances)
+### Context: `SewersUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25539,10 +28717,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TheEndUnlocked` (1 instances)
+### Context: `TheEndUnlocked`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25554,10 +28734,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ThrobbingArteryDone` (1 instances)
+### Context: `ThrobbingArteryDone`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25569,10 +28751,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `WallOfFleshDone` (1 instances)
+### Context: `WallOfFleshDone`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25584,10 +28768,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `battle` (1 instances)
+### Context: `battle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25599,10 +28785,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `dimensionx` (1 instances)
+### Context: `dimensionx`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25614,10 +28802,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `endoftime` (1 instances)
+### Context: `endoftime`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25629,10 +28819,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `event` (1 instances)
+### Context: `event`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25645,10 +28837,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit_desert` (1 instances)
+### Context: `exit_desert`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25664,10 +28858,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit_lab` (1 instances)
+### Context: `exit_lab`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25683,10 +28879,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `future` (1 instances)
+### Context: `future`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25698,10 +28896,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `home` (1 instances)
+### Context: `home`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25713,10 +28913,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `iceage` (1 instances)
+### Context: `iceage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25728,10 +28930,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jurassic` (1 instances)
+### Context: `jurassic`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25743,10 +28947,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_altar` (1 instances)
+### Context: `mw_altar`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25760,10 +28966,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `shop_cheapwater` (1 instances)
+### Context: `shop_cheapwater`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25777,10 +28985,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `shop_water` (1 instances)
+### Context: `shop_water`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25794,10 +29004,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `start` (1 instances)
+### Context: `start`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25809,10 +29021,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `theend` (1 instances)
+### Context: `theend`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25824,10 +29038,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `treasure` (1 instances)
+### Context: `treasure`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25840,10 +29056,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `weather_event` (1 instances)
+### Context: `weather_event`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -25858,13 +29076,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Particles
 
-### Context: `ROOT` (154 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 154
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 154 |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum |  | 140 |
 | `emit_amount` | Number |  | 139 |
@@ -25929,10 +29150,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `scripts` (90 instances)
+### Context: `scripts`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 90
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
 
@@ -25949,10 +29172,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleBouncePlane` (69 instances)
+### Context: `ParticleBouncePlane`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 69
 
 > **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
 
@@ -25968,10 +29193,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleGlobalForce` (27 instances)
+### Context: `ParticleGlobalForce`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 27
 
 > **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
 
@@ -25984,10 +29211,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleTornadoForce` (19 instances)
+### Context: `ParticleTornadoForce`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 19
 
 > **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
 
@@ -26001,10 +29230,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleAttractor` (7 instances)
+### Context: `ParticleAttractor`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -26017,10 +29248,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleRandomForce` (7 instances)
+### Context: `ParticleRandomForce`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -26031,10 +29264,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleCharacterCollision` (1 instances)
+### Context: `ParticleCharacterCollision`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
 
@@ -26050,13 +29285,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Particles 2D
 
-### Context: `ROOT` (19 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 19
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`emit_amount`](./Arrays.md#array-emit_amount) | Array |  | 19 |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array |  | 19 |
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array |  | 19 |
@@ -26094,10 +29332,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `scripts` (18 instances)
+### Context: `scripts`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#particles-2d)
 
@@ -26111,10 +29351,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleLineCollisions` (8 instances)
+### Context: `ParticleLineCollisions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
 
@@ -26128,10 +29370,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ParticleBouncePlane` (5 instances)
+### Context: `ParticleBouncePlane`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts)
 
@@ -26146,13 +29390,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Passives & Statuses
 
-### Context: `ROOT` (511 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 511
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`name`](./Strings.md#string-name) | String | Localization key for the passive's display name. | 511 |
 | [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 510 |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 510 |
@@ -26172,15 +29419,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passives` (884 instances)
+### Context: `passives`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 884
 
 > **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`10`](./Passives_and_Statuses.md#context-10), [`2`](./Passives_and_Statuses.md#context-2), [`3`](./Passives_and_Statuses.md#context-3), [`4`](./Passives_and_Statuses.md#context-4), [`5`](./Passives_and_Statuses.md#context-5), [`6`](./Passives_and_Statuses.md#context-6), [`7`](./Passives_and_Statuses.md#context-7), [`8`](./Passives_and_Statuses.md#context-8), [`9`](./Passives_and_Statuses.md#context-9), [`PassiveAfterXKills`](./Passives_and_Statuses.md#context-passiveafterxkills), [`PassiveAtHealthThreshold`](./Passives_and_Statuses.md#context-passiveathealththreshold), [`PassiveAtInjuryThreshold`](./Passives_and_Statuses.md#context-passiveatinjurythreshold), [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#context-passiveatstatthreshold), [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#context-passivewhenaffectedbyelement), [`ROOT`](./Passives_and_Statuses.md#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 80 |
 | [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions) | Block | Applies the 'AddPassivesToMinions' effect. | 29 |
 | [`MulticlassLevelUp`](./Enums.md#enum-multiclasslevelup) | Enum | Applies the 'MulticlassLevelUp' effect. | 24 |
@@ -26667,10 +29918,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `stats` (97 instances)
+### Context: `stats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 97
 
 > **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2), [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -26688,15 +29941,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttack` (92 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 92
 
 > **Referenced by:** [`AddPassivesToCharmed`](./Passives_and_Statuses.md#context-addpassivestocharmed), [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`PassiveWhenAtFullMana`](./Passives_and_Statuses.md#context-passivewhenatfullmana), [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Poison`](./Arrays.md#array-poison) | Number | Applies the 'Poison' effect. | 12 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 8 |
 | `Knockback` | Number | Applies the 'Knockback' effect. | 7 |
@@ -26745,15 +30002,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (30 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 30
 
 > **Referenced by:** [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#context-damageneighborsaftermove), [`DamageNeighborsOnEndMove`](./Passives_and_Statuses.md#context-damageneighborsonendmove), [`GravityWell`](./Passives_and_Statuses.md#context-gravitywell), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage), [`RevengeDamage`](./Passives_and_Statuses.md#context-revengedamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#context-smiteenemieswhokill), [`fire`](./Passives_and_Statuses.md#context-fire), [`ice`](./Passives_and_Statuses.md#context-ice), [`lightning`](./Passives_and_Statuses.md#context-lightning), [`triattack`](./Passives_and_Statuses.md#context-triattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies the 'VisualFXTile' effect. | 12 |
 | [`SpreadDisease`](./Passives_and_Statuses.md#context-spreaddisease) | Block | Provides a chance to transmit a disease status to adjacent targets. | 7 |
 | [`Stun`](./Arrays.md#array-stun) | Number | Applies the 'Stun' effect. | 6 |
@@ -26776,15 +30040,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToMinions` (29 instances)
+### Context: `AddPassivesToMinions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 29
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 5 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 4 |
 | `IncreaseExplosionDamage` | Number | Applies the 'IncreaseExplosionDamage' effect. | 4 |
@@ -26817,15 +30085,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTookDamage` (21 instances)
+### Context: `StatusOnTookDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 21
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 3 |
 | [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 3 |
 | `ConstitutionUp` | Number | Applies the 'ConstitutionUp' effect. | 2 |
@@ -26849,15 +30121,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEnd` (20 instances)
+### Context: `StatusEachTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 20
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies the 'ForceUseAbility' effect. | 6 |
 | `NonStackingDivineShield` | Number | Applies the 'NonStackingDivineShield' effect. | 4 |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 4 |
@@ -26874,15 +30150,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleEnd` (16 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 16
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 10 |
 | [`CureDisease`](./Passives_and_Statuses.md#context-curedisease) | Block | Applies the 'CureDisease' effect. | 6 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 3 |
@@ -26898,15 +30177,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnKill` (16 instances)
+### Context: `StatusOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 16
 
 > **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies the 'EquipPermanentItem' effect. | 2 |
@@ -26925,10 +30209,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `lock_item_slot` (16 instances)
+### Context: `lock_item_slot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 16
 
 > **Referenced by:** [`ROOT`](./Passives_and_Statuses.md#context-root)
 
@@ -26941,10 +30227,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStart` (14 instances)
+### Context: `SpawnOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -26955,15 +30243,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnStanceSwitch` (14 instances)
+### Context: `StatusOnStanceSwitch`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`PassiveIfAllArmorEmpty`](./Passives_and_Statuses.md#context-passiveifallarmorempty), [`PassiveIfEmptyFace`](./Passives_and_Statuses.md#context-passiveifemptyface), [`PassiveIfEmptyHead`](./Passives_and_Statuses.md#context-passiveifemptyhead), [`PassiveIfEmptyNeck`](./Passives_and_Statuses.md#context-passiveifemptyneck), [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 6 |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies the 'ForceUseAbility' effect. | 2 |
 | `NextBasicAttackCritsThisTurn` | Number | Guarantees the next basic attack executed this turn will be a critical hit. | 2 |
@@ -26975,10 +30268,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpreadDisease` (12 instances)
+### Context: `SpreadDisease`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Passives_and_Statuses.md#context-addstatustobasicmeleeattack), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage), [`effects`](./Passives_and_Statuses.md#context-effects)
 
@@ -26992,15 +30287,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnBegin` (12 instances)
+### Context: `StatusEachTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 12
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Conditional_BadRoll`](./Passives_and_Statuses.md#context-conditional_badroll) | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 3 |
 | [`FillMana`](./Arrays.md#array-fillmana) | Array | Applies the 'FillMana' effect. | 2 |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
@@ -27013,15 +30312,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Ally` (11 instances)
+### Context: `Conditional_Ally`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#context-addstatustoelementabilities), [`Conditional_SourceHasTag`](./Passives_and_Statuses.md#context-conditional_sourcehastag), [`ExtraStatusWhenDealingDamage`](./Passives_and_Statuses.md#context-extrastatuswhendealingdamage), [`StatusKilledCharacters`](./Passives_and_Statuses.md#context-statuskilledcharacters)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `Cleanse` | Number | Applies the 'Cleanse' effect. | 2 |
 | `ClearNegativeEffects` | Number | Applies the 'ClearNegativeEffects' effect. | 2 |
@@ -27036,15 +30340,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CritsApplyStatus` (11 instances)
+### Context: `CritsApplyStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 > **Referenced by:** [`PassiveIfAllArmorEmpty`](./Passives_and_Statuses.md#context-passiveifallarmorempty), [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 5 |
 | `Stun` | Number | Applies the 'Stun' effect. | 3 |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 3 |
@@ -27059,10 +30367,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Temporary` (11 instances)
+### Context: `Temporary`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 > **Referenced by:** [`Conditional_BadRoll`](./Passives_and_Statuses.md#context-conditional_badroll), [`StatusOnGainShield`](./Passives_and_Statuses.md#context-statusongainshield), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage), [`StatusOnTurnEndIfManaOrHealthExact`](./Passives_and_Statuses.md#context-statusonturnendifmanaorhealthexact)
 
@@ -27078,10 +30388,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtStatThreshold` (10 instances)
+### Context: `PassiveAtStatThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27095,10 +30407,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `threshold` (10 instances)
+### Context: `threshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#context-passiveatstatthreshold)
 
@@ -27112,10 +30426,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (9 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27128,15 +30444,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MeleeRevengeDamage` (8 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`effects`](./Passives_and_Statuses.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 7 |
 | `damage` | Number | The base damage properties of an attack. | 4 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 4 |
@@ -27148,15 +30468,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfAllArmorEmpty` (8 instances)
+### Context: `PassiveIfAllArmorEmpty`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddSpellDamage` | Number | Applies the 'AddSpellDamage' effect. | 2 |
 | [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | Applies the 'CounterAttack' effect. | 2 |
 | `ExtraMovePoints` | Number | Applies the 'ExtraMovePoints' effect. | 2 |
@@ -27169,15 +30492,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool` (8 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally), [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy), [`StatusOnGainCoins`](./Passives_and_Statuses.md#context-statusongaincoins), [`StatusOnHealed`](./Passives_and_Statuses.md#context-statusonhealed), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 3 |
 | [`StatusGroup`](./Passives_and_Statuses.md#context-statusgroup) | Block | Groups multiple status effects together for batch application. | 3 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 2 |
@@ -27220,15 +30548,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnCrit` (8 instances)
+### Context: `StatusOnCrit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 3 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
@@ -27239,15 +30570,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Enemy` (7 instances)
+### Context: `Conditional_Enemy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#context-addstatustoelementabilities), [`Conditional_NotBoss`](./Passives_and_Statuses.md#context-conditional_notboss)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 3 |
 | [`Conditional_PartyMember`](./Passives_and_Statuses.md#context-conditional_partymember) | Block | Conditional block: Executes nested logic only if the target is/has PartyMember. | 2 |
 | [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
@@ -27258,10 +30594,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageNeighborsOnEndMove` (7 instances)
+### Context: `DamageNeighborsOnEndMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27277,15 +30615,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfEmptyFace` (7 instances)
+### Context: `PassiveIfEmptyFace`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
 | `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
@@ -27296,15 +30637,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfEmptyHead` (7 instances)
+### Context: `PassiveIfEmptyHead`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
 | `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
@@ -27315,15 +30659,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfEmptyNeck` (7 instances)
+### Context: `PassiveIfEmptyNeck`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddCritMultiplier` | Number | Applies the 'AddCritMultiplier' effect. | 2 |
 | `CritChanceUp` | Number | Applies the 'CritChanceUp' effect. | 2 |
 | `DodgeChance` | Number | Applies the 'DodgeChance' effect. | 2 |
@@ -27334,15 +30681,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAlliesOnDeath` (7 instances)
+### Context: `StatusAlliesOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `HealAndOverhealToShield` | Number | Applies the 'HealAndOverhealToShield' effect. | 2 |
 | `Reanimate` | Number | Applies the 'Reanimate' effect. | 2 |
@@ -27355,15 +30706,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnUseAbilityWithTag` (7 instances)
+### Context: `StatusOnUseAbilityWithTag`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 7 |
 | `RefreshActPoints` | Number | Applies the 'RefreshActPoints' effect. | 3 |
 | [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 2 |
@@ -27376,15 +30731,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToElementAbilities` (6 instances)
+### Context: `AddStatusToElementAbilities`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 6 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 2 |
 | [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 2 |
@@ -27395,15 +30754,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToWeapons` (6 instances)
+### Context: `AddStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 2 |
 | `PullSourceToKnockbackImmuneTarget` | Number | Applies the 'PullSourceToKnockbackImmuneTarget' effect. | 2 |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. | 1 |
@@ -27413,10 +30776,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CureDisease` (6 instances)
+### Context: `CureDisease`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Passives_and_Statuses.md#context-statusonbattleend)
 
@@ -27430,15 +30795,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (6 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy), [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `CaptureFamiliar` | Number | Applies the 'CaptureFamiliar' effect. | 2 |
 | `FactionConversion` | Number | Applies the 'FactionConversion' effect. | 2 |
 | `Marked` | Number | Applies the 'Marked' effect. | 2 |
@@ -27450,10 +30820,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ManaCostReductionTagged` (6 instances)
+### Context: `ManaCostReductionTagged`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27466,10 +30838,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnEachTurn` (6 instances)
+### Context: `SpawnEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27484,10 +30858,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnThingOnDamage` (6 instances)
+### Context: `SpawnThingOnDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27502,15 +30878,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `keyword_tooltips` (6 instances)
+### Context: `keyword_tooltips`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 2 |
 | `MagicWeakness` | Number | Applies the 'MagicWeakness' effect. | 1 |
 
@@ -27518,15 +30898,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToAllDamage` (5 instances)
+### Context: `AddStatusToAllDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `LeaveBehindRockOnKnockback` | Number | Applies the 'LeaveBehindRockOnKnockback' effect. | 2 |
 | `Blind` | Number | Applies the 'Blind' effect. | 1 |
 | [`Conditional_HasTag`](./Passives_and_Statuses.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 1 |
@@ -27536,15 +30920,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicMeleeAttack` (5 instances)
+### Context: `AddStatusToBasicMeleeAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 3 |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 2 |
 | `FaceAway` | Number | Applies the 'FaceAway' effect. | 2 |
@@ -27555,15 +30943,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnCastSpell` (5 instances)
+### Context: `StatusOnCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charge` | Number | Applies the 'Charge' effect. | 2 |
 | `CurrentWeaponDamageUp` | Number | Applies the 'CurrentWeaponDamageUp' effect. | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
@@ -27572,15 +30964,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnOverHealed` (5 instances)
+### Context: `StatusOnOverHealed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies the 'ForceUseAbility_NonStack' effect. | 2 |
 | `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 2 |
 | `CurrentWeaponDamageUp` | Number | Applies the 'CurrentWeaponDamageUp' effect. | 1 |
@@ -27590,10 +30987,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddDamageToElementDamage` (4 instances)
+### Context: `AddDamageToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27606,15 +31005,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToCharmed` (4 instances)
+### Context: `AddPassivesToCharmed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 5 |
 | `AddMaxHealth` | Number | Applies the 'AddMaxHealth' effect. | 2 |
 | `AddSpeed` | Number | Applies the 'AddSpeed' effect. | 2 |
@@ -27624,15 +31026,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToElementDamage` (4 instances)
+### Context: `AddStatusToElementDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
 | `Burn` | Number | Applies the 'Burn' effect. | 2 |
 | [`Conditional_Corpse`](./Passives_and_Statuses.md#context-conditional_corpse) | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 2 |
@@ -27641,15 +31047,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToExplosions` (4 instances)
+### Context: `AddStatusToExplosions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddElement`](./Enums.md#enum-addelement) | Enum | Applies the 'AddElement' effect. | 8 |
 | `Burn` | Number | Applies the 'Burn' effect. | 4 |
 
@@ -27657,10 +31066,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllyManaRegenAura` (4 instances)
+### Context: `AllyManaRegenAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27673,10 +31084,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachRound` (4 instances)
+### Context: `AutocastEachRound`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27690,15 +31103,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_FirstApplicationThisTurn` (4 instances)
+### Context: `Conditional_FirstApplicationThisTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`StatusOnKill`](./Passives_and_Statuses.md#context-statusonkill), [`StatusOnUseAbilityWithTag`](./Passives_and_Statuses.md#context-statusonuseabilitywithtag)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `TakeExtraTurn` | Number | Applies the 'TakeExtraTurn' effect. | 2 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 | `FillMana` | Number | Applies the 'FillMana' effect. | 1 |
@@ -27708,10 +31126,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DistanceBonusDamage` (4 instances)
+### Context: `DistanceBonusDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
@@ -27724,10 +31144,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `EMP` (4 instances)
+### Context: `EMP`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27740,10 +31162,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtHealthThreshold` (4 instances)
+### Context: `PassiveAtHealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27757,10 +31181,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenAffectedByElement` (4 instances)
+### Context: `PassiveWhenAffectedByElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27773,15 +31199,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenAtFullMana` (4 instances)
+### Context: `PassiveWhenAtFullMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 2 |
 | `Brace` | Number | Applies the 'Brace' effect. | 2 |
 | `Flying` | Number | Applies the 'Flying' effect. | 2 |
@@ -27792,15 +31221,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAlliesOnKill` (4 instances)
+### Context: `StatusAlliesOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
@@ -27809,15 +31241,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusIfUnusedMovePoints` (4 instances)
+### Context: `StatusIfUnusedMovePoints`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
 | `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. | 2 |
 | `Brace` | Number | Applies the 'Brace' effect. | 1 |
@@ -27829,15 +31265,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTurnEndIfCastNSpells` (4 instances)
+### Context: `StatusOnTurnEndIfCastNSpells`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `spells` | Number |  | 4 |
 | `DoubleCastSpell` | Number | Applies the 'DoubleCastSpell' effect. | 2 |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
@@ -27847,15 +31287,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTurnEndIfManaExact` (4 instances)
+### Context: `StatusOnTurnEndIfManaExact`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `mana` | Number |  | 4 |
 | `FreeSpell` | Number | Applies the 'FreeSpell' effect. | 2 |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
@@ -27866,15 +31310,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTurnEndIfManaOrHealthExact` (4 instances)
+### Context: `StatusOnTurnEndIfManaOrHealthExact`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `mana` | Number |  | 4 |
 | [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 3 |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
@@ -27888,10 +31336,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `empty_armor_scaled_stats` (4 instances)
+### Context: `empty_armor_scaled_stats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2)
 
@@ -27905,10 +31355,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `spell_graphics_override` (4 instances)
+### Context: `spell_graphics_override`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`EMP`](./Passives_and_Statuses.md#context-emp)
 
@@ -27923,25 +31375,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddSelfStatusToBasicAttack` (3 instances)
+### Context: `AddSelfStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 7 |
 
 </details>
 
 ---
 
-### Context: `AddTemporaryEffectsToBasicAttack` (3 instances)
+### Context: `AddTemporaryEffectsToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -27954,10 +31412,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AmplifyStatus` (3 instances)
+### Context: `AmplifyStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -27968,15 +31428,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_BadRoll` (3 instances)
+### Context: `Conditional_BadRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 3 |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 3 |
 
@@ -27984,25 +31449,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasStatus` (3 instances)
+### Context: `Conditional_HasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 3 |
 
 </details>
 
 ---
 
-### Context: `DeathRattle` (3 instances)
+### Context: `DeathRattle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28015,10 +31487,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ElementalManaCostReduction` (3 instances)
+### Context: `ElementalManaCostReduction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28031,10 +31505,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveTowardsDamageSource` (3 instances)
+### Context: `MoveTowardsDamageSource`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28047,10 +31523,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectOnHitCharacter` (3 instances)
+### Context: `ObjectOnHitCharacter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`StatusEachTurnEnd`](./Passives_and_Statuses.md#context-statuseachturnend), [`StatusEachTurnEndPerEnemyKill`](./Passives_and_Statuses.md#context-statuseachturnendperenemykill)
 
@@ -28063,10 +31541,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnCatCopyOnBattleStart` (3 instances)
+### Context: `SpawnCatCopyOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28079,10 +31559,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStartRandomEmptyTile` (3 instances)
+### Context: `SpawnOnBattleStartRandomEmptyTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28095,15 +31577,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEveryXSpellCasts` (3 instances)
+### Context: `StatusEveryXSpellCasts`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 3 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 2 |
@@ -28115,15 +31601,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusGroup` (3 instances)
+### Context: `StatusGroup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 | `SpawnCoinAnywhere` | Number | Applies the 'SpawnCoinAnywhere' effect. | 2 |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 2 |
@@ -28133,15 +31623,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusKilledCharacters` (3 instances)
+### Context: `StatusKilledCharacters`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AutoReanimate` | Number | Applies the 'AutoReanimate' effect. | 2 |
 | [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 1 |
 
@@ -28149,15 +31642,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnAllyCatDeath` (3 instances)
+### Context: `StatusOnAllyCatDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `FillMana` | Number | Applies the 'FillMana' effect. | 1 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
@@ -28168,15 +31665,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleStart` (3 instances)
+### Context: `StatusOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `FullHeal` | Number | Applies the 'FullHeal' effect. | 2 |
 | `Sleep` | Number | Applies the 'Sleep' effect. | 1 |
 
@@ -28184,15 +31685,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEatFood` (3 instances)
+### Context: `StatusOnEatFood`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 2 |
 | `Cleanse` | Number | Applies the 'Cleanse' effect. | 1 |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 1 |
@@ -28202,15 +31708,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnGainCoins` (3 instances)
+### Context: `StatusOnGainCoins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
 | `DivineShield` | Number | Applies the 'DivineShield' effect. | 1 |
 
@@ -28218,15 +31728,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnHealed` (3 instances)
+### Context: `StatusOnHealed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 1 |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 | `Thorns` | Number | Applies the 'Thorns' effect. | 1 |
@@ -28235,15 +31749,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnKillEnemy` (3 instances)
+### Context: `StatusOnKillEnemy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DivineShield` | Number | Applies the 'DivineShield' effect. | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
 | `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
@@ -28253,15 +31771,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTookDamageFromAbility` (3 instances)
+### Context: `StatusOnTookDamageFromAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `DiminishingHealthRegen` | Number | Applies the 'DiminishingHealthRegen' effect. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 1 |
 
@@ -28269,15 +31792,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `statuses` (3 instances)
+### Context: `statuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`ChanceToRevive`](./Passives_and_Statuses.md#context-chancetorevive), [`StatusOnBattleEndIfKillThresholdMet`](./Passives_and_Statuses.md#context-statusonbattleendifkillthresholdmet)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 2 |
 | `PermanentDexterity` | Number | Applies the 'PermanentDexterity' effect. | 2 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
@@ -28287,10 +31814,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityWhenTaggedCharacterMovesNear` (2 instances)
+### Context: `AbilityWhenTaggedCharacterMovesNear`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28304,10 +31833,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassiveToSpawnedRocks` (2 instances)
+### Context: `AddPassiveToSpawnedRocks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28320,15 +31851,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToSummonAbilityMinions` (2 instances)
+### Context: `AddPassivesToSummonAbilityMinions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `Doomed` | Number | Applies the 'Doomed' effect. | 2 |
 | `MovementUp` | Number | Applies the 'MovementUp' effect. | 2 |
@@ -28337,30 +31872,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddSelfStatusToWeapons` (2 instances)
+### Context: `AddSelfStatusToWeapons`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `ChanceToBreak` | Number | Applies the 'ChanceToBreak' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToAllDamageAbilities` (2 instances)
+### Context: `AddStatusToAllDamageAbilities`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
 | `Piercing` | Number | Applies the 'Piercing' effect. | 1 |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 1 |
@@ -28369,45 +31911,54 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToBasicAttackWithCooldown` (2 instances)
+### Context: `AddStatusToBasicAttackWithCooldown`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `CharmedForceAttack` | Number | Applies the 'CharmedForceAttack' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToFirstBasicAttack` (2 instances)
+### Context: `AddStatusToFirstBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToMeleeDamage` (2 instances)
+### Context: `AddStatusToMeleeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`DelayedWind`](./Passives_and_Statuses.md#context-delayedwind) | Block | Applies the 'DelayedWind' effect. | 1 |
 | [`DelayedWindCone`](./Passives_and_Statuses.md#context-delayedwindcone) | Block | Creates a delayed Area of Effect cone. | 1 |
 
@@ -28415,25 +31966,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToTrampleDamage` (2 instances)
+### Context: `AddStatusToTrampleDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Cleave` | Number | Causes the attack to hit adjacent enemies alongside the primary target. | 2 |
 
 </details>
 
 ---
 
-### Context: `AllyBonusAbilityAura` (2 instances)
+### Context: `AllyBonusAbilityAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -28444,10 +32001,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AllyHealthRegenAura` (2 instances)
+### Context: `AllyHealthRegenAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28460,10 +32019,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AlternateCraftingPools` (2 instances)
+### Context: `AlternateCraftingPools`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28476,30 +32037,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyStatusIfCrit` (2 instances)
+### Context: `ApplyStatusIfCrit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Purge` | Number | Applies the 'Purge' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `ApplyStatusesToRandomEnemiesEachTurn` (2 instances)
+### Context: `ApplyStatusesToRandomEnemiesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bounty` | Number | Applies the 'Bounty' effect. | 2 |
 | `count` | Number | The numerical quantity. | 1 |
 
@@ -28507,15 +32075,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyToSource` (2 instances)
+### Context: `ApplyToSource`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 | `Shield` | Number | Applies the 'Shield' effect. | 1 |
 
@@ -28523,10 +32096,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BoobyTrapItems` (2 instances)
+### Context: `BoobyTrapItems`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28539,10 +32114,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BoostWeaponDamage` (2 instances)
+### Context: `BoostWeaponDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -28553,10 +32130,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BouncyProjectiles` (2 instances)
+### Context: `BouncyProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28569,10 +32148,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatAPultAnimation` (2 instances)
+### Context: `CatAPultAnimation`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28585,15 +32166,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatchProjectiles` (2 instances)
+### Context: `CatchProjectiles`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
 | `ally_chance` | Number |  | 2 |
 | `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
@@ -28603,10 +32187,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBackflip` (2 instances)
+### Context: `ChanceToBackflip`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28619,10 +32205,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ClassManaCostReduction` (2 instances)
+### Context: `ClassManaCostReduction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28635,15 +32223,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Adjacent` (2 instances)
+### Context: `Conditional_Adjacent`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 2 |
 | `BonusCritChance` | Number | Applies the 'BonusCritChance' effect. | 2 |
 | `BonusDamage` | Number | Applies the 'BonusDamage' effect. | 2 |
@@ -28652,15 +32245,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Boss` (2 instances)
+### Context: `Conditional_Boss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusKillers`](./Passives_and_Statuses.md#context-statuskillers)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 1 |
 | `Stun` | Number | Applies the 'Stun' effect. | 1 |
 
@@ -28668,15 +32266,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Corpse` (2 instances)
+### Context: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`AddStatusToElementDamage`](./Passives_and_Statuses.md#context-addstatustoelementdamage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
 | `OverrideDamage` | Number | Applies the 'OverrideDamage' effect. | 2 |
 | `Revive` | Number | Applies the 'Revive' effect. | 2 |
@@ -28689,15 +32292,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasTag` (2 instances)
+### Context: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`AddStatusToAllDamage`](./Passives_and_Statuses.md#context-addstatustoalldamage), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 2 |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 1 |
 | `FlatLeechIfDamaged` | Number | Applies the 'FlatLeechIfDamaged' effect. | 1 |
@@ -28706,55 +32314,70 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_NotBoss` (2 instances)
+### Context: `Conditional_NotBoss`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusKillers`](./Passives_and_Statuses.md#context-statuskillers)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_PartyMember` (2 instances)
+### Context: `Conditional_PartyMember`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Charmed` | Number | Applies the 'Charmed' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Shielded` (2 instances)
+### Context: `Conditional_Shielded`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `BonusCritChance` | Number | Applies the 'BonusCritChance' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `Craft` (2 instances)
+### Context: `Craft`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusOnTookDamage`](./Passives_and_Statuses.md#context-statusontookdamage)
 
@@ -28767,10 +32390,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageNeighborTilesWhenCastSpell` (2 instances)
+### Context: `DamageNeighborTilesWhenCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28785,10 +32410,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageNeighborsAfterMove` (2 instances)
+### Context: `DamageNeighborsAfterMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28803,10 +32430,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageReductionAura` (2 instances)
+### Context: `DamageReductionAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28820,10 +32449,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Earth` (2 instances)
+### Context: `Earth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
@@ -28835,25 +32466,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Electric` (2 instances)
+### Context: `Electric`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `ElementalAttunement` (2 instances)
+### Context: `ElementalAttunement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28874,15 +32510,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `EscapeSequence` (2 instances)
+### Context: `EscapeSequence`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `RandomDistanceDisplace` | Number | Displaces the target by a randomized distance. | 2 |
 | `SafeExplosionIfHitSomething` | Number | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
 
@@ -28890,15 +32529,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Eternal` (2 instances)
+### Context: `Eternal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `health_percent` | Number |  | 2 |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
@@ -28908,10 +32550,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ExtraStatusWhenDealingDamage` (2 instances)
+### Context: `ExtraStatusWhenDealingDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28923,55 +32567,66 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Fire` (2 instances)
+### Context: `Fire`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Burn`](./Math_Equations.md) | Enum | Applies the 'Burn' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `Grass` (2 instances)
+### Context: `Grass`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Poison`](./Math_Equations.md) | Enum | Applies the 'Poison' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `Gravity` (2 instances)
+### Context: `Gravity`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Weakness`](./Math_Equations.md) | Enum | Applies the 'Weakness' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `GravityWell` (2 instances)
+### Context: `GravityWell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -28987,10 +32642,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `HealAlliesEachTurn` (2 instances)
+### Context: `HealAlliesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`PassiveUntilCastSpell`](./Passives_and_Statuses.md#context-passiveuntilcastspell)
 
@@ -29004,30 +32661,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Holy` (2 instances)
+### Context: `Holy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`FlatLeech`](./Math_Equations.md) | Enum | Applies the 'FlatLeech' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `HolyDamageBlessing` (2 instances)
+### Context: `HolyDamageBlessing`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`PassiveUntilGetKill`](./Passives_and_Statuses.md#context-passiveuntilgetkill)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Burn` | Number | Applies the 'Burn' effect. | 2 |
 | `damage_multiplier` | Number |  | 2 |
 
@@ -29035,30 +32698,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Ice` (2 instances)
+### Context: `Ice`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Slow`](./Math_Equations.md) | Enum | Applies the 'Slow' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `InfiniteRebirth` (2 instances)
+### Context: `InfiniteRebirth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `TempSpeedUp` | Number | Applies the 'TempSpeedUp' effect. | 2 |
 | `health` | Number |  | 2 |
 | `playercat_health` | Number |  | 2 |
@@ -29067,15 +32736,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LateBloomer` (2 instances)
+### Context: `LateBloomer`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
@@ -29083,25 +32755,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LightningRod` (2 instances)
+### Context: `LightningRod`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Tech` | Number | Applies the 'Tech' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `LowHealthAllyDodgeChanceAura` (2 instances)
+### Context: `LowHealthAllyDodgeChanceAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29114,10 +32791,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MovementReaction` (2 instances)
+### Context: `MovementReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29130,15 +32809,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextBattleStatus` (2 instances)
+### Context: `NextBattleStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Passives_and_Statuses.md#context-statusonbattleend)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `FullHeal` | Number | Applies the 'FullHeal' effect. | 2 |
 
@@ -29146,10 +32828,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAfterXKills` (2 instances)
+### Context: `PassiveAfterXKills`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29162,15 +32846,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtFullHealth` (2 instances)
+### Context: `PassiveAtFullHealth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `ManaCostReduction` | Number | Applies the 'ManaCostReduction' effect. | 2 |
 | `TakeExtraDamage` | Number | Applies the 'TakeExtraDamage' effect. | 2 |
 
@@ -29178,10 +32865,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtInjuryThreshold` (2 instances)
+### Context: `PassiveAtInjuryThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29196,15 +32885,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveGroup` (2 instances)
+### Context: `PassiveGroup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`RandomPassivePool`](./Passives_and_Statuses.md#context-randompassivepool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`SetDefaultFace`](./Enums.md#enum-setdefaultface) | Enum | Applies the 'SetDefaultFace' effect. | 2 |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 | `CharismaUp` | Number | Applies the 'CharismaUp' effect. | 1 |
@@ -29215,15 +32907,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveUntilCastSpell` (2 instances)
+### Context: `PassiveUntilCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`HealAlliesEachTurn`](./Passives_and_Statuses.md#context-healallieseachturn) | Block | Applies the 'HealAlliesEachTurn' effect. | 2 |
 | [`StatusAlliesEachTurn`](./Passives_and_Statuses.md#context-statusallieseachturn) | Block | Event Trigger: Applies nested statuses to allies each turn. | 1 |
 
@@ -29231,10 +32926,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveUntilGetKill` (2 instances)
+### Context: `PassiveUntilGetKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29246,10 +32943,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenTheAlpha` (2 instances)
+### Context: `PassiveWhenTheAlpha`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29261,15 +32960,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileInMonkMeleeStance` (2 instances)
+### Context: `PassiveWhileInMonkMeleeStance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `Brace` | Number | Applies the 'Brace' effect. | 2 |
 | `HealthRegenUp` | Number | Applies the 'HealthRegenUp' effect. | 1 |
 
@@ -29277,15 +32980,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileInMonkRangedStance` (2 instances)
+### Context: `PassiveWhileInMonkRangedStance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddBonusRange` | Number | Applies the 'AddBonusRange' effect. | 2 |
 | `AddSpellDamage` | Number | Applies the 'AddSpellDamage' effect. | 2 |
 | `KineticSpikes` | Number | Applies the 'KineticSpikes' effect. | 1 |
@@ -29294,25 +33000,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhilePreviewingMonkRangedStance` (2 instances)
+### Context: `PassiveWhilePreviewingMonkRangedStance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AddBonusRange` | Number | Applies the 'AddBonusRange' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileWearingMetal` (2 instances)
+### Context: `PassiveWhileWearingMetal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29324,10 +33035,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RepressedMemoriesMetronome` (2 instances)
+### Context: `RepressedMemoriesMetronome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ScaledStatusOnSpendMana`](./Passives_and_Statuses.md#context-scaledstatusonspendmana)
 
@@ -29340,15 +33053,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusOnOverMana` (2 instances)
+### Context: `ScaledStatusOnOverMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 2 |
 | `Cleanse` | Number | Applies the 'Cleanse' effect. | 1 |
 
@@ -29356,25 +33072,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusOnSpendMana` (2 instances)
+### Context: `ScaledStatusOnSpendMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#context-repressedmemoriesmetronome) | Block | Applies the 'RepressedMemoriesMetronome' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `SecurityBotProtect` (2 instances)
+### Context: `SecurityBotProtect`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29387,10 +33108,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Shadow` (2 instances)
+### Context: `Shadow`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
@@ -29402,10 +33125,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmiteEnemiesWhoKill` (2 instances)
+### Context: `SmiteEnemiesWhoKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29420,15 +33145,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpecialFriends` (2 instances)
+### Context: `SpecialFriends`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
 
@@ -29436,10 +33164,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatsAtLowHealth` (2 instances)
+### Context: `StatsAtLowHealth`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29453,15 +33183,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAfterCastSpell` (2 instances)
+### Context: `StatusAfterCastSpell`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `TempSpellDamageUp` | Number | Applies the 'TempSpellDamageUp' effect. | 2 |
 | `TempDamageUp` | Number | Applies the 'TempDamageUp' effect. | 1 |
 
@@ -29469,30 +33203,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAlliesOnBattleStart` (2 instances)
+### Context: `StatusAlliesOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem) | Enum | Applies the 'EquipTemporaryItem' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesOnGainCoins` (2 instances)
+### Context: `StatusAlliesOnGainCoins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 | `scaled` | Boolean |  | 1 |
@@ -29501,15 +33242,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAllyWhenAllySpendsMana` (2 instances)
+### Context: `StatusAllyWhenAllySpendsMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `threshold` | Number |  | 2 |
 
@@ -29517,30 +33261,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAnyCatAllyWhoKills` (2 instances)
+### Context: `StatusAnyCatAllyWhoKills`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AlphaCat` | Number | Applies the 'AlphaCat' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusDamagers` (2 instances)
+### Context: `StatusDamagers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies the 'Fear' effect. | 1 |
 
@@ -29548,45 +33299,56 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnEndForEachTurn` (2 instances)
+### Context: `StatusEachTurnEndForEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusEachTurnEndPerEnemyKill` (2 instances)
+### Context: `StatusEachTurnEndPerEnemyKill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#context-objectonhitcharacter) | Block | Spawns a specific character or entity upon impact. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusEnemiesOnDeath` (2 instances)
+### Context: `StatusEnemiesOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 2 |
 | `Freeze` | Number | Applies the 'Freeze' effect. | 2 |
 
@@ -29594,15 +33356,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEveryXTurnBegins` (2 instances)
+### Context: `StatusEveryXTurnBegins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `DivineShield` | Number | Applies the 'DivineShield' effect. | 2 |
 | `turns` | Number | The duration of the effect in turns. | 2 |
 
@@ -29610,15 +33375,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusKillers` (2 instances)
+### Context: `StatusKillers`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Conditional_Boss`](./Passives_and_Statuses.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 2 |
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#context-conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 2 |
 
@@ -29626,25 +33394,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnAnyDeath` (2 instances)
+### Context: `StatusOnAnyDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBattleEndIfKillThresholdMet` (2 instances)
+### Context: `StatusOnBattleEndIfKillThresholdMet`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29657,15 +33430,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBreakItem` (2 instances)
+### Context: `StatusOnBreakItem`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Thorns` | Number | Applies the 'Thorns' effect. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 1 |
 
@@ -29673,30 +33450,38 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnCollectPickup` (2 instances)
+### Context: `StatusOnCollectPickup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Tech` | Number | Applies the 'Tech' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnDealtDamage` (2 instances)
+### Context: `StatusOnDealtDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `TempDexterityUp` | Number | Applies the 'TempDexterityUp' effect. | 2 |
 | `TempStrengthUp` | Number | Applies the 'TempStrengthUp' effect. | 2 |
 | `TempLuckUp` | Number | Applies the 'TempLuckUp' effect. | 1 |
@@ -29705,15 +33490,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnDealtDamageThreshold` (2 instances)
+### Context: `StatusOnDealtDamageThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RefreshMovePoints` | Number | Applies the 'RefreshMovePoints' effect. | 2 |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `count_overkill` | Boolean |  | 2 |
@@ -29725,45 +33514,55 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnEndMove` (2 instances)
+### Context: `StatusOnEndMove`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `ForceAttack` | Number | Forces the character to execute an immediate attack. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnGainShield` (2 instances)
+### Context: `StatusOnGainShield`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`Temporary`](./Passives_and_Statuses.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnHeal` (2 instances)
+### Context: `StatusOnHeal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 2 |
 | `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 1 |
 
@@ -29771,15 +33570,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnOverMana` (2 instances)
+### Context: `StatusOnOverMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
 | `SpellDamageUp` | Number | Applies the 'SpellDamageUp' effect. | 2 |
 | `DivineShield` | Number | Applies the 'DivineShield' effect. | 1 |
@@ -29788,15 +33590,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnPickupCoins` (2 instances)
+### Context: `StatusOnPickupCoins`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `RefreshMovePoints` | Number | Applies the 'RefreshMovePoints' effect. | 2 |
 | `DexterityUp` | Number | Applies the 'DexterityUp' effect. | 1 |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 1 |
@@ -29805,30 +33611,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnPopCorpse` (2 instances)
+### Context: `StatusOnPopCorpse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTookDamageFromEnemyAbility` (2 instances)
+### Context: `StatusOnTookDamageFromEnemyAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 2 |
 | `MoveQuivered` | Number | Applies the 'MoveQuivered' effect. | 1 |
 
@@ -29836,15 +33649,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTriggerTrap` (2 instances)
+### Context: `StatusOnTriggerTrap`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DexterityUp` | Number | Applies the 'DexterityUp' effect. | 2 |
 | `Quivered` | Number | Applies the 'Quivered' effect. | 1 |
 
@@ -29852,30 +33669,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnUseBasicAttack` (2 instances)
+### Context: `StatusOnUseBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `FlippedFacingForceAttack` | Number | Applies the 'FlippedFacingForceAttack' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnUseElementAbility` (2 instances)
+### Context: `StatusOnUseElementAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `SpeedUp` | Number | Applies the 'SpeedUp' effect. | 2 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 2 |
 
@@ -29883,15 +33707,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusPerInjury` (2 instances)
+### Context: `StatusPerInjury`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `cap` | Number |  | 2 |
 | [`injury`](./Math_Equations.md) | Enum |  | 2 |
@@ -29901,10 +33728,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusThingsKnockedBack` (2 instances)
+### Context: `StatusThingsKnockedBack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29916,15 +33745,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusWhenAllySpendsMana` (2 instances)
+### Context: `StatusWhenAllySpendsMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `OneUseSpellDamageUp` | Number | Applies the 'OneUseSpellDamageUp' effect. | 2 |
 | `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
 
@@ -29932,15 +33765,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TaggedPickupEffectReplacement` (2 instances)
+### Context: `TaggedPickupEffectReplacement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`HealthGain`](./Math_Equations.md) | Enum | Applies the 'HealthGain' effect. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 2 |
 
@@ -29948,10 +33784,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TowerDefense` (2 instances)
+### Context: `TowerDefense`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -29964,10 +33802,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Water` (2 instances)
+### Context: `Water`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
@@ -29979,10 +33819,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Wind` (2 instances)
+### Context: `Wind`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ElementalAttunement`](./Passives_and_Statuses.md#context-elementalattunement)
 
@@ -29994,10 +33836,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `on_break` (2 instances)
+### Context: `on_break`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`BoobyTrapItems`](./Passives_and_Statuses.md#context-boobytrapitems)
 
@@ -30009,25 +33853,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `on_throw` (2 instances)
+### Context: `on_throw`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`BoobyTrapItems`](./Passives_and_Statuses.md#context-boobytrapitems)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `HitExplosion` | Number | Applies the 'HitExplosion' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `schadenfreude_scaled_stats` (2 instances)
+### Context: `schadenfreude_scaled_stats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2)
 
@@ -30045,10 +33894,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityChargeRefundChance` (1 instances)
+### Context: `AbilityChargeRefundChance`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30061,10 +33912,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityReaction` (1 instances)
+### Context: `AbilityReaction`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30076,25 +33929,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToKnockbackDamage` (1 instances)
+### Context: `AddStatusToKnockbackDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToReceivedDamage_ExcludeStatuses` (1 instances)
+### Context: `AddStatusToReceivedDamage_ExcludeStatuses`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30106,30 +33965,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusToSpells` (1 instances)
+### Context: `AddStatusToSpells`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `LeechPercent` | Number | Applies the 'LeechPercent' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusesIfPersistentWeatherElement` (1 instances)
+### Context: `AddStatusesIfPersistentWeatherElement`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Burn` | Number | Applies the 'Burn' effect. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
@@ -30137,15 +34002,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddStatusesToReceivedElementalDamage` (1 instances)
+### Context: `AddStatusesToReceivedElementalDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Burn` | Number | Applies the 'Burn' effect. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
@@ -30153,10 +34021,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddTemporaryEffectsToEquipment` (1 instances)
+### Context: `AddTemporaryEffectsToEquipment`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30168,10 +34038,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Autism` (1 instances)
+### Context: `Autism`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30184,10 +34056,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachTurnBegin` (1 instances)
+### Context: `AutocastEachTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30199,10 +34073,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToRevive` (1 instances)
+### Context: `ChanceToRevive`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30213,10 +34089,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChangeTile` (1 instances)
+### Context: `ChangeTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30227,10 +34105,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CollectPickupsOnBattleEnd` (1 instances)
+### Context: `CollectPickupsOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30240,30 +34120,38 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_DoesDamage` (1 instances)
+### Context: `Conditional_DoesDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToReceivedDamage_ExcludeStatuses`](./Passives_and_Statuses.md#context-addstatustoreceiveddamage_excludestatuses)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Bleed`](./Arrays.md#array-bleed) | Array | Applies the 'Bleed' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_GoodRoll` (1 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `UseRandomSpell_Madness` | Number | Applies the 'UseRandomSpell_Madness' effect. | 1 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
 
@@ -30271,10 +34159,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_SourceHasTag` (1 instances)
+### Context: `Conditional_SourceHasTag`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
 
@@ -30287,10 +34177,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DamageIfDidntUseSpecificAbility` (1 instances)
+### Context: `DamageIfDidntUseSpecificAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30303,10 +34195,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedWind` (1 instances)
+### Context: `DelayedWind`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToMeleeDamage`](./Passives_and_Statuses.md#context-addstatustomeleedamage)
 
@@ -30318,10 +34212,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedWindCone` (1 instances)
+### Context: `DelayedWindCone`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`AddStatusToMeleeDamage`](./Passives_and_Statuses.md#context-addstatustomeleedamage)
 
@@ -30333,15 +34229,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Diabetes` (1 instances)
+### Context: `Diabetes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 1 |
 
@@ -30349,10 +34248,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `EnergyStorm` (1 instances)
+### Context: `EnergyStorm`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30363,10 +34264,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FindItemFromPool` (1 instances)
+### Context: `FindItemFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30377,10 +34280,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceMoveAway` (1 instances)
+### Context: `ForceMoveAway`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusAdjacentOnTheirTurnBegin`](./Passives_and_Statuses.md#context-statusadjacentontheirturnbegin)
 
@@ -30392,10 +34297,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceUseAbility` (1 instances)
+### Context: `ForceUseAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
 
@@ -30408,10 +34315,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FurnitureStats` (1 instances)
+### Context: `FurnitureStats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30425,10 +34334,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MegaMinions` (1 instances)
+### Context: `MegaMinions`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30439,10 +34350,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MoveWhenDamaged` (1 instances)
+### Context: `MoveWhenDamaged`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30454,15 +34367,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveLevelScaledStatus` (1 instances)
+### Context: `PassiveLevelScaledStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`Shield`](./Math_Equations.md) | String | Applies the 'Shield' effect. | 1 |
 | [`SizeScalePercent`](./Math_Equations.md) | String | Applies the 'SizeScalePercent' effect. | 1 |
 | [`Trample`](./Arrays.md#array-trample) | Array | Applies the 'Trample' effect. | 1 |
@@ -30471,25 +34387,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomPassivePool` (1 instances)
+### Context: `RandomPassivePool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`PassiveGroup`](./Passives_and_Statuses.md#context-passivegroup) | Block | Applies the 'PassiveGroup' effect. | 2 |
 
 </details>
 
 ---
 
-### Context: `ReplaceBrain` (1 instances)
+### Context: `ReplaceBrain`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30503,10 +34424,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Robot` (1 instances)
+### Context: `Robot`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30518,40 +34441,48 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScaledStatusOnBleedDamage` (1 instances)
+### Context: `ScaledStatusOnBleedDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Charge` | Number | Applies the 'Charge' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusOnLoseShield` (1 instances)
+### Context: `ScaledStatusOnLoseShield`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Thorns` | Number | Applies the 'Thorns' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusOnOverHealed` (1 instances)
+### Context: `ScaledStatusOnOverHealed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30563,10 +34494,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SelfDamageWhenDealDamage` (1 instances)
+### Context: `SelfDamageWhenDealDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30579,10 +34512,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StackingDodgeChanceOnTookDamage` (1 instances)
+### Context: `StackingDodgeChanceOnTookDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30595,30 +34530,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAdjacentOnTheirTurnBegin` (1 instances)
+### Context: `StatusAdjacentOnTheirTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ForceMoveAway`](./Passives_and_Statuses.md#context-forcemoveaway) | Block | Applies the 'ForceMoveAway' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesEachTurn` (1 instances)
+### Context: `StatusAlliesEachTurn`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`PassiveUntilCastSpell`](./Passives_and_Statuses.md#context-passiveuntilcastspell)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 1 |
 | `exclude_self` | Boolean |  | 1 |
 
@@ -30626,105 +34567,129 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAlliesOnSpendMana` (1 instances)
+### Context: `StatusAlliesOnSpendMana`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesScaledByCursedOnDeath` (1 instances)
+### Context: `StatusAlliesScaledByCursedOnDeath`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `LuckUp` | Number | Applies the 'LuckUp' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusIfBattleAlreadyBegan` (1 instances)
+### Context: `StatusIfBattleAlreadyBegan`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `PermanentMadness` | Number | Applies the 'PermanentMadness' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEatPill` (1 instances)
+### Context: `StatusOnEatPill`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `AllStatsUp` | Number | Applies the 'AllStatsUp' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnLoseShield` (1 instances)
+### Context: `StatusOnLoseShield`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Thorns` | Number | Applies the 'Thorns' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTakeHealthDamage` (1 instances)
+### Context: `StatusOnTakeHealthDamage`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `PermanentConstitution` | Number | Applies the 'PermanentConstitution' effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTurnEndIfDidntCastAbilityTypes` (1 instances)
+### Context: `StatusOnTurnEndIfDidntCastAbilityTypes`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `ManaGain` | Number | Applies the 'ManaGain' effect. | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
@@ -30732,10 +34697,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StrengthInNumbersAura` (1 instances)
+### Context: `StrengthInNumbersAura`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30746,10 +34713,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Study` (1 instances)
+### Context: `Study`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30760,40 +34729,49 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TakeBonusTurnWithStatus` (1 instances)
+### Context: `TakeBonusTurnWithStatus`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`StatusOnKill`](./Passives_and_Statuses.md#context-statusonkill)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `TheHunger` (1 instances)
+### Context: `TheHunger`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Madness` | Number | Applies the Madness debuff/status effect. | 1 |
 
 </details>
 
 ---
 
-### Context: `TileDamageMultiplier` (1 instances)
+### Context: `TileDamageMultiplier`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30804,10 +34782,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TourettesMeows` (1 instances)
+### Context: `TourettesMeows`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
 
@@ -30820,10 +34800,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `fire` (1 instances)
+### Context: `fire`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
 
@@ -30838,10 +34820,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ice` (1 instances)
+### Context: `ice`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
 
@@ -30856,10 +34840,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `lightning` (1 instances)
+### Context: `lightning`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
 
@@ -30874,10 +34860,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `triattack` (1 instances)
+### Context: `triattack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`DamageNeighborTilesWhenCastSpell`](./Passives_and_Statuses.md#context-damageneighbortileswhencastspell)
 
@@ -30897,10 +34885,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following contexts are numeric keys or array indices.
 
 
-### Context: `2` (372 instances)
+### Context: `2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 372
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30921,10 +34911,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `1` (368 instances)
+### Context: `1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 368
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30943,10 +34935,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `3` (2 instances)
+### Context: `3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30959,10 +34953,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `10` (1 instances)
+### Context: `10`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30973,10 +34969,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `4` (1 instances)
+### Context: `4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30986,10 +34984,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `5` (1 instances)
+### Context: `5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -30999,10 +34999,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `6` (1 instances)
+### Context: `6`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -31012,10 +35014,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `7` (1 instances)
+### Context: `7`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -31025,10 +35029,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `8` (1 instances)
+### Context: `8`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -31038,10 +35044,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `9` (1 instances)
+### Context: `9`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -31053,13 +35061,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Progression Unlocks
 
-### Context: `ROOT` (266 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 266
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`popup`](./Progression_Unlocks.md#context-popup) | Block |  | 266 |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum |  | 127 |
@@ -31181,10 +35192,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `popup` (266 instances)
+### Context: `popup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 266
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31198,10 +35211,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_special_item` (22 instances)
+### Context: `tracy_special_item`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 22
 
 > **Referenced by:** [`tracy_blankcollar1`](./Progression_Unlocks.md#context-tracy_blankcollar1), [`tracy_blankcollar2`](./Progression_Unlocks.md#context-tracy_blankcollar2), [`tracy_blankcollar3`](./Progression_Unlocks.md#context-tracy_blankcollar3), [`tracy_foodstorage1`](./Progression_Unlocks.md#context-tracy_foodstorage1), [`tracy_foodstorage10`](./Progression_Unlocks.md#context-tracy_foodstorage10), [`tracy_foodstorage2`](./Progression_Unlocks.md#context-tracy_foodstorage2), [`tracy_foodstorage3`](./Progression_Unlocks.md#context-tracy_foodstorage3), [`tracy_foodstorage4`](./Progression_Unlocks.md#context-tracy_foodstorage4), [`tracy_foodstorage5`](./Progression_Unlocks.md#context-tracy_foodstorage5), [`tracy_foodstorage6`](./Progression_Unlocks.md#context-tracy_foodstorage6), [`tracy_foodstorage7`](./Progression_Unlocks.md#context-tracy_foodstorage7), [`tracy_foodstorage8`](./Progression_Unlocks.md#context-tracy_foodstorage8), [`tracy_foodstorage9`](./Progression_Unlocks.md#context-tracy_foodstorage9), [`tracy_idol1`](./Progression_Unlocks.md#context-tracy_idol1), [`tracy_idol2`](./Progression_Unlocks.md#context-tracy_idol2), [`tracy_idol3`](./Progression_Unlocks.md#context-tracy_idol3), [`tracy_idol4`](./Progression_Unlocks.md#context-tracy_idol4), [`tracy_idol5`](./Progression_Unlocks.md#context-tracy_idol5), [`tracy_idol6`](./Progression_Unlocks.md#context-tracy_idol6), [`tracy_idol7`](./Progression_Unlocks.md#context-tracy_idol7), [`tracy_max_intro`](./Progression_Unlocks.md#context-tracy_max_intro), [`tracy_max_repeating`](./Progression_Unlocks.md#context-tracy_max_repeating)
 
@@ -31214,10 +35229,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `beanies_quests_intro` (1 instances)
+### Context: `beanies_quests_intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31231,10 +35248,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `beanies_quests_repeat` (1 instances)
+### Context: `beanies_quests_repeat`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31250,10 +35269,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `destinations` (1 instances)
+### Context: `destinations`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31273,10 +35294,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `frank_max_intro` (1 instances)
+### Context: `frank_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31291,10 +35314,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `frank_max_repeating` (1 instances)
+### Context: `frank_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31310,10 +35335,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_4throom` (1 instances)
+### Context: `house_upgrade_4throom`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31327,10 +35354,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_attic` (1 instances)
+### Context: `house_upgrade_attic`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31344,10 +35373,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_largehouse` (1 instances)
+### Context: `house_upgrade_largehouse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31361,10 +35392,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_mediumhouse` (1 instances)
+### Context: `house_upgrade_mediumhouse`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31378,10 +35411,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_max_intro` (1 instances)
+### Context: `jack_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31396,10 +35431,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_max_repeating` (1 instances)
+### Context: `jack_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31415,10 +35452,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade1` (1 instances)
+### Context: `jack_shopupgrade1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31432,10 +35471,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade2` (1 instances)
+### Context: `jack_shopupgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31449,10 +35490,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade3` (1 instances)
+### Context: `jack_shopupgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31466,10 +35509,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade4` (1 instances)
+### Context: `jack_shopupgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31483,10 +35528,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_max_intro` (1 instances)
+### Context: `organ_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31501,10 +35548,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_max_repeating` (1 instances)
+### Context: `organ_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31520,10 +35569,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_unlock` (1 instances)
+### Context: `organ_unlock`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31537,10 +35588,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade1` (1 instances)
+### Context: `organ_upgrade1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31554,10 +35607,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade2` (1 instances)
+### Context: `organ_upgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31571,10 +35626,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade3` (1 instances)
+### Context: `organ_upgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31588,10 +35645,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade4` (1 instances)
+### Context: `organ_upgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31605,10 +35664,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade5` (1 instances)
+### Context: `organ_upgrade5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31622,10 +35683,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade6` (1 instances)
+### Context: `organ_upgrade6`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31639,10 +35702,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `prereqs` (1 instances)
+### Context: `prereqs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31659,10 +35724,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `steven_milliontrashed` (1 instances)
+### Context: `steven_milliontrashed`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31676,10 +35743,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_aggression` (1 instances)
+### Context: `tink_aggression`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31693,10 +35762,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_basestats` (1 instances)
+### Context: `tink_basestats`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31710,10 +35781,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_inbreeding` (1 instances)
+### Context: `tink_inbreeding`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31727,10 +35800,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_max_intro` (1 instances)
+### Context: `tink_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31745,10 +35820,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_max_repeating` (1 instances)
+### Context: `tink_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31764,10 +35841,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_prettybow` (1 instances)
+### Context: `tink_prettybow`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31781,10 +35860,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_relationships` (1 instances)
+### Context: `tink_relationships`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31798,10 +35879,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_sexuality` (1 instances)
+### Context: `tink_sexuality`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31815,10 +35898,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_tags` (1 instances)
+### Context: `tink_tags`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31832,10 +35917,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_blankcollar1` (1 instances)
+### Context: `tracy_blankcollar1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31851,10 +35938,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_blankcollar2` (1 instances)
+### Context: `tracy_blankcollar2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31870,10 +35959,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_blankcollar3` (1 instances)
+### Context: `tracy_blankcollar3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31889,10 +35980,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage1` (1 instances)
+### Context: `tracy_foodstorage1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31908,10 +36001,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage10` (1 instances)
+### Context: `tracy_foodstorage10`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31927,10 +36022,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage2` (1 instances)
+### Context: `tracy_foodstorage2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31946,10 +36043,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage3` (1 instances)
+### Context: `tracy_foodstorage3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31965,10 +36064,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage4` (1 instances)
+### Context: `tracy_foodstorage4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -31984,10 +36085,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage5` (1 instances)
+### Context: `tracy_foodstorage5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32003,10 +36106,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage6` (1 instances)
+### Context: `tracy_foodstorage6`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32022,10 +36127,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage7` (1 instances)
+### Context: `tracy_foodstorage7`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32041,10 +36148,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage8` (1 instances)
+### Context: `tracy_foodstorage8`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32060,10 +36169,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage9` (1 instances)
+### Context: `tracy_foodstorage9`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32079,10 +36190,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol1` (1 instances)
+### Context: `tracy_idol1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32098,10 +36211,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol2` (1 instances)
+### Context: `tracy_idol2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32117,10 +36232,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol3` (1 instances)
+### Context: `tracy_idol3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32136,10 +36253,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol4` (1 instances)
+### Context: `tracy_idol4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32155,10 +36274,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol5` (1 instances)
+### Context: `tracy_idol5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32174,10 +36295,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol6` (1 instances)
+### Context: `tracy_idol6`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32193,10 +36316,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol7` (1 instances)
+### Context: `tracy_idol7`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32212,10 +36337,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_max_intro` (1 instances)
+### Context: `tracy_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32231,10 +36358,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_max_repeating` (1 instances)
+### Context: `tracy_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32251,10 +36380,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_1` (1 instances)
+### Context: `upgrade_storage_1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32270,10 +36401,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_2` (1 instances)
+### Context: `upgrade_storage_2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32289,10 +36422,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_3` (1 instances)
+### Context: `upgrade_storage_3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32308,10 +36443,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_4` (1 instances)
+### Context: `upgrade_storage_4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32327,10 +36464,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_5` (1 instances)
+### Context: `upgrade_storage_5`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32346,10 +36485,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_6` (1 instances)
+### Context: `upgrade_storage_6`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32365,10 +36506,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_7` (1 instances)
+### Context: `upgrade_storage_7`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32384,10 +36527,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_crazy` (1 instances)
+### Context: `upgrade_storage_repeating_crazy`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32406,10 +36551,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_hard` (1 instances)
+### Context: `upgrade_storage_repeating_hard`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32428,10 +36575,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_impossible` (1 instances)
+### Context: `upgrade_storage_repeating_impossible`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32450,10 +36599,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_intro` (1 instances)
+### Context: `upgrade_storage_repeating_intro`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32471,10 +36622,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_normal` (1 instances)
+### Context: `upgrade_storage_repeating_normal`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Progression_Unlocks.md#context-root)
 
@@ -32495,10 +36648,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Save File Percentages
 
-### Context: `complete_checkmarks` (6 instances)
+### Context: `complete_checkmarks`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`1`](./Miscellaneous.md#context-1), [`20`](./Miscellaneous.md#context-20)
 
@@ -32519,10 +36674,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following contexts are numeric keys or array indices.
 
 
-### Context: `1` (39 instances)
+### Context: `1`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 39
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -32533,10 +36690,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `20` (18 instances)
+### Context: `20`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 18
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -32553,13 +36712,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Shops
 
-### Context: `ROOT` (25 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 25
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`meta`](./Shops.md#context-meta) | Block |  | 25 |
 | [`breakdown`](./Shops.md#context-breakdown) | Block |  | 24 |
 | [`item_groups`](./Shops.md#context-item_groups) | Block |  | 24 |
@@ -32574,10 +36736,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Item` (37 instances)
+### Context: `Item`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 37
 
 > **Referenced by:** [`common_item`](./Shops.md#context-common_item), [`consumable`](./Shops.md#context-consumable), [`empty`](./Shops.md#context-empty), [`item`](./Shops.md#context-item), [`mandatory`](./Shops.md#context-mandatory), [`mostly_food`](./Shops.md#context-mostly_food), [`pool`](./Shops.md#context-pool), [`treasure`](./Shops.md#context-treasure)
 
@@ -32592,10 +36756,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `meta` (25 instances)
+### Context: `meta`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 25
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32615,10 +36781,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `breakdown` (24 instances)
+### Context: `breakdown`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 24
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32638,10 +36806,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `item_groups` (24 instances)
+### Context: `item_groups`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 24
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32662,10 +36832,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `treasure` (14 instances)
+### Context: `treasure`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32677,10 +36849,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `item_rarity_costs` (9 instances)
+### Context: `item_rarity_costs`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 9
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32699,10 +36873,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `button_nav` (7 instances)
+### Context: `button_nav`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32714,10 +36890,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `pool` (6 instances)
+### Context: `pool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 6
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32729,10 +36907,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mandatory` (5 instances)
+### Context: `mandatory`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 5
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32745,10 +36925,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Food` (4 instances)
+### Context: `Food`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 > **Referenced by:** [`guaranteed_food`](./Shops.md#context-guaranteed_food), [`mostly_food`](./Shops.md#context-mostly_food)
 
@@ -32763,10 +36945,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LevelUp` (3 instances)
+### Context: `LevelUp`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`levelup`](./Shops.md#context-levelup)
 
@@ -32778,10 +36962,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `levelup` (3 instances)
+### Context: `levelup`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32793,10 +36979,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `breakdown2` (2 instances)
+### Context: `breakdown2`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32812,10 +37000,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `breakdown3` (2 instances)
+### Context: `breakdown3`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32830,10 +37020,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `breakdown4` (2 instances)
+### Context: `breakdown4`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -32848,10 +37040,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `common_item` (2 instances)
+### Context: `common_item`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32863,10 +37057,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `consumable` (2 instances)
+### Context: `consumable`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32878,10 +37074,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `guaranteed_food` (2 instances)
+### Context: `guaranteed_food`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32893,10 +37091,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `item` (2 instances)
+### Context: `item`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32908,10 +37108,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mostly_food` (2 instances)
+### Context: `mostly_food`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32924,10 +37126,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `empty` (1 instances)
+### Context: `empty`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -32941,13 +37145,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Spawns & Enemy Pools
 
-### Context: `ROOT` (550 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 550
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`editor`](./Spawns_and_Enemy_Pools.md#context-editor) | Block |  | 550 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 543 |
 | `value` | Number |  | 377 |
@@ -32966,10 +37173,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `editor` (550 instances)
+### Context: `editor`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 550
 
 > **Referenced by:** [`ROOT`](./Spawns_and_Enemy_Pools.md#context-root)
 
@@ -32987,10 +37196,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `weather_element_alt` (1 instances)
+### Context: `weather_element_alt`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Spawns_and_Enemy_Pools.md#context-root)
 
@@ -33005,13 +37216,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Status Effect Keywords
 
-### Context: `ROOT` (236 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 236
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`name`](./Strings.md#string-name) | String |  | 236 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 157 |
 | [`tooltip_stackless`](./Strings.md#string-tooltip_stackless) | String |  | 76 |
@@ -33033,13 +37247,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Team Names
 
-### Context: `ROOT` (15 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 15
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`adjectives`](./Arrays.md#array-adjectives) | Array |  | 15 |
 | [`nouns`](./Arrays.md#array-nouns) | Array |  | 15 |
 | [`format`](./Strings.md#string-format) | String |  | 1 |
@@ -33051,13 +37268,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Tiles
 
-### Context: `ROOT` (27 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 27
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`editor`](./Miscellaneous.md#context-editor) | Block |  | 27 |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 26 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 4 |
@@ -33066,10 +37286,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `editor` (27 instances)
+### Context: `editor`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 27
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#tiles)
 
@@ -33087,10 +37309,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tile` (2 instances)
+### Context: `tile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -33104,13 +37328,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ## Tilesets
 
-### Context: `ROOT` (22 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 22
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`global_objects`](./Miscellaneous.md#context-global_objects) | Block |  | 22 |
 | [`combat_background`](./Enums.md#enum-combat_background) | Enum |  | 21 |
 | [`combat_ui_background`](./Enums.md#enum-combat_ui_background) | Enum |  | 21 |
@@ -33136,10 +37363,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `global_objects` (22 instances)
+### Context: `global_objects`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 22
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
 
@@ -33154,10 +37383,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `battle` (14 instances)
+### Context: `battle`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`reverb`](./Miscellaneous.md#context-reverb)
 
@@ -33173,10 +37404,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb` (14 instances)
+### Context: `reverb`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 14
 
 > **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
 
@@ -33188,10 +37421,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Lighting` (10 instances)
+### Context: `Lighting`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 10
 
 > **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
 
@@ -33206,10 +37441,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Fly` (7 instances)
+### Context: `Fly`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 7
 
 > **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
 
@@ -33221,10 +37458,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Cockroach` (3 instances)
+### Context: `Cockroach`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 > **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
 
@@ -33236,10 +37475,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Firefly` (1 instances)
+### Context: `Firefly`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 > **Referenced by:** [`global_objects`](./Miscellaneous.md#context-global_objects)
 

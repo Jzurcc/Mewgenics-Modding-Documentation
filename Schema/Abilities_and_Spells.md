@@ -2,60 +2,65 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Abilities & Spells
 
 > **Associated Files:** `data/abilities/, data/ability_templates/`
 
 
-### Context: `ROOT` (2343 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 2343
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block | Block defining the combat math and status effects applied upon successful hit. | 2343 |
-| [`meta`](./Abilities_and_Spells.md#context-meta) | Block | Block defining UI display data (Name, Description, Icon). | 2333 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`damage_instance`](#context-damage_instance) | Block | Block defining the combat math and status effects applied upon successful hit. | 2343 |
+| [`meta`](#context-meta) | Block | Block defining UI display data (Name, Description, Icon). | 2333 |
 | [`template`](./Enums.md#enum-template) | Enum | Inherits baseline internal logic from a hardcoded engine template. | 2174 |
-| [`graphics`](./Abilities_and_Spells.md#context-graphics) | Block | Block defining visual animations and sequence timings. | 2037 |
-| [`target`](./Abilities_and_Spells.md#context-target) | Block | Block defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
-| [`cost`](./Abilities_and_Spells.md#context-cost) | Block | Block defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
+| [`graphics`](#context-graphics) | Block | Block defining visual animations and sequence timings. | 2037 |
+| [`target`](#context-target) | Block | Block defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
+| [`cost`](#context-cost) | Block | Block defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum | Inherits properties from a previously defined ability (used for upgrading tiers). | 900 |
 | [`tags`](./Arrays.md#array-tags) | Array | Array of string categories used by the engine for filtering (e.g. [weapon_throw, spell]). | 238 |
-| [`self_damage`](./Abilities_and_Spells.md#context-self_damage) | Block | Recoil or self-inflicted damage/effects applied to the caster. | 218 |
-| [`spawn`](./Abilities_and_Spells.md#context-spawn) | Block | Parameters for summoning new characters, objects, or entities. | 192 |
-| [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives) | Block | Passives granted to the character while this ability is equipped. | 136 |
+| [`self_damage`](#context-self_damage) | Block | Recoil or self-inflicted damage/effects applied to the caster. | 218 |
+| [`spawn`](#context-spawn) | Block | Parameters for summoning new characters, objects, or entities. | 192 |
+| [`bonus_passives`](#context-bonus_passives) | Block | Passives granted to the character while this ability is equipped. | 136 |
 | [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 90 |
-| [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects) | Block | Status applications that wear off automatically or at the end of the turn. | 88 |
-| [`sounds`](./Abilities_and_Spells.md#context-sounds) | Block | Audio cues triggered by the ability. | 39 |
-| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | Secondary Area of Effect blast parameters. | 34 |
+| [`temporary_effects`](#context-temporary_effects) | Block | Status applications that wear off automatically or at the end of the turn. | 88 |
+| [`sounds`](#context-sounds) | Block | Audio cues triggered by the ability. | 39 |
+| [`splash_damage`](#context-splash_damage) | Block | Secondary Area of Effect blast parameters. | 34 |
 | [`ai_ability`](./Enums.md#enum-ai_ability) | Enum | Overrides the ability used when triggered by AI. | 29 |
-| [`keyword_tooltips`](./Abilities_and_Spells.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 23 |
+| [`keyword_tooltips`](#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 23 |
 | [`chain_ability`](./Enums.md#enum-chain_ability) | Enum | An ability that automatically executes sequentially after this one. | 15 |
 | [`sub_ability`](./Enums.md#enum-sub_ability) | Enum | A secondary ability component referenced by complex templates. | 8 |
 | [`cloned_ability`](./Enums.md#enum-cloned_ability) | Enum | Copies the properties of another ability dynamically. | 2 |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
-| [`empty_self_damage`](./Abilities_and_Spells.md#context-empty_self_damage) | Block | Recoil damage specifically applied when the attack misses all targets. | 2 |
-| [`bonk_damage`](./Abilities_and_Spells.md#context-bonk_damage) | Block | Damage dealt when knocked into a wall or obstacle. | 1 |
-| [`damage`](./Abilities_and_Spells.md#context-damage) | Block | The base damage properties of an attack. | 1 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
+| [`empty_self_damage`](#context-empty_self_damage) | Block | Recoil damage specifically applied when the attack misses all targets. | 2 |
+| [`bonk_damage`](#context-bonk_damage) | Block | Damage dealt when knocked into a wall or obstacle. | 1 |
+| [`damage`](#context-damage) | Block | The base damage properties of an attack. | 1 |
 
 </details>
 
 ---
 
-### Context: `damage_instance` (2344 instances)
+### Context: `damage_instance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`NukeQuestFinalBossModifications`](./Abilities_and_Spells.md#context-nukequestfinalbossmodifications), [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 2344
+
+> **Referenced by:** [`NukeQuestFinalBossModifications`](#context-nukequestfinalbossmodifications), [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1785 |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1785 |
 | `damage` | Number | The base damage properties of an attack. | 1446 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 358 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 352 |
@@ -98,12 +103,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `meta` (2333 instances)
+### Context: `meta`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 2333
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -130,16 +137,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `graphics` (2037 instances)
+### Context: `graphics`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 2037
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[graphic_block]`](./Engine_Graphics.md#all-confirmed-graphic-block-values) | Block | A visual/animation configuration. See Engine_Graphics.md for the full schema. |  |
+| [`{Graphic Blocks}`](./Engine_Graphics.md) | Block | **(Supports Multiple)** A visual/animation configuration. See Engine_Graphics.md. |  |
 | [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 1559 |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. | 488 |
 | [`projectile`](./Enums.md#enum-projectile) | Enum | References a projectile entity. | 228 |
@@ -206,7 +215,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`empty_animation`](./Enums.md#enum-empty_animation) | Enum |  | 5 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 5 |
 | `fixed_jump_height` | Number |  | 4 |
-| [`rocket_swirl`](./Abilities_and_Spells.md#context-rocket_swirl) | Block | Visual parameters for swirling projectile paths. | 4 |
+| [`rocket_swirl`](#context-rocket_swirl) | Block | Visual parameters for swirling projectile paths. | 4 |
 | `sync_frames` | Number |  | 4 |
 | [`dash_decelerating_animation`](./Enums.md#enum-dash_decelerating_animation) | Enum |  | 3 |
 | `decelerate` | Number | Visual slowdown at the end of a movement. | 3 |
@@ -239,7 +248,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `apex_distance` | Number | Calculations for the peak of a jump/lob arc. | 1 |
 | [`apex_time`](./Enums.md#enum-apex_time) | Enum | Calculations for the peak of a jump/lob arc. | 1 |
 | `bypass_combatspeed` | Boolean |  | 1 |
-| [`damage_threshold_altanimations`](./Abilities_and_Spells.md#context-damage_threshold_altanimations) | Block | Triggers different hit animations based on the amount of damage dealt. | 1 |
+| [`damage_threshold_altanimations`](#context-damage_threshold_altanimations) | Block | Triggers different hit animations based on the amount of damage dealt. | 1 |
 | [`dash_bonk_animation`](./Enums.md#enum-dash_bonk_animation) | Enum |  | 1 |
 | `delay_from_map_center` | Boolean | Positional based timing delays. | 1 |
 | `delay_from_reverse_map_edge` | Boolean |  | 1 |
@@ -263,39 +272,47 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (2012 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#context-dodamage), [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage), [`ROOT`](./Abilities_and_Spells.md#context-root), [`RevengeDamage`](./Abilities_and_Spells.md#context-revengedamage), [`bonk_damage`](./Abilities_and_Spells.md#context-bonk_damage), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`empty_self_damage`](./Abilities_and_Spells.md#context-empty_self_damage), [`self_damage`](./Abilities_and_Spells.md#context-self_damage), [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage)
+**Total Count:** 2012
+
+> **Referenced by:** [`DoDamage`](#context-dodamage), [`MeleeRevengeDamage`](#context-meleerevengedamage), [`ROOT`](#context-root), [`RevengeDamage`](#context-revengedamage), [`bonk_damage`](#context-bonk_damage), [`damage_instance`](#context-damage_instance), [`empty_self_damage`](#context-empty_self_damage), [`self_damage`](#context-self_damage), [`splash_damage`](#context-splash_damage)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 59 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 27 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 15 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 13 |
-| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 11 |
-| [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 9 |
-| [`ApplyStatusIfCrit`](./Abilities_and_Spells.md#context-applystatusifcrit) | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 7 |
-| [`TakeBonusTurnWithStatus`](./Abilities_and_Spells.md#context-takebonusturnwithstatus) | Block | Grants the character an immediate extra turn while afflicted with specific statuses. | 4 |
-| [`TakeBonusTurnWithAIControl`](./Abilities_and_Spells.md#context-takebonusturnwithaicontrol) | Block | Grants the character an immediate extra turn, but forces the AI to control them during it. | 2 |
-| [`Conditional_HasCleansableDebuffs`](./Abilities_and_Spells.md#context-conditional_hascleansabledebuffs) | Block | Conditional trigger: Executes nested logic if the target currently has negative status effects that can be cleansed. | 1 |
-| [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
-| [`StatusGroup`](./Abilities_and_Spells.md#context-statusgroup) | Block | Groups multiple status effects together for batch application. | 1 |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 59 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 27 |
+| [`Consumed`](#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 15 |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 13 |
+| [`ApplyToSourceOnKill`](#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 11 |
+| [`ApplyPassives`](#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 9 |
+| [`ApplyStatusIfCrit`](#context-applystatusifcrit) | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 7 |
+| [`TakeBonusTurnWithStatus`](#context-takebonusturnwithstatus) | Block | Grants the character an immediate extra turn while afflicted with specific statuses. | 4 |
+| [`TakeBonusTurnWithAIControl`](#context-takebonusturnwithaicontrol) | Block | Grants the character an immediate extra turn, but forces the AI to control them during it. | 2 |
+| [`Conditional_HasCleansableDebuffs`](#context-conditional_hascleansabledebuffs) | Block | Conditional trigger: Executes nested logic if the target currently has negative status effects that can be cleansed. | 1 |
+| [`CreateGlobalModifiers`](#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
+| [`StatusGroup`](#context-statusgroup) | Block | Groups multiple status effects together for batch application. | 1 |
 
 </details>
 
 ---
 
-### Context: `target` (1862 instances)
+### Context: `target`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 1862
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -403,12 +420,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `cost` (1851 instances)
+### Context: `cost`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 1851
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -460,17 +479,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `self_damage` (220 instances)
+### Context: `self_damage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`NukeQuestFinalBossModifications`](./Abilities_and_Spells.md#context-nukequestfinalbossmodifications), [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 220
+
+> **Referenced by:** [`NukeQuestFinalBossModifications`](#context-nukequestfinalbossmodifications), [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 200 |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 200 |
 | `damage` | Equation | The base damage properties of an attack. | 47 |
 | `piercing` | Boolean |  | 12 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 |
@@ -485,25 +506,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `spawn` (192 instances)
+### Context: `spawn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 192
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 184 |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 59 |
 | `ai_base_score` | Number |  | 31 |
-| [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives) | Block | Passives granted intrinsically to a spawned entity. | 20 |
+| [`additional_passives`](#context-additional_passives) | Block | Passives granted intrinsically to a spawned entity. | 20 |
 | [`first_turn`](./Enums.md#enum-first_turn) | Enum |  | 17 |
 | [`layer`](./Enums.md#enum-layer) | Enum |  | 14 |
 | [`catdata`](./Enums.md#enum-catdata) | Enum | Defines genetic/clone data cloning. | 13 |
 | `clone_items` | Boolean | If true, transfers inventory to the clone. | 12 |
 | `lob` | Boolean |  | 4 |
-| [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses) | Block | Status effects applied immediately after an entity spawns. | 4 |
+| [`post_spawn_statuses`](#context-post_spawn_statuses) | Block | Status effects applied immediately after an entity spawns. | 4 |
 | `size` | Number |  | 4 |
 | `face_camera` | Boolean |  | 2 |
 | `inherit_elite_buffs` | Boolean |  | 2 |
@@ -521,33 +544,40 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bonus_passives` (136 instances)
+### Context: `bonus_passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 136
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
-| [`RevengeDamage`](./Abilities_and_Spells.md#context-revengedamage) | Block | Reaction trigger: Deals damage to the attacker when hit. | 1 |
-| [`StatusKillers`](./Abilities_and_Spells.md#context-statuskillers) | Block | Instantly kills the target if they possess the specified status effects. | 1 |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
+| [`RevengeDamage`](#context-revengedamage) | Block | Reaction trigger: Deals damage to the attacker when hit. | 1 |
+| [`StatusKillers`](#context-statuskillers) | Block | Instantly kills the target if they possess the specified status effects. | 1 |
 
 </details>
 
 ---
 
-### Context: `temporary_effects` (88 instances)
+### Context: `temporary_effects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 88
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `Trample` | Number | Applies or references the 'Trample' effect/state. | 26 |
 | `CastAgain` | Number | Applies or references the 'CastAgain' effect/state. | 20 |
 | `DisableTrample` | Number | Applies or references the 'DisableTrample' effect/state. | 10 |
@@ -556,7 +586,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `JustInCaseTrample` | Number | Applies or references the 'JustInCaseTrample' effect/state. | 5 |
 | [`LeaveBehind`](./Enums.md#enum-leavebehind) | Enum | Spawns a specific object at the character's previous location when they move. | 5 |
 | `DashFury` | Number | Applies or references the 'DashFury' effect/state. | 3 |
-| [`AfterImage`](./Abilities_and_Spells.md#context-afterimage) | Block | Spawns a visual decoy or shade at the caster's previous location. | 2 |
+| [`AfterImage`](#context-afterimage) | Block | Spawns a visual decoy or shade at the caster's previous location. | 2 |
 | `BearTrapTrail` | Number | Applies or references the 'BearTrapTrail' effect/state. | 2 |
 | `DelayedWindTrail` | Number | Applies or references the 'DelayedWindTrail' effect/state. | 1 |
 | `DoubleLoot` | Number | Applies or references the 'DoubleLoot' effect/state. | 1 |
@@ -568,65 +598,79 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (71 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`Conditional_Buddy`](./Abilities_and_Spells.md#context-conditional_buddy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object), [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 71
+
+> **Referenced by:** [`Conditional_Boss`](#context-conditional_boss), [`Conditional_Buddy`](#context-conditional_buddy), [`Conditional_HasTag`](#context-conditional_hastag), [`Conditional_Object`](#context-conditional_object), [`Conditional_Speculative`](#context-conditional_speculative), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
+| [`ApplyToRandomPartyMemberIfPossible`](#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
+| [`Consumed`](#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyToSource` (51 instances)
+### Context: `ApplyToSource`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyStatusIfCrit`](./Abilities_and_Spells.md#context-applystatusifcrit), [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate), [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold), [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#context-conditional_livingplayercat), [`Conditional_PlayerCat`](./Abilities_and_Spells.md#context-conditional_playercat), [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#context-conditional_sourceabilityhastag), [`Else`](./Abilities_and_Spells.md#context-else), [`Math`](./Abilities_and_Spells.md#context-math), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 51
+
+> **Referenced by:** [`ApplyStatusIfCrit`](#context-applystatusifcrit), [`CanApplyToInanimate`](#context-canapplytoinanimate), [`Conditional_Ally`](#context-conditional_ally), [`Conditional_Enemy`](#context-conditional_enemy), [`Conditional_GoodRoll`](#context-conditional_goodroll), [`Conditional_HasStatus`](#context-conditional_hasstatus), [`Conditional_HasTag`](#context-conditional_hastag), [`Conditional_HealthThreshold`](#context-conditional_healththreshold), [`Conditional_LivingPlayerCat`](#context-conditional_livingplayercat), [`Conditional_PlayerCat`](#context-conditional_playercat), [`Conditional_SourceAbilityHasTag`](#context-conditional_sourceabilityhastag), [`Else`](#context-else), [`Math`](#context-math), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_HasTag` (42 instances)
+### Context: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 42
+
+> **Referenced by:** [`Conditional_Object`](#context-conditional_object), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 41 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
-| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 2 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
+| [`ApplyToSourceOnKill`](#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 2 |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
 
 </details>
 
 ---
 
-### Context: `Temporary` (41 instances)
+### Context: `Temporary`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate), [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_NotAlly`](./Abilities_and_Spells.md#context-conditional_notally), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 41
+
+> **Referenced by:** [`CanApplyToInanimate`](#context-canapplytoinanimate), [`Conditional_Ally`](#context-conditional_ally), [`Conditional_Enemy`](#context-conditional_enemy), [`Conditional_NotAlly`](#context-conditional_notally), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -643,12 +687,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `sounds` (39 instances)
+### Context: `sounds`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 39
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -661,36 +707,42 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Enemy` (36 instances)
+### Context: `Conditional_Enemy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Corpse`](./Abilities_and_Spells.md#context-conditional_corpse), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 36
+
+> **Referenced by:** [`Conditional_Corpse`](#context-conditional_corpse), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
-| [`Conditional_FinishedSpawning`](./Abilities_and_Spells.md#context-conditional_finishedspawning) | Block | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`ApplyToSourceOnKill`](#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
+| [`Conditional_FinishedSpawning`](#context-conditional_finishedspawning) | Block | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 1 |
 
 </details>
 
 ---
 
-### Context: `splash_damage` (35 instances)
+### Context: `splash_damage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`NukeQuestFinalBossModifications`](./Abilities_and_Spells.md#context-nukequestfinalbossmodifications), [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 35
+
+> **Referenced by:** [`NukeQuestFinalBossModifications`](#context-nukequestfinalbossmodifications), [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `damage` | Number | The base damage properties of an attack. | 32 |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 17 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 17 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 13 |
 | `knockback` | Number | Knockback force of the splash blast. | 13 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 12 |
@@ -706,43 +758,53 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Ally` (25 instances)
+### Context: `Conditional_Ally`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 25
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`ApplyToSourceOnKill`](#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
 
 </details>
 
 ---
 
-### Context: `keyword_tooltips` (23 instances)
+### Context: `keyword_tooltips`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 23
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[keyword_id]`](./Engine_Statuses.md#all-confirmed-keyword-id-values) | String | A Status or Keyword ID whose tooltip text is defined here. See Engine_Statuses.md for all IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`[keyword_id]`](./Engine_Statuses.md#all-confirmed-keyword_id-values) | String | A Status or Keyword ID whose tooltip text is defined here. See Engine_Statuses.md for all IDs. |  |
 </details>
 
 ---
 
-### Context: `KnockUpAndAway` (21 instances)
+### Context: `KnockUpAndAway`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Conditional_LastHit`](./Abilities_and_Spells.md#context-conditional_lasthit), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 21
+
+> **Referenced by:** [`ApplyToSource`](#context-applytosource), [`Conditional_LastHit`](#context-conditional_lasthit), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -755,44 +817,53 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `additional_passives` (20 instances)
+### Context: `additional_passives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
+**Total Count:** 20
+
+> **Referenced by:** [`spawn`](#context-spawn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 </details>
 
 ---
 
-### Context: `RandomStatusFromPool` (19 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyMultipleTimes`](./Abilities_and_Spells.md#context-applymultipletimes), [`Conditional_CanBeHealed`](./Abilities_and_Spells.md#context-conditional_canbehealed), [`Conditional_HasCleansableDebuffs`](./Abilities_and_Spells.md#context-conditional_hascleansabledebuffs), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 19
+
+> **Referenced by:** [`ApplyMultipleTimes`](#context-applymultipletimes), [`Conditional_CanBeHealed`](#context-conditional_canbehealed), [`Conditional_HasCleansableDebuffs`](#context-conditional_hascleansabledebuffs), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Consumed` (18 instances)
+### Context: `Consumed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Buddy`](./Abilities_and_Spells.md#context-conditional_buddy), [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#context-conditional_livingplayercat), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 18
+
+> **Referenced by:** [`Conditional_Buddy`](#context-conditional_buddy), [`Conditional_LivingPlayerCat`](#context-conditional_livingplayercat), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 13 |
 | `force_contact` | Boolean | If true, enforces physical overlap. | 11 |
 | `instant` | Boolean |  | 8 |
@@ -801,7 +872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `do_not_pop_corpse` | Boolean |  | 7 |
 | `drop_on_death` | Boolean |  | 7 |
 | `drop_on_self_death` | Boolean |  | 3 |
-| [`extra_statuses`](./Abilities_and_Spells.md#context-extra_statuses) | Block | Additional generic status applications. | 3 |
+| [`extra_statuses`](#context-extra_statuses) | Block | Additional generic status applications. | 3 |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum |  | 1 |
 | `kill_on_consume` | Boolean |  | 1 |
 | `use_placeholder` | Boolean |  | 1 |
@@ -810,63 +881,77 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Boss` (17 instances)
+### Context: `Conditional_Boss`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 17
+
+> **Referenced by:** [`Conditional_HasTag`](#context-conditional_hastag), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 4 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 4 |
 
 </details>
 
 ---
 
-### Context: `ApplyToSourceOnKill` (15 instances)
+### Context: `ApplyToSourceOnKill`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 15
+
+> **Referenced by:** [`Conditional_Ally`](#context-conditional_ally), [`Conditional_Enemy`](#context-conditional_enemy), [`Conditional_HasTag`](#context-conditional_hastag), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `CanApplyToInanimate` (15 instances)
+### Context: `CanApplyToInanimate`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 15
+
+> **Referenced by:** [`Conditional_HasTag`](#context-conditional_hastag), [`Conditional_NotBoss`](#context-conditional_notboss), [`Conditional_Object`](#context-conditional_object), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 10 |
 | [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 4 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 3 |
 | `GetAggroTarget` | Number | Applies or references the 'GetAggroTarget' effect/state. | 2 |
 | `PreventDeathTransforms` | Number | Applies or references the 'PreventDeathTransforms' effect/state. | 1 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
+| [`Temporary`](#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
 
 </details>
 
 ---
 
-### Context: `CatPartsTransform` (14 instances)
+### Context: `CatPartsTransform`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 14
+
+> **Referenced by:** [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -891,26 +976,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_NotBoss` (14 instances)
+### Context: `Conditional_NotBoss`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 14
+
+> **Referenced by:** [`Conditional_Enemy`](#context-conditional_enemy), [`Conditional_HasTag`](#context-conditional_hastag), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `FormChange` (14 instances)
+### Context: `FormChange`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool)
+**Total Count:** 14
+
+> **Referenced by:** [`Else`](#context-else), [`RandomStatusFromPool`](#context-randomstatusfrompool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -921,27 +1012,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasStatus` (13 instances)
+### Context: `Conditional_HasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 13
+
+> **Referenced by:** [`Conditional_Boss`](#context-conditional_boss), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 13 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
 
 ---
 
-### Context: `EvolveAbilityFromPool` (13 instances)
+### Context: `EvolveAbilityFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 13
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -952,46 +1049,55 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_GoodRoll` (12 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 12
+
+> **Referenced by:** [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`ApplyToRandomPartyMemberIfPossible`](#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Speculative` (12 instances)
+### Context: `Conditional_Speculative`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#context-conditional_affectedbyelement), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 12
+
+> **Referenced by:** [`Conditional_AffectedByElement`](#context-conditional_affectedbyelement), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
 </details>
 
 ---
 
-### Context: `DoScreenShake` (12 instances)
+### Context: `DoScreenShake`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 12
+
+> **Referenced by:** [`TimeDelayStatusApplication`](#context-timedelaystatusapplication), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1002,12 +1108,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBreakFree` (11 instances)
+### Context: `ChanceToBreakFree`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 11
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1019,10 +1127,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChangeTile` (11 instances)
+### Context: `ChangeTile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 11
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1034,44 +1144,52 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyPassives` (10 instances)
+### Context: `ApplyPassives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_RandomChance`](./Abilities_and_Spells.md#context-conditional_randomchance), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 10
+
+> **Referenced by:** [`Conditional_RandomChance`](#context-conditional_randomchance), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 3 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`StatusOnBattleEnd`](#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 3 |
 
 </details>
 
 ---
 
-### Context: `Conditional_FormulaIsPositive` (10 instances)
+### Context: `Conditional_FormulaIsPositive`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 10
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`formula`](./Math_Equations.md) | Enum | The math expression to evaluate. | 8 |
 
 </details>
 
 ---
 
-### Context: `Craft` (9 instances)
+### Context: `Craft`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 9
+
+> **Referenced by:** [`ApplyToSource`](#context-applytosource), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1084,109 +1202,133 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyStatusIfCrit` (7 instances)
+### Context: `ApplyStatusIfCrit`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 7
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 6 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 6 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Corpse` (7 instances)
+### Context: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 7
+
+> **Referenced by:** [`Conditional_Ally`](#context-conditional_ally), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_InForm` (7 instances)
+### Context: `Conditional_InForm`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Buddy`](./Abilities_and_Spells.md#context-conditional_buddy), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 7
+
+> **Referenced by:** [`Conditional_Buddy`](#context-conditional_buddy), [`Conditional_HasTag`](#context-conditional_hastag), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HealthThreshold` (6 instances)
+### Context: `Conditional_HealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 6
+
+> **Referenced by:** [`Conditional_NotBoss`](#context-conditional_notboss), [`Conditional_Speculative`](#context-conditional_speculative), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`threshold_expr`](./Math_Equations.md) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Object` (6 instances)
+### Context: `Conditional_Object`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 6
+
+> **Referenced by:** [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 
 </details>
 
 ---
 
-### Context: `Conditional_PlayerCat` (6 instances)
+### Context: `Conditional_PlayerCat`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 6
+
+> **Referenced by:** [`Conditional_Ally`](#context-conditional_ally), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
 
 ---
 
-### Context: `DoDistortionRing` (6 instances)
+### Context: `DoDistortionRing`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 6
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1198,12 +1340,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SwitchMusic` (6 instances)
+### Context: `SwitchMusic`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 6
+
+> **Referenced by:** [`TimeDelayStatusApplication`](#context-timedelaystatusapplication), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1215,12 +1359,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TwisterDisplaceWithDamage` (6 instances)
+### Context: `TwisterDisplaceWithDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 6
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1233,15 +1379,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CollectsPickupsWithAltEffects` (5 instances)
+### Context: `CollectsPickupsWithAltEffects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 5
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Tech` | Number | Applies or references the 'Tech' effect/state. | 2 |
 | `CurrentWeaponAddPoison` | Number | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 |
 | `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |
@@ -1253,12 +1402,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DestroyEquipmentAndAttachParasite` (5 instances)
+### Context: `DestroyEquipmentAndAttachParasite`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#context-conditional_activeweather_any), [`Conditional_DebuffRoll`](./Abilities_and_Spells.md#context-conditional_debuffroll), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 5
+
+> **Referenced by:** [`Conditional_ActiveWeather_Any`](#context-conditional_activeweather_any), [`Conditional_DebuffRoll`](#context-conditional_debuffroll), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1269,34 +1420,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DoDamage` (5 instances)
+### Context: `DoDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Else`](./Abilities_and_Spells.md#context-else), [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses)
+**Total Count:** 5
+
+> **Referenced by:** [`ApplyToSource`](#context-applytosource), [`Else`](#context-else), [`post_spawn_statuses`](#context-post_spawn_statuses)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | The flat damage amount. | 5 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 5 |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum |  | 2 |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 
 </details>
 
 ---
 
-### Context: `ApplyToConsumed` (4 instances)
+### Context: `ApplyToConsumed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 4
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 3 |
 | `Die` | Number | Applies or references the 'Die' effect/state. | 1 |
 
@@ -1304,12 +1460,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ArcLightning` (4 instances)
+### Context: `ArcLightning`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 4
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1323,10 +1481,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BackflipWhenTargeted` (4 instances)
+### Context: `BackflipWhenTargeted`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1337,26 +1497,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Familiar` (4 instances)
+### Context: `Conditional_Familiar`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 4
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `GainCoinsRange` (4 instances)
+### Context: `GainCoinsRange`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 4
+
+> **Referenced by:** [`ApplyToSource`](#context-applytosource), [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1367,15 +1533,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LateStatusApplication` (4 instances)
+### Context: `LateStatusApplication`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 4
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 1 |
 
@@ -1383,10 +1552,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LeaveBehind` (4 instances)
+### Context: `LeaveBehind`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 4
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1396,12 +1567,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ReplaceSpell` (4 instances)
+### Context: `ReplaceSpell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus)
+**Total Count:** 4
+
+> **Referenced by:** [`TempPassiveWhileHasStatus`](#context-temppassivewhilehasstatus)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1412,32 +1585,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TakeBonusTurnWithStatus` (4 instances)
+### Context: `TakeBonusTurnWithStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 4
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `TempPassiveWhileHasStatus` (4 instances)
+### Context: `TempPassiveWhileHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_FirstApplicationThisTurn`](./Abilities_and_Spells.md#context-conditional_firstapplicationthisturn), [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#context-conditional_livingplayercat)
+**Total Count:** 4
+
+> **Referenced by:** [`Conditional_FirstApplicationThisTurn`](#context-conditional_firstapplicationthisturn), [`Conditional_LivingPlayerCat`](#context-conditional_livingplayercat)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell) | Block | Replaces a spell in the character's hand/deck with a different one. | 4 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`ReplaceSpell`](#context-replacespell) | Block | Replaces a spell in the character's hand/deck with a different one. | 4 |
 | [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
-| [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 2 |
+| [`MeleeRevengeDamage`](#context-meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 2 |
 | `AddManaRegen` | Number | Applies or references the 'AddManaRegen' effect/state. | 1 |
 | `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 |
 
@@ -1445,20 +1625,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TimeDelayStatusApplication` (4 instances)
+### Context: `TimeDelayStatusApplication`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 4
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`delay`](./Enums.md#enum-delay) | Enum | The float time delay in seconds. | 4 |
-| [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic) | Block | Changes the background music track or layer during combat. | 2 |
+| [`SwitchMusic`](#context-switchmusic) | Block | Changes the background music track or layer during combat. | 2 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 1 |
-| [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
-| [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake) | Block | Triggers a camera screen shake effect. | 1 |
+| [`CreateGlobalModifiers`](#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
+| [`DoScreenShake`](#context-doscreenshake) | Block | Triggers a camera screen shake effect. | 1 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
@@ -1470,16 +1655,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `post_spawn_statuses` (4 instances)
+### Context: `post_spawn_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
+**Total Count:** 4
+
+> **Referenced by:** [`spawn`](#context-spawn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`DoDamage`](./Abilities_and_Spells.md#context-dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. | 2 |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`DoDamage`](#context-dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. | 2 |
 | [`EnterMount`](./Enums.md#enum-entermount) | Enum | Applies or references the 'EnterMount' effect/state. | 1 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies or references the 'VisualFXTile' effect/state. | 1 |
 
@@ -1487,12 +1676,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `rocket_swirl` (4 instances)
+### Context: `rocket_swirl`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+**Total Count:** 4
+
+> **Referenced by:** [`graphics`](#context-graphics)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1503,26 +1694,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyMultipleTimes` (3 instances)
+### Context: `ApplyMultipleTimes`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 3 |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 3 |
 | [`stacks`](./Math_Equations.md) | Enum | The number of times the nested effects block should be repeatedly executed. | 3 |
 
 </details>
 
 ---
 
-### Context: `BounceObject` (3 instances)
+### Context: `BounceObject`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 3
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1534,12 +1730,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CatPartsSizeScaleStatus` (3 instances)
+### Context: `CatPartsSizeScaleStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1552,58 +1750,72 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_AffectedByElement` (3 instances)
+### Context: `Conditional_AffectedByElement`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 
 </details>
 
 ---
 
-### Context: `Conditional_FirstApplicationThisTurn` (3 instances)
+### Context: `Conditional_FirstApplicationThisTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
 
 </details>
 
 ---
 
-### Context: `Conditional_LastHit` (3 instances)
+### Context: `Conditional_LastHit`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `DustOnHit` (3 instances)
+### Context: `DustOnHit`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1613,12 +1825,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `IncAuxCounterClamped` (3 instances)
+### Context: `IncAuxCounterClamped`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool)
+**Total Count:** 3
+
+> **Referenced by:** [`RandomStatusFromPool`](#context-randomstatusfrompool)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1629,12 +1843,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SetCrazyEyeBackgroundWeights` (3 instances)
+### Context: `SetCrazyEyeBackgroundWeights`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1644,56 +1860,66 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleEnd` (3 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives)
+**Total Count:** 3
+
+> **Referenced by:** [`ApplyPassives`](#context-applypassives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 3 |
 
 </details>
 
 ---
 
-### Context: `extra_statuses` (3 instances)
+### Context: `extra_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#context-consumed)
+**Total Count:** 3
+
+> **Referenced by:** [`Consumed`](#context-consumed)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AddStatusToBasicAttack` (2 instances)
+### Context: `AddStatusToBasicAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveWhileNotTakingTurn`](./Abilities_and_Spells.md#context-passivewhilenottakingturn), [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+**Total Count:** 2
+
+> **Referenced by:** [`PassiveWhileNotTakingTurn`](#context-passivewhilenottakingturn), [`bonus_passives`](#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `AfterImage` (2 instances)
+### Context: `AfterImage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects)
+**Total Count:** 2
+
+> **Referenced by:** [`temporary_effects`](#context-temporary_effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1704,29 +1930,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyToRandomPartyMemberIfPossible` (2 instances)
+### Context: `ApplyToRandomPartyMemberIfPossible`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`Else`](./Abilities_and_Spells.md#context-else)
+**Total Count:** 2
+
+> **Referenced by:** [`Conditional_GoodRoll`](#context-conditional_goodroll), [`Else`](#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `ApplyToTile` (2 instances)
+### Context: `ApplyToTile`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_DestructibleCorpse`](./Abilities_and_Spells.md#context-conditional_destructiblecorpse)
+**Total Count:** 2
+
+> **Referenced by:** [`Conditional_DestructibleCorpse`](#context-conditional_destructiblecorpse)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | Spawns a specific physics/item object upon impact. | 2 |
 | `SpawnBearTrap` | Number | Applies or references the 'SpawnBearTrap' effect/state. | 2 |
 
@@ -1734,12 +1966,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AutocastEachRound` (2 instances)
+### Context: `AutocastEachRound`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+**Total Count:** 2
+
+> **Referenced by:** [`bonus_passives`](#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1750,12 +1984,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BodyGuard` (2 instances)
+### Context: `BodyGuard`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1766,171 +2002,212 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_BadRoll` (2 instances)
+### Context: `Conditional_BadRoll`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_BossOrBig` (2 instances)
+### Context: `Conditional_BossOrBig`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_Buddy` (2 instances)
+### Context: `Conditional_Buddy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Consumed`](#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`Else`](#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_DestructibleCorpse` (2 instances)
+### Context: `Conditional_DestructibleCorpse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_Displaceable` (2 instances)
+### Context: `Conditional_Displaceable`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`Else`](#context-else), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_IsSelf` (2 instances)
+### Context: `Conditional_IsSelf`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_NotAlly` (2 instances)
+### Context: `Conditional_NotAlly`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_NotBossOrBig` (2 instances)
+### Context: `Conditional_NotBossOrBig`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_NotShielded` (2 instances)
+### Context: `Conditional_NotShielded`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_OncePerBattle` (2 instances)
+### Context: `Conditional_OncePerBattle`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`key`](./Enums.md#enum-key) | Enum |  | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Shielded` (2 instances)
+### Context: `Conditional_Shielded`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `ConjureBonusAbility` (2 instances)
+### Context: `ConjureBonusAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1941,26 +2218,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CreateGlobalModifiers` (2 instances)
+### Context: `CreateGlobalModifiers`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`TimeDelayStatusApplication`](#context-timedelaystatusapplication), [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[global_modifier_id]`](./Engine_GlobalModifiers.md#all-confirmed-global-modifier-id-values) | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
 </details>
 
 ---
 
-### Context: `FindItemFromPool` (2 instances)
+### Context: `FindItemFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource)
+**Total Count:** 2
+
+> **Referenced by:** [`ApplyToSource`](#context-applytosource)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1971,10 +2252,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceAttack` (2 instances)
+### Context: `ForceAttack`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -1984,12 +2267,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceMoveTowardsTaggedObject` (2 instances)
+### Context: `ForceMoveTowardsTaggedObject`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2000,12 +2285,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LowerAmbientLight` (2 instances)
+### Context: `LowerAmbientLight`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers)
+**Total Count:** 2
+
+> **Referenced by:** [`CreateGlobalModifiers`](#context-createglobalmodifiers)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2016,60 +2303,70 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Math` (2 instances)
+### Context: `Math`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 2 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
 
 ---
 
-### Context: `MeleeRevengeDamage` (2 instances)
+### Context: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus)
+**Total Count:** 2
+
+> **Referenced by:** [`TempPassiveWhileHasStatus`](#context-temppassivewhilehasstatus)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 
 </details>
 
 ---
 
-### Context: `NukeQuestFinalBossModifications` (2 instances)
+### Context: `NukeQuestFinalBossModifications`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+**Total Count:** 2
+
+> **Referenced by:** [`bonus_passives`](#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`self_damage`](./Abilities_and_Spells.md#context-self_damage) | Block | Recoil or self-inflicted damage/effects applied to the caster. | 2 |
-| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block |  | 1 |
-| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | Secondary Area of Effect blast parameters. | 1 |
+| [`self_damage`](#context-self_damage) | Block | Recoil or self-inflicted damage/effects applied to the caster. | 2 |
+| [`damage_instance`](#context-damage_instance) | Block |  | 1 |
+| [`splash_damage`](#context-splash_damage) | Block | Secondary Area of Effect blast parameters. | 1 |
 
 </details>
 
 ---
 
-### Context: `ObjectOnHit` (2 instances)
+### Context: `ObjectOnHit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2079,10 +2376,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectOnHitCharacter` (2 instances)
+### Context: `ObjectOnHitCharacter`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2093,15 +2392,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `OverHealToStatuses` (2 instances)
+### Context: `OverHealToStatuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 1 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
 | `stack_scale` | Number |  | 1 |
@@ -2110,12 +2412,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `QuakeAreaChance` (2 instances)
+### Context: `QuakeAreaChance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2126,12 +2430,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomKnockback` (2 instances)
+### Context: `RandomKnockback`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2142,10 +2448,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomMagicMissile` (2 instances)
+### Context: `RandomMagicMissile`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2156,12 +2464,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScatterCoins` (2 instances)
+### Context: `ScatterCoins`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#context-conditional_sourceabilityhastag), [`Else`](./Abilities_and_Spells.md#context-else)
+**Total Count:** 2
+
+> **Referenced by:** [`Conditional_SourceAbilityHasTag`](#context-conditional_sourceabilityhastag), [`Else`](#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2172,26 +2482,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TakeBonusTurnWithAIControl` (2 instances)
+### Context: `TakeBonusTurnWithAIControl`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 2 |
 
 </details>
 
 ---
 
-### Context: `TeamCastAbility` (2 instances)
+### Context: `TeamCastAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 2
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2203,115 +2517,137 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `XIsTargetHealth` (2 instances)
+### Context: `XIsTargetHealth`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`Else`](./Abilities_and_Spells.md#context-else)
+**Total Count:** 2
+
+> **Referenced by:** [`Conditional_Boss`](#context-conditional_boss), [`Else`](#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 2 |
 
 </details>
 
 ---
 
-### Context: `empty_self_damage` (2 instances)
+### Context: `empty_self_damage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 2
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
 
 </details>
 
 ---
 
-### Context: `AlphaStatusOnTurnBegin` (1 instances)
+### Context: `AlphaStatusOnTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+**Total Count:** 1
+
+> **Referenced by:** [`bonus_passives`](#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `DoubleCastSpellThisTurn` | Number | Applies or references the 'DoubleCastSpellThisTurn' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyPassivesToSpawnerWhileAlive` (1 instances)
+### Context: `ApplyPassivesToSpawnerWhileAlive`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives)
+**Total Count:** 1
+
+> **Referenced by:** [`additional_passives`](#context-additional_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyStatusesNextTurnBegin` (1 instances)
+### Context: `ApplyStatusesNextTurnBegin`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `Quivered` | Number | Applies or references the 'Quivered' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyToOthersWithSharedTagAndFaction` (1 instances)
+### Context: `ApplyToOthersWithSharedTagAndFaction`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Marked` | Number | Applies or references the 'Marked' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `ApplyToRandomClosestAlly` (1 instances)
+### Context: `ApplyToRandomClosestAlly`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Cleave` (1 instances)
+### Context: `Cleave`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2321,199 +2657,239 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_ActiveWeather_Any` (1 instances)
+### Context: `Conditional_ActiveWeather_Any`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Backstab` (1 instances)
+### Context: `Conditional_Backstab`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_CanBeHealed` (1 instances)
+### Context: `Conditional_CanBeHealed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_DebuffRoll` (1 instances)
+### Context: `Conditional_DebuffRoll`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_FinishedSpawning` (1 instances)
+### Context: `Conditional_FinishedSpawning`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy)
+**Total Count:** 1
+
+> **Referenced by:** [`Conditional_Enemy`](#context-conditional_enemy)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HasCleansableDebuffs` (1 instances)
+### Context: `Conditional_HasCleansableDebuffs`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `GenericBuff` | Number | Applies or references the 'GenericBuff' effect/state. | 1 |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 1 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_IsTrample` (1 instances)
+### Context: `Conditional_IsTrample`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_LivingPlayerCat` (1 instances)
+### Context: `Conditional_LivingPlayerCat`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`Consumed`](#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_NotBig` (1 instances)
+### Context: `Conditional_NotBig`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_RandomChance` (1 instances)
+### Context: `Conditional_RandomChance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyPassives`](#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_SourceAbilityHasTag` (1 instances)
+### Context: `Conditional_SourceAbilityHasTag`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyToSource`](#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_SourceHasStatus` (1 instances)
+### Context: `Conditional_SourceHasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
 </details>
 
 ---
 
-### Context: `CopySpells` (1 instances)
+### Context: `CopySpells`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2524,12 +2900,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayCastAbility` (1 instances)
+### Context: `DelayCastAbility`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2541,12 +2919,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedWindCone` (1 instances)
+### Context: `DelayedWindCone`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2557,12 +2937,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DybbukPossessed` (1 instances)
+### Context: `DybbukPossessed`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else)
+**Total Count:** 1
+
+> **Referenced by:** [`Else`](#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2573,12 +2955,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceImmediateMoveAndAttack` (1 instances)
+### Context: `ForceImmediateMoveAndAttack`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform)
+**Total Count:** 1
+
+> **Referenced by:** [`Conditional_InForm`](#context-conditional_inform)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2589,12 +2973,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `IncAuxCounterCycle` (1 instances)
+### Context: `IncAuxCounterCycle`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2605,10 +2991,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockOutCoin` (1 instances)
+### Context: `KnockOutCoin`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2619,10 +3007,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Madness` (1 instances)
+### Context: `Madness`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2633,12 +3023,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MergeDamageInstance` (1 instances)
+### Context: `MergeDamageInstance`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag)
+**Total Count:** 1
+
+> **Referenced by:** [`Conditional_HasTag`](#context-conditional_hastag)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2649,10 +3041,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Metronome` (1 instances)
+### Context: `Metronome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2663,10 +3057,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextAttackSpecialCrit` (1 instances)
+### Context: `NextAttackSpecialCrit`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2678,12 +3074,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextBasicAttackCritsThisTurn` (1 instances)
+### Context: `NextBasicAttackCritsThisTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2695,15 +3093,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `NextBattleStatusStacks` (1 instances)
+### Context: `NextBattleStatusStacks`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |
 | `fights` | Number | The number of encounters this buff/debuff persists for. | 1 |
 
@@ -2711,27 +3112,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhileNotTakingTurn` (1 instances)
+### Context: `PassiveWhileNotTakingTurn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+**Total Count:** 1
+
+> **Referenced by:** [`bonus_passives`](#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`AddStatusToBasicAttack`](#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
 
 </details>
 
 ---
 
-### Context: `PoolMetronome` (1 instances)
+### Context: `PoolMetronome`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2741,12 +3147,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PopAndSpawn` (1 instances)
+### Context: `PopAndSpawn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag)
+**Total Count:** 1
+
+> **Referenced by:** [`Conditional_HasTag`](#context-conditional_hastag)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2759,10 +3167,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomDistanceDisplace` (1 instances)
+### Context: `RandomDistanceDisplace`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2773,12 +3183,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RemoveStatusStacks` (1 instances)
+### Context: `RemoveStatusStacks`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2789,31 +3201,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RevengeDamage` (1 instances)
+### Context: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+**Total Count:** 1
+
+> **Referenced by:** [`bonus_passives`](#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 
 </details>
 
 ---
 
-### Context: `ReviveNextRound` (1 instances)
+### Context: `ReviveNextRound`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives)
+**Total Count:** 1
+
+> **Referenced by:** [`additional_passives`](#context-additional_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | `revive_health` | Number | The flat amount of health to revive with. | 3 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 2 |
@@ -2824,12 +3241,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ScrambleLastUsedSpell` (1 instances)
+### Context: `ScrambleLastUsedSpell`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2839,12 +3258,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SetAnimationAlts` (1 instances)
+### Context: `SetAnimationAlts`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag)
+**Total Count:** 1
+
+> **Referenced by:** [`Conditional_HasTag`](#context-conditional_hastag)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2855,12 +3276,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ShowFakeDamage` (1 instances)
+### Context: `ShowFakeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else)
+**Total Count:** 1
+
+> **Referenced by:** [`Else`](#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2871,10 +3294,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmartMetronome` (1 instances)
+### Context: `SmartMetronome`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2885,12 +3310,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpreadDisease` (1 instances)
+### Context: `SpreadDisease`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2901,40 +3328,48 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusGroup` (1 instances)
+### Context: `StatusGroup`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `StatusKillers` (1 instances)
+### Context: `StatusKillers`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+**Total Count:** 1
+
+> **Referenced by:** [`bonus_passives`](#context-bonus_passives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `SwapWeapon` (1 instances)
+### Context: `SwapWeapon`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2944,10 +3379,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Tangled` (1 instances)
+### Context: `Tangled`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2958,12 +3395,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformEquipment` (1 instances)
+### Context: `TransformEquipment`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2974,12 +3413,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformWeapon` (1 instances)
+### Context: `TransformWeapon`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill)
+**Total Count:** 1
+
+> **Referenced by:** [`ApplyToSourceOnKill`](#context-applytosourceonkill)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -2990,10 +3431,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `UseAbility` (1 instances)
+### Context: `UseAbility`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3004,12 +3447,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `UseMoveAbilityWithAI` (1 instances)
+### Context: `UseMoveAbilityWithAI`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3020,27 +3465,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `VisualCountDownThenApplyStatus` (1 instances)
+### Context: `VisualCountDownThenApplyStatus`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `WaggleClone` (1 instances)
+### Context: `WaggleClone`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3053,10 +3503,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `XIsSpellStormRampAndReset` (1 instances)
+### Context: `XIsSpellStormRampAndReset`
 
 <details>
 <summary><b>Expand</b></summary>
+
+**Total Count:** 1
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3067,29 +3519,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `bonk_damage` (1 instances)
+### Context: `bonk_damage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#all-confirmed-damage-instance-values) | Block | A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
 | `damage` | Number | The base damage properties of an attack. | 1 |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`effects`](#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
 
 </details>
 
 ---
 
-### Context: `damage` (1 instances)
+### Context: `damage`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -3100,12 +3556,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `damage_threshold_altanimations` (1 instances)
+### Context: `damage_threshold_altanimations`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+**Total Count:** 1
+
+> **Referenced by:** [`graphics`](#context-graphics)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |

@@ -2,57 +2,60 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## House & Environment
 
 > **Associated Files:** `data/house.gon, data/house_weather.gon, data/weather.gon`
 
 
-### Context: `ROOT` (59 instances)
+### Context: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 59
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
 | [`desc`](./Strings.md#string-desc) | String |  | 59 |
 | [`name`](./Strings.md#string-name) | String |  | 59 |
-| [`effects`](./House_and_Environment.md#context-effects) | Block |  | 58 |
+| [`effects`](#context-effects) | Block |  | 58 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array |  | 12 |
 | `height` | Number |  | 8 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 8 |
 | `width` | Number |  | 8 |
-| [`reverb_empty`](./House_and_Environment.md#context-reverb_empty) | Block |  | 7 |
-| [`reverb_full`](./House_and_Environment.md#context-reverb_full) | Block |  | 7 |
+| [`reverb_empty`](#context-reverb_empty) | Block |  | 7 |
+| [`reverb_full`](#context-reverb_full) | Block |  | 7 |
 | [`amount`](./Enums.md#enum-amount) | Enum |  | 4 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 4 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 3 |
 | [`n`](./Arrays.md#array-n) | Array |  | 2 |
 | `volume_adjustment` | Number |  | 2 |
-| [`BasementUpgrade`](./House_and_Environment.md#context-basementupgrade) | Block |  | 1 |
-| [`BasementUpgrade2`](./House_and_Environment.md#context-basementupgrade2) | Block |  | 1 |
-| [`BasementUpgrade3`](./House_and_Environment.md#context-basementupgrade3) | Block |  | 1 |
-| [`BasementUpgrade4`](./House_and_Environment.md#context-basementupgrade4) | Block |  | 1 |
-| [`BasementUpgrade5`](./House_and_Environment.md#context-basementupgrade5) | Block |  | 1 |
-| [`Default`](./House_and_Environment.md#context-default) | Block |  | 1 |
-| [`Floor1_Large`](./House_and_Environment.md#context-floor1_large) | Block |  | 1 |
-| [`Floor1_Small`](./House_and_Environment.md#context-floor1_small) | Block |  | 1 |
-| [`House1`](./House_and_Environment.md#context-house1) | Block |  | 1 |
-| [`House2`](./House_and_Environment.md#context-house2) | Block |  | 1 |
-| [`House3`](./House_and_Environment.md#context-house3) | Block |  | 1 |
-| [`LargeHouse`](./House_and_Environment.md#context-largehouse) | Block |  | 1 |
-| [`LargeHouse_Floor2Large`](./House_and_Environment.md#context-largehouse_floor2large) | Block |  | 1 |
-| [`LargeHouse_Floor2Small`](./House_and_Environment.md#context-largehouse_floor2small) | Block |  | 1 |
-| [`MediumHouse`](./House_and_Environment.md#context-mediumhouse) | Block |  | 1 |
-| [`MediumHouse_SmallRoom`](./House_and_Environment.md#context-mediumhouse_smallroom) | Block |  | 1 |
-| [`Rain`](./House_and_Environment.md#context-rain) | Block |  | 1 |
-| [`SmallAttic`](./House_and_Environment.md#context-smallattic) | Block |  | 1 |
-| [`SmallHouse_Attic`](./House_and_Environment.md#context-smallhouse_attic) | Block |  | 1 |
-| [`Snow`](./House_and_Environment.md#context-snow) | Block |  | 1 |
-| [`Thunderstorm`](./House_and_Environment.md#context-thunderstorm) | Block |  | 1 |
-| [`Windy`](./House_and_Environment.md#context-windy) | Block |  | 1 |
+| [`BasementUpgrade`](#context-basementupgrade) | Block |  | 1 |
+| [`BasementUpgrade2`](#context-basementupgrade2) | Block |  | 1 |
+| [`BasementUpgrade3`](#context-basementupgrade3) | Block |  | 1 |
+| [`BasementUpgrade4`](#context-basementupgrade4) | Block |  | 1 |
+| [`BasementUpgrade5`](#context-basementupgrade5) | Block |  | 1 |
+| [`Default`](#context-default) | Block |  | 1 |
+| [`Floor1_Large`](#context-floor1_large) | Block |  | 1 |
+| [`Floor1_Small`](#context-floor1_small) | Block |  | 1 |
+| [`House1`](#context-house1) | Block |  | 1 |
+| [`House2`](#context-house2) | Block |  | 1 |
+| [`House3`](#context-house3) | Block |  | 1 |
+| [`LargeHouse`](#context-largehouse) | Block |  | 1 |
+| [`LargeHouse_Floor2Large`](#context-largehouse_floor2large) | Block |  | 1 |
+| [`LargeHouse_Floor2Small`](#context-largehouse_floor2small) | Block |  | 1 |
+| [`MediumHouse`](#context-mediumhouse) | Block |  | 1 |
+| [`MediumHouse_SmallRoom`](#context-mediumhouse_smallroom) | Block |  | 1 |
+| [`Rain`](#context-rain) | Block |  | 1 |
+| [`SmallAttic`](#context-smallattic) | Block |  | 1 |
+| [`SmallHouse_Attic`](#context-smallhouse_attic) | Block |  | 1 |
+| [`Snow`](#context-snow) | Block |  | 1 |
+| [`Thunderstorm`](#context-thunderstorm) | Block |  | 1 |
+| [`Windy`](#context-windy) | Block |  | 1 |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array |  | 1 |
 | [`id`](./Enums.md#enum-id) | Enum |  | 1 |
 | [`p`](./Arrays.md#array-p) | Array |  | 1 |
@@ -61,29 +64,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects` (59 instances)
+### Context: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root), [`SolarFlare`](./House_and_Environment.md#context-solarflare)
+**Total Count:** 59
+
+> **Referenced by:** [`ROOT`](#context-root), [`SolarFlare`](#context-solarflare)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`CharacterTypeGainsStatusAtBattleStart`](./House_and_Environment.md#context-charactertypegainsstatusatbattlestart) | Block |  | 2 |
-| [`StatusAllCharactersOnSpawn`](./House_and_Environment.md#context-statusallcharactersonspawn) | Block |  | 2 |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Global Modifiers}`](./Engine_GlobalModifiers.md) | Boolean | **(Supports Multiple)** Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block |  | 2 |
+| [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `SpawnExtraThingsOnBattleStart` (28 instances)
+### Context: `SpawnExtraThingsOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 28
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -96,12 +107,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb_empty` (9 instances)
+### Context: `reverb_empty`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#context-floor1_large), [`Floor1_Small`](./House_and_Environment.md#context-floor1_small), [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 9
+
+> **Referenced by:** [`Floor1_Large`](#context-floor1_large), [`Floor1_Small`](#context-floor1_small), [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -113,12 +126,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb_full` (9 instances)
+### Context: `reverb_full`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#context-floor1_large), [`Floor1_Small`](./House_and_Environment.md#context-floor1_small), [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 9
+
+> **Referenced by:** [`Floor1_Large`](#context-floor1_large), [`Floor1_Small`](#context-floor1_small), [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -129,28 +144,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else` (3 instances)
+### Context: `Else`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](./House_and_Environment.md#context-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](./House_and_Environment.md#context-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#context-statuscharactersonroundstart)
+**Total Count:** 3
+
+> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#context-statuscharactersonroundstart)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`RandomStatusFromPool`](./House_and_Environment.md#context-randomstatusfrompool) | Block |  | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `SpawnVolcanoOnBattleStart` (3 instances)
+### Context: `SpawnVolcanoOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -164,16 +185,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusCharactersOnRoundEnd` (3 instances)
+### Context: `StatusCharactersOnRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 3
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll) | Block |  | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
 | `FloatingRockTrap` | Number |  | 1 |
 | `Thorns` | Number |  | 1 |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum |  | 1 |
@@ -182,12 +207,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `aux_positions` (3 instances)
+### Context: `aux_positions`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
+**Total Count:** 3
+
+> **Referenced by:** [`House1`](#context-house1), [`House2`](#context-house2), [`House3`](#context-house3)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -202,12 +229,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `room_positions` (3 instances)
+### Context: `room_positions`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
+**Total Count:** 3
+
+> **Referenced by:** [`House1`](#context-house1), [`House2`](#context-house2), [`House3`](#context-house3)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -227,28 +256,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyPassives` (2 instances)
+### Context: `ApplyPassives`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag), [`Conditional_PartyMember`](./House_and_Environment.md#context-conditional_partymember)
+**Total Count:** 2
+
+> **Referenced by:** [`Conditional_HasTag`](#context-conditional_hastag), [`Conditional_PartyMember`](#context-conditional_partymember)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[passive_id]`](./Engine_Passives.md#all-confirmed-passive-id-values) | Boolean / Block | Any valid Passive ID. Value = `true` to grant it, or a Block to override its default values. See Engine_Passives.md for all confirmed IDs. |  |
-| [`StatusOnBattleEnd`](./House_and_Environment.md#context-statusonbattleend) | Block |  | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`StatusOnBattleEnd`](#context-statusonbattleend) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Big` (2 instances)
+### Context: `Big`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpecialGodRays`](./House_and_Environment.md#context-specialgodrays)
+**Total Count:** 2
+
+> **Referenced by:** [`SpecialGodRays`](#context-specialgodrays)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -259,47 +292,56 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CharacterTypeGainsStatusAtBattleStart` (2 instances)
+### Context: `CharacterTypeGainsStatusAtBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
 | `Conditional_Flying` | Block |  | 1 |
-| [`Else`](./House_and_Environment.md#context-else) | Block |  | 1 |
+| [`Else`](#context-else) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_GoodRoll` (2 instances)
+### Context: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusCharactersOnRoundEnd`](./House_and_Environment.md#context-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#context-statuscharactersonroundstart)
+**Total Count:** 2
+
+> **Referenced by:** [`StatusCharactersOnRoundEnd`](#context-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#context-statuscharactersonroundstart)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | [`odds`](./Enums.md#enum-odds) | Enum |  | 2 |
-| [`RandomStatusFromPool`](./House_and_Environment.md#context-randomstatusfrompool) | Block |  | 1 |
+| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `GlobalSpawnOnRoundEnd` (2 instances)
+### Context: `GlobalSpawnOnRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -310,75 +352,90 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool` (2 instances)
+### Context: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll), [`Else`](./House_and_Environment.md#context-else)
+**Total Count:** 2
+
+> **Referenced by:** [`Conditional_GoodRoll`](#context-conditional_goodroll), [`Else`](#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Damage Blocks}`](./Engine_Damage.md) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `SpecialGodRays` (2 instances)
+### Context: `SpecialGodRays`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Big`](./House_and_Environment.md#context-big) | Block |  | 2 |
+| [`Big`](#context-big) | Block |  | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusAllCharactersOnSpawn` (2 instances)
+### Context: `StatusAllCharactersOnSpawn`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 | `Conditional_Tiny` | Block |  | 1 |
-| [`Else`](./House_and_Environment.md#context-else) | Block |  | 1 |
+| [`Else`](#context-else) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusCharactersOnRoundStart` (2 instances)
+### Context: `StatusCharactersOnRoundStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 2
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll) | Block |  | 1 |
-| [`Else`](./House_and_Environment.md#context-else) | Block |  | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
+| [`Else`](#context-else) | Block |  | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array |  | 1 |
 
 </details>
 
 ---
 
-### Context: `AddPostProcessEffect` (1 instances)
+### Context: `AddPostProcessEffect`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -389,27 +446,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddTilesetObjects` (1 instances)
+### Context: `AddTilesetObjects`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](./House_and_Environment.md#context-floatingdebris) | Block |  | 1 |
+| [`FloatingDebris`](#context-floatingdebris) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `AllyInfested` (1 instances)
+### Context: `AllyInfested`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./House_and_Environment.md#context-else)
+**Total Count:** 1
+
+> **Referenced by:** [`Else`](#context-else)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -420,12 +481,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade` (1 instances)
+### Context: `BasementUpgrade`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -436,12 +499,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade2` (1 instances)
+### Context: `BasementUpgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -452,12 +517,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade3` (1 instances)
+### Context: `BasementUpgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -468,12 +535,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade4` (1 instances)
+### Context: `BasementUpgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -484,12 +553,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade5` (1 instances)
+### Context: `BasementUpgrade5`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -500,59 +571,72 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Corpse` (1 instances)
+### Context: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_GoodRoll`](./House_and_Environment.md#context-conditional_goodroll)
+**Total Count:** 1
+
+> **Referenced by:** [`Conditional_GoodRoll`](#context-conditional_goodroll)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Conditional_HasTag` (1 instances)
+### Context: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`extra_statuses`](./House_and_Environment.md#context-extra_statuses)
+**Total Count:** 1
+
+> **Referenced by:** [`extra_statuses`](#context-extra_statuses)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyPassives`](./House_and_Environment.md#context-applypassives) | Block |  | 1 |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyPassives`](#context-applypassives) | Block |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_PartyMember` (1 instances)
+### Context: `Conditional_PartyMember`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusAllCharactersOnSpawn`](./House_and_Environment.md#context-statusallcharactersonspawn)
+**Total Count:** 1
+
+> **Referenced by:** [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[effect_block]`](./Engine_Effects.md#all-confirmed-effect-block-values) | Block | Any valid effect. See Engine_Effects.md for the full list. |  |
-| [`ApplyPassives`](./House_and_Environment.md#context-applypassives) | Block |  | 1 |
+| [`{Effect Blocks}`](./Engine_Effects.md) | Block | **(Supports Multiple)** Any valid effect. See Engine_Effects.md for the full list. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
+| [`ApplyPassives`](#context-applypassives) | Block |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Default` (1 instances)
+### Context: `Default`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -563,26 +647,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FactionUprising` (1 instances)
+### Context: `FactionUprising`
 
 <details>
 <summary><b>Expand</b></summary>
 
+**Total Count:** 1
+
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`extra_statuses`](./House_and_Environment.md#context-extra_statuses) | Block |  | 1 |
+| [`extra_statuses`](#context-extra_statuses) | Block |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `FloatingDebris` (1 instances)
+### Context: `FloatingDebris`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddTilesetObjects`](./House_and_Environment.md#context-addtilesetobjects)
+**Total Count:** 1
+
+> **Referenced by:** [`AddTilesetObjects`](#context-addtilesetobjects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -592,112 +680,124 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Floor1_Large` (1 instances)
+### Context: `Floor1_Large`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `height` | Number |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
-| [`reverb_empty`](./House_and_Environment.md#context-reverb_empty) | Block |  | 1 |
-| [`reverb_full`](./House_and_Environment.md#context-reverb_full) | Block |  | 1 |
+| [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
+| [`reverb_full`](#context-reverb_full) | Block |  | 1 |
 | `width` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Floor1_Small` (1 instances)
+### Context: `Floor1_Small`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `height` | Number |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
-| [`reverb_empty`](./House_and_Environment.md#context-reverb_empty) | Block |  | 1 |
-| [`reverb_full`](./House_and_Environment.md#context-reverb_full) | Block |  | 1 |
+| [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
+| [`reverb_full`](#context-reverb_full) | Block |  | 1 |
 | `width` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `House1` (1 instances)
+### Context: `House1`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](./House_and_Environment.md#context-aux_positions) | Block |  | 1 |
+| [`aux_positions`](#context-aux_positions) | Block |  | 1 |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](./House_and_Environment.md#context-room_positions) | Block |  | 1 |
+| [`room_positions`](#context-room_positions) | Block |  | 1 |
 | [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `House2` (1 instances)
+### Context: `House2`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](./House_and_Environment.md#context-aux_positions) | Block |  | 1 |
+| [`aux_positions`](#context-aux_positions) | Block |  | 1 |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](./House_and_Environment.md#context-room_positions) | Block |  | 1 |
+| [`room_positions`](#context-room_positions) | Block |  | 1 |
 | [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `House3` (1 instances)
+### Context: `House3`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](./House_and_Environment.md#context-aux_positions) | Block |  | 1 |
+| [`aux_positions`](#context-aux_positions) | Block |  | 1 |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](./House_and_Environment.md#context-room_positions) | Block |  | 1 |
+| [`room_positions`](#context-room_positions) | Block |  | 1 |
 | [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum |  | 1 |
 
 </details>
 
 ---
 
-### Context: `LargeHouse` (1 instances)
+### Context: `LargeHouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -708,12 +808,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LargeHouse_Floor2Large` (1 instances)
+### Context: `LargeHouse_Floor2Large`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -724,12 +826,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LargeHouse_Floor2Small` (1 instances)
+### Context: `LargeHouse_Floor2Small`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -740,12 +844,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MediumHouse` (1 instances)
+### Context: `MediumHouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -756,12 +862,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MediumHouse_SmallRoom` (1 instances)
+### Context: `MediumHouse_SmallRoom`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -772,12 +880,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Rain` (1 instances)
+### Context: `Rain`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -791,12 +901,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallAttic` (1 instances)
+### Context: `SmallAttic`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -812,12 +924,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallHouse_Attic` (1 instances)
+### Context: `SmallHouse_Attic`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -828,12 +942,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Snow` (1 instances)
+### Context: `Snow`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -847,29 +963,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SolarFlare` (1 instances)
+### Context: `SolarFlare`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number |  | 1 |
-| [`effects`](./House_and_Environment.md#context-effects) | Block |  | 1 |
+| [`effects`](#context-effects) | Block |  | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
 </details>
 
 ---
 
-### Context: `SpawnTilePuddleOnBattleStart` (1 instances)
+### Context: `SpawnTilePuddleOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+**Total Count:** 1
+
+> **Referenced by:** [`effects`](#context-effects)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -881,26 +1001,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleEnd` (1 instances)
+### Context: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyPassives`](./House_and_Environment.md#context-applypassives)
+**Total Count:** 1
+
+> **Referenced by:** [`ApplyPassives`](#context-applypassives)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---
 
-### Context: `Thunderstorm` (1 instances)
+### Context: `Thunderstorm`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -915,12 +1039,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Windy` (1 instances)
+### Context: `Windy`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./House_and_Environment.md#context-root)
+**Total Count:** 1
+
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -934,16 +1060,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `extra_statuses` (1 instances)
+### Context: `extra_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FactionUprising`](./House_and_Environment.md#context-factionuprising)
+**Total Count:** 1
+
+> **Referenced by:** [`FactionUprising`](#context-factionuprising)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`[status_id]`](./Engine_Statuses.md#all-confirmed-status-id-values) | Number / Block | Any valid Status ID. Value = stack count / duration. See Engine_Statuses.md for all confirmed IDs. |  |
+| [`{Passives}`](./Engine_Passives.md) | Boolean / Block | **(Supports Multiple)** Any valid Passive ID. Value = `true` to grant it, or a Block to override defaults. |  |
+| [`{Statuses}`](./Engine_Statuses.md) | Number / Block | **(Supports Multiple)** Any valid Status ID. Value = stack count / duration. |  |
 </details>
 
 ---

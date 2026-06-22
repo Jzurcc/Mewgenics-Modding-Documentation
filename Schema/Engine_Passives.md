@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: Engine: Passive IDs
 
-> **Note on Math Equations:** In Mewgenics, many fields labeled as `Number` secretly support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
+> **Note on Math Equations:** Some keys labeled as `Number` actually support inline math equations (e.g. `mov + 5` or `max(str, int)`). However, because the base game never used equations for those fields, we cannot guarantee it. Fields that are *confirmed* to support equations are explicitly marked as [`Equation`](./Math_Equations.md).
 
 ## Engine: Passive IDs
 
@@ -8,7 +8,7 @@ This document lists every confirmed Passive ID found across all game data files.
 
 > **Note:** With 910+ unique passive IDs, this is one of the largest systems in the game. Many passives are the names of other blocks (e.g. `AddStatusToBasicAttack`) — granting the passive gives the character that reactive behaviour permanently.
 
-### All Confirmed `[passive_id]` Values
+### All Confirmed `{Passives}` Values
 
 <details>
 <summary><b>Expand</b></summary>
