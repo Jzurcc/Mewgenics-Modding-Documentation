@@ -17,13 +17,13 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 | [`LowerAmbientLight`](#lowerambientlight) | Block | A visual effect that dims the map's lighting. |
 | `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. |
 | `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. |
-| `{Global Modifiers}` | Boolean | Any valid Global Modifier ID. See Engine_GlobalModifiers.md. |
+| `{Global Modifier Keys}` | Boolean | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
 ### Valid Nested Blocks
 
-The following blocks all behave as `[global_modifier_id]` containers. Each has its own unique parameters listed below its entry.
+The following blocks all behave as `{Global Modifier Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -34,7 +34,7 @@ The following blocks all behave as `[global_modifier_id]` containers. Each has i
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[global_modifier_id]`](./Engine_GlobalModifiers.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`LowerAmbientLight`](#lowerambientlight) | Block | A visual effect that dims the map's lighting. |
 
 </details>

@@ -1,6 +1,6 @@
-# Mewgenics Mod Developer Documentation: Engine: Statuses and Passives
+# Mewgenics Mod Developer Documentation: Engine: Status and Passive Keys
 
-## Engine: Statuses and Passives
+## Engine: Status and Passive Keys
 
 This document lists every confirmed Status and Passive ID found across all game data files. These IDs are used as **dynamic keys** in any Status or Passive Container block (e.g. `statuses`, `passives`, `AddStatusToBasicAttack`, `bonus_passives`). The value paired with each key depends on the context: typically a stack count or duration for statuses, or a boolean/nested block for passives.
 
@@ -1233,14 +1233,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`threshold`](#threshold) | Block |  |
 | `triggers_limit` | Integer |  |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. |
-| [`{Damage Blocks}`](#{damage blocks}) | Block | **(Supports Multiple)** A damage hit definition. See Engine_Damage.md for the full schema. |
-| `{Statuses / Passives}` | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |
+| [`{Damage Instance Keys}`](#{damage blocks}) | Block | All valid keys from the specified engine key are applicable to this context/block. |
+| `{Status and Passive Keys}` | Variable | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
 ### Valid Nested Blocks
 
-The following blocks all behave as `[status_passive_id]` containers. Each has its own unique parameters listed below its entry.
+The following blocks all behave as `{Status and Passive Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -1251,7 +1251,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1264,7 +1264,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum |  |
 
 </details>
@@ -1278,7 +1278,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1291,7 +1291,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1304,7 +1304,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `must_do_damage` | Boolean |  |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. |
 | [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. |
@@ -1320,7 +1320,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Adjacent`](#conditional_adjacent) | Block | Nested conditional. |
 | [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
 | [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. |
@@ -1340,7 +1340,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1353,7 +1353,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. |
 | [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
 
@@ -1368,7 +1368,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1381,7 +1381,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. |
 
 </details>
@@ -1395,7 +1395,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1408,7 +1408,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1421,7 +1421,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1434,7 +1434,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1447,7 +1447,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1460,7 +1460,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `count` | Integer | Quantity. |
 
 </details>
@@ -1474,7 +1474,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `ally_chance` | Integer |  |
 | `chance` | Float | Probability (0.0 to 1.0 or percentage) of this occurring. |
 
@@ -1489,7 +1489,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. |
 | [`Conditional_Flying`](#conditional_flying) | Block | Nested conditional. |
 
@@ -1504,7 +1504,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. |
 
 </details>
@@ -1518,7 +1518,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
 | [`Conditional_PartyMember`](#conditional_partymember) | Block | Nested conditional. |
 
@@ -1533,7 +1533,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `cant_miss` | Boolean |  |
 | `damage` | Integer | The base damage properties of an attack. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
@@ -1552,7 +1552,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`passives`](#passives) | Block | Passives granted by equipping this. |
 | `stacks` | Integer | Number of stacks or intensity to apply. |
 
@@ -1567,7 +1567,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`mode`](./Enums.md#enum-mode) | Enum |  |
 | [`passives`](#passives) | Block | Passives granted by equipping this. |
 | `threshold` | Integer |  |
@@ -1583,7 +1583,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`mode`](./Enums.md#enum-mode) | Enum |  |
 | [`passives`](#passives) | Block |  |
 | [`threshold`](#threshold) | Block |  |
@@ -1599,7 +1599,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1612,7 +1612,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`element`](./Enums.md#enum-element) | Enum |  |
 | [`passives`](#passives) | Block |  |
 
@@ -1627,7 +1627,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1640,7 +1640,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1653,7 +1653,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`passives`](#passives) | Block | Block listing intrinsic passive modifiers. |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. |
 
@@ -1668,7 +1668,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1681,7 +1681,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1694,7 +1694,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1707,7 +1707,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `damage` | Integer |  |
 | [`effects`](#effects) | Block |  |
 | [`elements`](./Arrays.md#array-elements) | Array |  |
@@ -1725,7 +1725,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1738,7 +1738,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `stacks` | Integer | Number of stacks or intensity to apply. |
 
 </details>
@@ -1752,7 +1752,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Boss`](#conditional_boss) | Block | Nested conditional. |
 | [`Conditional_PartyMember`](#conditional_partymember) | Block | Nested conditional. |
 | [`Conditional_Tiny`](#conditional_tiny) | Block | Nested conditional. |
@@ -1768,7 +1768,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `exclude_self` | Boolean |  |
 | [`Conditional_Adjacent`](#conditional_adjacent) | Block | Nested conditional. |
 
@@ -1783,7 +1783,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1796,7 +1796,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `triggers_limit` | Integer |  |
 
 </details>
@@ -1810,7 +1810,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1823,7 +1823,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_BadRoll`](#conditional_badroll) | Block | Nested conditional. |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
 
@@ -1838,7 +1838,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_BadRoll`](#conditional_badroll) | Block | Nested conditional. |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
 | [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Block | Nested conditional. |
@@ -1855,7 +1855,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1868,7 +1868,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `stacks` | Integer | Number of stacks or intensity to apply. |
 
 </details>
@@ -1882,7 +1882,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1895,7 +1895,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1908,7 +1908,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
 | [`Conditional_RandomChance`](#conditional_randomchance) | Block | Nested conditional. |
 
@@ -1923,7 +1923,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Boss`](#conditional_boss) | Block | Nested conditional. |
 | [`Conditional_NotBoss`](#conditional_notboss) | Block | Nested conditional. |
 
@@ -1938,7 +1938,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1951,7 +1951,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. |
 | [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
@@ -1968,7 +1968,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1981,7 +1981,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1994,7 +1994,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2007,7 +2007,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2020,7 +2020,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2033,7 +2033,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_RandomChance`](#conditional_randomchance) | Block | Nested conditional. |
 
 </details>
@@ -2047,7 +2047,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2060,7 +2060,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2073,7 +2073,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Block | Nested conditional. |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
 
@@ -2088,7 +2088,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2101,7 +2101,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2114,7 +2114,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Block | Nested conditional. |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
 
@@ -2129,7 +2129,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2142,7 +2142,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2155,7 +2155,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2168,7 +2168,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. |
 
@@ -2183,7 +2183,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2196,7 +2196,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2209,7 +2209,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `count` | Integer | Quantity. |
 
 </details>
@@ -2223,7 +2223,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2236,7 +2236,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `end_of_round` | Boolean |  |
 | `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. |
 
@@ -2251,7 +2251,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2264,7 +2264,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`status`](./Enums.md#enum-status) | Enum | The required status effect. |
 
 </details>
@@ -2278,7 +2278,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2291,7 +2291,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2304,7 +2304,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. |
 
 </details>
@@ -2318,7 +2318,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2331,7 +2331,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2344,7 +2344,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -2357,7 +2357,7 @@ The following blocks all behave as `[status_passive_id]` containers. Each has it
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[status_passive_id]`](./Engine_Statuses_and_Passives.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 

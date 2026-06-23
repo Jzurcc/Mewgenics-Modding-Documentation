@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
 | `id` | Integer |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |

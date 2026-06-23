@@ -1,10 +1,10 @@
-# Mewgenics Mod Developer Documentation: Engine: Logic Blocks
+# Mewgenics Mod Developer Documentation: Engine: Logic Keys
 
-## Engine: Logic Blocks
+## Engine: Logic Keys
 
 This document is the authoritative reference for Logic Blocks. All of the contexts below can appear as dynamic keys inside an `effects {}` block, or directly inside abilities. Many of these are conditional wrappers that evaluate a condition before executing their nested block, while others redirect execution flow (e.g. `ApplyToSource`).
 
-> **Note:** Because many of these contexts accept arbitrary nested Logic Blocks, any entry marked `{Logic Blocks}` recursively refers back to this same document.
+> **Note:** Because many of these contexts accept arbitrary nested Logic Blocks, any entry marked `{Logic Keys}` recursively refers back to this same document.
 
 > **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root), [`effects` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-effects), [`temporary_effects` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-temporary_effects), [`Else` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-else), [`ApplyToSource` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytosource), [`Conditional_HasTag` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_Enemy` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_Ally` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_ally), [`Consumed` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-consumed), [`Conditional_Boss` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_boss), [`ApplyToSourceOnKill` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytosourceonkill), [`CanApplyToInanimate` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-canapplytoinanimate), [`Conditional_NotBoss` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_notboss), [`Conditional_HasStatus` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_hasstatus), [`Conditional_GoodRoll` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_goodroll), [`Conditional_Speculative` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_speculative), [`Conditional_FormulaIsPositive` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_formulaispositive), [`Conditional_Corpse` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_corpse), [`Conditional_InForm` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_inform), [`Conditional_HealthThreshold` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_healththreshold), [`Conditional_Object` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_object), [`Conditional_PlayerCat` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_playercat), [`ApplyToConsumed` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytoconsumed), [`TimeDelayStatusApplication` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`post_spawn_statuses` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-post_spawn_statuses), [`Conditional_AffectedByElement` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_affectedbyelement), [`Conditional_FirstApplicationThisTurn` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_firstapplicationthisturn), [`Conditional_LastHit` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_lasthit), [`ApplyToRandomPartyMemberIfPossible` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible), [`ApplyToTile` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytotile), [`Conditional_BadRoll` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_badroll), [`Conditional_DestructibleCorpse` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_destructiblecorpse), [`Conditional_Displaceable` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_displaceable), [`Conditional_IsSelf` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_isself), [`Conditional_OncePerBattle` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_onceperbattle), [`Conditional_Shielded` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_shielded), [`ApplyToRandomClosestAlly` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytorandomclosestally), [`Conditional_Backstab` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_backstab), [`Conditional_FinishedSpawning` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_finishedspawning), [`Conditional_HasCleansableDebuffs` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_hascleansabledebuffs), [`Conditional_IsTrample` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_istrample), [`Conditional_LivingPlayerCat` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_livingplayercat), [`Conditional_NotBig` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_notbig), [`Conditional_RandomChance` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_randomchance), [`NextBattleStatusStacks` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-nextbattlestatusstacks), [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#context-root), [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root), [`effects` (Cat_Mutations)](./Cat_Mutations.md#context-effects), [`Conditional_RandomChance` (Cat_Mutations)](./Cat_Mutations.md#context-conditional_randomchance), [`Conditional_FirstApplicationThisTurn` (Cat_Mutations)](./Cat_Mutations.md#context-conditional_firstapplicationthisturn), [`Conditional_GoodRoll` (Cat_Mutations)](./Cat_Mutations.md#context-conditional_goodroll), [`ROOT` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-root), [`FormChanger` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-formchanger), [`effects` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-effects), [`Consumed` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-consumed), [`Conditional_GoodRoll` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_goodroll), [`Conditional_BadRoll` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_badroll), [`Conditional_HasKnockback` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_hasknockback), [`Conditional_IsPhysicalAttack` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_isphysicalattack), [`Else` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-else), [`FinalBossBecomeTheChild` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-finalbossbecomethechild), [`InfiniteRebirth` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-infiniterebirth), [`TVBotScreen` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-tvbotscreen), [`ROOT` (Custom_Cats)](./Custom_Cats.md#context-root), [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root), [`ROOT` (Difficulties)](./Difficulties.md#context-root), [`ROOT` (Elite_Buffs)](./Elite_Buffs.md#context-root), [`effects` (Elite_Buffs)](./Elite_Buffs.md#context-effects), [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`global_effect_next_fight` (Events_and_Encounters)](./Events_and_Encounters.md#context-global_effect_next_fight), [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#context-root), [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`effects` (House_and_Environment)](./House_and_Environment.md#context-effects), [`Else` (House_and_Environment)](./House_and_Environment.md#context-else), [`StatusCharactersOnRoundEnd` (House_and_Environment)](./House_and_Environment.md#context-statuscharactersonroundend), [`Conditional_GoodRoll` (House_and_Environment)](./House_and_Environment.md#context-conditional_goodroll), [`Conditional_Corpse` (House_and_Environment)](./House_and_Environment.md#context-conditional_corpse), [`Conditional_HasTag` (House_and_Environment)](./House_and_Environment.md#context-conditional_hastag), [`Conditional_PartyMember` (House_and_Environment)](./House_and_Environment.md#context-conditional_partymember), [`ROOT` (Injuries)](./Injuries.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`effects` (Items_and_Equipment)](./Items_and_Equipment.md#context-effects), [`Conditional_GoodRoll` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_goodroll), [`ApplyToSource` (Items_and_Equipment)](./Items_and_Equipment.md#context-applytosource), [`Conditional_HasStatus` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_hasstatus), [`Else` (Items_and_Equipment)](./Items_and_Equipment.md#context-else), [`StatusOnTakeHealthOrShieldDamage` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`Conditional_PartyMember` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_partymember), [`Conditional_Adjacent` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_adjacent), [`Conditional_BadRoll` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_badroll), [`Conditional_Boss` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_boss), [`Conditional_HasTag` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_hastag), [`Conditional_OncePerBattle` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_onceperbattle), [`ApplyToRandomPartyMemberIfPossible` (Items_and_Equipment)](./Items_and_Equipment.md#context-applytorandompartymemberifpossible), [`CastAgainWithStatus` (Items_and_Equipment)](./Items_and_Equipment.md#context-castagainwithstatus), [`Conditional_Ally` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_ally), [`Conditional_Corpse` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_corpse), [`Conditional_Enemy` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_enemy), [`Conditional_HasCleansableDebuffs` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_hascleansabledebuffs), [`Conditional_HealthThreshold` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_healththreshold), [`Conditional_PlayerCat` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_playercat), [`Conditional_RandomChance` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_randomchance), [`Conditional_Shielded` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_shielded), [`CyborgTurns` (Items_and_Equipment)](./Items_and_Equipment.md#context-cyborgturns), [`ScaldingOrbMoonBossOneShot` (Items_and_Equipment)](./Items_and_Equipment.md#context-scaldingorbmoonbossoneshot), [`StatusAdjacentOnTheirTurnEnd` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusadjacentontheirturnend), [`StatusOnFallAsleep` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusonfallasleep), [`StatusOnTurnEndIfCastNSpells` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusonturnendifcastnspells), [`ROOT` (Item_Pools)](./Item_Pools.md#context-root), [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root), [`ROOT` (Miscellaneous)](./Miscellaneous.md#context-root), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root), [`effects` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-effects), [`StatusOnStanceSwitch` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonstanceswitch), [`Conditional_Ally` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_ally), [`Conditional_Enemy` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_enemy), [`Else` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-else), [`StatusOnOverHealed` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonoverhealed), [`Conditional_FirstApplicationThisTurn` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_firstapplicationthisturn), [`StatusOnTurnEndIfCastNSpells` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonturnendifcastnspells), [`StatusOnTurnEndIfManaExact` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonturnendifmanaexact), [`Conditional_BadRoll` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_badroll), [`Conditional_HasStatus` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_hasstatus), [`AddStatusToBasicAttackWithCooldown` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-addstatustobasicattackwithcooldown), [`AddStatusToMeleeDamage` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-addstatustomeleedamage), [`ApplyToSource` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-applytosource), [`Conditional_Adjacent` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_adjacent), [`Conditional_Boss` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_boss), [`Conditional_Corpse` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_corpse), [`Conditional_HasTag` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_hastag), [`Conditional_NotBoss` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_notboss), [`Conditional_PartyMember` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_partymember), [`Conditional_Shielded` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_shielded), [`EscapeSequence` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-escapesequence), [`InfiniteRebirth` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-infiniterebirth), [`StatusOnDealtDamage` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusondealtdamage), [`on_throw` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-on_throw), [`Conditional_GoodRoll` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_goodroll), [`StatusAdjacentOnTheirTurnBegin` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusadjacentontheirturnbegin), [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root), [`ROOT` (Shops)](./Shops.md#context-root), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
 
@@ -659,14 +659,14 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `use_placeholder` | Boolean |  |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. |
 | `wet` | Boolean |  |
-| [`{Logic Blocks}`](#{logic blocks}) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |
-| `{Statuses / Passives}` | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |
+| [`{Logic Keys}`](#{logic blocks}) | Block | All valid keys from the specified engine key are applicable to this context/block. |
+| `{Status and Passive Keys}` | Variable | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
 ### Valid Nested Blocks
 
-The following blocks all behave as `[logic_block]` containers. Each has its own unique parameters listed below its entry.
+The following blocks all behave as `{Logic Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -677,7 +677,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -690,7 +690,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -703,7 +703,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -716,7 +716,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. |
 
 </details>
@@ -730,7 +730,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Block | Nested conditional. |
 
@@ -745,7 +745,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. |
 | [`Conditional_Speculative`](#conditional_speculative) | Block | Nested conditional. |
 
@@ -760,7 +760,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
 | [`Conditional_PlayerCat`](#conditional_playercat) | Block | Nested conditional. |
 
@@ -775,7 +775,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -788,7 +788,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`odds`](./Math_Equations.md) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) |
 
 </details>
@@ -802,7 +802,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. |
 
 </details>
@@ -816,7 +816,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -829,7 +829,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_InForm`](#conditional_inform) | Block | Nested conditional. |
 
 </details>
@@ -843,7 +843,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -856,7 +856,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. |
 
 </details>
@@ -870,7 +870,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `odds` | Float | The probability (0.0 to 1.0) of applying the debuff. |
 
 </details>
@@ -884,7 +884,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -897,7 +897,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -910,7 +910,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Block | Nested conditional. |
 | [`Conditional_NotBoss`](#conditional_notboss) | Block | Nested conditional. |
 | [`Conditional_PartyMember`](#conditional_partymember) | Block | Nested conditional. |
@@ -926,7 +926,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -939,7 +939,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. |
 
 </details>
@@ -953,7 +953,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. |
 
 </details>
@@ -967,7 +967,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `odds` | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. |
 | [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. |
 
@@ -982,7 +982,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -995,7 +995,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. |
 
 </details>
@@ -1009,7 +1009,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. |
 | [`Conditional_Boss`](#conditional_boss) | Block | Nested conditional. |
 | [`Conditional_InForm`](#conditional_inform) | Block | Nested conditional. |
@@ -1026,7 +1026,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum |  |
 | `threshold_flat` | Integer | A flat numerical health value threshold. |
 | `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). |
@@ -1043,7 +1043,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. |
 
 </details>
@@ -1057,7 +1057,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1070,7 +1070,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1083,7 +1083,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1096,7 +1096,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1109,7 +1109,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1122,7 +1122,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `threshold_flat` | Integer |  |
 
 </details>
@@ -1136,7 +1136,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1149,7 +1149,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1162,7 +1162,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. |
 
@@ -1177,7 +1177,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1190,7 +1190,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1203,7 +1203,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. |
 
 </details>
@@ -1217,7 +1217,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`key`](./Enums.md#enum-key) | Enum |  |
 
 </details>
@@ -1231,7 +1231,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_IsSelf`](#conditional_isself) | Block | Nested conditional. |
 
 </details>
@@ -1245,7 +1245,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1258,7 +1258,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `odds` | Float |  |
 
 </details>
@@ -1272,7 +1272,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
@@ -1285,7 +1285,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. |
 
 </details>
@@ -1299,7 +1299,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. |
 
 </details>
@@ -1313,7 +1313,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. |
 | [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. |
 
@@ -1328,7 +1328,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. |
 
 </details>
@@ -1342,7 +1342,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `do_not_pop_corpse` | Boolean |  |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum |  |
 | `drop_on_death` | Boolean |  |
@@ -1367,7 +1367,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`Conditional_Displaceable`](#conditional_displaceable) | Block | Nested conditional. |
 | [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. |
 | [`Conditional_HasKnockback`](#conditional_hasknockback) | Block | Nested conditional. |
@@ -1388,7 +1388,7 @@ The following blocks all behave as `[logic_block]` containers. Each has its own 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[logic_block]`](./Engine_LogicBlocks.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `LowerAmbientLight` | Number |  |
 | [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Block | Nested conditional. |
 | [`Conditional_ActiveWeather_Any`](#conditional_activeweather_any) | Block | Nested conditional. |

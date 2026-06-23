@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`name`](./Strings.md#string-name) | String |  | 236 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 157 |
 | [`tooltip_stackless`](./Strings.md#string-tooltip_stackless) | String |  | 76 |

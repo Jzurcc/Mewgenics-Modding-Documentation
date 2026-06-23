@@ -1,6 +1,6 @@
-# Mewgenics Mod Developer Documentation: Engine: Damage Instances
+# Mewgenics Mod Developer Documentation: Engine: Damage Instance Keys
 
-## Engine: Damage Instances
+## Engine: Damage Instance Keys
 
 This document defines the shared schema for all Damage Instance blocks (`damage_instance`, `splash_damage`, `self_damage`, `bonk_damage`). Each of these blocks configures a discrete hit: its base damage, element, knockback, accuracy, and any on-hit effects.
 
@@ -51,13 +51,13 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `show_damage_on_0` | Boolean | Forces the "-0" floater text to appear. |
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). |
-| `{Statuses / Passives}` | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |
+| `{Status and Passive Keys}` | Variable | All valid keys from the specified engine key are applicable to this context/block. |
 
 </details>
 
 ### Valid Nested Blocks
 
-The following blocks all behave as `[damage_instance]` containers. Each has its own unique parameters listed below its entry.
+The following blocks all behave as `{Damage Instance Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -68,7 +68,7 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Damage Instance Keys}`](./Engine_DamageInstanceKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `damage` | Integer | The base damage properties of an attack. |
 | [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. |
 
@@ -83,7 +83,7 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Damage Instance Keys}`](./Engine_DamageInstanceKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `accuracy` | Float | Hit chance modifier. |
 | `ai_base_score` | Integer | How highly the AI values using this ability. |
 | [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. |
@@ -134,7 +134,7 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Damage Instance Keys}`](./Engine_DamageInstanceKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `ai_base_score` | Integer |  |
 | `cant_miss` | Boolean |  |
 | [`damage`](./Math_Equations.md) | Equation | The base damage properties of an attack. |
@@ -157,7 +157,7 @@ The following blocks all behave as `[damage_instance]` containers. Each has its 
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[damage_instance]`](./Engine_Damage.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Damage Instance Keys}`](./Engine_DamageInstanceKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `ai_base_score` | Integer |  |
 | `crit_chance` | Float |  |
 | `damage` | Integer | The base damage properties of an attack. |

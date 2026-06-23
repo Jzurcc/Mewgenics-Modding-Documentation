@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`popup`](#context-popup) | Block |  | 266 |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum |  | 127 |

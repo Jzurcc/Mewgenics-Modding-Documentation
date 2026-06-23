@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `bonus_itemroll_luck` | Integer |  | 8 |
 | `boss_health_multiplier` | Float |  | 8 |
 | `coins_multiplier` | Float |  | 8 |

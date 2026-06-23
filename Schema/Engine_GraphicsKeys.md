@@ -178,7 +178,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 
 ### Valid Nested Blocks
 
-The following blocks all behave as `[graphic_block]` containers. Each has its own unique parameters listed below its entry.
+The following blocks all behave as `{Graphics Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -189,7 +189,7 @@ The following blocks all behave as `[graphic_block]` containers. Each has its ow
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[graphic_block]`](./Engine_Graphics.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Visuals applied to the target receiving the effect. |
 | [`affected_particle`](./Enums.md#enum-affected_particle) | Enum | Visuals applied to the target receiving the effect. |
 | [`air_animation`](./Enums.md#enum-air_animation) | Enum | Animation played while entity is airborne. |

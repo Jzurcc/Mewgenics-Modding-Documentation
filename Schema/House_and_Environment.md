@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`desc`](./Strings.md#string-desc) | String |  | 59 |
 | [`name`](./Strings.md#string-name) | String |  | 59 |
 | [`effects`](#context-effects) | Block |  | 58 |
@@ -75,8 +75,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `LowerAmbientLight` | Number |  | 4 |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block |  | 2 |
 | [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn) | Block |  | 2 |
 
@@ -153,8 +153,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
 
 </details>
@@ -193,8 +193,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
 | `FloatingRockTrap` | Integer |  | 1 |
 | `Thorns` | Integer |  | 1 |
@@ -264,7 +264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`StatusOnBattleEnd`](#context-statusonbattleend) | Block |  | 1 |
 
 </details>
@@ -300,7 +300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
 | `Conditional_Flying` | Block |  | 1 |
 | [`Else`](#context-else) | Block |  | 1 |
@@ -320,8 +320,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
 | [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
 
@@ -358,7 +358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -391,7 +391,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `Conditional_Tiny` | Block |  | 1 |
 | [`Else`](#context-else) | Block |  | 1 |
 
@@ -410,7 +410,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
 | [`Else`](#context-else) | Block |  | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array |  | 1 |
@@ -573,8 +573,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -590,8 +590,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`ApplyPassives`](#context-applypassives) | Block |  | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
@@ -610,8 +610,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`ApplyPassives`](#context-applypassives) | Block |  | 1 |
 
 </details>
@@ -1001,7 +1001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -1060,7 +1060,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
  | `AllStatsUp` | Number |  | 1 | 
  | [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag) | Block |  | 1 | 

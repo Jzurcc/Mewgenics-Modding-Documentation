@@ -1,6 +1,6 @@
-# Mewgenics Mod Developer Documentation: Engine: Event Nodes
+# Mewgenics Mod Developer Documentation: Engine: Event Keys
 
-## Engine: Event Nodes
+## Engine: Event Keys
 
 This document defines the schema shared by all Event Node blocks (`good`, `bad`, `main`, `reward`, `common`, `rare`). Each key in these blocks defines what happens as part of that event outcome.
 
@@ -131,7 +131,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 
 ### Valid Nested Blocks
 
-The following blocks all behave as `[event_node]` containers. Each has its own unique parameters listed below its entry.
+The following blocks all behave as `{Event Keys}` containers. Each has its own unique parameters listed below its entry.
 
 ---
 
@@ -142,7 +142,7 @@ The following blocks all behave as `[event_node]` containers. Each has its own u
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[event_node]`](./Engine_Events.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`battle`](./Math_Equations.md) | Equation |  |
 | [`conditional_reward`](#conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. |
 | [`cutscene`](#cutscene) | Block | Event Node: Triggers a narrative cutscene. |
@@ -177,7 +177,7 @@ The following blocks all behave as `[event_node]` containers. Each has its own u
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[event_node]`](./Engine_Events.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  |
 | `ally_ambush_next_fights` | Integer |  |
 | `ambush_next_basic_fights` | Integer |  |
@@ -246,7 +246,7 @@ The following blocks all behave as `[event_node]` containers. Each has its own u
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[event_node]`](./Engine_Events.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  |
 | `ally_ambush_next_fights` | Integer |  |
 | [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum |  |
@@ -317,7 +317,7 @@ The following blocks all behave as `[event_node]` containers. Each has its own u
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[event_node]`](./Engine_Events.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  |
 | [`bad`](#bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. |
@@ -352,7 +352,7 @@ The following blocks all behave as `[event_node]` containers. Each has its own u
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[event_node]`](./Engine_Events.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum |  |
 | `ally_ambush_next_fights` | Integer |  |
 | [`ambush`](./Math_Equations.md) | Equation |  |
@@ -441,7 +441,7 @@ The following blocks all behave as `[event_node]` containers. Each has its own u
 
 | Property Key | Type | Definition |
 | :--- | :--- | :--- |
-| [`[event_node]`](./Engine_Events.md#valid-property-keys) | Block | Any valid logic block from the global schema. |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
 | `ambush_next_basic_fights` | Integer |  |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum |  |
 | [`common`](#common) | Block | Event Node: Story branch or dialog option representing the 'Common' action. |

@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `icon_frame` | Integer |  | 54 |
 | [`passives`](#context-passives) | Block |  | 54 |
 | `value` | Float |  | 54 |
@@ -43,7 +43,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | [`MeleeRevengeDamage`](#context-meleerevengedamage) | Block |  | 3 |
 | [`RevengeDamage`](#context-revengedamage) | Block |  | 2 |
 | [`StatusEachTurnEnd`](#context-statuseachturnend) | Block |  | 2 |
@@ -67,7 +67,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `NonStackingShield` | Integer |  | 8 |
 
 </details>
@@ -86,8 +86,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Blocks}`](./Engine_LogicBlocks.md#all-confirmed-logic-block-values) | Block | Any valid logic block. See Engine_LogicBlocks.md for the full list. |  |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -122,7 +122,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `knockback` | Integer |  | 2 |
 | [`effects`](#context-effects) | Block |  | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
@@ -216,7 +216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -232,7 +232,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
  | `Zombie` | Number |  | 2 | 
 
@@ -249,7 +249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -282,7 +282,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -298,7 +298,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
@@ -314,7 +314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `AllStatsUp` | Integer |  | 1 |
 | `HealthGain` | Integer |  | 1 |
 
@@ -333,7 +333,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Statuses / Passives}`](./Engine_Statuses_and_Passives.md#all-confirmed-status-passive-id-values) | Variable | Any valid Status or Passive ID. Value varies (typically a stack count, `true`, or a nested Block). See Engine_Statuses_and_Passives.md for all confirmed IDs. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
 </details>
 
 ---
