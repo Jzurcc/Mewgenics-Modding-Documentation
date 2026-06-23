@@ -190,7 +190,7 @@ Use this to spot any completely undocumented keys.
 | `damage` | 75 | `(15+bonus_melee_damage)*.5`, `(4+bonus_ranged_damage+1)/2`, `(5+bonus_melee_ability_damage)*.5`, `(5+bonus_melee_ability_damage)/2`, `(5+bonus_melee_damage+1)/2` |
 | `object` | 74 | `AlbinoTomTom`, `AlbinoTomTom_Elite`, `AlienBeast`, `AlienEgg`, `AllyRotFly` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` |
 | `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` |
 | `stacks` | 52 | `5+bonus_melee_ability_damage`, `X`, `floor(lck/4)`, `item_aux`, `max(min(X+1, item_aux), 0)` |

@@ -16,13 +16,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
-| `id` | Integer |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |
+| `id` | Integer |  | 13 |
 | [`stats`](#context-stats) | Block |  | 12 |
 | [`scars`](#context-scars) | Block |  | 10 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 
 </details>
 

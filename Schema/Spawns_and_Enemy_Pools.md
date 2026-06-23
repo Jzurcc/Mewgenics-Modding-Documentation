@@ -16,17 +16,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`editor`](#context-editor) | Block |  | 550 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 543 |
 | `value` | Float |  | 377 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | `early_spawn` | Boolean |  | 10 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 6 |
 | [`tag_location`](./Enums.md#enum-tag_location) | Enum |  | 5 |
 | `forced_placement` | Boolean |  | 3 |
 | [`trap`](./Enums.md#enum-trap) | Enum |  | 2 |
 | [`image`](./Strings.md#string-image) | String |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`reserved`](./Enums.md#enum-reserved) | Enum |  | 1 |
 | [`utility`](./Enums.md#enum-utility) | Enum |  | 1 |
 | [`weather_element_alt`](#context-weather_element_alt) | Block |  | 1 |
@@ -46,13 +46,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 578 |
 | `category` | Integer |  | 551 |
 | [`image`](./Arrays.md#array-image) | Array |  | 550 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 578 |
 | `paint` | Boolean |  | 550 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 538 |
 | [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 196 |
 | `subcategory` | Integer |  | 9 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 538 |
 
 </details>
 

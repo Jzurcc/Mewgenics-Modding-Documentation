@@ -16,12 +16,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | `texture` | Integer |  | 211 |
 | `default_frame` | Integer |  | 210 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
-| `righteye` | Integer |  | 200 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | [`voice`](./Enums.md#enum-voice) | Enum |  | 200 |
+| `righteye` | Integer |  | 200 |
 | `lefteye` | Integer |  | 198 |
 | `claws` | Integer |  | 196 |
 | `mouth` | Float |  | 192 |

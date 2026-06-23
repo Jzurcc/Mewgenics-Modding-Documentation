@@ -16,12 +16,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | `Comfort` | Integer | Applies or references the 'Comfort' effect/state. | 406 |
 | `Appeal` | Integer | Applies or references the 'Appeal' effect/state. | 338 |
 | `Stimulation` | Integer | Applies or references the 'Stimulation' effect/state. | 268 |
 | [`set`](./Enums.md#enum-set) | Enum |  | 220 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | `Health` | Integer | Applies or references the 'Health' effect/state. | 67 |
 | `Evolution` | Integer | Applies or references the 'Evolution' effect/state. | 53 |
 | `can_be_rare` | Boolean |  | 10 |

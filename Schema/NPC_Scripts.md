@@ -13,6 +13,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`states`](./NPC_Scripts.md#context-states) | Block | Examples: `{ ... }` | 12 |
 | [`transitions`](./NPC_Scripts.md#context-transitions) | Block | Examples: `{ ... }` | 12 |
 | [`unprompted`](./NPC_Scripts.md#context-unprompted) | Block | Examples: `{ ... }` | 9 |
@@ -20,7 +21,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unknown`](./NPC_Scripts.md#context-unknown) | Block | Examples: `{ ... }` | 8 |
 | [`hide_text`](./NPC_Scripts.md#context-hide_text) | Block | Examples: `{ ... }` | 4 |
 | [`purchase_item`](./NPC_Scripts.md#context-purchase_item) | Block | Examples: `{ ... }` | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`unprompted_a`](./NPC_Scripts.md#context-unprompted_a) | Block | Examples: `{ ... }` | 4 |
 | [`unprompted_b`](./NPC_Scripts.md#context-unprompted_b) | Block | Examples: `{ ... }` | 4 |
 | [`unprompted_c`](./NPC_Scripts.md#context-unprompted_c) | Block | Examples: `{ ... }` | 4 |
@@ -44,8 +44,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`beanies_bombquest_fail_jarofradiation`](./NPC_Scripts.md#context-beanies_bombquest_fail_jarofradiation) | Block | Examples: `{ ... }` | 1 |
 | [`beanies_bombquest_fail_nuke`](./NPC_Scripts.md#context-beanies_bombquest_fail_nuke) | Block | Examples: `{ ... }` | 1 |
 | [`beanies_future_intro`](./NPC_Scripts.md#context-beanies_future_intro) | Block | Examples: `{ ... }` | 1 |
-| [`beanies_hitler3`](./NPC_Scripts.md#context-beanies_hitler3) | Block | Examples: `{ ... }` | 1 |
 | [`beanies_hitler3_defeat`](./NPC_Scripts.md#context-beanies_hitler3_defeat) | Block | Examples: `{ ... }` | 1 |
+| [`beanies_hitler3`](./NPC_Scripts.md#context-beanies_hitler3) | Block | Examples: `{ ... }` | 1 |
 | [`beanies_iloveyou`](./NPC_Scripts.md#context-beanies_iloveyou) | Block | Examples: `{ ... }` | 1 |
 | [`beanies_infinite_intro`](./NPC_Scripts.md#context-beanies_infinite_intro) | Block | Examples: `{ ... }` | 1 |
 | [`beanies_jurassic_intro`](./NPC_Scripts.md#context-beanies_jurassic_intro) | Block | Examples: `{ ... }` | 1 |
@@ -207,8 +207,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`butch_tips_tacticalview`](./NPC_Scripts.md#context-butch_tips_tacticalview) | Block | Examples: `{ ... }` | 1 |
 | [`butch_tips_turnorder`](./NPC_Scripts.md#context-butch_tips_turnorder) | Block | Examples: `{ ... }` | 1 |
 | [`butch_tips_wellrounded`](./NPC_Scripts.md#context-butch_tips_wellrounded) | Block | Examples: `{ ... }` | 1 |
-| [`can_still_use_attack`](./NPC_Scripts.md#context-can_still_use_attack) | Block | Examples: `{ ... }` | 1 |
 | [`can_still_use_attack_didntspell`](./NPC_Scripts.md#context-can_still_use_attack_didntspell) | Block | Examples: `{ ... }` | 1 |
+| [`can_still_use_attack`](./NPC_Scripts.md#context-can_still_use_attack) | Block | Examples: `{ ... }` | 1 |
 | [`cant_afford_a`](./NPC_Scripts.md#context-cant_afford_a) | Block | Examples: `{ ... }` | 1 |
 | [`cant_afford_b`](./NPC_Scripts.md#context-cant_afford_b) | Block | Examples: `{ ... }` | 1 |
 | [`cant_afford_c`](./NPC_Scripts.md#context-cant_afford_c) | Block | Examples: `{ ... }` | 1 |
@@ -248,8 +248,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`frank_max_intro`](./NPC_Scripts.md#context-frank_max_intro) | Block | Examples: `{ ... }` | 1 |
 | [`frank_max_repeating`](./NPC_Scripts.md#context-frank_max_repeating) | Block | Examples: `{ ... }` | 1 |
 | [`frank_terminator2`](./NPC_Scripts.md#context-frank_terminator2) | Block | Examples: `{ ... }` | 1 |
-| [`frank_tips_1`](./NPC_Scripts.md#context-frank_tips_1) | Block | Examples: `{ ... }` | 1 |
 | [`frank_tips_10`](./NPC_Scripts.md#context-frank_tips_10) | Block | Examples: `{ ... }` | 1 |
+| [`frank_tips_1`](./NPC_Scripts.md#context-frank_tips_1) | Block | Examples: `{ ... }` | 1 |
 | [`frank_tips_2`](./NPC_Scripts.md#context-frank_tips_2) | Block | Examples: `{ ... }` | 1 |
 | [`frank_tips_3`](./NPC_Scripts.md#context-frank_tips_3) | Block | Examples: `{ ... }` | 1 |
 | [`frank_tips_4`](./NPC_Scripts.md#context-frank_tips_4) | Block | Examples: `{ ... }` | 1 |
@@ -261,19 +261,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gone`](./NPC_Scripts.md#context-gone) | Block | Examples: `{ ... }` | 1 |
 | [`house_intro`](./NPC_Scripts.md#context-house_intro) | Block | Examples: `{ ... }` | 1 |
 | [`house_kitten_box`](./NPC_Scripts.md#context-house_kitten_box) | Block | Examples: `{ ... }` | 1 |
-| [`house_pass_day`](./NPC_Scripts.md#context-house_pass_day) | Block | Examples: `{ ... }` | 1 |
 | [`house_pass_day2`](./NPC_Scripts.md#context-house_pass_day2) | Block | Examples: `{ ... }` | 1 |
+| [`house_pass_day`](./NPC_Scripts.md#context-house_pass_day) | Block | Examples: `{ ... }` | 1 |
 | [`house_pipe`](./NPC_Scripts.md#context-house_pipe) | Block | Examples: `{ ... }` | 1 |
 | [`house_retired_cat_box`](./NPC_Scripts.md#context-house_retired_cat_box) | Block | Examples: `{ ... }` | 1 |
 | [`house_starred_box`](./NPC_Scripts.md#context-house_starred_box) | Block | Examples: `{ ... }` | 1 |
 | [`house_strays`](./NPC_Scripts.md#context-house_strays) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_4throom`](./NPC_Scripts.md#context-house_upgrade_4throom) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_attic`](./NPC_Scripts.md#context-house_upgrade_attic) | Block | Examples: `{ ... }` | 1 |
-| [`house_upgrade_basement`](./NPC_Scripts.md#context-house_upgrade_basement) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_basement2`](./NPC_Scripts.md#context-house_upgrade_basement2) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_basement3`](./NPC_Scripts.md#context-house_upgrade_basement3) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_basement4`](./NPC_Scripts.md#context-house_upgrade_basement4) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_basement5`](./NPC_Scripts.md#context-house_upgrade_basement5) | Block | Examples: `{ ... }` | 1 |
+| [`house_upgrade_basement`](./NPC_Scripts.md#context-house_upgrade_basement) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_largehouse`](./NPC_Scripts.md#context-house_upgrade_largehouse) | Block | Examples: `{ ... }` | 1 |
 | [`house_upgrade_mediumhouse`](./NPC_Scripts.md#context-house_upgrade_mediumhouse) | Block | Examples: `{ ... }` | 1 |
 | [`intro`](./NPC_Scripts.md#context-intro) | Block | Examples: `{ ... }` | 1 |
@@ -298,15 +298,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`level_up_selected_sunburn`](./NPC_Scripts.md#context-level_up_selected_sunburn) | Block | Examples: `{ ... }` | 1 |
 | [`low_on_food`](./NPC_Scripts.md#context-low_on_food) | Block | Examples: `{ ... }` | 1 |
 | [`map_click_node`](./NPC_Scripts.md#context-map_click_node) | Block | Examples: `{ ... }` | 1 |
-| [`map_equip_items`](./NPC_Scripts.md#context-map_equip_items) | Block | Examples: `{ ... }` | 1 |
 | [`map_equip_items2`](./NPC_Scripts.md#context-map_equip_items2) | Block | Examples: `{ ... }` | 1 |
+| [`map_equip_items`](./NPC_Scripts.md#context-map_equip_items) | Block | Examples: `{ ... }` | 1 |
 | [`melee_attack_rat`](./NPC_Scripts.md#context-melee_attack_rat) | Block | Examples: `{ ... }` | 1 |
-| [`melee_cat_spit`](./NPC_Scripts.md#context-melee_cat_spit) | Block | Examples: `{ ... }` | 1 |
 | [`melee_cat_spit_fail_ally`](./NPC_Scripts.md#context-melee_cat_spit_fail_ally) | Block | Examples: `{ ... }` | 1 |
 | [`melee_cat_spit_fail_miss`](./NPC_Scripts.md#context-melee_cat_spit_fail_miss) | Block | Examples: `{ ... }` | 1 |
 | [`melee_cat_spit_fail_rat`](./NPC_Scripts.md#context-melee_cat_spit_fail_rat) | Block | Examples: `{ ... }` | 1 |
 | [`melee_cat_spit_ignore`](./NPC_Scripts.md#context-melee_cat_spit_ignore) | Block | Examples: `{ ... }` | 1 |
 | [`melee_cat_spit_success`](./NPC_Scripts.md#context-melee_cat_spit_success) | Block | Examples: `{ ... }` | 1 |
+| [`melee_cat_spit`](./NPC_Scripts.md#context-melee_cat_spit) | Block | Examples: `{ ... }` | 1 |
 | [`melee_killed_rat`](./NPC_Scripts.md#context-melee_killed_rat) | Block | Examples: `{ ... }` | 1 |
 | [`melee_move2`](./NPC_Scripts.md#context-melee_move2) | Block | Examples: `{ ... }` | 1 |
 | [`melee_out_of_actions`](./NPC_Scripts.md#context-melee_out_of_actions) | Block | Examples: `{ ... }` | 1 |
@@ -338,10 +338,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`purchase_item_jurassic`](./NPC_Scripts.md#context-purchase_item_jurassic) | Block | Examples: `{ ... }` | 1 |
 | [`purchase_item_moon`](./NPC_Scripts.md#context-purchase_item_moon) | Block | Examples: `{ ... }` | 1 |
 | [`purchase_item_theend`](./NPC_Scripts.md#context-purchase_item_theend) | Block | Examples: `{ ... }` | 1 |
-| [`ranged_attack_tomtom`](./NPC_Scripts.md#context-ranged_attack_tomtom) | Block | Examples: `{ ... }` | 1 |
 | [`ranged_attack_tomtom_fail_ally`](./NPC_Scripts.md#context-ranged_attack_tomtom_fail_ally) | Block | Examples: `{ ... }` | 1 |
 | [`ranged_attack_tomtom_fail_miss`](./NPC_Scripts.md#context-ranged_attack_tomtom_fail_miss) | Block | Examples: `{ ... }` | 1 |
 | [`ranged_attack_tomtom_fail_rat`](./NPC_Scripts.md#context-ranged_attack_tomtom_fail_rat) | Block | Examples: `{ ... }` | 1 |
+| [`ranged_attack_tomtom`](./NPC_Scripts.md#context-ranged_attack_tomtom) | Block | Examples: `{ ... }` | 1 |
 | [`ranged_cat_attack`](./NPC_Scripts.md#context-ranged_cat_attack) | Block | Examples: `{ ... }` | 1 |
 | [`ranged_cat_early_attack2_ally`](./NPC_Scripts.md#context-ranged_cat_early_attack2_ally) | Block | Examples: `{ ... }` | 1 |
 | [`ranged_cat_early_attack2_miss`](./NPC_Scripts.md#context-ranged_cat_early_attack2_miss) | Block | Examples: `{ ... }` | 1 |
@@ -358,8 +358,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`steven_milliontrashed`](./NPC_Scripts.md#context-steven_milliontrashed) | Block | Examples: `{ ... }` | 1 |
 | [`steven_postendgame`](./NPC_Scripts.md#context-steven_postendgame) | Block | Examples: `{ ... }` | 1 |
 | [`steven_resummon`](./NPC_Scripts.md#context-steven_resummon) | Block | Examples: `{ ... }` | 1 |
-| [`steven_savescum_1`](./NPC_Scripts.md#context-steven_savescum_1) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_100`](./NPC_Scripts.md#context-steven_savescum_100) | Block | Examples: `{ ... }` | 1 |
+| [`steven_savescum_1`](./NPC_Scripts.md#context-steven_savescum_1) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_1alt1`](./NPC_Scripts.md#context-steven_savescum_1alt1) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_1alt2`](./NPC_Scripts.md#context-steven_savescum_1alt2) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_1alt3`](./NPC_Scripts.md#context-steven_savescum_1alt3) | Block | Examples: `{ ... }` | 1 |
@@ -375,12 +375,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`steven_savescum_4alt1`](./NPC_Scripts.md#context-steven_savescum_4alt1) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_4alt2`](./NPC_Scripts.md#context-steven_savescum_4alt2) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_4alt3`](./NPC_Scripts.md#context-steven_savescum_4alt3) | Block | Examples: `{ ... }` | 1 |
-| [`steven_savescum_houseboss_1`](./NPC_Scripts.md#context-steven_savescum_houseboss_1) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_houseboss_100`](./NPC_Scripts.md#context-steven_savescum_houseboss_100) | Block | Examples: `{ ... }` | 1 |
+| [`steven_savescum_houseboss_1`](./NPC_Scripts.md#context-steven_savescum_houseboss_1) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_houseboss_2`](./NPC_Scripts.md#context-steven_savescum_houseboss_2) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_houseboss_3`](./NPC_Scripts.md#context-steven_savescum_houseboss_3) | Block | Examples: `{ ... }` | 1 |
-| [`steven_savescum_intro`](./NPC_Scripts.md#context-steven_savescum_intro) | Block | Examples: `{ ... }` | 1 |
 | [`steven_savescum_intro_houseboss`](./NPC_Scripts.md#context-steven_savescum_intro_houseboss) | Block | Examples: `{ ... }` | 1 |
+| [`steven_savescum_intro`](./NPC_Scripts.md#context-steven_savescum_intro) | Block | Examples: `{ ... }` | 1 |
 | [`steven_unlock_act1_crazy`](./NPC_Scripts.md#context-steven_unlock_act1_crazy) | Block | Examples: `{ ... }` | 1 |
 | [`steven_unlock_act1_impossible`](./NPC_Scripts.md#context-steven_unlock_act1_impossible) | Block | Examples: `{ ... }` | 1 |
 | [`steven_unlock_act2_crazy`](./NPC_Scripts.md#context-steven_unlock_act2_crazy) | Block | Examples: `{ ... }` | 1 |
@@ -395,8 +395,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tink_basestats`](./NPC_Scripts.md#context-tink_basestats) | Block | Examples: `{ ... }` | 1 |
 | [`tink_begin_accepting_cats`](./NPC_Scripts.md#context-tink_begin_accepting_cats) | Block | Examples: `{ ... }` | 1 |
 | [`tink_inbreeding`](./NPC_Scripts.md#context-tink_inbreeding) | Block | Examples: `{ ... }` | 1 |
-| [`tink_max1`](./NPC_Scripts.md#context-tink_max1) | Block | Examples: `{ ... }` | 1 |
 | [`tink_max10`](./NPC_Scripts.md#context-tink_max10) | Block | Examples: `{ ... }` | 1 |
+| [`tink_max1`](./NPC_Scripts.md#context-tink_max1) | Block | Examples: `{ ... }` | 1 |
 | [`tink_max2`](./NPC_Scripts.md#context-tink_max2) | Block | Examples: `{ ... }` | 1 |
 | [`tink_max3`](./NPC_Scripts.md#context-tink_max3) | Block | Examples: `{ ... }` | 1 |
 | [`tink_max4`](./NPC_Scripts.md#context-tink_max4) | Block | Examples: `{ ... }` | 1 |
@@ -427,8 +427,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_blankcollar2`](./NPC_Scripts.md#context-tracy_blankcollar2) | Block | Examples: `{ ... }` | 1 |
 | [`tracy_blankcollar3`](./NPC_Scripts.md#context-tracy_blankcollar3) | Block | Examples: `{ ... }` | 1 |
 | [`tracy_foodbonus1`](./NPC_Scripts.md#context-tracy_foodbonus1) | Block | Examples: `{ ... }` | 1 |
-| [`tracy_foodstorage1`](./NPC_Scripts.md#context-tracy_foodstorage1) | Block | Examples: `{ ... }` | 1 |
 | [`tracy_foodstorage10`](./NPC_Scripts.md#context-tracy_foodstorage10) | Block | Examples: `{ ... }` | 1 |
+| [`tracy_foodstorage1`](./NPC_Scripts.md#context-tracy_foodstorage1) | Block | Examples: `{ ... }` | 1 |
 | [`tracy_foodstorage2`](./NPC_Scripts.md#context-tracy_foodstorage2) | Block | Examples: `{ ... }` | 1 |
 | [`tracy_foodstorage3`](./NPC_Scripts.md#context-tracy_foodstorage3) | Block | Examples: `{ ... }` | 1 |
 | [`tracy_foodstorage4`](./NPC_Scripts.md#context-tracy_foodstorage4) | Block | Examples: `{ ... }` | 1 |
@@ -481,7 +481,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`upgrade_storage_repeating_normal`](./NPC_Scripts.md#context-upgrade_storage_repeating_normal) | Block | Examples: `{ ... }` | 1 |
 | [`use_attack_after_used_weapon`](./NPC_Scripts.md#context-use_attack_after_used_weapon) | Block | Examples: `{ ... }` | 1 |
 | [`use_weapon`](./NPC_Scripts.md#context-use_weapon) | Block | Examples: `{ ... }` | 1 |
-| [`welcome`](./NPC_Scripts.md#context-welcome) | Block | Examples: `{ ... }` | 1 |
 | [`welcome_boneyard`](./NPC_Scripts.md#context-welcome_boneyard) | Block | Examples: `{ ... }` | 1 |
 | [`welcome_bunker`](./NPC_Scripts.md#context-welcome_bunker) | Block | Examples: `{ ... }` | 1 |
 | [`welcome_caves`](./NPC_Scripts.md#context-welcome_caves) | Block | Examples: `{ ... }` | 1 |
@@ -496,8 +495,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`welcome_moon`](./NPC_Scripts.md#context-welcome_moon) | Block | Examples: `{ ... }` | 1 |
 | [`welcome_sewers`](./NPC_Scripts.md#context-welcome_sewers) | Block | Examples: `{ ... }` | 1 |
 | [`welcome_theend`](./NPC_Scripts.md#context-welcome_theend) | Block | Examples: `{ ... }` | 1 |
-| [`welcome_water`](./NPC_Scripts.md#context-welcome_water) | Block | Examples: `{ ... }` | 1 |
 | [`welcome_water_cheap`](./NPC_Scripts.md#context-welcome_water_cheap) | Block | Examples: `{ ... }` | 1 |
+| [`welcome_water`](./NPC_Scripts.md#context-welcome_water) | Block | Examples: `{ ... }` | 1 |
+| [`welcome`](./NPC_Scripts.md#context-welcome) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -585,8 +585,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ unprompted_a unprompted_b unprompted_c unprompted_d unp..., [ unprompted1 u...` | 5 |
-| `cancelable` | Boolean | Examples: `true` | 3 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_JACK_UNPROMPTED_1, NPC_ORGANGRINDER_UNPROMPTED_1, NPC_TRACY_UNPROMPTED_2` | 3 |
+| `cancelable` | Boolean | Examples: `true` | 3 |
 | `wait_for_cancel` | Number | Examples: `1` | 3 |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_UNPROMPTED_1, NPC_TRACY_UNPROMPTED_1` | 2 |
 
@@ -643,8 +643,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 4 |
 | [`dialog_and_autopass`](./Strings.md#string-dialog_and_autopass) | String | Examples: `""` | 4 |
+| `cancelable` | Boolean | Examples: `true` | 4 |
 
 </details>
 
@@ -661,8 +661,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 3 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_PURCHASE_ITEM_1, NPC_ORGANGRINDER_PURCHASE_ITEM_1, NPC_JACK_PURCHAS...` | 3 |
+| `cancelable` | Boolean | Examples: `true` | 3 |
 | `wait_for_cancel` | Number | Examples: `1` | 3 |
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ purchase_item_a purchase_item_b purchase_item_c purchas...` | 1 |
 
@@ -681,8 +681,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 4 |
 | [`tooltip_dialog`](./Enums.md#enum-tooltip_dialog) | Enum | Examples: `NPC_TRACY_SHOP_TOOLTIP, NPC_ORGANGRINDER_SHOP_TOOLTIP, NPC_JACK_SHOP_TOOLTIP` | 4 |
+| `cancelable` | Boolean | Examples: `true` | 4 |
 | `wait_for_cancel` | Number | Examples: `1` | 4 |
 
 </details>
@@ -862,8 +862,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_CANT_AFFORD_1, NPC_JACK_CANT_AFFORD_1` | 2 |
+| `cancelable` | Boolean | Examples: `true` | 2 |
 | `wait_for_cancel` | Number | Examples: `1` | 2 |
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ cant_afford_a cant_afford_b cant_afford_c cant_afford_d ]` | 1 |
 
@@ -1220,8 +1220,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_LAB_INTRO_1, NPC_BEANIES_BEANIES_LAB_INTRO_3, NPC_BEANIES...` | 24 |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 11 |
 | [`play_cutscene`](./Enums.md#enum-play_cutscene) | Enum | Examples: `credits_1` | 1 |
-| `restart_npc_music` | Number | Examples: `1` | 1 |
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `song_unlock_get_in_the_cage` | 1 |
+| `restart_npc_music` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -4140,8 +4140,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_1, NPC_POPUP_CAN_STILL_USE_ATTACK_2` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_3` | 1 |
 | [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `can_still_use_attack_didntspell` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -4160,11 +4160,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_attack` | 3 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 3 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_DIDNTSPELL_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_DIDNTSPELL_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_DIDNTSPELL_1` | 1 |
 | [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `can_still_use_attack` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -4181,8 +4181,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_A_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4200,8 +4200,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_B_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4219,8 +4219,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_C_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4238,8 +4238,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_D_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4257,8 +4257,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_ICEAGE_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4276,8 +4276,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_JURASSIC_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4295,8 +4295,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_MOON_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4314,8 +4314,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_THEEND_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -4684,9 +4684,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_right, butch_point_team, butch_point_enemies` | 8 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveHint, UISFX_ButchHint, UISFX_ButchMove` | 6 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected, cat_turn` | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_FIRST_FIGHT_INTRO_14` | 1 |
 | [`set_mood`](./Enums.md#enum-set_mood) | Enum | Examples: `default` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
@@ -5117,10 +5117,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_INTRO_1, NPC_POPUP_HOUSE_INTRO_2, NPC_POPUP_HOUSE_INTRO_3` | 10 |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left, tink_point_cats` | 3 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_HOUSE_INTRO_11` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -5254,11 +5254,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_STRAYS_3, NPC_POPUP_HOUSE_STRAYS_2, NPC_POPUP_HOUSE_STRAYS_1` | 4 |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left, tink_point_strays` | 3 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 3 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_HOUSE_STRAYS_5` | 1 |
 | [`request_cat_info`](./Enums.md#enum-request_cat_info) | Enum | Examples: `stray` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -5447,8 +5447,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `reject_cat, choose_cat2, choose_cat1` | 3 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_BEANIES_INTRO_15` | 1 |
-| `lock_controls` | Number | Examples: `1` | 1 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `Intro_LabDisposal` | 1 |
+| `lock_controls` | Number | Examples: `1` | 1 |
 | `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
@@ -5531,9 +5531,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 4 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_JACK_INTRODUCTION_7` | 1 |
 | [`get_random_furniture_piece`](./Arrays.md#array-get_random_furniture_piece) | Array | Examples: `[ small_trash_cans small_trash_can2 ]` | 1 |
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `open_furniture` | 1 |
 | `lock_controls` | Number | Examples: `1` | 1 |
 | `unlock_controls` | Number | Examples: `1` | 1 |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `open_furniture` | 1 |
 
 </details>
 
@@ -5820,8 +5820,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_levelup, butch_point_hotblooded, butch_point_sunburn` | 5 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 4 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click, hovered_passive` | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_LEVEL_UP_INTRO_6` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `lock_mouse` | Number | Examples: `1` | 1 |
 | `unlock_mouse` | Number | Examples: `1` | 1 |
 
@@ -5881,8 +5881,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_point_mapnode, offscreen` | 2 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MAP_CLICK_NODE_1` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `mapnode_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -5901,10 +5901,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_left, butch_point_inventory, offscreen` | 3 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 3 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MAP_EQUIP_ITEMS_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MAP_EQUIP_ITEMS_2` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MAP_EQUIP_ITEMS_1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `inventory_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -5925,8 +5925,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint` | 2 |
 | [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `map_equip_items2` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MAP_EQUIP_ITEMS2_1` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `inventory_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -5948,8 +5948,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_ATTACK_RAT_2, NPC_POPUP_MELEE_ATTACK_RAT_1` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_ATTACK_RAT_3` | 1 |
 | [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `ranged_cat_attack` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -5970,8 +5970,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 3 |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_2, NPC_POPUP_MELEE_CAT_SPIT_1` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_3` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -5992,8 +5992,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 2 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_ALLY_4` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6014,8 +6014,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 2 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_MISS_4` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6036,8 +6036,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 2 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_RAT_4` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6057,10 +6057,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 2 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 2 |
 | [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `melee_cat_spit_ignore` | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_IGNORE_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_IGNORE_2` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_IGNORE_1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6081,8 +6081,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 2 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_SUCCESS_4` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6124,10 +6124,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_move` | 3 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMoveHint, UISFX_ButchMove` | 3 |
 | [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `melee_move2` | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_MOVE2_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_MOVE2_2` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_MOVE2_1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6148,8 +6148,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_point_mana, butch_point_cost, butch_point_spells` | 5 |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_OUT_OF_ACTIONS_2, NPC_POPUP_MELEE_OUT_OF_ACTIONS_1, NPC_POPUP...` | 3 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_OUT_OF_ACTIONS_4` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `end_turn` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6209,8 +6209,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 9 |
 | [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Examples: `organgrinder` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_INTRO_20` | 1 |
-| `lock_controls` | Number | Examples: `1` | 1 |
 | [`set_organ_name`](./Strings.md#string-set_organ_name) | String | Examples: `"Tyler"` | 1 |
+| `lock_controls` | Number | Examples: `1` | 1 |
 | `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6373,8 +6373,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_RENAME_3, NPC_ORGANGRINDER_ORGAN_RENAME_1, NPC_ORGANGR...` | 8 |
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 5 |
-| `lock_controls` | Number | Examples: `1` | 1 |
 | [`set_organ_name`](./Strings.md#string-set_organ_name) | String | Examples: `"Tyler"` | 1 |
+| `lock_controls` | Number | Examples: `1` | 1 |
 | `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6579,8 +6579,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_A_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6598,8 +6598,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_B_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6617,8 +6617,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_C_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6636,8 +6636,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_D_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6655,8 +6655,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_ICEAGE_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6674,8 +6674,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_JURASSIC_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6693,8 +6693,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_MOON_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6712,8 +6712,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_THEEND_1` | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -6810,8 +6810,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 2 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ATTACK_1` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6965,8 +6965,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveHint, UISFX_ButchHint, UISFX_ButchMove` | 4 |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_INTRO_3, NPC_POPUP_RANGED_CAT_INTRO_1, NPC_POPUP_RANGED_...` | 3 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_INTRO_4` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -6987,8 +6987,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchHintDelay2, UISFX_ButchHint, UISFX_ButchMove` | 6 |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ROLL_1, NPC_POPUP_RANGED_CAT_ROLL_2, NPC_POPUP_RANGED_CA...` | 5 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ROLL_6` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -7009,8 +7009,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_move` | 3 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ROLLED_FIRST_4` | 1 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -8967,8 +8967,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `try_again_attack_rat` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_TRY_AGAIN_ATTACK_RAT_4` | 1 |
 | [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Examples: `act` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -9446,8 +9446,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_USE_ATTACK_AFTER_USED_WEAPON_1, NPC_POPUP_USE_ATTACK_AFTER_USED_WEA...` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_USE_ATTACK_AFTER_USED_WEAPON_3` | 1 |
 | [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `use_weapon` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -9469,8 +9469,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_USE_WEAPON_2, NPC_POPUP_USE_WEAPON_1` | 2 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_USE_WEAPON_3` | 1 |
 | [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `use_attack_after_used_weapon` | 1 |
-| `unlock_controls` | Number | Examples: `1` | 1 |
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 |
+| `unlock_controls` | Number | Examples: `1` | 1 |
 
 </details>
 
@@ -9487,10 +9487,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9508,10 +9508,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BONEYARD_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BONEYARD_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BONEYARD_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9530,9 +9530,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BUNKER_2, NPC_TRACY_SHOP_WELCOME_BUNKER_1` | 2 |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BUNKER_3` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9550,10 +9550,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CAVES_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CAVES_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CAVES_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9571,9 +9571,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CORE_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9591,10 +9591,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CRATER_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CRATER_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CRATER_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9612,9 +9612,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_DESERT_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9632,9 +9632,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_FUTURE_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9652,10 +9652,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_ICEAGE_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_ICEAGE_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_ICEAGE_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9673,9 +9673,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JUNKYARD_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9693,10 +9693,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JURASSIC_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JURASSIC_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JURASSIC_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9714,10 +9714,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_LAB_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_LAB_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_LAB_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9735,9 +9735,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_MOON_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9755,10 +9755,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_SEWERS_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_SEWERS_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_SEWERS_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9776,11 +9776,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_THEEND_1` | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_THEEND_2` | 1 |
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_THEEND_1` | 1 |
 | [`set_npc_voice`](./Enums.md#enum-set_npc_voice) | Enum | Examples: `beanies` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9798,9 +9798,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_WATER_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>
@@ -9818,9 +9818,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `cancelable` | Boolean | Examples: `true` | 1 |
 | `wait_for_cancel` | Number | Examples: `1` | 1 |
 
 </details>

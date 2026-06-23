@@ -62,10 +62,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2339 |
 | `treasure_room` | Boolean | Examples: `true` | 14 |
-| `delay_enable_tooltips` | Boolean | Examples: `true` | 7 |
-| `keeper` | Number | Examples: `0` | 7 |
 | [`npc_script`](./Enums.md#enum-npc_script) | Enum | Examples: `tracy_adventure_shop_script.gon` | 7 |
 | [`shopkeeper_fights`](./Arrays.md#array-shopkeeper_fights) | Array | Examples: `[ test.lvl ]` | 7 |
+| `delay_enable_tooltips` | Boolean | Examples: `true` | 7 |
+| `keeper` | Number | Examples: `0` | 7 |
 | `house_shop` | Boolean | Examples: `true` | 4 |
 | [`welcome_message`](./Enums.md#enum-welcome_message) | Enum | Examples: `welcome_water, welcome_water_cheap` | 2 |
 | `pick_n` | Number | Examples: `1` | 1 |

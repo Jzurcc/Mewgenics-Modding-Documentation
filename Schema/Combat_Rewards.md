@@ -164,11 +164,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`boss`](#context-boss) | Block |  | 3 |
-| `coins_bonus` | Float |  | 3 |
-| `food_bonus` | Float |  | 3 |
 | [`hard`](#context-hard) | Block |  | 3 |
 | [`miniboss`](#context-miniboss) | Block |  | 3 |
 | [`normal`](#context-normal) | Block |  | 3 |
+| `coins_bonus` | Float |  | 3 |
+| `food_bonus` | Float |  | 3 |
 
 </details>
 

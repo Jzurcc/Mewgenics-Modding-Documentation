@@ -37,8 +37,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | {'type': '`Block`', 'df': 'Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
-| [`weather`](./Arrays.md#array-weather) | Array | {'type': '`Array`', 'df': 'An array of weather states to check against.'} | 1 |
+| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
+| [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
 
 </details>
 
@@ -58,10 +58,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'The specific element type to check for.'} | 3 |
-| `BonusCritChance` | Number | {'type': '`Number`', 'df': "Applies or references the 'BonusCritChance' effect/state."} | 2 |
-| `Burn` | Number | {'type': '`Number`', 'df': "Applies or references the 'Burn' effect/state."} | 1 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative) | Block | {'type': '`Block`', 'df': "A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 1 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
+| `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 2 |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative) | Block | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 1 |
+| `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
 
 </details>
 
@@ -81,8 +81,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `BonusCritChance` | Number | {'type': '`Number`', 'df': "Applies or references the 'BonusCritChance' effect/state."} | 1 |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 1 |
+| `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 1 |
+| `Fear` | Number | Applies or references the 'Fear' effect/state. | 1 |
 
 </details>
 
@@ -102,7 +102,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Immobile`](./Arrays.md#array-immobile) | Array | {'type': '`Array`', 'df': "Applies or references the 'Immobile' effect/state."} | 2 |
+| [`Immobile`](./Arrays.md#array-immobile) | Array | Applies or references the 'Immobile' effect/state. | 2 |
 
 </details>
 
@@ -122,9 +122,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform) | Block | {'type': '`Block`', 'df': "Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 1 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | {'type': 'Block', 'df': 'State block triggered when this object or entity is eaten/consumed by another character.'} | 1 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | {'type': 'Block', 'df': 'Fallback block that executes if the preceding `Conditional_` block evaluated to false.'} | 1 |
+| [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform) | Block | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 1 |
+| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
 </details>
 
@@ -144,7 +144,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | {'type': '`Block`', 'df': 'Selects and applies a random status effect from the provided nested block. | 1 |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 
 </details>
 
@@ -164,8 +164,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | {'type': '`Block`', 'df': 'Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
-| `odds` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0) of applying the debuff.'} | 1 |
+| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
+| `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 |
 
 </details>
 
@@ -185,8 +185,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ApplyToTile`](./Abilities_and_Spells.md#context-applytotile) | Block | {'type': '`Block`', 'df': "Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |
-| `VaporizeCorpse` | Number | {'type': '`Number`', 'df': "Applies or references the 'VaporizeCorpse' effect/state."} | 2 |
+| [`ApplyToTile`](./Abilities_and_Spells.md#context-applytotile) | Block | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |
+| `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 2 |
 
 </details>
 
@@ -206,9 +206,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`LaunchOffScreen`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': "Applies or references the 'LaunchOffScreen' effect/state."} | 1 |
-| `LaunchOffScreenInstakill` | Number | {'type': '`Number`', 'df': "Applies or references the 'LaunchOffScreenInstakill' effect/state."} | 1 |
-| `TempInitiativeChange` | Number | {'type': '`Number`', 'df': "Applies or references the 'TempInitiativeChange' effect/state."} | 1 |
+| [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 1 |
+| `LaunchOffScreenInstakill` | Number | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 |
+| `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. | 1 |
 
 </details>
 
@@ -228,10 +228,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DamageUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'DamageUp' effect/state."} | 2 |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
-| `BonusDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'BonusDamage' effect/state."} | 1 |
-| `DivineShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'DivineShield' effect/state."} | 1 |
+| `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 2 |
+| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
+| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
+| `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 
 </details>
 
@@ -251,7 +251,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Imprison`](./Enums.md#enum-imprison) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'Imprison' effect/state."} | 1 |
+| [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 1 |
 
 </details>
 
@@ -289,15 +289,15 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`formula`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': 'The math expression to evaluate.'} | 8 |
-| [`Burn`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': "Applies or references the 'Burn' effect/state."} | 2 |
-| `Immobile` | Number | {'type': '`Number`', 'df': "Applies or references the 'Immobile' effect/state."} | 2 |
-| `Shield` | Number | {'type': '`Number`', 'df': "Applies or references the 'Shield' effect/state."} | 2 |
-| `Freeze` | Number | {'type': '`Number`', 'df': "Applies or references the 'Freeze' effect/state."} | 1 |
-| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': "Applies or references the 'OverrideKnockbackDamage' effect/state."} | 1 |
-| [`Slow`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': "Applies or references the 'Slow' effect/state."} | 1 |
-| `SpeedUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpeedUp' effect/state."} | 1 |
-| `Stun` | Number | {'type': '`Number`', 'df': "Applies or references the 'Stun' effect/state."} | 1 |
+| [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
+| [`Burn`](./Math_Equations.md) | Equation | Applies or references the 'Burn' effect/state. | 2 |
+| `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 2 |
+| `Shield` | Number | Applies or references the 'Shield' effect/state. | 2 |
+| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | Applies or references the 'OverrideKnockbackDamage' effect/state. | 1 |
+| [`Slow`](./Math_Equations.md) | Equation | Applies or references the 'Slow' effect/state. | 1 |
+| `Freeze` | Number | Applies or references the 'Freeze' effect/state. | 1 |
+| `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 1 |
+| `Stun` | Number | Applies or references the 'Stun' effect/state. | 1 |
 
 </details>
 
@@ -317,9 +317,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `GenericBuff` | Number | {'type': '`Number`', 'df': "Applies or references the 'GenericBuff' effect/state."} | 1 |
-| `PartialCleanse` | Number | {'type': '`Number`', 'df': "Applies or references the 'PartialCleanse' effect/state."} | 1 |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | {'type': '`Block`', 'df': 'Selects and applies a random status effect from the provided nested block. | 1 |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
+| `GenericBuff` | Number | Applies or references the 'GenericBuff' effect/state. | 1 |
+| `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 1 |
 
 </details>
 
@@ -339,9 +339,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | {'type': '`Block`', 'df': 'Logic: Applies vertical and horizontal displacement. | 1 |
-| `RemoveKnockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'RemoveKnockback' effect/state."} | 1 |
-| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | {'type': '`Block`', 'df': 'Passive: Active only until the physics engine stops moving the character. | 1 |
+| [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | Logic: Applies vertical and horizontal displacement. | 1 |
+| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | Passive: Active only until the physics engine stops moving the character. | 1 |
+| `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
 
 </details>
 
@@ -361,20 +361,20 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Number | {'type': '`Number`', 'df': 'A flat numerical health value threshold.'} | 4 |
-| [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'SpawnThingIfHitKills' effect/state."} | 2 |
-| `threshold_percent` | Number | {'type': '`Number`', 'df': 'A percentage-based health threshold (e.g. 50%).'} | 2 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | {'type': '`Block`', 'df': 'Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`BonusDamage`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': "Applies or references the 'BonusDamage' effect/state."} | 1 |
-| `CaptureFamiliar` | Number | {'type': '`Number`', 'df': "Applies or references the 'CaptureFamiliar' effect/state."} | 1 |
-| `Die` | Number | {'type': '`Number`', 'df': "Applies or references the 'Die' effect/state."} | 1 |
-| `DieViolently` | Number | {'type': '`Number`', 'df': "Applies or references the 'DieViolently' effect/state."} | 1 |
-| `FactionConversion` | Number | {'type': '`Number`', 'df': "Applies or references the 'FactionConversion' effect/state."} | 1 |
-| `FlatLeech` | Number | {'type': '`Number`', 'df': "Applies or references the 'FlatLeech' effect/state."} | 1 |
-| `FullHeal` | Number | {'type': '`Number`', 'df': "Applies or references the 'FullHeal' effect/state."} | 1 |
-| `Instakill` | Number | {'type': '`Number`', 'df': "Applies or references the 'Instakill' effect/state."} | 1 |
-| `Vaporize` | Number | {'type': '`Number`', 'df': "Applies or references the 'Vaporize' effect/state."} | 1 |
-| [`threshold_expr`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
+| `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
+| [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 2 |
+| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
+| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 1 |
+| [`threshold_expr`](./Math_Equations.md) | Equation |  | 1 |
+| `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |
+| `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 1 |
+| `Die` | Number | Applies or references the 'Die' effect/state. | 1 |
+| `FactionConversion` | Number | Applies or references the 'FactionConversion' effect/state. | 1 |
+| `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 1 |
+| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |
+| `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 1 |
+| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 1 |
 
 </details>
 
@@ -394,14 +394,14 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum | {'type': '`Enum/String`', 'df': 'The specific form ID to check for.'} | 7 |
-| [`FormChange`](./Enums.md#enum-formchange) | Enum | {'type': '`Enum/String`', 'df': 'Transforms the character into a different state or form (e.g., Rage, HasCat).'} | 5 |
-| `CritChanceUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'CritChanceUp' effect/state."} | 1 |
-| `DamageUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'DamageUp' effect/state."} | 1 |
-| `DodgeChance_Status` | Number | {'type': '`Number`', 'df': "Applies or references the 'DodgeChance_Status' effect/state."} | 1 |
-| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#context-forceimmediatemoveandattack) | Block | {'type': '`Block`', 'df': 'Forces the character to immediately move to a target and use a specified ability. | 1 |
-| `SpeedUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpeedUp' effect/state."} | 1 |
-| [`UseAbility`](./Enums.md#enum-useability) | Enum | {'type': '`Enum/String`', 'df': 'Forces the character or target to instantly use a specified ability.'} | 1 |
+| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 |
+| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#context-forceimmediatemoveandattack) | Block | Forces the character to immediately move to a target and use a specified ability. | 1 |
+| [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 1 |
+| `CritChanceUp` | Number | Applies or references the 'CritChanceUp' effect/state. | 1 |
+| `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 1 |
+| `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 1 |
+| `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 1 |
 
 </details>
 
@@ -421,9 +421,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | {'type': '`Block`', 'df': 'Logic: Applies vertical and horizontal displacement. | 1 |
-| `RemoveKnockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'RemoveKnockback' effect/state."} | 1 |
-| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | {'type': '`Block`', 'df': 'Passive: Active only until the physics engine stops moving the character. | 1 |
+| [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | Logic: Applies vertical and horizontal displacement. | 1 |
+| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | Passive: Active only until the physics engine stops moving the character. | 1 |
+| `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 1 |
 
 </details>
 
@@ -443,7 +443,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `OverrideDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'OverrideDamage' effect/state."} | 1 |
+| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |
 
 </details>
 
@@ -463,7 +463,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `SetKnockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'SetKnockback' effect/state."} | 1 |
+| `SetKnockback` | Number | Applies or references the 'SetKnockback' effect/state. | 1 |
 
 </details>
 
@@ -483,10 +483,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Block | {'type': '`Block`', 'df': 'Displaces the target vertically and horizontally away from the source. | 2 |
-| `BonusDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'BonusDamage' effect/state."} | 1 |
-| `Bruise` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bruise' effect/state."} | 1 |
-| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | {'type': '`Enum/String`', 'df': 'Queues an ability to be cast automatically after a certain delay or trigger.'} | 1 |
+| [`KnockUpAndAway`](./Abilities_and_Spells.md#context-knockupandaway) | Block | Displaces the target vertically and horizontally away from the source. | 2 |
+| [`DelayCastAbility`](./Enums.md#enum-delaycastability) | Enum | Queues an ability to be cast automatically after a certain delay or trigger. | 1 |
+| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
+| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
 </details>
 
@@ -506,9 +506,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | {'type': '`Block`', 'df': 'Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | {'type': '`Block`', 'df': 'State block triggered when this object or entity is eaten/consumed by another character. | 1 |
-| [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus) | Block | {'type': '`Block`', 'df': "Grants nested passives only while the character possesses the specified status. | 1 |
+| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
+| [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus) | Block | Grants nested passives only while the character possesses the specified status. | 1 |
 
 </details>
 
@@ -528,8 +528,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `RepairTrinket` | Number | {'type': '`Number`', 'df': "Applies or references the 'RepairTrinket' effect/state."} | 1 |
-| `threshold_flat` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 1 |
+| `threshold_flat` | Number |  | 1 |
 
 </details>
 
@@ -549,8 +549,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Confusion` | Number | {'type': '`Number`', 'df': "Applies or references the 'Confusion' effect/state."} | 1 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | {'type': '`Block`', 'df': 'A wrapper block for applying status effects that automatically expire. | 1 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
+| `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 1 |
 
 </details>
 
@@ -570,7 +570,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DisplaceTowardsSource` | Number | {'type': '`Number`', 'df': "Applies or references the 'DisplaceTowardsSource' effect/state."} | 1 |
+| `DisplaceTowardsSource` | Number | Applies or references the 'DisplaceTowardsSource' effect/state. | 1 |
 
 </details>
 
@@ -590,7 +590,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Immobile` | Number | {'type': '`Number`', 'df': "Applies or references the 'Immobile' effect/state."} | 2 |
+| `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 2 |
 
 </details>
 
@@ -610,7 +610,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Knockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'Knockback' effect/state."} | 2 |
+| `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 2 |
 
 </details>
 
@@ -630,10 +630,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | {'type': 'Block', 'df': 'Conditional trigger: Executes nested logic if the target possesses the specified entity tag.'} | 3 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | {'type': 'Block', 'df': 'Fallback block that executes if the preceding `Conditional_` block evaluated to false.'} | 3 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Block | {'type': 'Block', 'df': 'Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters.'} | 1 |
-| `RepairWeapon` | Number | {'type': '`Number`', 'df': "Applies or references the 'RepairWeapon' effect/state."} | 1 |
+| [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 3 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
+| `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. | 1 |
 
 </details>
 
@@ -653,9 +653,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'CompleteItemQuest' effect/state."} | 2 |
-| `TriggerGameEnding` | Number | {'type': '`Number`', 'df': "Applies or references the 'TriggerGameEnding' effect/state."} | 2 |
-| [`key`](./Enums.md#enum-key) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
+| [`key`](./Enums.md#enum-key) | Enum |  | 2 |
+| `TriggerGameEnding` | Number | Applies or references the 'TriggerGameEnding' effect/state. | 2 |
 
 </details>
 
@@ -675,14 +675,14 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ConjureRandomAbilityFromCat` | Number | {'type': '`Number`', 'df': "Applies or references the 'ConjureRandomAbilityFromCat' effect/state."} | 2 |
-| `Adrenaline` | Number | {'type': '`Number`', 'df': "Applies or references the 'Adrenaline' effect/state."} | 1 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | {'type': '`Block`', 'df': 'Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| `Cleanse` | Number | {'type': '`Number`', 'df': "Applies or references the 'Cleanse' effect/state."} | 1 |
-| `GenericDebuff` | Number | {'type': '`Number`', 'df': "Applies or references the 'GenericDebuff' effect/state."} | 1 |
-| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'KnockOutClone' effect/state."} | 1 |
-| `Scrambled` | Number | {'type': '`Number`', 'df': "Applies or references the 'Scrambled' effect/state."} | 1 |
-| `T2CopyCat` | Number | {'type': '`Number`', 'df': "Applies or references the 'T2CopyCat' effect/state."} | 1 |
+| `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |
+| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. | 1 |
+| `Adrenaline` | Number | Applies or references the 'Adrenaline' effect/state. | 1 |
+| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 1 |
+| `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 1 |
+| `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. | 1 |
+| `T2CopyCat` | Number | Applies or references the 'T2CopyCat' effect/state. | 1 |
 
 </details>
 
@@ -702,8 +702,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Block | {'type': '`Block`', 'df': "Grants the nested passive abilities dynamically. | 1 |
-| `odds` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
+| [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives) | Block | Grants the nested passive abilities dynamically. | 1 |
+| `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -723,9 +723,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | {'type': '`Block`', 'df': 'Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`ScatterCoins`](./Abilities_and_Spells.md#context-scattercoins) | Block | {'type': '`Block`', 'df': 'Throws coins out into the level randomly. | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 1 |
+| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| [`ScatterCoins`](./Abilities_and_Spells.md#context-scattercoins) | Block | Throws coins out into the level randomly. | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
 
 </details>
 
@@ -745,8 +745,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Bruise` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bruise' effect/state."} | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 1 |
 
 </details>
 
@@ -766,14 +766,14 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `IgnoreDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'IgnoreDamage' effect/state."} | 3 |
-| `BonusDamageBasedOnDistance` | Number | {'type': '`Number`', 'df': "Applies or references the 'BonusDamageBasedOnDistance' effect/state."} | 2 |
-| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | {'type': 'Block', 'df': "Conditional trigger: Executes nested logic if the target's health falls below the specified threshold."} | 2 |
-| `BonusDamage` | Number | {'type': 'Number', 'df': "Applies or references the 'BonusDamage' effect/state."} | 1 |
-| `CapDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'CapDamage' effect/state."} | 1 |
-| [`Else`](./Abilities_and_Spells.md#context-else) | Block | {'type': 'Block', 'df': 'Fallback block that executes if the preceding `Conditional_` block evaluated to false.'} | 1 |
-| `Knockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'Knockback' effect/state."} | 1 |
-| `RandomBonusDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'RandomBonusDamage' effect/state."} | 1 |
+| `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 3 |
+| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 2 |
+| `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |
+| [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
+| `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
+| `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 1 |
+| `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 1 |
+| `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. | 1 |
 
 </details>
 
@@ -867,8 +867,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 2 |
-| `force_display_name` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 |
+| `force_display_name` | Boolean |  | 2 |
 
 </details>
 
@@ -888,8 +888,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'ID of the ability to trigger or reference.'} | 1 |
-| `even_of_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
+| `even_of_stunned` | Boolean |  | 1 |
 
 </details>
 
@@ -945,19 +945,19 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'RemoveItem' effect/state."} | 3 |
-| `AlphaCat` | Number | {'type': '`Number`', 'df': "Applies or references the 'AlphaCat' effect/state."} | 2 |
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'CompleteItemQuest' effect/state."} | 2 |
-| `HealthGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthGain' effect/state."} | 2 |
-| `ManaGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'ManaGain' effect/state."} | 2 |
-| `Revive` | Number | {'type': '`Number`', 'df': "Applies or references the 'Revive' effect/state."} | 2 |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
-| [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | {'type': '`Enum/String`', 'df': 'Upgrades or transforms an existing ability into a new one from the specified pool.'} | 1 |
-| `RefreshActPoints` | Number | {'type': '`Number`', 'df': "Applies or references the 'RefreshActPoints' effect/state."} | 1 |
-| `StrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'StrengthUp' effect/state."} | 1 |
-| `TakeExtraTurn` | Number | {'type': '`Number`', 'df': "Applies or references the 'TakeExtraTurn' effect/state."} | 1 |
-| [`TransformWeapon`](./Abilities_and_Spells.md#context-transformweapon) | Block | {'type': '`Block`', 'df': 'Transforms the equipped weapon into another specific weapon state. | 1 |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'WeaponAuxMultiplier' effect/state."} | 1 |
+| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 |
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 |
+| `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 2 |
+| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 2 |
+| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 2 |
+| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
+| [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 1 |
+| [`TransformWeapon`](./Abilities_and_Spells.md#context-transformweapon) | Block | Transforms the equipped weapon into another specific weapon state. | 1 |
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Enum | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |
+| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
+| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 1 |
+| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 1 |
+| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
 
 </details>
 
@@ -977,8 +977,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance_to_break` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `durability_loss` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| `chance_to_break` | Number |  | 2 |
+| `durability_loss` | Number |  | 2 |
 
 </details>
 
@@ -998,8 +998,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific dodge ability to trigger (e.g., DestroyerDodge).'} | 4 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 4 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 4 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 4 |
 
 </details>
 
@@ -1073,11 +1073,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 7 |
-| `flat_chance` | Number | {'type': '`Number`', 'df': ''} | 5 |
-| `chance_per_damage` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| `backstabs_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `even_on_0_damage_if_knockback` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 7 |
+| `flat_chance` | Number |  | 5 |
+| `chance_per_damage` | Number |  | 3 |
+| `backstabs_only` | Boolean |  | 1 |
+| `even_on_0_damage_if_knockback` | Boolean |  | 1 |
 
 </details>
 
@@ -1115,8 +1115,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Leave`](./Enums.md#enum-leave) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'Leave' effect/state."} | 2 |
-| [`Return`](./Enums.md#enum-return) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'Return' effect/state."} | 2 |
+| [`Leave`](./Enums.md#enum-leave) | Enum | Applies or references the 'Leave' effect/state. | 2 |
+| [`Return`](./Enums.md#enum-return) | Enum | Applies or references the 'Return' effect/state. | 2 |
 
 </details>
 
@@ -1208,8 +1208,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 8 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 8 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 8 |
+| `even_if_stunned` | Boolean |  | 8 |
 
 </details>
 
@@ -1229,8 +1229,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `health` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `rounds` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `health` | Number |  | 1 |
+| `rounds` | Number |  | 1 |
 
 </details>
 
@@ -1394,7 +1394,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the object/particle to spawn.'} | 3 |
+| [`object`](./Enums.md#enum-object) | Enum | The ID of the object/particle to spawn. | 3 |
 
 </details>
 
@@ -1520,15 +1520,15 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 13 |
-| `ability_damage_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 6 |
-| `backstabs_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `damage_threshold` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `even_if_blocked` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `health_threshold` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `buddy_damage_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `target_furthest_valid` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 13 |
+| `ability_damage_only` | Boolean |  | 6 |
+| `backstabs_only` | Boolean |  | 2 |
+| `damage_threshold` | Number |  | 2 |
+| `even_if_blocked` | Boolean |  | 2 |
+| `even_if_stunned` | Boolean |  | 2 |
+| `health_threshold` | Number |  | 2 |
+| `buddy_damage_only` | Boolean |  | 1 |
+| `target_furthest_valid` | Boolean |  | 1 |
 
 </details>
 
@@ -1548,8 +1548,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `change` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| `max` | Number | {'type': '`Number`', 'df': ''} | 3 |
+| `change` | Number |  | 3 |
+| `max` | Number |  | 3 |
 
 </details>
 
@@ -1569,8 +1569,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `change` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `max` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `change` | Number |  | 1 |
+| `max` | Number |  | 1 |
 
 </details>
 
@@ -1644,11 +1644,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`spell`](./Enums.md#enum-spell) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`trinket`](./Enums.md#enum-trinket) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`weapon`](./Enums.md#enum-weapon) | Enum | {'type': '`Enum/String`', 'df': 'Weapon item constraint.'} | 1 |
+| [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`move`](./Enums.md#enum-move) | Enum |  | 1 |
+| [`spell`](./Enums.md#enum-spell) | Enum |  | 1 |
+| [`trinket`](./Enums.md#enum-trinket) | Enum |  | 1 |
+| [`weapon`](./Enums.md#enum-weapon) | Enum | Weapon item constraint. | 1 |
 
 </details>
 
@@ -1722,7 +1722,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID of the object to spawn (e.g., Poop).'} | 2 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the object to spawn (e.g., Poop). | 2 |
 
 </details>
 
@@ -1778,7 +1778,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddStatusToTrampleDamage`](./Characters_and_Bosses.md#context-addstatustotrampledamage) | Block | {'type': '`Block`', 'df': "Modifier: Injects a status effect into the character's trample damage. | 1 |
+| [`AddStatusToTrampleDamage`](./Characters_and_Bosses.md#context-addstatustotrampledamage) | Block | Modifier: Injects a status effect into the character's trample damage. | 1 |
 
 </details>
 
@@ -1798,8 +1798,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Items_and_Equipment.md#context-passives) | Block | {'type': '`Block`', 'df': 'Passives granted by equipping this. | 6 |
-| [`tile`](./Arrays.md#array-tile) | Array | {'type': '`Array`', 'df': ''} | 6 |
+| [`passives`](./Items_and_Equipment.md#context-passives) | Block | Passives granted by equipping this. | 6 |
+| [`tile`](./Arrays.md#array-tile) | Array |  | 6 |
 
 </details>
 
@@ -1999,11 +1999,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`stack_key`](./Enums.md#enum-stack_key) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| `threshold` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `ExtraBasicMoves_Status` | Number | {'type': '`Number`', 'df': "Applies or references the 'ExtraBasicMoves_Status' effect/state."} | 1 |
-| `RefreshActPoints` | Number | {'type': '`Number`', 'df': "Applies or references the 'RefreshActPoints' effect/state."} | 1 |
-| `expires_on_end_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`stack_key`](./Enums.md#enum-stack_key) | Enum |  | 2 |
+| `threshold` | Number |  | 2 |
+| `ExtraBasicMoves_Status` | Number | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 1 |
+| `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 1 |
+| `expires_on_end_turn` | Boolean |  | 1 |
 
 </details>
 
@@ -2023,8 +2023,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -2045,9 +2045,9 @@
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 |
 | `FloatingRockTrap` | Number | Examples: `1` | 1 |
 | `Thorns` | Number | Examples: `1` | 1 |
-| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 |
 
 </details>
 
@@ -2110,9 +2110,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `count` | Number | {'type': '`Number`', 'df': 'Quantity.'} | 3 |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 2 |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 1 |
+| `count` | Number | Quantity. | 3 |
+| `Fear` | Number | Applies or references the 'Fear' effect/state. | 2 |
+| `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 
 </details>
 
@@ -2258,8 +2258,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 1 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
+| `even_if_stunned` | Boolean |  | 1 |
 
 </details>
 
@@ -2279,8 +2279,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
 </details>
 
@@ -2410,13 +2410,13 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 12 |
-| `threshold` | Mixed | {'type': '`Number`', 'df': ''} | 11 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 6 |
-| `immediate` | Boolean | {'type': '`Boolean`', 'df': ''} | 5 |
-| `use_ai` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `also_use_if_buddy_is_dead` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| [`threshold_min`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 12 |
+| `threshold` | Mixed |  | 11 |
+| `even_if_stunned` | Boolean |  | 6 |
+| `immediate` | Boolean |  | 5 |
+| `use_ai` | Boolean |  | 2 |
+| [`threshold_min`](./Math_Equations.md) | Equation |  | 1 |
+| `also_use_if_buddy_is_dead` | Boolean |  | 1 |
 
 </details>
 
@@ -2454,9 +2454,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `add` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`options`](./Arrays.md#array-options) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'Classification type.'} | 1 |
+| [`options`](./Arrays.md#array-options) | Array |  | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
+| `add` | Number |  | 1 |
 
 </details>
 
@@ -2566,8 +2566,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `requires_framebuffer` | Boolean | Examples: `false` | 1 |
 | [`shader`](./Enums.md#enum-shader) | Enum | Examples: `shimmervignette` | 1 |
+| `requires_framebuffer` | Boolean | Examples: `false` | 1 |
 
 </details>
 
@@ -2605,7 +2605,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 1 |
+| `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 1 |
 
 </details>
 
@@ -2646,8 +2646,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack) | Block | {'type': '`Block`', 'df': "Conditional: Executes logic if the triggering attack is physical. | 1 |
-| [`Else`](./Characters_and_Bosses.md#context-else) | Block | {'type': '`Block`', 'df': 'Fallback logic block for conditionals. | 1 |
+| [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack) | Block | Conditional: Executes logic if the triggering attack is physical. | 1 |
+| [`Else`](./Characters_and_Bosses.md#context-else) | Block | Fallback logic block for conditionals. | 1 |
 
 </details>
 
@@ -2831,8 +2831,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | {'type': '`Block`', 'df': 'Selects and applies a random status effect from the provided nested block. | 3 |
-| `stacks` | Mixed | {'type': '`Number`', 'df': 'The number of times the nested effects block should be repeatedly executed.'} | 3 |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 3 |
+| `stacks` | Mixed | The number of times the nested effects block should be repeatedly executed. | 3 |
 
 </details>
 
@@ -2852,7 +2852,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Quivered` | Number | {'type': '`Number`', 'df': "Applies or references the 'Quivered' effect/state."} | 1 |
+| `Quivered` | Number | Applies or references the 'Quivered' effect/state. | 1 |
 
 </details>
 
@@ -3196,8 +3196,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `OverrideDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'OverrideDamage' effect/state."} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -3217,7 +3217,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `head` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `head` | Number |  | 1 |
 
 </details>
 
@@ -3237,10 +3237,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `arm1` | Number | {'type': '`Number`', 'df': 'Scale multiplier for the front arm.'} | 1 |
-| `arm2` | Number | {'type': '`Number`', 'df': 'Scale multiplier for the back arm.'} | 1 |
-| `body` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `mouth` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `arm1` | Number | Scale multiplier for the front arm. | 1 |
+| `arm2` | Number | Scale multiplier for the back arm. | 1 |
+| `body` | Number |  | 1 |
+| `mouth` | Number |  | 1 |
 
 </details>
 
@@ -3260,10 +3260,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 5 |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 2 |
-| `Stun` | Number | {'type': '`Number`', 'df': "Applies or references the 'Stun' effect/state."} | 2 |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 5 |
+| `Fear` | Number | Applies or references the 'Fear' effect/state. | 2 |
+| `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 |
+| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 
 </details>
 
@@ -3319,8 +3319,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to conjure.'} | 2 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': 'If true, conjures the upgraded version of the ability.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to conjure. | 2 |
+| `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 2 |
 
 </details>
 
@@ -3376,8 +3376,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DelayedPain` | Number | {'type': '`Number`', 'df': "Applies or references the 'DelayedPain' effect/state."} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `DelayedPain` | Number | Applies or references the 'DelayedPain' effect/state. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -3505,11 +3505,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The flat damage amount.'} | 5 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification of the damage (e.g., spell, melee).'} | 5 |
-| [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | {'type': '`Block`', 'df': 'Non-damaging status applications and logic triggers executed on impact. | 2 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 5 |
+| `damage` | Number | The flat damage amount. | 5 |
+| [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum |  | 2 |
+| [`effects`](./Abilities_and_Spells.md#context-effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 
 </details>
 
@@ -3655,9 +3655,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ability_damage_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `override_hit_animation` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `use_turn_animations` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `ability_damage_only` | Boolean |  | 1 |
+| `override_hit_animation` | Boolean |  | 1 |
+| `use_turn_animations` | Boolean |  | 1 |
 
 </details>
 
@@ -3677,7 +3677,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `use_turn_animations` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `use_turn_animations` | Boolean |  | 1 |
 
 </details>
 
@@ -3734,7 +3734,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `knockback` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `knockback` | Number |  | 1 |
 
 </details>
 
@@ -3754,8 +3754,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`clipname`](./Enums.md#enum-clipname) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`thresholds`](./Arrays.md#array-thresholds) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`clipname`](./Enums.md#enum-clipname) | Enum |  | 1 |
+| [`thresholds`](./Arrays.md#array-thresholds) | Array |  | 1 |
 
 </details>
 
@@ -3775,8 +3775,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `allies_only` | Boolean |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -3940,10 +3940,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Number | {'type': '`Number`', 'df': 'The distance in tiles to knock the target away.'} | 20 |
-| `stacks` | Mixed | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 18 |
-| `height` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `circular_variance` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `distance` | Number | The distance in tiles to knock the target away. | 20 |
+| `stacks` | Mixed | Number of stacks or intensity to apply. | 18 |
+| `height` | Number |  | 2 |
+| `circular_variance` | Number |  | 1 |
 
 </details>
 
@@ -3963,8 +3963,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `CurrentWeaponDamageUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'CurrentWeaponDamageUp' effect/state."} | 3 |
-| `AddWeaponAux` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddWeaponAux' effect/state."} | 1 |
+| `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |
+| `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 1 |
 
 </details>
 
@@ -4002,8 +4002,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `min` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `max` | Number |  | 1 |
+| `min` | Number |  | 1 |
 
 </details>
 
@@ -4041,8 +4041,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `can_instapop` | Boolean | {'type': '`Boolean`', 'df': 'If false, prevents the damage from instantly popping the target.'} | 1 |
-| `force_no_hit_animation` | Boolean | {'type': '`Boolean`', 'df': 'If true, suppresses the flinch/hit animation.'} | 1 |
+| `can_instapop` | Boolean | If false, prevents the damage from instantly popping the target. | 1 |
+| `force_no_hit_animation` | Boolean | If true, suppresses the flinch/hit animation. | 1 |
 
 </details>
 
@@ -4152,9 +4152,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `crit_multiplier_bonus` | Number | {'type': '`Number`', 'df': 'Flat addition to the critical damage multiplier.'} | 1 |
-| `extra_coins_per_stack` | Number | {'type': '`Number`', 'df': 'Grants bonus coins based on stacks.'} | 1 |
-| `luck_increase` | Number | {'type': '`Number`', 'df': 'Increases luck stat for the attack.'} | 1 |
+| `crit_multiplier_bonus` | Number | Flat addition to the critical damage multiplier. | 1 |
+| `extra_coins_per_stack` | Number | Grants bonus coins based on stacks. | 1 |
+| `luck_increase` | Number | Increases luck stat for the attack. | 1 |
 
 </details>
 
@@ -4174,8 +4174,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `MadnessChanceOnTurnBegin` | Number | {'type': '`Number`', 'df': "Applies or references the 'MadnessChanceOnTurnBegin' effect/state."} | 1 |
-| `fights` | Number | {'type': '`Number`', 'df': 'The number of encounters this buff/debuff persists for.'} | 1 |
+| `MadnessChanceOnTurnBegin` | Number | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 |
+| `fights` | Number | The number of encounters this buff/debuff persists for. | 1 |
 
 </details>
 
@@ -4249,9 +4249,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `RandomStatUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'RandomStatUp' effect/state."} | 1 |
-| `TakeExtraTurn` | Number | {'type': '`Number`', 'df': "Applies or references the 'TakeExtraTurn' effect/state."} | 1 |
-| `stack_scale` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 1 |
+| `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 1 |
+| `stack_scale` | Number |  | 1 |
 
 </details>
 
@@ -4310,8 +4310,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 2 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 |
 
 </details>
 
@@ -4675,7 +4675,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent) | Block | {'type': '`Block`', 'df': 'Conditional constraint. Nested properties only trigger if this is true. | 1 |
+| [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 
 </details>
 
@@ -4749,8 +4749,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
-| [`style`](./Arrays.md#array-style) | Array | {'type': '`Array`', 'df': 'The visual font style for the text (e.g., [crit]).'} | 1 |
+| [`style`](./Arrays.md#array-style) | Array | The visual font style for the text (e.g., [crit]). | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -4824,7 +4824,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddDamageToBasicAttack`](./Math_Equations.md) | Equation | {'type': '`String`', 'df': "Applies or references the 'AddDamageToBasicAttack' effect/state."} | 1 |
+| [`AddDamageToBasicAttack`](./Math_Equations.md) | Equation | Applies or references the 'AddDamageToBasicAttack' effect/state. | 1 |
 
 </details>
 
@@ -4844,7 +4844,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ForceMoveAway` | Number | {'type': '`Number`', 'df': "Applies or references the 'ForceMoveAway' effect/state."} | 1 |
+| `ForceMoveAway` | Number | Applies or references the 'ForceMoveAway' effect/state. | 1 |
 
 </details>
 
@@ -4864,9 +4864,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `StrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'StrengthUp' effect/state."} | 7 |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 4 |
-| `Slow` | Number | {'type': '`Number`', 'df': "Applies or references the 'Slow' effect/state."} | 4 |
+| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 7 |
+| `Poison` | Number | Applies or references the 'Poison' effect/state. | 4 |
+| `Slow` | Number | Applies or references the 'Slow' effect/state. | 4 |
 
 </details>
 
@@ -4926,12 +4926,12 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
-| `DamageUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'DamageUp' effect/state."} | 1 |
-| `HealthGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthGain' effect/state."} | 1 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `consume` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
+| `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 1 |
+| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
+| `consume` | Boolean |  | 1 |
 
 </details>
 
@@ -4951,7 +4951,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 1 |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Logic: Forces the execution of a specific ability. | 1 |
 
 </details>
 
@@ -4992,8 +4992,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': 'Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack.'} | 1 |
-| [`Craft`](./Items_and_Equipment.md#context-craft) | Block | {'type': '`Block`', 'df': 'Synthesizes or spawns a new item from a specific pool. | 1 |
+| [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 1 |
+| [`Craft`](./Items_and_Equipment.md#context-craft) | Block | Synthesizes or spawns a new item from a specific pool. | 1 |
 
 </details>
 
@@ -5013,8 +5013,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `HealthGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthGain' effect/state."} | 1 |
-| `SerratedClaws` | Number | {'type': '`Number`', 'df': "Applies or references the 'SerratedClaws' effect/state."} | 1 |
+| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
+| `SerratedClaws` | Number | Applies or references the 'SerratedClaws' effect/state. | 1 |
 
 </details>
 
@@ -5034,21 +5034,21 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`GainCoinsRange`](./Items_and_Equipment.md#context-gaincoinsrange) | Block | {'type': '`Block`', 'df': 'Grants the player a randomized amount of coins within a min/max range. | 5 |
-| `Bruise` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bruise' effect/state."} | 3 |
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ChangeTilesUnder' effect/state."} | 3 |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | {'type': '`Enum/String`', 'df': 'Generates an item drop from the specified loot pool.'} | 3 |
-| `HealthGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthGain' effect/state."} | 3 |
-| `HealthRegenUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthRegenUp' effect/state."} | 3 |
-| `PermanentConstitution` | Number | {'type': '`Number`', 'df': "Applies or references the 'PermanentConstitution' effect/state."} | 3 |
-| [`ApplyToRandomPartyMemberIfPossible`](./Items_and_Equipment.md#context-applytorandompartymemberifpossible) | Block | {'type': '`Block`', 'df': "Redirects the nested effects to apply to a random living member of the player's party. | 1 |
-| `ConstitutionUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'ConstitutionUp' effect/state."} | 1 |
-| `DexterityUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'DexterityUp' effect/state."} | 1 |
-| [`FindItem`](./Enums.md#enum-finditem) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'FindItem' effect/state."} | 1 |
-| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'GainDisorder' effect/state."} | 1 |
-| `IntelligenceUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'IntelligenceUp' effect/state."} | 1 |
-| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | {'type': '`Enum/String`', 'df': 'Spawns a specific character or entity upon impact.'} | 1 |
-| `StrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'StrengthUp' effect/state."} | 1 |
+| [`GainCoinsRange`](./Items_and_Equipment.md#context-gaincoinsrange) | Block | Grants the player a randomized amount of coins within a min/max range. | 5 |
+| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 3 |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 3 |
+| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 3 |
+| `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 3 |
+| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 3 |
+| `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. | 3 |
+| [`ApplyToRandomPartyMemberIfPossible`](./Items_and_Equipment.md#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
+| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. | 1 |
+| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. | 1 |
+| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 1 |
+| `ConstitutionUp` | Number | Applies or references the 'ConstitutionUp' effect/state. | 1 |
+| `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. | 1 |
+| `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 1 |
+| `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 1 |
 
 </details>
 
@@ -5088,7 +5088,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ImmediateUseAbility' effect/state."} | 1 |
+| [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 1 |
 
 </details>
 
@@ -5108,7 +5108,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Charge` | Number | {'type': '`Number`', 'df': "Applies or references the 'Charge' effect/state."} | 1 |
+| `Charge` | Number | Applies or references the 'Charge' effect/state. | 1 |
 
 </details>
 
@@ -5128,9 +5128,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
-| `FillMana` | Number | {'type': '`Number`', 'df': "Applies or references the 'FillMana' effect/state."} | 1 |
-| `HealRandomInjury` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealRandomInjury' effect/state."} | 1 |
+| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
+| `FillMana` | Number | Applies or references the 'FillMana' effect/state. | 1 |
+| `HealRandomInjury` | Number | Applies or references the 'HealRandomInjury' effect/state. | 1 |
 
 </details>
 
@@ -5150,7 +5150,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle) | Block | {'type': '`Block`', 'df': 'Conditional trigger: Executes nested logic only once per encounter/battle. | 1 |
+| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle) | Block | Conditional trigger: Executes nested logic only once per encounter/battle. | 1 |
 
 </details>
 
@@ -5171,6 +5171,7 @@
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `rare` | 1 |
+| [`set`](./Enums.md#enum-set) | Enum | Examples: `Recycled` | 1 |
 | `PermanentCharisma` | Number | Examples: `1` | 1 |
 | `PermanentConstitution` | Number | Examples: `1` | 1 |
 | `PermanentDexterity` | Number | Examples: `1` | 1 |
@@ -5178,7 +5179,6 @@
 | `PermanentLuck` | Number | Examples: `1` | 1 |
 | `PermanentSpeed` | Number | Examples: `1` | 1 |
 | `PermanentStrength` | Number | Examples: `1` | 1 |
-| [`set`](./Enums.md#enum-set) | Enum | Examples: `Recycled` | 1 |
 
 </details>
 
@@ -5198,7 +5198,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 1 |
+| `Poison` | Number | Applies or references the 'Poison' effect/state. | 1 |
 
 </details>
 
@@ -5254,7 +5254,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `include_spells` | Boolean | {'type': '`Boolean`', 'df': 'If true, allows the AI to cast spells during this bonus turn.'} | 2 |
+| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 2 |
 
 </details>
 
@@ -5382,11 +5382,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell) | Block | {'type': '`Block`', 'df': "Replaces a spell in the character's hand/deck with a different one. | 4 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The required status effect.'} | 3 |
-| [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage) | Block | {'type': '`Block`', 'df': 'Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 2 |
-| `AddManaRegen` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddManaRegen' effect/state."} | 1 |
-| `HealthRegenUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthRegenUp' effect/state."} | 1 |
+| [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell) | Block | Replaces a spell in the character's hand/deck with a different one. | 4 |
+| [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
+| [`MeleeRevengeDamage`](./Abilities_and_Spells.md#context-meleerevengedamage) | Block | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 2 |
+| `AddManaRegen` | Number | Applies or references the 'AddManaRegen' effect/state. | 1 |
+| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 |
 
 </details>
 
@@ -5442,17 +5442,17 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `delay` | Mixed | {'type': '`Number`', 'df': 'The float time delay in seconds.'} | 4 |
-| [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic) | Block | {'type': '`Block`', 'df': 'Changes the background music track or layer during combat. | 2 |
-| `Cleanse` | Number | {'type': '`Number`', 'df': "Applies or references the 'Cleanse' effect/state."} | 1 |
-| [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers) | Block | {'type': '`Block`', 'df': "Generates global map or encounter rules/modifiers. | 1 |
-| [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake) | Block | {'type': '`Block`', 'df': 'Triggers a camera screen shake effect. | 1 |
-| [`FormChange`](./Enums.md#enum-formchange) | Enum | {'type': '`Enum/String`', 'df': 'Transforms the character into a different state or form (e.g., Rage, HasCat).'} | 1 |
-| `FullHeal` | Number | {'type': '`Number`', 'df': "Applies or references the 'FullHeal' effect/state."} | 1 |
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'GlobalSpawnCharacter' effect/state."} | 1 |
-| `PlayBackground` | Number | {'type': '`Number`', 'df': "Applies or references the 'PlayBackground' effect/state."} | 1 |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'RemoveAmbientLightEffects' effect/state."} | 1 |
-| `Vaporize` | Number | {'type': '`Number`', 'df': "Applies or references the 'Vaporize' effect/state."} | 1 |
+| `delay` | Mixed | The float time delay in seconds. | 4 |
+| [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic) | Block | Changes the background music track or layer during combat. | 2 |
+| [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
+| [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake) | Block | Triggers a camera screen shake effect. | 1 |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 |
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Enum | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 |
+| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 1 |
+| `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 1 |
+| `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |
+| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 1 |
 
 </details>
 
@@ -5598,7 +5598,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ForceUseAbility' effect/state."} | 1 |
+| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 1 |
 
 </details>
 
@@ -5708,7 +5708,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`BonusDamage`](./Math_Equations.md) | Equation | {'type': '`String`', 'df': "Applies or references the 'BonusDamage' effect/state."} | 2 |
+| [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 2 |
 
 </details>
 
@@ -5964,7 +5964,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
 
 </details>
 
@@ -6200,7 +6200,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthRegenUp' effect/state."} | 1 |
+| `HealthRegenUp` | Number | Applies or references the 'HealthRegenUp' effect/state. | 1 |
 
 </details>
 
@@ -6256,7 +6256,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `RandomMagicMissile` | Number | {'type': '`Number`', 'df': 'Fires a randomized number of magic missiles.'} | 1 |
+| `RandomMagicMissile` | Number | Fires a randomized number of magic missiles. | 1 |
 
 </details>
 
@@ -6348,7 +6348,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DodgeChance_Status` | Number | {'type': '`Number`', 'df': "Applies or references the 'DodgeChance_Status' effect/state."} | 1 |
+| `DodgeChance_Status` | Number | Applies or references the 'DodgeChance_Status' effect/state. | 1 |
 
 </details>
 
@@ -6368,9 +6368,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array | {'type': '`Array`', 'df': "Applies or references the 'DivineShield' effect/state."} | 2 |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | {'type': '`Block`', 'df': "Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 1 |
-| `Metronome` | Number | {'type': '`Number`', 'df': 'Executes a random musical or metronome ability.'} | 1 |
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 2 |
+| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 1 |
+| `Metronome` | Number | Executes a random musical or metronome ability. | 1 |
 
 </details>
 
@@ -6390,7 +6390,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cleanse_on_apply` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `cleanse_on_apply` | Boolean |  | 1 |
 
 </details>
 
@@ -6556,9 +6556,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`range`](./Enums.md#enum-range) | Enum | {'type': '`Enum/String`', 'df': 'Distance or area of effect in tiles.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum |  | 1 |
+| [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -6578,8 +6578,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
-| [`damage_instance`](./Items_and_Equipment.md#context-damage_instance) | Block | {'type': '`Block`', 'df': ' | 1 |
+| [`damage_instance`](./Items_and_Equipment.md#context-damage_instance) | Block |  | 1 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -6599,8 +6599,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
-| `range` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 1 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `range` | Number | Distance or area of effect in tiles. | 1 |
 
 </details>
 
@@ -6620,7 +6620,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `range` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 4 |
+| `range` | Number | Distance or area of effect in tiles. | 4 |
 
 </details>
 
@@ -6658,11 +6658,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bite` | Number | {'type': '`Number`', 'df': "Applies or references the 'DemonicGlyph_Bite' effect/state."} | 1 |
-| `DemonicGlyph_Bounce` | Number | {'type': '`Number`', 'df': "Applies or references the 'DemonicGlyph_Bounce' effect/state."} | 1 |
-| `DemonicGlyph_Fire` | Number | {'type': '`Number`', 'df': "Applies or references the 'DemonicGlyph_Fire' effect/state."} | 1 |
-| `DemonicGlyph_Movement` | Number | {'type': '`Number`', 'df': "Applies or references the 'DemonicGlyph_Movement' effect/state."} | 1 |
-| `DemonicGlyph_Summon` | Number | {'type': '`Number`', 'df': "Applies or references the 'DemonicGlyph_Summon' effect/state."} | 1 |
+| `DemonicGlyph_Bite` | Number | Applies or references the 'DemonicGlyph_Bite' effect/state. | 1 |
+| `DemonicGlyph_Bounce` | Number | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 |
+| `DemonicGlyph_Fire` | Number | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 |
+| `DemonicGlyph_Movement` | Number | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 |
+| `DemonicGlyph_Summon` | Number | Applies or references the 'DemonicGlyph_Summon' effect/state. | 1 |
 
 </details>
 
@@ -6754,9 +6754,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `intensity` | Number | {'type': '`Number`', 'df': ''} | 6 |
-| `radius` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 6 |
-| `speed` | Number | {'type': '`Number`', 'df': ''} | 6 |
+| `intensity` | Number |  | 6 |
+| `radius` | Number | Distance or area of effect in tiles. | 6 |
+| `speed` | Number |  | 6 |
 
 </details>
 
@@ -6996,8 +6996,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
-| [`event`](./Enums.md#enum-event) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`event`](./Enums.md#enum-event) | Enum |  | 1 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -7233,8 +7233,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ability to execute after moving.'} | 1 |
-| `even_if_cant_reach` | Boolean | {'type': '`Boolean`', 'df': 'If true, executes the attack even if the move fails to reach the target.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ability to execute after moving. | 1 |
+| `even_if_cant_reach` | Boolean | If true, executes the attack even if the move fails to reach the target. | 1 |
 
 </details>
 
@@ -7326,8 +7326,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The movement ability to use.'} | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The entity tag to seek out.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The movement ability to use. | 2 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The entity tag to seek out. | 1 |
 
 </details>
 
@@ -7365,8 +7365,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'ID of the ability to trigger or reference.'} | 1 |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -7440,8 +7440,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `knockback` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `override_chain_knockback` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `knockback` | Number |  | 1 |
+| `override_chain_knockback` | Number |  | 1 |
 
 </details>
 
@@ -7551,7 +7551,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`weights`](./Enums.md#enum-weights) | Enum |  | 1 |
 
 </details>
 
@@ -7571,9 +7571,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `once_per_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| [`weights`](./Enums.md#enum-weights) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum |  | 1 |
+| [`weights`](./Enums.md#enum-weights) | Enum |  | 1 |
+| `once_per_turn` | Boolean |  | 1 |
 
 </details>
 
@@ -7593,8 +7593,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`character_filter`](./Arrays.md#array-character_filter) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
+| [`character_filter`](./Arrays.md#array-character_filter) | Array |  | 3 |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum |  | 3 |
 
 </details>
 
@@ -7632,8 +7632,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max` | Number | {'type': '`Number`', 'df': 'Maximum knockback distance.'} | 2 |
-| `min` | Number | {'type': '`Number`', 'df': 'Minimum knockback distance.'} | 2 |
+| `max` | Number | Maximum knockback distance. | 2 |
+| `min` | Number | Minimum knockback distance. | 2 |
 
 </details>
 
@@ -7833,8 +7833,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks to remove.'} | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The specific status effect ID to remove.'} | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 1 |
+| `stacks` | Number | The number of stacks to remove. | 1 |
 
 </details>
 
@@ -7926,8 +7926,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `allow_decision_mid_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum |  | 1 |
+| `allow_decision_mid_turn` | Boolean |  | 1 |
 
 </details>
 
@@ -8039,8 +8039,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`UseAbility`](./Characters_and_Bosses.md#context-useability) | Block | {'type': '`Block`', 'df': "Logic: Forces execution of an ability. | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
+| [`UseAbility`](./Characters_and_Bosses.md#context-useability) | Block | Logic: Forces execution of an ability. | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
 </details>
 
@@ -8078,8 +8078,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`alt_dead_ani`](./Enums.md#enum-alt_dead_ani) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`alt_dead_ani`](./Enums.md#enum-alt_dead_ani) | Enum |  | 1 |
+| [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum |  | 1 |
 
 </details>
 
@@ -8189,8 +8189,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum |  | 1 |
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum |  | 1 |
 
 </details>
 
@@ -8210,8 +8210,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 1 |
-| [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
+| [`move`](./Enums.md#enum-move) | Enum |  | 1 |
 
 </details>
 
@@ -8303,10 +8303,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Mixed | {'type': '`Number`', 'df': 'The damage formula or inherit flag.'} | 6 |
-| `max_dist` | Number | {'type': '`Number`', 'df': 'Maximum displacement distance.'} | 6 |
-| `min_dist` | Number | {'type': '`Number`', 'df': 'Minimum displacement distance.'} | 2 |
-| [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| `damage` | Mixed | The damage formula or inherit flag. | 6 |
+| `max_dist` | Number | Maximum displacement distance. | 6 |
+| `min_dist` | Number | Minimum displacement distance. | 2 |
+| [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum |  | 1 |
 
 </details>
 
@@ -8326,9 +8326,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| `max_dist` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `min_dist` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
+| `max_dist` | Number |  | 1 |
+| `min_dist` | Number |  | 1 |
 
 </details>
 
@@ -8348,8 +8348,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'ID of the ability to trigger or reference.'} | 1 |
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum | {'type': '`Enum/String`', 'df': 'The AI positioning logic profile to use.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum | The AI positioning logic profile to use. | 1 |
 
 </details>
 
@@ -8425,7 +8425,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'HideEquipment' effect/state."} | 1 |
+| [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. | 1 |
 
 </details>
 
@@ -8443,9 +8443,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 3 |
-| [`obj`](./Enums.md#enum-obj) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| `reclaim_if_lost` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`obj`](./Enums.md#enum-obj) | Enum |  | 3 |
+| `allies_only` | Boolean |  | 3 |
+| `reclaim_if_lost` | Boolean |  | 1 |
 
 </details>
 
@@ -8720,9 +8720,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Cat`](./Characters_and_Bosses.md#context-cat) | Block | {'type': '`Block`', 'df': 'Character Form: Base form for standard cats. | 2 |
-| [`NonCat`](./Characters_and_Bosses.md#context-noncat) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'NonCat' state. | 2 |
-| [`Nothing`](./Characters_and_Bosses.md#context-nothing) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Nothing' state. | 1 |
+| [`Cat`](./Characters_and_Bosses.md#context-cat) | Block | Character Form: Base form for standard cats. | 2 |
+| [`NonCat`](./Characters_and_Bosses.md#context-noncat) | Block | Character Form: Behavior and stats for the 'NonCat' state. | 2 |
+| [`Nothing`](./Characters_and_Bosses.md#context-nothing) | Block | Character Form: Behavior and stats for the 'Nothing' state. | 1 |
 
 </details>
 
@@ -8742,8 +8742,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`count`](./Arrays.md#array-count) | Array | {'type': '`Array`', 'df': 'The numerical quantity.'} | 1 |
-| [`obj`](./Enums.md#enum-obj) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`count`](./Arrays.md#array-count) | Array | The numerical quantity. | 1 |
+| [`obj`](./Enums.md#enum-obj) | Enum |  | 1 |
 
 </details>
 
@@ -8763,10 +8763,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID to spawn in place.'} | 2 |
-| `clone_items` | Boolean | {'type': '`Boolean`', 'df': 'If true, transfers inventory to the new entity.'} | 1 |
-| `clone_referenced_catdata` | Boolean | {'type': '`Boolean`', 'df': 'If true, copies the genetic data of the popped cat.'} | 1 |
-| `no_splatter` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn in place. | 2 |
+| `clone_items` | Boolean | If true, transfers inventory to the new entity. | 1 |
+| `clone_referenced_catdata` | Boolean | If true, copies the genetic data of the popped cat. | 1 |
+| `no_splatter` | Boolean |  | 1 |
 
 </details>
 
@@ -8972,8 +8972,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `break_on_pop_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 2 |
+| `break_on_pop_only` | Boolean |  | 2 |
 
 </details>
 
@@ -9029,9 +9029,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`faction`](./Enums.md#enum-faction) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`obj`](./Arrays.md#array-obj) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| [`additional_statuses`](./Characters_and_Bosses.md#context-additional_statuses) | Block | {'type': '`Block`', 'df': "Generic statuses added to the character. | 1 |
+| [`faction`](./Enums.md#enum-faction) | Enum |  | 3 |
+| [`obj`](./Arrays.md#array-obj) | Array |  | 3 |
+| [`additional_statuses`](./Characters_and_Bosses.md#context-additional_statuses) | Block | Generic statuses added to the character. | 1 |
 
 </details>
 
@@ -9069,8 +9069,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`count`](./Arrays.md#array-count) | Array | {'type': '`Array`', 'df': 'Quantity.'} | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 1 |
+| [`count`](./Arrays.md#array-count) | Array | Quantity. | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
 
 </details>
 
@@ -9126,9 +9126,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`tile`](./Enums.md#enum-tile) | Enum | Examples: `OilTile` | 1 |
 | `max_radius` | Number | Examples: `3.5` | 1 |
 | `min_radius` | Number | Examples: `1.5` | 1 |
-| [`tile`](./Enums.md#enum-tile) | Enum | Examples: `OilTile` | 1 |
 
 </details>
 
@@ -9149,9 +9149,9 @@
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `MiniVolcano, Sprout, PunchingBag` | 3 |
+| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | Examples: `[ BrambleTile TallBrambleTile ], LavaTile` | 2 |
 | `max_radius` | Number | Examples: `2.2` | 2 |
 | `min_radius` | Mixed | Examples: `1, .2` | 2 |
-| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | Examples: `[ BrambleTile TallBrambleTile ], LavaTile` | 2 |
 | [`number`](./Arrays.md#array-number) | Array | Examples: `[ 3 5 ]` | 1 |
 
 </details>
@@ -9208,8 +9208,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Boss`](./Items_and_Equipment.md#context-conditional_boss) | Block | {'type': '`Block`', 'df': "Conditional trigger: Executes nested logic if the target is a Boss. | 2 |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 1 |
+| [`Conditional_Boss`](./Items_and_Equipment.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 2 |
+| `Poison` | Number | Applies or references the 'Poison' effect/state. | 1 |
 
 </details>
 
@@ -9229,8 +9229,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `CaptureFamiliar` | Number | {'type': '`Number`', 'df': "Applies or references the 'CaptureFamiliar' effect/state."} | 1 |
-| `SetHealth` | Number | {'type': '`Number`', 'df': "Applies or references the 'SetHealth' effect/state."} | 1 |
+| `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 1 |
+| `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 1 |
 
 </details>
 
@@ -9250,7 +9250,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`no_buddy`](./Enums.md#enum-no_buddy) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`no_buddy`](./Enums.md#enum-no_buddy) | Enum |  | 1 |
 
 </details>
 
@@ -9270,7 +9270,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array |  | 1 |
 
 </details>
 
@@ -9364,8 +9364,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 3 |
+| [`frame_range`](./Arrays.md#array-frame_range) | Array |  | 3 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 3 |
 
 </details>
 
@@ -9403,8 +9403,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ally_rewards`](./Characters_and_Bosses.md#context-ally_rewards) | Block | {'type': '`Block`', 'df': 'Loot logic triggered if an ally dies. | 18 |
-| [`statuses`](./Characters_and_Bosses.md#context-statuses) | Block | {'type': '`Block`', 'df': "Status effects possessed by the character. | 5 |
+| [`ally_rewards`](./Characters_and_Bosses.md#context-ally_rewards) | Block | Loot logic triggered if an ally dies. | 18 |
+| [`statuses`](./Characters_and_Bosses.md#context-statuses) | Block | Status effects possessed by the character. | 5 |
 
 </details>
 
@@ -9424,9 +9424,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 1 |
-| [`new_music`](./Enums.md#enum-new_music) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
+| [`new_music`](./Enums.md#enum-new_music) | Enum |  | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
 
 </details>
 
@@ -9500,12 +9500,12 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Tech` | Number | {'type': '`Number`', 'df': "Applies or references the 'Tech' effect/state."} | 2 |
-| `CurrentWeaponAddPoison` | Number | {'type': '`Number`', 'df': "Applies or references the 'CurrentWeaponAddPoison' effect/state."} | 1 |
-| `LuckUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'LuckUp' effect/state."} | 1 |
-| `Quivered` | Number | {'type': '`Number`', 'df': "Applies or references the 'Quivered' effect/state."} | 1 |
-| `RandomStatUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'RandomStatUp' effect/state."} | 1 |
-| `Shield` | Number | {'type': '`Number`', 'df': "Applies or references the 'Shield' effect/state."} | 1 |
+| `Tech` | Number | Applies or references the 'Tech' effect/state. | 2 |
+| `CurrentWeaponAddPoison` | Number | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 |
+| `LuckUp` | Number | Applies or references the 'LuckUp' effect/state. | 1 |
+| `Quivered` | Number | Applies or references the 'Quivered' effect/state. | 1 |
+| `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 1 |
+| `Shield` | Number | Applies or references the 'Shield' effect/state. | 1 |
 
 </details>
 
@@ -9633,8 +9633,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max` | Number | {'type': '`Number`', 'df': 'Maximum coins granted.'} | 4 |
-| `min` | Number | {'type': '`Number`', 'df': 'Minimum coins granted.'} | 4 |
+| `max` | Number | Maximum coins granted. | 4 |
+| `min` | Number | Minimum coins granted. | 4 |
 
 </details>
 
@@ -9654,11 +9654,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | {'type': '`Array`', 'df': ''} | 15 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 15 |
-| `stored_food_value` | Number | {'type': '`Number`', 'df': ''} | 15 |
-| `anything_eats` | Boolean | {'type': '`Boolean`', 'df': ''} | 4 |
-| `force_frame` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`frame_range`](./Arrays.md#array-frame_range) | Array |  | 15 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 15 |
+| `stored_food_value` | Number |  | 15 |
+| `anything_eats` | Boolean |  | 4 |
+| `force_frame` | Number |  | 1 |
 
 </details>
 
@@ -9696,8 +9696,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 3 |
+| [`frame_range`](./Arrays.md#array-frame_range) | Array |  | 3 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 3 |
 
 </details>
 
@@ -9753,10 +9753,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`head_drop`](./Enums.md#enum-head_drop) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`leg_leave`](./Enums.md#enum-leg_leave) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`leg_return`](./Enums.md#enum-leg_return) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `stable_legs` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`head_drop`](./Enums.md#enum-head_drop) | Enum |  | 1 |
+| [`leg_leave`](./Enums.md#enum-leg_leave) | Enum |  | 1 |
+| [`leg_return`](./Enums.md#enum-leg_return) | Enum |  | 1 |
+| `stable_legs` | Number |  | 1 |
 
 </details>
 
@@ -9776,8 +9776,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Cleanse` | Number | {'type': '`Number`', 'df': "Applies or references the 'Cleanse' effect/state."} | 1 |
-| [`sound_event`](./Enums.md#enum-sound_event) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`sound_event`](./Enums.md#enum-sound_event) | Enum |  | 1 |
+| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 1 |
 
 </details>
 
@@ -9833,8 +9833,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stackable` | Boolean | {'type': '`Boolean`', 'df': 'If true, multiple instances of this trigger can stack.'} | 2 |
-| [`stacks`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
+| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 2 |
+| `stackable` | Boolean | If true, multiple instances of this trigger can stack. | 2 |
 
 </details>
 
@@ -10000,22 +10000,22 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ear1` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the front ear.'} | 10 |
-| `tail` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the tail.'} | 10 |
-| `ear2` | Number | {'type': '`Number`', 'df': ''} | 9 |
-| `arm2` | Number | {'type': '`Number`', 'df': ''} | 8 |
-| `mouth` | Number | {'type': '`Number`', 'df': ''} | 8 |
-| `arm1` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the front arm.'} | 7 |
-| `leg1` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the front leg.'} | 5 |
-| `leg2` | Number | {'type': '`Number`', 'df': ''} | 5 |
-| `head` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the head.'} | 3 |
-| `texture` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| `body` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the body.'} | 2 |
-| `eye1` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `eye2` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `eyebrow1` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `eyebrow2` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `palette` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `ear1` | Number | Sprite variant ID for the front ear. | 10 |
+| `tail` | Number | Sprite variant ID for the tail. | 10 |
+| `ear2` | Number |  | 9 |
+| `arm2` | Number |  | 8 |
+| `mouth` | Number |  | 8 |
+| `arm1` | Number | Sprite variant ID for the front arm. | 7 |
+| `leg1` | Number | Sprite variant ID for the front leg. | 5 |
+| `leg2` | Number |  | 5 |
+| `head` | Number | Sprite variant ID for the head. | 3 |
+| `texture` | Number |  | 3 |
+| `body` | Number | Sprite variant ID for the body. | 2 |
+| `eye1` | Number |  | 1 |
+| `eye2` | Number |  | 1 |
+| `eyebrow1` | Number |  | 1 |
+| `eyebrow2` | Number |  | 1 |
+| `palette` | Number |  | 1 |
 
 </details>
 
@@ -10035,8 +10035,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0) of executing this action.'} | 1 |
-| [`form`](./Enums.md#enum-form) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`form`](./Enums.md#enum-form) | Enum |  | 1 |
+| `chance` | Number | Probability (0.0 to 1.0) of executing this action. | 1 |
 
 </details>
 
@@ -10074,9 +10074,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| `passives_health_threshold` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`active_pieces`](./Arrays.md#array-active_pieces) | Array |  | 1 |
+| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array |  | 1 |
+| `passives_health_threshold` | Number |  | 1 |
 
 </details>
 
@@ -10096,8 +10096,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`eq`](./Arrays.md#array-eq) | Array | {'type': '`Array`', 'df': ''} | 11 |
-| [`ge`](./Arrays.md#array-ge) | Array | {'type': '`Array`', 'df': ''} | 4 |
+| [`eq`](./Arrays.md#array-eq) | Array |  | 11 |
+| [`ge`](./Arrays.md#array-ge) | Array |  | 4 |
 
 </details>
 
@@ -10117,8 +10117,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `form` | Mixed | {'type': '`String`', 'df': ''} | 75 |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
+| `form` | Mixed |  | 75 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -10138,8 +10138,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 2 |
-| [`form`](./Enums.md#enum-form) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 2 |
+| [`form`](./Enums.md#enum-form) | Enum |  | 2 |
 
 </details>
 
@@ -10159,10 +10159,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`form_above`](./Enums.md#enum-form_above) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`form_below`](./Enums.md#enum-form_below) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| `threshold` | Mixed | {'type': '`Number`', 'df': ''} | 3 |
-| `count_shield` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`form_above`](./Enums.md#enum-form_above) | Enum |  | 3 |
+| [`form_below`](./Enums.md#enum-form_below) | Enum |  | 3 |
+| `threshold` | Mixed |  | 3 |
+| `count_shield` | Boolean |  | 1 |
 
 </details>
 
@@ -10182,8 +10182,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`form_offmap`](./Enums.md#enum-form_offmap) | Enum | {'type': '`Enum/String`', 'df': ''} | 8 |
-| [`form_onmap`](./Enums.md#enum-form_onmap) | Enum | {'type': '`Enum/String`', 'df': ''} | 8 |
+| [`form_offmap`](./Enums.md#enum-form_offmap) | Enum |  | 8 |
+| [`form_onmap`](./Enums.md#enum-form_onmap) | Enum |  | 8 |
 
 </details>
 
@@ -10203,11 +10203,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 9 |
-| [`form`](./Enums.md#enum-form) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
-| [`exclude`](./Enums.md#enum-exclude) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`particle`](./Enums.md#enum-particle) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`sfx`](./Enums.md#enum-sfx) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 9 |
+| [`form`](./Enums.md#enum-form) | Enum |  | 9 |
+| [`exclude`](./Enums.md#enum-exclude) | Enum |  | 5 |
+| [`particle`](./Enums.md#enum-particle) | Enum |  | 5 |
+| [`sfx`](./Enums.md#enum-sfx) | Enum |  | 5 |
 
 </details>
 
@@ -10245,9 +10245,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 35 |
-| [`form_hasnot`](./Enums.md#enum-form_hasnot) | Enum | {'type': '`Enum/String`', 'df': ''} | 30 |
-| [`form_has`](./Enums.md#enum-form_has) | Enum | {'type': '`Enum/String`', 'df': ''} | 25 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 35 |
+| [`form_hasnot`](./Enums.md#enum-form_hasnot) | Enum |  | 30 |
+| [`form_has`](./Enums.md#enum-form_has) | Enum |  | 25 |
 
 </details>
 
@@ -10267,8 +10267,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`not_priming`](./Enums.md#enum-not_priming) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| [`priming`](./Enums.md#enum-priming) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
+| [`not_priming`](./Enums.md#enum-not_priming) | Enum |  | 6 |
+| [`priming`](./Enums.md#enum-priming) | Enum |  | 6 |
 
 </details>
 
@@ -10288,164 +10288,164 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`initial_form`](./Enums.md#enum-initial_form) | Enum | {'type': '`Enum/String`', 'df': ''} | 56 |
-| [`Default`](./Characters_and_Bosses.md#context-default) | Block | {'type': '`Block`', 'df': 'Character Form: The baseline default behavior state. | 37 |
-| [`Normal`](./Characters_and_Bosses.md#context-normal) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Normal\' state. | 11 |
-| [`Rage`](./Characters_and_Bosses.md#context-rage) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Rage\' state. | 10 |
-| [`HasCat`](./Characters_and_Bosses.md#context-hascat) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'HasCat\' state. | 5 |
-| [`OffMap`](./Characters_and_Bosses.md#context-offmap) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'OffMap' state. | 4 |
-| [`default`](./Characters_and_Bosses.md#context-default) | Block | {'type': '`Block`', 'df': 'Baseline configuration. | 4 |
-| [`hot`](./Characters_and_Bosses.md#context-hot) | Block | {'type': '`Block`', 'df': 'Visual effect indicator. | 4 |
-| [`AllAlive`](./Characters_and_Bosses.md#context-allalive) | Block | {'type': '`Block`', 'df': 'Encounter State: Logic executed when all specific entities are currently alive. | 3 |
-| [`Down`](./Characters_and_Bosses.md#context-down) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Down\' state. | 3 |
-| [`Full`](./Characters_and_Bosses.md#context-full) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Full\' state. | 3 |
-| [`OneAlive`](./Characters_and_Bosses.md#context-onealive) | Block | {'type': '`Block`', 'df': 'Encounter State: Logic executed when exactly one target is alive. | 3 |
-| [`TwoAlive`](./Characters_and_Bosses.md#context-twoalive) | Block | {'type': '`Block`', 'df': 'Encounter State: Logic executed when exactly two targets are alive. | 3 |
-| [`Up`](./Characters_and_Bosses.md#context-up) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Up\' state. | 3 |
-| [`Big`](./Characters_and_Bosses.md#context-big) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'Big\' state. | 2 |
-| [`Boris`](./Characters_and_Bosses.md#context-boris) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'Boris\' state. | 2 |
-| [`CaveMan`](./Characters_and_Bosses.md#context-caveman) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'CaveMan\' state. | 2 |
-| [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 |
-| [`Empty`](./Characters_and_Bosses.md#context-empty) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Empty\' state. | 2 |
-| [`Explosive`](./Characters_and_Bosses.md#context-explosive) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Explosive\' state. | 2 |
-| [`Holding`](./Characters_and_Bosses.md#context-holding) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Holding\' state. | 2 |
-| [`Holy`](./Characters_and_Bosses.md#context-holy) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Holy\' state. | 2 |
-| [`NotPriming`](./Characters_and_Bosses.md#context-notpriming) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats when not charging an ability. | 2 |
-| [`Priming`](./Characters_and_Bosses.md#context-priming) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats when charging an ability. | 2 |
-| [`Rain`](./Characters_and_Bosses.md#context-rain) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Rain' state. | 2 |
-| [`Small`](./Characters_and_Bosses.md#context-small) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Small\' state. | 2 |
-| [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 |
-| [`Turtled`](./Characters_and_Bosses.md#context-turtled) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Turtled' state. | 2 |
-| [`active`](./Characters_and_Bosses.md#context-active) | Block | {'type': '`Block`', 'df': 'Defines actively executed abilities. | 2 |
-| [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': 'Block', 'df': 'Core block defining the AI behavior logic and weights.'} | 2 |
-| [`attack`](./Enums.md#enum-attack) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
-| `partial_animation_suffix` | Number | {'type': 'String', 'df': ''} | 2 |
-| [`passive`](./Characters_and_Bosses.md#context-passive) | Block | {'type': '`Block`', 'df': 'Intrinsic passive modifier. | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': 'Block', 'df': 'Block listing intrinsic passive modifiers.'} | 2 |
-| [`Alert`](./Characters_and_Bosses.md#context-alert) | Block | {'type': '`Block`', 'df': 'AI State: The behavior profile used when the character is alerted to enemies. | 1 |
-| [`Angry`](./Characters_and_Bosses.md#context-angry) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'Angry\' state. | 1 |
-| [`Attacker`](./Characters_and_Bosses.md#context-attacker) | Block | {'type': '`Block`', 'df': 'AI Role: Designates the character as an attacker rather than support. | 1 |
-| [`BellyFull`](./Characters_and_Bosses.md#context-bellyfull) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'BellyFull\' state. | 1 |
-| [`BigHolding`](./Characters_and_Bosses.md#context-bigholding) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'BigHolding\' state. | 1 |
-| [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 |
-| [`Bishop`](./Characters_and_Bosses.md#context-bishop) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 1 |
-| [`BlackHole`](./Characters_and_Bosses.md#context-blackhole) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 |
-| [`Bomb`](./Characters_and_Bosses.md#context-bomb) | Block | {'type': '`Block`', 'df': "Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 |
-| [`Bully`](./Characters_and_Bosses.md#context-bully) | Block | {'type': '`Block`', 'df': "Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 |
-| `Butcher` | Block | {'type': '`Block`', 'df': "Applies or references the 'Butcher' effect/state."} | 1 |
-| [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'CaveBaby\' state. | 1 |
-| [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 |
-| [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |
-| [`Charging`](./Characters_and_Bosses.md#context-charging) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior when charging an attack. | 1 |
-| [`Close`](./Characters_and_Bosses.md#context-close) | Block | {'type': '`Block`', 'df': 'AI Movement logic: Maneuvers into close/melee range. | 1 |
-| `Colorless` | Block | {'type': '`Block`', 'df': "Applies or references the 'Colorless' effect/state."} | 1 |
-| [`Cultist`](./Characters_and_Bosses.md#context-cultist) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Cultist\' state. | 1 |
-| [`Damaged`](./Characters_and_Bosses.md#context-damaged) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior when health is critically low. | 1 |
-| [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling) | Block | {'type': '`Block`', 'df': 'Character Form: The baseline behavior state while attached to the ceiling. | 1 |
-| [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground) | Block | {'type': '`Block`', 'df': 'Character Form: The baseline behavior state while on the ground. | 1 |
-| [`DesireMech`](./Characters_and_Bosses.md#context-desiremech) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'DesireMech' state. | 1 |
-| [`Die`](./Characters_and_Bosses.md#context-die) | Block | {'type': '`Block`', 'df': 'Character Form / Logic: Forces the character to die. | 1 |
-| `Druid` | Block | {'type': '`Block`', 'df': "Applies or references the 'Druid' effect/state."} | 1 |
-| [`Drunker`](./Characters_and_Bosses.md#context-drunker) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Drunker' state. | 1 |
-| [`DualSword`](./Characters_and_Bosses.md#context-dualsword) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
-| [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |
-| [`Dumb`](./Characters_and_Bosses.md#context-dumb) | Block | {'type': '`Block`', 'df': 'AI Profile: A simplified, less optimal decision-making profile. | 1 |
-| [`Explody`](./Characters_and_Bosses.md#context-explody) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Explody' state. | 1 |
-| [`FightPhase`](./Characters_and_Bosses.md#context-fightphase) | Block | {'type': '`Block`', 'df': 'Boss Logic: Main combat phase. | 1 |
-| `Fighter` | Block | {'type': '`Block`', 'df': "Applies or references the 'Fighter' effect/state."} | 1 |
-| [`Fire`](./Characters_and_Bosses.md#context-fire) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Fire' state. | 1 |
-| [`FireFull`](./Characters_and_Bosses.md#context-firefull) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'FireFull' state. | 1 |
-| [`Flop`](./Characters_and_Bosses.md#context-flop) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Flop\' state. | 1 |
-| [`Flop2`](./Characters_and_Bosses.md#context-flop2) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Flop2\' state. | 1 |
-| [`Flush`](./Characters_and_Bosses.md#context-flush) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Flush' state. | 1 |
-| [`FlushBubs`](./Characters_and_Bosses.md#context-flushbubs) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'FlushBubs' state. | 1 |
-| [`FlushHost`](./Characters_and_Bosses.md#context-flushhost) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'FlushHost' state. | 1 |
-| [`FlushNettle`](./Characters_and_Bosses.md#context-flushnettle) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'FlushNettle' state. | 1 |
-| [`Grappling`](./Characters_and_Bosses.md#context-grappling) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior while grappling an opponent. | 1 |
-| [`Grown`](./Characters_and_Bosses.md#context-grown) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Grown\' state. | 1 |
-| [`GuaranteedJackpot`](./Characters_and_Bosses.md#context-guaranteedjackpot) | Block | {'type': '`Block`', 'df': 'Loot Logic: Guarantees a high-tier drop. | 1 |
-| [`Guarding`](./Characters_and_Bosses.md#context-guarding) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Defensive behavior state. | 1 |
-| [`HalfDead`](./Characters_and_Bosses.md#context-halfdead) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'HalfDead\' state. | 1 |
-| [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'HasDeadCat\' state. | 1 |
-| [`HasRock`](./Characters_and_Bosses.md#context-hasrock) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'HasRock\' state. | 1 |
-| [`Headless`](./Characters_and_Bosses.md#context-headless) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Headless\' state. | 1 |
-| [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#context-hint_crackedvisuals) | Block | {'type': '`Block`', 'df': 'Visual: Overlay effects for cracked/damaged terrain or objects. | 1 |
-| [`Hint_CrackedVisuals2`](./Characters_and_Bosses.md#context-hint_crackedvisuals2) | Block | {'type': '`Block`', 'df': 'Visual: Secondary cracked visual overlay. | 1 |
-| [`Hint_CrackedVisuals3`](./Characters_and_Bosses.md#context-hint_crackedvisuals3) | Block | {'type': '`Block`', 'df': 'Visual: Tertiary cracked visual overlay. | 1 |
-| [`HumanDead`](./Characters_and_Bosses.md#context-humandead) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'HumanDead\' state. | 1 |
-| `Hunter` | Block | {'type': '`Block`', 'df': "Applies or references the 'Hunter' effect/state."} | 1 |
-| [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase) | Block | {'type': '`Block`', 'df': 'Boss Logic: The starting phase of an encounter. | 1 |
-| [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling) | Block | {'type': '`Block`', 'df': 'Character Form: Insane behavior state while attached to the ceiling. | 1 |
-| [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground) | Block | {'type': '`Block`', 'df': 'Character Form: Insane behavior state while on the ground. | 1 |
-| [`Johnny`](./Characters_and_Bosses.md#context-johnny) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Johnny' state. | 1 |
-| [`JohnnyBubs`](./Characters_and_Bosses.md#context-johnnybubs) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'JohnnyBubs' state. | 1 |
-| [`JohnnyHost`](./Characters_and_Bosses.md#context-johnnyhost) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'JohnnyHost' state. | 1 |
-| [`JohnnyNettle`](./Characters_and_Bosses.md#context-johnnynettle) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'JohnnyNettle' state. | 1 |
-| [`Joystick`](./Characters_and_Bosses.md#context-joystick) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Joystick\' state. | 1 |
-| [`LastHit`](./Characters_and_Bosses.md#context-lasthit) | Block | {'type': '`Block`', 'df': 'Logic: Executes logic on the final hit of a multi-hit attack. | 1 |
-| [`Lifted`](./Characters_and_Bosses.md#context-lifted) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Lifted\' state. | 1 |
-| [`Lit`](./Characters_and_Bosses.md#context-lit) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Lit' state. | 1 |
-| `Mage` | Block | {'type': '`Block`', 'df': "Applies or references the 'Mage' effect/state."} | 1 |
-| `Medic` | Block | {'type': '`Block`', 'df': "Applies or references the 'Medic' effect/state."} | 1 |
-| `Monk` | Block | {'type': '`Block`', 'df': "Applies or references the 'Monk' effect/state."} | 1 |
-| [`Mounted`](./Characters_and_Bosses.md#context-mounted) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Mounted\' state. | 1 |
-| [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'MouthFull\' state. | 1 |
-| [`Mutant`](./Characters_and_Bosses.md#context-mutant) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Mutant\' state. | 1 |
-| `Necromancer` | Block | {'type': '`Block`', 'df': "Applies or references the 'Necromancer' effect/state."} | 1 |
-| [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'NeutronStar' state. | 1 |
-| `NoDeathRattle` | Block | {'type': '`Block`', 'df': "Applies or references the 'NoDeathRattle' effect/state."} | 1 |
-| [`NoEyes`](./Characters_and_Bosses.md#context-noeyes) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'NoEyes\' state. | 1 |
-| [`NoStick`](./Characters_and_Bosses.md#context-nostick) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'NoStick' state. | 1 |
-| [`NormalFull`](./Characters_and_Bosses.md#context-normalfull) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
-| [`Nuke`](./Characters_and_Bosses.md#context-nuke) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Nuke' state. | 1 |
-| [`Obey`](./Characters_and_Bosses.md#context-obey) | Block | {'type': '`Block`', 'df': 'AI State: Enforced compliance logic (e.g., when Charmed). | 1 |
-| [`Off`](./Characters_and_Bosses.md#context-off) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Off' state. | 1 |
-| [`OffScreen`](./Characters_and_Bosses.md#context-offscreen) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'OffScreen' state. | 1 |
-| [`OneEye`](./Characters_and_Bosses.md#context-oneeye) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'OneEye\' state. | 1 |
-| [`Open`](./Characters_and_Bosses.md#context-open) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Open' state. | 1 |
-| [`OpenCat`](./Characters_and_Bosses.md#context-opencat) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'OpenCat' state. | 1 |
-| [`Out`](./Characters_and_Bosses.md#context-out) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Out' state. | 1 |
-| [`Possessing`](./Characters_and_Bosses.md#context-possessing) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Possessing\' state. | 1 |
-| [`Primed`](./Characters_and_Bosses.md#context-primed) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Primed' state. | 1 |
-| `Psychic` | Block | {'type': '`Block`', 'df': "Applies or references the 'Psychic' effect/state."} | 1 |
-| [`Pulp2`](./Characters_and_Bosses.md#context-pulp2) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Pulp2' state. | 1 |
-| [`Pulp3`](./Characters_and_Bosses.md#context-pulp3) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Pulp3' state. | 1 |
-| [`Pulp4`](./Characters_and_Bosses.md#context-pulp4) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Pulp4' state. | 1 |
-| [`Pulp5`](./Characters_and_Bosses.md#context-pulp5) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Pulp5' state. | 1 |
-| [`Pulp6`](./Characters_and_Bosses.md#context-pulp6) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Pulp6' state. | 1 |
-| [`Pulp7`](./Characters_and_Bosses.md#context-pulp7) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Pulp7' state. | 1 |
-| [`Sitting`](./Characters_and_Bosses.md#context-sitting) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Sitting' state. | 1 |
-| [`SmallHolding`](./Characters_and_Bosses.md#context-smallholding) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
-| [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
-| [`SpawningPhase`](./Characters_and_Bosses.md#context-spawningphase) | Block | {'type': '`Block`', 'df': 'Boss Logic: Phase focused on summoning minions. | 1 |
-| [`Standing`](./Characters_and_Bosses.md#context-standing) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Standing' state. | 1 |
-| [`Standing2`](./Characters_and_Bosses.md#context-standing2) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Standing2' state. | 1 |
-| [`Start_Ceiling`](./Characters_and_Bosses.md#context-start_ceiling) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Start_Ceiling' state. | 1 |
-| [`Stop`](./Characters_and_Bosses.md#context-stop) | Block | {'type': '`Block`', 'df': 'AI Movement: Forces the character to cease movement. | 1 |
-| [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 |
-| [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |
-| `Tank` | Block | {'type': '`Block`', 'df': "Applies or references the 'Tank' effect/state."} | 1 |
-| [`Tar`](./Characters_and_Bosses.md#context-tar) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Tar' state. | 1 |
-| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'TarFull' state. | 1 |
-| `Thief` | Block | {'type': '`Block`', 'df': "Applies or references the 'Thief' effect/state."} | 1 |
-| [`Throb`](./Characters_and_Bosses.md#context-throb) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Throb' state. | 1 |
-| [`ThrobBubs`](./Characters_and_Bosses.md#context-throbbubs) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 |
-| [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'ThrobHost' state. | 1 |
-| [`ThrobNettle`](./Characters_and_Bosses.md#context-throbnettle) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'ThrobNettle' state. | 1 |
-| `Tinkerer` | Block | {'type': '`Block`', 'df': "Applies or references the 'Tinkerer' effect/state."} | 1 |
-| [`Transformed`](./Characters_and_Bosses.md#context-transformed) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Transformed' state. | 1 |
-| [`TwoEyes`](./Characters_and_Bosses.md#context-twoeyes) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'TwoEyes' state. | 1 |
-| [`Unlit`](./Characters_and_Bosses.md#context-unlit) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Unlit' state. | 1 |
-| `Unmounted` | Block | {'type': '`Block`', 'df': "Applies or references the 'Unmounted' effect/state."} | 1 |
-| [`Unwashed`](./Characters_and_Bosses.md#context-unwashed) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Unwashed' state. | 1 |
-| [`Washed`](./Characters_and_Bosses.md#context-washed) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Washed' state. | 1 |
-| [`Washer`](./Characters_and_Bosses.md#context-washer) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Washer\' state. | 1 |
-| [`Water`](./Characters_and_Bosses.md#context-water) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Water\' state. | 1 |
-| [`WereMan`](./Characters_and_Bosses.md#context-wereman) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'WereMan\' state. | 1 |
-| [`Zealot`](./Characters_and_Bosses.md#context-zealot) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Zealot\' state. | 1 |
-| [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 |
-| `sync_brain_patterns` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `uifloaters_offset` | Number | {'type': 'Number', 'df': ''} | 1 |
+| [`initial_form`](./Enums.md#enum-initial_form) | Enum |  | 56 |
+| [`Default`](./Characters_and_Bosses.md#context-default) | Block | Character Form: The baseline default behavior state. | 37 |
+| [`Normal`](./Characters_and_Bosses.md#context-normal) | Block | Character Form: Behavior and stats for the \'Normal\' state. | 11 |
+| [`Rage`](./Characters_and_Bosses.md#context-rage) | Block | Character Form: Behavior and stats for the \'Rage\' state. | 10 |
+| [`HasCat`](./Characters_and_Bosses.md#context-hascat) | Block | Character Form: Behavior and stats for the \'HasCat\' state. | 5 |
+| [`OffMap`](./Characters_and_Bosses.md#context-offmap) | Block | Character Form: Behavior and stats for the 'OffMap' state. | 4 |
+| [`default`](./Characters_and_Bosses.md#context-default) | Block | Baseline configuration. | 4 |
+| [`hot`](./Characters_and_Bosses.md#context-hot) | Block | Visual effect indicator. | 4 |
+| [`AllAlive`](./Characters_and_Bosses.md#context-allalive) | Block | Encounter State: Logic executed when all specific entities are currently alive. | 3 |
+| [`Down`](./Characters_and_Bosses.md#context-down) | Block | Character Form: Behavior and stats for the \'Down\' state. | 3 |
+| [`Full`](./Characters_and_Bosses.md#context-full) | Block | Character Form: Behavior and stats for the \'Full\' state. | 3 |
+| [`OneAlive`](./Characters_and_Bosses.md#context-onealive) | Block | Encounter State: Logic executed when exactly one target is alive. | 3 |
+| [`TwoAlive`](./Characters_and_Bosses.md#context-twoalive) | Block | Encounter State: Logic executed when exactly two targets are alive. | 3 |
+| [`Up`](./Characters_and_Bosses.md#context-up) | Block | Character Form: Behavior and stats for the \'Up\' state. | 3 |
+| [`Big`](./Characters_and_Bosses.md#context-big) | Block | Character Form / AI State: Behavior and stats for the \'Big\' state. | 2 |
+| [`Boris`](./Characters_and_Bosses.md#context-boris) | Block | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 2 |
+| [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear) | Block | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 |
+| [`CaveMan`](./Characters_and_Bosses.md#context-caveman) | Block | Character Form: Behavior and stats for the \'CaveMan\' state. | 2 |
+| [`Empty`](./Characters_and_Bosses.md#context-empty) | Block | Character Form: Behavior and stats for the \'Empty\' state. | 2 |
+| [`Explosive`](./Characters_and_Bosses.md#context-explosive) | Block | Character Form: Behavior and stats for the \'Explosive\' state. | 2 |
+| [`Holding`](./Characters_and_Bosses.md#context-holding) | Block | Character Form: Behavior and stats for the \'Holding\' state. | 2 |
+| [`Holy`](./Characters_and_Bosses.md#context-holy) | Block | Character Form: Behavior and stats for the \'Holy\' state. | 2 |
+| [`NotPriming`](./Characters_and_Bosses.md#context-notpriming) | Block | Character Form: Behavior and stats when not charging an ability. | 2 |
+| [`Priming`](./Characters_and_Bosses.md#context-priming) | Block | Character Form: Behavior and stats when charging an ability. | 2 |
+| [`Rain`](./Characters_and_Bosses.md#context-rain) | Block | Character Form: Behavior and stats for the 'Rain' state. | 2 |
+| [`Small`](./Characters_and_Bosses.md#context-small) | Block | Character Form: Behavior and stats for the \'Small\' state. | 2 |
+| [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform) | Block | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 |
+| [`Turtled`](./Characters_and_Bosses.md#context-turtled) | Block | Character Form: Behavior and stats for the 'Turtled' state. | 2 |
+| [`active`](./Characters_and_Bosses.md#context-active) | Block | Defines actively executed abilities. | 2 |
+| [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
+| [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
+| [`passive`](./Characters_and_Bosses.md#context-passive) | Block | Intrinsic passive modifier. | 2 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 2 |
+| `partial_animation_suffix` | Number |  | 2 |
+| [`Alert`](./Characters_and_Bosses.md#context-alert) | Block | AI State: The behavior profile used when the character is alerted to enemies. | 1 |
+| [`Angry`](./Characters_and_Bosses.md#context-angry) | Block | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 1 |
+| [`Attacker`](./Characters_and_Bosses.md#context-attacker) | Block | AI Role: Designates the character as an attacker rather than support. | 1 |
+| [`BellyFull`](./Characters_and_Bosses.md#context-bellyfull) | Block | Character Form / AI State: Behavior and stats for the \'BellyFull\' state. | 1 |
+| [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat) | Block | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 |
+| [`BigHolding`](./Characters_and_Bosses.md#context-bigholding) | Block | Character Form / AI State: Behavior and stats for the \'BigHolding\' state. | 1 |
+| [`Bishop`](./Characters_and_Bosses.md#context-bishop) | Block | Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 1 |
+| [`BlackHole`](./Characters_and_Bosses.md#context-blackhole) | Block | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 |
+| [`Bomb`](./Characters_and_Bosses.md#context-bomb) | Block | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 |
+| [`Bully`](./Characters_and_Bosses.md#context-bully) | Block | Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 |
+| [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby) | Block | Character Form: Behavior and stats for the \'CaveBaby\' state. | 1 |
+| [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat) | Block | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |
+| [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman) | Block | Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 |
+| [`Charging`](./Characters_and_Bosses.md#context-charging) | Block | Character Form / AI State: Behavior when charging an attack. | 1 |
+| [`Close`](./Characters_and_Bosses.md#context-close) | Block | AI Movement logic: Maneuvers into close/melee range. | 1 |
+| [`Cultist`](./Characters_and_Bosses.md#context-cultist) | Block | Character Form: Behavior and stats for the \'Cultist\' state. | 1 |
+| [`Damaged`](./Characters_and_Bosses.md#context-damaged) | Block | Character Form / AI State: Behavior when health is critically low. | 1 |
+| [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling) | Block | Character Form: The baseline behavior state while attached to the ceiling. | 1 |
+| [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground) | Block | Character Form: The baseline behavior state while on the ground. | 1 |
+| [`DesireMech`](./Characters_and_Bosses.md#context-desiremech) | Block | Character Form: Behavior and stats for the 'DesireMech' state. | 1 |
+| [`Die`](./Characters_and_Bosses.md#context-die) | Block | Character Form / Logic: Forces the character to die. | 1 |
+| [`Drunker`](./Characters_and_Bosses.md#context-drunker) | Block | Character Form: Behavior and stats for the 'Drunker' state. | 1 |
+| [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed) | Block | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |
+| [`DualSword`](./Characters_and_Bosses.md#context-dualsword) | Block | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
+| [`Dumb`](./Characters_and_Bosses.md#context-dumb) | Block | AI Profile: A simplified, less optimal decision-making profile. | 1 |
+| [`Explody`](./Characters_and_Bosses.md#context-explody) | Block | Character Form: Behavior and stats for the 'Explody' state. | 1 |
+| [`FightPhase`](./Characters_and_Bosses.md#context-fightphase) | Block | Boss Logic: Main combat phase. | 1 |
+| [`FireFull`](./Characters_and_Bosses.md#context-firefull) | Block | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
+| [`Fire`](./Characters_and_Bosses.md#context-fire) | Block | Character Form: Behavior and stats for the 'Fire' state. | 1 |
+| [`Flop2`](./Characters_and_Bosses.md#context-flop2) | Block | Character Form: Behavior and stats for the \'Flop2\' state. | 1 |
+| [`Flop`](./Characters_and_Bosses.md#context-flop) | Block | Character Form: Behavior and stats for the \'Flop\' state. | 1 |
+| [`FlushBubs`](./Characters_and_Bosses.md#context-flushbubs) | Block | Character Form: Behavior and stats for the 'FlushBubs' state. | 1 |
+| [`FlushHost`](./Characters_and_Bosses.md#context-flushhost) | Block | Character Form: Behavior and stats for the 'FlushHost' state. | 1 |
+| [`FlushNettle`](./Characters_and_Bosses.md#context-flushnettle) | Block | Character Form: Behavior and stats for the 'FlushNettle' state. | 1 |
+| [`Flush`](./Characters_and_Bosses.md#context-flush) | Block | Character Form: Behavior and stats for the 'Flush' state. | 1 |
+| [`Grappling`](./Characters_and_Bosses.md#context-grappling) | Block | Character Form / AI State: Behavior while grappling an opponent. | 1 |
+| [`Grown`](./Characters_and_Bosses.md#context-grown) | Block | Character Form: Behavior and stats for the \'Grown\' state. | 1 |
+| [`GuaranteedJackpot`](./Characters_and_Bosses.md#context-guaranteedjackpot) | Block | Loot Logic: Guarantees a high-tier drop. | 1 |
+| [`Guarding`](./Characters_and_Bosses.md#context-guarding) | Block | Character Form / AI State: Defensive behavior state. | 1 |
+| [`HalfDead`](./Characters_and_Bosses.md#context-halfdead) | Block | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 |
+| [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat) | Block | Character Form: Behavior and stats for the \'HasDeadCat\' state. | 1 |
+| [`HasRock`](./Characters_and_Bosses.md#context-hasrock) | Block | Character Form: Behavior and stats for the \'HasRock\' state. | 1 |
+| [`Headless`](./Characters_and_Bosses.md#context-headless) | Block | Character Form: Behavior and stats for the \'Headless\' state. | 1 |
+| [`Hint_CrackedVisuals2`](./Characters_and_Bosses.md#context-hint_crackedvisuals2) | Block | Visual: Secondary cracked visual overlay. | 1 |
+| [`Hint_CrackedVisuals3`](./Characters_and_Bosses.md#context-hint_crackedvisuals3) | Block | Visual: Tertiary cracked visual overlay. | 1 |
+| [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#context-hint_crackedvisuals) | Block | Visual: Overlay effects for cracked/damaged terrain or objects. | 1 |
+| [`HumanDead`](./Characters_and_Bosses.md#context-humandead) | Block | Character Form: Behavior and stats for the \'HumanDead\' state. | 1 |
+| [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase) | Block | Boss Logic: The starting phase of an encounter. | 1 |
+| [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling) | Block | Character Form: Insane behavior state while attached to the ceiling. | 1 |
+| [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground) | Block | Character Form: Insane behavior state while on the ground. | 1 |
+| [`JohnnyBubs`](./Characters_and_Bosses.md#context-johnnybubs) | Block | Character Form: Behavior and stats for the 'JohnnyBubs' state. | 1 |
+| [`JohnnyHost`](./Characters_and_Bosses.md#context-johnnyhost) | Block | Character Form: Behavior and stats for the 'JohnnyHost' state. | 1 |
+| [`JohnnyNettle`](./Characters_and_Bosses.md#context-johnnynettle) | Block | Character Form: Behavior and stats for the 'JohnnyNettle' state. | 1 |
+| [`Johnny`](./Characters_and_Bosses.md#context-johnny) | Block | Character Form: Behavior and stats for the 'Johnny' state. | 1 |
+| [`Joystick`](./Characters_and_Bosses.md#context-joystick) | Block | Character Form: Behavior and stats for the \'Joystick\' state. | 1 |
+| [`LastHit`](./Characters_and_Bosses.md#context-lasthit) | Block | Logic: Executes logic on the final hit of a multi-hit attack. | 1 |
+| [`Lifted`](./Characters_and_Bosses.md#context-lifted) | Block | Character Form: Behavior and stats for the \'Lifted\' state. | 1 |
+| [`Lit`](./Characters_and_Bosses.md#context-lit) | Block | Character Form: Behavior and stats for the 'Lit' state. | 1 |
+| [`Mounted`](./Characters_and_Bosses.md#context-mounted) | Block | Character Form: Behavior and stats for the \'Mounted\' state. | 1 |
+| [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull) | Block | Character Form: Behavior and stats for the \'MouthFull\' state. | 1 |
+| [`Mutant`](./Characters_and_Bosses.md#context-mutant) | Block | Character Form: Behavior and stats for the \'Mutant\' state. | 1 |
+| [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar) | Block | Character Form: Behavior and stats for the 'NeutronStar' state. | 1 |
+| [`NoEyes`](./Characters_and_Bosses.md#context-noeyes) | Block | Character Form: Behavior and stats for the \'NoEyes\' state. | 1 |
+| [`NoStick`](./Characters_and_Bosses.md#context-nostick) | Block | Character Form: Behavior and stats for the 'NoStick' state. | 1 |
+| [`NormalFull`](./Characters_and_Bosses.md#context-normalfull) | Block | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
+| [`Nuke`](./Characters_and_Bosses.md#context-nuke) | Block | Character Form: Behavior and stats for the 'Nuke' state. | 1 |
+| [`Obey`](./Characters_and_Bosses.md#context-obey) | Block | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |
+| [`OffScreen`](./Characters_and_Bosses.md#context-offscreen) | Block | Character Form: Behavior and stats for the 'OffScreen' state. | 1 |
+| [`Off`](./Characters_and_Bosses.md#context-off) | Block | Character Form: Behavior and stats for the 'Off' state. | 1 |
+| [`OneEye`](./Characters_and_Bosses.md#context-oneeye) | Block | Character Form: Behavior and stats for the \'OneEye\' state. | 1 |
+| [`OpenCat`](./Characters_and_Bosses.md#context-opencat) | Block | Character Form: Behavior and stats for the 'OpenCat' state. | 1 |
+| [`Open`](./Characters_and_Bosses.md#context-open) | Block | Character Form: Behavior and stats for the 'Open' state. | 1 |
+| [`Out`](./Characters_and_Bosses.md#context-out) | Block | Character Form: Behavior and stats for the 'Out' state. | 1 |
+| [`Possessing`](./Characters_and_Bosses.md#context-possessing) | Block | Character Form: Behavior and stats for the \'Possessing\' state. | 1 |
+| [`Primed`](./Characters_and_Bosses.md#context-primed) | Block | Character Form: Behavior and stats for the 'Primed' state. | 1 |
+| [`Pulp2`](./Characters_and_Bosses.md#context-pulp2) | Block | Character Form: Behavior and stats for the 'Pulp2' state. | 1 |
+| [`Pulp3`](./Characters_and_Bosses.md#context-pulp3) | Block | Character Form: Behavior and stats for the 'Pulp3' state. | 1 |
+| [`Pulp4`](./Characters_and_Bosses.md#context-pulp4) | Block | Character Form: Behavior and stats for the 'Pulp4' state. | 1 |
+| [`Pulp5`](./Characters_and_Bosses.md#context-pulp5) | Block | Character Form: Behavior and stats for the 'Pulp5' state. | 1 |
+| [`Pulp6`](./Characters_and_Bosses.md#context-pulp6) | Block | Character Form: Behavior and stats for the 'Pulp6' state. | 1 |
+| [`Pulp7`](./Characters_and_Bosses.md#context-pulp7) | Block | Character Form: Behavior and stats for the 'Pulp7' state. | 1 |
+| [`Sitting`](./Characters_and_Bosses.md#context-sitting) | Block | Character Form: Behavior and stats for the 'Sitting' state. | 1 |
+| [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat) | Block | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
+| [`SmallHolding`](./Characters_and_Bosses.md#context-smallholding) | Block | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
+| [`SpawningPhase`](./Characters_and_Bosses.md#context-spawningphase) | Block | Boss Logic: Phase focused on summoning minions. | 1 |
+| [`Standing2`](./Characters_and_Bosses.md#context-standing2) | Block | Character Form: Behavior and stats for the 'Standing2' state. | 1 |
+| [`Standing`](./Characters_and_Bosses.md#context-standing) | Block | Character Form: Behavior and stats for the 'Standing' state. | 1 |
+| [`Start_Ceiling`](./Characters_and_Bosses.md#context-start_ceiling) | Block | Character Form: Behavior and stats for the 'Start_Ceiling' state. | 1 |
+| [`Stop`](./Characters_and_Bosses.md#context-stop) | Block | AI Movement: Forces the character to cease movement. | 1 |
+| [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed) | Block | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |
+| [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield) | Block | Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 |
+| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Block | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
+| [`Tar`](./Characters_and_Bosses.md#context-tar) | Block | Character Form: Behavior and stats for the 'Tar' state. | 1 |
+| [`ThrobBubs`](./Characters_and_Bosses.md#context-throbbubs) | Block | Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 |
+| [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost) | Block | Character Form: Behavior and stats for the 'ThrobHost' state. | 1 |
+| [`ThrobNettle`](./Characters_and_Bosses.md#context-throbnettle) | Block | Character Form: Behavior and stats for the 'ThrobNettle' state. | 1 |
+| [`Throb`](./Characters_and_Bosses.md#context-throb) | Block | Character Form: Behavior and stats for the 'Throb' state. | 1 |
+| [`Transformed`](./Characters_and_Bosses.md#context-transformed) | Block | Character Form: Behavior and stats for the 'Transformed' state. | 1 |
+| [`TwoEyes`](./Characters_and_Bosses.md#context-twoeyes) | Block | Character Form: Behavior and stats for the 'TwoEyes' state. | 1 |
+| [`Unlit`](./Characters_and_Bosses.md#context-unlit) | Block | Character Form: Behavior and stats for the 'Unlit' state. | 1 |
+| [`Unwashed`](./Characters_and_Bosses.md#context-unwashed) | Block | Character Form: Behavior and stats for the 'Unwashed' state. | 1 |
+| [`Washed`](./Characters_and_Bosses.md#context-washed) | Block | Character Form: Behavior and stats for the 'Washed' state. | 1 |
+| [`Washer`](./Characters_and_Bosses.md#context-washer) | Block | Character Form: Behavior and stats for the \'Washer\' state. | 1 |
+| [`Water`](./Characters_and_Bosses.md#context-water) | Block | Character Form: Behavior and stats for the \'Water\' state. | 1 |
+| [`WereMan`](./Characters_and_Bosses.md#context-wereman) | Block | Character Form: Behavior and stats for the \'WereMan\' state. | 1 |
+| [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb) | Block | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 |
+| [`Zealot`](./Characters_and_Bosses.md#context-zealot) | Block | Character Form: Behavior and stats for the \'Zealot\' state. | 1 |
+| `Butcher` | Block | Applies or references the 'Butcher' effect/state. | 1 |
+| `Colorless` | Block | Applies or references the 'Colorless' effect/state. | 1 |
+| `Druid` | Block | Applies or references the 'Druid' effect/state. | 1 |
+| `Fighter` | Block | Applies or references the 'Fighter' effect/state. | 1 |
+| `Hunter` | Block | Applies or references the 'Hunter' effect/state. | 1 |
+| `Mage` | Block | Applies or references the 'Mage' effect/state. | 1 |
+| `Medic` | Block | Applies or references the 'Medic' effect/state. | 1 |
+| `Monk` | Block | Applies or references the 'Monk' effect/state. | 1 |
+| `Necromancer` | Block | Applies or references the 'Necromancer' effect/state. | 1 |
+| `NoDeathRattle` | Block | Applies or references the 'NoDeathRattle' effect/state. | 1 |
+| `Psychic` | Block | Applies or references the 'Psychic' effect/state. | 1 |
+| `Tank` | Block | Applies or references the 'Tank' effect/state. | 1 |
+| `Thief` | Block | Applies or references the 'Thief' effect/state. | 1 |
+| `Tinkerer` | Block | Applies or references the 'Tinkerer' effect/state. | 1 |
+| `Unmounted` | Block | Applies or references the 'Unmounted' effect/state. | 1 |
+| `sync_brain_patterns` | Boolean |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -10465,9 +10465,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`le`](./Arrays.md#array-le) | Array | {'type': '`Array`', 'df': ''} | 6 |
-| [`ge`](./Arrays.md#array-ge) | Array | {'type': '`Array`', 'df': ''} | 2 |
-| [`lt`](./Arrays.md#array-lt) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`le`](./Arrays.md#array-le) | Array |  | 6 |
+| [`ge`](./Arrays.md#array-ge) | Array |  | 2 |
+| [`lt`](./Arrays.md#array-lt) | Array |  | 1 |
 
 </details>
 
@@ -10505,8 +10505,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 2 |
-| `wait_till_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 |
+| `wait_till_turn` | Boolean |  | 1 |
 
 </details>
 
@@ -10526,8 +10526,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`form_in`](./Enums.md#enum-form_in) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`form_out`](./Enums.md#enum-form_out) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`form_in`](./Enums.md#enum-form_in) | Enum |  | 1 |
+| [`form_out`](./Enums.md#enum-form_out) | Enum |  | 1 |
 
 </details>
 
@@ -10601,8 +10601,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum | {'type': '`Enum/String`', 'df': 'The original item ID.'} | 1 |
-| [`to`](./Enums.md#enum-to) | Enum | {'type': '`Enum/String`', 'df': 'The new item ID.'} | 1 |
+| [`from`](./Enums.md#enum-from) | Enum | The original item ID. | 1 |
+| [`to`](./Enums.md#enum-to) | Enum | The new item ID. | 1 |
 
 </details>
 
@@ -10622,11 +10622,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array | {'type': '`Array`', 'df': ''} | 8 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 8 |
-| [`initiative`](./Enums.md#enum-initiative) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`turns`](./Arrays.md#array-turns) | Array | {'type': '`Array`', 'df': 'Turn counter tracking.'} | 1 |
+| [`object`](./Arrays.md#array-object) | Array |  | 8 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 8 |
+| [`initiative`](./Enums.md#enum-initiative) | Enum |  | 4 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
+| [`turns`](./Arrays.md#array-turns) | Array | Turn counter tracking. | 1 |
 
 </details>
 
@@ -10646,9 +10646,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 5 |
-| `full_repair` | Boolean | {'type': '`Boolean`', 'df': ''} | 5 |
-| [`item`](./Enums.md#enum-item) | Enum | {'type': '`Enum/String`', 'df': 'Item ID to reference.'} | 5 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 5 |
+| [`item`](./Enums.md#enum-item) | Enum | Item ID to reference. | 5 |
+| `full_repair` | Boolean |  | 5 |
 
 </details>
 
@@ -10704,8 +10704,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`first_turn`](./Enums.md#enum-first_turn) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`obj`](./Enums.md#enum-obj) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
+| [`first_turn`](./Enums.md#enum-first_turn) | Enum |  | 4 |
+| [`obj`](./Enums.md#enum-obj) | Enum |  | 4 |
 
 </details>
 
@@ -10725,8 +10725,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 9 |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 9 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 9 |
 
 </details>
 
@@ -10746,8 +10746,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 2 |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 2 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 2 |
 
 </details>
 
@@ -10767,9 +10767,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
-| `threshold` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| `threshold` | Number |  | 1 |
 
 </details>
 
@@ -10789,8 +10789,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum | {'type': '`Enum/String`', 'df': 'The original weapon ID.'} | 1 |
-| [`to`](./Enums.md#enum-to) | Enum | {'type': '`Enum/String`', 'df': 'The transformed weapon ID.'} | 1 |
+| [`from`](./Enums.md#enum-from) | Enum | The original weapon ID. | 1 |
+| [`to`](./Enums.md#enum-to) | Enum | The transformed weapon ID. | 1 |
 
 </details>
 
@@ -10920,7 +10920,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellThisTurn` | Number | {'type': '`Number`', 'df': "Applies or references the 'DoubleCastSpellThisTurn' effect/state."} | 1 |
+| `DoubleCastSpellThisTurn` | Number | Applies or references the 'DoubleCastSpellThisTurn' effect/state. | 1 |
 
 </details>
 
@@ -10940,8 +10940,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`common`](./Enums.md#enum-common) | Enum | {'type': '`Enum/String`', 'df': ''} | 20 |
-| [`rare`](./Enums.md#enum-rare) | Enum | {'type': '`Enum/String`', 'df': ''} | 16 |
+| [`common`](./Enums.md#enum-common) | Enum |  | 20 |
+| [`rare`](./Enums.md#enum-rare) | Enum |  | 16 |
 
 </details>
 
@@ -10997,8 +10997,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`active_pieces`](./Arrays.md#array-active_pieces) | Array |  | 1 |
+| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array |  | 1 |
 
 </details>
 
@@ -11126,9 +11126,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`queue`](./Enums.md#enum-queue) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`release`](./Enums.md#enum-release) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`transform`](./Enums.md#enum-transform) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`queue`](./Enums.md#enum-queue) | Enum |  | 1 |
+| [`release`](./Enums.md#enum-release) | Enum |  | 1 |
+| [`transform`](./Enums.md#enum-transform) | Enum |  | 1 |
 
 </details>
 
@@ -11148,9 +11148,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'GlobalSpawnCharacter' effect/state."} | 1 |
-| `PlayBackground` | Number | {'type': '`Number`', 'df': "Applies or references the 'PlayBackground' effect/state."} | 1 |
-| [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic) | Block | {'type': '`Block`', 'df': 'Event Trigger: Changes background music track. | 1 |
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
+| [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic) | Block | Event Trigger: Changes background music track. | 1 |
+| `PlayBackground` | Number | Applies or references the 'PlayBackground' effect/state. | 1 |
 
 </details>
 
@@ -11170,10 +11170,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Characters_and_Bosses.md#context-forceuseability) | Block | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 2 |
-| `icon` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `icon_ready` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`ForceUseAbility`](./Characters_and_Bosses.md#context-forceuseability) | Block | Logic: Forces the execution of a specific ability. | 2 |
+| `icon_ready` | Number |  | 1 |
+| `icon` | Number |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -11193,10 +11193,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Characters_and_Bosses.md#context-forceuseability) | Block | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 2 |
-| `icon` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `icon_ready` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`ForceUseAbility`](./Characters_and_Bosses.md#context-forceuseability) | Block | Logic: Forces the execution of a specific ability. | 2 |
+| `icon_ready` | Number |  | 1 |
+| `icon` | Number |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -11216,9 +11216,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `icon` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `icon_ready` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `icon_ready` | Number |  | 1 |
+| `icon` | Number |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -11238,13 +11238,13 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| `radius` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 1 |
-| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array |  | 1 |
+| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Enum |  | 1 |
+| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Enum |  | 1 |
+| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Enum |  | 1 |
+| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Enum |  | 1 |
+| [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array |  | 1 |
+| `radius` | Number | Distance or area of effect in tiles. | 1 |
 
 </details>
 
@@ -11300,8 +11300,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`break_ability`](./Enums.md#enum-break_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`state_health`](./Arrays.md#array-state_health) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`break_ability`](./Enums.md#enum-break_ability) | Enum |  | 1 |
+| [`state_health`](./Arrays.md#array-state_health) | Array |  | 1 |
 
 </details>
 
@@ -11321,8 +11321,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`other_character`](./Enums.md#enum-other_character) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`other_form_change_abilities`](./Characters_and_Bosses.md#context-other_form_change_abilities) | Block | {'type': '`Block`', 'df': "Lists secondary abilities used to change forms. | 1 |
+| [`other_character`](./Enums.md#enum-other_character) | Enum |  | 1 |
+| [`other_form_change_abilities`](./Characters_and_Bosses.md#context-other_form_change_abilities) | Block | Lists secondary abilities used to change forms. | 1 |
 
 </details>
 
@@ -11342,9 +11342,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`self_damage`](./Abilities_and_Spells.md#context-self_damage) | Block | {'type': '`Block`', 'df': 'Recoil or self-inflicted damage/effects applied to the caster. | 2 |
-| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block | {'type': '`Block`', 'df': ' | 1 |
-| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | {'type': '`Block`', 'df': 'Secondary Area of Effect blast parameters. | 1 |
+| [`self_damage`](./Abilities_and_Spells.md#context-self_damage) | Block | Recoil or self-inflicted damage/effects applied to the caster. | 2 |
+| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block |  | 1 |
+| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | Secondary Area of Effect blast parameters. | 1 |
 
 </details>
 
@@ -11364,8 +11364,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'CompleteItemQuest' effect/state."} | 1 |
-| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'RemoveItem' effect/state."} | 1 |
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 1 |
+| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 1 |
 
 </details>
 
@@ -11459,8 +11459,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `include_spells` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `include_spells` | Boolean |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -11678,18 +11678,18 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`StacyMutant_Brace`](./Characters_and_Bosses.md#context-stacymutant_brace) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 |
-| [`StacyMutant_Counter`](./Characters_and_Bosses.md#context-stacymutant_counter) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Counter' state. | 1 |
-| [`StacyMutant_Damage`](./Characters_and_Bosses.md#context-stacymutant_damage) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Damage' state. | 1 |
-| [`StacyMutant_DoubleHead`](./Characters_and_Bosses.md#context-stacymutant_doublehead) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_DoubleHead' state. | 1 |
-| [`StacyMutant_Fire`](./Characters_and_Bosses.md#context-stacymutant_fire) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Fire' state. | 1 |
-| [`StacyMutant_Health`](./Characters_and_Bosses.md#context-stacymutant_health) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Health' state. | 1 |
-| [`StacyMutant_Holy`](./Characters_and_Bosses.md#context-stacymutant_holy) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Holy' state. | 1 |
-| [`StacyMutant_Ice`](./Characters_and_Bosses.md#context-stacymutant_ice) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Ice' state. | 1 |
-| [`StacyMutant_Lightning`](./Characters_and_Bosses.md#context-stacymutant_lightning) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Lightning' state. | 1 |
-| [`StacyMutant_Mirror`](./Characters_and_Bosses.md#context-stacymutant_mirror) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Mirror' state. | 1 |
-| [`StacyMutant_Speed`](./Characters_and_Bosses.md#context-stacymutant_speed) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Speed' state. | 1 |
-| [`StacyMutant_Thorns`](./Characters_and_Bosses.md#context-stacymutant_thorns) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Thorns' state. | 1 |
+| [`StacyMutant_Brace`](./Characters_and_Bosses.md#context-stacymutant_brace) | Block | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 |
+| [`StacyMutant_Counter`](./Characters_and_Bosses.md#context-stacymutant_counter) | Block | Character Form: Behavior and stats for the 'StacyMutant_Counter' state. | 1 |
+| [`StacyMutant_Damage`](./Characters_and_Bosses.md#context-stacymutant_damage) | Block | Character Form: Behavior and stats for the 'StacyMutant_Damage' state. | 1 |
+| [`StacyMutant_DoubleHead`](./Characters_and_Bosses.md#context-stacymutant_doublehead) | Block | Character Form: Behavior and stats for the 'StacyMutant_DoubleHead' state. | 1 |
+| [`StacyMutant_Fire`](./Characters_and_Bosses.md#context-stacymutant_fire) | Block | Character Form: Behavior and stats for the 'StacyMutant_Fire' state. | 1 |
+| [`StacyMutant_Health`](./Characters_and_Bosses.md#context-stacymutant_health) | Block | Character Form: Behavior and stats for the 'StacyMutant_Health' state. | 1 |
+| [`StacyMutant_Holy`](./Characters_and_Bosses.md#context-stacymutant_holy) | Block | Character Form: Behavior and stats for the 'StacyMutant_Holy' state. | 1 |
+| [`StacyMutant_Ice`](./Characters_and_Bosses.md#context-stacymutant_ice) | Block | Character Form: Behavior and stats for the 'StacyMutant_Ice' state. | 1 |
+| [`StacyMutant_Lightning`](./Characters_and_Bosses.md#context-stacymutant_lightning) | Block | Character Form: Behavior and stats for the 'StacyMutant_Lightning' state. | 1 |
+| [`StacyMutant_Mirror`](./Characters_and_Bosses.md#context-stacymutant_mirror) | Block | Character Form: Behavior and stats for the 'StacyMutant_Mirror' state. | 1 |
+| [`StacyMutant_Speed`](./Characters_and_Bosses.md#context-stacymutant_speed) | Block | Character Form: Behavior and stats for the 'StacyMutant_Speed' state. | 1 |
+| [`StacyMutant_Thorns`](./Characters_and_Bosses.md#context-stacymutant_thorns) | Block | Character Form: Behavior and stats for the 'StacyMutant_Thorns' state. | 1 |
 
 </details>
 
@@ -11727,7 +11727,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `enemies_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `enemies_only` | Boolean |  | 1 |
 
 </details>
 
@@ -11876,15 +11876,15 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Block | {'type': '`Block`', 'df': "Applies the nested status effects when the encounter finishes. | 3 |
-| [`AddTag`](./Enums.md#enum-addtag) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AddTag' effect/state."} | 2 |
-| `Flying` | Number | {'type': '`Number`', 'df': "Applies or references the 'Flying' effect/state."} | 2 |
-| `IgnoreTiles` | Number | {'type': '`Number`', 'df': "Applies or references the 'IgnoreTiles' effect/state."} | 2 |
-| [`YOffset`](./Enums.md#enum-yoffset) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'YOffset' effect/state."} | 2 |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ElementImmune' effect/state."} | 1 |
-| `KnockbackImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'KnockbackImmunity' effect/state."} | 1 |
-| `Plant` | Number | {'type': '`Number`', 'df': "Applies or references the 'Plant' effect/state."} | 1 |
-| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ReplaceBasicAttack' effect/state."} | 1 |
+| [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend) | Block | Applies the nested status effects when the encounter finishes. | 3 |
+| [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 |
+| [`YOffset`](./Enums.md#enum-yoffset) | Enum | Applies or references the 'YOffset' effect/state. | 2 |
+| `Flying` | Number | Applies or references the 'Flying' effect/state. | 2 |
+| `IgnoreTiles` | Number | Applies or references the 'IgnoreTiles' effect/state. | 2 |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 1 |
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 1 |
+| `KnockbackImmunity` | Number | Applies or references the 'KnockbackImmunity' effect/state. | 1 |
+| `Plant` | Number | Applies or references the 'Plant' effect/state. | 1 |
 
 </details>
 
@@ -11904,8 +11904,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `DeleteObject` | Number | {'type': '`Number`', 'df': "Applies or references the 'DeleteObject' effect/state."} | 3 |
-| `Die` | Number | {'type': '`Number`', 'df': "Applies or references the 'Die' effect/state."} | 1 |
+| `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 3 |
+| `Die` | Number | Applies or references the 'Die' effect/state. | 1 |
 
 </details>
 
@@ -11925,7 +11925,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Marked` | Number | {'type': '`Number`', 'df': "Applies or references the 'Marked' effect/state."} | 1 |
+| `Marked` | Number | Applies or references the 'Marked' effect/state. | 1 |
 
 </details>
 
@@ -11945,7 +11945,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ForceMoveTowards` | Number | {'type': '`Number`', 'df': "Applies or references the 'ForceMoveTowards' effect/state."} | 1 |
+| `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 1 |
 
 </details>
 
@@ -11965,7 +11965,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'GainDisorderFromPool_PostCast' effect/state."} | 2 |
+| [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 2 |
 
 </details>
 
@@ -11985,8 +11985,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | {'type': '`Enum/String`', 'df': 'Spawns a specific physics/item object upon impact.'} | 2 |
-| `SpawnBearTrap` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpawnBearTrap' effect/state."} | 2 |
+| [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | Spawns a specific physics/item object upon impact. | 2 |
+| `SpawnBearTrap` | Number | Applies or references the 'SpawnBearTrap' effect/state. | 2 |
 
 </details>
 
@@ -12006,11 +12006,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `enemies_only` | Boolean | {'type': '`Boolean`', 'df': 'If true, the arc will not bounce to friendly targets.'} | 4 |
-| `max_distance` | Number | {'type': '`Number`', 'df': 'The maximum tile range the lightning can jump between bounces.'} | 4 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The maximum number of targets the lightning can bounce to.'} | 4 |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
-| `ignore_self` | Boolean | {'type': '`Boolean`', 'df': 'If true, prevents the arc from bouncing back to the caster.'} | 1 |
+| `enemies_only` | Boolean | If true, the arc will not bounce to friendly targets. | 4 |
+| `max_distance` | Number | The maximum tile range the lightning can jump between bounces. | 4 |
+| `stacks` | Number | The maximum number of targets the lightning can bounce to. | 4 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `ignore_self` | Boolean | If true, prevents the arc from bouncing back to the caster. | 1 |
 
 </details>
 
@@ -12246,8 +12246,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to use when intercepting (e.g., BodyGuardSwap).'} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to use when intercepting (e.g., BodyGuardSwap). | 2 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -12429,11 +12429,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ally_damage`](./Enums.md#enum-ally_damage) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`ally_dead`](./Enums.md#enum-ally_dead) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`enemy_damage`](./Enums.md#enum-enemy_damage) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`enemy_dead`](./Enums.md#enum-enemy_dead) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`ally_damage`](./Enums.md#enum-ally_damage) | Enum |  | 1 |
+| [`ally_dead`](./Enums.md#enum-ally_dead) | Enum |  | 1 |
+| [`enemy_damage`](./Enums.md#enum-enemy_damage) | Enum |  | 1 |
+| [`enemy_dead`](./Enums.md#enum-enemy_dead) | Enum |  | 1 |
+| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum |  | 1 |
 
 </details>
 
@@ -12453,10 +12453,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 2 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `health_threshold` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 2 |
+| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum |  | 2 |
+| `even_if_stunned` | Boolean |  | 2 |
+| `health_threshold` | Number |  | 2 |
 
 </details>
 
@@ -12494,13 +12494,13 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | {'type': '`Enum/String`', 'df': 'Spawns a specific character or entity upon impact.'} | 10 |
-| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'BreakIntoRocks' effect/state."} | 4 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | {'type': '`Block`', 'df': 'Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
-| `Vaporize` | Number | {'type': '`Number`', 'df': "Applies or references the 'Vaporize' effect/state."} | 3 |
-| `GetAggroTarget` | Number | {'type': '`Number`', 'df': "Applies or references the 'GetAggroTarget' effect/state."} | 2 |
-| `PreventDeathTransforms` | Number | {'type': '`Number`', 'df': "Applies or references the 'PreventDeathTransforms' effect/state."} | 1 |
-| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | {'type': '`Block`', 'df': 'A wrapper block for applying status effects that automatically expire. | 1 |
+| [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 10 |
+| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 4 |
+| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
+| `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 3 |
+| `GetAggroTarget` | Number | Applies or references the 'GetAggroTarget' effect/state. | 2 |
+| [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
+| `PreventDeathTransforms` | Number | Applies or references the 'PreventDeathTransforms' effect/state. | 1 |
 
 </details>
 
@@ -12610,9 +12610,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 6 |
-| `count` | Number | {'type': '`Number`', 'df': 'The numerical quantity.'} | 6 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 6 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 6 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 6 |
+| `count` | Number | The numerical quantity. | 6 |
 
 </details>
 
@@ -12650,8 +12650,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`alert_form`](./Enums.md#enum-alert_form) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`default_form`](./Enums.md#enum-default_form) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`alert_form`](./Enums.md#enum-alert_form) | Enum |  | 1 |
+| [`default_form`](./Enums.md#enum-default_form) | Enum |  | 1 |
 
 </details>
 
@@ -12689,9 +12689,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ability triggered upon successfully breaking free.'} | 11 |
-| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | {'type': '`Enum/String`', 'df': 'The ability triggered if the break free attempt fails.'} | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Percentage base chance to break free.'} | 3 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ability triggered upon successfully breaking free. | 11 |
+| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | The ability triggered if the break free attempt fails. | 3 |
+| `stacks` | Number | Percentage base chance to break free. | 3 |
 
 </details>
 
@@ -12819,9 +12819,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`color`](./Arrays.md#array-color) | Array | {'type': '`Array`', 'df': ''} | 16 |
-| `size` | Number | {'type': '`Number`', 'df': ''} | 16 |
-| [`glow`](./Arrays.md#array-glow) | Array | {'type': '`Array`', 'df': ''} | 8 |
+| [`color`](./Arrays.md#array-color) | Array |  | 16 |
+| `size` | Number |  | 16 |
+| [`glow`](./Arrays.md#array-glow) | Array |  | 8 |
 
 </details>
 
@@ -12985,18 +12985,18 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | {'type': '`Enum/String`', 'df': 'Ability triggered by the consumed entity while inside the consumer.'} | 13 |
-| `force_contact` | Boolean | {'type': '`Boolean`', 'df': 'If true, enforces physical overlap.'} | 11 |
-| `instant` | Boolean | {'type': '`Boolean`', 'df': ''} | 8 |
-| `mount_mode` | Mixed | {'type': '`Enum/String`', 'df': 'If true, treats the consumption as riding/mounting instead of eating.'} | 8 |
-| `wet` | Boolean | {'type': '`Boolean`', 'df': ''} | 8 |
-| `do_not_pop_corpse` | Boolean | {'type': '`Boolean`', 'df': ''} | 7 |
-| `drop_on_death` | Mixed | {'type': '`Enum/String`', 'df': ''} | 7 |
-| `drop_on_self_death` | Boolean | {'type': '`Boolean`', 'df': ''} | 3 |
-| [`extra_statuses`](./Abilities_and_Spells.md#context-extra_statuses) | Block | {'type': '`Block`', 'df': "Additional generic status applications. | 3 |
-| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `kill_on_consume` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `use_placeholder` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 13 |
+| `force_contact` | Boolean | If true, enforces physical overlap. | 11 |
+| `instant` | Boolean |  | 8 |
+| `mount_mode` | Mixed | If true, treats the consumption as riding/mounting instead of eating. | 8 |
+| `wet` | Boolean |  | 8 |
+| `do_not_pop_corpse` | Boolean |  | 7 |
+| `drop_on_death` | Mixed |  | 7 |
+| [`extra_statuses`](./Abilities_and_Spells.md#context-extra_statuses) | Block | Additional generic status applications. | 3 |
+| `drop_on_self_death` | Boolean |  | 3 |
+| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum |  | 1 |
+| `kill_on_consume` | Boolean |  | 1 |
+| `use_placeholder` | Boolean |  | 1 |
 
 </details>
 
@@ -13070,8 +13070,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
+| `upgraded` | Boolean |  | 1 |
 
 </details>
 
@@ -13127,8 +13127,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `BloodRain` | Number | {'type': '`Number`', 'df': "Applies or references the 'BloodRain' effect/state."} | 2 |
-| [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight) | Block | {'type': '`Block`', 'df': "A visual effect that dims the map's lighting. | 2 |
+| [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight) | Block | A visual effect that dims the map's lighting. | 2 |
+| `BloodRain` | Number | Applies or references the 'BloodRain' effect/state. | 2 |
 
 </details>
 
@@ -13259,9 +13259,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to cast later.'} | 1 |
-| `lingering` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `relative` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to cast later. | 1 |
+| `lingering` | Boolean |  | 1 |
+| `relative` | Boolean |  | 1 |
 
 </details>
 
@@ -13407,8 +13407,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | {'type': '`Enum/String`', 'df': 'The item pool to draw the parasite from.'} | 5 |
-| `chance` | Mixed | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 3 |
+| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 5 |
+| `chance` | Mixed | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
 
 </details>
 
@@ -13500,8 +13500,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `dice_size` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `knockback_damage` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `dice_size` | Number |  | 1 |
+| `knockback_damage` | Number |  | 1 |
 
 </details>
 
@@ -13539,8 +13539,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Block | {'type': '`Block`', 'df': "Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear. | 1 |
+| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | Block listing intrinsic passive modifiers. | 1 |
 
 </details>
 
@@ -13596,8 +13596,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 1 |
-| `instant` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
+| `instant` | Boolean |  | 1 |
 
 </details>
 
@@ -13617,7 +13617,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `deferred` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `deferred` | Boolean |  | 1 |
 
 </details>
 
@@ -13799,8 +13799,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `intensity` | Number | {'type': '`Number`', 'df': ''} | 10 |
-| `time` | Mixed | {'type': '`Number`', 'df': ''} | 10 |
+| `intensity` | Number |  | 10 |
+| `time` | Mixed |  | 10 |
 
 </details>
 
@@ -13946,8 +13946,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`punch_self_ability`](./Enums.md#enum-punch_self_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum |  | 1 |
+| [`punch_self_ability`](./Enums.md#enum-punch_self_ability) | Enum |  | 1 |
 
 </details>
 
@@ -14129,8 +14129,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 13 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': ''} | 13 |
+| [`pool`](./Enums.md#enum-pool) | Enum |  | 13 |
+| `upgraded` | Boolean |  | 13 |
 
 </details>
 
@@ -14636,8 +14636,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability (0.0 to 1.0) of executing this action.'} | 1 |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0) of executing this action. | 1 |
+| [`pool`](./Enums.md#enum-pool) | Enum |  | 1 |
 
 </details>
 
@@ -14855,8 +14855,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit_animations`](./Characters_and_Bosses.md#context-exit_animations) | Block | {'type': '`Block`', 'df': 'Animations played when leaving a form/state. | 1 |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`exit_animations`](./Characters_and_Bosses.md#context-exit_animations) | Block | Animations played when leaving a form/state. | 1 |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
 
 </details>
 
@@ -15038,9 +15038,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 1 |
-| `threshold` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
+| `threshold` | Number |  | 1 |
 
 </details>
 
@@ -15114,8 +15114,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'ID of the ability to trigger or reference.'} | 1 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
+| `even_if_stunned` | Boolean |  | 1 |
 
 </details>
 
@@ -15279,8 +15279,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`form_washed`](./Enums.md#enum-form_washed) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum |  | 1 |
+| [`form_washed`](./Enums.md#enum-form_washed) | Enum |  | 1 |
 
 </details>
 
@@ -15372,8 +15372,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum |  | 2 |
+| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array |  | 1 |
 
 </details>
 
@@ -15447,7 +15447,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID to spawn.'} | 4 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn. | 4 |
 
 </details>
 
@@ -15503,8 +15503,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`amount`](./Arrays.md#array-amount) | Array | {'type': '`Array`', 'df': 'The target opacity/dimness level.'} | 2 |
-| `speed` | Number | {'type': '`Number`', 'df': 'The transition speed.'} | 2 |
+| [`amount`](./Arrays.md#array-amount) | Array | The target opacity/dimness level. | 2 |
+| `speed` | Number | The transition speed. | 2 |
 
 </details>
 
@@ -15650,9 +15650,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Stun` | Number | {'type': '`Number`', 'df': "Applies or references the 'Stun' effect/state."} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
-| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | {'type': '`Block`', 'df': 'Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
+| `Stun` | Number | Applies or references the 'Stun' effect/state. | 2 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 2 |
+| [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
 
 </details>
 
@@ -15726,8 +15726,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -15783,8 +15783,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`cost`](./Items_and_Equipment.md#context-cost) | Block | {'type': '`Block`', 'df': 'Currency value in shops/merchants. | 2 |
-| [`meta`](./Items_and_Equipment.md#context-meta) | Block | {'type': '`Block`', 'df': ' | 2 |
+| [`cost`](./Items_and_Equipment.md#context-cost) | Block | Currency value in shops/merchants. | 2 |
+| [`meta`](./Items_and_Equipment.md#context-meta) | Block |  | 2 |
 
 </details>
 
@@ -15840,8 +15840,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`eat_damage`](./Characters_and_Bosses.md#context-eat_damage) | Block | {'type': '`Block`', 'df': 'Damage dealt when this entity consumes another. | 1 |
-| [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`eat_damage`](./Characters_and_Bosses.md#context-eat_damage) | Block | Damage dealt when this entity consumes another. | 1 |
+| [`tumor_object`](./Enums.md#enum-tumor_object) | Enum |  | 1 |
 
 </details>
 
@@ -15861,12 +15861,12 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Cat`](./Characters_and_Bosses.md#context-cat) | Block | {'type': '`Block`', 'df': 'Character Form: Base form for standard cats. | 1 |
-| [`NonCat`](./Characters_and_Bosses.md#context-noncat) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'NonCat' state. | 1 |
-| [`considered_forms`](./Arrays.md#array-considered_forms) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`grow_ability`](./Enums.md#enum-grow_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`pass_ani`](./Enums.md#enum-pass_ani) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`Cat`](./Characters_and_Bosses.md#context-cat) | Block | Character Form: Base form for standard cats. | 1 |
+| [`NonCat`](./Characters_and_Bosses.md#context-noncat) | Block | Character Form: Behavior and stats for the 'NonCat' state. | 1 |
+| [`considered_forms`](./Arrays.md#array-considered_forms) | Array |  | 1 |
+| [`grow_ability`](./Enums.md#enum-grow_ability) | Enum |  | 1 |
+| [`pass_ani`](./Enums.md#enum-pass_ani) | Enum |  | 1 |
+| [`receive_ani`](./Enums.md#enum-receive_ani) | Enum |  | 1 |
 
 </details>
 
@@ -15886,8 +15886,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`eject_ability`](./Enums.md#enum-eject_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`enter_ability`](./Enums.md#enum-enter_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`eject_ability`](./Enums.md#enum-eject_ability) | Enum |  | 1 |
+| [`enter_ability`](./Enums.md#enum-enter_ability) | Enum |  | 1 |
 
 </details>
 
@@ -15997,8 +15997,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 1 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -16072,8 +16072,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Items_and_Equipment.md#context-passives) | Block | {'type': '`Block`', 'df': 'Passives granted by equipping this. | 7 |
-| [`value`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 7 |
+| [`passives`](./Items_and_Equipment.md#context-passives) | Block | Passives granted by equipping this. | 7 |
+| [`value`](./Math_Equations.md) | Equation |  | 7 |
 
 </details>
 
@@ -16093,7 +16093,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Brace` | Number | {'type': '`Number`', 'df': "Applies or references the 'Brace' effect/state."} | 2 |
+| `Brace` | Number | Applies or references the 'Brace' effect/state. | 2 |
 
 </details>
 
@@ -16113,7 +16113,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`MovementReaction`](./Items_and_Equipment.md#context-movementreaction) | Block | {'type': '`Block`', 'df': "Applies or references the 'MovementReaction' effect/state. | 1 |
+| [`MovementReaction`](./Items_and_Equipment.md#context-movementreaction) | Block | Applies or references the 'MovementReaction' effect/state. | 1 |
 
 </details>
 
@@ -16133,7 +16133,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Block | {'type': '`Block`', 'df': "Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
+| [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#context-addstatustobasicattack) | Block | Injects a status effect payload that applies whenever the character performs a basic attack. | 1 |
 
 </details>
 
@@ -16297,7 +16297,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | {'type': '`Array`', 'df': 'An array of ability IDs to randomly choose from.'} | 1 |
+| [`pool`](./Arrays.md#array-pool) | Array | An array of ability IDs to randomly choose from. | 1 |
 
 </details>
 
@@ -16497,8 +16497,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability of triggering the quake.'} | 2 |
-| `radius` | Number | {'type': '`Number`', 'df': 'The tile radius of the quake.'} | 2 |
+| `chance` | Number | Probability of triggering the quake. | 2 |
+| `radius` | Number | The tile radius of the quake. | 2 |
 
 </details>
 
@@ -16644,7 +16644,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `self_damage` | Number | {'type': '`Number`', 'df': 'Recoil or self-inflicted damage/effects applied to the caster.'} | 7 |
+| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 7 |
 
 </details>
 
@@ -16664,8 +16664,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 2 |
-| [`text`](./Strings.md#string-text) | String | {'type': '`String`', 'df': ''} | 2 |
+| [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 2 |
+| [`text`](./Strings.md#string-text) | String |  | 2 |
 
 </details>
 
@@ -16901,8 +16901,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The new ability ID to insert.'} | 4 |
-| `slot` | Number | {'type': '`Number`', 'df': 'The spell slot index to replace.'} | 4 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The new ability ID to insert. | 4 |
+| `slot` | Number | The spell slot index to replace. | 4 |
 
 </details>
 
@@ -16958,11 +16958,11 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `revive_health` | Number | {'type': '`Number`', 'df': 'The flat amount of health to revive with.'} | 3 |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 2 |
-| `Shield` | Number | {'type': '`Number`', 'df': "Applies or references the 'Shield' effect/state."} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
-| `DivineShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'DivineShield' effect/state."} | 1 |
+| `revive_health` | Number | The flat amount of health to revive with. | 3 |
+| `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
+| `Shield` | Number | Applies or references the 'Shield' effect/state. | 2 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 2 |
+| `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 
 </details>
 
@@ -17054,8 +17054,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`default`](./Enums.md#enum-default) | Enum | {'type': '`Enum/String`', 'df': 'Baseline configuration.'} | 1 |
-| [`thresholds`](./Arrays.md#array-thresholds) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`default`](./Enums.md#enum-default) | Enum | Baseline configuration. | 1 |
+| [`thresholds`](./Arrays.md#array-thresholds) | Array |  | 1 |
 
 </details>
 
@@ -17111,7 +17111,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `permanent` | Boolean | {'type': '`Boolean`', 'df': 'If true, the scramble persists for the rest of the run.'} | 1 |
+| `permanent` | Boolean | If true, the scramble persists for the rest of the run. | 1 |
 
 </details>
 
@@ -17203,8 +17203,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`dead`](./Enums.md#enum-dead) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`dying`](./Enums.md#enum-dying) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`dead`](./Enums.md#enum-dead) | Enum |  | 1 |
+| [`dying`](./Enums.md#enum-dying) | Enum |  | 1 |
 
 </details>
 
@@ -17224,7 +17224,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`weights`](./Arrays.md#array-weights) | Array | {'type': '`Array`', 'df': ''} | 3 |
+| [`weights`](./Arrays.md#array-weights) | Array |  | 3 |
 
 </details>
 
@@ -17262,8 +17262,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`slot`](./Enums.md#enum-slot) | Enum | {'type': '`Enum/String`', 'df': 'Equipment slot (weapon, hat, face, chest, etc.).'} | 3 |
-| [`value`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 3 |
+| [`slot`](./Enums.md#enum-slot) | Enum | Equipment slot (weapon, hat, face, chest, etc.). | 3 |
+| [`value`](./Math_Equations.md) | Equation |  | 3 |
 
 </details>
 
@@ -17391,8 +17391,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `pop_chance` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `pop_chance` | Number |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -17412,10 +17412,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `SlotResult_Jackpot_Coins` | Number | {'type': '`Number`', 'df': "Applies or references the 'SlotResult_Jackpot_Coins' effect/state."} | 2 |
-| `SlotResult_Explode` | Number | {'type': '`Number`', 'df': "Applies or references the 'SlotResult_Explode' effect/state."} | 1 |
-| `SlotResult_Nothing` | Number | {'type': '`Number`', 'df': "Applies or references the 'SlotResult_Nothing' effect/state."} | 1 |
-| `SlotResult_RandomPickup` | Number | {'type': '`Number`', 'df': "Applies or references the 'SlotResult_RandomPickup' effect/state."} | 1 |
+| `SlotResult_Jackpot_Coins` | Number | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 2 |
+| `SlotResult_Explode` | Number | Applies or references the 'SlotResult_Explode' effect/state. | 1 |
+| `SlotResult_Nothing` | Number | Applies or references the 'SlotResult_Nothing' effect/state. | 1 |
+| `SlotResult_RandomPickup` | Number | Applies or references the 'SlotResult_RandomPickup' effect/state. | 1 |
 
 </details>
 
@@ -17453,8 +17453,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
+| `upgraded` | Boolean |  | 1 |
 
 </details>
 
@@ -17495,8 +17495,8 @@
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Snow` | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | Examples: `amb_snow.ogg` | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array | Examples: `[ Snow ]` | 1 |
-| `prewarm` | Number | Examples: `20` | 1 |
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_snow` | 1 |
+| `prewarm` | Number | Examples: `20` | 1 |
 
 </details>
 
@@ -17516,9 +17516,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | Examples: `5` | 1 |
 | [`effects`](./Miscellaneous.md#context-effects) | Block | Examples: `{ ... }` | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ]` | 1 |
+| `damage` | Number | Examples: `5` | 1 |
 
 </details>
 
@@ -17594,12 +17594,12 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Fire` | Number | {'type': '`Number`', 'df': "Character Form: Behavior and stats for the 'Fire' state."} | 1 |
-| `FireFull` | Number | {'type': '`Number`', 'df': "Character Form: Behavior and stats for the 'FireFull' state."} | 1 |
-| `Normal` | Number | {'type': '`Number`', 'df': "Character Form: Behavior and stats for the 'Normal' state."} | 1 |
-| `NormalFull` | Number | {'type': '`Number`', 'df': "Character Form: Behavior and stats for the 'NormalFull' state."} | 1 |
-| `Tar` | Number | {'type': '`Number`', 'df': "Character Form: Behavior and stats for the 'Tar' state."} | 1 |
-| `TarFull` | Number | {'type': '`Number`', 'df': "Character Form: Behavior and stats for the 'TarFull' state."} | 1 |
+| `FireFull` | Number | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
+| `Fire` | Number | Character Form: Behavior and stats for the 'Fire' state. | 1 |
+| `NormalFull` | Number | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
+| `Normal` | Number | Character Form: Behavior and stats for the 'Normal' state. | 1 |
+| `TarFull` | Number | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
+| `Tar` | Number | Character Form: Behavior and stats for the 'Tar' state. | 1 |
 
 </details>
 
@@ -17673,8 +17673,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`stack_key`](./Enums.md#enum-stack_key) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 3 |
+| [`stack_key`](./Enums.md#enum-stack_key) | Enum |  | 3 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 3 |
 
 </details>
 
@@ -17820,7 +17820,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | {'type': '`Array`', 'df': 'An array of weapon item IDs to draw from.'} | 1 |
+| [`pool`](./Arrays.md#array-pool) | Array | An array of weapon item IDs to draw from. | 1 |
 
 </details>
 
@@ -17840,9 +17840,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`new_layer`](./Enums.md#enum-new_layer) | Enum | {'type': '`Enum/String`', 'df': 'The specific audio layer to transition to (e.g., map, battle).'} | 6 |
-| [`new_song`](./Enums.md#enum-new_song) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the new music track.'} | 5 |
-| `crossfade_speed` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`new_layer`](./Enums.md#enum-new_layer) | Enum | The specific audio layer to transition to (e.g., map, battle). | 6 |
+| [`new_song`](./Enums.md#enum-new_song) | Enum | The ID of the new music track. | 5 |
+| `crossfade_speed` | Number |  | 1 |
 
 </details>
 
@@ -17934,12 +17934,12 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Die` | Number | {'type': '`Number`', 'df': 'Character Form / Logic: Forces the character to die.'} | 1 |
-| `Dumb` | Number | {'type': '`Number`', 'df': 'AI Profile: A simplified, less optimal decision-making profile.'} | 1 |
-| `Fuck` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fuck' effect/state."} | 1 |
-| `Obey` | Number | {'type': '`Number`', 'df': 'AI State: Enforced compliance logic (e.g., when Charmed).'} | 1 |
-| `Shit` | Number | {'type': '`Number`', 'df': "Applies or references the 'Shit' effect/state."} | 1 |
-| `Stop` | Number | {'type': '`Number`', 'df': 'AI Movement: Forces the character to cease movement.'} | 1 |
+| `Die` | Number | Character Form / Logic: Forces the character to die. | 1 |
+| `Dumb` | Number | AI Profile: A simplified, less optimal decision-making profile. | 1 |
+| `Fuck` | Number | Applies or references the 'Fuck' effect/state. | 1 |
+| `Obey` | Number | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |
+| `Shit` | Number | Applies or references the 'Shit' effect/state. | 1 |
+| `Stop` | Number | AI Movement: Forces the character to cease movement. | 1 |
 
 </details>
 
@@ -18031,8 +18031,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`alt_art`](./Enums.md#enum-alt_art) | Enum | {'type': '`Enum/String`', 'df': 'The alternative sprite art to use while tangled.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`alt_art`](./Enums.md#enum-alt_art) | Enum | The alternative sprite art to use while tangled. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -18086,9 +18086,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The underlying logic ability executed by the team.'} | 2 |
-| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | {'type': '`Enum/String`', 'df': 'Requires participants to share this tag.'} | 2 |
-| `same_orientation` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The underlying logic ability executed by the team. | 2 |
+| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | Requires participants to share this tag. | 2 |
+| `same_orientation` | Boolean |  | 1 |
 
 </details>
 
@@ -18198,7 +18198,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage) | Block | {'type': '`Block`', 'df': 'Reaction: Deals damage or status effects to an attacker upon receiving melee damage. | 2 |
+| [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage) | Block | Reaction: Deals damage or status effects to an attacker upon receiving melee damage. | 2 |
 
 </details>
 
@@ -18236,8 +18236,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`groups`](./Arrays.md#array-groups) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
+| [`groups`](./Arrays.md#array-groups) | Array |  | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 
 </details>
 
@@ -18296,9 +18296,9 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`add`](./Arrays.md#array-add) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`mul`](./Arrays.md#array-mul) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`add`](./Arrays.md#array-add) | Array |  | 1 |
+| [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum |  | 1 |
+| [`mul`](./Arrays.md#array-mul) | Array |  | 1 |
 
 </details>
 
@@ -18426,10 +18426,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 4 |
-| `cancel_movement` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `pathfinding_avoidance` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `range` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 4 |
+| `cancel_movement` | Boolean |  | 2 |
+| `pathfinding_avoidance` | Number |  | 2 |
+| `range` | Number | Distance or area of effect in tiles. | 2 |
 
 </details>
 
@@ -18467,7 +18467,7 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `crit_chance` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `crit_chance` | Number |  | 1 |
 
 </details>
 
@@ -18593,8 +18593,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger.'} | 1 |
-| `respect_prime` | Boolean | {'type': '`Boolean`', 'df': "If true, respects the ability's prime/cooldown state."} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger. | 1 |
+| `respect_prime` | Boolean | If true, respects the ability's prime/cooldown state. | 1 |
 
 </details>
 
@@ -18776,10 +18776,10 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cWaggle` | Flag |  | 1 |
 | `cWaggle2x2` | Flag |  | 1 |
 | `cWaggle3x3` | Flag |  | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `cWaggle` | Flag |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -18874,8 +18874,8 @@
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Windy` | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | Examples: `amb_windy.ogg` | 1 |
 | [`particles`](./Arrays.md#array-particles) | Array | Examples: `[ WindFull ]` | 1 |
-| `prewarm` | Number | Examples: `5` | 1 |
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_windy` | 1 |
+| `prewarm` | Number | Examples: `5` | 1 |
 
 </details>
 
@@ -19021,8 +19021,8 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `reset_percent` | Number | {'type': '`Number`', 'df': 'The percentage of stacks to keep after resetting.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `reset_percent` | Number | The percentage of stacks to keep after resetting. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 

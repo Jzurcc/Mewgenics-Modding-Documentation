@@ -13,6 +13,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`graphics`](#graphics) | Block |  | 2609 |
 | [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 1559 |
 | `name` | String | Localization key for the character's name. | 517 |
 | [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. | 488 |
@@ -29,8 +30,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `none` | Variable |  | 116 |
 | `delay` | Float | Frame delay before firing projectile/effect. | 93 |
 | `dont_visualize_ai` | Boolean |  | 86 |
-| `dont_orient` | Boolean | Prevents the character from turning to face the target. | 83 |
 | [`water_mask`](./Enums.md#enum-water_mask) | Enum |  | 83 |
+| `dont_orient` | Boolean | Prevents the character from turning to face the target. | 83 |
 | [`dash_animation`](./Enums.md#enum-dash_animation) | Enum | State-specific animations for trample/dash abilities. | 65 |
 | [`dash_start_animation`](./Enums.md#enum-dash_start_animation) | Enum |  | 63 |
 | `speed` | Float | Rotations per second. | 61 |
@@ -42,7 +43,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `dash` | Variable |  | 40 |
 | `dashstart` | Variable |  | 40 |
 | [`jump_attack_animation`](./Enums.md#enum-jump_attack_animation) | Enum | Overrides for jump physics. | 39 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 38 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 38 |
 | `spawnin_animation` | String |  | 37 |
 | `shoot` | Variable |  | 35 |
 | `use_projectile` | Boolean |  | 35 |
@@ -72,41 +73,41 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `weaponthrowstraight` | Variable |  | 18 |
 | [`center_particle`](./Enums.md#enum-center_particle) | Enum | Specific spawn points for particles. | 17 |
 | `no_splatter` | Boolean |  | 17 |
-| `PoisonPoof` | Variable |  | 16 |
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum | Specific spawn points for particles. | 16 |
+| `PoisonPoof` | Variable |  | 16 |
 | `fall_from_sky` | Boolean | Spawns the projectile from the top of the screen. | 16 |
 | `move_speed_multiplier` | Float |  | 16 |
 | `pointout` | Variable |  | 16 |
 | `throw` | Variable |  | 16 |
-| `dont_sink` | Boolean |  | 14 |
 | [`move_start_animation`](./Enums.md#enum-move_start_animation) | Enum |  | 14 |
+| `dont_sink` | Boolean |  | 14 |
 | `throwArrow` | Variable |  | 14 |
 | `use_placeholder` | Variable |  | 14 |
-| `fx_windSpell` | Variable |  | 13 |
 | [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum |  | 13 |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 13 |
+| `fx_windSpell` | Variable |  | 13 |
 | `Wave` | Variable |  | 12 |
 | `face_toss_target` | Boolean |  | 12 |
 | `ignore_slowtiles` | Boolean |  | 12 |
 | `sing3` | Variable |  | 12 |
-| `chain_distance` | Float | Creates a tethered repeating graphic (like a hook). | 11 |
 | [`chain_movieclip`](./Enums.md#enum-chain_movieclip) | Enum | Creates a tethered repeating graphic (like a hook). | 11 |
+| `chain_distance` | Float | Creates a tethered repeating graphic (like a hook). | 11 |
 | `darken_screen` | Boolean | Dims the background during the ability cast. | 11 |
 | `weaponspell3` | Variable |  | 11 |
-| `IcePoof` | Variable |  | 10 |
-| `MagicMissileProjectile` | Variable |  | 10 |
 | [`beam_cap`](./Enums.md#enum-beam_cap) | Enum | Flash movieclips used to render continuous laser beams. | 10 |
 | [`beam_clip`](./Enums.md#enum-beam_clip) | Enum | Flash movieclips used to render continuous laser beams. | 10 |
-| `big` | Variable |  | 10 |
-| `bounce_on_hit` | Boolean | Visual hop when striking a target. | 10 |
-| `darken_screen_exclude_characters_on_tile` | Boolean |  | 10 |
 | [`end`](./Enums.md#enum-end) | Enum | Segments for continuous channeled animations. | 10 |
-| `howl` | Variable |  | 10 |
 | [`jump_start_animation`](./Enums.md#enum-jump_start_animation) | Enum |  | 10 |
 | [`loop`](./Enums.md#enum-loop) | Enum | Segments for continuous channeled animations. | 10 |
 | [`prime_animation`](./Enums.md#enum-prime_animation) | Enum |  | 10 |
-| `source_weapon` | Variable |  | 10 |
 | [`start`](./Enums.md#enum-start) | Enum | Segments for continuous channeled animations. | 10 |
+| `IcePoof` | Variable |  | 10 |
+| `MagicMissileProjectile` | Variable |  | 10 |
+| `big` | Variable |  | 10 |
+| `bounce_on_hit` | Boolean | Visual hop when striking a target. | 10 |
+| `darken_screen_exclude_characters_on_tile` | Boolean |  | 10 |
+| `howl` | Variable |  | 10 |
+| `source_weapon` | Variable |  | 10 |
 | `BigMagicMissileBlast` | Variable |  | 9 |
 | `FireBlastMushroom` | Variable |  | 9 |
 | `Holybeam` | Variable |  | 9 |
@@ -115,23 +116,23 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `fx_statup` | Variable |  | 9 |
 | `max_tiles_single_loop` | Integer |  | 9 |
 | `sync_speed` | Integer |  | 9 |
+| [`dying`](./Enums.md#enum-dying) | Enum |  | 8 |
 | `BoneProjectile` | Variable |  | 8 |
 | `ChainLink` | Variable |  | 8 |
 | `Earthquake` | Variable |  | 8 |
-| [`dying`](./Enums.md#enum-dying) | Enum |  | 8 |
 | `fx_is_placeholder_animation` | Boolean |  | 8 |
-| `headbuttdash` | Variable |  | 8 |
 | `headbuttdashStart` | Variable |  | 8 |
+| `headbuttdash` | Variable |  | 8 |
 | `roll` | Variable |  | 8 |
+| [`land_animation`](./Enums.md#enum-land_animation) | Enum |  | 7 |
+| [`miss_particle`](./Enums.md#enum-miss_particle) | Enum | Specific spawn points for particles. | 7 |
 | `HookProjectile` | Variable |  | 7 |
 | `aoe_spell_on_land` | Boolean | Visual trigger when a jump lands. | 7 |
 | `art_flip` | Integer |  | 7 |
 | `earthquakeSlam` | Variable |  | 7 |
 | `fx_random_flip` | Boolean |  | 7 |
-| `fx_tentaclestrangle` | Variable |  | 7 |
 | `fx_tentaclestrangleMiss` | Variable |  | 7 |
-| [`land_animation`](./Enums.md#enum-land_animation) | Enum |  | 7 |
-| [`miss_particle`](./Enums.md#enum-miss_particle) | Enum | Specific spawn points for particles. | 7 |
+| `fx_tentaclestrangle` | Variable |  | 7 |
 | `shadowStepIn` | Variable |  | 7 |
 | `spit` | Variable |  | 7 |
 | `startroll` | Variable |  | 7 |
@@ -147,21 +148,22 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `min_throw_height` | Float |  | 6 |
 | `pray` | Variable |  | 6 |
 | `single_projectile` | Boolean |  | 6 |
+| [`detatched_animation`](./Enums.md#enum-detatched_animation) | Enum | Plays an animation separated from the character body. | 5 |
+| [`empty_animation`](./Enums.md#enum-empty_animation) | Enum |  | 5 |
+| [`mode`](./Enums.md#enum-mode) | Enum |  | 5 |
 | `DamageTrap` | Variable |  | 5 |
 | `FireBlastSmall` | Variable |  | 5 |
 | `FireSpin` | Variable |  | 5 |
 | `HealBig` | Variable |  | 5 |
 | `HealMed` | Variable |  | 5 |
 | `None` | Variable |  | 5 |
-| [`detatched_animation`](./Enums.md#enum-detatched_animation) | Enum | Plays an animation separated from the character body. | 5 |
 | `detatched_animation_reach` | Integer |  | 5 |
 | `empty` | Variable |  | 5 |
-| [`empty_animation`](./Enums.md#enum-empty_animation) | Enum |  | 5 |
 | `lickAttack` | Variable |  | 5 |
-| [`mode`](./Enums.md#enum-mode) | Enum |  | 5 |
 | `psyMegaAttack` | Variable |  | 5 |
 | `showTrinket` | Variable |  | 5 |
 | `spinattackloop` | Variable |  | 5 |
+| [`rocket_swirl`](#rocket_swirl) | Block | Visual parameters for swirling projectile paths. | 4 |
 | `ArmorPickup` | Variable |  | 4 |
 | `MeteorFall` | Variable |  | 4 |
 | `Projectile_Rocket` | Variable |  | 4 |
@@ -179,13 +181,16 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `ramLoop` | Variable |  | 4 |
 | `ramStart` | Variable |  | 4 |
 | `roar` | Variable |  | 4 |
-| [`rocket_swirl`](#rocket_swirl) | Block | Visual parameters for swirling projectile paths. | 4 |
 | `spawn` | Variable |  | 4 |
 | `spinattackstart` | Variable |  | 4 |
 | `suck` | Variable |  | 4 |
 | `sync_frames` | Integer |  | 4 |
 | `transform` | Variable |  | 4 |
 | `whistle` | Variable |  | 4 |
+| [`dash_decelerating_animation`](./Enums.md#enum-dash_decelerating_animation) | Enum |  | 3 |
+| [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  | 3 |
+| [`tint`](./Arrays.md#array-tint) | Array |  | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | `BrambleProjectile` | Variable |  | 3 |
 | `BurnTrigger` | Variable |  | 3 |
 | `CupidsArrowProjectile` | Variable |  | 3 |
@@ -202,7 +207,6 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `backflip` | Variable |  | 3 |
 | `castspell` | Variable |  | 3 |
 | `chargeholy` | Variable |  | 3 |
-| [`dash_decelerating_animation`](./Enums.md#enum-dash_decelerating_animation) | Enum |  | 3 |
 | `dashslow` | Variable |  | 3 |
 | `decelerate` | Integer | Visual slowdown at the end of a movement. | 3 |
 | `delay_from_map_edge` | Boolean | Delays effect based on distance from the screen edge. | 3 |
@@ -212,7 +216,6 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `easing` | Integer | Smoothing function for movement animations. | 3 |
 | `escape` | Variable |  | 3 |
 | `fixed_jump_speed` | Float |  | 3 |
-| [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  | 3 |
 | `invthrow` | Variable |  | 3 |
 | `land` | Variable |  | 3 |
 | `lob_yoff` | Float | Adjustments for arcing projectiles. | 3 |
@@ -225,11 +228,17 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `slam` | Variable |  | 3 |
 | `slowPawMagic` | Variable |  | 3 |
 | `thinlaser` | Variable |  | 3 |
-| [`tint`](./Arrays.md#array-tint) | Array |  | 3 |
 | `use_projectile_spawn_offset` | Boolean |  | 3 |
 | `use_rotation_once` | Boolean |  | 3 |
 | `weaponspell` | Variable |  | 3 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum |  | 2 |
+| [`mask_center`](./Enums.md#enum-mask_center) | Enum |  | 2 |
+| [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  | 2 |
+| [`particle_mat`](./Enums.md#enum-particle_mat) | Enum |  | 2 |
+| [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum |  | 2 |
+| [`pseudoprojectile`](./Enums.md#enum-pseudoprojectile) | Enum |  | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | `AnimalEgg` | Variable |  | 2 |
 | `ArrowFromAbove` | Variable |  | 2 |
 | `ArrowProjectile` | Variable |  | 2 |
@@ -237,14 +246,14 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `BigSlimeShadow` | Variable |  | 2 |
 | `BirdSmall` | Variable |  | 2 |
 | `Bomb` | Variable |  | 2 |
-| `CanCreeper` | Variable |  | 2 |
 | `CanCreeperOut` | Variable |  | 2 |
+| `CanCreeper` | Variable |  | 2 |
 | `CoreFreak` | Variable |  | 2 |
 | `Crow` | Variable |  | 2 |
 | `Dip` | Variable |  | 2 |
-| `Fetus` | Variable |  | 2 |
 | `FetusGusher` | Variable |  | 2 |
 | `FetusNoJar` | Variable |  | 2 |
+| `Fetus` | Variable |  | 2 |
 | `Flea` | Variable |  | 2 |
 | `Frog` | Variable |  | 2 |
 | `Frogchain` | Variable |  | 2 |
@@ -263,8 +272,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Rock` | Variable |  | 2 |
 | `SmallSlimeShadow` | Variable |  | 2 |
 | `SpearMaskCenter` | Variable |  | 2 |
-| `Spike` | Variable |  | 2 |
 | `SpikeProjectile` | Variable |  | 2 |
+| `Spike` | Variable |  | 2 |
 | `Squirrel` | Variable |  | 2 |
 | `Stacy2p0` | Variable |  | 2 |
 | `TNTCrate` | Variable |  | 2 |
@@ -280,7 +289,6 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `bombardment` | Variable |  | 2 |
 | `call` | Variable |  | 2 |
 | `dashing` | Variable |  | 2 |
-| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum |  | 2 |
 | `desc` | String | Localization key for the character's desc. | 2 |
 | `detatched_animation_cutoff` | Boolean |  | 2 |
 | `do_damage_immediately` | Boolean | Applies math before the animation actually hits. | 2 |
@@ -298,31 +306,26 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `greenlaser` | Variable |  | 2 |
 | `hadouken` | Variable |  | 2 |
 | `ice` | Variable |  | 2 |
-| `jump` | Variable |  | 2 |
 | `jump_height_multiplier` | Float | Overrides for jump physics. | 2 |
+| `jump` | Variable |  | 2 |
 | `knockupatk` | Variable |  | 2 |
 | `launchMid` | Variable |  | 2 |
 | `launchStart` | Variable |  | 2 |
 | `magnet` | Variable |  | 2 |
 | `majormagic` | Variable |  | 2 |
-| [`mask_center`](./Enums.md#enum-mask_center) | Enum |  | 2 |
-| [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  | 2 |
 | `max_throw_height` | Float |  | 2 |
 | `megabite` | Variable |  | 2 |
 | `megablast` | Variable |  | 2 |
 | `meow` | Variable |  | 2 |
 | `meteorshower` | Variable |  | 2 |
 | `monkAttack` | Variable |  | 2 |
-| [`particle_mat`](./Enums.md#enum-particle_mat) | Enum |  | 2 |
 | `poopfart` | Variable |  | 2 |
 | `portout` | Variable |  | 2 |
 | `power` | Variable |  | 2 |
-| [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum |  | 2 |
 | `primed_alt_animation` | String |  | 2 |
 | `priming` | Variable |  | 2 |
 | `propelLoop` | Variable |  | 2 |
 | `propelStart` | Variable |  | 2 |
-| [`pseudoprojectile`](./Enums.md#enum-pseudoprojectile) | Enum |  | 2 |
 | `psyAttack2` | Variable |  | 2 |
 | `pukeatk` | Variable |  | 2 |
 | `pulse` | Variable |  | 2 |
@@ -339,21 +342,27 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `thinlasercap` | Variable |  | 2 |
 | `throw_speed` | Integer |  | 2 |
 | `use_hit_alts` | Boolean |  | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Visuals applied to the target receiving the effect. | 1 |
+| [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Distinct animation used when targeting a friendly unit. | 1 |
+| [`damage_threshold_altanimations`](#damage_threshold_altanimations) | Block | Triggers different hit animations based on the amount of damage dealt. | 1 |
+| [`dash_bonk_animation`](./Enums.md#enum-dash_bonk_animation) | Enum |  | 1 |
+| [`default_face`](./Enums.md#enum-default_face) | Enum |  | 1 |
+| [`dodge`](./Enums.md#enum-dodge) | Enum |  | 1 |
+| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum |  | 1 |
+| [`walk`](./Enums.md#enum-walk) | Enum |  | 1 |
 | `AcidOoze` | Variable |  | 1 |
 | `AcidshotProjectile` | Variable |  | 1 |
 | `AlbinoTomTom` | Variable |  | 1 |
 | `AlienBeast` | Variable |  | 1 |
 | `AlienEgg` | Variable |  | 1 |
 | `Amoeba` | Variable |  | 1 |
-| `AngelicCat` | Variable |  | 1 |
 | `AngelicCatFetus` | Variable |  | 1 |
+| `AngelicCat` | Variable |  | 1 |
 | `Ankylosaurus` | Variable |  | 1 |
 | `AntidotePickup` | Variable |  | 1 |
-| `Astro` | Variable |  | 1 |
 | `AstroSkull` | Variable |  | 1 |
 | `AstroZombie` | Variable |  | 1 |
+| `Astro` | Variable |  | 1 |
 | `AtomicKitten` | Variable |  | 1 |
 | `BabyCat` | Variable |  | 1 |
 | `BabyDeathWorm` | Variable |  | 1 |
@@ -366,8 +375,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `BigAsteroid` | Variable |  | 1 |
 | `BigDemon` | Variable |  | 1 |
 | `BigRock` | Variable |  | 1 |
-| `BigSlime` | Variable |  | 1 |
 | `BigSlimeX` | Variable |  | 1 |
+| `BigSlime` | Variable |  | 1 |
 | `BigUFO` | Variable |  | 1 |
 | `Bigfoot` | Variable |  | 1 |
 | `BirdLarge` | Variable |  | 1 |
@@ -393,8 +402,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Bunny` | Variable |  | 1 |
 | `Burfer` | Variable |  | 1 |
 | `ButchTinkX` | Variable |  | 1 |
-| `ButcherCat` | Variable |  | 1 |
 | `ButcherCat_Terminator` | Variable |  | 1 |
+| `ButcherCat` | Variable |  | 1 |
 | `Cactus` | Variable |  | 1 |
 | `CancerCat` | Variable |  | 1 |
 | `Carcus` | Variable |  | 1 |
@@ -428,8 +437,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Dclaude` | Variable |  | 1 |
 | `DeathWorm` | Variable |  | 1 |
 | `Deathbot` | Variable |  | 1 |
-| `Decoy` | Variable |  | 1 |
 | `Decoy2` | Variable |  | 1 |
+| `Decoy` | Variable |  | 1 |
 | `DemonHooker` | Variable |  | 1 |
 | `DiggyMaggot` | Variable |  | 1 |
 | `DinoEggs` | Variable |  | 1 |
@@ -437,8 +446,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Dog` | Variable |  | 1 |
 | `DrDitto` | Variable |  | 1 |
 | `Drcat` | Variable |  | 1 |
-| `DruidCat` | Variable |  | 1 |
 | `DruidCat_Terminator` | Variable |  | 1 |
+| `DruidCat` | Variable |  | 1 |
 | `Dumpster` | Variable |  | 1 |
 | `DustCloud` | Variable |  | 1 |
 | `DustDevil` | Variable |  | 1 |
@@ -463,8 +472,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Fatso` | Variable |  | 1 |
 | `FearEffect` | Variable |  | 1 |
 | `FetusJar` | Variable |  | 1 |
-| `FighterCat` | Variable |  | 1 |
 | `FighterCat_Terminator` | Variable |  | 1 |
+| `FighterCat` | Variable |  | 1 |
 | `FijiMermaid` | Variable |  | 1 |
 | `FinalBossMegaGuppy` | Variable |  | 1 |
 | `FinalBossPhase1` | Variable |  | 1 |
@@ -482,8 +491,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `FrankX` | Variable |  | 1 |
 | `FutureBot` | Variable |  | 1 |
 | `Fuzzer` | Variable |  | 1 |
-| `Gambit` | Variable |  | 1 |
 | `GambitDice` | Variable |  | 1 |
+| `Gambit` | Variable |  | 1 |
 | `Gambitmouthbeam` | Variable |  | 1 |
 | `Gamete` | Variable |  | 1 |
 | `GasCan` | Variable |  | 1 |
@@ -499,31 +508,31 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `GraveWorm` | Variable |  | 1 |
 | `GreenProber` | Variable |  | 1 |
 | `Grenade` | Variable |  | 1 |
-| `Grey` | Variable |  | 1 |
 | `GreyAlien` | Variable |  | 1 |
+| `Grey` | Variable |  | 1 |
 | `GroundZombie` | Variable |  | 1 |
 | `GroundedSpear` | Variable |  | 1 |
 | `Guillotina1` | Variable |  | 1 |
 | `GunCat` | Variable |  | 1 |
 | `HangerBot` | Variable |  | 1 |
-| `Harpoon` | Variable |  | 1 |
 | `HarpoonTrap` | Variable |  | 1 |
+| `Harpoon` | Variable |  | 1 |
 | `HealSmall` | Variable |  | 1 |
 | `Hellspawn1` | Variable |  | 1 |
-| `Hemlock` | Variable |  | 1 |
 | `HemlockFetus` | Variable |  | 1 |
-| `Hitler` | Variable |  | 1 |
+| `Hemlock` | Variable |  | 1 |
 | `HitlerHead` | Variable |  | 1 |
 | `HitlerMech` | Variable |  | 1 |
+| `Hitler` | Variable |  | 1 |
 | `Hive` | Variable |  | 1 |
 | `HolyPickup` | Variable |  | 1 |
 | `HornyCat` | Variable |  | 1 |
 | `HumanCat` | Variable |  | 1 |
-| `HunterCat` | Variable |  | 1 |
 | `HunterCat_Terminator` | Variable |  | 1 |
+| `HunterCat` | Variable |  | 1 |
 | `Husk` | Variable |  | 1 |
-| `Hydrant` | Variable |  | 1 |
 | `HydrantFountain` | Variable |  | 1 |
+| `Hydrant` | Variable |  | 1 |
 | `IceBlast` | Variable |  | 1 |
 | `IceCube` | Variable |  | 1 |
 | `IceElemental` | Variable |  | 1 |
@@ -535,8 +544,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `JarHead` | Variable |  | 1 |
 | `Jekyll` | Variable |  | 1 |
 | `JerseyDevil` | Variable |  | 1 |
-| `JesterCat` | Variable |  | 1 |
 | `JesterCat_Terminator` | Variable |  | 1 |
+| `JesterCat` | Variable |  | 1 |
 | `Johnny` | Variable |  | 1 |
 | `Junk` | Variable |  | 1 |
 | `KillDozer` | Variable |  | 1 |
@@ -550,24 +559,24 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `LordBunga` | Variable |  | 1 |
 | `MadLad` | Variable |  | 1 |
 | `Maelestes` | Variable |  | 1 |
-| `MageCat` | Variable |  | 1 |
 | `MageCat_Terminator` | Variable |  | 1 |
+| `MageCat` | Variable |  | 1 |
 | `MagicMissileProjectileSmall` | Variable |  | 1 |
 | `MagicSpikeProjectile` | Variable |  | 1 |
 | `MamaMaggot` | Variable |  | 1 |
-| `Mammoth` | Variable |  | 1 |
 | `MammothBaby` | Variable |  | 1 |
-| `Mangy` | Variable |  | 1 |
+| `Mammoth` | Variable |  | 1 |
 | `Mangy2` | Variable |  | 1 |
 | `Mangy3` | Variable |  | 1 |
+| `Mangy` | Variable |  | 1 |
 | `Mask` | Variable |  | 1 |
 | `MeatMinion` | Variable |  | 1 |
 | `MeatSlime` | Variable |  | 1 |
 | `MechSuit` | Variable |  | 1 |
-| `MedSlime` | Variable |  | 1 |
 | `MedSlimeX` | Variable |  | 1 |
-| `MedicCat` | Variable |  | 1 |
+| `MedSlime` | Variable |  | 1 |
 | `MedicCat_Terminator` | Variable |  | 1 |
+| `MedicCat` | Variable |  | 1 |
 | `MegaDinoHead` | Variable |  | 1 |
 | `MegaDinoLeg` | Variable |  | 1 |
 | `MegaFetus` | Variable |  | 1 |
@@ -577,8 +586,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `MindFetus` | Variable |  | 1 |
 | `MiniVolcano` | Variable |  | 1 |
 | `MommyCat` | Variable |  | 1 |
-| `MonkCat` | Variable |  | 1 |
 | `MonkCat_Terminator` | Variable |  | 1 |
+| `MonkCat` | Variable |  | 1 |
 | `MoonHand` | Variable |  | 1 |
 | `MoonHead` | Variable |  | 1 |
 | `MoonWorm` | Variable |  | 1 |
@@ -587,8 +596,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `MotherTumor` | Variable |  | 1 |
 | `Mothman` | Variable |  | 1 |
 | `Multicat` | Variable |  | 1 |
-| `NecroCat` | Variable |  | 1 |
 | `NecroCat_Terminator` | Variable |  | 1 |
+| `NecroCat` | Variable |  | 1 |
 | `Needlecat` | Variable |  | 1 |
 | `Nessie` | Variable |  | 1 |
 | `Nettle` | Variable |  | 1 |
@@ -598,30 +607,30 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Parasaurolophus` | Variable |  | 1 |
 | `Parasiter` | Variable |  | 1 |
 | `Peashy` | Variable |  | 1 |
-| `Pebbles` | Variable |  | 1 |
 | `Pebbles_Terminator` | Variable |  | 1 |
+| `Pebbles` | Variable |  | 1 |
 | `PetBoulder` | Variable |  | 1 |
 | `PetRock` | Variable |  | 1 |
 | `Pig` | Variable |  | 1 |
 | `Pile` | Variable |  | 1 |
-| `Pinky` | Variable |  | 1 |
 | `PinkyX` | Variable |  | 1 |
+| `Pinky` | Variable |  | 1 |
 | `PokerDemon` | Variable |  | 1 |
 | `PoopCat` | Variable |  | 1 |
 | `PopeyeCat` | Variable |  | 1 |
 | `Porcupine` | Variable |  | 1 |
-| `PsychicCat` | Variable |  | 1 |
 | `PsychicCat_Terminator` | Variable |  | 1 |
+| `PsychicCat` | Variable |  | 1 |
 | `Pterodactyl` | Variable |  | 1 |
 | `Punchbot` | Variable |  | 1 |
 | `QueenHippo` | Variable |  | 1 |
 | `Rager` | Variable |  | 1 |
-| `Raptor` | Variable |  | 1 |
 | `RaptorBaby` | Variable |  | 1 |
-| `Rat` | Variable |  | 1 |
+| `Raptor` | Variable |  | 1 |
 | `RatCat` | Variable |  | 1 |
 | `RatKing_New` | Variable |  | 1 |
 | `RatPile` | Variable |  | 1 |
+| `Rat` | Variable |  | 1 |
 | `Revalark` | Variable |  | 1 |
 | `RockHead` | Variable |  | 1 |
 | `RockyBobo` | Variable |  | 1 |
@@ -634,12 +643,12 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `SecurityBot` | Variable |  | 1 |
 | `ShadeCat` | Variable |  | 1 |
 | `ShadeF` | Variable |  | 1 |
-| `ShadeM` | Variable |  | 1 |
 | `ShadeMShadow` | Variable |  | 1 |
+| `ShadeM` | Variable |  | 1 |
 | `ShamblingShade` | Variable |  | 1 |
 | `SharkyCat` | Variable |  | 1 |
-| `Simon` | Variable |  | 1 |
 | `SimonFlop` | Variable |  | 1 |
+| `Simon` | Variable |  | 1 |
 | `Siren` | Variable |  | 1 |
 | `Skinned` | Variable |  | 1 |
 | `Skunk` | Variable |  | 1 |
@@ -648,8 +657,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Slenderman` | Variable |  | 1 |
 | `SlotMachine` | Variable |  | 1 |
 | `SmallAsteroid` | Variable |  | 1 |
-| `SmallSlime` | Variable |  | 1 |
 | `SmallSlimeX` | Variable |  | 1 |
+| `SmallSlime` | Variable |  | 1 |
 | `SmallUFO` | Variable |  | 1 |
 | `SnakeyBones` | Variable |  | 1 |
 | `SoldierBot` | Variable |  | 1 |
@@ -657,16 +666,16 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `SpearGuyAttack` | Variable |  | 1 |
 | `SpearProjectile` | Variable |  | 1 |
 | `SpearTestGuy` | Variable |  | 1 |
-| `Spewer` | Variable |  | 1 |
 | `SpewerPill` | Variable |  | 1 |
 | `SpewerTube` | Variable |  | 1 |
+| `Spewer` | Variable |  | 1 |
 | `SpiderCat` | Variable |  | 1 |
 | `SpiderQueen` | Variable |  | 1 |
 | `SpikeTrap` | Variable |  | 1 |
 | `SpikedCat` | Variable |  | 1 |
-| `SpikyCactus` | Variable |  | 1 |
 | `SpikyCactus2x2` | Variable |  | 1 |
 | `SpikyCactusTall` | Variable |  | 1 |
+| `SpikyCactus` | Variable |  | 1 |
 | `SpikyRock` | Variable |  | 1 |
 | `Spookie` | Variable |  | 1 |
 | `Sprout` | Variable |  | 1 |
@@ -677,26 +686,26 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `TallHaunt` | Variable |  | 1 |
 | `TallSpiderCat` | Variable |  | 1 |
 | `TallTumor` | Variable |  | 1 |
-| `TankCat` | Variable |  | 1 |
 | `TankCat_Terminator` | Variable |  | 1 |
+| `TankCat` | Variable |  | 1 |
 | `TarBaby` | Variable |  | 1 |
 | `Tatters` | Variable |  | 1 |
-| `TenTickles` | Variable |  | 1 |
 | `TenTicklesAttack` | Variable |  | 1 |
+| `TenTickles` | Variable |  | 1 |
 | `Terminator2Cat` | Variable |  | 1 |
 | `TerminatorCat` | Variable |  | 1 |
 | `TeslaCoil` | Variable |  | 1 |
 | `TheBloat` | Variable |  | 1 |
 | `TheCoven` | Variable |  | 1 |
 | `TheMother` | Variable |  | 1 |
-| `ThiefCat` | Variable |  | 1 |
 | `ThiefCat_Terminator` | Variable |  | 1 |
+| `ThiefCat` | Variable |  | 1 |
 | `ThrobbingKing` | Variable |  | 1 |
 | `ThrobbingTurret` | Variable |  | 1 |
 | `Thump` | Variable |  | 1 |
 | `TinaSpear` | Variable |  | 1 |
-| `TinkererCat` | Variable |  | 1 |
 | `TinkererCat_Terminator` | Variable |  | 1 |
+| `TinkererCat` | Variable |  | 1 |
 | `Tire` | Variable |  | 1 |
 | `Toadie` | Variable |  | 1 |
 | `TomTom` | Variable |  | 1 |
@@ -733,9 +742,7 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `Yeti` | Variable |  | 1 |
 | `Yeticat` | Variable |  | 1 |
 | `Zodiac` | Variable |  | 1 |
-| [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Visuals applied to the target receiving the effect. | 1 |
 | `alertend` | Variable |  | 1 |
-| [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Distinct animation used when targeting a friendly unit. | 1 |
 | `animate_name` | String | Animates the ability name text on cast. | 1 |
 | `apex_distance` | Float | Calculations for the peak of a jump/lob arc. | 1 |
 | `apex_time` | Float | Calculations for the peak of a jump/lob arc. | 1 |
@@ -747,9 +754,9 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `backflipStart` | Variable |  | 1 |
 | `barbedwire` | Variable |  | 1 |
 | `beam` | Variable |  | 1 |
-| `beamin` | Variable |  | 1 |
 | `beaminHunter` | Variable |  | 1 |
 | `beaminTank` | Variable |  | 1 |
+| `beamin` | Variable |  | 1 |
 | `bite` | Variable |  | 1 |
 | `blast1` | Variable |  | 1 |
 | `blast2` | Variable |  | 1 |
@@ -776,12 +783,9 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `crash` | Variable |  | 1 |
 | `cry` | Variable |  | 1 |
 | `curse` | Variable |  | 1 |
-| [`damage_threshold_altanimations`](#damage_threshold_altanimations) | Block | Triggers different hit animations based on the amount of damage dealt. | 1 |
 | `dash2` | Variable |  | 1 |
-| [`dash_bonk_animation`](./Enums.md#enum-dash_bonk_animation) | Enum |  | 1 |
 | `dashbegin` | Variable |  | 1 |
 | `dashstart2` | Variable |  | 1 |
-| [`default_face`](./Enums.md#enum-default_face) | Enum |  | 1 |
 | `delay_from_map_center` | Boolean | Positional based timing delays. | 1 |
 | `delay_from_reverse_map_edge` | Boolean |  | 1 |
 | `depossess` | Variable |  | 1 |
@@ -791,18 +795,17 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `djump` | Variable |  | 1 |
 | `do_animation_offscreen` | Boolean |  | 1 |
 | `do_not_clear_placeholder` | Boolean |  | 1 |
-| [`dodge`](./Enums.md#enum-dodge) | Enum |  | 1 |
 | `doom` | Variable |  | 1 |
 | `doublepunch` | Variable |  | 1 |
 | `drink` | Variable |  | 1 |
-| `eat` | Variable |  | 1 |
 | `eatTrinket` | Variable |  | 1 |
+| `eat` | Variable |  | 1 |
 | `egg` | Variable |  | 1 |
 | `entangle` | Variable |  | 1 |
 | `enterWater` | Variable |  | 1 |
 | `enterbattle` | Variable |  | 1 |
-| `entrance` | Variable |  | 1 |
 | `entrance_land` | Variable |  | 1 |
+| `entrance` | Variable |  | 1 |
 | `exhale` | Variable |  | 1 |
 | `face_targets` | Boolean | Forces the sprite to look at the target tile. | 1 |
 | `firestorm` | Variable |  | 1 |
@@ -867,7 +870,6 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `nuke` | Variable |  | 1 |
 | `order` | Variable |  | 1 |
 | `othercat_placeholder_available` | Boolean |  | 1 |
-| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum |  | 1 |
 | `pissYourself` | Variable |  | 1 |
 | `poopfartbehind` | Variable |  | 1 |
 | `portOut` | Variable |  | 1 |
@@ -879,8 +881,8 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `puff` | Variable |  | 1 |
 | `pulp` | Variable |  | 1 |
 | `radiant` | Variable |  | 1 |
-| `ram` | Variable |  | 1 |
 | `ramEnd` | Variable |  | 1 |
+| `ram` | Variable |  | 1 |
 | `rampage` | Variable |  | 1 |
 | `randomize_starting_frame` | Boolean |  | 1 |
 | `react` | Variable |  | 1 |
@@ -934,14 +936,13 @@ This document defines the `graphics {}` schema. This block configures all visual
 | `use_origin_offsets` | Boolean |  | 1 |
 | `uziShoot` | Variable |  | 1 |
 | `vomitrain` | Variable |  | 1 |
-| [`walk`](./Enums.md#enum-walk) | Enum |  | 1 |
 | `weaponAbsorb` | Variable |  | 1 |
 | `weaponpoke` | Variable |  | 1 |
 | `weaponslam` | Variable |  | 1 |
 | `weaponswing` | Variable |  | 1 |
 | `weaponswingup` | Variable |  | 1 |
-| `yell` | Variable |  | 1 |
 | `yell1` | Variable |  | 1 |
+| `yell` | Variable |  | 1 |
 
 </details>
 
@@ -973,8 +974,8 @@ The following blocks all behave as `{Graphics Keys}` containers. Each has its ow
 | [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum |  | 127 |
 | `delay` | Float | Frame delay before firing projectile/effect. | 93 |
 | `dont_visualize_ai` | Boolean |  | 86 |
-| `dont_orient` | Boolean | Prevents the character from turning to face the target. | 83 |
 | [`water_mask`](./Enums.md#enum-water_mask) | Enum |  | 83 |
+| `dont_orient` | Boolean | Prevents the character from turning to face the target. | 83 |
 | [`dash_animation`](./Enums.md#enum-dash_animation) | Enum | State-specific animations for trample/dash abilities. | 65 |
 | [`dash_start_animation`](./Enums.md#enum-dash_start_animation) | Enum |  | 63 |
 | `speed` | Float | Rotations per second. | 61 |
@@ -1001,34 +1002,34 @@ The following blocks all behave as `{Graphics Keys}` containers. Each has its ow
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum | Specific spawn points for particles. | 16 |
 | `fall_from_sky` | Boolean | Spawns the projectile from the top of the screen. | 16 |
 | `move_speed_multiplier` | Float |  | 16 |
-| `dont_sink` | Boolean |  | 14 |
 | [`move_start_animation`](./Enums.md#enum-move_start_animation) | Enum |  | 14 |
+| `dont_sink` | Boolean |  | 14 |
 | `use_placeholder` | Boolean |  | 14 |
 | [`move_end_animation`](./Enums.md#enum-move_end_animation) | Enum |  | 13 |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 13 |
 | `face_toss_target` | Boolean |  | 12 |
 | `ignore_slowtiles` | Boolean |  | 12 |
-| `chain_distance` | Float | Creates a tethered repeating graphic (like a hook). | 11 |
 | [`chain_movieclip`](./Enums.md#enum-chain_movieclip) | Enum | Creates a tethered repeating graphic (like a hook). | 11 |
+| `chain_distance` | Float | Creates a tethered repeating graphic (like a hook). | 11 |
 | `darken_screen` | Boolean | Dims the background during the ability cast. | 11 |
 | [`beam_cap`](./Enums.md#enum-beam_cap) | Enum | Flash movieclips used to render continuous laser beams. | 10 |
 | [`beam_clip`](./Enums.md#enum-beam_clip) | Enum | Flash movieclips used to render continuous laser beams. | 10 |
-| `bounce_on_hit` | Boolean | Visual hop when striking a target. | 10 |
-| `darken_screen_exclude_characters_on_tile` | Boolean |  | 10 |
 | [`end`](./Enums.md#enum-end) | Enum | Segments for continuous channeled animations. | 10 |
 | [`jump_start_animation`](./Enums.md#enum-jump_start_animation) | Enum |  | 10 |
 | [`loop`](./Enums.md#enum-loop) | Enum | Segments for continuous channeled animations. | 10 |
 | [`prime_animation`](./Enums.md#enum-prime_animation) | Enum |  | 10 |
 | [`start`](./Enums.md#enum-start) | Enum | Segments for continuous channeled animations. | 10 |
+| `bounce_on_hit` | Boolean | Visual hop when striking a target. | 10 |
+| `darken_screen_exclude_characters_on_tile` | Boolean |  | 10 |
 | `max_tiles_single_loop` | Integer |  | 9 |
 | `sync_speed` | Integer |  | 9 |
 | [`dying`](./Enums.md#enum-dying) | Enum |  | 8 |
 | `fx_is_placeholder_animation` | Boolean |  | 8 |
+| [`land_animation`](./Enums.md#enum-land_animation) | Enum |  | 7 |
+| [`miss_particle`](./Enums.md#enum-miss_particle) | Enum | Specific spawn points for particles. | 7 |
 | `aoe_spell_on_land` | Boolean | Visual trigger when a jump lands. | 7 |
 | `art_flip` | Integer |  | 7 |
 | `fx_random_flip` | Boolean |  | 7 |
-| [`land_animation`](./Enums.md#enum-land_animation) | Enum |  | 7 |
-| [`miss_particle`](./Enums.md#enum-miss_particle) | Enum | Specific spawn points for particles. | 7 |
 | `use_super_armor` | Boolean | Prevents flinch animations from interrupting this cast. | 7 |
 | [`air_animation`](./Enums.md#enum-air_animation) | Enum | Animation played while entity is airborne. | 6 |
 | [`custom_priming_animation`](./Enums.md#enum-custom_priming_animation) | Enum | Animation used while charging an ability. | 6 |
@@ -1039,39 +1040,39 @@ The following blocks all behave as `{Graphics Keys}` containers. Each has its ow
 | `min_throw_height` | Float |  | 6 |
 | `single_projectile` | Boolean |  | 6 |
 | [`detatched_animation`](./Enums.md#enum-detatched_animation) | Enum | Plays an animation separated from the character body. | 5 |
-| `detatched_animation_reach` | Integer |  | 5 |
 | [`empty_animation`](./Enums.md#enum-empty_animation) | Enum |  | 5 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 5 |
+| `detatched_animation_reach` | Integer |  | 5 |
+| [`rocket_swirl`](#rocket_swirl) | Block | Visual parameters for swirling projectile paths. | 4 |
 | `fixed_jump_height` | Float |  | 4 |
 | `four_way_animations` | Boolean |  | 4 |
-| [`rocket_swirl`](#rocket_swirl) | Block | Visual parameters for swirling projectile paths. | 4 |
 | `sync_frames` | Integer |  | 4 |
 | [`dash_decelerating_animation`](./Enums.md#enum-dash_decelerating_animation) | Enum |  | 3 |
+| [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  | 3 |
+| [`tint`](./Arrays.md#array-tint) | Array |  | 3 |
 | `decelerate` | Integer | Visual slowdown at the end of a movement. | 3 |
 | `delay_from_map_edge` | Boolean | Delays effect based on distance from the screen edge. | 3 |
 | `easing` | Integer | Smoothing function for movement animations. | 3 |
 | `fixed_jump_speed` | Float |  | 3 |
-| [`grab_animation`](./Enums.md#enum-grab_animation) | Enum |  | 3 |
 | `lob_yoff` | Float | Adjustments for arcing projectiles. | 3 |
 | `lock_orientation_during_dash` | Boolean | Prevents the sprite from flipping mid-dash. | 3 |
 | `show_infinity_damage_warning` | Boolean |  | 3 |
-| [`tint`](./Arrays.md#array-tint) | Array |  | 3 |
 | `use_projectile_spawn_offset` | Boolean |  | 3 |
 | `use_rotation_once` | Boolean |  | 3 |
+| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum |  | 2 |
+| [`mask_center`](./Enums.md#enum-mask_center) | Enum |  | 2 |
+| [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  | 2 |
+| [`particle_mat`](./Enums.md#enum-particle_mat) | Enum |  | 2 |
+| [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum |  | 2 |
+| [`pseudoprojectile`](./Enums.md#enum-pseudoprojectile) | Enum |  | 2 |
 | `always_huge_mask` | Boolean |  | 2 |
 | `always_play_animations` | Boolean | Bypasses speed-up/skip logic. | 2 |
-| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum |  | 2 |
 | `desc` | String | Localization key for the character's desc. | 2 |
 | `detatched_animation_cutoff` | Boolean |  | 2 |
 | `do_damage_immediately` | Boolean | Applies math before the animation actually hits. | 2 |
 | `jump_height_multiplier` | Float | Overrides for jump physics. | 2 |
-| [`mask_center`](./Enums.md#enum-mask_center) | Enum |  | 2 |
-| [`mask_extent`](./Enums.md#enum-mask_extent) | Enum |  | 2 |
 | `max_throw_height` | Float |  | 2 |
-| [`particle_mat`](./Enums.md#enum-particle_mat) | Enum |  | 2 |
-| [`preturn_animation`](./Enums.md#enum-preturn_animation) | Enum |  | 2 |
 | `primed_alt_animation` | String |  | 2 |
-| [`pseudoprojectile`](./Enums.md#enum-pseudoprojectile) | Enum |  | 2 |
 | `reverse_orientation` | Boolean |  | 2 |
 | `self_damage_mid_port` | Boolean |  | 2 |
 | `shade_occluded_objects` | Boolean |  | 2 |
@@ -1079,18 +1080,20 @@ The following blocks all behave as `{Graphics Keys}` containers. Each has its ow
 | `use_hit_alts` | Boolean |  | 2 |
 | [`affected_animation`](./Enums.md#enum-affected_animation) | Enum | Visuals applied to the target receiving the effect. | 1 |
 | [`ally_animation`](./Enums.md#enum-ally_animation) | Enum | Distinct animation used when targeting a friendly unit. | 1 |
+| [`damage_threshold_altanimations`](#damage_threshold_altanimations) | Block | Triggers different hit animations based on the amount of damage dealt. | 1 |
+| [`dash_bonk_animation`](./Enums.md#enum-dash_bonk_animation) | Enum |  | 1 |
+| [`default_face`](./Enums.md#enum-default_face) | Enum |  | 1 |
+| [`dodge`](./Enums.md#enum-dodge) | Enum |  | 1 |
+| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum |  | 1 |
+| [`walk`](./Enums.md#enum-walk) | Enum |  | 1 |
 | `animate_name` | String | Animates the ability name text on cast. | 1 |
 | `apex_distance` | Float | Calculations for the peak of a jump/lob arc. | 1 |
 | `apex_time` | Float | Calculations for the peak of a jump/lob arc. | 1 |
 | `bypass_combatspeed` | Boolean |  | 1 |
-| [`damage_threshold_altanimations`](#damage_threshold_altanimations) | Block | Triggers different hit animations based on the amount of damage dealt. | 1 |
-| [`dash_bonk_animation`](./Enums.md#enum-dash_bonk_animation) | Enum |  | 1 |
-| [`default_face`](./Enums.md#enum-default_face) | Enum |  | 1 |
 | `delay_from_map_center` | Boolean | Positional based timing delays. | 1 |
 | `delay_from_reverse_map_edge` | Boolean |  | 1 |
 | `do_animation_offscreen` | Boolean |  | 1 |
 | `do_not_clear_placeholder` | Boolean |  | 1 |
-| [`dodge`](./Enums.md#enum-dodge) | Enum |  | 1 |
 | `face_targets` | Boolean | Forces the sprite to look at the target tile. | 1 |
 | `first_castpoint_is_self_damage_only` | Boolean |  | 1 |
 | `hang_time` | Float |  | 1 |
@@ -1101,14 +1104,12 @@ The following blocks all behave as `{Graphics Keys}` containers. Each has its ow
 | `min_range` | Integer | The maximum and minimum distance required to cast. | 1 |
 | `no_horizontal_flip` | Boolean |  | 1 |
 | `othercat_placeholder_available` | Boolean |  | 1 |
-| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum |  | 1 |
 | `precast_delay` | Float |  | 1 |
 | `randomize_starting_frame` | Boolean |  | 1 |
 | `status_display_count_max` | Integer |  | 1 |
 | `uncatchable` | Boolean |  | 1 |
 | `use_directional_animations` | Boolean |  | 1 |
 | `use_origin_offsets` | Boolean |  | 1 |
-| [`walk`](./Enums.md#enum-walk) | Enum |  | 1 |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 0 |
 | [`dead`](./Enums.md#enum-dead) | Enum |  | 0 |
 | [`deadhit`](./Enums.md#enum-deadhit) | Enum |  | 0 |

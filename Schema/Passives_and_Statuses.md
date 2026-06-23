@@ -17,29 +17,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
-| [`class`](./Enums.md#enum-class) | Enum | {'type': '`Enum/String`', 'df': 'Character class identifier.'} | 510 |
-| [`stats`](./Passives_and_Statuses.md#context-stats) | Block | {'type': '`Block`', 'df': ' | 97 |
-| `con` | Number | {'type': 'Number', 'df': ''} | 18 |
-| `spd` | Number | {'type': 'Number', 'df': ''} | 17 |
-| [`lock_item_slot`](./Passives_and_Statuses.md#context-lock_item_slot) | Block | {'type': '`Block`', 'df': ' | 16 |
-| `cha` | Number | {'type': 'Number', 'df': ''} | 13 |
-| `int` | Number | {'type': 'Number', 'df': ''} | 12 |
-| `str` | Number | {'type': 'Number', 'df': ''} | 12 |
-| [`desc_multiclass`](./Strings.md#string-desc_multiclass) | String | {'type': '`String`', 'df': ''} | 10 |
-| [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 10 |
-| `lck` | Number | {'type': 'Number', 'df': ''} | 9 |
-| `shield` | Number | {'type': '`Number`', 'df': ''} | 9 |
-| [`bonus_items`](./Arrays.md#array-bonus_items) | Array | {'type': '`Array`', 'df': 'Flat addition to a base value.'} | 8 |
-| `dex` | Number | {'type': 'Number', 'df': ''} | 8 |
-| `divine_shield` | Number | Examples: `3, 1` | 6 |
+| [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 510 |
+| [`stats`](./Passives_and_Statuses.md#context-stats) | Block |  | 97 |
+| `con` | Number |  | 18 |
+| `spd` | Number |  | 17 |
+| [`lock_item_slot`](./Passives_and_Statuses.md#context-lock_item_slot) | Block |  | 16 |
+| `cha` | Number |  | 13 |
+| `int` | Number |  | 12 |
+| `str` | Number |  | 12 |
+| [`desc_multiclass`](./Strings.md#string-desc_multiclass) | String |  | 10 |
+| [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum |  | 10 |
+| `lck` | Number |  | 9 |
+| `shield` | Number |  | 9 |
+| [`bonus_items`](./Arrays.md#array-bonus_items) | Array | Flat addition to a base value. | 8 |
+| `dex` | Number |  | 8 |
 | [`keyword_tooltips`](./Passives_and_Statuses.md#context-keyword_tooltips) | Block | Examples: `{ ... }` | 6 |
-| `auto_plus_signs_on_name` | Boolean | {'type': '`Boolean`', 'df': ''} | 4 |
+| `divine_shield` | Number | Examples: `3, 1` | 6 |
 | [`empty_armor_scaled_stats`](./Passives_and_Statuses.md#context-empty_armor_scaled_stats) | Block | Examples: `{ ... }` | 4 |
-| [`name_mod`](./Strings.md#string-name_mod) | String | {'type': '`String`', 'df': ''} | 4 |
-| [`tags`](./Arrays.md#array-tags) | Array | {'type': '`Array`', 'df': ''} | 3 |
+| [`name_mod`](./Strings.md#string-name_mod) | String |  | 4 |
+| `auto_plus_signs_on_name` | Boolean |  | 4 |
+| [`tags`](./Arrays.md#array-tags) | Array |  | 3 |
 | [`icon`](./Enums.md#enum-icon) | Enum | Examples: `DejaVu3, DejaVu2` | 2 |
 | [`schadenfreude_scaled_stats`](./Passives_and_Statuses.md#context-schadenfreude_scaled_stats) | Block | Examples: `{ ... }` | 2 |
-| [`grant_ability`](./Enums.md#enum-grant_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`grant_ability`](./Enums.md#enum-grant_ability) | Enum |  | 1 |
 
 </details>
 
@@ -73,13 +73,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number | {'type': '`Number`', 'df': ''} | 31 |
-| `spd` | Number | {'type': '`Number`', 'df': ''} | 26 |
-| `cha` | Number | {'type': '`Number`', 'df': ''} | 22 |
-| `int` | Number | {'type': '`Number`', 'df': ''} | 22 |
-| `str` | Number | {'type': '`Number`', 'df': ''} | 20 |
-| `dex` | Number | {'type': '`Number`', 'df': ''} | 16 |
-| `lck` | Number | {'type': '`Number`', 'df': ''} | 13 |
+| `con` | Number |  | 31 |
+| `spd` | Number |  | 26 |
+| `cha` | Number |  | 22 |
+| `int` | Number |  | 22 |
+| `str` | Number |  | 20 |
+| `dex` | Number |  | 16 |
+| `lck` | Number |  | 13 |
 
 </details>
 
@@ -147,8 +147,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array | {'type': '`Enum/String`', 'df': ''} | 14 |
-| [`number`](./Arrays.md#array-number) | Array | {'type': '`Number`', 'df': ''} | 13 |
+| [`object`](./Arrays.md#array-object) | Array |  | 14 |
+| [`number`](./Arrays.md#array-number) | Array |  | 13 |
 
 </details>
 
@@ -199,8 +199,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `even_if_dead` | Boolean | {'type': '`Boolean`', 'df': 'If true, triggers the effect even if the character died during the battle.'} | 10 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 56 |
+| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 10 |
 
 </details>
 
@@ -234,8 +234,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`slot`](./Enums.md#enum-slot) | Enum | {'type': '`Enum/String`', 'df': ''} | 16 |
-| `frame` | Number | {'type': '`Number`', 'df': ''} | 3 |
+| [`slot`](./Enums.md#enum-slot) | Enum |  | 16 |
+| `frame` | Number |  | 3 |
 
 </details>
 
@@ -270,9 +270,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`disease`](./Enums.md#enum-disease) | Enum | {'type': '`Enum/String`', 'df': 'The specific status effect ID representing the disease.'} | 12 |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of transmitting.'} | 11 |
-| `can_apply_to_anything` | Boolean | {'type': '`Boolean`', 'df': ''} | 6 |
+| [`disease`](./Enums.md#enum-disease) | Enum | The specific status effect ID representing the disease. | 12 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of transmitting. | 11 |
+| `can_apply_to_anything` | Boolean |  | 6 |
 
 </details>
 
@@ -306,8 +306,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 16 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 29 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 16 |
 
 </details>
 
@@ -341,11 +341,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 11 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The status effect to apply.'} | 11 |
-| `turns` | Number | {'type': '`Number`', 'df': 'Duration in turns.'} | 8 |
-| `expires_on_end_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 6 |
-| `expires_on_begin_turn` | Boolean | {'type': '`Boolean`', 'df': 'If true, ticks down at the start of the turn rather than the end.'} | 5 |
+| [`status`](./Enums.md#enum-status) | Enum | The status effect to apply. | 11 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 11 |
+| `turns` | Number | Duration in turns. | 8 |
+| `expires_on_end_turn` | Boolean |  | 6 |
+| `expires_on_begin_turn` | Boolean | If true, ticks down at the start of the turn rather than the end. | 5 |
 
 </details>
 
@@ -362,8 +362,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`mode`](./Enums.md#enum-mode) | Enum | {'type': '`Enum/String`', 'df': ''} | 10 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 31 |
+| [`mode`](./Enums.md#enum-mode) | Enum |  | 10 |
 
 </details>
 
@@ -380,9 +380,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `int` | Number | {'type': '`Number`', 'df': ''} | 6 |
-| `cha` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `spd` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| `int` | Number |  | 6 |
+| `cha` | Number |  | 2 |
+| `spd` | Number |  | 2 |
 
 </details>
 
@@ -399,8 +399,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
-| `knockback` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| `knockback` | Number |  | 2 |
 
 </details>
 
@@ -417,10 +417,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 4 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 45 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 4 |
+| `damage` | Number | The base damage properties of an attack. | 4 |
 
 </details>
 
@@ -505,10 +505,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 7 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 7 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
-| `knockback` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 7 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| `damage` | Number | The base damage properties of an attack. | 7 |
+| `knockback` | Number |  | 1 |
 
 </details>
 
@@ -525,8 +525,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 3 |
-| `chance` | Mixed | {'type': '`Enum/String`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 3 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 3 |
+| `chance` | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 3 |
 
 </details>
 
@@ -595,7 +595,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
-| `triggers_limit` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| `triggers_limit` | Number |  | 2 |
 
 </details>
 
@@ -612,9 +612,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The specific entity tag required or applied.'} | 7 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 7 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
-| `exclude_basicattack` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| `exclude_basicattack` | Boolean |  | 2 |
 
 </details>
 
@@ -631,7 +631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'The specific element type required or applied.'} | 6 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 6 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 
 </details>
@@ -666,9 +666,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 6 |
-| [`disease`](./Enums.md#enum-disease) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| `can_apply_to_anything` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`disease`](./Enums.md#enum-disease) | Enum |  | 6 |
+| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 6 |
+| `can_apply_to_anything` | Boolean |  | 1 |
 
 </details>
 
@@ -685,8 +685,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 20 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 71 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 20 |
 
 </details>
 
@@ -703,8 +703,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `reduction` | Number | {'type': '`Number`', 'df': ''} | 6 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The specific entity tag required or applied.'} | 6 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 6 |
+| `reduction` | Number |  | 6 |
 
 </details>
 
@@ -721,10 +721,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array | {'type': '`Enum/String`', 'df': ''} | 6 |
-| `chance` | Mixed | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 5 |
-| `number` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `good` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`object`](./Arrays.md#array-object) | Array |  | 6 |
+| `chance` | Mixed | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 5 |
+| `number` | Number |  | 2 |
+| `good` | Boolean |  | 1 |
 
 </details>
 
@@ -741,10 +741,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| `good` | Boolean | {'type': '`Boolean`', 'df': ''} | 3 |
-| `spawn_on_death_hit` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `consider_all_layers` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 6 |
+| `good` | Boolean |  | 3 |
+| `spawn_on_death_hit` | Boolean |  | 2 |
+| `consider_all_layers` | Boolean |  | 1 |
 
 </details>
 
@@ -830,8 +830,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| `SpawnScaledRotFly` | Number | Applies the 'SpawnScaledRotFly' effect. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| `SpawnScaledRotFly` | Number | {'type': '`Number`', 'df': "Applies the 'SpawnScaledRotFly' effect."} | 1 |
 
 </details>
 
@@ -848,8 +848,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 4 |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'The specific element type required or applied.'} | 4 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
+| `damage` | Number | The base damage properties of an attack. | 4 |
 
 </details>
 
@@ -883,8 +883,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'The specific element type required or applied.'} | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
 
 </details>
 
@@ -901,7 +901,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddElement`](./Enums.md#enum-addelement) | Enum | {'type': '`Enum/String`', 'df': "Applies the 'AddElement' effect."} | 8 |
+| [`AddElement`](./Enums.md#enum-addelement) | Enum | Applies the 'AddElement' effect. | 8 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
@@ -919,8 +919,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 2 |
-| `square` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
+| `square` | Boolean |  | 2 |
 
 </details>
 
@@ -937,8 +937,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`range`](./Enums.md#enum-range) | Enum | {'type': '`Enum/String`', 'df': 'Distance or area of effect in tiles.'} | 4 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 4 |
+| [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 4 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 4 |
 
 </details>
 
@@ -955,8 +955,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `addstacks` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the status effect to check or apply.'} | 3 |
+| [`status`](./Enums.md#enum-status) | Enum | The ID of the status effect to check or apply. | 3 |
+| `addstacks` | Number |  | 3 |
 
 </details>
 
@@ -973,9 +973,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to autocast.'} | 4 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': 'If true, bypasses stun and hard-CC restrictions to cast anyway.'} | 2 |
-| `force_display_name` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to autocast. | 4 |
+| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 2 |
+| `force_display_name` | Boolean |  | 2 |
 
 </details>
 
@@ -1010,7 +1010,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 4 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 4 |
 
 </details>
 
@@ -1027,8 +1027,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`spell_graphics_override`](./Passives_and_Statuses.md#context-spell_graphics_override) | Block | {'type': '`Block`', 'df': ' | 4 |
-| [`status_explosion_override`](./Enums.md#enum-status_explosion_override) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
+| [`spell_graphics_override`](./Passives_and_Statuses.md#context-spell_graphics_override) | Block |  | 4 |
+| [`status_explosion_override`](./Enums.md#enum-status_explosion_override) | Enum |  | 4 |
 
 </details>
 
@@ -1045,8 +1045,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`mode`](./Enums.md#enum-mode) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 15 |
+| [`mode`](./Enums.md#enum-mode) | Enum |  | 4 |
 
 </details>
 
@@ -1063,8 +1063,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'The specific element type required or applied.'} | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 30 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
 
 </details>
 
@@ -1132,7 +1132,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `spells` | Number | {'type': '`Number`', 'df': ''} | 4 |
+| `spells` | Number |  | 4 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
@@ -1151,9 +1151,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `mana` | Number | {'type': '`Number`', 'df': ''} | 4 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `mana` | Number |  | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -1170,8 +1170,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `mana` | Number | {'type': '`Number`', 'df': ''} | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| `mana` | Number |  | 4 |
 
 </details>
 
@@ -1188,9 +1188,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cha` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `int` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `spd` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `cha` | Number |  | 1 |
+| `int` | Number |  | 1 |
+| `spd` | Number |  | 1 |
 
 </details>
 
@@ -1224,9 +1224,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 1 |
-| `ability_damage_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `chance` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
+| `ability_damage_only` | Boolean |  | 1 |
+| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -1260,8 +1260,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `CastAgain` | Number | {'type': '`Number`', 'df': "Applies the 'CastAgain' effect."} | 2 |
-| `Fury` | Number | {'type': '`Number`', 'df': "Applies the 'Fury' effect."} | 1 |
+| `CastAgain` | Number | Applies the 'CastAgain' effect. | 2 |
+| `Fury` | Number | Applies the 'Fury' effect. | 1 |
 
 </details>
 
@@ -1279,7 +1279,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
-| [`odds`](./Enums.md#enum-odds) | Enum | {'type': '`Enum/String`', 'df': "The probability (0.0 to 1.0) of triggering the 'bad roll' failure state."} | 3 |
+| [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 3 |
 
 </details>
 
@@ -1296,7 +1296,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The specific status ID to check for.'} | 3 |
+| [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 3 |
 
 </details>
 
@@ -1313,8 +1313,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 2 |
-| `pop_corpse` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
+| `pop_corpse` | Boolean |  | 2 |
 
 </details>
 
@@ -1331,8 +1331,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Arrays.md#array-element) | Array | {'type': '`Enum/String`', 'df': 'The specific element type required or applied.'} | 3 |
-| `reduction` | Number | {'type': '`Number`', 'df': ''} | 3 |
+| [`element`](./Arrays.md#array-element) | Array | The specific element type required or applied. | 3 |
+| `reduction` | Number |  | 3 |
 
 </details>
 
@@ -1349,8 +1349,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability of finding the item.'} | 1 |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': 'The item pool to draw from.'} | 1 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability of finding the item. | 1 |
+| [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw from. | 1 |
 
 </details>
 
@@ -1367,8 +1367,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| `move_far` | Boolean | {'type': '`Boolean`', 'df': ''} | 3 |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum |  | 3 |
+| `move_far` | Boolean |  | 3 |
 
 </details>
 
@@ -1385,8 +1385,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID of the character to spawn (e.g., CharmedFlea).'} | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 3 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 3 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 3 |
 
 </details>
 
@@ -1403,8 +1403,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 3 |
+| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum |  | 3 |
 
 </details>
 
@@ -1421,8 +1421,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`number`](./Arrays.md#array-number) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
+| [`number`](./Arrays.md#array-number) | Array |  | 3 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 3 |
 
 </details>
 
@@ -1439,8 +1439,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 9 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 3 |
 
 </details>
 
@@ -1627,9 +1627,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 2 |
-| `range` | Mixed | {'type': '`Enum/String`', 'df': 'Distance or area of effect in tiles.'} | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The specific entity tag required or applied.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 2 |
+| `range` | Mixed | Distance or area of effect in tiles. | 2 |
 
 </details>
 
@@ -1646,8 +1646,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AddFilledMaxHealth` | Number | {'type': '`Number`', 'df': "Applies the 'AddFilledMaxHealth' effect."} | 2 |
-| `JoinSpawnerFaction` | Number | {'type': '`Number`', 'df': "Applies the 'JoinSpawnerFaction' effect."} | 2 |
+| `AddFilledMaxHealth` | Number | Applies the 'AddFilledMaxHealth' effect. | 2 |
+| `JoinSpawnerFaction` | Number | Applies the 'JoinSpawnerFaction' effect. | 2 |
 
 </details>
 
@@ -1749,7 +1749,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`DelayedWind`](./Passives_and_Statuses.md#context-delayedwind) | Block | {'type': '`Block`', 'df': "Applies the 'DelayedWind' effect. | 1 |
+| [`DelayedWind`](./Passives_and_Statuses.md#context-delayedwind) | Block | Applies the 'DelayedWind' effect. | 1 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
@@ -1784,8 +1784,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`range`](./Enums.md#enum-range) | Enum | {'type': '`Enum/String`', 'df': 'Distance or area of effect in tiles.'} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 2 |
+| [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 2 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -1802,8 +1802,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tinkerer_0`](./Enums.md#enum-tinkerer_0) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`tinkerer_1`](./Enums.md#enum-tinkerer_1) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`tinkerer_0`](./Enums.md#enum-tinkerer_0) | Enum |  | 2 |
+| [`tinkerer_1`](./Enums.md#enum-tinkerer_1) | Enum |  | 2 |
 
 </details>
 
@@ -1838,7 +1838,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| `count` | Number | {'type': '`Number`', 'df': 'The numerical quantity.'} | 1 |
+| `count` | Number | The numerical quantity. | 1 |
 
 </details>
 
@@ -1872,9 +1872,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 1 |
-| `advantage_polarity` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `chance` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
+| `advantage_polarity` | Number |  | 1 |
+| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -1891,8 +1891,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`on_break`](./Passives_and_Statuses.md#context-on_break) | Block | {'type': '`Block`', 'df': " | 2 |
-| [`on_throw`](./Passives_and_Statuses.md#context-on_throw) | Block | {'type': '`Block`', 'df': " | 2 |
+| [`on_break`](./Passives_and_Statuses.md#context-on_break) | Block |  | 2 |
+| [`on_throw`](./Passives_and_Statuses.md#context-on_throw) | Block |  | 2 |
 
 </details>
 
@@ -1909,8 +1909,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| `damage` | Number | The base damage properties of an attack. | 2 |
 
 </details>
 
@@ -1927,8 +1927,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max_bounces` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `max_range` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| `max_bounces` | Number |  | 2 |
+| `max_range` | Number |  | 2 |
 
 </details>
 
@@ -1945,7 +1945,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
@@ -1964,8 +1964,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
-| `ally_chance` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `chance` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 2 |
+| `ally_chance` | Number |  | 2 |
+| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
 
 </details>
 
@@ -1982,8 +1982,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 2 |
-| `chance` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
+| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
 
 </details>
 
@@ -2000,8 +2000,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `aoe` | Number | {'type': '`Number`', 'df': 'The area of effect or distance in tiles.'} | 1 |
-| [`tile`](./Enums.md#enum-tile) | Enum | {'type': '`Enum/String`', 'df': 'The specific tile type to change into (e.g., GlassTile).'} | 1 |
+| [`tile`](./Enums.md#enum-tile) | Enum | The specific tile type to change into (e.g., GlassTile). | 1 |
+| `aoe` | Number | The area of effect or distance in tiles. | 1 |
 
 </details>
 
@@ -2018,8 +2018,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`class`](./Enums.md#enum-class) | Enum | {'type': '`Enum/String`', 'df': 'Character class identifier.'} | 2 |
-| `reduction` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 2 |
+| `reduction` | Number |  | 2 |
 
 </details>
 
@@ -2036,8 +2036,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -2071,8 +2071,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -2089,9 +2089,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The specific string tag to check for.'} | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 49 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 63 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 49 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 2 |
 
 </details>
 
@@ -2159,8 +2159,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`slot`](./Enums.md#enum-slot) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`pool`](./Enums.md#enum-pool) | Enum |  | 2 |
+| [`slot`](./Enums.md#enum-slot) | Enum |  | 2 |
 
 </details>
 
@@ -2177,10 +2177,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`fire`](./Passives_and_Statuses.md#context-fire) | Block | {'type': '`Block`', 'df': ' | 1 |
-| [`ice`](./Passives_and_Statuses.md#context-ice) | Block | {'type': '`Block`', 'df': ' | 1 |
-| [`lightning`](./Passives_and_Statuses.md#context-lightning) | Block | {'type': '`Block`', 'df': ' | 1 |
-| [`triattack`](./Passives_and_Statuses.md#context-triattack) | Block | {'type': '`Block`', 'df': ' | 1 |
+| [`fire`](./Passives_and_Statuses.md#context-fire) | Block |  | 1 |
+| [`ice`](./Passives_and_Statuses.md#context-ice) | Block |  | 1 |
+| [`lightning`](./Passives_and_Statuses.md#context-lightning) | Block |  | 1 |
+| [`triattack`](./Passives_and_Statuses.md#context-triattack) | Block |  | 1 |
 
 </details>
 
@@ -2197,10 +2197,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': 'The base damage properties of an attack.'} | 2 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 2 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`damage`](./Math_Equations.md) | Equation | The base damage properties of an attack. | 2 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
 
 </details>
 
@@ -2217,9 +2217,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| [`range`](./Enums.md#enum-range) | Enum | {'type': '`Enum/String`', 'df': 'Distance or area of effect in tiles.'} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 2 |
+| [`range`](./Enums.md#enum-range) | Enum | Distance or area of effect in tiles. | 2 |
+| `allies_only` | Boolean |  | 2 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2236,7 +2236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': 'The base damage properties of an attack.'} | 2 |
+| [`damage`](./Math_Equations.md) | Equation | The base damage properties of an attack. | 2 |
 
 </details>
 
@@ -2270,16 +2270,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Earth`](./Passives_and_Statuses.md#context-earth) | Block | {'type': '`Block`', 'df': "Applies the 'Earth' effect. | 2 |
-| [`Electric`](./Passives_and_Statuses.md#context-electric) | Block | {'type': '`Block`', 'df': "Applies the 'Electric' effect. | 2 |
-| [`Fire`](./Passives_and_Statuses.md#context-fire) | Block | {'type': '`Block`', 'df': "Applies the 'Fire' effect. | 2 |
-| [`Grass`](./Passives_and_Statuses.md#context-grass) | Block | {'type': '`Block`', 'df': "Applies the 'Grass' effect. | 2 |
-| [`Gravity`](./Passives_and_Statuses.md#context-gravity) | Block | {'type': '`Block`', 'df': "Applies the 'Gravity' effect. | 2 |
-| [`Holy`](./Passives_and_Statuses.md#context-holy) | Block | {'type': '`Block`', 'df': "Applies the 'Holy' effect. | 2 |
-| [`Ice`](./Passives_and_Statuses.md#context-ice) | Block | {'type': '`Block`', 'df': "Applies the 'Ice' effect. | 2 |
-| [`Shadow`](./Passives_and_Statuses.md#context-shadow) | Block | {'type': '`Block`', 'df': "Applies the 'Shadow' effect. | 2 |
-| [`Water`](./Passives_and_Statuses.md#context-water) | Block | {'type': '`Block`', 'df': "Applies the 'Water' effect. | 2 |
-| [`Wind`](./Passives_and_Statuses.md#context-wind) | Block | {'type': '`Block`', 'df': "Applies the 'Wind' effect. | 2 |
+| [`Earth`](./Passives_and_Statuses.md#context-earth) | Block | Applies the 'Earth' effect. | 2 |
+| [`Electric`](./Passives_and_Statuses.md#context-electric) | Block | Applies the 'Electric' effect. | 2 |
+| [`Fire`](./Passives_and_Statuses.md#context-fire) | Block | Applies the 'Fire' effect. | 2 |
+| [`Grass`](./Passives_and_Statuses.md#context-grass) | Block | Applies the 'Grass' effect. | 2 |
+| [`Gravity`](./Passives_and_Statuses.md#context-gravity) | Block | Applies the 'Gravity' effect. | 2 |
+| [`Holy`](./Passives_and_Statuses.md#context-holy) | Block | Applies the 'Holy' effect. | 2 |
+| [`Ice`](./Passives_and_Statuses.md#context-ice) | Block | Applies the 'Ice' effect. | 2 |
+| [`Shadow`](./Passives_and_Statuses.md#context-shadow) | Block | Applies the 'Shadow' effect. | 2 |
+| [`Water`](./Passives_and_Statuses.md#context-water) | Block | Applies the 'Water' effect. | 2 |
+| [`Wind`](./Passives_and_Statuses.md#context-wind) | Block | Applies the 'Wind' effect. | 2 |
 
 </details>
 
@@ -2297,7 +2297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `SafeExplosionIfHitSomething` | Number | {'type': '`Number`', 'df': "Applies the 'SafeExplosionIfHitSomething' effect."} | 2 |
+| `SafeExplosionIfHitSomething` | Number | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
 
 </details>
 
@@ -2314,9 +2314,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `health_percent` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| `health_percent` | Number |  | 2 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2401,10 +2401,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 2 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 2 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 2 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `damage` | Number | The base damage properties of an attack. | 2 |
 
 </details>
 
@@ -2421,9 +2421,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `exclude_self` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `mana` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 2 |
+| `exclude_self` | Boolean |  | 2 |
+| `mana` | Number |  | 2 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2457,8 +2457,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `damage_multiplier` | Number |  | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| `damage_multiplier` | Number | {'type': '`Number`', 'df': ''} | 2 |
 
 </details>
 
@@ -2493,8 +2493,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `health` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `playercat_health` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| `health` | Number |  | 2 |
+| `playercat_health` | Number |  | 2 |
 
 </details>
 
@@ -2512,7 +2512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 2 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2546,8 +2546,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 2 |
-| `theshold` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 2 |
+| `theshold` | Number |  | 2 |
 
 </details>
 
@@ -2564,8 +2564,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 2 |
-| `enemies_only` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
+| `enemies_only` | Boolean |  | 2 |
 
 </details>
 
@@ -2600,7 +2600,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 2 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2618,7 +2618,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `TakeExtraDamage` | Number | {'type': '`Number`', 'df': "Applies the 'TakeExtraDamage' effect."} | 2 |
+| `TakeExtraDamage` | Number | Applies the 'TakeExtraDamage' effect. | 2 |
 
 </details>
 
@@ -2635,9 +2635,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`mode`](./Enums.md#enum-mode) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`mode`](./Enums.md#enum-mode) | Enum |  | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -2671,8 +2671,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`HealAlliesEachTurn`](./Passives_and_Statuses.md#context-healallieseachturn) | Block | {'type': '`Block`', 'df': "Applies the 'HealAlliesEachTurn' effect. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`HealAlliesEachTurn`](./Passives_and_Statuses.md#context-healallieseachturn) | Block | Applies the 'HealAlliesEachTurn' effect. | 2 |
 
 </details>
 
@@ -2689,7 +2689,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`HolyDamageBlessing`](./Passives_and_Statuses.md#context-holydamageblessing) | Block | {'type': '`Block`', 'df': "Applies the 'HolyDamageBlessing' effect. | 2 |
+| [`HolyDamageBlessing`](./Passives_and_Statuses.md#context-holydamageblessing) | Block | Applies the 'HolyDamageBlessing' effect. | 2 |
 
 </details>
 
@@ -2706,7 +2706,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `TogglableRoundEndExtraTurn` | Number | {'type': '`Number`', 'df': "Applies the 'TogglableRoundEndExtraTurn' effect."} | 2 |
+| `TogglableRoundEndExtraTurn` | Number | Applies the 'TogglableRoundEndExtraTurn' effect. | 2 |
 
 </details>
 
@@ -2774,7 +2774,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddElementsToWeapon`](./Enums.md#enum-addelementstoweapon) | Enum | {'type': '`Enum/String`', 'df': "Applies the 'AddElementsToWeapon' effect."} | 2 |
+| [`AddElementsToWeapon`](./Enums.md#enum-addelementstoweapon) | Enum | Applies the 'AddElementsToWeapon' effect. | 2 |
 
 </details>
 
@@ -2791,8 +2791,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 2 |
+| [`pool`](./Enums.md#enum-pool) | Enum |  | 2 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 2 |
 
 </details>
 
@@ -2826,7 +2826,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#context-repressedmemoriesmetronome) | Block | {'type': '`Block`', 'df': "Applies the 'RepressedMemoriesMetronome' effect. | 2 |
+| [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#context-repressedmemoriesmetronome) | Block | Applies the 'RepressedMemoriesMetronome' effect. | 2 |
 
 </details>
 
@@ -2843,8 +2843,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 2 |
-| [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
+| [`move`](./Enums.md#enum-move) | Enum |  | 2 |
 
 </details>
 
@@ -2861,7 +2861,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -2878,10 +2878,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 2 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 2 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 2 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `damage` | Number | The base damage properties of an attack. | 2 |
 
 </details>
 
@@ -2916,8 +2916,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `speed` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `strength` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `speed` | Number |  | 1 |
+| `strength` | Number |  | 1 |
 
 </details>
 
@@ -2969,7 +2969,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `scaled` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `scaled` | Boolean |  | 1 |
 
 </details>
 
@@ -3089,7 +3089,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `turns` | Number | {'type': '`Number`', 'df': 'The duration of the effect in turns.'} | 2 |
+| `turns` | Number | The duration of the effect in turns. | 2 |
 
 </details>
 
@@ -3140,8 +3140,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `kills` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| [`statuses`](./Passives_and_Statuses.md#context-statuses) | Block | {'type': '`Block`', 'df': " | 2 |
+| [`statuses`](./Passives_and_Statuses.md#context-statuses) | Block |  | 2 |
+| `kills` | Number |  | 2 |
 
 </details>
 
@@ -3211,8 +3211,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `count_overkill` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `ignore_during_movement` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| `count_overkill` | Boolean |  | 2 |
+| `ignore_during_movement` | Boolean |  | 2 |
 
 </details>
 
@@ -3382,8 +3382,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'The specific element type required or applied.'} | 2 |
 
 </details>
 
@@ -3400,9 +3400,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `cap` | Number | {'type': '`Number`', 'df': ''} | 2 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `cap` | Number |  | 2 |
 
 </details>
 
@@ -3419,7 +3419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Drag` | Number | {'type': '`Number`', 'df': "Applies the 'Drag' effect."} | 2 |
+| `Drag` | Number | Applies the 'Drag' effect. | 2 |
 
 </details>
 
@@ -3453,8 +3453,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The specific entity tag required or applied.'} | 2 |
 
 </details>
 
@@ -3471,8 +3471,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 2 |
-| `range` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 2 |
+| `damage` | Number | The base damage properties of an attack. | 2 |
+| `range` | Number | Distance or area of effect in tiles. | 2 |
 
 </details>
 
@@ -3489,7 +3489,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AOEPuddle`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': "Applies the 'AOEPuddle' effect."} | 2 |
+| [`AOEPuddle`](./Math_Equations.md) | Equation | Applies the 'AOEPuddle' effect. | 2 |
 
 </details>
 
@@ -3506,7 +3506,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`knockback`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`knockback`](./Math_Equations.md) | Equation |  | 2 |
 
 </details>
 
@@ -3523,7 +3523,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `SafeExplosionIfHitSomething` | Number | {'type': '`Number`', 'df': "Applies the 'SafeExplosionIfHitSomething' effect."} | 2 |
+| `SafeExplosionIfHitSomething` | Number | Applies the 'SafeExplosionIfHitSomething' effect. | 2 |
 
 </details>
 
@@ -3557,8 +3557,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `str` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `con` | Number |  | 1 |
+| `str` | Number |  | 1 |
 
 </details>
 
@@ -3575,8 +3575,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `advantage_softcap` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `chance` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0 or percentage) of this effect triggering.'} | 1 |
+| `advantage_softcap` | Number |  | 1 |
+| `chance` | Number | The probability (0.0 to 1.0 or percentage) of this effect triggering. | 1 |
 
 </details>
 
@@ -3610,7 +3610,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage) | Block | {'type': '`Block`', 'df': "Conditional block: Executes nested logic only if the target is/has DoesDamage. | 1 |
+| [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage) | Block | Conditional block: Executes nested logic only if the target is/has DoesDamage. | 1 |
 
 </details>
 
@@ -3644,8 +3644,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 1 |
 
 </details>
 
@@ -3662,8 +3662,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 1 |
 
 </details>
 
@@ -3680,7 +3680,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `CastAgain` | Number | {'type': '`Number`', 'df': "Applies the 'CastAgain' effect."} | 1 |
+| `CastAgain` | Number | Applies the 'CastAgain' effect. | 1 |
 
 </details>
 
@@ -3697,8 +3697,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `innate` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `learned` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `innate` | Number |  | 1 |
+| `learned` | Number |  | 1 |
 
 </details>
 
@@ -3715,8 +3715,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 1 |
-| [`statuses`](./Passives_and_Statuses.md#context-statuses) | Block | {'type': '`Block`', 'df': " | 1 |
+| [`statuses`](./Passives_and_Statuses.md#context-statuses) | Block |  | 1 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
 
 </details>
 
@@ -3733,7 +3733,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `pop_corpses` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `pop_corpses` | Boolean |  | 1 |
 
 </details>
 
@@ -3768,7 +3768,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 40 |
-| `odds` | Number | {'type': '`Number`', 'df': "The probability (0.0 to 1.0) of triggering the 'good roll' success state."} | 1 |
+| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 1 |
 
 </details>
 
@@ -3785,8 +3785,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The specific entity tag required or applied.'} | 1 |
 
 </details>
 
@@ -3803,8 +3803,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger or reference.'} | 1 |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -3821,7 +3821,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Number | {'type': '`Number`', 'df': 'The area of effect or distance in tiles.'} | 1 |
+| `distance` | Number | The area of effect or distance in tiles. | 1 |
 
 </details>
 
@@ -3838,7 +3838,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Number | {'type': '`Number`', 'df': 'The area of effect or distance in tiles.'} | 1 |
+| `distance` | Number | The area of effect or distance in tiles. | 1 |
 
 </details>
 
@@ -3872,8 +3872,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cycle_start` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `period` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `cycle_start` | Number |  | 1 |
+| `period` | Number |  | 1 |
 
 </details>
 
@@ -3890,7 +3890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `free` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `free` | Boolean |  | 1 |
 
 </details>
 
@@ -3907,9 +3907,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Appeal` | Number | {'type': '`Number`', 'df': "Applies the 'Appeal' effect."} | 1 |
-| `Comfort` | Number | {'type': '`Number`', 'df': "Applies the 'Comfort' effect."} | 1 |
-| `Stimulation` | Number | {'type': '`Number`', 'df': "Applies the 'Stimulation' effect."} | 1 |
+| `Appeal` | Number | Applies the 'Appeal' effect. | 1 |
+| `Comfort` | Number | Applies the 'Comfort' effect. | 1 |
+| `Stimulation` | Number | Applies the 'Stimulation' effect. | 1 |
 
 </details>
 
@@ -3926,8 +3926,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cycle_start` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 1 |
+| `cycle_start` | Number |  | 1 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
 
 </details>
 
@@ -3944,7 +3944,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`weights`](./Enums.md#enum-weights) | Enum |  | 1 |
 
 </details>
 
@@ -3961,8 +3961,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`SizeScalePercent`](./Math_Equations.md) | Equation | Applies the 'SizeScalePercent' effect. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| [`SizeScalePercent`](./Math_Equations.md) | Equation | {'type': '`String`', 'df': "Applies the 'SizeScalePercent' effect."} | 1 |
 
 </details>
 
@@ -3996,9 +3996,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`brain`](./Enums.md#enum-brain) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`brain`](./Enums.md#enum-brain) | Enum |  | 1 |
+| [`decision_weights`](./Enums.md#enum-decision_weights) | Enum |  | 1 |
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum |  | 1 |
 
 </details>
 
@@ -4015,7 +4015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `allow_energize_self` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `allow_energize_self` | Boolean |  | 1 |
 
 </details>
 
@@ -4066,7 +4066,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `SpawnScaledRotFly` | Number | {'type': '`Number`', 'df': "Applies the 'SpawnScaledRotFly' effect."} | 1 |
+| `SpawnScaledRotFly` | Number | Applies the 'SpawnScaledRotFly' effect. | 1 |
 
 </details>
 
@@ -4083,8 +4083,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -4101,8 +4101,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `amount` | Number | {'type': '`Number`', 'df': 'The numerical quantity.'} | 1 |
-| `cap` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `amount` | Number | The numerical quantity. | 1 |
+| `cap` | Number |  | 1 |
 
 </details>
 
@@ -4137,7 +4137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `exclude_self` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `exclude_self` | Boolean |  | 1 |
 
 </details>
 
@@ -4257,7 +4257,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
 
 </details>
 
@@ -4274,8 +4274,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `count_self` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 1 |
+| `count_self` | Boolean |  | 1 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
 
 </details>
 
@@ -4292,8 +4292,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `marked` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks, duration, or intensity to apply.'} | 1 |
+| `marked` | Number |  | 1 |
+| `stacks` | Number | The number of stacks, duration, or intensity to apply. | 1 |
 
 </details>
 
@@ -4344,8 +4344,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ally_multiplier` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `multiplier` | Number | {'type': '`Number`', 'df': 'Multiplicative modifier to a base value.'} | 1 |
+| `ally_multiplier` | Number |  | 1 |
+| `multiplier` | Number | Multiplicative modifier to a base value. | 1 |
 
 </details>
 
@@ -4362,8 +4362,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`cooldown`](./Arrays.md#array-cooldown) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`pool`](./Arrays.md#array-pool) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`cooldown`](./Arrays.md#array-cooldown) | Array |  | 1 |
+| [`pool`](./Arrays.md#array-pool) | Array |  | 1 |
 
 </details>
 
@@ -4380,10 +4380,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 1 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -4400,10 +4400,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 1 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -4420,10 +4420,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 1 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -4440,10 +4440,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification type (e.g., damage type or element).'} | 1 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification type (e.g., damage type or element). | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 

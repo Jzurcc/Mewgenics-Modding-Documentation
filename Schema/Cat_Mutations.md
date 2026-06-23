@@ -15,9 +15,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 489 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 489 |
 | `cha` | Number | Examples: `2, -1, 1` | 144 |
 | `spd` | Number | Examples: `1, -1, -2` | 133 |
 | `int` | Number | Examples: `2, -1, 1` | 132 |
@@ -80,8 +80,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Examples: `water` | 12 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 30 |
+| [`element`](./Enums.md#enum-element) | Enum | Examples: `water` | 12 |
 
 </details>
 
@@ -115,9 +115,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
-| `damage` | Number | Examples: `0` | 4 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 4 |
+| `damage` | Number | Examples: `0` | 4 |
 
 </details>
 
@@ -134,11 +134,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `knockback` | Number | Examples: `2, 1` | 4 |
-| `damage` | Number | Examples: `0` | 2 |
-| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 45 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
+| `knockback` | Number | Examples: `2, 1` | 4 |
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 2 |
+| `damage` | Number | Examples: `0` | 2 |
 
 </details>
 
@@ -155,8 +155,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | Examples: `20, 100, 10` | 7 |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedFlea, SmallRock, Coin` | 7 |
+| `chance` | Number | Examples: `20, 100, 10` | 7 |
 | `good` | Boolean | Examples: `false` | 5 |
 
 </details>
@@ -242,8 +242,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | Examples: `50, 5, 25` | 4 |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 4 |
+| `chance` | Number | Examples: `50, 5, 25` | 4 |
 | `good` | Boolean | Examples: `false` | 1 |
 
 </details>
@@ -296,8 +296,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | `odds` | Number | Examples: `10` | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -314,8 +314,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | Examples: `4, 8` | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 9 |
+| `stacks` | Number | Examples: `4, 8` | 2 |
 
 </details>
 
@@ -401,8 +401,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move` | 1 |
-| `range` | Number | Examples: `2` | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 1 |
+| `range` | Number | Examples: `2` | 1 |
 
 </details>
 
@@ -419,8 +419,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | Examples: `1` | 1 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 1 |
+| `damage` | Number | Examples: `1` | 1 |
 
 </details>
 

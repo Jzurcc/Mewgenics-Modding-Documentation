@@ -15,30 +15,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block | {'type': '`Block`', 'df': 'Block defining the combat math and status effects applied upon successful hit. | 2343 |
-| [`meta`](./Abilities_and_Spells.md#context-meta) | Block | {'type': '`Block`', 'df': 'Block defining UI display data (Name, Description, Icon). | 2333 |
-| [`template`](./Enums.md#enum-template) | Enum | {'type': '`Enum/String`', 'df': 'Inherits baseline internal logic from a hardcoded engine template.'} | 2174 |
-| [`graphics`](./Abilities_and_Spells.md#context-graphics) | Block | {'type': '`Block`', 'df': 'Block defining visual animations and sequence timings. | 2037 |
-| [`target`](./Abilities_and_Spells.md#context-target) | Block | {'type': '`Block`', 'df': "Block defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
-| [`cost`](./Abilities_and_Spells.md#context-cost) | Block | {'type': '`Block`', 'df': 'Block defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
-| [`variant_of`](./Enums.md#enum-variant_of) | Enum | {'type': '`Enum/String`', 'df': 'Inherits properties from a previously defined ability (used for upgrading tiers).'} | 900 |
-| [`tags`](./Arrays.md#array-tags) | Array | {'type': '`Array`', 'df': 'Array of string categories used by the engine for filtering (e.g. [weapon_throw, spell]).'} | 238 |
+| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block | Block defining the combat math and status effects applied upon successful hit. | 2343 |
+| [`meta`](./Abilities_and_Spells.md#context-meta) | Block | Block defining UI display data (Name, Description, Icon). | 2333 |
+| [`template`](./Enums.md#enum-template) | Enum | Inherits baseline internal logic from a hardcoded engine template. | 2174 |
+| [`graphics`](./Abilities_and_Spells.md#context-graphics) | Block | Block defining visual animations and sequence timings. | 2037 |
+| [`target`](./Abilities_and_Spells.md#context-target) | Block | Block defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
+| [`cost`](./Abilities_and_Spells.md#context-cost) | Block | Block defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1274 |
+| [`variant_of`](./Enums.md#enum-variant_of) | Enum | Inherits properties from a previously defined ability (used for upgrading tiers). | 900 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
-| [`spawn`](./Abilities_and_Spells.md#context-spawn) | Block | {'type': '`Block`', 'df': 'Parameters for summoning new characters, objects, or entities. | 192 |
-| [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives) | Block | {'type': '`Block`', 'df': "Passives granted to the character while this ability is equipped. | 136 |
-| [`class`](./Enums.md#enum-class) | Enum | {'type': 'Enum/String', 'df': 'Categorizes the ability for specific UI filters.'} | 90 |
-| [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects) | Block | {'type': '`Block`', 'df': "Status applications that wear off automatically or at the end of the turn. | 88 |
-| [`sounds`](./Abilities_and_Spells.md#context-sounds) | Block | {'type': '`Block`', 'df': 'Audio cues triggered by the ability. | 39 |
-| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | {'type': '`Block`', 'df': 'Secondary Area of Effect blast parameters. | 34 |
-| [`ai_ability`](./Enums.md#enum-ai_ability) | Enum | {'type': '`Enum/String`', 'df': 'Overrides the ability used when triggered by AI.'} | 29 |
-| [`keyword_tooltips`](./Abilities_and_Spells.md#context-keyword_tooltips) | Block | {'type': '`Block`', 'df': "Forces specific UI tooltips to appear when hovering over the ability. | 23 |
-| [`chain_ability`](./Enums.md#enum-chain_ability) | Enum | {'type': '`Enum/String`', 'df': 'An ability that automatically executes sequentially after this one.'} | 15 |
-| [`sub_ability`](./Enums.md#enum-sub_ability) | Enum | {'type': '`Enum/String`', 'df': 'A secondary ability component referenced by complex templates.'} | 8 |
-| [`cloned_ability`](./Enums.md#enum-cloned_ability) | Enum | {'type': '`Enum/String`', 'df': 'Copies the properties of another ability dynamically.'} | 2 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1274 |
-| [`empty_self_damage`](./Abilities_and_Spells.md#context-empty_self_damage) | Block | {'type': '`Block`', 'df': 'Recoil damage specifically applied when the attack misses all targets. | 2 |
-| [`bonk_damage`](./Abilities_and_Spells.md#context-bonk_damage) | Block | {'type': '`Block`', 'df': 'Damage dealt when knocked into a wall or obstacle. | 1 |
-| [`damage`](./Abilities_and_Spells.md#context-damage) | Block | {'type': 'Number', 'df': 'The base damage properties of an attack.'} | 1 |
+| [`tags`](./Arrays.md#array-tags) | Array | Array of string categories used by the engine for filtering (e.g. [weapon_throw, spell]). | 238 |
+| [`spawn`](./Abilities_and_Spells.md#context-spawn) | Block | Parameters for summoning new characters, objects, or entities. | 192 |
+| [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives) | Block | Passives granted to the character while this ability is equipped. | 136 |
+| [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 90 |
+| [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects) | Block | Status applications that wear off automatically or at the end of the turn. | 88 |
+| [`sounds`](./Abilities_and_Spells.md#context-sounds) | Block | Audio cues triggered by the ability. | 39 |
+| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | Secondary Area of Effect blast parameters. | 34 |
+| [`ai_ability`](./Enums.md#enum-ai_ability) | Enum | Overrides the ability used when triggered by AI. | 29 |
+| [`keyword_tooltips`](./Abilities_and_Spells.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 23 |
+| [`chain_ability`](./Enums.md#enum-chain_ability) | Enum | An ability that automatically executes sequentially after this one. | 15 |
+| [`sub_ability`](./Enums.md#enum-sub_ability) | Enum | A secondary ability component referenced by complex templates. | 8 |
+| [`cloned_ability`](./Enums.md#enum-cloned_ability) | Enum | Copies the properties of another ability dynamically. | 2 |
+| [`empty_self_damage`](./Abilities_and_Spells.md#context-empty_self_damage) | Block | Recoil damage specifically applied when the attack misses all targets. | 2 |
+| [`bonk_damage`](./Abilities_and_Spells.md#context-bonk_damage) | Block | Damage dealt when knocked into a wall or obstacle. | 1 |
+| [`damage`](./Abilities_and_Spells.md#context-damage) | Block | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -55,16 +55,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1731 |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1446 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`).'} | 358 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': 'Array of elemental tags to apply (e.g., `[Fire Holy]`).'} | 352 |
-| `knockback` | Mixed | {'type': '`Number`', 'df': 'The base physics pushing power (in tiles).'} | 254 |
-| `ai_base_score` | Number | {'type': '`Number`', 'df': 'How highly the AI values using this ability.'} | 223 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1448 |
-| `contact_requires_adjacency` | Boolean | {'type': '`Boolean`', 'df': 'Contact effects only trigger if standing next to the target.'} | 14 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1789 |
-| [`faction`](./Enums.md#enum-faction) | Enum | {'type': '`Enum/String`', 'df': 'Determines alignment (`enemies`, `cats`, `neutral`).'} | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1731 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1448 |
+| `damage` | Number | The base damage properties of an attack. | 1446 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 358 |
+| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 352 |
+| `knockback` | Mixed | The base physics pushing power (in tiles). | 254 |
+| `ai_base_score` | Number | How highly the AI values using this ability. | 223 |
+| `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 14 |
+| [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 1 |
 
 </details>
 
@@ -82,19 +82,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2339 |
-| [`class`](./Enums.md#enum-class) | Enum | {'type': '`Enum/String`', 'df': 'Categorizes the ability for specific UI filters.'} | 876 |
-| [`type_icon`](./Strings.md#string-type_icon) | String | {'type': '`String`', 'df': ''} | 283 |
-| `icon_shell_frame` | Mixed | {'type': '`Enum/String`', 'df': ''} | 28 |
-| `is_move` | Mixed | {'type': '`Enum/String`', 'df': ''} | 20 |
-| [`ability_icon`](./Enums.md#enum-ability_icon) | Enum | {'type': '`Enum/String`', 'df': 'The UI icon to display in the action bar.'} | 14 |
-| [`tooltip_values`](./Arrays.md#array-tooltip_values) | Array | {'type': '`Array`', 'df': ''} | 9 |
-| [`icon_damage_display`](./Strings.md#string-icon_damage_display) | String | {'type': '`String`', 'df': ''} | 8 |
-| [`icon_damage_display_eq`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 7 |
-| `is_basic_attack` | Boolean | {'type': '`Boolean`', 'df': ''} | 4 |
-| [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| `is_trinket` | Boolean | {'type': '`Boolean`', 'df': ''} | 3 |
-| [`icon_damage_display_suffix`](./Strings.md#string-icon_damage_display_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
-| `is_weapon` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 876 |
+| [`type_icon`](./Strings.md#string-type_icon) | String |  | 283 |
+| `icon_shell_frame` | Mixed |  | 28 |
+| `is_move` | Mixed |  | 20 |
+| [`ability_icon`](./Enums.md#enum-ability_icon) | Enum | The UI icon to display in the action bar. | 14 |
+| [`tooltip_values`](./Arrays.md#array-tooltip_values) | Array |  | 9 |
+| [`icon_damage_display`](./Strings.md#string-icon_damage_display) | String |  | 8 |
+| [`icon_damage_display_eq`](./Math_Equations.md) | Equation |  | 7 |
+| `is_basic_attack` | Boolean |  | 4 |
+| [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | Enum |  | 3 |
+| `is_trinket` | Boolean |  | 3 |
+| [`icon_damage_display_suffix`](./Strings.md#string-icon_damage_display_suffix) | String |  | 2 |
+| `is_weapon` | Boolean |  | 2 |
 
 </details>
 
@@ -112,9 +112,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2458 |
-| `speed` | Mixed | {'type': '`Number`', 'df': 'Rotations per second.'} | 61 |
-| [`mode`](./Enums.md#enum-mode) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| `max_range` | Number | {'type': '`Number`', 'df': 'The maximum and minimum distance required to cast.'} | 1 |
+| `speed` | Mixed | Rotations per second. | 61 |
+| [`mode`](./Enums.md#enum-mode) | Enum |  | 5 |
+| `max_range` | Number | The maximum and minimum distance required to cast. | 1 |
 
 </details>
 
@@ -131,8 +131,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 552 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1886 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 552 |
 
 </details>
 
@@ -149,103 +149,103 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max_range` | Number | {'type': '`Number`', 'df': 'The maximum and minimum distance required to cast.'} | 1088 |
-| `max_aoe` | Number | {'type': '`Number`', 'df': 'The maximum and minimum radius/length of the AoE.'} | 795 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1447 |
-| [`target_mode`](./Enums.md#enum-target_mode) | Enum | {'type': '`Enum/String`', 'df': 'How the cursor operates (`tile`, `direction`, `none`).'} | 503 |
-| [`restrictions`](./Arrays.md#array-restrictions) | Array | {'type': '`Enum/String`', 'df': 'Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`).'} | 463 |
-| [`aoe_mode`](./Enums.md#enum-aoe_mode) | Enum | {'type': '`Enum/String`', 'df': 'The shape of the area (`standard`, `line`, `cross`, `square`, `custom`).'} | 432 |
-| [`knockback_mode`](./Enums.md#enum-knockback_mode) | Enum | {'type': '`Enum/String`', 'df': 'How physics vectors apply (`character_to_tile`, `pull_to_character`, `zero`, `orientation`).'} | 265 |
-| `min_aoe` | Mixed | {'type': '`Number`', 'df': 'The maximum and minimum radius/length of the AoE.'} | 253 |
-| `aoe_excludes_self` | Boolean | {'type': '`Boolean`', 'df': 'Prevents the AoE from hitting the caster.'} | 241 |
-| [`aoe_restrictions`](./Arrays.md#array-aoe_restrictions) | Array | {'type': '`Array`', 'df': 'Array of conditions the AoE tiles must meet (e.g., `must_have_line_of_sight_unpurgable`).'} | 197 |
-| `aoe_considers_character_size` | Boolean | {'type': '`Boolean`', 'df': "Scales the AoE based on the caster's tile size (e.g., 2x2)."} | 170 |
-| [`range_mode`](./Enums.md#enum-range_mode) | Enum | {'type': '`Enum/String`', 'df': 'How range is counted (`standard`, `ground_move`).'} | 114 |
-| [`X_is`](./Enums.md#enum-x_is) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'X_is' effect/state."} | 86 |
-| [`custom_aoe`](./Arrays.md#array-custom_aoe) | Array | {'type': '`Array`', 'df': 'Array of exact coordinates for a custom shape (e.g., `[[1, -1] [1, 0]]`).'} | 83 |
-| `multihit` | Number | {'type': '`Number`', 'df': 'Hardcoded number of times the ability hits the target.'} | 62 |
-| `max_targets` | Number | {'type': '`Number`', 'df': 'Limits on how many distinct entities can be targeted.'} | 56 |
-| `range_excludes_blocking` | Boolean | {'type': '`Boolean`', 'df': 'Cannot target through walls/obstacles.'} | 53 |
-| `prioritize_dont_change_direction` | Mixed | {'type': '`Number`', 'df': 'AI preference to maintain current facing angle.'} | 52 |
-| [`target_requires_tag`](./Enums.md#enum-target_requires_tag) | Enum | {'type': '`Enum/String`', 'df': 'Target must possess this exact character tag.'} | 40 |
-| [`aoe_symmetry`](./Enums.md#enum-aoe_symmetry) | Enum | {'type': '`Enum/String`', 'df': 'Determines if the AoE mirrors on axes.'} | 28 |
-| `prioritize_face_camera` | Mixed | {'type': '`Number`', 'df': 'AI preference to face South.'} | 26 |
-| `straight_shot` | Boolean | {'type': '`Boolean`', 'df': 'Ensures projectiles do not arc.'} | 24 |
-| `can_multihit` | Boolean | {'type': '`Boolean`', 'df': 'If true, overlapping AoEs can hit the same target multiple times.'} | 17 |
-| `allow_any_orientation` | Boolean | {'type': '`Boolean`', 'df': "Allows casting regardless of the character's facing direction."} | 16 |
-| `range_considers_character_size` | Boolean | {'type': '`Boolean`', 'df': 'Range calculation accounts for large entities.'} | 16 |
-| `throw_consumed_character` | Boolean | {'type': '`Boolean`', 'df': 'Throws the entity currently held/eaten.'} | 15 |
-| `min_targets` | Number | {'type': '`Number`', 'df': 'Limits on how many distinct entities can be targeted.'} | 14 |
-| `aoe_leading_edge_only` | Boolean | {'type': '`Boolean`', 'df': 'Only the outermost edge of the AoE shape applies effects.'} | 13 |
-| `allow_diagonals` | Boolean | {'type': '`Boolean`', 'df': 'Allows targeting on diagonal grid axes.'} | 12 |
-| `range_display_include_character_size` | Boolean | {'type': '`Boolean`', 'df': 'Visual: offsets the range indicator for 2x2 units.'} | 12 |
-| `stagger_multihit_targets` | Boolean | {'type': '`Boolean`', 'df': 'Delays hits slightly between multiple targets.'} | 12 |
-| `upgrade_straight_shot_to_piercing` | Boolean | {'type': '`Boolean`', 'df': 'Allows the projectile to pass through multiple targets.'} | 11 |
-| `delayed_trigger` | Boolean | {'type': '`Boolean`', 'df': 'Delays the actual execution of the target effect.'} | 10 |
-| `consider_trample` | Boolean | {'type': '`Boolean`', 'df': 'AI consideration for moving through units.'} | 9 |
-| `N` | Number | {'type': '`Number`', 'df': 'Variable modifier parameter.'} | 7 |
-| [`custom_range`](./Arrays.md#array-custom_range) | Array | {'type': '`Array`', 'df': 'Overrides standard range scaling.'} | 7 |
-| `always_bounce` | Boolean | {'type': '`Boolean`', 'df': 'Forces the attack/projectile to bounce regardless of hit.'} | 6 |
-| [`custom_aoe_util`](./Arrays.md#array-custom_aoe_util) | Array | {'type': '`Array`', 'df': 'Utility variants of custom AoE definitions.'} | 6 |
-| `multihit_max` | Number | {'type': '`Number`', 'df': 'Variable limits for random multihit abilities.'} | 6 |
-| `multihit_min` | Number | {'type': '`Number`', 'df': 'Variable limits for random multihit abilities.'} | 6 |
-| `reorient_thrown_character` | Boolean | {'type': '`Boolean`', 'df': 'Forces a thrown entity to face a certain way.'} | 6 |
-| [`toss_direction_restriction`](./Enums.md#enum-toss_direction_restriction) | Enum | {'type': '`Enum/String`', 'df': 'Limits which ways an entity can be tossed.'} | 6 |
-| `aoe_hint_teamcast` | Boolean | {'type': '`Boolean`', 'df': 'Visual hint for cooperative casting abilities.'} | 5 |
-| [`aoe_tile_requires_element`](./Enums.md#enum-aoe_tile_requires_element) | Enum | {'type': '`Enum/String`', 'df': 'Only affects tiles painted with a specific element.'} | 5 |
-| `distance_sort_targets` | Mixed | {'type': '`Number`', 'df': 'Prioritizes targets based on proximity.'} | 5 |
-| `dont_orient_aoe` | Boolean | {'type': '`Boolean`', 'df': 'Prevents the AoE shape from rotating with the character.'} | 5 |
-| `hint_can_target_pickups` | Boolean | {'type': '`Boolean`', 'df': 'UI hint that the player can target items on the ground.'} | 5 |
-| `max_bounces` | Number | {'type': '`Number`', 'df': 'Hard cap on how many times a bouncing effect can trigger.'} | 5 |
-| `splash_damage_aoe_begin` | Number | {'type': '`Number`', 'df': 'At what radius splash damage starts applying.'} | 5 |
-| [`aoe_chance`](./Enums.md#enum-aoe_chance) | Enum | {'type': '`Enum/String`', 'df': 'Percentage chance for the AoE to trigger.'} | 4 |
-| `as_the_crow_flies` | Boolean | {'type': '`Boolean`', 'df': 'Calculates range ignoring all pathing terrain obstacles.'} | 4 |
-| `force_ai_target_as_spell` | Boolean | {'type': '`Boolean`', 'df': 'Forces the AI to treat a physical move like a spell for targeting logic.'} | 4 |
-| [`mouse_offset`](./Arrays.md#array-mouse_offset) | Array | {'type': '`Array`', 'df': 'Visual offset for the targeting cursor.'} | 4 |
-| `range_display_include_aoe` | Boolean | {'type': '`Boolean`', 'df': 'Visual: shows the full AoE potential when previewing range.'} | 4 |
-| `shotgun_mode` | Boolean | {'type': '`Boolean`', 'df': 'Deals more damage/hits if targets are closer.'} | 4 |
-| `shuffle_tile_order` | Boolean | {'type': '`Boolean`', 'df': 'Randomizes the execution order of AoE tiles.'} | 4 |
-| `upgrade_straight_shot_to_boomerang` | Boolean | {'type': '`Boolean`', 'df': 'Makes the projectile return to caster.'} | 4 |
-| `low_health_character_threshold` | Mixed | {'type': '`Enum/String`', 'df': 'AI targeting threshold for seeking weak targets.'} | 3 |
-| `randomize_target_within_range` | Number | {'type': '`Number`', 'df': "Picks a random valid tile instead of the user's click."} | 3 |
-| [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | {'type': '`Enum/String`', 'df': 'Targets only tiles with this specific tag.'} | 3 |
-| `track_target` | Boolean | {'type': '`Boolean`', 'df': 'Projectile/Effect follows moving targets.'} | 3 |
-| `corpse_priority` | Number | {'type': '`Number`', 'df': 'AI preference for targeting dead bodies.'} | 2 |
-| `hint_can_target_empty` | Boolean | {'type': '`Boolean`', 'df': 'UI hint that the player can click an empty tile.'} | 2 |
-| `low_gravity_boostable` | Boolean | {'type': '`Boolean`', 'df': 'Can be affected by low gravity wind/effects.'} | 2 |
-| `prioritize_change_direction` | Boolean | {'type': '`Boolean`', 'df': 'AI preference to attack from different angles.'} | 2 |
-| [`range_bonuses`](./Enums.md#enum-range_bonuses) | Enum | {'type': '`Enum/String`', 'df': 'How much extra range is added by stats/passives.'} | 2 |
-| `range_display_include_direction` | Boolean | {'type': '`Boolean`', 'df': 'Visual: shows directional arrows.'} | 2 |
-| `recalc_target_on_castpoint` | Boolean | {'type': '`Boolean`', 'df': 'Re-checks if target is valid at the exact frame of cast.'} | 2 |
-| `redirect_location_if_blocked` | Boolean | {'type': '`Boolean`', 'df': 'Shifts target to adjacent tile if original is invalid.'} | 2 |
-| [`target_requires_element`](./Arrays.md#array-target_requires_element) | Array | {'type': '`Array`', 'df': 'Target must be afflicted with this element.'} | 2 |
-| `trample_allies_too` | Boolean | {'type': '`Boolean`', 'df': 'Trample movement damages allies in the path.'} | 2 |
-| [`adjust_target`](./Enums.md#enum-adjust_target) | Enum | {'type': '`Enum/String`', 'df': 'Tweaks target selection post-cast.'} | 1 |
-| `allow_diagonal_passthrough` | Boolean | {'type': '`Boolean`', 'df': 'Permits diagonal targeting through tight corners.'} | 1 |
-| `ally_priority` | Number | {'type': '`Number`', 'df': 'AI preference for targeting allies.'} | 1 |
-| `aoe_display_exclude_restrictions` | Boolean | {'type': '`Boolean`', 'df': 'Visual only: Hides invalid tiles from the AoE preview.'} | 1 |
-| `aoe_rotate_around_character_center` | Boolean | {'type': '`Boolean`', 'df': 'Anchors the AoE rotation to the character rather than the tile.'} | 1 |
-| `bonus_pathing_leniency` | Number | {'type': '`Number`', 'df': 'Gives the AI leeway when calculating complex paths.'} | 1 |
-| [`custom_aoe_mirror`](./Arrays.md#array-custom_aoe_mirror) | Array | {'type': '`Array`', 'df': 'How the custom shape mirrors when facing left vs right.'} | 1 |
-| [`custom_aoe_util_mirror`](./Arrays.md#array-custom_aoe_util_mirror) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| `damage_collided_only` | Boolean | {'type': '`Boolean`', 'df': 'Only damages the first entity the projectile/dash hits.'} | 1 |
-| `enemy_priority` | Number | {'type': '`Number`', 'df': 'AI preference for targeting enemies.'} | 1 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 162 |
-| `hint_can_target_static` | Boolean | {'type': '`Boolean`', 'df': 'UI hint that the player can target inanimate objects.'} | 1 |
-| [`knockback_modifier`](./Enums.md#enum-knockback_modifier) | Enum | {'type': '`Enum/String`', 'df': 'Multiplier for the knockback physics force.'} | 1 |
-| `lingering` | Boolean | {'type': '`Boolean`', 'df': 'Target zone remains active across multiple turns.'} | 1 |
-| `mirror_custom_aoe` | Boolean | {'type': '`Boolean`', 'df': 'Flips the custom AoE array.'} | 1 |
-| [`prioritize_throw_target_with_passive`](./Enums.md#enum-prioritize_throw_target_with_passive) | Enum | {'type': '`Enum/String`', 'df': 'AI prefers throwing targets that have specific passives.'} | 1 |
-| `randomize_knockback_direction_except_for_finisher` | Boolean | {'type': '`Boolean`', 'df': 'Chaotic knockback unless it kills the target.'} | 1 |
-| `range_excludes_self` | Boolean | {'type': '`Boolean`', 'df': "Cannot click on the caster's tile."} | 1 |
-| `range_max` | Number | {'type': '`Number`', 'df': 'Alternate syntax for `max_range`/`min_range`.'} | 1 |
-| `range_min` | Number | {'type': '`Number`', 'df': 'Alternate syntax for `max_range`/`min_range`.'} | 1 |
-| [`range_symmetry`](./Enums.md#enum-range_symmetry) | Enum | {'type': '`Enum/String`', 'df': 'Mirrors the range grid.'} | 1 |
-| `remain_off_map` | Boolean | {'type': '`Boolean`', 'df': 'Keeps entity removed from the grid.'} | 1 |
-| [`restructions`](./Enums.md#enum-restructions) | Enum | {'type': '`Enum/String`', 'df': 'Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`).'} | 1 |
-| `reverse_target_direction` | Boolean | {'type': '`Boolean`', 'df': 'Inverts the targeting vector.'} | 1 |
-| `spin_steps` | Number | {'type': '`Number`', 'df': 'Number of rotational increments for spin targeting.'} | 1 |
-| `uncounterable` | Boolean | {'type': '`Boolean`', 'df': 'Bypasses counter-attack passives.'} | 1 |
+| `max_range` | Number | The maximum and minimum distance required to cast. | 1088 |
+| `max_aoe` | Number | The maximum and minimum radius/length of the AoE. | 795 |
+| [`target_mode`](./Enums.md#enum-target_mode) | Enum | How the cursor operates (`tile`, `direction`, `none`). | 503 |
+| [`restrictions`](./Arrays.md#array-restrictions) | Array | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 463 |
+| [`aoe_mode`](./Enums.md#enum-aoe_mode) | Enum | The shape of the area (`standard`, `line`, `cross`, `square`, `custom`). | 432 |
+| [`knockback_mode`](./Enums.md#enum-knockback_mode) | Enum | How physics vectors apply (`character_to_tile`, `pull_to_character`, `zero`, `orientation`). | 265 |
+| `min_aoe` | Mixed | The maximum and minimum radius/length of the AoE. | 253 |
+| `aoe_excludes_self` | Boolean | Prevents the AoE from hitting the caster. | 241 |
+| [`aoe_restrictions`](./Arrays.md#array-aoe_restrictions) | Array | Array of conditions the AoE tiles must meet (e.g., `must_have_line_of_sight_unpurgable`). | 197 |
+| `aoe_considers_character_size` | Boolean | Scales the AoE based on the caster's tile size (e.g., 2x2). | 170 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 162 |
+| [`range_mode`](./Enums.md#enum-range_mode) | Enum | How range is counted (`standard`, `ground_move`). | 114 |
+| [`X_is`](./Enums.md#enum-x_is) | Enum | Applies or references the 'X_is' effect/state. | 86 |
+| [`custom_aoe`](./Arrays.md#array-custom_aoe) | Array | Array of exact coordinates for a custom shape (e.g., `[[1, -1] [1, 0]]`). | 83 |
+| `multihit` | Number | Hardcoded number of times the ability hits the target. | 62 |
+| `max_targets` | Number | Limits on how many distinct entities can be targeted. | 56 |
+| `range_excludes_blocking` | Boolean | Cannot target through walls/obstacles. | 53 |
+| `prioritize_dont_change_direction` | Mixed | AI preference to maintain current facing angle. | 52 |
+| [`target_requires_tag`](./Enums.md#enum-target_requires_tag) | Enum | Target must possess this exact character tag. | 40 |
+| [`aoe_symmetry`](./Enums.md#enum-aoe_symmetry) | Enum | Determines if the AoE mirrors on axes. | 28 |
+| `prioritize_face_camera` | Mixed | AI preference to face South. | 26 |
+| `straight_shot` | Boolean | Ensures projectiles do not arc. | 24 |
+| `can_multihit` | Boolean | If true, overlapping AoEs can hit the same target multiple times. | 17 |
+| `allow_any_orientation` | Boolean | Allows casting regardless of the character's facing direction. | 16 |
+| `range_considers_character_size` | Boolean | Range calculation accounts for large entities. | 16 |
+| `throw_consumed_character` | Boolean | Throws the entity currently held/eaten. | 15 |
+| `min_targets` | Number | Limits on how many distinct entities can be targeted. | 14 |
+| `aoe_leading_edge_only` | Boolean | Only the outermost edge of the AoE shape applies effects. | 13 |
+| `allow_diagonals` | Boolean | Allows targeting on diagonal grid axes. | 12 |
+| `range_display_include_character_size` | Boolean | Visual: offsets the range indicator for 2x2 units. | 12 |
+| `stagger_multihit_targets` | Boolean | Delays hits slightly between multiple targets. | 12 |
+| `upgrade_straight_shot_to_piercing` | Boolean | Allows the projectile to pass through multiple targets. | 11 |
+| `delayed_trigger` | Boolean | Delays the actual execution of the target effect. | 10 |
+| `consider_trample` | Boolean | AI consideration for moving through units. | 9 |
+| [`custom_range`](./Arrays.md#array-custom_range) | Array | Overrides standard range scaling. | 7 |
+| `N` | Number | Variable modifier parameter. | 7 |
+| [`custom_aoe_util`](./Arrays.md#array-custom_aoe_util) | Array | Utility variants of custom AoE definitions. | 6 |
+| [`toss_direction_restriction`](./Enums.md#enum-toss_direction_restriction) | Enum | Limits which ways an entity can be tossed. | 6 |
+| `always_bounce` | Boolean | Forces the attack/projectile to bounce regardless of hit. | 6 |
+| `multihit_max` | Number | Variable limits for random multihit abilities. | 6 |
+| `multihit_min` | Number | Variable limits for random multihit abilities. | 6 |
+| `reorient_thrown_character` | Boolean | Forces a thrown entity to face a certain way. | 6 |
+| [`aoe_tile_requires_element`](./Enums.md#enum-aoe_tile_requires_element) | Enum | Only affects tiles painted with a specific element. | 5 |
+| `aoe_hint_teamcast` | Boolean | Visual hint for cooperative casting abilities. | 5 |
+| `distance_sort_targets` | Mixed | Prioritizes targets based on proximity. | 5 |
+| `dont_orient_aoe` | Boolean | Prevents the AoE shape from rotating with the character. | 5 |
+| `hint_can_target_pickups` | Boolean | UI hint that the player can target items on the ground. | 5 |
+| `max_bounces` | Number | Hard cap on how many times a bouncing effect can trigger. | 5 |
+| `splash_damage_aoe_begin` | Number | At what radius splash damage starts applying. | 5 |
+| [`aoe_chance`](./Enums.md#enum-aoe_chance) | Enum | Percentage chance for the AoE to trigger. | 4 |
+| [`mouse_offset`](./Arrays.md#array-mouse_offset) | Array | Visual offset for the targeting cursor. | 4 |
+| `as_the_crow_flies` | Boolean | Calculates range ignoring all pathing terrain obstacles. | 4 |
+| `force_ai_target_as_spell` | Boolean | Forces the AI to treat a physical move like a spell for targeting logic. | 4 |
+| `range_display_include_aoe` | Boolean | Visual: shows the full AoE potential when previewing range. | 4 |
+| `shotgun_mode` | Boolean | Deals more damage/hits if targets are closer. | 4 |
+| `shuffle_tile_order` | Boolean | Randomizes the execution order of AoE tiles. | 4 |
+| `upgrade_straight_shot_to_boomerang` | Boolean | Makes the projectile return to caster. | 4 |
+| [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | Targets only tiles with this specific tag. | 3 |
+| `low_health_character_threshold` | Mixed | AI targeting threshold for seeking weak targets. | 3 |
+| `randomize_target_within_range` | Number | Picks a random valid tile instead of the user's click. | 3 |
+| `track_target` | Boolean | Projectile/Effect follows moving targets. | 3 |
+| [`range_bonuses`](./Enums.md#enum-range_bonuses) | Enum | How much extra range is added by stats/passives. | 2 |
+| [`target_requires_element`](./Arrays.md#array-target_requires_element) | Array | Target must be afflicted with this element. | 2 |
+| `corpse_priority` | Number | AI preference for targeting dead bodies. | 2 |
+| `hint_can_target_empty` | Boolean | UI hint that the player can click an empty tile. | 2 |
+| `low_gravity_boostable` | Boolean | Can be affected by low gravity wind/effects. | 2 |
+| `prioritize_change_direction` | Boolean | AI preference to attack from different angles. | 2 |
+| `range_display_include_direction` | Boolean | Visual: shows directional arrows. | 2 |
+| `recalc_target_on_castpoint` | Boolean | Re-checks if target is valid at the exact frame of cast. | 2 |
+| `redirect_location_if_blocked` | Boolean | Shifts target to adjacent tile if original is invalid. | 2 |
+| `trample_allies_too` | Boolean | Trample movement damages allies in the path. | 2 |
+| [`adjust_target`](./Enums.md#enum-adjust_target) | Enum | Tweaks target selection post-cast. | 1 |
+| [`custom_aoe_mirror`](./Arrays.md#array-custom_aoe_mirror) | Array | How the custom shape mirrors when facing left vs right. | 1 |
+| [`custom_aoe_util_mirror`](./Arrays.md#array-custom_aoe_util_mirror) | Array |  | 1 |
+| [`knockback_modifier`](./Enums.md#enum-knockback_modifier) | Enum | Multiplier for the knockback physics force. | 1 |
+| [`prioritize_throw_target_with_passive`](./Enums.md#enum-prioritize_throw_target_with_passive) | Enum | AI prefers throwing targets that have specific passives. | 1 |
+| [`range_symmetry`](./Enums.md#enum-range_symmetry) | Enum | Mirrors the range grid. | 1 |
+| [`restructions`](./Enums.md#enum-restructions) | Enum | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 1 |
+| `allow_diagonal_passthrough` | Boolean | Permits diagonal targeting through tight corners. | 1 |
+| `ally_priority` | Number | AI preference for targeting allies. | 1 |
+| `aoe_display_exclude_restrictions` | Boolean | Visual only: Hides invalid tiles from the AoE preview. | 1 |
+| `aoe_rotate_around_character_center` | Boolean | Anchors the AoE rotation to the character rather than the tile. | 1 |
+| `bonus_pathing_leniency` | Number | Gives the AI leeway when calculating complex paths. | 1 |
+| `damage_collided_only` | Boolean | Only damages the first entity the projectile/dash hits. | 1 |
+| `enemy_priority` | Number | AI preference for targeting enemies. | 1 |
+| `hint_can_target_static` | Boolean | UI hint that the player can target inanimate objects. | 1 |
+| `lingering` | Boolean | Target zone remains active across multiple turns. | 1 |
+| `mirror_custom_aoe` | Boolean | Flips the custom AoE array. | 1 |
+| `randomize_knockback_direction_except_for_finisher` | Boolean | Chaotic knockback unless it kills the target. | 1 |
+| `range_excludes_self` | Boolean | Cannot click on the caster's tile. | 1 |
+| `range_max` | Number | Alternate syntax for `max_range`/`min_range`. | 1 |
+| `range_min` | Number | Alternate syntax for `max_range`/`min_range`. | 1 |
+| `remain_off_map` | Boolean | Keeps entity removed from the grid. | 1 |
+| `reverse_target_direction` | Boolean | Inverts the targeting vector. | 1 |
+| `spin_steps` | Number | Number of rotational increments for spin targeting. | 1 |
+| `uncounterable` | Boolean | Bypasses counter-attack passives. | 1 |
 
 </details>
 
@@ -262,49 +262,49 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `mana` | Number | {'type': '`Number`', 'df': 'MP pool and how much it restores per turn.'} | 1603 |
-| `infcantrip` | Boolean | {'type': '`Boolean`', 'df': 'Can be cast infinitely as long as costs are met.'} | 810 |
-| `cantrip` | Boolean | {'type': '`Boolean`', 'df': 'Does not end the turn when cast.'} | 560 |
-| `once_per_fight` | Mixed | {'type': '`Enum/String`', 'df': 'Exhausts for the remainder of combat after one use.'} | 98 |
-| `act_points` | Number | {'type': '`Number`', 'df': 'Consumes primary action points (default 1).'} | 86 |
-| `move_points` | Number | {'type': '`Number`', 'df': 'Consumes movement points.'} | 59 |
-| `prime` | Number | {'type': '`Number`', 'df': 'Requires a "priming" turn before it fires.'} | 30 |
-| `allow_offmap_casts` | Boolean | {'type': '`Boolean`', 'df': 'Can be used while the character is hidden/removed from grid.'} | 22 |
-| `cant_cast` | Mixed | {'type': '`Enum/String`', 'df': 'Explicitly disables casting (used for passive-triggered only abilities).'} | 18 |
-| `must_be_consuming` | Boolean | {'type': '`Boolean`', 'df': 'Requires the character to be eating/holding something.'} | 17 |
-| `charge` | Mixed | {'type': '`Number`', 'df': 'Cooldown timers measured in turns.'} | 16 |
-| `must_not_be_consuming` | Boolean | {'type': '`Boolean`', 'df': 'Cannot be holding/eating an entity.'} | 14 |
-| `requires_reload` | Boolean | {'type': '`Boolean`', 'df': 'Must spend an action to reload before casting again.'} | 14 |
-| `can_cast_while_dead` | Boolean | {'type': '`Boolean`', 'df': 'Usable by corpses (e.g., DeathRattle triggers).'} | 12 |
-| [`cantrip_group`](./Enums.md#enum-cantrip_group) | Enum | {'type': '`Enum/String`', 'df': 'Groups cantrips so using one exhausts the others.'} | 12 |
-| `must_be_offmap` | Boolean | {'type': '`Boolean`', 'df': 'Requires the character to be hidden/dug underground.'} | 12 |
-| `X_cant_be_zero` | Boolean | {'type': '`Boolean`', 'df': "Applies or references the 'X_cant_be_zero' effect/state."} | 11 |
-| `disallow_cost_modification` | Boolean | {'type': '`Boolean`', 'df': 'Prevents passives from making this cheaper.'} | 9 |
-| `coins` | Number | {'type': '`Number`', 'df': 'Consumes currency to cast.'} | 8 |
-| `durability` | Number | {'type': '`Number`', 'df': 'Consumes item durability.'} | 8 |
-| `main_turn_only` | Boolean | {'type': '`Boolean`', 'df': 'Cannot be cast during bonus or dispersed turns.'} | 8 |
-| `requires_destructible_weapon` | Boolean | {'type': '`Boolean`', 'df': 'The equipped weapon must be breakable.'} | 8 |
-| `requires_exact_character_aux` | Number | {'type': '`Number`', 'df': 'Hardcoded character specific lock.'} | 8 |
-| `must_not_be_a_summon` | Boolean | {'type': '`Boolean`', 'df': 'Summons/Familiars cannot cast this.'} | 7 |
-| `start_reloaded` | Boolean | {'type': '`Boolean`', 'df': 'Spawns with the ability pre-loaded.'} | 7 |
-| `must_be_first_action` | Boolean | {'type': '`Boolean`', 'df': 'Can only be used at the very start of the turn.'} | 4 |
-| `enabled_formula` | Mixed | {'type': '`Number`', 'df': 'Mathematical string required to be >0 to cast.'} | 3 |
-| `must_be_first_nonmove_action` | Boolean | {'type': '`Boolean`', 'df': 'Can move first, but cannot use other abilities first.'} | 3 |
-| `must_have_weapon` | Boolean | {'type': '`Boolean`', 'df': 'Requires a weapon equipped in the item slot.'} | 2 |
-| `can_be_refreshed` | Boolean | {'type': '`Boolean`', 'df': "Passives/Effects can reset this ability's cooldown."} | 1 |
-| `can_pay_over_multiple_turns` | Boolean | {'type': '`Boolean`', 'df': 'Allows channeling costs over time.'} | 1 |
-| `can_self_refresh` | Boolean | {'type': '`Boolean`', 'df': 'The ability has mechanics to reset its own cooldown.'} | 1 |
-| `damage_cant_be_zero` | Boolean | {'type': '`Boolean`', 'df': 'Requires the ability to have >0 calculated damage to cast.'} | 1 |
-| `initial_charge` | Number | {'type': '`Number`', 'df': 'How many turns it starts on cooldown at battle start.'} | 1 |
-| `manacost_cant_be_zero` | Boolean | {'type': '`Boolean`', 'df': 'Fails to cast if mana cost is reduced to 0.'} | 1 |
-| `minimum_con` | Number | {'type': '`Number`', 'df': 'Stat thresholds required to cast.'} | 1 |
-| `minimum_spd` | Number | {'type': '`Number`', 'df': 'Stat thresholds required to cast.'} | 1 |
-| `require_default_size` | Boolean | {'type': '`Boolean`', 'df': '2x2 or altered characters cannot cast this.'} | 1 |
-| `requires_attack_damage_threshold` | Number | {'type': '`Number`', 'df': 'Needs a certain amount of innate damage.'} | 1 |
-| `requires_consumed_trinket` | Boolean | {'type': '`Boolean`', 'df': 'Must have eaten a specific item type.'} | 1 |
-| `requires_empty_trinket` | Boolean | {'type': '`Boolean`', 'df': 'Must not have an accessory equipped.'} | 1 |
-| `requires_hp_threshold` | Number | {'type': '`Number`', 'df': 'Must be below/above a certain health percentage.'} | 1 |
-| `requires_weapon` | Boolean | {'type': '`Boolean`', 'df': 'Prerequisite: Must meet this condition.'} | 1 |
+| `mana` | Number | MP pool and how much it restores per turn. | 1603 |
+| `infcantrip` | Boolean | Can be cast infinitely as long as costs are met. | 810 |
+| `cantrip` | Boolean | Does not end the turn when cast. | 560 |
+| `once_per_fight` | Mixed | Exhausts for the remainder of combat after one use. | 98 |
+| `act_points` | Number | Consumes primary action points (default 1). | 86 |
+| `move_points` | Number | Consumes movement points. | 59 |
+| `prime` | Number | Requires a "priming" turn before it fires. | 30 |
+| `allow_offmap_casts` | Boolean | Can be used while the character is hidden/removed from grid. | 22 |
+| `cant_cast` | Mixed | Explicitly disables casting (used for passive-triggered only abilities). | 18 |
+| `must_be_consuming` | Boolean | Requires the character to be eating/holding something. | 17 |
+| `charge` | Mixed | Cooldown timers measured in turns. | 16 |
+| `must_not_be_consuming` | Boolean | Cannot be holding/eating an entity. | 14 |
+| `requires_reload` | Boolean | Must spend an action to reload before casting again. | 14 |
+| [`cantrip_group`](./Enums.md#enum-cantrip_group) | Enum | Groups cantrips so using one exhausts the others. | 12 |
+| `can_cast_while_dead` | Boolean | Usable by corpses (e.g., DeathRattle triggers). | 12 |
+| `must_be_offmap` | Boolean | Requires the character to be hidden/dug underground. | 12 |
+| `X_cant_be_zero` | Boolean | Applies or references the 'X_cant_be_zero' effect/state. | 11 |
+| `disallow_cost_modification` | Boolean | Prevents passives from making this cheaper. | 9 |
+| `coins` | Number | Consumes currency to cast. | 8 |
+| `durability` | Number | Consumes item durability. | 8 |
+| `main_turn_only` | Boolean | Cannot be cast during bonus or dispersed turns. | 8 |
+| `requires_destructible_weapon` | Boolean | The equipped weapon must be breakable. | 8 |
+| `requires_exact_character_aux` | Number | Hardcoded character specific lock. | 8 |
+| `must_not_be_a_summon` | Boolean | Summons/Familiars cannot cast this. | 7 |
+| `start_reloaded` | Boolean | Spawns with the ability pre-loaded. | 7 |
+| `must_be_first_action` | Boolean | Can only be used at the very start of the turn. | 4 |
+| `enabled_formula` | Mixed | Mathematical string required to be >0 to cast. | 3 |
+| `must_be_first_nonmove_action` | Boolean | Can move first, but cannot use other abilities first. | 3 |
+| `must_have_weapon` | Boolean | Requires a weapon equipped in the item slot. | 2 |
+| `can_be_refreshed` | Boolean | Passives/Effects can reset this ability's cooldown. | 1 |
+| `can_pay_over_multiple_turns` | Boolean | Allows channeling costs over time. | 1 |
+| `can_self_refresh` | Boolean | The ability has mechanics to reset its own cooldown. | 1 |
+| `damage_cant_be_zero` | Boolean | Requires the ability to have >0 calculated damage to cast. | 1 |
+| `initial_charge` | Number | How many turns it starts on cooldown at battle start. | 1 |
+| `manacost_cant_be_zero` | Boolean | Fails to cast if mana cost is reduced to 0. | 1 |
+| `minimum_con` | Number | Stat thresholds required to cast. | 1 |
+| `minimum_spd` | Number | Stat thresholds required to cast. | 1 |
+| `require_default_size` | Boolean | 2x2 or altered characters cannot cast this. | 1 |
+| `requires_attack_damage_threshold` | Number | Needs a certain amount of innate damage. | 1 |
+| `requires_consumed_trinket` | Boolean | Must have eaten a specific item type. | 1 |
+| `requires_empty_trinket` | Boolean | Must not have an accessory equipped. | 1 |
+| `requires_hp_threshold` | Number | Must be below/above a certain health percentage. | 1 |
+| `requires_weapon` | Boolean | Prerequisite: Must meet this condition. | 1 |
 
 </details>
 
@@ -321,13 +321,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 65 |
-| `damage` | Mixed | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 47 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'Classification/category type.'} | 11 |
-| `knockback` | Number | {'type': '`Number`', 'df': ''} | 10 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 65 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 47 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 4 |
-| `ai_base_score` | Number | {'type': '`Number`', 'df': ''} | 2 |
+| `damage` | Mixed | The base damage properties of an attack. | 47 |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 |
+| `knockback` | Number |  | 10 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 4 |
+| `ai_base_score` | Number |  | 2 |
 
 </details>
 
@@ -344,26 +344,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 184 |
-| [`faction`](./Enums.md#enum-faction) | Enum | {'type': '`Enum/String`', 'df': ''} | 59 |
-| `ai_base_score` | Number | {'type': '`Number`', 'df': ''} | 31 |
-| [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives) | Block | {'type': '`Block`', 'df': "Passives granted intrinsically to a spawned entity. | 20 |
-| [`first_turn`](./Enums.md#enum-first_turn) | Enum | {'type': '`Enum/String`', 'df': ''} | 17 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 86 |
-| [`catdata`](./Enums.md#enum-catdata) | Enum | {'type': '`Enum/String`', 'df': 'Defines genetic/clone data cloning.'} | 13 |
-| `clone_items` | Boolean | {'type': '`Boolean`', 'df': 'If true, transfers inventory to the clone.'} | 12 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 184 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 86 |
+| [`faction`](./Enums.md#enum-faction) | Enum |  | 59 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 48 |
-| [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses) | Block | {'type': '`Block`', 'df': "Status effects applied immediately after an entity spawns. | 4 |
-| `size` | Number | {'type': '`Number`', 'df': ''} | 4 |
-| `face_camera` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `inherit_elite_buffs` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `start_dead` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| [`appearance`](./Enums.md#enum-appearance) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`auto_cast_on_spawn`](./Enums.md#enum-auto_cast_on_spawn) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`chapter`](./Enums.md#enum-chapter) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `include_passives` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `redirect_location_if_blocked` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `trigger_battle_start` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `ai_base_score` | Number |  | 31 |
+| [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives) | Block | Passives granted intrinsically to a spawned entity. | 20 |
+| [`first_turn`](./Enums.md#enum-first_turn) | Enum |  | 17 |
+| [`catdata`](./Enums.md#enum-catdata) | Enum | Defines genetic/clone data cloning. | 13 |
+| `clone_items` | Boolean | If true, transfers inventory to the clone. | 12 |
+| [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses) | Block | Status effects applied immediately after an entity spawns. | 4 |
+| `size` | Number |  | 4 |
+| `face_camera` | Boolean |  | 2 |
+| `inherit_elite_buffs` | Boolean |  | 2 |
+| `start_dead` | Boolean |  | 2 |
+| [`appearance`](./Enums.md#enum-appearance) | Enum |  | 1 |
+| [`auto_cast_on_spawn`](./Enums.md#enum-auto_cast_on_spawn) | Enum |  | 1 |
+| [`chapter`](./Enums.md#enum-chapter) | Enum |  | 1 |
+| `include_passives` | Boolean |  | 1 |
+| `redirect_location_if_blocked` | Boolean |  | 1 |
+| `trigger_battle_start` | Boolean |  | 1 |
 
 </details>
 
@@ -398,16 +398,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 34 |
-| `CastAgain` | Number | {'type': '`Number`', 'df': "Applies or references the 'CastAgain' effect/state."} | 20 |
-| `DisableTrample` | Number | {'type': '`Number`', 'df': "Applies or references the 'DisableTrample' effect/state."} | 10 |
-| `Fury` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fury' effect/state."} | 7 |
-| `JustInCaseTrample` | Number | {'type': '`Number`', 'df': "Applies or references the 'JustInCaseTrample' effect/state."} | 5 |
-| [`LeaveBehind`](./Abilities_and_Spells.md#context-leavebehind) | Block | {'type': '`Enum/String`', 'df': "Spawns a specific object at the character's previous location when they move."} | 5 |
-| `DashFury` | Number | {'type': '`Number`', 'df': "Applies or references the 'DashFury' effect/state."} | 3 |
-| `BearTrapTrail` | Number | {'type': '`Number`', 'df': "Applies or references the 'BearTrapTrail' effect/state."} | 2 |
-| `DelayedWindTrail` | Number | {'type': '`Number`', 'df': "Applies or references the 'DelayedWindTrail' effect/state."} | 1 |
+| `CastAgain` | Number | Applies or references the 'CastAgain' effect/state. | 20 |
+| `DisableTrample` | Number | Applies or references the 'DisableTrample' effect/state. | 10 |
+| `Fury` | Number | Applies or references the 'Fury' effect/state. | 7 |
+| [`LeaveBehind`](./Abilities_and_Spells.md#context-leavebehind) | Block | Spawns a specific object at the character's previous location when they move. | 5 |
+| `JustInCaseTrample` | Number | Applies or references the 'JustInCaseTrample' effect/state. | 5 |
+| `DashFury` | Number | Applies or references the 'DashFury' effect/state. | 3 |
+| `BearTrapTrail` | Number | Applies or references the 'BearTrapTrail' effect/state. | 2 |
+| [`JumpAttackLeaveBehind`](./Enums.md#enum-jumpattackleavebehind) | Enum | Applies or references the 'JumpAttackLeaveBehind' effect/state. | 1 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`JumpAttackLeaveBehind`](./Enums.md#enum-jumpattackleavebehind) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'JumpAttackLeaveBehind' effect/state."} | 1 |
+| `DelayedWindTrail` | Number | Applies or references the 'DelayedWindTrail' effect/state. | 1 |
 
 </details>
 
@@ -442,8 +442,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 22 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 43 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 22 |
 
 </details>
 
@@ -460,9 +460,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The specific string tag to check for.'} | 41 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 49 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 63 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 49 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 41 |
 
 </details>
 
@@ -479,14 +479,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 41 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The status effect to apply.'} | 40 |
-| `turns` | Number | {'type': '`Number`', 'df': 'Duration in turns.'} | 40 |
-| `expires_on_begin_turn` | Boolean | {'type': '`Boolean`', 'df': 'If true, ticks down at the start of the turn rather than the end.'} | 19 |
-| `expires_on_end_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 11 |
-| `data` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `expires_on_appliers_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `expires_on_move` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 41 |
+| [`status`](./Enums.md#enum-status) | Enum | The status effect to apply. | 40 |
+| `turns` | Number | Duration in turns. | 40 |
+| `expires_on_begin_turn` | Boolean | If true, ticks down at the start of the turn rather than the end. | 19 |
+| `expires_on_end_turn` | Boolean |  | 11 |
+| `data` | Number |  | 2 |
+| `expires_on_appliers_turn` | Boolean |  | 2 |
+| `expires_on_move` | Boolean |  | 1 |
 
 </details>
 
@@ -503,10 +503,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ontrigger`](./Enums.md#enum-ontrigger) | Enum | {'type': '`Enum/String`', 'df': ''} | 32 |
-| [`oncast`](./Enums.md#enum-oncast) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`oncastpoint`](./Enums.md#enum-oncastpoint) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`ontrigger_intentional`](./Enums.md#enum-ontrigger_intentional) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`ontrigger`](./Enums.md#enum-ontrigger) | Enum |  | 32 |
+| [`oncast`](./Enums.md#enum-oncast) | Enum |  | 3 |
+| [`oncastpoint`](./Enums.md#enum-oncastpoint) | Enum |  | 3 |
+| [`ontrigger_intentional`](./Enums.md#enum-ontrigger_intentional) | Enum |  | 1 |
 
 </details>
 
@@ -523,8 +523,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 40 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 
 </details>
 
@@ -541,12 +541,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 32 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 33 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 13 |
-| `knockback` | Number | {'type': '`Number`', 'df': 'Knockback force of the splash blast.'} | 13 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'Classification/category type.'} | 12 |
-| `ai_base_score` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 33 |
+| `damage` | Number | The base damage properties of an attack. | 32 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 13 |
+| `knockback` | Number | Knockback force of the splash blast. | 13 |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 12 |
+| `ai_base_score` | Number |  | 1 |
 
 </details>
 
@@ -582,7 +582,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 10 |
-| `TemporaryItem` | Number | {'type': '`Number`', 'df': "Applies or references the 'TemporaryItem' effect/state."} | 1 |
+| `TemporaryItem` | Number | Applies or references the 'TemporaryItem' effect/state. | 1 |
 
 </details>
 
@@ -599,8 +599,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 13 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': ''} | 13 |
+| [`pool`](./Enums.md#enum-pool) | Enum |  | 13 |
+| `upgraded` | Boolean |  | 13 |
 
 </details>
 
@@ -617,10 +617,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `distance` | Number | {'type': '`Number`', 'df': 'The distance in tiles to knock the target away.'} | 20 |
-| `stacks` | Mixed | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 18 |
-| `height` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `circular_variance` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `distance` | Number | The distance in tiles to knock the target away. | 20 |
+| `stacks` | Mixed | Number of stacks or intensity to apply. | 18 |
+| `height` | Number |  | 2 |
+| `circular_variance` | Number |  | 1 |
 
 </details>
 
@@ -689,8 +689,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 29 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 
 </details>
 
@@ -707,8 +707,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `form` | Mixed | {'type': '`String`', 'df': ''} | 75 |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
+| `form` | Mixed |  | 75 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -743,11 +743,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
-| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'BreakIntoRocks' effect/state."} | 4 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
-| `GetAggroTarget` | Number | {'type': '`Number`', 'df': "Applies or references the 'GetAggroTarget' effect/state."} | 2 |
-| `PreventDeathTransforms` | Number | {'type': '`Number`', 'df': "Applies or references the 'PreventDeathTransforms' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 4 |
+| `GetAggroTarget` | Number | Applies or references the 'GetAggroTarget' effect/state. | 2 |
+| `PreventDeathTransforms` | Number | Applies or references the 'PreventDeathTransforms' effect/state. | 1 |
 
 </details>
 
@@ -764,22 +764,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ear1` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the front ear.'} | 10 |
-| `tail` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the tail.'} | 10 |
-| `ear2` | Number | {'type': '`Number`', 'df': ''} | 9 |
-| `arm2` | Number | {'type': '`Number`', 'df': ''} | 8 |
-| `mouth` | Number | {'type': '`Number`', 'df': ''} | 8 |
-| `arm1` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the front arm.'} | 7 |
-| `leg1` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the front leg.'} | 5 |
-| `leg2` | Number | {'type': '`Number`', 'df': ''} | 5 |
-| `head` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the head.'} | 3 |
-| `texture` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| `body` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the body.'} | 2 |
-| `eye1` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `eye2` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `eyebrow1` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `eyebrow2` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 17 |
+| `ear1` | Number | Sprite variant ID for the front ear. | 10 |
+| `tail` | Number | Sprite variant ID for the tail. | 10 |
+| `ear2` | Number |  | 9 |
+| `arm2` | Number |  | 8 |
+| `mouth` | Number |  | 8 |
+| `arm1` | Number | Sprite variant ID for the front arm. | 7 |
+| `leg1` | Number | Sprite variant ID for the front leg. | 5 |
+| `leg2` | Number |  | 5 |
+| `head` | Number | Sprite variant ID for the head. | 3 |
+| `texture` | Number |  | 3 |
+| `body` | Number | Sprite variant ID for the body. | 2 |
+| `eye1` | Number |  | 1 |
+| `eye2` | Number |  | 1 |
+| `eyebrow1` | Number |  | 1 |
+| `eyebrow2` | Number |  | 1 |
 
 </details>
 
@@ -796,8 +796,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 13 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -814,8 +814,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The specific status ID to check for.'} | 13 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 22 |
+| [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 13 |
 
 </details>
 
@@ -832,8 +832,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `full_size` | Boolean | {'type': '`Boolean`', 'df': 'If true, fires normal sized missiles instead of mini ones.'} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
+| `full_size` | Boolean | If true, fires normal sized missiles instead of mini ones. | 2 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -850,9 +850,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `odds` | Number | {'type': '`Number`', 'df': "The probability (0.0 to 1.0) of triggering the 'good roll' success state."} | 12 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 40 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 14 |
+| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
 
 </details>
 
@@ -887,8 +887,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `intensity` | Number | {'type': '`Number`', 'df': ''} | 10 |
-| `time` | Mixed | {'type': '`Number`', 'df': ''} | 10 |
+| `intensity` | Number |  | 10 |
+| `time` | Mixed |  | 10 |
 
 </details>
 
@@ -905,9 +905,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ability triggered upon successfully breaking free.'} | 11 |
-| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | {'type': '`Enum/String`', 'df': 'The ability triggered if the break free attempt fails.'} | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Percentage base chance to break free.'} | 3 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ability triggered upon successfully breaking free. | 11 |
+| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | The ability triggered if the break free attempt fails. | 3 |
+| `stacks` | Number | Percentage base chance to break free. | 3 |
 
 </details>
 
@@ -922,9 +922,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`tile`](./Arrays.md#array-tile) | Array | {'type': '`Enum/String`', 'df': 'The specific tile type to change into (e.g., GlassTile).'} | 11 |
-| `chance` | Mixed | {'type': '`Enum/String`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 2 |
-| `aoe` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`tile`](./Arrays.md#array-tile) | Array | The specific tile type to change into (e.g., GlassTile). | 11 |
+| `chance` | Mixed | Probability (0.0 to 1.0 or percentage) of this occurring. | 2 |
+| `aoe` | Number |  | 1 |
 
 </details>
 
@@ -941,7 +941,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability (0.0 to 1.0) that the cleave effect triggers.'} | 1 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0) that the cleave effect triggers. | 1 |
 
 </details>
 
@@ -975,9 +975,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`formula`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': 'The math expression to evaluate.'} | 8 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -994,10 +994,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
-| [`slot`](./Enums.md#enum-slot) | Enum | {'type': '`Enum/String`', 'df': ''} | 8 |
-| `temporary` | Boolean | {'type': '`Boolean`', 'df': ''} | 4 |
-| `works_with_tech` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`pool`](./Enums.md#enum-pool) | Enum |  | 9 |
+| [`slot`](./Enums.md#enum-slot) | Enum |  | 8 |
+| `temporary` | Boolean |  | 4 |
+| `works_with_tech` | Boolean |  | 1 |
 
 </details>
 
@@ -1031,8 +1031,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -1049,9 +1049,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum | {'type': '`Enum/String`', 'df': 'The specific form ID to check for.'} | 7 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -1068,7 +1068,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `immediate` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| `immediate` | Boolean |  | 2 |
 
 </details>
 
@@ -1085,8 +1085,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific dodge ability to trigger (e.g., DestroyerDodge).'} | 4 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 4 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 4 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 4 |
 
 </details>
 
@@ -1103,11 +1103,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Number | {'type': '`Number`', 'df': 'A flat numerical health value threshold.'} | 4 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 9 |
-| `threshold_percent` | Number | {'type': '`Number`', 'df': 'A percentage-based health threshold (e.g. 50%).'} | 2 |
+| `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`threshold_expr`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
+| `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
+| [`threshold_expr`](./Math_Equations.md) | Equation |  | 1 |
 
 </details>
 
@@ -1124,8 +1124,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -1160,8 +1160,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to conjure.'} | 2 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': 'If true, conjures the upgraded version of the ability.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to conjure. | 2 |
+| `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 2 |
 
 </details>
 
@@ -1178,9 +1178,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `intensity` | Number | {'type': '`Number`', 'df': ''} | 6 |
-| `radius` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 6 |
-| `speed` | Number | {'type': '`Number`', 'df': ''} | 6 |
+| `intensity` | Number |  | 6 |
+| `radius` | Number | Distance or area of effect in tiles. | 6 |
+| `speed` | Number |  | 6 |
 
 </details>
 
@@ -1197,8 +1197,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -1215,8 +1215,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Mixed | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0) of spawning.'} | 2 |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID of the character to spawn (e.g., CharmedFlea).'} | 2 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 2 |
+| `chance` | Mixed | Probability (0.0 to 1.0) of spawning. | 2 |
 
 </details>
 
@@ -1233,9 +1233,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`new_layer`](./Enums.md#enum-new_layer) | Enum | {'type': '`Enum/String`', 'df': 'The specific audio layer to transition to (e.g., map, battle).'} | 6 |
-| [`new_song`](./Enums.md#enum-new_song) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the new music track.'} | 5 |
-| `crossfade_speed` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`new_layer`](./Enums.md#enum-new_layer) | Enum | The specific audio layer to transition to (e.g., map, battle). | 6 |
+| [`new_song`](./Enums.md#enum-new_song) | Enum | The ID of the new music track. | 5 |
+| `crossfade_speed` | Number |  | 1 |
 
 </details>
 
@@ -1252,10 +1252,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Mixed | {'type': '`Number`', 'df': 'The damage formula or inherit flag.'} | 6 |
-| `max_dist` | Number | {'type': '`Number`', 'df': 'Maximum displacement distance.'} | 6 |
-| `min_dist` | Number | {'type': '`Number`', 'df': 'Minimum displacement distance.'} | 2 |
-| [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| `damage` | Mixed | The damage formula or inherit flag. | 6 |
+| `max_dist` | Number | Maximum displacement distance. | 6 |
+| `min_dist` | Number | Minimum displacement distance. | 2 |
+| [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum |  | 1 |
 
 </details>
 
@@ -1273,7 +1273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-| `CurrentWeaponAddPoison` | Number | {'type': '`Number`', 'df': "Applies or references the 'CurrentWeaponAddPoison' effect/state."} | 1 |
+| `CurrentWeaponAddPoison` | Number | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 |
 
 </details>
 
@@ -1290,8 +1290,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | {'type': '`Enum/String`', 'df': 'The item pool to draw the parasite from.'} | 5 |
-| `chance` | Mixed | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 3 |
+| [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 5 |
+| `chance` | Mixed | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
 
 </details>
 
@@ -1308,11 +1308,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The flat damage amount.'} | 5 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'The classification of the damage (e.g., spell, melee).'} | 5 |
-| [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
-| [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 5 |
+| `damage` | Number | The flat damage amount. | 5 |
+| [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum |  | 2 |
+| [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 
 </details>
 
@@ -1329,7 +1329,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID to spawn.'} | 4 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn. | 4 |
 
 </details>
 
@@ -1346,7 +1346,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID of the object to spawn (e.g., Poop).'} | 2 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the object to spawn (e.g., Poop). | 2 |
 
 </details>
 
@@ -1380,11 +1380,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `enemies_only` | Boolean | {'type': '`Boolean`', 'df': 'If true, the arc will not bounce to friendly targets.'} | 4 |
-| `max_distance` | Number | {'type': '`Number`', 'df': 'The maximum tile range the lightning can jump between bounces.'} | 4 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The maximum number of targets the lightning can bounce to.'} | 4 |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
-| `ignore_self` | Boolean | {'type': '`Boolean`', 'df': 'If true, prevents the arc from bouncing back to the caster.'} | 1 |
+| `enemies_only` | Boolean | If true, the arc will not bounce to friendly targets. | 4 |
+| `max_distance` | Number | The maximum tile range the lightning can jump between bounces. | 4 |
+| `stacks` | Number | The maximum number of targets the lightning can bounce to. | 4 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `ignore_self` | Boolean | If true, prevents the arc from bouncing back to the caster. | 1 |
 
 </details>
 
@@ -1418,8 +1418,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max` | Number | {'type': '`Number`', 'df': 'Maximum coins granted.'} | 4 |
-| `min` | Number | {'type': '`Number`', 'df': 'Minimum coins granted.'} | 4 |
+| `max` | Number | Maximum coins granted. | 4 |
+| `min` | Number | Minimum coins granted. | 4 |
 
 </details>
 
@@ -1453,8 +1453,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The new ability ID to insert.'} | 4 |
-| `slot` | Number | {'type': '`Number`', 'df': 'The spell slot index to replace.'} | 4 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The new ability ID to insert. | 4 |
+| `slot` | Number | The spell slot index to replace. | 4 |
 
 </details>
 
@@ -1471,9 +1471,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `revive_health` | Number | {'type': '`Number`', 'df': 'The flat amount of health to revive with.'} | 3 |
+| `revive_health` | Number | The flat amount of health to revive with. | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -1507,8 +1507,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The required status effect.'} | 3 |
 
 </details>
 
@@ -1544,8 +1544,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -1562,8 +1562,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`radius`](./Arrays.md#array-radius) | Array | {'type': '`Array`', 'df': 'Swirl radius.'} | 4 |
-| [`speed`](./Arrays.md#array-speed) | Array | {'type': '`Array`', 'df': 'Rotations per second.'} | 4 |
+| [`radius`](./Arrays.md#array-radius) | Array | Swirl radius. | 4 |
+| [`speed`](./Arrays.md#array-speed) | Array | Rotations per second. | 4 |
 
 </details>
 
@@ -1581,7 +1581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
-| `stacks` | Mixed | {'type': '`Number`', 'df': 'The number of times the nested effects block should be repeatedly executed.'} | 3 |
+| `stacks` | Mixed | The number of times the nested effects block should be repeatedly executed. | 3 |
 
 </details>
 
@@ -1596,9 +1596,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`obj`](./Enums.md#enum-obj) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID of the object to spawn (e.g., chapter_corpse_medium).'} | 3 |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability (0.0 to 1.0) of spawning the object.'} | 2 |
-| `slide` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`obj`](./Enums.md#enum-obj) | Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0) of spawning the object. | 2 |
+| `slide` | Number |  | 1 |
 
 </details>
 
@@ -1615,10 +1615,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `arm1` | Number | {'type': '`Number`', 'df': 'Scale multiplier for the front arm.'} | 1 |
-| `arm2` | Number | {'type': '`Number`', 'df': 'Scale multiplier for the back arm.'} | 1 |
-| `body` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `mouth` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `arm1` | Number | Scale multiplier for the front arm. | 1 |
+| `arm2` | Number | Scale multiplier for the back arm. | 1 |
+| `body` | Number |  | 1 |
+| `mouth` | Number |  | 1 |
 
 </details>
 
@@ -1635,8 +1635,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'The specific element type to check for.'} | 3 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
@@ -1655,7 +1655,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 9 |
-| [`key`](./Enums.md#enum-key) | Enum | {'type': '`Enum/String`', 'df': 'A unique string identifier to track this specific application.'} | 3 |
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
 
 </details>
 
@@ -1672,8 +1672,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -1690,7 +1690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the object/particle to spawn.'} | 3 |
+| [`object`](./Enums.md#enum-object) | Enum | The ID of the object/particle to spawn. | 3 |
 
 </details>
 
@@ -1707,8 +1707,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `change` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| `max` | Number | {'type': '`Number`', 'df': ''} | 3 |
+| `change` | Number |  | 3 |
+| `max` | Number |  | 3 |
 
 </details>
 
@@ -1725,7 +1725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`weights`](./Arrays.md#array-weights) | Array | {'type': '`Array`', 'df': ''} | 3 |
+| [`weights`](./Arrays.md#array-weights) | Array |  | 3 |
 
 </details>
 
@@ -1742,8 +1742,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `even_if_dead` | Boolean | {'type': '`Boolean`', 'df': 'If true, triggers the effect even if the character died during the battle.'} | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 56 |
+| `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 3 |
 
 </details>
 
@@ -1760,8 +1760,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`alt_art`](./Enums.md#enum-alt_art) | Enum | {'type': '`Enum/String`', 'df': 'The alternative sprite art to use while tangled.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`alt_art`](./Enums.md#enum-alt_art) | Enum | The alternative sprite art to use while tangled. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -1812,8 +1812,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID of the visual decoy to spawn (e.g., PlayerCat_ThiefShade).'} | 2 |
-| `skilltemp` | Boolean | {'type': '`Boolean`', 'df': 'If true, the decoy is automatically destroyed once the skill finishes executing.'} | 2 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID of the visual decoy to spawn (e.g., PlayerCat_ThiefShade). | 2 |
+| `skilltemp` | Boolean | If true, the decoy is automatically destroyed once the skill finishes executing. | 2 |
 
 </details>
 
@@ -1864,8 +1864,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to autocast.'} | 2 |
-| `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': 'If true, bypasses stun and hard-CC restrictions to cast anyway.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to autocast. | 2 |
+| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 1 |
 
 </details>
 
@@ -1882,8 +1882,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to use when intercepting (e.g., BodyGuardSwap).'} | 2 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to use when intercepting (e.g., BodyGuardSwap). | 2 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -1900,9 +1900,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Enum | {'type': '`Enum/String`', 'df': "The probability (0.0 to 1.0) of triggering the 'bad roll' failure state."} | 2 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 14 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 
 </details>
 
@@ -2058,7 +2058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| [`key`](./Enums.md#enum-key) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`key`](./Enums.md#enum-key) | Enum |  | 2 |
 
 </details>
 
@@ -2092,8 +2092,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
+| `upgraded` | Boolean |  | 1 |
 
 </details>
 
@@ -2127,8 +2127,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability of finding the item.'} | 2 |
-| [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': 'The item pool to draw from.'} | 1 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability of finding the item. | 2 |
+| [`pool`](./Enums.md#enum-pool) | Enum | The item pool to draw from. | 1 |
 
 </details>
 
@@ -2145,8 +2145,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The movement ability to use.'} | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'The entity tag to seek out.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The movement ability to use. | 2 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The entity tag to seek out. | 1 |
 
 </details>
 
@@ -2163,8 +2163,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Enum | {'type': '`Enum/String`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -2181,8 +2181,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`amount`](./Arrays.md#array-amount) | Array | {'type': '`Array`', 'df': 'The target opacity/dimness level.'} | 2 |
-| `speed` | Number | {'type': '`Number`', 'df': 'The transition speed.'} | 2 |
+| [`amount`](./Arrays.md#array-amount) | Array | The target opacity/dimness level. | 2 |
+| `speed` | Number | The transition speed. | 2 |
 
 </details>
 
@@ -2200,7 +2200,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 
 </details>
 
@@ -2217,7 +2217,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
 
 </details>
 
@@ -2234,9 +2234,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `crit_multiplier_bonus` | Number | {'type': '`Number`', 'df': 'Flat addition to the critical damage multiplier.'} | 1 |
-| `extra_coins_per_stack` | Number | {'type': '`Number`', 'df': 'Grants bonus coins based on stacks.'} | 1 |
-| `luck_increase` | Number | {'type': '`Number`', 'df': 'Increases luck stat for the attack.'} | 1 |
+| `crit_multiplier_bonus` | Number | Flat addition to the critical damage multiplier. | 1 |
+| `extra_coins_per_stack` | Number | Grants bonus coins based on stacks. | 1 |
+| `luck_increase` | Number | Increases luck stat for the attack. | 1 |
 
 </details>
 
@@ -2253,9 +2253,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block |  | 1 |
+| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | Secondary Area of Effect blast parameters. | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance) | Block | {'type': '`Block`', 'df': ' | 1 |
-| [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage) | Block | {'type': '`Block`', 'df': 'Secondary Area of Effect blast parameters. | 1 |
 
 </details>
 
@@ -2273,7 +2273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `stack_scale` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `stack_scale` | Number |  | 1 |
 
 </details>
 
@@ -2290,8 +2290,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability of triggering the quake.'} | 2 |
-| `radius` | Number | {'type': '`Number`', 'df': 'The tile radius of the quake.'} | 2 |
+| `chance` | Number | Probability of triggering the quake. | 2 |
+| `radius` | Number | The tile radius of the quake. | 2 |
 
 </details>
 
@@ -2308,8 +2308,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `min_dist` | Number | {'type': '`Number`', 'df': 'The minimum tile distance they will be moved.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `min_dist` | Number | The minimum tile distance they will be moved. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -2326,8 +2326,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `max` | Number | {'type': '`Number`', 'df': 'Maximum knockback distance.'} | 2 |
-| `min` | Number | {'type': '`Number`', 'df': 'Minimum knockback distance.'} | 2 |
+| `max` | Number | Maximum knockback distance. | 2 |
+| `min` | Number | Minimum knockback distance. | 2 |
 
 </details>
 
@@ -2344,8 +2344,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stackable` | Boolean | {'type': '`Boolean`', 'df': 'If true, multiple instances of this trigger can stack.'} | 2 |
-| [`stacks`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
+| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 2 |
+| `stackable` | Boolean | If true, multiple instances of this trigger can stack. | 2 |
 
 </details>
 
@@ -2362,8 +2362,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
-| `upgraded` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
+| `upgraded` | Boolean |  | 1 |
 
 </details>
 
@@ -2380,7 +2380,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `include_spells` | Boolean | {'type': '`Boolean`', 'df': 'If true, allows the AI to cast spells during this bonus turn.'} | 2 |
+| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 2 |
 
 </details>
 
@@ -2395,9 +2395,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The underlying logic ability executed by the team.'} | 2 |
-| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | {'type': '`Enum/String`', 'df': 'Requires participants to share this tag.'} | 2 |
-| `same_orientation` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The underlying logic ability executed by the team. | 2 |
+| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | Requires participants to share this tag. | 2 |
+| `same_orientation` | Boolean |  | 1 |
 
 </details>
 
@@ -2414,8 +2414,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `reset_percent` | Number | {'type': '`Number`', 'df': 'The percentage of stacks to keep after resetting.'} | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `reset_percent` | Number | The percentage of stacks to keep after resetting. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -2449,7 +2449,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -2551,8 +2551,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`weather`](./Arrays.md#array-weather) | Array | {'type': '`Array`', 'df': 'An array of weather states to check against.'} | 1 |
 
 </details>
 
@@ -2604,8 +2604,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `odds` | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| `odds` | Number | {'type': '`Number`', 'df': 'The probability (0.0 to 1.0) of applying the debuff.'} | 1 |
 
 </details>
 
@@ -2674,8 +2674,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2710,7 +2710,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| `odds` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of this occurring.'} | 1 |
+| `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
@@ -2728,7 +2728,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
 
 </details>
 
@@ -2745,8 +2745,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
 
 </details>
 
@@ -2763,9 +2763,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to cast later.'} | 1 |
-| `lingering` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `relative` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to cast later. | 1 |
+| `lingering` | Boolean |  | 1 |
+| `relative` | Boolean |  | 1 |
 
 </details>
 
@@ -2782,8 +2782,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| `distance` | Number | {'type': '`Number`', 'df': 'Distance or area of effect in tiles.'} | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
+| `distance` | Number | Distance or area of effect in tiles. | 1 |
 
 </details>
 
@@ -2800,8 +2800,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`punch_self_ability`](./Enums.md#enum-punch_self_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum |  | 1 |
+| [`punch_self_ability`](./Enums.md#enum-punch_self_ability) | Enum |  | 1 |
 
 </details>
 
@@ -2818,8 +2818,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ability to execute after moving.'} | 1 |
-| `even_if_cant_reach` | Boolean | {'type': '`Boolean`', 'df': 'If true, executes the attack even if the move fails to reach the target.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ability to execute after moving. | 1 |
+| `even_if_cant_reach` | Boolean | If true, executes the attack even if the move fails to reach the target. | 1 |
 
 </details>
 
@@ -2836,8 +2836,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `change` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `max` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| `change` | Number |  | 1 |
+| `max` | Number |  | 1 |
 
 </details>
 
@@ -2852,8 +2852,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
-| `tickdown_this_turn` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
+| `tickdown_this_turn` | Boolean |  | 1 |
 
 </details>
 
@@ -2870,8 +2870,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `force_no_hit_animation` | Boolean | {'type': '`Boolean`', 'df': 'If true, suppresses the flinch/hit animation.'} | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `force_no_hit_animation` | Boolean | If true, suppresses the flinch/hit animation. | 1 |
 
 </details>
 
@@ -2888,8 +2888,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -2907,7 +2907,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `fights` | Number | {'type': '`Number`', 'df': 'The number of encounters this buff/debuff persists for.'} | 1 |
+| `fights` | Number | The number of encounters this buff/debuff persists for. | 1 |
 
 </details>
 
@@ -2941,7 +2941,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | {'type': '`Array`', 'df': 'An array of ability IDs to randomly choose from.'} | 1 |
+| [`pool`](./Arrays.md#array-pool) | Array | An array of ability IDs to randomly choose from. | 1 |
 
 </details>
 
@@ -2958,10 +2958,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': 'The entity ID to spawn in place.'} | 2 |
-| `clone_items` | Boolean | {'type': '`Boolean`', 'df': 'If true, transfers inventory to the new entity.'} | 1 |
-| `clone_referenced_catdata` | Boolean | {'type': '`Boolean`', 'df': 'If true, copies the genetic data of the popped cat.'} | 1 |
+| [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn in place. | 2 |
 | [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `clone_items` | Boolean | If true, transfers inventory to the new entity. | 1 |
+| `clone_referenced_catdata` | Boolean | If true, copies the genetic data of the popped cat. | 1 |
 
 </details>
 
@@ -2978,8 +2978,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'The number of stacks to remove.'} | 1 |
-| [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'The specific status effect ID to remove.'} | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 1 |
+| `stacks` | Number | The number of stacks to remove. | 1 |
 
 </details>
 
@@ -2996,7 +2996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
 
 </details>
 
@@ -3013,7 +3013,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `permanent` | Boolean | {'type': '`Boolean`', 'df': 'If true, the scramble persists for the rest of the run.'} | 1 |
+| `permanent` | Boolean | If true, the scramble persists for the rest of the run. | 1 |
 
 </details>
 
@@ -3047,8 +3047,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
-| [`style`](./Arrays.md#array-style) | Array | {'type': '`Array`', 'df': 'The visual font style for the text (e.g., [crit]).'} | 1 |
+| [`style`](./Arrays.md#array-style) | Array | The visual font style for the text (e.g., [crit]). | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -3065,8 +3065,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `chance` | Number | {'type': '`Number`', 'df': 'Probability (0.0 to 1.0 or percentage) of transmitting.'} | 1 |
-| [`disease`](./Enums.md#enum-disease) | Enum | {'type': '`Enum/String`', 'df': 'The specific status effect ID representing the disease.'} | 1 |
+| [`disease`](./Enums.md#enum-disease) | Enum | The specific status effect ID representing the disease. | 1 |
+| `chance` | Number | Probability (0.0 to 1.0 or percentage) of transmitting. | 1 |
 
 </details>
 
@@ -3117,7 +3117,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array | {'type': '`Array`', 'df': 'An array of weapon item IDs to draw from.'} | 1 |
+| [`pool`](./Arrays.md#array-pool) | Array | An array of weapon item IDs to draw from. | 1 |
 
 </details>
 
@@ -3134,8 +3134,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum | {'type': '`Enum/String`', 'df': 'The original item ID.'} | 1 |
-| [`to`](./Enums.md#enum-to) | Enum | {'type': '`Enum/String`', 'df': 'The new item ID.'} | 1 |
+| [`from`](./Enums.md#enum-from) | Enum | The original item ID. | 1 |
+| [`to`](./Enums.md#enum-to) | Enum | The new item ID. | 1 |
 
 </details>
 
@@ -3152,8 +3152,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum | {'type': '`Enum/String`', 'df': 'The original weapon ID.'} | 1 |
-| [`to`](./Enums.md#enum-to) | Enum | {'type': '`Enum/String`', 'df': 'The transformed weapon ID.'} | 1 |
+| [`from`](./Enums.md#enum-from) | Enum | The original weapon ID. | 1 |
+| [`to`](./Enums.md#enum-to) | Enum | The transformed weapon ID. | 1 |
 
 </details>
 
@@ -3168,8 +3168,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The ID of the ability to trigger.'} | 1 |
-| `respect_prime` | Boolean | {'type': '`Boolean`', 'df': "If true, respects the ability's prime/cooldown state."} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger. | 1 |
+| `respect_prime` | Boolean | If true, respects the ability's prime/cooldown state. | 1 |
 
 </details>
 
@@ -3186,8 +3186,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'ID of the ability to trigger or reference.'} | 1 |
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum | {'type': '`Enum/String`', 'df': 'The AI positioning logic profile to use.'} | 1 |
+| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum | The AI positioning logic profile to use. | 1 |
 
 </details>
 
@@ -3221,10 +3221,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cWaggle` | Flag |  | 1 |
 | `cWaggle2x2` | Flag |  | 1 |
 | `cWaggle3x3` | Flag |  | 1 |
-| `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
+| `cWaggle` | Flag |  | 1 |
+| `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
@@ -3241,8 +3241,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -3259,8 +3259,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'Classification/category type.'} | 1 |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 1 |
+| `damage` | Number | The base damage properties of an attack. | 1 |
 
 </details>
 
@@ -3277,8 +3277,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `heaviestMelee` | Number | {'type': '`Number`', 'df': 'Animation trigger for massive damage.'} | 1 |
-| `heavyMelee` | Number | {'type': '`Number`', 'df': 'Animation trigger if damage exceeds this threshold.'} | 1 |
+| `heaviestMelee` | Number | Animation trigger for massive damage. | 1 |
+| `heavyMelee` | Number | Animation trigger if damage exceeds this threshold. | 1 |
 
 </details>
 
