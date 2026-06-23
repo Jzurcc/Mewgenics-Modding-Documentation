@@ -11,13 +11,12 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 <details>
 <summary><b>Expand</b></summary>
 
-| Property Key | Type | Definition |
-| :--- | :--- | :--- |
-| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. |
-| [`LowerAmbientLight`](#lowerambientlight) | Block | A visual effect that dims the map's lighting. |
-| `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. |
-| `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. |
-| `{Global Modifier Keys}` | Boolean | All valid keys from the specified engine key are applicable to this context/block. |
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. | 1 |
+| `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. | 1 |
 
 </details>
 
@@ -32,10 +31,12 @@ The following blocks all behave as `{Global Modifier Keys}` containers. Each has
 <details>
 <summary><b>Expand</b></summary>
 
-| Property Key | Type | Definition |
-| :--- | :--- | :--- |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |
-| [`LowerAmbientLight`](#lowerambientlight) | Block | A visual effect that dims the map's lighting. |
+> **Total Count:** 5
+
+| Property Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`LowerAmbientLight`](#lowerambientlight) | Block | A visual effect that dims the map's lighting. | 3 |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 

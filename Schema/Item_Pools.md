@@ -15,10 +15,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `rare` | Number | Examples: `40, 15, 10` | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
 | `uncommon` | Number | Examples: `35, 75, 60` | 12 |
 | `very_rare` | Mixed | Examples: `.01, 2, 1` | 11 |
-| `common` | Number | Examples: `50, 55, 60` | 10 |
 | `current_chapter_common` | Mixed | Examples: `auto, 55` | 6 |
 | `current_chapter_rare` | Mixed | Examples: `auto, 10` | 6 |
 | `current_chapter_uncommon` | Mixed | Examples: `35, auto` | 6 |

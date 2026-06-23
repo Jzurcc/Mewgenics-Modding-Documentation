@@ -16,14 +16,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`desc`](./Strings.md#string-desc) | String |  | 59 |
-| [`name`](./Strings.md#string-name) | String |  | 59 |
-| [`effects`](#context-effects) | Block |  | 58 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1274 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array |  | 12 |
 | `height` | Integer |  | 8 |
-| [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 8 |
 | `width` | Integer |  | 8 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 7 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 7 |
@@ -48,12 +46,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LargeHouse_Floor2Small`](#context-largehouse_floor2small) | Block |  | 1 |
 | [`MediumHouse`](#context-mediumhouse) | Block |  | 1 |
 | [`MediumHouse_SmallRoom`](#context-mediumhouse_smallroom) | Block |  | 1 |
-| [`Rain`](#context-rain) | Block |  | 1 |
 | [`SmallAttic`](#context-smallattic) | Block |  | 1 |
 | [`SmallHouse_Attic`](#context-smallhouse_attic) | Block |  | 1 |
-| [`Snow`](#context-snow) | Block |  | 1 |
 | [`Thunderstorm`](#context-thunderstorm) | Block |  | 1 |
-| [`Windy`](#context-windy) | Block |  | 1 |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array |  | 1 |
 | [`id`](./Enums.md#enum-id) | Enum |  | 1 |
 | [`p`](./Arrays.md#array-p) | Array |  | 1 |
@@ -74,11 +69,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `LowerAmbientLight` | Number |  | 4 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart) | Block |  | 2 |
-| [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn) | Block |  | 2 |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1886 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 59 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 552 |
 
 </details>
 
@@ -153,9 +147,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 71 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 20 |
 
 </details>
 
@@ -193,12 +187,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
-| `FloatingRockTrap` | Integer |  | 1 |
-| `Thorns` | Integer |  | 1 |
-| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum |  | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -264,8 +255,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`StatusOnBattleEnd`](#context-statusonbattleend) | Block |  | 1 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
 
 </details>
 
@@ -300,10 +291,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| `Conditional_Flying` | Block |  | 1 |
-| [`Else`](#context-else) | Block |  | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 
 </details>
 
@@ -320,10 +310,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 40 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
-| [`RandomStatusFromPool`](#context-randomstatusfrompool) | Block |  | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 14 |
 
 </details>
 
@@ -358,7 +348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 </details>
 
 ---
@@ -391,9 +381,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| `Conditional_Tiny` | Block |  | 1 |
-| [`Else`](#context-else) | Block |  | 1 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -410,10 +399,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`Conditional_GoodRoll`](#context-conditional_goodroll) | Block |  | 1 |
-| [`Else`](#context-else) | Block |  | 1 |
-| [`Madness`](./Arrays.md#array-madness) | Array |  | 1 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -573,8 +560,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 </details>
 
 ---
@@ -590,9 +577,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`ApplyPassives`](#context-applypassives) | Block |  | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 63 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -610,9 +596,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`ApplyPassives`](#context-applypassives) | Block |  | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -645,7 +630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`extra_statuses`](#context-extra_statuses) | Block |  | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 
 </details>
@@ -682,7 +667,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `height` | Integer |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
-| [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 1 |
 | `width` | Integer |  | 1 |
@@ -704,7 +689,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `height` | Integer |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
-| [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 1 |
 | `width` | Integer |  | 1 |
@@ -905,7 +890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `height` | Integer |  | 1 |
 | [`id`](./Enums.md#enum-id) | Enum |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
-| [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`n`](./Arrays.md#array-n) | Array |  | 1 |
 | `width` | Integer |  | 1 |
 
@@ -964,7 +949,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Integer |  | 1 |
-| [`effects`](#context-effects) | Block |  | 1 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
 </details>
@@ -1001,7 +986,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 </details>
 
 ---
@@ -1060,7 +1045,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#all-confirmed-status-passive-id-values) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 </details>
  | `AllStatsUp` | Number |  | 1 | 
  | [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag) | Block |  | 1 | 

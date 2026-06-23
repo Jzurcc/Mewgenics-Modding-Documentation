@@ -43,7 +43,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pool`](./Enums.md#enum-pool) | Enum | Examples: `rare, shop_common, treasure_easy` | 37 |
 | `cost` | Number | Examples: `0, 15, 10` | 21 |
 | `mandatory` | Boolean | Examples: `true` | 14 |
-| `weight` | Number | Examples: `1` | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -60,7 +60,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`movieclip`](./Enums.md#enum-movieclip) | Enum | Examples: `Shop, JackOffice, TreasureRoom` | 25 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2339 |
 | `treasure_room` | Boolean | Examples: `true` | 14 |
 | `delay_enable_tooltips` | Boolean | Examples: `true` | 7 |
 | `keeper` | Number | Examples: `0` | 7 |
@@ -153,12 +153,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `common` | Number | Examples: `14, 5, 7` | 9 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 9 |
 | `consumable_common` | Number | Examples: `3, 5, 10` | 9 |
 | `consumable_rare` | Number | Examples: `20, 8, 10` | 9 |
 | `consumable_uncommon` | Number | Examples: `14, 5, 7` | 9 |
 | `consumable_very_rare` | Number | Examples: `12, 40, 20` | 9 |
-| `rare` | Number | Examples: `40, 20, 10` | 9 |
 | `uncommon` | Number | Examples: `20, 8, 10` | 9 |
 | `very_rare` | Number | Examples: `80, 40, 15` | 9 |
 
@@ -232,7 +231,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `allow_duplicates` | Boolean | Examples: `true` | 4 |
 | `amount` | Number | Examples: `10` | 4 |
 | `cost` | Number | Examples: `5` | 4 |
-| `weight` | Number | Examples: `5` | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 

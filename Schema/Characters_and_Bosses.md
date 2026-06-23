@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`properties`](./Characters_and_Bosses.md#context-properties) | Block | {'type': '`Block`', 'df': 'General engine properties. | 600 |
 | [`graphics`](./Characters_and_Bosses.md#context-graphics) | Block | {'type': '`Block`', 'df': 'Visual parameters and animation bindings. | 558 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 548 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 464 |
 | [`abilities`](./Characters_and_Bosses.md#context-abilities) | Block | {'type': '`Block`', 'df': 'Lists the ability IDs the character possesses. | 458 |
 | [`stats`](./Characters_and_Bosses.md#context-stats) | Block | {'type': '`Block`', 'df': 'Core character metrics (Health, Strength, etc.). | 388 |
@@ -34,14 +34,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pattern`](./Characters_and_Bosses.md#context-pattern) | Block | {'type': 'Block', 'df': 'AI sequence logic.'} | 3 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
 | `end_turn_on_formswitch` | Boolean | {'type': 'Boolean', 'df': ''} | 2 |
-| [`AbilityHealthThreshold`](./Characters_and_Bosses.md#context-abilityhealththreshold) | Block | {'type': 'Block', 'df': 'AI Trigger: Executes an ability when health drops below a specific threshold.'} | 1 |
-| `LimitDamage` | Number | {'type': 'Number', 'df': "Applies or references the 'LimitDamage' effect/state."} | 1 |
-| `LimitHeal` | Number | {'type': 'Number', 'df': "Applies or references the 'LimitHeal' effect/state."} | 1 |
 | [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#context-ai_if_spawned_as_enemy) | Block | {'type': '`Block`', 'df': 'AI logic override used only if the character is spawned as an enemy. | 1 |
 | `consider_spells` | Boolean | {'type': 'Boolean', 'df': ''} | 1 |
 | [`damage_instance`](./Characters_and_Bosses.md#context-damage_instance) | Block | {'type': '`Block`', 'df': 'Defines damage logic on contact. | 1 |
-| [`scale`](./Enums.md#enum-scale) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `uifloaters_offset` | Number | {'type': 'Number', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 
 </details>
 
@@ -58,358 +54,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FormChanger`](./Characters_and_Bosses.md#context-formchanger) | Block | {'type': '`Block`', 'df': "AI Role: Designates the character as one that frequently shifts forms. | 106 |
-| [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath) | Block | {'type': '`Enum/String`', 'df': 'Event Trigger: Spawns a specific entity when killed.'} | 79 |
-| `Trample` | Number | {'type': '`Number`', 'df': "Applies or references the 'Trample' effect/state."} | 76 |
-| [`Robot`](./Characters_and_Bosses.md#context-robot) | Block | {'type': '`Number`', 'df': "Character Form: Behavior and stats for the 'Robot' state."} | 46 |
-| `Brace` | Number | {'type': '`Number`', 'df': "Applies or references the 'Brace' effect/state."} | 38 |
-| [`FormChangeWhileHasStatus`](./Characters_and_Bosses.md#context-formchangewhilehasstatus) | Block | {'type': '`Block`', 'df': 'Logic: Changes form automatically while possessing a specific status. | 35 |
-| [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | {'type': '`Enum/String`', 'df': 'Reaction: Executes a counter-attack ability when hit.'} | 30 |
-| [`DeathRattle`](./Characters_and_Bosses.md#context-deathrattle) | Block | {'type': '`Enum/String`', 'df': 'Event Trigger: Executes logic or abilities exactly when the character dies.'} | 29 |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ElementImmune' effect/state."} | 27 |
-| [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Enum | {'type': '`Enum/String`', 'df': 'Reaction: Executes an ability instantly, interrupting the current sequence.'} | 26 |
-| `Undead` | Number | {'type': '`Number`', 'df': "Applies or references the 'Undead' effect/state."} | 24 |
-| [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#context-addstatustobasicattack) | Block | {'type': 'Block', 'df': "Modifier: Injects a status effect payload into the character's basic attacks."} | 21 |
-| [`BossRewards`](./Characters_and_Bosses.md#context-bossrewards) | Block | {'type': '`Block`', 'df': 'Loot logic: Rewards dropped upon defeating a boss. | 20 |
-| [`AbilityReaction`](./Characters_and_Bosses.md#context-abilityreaction) | Block | {'type': '`Enum/String`', 'df': 'AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage).'} | 19 |
-| [`StatusImmunity`](./Arrays.md#array-statusimmunity) | Array | {'type': '`Enum/String`', 'df': "Applies or references the 'StatusImmunity' effect/state."} | 19 |
-| [`BirdRewards`](./Characters_and_Bosses.md#context-birdrewards) | Block | {'type': '`Block`', 'df': 'Loot logic: Rewards dropped by bird-type enemies. | 18 |
-| [`Buddy`](./Enums.md#enum-buddy) | Enum | {'type': '`Enum/String`', 'df': "Character Form / AI State: Behavior and stats for the 'Buddy' familiar state."} | 17 |
-| [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage) | Block | {'type': '`Block`', 'df': 'Reaction: Deals damage or status effects to an attacker upon receiving melee damage. | 17 |
-| `AddMovement` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddMovement' effect/state."} | 16 |
-| [`CharacterLightSource`](./Characters_and_Bosses.md#context-characterlightsource) | Block | {'type': '`Block`', 'df': 'Visual: Attaches a dynamic lighting source to the character. | 16 |
-| [`HealthPickup`](./Characters_and_Bosses.md#context-healthpickup) | Block | {'type': '`Block`', 'df': 'Pickup Logic: Defines what happens when a health item is collected. | 16 |
-| `Thorns` | Number | {'type': '`Number`', 'df': "Applies or references the 'Thorns' effect/state."} | 14 |
-| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TransformOnDeath' effect/state."} | 13 |
-| `NoHealthOnlyShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'NoHealthOnlyShield' effect/state."} | 12 |
-| [`SpawnThingOnDamage`](./Characters_and_Bosses.md#context-spawnthingondamage) | Block | {'type': '`Block`', 'df': 'Event Trigger: Spawns an entity when taking damage. | 12 |
-| `WaterWalk` | Number | {'type': '`Number`', 'df': "Applies or references the 'WaterWalk' effect/state."} | 12 |
-| [`AbilityHealthThreshold`](./Characters_and_Bosses.md#context-abilityhealththreshold) | Block | {'type': '`Block`', 'df': 'AI Trigger: Executes an ability when health drops below a specific threshold. | 11 |
-| `CoinPickup` | Number | {'type': '`Number`', 'df': "Applies or references the 'CoinPickup' effect/state."} | 10 |
-| [`DeathRattleRevive`](./Characters_and_Bosses.md#context-deathrattlerevive) | Block | {'type': '`Block`', 'df': 'Event Trigger: Revives the character immediately upon death. | 10 |
-| [`MoveWhenDamaged`](./Characters_and_Bosses.md#context-movewhendamaged) | Block | {'type': '`Enum/String`', 'df': 'AI Movement: Forces a reposition when taking damage.'} | 10 |
-| `StripStatuses` | Number | {'type': '`Number`', 'df': "Applies or references the 'StripStatuses' effect/state."} | 10 |
-| [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence) | Block | {'type': '`Block`', 'df': 'Logic: Changes form when affected by an element. | 9 |
-| `LimitDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'LimitDamage' effect/state."} | 9 |
-| [`ReflectProjectiles`](./Characters_and_Bosses.md#context-reflectprojectiles) | Block | {'type': '`Number`', 'df': 'Passive: Reflects incoming projectiles back at the attacker.'} | 9 |
-| [`StatusCollector`](./Characters_and_Bosses.md#context-statuscollector) | Block | {'type': '`Block`', 'df': "Passive: Gains benefits based on the number of statuses applied to them. | 9 |
-| [`TransformOnElementInfluence`](./Characters_and_Bosses.md#context-transformonelementinfluence) | Block | {'type': '`Block`', 'df': 'Logic: Changes form when affected by elements. | 9 |
-| `BackstabImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'BackstabImmunity' effect/state."} | 8 |
-| `FadeInsteadOfDie` | Number | {'type': '`Number`', 'df': "Applies or references the 'FadeInsteadOfDie' effect/state."} | 8 |
-| [`FormChangeOffMap`](./Characters_and_Bosses.md#context-formchangeoffmap) | Block | {'type': '`Block`', 'df': 'Logic: Changes form when pushed off the map. | 8 |
-| `LimitHeal` | Number | {'type': '`Number`', 'df': "Applies or references the 'LimitHeal' effect/state."} | 8 |
-| `Plant` | Number | {'type': '`Number`', 'df': "Applies or references the 'Plant' effect/state."} | 8 |
-| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | {'type': '`Array`', 'df': "Applies or references the 'RandomizeAIWeightsEachTurn' effect/state."} | 8 |
-| [`SmallRockBehavior`](./Characters_and_Bosses.md#context-smallrockbehavior) | Block | {'type': '`Number`', 'df': 'AI Logic: Movement/interaction profile for small rocks.'} | 8 |
-| [`AbilityWhenBuddyDies`](./Enums.md#enum-abilitywhenbuddydies) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AbilityWhenBuddyDies' effect/state."} | 7 |
-| [`ChanceToSpitOnDamage`](./Characters_and_Bosses.md#context-chancetospitondamage) | Block | {'type': '`Block`', 'df': 'Reaction: Probability to use a spit counter-attack when damaged. | 7 |
-| [`MovementReaction`](./Characters_and_Bosses.md#context-movementreaction) | Block | {'type': '`Block`', 'df': 'Reaction: Triggers an effect or ability when forced to move. | 7 |
-| [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns) | Block | {'type': '`Block`', 'df': 'Logic: Forces a form change after X turns.'} | 7 |
-| `AddDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddDamage' effect/state."} | 6 |
-| [`CaveFamilyEnrage`](./Characters_and_Bosses.md#context-cavefamilyenrage) | Block | {'type': '`Block`', 'df': 'AI Trigger: Enrage logic triggered when a cave family member is killed. | 6 |
-| [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'Divide4OnDeath' effect/state."} | 6 |
-| [`FormChangeWhilePrimingAbility`](./Characters_and_Bosses.md#context-formchangewhileprimingability) | Block | {'type': '`Block`', 'df': 'Logic: Changes form while preparing/priming a specific ability. | 6 |
-| `HealthGain` | Number | {'type': 'Number', 'df': "Applies or references the 'HealthGain' effect/state."} | 6 |
-| [`InnateElement`](./Enums.md#enum-innateelement) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'InnateElement' effect/state."} | 6 |
-| `KaijuKnockbackImmune` | Number | {'type': '`Number`', 'df': "Applies or references the 'KaijuKnockbackImmune' effect/state."} | 6 |
-| [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource) | Block | {'type': '`Enum/String`', 'df': 'AI Movement: Closes distance on the last source of damage.'} | 6 |
-| `OverrideMaxHealth` | Number | {'type': '`Number`', 'df': "Applies or references the 'OverrideMaxHealth' effect/state."} | 6 |
-| [`SecurityBotProtect`](./Characters_and_Bosses.md#context-securitybotprotect) | Block | {'type': '`Block`', 'df': 'AI Logic: Guarding behavior for Security Bot units. | 6 |
-| [`TagGreed`](./Enums.md#enum-taggreed) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TagGreed' effect/state."} | 6 |
-| [`YOffset`](./Enums.md#enum-yoffset) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'YOffset' effect/state."} | 6 |
-| `Angel` | Number | {'type': '`Number`', 'df': "Applies or references the 'Angel' effect/state."} | 5 |
-| `DebuffImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'DebuffImmunity' effect/state."} | 5 |
-| `KineticSpikes` | Number | {'type': '`Number`', 'df': "Applies or references the 'KineticSpikes' effect/state."} | 5 |
-| `MinimumKnockbackFromAllDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'MinimumKnockbackFromAllDamage' effect/state."} | 5 |
-| [`MoveTowardsKillers`](./Characters_and_Bosses.md#context-movetowardskillers) | Block | {'type': '`Enum/String`', 'df': 'AI Movement: Seeks out entities that have recently killed an ally.'} | 5 |
-| [`PassiveWhileHasStatus`](./Characters_and_Bosses.md#context-passivewhilehasstatus) | Block | {'type': '`Block`', 'df': 'Passive: Activates only while the character has the specified status. | 5 |
-| `StartOffMap` | Number | {'type': '`Number`', 'df': "Applies or references the 'StartOffMap' effect/state."} | 5 |
-| [`TransformOnDeathImmediately`](./Characters_and_Bosses.md#context-transformondeathimmediately) | Block | {'type': '`Enum/String`', 'df': 'Logic: Bypasses death sequence to instantly assume a new form.'} | 5 |
-| [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AbilityAfterEnemyCastSpell_Stackable' effect/state."} | 4 |
-| `AddMaxHealth` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddMaxHealth' effect/state."} | 4 |
-| `AddMeleeKnockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddMeleeKnockback' effect/state."} | 4 |
-| `Ammo` | Number | {'type': '`Number`', 'df': "Applies or references the 'Ammo' effect/state."} | 4 |
-| `BackstabAllDirections` | Number | {'type': '`Number`', 'df': "Applies or references the 'BackstabAllDirections' effect/state."} | 4 |
-| [`BaitAura`](./Characters_and_Bosses.md#context-baitaura) | Block | {'type': '`Block`', 'df': 'Passive: Projects an aura that attracts specific enemy types (e.g., flies/maggots). | 4 |
-| [`Bird`](./Enums.md#enum-bird) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'Bird' effect/state."} | 4 |
-| [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ChangeTileOnPop' effect/state."} | 4 |
-| `CountAsCorpse` | Number | {'type': '`Number`', 'df': "Applies or references the 'CountAsCorpse' effect/state."} | 4 |
-| [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'DisplayDangerAOE' effect/state."} | 4 |
-| [`GroundFlopper`](./Enums.md#enum-groundflopper) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'GroundFlopper' effect/state."} | 4 |
-| `IgnoreTiles` | Number | {'type': '`Number`', 'df': "Applies or references the 'IgnoreTiles' effect/state."} | 4 |
-| [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'LoopingSoundWhileAlive' effect/state."} | 4 |
-| `PrioritizeFarAwayTargets` | Number | {'type': '`Number`', 'df': "Applies or references the 'PrioritizeFarAwayTargets' effect/state."} | 4 |
-| `SharkySmellsBlood` | Number | {'type': '`Number`', 'df': "Applies or references the 'SharkySmellsBlood' effect/state."} | 4 |
-| [`StatusEachTurnEnd`](./Characters_and_Bosses.md#context-statuseachturnend) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies a status at the end of every turn. | 4 |
-| [`StatusOnKill`](./Characters_and_Bosses.md#context-statusonkill) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses when the character kills an enemy. | 4 |
-| [`StatusOnTookDamageFromAbility`](./Characters_and_Bosses.md#context-statusontookdamagefromability) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses when taking damage from an ability. | 4 |
-| [`StunImmunity`](./Characters_and_Bosses.md#context-stunimmunity) | Block | {'type': '`Number`', 'df': 'Passive: Prevents Stun from being applied.'} | 4 |
-| [`Trapper`](./Characters_and_Bosses.md#context-trapper) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Trapper' state. | 4 |
-| [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'WeremanTransformationReceiver' effect/state."} | 4 |
-| [`AddHiddenTag`](./Enums.md#enum-addhiddentag) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AddHiddenTag' effect/state."} | 3 |
-| `AddInitiative` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddInitiative' effect/state."} | 3 |
-| [`AddTag`](./Enums.md#enum-addtag) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AddTag' effect/state."} | 3 |
-| `AggroTargetIsCurrentTurn` | Number | {'type': '`Number`', 'df': "Applies or references the 'AggroTargetIsCurrentTurn' effect/state."} | 3 |
-| [`ArmorPickup`](./Characters_and_Bosses.md#context-armorpickup) | Block | {'type': '`Block`', 'df': 'Pickup Logic: Defines what happens when an armor item is collected. | 3 |
-| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'BaseStatMultiply' effect/state."} | 3 |
-| [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | {'type': '`Array`', 'df': "Applies or references the 'BonusTurnPattern' effect/state."} | 3 |
-| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array | {'type': '`Enum/String`', 'df': "Applies or references the 'CanMutateTo' effect/state."} | 3 |
-| [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'DigestDeadBodies' effect/state."} | 3 |
-| `FaceShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'FaceShield' effect/state."} | 3 |
-| [`FormChangeHealthThreshold`](./Characters_and_Bosses.md#context-formchangehealththreshold) | Block | {'type': '`Block`', 'df': 'Logic: Changes form when health crosses a threshold. | 3 |
-| `InjuryImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'InjuryImmunity' effect/state."} | 3 |
-| [`ManaPickup`](./Characters_and_Bosses.md#context-manapickup) | Block | {'type': '`Block`', 'df': 'Pickup Logic: Defines what happens when a mana item is collected. | 3 |
-| `MimicSpawnerAttacks` | Number | {'type': '`Number`', 'df': "Applies or references the 'MimicSpawnerAttacks' effect/state."} | 3 |
-| `MinimumKnockbackFromPhysicalAttacks` | Number | {'type': '`Number`', 'df': "Applies or references the 'MinimumKnockbackFromPhysicalAttacks' effect/state."} | 3 |
-| [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'MutateViaAbility' effect/state."} | 3 |
-| `PrioritizeHitDifferentTargets` | Number | {'type': '`Number`', 'df': "Applies or references the 'PrioritizeHitDifferentTargets' effect/state."} | 3 |
-| [`RandomPassivePool`](./Characters_and_Bosses.md#context-randompassivepool) | Block | {'type': '`Block`', 'df': "Logic: Grants a random passive from the specified pool upon spawning. | 3 |
-| `RunInXTurns` | Number | {'type': '`Number`', 'df': "Applies or references the 'RunInXTurns' effect/state."} | 3 |
-| `SharePickupsWithSpawner` | Number | {'type': '`Number`', 'df': "Applies or references the 'SharePickupsWithSpawner' effect/state."} | 3 |
-| [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'SpawnThingOnDeath' effect/state."} | 3 |
-| `SpeedUp` | Number | {'type': 'Number', 'df': "Applies or references the 'SpeedUp' effect/state."} | 3 |
-| [`SupportFormChangeInsteadOfRun`](./Characters_and_Bosses.md#context-supportformchangeinsteadofrun) | Block | {'type': '`Enum/String`', 'df': 'AI Logic: Forces a support unit to transform rather than flee.'} | 3 |
-| [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TileTrail_Ahead' effect/state."} | 3 |
-| `WeaponsDontLoseDurability` | Number | {'type': '`Number`', 'df': "Applies or references the 'WeaponsDontLoseDurability' effect/state."} | 3 |
-| [`AbilityOnRoundEnd`](./Characters_and_Bosses.md#context-abilityonroundend) | Block | {'type': '`Block`', 'df': 'AI Trigger: Executes an ability at the end of the combat round. | 2 |
-| [`AbilityWhenTaggedCharacterMovesNear`](./Characters_and_Bosses.md#context-abilitywhentaggedcharactermovesnear) | Block | {'type': '`Block`', 'df': 'AI Trigger: Executes an ability when a character with a specific tag moves adjacent. | 2 |
-| `AddCorpseHealth` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddCorpseHealth' effect/state."} | 2 |
-| [`AddTemporaryEffectsToBasicAttack`](./Characters_and_Bosses.md#context-addtemporaryeffectstobasicattack) | Block | {'type': '`Block`', 'df': "Modifier: Adds temporary statuses to the character's basic attacks. | 2 |
-| `AggroTargetIsBuddy` | Number | {'type': '`Number`', 'df': "Applies or references the 'AggroTargetIsBuddy' effect/state."} | 2 |
-| `AllDamageImmune_IncludingSpeculative` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllDamageImmune_IncludingSpeculative' effect/state."} | 2 |
-| `AlphaTurns` | Number | {'type': '`Number`', 'df': "Applies or references the 'AlphaTurns' effect/state."} | 2 |
-| `AlwaysHitDifferentTargets` | Number | {'type': '`Number`', 'df': "Applies or references the 'AlwaysHitDifferentTargets' effect/state."} | 2 |
-| [`AutocastEachRound`](./Characters_and_Bosses.md#context-autocasteachround) | Block | {'type': '`Block`', 'df': 'AI Trigger: Forces the character to cast a specific ability at the start of each round. | 2 |
-| `BuffImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'BuffImmunity' effect/state."} | 2 |
-| [`BungaEntrance`](./Characters_and_Bosses.md#context-bungaentrance) | Block | {'type': '`Block`', 'df': 'Animation/AI State: Bunga entering the arena. | 2 |
-| `CanShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'CanShield' effect/state."} | 2 |
-| `ChanceToDisableActionsIfNotCharmed` | Number | {'type': '`Number`', 'df': "Applies or references the 'ChanceToDisableActionsIfNotCharmed' effect/state."} | 2 |
-| [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ChangeTileOnDeath' effect/state."} | 2 |
-| [`CherubimReaction`](./Characters_and_Bosses.md#context-cherubimreaction) | Block | {'type': '`Block`', 'df': "Reaction: Custom reaction triggers for Cherubim enemies. | 2 |
-| `DemonicGlyphFrames` | Number | {'type': '`Number`', 'df': "Applies or references the 'DemonicGlyphFrames' effect/state."} | 2 |
-| [`DiesToElement`](./Characters_and_Bosses.md#context-diestoelement) | Block | {'type': '`Enum/String`', 'df': 'Vulnerability: Character dies instantly if hit by this element.'} | 2 |
-| `DissuadeInstakills` | Number | {'type': '`Number`', 'df': "Applies or references the 'DissuadeInstakills' effect/state."} | 2 |
-| `DodgeChance_Status` | Number | {'type': '`Number`', 'df': "Applies or references the 'DodgeChance_Status' effect/state."} | 2 |
-| `ExpireOnSpawnerTurnEnd` | Number | {'type': '`Number`', 'df': "Applies or references the 'ExpireOnSpawnerTurnEnd' effect/state."} | 2 |
-| `ExtraDispersedTurns` | Number | {'type': '`Number`', 'df': "Applies or references the 'ExtraDispersedTurns' effect/state."} | 2 |
-| [`FaceLastDamage`](./Characters_and_Bosses.md#context-facelastdamage) | Block | {'type': '`Number`', 'df': 'Reaction: Forces the character to face towards the last damage source.'} | 2 |
-| [`FinalBossShield`](./Enums.md#enum-finalbossshield) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'FinalBossShield' effect/state."} | 2 |
-| `Flying` | Number | {'type': '`Number`', 'df': "Applies or references the 'Flying' effect/state."} | 2 |
-| [`FormChangeDuringWeatherElement`](./Characters_and_Bosses.md#context-formchangeduringweatherelement) | Block | {'type': '`Block`', 'df': 'Logic: Changes form automatically during specific weather conditions. | 2 |
-| `GoopWalk` | Number | {'type': '`Number`', 'df': "Applies or references the 'GoopWalk' effect/state."} | 2 |
-| `HealthRegenUp` | Number | {'type': 'Number', 'df': "Applies or references the 'HealthRegenUp' effect/state."} | 2 |
-| `ImmobilePassive` | Number | {'type': '`Number`', 'df': "Applies or references the 'ImmobilePassive' effect/state."} | 2 |
-| [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'KaijuWinCon' effect/state."} | 2 |
-| `MagicDamageImmune` | Number | {'type': '`Number`', 'df': "Applies or references the 'MagicDamageImmune' effect/state."} | 2 |
-| `MamaCatAnimations` | Number | {'type': '`Number`', 'df': "Applies or references the 'MamaCatAnimations' effect/state."} | 2 |
-| [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'MiniVolcanoReaction' effect/state."} | 2 |
-| [`MotherTumorSpawnInCapture`](./Characters_and_Bosses.md#context-mothertumorspawnincapture) | Block | {'type': '`Block`', 'df': "Boss Logic: Logic for capturing entities inside the Mother's tumors upon spawning. | 2 |
-| [`PassiveWhileNotHasStatus`](./Characters_and_Bosses.md#context-passivewhilenothasstatus) | Block | {'type': '`Block`', 'df': 'Passive: Activates only while the character does NOT have the specified status. | 2 |
-| `PermanentMadness` | Number | {'type': '`Number`', 'df': "Applies or references the 'PermanentMadness' effect/state."} | 2 |
-| `PrioritizeAggroTarget` | Number | {'type': '`Number`', 'df': "Applies or references the 'PrioritizeAggroTarget' effect/state."} | 2 |
-| `PrioritizePlayerCats` | Number | {'type': '`Number`', 'df': "Applies or references the 'PrioritizePlayerCats' effect/state."} | 2 |
-| `PrioritizeWeakestEnemy` | Number | {'type': '`Number`', 'df': "Applies or references the 'PrioritizeWeakestEnemy' effect/state."} | 2 |
-| [`ProtectTargetedAllies`](./Characters_and_Bosses.md#context-protecttargetedallies) | Block | {'type': '`Block`', 'df': 'AI Logic: Navigates to intercept attacks directed at allies. | 2 |
-| `SafeDoomed` | Number | {'type': '`Number`', 'df': "Applies or references the 'SafeDoomed' effect/state."} | 2 |
-| [`SlotMachineRollPool`](./Characters_and_Bosses.md#context-slotmachinerollpool) | Block | {'type': '`Block`', 'df': "Logic: Defines the possible outcomes for slot machine enemies. | 2 |
-| `SpawnCreepOnHit` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpawnCreepOnHit' effect/state."} | 2 |
-| [`StatusOnSpawnIn`](./Characters_and_Bosses.md#context-statusonspawnin) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses immediately when spawned. | 2 |
-| [`StatusOnTookDamage`](./Characters_and_Bosses.md#context-statusontookdamage) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses when the character takes damage. | 2 |
-| `SurviveAt1HP` | Number | {'type': '`Number`', 'df': "Applies or references the 'SurviveAt1HP' effect/state."} | 2 |
-| [`TileTrail`](./Enums.md#enum-tiletrail) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TileTrail' effect/state."} | 2 |
-| [`TransformOnElementInfluencex`](./Characters_and_Bosses.md#context-transformonelementinfluencex) | Block | {'type': '`Block`', 'df': 'Logic: Variant element influence transformation. | 2 |
-| [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TransformWhenBuddyDies' effect/state."} | 2 |
-| `UnlockOrientation` | Number | {'type': '`Number`', 'df': "Applies or references the 'UnlockOrientation' effect/state."} | 2 |
-| [`UseAbility`](./Enums.md#enum-useability) | Enum | {'type': '`Enum/String`', 'df': 'Logic: Forces execution of an ability.'} | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2609 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Examples: `{ ... }` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
 | `partial_animation_suffix` | Number | Examples: `4, 2` | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': 'Block', 'df': 'Block listing intrinsic passive modifiers.'} | 2 |
-| [`AbilityOnBattleStart_UseAI`](./Enums.md#enum-abilityonbattlestart_useai) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AbilityOnBattleStart_UseAI' effect/state."} | 1 |
-| [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AddElementsToBasicAttack' effect/state."} | 1 |
-| [`AddStatusToReceivedDamage`](./Characters_and_Bosses.md#context-addstatustoreceiveddamage) | Block | {'type': '`Block`', 'df': 'Modifier: Applies a status effect whenever the character takes damage. | 1 |
-| [`AddStatusToSpells`](./Characters_and_Bosses.md#context-addstatustospells) | Block | {'type': '`Block`', 'df': "Modifier: Injects a status effect payload into all spells cast by the character. | 1 |
-| [`AddStatusToWeapons`](./Characters_and_Bosses.md#context-addstatustoweapons) | Block | {'type': '`Block`', 'df': "Modifier: Injects a status effect into attacks made with weapons. | 1 |
-| [`AdvancedTint`](./Arrays.md#array-advancedtint) | Array | {'type': '`Array`', 'df': "Applies or references the 'AdvancedTint' effect/state."} | 1 |
-| [`AdventureTokenPassivePool`](./Characters_and_Bosses.md#context-adventuretokenpassivepool) | Block | {'type': '`Block`', 'df': "Map/Metaprogression: Pool of passive modifiers applied by adventure tokens. | 1 |
-| [`AggroTargetIsGovernedByHitEffect`](./Characters_and_Bosses.md#context-aggrotargetisgovernedbyhiteffect) | Block | {'type': '`Block`', 'df': "AI Logic: Forces the character's aggro to follow specific hit effects rather than default proximity. | 1 |
-| `AggroTargetIsLastEnemyThatDealtDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'AggroTargetIsLastEnemyThatDealtDamage' effect/state."} | 1 |
-| `AggroTargetIsLowestHealthEnemyTillItDies` | Number | {'type': '`Number`', 'df': "Applies or references the 'AggroTargetIsLowestHealthEnemyTillItDies' effect/state."} | 1 |
-| `AggroTargetIsLowestMaxHealthCat` | Number | {'type': '`Number`', 'df': "Applies or references the 'AggroTargetIsLowestMaxHealthCat' effect/state."} | 1 |
-| [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array | {'type': '`Array`', 'df': "Applies or references the 'AlienBeastDangerZones' effect/state."} | 1 |
-| `AlienBeastEyeStalks` | Number | {'type': '`Number`', 'df': "Applies or references the 'AlienBeastEyeStalks' effect/state."} | 1 |
-| `AllSpellsCostActPoints` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllSpellsCostActPoints' effect/state."} | 1 |
-| [`AllStatsAura`](./Characters_and_Bosses.md#context-allstatsaura) | Block | {'type': '`Block`', 'df': 'Passive: Projects an aura that modifies all primary stats of nearby characters. | 1 |
-| `AllStatsUp` | Number | {'type': 'Number', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
-| `AvoidDamagingCharmedEnemies` | Number | {'type': '`Number`', 'df': "Applies or references the 'AvoidDamagingCharmedEnemies' effect/state."} | 1 |
-| `AwardCoinsOnDeath` | Number | {'type': '`Number`', 'df': "Applies or references the 'AwardCoinsOnDeath' effect/state."} | 1 |
-| `BasicAIDangerZone` | Number | {'type': '`Number`', 'df': "Applies or references the 'BasicAIDangerZone' effect/state."} | 1 |
-| [`BattlefieldUniqueRandomPassive`](./Characters_and_Bosses.md#context-battlefielduniquerandompassive) | Block | {'type': '`Block`', 'df': "Map Rule: Grants a unique random passive modifier to the battlefield. | 1 |
-| `BlackHolePassive` | Number | {'type': '`Number`', 'df': "Applies or references the 'BlackHolePassive' effect/state."} | 1 |
-| [`BloatEyePassive2`](./Enums.md#enum-bloateyepassive2) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'BloatEyePassive2' effect/state."} | 1 |
-| `BlockAllDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'BlockAllDamage' effect/state."} | 1 |
-| `BombBehavior` | Number | {'type': '`Number`', 'df': "Applies or references the 'BombBehavior' effect/state."} | 1 |
-| [`BungaCheers`](./Characters_and_Bosses.md#context-bungacheers) | Block | {'type': '`Block`', 'df': 'Animation/AI State: Bunga cheering animation logic. | 1 |
-| `Burn` | Number | {'type': '`Number`', 'df': "Applies or references the 'Burn' effect/state."} | 1 |
-| `CCImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'CCImmunity' effect/state."} | 1 |
-| `CapReceivedDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'CapReceivedDamage' effect/state."} | 1 |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| [`CerberubsAggroTargetBehavior`](./Characters_and_Bosses.md#context-cerberubsaggrotargetbehavior) | Block | {'type': '`Block`', 'df': 'AI Logic: Custom aggro targeting rules for Cerberubs. | 1 |
-| [`ChanceToBackflip`](./Characters_and_Bosses.md#context-chancetobackflip) | Block | {'type': '`Block`', 'df': 'Reaction: Probability to execute a backflip dodge. | 1 |
-| [`ChanceToFormChangeOnAbilityDamage`](./Characters_and_Bosses.md#context-chancetoformchangeonabilitydamage) | Block | {'type': '`Block`', 'df': 'Reaction: Probability to change forms when taking ability damage. | 1 |
-| [`ChaosBossFormChangeGuide`](./Characters_and_Bosses.md#context-chaosbossformchangeguide) | Block | {'type': '`Block`', 'df': 'Boss Logic: Maps the form transition phases for the Chaos Boss. | 1 |
-| [`ChaosBossPieces`](./Characters_and_Bosses.md#context-chaosbosspieces) | Block | {'type': '`Block`', 'df': 'Boss Logic: Defines the separate destructible pieces of the Chaos Boss. | 1 |
-| [`ChaosHeadDropIn`](./Characters_and_Bosses.md#context-chaosheaddropin) | Block | {'type': '`Block`', 'df': 'Boss Logic: Drop-in attack/animation for the Chaos Head. | 1 |
-| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum | {'type': '`Enum/String`', 'df': "Adds a temporary bonus ability to the character's hand/deck."} | 1 |
-| [`CounterAttackAfterEnemyCastSpell`](./Enums.md#enum-counterattackafterenemycastspell) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'CounterAttackAfterEnemyCastSpell' effect/state."} | 1 |
-| [`CreateGlobalModifiers`](./Characters_and_Bosses.md#context-createglobalmodifiers) | Block | {'type': '`Block`', 'df': "Encounter Rule: Generates map-wide modifiers. | 1 |
-| `CrowAttackLink` | Number | {'type': '`Number`', 'df': "Applies or references the 'CrowAttackLink' effect/state."} | 1 |
-| `DamageFromBehindOnly` | Number | {'type': '`Number`', 'df': "Applies or references the 'DamageFromBehindOnly' effect/state."} | 1 |
-| [`DelayedAutoRevive`](./Characters_and_Bosses.md#context-delayedautorevive) | Block | {'type': '`Block`', 'df': 'Logic: Character revives automatically after a set delay. | 1 |
-| `DemonicGlyphStealer` | Number | {'type': '`Number`', 'df': "Applies or references the 'DemonicGlyphStealer' effect/state."} | 1 |
-| [`DiceBehavior`](./Characters_and_Bosses.md#context-dicebehavior) | Block | {'type': '`Block`', 'df': 'AI Logic: Custom behavior for Dice enemies. | 1 |
-| [`DicerArt`](./Arrays.md#array-dicerart) | Array | {'type': '`Array`', 'df': "Applies or references the 'DicerArt' effect/state."} | 1 |
-| `DieWhenOnlyGolemsLeft` | Number | {'type': '`Number`', 'df': "Applies or references the 'DieWhenOnlyGolemsLeft' effect/state."} | 1 |
-| `DieWhenSpawnerDies` | Number | {'type': '`Number`', 'df': "Applies or references the 'DieWhenSpawnerDies' effect/state."} | 1 |
-| [`DiesToPiercingAndSpikes`](./Characters_and_Bosses.md#context-diestopiercingandspikes) | Block | {'type': '`Block`', 'df': 'Vulnerability: Character dies instantly if hit by piercing attacks or spikes. | 1 |
-| `DisableSpells` | Number | {'type': '`Number`', 'df': "Applies or references the 'DisableSpells' effect/state."} | 1 |
-| `Disguised` | Number | {'type': '`Number`', 'df': "Applies or references the 'Disguised' effect/state."} | 1 |
-| [`DisguisedTrapper`](./Enums.md#enum-disguisedtrapper) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'DisguisedTrapper' effect/state."} | 1 |
-| `DisplayBuddyCatOnSpawn` | Number | {'type': '`Number`', 'df': "Applies or references the 'DisplayBuddyCatOnSpawn' effect/state."} | 1 |
-| `DivineShield` | Number | {'type': 'Number', 'df': "Applies or references the 'DivineShield' effect/state."} | 1 |
-| `DivineShieldPickup` | Number | {'type': '`Number`', 'df': "Applies or references the 'DivineShieldPickup' effect/state."} | 1 |
-| `DodgeChance` | Number | {'type': '`Number`', 'df': "Applies or references the 'DodgeChance' effect/state."} | 1 |
-| `DodgeChanceWithBlindSpot` | Number | {'type': '`Number`', 'df': "Applies or references the 'DodgeChanceWithBlindSpot' effect/state."} | 1 |
-| [`DodgeWhenTargeted`](./Characters_and_Bosses.md#context-dodgewhentargeted) | Block | {'type': '`Block`', 'df': 'Reaction: Executes a dodge maneuver when targeted. | 1 |
-| `DustCloudBehavior` | Number | {'type': '`Number`', 'df': "Applies or references the 'DustCloudBehavior' effect/state."} | 1 |
-| `Dybbuk1HPTracker` | Number | {'type': '`Number`', 'df': "Applies or references the 'Dybbuk1HPTracker' effect/state."} | 1 |
-| [`DybbukPossessionFallback`](./Characters_and_Bosses.md#context-dybbukpossessionfallback) | Block | {'type': '`Block`', 'df': 'Logic: Fallback state when a Dybbuk possession fails. | 1 |
-| `ElectricArcs` | Number | {'type': '`Number`', 'df': "Applies or references the 'ElectricArcs' effect/state."} | 1 |
-| [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ElementWeakness' effect/state."} | 1 |
-| `EnrageOnDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'EnrageOnDamage' effect/state."} | 1 |
-| `EraseSpawnCoins` | Number | {'type': '`Number`', 'df': "Applies or references the 'EraseSpawnCoins' effect/state."} | 1 |
-| `EventBounterHunterPassive` | Number | {'type': '`Number`', 'df': "Applies or references the 'EventBounterHunterPassive' effect/state."} | 1 |
-| `ExtraMovePoints` | Number | {'type': '`Number`', 'df': "Applies or references the 'ExtraMovePoints' effect/state."} | 1 |
-| [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ExtraTurnsPerTaggedUnit' effect/state."} | 1 |
-| [`FaceAwayLastDamage`](./Characters_and_Bosses.md#context-faceawaylastdamage) | Block | {'type': '`Block`', 'df': 'Reaction: Forces the character to face away from the last damage source. | 1 |
-| [`FinalBossBeamQueue`](./Characters_and_Bosses.md#context-finalbossbeamqueue) | Block | {'type': '`Block`', 'df': 'Boss Logic: Attack queue for the final boss beam. | 1 |
-| [`FinalBossBecomeTheChild`](./Characters_and_Bosses.md#context-finalbossbecomethechild) | Block | {'type': '`Block`', 'df': "Boss Logic: Phase transition for the final boss. | 1 |
-| [`FinalBossHitCountdownBoris`](./Characters_and_Bosses.md#context-finalbosshitcountdownboris) | Block | {'type': '`Block`', 'df': 'Boss Logic: Countdown trigger for Boris. | 1 |
-| [`FinalBossHitCountdownExplosive`](./Characters_and_Bosses.md#context-finalbosshitcountdownexplosive) | Block | {'type': '`Block`', 'df': 'Boss Logic: Countdown trigger for explosives. | 1 |
-| [`FinalBossHitCountdownHoly`](./Characters_and_Bosses.md#context-finalbosshitcountdownholy) | Block | {'type': '`Block`', 'df': 'Boss Logic: Countdown trigger for holy attacks. | 1 |
-| [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils) | Block | {'type': '`Block`', 'df': 'Boss Logic: Pupil state management. | 1 |
-| [`FinalBossShieldHealth`](./Characters_and_Bosses.md#context-finalbossshieldhealth) | Block | {'type': '`Block`', 'df': 'Boss Logic: Shield health management. | 1 |
-| [`FinalBossSyncAnimations`](./Characters_and_Bosses.md#context-finalbosssyncanimations) | Block | {'type': '`Block`', 'df': 'Boss Logic: Synchronizes multi-part boss animations. | 1 |
-| `FlingObjectsOnTop` | Number | {'type': '`Number`', 'df': "Applies or references the 'FlingObjectsOnTop' effect/state."} | 1 |
-| [`FlushmasterCelebration`](./Enums.md#enum-flushmastercelebration) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'FlushmasterCelebration' effect/state."} | 1 |
-| `ForceDodgeEverything` | Number | {'type': '`Number`', 'df': "Applies or references the 'ForceDodgeEverything' effect/state."} | 1 |
-| [`FormChangeWhenBuddyDies`](./Enums.md#enum-formchangewhenbuddydies) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'FormChangeWhenBuddyDies' effect/state."} | 1 |
-| [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'FreePathfindElement' effect/state."} | 1 |
-| `FullBlockEverything` | Number | {'type': '`Number`', 'df': "Applies or references the 'FullBlockEverything' effect/state."} | 1 |
-| `FullBlockEverythingTo0Damage` | Number | {'type': '`Number`', 'df': "Applies or references the 'FullBlockEverythingTo0Damage' effect/state."} | 1 |
-| `GasCanBehavior` | Number | {'type': '`Number`', 'df': "Applies or references the 'GasCanBehavior' effect/state."} | 1 |
-| `GasCloudBehavior2` | Number | {'type': '`Number`', 'df': "Applies or references the 'GasCloudBehavior2' effect/state."} | 1 |
-| `GeminiTwin` | Number | {'type': '`Number`', 'df': "Applies or references the 'GeminiTwin' effect/state."} | 1 |
-| `GlobalManaDrainAura` | Number | {'type': '`Number`', 'df': "Applies or references the 'GlobalManaDrainAura' effect/state."} | 1 |
-| `GoopImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'GoopImmunity' effect/state."} | 1 |
-| `GuillotinaDeathHead` | Number | {'type': '`Number`', 'df': "Applies or references the 'GuillotinaDeathHead' effect/state."} | 1 |
-| [`HPAltStates`](./Characters_and_Bosses.md#context-hpaltstates) | Block | {'type': '`Block`', 'df': 'Visual: Alternative sprite states based on current health. | 1 |
-| [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'HarpoonTrapPassive' effect/state."} | 1 |
-| [`HealNeighborsEachTurn`](./Characters_and_Bosses.md#context-healneighborseachturn) | Block | {'type': '`Block`', 'df': 'Passive: Restores health to adjacent allies at the start of the turn. | 1 |
-| `HiddenDoomed` | Number | {'type': '`Number`', 'df': "Applies or references the 'HiddenDoomed' effect/state."} | 1 |
-| [`HitlerExecute`](./Characters_and_Bosses.md#context-hitlerexecute) | Block | {'type': '`Block`', 'df': 'Boss Logic: Specific execution or ultimate attack state. | 1 |
-| `IceBlockBehavior` | Number | {'type': '`Number`', 'df': "Applies or references the 'IceBlockBehavior' effect/state."} | 1 |
-| `IllusionTint` | Number | {'type': '`Number`', 'df': "Applies or references the 'IllusionTint' effect/state."} | 1 |
-| [`InfiniteRebirth`](./Characters_and_Bosses.md#context-infiniterebirth) | Block | {'type': '`Block`', 'df': 'Logic: Allows the character to revive endlessly. | 1 |
-| `InheritSpawnerStats` | Number | {'type': '`Number`', 'df': "Applies or references the 'InheritSpawnerStats' effect/state."} | 1 |
-| `InsertIntoBackgroundPlaceholder` | Number | {'type': '`Number`', 'df': "Applies or references the 'InsertIntoBackgroundPlaceholder' effect/state."} | 1 |
-| [`JohnnyNeedsWashing`](./Characters_and_Bosses.md#context-johnnyneedswashing) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'JohnnyNeedsWashing' state. | 1 |
-| [`JohnnyWasher`](./Enums.md#enum-johnnywasher) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'JohnnyWasher' effect/state."} | 1 |
-| `KnockbackImmunity` | Number | {'type': '`Number`', 'df': "Applies or references the 'KnockbackImmunity' effect/state."} | 1 |
-| [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'LegacySpawnSavedCatIfExists' effect/state."} | 1 |
-| [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | {'type': '`Array`', 'df': "Applies or references the 'LockOrientationFaceTile' effect/state."} | 1 |
-| [`ManglerMonsterPassive`](./Enums.md#enum-manglermonsterpassive) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ManglerMonsterPassive' effect/state."} | 1 |
-| [`MegaDinoDropController`](./Characters_and_Bosses.md#context-megadinodropcontroller) | Block | {'type': '`Block`', 'df': 'Boss Logic: Manages loot drops for the Mega Dino. | 1 |
-| `MissChance` | Number | {'type': '`Number`', 'df': "Applies or references the 'MissChance' effect/state."} | 1 |
-| [`ModularPickup`](./Characters_and_Bosses.md#context-modularpickup) | Block | {'type': '`Block`', 'df': "Pickup Logic: Defines what happens when a modular item is collected. | 1 |
-| [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#context-monkcatreactionabilities) | Block | {'type': '`Block`', 'df': 'Reaction: Specific counter-attack or dodge abilities used by the Monk class. | 1 |
-| [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'MoonHeadCrackedVisual' effect/state."} | 1 |
-| [`MotherGrowController`](./Characters_and_Bosses.md#context-mothergrowcontroller) | Block | {'type': '`Block`', 'df': 'Boss Logic: Manages the growth phases of the Mother boss. | 1 |
-| [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive) | Block | {'type': '`Block`', 'df': "Boss Logic: Passive effects applied to the Mother's tumors. | 1 |
-| [`Mount`](./Characters_and_Bosses.md#context-mount) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Mount' state. | 1 |
-| [`MoveAfterAnyAttemptedAttack`](./Characters_and_Bosses.md#context-moveafteranyattemptedattack) | Block | {'type': '`Block`', 'df': 'AI Movement: Forces a move action immediately after attacking, even if it missed. | 1 |
-| [`MoveAwayFromDamageSource`](./Characters_and_Bosses.md#context-moveawayfromdamagesource) | Block | {'type': '`Block`', 'df': 'AI Movement: Moves away from the source of recent damage. | 1 |
-| [`MoveAwayWhenEnemyAdjacent`](./Characters_and_Bosses.md#context-moveawaywhenenemyadjacent) | Block | {'type': '`Block`', 'df': 'AI Movement: Moves away if an enemy enters an adjacent tile. | 1 |
-| [`MultiSpawnOnDeath`](./Characters_and_Bosses.md#context-multispawnondeath) | Block | {'type': '`Block`', 'df': 'Event Trigger: Spawns multiple entities upon death. | 1 |
-| `MulticatHeads` | Number | {'type': '`Number`', 'df': "Applies or references the 'MulticatHeads' effect/state."} | 1 |
-| `MutateAfterXTurns` | Number | {'type': '`Number`', 'df': "Applies or references the 'MutateAfterXTurns' effect/state."} | 1 |
-| `MuteDemonicGlyphDisplay` | Number | {'type': '`Number`', 'df': "Applies or references the 'MuteDemonicGlyphDisplay' effect/state."} | 1 |
-| `OrthogonalAIDangerZone` | Number | {'type': '`Number`', 'df': "Applies or references the 'OrthogonalAIDangerZone' effect/state."} | 1 |
-| `PackHunting` | Number | {'type': '`Number`', 'df': "Applies or references the 'PackHunting' effect/state."} | 1 |
-| [`PassiveWhenAffectedByElement`](./Characters_and_Bosses.md#context-passivewhenaffectedbyelement) | Block | {'type': '`Block`', 'df': 'Passive: Activates only when afflicted by the specified element. | 1 |
-| [`PassiveWhenDead`](./Characters_and_Bosses.md#context-passivewhendead) | Block | {'type': '`Block`', 'df': "Passive: Activates only while the character is dead (e.g., corpse effects). | 1 |
-| `Phasing` | Number | {'type': '`Number`', 'df': "Applies or references the 'Phasing' effect/state."} | 1 |
-| `PoisonThorns` | Number | {'type': '`Number`', 'df': "Applies or references the 'PoisonThorns' effect/state."} | 1 |
-| `ReturnBoundItemOnBattleEnd` | Number | {'type': '`Number`', 'df': "Applies or references the 'ReturnBoundItemOnBattleEnd' effect/state."} | 1 |
-| [`RevengeDamage`](./Characters_and_Bosses.md#context-revengedamage) | Block | {'type': '`Block`', 'df': 'Reaction: Deals damage when taking damage. | 1 |
-| `RunWhenKittensDead` | Number | {'type': '`Number`', 'df': "Applies or references the 'RunWhenKittensDead' effect/state."} | 1 |
-| [`RunWhenLastPlayerCatIsCharmed`](./Characters_and_Bosses.md#context-runwhenlastplayercatischarmed) | Block | {'type': '`Block`', 'df': 'AI Logic: Flee logic when the player team is entirely crowd-controlled. | 1 |
-| [`ScalingAttackAnimation`](./Characters_and_Bosses.md#context-scalingattackanimation) | Block | {'type': '`Block`', 'df': 'Visual: Animation scales based on damage output. | 1 |
-| `SetSpellCosts` | Number | {'type': '`Number`', 'df': "Applies or references the 'SetSpellCosts' effect/state."} | 1 |
-| [`SharePickups`](./Characters_and_Bosses.md#context-sharepickups) | Block | {'type': '`Block`', 'df': 'Passive: Item pickups collected by this unit are shared with others. | 1 |
-| [`SkipFirstRounds`](./Characters_and_Bosses.md#context-skipfirstrounds) | Block | {'type': '`Block`', 'df': 'AI Logic: Passes turn for the first X rounds of combat. | 1 |
-| `SpawnCreepOnHitKnockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpawnCreepOnHitKnockback' effect/state."} | 1 |
-| `SpawnerCatDataReference` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpawnerCatDataReference' effect/state."} | 1 |
-| [`SpewerAltGraphics`](./Characters_and_Bosses.md#context-speweraltgraphics) | Block | {'type': '`Block`', 'df': "Visual: Alternative graphics for Spewer enemies. | 1 |
-| `SpreadWater` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpreadWater' effect/state."} | 1 |
-| `SproutsGrantMovement` | Number | {'type': '`Number`', 'df': "Applies or references the 'SproutsGrantMovement' effect/state."} | 1 |
-| `StartDead` | Number | {'type': '`Number`', 'df': "Applies or references the 'StartDead' effect/state."} | 1 |
-| [`StatusAfterXTurns`](./Characters_and_Bosses.md#context-statusafterxturns) | Block | {'type': '`Block`', 'df': 'Event Trigger: Applies a status effect after X turns have passed. | 1 |
-| [`StatusEachTurnBeginIfHasStatus`](./Characters_and_Bosses.md#context-statuseachturnbeginifhasstatus) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies a status at the start of the turn if a prerequisite status is met. | 1 |
-| [`StatusEachTurnEndIfEnabledAtStartOfTurn`](./Characters_and_Bosses.md#context-statuseachturnendifenabledatstartofturn) | Block | {'type': '`Block`', 'df': 'Event Trigger: Applies a status at the end of the turn if an enabling condition was met at the start. | 1 |
-| [`StatusOnDie`](./Characters_and_Bosses.md#context-statusondie) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses when the character dies. | 1 |
-| [`StatusOnEndMove`](./Characters_and_Bosses.md#context-statusonendmove) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses when the character finishes moving. | 1 |
-| [`StatusOnEnemyConfused`](./Characters_and_Bosses.md#context-statusonenemyconfused) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses when an enemy becomes confused. | 1 |
-| [`StatusOnGainCoins`](./Characters_and_Bosses.md#context-statusongaincoins) | Block | {'type': '`Block`', 'df': 'Event Trigger: Applies statuses when coins are collected. | 1 |
-| [`StatusOverlappingCharactersAndDie`](./Characters_and_Bosses.md#context-statusoverlappingcharactersanddie) | Block | {'type': '`Block`', 'df': "Event Trigger: Applies statuses to overlapping entities, then destroys self. | 1 |
-| [`StatusWhenStatusCompletelyRemoved`](./Characters_and_Bosses.md#context-statuswhenstatuscompletelyremoved) | Block | {'type': '`Block`', 'df': 'Event Trigger: Applies statuses when a tracked status effect is fully cleansed. | 1 |
-| `StrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'StrengthUp' effect/state."} | 1 |
-| [`SupportDieInsteadOfRun`](./Characters_and_Bosses.md#context-supportdieinsteadofrun) | Block | {'type': '`Block`', 'df': 'AI Logic: Forces a support unit to die rather than flee. | 1 |
-| [`SwimmingFormChange`](./Characters_and_Bosses.md#context-swimmingformchange) | Block | {'type': '`Block`', 'df': 'Logic: Automates form change when entering/exiting water. | 1 |
-| [`SyncFormsWithBuddy`](./Characters_and_Bosses.md#context-syncformswithbuddy) | Block | {'type': '`Block`', 'df': "Logic: Forces this character's form to match their familiar/buddy. | 1 |
-| [`T3HitlerSpawningPhase`](./Characters_and_Bosses.md#context-t3hitlerspawningphase) | Block | {'type': '`Block`', 'df': "Boss Logic: Minion spawn phase for the T3 Hitler boss. | 1 |
-| `TVBotDisableAttack` | Number | {'type': '`Number`', 'df': "Applies or references the 'TVBotDisableAttack' effect/state."} | 1 |
-| `TVBotDisableMove` | Number | {'type': '`Number`', 'df': "Applies or references the 'TVBotDisableMove' effect/state."} | 1 |
-| `TVBotDisableSpells` | Number | {'type': '`Number`', 'df': "Applies or references the 'TVBotDisableSpells' effect/state."} | 1 |
-| [`TVBotScreen`](./Characters_and_Bosses.md#context-tvbotscreen) | Block | {'type': '`Block`', 'df': "Visual: TV Bot screen state. | 1 |
-| `TakeWeaponFromSpawner` | Number | {'type': '`Number`', 'df': "Applies or references the 'TakeWeaponFromSpawner' effect/state."} | 1 |
-| `Tall` | Number | {'type': '`Number`', 'df': "Applies or references the 'Tall' effect/state."} | 1 |
-| [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TallTumorManaBurn' effect/state."} | 1 |
-| [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'Terminator2Chase' effect/state."} | 1 |
-| [`Terminator2Run`](./Characters_and_Bosses.md#context-terminator2run) | Block | {'type': '`Block`', 'df': 'AI Movement: Specific run logic for Terminator2. | 1 |
-| [`TerminatorChase`](./Characters_and_Bosses.md#context-terminatorchase) | Block | {'type': '`Block`', 'df': 'AI Movement: Specific chase logic for Terminator. | 1 |
-| [`TerminatorSkin`](./Characters_and_Bosses.md#context-terminatorskin) | Block | {'type': '`Block`', 'df': 'Visual: Skin definition for Terminator. | 1 |
-| [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TileElementDamageImmunity' effect/state."} | 1 |
-| [`TinkererBasicAttackSwitching`](./Characters_and_Bosses.md#context-tinkererbasicattackswitching) | Block | {'type': '`Block`', 'df': 'Logic: Allows Tinkerer to swap basic attacks. | 1 |
-| `TireBehavior` | Number | {'type': '`Number`', 'df': "Applies or references the 'TireBehavior' effect/state."} | 1 |
-| `TormentorHeal` | Number | {'type': '`Number`', 'df': "Applies or references the 'TormentorHeal' effect/state."} | 1 |
-| [`TowerDefenseReflex`](./Enums.md#enum-towerdefensereflex) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TowerDefenseReflex' effect/state."} | 1 |
-| [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'TrackAmountKilledByPlayer' effect/state."} | 1 |
-| [`TransformOnStatusThreshold`](./Characters_and_Bosses.md#context-transformonstatusthreshold) | Block | {'type': '`Block`', 'df': 'Logic: Changes form when a status effect reaches a certain stack count. | 1 |
-| `TutorialBossRiggedFight` | Number | {'type': '`Number`', 'df': "Applies or references the 'TutorialBossRiggedFight' effect/state."} | 1 |
-| [`TwisterFling`](./Characters_and_Bosses.md#context-twisterfling) | Block | {'type': '`Block`', 'df': 'Logic: Fling behavior for tornado attacks. | 1 |
-| `UncappedHP` | Number | {'type': '`Number`', 'df': "Applies or references the 'UncappedHP' effect/state."} | 1 |
-| [`UnlimitedDeathRattleRevive`](./Characters_and_Bosses.md#context-unlimiteddeathrattlerevive) | Block | {'type': '`Block`', 'df': 'Logic: Endless resurrection on death. | 1 |
-| `UpTireBehavior` | Number | {'type': '`Number`', 'df': "Applies or references the 'UpTireBehavior' effect/state."} | 1 |
-| [`UseAbilityWhenOutOfStatus`](./Characters_and_Bosses.md#context-useabilitywhenoutofstatus) | Block | {'type': '`Block`', 'df': 'Logic: Casts a specific ability the moment a status effect expires. | 1 |
-| [`UseAbilityWhenShieldDepleted`](./Enums.md#enum-useabilitywhenshielddepleted) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'UseAbilityWhenShieldDepleted' effect/state."} | 1 |
-| `Wall` | Number | {'type': '`Number`', 'df': "Applies or references the 'Wall' effect/state."} | 1 |
-| [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'WhitelistPickupType' effect/state."} | 1 |
-| `WideBackstab` | Number | {'type': '`Number`', 'df': "Applies or references the 'WideBackstab' effect/state."} | 1 |
-| `WispDodge` | Number | {'type': '`Number`', 'df': "Applies or references the 'WispDodge' effect/state."} | 1 |
-| `ZeroKnockbackDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'ZeroKnockbackDamage' effect/state."} | 1 |
 | `animation_suffix` | Number | Examples: `1` | 1 |
-| `uifloaters_offset` | Number | Examples: `2.2` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 166 |
 
 </details>
 
@@ -452,7 +102,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `can_be_champion` | Boolean | {'type': '`Boolean`', 'df': ''} | 20 |
 | [`lock_orientation`](./Arrays.md#array-lock_orientation) | Array | {'type': '`Array`', 'df': ''} | 19 |
 | [`ai_scale`](./Enums.md#enum-ai_scale) | Enum | {'type': '`Enum/String`', 'df': ''} | 18 |
-| [`layer`](./Enums.md#enum-layer) | Enum | {'type': '`Enum/String`', 'df': ''} | 17 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 539 |
 | [`auto_run_priority`](./Enums.md#enum-auto_run_priority) | Enum | {'type': '`Enum/String`', 'df': ''} | 16 |
 | [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 16 |
 | `inanimate` | Boolean | {'type': '`Boolean`', 'df': ''} | 16 |
@@ -518,7 +168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `mouseover_priority` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `move_points` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `pickup_type` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `scale` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 155 |
 | `speculative_inanimate` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
 | `static` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
 | `two_fronts` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
@@ -583,37 +233,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 517 |
-| [`movieclip`](./Enums.md#enum-movieclip) | Enum | {'type': '`Enum/String`', 'df': ''} | 461 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 409 |
-| `shadow_size` | Mixed | {'type': '`Number`', 'df': ''} | 151 |
-| [`scale`](./Enums.md#enum-scale) | Enum | {'type': '`Enum/String`', 'df': ''} | 149 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 149 |
-| [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum | {'type': '`Enum/String`', 'df': ''} | 127 |
-| [`water_mask`](./Enums.md#enum-water_mask) | Enum | {'type': '`Enum/String`', 'df': ''} | 83 |
-| `spawnin_animation` | Mixed | {'type': '`String`', 'df': ''} | 37 |
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array | {'type': '`Array`', 'df': ''} | 33 |
-| `piece_alt_frame` | Number | {'type': '`Number`', 'df': ''} | 27 |
-| [`shadow`](./Enums.md#enum-shadow) | Enum | {'type': '`Enum/String`', 'df': ''} | 23 |
-| `move_speed_sync_frames` | Number | {'type': '`Number`', 'df': ''} | 20 |
-| `no_splatter` | Boolean | {'type': '`Boolean`', 'df': ''} | 17 |
-| [`projectile_spawn_offset`](./Arrays.md#array-projectile_spawn_offset) | Array | {'type': '`Array`', 'df': ''} | 17 |
-| [`tint`](./Arrays.md#array-tint) | Array | {'type': '`Array`', 'df': ''} | 17 |
-| `move_speed_multiplier` | Mixed | {'type': '`Number`', 'df': ''} | 16 |
-| `dont_sink` | Boolean | {'type': '`Boolean`', 'df': ''} | 14 |
-| `art_flip` | Number | {'type': '`Number`', 'df': ''} | 7 |
-| `depth_offset` | Mixed | {'type': '`Number`', 'df': ''} | 6 |
-| `four_way_animations` | Boolean | {'type': '`Boolean`', 'df': ''} | 4 |
-| `show_infinity_damage_warning` | Boolean | {'type': '`Boolean`', 'df': ''} | 3 |
-| `always_huge_mask` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| `desc` | Mixed | {'type': '`String`', 'df': "Localization key for the character's desc."} | 2 |
-| `shade_occluded_objects` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
-| `no_horizontal_flip` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| [`non_blocking_animations`](./Arrays.md#array-non_blocking_animations) | Array | {'type': '`Array`', 'df': ''} | 1 |
-| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `randomize_starting_frame` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `status_display_count_max` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2458 |
 
 </details>
 
@@ -728,7 +348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Holy`](./Characters_and_Bosses.md#context-holy) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Holy\' state. | 2 |
 | [`NotPriming`](./Characters_and_Bosses.md#context-notpriming) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats when not charging an ability. | 2 |
 | [`Priming`](./Characters_and_Bosses.md#context-priming) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats when charging an ability. | 2 |
-| [`Rain`](./Characters_and_Bosses.md#context-rain) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Rain' state. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`Small`](./Characters_and_Bosses.md#context-small) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Small\' state. | 2 |
 | [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 |
 | [`Turtled`](./Characters_and_Bosses.md#context-turtled) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Turtled' state. | 2 |
@@ -737,7 +357,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
 | `partial_animation_suffix` | Number | {'type': 'String', 'df': ''} | 2 |
 | [`passive`](./Characters_and_Bosses.md#context-passive) | Block | {'type': '`Block`', 'df': 'Intrinsic passive modifier. | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': 'Block', 'df': 'Block listing intrinsic passive modifiers.'} | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 120 |
 | [`Alert`](./Characters_and_Bosses.md#context-alert) | Block | {'type': '`Block`', 'df': 'AI State: The behavior profile used when the character is alerted to enemies. | 1 |
 | [`Angry`](./Characters_and_Bosses.md#context-angry) | Block | {'type': '`Block`', 'df': 'Character Form / AI State: Behavior and stats for the \'Angry\' state. | 1 |
 | [`Attacker`](./Characters_and_Bosses.md#context-attacker) | Block | {'type': '`Block`', 'df': 'AI Role: Designates the character as an attacker rather than support. | 1 |
@@ -760,7 +380,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling) | Block | {'type': '`Block`', 'df': 'Character Form: The baseline behavior state while attached to the ceiling. | 1 |
 | [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground) | Block | {'type': '`Block`', 'df': 'Character Form: The baseline behavior state while on the ground. | 1 |
 | [`DesireMech`](./Characters_and_Bosses.md#context-desiremech) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'DesireMech' state. | 1 |
-| [`Die`](./Characters_and_Bosses.md#context-die) | Block | {'type': '`Block`', 'df': 'Character Form / Logic: Forces the character to die. | 1 |
 | `Druid` | Block | {'type': '`Block`', 'df': "Applies or references the 'Druid' effect/state."} | 1 |
 | [`Drunker`](./Characters_and_Bosses.md#context-drunker) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'Drunker' state. | 1 |
 | [`DualSword`](./Characters_and_Bosses.md#context-dualsword) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
@@ -861,7 +480,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Zealot`](./Characters_and_Bosses.md#context-zealot) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'Zealot\' state. | 1 |
 | [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb) | Block | {'type': '`Block`', 'df': 'Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 |
 | `sync_brain_patterns` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `uifloaters_offset` | Number | {'type': 'Number', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 76 |
 
 </details>
 
@@ -996,7 +615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 24 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 9 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 10 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -1082,25 +701,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 6 |
-| `Burn` | Number | {'type': '`Number`', 'df': "Applies or references the 'Burn' effect/state."} | 4 |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 4 |
-| `Bruise` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bruise' effect/state."} | 2 |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 2 |
-| `RemoteLeech` | Number | {'type': '`Number`', 'df': "Applies or references the 'RemoteLeech' effect/state."} | 2 |
-| `Confusion` | Number | {'type': '`Number`', 'df': "Applies or references the 'Confusion' effect/state."} | 1 |
-| `DamageUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'DamageUp' effect/state."} | 1 |
-| [`GainDisorderFromPool`](./Characters_and_Bosses.md#context-gaindisorderfrompool) | Block | {'type': '`Block`', 'df': 'Logic: Applies a negative mutation/disorder from a specific pool. | 1 |
-| `Knockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'Knockback' effect/state."} | 1 |
-| `Leech` | Number | {'type': '`Number`', 'df': "Applies or references the 'Leech' effect/state."} | 1 |
-| `Madness` | Number | {'type': '`Number`', 'df': 'Applies the Madness debuff/status effect.'} | 1 |
-| `Possessed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Possessed' effect/state."} | 1 |
-| `RandomStatUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'RandomStatUp' effect/state."} | 1 |
-| `RemoteFlatLeech` | Number | {'type': '`Number`', 'df': "Applies or references the 'RemoteFlatLeech' effect/state."} | 1 |
-| `Rot` | Number | {'type': '`Number`', 'df': "Applies or references the 'Rot' effect/state."} | 1 |
-| `Slow` | Number | {'type': '`Number`', 'df': "Applies or references the 'Slow' effect/state."} | 1 |
-| `Stun` | Number | {'type': '`Number`', 'df': "Applies or references the 'Stun' effect/state."} | 1 |
-| `Weakness` | Number | {'type': '`Number`', 'df': "Applies or references the 'Weakness' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 119 |
 
 </details>
 
@@ -1161,7 +762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`palette`](./Enums.md#enum-palette) | Enum | {'type': '`Enum/String`', 'df': ''} | 16 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 17 |
 | `arm1` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the front arm.'} | 3 |
 | `arm2` | Number | {'type': '`Number`', 'df': ''} | 3 |
 | `body` | Number | {'type': '`Number`', 'df': 'Sprite variant ID for the body.'} | 3 |
@@ -1213,8 +814,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`common`](./Enums.md#enum-common) | Enum | {'type': '`Enum/String`', 'df': ''} | 20 |
-| [`rare`](./Enums.md#enum-rare) | Enum | {'type': '`Enum/String`', 'df': ''} | 16 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 20 |
 
 </details>
 
@@ -1259,11 +859,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 11 |
-| [`effects`](./Characters_and_Bosses.md#context-effects) | Block | {'type': '`Block`', 'df': "Non-damaging impact triggers. | 11 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
 | `knockback` | Number | {'type': '`Number`', 'df': ''} | 9 |
 | [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'Classification/category type.'} | 8 |
 | [`elements`](./Arrays.md#array-elements) | Array | {'type': '`Array`', 'df': ''} | 5 |
-| `cant_miss` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
 
 </details>
 
@@ -1298,9 +897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | {'type': '`Enum/String`', 'df': 'Generates an item drop from the specified loot pool.'} | 16 |
-| [`Conditional_GoodRoll`](./Characters_and_Bosses.md#context-conditional_goodroll) | Block | {'type': '`Block`', 'df': "Conditional: Executes logic on a good RNG roll. | 2 |
-| [`RandomStatusFromPool`](./Characters_and_Bosses.md#context-randomstatusfrompool) | Block | {'type': '`Block`', 'df': 'Logic: Applies a random status from the pool. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 18 |
 
 </details>
 
@@ -1442,13 +1039,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Burn` | Number | {'type': '`Number`', 'df': "Applies or references the 'Burn' effect/state."} | 5 |
-| `Stun` | Number | {'type': '`Number`', 'df': "Applies or references the 'Stun' effect/state."} | 2 |
-| `Thorns` | Number | {'type': '`Number`', 'df': "Applies or references the 'Thorns' effect/state."} | 2 |
-| `BlackHoleSuck` | Number | {'type': '`Number`', 'df': "Applies or references the 'BlackHoleSuck' effect/state."} | 1 |
-| `Confusion` | Number | {'type': '`Number`', 'df': "Applies or references the 'Confusion' effect/state."} | 1 |
-| `ConstitutionUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'ConstitutionUp' effect/state."} | 1 |
-| `Vaporize` | Number | {'type': '`Number`', 'df': "Applies or references the 'Vaporize' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 552 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1886 |
 
 </details>
 
@@ -1466,7 +1058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 12 |
-| `threshold` | Mixed | {'type': '`Number`', 'df': ''} | 11 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 12 |
 | `even_if_stunned` | Boolean | {'type': '`Boolean`', 'df': ''} | 6 |
 | `immediate` | Boolean | {'type': '`Boolean`', 'df': ''} | 5 |
 | `use_ai` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
@@ -1488,13 +1080,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 12 |
-| [`FormChange`](./Enums.md#enum-formchange) | Enum | {'type': '`Enum/String`', 'df': 'Transforms the character into a different state or form (e.g., Rage, HasCat).'} | 12 |
-| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ReplaceBasicAttack' effect/state."} | 11 |
-| `SelfStatusCarefulness` | Number | {'type': '`Number`', 'df': "Applies or references the 'SelfStatusCarefulness' effect/state."} | 2 |
-| `StatusCarefulness` | Number | {'type': '`Number`', 'df': "Applies or references the 'StatusCarefulness' effect/state."} | 2 |
-| `ExtraBasicAttacks` | Number | {'type': '`Number`', 'df': "Applies or references the 'ExtraBasicAttacks' effect/state."} | 1 |
-| [`TinkererBasicAttackSwitching`](./Characters_and_Bosses.md#context-tinkererbasicattackswitching) | Block | {'type': '`Block`', 'df': 'Logic: Allows Tinkerer to swap basic attacks. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 14 |
 
 </details>
 
@@ -1557,7 +1143,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 5 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
@@ -1615,12 +1201,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 8 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 9 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 6 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 4 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `move_speed_multiplier` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -1640,7 +1226,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 9 |
 | [`form`](./Enums.md#enum-form) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
 | [`exclude`](./Enums.md#enum-exclude) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`particle`](./Enums.md#enum-particle) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
 
 </details>
@@ -1658,7 +1244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `self_damage` | Number | {'type': '`Number`', 'df': 'Recoil or self-inflicted damage/effects applied to the caster.'} | 7 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 
 </details>
 
@@ -1675,9 +1261,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `StrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'StrengthUp' effect/state."} | 7 |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 4 |
-| `Slow` | Number | {'type': '`Number`', 'df': "Applies or references the 'Slow' effect/state."} | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -1697,7 +1281,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array | {'type': '`Array`', 'df': ''} | 8 |
 | `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 8 |
 | [`initiative`](./Enums.md#enum-initiative) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`turns`](./Arrays.md#array-turns) | Array | {'type': '`Array`', 'df': 'Turn counter tracking.'} | 1 |
 
 </details>
@@ -1733,8 +1317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Consumed`](./Characters_and_Bosses.md#context-consumed) | Block | {'type': '`Block`', 'df': 'State triggered when the entity is eaten/consumed. | 4 |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 
 </details>
 
@@ -1919,7 +1502,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 5 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 4 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 
@@ -1956,7 +1539,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 10 |
 | [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 5 |
 
 </details>
@@ -2009,13 +1592,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `do_not_pop_corpse` | Boolean | {'type': '`Boolean`', 'df': ''} | 4 |
-| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| `force_contact` | Boolean | {'type': '`Boolean`', 'df': 'If true, enforces physical overlap.'} | 4 |
-| `instant` | Boolean | {'type': '`Boolean`', 'df': ''} | 4 |
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Enum | {'type': '`Enum/String`', 'df': 'If true, treats the consumption as riding/mounting instead of eating.'} | 4 |
-| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | {'type': '`Enum/String`', 'df': 'Ability triggered by the consumed entity while inside the consumer.'} | 4 |
-| `use_placeholder` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 23 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 20 |
 
 </details>
 
@@ -2105,11 +1683,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
-| [`Conditional_BadRoll`](./Characters_and_Bosses.md#context-conditional_badroll) | Block | {'type': '`Block`', 'df': "Conditional: Executes logic on a bad RNG roll. | 1 |
-| `DivineShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'DivineShield' effect/state."} | 1 |
-| `HealthGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthGain' effect/state."} | 1 |
-| `SpeedUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpeedUp' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 42 |
 
 </details>
 
@@ -2126,8 +1700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'UseAbility_NonStack' effect/state."} | 3 |
-| `HealthGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthGain' effect/state."} | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 20 |
 
 </details>
 
@@ -2144,10 +1717,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ExtraBasicAttacks_Status` | Number | {'type': '`Number`', 'df': "Applies or references the 'ExtraBasicAttacks_Status' effect/state."} | 2 |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 1 |
-| `HealthRegenUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthRegenUp' effect/state."} | 1 |
-| `TakeExtraTurn` | Number | {'type': '`Number`', 'df': "Applies or references the 'TakeExtraTurn' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 
 </details>
 
@@ -2201,7 +1771,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -2219,8 +1789,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 4 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 4 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 
 </details>
 
@@ -2257,7 +1827,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -2311,7 +1881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
 | [`statuses`](./Characters_and_Bosses.md#context-statuses) | Block | {'type': '`Block`', 'df': "Status effects possessed by the character. | 2 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2328,7 +1898,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2351,7 +1921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`form_above`](./Enums.md#enum-form_above) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
 | [`form_below`](./Enums.md#enum-form_below) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| `threshold` | Mixed | {'type': '`Number`', 'df': ''} | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | `count_shield` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
 
 </details>
@@ -2372,7 +1942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`statuses_on_enter_form`](./Characters_and_Bosses.md#context-statuses_on_enter_form) | Block | {'type': '`Block`', 'df': 'Status effects instantly applied upon transitioning into this form. | 2 |
 
 </details>
@@ -2410,7 +1980,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
 | [`statuses`](./Characters_and_Bosses.md#context-statuses) | Block | {'type': '`Block`', 'df': "Status effects possessed by the character. | 2 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2427,7 +1997,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 3 |
 
 </details>
@@ -2445,9 +2015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`PassiveGroup`](./Characters_and_Bosses.md#context-passivegroup) | Block | {'type': '`Block`', 'df': "Passive: A collection of passives grouped together for easier management. | 12 |
-| [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#context-addstatustobasicattack) | Block | {'type': '`Block`', 'df': "Modifier: Injects a status effect payload into the character's basic attacks. | 10 |
-| [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns) | Block | {'type': '`Block`', 'df': 'Logic: Forces a form change after X turns. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 22 |
 
 </details>
 
@@ -2502,7 +2070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 3 |
 
 </details>
@@ -2520,10 +2088,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -2614,7 +2182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `animation_suffix` | Mixed | {'type': '`Enum/String`', 'df': ''} | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -2632,7 +2200,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -2672,9 +2240,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -2694,9 +2261,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -2731,7 +2297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | {'type': '`Enum/String`', 'df': 'Generates an item drop from the specified loot pool.'} | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 14 |
 | `odds` | Number | {'type': '`Number`', 'df': "The probability (0.0 to 1.0) of triggering the 'good roll' success state."} | 2 |
 
 </details>
@@ -2768,7 +2334,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 1 |
-| `instant` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2821,7 +2387,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -2875,7 +2441,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -2894,7 +2460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -2913,7 +2479,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `displace` | Boolean | {'type': '`Boolean`', 'df': ''} | 2 |
 | `distance` | Number | {'type': '`Number`', 'df': 'The distance in tiles to knock the target away.'} | 2 |
-| `self_damage` | Boolean | {'type': '`Boolean`', 'df': 'Recoil or self-inflicted damage/effects applied to the caster.'} | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 2 |
 
 </details>
@@ -2988,7 +2554,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -3005,7 +2571,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 2 |
 
 </details>
@@ -3023,7 +2589,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 2 |
 
 </details>
@@ -3153,8 +2719,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 
 </details>
 
@@ -3171,7 +2737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | {'type': '`Enum/String`', 'df': 'Generates an item drop from the specified loot pool.'} | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 
 </details>
 
@@ -3188,8 +2754,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `CaptureFamiliar` | Number | {'type': '`Number`', 'df': "Applies or references the 'CaptureFamiliar' effect/state."} | 1 |
-| `SetHealth` | Number | {'type': '`Number`', 'df': "Applies or references the 'SetHealth' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -3206,9 +2771,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `ConstitutionUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'ConstitutionUp' effect/state."} | 1 |
-| [`RemoveStatusStacks`](./Characters_and_Bosses.md#context-removestatusstacks) | Block | {'type': '`Block`', 'df': 'Logic: Removes stacks of a specific status effect. | 1 |
-| `StrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'StrengthUp' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 30 |
 
 </details>
 
@@ -3225,7 +2788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage) | Block | {'type': '`Block`', 'df': 'Reaction: Deals damage or status effects to an attacker upon receiving melee damage. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3282,7 +2845,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -3299,7 +2862,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -3316,8 +2879,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FormChange`](./Enums.md#enum-formchange) | Enum | {'type': '`Enum/String`', 'df': 'Transforms the character into a different state or form (e.g., Rage, HasCat).'} | 1 |
-| `SpellDamageUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpellDamageUp' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3368,7 +2930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`UseAbility`](./Enums.md#enum-useability) | Enum | {'type': '`Enum/String`', 'df': 'Logic: Forces execution of an ability.'} | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -3386,7 +2948,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack) | Block | {'type': '`Block`', 'df': "Conditional: Executes logic if the triggering attack is physical. | 1 |
-| [`Else`](./Characters_and_Bosses.md#context-else) | Block | {'type': '`Block`', 'df': 'Fallback logic block for conditionals. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -3403,7 +2965,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Leech` | Number | {'type': '`Number`', 'df': "Applies or references the 'Leech' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3420,7 +2982,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Bruise` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bruise' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -3437,7 +2999,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -3454,18 +3016,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`StacyMutant_Brace`](./Characters_and_Bosses.md#context-stacymutant_brace) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 |
-| [`StacyMutant_Counter`](./Characters_and_Bosses.md#context-stacymutant_counter) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Counter' state. | 1 |
-| [`StacyMutant_Damage`](./Characters_and_Bosses.md#context-stacymutant_damage) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Damage' state. | 1 |
-| [`StacyMutant_DoubleHead`](./Characters_and_Bosses.md#context-stacymutant_doublehead) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_DoubleHead' state. | 1 |
-| [`StacyMutant_Fire`](./Characters_and_Bosses.md#context-stacymutant_fire) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Fire' state. | 1 |
-| [`StacyMutant_Health`](./Characters_and_Bosses.md#context-stacymutant_health) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Health' state. | 1 |
-| [`StacyMutant_Holy`](./Characters_and_Bosses.md#context-stacymutant_holy) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Holy' state. | 1 |
-| [`StacyMutant_Ice`](./Characters_and_Bosses.md#context-stacymutant_ice) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Ice' state. | 1 |
-| [`StacyMutant_Lightning`](./Characters_and_Bosses.md#context-stacymutant_lightning) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Lightning' state. | 1 |
-| [`StacyMutant_Mirror`](./Characters_and_Bosses.md#context-stacymutant_mirror) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Mirror' state. | 1 |
-| [`StacyMutant_Speed`](./Characters_and_Bosses.md#context-stacymutant_speed) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Speed' state. | 1 |
-| [`StacyMutant_Thorns`](./Characters_and_Bosses.md#context-stacymutant_thorns) | Block | {'type': '`Block`', 'df': "Character Form: Behavior and stats for the 'StacyMutant_Thorns' state. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 12 |
 
 </details>
 
@@ -3501,7 +3052,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -3613,7 +3164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -3631,7 +3182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3649,7 +3200,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3669,11 +3220,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
 
@@ -3692,9 +3241,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -3712,7 +3260,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -3730,7 +3278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -3772,9 +3320,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -3794,9 +3341,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -3816,9 +3362,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -3984,7 +3529,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4001,7 +3546,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4036,7 +3581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Madness` | Number | {'type': '`Number`', 'df': 'Applies the Madness debuff/status effect.'} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 | `odds` | Number | {'type': '`Number`', 'df': "The probability (0.0 to 1.0) of triggering the 'bad roll' failure state."} | 1 |
 
 </details>
@@ -4054,9 +3599,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | {'type': '`Block`', 'df': 'Logic: Applies vertical and horizontal displacement. | 1 |
-| `RemoveKnockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'RemoveKnockback' effect/state."} | 1 |
-| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | {'type': '`Block`', 'df': 'Passive: Active only until the physics engine stops moving the character. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4073,9 +3617,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](./Characters_and_Bosses.md#context-knockupandaway) | Block | {'type': '`Block`', 'df': 'Logic: Applies vertical and horizontal displacement. | 1 |
-| `RemoveKnockback` | Number | {'type': '`Number`', 'df': "Applies or references the 'RemoveKnockback' effect/state."} | 1 |
-| [`TempPassiveUntilSettled`](./Characters_and_Bosses.md#context-temppassiveuntilsettled) | Block | {'type': '`Block`', 'df': 'Passive: Active only until the physics engine stops moving the character. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4108,8 +3651,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `BloodRain` | Number | {'type': '`Number`', 'df': "Applies or references the 'BloodRain' effect/state."} | 1 |
-| [`LowerAmbientLight`](./Characters_and_Bosses.md#context-lowerambientlight) | Block | {'type': '`Block`', 'df': 'Visual: Dims the map lighting. | 1 |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 
 </details>
 
@@ -4129,9 +3671,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -4166,7 +3707,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -4185,7 +3726,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -4257,7 +3798,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Block | {'type': '`Block`', 'df': "Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -4328,9 +3869,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `move_speed_multiplier` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4350,9 +3890,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `move_speed_multiplier` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4370,7 +3909,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Block | {'type': '`Block`', 'df': "Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4405,7 +3944,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasKnockback`](./Characters_and_Bosses.md#context-conditional_hasknockback) | Block | {'type': '`Block`', 'df': "Conditional: Executes logic if the triggering attack deals knockback. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 71 |
 
 </details>
 
@@ -4426,7 +3965,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4465,7 +4004,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -4502,9 +4041,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'GlobalSpawnCharacter' effect/state."} | 1 |
-| `PlayBackground` | Number | {'type': '`Number`', 'df': "Applies or references the 'PlayBackground' effect/state."} | 1 |
-| [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic) | Block | {'type': '`Block`', 'df': 'Event Trigger: Changes background music track. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4521,7 +4058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Characters_and_Bosses.md#context-forceuseability) | Block | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `icon` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `icon_ready` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
@@ -4541,7 +4078,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Characters_and_Bosses.md#context-forceuseability) | Block | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `icon` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `icon_ready` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
@@ -4641,7 +4178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4661,7 +4198,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4680,7 +4217,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4699,7 +4236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4734,7 +4271,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4753,7 +4290,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4771,7 +4308,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4863,9 +4400,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | `weak_threshold` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
@@ -4883,7 +4419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -4902,7 +4438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4940,7 +4476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4960,7 +4496,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4998,7 +4534,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -5086,7 +4622,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | {'type': '`Enum/String`', 'df': 'The specific ability ID to cast.'} | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 1 |
-| `threshold` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5105,7 +4641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5144,7 +4680,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -5164,7 +4700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -5184,7 +4720,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -5220,7 +4756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5239,7 +4775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5275,7 +4811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5293,7 +4829,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5348,7 +4884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -5367,7 +4903,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5422,7 +4958,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Cleanse` | Number | {'type': '`Number`', 'df': "Applies or references the 'Cleanse' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`sound_event`](./Enums.md#enum-sound_event) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
 </details>
@@ -5538,7 +5074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5799,10 +5335,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -5839,7 +5373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -5894,7 +5428,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -5911,7 +5445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5932,7 +5466,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -5951,7 +5485,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Block | {'type': '`Block`', 'df': "Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -5985,7 +5519,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -6004,7 +5538,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6024,7 +5558,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -6042,7 +5576,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6059,7 +5593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6077,7 +5611,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | {'type': '`Enum/String`', 'df': 'Specific element type required or applied.'} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 30 |
 
 </details>
 
@@ -6094,7 +5628,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddStatusToTrampleDamage`](./Characters_and_Bosses.md#context-addstatustotrampledamage) | Block | {'type': '`Block`', 'df': "Modifier: Injects a status effect into the character's trample damage. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -6112,7 +5646,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -6133,7 +5667,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -6153,10 +5687,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `animation_suffix` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
 
@@ -6176,10 +5709,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `animation_suffix` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
 
@@ -6199,10 +5731,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `animation_suffix` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
 
@@ -6222,10 +5753,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `animation_suffix` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
 
@@ -6245,10 +5775,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `animation_suffix` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
 
@@ -6268,10 +5797,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `animation_suffix` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Enums.md#enum-tooltip) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
-| `uifloaters_offset` | Number | {'type': '`Number`', 'df': ''} | 1 |
 
 </details>
 
@@ -6288,7 +5816,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`StatusGroup`](./Characters_and_Bosses.md#context-statusgroup) | Block | {'type': '`Block`', 'df': 'Logic: Groups statuses for batch application. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 31 |
 
 </details>
 
@@ -6417,7 +5945,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -6454,7 +5982,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6472,7 +6000,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6489,7 +6017,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -6529,8 +6057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Brace` | Number | {'type': '`Number`', 'df': "Applies or references the 'Brace' effect/state."} | 1 |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6547,9 +6074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#context-addstatustobasicattack) | Block | {'type': '`Block`', 'df': "Modifier: Injects a status effect payload into the character's basic attacks. | 1 |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| [`CounterAttack`](./Enums.md#enum-counterattack) | Enum | {'type': '`Enum/String`', 'df': 'Reaction: Executes a counter-attack ability when hit.'} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -6566,9 +6091,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AddDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddDamage' effect/state."} | 1 |
-| `AddMaxHealth` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddMaxHealth' effect/state."} | 1 |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6585,8 +6108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| `ExtraDispersedTurns` | Number | {'type': '`Number`', 'df': "Applies or references the 'ExtraDispersedTurns' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6603,10 +6125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ElementImmune' effect/state."} | 1 |
-| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ReplaceBasicAttack' effect/state."} | 1 |
-| [`ReplaceBrain`](./Characters_and_Bosses.md#context-replacebrain) | Block | {'type': '`Block`', 'df': "AI Logic: Completely overrides the character's AI profile with a new one. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6623,10 +6142,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AddMaxHealth` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddMaxHealth' effect/state."} | 1 |
-| `AddSpeed` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddSpeed' effect/state."} | 1 |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| `SizeScale` | Number | {'type': '`Number`', 'df': "Applies or references the 'SizeScale' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6643,8 +6159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| `DivineShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'DivineShield' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6661,11 +6176,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AddMovement` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddMovement' effect/state."} | 1 |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ElementImmune' effect/state."} | 1 |
-| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ReplaceBasicAttack' effect/state."} | 1 |
-| [`ReplaceBrain`](./Characters_and_Bosses.md#context-replacebrain) | Block | {'type': '`Block`', 'df': "AI Logic: Completely overrides the character's AI profile with a new one. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6682,10 +6193,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ElementImmune' effect/state."} | 1 |
-| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ReplaceBasicAttack' effect/state."} | 1 |
-| [`ReplaceBrain`](./Characters_and_Bosses.md#context-replacebrain) | Block | {'type': '`Block`', 'df': "AI Logic: Completely overrides the character's AI profile with a new one. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6702,9 +6210,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| `ReflectProjectiles` | Number | {'type': '`Number`', 'df': 'Passive: Reflects incoming projectiles back at the attacker.'} | 1 |
-| [`StatusEachTurnEndForEachTurn`](./Characters_and_Bosses.md#context-statuseachturnendforeachturn) | Block | {'type': '`Block`', 'df': 'Event Trigger: Applies a scaling status at the end of every turn based on turn count. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -6721,10 +6227,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AddDamage` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddDamage' effect/state."} | 1 |
-| `AddSpeed` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddSpeed' effect/state."} | 1 |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| [`SizeScale`](./Enums.md#enum-sizescale) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'SizeScale' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6741,8 +6244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform) | Block | {'type': '`Block`', 'df': 'Visual: Transforms specific body parts of the character. | 1 |
-| `Thorns` | Number | {'type': '`Number`', 'df': "Applies or references the 'Thorns' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6762,7 +6264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -6783,7 +6285,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | {'type': '`Block`', 'df': 'Turn counter tracking. | 1 |
 
 </details>
@@ -6801,7 +6303,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6818,7 +6320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | `stacks` | Number | {'type': '`Number`', 'df': 'Number of stacks or intensity to apply.'} | 1 |
 
 </details>
@@ -6836,10 +6338,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
-| `DamageUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'DamageUp' effect/state."} | 1 |
-| `HealthGain` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthGain' effect/state."} | 1 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `consume` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
 
@@ -6858,7 +6358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `RandomMagicMissile` | Number | {'type': '`Number`', 'df': 'Fires a randomized number of magic missiles.'} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -6875,7 +6375,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | {'type': '`Enum/String`', 'df': 'Logic: Forces the execution of a specific ability.'} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6892,8 +6392,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `RemoveAmbientLightEffects` | Number | {'type': '`Number`', 'df': "Applies or references the 'RemoveAmbientLightEffects' effect/state."} | 1 |
-| [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array | {'type': '`Array`', 'df': "Applies or references the 'RemoveGlobalModifiers' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -6910,8 +6409,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`RemoveStatusStacks`](./Characters_and_Bosses.md#context-removestatusstacks) | Block | {'type': '`Block`', 'df': 'Logic: Removes stacks of a specific status effect. | 1 |
-| `SpeedUp_WithoutInitiative` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpeedUp_WithoutInitiative' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 
 </details>
 
@@ -6928,7 +6426,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ImmediateUseAbility' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -6945,7 +6443,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`BackflipWhenTargeted`](./Characters_and_Bosses.md#context-backflipwhentargeted) | Block | {'type': '`Block`', 'df': 'Reaction: Character executes a backflip dodge when targeted by an attack. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -6962,7 +6460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -6979,7 +6477,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`UseAbility`](./Characters_and_Bosses.md#context-useability) | Block | {'type': '`Block`', 'df': "Logic: Forces execution of an ability. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
 
 </details>
@@ -6998,7 +6496,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`keyword_tooltips`](./Characters_and_Bosses.md#context-keyword_tooltips) | Block | {'type': '`Block`', 'df': "Forces specific UI tooltips to appear. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7090,7 +6588,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7110,7 +6608,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -7197,7 +6695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Die` | Number | {'type': '`Number`', 'df': 'Character Form / Logic: Forces the character to die.'} | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `Dumb` | Number | {'type': '`Number`', 'df': 'AI Profile: A simplified, less optimal decision-making profile.'} | 1 |
 | `Fuck` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fuck' effect/state."} | 1 |
 | `Obey` | Number | {'type': '`Number`', 'df': 'AI State: Enforced compliance logic (e.g., when Charmed).'} | 1 |
@@ -7221,7 +6719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7241,7 +6739,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -7330,7 +6828,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7349,7 +6847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7367,7 +6865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7386,7 +6884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | {'type': '`Enum/String`', 'df': 'ID of the status effect to apply or check.'} | 1 |
-| `threshold` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7404,7 +6902,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -7440,7 +6938,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -7495,7 +6993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -7567,7 +7065,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7586,10 +7084,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -7607,7 +7104,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -7627,9 +7124,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -7649,9 +7145,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -7671,9 +7166,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | {'type': '`Block`', 'df': 'Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`name`](./Strings.md#string-name) | String | {'type': '`String`', 'df': "Localization key for the character's name."} | 1 |
-| [`passives`](./Characters_and_Bosses.md#context-passives) | Block | {'type': '`Block`', 'df': "Block listing intrinsic passive modifiers. | 1 |
-| [`tooltip`](./Strings.md#string-tooltip) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -7690,7 +7184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `PermanentMadness` | Number | {'type': '`Number`', 'df': "Applies or references the 'PermanentMadness' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7727,7 +7221,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](./Characters_and_Bosses.md#context-effects) | Block | {'type': '`Block`', 'df': "Non-damaging impact triggers. | 1 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1731 |
 
 </details>
 
@@ -7744,11 +7238,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cant_miss` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `damage` | Number | {'type': '`Number`', 'df': 'The base damage properties of an attack.'} | 1 |
-| [`effects`](./Characters_and_Bosses.md#context-effects) | Block | {'type': '`Block`', 'df': "Non-damaging impact triggers. | 1 |
-| `makes_contact` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `piercing` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | {'type': '`Enum/String`', 'df': 'Classification/category type.'} | 1 |
 
 </details>

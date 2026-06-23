@@ -48,11 +48,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array | Examples: `[ [ idle ButcherIdle ], [ [ idle DruidIdle ], [ [ idle MonkIdle ]` | 14 |
-| `palette` | Number | Examples: `66, 64, 65` | 13 |
-| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum | Examples: `monk_portrait, druid_portrait, butcher_portrait` | 13 |
-| [`default_face`](./Enums.md#enum-default_face) | Enum | Examples: `happy` | 1 |
-| `hud_palette` | Number | Examples: `11` | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2458 |
 
 </details>
 
@@ -70,7 +66,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`description`](./Strings.md#string-description) | String | Examples: `"CAT_CLASS_DRUID_DESC", "CAT_CLASS_MONK_DESC", "CAT_CLASS_BUTCHER_DESC"` | 14 |
-| [`name`](./Strings.md#string-name) | String | Examples: `"CAT_CLASS_MONK_NAME", "CAT_CLASS_BUTCHER_NAME", "CAT_CLASS_DRUID_NAME"` | 14 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2339 |
 
 </details>
 
@@ -130,10 +126,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `AddStartingMana` | Number | Examples: `5` | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 |
-| [`SpawnOnBattleStart`](./Enums.md#enum-spawnonbattlestart) | Enum | Examples: `Crow` | 1 |
-| [`TinkererBasicAttackSwitching`](./Cat_Classes.md#context-tinkererbasicattackswitching) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 

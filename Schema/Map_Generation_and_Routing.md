@@ -22,7 +22,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`hard`](./Arrays.md#array-hard) | Array | {'type': '`Array`', 'df': ''} | 20 |
 | [`miniboss`](./Arrays.md#array-miniboss) | Array | {'type': '`Array`', 'df': ''} | 20 |
 | [`normal`](./Arrays.md#array-normal) | Array | {'type': '`Array`', 'df': ''} | 20 |
-| [`rare`](./Arrays.md#array-rare) | Array | {'type': '`Array`', 'df': ''} | 20 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 19 |
 | [`include`](./Strings.md#string-include) | String | Examples: `"standard_nodes.gon"` | 19 |
 | [`large`](./Arrays.md#array-large) | Array | {'type': '`Array`', 'df': ''} | 19 |
@@ -66,7 +66,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | `advance` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `alley` | Block | {'type': '`Block`', 'df': ''} | 1 |
-| [`battle`](./Map_Generation_and_Routing.md#context-battle) | Block | {'type': '`Block`', 'df': ' | 1 |
 | `boneyard` | Block | {'type': '`Block`', 'df': ''} | 1 |
 | [`bumblefoot`](./Enums.md#enum-bumblefoot) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | `bunker` | Block | {'type': '`Block`', 'df': ''} | 1 |
@@ -135,7 +134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spawn_node`](./Enums.md#enum-spawn_node) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`spewer`](./Enums.md#enum-spewer) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`stacy`](./Enums.md#enum-stacy) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`start`](./Map_Generation_and_Routing.md#context-start) | Block | {'type': '`Block`', 'df': ' | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`tankcat`](./Enums.md#enum-tankcat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`thebloat`](./Enums.md#enum-thebloat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`theend`](./Map_Generation_and_Routing.md#context-theend) | Block | {'type': '`Block`', 'df': ' | 1 |

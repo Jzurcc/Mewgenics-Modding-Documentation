@@ -16,10 +16,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | `texture` | Integer |  | 211 |
 | `default_frame` | Integer |  | 210 |
-| `palette` | Integer |  | 210 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | `righteye` | Integer |  | 200 |
 | [`voice`](./Enums.md#enum-voice) | Enum |  | 200 |
 | `lefteye` | Integer |  | 198 |
@@ -38,7 +38,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `leg2` | Integer |  | 172 |
 | `pitch` | Float |  | 116 |
 | [`class_anis`](./Enums.md#enum-class_anis) | Enum |  | 40 |
-| [`default_face`](./Enums.md#enum-default_face) | Enum |  | 15 |
 | `face` | Integer |  | 2 |
 
 </details>

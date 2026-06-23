@@ -16,9 +16,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`desc`](./Strings.md#string-desc) | String |  | 634 |
-| [`name`](./Strings.md#string-name) | String |  | 634 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | `Comfort` | Integer | Applies or references the 'Comfort' effect/state. | 406 |
 | `Appeal` | Integer | Applies or references the 'Appeal' effect/state. | 338 |
 | `Stimulation` | Integer | Applies or references the 'Stimulation' effect/state. | 268 |

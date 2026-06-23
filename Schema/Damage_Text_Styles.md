@@ -16,11 +16,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | [`color`](./Arrays.md#array-color) | Array |  | 26 |
 | [`right_icon`](./Enums.md#enum-right_icon) | String |  | 10 |
 | [`back_icon`](./Enums.md#enum-back_icon) | String |  | 8 |
-| `scale` | Float |  | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`outline_color`](./Enums.md#enum-outline_color) | Enum |  | 2 |
 | [`suffix`](./Strings.md#string-suffix) | String |  | 1 |
 

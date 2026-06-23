@@ -17,52 +17,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`intro`](./Events_and_Encounters.md#context-intro) | Block | {'type': '`Block`', 'df': 'Event Node: The initial text block when a story event first loads. | 214 |
 | [`main`](./Events_and_Encounters.md#context-main) | Block | {'type': '`Block`', 'df': 'Event Node: The central hub or recurring menu of a story event. | 214 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': 'String', 'df': ''} | 37 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 35 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 16 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 16 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option.'} | 12 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': 'Enum/String', 'df': ''} | 11 |
-| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | {'type': 'Enum/String', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 11 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Bad' action."} | 10 |
-| `weight` | Mixed | {'type': '`Number`', 'df': 'Probability weight for this outcome.'} | 10 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum | {'type': '`Enum/String`', 'df': ''} | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Good' action."} | 8 |
-| [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | {'type': 'Block', 'df': 'Event Reward: Permanently increases (or decreases) the core stats of a single character.'} | 7 |
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | {'type': 'Enum/String', 'df': ''} | 5 |
-| [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | {'type': '`Enum/String`', 'df': 'Prerequisite: Must meet this condition.'} | 5 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Reward' action."} | 4 |
 | `stat_max` | Number | {'type': '`Number`', 'df': ''} | 4 |
 | `stat_min` | Number | {'type': '`Number`', 'df': ''} | 4 |
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | {'type': 'Enum/String', 'df': 'Event Action: Adds a specific familiar to the party.'} | 3 |
 | [`open`](./Events_and_Encounters.md#context-open) | Block | Examples: `{ ... }` | 3 |
 | `pick` | Block | Examples: `{ ... }` | 3 |
 | `cha` | Number | {'type': '`Number`', 'df': ''} | 2 |
 | `con` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Ignore\' action. | 2 |
 | `int` | Number | {'type': '`Number`', 'df': ''} | 2 |
 | `lck` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| [`leave`](./Events_and_Encounters.md#context-leave) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Leave' action."} | 2 |
-| [`level_up`](./Enums.md#enum-level_up) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | {'type': 'Array', 'df': ''} | 2 |
 | `spd` | Number | {'type': '`Number`', 'df': ''} | 2 |
 | `str` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `ally_ambush_next_fights` | Number | {'type': 'Number', 'df': ''} | 1 |
 | `buy2` | Block | Examples: `{ ... }` | 1 |
 | `buy3` | Block | Examples: `{ ... }` | 1 |
 | [`destroy`](./Events_and_Encounters.md#context-destroy) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 |
 | `dex` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`examine`](./Events_and_Encounters.md#context-examine) | Block | Examples: `{ ... }` | 1 |
-| `gain_cat_familiar` | Number | Examples: `1` | 1 |
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
-| [`gain_food`](./Arrays.md#array-gain_food) | Array | {'type': 'Array', 'df': ''} | 1 |
-| [`injury`](./Enums.md#enum-injury) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
-| `next_event_bonus` | Number | {'type': 'Number', 'df': ''} | 1 |
-| `party_heal` | Number | {'type': 'Number', 'df': ''} | 1 |
-| `random_mutation` | Number | {'type': 'Number', 'df': 'Event Reward: Applies a completely random mutation to a character.'} | 1 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | {'type': '`Block`', 'df': 'Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter.'} | 1 |
 | [`smash`](./Events_and_Encounters.md#context-smash) | Block | Examples: `{ ... }` | 1 |
 
 </details>
@@ -80,30 +58,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`common`](./Events_and_Encounters.md#context-common) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Common\' action. | 633 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Rare\' action. | 623 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': 'String', 'df': ''} | 72 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 54 |
-| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | {'type': 'Enum/String', 'df': ''} | 24 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool) | Block | {'type': 'Enum/String', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 14 |
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
-| [`set_subject`](./Enums.md#enum-set_subject) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | {'type': 'Array', 'df': ''} | 8 |
-| `next_event_bonus` | Number | {'type': 'Number', 'df': ''} | 5 |
-| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum | {'type': 'Array', 'df': ''} | 4 |
-| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
-| `injury` | Mixed | {'type': 'Enum/String', 'df': ''} | 2 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight) | Block | {'type': '`Block`', 'df': 'Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter.'} | 2 |
-| [`event_now`](./Enums.md#enum-event_now) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array | {'type': 'Array', 'df': ''} | 1 |
-| [`get_item`](./Enums.md#enum-get_item) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
-| [`party_damage`](./Arrays.md#array-party_damage) | Array | {'type': 'Number', 'df': ''} | 1 |
-| [`random_chance`](./Events_and_Encounters.md#context-random_chance) | Block | {'type': '`Block`', 'df': 'Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `weight` | Number | {'type': '`Number`', 'df': 'Probability weight for this outcome.'} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1364 |
 
 </details>
 
@@ -120,62 +75,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': '`String`', 'df': ''} | 608 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 150 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool) | Block | {'type': '`Enum/String`', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 71 |
-| [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | {'type': '`Block`', 'df': 'Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | {'type': '`Array`', 'df': ''} | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 658 |
 | [`damage`](./Arrays.md#array-damage) | Array | {'type': '`Number`', 'df': "Event Node: Story branch or dialog option representing the 'Damage' action."} | 35 |
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array | {'type': '`Array`', 'df': ''} | 28 |
-| `injury` | Mixed | {'type': '`Enum/String`', 'df': ''} | 27 |
-| `self_damage` | Number | {'type': '`Number`', 'df': 'Recoil or self-inflicted damage/effects applied to the caster.'} | 26 |
-| [`random_mutation`](./Events_and_Encounters.md#context-random_mutation) | Block | {'type': '`Number`', 'df': 'Event Reward: Applies a completely random mutation to a character.'} | 25 |
-| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 24 |
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 24 |
-| [`play_animation`](./Arrays.md#array-play_animation) | Array | {'type': '`Enum/String`', 'df': ''} | 23 |
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | {'type': '`Enum/String`', 'df': ''} | 21 |
-| [`gain_food`](./Arrays.md#array-gain_food) | Array | {'type': '`Number`', 'df': ''} | 21 |
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | {'type': '`Enum/String`', 'df': 'Event Action: Adds a specific familiar to the party.'} | 19 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight) | Block | {'type': '`Block`', 'df': 'Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 |
-| [`party_damage`](./Arrays.md#array-party_damage) | Array | {'type': '`Number`', 'df': ''} | 15 |
-| `party_heal` | Number | {'type': '`Number`', 'df': ''} | 15 |
-| [`get_item`](./Enums.md#enum-get_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 14 |
-| `heal` | Number | {'type': '`Number`', 'df': ''} | 13 |
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | {'type': '`Enum/String`', 'df': ''} | 12 |
-| [`get_parasite_from_pool`](./Arrays.md#array-get_parasite_from_pool) | Array | {'type': '`Enum/String`', 'df': ''} | 11 |
-| [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String | {'type': '`String`', 'df': ''} | 11 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#context-party_status_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
-| `ally_ambush_next_fights` | Number | {'type': '`Number`', 'df': ''} | 10 |
-| `full_heal` | Number | {'type': '`Number`', 'df': ''} | 10 |
-| `ambush_next_basic_fights` | Number | {'type': '`Number`', 'df': ''} | 9 |
-| [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | {'type': '`Block`', 'df': 'Event Action: Provides a reward only if a specific condition is met. | 9 |
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#context-random_mutation_from_set) | Block | {'type': '`Block`', 'df': "Event Reward: Applies a random mutation to a character from a specific pool. | 8 |
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | {'type': '`Enum/String`', 'df': ''} | 7 |
-| `next_event_bonus` | Number | {'type': '`Number`', 'df': ''} | 7 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 |
-| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| [`kill`](./Enums.md#enum-kill) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`event_now`](./Enums.md#enum-event_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`next_event_from_set`](./Events_and_Encounters.md#context-next_event_from_set) | Block | {'type': '`Block`', 'df': 'Event Action: Chains immediately into a randomly selected subsequent story event. | 2 |
-| `party_heal_disorder` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#context-party_permanent_stats_exclude_self) | Block | {'type': '`Block`', 'df': 'Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
-| [`spin`](./Enums.md#enum-spin) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| `clear_result_animation` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `heal_disorder` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `heal_injury` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `self_heal` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
 </details>
 
@@ -192,82 +93,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': '`String`', 'df': ''} | 612 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 179 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool) | Block | {'type': '`Enum/String`', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 124 |
-| [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | {'type': '`Block`', 'df': 'Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | {'type': '`Enum/String`', 'df': ''} | 65 |
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 51 |
-| `injury` | Mixed | {'type': '`Enum/String`', 'df': ''} | 51 |
-| [`get_item`](./Enums.md#enum-get_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 41 |
-| [`random_mutation`](./Events_and_Encounters.md#context-random_mutation) | Block | {'type': '`Number`', 'df': 'Event Reward: Applies a completely random mutation to a character.'} | 40 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | {'type': '`Enum/String`', 'df': ''} | 30 |
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | {'type': '`Enum/String`', 'df': ''} | 30 |
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | {'type': '`Enum/String`', 'df': 'Event Action: Adds a specific familiar to the party.'} | 29 |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | {'type': '`Array`', 'df': ''} | 29 |
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 24 |
-| [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | {'type': '`Block`', 'df': 'Event Action: Provides a reward only if a specific condition is met. | 22 |
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 22 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight) | Block | {'type': '`Block`', 'df': 'Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 705 |
 | `damage` | Number | {'type': '`Number`', 'df': "Event Node: Story branch or dialog option representing the 'Damage' action."} | 18 |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 |
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array | {'type': '`Array`', 'df': ''} | 17 |
-| `next_event_bonus` | Number | {'type': '`Number`', 'df': ''} | 14 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#context-random_mutation_from_set) | Block | {'type': '`Block`', 'df': "Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
-| `self_damage` | Number | {'type': '`Number`', 'df': 'Recoil or self-inflicted damage/effects applied to the caster.'} | 13 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#context-party_status_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 |
-| [`play_animation`](./Arrays.md#array-play_animation) | Array | {'type': '`Array`', 'df': ''} | 11 |
-| [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | {'type': '`Enum/String`', 'df': ''} | 10 |
-| [`party_damage`](./Arrays.md#array-party_damage) | Array | {'type': '`Number`', 'df': ''} | 10 |
-| `party_heal` | Number | {'type': '`Number`', 'df': ''} | 10 |
-| [`battle`](./Math_Equations.md) | Equation | {'type': '`String`', 'df': ''} | 9 |
-| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | {'type': '`Enum/String`', 'df': ''} | 9 |
-| [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String | {'type': '`String`', 'df': ''} | 8 |
-| `party_random_mutation` | Number | {'type': '`Number`', 'df': ''} | 8 |
-| `ambush_next_basic_fights` | Number | {'type': '`Number`', 'df': ''} | 7 |
-| [`leave_party_temporarily`](./Events_and_Encounters.md#context-leave_party_temporarily) | Block | {'type': '`Block`', 'df': 'Event Action: Removes a character from the active team until the next hub area. | 7 |
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`gain_food`](./Arrays.md#array-gain_food) | Array | {'type': '`Array`', 'df': ''} | 6 |
-| `hide_appearance_changes` | Number | {'type': '`Number`', 'df': ''} | 6 |
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| `ally_ambush_next_fights` | Number | {'type': '`Number`', 'df': ''} | 5 |
-| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| `full_heal` | Number | {'type': '`Number`', 'df': ''} | 4 |
-| [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| `gain_cat_familiar` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 |
-| [`kill`](./Enums.md#enum-kill) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`level_up`](./Enums.md#enum-level_up) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`make_old`](./Enums.md#enum-make_old) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`next_event_from_set`](./Events_and_Encounters.md#context-next_event_from_set) | Block | {'type': '`Enum/String`', 'df': 'Event Action: Chains immediately into a randomly selected subsequent story event.'} | 3 |
-| [`spawn_reflection_next_fight`](./Events_and_Encounters.md#context-spawn_reflection_next_fight) | Block | {'type': '`Number`', 'df': 'Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter.'} | 3 |
-| [`event_now`](./Enums.md#enum-event_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| `party_heal_disorder` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| `party_heal_injury` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#context-party_permanent_stats_exclude_self) | Block | {'type': '`Block`', 'df': 'Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
-| `set_age` | Number | {'type': '`Number`', 'df': ''} | 2 |
-| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`ambush`](./Math_Equations.md) | Equation | {'type': '`String`', 'df': ''} | 1 |
-| `clear_result_animation` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `heal_disorder` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`party_injury`](./Enums.md#enum-party_injury) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#context-party_permanent_stats) | Block | {'type': '`Block`', 'df': 'Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#context-party_random_mutation_from_set) | Block | {'type': '`Block`', 'df': 'Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
-| [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`scramble_basic_attack`](./Enums.md#enum-scramble_basic_attack) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
 </details>
 
@@ -284,64 +111,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Reward' action."} | 326 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 285 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': 'String', 'df': ''} | 185 |
-| [`play_animation`](./Arrays.md#array-play_animation) | Array | {'type': 'Enum/String', 'df': ''} | 111 |
-| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | {'type': 'Enum/String', 'df': ''} | 52 |
-| [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | {'type': 'Block', 'df': 'Event Action: Provides a reward only if a specific condition is met.'} | 38 |
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 26 |
-| [`cutscene`](./Events_and_Encounters.md#context-cutscene) | Block | {'type': '`String`', 'df': 'Event Node: Triggers a narrative cutscene.'} | 19 |
-| [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | {'type': '`Enum/String`', 'df': ''} | 12 |
-| [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum | {'type': '`Enum/String`', 'df': ''} | 12 |
-| `random_mutation` | Number | {'type': 'Number', 'df': 'Event Reward: Applies a completely random mutation to a character.'} | 12 |
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 12 |
-| [`event_now`](./Enums.md#enum-event_now) | Enum | {'type': 'Enum/String', 'df': ''} | 9 |
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | {'type': 'Enum/String', 'df': ''} | 9 |
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | {'type': 'Enum/String', 'df': ''} | 8 |
-| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | {'type': 'Enum/String', 'df': ''} | 8 |
-| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | {'type': 'Enum/String', 'df': ''} | 6 |
-| [`get_item`](./Enums.md#enum-get_item) | Enum | {'type': 'Enum/String', 'df': ''} | 5 |
-| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | {'type': 'Enum/String', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 5 |
-| `heal_disorder` | Mixed | {'type': 'Number', 'df': ''} | 5 |
-| [`injury`](./Enums.md#enum-injury) | Enum | {'type': 'Enum/String', 'df': ''} | 4 |
-| [`level_up`](./Enums.md#enum-level_up) | Enum | {'type': 'Enum/String', 'df': ''} | 4 |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Mutation' action."} | 4 |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | {'type': 'Array', 'df': ''} | 4 |
-| [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | {'type': '`Array`', 'df': ''} | 4 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Rare' action."} | 4 |
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | {'type': 'Enum/String', 'df': ''} | 3 |
-| `heal_injury` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| [`kill`](./Enums.md#enum-kill) | Enum | {'type': 'Enum/String', 'df': ''} | 3 |
-| [`transform_item`](./Arrays.md#array-transform_item) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
-| `full_heal` | Number | {'type': 'Number', 'df': ''} | 2 |
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | {'type': 'Enum/String', 'df': ''} | 2 |
-| [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array | {'type': 'Enum/String', 'df': ''} | 2 |
-| [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array | {'type': 'Enum/String', 'df': ''} | 2 |
-| [`override_end_option_prompt`](./Strings.md#string-override_end_option_prompt) | String | {'type': 'String', 'df': ''} | 2 |
-| [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | {'type': '`Array`', 'df': ''} | 2 |
-| `ally_ambush_next_fights` | Number | {'type': 'Number', 'df': ''} | 1 |
-| `clone_self_to_party` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `copy_items_to_party` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `copy_party_items` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#context-gain_clone_familiar) | Block | {'type': '`Block`', 'df': 'Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_food`](./Arrays.md#array-gain_food) | Array | {'type': 'Array', 'df': ''} | 1 |
-| [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight) | Block | {'type': 'Block', 'df': 'Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter.'} | 1 |
-| `heal` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
-| `next_event_bonus` | Number | {'type': 'Number', 'df': ''} | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#context-next_event_from_set) | Block | {'type': 'Enum/String', 'df': 'Event Action: Chains immediately into a randomly selected subsequent story event.'} | 1 |
-| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| `trigger_butterfly_effect` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 464 |
 
 </details>
 
@@ -358,28 +128,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Reward' action."} | 303 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 219 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': 'String', 'df': ''} | 38 |
-| [`play_animation`](./Arrays.md#array-play_animation) | Array | {'type': 'Enum/String', 'df': ''} | 10 |
-| [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | {'type': '`Block`', 'df': 'Event Action: Provides a reward only if a specific condition is met. | 9 |
-| [`injury`](./Math_Equations.md) | Equation | {'type': 'Enum/String', 'df': ''} | 8 |
-| [`battle`](./Math_Equations.md) | Equation | {'type': '`String`', 'df': ''} | 4 |
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | {'type': 'Enum/String', 'df': ''} | 4 |
-| [`kill`](./Enums.md#enum-kill) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 |
-| [`cutscene`](./Events_and_Encounters.md#context-cutscene) | Block | {'type': 'String', 'df': 'Event Node: Triggers a narrative cutscene.'} | 3 |
-| [`event_now`](./Enums.md#enum-event_now) | Enum | {'type': 'Enum/String', 'df': ''} | 3 |
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | {'type': 'Enum/String', 'df': ''} | 3 |
-| `next_event_bonus` | Number | {'type': 'Number', 'df': ''} | 2 |
-| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#context-party_random_mutation_from_set) | Block | {'type': '`Block`', 'df': 'Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
-| [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats) | Block | {'type': '`Block`', 'df': 'Event Reward: Permanently increases (or decreases) the core stats of a single character. | 1 |
-| [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 249 |
 
 </details>
 
@@ -409,7 +158,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `choose_cat_with_min_health` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `choose_cat_with_most_injuries` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
 | `choose_cat_with_parasite` | Boolean | {'type': '`Boolean`', 'df': ''} | 1 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 214 |
 
 </details>
 
@@ -426,28 +175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`options`](./Events_and_Encounters.md#context-options) | Block | {'type': '`Block`', 'df': 'Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': 'String', 'df': ''} | 208 |
-| [`setup`](./Events_and_Encounters.md#context-setup) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Bad' action."} | 4 |
-| [`goto`](./Enums.md#enum-goto) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`outcome`](./Events_and_Encounters.md#context-outcome) | Block | {'type': '`Block`', 'df': 'Event Block: Logic and text executed after selecting a specific dialog option. | 4 |
-| `max_options` | Number | {'type': '`Number`', 'df': ''} | 3 |
-| `set_frame` | Number | {'type': 'Number', 'df': ''} | 3 |
-| `shuffle_options` | Boolean | {'type': '`Boolean`', 'df': ''} | 3 |
-| [`weight`](./Enums.md#enum-weight) | Enum | {'type': '`Enum/String`', 'df': 'Probability weight for this outcome.'} | 2 |
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | {'type': 'Enum/String', 'df': 'Event Action: Adds a specific familiar to the party.'} | 1 |
-| [`leave`](./Events_and_Encounters.md#context-leave) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Leave' action."} | 1 |
-| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | {'type': 'Enum/String', 'df': 'Event Action: Chains immediately into a randomly selected subsequent story event.'} | 1 |
-| `party_heal` | Number | {'type': 'Number', 'df': ''} | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#context-party_permanent_stats) | Block | {'type': 'Block', 'df': 'Event Reward: Permanently increases (or decreases) the core stats of all party members.'} | 1 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum | {'type': 'Array', 'df': ''} | 1 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Rare' action."} | 1 |
-| [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | {'type': '`Enum/String`', 'df': 'Prerequisite: Must meet this condition.'} | 1 |
-| [`self_damage`](./Arrays.md#array-self_damage) | Array | {'type': '`Array`', 'df': 'Recoil or self-inflicted damage/effects applied to the caster.'} | 1 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | {'type': '`Block`', 'df': 'Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter.'} | 1 |
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 220 |
 
 </details>
 
@@ -466,7 +194,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 |
 | [`examine`](./Events_and_Encounters.md#context-examine) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 |
-| [`leave`](./Events_and_Encounters.md#context-leave) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Leave\' action. | 29 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 144 |
 | [`loot`](./Events_and_Encounters.md#context-loot) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Loot\' action. | 25 |
 | [`eat`](./Events_and_Encounters.md#context-eat) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Eat\' action. | 23 |
 | [`smash`](./Events_and_Encounters.md#context-smash) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Smash\' action. | 15 |
@@ -491,17 +219,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`drink`](./Events_and_Encounters.md#context-drink) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Drink\' action. | 5 |
 | [`kiss`](./Events_and_Encounters.md#context-kiss) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Kiss\' action. | 5 |
 | [`run`](./Events_and_Encounters.md#context-run) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Run\' action. | 5 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Bad' action."} | 4 |
 | [`bite`](./Events_and_Encounters.md#context-bite) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Bite' action. | 4 |
 | [`damage`](./Events_and_Encounters.md#context-damage) | Block | {'type': 'Number', 'df': "Event Node: Story branch or dialog option representing the 'Damage' action."} | 4 |
 | [`go_around`](./Events_and_Encounters.md#context-go_around) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Go Around\' action. | 4 |
 | [`home`](./Events_and_Encounters.md#context-home) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Home' action. | 4 |
 | [`past`](./Events_and_Encounters.md#context-past) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Past' action. | 4 |
 | [`skip`](./Events_and_Encounters.md#context-skip) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Skip\' action. | 4 |
-| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | {'type': 'Enum/String', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 3 |
 | [`investigate`](./Events_and_Encounters.md#context-investigate) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Investigate\' action. | 3 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': 'String', 'df': ''} | 3 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Rare' action."} | 3 |
 | [`repell`](./Events_and_Encounters.md#context-repell) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Repell\' action. | 3 |
 | [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Attach Antenna' action. | 2 |
 | [`boogers`](./Events_and_Encounters.md#context-boogers) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Boogers\' action. | 2 |
@@ -514,11 +238,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`protection`](./Events_and_Encounters.md#context-protection) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Protection\' action. | 2 |
 | [`repair`](./Events_and_Encounters.md#context-repair) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Repair\' action. | 2 |
 | [`sacrifice`](./Events_and_Encounters.md#context-sacrifice) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Sacrifice\' action. | 2 |
-| [`scale`](./Events_and_Encounters.md#context-scale) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 262 |
 | [`turnon`](./Events_and_Encounters.md#context-turnon) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Turnon\' action. | 2 |
-| `weight` | Mixed | {'type': '`Enum/String`', 'df': 'Probability weight for this outcome.'} | 2 |
 | [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice) | Block | {'type': '`Block`', 'df': 'Event Action: Triggers the altar sacrifice progression logic. | 1 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
 | [`arm`](./Events_and_Encounters.md#context-arm) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Arm\' action. | 1 |
 | [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Attach Amplifier' action. | 1 |
@@ -573,7 +295,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`follow`](./Events_and_Encounters.md#context-follow) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Follow\' action. | 1 |
 | [`free`](./Events_and_Encounters.md#context-free) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Free\' action. | 1 |
 | [`future`](./Events_and_Encounters.md#context-future) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Future' action. | 1 |
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | {'type': 'Enum/String', 'df': 'Event Action: Adds a specific familiar to the party.'} | 1 |
 | [`give_parasite`](./Events_and_Encounters.md#context-give_parasite) | Block | {'type': '`Block`', 'df': 'Event Action: Equips a parasite item to a character. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': 'Block', 'df': "Event Node: Story branch or dialog option representing the 'Good' action."} | 1 |
 | [`hack`](./Events_and_Encounters.md#context-hack) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Hack\' action. | 1 |
@@ -610,7 +331,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pilfer`](./Events_and_Encounters.md#context-pilfer) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Pilfer\' action. | 1 |
 | [`pirouette`](./Events_and_Encounters.md#context-pirouette) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Pirouette\' action. | 1 |
 | [`place_gristle`](./Events_and_Encounters.md#context-place_gristle) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Place Gristle' action. | 1 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum | {'type': 'Enum/String', 'df': ''} | 1 |
 | [`power`](./Events_and_Encounters.md#context-power) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Power' action. | 1 |
 | [`pull`](./Events_and_Encounters.md#context-pull) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Pull\' action. | 1 |
 | [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Pull It Out\' action. | 1 |
@@ -639,7 +359,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Sacrifice Partial Favor\' action. | 1 |
 | [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Sacrifice Quest' action. | 1 |
 | [`scream`](./Events_and_Encounters.md#context-scream) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Scream\' action. | 1 |
-| `set_frame` | Number | {'type': 'Number', 'df': ''} | 1 |
 | [`shake`](./Events_and_Encounters.md#context-shake) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Shake\' action. | 1 |
 | [`slip_through`](./Events_and_Encounters.md#context-slip_through) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Slip Through\' action. | 1 |
 | [`sneak_by`](./Events_and_Encounters.md#context-sneak_by) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Sneak By\' action. | 1 |
@@ -700,7 +419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum | {'type': '`Enum/String`', 'df': ''} | 40 |
 | [`restrict`](./Arrays.md#array-restrict) | Array | {'type': '`Array`', 'df': ''} | 30 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': '`String`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 32 |
 
 </details>
 
@@ -747,45 +466,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 29 |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 28 |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 20 |
-| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AbilityOnBattleStart_Immediate' effect/state."} | 14 |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 7 |
-| `SpeedUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpeedUp' effect/state."} | 5 |
-| `StrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'StrengthUp' effect/state."} | 5 |
-| `ConstitutionUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'ConstitutionUp' effect/state."} | 4 |
-| `AddStartingMana` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddStartingMana' effect/state."} | 3 |
-| `Burn` | Number | {'type': '`Number`', 'df': "Applies or references the 'Burn' effect/state."} | 3 |
-| `CharismaUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'CharismaUp' effect/state."} | 3 |
-| `Confusion` | Number | {'type': '`Number`', 'df': "Applies or references the 'Confusion' effect/state."} | 3 |
-| `HealthRegenUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthRegenUp' effect/state."} | 3 |
-| `Webbed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Webbed' effect/state."} | 3 |
-| `Blind` | Number | {'type': '`Number`', 'df': "Applies or references the 'Blind' effect/state."} | 2 |
-| `Bruise` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bruise' effect/state."} | 2 |
-| `DexterityUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'DexterityUp' effect/state."} | 2 |
-| `IntelligenceUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'IntelligenceUp' effect/state."} | 2 |
-| `NoHealthRegen` | Number | {'type': '`Number`', 'df': "Applies or references the 'NoHealthRegen' effect/state."} | 2 |
-| `Sleep` | Number | {'type': '`Number`', 'df': "Applies or references the 'Sleep' effect/state."} | 2 |
-| `Stun` | Number | {'type': '`Number`', 'df': "Applies or references the 'Stun' effect/state."} | 2 |
-| [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AbilityOnBattleStart' effect/state."} | 1 |
-| `AddInitiative` | Number | {'type': '`Number`', 'df': "Applies or references the 'AddInitiative' effect/state."} | 1 |
-| `AlphaTurns` | Number | {'type': '`Number`', 'df': "Applies or references the 'AlphaTurns' effect/state."} | 1 |
-| [`ChangeTileUnderCharacterAtStart`](./Enums.md#enum-changetileundercharacteratstart) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'ChangeTileUnderCharacterAtStart' effect/state."} | 1 |
-| `DivineShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'DivineShield' effect/state."} | 1 |
-| `Fights` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fights' effect/state."} | 1 |
-| `LuckUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'LuckUp' effect/state."} | 1 |
-| `Madness` | Number | {'type': '`Number`', 'df': 'Applies the Madness debuff/status effect.'} | 1 |
-| `MissChance` | Number | {'type': '`Number`', 'df': "Applies or references the 'MissChance' effect/state."} | 1 |
-| `NoManaRegen` | Number | {'type': '`Number`', 'df': "Applies or references the 'NoManaRegen' effect/state."} | 1 |
-| `PermanentConfusion` | Number | {'type': '`Number`', 'df': "Applies or references the 'PermanentConfusion' effect/state."} | 1 |
-| `ProbeCharmed` | Number | {'type': '`Number`', 'df': "Applies or references the 'ProbeCharmed' effect/state."} | 1 |
-| `RandomStatUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'RandomStatUp' effect/state."} | 1 |
-| `Rot` | Number | {'type': '`Number`', 'df': "Applies or references the 'Rot' effect/state."} | 1 |
-| `Slow` | Number | {'type': '`Number`', 'df': "Applies or references the 'Slow' effect/state."} | 1 |
-| `SpiderInfested` | Number | {'type': '`Number`', 'df': "Applies or references the 'SpiderInfested' effect/state."} | 1 |
-| `Tarred` | Number | {'type': '`Number`', 'df': "Applies or references the 'Tarred' effect/state."} | 1 |
-| `TempStrengthUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'TempStrengthUp' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 103 |
 
 </details>
 
@@ -827,9 +508,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 124 |
-| [`reward`](./Events_and_Encounters.md#context-reward) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Reward\' action. | 124 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 175 |
 | [`else`](./Events_and_Encounters.md#context-else) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Else\' action. | 37 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': 'String', 'df': ''} | 2 |
 
 </details>
 
@@ -868,8 +548,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |
 | `label` | Mixed | {'type': '`String`', 'df': ''} | 57 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 56 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 55 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 55 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 59 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
 
@@ -891,10 +571,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `label` | Mixed | {'type': '`Enum/String`', 'df': ''} | 43 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 32 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 57 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array | {'type': '`Array`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -931,21 +610,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': '`String`', 'df': ''} | 19 |
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| [`party_damage`](./Arrays.md#array-party_damage) | Array | {'type': '`Number`', 'df': ''} | 5 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 5 |
-| [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | {'type': '`Block`', 'df': 'Event Action: Provides a reward only if a specific condition is met. | 4 |
-| [`event_now`](./Enums.md#enum-event_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`get_item_from_pool`](./Arrays.md#array-get_item_from_pool) | Array | {'type': '`Array`', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 32 |
 | `damage` | Number | {'type': '`Number`', 'df': "Event Node: Story branch or dialog option representing the 'Damage' action."} | 1 |
-| `next_event_bonus` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| [`random_mutation`](./Events_and_Encounters.md#context-random_mutation) | Block | {'type': '`Block`', 'df': 'Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
 </details>
 
@@ -965,8 +631,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 30 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 30 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 28 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 3 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 31 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 32 |
 
 </details>
 
@@ -983,13 +649,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 25 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 26 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |
 | `label` | Mixed | {'type': '`Enum/String`', 'df': ''} | 25 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 25 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 23 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 63 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Rare' action."} | 1 |
 
 </details>
 
@@ -1037,7 +702,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 23 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 66 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |
 | `label` | Mixed | {'type': '`String`', 'df': ''} | 23 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 23 |
@@ -1057,17 +722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 6 |
-| `Poison` | Number | {'type': '`Number`', 'df': "Applies or references the 'Poison' effect/state."} | 5 |
-| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | {'type': '`Enum/String`', 'df': "Applies or references the 'AbilityOnBattleStart_Immediate' effect/state."} | 3 |
-| `NoHealthRegen` | Number | {'type': '`Number`', 'df': "Applies or references the 'NoHealthRegen' effect/state."} | 3 |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 1 |
-| `DivineShield` | Number | {'type': '`Number`', 'df': "Applies or references the 'DivineShield' effect/state."} | 1 |
-| `HealthRegenUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'HealthRegenUp' effect/state."} | 1 |
-| `Immobile` | Number | {'type': '`Number`', 'df': "Applies or references the 'Immobile' effect/state."} | 1 |
-| `Tangled` | Number | {'type': '`Number`', 'df': 'Applies a tangled/ensnared status effect, often modifying visual sprites.'} | 1 |
-| `Tarred` | Number | {'type': '`Number`', 'df': "Applies or references the 'Tarred' effect/state."} | 1 |
-| `Webbed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Webbed' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 22 |
 
 </details>
 
@@ -1084,8 +739,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward) | Block | {'type': '`Block`', 'df': 'Event Action: Provides a reward only if a specific condition is met. | 42 |
-| `set_frame` | Number | {'type': '`Number`', 'df': ''} | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -1102,7 +756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`cutscene`](./Strings.md#string-cutscene) | String | {'type': '`String`', 'df': 'Event Node: Triggers a narrative cutscene.'} | 21 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 22 |
 | `skip_result_screen` | Boolean | {'type': '`Boolean`', 'df': ''} | 21 |
 
 </details>
@@ -1153,7 +807,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 15 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 12 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 18 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
 </details>
@@ -1174,7 +828,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 14 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 14 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 22 |
 
 </details>
 
@@ -1191,7 +845,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 12 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 16 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 12 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 12 |
@@ -1214,7 +868,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 8 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 8 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 7 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 12 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
@@ -1233,7 +887,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 32 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |
 | `label` | Mixed | {'type': '`String`', 'df': ''} | 11 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 11 |
@@ -1254,9 +908,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Fights` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fights' effect/state."} | 6 |
-| [`CharacterTypeGainsStatusAtBattleStart`](./Events_and_Encounters.md#context-charactertypegainsstatusatbattlestart) | Block | {'type': '`Block`', 'df': "Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 5 |
-| [`StatusRandomEnemiesOnBattleStart`](./Events_and_Encounters.md#context-statusrandomenemiesonbattlestart) | Block | {'type': '`Block`', 'df': "Encounter Modifier: Applies a status effect to a random number of enemies at the start of battle. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 16 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 | [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart) | Block | {'type': '`Block`', 'df': 'Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 |
 
 </details>
@@ -1274,11 +927,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 8 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 17 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 8 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 8 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -1298,7 +951,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 
 </details>
 
@@ -1317,9 +970,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 7 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 12 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
-| [`rare`](./Events_and_Encounters.md#context-rare) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Rare' action."} | 1 |
 
 </details>
 
@@ -1339,7 +991,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 
 </details>
 
@@ -1359,7 +1011,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 
 </details>
 
@@ -1376,7 +1028,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 7 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 18 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | `label` | Mixed | {'type': '`Enum/String`', 'df': ''} | 7 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 7 |
@@ -1400,7 +1052,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | `label` | Mixed | {'type': '`String`', 'df': ''} | 7 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 13 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -1440,8 +1092,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | `label` | Mixed | {'type': '`Enum/String`', 'df': ''} | 7 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 7 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -1458,7 +1110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
@@ -1479,7 +1131,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
@@ -1503,7 +1155,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 6 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 5 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 
 </details>
 
@@ -1522,9 +1174,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | `label` | Mixed | {'type': '`String`', 'df': ''} | 6 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 5 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
 </details>
@@ -1542,7 +1194,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 6 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 6 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 6 |
@@ -1565,8 +1217,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | `label` | Mixed | {'type': '`Enum/String`', 'df': ''} | 6 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 6 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 11 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -1604,9 +1256,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | {'type': '`Enum/String`', 'df': 'Specific entity tag required.'} | 5 |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 2 |
-| `Stun` | Number | {'type': '`Number`', 'df': "Applies or references the 'Stun' effect/state."} | 2 |
-| `AllStatsUp` | Number | {'type': '`Number`', 'df': "Applies or references the 'AllStatsUp' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 
 </details>
 
@@ -1623,7 +1273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 13 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | `label` | Mixed | {'type': '`Enum/String`', 'df': ''} | 5 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 5 |
@@ -1643,7 +1293,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 13 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 5 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 5 |
@@ -1663,12 +1313,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 9 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 5 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 5 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -1685,8 +1335,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 4 |
@@ -1708,7 +1358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 4 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 3 |
 
 </details>
@@ -1726,11 +1376,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 4 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 3 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -1747,7 +1397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
@@ -1768,9 +1418,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`play_animation`](./Arrays.md#array-play_animation) | Array | {'type': '`Array`', 'df': ''} | 4 |
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | {'type': '`Array`', 'df': ''} | 3 |
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`weather_roll`](./Arrays.md#array-weather_roll) | Array | {'type': '`Array`', 'df': ''} | 1 |
 
 </details>
@@ -1811,7 +1459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
@@ -1833,8 +1481,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 4 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 4 |
 
@@ -1854,8 +1502,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `count` | Number | {'type': '`Number`', 'df': 'Quantity.'} | 3 |
-| `Fear` | Number | {'type': '`Number`', 'df': "Applies or references the 'Fear' effect/state."} | 2 |
-| `Bleed` | Number | {'type': '`Number`', 'df': "Applies or references the 'Bleed' effect/state."} | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 
 </details>
 
@@ -1872,7 +1519,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 3 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 3 |
@@ -1892,7 +1539,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 3 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 3 |
@@ -1912,7 +1559,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`mutation`](./Events_and_Encounters.md#context-mutation) | Block | {'type': '`Block`', 'df': "Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
 
@@ -1947,7 +1594,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
@@ -1968,7 +1615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
@@ -2006,10 +1653,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
 
 </details>
@@ -2027,7 +1674,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 2 |
@@ -2085,7 +1732,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 2 |
@@ -2105,7 +1752,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
@@ -2143,7 +1790,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 2 |
@@ -2166,7 +1813,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | `label` | Mixed | {'type': '`Enum/String`', 'df': ''} | 2 |
 | `stat` | Mixed | {'type': '`Enum/String`', 'df': ''} | 2 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -2186,8 +1833,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
@@ -2224,7 +1871,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 2 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 2 |
@@ -2263,7 +1910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2283,7 +1930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -2304,7 +1951,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -2325,7 +1972,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -2346,7 +1993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2366,7 +2013,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | `fixed_chance` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
@@ -2387,7 +2034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -2408,7 +2055,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
@@ -2427,7 +2074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2447,7 +2094,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2467,7 +2114,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 
@@ -2486,7 +2133,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2506,7 +2153,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2526,7 +2173,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | `fixed_chance` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
@@ -2547,16 +2194,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight) | Block | {'type': '`Block`', 'df': "Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | `stat_max` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | `stat_min` | Number | {'type': '`Number`', 'df': ''} | 1 |
-| `weight` | Number | {'type': '`Number`', 'df': 'Probability weight for this outcome.'} | 1 |
 
 </details>
 
@@ -2573,7 +2218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2593,7 +2238,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2651,7 +2296,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -2672,7 +2317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2692,7 +2337,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2712,7 +2357,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2732,7 +2377,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2752,7 +2397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2772,7 +2417,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2792,7 +2437,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 
@@ -2811,7 +2456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2831,7 +2476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2851,7 +2496,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2871,7 +2516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2910,7 +2555,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2930,7 +2575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -2951,7 +2596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2971,7 +2616,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -2991,7 +2636,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3011,9 +2656,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3036,9 +2681,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3061,9 +2706,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3086,9 +2731,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3111,7 +2756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3131,7 +2776,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3151,7 +2796,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3209,7 +2854,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3249,7 +2894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3288,7 +2933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3308,7 +2953,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3328,7 +2973,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3383,7 +3028,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3403,7 +3048,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3441,7 +3086,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3461,7 +3106,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3481,7 +3126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3501,7 +3146,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3523,7 +3168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3543,7 +3188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3563,8 +3208,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
@@ -3583,7 +3228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3603,7 +3248,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3623,7 +3268,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3643,7 +3288,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 
@@ -3662,7 +3307,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3682,7 +3327,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3702,8 +3347,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3723,7 +3368,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3743,8 +3388,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | `fixed_chance` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
@@ -3765,7 +3410,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3786,7 +3431,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3806,7 +3451,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3845,7 +3490,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3866,7 +3511,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3886,7 +3531,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
@@ -3923,7 +3568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3962,7 +3607,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -3982,7 +3627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4002,7 +3647,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4022,7 +3667,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4042,7 +3687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4082,7 +3727,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4102,7 +3747,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4122,7 +3767,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 
@@ -4141,7 +3786,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4161,7 +3806,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 
@@ -4180,7 +3825,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4200,9 +3845,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4224,7 +3869,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4245,7 +3890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `chance` | Number | {'type': '`Number`', 'df': 'Probability weight for this outcome.'} | 1 |
-| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | {'type': '`Enum/String`', 'df': 'Event Action: Rewards the player with an item drawn from a specific loot pool.'} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -4281,7 +3926,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4301,7 +3946,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4322,8 +3967,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | `fixed_chance` | Number | {'type': '`Number`', 'df': ''} | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
@@ -4344,7 +3989,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4365,7 +4010,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4385,7 +4030,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4405,7 +4050,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4445,7 +4090,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4465,7 +4110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4485,7 +4130,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4505,8 +4150,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4527,7 +4172,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4547,7 +4192,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4568,7 +4213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4589,8 +4234,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4611,7 +4256,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4651,7 +4296,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4671,7 +4316,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4691,7 +4336,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4711,7 +4356,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4732,7 +4377,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
@@ -4751,7 +4396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4771,7 +4416,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4791,7 +4436,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4811,7 +4456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4831,7 +4476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4851,7 +4496,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4872,7 +4517,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4892,7 +4537,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4912,7 +4557,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4932,7 +4577,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4952,7 +4597,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -4972,7 +4617,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5013,9 +4658,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`prompt`](./Strings.md#string-prompt) | String | {'type': '`String`', 'df': ''} | 1 |
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -5032,7 +4675,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5052,7 +4695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5072,7 +4715,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5092,7 +4735,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5112,7 +4755,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -5132,7 +4775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5152,7 +4795,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5172,7 +4815,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5192,7 +4835,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5212,7 +4855,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5232,7 +4875,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5271,8 +4914,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | {'type': '`Enum/String`', 'df': ''} | 1 |
 
@@ -5371,7 +5014,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5391,7 +5034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`stat`](./Math_Equations.md) | Equation | {'type': '`Enum/String`', 'df': ''} | 1 |
@@ -5411,7 +5054,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bad`](./Events_and_Encounters.md#context-bad) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Bad\' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | {'type': '`Block`', 'df': 'Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String | {'type': '`String`', 'df': ''} | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | {'type': '`Block`', 'df': 'Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |

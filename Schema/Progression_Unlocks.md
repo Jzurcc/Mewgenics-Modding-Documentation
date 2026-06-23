@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#all-confirmed-logic-block-values) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | [`popup`](#context-popup) | Block |  | 266 |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum |  | 127 |
@@ -35,7 +35,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `repeatable` | Boolean |  | 10 |
 | [`trigger_house_boss`](./Enums.md#enum-trigger_house_boss) | Enum |  | 10 |
 | [`complete_act_difficulty`](./Arrays.md#array-complete_act_difficulty) | Array |  | 9 |
-| [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum |  | 9 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
 | [`unlock_act_difficulty`](./Arrays.md#array-unlock_act_difficulty) | Array |  | 9 |
 | [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum |  | 8 |
 | [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum |  | 8 |
@@ -149,7 +149,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prompt`](./Strings.md#string-prompt) | String |  | 266 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 266 |
 | `immediate` | Boolean |  | 221 |
 | [`frame`](./Enums.md#enum-frame) | Enum |  | 159 |
 

@@ -184,145 +184,89 @@ Use this to spot any completely undocumented keys.
 | `Hiss` | 219 |  |
 | `Death` | 219 |  |
 | `Purr` | 218 |  |
-| `delay` | 196 | `after`, `delay`, `event`, `for`, `is` |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `distinctly_male` | 103 | `true` |
-| `name` | 95 | ``, `2x2 Static Cactus`, `ABIITY_FRIENDORFOE_NAME`, `ABILITY_100HANDSLAP_NAME`, `ABILITY_ABSORBSOUL_NAME` |
 | `type` | 87 | `attack`, `battle`, `blankcollar`, `bonus_rare_item`, `boss` |
 | `damage` | 75 | `(15+bonus_melee_damage)*.5`, `(4+bonus_ranged_damage+1)/2`, `(5+bonus_melee_ability_damage)*.5`, `(5+bonus_melee_ability_damage)/2`, `(5+bonus_melee_damage+1)/2` |
 | `object` | 74 | `AlbinoTomTom`, `AlbinoTomTom_Elite`, `AlienBeast`, `AlienEgg`, `AllyRotFly` |
-| `desc` | 69 | ``, `ABIITY_FRIENDORFOE2_DESC`, `ABIITY_FRIENDORFOE_DESC`, `ABILITY_100HANDSLAP2_DESC`, `ABILITY_100HANDSLAP_DESC` |
-| `passives` | 64 |  |
-| `animation` | 59 | `ColorlessStartTurn`, `Default`, `MonkStartTurn`, `Quiver`, `RocketFromAbove` |
-| `effects` | 58 |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Damaging Keys}`](./Engine_DamageKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` |
 | `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` |
 | `stacks` | 52 | `5+bonus_melee_ability_damage`, `X`, `floor(lck/4)`, `item_aux`, `max(min(X+1, item_aux), 0)` |
-| `Poison` | 51 | `X` |
-| `rare` | 50 | `AlienStalk`, `AlienTech`, `BorisBrain`, `BungasCrown`, `DybbuksRib` |
-| `Bleed` | 48 |  |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `variant_of` | 47 | `Absorb`, `AbsorbSoul`, `Adoubement`, `Aftershock`, `AirBurst` |
 | `speed` | 47 |  |
-| `AllStatsUp` | 47 | `item_aux` |
 | `ability` | 47 | `AZ_LoseHead`, `AlienBeam`, `AlienBeastGoop`, `AlienBeastMoveOne`, `BBPullBomb` |
 | `knockback` | 45 | `2*X`, `X`, `X*2`, `X+1`, `ceil(X*.25/5)` |
 | `con` | 45 | `aux` |
 | `elements` | 44 |  |
 | `class` | 43 | `AOESpellAbility`, `BounceDashAbility`, `Butcher`, `CloneAbility`, `Colorless` |
-| `AddStatusToBasicAttack` | 43 |  |
-| `Brace` | 43 | `item_aux` |
 | `spd` | 43 | `aux` |
-| `Fear` | 42 |  |
 | `distinctly_female` | 41 | `true` |
 | `good` | 41 | `false`, `true` |
 | `int` | 41 | `aux` |
 | `main` | 40 |  |
 | `meta` | 40 |  |
-| `Thorns` | 40 |  |
 | `lck` | 40 | `aux` |
 | `mana` | 39 | `10-X`, `10-X*6`, `15-X`, `15-X*2`, `16-X*16` |
 | `cha` | 39 | `+1`, `aux` |
 | `str` | 39 | `aux` |
-| `self_damage` | 38 | `false` |
-| `Burn` | 38 | `3+bonus_melee_ability_damage`, `X`, `X+1` |
 | `faction` | 37 | `allies`, `auto`, `birds`, `cavemen`, `default` |
-| `SpeedUp` | 36 | `item_aux` |
-| `Bruise` | 36 |  |
 | `attack` | 36 | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` |
 | `cost` | 35 |  |
 | `status` | 35 | `AddKnockbackToEverything`, `AllDamageCrits`, `AllDamageImmune`, `AllStatsUp`, `AlphaCat` |
-| `HealthRegenUp` | 35 |  |
 | `max_range` | 34 | `1+X`, `1+X*2`, `1+bonus_melee_range`, `1+bonus_range`, `2*X` |
 | `damage_instance` | 34 |  |
-| `Stun` | 34 |  |
 | `dex` | 34 | `aux` |
 | `template` | 33 | `dash_attack`, `jump_attack`, `jump_move`, `laser`, `leave` |
-| `min_range` | 33 |  |
-| `Trample` | 33 |  |
-| `DamageUp` | 33 | `(-ceil(abs(X/2)))`, `(-ceil(abs(X/3)))` |
 | `stats` | 33 |  |
 | `target` | 32 |  |
 | `target_mode` | 32 | `direction`, `direction8`, `none`, `random_closest_tile`, `random_farthest_tile` |
 | `chance` | 32 |  |
 | `intro` | 31 | `alley/eatinrats_intro.ogg`, `boneyard/boneyard_intro.ogg`, `bunker/bunker_intro.ogg`, `caves/caves_intro.ogg`, `chaos/chaos_boss_intro.ogg` |
-| `particle` | 31 | `ArrowFromAbove`, `BigMagicMissileBlast`, `Bolt`, `BurnTrigger`, `CharmedHearts` |
 | `shield` | 31 | `aux`, `max((aux-1)*2, 0)` |
 | `max_aoe` | 30 | `(X+1)/2`, `1+bonus_melee_range`, `10+bonus_range`, `2+X`, `3+bonus_range` |
-| `Confusion` | 30 |  |
-| `movieclip` | 30 | `AcidOoze`, `AcidRainParticle`, `AcidRainSplashParticle`, `AlienBeast`, `AlienEgg` |
-| `common` | 30 | `Asteroid`, `Blubber`, `BungasBone`, `ChubsCollar`, `CoffinArmor` |
 | `knockback_mode` | 29 | `back_orientation`, `character_to_target`, `character_to_tile`, `character_to_tile_4snap`, `none` |
 | `aoe_mode` | 29 | `8cross`, `all`, `all_except_edges`, `all_except_random_empty`, `area_around_all_player_cats` |
 | `restrictions` | 29 | `aoe_must_be_displaceable`, `aoe_must_be_force_displaceable`, `aoe_must_exist`, `cant_target_behind`, `dash_must_move` |
-| `Shield` | 29 | `-X`, `2*(X-1)`, `2*X`, `3*X`, `5+bonus_ranged_damage` |
-| `prompt` | 29 | `ABILITY_UNLOCK_BUTCHER`, `ABILITY_UNLOCK_BUTCHER_COLORLESS`, `ABILITY_UNLOCK_COLORLESS`, `ABILITY_UNLOCK_COLORLESS_COLORLESS`, `ABILITY_UNLOCK_DRUID` |
 | `aoe_considers_character_size` | 28 | `false`, `true` |
 | `pool` | 28 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` |
 | `min_aoe` | 27 | `1+size`, `2+X`, `2+size` |
 | `turns` | 27 |  |
 | `count` | 27 |  |
-| `set_frame` | 27 |  |
 | `cat_choice` | 27 | `random` |
 | `subject_frame` | 27 | `a_beggar`, `a_few_coins`, `a_large_poop`, `a_mega_large_poop`, `a_poop` |
-| `options` | 27 |  |
 | `event_clip` | 27 | `NonWheelEvent` |
 | `subject_clip` | 27 | `EventSubject` |
 | `title` | 27 | `Ability Pool Test`, `Blessing!`, `EVENT_ABEGGAR_NAME`, `EVENT_ACAT_NAME`, `EVENT_AFEWCOINS_NAME` |
-| `HealthGain` | 26 | `2*X`, `3*X` |
-| `StatusEachTurnEnd` | 26 |  |
 | `health` | 26 |  |
 | `stat` | 26 | `cha`, `coins`, `con`, `dex`, `int` |
 | `label` | 26 | `1 injury`, `A`, `B`, `C`, `D` |
 | `tags` | 25 | `consumable` |
-| `tooltip` | 25 | `Beaver!`, `Bigfoot!`, `Bunny!`, `Dog!`, `ENEMY_3X3WAGGLE_DESC` |
 | `move` | 25 | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` |
-| `reward` | 25 |  |
-| `injury` | 25 | `bleeding`, `burned`, `cha`, `con`, `cursed` |
-| `cant_miss` | 24 | `true` |
-| `Else` | 24 |  |
 | `abilities` | 24 |  |
 | `brain` | 24 | `DicerBrain`, `GenericBrain`, `MountBrain`, `NoBrain`, `PatternBrain` |
-| `bad` | 24 |  |
-| `projectile` | 23 | `AcidshotProjectile`, `AnimalEgg`, `ArmorPickup`, `ArrowProjectile`, `BabySpider` |
 | `aoe_excludes_self` | 23 | `false`, `true` |
-| `animate_name` | 23 | `false`, `pointout`, `true` |
 | `range_mode` | 23 | `8cross`, `cross`, `custom`, `diagcross`, `ground_move` |
-| `StrengthUp` | 23 | `X`, `item_aux`, `max(int, 0)` |
 | `cantrip` | 23 | `false`, `true` |
 | `ai` | 23 |  |
 | `properties` | 23 |  |
-| `self_status_next_fight` | 23 |  |
-| `play_animation` | 23 | `resultBad`, `resultConfused`, `resultGood`, `resultHole`, `resultLeave` |
 | `boss` | 22 | `alley/eatinrats_boss.ogg`, `boneyard/boneyard_boss.ogg`, `caves/caves_boss.ogg`, `chaos/chaos_boss.ogg`, `core/core_boss.ogg` |
 | `cat_speaks` | 22 | `true` |
 | `infcantrip` | 22 | `false`, `true` |
-| `MeleeRevengeDamage` | 22 |  |
-| `ChangeTile` | 22 | `BlankTile`, `BrambleTile`, `CreepTile`, `DirtTile`, `FireTile` |
-| `IntelligenceUp` | 22 | `-int`, `item_aux`, `min(-int, 0)` |
-| `DivineShield` | 22 |  |
 | `move_weights` | 22 | `bird`, `blind_move_far`, `chaos_always_move`, `chaotic`, `chaotic_runaway` |
 | `strength` | 22 |  |
 | `spells` | 22 |  |
 | `hard` | 22 |  |
-| `gain_disorder_from_pool` | 22 | `Crazy_disorders`, `Steven_disorders`, `all_disorders`, `diseases`, `mental_disorders` |
-| `get_item_from_pool` | 22 | `Bird_items`, `Coin_items`, `Eye_items`, `any_chapter`, `barbed_items` |
 | `aoe_restrictions` | 21 | `allies_only`, `checker_parity_even`, `enemies_only`, `exclude_allies`, `exclude_direct_target` |
-| `heal` | 21 | `1+bonus_basic_spell_damage`, `1+bonus_ranged_damage`, `10+bonus_ranged_damage`, `4+bonus_melee_damage`, `5+bonus_melee_damage` |
-| `Weakness` | 21 | `MagicWeakness`, `X` |
-| `ConstitutionUp` | 21 | `item_aux` |
-| `RandomStatUp` | 21 | `ceil(X/2)`, `ceil(X/3)` |
 | `element` | 21 | `Electric`, `Fire`, `Gravity`, `Greater_Water`, `Holy` |
 | `decision_weights` | 21 | `always_cast`, `always_cast_careless`, `angry`, `blind`, `careless` |
-| `SpawnThingOnDamage` | 21 |  |
 | `normal` | 21 |  |
 | `miniboss` | 21 |  |
 | `easy` | 21 |  |
 | `spawn` | 20 |  |
 | `bonus_passives` | 20 |  |
-| `Temporary` | 20 |  |
-| `Slow` | 20 | `X` |
-| `LuckUp` | 20 | `item_aux` |
-| `Cleanse` | 20 |  |
-| `KineticSpikes` | 20 |  |
 | `size` | 20 | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` |
 | `dexterity` | 20 |  |
 | `intelligence` | 20 |  |
@@ -330,13 +274,8 @@ Use this to spot any completely undocumented keys.
 | `constitution` | 20 |  |
 | `special` | 20 | `true` |
 | `folder` | 20 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
-| `lob` | 19 | `false`, `true` |
-| `Conditional_Enemy` | 19 |  |
 | `odds` | 19 |  |
-| `RevengeDamage` | 19 |  |
-| `Quivered` | 19 |  |
 | `corpse_health` | 19 | `indestructible` |
-| `StatusOnTookDamage` | 19 |  |
 | `requirements` | 19 |  |
 | `medium` | 19 |  |
 | `include` | 19 | `standard_nodes.gon`, `voice_template.gon` |
@@ -345,97 +284,42 @@ Use this to spot any completely undocumented keys.
 | `override_art` | 19 | `MapNodeExit_Boneyard`, `MapNodeExit_Bunker`, `MapNodeExit_Caves`, `MapNodeExit_Core`, `MapNodeExit_Crater` |
 | `small` | 19 |  |
 | `custom_aoe` | 18 |  |
-| `Conditional_Ally` | 18 |  |
 | `X_is` | 18 | `alpha_exists`, `basic_attack_damage`, `cast_count`, `current_health`, `current_mana` |
-| `ApplyToSource` | 18 |  |
-| `Immobile` | 18 |  |
-| `Charge` | 18 |  |
-| `StatusOnBattleEnd` | 18 |  |
-| `RandomStatusFromPool` | 18 |  |
-| `ElementImmune` | 18 | `Creep`, `Electric`, `Fire`, `Ice` |
 | `frame` | 18 | `QuestUnlock_Amplifier`, `QuestUnlock_Cooler`, `QuestUnlock_Gristle`, `QuestUnlock_Head`, `QuestUnlock_Jar` |
-| `shadow_size` | 18 |  |
 | `movement` | 18 |  |
-| `threshold` | 18 | `1*champion_multiplier`, `2*champion_multiplier`, `3*champion_multiplier`, `4*champion_multiplier`, `X*.4` |
-| `event_now_same_cat` | 18 | `BigToe`, `Blessing`, `BodyOfGlorg_Gift`, `CatHole`, `ElephantsFootCloser` |
 | `act_points` | 17 |  |
-| `lob_height` | 17 |  |
 | `temporary_effects` | 17 |  |
 | `divine_shield` | 17 |  |
-| `gain_disorder` | 17 | `AcidReflux`, `Albinism`, `Anxiety`, `BlessingOfGlorg`, `BloodFrenzy` |
-| `permanent_stats` | 17 |  |
 | `level` | 17 | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` |
 | `number` | 17 |  |
 | `boss_cutscene` | 17 | `alienqueen`, `boris`, `chaos`, `chubsandnubs`, `coven` |
 | `ai_base_score` | 16 |  |
 | `type_icon` | 16 | `attack`, `buff`, `debuff`, `defense`, `heal` |
-| `makes_contact` | 16 | `false`, `true` |
-| `Sleep` | 16 |  |
-| `layer` | 16 | `all`, `characters`, `gas`, `pickups`, `self` |
-| `palette` | 16 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Mage` |
-| `Charmed` | 16 | `level` |
-| `Conditional_GoodRoll` | 16 |  |
-| `CritChanceUp` | 16 |  |
-| `Madness` | 16 | `level` |
-| `ForceUseAbility` | 16 | `CancerExplode`, `DustDash`, `Hallucinate_Disorder`, `KidneyStone`, `MiniFart` |
-| `SpawnOnBattleStart` | 16 | `BeefyCharmedLeech`, `BuffCharmedKitten`, `CharmedCultist`, `CharmedGamete`, `CharmedTinySpider` |
-| `scale` | 16 |  |
-| `random_pool` | 16 |  |
-| `random_mutation` | 16 |  |
 | `range_excludes_blocking` | 15 | `false`, `true` |
-| `affected_particle` | 15 | `Cleanse`, `ExclamationPointEnemy`, `HealBig`, `HealMed`, `HealSmall` |
 | `move_points` | 15 |  |
-| `IgnoreSelf` | 15 | `true` |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `keyword_tooltips` | 15 |  |
 | `multihit` | 15 | `X`, `X*2+1`, `X+1` |
-| `VisualFXTile` | 15 | `Bolt`, `BurnTrigger`, `Explosion`, `FireBlastSmall`, `HealBig` |
-| `ManaGain` | 15 | `-ceil(X/2)`, `X`, `X+2`, `X-1`, `item_aux` |
-| `Blind` | 15 |  |
-| `DodgeChance` | 15 |  |
 | `pattern` | 15 |  |
-| `uifloaters_offset` | 15 |  |
-| `StatusImmunity` | 15 | `Burn`, `Poison`, `Tarred`, `Webbed` |
 | `do` | 15 | `**BombRatTurtle`, `**G3Shake`, `**RockySlam`, `**SimonFlopper_WiggleChance`, `**SimonFlopper_WiggleFake` |
-| `StatusOnKill` | 15 |  |
-| `conditional_reward` | 15 |  |
 | `kind` | 15 | `face`, `head`, `modifier`, `neck`, `trinket` |
-| `StatusEachTurnBegin` | 15 |  |
 | `next_map` | 15 | `boneyard.gon`, `bunker.gon`, `caves.gon`, `core.gon`, `crater.gon` |
 | `exit0` | 15 |  |
-| `Knockback` | 14 |  |
-| `TakeExtraTurn` | 14 |  |
 | `mode` | 14 | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` |
 | `mouth` | 14 | `closed`, `open`, `smile` |
-| `RandomMagicMissile` | 14 |  |
-| `FindItemFromPool` | 14 | `blackbird_pool`, `chapter`, `chapter_common`, `chapter_specific_item`, `cherub_pool` |
 | `initiative` | 14 | `keep_turns_end_turn` |
 | `luck` | 14 |  |
-| `gain_coins` | 14 |  |
-| `next_event_bonus` | 14 |  |
-| `AddBonusRange` | 14 |  |
 | `parent` | 13 | `environment`, `none` |
 | `volume` | 13 | `SE_Interstitial_RaiseSwish`, `and`, `between`, `extra_events`, `for` |
 | `max_sounds` | 13 |  |
 | `do_falloff` | 13 | `false`, `true` |
 | `target_requires_tag` | 13 | `bishop_hat`, `bowling_ball`, `food`, `hitler_clone`, `hitler_clone_fetus` |
 | `slot` | 13 | `face`, `head`, `neck`, `random_empty`, `random_empty_armor` |
-| `dash_animation` | 13 | `dash`, `dash2`, `dashing`, `headbuttdash`, `launchMid` |
-| `dash_start_animation` | 13 | `dashbegin`, `dashstart`, `dashstart2`, `headbuttdashStart`, `launchStart` |
 | `once_per_fight` | 13 | `3-X`, `false`, `true` |
-| `BounceObject` | 13 | `AllyRotFly`, `Amoeba`, `BeefyCharmedLeech`, `Bomb`, `Boulder` |
-| `DodgeChance_Status` | 13 |  |
-| `DexterityUp` | 13 | `X`, `item_aux` |
 | `max_targets` | 13 | `-X` |
-| `BleedThorns` | 13 |  |
-| `MoveQuivered` | 13 |  |
 | `range` | 13 | `global` |
-| `DeathRattle` | 13 | `BBExplode`, `BloatyExplodey`, `BombFlyExplode`, `BoomerCatExplode`, `DecoyExplode` |
-| `FormChanger` | 13 |  |
 | `takes_turns` | 13 | `false`, `true` |
-| `get_item` | 13 | `AlienBlaster`, `Antenna`, `BagOfGrass`, `BearTrapMask`, `BearTraps` |
 | `ignore` | 13 |  |
-| `gain_familiar` | 13 | `CharmedBear`, `CharmedDaddyShark`, `CharmedDustDevil`, `CharmedFetus`, `CharmedFetus2` |
-| `setup` | 13 |  |
 | `set` | 13 | `80s`, `90s`, `AdvancedAlloy`, `Alloy`, `Amoeba` |
 | `rarity` | 13 | `common`, `consumable_common`, `consumable_rare`, `consumable_uncommon`, `consumable_very_rare` |
 | `speed_of_sound` | 12 |  |
@@ -444,96 +328,44 @@ Use this to spot any completely undocumented keys.
 | `pan_falloff_range` | 12 |  |
 | `volume_falloff_range` | 12 |  |
 | `do_doppler` | 12 | `false`, `true` |
-| `Leech` | 12 |  |
-| `dash_attack_animation` | 12 | `block`, `dashEnd`, `dashEnd2`, `dashatk`, `dashattack` |
-| `animation_in` | 12 | `digUp`, `digin`, `exitWater`, `liquidteleportIn`, `portIn` |
-| `animation_out` | 12 | `digDown`, `digout`, `enterWater`, `liquidteleportOut`, `portOut` |
-| `jump_attack_animation` | 12 | `bellyflopEnd`, `block`, `entrance_land`, `gravitySlamEnd`, `land` |
-| `incidentally_collects_pickups` | 12 | `false`, `true` |
-| `Conditional_HasTag` | 12 |  |
-| `RefreshMovePoints` | 12 |  |
-| `Vaporize` | 12 |  |
-| `crit_chance` | 12 | `.05*X` |
-| `piercing` | 12 | `true` |
-| `RefreshActPoints` | 12 |  |
-| `FullHeal` | 12 |  |
 | `icon_shell_frame` | 12 | `attack`, `big_damage`, `damage`, `multihit_attack`, `nodamage` |
-| `Marked` | 12 |  |
-| `Freeze` | 12 |  |
 | `even_if_stunned` | 12 | `true` |
-| `CounterAttack` | 12 | `BungaSwipe`, `CloakerHex`, `CollectiveCounter`, `DeathWormTrampleDash_Reaction`, `FleshyMindConfusion` |
 | `hidden_tag` | 12 | `angeljunk`, `bird`, `bloateye`, `bungawarrior`, `cavefamily` |
 | `dispersed_bonus_turns` | 12 |  |
-| `AddCorpseHealth` | 12 |  |
 | `has_token` | 12 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_HasTakenNeedle`, `AdventureToken_Mirage1`, `AdventureToken_Mirage2` |
-| `get_parasite_from_pool` | 12 | `barbed_armor`, `barbed_items`, `cursed_items`, `good_parasites`, `parasites` |
-| `spawn_unit_next_fight` | 12 |  |
-| `ally_ambush_next_fights` | 12 |  |
-| `leave` | 12 |  |
 | `transitions` | 12 |  |
 | `states` | 12 |  |
 | `dialog` | 12 | `NPC_BEANIES_ALSO_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_10`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_3` |
 | `cat_speak` | 11 | `true` |
-| `Rot` | 11 |  |
 | `splash_damage` | 11 |  |
-| `ObjectOnHitCharacter` | 11 | `AllyRotFly`, `BeefyCharmedLeech`, `BestBud`, `BloatEye`, `CharmedLeech` |
 | `straight_shot` | 11 | `false`, `true` |
 | `expires_on_begin_turn` | 11 | `true` |
-| `FaceAway` | 11 |  |
 | `even_if_dead` | 11 | `true` |
 | `durability` | 11 |  |
 | `head` | 11 | `BabyHair`, `Banana`, `BulbHead`, `CoinBag`, `CoinBag_Terminator` |
 | `tail` | 11 |  |
-| `dont_visualize_ai` | 11 | `true` |
 | `move_block` | 11 | `everything_even_when_dead`, `nothing` |
-| `AbilityReaction` | 11 | `AnkyloSpin`, `GSOpen`, `Gassy_AssBlast`, `Gassy_AssBlast2`, `HeadTumorResponse` |
-| `ExtraBasicAttacks` | 11 |  |
 | `spawn_side` | 11 | `anywhere`, `cats`, `enemies` |
-| `ambush_next_basic_fights` | 11 |  |
 | `not_has_token` | 11 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_MysteriousJarRepeat`, `AdventureToken_RedNeedle`, `AdventureToken_StevenTryAgain` |
-| `party_damage` | 11 |  |
-| `party_heal` | 11 |  |
-| `ReplaceBasicMove` | 11 | `BasicDashAttackMove`, `BasicJump`, `BellyFlop_BasicMove`, `MaxTeleport`, `Shadowstep` |
 | `voice` | 10 | `ankylosaurus`, `female1`, `female10`, `female12`, `female17` |
 | `mute_during_explicit_scenarios` | 10 | `true` |
-| `custom_additional_ai_weight` | 10 | `avoid_redundant_debuffs`, `avoid_redundant_debuffs_strict`, `avoid_target_map_top`, `dont_target_rock`, `dybbuk_possession` |
-| `Leeches` | 10 |  |
-| `dont_orient` | 10 | `true` |
-| `center_particle` | 10 | `BigMagicMissileBlast`, `Explosion`, `FireBlastMushroom`, `Holybeam`, `None` |
-| `use_projectile` | 10 | `true` |
 | `distance` | 10 |  |
-| `CharismaUp` | 10 | `item_aux` |
-| `Revive` | 10 |  |
 | `expires_on_end_turn` | 10 | `true` |
-| `BackflipWhenTargeted` | 10 | `X` |
-| `OverrideDamage` | 10 |  |
-| `Conditional_Boss` | 10 |  |
-| `TileTrail` | 10 | `BrambleTile`, `CreepTile`, `FireTile`, `FloatingGlassTile`, `FlowerTile` |
 | `tile` | 10 | `BrambleTile`, `CreepTile`, `DirtTile`, `FireTile`, `FlowerTile` |
-| `SpellDamageUp` | 10 |  |
-| `Conditional_HasStatus` | 10 |  |
 | `obj` | 10 | `BeefyCharmedLeech`, `Dice`, `Maggot`, `PyrophinaVS`, `RiftKitten` |
 | `eyes` | 10 | `close`, `closed`, `open` |
 | `kill_required` | 10 | `false`, `true` |
 | `do_all` | 10 |  |
 | `flying` | 10 | `true` |
 | `do_priority` | 10 |  |
-| `Robot` | 10 |  |
 | `banned_elite_buffs` | 10 |  |
 | `can_be_backstabbed` | 10 | `false` |
 | `base_mana_regen` | 10 |  |
-| `ReflectProjectiles` | 10 |  |
 | `weak_threshold` | 10 |  |
-| `mutation` | 10 |  |
-| `gain_food` | 10 |  |
-| `full_heal` | 10 |  |
-| `set_adventure_token` | 10 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_HasTakenNeedle`, `AdventureToken_Mirage1`, `AdventureToken_Mirage2` |
-| `AddLevelUpRerolls` | 10 |  |
 | `locked` | 10 | `false`, `true` |
 | `idle` | 10 |  |
 | `set_state` | 10 | `beanies_intensestatic`, `beanies_right`, `blocking`, `butch_left`, `butch_levelup` |
 | `do_random_sequence` | 10 |  |
-| `battle` | 9 | `alley/eatinrats_battle.ogg`, `boneyard/boneyard_battle.ogg`, `bunker/bunker_battle.ogg`, `caves/caves_battle.ogg`, `core/core_battle.ogg` |
 | `voice_x` | 9 |  |
 | `voice_s` | 9 |  |
 | `voice_a` | 9 |  |
@@ -571,240 +403,101 @@ Use this to spot any completely undocumented keys.
 | `voice_i` | 9 |  |
 | `voice_f` | 9 |  |
 | `catdata` | 9 | `Beaver`, `Bigfoot`, `Bunny`, `Dog`, `Edmund` |
-| `Craft` | 9 |  |
-| `blocked_damage` | 9 | `(3+bonus_melee_ability_damage)*2`, `3+bonus_melee_ability_damage`, `5+bonus_melee_ability_damage`, `5+bonus_melee_damage`, `7+bonus_melee_ability_damage` |
 | `max` | 9 |  |
-| `IgnoreTiles` | 9 |  |
-| `raw_damage` | 9 | `(con+1)/2`, `2*X`, `8-X`, `X`, `X*2` |
-| `ReplaceBasicAttack` | 9 | `BasicButcherMelee`, `BasicButcherMeleeWideDoubleSpin`, `BasicButcherMeleeWideSpin`, `BasicDruidAbility`, `BasicDruidAbilityVersatile` |
 | `X_cant_be_zero` | 9 | `true` |
-| `RandomMutation` | 9 |  |
-| `FillMana` | 9 |  |
-| `InjuryImmunity` | 9 |  |
-| `area_particle` | 9 | `Bolt`, `BurnTrigger`, `Earthquake`, `FireBlastSmall`, `Holybeam` |
 | `body` | 9 |  |
-| `FormChange` | 9 | `Big`, `BigHolding`, `BigHoldingCat`, `Boris`, `Bully` |
 | `enemies_only` | 9 | `false`, `true` |
-| `PermanentMadness` | 9 |  |
-| `AddManaRegen` | 9 |  |
-| `BonusAbility` | 9 | `Bloodzerk`, `BonusToss`, `BonusToss2`, `DonateEnergy`, `DonateEnergy2` |
-| `InnateElement` | 9 | `Earth`, `Electric`, `Fire`, `Ice`, `Water` |
 | `sound` | 9 |  |
 | `move_ability` | 9 | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` |
 | `stun_advances_pattern` | 9 | `false`, `true` |
-| `AddMovement` | 9 |  |
 | `fallback_advances_pattern` | 9 | `false`, `true` |
 | `Default` | 9 | `release` |
-| `water_mask` | 9 | `big`, `medium`, `medmed`, `square` |
-| `WaterWalk` | 9 |  |
 | `color` | 9 | `black`, `gray`, `white` |
-| `PassiveWhenAffectedByElement` | 9 |  |
-| `AddElementsToBasicAttack` | 9 | `Electric`, `Fire`, `Gravity`, `Holy`, `Ice` |
-| `set_legacy_token` | 9 | `AlienOvergrowthUnlocked`, `AntennaQuest_Orb`, `AntennaQuest_Rift`, `AntennaQuest_Volcano`, `GeomagneticStormUnlocked` |
-| `random_mutation_from_set` | 9 |  |
-| `SpawnEachTurn` | 9 |  |
 | `reduction` | 9 |  |
 | `quest_event` | 9 |  |
 | `cat_swears` | 8 | `true` |
 | `clone_items` | 8 | `false`, `true` |
 | `additional_passives` | 8 |  |
-| `start` | 8 | `attack`, `lickAttack`, `monkAttack`, `spinattackstart` |
-| `end` | 8 | `attack`, `lickAttack`, `monkAttack`, `spinattackend`, `upswipe` |
 | `can_multihit` | 8 | `false`, `true` |
 | `CastAgain` | 8 | `9+X` |
 | `delayed_trigger` | 8 | `false`, `true` |
-| `CanApplyToInanimate` | 8 |  |
-| `ignore_slowtiles` | 8 | `true` |
 | `min` | 8 |  |
 | `sounds` | 8 |  |
-| `SizeScale` | 8 |  |
 | `Fury` | 8 |  |
-| `KnockUpAndAway` | 8 |  |
-| `move_start_animation` | 8 | `backflipStart`, `buttScootStart`, `cartwheelStart`, `jetbegin`, `moveStart` |
 | `allow_diagonals` | 8 | `true` |
-| `PermanentConstitution` | 8 |  |
-| `DiminishingHealthRegen` | 8 |  |
-| `Tarred` | 8 |  |
-| `MagicWeakness` | 8 |  |
-| `UseAbility` | 8 | `GirlDinoPoop`, `KirbySpit`, `MD_PoopChain`, `ManglerThrowRemote`, `MegaGuppy_SummonTheChild` |
 | `first_turn` | 8 | `end_of_round`, `initiative`, `keep_turns`, `next_round`, `next_turn` |
-| `Flying` | 8 |  |
-| `Petrify` | 8 |  |
-| `OverrideKnockbackDamage` | 8 | `3+bonus_basic_spell_damage`, `3+bonus_melee_ability_damage`, `X*10`, `max(5+bonus_melee_ability_damage, 1)`, `str` |
-| `VisualFX` | 8 | `BigMagicMissileBlast`, `Bolt`, `Cleanse`, `Explosion`, `Holyatk` |
-| `KnockbackImmunity` | 8 |  |
 | `radius` | 8 |  |
-| `BonusDamage` | 8 | `20+bonus_melee_damage`, `ceil(X/2)`, `max(0, floor(X/2)-1)`, `max(0, floor(X/6)-1)`, `str` |
 | `form` | 8 | `Angry`, `Big`, `Bishop`, `BlackHole`, `Bomb` |
-| `AutocastEachRound` | 8 | `SpiderReturn` |
-| `spawnin_animation` | 8 | `beamin`, `beaminButcher`, `beaminDruid`, `beaminFighter`, `beaminHunter` |
 | `alt_sounds` | 8 |  |
-| `MovementReaction` | 8 |  |
 | `virtual_abilities` | 8 |  |
 | `fallback` | 8 |  |
 | `round_end_bonus_turns` | 8 |  |
 | `bonusturn_pattern` | 8 |  |
 | `animation_suffix` | 8 | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` |
 | `mana_regen` | 8 |  |
-| `CharacterLightSource` | 8 |  |
-| `PoisonThorns` | 8 |  |
-| `SpawnThingOnDeath` | 8 | `Boulder`, `CharmedDemonKitten`, `CharmedFlySwarm`, `CharmedPooter`, `CharmedReaper` |
-| `move_speed_multiplier` | 8 |  |
-| `ExtraMovePoints` | 8 |  |
-| `AlphaTurns` | 8 |  |
 | `else` | 8 |  |
 | `ears` | 8 |  |
 | `random` | 8 |  |
-| `increment_legacy_counter` | 8 | `WorldEventLegacyCounter_CrackInTheWall`, `WorldEventLegacyCounter_CustomTokenString`, `WorldEventLegacyCounter_FooCounter`, `WorldEventLegacyCounter_Jack`, `WorldEventLegacyCounter_SealedCrypt` |
-| `get_parasite` | 8 | `AlluringDoodie`, `BadSplinters`, `Beepis`, `BigToeCursed`, `BirdPoopHat` |
 | `loot` | 8 |  |
-| `AddStatusToAllDamage` | 8 |  |
-| `SpawnOnBattleStartRandomEmptyTile` | 8 |  |
-| `StatusOnKillEnemy` | 8 |  |
-| `StatusOnBattleStart` | 8 |  |
 | `cursed` | 8 | `true` |
-| `ManaCostReduction` | 8 |  |
-| `Metal` | 8 |  |
-| `AddBonusMeleeRange` | 8 |  |
-| `AddSelfStatusToBasicAttack` | 8 |  |
 | `hidden` | 8 | `false`, `true` |
 | `also` | 8 |  |
 | `unknown` | 8 |  |
 | `get` | 8 | `npc_reward`, `sidequest_fail`, `sidequest_reward` |
 | `unprompted` | 8 |  |
 | `aoe_symmetry` | 7 | `eight_way`, `four_way`, `none` |
-| `loop` | 7 | `attack`, `lickAttack`, `monkAttack`, `spinattackloop` |
-| `CollectsPickups` | 7 |  |
-| `Instakill` | 7 |  |
-| `GainCoinsRange` | 7 |  |
-| `sync_speed` | 7 |  |
-| `move_end_animation` | 7 | `backflipEnd`, `buttScootEnd`, `cartwheelEnd`, `endroll`, `jetend` |
-| `VaporizeCorpse` | 7 |  |
 | `cant_cast` | 7 | `1-X`, `2-X`, `3-X`, `5-X`, `X` |
-| `DoDamage` | 7 |  |
-| `RandomPermanentStat` | 7 |  |
-| `SafeDoomed` | 7 | `level` |
 | `arm1` | 7 |  |
-| `darken_screen_exclude_characters_on_tile` | 7 | `false`, `true` |
-| `darken_screen` | 7 | `false`, `true` |
 | `requires_reload` | 7 | `true` |
 | `disallow_cost_modification` | 7 | `true` |
 | `prioritize_face_camera` | 7 | `true` |
 | `amount` | 7 |  |
 | `allow_any_orientation` | 7 | `true` |
-| `Webbed` | 7 |  |
-| `OverrideChainKnockback` | 7 |  |
-| `Conditional_NotBoss` | 7 |  |
-| `Conditional_Corpse` | 7 |  |
-| `no_splatter` | 7 | `false`, `true` |
 | `default` | 7 | `bite1` |
 | `move_for_ability` | 7 | `AlienBeastPuke`, `CaveManPickupSpear`, `G3GrabHead`, `PyrophinaSoloCatThrow`, `PyrophinaVSCatThrow` |
 | `mainturn_pattern` | 7 |  |
 | `spawn_on_death_hit` | 7 | `false` |
-| `move_speed_sync_frames` | 7 |  |
 | `initial_form` | 7 | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` |
-| `shadow` | 7 | `BigSlimeShadow`, `MedSlimeShadow`, `None`, `SmallSlimeShadow`, `TormentorShadow` |
-| `DebuffImmunity` | 7 |  |
-| `AddInitiative` | 7 |  |
 | `do_random` | 7 |  |
 | `end_turn_on_formswitch` | 7 | `false`, `true` |
-| `ImmediateAbilityReaction` | 7 | `BirthwortReactionShot`, `BumbleButt`, `CatGoop`, `CerberubsShotgunReactionX`, `CerberubsStraightReaction` |
-| `MoveTowardsDamageSource` | 7 | `MoveOne` |
-| `MissChance` | 7 |  |
 | `takes_main_turn` | 7 | `false`, `true` |
-| `StatusOnTookDamageFromAbility` | 7 |  |
 | `can_collect_coins` | 7 | `false`, `true` |
-| `alt_animations` | 7 |  |
-| `custom_cat_data` | 7 | `AlbinoTomTom`, `AngelicCat`, `Ankylosaurus`, `Astro`, `AtomicKitten` |
-| `SpawnOnDeath` | 7 | `Antidote`, `BiggestFood`, `FrankPinky`, `Maggot`, `NonChampionFlySwarm` |
 | `counter_minimum` | 7 |  |
 | `examine` | 7 |  |
-| `global_effect_next_fight` | 7 |  |
-| `shop_now` | 7 | `Event_RareShop`, `Event_SmallShop`, `Shop`, `TreasureEasy`, `TreasureHard` |
-| `learn_passive` | 7 | `Blessed`, `CobraStyle`, `DeathProof`, `DirtyClaws`, `Host` |
-| `party_status_next_fight` | 7 |  |
-| `override_end_option_prompt` | 7 | `EVENT_LOCKEDDOOR_PROMPT1`, `EVENT_LOCKEDDOOR_PROMPT2`, `EVENT_MYSTERIOUSSTRANGER_END_AGAIN`, `EVENT_MYSTERIOUSSTRANGER_END_AGAIN2`, `EVENT_MYSTERIOUSTENT_PROMPT` |
 | `eat` | 7 |  |
-| `AbilityOnBattleStart` | 7 | `Flush`, `Heathens`, `Heathens2`, `MegaFart`, `RandomDualSoulLink` |
-| `AddCritMultiplier` | 7 |  |
 | `aux` | 7 |  |
 | `event` | 6 | `Blessing`, `Death`, `Tragedy`, `alley/eatinrats_event.ogg`, `boneyard/boneyard_event.ogg` |
-| `TempDamageUp` | 6 |  |
-| `Displace` | 6 |  |
-| `random_delay` | 6 |  |
 | `requires_destructible_weapon` | 6 | `true` |
-| `chain_movieclip` | 6 | `Bramblechain`, `ChainLink`, `Frogchain` |
-| `chain_distance` | 6 |  |
-| `Cleave` | 6 |  |
 | `range_display_include_character_size` | 6 | `true` |
-| `ForceMoveAway` | 6 |  |
-| `visual_delay_but_simultaneous_damage` | 6 |  |
-| `Die` | 6 |  |
 | `charge` | 6 | `1-clamp(spd,0,1)` |
-| `PartialCleanse` | 6 |  |
-| `Reflect` | 6 |  |
-| `max_tiles_single_loop` | 6 |  |
-| `ImmediateUseAbility` | 6 | `FuzzerReact`, `HitlerCloneHeil`, `HitlerCloneTransform`, `MoonHandMegaSqueeze`, `cm_Lard_Impl` |
-| `RepairWeapon` | 6 |  |
-| `PermanentIntelligence` | 6 |  |
 | `chain_ability` | 6 | `BoyDinoDash`, `ChaosStacyAttackChain`, `ControlPlantsPartTwo`, `ControlPlantsPartTwo2`, `ControlWaterPartTwo` |
 | `allow_offmap_casts` | 6 | `true` |
 | `prioritize_dont_change_direction` | 6 | `true` |
-| `EndTurn` | 6 |  |
-| `ForceAttack` | 6 |  |
-| `Tangled` | 6 |  |
-| `AddTag` | 6 | `bug`, `cat`, `fetus`, `plant`, `rock` |
 | `arm2` | 6 |  |
-| `fall_from_sky` | 6 | `true` |
-| `ExtraBasicAttacks_Status` | 6 |  |
 | `intensity` | 6 |  |
 | `weights` | 6 | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` |
-| `prime_animation` | 6 | `angry`, `chargeholy`, `command1`, `command2`, `command3` |
 | `range_considers_character_size` | 6 | `false` |
 | `prime` | 6 |  |
 | `upgrade_straight_shot_to_piercing` | 6 | `true` |
-| `RemoveStatus` | 6 | `AlphaCat`, `Brace`, `DodgeChance_Status`, `Drowsy`, `DybbukPossessed` |
-| `ChangeTilesUnder` | 6 | `DirtTile`, `GlassTile`, `LavaTile`, `TallGrassTile`, `WaterTile` |
 | `value` | 6 | `cha`, `con`, `dex`, `int`, `item_aux+1` |
-| `DepressionAura` | 6 |  |
 | `statuses` | 6 |  |
-| `FormChangeWhileHasStatus` | 6 |  |
 | `round_end_bonusturn_pattern` | 6 |  |
-| `Buddy` | 6 | `BoyDino`, `CaveCatDad`, `Chubs`, `DrMangler`, `GirlDino` |
-| `TransformOnDeath` | 6 | `BishopHat`, `CanCreeperOut`, `Carcus`, `Chummy`, `CraterCreeperOut` |
 | `knockback_immune` | 6 | `true` |
 | `form_hasnot` | 6 | `Big`, `CaveWoman`, `Close`, `Default`, `Empty` |
 | `auto_orient` | 6 | `false` |
 | `reset_pattern_on_formswitch` | 6 | `false`, `true` |
-| `BackstabImmunity` | 6 |  |
-| `LimitHeal` | 6 |  |
-| `Undead` | 6 |  |
 | `held_coins` | 6 |  |
 | `evenly_dispersed_bonus_turns` | 6 |  |
 | `form_has` | 6 | `BellyFull`, `CaveWomanHasCat`, `FireFull`, `Full`, `Grappling` |
 | `partial_animation_suffix` | 6 | ``, `Alert`, `Angry`, `Belly`, `Button` |
 | `face` | 6 | `AtomicMark`, `ButcherMask`, `ButcherMask_Terminator`, `HuntersPatch`, `HuntersPatch_Terminator` |
-| `MoveWhenDamaged` | 6 | `TKNG_Hop`, `move` |
-| `AddTemporaryEffectsToBasicAttack` | 6 |  |
 | `can_get_bonus` | 6 | `true` |
 | `can_be_overkilled` | 6 | `false`, `true` |
 | `inherit_faction` | 6 | `false`, `true` |
-| `StatusOnEndMove` | 6 |  |
-| `ChanceToRevive` | 6 |  |
-| `Fights` | 6 |  |
 | `asymmetric` | 6 | `false`, `true` |
 | `charm` | 6 |  |
 | `bash` | 6 |  |
-| `event_now` | 6 | `MeatGolem`, `Mirage`, `MysteriousMachine_Bad`, `MysteriousMachine_Good`, `StacyMutant2` |
-| `lose_item` | 6 | `equipped`, `inventory`, `parasite`, `weapon` |
 | `eyebrows` | 6 |  |
-| `ArmorDodgeChance` | 6 |  |
-| `PassiveAtStatThreshold` | 6 |  |
-| `AddPassivesToMinions` | 6 |  |
-| `StatusOnCastSpell` | 6 |  |
-| `StatusOnBreak` | 6 |  |
-| `SpawnOnDowned` | 6 | `CharmedFly`, `CharmedKitten`, `CharmedSpookie` |
-| `OverrideBasicAttack` | 6 | `BasicExplosiveShot`, `BasicMelee`, `BasicMetronome`, `BasicSpin`, `BasicTankMelee` |
 | `lock_controls` | 6 |  |
 | `dialog_and_autopass` | 6 | ``, `NPC_BEANIES_INTRO_15`, `NPC_JACK_CANT_AFFORD_1`, `NPC_JACK_PURCHASE_ITEM_1`, `NPC_JACK_UNPROMPTED_1` |
 | `unlock_controls` | 6 |  |
@@ -812,256 +505,96 @@ Use this to spot any completely undocumented keys.
 | `ability_icon` | 5 | `BasicButcherMeleeWideSpin`, `BasicMelee`, `BasicRanged`, `BasicStraightShot`, `BreakShortCircuit` |
 | `can_cast_while_dead` | 5 | `true` |
 | `always_bounce` | 5 | `true` |
-| `Metronome` | 5 |  |
 | `is_move` | 5 | `auto`, `true` |
-| `KnockbackDamageImmuneUntilSettled` | 5 |  |
-| `Drowsy` | 5 |  |
-| `override_trample_damage` | 5 | `true` |
-| `CurrentWeaponDamageUp` | 5 |  |
-| `DoScreenShake` | 5 |  |
 | `threshold_flat` | 5 |  |
-| `Conditional_HealthThreshold` | 5 |  |
 | `main_turn_only` | 5 | `true` |
 | `multihit_min` | 5 |  |
 | `multihit_max` | 5 |  |
-| `Conditional_FirstApplicationThisTurn` | 5 |  |
-| `Conditional_BadRoll` | 5 |  |
-| `ForceMoveTowards` | 5 |  |
-| `ApplyToSourceOnKill` | 5 |  |
-| `SafeDie` | 5 |  |
-| `ConjureBonusAbility` | 5 | `Class`, `Colorless`, `Mage`, `random` |
 | `min_targets` | 5 |  |
 | `ontrigger` | 5 | `OldHose_Start_Trigger`, `SE_AnkylosaurusAttack`, `SE_AstroTaserPoke`, `SE_BullRushDash`, `SE_CatWeaponPoke_Chainsaw` |
 | `coins` | 5 |  |
-| `PermanentStrength` | 5 |  |
-| `PurgeAll` | 5 |  |
-| `dash_end_animation` | 5 | `dashend`, `launchStop`, `none`, `ramEnd`, `thrustersEnd` |
-| `AlphaCat` | 5 |  |
 | `dont_orient_aoe` | 5 | `true` |
 | `leg1` | 5 |  |
-| `CatPartsTransform` | 5 |  |
 | `custom_range` | 5 |  |
 | `ear1` | 5 |  |
 | `icon_damage_display_eq` | 5 | `1+bonus_spell_damage_display`, `10+bonus_melee_ability_damage`, `3+bonus_melee_ability_damage`, `X*10`, `item_aux` |
-| `Grappled` | 5 |  |
-| `darken_screen_exclude_self` | 5 | `true` |
-| `DoDistortionRing` | 5 |  |
-| `TempSpeedUp` | 5 | `X` |
-| `darken_screen_start_early` | 5 | `true` |
-| `SetHealth` | 5 |  |
-| `use_rotation` | 5 | `false` |
-| `fall_randomize_timing` | 5 |  |
 | `stagger_multihit_targets` | 5 | `true` |
-| `SpiderInfested` | 5 |  |
-| `Stealth` | 5 |  |
-| `VaporizeInanimate` | 5 |  |
-| `CaptureFamiliar` | 5 |  |
-| `RandomStatDown` | 5 | `ceil(X/2)`, `ceil(X/3)` |
-| `Purge` | 5 |  |
-| `Doomed` | 5 |  |
-| `beam_cap` | 5 | `Gambitmouthbeamcap`, `fx_bloatlasercap`, `fx_kingbloodlasercap`, `greenlasercap`, `greenmegalasercap` |
-| `beam_clip` | 5 | `Gambitmouthbeam`, `fx_bloatlaser`, `fx_kingbloodlaser`, `greenlaser`, `greenmegalaser` |
 | `max_bounces` | 5 |  |
-| `DamageOrHealConditionally` | 5 |  |
 | `immediate` | 5 | `false`, `true` |
-| `ExtraBasicMoves_Status` | 5 |  |
-| `Ammo` | 5 |  |
 | `eye1` | 5 |  |
-| `StunImmunity` | 5 |  |
-| `piece_alt_frame` | 5 |  |
 | `can_be_champion` | 5 | `false`, `true` |
-| `AbilityHealthThreshold` | 5 |  |
 | `disperse_main_turns` | 5 | `false`, `true` |
 | `ability_damage_only` | 5 | `true` |
 | `pop_corpse` | 5 | `false` |
-| `RandomizeAIWeightsEachTurn` | 5 |  |
 | `move_then_do` | 5 | `CHuskCatShade`, `CerberubsBarrage`, `CerberubsCalm`, `NubsJump`, `RatKingSpawn` |
-| `ChanceToBackflip` | 5 |  |
 | `allies_only` | 5 | `false`, `true` |
-| `TransformInXTurns` | 5 |  |
 | `initial_health` | 5 |  |
 | `can_eat_food` | 5 | `false`, `true` |
 | `exclude_from_hallucinate` | 5 | `true` |
 | `equipment` | 5 |  |
-| `StatusOnGainCoins` | 5 |  |
 | `mana_matters` | 5 | `false`, `true` |
-| `SetSpellCosts` | 5 |  |
-| `AddMaxHealth` | 5 |  |
 | `glow` | 5 |  |
-| `DeathRattleRevive` | 5 | `DoNothing`, `HCHumanDie`, `ToxPuff`, `tk_PetrifiedPinky` |
-| `StatusOnDie` | 5 |  |
 | `sfx` | 5 | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` |
-| `AddStartingMana` | 5 |  |
-| `CharacterTypeGainsStatusAtBattleStart` | 5 |  |
-| `level_up` | 5 | `all`, `self` |
 | `restrict` | 5 | `armor`, `consumables`, `trinket`, `weapon` |
 | `counter_maximum` | 5 |  |
 | `counter_range` | 5 |  |
-| `StatusRandomEnemiesOnBattleStart` | 5 |  |
 | `inspect` | 5 |  |
 | `fight` | 5 |  |
 | `lick` | 5 |  |
 | `smash` | 5 |  |
 | `enter` | 5 |  |
 | `kiss` | 5 |  |
-| `PassiveAtHealthThreshold` | 5 |  |
-| `AddKnockbackDamage` | 5 |  |
-| `ClassManaCostReduction` | 5 |  |
 | `str_aux_initialize` | 5 | `random_class_ability`, `random_class_passive`, `random_copyable_class_ability`, `random_copyable_colorless_ability`, `random_copyable_colorless_passive` |
-| `SpawnExtraThingsOnBattleStart` | 5 |  |
-| `StatusOnAllyCatDeath` | 5 |  |
-| `BoostWeaponDamage` | 5 |  |
-| `StatusEveryXSpellCasts` | 5 |  |
-| `ExtraWeaponAttacks` | 5 |  |
-| `AddStatusToBasicMeleeAttack` | 5 |  |
-| `EquipTemporaryItem` | 5 | `Bottles`, `ButcherHook_Temporary`, `FoodBig`, `FoodMedium`, `Necro_SoulDagger_Uncharged` |
 | `override_basic_attack` | 5 | `BasicButcherMeleeWideDoubleSpin`, `BasicButcherMeleeWideSpin`, `BasicDruidAbilityVersatile`, `BasicMagicMissile`, `BasicMedicRanged` |
 | `pitch` | 4 | `and`, `between`, `for`, `pitch_range`, `randomized` |
 | `cat_gimmick` | 4 | `true` |
-| `fx_is_placeholder_animation` | 4 | `true` |
-| `ContextualHeal` | 4 |  |
-| `PullSourceToTarget` | 4 |  |
-| `FlatLeech` | 4 | `X` |
-| `CollectsPickupsWithAltEffects` | 4 |  |
-| `Conditional_Shielded` | 4 |  |
-| `SpawnThingIfHitKills` | 4 | `Bait`, `BigFood`, `BiggestFood`, `Food` |
-| `RefreshWeaponAbility` | 4 |  |
-| `ApplyStatusIfCrit` | 4 |  |
-| `GainDisorderFromPool_PostCast` | 4 | `forbidden_spell_consequences`, `forbidden_spell_consequences_crippling` |
-| `ReduceManaCost` | 4 |  |
 | `upgraded` | 4 | `true` |
-| `ReviveNextRound` | 4 |  |
-| `FreeFirstCast` | 4 |  |
-| `ManaSteal` | 4 |  |
-| `PermanentDexterity` | 4 |  |
 | `must_not_be_a_summon` | 4 | `true` |
-| `PermanentSpeed` | 4 |  |
-| `Conditional_RandomChance` | 4 |  |
-| `Lifesteal` | 4 |  |
-| `ApplyPassives` | 4 |  |
-| `PoisonLace` | 4 | `X/3`, `X/5` |
 | `must_be_offmap` | 4 | `true` |
 | `is_basic_attack` | 4 | `false`, `true` |
-| `FadeInsteadOfDie` | 4 |  |
 | `mouse_offset` | 4 |  |
-| `DisplaceTowardsSource` | 4 |  |
-| `YOffset` | 4 |  |
 | `texture` | 4 |  |
-| `TempInitiativeChange` | 4 |  |
 | `leg2` | 4 |  |
 | `range_display_include_aoe` | 4 | `true` |
-| `bounce_on_hit` | 4 | `false`, `true` |
-| `Plant` | 4 |  |
-| `BramblesOnHit` | 4 |  |
-| `TempStrengthUp` | 4 | `X` |
 | `sub_ability` | 4 | `CollectiveCounterImpl`, `CollectiveSpinImpl`, `HomingBlasts2_sub`, `HomingBlasts_sub`, `Huddle_Impl` |
-| `land_animation` | 4 | `none` |
 | `distance_sort_targets` | 4 | `true` |
-| `FreeSpell` | 4 |  |
-| `jump_start_animation` | 4 | `bellyflopStart`, `enterbattle`, `gravitySlamStart`, `leapattackwindup`, `none` |
-| `CreateGlobalModifiers` | 4 |  |
 | `consider_trample` | 4 | `false`, `true` |
 | `new_layer` | 4 | `battle`, `event`, `map` |
-| `SwitchMusic` | 4 |  |
-| `instant` | 4 | `true` |
 | `ai_ability` | 4 | `AZ_Jump_AI`, `BasicBigMelee`, `BasicMelee`, `BungaSwipe_ai`, `CerberubsJump_AI` |
-| `use_placeholder` | 4 | `true` |
-| `detatched_animation` | 4 | `LiquidMetalSpear`, `SpearGuyAttack`, `TinaSpear`, `WaterGush` |
-| `detatched_animation_reach` | 4 |  |
-| `TempRangeUp` | 4 |  |
 | `icon_damage_display` | 4 | `?` |
-| `BounceRock` | 4 | `LavaBoulder`, `SmallLavaRock`, `SmallRock` |
-| `KnockOutCoin` | 4 |  |
-| `BonusKnockbackDamage` | 4 |  |
-| `HitExplosion` | 4 |  |
-| `FactionConversion` | 4 |  |
-| `GainCoins` | 4 |  |
-| `Conditional_PlayerCat` | 4 |  |
 | `damage_tiles` | 4 | `all` |
 | `include_spells` | 4 | `true` |
-| `show_damage_on_0` | 4 | `true` |
-| `FloatingRockTrap` | 4 |  |
 | `custom_aoe_util` | 4 |  |
-| `NonStackingDivineShield` | 4 |  |
-| `RandomInjury` | 4 |  |
-| `PermanentCharm` | 4 |  |
-| `EquipPermanentItem` | 4 | `BoneClub`, `Kidney` |
-| `SoulLink` | 4 |  |
-| `ManaLeeches` | 4 |  |
 | `min_dist` | 4 |  |
 | `max_dist` | 4 |  |
 | `eye2` | 4 |  |
-| `BonusCritChance` | 4 |  |
-| `SpawnCoinAnywhere` | 4 |  |
 | `prevent_chain_tag` | 4 | `ancestorset_shade`, `eb_twin`, `minime_clone`, `necroset_shade` |
-| `Bird` | 4 | `CookedChickenLeg` |
 | `alt_spawn_pool` | 4 |  |
 | `inanimate` | 4 | `true` |
 | `lock_orientation` | 4 |  |
 | `base_crit_chance` | 4 |  |
 | `round_start_bonus_turns` | 4 |  |
 | `Rage` | 4 |  |
-| `projectile_spawn_offset` | 4 |  |
 | `form_offmap` | 4 | `Default_Ceiling`, `Insane_Ceiling`, `OffMap`, `SpawningPhase`, `Start_Ceiling` |
-| `DisplayDangerAOE` | 4 | `GrenadeExplode`, `MoonHead_Blow`, `TheChild_Wrath`, `attack` |
-| `LimitDamage` | 4 |  |
 | `dispersed_bonus_turns_before_cats` | 4 | `false`, `true` |
-| `ChanceToSpitOnDamage` | 4 |  |
 | `do_strict` | 4 |  |
-| `FormChangeOffMap` | 4 |  |
-| `NoHealthOnlyShield` | 4 |  |
 | `form_onmap` | 4 | `Default`, `Default_Ground`, `FightPhase`, `Insane_Ground` |
 | `dispersed_bonus_turns_consider_initiative` | 4 | `false` |
-| `Rain` | 4 |  |
-| `dont_sink` | 4 | `true` |
-| `StripStatuses` | 4 |  |
-| `BuffImmunity` | 4 |  |
 | `neck` | 4 | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` |
 | `consider_spells` | 4 | `false` |
-| `FaceShield` | 4 |  |
-| `WeaponsDontLoseDurability` | 4 |  |
 | `weapon` | 4 | `AstroTaser`, `ButcherHook`, `CaveCatClub`, `GunslingerPistol`, `MonkFist` |
-| `AddStatusToSpells` | 4 |  |
-| `AddStatusToWeapons` | 4 |  |
-| `SecurityBotProtect` | 4 |  |
 | `access_to_player_inventory` | 4 | `false`, `true` |
 | `ai_scale` | 4 |  |
 | `rounds` | 4 |  |
-| `tint` | 4 | `blue`, `green`, `yellow` |
 | `allow_passive_spelltransforming` | 4 | `true` |
-| `AddHiddenTag` | 4 | `bowling_ball`, `grown_hitler_clone`, `hitler_clone_fetus`, `the_nuke_bearer`, `unlit_candle` |
-| `DelayedAutoRevive` | 4 |  |
-| `SmallRockBehavior` | 4 |  |
-| `ChangeTileOnPop` | 4 | `CreepTile`, `GlitchTile`, `OilTile` |
-| `Trapper` | 4 |  |
-| `PassiveWhenDead` | 4 |  |
 | `take` | 4 |  |
 | `is_not_chapter` | 4 |  |
-| `gain_cat_familiar` | 4 |  |
-| `kill` | 4 | `cat` |
 | `go_around` | 4 |  |
 | `legs` | 4 |  |
-| `weight` | 4 |  |
-| `next_event_from_set` | 4 | `CatHole`, `Tragedy`, `WatchingHead2`, `misc_events.gon` |
-| `StatusIfUnusedMovePoints` | 4 |  |
-| `BackstabCritChance` | 4 |  |
-| `TrinketPassiveMultiplierBonus` | 4 |  |
 | `stack_key` | 4 | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` |
-| `TrinketActiveEffectsMultiplierBonus` | 4 |  |
-| `CritsApplyStatus` | 4 |  |
-| `Fragile` | 4 |  |
-| `BoostHeals` | 4 |  |
 | `consumable` | 4 | `true` |
 | `parasite` | 4 | `true` |
-| `StatusAlliesOnDeath` | 4 |  |
-| `StatusAllCharactersOnSpawn` | 4 |  |
-| `ReplaceSpawnedObjects` | 4 |  |
-| `PoopWhenHit` | 4 | `Poop` |
-| `ElementalManaCostReduction` | 4 |  |
-| `StatusOnEatFood` | 4 |  |
-| `AddDamageToElementDamage` | 4 |  |
 | `time_machine` | 4 |  |
-| `StatusKilledCharacters` | 4 |  |
 | `unprompted_i` | 4 |  |
 | `unprompted_a` | 4 |  |
 | `unprompted_g` | 4 |  |
@@ -1076,121 +609,44 @@ Use this to spot any completely undocumented keys.
 | `purchase_item` | 4 |  |
 | `tooltip_dialog` | 4 | `NPC_JACK_SHOP_TOOLTIP`, `NPC_ORGANGRINDER_SHOP_TOOLTIP`, `NPC_TRACY_SHOP_TOOLTIP` |
 | `wait_for_cancel` | 4 |  |
-| `StatusOnCrit` | 4 |  |
-| `ForceSpecificInjury` | 4 | `cha`, `int`, `lck`, `spd` |
 | `stock_fill_order` | 4 |  |
 | `button_nav` | 4 |  |
 | `extra_events` | 3 | `-`, `CardboardBox_ItemReveal`, `Cat_Shadowstep_anime`, `ChakramProjectileSpin`, `Combat_ButtonsHide` |
 | `pitch_range` | 3 |  |
 | `limit_amount` | 3 | `amount`, `at`, `can`, `limit`, `of` |
 | `limit` | 3 | `actchooser`, `channel` |
-| `miss_random_delay` | 3 |  |
-| `miss_particle` | 3 | `fx_tentaclestrangleMiss` |
-| `fx_random_flip` | 3 | `true` |
-| `AbilityInheritsWeaponEffects` | 3 |  |
-| `blocked_multiplier` | 3 |  |
-| `DestroyWeaponThrow` | 3 |  |
-| `PullSourceToKnockbackImmuneTarget` | 3 |  |
 | `as_the_crow_flies` | 3 | `true` |
 | `key` | 3 | `EtherSoakedRag`, `JewelOfDrog`, `TaintedOffering`, `TaintedOffering2`, `gamewin` |
-| `TempPassiveWhileHasStatus` | 3 |  |
-| `SpawnCreep` | 3 |  |
-| `CopyBasicAttackEffects` | 3 |  |
-| `aoe_spell_on_land` | 3 | `true` |
 | `LeaveBehind` | 3 | `Bait` |
-| `can_revive` | 3 | `true` |
-| `ObjectOnHit` | 3 | `Bait`, `BiggestFood`, `Carcus`, `FetusNoJar` |
-| `single_projectile` | 3 | `true` |
-| `DrinkWater` | 3 |  |
-| `HealRandomInjury` | 3 |  |
-| `PermanentCharisma` | 3 |  |
 | `to` | 3 | `JarOfNothing`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |
-| `PermanentLuck` | 3 |  |
-| `RepairWeaponCondition` | 3 |  |
-| `Hex` | 3 |  |
-| `DestroyTrinket` | 3 |  |
 | `from` | 3 | `JarOfChaos`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |
-| `TempCounterAttack` | 3 |  |
-| `SendRock` | 3 |  |
-| `IllusionTint` | 3 |  |
 | `aoe_tile_requires_element` | 3 | `Earth`, `Grass`, `Water` |
 | `ear2` | 3 |  |
-| `force_play_hit_animation` | 3 | `true` |
-| `TransformAbility` | 3 | `BerserkDash`, `BerserkDash2`, `BirthSquirrel`, `BirthSquirrel2`, `HardenSkin` |
-| `ObjectOnHitEmpty` | 3 | `AnimalEgg`, `AnimalEgg2`, `HeadTumor`, `Maggot`, `SmallRock` |
-| `TileTrail_Ahead` | 3 | `FireTile`, `FlowerTile`, `OilTile`, `WaterTile` |
-| `TempMovement` | 3 | `mov` |
-| `TakeBonusTurnWithStatus` | 3 |  |
-| `TempDexterityUp` | 3 | `X` |
-| `fixed_jump_height` | 3 |  |
 | `JustInCaseTrample` | 3 |  |
-| `air_animation` | 3 | `bellyflop_air`, `entrance`, `gravitySlam_air` |
 | `works_with_tech` | 3 | `true` |
-| `ForceMoveTowardsEnemies` | 3 | `DumbMove_Impl`, `MoveOne` |
-| `fixed_jump_speed` | 3 |  |
 | `time` | 3 |  |
 | `new_song` | 3 | `same` |
-| `IgnoreDamage` | 3 |  |
-| `PlayBackground` | 3 |  |
-| `RemoveActPoints` | 3 |  |
-| `LowerAmbientLight` | 3 |  |
-| `TimeDelayStatusApplication` | 3 |  |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | All valid keys from the specified engine key are applicable to this context/block. |  |
 | `shuffle_tile_order` | 3 | `true` |
 | `face_camera` | 3 | `true` |
-| `FaceCamera` | 3 |  |
-| `use_super_armor` | 3 | `false`, `true` |
 | `throw_consumed_character` | 3 | `true` |
 | `DisableTrample` | 3 |  |
-| `face_toss_target` | 3 | `true` |
-| `full_jump_animation` | 3 | `attack`, `attack1`, `backflip`, `depossess`, `djump` |
-| `full_jump_windup_frames` | 3 |  |
-| `force_contact` | 3 | `true` |
-| `Consumed` | 3 |  |
-| `Imprison` | 3 | `BeefyCharmedLeech`, `CharmedLeech`, `Fly`, `Tumor` |
-| `GenericDebuff` | 3 |  |
-| `full_jump_sync_frames` | 3 |  |
 | `must_be_consuming` | 3 | `true` |
-| `struggle_ability` | 3 | `CHuskStruggle`, `CaveWomanEscape`, `LennyStruggle`, `MoonHandFlail`, `MoonHeadFlail` |
 | `must_be_first_nonmove_action` | 3 | `true` |
 | `aoe_chance` | 3 | `.4+.2*level` |
-| `SpawnBearTrap` | 3 |  |
 | `track_target` | 3 | `true` |
 | `temporary` | 3 | `false` |
 | `start_reloaded` | 3 | `true` |
-| `KnockbackDirectionIsFacingDirection` | 3 | `flip`, `rotate_right` |
-| `FindItem` | 3 | `BoneClub`, `Molars`, `Pearl` |
-| `TakeBonusTurnWithAIControl` | 3 |  |
-| `AfterImage` | 3 | `PlayerCat_ThiefShade`, `PlayerCat_ThiefShade2` |
-| `RepairAll` | 3 |  |
 | `height` | 3 |  |
-| `Conditional_OncePerBattle` | 3 |  |
 | `shotgun_mode` | 3 | `true` |
-| `LeaveBehindRockOnKnockback` | 3 |  |
-| `MonkStanceSwitch` | 3 |  |
 | `post_spawn_statuses` | 3 |  |
-| `RandomDistanceDisplace` | 3 |  |
 | `splash_damage_aoe_begin` | 3 |  |
-| `AbilityEnabledPercentEachTurn` | 3 |  |
 | `formula` | 3 | `X`, `X*10`, `X+1`, `X-1`, `X-2` |
-| `delay_from_map_edge` | 3 | `false`, `true` |
-| `Conditional_FormulaIsPositive` | 3 |  |
-| `DoubleCastSpell` | 3 |  |
-| `StatusGroup` | 3 |  |
 | `revive_health` | 3 |  |
-| `Reanimate` | 3 |  |
-| `TwisterDisplaceWithDamage` | 3 |  |
-| `CharmedForceAttack` | 3 |  |
-| `RemoveStatusStacks` | 3 |  |
-| `MovementUp` | 3 |  |
 | `tag_restriction` | 3 | `collective`, `dc_cat`, `dinofamily` |
 | `oncast` | 3 | `AbilitySnd_Assassinate`, `AbilitySnd_BoulderDrop` |
-| `DestroyEquipmentAndAttachParasite` | 3 |  |
-| `Conditional_IsSelf` | 3 |  |
-| `RangeUp` | 3 |  |
 | `repeat` | 3 | `infinite`, `never` |
-| `DamageNeighborsAfterMove` | 3 |  |
 | `icon_frame` | 3 |  |
-| `MinimumKnockbackFromAllDamage` | 3 |  |
 | `core` | 3 | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` |
 | `dimensionx` | 3 | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` |
 | `future` | 3 | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` |
@@ -1201,136 +657,56 @@ Use this to spot any completely undocumented keys.
 | `meatworld` | 3 | `AREA_NAME_MEATWORLD`, `mapflag_MeatWorldUnlockedFull` |
 | `caves` | 3 | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` |
 | `theend` | 3 | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` |
-| `MoveAwayFromDamageSource` | 3 | `BasicJump`, `MoveOne` |
 | `Chicken` | 3 |  |
-| `Angel` | 3 |  |
 | `health_threshold` | 3 |  |
-| `FormChangeWhilePrimingAbility` | 3 |  |
-| `BossRewards` | 3 |  |
 | `move_far` | 3 | `false` |
-| `DigestDeadBodies` | 3 | `Digest`, `LennyCatDies`, `MoonHead_Digest` |
 | `form_above` | 3 | `Default`, `Full`, `Standing` |
 | `MoveAway` | 3 |  |
 | `is_dying_animation` | 3 | `true` |
-| `StartOffMap` | 3 |  |
 | `priming` | 3 | `DualSword_Primed`, `Priming`, `SwordAndShield_Primed` |
 | `OffMap` | 3 |  |
-| `PrioritizeFarAwayTargets` | 3 |  |
-| `ExtraDispersedTurns` | 3 |  |
 | `HasCat` | 3 |  |
 | `on_self_move_too` | 3 | `true` |
 | `form_below` | 3 | `Damaged`, `DesireMech`, `Standing2` |
 | `Up` | 3 |  |
-| `MoveTowardsKillers` | 3 | `ReaperRevenge` |
 | `backstabs_only` | 3 | `true` |
 | `last_turn_is_main_turn` | 3 | `true` |
-| `depth_offset` | 3 |  |
 | `Big` | 3 |  |
 | `flat_chance` | 3 |  |
 | `Down` | 3 |  |
-| `FormChangeHealthThreshold` | 3 |  |
-| `AddDamage` | 3 |  |
 | `not_priming` | 3 | `DualSword`, `NotPriming`, `SwordAndShield` |
 | `do_nothing` | 3 |  |
-| `AbilityWhenBuddyDies` | 3 | `BoyDinoCry`, `ChubsRage`, `GirlDinoCry`, `Guillotina2Rage`, `ManglerEnrage` |
-| `TransformOnDeathImmediately` | 3 | `NoHead` |
-| `SharkySmellsBlood` | 3 |  |
-| `UncappedHP` | 3 |  |
 | `craft_ability` | 3 | `TinkererCraft` |
 | `auto_run_priority` | 3 | `default`, `stationary`, `support` |
-| `CountAsCorpse` | 3 |  |
-| `TagGreed` | 3 | `bishop_hat`, `food`, `pickup` |
-| `TinkererBasicAttackSwitching` | 3 |  |
-| `RandomPassivePool` | 3 |  |
-| `FreePathfindElement` | 3 | `Grass`, `Water` |
-| `CanMutateTo` | 3 | `Hyde` |
 | `throw_ability` | 3 | `TinkererThrow` |
-| `ProtectTargetedAllies` | 3 | `SwapPositions_WideLoad`, `SwapPositions_WideLoad2` |
-| `AbilityWhenTaggedCharacterMovesNear` | 3 |  |
 | `base_movement` | 3 |  |
-| `StatusEachTurnEndForEachTurn` | 3 |  |
 | `base_initiative` | 3 |  |
 | `animate_choice` | 3 | `false`, `true` |
-| `LoopingSoundWhileAlive` | 3 | `BigUFO_ambient_looping`, `Bomb_FuseLoop`, `Twister_loop` |
 | `is_player_cat` | 3 | `false`, `true` |
-| `Divide4OnDeath` | 3 | `BiggestFood`, `Clot`, `MedSlime`, `MedSlimeX`, `SmallSlime` |
 | `chain` | 3 | `AcidSplash`, `CaveSplash`, `FireFullSmall`, `Kingblood2`, `MeatCaveSplash` |
 | `move_then_do_random` | 3 |  |
 | `passive` | 3 |  |
-| `AddUnfilledMaxHealth` | 3 |  |
-| `StatusEachRoundEnd` | 3 |  |
-| `cutscene` | 3 | `chaos_ending_bad`, `chaos_ending_good`, `chapterintros/bunker`, `cutscenename`, `desert_intro` |
 | `fights_skipped` | 3 |  |
-| `set_subject` | 3 | `deadrat`, `dimensionx_head2`, `endorb2`, `monkey_paw_1finger`, `monkey_paw_2fingers` |
 | `skip_result_screen` | 3 | `true` |
 | `same_cat` | 3 | `true` |
 | `copy_results` | 3 | `examine`, `lever`, `open`, `red`, `smash` |
-| `spawn_reflection_next_fight` | 3 |  |
 | `open` | 3 |  |
-| `trigger_adventure_unlock` | 3 | `end_of_time_unlock`, `legacy_event_unlock_momsknife`, `map_unlock_dimensionx`, `map_unlock_iceage`, `meat_world_open` |
 | `run` | 3 |  |
-| `NoHealthRegen` | 3 |  |
-| `AbilityOnBattleStart_Immediate` | 3 | `BrambleRandomTileEvent`, `FlowerEventSleep`, `Flush`, `GrassEvent`, `RocksFallEvent` |
-| `learn_ability_from_pool` | 3 | `AnyUnlocked`, `Necromancer` |
-| `upgrade_passive` | 3 | `TowerDefense`, `random` |
-| `heal_injury` | 3 |  |
 | `drink` | 3 |  |
-| `learn_ability` | 3 | `BarfBall`, `FutureSight`, `Toss` |
-| `shuffle_options` | 3 | `true` |
-| `heal_disorder` | 3 | `Anxiety`, `diseases`, `mental_disorders` |
-| `max_options` | 3 |  |
-| `upgrade_ability` | 3 | `Toss`, `random` |
 | `stat_min` | 3 |  |
 | `animation_fail` | 3 | `choice_no_coins` |
 | `stat_max` | 3 |  |
 | `sneak` | 3 |  |
-| `add_weather` | 3 | `AlienOvergrowth`, `Birdemic`, `GeomagneticStorm`, `HauntedNight`, `MeteorShower` |
 | `id` | 3 | `Attic`, `Wind` |
 | `text` | 3 | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` |
 | `uncommon` | 3 |  |
 | `very_rare` | 3 |  |
-| `AutoEquipConsumables` | 3 |  |
-| `FlowersOnEndTurn` | 3 |  |
-| `FreezePiercing` | 3 |  |
-| `IncreaseSpellRange` | 3 |  |
-| `PassiveAfterXKills` | 3 |  |
-| `StatusAlliesOnBattleStart` | 3 |  |
-| `FindExtraItemFromPoolOnBattleEnd` | 3 | `combat_reward_easy`, `pills` |
-| `PassiveWhenOnTile` | 3 |  |
-| `StatusOnTurnEndIfDidntCastAbilityTypes` | 3 |  |
-| `ForceUseAbility_NonStack` | 3 | `Endeavor_Auto`, `Indigestion_Fart`, `Indigestion_Fart2` |
-| `tag_filter` | 3 | `crow`, `grub_familiar`, `rock` |
-| `SpawnObjectOnPopCorpse` | 3 | `Catnip`, `Coin`, `Food` |
-| `KillsToMeat` | 3 | `Food` |
-| `AmplifyKnockback` | 3 |  |
-| `Conditional_Adjacent` | 3 |  |
-| `AddStatusToKnockbackDamage` | 3 |  |
-| `AddEndOfCombatRegen` | 3 |  |
-| `ItemAuxTransform` | 3 |  |
 | `ge` | 3 |  |
-| `LevelUpClassOverride` | 3 | `Colorless`, `Jester` |
 | `on_store` | 3 | `become_aux_coins`, `become_furniture`, `become_rare_furniture` |
-| `ChanceToBlockAndCounter` | 3 |  |
-| `IncreaseExplosionDamage` | 3 |  |
-| `IncreaseExplosionSize` | 3 |  |
-| `AllyDamageReduction` | 3 |  |
-| `CanRemoveCursedItems` | 3 |  |
-| `StatusAfterCastSpell` | 3 |  |
-| `MakeSpellsRequireCharge` | 3 |  |
 | `dont_destroy_on_0` | 3 | `true` |
-| `ConsumableEffectsMultiplierBonus` | 3 |  |
-| `Conditional_PartyMember` | 3 |  |
-| `AddDamageToBasicAttack` | 3 | `min(min(min(min(min(min(str,dex),int),con),lck),spd),cha)-2` |
-| `AmplifyStatus` | 3 | `Bleed`, `Burn`, `Poison`, `Rot` |
-| `StatusOnPopCorpse` | 3 |  |
-| `AddStatusToElementDamage` | 3 |  |
 | `jestercat` | 3 | `auto` |
 | `exit1` | 3 |  |
 | `override_music` | 3 | `chaos_boss`, `finalboss`, `throbbingking` |
-| `ShowHiddenThings` | 3 |  |
-| `ReplaceBasicMove_Mutation` | 3 | `BasicDig`, `BasicJump` |
-| `AutoReanimate` | 3 |  |
-| `MulticlassLevelUp` | 3 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Mage` |
 | `verycloseup` | 3 |  |
 | `closeup` | 3 |  |
 | `zoomedout` | 3 |  |
@@ -1338,10 +714,7 @@ Use this to spot any completely undocumented keys.
 | `do_sequence` | 3 | `butch_tips_intelligence`, `forward_to_tips`, `tink_tips_comfort` |
 | `out_of_stock` | 3 |  |
 | `cant_afford` | 3 |  |
-| `AddSpellDamage` | 3 |  |
 | `bonus_items` | 3 |  |
-| `BasicAttackDamageMultiplier` | 3 |  |
-| `ReplaceBasicAttackWhenCastable` | 3 | `BasicSuplex`, `Hone`, `Hone2`, `Shank`, `Shank2` |
 | `item_groups` | 3 |  |
 | `breakdown` | 3 |  |
 | `house_shop` | 3 | `true` |
@@ -1360,185 +733,60 @@ Use this to spot any completely undocumented keys.
 | `with` | 2 | `a`, `base`, `of`, `setting`, `settingh` |
 | `begin` | 2 |  |
 | `Purrx` | 2 |  |
-| `GenericBuff` | 2 |  |
-| `DeleteObject` | 2 |  |
-| `DownRankAIIfWeaponUsable` | 2 |  |
 | `hint_can_target_pickups` | 2 | `true` |
-| `Attraction` | 2 |  |
-| `two_way_contact` | 2 | `true` |
 | `trample_allies_too` | 2 | `true` |
 | `must_have_weapon` | 2 | `true` |
-| `TempTrampleUntilSettled` | 2 |  |
-| `NextAttackBonusRange` | 2 |  |
-| `raw_heal` | 2 | `(str+1)/2`, `100-X` |
-| `DieViolently` | 2 |  |
-| `SwapHighestAndLowestStat` | 2 |  |
 | `tooltip_values` | 2 |  |
-| `FlowersOnHit` | 2 |  |
-| `TempSpellDamageUp` | 2 |  |
-| `DestroyWeapon` | 2 |  |
 | `target_requires_element` | 2 |  |
-| `Ostracized` | 2 |  |
-| `UpgradeRandomAbility` | 2 |  |
-| `GainDisorder` | 2 | `Chungus`, `Psychosis` |
-| `DelayedPain` | 2 |  |
-| `TempLuckUp` | 2 |  |
-| `Infested` | 2 |  |
-| `ApplyMultipleTimes` | 2 |  |
 | `is_trinket` | 2 | `true` |
-| `Scrambled` | 2 |  |
-| `EnterMount` | 2 | `enter` |
 | `recalc_target_on_castpoint` | 2 | `true` |
-| `ExplodeCharacter` | 2 |  |
-| `DoubleCastSpellThisTurn` | 2 |  |
-| `VaporizeTarget` | 2 |  |
-| `ExplodeCharacter_NoDie` | 2 |  |
-| `ScatterRandomPickups` | 2 |  |
-| `PermanentImmobile` | 2 |  |
-| `Conditional_Familiar` | 2 |  |
-| `DoubleLoot` | 2 |  |
-| `RefreshMovePointsIfHit` | 2 |  |
-| `DisplaceToAbilityTarget` | 2 |  |
-| `do_damage_immediately` | 2 | `true` |
-| `SpecificInjury` | 2 | `int`, `spd`, `str` |
-| `jump_height_multiplier` | 2 |  |
-| `SetDefaultFace` | 2 | `happy`, `insane`, `sad` |
 | `aoe_hint_teamcast` | 2 | `true` |
 | `DashFury` | 2 |  |
-| `Conditional_Displaceable` | 2 |  |
-| `TeamCastAbility` | 2 | `Huddle_Impl`, `Spin`, `TeamFlex_Impl`, `TeamFlex_Impl2` |
-| `TempCritChanceUp` | 2 |  |
 | `icon_damage_display_suffix` | 2 | `x10`, `x2` |
 | `special_tile_tag` | 2 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation` |
 | `inherit_elite_buffs` | 2 | `false` |
-| `FlatAIBonus` | 2 |  |
-| `PopAndSpawn` | 2 | `Sprout`, `StemCat_HalfHealth`, `TheDestroyer`, `Tormentor` |
-| `BloodRain` | 2 |  |
 | `start_dead` | 2 | `true` |
-| `custom_priming_animation` | 2 | `idleCommand1`, `idleCommand2`, `idleCommand3`, `idleCommand4`, `priming` |
-| `wet` | 2 | `false`, `true` |
 | `redirect_location_if_blocked` | 2 | `true` |
-| `non_lethal` | 2 | `true` |
 | `contact_requires_adjacency` | 2 | `false` |
-| `Conditional_InForm` | 2 |  |
-| `grab_animation` | 2 | `grab` |
 | `must_not_be_consuming` | 2 | `true` |
 | `reorient_thrown_character` | 2 | `true` |
-| `ReloadOnKillEnemy` | 2 |  |
 | `must_be_first_action` | 2 | `false`, `true` |
 | `aoe` | 2 |  |
 | `hint_can_target_empty` | 2 | `false`, `true` |
-| `Conditional_NotAlly` | 2 |  |
 | `low_gravity_boostable` | 2 | `false`, `true` |
 | `fights` | 2 |  |
 | `low_health_character_threshold` | 2 | `item_aux` |
 | `max_distance` | 2 |  |
-| `QuakeAreaChance` | 2 |  |
-| `force_no_contact` | 2 | `true` |
-| `PartialPurge` | 2 |  |
 | `upgrade_straight_shot_to_boomerang` | 2 | `true` |
-| `CatchBoomerang` | 2 |  |
-| `AddWeaponAux` | 2 | `-item_aux`, `-max(min(X+1, item_aux), 0)` |
 | `is_weapon` | 2 | `true` |
-| `CompleteItemQuest` | 2 | `BlackShard`, `Nuke`, `ScaldingOrb` |
-| `easing` | 2 |  |
-| `XIsFreeArmorSlots` | 2 |  |
-| `rocket_swirl` | 2 |  |
-| `NextBasicAttackCritsThisTurn` | 2 |  |
-| `SpawnFlames` | 2 |  |
-| `TransformWeapon` | 2 |  |
-| `ShowText` | 2 | `COMBAT_POPUP_BRAINSTORM`, `COMBAT_POPUP_RELOAD`, `COMBAT_POPUP_REPAIRED` |
 | `requires_exact_character_aux` | 2 |  |
 | `randomize_target_within_range` | 2 |  |
 | `skilltemp` | 2 | `true` |
-| `Conditional_Object` | 2 |  |
 | `BreakIntoRocks` | 2 | `Coin`, `SmallRock` |
-| `particle_mat` | 2 | `shadow_occluded_spelldissolve` |
-| `ArcLightning` | 2 |  |
-| `Conditional_AffectedByElement` | 2 |  |
-| `ExplosionIfHitSomething` | 2 |  |
 | `oncastpoint` | 2 | `AirHorn`, `Batterup_Swing_Castpoint` |
-| `TriggerGameEnding` | 2 |  |
-| `use_projectile_spawn_offset` | 2 | `true` |
-| `mask_center` | 2 | `SpearMaskCenter` |
-| `RemoveItem` | 2 | `BlackShard`, `BlackShard_Glowing`, `ScaldingOrb` |
-| `ChanceToBreak` | 2 |  |
-| `ScatterCoins` | 2 |  |
-| `mask_extent` | 2 | `SpearMaskExtent` |
 | `aoe_leading_edge_only` | 2 | `true` |
-| `lock_orientation_during_dash` | 2 | `true` |
-| `EnableWeather` | 2 | `KaijuFirestorm`, `KaijuMeteornado`, `KaijuMeteornadoSolo`, `VisualFlySwarm` |
-| `force_no_knockback` | 2 | `true` |
-| `min_throw_height` | 2 |  |
 | `cantrip_group` | 2 | `THC_CoinRoll`, `cavemomtoss`, `kaiju_roar`, `spewer_suck` |
 | `toss_direction_restriction` | 2 | `backwards`, `forwards` |
-| `RemoveMovePoints` | 2 |  |
-| `sync_frames` | 2 |  |
-| `decelerate` | 2 |  |
-| `dash_decelerating_animation` | 2 | `dashslow` |
-| `AbilityEnabledOncePerFightAtHealthThreshold` | 2 |  |
-| `XIsLivingCharactersWithTag` | 2 | `husk`, `rock` |
-| `SetDistanceDisplace` | 2 |  |
-| `SplashDamage` | 2 |  |
 | `threshold_percent` | 2 |  |
-| `OverHealToStatuses` | 2 |  |
-| `CorpseVaporizer` | 2 |  |
 | `icon_damage_type` | 2 | `magic`, `physical` |
-| `DelayedWindCone` | 2 |  |
-| `DoubleCastSpellsEachTurn_Status` | 2 |  |
-| `can_instapop` | 2 | `false` |
-| `ApplyToRandomPartyMemberIfPossible` | 2 |  |
-| `StatusKillers` | 2 |  |
-| `self_damage_mid_port` | 2 | `true` |
 | `empty_self_damage` | 2 |  |
-| `empty_animation` | 2 | `empty` |
-| `ApplyToConsumed` | 2 |  |
-| `ProbeCharmed` | 2 |  |
 | `chapter` | 2 | `alley` |
-| `SpreadDisease` | 2 |  |
 | `eyebrow1` | 2 |  |
-| `SpawnRock` | 2 |  |
-| `mount_mode` | 2 | `auto`, `true` |
-| `do_not_pop_corpse` | 2 | `true` |
-| `Disguised` | 2 |  |
-| `XIsLivingAlliesWithTag` | 2 | `dc_crow`, `hitler_clone_fetus`, `terminator_mini` |
-| `Conditional_HasCleansableDebuffs` | 2 |  |
 | `force_ai_target_as_spell` | 2 | `true` |
 | `range_display_include_direction` | 2 | `true` |
-| `extra_statuses` | 2 |  |
-| `always_play_animations` | 2 | `true` |
-| `Possessed` | 2 |  |
-| `dead` | 2 | `deadShot` |
 | `disease` | 2 | `BirdFlu`, `Cancer`, `CommonCold`, `Covid`, `Ebola` |
 | `exit_ability` | 2 | `DybbukReturn` |
-| `SetShield` | 2 |  |
-| `drop_on_death` | 2 | `deferred`, `false`, `true` |
-| `OverrideChainKnockbackDamage` | 2 | `3+bonus_melee_ability_damage` |
-| `StackingSandstorm` | 2 |  |
 | `respect_prime` | 2 | `true` |
-| `GlobalSpawnCharacter` | 2 | `MegaGuppy` |
-| `RemoveAmbientLightEffects` | 2 |  |
-| `BurgleCoin` | 2 |  |
-| `CapTechSpent` | 2 |  |
-| `Tech` | 2 |  |
-| `complete_item_quest` | 2 | `BlackShard`, `CryogenicTimeChamber_Empty`, `CryogenicTimeChamber_Full`, `GuillotinasHead`, `JarOfRadiatedBlood` |
 | `required_difficulty` | 2 |  |
 | `complete_chapter` | 2 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
 | `set_savefile_flag` | 2 | `AlienInvasionUnlocked`, `HauntedNightUnlocked`, `PlotFlag_Beanies_Homeless`, `PlotFlag_FrankBeanies`, `RestlessDeadUnlocked` |
 | `roll_limit` | 2 |  |
-| `StatusEachRoundBegin` | 2 |  |
 | `only_at_battle_start` | 2 | `true` |
 | `specific_chapter` | 2 |  |
 | `aura_effects_allies` | 2 | `false` |
 | `minion_alt` | 2 | `SlightlyDepressing`, `SubTwin`, `SubUndying` |
-| `NonStackingShield` | 2 |  |
-| `EliteParticle` | 2 | `AbsorbBuff`, `FireExtinguish_Steam`, `FlyBuff`, `Lava_Distortion`, `PassiveEnergized` |
 | `rollable` | 2 | `false` |
-| `GlobalManaBurnAura` | 2 |  |
-| `HealthMultiplier` | 2 |  |
 | `unique` | 2 | `true` |
-| `EliteFlatTint` | 2 |  |
-| `EliteTint` | 2 | `red` |
 | `bite` | 2 |  |
 | `Hunter` | 2 |  |
 | `Druid` | 2 |  |
@@ -1562,250 +810,125 @@ Use this to spot any completely undocumented keys.
 | `crater` | 2 | `AREA_NAME_CRATER`, `mapflag_CraterUnlocked` |
 | `junkyard` | 2 | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` |
 | `ally_rewards` | 2 |  |
-| `BirdRewards` | 2 |  |
 | `Mutant` | 2 |  |
 | `Turkey` | 2 |  |
 | `visually_spiky` | 2 | `true` |
 | `do_all_shuffle` | 2 |  |
-| `PassiveWhileHasStatus` | 2 |  |
 | `check_in_form` | 2 | `Boris`, `Default` |
-| `PassiveWhileNotHasStatus` | 2 |  |
 | `use_ai` | 2 | `true` |
-| `BonusTurnPattern` | 2 |  |
 | `Priming` | 2 |  |
 | `do_best` | 2 |  |
 | `boss_minions_runaway` | 2 | `false` |
 | `dispersed_bonusturn_pattern` | 2 |  |
 | `cancel_knockback` | 2 | `true` |
 | `clamp_pattern` | 2 | `true` |
-| `BackstabAllDirections` | 2 |  |
-| `FormChangeDuringWeatherElement` | 2 |  |
-| `BungaEntrance` | 2 |  |
 | `Small` | 2 |  |
 | `warrior_tag` | 2 | `bungawarrior`, `finalboss_clonecat` |
 | `use_turn_animations` | 2 | `true` |
 | `wait_till_next_round_to_update_turns` | 2 | `true` |
 | `NotPriming` | 2 |  |
 | `random_orient` | 2 | `true` |
-| `PrioritizeHitDifferentTargets` | 2 |  |
-| `StatusAfterXTurns` | 2 |  |
-| `PassiveGroup` | 2 |  |
 | `view_bleeding_characters_as_enemies` | 2 | `true` |
 | `consider_all_layers` | 2 | `true` |
-| `StatusCarefulness` | 2 |  |
-| `MamaCatAnimations` | 2 |  |
 | `target_filter` | 2 | `Kitten`, `any` |
 | `SquirrelForm` | 2 |  |
 | `trinket` | 2 | `MCHadouken`, `MonkStyleChanger` |
-| `AddSpeed` | 2 |  |
-| `InfiniteRebirth` | 2 |  |
-| `AggroTargetIsCurrentTurn` | 2 |  |
-| `ReplaceBrain` | 2 |  |
 | `playercat_health` | 2 |  |
-| `PrioritizeAggroTarget` | 2 |  |
 | `base_mana` | 2 |  |
 | `base_health_regen` | 2 |  |
 | `base_initial_mana` | 2 |  |
 | `base_health` | 2 |  |
-| `TowerDefenseReflex` | 2 | `BasicRanged_1DMG`, `attack` |
 | `Leave` | 2 | `CherubimLeave`, `LELeave` |
-| `GoopWalk` | 2 |  |
 | `thresholds` | 2 |  |
 | `ranged_only` | 2 | `true` |
 | `cancel_movement` | 2 | `false` |
 | `Return` | 2 | `CherubimReturn`, `LEReturn` |
 | `MoveClose` | 2 |  |
-| `AbilityAfterEnemyCastSpell_Stackable` | 2 | `ThornUp`, `ThornUpX` |
-| `CanShield` | 2 |  |
 | `force_not_familiar` | 2 | `true` |
 | `deathpoof_size` | 2 |  |
-| `CherubimReaction` | 2 |  |
-| `DiesToElement` | 2 | `Wind` |
 | `only_when_not_your_turn` | 2 | `true` |
-| `four_way_animations` | 2 | `true` |
-| `SpawnCreepOnHit` | 2 |  |
-| `MiniVolcanoReaction` | 2 | `MiniVolcano_Spurt`, `ThrobShot_Reaction` |
 | `always_triggers_traps` | 2 | `true` |
 | `MoveCenter` | 2 |  |
-| `GainDisorderFromPool` | 2 | `all_disorders` |
 | `Water` | 2 |  |
-| `GroundFlopper` | 2 | `DefaultMove`, `MoveOne` |
-| `FaceLastDamage` | 2 |  |
 | `chance_per_damage` | 2 |  |
 | `can_grant_extra_turns` | 2 | `false` |
 | `alternate_energized_effect` | 2 |  |
-| `SharePickups` | 2 |  |
-| `StatusOnSpawnIn` | 2 |  |
-| `ReturnBoundItemOnBattleEnd` | 2 |  |
 | `icon` | 2 | `DejaVu2`, `DejaVu3` |
 | `force_display_name` | 2 | `true` |
 | `Holy` | 2 | `MegaGuppy_TransformHoly` |
-| `MinimumKnockbackFromPhysicalAttacks` | 2 |  |
-| `AggroTargetIsBuddy` | 2 |  |
-| `AddStatusToTrampleDamage` | 2 |  |
 | `aoe_pierce_mode` | 2 | `block` |
 | `pathfinding_avoidance` | 2 |  |
 | `exclude` | 2 | `SpellDamageUp`, `fire`, `water` |
-| `shade_occluded_objects` | 2 | `true` |
 | `tall` | 2 | `true` |
-| `Phasing` | 2 |  |
 | `blocking` | 2 | `false`, `idlenoani` |
-| `TempPassiveUntilSettled` | 2 |  |
 | `active` | 2 |  |
 | `objects_too` | 2 | `true` |
-| `CCImmunity` | 2 |  |
 | `Fire` | 2 |  |
 | `Catnip` | 2 |  |
 | `Food` | 2 |  |
 | `Antidote` | 2 |  |
 | `can_run` | 2 | `false` |
-| `OverrideMaxHealth` | 2 |  |
 | `attack_pool` | 2 |  |
 | `description` | 2 | `CAT_CLASS_BUTCHER_DESC`, `CAT_CLASS_COLORLESS_DESC`, `CAT_CLASS_DRUID_DESC`, `CAT_CLASS_FIGHTER_DESC`, `CAT_CLASS_HUNTER_DESC` |
 | `defense` | 2 |  |
 | `starter_abilities` | 2 |  |
 | `stat_mods` | 2 |  |
 | `passive_pool` | 2 |  |
-| `portrait_face` | 2 | `butcher_portrait`, `druid_portrait`, `fighter_portrait`, `hunter_portrait`, `jester_portrait` |
 | `ability_groups` | 2 |  |
 | `levelup_stats` | 2 |  |
 | `ability_pool` | 2 |  |
 | `misc` | 2 |  |
-| `default_face` | 2 | `angry`, `happy`, `mad`, `worried` |
 | `not_cat_has_item_equipped` | 2 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `Horns` |
 | `cat_has_item_equipped` | 2 | `CryogenicTimeChamber_Empty`, `CryogenicTimeChamber_Full`, `FaceCovering`, `GuillotinasHead`, `JarOfRadiatedBlood` |
 | `choose_cat_with_min_health` | 2 |  |
 | `return_as` | 2 | `enemy` |
 | `return_during` | 2 | `boss` |
 | `pick` | 2 |  |
-| `party_permanent_stats` | 2 |  |
 | `KillEnemyOfTypeAtBattleStart` | 2 |  |
 | `enemy_type` | 2 | `any`, `cat` |
 | `ice` | 2 |  |
-| `NoManaRegen` | 2 |  |
 | `lightning` | 2 |  |
 | `fire` | 2 |  |
 | `move_closer` | 2 |  |
 | `find_another_way` | 2 |  |
 | `use_weapon` | 2 |  |
-| `decrement_legacy_counter` | 2 | `WorldEventLegacyCounter_CrackInTheWall`, `WorldEventLegacyCounter_CustomTokenString`, `WorldEventLegacyToken_StartDigging` |
 | `play` | 2 |  |
 | `is_chapter` | 2 |  |
-| `set_age` | 2 |  |
 | `destroy` | 2 |  |
-| `cutscene_on_exit` | 2 | `infinite_intro`, `king_intro` |
-| `scramble_abilities` | 2 | `all` |
-| `begin_chapter` | 2 | `dimensionx.gon`, `endoftime.gon`, `future.gon`, `home`, `iceage.gon` |
-| `learn_passive_from_pool` | 2 | `AnyUnlocked`, `Necromancer` |
-| `random_pool_consider_luck` | 2 |  |
 | `free` | 2 | `false` |
-| `party_permanent_stats_exclude_self` | 2 |  |
-| `gain_immortal_familiar` | 2 | `CharmedFlea`, `CharmedFleaSpecial`, `CharmedPooter` |
-| `leave_party_temporarily` | 2 |  |
 | `minimum_party_size` | 2 |  |
 | `not_on_quest` | 2 |  |
-| `spin` | 2 | `again` |
 | `arms` | 2 |  |
 | `investigate` | 2 |  |
 | `sacrifice` | 2 |  |
-| `make_old` | 2 | `all`, `self` |
-| `party_random_mutation_from_set` | 2 |  |
 | `repair` | 2 |  |
 | `touch` | 2 |  |
 | `turnon` | 2 |  |
 | `home` | 2 |  |
-| `lose_specific_item` | 2 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `PutridLeech`, `PyrophinasCollar`, `ReceiverAntenna` |
 | `Stimulation` | 2 |  |
 | `Comfort` | 2 |  |
 | `Appeal` | 2 |  |
 | `volume_adjustment` | 2 |  |
 | `preset` | 2 | `AUDITORIUM`, `Alley`, `Cave`, `Forest`, `LIVINGROOM` |
-| `Windy` | 2 |  |
-| `Snow` | 2 |  |
 | `ambient_sound` | 2 | `amb_acidrain.ogg`, `amb_blizzard.ogg`, `amb_butterflyswarm.ogg`, `amb_flyswarm.ogg`, `amb_heavyrain.ogg` |
 | `basic_consumables` | 2 |  |
-| `WeaponActiveEffectsMultiplierBonus` | 2 |  |
 | `name_mod` | 2 | `CAT_NAME_MOD_AMOEBA`, `CAT_NAME_MOD_COOL`, `CAT_NAME_MOD_DEMONIC`, `CAT_NAME_MOD_DWARF`, `CAT_NAME_MOD_GIGANTISM` |
-| `StatusOnTurnEndIfCastNSpells` | 2 |  |
-| `SetBrittleImmune` | 2 | ``, `AdvancedAlloy`, `Alloy`, `EliteAlloy`, `JankAlloy` |
-| `UpgradeSpawnedPickups` | 2 |  |
-| `SpawnCatCopyOnBattleStart` | 2 |  |
-| `SetFragileImmune` | 2 | ``, `Bionic`, `Cardboard`, `Cool`, `Lucky` |
 | `allow_energize_self` | 2 | `true` |
-| `StatusOnEatPill` | 2 |  |
-| `WeaponPassiveMultiplierBonus` | 2 |  |
-| `NeckArmorPassiveMultiplierBonus` | 2 |  |
 | `ally_chance` | 2 |  |
 | `str_aux_is_copy_passive` | 2 | `true` |
-| `RandomSeededStatModifier` | 2 |  |
-| `CantSpreadDiseases` | 2 |  |
-| `FragileDuringElement` | 2 | `water` |
-| `FlatLeechIfDamaged` | 2 |  |
-| `HPGainBlock` | 2 |  |
-| `Flammable` | 2 |  |
-| `StatusOnHealed` | 2 |  |
-| `HeadArmorPassiveMultiplierBonus` | 2 |  |
-| `WeaponDamageMultiplierBonus` | 2 |  |
-| `StatusAlliesEachTurn` | 2 |  |
-| `MakeBasicAttackPull` | 2 |  |
-| `ChanceToBlock` | 2 |  |
-| `CatchProjectiles` | 2 |  |
-| `TrueShot` | 2 |  |
-| `StatusOnBackstab` | 2 |  |
-| `CantCatchDiseases` | 2 |  |
-| `BrittleDuringElement` | 2 | `water` |
-| `StatusOnBreakItem` | 2 |  |
-| `DoubleCastWeapons` | 2 |  |
-| `FaceArmorPassiveMultiplierBonus` | 2 |  |
-| `AddPassivesToCharmed` | 2 |  |
-| `DisableAbilities` | 2 | `all_items`, `all_spells`, `basic_attack` |
 | `global_tags` | 2 |  |
 | `global_passives` | 2 |  |
-| `MoveAndUseAbilityEachTurnBeginIfPossible` | 2 | `Cannibalize`, `EatShit`, `face_EatNeverstone` |
 | `quest_item_alias` | 2 | `BlackShard`, `NuclearKnife` |
 | `quest_item` | 2 | `false`, `true` |
 | `chance_to_break` | 2 |  |
 | `durability_loss` | 2 |  |
-| `ArmorBreakOnHit` | 2 |  |
-| `SetItemAux` | 2 |  |
-| `StatusOnUseBasicAttack` | 2 |  |
-| `RangedTrueShot` | 2 |  |
-| `StatusIfUnusedActPoints` | 2 |  |
-| `ExplosionImmunity` | 2 |  |
-| `Uncontrollable` | 2 |  |
-| `SetDefaultFacePassive` | 2 | `euphoric`, `insane` |
-| `LeaveBehindOnceEachMove` | 2 | `Poop`, `Scrap` |
 | `indestructible` | 2 | `true` |
 | `prevent_level_up` | 2 | `true` |
-| `NoCorpses` | 2 |  |
-| `TauntAlways` | 2 |  |
-| `DurabilityTransform` | 2 |  |
 | `eq` | 2 |  |
-| `StatusWhenAllySpendsMana` | 2 |  |
-| `Bounty` | 2 |  |
 | `health_percent` | 2 |  |
-| `FlyDamageIncrease` | 2 |  |
-| `ScaledStatusOnSpendMana` | 2 |  |
-| `Eternal` | 2 |  |
-| `ApplyStatusesToRandomEnemiesEachTurn` | 2 |  |
-| `StatusOnCollectPickup` | 2 |  |
-| `MoveSpeedMultiplier` | 2 |  |
-| `CapMovementAbilityRange` | 2 |  |
-| `CopyPassiveSlot` | 2 |  |
-| `PassiveWhileInMonkMeleeStance` | 2 |  |
-| `RefreshEquipmentAbilityOnElement` | 2 |  |
-| `AddSelfStatusToWeapons` | 2 |  |
-| `BouncyProjectiles` | 2 |  |
-| `ExtraTrinketUses` | 2 |  |
-| `StatusOnPickupCoins` | 2 |  |
-| `BasicAttackCantMiss` | 2 |  |
 | `max_durability` | 2 |  |
 | `item` | 2 | `EstusFlask_Full`, `GallonOfWater`, `WaterBottle_Full` |
-| `ExtraStatusWhenDealingDamage` | 2 |  |
 | `randomize_piece_frames` | 2 | `true` |
-| `RemoveLineOfSightRestrictions` | 2 |  |
-| `GainExtraShield` | 2 |  |
-| `BasicAttackCritChance` | 2 |  |
 | `hard_initial` | 2 |  |
 | `HardPathUnlocked` | 2 |  |
 | `is_final_boss` | 2 | `true` |
@@ -1816,12 +939,6 @@ Use this to spot any completely undocumented keys.
 | `EndOfTimeUnlocked` | 2 |  |
 | `musiclayer` | 2 | `boss` |
 | `treasure` | 2 |  |
-| `EquipRandomTemporaryItemFromPool` | 2 | `pills`, `weapons` |
-| `BlacklistPickupType` | 2 | `catnip`, `food` |
-| `Vegan` | 2 |  |
-| `DisableAbilitiesWithTag` | 2 | `consumable`, `meat`, `musical` |
-| `HouseFoodRequirementMultiplier` | 2 |  |
-| `PassiveWhenAtFullMana` | 2 |  |
 | `tracy_foodstorage10` | 2 |  |
 | `organ_upgrade2` | 2 |  |
 | `upgrade_storage_repeating_hard` | 2 |  |
@@ -1926,15 +1043,7 @@ Use this to spot any completely undocumented keys.
 | `scripts` | 2 |  |
 | `emit_rate` | 2 |  |
 | `speed_scale` | 2 |  |
-| `AllyBonusAbilityAura` | 2 | `NubbyToss` |
-| `ConsumablesInfiniteRange` | 2 |  |
-| `AutocastEachTurnBegin` | 2 | `MindCrack_EldritchVisage`, `MindCrack_EldritchVisage2` |
-| `BasicAttackAOEBonus` | 2 |  |
-| `StatusAlliesOnKill` | 2 |  |
 | `cycle_start` | 2 |  |
-| `AllyManaRegenAura` | 2 |  |
-| `DistanceBonusDamage` | 2 |  |
-| `UncappedMana` | 2 |  |
 | `Item` | 2 |  |
 | `consumable_uncommon` | 2 |  |
 | `consumable_very_rare` | 2 |  |
@@ -6889,459 +5998,99 @@ Use this to spot any completely undocumented keys.
 | `Hissx` | 1 |  |
 | `Deathx` | 1 |  |
 | `cat_lowquality` | 1 | `true` |
-| `HideEquipment` | 1 | `neck` |
-| `GiveBoundItemToTarget` | 1 |  |
-| `ApplyPassivesToSpawnerWhileAlive` | 1 |  |
-| `ally_animation` | 1 | `lickAttack` |
-| `damage_threshold_altanimations` | 1 |  |
 | `TemporaryItem` | 1 | `BonusAbility`, `TinkererThrow` |
-| `IgnoreDebuffs` | 1 |  |
-| `ranged` | 1 | `true` |
 | `heaviestMelee` | 1 |  |
 | `heavyMelee` | 1 |  |
-| `SelfStun` | 1 |  |
-| `damage_shield_only` | 1 | `true` |
 | `CurrentWeaponAddPoison` | 1 |  |
-| `XIsMultipliedPercentHealth` | 1 |  |
 | `requires_empty_trinket` | 1 | `true` |
 | `requires_consumed_trinket` | 1 | `true` |
-| `can_collect_pickups` | 1 | `true` |
-| `ForceMoveTowardsTaggedObject` | 1 |  |
-| `SmellBlood` | 1 |  |
 | `reverse_target_direction` | 1 | `true` |
-| `DisableWeapon` | 1 |  |
-| `Regurge` | 1 |  |
-| `force_adjacent_and_diagonal_contact` | 1 | `true` |
-| `Conditional_NotShielded` | 1 |  |
-| `SwallowSmallCharacter` | 1 |  |
-| `ImmediateUseDirectionalAbility` | 1 | `BowlDash`, `BowlDash2` |
 | `minimum_con` | 1 |  |
 | `minimum_spd` | 1 |  |
-| `StealTurn` | 1 |  |
 | `range_max` | 1 |  |
-| `TilesMovedToStrength` | 1 |  |
-| `TriggerDOTStatuses` | 1 |  |
 | `crit_multiplier_bonus` | 1 |  |
-| `CopyCatPassive_Initializer` | 1 |  |
-| `DontHealEnemies` | 1 |  |
-| `EvolveAbilityFromPool` | 1 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `JesterMinusColorless` |
-| `InterchangeDisabler` | 1 |  |
-| `NextAbilityHeals` | 1 |  |
-| `TilesMovedToMana` | 1 |  |
-| `CanceledQueuedInput` | 1 |  |
-| `Conditional_NotBossOrBig` | 1 |  |
 | `luck_increase` | 1 |  |
-| `NextDamageReduceAndHealAllies` | 1 |  |
-| `RefreshItemAbilities` | 1 |  |
-| `NextActionLuckUp` | 1 |  |
-| `DoubleStatus` | 1 | `Bleed`, `Burn`, `Poison` |
 | `extra_coins_per_stack` | 1 |  |
-| `NextAttackSpecialCrit` | 1 |  |
-| `ApplyToRandomClosestAlly` | 1 |  |
-| `Conditional_BossOrBig` | 1 |  |
-| `TilesMovedToNeighborHeal` | 1 | `level` |
-| `TilesMovedToCritChance` | 1 |  |
-| `ReduceManaCostExcludeBrainstorm` | 1 |  |
-| `InterchangeMoveActPoints` | 1 |  |
 | `range_min` | 1 |  |
-| `ChangeCatClass` | 1 | `Butcher`, `Colorless`, `Druid`, `Fighter`, `Hunter` |
-| `PermanentUpgradeRandomActive` | 1 |  |
-| `DamageTrinket` | 1 |  |
-| `DuplicateRandomEquippedItem` | 1 |  |
-| `ClearStarving` | 1 |  |
-| `TransformEquipment` | 1 |  |
-| `MakeWeaponUnbreakable` | 1 |  |
-| `RandomTaggedMutation` | 1 | `bird`, `melted` |
-| `PermanentUpgradeRandomActiveOrPassive` | 1 |  |
-| `TickDownStatus` | 1 | `ShortCircuit` |
 | `fail_ability` | 1 | `CHuskDropFail`, `LennyStruggleFail`, `XXX` |
-| `ChanceToBreakFree` | 1 |  |
-| `disallow_modifications` | 1 | `true` |
-| `SchizoIllusionAIModifier` | 1 |  |
-| `EliteUpgradeNextMinion` | 1 |  |
-| `ChampionUpgradeNextMinion` | 1 |  |
-| `ThornsDamageImmuneUntilSettled` | 1 |  |
-| `RandomKnockbackDirection` | 1 |  |
-| `AlphaStatusOnTurnBegin` | 1 |  |
-| `TileDamageImmuneUntilSettled` | 1 |  |
-| `AbilityDisableIfLivingCrow` | 1 |  |
-| `TransformBasicAttack` | 1 | `AntlerSwipe`, `AntlerSwipe2`, `Chitter`, `HornCharge`, `MockSong` |
-| `TempPreEmptiveCounterAttack` | 1 |  |
-| `LaunchOffScreen` | 1 | `10+bonus_melee_ability_damage` |
-| `hang_time` | 1 |  |
-| `apex_distance` | 1 |  |
-| `apex_time` | 1 |  |
-| `ReloadOnKill` | 1 |  |
-| `AlternateIdleAnimation` | 1 | `berserkIdle` |
 | `damage_cant_be_zero` | 1 | `true` |
-| `Conditional_SourceHasStatus` | 1 |  |
-| `PassiveWhileNotTakingTurn` | 1 |  |
-| `XIsIncreaseEachTurn` | 1 |  |
-| `BonusAbility_DelayedApplication` | 1 | `Slap` |
 | `manacost_cant_be_zero` | 1 | `true` |
-| `FreeFirstCastEachMatch` | 1 |  |
-| `Bloodzerked` | 1 |  |
-| `TransformBasicMove` | 1 | `BasicDashAttackMove_NoKnockback` |
-| `Trapper_Status` | 1 |  |
-| `XIsTimesDamageTaken` | 1 |  |
-| `FastKnockback` | 1 |  |
-| `CancelPrimedAbilities` | 1 |  |
-| `AbilityEnabledIfNotHasStatus` | 1 | `BackflipWhenTargeted` |
-| `AbilityEnabledAtHealthThreshold` | 1 |  |
-| `FinalBossQueueBeam` | 1 |  |
 | `trigger_battle_start` | 1 | `true` |
-| `SignalFinalBossShieldBroke` | 1 |  |
-| `use_directional_animations` | 1 | `true` |
-| `precast_delay` | 1 |  |
-| `ExistUntilIdleUpkeep` | 1 |  |
-| `SetCrazyEyeBackgroundWeights` | 1 |  |
-| `ClearFinalBossBattlefield` | 1 |  |
 | `restructions` | 1 | `aoe_must_exist` |
 | `requires_hp_threshold` | 1 |  |
-| `ForceImmediateMoveAndAttack` | 1 |  |
-| `ForceImmediateMove` | 1 |  |
 | `even_if_cant_reach` | 1 | `true` |
 | `damage_collided_only` | 1 | `true` |
-| `MaxHPUp` | 1 |  |
-| `Conditional_Buddy` | 1 |  |
-| `TowerDefenseStatus2` | 1 |  |
-| `ShootHereCommand` | 1 |  |
-| `ApplyStatusesNextTurnBegin` | 1 |  |
-| `accuracy` | 1 |  |
-| `SpawnCustomTrap` | 1 | `CharmTrap`, `EggSackTrap`, `SpikeTrap` |
-| `NextTurnDoubleRangedDamage` | 1 |  |
-| `SpawnBearTrapIfHitKills` | 1 |  |
-| `TowerDefenseStatus` | 1 |  |
-| `ShootHereReceiver` | 1 |  |
-| `TrailBlazer` | 1 | `mov` |
-| `TeamBonusAbility` | 1 | `ShootHere` |
-| `ForceMoveNonAlliesInRangeTowardsTile` | 1 |  |
-| `ApplyToOthersWithSharedTagAndFaction` | 1 |  |
-| `Conditional_DestructibleCorpse` | 1 |  |
 | `BearTrapTrail` | 1 |  |
-| `ApplyToTile` | 1 |  |
-| `SpawnWebTrap` | 1 |  |
-| `ReloadOnUseAbilityWithManaCost` | 1 |  |
-| `NukeQuestFinalBossModifications` | 1 |  |
-| `ReloadOnAllyCatDies` | 1 |  |
 | `permanent` | 1 | `true` |
-| `RefreshOncePerFightAbilities` | 1 |  |
-| `ConjureRandomAbilityFromCat` | 1 |  |
-| `ExplodeCharacter_Party` | 1 |  |
-| `MadnessChanceOnTurnBegin` | 1 |  |
 | `threshold_expr` | 1 | `item_aux` |
-| `VisualCountDownThenApplyStatus` | 1 |  |
-| `NextBattleStatusStacks` | 1 |  |
-| `KnockOutClone` | 1 | `PlayerCat_MiniMiniMe` |
-| `TargetedMetronome` | 1 |  |
-| `ReloadOnElementalDamageReceived` | 1 | `Holy` |
-| `PoolMetronome` | 1 |  |
-| `uncatchable` | 1 | `true` |
-| `HealTo` | 1 |  |
-| `IncreaseItemAuxOnKill` | 1 |  |
 | `range_symmetry` | 1 | `eight_way` |
-| `TagMetronome` | 1 | `musical` |
-| `ConjureSingleUseBonusAbility` | 1 | `random` |
-| `use_rotation_once` | 1 | `true` |
-| `ReloadOnAllyDies` | 1 |  |
-| `Conditional_SourceAbilityHasTag` | 1 |  |
-| `ExplodeCharacter_PartyBoss` | 1 |  |
-| `face_targets` | 1 | `true` |
 | `can_self_refresh` | 1 | `false` |
-| `hit_animation_alt` | 1 | `catch` |
-| `XIsTargetHealth` | 1 |  |
 | `stackable` | 1 | `true` |
 | `ignore_self` | 1 | `true` |
-| `LateStatusApplication` | 1 |  |
-| `AbilityEnabledIfSpecificItemEquipped` | 1 | `Neverstone` |
-| `ReloadOnGainDivineShield` | 1 |  |
-| `DamageWeapon` | 1 |  |
-| `DestroyNeckArmor` | 1 |  |
-| `CatPartsSizeScaleStatus` | 1 |  |
-| `EventBounty` | 1 |  |
-| `ScrambleLastUsedSpell` | 1 |  |
 | `cloned_ability` | 1 | `attack` |
-| `ReloadOnKillTagged` | 1 | `rock` |
-| `RepairOnKill` | 1 |  |
-| `WeaponAuxMultiplier` | 1 |  |
-| `RerollEnemy` | 1 |  |
-| `ForceTransferWeapon` | 1 |  |
 | `can_be_refreshed` | 1 | `false` |
 | `hint_can_target_static` | 1 | `true` |
 | `aoe_display_exclude_restrictions` | 1 | `true` |
 | `data` | 1 |  |
-| `RNGCannonRandomDamage` | 1 |  |
-| `SmartMetronome` | 1 |  |
 | `range_excludes_self` | 1 | `false` |
-| `CollideWithThrowTarget` | 1 |  |
-| `max_throw_height` | 1 |  |
-| `TossTargetIsBuddy` | 1 |  |
-| `Conditional_NotBig` | 1 |  |
-| `throw_speed` | 1 |  |
 | `spin_steps` | 1 |  |
-| `Shatter` | 1 |  |
 | `full_size` | 1 | `true` |
-| `FireArmor2` | 1 |  |
 | `requires_attack_damage_threshold` | 1 |  |
-| `IceArmor` | 1 |  |
-| `Enlarge` | 1 |  |
-| `OverHealToShield` | 1 |  |
-| `XIsRampAndReset` | 1 |  |
-| `TempManaCostReduction` | 1 |  |
-| `TurnRight` | 1 |  |
-| `XIsSpellStormRampAndReset` | 1 |  |
 | `require_default_size` | 1 | `true` |
 | `reset_percent` | 1 |  |
 | `knockback_modifier` | 1 | `rotate_cw` |
-| `FireArmor` | 1 |  |
-| `TempBasicAttackBonusAOE` | 1 |  |
-| `AlphaDodgeChance` | 1 |  |
-| `Meaty` | 1 |  |
-| `StatBounty` | 1 |  |
-| `DamageBasedOnMissingHealth` | 1 |  |
-| `XIsOtherHealsThisTurn` | 1 |  |
-| `Conditional_CanBeHealed` | 1 |  |
-| `RebukeDamage` | 1 |  |
-| `UndoDamage` | 1 |  |
 | `range_bonuses` | 1 | `include_alpha` |
-| `ChargeFists` | 1 |  |
-| `FistOfFateUniqueEnemyTracker` | 1 |  |
-| `final_hit_bonus_damage` | 1 | `5+bonus_melee_ability_damage` |
-| `FreeFirstCastAndAfterSpendMana` | 1 |  |
-| `StanceSwitchToRanged` | 1 |  |
-| `DelayedFury` | 1 |  |
-| `ChargeSpiritBombAura` | 1 | `DonateEnergy`, `DonateEnergy2` |
 | `randomize_knockback_direction_except_for_finisher` | 1 | `true` |
 | `DelayedWindTrail` | 1 |  |
-| `StanceSwitchToMelee` | 1 |  |
-| `HeavyHits` | 1 |  |
-| `EmptyMind` | 1 |  |
-| `AddSpiritBombCharges` | 1 |  |
-| `ReloadOnAnyDamage` | 1 |  |
-| `AddLeechesStatus` | 1 |  |
-| `ExplodeCharacter_DeathBloom` | 1 |  |
-| `TradeLife` | 1 |  |
-| `HealPercentMaxHP` | 1 |  |
-| `TempInjuryImmunity` | 1 |  |
-| `DeadAltAbility` | 1 | `CarrionShot_Afterlife`, `CarrionShot_Afterlife2`, `CoffinFlop_Afterlife`, `CoffinFlop_Afterlife2`, `DonateBlood_Afterlife` |
-| `ExplodeCharacter_DeathBloom2` | 1 |  |
-| `XIsCountDeaths` | 1 |  |
 | `include_passives` | 1 | `true` |
-| `DrainAllyCatsForFleshGolem` | 1 |  |
 | `appearance` | 1 | `GolemCat` |
-| `ForceMoveAndAttack` | 1 |  |
-| `CopySpells` | 1 |  |
 | `PreventDeathTransforms` | 1 |  |
-| `MimicMetronome` | 1 |  |
-| `TeleportBackAtTurnEnd` | 1 | `FlashBack` |
-| `TurnAround` | 1 |  |
-| `TempNoManaRegen` | 1 |  |
-| `ReloadOnSpendMana` | 1 |  |
-| `CharmedFacingForceAttack` | 1 |  |
-| `ScrambleEverything` | 1 |  |
-| `IncreaseCumulativeBlastDamage` | 1 |  |
-| `DeleteTraps` | 1 |  |
-| `ChaosBossFlipMidTeleport` | 1 |  |
-| `delay_from_reverse_map_edge` | 1 | `true` |
-| `bypass_combatspeed` | 1 | `true` |
-| `ChaosBossFormChange` | 1 |  |
-| `IncAuxCounterClamped` | 1 |  |
-| `SpecialBossMultipartInstakill` | 1 | `moonboss` |
-| `Conditional_LivingPlayerCat` | 1 |  |
 | `eyebrow2` | 1 |  |
-| `do_not_clear_placeholder` | 1 | `true` |
-| `AbilityEnabledIfNoAggroTarget` | 1 |  |
-| `CaveWomanBirthControl` | 1 |  |
-| `reverse_orientation` | 1 | `true` |
-| `ReturnDinoLegs` | 1 |  |
-| `UseMoveAbilityWithAI` | 1 |  |
-| `DustOnHit` | 1 |  |
-| `drop_on_self_death` | 1 | `true` |
-| `do_animation_offscreen` | 1 | `true` |
-| `TossTargetIsAggroTarget` | 1 |  |
-| `IncAuxCounterCycle` | 1 |  |
-| `ReformMoonHead` | 1 |  |
 | `remain_off_map` | 1 | `true` |
-| `BombRatTurtle` | 1 |  |
-| `CrackMoonHead` | 1 |  |
-| `VaporizeDice` | 1 |  |
 | `change` | 1 |  |
-| `CapDamage` | 1 |  |
-| `DeathwormUnderground` | 1 | `DeathWormEat` |
-| `SpellShield` | 1 |  |
 | `auto_cast_on_spawn` | 1 | `Dash_Enemy` |
 | `ally_priority` | 1 |  |
 | `lingering` | 1 | `true` |
-| `QueueUseAbility` | 1 | `Spider_GoInsane` |
-| `XIsConsumedCharacterMaxHP` | 1 |  |
-| `AlliesTakeExtraTurn` | 1 |  |
-| `SpawnNeutralWebTrapOnMiss` | 1 |  |
-| `jump_speed_multiplier` | 1 |  |
-| `drop_body_ability` | 1 | `MoonHandDrop` |
-| `Invulnerable` | 1 |  |
-| `DybbukPossessed` | 1 |  |
-| `AbilityEnabledIfHasStatus` | 1 | `DemonicGlyph_Bite`, `DemonicGlyph_Summon` |
-| `ReplaceSpell` | 1 |  |
-| `ManaStealToHealth` | 1 |  |
-| `Conditional_Backstab` | 1 |  |
-| `ForceCollectsPickups` | 1 |  |
-| `AbilityEnabledIfBasicAttackUsedThisTurn` | 1 |  |
-| `CollideWithConsumed` | 1 | `1+bonus_melee_damage`, `4+bonus_melee_damage`, `5+bonus_melee_damage` |
 | `circular_variance` | 1 |  |
 | `uncounterable` | 1 | `true` |
-| `BypassRockKnockback` | 1 |  |
-| `TransformNow` | 1 | `Hitler` |
-| `DinoLegAnimation` | 1 | `poop` |
-| `StealEquipment` | 1 | `any` |
-| `AbilityEnabledIfMovementTrapped` | 1 |  |
 | `style` | 1 |  |
-| `WaggleClone` | 1 |  |
 | `enemy_priority` | 1 |  |
-| `MotherTumorDebugForcePass` | 1 |  |
 | `prioritize_change_direction` | 1 | `true` |
 | `bonk_damage` | 1 |  |
-| `SetAnimationAlts` | 1 |  |
-| `spawn_offset` | 1 |  |
-| `ChangeFaction` | 1 | `sabertooths` |
-| `kill_on_consume` | 1 | `true` |
-| `SpeculativeMoveSelfCorpseOffMap` | 1 |  |
-| `BonusDamageBasedOnDistance` | 1 |  |
-| `DelayCastAbility` | 1 | `HitlerNuke` |
 | `relative` | 1 | `false` |
-| `ManglerShuffle` | 1 | `false` |
-| `MoonHeadFinisherEnabler` | 1 |  |
-| `Muted` | 1 |  |
-| `TriggerWerewolfTransform` | 1 |  |
-| `detatched_animation_cutoff` | 1 | `true` |
-| `AbilityEnabledOncePerRound` | 1 |  |
 | `bonus_pathing_leniency` | 1 |  |
-| `DeferVaporize` | 1 |  |
-| `RandomBonusDamage` | 1 |  |
-| `ScatterHeldCoin` | 1 |  |
-| `MergeDamageInstance` | 1 |  |
-| `DieViaAbilityInternally` | 1 |  |
-| `primed_alt_animation` | 1 | `shootPrimed` |
-| `InstantMaxHealthUp` | 1 |  |
 | `cWaggle` | 1 |  |
-| `affected_animation` | 1 | `statDown` |
-| `ShowFakeDamage` | 1 |  |
-| `Conditional_AbilityTargetIsSelf` | 1 |  |
-| `ForceDisplace` | 1 |  |
-| `delay_from_map_center` | 1 | `true` |
-| `TriggerMotherConsume` | 1 |  |
-| `lob_yoff` | 1 |  |
-| `dash_bonk_animation` | 1 | `bonk` |
-| `Counterspell` | 1 |  |
-| `ApplyShieldToApplierBasedOnMaxHealth` | 1 |  |
-| `AbilityEnableIfConsumedCharacterHasTag` | 1 | `sp_pill_fire`, `sp_pill_normal`, `sp_pill_tar` |
 | `same_orientation` | 1 | `true` |
 | `ontrigger_intentional` | 1 | `Lenny_HereKitty` |
 | `clone_referenced_catdata` | 1 | `true` |
-| `Bound` | 1 |  |
-| `use_hit_alts` | 1 | `false` |
-| `JohnnyCriesForWashers` | 1 |  |
-| `ShadowCrit` | 1 |  |
 | `cWaggle2x2` | 1 |  |
-| `pseudoprojectile` | 1 | `RocketFromAbove` |
 | `allow_diagonal_passthrough` | 1 | `true` |
-| `Conditional_Speculative` | 1 |  |
-| `Conditional_LastHit` | 1 |  |
-| `TossTargetIsNotInWater` | 1 |  |
 | `punch_self_ability` | 1 | `Dybbuk_StopHittingYourself` |
-| `SetKnockback` | 1 |  |
 | `slide` | 1 |  |
 | `JumpAttackLeaveBehind` | 1 | `BungaThrone` |
 | `aoe_rotate_around_character_center` | 1 | `true` |
 | `exclude_prefix` | 1 | `Twister` |
-| `ShortCircuit` | 1 |  |
-| `SpitConsumed` | 1 |  |
-| `AIFavorLowHealth` | 1 |  |
-| `DissolveRandomArmorPiece` | 1 |  |
-| `ManglerAttack` | 1 |  |
-| `Conditional_IsTrample` | 1 |  |
-| `TriggerMotherGrow` | 1 |  |
 | `stack_scale` | 1 |  |
-| `Conditional_DebuffRoll` | 1 |  |
-| `first_castpoint_is_self_damage_only` | 1 | `true` |
-| `hint_dont_lowgravboost` | 1 | `true` |
-| `dying` | 1 | `shot` |
 | `cWaggle3x3` | 1 |  |
-| `StealDemonicGlyph` | 1 |  |
-| `BonusDamageBasedOnMana` | 1 |  |
-| `LaunchOffScreenInstakill` | 1 |  |
 | `GetAggroTarget` | 1 |  |
-| `preturn_animation` | 1 | `alertstart` |
 | `corpse_priority` | 1 |  |
-| `Conditional_FinishedSpawning` | 1 |  |
 | `banned_abilities` | 1 |  |
 | `force_no_hit_animation` | 1 | `true` |
-| `RemoveTurnsThisRound` | 1 |  |
-| `BodyGuard` | 1 |  |
-| `TempBonusKnockbackDamage` | 1 |  |
-| `MassAttackThis` | 1 |  |
 | `initial_charge` | 1 |  |
 | `prioritize_throw_target_with_passive` | 1 | `NubbyTossPriority` |
-| `Taunting` | 1 |  |
-| `ObjectOnHitFullyEmpty` | 1 | `RandomArmorPickup` |
-| `TempBonusKnockback` | 1 |  |
-| `SoundEventOnHit` | 1 | `Batterup_Connect` |
-| `ExplodeCharacter_RockCrusher_PetrifyBreak` | 1 |  |
 | `expires_on_move` | 1 | `true` |
-| `ExplodeCharacter_RockCrusher` | 1 |  |
 | `expires_on_appliers_turn` | 1 | `true` |
-| `AddElementsToSpells` | 1 | `Earth` |
-| `DisplaceToOriginalPosition` | 1 |  |
-| `ReloadOnTotalDamageReceived` | 1 |  |
-| `SwapWeapon` | 1 |  |
 | `crossfade_speed` | 1 |  |
-| `T3HitlerTriggerInitialSpawns` | 1 |  |
-| `Adrenaline` | 1 |  |
-| `othercat_placeholder_available` | 1 | `true` |
-| `T2CopyCat` | 1 |  |
-| `TurnControlDelay` | 1 |  |
-| `TempBackstabBleed` | 1 |  |
-| `XIsCountStatusStacks` | 1 | `DodgeChance_Status` |
-| `TempBackstab` | 1 |  |
-| `ReloadOnBackstab` | 1 |  |
-| `ReloadOnGainCoins` | 1 |  |
 | `adjust_target` | 1 | `stalk` |
-| `TempBackstabPoison` | 1 |  |
-| `CoinTossBounce` | 1 | `X` |
-| `DoubleCast` | 1 |  |
-| `XIsFormulaLockedUntilComplete` | 1 | `dex` |
-| `SourceSwapsBackEndOfTurn` | 1 | `ThiefSwapBack` |
-| `TempPenetrate` | 1 |  |
-| `TakeExtraTurnEndOfRound` | 1 |  |
-| `FactionDisguiseSource` | 1 |  |
-| `VaporizeCorpseFlipAdvantage` | 1 |  |
-| `StealthCritChance` | 1 |  |
-| `TempBackstabPiercing` | 1 |  |
-| `lob_speed` | 1 |  |
 | `alt_art` | 1 | `TangledMeat` |
-| `RandomKnockback` | 1 |  |
-| `CurrentWeaponAddElectricElement` | 1 |  |
-| `Conditional_ActiveWeather_Any` | 1 |  |
 | `tickdown_this_turn` | 1 | `true` |
 | `enabled_formula` | 1 | `1-X`, `X` |
 | `custom_aoe_mirror` | 1 |  |
-| `RefreshNonManaItemAbilities` | 1 |  |
-| `DamageDistanceAOEFalloff` | 1 |  |
-| `CloneWeaponTemp` | 1 |  |
-| `AbsorbManaFromOtherSpells` | 1 |  |
 | `requires_weapon` | 1 | `true` |
-| `SmallHitExplosion` | 1 |  |
-| `use_origin_offsets` | 1 | `false` |
 | `can_pay_over_multiple_turns` | 1 | `true` |
-| `RepairArmorCondition` | 1 |  |
 | `mirror_custom_aoe` | 1 | `true` |
-| `RepairAllCondition` | 1 |  |
-| `Math` | 1 |  |
-| `ResetArmorShield` | 1 |  |
 | `custom_aoe_util_mirror` | 1 |  |
-| `Switcheroo` | 1 |  |
-| `DecoySwapper` | 1 |  |
 | `weather` | 1 |  |
-| `XIsRecycleCostReduction` | 1 |  |
 | `beat_house_boss` | 1 | `any`, `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina` |
 | `unlock_boss` | 1 | `bumblefoot`, `gambit`, `infestedduo`, `jestercat`, `queenhippo` |
 | `trigger_npc_sequence` | 1 | `beanies_begin_accepting_cats`, `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin` |
@@ -7801,9 +6550,6 @@ Use this to spot any completely undocumented keys.
 | `Pigeon` | 1 |  |
 | `LargeBirdPool` | 1 |  |
 | `SmallBirdPool` | 1 |  |
-| `override_portrait` | 1 | `Cherub` |
-| `RunInXTurns` | 1 |  |
-| `TrackAmountKilledByPlayer` | 1 | `BonusBirdsKilled` |
 | `HummingBird` | 1 |  |
 | `form_unwashed` | 1 | `Unwashed` |
 | `SmallHoldingCat` | 1 |  |
@@ -7815,56 +6561,36 @@ Use this to spot any completely undocumented keys.
 | `Drunker` | 1 |  |
 | `NonCat` | 1 |  |
 | `stable_legs` | 1 |  |
-| `art_flip` | 1 |  |
 | `Lifted` | 1 |  |
 | `ignore_tagged_sources` | 1 | `megadino` |
 | `tumor_object` | 1 | `MotherTumor` |
-| `MoonHeadCrackedVisual` | 1 | `Cracked` |
 | `leg_leave` | 1 | `MD_LegLeave` |
 | `considered_forms` | 1 |  |
 | `even_on_0_damage_if_knockback` | 1 | `true` |
 | `do_not_move_on_top` | 1 | `true` |
 | `Standing2` | 1 |  |
-| `BungaCheers` | 1 |  |
-| `GeminiTwin` | 1 |  |
-| `FormChangeWhenBuddyDies` | 1 | `Rage` |
 | `Default_Ground` | 1 |  |
 | `mouseover_priority` | 1 |  |
 | `formchange` | 1 | `BigHolding`, `BigHoldingCat`, `SmallHolding`, `SmallHoldingCat` |
-| `ChanceToFormChangeOnAbilityDamage` | 1 |  |
 | `Standing` | 1 |  |
-| `MotherGrowController` | 1 |  |
 | `Unwashed` | 1 |  |
 | `Hint_CrackedVisuals3` | 1 |  |
 | `MoveOneForPuke` | 1 |  |
-| `MotherTumorPassive` | 1 |  |
 | `SuckMF` | 1 |  |
 | `enemy_dead` | 1 | `bigcheer` |
 | `Cat` | 1 |  |
-| `DemonicGlyphStealer` | 1 |  |
-| `Wall` | 1 |  |
 | `ally_damage` | 1 | `littleboo` |
 | `cleanse_on_apply` | 1 | `false` |
-| `TormentorHeal` | 1 |  |
-| `HitlerExecute` | 1 |  |
-| `FaceAwayLastDamage` | 1 |  |
 | `receive_ani` | 1 | `receive` |
 | `Possessing` | 1 |  |
 | `match_knockback_direction` | 1 | `true` |
-| `always_huge_mask` | 1 | `true` |
 | `face_towards_after` | 1 | `true` |
 | `LastHit` | 1 |  |
-| `UseAbilityWhenOutOfStatus` | 1 |  |
 | `Hint_CrackedVisuals` | 1 |  |
 | `auto_cast` | 1 | `Dash_Enemy` |
 | `ignore_tiles` | 1 | `true` |
-| `JohnnyNeedsWashing` | 1 |  |
 | `Sitting` | 1 |  |
 | `Nothing` | 1 |  |
-| `DybbukPossessionFallback` | 1 |  |
-| `status_display_count_max` | 1 |  |
-| `ForceDodgeEverything` | 1 |  |
-| `AlienBeastEyeStalks` | 1 |  |
 | `SmallHolding` | 1 |  |
 | `Nuke` | 1 |  |
 | `Default_Ceiling` | 1 |  |
@@ -7872,134 +6598,69 @@ Use this to spot any completely undocumented keys.
 | `forward_only` | 1 | `true` |
 | `Insane_Ceiling` | 1 |  |
 | `can_move_zero` | 1 | `true` |
-| `SurviveAt1HP` | 1 |  |
 | `Hint_CrackedVisuals2` | 1 |  |
 | `grow_ability` | 1 | `MotherTumorGrow` |
 | `Start_Ceiling` | 1 |  |
 | `reset_pattern_on_round_begin` | 1 | `true` |
 | `Escape` | 1 |  |
-| `no_horizontal_flip` | 1 | `true` |
 | `form_washed` | 1 | `Washed` |
 | `move_short` | 1 | `true` |
 | `head_drop` | 1 | `MD_HeadDrop` |
 | `ally_dead` | 1 | `bigboo` |
-| `Dybbuk1HPTracker` | 1 |  |
 | `Bully` | 1 |  |
 | `Insane_Ground` | 1 |  |
 | `BigHoldingCat` | 1 |  |
 | `Flop2` | 1 |  |
 | `leg_return` | 1 | `MD_LegReturn` |
-| `MegaDinoDropController` | 1 |  |
-| `WideBackstab` | 1 |  |
-| `TransformWhenBuddyDies` | 1 | `UltraOrnstein`, `UltraSmough` |
-| `AlienBeastDangerZones` | 1 |  |
 | `Washed` | 1 |  |
 | `Flop` | 1 |  |
 | `BigHolding` | 1 |  |
 | `enemy_damage` | 1 | `littlecheer` |
-| `UnlockOrientation` | 1 |  |
-| `UnlimitedDeathRattleRevive` | 1 |  |
-| `DemonicGlyphFrames` | 1 |  |
 | `self_move_exclude_self_abilities` | 1 | `true` |
-| `MotherTumorSpawnInCapture` | 1 |  |
 | `pop_chance` | 1 |  |
-| `DieWhenOnlyGolemsLeft` | 1 |  |
-| `SkipFirstRounds` | 1 |  |
-| `BlockAllDamage` | 1 |  |
-| `HealNeighborsEachTurn` | 1 |  |
-| `PackHunting` | 1 |  |
-| `AggroTargetIsLowestHealthEnemyTillItDies` | 1 |  |
 | `MoveTowards` | 1 |  |
-| `SelfStatusCarefulness` | 1 |  |
-| `AddMeleeKnockback` | 1 |  |
-| `MulticatHeads` | 1 |  |
 | `do_priority_alternating` | 1 |  |
-| `DisguisedTrapper` | 1 | `FearMelee` |
-| `MutateAfterXTurns` | 1 |  |
-| `StacyMutant_Mirror` | 1 |  |
 | `spell` | 1 | `MCHadouken` |
-| `StacyMutant_Brace` | 1 |  |
-| `AvoidDamagingCharmedEnemies` | 1 |  |
-| `EraseSpawnCoins` | 1 |  |
 | `MoveForPounce` | 1 |  |
 | `OneAlive` | 1 |  |
 | `TwoAlive` | 1 |  |
 | `NCGravecrawlFAR` | 1 |  |
 | `allow_decision_mid_turn` | 1 | `true` |
-| `AllSpellsCostActPoints` | 1 |  |
-| `AdventureTokenPassivePool` | 1 |  |
-| `LegacySpawnSavedCatIfExists` | 1 | `Legacy_Marshmallow_StolenCatID` |
-| `StacyMutant_Thorns` | 1 |  |
 | `legacy_savekey` | 1 | `Legacy_Marshmallow_StolenCatID` |
-| `CounterAttackAfterEnemyCastSpell` | 1 | `Telekinesis` |
-| `StacyMutant_Holy` | 1 |  |
-| `StacyMutant_DoubleHead` | 1 |  |
-| `StacyMutant_Speed` | 1 |  |
-| `AwardCoinsOnDeath` | 1 |  |
-| `RunWhenLastPlayerCatIsCharmed` | 1 |  |
-| `RunWhenKittensDead` | 1 |  |
-| `StacyMutant_Fire` | 1 |  |
-| `StacyMutant_Health` | 1 |  |
-| `StacyMutant_Lightning` | 1 |  |
 | `AllAlive` | 1 |  |
-| `StacyMutant_Counter` | 1 |  |
 | `DesireMech` | 1 |  |
-| `TutorialBossRiggedFight` | 1 |  |
 | `CloseConvert` | 1 |  |
-| `MonkCatReactionAbilities` | 1 |  |
-| `CaveFamilyEnrage` | 1 |  |
-| `ExtraTurnsPerTaggedUnit` | 1 | `sprout` |
-| `StacyMutant_Damage` | 1 |  |
-| `StacyMutant_Ice` | 1 |  |
 | `count_shield` | 1 | `true` |
-| `CrowAttackLink` | 1 |  |
 | `Turtle` | 1 |  |
 | `Bear` | 1 |  |
 | `Snake` | 1 |  |
 | `Toad` | 1 |  |
 | `Squirrel` | 1 |  |
 | `view_bugs_as_enemies` | 1 | `true` |
-| `InheritSpawnerStats` | 1 |  |
-| `TransformOnStatusThreshold` | 1 |  |
 | `Catepillar` | 1 |  |
-| `AggroTargetIsLowestMaxHealthCat` | 1 |  |
-| `ImmobilePassive` | 1 |  |
 | `without_orienting` | 1 | `true` |
 | `melee_ability_only` | 1 | `true` |
-| `JohnnyWasher` | 1 | `BBTransformZealot` |
 | `Fuck` | 1 |  |
 | `Grown` | 1 |  |
-| `AlwaysHitDifferentTargets` | 1 |  |
 | `blind_spot` | 1 | `true` |
-| `SwimmingFormChange` | 1 |  |
 | `must_target_killer` | 1 | `true` |
 | `randomize_pattern_start` | 1 | `true` |
 | `Off` | 1 |  |
 | `Out` | 1 |  |
 | `alt_dead_ani` | 1 | `off` |
 | `LeapClose` | 1 |  |
-| `randomize_starting_frame` | 1 | `false` |
-| `StatusOnEnemyConfused` | 1 |  |
 | `Open` | 1 |  |
-| `DamageFromBehindOnly` | 1 |  |
 | `target_furthest_valid` | 1 | `true` |
 | `TF_TargetAllies` | 1 |  |
 | `ZealotBomb` | 1 |  |
-| `ScalingAttackAnimation` | 1 |  |
-| `TVBotDisableMove` | 1 |  |
 | `WereMan` | 1 |  |
 | `TF_TargetEnemies` | 1 |  |
-| `ZeroKnockbackDamage` | 1 |  |
 | `Bishop` | 1 |  |
-| `WeremanTransformationReceiver` | 1 | `CaveManTransform`, `CaveWomanDropTransform` |
 | `statuses_on_enter_form` | 1 |  |
-| `AggroTargetIsLastEnemyThatDealtDamage` | 1 |  |
 | `Empty` | 1 |  |
 | `Explody` | 1 |  |
 | `move_then_do_priority` | 1 |  |
 | `CaveWoman` | 1 |  |
-| `AggroTargetIsGovernedByHitEffect` | 1 |  |
-| `SupportDieInsteadOfRun` | 1 |  |
 | `BoneWormShotSmall` | 1 |  |
 | `Unflip` | 1 |  |
 | `HasRock` | 1 |  |
@@ -8007,62 +6668,40 @@ Use this to spot any completely undocumented keys.
 | `Shit` | 1 |  |
 | `form_out` | 1 | `Out` |
 | `CaveManSpear` | 1 |  |
-| `PrioritizeWeakestEnemy` | 1 |  |
 | `threshold_min` | 1 | `X` |
 | `ForceTrample` | 1 |  |
 | `Dumb` | 1 |  |
-| `SupportFormChangeInsteadOfRun` | 1 | `Attacker` |
 | `CaveMan` | 1 |  |
 | `Damaged` | 1 |  |
-| `Tall` | 1 |  |
 | `Full` | 1 |  |
 | `Primed` | 1 |  |
 | `TVBotDumb` | 1 |  |
 | `hint_no_corpse` | 1 | `true` |
 | `Stop` | 1 |  |
-| `MagicDamageImmune` | 1 |  |
 | `Zealot` | 1 |  |
-| `EnrageOnDamage` | 1 |  |
-| `StatusEachTurnBeginIfHasStatus` | 1 |  |
 | `SpearRun` | 1 |  |
 | `alt_dying_ani` | 1 | `shutdown` |
 | `TVBotStop` | 1 |  |
 | `OpenCat` | 1 |  |
 | `MoveForGrass` | 1 |  |
-| `UseAbility_NonStack` | 1 | `BBTransformZealot`, `GenericRage` |
-| `WhitelistPickupType` | 1 | `food` |
 | `DashRandomly` | 1 |  |
 | `sync_brain_patterns` | 1 | `true` |
 | `Obey` | 1 |  |
 | `FoodMove` | 1 |  |
 | `form_in` | 1 | `Water` |
 | `wait_till_turn` | 1 | `true` |
-| `SpawnCreepOnHitKnockback` | 1 |  |
-| `default_attack_animation` | 1 | `attack2`, `bite1` |
 | `once_per_turn` | 1 | `true` |
-| `DodgeChanceWithBlindSpot` | 1 |  |
 | `aura_requires_tag` | 1 | `humanoid` |
-| `TallTumorManaBurn` | 1 | `TT_ManaBurn` |
-| `MoveAfterAnyAttemptedAttack` | 1 |  |
 | `Attacker` | 1 |  |
 | `TVBotDie` | 1 |  |
 | `TVBotObey` | 1 |  |
-| `AllStatsAura` | 1 |  |
 | `Cultist` | 1 |  |
 | `Guarding` | 1 |  |
 | `CaveBaby` | 1 |  |
 | `consume` | 1 | `true` |
-| `MoveAwayWhenEnemyAdjacent` | 1 |  |
 | `HumanDead` | 1 |  |
 | `Bomb` | 1 |  |
-| `MutateViaAbility` | 1 | `BBTransformMutant` |
-| `TVBotDisableAttack` | 1 |  |
-| `SproutsGrantMovement` | 1 |  |
-| `TVBotDisableSpells` | 1 |  |
-| `TVBotScreen` | 1 |  |
-| `DieWhenSpawnerDies` | 1 |  |
 | `verify_target` | 1 | `true` |
-| `show_infinity_damage_warning` | 1 | `true` |
 | `two_fronts` | 1 | `true` |
 | `Close` | 1 |  |
 | `target_killer` | 1 | `true` |
@@ -8072,210 +6711,129 @@ Use this to spot any completely undocumented keys.
 | `Unmounted` | 1 |  |
 | `eject_ability` | 1 | `MechSuitEject` |
 | `never_hit_ally_corpses` | 1 | `true` |
-| `TakeWeaponFromSpawner` | 1 |  |
 | `ai_if_spawned_as_enemy` | 1 |  |
 | `CharmedFloater` | 1 |  |
 | `enter_ability` | 1 | `EnterMech` |
-| `Mount` | 1 |  |
 | `CharmedDip` | 1 |  |
-| `RemoteLeech` | 1 |  |
 | `CharmedPile` | 1 |  |
-| `SharePickupsWithSpawner` | 1 |  |
-| `AllDamageImmune_IncludingSpeculative` | 1 |  |
-| `SpawnerCatDataReference` | 1 |  |
 | `include_coins` | 1 | `true` |
 | `Mounted` | 1 |  |
-| `RemoteFlatLeech` | 1 |  |
 | `queue` | 1 | `TheChild_TargetBeam` |
-| `FinalBossPupils` | 1 |  |
 | `Explosive` | 1 | `MegaGuppy_TransformExplosive` |
-| `AbilityOnRoundEnd` | 1 |  |
 | `teleport_tracking_halflife` | 1 |  |
 | `even_on_0_damage` | 1 | `true` |
-| `FinalBossHitCountdownBoris` | 1 |  |
 | `reset_center_because_no_target_halflife` | 1 |  |
-| `FullBlockEverythingTo0Damage` | 1 |  |
-| `InsertIntoBackgroundPlaceholder` | 1 |  |
-| `StatusWhenStatusCompletelyRemoved` | 1 |  |
 | `allow_offmap_corpse` | 1 | `true` |
 | `transform` | 1 | `TheChild_TransformBoris` |
 | `SwordAndShield` | 1 |  |
-| `AbilityOnBattleStart_UseAI` | 1 | `TheCreator_SpawnCloneTeam` |
-| `FinalBossHitCountdownExplosive` | 1 |  |
 | `even_if_blocked` | 1 | `true` |
-| `non_blocking_animations` | 1 |  |
 | `other_character` | 1 | `MegaGuppy` |
 | `other_form_change_abilities` | 1 |  |
 | `check_has_status` | 1 | `FinalBossHitCountdownBoris` |
-| `FinalBossBecomeTheChild` | 1 |  |
 | `tracking_acquisition_halflife` | 1 |  |
 | `look_at_offset` | 1 |  |
 | `release` | 1 | `TheChild_ReleaseBeams` |
-| `AdvancedTint` | 1 |  |
-| `FinalBossShield` | 1 | `DestroyerShieldBash`, `None` |
 | `SwordAndShield_Primed` | 1 |  |
 | `show_name` | 1 | `true` |
 | `reset_center_because_of_animation_halflife` | 1 |  |
 | `state_health` | 1 |  |
-| `FinalBossBeamQueue` | 1 |  |
 | `DualSword_Primed` | 1 |  |
-| `FinalBossSyncAnimations` | 1 |  |
 | `icon_ready` | 1 |  |
 | `virtual_head_position` | 1 |  |
 | `break_ability` | 1 | `DestroyerBreakShield` |
 | `disallow_items` | 1 | `Nuke`, `all` |
 | `champion` | 1 | `true` |
-| `RemoveGlobalModifiers` | 1 |  |
-| `FinalBossHitCountdownHoly` | 1 |  |
 | `elite` | 1 | `true` |
 | `Boris` | 1 | `MegaGuppy_TransformBoris` |
 | `DualSword` | 1 |  |
-| `FinalBossShieldHealth` | 1 |  |
 | `MouthFull` | 1 |  |
-| `GuillotinaDeathHead` | 1 |  |
-| `SyncFormsWithBuddy` | 1 |  |
 | `MoveToHead` | 1 |  |
 | `Holding` | 1 |  |
 | `BellyFull` | 1 |  |
 | `no_buddy` | 1 | `Rage` |
 | `also_use_if_buddy_is_dead` | 1 | `true` |
-| `DiesToPiercingAndSpikes` | 1 |  |
 | `DemonicGlyph_Bite` | 1 |  |
-| `BombBehavior` | 1 |  |
 | `always_face_forward` | 1 | `true` |
-| `SlotMachineRollPool` | 1 |  |
 | `DemonicGlyph_Movement` | 1 |  |
 | `Lit` | 1 |  |
 | `DemonicGlyph_Bounce` | 1 |  |
 | `SlotResult_Jackpot_Coins` | 1 |  |
-| `MultiSpawnOnDeath` | 1 |  |
-| `BasicAIDangerZone` | 1 |  |
-| `GasCanBehavior` | 1 |  |
-| `BloatEyePassive2` | 1 | `BloatEyeMovement2` |
 | `BlackHole` | 1 |  |
 | `inanimate_can_receive_specific_statuses` | 1 |  |
-| `ElectricArcs` | 1 |  |
 | `deferred` | 1 | `true` |
 | `speculative_inanimate` | 1 | `false` |
-| `Conditional_HasKnockback` | 1 |  |
 | `DemonicGlyph_Fire` | 1 |  |
 | `hot` | 1 |  |
-| `HPAltStates` | 1 |  |
 | `tile_desire_cost` | 1 |  |
-| `IceBlockBehavior` | 1 |  |
 | `SlotResult_Explode` | 1 |  |
-| `FormChangeOnElementInfluence` | 1 |  |
 | `dice_size` | 1 |  |
-| `SpreadWater` | 1 |  |
-| `MuteDemonicGlyphDisplay` | 1 |  |
 | `Conditional_IsPhysicalAttack` | 1 |  |
 | `DemonicGlyph_Summon` | 1 |  |
-| `FlingObjectsOnTop` | 1 |  |
 | `clipname` | 1 | `poopmain` |
 | `knockback_damage` | 1 |  |
-| `UpTireBehavior` | 1 |  |
 | `NeutronStar` | 1 |  |
 | `SlotResult_RandomPickup` | 1 |  |
-| `CapReceivedDamage` | 1 |  |
-| `BlackHolePassive` | 1 |  |
-| `BattlefieldUniqueRandomPassive` | 1 |  |
-| `TwisterFling` | 1 |  |
-| `AddStatusToReceivedDamage` | 1 |  |
-| `HarpoonTrapPassive` | 1 | `HarpoonTrapPull` |
 | `additional_statuses` | 1 |  |
 | `exit_animations` | 1 |  |
-| `HiddenDoomed` | 1 |  |
 | `SlotResult_Nothing` | 1 |  |
-| `BlackHoleSuck` | 1 |  |
-| `StatusOverlappingCharactersAndDie` | 1 |  |
 | `GuaranteedJackpot` | 1 |  |
 | `Grappling` | 1 |  |
-| `GasCloudBehavior2` | 1 |  |
-| `ChangeTileOnDeath` | 1 | `WaterTile` |
 | `Unlit` | 1 |  |
-| `DustCloudBehavior` | 1 |  |
-| `RemoveKnockback` | 1 |  |
-| `DiceBehavior` | 1 |  |
-| `GlobalManaDrainAura` | 1 |  |
-| `TireBehavior` | 1 |  |
 | `displace` | 1 | `true` |
 | `MoveForThrow` | 1 |  |
 | `RunFar` | 1 |  |
-| `KaijuKnockbackImmune` | 1 |  |
 | `must_start_facing_camera` | 1 | `false` |
 | `buddy_damage_only` | 1 | `true` |
-| `ChanceToDisableActionsIfNotCharmed` | 1 |  |
 | `Turtled` | 1 |  |
-| `KaijuWinCon` | 1 | `pyrophina`, `zaratana` |
 | `do_one` | 1 |  |
-| `DissuadeInstakills` | 1 |  |
 | `MoveForSpin` | 1 |  |
 | `MoveForBarrage` | 1 |  |
 | `damage_threshold` | 1 |  |
-| `DicerArt` | 1 |  |
 | `CerberubsJumpNormal` | 1 |  |
 | `TarFull` | 1 |  |
 | `NormalFull` | 1 |  |
 | `Alert` | 1 |  |
-| `SpewerAltGraphics` | 1 |  |
 | `Tar` | 1 |  |
-| `CerberubsAggroTargetBehavior` | 1 |  |
 | `Joystick` | 1 |  |
 | `round_start_bonusturn_pattern` | 1 |  |
 | `TwoEyes` | 1 |  |
 | `reclaim_if_lost` | 1 | `true` |
 | `OneEye` | 1 |  |
-| `GoopImmunity` | 1 |  |
 | `not_on_kill` | 1 | `true` |
 | `default_form` | 1 | `Normal` |
 | `HasDeadCat` | 1 |  |
 | `CerberubsJumpBlind` | 1 |  |
 | `post_absorb_move_weights` | 1 | `minimum_move` |
-| `DisplayBuddyCatOnSpawn` | 1 |  |
 | `FireFull` | 1 |  |
 | `NoStick` | 1 |  |
 | `NoEyes` | 1 |  |
 | `MoveForDash` | 1 |  |
-| `ElementWeakness` | 1 | `Fire` |
-| `ManglerMonsterPassive` | 1 | `ManglerMonsterDashAttack` |
 | `Headless` | 1 |  |
 | `alert_form` | 1 | `Alert` |
 | `NoDeathRattle` | 1 |  |
 | `dice_abilities` | 1 |  |
 | `move_then_do_all` | 1 |  |
-| `FlushmasterCelebration` | 1 | `celebrate` |
 | `HalfDead` | 1 |  |
 | `roll_ability` | 1 | `RollDice` |
-| `TileElementDamageImmunity` | 1 | `Ice` |
-| `OrthogonalAIDangerZone` | 1 |  |
-| `DodgeWhenTargeted` | 1 |  |
 | `ignore_mouseover` | 1 | `true` |
 | `static` | 1 | `true` |
 | `sound_event` | 1 | `EatAntidote` |
-| `CoinPickup` | 1 |  |
 | `Scrap` | 1 |  |
 | `pickup_type` | 1 |  |
 | `Coin4` | 1 |  |
-| `TransformOnElementInfluence` | 1 |  |
 | `RandomArmorPickup` | 1 |  |
 | `RandomBiggerFoodPickup` | 1 |  |
 | `Coin3` | 1 |  |
 | `Coin` | 1 |  |
-| `ManaPickup` | 1 |  |
-| `ModularPickup` | 1 |  |
 | `MedScrap` | 1 |  |
-| `HealthPickup` | 1 |  |
-| `TransformOnElementInfluencex` | 1 |  |
 | `RandomBiggerCatnipPickup` | 1 |  |
 | `BigFood` | 1 |  |
 | `Coin2` | 1 |  |
-| `ArmorPickup` | 1 |  |
 | `RandomFoodPickup` | 1 |  |
 | `BigScrap` | 1 |  |
 | `RandomCatnipPickup` | 1 |  |
 | `Coin10` | 1 |  |
 | `Blessing` | 1 |  |
-| `DivineShieldPickup` | 1 |  |
 | `BiggestFood` | 1 |  |
 | `anything_eats` | 1 | `true` |
 | `BigCatnip` | 1 |  |
@@ -8283,22 +6841,14 @@ Use this to spot any completely undocumented keys.
 | `force_frame` | 1 |  |
 | `frame_range` | 1 |  |
 | `RandomBiggerArmorPickup` | 1 |  |
-| `BaitAura` | 1 |  |
-| `StatusCollector` | 1 |  |
 | `stored_food_value` | 1 |  |
-| `BaseStatMultiply` | 1 |  |
-| `DisableSpells` | 1 |  |
 | `allow_flying_effect` | 1 | `true` |
-| `ExpireOnSpawnerTurnEnd` | 1 |  |
 | `uncapturable` | 1 | `false`, `true` |
 | `capture_as_cat` | 1 | `true` |
 | `catdata_ignore_skills` | 1 | `true` |
-| `MimicSpawnerAttacks` | 1 |  |
 | `ThrobBubs` | 1 |  |
 | `Flush` | 1 |  |
 | `ThrobHost` | 1 |  |
-| `LockOrientationFaceTile` | 1 |  |
-| `ChaosBossPieces` | 1 |  |
 | `passives_health_threshold` | 1 |  |
 | `JohnnyHost` | 1 |  |
 | `ThrobNettle` | 1 |  |
@@ -8307,8 +6857,6 @@ Use this to spot any completely undocumented keys.
 | `passive_pieces` | 1 |  |
 | `FlushNettle` | 1 |  |
 | `Throb` | 1 |  |
-| `ChaosHeadDropIn` | 1 |  |
-| `ChaosBossFormChangeGuide` | 1 |  |
 | `Johnny` | 1 |  |
 | `new_music` | 1 | `chaos_boss_part2` |
 | `OffScreen` | 1 |  |
@@ -8316,39 +6864,25 @@ Use this to spot any completely undocumented keys.
 | `JohnnyNettle` | 1 |  |
 | `active_pieces` | 1 |  |
 | `animation_prefix` | 1 | `RattleSnake` |
-| `WispDodge` | 1 |  |
-| `TerminatorChase` | 1 |  |
-| `SpeedUp_WithoutInitiative` | 1 |  |
-| `FullBlockEverything` | 1 |  |
 | `InitialPhase` | 1 |  |
 | `FightPhase` | 1 |  |
 | `SpawningPhase` | 1 |  |
 | `Pulp2` | 1 |  |
 | `groups` | 1 |  |
 | `Transformed` | 1 |  |
-| `UseAbilityWhenShieldDepleted` | 1 | `T3Pebbles_PrimeBoulderDrop` |
 | `spell_use_groups` | 1 |  |
-| `Terminator2Chase` | 1 | `move` |
 | `Pulp6` | 1 |  |
 | `do_best_multiple` | 1 |  |
-| `T3HitlerSpawningPhase` | 1 |  |
-| `PrioritizePlayerCats` | 1 |  |
 | `MoveSpaced` | 1 |  |
-| `StatusEachTurnEndIfEnabledAtStartOfTurn` | 1 |  |
 | `first_turn_is_main_turn` | 1 | `true` |
 | `hidden_tags` | 1 | `terminator_mini` |
 | `Pulp4` | 1 |  |
-| `Terminator2Run` | 1 |  |
 | `Pulp3` | 1 |  |
-| `TerminatorSkin` | 1 |  |
 | `Pulp5` | 1 |  |
 | `Pulp7` | 1 |  |
 | `allow_replacebrain` | 1 | `false` |
-| `StartDead` | 1 |  |
-| `EventBounterHunterPassive` | 1 |  |
 | `aggro_target_is_enemy` | 1 | `true` |
 | `MonkStances` | 1 |  |
-| `hud_palette` | 1 |  |
 | `innate_items` | 1 |  |
 | `innate_passives` | 1 |  |
 | `tutorial_levelup_passive_pool` | 1 |  |
@@ -8389,15 +6923,9 @@ Use this to spot any completely undocumented keys.
 | `elite_chance_mini` | 1 |  |
 | `wallet_size` | 1 |  |
 | `boss_elite_buffs` | 1 |  |
-| `AddRandomEliteBuff` | 1 |  |
-| `RemoveExtraDispersedTurn` | 1 |  |
-| `AbilityDamageMultiplier` | 1 |  |
 | `requires_corpse` | 1 | `true` |
-| `StatusOnEnemyCastSpell` | 1 |  |
-| `Zombie` | 1 |  |
 | `has_parasite` | 1 | `true` |
 | `pull` | 1 |  |
-| `ChangeTileUnderCharacterAtStart` | 1 | `GlassTile` |
 | `communicate` | 1 |  |
 | `remove_the_nail` | 1 |  |
 | `traverse` | 1 |  |
@@ -8417,10 +6945,8 @@ Use this to spot any completely undocumented keys.
 | `break_lock` | 1 |  |
 | `pick_lock` | 1 |  |
 | `comfort` | 1 |  |
-| `play_result_animation` | 1 | `resultVeryGood` |
 | `kiss_meat` | 1 |  |
 | `cat_has_item_slot_equipped` | 1 | `weapon` |
-| `PermanentConfusion` | 1 |  |
 | `eat_meat` | 1 |  |
 | `choose_cat_with_item_slot_equipped` | 1 | `weapon` |
 | `patch_up` | 1 |  |
@@ -8436,28 +6962,22 @@ Use this to spot any completely undocumented keys.
 | `jump_over` | 1 |  |
 | `side` | 1 | `enemies` |
 | `lick_alt` | 1 |  |
-| `get_and_equip_item` | 1 | `Antenna`, `Catnip`, `FlyLarva` |
 | `fallback_spawn` | 1 |  |
-| `ambush` | 1 | `events/chupacabra.lvl`, `putalevelhere.lvl` |
 | `chaos_ending` | 1 |  |
 | `donate` | 1 |  |
 | `receive` | 1 |  |
 | `timemachine` | 1 |  |
-| `scramble_passives` | 1 | `all` |
 | `desert_cutscene` | 1 |  |
 | `altar_sacrifice` | 1 |  |
-| `get_full_item_set_from_pool` | 1 | `common` |
 | `chapter_cutscene` | 1 |  |
 | `knife` | 1 |  |
 | `upgrade_yourself` | 1 |  |
 | `teleport` | 1 |  |
 | `hack` | 1 |  |
 | `put_in_coins` | 1 |  |
-| `scramble_basic_attack` | 1 | `all` |
 | `purify` | 1 |  |
 | `shake` | 1 |  |
 | `break_ice` | 1 |  |
-| `party_injury` | 1 | `random`, `str` |
 | `revive` | 1 |  |
 | `arm` | 1 |  |
 | `cut_wires` | 1 |  |
@@ -8466,7 +6986,6 @@ Use this to spot any completely undocumented keys.
 | `dig` | 1 |  |
 | `cross` | 1 |  |
 | `red_needle` | 1 |  |
-| `clear_adventure_token` | 1 | `AdventureToken_BlueNeedle`, `AdventureToken_HasTakenNeedle`, `AdventureToken_RedNeedle`, `AdventureToken_YellowNeedle` |
 | `yellow_needle` | 1 |  |
 | `push_buttons` | 1 |  |
 | `blue_needle` | 1 |  |
@@ -8491,7 +7010,6 @@ Use this to spot any completely undocumented keys.
 | `talk_to` | 1 |  |
 | `listen` | 1 |  |
 | `disarm` | 1 |  |
-| `hide_appearance_changes` | 1 |  |
 | `bash_past_alt` | 1 |  |
 | `bribe` | 1 |  |
 | `charm_past_alt` | 1 |  |
@@ -8532,44 +7050,28 @@ Use this to spot any completely undocumented keys.
 | `sacrifice_partial_favor` | 1 |  |
 | `repair_quest` | 1 |  |
 | `take_blood` | 1 |  |
-| `party_random_mutation` | 1 |  |
-| `lose_all_equipped_items` | 1 | `cat` |
-| `select_item_from_pool_for_cutscene_only` | 1 | `chapter`, `glitched_items` |
-| `lose_item_from_inventory` | 1 | `cat` |
 | `infinite` | 1 |  |
 | `place_gristle` | 1 |  |
-| `party_heal_injury` | 1 |  |
 | `sacrifice_full_favor` | 1 |  |
-| `unlock_item_quest` | 1 | `CryogenicTimeChamber_Full`, `JarOfChaos`, `JarOfRadiatedBlood`, `TinasHead` |
-| `trigger_butterfly_effect` | 1 |  |
 | `fill_jar` | 1 |  |
 | `attach_antenna` | 1 |  |
-| `party_heal_disorder` | 1 | `mental_disorders` |
-| `transform_item` | 1 |  |
 | `hint_chapter_exit` | 1 | `dimensionx`, `endoftime`, `future`, `home`, `iceage` |
 | `attach_amplifier` | 1 |  |
 | `sacrifice_normal` | 1 |  |
-| `clear_result_animation` | 1 |  |
 | `activate_p` | 1 |  |
 | `activate_z` | 1 |  |
 | `choose_cat_with_item` | 1 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `PutridLeech`, `ReceiverAntenna`, `ThrobbingGristle` |
 | `sacrifice_quest` | 1 |  |
 | `past` | 1 |  |
-| `clear_surviving_kaiju` | 1 | `pyrophina`, `zaratana` |
 | `mind` | 1 |  |
-| `copy_items_to_party` | 1 |  |
-| `clone_self_to_party` | 1 |  |
 | `wealth` | 1 |  |
 | `print` | 1 |  |
 | `pull_it_out` | 1 |  |
 | `soul` | 1 |  |
 | `wish_genes` | 1 |  |
 | `copy` | 1 |  |
-| `party_gain_disorder_from_pool` | 1 | `mental_disorders` |
 | `wish_levelups` | 1 |  |
 | `wish_items` | 1 |  |
-| `copy_party_items` | 1 |  |
-| `gain_clone_familiar` | 1 |  |
 | `subject_frame_inner` | 1 |  |
 | `power` | 1 |  |
 | `repell` | 1 |  |
@@ -8584,10 +7086,7 @@ Use this to spot any completely undocumented keys.
 | `use_toilet_str` | 1 |  |
 | `run_away` | 1 |  |
 | `sneak_by` | 1 |  |
-| `outcome` | 1 |  |
 | `weather_roll` | 1 |  |
-| `requires_flag` | 1 | `AlienOvergrowthUnlocked`, `GeomagneticStormUnlocked`, `MeteorShowerUnlocked`, `SolarFlareUnlocked`, `StrangeEggsUnlocked` |
-| `goto` | 1 | `end` |
 | `w1` | 1 |  |
 | `w6` | 1 |  |
 | `w4` | 1 |  |
@@ -8596,9 +7095,7 @@ Use this to spot any completely undocumented keys.
 | `choose_cat_with_highest_stat` | 1 | `int` |
 | `w5` | 1 |  |
 | `w3` | 1 |  |
-| `self_heal` | 1 |  |
 | `rub` | 1 |  |
-| `random_chance` | 1 |  |
 | `can_be_rare` | 1 | `false` |
 | `FoodStorage` | 1 |  |
 | `FightBonusRewards` | 1 |  |
@@ -8713,153 +7210,39 @@ Use this to spot any completely undocumented keys.
 | `general_common` | 1 | `auto` |
 | `general_uncommon` | 1 | `auto` |
 | `current_chapter_uncommon` | 1 | `auto` |
-| `TriggerBleedOnBleed` | 1 |  |
-| `AddStatusToFirstSpellEachTurn` | 1 |  |
 | `end_of_round` | 1 | `true` |
-| `SpawnCatCopyWhenDowned` | 1 |  |
-| `UpgradeTaggedSpawnsToChampions` | 1 | `bug`, `worm` |
-| `BonusHealthRegenPerDisorder` | 1 |  |
-| `GlobalFlowerTrapperAura` | 1 |  |
-| `AddConstitution` | 1 |  |
-| `RandomPermanentStatsDistinct` | 1 |  |
-| `RockyArmorSalvage` | 1 |  |
 | `shield_only` | 1 | `true` |
-| `GlobalFamiliarMoveBoost` | 1 |  |
-| `OverManaReducesManaCosts` | 1 |  |
 | `pieces_required` | 1 |  |
-| `StatusOnSetPieceBreak` | 1 |  |
-| `GlobalFamiliarDamageBoost` | 1 |  |
-| `CyborgTurns` | 1 |  |
 | `max_health` | 1 |  |
-| `CounterNextAttacks` | 1 |  |
 | `weightless` | 1 | `true` |
-| `RockyArmorPassive` | 1 |  |
-| `BoneArmorPassive` | 1 |  |
-| `BrittleCharismaUp` | 1 |  |
-| `BrittleLuckUp` | 1 |  |
-| `BrittleIntelligenceUp` | 1 |  |
-| `AddStatusToBackstabs` | 1 |  |
-| `AOEBonus` | 1 |  |
-| `ManaGainRange` | 1 |  |
-| `ForceUseAbilityOnTarget` | 1 |  |
-| `BreakOnElement` | 1 | `water` |
-| `BlockNegativeStatus` | 1 |  |
-| `AllyDodgeChanceAura` | 1 |  |
-| `ReclaimItemOnBreak` | 1 |  |
-| `BrittleSpeedUp` | 1 |  |
 | `except_tiny` | 1 | `true` |
-| `BrittleConstitutionUp` | 1 |  |
-| `StatusOnEnemyDeath` | 1 |  |
-| `AllStatsUpPerDisorder` | 1 |  |
 | `must_do_damage` | 1 | `true` |
-| `DropAsFamiliarOnArmorBreak` | 1 | `FaceGrubFamiliar`, `HeadGrubFamiliar`, `NeckGrubFamiliar` |
-| `BrittleStrengthUp` | 1 |  |
-| `Brittle` | 1 |  |
-| `BrittleDexterityUp` | 1 |  |
 | `melee_only` | 1 | `true` |
-| `CharmImmunity` | 1 |  |
-| `StackingFlowerTrail` | 1 |  |
-| `ReduceSpellCostsPerDisorder` | 1 |  |
 | `quest_reward_item` | 1 | `AirHorn_Fixed`, `AngryFace_Fixed`, `BubbleBoy_Fixed`, `ChaosDevice_Fixed`, `ExperimentalTreatment_Fixed` |
 | `cant_equip_to_colorless` | 1 | `true` |
-| `SetFaction` | 1 | `enemies` |
 | `lt` | 1 |  |
-| `GlobalMeleeRevengeDamage` | 1 |  |
-| `SpawnNearEnemies` | 1 |  |
 | `RealTimePressure` | 1 |  |
-| `CharismaIsMaxStat` | 1 |  |
-| `HideSomeHudStuff` | 1 |  |
-| `AIControlNextTurn` | 1 |  |
-| `AlwaysChosenForLevelUp` | 1 |  |
-| `CanLevelUpWhenDead` | 1 |  |
-| `AllUnitsExplodeOnDeath` | 1 |  |
-| `ReplaceBlankTilesOnBattleStart` | 1 | `GlassTile` |
 | `Set` | 1 | `Monk` |
-| `StatusAdjacentOnTheirTurnEnd` | 1 |  |
-| `AlluringDoodieEater` | 1 |  |
-| `NextPlayerCatTakesExtraTurn` | 1 |  |
-| `MultiplyReceivedHealing` | 1 |  |
-| `TunnelVision` | 1 |  |
-| `PassiveIfStrAuxEquals` | 1 |  |
-| `DoubleCastTaggedSpells` | 1 | `musical` |
-| `DropAsFamiliarOnTookDamage` | 1 | `PhantomMaskRock` |
-| `PhysicalAttacksMiss` | 1 |  |
-| `TempMeleeRangeUp` | 1 |  |
-| `ChanceToAmbush` | 1 |  |
-| `KnockbackIfCrit` | 1 |  |
-| `AlphaAllStatsUp` | 1 |  |
-| `ScaledStatusOnHolyShieldBlock` | 1 |  |
-| `PreventSpecificInjury` | 1 | `int` |
-| `ExcludeFromEvents` | 1 | `Tragedy` |
-| `StatusOnTakeHealthOrShieldDamage` | 1 |  |
-| `ImmediateUseAbility_Instant` | 1 | `head_CrownOfHorns` |
-| `ScaledStatusAlliesOnSpendMana` | 1 |  |
 | `override_chain_knockback` | 1 |  |
 | `backstab_only` | 1 | `true` |
-| `JesterLevelUpRerolls` | 1 |  |
 | `force_sticky` | 1 | `true` |
-| `StatusOnFullMana` | 1 |  |
 | `GlobalEnemyAutoRevive` | 1 |  |
 | `legacy_quest` | 1 | `true` |
 | `hint_prerequisite_flag` | 1 | `mapflag_BothObelisksUnlocked`, `mapflag_DimensionXUnlocked`, `mapflag_MeatWorldUnlocked`, `mapflag_MeatWorldUnlockedFull` |
 | `failable` | 1 | `true` |
-| `ScaldingOrbMoonBossOneShot` | 1 |  |
 | `break_on_pop_only` | 1 | `true` |
-| `AbilityOnRoundEndOnce` | 1 |  |
 | `even_of_stunned` | 1 | `true` |
-| `AlliesScrambleSpellAfterCast` | 1 |  |
 | `hint_destination` | 1 | `boneyard`, `caves`, `core`, `dimensionx`, `endoftime` |
-| `SpawnItemLinkedFamiliar` | 1 |  |
 | `degrade_after_adventure` | 1 | `false` |
 | `icon_hint` | 1 | `ability_syringe`, `passive_syringe` |
-| `Wet` | 1 |  |
-| `PassiveWhileShielded` | 1 |  |
 | `SerratedClaws` | 1 |  |
-| `StevenBolts` | 1 |  |
-| `DoubleReceivedPositiveStatus` | 1 |  |
-| `BlessingOfPeace` | 1 |  |
-| `StealthUntilBasicAttack` | 1 |  |
-| `StatusAfterXStacks` | 1 |  |
-| `FrankBolts` | 1 |  |
-| `DoubleReceivedNegativeStatus` | 1 |  |
-| `ChanceToForceEvent` | 1 |  |
-| `SpawnRandomPickupsOnTaggedUnitKilled` | 1 |  |
-| `DoubleCastSpellIfManaCostUnderThreshold` | 1 |  |
-| `ObjectDetector` | 1 |  |
-| `PreEmptiveCounterNextAttacks` | 1 |  |
-| `ConvertDamageToScaledStatus` | 1 |  |
-| `BlockDamageUnderThreshold` | 1 |  |
-| `BoostReceivedHealing` | 1 |  |
 | `CastAgainWithStatus` | 1 |  |
-| `CatPartsSizeScale` | 1 |  |
-| `AllSpellsCostCharge` | 1 |  |
-| `DisablePassiveSlot` | 1 |  |
 | `fragile` | 1 | `true` |
 | `sticky` | 1 | `true` |
-| `BalanceStats` | 1 |  |
 | `full_repair` | 1 | `true` |
-| `SpawnCatCloneOnCorpsePopped` | 1 |  |
-| `TransformItemOnElementInfluence` | 1 |  |
-| `RepairTrinket` | 1 |  |
-| `DropSoulJarOnDeath` | 1 | `SoulJar_Full` |
-| `RerollItemsOnBattleEnd` | 1 |  |
-| `Conditional_ManaThreshold` | 1 |  |
-| `StatusOnDodge` | 1 |  |
-| `StatDependentPassive` | 1 |  |
-| `StatusOnFallAsleep` | 1 |  |
 | `aux_is_catid` | 1 | `true` |
-| `MultiplyCoinsOnBattleStart` | 1 |  |
-| `BreakWhenNoShield` | 1 |  |
-| `CapBasicAttackDamage` | 1 |  |
-| `StripKnockback` | 1 |  |
-| `ReduceSpellCostsPerParasite` | 1 |  |
-| `PassiveIfWeaponIsUsable` | 1 |  |
-| `AddAdvantageToEvent` | 1 |  |
 | `ignore_if_str_aux_equals` | 1 | `ModelingClay_Default` |
-| `ModelingClayPassive` | 1 |  |
-| `ModifyAbility` | 1 |  |
 | `le` | 1 |  |
-| `TintItem` | 1 |  |
 | `str_aux_is_copy_item_icon` | 1 | `true` |
 | `str_aux_is_copy_item_active` | 1 | `true` |
 | `reset_aux_on_store` | 1 |  |
@@ -8868,8 +7251,6 @@ Use this to spot any completely undocumented keys.
 | `create_temp_ability` | 1 | `true` |
 | `str_aux_is_copy_ability` | 1 |  |
 | `str_aux` | 1 | `ModelingClay_Default` |
-| `BreakAtAux` | 1 |  |
-| `PassiveWhileHasDurability` | 1 |  |
 | `add` | 1 |  |
 | `equip_sound` | 1 | `SE_CatWeaponPoke_Chainsaw` |
 | `reset_str_aux_on_store` | 1 | `ModelingClay_Default` |
@@ -8963,14 +7344,7 @@ Use this to spot any completely undocumented keys.
 | `CavesUnlocked` | 1 |  |
 | `thebloat` | 1 | `auto` |
 | `spin_cats` | 1 | `true` |
-| `StatusEveryXSpellCastsEachTurn` | 1 |  |
-| `GainManaWhenAnythingDies` | 1 |  |
-| `BackstabFront` | 1 |  |
 | `override_move` | 1 | `BasicJump` |
-| `FlatHealWhenDealDamage` | 1 |  |
-| `ReplaceBasicAttack_Mutation` | 1 | `FetusSpit` |
-| `StatusIfDidntMove` | 1 |  |
-| `AddLootMultiplier` | 1 |  |
 | `gift_item` | 1 | `TinksBow`, `disorder_needle` |
 | `gift_item_from_pool` | 1 | `parasites` |
 | `favor` | 1 |  |
@@ -9473,323 +7847,66 @@ Use this to spot any completely undocumented keys.
 | `rotation_start` | 1 |  |
 | `end_on_collision` | 1 | `true` |
 | `ParticleLineCollisions` | 1 |  |
-| `UncappedHPBonusStr` | 1 |  |
 | `square` | 1 | `true` |
-| `RefreshMoveOnWeaponConnect` | 1 |  |
-| `LobbedHook` | 1 |  |
 | `SpawnScaledRotFly` | 1 |  |
-| `ScaledStatusOnOverHealed` | 1 |  |
-| `SpawnMeatOnMove` | 1 | `Food` |
 | `schadenfreude_scaled_stats` | 1 |  |
 | `desc_multiclass` | 1 | `PASSIVE_BARBED2_MULTICLASS_DESC`, `PASSIVE_BARBED_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK2_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK_MULTICLASS_DESC`, `PASSIVE_HARPOONER2_MULTICLASS_DESC` |
-| `CharmAllFlies` | 1 |  |
-| `DukeOfFlies` | 1 |  |
-| `StatusOnOverHealed` | 1 |  |
-| `Study` | 1 |  |
-| `AutoCritLowDamage` | 1 |  |
-| `PassiveAtFullHealth` | 1 |  |
-| `BoostDamageAura` | 1 |  |
 | `advantage_softcap` | 1 |  |
-| `FullHealthManaRegen` | 1 |  |
-| `StatusOnAnyDeath` | 1 |  |
-| `HealingAura` | 1 |  |
-| `AddChaScalingSpellDamage` | 1 |  |
-| `AbilityChargeRefundChance` | 1 |  |
-| `LateBloomer` | 1 |  |
-| `FlippedFacingForceAttack` | 1 |  |
-| `BoostRangeGlobalAura` | 1 |  |
-| `UpgradeLevelUpClassPassives` | 1 | `Colorless` |
-| `BoostDamageGlobalAura` | 1 |  |
-| `BoostRangeAura` | 1 |  |
-| `NextBattleStatus` | 1 |  |
-| `StatMinimum` | 1 |  |
-| `SmallEnemiesIgnoreYou` | 1 |  |
-| `HealAndOverhealToShield` | 1 |  |
-| `FullHealthAllStatsUp` | 1 |  |
-| `AllowPassTurn` | 1 |  |
-| `AddRangedCritChance` | 1 |  |
-| `DirtyClaws` | 1 |  |
-| `MetalDetector` | 1 |  |
 | `TakeExtraDamage` | 1 |  |
 | `marked` | 1 |  |
 | `count_self` | 1 | `true` |
-| `FullHealthCritChance` | 1 |  |
-| `RemoveOncePerFightRestriction` | 1 |  |
-| `BoostAllyStatsOnDeath` | 1 |  |
 | `addstacks` | 1 |  |
-| `StrengthInNumbersAura` | 1 |  |
-| `UpgradeLevelUpClassActives` | 1 | `Colorless` |
-| `AutocastEachTurn` | 1 | `DarkOneStrike`, `ViolentOutburst` |
 | `can_apply_to_anything` | 1 | `true` |
-| `StatsAtLowHealth` | 1 |  |
-| `StatusIfBattleAlreadyBegan` | 1 |  |
-| `StatusAdjacentOnTheirTurnBegin` | 1 |  |
 | `advantage_polarity` | 1 |  |
 | `cooldown` | 1 |  |
-| `FurnitureStats` | 1 |  |
-| `DejaVu` | 1 |  |
-| `TheHunger` | 1 |  |
-| `DamageNeighborsOnEndMove` | 1 |  |
-| `LimitSelfKnockbackDamage` | 1 |  |
-| `ScaledStatusOnBleedDamage` | 1 |  |
-| `TaggedPickupEffectReplacement` | 1 |  |
-| `ChangeTauntPriority` | 1 |  |
-| `TourettesMeows` | 1 |  |
 | `innate` | 1 |  |
-| `SchrodingerDisorder` | 1 |  |
-| `ConfusionEffectOnTaggedAbilities` | 1 | `consumable` |
-| `MoveRandomly` | 1 |  |
 | `auto_plus_signs_on_name` | 1 | `false` |
-| `DamageIfDidntUseSpecificAbility` | 1 |  |
 | `SizeScalePercent` | 1 | `sqrt(1.0+(.05*(X-1)))*100` |
-| `PermanentKitten` | 1 |  |
-| `MaxAccuracy` | 1 |  |
 | `Conditional_DoesDamage` | 1 |  |
-| `Triskaidekaphobia` | 1 |  |
-| `StatusOnTakeHealthDamage` | 1 |  |
-| `UseAbility_Madness` | 1 | `weapon` |
-| `Scleroderma` | 1 |  |
 | `learned` | 1 |  |
-| `Paranoia` | 1 | `ParanoiaBasicMelee` |
-| `CantDodge` | 1 |  |
-| `Dyslexia` | 1 |  |
-| `AddStatusToReceivedDamage_ExcludeStatuses` | 1 |  |
-| `Hypomania` | 1 |  |
-| `OverrideMaxMana` | 1 |  |
-| `ExhaustionRoundChange` | 1 |  |
-| `ExtraInjuryOnDeath` | 1 |  |
-| `CureDisease` | 1 |  |
-| `Autism` | 1 |  |
-| `OverridePalette` | 1 |  |
-| `RealTimePressure_OneUnit` | 1 |  |
-| `NonLethal` | 1 |  |
 | `lock_item_slot` | 1 |  |
-| `AddStatusesIfPersistentWeatherElement` | 1 |  |
-| `Diabetes` | 1 |  |
-| `ReceivedStatusReplacement` | 1 |  |
-| `SelfDamageWhenDealDamage` | 1 |  |
-| `PassiveLevelScaledStatus` | 1 |  |
-| `PassiveLevelUpAtCombatEnd` | 1 |  |
-| `InvertBrainFaction` | 1 |  |
-| `MaxStartingMana` | 1 |  |
-| `AddStatusesToReceivedElementalDamage` | 1 |  |
-| `UseRandomSpell_Madness` | 1 |  |
-| `AddLevelUpStatMultiplier` | 1 |  |
-| `BackstabWeakness` | 1 |  |
-| `WobblyCat` | 1 |  |
 | `grant_ability` | 1 | `Rest` |
-| `StrictLimitDamage` | 1 |  |
-| `HolyShieldTransferToTaggedMinions` | 1 | `any`, `crow` |
-| `SpecialFriends` | 1 |  |
-| `FlowerPowerAuraStrength` | 1 |  |
-| `BasicAttackStatusCarefulness` | 1 |  |
-| `AddPassivesToSummonAbilityMinions` | 1 |  |
-| `ManaCostReductionTagged` | 1 |  |
-| `LimitedTileTrail` | 1 | `FlowerTile` |
-| `FamiliarSecondaryDamageImmunity` | 1 |  |
-| `AllyHealthRegenAura` | 1 |  |
-| `BasicAttackStatusSwap` | 1 |  |
-| `Conditional_SourceHasTag` | 1 |  |
-| `GrassTileHealing` | 1 |  |
-| `FlowerPowerAuraBrace` | 1 |  |
-| `HolyShieldTransferToSpawner` | 1 |  |
-| `MegaMinions` | 1 |  |
 | `exclude_basicattack` | 1 | `true` |
-| `StatusOnUseAbilityWithTag` | 1 |  |
-| `FamiliarBonusAbility` | 1 | `FamiliarSelfDestruct`, `FamiliarSelfDestruct2` |
 | `TogglableRoundEndExtraTurn` | 1 |  |
-| `PercentHeal` | 1 |  |
-| `Vengeful` | 1 |  |
-| `KillsHeal` | 1 |  |
 | `count_overkill` | 1 | `true` |
-| `StatusAnyCatAllyWhoKills` | 1 |  |
-| `ExplodeOverkilledEnemies` | 1 |  |
-| `PassiveWhenTheAlpha` | 1 |  |
-| `CapDamageFromAllies` | 1 |  |
-| `StatusOnDealtDamageThreshold` | 1 |  |
-| `BraceForEachNeighboringEnemy` | 1 |  |
-| `StrengthForEachNeighboringEnemy` | 1 |  |
 | `ignore_during_movement` | 1 | `true` |
-| `AllyDamageReaction` | 1 | `attack` |
-| `FrontstabBasicAttackCritChance` | 1 |  |
-| `ShoulderCheck` | 1 |  |
 | `cap` | 1 |  |
-| `StatusPerInjury` | 1 |  |
-| `FrontstabCritChance` | 1 |  |
-| `StackingDodgeChanceOnTookDamage` | 1 |  |
-| `StatusOnTriggerTrap` | 1 |  |
-| `AlliesAvoidTraps` | 1 |  |
-| `SpawnBearTrapOnMiss` | 1 |  |
-| `AddAllyNeighborsToAttackRange` | 1 |  |
-| `StatusEachTurnEndPerEnemyKill` | 1 |  |
-| `ConsumablesMeleeRange` | 1 |  |
-| `ParasitesArentCursed` | 1 |  |
-| `TowerDefense` | 1 |  |
-| `Quiver` | 1 |  |
-| `BonusFoodEachBattle` | 1 |  |
-| `TileDamageMultiplier` | 1 |  |
-| `BonusHealthRegenBasedOnDex` | 1 |  |
 | `ally_multiplier` | 1 |  |
-| `AddAllyNeighborsToAbilityRange` | 1 |  |
 | `kills` | 1 |  |
-| `TrapEffectsMultiplier` | 1 |  |
-| `BonusRangeBasedOnDex` | 1 |  |
-| `AddStatusToFirstBasicAttack` | 1 |  |
-| `StatusOnBattleEndIfKillThresholdMet` | 1 |  |
 | `multiplier` | 1 |  |
-| `AddStatusToBasicAttackWithCooldown` | 1 |  |
-| `StatusOnTurnEndIfManaExact` | 1 |  |
 | `Electric` | 1 |  |
 | `Earth` | 1 |  |
 | `Wind` | 1 |  |
 | `AOEPuddle` | 1 | `X-1` |
-| `EnergyStorm` | 1 |  |
-| `StatusEveryXTurnBegins` | 1 |  |
 | `period` | 1 |  |
-| `StatusOnTurnEndIfManaOrHealthExact` | 1 |  |
-| `DamageNeighborTilesWhenCastSpell` | 1 |  |
-| `ConjureCastSpellsForAllies` | 1 |  |
 | `Gravity` | 1 |  |
-| `StatusAlliesOnSpendMana` | 1 |  |
-| `ElementalAttunement` | 1 |  |
 | `Grass` | 1 |  |
-| `StatusEnemiesOnDeath` | 1 |  |
-| `StatusAllyWhenAllySpendsMana` | 1 |  |
 | `Shadow` | 1 |  |
 | `triattack` | 1 |  |
-| `OneUseSpellDamageUp` | 1 |  |
 | `Ice` | 1 |  |
-| `EmptyMana` | 1 |  |
-| `LightningAspectCharge` | 1 |  |
-| `DeathChill` | 1 |  |
-| `BigSplashDamage` | 1 |  |
 | `HealAlliesEachTurn` | 1 |  |
-| `SmiteEnemiesWhoKill` | 1 |  |
-| `OverhealGainsBothShield` | 1 |  |
 | `scaled` | 1 | `true` |
-| `HealDamagesEnemies` | 1 |  |
 | `theshold` | 1 |  |
-| `HealAtStart` | 1 |  |
-| `PassiveUntilCastSpell` | 1 |  |
 | `damage_multiplier` | 1 |  |
-| `StatusOnHeal` | 1 |  |
 | `HolyDamageBlessing` | 1 |  |
-| `EnemiesGetPickupsKnockedOut` | 1 |  |
-| `AllyUncappedHPAura` | 1 |  |
 | `exclude_self` | 1 | `false` |
-| `HealsCanRevive` | 1 |  |
-| `StatusAlliesOnGainCoins` | 1 |  |
-| `IncreaseHealingSpellRange` | 1 |  |
-| `HolyDamageMultiplierBonus` | 1 |  |
-| `HealsAlsoRegenMana` | 1 |  |
-| `ShareHealthRegen` | 1 |  |
-| `PassiveUntilGetKill` | 1 |  |
-| `LowHealthAllyDodgeChanceAura` | 1 |  |
-| `Empath` | 1 |  |
-| `StatusOnStanceSwitch` | 1 |  |
-| `PassiveIfAllArmorEmpty` | 1 |  |
-| `PassiveWhilePreviewingMonkRangedStance` | 1 |  |
-| `AddStatusToMeleeDamage` | 1 |  |
-| `StatusOnGainShield` | 1 |  |
-| `PassiveIfEmptyNeck` | 1 |  |
 | `DelayedWind` | 1 |  |
-| `SpreadPainBonus` | 1 |  |
-| `StatusOnDealtDamage` | 1 |  |
 | `empty_armor_scaled_stats` | 1 |  |
-| `PassiveIfEmptyFace` | 1 |  |
-| `SpreadPainBonusCrit` | 1 |  |
-| `PassiveWhileInMonkRangedStance` | 1 |  |
-| `PassiveIfEmptyHead` | 1 |  |
-| `CobraReflex` | 1 | `BasicMonkMelee` |
-| `ScaledStatusOnLoseShield` | 1 |  |
-| `StatusOnTookDamageFromEnemyAbility` | 1 |  |
-| `StatusOnLoseShield` | 1 |  |
-| `DamageEnemiesOnHeal` | 1 |  |
 | `triggers_limit` | 1 |  |
-| `ImmortalLeeches` | 1 |  |
-| `NumbingLeeches` | 1 |  |
-| `ManaRegenMultiplierIfManaEmpty` | 1 |  |
-| `StatusAlliesScaledByCursedOnDeath` | 1 |  |
-| `ReplaceSpellsWhenDead` | 1 | `Spook` |
-| `StatusDamagers` | 1 |  |
-| `SpreadExtraDebuffs` | 1 |  |
-| `ReviveOnWin` | 1 |  |
-| `NoReflection` | 1 |  |
-| `LeechPercent` | 1 |  |
-| `ReplaceBasicAttackWhenDead` | 1 | `Haunt` |
-| `AddStatusToElementAbilities` | 1 |  |
 | `Drag` | 1 |  |
-| `AmplifyNegativeStatus` | 1 |  |
-| `StatusOnOverMana` | 1 |  |
-| `GravityWell` | 1 |  |
-| `StatusOnUseElementAbility` | 1 |  |
-| `ClearNegativeEffects` | 1 |  |
-| `DamageEnemiesOnKill` | 1 |  |
-| `LineOfSightTrueSightAura` | 1 |  |
-| `FullPower` | 1 |  |
-| `AllyMultiplyKnockbackDamage` | 1 |  |
-| `EachSpellFreeAtFullMana` | 1 |  |
-| `FreeSpellsAtFullMana` | 1 |  |
 | `RepressedMemoriesMetronome` | 1 |  |
-| `AllyChainKnockback` | 1 |  |
-| `ScaledStatusOnOverMana` | 1 |  |
-| `AmplifyPositiveStatus` | 1 |  |
-| `StatusThingsKnockedBack` | 1 |  |
-| `AllyMultiplyKnockbackDistance` | 1 |  |
-| `ChainKnockback` | 1 |  |
-| `PassiveAtInjuryThreshold` | 1 |  |
 | `JoinSpawnerFaction` | 1 |  |
-| `TauntAtFullHealth` | 1 |  |
-| `AllyMoveAbilityAura` | 1 | `CatapultJump`, `CatapultJump2` |
-| `FollowUp` | 1 | `FollowUpDash`, `FollowUpDash2` |
-| `ShovingMatch` | 1 | `attack` |
 | `AddFilledMaxHealth` | 1 |  |
-| `RockDetector` | 1 |  |
-| `AddPassiveToSpawnedRocks` | 1 |  |
-| `StatusReplacement` | 1 |  |
-| `NubbyTossPriority` | 1 |  |
-| `CatAPultAnimation` | 1 |  |
-| `DamageReductionAura` | 1 |  |
-| `AddKnockbackToEverything` | 1 |  |
-| `MakeBasicAttackPassThroughThings` | 1 |  |
-| `SplittableMove` | 1 |  |
-| `AddStatusToAllDamageAbilities` | 1 |  |
-| `CoinsAddDamage` | 1 |  |
-| `PoisonMultiplier` | 1 |  |
-| `CollectPickupsOnBattleEnd` | 1 |  |
 | `pop_corpses` | 1 | `true` |
-| `Piercing` | 1 |  |
-| `AllDamageCrits` | 1 |  |
 | `on_break` | 1 |  |
 | `on_throw` | 1 |  |
 | `AddElement` | 1 | `Fire`, `Napalm` |
-| `BlastResistance` | 1 |  |
-| `MinimumTech` | 1 |  |
 | `AddElementsToWeapon` | 1 | `Electric` |
-| `EMP` | 1 |  |
-| `AddWeaponScaling` | 1 |  |
-| `EquipmentPassiveMultiplierBonus` | 1 |  |
-| `EscapeSequence` | 1 |  |
-| `IncreaseItemUsesOnEquip` | 1 |  |
-| `WeaponCountsAsBasicAttack` | 1 |  |
 | `tinkerer_0` | 1 | `tinkerer_0_bombs` |
 | `spell_graphics_override` | 1 |  |
-| `EquipmentSetBonusBonus` | 1 |  |
-| `AlternateCraftingPools` | 1 |  |
-| `PermanentItems` | 1 |  |
-| `Conductor` | 1 |  |
-| `AddTemporaryEffectsToEquipment` | 1 |  |
 | `SafeExplosionIfHitSomething` | 1 |  |
-| `RobotsInheritArmor` | 1 |  |
-| `AbsorbManaAura` | 1 |  |
-| `SafeExplosions` | 1 |  |
-| `LightningRod` | 1 |  |
-| `PassiveWhileWearingMetal` | 1 |  |
 | `status_explosion_override` | 1 | `WaterConduct` |
-| `AddStatusToExplosions` | 1 |  |
 | `tinkerer_1` | 1 | `tinkerer_1_bombs` |
-| `ConductorManaRegen` | 1 |  |
-| `BoobyTrapItems` | 1 |  |
 | `min_difficulty` | 1 |  |
 | `classes` | 1 |  |
 | `save_file_flag` | 1 | `AntennaQuest_Orb`, `AntennaQuest_Rift`, `AntennaQuest_Volcano`, `MeatWorldQuest_Gristle`, `MeatWorldQuest_Leech` |
@@ -9867,49 +7984,14 @@ Use this to spot any completely undocumented keys.
 | `spell0` | 1 | `Roll`, `Spit` |
 | `passive0` | 1 | `HotBlooded`, `SelfAssured` |
 | `base_stats` | 1 |  |
-| `FlySwarm` | 1 |  |
-| `DeleteInanimateObjectsChance` | 1 |  |
 | `puddle_tile` | 1 | `LavaTile` |
 | `min_radius` | 1 |  |
 | `shader` | 1 | `shimmervignette` |
-| `Conditional_Flying` | 1 |  |
-| `RandomLightning` | 1 |  |
-| `CockroachSwarm` | 1 |  |
-| `MeteorShower` | 1 |  |
-| `SpawnVolcanoOnBattleStart` | 1 |  |
-| `AddExtraTurnsBeforeRun` | 1 |  |
-| `SpawnTilePuddleOnBattleStart` | 1 |  |
-| `ButterflySwarm` | 1 |  |
-| `PersistentElement` | 1 | `Holy` |
-| `LowGravityRangeBoost` | 1 |  |
-| `SolarFlare` | 1 |  |
-| `LowGravityKnockbackBoost` | 1 |  |
-| `GlobalSpawnOnRoundEnd` | 1 |  |
-| `FireStorm` | 1 |  |
 | `FloatingDebris` | 1 |  |
-| `AddPostProcessEffect` | 1 |  |
-| `AcidRain` | 1 |  |
-| `FactionUprising` | 1 | `alien`, `ghost`, `robot` |
-| `VisualFlySwarm` | 1 |  |
-| `AddTilesetObjects` | 1 |  |
-| `Conditional_Tiny` | 1 |  |
 | `requires_framebuffer` | 1 | `false` |
-| `Fog` | 1 |  |
 | `max_radius` | 1 |  |
 | `hint_persistent_elements` | 1 |  |
 | `follow_character_tag` | 1 | `zaratana` |
-| `JudgementDay` | 1 |  |
-| `StatusCharactersOnRoundEnd` | 1 |  |
-| `GlobalHealthRegenAura` | 1 |  |
-| `AllyInfested` | 1 |  |
-| `FireflySwarm` | 1 |  |
-| `HeatWave` | 1 |  |
-| `Meteornado` | 1 |  |
-| `ClearDefaultDebris` | 1 |  |
-| `SpecialGodRays` | 1 |  |
-| `Sandstorm` | 1 |  |
-| `RandomWeatherEachFight` | 1 |  |
-| `StatusCharactersOnRoundStart` | 1 |  |
 
 ---
 **Summary: 58 undocumented property keys, 33 missing Enum values**
