@@ -1,14 +1,9 @@
 # Items & Equipment Directory
 
-All items, equipment, consumables, parasites, and set bonuses.
-
 ### `Scrap`
 **Name:** Scrap Set Bonus!  
 **Description:** +1 Thorns.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Scrap {
@@ -23,17 +18,12 @@ Scrap {
 }
 ```
 
-</details>
-
 ---
 
 ### `Leather`
 **Name:** Leather Set Bonus!  
 **Description:** SETBONUS_LEATHER_DESC  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Leather {
@@ -45,21 +35,12 @@ Leather {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rag`
 **Name:** Rags Set Bonus!  
 **Description:** SETBONUS_RAG_DESC  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| SPD | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rag {
@@ -71,17 +52,12 @@ Rag {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rubber`
 **Name:** Rubber Set Bonus!  
 **Description:** +3 Knockback damage.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rubber {
@@ -98,8 +74,6 @@ Rubber {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatHide`
@@ -107,9 +81,6 @@ Rubber {
 **Description:** 5% chance to spawn a Flea each turn.
 Familiars have +1 Damage and +1 movement range.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatHide {
@@ -131,21 +102,12 @@ CatHide {
 }
 ```
 
-</details>
-
 ---
 
 ### `Guts`
 **Name:** Guts Set Bonus!  
 **Description:** +1 Health Regen.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| CON | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Guts {
@@ -160,17 +122,12 @@ Guts {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bone`
 **Name:** Bone Set Bonus!  
 **Description:** Find a random common bone item at the end of each battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bone {
@@ -188,17 +145,12 @@ Bone {
 }
 ```
 
-</details>
-
 ---
 
 ### `DirtClod`
 **Name:** Dirt Clod Set Bonus!  
 **Description:** Grow flowers under yourself at the end of each turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DirtClod {
@@ -212,21 +164,12 @@ DirtClod {
 }
 ```
 
-</details>
-
 ---
 
 ### `Barbed`
 **Name:** Barbed Set Bonus!  
 **Description:** +3 Thorns.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Barbed {
@@ -242,17 +185,12 @@ Barbed {
 }
 ```
 
-</details>
-
 ---
 
 ### `Sludge`
 **Name:** Sludge Set Bonus!  
 **Description:** Gain +2 [img:shield] at the end of each turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Sludge {
@@ -268,21 +206,12 @@ Sludge {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cool`
 **Name:** Cool Set Bonus!  
 **Description:** Cool Set Pieces are no longer Fragile.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| LCK | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cool {
@@ -299,17 +228,12 @@ Cool {
 }
 ```
 
-</details>
-
 ---
 
 ### `Paper`
 **Name:** Paper Set Bonus!  
 **Description:** +1 Bleed Thorns. Paper Set Pieces are no longer Fragile nor Brittle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Paper {
@@ -325,17 +249,12 @@ Paper {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cardboard`
 **Name:** Cardboard Set Bonus!  
 **Description:** Cardboard Set Pieces are no longer Fragile.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cardboard {
@@ -351,21 +270,12 @@ Cardboard {
 }
 ```
 
-</details>
-
 ---
 
 ### `Used`
 **Name:** Used Set Bonus!  
 **Description:** SETBONUS_USED_DESC  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Used {
@@ -377,17 +287,12 @@ Used {
 }
 ```
 
-</details>
-
 ---
 
 ### `Wood`
 **Name:** Wood Set Bonus!  
 **Description:** +1 Brace. Wood Set Pieces are no longer Fragile.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Wood {
@@ -402,21 +307,12 @@ Wood {
 }
 ```
 
-</details>
-
 ---
 
 ### `Recycled`
 **Name:** Recycled Set Bonus!  
 **Description:** Also find a rare item when a recycled set piece breaks.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Set | Recycled |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Recycled {
@@ -433,17 +329,12 @@ Recycled {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rotten`
 **Name:** Rotten Set Bonus!  
 **Description:** All Bugs and Maggots you spawn are upgraded to champions.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rotten {
@@ -458,17 +349,12 @@ Rotten {
 }
 ```
 
-</details>
-
 ---
 
 ### `JankAlloy`
 **Name:** Jank Alloy Set Bonus!  
 **Description:** Jank Alloy Set Pieces are no longer Brittle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JankAlloy {
@@ -482,17 +368,12 @@ JankAlloy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Alloy`
 **Name:** Alloy Set Bonus!  
 **Description:** Alloy Set Pieces are no longer Brittle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Alloy {
@@ -506,17 +387,12 @@ Alloy {
 }
 ```
 
-</details>
-
 ---
 
 ### `AdvancedAlloy`
 **Name:** Advanced Alloy Set Bonus!  
 **Description:** Advanced Alloy Set Pieces are no longer Brittle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AdvancedAlloy {
@@ -530,17 +406,12 @@ AdvancedAlloy {
 }
 ```
 
-</details>
-
 ---
 
 ### `EliteAlloy`
 **Name:** Elite Alloy Set Bonus!  
 **Description:** Elite Alloy Set Pieces are no longer Brittle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EliteAlloy {
@@ -554,8 +425,6 @@ EliteAlloy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Twine`
@@ -563,9 +432,6 @@ EliteAlloy {
 **Description:** +10% Dodge Chance.
 Bruise units that contact you.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Twine {
@@ -585,17 +451,12 @@ Twine {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rock`
 **Name:** Rock Set Bonus!  
 **Description:** +1 Brace. Spawn a pet rock familiar whenever you lose [img:shield].  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rock {
@@ -613,21 +474,12 @@ Rock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Miner`
 **Name:** Miner Set Bonus!  
 **Description:** 2 more pickups spawn in each battle.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| LCK | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Miner {
@@ -645,17 +497,12 @@ Miner {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gemstone`
 **Name:** Gemstone Set Bonus!  
 **Description:** Gain +3 [img:shield] at the end of each turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gemstone {
@@ -672,17 +519,12 @@ Gemstone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Veiny`
 **Name:** Veiny Set Bonus!  
 **Description:** Your basic attack inflicts Bleed. Whenever you inflict Bleed, trigger Bleed damage immediately.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Veiny {
@@ -699,17 +541,12 @@ Veiny {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gimp`
 **Name:** Gimp Set Bonus!  
 **Description:** Gain +1 Random Stat Up whenever you take damage.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gimp {
@@ -725,8 +562,6 @@ Gimp {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bionic`
@@ -734,9 +569,6 @@ Gimp {
 **Description:** Your movement action becomes an infinite range Teleport.
 Bionic Set Pieces are no longer Fragile.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bionic {
@@ -751,17 +583,12 @@ Bionic {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cyborg`
 **Name:** Cyborg Set Bonus!  
 **Description:** Take an AI controlled bonus turn at the end of the first round.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cyborg {
@@ -784,8 +611,6 @@ Cyborg {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lucky`
@@ -793,13 +618,6 @@ Cyborg {
 **Description:** Spawn 5-10 extra coins on each map.
 Lucky Set Pieces are no longer Fragile.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lucky {
@@ -818,8 +636,6 @@ Lucky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fly`
@@ -827,9 +643,6 @@ Lucky {
 **Description:** Flying. You do not take extra damage from backstabs.
 50% Chance to spawn a Fly each turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fly {
@@ -849,17 +662,12 @@ Fly {
 }
 ```
 
-</details>
-
 ---
 
 ### `Amoeba`
 **Name:** Amoeba Set Bonus!  
 **Description:** Permanent Madness.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Amoeba {
@@ -875,17 +683,12 @@ Amoeba {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mage`
 **Name:** Mage Set Bonus!  
 **Description:** +5 starting mana.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mage {
@@ -899,17 +702,12 @@ Mage {
 }
 ```
 
-</details>
-
 ---
 
 ### `Thief`
 **Name:** Thief Set Bonus!  
 **Description:** +5% Dodge Chance and +5% Crit Chance.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Thief {
@@ -924,17 +722,12 @@ Thief {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fighter`
 **Name:** Fighter Set Bonus!  
 **Description:** +15% chance to refresh your basic attack, movement, weapon and trinket actions when you get a kill.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fighter {
@@ -955,17 +748,12 @@ Fighter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cleric`
 **Name:** Cleric Set Bonus!  
 **Description:** If an attack would down you, instead lower your HP to 1. While at 1 HP, this has no effect.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cleric {
@@ -986,17 +774,12 @@ Cleric {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tank`
 **Name:** Tank Set Bonus!  
 **Description:** +1 Knockback damage.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tank {
@@ -1010,17 +793,12 @@ Tank {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hunter`
 **Name:** Hunter Set Bonus!  
 **Description:** +50% Crit Chance while standing in tall grass.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hunter {
@@ -1039,17 +817,12 @@ Hunter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Psychic`
 **Name:** Psychic Set Bonus!  
 **Description:** When you gain excess mana, reduce the cost of all your spells by that amount until you cast them.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Psychic {
@@ -1063,17 +836,12 @@ Psychic {
 }
 ```
 
-</details>
-
 ---
 
 ### `Necromancer`
 **Name:** Necromancer Set Bonus!  
 **Description:** When downed, spawn a shadow copy of yourself that fades away after one turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Necromancer {
@@ -1090,17 +858,12 @@ Necromancer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Monk`
 **Name:** Monk Set Bonus!  
 **Description:** Gain +2 [img:shield] at the end of each turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Monk {
@@ -1116,17 +879,12 @@ Monk {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tinkerer`
 **Name:** Tinkerer Set Bonus!  
 **Description:** Spawn 4 Scrap pickups at the start of each battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tinkerer {
@@ -1143,17 +901,12 @@ Tinkerer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Butcher`
 **Name:** Butcher Set Bonus!  
 **Description:** Food and scrap pickups you spawn are bigger.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Butcher {
@@ -1167,17 +920,12 @@ Butcher {
 }
 ```
 
-</details>
-
 ---
 
 ### `Druid`
 **Name:** Druid Set Bonus!  
 **Description:** Your Familiars gain +4 HP and +1 Damage.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Druid {
@@ -1195,17 +943,12 @@ Druid {
 }
 ```
 
-</details>
-
 ---
 
 ### `Collarless`
 **Name:** Collarless Set Bonus!  
 **Description:** Collarless spells cost -1 mana to cast.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Collarless {
@@ -1222,17 +965,12 @@ Collarless {
 }
 ```
 
-</details>
-
 ---
 
 ### `Grub`
 **Name:** Grub Set Bonus!  
 **Description:** Grubs spawned by items gain +5 HP.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Grub {
@@ -1253,8 +991,6 @@ Grub {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fecal`
@@ -1262,9 +998,6 @@ Grub {
 **Description:** Poisonous 1.
 Your basic attack inflicts Poison.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fecal {
@@ -1281,8 +1014,6 @@ Fecal {
 }
 ```
 
-</details>
-
 ---
 
 ### `Meat`
@@ -1291,9 +1022,6 @@ Fecal {
 Gain +1 Damage when you get a kill.
 After three kills, gains +2 [img:con], +4 Health Regen and Madness for the rest of the battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Meat {
@@ -1319,17 +1047,12 @@ Meat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Leafy`
 **Name:** Leafy Set Bonus!  
 **Description:** If you end your turn with unused movement actions, heal 3 HP and gain +3 Charge.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Leafy {
@@ -1346,8 +1069,6 @@ Leafy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cactus`
@@ -1355,9 +1076,6 @@ Leafy {
 **Description:** +2 Thorns.
 Whenever any Cactus armor breaks, increase all your stats by 1, permanently.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cactus {
@@ -1380,8 +1098,6 @@ Cactus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mummy`
@@ -1389,9 +1105,6 @@ Cactus {
 **Description:** When downed, inflict Rot 1 and Weakness 1 on all enemies.
 When downed, revive with +30% HP at the end of the round.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mummy {
@@ -1412,17 +1125,12 @@ Mummy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Man`
 **Name:** Man Set Bonus!  
 **Description:** Gain 1-9 coins at the end of each battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Man {
@@ -1443,17 +1151,12 @@ Man {
 }
 ```
 
-</details>
-
 ---
 
 ### `Flower`
 **Name:** Flower Set Bonus!  
 **Description:** Enemies have a 10% chance to become Entangled when walking through flower tiles.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Flower {
@@ -1469,8 +1172,6 @@ Flower {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanFlesh`
@@ -1478,9 +1179,6 @@ Flower {
 **Description:** +50% Crit Chance on humanoid enemies.
 When downed, inflict Fear 2 on all enemies.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanFlesh {
@@ -1503,17 +1201,12 @@ HumanFlesh {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tentacle`
 **Name:** Tentacle Set Bonus!  
 **Description:** Cleanse all your debuffs at the end of each turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tentacle {
@@ -1532,17 +1225,12 @@ Tentacle {
 }
 ```
 
-</details>
-
 ---
 
 ### `Obelisk`
 **Name:** Obelisk Set Bonus!  
 **Description:** If you end your turn with unused movement actions, gain +1 [img:divineshield].  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Obelisk {
@@ -1560,8 +1248,6 @@ Obelisk {
 }
 ```
 
-</details>
-
 ---
 
 ### `Experimental`
@@ -1569,9 +1255,6 @@ Obelisk {
 **Description:** Find a pill at the end of each battle.
 Whenever you eat a pill, gain a random stat and lose another random stat, permanently.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Experimental {
@@ -1590,8 +1273,6 @@ Experimental {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rocky`
@@ -1599,9 +1280,6 @@ Experimental {
 **Description:** Spawn a pet rock familiar whenever you lose [img:shield].
 Broken Rocky equipment pieces have a 75% chance of being recovered at the end of the battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rocky {
@@ -1619,17 +1297,12 @@ Rocky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Space`
 **Name:** Space Set Bonus!  
 **Description:** Your movement action is Jump. Units you land on take damage.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Space {
@@ -1643,8 +1316,6 @@ Space {
 }
 ```
 
-</details>
-
 ---
 
 ### `Planet`
@@ -1652,9 +1323,6 @@ Space {
 **Description:** Flying. Inflict Bruise 1 on units you make contact with.
 Pull every unit within 2 tiles toward you at the end of each round.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Planet {
@@ -1677,17 +1345,12 @@ Planet {
 }
 ```
 
-</details>
-
 ---
 
 ### `Debris`
 **Name:** Debris Set Bonus!  
 **Description:** Your basic attack deals electric damage and has a +10% chance to Stun.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Debris {
@@ -1704,17 +1367,12 @@ Debris {
 }
 ```
 
-</details>
-
 ---
 
 ### `DryBone`
 **Name:** Dry Bone Set Bonus!  
 **Description:** Find a bone club at the end of each battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DryBone {
@@ -1730,17 +1388,12 @@ DryBone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Molten`
 **Name:** Molten Set Bonus!  
 **Description:** Fire immunity.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Molten {
@@ -1756,17 +1409,12 @@ Molten {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mother`
 **Name:** Mother Set Bonus!  
 **Description:** Familiars you spawn gain +2 Damage and +2 HP.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mother {
@@ -1784,21 +1432,12 @@ Mother {
 }
 ```
 
-</details>
-
 ---
 
 ### `Feathered`
 **Name:** Feathered Set Bonus!  
 **Description:** Flying.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| SPD | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Feathered {
@@ -1814,17 +1453,12 @@ Feathered {
 }
 ```
 
-</details>
-
 ---
 
 ### `Copycat`
 **Name:** Copycat Set Bonus!  
 **Description:** Copies your trinket's passive effects.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Copycat {
@@ -1838,21 +1472,12 @@ Copycat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Transmitter`
 **Name:** Transmitter Set Bonus!  
 **Description:** All allies gain +1 [img:int] and +1 [img:lck].  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| INT | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Transmitter {
@@ -1871,17 +1496,12 @@ Transmitter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Thrumming`
 **Name:** Thrumming Set Bonus!  
 **Description:** If you end your turn without using your basic attack, movement action, or casting a spell, gain All Stats Up.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Thrumming {
@@ -1898,8 +1518,6 @@ Thrumming {
 }
 ```
 
-</details>
-
 ---
 
 ### `Witch`
@@ -1907,9 +1525,6 @@ Thrumming {
 **Description:** Your movement action becomes a Jump with infinite range.
 Your tile-targeted spells have infinite range.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Witch {
@@ -1924,17 +1539,12 @@ Witch {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stunning`
 **Name:** Stunning Set Bonus!  
 **Description:** Your weapon and trinket's passive and active effects are tripled.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stunning {
@@ -1951,17 +1561,12 @@ Stunning {
 }
 ```
 
-</details>
-
 ---
 
 ### `Superhero`
 **Name:** Superhero Set Bonus!  
 **Description:** The first spell you cast each turn inflicts Webbed.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Superhero {
@@ -1982,21 +1587,12 @@ Superhero {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lead`
 **Name:** Lead Set Bonus!  
 **Description:** Trample 9.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lead {
@@ -2013,17 +1609,12 @@ Lead {
 }
 ```
 
-</details>
-
 ---
 
 ### `Baby`
 **Name:** Baby Set Bonus!  
 **Description:** Start battle with a baby version of yourself.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Baby {
@@ -2040,17 +1631,12 @@ Baby {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ninja`
 **Name:** Ninja Set Bonus!  
 **Description:** Start battle with a bonus attack.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ninja {
@@ -2064,17 +1650,12 @@ Ninja {
 }
 ```
 
-</details>
-
 ---
 
 ### `Prowler`
 **Name:** Prowler Set Bonus!  
 **Description:** Backstabs are always critical.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Prowler {
@@ -2088,17 +1669,12 @@ Prowler {
 }
 ```
 
-</details>
-
 ---
 
 ### `Godhead`
 **Name:** Godhead Set Bonus!  
 **Description:** Eternal Life  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Godhead {
@@ -2115,17 +1691,12 @@ Godhead {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hippie`
 **Name:** Hippie Set Bonus!  
 **Description:** Spawn 5 Catnip pickups at the start of each battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hippie {
@@ -2144,17 +1715,12 @@ Hippie {
 }
 ```
 
-</details>
-
 ---
 
 ### `Parasite`
 **Name:** Parasite Set Bonus!  
 **Description:** At the end of each battle, lose a random stat permanently and gain a random mutation.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Parasite {
@@ -2173,17 +1739,12 @@ Parasite {
 }
 ```
 
-</details>
-
 ---
 
 ### `Brick`
 **Name:** Brick Set Bonus!  
 **Description:** Knockback immunity.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Brick {
@@ -2199,17 +1760,12 @@ Brick {
 }
 ```
 
-</details>
-
 ---
 
 ### `Slimy`
 **Name:** Slimy Set Bonus!  
 **Description:** Poisonous 2.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Slimy {
@@ -2223,17 +1779,12 @@ Slimy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rat`
 **Name:** Rat Set Bonus!  
 **Description:** Start battle with 2 Charmed Rats.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rat {
@@ -2250,17 +1801,12 @@ Rat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Carapace`
 **Name:** Carapace Set Bonus!  
 **Description:** Gain 3 random stat ups at the end of your turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Carapace {
@@ -2276,8 +1822,6 @@ Carapace {
 }
 ```
 
-</details>
-
 ---
 
 ### `Radioactive`
@@ -2285,9 +1829,6 @@ Carapace {
 **Description:** Gain a random mutation at the end of each battle.
 Explode when downed. This explosion doesn't damage you.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Radioactive {
@@ -2307,17 +1848,12 @@ Radioactive {
 }
 ```
 
-</details>
-
 ---
 
 ### `Nurse`
 **Name:** Nurse Set Bonus!  
 **Description:** Your basic attack becomes holy and can heal allies.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Nurse {
@@ -2334,8 +1870,6 @@ Nurse {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hybrid`
@@ -2343,9 +1877,6 @@ Nurse {
 **Description:** Bruise 1. Poison 1. Bleed 1.
 The first spell you cast each turn is cast twice.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hybrid {
@@ -2362,21 +1893,12 @@ Hybrid {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fatty`
 **Name:** Fatty Set Bonus!  
 **Description:** SETBONUS_FATTY_DESC  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| CON | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fatty {
@@ -2389,17 +1911,12 @@ Fatty {
 }
 ```
 
-</details>
-
 ---
 
 ### `Medical`
 **Name:** Medical Set Bonus!  
 **Description:** You have +1 Health Regen for each disorder you have.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Medical {
@@ -2413,17 +1930,12 @@ Medical {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chip`
 **Name:** Chip Set Bonus!  
 **Description:** When you end your turn, if you cast exactly 5 spells, double cast your next spell.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chip {
@@ -2441,17 +1953,12 @@ Chip {
 }
 ```
 
-</details>
-
 ---
 
 ### `Demonic`
 **Name:** Demonic Set Bonus!  
 **Description:** When you get a kill, gain +6 Shield.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Demonic {
@@ -2469,17 +1976,12 @@ Demonic {
 }
 ```
 
-</details>
-
 ---
 
 ### `Frozen`
 **Name:** Frozen Set Bonus!  
 **Description:** You can damage Frozen units.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Frozen {
@@ -2495,17 +1997,12 @@ Frozen {
 }
 ```
 
-</details>
-
 ---
 
 ### `Wooly`
 **Name:** Wooly Set Bonus!  
 **Description:** Start with a Charmed Mammoth Baby.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Wooly {
@@ -2522,17 +2019,12 @@ Wooly {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rune`
 **Name:** Rune Set Bonus!  
 **Description:** SETBONUS_RUNE_DESC  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rune {
@@ -2544,21 +2036,12 @@ Rune {
 }
 ```
 
-</details>
-
 ---
 
 ### `Caveman`
 **Name:** Caveman Set Bonus!  
 **Description:** If your [img:int] is 1 or less, gain Brace 5.  
 **Source:** `item_setbonuses.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Caveman {
@@ -2580,17 +2063,12 @@ Caveman {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dino`
 **Name:** Dino Set Bonus!  
 **Description:** Allies gain +5 [img:shield] at the start of each battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dino {
@@ -2606,17 +2084,12 @@ Dino {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigRock`
 **Name:** Big Rock Set Bonus!  
 **Description:** Spawn 2 Charmed Geolads at the start of each battle.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigRock {
@@ -2634,17 +2107,12 @@ BigRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Phoenix`
 **Name:** Phoenix Set Bonus!  
 **Description:** Flying. You can move an extra time each turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Phoenix {
@@ -2659,17 +2127,12 @@ Phoenix {
 }
 ```
 
-</details>
-
 ---
 
 ### `Jester`
 **Name:** Jester Set Bonus!  
 **Description:** +3 Rerolls when leveling up.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Jester {
@@ -2683,8 +2146,6 @@ Jester {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ancestor`
@@ -2692,9 +2153,6 @@ Jester {
 **Description:** Spawn a spectral copy of yourself when you die.
 The copy dies at the end of its turn.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ancestor {
@@ -2711,8 +2169,6 @@ Ancestor {
 }
 ```
 
-</details>
-
 ---
 
 ### `Survivalist`
@@ -2720,9 +2176,6 @@ Ancestor {
 **Description:** Find a consumable item at the end of each battle.
 When you use up a consumable or trinket, equip a new consumable from your inventory if you have any.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Survivalist {
@@ -2742,17 +2195,12 @@ Survivalist {
 }
 ```
 
-</details>
-
 ---
 
 ### `Leech`
 **Name:** Leech Set Bonus!  
 **Description:** Start battle with 4 beefy Leech familiars.  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Leech {
@@ -2769,17 +2217,12 @@ Leech {
 }
 ```
 
-</details>
-
 ---
 
 ### `Steven`
 **Name:** Steven Set Bonus!  
 **Description:** Your name is now Steven! Hello Steven!  
 **Source:** `item_setbonuses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Steven {
@@ -2794,24 +2237,12 @@ Steven {
 }
 ```
 
-</details>
-
 ---
 
 ### `ScrapHat`
 **Name:** Scrap Metal Hat  
 **Description:** ARMOR_SCRAPMETALHAT_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Scrap |
-| Frame | 12 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScrapHat {
@@ -2830,24 +2261,12 @@ ScrapHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `ScrapMask`
 **Name:** Scrap Metal Mask  
 **Description:** ARMOR_SCRAPMETALMASK_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Scrap |
-| Frame | 12 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScrapMask {
@@ -2866,24 +2285,12 @@ ScrapMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `ScrapArmor`
 **Name:** Scrap Metal Armor  
 **Description:** ARMOR_SCRAPMETALARMOR_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Scrap |
-| Frame | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScrapArmor {
@@ -2902,24 +2309,12 @@ ScrapArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeatherHat`
 **Name:** Leather Cap  
 **Description:** +1 Brace.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Leather |
-| Frame | 23 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeatherHat {
@@ -2938,24 +2333,12 @@ LeatherHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeatherMask`
 **Name:** Leather Mask  
 **Description:** +1 Brace.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Leather |
-| Frame | 32 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeatherMask {
@@ -2974,24 +2357,12 @@ LeatherMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeatherArmor`
 **Name:** Leather Choker  
 **Description:** +1 Brace.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Leather |
-| Frame | 26 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeatherArmor {
@@ -3010,24 +2381,12 @@ LeatherArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `RagHood`
 **Name:** Rag Hood  
 **Description:** +15% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Rag |
-| Frame | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RagHood {
@@ -3044,24 +2403,12 @@ RagHood {
     }
 ```
 
-</details>
-
 ---
 
 ### `RagMask`
 **Name:** Rag Mask  
 **Description:** +15% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Rag |
-| Frame | 13 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RagMask {
@@ -3078,24 +2425,12 @@ RagMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RagArmor`
 **Name:** Rags  
 **Description:** +15% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Rag |
-| Frame | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RagArmor {
@@ -3112,24 +2447,12 @@ RagArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `RubberHat`
 **Name:** Rubber Hat  
 **Description:** Units that contact you are knocked back 2 tiles.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Rubber |
-| Frame | 10 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberHat {
@@ -3149,24 +2472,12 @@ RubberHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RubberMask`
 **Name:** Rubber Mask  
 **Description:** Units that contact you are knocked back 2 tiles.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Rubber |
-| Frame | 14 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberMask {
@@ -3186,24 +2497,12 @@ RubberMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RubberArmor`
 **Name:** Tire  
 **Description:** Units that contact you are knocked back 2 tiles.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Rubber |
-| Frame | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberArmor {
@@ -3223,8 +2522,6 @@ RubberArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `CatHideHat`
@@ -3232,16 +2529,6 @@ RubberArmor {
 **Description:** +1 Health Regen.
 5% chance to spawn a Flea Familiar at the end of your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | CatHide |
-| Frame | 11 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatHideHat {
@@ -3266,8 +2553,6 @@ CatHideHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `CatHideMask`
@@ -3275,16 +2560,6 @@ CatHideHat {
 **Description:** +1 Health Regen.
 5% chance to spawn a Flea Familiar at the end of your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | CatHide |
-| Frame | 15 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatHideMask {
@@ -3309,8 +2584,6 @@ CatHideMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `CatHideArmor`
@@ -3318,16 +2591,6 @@ CatHideMask {
 **Description:** +1 Health Regen.
 5% chance to spawn a Flea Familiar at the end of your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | CatHide |
-| Frame | 5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatHideArmor {
@@ -3352,24 +2615,12 @@ CatHideArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `ThickHide`
 **Name:** Thick Hide  
 **Description:** +1 Brace. Immunity to Slow and Freeze.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | CatHide |
-| Frame | 161 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThickHide { 
@@ -3389,25 +2640,12 @@ ThickHide {
     }
 ```
 
-</details>
-
 ---
 
 ### `GutsHeart`
 **Name:** Heart  
 **Description:** +1 Health Regen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Guts |
-| Frame | 19 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GutsHeart {
@@ -3426,25 +2664,12 @@ GutsHeart {
     }
 ```
 
-</details>
-
 ---
 
 ### `GutsLiver`
 **Name:** Liver  
 **Description:** +1 Health Regen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Guts |
-| Frame | 20 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GutsLiver {
@@ -3463,25 +2688,12 @@ GutsLiver {
     }
 ```
 
-</details>
-
 ---
 
 ### `GutsIntestines`
 **Name:** Intestines  
 **Description:** +1 Health Regen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Guts |
-| Frame | 25 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GutsIntestines {
@@ -3500,8 +2712,6 @@ GutsIntestines {
     }
 ```
 
-</details>
-
 ---
 
 ### `BonesHat`
@@ -3509,16 +2719,6 @@ GutsIntestines {
 **Description:** Breaks when [img:shield] is depleted.
 When it breaks, gain +1 [img:int] and +3 Health Regen for the rest of the battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Bone |
-| Frame | 5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BonesHat {
@@ -3541,8 +2741,6 @@ BonesHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `BonesMask`
@@ -3550,16 +2748,6 @@ BonesHat {
 **Description:** Breaks when [img:shield] is depleted.
 When it breaks, gain +1 [img:str] and +3 Health Regen for the rest of the battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Bone |
-| Frame | 24 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BonesMask {
@@ -3582,8 +2770,6 @@ BonesMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `BonesNeck`
@@ -3591,16 +2777,6 @@ BonesMask {
 **Description:** Breaks when [img:shield] is depleted.
 When it breaks, gain +1 [img:dex] and +3 Health Regen for the rest of the battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Bone |
-| Frame | 18 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BonesNeck {
@@ -3623,8 +2799,6 @@ BonesNeck {
     }
 ```
 
-</details>
-
 ---
 
 ### `DirtClodHat`
@@ -3632,16 +2806,6 @@ BonesNeck {
 **Description:** +2 Mana Regen, +2 Health Regen.
 Fragile and Brittle while wet.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | DirtClod |
-| Frame | 22 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DirtClodHat {
@@ -3661,8 +2825,6 @@ DirtClodHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `DirtClodMask`
@@ -3670,16 +2832,6 @@ DirtClodHat {
 **Description:** +2 Mana Regen, +2 Health Regen.
 Fragile and Brittle while wet.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | DirtClod |
-| Frame | 31 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DirtClodMask {
@@ -3699,8 +2851,6 @@ DirtClodMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `DirtClodNeck`
@@ -3708,16 +2858,6 @@ DirtClodMask {
 **Description:** +2 Mana Regen, +2 Health Regen.
 Fragile and Brittle while wet.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | DirtClod |
-| Frame | 25 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DirtClodNeck {
@@ -3737,24 +2877,12 @@ DirtClodNeck {
     }
 ```
 
-</details>
-
 ---
 
 ### `BarbedHat`
 **Name:** Barbed Hat  
 **Description:** +1 Damage, +1 Thorns, -1 max HP.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Barbed |
-| Frame | 21 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BarbedHat {
@@ -3775,24 +2903,12 @@ BarbedHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `BarbedMask`
 **Name:** Barbed Mask  
 **Description:** +1 Damage, +1 Thorns, -1 max HP.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Barbed |
-| Frame | 26 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BarbedMask {
@@ -3813,24 +2929,12 @@ BarbedMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `BarbedNeck`
 **Name:** Barbed Necklace  
 **Description:** +1 Damage, +1 Thorns, -1 max HP.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Barbed |
-| Frame | 20 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BarbedNeck {
@@ -3851,23 +2955,12 @@ BarbedNeck {
     }
 ```
 
-</details>
-
 ---
 
 ### `SludgeHat`
 **Name:** Sludge Hat  
 **Description:** ARMOR_SLUDGEHAT_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Sludge |
-| Frame | 14 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SludgeHat {
@@ -3883,23 +2976,12 @@ SludgeHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `SludgeMask`
 **Name:** Sludge Mask  
 **Description:** ARMOR_SLUDGEMASK_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Sludge |
-| Frame | 23 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SludgeMask {
@@ -3915,23 +2997,12 @@ SludgeMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `SludgeNeck`
 **Name:** Sludge Necklace  
 **Description:** ARMOR_SLUDGEARMOR_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | Sludge |
-| Frame | 14 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SludgeNeck {
@@ -3947,24 +3018,12 @@ SludgeNeck {
     }
 ```
 
-</details>
-
 ---
 
 ### `CoolGlasses`
 **Name:** Cool Glasses  
 **Description:** Fragile  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Cool |
-| Frame | 10 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoolGlasses {
@@ -3983,24 +3042,12 @@ CoolGlasses {
     }
 ```
 
-</details>
-
 ---
 
 ### `CoolShirt`
 **Name:** Cool Shirt  
 **Description:** Fragile  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Cool |
-| Frame | 36 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoolShirt {
@@ -4019,24 +3066,12 @@ CoolShirt {
     }
 ```
 
-</details>
-
 ---
 
 ### `CoolHat`
 **Name:** Cool Hat  
 **Description:** Fragile  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Cool |
-| Frame | 39 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoolHat {
@@ -4055,8 +3090,6 @@ CoolHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `PaperHat`
@@ -4065,16 +3098,6 @@ CoolHat {
 Your basic attack inflicts Bleed.
 Fragile, Brittle, Flammable, melts in water.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Paper |
-| Frame | 40 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PaperHat {
@@ -4098,8 +3121,6 @@ PaperHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `PaperMask`
@@ -4108,16 +3129,6 @@ PaperHat {
 Your basic attack inflicts Bleed.
 Fragile, Brittle, Flammable, melts in water.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Paper |
-| Frame | 46 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PaperMask {
@@ -4141,8 +3152,6 @@ PaperMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `PaperArmor`
@@ -4151,16 +3160,6 @@ PaperMask {
 Your basic attack inflicts Bleed.
 Fragile, Brittle, Flammable, melts in water.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Paper |
-| Frame | 37 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PaperArmor {
@@ -4184,24 +3183,12 @@ PaperArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `CardboardHat`
 **Name:** Cardboard Hat  
 **Description:** Fragile, Flammable, Brittle when wet.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Cardboard |
-| Frame | 41 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CardboardHat {
@@ -4222,24 +3209,12 @@ CardboardHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `CardboardMask`
 **Name:** Cardboard Mask  
 **Description:** Fragile, Flammable, Brittle when wet.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Cardboard |
-| Frame | 47 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CardboardMask {
@@ -4260,24 +3235,12 @@ CardboardMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `CardboardArmor`
 **Name:** Cardboard Necklace  
 **Description:** Fragile, Flammable, Brittle when wet.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Cardboard |
-| Frame | 38 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CardboardArmor {
@@ -4298,24 +3261,12 @@ CardboardArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `UsedHat`
 **Name:** Used Hat  
 **Description:** ARMOR_USEDHAT_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Used |
-| Frame | 31 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UsedHat {
@@ -4330,24 +3281,12 @@ UsedHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `UsedMask`
 **Name:** Used Glasses  
 **Description:** ARMOR_USEDMASK_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Used |
-| Frame | 38 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UsedMask {
@@ -4362,24 +3301,12 @@ UsedMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `UsedArmor`
 **Name:** Used Shirt  
 **Description:** ARMOR_USEDARMOR_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Used |
-| Frame | 27 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UsedArmor {
@@ -4394,8 +3321,6 @@ UsedArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `WoodHat`
@@ -4403,16 +3328,6 @@ UsedArmor {
 **Description:** +1 Thorns.
 Fragile, Flammable.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Wood |
-| Frame | 33 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WoodHat {
@@ -4433,8 +3348,6 @@ WoodHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `WoodMask`
@@ -4442,16 +3355,6 @@ WoodHat {
 **Description:** +1 Thorns.
 Fragile, Flammable.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Wood |
-| Frame | 40 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WoodMask {
@@ -4472,8 +3375,6 @@ WoodMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `WoodArmor`
@@ -4481,16 +3382,6 @@ WoodMask {
 **Description:** +1 Thorns.
 Fragile, Flammable.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Wood |
-| Frame | 29 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WoodArmor {
@@ -4511,24 +3402,12 @@ WoodArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `RecycledHat`
 **Name:** Recycled Hat  
 **Description:** Brittle. Find a common item when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Recycled |
-| Frame | 34 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RecycledHat {
@@ -4550,24 +3429,12 @@ RecycledHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RecycledMask`
 **Name:** Recycled Mask  
 **Description:** Brittle. Find a common item when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Recycled |
-| Frame | 41 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RecycledMask {
@@ -4589,24 +3456,12 @@ RecycledMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RecycledArmor`
 **Name:** Recycled Necklace  
 **Description:** Brittle. Find a common item when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Recycled |
-| Frame | 30 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RecycledArmor {
@@ -4629,24 +3484,12 @@ RecycledArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `RottenHat`
 **Name:** Rotten Meat Hat  
 **Description:** Spawn a Charmed Maggot or Fly when you end your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Rotten |
-| Frame | 35 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RottenHat {
@@ -4668,24 +3511,12 @@ RottenHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RottenMask`
 **Name:** Rotten Meat Mask  
 **Description:** Spawn a Charmed Maggot or Fly when you end your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Rotten |
-| Frame | 42 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RottenMask {
@@ -4707,24 +3538,12 @@ RottenMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RottenArmor`
 **Name:** Rotten Meat Armor  
 **Description:** Spawn a Charmed Maggot or Fly when you end your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Rotten |
-| Frame | 31 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RottenArmor {
@@ -4746,8 +3565,6 @@ RottenArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `JankAlloyHat`
@@ -4755,15 +3572,6 @@ RottenArmor {
 **Description:** +1 Brace.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | JankAlloy |
-| Frame | 42 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JankAlloyHat {
@@ -4783,8 +3591,6 @@ JankAlloyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `JankAlloyMask`
@@ -4792,15 +3598,6 @@ JankAlloyHat {
 **Description:** +1 Brace.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | JankAlloy |
-| Frame | 48 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JankAlloyMask {
@@ -4820,8 +3617,6 @@ JankAlloyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `JankAlloyArmor`
@@ -4829,15 +3624,6 @@ JankAlloyMask {
 **Description:** +1 Brace.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | JankAlloy |
-| Frame | 39 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JankAlloyArmor {
@@ -4857,8 +3643,6 @@ JankAlloyArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `AlloyHat`
@@ -4866,15 +3650,6 @@ JankAlloyArmor {
 **Description:** +1 Brace, +2 Thorns.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Alloy |
-| Frame | 43 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlloyHat {
@@ -4895,8 +3670,6 @@ AlloyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `AlloyMask`
@@ -4904,15 +3677,6 @@ AlloyHat {
 **Description:** +1 Brace, +2 Thorns.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Alloy |
-| Frame | 49 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlloyMask {
@@ -4933,8 +3697,6 @@ AlloyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `AlloyArmor`
@@ -4942,15 +3704,6 @@ AlloyMask {
 **Description:** +1 Brace, +2 Thorns.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | Alloy |
-| Frame | 40 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlloyArmor {
@@ -4971,8 +3724,6 @@ AlloyArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `AdvancedAlloyHat`
@@ -4980,15 +3731,6 @@ AlloyArmor {
 **Description:** +2 Brace, +2 Thorns.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | AdvancedAlloy |
-| Frame | 44 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AdvancedAlloyHat {
@@ -5009,8 +3751,6 @@ AdvancedAlloyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `AdvancedAlloyMask`
@@ -5018,15 +3758,6 @@ AdvancedAlloyHat {
 **Description:** +2 Brace, +2 Thorns.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | AdvancedAlloy |
-| Frame | 50 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AdvancedAlloyMask {
@@ -5047,8 +3778,6 @@ AdvancedAlloyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `AdvancedAlloyArmor`
@@ -5056,15 +3785,6 @@ AdvancedAlloyMask {
 **Description:** +2 Brace, +2 Thorns.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | AdvancedAlloy |
-| Frame | 41 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AdvancedAlloyArmor {
@@ -5085,8 +3805,6 @@ AdvancedAlloyArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `EliteAlloyHat`
@@ -5094,15 +3812,6 @@ AdvancedAlloyArmor {
 **Description:** +2 Brace, +3 Thorns, All Stats Up 1.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | EliteAlloy |
-| Frame | 45 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EliteAlloyHat {
@@ -5124,8 +3833,6 @@ EliteAlloyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `EliteAlloyMask`
@@ -5133,15 +3840,6 @@ EliteAlloyHat {
 **Description:** +2 Brace, +3 Thorns, All Stats Up 1.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | EliteAlloy |
-| Frame | 51 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EliteAlloyMask {
@@ -5163,8 +3861,6 @@ EliteAlloyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `EliteAlloyArmor`
@@ -5172,15 +3868,6 @@ EliteAlloyMask {
 **Description:** +2 Brace, +3 Thorns, All Stats Up 1.
 Brittle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | EliteAlloy |
-| Frame | 42 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EliteAlloyArmor {
@@ -5202,8 +3889,6 @@ EliteAlloyArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `TwineHat`
@@ -5211,16 +3896,6 @@ EliteAlloyArmor {
 **Description:** +50% chance to Grapple units that contact you.
 Flammable.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Twine |
-| Frame | 32 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TwineHat {
@@ -5245,8 +3920,6 @@ TwineHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `TwineMask`
@@ -5254,16 +3927,6 @@ TwineHat {
 **Description:** +50% chance to Grapple units that contact you.
 Flammable.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Twine |
-| Frame | 39 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TwineMask {
@@ -5288,8 +3951,6 @@ TwineMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `TwineArmor`
@@ -5297,16 +3958,6 @@ TwineMask {
 **Description:** +50% chance to Grapple units that contact you.
 Flammable.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Twine |
-| Frame | 28 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TwineArmor {
@@ -5331,25 +3982,12 @@ TwineArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `RockHat`
 **Name:** Rock Hat  
 **Description:** Brittle. Your basic attack has +1 Knockback. Gain coins when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 46 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockHat {
@@ -5377,25 +4015,12 @@ RockHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RockMask`
 **Name:** Rock Mask  
 **Description:** Brittle. Your basic attack has +1 Knockback. Gain coins when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 53 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockMask {
@@ -5423,25 +4048,12 @@ RockMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RockArmor`
 **Name:** Rock Necklace  
 **Description:** Brittle. Your basic attack has +1 Knockback. Gain coins when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 44 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockArmor {
@@ -5469,24 +4081,12 @@ RockArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `MinerHat`
 **Name:** Miner Hat  
 **Description:** Physical attacks can't miss.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Miner |
-| Frame | 48 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MinerHat {
@@ -5504,24 +4104,12 @@ MinerHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `MinerMask`
 **Name:** Miner Mask  
 **Description:** Poison Immunity.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Miner |
-| Frame | 55 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MinerMask {
@@ -5542,8 +4130,6 @@ MinerMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `MinerArmor`
@@ -5551,16 +4137,6 @@ MinerMask {
 **Description:** Your basic attack has +1 Knockback.
 +1 Knockback damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Miner |
-| Frame | 46 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MinerArmor {
@@ -5580,24 +4156,12 @@ MinerArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `GemstoneHat`
 **Name:** Gemstone Crown  
 **Description:** +1 Kinetic Spikes.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Gemstone |
-| Frame | 47 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GemstoneHat {
@@ -5616,24 +4180,12 @@ GemstoneHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `GemstoneMask`
 **Name:** Gemstone Mask  
 **Description:** +1 Kinetic Spikes.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Gemstone |
-| Frame | 54 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GemstoneMask {
@@ -5652,24 +4204,12 @@ GemstoneMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `GemstoneArmor`
 **Name:** Gemstone Necklace  
 **Description:** +1 Kinetic Spikes.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Gemstone |
-| Frame | 45 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GemstoneArmor {
@@ -5688,24 +4228,12 @@ GemstoneArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `VeinyHat`
 **Name:** Veiny Hat  
 **Description:** When you damage a Bleeding unit, gain +1 [img:spd].  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Veiny |
-| Frame | 49 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 VeinyHat {
@@ -5730,24 +4258,12 @@ VeinyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `VeinyMask`
 **Name:** Veiny Mask  
 **Description:** When you damage a Bleeding unit, gain +1 [img:str].  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Veiny |
-| Frame | 56 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 VeinyMask {
@@ -5772,24 +4288,12 @@ VeinyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `VeinyArmor`
 **Name:** Veiny Necklace  
 **Description:** When you damage a Bleeding unit, heal 3 HP.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Veiny |
-| Frame | 47 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 VeinyArmor {
@@ -5812,24 +4316,12 @@ VeinyArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `GimpHat`
 **Name:** Leather Hood  
 **Description:** Gain +2 Charge when you take damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Gimp |
-| Frame | 28 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GimpHat {
@@ -5848,24 +4340,12 @@ GimpHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `GimpMask`
 **Name:** Ball Gag  
 **Description:** Gain +2 Charge when you take damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Gimp |
-| Frame | 37 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GimpMask {
@@ -5884,24 +4364,12 @@ GimpMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `GimpArmor`
 **Name:** Leather Collar  
 **Description:** Gain +2 Charge when you take damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Gimp |
-| Frame | 33 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GimpArmor {
@@ -5920,25 +4388,12 @@ GimpArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `BionicHat`
 **Name:** Bionic Skull Plating  
 **Description:** Fragile.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Bionic |
-| Frame | 25 |
-| SPD | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BionicHat {
@@ -5958,25 +4413,12 @@ BionicHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `BionicMask`
 **Name:** Bionic Face Plating  
 **Description:** Fragile.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Bionic |
-| Frame | 34 |
-| SPD | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BionicMask {
@@ -5996,25 +4438,12 @@ BionicMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `BionicArmor`
 **Name:** Bionic Neck Plating  
 **Description:** Fragile.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Bionic |
-| Frame | 34 |
-| SPD | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BionicArmor {
@@ -6034,25 +4463,12 @@ BionicArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `CyborgHat`
 **Name:** Frontal Lobe Implant  
 **Description:** 10% chance to teleport to a neighboring tile when targeted by an enemy.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Cyborg |
-| Frame | 26 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CyborgHat {
@@ -6076,25 +4492,12 @@ CyborgHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `CyborgMask`
 **Name:** Optic Nerve Implant  
 **Description:** +1 range, +1 reach.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Cyborg |
-| Frame | 35 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CyborgMask {
@@ -6116,25 +4519,12 @@ CyborgMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `CyborgArmor`
 **Name:** Cerebellum Implant  
 **Description:** +10% Crit Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Cyborg |
-| Frame | 35 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CyborgArmor {
@@ -6155,25 +4545,12 @@ CyborgArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `LuckyHat`
 **Name:** Lucky Hat  
 **Description:** Fragile.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Lucky |
-| Frame | 27 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyHat {
@@ -6192,25 +4569,12 @@ LuckyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `LuckyMask`
 **Name:** Lucky Clover  
 **Description:** Fragile.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | [Lucky, |
-| Frame | 36 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyMask {
@@ -6229,25 +4593,12 @@ LuckyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `LuckyArmor`
 **Name:** Lucky Horseshoe  
 **Description:** Fragile.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Lucky |
-| Frame | 32 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyArmor {
@@ -6266,24 +4617,12 @@ LuckyArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `FlyHat`
 **Name:** Fly Hat  
 **Description:** +10% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Fly |
-| Frame | 73 |
-| SPD | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlyHat {
@@ -6304,24 +4643,12 @@ FlyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `FlyMask`
 **Name:** Fly Mask  
 **Description:** +10% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Fly |
-| Frame | 75 |
-| DEX | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlyMask {
@@ -6343,24 +4670,12 @@ FlyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `FlyNeck`
 **Name:** Fly Carapace  
 **Description:** +10% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | Fly |
-| Frame | 59 |
-| CON | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlyNeck {
@@ -6381,24 +4696,12 @@ FlyNeck {
     }
 ```
 
-</details>
-
 ---
 
 ### `FaceGrub`
 **Name:** Face Grub  
 **Description:** When your [img:shield] is depleted, this transforms into a Maggot familiar.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Grub |
-| Frame | 21 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FaceGrub {
@@ -6417,24 +4720,12 @@ FaceGrub {
     }
 ```
 
-</details>
-
 ---
 
 ### `HeadGrub`
 **Name:** Head Grub  
 **Description:** When your [img:shield] is depleted, this transforms into a Maggot familiar.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Grub |
-| Frame | 17 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeadGrub {
@@ -6453,24 +4744,12 @@ HeadGrub {
     }
 ```
 
-</details>
-
 ---
 
 ### `NeckGrub`
 **Name:** Neck Grub  
 **Description:** When your [img:shield] is depleted, this transforms into a Maggot familiar.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Grub |
-| Frame | 16 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NeckGrub {
@@ -6489,8 +4768,6 @@ NeckGrub {
     }
 ```
 
-</details>
-
 ---
 
 ### `CrimsonMask`
@@ -6498,16 +4775,6 @@ NeckGrub {
 **Description:** +1 Damage.
 Gain +1 Damage when you kill an enemy.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Meat |
-| Frame | 57 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrimsonMask {
@@ -6527,15 +4794,10 @@ CrimsonMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `CrimsonMask_Cursed`
 **Source:** `armor_sets.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrimsonMask_Cursed {
@@ -6544,8 +4806,6 @@ CrimsonMask_Cursed {
     }
 ```
 
-</details>
-
 ---
 
 ### `RedCap`
@@ -6553,16 +4813,6 @@ CrimsonMask_Cursed {
 **Description:** +1 Damage.
 Gain +1 Damage when you kill an enemy.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Meat |
-| Frame | 50 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RedCap {
@@ -6582,15 +4832,10 @@ RedCap {
     }
 ```
 
-</details>
-
 ---
 
 ### `RedCap_Cursed`
 **Source:** `armor_sets.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RedCap_Cursed {
@@ -6599,8 +4844,6 @@ RedCap_Cursed {
     }
 ```
 
-</details>
-
 ---
 
 ### `PoundOfFlesh`
@@ -6608,16 +4851,6 @@ RedCap_Cursed {
 **Description:** +1 Damage.
 Gain +1 Damage when you kill an enemy.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Meat |
-| Frame | 48 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoundOfFlesh {
@@ -6637,15 +4870,10 @@ PoundOfFlesh {
     }
 ```
 
-</details>
-
 ---
 
 ### `PoundOfFlesh_Cursed`
 **Source:** `armor_sets.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoundOfFlesh_Cursed {
@@ -6654,24 +4882,12 @@ PoundOfFlesh_Cursed {
     }
 ```
 
-</details>
-
 ---
 
 ### `FecalMask`
 **Name:** Fecal Mask  
 **Description:** Poisonous 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Fecal |
-| Frame | 60 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FecalMask {
@@ -6690,24 +4906,12 @@ FecalMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `FecalHood`
 **Name:** Fecal Hood  
 **Description:** Poisonous 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Fecal |
-| Frame | 57 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FecalHood {
@@ -6726,24 +4930,12 @@ FecalHood {
     }
 ```
 
-</details>
-
 ---
 
 ### `FecalNecklace`
 **Name:** Fecal Necklace  
 **Description:** Poisonous 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Fecal |
-| Frame | 52 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FecalNecklace {
@@ -6762,15 +4954,10 @@ FecalNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `FecalMask_Cursed`
 **Source:** `armor_sets.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FecalMask_Cursed {
@@ -6779,15 +4966,10 @@ FecalMask_Cursed {
     }
 ```
 
-</details>
-
 ---
 
 ### `FecalHood_Cursed`
 **Source:** `armor_sets.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FecalHood_Cursed {
@@ -6796,15 +4978,10 @@ FecalHood_Cursed {
     }
 ```
 
-</details>
-
 ---
 
 ### `FecalNecklace_Cursed`
 **Source:** `armor_sets.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FecalNecklace_Cursed {
@@ -6813,24 +4990,12 @@ FecalNecklace_Cursed {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeafyMask`
 **Name:** Leafy Mask  
 **Description:** While standing in tall grass, you have +40% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Leafy |
-| Frame | 70 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeafyMask {
@@ -6854,24 +5019,12 @@ LeafyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeafyHat`
 **Name:** Leafy Hat  
 **Description:** While standing in tall grass, you have +3 Mana Regen and +1 Health Regen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Leafy |
-| Frame | 68 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeafyHat {
@@ -6896,24 +5049,12 @@ LeafyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeafyNecklace`
 **Name:** Leafy Necklace  
 **Description:** While standing in tall grass, you have +3 Health Regen and +1 Mana Regen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Leafy |
-| Frame | 56 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeafyNecklace {
@@ -6938,8 +5079,6 @@ LeafyNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `CactusMask`
@@ -6947,16 +5086,6 @@ LeafyNecklace {
 **Description:** +3 Thorns, Brittle.
 Gain +2 [img:con] permanently and heal 10 HP when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Cactus |
-| Frame | 74 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CactusMask {
@@ -6979,8 +5108,6 @@ CactusMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `CactusHat`
@@ -6988,16 +5115,6 @@ CactusMask {
 **Description:** +3 Thorns, Brittle.
 Gain +2 [img:con] permanently and heal 10 HP when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Cactus |
-| Frame | 72 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CactusHat {
@@ -7020,8 +5137,6 @@ CactusHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `CactusNecklace`
@@ -7029,16 +5144,6 @@ CactusHat {
 **Description:** +3 Thorns, Brittle.
 Gain +2 [img:con] permanently and heal 10 HP when this breaks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Cactus |
-| Frame | 58 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CactusNecklace {
@@ -7061,8 +5166,6 @@ CactusNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `FaceWrap`
@@ -7070,16 +5173,6 @@ CactusNecklace {
 **Description:** +1 Health Regen.
 When downed, revive with 15% HP at the end of the round.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Mummy |
-| Frame | 76 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FaceWrap {
@@ -7099,8 +5192,6 @@ FaceWrap {
     }
 ```
 
-</details>
-
 ---
 
 ### `HeadWrap`
@@ -7108,16 +5199,6 @@ FaceWrap {
 **Description:** +1 Health Regen.
 When downed, revive with 15% HP at the end of the round.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Mummy |
-| Frame | 74 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeadWrap {
@@ -7137,8 +5218,6 @@ HeadWrap {
     }
 ```
 
-</details>
-
 ---
 
 ### `NeckWrap`
@@ -7146,16 +5225,6 @@ HeadWrap {
 **Description:** +1 Health Regen.
 When downed, revive with 15% HP at the end of the round.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Mummy |
-| Frame | 60 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NeckWrap {
@@ -7175,8 +5244,6 @@ NeckWrap {
     }
 ```
 
-</details>
-
 ---
 
 ### `ManGlasses`
@@ -7184,16 +5251,6 @@ NeckWrap {
 **Description:** Physical attacks can't miss.
 Spawn 1-2 extra pickups at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Man |
-| Frame | 77 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ManGlasses {
@@ -7214,24 +5271,12 @@ ManGlasses {
     }
 ```
 
-</details>
-
 ---
 
 ### `ManHair`
 **Name:** Man's Hairpiece  
 **Description:** ARMOR_MANHAIR_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Man |
-| Frame | 75 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ManHair {
@@ -7249,25 +5294,12 @@ ManHair {
     }
 ```
 
-</details>
-
 ---
 
 ### `ManTie`
 **Name:** Man's Tie  
 **Description:** ARMOR_MANTIE_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Man |
-| Frame | 61 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ManTie {
@@ -7285,8 +5317,6 @@ ManTie {
     }
 ```
 
-</details>
-
 ---
 
 ### `FlowerMask`
@@ -7295,16 +5325,6 @@ ManTie {
 Plants flowers on each tile you move through.
 [s:.7](Stacking this effect plants flowers in a wider area.)[/s]  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Flower |
-| Frame | 78 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlowerMask {
@@ -7327,8 +5347,6 @@ FlowerMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `FlowerHat`
@@ -7337,16 +5355,6 @@ FlowerMask {
 Plants flowers on each tile you move through.
 [s:.7](Stacking this effect plants flowers in a wider area.)[/s]  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Flower |
-| Frame | 76 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlowerHat {
@@ -7369,8 +5377,6 @@ FlowerHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `FlowerNecklace`
@@ -7379,16 +5385,6 @@ FlowerHat {
 Plants flowers on each tile you move through.
 [s:.7](Stacking this effect plants flowers in a wider area.)[/s]  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Flower |
-| Frame | 62 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlowerNecklace {
@@ -7411,8 +5407,6 @@ FlowerNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `HumanFleshMask`
@@ -7420,17 +5414,6 @@ FlowerNecklace {
 **Description:** Your basic attack has a +25% chance to inflict Fear.
 Spawn a food pickup at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | HumanFlesh |
-| Frame | 79 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanFleshMask {
@@ -7455,8 +5438,6 @@ HumanFleshMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `HumanFleshHat`
@@ -7464,17 +5445,6 @@ HumanFleshMask {
 **Description:** Your crit hits inflict Fear.
 Spawn a food pickup at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | HumanFlesh |
-| Frame | 77 |
-| STR | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanFleshHat {
@@ -7499,8 +5469,6 @@ HumanFleshHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `HumanFleshArmor`
@@ -7508,17 +5476,6 @@ HumanFleshHat {
 **Description:** Units that contact or attack you have a +25% chance to be Feared.
 Spawn a food pickup at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | HumanFlesh |
-| Frame | 63 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanFleshArmor {
@@ -7545,24 +5502,12 @@ HumanFleshArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `TentacleMask`
 **Name:** Face Tentacle  
 **Description:** Your basic attack has a +33% chance to inflict Entangle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Tentacle |
-| Frame | 80 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TentacleMask {
@@ -7583,24 +5528,12 @@ TentacleMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `TentacleHat`
 **Name:** Head Tentacle  
 **Description:** Your basic attack pulls you towards units or objects it hits.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Tentacle |
-| Frame | 78 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TentacleHat {
@@ -7621,24 +5554,12 @@ TentacleHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `TentacleNeck`
 **Name:** Back Tentacles  
 **Description:** Counterattack ranged attackers with a tentacle slap.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Tentacle |
-| Frame | 64 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TentacleNeck {
@@ -7660,8 +5581,6 @@ TentacleNeck {
     }
 ```
 
-</details>
-
 ---
 
 ### `ObeliskMask`
@@ -7669,16 +5588,6 @@ TentacleNeck {
 **Description:** Gain +2 [img:int] and +2 [img:cha] when you kill a unit.
 Stats obtained this way are lost when you take damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Obelisk |
-| Frame | 81 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ObeliskMask {
@@ -7700,8 +5609,6 @@ ObeliskMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `ObeliskHat`
@@ -7709,16 +5616,6 @@ ObeliskMask {
 **Description:** Gain +2 [img:dex] and +2 [img:lck] when you kill a unit.
 Stats obtained this way are lost when you take damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Obelisk |
-| Frame | 79 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ObeliskHat {
@@ -7740,8 +5637,6 @@ ObeliskHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `ObeliskArmor`
@@ -7749,16 +5644,6 @@ ObeliskHat {
 **Description:** Gain +2 [img:str], +2 [img:spd] and +2 [img:con] when you kill a unit.
 Stats obtained this way are lost when you take damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Obelisk |
-| Frame | 65 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ObeliskArmor {
@@ -7781,24 +5666,12 @@ ObeliskArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `ExperimentalMask`
 **Name:** Experimental Treatment  
 **Description:** ARMOR_EXPERIMENTALMASK_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Experimental |
-| Frame | 82 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExperimentalMask {
@@ -7817,24 +5690,12 @@ ExperimentalMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `ExperimentalHat`
 **Name:** Experimental Treatment  
 **Description:** ARMOR_EXPERIMENTALHAT_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Experimental |
-| Frame | 80 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExperimentalHat {
@@ -7853,24 +5714,12 @@ ExperimentalHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `ExperimentalNeck`
 **Name:** Experimental Treatment  
 **Description:** ARMOR_EXPERIMENTALNECK_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Experimental |
-| Frame | 66 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExperimentalNeck {
@@ -7889,8 +5738,6 @@ ExperimentalNeck {
     }
 ```
 
-</details>
-
 ---
 
 ### `RockyMask`
@@ -7898,16 +5745,6 @@ ExperimentalNeck {
 **Description:** Breaks when [img:shield] is depleted.
 When this breaks, gain Bruise 3.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 83 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockyMask {
@@ -7929,8 +5766,6 @@ RockyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RockyHat`
@@ -7938,16 +5773,6 @@ RockyMask {
 **Description:** Breaks when [img:shield] is depleted.
 When this breaks, gain Bruise 3.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 81 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockyHat {
@@ -7969,8 +5794,6 @@ RockyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RockyNecklace`
@@ -7978,16 +5801,6 @@ RockyHat {
 **Description:** Breaks when [img:shield] is depleted.
 When this breaks, gain Bruise 3.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 67 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockyNecklace {
@@ -8009,8 +5822,6 @@ RockyNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `SpaceHelmet`
@@ -8018,16 +5829,6 @@ RockyNecklace {
 **Description:** +1 Brace.
 30% chance to block negative status effects.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Space |
-| Frame | 84 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpaceHelmet {
@@ -8045,24 +5846,12 @@ SpaceHelmet {
     }
 ```
 
-</details>
-
 ---
 
 ### `SpaceAntenna`
 **Name:** Space Antenna  
 **Description:** Gain 0-4 mana at start of each turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Space |
-| Frame | 82 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpaceAntenna {
@@ -8087,25 +5876,12 @@ SpaceAntenna {
     }
 ```
 
-</details>
-
 ---
 
 ### `SpaceBoosters`
 **Name:** Space Boosters  
 **Description:** Your movement action is Jump.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Space |
-| Frame | 68 |
-| SPD | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpaceBoosters {
@@ -8125,8 +5901,6 @@ SpaceBoosters {
     }
 ```
 
-</details>
-
 ---
 
 ### `TinyPlanet`
@@ -8134,17 +5908,6 @@ SpaceBoosters {
 **Description:** Your basic attack pulls units towards you.
 Inflict Bruise on units who contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Planet |
-| Frame | 85 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinyPlanet {
@@ -8169,8 +5932,6 @@ TinyPlanet {
     }
 ```
 
-</details>
-
 ---
 
 ### `MiniMoon`
@@ -8178,16 +5939,6 @@ TinyPlanet {
 **Description:** Your basic attack has a +25% chance to shoot an asteroid at what it hits.
 +10% chance to Block.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Planet |
-| Frame | 83 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MiniMoon {
@@ -8210,8 +5961,6 @@ MiniMoon {
     }
 ```
 
-</details>
-
 ---
 
 ### `AsteroidBelt`
@@ -8219,16 +5968,6 @@ MiniMoon {
 **Description:** +2 Brace.
 +10% chance to block damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Planet |
-| Frame | 69 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AsteroidBelt {
@@ -8246,25 +5985,12 @@ AsteroidBelt {
     }
 ```
 
-</details>
-
 ---
 
 ### `DebrisMask`
 **Name:** Debris Mask  
 **Description:** +2 range, +1 Kinetic Spikes.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Debris |
-| Frame | 86 |
-| DEX | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DebrisMask {
@@ -8286,25 +6012,12 @@ DebrisMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `DebrisHat`
 **Name:** Debris Hat  
 **Description:** +2 range, +1 Kinetic Spikes.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Debris |
-| Frame | 84 |
-| DEX | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DebrisHat {
@@ -8326,25 +6039,12 @@ DebrisHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `DebrisArmor`
 **Name:** Debris Armor  
 **Description:** +2 range, +1 Kinetic Spikes.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Debris |
-| Frame | 70 |
-| DEX | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DebrisArmor {
@@ -8366,8 +6066,6 @@ DebrisArmor {
     }
 ```
 
-</details>
-
 ---
 
 ### `DryBoneMask`
@@ -8375,16 +6073,6 @@ DebrisArmor {
 **Description:** +1 Thorns.
 Inflict Bruise 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Bone |
-| Frame | 87 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DryBoneMask {
@@ -8408,8 +6096,6 @@ DryBoneMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `DryBoneHat`
@@ -8417,16 +6103,6 @@ DryBoneMask {
 **Description:** +1 Thorns.
 Inflict Bruise 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Bone |
-| Frame | 85 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DryBoneHat {
@@ -8450,8 +6126,6 @@ DryBoneHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `DryBoneNecklace`
@@ -8459,16 +6133,6 @@ DryBoneHat {
 **Description:** +1 Thorns.
 Inflict Bruise 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Bone |
-| Frame | 71 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DryBoneNecklace {
@@ -8492,8 +6156,6 @@ DryBoneNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `ProtectionTransmitter`
@@ -8501,16 +6163,6 @@ DryBoneNecklace {
 **Description:** Bruise 2.
 All allies gain Brace 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Transmitter |
-| Frame | 148 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ProtectionTransmitter {
@@ -8531,8 +6183,6 @@ ProtectionTransmitter {
     }
 ```
 
-</details>
-
 ---
 
 ### `DamageTransmitter`
@@ -8540,16 +6190,6 @@ ProtectionTransmitter {
 **Description:** -2 Damage.
 All allies gain +1 Damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Transmitter |
-| Frame | 98 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DamageTransmitter {
@@ -8570,25 +6210,12 @@ DamageTransmitter {
     }
 ```
 
-</details>
-
 ---
 
 ### `EnergyTransmitter`
 **Name:** Energy Transmitter  
 **Description:** All allies gain +2 [img:spd].  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Transmitter |
-| Frame | 133 |
-| SPD | -4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EnergyTransmitter {
@@ -8610,24 +6237,12 @@ EnergyTransmitter {
     }
 ```
 
-</details>
-
 ---
 
 ### `ThrummingCirclet`
 **Name:** Thrumming Circlet  
 **Description:** If you end your turn without using your basic attack, gain +1 Damage and +1 Thorns.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Thrumming |
-| Frame | 149 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrummingCirclet {
@@ -8648,24 +6263,12 @@ ThrummingCirclet {
     }
 ```
 
-</details>
-
 ---
 
 ### `ThrummingSpectacles`
 **Name:** Thrumming Spectacles  
 **Description:** If you end your turn without using your movement action, gain +1 Health Regen and +1 [img:shield].  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Thrumming |
-| Frame | 134 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrummingSpectacles {
@@ -8686,24 +6289,12 @@ ThrummingSpectacles {
     }
 ```
 
-</details>
-
 ---
 
 ### `ThrummingCharm`
 **Name:** Thrumming Charm  
 **Description:** If you end your turn without casting any spells, gain +1 Magic Damage and +1 Charge.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Thrumming |
-| Frame | 124 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrummingCharm {
@@ -8724,24 +6315,12 @@ ThrummingCharm {
     }
 ```
 
-</details>
-
 ---
 
 ### `WitchesHat`
 **Name:** Witch's Hat  
 **Description:** +1 Magic Damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Witch |
-| Frame | 146 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WitchesHat {
@@ -8758,24 +6337,12 @@ WitchesHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `WitchesNose`
 **Name:** Witch's Nose  
 **Description:** +1 Magic Damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Witch |
-| Frame | 131 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WitchesNose {
@@ -8792,24 +6359,12 @@ WitchesNose {
     }
 ```
 
-</details>
-
 ---
 
 ### `WitchesCape`
 **Name:** Witch's Cape  
 **Description:** +1 Magic Damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Witch |
-| Frame | 122 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WitchesCape {
@@ -8826,24 +6381,12 @@ WitchesCape {
     }
 ```
 
-</details>
-
 ---
 
 ### `StunningHaircut`
 **Name:** Stunning Haircut  
 **Description:** Your face and neck item effects are doubled.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Stunning |
-| Frame | 152 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StunningHaircut {
@@ -8861,24 +6404,12 @@ StunningHaircut {
     }
 ```
 
-</details>
-
 ---
 
 ### `StunningChain`
 **Name:** Stunning Chain  
 **Description:** Your head and face item effects are doubled.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Stunning |
-| Frame | 136 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StunningChain {
@@ -8897,24 +6428,12 @@ StunningChain {
     }
 ```
 
-</details>
-
 ---
 
 ### `StunningBeard`
 **Name:** Stunning Beard  
 **Description:** Your head and neck item effects are doubled.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Stunning |
-| Frame | 137 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StunningBeard {
@@ -8932,24 +6451,12 @@ StunningBeard {
     }
 ```
 
-</details>
-
 ---
 
 ### `SuperheroHat`
 **Name:** Superhero Hat  
 **Description:** +2 Health Regen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Superhero |
-| Frame | 154 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SuperheroHat {
@@ -8968,25 +6475,12 @@ SuperheroHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `SuperheroCape`
 **Name:** Superhero Cape  
 **Description:** Flying.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Superhero |
-| Frame | 130 |
-| SPD | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SuperheroCape {
@@ -9005,24 +6499,12 @@ SuperheroCape {
     }
 ```
 
-</details>
-
 ---
 
 ### `SuperheroMask`
 **Name:** Superhero Mask  
 **Description:** +1 Damage. Your basic attack knocks units into the air, lobbing them back 3 tiles.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Superhero |
-| Frame | 139 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SuperheroMask {
@@ -9046,25 +6528,12 @@ SuperheroMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeadHelmet`
 **Name:** Lead Helmet  
 **Description:** ARMOR_LEADHELMET_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Lead |
-| Frame | 156 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeadHelmet {
@@ -9084,25 +6553,12 @@ LeadHelmet {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeadShoulderPads`
 **Name:** Lead Shoulder Pads  
 **Description:** ARMOR_LEADSHOULDERPADS_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Lead |
-| Frame | 129 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeadShoulderPads {
@@ -9122,25 +6578,12 @@ LeadShoulderPads {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeadMask`
 **Name:** Lead Mask  
 **Description:** ARMOR_LEADMASK_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Lead |
-| Frame | 141 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeadMask {
@@ -9160,24 +6603,12 @@ LeadMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `ScaryBaby`
 **Name:** Scary Baby  
 **Description:** Inflict Fear 2 on a random enemy at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Baby |
-| Frame | 180 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScaryBaby {
@@ -9197,24 +6628,12 @@ ScaryBaby {
     }
 ```
 
-</details>
-
 ---
 
 ### `CharmingBaby`
 **Name:** Charming Baby  
 **Description:** Inflict Charmed 2 on a random enemy at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Baby |
-| Frame | 188 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmingBaby {
@@ -9234,24 +6653,12 @@ CharmingBaby {
     }
 ```
 
-</details>
-
 ---
 
 ### `FreezingBaby`
 **Name:** Freezing Baby  
 **Description:** Inflict Freeze 2 on a random enemy at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Baby |
-| Frame | 166 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FreezingBaby {
@@ -9271,24 +6678,12 @@ FreezingBaby {
     }
 ```
 
-</details>
-
 ---
 
 ### `Obi`
 **Name:** Obi  
 **Description:** Start battle with +2 bonus moves.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Ninja |
-| Frame | 148 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Obi {
@@ -9305,24 +6700,12 @@ Obi {
     }
 ```
 
-</details>
-
 ---
 
 ### `Fukumen`
 **Name:** Fukumen  
 **Description:** Counter the first 2 attacks you receive each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Ninja |
-| Frame | 175 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fukumen {
@@ -9339,24 +6722,12 @@ Fukumen {
     }
 ```
 
-</details>
-
 ---
 
 ### `Zukin`
 **Name:** Zukin  
 **Description:** Start battle with +2 Backflip.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Ninja |
-| Frame | 184 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Zukin {
@@ -9376,24 +6747,12 @@ Zukin {
     }
 ```
 
-</details>
-
 ---
 
 ### `ProwlersCap`
 **Name:** Prowler's Cap  
 **Description:** Backstabs have +25% Crit Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Prowler |
-| Frame | 186 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ProwlersCap {
@@ -9410,24 +6769,12 @@ ProwlersCap {
     }
 ```
 
-</details>
-
 ---
 
 ### `ProwlersMask`
 **Name:** Prowler's Mask  
 **Description:** Backstabs inflict Bleed 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Prowler |
-| Frame | 177 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ProwlersMask {
@@ -9446,24 +6793,12 @@ ProwlersMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `ProwlersVial`
 **Name:** Prowler's Vial  
 **Description:** Backstabs heal you by 2 HP.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Prowler |
-| Frame | 164 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ProwlersVial {
@@ -9482,25 +6817,12 @@ ProwlersVial {
     }
 ```
 
-</details>
-
 ---
 
 ### `MageHat`
 **Name:** Mage's Hat  
 **Description:** Gain +1 Charge each time you cast a spell.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Mage |
-| Frame | 101 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageHat {
@@ -9521,25 +6843,12 @@ MageHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `MageRobe`
 **Name:** Mage's Robe  
 **Description:** Gain +1 Charge when you deal damage with your basic attack.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Mage |
-| Frame | 101 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageRobe {
@@ -9562,25 +6871,12 @@ MageRobe {
     }
 ```
 
-</details>
-
 ---
 
 ### `MageScarf`
 **Name:** Mage's Scarf  
 **Description:** Gain +1 Charge each time an enemy dies.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Mage |
-| Frame | 101 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageScarf {
@@ -9601,8 +6897,6 @@ MageScarf {
     }
 ```
 
-</details>
-
 ---
 
 ### `ThiefHood`
@@ -9610,16 +6904,6 @@ MageScarf {
 **Description:** +5% Dodge Chance and +5% Crit Chance.
 Your basic attack inflicts Bleed.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Thief |
-| Frame | 102 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThiefHood {
@@ -9640,8 +6924,6 @@ ThiefHood {
     }
 ```
 
-</details>
-
 ---
 
 ### `ThiefTattoo`
@@ -9649,16 +6931,6 @@ ThiefHood {
 **Description:** +5% Dodge Chance and +5% Crit Chance.
 Your basic attack inflicts Poison.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Thief |
-| Frame | 102 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThiefTattoo {
@@ -9679,24 +6951,12 @@ ThiefTattoo {
     }
 ```
 
-</details>
-
 ---
 
 ### `ThiefCloak`
 **Name:** Thief's Cloak  
 **Description:** +10% Dodge Chance and +10% Crit Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Thief |
-| Frame | 102 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThiefCloak {
@@ -9714,24 +6974,12 @@ ThiefCloak {
     }
 ```
 
-</details>
-
 ---
 
 ### `FighterHelm`
 **Name:** Fighter's Helm  
 **Description:** +15% chance to refresh your basic attack, movement, weapon and trinket actions when you get a kill.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 103 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FighterHelm {
@@ -9756,24 +7004,12 @@ FighterHelm {
     }
 ```
 
-</details>
-
 ---
 
 ### `FighterScar`
 **Name:** Fighter's Scar  
 **Description:** +15% chance to refresh your basic attack, movement, weapon and trinket actions when you get a kill.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 103 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FighterScar {
@@ -9797,24 +7033,12 @@ FighterScar {
     }
 ```
 
-</details>
-
 ---
 
 ### `FighterShoulderPad`
 **Name:** Fighter's Shoulder Pad  
 **Description:** +15% chance to refresh your basic attack, movement, weapon and trinket actions when you get a kill.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 103 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FighterShoulderPad {
@@ -9839,24 +7063,12 @@ FighterShoulderPad {
     }
 ```
 
-</details>
-
 ---
 
 ### `ClericHat`
 **Name:** Cleric's Mitre  
 **Description:** Your heals heal for 2 extra.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 104 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ClericHat {
@@ -9875,24 +7087,12 @@ ClericHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `ClericTears`
 **Name:** Cleric's Tears  
 **Description:** Gain +1 [img:divineshield] each time an ally is downed.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 104 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ClericTears {
@@ -9913,8 +7113,6 @@ ClericTears {
     }
 ```
 
-</details>
-
 ---
 
 ### `ClericRelic`
@@ -9922,16 +7120,6 @@ ClericTears {
 **Description:** +1 Brace.
 +15% chance to inflict Fear on units that contact or attack you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 104 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ClericRelic {
@@ -9953,24 +7141,12 @@ ClericRelic {
     }
 ```
 
-</details>
-
 ---
 
 ### `TankHelmet`
 **Name:** Tank's Helmet  
 **Description:** +1 Knockback damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Tank |
-| Frame | 105 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankHelmet {
@@ -9990,24 +7166,12 @@ TankHelmet {
     }
 ```
 
-</details>
-
 ---
 
 ### `TankTattoo`
 **Name:** Tank's Tattoo  
 **Description:** All Knockback inflicted by you is increased by 2.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Tank |
-| Frame | 105 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankTattoo {
@@ -10024,24 +7188,12 @@ TankTattoo {
     }
 ```
 
-</details>
-
 ---
 
 ### `TankPads`
 **Name:** Tank's Pads  
 **Description:** Your knockback damage has a +10% chance to inflict Stun.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Tank |
-| Frame | 105 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankPads {
@@ -10063,25 +7215,12 @@ TankPads {
     }
 ```
 
-</details>
-
 ---
 
 ### `HunterCap`
 **Name:** Hunter's Cap  
 **Description:** Your familiars gain All Stats Up.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Hunter |
-| Frame | 106 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HunterCap {
@@ -10106,24 +7245,12 @@ HunterCap {
     }
 ```
 
-</details>
-
 ---
 
 ### `HunterMonocle`
 **Name:** Hunter's Monocle  
 **Description:** +2 range.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Hunter |
-| Frame | 106 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HunterMonocle {
@@ -10140,24 +7267,12 @@ HunterMonocle {
     }
 ```
 
-</details>
-
 ---
 
 ### `HunterQuiver`
 **Name:** Hunter's Quiver  
 **Description:** Start each battle with 2 bonus attacks.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Hunter, |
-| Frame | 106 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HunterQuiver {
@@ -10174,24 +7289,12 @@ HunterQuiver {
     }
 ```
 
-</details>
-
 ---
 
 ### `MysticEye`
 **Name:** Mystic Eye  
 **Description:** +25% chance to reflect projectiles. Your tile-targeted spells have +2 range.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Psychic |
-| Frame | 107 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MysticEye {
@@ -10209,24 +7312,12 @@ MysticEye {
     }
 ```
 
-</details>
-
 ---
 
 ### `TinfoilHat`
 **Name:** Tinfoil Hat  
 **Description:** You are immune to Charm, Madness, Fear and Confusion.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | [Psychic, |
-| Frame | 107 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinfoilHat {
@@ -10247,8 +7338,6 @@ TinfoilHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `DivinersCloth`
@@ -10256,16 +7345,6 @@ TinfoilHat {
 **Description:** Adjacent allies have +25% Dodge Chance.
 Give +1 Charge to all adjacent allies at the end of your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Psychic, |
-| Frame | 107 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DivinersCloth {
@@ -10292,24 +7371,12 @@ DivinersCloth {
     }
 ```
 
-</details>
-
 ---
 
 ### `DeathMask`
 **Name:** Death Mask  
 **Description:** Get downed at the start of each battle, then revive at the end of the first round with full HP and +2 [img:shield].  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Necromancer |
-| Frame | 108 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DeathMask {
@@ -10332,24 +7399,12 @@ DeathMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `SpiderHat`
 **Name:** Spider Hat  
 **Description:** When you destroy a corpse, spawn 2 Spiderlings.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Necromancer |
-| Frame | 108 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderHat {
@@ -10369,24 +7424,12 @@ SpiderHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `LeechNecklace`
 **Name:** Leech Necklace  
 **Description:** Your spells inflict Leech 1 against enemies.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Necromancer, |
-| Frame | 108 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeechNecklace {
@@ -10407,8 +7450,6 @@ LeechNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `FaceBrand`
@@ -10416,16 +7457,6 @@ LeechNecklace {
 **Description:** Each time you use your basic attack, gain +1 [img:shield].
 [s:.7](This counts as an empty armor slot.)[/s]  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Monk |
-| Frame | 109 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FaceBrand {
@@ -10445,8 +7476,6 @@ FaceBrand {
     }
 ```
 
-</details>
-
 ---
 
 ### `HeadBrand`
@@ -10455,16 +7484,6 @@ FaceBrand {
 If you land on a unit, deal 1 damage to it and bounce to an adjacent tile.
 [s:.7](This counts as an empty armor slot.)[/s]  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Monk |
-| Frame | 109 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeadBrand {
@@ -10482,8 +7501,6 @@ HeadBrand {
     }
 ```
 
-</details>
-
 ---
 
 ### `PrayerBeads`
@@ -10491,16 +7508,6 @@ HeadBrand {
 **Description:** Each time you take damage, gain +3 Brace until your next turn.
 [s:.7](This counts as an empty armor slot.)[/s]  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Monk, |
-| Frame | 109 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PrayerBeads {
@@ -10525,24 +7532,12 @@ PrayerBeads {
     }
 ```
 
-</details>
-
 ---
 
 ### `ScrappersMask`
 **Name:** Scrapper's Mask  
 **Description:** When you break an item, gain +3 [img:shield].  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | [Tinkerer, |
-| Frame | 110 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScrappersMask {
@@ -10564,24 +7559,12 @@ ScrappersMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `ScrappersHat`
 **Name:** Scrapper's Hat  
 **Description:** When you break an item, spawn 3 random pickups.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | [Tinkerer, |
-| Frame | 110 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScrappersHat {
@@ -10613,8 +7596,6 @@ ScrappersHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `ScrappersBackpack`
@@ -10622,16 +7603,6 @@ ScrappersHat {
 **Description:** When you break an item, recover it at the end of the battle with 1 durability.
 [s:.7](Excludes temporary items)[/s]  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Tinkerer, |
-| Frame | 110 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScrappersBackpack {
@@ -10648,24 +7619,12 @@ ScrappersBackpack {
     }
 ```
 
-</details>
-
 ---
 
 ### `IronJaw`
 **Name:** Iron Jaw  
 **Description:** Counterattack melee attackers with a bite that deals 3 damage with Lifesteal.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | [Butcher, |
-| Frame | 111 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IronJaw {
@@ -10687,8 +7646,6 @@ IronJaw {
     }
 ```
 
-</details>
-
 ---
 
 ### `FleshShroud`
@@ -10696,16 +7653,6 @@ IronJaw {
 **Description:** Gain +1 [img:shield] each time you heal.
 When you kill a unit or destroy a corpse, it becomes meat.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | [Butcher, |
-| Frame | 111 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FleshShroud {
@@ -10725,24 +7672,12 @@ FleshShroud {
     }
 ```
 
-</details>
-
 ---
 
 ### `HookedNecklace`
 **Name:** Hooked Necklace  
 **Description:** +2 Thorns. Cleave units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Butcher |
-| Frame | 111 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HookedNecklace {
@@ -10767,8 +7702,6 @@ HookedNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `GreenmanMask`
@@ -10776,16 +7709,6 @@ HookedNecklace {
 **Description:** +3 Brace while standing in tall grass.
 +3 Mana Regen while standing in water.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | [Druid, |
-| Frame | 112 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GreenmanMask {
@@ -10813,8 +7736,6 @@ GreenmanMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `MushroomHat`
@@ -10822,16 +7743,6 @@ GreenmanMask {
 **Description:** Inflict Confusion 2 on units that contact or attack you.
 Familiars you spawn inflict Confusion.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Druid |
-| Frame | 112 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MushroomHat {
@@ -10857,24 +7768,12 @@ MushroomHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RingOfMushrooms`
 **Name:** Ring of Mushrooms  
 **Description:** All of your area abilities gain +1 area.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Druid, |
-| Frame | 112 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RingOfMushrooms {
@@ -10891,30 +7790,12 @@ RingOfMushrooms {
     }
 ```
 
-</details>
-
 ---
 
 ### `CatWhiskers`
 **Name:** Ordinary Whiskers  
 **Description:** ARMOR_CATWHISKERS_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Collarless |
-| Frame | 119 |
-| STR | 1 |
-| DEX | 1 |
-| INT | 1 |
-| LCK | 1 |
-| CON | 1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatWhiskers {
@@ -10938,30 +7819,12 @@ CatWhiskers {
     }
 ```
 
-</details>
-
 ---
 
 ### `CatEars`
 **Name:** Normal Ears  
 **Description:** ARMOR_CATEARS_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Collarless |
-| Frame | 132 |
-| STR | 1 |
-| DEX | 1 |
-| INT | 1 |
-| LCK | 1 |
-| CON | 1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatEars {
@@ -10985,30 +7848,12 @@ CatEars {
     }
 ```
 
-</details>
-
 ---
 
 ### `CatCollar`
 **Name:** Mundane Collar  
 **Description:** ARMOR_CATCOLLAR_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Collarless, |
-| Frame | 87 |
-| STR | 1 |
-| DEX | 1 |
-| INT | 1 |
-| LCK | 1 |
-| CON | 1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatCollar {
@@ -11032,25 +7877,12 @@ CatCollar {
     }
 ```
 
-</details>
-
 ---
 
 ### `ClownMakeup`
 **Name:** Clown Makeup  
 **Description:** Triple the effects of your Head armor.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Jester |
-| Frame | 171 |
-| LCK | -3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ClownMakeup {
@@ -11069,25 +7901,12 @@ ClownMakeup {
     }
 ```
 
-</details>
-
 ---
 
 ### `CapAndBells`
 **Name:** Cap and Bells  
 **Description:** Triple the effects of your Trinket.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Jester |
-| Frame | 180 |
-| LCK | -3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CapAndBells {
@@ -11107,25 +7926,12 @@ CapAndBells {
     }
 ```
 
-</details>
-
 ---
 
 ### `Ruffle`
 **Name:** Ruffle  
 **Description:** Triple the effects of your Face armor.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Jester |
-| Frame | 163 |
-| LCK | -3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ruffle {
@@ -11144,24 +7950,12 @@ Ruffle {
     }
 ```
 
-</details>
-
 ---
 
 ### `FeatheredVeil`
 **Name:** Feathered Veil  
 **Description:** Counterattack melee attackers.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Feathered |
-| Frame | 92 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeatheredVeil {
@@ -11181,25 +7975,12 @@ FeatheredVeil {
     }
 ```
 
-</details>
-
 ---
 
 ### `FeatheredCap`
 **Name:** Feathered Cap  
 **Description:** ARMOR_FEATHEREDCAP_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Feathered |
-| Frame | 89 |
-| SPD | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeatheredCap {
@@ -11217,24 +7998,12 @@ FeatheredCap {
     }
 ```
 
-</details>
-
 ---
 
 ### `FeatheredNecklace`
 **Name:** Feathered Necklace  
 **Description:** +15% Dodge Chance.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Feathered |
-| Frame | 75 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeatheredNecklace {
@@ -11251,25 +8020,12 @@ FeatheredNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `TheMind`
 **Name:** The Mind  
 **Description:** ARMOR_THEMIND_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Godhead |
-| Frame | 205 |
-| INT | 7 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheMind {
@@ -11285,25 +8041,12 @@ TheMind {
     }
 ```
 
-</details>
-
 ---
 
 ### `TheBody`
 **Name:** The Body  
 **Description:** ARMOR_THEBODY_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Godhead |
-| Frame | 193 |
-| CON | 7 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheBody {
@@ -11318,25 +8061,12 @@ TheBody {
     }
 ```
 
-</details>
-
 ---
 
 ### `TheSoul`
 **Name:** The Soul  
 **Description:** ARMOR_THESOUL_DESC  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Godhead |
-| Frame | 177 |
-| LCK | 7 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheSoul {
@@ -11351,25 +8081,12 @@ TheSoul {
     }
 ```
 
-</details>
-
 ---
 
 ### `BrickHat`
 **Name:** Brick Hat  
 **Description:** Inflict Bruise 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Brick |
-| Frame | 122 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrickHat {
@@ -11393,25 +8110,12 @@ BrickHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `BrickMask`
 **Name:** Brick Mask  
 **Description:** Inflict Bruise 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Brick |
-| Frame | 124 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrickMask {
@@ -11435,25 +8139,12 @@ BrickMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `BrickNecklace`
 **Name:** Brick Necklace  
 **Description:** Inflict Bruise 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Brick |
-| Frame | 113 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrickNecklace {
@@ -11477,24 +8168,12 @@ BrickNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `SlimyHat`
 **Name:** Slimy Hat  
 **Description:** +15% chance to catch projectiles. Inflict Immobile 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Slimy |
-| Frame | 123 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlimyHat {
@@ -11523,24 +8202,12 @@ SlimyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `SlimyMask`
 **Name:** Slimy Mask  
 **Description:** +15% chance to catch projectiles. Inflict Immobile 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Slimy |
-| Frame | 125 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlimyMask {
@@ -11567,24 +8234,12 @@ SlimyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `SlimyNecklace`
 **Name:** Slimy Necklace  
 **Description:** +15% chance to catch projectiles. Inflict Immobile 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Slimy |
-| Frame | 114 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlimyNecklace {
@@ -11611,24 +8266,12 @@ SlimyNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `RatHat`
 **Name:** Rat Hat  
 **Description:** Start battle with a Charmed Pinky.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Rat |
-| Frame | 124 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatHat {
@@ -11647,24 +8290,12 @@ RatHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RatMask`
 **Name:** Rat Mask  
 **Description:** Start battle with a Charmed Pinky.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Rat |
-| Frame | 126 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatMask {
@@ -11684,24 +8315,12 @@ RatMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RatNecklace`
 **Name:** Rat Necklace  
 **Description:** Start battle with a Charmed Pinky.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Rat |
-| Frame | 115 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatNecklace {
@@ -11721,24 +8340,12 @@ RatNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `CarapaceHat`
 **Name:** Carapace Hat  
 **Description:** Cleanse 1 stack of a random negative status effect when you end your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Carapace |
-| Frame | 73 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CarapaceHat {
@@ -11759,24 +8366,12 @@ CarapaceHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `CarapaceMask`
 **Name:** Carapace Mask  
 **Description:** Cleanse 1 stack of a random negative status effect when you end your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Carapace |
-| Frame | 75 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CarapaceMask {
@@ -11797,24 +8392,12 @@ CarapaceMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `CarapaceNecklace`
 **Name:** Carapace Necklace  
 **Description:** Cleanse 1 stack of a random negative status effect when you end your turn.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Carapace |
-| Frame | 59 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CarapaceNecklace {
@@ -11835,24 +8418,12 @@ CarapaceNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `RadioactiveHat`
 **Name:** Radioactive Hat  
 **Description:** Adjacent units get All Stats Down.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Radioactive |
-| Frame | 86 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RadioactiveHat {
@@ -11878,24 +8449,12 @@ RadioactiveHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `RadioactiveMask`
 **Name:** Radioactive Mask  
 **Description:** Adjacent units get All Stats Down.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Radioactive |
-| Frame | 88 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RadioactiveMask {
@@ -11921,24 +8480,12 @@ RadioactiveMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `RadioactiveNecklace`
 **Name:** Radioactive Necklace  
 **Description:** Adjacent units get All Stats Down.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Radioactive |
-| Frame | 72 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RadioactiveNecklace {
@@ -11964,24 +8511,12 @@ RadioactiveNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `MoltenHat`
 **Name:** Molten Hat  
 **Description:** Start with Burn 2. Your basic attack inflicts Burn 1. Inflict Burn 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Molten |
-| Frame | 87 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoltenHat {
@@ -12006,24 +8541,12 @@ MoltenHat {
 	}
 ```
 
-</details>
-
 ---
 
 ### `MoltenMask`
 **Name:** Molten Mask  
 **Description:** Start with Burn 2. Your basic attack inflicts Burn 1. Inflict Burn 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Molten |
-| Frame | 89 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoltenMask {
@@ -12048,24 +8571,12 @@ MoltenMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `MoltenNecklace`
 **Name:** Molten Necklace  
 **Description:** Start with Burn 2. Your basic attack inflicts Burn 1. Inflict Burn 1 on units that contact you.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Molten |
-| Frame | 73 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoltenNecklace {
@@ -12090,24 +8601,12 @@ MoltenNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `MothersHat`
 **Name:** Mother's Hat  
 **Description:** Spawn a Charmed Tiny Tumor at the start of each battle and whenever you're downed.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Mother |
-| Frame | 88 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MothersHat {
@@ -12128,24 +8627,12 @@ MothersHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `MothersMask`
 **Name:** Mother's Mask  
 **Description:** Spawn a Charmed Tiny Tumor at the start of each battle and whenever you're downed.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Mother |
-| Frame | 90 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MothersMask {
@@ -12166,24 +8653,12 @@ MothersMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `MothersNecklace`
 **Name:** Mother's Necklace  
 **Description:** Spawn a Charmed Tiny Tumor at the start of each battle and whenever you're downed.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Mother |
-| Frame | 74 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MothersNecklace {
@@ -12204,25 +8679,12 @@ MothersNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `NurseHat`
 **Name:** Nurse Hat  
 **Description:** +1 Health Regen. Your heals heal for 1 extra.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Nurse |
-| Frame | 125 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NurseHat {
@@ -12242,25 +8704,12 @@ NurseHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `NurseMask`
 **Name:** Nurse Mask  
 **Description:** +1 Health Regen. Your heals heal for 1 extra.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Nurse |
-| Frame | 127 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NurseMask {
@@ -12280,25 +8729,12 @@ NurseMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `NurseNecklace`
 **Name:** Nurse Necklace  
 **Description:** +1 Health Regen. Your heals heal for 1 extra.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Nurse |
-| Frame | 116 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NurseNecklace {
@@ -12318,24 +8754,12 @@ NurseNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `HybridHat`
 **Name:** Hybrid Hat  
 **Description:** Start with a bonus move and Bleed 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Hybrid |
-| Frame | 126 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HybridHat {
@@ -12353,24 +8777,12 @@ HybridHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `HybridMask`
 **Name:** Hybrid Mask  
 **Description:** Start with a bonus attack and Poison 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | [Hybrid, |
-| Frame | 128 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HybridMask {
@@ -12388,24 +8800,12 @@ HybridMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `HybridNecklace`
 **Name:** Hybrid Necklace  
 **Description:** Start with +5 Charge and Bruise 1.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Hybrid |
-| Frame | 117 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HybridNecklace {
@@ -12423,24 +8823,12 @@ HybridNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `FattyHat`
 **Name:** Fatty Hat  
 **Description:** Brace 1. Your basic attack has +1 Knockback.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Fatty |
-| Frame | 116 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FattyHat {
@@ -12460,24 +8848,12 @@ FattyHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `FattyMask`
 **Name:** Fatty Mask  
 **Description:** Brace 1. Your basic attack has +1 Knockback.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Fatty |
-| Frame | 98 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FattyMask {
@@ -12497,24 +8873,12 @@ FattyMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `FattyNecklace`
 **Name:** Fatty Necklace  
 **Description:** Brace 1. Your basic attack has +1 Knockback.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Fatty |
-| Frame | 80 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FattyNecklace {
@@ -12534,24 +8898,12 @@ FattyNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `MedicalHat`
 **Name:** Medical Hat  
 **Description:** All of your stats are increased by 1 for each disorder you have.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Medical |
-| Frame | 117 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedicalHat {
@@ -12568,24 +8920,12 @@ MedicalHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `MedicalMask`
 **Name:** Medical Mask  
 **Description:** All of your stats are increased by 1 for each disorder you have.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Medical |
-| Frame | 99 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedicalMask {
@@ -12602,24 +8942,12 @@ MedicalMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `MedicalNecklace`
 **Name:** Medical Necklace  
 **Description:** All of your stats are increased by 1 for each disorder you have.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Medical |
-| Frame | 81 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedicalNecklace {
@@ -12636,25 +8964,12 @@ MedicalNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `OcularChip`
 **Name:** Ocular Chip  
 **Description:** Your spells cost -1 mana.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Chip |
-| Frame | 118 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OcularChip {
@@ -12674,25 +8989,12 @@ OcularChip {
     }
 ```
 
-</details>
-
 ---
 
 ### `CerebralChip`
 **Name:** Cerebral Chip  
 **Description:** Your spells cost -1 mana.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Chip |
-| Frame | 114 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CerebralChip {
@@ -12712,25 +9014,12 @@ CerebralChip {
     }
 ```
 
-</details>
-
 ---
 
 ### `SpinalChip`
 **Name:** Spinal Chip  
 **Description:** Your spells cost -1 mana.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Chip |
-| Frame | 82 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpinalChip {
@@ -12750,8 +9039,6 @@ SpinalChip {
     }
 ```
 
-</details>
-
 ---
 
 ### `DemonicHat`
@@ -12759,16 +9046,6 @@ SpinalChip {
 **Description:** +3 Thorns. Trample.
 You can no longer heal.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Demonic |
-| Frame | 127 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DemonicHat {
@@ -12787,8 +9064,6 @@ DemonicHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `DemonicMask`
@@ -12796,16 +9071,6 @@ DemonicHat {
 **Description:** +3 Bleed Thorns.
 Trample. Bleed 3.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Demonic |
-| Frame | 129 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DemonicMask {
@@ -12824,24 +9089,12 @@ DemonicMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `DemonicNecklace`
 **Name:** Demonic Necklace  
 **Description:** Bruise 1. When you take damage, gain +2 Damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Demonic |
-| Frame | 118 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DemonicNecklace {
@@ -12861,24 +9114,12 @@ DemonicNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `FrozenHat`
 **Name:** Frozen Hat  
 **Description:** Your basic attack inflicts Slow and has a +10% chance to Freeze units. Units that contact you gain Slow and have a 10% chance to become Frozen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Frozen |
-| Frame | 128 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FrozenHat {
@@ -12912,24 +9153,12 @@ FrozenHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `FrozenMask`
 **Name:** Frozen Mask  
 **Description:** Your basic attack inflicts Slow and has a +10% chance to Freeze units. Units that contact you gain Slow and have a 10% chance to become Frozen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Frozen |
-| Frame | 130 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FrozenMask {
@@ -12963,24 +9192,12 @@ FrozenMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `FrozenNecklace`
 **Name:** Frozen Necklace  
 **Description:** Your basic attack inflicts Slow and has a +10% chance to Freeze units. Units that contact you gain Slow and have a 10% chance to become Frozen.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Frozen |
-| Frame | 119 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FrozenNecklace {
@@ -13014,24 +9231,12 @@ FrozenNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `SaberToothedHat`
 **Name:** Sabertooth Hat  
 **Description:** +2 Thorns. Ice immunity.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Wooly |
-| Frame | 114 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SaberToothedHat {
@@ -13053,24 +9258,12 @@ SaberToothedHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `CavemanBeard`
 **Name:** Wooly Beard  
 **Description:** Brace 2. Ice immunity.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | [Wooly, |
-| Frame | 96 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CavemanBeard {
@@ -13091,24 +9284,12 @@ CavemanBeard {
     }
 ```
 
-</details>
-
 ---
 
 ### `SaberToothedPelt`
 **Name:** Sabertooth Pelt  
 **Description:** +2 Health Regen. Ice immunity.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Wooly |
-| Frame | 78 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SaberToothedPelt {
@@ -13129,24 +9310,12 @@ SaberToothedPelt {
     }
 ```
 
-</details>
-
 ---
 
 ### `RuneofJera`
 **Name:** Rune of Jera  
 **Description:** Your trinket effects are doubled.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Rune |
-| Frame | 119 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RuneofJera {
@@ -13164,24 +9333,12 @@ RuneofJera {
     }
 ```
 
-</details>
-
 ---
 
 ### `RuneofHagalaz`
 **Name:** Rune of Hagalaz  
 **Description:** Your Weapons hit twice.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Rune |
-| Frame | 115 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RuneofHagalaz {
@@ -13198,24 +9355,12 @@ RuneofHagalaz {
     }
 ```
 
-</details>
-
 ---
 
 ### `RuneofPerthro`
 **Name:** Rune of Perthro  
 **Description:** This item counts for all item sets.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Rune |
-| Frame | 83 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RuneofPerthro {
@@ -13230,26 +9375,12 @@ RuneofPerthro {
     }
 ```
 
-</details>
-
 ---
 
 ### `CavemanWig`
 **Name:** Caveman Wig  
 **Description:** Spawn 1-3 Charmed Lice at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Caveman |
-| Frame | 115 |
-| STR | 2 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CavemanWig {
@@ -13272,26 +9403,12 @@ CavemanWig {
     }
 ```
 
-</details>
-
 ---
 
 ### `CavemanEyebrows`
 **Name:** Caveman Eyebrows  
 **Description:** Your weapons deal double damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Caveman |
-| Frame | 97 |
-| INT | -1 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CavemanEyebrows {
@@ -13311,26 +9428,12 @@ CavemanEyebrows {
     }
 ```
 
-</details>
-
 ---
 
 ### `CavemanNecklace`
 **Name:** Caveman Necklace  
 **Description:** +33% crit damage.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Caveman |
-| Frame | 79 |
-| INT | -1 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CavemanNecklace {
@@ -13350,25 +9453,12 @@ CavemanNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `DinoHat`
 **Name:** Dino Hat  
 **Description:** Allies gain +1 [img:str] at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | [Dino, |
-| Frame | 131 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DinoHat { 
@@ -13391,25 +9481,12 @@ DinoHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `DinoMask`
 **Name:** Dino Mask  
 **Description:** Allies gain +1 [img:con] at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | [Dino, |
-| Frame | 118 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DinoMask { 
@@ -13432,25 +9509,12 @@ DinoMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `DinoNecklace`
 **Name:** Dino Necklace  
 **Description:** Allies gain +1 [img:spd] at the start of each battle.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Dino, |
-| Frame | 86 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DinoNecklace { 
@@ -13473,25 +9537,12 @@ DinoNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `BigRockHat`
 **Name:** Big Rock Hat  
 **Description:** Brace 2.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 129 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigRockHat {
@@ -13511,25 +9562,12 @@ BigRockHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `BigRockMask`
 **Name:** Big Rock Mask  
 **Description:** Brace 2.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 116 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigRockMask {
@@ -13549,25 +9587,12 @@ BigRockMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `BigRockNecklace`
 **Name:** Big Rock Necklace  
 **Description:** Brace 2.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 84 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigRockNecklace {
@@ -13587,24 +9612,12 @@ BigRockNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `PhoenixHat`
 **Name:** Phoenix Hat  
 **Description:** +10% Dodge Chance. Each time you end movement, gain +1 [img:spd] and Charge 2.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | [Phoenix, |
-| Frame | 130 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PhoenixHat {
@@ -13625,24 +9638,12 @@ PhoenixHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `PhoenixMask`
 **Name:** Phoenix Mask  
 **Description:** +10% Dodge Chance. Each time you end movement, gain +1 [img:spd] and Charge 2.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | [Phoenix, |
-| Frame | 117 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PhoenixMask {
@@ -13663,24 +9664,12 @@ PhoenixMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `PhoenixNecklace`
 **Name:** Phoenix Necklace  
 **Description:** +10% Dodge Chance. Each time you end movement, gain +1 [img:spd] and Charge 2.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Phoenix, |
-| Frame | 85 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PhoenixNecklace {
@@ -13701,8 +9690,6 @@ PhoenixNecklace {
     }
 ```
 
-</details>
-
 ---
 
 ### `AncestorsSkull`
@@ -13710,16 +9697,6 @@ PhoenixNecklace {
 **Description:** - {str_aux_passive_name} -
 {str_aux_passive_desc}  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | [Ancestor, |
-| Frame | 171 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AncestorsSkull {
@@ -13735,8 +9712,6 @@ AncestorsSkull {
     }
 ```
 
-</details>
-
 ---
 
 ### `AncestorsJaw`
@@ -13744,16 +9719,6 @@ AncestorsSkull {
 **Description:** - {str_aux_passive_name} -
 {str_aux_passive_desc}  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | [Ancestor, |
-| Frame | 155 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AncestorsJaw {
@@ -13769,8 +9734,6 @@ AncestorsJaw {
     }
 ```
 
-</details>
-
 ---
 
 ### `AncestorsBones`
@@ -13778,16 +9741,6 @@ AncestorsJaw {
 **Description:** - {str_aux_passive_name} -
 {str_aux_passive_desc}  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Ancestor, |
-| Frame | 141 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AncestorsBones {
@@ -13803,24 +9756,12 @@ AncestorsBones {
     }
 ```
 
-</details>
-
 ---
 
 ### `CopycatHat`
 **Name:** Copycat Hat  
 **Description:** Copies your trinket's passive effects.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Copycat |
-| Frame | 90 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CopycatHat {
@@ -13837,24 +9778,12 @@ CopycatHat {
     }
 ```
 
-</details>
-
 ---
 
 ### `CopycatMask`
 **Name:** Copycat Mask  
 **Description:** Copies your trinket's passive effects.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Copycat |
-| Frame | 93 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CopycatMask {
@@ -13871,24 +9800,12 @@ CopycatMask {
     }
 ```
 
-</details>
-
 ---
 
 ### `CopycatScarf`
 **Name:** Copycat Scarf  
 **Description:** Copies your trinket's passive effects.  
 **Source:** `armor_sets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Copycat |
-| Frame | 76 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CopycatScarf {
@@ -13905,8 +9822,6 @@ CopycatScarf {
     }
 ```
 
-</details>
-
 ---
 
 ### `PersuasionDevice`
@@ -13914,16 +9829,6 @@ CopycatScarf {
 **Description:** Side Quest Item. Use to permanently charm a non-boss enemy. It joins your party.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | sidequest |
-| Frame | 168 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PersuasionDevice {
@@ -13941,23 +9846,12 @@ PersuasionDevice {
 }
 ```
 
-</details>
-
 ---
 
 ### `PersuasionDevice_Fixed`
 **Description:** Use to permanently charm a non-boss enemy. It joins your party.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 169 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PersuasionDevice_Fixed {
@@ -13970,24 +9864,12 @@ PersuasionDevice_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChaosDevice`
 **Name:** Chaos Device  
 **Description:** Side Quest Item. When any cat levels up they are offered abilities from all classes.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | sidequest |
-| Set | Experimental |
-| Frame | 160 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChaosDevice {
@@ -14004,24 +9886,12 @@ ChaosDevice {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChaosDevice_Fixed`
 **Name:** Chaos Controller  
 **Description:** Abilities from all classes are offered when you level up. You can reroll your levelup options thrice.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Experimental |
-| Frame | 161 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChaosDevice_Fixed {
@@ -14039,23 +9909,12 @@ ChaosDevice_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `MagicMirror`
 **Name:** Magic Mirror (Broken)  
 **Description:** Side Quest Item. Your team has very bad luck during events. +2 Thorns.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | sidequest |
-| Frame | 147 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MagicMirror {
@@ -14076,23 +9935,12 @@ MagicMirror {
 }
 ```
 
-</details>
-
 ---
 
 ### `MagicMirror_Fixed`
 **Name:** Magic Mirror  
 **Description:** +20% chance to reflect projectiles. Spawn a friendly Spookie when downed.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Frame | 148 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MagicMirror_Fixed { 
@@ -14109,24 +9957,12 @@ MagicMirror_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeStone`
 **Name:** Me Stone  
 **Description:** Side Quest Item. This cat always levels up, and can level up even if it was downed.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | sidequest |
-| Set | Rock |
-| Frame | 227 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeStone {
@@ -14147,24 +9983,12 @@ MeStone {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeStone_Fixed`
 **Name:** Suck Stone  
 **Description:** At the end of your turn, drain up to 5 mana from each of your allies.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Rock |
-| Frame | 228 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeStone_Fixed {
@@ -14183,24 +10007,12 @@ MeStone_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngryFace`
 **Name:** Angry Face  
 **Description:** Side Quest Item. Equipped cat is an enemy, must be downed to win the battle, and can still receive level ups. Can't be equipped to a Collarless cat.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | sidequest |
-| Set | Paper |
-| Frame | 143 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngryFace {
@@ -14225,24 +10037,12 @@ AngryFace {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngryFace_Fixed`
 **Name:** Happy Face  
 **Description:** Spawn near enemies and take an AI controlled bonus turn at the start of every battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Paper |
-| Frame | 144 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngryFace_Fixed {
@@ -14264,24 +10064,12 @@ AngryFace_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `FartFace`
 **Name:** Fart Face  
 **Description:** Side Quest Item. Apply Poison 1 to everything at the start of the battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | sidequest |
-| Set | HumanFlesh |
-| Frame | 145 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FartFace {
@@ -14300,24 +10088,12 @@ FartFace {
 }
 ```
 
-</details>
-
 ---
 
 ### `FartFace_Fixed`
 **Name:** Robo Fart Face  
 **Description:** Apply Poison 1 to all enemies at the start of the battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Bionic |
-| Frame | 146 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FartFace_Fixed {
@@ -14334,23 +10110,12 @@ FartFace_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpiderInjector`
 **Name:** Spider Injector  
 **Description:** Side Quest Item. Apply Infested 4 to all allies at the start of each battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | sidequest |
-| Frame | 162 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderInjector {
@@ -14368,23 +10133,12 @@ SpiderInjector {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpiderInjector_Fixed`
 **Name:** Spider Baby  
 **Description:** Apply Infested 1 to all enemies at the start of each battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Frame | 163 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderInjector_Fixed {
@@ -14400,8 +10154,6 @@ SpiderInjector_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `PartyDetonator`
@@ -14409,15 +10161,6 @@ SpiderInjector_Fixed {
 **Description:** Side Quest Item. All units explode when they die.
 Use: Explode a random other unit, once per battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | sidequest |
-| Frame | 170 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PartyDetonator {
@@ -14437,8 +10180,6 @@ PartyDetonator {
 }
 ```
 
-</details>
-
 ---
 
 ### `PartyDetonator_Fixed`
@@ -14446,15 +10187,6 @@ PartyDetonator {
 **Description:** Use: Explode a random unit within a target radius.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 171 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PartyDetonator_Fixed {
@@ -14468,23 +10200,12 @@ PartyDetonator_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `AirHorn`
 **Name:** Air Horn  
 **Description:** Side Quest Item. You are Ambushed every battle. Use to make some noise!  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | sidequest |
-| Frame | 200 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AirHorn {
@@ -14502,8 +10223,6 @@ AirHorn {
 }
 ```
 
-</details>
-
 ---
 
 ### `AirHorn_Fixed`
@@ -14511,15 +10230,6 @@ AirHorn {
 **Description:** Use: Apply Madness to a unit within 5 tiles in your line of sight.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 206 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AirHorn_Fixed {
@@ -14533,24 +10243,12 @@ AirHorn_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheLoner`
 **Name:** The Loner  
 **Description:** Side Quest Item. Kill all of your allies at the start of each battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | sidequest |
-| Set | Cool |
-| Frame | 204 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheLoner {
@@ -14571,8 +10269,6 @@ TheLoner {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheLoner_Fixed`
@@ -14580,16 +10276,6 @@ TheLoner {
 **Description:** Use: Deals 5 damage to anything in your line of sight.
 RELOAD: Any ally dies.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Cool, |
-| Frame | 209 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheLoner_Fixed {
@@ -14604,8 +10290,6 @@ TheLoner_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlassCannon`
@@ -14613,15 +10297,6 @@ TheLoner_Fixed {
 **Description:** Side Quest Item. Fill the map with glass at the start of each battle.
 Use: Shoot a glass ball.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | sidequest |
-| Frame | 205 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlassCannon {
@@ -14641,23 +10316,12 @@ GlassCannon {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlassCannon_Fixed`
 **Name:** Glass Cannon (Fixed)  
 **Description:** Use: Shoot a glass ball anywhere.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 210 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlassCannon_Fixed {
@@ -14671,23 +10335,12 @@ GlassCannon_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `PrincessHat`
 **Name:** Princess Hat  
 **Description:** Side Quest Item. Fragile. Equipped cat cannot use any actions except Move.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | sidequest |
-| Frame | 201 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PrincessHat {
@@ -14710,24 +10363,12 @@ PrincessHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `PrincessHat_Fixed`
 **Name:** Used Princess Hat  
 **Description:** ARMOR_PRINCESSHAT_FIXED_DESC  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Used |
-| Frame | 203 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PrincessHat_Fixed {
@@ -14742,23 +10383,12 @@ PrincessHat_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `HardPill`
 **Name:** Unidentified Pills  
 **Description:** Side Quest Item. The adventure is harder!  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | sidequest |
-| Frame | 252 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HardPill {
@@ -14776,23 +10406,12 @@ HardPill {
 }
 ```
 
-</details>
-
 ---
 
 ### `HardPill_Fixed`
 **Name:** Truck Stop Pills  
 **Description:** +3 Brace. You count as a rock.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 257 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HardPill_Fixed {
@@ -14809,23 +10428,12 @@ HardPill_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `BubbleBoy`
 **Name:** Bubble Boy  
 **Description:** Side Quest Item. All units rebound with Knockback 5 on contact.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | sidequest |
-| Frame | 153 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BubbleBoy {
@@ -14845,23 +10453,12 @@ BubbleBoy {
 }
 ```
 
-</details>
-
 ---
 
 ### `BubbleBoy_Fixed`
 **Name:** Bubbles  
 **Description:** Use: Throw a bubble with Wind and Water Element that inflicts Confusion.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 216 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BubbleBoy_Fixed {
@@ -14875,23 +10472,12 @@ BubbleBoy_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `Redacted`
 **Name:** Redacted  
 **Description:** Side Quest Item. Health bars and status icons are hidden in battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | sidequest |
-| Frame | 164 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Redacted {
@@ -14909,23 +10495,12 @@ Redacted {
 }
 ```
 
-</details>
-
 ---
 
 ### `Redacted_Fixed`
 **Name:** Paper Bag  
 **Description:** Your [img:cha] is equal to your highest other stat.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Frame | 168 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Redacted_Fixed {
@@ -14941,23 +10516,12 @@ Redacted_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stopwatch`
 **Name:** Stopwatch  
 **Description:** Side Quest Item. You have 5 seconds to make decisions in battle, otherwise cats will act randomly.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | sidequest |
-| Frame | 249 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stopwatch {
@@ -14975,8 +10539,6 @@ Stopwatch {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stopwatch_Fixed`
@@ -14984,15 +10546,6 @@ Stopwatch {
 **Description:** Use: You or a target unit takes an AI controlled bonus turn.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 213 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stopwatch_Fixed {
@@ -15006,23 +10559,12 @@ Stopwatch_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `StorageLocker`
 **Name:** Storage Locker  
 **Description:** Side Quest Item. Your team's active ability level ups offer rare items instead.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | sidequest |
-| Frame | 150 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StorageLocker {
@@ -15042,23 +10584,12 @@ StorageLocker {
 }
 ```
 
-</details>
-
 ---
 
 ### `StorageLocker_Fixed`
 **Name:** Armory Key  
 **Description:** Find an extra item after each battle.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Frame | 157 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StorageLocker_Fixed {
@@ -15075,23 +10606,12 @@ StorageLocker_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `MysteriousDice`
 **Name:** Mysterious Dice  
 **Description:** Side Quest Item. Your team's level up options are complete chaos!  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | sidequest |
-| Frame | 255 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MysteriousDice {
@@ -15107,23 +10627,12 @@ MysteriousDice {
 }
 ```
 
-</details>
-
 ---
 
 ### `MysteriousDice_Fixed`
 **Name:** The D6  
 **Description:** Use: Permanently upgrade one of your active abilities at random.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 259 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MysteriousDice_Fixed {
@@ -15140,24 +10649,12 @@ MysteriousDice_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `ExperimentalTreatment`
 **Name:** Experimental Treatment  
 **Description:** Side Quest Item. Your team's passive ability level ups offer disorders instead.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | sidequest |
-| Set | Experimental |
-| Frame | 162 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExperimentalTreatment {
@@ -15174,24 +10671,12 @@ ExperimentalTreatment {
 }
 ```
 
-</details>
-
 ---
 
 ### `ExperimentalTreatment_Fixed`
 **Name:** Disorder Decoder  
 **Description:** Your spells cost 1 less for each disorder you have.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Experimental |
-| Frame | 167 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExperimentalTreatment_Fixed {
@@ -15208,24 +10693,12 @@ ExperimentalTreatment_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `UltraVision3000`
 **Name:** Ultra Vision 3000  
 **Description:** Side Quest Item. Events are harder. All normal events trigger 2 extra events.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | sidequest |
-| Set | Bionic |
-| Frame | 166 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UltraVision3000 {
@@ -15247,25 +10720,12 @@ UltraVision3000 {
 }
 ```
 
-</details>
-
 ---
 
 ### `UltraVision3000_Fixed`
 **Name:** Ultra Vision 3000 v1.1  
 **Description:** Your basic attack inflicts Marked.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Bionic |
-| Frame | 169 |
-| LCK | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UltraVision3000_Fixed {
@@ -15287,8 +10747,6 @@ UltraVision3000_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `NuclearKnife`
@@ -15297,16 +10755,6 @@ UltraVision3000_Fixed {
 If charges go above 10, this weapon explodes.
 Loses half of its charges when it gets a kill.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | sidequest |
-| Set | Radioactive |
-| Frame | 201 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NuclearKnife {
@@ -15332,24 +10780,12 @@ NuclearKnife {
 }
 ```
 
-</details>
-
 ---
 
 ### `NuclearKnife_Glowing`
 **Name:** Nuclear Knife (Glowing)  
 **Description:** Side Quest Item. It's about to explode! Get a kill with this now to quench it.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | sidequest |
-| Set | Radioactive |
-| Frame | 202 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NuclearKnife_Glowing {
@@ -15382,24 +10818,12 @@ NuclearKnife_Glowing {
 }
 ```
 
-</details>
-
 ---
 
 ### `NuclearKnife_Fixed`
 **Name:** Nuclear Gun  
 **Description:** Use: Deals 40 damage to a target and 20 damage to EVERYTHING ELSE. 20% chance to break on use.  
 **Source:** `beanies_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Radioactive |
-| Frame | 207 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NuclearKnife_Fixed {
@@ -15414,23 +10838,12 @@ NuclearKnife_Fixed {
 }
 ```
 
-</details>
-
 ---
 
 ### `FoodMedium`
 **Name:** A Snack  
 **Description:** Use: Heal {aux} HP.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 21 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FoodMedium {
@@ -15447,23 +10860,12 @@ FoodMedium {
 }
 ```
 
-</details>
-
 ---
 
 ### `FoodBig`
 **Name:** Cat Food  
 **Description:** Use: Heal {aux} HP.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FoodBig {
@@ -15480,23 +10882,12 @@ FoodBig {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chicken`
 **Name:** Rotisserie Chicken  
 **Description:** Use: Heal {aux} HP.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 59 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chicken {
@@ -15513,23 +10904,12 @@ Chicken {
 }
 ```
 
-</details>
-
 ---
 
 ### `Catnip`
 **Name:** Small Catnip Baggy  
 **Description:** Use: Gain {aux} mana.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 22 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Catnip {
@@ -15546,23 +10926,12 @@ Catnip {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatnipBig`
 **Name:** Large Catnip Baggy  
 **Description:** Use: Gain {aux} mana.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatnipBig {
@@ -15579,23 +10948,12 @@ CatnipBig {
 }
 ```
 
-</details>
-
 ---
 
 ### `RoidRage`
 **Name:** Roid Rage  
 **Description:** Use: Gain +{aux} [img:str] for the rest of the battle.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 23 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RoidRage {
@@ -15612,23 +10970,12 @@ RoidRage {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpeedBall`
 **Name:** Speedball  
 **Description:** Use: Gain +{aux} [img:dex] for the rest of the battle.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 24 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpeedBall {
@@ -15645,23 +10992,12 @@ SpeedBall {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrainCandy`
 **Name:** Brain Candy  
 **Description:** Use: Gain +{aux} [img:int] for the rest of the battle.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 25 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrainCandy {
@@ -15678,23 +11014,12 @@ BrainCandy {
 }
 ```
 
-</details>
-
 ---
 
 ### `DiscoBiscuit`
 **Name:** Disco Biscuit  
 **Description:** Use: Gain +{aux} [img:cha] for the rest of the battle and gain 6 mana.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 26 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DiscoBiscuit {
@@ -15711,23 +11036,12 @@ DiscoBiscuit {
 }
 ```
 
-</details>
-
 ---
 
 ### `Clover`
 **Name:** Clover  
 **Description:** Use: Gain +{aux} [img:lck] for the rest of the battle.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 27 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Clover {
@@ -15744,23 +11058,12 @@ Clover {
 }
 ```
 
-</details>
-
 ---
 
 ### `Upper`
 **Name:** Upper  
 **Description:** Use: Gain +{aux} [img:spd] for the rest of the battle.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 28 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Upper {
@@ -15777,23 +11080,12 @@ Upper {
 }
 ```
 
-</details>
-
 ---
 
 ### `Percs`
 **Name:** Percs  
 **Description:** Use: Gain +{aux} [img:shield].  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 29 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Percs {
@@ -15810,8 +11102,6 @@ Percs {
 }
 ```
 
-</details>
-
 ---
 
 ### `Antidote`
@@ -15819,15 +11109,6 @@ Percs {
 **Description:** Use: Cleanse all debuffs.
 This can be used on adjacent units.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Frame | 103 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Antidote {
@@ -15843,22 +11124,12 @@ Antidote {
 }
 ```
 
-</details>
-
 ---
 
 ### `Kidney`
 **Name:** Kidney  
 **Description:** Use: Use to heal 10, gain +2 Health Regen, and cleanse debuffs.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 189 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Kidney {
@@ -15873,23 +11144,12 @@ Kidney {
 }
 ```
 
-</details>
-
 ---
 
 ### `Enema`
 **Name:** Enema  
 **Description:** Use: Cleanse all buffs and debuffs.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Frame | 100 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Enema {
@@ -15905,8 +11165,6 @@ Enema {
 }
 ```
 
-</details>
-
 ---
 
 ### `SitrusBerry`
@@ -15914,15 +11172,6 @@ Enema {
 **Description:** Use: Heal 25% HP.
 Automatically eaten if your HP drops below 50%.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Frame | 101 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SitrusBerry {
@@ -15949,8 +11198,6 @@ SitrusBerry {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmellingSalts`
@@ -15958,15 +11205,6 @@ SitrusBerry {
 **Description:** Use: Revive an adjacent unit at 1 HP.
 Automatically used on yourself at the end of the round if you're downed.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Frame | 111 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmellingSalts {
@@ -15991,23 +11229,12 @@ SmellingSalts {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lard`
 **Name:** Big Bucket of Lard  
 **Description:** Use: Heal yourself and all adjacent units to full HP.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 75 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lard {
@@ -16023,23 +11250,12 @@ Lard {
 }
 ```
 
-</details>
-
 ---
 
 ### `KiloOfCatnip`
 **Name:** Kilo of Catnip  
 **Description:** Use: Restore all your mana.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 121 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 KiloOfCatnip {
@@ -16055,23 +11271,12 @@ KiloOfCatnip {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfGrass`
 **Name:** Bag of Grass  
 **Description:** Use: Gain {aux} mana.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 69 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfGrass {
@@ -16088,8 +11293,6 @@ BagOfGrass {
 }
 ```
 
-</details>
-
 ---
 
 ### `ViperBottle`
@@ -16097,15 +11300,6 @@ BagOfGrass {
 **Description:** Use: Take 5 damage and gain +1 to a random stat permanently.
 May have side effects...  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 72 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ViperBottle {
@@ -16121,24 +11315,12 @@ ViperBottle {
 }
 ```
 
-</details>
-
 ---
 
 ### `SuperBandage`
 **Name:** Super Bandage  
 **Description:** Use: Cure a random injury.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Set | Nurse |
-| Frame | 102 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SuperBandage {
@@ -16155,8 +11337,6 @@ SuperBandage {
 }
 ```
 
-</details>
-
 ---
 
 ### `RottenMeat`
@@ -16164,16 +11344,6 @@ SuperBandage {
 **Description:** Use: Gain Poison 1, then your basic attack becomes Puke Shot.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Set | [Rotten, |
-| Frame | 112 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RottenMeat {
@@ -16189,24 +11359,12 @@ RottenMeat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mushrooms`
 **Name:** Mushrooms  
 **Description:** Use: Gain All Stats Up 2.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Set | Druid |
-| Frame | 116 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mushrooms {
@@ -16224,23 +11382,12 @@ Mushrooms {
 }
 ```
 
-</details>
-
 ---
 
 ### `Star`
 **Name:** Star  
 **Description:** Use: Gain Invincibility, +10 Thorns, and Trample until the start of your next turn. Refresh your movement action.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_very_rare |
-| Frame | 119 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Star {
@@ -16256,24 +11403,12 @@ Star {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bullseye`
 **Name:** Bullseye  
 **Description:** Use: All damage you deal until the end of the turn is critical and can't miss.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Set | Paper |
-| Frame | 120 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bullseye {
@@ -16290,23 +11425,12 @@ Bullseye {
 }
 ```
 
-</details>
-
 ---
 
 ### `StemCells`
 **Name:** Stem Cells  
 **Description:** Use: Gain +3 Health Regen until the end of the battle.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Frame | 122 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StemCells {
@@ -16322,24 +11446,12 @@ StemCells {
 }
 ```
 
-</details>
-
 ---
 
 ### `Eyeball`
 **Name:** Eyeball  
 **Description:** Use: Heal {aux} HP.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_common |
-| Set | Guts |
-| Frame | 131 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Eyeball {
@@ -16357,23 +11469,12 @@ Eyeball {
 }
 ```
 
-</details>
-
 ---
 
 ### `WitchsEye`
 **Name:** Witch's Eye  
 **Description:** Use: Gain Backflip 2.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Frame | 132 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WitchsEye {
@@ -16389,8 +11490,6 @@ WitchsEye {
 }
 ```
 
-</details>
-
 ---
 
 ### `ForbiddenFruit`
@@ -16398,15 +11497,6 @@ WitchsEye {
 **Description:** Use: Heal to full, restore all your mana, and gain All Stats Up 2.
 There will be permanent consequences for eating this fruit...  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_very_rare |
-| Frame | 136 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ForbiddenFruit {
@@ -16422,8 +11512,6 @@ ForbiddenFruit {
 }
 ```
 
-</details>
-
 ---
 
 ### `PCP`
@@ -16431,15 +11519,6 @@ ForbiddenFruit {
 **Description:** Use: Gain +5 Damage and Madness 3.
 This can be used on adjacent units.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_uncommon |
-| Frame | 138 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PCP {
@@ -16455,24 +11534,12 @@ PCP {
 }
 ```
 
-</details>
-
 ---
 
 ### `WishBone`
 **Name:** Wish Bone  
 **Description:** Use: Gain +99 [img:lck] until the end of the turn.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_very_rare |
-| Set | Bone |
-| Frame | 193 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WishBone {
@@ -16489,23 +11556,12 @@ WishBone {
 }
 ```
 
-</details>
-
 ---
 
 ### `MetalCoat`
 **Name:** Metal Coat  
 **Description:** Use: Make your weapon unbreakable for the rest of the adventure.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 43 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MetalCoat {
@@ -16521,23 +11577,12 @@ MetalCoat {
 }
 ```
 
-</details>
-
 ---
 
 ### `ShoePolish`
 **Name:** Shoe Polish  
 **Description:** Use: Fully repair your weapon. Refresh your weapon action.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 44 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ShoePolish {
@@ -16553,23 +11598,12 @@ ShoePolish {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pearl`
 **Name:** Pearl  
 **Description:** Use: Gain 10-30 coins.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 57 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pearl {
@@ -16586,23 +11620,12 @@ Pearl {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigToe`
 **Name:** Big Toe  
 **Description:** Use: Heal 6, gain +1 Health Regen and cleanse your debuffs.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Set | HumanFlesh |
-| Frame | 265 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigToe { 
@@ -16618,8 +11641,6 @@ BigToe {
 }
 ```
 
-</details>
-
 ---
 
 ### `RaptorEgg`
@@ -16627,14 +11648,6 @@ BigToe {
 **Description:** Use: Heal to full.
 10% chance at the end of each turn to break and summon a Charmed Raptor Kitten.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 263 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RaptorEgg { 
@@ -16659,24 +11672,12 @@ RaptorEgg {
 }
 ```
 
-</details>
-
 ---
 
 ### `FighterSeal`
 **Name:** Fighter Seal  
 **Description:** Use: Permanently turn into a Fighter.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 160 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FighterSeal {
@@ -16693,24 +11694,12 @@ FighterSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `HunterSeal`
 **Name:** Hunter Seal  
 **Description:** Use: Permanently turn into a Hunter.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Hunter |
-| Frame | 161 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HunterSeal {
@@ -16727,24 +11716,12 @@ HunterSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `TankSeal`
 **Name:** Tank Seal  
 **Description:** Use: Permanently turn into a Tank.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Tank |
-| Frame | 162 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankSeal {
@@ -16761,24 +11738,12 @@ TankSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `ClericSeal`
 **Name:** Cleric Seal  
 **Description:** Use: Permanently turn into a Cleric.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 163 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ClericSeal {
@@ -16795,24 +11760,12 @@ ClericSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThiefSeal`
 **Name:** Thief Seal  
 **Description:** Use: Permanently turn into a Thief.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Thief |
-| Frame | 164 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThiefSeal {
@@ -16829,24 +11782,12 @@ ThiefSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `MageSeal`
 **Name:** Mage Seal  
 **Description:** Use: Permanently turn into a Mage.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Mage |
-| Frame | 165 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageSeal {
@@ -16863,23 +11804,12 @@ MageSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `ColorlessSeal`
 **Name:** Void Seal  
 **Description:** Use: Permanently turn into a Collarless cat.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 166 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ColorlessSeal {
@@ -16895,24 +11825,12 @@ ColorlessSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `PsychicSeal`
 **Name:** Psychic Seal  
 **Description:** Use: Permanently turn into a Psychic.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Psychic |
-| Frame | 167 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PsychicSeal {
@@ -16929,24 +11847,12 @@ PsychicSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `JesterSeal`
 **Name:** Jester Seal  
 **Description:** Use: Permanently turn into a Jester.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Jester |
-| Frame | 168 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JesterSeal {
@@ -16963,24 +11869,12 @@ JesterSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererSeal`
 **Name:** Tinkerer Seal  
 **Description:** Use: Permanently turn into a Tinkerer.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Tinkerer |
-| Frame | 169 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererSeal {
@@ -16997,24 +11891,12 @@ TinkererSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButcherSeal`
 **Name:** Butcher Seal  
 **Description:** Use: Permanently turn into a Butcher.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Butcher |
-| Frame | 170 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButcherSeal {
@@ -17031,24 +11913,12 @@ ButcherSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidSeal`
 **Name:** Druid Seal  
 **Description:** Use: Permanently turn into a Druid.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Druid |
-| Frame | 171 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidSeal {
@@ -17065,23 +11935,12 @@ DruidSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkSeal`
 **Name:** Monk Seal  
 **Description:** Use: Permanently turn into a Monk.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 172 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkSeal {
@@ -17098,24 +11957,12 @@ MonkSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `NecromancerSeal`
 **Name:** Necromancer Seal  
 **Description:** Use: Permanently turn into a Necromancer.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Necromancer |
-| Frame | 173 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NecromancerSeal {
@@ -17132,23 +11979,12 @@ NecromancerSeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `Turkey`
 **Name:** Whole Turkey  
 **Description:** Use: Heal {aux} HP.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 244 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Turkey {
@@ -17165,24 +12001,12 @@ Turkey {
 }
 ```
 
-</details>
-
 ---
 
 ### `DeadHummingbird`
 **Name:** Dead Hummingbird  
 **Description:** Use: Gain +20 [img:spd] and +50% Dodge Chance.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_very_rare |
-| Set | Feathered |
-| Frame | 245 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DeadHummingbird {
@@ -17200,23 +12024,12 @@ DeadHummingbird {
 }
 ```
 
-</details>
-
 ---
 
 ### `UnstableDNA`
 **Name:** Unstable DNA  
 **Description:** Use: Gain 6 random stat ups and 3 random stat downs, then gain 3 Mutations at the end of combat.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 277 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UnstableDNA {
@@ -17232,23 +12045,12 @@ UnstableDNA {
 }
 ```
 
-</details>
-
 ---
 
 ### `RedPill`
 **Name:** Red Pill  
 **Description:** Use: 50% chance to get Chungus (+4 [img:con]), otherwise take 8 damage.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 278 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RedPill {
@@ -17264,8 +12066,6 @@ RedPill {
 }
 ```
 
-</details>
-
 ---
 
 ### `ForbiddenPill`
@@ -17273,15 +12073,6 @@ RedPill {
 **Description:** Use: Temporarily upgrade all of your active abilities.
 There will be permanent consequences for taking this pill.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_very_rare |
-| Frame | 279 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ForbiddenPill {
@@ -17297,23 +12088,12 @@ ForbiddenPill {
 }
 ```
 
-</details>
-
 ---
 
 ### `MissingNipple`
 **Name:** Missing Nipple  
 **Description:** Use: Give an adjacent unit +1 Health Regen.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Frame | 272 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MissingNipple {
@@ -17329,24 +12109,12 @@ MissingNipple {
 }
 ```
 
-</details>
-
 ---
 
 ### `Experimentx`
 **Name:** Experiment X  
 **Description:** Use: ???  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Experimental |
-| Frame | 285 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Experimentx {
@@ -17363,24 +12131,12 @@ Experimentx {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensConsumable1`
 **Name:** Steven  
 **Description:** Use: Permanently upgrade a random spell or passive ability.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Steven |
-| Frame | 235 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensConsumable1 {
@@ -17397,24 +12153,12 @@ StevensConsumable1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensConsumable2`
 **Name:** Steven  
 **Description:** Use: Spawn a controllable copy of yourself.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Steven |
-| Frame | 237 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensConsumable2 {
@@ -17431,24 +12175,12 @@ StevensConsumable2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `JokerCard`
 **Name:** Joker Card  
 **Description:** Use: Duplicate one of your equipped items.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | [Jester, |
-| Frame | 268 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JokerCard {
@@ -17465,24 +12197,12 @@ JokerCard {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gizzard`
 **Name:** Gizzard  
 **Description:** Use: Enter Mockingbird Form. Gain a random bird mutation at the end of the battle.  
 **Source:** `consumables.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | consumable_rare |
-| Set | Guts |
-| Frame | 194 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gizzard {
@@ -17499,23 +12219,12 @@ Gizzard {
 }
 ```
 
-</details>
-
 ---
 
 ### `AlluringDoodie`
 **Name:** Alluring Doodie  
 **Description:** 10% chance to eat poop and gain Poison 1 each turn.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Fecal |
-| Frame | 15 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlluringDoodie {
@@ -17544,23 +12253,12 @@ AlluringDoodie {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChildSkull`
 **Name:** Child's Skull  
 **Description:** Your basic attack is a weak tear shot. You can use your basic attack an extra time each turn.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Bone |
-| Frame | 18 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChildSkull {
@@ -17580,22 +12278,12 @@ ChildSkull {
 }
 ```
 
-</details>
-
 ---
 
 ### `PawShards`
 **Name:** Paw Shards  
 **Description:** Your basic attack inflicts Bleed 1. Gain +1 Bleed each time you use your basic attack.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 23 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PawShards {
@@ -17616,24 +12304,12 @@ PawShards {
 }
 ```
 
-</details>
-
 ---
 
 ### `Splinters`
 **Name:** Splinters  
 **Description:** ITEM_SPLINTERS_DESC  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 22 |
-| STR | 1 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Splinters {
@@ -17648,8 +12324,6 @@ Splinters {
 }
 ```
 
-</details>
-
 ---
 
 ### `FaceShards`
@@ -17657,14 +12331,6 @@ Splinters {
 **Description:** +2 Thorns.
 Gain +1 Bleed each time you take damage.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 22 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FaceShards {
@@ -17683,23 +12349,12 @@ FaceShards {
 }
 ```
 
-</details>
-
 ---
 
 ### `BadSplinters`
 **Name:** Bad Splinters  
 **Description:** +2 Thorns.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 17 |
-| CON | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BadSplinters {
@@ -17717,22 +12372,12 @@ BadSplinters {
 }
 ```
 
-</details>
-
 ---
 
 ### `CursedHairball`
 **Name:** Cursed Hairball  
 **Description:** Your basic attack inflicts Poison 2. Start each battle with Poison 3.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 79 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CursedHairball {
@@ -17751,8 +12396,6 @@ CursedHairball {
 }
 ```
 
-</details>
-
 ---
 
 ### `MarkOfTheBeast`
@@ -17760,14 +12403,6 @@ CursedHairball {
 **Description:** +6 Damage. Holy Element heals damage you instead.
 When downed, your body is destroyed.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 63 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MarkOfTheBeast { 
@@ -17785,8 +12420,6 @@ MarkOfTheBeast {
 }
 ```
 
-</details>
-
 ---
 
 ### `PutridPile`
@@ -17794,15 +12427,6 @@ MarkOfTheBeast {
 **Description:** Adjacent units move away from you at the end of their turns.
 Your basic attack inflicts Poison.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 70 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PutridPile {
@@ -17826,8 +12450,6 @@ PutridPile {
 }
 ```
 
-</details>
-
 ---
 
 ### `VibratingMeteorite`
@@ -17835,21 +12457,6 @@ PutridPile {
 **Description:** This item loses 1 of each stat at the end of each battle, permanently.
 [s:.7](This can go negative.)[/s]  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 202 |
-| STR | aux |
-| DEX | aux |
-| INT | aux |
-| LCK | aux |
-| CON | aux |
-| SPD | aux |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 VibratingMeteorite {
@@ -17881,23 +12488,12 @@ VibratingMeteorite {
 }
 ```
 
-</details>
-
 ---
 
 ### `CursedRock`
 **Name:** Cursed Rock  
 **Description:** ITEM_CURSEDROCK_DESC  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 56 |
-| STR | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CursedRock {
@@ -17912,8 +12508,6 @@ CursedRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Clam`
@@ -17921,14 +12515,6 @@ CursedRock {
 **Description:** 5% chance to break when you take damage.
 When this breaks, find a Pearl.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 59 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Clam {
@@ -17952,23 +12538,12 @@ Clam {
 }
 ```
 
-</details>
-
 ---
 
 ### `BirdPoopHat`
 **Name:** Bird Poop  
 **Description:** +50% chance for an extra bird to spawn at the start of each battle.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Fecal |
-| Frame | 30 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BirdPoopHat {
@@ -17989,23 +12564,12 @@ BirdPoopHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Callus`
 **Name:** Callus  
 **Description:** Permanently gain +2 [img:shield] each time you end a battle with 1 or more [img:shield].  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Frame | 140 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Callus {
@@ -18032,23 +12596,12 @@ Callus {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlagTight`
 **Name:** Slag Tight  
 **Description:** Brace 1. Your basic attack inflicts Bruise 1.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 170 |
-| INT | -4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlagTight { 
@@ -18069,24 +12622,12 @@ SlagTight {
 }
 ```
 
-</details>
-
 ---
 
 ### `MetalRod`
 **Name:** Metal Rod  
 **Description:** Use: A melee attack with Knockback 1 and a 10% chance to inflict Stun.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 64 |
-| INT | -1 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MetalRod { 
@@ -18102,22 +12643,12 @@ MetalRod {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigToeCursed`
 **Name:** Big Toe  
 **Description:** After your 3rd turn, spawn a Charmed Spookie with Madness on a random tile.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 266 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigToeCursed { 
@@ -18136,23 +12667,12 @@ BigToeCursed {
 }
 ```
 
-</details>
-
 ---
 
 ### `GoldenIdol`
 **Name:** Golden Idol  
 **Description:** Becomes {aux} coins when you return home.  
 **Source:** `cursed_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 266 |
-| LCK | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GoldenIdol { 
@@ -18168,21 +12688,10 @@ GoldenIdol {
 }
 ```
 
-</details>
-
 ---
 
 ### `MageCollar`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 6 |
-| INT | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageCollar {
@@ -18194,21 +12703,10 @@ MageCollar {
 }
 ```
 
-</details>
-
 ---
 
 ### `MetalPlate`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 18 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MetalPlate {
@@ -18224,21 +12722,10 @@ MetalPlate {
 }
 ```
 
-</details>
-
 ---
 
 ### `HuntersPatch`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 19 |
-| DEX | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HuntersPatch {
@@ -18250,22 +12737,10 @@ HuntersPatch {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngelicAura`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 7 |
-| INT | 1 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngelicAura {
@@ -18278,20 +12753,10 @@ AngelicAura {
 }
 ```
 
-</details>
-
 ---
 
 ### `CoinBag`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 13 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoinBag {
@@ -18303,21 +12768,10 @@ CoinBag {
 }
 ```
 
-</details>
-
 ---
 
 ### `SamsonsChains`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 8 |
-| STR | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SamsonsChains {
@@ -18333,20 +12787,10 @@ SamsonsChains {
 }
 ```
 
-</details>
-
 ---
 
 ### `Banana`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 14 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Banana {
@@ -18358,20 +12802,10 @@ Banana {
 }
 ```
 
-</details>
-
 ---
 
 ### `Slime`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 14 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Slime {
@@ -18383,21 +12817,11 @@ Slime {
 }
 ```
 
-</details>
-
 ---
 
 ### `GunslingerPistol`
 **Name:** Gunslinger Pistol  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 51 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GunslingerPistol {
@@ -18411,20 +12835,10 @@ GunslingerPistol {
 }
 ```
 
-</details>
-
 ---
 
 ### `WesternHat`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 52 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WesternHat {
@@ -18435,20 +12849,10 @@ WesternHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Poncho`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 43 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Poncho {
@@ -18459,21 +12863,10 @@ Poncho {
 }
 ```
 
-</details>
-
 ---
 
 ### `AtomicMark`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 64 |
-| INT | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AtomicMark {
@@ -18486,21 +12879,11 @@ AtomicMark {
 }
 ```
 
-</details>
-
 ---
 
 ### `AstroTaser`
 **Name:** Astro Zapper  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 84 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AstroTaser {
@@ -18513,22 +12896,12 @@ AstroTaser {
 }
 ```
 
-</details>
-
 ---
 
 ### `OddRemote_Enemy`
 **Name:** Odd Remote  
 **Description:** Use: Cast a random spell.  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 95 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OddRemote_Enemy {
@@ -18541,20 +12914,10 @@ OddRemote_Enemy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pebble`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 92 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pebble {
@@ -18567,20 +12930,10 @@ Pebble {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dreadlocks`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 93 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dreadlocks {
@@ -18592,20 +12945,10 @@ Dreadlocks {
 }
 ```
 
-</details>
-
 ---
 
 ### `BabyHair`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 94 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BabyHair {
@@ -18617,20 +12960,10 @@ BabyHair {
 }
 ```
 
-</details>
-
 ---
 
 ### `BulbHead`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 95 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BulbHead {
@@ -18642,20 +12975,10 @@ BulbHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `MuggerMask`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 113 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MuggerMask {
@@ -18667,20 +12990,10 @@ MuggerMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `NecromancerMask`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 120 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NecromancerMask {
@@ -18691,20 +13004,10 @@ NecromancerMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererHat`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 120 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererHat {
@@ -18715,20 +13018,10 @@ TinkererHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButcherMask`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 122 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButcherMask {
@@ -18739,20 +13032,10 @@ ButcherMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `PsychicMask`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 121 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PsychicMask {
@@ -18763,20 +13046,10 @@ PsychicMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `JesterHat`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 121 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JesterHat {
@@ -18787,20 +13060,10 @@ JesterHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkMask`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 123 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkMask {
@@ -18811,20 +13074,10 @@ MonkMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidNeck`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 120 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidNeck {
@@ -18835,21 +13088,11 @@ DruidNeck {
 }
 ```
 
-</details>
-
 ---
 
 ### `TerminatorShotgun`
 **Name:** Shotgun  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 50 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TerminatorShotgun {
@@ -18863,21 +13106,11 @@ TerminatorShotgun {
 }
 ```
 
-</details>
-
 ---
 
 ### `TerminatorSniper`
 **Name:** Sniper Rifle  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 52 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TerminatorSniper {
@@ -18890,21 +13123,11 @@ TerminatorSniper {
 }
 ```
 
-</details>
-
 ---
 
 ### `TerminatorUzi`
 **Name:** Submachine Gun  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 137 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TerminatorUzi {
@@ -18918,21 +13141,11 @@ TerminatorUzi {
 }
 ```
 
-</details>
-
 ---
 
 ### `TerminatorCoolGlasses`
 **Name:** Cool Glasses  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 10 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TerminatorCoolGlasses {
@@ -18943,20 +13156,10 @@ TerminatorCoolGlasses {
 }
 ```
 
-</details>
-
 ---
 
 ### `TerminatorCoolGlasses2`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 94 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TerminatorCoolGlasses2 {
@@ -18967,21 +13170,11 @@ TerminatorCoolGlasses2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveCatClub`
 **Name:** Club  
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveCatClub {
@@ -18993,21 +13186,10 @@ CaveCatClub {
 }
 ```
 
-</details>
-
 ---
 
 ### `SuperDunceCap`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 91 |
-| INT | -10 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SuperDunceCap { 
@@ -19020,21 +13202,10 @@ SuperDunceCap {
 }
 ```
 
-</details>
-
 ---
 
 ### `MageCollar_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 137 |
-| INT | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageCollar_Terminator {
@@ -19046,21 +13217,10 @@ MageCollar_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `MetalPlate_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 153 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MetalPlate_Terminator {
@@ -19076,21 +13236,10 @@ MetalPlate_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `HuntersPatch_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 149 |
-| DEX | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HuntersPatch_Terminator {
@@ -19102,22 +13251,10 @@ HuntersPatch_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngelicAura_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 139 |
-| INT | 1 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngelicAura_Terminator {
@@ -19130,20 +13267,10 @@ AngelicAura_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `CoinBag_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 164 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoinBag_Terminator {
@@ -19155,21 +13282,10 @@ CoinBag_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `SamsonsChains_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 138 |
-| STR | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SamsonsChains_Terminator {
@@ -19185,20 +13301,10 @@ SamsonsChains_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `NecromancerMask_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 150 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NecromancerMask_Terminator {
@@ -19209,20 +13315,10 @@ NecromancerMask_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererHat_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 166 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererHat_Terminator {
@@ -19233,20 +13329,10 @@ TinkererHat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButcherMask_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 152 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButcherMask_Terminator {
@@ -19257,20 +13343,10 @@ ButcherMask_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `PsychicMask_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 151 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PsychicMask_Terminator {
@@ -19281,20 +13357,10 @@ PsychicMask_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `JesterHat_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 167 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JesterHat_Terminator {
@@ -19305,20 +13371,10 @@ JesterHat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkMask_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 165 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkMask_Terminator {
@@ -19329,20 +13385,10 @@ MonkMask_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidNeck_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 140 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidNeck_Terminator {
@@ -19353,20 +13399,10 @@ DruidNeck_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pebble_Terminator`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 169 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pebble_Terminator {
@@ -19379,21 +13415,10 @@ Pebble_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `LoansharksFedora`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 192 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LoansharksFedora {
@@ -19409,20 +13434,10 @@ LoansharksFedora {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rabiesface`
 **Source:** `enemy_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 11 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rabiesface {
@@ -19437,24 +13452,12 @@ Rabiesface {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mustache`
 **Name:** Mustache  
 **Description:** ARMOR_MUSTACHE_DESC  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Man |
-| Frame | 5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mustache {
@@ -19470,25 +13473,12 @@ Mustache {
 }
 ```
 
-</details>
-
 ---
 
 ### `Glasses`
 **Name:** Glasses  
 **Description:** ARMOR_GLASSES_DESC  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Frame | 1 |
-| INT | 2 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Glasses {
@@ -19503,26 +13493,12 @@ Glasses {
 }
 ```
 
-</details>
-
 ---
 
 ### `Muzzle`
 **Name:** Muzzle  
 **Description:** ARMOR_MUZZLE_DESC  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Gimp |
-| Frame | 4 |
-| STR | -2 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Muzzle {
@@ -19541,25 +13517,12 @@ Muzzle {
 }
 ```
 
-</details>
-
 ---
 
 ### `FaceCovering`
 **Name:** Face Covering  
 **Description:** ARMOR_FACECOVERING_DESC  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | [Medical, |
-| Frame | 6 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FaceCovering {
@@ -19579,25 +13542,12 @@ FaceCovering {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bozo`
 **Name:** Bozo  
 **Description:** Your basic attack has a +15% chance to inflict Fear.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Jester |
-| Frame | 7 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bozo {
@@ -19619,25 +13569,12 @@ Bozo {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bandage`
 **Name:** Bandage  
 **Description:** +2 Health Regen.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Nurse |
-| Frame | 9 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bandage {
@@ -19656,25 +13593,12 @@ Bandage {
 }
 ```
 
-</details>
-
 ---
 
 ### `MysticalBlindfold`
 **Name:** Mystical Blindfold  
 **Description:** Your physical attacks and abilities always miss.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Rag |
-| Frame | 28 |
-| INT | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MysticalBlindfold {
@@ -19694,8 +13618,6 @@ MysticalBlindfold {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThirdEye`
@@ -19703,16 +13625,6 @@ MysticalBlindfold {
 **Description:** +1 range.
 Your ranged attacks can't miss.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | [Psychic, |
-| Frame | 29 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThirdEye {
@@ -19730,8 +13642,6 @@ ThirdEye {
 }
 ```
 
-</details>
-
 ---
 
 ### `Flower`
@@ -19739,16 +13649,6 @@ ThirdEye {
 **Description:** Spawn flowers under you when you end your turn.
 +1 Health Regen.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Flower |
-| Frame | 30 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Flower {
@@ -19766,23 +13666,12 @@ Flower {
 }
 ```
 
-</details>
-
 ---
 
 ### `HockeyMask`
 **Name:** Hockey Mask  
 **Description:** While downed, you have a 25% chance to revive with 1 HP at the end of the round.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Frame | 27 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HockeyMask {
@@ -19800,24 +13689,12 @@ HockeyMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `BanditMask`
 **Name:** Bandit Mask  
 **Description:** Your basic attack spawns 1 coin when it deals damage.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Thief |
-| Frame | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BanditMask {
@@ -19836,25 +13713,12 @@ BanditMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `InfamousMask`
 **Name:** Infamous Mask  
 **Description:** Block attacks from the front.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Lead |
-| Frame | 2 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 InfamousMask {
@@ -19873,24 +13737,12 @@ InfamousMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `BearTrapMask`
 **Name:** Bear Trap Mask  
 **Description:** +1 Bleed Thorns.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Lead |
-| Frame | 62 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BearTrapMask {
@@ -19910,8 +13762,6 @@ BearTrapMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `PinsAndNeedles`
@@ -19919,16 +13769,6 @@ BearTrapMask {
 **Description:** +1 Thorns.
 Gain +1 Charge when you take damage.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Gimp |
-| Frame | 65 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PinsAndNeedles {
@@ -19949,24 +13789,12 @@ PinsAndNeedles {
 }
 ```
 
-</details>
-
 ---
 
 ### `NinjaBandana`
 **Name:** Ninja Bandana  
 **Description:** You have a 10% chance to gain a bonus attack when you use your basic attack.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Ninja |
-| Frame | 66 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NinjaBandana {
@@ -19985,23 +13813,12 @@ NinjaBandana {
 }
 ```
 
-</details>
-
 ---
 
 ### `Monocle`
 **Name:** Monocle  
 **Description:** Your physical attacks can't miss.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Frame | 67 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Monocle {
@@ -20019,8 +13836,6 @@ Monocle {
 }
 ```
 
-</details>
-
 ---
 
 ### `PhantomMask`
@@ -20028,15 +13843,6 @@ Monocle {
 **Description:** +10% chance to Block attacks.
 When you take damage, this becomes an invincible familiar.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Frame | 69 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PhantomMask {
@@ -20055,23 +13861,12 @@ PhantomMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `WhiteBelt`
 **Name:** White Belt  
 **Description:** +1 Brace.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Frame | 71 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WhiteBelt {
@@ -20087,8 +13882,6 @@ WhiteBelt {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrownBelt`
@@ -20096,15 +13889,6 @@ WhiteBelt {
 **Description:** +1 Damage.
 If you end your turn with unused basic attacks, gain that many Backflips.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Frame | 72 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrownBelt {
@@ -20123,23 +13907,12 @@ BrownBelt {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlackBelt`
 **Name:** Black Belt  
 **Description:** 25% chance to block attacks and counter attack.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Frame | 73 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlackBelt {
@@ -20155,8 +13928,6 @@ BlackBelt {
 }
 ```
 
-</details>
-
 ---
 
 ### `EyeOfRa`
@@ -20164,15 +13935,6 @@ BlackBelt {
 **Description:** Your basic attack inflicts Burn 1 and Blind 1.
 Inflict Burn 1 and Blind 1 on units that contact or attack you.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Frame | 154 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EyeOfRa { 
@@ -20197,24 +13959,12 @@ EyeOfRa {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bandages`
 **Name:** Bandages  
 **Description:** Heals heal you for twice as much.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Nurse |
-| Frame | 132 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bandages {
@@ -20231,8 +13981,6 @@ Bandages {
 }
 ```
 
-</details>
-
 ---
 
 ### `HorseBlinders`
@@ -20240,16 +13988,6 @@ Bandages {
 **Description:** Your abilities have 100% accuracy and +50% Crit Chance.
 You are unable to hit any unit that isn't in a straight line directly in front of you.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | [Leather, |
-| Frame | 138 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HorseBlinders {
@@ -20268,24 +14006,12 @@ HorseBlinders {
 }
 ```
 
-</details>
-
 ---
 
 ### `SurvivalistMask`
 **Name:** Survivalist's Mask  
 **Description:** Bodies you destroy spawn food, catnip and a coin.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Survivalist |
-| Frame | 135 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SurvivalistMask {
@@ -20304,8 +14030,6 @@ SurvivalistMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `LeechBrood`
@@ -20313,16 +14037,6 @@ SurvivalistMask {
 **Description:** Inflict Leech 1 to all enemies at the start of each battle.
 Start each battle at 50% health.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Leech |
-| Frame | 136 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeechBrood {
@@ -20342,24 +14056,12 @@ LeechBrood {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlyphOfProtection`
 **Name:** Glyph of Protection  
 **Description:** Gain +1 [img:shield] each time you cast a spell.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Cleric |
-| Frame | 142 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlyphOfProtection {
@@ -20378,24 +14080,12 @@ GlyphOfProtection {
 }
 ```
 
-</details>
-
 ---
 
 ### `FeatheredMask`
 **Name:** Feathered Mask  
 **Description:** +10% Dodge Chance.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Feathered |
-| Frame | 183 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeatheredMask {
@@ -20412,24 +14102,12 @@ FeatheredMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `Debris`
 **Name:** Debris  
 **Description:** +1 Brace.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | [Debris, |
-| Frame | 182 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Debris {
@@ -20447,24 +14125,12 @@ Debris {
 }
 ```
 
-</details>
-
 ---
 
 ### `MudMask`
 **Name:** Mud Mask  
 **Description:** Fragile and Brittle while wet.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | DirtClod |
-| Frame | 181 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MudMask {
@@ -20484,24 +14150,12 @@ MudMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `VisionPlugin`
 **Name:** Vision Plugin  
 **Description:** +1 range.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | [Cyborg, |
-| Frame | 173 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 VisionPlugin {
@@ -20519,24 +14173,12 @@ VisionPlugin {
 }
 ```
 
-</details>
-
 ---
 
 ### `RubberBand`
 **Name:** Rubber Band  
 **Description:** +1 reach.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Rubber |
-| Frame | 174 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberBand {
@@ -20553,24 +14195,12 @@ RubberBand {
 }
 ```
 
-</details>
-
 ---
 
 ### `MuertosMask`
 **Name:** Muertos Mask  
 **Description:** +6 Corpse Health.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Necromancer |
-| Frame | 176 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MuertosMask {
@@ -20589,24 +14219,12 @@ MuertosMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `RhinestoneStickers`
 **Name:** Rhinestone Stickers  
 **Description:** Emit 4 Sparkles at the start of each battle.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | common |
-| Set | Gemstone |
-| Frame | 179 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RhinestoneStickers {
@@ -20625,24 +14243,12 @@ RhinestoneStickers {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlessedAshes`
 **Name:** Blessed Ashes  
 **Description:** Gain +3 [img:shield] once per battle when your HP is 3 or less.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Cleric |
-| Frame | 172 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlessedAshes {
@@ -20668,24 +14274,12 @@ BlessedAshes {
 }
 ```
 
-</details>
-
 ---
 
 ### `AttractiveHairClip`
 **Name:** Attractive Hair Clip  
 **Description:** After you're downed, the next time an allied cat takes a turn, they take an extra turn.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Set | Used |
-| Frame | 178 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AttractiveHairClip {
@@ -20706,29 +14300,12 @@ AttractiveHairClip {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChampionsMask`
 **Name:** Champion's Mask  
 **Description:** Gain +1 [img:{str_aux}] until the end of the battle each time you kill a unit.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | uncommon |
-| Frame | 184 |
-| STR | passives |
-| DEX | passives |
-| INT | passives |
-| LCK | passives |
-| CON | passives |
-| SPD | passives |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChampionsMask {
@@ -20803,24 +14380,12 @@ ChampionsMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `BarbedScrap`
 **Name:** Barbed Scrap  
 **Description:** +1 Thorns, +1 Damage.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [Barbed, |
-| Frame | 185 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BarbedScrap {
@@ -20841,24 +14406,12 @@ BarbedScrap {
 }
 ```
 
-</details>
-
 ---
 
 ### `LeatherHideMask`
 **Name:** Leather Hide Mask  
 **Description:** +1 Brace, +1 Health Regen, 5% chance to spawn a Charmed Flea each turn.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [CatHide, |
-| Frame | 186 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeatherHideMask {
@@ -20884,8 +14437,6 @@ LeatherHideMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `RecycledGimpMask`
@@ -20893,16 +14444,6 @@ LeatherHideMask {
 **Description:** Gain +2 Charge when you take damage.
 Find a common item when you are downed.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [Gimp, |
-| Frame | 187 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RecycledGimpMask {
@@ -20926,24 +14467,12 @@ RecycledGimpMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `GemstoneBones`
 **Name:** Gemstone Bones  
 **Description:** +1 Kinetic Spikes. When you take damage, gain +1 [img:str]. When you are downed, emit 6 Sparkles.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [Bone, |
-| Frame | 188 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GemstoneBones {
@@ -20969,8 +14498,6 @@ GemstoneBones {
 }
 ```
 
-</details>
-
 ---
 
 ### `CoolRocks`
@@ -20978,17 +14505,6 @@ GemstoneBones {
 **Description:** Your basic attack has +1 Knockback.
 When you are downed, gain coins.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [Cool, |
-| Frame | 189 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoolRocks {
@@ -21018,8 +14534,6 @@ CoolRocks {
 }
 ```
 
-</details>
-
 ---
 
 ### `MinerImplant`
@@ -21027,17 +14541,6 @@ CoolRocks {
 **Description:** +1 range, +1 reach.
 Poison Immunity.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [Miner, |
-| Frame | 190 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MinerImplant {
@@ -21062,8 +14565,6 @@ MinerImplant {
 }
 ```
 
-</details>
-
 ---
 
 ### `HolyTears`
@@ -21071,16 +14572,6 @@ MinerImplant {
 **Description:** Allies gain 2 [img:divineshield] when you are downed.
 Your spells cost -1 mana.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Cleric |
-| Frame | 191 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HolyTears {
@@ -21102,8 +14593,6 @@ HolyTears {
 }
 ```
 
-</details>
-
 ---
 
 ### `EyeOfGod`
@@ -21111,16 +14600,6 @@ HolyTears {
 **Description:** +10 range. 
 Your ranged attacks can't miss.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Hybrid |
-| Frame | 192 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EyeOfGod {
@@ -21140,24 +14619,12 @@ EyeOfGod {
 }
 ```
 
-</details>
-
 ---
 
 ### `PeaceSymbolFacePaint`
 **Name:** Peace Symbol Face Paint  
 **Description:** Damage you deal to allies is reduced to 0.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Hippie |
-| Frame | 194 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PeaceSymbolFacePaint {
@@ -21174,8 +14641,6 @@ PeaceSymbolFacePaint {
 }
 ```
 
-</details>
-
 ---
 
 ### `HitlersMustache`
@@ -21183,16 +14648,6 @@ PeaceSymbolFacePaint {
 **Description:** Permanent Madness.
 Take 2 extra turns at the start of each round.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [Man, |
-| Frame | 196 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HitlersMustache {
@@ -21211,24 +14666,12 @@ HitlersMustache {
 }
 ```
 
-</details>
-
 ---
 
 ### `RadGlasses`
 **Name:** Rad Glasses  
 **Description:** Your explosions deal +1 damage and have +1 area.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Cool |
-| Frame | 195 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RadGlasses {
@@ -21248,8 +14691,6 @@ RadGlasses {
 }
 ```
 
-</details>
-
 ---
 
 ### `FleshKid`
@@ -21258,17 +14699,6 @@ RadGlasses {
 When you're downed, revive at the end of the round.
 Your movement action is Jump.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | [Meat, |
-| Frame | 198 |
-| SPD | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FleshKid {
@@ -21289,24 +14719,12 @@ FleshKid {
 }
 ```
 
-</details>
-
 ---
 
 ### `LilTumor`
 **Name:** Lil' Tumor  
 **Description:** At the end of each battle, gain -1 to three random stats, then gain a mutation.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Mother |
-| Frame | 199 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LilTumor {
@@ -21328,8 +14746,6 @@ LilTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `ConjoinedAmeoba`
@@ -21337,17 +14753,6 @@ LilTumor {
 **Description:** Brace 2. +2 Health Regen. Units that contact you are knocked back 2 tiles.
 20% chance to spawn a Charmed Ameoba at the end of the turn.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Amoeba |
-| Frame | 200 |
-| INT | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ConjoinedAmeoba {
@@ -21374,8 +14779,6 @@ ConjoinedAmeoba {
 }
 ```
 
-</details>
-
 ---
 
 ### `MinersBeard`
@@ -21383,16 +14786,6 @@ ConjoinedAmeoba {
 **Description:** When you take damage, spawn scrap.
 When you end turn, spawn a coin on a random tile.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | [Miner, |
-| Frame | 201 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MinersBeard {
@@ -21414,8 +14807,6 @@ MinersBeard {
 }
 ```
 
-</details>
-
 ---
 
 ### `EtherealEyes`
@@ -21423,15 +14814,6 @@ MinersBeard {
 **Description:** +15% Dodge Chance.
 Gain +5% Dodge Chance each time you take damage.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Frame | 202 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EtherealEyes {
@@ -21450,24 +14832,12 @@ EtherealEyes {
 }
 ```
 
-</details>
-
 ---
 
 ### `DoodieMask`
 **Name:** Doodie Mask  
 **Description:** Spawn a Charmed Fly at the end of your turn.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | rare |
-| Set | Fecal |
-| Frame | 203 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DoodieMask {
@@ -21488,24 +14858,12 @@ DoodieMask {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinasFriend`
 **Name:** Tina's Best Friend  
 **Description:** Spawn a large Charmed Fly at the start of each battle.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Fly |
-| Frame | 161 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinasFriend {
@@ -21525,24 +14883,12 @@ TinasFriend {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensFartFace`
 **Name:** Steven's Fart Face  
 **Description:** At the end of your turn, inflict Poison 1 on all units. Repeat for each turn you've taken this battle.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 156 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensFartFace {
@@ -21561,25 +14907,12 @@ StevensFartFace {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensMustache`
 **Name:** Steven's Mustache  
 **Description:** ARMOR_STEVENSMUSTACHE_DESC  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 157 |
-| LCK | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensMustache {
@@ -21596,24 +14929,12 @@ StevensMustache {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenMask1`
 **Name:** Steven  
 **Description:** Your musical abilities are always double cast.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 158 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenMask1 {
@@ -21630,24 +14951,12 @@ StevenMask1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenMask2`
 **Name:** Steven  
 **Description:** While you're downed, spawn a random charmed enemy familiar at the end of each round.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 159 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenMask2 {
@@ -21669,23 +14978,12 @@ StevenMask2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Intruder`
 **Name:** Intruder  
 **Description:** Is it your baby?  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Frame | 206 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Intruder {
@@ -21702,23 +15000,12 @@ Intruder {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChildOfTheGlowingOne2`
 **Name:** Child of the Glowing One  
 **Description:** Gain +1 Damage and heal 1 HP every time you use your basic attack.  
 **Source:** `face_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | very_rare |
-| Frame | 205 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChildOfTheGlowingOne2 {
@@ -21738,23 +15025,12 @@ ChildOfTheGlowingOne2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Antenna`
 **Name:** Antenna  
 **Description:** Units that contact or attack you get hit with a lightning bolt that has a 10% chance to Stun.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Frame | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Antenna {
@@ -21782,24 +15058,12 @@ Antenna {
 }
 ```
 
-</details>
-
 ---
 
 ### `Horns`
 **Name:** Horns  
 **Description:** +1 Thorns.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Frame | 2 |
-| STR | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Horns {
@@ -21816,24 +15080,12 @@ Horns {
 }
 ```
 
-</details>
-
 ---
 
 ### `HappyHelmet`
 **Name:** Happy Helmet  
 **Description:** Fragile. Gain Psychosis when this breaks.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | [Bionic, |
-| Frame | 55 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HappyHelmet {
@@ -21855,24 +15107,12 @@ HappyHelmet {
 }
 ```
 
-</details>
-
 ---
 
 ### `HeadSpring`
 **Name:** Head Spring  
 **Description:** Units that contact you are knocked back 10 tiles.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Scrap |
-| Frame | 54 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeadSpring {
@@ -21892,24 +15132,12 @@ HeadSpring {
 }
 ```
 
-</details>
-
 ---
 
 ### `Wig`
 **Name:** Wig  
 **Description:** ARMOR_WIG_DESC  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Used |
-| Frame | 56 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Wig {
@@ -21924,23 +15152,12 @@ Wig {
 }
 ```
 
-</details>
-
 ---
 
 ### `HeadCheese`
 **Name:** Head Cheese  
 **Description:** +2 Health Regen.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Frame | 53 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeadCheese {
@@ -21956,25 +15173,12 @@ HeadCheese {
 }
 ```
 
-</details>
-
 ---
 
 ### `DunceCap`
 **Name:** Dunce Cap  
 **Description:** Your spells cost -1 mana.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Paper |
-| Frame | 91 |
-| INT | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DunceCap {
@@ -21993,24 +15197,12 @@ DunceCap {
 }
 ```
 
-</details>
-
 ---
 
 ### `PoopHat`
 **Name:** Crown of Feculence  
 **Description:** Poops you spawn are alive!  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Fecal |
-| Frame | 96 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoopHat {
@@ -22028,8 +15220,6 @@ PoopHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Magneto`
@@ -22037,15 +15227,6 @@ PoopHat {
 **Description:** When you end your movement, pull all adjacent pickups towards you.
 When you gain coins, gain that much [img:shield].  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Frame | 29 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Magneto {
@@ -22069,24 +15250,12 @@ Magneto {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlackCandle`
 **Name:** Black Candle  
 **Description:** You can remove cursed items equipped on you, except this one.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Demonic |
-| Frame | 58 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlackCandle { 
@@ -22108,8 +15277,6 @@ BlackCandle {
 }
 ```
 
-</details>
-
 ---
 
 ### `CamoHat`
@@ -22117,16 +15284,6 @@ BlackCandle {
 **Description:** +25% chance to ambush when entering battle.
 10% chance to gain Stealth 1 at the end of each turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Survivalist |
-| Frame | 59 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CamoHat {
@@ -22146,8 +15303,6 @@ CamoHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `JesterCap`
@@ -22155,16 +15310,6 @@ CamoHat {
 **Description:** You can reroll your options twice when you level up.
 Abilities from all classes are offered after rerolling.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Jester |
-| Frame | 60 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JesterCap {
@@ -22184,24 +15329,12 @@ JesterCap {
 }
 ```
 
-</details>
-
 ---
 
 ### `Halo`
 **Name:** Halo  
 **Description:** +33% chance to gain +1 [img:divineshield] when you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 61 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Halo {
@@ -22222,23 +15355,12 @@ Halo {
 }
 ```
 
-</details>
-
 ---
 
 ### `PropellerCap`
 **Name:** Propeller Cap  
 **Description:** Flying.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Frame | 62 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PropellerCap {
@@ -22256,25 +15378,12 @@ PropellerCap {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrainInAJar`
 **Name:** Brain In A Jar  
 **Description:** The first spell you cast each turn is free.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Guts |
-| Frame | 168 |
-| INT | -5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrainInAJar {
@@ -22300,24 +15409,12 @@ BrainInAJar {
 }
 ```
 
-</details>
-
 ---
 
 ### `MangyWig`
 **Name:** Mangy Wig  
 **Description:** Spawn a Spiderling for every 4 [img:lck] you have at the start of each battle.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Used |
-| Frame | 133 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MangyWig {
@@ -22339,23 +15436,12 @@ MangyWig {
 }
 ```
 
-</details>
-
 ---
 
 ### `RisingSunBandana`
 **Name:** Nisshōki Bandana  
 **Description:** While at 5 or less health, you have +3 Damage and can move an extra time each turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Frame | 135 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RisingSunBandana {
@@ -22379,24 +15465,12 @@ RisingSunBandana {
 }
 ```
 
-</details>
-
 ---
 
 ### `JewelOfDrog`
 **Name:** Jewel of Drog  
 **Description:** The first time you reach full mana each battle, gain +1 Magic Damage and reduce the cost of your spells by 1.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Gemstone |
-| Frame | 137 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JewelOfDrog {
@@ -22420,25 +15494,12 @@ JewelOfDrog {
 }
 ```
 
-</details>
-
 ---
 
 ### `LeakyBrain`
 **Name:** Leaky Brain  
 **Description:** When you spend mana, adjacent allies gain that amount of mana.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Guts |
-| Frame | 143 |
-| INT | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeakyBrain {
@@ -22463,24 +15524,12 @@ LeakyBrain {
 }
 ```
 
-</details>
-
 ---
 
 ### `FryingPan`
 **Name:** Frying Pan  
 **Description:** Block and counter Backstabs.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Lead |
-| Frame | 151 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FryingPan {
@@ -22501,24 +15550,12 @@ FryingPan {
 }
 ```
 
-</details>
-
 ---
 
 ### `CrownOfHorns`
 **Name:** Crown of Horns  
 **Description:** +4 Thorns. When you take damage while you have Thorns, lose 1 Thorns, then shoot needles that deal 2 damage in eight directions.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | [Demonic, |
-| Frame | 155 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrownOfHorns {
@@ -22545,24 +15582,12 @@ CrownOfHorns {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheRelic`
 **Name:** The Relic  
 **Description:** When you lose [img:divineshield], emit a Sparkle for every point of damage blocked.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Cleric |
-| Frame | 158 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheRelic {
@@ -22583,23 +15608,12 @@ TheRelic {
 }
 ```
 
-</details>
-
 ---
 
 ### `FocusBand`
 **Name:** Focus Band  
 **Description:** Your crits knock units back 10 tiles with Chain Knockback.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Frame | 136 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FocusBand {
@@ -22620,24 +15634,12 @@ FocusBand {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedicHat`
 **Name:** Medic Hat  
 **Description:** -1 Damage. Your basic attack heals allies.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | [Nurse, |
-| Frame | 140 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedicHat {
@@ -22657,8 +15659,6 @@ MedicHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `KingsCrown`
@@ -22667,15 +15667,6 @@ MedicHat {
 The Alpha has All Stats Up.
 Lose Alpha status when you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Frame | 141 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 KingsCrown {
@@ -22696,8 +15687,6 @@ KingsCrown {
 }
 ```
 
-</details>
-
 ---
 
 ### `EmoWig`
@@ -22705,22 +15694,6 @@ KingsCrown {
 **Description:** Adjacent units get All Stats Down 2.
 When you take damage, all units within 2 tiles heal 1 HP and gain a temporary +1 Damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | [Necromancer, |
-| Frame | 142 |
-| STR | -1 |
-| DEX | -1 |
-| INT | -1 |
-| LCK | -1 |
-| CON | -1 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EmoWig {
@@ -22746,8 +15719,6 @@ EmoWig {
 }
 ```
 
-</details>
-
 ---
 
 ### `ToxicCanister`
@@ -22756,16 +15727,6 @@ EmoWig {
 Your basic attack inflicts Poison 1.
 Inflict Poison 1 on units that contact you.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Radioactive |
-| Frame | 147 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ToxicCanister {
@@ -22804,25 +15765,12 @@ ToxicCanister {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrokenMirrorHat`
 **Name:** Broken Mirror  
 **Description:** +3 Bleed Thorns. Your basic attack inflicts +1 Bleed and spawns glass.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Used |
-| Frame | 134 |
-| LCK | -7 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrokenMirrorHat {
@@ -22846,8 +15794,6 @@ BrokenMirrorHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `TopHat`
@@ -22855,16 +15801,6 @@ BrokenMirrorHat {
 **Description:** Start with a bomb if you have no weapon equipped.
 Your explosions have +1 area.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Cool |
-| Frame | 138 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TopHat {
@@ -22888,23 +15824,12 @@ TopHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Helmet`
 **Name:** Helmet  
 **Description:** ARMOR_HELMET_DESC  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Frame | 139 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Helmet {
@@ -22924,23 +15849,12 @@ Helmet {
 }
 ```
 
-</details>
-
 ---
 
 ### `ConfusingHat`
 **Name:** Confusing Hat  
 **Description:** Apply Confusion 2 to yourself and all enemies at the start of each battle.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Frame | 144 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ConfusingHat {
@@ -22960,24 +15874,12 @@ ConfusingHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `NightmareHat`
 **Name:** Nightmare Hat  
 **Description:** After you kill 3 units, you can attack an extra time each turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Leather |
-| Frame | 145 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NightmareHat {
@@ -23000,24 +15902,12 @@ NightmareHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CrownOfPestilence`
 **Name:** Crown of Pestilence  
 **Description:** Your basic attack becomes Pestilence.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Necromancer |
-| Frame | 150 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrownOfPestilence {
@@ -23034,23 +15924,12 @@ CrownOfPestilence {
 }
 ```
 
-</details>
-
 ---
 
 ### `RainHat`
 **Name:** Rain Hat  
 **Description:** You have All Stats Up while wet.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Frame | 153 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RainHat {
@@ -23071,24 +15950,12 @@ RainHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `SplinteredCrown`
 **Name:** Splintered Crown  
 **Description:** Gain +1 Thorns when you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Wood |
-| Frame | 157 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SplinteredCrown {
@@ -23107,24 +15974,12 @@ SplinteredCrown {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedievalHelmet`
 **Name:** Medieval Helmet  
 **Description:** +2 Brace.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Fighter |
-| Frame | 159 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedievalHelmet {
@@ -23142,24 +15997,12 @@ MedievalHelmet {
 }
 ```
 
-</details>
-
 ---
 
 ### `ConjoinedEye`
 **Name:** Conjoined Eye  
 **Description:** +10% Dodge Chance.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Hybrid |
-| Frame | 191 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ConjoinedEye {
@@ -23176,24 +16019,12 @@ ConjoinedEye {
 }
 ```
 
-</details>
-
 ---
 
 ### `StoneHelmet`
 **Name:** Stone Helmet  
 **Description:** +1 Brace.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Rock |
-| Frame | 190 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StoneHelmet {
@@ -23210,24 +16041,12 @@ StoneHelmet {
 }
 ```
 
-</details>
-
 ---
 
 ### `OakHelmet`
 **Name:** Oak Helmet  
 **Description:** Flammable.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Wood |
-| Frame | 189 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OakHelmet {
@@ -23246,24 +16065,12 @@ OakHelmet {
 }
 ```
 
-</details>
-
 ---
 
 ### `RustingHelmet`
 **Name:** Rusting Helmet  
 **Description:** Gain +1 [img:shield] at the end of each turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Set | Used |
-| Frame | 183 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RustingHelmet {
@@ -23285,23 +16092,12 @@ RustingHelmet {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrainingBand`
 **Name:** Training Band  
 **Description:** +20% Crit Chance.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | common |
-| Frame | 182 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrainingBand {
@@ -23317,8 +16113,6 @@ TrainingBand {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkullClamp`
@@ -23326,16 +16120,6 @@ TrainingBand {
 **Description:** Brace 2 
 +25% chance to inflict Stun on units that contact you.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Frame | 70 |
-| INT | -6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkullClamp {
@@ -23360,30 +16144,12 @@ SkullClamp {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrainChip`
 **Name:** Brain Chip  
 **Description:** Become AI controlled.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Chip |
-| Frame | 69 |
-| STR | 1 |
-| DEX | 1 |
-| INT | 1 |
-| LCK | 1 |
-| CON | 1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrainChip {
@@ -23409,24 +16175,12 @@ BrainChip {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpareParts`
 **Name:** Spare Parts  
 **Description:** When you move, spawn a scrap pickup where you moved from.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | [Tinkerer, |
-| Frame | 181 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpareParts {
@@ -23444,24 +16198,12 @@ SpareParts {
 }
 ```
 
-</details>
-
 ---
 
 ### `SnakeskinHat`
 **Name:** Snakeskin Hat  
 **Description:** Spawn a Charmed Rattlesnek at the start of each battle.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | uncommon |
-| Set | Leather |
-| Frame | 185 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SnakeskinHat {
@@ -23480,24 +16222,12 @@ SnakeskinHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `DeathShroud`
 **Name:** Death Shroud  
 **Description:** When you're downed, permanently gain +1 to a random stat.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Rag |
-| Frame | 187 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DeathShroud {
@@ -23524,23 +16254,12 @@ DeathShroud {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlessedHalo`
 **Name:** Blessed Halo  
 **Description:** 50% chance to gain +1 [img:divineshield] when you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 206 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlessedHalo {
@@ -23560,24 +16279,12 @@ BlessedHalo {
 }
 ```
 
-</details>
-
 ---
 
 ### `CrownOfThorns`
 **Name:** Crown Of Thorns  
 **Description:** +1 Thorns. Gain +1 Thorns whenever you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Cleric |
-| Frame | 65 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrownOfThorns {
@@ -23600,25 +16307,12 @@ CrownOfThorns {
 }
 ```
 
-</details>
-
 ---
 
 ### `RottenGuts`
 **Name:** Rotten Guts  
 **Description:** +2 Health Regen. Spawn a Charmed Maggot or Fly when you end your turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | [Guts, |
-| Frame | 207 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RottenGuts {
@@ -23642,8 +16336,6 @@ RottenGuts {
 }
 ```
 
-</details>
-
 ---
 
 ### `PaperRags`
@@ -23652,16 +16344,6 @@ RottenGuts {
 +1 Bleed Thorns.
 Your basic attack inflicts Bleed.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | [Paper, |
-| Frame | 208 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PaperRags {
@@ -23682,24 +16364,12 @@ PaperRags {
 }
 ```
 
-</details>
-
 ---
 
 ### `TieDyeBandana`
 **Name:** Tie Dye Bandana  
 **Description:** Spawn a Catnip pickup when you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Hippie |
-| Frame | 209 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TieDyeBandana {
@@ -23719,8 +16389,6 @@ TieDyeBandana {
 }
 ```
 
-</details>
-
 ---
 
 ### `BungasCrown`
@@ -23728,18 +16396,6 @@ TieDyeBandana {
 **Description:** Your weapons always crit.
 Equip a Bone Club weapon when you kill a unit.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 217 |
-| STR | 2 |
-| CON | 1 |
-| SPD | -4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BungasCrown {
@@ -23765,24 +16421,12 @@ BungasCrown {
 }
 ```
 
-</details>
-
 ---
 
 ### `Asteroid`
 **Name:** Asteroid  
 **Description:** 20% chance to call down a Meteor on a random enemy when you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Planet |
-| Frame | 216 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Asteroid {
@@ -23805,24 +16449,12 @@ Asteroid {
 }
 ```
 
-</details>
-
 ---
 
 ### `AlienStalk`
 **Name:** Alien Stalk  
 **Description:** Cast a random spell each time you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | [Space, |
-| Frame | 215 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlienStalk {
@@ -23841,25 +16473,12 @@ AlienStalk {
 }
 ```
 
-</details>
-
 ---
 
 ### `FriendlyAmoeba`
 **Name:** Friendly Amoeba  
 **Description:** Brace 1, +2 Health Regen, Shield 3. Units that contact you get knocked back 1.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Amoeba |
-| Frame | 214 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FriendlyAmoeba {
@@ -23883,24 +16502,12 @@ FriendlyAmoeba {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpiderBaby`
 **Name:** Spider Baby  
 **Description:** Spawn a Spiderling when you take damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Necromancer |
-| Frame | 213 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderBaby {
@@ -23919,24 +16526,12 @@ SpiderBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `BorisBrain`
 **Name:** Boris' Brain  
 **Description:** Trample. When you take damage, move 1 tile towards what damaged you.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Guts |
-| Frame | 212 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BorisBrain {
@@ -23954,24 +16549,12 @@ BorisBrain {
 }
 ```
 
-</details>
-
 ---
 
 ### `JohnnysUndies`
 **Name:** Johnny's Undies  
 **Description:** Spawn a Charmed Cultist at the start of each battle.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Used |
-| Frame | 211 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JohnnysUndies {
@@ -23988,23 +16571,12 @@ JohnnysUndies {
 }
 ```
 
-</details>
-
 ---
 
 ### `QueensCrown`
 **Name:** Queen's Crown  
 **Description:** Your basic attack has Knockback and Chain Knockback.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 210 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 QueensCrown {
@@ -24025,23 +16597,12 @@ QueensCrown {
 }
 ```
 
-</details>
-
 ---
 
 ### `DustDevilsHorn`
 **Name:** Dust Devil's Horn  
 **Description:** +1 Thorns. After you use your basic attack, do a dash attack that leaves a tornado behind.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 219 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DustDevilsHorn {
@@ -24062,23 +16623,12 @@ DustDevilsHorn {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChildOfTheGlowingOne`
 **Name:** Child of the Glowing One  
 **Description:** Gain +1 [img:divineshield] every time you end your movement.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 220 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChildOfTheGlowingOne {
@@ -24097,24 +16647,12 @@ ChildOfTheGlowingOne {
 }
 ```
 
-</details>
-
 ---
 
 ### `SabertoothTigerPelt`
 **Name:** Pale Sabertooth Pelt  
 **Description:** When you kill a unit, all nearby cats gain +1 Damage.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | rare |
-| Set | Wooly |
-| Frame | 221 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SabertoothTigerPelt {
@@ -24135,25 +16673,12 @@ SabertoothTigerPelt {
 }
 ```
 
-</details>
-
 ---
 
 ### `CowSkull`
 **Name:** Cow Skull  
 **Description:** +2 Thorns. Your basic attack is Push Attack.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Bone |
-| Frame | 222 |
-| STR | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CowSkull {
@@ -24175,23 +16700,12 @@ CowSkull {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrashCan`
 **Name:** TrashCan  
 **Description:** Brace 4. Blind.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 223 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrashCan {
@@ -24211,23 +16725,12 @@ TrashCan {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThrobbingCrown`
 **Name:** Throbbing Crown  
 **Description:** Tentacles attack all adjacent tiles at the end of your turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 172 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrobbingCrown {
@@ -24246,24 +16749,12 @@ ThrobbingCrown {
 }
 ```
 
-</details>
-
 ---
 
 ### `CrownOfChaos`
 **Name:** Crown of Chaos  
 **Description:** +2 level up Rerolls. Abilities from all classes are offered when you level up.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Hybrid |
-| Frame | 173 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrownOfChaos {
@@ -24281,23 +16772,12 @@ CrownOfChaos {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChildsCrown`
 **Name:** Child's Crown  
 **Description:** Your basic attack becomes holy and can heal allies.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 174 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChildsCrown {
@@ -24317,23 +16797,12 @@ ChildsCrown {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinasBellyButton`
 **Name:** Tina's Belly Button  
 **Description:** When you get a kill, gain +1 Health Regen.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 175 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinasBellyButton {
@@ -24351,26 +16820,12 @@ TinasBellyButton {
 }
 ```
 
-</details>
-
 ---
 
 ### `HitlersToupe`
 **Name:** Hitler's Toupe  
 **Description:** Permanent Madness. Give Madness to a random enemy at the end of your turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | [Man, |
-| Frame | 225 |
-| STR | 2 |
-| DEX | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HitlersToupe {
@@ -24393,25 +16848,12 @@ HitlersToupe {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensHat`
 **Name:** Steven's Hat  
 **Description:** Your spells cost 0. You can only cast each of your spells once per turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 177 |
-| INT | -9 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensHat {
@@ -24432,24 +16874,12 @@ StevensHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensHelmet`
 **Name:** Steven's Helmet  
 **Description:** When you are downed, give another allied cat 2 random disorders, or to yourself if you're alone.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 176 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensHelmet {
@@ -24475,8 +16905,6 @@ StevensHelmet {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenHat1`
@@ -24484,16 +16912,6 @@ StevensHelmet {
 **Description:** Your explosions are much, much bigger!
 You have explosion immunity.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 178 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenHat1 {
@@ -24512,24 +16930,12 @@ StevenHat1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenHat2`
 **Name:** Steven  
 **Description:** Each time you cast a spell, gain +1 range and +1 reach until the end of the turn.  
 **Source:** `head_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 179 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenHat2 {
@@ -24549,8 +16955,6 @@ StevenHat2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThrobbingGristle`
@@ -24559,16 +16963,6 @@ StevenHat2 {
 All units die when they get downed.
 Use: A melee attack that turns things it kills into Meat.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | quest |
-| Set | Meat |
-| Frame | 162 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrobbingGristle {
@@ -24591,8 +16985,6 @@ ThrobbingGristle {
 }
 ```
 
-</details>
-
 ---
 
 ### `PutridLeech`
@@ -24600,16 +16992,6 @@ ThrobbingGristle {
 **Description:** Take it to the Throbbing Artery in the Boneyard.
 You never level up and die when downed. You have Lifesteal on all of your attacks and abilities.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | quest |
-| Set | Leech |
-| Frame | 97 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PutridLeech {
@@ -24646,8 +17028,6 @@ PutridLeech {
 }
 ```
 
-</details>
-
 ---
 
 ### `GuillotinasHead`
@@ -24655,16 +17035,6 @@ PutridLeech {
 **Description:** Take it to the Meat Altar in the Throbbing Domain.
 All battles are Hard battles. Enemies will attack you instead of your allies if they can. Units that contact or attack you have a chance to be Feared. Your basic attack has a +10% chance to inflict Fear.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Rarity | quest |
-| Set | [Meat, |
-| Frame | 95 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GuillotinasHead {
@@ -24699,8 +17069,6 @@ GuillotinasHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `ScaldingOrb`
@@ -24709,17 +17077,6 @@ GuillotinasHead {
 Toss it to allies with open weapon slots to avoid taking Burn 3 each turn!
 Applies Burn 3 to units adjacent to allies that catch it.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | quest |
-| Set | Molten |
-| Frame | 163 |
-| SPD | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScaldingOrb {
@@ -24750,8 +17107,6 @@ ScaldingOrb {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlackShard`
@@ -24761,16 +17116,6 @@ Transforms after 20 absorptions.
 [s:.7](Saves its power across multiple runs.)[/s]
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | quest |
-| Set | Obelisk |
-| Frame | 164 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlackShard {
@@ -24797,8 +17142,6 @@ BlackShard {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlackShard_Glowing`
@@ -24807,16 +17150,6 @@ BlackShard {
 Use: Deal 5 damage with Lifesteal, inflict Burn 5, and purge all buffs. Instantly kills The Coven.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | quest |
-| Set | Obelisk |
-| Frame | 166 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlackShard_Glowing {
@@ -24836,24 +17169,12 @@ BlackShard_Glowing {
 }
 ```
 
-</details>
-
 ---
 
 ### `PyrophinasCollar`
 **Name:** Pyrophina's Collar  
 **Description:** Pyrophina joins you on your journey. She wishes to activate an obelisk on the moon.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | quest |
-| Set | Used |
-| Frame | 219 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PyrophinasCollar {
@@ -24880,24 +17201,12 @@ PyrophinasCollar {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZaratanasCollar`
 **Name:** Zaratana's Collar  
 **Description:** Zaratana joins you on your journey. She wishes to activate an obelisk in the Core.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | quest |
-| Set | Used |
-| Frame | 220 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZaratanasCollar {
@@ -24924,8 +17233,6 @@ ZaratanasCollar {
 }
 ```
 
-</details>
-
 ---
 
 ### `CryogenicTimeChamber_Empty`
@@ -24933,15 +17240,6 @@ ZaratanasCollar {
 **Description:** Put the Throbbing King's heart inside it.
 All enemy bodies revive to 30% health at the end of each round (except bosses). Find a random pill at the end of each battle.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | quest |
-| Frame | 224 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CryogenicTimeChamber_Empty {
@@ -24968,8 +17266,6 @@ CryogenicTimeChamber_Empty {
 }
 ```
 
-</details>
-
 ---
 
 ### `CryogenicTimeChamber_Full`
@@ -24977,15 +17273,6 @@ CryogenicTimeChamber_Empty {
 **Description:** Use it on the time machine in the Lab.
 All enemy bodies revive to full health at the end of each round (except bosses). +2 Health Regen.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | quest |
-| Frame | 225 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CryogenicTimeChamber_Full {
@@ -25009,8 +17296,6 @@ CryogenicTimeChamber_Full {
 }
 ```
 
-</details>
-
 ---
 
 ### `ReceiverAntenna`
@@ -25019,16 +17304,6 @@ CryogenicTimeChamber_Full {
 All events cause special happenings.
 Gain +2 Charge whenever an ally spends mana.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | quest |
-| Set | [Bionic, |
-| Frame | 98 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ReceiverAntenna {
@@ -25057,8 +17332,6 @@ ReceiverAntenna {
 }
 ```
 
-</details>
-
 ---
 
 ### `TransmitterAntenna`
@@ -25066,16 +17339,6 @@ ReceiverAntenna {
 **Description:** Place it far in the future.
 Your spells cost -2 mana. Every time you or another cat casts a spell, scramble that spell for the rest of the battle.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | quest |
-| Set | [Bionic, |
-| Frame | 99 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TransmitterAntenna {
@@ -25098,8 +17361,6 @@ TransmitterAntenna {
 }
 ```
 
-</details>
-
 ---
 
 ### `SignalAmplifier`
@@ -25108,16 +17369,6 @@ TransmitterAntenna {
 Spawn a random robot miniboss with Madness at the end of the first round.
 Use: Energize all robots and give yourself All Stats Up.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | quest |
-| Set | [Bionic, |
-| Frame | 165 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SignalAmplifier {
@@ -25144,8 +17395,6 @@ SignalAmplifier {
 }
 ```
 
-</details>
-
 ---
 
 ### `JarOfRadiation`
@@ -25153,16 +17402,6 @@ SignalAmplifier {
 **Description:** Fill it with the blood of the Throbbing King.
 At the end of your turn, deal 1 damage to EVERYTHING. At the end of each battle, gain +1 to a random stat and -1 to a random stat, permanently.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | quest |
-| Set | Radioactive |
-| Frame | 222 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JarOfRadiation { 
@@ -25194,8 +17433,6 @@ JarOfRadiation {
 }
 ```
 
-</details>
-
 ---
 
 ### `JarOfRadiatedBlood`
@@ -25203,16 +17440,6 @@ JarOfRadiation {
 **Description:** Add a bit of Chaos to it from The Rift.
 Whenever you take damage, spawn a friendly Clot that can grow into a copy of yourself. At the end of each battle, gain +2 to a random stat and -2 to a random stat, permanently.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | quest |
-| Set | Radioactive |
-| Frame | 223 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JarOfRadiatedBlood { 
@@ -25246,8 +17473,6 @@ JarOfRadiatedBlood {
 }
 ```
 
-</details>
-
 ---
 
 ### `JarOfChaos`
@@ -25255,16 +17480,6 @@ JarOfRadiatedBlood {
 **Description:** Bring it to Dr. Beanies.
 ...or drink it to permanently gain All Stats Up 2 and upgrade all of your spells.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | quest |
-| Set | Radioactive |
-| Frame | 239 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JarOfChaos { 
@@ -25293,23 +17508,12 @@ JarOfChaos {
 }
 ```
 
-</details>
-
 ---
 
 ### `JarOfNothing`
 **Name:** Jar Of Nothing  
 **Description:** It's trash now.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Frame | 242 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JarOfNothing { 
@@ -25322,8 +17526,6 @@ JarOfNothing {
 }
 ```
 
-</details>
-
 ---
 
 ### `Nuke`
@@ -25332,17 +17534,6 @@ JarOfNothing {
 +2 Brace. If this cat dies, it explodes and damages everything for 50.
 Bonus Ability: Trigger the Nuke.  
 **Source:** `legacy_quest_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | quest |
-| Set | Radioactive |
-| Frame | 77 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Nuke {
@@ -25372,23 +17563,12 @@ Nuke {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinksBow`
 **Name:** Fancy Bow  
 **Description:** It's fancy.  
 **Source:** `legendary_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Rarity | very_rare |
-| Frame | 113 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinksBow {
@@ -25401,22 +17581,12 @@ TinksBow {
 }
 ```
 
-</details>
-
 ---
 
 ### `LevelUp`
 **Name:** Rare Candy  
 **Description:** Use to level up a cat now.  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LevelUp {
@@ -25428,8 +17598,6 @@ LevelUp {
 }
 ```
 
-</details>
-
 ---
 
 ### `LearnPassive`
@@ -25438,14 +17606,6 @@ LevelUp {
 
 {str_aux_passive_desc}  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 12 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LearnPassive {
@@ -25460,8 +17620,6 @@ LearnPassive {
 }
 ```
 
-</details>
-
 ---
 
 ### `LearnDisorder`
@@ -25470,14 +17628,6 @@ LearnPassive {
 
 {str_aux_passive_desc}  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 12 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LearnDisorder {
@@ -25492,8 +17642,6 @@ LearnDisorder {
 }
 ```
 
-</details>
-
 ---
 
 ### `LearnAbility`
@@ -25502,14 +17650,6 @@ LearnDisorder {
 
 {str_aux_active_desc}  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 13 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LearnAbility {
@@ -25524,22 +17664,12 @@ LearnAbility {
 }
 ```
 
-</details>
-
 ---
 
 ### `Upgrade`
 **Name:** Upgrade  
 **Description:** Use to have a cat upgrade a passive or active ability now.  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Upgrade {
@@ -25551,22 +17681,12 @@ Upgrade {
 }
 ```
 
-</details>
-
 ---
 
 ### `StatUp`
 **Name:** Stat Up  
 **Description:** Use to have a cat gain stats now.  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StatUp {
@@ -25578,22 +17698,12 @@ StatUp {
 }
 ```
 
-</details>
-
 ---
 
 ### `StatShuffle`
 **Name:** Stat Shuffle  
 **Description:** Use to have a cat shuffle their stats now.  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StatShuffle {
@@ -25605,22 +17715,12 @@ StatShuffle {
 }
 ```
 
-</details>
-
 ---
 
 ### `InstantHeal`
 **Name:** Heal  
 **Description:** Use to have a cat heal now.  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 7 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 InstantHeal {
@@ -25632,22 +17732,12 @@ InstantHeal {
 }
 ```
 
-</details>
-
 ---
 
 ### `CureDisorder`
 **Name:** Cure  
 **Description:** Use to have a cat (i forgot what this does when writing the description TODO) now.  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 8 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CureDisorder {
@@ -25659,22 +17749,12 @@ CureDisorder {
 }
 ```
 
-</details>
-
 ---
 
 ### `TemporaryBuff`
 **Name:** Temp Buff  
 **Description:** Use to have a cat get a temporary status effect for the next fight now.  
 **Source:** `modifiers.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | modifier |
-| Frame | 10 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TemporaryBuff {
@@ -25686,27 +17766,12 @@ TemporaryBuff {
 }
 ```
 
-</details>
-
 ---
 
 ### `LionMane`
 **Name:** Lion Mane  
 **Description:** ARMOR_LIONMANE_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Frame | 1 |
-| STR | 1 |
-| INT | -1 |
-| CON | 1 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LionMane {
@@ -25724,26 +17789,12 @@ LionMane {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gobbler`
 **Name:** Gobbler  
 **Description:** Units that contact you are knocked back 2 tiles.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Fatty |
-| Frame | 22 |
-| CON | 4 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gobbler {
@@ -25765,23 +17816,12 @@ Gobbler {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpikedCollar`
 **Name:** Spiked Collar  
 **Description:** +2 Thorns.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Frame | 24 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpikedCollar {
@@ -25798,8 +17838,6 @@ SpikedCollar {
 }
 ```
 
-</details>
-
 ---
 
 ### `FrankBolts`
@@ -25807,16 +17845,6 @@ SpikedCollar {
 **Description:** Electric immunity.
 Electric damage revives you when downed.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Bionic, |
-| Frame | 21 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FrankBolts {
@@ -25836,8 +17864,6 @@ FrankBolts {
 }
 ```
 
-</details>
-
 ---
 
 ### `FortuneNecklace`
@@ -25845,15 +17871,6 @@ FrankBolts {
 **Description:** Spawn 3-6 coins at the start of each battle.
 Fragile.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Frame | 23 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FortuneNecklace {
@@ -25873,23 +17890,12 @@ FortuneNecklace {
 }
 ```
 
-</details>
-
 ---
 
 ### `Scarf`
 **Name:** Scarf  
 **Description:** Ice immunity.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Frame | 50 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Scarf {
@@ -25908,25 +17914,12 @@ Scarf {
 }
 ```
 
-</details>
-
 ---
 
 ### `BulletproofVest`
 **Name:** Bulletproof Vest  
 **Description:** Injury immunity.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Frame | 51 |
-| DEX | -1 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BulletproofVest {
@@ -25945,25 +17938,12 @@ BulletproofVest {
 }
 ```
 
-</details>
-
 ---
 
 ### `LuckyToe`
 **Name:** Lucky Toe  
 **Description:** ARMOR_LUCKYTOE_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [HumanFlesh, |
-| Frame | 53 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyToe {
@@ -25985,24 +17965,12 @@ LuckyToe {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bling`
 **Name:** Bling  
 **Description:** ARMOR_BLING_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Frame | 54 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bling {
@@ -26022,8 +17990,6 @@ Bling {
 }
 ```
 
-</details>
-
 ---
 
 ### `OddMedallion`
@@ -26031,17 +17997,6 @@ Bling {
 **Description:** Deal 1 electric damage to units that contact or attack you.
 25% chance to poop every time you take damage.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | [Used, |
-| Frame | 55 |
-| SPD | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OddMedallion {
@@ -26073,8 +18028,6 @@ OddMedallion {
 }
 ```
 
-</details>
-
 ---
 
 ### `FishNecklace`
@@ -26083,16 +18036,6 @@ OddMedallion {
 Damage you deal inflicts Rot 1.
 Allied flies have +2 Damage.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Rotten, |
-| Frame | 57 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FishNecklace {
@@ -26119,24 +18062,12 @@ FishNecklace {
 }
 ```
 
-</details>
-
 ---
 
 ### `TwoOfSpades`
 **Name:** Two of Spades  
 **Description:** Double cast spells that cost 1 or 2 mana.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Twine |
-| Frame | 88 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TwoOfSpades {
@@ -26153,8 +18084,6 @@ TwoOfSpades {
 }
 ```
 
-</details>
-
 ---
 
 ### `ColostomyBag`
@@ -26162,16 +18091,6 @@ TwoOfSpades {
 **Description:** Spawn Charmed Dips randomly when you move over tiles.
 While downed, spawn a Charmed Dip at the end of each round.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Fecal, |
-| Frame | 89 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ColostomyBag {
@@ -26205,8 +18124,6 @@ ColostomyBag {
 }
 ```
 
-</details>
-
 ---
 
 ### `SurvivalistGaiter`
@@ -26214,16 +18131,6 @@ ColostomyBag {
 **Description:** +40% Dodge Chance while standing in tall grass.
 Start each battle with Stealth 1. Lose this stealth when you use your basic attack.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Survivalist |
-| Frame | 90 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SurvivalistGaiter {
@@ -26248,24 +18155,12 @@ SurvivalistGaiter {
 }
 ```
 
-</details>
-
 ---
 
 ### `PeaceSymbol`
 **Name:** Peace Symbol  
 **Description:** If you end your turn without dealing damage, gain +1 [img:divineshield].  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Hippie, |
-| Frame | 91 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PeaceSymbol {
@@ -26286,23 +18181,12 @@ PeaceSymbol {
 }
 ```
 
-</details>
-
 ---
 
 ### `EmptyGenerator`
 **Name:** Empty Generator  
 **Description:** When you spend 12 or more mana in a turn, refresh your basic attack.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Frame | 92 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EmptyGenerator {
@@ -26329,8 +18213,6 @@ EmptyGenerator {
 }
 ```
 
-</details>
-
 ---
 
 ### `DarkFriend`
@@ -26338,16 +18220,6 @@ EmptyGenerator {
 **Description:** At the start of your turn, spawn a Shadow copy that mimics your basic attack and fades at the end of the turn.
 Units that contact or attack you have a 15% chance to be Feared.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Demonic |
-| Frame | 93 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DarkFriend {
@@ -26371,8 +18243,6 @@ DarkFriend {
 }
 ```
 
-</details>
-
 ---
 
 ### `FannyPack`
@@ -26380,16 +18250,6 @@ DarkFriend {
 **Description:** Spawn 1-2 extra pickups at the start of each battle.
 After you collect your 3rd pickup, you can move an extra time each turn.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | [Leather, |
-| Frame | 125 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FannyPack {
@@ -26417,8 +18277,6 @@ FannyPack {
 }
 ```
 
-</details>
-
 ---
 
 ### `MorphineDrip`
@@ -26426,16 +18284,6 @@ FannyPack {
 **Description:** Damage you take is reduced by 3.
 Damage prevented this way is delayed and taken at the end of your turn, all at once.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Medical, |
-| Frame | 128 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MorphineDrip {
@@ -26455,24 +18303,12 @@ MorphineDrip {
 }
 ```
 
-</details>
-
 ---
 
 ### `LeatherJacket`
 **Name:** Leather Jacket  
 **Description:** If you would take exactly 1 damage, take 0 instead.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Leather, |
-| Frame | 132 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LeatherJacket {
@@ -26491,24 +18327,12 @@ LeatherJacket {
 }
 ```
 
-</details>
-
 ---
 
 ### `HealingGauze`
 **Name:** Healing Gauze  
 **Description:** You have +3 Health Regen as long as you have [img:shield].  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Mummy, |
-| Frame | 134 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HealingGauze {
@@ -26527,23 +18351,12 @@ HealingGauze {
 }
 ```
 
-</details>
-
 ---
 
 ### `MarkIV`
 **Name:** Mark IV  
 **Description:** After every fourth spell you cast, gain +2 [img:int].  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Frame | 94 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MarkIV {
@@ -26563,24 +18376,12 @@ MarkIV {
 }
 ```
 
-</details>
-
 ---
 
 ### `MamaLeech`
 **Name:** Mama Leech  
 **Description:** After every third spell you cast, spawn a Leech familiar.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Leech, |
-| Frame | 95 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MamaLeech {
@@ -26603,25 +18404,12 @@ MamaLeech {
 }
 ```
 
-</details>
-
 ---
 
 ### `FuryDice`
 **Name:** Furry Dice  
 **Description:** You can reroll your options when you level up.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Lucky, |
-| Frame | 97 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FuryDice {
@@ -26640,23 +18428,12 @@ FuryDice {
 }
 ```
 
-</details>
-
 ---
 
 ### `DNAMultiplier`
 **Name:** DNA Multiplier  
 **Description:** Double all status effects that get applied to you.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Frame | 99 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DNAMultiplier {
@@ -26674,23 +18451,12 @@ DNAMultiplier {
 }
 ```
 
-</details>
-
 ---
 
 ### `PackOfBlades`
 **Name:** Pack of Blades  
 **Description:** Whenever you backstab, gain +1 Serrated Claws.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Frame | 121 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PackOfBlades {
@@ -26709,8 +18475,6 @@ PackOfBlades {
 }
 ```
 
-</details>
-
 ---
 
 ### `Backpack`
@@ -26718,16 +18482,6 @@ PackOfBlades {
 **Description:** 50% chance to find an extra consumable item at the end of each battle.
 When you use up a consumable or trinket, equip a new consumable from your inventory if you have any.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Survivalist |
-| Frame | 123 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Backpack {
@@ -26750,24 +18504,12 @@ Backpack {
 }
 ```
 
-</details>
-
 ---
 
 ### `StoneOrbit`
 **Name:** Stone Orbit  
 **Description:** Spawn a small rock when you take damage.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Rock, |
-| Frame | 126 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StoneOrbit {
@@ -26788,24 +18530,12 @@ StoneOrbit {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngelicProtection`
 **Name:** Angelic Protection  
 **Description:** 33% chance to teleport to a random tile when targeted by an enemy.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 127 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngelicProtection {
@@ -26825,24 +18555,12 @@ AngelicProtection {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChefsApron`
 **Name:** Chef's Apron  
 **Description:** At the end of each turn, gain +1 [img:con] and spawn a random food pickup within 2 tiles.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Butcher |
-| Frame | 131 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChefsApron {
@@ -26862,24 +18580,12 @@ ChefsApron {
 }
 ```
 
-</details>
-
 ---
 
 ### `RadarDish`
 **Name:** Radar Dish  
 **Description:** One random enemy becomes Marked at the start of each turn.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Cyborg, |
-| Frame | 133 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RadarDish {
@@ -26900,24 +18606,12 @@ RadarDish {
 }
 ```
 
-</details>
-
 ---
 
 ### `ExtraSetOfEyes`
 **Name:** Extra Set of Eyes  
 **Description:** At the end of each turn, gain +1 Preemptive Counterattack.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Space |
-| Frame | 135 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExtraSetOfEyes {
@@ -26936,24 +18630,12 @@ ExtraSetOfEyes {
 }
 ```
 
-</details>
-
 ---
 
 ### `SharkTooth`
 **Name:** Large Shark Tooth  
 **Description:** Your basic attack inflicts +1 Bleed. Take an extra turn at the end of the round for each Bleeding enemy. You are uncontrollable during these turns.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Twine |
-| Frame | 162 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SharkTooth { 
@@ -26973,24 +18655,12 @@ SharkTooth {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallRune`
 **Name:** Small Rune  
 **Description:** +10% Dodge Chance.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | [Rune, |
-| Frame | 169 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallRune {
@@ -27007,24 +18677,12 @@ SmallRune {
 }
 ```
 
-</details>
-
 ---
 
 ### `QuartzNecklace`
 **Name:** Quartz Necklace  
 **Description:** +1 Brace.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | [Gemstone, |
-| Frame | 168 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 QuartzNecklace {
@@ -27041,24 +18699,12 @@ QuartzNecklace {
 }
 ```
 
-</details>
-
 ---
 
 ### `CinderBlock`
 **Name:** Cinder Block  
 **Description:** ARMOR_CINDERBLOCK_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Rock |
-| Frame | 167 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CinderBlock {
@@ -27073,24 +18719,12 @@ CinderBlock {
 }
 ```
 
-</details>
-
 ---
 
 ### `BoxingCharm`
 **Name:** Boxing Charm  
 **Description:** Start with +1 bonus attack.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | [Fighter, |
-| Frame | 165 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BoxingCharm {
@@ -27107,24 +18741,12 @@ BoxingCharm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crucifix`
 **Name:** Crucifix  
 **Description:** ARMOR_CRUCIFIX_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Cleric |
-| Frame | 173 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crucifix {
@@ -27139,24 +18761,12 @@ Crucifix {
 }
 ```
 
-</details>
-
 ---
 
 ### `TatteredScrap`
 **Name:** Tattered Scrap  
 **Description:** When you take damage, spawn a scrap pickup.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | [Tinkerer, |
-| Frame | 171 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TatteredScrap {
@@ -27177,24 +18787,12 @@ TatteredScrap {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeekStone`
 **Name:** Meek Stone  
 **Description:** You have All Stats Up while at 10 or less health.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Set | Gemstone |
-| Frame | 172 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeekStone {
@@ -27218,24 +18816,12 @@ MeekStone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stomach`
 **Name:** Stomach  
 **Description:** Consumables you use have double the effect.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Guts |
-| Frame | 174 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stomach {
@@ -27252,8 +18838,6 @@ Stomach {
 }
 ```
 
-</details>
-
 ---
 
 ### `WaterFeeder`
@@ -27261,15 +18845,6 @@ Stomach {
 **Description:** +1 Health Regen.
 Become wet at the start of your turn.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | common |
-| Frame | 170 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WaterFeeder {
@@ -27289,24 +18864,12 @@ WaterFeeder {
 }
 ```
 
-</details>
-
 ---
 
 ### `Scrubs`
 **Name:** Scrubs  
 **Description:** Heals heal you for 2 extra.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | [Nurse, |
-| Frame | 149 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Scrubs {
@@ -27323,30 +18886,12 @@ Scrubs {
 }
 ```
 
-</details>
-
 ---
 
 ### `Scapular`
 **Name:** Scapular  
 **Description:** ARMOR_SCAPULAR_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Cleric |
-| Frame | 178 |
-| STR | 1 |
-| DEX | 1 |
-| INT | 1 |
-| LCK | 1 |
-| CON | 1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Scapular {
@@ -27369,25 +18914,12 @@ Scapular {
 }
 ```
 
-</details>
-
 ---
 
 ### `DirtyBionicArmor`
 **Name:** Dirty Bionic Armor  
 **Description:** +2 Mana Regen, +2 Health Regen.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | [DirtClod, |
-| Frame | 175 |
-| SPD | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DirtyBionicArmor {
@@ -27408,25 +18940,12 @@ DirtyBionicArmor {
 }
 ```
 
-</details>
-
 ---
 
 ### `LuckyTwine`
 **Name:** Lucky Twine  
 **Description:** 75% chance to Grapple units that make contact with you.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | [Twine, |
-| Frame | 176 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyTwine {
@@ -27451,24 +18970,12 @@ LuckyTwine {
 }
 ```
 
-</details>
-
 ---
 
 ### `RavenFeather`
 **Name:** Raven Feather  
 **Description:** Inflict Soul Link on 2 random enemies at the start of each battle.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Feathered |
-| Frame | 179 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RavenFeather {
@@ -27485,23 +18992,12 @@ RavenFeather {
 }
 ```
 
-</details>
-
 ---
 
 ### `LostSoul`
 **Name:** Lost Soul  
 **Description:** The first time you are downed each battle, revive to full HP.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Frame | 180 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LostSoul {
@@ -27520,24 +19016,12 @@ LostSoul {
 }
 ```
 
-</details>
-
 ---
 
 ### `MothersTeeth`
 **Name:** Mother's Teeth  
 **Description:** +6 Bleed Thorns, +6 Thorns, +6 Bleed.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Mother |
-| Frame | 187 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MothersTeeth {
@@ -27556,8 +19040,6 @@ MothersTeeth {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaPoop`
@@ -27565,16 +19047,6 @@ MothersTeeth {
 **Description:** Leave poop behind when you move.
 Spawn 2-3 pickups whenever you destroy a poop.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Fecal |
-| Frame | 186 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaPoop {
@@ -27598,24 +19070,12 @@ MegaPoop {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZodiacsPoncho`
 **Name:** Zodiacs Poncho  
 **Description:** +1 Range. During your turn, one random enemy has a Bounty.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Rag |
-| Frame | 185 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZodiacsPoncho {
@@ -27635,24 +19095,12 @@ ZodiacsPoncho {
 }
 ```
 
-</details>
-
 ---
 
 ### `CoffinArmor`
 **Name:** Coffin Armor  
 **Description:** +1 Thorns.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Wood |
-| Frame | 184 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoffinArmor {
@@ -27672,24 +19120,12 @@ CoffinArmor {
 }
 ```
 
-</details>
-
 ---
 
 ### `NubsCollar`
 **Name:** Nubs Collar  
 **Description:** Your movement action is Belly Flop.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Leather |
-| Frame | 183 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NubsCollar {
@@ -27706,25 +19142,12 @@ NubsCollar {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChubsCollar`
 **Name:** Chub's Collar  
 **Description:** Your basic attack is Spin Attack.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Leather |
-| Frame | 182 |
-| STR | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChubsCollar {
@@ -27745,26 +19168,12 @@ ChubsCollar {
 }
 ```
 
-</details>
-
 ---
 
 ### `Blubber`
 **Name:** Blubber  
 **Description:** ARMOR_BLUBBER_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Fatty |
-| Frame | 181 |
-| CON | 7 |
-| SPD | -5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Blubber {
@@ -27785,23 +19194,12 @@ Blubber {
 }
 ```
 
-</details>
-
 ---
 
 ### `EtherealRings`
 **Name:** Ethereal Rings  
 **Description:** Kinetic Spikes 3. Emit 3 Sparkles when you use your basic attack.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Frame | 198 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EtherealRings {
@@ -27822,25 +19220,12 @@ EtherealRings {
 }
 ```
 
-</details>
-
 ---
 
 ### `WhiteRabbitPaw`
 **Name:** White Rabbit Paw  
 **Description:** ARMOR_WHITERABBITPAW_DESC  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | [Lucky, |
-| Frame | 197 |
-| LCK | 5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WhiteRabbitPaw {
@@ -27859,8 +19244,6 @@ WhiteRabbitPaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlowingPelt`
@@ -27868,15 +19251,6 @@ WhiteRabbitPaw {
 **Description:** +5 Health Regen.
 When you're downed, revive at the end of the round.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Frame | 196 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlowingPelt {
@@ -27893,24 +19267,12 @@ GlowingPelt {
 }
 ```
 
-</details>
-
 ---
 
 ### `Polyp`
 **Name:** Polyp  
 **Description:** +1 Health Regen. 25% chance to spawn a Charmed Clot when you take damage.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Meat, |
-| Frame | 195 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Polyp {
@@ -27932,24 +19294,12 @@ Polyp {
 }
 ```
 
-</details>
-
 ---
 
 ### `RoboArm`
 **Name:** Robo Arm  
 **Description:** Start with +1 bonus attack. Collect all adjacent pickups when you end your turn.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | [Bionic, |
-| Frame | 194 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RoboArm {
@@ -27970,8 +19320,6 @@ RoboArm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Brambles`
@@ -27979,16 +19327,6 @@ RoboArm {
 **Description:** +1 Thorns. Spawn brambles in adjacent tiles when you end your turn.
 You are immune to tile effects.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Leafy |
-| Frame | 193 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Brambles {
@@ -28009,24 +19347,12 @@ Brambles {
 }
 ```
 
-</details>
-
 ---
 
 ### `CrustySock`
 **Name:** Crusty Sock  
 **Description:** Spawn a Gamete familiar at the start of each battle.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Used |
-| Frame | 192 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrustySock {
@@ -28043,25 +19369,12 @@ CrustySock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tombstone`
 **Name:** Tombstone  
 **Description:** Your basic attack has +2 Knockback and a +10% chance to Stun.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Rock |
-| Frame | 191 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tombstone {
@@ -28084,24 +19397,12 @@ Tombstone {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrokenWindow`
 **Name:** Broken Window  
 **Description:** +3 Bleed Thorns. Bleed 1.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | rare |
-| Set | Wood |
-| Frame | 190 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrokenWindow {
@@ -28120,23 +19421,12 @@ BrokenWindow {
 }
 ```
 
-</details>
-
 ---
 
 ### `PyrophinasToenail`
 **Name:** Pyrophina's Toenail  
 **Description:** Fire Immunity.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Frame | 146 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PyrophinasToenail {
@@ -28155,24 +19445,12 @@ PyrophinasToenail {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZaratanaTurd`
 **Name:** Zaratana's Turd  
 **Description:** Knockback immunity.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | [Fecal, |
-| Frame | 147 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZaratanaTurd {
@@ -28191,26 +19469,12 @@ ZaratanaTurd {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensGobbler`
 **Name:** Steven's Gobbler  
 **Description:** Units that contact you get knocked back. Knockback you deal is increased by 10 and inflicts Bruise 1.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 142 |
-| CON | 6 |
-| SPD | -99 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensGobbler {
@@ -28236,24 +19500,12 @@ StevensGobbler {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensFriend`
 **Name:** Steven's Friend  
 **Description:** Each time you cast a spell, spawn a Shadow copy of yourself that mimics your basic attack and fades at the end of your turn.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 143 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensFriend {
@@ -28273,24 +19525,12 @@ StevensFriend {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenNeck1`
 **Name:** Steven  
 **Description:** Your Holy Element spells cost -1 mana.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 144 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenNeck1 {
@@ -28310,24 +19550,12 @@ StevenNeck1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenNeck2`
 **Name:** Steven  
 **Description:** While you're downed, receiving any damage revives you.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 145 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenNeck2 {
@@ -28344,25 +19572,12 @@ StevenNeck2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `AFriendsFoot`
 **Name:** A Friends Foot  
 **Description:** Gain +1 [img:lck] when you get a kill.  
 **Source:** `neck_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | very_rare |
-| Set | HumanFlesh |
-| Frame | 200 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AFriendsFoot {
@@ -28383,23 +19598,12 @@ AFriendsFoot {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tapeworm`
 **Name:** Tapeworm  
 **Description:** Your basic attack inflicts Poison 1.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 12 |
-| CON | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tapeworm {
@@ -28419,25 +19623,12 @@ Tapeworm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pinworm`
 **Name:** Pinworm  
 **Description:** Spawns a Maggot familiar when you take damage.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | Parasite |
-| Frame | 15 |
-| STR | -1 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pinworm {
@@ -28461,23 +19652,12 @@ Pinworm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ringworm`
 **Name:** Ringworm  
 **Description:** Your basic attack inflicts Weakness 3.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Parasite |
-| Frame | 20 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ringworm {
@@ -28499,23 +19679,12 @@ Ringworm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Heartworm`
 **Name:** Heartworm  
 **Description:** When downed, your body is destroyed.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 14 |
-| LCK | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Heartworm {
@@ -28536,23 +19705,12 @@ Heartworm {
 }
 ```
 
-</details>
-
 ---
 
 ### `BotflyLarva`
 **Name:** Botfly Larva  
 **Description:** Spawns 2 Pooter familiars when you're downed.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 13 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BotflyLarva {
@@ -28573,24 +19731,12 @@ BotflyLarva {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrainMaggot`
 **Name:** Brain Maggot  
 **Description:** Revive with 50% HP 2 rounds after you are downed.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Parasite |
-| Frame | 16 |
-| INT | -3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrainMaggot {
@@ -28613,22 +19759,12 @@ BrainMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpiderEgg`
 **Name:** Spider Egg  
 **Description:** Your basic attack inflicts Infested.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 98 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderEgg {
@@ -28647,22 +19783,12 @@ SpiderEgg {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpiderWebber`
 **Name:** Spider Webber  
 **Description:** Use: A ranged attack that inflicts Webbed.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 159 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderWebber {
@@ -28677,24 +19803,12 @@ SpiderWebber {
 }
 ```
 
-</details>
-
 ---
 
 ### `AmoebaHat`
 **Name:** Amoeba  
 **Description:** +1 Brace. +10% Miss Chance.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Amoeba |
-| Frame | 100 |
-| INT | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AmoebaHat {
@@ -28716,24 +19830,12 @@ AmoebaHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `AmoebaNeck`
 **Name:** Amoeba  
 **Description:** +1 Brace. +10% Miss Chance.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | Amoeba |
-| Frame | 100 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AmoebaNeck {
@@ -28755,23 +19857,12 @@ AmoebaNeck {
 }
 ```
 
-</details>
-
 ---
 
 ### `AmoebaFace`
 **Name:** Amoeba  
 **Description:** +1 Brace. +10% Miss Chance.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Amoeba |
-| Frame | 100 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AmoebaFace {
@@ -28793,24 +19884,12 @@ AmoebaFace {
 }
 ```
 
-</details>
-
 ---
 
 ### `SoulSucker`
 **Name:** Soul Sucker  
 **Description:** Restore 2 mana when you kill an enemy.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Parasite |
-| Frame | 58 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SoulSucker {
@@ -28832,8 +19911,6 @@ SoulSucker {
 }
 ```
 
-</details>
-
 ---
 
 ### `BestBud`
@@ -28841,16 +19918,6 @@ SoulSucker {
 **Description:** 10% chance to break when you take damage.
 When this breaks, gain a permanent Leech familiar.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Parasite |
-| Frame | 51 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BestBud {
@@ -28876,24 +19943,12 @@ BestBud {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngryWorm`
 **Name:** Angry Worm  
 **Description:** Your basic attack hits an extra time for 1 damage.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Parasite |
-| Frame | 52 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngryWorm {
@@ -28918,24 +19973,12 @@ AngryWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `HealWorm`
 **Name:** Heal Worm  
 **Description:** +2 Health Regen.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Set | Parasite |
-| Frame | 49 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HealWorm {
@@ -28955,25 +19998,12 @@ HealWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `CymothoaExigua`
 **Name:** Cymothoa Exigua  
 **Description:** ARMOR_CYMOTHOAEXIGUA_DESC  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Parasite |
-| Frame | 43 |
-| STR | 2 |
-| DEX | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CymothoaExigua {
@@ -28994,8 +20024,6 @@ CymothoaExigua {
 }
 ```
 
-</details>
-
 ---
 
 ### `EyeWorm`
@@ -29003,15 +20031,6 @@ CymothoaExigua {
 **Description:** +10% Miss Chance. 75% chance to equip a piece of Grub armor at the start of each battle.
 This will destroy any armor it replaces.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Parasite |
-| Frame | 44 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EyeWorm {
@@ -29036,23 +20055,12 @@ EyeWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Scabies`
 **Name:** Scabies  
 **Description:** Bruise 2. Spawn a charmed Flea when you take damage.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Set | Parasite |
-| Frame | 45 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Scabies {
@@ -29074,24 +20082,12 @@ Scabies {
 }
 ```
 
-</details>
-
 ---
 
 ### `BeanParasite`
 **Name:** Bean Parasite  
 **Description:** Confusion 99.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Parasite |
-| Frame | 67 |
-| INT | 5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BeanParasite {
@@ -29111,23 +20107,12 @@ BeanParasite {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cordyceps`
 **Name:** Cordyceps  
 **Description:** 30% chance to gain +2 [img:spd] and become AI controlled at the start of your turn.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Parasite |
-| Frame | 36 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cordyceps {
@@ -29162,8 +20147,6 @@ Cordyceps {
 }
 ```
 
-</details>
-
 ---
 
 ### `NaegleriaFowleri`
@@ -29173,16 +20156,6 @@ Gain -1 [img:int] at the end of each battle, permanently.
 This gains +2 [img:shield] and +1 Brace at the end of each battle. 
 If your [img:int] is 0 or less, you are uncontrollable.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Parasite |
-| Frame | 37 |
-| INT | 0 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NaegleriaFowleri {
@@ -29229,8 +20202,6 @@ NaegleriaFowleri {
 }
 ```
 
-</details>
-
 ---
 
 ### `Malaria`
@@ -29239,16 +20210,6 @@ NaegleriaFowleri {
 Spawn 2 Charmed Fly Swarms when you're downed.
 If your [img:con] is 0 or less, start each battle downed.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Set | Parasite |
-| Frame | 38 |
-| CON | 0 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Malaria {
@@ -29283,8 +20244,6 @@ Malaria {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheTick`
@@ -29292,17 +20251,6 @@ Malaria {
 **Description:** Inflict All Stats Down on bosses and minibosses at the start of each battle.
 Heal +12 HP at the end of each battle.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Rarity | uncommon |
-| Set | Parasite |
-| Frame | 96 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheTick {
@@ -29328,23 +20276,12 @@ TheTick {
 }
 ```
 
-</details>
-
 ---
 
 ### `Parousworm`
 **Name:** Parous Worm  
 **Description:** 66% chance to find a random parasite at the end of each battle.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 271 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Parousworm {
@@ -29368,24 +20305,12 @@ Parousworm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hookworm`
 **Name:** Hookworm  
 **Description:** Spawn a Charmed Leech when you take damage.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 188 |
-| CON | -1 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hookworm {
@@ -29407,28 +20332,12 @@ Hookworm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cooties`
 **Name:** Cooties  
 **Description:** Your basic attack inflicts Weakness, Rot and Infested.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 189 |
-| STR | -1 |
-| DEX | -1 |
-| INT | -1 |
-| LCK | -1 |
-| CON | -1 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cooties {
@@ -29457,22 +20366,12 @@ Cooties {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lice`
 **Name:** Lice  
 **Description:** Bruise 1. Spawn a charmed Louse when you take damage.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 218 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lice {
@@ -29492,23 +20391,12 @@ Lice {
 }
 ```
 
-</details>
-
 ---
 
 ### `SacculinaCarcini`
 **Name:** Sacculina Carcini  
 **Description:** ARMOR_SACCULINACARCINI_DESC  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 197 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SacculinaCarcini {
@@ -29528,23 +20416,12 @@ SacculinaCarcini {
 }
 ```
 
-</details>
-
 ---
 
 ### `Roundworm`
 **Name:** Roundworm  
 **Description:** Units that contact you get knocked back 5 tiles.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 283 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Roundworm {
@@ -29565,23 +20442,12 @@ Roundworm {
 }
 ```
 
-</details>
-
 ---
 
 ### `EuhaplorchisCaliforniensis`
 **Name:** Euhaplorchis Californiensis  
 **Description:** Start with Confusion 3.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 282 |
-| SPD | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EuhaplorchisCaliforniensis {
@@ -29600,8 +20466,6 @@ EuhaplorchisCaliforniensis {
 }
 ```
 
-</details>
-
 ---
 
 ### `Beepis`
@@ -29609,14 +20473,6 @@ EuhaplorchisCaliforniensis {
 **Description:** Your passives are duplicated during battle.
 Your spells cost +2 mana and can only be used once per turn.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | head |
-| Frame | 224 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Beepis { 
@@ -29636,8 +20492,6 @@ Beepis {
 }
 ```
 
-</details>
-
 ---
 
 ### `Feebis`
@@ -29645,14 +20499,6 @@ Beepis {
 **Description:** Your spells cost -2 mana and the first one you cast each turn is double cast.
 Your basic attack is Poke and your movement range is 1.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | face |
-| Frame | 204 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Feebis { 
@@ -29676,8 +20522,6 @@ Feebis {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cunch`
@@ -29685,14 +20529,6 @@ Feebis {
 **Description:** You can use your basic attack and movement action an extra time each turn.
 Your passives are disabled during battle.  
 **Source:** `parasites.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | neck |
-| Frame | 199 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cunch {
@@ -29712,8 +20548,6 @@ Cunch {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkFist`
@@ -29721,14 +20555,6 @@ Cunch {
 **Description:** You can use your basic attack an extra time each turn.
 Innate  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 71 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkFist {
@@ -29749,8 +20575,6 @@ MonkFist {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkStyleChanger`
@@ -29759,14 +20583,6 @@ MonkFist {
 You have Brace 1 while in melee stance.
 Innate  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 80 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkStyleChanger {
@@ -29789,8 +20605,6 @@ MonkStyleChanger {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButcherHook`
@@ -29798,14 +20612,6 @@ MonkStyleChanger {
 **Description:** Use: Pull a unit toward you.
 Innate  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButcherHook {
@@ -29822,22 +20628,12 @@ ButcherHook {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButcherHook_Temporary`
 **Name:** Meat Hook  
 **Description:** Use: Pull a unit toward you.  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButcherHook_Temporary {
@@ -29850,8 +20646,6 @@ ButcherHook_Temporary {
 }
 ```
 
-</details>
-
 ---
 
 ### `Necro_SoulDagger_Uncharged`
@@ -29859,14 +20653,6 @@ ButcherHook_Temporary {
 **Description:** Use: A melee attack. If this weapon damages an allied cat, gain one of their spells at random in your bonus ability slot.
 If this weapon downs an ally it becomes Charged for the rest of the battle.  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 118 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Necro_SoulDagger_Uncharged {
@@ -29879,8 +20665,6 @@ Necro_SoulDagger_Uncharged {
 }
 ```
 
-</details>
-
 ---
 
 ### `Necro_SoulDagger_Charged`
@@ -29888,14 +20672,6 @@ Necro_SoulDagger_Uncharged {
 **Description:** Use: A melee attack with Lifesteal. If this weapon damages an allied cat, gain one of their spells at random in your bonus ability slot.
 Loses its charge at the end of the battle.  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 119 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Necro_SoulDagger_Charged {
@@ -29918,22 +20694,12 @@ Necro_SoulDagger_Charged {
 }
 ```
 
-</details>
-
 ---
 
 ### `SleepDart`
 **Name:** Sleep Dart  
 **Description:** Use: A straight ranged attack that inflicts Sleep 1.  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 151 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SleepDart {
@@ -29947,22 +20713,12 @@ SleepDart {
 }
 ```
 
-</details>
-
 ---
 
 ### `SleepDart2`
 **Name:** Sleep Dart  
 **Description:** Use: A straight ranged attack that inflicts Sleep 1.  
 **Source:** `special_class_items.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 151 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SleepDart2 {
@@ -29976,25 +20732,12 @@ SleepDart2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatTail`
 **Name:** Rat Tail  
 **Description:** ITEM_RATTAIL_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | Rat |
-| Frame | 4 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatTail {
@@ -30009,25 +20752,12 @@ RatTail {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatHeart`
 **Name:** Rat Heart  
 **Description:** ITEM_RATHEART_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | [Rat, |
-| Frame | 5 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatHeart {
@@ -30042,24 +20772,12 @@ RatHeart {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatBeezer`
 **Name:** Rat Bezoar  
 **Description:** Poisonous 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | Rat |
-| Frame | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatBeezer {
@@ -30077,25 +20795,12 @@ RatBeezer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Book`
 **Name:** Book  
 **Description:** ITEM_BOOK_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | Paper |
-| Frame | 90 |
-| INT | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Book {
@@ -30110,25 +20815,12 @@ Book {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dumbell`
 **Name:** Dumbbell  
 **Description:** ITEM_DUMBELL_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | Lead |
-| Frame | 91 |
-| STR | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dumbell {
@@ -30143,24 +20835,12 @@ Dumbell {
 }
 ```
 
-</details>
-
 ---
 
 ### `Jazzercise`
 **Name:** Jazzercise VHS Tape  
 **Description:** ITEM_JAZZERCISEVHSTAPE_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Frame | 92 |
-| DEX | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Jazzercise {
@@ -30174,25 +20854,12 @@ Jazzercise {
 }
 ```
 
-</details>
-
 ---
 
 ### `OldShoe`
 **Name:** Old Shoe  
 **Description:** ITEM_OLDSHOE_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | [Used, |
-| Frame | 93 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OldShoe {
@@ -30207,23 +20874,12 @@ OldShoe {
 }
 ```
 
-</details>
-
 ---
 
 ### `BodySpray`
 **Name:** Body Spray  
 **Description:** ITEM_BODYSPRAY_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Frame | 94 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BodySpray {
@@ -30237,25 +20893,12 @@ BodySpray {
 }
 ```
 
-</details>
-
 ---
 
 ### `LuckyPenny`
 **Name:** Lucky Penny  
 **Description:** ITEM_LUCKYPENNY_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | Lucky |
-| Frame | 95 |
-| LCK | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyPenny {
@@ -30270,24 +20913,12 @@ LuckyPenny {
 }
 ```
 
-</details>
-
 ---
 
 ### `WizCheese`
 **Name:** Wiz Cheese  
 **Description:** ITEM_WIZCHEESE_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Frame | 96 |
-| CON | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WizCheese {
@@ -30301,24 +20932,12 @@ WizCheese {
 }
 ```
 
-</details>
-
 ---
 
 ### `SnaggleTooth`
 **Name:** Snaggle Tooth  
 **Description:** Your basic attack inflicts Bleed 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Bone |
-| Frame | 8 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SnaggleTooth {
@@ -30337,24 +20956,12 @@ SnaggleTooth {
 }
 ```
 
-</details>
-
 ---
 
 ### `JarOfLeeches`
 **Name:** Jar of Leeches  
 **Description:** Your basic attack inflicts Leech 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Leech |
-| Frame | 81 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JarOfLeeches {
@@ -30373,24 +20980,12 @@ JarOfLeeches {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrassKnuckles`
 **Name:** Brass Knuckles  
 **Description:** Your basic attack inflicts Bruise 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 82 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrassKnuckles {
@@ -30409,24 +21004,12 @@ BrassKnuckles {
 }
 ```
 
-</details>
-
 ---
 
 ### `FlyLarva`
 **Name:** Fly Larva  
 **Description:** Your basic attack inflicts Rot 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Fly |
-| Frame | 83 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlyLarva {
@@ -30445,23 +21028,12 @@ FlyLarva {
 }
 ```
 
-</details>
-
 ---
 
 ### `StrangeMarble`
 **Name:** Strange Marble  
 **Description:** Your basic attack inflicts Mana Leech 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 84 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StrangeMarble {
@@ -30479,24 +21051,12 @@ StrangeMarble {
 }
 ```
 
-</details>
-
 ---
 
 ### `VibratingSkull`
 **Name:** Vibrating Skull  
 **Description:** Your basic attack inflicts Magic Weakness 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Bone, |
-| Frame | 85 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 VibratingSkull {
@@ -30515,24 +21075,12 @@ VibratingSkull {
 }
 ```
 
-</details>
-
 ---
 
 ### `BoneMarrow`
 **Name:** Bone Marrow  
 **Description:** Heal to full at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Meat, |
-| Frame | 9 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BoneMarrow {
@@ -30549,25 +21097,12 @@ BoneMarrow {
 }
 ```
 
-</details>
-
 ---
 
 ### `Feather`
 **Name:** Feather  
 **Description:** Take your turn earlier.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Feathered |
-| Frame | 31 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Feather {
@@ -30586,24 +21121,12 @@ Feather {
 }
 ```
 
-</details>
-
 ---
 
 ### `Weight`
 **Name:** Weight  
 **Description:** Trample. Take your turn later.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Lead |
-| Frame | 30 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Weight {
@@ -30621,23 +21144,12 @@ Weight {
 }
 ```
 
-</details>
-
 ---
 
 ### `MatchStick`
 **Name:** Match Stick  
 **Description:** Your basic attack inflicts Burn 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 32 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MatchStick {
@@ -30655,23 +21167,12 @@ MatchStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `BeeStinger`
 **Name:** Bee Stinger  
 **Description:** Your basic attack inflicts Poison 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 33 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BeeStinger {
@@ -30689,24 +21190,12 @@ BeeStinger {
 }
 ```
 
-</details>
-
 ---
 
 ### `PullTab`
 **Name:** Pull Tab  
 **Description:** ITEM_PULLTAB_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | Scrap |
-| Frame | 15 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PullTab {
@@ -30721,23 +21210,12 @@ PullTab {
 }
 ```
 
-</details>
-
 ---
 
 ### `SelfDestructButton`
 **Name:** Self-Destruct Button  
 **Description:** Use: Vaporize yourself and deal 50 damage to adjacent units.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 42 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SelfDestructButton {
@@ -30751,24 +21229,12 @@ SelfDestructButton {
 }
 ```
 
-</details>
-
 ---
 
 ### `EmptySyringe`
 **Name:** Empty Syringe  
 **Description:** When you inflict Bleed or Poison, inflict +1 Bleed or Poison.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Medical |
-| Frame | 66 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EmptySyringe {
@@ -30786,24 +21252,12 @@ EmptySyringe {
 }
 ```
 
-</details>
-
 ---
 
 ### `LiquidNitrogen`
 **Name:** Liquid Nitrogen  
 **Description:** Your Ice Element damage is increased by 2.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Frozen |
-| Frame | 60 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LiquidNitrogen {
@@ -30823,24 +21277,12 @@ LiquidNitrogen {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ember`
 **Name:** Ember  
 **Description:** Your Fire Element damage is increased by 1 and inflicts +1 Burn.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Molten |
-| Frame | 61 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ember {
@@ -30864,23 +21306,12 @@ Ember {
 }
 ```
 
-</details>
-
 ---
 
 ### `Conductor`
 **Name:** Conductor  
 **Description:** Your Electric Element damage is increased by 1 and has +10% chance to Stun.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 62 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Conductor {
@@ -30903,24 +21334,12 @@ Conductor {
 }
 ```
 
-</details>
-
 ---
 
 ### `FeedBag`
 **Name:** Feed Bag  
 **Description:** Familiars you spawn gain +2 max HP.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Druid, |
-| Frame | 64 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeedBag {
@@ -30940,8 +21359,6 @@ FeedBag {
 }
 ```
 
-</details>
-
 ---
 
 ### `Nightshade`
@@ -30949,16 +21366,6 @@ FeedBag {
 **Description:** When you inflict Poison, inflict +2 Poison.
 Start with Poison 2.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Flower |
-| Frame | 63 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Nightshade {
@@ -30978,24 +21385,12 @@ Nightshade {
 }
 ```
 
-</details>
-
 ---
 
 ### `Neverstone`
 **Name:** Neverstone  
 **Description:** Never level up.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Rock, |
-| Frame | 97 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Neverstone {
@@ -31010,23 +21405,12 @@ Neverstone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pawn`
 **Name:** Pawn  
 **Description:** Use: Move 1 tile toward the closest enemy.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Frame | 35 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pawn {
@@ -31042,23 +21426,12 @@ Pawn {
 }
 ```
 
-</details>
-
 ---
 
 ### `Knight`
 **Name:** Knight  
 **Description:** Use: Jump in an L shape.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 114 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Knight {
@@ -31074,23 +21447,12 @@ Knight {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rook`
 **Name:** Rook  
 **Description:** Use: Move any number of tiles in a straight line.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 36 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rook {
@@ -31106,23 +21468,12 @@ Rook {
 }
 ```
 
-</details>
-
 ---
 
 ### `Queen`
 **Name:** Queen  
 **Description:** Use: Move any number of tiles in a straight or diagonal line.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 37 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Queen {
@@ -31138,24 +21489,12 @@ Queen {
 }
 ```
 
-</details>
-
 ---
 
 ### `PetrifiedPoop`
 **Name:** Petrified Poop  
 **Description:** Familiars you spawn gain +2 [img:shield].  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Rock, |
-| Frame | 45 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PetrifiedPoop {
@@ -31176,24 +21515,12 @@ PetrifiedPoop {
 }
 ```
 
-</details>
-
 ---
 
 ### `FishHook`
 **Name:** Fish Hook  
 **Description:** If you would knockback a unit, instead deal extra damage to it equal to the knockback.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Barbed |
-| Frame | 55 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FishHook {
@@ -31210,25 +21537,12 @@ FishHook {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanHand`
 **Name:** Human Hand  
 **Description:** ITEM_HUMANHAND_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | HumanFlesh |
-| Frame | 105 |
-| STR | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanHand {
@@ -31243,25 +21557,12 @@ HumanHand {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanBrain`
 **Name:** Human Brain  
 **Description:** ITEM_HUMANBRAIN_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [HumanFlesh, |
-| Frame | 106 |
-| INT | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanBrain {
@@ -31276,25 +21577,12 @@ HumanBrain {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanLeg`
 **Name:** Human Leg Bone  
 **Description:** ITEM_HUMANLEGBONE_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Bone |
-| Frame | 107 |
-| DEX | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanLeg {
@@ -31309,25 +21597,12 @@ HumanLeg {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanToe`
 **Name:** Human Toe  
 **Description:** ITEM_HUMANTOE_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | HumanFlesh |
-| Frame | 108 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanToe {
@@ -31342,25 +21617,12 @@ HumanToe {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanHeart`
 **Name:** Human Heart  
 **Description:** ITEM_HUMANHEART_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [HumanFlesh, |
-| Frame | 109 |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanHeart {
@@ -31375,25 +21637,12 @@ HumanHeart {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanFoot`
 **Name:** Human Foot  
 **Description:** ITEM_HUMANFOOT_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | HumanFlesh |
-| Frame | 110 |
-| SPD | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanFoot {
@@ -31408,24 +21657,12 @@ HumanFoot {
 }
 ```
 
-</details>
-
 ---
 
 ### `MysteriousEye`
 **Name:** Human Eye  
 **Description:** ITEM_HUMANEYE_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [HumanFlesh, |
-| Frame | 20 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MysteriousEye {
@@ -31440,23 +21677,12 @@ MysteriousEye {
 }
 ```
 
-</details>
-
 ---
 
 ### `D6`
 **Name:** D6  
 **Description:** You can reroll your options when you level up.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Frame | 89 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 D6 {
@@ -31472,24 +21698,12 @@ D6 {
 }
 ```
 
-</details>
-
 ---
 
 ### `MetalSquare`
 **Name:** Metal Plate  
 **Description:** Gain +1 Brace when you kill an enemy.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Scrap |
-| Frame | 86 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MetalSquare {
@@ -31508,23 +21722,12 @@ MetalSquare {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlinkingEyeball`
 **Name:** Blinking Eyeball  
 **Description:** Your line of sight restrictions are ignored.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Set | Guts |
-| Frame | 10 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlinkingEyeball {
@@ -31540,23 +21743,12 @@ BlinkingEyeball {
 }
 ```
 
-</details>
-
 ---
 
 ### `GoldenTooth`
 **Name:** Golden Tooth  
 **Description:** Becomes {aux} coins when you return home.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 11 |
-| LCK | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GoldenTooth {
@@ -31572,8 +21764,6 @@ GoldenTooth {
 }
 ```
 
-</details>
-
 ---
 
 ### `WaterBottle_Full`
@@ -31581,14 +21771,6 @@ GoldenTooth {
 **Description:** Use: Heal +5 HP and gain Heatwave immunity.
 Refills when affected by Water Element effects.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 128 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WaterBottle_Full {
@@ -31612,8 +21794,6 @@ WaterBottle_Full {
 }
 ```
 
-</details>
-
 ---
 
 ### `WaterBottle_Half`
@@ -31621,14 +21801,6 @@ WaterBottle_Full {
 **Description:** Use: Heal +5 HP and gain Heatwave immunity.
 Refills when affected by Water Element effects.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 129 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WaterBottle_Half {
@@ -31657,8 +21829,6 @@ WaterBottle_Half {
 }
 ```
 
-</details>
-
 ---
 
 ### `WaterBottle_Empty`
@@ -31666,14 +21836,6 @@ WaterBottle_Half {
 **Description:** Use: Throw it at something.
 Refills when affected by Water Element effects.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Frame | 130 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WaterBottle_Empty {
@@ -31702,8 +21864,6 @@ WaterBottle_Empty {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodyCoin`
@@ -31712,15 +21872,6 @@ WaterBottle_Empty {
 Heads: Refresh your basic attack.
 Tails: Lose 50% of your HP.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 38 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodyCoin {
@@ -31735,8 +21886,6 @@ BloodyCoin {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlowingCoin`
@@ -31745,15 +21894,6 @@ BloodyCoin {
 Heads: Double your mana.
 Tails: Lose 50% of your mana.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 39 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlowingCoin {
@@ -31767,8 +21907,6 @@ GlowingCoin {
 }
 ```
 
-</details>
-
 ---
 
 ### `ElectricCoin`
@@ -31777,15 +21915,6 @@ GlowingCoin {
 Heads: Refresh your movement action.
 Tails: Gain Slow 2.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 40 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ElectricCoin {
@@ -31799,8 +21928,6 @@ ElectricCoin {
 }
 ```
 
-</details>
-
 ---
 
 ### `CounterfeitCoin`
@@ -31809,15 +21936,6 @@ ElectricCoin {
 Heads: Gain 5 coins.
 Tails: Lose 5 coins.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 41 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CounterfeitCoin {
@@ -31831,8 +21949,6 @@ CounterfeitCoin {
 }
 ```
 
-</details>
-
 ---
 
 ### `Whistle`
@@ -31840,16 +21956,6 @@ CounterfeitCoin {
 **Description:** Use: Summon a Fly, Maggot or Flea familiar.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | [Druid, |
-| Frame | 16 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Whistle {
@@ -31864,8 +21970,6 @@ Whistle {
 }
 ```
 
-</details>
-
 ---
 
 ### `Metronome`
@@ -31873,16 +21977,6 @@ Whistle {
 **Description:** Use: Cast a random upgraded spell.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Jester |
-| Frame | 17 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Metronome {
@@ -31897,24 +21991,12 @@ Metronome {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkerTools`
 **Name:** Tinker Tools  
 **Description:** Repair 1 use to your items at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Tinkerer |
-| Frame | 18 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkerTools {
@@ -31933,8 +22015,6 @@ TinkerTools {
 }
 ```
 
-</details>
-
 ---
 
 ### `RingOfFrost`
@@ -31942,16 +22022,6 @@ TinkerTools {
 **Description:** Freezes tiles you walk over. +25% chance to inflict Freeze on units that contact or attack you.
 Your Ice Element damage is increased by 1.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Mage, |
-| Frame | 177 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RingOfFrost {
@@ -31978,24 +22048,12 @@ RingOfFrost {
 }
 ```
 
-</details>
-
 ---
 
 ### `LuckyCoinPurse`
 **Name:** Lucky Coin Purse  
 **Description:** Gain +2 [img:lck] each time you gain a coin.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Thief, |
-| Frame | 178 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyCoinPurse {
@@ -32014,8 +22072,6 @@ LuckyCoinPurse {
 }
 ```
 
-</details>
-
 ---
 
 ### `RageJuice`
@@ -32023,16 +22079,6 @@ LuckyCoinPurse {
 **Description:** Use: Gain +4 [img:str], +4 [img:spd], Brace 2 and Madness for the rest of the battle.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 179 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RageJuice {
@@ -32047,24 +22093,12 @@ RageJuice {
 }
 ```
 
-</details>
-
 ---
 
 ### `PrayerCard`
 **Name:** Prayer Card  
 **Description:** 33% chance to gain +1 [img:divineshield] each time you take damage.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Cleric, |
-| Frame | 180 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PrayerCard {
@@ -32083,24 +22117,12 @@ PrayerCard {
 }
 ```
 
-</details>
-
 ---
 
 ### `TankToy`
 **Name:** Tank Toy  
 **Description:** Trample.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Tank |
-| Frame | 181 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankToy {
@@ -32119,24 +22141,12 @@ TankToy {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfSeeds`
 **Name:** Bag of Seeds  
 **Description:** Use: Spawn grass, flowers, or brambles on an adjacent tile.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Druid |
-| Frame | 182 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfSeeds {
@@ -32151,24 +22161,12 @@ BagOfSeeds {
 }
 ```
 
-</details>
-
 ---
 
 ### `Libra`
 **Name:** Libra  
 **Description:** Balances all stats. This applies after all stat modifiers.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Space |
-| Frame | 174 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Libra {
@@ -32185,8 +22183,6 @@ Libra {
 }
 ```
 
-</details>
-
 ---
 
 ### `BallOfBandages`
@@ -32194,16 +22190,6 @@ Libra {
 **Description:** Cleanse one stack of a random debuff at the end of each turn.
 +1 Health Regen.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Nurse |
-| Frame | 99 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BallOfBandages {
@@ -32223,23 +22209,12 @@ BallOfBandages {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rosary`
 **Name:** ITEM_ROSARY_NAME  
 **Description:** ITEM_ROSARY_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 77 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rosary {
@@ -32254,23 +22229,12 @@ Rosary {
 }
 ```
 
-</details>
-
 ---
 
 ### `WeatherVane`
 **Name:** ITEM_WEATHERVANE_NAME  
 **Description:** ITEM_WEATHERVANE_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 78 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WeatherVane {
@@ -32285,8 +22249,6 @@ WeatherVane {
 }
 ```
 
-</details>
-
 ---
 
 ### `Natural20`
@@ -32294,15 +22256,6 @@ WeatherVane {
 **Description:** Your weapons have +50% Crit Chance.
 Your basic attack has +10% Crit Chance.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 34 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Natural20 {
@@ -32322,8 +22275,6 @@ Natural20 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Technology`
@@ -32332,16 +22283,6 @@ Natural20 {
 [s:.7](Usable once per battle.)[/s]
 Refreshes when affected by Electricity.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Cyborg, |
-| Frame | 46 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Technology {
@@ -32363,25 +22304,12 @@ Technology {
 }
 ```
 
-</details>
-
 ---
 
 ### `Spring`
 **Name:** Spring  
 **Description:** Your movement action is Jump.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Scrap |
-| Frame | 47 |
-| SPD | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Spring {
@@ -32400,8 +22328,6 @@ Spring {
 }
 ```
 
-</details>
-
 ---
 
 ### `RedDrink`
@@ -32409,15 +22335,6 @@ Spring {
 **Description:** Use: Heal 5 HP.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 48 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RedDrink {
@@ -32431,8 +22348,6 @@ RedDrink {
 }
 ```
 
-</details>
-
 ---
 
 ### `GreenDrink`
@@ -32440,15 +22355,6 @@ RedDrink {
 **Description:** Use: Gain 5 mana.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 49 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GreenDrink {
@@ -32462,8 +22368,6 @@ GreenDrink {
 }
 ```
 
-</details>
-
 ---
 
 ### `PurpleDrink`
@@ -32471,15 +22375,6 @@ GreenDrink {
 **Description:** Use: Heal 2 HP, gain 2 mana and +1 [img:shield].
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 50 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PurpleDrink {
@@ -32493,8 +22388,6 @@ PurpleDrink {
 }
 ```
 
-</details>
-
 ---
 
 ### `LilBattery`
@@ -32503,15 +22396,6 @@ PurpleDrink {
 Can be used on allies.
 [s:.7](Usable once per battle. Can't be refreshed.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 51 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LilBattery {
@@ -32525,23 +22409,12 @@ LilBattery {
 }
 ```
 
-</details>
-
 ---
 
 ### `CarvingKnife`
 **Name:** Carving Knife  
 **Description:** Use: Take 2 damage and spawn a Meat pickup.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 52 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CarvingKnife {
@@ -32555,23 +22428,12 @@ CarvingKnife {
 }
 ```
 
-</details>
-
 ---
 
 ### `RazorBlade`
 **Name:** Razor Blade  
 **Description:** Use: Take 5 damage and gain +2 [img:str] and +2 [img:dex].  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 53 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RazorBlade {
@@ -32585,8 +22447,6 @@ RazorBlade {
 }
 ```
 
-</details>
-
 ---
 
 ### `Teleport`
@@ -32594,16 +22454,6 @@ RazorBlade {
 **Description:** Use: Teleport to any open tile.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Experimental |
-| Frame | 54 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Teleport {
@@ -32618,8 +22468,6 @@ Teleport {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallEye`
@@ -32627,16 +22475,6 @@ Teleport {
 **Description:** +15% Dodge Chance.
 Your basic attack has a +10% chance to inflict Fear.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Guts |
-| Frame | 58 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallEye {
@@ -32656,24 +22494,12 @@ SmallEye {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stickman`
 **Name:** Stickman  
 **Description:** Gain All Stats Up when you deal damage to a party member.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Wood, |
-| Frame | 67 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stickman {
@@ -32699,8 +22525,6 @@ Stickman {
 }
 ```
 
-</details>
-
 ---
 
 ### `CursedStickman`
@@ -32708,16 +22532,6 @@ Stickman {
 **Description:** Gain All Stats Up when you deal damage to a party member.
 10% chance to gain Madness at the start of your turn.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Wood, |
-| Frame | 68 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CursedStickman {
@@ -32756,23 +22570,12 @@ CursedStickman {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlowingSeed`
 **Name:** Glowing Seed  
 **Description:** Your basic attack spawns tall grass.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 71 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlowingSeed {
@@ -32790,23 +22593,12 @@ GlowingSeed {
 }
 ```
 
-</details>
-
 ---
 
 ### `MagicSeed`
 **Name:** Magic Seed  
 **Description:** Your basic attack spawns brambles.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 113 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MagicSeed {
@@ -32824,24 +22616,12 @@ MagicSeed {
 }
 ```
 
-</details>
-
 ---
 
 ### `WeirdEgg`
 **Name:** Weird Egg  
 **Description:** 10% chance to spawn a controllable Fetus familiar at the end of each turn. It joins your party.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Baby |
-| Frame | 73 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WeirdEgg {
@@ -32863,24 +22643,12 @@ WeirdEgg {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpottedMushroom`
 **Name:** Spotted Mushroom  
 **Description:** ITEM_SPOTTEDMUSHROOM_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Set | Druid |
-| Frame | 74 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpottedMushroom {
@@ -32899,24 +22667,12 @@ SpottedMushroom {
 }
 ```
 
-</details>
-
 ---
 
 ### `MundaneStone`
 **Name:** Mundane Stone  
 **Description:** Your basic attack's damage is increased by your lowest stat minus 2.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Rock |
-| Frame | 88 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MundaneStone {
@@ -32935,8 +22691,6 @@ MundaneStone {
 }
 ```
 
-</details>
-
 ---
 
 ### `EmptySack`
@@ -32944,16 +22698,6 @@ MundaneStone {
 **Description:** Spawn 3 pickups at the start of each battle.
 Find an extra common item at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Leather, |
-| Frame | 115 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EmptySack {
@@ -32976,23 +22720,12 @@ EmptySack {
 }
 ```
 
-</details>
-
 ---
 
 ### `AAABattery`
 **Name:** AAA Battery  
 **Description:** Every time you cast 3 spells, gain +3 Charge.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 117 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AAABattery {
@@ -33011,8 +22744,6 @@ AAABattery {
 }
 ```
 
-</details>
-
 ---
 
 ### `ToolBox`
@@ -33020,16 +22751,6 @@ AAABattery {
 **Description:** Your items lose Brittle and Fragile.
 Your weapons have a 25% chance to repair 1 use when used.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Tinkerer |
-| Frame | 118 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ToolBox {
@@ -33050,24 +22771,12 @@ ToolBox {
 }
 ```
 
-</details>
-
 ---
 
 ### `RubberCement`
 **Name:** Rubber Cement  
 **Description:** Your projectiles bounce to another enemy within 2 tiles.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Rubber, |
-| Frame | 124 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberCement {
@@ -33087,8 +22796,6 @@ RubberCement {
 }
 ```
 
-</details>
-
 ---
 
 ### `CoinPurse`
@@ -33096,16 +22803,6 @@ RubberCement {
 **Description:** When you collect a coin pickup, gain +1 coin.
 Find an extra coin at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Mother |
-| Frame | 125 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoinPurse {
@@ -33127,23 +22824,12 @@ CoinPurse {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fork`
 **Name:** Fork  
 **Description:** Heal 5 HP when you kill a unit or destroy a corpse.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 126 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fork {
@@ -33164,24 +22850,12 @@ Fork {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatONineTails`
 **Name:** Cat o' Nine Tails  
 **Description:** Use: Take 1 damage and cleanse one random debuff.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Gimp |
-| Frame | 127 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatONineTails {
@@ -33196,24 +22870,12 @@ CatONineTails {
 }
 ```
 
-</details>
-
 ---
 
 ### `Glue`
 **Name:** Glue  
 **Description:** Use: Gain +20% Dodge Chance, -1 [img:int] and Confusion 2.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Slimy |
-| Frame | 137 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Glue {
@@ -33229,8 +22891,6 @@ Glue {
 }
 ```
 
-</details>
-
 ---
 
 ### `MyShadow`
@@ -33238,16 +22898,6 @@ Glue {
 **Description:** Use: Move 3 tiles, leaving a shadow copy behind that mimics your basic attack.
 The shadow fades at the end of the turn.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Demonic |
-| Frame | 133 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MyShadow {
@@ -33264,23 +22914,12 @@ MyShadow {
 }
 ```
 
-</details>
-
 ---
 
 ### `EggSack`
 **Name:** Egg Sack  
 **Description:** Use: Spawns Spiderlings in an area.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 134 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EggSack {
@@ -33295,24 +22934,12 @@ EggSack {
 }
 ```
 
-</details>
-
 ---
 
 ### `GorgonsEye`
 **Name:** Gorgon's Eye  
 **Description:** Use: Petrify all nearby units in your line of sight.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Guts, |
-| Frame | 135 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GorgonsEye {
@@ -33328,24 +22955,12 @@ GorgonsEye {
 }
 ```
 
-</details>
-
 ---
 
 ### `HotLunch`
 **Name:** Hot Lunch  
 **Description:** Spawn a Flaming Meat pickup.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Paper |
-| Frame | 139 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HotLunch {
@@ -33361,23 +22976,12 @@ HotLunch {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButterBean`
 **Name:** Butter Bean  
 **Description:** Use: Fart at an adjacent unit, knocking it back 1 tile.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | common |
-| Frame | 140 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButterBean {
@@ -33391,24 +22995,12 @@ ButterBean {
 }
 ```
 
-</details>
-
 ---
 
 ### `MomsRing`
 **Name:** Mom's Ring  
 **Description:** +1 Damage. Find a pill at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Mother |
-| Frame | 142 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MomsRing {
@@ -33428,24 +23020,12 @@ MomsRing {
 }
 ```
 
-</details>
-
 ---
 
 ### `MindStone`
 **Name:** Mind Stone  
 **Description:** Your collarless spells cost -2 mana.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Rock |
-| Frame | 146 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MindStone {
@@ -33465,24 +23045,12 @@ MindStone {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkillStone`
 **Name:** Skill Stone  
 **Description:** Spells that match your class cost -1 mana.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Rock |
-| Frame | 147 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkillStone {
@@ -33501,23 +23069,12 @@ SkillStone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Multiplier`
 **Name:** Multiplier  
 **Description:** You can use your weapon an extra time each turn.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 148 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Multiplier {
@@ -33533,24 +23090,12 @@ Multiplier {
 }
 ```
 
-</details>
-
 ---
 
 ### `SacredHeart`
 **Name:** Sacred Heart  
 **Description:** +1 Damage. Emit 2 Sparkles when you use your basic attack.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 153 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SacredHeart {
@@ -33570,8 +23115,6 @@ SacredHeart {
 }
 ```
 
-</details>
-
 ---
 
 ### `FetusInAJar`
@@ -33579,16 +23122,6 @@ SacredHeart {
 **Description:** At the the start of each battle, equip a temporary Bomb if your weapon slot is open.
 At the end of each turn, if you didn't use your basic attack, equip another Bomb.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Baby |
-| Frame | 155 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FetusInAJar {
@@ -33618,24 +23151,12 @@ FetusInAJar {
 }
 ```
 
-</details>
-
 ---
 
 ### `Breakfast`
 **Name:** Breakfast  
 **Description:** +2 Health Regen.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Cardboard |
-| Frame | 157 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Breakfast {
@@ -33652,24 +23173,12 @@ Breakfast {
 }
 ```
 
-</details>
-
 ---
 
 ### `DreamCatcher`
 **Name:** Dream Catcher  
 **Description:** Whenever you fall asleep, gain All Stats Up, restore all your mana, and heal a random injury.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Twine |
-| Frame | 158 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DreamCatcher {
@@ -33690,23 +23199,12 @@ DreamCatcher {
 }
 ```
 
-</details>
-
 ---
 
 ### `EnchantingPoop`
 **Name:** Enchanting Poop  
 **Description:** Spawn a poop at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Set | Fecal |
-| Frame | 159 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EnchantingPoop { 
@@ -33724,15 +23222,10 @@ EnchantingPoop {
 }
 ```
 
-</details>
-
 ---
 
 ### `EnchantingPoop_Cursed`
 **Source:** `trinkets.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EnchantingPoop_Cursed {
@@ -33741,8 +23234,6 @@ EnchantingPoop_Cursed {
 }
 ```
 
-</details>
-
 ---
 
 ### `LunchBox`
@@ -33750,15 +23241,6 @@ EnchantingPoop_Cursed {
 **Description:** Use: Heal 5 HP.
 Whenever you collect a food pickup, instead of its normal effects, add +1 use to this item.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 176 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LunchBox {
@@ -33785,24 +23267,12 @@ LunchBox {
 }
 ```
 
-</details>
-
 ---
 
 ### `SatanicBible`
 **Name:** Satanic Bible  
 **Description:** Heal 3 HP and gain +3 Charge each time you damage a party member.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Demonic, |
-| Frame | 184 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SatanicBible {
@@ -33829,8 +23299,6 @@ SatanicBible {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinyPebble`
@@ -33838,16 +23306,6 @@ SatanicBible {
 **Description:** +10% Dodge Chance.
 Gain +2% Dodge Chance when you dodge an attack.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 185 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinyPebble {
@@ -33867,24 +23325,12 @@ TinyPebble {
 }
 ```
 
-</details>
-
 ---
 
 ### `ScrapBag`
 **Name:** Scrap Bag  
 **Description:** Craft a temporary weapon at the start of the battle if you don't have a weapon.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Scrap, |
-| Frame | 186 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScrapBag {
@@ -33906,24 +23352,12 @@ ScrapBag {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cookbook`
 **Name:** Cookbook  
 **Description:** When you kill a unit or destroy a corpse, it becomes meat.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Butcher, |
-| Frame | 187 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cookbook {
@@ -33940,24 +23374,12 @@ Cookbook {
 }
 ```
 
-</details>
-
 ---
 
 ### `TarotDeck`
 **Name:** Tarot Deck  
 **Description:** Use: Conjure a random, single-use spell as a bonus ability.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Psychic, |
-| Frame | 183 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TarotDeck {
@@ -33975,24 +23397,12 @@ TarotDeck {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinyCage`
 **Name:** Tiny Cage  
 **Description:** Spawn a random animal familiar at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Druid |
-| Frame | 188 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinyCage {
@@ -34012,24 +23422,12 @@ TinyCage {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpellBook`
 **Name:** Spell Book  
 **Description:** Use: Gain 10 mana and conjure a random Mage spell as a bonus ability.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Mage, |
-| Frame | 207 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpellBook {
@@ -34048,23 +23446,12 @@ SpellBook {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfBags`
 **Name:** Bag o' Bags  
 **Description:** Use: Throw a trash bag on an adjacent tile.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 208 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfBags {
@@ -34082,24 +23469,12 @@ BagOfBags {
 }
 ```
 
-</details>
-
 ---
 
 ### `Steroids`
 **Name:** Steroids  
 **Description:** Use: Gain +1 [img:str], permanently. For the rest of the adventure, you have a +2% chance to gain Madness at the start of each turn.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 209 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Steroids {
@@ -34119,24 +23494,12 @@ Steroids {
 }
 ```
 
-</details>
-
 ---
 
 ### `HolyWater`
 **Name:** Holy Water  
 **Description:** Heal 2 HP in an area.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Cleric |
-| Frame | 210 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HolyWater {
@@ -34154,24 +23517,12 @@ HolyWater {
 }
 ```
 
-</details>
-
 ---
 
 ### `TankJuice`
 **Name:** Tank Juice  
 **Description:** Use: Gain -1 [img:spd], then, for the rest of the turn, all damage you deal has Knockback 2 and Chain Knockback.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Tank |
-| Frame | 211 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankJuice {
@@ -34189,8 +23540,6 @@ TankJuice {
 }
 ```
 
-</details>
-
 ---
 
 ### `HuntersFlute`
@@ -34198,16 +23547,6 @@ TankJuice {
 **Description:** Spawn 2-3 random familiars on adjacent tiles.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Hunter |
-| Frame | 212 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HuntersFlute {
@@ -34225,24 +23564,12 @@ HuntersFlute {
 }
 ```
 
-</details>
-
 ---
 
 ### `FriendshipBracelet`
 **Name:** Friendship Bracelet  
 **Description:** Use: Permanently charm a non-boss enemy. It joins your party.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Druid |
-| Frame | 213 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FriendshipBracelet {
@@ -34261,24 +23588,12 @@ FriendshipBracelet {
 }
 ```
 
-</details>
-
 ---
 
 ### `CambionConception`
 **Name:** Cambion Conception  
 **Description:** Use: Summon a half-sized copy of yourself that has 66% of your stats and is AI controlled.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | [Necromancer, |
-| Frame | 214 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CambionConception {
@@ -34297,8 +23612,6 @@ CambionConception {
 }
 ```
 
-</details>
-
 ---
 
 ### `EmptyHand`
@@ -34306,16 +23619,6 @@ CambionConception {
 **Description:** Use: Gain +3 [img:shield] for each empty armor slot you have.
 When this breaks, gain +1 [img:con] permanently.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Monk |
-| Frame | 215 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EmptyHand {
@@ -34337,8 +23640,6 @@ EmptyHand {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fireworks`
@@ -34346,16 +23647,6 @@ EmptyHand {
 **Description:** Use: Emit 5 Sparkles.
 If you end your turn with 0 mana, this gains +1 use.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Tinkerer |
-| Frame | 216 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fireworks {
@@ -34380,8 +23671,6 @@ Fireworks {
 }
 ```
 
-</details>
-
 ---
 
 ### `SackOfMeat`
@@ -34389,16 +23678,6 @@ Fireworks {
 **Description:** Use: Heal 4 HP.
 This gains +1 use each time you destroy a corpse.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Butcher |
-| Frame | 217 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SackOfMeat {
@@ -34421,8 +23700,6 @@ SackOfMeat {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidsWhistle`
@@ -34430,16 +23707,6 @@ SackOfMeat {
 **Description:** Use: Spawn a random animal familiar on an adjacent tile.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Druid |
-| Frame | 218 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidsWhistle {
@@ -34457,24 +23724,12 @@ DruidsWhistle {
 }
 ```
 
-</details>
-
 ---
 
 ### `BallOfYarn`
 **Name:** Ball of Yarn  
 **Description:** Spawn a Charmed Kitten with All Stats Up 2 at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Twine |
-| Frame | 226 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BallOfYarn {
@@ -34491,24 +23746,12 @@ BallOfYarn {
 }
 ```
 
-</details>
-
 ---
 
 ### `BirdHead`
 **Name:** Bird Head  
 **Description:** Your basic attack inflicts Soul Link.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Feathered |
-| Frame | 192 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BirdHead {
@@ -34527,25 +23770,12 @@ BirdHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrokenMirror`
 **Name:** Broken Mirror  
 **Description:** ITEM_BROKENMIRROR_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Used |
-| Frame | 196 |
-| LCK | -99 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrokenMirror {
@@ -34563,23 +23793,12 @@ BrokenMirror {
 }
 ```
 
-</details>
-
 ---
 
 ### `Binoculars`
 **Name:** Binoculars  
 **Description:** +2 range.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 198 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Binoculars {
@@ -34595,23 +23814,12 @@ Binoculars {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bishop`
 **Name:** Bishop  
 **Description:** Use: Move any number of tiles in a diagonal line.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 201 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bishop {
@@ -34627,23 +23835,12 @@ Bishop {
 }
 ```
 
-</details>
-
 ---
 
 ### `GoldenEgg`
 **Name:** Golden Egg  
 **Description:** Find 3-5 extra coins at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 190 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GoldenEgg {
@@ -34661,23 +23858,12 @@ GoldenEgg {
 }
 ```
 
-</details>
-
 ---
 
 ### `BirdFeed`
 **Name:** Bird Feed  
 **Description:** +50% chance for an extra bird to spawn at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Frame | 191 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BirdFeed {
@@ -34696,24 +23882,12 @@ BirdFeed {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngelWing`
 **Name:** Angel Wing  
 **Description:** If an attack would down you, instead lower your HP to 1. While at 1 HP, this has no effect.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Feathered |
-| Frame | 195 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngelWing {
@@ -34737,23 +23911,12 @@ AngelWing {
 }
 ```
 
-</details>
-
 ---
 
 ### `SoulJar`
 **Name:** Soul Jar  
 **Description:** When your body is destroyed, this item is recovered and permanently gains the ability to summon a ghost copy of you.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 175 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SoulJar {
@@ -34769,8 +23932,6 @@ SoulJar {
 }
 ```
 
-</details>
-
 ---
 
 ### `SoulJar_Full`
@@ -34778,15 +23939,6 @@ SoulJar {
 **Description:** Use: Summon a ghost copy of {aux_cat_name}.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 206 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SoulJar_Full {
@@ -34802,24 +23954,12 @@ SoulJar_Full {
 }
 ```
 
-</details>
-
 ---
 
 ### `PetrifiedPinky`
 **Name:** Petrified Pinky  
 **Description:** If an attack would down you, instead this breaks and you regain 50% of your max HP.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | [Rat, |
-| Frame | 7 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PetrifiedPinky {
@@ -34836,24 +23976,12 @@ PetrifiedPinky {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatRib`
 **Name:** Cat Rib  
 **Description:** When your body is destroyed, you are reborn as a kitten!  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Bone |
-| Frame | 19 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatRib {
@@ -34870,23 +23998,12 @@ CatRib {
 }
 ```
 
-</details>
-
 ---
 
 ### `EstusFlask_Full`
 **Name:** Glowing Flask  
 **Description:** Use: Heal 5 HP. This refills at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 87 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EstusFlask_Full {
@@ -34912,23 +24029,12 @@ EstusFlask_Full {
 }
 ```
 
-</details>
-
 ---
 
 ### `EstusFlask_Half`
 **Name:** Glowing Flask  
 **Description:** Use: Heal 5 HP. This refills at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 203 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EstusFlask_Half {
@@ -34961,23 +24067,12 @@ EstusFlask_Half {
 }
 ```
 
-</details>
-
 ---
 
 ### `EstusFlask_Empty`
 **Name:** Glowing Flask  
 **Description:** Use: Heal 5 HP. This refills at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 204 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EstusFlask_Empty {
@@ -35009,25 +24104,12 @@ EstusFlask_Empty {
 }
 ```
 
-</details>
-
 ---
 
 ### `LuckyCoin`
 **Name:** Lucky Coin  
 **Description:** Coins that spawn at the start of each battle are doubled.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Lucky |
-| Frame | 145 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuckyCoin {
@@ -35046,24 +24128,12 @@ LuckyCoin {
 }
 ```
 
-</details>
-
 ---
 
 ### `HeavyRock`
 **Name:** Heavy Rock  
 **Description:** Rocks you knock back deal +5 damage and have Chain Knockback.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Rock |
-| Frame | 65 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeavyRock {
@@ -35086,24 +24156,12 @@ HeavyRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ipecac`
 **Name:** Ipecac  
 **Description:** Your basic attack is Explosive Shot.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Medical |
-| Frame | 149 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ipecac {
@@ -35121,24 +24179,12 @@ Ipecac {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeatCube`
 **Name:** Meat Cube  
 **Description:** Start with a Flesh Lad familiar.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Meat |
-| Frame | 143 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeatCube {
@@ -35157,8 +24203,6 @@ MeatCube {
 }
 ```
 
-</details>
-
 ---
 
 ### `SoyMilk`
@@ -35166,15 +24210,6 @@ MeatCube {
 **Description:** Your basic attack cannot deal more than 1 damage.
 You can attack 2 extra times each turn.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 150 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SoyMilk {
@@ -35191,24 +24226,12 @@ SoyMilk {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpoonBender`
 **Name:** Spoon Bender  
 **Description:** Your basic attack can't miss and emits a Sparkle when used.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Psychic |
-| Frame | 151 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpoonBender {
@@ -35228,24 +24251,12 @@ SpoonBender {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cancer`
 **Name:** Cancer  
 **Description:** At the end of each battle, gain -1 to three random stats, then gain a mutation.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Mother |
-| Frame | 152 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cancer {
@@ -35267,24 +24278,12 @@ Cancer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Wafer`
 **Name:** Wafer  
 **Description:** ITEM_WAFER_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 156 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Wafer {
@@ -35302,8 +24301,6 @@ Wafer {
 }
 ```
 
-</details>
-
 ---
 
 ### `LargeMeteor`
@@ -35311,16 +24308,6 @@ Wafer {
 **Description:** - {str_aux_passive_name} -
 {str_aux_passive_desc}  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | uncommon |
-| Set | Planet |
-| Frame | 243 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LargeMeteor {
@@ -35337,23 +24324,12 @@ LargeMeteor {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodyRazor`
 **Name:** Bloody Razor  
 **Description:** Use: Deal 5 damage to yourself to gain +3 Damage and +1 Magic Damage.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 270 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodyRazor {
@@ -35368,23 +24344,12 @@ BloodyRazor {
 }
 ```
 
-</details>
-
 ---
 
 ### `ImmaculateHeart`
 **Name:** Immaculate Heart  
 **Description:** +2 Damage, +1 Magic Damage. Emit 3 Sparkles when you use your basic attack.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 246 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ImmaculateHeart {
@@ -35404,24 +24369,12 @@ ImmaculateHeart {
 }
 ```
 
-</details>
-
 ---
 
 ### `DybbuksRib`
 **Name:** Dybbuk's Rib  
 **Description:** Charm a random enemy at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Bone |
-| Frame | 273 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DybbuksRib {
@@ -35440,23 +24393,12 @@ DybbuksRib {
 }
 ```
 
-</details>
-
 ---
 
 ### `SnakeEyes`
 **Name:** Snake Eyes  
 **Description:** While you are at exactly 2 HP, you have +222 [img:lck]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 274 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SnakeEyes {
@@ -35479,8 +24421,6 @@ SnakeEyes {
 }
 ```
 
-</details>
-
 ---
 
 ### `GreenWhistle`
@@ -35488,15 +24428,6 @@ SnakeEyes {
 **Description:** Use: Summon a really big Leg.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 280 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GreenWhistle {
@@ -35510,25 +24441,12 @@ GreenWhistle {
 }
 ```
 
-</details>
-
 ---
 
 ### `MothersLove`
 **Name:** Mother's Love  
 **Description:** +6 Health Regen.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Mother |
-| Frame | 281 |
-| LCK | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MothersLove {
@@ -35548,24 +24466,12 @@ MothersLove {
 }
 ```
 
-</details>
-
 ---
 
 ### `PentagramSigil`
 **Name:** Pentagram Sigil  
 **Description:** Use: Take 5 damage and refresh your basic attack and movement actions.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Demonic |
-| Frame | 276 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PentagramSigil {
@@ -35583,24 +24489,12 @@ PentagramSigil {
 }
 ```
 
-</details>
-
 ---
 
 ### `LuciferSigil`
 **Name:** Lucifer Sigil  
 **Description:** Summon a Charmed Brute at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Demonic |
-| Frame | 275 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LuciferSigil {
@@ -35621,8 +24515,6 @@ LuciferSigil {
 }
 ```
 
-</details>
-
 ---
 
 ### `HexagramSigil`
@@ -35631,18 +24523,6 @@ LuciferSigil {
 You are immune to buffs and debuffs.
 When you die, you don't leave a corpse.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Demonic |
-| Frame | 284 |
-| STR | 3 |
-| DEX | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HexagramSigil {
@@ -35670,24 +24550,12 @@ HexagramSigil {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChupacabraTongue`
 **Name:** Chupacabra Tongue  
 **Description:** Your basic attack has Lifesteal.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Guts |
-| Frame | 286 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChupacabraTongue {
@@ -35704,24 +24572,12 @@ ChupacabraTongue {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharonsObal`
 **Name:** Charon's Obol  
 **Description:** +6 corpse health. Spawn a Charmed Reaper when you are downed.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Necromancer |
-| Frame | 287 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharonsObal {
@@ -35739,30 +24595,12 @@ CharonsObal {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanHead`
 **Name:** Human Head  
 **Description:** ITEM_HUMANHEAD_DESC  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | HumanFlesh |
-| Frame | 288 |
-| STR | 1 |
-| DEX | 1 |
-| INT | 1 |
-| LCK | 1 |
-| CON | 1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanHead {
@@ -35783,23 +24621,12 @@ HumanHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `Glitch`
 **Name:** Glitch  
 **Description:** Use: Scramble the last spell you used. Permanently.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 289 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Glitch {
@@ -35813,24 +24640,12 @@ Glitch {
 }
 ```
 
-</details>
-
 ---
 
 ### `VideoGameCart`
 **Name:** Video Game Cart  
 **Description:** It's broken.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Used |
-| Frame | 290 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 VideoGameCart {
@@ -35847,23 +24662,12 @@ VideoGameCart {
 }
 ```
 
-</details>
-
 ---
 
 ### `TV`
 **Name:** TV  
 **Description:** Your bonus ability is Waste Time.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 291 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TV {
@@ -35879,23 +24683,12 @@ TV {
 }
 ```
 
-</details>
-
 ---
 
 ### `Triachnid`
 **Name:** Triachnid  
 **Description:** Spawn Triachnid at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 292 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Triachnid {
@@ -35914,8 +24707,6 @@ Triachnid {
 }
 ```
 
-</details>
-
 ---
 
 ### `GallonOfWater`
@@ -35923,15 +24714,6 @@ Triachnid {
 **Description:** Use: Heal +5 HP and gain Heatwave immunity.
 Refills when affected by Water Element effects.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 293 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GallonOfWater {
@@ -35957,24 +24739,12 @@ GallonOfWater {
 }
 ```
 
-</details>
-
 ---
 
 ### `ScorchedEarth`
 **Name:** Scorched Earth  
 **Description:** Your Earth and Fire Element spells cost -1 mana.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | DirtClod |
-| Frame | 238 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScorchedEarth {
@@ -35994,23 +24764,12 @@ ScorchedEarth {
 }
 ```
 
-</details>
-
 ---
 
 ### `LiquidMetal`
 **Name:** Liquid Metal  
 **Description:** +25% Dodge Chance.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 231 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LiquidMetal {
@@ -36026,24 +24785,12 @@ LiquidMetal {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenStone`
 **Name:** Steven Stone  
 **Description:** Your collarless spells cost -2 mana.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 232 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenStone {
@@ -36065,25 +24812,12 @@ StevenStone {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenMarrow`
 **Name:** Steven Marrow  
 **Description:** Any [img:shield] you gain is increased by 4.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 233 |
-| CON | -3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenMarrow {
@@ -36103,8 +24837,6 @@ StevenMarrow {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenTrinket1`
@@ -36112,16 +24844,6 @@ StevenMarrow {
 **Description:** Your basic attack inflicts Slow and has a +10% chance to Freeze.
 You can damage frozen units.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 234 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenTrinket1 {
@@ -36142,24 +24864,12 @@ StevenTrinket1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenTrinket2`
 **Name:** Steven  
 **Description:** Your basic attack inflicts Confusion.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 236 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenTrinket2 {
@@ -36178,8 +24888,6 @@ StevenTrinket2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `NinnyStick`
@@ -36187,16 +24895,6 @@ StevenTrinket2 {
 **Description:** Reroll your other equipped items at the end of each battle.
 You can reroll your options when you level up.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Jester |
-| Frame | 267 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NinnyStick {
@@ -36214,23 +24912,12 @@ NinnyStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkillSplit`
 **Name:** Skill Split  
 **Description:** Gain a temporary copy of your first passive ability at the start of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 269 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkillSplit {
@@ -36246,8 +24933,6 @@ SkillSplit {
 }
 ```
 
-</details>
-
 ---
 
 ### `FurnitureBox`
@@ -36255,16 +24940,6 @@ SkillSplit {
 **Description:** Breaks when [img:shield] is depleted.
 Becomes a random piece of furniture when you return home.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 294 |
-| SPD | -5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FurnitureBox {
@@ -36284,8 +24959,6 @@ FurnitureBox {
 }
 ```
 
-</details>
-
 ---
 
 ### `FurnitureBox_Rare`
@@ -36293,17 +24966,6 @@ FurnitureBox {
 **Description:** Breaks when [img:shield] is depleted.
 Becomes a random piece of rare furniture when you return home.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Frame | 295 |
-| LCK | 5 |
-| SPD | -5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FurnitureBox_Rare {
@@ -36324,23 +24986,12 @@ FurnitureBox_Rare {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ankh`
 **Name:** Ankh  
 **Description:** While you're downed, you have a 50% chance to revive with 33% HP at the end of each round.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Frame | 199 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ankh {
@@ -36359,24 +25010,12 @@ Ankh {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheBoxCardboard`
 **Name:** The Box  
 **Description:** Find an extra chapter item at the end of each battle.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Cardboard |
-| Frame | 296 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheBoxCardboard {
@@ -36395,8 +25034,6 @@ TheBoxCardboard {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheBoxChest`
@@ -36404,16 +25041,6 @@ TheBoxCardboard {
 **Description:** Use: Spawn A lost Spirit. This gains +1 use whenever an allied cat dies.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Wood |
-| Frame | 297 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheBoxChest {
@@ -36438,8 +25065,6 @@ TheBoxChest {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheBox`
@@ -36447,16 +25072,6 @@ TheBoxChest {
 **Description:** Use: Revive all bodies, fully heal all units, and clear all status effects.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Steven |
-| Frame | 298 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheBox {
@@ -36473,24 +25088,12 @@ TheBox {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheBlackBox`
 **Name:** the box  
 **Description:** Use: Find and equip a random item into one of your empty item slots.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 300 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheBlackBox {
@@ -36505,24 +25108,12 @@ TheBlackBox {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkullOfGlorg`
 **Name:** Skull Of Glorg  
 **Description:** Your spells cost -1 mana for each parasite you have equipped.  
 **Source:** `trinkets.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | trinket |
-| Rarity | rare |
-| Set | Bone |
-| Frame | 299 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkullOfGlorg {
@@ -36540,23 +25131,12 @@ SkullOfGlorg {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlassShard`
 **Name:** Shard of Glass  
 **Description:** Use: A melee attack that inflicts Bleed.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Frame | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlassShard {
@@ -36571,15 +25151,10 @@ GlassShard {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererGlassShard`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererGlassShard {
@@ -36588,24 +25163,12 @@ TinkererGlassShard {
 }
 ```
 
-</details>
-
 ---
 
 ### `RailSpikes`
 **Name:** Railroad Spikes  
 **Description:** Use: A ranged attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Lead |
-| Frame | 3 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RailSpikes {
@@ -36621,24 +25184,12 @@ RailSpikes {
 }
 ```
 
-</details>
-
 ---
 
 ### `NailBoard`
 **Name:** Nail Board  
 **Description:** Use: A wide melee attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Wood |
-| Frame | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NailBoard {
@@ -36654,24 +25205,12 @@ NailBoard {
 }
 ```
 
-</details>
-
 ---
 
 ### `LilSlugger`
 **Name:** Lil' Slugger  
 **Description:** Use: Knock back a unit 5 tiles.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Wood |
-| Frame | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LilSlugger {
@@ -36687,24 +25226,12 @@ LilSlugger {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChumBucket`
 **Name:** Chum Bucket  
 **Description:** Use: A lobbed attack that creates a creep puddle.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | [Guts, |
-| Frame | 5 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChumBucket {
@@ -36720,24 +25247,12 @@ ChumBucket {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeatHook`
 **Name:** Meat Hook  
 **Description:** Use: Pull a unit toward you.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Barbed, |
-| Frame | 6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeatHook {
@@ -36752,23 +25267,12 @@ MeatHook {
 }
 ```
 
-</details>
-
 ---
 
 ### `Kebab`
 **Name:** Kebab  
 **Description:** Use: A melee attack with +1 reach that penetrates through units.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 7 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Kebab {
@@ -36783,24 +25287,12 @@ Kebab {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pipe`
 **Name:** Pipe  
 **Description:** Use: A melee attack with a 10% chance to inflict Stun.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Lead |
-| Frame | 8 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pipe {
@@ -36815,8 +25307,6 @@ Pipe {
 }
 ```
 
-</details>
-
 ---
 
 ### `ObsidianChunk`
@@ -36825,16 +25315,6 @@ Pipe {
 This weapon gains +2 damage each time it's used.
 Damage resets at the end of the adventure.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Obelisk |
-| Frame | 9 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ObsidianChunk {
@@ -36853,8 +25333,6 @@ ObsidianChunk {
 }
 ```
 
-</details>
-
 ---
 
 ### `SoulClaw`
@@ -36862,16 +25340,6 @@ ObsidianChunk {
 **Description:** Use: A melee attack that deals damage equal to the number of uses this has left.
 When this weapon kills a unit, it gains +2 uses.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Demonic |
-| Frame | 10 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SoulClaw {
@@ -36887,23 +25355,12 @@ SoulClaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bomb`
 **Name:** Bomb  
 **Description:** Use: Throw a bomb that explodes.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 11 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bomb {
@@ -36918,8 +25375,6 @@ Bomb {
 }
 ```
 
-</details>
-
 ---
 
 ### `BoneClub`
@@ -36927,16 +25382,6 @@ Bomb {
 **Description:** Use: A melee attack.
 This weapon has a 15% chance to break each time it's used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Bone |
-| Frame | 13 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BoneClub {
@@ -36951,24 +25396,12 @@ BoneClub {
 }
 ```
 
-</details>
-
 ---
 
 ### `Molars`
 **Name:** Molars  
 **Description:** Use: A low-damage lobbed attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Bone |
-| Frame | 14 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Molars {
@@ -36984,24 +25417,12 @@ Molars {
 }
 ```
 
-</details>
-
 ---
 
 ### `Whetstone`
 **Name:** Whetstone  
 **Description:** Use: Gain +1 Damage for the rest of the battle.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Rock |
-| Frame | 15 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Whetstone {
@@ -37016,23 +25437,12 @@ Whetstone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hairspray`
 **Name:** Modded Hairspray  
 **Description:** Use: Deal fire damage in a cone.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 25 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hairspray {
@@ -37047,24 +25457,12 @@ Hairspray {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lighter`
 **Name:** Lighter  
 **Description:** Use: Inflict Burn 1 on an adjacent unit.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Cool |
-| Frame | 26 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lighter {
@@ -37080,23 +25478,12 @@ Lighter {
 }
 ```
 
-</details>
-
 ---
 
 ### `SeedBombs`
 **Name:** Seed Bombs  
 **Description:** Use: A lobbed projectile that spawns tall grass.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 27 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SeedBombs {
@@ -37110,23 +25497,12 @@ SeedBombs {
 }
 ```
 
-</details>
-
 ---
 
 ### `Battery`
 **Name:** Battery  
 **Description:** Use: A ranged lightning attack with a 10% chance to Stun.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 30 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Battery {
@@ -37141,15 +25517,10 @@ Battery {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererBattery`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererBattery {
@@ -37158,24 +25529,12 @@ TinkererBattery {
 }
 ```
 
-</details>
-
 ---
 
 ### `OldHose`
 **Name:** Old Hose  
 **Description:** Use: A water attack that hits an entire line with Knockback 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Rubber |
-| Frame | 31 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OldHose {
@@ -37190,23 +25549,12 @@ OldHose {
 }
 ```
 
-</details>
-
 ---
 
 ### `SixPack`
 **Name:** Six Pack  
 **Description:** Use: A lobbed water attack that deals splash damage.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 32 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SixPack {
@@ -37221,8 +25569,6 @@ SixPack {
 }
 ```
 
-</details>
-
 ---
 
 ### `IceCubes`
@@ -37230,16 +25576,6 @@ SixPack {
 **Description:** Use: A lobbed attack that Freezes units.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Frozen |
-| Frame | 35 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IceCubes {
@@ -37254,24 +25590,12 @@ IceCubes {
 }
 ```
 
-</details>
-
 ---
 
 ### `DryIce`
 **Name:** Dry Ice  
 **Description:** Use: An Ice Element melee attack that inflicts Slow.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Frozen |
-| Frame | 36 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DryIce {
@@ -37286,23 +25610,12 @@ DryIce {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bottles`
 **Name:** Bottles  
 **Description:** Use: A lobbed attack that spawns a glass tile.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Frame | 17 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bottles {
@@ -37317,15 +25630,10 @@ Bottles {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererBottles`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererBottles {
@@ -37334,24 +25642,12 @@ TinkererBottles {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stick`
 **Name:** Stick  
 **Description:** Use: A melee attack with +1 reach.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Wood |
-| Frame | 16 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stick {
@@ -37367,15 +25663,10 @@ Stick {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererStick`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererStick {
@@ -37384,15 +25675,10 @@ TinkererStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `TutorialStick`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TutorialStick {
@@ -37401,24 +25687,12 @@ TutorialStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `RubberFist`
 **Name:** Rubber Fist  
 **Description:** Use: A melee attack with Knockback 1 that inflicts Confusion.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Rubber |
-| Frame | 19 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberFist {
@@ -37433,8 +25707,6 @@ RubberFist {
 }
 ```
 
-</details>
-
 ---
 
 ### `BarbedPaw`
@@ -37442,17 +25714,6 @@ RubberFist {
 **Description:** Use: A melee attack that inflicts Bleed 1.
 Passive: +1 Thorns.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Barbed |
-| Frame | 24 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BarbedPaw {
@@ -37473,8 +25734,6 @@ BarbedPaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `GnarledClaw`
@@ -37483,15 +25742,6 @@ BarbedPaw {
 This weapon gains +1 damage and +1 use when it gets a kill.
 Damage resets at the end of the adventure.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 21 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GnarledClaw {
@@ -37509,23 +25759,12 @@ GnarledClaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `Garbage`
 **Name:** Garbage  
 **Description:** Use: A lobbed attack that inflicts Poison 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Set | Recycled |
-| Frame | 39 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Garbage {
@@ -37540,23 +25779,12 @@ Garbage {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shotgun`
 **Name:** Shotgun  
 **Description:** Use: Fires 5 projectiles in a cone.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 50 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shotgun {
@@ -37571,23 +25799,12 @@ Shotgun {
 }
 ```
 
-</details>
-
 ---
 
 ### `Revolver`
 **Name:** Revolver  
 **Description:** Use: Fire a shot in a straight line that instakills units and deals 25 damage to bosses.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 51 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Revolver {
@@ -37602,23 +25819,12 @@ Revolver {
 }
 ```
 
-</details>
-
 ---
 
 ### `Sniper`
 **Name:** Sniper Rifle  
 **Description:** Use: Fire a shot that instakills units and deals 25 damage to bosses.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 52 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Sniper {
@@ -37633,23 +25839,12 @@ Sniper {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallBomb`
 **Name:** Small Bomb  
 **Description:** Use: Throw a bomb that explodes.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Frame | 74 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallBomb {
@@ -37664,23 +25859,12 @@ SmallBomb {
 }
 ```
 
-</details>
-
 ---
 
 ### `PogoStick`
 **Name:** Pogo Stick  
 **Description:** Use: Jump to a tile and damage units you land on.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 72 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PogoStick {
@@ -37695,23 +25879,12 @@ PogoStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `Spitball`
 **Name:** Spitball  
 **Description:** Use: A ranged attack that inflicts Slow.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 73 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Spitball {
@@ -37726,24 +25899,12 @@ Spitball {
 }
 ```
 
-</details>
-
 ---
 
 ### `MiniJetpack`
 **Name:** Mini Jetpack  
 **Description:** Use: Fly to a random tile within a target area. If you land on a unit, explode dealing 5 damage in an area (including to yourself).  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Experimental |
-| Frame | 77 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MiniJetpack {
@@ -37759,24 +25920,12 @@ MiniJetpack {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigStick`
 **Name:** Big Stick  
 **Description:** Use: A melee attack with +2 reach.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Wood |
-| Frame | 75 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigStick {
@@ -37792,15 +25941,10 @@ BigStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererBigStick`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererBigStick {
@@ -37809,24 +25953,12 @@ TinkererBigStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `BiggestStick`
 **Name:** Biggest Stick  
 **Description:** Use: A melee attack with +3 reach.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Wood |
-| Frame | 82 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BiggestStick {
@@ -37842,15 +25974,10 @@ BiggestStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererBiggestStick`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererBiggestStick {
@@ -37859,24 +25986,12 @@ TinkererBiggestStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `Log`
 **Name:** Log  
 **Description:** Use: A wide attack that hits all units in an area.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Wood |
-| Frame | 76 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Log {
@@ -37892,15 +26007,10 @@ Log {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererLog`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererLog {
@@ -37909,23 +26019,12 @@ TinkererLog {
 }
 ```
 
-</details>
-
 ---
 
 ### `Taser`
 **Name:** Zapper  
 **Description:** Use: A ranged electric attack that inflicts Stun.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 84 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Taser {
@@ -37940,15 +26039,10 @@ Taser {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererTaser`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererTaser {
@@ -37957,24 +26051,12 @@ TinkererTaser {
 }
 ```
 
-</details>
-
 ---
 
 ### `Deathbot`
 **Name:** Deathbot  
 **Description:** Use: Spawn a Deathbot with a flamethrower.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Tinkerer |
-| Frame | 81 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Deathbot {
@@ -37990,24 +26072,12 @@ Deathbot {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crossbow`
 **Name:** Crossbow  
 **Description:** Use: A ranged attack that ignores shield and inflicts Bleed 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Wood |
-| Frame | 80 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crossbow {
@@ -38023,15 +26093,10 @@ Crossbow {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererCrossbow`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererCrossbow {
@@ -38040,23 +26105,12 @@ TinkererCrossbow {
 }
 ```
 
-</details>
-
 ---
 
 ### `BucketOfAcid`
 **Name:** Vial of Acid  
 **Description:** Use: A melee attack that inflicts random status effects.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 78 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BucketOfAcid {
@@ -38071,23 +26125,12 @@ BucketOfAcid {
 }
 ```
 
-</details>
-
 ---
 
 ### `StunGun`
 **Name:** Stun Gun  
 **Description:** Use: An electric melee attack with a 50% chance to inflict Stun.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 79 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StunGun {
@@ -38102,24 +26145,12 @@ StunGun {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlingShot`
 **Name:** Slingshot  
 **Description:** Use: A ranged attack with a 33% chance to inflict Blind 2.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Wood |
-| Frame | 83 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlingShot {
@@ -38135,15 +26166,10 @@ SlingShot {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererSlingShot`
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererSlingShot {
@@ -38152,23 +26178,12 @@ TinkererSlingShot {
 }
 ```
 
-</details>
-
 ---
 
 ### `Uzi`
 **Name:** Submachine Gun  
 **Description:** Use: Fire 5 shots in a straight line.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 137 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Uzi {
@@ -38183,23 +26198,12 @@ Uzi {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rifle`
 **Name:** .22 Rifle  
 **Description:** Use: Fire a shot anywhere within your line of sight.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 152 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rifle {
@@ -38214,24 +26218,12 @@ Rifle {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfRocks`
 **Name:** Bag of Rocks  
 **Description:** Use: A melee attack that inflicts Bruise.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Rock |
-| Frame | 86 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfRocks {
@@ -38246,24 +26238,12 @@ BagOfRocks {
 }
 ```
 
-</details>
-
 ---
 
 ### `Textbook`
 **Name:** Textbook  
 **Description:** Use: Gain +1 [img:int] for the rest of the battle.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Paper |
-| Frame | 90 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Textbook {
@@ -38278,24 +26258,12 @@ Textbook {
 }
 ```
 
-</details>
-
 ---
 
 ### `BucketOfLard`
 **Name:** Bucket of Lard  
 **Description:** Use: Gain +2 [img:con] and -1 [img:spd], then heal 4 HP.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Fatty |
-| Frame | 91 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BucketOfLard {
@@ -38311,23 +26279,12 @@ BucketOfLard {
 }
 ```
 
-</details>
-
 ---
 
 ### `NailGun`
 **Name:** Nail Gun  
 **Description:** Use: Fire a shot in a straight line that inflicts +1 Thorns.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 92 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NailGun {
@@ -38341,23 +26298,12 @@ NailGun {
 }
 ```
 
-</details>
-
 ---
 
 ### `StrongMagnet`
 **Name:** Strong Magnet  
 **Description:** Use: Pull a unit 2 tiles toward you.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 93 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StrongMagnet {
@@ -38371,23 +26317,12 @@ StrongMagnet {
 }
 ```
 
-</details>
-
 ---
 
 ### `SawBlades`
 **Name:** Sawblades  
 **Description:** Use: Throw a blade in a straight line that inflicts Bleed 1 and passes through units.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 94 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SawBlades {
@@ -38402,24 +26337,12 @@ SawBlades {
 }
 ```
 
-</details>
-
 ---
 
 ### `OddRemote`
 **Name:** Odd Remote  
 **Description:** Use: Cast a random spell.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Experimental |
-| Frame | 95 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OddRemote {
@@ -38435,8 +26358,6 @@ OddRemote {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButterflyKnife`
@@ -38444,16 +26365,6 @@ OddRemote {
 **Description:** Use: A multi-hit melee attack that inflicts Bleed.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Cool |
-| Frame | 97 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButterflyKnife {
@@ -38468,24 +26379,12 @@ ButterflyKnife {
 }
 ```
 
-</details>
-
 ---
 
 ### `BearTraps`
 **Name:** Bear Traps  
 **Description:** Use: Place a Bear Trap.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | [Hunter, |
-| Frame | 99 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BearTraps {
@@ -38501,23 +26400,12 @@ BearTraps {
 }
 ```
 
-</details>
-
 ---
 
 ### `RustyRazor`
 **Name:** Rusty Razor  
 **Description:** Use: A melee attack that inflicts Poison 1 and Bleed 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 89 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RustyRazor {
@@ -38532,8 +26420,6 @@ RustyRazor {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bricks`
@@ -38541,16 +26427,6 @@ RustyRazor {
 **Description:** Use: A lobbed attack that inflicts Stun.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Brick |
-| Frame | 18 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bricks {
@@ -38565,8 +26441,6 @@ Bricks {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mjolnir`
@@ -38574,16 +26448,6 @@ Bricks {
 **Description:** Use: A ranged attack that passes through units and returns to you after you throw it. At its apex, it deals electric damage.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Superhero |
-| Frame | 12 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mjolnir {
@@ -38598,8 +26462,6 @@ Mjolnir {
 }
 ```
 
-</details>
-
 ---
 
 ### `Blackjack`
@@ -38607,16 +26469,6 @@ Mjolnir {
 **Description:** Use: A melee attack with a 5% chance to Stun.
 Automatically use this when you stop next to an enemy or an enemy stops next to you.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | [Thief, |
-| Frame | 85 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Blackjack {
@@ -38639,24 +26491,12 @@ Blackjack {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigSpring`
 **Name:** Big Spring  
 **Description:** Use: Throw an adjacent unit to a tile.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Scrap |
-| Frame | 87 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigSpring {
@@ -38671,23 +26511,12 @@ BigSpring {
 }
 ```
 
-</details>
-
 ---
 
 ### `Grenade`
 **Name:** Grenade  
 **Description:** Use: Throw a grenade that explodes and shreds 5 stacks of random buffs off of whatever it hits.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 98 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Grenade {
@@ -38702,8 +26531,6 @@ Grenade {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pinwheel`
@@ -38711,16 +26538,6 @@ Grenade {
 **Description:** Use: A melee wind attack with Knockback 1.
 Can be used 3 times per turn.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Paper |
-| Frame | 34 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pinwheel {
@@ -38739,8 +26556,6 @@ Pinwheel {
 }
 ```
 
-</details>
-
 ---
 
 ### `CrispPaper`
@@ -38748,16 +26563,6 @@ Pinwheel {
 **Description:** Use: A ranged attack that inflicts Bleed 3.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Paper |
-| Frame | 56 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CrispPaper {
@@ -38772,8 +26577,6 @@ CrispPaper {
 }
 ```
 
-</details>
-
 ---
 
 ### `PurpleMushroom`
@@ -38781,16 +26584,6 @@ CrispPaper {
 **Description:** Use: A ranged attack that inflicts Confusion 2.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Druid |
-| Frame | 57 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PurpleMushroom {
@@ -38806,8 +26599,6 @@ PurpleMushroom {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlackMushroom`
@@ -38815,16 +26606,6 @@ PurpleMushroom {
 **Description:** Use: A ranged attack that inflicts Weakness 2.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Druid |
-| Frame | 58 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlackMushroom {
@@ -38839,8 +26620,6 @@ BlackMushroom {
 }
 ```
 
-</details>
-
 ---
 
 ### `RedMushroom`
@@ -38848,16 +26627,6 @@ BlackMushroom {
 **Description:** Use: A ranged attack that inflicts Charm 3.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Druid |
-| Frame | 59 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RedMushroom {
@@ -38872,8 +26641,6 @@ RedMushroom {
 }
 ```
 
-</details>
-
 ---
 
 ### `PoisonVial`
@@ -38881,16 +26648,6 @@ RedMushroom {
 **Description:** Use: A ranged attack that inflicts Poison 2.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Thief |
-| Frame | 60 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoisonVial {
@@ -38905,23 +26662,12 @@ PoisonVial {
 }
 ```
 
-</details>
-
 ---
 
 ### `PopCap`
 **Name:** Pop Cap  
 **Description:** Use: A lobbed attack with Knockback 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Frame | 42 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PopCap {
@@ -38936,8 +26682,6 @@ PopCap {
 }
 ```
 
-</details>
-
 ---
 
 ### `CreepyPhoto`
@@ -38945,15 +26689,6 @@ PopCap {
 **Description:** Use: A melee attack that inflicts Fear 1.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 62 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CreepyPhoto {
@@ -38967,8 +26702,6 @@ CreepyPhoto {
 }
 ```
 
-</details>
-
 ---
 
 ### `FingerBone`
@@ -38976,16 +26709,6 @@ CreepyPhoto {
 **Description:** Use: A straight ranged attack that inflicts Immobile 3.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Bone |
-| Frame | 63 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FingerBone {
@@ -39000,24 +26723,12 @@ FingerBone {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpringBoard`
 **Name:** Spring Board  
 **Description:** Use: A melee attack that lobs a unit back 3 tiles.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Wood |
-| Frame | 45 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpringBoard {
@@ -39032,23 +26743,12 @@ SpringBoard {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shovel`
 **Name:** Shovel  
 **Description:** Use: A melee attack that lobs a unit back 2 tiles and digs up a corpse.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 37 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shovel {
@@ -39062,23 +26762,12 @@ Shovel {
 }
 ```
 
-</details>
-
 ---
 
 ### `Trowel`
 **Name:** Trowel  
 **Description:** Use: A melee attack with Knockback 1 that spawns a rock.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Frame | 38 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Trowel {
@@ -39093,8 +26782,6 @@ Trowel {
 }
 ```
 
-</details>
-
 ---
 
 ### `StaffOfFlame`
@@ -39102,16 +26789,6 @@ Trowel {
 **Description:** Use: A fire attack that inflicts Burn 5.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Mage |
-| Frame | 139 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StaffOfFlame {
@@ -39126,8 +26803,6 @@ StaffOfFlame {
 }
 ```
 
-</details>
-
 ---
 
 ### `LacedNeedle`
@@ -39135,16 +26810,6 @@ StaffOfFlame {
 **Description:** Use: A melee attack that inflicts Poison 1.
 Can be used 3 times per turn.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Thief |
-| Frame | 140 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LacedNeedle {
@@ -39163,8 +26828,6 @@ LacedNeedle {
 }
 ```
 
-</details>
-
 ---
 
 ### `BattleAxe`
@@ -39172,16 +26835,6 @@ LacedNeedle {
 **Description:** Use: A melee spin attack.
 This uses up both your movement and attack action.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 141 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BattleAxe {
@@ -39196,8 +26849,6 @@ BattleAxe {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnointingOil`
@@ -39205,16 +26856,6 @@ BattleAxe {
 **Description:** Use: Cleanse debuffs from an adjacent unit or yourself.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Cleric |
-| Frame | 142 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnointingOil {
@@ -39229,8 +26870,6 @@ AnointingOil {
 }
 ```
 
-</details>
-
 ---
 
 ### `Girder`
@@ -39239,16 +26878,6 @@ AnointingOil {
 [s:.7](Usable once per battle.)[/s]
 Passive: +1 Brace while this weapon is usable.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Tank |
-| Frame | 143 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Girder {
@@ -39268,8 +26897,6 @@ Girder {
 }
 ```
 
-</details>
-
 ---
 
 ### `InfinityArrow`
@@ -39277,16 +26904,6 @@ Girder {
 **Description:** Use: Your next basic attack has +5 range, +100% Crit Chance, ignores shield and can't miss.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Hunter |
-| Frame | 144 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 InfinityArrow {
@@ -39303,24 +26920,12 @@ InfinityArrow {
 }
 ```
 
-</details>
-
 ---
 
 ### `BentSpoon`
 **Name:** Bent Spoon  
 **Description:** Use: Pull any unit 1 tile toward you and deal 1 damage to it.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Psychic |
-| Frame | 145 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BentSpoon {
@@ -39337,8 +26942,6 @@ BentSpoon {
 }
 ```
 
-</details>
-
 ---
 
 ### `UnderworldStaff`
@@ -39346,16 +26949,6 @@ BentSpoon {
 **Description:** Use: A melee attack with Knockback 1.
 Passive: Start each battle with a Zombie Cat familiar.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Necromancer, |
-| Frame | 146 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UnderworldStaff {
@@ -39373,24 +26966,12 @@ UnderworldStaff {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bo`
 **Name:** Bo  
 **Description:** Use: A melee attack. On hit, jump forward 2 tiles.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Monk, |
-| Frame | 147 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bo {
@@ -39407,8 +26988,6 @@ Bo {
 }
 ```
 
-</details>
-
 ---
 
 ### `BallPeenHammer`
@@ -39416,16 +26995,6 @@ Bo {
 **Description:** Use: A melee attack. If used on an ally, give +1 use to all of their items instead of dealing damage.
 5% chance to break when used to repair items.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Tinkerer |
-| Frame | 148 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BallPeenHammer {
@@ -39442,24 +27011,12 @@ BallPeenHammer {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButchersCleaver`
 **Name:** Butcher's Cleaver  
 **Description:** Use: A melee attack with Cleave that can hit diagonally.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Butcher |
-| Frame | 149 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButchersCleaver {
@@ -39476,24 +27033,12 @@ ButchersCleaver {
 }
 ```
 
-</details>
-
 ---
 
 ### `RainStaff`
 **Name:** Rain Staff  
 **Description:** Use: Spawn a large puddle of water anywhere.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Druid, |
-| Frame | 150 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RainStaff {
@@ -39510,23 +27055,12 @@ RainStaff {
 }
 ```
 
-</details>
-
 ---
 
 ### `LilKitty`
 **Name:** Lil' Kitty  
 **Description:** Use: Spawn a Flea familiar.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 167 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LilKitty {
@@ -39542,24 +27076,12 @@ LilKitty {
 }
 ```
 
-</details>
-
 ---
 
 ### `TractorBeam`
 **Name:** Tractor Beam  
 **Description:** Use: Pull a unit within 3 tiles all the way towards you. Requires line of sight.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Space |
-| Frame | 106 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TractorBeam {
@@ -39574,8 +27096,6 @@ TractorBeam {
 }
 ```
 
-</details>
-
 ---
 
 ### `RollOfPennies`
@@ -39584,15 +27104,6 @@ TractorBeam {
 5% chance to break when used.
 Gain a lot of coins when it breaks.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 107 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RollOfPennies {
@@ -39615,24 +27126,12 @@ RollOfPennies {
 }
 ```
 
-</details>
-
 ---
 
 ### `GrapplingHook`
 **Name:** Grappling Hook  
 **Description:** Use: Pull yourself toward a unit or object.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Barbed, |
-| Frame | 108 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GrapplingHook {
@@ -39647,8 +27146,6 @@ GrapplingHook {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chainsaw`
@@ -39657,16 +27154,6 @@ GrapplingHook {
 [s:.7](Usable once per battle.)[/s]
 Passive: +2 Thorns.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Cool |
-| Frame | 109 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chainsaw {
@@ -39686,8 +27173,6 @@ Chainsaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `BurningCoal`
@@ -39695,16 +27180,6 @@ Chainsaw {
 **Description:** Use: A lobbed attack that inflicts Burn 2 and +2 [img:spd].
 Passive: Gain Burn 1 and +2 [img:spd] at the start of each turn.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Molten |
-| Frame | 69 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BurningCoal {
@@ -39725,8 +27200,6 @@ BurningCoal {
 }
 ```
 
-</details>
-
 ---
 
 ### `RainbowRemote`
@@ -39734,16 +27207,6 @@ BurningCoal {
 **Description:** Use: Cast a targeted random spell.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Experimental |
-| Frame | 66 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RainbowRemote {
@@ -39758,24 +27221,12 @@ RainbowRemote {
 }
 ```
 
-</details>
-
 ---
 
 ### `RubberBat`
 **Name:** Rubber Bat  
 **Description:** Use: A melee attack that inflicts Confusion 1 and turns the unit to the right.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Rubber |
-| Frame | 40 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberBat {
@@ -39790,23 +27241,12 @@ RubberBat {
 }
 ```
 
-</details>
-
 ---
 
 ### `RustedRod`
 **Name:** Rusted Rod  
 **Description:** Use: A melee attack with damage equal to uses.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 41 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RustedRod {
@@ -39821,8 +27261,6 @@ RustedRod {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeatCleaver`
@@ -39831,16 +27269,6 @@ RustedRod {
 Bosses take 1/6th of their current HP in damage instead.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Butcher |
-| Frame | 43 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeatCleaver {
@@ -39855,8 +27283,6 @@ MeatCleaver {
 }
 ```
 
-</details>
-
 ---
 
 ### `SharpStraw`
@@ -39864,15 +27290,6 @@ MeatCleaver {
 **Description:** Use: A weak melee attack.
 If it kills a unit, heal 10 HP.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 44 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SharpStraw {
@@ -39886,8 +27303,6 @@ SharpStraw {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfGlass`
@@ -39895,15 +27310,6 @@ SharpStraw {
 **Description:** Use: Spawn Glass on an adjacent tile.
 5% chance to break when used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 46 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfGlass {
@@ -39917,8 +27323,6 @@ BagOfGlass {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfMeat`
@@ -39926,16 +27330,6 @@ BagOfGlass {
 **Description:** Use: Spawn Meat on an adjacent tile.
 5% chance to break when used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Meat |
-| Frame | 47 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfMeat {
@@ -39950,8 +27344,6 @@ BagOfMeat {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfGlitter`
@@ -39959,16 +27351,6 @@ BagOfMeat {
 **Description:** Use: Inflict Blind 2 on an adjacent unit.
 5% chance to break when used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Stunning |
-| Frame | 48 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfGlitter {
@@ -39983,8 +27365,6 @@ BagOfGlitter {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfStuff`
@@ -39992,15 +27372,6 @@ BagOfGlitter {
 **Description:** Use: Spawn a random pickup on an adjacent tile.
 5% chance to break when used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Frame | 49 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfStuff {
@@ -40014,8 +27385,6 @@ BagOfStuff {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pickaxe`
@@ -40023,16 +27392,6 @@ BagOfStuff {
 **Description:** Use: A melee attack that ignores shield.
 If used on static or inanimate objects it destroys them and spawns a Rock. Restore 1 use when used this way.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Miner |
-| Frame | 88 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pickaxe {
@@ -40047,23 +27406,12 @@ Pickaxe {
 }
 ```
 
-</details>
-
 ---
 
 ### `RocketLauncher`
 **Name:** Rocket Launcher  
 **Description:** Use: Fire a rocket anywhere that explodes.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 160 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RocketLauncher {
@@ -40078,8 +27426,6 @@ RocketLauncher {
 }
 ```
 
-</details>
-
 ---
 
 ### `FreyedWires`
@@ -40087,15 +27433,6 @@ RocketLauncher {
 **Description:** Use: An electric melee attack that can chain through adjacent units.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 29 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FreyedWires {
@@ -40109,8 +27446,6 @@ FreyedWires {
 }
 ```
 
-</details>
-
 ---
 
 ### `OldExtinguisher`
@@ -40118,15 +27453,6 @@ FreyedWires {
 **Description:** Use: Extinguishes fires in a cone with Knockback 5.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 33 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OldExtinguisher {
@@ -40140,23 +27466,12 @@ OldExtinguisher {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrashCanLid`
 **Name:** Trash Can Lid  
 **Description:** Use: A melee attack with Knockback 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 54 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrashCanLid {
@@ -40172,24 +27487,12 @@ TrashCanLid {
 }
 ```
 
-</details>
-
 ---
 
 ### `MiniNuke`
 **Name:** Mini Nuke  
 **Description:** Use: Throw a mini nuke that makes a HUGE explosion that spawns toxic sludge.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Radioactive |
-| Frame | 96 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MiniNuke {
@@ -40205,24 +27508,12 @@ MiniNuke {
 }
 ```
 
-</details>
-
 ---
 
 ### `Kandarian`
 **Name:** The Kandarian  
 **Description:** Use: A melee attack that always crits and inflicts Bleed 10.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Demonic, |
-| Frame | 135 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Kandarian {
@@ -40238,8 +27529,6 @@ Kandarian {
 }
 ```
 
-</details>
-
 ---
 
 ### `Geode`
@@ -40247,16 +27536,6 @@ Kandarian {
 **Description:** Use: A melee attack with a 5% chance to break when used.
 When it breaks, gain 15-30 coins.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | [Rock, |
-| Frame | 100 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Geode {
@@ -40280,24 +27559,12 @@ Geode {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rocks`
 **Name:** Rocks  
 **Description:** Use: A lobbed attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Set | Rock |
-| Frame | 55 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rocks {
@@ -40313,24 +27580,12 @@ Rocks {
 }
 ```
 
-</details>
-
 ---
 
 ### `ExtraLimb`
 **Name:** Extra Limb  
 **Description:** Use: An attack that copies your basic attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Hybrid |
-| Frame | 65 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExtraLimb {
@@ -40346,24 +27601,12 @@ ExtraLimb {
 }
 ```
 
-</details>
-
 ---
 
 ### `GripTrainer`
 **Name:** Grip Trainer  
 **Description:** Use: Gain +1 [img:str].  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Fighter |
-| Frame | 101 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GripTrainer {
@@ -40378,23 +27621,12 @@ GripTrainer {
 }
 ```
 
-</details>
-
 ---
 
 ### `ShoeHorn`
 **Name:** Shoe Horn  
 **Description:** Use: Gain +2 [img:spd].  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 102 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ShoeHorn {
@@ -40408,23 +27640,12 @@ ShoeHorn {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cheese`
 **Name:** Cheese  
 **Description:** Use: Gain +1 [img:con] and heal 2 HP.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 103 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cheese {
@@ -40438,23 +27659,12 @@ Cheese {
 }
 ```
 
-</details>
-
 ---
 
 ### `LipFiller`
 **Name:** Lip Filler  
 **Description:** Use: Gain +1 [img:cha] and 2 mana.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 104 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LipFiller {
@@ -40468,23 +27678,12 @@ LipFiller {
 }
 ```
 
-</details>
-
 ---
 
 ### `EnergyDrink`
 **Name:** Energy Drink  
 **Description:** Use: Gain +1 [img:dex] and +1 [img:spd].  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 105 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EnergyDrink {
@@ -40498,25 +27697,12 @@ EnergyDrink {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatPaw`
 **Name:** Cat Paw  
 **Description:** Use: A melee attack that has a 25% chance to refresh itself when used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Hybrid |
-| Frame | 20 |
-| LCK | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatPaw {
@@ -40533,8 +27719,6 @@ CatPaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `FlowerMix`
@@ -40542,16 +27726,6 @@ CatPaw {
 **Description:** Use: Plant flowers in a large area. 
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Flower |
-| Frame | 28 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlowerMix {
@@ -40566,8 +27740,6 @@ FlowerMix {
 }
 ```
 
-</details>
-
 ---
 
 ### `PuzzleBox`
@@ -40575,16 +27747,6 @@ FlowerMix {
 **Description:** Use: Shoot hooks in 8 directions that inflict Bleed 1 and pull units towards you.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Gimp, |
-| Frame | 111 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PuzzleBox {
@@ -40599,23 +27761,12 @@ PuzzleBox {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crowbar`
 **Name:** Crowbar  
 **Description:** Use: A melee attack that destroys trash bags and crates, scattering extra pickups.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 110 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crowbar {
@@ -40637,8 +27788,6 @@ Crowbar {
 }
 ```
 
-</details>
-
 ---
 
 ### `FireFlower`
@@ -40646,16 +27795,6 @@ Crowbar {
 **Description:** Use: Shoot a fireball that inflicts Burn 2 in an area.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Flower |
-| Frame | 112 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FireFlower {
@@ -40670,8 +27809,6 @@ FireFlower {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bible`
@@ -40679,16 +27816,6 @@ FireFlower {
 **Description:** Use: Cleanse one stack of a random debuff from a unit at melee range. 
 Passive: Your heals heal for 1 extra.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Cleric |
-| Frame | 114 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bible {
@@ -40707,23 +27834,12 @@ Bible {
 }
 ```
 
-</details>
-
 ---
 
 ### `CarBattery`
 **Name:** Car Battery  
 **Description:** Use: An electric melee attack that has a 50% chance to chain to another enemy within 3 tiles. Can only be used while at full mana.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 115 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CarBattery {
@@ -40737,8 +27853,6 @@ CarBattery {
 }
 ```
 
-</details>
-
 ---
 
 ### `ModelingClay`
@@ -40746,16 +27860,6 @@ CarBattery {
 **Description:** {str_aux_item_desc}
 [s:.7](This changes into a different weapon each time it's used.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | DirtClod |
-| Frame | 68 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ModelingClay { 
@@ -40782,22 +27886,12 @@ ModelingClay {
 }
 ```
 
-</details>
-
 ---
 
 ### `ModelingClay_Default`
 **Name:** Modeling Clay  
 **Description:** Use: A lobbed attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Frame | 68 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ModelingClay_Default {
@@ -40810,8 +27904,6 @@ ModelingClay_Default {
 }
 ```
 
-</details>
-
 ---
 
 ### `PharaohStaff`
@@ -40819,15 +27911,6 @@ ModelingClay_Default {
 **Description:** Use: Summon a swarm of charmed flies.
 When you destroy a corpse, restore this weapon's use.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 172 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PharaohStaff { 
@@ -40850,8 +27933,6 @@ PharaohStaff {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlagMight`
@@ -40859,16 +27940,6 @@ PharaohStaff {
 **Description:** Use: A melee attack with Bruise 1 and Knockback 5.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Rock |
-| Frame | 173 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlagMight { 
@@ -40883,23 +27954,12 @@ SlagMight {
 }
 ```
 
-</details>
-
 ---
 
 ### `MomsToeNail`
 **Name:** Mom's Toenail  
 **Description:** Use: A melee attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Set | Mother |
-| Frame | 219 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MomsToeNail { 
@@ -40913,23 +27973,12 @@ MomsToeNail {
 }
 ```
 
-</details>
-
 ---
 
 ### `AlienBlaster`
 **Name:** Alien Blaster  
 **Description:** Use: A laser attack. Gains +1 damage for the rest of the battle each time it's used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Set | Space |
-| Frame | 218 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlienBlaster { 
@@ -40943,8 +27992,6 @@ AlienBlaster {
 }
 ```
 
-</details>
-
 ---
 
 ### `PolymorphRemote`
@@ -40952,15 +27999,6 @@ AlienBlaster {
 **Description:** Use: Transform a non-boss enemy into another random enemy from the same chapter.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 67 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PolymorphRemote {
@@ -40974,23 +28012,12 @@ PolymorphRemote {
 }
 ```
 
-</details>
-
 ---
 
 ### `MelonBaller`
 **Name:** Melon Baller  
 **Description:** Use: A melee attack that inflicts Blind 3 and gives you a random eye trinket if you don't have a trinket equipped.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 120 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MelonBaller {
@@ -41005,8 +28032,6 @@ MelonBaller {
 }
 ```
 
-</details>
-
 ---
 
 ### `EtherSoakedRag`
@@ -41014,16 +28039,6 @@ MelonBaller {
 **Description:** Use: Put an adjacent unit or yourself to sleep. That unit gets +5 Health Regen and +5 Mana Regen until it wakes up.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Rag |
-| Frame | 121 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EtherSoakedRag {
@@ -41038,23 +28053,12 @@ EtherSoakedRag {
 }
 ```
 
-</details>
-
 ---
 
 ### `DeathsScythe`
 **Name:** Death's Scythe  
 **Description:** Use: A spin attack. After using this, die at the end of your turn.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 122 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DeathsScythe {
@@ -41068,8 +28072,6 @@ DeathsScythe {
 }
 ```
 
-</details>
-
 ---
 
 ### `Necronomicon`
@@ -41077,16 +28079,6 @@ DeathsScythe {
 **Description:** Use: Unearth 5 zombies. These zombies have a 33% chance of having Madness.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | [Necromancer, |
-| Frame | 123 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Necronomicon {
@@ -41101,24 +28093,12 @@ Necronomicon {
 }
 ```
 
-</details>
-
 ---
 
 ### `Jitte`
 **Name:** Jitte  
 **Description:** Use: A melee attack that deals damage equal to half your [img:str] rounded up, inflicts Weakness 1, and gives you +1 [img:str] and +1 HP on hit.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Ninja |
-| Frame | 124 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Jitte {
@@ -41133,24 +28113,12 @@ Jitte {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnarchistCookbook`
 **Name:** Anarchist Cookbook  
 **Description:** Use: Summon 3-5 grenades that explode at the end of the round or when destroyed.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Set | Paper |
-| Frame | 125 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnarchistCookbook {
@@ -41165,24 +28133,12 @@ AnarchistCookbook {
 }
 ```
 
-</details>
-
 ---
 
 ### `MomsKnife`
 **Name:** Mom's Knife  
 **Description:** Use: Throw a penetrating projectile that returns to you.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Mother |
-| Frame | 126 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MomsKnife {
@@ -41197,24 +28153,12 @@ MomsKnife {
 }
 ```
 
-</details>
-
 ---
 
 ### `MysteriousBone`
 **Name:** Mysterious Bone  
 **Description:** Use: A melee attack with a 25% chance to inflict Charm.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Bone |
-| Frame | 127 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MysteriousBone {
@@ -41229,24 +28173,12 @@ MysteriousBone {
 }
 ```
 
-</details>
-
 ---
 
 ### `HolyGrail`
 **Name:** Holy Grail  
 **Description:** Use: Heal an adjacent unit or yourself for 5 HP.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Cleric |
-| Frame | 128 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HolyGrail {
@@ -41261,8 +28193,6 @@ HolyGrail {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpearOfDestiny`
@@ -41270,15 +28200,6 @@ HolyGrail {
 **Description:** Use: A melee attack with +1 reach that penetrates through units.
 RELOAD: Collect a blessing pickup or get hit by a Holy Element spell.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 129 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpearOfDestiny {
@@ -41292,8 +28213,6 @@ SpearOfDestiny {
 }
 ```
 
-</details>
-
 ---
 
 ### `HeavyMace`
@@ -41301,17 +28220,6 @@ SpearOfDestiny {
 **Description:** Use: A melee attack with Knockback 2 that deals damage equal to your [img:str].
 Cleaves and deals double damage to units with [img:shield].  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Fighter |
-| Frame | 131 |
-| SPD | -6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeavyMace {
@@ -41328,8 +28236,6 @@ HeavyMace {
 }
 ```
 
-</details>
-
 ---
 
 ### `UraniumRod`
@@ -41337,17 +28243,6 @@ HeavyMace {
 **Description:** Use: A melee attack that inflicts -1 [img:con], Poison 2 and Weakness 1.
 At the end of each battle, if you are downed, gain a random mutation.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Radioactive |
-| Frame | 132 |
-| CON | -6 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UraniumRod {
@@ -41373,23 +28268,12 @@ UraniumRod {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ocarina`
 **Name:** Ocarina  
 **Description:** Use: Cast a random musical spell.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 134 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ocarina {
@@ -41403,8 +28287,6 @@ Ocarina {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallMeteor`
@@ -41412,17 +28294,6 @@ Ocarina {
 **Description:** - {str_aux_active_name} -
 {str_aux_active_desc}  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Planet |
-| Frame | 175 |
-| MANA | 0 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallMeteor {
@@ -41454,8 +28325,6 @@ SmallMeteor {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlowingBone`
@@ -41463,17 +28332,6 @@ SmallMeteor {
 **Description:** - {str_aux_active_name} -
 {str_aux_active_desc}  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Bone |
-| Frame | 174 |
-| MANA | 0 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlowingBone {
@@ -41505,24 +28363,12 @@ GlowingBone {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject`
 **Name:** Irradiated Object  
 **Description:** {str_aux_item_desc}  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Radioactive |
-| Frame | 176 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject {
@@ -41541,8 +28387,6 @@ IrradiatedObject {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Burn`
@@ -41550,9 +28394,6 @@ IrradiatedObject {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Burn {
@@ -41562,8 +28403,6 @@ IrradiatedObject_Burn {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Stun`
@@ -41571,9 +28410,6 @@ IrradiatedObject_Burn {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Stun {
@@ -41583,8 +28419,6 @@ IrradiatedObject_Stun {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Bleed`
@@ -41592,9 +28426,6 @@ IrradiatedObject_Stun {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Bleed {
@@ -41604,8 +28435,6 @@ IrradiatedObject_Bleed {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Bruise`
@@ -41613,9 +28442,6 @@ IrradiatedObject_Bleed {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Bruise {
@@ -41625,8 +28451,6 @@ IrradiatedObject_Bruise {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Poison`
@@ -41634,9 +28458,6 @@ IrradiatedObject_Bruise {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Poison {
@@ -41646,8 +28467,6 @@ IrradiatedObject_Poison {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Sleep`
@@ -41655,9 +28474,6 @@ IrradiatedObject_Poison {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Sleep {
@@ -41667,8 +28483,6 @@ IrradiatedObject_Sleep {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Fear`
@@ -41676,9 +28490,6 @@ IrradiatedObject_Sleep {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Fear {
@@ -41688,8 +28499,6 @@ IrradiatedObject_Fear {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Charmed`
@@ -41697,9 +28506,6 @@ IrradiatedObject_Fear {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Charmed {
@@ -41709,8 +28515,6 @@ IrradiatedObject_Charmed {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Weakness`
@@ -41718,9 +28522,6 @@ IrradiatedObject_Charmed {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Weakness {
@@ -41730,8 +28531,6 @@ IrradiatedObject_Weakness {
 }
 ```
 
-</details>
-
 ---
 
 ### `IrradiatedObject_Confusion`
@@ -41739,9 +28538,6 @@ IrradiatedObject_Weakness {
 {str_aux_item_desc}
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IrradiatedObject_Confusion {
@@ -41751,8 +28547,6 @@ IrradiatedObject_Confusion {
 }
 ```
 
-</details>
-
 ---
 
 ### `SteelBall`
@@ -41760,15 +28554,6 @@ IrradiatedObject_Confusion {
 **Description:** Use: Summon an invulnerable Fly familiar.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 157 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SteelBall {
@@ -41782,8 +28567,6 @@ SteelBall {
 }
 ```
 
-</details>
-
 ---
 
 ### `USAShield`
@@ -41792,16 +28575,6 @@ SteelBall {
 [s:.7](Usable once per battle.)[/s]
 Passive: +2 Brace while this weapon is usable.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Superhero |
-| Frame | 158 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 USAShield {
@@ -41821,24 +28594,12 @@ USAShield {
 }
 ```
 
-</details>
-
 ---
 
 ### `TeslaCannon`
 **Name:** Tesla Cannon  
 **Description:** Use: Fire a ranged electric shot that passes through units in a straight line with a 50% chance to Stun.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Experimental |
-| Frame | 185 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TeslaCannon { 
@@ -41854,24 +28615,12 @@ TeslaCannon {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeatBomb`
 **Name:** Meat Bomb  
 **Description:** Use: Throw a bomb that explodes.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Meat |
-| Frame | 191 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeatBomb {
@@ -41886,8 +28635,6 @@ MeatBomb {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodyStick`
@@ -41895,16 +28642,6 @@ MeatBomb {
 **Description:** +1 Health Regen.
 Use: A melee attack with +1 reach.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Wood |
-| Frame | 192 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodyStick {
@@ -41923,23 +28660,12 @@ BloodyStick {
 }
 ```
 
-</details>
-
 ---
 
 ### `BucketOfBlood`
 **Name:** Bucket of Blood  
 **Description:** Use: Gain +2 [img:con] and -1 [img:spd], then heal 4 HP.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 196 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BucketOfBlood {
@@ -41953,8 +28679,6 @@ BucketOfBlood {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodyButterflyKnife`
@@ -41962,15 +28686,6 @@ BucketOfBlood {
 **Description:** Use: A multi-hit melee attack with Lifesteal that inflicts Bleed.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 197 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodyButterflyKnife {
@@ -41984,24 +28699,12 @@ BloodyButterflyKnife {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodyBearTraps`
 **Name:** Bloody Bear Traps  
 **Description:** Use: Place a Bear Trap.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | [Hunter, |
-| Frame | 198 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodyBearTraps {
@@ -42016,23 +28719,12 @@ BloodyBearTraps {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodyBagOfGlass`
 **Name:** Bloody Bag of Glass  
 **Description:** Use: Throw a projectile that creates glass.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 194 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodyBagOfGlass {
@@ -42046,23 +28738,12 @@ BloodyBagOfGlass {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeatSlugger`
 **Name:** Meat Slugger  
 **Description:** Use: A melee attack with Knockback 10 that inflicts Bruise.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 186 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeatSlugger {
@@ -42076,24 +28757,12 @@ MeatSlugger {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodyMeatHook`
 **Name:** Bloody Meat Hook  
 **Description:** Use: Pull a unit towards you, Cleaving and inflicting Bleed 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | [Butcher, |
-| Frame | 189 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodyMeatHook {
@@ -42108,8 +28777,6 @@ BloodyMeatHook {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodySoulClaw`
@@ -42117,15 +28784,6 @@ BloodyMeatHook {
 **Description:** Use: A melee attack that deals damage equal to the number of uses this has left.
 When this weapon kills a unit, it gains +2 uses and you heal 5 HP.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 190 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodySoulClaw {
@@ -42140,23 +28798,12 @@ BloodySoulClaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodBucket`
 **Name:** Blood Bucket  
 **Description:** Use: A lobbed attack that creates a creep puddle.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 188 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodBucket {
@@ -42170,8 +28817,6 @@ BloodBucket {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloodySpikes`
@@ -42179,15 +28824,6 @@ BloodBucket {
 **Description:** +1 Thorns.
 Use: A ranged attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 187 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloodySpikes {
@@ -42205,23 +28841,12 @@ BloodySpikes {
 }
 ```
 
-</details>
-
 ---
 
 ### `BottlesOfBlood`
 **Name:** Bottles of Blood  
 **Description:** Use: A lobbed attack that creates glass tiles in an area.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 193 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BottlesOfBlood {
@@ -42235,24 +28860,12 @@ BottlesOfBlood {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlessedAnointingOil`
 **Name:** Blessed Anointing Oil  
 **Description:** Use: Cleanse debuffs and heal an adjacent unit or yourself.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Cleric |
-| Frame | 221 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlessedAnointingOil {
@@ -42267,23 +28880,12 @@ BlessedAnointingOil {
 }
 ```
 
-</details>
-
 ---
 
 ### `HarpysClaw`
 **Name:** Harpy's Claw  
 **Description:** Use: A melee attack that inflicts Poison 1, Bleed 1, Confusion 1, Weakness 1, and Slow 1.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 199 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HarpysClaw {
@@ -42297,24 +28899,12 @@ HarpysClaw {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatBomb`
 **Name:** Rat Bomb  
 **Description:** Use: Toss a Bomb that explodes at the end of the round.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Rat |
-| Frame | 222 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatBomb {
@@ -42330,23 +28920,12 @@ RatBomb {
 }
 ```
 
-</details>
-
 ---
 
 ### `Spinnerets`
 **Name:** Spinnerets  
 **Description:** Use: A ranged attack that inflicts Webbed.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 223 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Spinnerets {
@@ -42361,8 +28940,6 @@ Spinnerets {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZodiacsSixshooter`
@@ -42371,16 +28948,6 @@ Spinnerets {
 Automatically use this whenever an enemy ends movement within your line of sight.
 Reloads at the end of each battle.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Cool |
-| Frame | 224 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZodiacsSixshooter {
@@ -42411,8 +28978,6 @@ ZodiacsSixshooter {
 }
 ```
 
-</details>
-
 ---
 
 ### `GambitsDice`
@@ -42420,15 +28985,6 @@ ZodiacsSixshooter {
 **Description:** Use: Throw a projectile that deals 1-6 damage at random.
 RELOAD: Cast a spell that costs exactly 6 mana.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 225 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GambitsDice {
@@ -42442,8 +28998,6 @@ GambitsDice {
 }
 ```
 
-</details>
-
 ---
 
 ### `JohnnysStool`
@@ -42451,16 +29005,6 @@ GambitsDice {
 **Description:** Use: A melee attack with Knockback 2.
 If you end your turn with a unused movement actions, heal 3 HP and gain 3 Charge.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Wood |
-| Frame | 226 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JohnnysStool {
@@ -42482,8 +29026,6 @@ JohnnysStool {
 }
 ```
 
-</details>
-
 ---
 
 ### `AlienTech`
@@ -42491,16 +29033,6 @@ JohnnysStool {
 **Description:** Use: Target an area. Unleash a hyper beam attack in that area at the start of your next turn.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Space |
-| Frame | 227 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlienTech {
@@ -42515,8 +29047,6 @@ AlienTech {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stacy100`
@@ -42524,15 +29054,6 @@ AlienTech {
 **Description:** Use: Spawn a Stacy.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 228 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stacy100 {
@@ -42546,24 +29067,12 @@ Stacy100 {
 }
 ```
 
-</details>
-
 ---
 
 ### `BungasBone`
 **Name:** Bunga's Bone  
 **Description:** Use: A melee attack with Knockback 5.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Bone |
-| Frame | 229 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BungasBone {
@@ -42578,23 +29087,12 @@ BungasBone {
 }
 ```
 
-</details>
-
 ---
 
 ### `HitlersPistol`
 **Name:** Hitler's Pistol  
 **Description:** Use: Fire a shot in a straight line.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 230 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HitlersPistol {
@@ -42609,8 +29107,6 @@ HitlersPistol {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bug`
@@ -42618,15 +29114,6 @@ HitlersPistol {
 **Description:** Your basic attack is Metronome.
 Use: Cast a random spell.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 231 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bug {
@@ -42646,23 +29133,12 @@ Bug {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fate`
 **Name:** Fate  
 **Description:** Use: Summon meteors that hit random tiles everywhere. These meteors have a chance to stun, spawn fires, or leave rocks behind.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 232 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fate {
@@ -42676,8 +29152,6 @@ Fate {
 }
 ```
 
-</details>
-
 ---
 
 ### `MammothTusk`
@@ -42685,16 +29159,6 @@ Fate {
 **Description:** Use: A melee attack that inflicts Bruise 2 and Confusion. Become Drowsy after use.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Wooly |
-| Frame | 233 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MammothTusk {
@@ -42710,8 +29174,6 @@ MammothTusk {
 }
 ```
 
-</details>
-
 ---
 
 ### `AmericanFlag`
@@ -42719,21 +29181,6 @@ MammothTusk {
 **Description:** Use: Force a unit to attack one of its enemies.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 234 |
-| STR | 1 |
-| DEX | 1 |
-| INT | 1 |
-| LCK | 1 |
-| CON | 1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AmericanFlag {
@@ -42755,8 +29202,6 @@ AmericanFlag {
 }
 ```
 
-</details>
-
 ---
 
 ### `BookOfBelial`
@@ -42764,16 +29209,6 @@ AmericanFlag {
 **Description:** Use: Gain +3 Damage.
 RELOAD: Kill an enemy.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | [Demonic, |
-| Frame | 235 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BookOfBelial {
@@ -42788,8 +29223,6 @@ BookOfBelial {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaAlienBlaster`
@@ -42797,16 +29230,6 @@ BookOfBelial {
 **Description:** Use: A laser attack. Gains +5 damage for the rest of the battle each time it's used.
 Take 5 damage when used.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Space |
-| Frame | 236 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaAlienBlaster {
@@ -42821,24 +29244,12 @@ MegaAlienBlaster {
 }
 ```
 
-</details>
-
 ---
 
 ### `HellHook`
 **Name:** Hell Hook  
 **Description:** Use: Pull a unit toward you.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | [Demonic, |
-| Frame | 237 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HellHook {
@@ -42853,8 +29264,6 @@ HellHook {
 }
 ```
 
-</details>
-
 ---
 
 ### `DemonCore`
@@ -42862,16 +29271,6 @@ HellHook {
 **Description:** Start each battle with Poison 5. Inflict All Stats Down 2 on bosses and minibosses at the start of the battle.
 Use: A melee attack that causes a unit to die at the end of its next turn. Bosses fall asleep at the end of their next turn instead.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Radioactive |
-| Frame | 238 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DemonCore {
@@ -42895,24 +29294,12 @@ DemonCore {
 }
 ```
 
-</details>
-
 ---
 
 ### `BagOfChum`
 **Name:** Bag Of Chum  
 **Description:** Use: Spawn a Charmed Maggot.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Guts |
-| Frame | 240 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BagOfChum {
@@ -42927,8 +29314,6 @@ BagOfChum {
 }
 ```
 
-</details>
-
 ---
 
 ### `GoldenPickaxe`
@@ -42937,16 +29322,6 @@ BagOfChum {
 If used on static or inanimate objects it destroys them and spawns a Coin.
 Spawn a coin on a random tile at the end of each turn.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Miner |
-| Frame | 241 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GoldenPickaxe {
@@ -42967,8 +29342,6 @@ GoldenPickaxe {
 }
 ```
 
-</details>
-
 ---
 
 ### `ManholeCover`
@@ -42976,15 +29349,6 @@ GoldenPickaxe {
 **Description:** Brace 2.
 Use: A ranged attack with Knockback 2 that passes through units and returns to you.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 242 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ManholeCover {
@@ -43002,8 +29366,6 @@ ManholeCover {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinasLarynx`
@@ -43011,16 +29373,6 @@ ManholeCover {
 **Description:** Use: Inflict Fear on all enemies.
 [s:.7](Usable once per battle.)[/s]  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Guts |
-| Frame | 183 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinasLarynx {
@@ -43035,24 +29387,12 @@ TinasLarynx {
 }
 ```
 
-</details>
-
 ---
 
 ### `RoboticArm`
 **Name:** Robotic Arm  
 **Description:** Use: A melee attack with a chance to repeat. Gains 1 damage for the rest of the battle each time it's used. Refreshes when affected by Electric element.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Cyborg |
-| Frame | 184 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RoboticArm {
@@ -43074,23 +29414,12 @@ RoboticArm {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensShotgun`
 **Name:** Steven's Shotgun  
 **Description:** Use: Fires 5 projectiles in a cone. Using this recoils you 10 tiles backwards and Confuses you.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 177 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensShotgun {
@@ -43104,8 +29433,6 @@ StevensShotgun {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensGristle`
@@ -43115,16 +29442,6 @@ Use: A melee attack.
 This weapon gains +1 damage and +1 use when it gets a kill.
 Damage resets at the end of the adventure.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 178 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensGristle {
@@ -43149,24 +29466,12 @@ StevensGristle {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensBagofRocks`
 **Name:** Steven's Bag of Rocks  
 **Description:** Use: A melee attack with a chance to repeat that inflicts Bruise.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 179 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensBagofRocks {
@@ -43181,24 +29486,12 @@ StevensBagofRocks {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevensBottle`
 **Name:** Steven's Bottle  
 **Description:** Use: A ranged attack that creates a Tar tile.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 180 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevensBottle {
@@ -43213,8 +29506,6 @@ StevensBottle {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenWeapon1`
@@ -43222,16 +29513,6 @@ StevensBottle {
 **Description:** Use: A melee attack. If this hits an allied cat, spawn a quarter-sized copy of them with 25% of their stats. The copy is AI controlled.
 RELOAD: An allied cat dies.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 181 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenWeapon1 {
@@ -43246,8 +29527,6 @@ StevenWeapon1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `StevenWeapon2`
@@ -43255,16 +29534,6 @@ StevenWeapon1 {
 **Description:** Use: A lobbed attack that inflicts Petrify.
 RELOAD: Kill a rock.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Steven |
-| Frame | 182 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StevenWeapon2 {
@@ -43279,24 +29548,12 @@ StevenWeapon2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `ToyGun`
 **Name:** Toy Gun  
 **Description:** Use: A melee attack with Knockback 10 and Chain Knockback that inflicts Bruise.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Jester |
-| Frame | 220 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ToyGun {
@@ -43311,23 +29568,12 @@ ToyGun {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pliers`
 **Name:** Pliers  
 **Description:** Use: A melee attack that inflicts Weakness 3.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 133 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pliers {
@@ -43341,8 +29587,6 @@ Pliers {
 }
 ```
 
-</details>
-
 ---
 
 ### `FeatherDarts`
@@ -43350,16 +29594,6 @@ Pliers {
 **Description:** Use: A ranged attack that can hit any unit in your line of sight.
 Can be used 3 times per turn.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Set | Feathered |
-| Frame | 153 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeatherDarts {
@@ -43379,23 +29613,12 @@ FeatherDarts {
 }
 ```
 
-</details>
-
 ---
 
 ### `FeatheredWing`
 **Name:** Feathered Wing  
 **Description:** Use: A wide wind attack with Knockback 3.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Set | Feathered |
-| Frame | 155 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeatheredWing {
@@ -43411,8 +29634,6 @@ FeatheredWing {
 }
 ```
 
-</details>
-
 ---
 
 ### `MoneyBag_Small`
@@ -43420,15 +29641,6 @@ FeatheredWing {
 **Description:** Becomes {aux} coins when you return home.
 Use: A melee attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | common |
-| Frame | 243 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoneyBag_Small {
@@ -43448,8 +29660,6 @@ MoneyBag_Small {
 }
 ```
 
-</details>
-
 ---
 
 ### `MoneyBag_Medium`
@@ -43457,15 +29667,6 @@ MoneyBag_Small {
 **Description:** Becomes {aux} coins when you return home.
 Use: A melee attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | uncommon |
-| Frame | 244 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoneyBag_Medium {
@@ -43488,8 +29689,6 @@ MoneyBag_Medium {
 }
 ```
 
-</details>
-
 ---
 
 ### `MoneyBag_Large`
@@ -43497,15 +29696,6 @@ MoneyBag_Medium {
 **Description:** Becomes {aux} coins when you return home.
 Use: A melee attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | rare |
-| Frame | 245 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoneyBag_Large {
@@ -43529,8 +29719,6 @@ MoneyBag_Large {
 }
 ```
 
-</details>
-
 ---
 
 ### `MoneyBag_Huge`
@@ -43538,15 +29726,6 @@ MoneyBag_Large {
 **Description:** Becomes {aux} coins when you return home.
 Use: A melee attack.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Frame | 246 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoneyBag_Huge {
@@ -43571,24 +29750,12 @@ MoneyBag_Huge {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThePact`
 **Name:** The Pact  
 **Description:** Use: Permanently lose 1 [img:con] to gain +1 [img:str], +2 [img:dex] and +2 [img:spd] for the rest of the battle.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Demonic |
-| Frame | 247 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThePact {
@@ -43603,24 +29770,12 @@ ThePact {
 }
 ```
 
-</details>
-
 ---
 
 ### `Probe`
 **Name:** Probe  
 **Description:** Use: Inflict Charm 3. Can only hit from behind.  
 **Source:** `weapons.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Kind | weapon |
-| Rarity | very_rare |
-| Set | Space |
-| Frame | 248 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Probe {
@@ -43634,8 +29789,6 @@ Probe {
 	ability wp_Probe
 }
 ```
-
-</details>
 
 ---
 

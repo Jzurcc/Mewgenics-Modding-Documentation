@@ -4,15 +4,6 @@
 **Name:** Monk  
 **Source:** `advanced_classes.gon`  
 
-| Field | Value |
-| :--- | :--- |
-| STR | -1 |
-| DEX | -1 |
-| INT | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
-
 ```
 Monk {
     meta {
@@ -225,22 +216,11 @@ Monk {
 }
 ```
 
-</details>
-
 ---
 
 ### `Butcher`
 **Name:** Butcher  
 **Source:** `advanced_classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | 2 |
-| CON | 3 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Butcher {
@@ -448,22 +428,11 @@ Butcher {
 }
 ```
 
-</details>
-
 ---
 
 ### `Druid`
 **Name:** Druid  
 **Source:** `advanced_classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| INT | str] |
-| LCK | 1 |
-| CON | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Druid {
@@ -672,22 +641,11 @@ Druid {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tinkerer`
 **Name:** Tinkerer  
 **Source:** `advanced_classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| DEX | cha |
-| INT | 4 |
-| LCK | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tinkerer {
@@ -899,22 +857,11 @@ Tinkerer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Necromancer`
 **Name:** Necromancer  
 **Source:** `advanced_classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | -2 |
-| DEX | cha |
-| CON | 2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Necromancer {
@@ -1120,22 +1067,11 @@ Necromancer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Psychic`
 **Name:** Psychic  
 **Source:** `advanced_classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| INT | 1 |
-| CON | -1 |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Psychic {
@@ -1344,24 +1280,11 @@ Psychic {
 }
 ```
 
-</details>
-
 ---
 
 ### `Jester`
 **Name:** Jester  
 **Source:** `advanced_classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | dex |
-| DEX | con |
-| INT | spd |
-| CON | int |
-| SPD | cha |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Jester {
@@ -1419,23 +1342,11 @@ Jester {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fighter`
 **Name:** Fighter  
 **Source:** `classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | 2 |
-| INT | -1 |
-| CON | spd] |
-| SPD | 1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fighter {
@@ -1670,23 +1581,11 @@ Fighter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hunter`
 **Name:** Hunter  
 **Source:** `classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| DEX | 3 |
-| LCK | 2 |
-| CON | -1 |
-| SPD | -2 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hunter {
@@ -1916,22 +1815,11 @@ Hunter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mage`
 **Name:** Mage  
 **Source:** `classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | -1 |
-| INT | 2 |
-| CON | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mage {
@@ -2163,23 +2051,11 @@ Mage {
 }
 ```
 
-</details>
-
 ---
 
 ### `Medic`
 **Name:** Cleric  
 **Source:** `classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| DEX | -1 |
-| INT | con] |
-| CON | 2 |
-| SPD | -1 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Medic {
@@ -2403,23 +2279,11 @@ Medic {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tank`
 **Name:** Tank  
 **Source:** `classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | spd] |
-| DEX | -1 |
-| INT | -1 |
-| CON | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tank {
@@ -2645,24 +2509,11 @@ Tank {
 }
 ```
 
-</details>
-
 ---
 
 ### `Thief`
 **Name:** Thief  
 **Source:** `classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | -1 |
-| DEX | lck] |
-| LCK | 1 |
-| CON | -1 |
-| SPD | 4 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Thief {
@@ -2887,24 +2738,11 @@ Thief {
 }
 ```
 
-</details>
-
 ---
 
 ### `Colorless`
 **Name:** Collarless  
 **Source:** `classes.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| STR | dex |
-| DEX | con |
-| INT | spd |
-| CON | int |
-| SPD | cha |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Colorless {
@@ -3163,8 +3001,6 @@ Colorless {
     levelup_stats [str dex con int spd cha lck]
 }
 ```
-
-</details>
 
 ---
 

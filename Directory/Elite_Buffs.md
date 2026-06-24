@@ -3,14 +3,6 @@
 ### `Spiky`
 **Source:** `elite_buffs.gon`  
 
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 500 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
-
 ```
 Spiky {
 	value 1
@@ -23,20 +15,10 @@ Spiky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Reactive`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 501 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Reactive {
@@ -50,20 +32,10 @@ Reactive {
 }
 ```
 
-</details>
-
 ---
 
 ### `Damaging`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 502 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Damaging {
@@ -76,20 +48,10 @@ Damaging {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tough`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 503 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tough {
@@ -102,21 +64,10 @@ Tough {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded1`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 504 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded1 {
@@ -136,21 +87,10 @@ Shielded1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded2`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 504 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded2 {
@@ -170,21 +110,10 @@ Shielded2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded3`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 504 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded3 {
@@ -204,21 +133,10 @@ Shielded3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded4`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 504 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded4 {
@@ -238,21 +156,10 @@ Shielded4 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Protected`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 505 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Protected {
@@ -271,20 +178,10 @@ Protected {
 }
 ```
 
-</details>
-
 ---
 
 ### `Speedy`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 506 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Speedy {
@@ -297,21 +194,10 @@ Speedy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Flaming`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 507 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Flaming {
@@ -329,21 +215,10 @@ Flaming {
 }
 ```
 
-</details>
-
 ---
 
 ### `Creepy`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 508 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Creepy { 
@@ -363,21 +238,10 @@ Creepy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Static`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 509 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Static { 
@@ -403,20 +267,10 @@ Static {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lucky`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 510 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lucky { 
@@ -432,21 +286,10 @@ Lucky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bouncy`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 511 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bouncy {
@@ -462,21 +305,10 @@ Bouncy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mirror`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 512 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mirror { 
@@ -493,20 +325,10 @@ Mirror {
 }
 ```
 
-</details>
-
 ---
 
 ### `Resonant`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 513 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Resonant { 
@@ -522,21 +344,10 @@ Resonant {
 }
 ```
 
-</details>
-
 ---
 
 ### `Undying`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 514 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Undying { 
@@ -561,21 +372,10 @@ Undying {
 }
 ```
 
-</details>
-
 ---
 
 ### `SubUndying`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 514 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SubUndying { 
@@ -597,20 +397,10 @@ SubUndying {
 }
 ```
 
-</details>
-
 ---
 
 ### `Healthy`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 515 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Healthy {
@@ -624,21 +414,10 @@ Healthy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Sandy`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 516 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Sandy {
@@ -656,20 +435,10 @@ Sandy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Infested`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 517 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Infested {
@@ -683,21 +452,10 @@ Infested {
 }
 ```
 
-</details>
-
 ---
 
 ### `Absorbant`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 518 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Absorbant {
@@ -713,21 +471,10 @@ Absorbant {
 }
 ```
 
-</details>
-
 ---
 
 ### `Depressing`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 519 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Depressing { 
@@ -748,21 +495,10 @@ Depressing {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlightlyDepressing`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 528 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlightlyDepressing {
@@ -781,20 +517,10 @@ SlightlyDepressing {
 }
 ```
 
-</details>
-
 ---
 
 ### `Evolving`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 520 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Evolving {
@@ -810,21 +536,10 @@ Evolving {
 }
 ```
 
-</details>
-
 ---
 
 ### `Plow`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 521 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Plow { 
@@ -840,21 +555,10 @@ Plow {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mega`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 522 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mega {
@@ -872,21 +576,10 @@ Mega {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mad`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 523 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mad {
@@ -907,21 +600,10 @@ Mad {
 }
 ```
 
-</details>
-
 ---
 
 ### `Twin`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 524 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Twin {
@@ -942,21 +624,10 @@ Twin {
 }
 ```
 
-</details>
-
 ---
 
 ### `SubTwin`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 524 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SubTwin {
@@ -976,21 +647,10 @@ SubTwin {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hardy`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 525 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hardy {
@@ -1006,20 +666,10 @@ Hardy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Sticky`
 **Source:** `elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 526 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Sticky {
@@ -1037,20 +687,10 @@ Sticky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Spiky`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 600 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Spiky {
@@ -1064,20 +704,10 @@ Spiky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Reactive`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 601 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Reactive {
@@ -1091,20 +721,10 @@ Reactive {
 }
 ```
 
-</details>
-
 ---
 
 ### `Damaging`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 602 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Damaging {
@@ -1117,20 +737,10 @@ Damaging {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tough`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 603 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tough {
@@ -1143,21 +753,10 @@ Tough {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded1`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 604 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded1 {
@@ -1177,21 +776,10 @@ Shielded1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded2`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 604 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded2 {
@@ -1211,21 +799,10 @@ Shielded2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded3`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 604 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded3 {
@@ -1245,21 +822,10 @@ Shielded3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shielded4`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 604 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shielded4 {
@@ -1279,21 +845,10 @@ Shielded4 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Protected`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 605 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Protected {
@@ -1312,20 +867,10 @@ Protected {
 }
 ```
 
-</details>
-
 ---
 
 ### `Speedy`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 606 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Speedy {
@@ -1338,21 +883,10 @@ Speedy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Flaming`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 607 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Flaming {
@@ -1379,21 +913,10 @@ Flaming {
 }
 ```
 
-</details>
-
 ---
 
 ### `Static`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 609 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Static {
@@ -1419,20 +942,10 @@ Static {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lucky`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 610 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lucky {
@@ -1447,21 +960,10 @@ Lucky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bouncy`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 611 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bouncy {
@@ -1478,21 +980,10 @@ Bouncy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Absorbant`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 618 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Absorbant {
@@ -1508,21 +999,10 @@ Absorbant {
 }
 ```
 
-</details>
-
 ---
 
 ### `Depressing`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 619 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Depressing {
@@ -1543,21 +1023,10 @@ Depressing {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlightlyDepressing`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 628 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlightlyDepressing {
@@ -1576,21 +1045,10 @@ SlightlyDepressing {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mad`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 623 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mad {
@@ -1608,21 +1066,10 @@ Mad {
 }
 ```
 
-</details>
-
 ---
 
 ### `Twin`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 624 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Twin {
@@ -1643,21 +1090,10 @@ Twin {
 }
 ```
 
-</details>
-
 ---
 
 ### `SubTwin`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 624 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SubTwin {
@@ -1677,21 +1113,10 @@ SubTwin {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hardy`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Unique | true |
-| Icon Frame | 625 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hardy {
@@ -1707,20 +1132,10 @@ Hardy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Sticky`
 **Source:** `boss_elite_buffs.gon`  
-
-| Field | Value |
-| :--- | :--- |
-| Value | 1 |
-| Icon Frame | 626 |
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Sticky {
@@ -1738,8 +1153,6 @@ Sticky {
 	}
 }
 ```
-
-</details>
 
 ---
 

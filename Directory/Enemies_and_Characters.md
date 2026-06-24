@@ -4,9 +4,6 @@
 **Name:** Bird  
 **Source:** `bonus_birds.gon`  
 
-<details>
-<summary><b>Raw .gon</b></summary>
-
 ```
 BirdBase {
     graphics {
@@ -53,16 +50,11 @@ BirdBase {
 }
 ```
 
-</details>
-
 ---
 
 ### `BirdSmall`
 **Name:** Little Bird  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BirdSmall {
@@ -94,16 +86,11 @@ BirdSmall {
 }
 ```
 
-</details>
-
 ---
 
 ### `BirdMed`
 **Name:** Medium Bird  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BirdMed {
@@ -134,16 +121,11 @@ BirdMed {
 }
 ```
 
-</details>
-
 ---
 
 ### `BirdLarge`
 **Name:** Big Bird  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BirdLarge {
@@ -174,16 +156,11 @@ BirdLarge {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlackBird`
 **Name:** Black Bird  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlackBird {
@@ -208,16 +185,11 @@ BlackBird {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dove`
 **Name:** Dove  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dove {
@@ -243,16 +215,11 @@ Dove {
 }
 ```
 
-</details>
-
 ---
 
 ### `HummingBird`
 **Name:** Hummingbird  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HummingBird {
@@ -278,16 +245,11 @@ HummingBird {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cherub`
 **Name:** Cherub  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cherub {
@@ -310,15 +272,10 @@ Cherub {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cherub_FinalBoss`
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cherub_FinalBoss {
@@ -340,16 +297,11 @@ Cherub_FinalBoss {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pigeon`
 **Name:** Pigeon  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pigeon {
@@ -375,16 +327,11 @@ Pigeon {
 }
 ```
 
-</details>
-
 ---
 
 ### `Seagull`
 **Name:** Seagull  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Seagull {
@@ -410,16 +357,11 @@ Seagull {
 }
 ```
 
-</details>
-
 ---
 
 ### `Raven`
 **Name:** Raven  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Raven {
@@ -448,16 +390,11 @@ Raven {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mutant`
 **Name:** Mutant  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mutant {
@@ -494,16 +431,11 @@ Mutant {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chicken`
 **Name:** Chicken  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chicken {
@@ -528,16 +460,11 @@ Chicken {
 }
 ```
 
-</details>
-
 ---
 
 ### `Turkey`
 **Name:** Turkey  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Turkey {
@@ -562,16 +489,11 @@ Turkey {
 }
 ```
 
-</details>
-
 ---
 
 ### `Eagle`
 **Name:** Eagle  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Eagle {
@@ -604,16 +526,11 @@ Eagle {
 }
 ```
 
-</details>
-
 ---
 
 ### `Harpy`
 **Name:** Harpy  
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Harpy {
@@ -638,15 +555,10 @@ Harpy {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallBirdPool`
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallBirdPool {
@@ -663,15 +575,10 @@ SmallBirdPool {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedBirdPool`
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedBirdPool {
@@ -688,15 +595,10 @@ MedBirdPool {
 }
 ```
 
-</details>
-
 ---
 
 ### `LargeBirdPool`
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LargeBirdPool {
@@ -713,15 +615,10 @@ LargeBirdPool {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bird`
 **Source:** `bonus_birds.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bird {
@@ -737,16 +634,11 @@ Bird {
 }
 ```
 
-</details>
-
 ---
 
 ### `BomberRat`
 **Name:** Radical Rat  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BomberRat {
@@ -844,16 +736,11 @@ BomberRat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fatso`
 **Name:** Boris  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fatso {
@@ -928,16 +815,11 @@ Fatso {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatPile`
 **Name:** Rat Pile  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatPile {
@@ -1007,16 +889,11 @@ RatPile {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatKing_Old`
 **Name:** Rat King  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatKing_Old {
@@ -1066,16 +943,11 @@ RatKing_Old {
 }
 ```
 
-</details>
-
 ---
 
 ### `DustDevil`
 **Name:** Dust Devil  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DustDevil {
@@ -1148,16 +1020,11 @@ DustDevil {
 }
 ```
 
-</details>
-
 ---
 
 ### `Wizard`
 **Name:** Wizard  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Wizard {
@@ -1226,16 +1093,11 @@ Wizard {
 }
 ```
 
-</details>
-
 ---
 
 ### `GeminiCats`
 **Name:** Gemini Cats  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GeminiCats {
@@ -1289,16 +1151,11 @@ GeminiCats {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ornstein`
 **Name:** Ornstein  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ornstein {
@@ -1364,16 +1221,11 @@ Ornstein {
 }
 ```
 
-</details>
-
 ---
 
 ### `Smough`
 **Name:** Smough  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Smough {
@@ -1432,16 +1284,11 @@ Smough {
 }
 ```
 
-</details>
-
 ---
 
 ### `UltraSmough`
 **Name:** Ultra Smough  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UltraSmough {
@@ -1511,16 +1358,11 @@ UltraSmough {
 }
 ```
 
-</details>
-
 ---
 
 ### `UltraOrnstein`
 **Name:** Ultra Ornstein  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 UltraOrnstein {
@@ -1586,16 +1428,11 @@ UltraOrnstein {
 }
 ```
 
-</details>
-
 ---
 
 ### `WallOfCats_Wall`
 **Name:** Wall of Cats  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WallOfCats_Wall {
@@ -1646,16 +1483,11 @@ WallOfCats_Wall {
 }
 ```
 
-</details>
-
 ---
 
 ### `WallOfCats_Eye`
 **Name:** Wall of Cats  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WallOfCats_Eye {
@@ -1712,16 +1544,11 @@ WallOfCats_Eye {
 }
 ```
 
-</details>
-
 ---
 
 ### `WallOfCats_Mouth`
 **Name:** Wall of Cats  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WallOfCats_Mouth {
@@ -1775,16 +1602,11 @@ WallOfCats_Mouth {
 }
 ```
 
-</details>
-
 ---
 
 ### `Simon`
 **Name:** Throbbing King  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Simon {
@@ -1875,16 +1697,11 @@ Simon {
 }
 ```
 
-</details>
-
 ---
 
 ### `SimonFlopper`
 **Name:** Throbbing King  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SimonFlopper {
@@ -2017,16 +1834,11 @@ SimonFlopper {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bumblefoot`
 **Name:** Bumblefoot  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bumblefoot {
@@ -2139,16 +1951,11 @@ Bumblefoot {
 }
 ```
 
-</details>
-
 ---
 
 ### `RockyBobo`
 **Name:** Rocky Bobo  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockyBobo {
@@ -2228,16 +2035,11 @@ RockyBobo {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chubs`
 **Name:** Chubs  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chubs {
@@ -2339,16 +2141,11 @@ Chubs {
 }
 ```
 
-</details>
-
 ---
 
 ### `Nubs`
 **Name:** Nubs  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Nubs {
@@ -2463,16 +2260,11 @@ Nubs {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpiderQueen`
 **Name:** Spinnerette  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderQueen {
@@ -2717,16 +2509,11 @@ SpiderQueen {
 }
 ```
 
-</details>
-
 ---
 
 ### `Johnny`
 **Name:** Johnny  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Johnny {
@@ -2853,16 +2640,11 @@ Johnny {
 }
 ```
 
-</details>
-
 ---
 
 ### `AlienBeast`
 **Name:** Crater Maker  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlienBeast {
@@ -2958,16 +2740,11 @@ AlienBeast {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheCoven`
 **Name:** The Coven  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheCoven {
@@ -3127,16 +2904,11 @@ TheCoven {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tormentor`
 **Name:** Tormentor  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tormentor {
@@ -3307,16 +3079,11 @@ Tormentor {
 }
 ```
 
-</details>
-
 ---
 
 ### `MoonHead`
 **Name:** Man In The Moon  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoonHead {
@@ -3507,16 +3274,11 @@ MoonHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `MoonHand`
 **Name:** Moon Hand  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoonHand {
@@ -3658,16 +3420,11 @@ MoonHand {
 }
 ```
 
-</details>
-
 ---
 
 ### `BungaThrone`
 **Name:** Throne  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BungaThrone {
@@ -3721,16 +3478,11 @@ BungaThrone {
 }
 ```
 
-</details>
-
 ---
 
 ### `LordBunga`
 **Name:** Lord Bunga  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LordBunga {
@@ -3884,16 +3636,11 @@ LordBunga {
 }
 ```
 
-</details>
-
 ---
 
 ### `QueenHippo`
 **Name:** Queen Hippo  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 QueenHippo {
@@ -3966,16 +3713,11 @@ QueenHippo {
 }
 ```
 
-</details>
-
 ---
 
 ### `Trampy`
 **Name:** Trampy  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Trampy {
@@ -4071,16 +3813,11 @@ Trampy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dybbuk`
 **Name:** Dybbuk  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dybbuk {
@@ -4233,16 +3970,11 @@ Dybbuk {
 }
 ```
 
-</details>
-
 ---
 
 ### `HitlerHead`
 **Name:** Hitler  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HitlerHead {
@@ -4310,16 +4042,11 @@ HitlerHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hitler`
 **Name:** Hitler  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hitler {
@@ -4436,16 +4163,11 @@ Hitler {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaDinoLeg`
 **Name:** Dreadnoughtus  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaDinoLeg {
@@ -4561,16 +4283,11 @@ MegaDinoLeg {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaDinoHead`
 **Name:** Dreadnoughtus  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaDinoHead {
@@ -4687,16 +4404,11 @@ MegaDinoHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `MotherTumor`
 **Name:** The Mother  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MotherTumor {
@@ -4875,15 +4587,10 @@ MotherTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `MotherTumorBig`
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MotherTumorBig {
@@ -4909,16 +4616,11 @@ MotherTumorBig {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheMother`
 **Name:** The Mother  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheMother {
@@ -5010,16 +4712,11 @@ TheMother {
 }
 ```
 
-</details>
-
 ---
 
 ### `MotherSpike`
 **Name:** The Mother  
 **Source:** `bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MotherSpike {
@@ -5077,16 +4774,11 @@ MotherSpike {
 }
 ```
 
-</details>
-
 ---
 
 ### `TomTom`
 **Name:** Tom Tom  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TomTom {
@@ -5140,16 +4832,11 @@ TomTom {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mangy`
 **Name:** Mangy  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mangy {
@@ -5206,16 +4893,11 @@ Mangy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Kitten`
 **Name:** Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Kitten {
@@ -5270,16 +4952,11 @@ Kitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatCaller`
 **Name:** Cat Caller  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatCaller {
@@ -5336,16 +5013,11 @@ CatCaller {
 }
 ```
 
-</details>
-
 ---
 
 ### `Multicat`
 **Name:** Multicat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Multicat {
@@ -5392,16 +5064,11 @@ Multicat {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlassSpitter`
 **Name:** Glass Spitter  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlassSpitter {
@@ -5453,16 +5120,11 @@ GlassSpitter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Siren`
 **Name:** Siren  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Siren {
@@ -5522,16 +5184,11 @@ Siren {
 }
 ```
 
-</details>
-
 ---
 
 ### `Jekyll`
 **Name:** Jekyll  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Jekyll {
@@ -5590,16 +5247,11 @@ Jekyll {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hyde`
 **Name:** Hyde  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hyde {
@@ -5653,16 +5305,11 @@ Hyde {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpikedCat`
 **Name:** Spiked Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpikedCat {
@@ -5715,16 +5362,11 @@ SpikedCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `PopeyeCat`
 **Name:** Popeye  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PopeyeCat {
@@ -5776,16 +5418,11 @@ PopeyeCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `GassyCat`
 **Name:** Gassy  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GassyCat {
@@ -5841,16 +5478,11 @@ GassyCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `SharkyCat`
 **Name:** Sharky  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SharkyCat {
@@ -5907,16 +5539,11 @@ SharkyCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `BoomerCat`
 **Name:** Boomer  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BoomerCat {
@@ -5973,16 +5600,11 @@ BoomerCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `WaterKitten`
 **Name:** Water Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WaterKitten {
@@ -6047,16 +5669,11 @@ WaterKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `AlbinoTomTom`
 **Name:** Albino Tom Tom  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlbinoTomTom {
@@ -6114,16 +5731,11 @@ AlbinoTomTom {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpiderCat`
 **Name:** Spider Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpiderCat {
@@ -6189,16 +5801,11 @@ SpiderCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `TallSpiderCat`
 **Name:** Spider Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TallSpiderCat {
@@ -6256,16 +5863,11 @@ TallSpiderCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Toadie`
 **Name:** Toadie  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Toadie {
@@ -6332,15 +5934,10 @@ Toadie {
 }
 ```
 
-</details>
-
 ---
 
 ### `Toadie_Hidden`
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Toadie_Hidden {
@@ -6357,16 +5954,11 @@ Toadie_Hidden {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZombieCat`
 **Name:** Zombie Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZombieCat {
@@ -6436,16 +6028,11 @@ ZombieCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonCat`
 **Name:** Skeleton Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonCat {
@@ -6515,16 +6102,11 @@ SkeletonCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonCatCorpse`
 **Name:** Skeleton Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonCatCorpse {
@@ -6573,15 +6155,10 @@ SkeletonCatCorpse {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonCatRevived`
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonCatRevived {
@@ -6595,16 +6172,11 @@ SkeletonCatRevived {
 }
 ```
 
-</details>
-
 ---
 
 ### `TallSkeletonCat`
 **Name:** Tall Skeleton Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TallSkeletonCat {
@@ -6677,16 +6249,11 @@ TallSkeletonCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `TallSkeletonCatCorpse`
 **Name:** Tall Skeleton Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TallSkeletonCatCorpse {
@@ -6735,15 +6302,10 @@ TallSkeletonCatCorpse {
 }
 ```
 
-</details>
-
 ---
 
 ### `TallSkeletonCatRevived`
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TallSkeletonCatRevived {
@@ -6757,16 +6319,11 @@ TallSkeletonCatRevived {
 }
 ```
 
-</details>
-
 ---
 
 ### `WolfCat`
 **Name:** Werecat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WolfCat {
@@ -6829,16 +6386,11 @@ WolfCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `GolemCat`
 **Name:** Golem  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GolemCat {
@@ -6896,16 +6448,11 @@ GolemCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `ScorpionCat`
 **Name:** Scorpion Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ScorpionCat {
@@ -6973,16 +6520,11 @@ ScorpionCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mangy2`
 **Name:** Mummified Mangy  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mangy2 {
@@ -7040,16 +6582,11 @@ Mangy2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `GunCat`
 **Name:** Bounty Hunter  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GunCat {
@@ -7109,16 +6646,11 @@ GunCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `HornyCat`
 **Name:** Horny Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HornyCat {
@@ -7170,16 +6702,11 @@ HornyCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Infested`
 **Name:** Infested Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Infested {
@@ -7237,16 +6764,11 @@ Infested {
 }
 ```
 
-</details>
-
 ---
 
 ### `RockHead`
 **Name:** Rock Head  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RockHead {
@@ -7322,16 +6844,11 @@ RockHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `NoHead`
 **Name:** Headless  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NoHead {
@@ -7401,16 +6918,11 @@ NoHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `AtomicKitten`
 **Name:** Atomic Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AtomicKitten {
@@ -7480,16 +6992,11 @@ AtomicKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `RoboTom`
 **Name:** Robo-Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RoboTom {
@@ -7548,16 +7055,11 @@ RoboTom {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatCultist`
 **Name:** Cat Cultist  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatCultist {
@@ -7620,16 +7122,11 @@ CatCultist {
 }
 ```
 
-</details>
-
 ---
 
 ### `DemonHooker`
 **Name:** Chain Demon  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DemonHooker {
@@ -7691,16 +7188,11 @@ DemonHooker {
 }
 ```
 
-</details>
-
 ---
 
 ### `Belcher`
 **Name:** Belcher  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Belcher {
@@ -7754,16 +7246,11 @@ Belcher {
 }
 ```
 
-</details>
-
 ---
 
 ### `TumorCat`
 **Name:** Tumor Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TumorCat {
@@ -7822,16 +7309,11 @@ TumorCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rover`
 **Name:** Rover  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rover {
@@ -7887,16 +7369,11 @@ Rover {
 }
 ```
 
-</details>
-
 ---
 
 ### `Astro`
 **Name:** Astronaut  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Astro {
@@ -7968,16 +7445,11 @@ Astro {
 }
 ```
 
-</details>
-
 ---
 
 ### `Drcat`
 **Name:** Dr. Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Drcat {
@@ -8041,16 +7513,11 @@ Drcat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mangy3`
 **Name:** Infested  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mangy3 {
@@ -8103,16 +7570,11 @@ Mangy3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Needlecat`
 **Name:** Spun Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Needlecat {
@@ -8308,16 +7770,11 @@ Needlecat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stacy2p0`
 **Name:** Stacy #{stacy_number}  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stacy2p0 {
@@ -8375,16 +7832,11 @@ Stacy2p0 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Raptor`
 **Name:** Raptor  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Raptor {
@@ -8446,16 +7898,11 @@ Raptor {
 }
 ```
 
-</details>
-
 ---
 
 ### `RaptorBaby`
 **Name:** Raptor Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RaptorBaby {
@@ -8525,16 +7972,11 @@ RaptorBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `Ankylosaurus`
 **Name:** Ankylosaurus  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Ankylosaurus {
@@ -8593,16 +8035,11 @@ Ankylosaurus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Maelestes`
 **Name:** Maelestes  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Maelestes {
@@ -8663,16 +8100,11 @@ Maelestes {
 }
 ```
 
-</details>
-
 ---
 
 ### `Parasaurolophus`
 **Name:** Parasaurolophus  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Parasaurolophus {
@@ -8735,16 +8167,11 @@ Parasaurolophus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Yeticat`
 **Name:** Yeti Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Yeticat {
@@ -8798,16 +8225,11 @@ Yeticat {
 }
 ```
 
-</details>
-
 ---
 
 ### `SabertoothCat`
 **Name:** Sabertooth Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SabertoothCat {
@@ -8866,16 +8288,11 @@ SabertoothCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `SabertoothCub`
 **Name:** Sabertooth Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SabertoothCub {
@@ -8936,16 +8353,11 @@ SabertoothCub {
 }
 ```
 
-</details>
-
 ---
 
 ### `MammothBaby`
 **Name:** Mammoth Kitten  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MammothBaby {
@@ -9004,16 +8416,11 @@ MammothBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `Skinned`
 **Name:** Skinned  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Skinned {
@@ -9074,16 +8481,11 @@ Skinned {
 }
 ```
 
-</details>
-
 ---
 
 ### `StemCat`
 **Name:** Stem Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StemCat {
@@ -9147,15 +8549,10 @@ StemCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `StemCat_HalfHealth`
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StemCat_HalfHealth {
@@ -9167,16 +8564,11 @@ StemCat_HalfHealth {
 }
 ```
 
-</details>
-
 ---
 
 ### `FutureBot`
 **Name:** Katzebot  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FutureBot {
@@ -9240,16 +8632,11 @@ FutureBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `FatCat`
 **Name:** Übercat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FatCat {
@@ -9322,16 +8709,11 @@ FatCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CancerCat`
 **Name:** Cancer Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CancerCat {
@@ -9395,16 +8777,11 @@ CancerCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CollectiveCat`
 **Name:** The Collective  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CollectiveCat {
@@ -9462,16 +8839,11 @@ CollectiveCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `ShadeCat`
 **Name:** Shade Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ShadeCat {
@@ -9529,16 +8901,11 @@ ShadeCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `PoopCat`
 **Name:** Poop Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoopCat {
@@ -9597,16 +8964,11 @@ PoopCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `JackCat`
 **Name:** Jack  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JackCat {
@@ -9664,16 +9026,11 @@ JackCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChaosStacy`
 **Name:** Chaos Stacy  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChaosStacy {
@@ -9737,16 +9094,11 @@ ChaosStacy {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngelicCat`
 **Name:** Angelic Cat  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngelicCat {
@@ -9803,16 +9155,11 @@ AngelicCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrailerCat`
 **Name:** ENEMY_TRAILERCAT1_NAME  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrailerCat {
@@ -9869,16 +9216,11 @@ TrailerCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrailerCat2`
 **Name:** ENEMY_TRAILERCAT2_NAME  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrailerCat2 {
@@ -9935,16 +9277,11 @@ TrailerCat2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrailerCat3`
 **Name:** ENEMY_TRAILERCAT3_NAME  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrailerCat3 {
@@ -10001,16 +9338,11 @@ TrailerCat3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrailerCat4`
 **Name:** ENEMY_TRAILERCAT4_NAME  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrailerCat4 {
@@ -10067,16 +9399,11 @@ TrailerCat4 {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrailerCat5`
 **Name:** ENEMY_TRAILERCAT5_NAME  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrailerCat5 {
@@ -10133,16 +9460,11 @@ TrailerCat5 {
 }
 ```
 
-</details>
-
 ---
 
 ### `LoanShark`
 **Name:** Loan Shark  
 **Source:** `cat_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LoanShark {
@@ -10203,16 +9525,11 @@ LoanShark {
 }
 ```
 
-</details>
-
 ---
 
 ### `TankCat`
 **Name:** Maisie  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankCat {
@@ -10283,16 +9600,11 @@ TankCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `MageCat`
 **Name:** Lucy  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageCat {
@@ -10364,16 +9676,11 @@ MageCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `HunterCat`
 **Name:** Fenrir  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HunterCat {
@@ -10442,16 +9749,11 @@ HunterCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThiefCat`
 **Name:** Dack  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThiefCat {
@@ -10532,16 +9834,11 @@ ThiefCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedicCat`
 **Name:** Marshmallow  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedicCat { 
@@ -10625,16 +9922,11 @@ MedicCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedicCat`
 **Name:** Marshmallow  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedicCat {
@@ -10716,16 +10008,11 @@ MedicCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `FighterCat`
 **Name:** Magnus  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FighterCat {
@@ -10800,16 +10087,11 @@ FighterCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `StacyMutant`
 **Name:** Stacy Mutant  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StacyMutant {
@@ -11038,16 +10320,11 @@ StacyMutant {
 }
 ```
 
-</details>
-
 ---
 
 ### `ColorlessCat_Tutorial`
 **Name:** Pebbles  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ColorlessCat_Tutorial {
@@ -11117,16 +10394,11 @@ ColorlessCat_Tutorial {
 }
 ```
 
-</details>
-
 ---
 
 ### `NecroCat`
 **Name:** Morana  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NecroCat {
@@ -11201,16 +10473,11 @@ NecroCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererCat`
 **Name:** Franklin  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererCat {
@@ -11298,15 +10565,10 @@ TinkererCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `TCMechSuit`
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TCMechSuit {
@@ -11328,16 +10590,11 @@ TCMechSuit {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButcherCat`
 **Name:** Gein  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButcherCat {
@@ -11410,16 +10667,11 @@ ButcherCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `PsychicCat`
 **Name:** Alice  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PsychicCat {
@@ -11479,16 +10731,11 @@ PsychicCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidCat`
 **Name:** Draven  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidCat {
@@ -11573,16 +10820,11 @@ DruidCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidCrow`
 **Name:** Draven's Crow  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidCrow {
@@ -11613,16 +10855,11 @@ DruidCrow {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidCrow`
 **Name:** Draven's Crow  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidCrow {
@@ -11689,16 +10926,11 @@ DruidCrow {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkCat`
 **Name:** Chan Hung  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkCat {
@@ -11782,16 +11014,11 @@ MonkCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkCat`
 **Name:** Chan Hung  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkCat {
@@ -11860,16 +11087,11 @@ MonkCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `JesterCat`
 **Name:** Arthur  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JesterCat {
@@ -11939,16 +11161,11 @@ JesterCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chupacabra`
 **Name:** Chupacabra  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chupacabra {
@@ -12025,16 +11242,11 @@ Chupacabra {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hellspawn`
 **Name:** Hellspawn  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hellspawn {
@@ -12097,16 +11309,11 @@ Hellspawn {
 }
 ```
 
-</details>
-
 ---
 
 ### `InfestedDuo`
 **Name:** Paraisaria  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 InfestedDuo {
@@ -12180,16 +11387,11 @@ InfestedDuo {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveCatDad`
 **Name:** Frod Rocksnow  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveCatDad {
@@ -12289,16 +11491,11 @@ CaveCatDad {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveCatMom`
 **Name:** Wolma Rocksnow  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveCatMom {
@@ -12401,16 +11598,11 @@ CaveCatMom {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveCatBaby`
 **Name:** Poobles Rocksnow  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveCatBaby {
@@ -12522,16 +11714,11 @@ CaveCatBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dclaude`
 **Name:** D'Claude  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dclaude {
@@ -12624,16 +11811,11 @@ Dclaude {
 }
 ```
 
-</details>
-
 ---
 
 ### `WhiteRabbit`
 **Name:** White Rabbit  
 **Source:** `cat_minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WhiteRabbit {
@@ -12701,16 +11883,11 @@ WhiteRabbit {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crow`
 **Name:** {SpawnedBy}'s Crow  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crow {
@@ -12784,15 +11961,10 @@ Crow {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crow2`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crow2 {
@@ -12807,15 +11979,10 @@ Crow2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crow3`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crow3 {
@@ -12830,16 +11997,11 @@ Crow3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `BabySquirrel`
 **Name:** Baby Squirrel  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BabySquirrel {
@@ -12889,16 +12051,11 @@ BabySquirrel {
 }
 ```
 
-</details>
-
 ---
 
 ### `Squirrel`
 **Name:** Squirrel  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Squirrel {
@@ -12947,16 +12104,11 @@ Squirrel {
 }
 ```
 
-</details>
-
 ---
 
 ### `Snake`
 **Name:** Snake  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Snake {
@@ -13007,15 +12159,10 @@ Snake {
 }
 ```
 
-</details>
-
 ---
 
 ### `Snake2`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Snake2 {
@@ -13026,16 +12173,11 @@ Snake2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Turtle`
 **Name:** Turtle  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Turtle {
@@ -13084,16 +12226,11 @@ Turtle {
 }
 ```
 
-</details>
-
 ---
 
 ### `Toad`
 **Name:** Toad  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Toad {
@@ -13140,15 +12277,10 @@ Toad {
 }
 ```
 
-</details>
-
 ---
 
 ### `Toad2`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Toad2 {
@@ -13172,16 +12304,11 @@ Toad2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `NeutralToad`
 **Name:** Frog  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NeutralToad {
@@ -13202,16 +12329,11 @@ NeutralToad {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bear`
 **Name:** Bear  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bear {
@@ -13263,15 +12385,10 @@ Bear {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bear2`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bear2 {
@@ -13283,15 +12400,10 @@ Bear2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `MaddenedBear`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MaddenedBear { 
@@ -13308,16 +12420,11 @@ MaddenedBear {
 }
 ```
 
-</details>
-
 ---
 
 ### `Catepillar`
 **Name:** Caterpillar  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Catepillar {
@@ -13377,16 +12484,11 @@ Catepillar {
 }
 ```
 
-</details>
-
 ---
 
 ### `Moth`
 **Name:** Moth  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Moth {
@@ -13439,16 +12541,11 @@ Moth {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnimalEgg`
 **Name:** Egg  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnimalEgg {
@@ -13504,15 +12601,10 @@ AnimalEgg {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnimalEgg2`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnimalEgg2 {
@@ -13526,16 +12618,11 @@ AnimalEgg2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlowingMushroom`
 **Name:** Glowing Mushroom  
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlowingMushroom {
@@ -13593,15 +12680,10 @@ GlowingMushroom {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlowingMushroom2`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlowingMushroom2 {
@@ -13624,15 +12706,10 @@ GlowingMushroom2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomDruidFamiliar`
 **Source:** `druid_friends.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomDruidFamiliar {
@@ -13647,16 +12724,11 @@ RandomDruidFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rat`
 **Name:** Lil' Rat  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rat {
@@ -13707,16 +12779,11 @@ Rat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pooter`
 **Name:** Pooter  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pooter {
@@ -13763,16 +12830,11 @@ Pooter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Worm`
 **Name:** Worm  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Worm {
@@ -13822,16 +12884,11 @@ Worm {
 }
 ```
 
-</details>
-
 ---
 
 ### `MadLad`
 **Name:** Mad Lad  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MadLad {
@@ -13877,16 +12934,11 @@ MadLad {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gasser`
 **Name:** Gasser  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gasser {
@@ -13937,16 +12989,11 @@ Gasser {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rager`
 **Name:** Rager  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rager {
@@ -14004,16 +13051,11 @@ Rager {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cutter`
 **Name:** Cutter  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cutter {
@@ -14069,16 +13111,11 @@ Cutter {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hive`
 **Name:** Blorb  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hive {
@@ -14124,16 +13161,11 @@ Hive {
 }
 ```
 
-</details>
-
 ---
 
 ### `FloatingHive`
 **Name:** Florb  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FloatingHive {
@@ -14182,16 +13214,11 @@ FloatingHive {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lumpy`
 **Name:** Lumpy  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lumpy {
@@ -14243,16 +13270,11 @@ Lumpy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Leaper`
 **Name:** Leaper  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Leaper {
@@ -14303,16 +13325,11 @@ Leaper {
 }
 ```
 
-</details>
-
 ---
 
 ### `BombFly`
 **Name:** Bomb Fly  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BombFly {
@@ -14361,16 +13378,11 @@ BombFly {
 }
 ```
 
-</details>
-
 ---
 
 ### `TumorousMaggot`
 **Name:** Burfer Maggot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TumorousMaggot {
@@ -14417,16 +13429,11 @@ TumorousMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChargeyMaggot`
 **Name:** Chargey Maggot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChargeyMaggot {
@@ -14474,16 +13481,11 @@ ChargeyMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `SwappyMaggot`
 **Name:** Diggy Maggot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SwappyMaggot {
@@ -14532,16 +13534,11 @@ SwappyMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `TarBaby`
 **Name:** Tar Baby  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TarBaby {
@@ -14596,16 +13593,11 @@ TarBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `ChumBag`
 **Name:** Chum Bag  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ChumBag {
@@ -14661,16 +13653,11 @@ ChumBag {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chummy`
 **Name:** Chummy  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chummy {
@@ -14714,16 +13701,11 @@ Chummy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Host`
 **Name:** Host  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Host {
@@ -14788,16 +13770,11 @@ Host {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pile`
 **Name:** Pile  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pile {
@@ -14855,16 +13832,11 @@ Pile {
 }
 ```
 
-</details>
-
 ---
 
 ### `Floater`
 **Name:** Floater  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Floater {
@@ -14917,16 +13889,11 @@ Floater {
 }
 ```
 
-</details>
-
 ---
 
 ### `WaterLeech`
 **Name:** Water Leech  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WaterLeech {
@@ -15000,16 +13967,11 @@ WaterLeech {
 }
 ```
 
-</details>
-
 ---
 
 ### `DaddyShark`
 **Name:** Daddy Shark  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DaddyShark {
@@ -15066,16 +14028,11 @@ DaddyShark {
 }
 ```
 
-</details>
-
 ---
 
 ### `BabyShark`
 **Name:** Baby Shark  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BabyShark {
@@ -15126,16 +14083,11 @@ BabyShark {
 }
 ```
 
-</details>
-
 ---
 
 ### `TenTickles`
 **Name:** Ten Tickles  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TenTickles {
@@ -15187,16 +14139,11 @@ TenTickles {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fetus`
 **Name:** Fetus  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fetus {
@@ -15278,16 +14225,11 @@ Fetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `FetusGusher`
 **Name:** Fetus Gusher  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FetusGusher {
@@ -15339,16 +14281,11 @@ FetusGusher {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bat`
 **Name:** Bat  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bat {
@@ -15408,16 +14345,11 @@ Bat {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrainDrain`
 **Name:** Brain Drain  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrainDrain {
@@ -15476,16 +14408,11 @@ BrainDrain {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkullOoze`
 **Name:** Skull Ooze  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkullOoze {
@@ -15528,16 +14455,11 @@ SkullOoze {
 }
 ```
 
-</details>
-
 ---
 
 ### `KirbyFetus`
 **Name:** Korbee  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 KirbyFetus {
@@ -15626,16 +14548,11 @@ KirbyFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaFetus`
 **Name:** Mega Fetus  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaFetus {
@@ -15694,16 +14611,11 @@ MegaFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tatters`
 **Name:** Tatters  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tatters {
@@ -15762,16 +14674,11 @@ Tatters {
 }
 ```
 
-</details>
-
 ---
 
 ### `Spookie`
 **Name:** Spookie  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Spookie {
@@ -15832,16 +14739,11 @@ Spookie {
 }
 ```
 
-</details>
-
 ---
 
 ### `Scary`
 **Name:** Scary  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Scary {
@@ -15903,16 +14805,11 @@ Scary {
 }
 ```
 
-</details>
-
 ---
 
 ### `Reaper`
 **Name:** Reaper  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Reaper {
@@ -15979,16 +14876,11 @@ Reaper {
 }
 ```
 
-</details>
-
 ---
 
 ### `TallRobes`
 **Name:** Robes  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TallRobes {
@@ -16048,16 +14940,11 @@ TallRobes {
 }
 ```
 
-</details>
-
 ---
 
 ### `Shambler`
 **Name:** Shambler  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Shambler {
@@ -16127,16 +15014,11 @@ Shambler {
 }
 ```
 
-</details>
-
 ---
 
 ### `GraveWorm`
 **Name:** Grave Worm  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GraveWorm {
@@ -16188,16 +15070,11 @@ GraveWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButtZombie`
 **Name:** Butt Zombie  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButtZombie {
@@ -16315,16 +15192,11 @@ ButtZombie {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonShambler`
 **Name:** Skeleton Shambler  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonShambler {
@@ -16406,16 +15278,11 @@ SkeletonShambler {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonShamblerCorpse`
 **Name:** Skeleton Shambler  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonShamblerCorpse {
@@ -16480,15 +15347,10 @@ SkeletonShamblerCorpse {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonShamblerRevived`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonShamblerRevived {
@@ -16502,16 +15364,11 @@ SkeletonShamblerRevived {
 }
 ```
 
-</details>
-
 ---
 
 ### `Thump`
 **Name:** Thump  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Thump {
@@ -16574,16 +15431,11 @@ Thump {
 }
 ```
 
-</details>
-
 ---
 
 ### `FlySwarm`
 **Name:** Fly Swarm  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlySwarm {
@@ -16702,15 +15554,10 @@ FlySwarm {
 }
 ```
 
-</details>
-
 ---
 
 ### `NonChampionFlySwarm`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NonChampionFlySwarm {
@@ -16721,16 +15568,11 @@ NonChampionFlySwarm {
 }
 ```
 
-</details>
-
 ---
 
 ### `SnakeyBones`
 **Name:** Bone Worm  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SnakeyBones {
@@ -16866,16 +15708,11 @@ SnakeyBones {
 }
 ```
 
-</details>
-
 ---
 
 ### `Carcus`
 **Name:** Carcass  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Carcus {
@@ -16924,16 +15761,11 @@ Carcus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Peashy`
 **Name:** Peashy  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Peashy {
@@ -17019,16 +15851,11 @@ Peashy {
 }
 ```
 
-</details>
-
 ---
 
 ### `BabyDeathWorm`
 **Name:** Baby Deathworm  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BabyDeathWorm {
@@ -17087,16 +15914,11 @@ BabyDeathWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `DeathWorm`
 **Name:** Death Worm  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DeathWorm {
@@ -17158,16 +15980,11 @@ DeathWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cultist`
 **Name:** Cultist  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cultist {
@@ -17399,15 +16216,10 @@ Cultist {
 }
 ```
 
-</details>
-
 ---
 
 ### `CultistZealot`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CultistZealot {
@@ -17421,15 +16233,10 @@ CultistZealot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CultistMutant`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CultistMutant {
@@ -17448,15 +16255,10 @@ CultistMutant {
 }
 ```
 
-</details>
-
 ---
 
 ### `CultistBishop`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CultistBishop {
@@ -17476,15 +16278,10 @@ CultistBishop {
 }
 ```
 
-</details>
-
 ---
 
 ### `CultistWasher`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CultistWasher {
@@ -17497,16 +16294,11 @@ CultistWasher {
 }
 ```
 
-</details>
-
 ---
 
 ### `BishopHat`
 **Name:** Bishop Hat  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BishopHat {
@@ -17554,16 +16346,11 @@ BishopHat {
 }
 ```
 
-</details>
-
 ---
 
 ### `LoveBot`
 **Name:** Love Bot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LoveBot {
@@ -17621,16 +16408,11 @@ LoveBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `SecurityBot`
 **Name:** Security Bot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SecurityBot {
@@ -17719,16 +16501,11 @@ SecurityBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `KillDozer`
 **Name:** Killdozer  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 KillDozer {
@@ -17794,16 +16571,11 @@ KillDozer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Carnibulb`
 **Name:** Carnibulb  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Carnibulb {
@@ -17868,16 +16640,11 @@ Carnibulb {
 }
 ```
 
-</details>
-
 ---
 
 ### `Sprout`
 **Name:** Sprout  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Sprout {
@@ -17929,16 +16696,11 @@ Sprout {
 }
 ```
 
-</details>
-
 ---
 
 ### `GeoLad`
 **Name:** GeoLad  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GeoLad {
@@ -17999,16 +16761,11 @@ GeoLad {
 }
 ```
 
-</details>
-
 ---
 
 ### `BrambleBaby`
 **Name:** Bramble Baby  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BrambleBaby {
@@ -18063,16 +16820,11 @@ BrambleBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hemlock`
 **Name:** Hemlock  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hemlock {
@@ -18138,16 +16890,11 @@ Hemlock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Nettle`
 **Name:** Nettle  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Nettle {
@@ -18207,16 +16954,11 @@ Nettle {
 }
 ```
 
-</details>
-
 ---
 
 ### `Birthwort`
 **Name:** Birthwort  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Birthwort {
@@ -18284,16 +17026,11 @@ Birthwort {
 }
 ```
 
-</details>
-
 ---
 
 ### `Amoeba`
 **Name:** Amoeba  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Amoeba {
@@ -18380,16 +17117,11 @@ Amoeba {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tremblo`
 **Name:** Tremblo  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tremblo {
@@ -18456,16 +17188,11 @@ Tremblo {
 }
 ```
 
-</details>
-
 ---
 
 ### `CraterCreeper`
 **Name:** Crater Creeper  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CraterCreeper {
@@ -18552,16 +17279,11 @@ CraterCreeper {
 }
 ```
 
-</details>
-
 ---
 
 ### `CraterCreeperOut`
 **Name:** Crater Creeper  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CraterCreeperOut {
@@ -18623,16 +17345,11 @@ CraterCreeperOut {
 }
 ```
 
-</details>
-
 ---
 
 ### `CoreFreak`
 **Name:** Core Freak  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CoreFreak {
@@ -18695,16 +17412,11 @@ CoreFreak {
 }
 ```
 
-</details>
-
 ---
 
 ### `PokerDemon`
 **Name:** Hot Poker  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PokerDemon {
@@ -18766,16 +17478,11 @@ PokerDemon {
 }
 ```
 
-</details>
-
 ---
 
 ### `Whisperer`
 **Name:** Whisperer  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Whisperer {
@@ -18830,16 +17537,11 @@ Whisperer {
 }
 ```
 
-</details>
-
 ---
 
 ### `CloakedDemon`
 **Name:** Cloaked Demon  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CloakedDemon {
@@ -18909,16 +17611,11 @@ CloakedDemon {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigDemon`
 **Name:** Brute  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigDemon {
@@ -18973,16 +17670,11 @@ BigDemon {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaTumor`
 **Name:** Mega Tumor  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaTumor {
@@ -19047,16 +17739,11 @@ MegaTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `HeadTumor`
 **Name:** Tumorhead  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeadTumor {
@@ -19110,16 +17797,11 @@ HeadTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `TallTumor`
 **Name:** Tall Tumor  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TallTumor {
@@ -19178,16 +17860,11 @@ TallTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigAsteroid`
 **Name:** Big Asteroid  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigAsteroid {
@@ -19247,16 +17924,11 @@ BigAsteroid {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallAsteroid`
 **Name:** Small Asteroid  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallAsteroid {
@@ -19316,16 +17988,11 @@ SmallAsteroid {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallUFO`
 **Name:** Saucie  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallUFO {
@@ -19389,16 +18056,11 @@ SmallUFO {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigUFO`
 **Name:** Megasaucer  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigUFO {
@@ -19468,16 +18130,11 @@ BigUFO {
 }
 ```
 
-</details>
-
 ---
 
 ### `YellowBlaster`
 **Name:** Y-Blaster  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 YellowBlaster {
@@ -19561,16 +18218,11 @@ YellowBlaster {
 }
 ```
 
-</details>
-
 ---
 
 ### `GreyAlien`
 **Name:** G-Alien  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GreyAlien {
@@ -19666,16 +18318,11 @@ GreyAlien {
 }
 ```
 
-</details>
-
 ---
 
 ### `GreenProber`
 **Name:** B-Prober  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GreenProber {
@@ -19730,16 +18377,11 @@ GreenProber {
 }
 ```
 
-</details>
-
 ---
 
 ### `Waggle`
 **Name:** Waggle  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Waggle {
@@ -19793,15 +18435,10 @@ Waggle {
 }
 ```
 
-</details>
-
 ---
 
 ### `cWaggle`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 cWaggle {
@@ -19812,15 +18449,10 @@ cWaggle {
 }
 ```
 
-</details>
-
 ---
 
 ### `cWaggle2x2`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 cWaggle2x2 {
@@ -19847,15 +18479,10 @@ cWaggle2x2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `cWaggle3x3`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 cWaggle3x3 {
@@ -19876,16 +18503,11 @@ cWaggle3x3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatCat`
 **Name:** Half-Rat  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatCat {
@@ -19940,16 +18562,11 @@ RatCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gamete`
 **Name:** Gamete  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gamete {
@@ -20014,16 +18631,11 @@ Gamete {
 }
 ```
 
-</details>
-
 ---
 
 ### `NubsCat`
 **Name:** Half-Dog  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NubsCat {
@@ -20081,16 +18693,11 @@ NubsCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatHuman`
 **Name:** Half-Human λ  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatHuman {
@@ -20147,16 +18754,11 @@ CatHuman {
 }
 ```
 
-</details>
-
 ---
 
 ### `HumanCat`
 **Name:** Half-Human δ  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HumanCat {
@@ -20223,16 +18825,11 @@ HumanCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CopBot`
 **Name:** Cop Bot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CopBot {
@@ -20301,15 +18898,10 @@ CopBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CopBot_Uprising`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CopBot_Uprising {
@@ -20321,16 +18913,11 @@ CopBot_Uprising {
 }
 ```
 
-</details>
-
 ---
 
 ### `DrDitto`
 **Name:** Dr. Ditto  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DrDitto {
@@ -20387,16 +18974,11 @@ DrDitto {
 }
 ```
 
-</details>
-
 ---
 
 ### `PoisonFrog`
 **Name:** Poison Frog  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoisonFrog {
@@ -20427,16 +19009,11 @@ PoisonFrog {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaMutant`
 **Name:** Mega Mutant  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaMutant {
@@ -20538,16 +19115,11 @@ MegaMutant {
 }
 ```
 
-</details>
-
 ---
 
 ### `CavePerson`
 **Name:** Caveman  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CavePerson {
@@ -20777,15 +19349,10 @@ CavePerson {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveBaby`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveBaby {
@@ -20804,15 +19371,10 @@ CaveBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveMan`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveMan {
@@ -20825,15 +19387,10 @@ CaveMan {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveManNoSpear`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveManNoSpear {
@@ -20846,15 +19403,10 @@ CaveManNoSpear {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveWoman`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveWoman {
@@ -20872,15 +19424,10 @@ CaveWoman {
 }
 ```
 
-</details>
-
 ---
 
 ### `WereMan`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 WereMan {
@@ -20898,16 +19445,11 @@ WereMan {
 }
 ```
 
-</details>
-
 ---
 
 ### `CaveChief`
 **Name:** Caveman Chief  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CaveChief {
@@ -20970,16 +19512,11 @@ CaveChief {
 }
 ```
 
-</details>
-
 ---
 
 ### `Yeti`
 **Name:** Yeti  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Yeti {
@@ -21042,16 +19579,11 @@ Yeti {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fuzzer`
 **Name:** Fuzzer  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fuzzer {
@@ -21120,16 +19652,11 @@ Fuzzer {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mammoth`
 **Name:** Wooly Mammoth  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mammoth {
@@ -21198,16 +19725,11 @@ Mammoth {
 }
 ```
 
-</details>
-
 ---
 
 ### `BungaWarrior1`
 **Name:** Bunga's Champion  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BungaWarrior1 {
@@ -21323,15 +19845,10 @@ BungaWarrior1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `BungaWarrior2`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BungaWarrior2 {
@@ -21342,16 +19859,11 @@ BungaWarrior2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Trex`
 **Name:** T-Rex  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Trex {
@@ -21416,16 +19928,11 @@ Trex {
 }
 ```
 
-</details>
-
 ---
 
 ### `Stegosaurus`
 **Name:** Stegosaurus  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Stegosaurus {
@@ -21500,16 +20007,11 @@ Stegosaurus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Triceratops`
 **Name:** Triceratops  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Triceratops {
@@ -21572,16 +20074,11 @@ Triceratops {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pterodactyl`
 **Name:** Pterodactyl  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pterodactyl {
@@ -21683,16 +20180,11 @@ Pterodactyl {
 }
 ```
 
-</details>
-
 ---
 
 ### `PrehistoricPooter`
 **Name:** Prehistoric Pooter  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PrehistoricPooter {
@@ -21741,16 +20233,11 @@ PrehistoricPooter {
 }
 ```
 
-</details>
-
 ---
 
 ### `DinoEggs`
 **Name:** Dino Nest  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DinoEggs {
@@ -21799,16 +20286,11 @@ DinoEggs {
 }
 ```
 
-</details>
-
 ---
 
 ### `FatMan`
 **Name:** Überman  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FatMan {
@@ -21889,8 +20371,6 @@ FatMan {
 }
 ```
 
-</details>
-
 ---
 
 ### `FatWoman`
@@ -21899,9 +20379,6 @@ FatMan {
 Reflects projectiles. Units that contact it get knocked back.
 Trample.  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FatWoman {
@@ -21915,16 +20392,11 @@ FatWoman {
 }
 ```
 
-</details>
-
 ---
 
 ### `SoldierBot`
 **Name:** Schutzbot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SoldierBot {
@@ -21986,16 +20458,11 @@ SoldierBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `HangerBot`
 **Name:** Hängenbot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HangerBot {
@@ -22067,16 +20534,11 @@ HangerBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `DoctorBot`
 **Name:** Doktorbot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DoctorBot {
@@ -22136,16 +20598,11 @@ DoctorBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `JarHead`
 **Name:** Krughead  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JarHead {
@@ -22210,16 +20667,11 @@ JarHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `FetusJar`
 **Name:** Fötusjar  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FetusJar {
@@ -22279,16 +20731,11 @@ FetusJar {
 }
 ```
 
-</details>
-
 ---
 
 ### `FetusNoJar`
 **Name:** Der Fötus  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FetusNoJar {
@@ -22361,16 +20808,11 @@ FetusNoJar {
 }
 ```
 
-</details>
-
 ---
 
 ### `TVBot`
 **Name:** Fernsehbot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TVBot {
@@ -22499,16 +20941,11 @@ TVBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `TallBot`
 **Name:** Großerbot  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TallBot {
@@ -22568,16 +21005,11 @@ TallBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `BoyShade`
 **Name:** Herald  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BoyShade {
@@ -22631,16 +21063,11 @@ BoyShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `BoyShadeClone`
 **Name:** Herald's Shadow  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BoyShadeClone {
@@ -22698,16 +21125,11 @@ BoyShadeClone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gasper`
 **Name:** Gasper  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gasper {
@@ -22799,16 +21221,11 @@ Gasper {
 }
 ```
 
-</details>
-
 ---
 
 ### `Floast`
 **Name:** Floast  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Floast {
@@ -22864,16 +21281,11 @@ Floast {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gorger`
 **Name:** Gorger  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gorger {
@@ -22931,16 +21343,11 @@ Gorger {
 }
 ```
 
-</details>
-
 ---
 
 ### `Slag`
 **Name:** Slag  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Slag {
@@ -23010,16 +21417,11 @@ Slag {
 }
 ```
 
-</details>
-
 ---
 
 ### `HitlerClone`
 **Name:** Führerfötus  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HitlerClone {
@@ -23105,16 +21507,11 @@ HitlerClone {
 }
 ```
 
-</details>
-
 ---
 
 ### `TumorBarrier`
 **Name:** Edema  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TumorBarrier {
@@ -23177,16 +21574,11 @@ TumorBarrier {
 }
 ```
 
-</details>
-
 ---
 
 ### `Husk`
 **Name:** Husk  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Husk {
@@ -23243,15 +21635,10 @@ Husk {
 }
 ```
 
-</details>
-
 ---
 
 ### `HuskG`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HuskG {
@@ -23262,16 +21649,11 @@ HuskG {
 }
 ```
 
-</details>
-
 ---
 
 ### `ConjoinedHusk`
 **Name:** Conjoined Husk  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ConjoinedHusk {
@@ -23353,15 +21735,10 @@ ConjoinedHusk {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_HuskShade`
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_HuskShade {
@@ -23392,16 +21769,11 @@ PlayerCat_HuskShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `GirlShade`
 **Name:** Heraldess  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GirlShade {
@@ -23497,16 +21869,11 @@ GirlShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeatSlime`
 **Name:** Meat Slime  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeatSlime {
@@ -23556,16 +21923,11 @@ MeatSlime {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThrobbingTurret`
 **Name:** Throbbing Turret  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrobbingTurret {
@@ -23624,16 +21986,11 @@ ThrobbingTurret {
 }
 ```
 
-</details>
-
 ---
 
 ### `Parasiter`
 **Name:** Throbbing Servant  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Parasiter {
@@ -23686,16 +22043,11 @@ Parasiter {
 }
 ```
 
-</details>
-
 ---
 
 ### `FleshLad`
 **Name:** Flesh Lad  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FleshLad {
@@ -23754,16 +22106,11 @@ FleshLad {
 }
 ```
 
-</details>
-
 ---
 
 ### `FleshyMind`
 **Name:** Fleshy Mind  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FleshyMind {
@@ -23817,16 +22164,11 @@ FleshyMind {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButchTinkBoris`
 **Name:** Butch & Tink  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButchTinkBoris {
@@ -23897,16 +22239,11 @@ ButchTinkBoris {
 }
 ```
 
-</details>
-
 ---
 
 ### `TracyFetus`
 **Name:** Tracy  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TracyFetus {
@@ -23965,16 +22302,11 @@ TracyFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `BeaniesRat`
 **Name:** Dr. Beanies  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BeaniesRat {
@@ -24065,16 +22397,11 @@ BeaniesRat {
 }
 ```
 
-</details>
-
 ---
 
 ### `FrankFetus`
 **Name:** Frank  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FrankFetus {
@@ -24166,16 +22493,11 @@ FrankFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cherubim`
 **Name:** Cherubim  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cherubim {
@@ -24268,16 +22590,11 @@ Cherubim {
 }
 ```
 
-</details>
-
 ---
 
 ### `Seraphim`
 **Name:** Seraphim  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Seraphim {
@@ -24341,16 +22658,11 @@ Seraphim {
 }
 ```
 
-</details>
-
 ---
 
 ### `AngelicKitten`
 **Name:** Angelic Kitten  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AngelicKitten {
@@ -24414,16 +22726,11 @@ AngelicKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gatekeeper`
 **Name:** Gatekeeper  
 **Source:** `enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gatekeeper {
@@ -24489,15 +22796,10 @@ Gatekeeper {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarMaggot {
@@ -24518,15 +22820,10 @@ FamiliarMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarTumorousMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarTumorousMaggot {
@@ -24547,15 +22844,10 @@ FamiliarTumorousMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarChargeyMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarChargeyMaggot {
@@ -24576,15 +22868,10 @@ FamiliarChargeyMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarSwappyMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarSwappyMaggot {
@@ -24605,15 +22892,10 @@ FamiliarSwappyMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarPooter`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarPooter {
@@ -24638,15 +22920,10 @@ FamiliarPooter {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedPooter`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedPooter {
@@ -24659,15 +22936,10 @@ CharmedPooter {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFlySwarm`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFlySwarm {
@@ -24680,15 +22952,10 @@ CharmedFlySwarm {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFlea`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFlea {
@@ -24705,16 +22972,11 @@ CharmedFlea {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFleaSpecial`
 **Name:** Florian the Flea  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFleaSpecial {
@@ -24735,15 +22997,10 @@ CharmedFleaSpecial {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTinySpider`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTinySpider {
@@ -24756,15 +23013,10 @@ CharmedTinySpider {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFly`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFly {
@@ -24777,16 +23029,11 @@ CharmedFly {
 }
 ```
 
-</details>
-
 ---
 
 ### `SteelFly`
 **Name:** Steel Fly  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SteelFly {
@@ -24808,15 +23055,10 @@ SteelFly {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedDip`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedDip {
@@ -24829,15 +23071,10 @@ CharmedDip {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFloater`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFloater {
@@ -24850,15 +23087,10 @@ CharmedFloater {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedPile`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedPile {
@@ -24871,15 +23103,10 @@ CharmedPile {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedMaggot {
@@ -24896,15 +23123,10 @@ CharmedMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTumorousMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTumorousMaggot {
@@ -24917,15 +23139,10 @@ CharmedTumorousMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedChargeyMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedChargeyMaggot {
@@ -24938,15 +23155,10 @@ CharmedChargeyMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedSwappyMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedSwappyMaggot {
@@ -24959,15 +23171,10 @@ CharmedSwappyMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedRat`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedRat {
@@ -24980,15 +23187,10 @@ CharmedRat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedKitten`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedKitten {
@@ -25001,15 +23203,10 @@ CharmedKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `BuffCharmedKitten`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BuffCharmedKitten {
@@ -25022,15 +23219,10 @@ BuffCharmedKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTomTom`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTomTom {
@@ -25047,15 +23239,10 @@ CharmedTomTom {
 }
 ```
 
-</details>
-
 ---
 
 ### `BuffFamiliarMaggot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BuffFamiliarMaggot {
@@ -25082,15 +23269,10 @@ BuffFamiliarMaggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `BuffFamiliarPooter`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BuffFamiliarPooter {
@@ -25117,15 +23299,10 @@ BuffFamiliarPooter {
 }
 ```
 
-</details>
-
 ---
 
 ### `BuffFamiliarFlea`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BuffFamiliarFlea {
@@ -25152,15 +23329,10 @@ BuffFamiliarFlea {
 }
 ```
 
-</details>
-
 ---
 
 ### `BuffFamiliarFly`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BuffFamiliarFly {
@@ -25187,16 +23359,11 @@ BuffFamiliarFly {
 }
 ```
 
-</details>
-
 ---
 
 ### `RotFly`
 **Name:** Rot Fly  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RotFly {
@@ -25213,16 +23380,11 @@ RotFly {
 }
 ```
 
-</details>
-
 ---
 
 ### `AllyRotFly`
 **Name:** Rot Fly  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AllyRotFly {
@@ -25240,16 +23402,11 @@ AllyRotFly {
 }
 ```
 
-</details>
-
 ---
 
 ### `Deathbot`
 **Name:** Deathbot  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Deathbot {
@@ -25299,16 +23456,11 @@ Deathbot {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererTurret`
 **Name:** Turret  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererTurret {
@@ -25360,16 +23512,11 @@ TinkererTurret {
 }
 ```
 
-</details>
-
 ---
 
 ### `RocketTurret`
 **Name:** Rocket Turret  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RocketTurret {
@@ -25389,16 +23536,11 @@ RocketTurret {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedDemonKitten`
 **Name:** Demon Kitten  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedDemonKitten {
@@ -25424,16 +23566,11 @@ CharmedDemonKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedLeech`
 **Name:** Leech  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedLeech {
@@ -25458,16 +23595,11 @@ CharmedLeech {
 }
 ```
 
-</details>
-
 ---
 
 ### `BeefyCharmedLeech`
 **Name:** Beefy Leech  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BeefyCharmedLeech {
@@ -25500,16 +23632,11 @@ BeefyCharmedLeech {
 }
 ```
 
-</details>
-
 ---
 
 ### `BestBud`
 **Name:** Best Bud  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BestBud {
@@ -25553,16 +23680,11 @@ BestBud {
 }
 ```
 
-</details>
-
 ---
 
 ### `Catbot`
 **Name:** Catbot  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Catbot {
@@ -25615,16 +23737,11 @@ Catbot {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZombieCatFamiliar`
 **Name:** Zombie Kitten  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZombieCatFamiliar {
@@ -25688,15 +23805,10 @@ ZombieCatFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `NeutralZombieKitten`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NeutralZombieKitten {
@@ -25707,15 +23819,10 @@ NeutralZombieKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `FeralZombieKitten`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FeralZombieKitten {
@@ -25732,16 +23839,11 @@ FeralZombieKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonCatFamiliar`
 **Name:** Skeleton Kitten  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonCatFamiliar {
@@ -25812,16 +23914,11 @@ SkeletonCatFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonCatCorpseFamiliar`
 **Name:** Skeleton Kitten  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonCatCorpseFamiliar {
@@ -25872,15 +23969,10 @@ SkeletonCatCorpseFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `SkeletonCatRevivedFamiliar`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SkeletonCatRevivedFamiliar {
@@ -25891,16 +23983,11 @@ SkeletonCatRevivedFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bombchu`
 **Name:** Bombchu  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bombchu {
@@ -25955,16 +24042,11 @@ Bombchu {
 }
 ```
 
-</details>
-
 ---
 
 ### `MechSuit`
 **Name:** Mech Suit  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MechSuit {
@@ -26037,16 +24119,11 @@ MechSuit {
 }
 ```
 
-</details>
-
 ---
 
 ### `RoboVacuum`
 **Name:** Robo-Vac  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RoboVacuum {
@@ -26102,15 +24179,10 @@ RoboVacuum {
 }
 ```
 
-</details>
-
 ---
 
 ### `RoboVacuum2`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RoboVacuum2 {
@@ -26125,16 +24197,11 @@ RoboVacuum2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `NurseBot`
 **Name:** Nurse Bot  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NurseBot {
@@ -26191,16 +24258,11 @@ NurseBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `TeslaCoil`
 **Name:** Tesla Coil  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TeslaCoil {
@@ -26256,16 +24318,11 @@ TeslaCoil {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarFetus`
 **Name:** Fetus  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarFetus {
@@ -26321,16 +24378,11 @@ FamiliarFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarFetusGusher`
 **Name:** Fetus Gusher  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarFetusGusher {
@@ -26378,15 +24430,10 @@ FamiliarFetusGusher {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarBrainDrain`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarBrainDrain {
@@ -26407,15 +24454,10 @@ FamiliarBrainDrain {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarKirbyFetus`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarKirbyFetus {
@@ -26446,16 +24488,11 @@ FamiliarKirbyFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `SleepParalysisDemon`
 **Name:** {SpawnedBy}'s Sleep Paralysis Demon  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SleepParalysisDemon {
@@ -26481,15 +24518,10 @@ SleepParalysisDemon {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomLivingPoop`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomLivingPoop {
@@ -26505,16 +24537,11 @@ RandomLivingPoop {
 }
 ```
 
-</details>
-
 ---
 
 ### `GrubFamiliarBase`
 **Name:** Grub  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GrubFamiliarBase {
@@ -26549,16 +24576,11 @@ GrubFamiliarBase {
 }
 ```
 
-</details>
-
 ---
 
 ### `HeadGrubFamiliar`
 **Name:** Head Grub  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HeadGrubFamiliar {
@@ -26570,16 +24592,11 @@ HeadGrubFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `FaceGrubFamiliar`
 **Name:** Face Grub  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FaceGrubFamiliar {
@@ -26591,16 +24608,11 @@ FaceGrubFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `NeckGrubFamiliar`
 **Name:** Neck Grub  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NeckGrubFamiliar {
@@ -26612,15 +24624,10 @@ NeckGrubFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedPinky`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedPinky {
@@ -26633,15 +24640,10 @@ CharmedPinky {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedLeaper`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedLeaper {
@@ -26654,15 +24656,10 @@ CharmedLeaper {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedHyde`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedHyde {
@@ -26687,15 +24684,10 @@ CharmedHyde {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedSpookie`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedSpookie {
@@ -26708,15 +24700,10 @@ CharmedSpookie {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedDaddyShark`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedDaddyShark {
@@ -26729,15 +24716,10 @@ CharmedDaddyShark {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedHeadTumor`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedHeadTumor {
@@ -26750,15 +24732,10 @@ CharmedHeadTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFetus`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFetus {
@@ -26771,15 +24748,10 @@ CharmedFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFetus2`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFetus2 {
@@ -26791,15 +24763,10 @@ CharmedFetus2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedLoveBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedLoveBot {
@@ -26812,15 +24779,10 @@ CharmedLoveBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedSecurityBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedSecurityBot {
@@ -26833,15 +24795,10 @@ CharmedSecurityBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedCopBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedCopBot {
@@ -26854,15 +24811,10 @@ CharmedCopBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedSoldierBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedSoldierBot {
@@ -26875,15 +24827,10 @@ CharmedSoldierBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedHangerBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedHangerBot {
@@ -26896,15 +24843,10 @@ CharmedHangerBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedDoctorBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedDoctorBot {
@@ -26917,15 +24859,10 @@ CharmedDoctorBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTallBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTallBot {
@@ -26938,15 +24875,10 @@ CharmedTallBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFutureBot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFutureBot {
@@ -26959,15 +24891,10 @@ CharmedFutureBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedCaveBaby`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedCaveBaby {
@@ -26980,15 +24907,10 @@ CharmedCaveBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedMammoth`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedMammoth {
@@ -27001,15 +24923,10 @@ CharmedMammoth {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTarBaby`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTarBaby {
@@ -27022,15 +24939,10 @@ CharmedTarBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedRaptorBaby`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedRaptorBaby {
@@ -27043,15 +24955,10 @@ CharmedRaptorBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedCancerCat`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedCancerCat {
@@ -27064,15 +24971,10 @@ CharmedCancerCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedFloast`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedFloast {
@@ -27085,16 +24987,11 @@ CharmedFloast {
 }
 ```
 
-</details>
-
 ---
 
 ### `CatCopyClot`
 **Name:** {SpawnedBy}'s Clot  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CatCopyClot {
@@ -27129,15 +25026,10 @@ CatCopyClot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedRattleSnake`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedRattleSnake {
@@ -27150,15 +25042,10 @@ CharmedRattleSnake {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedDustDevil`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedDustDevil {
@@ -27171,15 +25058,10 @@ CharmedDustDevil {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedSnakeyBones`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedSnakeyBones {
@@ -27192,15 +25074,10 @@ CharmedSnakeyBones {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedHornyCat`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedHornyCat {
@@ -27213,15 +25090,10 @@ CharmedHornyCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedGunCat`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedGunCat {
@@ -27234,15 +25106,10 @@ CharmedGunCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedScorpionCat`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedScorpionCat {
@@ -27255,15 +25122,10 @@ CharmedScorpionCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedMangy2`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedMangy2 {
@@ -27276,15 +25138,10 @@ CharmedMangy2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedBabyDeathWorm`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedBabyDeathWorm {
@@ -27297,15 +25154,10 @@ CharmedBabyDeathWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedBigDemon`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedBigDemon {
@@ -27318,15 +25170,10 @@ CharmedBigDemon {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedStacy`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedStacy {
@@ -27339,15 +25186,10 @@ CharmedStacy {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedCultist`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedCultist {
@@ -27360,15 +25202,10 @@ CharmedCultist {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTinySpider`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTinySpider {
@@ -27385,15 +25222,10 @@ CharmedTinySpider {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedLice`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedLice {
@@ -27406,15 +25238,10 @@ CharmedLice {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedGamete`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedGamete {
@@ -27427,15 +25254,10 @@ CharmedGamete {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedClot`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedClot {
@@ -27448,15 +25270,10 @@ CharmedClot {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedAmoeba`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedAmoeba {
@@ -27470,15 +25287,10 @@ CharmedAmoeba {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedReaper`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedReaper {
@@ -27491,16 +25303,11 @@ CharmedReaper {
 }
 ```
 
-</details>
-
 ---
 
 ### `Triachnid`
 **Name:** Triachnid  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Triachnid {
@@ -27557,15 +25364,10 @@ Triachnid {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedMegaDino`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedMegaDino {
@@ -27578,15 +25380,10 @@ CharmedMegaDino {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedBear`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedBear {
@@ -27598,15 +25395,10 @@ CharmedBear {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedWhiteRabbit`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedWhiteRabbit {
@@ -27633,16 +25425,11 @@ CharmedWhiteRabbit {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTinaFly`
 **Name:** Tina's Friend  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTinaFly {
@@ -27667,15 +25454,10 @@ CharmedTinaFly {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedTinyTumor`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedTinyTumor {
@@ -27699,15 +25481,10 @@ CharmedTinyTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedMammothBaby`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedMammothBaby {
@@ -27721,15 +25498,10 @@ CharmedMammothBaby {
 }
 ```
 
-</details>
-
 ---
 
 ### `CharmedGeoLad`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CharmedGeoLad {
@@ -27743,16 +25515,11 @@ CharmedGeoLad {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheLost`
 **Name:** The Lost  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheLost {
@@ -27771,16 +25538,11 @@ TheLost {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheIntruder`
 **Name:** The Intruder  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheIntruder {
@@ -27799,15 +25561,10 @@ TheIntruder {
 }
 ```
 
-</details>
-
 ---
 
 ### `FamiliarFleshLad`
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FamiliarFleshLad {
@@ -27832,16 +25589,11 @@ FamiliarFleshLad {
 }
 ```
 
-</details>
-
 ---
 
 ### `PhantomMaskRock`
 **Name:** Phantom Mask  
 **Source:** `familiars.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PhantomMaskRock {
@@ -27896,16 +25648,11 @@ PhantomMaskRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheCreator`
 **Name:** The Creator  
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheCreator {
@@ -27993,16 +25740,11 @@ TheCreator {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_FinalBossClone`
 **Name:** Good {Catname}  
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_FinalBossClone {
@@ -28047,15 +25789,10 @@ PlayerCat_FinalBossClone {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_FinalBossClone_Champion`
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_FinalBossClone_Champion {
@@ -28068,15 +25805,10 @@ PlayerCat_FinalBossClone_Champion {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_FinalBossClone_Elite`
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_FinalBossClone_Elite {
@@ -28090,16 +25822,11 @@ PlayerCat_FinalBossClone_Elite {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheDestroyer`
 **Name:** The Destroyer  
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheDestroyer {
@@ -28354,15 +26081,10 @@ TheDestroyer {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheDestroyer2`
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheDestroyer2 {
@@ -28387,16 +26109,11 @@ TheDestroyer2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheChild`
 **Name:** The Child  
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheChild {
@@ -28550,16 +26267,11 @@ TheChild {
 }
 ```
 
-</details>
-
 ---
 
 ### `MegaGuppy`
 **Name:** The Father  
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MegaGuppy {
@@ -28657,15 +26369,10 @@ MegaGuppy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Debug_MegaGuppyPhase3`
 **Source:** `finalboss.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Debug_MegaGuppyPhase3 {
@@ -28698,16 +26405,11 @@ Debug_MegaGuppyPhase3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Guillotina2Head`
 **Name:** Guillotina  
 **Source:** `guillotina.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Guillotina2Head {
@@ -28817,16 +26519,11 @@ Guillotina2Head {
 }
 ```
 
-</details>
-
 ---
 
 ### `Guillotina2Body`
 **Name:** Guillotina  
 **Source:** `guillotina.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Guillotina2Body {
@@ -28936,16 +26633,11 @@ Guillotina2Body {
 }
 ```
 
-</details>
-
 ---
 
 ### `Guillotina1`
 **Name:** Guillotina  
 **Source:** `guillotina.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Guillotina1 {
@@ -29144,16 +26836,11 @@ Guillotina1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Guillotina3Body`
 **Name:** Guillotina  
 **Source:** `guillotina.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Guillotina3Body {
@@ -29325,16 +27012,11 @@ Guillotina3Body {
 }
 ```
 
-</details>
-
 ---
 
 ### `Guillotina3Head`
 **Name:** Guillotina  
 **Source:** `guillotina.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Guillotina3Head {
@@ -29436,15 +27118,10 @@ Guillotina3Head {
 }
 ```
 
-</details>
-
 ---
 
 ### `MamaMaggotTina`
 **Source:** `guillotina.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MamaMaggotTina {
@@ -29456,16 +27133,11 @@ MamaMaggotTina {
 }
 ```
 
-</details>
-
 ---
 
 ### `IceBlock`
 **Name:** Ice Cube  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IceBlock {
@@ -29506,16 +27178,11 @@ IceBlock {
 }
 ```
 
-</details>
-
 ---
 
 ### `GasCloud`
 **Name:** Gas Cloud  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GasCloud {
@@ -29556,16 +27223,11 @@ GasCloud {
 }
 ```
 
-</details>
-
 ---
 
 ### `DustCloud`
 **Name:** Dust Cloud  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DustCloud {
@@ -29606,16 +27268,11 @@ DustCloud {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bomb`
 **Name:** Rat Bomb  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bomb {
@@ -29662,16 +27319,11 @@ Bomb {
 }
 ```
 
-</details>
-
 ---
 
 ### `Rock`
 **Name:** Rock  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Rock {
@@ -29716,16 +27368,11 @@ Rock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Junk`
 **Name:** Junk  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Junk {
@@ -29767,16 +27414,11 @@ Junk {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tumor`
 **Name:** Tumor  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tumor {
@@ -29816,16 +27458,11 @@ Tumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `TrashBag`
 **Name:** Trash Bag  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TrashBag {
@@ -29882,16 +27519,11 @@ TrashBag {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dumpster_interactive`
 **Name:** Dumpster  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dumpster_interactive {
@@ -29942,16 +27574,11 @@ Dumpster_interactive {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallRock`
 **Name:** Small Rock  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallRock {
@@ -30036,15 +27663,10 @@ SmallRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallLavaRock`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallLavaRock {
@@ -30058,16 +27680,11 @@ SmallLavaRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnimatedSmallRock`
 **Name:** Pet Rock  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnimatedSmallRock {
@@ -30161,15 +27778,10 @@ AnimatedSmallRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnimatedSmallLavaRock`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnimatedSmallLavaRock {
@@ -30183,16 +27795,11 @@ AnimatedSmallLavaRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `Boulder`
 **Name:** Boulder  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Boulder {
@@ -30265,15 +27872,10 @@ Boulder {
 }
 ```
 
-</details>
-
 ---
 
 ### `LavaBoulder`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LavaBoulder {
@@ -30287,16 +27889,11 @@ LavaBoulder {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnimatedBoulder`
 **Name:** Pet Boulder  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnimatedBoulder {
@@ -30387,15 +27984,10 @@ AnimatedBoulder {
 }
 ```
 
-</details>
-
 ---
 
 ### `AnimatedLavaBoulder`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AnimatedLavaBoulder {
@@ -30409,16 +28001,11 @@ AnimatedLavaBoulder {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tire`
 **Name:** Tire  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tire {
@@ -30487,15 +28074,10 @@ Tire {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tire_Up`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tire_Up {
@@ -30509,16 +28091,11 @@ Tire_Up {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crate`
 **Name:** Crate  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crate {
@@ -30563,15 +28140,10 @@ Crate {
 }
 ```
 
-</details>
-
 ---
 
 ### `Crate_WithItemChance`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Crate_WithItemChance {
@@ -30591,16 +28163,11 @@ Crate_WithItemChance {
 }
 ```
 
-</details>
-
 ---
 
 ### `GasCan`
 **Name:** Gas Can  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GasCan {
@@ -30637,16 +28204,11 @@ GasCan {
 }
 ```
 
-</details>
-
 ---
 
 ### `Poop`
 **Name:** Poop  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Poop {
@@ -30700,15 +28262,10 @@ Poop {
 }
 ```
 
-</details>
-
 ---
 
 ### `FlamingPoop`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FlamingPoop {
@@ -30719,16 +28276,11 @@ FlamingPoop {
 }
 ```
 
-</details>
-
 ---
 
 ### `Hydrant`
 **Name:** Fire Hydrant  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Hydrant {
@@ -30763,16 +28315,11 @@ Hydrant {
 }
 ```
 
-</details>
-
 ---
 
 ### `HydrantFountain`
 **Name:** Fountain  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HydrantFountain {
@@ -30812,16 +28359,11 @@ HydrantFountain {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dice`
 **Name:** D6  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dice {
@@ -30862,16 +28404,11 @@ Dice {
 }
 ```
 
-</details>
-
 ---
 
 ### `Phylactery`
 **Name:** Phylactery  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Phylactery {
@@ -30909,16 +28446,11 @@ Phylactery {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloatyCorpse`
 **Name:** Bloated Corpse  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloatyCorpse {
@@ -30964,16 +28496,11 @@ BloatyCorpse {
 }
 ```
 
-</details>
-
 ---
 
 ### `TNTCrate`
 **Name:** TNT  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TNTCrate {
@@ -31014,16 +28541,11 @@ TNTCrate {
 }
 ```
 
-</details>
-
 ---
 
 ### `HarpoonTrap`
 **Name:** Harpoon Trap  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HarpoonTrap {
@@ -31065,16 +28587,11 @@ HarpoonTrap {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpikyRock`
 **Name:** Spiky Rock  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpikyRock {
@@ -31115,16 +28632,11 @@ SpikyRock {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpikyCactus`
 **Name:** Spiky Cactus  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpikyCactus {
@@ -31152,16 +28664,11 @@ SpikyCactus {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpikyCactus_Tall`
 **Name:** Spiky Cactus  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpikyCactus_Tall {
@@ -31180,16 +28687,11 @@ SpikyCactus_Tall {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpikyCactus_2x2`
 **Name:** Spiky Cactus  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpikyCactus_2x2 {
@@ -31208,16 +28710,11 @@ SpikyCactus_2x2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Decoy`
 **Name:** Decoy  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Decoy {
@@ -31259,16 +28756,11 @@ Decoy {
 }
 ```
 
-</details>
-
 ---
 
 ### `ExplodingDecoy`
 **Description:** Explodes when it dies.  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ExplodingDecoy {
@@ -31290,16 +28782,11 @@ ExplodingDecoy {
 }
 ```
 
-</details>
-
 ---
 
 ### `ElectricNail`
 **Name:** Electric Nail  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ElectricNail {
@@ -31340,16 +28827,11 @@ ElectricNail {
 }
 ```
 
-</details>
-
 ---
 
 ### `RubberFistBot`
 **Name:** Rubber Fist Bot  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RubberFistBot {
@@ -31401,16 +28883,11 @@ RubberFistBot {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tombstone_Ghost`
 **Name:** Tombstone  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tombstone_Ghost {
@@ -31449,16 +28926,11 @@ Tombstone_Ghost {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tombstone_Zombie`
 **Name:** Tombstone  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tombstone_Zombie {
@@ -31497,16 +28969,11 @@ Tombstone_Zombie {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tombstone_ManaIdol`
 **Name:** Tombstone  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tombstone_ManaIdol {
@@ -31548,16 +29015,11 @@ Tombstone_ManaIdol {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cactus`
 **Name:** Cactus  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cactus {
@@ -31601,16 +29063,11 @@ Cactus {
 }
 ```
 
-</details>
-
 ---
 
 ### `Twister`
 **Name:** Twister  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Twister {
@@ -31667,15 +29124,10 @@ Twister {
 }
 ```
 
-</details>
-
 ---
 
 ### `NeutralTwister`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NeutralTwister {
@@ -31692,16 +29144,11 @@ NeutralTwister {
 }
 ```
 
-</details>
-
 ---
 
 ### `MiniNuke`
 **Name:** Mini Nuke  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MiniNuke {
@@ -31743,16 +29190,11 @@ MiniNuke {
 }
 ```
 
-</details>
-
 ---
 
 ### `NeutronStar`
 **Name:** Neutron Star  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NeutronStar {
@@ -31858,15 +29300,10 @@ NeutronStar {
 }
 ```
 
-</details>
-
 ---
 
 ### `BlackHole`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BlackHole {
@@ -31879,16 +29316,11 @@ BlackHole {
 }
 ```
 
-</details>
-
 ---
 
 ### `HellHand`
 **Name:** Hell Hand  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HellHand {
@@ -31962,16 +29394,11 @@ HellHand {
 }
 ```
 
-</details>
-
 ---
 
 ### `CloningVat`
 **Name:** Cloning Vat  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CloningVat {
@@ -32030,16 +29457,11 @@ CloningVat {
 }
 ```
 
-</details>
-
 ---
 
 ### `GroundedSpear`
 **Name:** Spear  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GroundedSpear {
@@ -32112,16 +29534,11 @@ GroundedSpear {
 }
 ```
 
-</details>
-
 ---
 
 ### `LabSupportPillar`
 **Name:** Support Pillar  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LabSupportPillar {
@@ -32166,16 +29583,11 @@ LabSupportPillar {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpewerPill_Normal`
 **Name:** Creep Pill  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpewerPill_Normal {
@@ -32214,16 +29626,11 @@ SpewerPill_Normal {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpewerPill_Fire`
 **Name:** Lava Pill  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpewerPill_Fire {
@@ -32240,16 +29647,11 @@ SpewerPill_Fire {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpewerPill_Tar`
 **Name:** Tar Pill  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpewerPill_Tar {
@@ -32266,16 +29668,11 @@ SpewerPill_Tar {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpewerPillTubeL`
 **Name:** Pill Tube  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpewerPillTubeL {
@@ -32315,15 +29712,10 @@ SpewerPillTubeL {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpewerPillTubeR`
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpewerPillTubeR {
@@ -32335,16 +29727,11 @@ SpewerPillTubeR {
 }
 ```
 
-</details>
-
 ---
 
 ### `MiniVolcano`
 **Name:** Mini Volcano  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MiniVolcano {
@@ -32385,16 +29772,11 @@ MiniVolcano {
 }
 ```
 
-</details>
-
 ---
 
 ### `PunchingBag`
 **Name:** Punching Bag  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PunchingBag {
@@ -32430,16 +29812,11 @@ PunchingBag {
 }
 ```
 
-</details>
-
 ---
 
 ### `GasCloud`
 **Name:** Gas Cloud  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GasCloud {
@@ -32490,16 +29867,11 @@ GasCloud {
 }
 ```
 
-</details>
-
 ---
 
 ### `Grenade`
 **Name:** Grenade  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Grenade {
@@ -32553,16 +29925,11 @@ Grenade {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlotMachine`
 **Name:** Slot Machine  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlotMachine {
@@ -32638,16 +30005,11 @@ SlotMachine {
 }
 ```
 
-</details>
-
 ---
 
 ### `CovenCandle`
 **Name:** Candle  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CovenCandle {
@@ -32731,16 +30093,11 @@ CovenCandle {
 }
 ```
 
-</details>
-
 ---
 
 ### `BloatEye`
 **Name:** Peeper  
 **Source:** `inanimate_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BloatEye {
@@ -32782,16 +30139,11 @@ BloatEye {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pyrophina`
 **Name:** Pyrophina  
 **Source:** `kaijus.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pyrophina {
@@ -32895,16 +30247,11 @@ Pyrophina {
 }
 ```
 
-</details>
-
 ---
 
 ### `Zaratana`
 **Name:** Zaratana  
 **Source:** `kaijus.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Zaratana {
@@ -33032,16 +30379,11 @@ Zaratana {
 }
 ```
 
-</details>
-
 ---
 
 ### `PyrophinaVS`
 **Name:** Pyrophina  
 **Source:** `kaijus.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PyrophinaVS {
@@ -33167,16 +30509,11 @@ PyrophinaVS {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZaratanaVS`
 **Name:** Zaratana  
 **Source:** `kaijus.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZaratanaVS {
@@ -33328,16 +30665,11 @@ ZaratanaVS {
 }
 ```
 
-</details>
-
 ---
 
 ### `PyrophinaFamiliar`
 **Name:** Pyrophina (Friendly)  
 **Source:** `kaijus.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PyrophinaFamiliar {
@@ -33412,16 +30744,11 @@ PyrophinaFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `ZaratanaFamiliar`
 **Name:** Zaratana (Friendly)  
 **Source:** `kaijus.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ZaratanaFamiliar {
@@ -33503,16 +30830,11 @@ ZaratanaFamiliar {
 }
 ```
 
-</details>
-
 ---
 
 ### `CanCreeper`
 **Name:** Can Creeper  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CanCreeper {
@@ -33597,16 +30919,11 @@ CanCreeper {
 }
 ```
 
-</details>
-
 ---
 
 ### `CanCreeperOut`
 **Name:** Can Creeper  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CanCreeperOut {
@@ -33669,16 +30986,11 @@ CanCreeperOut {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigSlime`
 **Name:** Big Slime  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigSlime {
@@ -33738,16 +31050,11 @@ BigSlime {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedSlime`
 **Name:** Medium Slime  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedSlime {
@@ -33802,16 +31109,11 @@ MedSlime {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallSlime`
 **Name:** Small Slime  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallSlime {
@@ -33863,16 +31165,11 @@ SmallSlime {
 }
 ```
 
-</details>
-
 ---
 
 ### `Gambit`
 **Name:** Gambit  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Gambit {
@@ -33954,16 +31251,11 @@ Gambit {
 }
 ```
 
-</details>
-
 ---
 
 ### `Flushmaster`
 **Name:** Flushmaster  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Flushmaster {
@@ -34028,16 +31320,11 @@ Flushmaster {
 }
 ```
 
-</details>
-
 ---
 
 ### `MaggotLord`
 **Name:** Mama Maggot  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MaggotLord {
@@ -34133,16 +31420,11 @@ MaggotLord {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lenny`
 **Name:** Lenny  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lenny {
@@ -34291,16 +31573,11 @@ Lenny {
 }
 ```
 
-</details>
-
 ---
 
 ### `Zodiac`
 **Name:** Zodiac  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Zodiac {
@@ -34385,16 +31662,11 @@ Zodiac {
 }
 ```
 
-</details>
-
 ---
 
 ### `Cerberubs`
 **Name:** Cerberubs  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Cerberubs {
@@ -34529,16 +31801,11 @@ Cerberubs {
 }
 ```
 
-</details>
-
 ---
 
 ### `AstroZombie`
 **Name:** Abandoned One  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AstroZombie {
@@ -34631,16 +31898,11 @@ AstroZombie {
 }
 ```
 
-</details>
-
 ---
 
 ### `AstroZombieHead`
 **Name:** Abandoned One  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AstroZombieHead {
@@ -34708,16 +31970,11 @@ AstroZombieHead {
 }
 ```
 
-</details>
-
 ---
 
 ### `Spewer`
 **Name:** Spewer  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Spewer {
@@ -34957,16 +32214,11 @@ Spewer {
 }
 ```
 
-</details>
-
 ---
 
 ### `IceElemental`
 **Name:** Frostbiter  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 IceElemental {
@@ -35039,16 +32291,11 @@ IceElemental {
 }
 ```
 
-</details>
-
 ---
 
 ### `RatKing`
 **Name:** Rat King  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RatKing {
@@ -35152,16 +32399,11 @@ RatKing {
 }
 ```
 
-</details>
-
 ---
 
 ### `GirlDino`
 **Name:** Pachysaurus [img:female]  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GirlDino {
@@ -35252,16 +32494,11 @@ GirlDino {
 }
 ```
 
-</details>
-
 ---
 
 ### `BoyDino`
 **Name:** Pachysaurus [img:male]  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BoyDino {
@@ -35350,16 +32587,11 @@ BoyDino {
 }
 ```
 
-</details>
-
 ---
 
 ### `TheBloat`
 **Name:** The Bloat  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TheBloat {
@@ -35452,16 +32684,11 @@ TheBloat {
 }
 ```
 
-</details>
-
 ---
 
 ### `LightningElemental`
 **Name:** Zapphauser  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 LightningElemental {
@@ -35556,16 +32783,11 @@ LightningElemental {
 }
 ```
 
-</details>
-
 ---
 
 ### `DrMangler`
 **Name:** Dr. Mangler  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DrMangler {
@@ -35651,16 +32873,11 @@ DrMangler {
 }
 ```
 
-</details>
-
 ---
 
 ### `ManglersMonster`
 **Name:** Mangler's Monster  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ManglersMonster {
@@ -35734,16 +32951,11 @@ ManglersMonster {
 }
 ```
 
-</details>
-
 ---
 
 ### `GlowingBear`
 **Name:** Glowing Bear  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 GlowingBear {
@@ -35801,16 +33013,11 @@ GlowingBear {
 }
 ```
 
-</details>
-
 ---
 
 ### `Death`
 **Name:** Death!  
 **Source:** `minibosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Death {
@@ -35878,16 +33085,11 @@ Death {
 }
 ```
 
-</details>
-
 ---
 
 ### `ShadowCat`
 **Name:** Shadow Cat  
 **Source:** `nemesis_bosses.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ShadowCat {
@@ -35949,16 +33151,11 @@ ShadowCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `static_object_template`
 **Name:** STATIC OBJECT  
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 static_object_template {
@@ -35997,15 +33194,10 @@ static_object_template {
 }
 ```
 
-</details>
-
 ---
 
 ### `Static1x1A`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Static1x1A {
@@ -36016,15 +33208,10 @@ Static1x1A {
 }
 ```
 
-</details>
-
 ---
 
 ### `Static1x1B`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Static1x1B {
@@ -36035,15 +33222,10 @@ Static1x1B {
 }
 ```
 
-</details>
-
 ---
 
 ### `Static1x1C`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Static1x1C {
@@ -36054,15 +33236,10 @@ Static1x1C {
 }
 ```
 
-</details>
-
 ---
 
 ### `StaticTallA`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StaticTallA {
@@ -36077,15 +33254,10 @@ StaticTallA {
 }
 ```
 
-</details>
-
 ---
 
 ### `StaticTallB`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 StaticTallB {
@@ -36100,15 +33272,10 @@ StaticTallB {
 }
 ```
 
-</details>
-
 ---
 
 ### `Static2x2A`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Static2x2A {
@@ -36125,15 +33292,10 @@ Static2x2A {
 }
 ```
 
-</details>
-
 ---
 
 ### `Static2x2B`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Static2x2B {
@@ -36150,15 +33312,10 @@ Static2x2B {
 }
 ```
 
-</details>
-
 ---
 
 ### `CandleSmall`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CandleSmall {
@@ -36176,15 +33333,10 @@ CandleSmall {
 }
 ```
 
-</details>
-
 ---
 
 ### `CandleBig`
 **Source:** `non_interactive_objects.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CandleBig {
@@ -36207,16 +33359,11 @@ CandleBig {
 }
 ```
 
-</details>
-
 ---
 
 ### `PickupBase`
 **Name:** Nothing!  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PickupBase {
@@ -36249,16 +33396,11 @@ PickupBase {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin`
 **Name:** Coin  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin {
@@ -36289,15 +33431,10 @@ Coin {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin2`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin2 {
@@ -36309,15 +33446,10 @@ Coin2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin3`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin3 {
@@ -36329,15 +33461,10 @@ Coin3 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin4`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin4 {
@@ -36349,15 +33476,10 @@ Coin4 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin5`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin5 {
@@ -36369,15 +33491,10 @@ Coin5 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin6`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin6 {
@@ -36389,15 +33506,10 @@ Coin6 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin7`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin7 {
@@ -36409,15 +33521,10 @@ Coin7 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin8`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin8 {
@@ -36429,15 +33536,10 @@ Coin8 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin9`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin9 {
@@ -36449,15 +33551,10 @@ Coin9 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Coin10`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Coin10 {
@@ -36469,16 +33566,11 @@ Coin10 {
 }
 ```
 
-</details>
-
 ---
 
 ### `FoodBase`
 **Name:** Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FoodBase {
@@ -36508,16 +33600,11 @@ FoodBase {
 }
 ```
 
-</details>
-
 ---
 
 ### `Food`
 **Name:** Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Food {
@@ -36547,16 +33634,11 @@ Food {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigFood`
 **Name:** Medium Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigFood {
@@ -36586,16 +33668,11 @@ BigFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `BiggestFood`
 **Name:** Big Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BiggestFood {
@@ -36625,16 +33702,11 @@ BiggestFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `PoisonFood`
 **Name:** Poisoned Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoisonFood {
@@ -36673,16 +33745,11 @@ PoisonFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bait`
 **Name:** Bait  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bait {
@@ -36710,16 +33777,11 @@ Bait {
 }
 ```
 
-</details>
-
 ---
 
 ### `PoisonBait`
 **Name:** Poisoned Bait  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PoisonBait {
@@ -36756,16 +33818,11 @@ PoisonBait {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedFood`
 **Name:** Cooked Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedFood {
@@ -36790,16 +33847,11 @@ CookedFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedBigFood`
 **Name:** Cooked Medium Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedBigFood {
@@ -36824,15 +33876,10 @@ CookedBigFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedChickenLeg`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedChickenLeg {
@@ -36846,16 +33893,11 @@ CookedChickenLeg {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedBiggestFood`
 **Name:** Cooked Big Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedBiggestFood {
@@ -36880,16 +33922,11 @@ CookedBiggestFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedPoisonFood`
 **Name:** Cooked Poisoned Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedPoisonFood {
@@ -36921,16 +33958,11 @@ CookedPoisonFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `PurifiedPoisonFood`
 **Name:** Purified Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PurifiedPoisonFood {
@@ -36956,16 +33988,11 @@ PurifiedPoisonFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedPurifiedPoisonFood`
 **Name:** Cooked Purified Food  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedPurifiedPoisonFood {
@@ -36990,16 +34017,11 @@ CookedPurifiedPoisonFood {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedBait`
 **Name:** Cooked Bait  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedBait {
@@ -37026,16 +34048,11 @@ CookedBait {
 }
 ```
 
-</details>
-
 ---
 
 ### `CookedPoisonBait`
 **Name:** Cooked Poisoned Bait  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CookedPoisonBait {
@@ -37069,16 +34086,11 @@ CookedPoisonBait {
 }
 ```
 
-</details>
-
 ---
 
 ### `Scrap`
 **Name:** Scrap  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Scrap {
@@ -37107,16 +34119,11 @@ Scrap {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedScrap`
 **Name:** Medium Scrap  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedScrap {
@@ -37145,16 +34152,11 @@ MedScrap {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigScrap`
 **Name:** Big Scrap  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigScrap {
@@ -37183,16 +34185,11 @@ BigScrap {
 }
 ```
 
-</details>
-
 ---
 
 ### `Blessing`
 **Name:** Blessing  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Blessing {
@@ -37214,16 +34211,11 @@ Blessing {
 }
 ```
 
-</details>
-
 ---
 
 ### `Antidote`
 **Name:** Antidote  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Antidote {
@@ -37248,16 +34240,11 @@ Antidote {
 }
 ```
 
-</details>
-
 ---
 
 ### `Catnip`
 **Name:** Catnip  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Catnip {
@@ -37282,16 +34269,11 @@ Catnip {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedCatnip`
 **Name:** Medium Catnip  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedCatnip {
@@ -37316,16 +34298,11 @@ MedCatnip {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigCatnip`
 **Name:** Big Catnip  
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigCatnip {
@@ -37350,15 +34327,10 @@ BigCatnip {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomPickup {
@@ -37378,15 +34350,10 @@ RandomPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomNonCoinPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomNonCoinPickup {
@@ -37405,15 +34372,10 @@ RandomNonCoinPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomCatnipPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomCatnipPickup {
@@ -37430,15 +34392,10 @@ RandomCatnipPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomBiggerCatnipPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomBiggerCatnipPickup {
@@ -37454,15 +34411,10 @@ RandomBiggerCatnipPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomFoodPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomFoodPickup {
@@ -37479,15 +34431,10 @@ RandomFoodPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomBiggerFoodPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomBiggerFoodPickup {
@@ -37503,15 +34450,10 @@ RandomBiggerFoodPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomArmorPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomArmorPickup {
@@ -37528,15 +34470,10 @@ RandomArmorPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomBiggerArmorPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomBiggerArmorPickup {
@@ -37552,15 +34489,10 @@ RandomBiggerArmorPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomBiggerPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomBiggerPickup {
@@ -37580,15 +34512,10 @@ RandomBiggerPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `RandomBiggestPickup`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RandomBiggestPickup {
@@ -37608,15 +34535,10 @@ RandomBiggestPickup {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlotMachineNormalPickupReward`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlotMachineNormalPickupReward {
@@ -37640,15 +34562,10 @@ SlotMachineNormalPickupReward {
 }
 ```
 
-</details>
-
 ---
 
 ### `SlotMachineJackpotCoinsReward`
 **Source:** `pickups.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SlotMachineJackpotCoinsReward {
@@ -37665,16 +34582,11 @@ SlotMachineJackpotCoinsReward {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat`
 **Name:** {Catname}  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat {
@@ -37746,15 +34658,10 @@ PlayerCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `CustomEnemyCat`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 CustomEnemyCat {
@@ -37786,15 +34693,10 @@ CustomEnemyCat {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_Shade`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_Shade {
@@ -37815,15 +34717,10 @@ PlayerCat_Shade {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_ThiefShade`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_ThiefShade {
@@ -37852,15 +34749,10 @@ PlayerCat_ThiefShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_ThiefShade2`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_ThiefShade2 {
@@ -37888,15 +34780,10 @@ PlayerCat_ThiefShade2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_MonkShade`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_MonkShade {
@@ -37925,16 +34812,11 @@ PlayerCat_MonkShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_MiniMe`
 **Name:** Mini-{Catname}  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_MiniMe {
@@ -37955,16 +34837,11 @@ PlayerCat_MiniMe {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_MiniMiniMe`
 **Name:** Mini-Mini-{Catname}  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_MiniMiniMe {
@@ -37985,15 +34862,10 @@ PlayerCat_MiniMiniMe {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_MonkMiniMe`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_MonkMiniMe {
@@ -38005,16 +34877,11 @@ PlayerCat_MonkMiniMe {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_FleshGolem`
 **Name:** Flesh Golem  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_FleshGolem {
@@ -38025,16 +34892,11 @@ PlayerCat_FleshGolem {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_CambionMiniMe`
 **Name:** Mini-{Catname}  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_CambionMiniMe {
@@ -38067,15 +34929,10 @@ PlayerCat_CambionMiniMe {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_NecroShade`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_NecroShade {
@@ -38098,15 +34955,10 @@ PlayerCat_NecroShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_AncestralShade`
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_AncestralShade {
@@ -38126,16 +34978,11 @@ PlayerCat_AncestralShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_StevenShade`
 **Name:** Steven  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_StevenShade {
@@ -38159,16 +35006,11 @@ PlayerCat_StevenShade {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_MachineClone`
 **Name:** {Catname} Clone  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_MachineClone {
@@ -38184,16 +35026,11 @@ PlayerCat_MachineClone {
 }
 ```
 
-</details>
-
 ---
 
 ### `PlayerCat_ClotClone`
 **Name:** {Catname} Clone  
 **Source:** `player_cat.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PlayerCat_ClotClone {
@@ -38218,16 +35055,11 @@ PlayerCat_ClotClone {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bunny`
 **Name:** Bunny  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bunny {
@@ -38277,16 +35109,11 @@ Bunny {
 }
 ```
 
-</details>
-
 ---
 
 ### `Beaver`
 **Name:** Beaver  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Beaver {
@@ -38336,16 +35163,11 @@ Beaver {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pig`
 **Name:** Pig  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pig {
@@ -38395,16 +35217,11 @@ Pig {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dog`
 **Name:** Dog  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dog {
@@ -38454,16 +35271,11 @@ Dog {
 }
 ```
 
-</details>
-
 ---
 
 ### `Skunk`
 **Name:** Skunk  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Skunk {
@@ -38513,16 +35325,11 @@ Skunk {
 }
 ```
 
-</details>
-
 ---
 
 ### `Porcupine`
 **Name:** Porcupine  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Porcupine {
@@ -38572,16 +35379,11 @@ Porcupine {
 }
 ```
 
-</details>
-
 ---
 
 ### `Isaac`
 **Name:** Isaac  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Isaac {
@@ -38631,16 +35433,11 @@ Isaac {
 }
 ```
 
-</details>
-
 ---
 
 ### `Edmund`
 **Name:** Edmund  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Edmund {
@@ -38690,16 +35487,11 @@ Edmund {
 }
 ```
 
-</details>
-
 ---
 
 ### `Tyler`
 **Name:** Tyler  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Tyler {
@@ -38749,16 +35541,11 @@ Tyler {
 }
 ```
 
-</details>
-
 ---
 
 ### `FijiMermaid`
 **Name:** Fiji Mermaid  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FijiMermaid {
@@ -38808,16 +35595,11 @@ FijiMermaid {
 }
 ```
 
-</details>
-
 ---
 
 ### `JerseyDevil`
 **Name:** Jersey Devil  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JerseyDevil {
@@ -38867,16 +35649,11 @@ JerseyDevil {
 }
 ```
 
-</details>
-
 ---
 
 ### `Sonichu`
 **Name:** Sonichu  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Sonichu {
@@ -38926,16 +35703,11 @@ Sonichu {
 }
 ```
 
-</details>
-
 ---
 
 ### `Bigfoot`
 **Name:** Bigfoot  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Bigfoot {
@@ -38985,16 +35757,11 @@ Bigfoot {
 }
 ```
 
-</details>
-
 ---
 
 ### `Nessie`
 **Name:** Nessie  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Nessie {
@@ -39044,16 +35811,11 @@ Nessie {
 }
 ```
 
-</details>
-
 ---
 
 ### `Grey`
 **Name:** Grey Alien  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Grey {
@@ -39103,16 +35865,11 @@ Grey {
 }
 ```
 
-</details>
-
 ---
 
 ### `Mothman`
 **Name:** Mothman  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Mothman {
@@ -39162,16 +35919,11 @@ Mothman {
 }
 ```
 
-</details>
-
 ---
 
 ### `Slenderman`
 **Name:** Slendermann  
 **Source:** `rare_cat_tests.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Slenderman {
@@ -39224,16 +35976,11 @@ Slenderman {
 }
 ```
 
-</details>
-
 ---
 
 ### `OrganZodiac`
 **Name:** {organname}  
 **Source:** `rifthead.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 OrganZodiac {
@@ -39326,16 +36073,11 @@ OrganZodiac {
 }
 ```
 
-</details>
-
 ---
 
 ### `BigSlimeX`
 **Name:** Steven  
 **Source:** `rifthead.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 BigSlimeX {
@@ -39396,16 +36138,11 @@ BigSlimeX {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedSlimeX`
 **Name:** Steven  
 **Source:** `rifthead.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedSlimeX {
@@ -39461,16 +36198,11 @@ MedSlimeX {
 }
 ```
 
-</details>
-
 ---
 
 ### `SmallSlimeX`
 **Name:** Steven  
 **Source:** `rifthead.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SmallSlimeX {
@@ -39522,16 +36254,11 @@ SmallSlimeX {
 }
 ```
 
-</details>
-
 ---
 
 ### `Chaos`
 **Name:** Soahc  
 **Source:** `rifthead.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Chaos {
@@ -39904,16 +36631,11 @@ Chaos {
 }
 ```
 
-</details>
-
 ---
 
 ### `RiftKitten`
 **Name:** Gun  
 **Source:** `rifthead.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RiftKitten { 
@@ -39966,16 +36688,11 @@ RiftKitten {
 }
 ```
 
-</details>
-
 ---
 
 ### `Fly`
 **Name:** Fly  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Fly {
@@ -40030,16 +36747,11 @@ Fly {
 }
 ```
 
-</details>
-
 ---
 
 ### `Maggot`
 **Name:** Maggot  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Maggot {
@@ -40090,16 +36802,11 @@ Maggot {
 }
 ```
 
-</details>
-
 ---
 
 ### `Flea`
 **Name:** Flea  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Flea {
@@ -40147,16 +36854,11 @@ Flea {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pinky`
 **Name:** Pinky  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pinky {
@@ -40206,16 +36908,11 @@ Pinky {
 }
 ```
 
-</details>
-
 ---
 
 ### `MeatMinion`
 **Name:** Meat Minion  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MeatMinion {
@@ -40265,16 +36962,11 @@ MeatMinion {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dip`
 **Name:** Dip  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dip {
@@ -40325,16 +37017,11 @@ Dip {
 }
 ```
 
-</details>
-
 ---
 
 ### `RattleSnake`
 **Name:** Rattlesnek  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 RattleSnake {
@@ -40397,16 +37084,11 @@ RattleSnake {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinySpider`
 **Name:** Spiderling  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinySpider {
@@ -40458,16 +37140,11 @@ TinySpider {
 }
 ```
 
-</details>
-
 ---
 
 ### `Wisp`
 **Name:** Wisp  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Wisp {
@@ -40533,16 +37210,11 @@ Wisp {
 }
 ```
 
-</details>
-
 ---
 
 ### `MoonWorm`
 **Name:** Moon Worm  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MoonWorm {
@@ -40596,16 +37268,11 @@ MoonWorm {
 }
 ```
 
-</details>
-
 ---
 
 ### `Invader`
 **Name:** Schpidenbot  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Invader {
@@ -40661,16 +37328,11 @@ Invader {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinyTumor`
 **Name:** Tiny Tumor  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinyTumor {
@@ -40724,16 +37386,11 @@ TinyTumor {
 }
 ```
 
-</details>
-
 ---
 
 ### `Clot`
 **Name:** Clot  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Clot {
@@ -40794,16 +37451,11 @@ Clot {
 }
 ```
 
-</details>
-
 ---
 
 ### `FrankPinky`
 **Name:** Frank's Bean  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FrankPinky {
@@ -40859,16 +37511,11 @@ FrankPinky {
 }
 ```
 
-</details>
-
 ---
 
 ### `Lice`
 **Name:** Louse  
 **Source:** `small_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Lice {
@@ -40917,16 +37564,11 @@ Lice {
 }
 ```
 
-</details>
-
 ---
 
 ### `Terminator1`
 **Name:** C-800  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Terminator1 {
@@ -41224,16 +37866,11 @@ Terminator1 {
 }
 ```
 
-</details>
-
 ---
 
 ### `Terminator2`
 **Name:** C-1000  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Terminator2 {
@@ -41374,16 +38011,11 @@ Terminator2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `TankCat_Terminator`
 **Name:** Robo-Maisie  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TankCat_Terminator {
@@ -41466,16 +38098,11 @@ TankCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `MageCat_Terminator`
 **Name:** Robo-Lucy  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MageCat_Terminator {
@@ -41511,16 +38138,11 @@ MageCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `HunterCat_Terminator`
 **Name:** Robo-Fenrir  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 HunterCat_Terminator {
@@ -41595,16 +38217,11 @@ HunterCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThiefCat_Terminator`
 **Name:** Robo-Dack  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThiefCat_Terminator {
@@ -41641,16 +38258,11 @@ ThiefCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `MedicCat_Terminator`
 **Name:** Robo-Marshmallow  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MedicCat_Terminator {
@@ -41688,16 +38300,11 @@ MedicCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `FighterCat_Terminator`
 **Name:** Robo-Magnus  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FighterCat_Terminator {
@@ -41733,16 +38340,11 @@ FighterCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `Pebbles_Terminator`
 **Name:** Robo-Pebbles  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Pebbles_Terminator {
@@ -41826,16 +38428,11 @@ Pebbles_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `NecroCat_Terminator`
 **Name:** Robo-Morana  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 NecroCat_Terminator {
@@ -41872,16 +38469,11 @@ NecroCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `TinkererCat_Terminator`
 **Name:** Robo-Franklin  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 TinkererCat_Terminator {
@@ -41917,16 +38509,11 @@ TinkererCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `ButcherCat_Terminator`
 **Name:** Robo-Gein  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ButcherCat_Terminator {
@@ -41962,16 +38549,11 @@ ButcherCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `PsychicCat_Terminator`
 **Name:** Robo-Alice  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 PsychicCat_Terminator {
@@ -42007,16 +38589,11 @@ PsychicCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidCat_Terminator`
 **Name:** Robo-Draven  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidCat_Terminator {
@@ -42110,16 +38687,11 @@ DruidCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `DruidCrow_Terminator`
 **Name:** Robo-Draven's Crow  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DruidCrow_Terminator {
@@ -42131,16 +38703,11 @@ DruidCrow_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `MonkCat_Terminator`
 **Name:** Robo-Chan Hung  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 MonkCat_Terminator {
@@ -42176,16 +38743,11 @@ MonkCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `JesterCat_Terminator`
 **Name:** Robo-Arthur  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 JesterCat_Terminator {
@@ -42222,16 +38784,11 @@ JesterCat_Terminator {
 }
 ```
 
-</details>
-
 ---
 
 ### `T3Hitler`
 **Name:** Hitler  
 **Source:** `terminator.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 T3Hitler {
@@ -42538,16 +39095,11 @@ T3Hitler {
 }
 ```
 
-</details>
-
 ---
 
 ### `SpearGuy`
 **Name:** Spear Test Guy  
 **Source:** `test_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SpearGuy {
@@ -42592,16 +39144,11 @@ SpearGuy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Dummy`
 **Name:** Dummy Cat  
 **Source:** `test_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Dummy {
@@ -42634,16 +39181,11 @@ Dummy {
 }
 ```
 
-</details>
-
 ---
 
 ### `Test2x2`
 **Name:** Test 2x2  
 **Source:** `test_enemies.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 Test2x2 {
@@ -42688,16 +39230,11 @@ Test2x2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThrobbingKing`
 **Name:** Throbbing King  
 **Source:** `throbbing_king.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrobbingKing {
@@ -42808,16 +39345,11 @@ ThrobbingKing {
 }
 ```
 
-</details>
-
 ---
 
 ### `ThrobbingKing2`
 **Name:** Throbbing King  
 **Source:** `throbbing_king.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 ThrobbingKing2 {
@@ -42881,16 +39413,11 @@ ThrobbingKing2 {
 }
 ```
 
-</details>
-
 ---
 
 ### `SeducedBoulder`
 **Name:** Seduced Boulder  
 **Source:** `world_event_specials.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 SeducedBoulder {
@@ -42937,16 +39464,11 @@ SeducedBoulder {
 }
 ```
 
-</details>
-
 ---
 
 ### `EventBountyHunter`
 **Name:** Bounty Hunter  
 **Source:** `world_event_specials.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 EventBountyHunter { 
@@ -43011,15 +39533,10 @@ EventBountyHunter {
 }
 ```
 
-</details>
-
 ---
 
 ### `DeadPinky`
 **Source:** `world_event_specials.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 DeadPinky { 
@@ -43033,15 +39550,10 @@ DeadPinky {
 }
 ```
 
-</details>
-
 ---
 
 ### `FastFetus`
 **Source:** `world_event_specials.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FastFetus { 
@@ -43053,15 +39565,10 @@ FastFetus {
 }
 ```
 
-</details>
-
 ---
 
 ### `FastRat`
 **Source:** `world_event_specials.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 FastRat { 
@@ -43073,16 +39580,11 @@ FastRat {
 }
 ```
 
-</details>
-
 ---
 
 ### `AlienEgg`
 **Name:** Strange Egg  
 **Source:** `world_event_specials.gon`  
-
-<details>
-<summary><b>Raw .gon</b></summary>
 
 ```
 AlienEgg {
@@ -43142,8 +39644,6 @@ AlienEgg {
     }
 }
 ```
-
-</details>
 
 ---
 
