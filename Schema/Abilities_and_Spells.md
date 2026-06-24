@@ -81,9 +81,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2339 |
+| [`desc`](./Strings.md#string-desc) | String | The localization key for the ability's display description. | 1641 |
+| [`name`](./Strings.md#string-name) | String | The localization key for the ability's display name. | 1597 |
 | [`class`](./Enums.md#enum-class) | Enum | Categorizes the ability for specific UI filters. | 876 |
 | [`type_icon`](./Strings.md#string-type_icon) | String |  | 283 |
+| `animate_name` | Boolean | If true, adds a visual pop/animation to the name text when cast. | 177 |
 | `icon_shell_frame` | Mixed |  | 28 |
 | `is_move` | Mixed |  | 20 |
 | [`ability_icon`](./Enums.md#enum-ability_icon) | Enum | The UI icon to display in the action bar. | 14 |
@@ -93,8 +95,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `is_basic_attack` | Boolean |  | 4 |
 | [`icon_damage_type`](./Enums.md#enum-icon_damage_type) | Enum |  | 3 |
 | `is_trinket` | Boolean |  | 3 |
+| `dont_visualize_ai` | Boolean |  | 2 |
 | [`icon_damage_display_suffix`](./Strings.md#string-icon_damage_display_suffix) | String |  | 2 |
 | `is_weapon` | Boolean |  | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
 
@@ -264,9 +268,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1447 |
 | `max_range` | Number | The maximum and minimum distance required to cast. | 1088 |
 | `max_aoe` | Number | The maximum and minimum radius/length of the AoE. | 795 |
+| `min_range` | Number | The maximum and minimum distance required to cast. | 583 |
 | [`target_mode`](./Enums.md#enum-target_mode) | Enum | How the cursor operates (`tile`, `direction`, `none`). | 503 |
 | [`restrictions`](./Arrays.md#array-restrictions) | Array | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 463 |
 | [`aoe_mode`](./Enums.md#enum-aoe_mode) | Enum | The shape of the area (`standard`, `line`, `cross`, `square`, `custom`). | 432 |
@@ -301,63 +305,65 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consider_trample` | Boolean | AI consideration for moving through units. | 9 |
 | [`custom_range`](./Arrays.md#array-custom_range) | Array | Overrides standard range scaling. | 7 |
 | `N` | Number | Variable modifier parameter. | 7 |
-| [`custom_aoe_util`](./Arrays.md#array-custom_aoe_util) | Array | Utility variants of custom AoE definitions. | 6 |
-| [`toss_direction_restriction`](./Enums.md#enum-toss_direction_restriction) | Enum | Limits which ways an entity can be tossed. | 6 |
 | `always_bounce` | Boolean | Forces the attack/projectile to bounce regardless of hit. | 6 |
+| [`custom_aoe_util`](./Arrays.md#array-custom_aoe_util) | Array | Utility variants of custom AoE definitions. | 6 |
 | `multihit_max` | Number | Variable limits for random multihit abilities. | 6 |
 | `multihit_min` | Number | Variable limits for random multihit abilities. | 6 |
 | `reorient_thrown_character` | Boolean | Forces a thrown entity to face a certain way. | 6 |
-| [`aoe_tile_requires_element`](./Enums.md#enum-aoe_tile_requires_element) | Enum | Only affects tiles painted with a specific element. | 5 |
+| [`toss_direction_restriction`](./Enums.md#enum-toss_direction_restriction) | Enum | Limits which ways an entity can be tossed. | 6 |
 | `aoe_hint_teamcast` | Boolean | Visual hint for cooperative casting abilities. | 5 |
+| [`aoe_tile_requires_element`](./Enums.md#enum-aoe_tile_requires_element) | Enum | Only affects tiles painted with a specific element. | 5 |
 | `distance_sort_targets` | Mixed | Prioritizes targets based on proximity. | 5 |
 | `dont_orient_aoe` | Boolean | Prevents the AoE shape from rotating with the character. | 5 |
 | `hint_can_target_pickups` | Boolean | UI hint that the player can target items on the ground. | 5 |
 | `max_bounces` | Number | Hard cap on how many times a bouncing effect can trigger. | 5 |
 | `splash_damage_aoe_begin` | Number | At what radius splash damage starts applying. | 5 |
 | [`aoe_chance`](./Enums.md#enum-aoe_chance) | Enum | Percentage chance for the AoE to trigger. | 4 |
-| [`mouse_offset`](./Arrays.md#array-mouse_offset) | Array | Visual offset for the targeting cursor. | 4 |
 | `as_the_crow_flies` | Boolean | Calculates range ignoring all pathing terrain obstacles. | 4 |
 | `force_ai_target_as_spell` | Boolean | Forces the AI to treat a physical move like a spell for targeting logic. | 4 |
+| [`mouse_offset`](./Arrays.md#array-mouse_offset) | Array | Visual offset for the targeting cursor. | 4 |
 | `range_display_include_aoe` | Boolean | Visual: shows the full AoE potential when previewing range. | 4 |
 | `shotgun_mode` | Boolean | Deals more damage/hits if targets are closer. | 4 |
 | `shuffle_tile_order` | Boolean | Randomizes the execution order of AoE tiles. | 4 |
 | `upgrade_straight_shot_to_boomerang` | Boolean | Makes the projectile return to caster. | 4 |
-| [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | Targets only tiles with this specific tag. | 3 |
+| `dont_orient` | Boolean | Prevents the character from turning to face the target. | 3 |
 | `low_health_character_threshold` | Mixed | AI targeting threshold for seeking weak targets. | 3 |
 | `randomize_target_within_range` | Number | Picks a random valid tile instead of the user's click. | 3 |
+| [`special_tile_tag`](./Enums.md#enum-special_tile_tag) | Enum | Targets only tiles with this specific tag. | 3 |
 | `track_target` | Boolean | Projectile/Effect follows moving targets. | 3 |
-| [`range_bonuses`](./Enums.md#enum-range_bonuses) | Enum | How much extra range is added by stats/passives. | 2 |
-| [`target_requires_element`](./Arrays.md#array-target_requires_element) | Array | Target must be afflicted with this element. | 2 |
 | `corpse_priority` | Number | AI preference for targeting dead bodies. | 2 |
 | `hint_can_target_empty` | Boolean | UI hint that the player can click an empty tile. | 2 |
 | `low_gravity_boostable` | Boolean | Can be affected by low gravity wind/effects. | 2 |
 | `prioritize_change_direction` | Boolean | AI preference to attack from different angles. | 2 |
+| [`range_bonuses`](./Enums.md#enum-range_bonuses) | Enum | How much extra range is added by stats/passives. | 2 |
 | `range_display_include_direction` | Boolean | Visual: shows directional arrows. | 2 |
 | `recalc_target_on_castpoint` | Boolean | Re-checks if target is valid at the exact frame of cast. | 2 |
 | `redirect_location_if_blocked` | Boolean | Shifts target to adjacent tile if original is invalid. | 2 |
+| [`target_requires_element`](./Arrays.md#array-target_requires_element) | Array | Target must be afflicted with this element. | 2 |
 | `trample_allies_too` | Boolean | Trample movement damages allies in the path. | 2 |
 | [`adjust_target`](./Enums.md#enum-adjust_target) | Enum | Tweaks target selection post-cast. | 1 |
-| [`custom_aoe_mirror`](./Arrays.md#array-custom_aoe_mirror) | Array | How the custom shape mirrors when facing left vs right. | 1 |
-| [`custom_aoe_util_mirror`](./Arrays.md#array-custom_aoe_util_mirror) | Array |  | 1 |
-| [`knockback_modifier`](./Enums.md#enum-knockback_modifier) | Enum | Multiplier for the knockback physics force. | 1 |
-| [`prioritize_throw_target_with_passive`](./Enums.md#enum-prioritize_throw_target_with_passive) | Enum | AI prefers throwing targets that have specific passives. | 1 |
-| [`range_symmetry`](./Enums.md#enum-range_symmetry) | Enum | Mirrors the range grid. | 1 |
-| [`restructions`](./Enums.md#enum-restructions) | Enum | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 1 |
 | `allow_diagonal_passthrough` | Boolean | Permits diagonal targeting through tight corners. | 1 |
 | `ally_priority` | Number | AI preference for targeting allies. | 1 |
 | `aoe_display_exclude_restrictions` | Boolean | Visual only: Hides invalid tiles from the AoE preview. | 1 |
 | `aoe_rotate_around_character_center` | Boolean | Anchors the AoE rotation to the character rather than the tile. | 1 |
+| `aoe_spell_on_land` | Boolean | Visual trigger when a jump lands. | 1 |
 | `bonus_pathing_leniency` | Number | Gives the AI leeway when calculating complex paths. | 1 |
+| [`custom_aoe_mirror`](./Arrays.md#array-custom_aoe_mirror) | Array | How the custom shape mirrors when facing left vs right. | 1 |
+| [`custom_aoe_util_mirror`](./Arrays.md#array-custom_aoe_util_mirror) | Array |  | 1 |
 | `damage_collided_only` | Boolean | Only damages the first entity the projectile/dash hits. | 1 |
 | `enemy_priority` | Number | AI preference for targeting enemies. | 1 |
 | `hint_can_target_static` | Boolean | UI hint that the player can target inanimate objects. | 1 |
+| [`knockback_modifier`](./Enums.md#enum-knockback_modifier) | Enum | Multiplier for the knockback physics force. | 1 |
 | `lingering` | Boolean | Target zone remains active across multiple turns. | 1 |
 | `mirror_custom_aoe` | Boolean | Flips the custom AoE array. | 1 |
+| [`prioritize_throw_target_with_passive`](./Enums.md#enum-prioritize_throw_target_with_passive) | Enum | AI prefers throwing targets that have specific passives. | 1 |
 | `randomize_knockback_direction_except_for_finisher` | Boolean | Chaotic knockback unless it kills the target. | 1 |
 | `range_excludes_self` | Boolean | Cannot click on the caster's tile. | 1 |
 | `range_max` | Number | Alternate syntax for `max_range`/`min_range`. | 1 |
 | `range_min` | Number | Alternate syntax for `max_range`/`min_range`. | 1 |
+| [`range_symmetry`](./Enums.md#enum-range_symmetry) | Enum | Mirrors the range grid. | 1 |
 | `remain_off_map` | Boolean | Keeps entity removed from the grid. | 1 |
+| [`restructions`](./Enums.md#enum-restructions) | Enum | Array of constraints (e.g., `must_have_line_of_sight`, `must_be_moveable`). | 1 |
 | `reverse_target_direction` | Boolean | Inverts the targeting vector. | 1 |
 | `spin_steps` | Number | Number of rotational increments for spin targeting. | 1 |
 | `uncounterable` | Boolean | Bypasses counter-attack passives. | 1 |
@@ -462,12 +468,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Enums.md#enum-object) | Enum |  | 184 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 86 |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 59 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 48 |
 | `ai_base_score` | Number |  | 31 |
 | [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives) | Block | Passives granted intrinsically to a spawned entity. | 20 |
 | [`first_turn`](./Enums.md#enum-first_turn) | Enum |  | 17 |
 | [`catdata`](./Enums.md#enum-catdata) | Enum | Defines genetic/clone data cloning. | 13 |
 | `clone_items` | Boolean | If true, transfers inventory to the clone. | 12 |
+| `lob` | Boolean |  | 4 |
 | [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses) | Block | Status effects applied immediately after an entity spawns. | 4 |
 | `size` | Number |  | 4 |
 | `face_camera` | Boolean |  | 2 |
@@ -478,6 +484,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`chapter`](./Enums.md#enum-chapter) | Enum |  | 1 |
 | `include_passives` | Boolean |  | 1 |
 | `redirect_location_if_blocked` | Boolean |  | 1 |
+| [`spawnin_animation`](./Enums.md#enum-spawnin_animation) | Enum |  | 1 |
 | `trigger_battle_start` | Boolean |  | 1 |
 
 </details>
@@ -787,7 +794,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 23 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 20 |
+| `use_placeholder` | Boolean |  | 1 |
 
 </details>
 
@@ -879,7 +886,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 17 |
 | `ear1` | Number | Sprite variant ID for the front ear. | 10 |
 | `tail` | Number | Sprite variant ID for the tail. | 10 |
 | `ear2` | Number |  | 9 |
@@ -895,6 +901,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `eye2` | Number |  | 1 |
 | `eyebrow1` | Number |  | 1 |
 | `eyebrow2` | Number |  | 1 |
+| `palette` | Number |  | 1 |
 
 </details>
 
@@ -1640,7 +1647,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| `delay` | Mixed | The float time delay in seconds. | 4 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
@@ -3074,9 +3081,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | The entity ID to spawn in place. | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | `clone_items` | Boolean | If true, transfers inventory to the new entity. | 1 |
 | `clone_referenced_catdata` | Boolean | If true, copies the genetic data of the popped cat. | 1 |
+| `no_splatter` | Boolean |  | 1 |
 
 </details>
 
@@ -3145,7 +3152,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`dead`](./Enums.md#enum-dead) | Enum |  | 1 |
+| [`dying`](./Enums.md#enum-dying) | Enum |  | 1 |
 
 </details>
 

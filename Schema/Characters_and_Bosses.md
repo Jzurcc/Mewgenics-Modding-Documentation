@@ -15,7 +15,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
 | [`properties`](./Characters_and_Bosses.md#context-properties) | Block | General engine properties. | 600 |
 | [`graphics`](./Characters_and_Bosses.md#context-graphics) | Block | Visual parameters and animation bindings. | 558 |
@@ -29,15 +28,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`brain`](./Enums.md#enum-brain) | Enum |  | 5 |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum |  | 5 |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum |  | 5 |
-| [`pattern`](./Characters_and_Bosses.md#context-pattern) | Block | AI sequence logic. | 3 |
 | `animation_suffix` | Number | Examples: `3, 4, 2` | 3 |
 | `initial_form` | Number | Examples: `1, 5, 0` | 3 |
 | `partial_animation_suffix` | Number | Examples: `3, 2, 1` | 3 |
+| [`pattern`](./Characters_and_Bosses.md#context-pattern) | Block | AI sequence logic. | 3 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | `end_turn_on_formswitch` | Boolean |  | 2 |
 | [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#context-ai_if_spawned_as_enemy) | Block | AI logic override used only if the character is spawned as an enemy. | 1 |
-| [`damage_instance`](./Characters_and_Bosses.md#context-damage_instance) | Block | Defines damage logic on contact. | 1 |
 | `consider_spells` | Boolean |  | 1 |
+| [`damage_instance`](./Characters_and_Bosses.md#context-damage_instance) | Block | Defines damage logic on contact. | 1 |
+| [`scale`](./Enums.md#enum-scale) | Enum |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -55,11 +56,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2609 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 166 |
+| [`ArmorPickup`](./Characters_and_Bosses.md#context-armorpickup) | Block | Pickup Logic: Defines what happens when an armor item is collected. | 3 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Examples: `{ ... }` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | `partial_animation_suffix` | Number | Examples: `4, 2` | 2 |
 | `animation_suffix` | Number | Examples: `1` | 1 |
+| `uifloaters_offset` | Number | Examples: `2.2` | 1 |
 
 </details>
 
@@ -83,7 +85,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 280 |
 | `movement` | Number |  | 278 |
 | `corpse_health` | Mixed |  | 195 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 155 |
 | `inherit_faction` | Boolean |  | 115 |
 | `dispersed_bonus_turns` | Number |  | 104 |
 | `base_mana_regen` | Number |  | 90 |
@@ -114,10 +115,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `exclude_from_hallucinate` | Boolean |  | 13 |
 | `round_end_bonus_turns` | Number |  | 13 |
 | `can_be_overkilled` | Boolean |  | 12 |
-| [`held_coins`](./Arrays.md#array-held_coins) | Array |  | 10 |
 | `can_collect_coins` | Boolean |  | 10 |
 | `deathpoof_size` | Number |  | 10 |
 | `dispersed_bonus_turns_consider_initiative` | Boolean |  | 10 |
+| [`held_coins`](./Arrays.md#array-held_coins) | Array |  | 10 |
 | `initial_health` | Number |  | 10 |
 | `can_eat_food` | Boolean |  | 9 |
 | `can_grant_extra_turns` | Boolean |  | 8 |
@@ -137,13 +138,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `round_start_bonus_turns` | Number |  | 4 |
 | `view_bleeding_characters_as_enemies` | Boolean |  | 4 |
 | [`aoe_pierce_mode`](./Enums.md#enum-aoe_pierce_mode) | Enum |  | 3 |
-| [`disallow_items`](./Enums.md#enum-disallow_items) | Enum |  | 3 |
 | `base_initiative` | Number |  | 3 |
 | `base_movement` | Number |  | 3 |
 | `catdata_ignore_skills` | Boolean |  | 3 |
+| [`disallow_items`](./Enums.md#enum-disallow_items) | Enum |  | 3 |
 | `always_triggers_traps` | Boolean |  | 2 |
-| `base_health_regen` | Number |  | 2 |
 | `base_health` | Number |  | 2 |
+| `base_health_regen` | Number |  | 2 |
 | `base_initial_mana` | Number |  | 2 |
 | `base_mana` | Number |  | 2 |
 | `blocking` | Boolean |  | 2 |
@@ -155,7 +156,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `must_start_facing_camera` | Boolean |  | 2 |
 | `tile_desire_cost` | Number |  | 2 |
 | `uncapturable` | Boolean |  | 2 |
-| [`inanimate_can_receive_specific_statuses`](./Arrays.md#array-inanimate_can_receive_specific_statuses) | Array |  | 1 |
 | `aggro_target_is_enemy` | Boolean |  | 1 |
 | `allow_flying_effect` | Boolean |  | 1 |
 | `allow_offmap_corpse` | Boolean |  | 1 |
@@ -166,13 +166,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `first_turn_is_main_turn` | Boolean |  | 1 |
 | `ignore_mouseover` | Boolean |  | 1 |
 | `ignore_tiles` | Boolean |  | 1 |
+| [`inanimate_can_receive_specific_statuses`](./Arrays.md#array-inanimate_can_receive_specific_statuses) | Array |  | 1 |
 | `mouseover_priority` | Number |  | 1 |
 | `move_points` | Number |  | 1 |
 | `pickup_type` | Number |  | 1 |
+| `scale` | Number |  | 1 |
 | `speculative_inanimate` | Boolean |  | 1 |
 | `static` | Boolean |  | 1 |
-| `two_fronts_switch` | Boolean |  | 1 |
 | `two_fronts` | Boolean |  | 1 |
+| `two_fronts_switch` | Boolean |  | 1 |
 | `view_bugs_as_enemies` | Boolean |  | 1 |
 
 </details>
@@ -364,74 +366,77 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 120 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 76 |
 | [`initial_form`](./Enums.md#enum-initial_form) | Enum |  | 56 |
 | [`Default`](./Characters_and_Bosses.md#context-default) | Block | Character Form: The baseline default behavior state. | 37 |
 | [`Normal`](./Characters_and_Bosses.md#context-normal) | Block | Character Form: Behavior and stats for the \'Normal\' state. | 11 |
 | [`Rage`](./Characters_and_Bosses.md#context-rage) | Block | Character Form: Behavior and stats for the \'Rage\' state. | 10 |
 | [`HasCat`](./Characters_and_Bosses.md#context-hascat) | Block | Character Form: Behavior and stats for the \'HasCat\' state. | 5 |
-| [`OffMap`](./Characters_and_Bosses.md#context-offmap) | Block | Character Form: Behavior and stats for the 'OffMap' state. | 4 |
 | [`default`](./Characters_and_Bosses.md#context-default) | Block | Baseline configuration. | 4 |
 | [`hot`](./Characters_and_Bosses.md#context-hot) | Block | Visual effect indicator. | 4 |
+| [`OffMap`](./Characters_and_Bosses.md#context-offmap) | Block | Character Form: Behavior and stats for the 'OffMap' state. | 4 |
 | [`AllAlive`](./Characters_and_Bosses.md#context-allalive) | Block | Encounter State: Logic executed when all specific entities are currently alive. | 3 |
 | [`Down`](./Characters_and_Bosses.md#context-down) | Block | Character Form: Behavior and stats for the \'Down\' state. | 3 |
 | [`Full`](./Characters_and_Bosses.md#context-full) | Block | Character Form: Behavior and stats for the \'Full\' state. | 3 |
 | [`OneAlive`](./Characters_and_Bosses.md#context-onealive) | Block | Encounter State: Logic executed when exactly one target is alive. | 3 |
 | [`TwoAlive`](./Characters_and_Bosses.md#context-twoalive) | Block | Encounter State: Logic executed when exactly two targets are alive. | 3 |
 | [`Up`](./Characters_and_Bosses.md#context-up) | Block | Character Form: Behavior and stats for the \'Up\' state. | 3 |
+| [`active`](./Characters_and_Bosses.md#context-active) | Block | Defines actively executed abilities. | 2 |
+| [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
+| [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | [`Big`](./Characters_and_Bosses.md#context-big) | Block | Character Form / AI State: Behavior and stats for the \'Big\' state. | 2 |
 | [`Boris`](./Characters_and_Bosses.md#context-boris) | Block | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 2 |
-| [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear) | Block | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 |
 | [`CaveMan`](./Characters_and_Bosses.md#context-caveman) | Block | Character Form: Behavior and stats for the \'CaveMan\' state. | 2 |
+| [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear) | Block | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 |
 | [`Empty`](./Characters_and_Bosses.md#context-empty) | Block | Character Form: Behavior and stats for the \'Empty\' state. | 2 |
 | [`Explosive`](./Characters_and_Bosses.md#context-explosive) | Block | Character Form: Behavior and stats for the \'Explosive\' state. | 2 |
 | [`Holding`](./Characters_and_Bosses.md#context-holding) | Block | Character Form: Behavior and stats for the \'Holding\' state. | 2 |
 | [`Holy`](./Characters_and_Bosses.md#context-holy) | Block | Character Form: Behavior and stats for the \'Holy\' state. | 2 |
 | [`NotPriming`](./Characters_and_Bosses.md#context-notpriming) | Block | Character Form: Behavior and stats when not charging an ability. | 2 |
+| `partial_animation_suffix` | Number |  | 2 |
+| [`passive`](./Characters_and_Bosses.md#context-passive) | Block | Intrinsic passive modifier. | 2 |
 | [`Priming`](./Characters_and_Bosses.md#context-priming) | Block | Character Form: Behavior and stats when charging an ability. | 2 |
 | [`Small`](./Characters_and_Bosses.md#context-small) | Block | Character Form: Behavior and stats for the \'Small\' state. | 2 |
 | [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform) | Block | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 |
 | [`Turtled`](./Characters_and_Bosses.md#context-turtled) | Block | Character Form: Behavior and stats for the 'Turtled' state. | 2 |
-| [`active`](./Characters_and_Bosses.md#context-active) | Block | Defines actively executed abilities. | 2 |
-| [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
-| [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
-| [`passive`](./Characters_and_Bosses.md#context-passive) | Block | Intrinsic passive modifier. | 2 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| `partial_animation_suffix` | Number |  | 2 |
 | [`Alert`](./Characters_and_Bosses.md#context-alert) | Block | AI State: The behavior profile used when the character is alerted to enemies. | 1 |
 | [`Angry`](./Characters_and_Bosses.md#context-angry) | Block | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 1 |
 | [`Attacker`](./Characters_and_Bosses.md#context-attacker) | Block | AI Role: Designates the character as an attacker rather than support. | 1 |
 | [`BellyFull`](./Characters_and_Bosses.md#context-bellyfull) | Block | Character Form / AI State: Behavior and stats for the \'BellyFull\' state. | 1 |
-| [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat) | Block | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 |
 | [`BigHolding`](./Characters_and_Bosses.md#context-bigholding) | Block | Character Form / AI State: Behavior and stats for the \'BigHolding\' state. | 1 |
+| [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat) | Block | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 |
 | [`Bishop`](./Characters_and_Bosses.md#context-bishop) | Block | Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 1 |
 | [`BlackHole`](./Characters_and_Bosses.md#context-blackhole) | Block | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 |
 | [`Bomb`](./Characters_and_Bosses.md#context-bomb) | Block | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 |
 | [`Bully`](./Characters_and_Bosses.md#context-bully) | Block | Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 |
+| `Butcher` | Block | Applies or references the 'Butcher' effect/state. | 1 |
 | [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby) | Block | Character Form: Behavior and stats for the \'CaveBaby\' state. | 1 |
-| [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat) | Block | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |
 | [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman) | Block | Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 |
+| [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat) | Block | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 |
 | [`Charging`](./Characters_and_Bosses.md#context-charging) | Block | Character Form / AI State: Behavior when charging an attack. | 1 |
 | [`Close`](./Characters_and_Bosses.md#context-close) | Block | AI Movement logic: Maneuvers into close/melee range. | 1 |
+| `Colorless` | Block | Applies or references the 'Colorless' effect/state. | 1 |
 | [`Cultist`](./Characters_and_Bosses.md#context-cultist) | Block | Character Form: Behavior and stats for the \'Cultist\' state. | 1 |
 | [`Damaged`](./Characters_and_Bosses.md#context-damaged) | Block | Character Form / AI State: Behavior when health is critically low. | 1 |
 | [`Default_Ceiling`](./Characters_and_Bosses.md#context-default_ceiling) | Block | Character Form: The baseline behavior state while attached to the ceiling. | 1 |
 | [`Default_Ground`](./Characters_and_Bosses.md#context-default_ground) | Block | Character Form: The baseline behavior state while on the ground. | 1 |
 | [`DesireMech`](./Characters_and_Bosses.md#context-desiremech) | Block | Character Form: Behavior and stats for the 'DesireMech' state. | 1 |
+| `Druid` | Block | Applies or references the 'Druid' effect/state. | 1 |
 | [`Drunker`](./Characters_and_Bosses.md#context-drunker) | Block | Character Form: Behavior and stats for the 'Drunker' state. | 1 |
-| [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed) | Block | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |
 | [`DualSword`](./Characters_and_Bosses.md#context-dualsword) | Block | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
+| [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed) | Block | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 |
 | [`Dumb`](./Characters_and_Bosses.md#context-dumb) | Block | AI Profile: A simplified, less optimal decision-making profile. | 1 |
 | [`Explody`](./Characters_and_Bosses.md#context-explody) | Block | Character Form: Behavior and stats for the 'Explody' state. | 1 |
+| `Fighter` | Block | Applies or references the 'Fighter' effect/state. | 1 |
 | [`FightPhase`](./Characters_and_Bosses.md#context-fightphase) | Block | Boss Logic: Main combat phase. | 1 |
-| [`FireFull`](./Characters_and_Bosses.md#context-firefull) | Block | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
 | [`Fire`](./Characters_and_Bosses.md#context-fire) | Block | Character Form: Behavior and stats for the 'Fire' state. | 1 |
-| [`Flop2`](./Characters_and_Bosses.md#context-flop2) | Block | Character Form: Behavior and stats for the \'Flop2\' state. | 1 |
+| [`FireFull`](./Characters_and_Bosses.md#context-firefull) | Block | Character Form: Behavior and stats for the 'FireFull' state. | 1 |
 | [`Flop`](./Characters_and_Bosses.md#context-flop) | Block | Character Form: Behavior and stats for the \'Flop\' state. | 1 |
+| [`Flop2`](./Characters_and_Bosses.md#context-flop2) | Block | Character Form: Behavior and stats for the \'Flop2\' state. | 1 |
+| [`Flush`](./Characters_and_Bosses.md#context-flush) | Block | Character Form: Behavior and stats for the 'Flush' state. | 1 |
 | [`FlushBubs`](./Characters_and_Bosses.md#context-flushbubs) | Block | Character Form: Behavior and stats for the 'FlushBubs' state. | 1 |
 | [`FlushHost`](./Characters_and_Bosses.md#context-flushhost) | Block | Character Form: Behavior and stats for the 'FlushHost' state. | 1 |
 | [`FlushNettle`](./Characters_and_Bosses.md#context-flushnettle) | Block | Character Form: Behavior and stats for the 'FlushNettle' state. | 1 |
-| [`Flush`](./Characters_and_Bosses.md#context-flush) | Block | Character Form: Behavior and stats for the 'Flush' state. | 1 |
 | [`Grappling`](./Characters_and_Bosses.md#context-grappling) | Block | Character Form / AI State: Behavior while grappling an opponent. | 1 |
 | [`Grown`](./Characters_and_Bosses.md#context-grown) | Block | Character Form: Behavior and stats for the \'Grown\' state. | 1 |
 | [`GuaranteedJackpot`](./Characters_and_Bosses.md#context-guaranteedjackpot) | Block | Loot Logic: Guarantees a high-tier drop. | 1 |
@@ -440,38 +445,45 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat) | Block | Character Form: Behavior and stats for the \'HasDeadCat\' state. | 1 |
 | [`HasRock`](./Characters_and_Bosses.md#context-hasrock) | Block | Character Form: Behavior and stats for the \'HasRock\' state. | 1 |
 | [`Headless`](./Characters_and_Bosses.md#context-headless) | Block | Character Form: Behavior and stats for the \'Headless\' state. | 1 |
+| [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#context-hint_crackedvisuals) | Block | Visual: Overlay effects for cracked/damaged terrain or objects. | 1 |
 | [`Hint_CrackedVisuals2`](./Characters_and_Bosses.md#context-hint_crackedvisuals2) | Block | Visual: Secondary cracked visual overlay. | 1 |
 | [`Hint_CrackedVisuals3`](./Characters_and_Bosses.md#context-hint_crackedvisuals3) | Block | Visual: Tertiary cracked visual overlay. | 1 |
-| [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#context-hint_crackedvisuals) | Block | Visual: Overlay effects for cracked/damaged terrain or objects. | 1 |
 | [`HumanDead`](./Characters_and_Bosses.md#context-humandead) | Block | Character Form: Behavior and stats for the \'HumanDead\' state. | 1 |
+| `Hunter` | Block | Applies or references the 'Hunter' effect/state. | 1 |
 | [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase) | Block | Boss Logic: The starting phase of an encounter. | 1 |
 | [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling) | Block | Character Form: Insane behavior state while attached to the ceiling. | 1 |
 | [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground) | Block | Character Form: Insane behavior state while on the ground. | 1 |
+| [`Johnny`](./Characters_and_Bosses.md#context-johnny) | Block | Character Form: Behavior and stats for the 'Johnny' state. | 1 |
 | [`JohnnyBubs`](./Characters_and_Bosses.md#context-johnnybubs) | Block | Character Form: Behavior and stats for the 'JohnnyBubs' state. | 1 |
 | [`JohnnyHost`](./Characters_and_Bosses.md#context-johnnyhost) | Block | Character Form: Behavior and stats for the 'JohnnyHost' state. | 1 |
 | [`JohnnyNettle`](./Characters_and_Bosses.md#context-johnnynettle) | Block | Character Form: Behavior and stats for the 'JohnnyNettle' state. | 1 |
-| [`Johnny`](./Characters_and_Bosses.md#context-johnny) | Block | Character Form: Behavior and stats for the 'Johnny' state. | 1 |
 | [`Joystick`](./Characters_and_Bosses.md#context-joystick) | Block | Character Form: Behavior and stats for the \'Joystick\' state. | 1 |
 | [`LastHit`](./Characters_and_Bosses.md#context-lasthit) | Block | Logic: Executes logic on the final hit of a multi-hit attack. | 1 |
 | [`Lifted`](./Characters_and_Bosses.md#context-lifted) | Block | Character Form: Behavior and stats for the \'Lifted\' state. | 1 |
 | [`Lit`](./Characters_and_Bosses.md#context-lit) | Block | Character Form: Behavior and stats for the 'Lit' state. | 1 |
+| `Mage` | Block | Applies or references the 'Mage' effect/state. | 1 |
+| `Medic` | Block | Applies or references the 'Medic' effect/state. | 1 |
+| `Monk` | Block | Applies or references the 'Monk' effect/state. | 1 |
 | [`Mounted`](./Characters_and_Bosses.md#context-mounted) | Block | Character Form: Behavior and stats for the \'Mounted\' state. | 1 |
 | [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull) | Block | Character Form: Behavior and stats for the \'MouthFull\' state. | 1 |
 | [`Mutant`](./Characters_and_Bosses.md#context-mutant) | Block | Character Form: Behavior and stats for the \'Mutant\' state. | 1 |
+| `Necromancer` | Block | Applies or references the 'Necromancer' effect/state. | 1 |
 | [`NeutronStar`](./Characters_and_Bosses.md#context-neutronstar) | Block | Character Form: Behavior and stats for the 'NeutronStar' state. | 1 |
+| `NoDeathRattle` | Block | Applies or references the 'NoDeathRattle' effect/state. | 1 |
 | [`NoEyes`](./Characters_and_Bosses.md#context-noeyes) | Block | Character Form: Behavior and stats for the \'NoEyes\' state. | 1 |
-| [`NoStick`](./Characters_and_Bosses.md#context-nostick) | Block | Character Form: Behavior and stats for the 'NoStick' state. | 1 |
 | [`NormalFull`](./Characters_and_Bosses.md#context-normalfull) | Block | Character Form: Behavior and stats for the 'NormalFull' state. | 1 |
+| [`NoStick`](./Characters_and_Bosses.md#context-nostick) | Block | Character Form: Behavior and stats for the 'NoStick' state. | 1 |
 | [`Nuke`](./Characters_and_Bosses.md#context-nuke) | Block | Character Form: Behavior and stats for the 'Nuke' state. | 1 |
 | [`Obey`](./Characters_and_Bosses.md#context-obey) | Block | AI State: Enforced compliance logic (e.g., when Charmed). | 1 |
-| [`OffScreen`](./Characters_and_Bosses.md#context-offscreen) | Block | Character Form: Behavior and stats for the 'OffScreen' state. | 1 |
 | [`Off`](./Characters_and_Bosses.md#context-off) | Block | Character Form: Behavior and stats for the 'Off' state. | 1 |
+| [`OffScreen`](./Characters_and_Bosses.md#context-offscreen) | Block | Character Form: Behavior and stats for the 'OffScreen' state. | 1 |
 | [`OneEye`](./Characters_and_Bosses.md#context-oneeye) | Block | Character Form: Behavior and stats for the \'OneEye\' state. | 1 |
-| [`OpenCat`](./Characters_and_Bosses.md#context-opencat) | Block | Character Form: Behavior and stats for the 'OpenCat' state. | 1 |
 | [`Open`](./Characters_and_Bosses.md#context-open) | Block | Character Form: Behavior and stats for the 'Open' state. | 1 |
+| [`OpenCat`](./Characters_and_Bosses.md#context-opencat) | Block | Character Form: Behavior and stats for the 'OpenCat' state. | 1 |
 | [`Out`](./Characters_and_Bosses.md#context-out) | Block | Character Form: Behavior and stats for the 'Out' state. | 1 |
 | [`Possessing`](./Characters_and_Bosses.md#context-possessing) | Block | Character Form: Behavior and stats for the \'Possessing\' state. | 1 |
 | [`Primed`](./Characters_and_Bosses.md#context-primed) | Block | Character Form: Behavior and stats for the 'Primed' state. | 1 |
+| `Psychic` | Block | Applies or references the 'Psychic' effect/state. | 1 |
 | [`Pulp2`](./Characters_and_Bosses.md#context-pulp2) | Block | Character Form: Behavior and stats for the 'Pulp2' state. | 1 |
 | [`Pulp3`](./Characters_and_Bosses.md#context-pulp3) | Block | Character Form: Behavior and stats for the 'Pulp3' state. | 1 |
 | [`Pulp4`](./Characters_and_Bosses.md#context-pulp4) | Block | Character Form: Behavior and stats for the 'Pulp4' state. | 1 |
@@ -479,47 +491,37 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Pulp6`](./Characters_and_Bosses.md#context-pulp6) | Block | Character Form: Behavior and stats for the 'Pulp6' state. | 1 |
 | [`Pulp7`](./Characters_and_Bosses.md#context-pulp7) | Block | Character Form: Behavior and stats for the 'Pulp7' state. | 1 |
 | [`Sitting`](./Characters_and_Bosses.md#context-sitting) | Block | Character Form: Behavior and stats for the 'Sitting' state. | 1 |
-| [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat) | Block | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
 | [`SmallHolding`](./Characters_and_Bosses.md#context-smallholding) | Block | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
+| [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat) | Block | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
 | [`SpawningPhase`](./Characters_and_Bosses.md#context-spawningphase) | Block | Boss Logic: Phase focused on summoning minions. | 1 |
-| [`Standing2`](./Characters_and_Bosses.md#context-standing2) | Block | Character Form: Behavior and stats for the 'Standing2' state. | 1 |
 | [`Standing`](./Characters_and_Bosses.md#context-standing) | Block | Character Form: Behavior and stats for the 'Standing' state. | 1 |
+| [`Standing2`](./Characters_and_Bosses.md#context-standing2) | Block | Character Form: Behavior and stats for the 'Standing2' state. | 1 |
 | [`Start_Ceiling`](./Characters_and_Bosses.md#context-start_ceiling) | Block | Character Form: Behavior and stats for the 'Start_Ceiling' state. | 1 |
 | [`Stop`](./Characters_and_Bosses.md#context-stop) | Block | AI Movement: Forces the character to cease movement. | 1 |
-| [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed) | Block | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |
 | [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield) | Block | Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 |
-| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Block | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
+| [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed) | Block | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 |
+| `sync_brain_patterns` | Boolean |  | 1 |
+| `Tank` | Block | Applies or references the 'Tank' effect/state. | 1 |
 | [`Tar`](./Characters_and_Bosses.md#context-tar) | Block | Character Form: Behavior and stats for the 'Tar' state. | 1 |
+| [`TarFull`](./Characters_and_Bosses.md#context-tarfull) | Block | Character Form: Behavior and stats for the 'TarFull' state. | 1 |
+| `Thief` | Block | Applies or references the 'Thief' effect/state. | 1 |
+| [`Throb`](./Characters_and_Bosses.md#context-throb) | Block | Character Form: Behavior and stats for the 'Throb' state. | 1 |
 | [`ThrobBubs`](./Characters_and_Bosses.md#context-throbbubs) | Block | Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 |
 | [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost) | Block | Character Form: Behavior and stats for the 'ThrobHost' state. | 1 |
 | [`ThrobNettle`](./Characters_and_Bosses.md#context-throbnettle) | Block | Character Form: Behavior and stats for the 'ThrobNettle' state. | 1 |
-| [`Throb`](./Characters_and_Bosses.md#context-throb) | Block | Character Form: Behavior and stats for the 'Throb' state. | 1 |
+| `Tinkerer` | Block | Applies or references the 'Tinkerer' effect/state. | 1 |
 | [`Transformed`](./Characters_and_Bosses.md#context-transformed) | Block | Character Form: Behavior and stats for the 'Transformed' state. | 1 |
 | [`TwoEyes`](./Characters_and_Bosses.md#context-twoeyes) | Block | Character Form: Behavior and stats for the 'TwoEyes' state. | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 | [`Unlit`](./Characters_and_Bosses.md#context-unlit) | Block | Character Form: Behavior and stats for the 'Unlit' state. | 1 |
+| `Unmounted` | Block | Applies or references the 'Unmounted' effect/state. | 1 |
 | [`Unwashed`](./Characters_and_Bosses.md#context-unwashed) | Block | Character Form: Behavior and stats for the 'Unwashed' state. | 1 |
 | [`Washed`](./Characters_and_Bosses.md#context-washed) | Block | Character Form: Behavior and stats for the 'Washed' state. | 1 |
 | [`Washer`](./Characters_and_Bosses.md#context-washer) | Block | Character Form: Behavior and stats for the \'Washer\' state. | 1 |
 | [`Water`](./Characters_and_Bosses.md#context-water) | Block | Character Form: Behavior and stats for the \'Water\' state. | 1 |
 | [`WereMan`](./Characters_and_Bosses.md#context-wereman) | Block | Character Form: Behavior and stats for the \'WereMan\' state. | 1 |
-| [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb) | Block | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 |
 | [`Zealot`](./Characters_and_Bosses.md#context-zealot) | Block | Character Form: Behavior and stats for the \'Zealot\' state. | 1 |
-| `Butcher` | Block | Applies or references the 'Butcher' effect/state. | 1 |
-| `Colorless` | Block | Applies or references the 'Colorless' effect/state. | 1 |
-| `Druid` | Block | Applies or references the 'Druid' effect/state. | 1 |
-| `Fighter` | Block | Applies or references the 'Fighter' effect/state. | 1 |
-| `Hunter` | Block | Applies or references the 'Hunter' effect/state. | 1 |
-| `Mage` | Block | Applies or references the 'Mage' effect/state. | 1 |
-| `Medic` | Block | Applies or references the 'Medic' effect/state. | 1 |
-| `Monk` | Block | Applies or references the 'Monk' effect/state. | 1 |
-| `Necromancer` | Block | Applies or references the 'Necromancer' effect/state. | 1 |
-| `NoDeathRattle` | Block | Applies or references the 'NoDeathRattle' effect/state. | 1 |
-| `Psychic` | Block | Applies or references the 'Psychic' effect/state. | 1 |
-| `Tank` | Block | Applies or references the 'Tank' effect/state. | 1 |
-| `Thief` | Block | Applies or references the 'Thief' effect/state. | 1 |
-| `Tinkerer` | Block | Applies or references the 'Tinkerer' effect/state. | 1 |
-| `Unmounted` | Block | Applies or references the 'Unmounted' effect/state. | 1 |
-| `sync_brain_patterns` | Boolean |  | 1 |
+| [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb) | Block | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 |
 
 </details>
 
@@ -801,7 +803,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 17 |
+| [`palette`](./Enums.md#enum-palette) | Enum |  | 16 |
 | `arm1` | Number | Sprite variant ID for the front arm. | 3 |
 | `arm2` | Number |  | 3 |
 | `body` | Number | Sprite variant ID for the body. | 3 |
@@ -1243,9 +1245,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 8 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 6 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| `move_speed_multiplier` | Number |  | 1 |
 
 </details>
 
@@ -1265,8 +1267,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 9 |
 | [`form`](./Enums.md#enum-form) | Enum |  | 9 |
 | [`exclude`](./Enums.md#enum-exclude) | Enum |  | 5 |
+| [`particle`](./Enums.md#enum-particle) | Enum |  | 5 |
 | [`sfx`](./Enums.md#enum-sfx) | Enum |  | 5 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 
 </details>
 
@@ -1320,7 +1322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array |  | 8 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 8 |
 | [`initiative`](./Enums.md#enum-initiative) | Enum |  | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 | [`turns`](./Arrays.md#array-turns) | Array | Turn counter tracking. | 1 |
 
 </details>
@@ -1632,7 +1634,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 23 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 20 |
+| `use_placeholder` | Boolean |  | 2 |
 
 </details>
 
@@ -1829,7 +1831,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 4 |
 
 </details>
 
@@ -1920,7 +1922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum |  | 3 |
 | [`statuses`](./Characters_and_Bosses.md#context-statuses) | Block | Status effects possessed by the character. | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
 
@@ -2019,7 +2021,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum |  | 3 |
 | [`statuses`](./Characters_and_Bosses.md#context-statuses) | Block | Status effects possessed by the character. | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
 
@@ -2128,9 +2130,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -2277,10 +2279,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -2301,7 +2304,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -2756,10 +2760,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 
 </details>
 
@@ -3256,12 +3260,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -3278,10 +3284,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -3356,11 +3363,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -3377,11 +3385,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -3402,7 +3411,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -3707,11 +3717,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -3908,7 +3919,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `move_speed_multiplier` | Number |  | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
@@ -3929,7 +3941,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| `move_speed_multiplier` | Number |  | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
@@ -4440,7 +4453,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 | `weak_threshold` | Number |  | 1 |
 
 </details>
@@ -4680,7 +4694,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -5371,11 +5385,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
 
 </details>
@@ -5484,7 +5500,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
 
@@ -5724,11 +5740,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `animation_suffix` | Number |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `animation_suffix` | Number |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -5746,11 +5763,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `animation_suffix` | Number |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `animation_suffix` | Number |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -5768,11 +5786,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `animation_suffix` | Number |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `animation_suffix` | Number |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -5790,11 +5809,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `animation_suffix` | Number |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `animation_suffix` | Number |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -5812,11 +5832,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `animation_suffix` | Number |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `animation_suffix` | Number |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -5834,11 +5855,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| `animation_suffix` | Number |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#context-turns) | Block | Turn counter tracking. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `animation_suffix` | Number |  | 1 |
+| `uifloaters_offset` | Number |  | 1 |
 
 </details>
 
@@ -6377,10 +6399,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | `consume` | Boolean |  | 1 |
+| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -7121,11 +7143,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -7160,11 +7183,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -7181,11 +7205,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 
@@ -7206,7 +7231,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#context-ai) | Block | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 1 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
 
 </details>
 

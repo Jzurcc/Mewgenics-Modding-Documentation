@@ -15,10 +15,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
-| [`kind`](./Enums.md#enum-kind) | Enum |  | 1106 |
+| [`desc`](./Strings.md#string-desc) | String | Localization key for the item's desc. | 1116 |
 | `frame` | Number |  | 1106 |
+| [`kind`](./Enums.md#enum-kind) | Enum |  | 1106 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the item's name. | 1105 |
 | [`rarity`](./Enums.md#enum-rarity) | Enum |  | 967 |
 | [`set`](./Enums.md#enum-set) | Enum |  | 765 |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 365 |
@@ -36,44 +37,44 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `aux` | Number |  | 33 |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum |  | 29 |
 | `str` | Mixed |  | 28 |
-| [`quest_reward_item`](./Enums.md#enum-quest_reward_item) | Enum |  | 22 |
 | `dex` | Number |  | 22 |
+| [`quest_reward_item`](./Enums.md#enum-quest_reward_item) | Enum |  | 22 |
 | `indestructible` | Boolean |  | 20 |
 | `legacy_quest` | Boolean |  | 17 |
 | [`hint_destination`](./Enums.md#enum-hint_destination) | Enum |  | 16 |
-| [`str_aux_initialize`](./Enums.md#enum-str_aux_initialize) | Enum |  | 15 |
 | `divine_shield` | Number |  | 15 |
+| [`str_aux_initialize`](./Enums.md#enum-str_aux_initialize) | Enum |  | 15 |
 | `dont_destroy_on_0` | Boolean |  | 13 |
 | [`global_tags`](./Arrays.md#array-global_tags) | Array |  | 12 |
 | `max_durability` | Number |  | 11 |
 | [`on_store`](./Enums.md#enum-on_store) | Enum |  | 8 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 6 |
 | [`hint_prerequisite_flag`](./Enums.md#enum-hint_prerequisite_flag) | Enum |  | 5 |
-| [`global_passives`](./Items_and_Equipment.md#context-global_passives) | Block |  | 4 |
 | `failable` | Boolean |  | 4 |
+| [`global_passives`](./Items_and_Equipment.md#context-global_passives) | Block |  | 4 |
 | `randomize_piece_frames` | Boolean |  | 4 |
 | `str_aux_is_copy_passive` | Boolean |  | 4 |
-| [`icon_hint`](./Enums.md#enum-icon_hint) | Enum |  | 3 |
 | `fragile` | Boolean |  | 3 |
+| [`icon_hint`](./Enums.md#enum-icon_hint) | Enum |  | 3 |
 | `max_health` | Number |  | 3 |
 | `reset_aux_on_store` | Number |  | 3 |
 | `sticky` | Boolean |  | 3 |
 | `weightless` | Boolean |  | 3 |
 | [`keyword_tooltips`](./Items_and_Equipment.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 2 |
 | [`passive`](./Items_and_Equipment.md#context-passive) | Block |  | 2 |
-| [`quest_item_alias`](./Enums.md#enum-quest_item_alias) | Enum |  | 2 |
-| [`str_aux_is_copy_ability`](./Items_and_Equipment.md#context-str_aux_is_copy_ability) | Block |  | 2 |
 | `prevent_level_up` | Boolean |  | 2 |
+| [`quest_item_alias`](./Enums.md#enum-quest_item_alias) | Enum |  | 2 |
 | `speed` | Number |  | 2 |
+| [`str_aux_is_copy_ability`](./Items_and_Equipment.md#context-str_aux_is_copy_ability) | Block |  | 2 |
 | `str_aux_is_copy_item_passive` | Boolean |  | 2 |
-| [`Set`](./Enums.md#enum-set) | Enum | Applies or references the 'Set' effect/state. | 1 |
-| [`equip_sound`](./Enums.md#enum-equip_sound) | Enum |  | 1 |
-| [`reset_str_aux_on_store`](./Enums.md#enum-reset_str_aux_on_store) | Enum |  | 1 |
-| [`str_aux`](./Enums.md#enum-str_aux) | Enum |  | 1 |
 | `aux_is_catid` | Boolean |  | 1 |
 | `cant_equip_to_colorless` | Boolean |  | 1 |
 | `degrade_after_adventure` | Boolean |  | 1 |
+| [`equip_sound`](./Enums.md#enum-equip_sound) | Enum |  | 1 |
 | `force_sticky` | Boolean |  | 1 |
+| [`reset_str_aux_on_store`](./Enums.md#enum-reset_str_aux_on_store) | Enum |  | 1 |
+| [`Set`](./Enums.md#enum-set) | Enum | Applies or references the 'Set' effect/state. | 1 |
+| [`str_aux`](./Enums.md#enum-str_aux) | Enum |  | 1 |
 | `str_aux_is_copy_item_active` | Boolean |  | 1 |
 | `str_aux_is_copy_item_icon` | Boolean |  | 1 |
 

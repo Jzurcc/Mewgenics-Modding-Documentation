@@ -19,7 +19,6 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 382 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 369 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 277 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 236 |
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 226 |
 | [`self_damage`](./Arrays.md#array-self_damage) | Block | Recoil or self-inflicted damage/effects applied to the caster. | 220 |
 | `heal` | Number | Restores health instead of dealing damage. | 128 |

@@ -15,9 +15,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 489 |
+| [`desc`](./Strings.md#string-desc) | String | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 272 |
 | `cha` | Number | Examples: `2, -1, 1` | 144 |
 | `spd` | Number | Examples: `1, -1, -2` | 133 |
 | `int` | Number | Examples: `2, -1, 1` | 132 |

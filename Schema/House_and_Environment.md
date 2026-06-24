@@ -16,7 +16,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1274 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
@@ -668,7 +667,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `height` | Integer |  | 1 |
 | `width` | Integer |  | 1 |
 
@@ -690,7 +688,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
 | [`reverb_full`](#context-reverb_full) | Block |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `height` | Integer |  | 1 |
 | `width` | Integer |  | 1 |
 
@@ -890,7 +887,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`id`](./Enums.md#enum-id) | Enum |  | 1 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
 | [`n`](./Arrays.md#array-n) | Array |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `height` | Integer |  | 1 |
 | `width` | Integer |  | 1 |
 

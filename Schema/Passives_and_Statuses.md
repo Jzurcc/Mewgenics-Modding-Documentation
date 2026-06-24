@@ -15,8 +15,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
+| [`desc`](./Strings.md#string-desc) | String | Localization key for the passive's display description. | 885 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the passive's display name. | 512 |
 | [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 510 |
 | [`stats`](./Passives_and_Statuses.md#context-stats) | Block |  | 97 |
 | `con` | Number |  | 18 |
@@ -31,11 +32,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shield` | Number |  | 9 |
 | [`bonus_items`](./Arrays.md#array-bonus_items) | Array | Flat addition to a base value. | 8 |
 | `dex` | Number |  | 8 |
-| [`keyword_tooltips`](./Passives_and_Statuses.md#context-keyword_tooltips) | Block | Examples: `{ ... }` | 6 |
 | `divine_shield` | Number | Examples: `3, 1` | 6 |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#context-keyword_tooltips) | Block | Examples: `{ ... }` | 6 |
+| `auto_plus_signs_on_name` | Boolean |  | 4 |
 | [`empty_armor_scaled_stats`](./Passives_and_Statuses.md#context-empty_armor_scaled_stats) | Block | Examples: `{ ... }` | 4 |
 | [`name_mod`](./Strings.md#string-name_mod) | String |  | 4 |
-| `auto_plus_signs_on_name` | Boolean |  | 4 |
 | [`tags`](./Arrays.md#array-tags) | Array |  | 3 |
 | [`icon`](./Enums.md#enum-icon) | Enum | Examples: `DejaVu3, DejaVu2` | 2 |
 | [`schadenfreude_scaled_stats`](./Passives_and_Statuses.md#context-schadenfreude_scaled_stats) | Block | Examples: `{ ... }` | 2 |
@@ -1009,7 +1010,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| `min_range` | Number |  | 4 |
 | `stacks` | Number | The number of stacks, duration, or intensity to apply. | 4 |
 
 </details>
@@ -1207,7 +1208,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`area_particle`](./Enums.md#enum-area_particle) | Enum |  | 4 |
+| [`center_particle`](./Enums.md#enum-center_particle) | Enum |  | 4 |
+| `palette` | Number |  | 4 |
+| [`particle`](./Enums.md#enum-particle) | Enum |  | 4 |
 
 </details>
 
@@ -1946,7 +1950,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger or reference. | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 
 </details>
 

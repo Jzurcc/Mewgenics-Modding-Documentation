@@ -128,7 +128,6 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `pills` | 1 | Examples: `7` | 4 |
 | [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | Examples: `[ { prompt "EVENT_TRACY_REW11" weight 1 get_item_from_poo..., [ { prompt "EVE...` | 4 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | `CryogenicTimeChamber_Full` | Variable |  | 3 |
 | `QEVENT_OBELISK_QUES2` | Variable |  | 3 |
 | `QEVENT_VOLCANO_REW2` | Variable |  | 3 |

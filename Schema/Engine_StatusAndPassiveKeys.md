@@ -62,7 +62,6 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Fire` | 2 | Character Form: Behavior and stats for the 'Fire' state. | 26 |
 | [`ImmediateAbilityReaction`](./Enums.md#enum-immediateabilityreaction) | Enum | Reaction: Executes an ability instantly, interrupting the current sequence. | 26 |
 | `Knockback` | Number | Applies or references the 'Knockback' effect/state. | 26 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 26 |
 | [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum | AI Trigger: Executes an ability in reaction to a specific event (e.g., taking damage). | 25 |
 | [`Quivered`](./Arrays.md#array-quivered) | Number | Applies or references the 'Quivered' effect/state. | 25 |
 | `Undead` | Integer | Applies or references the 'Undead' effect/state. | 25 |

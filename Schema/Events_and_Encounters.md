@@ -15,13 +15,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4118 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
 | [`intro`](./Events_and_Encounters.md#context-intro) | Block | Event Node: The initial text block when a story event first loads. | 214 |
 | [`main`](./Events_and_Encounters.md#context-main) | Block | Event Node: The central hub or recurring menu of a story event. | 214 |
 | [`label`](./Strings.md#string-label) | String |  | 16 |
 | `stat` | Mixed |  | 16 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 12 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 11 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the 'Good' action. | 8 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 4 |
@@ -29,19 +29,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_min` | Number |  | 4 |
 | [`open`](./Events_and_Encounters.md#context-open) | Block | Examples: `{ ... }` | 3 |
 | `pick` | Block | Examples: `{ ... }` | 3 |
-| [`ignore`](./Events_and_Encounters.md#context-ignore) | Block | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 2 |
 | `cha` | Number |  | 2 |
 | `con` | Number |  | 2 |
+| [`ignore`](./Events_and_Encounters.md#context-ignore) | Block | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 2 |
 | `int` | Number |  | 2 |
 | `lck` | Number |  | 2 |
 | `spd` | Number |  | 2 |
 | `str` | Number |  | 2 |
-| [`destroy`](./Events_and_Encounters.md#context-destroy) | Block | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 |
-| [`examine`](./Events_and_Encounters.md#context-examine) | Block | Examples: `{ ... }` | 1 |
-| [`smash`](./Events_and_Encounters.md#context-smash) | Block | Examples: `{ ... }` | 1 |
 | `buy2` | Block | Examples: `{ ... }` | 1 |
 | `buy3` | Block | Examples: `{ ... }` | 1 |
+| [`destroy`](./Events_and_Encounters.md#context-destroy) | Block | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 |
 | `dex` | Number |  | 1 |
+| [`examine`](./Events_and_Encounters.md#context-examine) | Block | Examples: `{ ... }` | 1 |
+| [`smash`](./Events_and_Encounters.md#context-smash) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -192,7 +192,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 262 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 144 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Block | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 |
 | [`examine`](./Events_and_Encounters.md#context-examine) | Block | Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 |
@@ -239,16 +238,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`protection`](./Events_and_Encounters.md#context-protection) | Block | Event Node: Story branch or dialog option representing the \'Protection\' action. | 2 |
 | [`repair`](./Events_and_Encounters.md#context-repair) | Block | Event Node: Story branch or dialog option representing the \'Repair\' action. | 2 |
 | [`sacrifice`](./Events_and_Encounters.md#context-sacrifice) | Block | Event Node: Story branch or dialog option representing the \'Sacrifice\' action. | 2 |
+| [`scale`](./Events_and_Encounters.md#context-scale) | Block | Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 |
 | [`turnon`](./Events_and_Encounters.md#context-turnon) | Block | Event Node: Story branch or dialog option representing the \'Turnon\' action. | 2 |
 | [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice) | Block | Event Action: Triggers the altar sacrifice progression logic. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`arm`](./Events_and_Encounters.md#context-arm) | Block | Event Node: Story branch or dialog option representing the \'Arm\' action. | 1 |
 | [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier) | Block | Event Node: Story branch or dialog option representing the 'Attach Amplifier' action. | 1 |
 | [`attach_leech`](./Events_and_Encounters.md#context-attach_leech) | Block | Event Node: Story branch or dialog option representing the 'Attach Leech' action. | 1 |
 | [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt) | Block | Event Node: Story branch or dialog option representing the \'Bash Past Alt\' action. | 1 |
 | [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off) | Block | Event Node: Story branch or dialog option representing the \'Bite It Off\' action. | 1 |
-| [`blue_needle`](./Events_and_Encounters.md#context-blue_needle) | Block | Event Node: Story branch or dialog option representing the \'Blue Needle\' action. | 1 |
 | [`blue`](./Events_and_Encounters.md#context-blue) | Block | Event Node: Story branch or dialog option representing the \'Blue\' action. | 1 |
+| [`blue_needle`](./Events_and_Encounters.md#context-blue_needle) | Block | Event Node: Story branch or dialog option representing the \'Blue Needle\' action. | 1 |
 | [`body`](./Events_and_Encounters.md#context-body) | Block | Event Node: Story branch or dialog option representing the 'Body' action. | 1 |
 | [`book`](./Events_and_Encounters.md#context-book) | Block | Event Node: Story branch or dialog option representing the \'Book\' action. | 1 |
 | [`brace`](./Events_and_Encounters.md#context-brace) | Block | Event Node: Story branch or dialog option representing the \'Brace\' action. | 1 |
@@ -278,11 +279,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dig`](./Events_and_Encounters.md#context-dig) | Block | Event Node: Story branch or dialog option representing the \'Dig\' action. | 1 |
 | [`disarm`](./Events_and_Encounters.md#context-disarm) | Block | Event Node: Story branch or dialog option representing the \'Disarm\' action. | 1 |
 | [`dive`](./Events_and_Encounters.md#context-dive) | Block | Event Node: Story branch or dialog option representing the \'Dive\' action. | 1 |
+| [`donate`](./Events_and_Encounters.md#context-donate) | Block | Event Node: Story branch or dialog option representing the \'Donate\' action. | 1 |
 | [`donate_10`](./Events_and_Encounters.md#context-donate_10) | Block | Event Node: Story branch or dialog option representing the \'Donate 10\' action. | 1 |
 | [`donate_15`](./Events_and_Encounters.md#context-donate_15) | Block | Event Node: Story branch or dialog option representing the \'Donate 15\' action. | 1 |
 | [`donate_20`](./Events_and_Encounters.md#context-donate_20) | Block | Event Node: Story branch or dialog option representing the \'Donate 20\' action. | 1 |
 | [`donate_5`](./Events_and_Encounters.md#context-donate_5) | Block | Event Node: Story branch or dialog option representing the \'Donate 5\' action. | 1 |
-| [`donate`](./Events_and_Encounters.md#context-donate) | Block | Event Node: Story branch or dialog option representing the \'Donate\' action. | 1 |
 | [`double`](./Events_and_Encounters.md#context-double) | Block | Event Node: Story branch or dialog option representing the \'Double\' action. | 1 |
 | [`eat_meat`](./Events_and_Encounters.md#context-eat_meat) | Block | Event Node: Story branch or dialog option representing the \'Eat Meat\' action. | 1 |
 | [`enter_crater`](./Events_and_Encounters.md#context-enter_crater) | Block | Event Node: Story branch or dialog option representing the \'Enter Crater\' action. | 1 |
@@ -307,8 +308,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`intimidation`](./Events_and_Encounters.md#context-intimidation) | Block | Event Node: Story branch or dialog option representing the \'Intimidation\' action. | 1 |
 | [`itchies`](./Events_and_Encounters.md#context-itchies) | Block | Event Node: Story branch or dialog option representing the \'Itchies\' action. | 1 |
 | [`join`](./Events_and_Encounters.md#context-join) | Block | Event Node: Story branch or dialog option representing the \'Join\' action. | 1 |
-| [`jump_over`](./Events_and_Encounters.md#context-jump_over) | Block | Event Node: Story branch or dialog option representing the \'Jump Over\' action. | 1 |
 | [`jump`](./Events_and_Encounters.md#context-jump) | Block | Event Node: Story branch or dialog option representing the \'Jump\' action. | 1 |
+| [`jump_over`](./Events_and_Encounters.md#context-jump_over) | Block | Event Node: Story branch or dialog option representing the \'Jump Over\' action. | 1 |
 | [`keep_going`](./Events_and_Encounters.md#context-keep_going) | Block | Event Node: Story branch or dialog option representing the \'Keep Going\' action. | 1 |
 | [`kiss_meat`](./Events_and_Encounters.md#context-kiss_meat) | Block | Event Node: Story branch or dialog option representing the \'Kiss Meat\' action. | 1 |
 | [`knife`](./Events_and_Encounters.md#context-knife) | Block | Event Node: Story branch or dialog option representing the \'Knife\' action. | 1 |
@@ -332,9 +333,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pirouette`](./Events_and_Encounters.md#context-pirouette) | Block | Event Node: Story branch or dialog option representing the \'Pirouette\' action. | 1 |
 | [`place_gristle`](./Events_and_Encounters.md#context-place_gristle) | Block | Event Node: Story branch or dialog option representing the 'Place Gristle' action. | 1 |
 | [`power`](./Events_and_Encounters.md#context-power) | Block | Event Node: Story branch or dialog option representing the 'Power' action. | 1 |
+| [`pull`](./Events_and_Encounters.md#context-pull) | Block | Event Node: Story branch or dialog option representing the \'Pull\' action. | 1 |
 | [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out) | Block | Event Node: Story branch or dialog option representing the \'Pull It Out\' action. | 1 |
 | [`pull_lever`](./Events_and_Encounters.md#context-pull_lever) | Block | Event Node: Story branch or dialog option representing the \'Pull Lever\' action. | 1 |
-| [`pull`](./Events_and_Encounters.md#context-pull) | Block | Event Node: Story branch or dialog option representing the \'Pull\' action. | 1 |
 | [`purify`](./Events_and_Encounters.md#context-purify) | Block | Event Node: Story branch or dialog option representing the \'Purify\' action. | 1 |
 | [`push_buttons`](./Events_and_Encounters.md#context-push_buttons) | Block | Event Node: Story branch or dialog option representing the \'Push Buttons\' action. | 1 |
 | [`push_through`](./Events_and_Encounters.md#context-push_through) | Block | Event Node: Story branch or dialog option representing the \'Push Through\' action. | 1 |
@@ -343,11 +344,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reach_inside`](./Events_and_Encounters.md#context-reach_inside) | Block | Event Node: Story branch or dialog option representing the \'Reach Inside\' action. | 1 |
 | [`read`](./Events_and_Encounters.md#context-read) | Block | Event Node: Story branch or dialog option representing the \'Read\' action. | 1 |
 | [`receive`](./Events_and_Encounters.md#context-receive) | Block | Event Node: Story branch or dialog option representing the \'Receive\' action. | 1 |
-| [`red_needle`](./Events_and_Encounters.md#context-red_needle) | Block | Event Node: Story branch or dialog option representing the \'Red Needle\' action. | 1 |
 | [`red`](./Events_and_Encounters.md#context-red) | Block | Event Node: Story branch or dialog option representing the \'Red\' action. | 1 |
+| [`red_needle`](./Events_and_Encounters.md#context-red_needle) | Block | Event Node: Story branch or dialog option representing the \'Red Needle\' action. | 1 |
 | [`reflect`](./Events_and_Encounters.md#context-reflect) | Block | Event Node: Story branch or dialog option representing the \'Reflect\' action. | 1 |
-| [`remove_the_nail`](./Events_and_Encounters.md#context-remove_the_nail) | Block | Event Node: Story branch or dialog option representing the \'Remove The Nail\' action. | 1 |
 | [`remove`](./Events_and_Encounters.md#context-remove) | Block | Event Node: Story branch or dialog option representing the \'Remove\' action. | 1 |
+| [`remove_the_nail`](./Events_and_Encounters.md#context-remove_the_nail) | Block | Event Node: Story branch or dialog option representing the \'Remove The Nail\' action. | 1 |
 | [`repair_quest`](./Events_and_Encounters.md#context-repair_quest) | Block | Event Node: Story branch or dialog option representing the 'Repair Quest' action. | 1 |
 | [`rest`](./Events_and_Encounters.md#context-rest) | Block | Event Node: Story branch or dialog option representing the \'Rest\' action. | 1 |
 | [`revive`](./Events_and_Encounters.md#context-revive) | Block | Event Node: Story branch or dialog option representing the \'Revive\' action. | 1 |
@@ -366,13 +367,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`soul`](./Events_and_Encounters.md#context-soul) | Block | Event Node: Story branch or dialog option representing the 'Soul' action. | 1 |
 | [`speed`](./Events_and_Encounters.md#context-speed) | Block | Event Node: Story branch or dialog option representing the \'Speed\' action. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+| `stat_max` | Number |  | 1 |
+| `stat_min` | Number |  | 1 |
 | [`surprise`](./Events_and_Encounters.md#context-surprise) | Block | Event Node: Story branch or dialog option representing the \'Surprise\' action. | 1 |
 | [`sweet_talk`](./Events_and_Encounters.md#context-sweet_talk) | Block | Event Node: Story branch or dialog option representing the \'Sweet Talk\' action. | 1 |
 | [`swim`](./Events_and_Encounters.md#context-swim) | Block | Event Node: Story branch or dialog option representing the \'Swim\' action. | 1 |
 | [`tail`](./Events_and_Encounters.md#context-tail) | Block | Event Node: Story branch or dialog option representing the \'Tail\' action. | 1 |
 | [`take_blood`](./Events_and_Encounters.md#context-take_blood) | Block | Event Node: Story branch or dialog option representing the 'Take Blood' action. | 1 |
-| [`talk_to`](./Events_and_Encounters.md#context-talk_to) | Block | Event Node: Story branch or dialog option representing the \'Talk To\' action. | 1 |
 | [`talk`](./Events_and_Encounters.md#context-talk) | Block | Event Node: Story branch or dialog option representing the 'Talk' action. | 1 |
+| [`talk_to`](./Events_and_Encounters.md#context-talk_to) | Block | Event Node: Story branch or dialog option representing the \'Talk To\' action. | 1 |
 | [`tappytoes`](./Events_and_Encounters.md#context-tappytoes) | Block | Event Node: Story branch or dialog option representing the \'Tappytoes\' action. | 1 |
 | [`teleport`](./Events_and_Encounters.md#context-teleport) | Block | Event Node: Story branch or dialog option representing the \'Teleport\' action. | 1 |
 | [`thorns`](./Events_and_Encounters.md#context-thorns) | Block | Event Node: Story branch or dialog option representing the \'Thorns\' action. | 1 |
@@ -399,8 +402,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`withstand`](./Events_and_Encounters.md#context-withstand) | Block | Event Node: Story branch or dialog option representing the \'Withstand\' action. | 1 |
 | [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out) | Block | Event Node: Story branch or dialog option representing the \'Yank It Out\' action. | 1 |
 | [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle) | Block | Event Node: Story branch or dialog option representing the \'Yellow Needle\' action. | 1 |
-| `stat_max` | Number |  | 1 |
-| `stat_min` | Number |  | 1 |
 
 </details>
 
@@ -549,7 +550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |
 | `label` | Mixed |  | 57 |
 | `stat` | Mixed |  | 56 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 55 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 55 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 2 |
 
@@ -569,11 +570,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 57 |
-| [`stat`](./Math_Equations.md) | Equation |  | 43 |
 | `label` | Mixed |  | 43 |
+| [`stat`](./Math_Equations.md) | Equation |  | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
 
@@ -629,10 +630,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 32 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 31 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
 | `stat` | Mixed |  | 30 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 28 |
 
 </details>
 
@@ -650,10 +651,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 63 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 26 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |
-| [`stat`](./Math_Equations.md) | Equation |  | 25 |
 | `label` | Mixed |  | 25 |
+| [`stat`](./Math_Equations.md) | Equation |  | 25 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 
 </details>
@@ -931,7 +932,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
 
@@ -951,7 +952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
 
 </details>
 
@@ -991,7 +992,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
 
 </details>
 
@@ -1011,7 +1012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 7 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
 
 </details>
 
@@ -1092,7 +1093,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | `label` | Mixed |  | 7 |
 | `stat` | Mixed |  | 7 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
@@ -1110,11 +1111,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 6 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 
 </details>
 
@@ -1131,11 +1132,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 6 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
 
 </details>
 
@@ -1155,7 +1156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 6 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 5 |
 
 </details>
 
@@ -1176,7 +1177,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | `label` | Mixed |  | 6 |
 | `stat` | Mixed |  | 5 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 
 </details>
@@ -1218,7 +1219,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | `label` | Mixed |  | 6 |
 | `stat` | Mixed |  | 6 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 
 </details>
@@ -1318,7 +1319,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 
 </details>
 
@@ -1335,10 +1336,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
@@ -1358,8 +1359,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 3 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 3 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
 
 </details>
 
@@ -1380,7 +1381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | `stat` | Mixed |  | 3 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 
 </details>
 
@@ -1397,11 +1398,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -1459,12 +1460,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -1481,10 +1482,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
 
 </details>
 
@@ -1594,11 +1595,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 2 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -1615,10 +1616,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -1656,8 +1657,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -1752,7 +1753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
@@ -1790,10 +1791,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 2 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 
 </details>
 
@@ -1833,10 +1834,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -1930,11 +1931,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -1951,11 +1952,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2013,11 +2014,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
+| `fixed_chance` | Number |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `fixed_chance` | Number |  | 1 |
 
 </details>
 
@@ -2074,10 +2075,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2094,10 +2095,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2173,11 +2174,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
+| `fixed_chance` | Number |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `fixed_chance` | Number |  | 1 |
 
 </details>
 
@@ -2195,11 +2196,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 
@@ -2397,10 +2398,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2636,10 +2637,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2657,12 +2658,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 
@@ -2682,12 +2683,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 
@@ -2707,12 +2708,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 
@@ -2732,12 +2733,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 
@@ -2756,10 +2757,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2854,11 +2855,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2894,10 +2895,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -2973,7 +2974,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
@@ -3086,10 +3087,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3106,10 +3107,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3126,10 +3127,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3146,12 +3147,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3188,10 +3189,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3208,10 +3209,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3327,10 +3328,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3348,10 +3349,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3389,11 +3390,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| `fixed_chance` | Number |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `fixed_chance` | Number |  | 1 |
 
 </details>
 
@@ -3431,10 +3432,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3490,11 +3491,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3511,10 +3512,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3568,10 +3569,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3667,10 +3668,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3687,11 +3688,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3845,14 +3846,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3946,11 +3947,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -3968,11 +3969,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| `fixed_chance` | Number |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| `fixed_chance` | Number |  | 1 |
 
 </details>
 
@@ -4010,10 +4011,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4151,11 +4152,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4192,11 +4193,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4213,11 +4214,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4234,12 +4235,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4256,11 +4257,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4396,10 +4397,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4416,10 +4417,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4496,11 +4497,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Block | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4557,10 +4558,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4597,10 +4598,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4775,10 +4776,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4795,10 +4796,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4815,10 +4816,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4835,10 +4836,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4855,10 +4856,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4875,10 +4876,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Block | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
@@ -4914,10 +4915,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
 
 </details>
 
