@@ -224,16 +224,55 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 558
+**Total Count:** 558
 
-> **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root)
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2458 |
+| [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 517 |
+| [`movieclip`](./Enums.md#enum-movieclip) | Enum |  | 461 |
+| [`tooltip`](./Strings.md#string-tooltip) | String |  | 409 |
+| `shadow_size` | Number |  | 151 |
+| [`scale`](./Enums.md#enum-scale) | Enum |  | 149 |
+| `uifloaters_offset` | Number |  | 149 |
+| [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum |  | 127 |
+| [`water_mask`](./Enums.md#enum-water_mask) | Enum |  | 83 |
+| [`spawnin_animation`](./Strings.md#string-spawnin_animation) | String |  | 37 |
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 33 |
+| `piece_alt_frame` | Number |  | 27 |
+| [`shadow`](./Enums.md#enum-shadow) | Enum |  | 23 |
+| `move_speed_sync_frames` | Number |  | 20 |
+| `no_splatter` | Boolean |  | 17 |
+| [`projectile_spawn_offset`](./Arrays.md#array-projectile_spawn_offset) | Array |  | 17 |
+| [`tint`](./Arrays.md#array-tint) | Array |  | 17 |
+| [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Enum |  | 16 |
+| `dont_sink` | Boolean |  | 14 |
+| `art_flip` | Number |  | 7 |
+| [`depth_offset`](./Enums.md#enum-depth_offset) | Enum |  | 6 |
+| [`walk`](./Enums.md#enum-walk) | Enum |  | 5 |
+| [`dead`](./Enums.md#enum-dead) | Enum |  | 4 |
+| [`dying`](./Enums.md#enum-dying) | Enum |  | 4 |
+| `four_way_animations` | Boolean |  | 4 |
+| [`hit`](./Enums.md#enum-hit) | Enum |  | 4 |
+| [`stunned`](./Enums.md#enum-stunned) | Enum |  | 4 |
+| [`weak`](./Enums.md#enum-weak) | Enum |  | 4 |
+| [`deadhit`](./Enums.md#enum-deadhit) | Enum |  | 3 |
+| `show_infinity_damage_warning` | Boolean |  | 3 |
+| `always_huge_mask` | Boolean |  | 2 |
+| [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum |  | 2 |
+| [`desc`](./Strings.md#string-desc) | String | Localization key for the character's desc. | 2 |
+| `shade_occluded_objects` | Boolean |  | 2 |
+| [`dodge`](./Enums.md#enum-dodge) | Enum |  | 1 |
+| `no_horizontal_flip` | Boolean |  | 1 |
+| [`non_blocking_animations`](./Arrays.md#array-non_blocking_animations) | Array |  | 1 |
+| [`override_portrait`](./Enums.md#enum-override_portrait) | Enum |  | 1 |
+| `randomize_starting_frame` | Boolean |  | 1 |
+| `status_display_count_max` | Number |  | 1 |
 
 </details>
 

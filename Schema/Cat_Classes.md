@@ -39,16 +39,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Context: `graphics`
 
+
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 14
+**Total Count:** 14
 
-> **Referenced by:** [`ROOT`](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT`](#context-root)
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2458 |
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |
+| `palette` | Number |  | 13 |
+| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 13 |
+| [`default_face`](./Enums.md#enum-default_face) | Enum |  | 1 |
+| `hud_palette` | Number |  | 1 |
 
 </details>
 
