@@ -6767,7 +6767,6 @@ Use this to spot any completely undocumented keys.
 | `tile_desire_cost` | 1 |  |
 | `SlotResult_Explode` | 1 |  |
 | `dice_size` | 1 |  |
-| `Conditional_IsPhysicalAttack` | 1 |  |
 | `DemonicGlyph_Summon` | 1 |  |
 | `clipname` | 1 | `poopmain` |
 | `knockback_damage` | 1 |  |
@@ -7862,7 +7861,6 @@ Use this to spot any completely undocumented keys.
 | `innate` | 1 |  |
 | `auto_plus_signs_on_name` | 1 | `false` |
 | `SizeScalePercent` | 1 | `sqrt(1.0+(.05*(X-1)))*100` |
-| `Conditional_DoesDamage` | 1 |  |
 | `learned` | 1 |  |
 | `lock_item_slot` | 1 |  |
 | `grant_ability` | 1 | `Rest` |

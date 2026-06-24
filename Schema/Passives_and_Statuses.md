@@ -3614,7 +3614,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage) | Block | Conditional block: Executes nested logic only if the target is/has DoesDamage. | 1 |
 
 </details>
 

@@ -2990,7 +2990,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack) | Block | Conditional: Executes logic if the triggering attack is physical. | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>

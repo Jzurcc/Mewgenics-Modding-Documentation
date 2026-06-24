@@ -16218,7 +16218,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsPhysicalAttack`](./Miscellaneous.md#context-conditional_isphysicalattack) | Block | Examples: `{ ... }` | 1 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
 
 </details>
@@ -16236,7 +16235,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_DoesDamage`](./Miscellaneous.md#context-conditional_doesdamage) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 

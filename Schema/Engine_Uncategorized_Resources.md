@@ -16,7 +16,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Conditional_AbilityTargetIsSelf` | Block | Conditional constraint. Nested properties only trigger if this is true. | 2 |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -60,7 +59,6 @@
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 2 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative) | Block | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 1 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
 
 </details>
@@ -122,7 +120,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform) | Block | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
@@ -268,7 +265,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Conditional_Flying` | Block | Examples: `{ ... }` | 1 |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -630,7 +626,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 3 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Number | Applies or references the 'RepairWeapon' effect/state. | 1 |
@@ -767,7 +762,6 @@
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 3 |
-| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 2 |
 | `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
@@ -790,7 +784,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `Conditional_Tiny` | Block | Examples: `{ ... }` | 1 |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2044,7 +2037,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 |
 | `FloatingRockTrap` | Number | Examples: `1` | 1 |
 | `Thorns` | Number | Examples: `1` | 1 |
@@ -2067,7 +2059,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array | Examples: `[ 1 .25 ]` | 1 |
 
@@ -2625,7 +2616,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](./Miscellaneous.md#context-conditional_isself) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 
 </details>
@@ -2646,7 +2636,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack) | Block | Conditional: Executes logic if the triggering attack is physical. | 1 |
 | [`Else`](./Characters_and_Bosses.md#context-else) | Block | Fallback logic block for conditionals. | 1 |
 
 </details>
@@ -4675,7 +4664,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 
 </details>
 
@@ -5150,7 +5138,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle) | Block | Conditional trigger: Executes nested logic only once per encounter/battle. | 1 |
 
 </details>
 
@@ -6369,7 +6356,6 @@
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 2 |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 1 |
 | `Metronome` | Number | Executes a random musical or metronome ability. | 1 |
 
 </details>
@@ -9208,7 +9194,6 @@
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Boss`](./Items_and_Equipment.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 2 |
 | [`Poison`](./Arrays.md#array-poison) | Number | Applies or references the 'Poison' effect/state. | 1 |
 
 </details>

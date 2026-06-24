@@ -287,8 +287,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Bleed` | Number | Applies or references the 'Bleed' effect/state. | 54 |
 | `Shield` | Mixed | Applies or references the 'Shield' effect/state. | 49 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 44 |
-| [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 38 |
-| [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 35 |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 35 |
 | [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 34 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 34 |
@@ -298,7 +296,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 28 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 27 |
 | `ManaGain` | Mixed | Applies or references the 'ManaGain' effect/state. | 26 |
-| [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 25 |
 | [`Slow`](./Arrays.md#array-slow) | Array | Applies or references the 'Slow' effect/state. | 25 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies or references the 'Fear' effect/state. | 23 |
 | [`Weakness`](./Arrays.md#array-weakness) | Array | Applies or references the 'Weakness' effect/state. | 23 |
@@ -330,7 +327,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 14 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 14 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#context-catpartstransform) | Block | Transforms specific body parts into different visual variants. | 13 |
-| [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 13 |
 | [`Petrify`](./Arrays.md#array-petrify) | Array | Applies or references the 'Petrify' effect/state. | 13 |
 | [`RandomMagicMissile`](./Abilities_and_Spells.md#context-randommagicmissile) | Block | Fires a randomized number of magic missiles. | 13 |
 | [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 13 |
@@ -341,11 +337,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 11 |
 | [`ChanceToBreakFree`](./Abilities_and_Spells.md#context-chancetobreakfree) | Block | Provides a probability to escape a grapple or restraining effect. | 11 |
 | [`Cleave`](./Abilities_and_Spells.md#context-cleave) | Block | Causes the attack to hit adjacent enemies alongside the primary target. | 11 |
-| [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 11 |
 | [`DoScreenShake`](./Abilities_and_Spells.md#context-doscreenshake) | Block | Triggers a camera screen shake effect. | 11 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 11 |
-| [`Conditional_FormulaIsPositive`](./Abilities_and_Spells.md#context-conditional_formulaispositive) | Block | Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0. | 10 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative) | Block | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 10 |
 | [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array | Applies or references the 'MagicWeakness' effect/state. | 10 |
 | `DexterityUp` | Mixed | Applies or references the 'DexterityUp' effect/state. | 10 |
 | `PartialPurge` | Number | Applies or references the 'PartialPurge' effect/state. | 10 |
@@ -376,7 +369,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `TempRangeUp` | Number | Applies or references the 'TempRangeUp' effect/state. | 7 |
 | [`BackflipWhenTargeted`](./Abilities_and_Spells.md#context-backflipwhentargeted) | Block | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 6 |
 | [`BounceRock`](./Arrays.md#array-bouncerock) | Array | Applies or references the 'BounceRock' effect/state. | 6 |
-| [`Conditional_Corpse`](./Abilities_and_Spells.md#context-conditional_corpse) | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 6 |
 | [`ConjureBonusAbility`](./Abilities_and_Spells.md#context-conjurebonusability) | Block | Adds a temporary bonus ability to the character's hand/deck. | 6 |
 | [`Craft`](./Abilities_and_Spells.md#context-craft) | Block | Synthesizes or spawns a new item from a specific pool. | 6 |
 | [`DoDistortionRing`](./Abilities_and_Spells.md#context-dodistortionring) | Block | Creates a visual distortion ring effect on the screen. | 6 |
@@ -395,11 +387,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 6 |
 | `SpiderInfested` | Number | Applies or references the 'SpiderInfested' effect/state. | 6 |
 | [`CollectsPickupsWithAltEffects`](./Abilities_and_Spells.md#context-collectspickupswithalteffects) | Block | Triggers alternative nested effects when collecting items or pickups. | 5 |
-| [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 5 |
-| [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform) | Block | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 5 |
-| [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 5 |
-| [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object) | Block | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 5 |
-| [`Conditional_PlayerCat`](./Abilities_and_Spells.md#context-conditional_playercat) | Block | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 5 |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 5 |
 | [`ObjectOnHitEmpty`](./Enums.md#enum-objectonhitempty) | Enum | Applies or references the 'ObjectOnHitEmpty' effect/state. | 5 |
 | [`ObjectOnHit`](./Abilities_and_Spells.md#context-objectonhit) | Block | Spawns a specific physics/item object upon impact. | 5 |
@@ -428,7 +415,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToConsumed`](./Abilities_and_Spells.md#context-applytoconsumed) | Block | Redirects the nested effects to apply to the entity that just consumed this object. | 4 |
 | [`ArcLightning`](./Abilities_and_Spells.md#context-arclightning) | Block | Executes a chain-lightning logic block that bounces between targets. | 4 |
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array | Applies or references the 'BurgleCoin' effect/state. | 4 |
-| [`Conditional_Familiar`](./Abilities_and_Spells.md#context-conditional_familiar) | Block | Conditional trigger: Executes nested logic if the target is a familiar. | 4 |
 | [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Applies or references the 'EnableWeather' effect/state. | 4 |
 | [`LateStatusApplication`](./Abilities_and_Spells.md#context-latestatusapplication) | Block | Applies a status effect after all primary damage and effects have fully resolved. | 4 |
 | [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array | Applies or references the 'RandomStatDown' effect/state. | 4 |
@@ -449,9 +435,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyMultipleTimes`](./Abilities_and_Spells.md#context-applymultipletimes) | Block | A loop block that executes its nested logic multiple times. | 3 |
 | [`CatPartsSizeScaleStatus`](./Abilities_and_Spells.md#context-catpartssizescalestatus) | Block | Visually scales specific body parts of a character. | 3 |
 | [`CollideWithConsumed`](./Math_Equations.md) | Equation | Applies or references the 'CollideWithConsumed' effect/state. | 3 |
-| [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#context-conditional_affectedbyelement) | Block | Conditional trigger: Executes nested logic if the target is currently afflicted by the specified element. | 3 |
-| [`Conditional_FirstApplicationThisTurn`](./Abilities_and_Spells.md#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 3 |
-| [`Conditional_LastHit`](./Abilities_and_Spells.md#context-conditional_lasthit) | Block | Conditional trigger: Executes nested logic if this attack is the final hit of a multi-hit sequence. | 3 |
 | [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Applies or references the 'DoubleStatus' effect/state. | 3 |
 | [`DustOnHit`](./Abilities_and_Spells.md#context-dustonhit) | Block | Spawns a specific particle or cloud object upon impact. | 3 |
 | [`ReviveNextRound`](./Abilities_and_Spells.md#context-revivenextround) | Block | Queues the character to be resurrected at the start of the next combat round. | 3 |
@@ -491,17 +474,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `VaporizeTarget` | Number | Applies or references the 'VaporizeTarget' effect/state. | 3 |
 | [`BodyGuard`](./Abilities_and_Spells.md#context-bodyguard) | Block | Protects an ally by intercepting attacks directed at them. | 2 |
 | [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Applies or references the 'ChangeFaction' effect/state. | 2 |
-| [`Conditional_BadRoll`](./Abilities_and_Spells.md#context-conditional_badroll) | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 2 |
-| [`Conditional_BossOrBig`](./Abilities_and_Spells.md#context-conditional_bossorbig) | Block | Conditional trigger: Executes nested logic if the target is a Boss or has a large size classification. | 2 |
-| [`Conditional_Buddy`](./Abilities_and_Spells.md#context-conditional_buddy) | Block | Conditional trigger: Executes nested logic if the target is the caster's summoned buddy/familiar. | 2 |
-| [`Conditional_DestructibleCorpse`](./Abilities_and_Spells.md#context-conditional_destructiblecorpse) | Block | Conditional trigger: Executes nested logic if the target is a corpse that can be destroyed or vaporized. | 2 |
-| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 2 |
-| [`Conditional_IsSelf`](./Abilities_and_Spells.md#context-conditional_isself) | Block | Conditional trigger: Executes nested logic if the target is the caster themselves. | 2 |
-| [`Conditional_NotAlly`](./Abilities_and_Spells.md#context-conditional_notally) | Block | Conditional trigger: Executes nested logic if the target is NOT friendly to the caster. | 2 |
-| [`Conditional_NotBossOrBig`](./Abilities_and_Spells.md#context-conditional_notbossorbig) | Block | Conditional trigger: Executes nested logic if the target is NEITHER a Boss nor large. | 2 |
-| [`Conditional_NotShielded`](./Abilities_and_Spells.md#context-conditional_notshielded) | Block | Conditional trigger: Executes nested logic if the target does NOT currently have a Shield status. | 2 |
-| [`Conditional_OncePerBattle`](./Abilities_and_Spells.md#context-conditional_onceperbattle) | Block | Conditional trigger: Executes nested logic only once per encounter/battle. | 2 |
-| [`Conditional_Shielded`](./Abilities_and_Spells.md#context-conditional_shielded) | Block | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 2 |
 | [`CopySpells`](./Abilities_and_Spells.md#context-copyspells) | Block | Duplicates existing spells currently in the character's hand. | 2 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 2 |
 | [`ForceMoveTowardsTaggedObject`](./Abilities_and_Spells.md#context-forcemovetowardstaggedobject) | Block | Forces the character to move towards the nearest object with a specific tag. | 2 |
@@ -584,18 +556,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToRandomClosestAlly`](./Abilities_and_Spells.md#context-applytorandomclosestally) | Block | Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them. | 1 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 1 |
 | [`CoinTossBounce`](./Math_Equations.md) | Equation | Applies or references the 'CoinTossBounce' effect/state. | 1 |
-| [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#context-conditional_activeweather_any) | Block | Conditional trigger: Executes nested logic if the current map weather matches any in the list. | 1 |
-| [`Conditional_Backstab`](./Abilities_and_Spells.md#context-conditional_backstab) | Block | Conditional trigger: Executes nested logic if the attacker is positioned behind the target. | 1 |
-| [`Conditional_CanBeHealed`](./Abilities_and_Spells.md#context-conditional_canbehealed) | Block | Conditional trigger: Executes nested logic if the target's health is below maximum and they are capable of receiving healing. | 1 |
-| [`Conditional_DebuffRoll`](./Abilities_and_Spells.md#context-conditional_debuffroll) | Block | Conditional trigger: Executes nested logic based on a randomized debuff probability. | 1 |
-| [`Conditional_Displaceable`](./Abilities_and_Spells.md#context-conditional_displaceable) | Block | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 1 |
-| [`Conditional_HasCleansableDebuffs`](./Abilities_and_Spells.md#context-conditional_hascleansabledebuffs) | Block | Conditional trigger: Executes nested logic if the target currently has negative status effects that can be cleansed. | 1 |
-| [`Conditional_IsTrample`](./Abilities_and_Spells.md#context-conditional_istrample) | Block | Conditional trigger: Executes nested logic if the current movement/attack is classified as a trample. | 1 |
-| [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#context-conditional_livingplayercat) | Block | Conditional trigger: Executes nested logic if the target is an alive player-controlled cat. | 1 |
-| [`Conditional_NotBig`](./Abilities_and_Spells.md#context-conditional_notbig) | Block | Conditional trigger: Executes nested logic if the target is NOT classified as large. | 1 |
-| [`Conditional_RandomChance`](./Abilities_and_Spells.md#context-conditional_randomchance) | Block | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 1 |
-| [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#context-conditional_sourceabilityhastag) | Block | Conditional trigger: Executes nested logic if the ability that triggered this effect has the specified tag. | 1 |
-| [`Conditional_SourceHasStatus`](./Abilities_and_Spells.md#context-conditional_sourcehasstatus) | Block | Conditional trigger: Executes nested logic if the caster currently has the specified status. | 1 |
 | [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. | 1 |
 | [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
 | [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the 'DeathwormUnderground' effect/state. | 1 |
@@ -653,7 +613,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `CharmedFacingForceAttack` | Number | Applies or references the 'CharmedFacingForceAttack' effect/state. | 1 |
 | `ClearFinalBossBattlefield` | Number | Applies or references the 'ClearFinalBossBattlefield' effect/state. | 1 |
 | `CloneWeaponTemp` | Number | Applies or references the 'CloneWeaponTemp' effect/state. | 1 |
-| `Conditional_AbilityTargetIsSelf` | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 | `CurrentWeaponAddElectricElement` | Number | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. | 1 |
 | `DamageWeapon` | Number | Applies or references the 'DamageWeapon' effect/state. | 1 |
 | `DecoySwapper` | Number | Applies or references the 'DecoySwapper' effect/state. | 1 |
@@ -1167,7 +1126,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 3 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 3 |
-| [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 2 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 2 |
 | [`GainCoinsRange`](./Abilities_and_Spells.md#context-gaincoinsrange) | Block | Grants the player a randomized amount of coins within a min/max range. | 2 |
 | [`RandomStatDown`](./Math_Equations.md) | Equation | Applies or references the 'RandomStatDown' effect/state. | 2 |
@@ -1180,12 +1138,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 2 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 1 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#context-catpartstransform) | Block | Transforms specific body parts into different visual variants. | 1 |
-| [`Conditional_Displaceable`](./Abilities_and_Spells.md#context-conditional_displaceable) | Block | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 1 |
-| [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 1 |
-| [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 1 |
-| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 1 |
-| [`Conditional_Object`](./Abilities_and_Spells.md#context-conditional_object) | Block | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 1 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative) | Block | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite) | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 |
 | [`DoDamage`](./Abilities_and_Spells.md#context-dodamage) | Block | Explicitly triggers a secondary damage instance independent of the main attack. | 1 |
@@ -1298,9 +1250,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 41 |
-| [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 6 |
 | `FloatingRockTrap` | Number | Applies or references the 'FloatingRockTrap' effect/state. | 6 |
-| [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 4 |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 4 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 3 |
@@ -1311,7 +1261,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `DamageUp` | Number | Applies or references the 'DamageUp' effect/state. | 2 |
 | `Die` | Number | Applies or references the 'Die' effect/state. | 2 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 2 |
-| [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform) | Block | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 1 |
 | [`MergeDamageInstance`](./Abilities_and_Spells.md#context-mergedamageinstance) | Block | Combines damage numbers or visual hit effects. | 1 |
 | [`PopAndSpawn`](./Abilities_and_Spells.md#context-popandspawn) | Block | Destroys the target and replaces it with a new spawned entity. | 1 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 1 |
@@ -1389,7 +1338,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Confusion`](./Arrays.md#array-confusion) | Array | Applies or references the 'Confusion' effect/state. | 6 |
-| [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 3 |
 | `DisplaceToAbilityTarget` | Number | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 3 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
 | `Attraction` | Number | Applies or references the 'Attraction' effect/state. | 2 |
@@ -1399,7 +1347,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Weakness` | Number | Applies or references the 'Weakness' effect/state. | 2 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Conditional_FinishedSpawning`](./Abilities_and_Spells.md#context-conditional_finishedspawning) | Block | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 1 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 1 |
 | [`Temporary`](./Abilities_and_Spells.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
@@ -1465,8 +1412,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 2 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 1 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Conditional_Corpse`](./Abilities_and_Spells.md#context-conditional_corpse) | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 1 |
-| [`Conditional_PlayerCat`](./Abilities_and_Spells.md#context-conditional_playercat) | Block | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 1 |
 | [`ShowText`](./Strings.md#string-showtext) | String | Applies or references the 'ShowText' effect/state. | 1 |
 | `BleedThorns` | Number | Applies or references the 'BleedThorns' effect/state. | 1 |
 | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 1 |
@@ -1696,7 +1641,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 6 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 4 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 4 |
 | `OverrideDamage` | Number | Applies or references the 'OverrideDamage' effect/state. | 4 |
@@ -1835,7 +1779,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 2 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 2 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
-| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 1 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies or references the 'Fear' effect/state. | 1 |
 | `PermanentCharm` | Number | Applies or references the 'PermanentCharm' effect/state. | 1 |
 
@@ -1923,7 +1866,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 3 |
-| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 2 |
 | `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 1 |
@@ -2108,7 +2050,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 4 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 2 |
-| [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 1 |
 | `FlatAIBonus` | Number | Applies or references the 'FlatAIBonus' effect/state. | 1 |
 | `HealRandomInjury` | Number | Applies or references the 'HealRandomInjury' effect/state. | 1 |
 | `PermanentCharm` | Number | Applies or references the 'PermanentCharm' effect/state. | 1 |
@@ -2217,7 +2158,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 3 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 | [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 |
 | `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. | 1 |
@@ -2764,7 +2704,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
 | `BonusCritChance` | Number | Applies or references the 'BonusCritChance' effect/state. | 2 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#context-conditional_speculative) | Block | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 1 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
 
 </details>
@@ -3071,7 +3010,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform) | Block | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 1 |
 | [`Consumed`](./Abilities_and_Spells.md#context-consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 1 |
 | [`Else`](./Abilities_and_Spells.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 
@@ -5099,7 +5037,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_RandomChance`](./Cat_Mutations.md#context-conditional_randomchance) | Block | Examples: `{ ... }` | 2 |
 
 </details>
 
@@ -5134,8 +5071,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_FirstApplicationThisTurn`](./Cat_Mutations.md#context-conditional_firstapplicationthisturn) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_GoodRoll`](./Cat_Mutations.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -6857,7 +6792,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 16 |
-| [`Conditional_GoodRoll`](./Characters_and_Bosses.md#context-conditional_goodroll) | Block | Conditional: Executes logic on a good RNG roll. | 2 |
 | [`RandomStatusFromPool`](./Characters_and_Bosses.md#context-randomstatusfrompool) | Block | Logic: Applies a random status from the pool. | 1 |
 
 </details>
@@ -7663,7 +7597,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_BadRoll`](./Characters_and_Bosses.md#context-conditional_badroll) | Block | Conditional: Executes logic on a bad RNG roll. | 1 |
 | `AllStatsUp` | Number | Applies or references the 'AllStatsUp' effect/state. | 1 |
 | `DivineShield` | Number | Applies or references the 'DivineShield' effect/state. | 1 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 1 |
@@ -8943,7 +8876,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#context-conditional_isphysicalattack) | Block | Conditional: Executes logic if the triggering attack is physical. | 1 |
 | [`Else`](./Characters_and_Bosses.md#context-else) | Block | Fallback logic block for conditionals. | 1 |
 
 </details>
@@ -9963,7 +9895,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasKnockback`](./Characters_and_Bosses.md#context-conditional_hasknockback) | Block | Conditional: Executes logic if the triggering attack deals knockback. | 1 |
 
 </details>
 
@@ -19326,7 +19257,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Tangled`](./Arrays.md#array-tangled) | Array | Applies a tangled/ensnared status effect, often modifying visual sprites. | 4 |
 | `Slow` | Number | Applies or references the 'Slow' effect/state. | 4 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 3 |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 3 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 2 |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 2 |
 | `DamageOrHealConditionally` | Number | Applies or references the 'DamageOrHealConditionally' effect/state. | 2 |
@@ -19369,7 +19299,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies or references the 'Fear' effect/state. | 4 |
 | [`Grappled`](./Arrays.md#array-grappled) | Array | Applies or references the 'Grappled' effect/state. | 4 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 4 |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 3 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 3 |
 | `Slow` | Number | Applies or references the 'Slow' effect/state. | 3 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 2 |
@@ -19417,14 +19346,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 11 |
 | `RandomPermanentStat` | Number | Applies or references the 'RandomPermanentStat' effect/state. | 6 |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 5 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 3 |
 | `RandomMutation` | Number | Applies or references the 'RandomMutation' effect/state. | 3 |
 | [`GainCoins`](./Arrays.md#array-gaincoins) | Array | Applies or references the 'GainCoins' effect/state. | 2 |
 | [`SetItemAux`](./Items_and_Equipment.md#context-setitemaux) | Block | Applies or references the 'SetItemAux' effect/state. | 2 |
 | `RepairTrinket` | Number | Applies or references the 'RepairTrinket' effect/state. | 2 |
-| [`Conditional_Corpse`](./Items_and_Equipment.md#context-conditional_corpse) | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 1 |
-| [`Conditional_Shielded`](./Items_and_Equipment.md#context-conditional_shielded) | Block | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 1 |
 | [`TransformWeapon`](./Items_and_Equipment.md#context-transformweapon) | Block | Transforms the equipped weapon into another specific weapon state. | 1 |
 | `PermanentConstitution` | Number | Applies or references the 'PermanentConstitution' effect/state. | 1 |
 | `PermanentIntelligence` | Number | Applies or references the 'PermanentIntelligence' effect/state. | 1 |
@@ -19448,10 +19374,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum | Applies or references the 'ForceUseAbility' effect/state. | 6 |
 | `PartialCleanse` | Number | Applies or references the 'PartialCleanse' effect/state. | 4 |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 2 |
 | [`ImmediateUseAbility`](./Items_and_Equipment.md#context-immediateuseability) | Block | Applies or references the 'ImmediateUseAbility' effect/state. | 2 |
 | `SpawnCoinAnywhere` | Number | Applies or references the 'SpawnCoinAnywhere' effect/state. | 2 |
-| [`Conditional_ManaThreshold`](./Items_and_Equipment.md#context-conditional_manathreshold) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 | [`Stealth`](./Arrays.md#array-stealth) | Array | Applies or references the 'Stealth' effect/state. | 1 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 1 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
@@ -19546,7 +19470,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 3 |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies or references the 'EquipPermanentItem' effect/state. | 1 |
 | `BrittleCharismaUp` | Number | Applies or references the 'BrittleCharismaUp' effect/state. | 1 |
 | `BrittleConstitutionUp` | Number | Applies or references the 'BrittleConstitutionUp' effect/state. | 1 |
@@ -19582,8 +19505,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 5 |
 | `Thorns` | Number | Applies or references the 'Thorns' effect/state. | 2 |
-| [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 1 |
-| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#context-conditional_healththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 1 |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 1 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 1 |
 | [`Temporary`](./Items_and_Equipment.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
@@ -19674,7 +19595,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_BadRoll`](./Items_and_Equipment.md#context-conditional_badroll) | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 2 |
 | [`ManaGainRange`](./Items_and_Equipment.md#context-managainrange) | Block | Applies or references the 'ManaGainRange' effect/state. | 1 |
 | [`Temporary`](./Items_and_Equipment.md#context-temporary) | Block | A wrapper block for applying status effects that automatically expire. | 1 |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 1 |
@@ -19799,9 +19719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 3 |
 | `must_do_damage` | Boolean |  | 3 |
-| [`Conditional_HasTag`](./Items_and_Equipment.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 1 |
 | [`KnockbackIfCrit`](./Items_and_Equipment.md#context-knockbackifcrit) | Block | Applies or references the 'KnockbackIfCrit' effect/state. | 1 |
 | `Rot` | Number | Applies or references the 'Rot' effect/state. | 1 |
 
@@ -19917,7 +19835,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_RandomChance`](./Items_and_Equipment.md#context-conditional_randomchance) | Block | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 1 |
 | [`CreateGlobalModifiers`](./Items_and_Equipment.md#context-createglobalmodifiers) | Block | Generates global map or encounter rules/modifiers. | 1 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Generates an item drop from the specified loot pool. | 1 |
 | [`GainCoinsRange`](./Items_and_Equipment.md#context-gaincoinsrange) | Block | Grants the player a randomized amount of coins within a min/max range. | 1 |
@@ -20153,7 +20070,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array | Applies or references the 'DivineShield' effect/state. | 2 |
-| [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 1 |
 | `Metronome` | Number | Executes a random musical or metronome ability. | 1 |
 
 </details>
@@ -20248,7 +20164,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](./Abilities_and_Spells.md#context-conditional_isself) | Block | Conditional trigger: Executes nested logic if the target is the caster themselves. | 3 |
 | [`Else`](./Items_and_Equipment.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 3 |
 
 </details>
@@ -20302,7 +20217,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_PartyMember`](./Items_and_Equipment.md#context-conditional_partymember) | Block | Conditional constraint. Nested properties only trigger if this is true. | 3 |
 
 </details>
 
@@ -20410,7 +20324,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Boss`](./Items_and_Equipment.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 2 |
 | `Poison` | Number | Applies or references the 'Poison' effect/state. | 1 |
 
 </details>
@@ -20527,7 +20440,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Enemy`](./Items_and_Equipment.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 1 |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 1 |
 
 </details>
@@ -20636,8 +20548,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Ally`](./Items_and_Equipment.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 1 |
-| [`Conditional_PlayerCat`](./Items_and_Equipment.md#context-conditional_playercat) | Block | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 1 |
 
 </details>
 
@@ -21608,7 +21518,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle) | Block | Conditional trigger: Executes nested logic only once per encounter/battle. | 1 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 1 |
 
 </details>
@@ -22074,7 +21983,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 
 </details>
 
@@ -22213,7 +22121,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
 
 </details>
 
@@ -22387,7 +22294,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle) | Block | Conditional trigger: Executes nested logic only once per encounter/battle. | 1 |
 
 </details>
 
@@ -26928,10 +26834,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Shield` | Mixed | Examples: `"max((X-1)*2, 0)", 2, 5` | 49 |
 | `Cleanse` | Number | Examples: `1, 0` | 44 |
 | `Confusion` | Number | Examples: `4, 2, 1` | 39 |
-| [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag) | Block | Examples: `{ ... }` | 38 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Examples: `PoisonPoof, WaterConduct, FireBlastSmall` | 36 |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Examples: `CharmedFlea, SmallRock, CharmedDip` | 35 |
-| [`Conditional_Enemy`](./Miscellaneous.md#context-conditional_enemy) | Block | Examples: `{ ... }` | 35 |
 | [`Temporary`](./Miscellaneous.md#context-temporary) | Block | Examples: `{ ... }` | 34 |
 | `SpeedUp` | Number | Examples: `2, -1, 1` | 34 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Examples: `2, 1, [ 1 .25 ]` | 32 |
@@ -26943,7 +26847,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Block | Examples: `{ ... }` | 27 |
 | `ManaGain` | Mixed | Examples: `"max((X-1)*2, 0)", 5, 10` | 26 |
 | [`Blind`](./Arrays.md#array-blind) | Array | Examples: `3, 1, [ 1 .25 ]` | 25 |
-| [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally) | Block | Examples: `{ ... }` | 25 |
 | `Immobile` | Number | Examples: `2, 0, 1` | 25 |
 | [`Weakness`](./Arrays.md#array-weakness) | Array | Examples: `2, 1, [ 1 .25 ]` | 24 |
 | [`Charmed`](./Arrays.md#array-charmed) | Array | Examples: `1, [ 1 .1+.02*cha ], level` | 23 |
@@ -26965,7 +26868,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Consumed`](./Miscellaneous.md#context-consumed) | Block | Examples: `{ ... }` | 15 |
 | `VaporizeCorpse` | Number | Examples: `1` | 15 |
 | [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Examples: `Fighter, Mage, Hunter` | 14 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 14 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 14 |
 | [`TransformBasicAttack`](./Enums.md#enum-transformbasicattack) | Enum | Examples: `ThrowPoop, TigerSwipes, TigerSwipes2` | 14 |
 | `DivineShield` | Number | Examples: `4, 2, 1` | 14 |
@@ -26975,7 +26877,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RefreshMovePoints` | Number | Examples: `1` | 14 |
 | `TakeExtraTurn` | Number | Examples: `1` | 14 |
 | [`CatPartsTransform`](./Miscellaneous.md#context-catpartstransform) | Block | Examples: `{ ... }` | 13 |
-| [`Conditional_Boss`](./Miscellaneous.md#context-conditional_boss) | Block | Examples: `{ ... }` | 13 |
 | [`RandomMagicMissile`](./Miscellaneous.md#context-randommagicmissile) | Block | Examples: `{ ... }, 1, 5` | 13 |
 | `GenericDebuff` | Number | Examples: `999, 1, 100` | 13 |
 | [`Cleave`](./Miscellaneous.md#context-cleave) | Block | Examples: `{ ... }, 1` | 12 |
@@ -26986,8 +26887,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ChanceToBreakFree`](./Miscellaneous.md#context-chancetobreakfree) | Block | Examples: `{ ... }` | 11 |
 | [`DoScreenShake`](./Miscellaneous.md#context-doscreenshake) | Block | Examples: `{ ... }, 1` | 11 |
 | `FullHeal` | Number | Examples: `1` | 11 |
-| [`Conditional_FormulaIsPositive`](./Miscellaneous.md#context-conditional_formulaispositive) | Block | Examples: `{ ... }` | 10 |
-| [`Conditional_Speculative`](./Miscellaneous.md#context-conditional_speculative) | Block | Examples: `{ ... }` | 10 |
 | [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array | Examples: `[ 1 .1 ], 4, 1` | 10 |
 | [`Marked`](./Arrays.md#array-marked) | Array | Examples: `[ 1 .1 ], 1, 5` | 10 |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Examples: `Holyatk, MagicMissleBlast, WaterConduct` | 10 |
@@ -27020,7 +26919,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `TempRangeUp` | Number | Examples: `3, 1, 20` | 7 |
 | [`BackflipWhenTargeted`](./Miscellaneous.md#context-backflipwhentargeted) | Block | Examples: `{ ... }, 2, 1` | 6 |
 | [`BounceRock`](./Arrays.md#array-bouncerock) | Array | Examples: `SmallRock, SmallLavaRock, [ 1 .2 ]` | 6 |
-| [`Conditional_Corpse`](./Miscellaneous.md#context-conditional_corpse) | Block | Examples: `{ ... }` | 6 |
 | [`ConjureBonusAbility`](./Miscellaneous.md#context-conjurebonusability) | Block | Examples: `{ ... }, random, Colorless` | 6 |
 | [`Craft`](./Miscellaneous.md#context-craft) | Block | Examples: `{ ... }` | 6 |
 | [`DoDistortionRing`](./Miscellaneous.md#context-dodistortionring) | Block | Examples: `{ ... }` | 6 |
@@ -27038,11 +26936,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SetHealth` | Number | Examples: `1, 100` | 6 |
 | `SpiderInfested` | Number | Examples: `4, 2, 1` | 6 |
 | [`CollectsPickupsWithAltEffects`](./Miscellaneous.md#context-collectspickupswithalteffects) | Block | Examples: `{ ... }` | 5 |
-| [`Conditional_HasStatus`](./Miscellaneous.md#context-conditional_hasstatus) | Block | Examples: `{ ... }` | 5 |
-| [`Conditional_InForm`](./Miscellaneous.md#context-conditional_inform) | Block | Examples: `{ ... }` | 5 |
-| [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss) | Block | Examples: `{ ... }` | 5 |
-| [`Conditional_Object`](./Miscellaneous.md#context-conditional_object) | Block | Examples: `{ ... }` | 5 |
-| [`Conditional_PlayerCat`](./Miscellaneous.md#context-conditional_playercat) | Block | Examples: `{ ... }` | 5 |
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Examples: `BeefyCharmedLeech, CharmedLeech, Tumor` | 5 |
 | [`ObjectOnHitEmpty`](./Enums.md#enum-objectonhitempty) | Enum | Examples: `SmallRock, AnimalEgg2, AnimalEgg` | 5 |
 | [`ObjectOnHit`](./Miscellaneous.md#context-objectonhit) | Block | Examples: `{ ... }, BiggestFood, FetusNoJar` | 5 |
@@ -27071,7 +26964,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToConsumed`](./Miscellaneous.md#context-applytoconsumed) | Block | Examples: `{ ... }` | 4 |
 | [`ArcLightning`](./Miscellaneous.md#context-arclightning) | Block | Examples: `{ ... }` | 4 |
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array | Examples: `3, 1, [ 1 .5 ]` | 4 |
-| [`Conditional_Familiar`](./Miscellaneous.md#context-conditional_familiar) | Block | Examples: `{ ... }` | 4 |
 | [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Examples: `KaijuMeteornado, KaijuFirestorm, KaijuMeteornadoSolo` | 4 |
 | [`FactionUprising`](./Enums.md#enum-factionuprising) | Enum | Examples: `alien, robot, ghost` | 4 |
 | [`LateStatusApplication`](./Miscellaneous.md#context-latestatusapplication) | Block | Examples: `{ ... }` | 4 |
@@ -27095,9 +26987,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyMultipleTimes`](./Miscellaneous.md#context-applymultipletimes) | Block | Examples: `{ ... }` | 3 |
 | [`CatPartsSizeScaleStatus`](./Miscellaneous.md#context-catpartssizescalestatus) | Block | Examples: `{ ... }` | 3 |
 | [`CollideWithConsumed`](./Math_Equations.md) | Equation | Examples: `1+bonus_melee_damage, 4+bonus_melee_damage, 5+bonus_melee_damage` | 3 |
-| [`Conditional_AffectedByElement`](./Miscellaneous.md#context-conditional_affectedbyelement) | Block | Examples: `{ ... }` | 3 |
-| [`Conditional_FirstApplicationThisTurn`](./Miscellaneous.md#context-conditional_firstapplicationthisturn) | Block | Examples: `{ ... }` | 3 |
-| [`Conditional_LastHit`](./Miscellaneous.md#context-conditional_lasthit) | Block | Examples: `{ ... }` | 3 |
 | [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Examples: `Bleed, Poison, Burn` | 3 |
 | [`DustOnHit`](./Miscellaneous.md#context-dustonhit) | Block | Examples: `{ ... }` | 3 |
 | [`ReviveNextRound`](./Miscellaneous.md#context-revivenextround) | Block | Examples: `{ ... }, 2` | 3 |
@@ -27141,17 +27030,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`BodyGuard`](./Miscellaneous.md#context-bodyguard) | Block | Examples: `{ ... }` | 2 |
 | [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Examples: `sabertooths` | 2 |
 | [`CharacterTypeGainsStatusAtBattleStart`](./Miscellaneous.md#context-charactertypegainsstatusatbattlestart) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_BadRoll`](./Miscellaneous.md#context-conditional_badroll) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_BossOrBig`](./Miscellaneous.md#context-conditional_bossorbig) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_Buddy`](./Miscellaneous.md#context-conditional_buddy) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_DestructibleCorpse`](./Miscellaneous.md#context-conditional_destructiblecorpse) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#context-conditional_healththreshold) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_IsSelf`](./Miscellaneous.md#context-conditional_isself) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_NotAlly`](./Miscellaneous.md#context-conditional_notally) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_NotBossOrBig`](./Miscellaneous.md#context-conditional_notbossorbig) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_NotShielded`](./Miscellaneous.md#context-conditional_notshielded) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_OncePerBattle`](./Miscellaneous.md#context-conditional_onceperbattle) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_Shielded`](./Miscellaneous.md#context-conditional_shielded) | Block | Examples: `{ ... }` | 2 |
 | [`CopySpells`](./Miscellaneous.md#context-copyspells) | Block | Examples: `{ ... }, 1` | 2 |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#context-destroyequipmentandattachparasite) | Block | Examples: `{ ... }` | 2 |
 | [`ForceMoveTowardsTaggedObject`](./Miscellaneous.md#context-forcemovetowardstaggedobject) | Block | Examples: `{ ... }` | 2 |
@@ -27243,18 +27121,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToRandomClosestAlly`](./Miscellaneous.md#context-applytorandomclosestally) | Block | Examples: `{ ... }` | 1 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Examples: `DirtTile` | 1 |
 | [`CoinTossBounce`](./Math_Equations.md) | Equation | Examples: `X` | 1 |
-| [`Conditional_ActiveWeather_Any`](./Miscellaneous.md#context-conditional_activeweather_any) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_Backstab`](./Miscellaneous.md#context-conditional_backstab) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_CanBeHealed`](./Miscellaneous.md#context-conditional_canbehealed) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_DebuffRoll`](./Miscellaneous.md#context-conditional_debuffroll) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_Displaceable`](./Miscellaneous.md#context-conditional_displaceable) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_HasCleansableDebuffs`](./Miscellaneous.md#context-conditional_hascleansabledebuffs) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_IsTrample`](./Miscellaneous.md#context-conditional_istrample) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_LivingPlayerCat`](./Miscellaneous.md#context-conditional_livingplayercat) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_NotBig`](./Miscellaneous.md#context-conditional_notbig) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_RandomChance`](./Miscellaneous.md#context-conditional_randomchance) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_SourceAbilityHasTag`](./Miscellaneous.md#context-conditional_sourceabilityhastag) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_SourceHasStatus`](./Miscellaneous.md#context-conditional_sourcehasstatus) | Block | Examples: `{ ... }` | 1 |
 | [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Examples: `random` | 1 |
 | [`CreateGlobalModifiers`](./Miscellaneous.md#context-createglobalmodifiers) | Block | Examples: `{ ... }` | 1 |
 | [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Examples: `DeathWormEat` | 1 |
@@ -27321,7 +27187,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ClearFinalBossBattlefield` | Number | Examples: `1` | 1 |
 | `CloneWeaponTemp` | Number | Examples: `1` | 1 |
 | `CockroachSwarm` | Number | Examples: `1` | 1 |
-| `Conditional_AbilityTargetIsSelf` | Block | Examples: `{ ... }` | 1 |
 | `CurrentWeaponAddElectricElement` | Number | Examples: `1` | 1 |
 | `DamageWeapon` | Number | Examples: `1` | 1 |
 | `DecoySwapper` | Number | Examples: `1` | 1 |
@@ -28244,7 +28109,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Stun`](./Arrays.md#array-stun) | Array | Examples: `[ 1 .05 ], [ 1 .1 ], 1` | 8 |
 | [`Confusion`](./Arrays.md#array-confusion) | Array | Examples: `[ 3 .1 ], [ 1 .15 ], 1` | 7 |
 | `Weakness` | Number | Examples: `3, 1` | 7 |
-| [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally) | Block | Examples: `{ ... }` | 5 |
 | `Leech` | Number | Examples: `2, 1` | 5 |
 | `Rot` | Number | Examples: `1, -999999` | 5 |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Examples: `BeefyCharmedLeech, CharmedLeech, AllyRotFly` | 4 |
@@ -28255,8 +28119,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Leeches` | Number | Examples: `1` | 4 |
 | `SoulLink` | Number | Examples: `1` | 4 |
 | [`Charmed`](./Arrays.md#array-charmed) | Array | Examples: `[ 1 .10 ], [ 1 .25 ]` | 3 |
-| [`Conditional_Enemy`](./Miscellaneous.md#context-conditional_enemy) | Block | Examples: `{ ... }` | 3 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 3 |
 | [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Array | Examples: `1, [ 1 .5 ]` | 3 |
 | [`SpreadDisease`](./Miscellaneous.md#context-spreaddisease) | Block | Examples: `{ ... }` | 3 |
 | `Madness` | Number | Examples: `1` | 3 |
@@ -28264,8 +28126,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Piercing` | Number | Examples: `1` | 3 |
 | [`ApplyStatusIfCrit`](./Miscellaneous.md#context-applystatusifcrit) | Block | Examples: `{ ... }` | 2 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_Adjacent`](./Miscellaneous.md#context-conditional_adjacent) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_Shielded`](./Miscellaneous.md#context-conditional_shielded) | Block | Examples: `{ ... }` | 2 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Examples: `fx_windSpell` | 2 |
 | `Blind` | Number | Examples: `1` | 2 |
 | `BurgleCoin` | Number | Examples: `1` | 2 |
@@ -28275,8 +28135,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RemoteLeech` | Number | Examples: `1` | 2 |
 | `SpawnBearTrapOnMiss` | Number | Examples: `1` | 2 |
 | `SpiderInfested` | Number | Examples: `1` | 2 |
-| [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_SourceHasTag`](./Miscellaneous.md#context-conditional_sourcehastag) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 | [`ForceUseAbilityOnTarget`](./Miscellaneous.md#context-forceuseabilityontarget) | Block | Examples: `{ ... }` | 1 |
 | [`GainDisorderFromPool`](./Miscellaneous.md#context-gaindisorderfrompool) | Block | Examples: `{ ... }` | 1 |
@@ -29162,7 +29020,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `BonusDamage` | Mixed | Examples: `20+bonus_melee_damage, 1, 5` | 6 |
 | [`CanApplyToInanimate`](./Miscellaneous.md#context-canapplytoinanimate) | Block | Examples: `{ ... }` | 3 |
 | `Vaporize` | Number | Examples: `1, 20` | 3 |
-| [`Conditional_HasStatus`](./Miscellaneous.md#context-conditional_hasstatus) | Block | Examples: `{ ... }` | 2 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Examples: `1, [ 1 .25 ]` | 2 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Examples: `LastHit, Nuke` | 2 |
 | [`GainCoinsRange`](./Miscellaneous.md#context-gaincoinsrange) | Block | Examples: `{ ... }` | 2 |
@@ -29182,13 +29039,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`AllyInfested`](./Miscellaneous.md#context-allyinfested) | Block | Examples: `{ ... }` | 1 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#context-applytorandompartymemberifpossible) | Block | Examples: `{ ... }` | 1 |
 | [`CatPartsTransform`](./Miscellaneous.md#context-catpartstransform) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_Displaceable`](./Miscellaneous.md#context-conditional_displaceable) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_HasKnockback`](./Miscellaneous.md#context-conditional_hasknockback) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#context-conditional_healththreshold) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_Object`](./Miscellaneous.md#context-conditional_object) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_Speculative`](./Miscellaneous.md#context-conditional_speculative) | Block | Examples: `{ ... }` | 1 |
 | [`Consumed`](./Miscellaneous.md#context-consumed) | Block | Examples: `{ ... }` | 1 |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#context-destroyequipmentandattachparasite) | Block | Examples: `{ ... }` | 1 |
 | [`DoDamage`](./Miscellaneous.md#context-dodamage) | Block | Examples: `{ ... }` | 1 |
@@ -29395,15 +29245,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpeedUp` | Number | Examples: `-2, 2, 1` | 5 |
 | `PartialCleanse` | Number | Examples: `1` | 4 |
 | `RandomStatUp` | Number | Examples: `3, 2, 1` | 3 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 2 |
 | [`ImmediateUseAbility`](./Miscellaneous.md#context-immediateuseability) | Block | Examples: `{ ... }, head_ThrobbingCrown` | 2 |
 | `EmptyMana` | Number | Examples: `1` | 2 |
 | `IntelligenceUp` | Number | Examples: `1` | 2 |
 | `RangeUp` | Number | Examples: `1` | 2 |
 | `SpawnCoinAnywhere` | Number | Examples: `1` | 2 |
-| [`Conditional_BadRoll`](./Miscellaneous.md#context-conditional_badroll) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_HasCleansableDebuffs`](./Miscellaneous.md#context-conditional_hascleansabledebuffs) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_ManaThreshold`](./Miscellaneous.md#context-conditional_manathreshold) | Block | Examples: `{ ... }` | 1 |
 | [`ObjectOnHitCharacter`](./Miscellaneous.md#context-objectonhitcharacter) | Block | Examples: `{ ... }` | 1 |
 | [`Stealth`](./Arrays.md#array-stealth) | Array | Examples: `[ 1 .1 ]` | 1 |
 | [`UseAbility_Madness`](./Enums.md#enum-useability_madness) | Enum | Examples: `weapon` | 1 |
@@ -29506,7 +29352,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `RandomPermanentStat` | Number | Examples: `1, -1, -3` | 10 |
 | `RandomMutation` | Number | Examples: `3, 1` | 9 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `common_bones, pills, chapter_specific_item` | 8 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 6 |
 | [`CureDisease`](./Miscellaneous.md#context-curedisease) | Block | Examples: `{ ... }` | 6 |
 | `PermanentIntelligence` | Number | Examples: `1, -1` | 3 |
 | [`GainCoins`](./Arrays.md#array-gaincoins) | Array | Examples: `1, [ 3 5 ]` | 2 |
@@ -29516,8 +29361,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `PermanentConstitution` | Number | Examples: `-1` | 2 |
 | `PermanentSpeed` | Number | Examples: `-1` | 2 |
 | `RepairTrinket` | Number | Examples: `99` | 2 |
-| [`Conditional_Corpse`](./Miscellaneous.md#context-conditional_corpse) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_Shielded`](./Miscellaneous.md#context-conditional_shielded) | Block | Examples: `{ ... }` | 1 |
 | [`FindItem`](./Enums.md#enum-finditem) | Enum | Examples: `BoneClub` | 1 |
 | [`GainCoinsRange`](./Miscellaneous.md#context-gaincoinsrange) | Block | Examples: `{ ... }` | 1 |
 | [`TransformWeapon`](./Miscellaneous.md#context-transformweapon) | Block | Examples: `{ ... }` | 1 |
@@ -29586,9 +29429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `humanoid, bonusbird, food` | 46 |
-| [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss) | Block | Examples: `{ ... }` | 6 |
 | `FloatingRockTrap` | Number | Examples: `1` | 6 |
-| [`Conditional_Boss`](./Miscellaneous.md#context-conditional_boss) | Block | Examples: `{ ... }` | 4 |
 | `IgnoreDamage` | Number | Examples: `1` | 4 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Block | Examples: `{ ... }` | 3 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Examples: `MoonHandMegaSqueeze, HitlerCloneHeil, HitlerCloneTransform` | 3 |
@@ -29600,7 +29441,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Die` | Number | Examples: `1` | 2 |
 | `Vaporize` | Number | Examples: `1` | 2 |
 | [`ApplyPassives`](./Miscellaneous.md#context-applypassives) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_InForm`](./Miscellaneous.md#context-conditional_inform) | Block | Examples: `{ ... }` | 1 |
 | [`MergeDamageInstance`](./Miscellaneous.md#context-mergedamageinstance) | Block | Examples: `{ ... }` | 1 |
 | [`PopAndSpawn`](./Miscellaneous.md#context-popandspawn) | Block | Examples: `{ ... }` | 1 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Examples: `Brace` | 1 |
@@ -29647,13 +29487,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpeedUp` | Number | Examples: `2, 1` | 3 |
 | `Thorns` | Number | Examples: `1` | 3 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Examples: `GlassTile` | 2 |
-| [`Conditional_HasStatus`](./Miscellaneous.md#context-conditional_hasstatus) | Block | Examples: `{ ... }` | 2 |
 | [`Craft`](./Miscellaneous.md#context-craft) | Block | Examples: `{ ... }` | 2 |
 | `IntelligenceUp` | Number | Examples: `-2, -1` | 2 |
 | `RandomStatUp` | Number | Examples: `1` | 2 |
 | `Shield` | Number | Examples: `2, 1` | 2 |
 | `TempDamageUp` | Number | Examples: `2, 1` | 2 |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#context-conditional_healththreshold) | Block | Examples: `{ ... }` | 1 |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array | Examples: `[ 1 .33 ]` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 1 |
@@ -29706,9 +29544,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Confusion`](./Arrays.md#array-confusion) | Array | Examples: `3, 1, [ 1 .2 ]` | 9 |
-| [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss) | Block | Examples: `{ ... }` | 3 |
 | `DisplaceToAbilityTarget` | Number | Examples: `1` | 3 |
-| [`Conditional_PartyMember`](./Miscellaneous.md#context-conditional_partymember) | Block | Examples: `{ ... }` | 2 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 2 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 2 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Examples: `[ 1 .25 ], [ 1 .5 ]` | 2 |
@@ -29720,7 +29556,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Weakness` | Number | Examples: `2, 1` | 2 |
 | [`ApplyToSourceOnKill`](./Miscellaneous.md#context-applytosourceonkill) | Block | Examples: `{ ... }` | 1 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_FinishedSpawning`](./Miscellaneous.md#context-conditional_finishedspawning) | Block | Examples: `{ ... }` | 1 |
 | [`Temporary`](./Miscellaneous.md#context-temporary) | Block | Examples: `{ ... }` | 1 |
 | `BonusDamage` | Number | Examples: `1` | 1 |
 | `Burn` | Number | Examples: `3` | 1 |
@@ -29814,11 +29649,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `HealthGain` | Number | Examples: `4, 5` | 5 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 4 |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Examples: `BoneClub` | 3 |
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Examples: `GenericRage, BBTransformZealot` | 3 |
 | `StrengthUp` | Number | Examples: `2, 1` | 3 |
-| [`Conditional_FirstApplicationThisTurn`](./Miscellaneous.md#context-conditional_firstapplicationthisturn) | Block | Examples: `{ ... }` | 2 |
 | `AllStatsUp` | Number | Examples: `1` | 2 |
 | `DamageUp` | Number | Examples: `1` | 2 |
 | `LuckUp` | Number | Examples: `2, 1` | 2 |
@@ -30046,8 +29879,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Shield` | Number | Examples: `3, 2` | 2 |
 | `TempSpeedUp` | Number | Examples: `4` | 2 |
 | [`ApplyToSourceOnKill`](./Miscellaneous.md#context-applytosourceonkill) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_Corpse`](./Miscellaneous.md#context-conditional_corpse) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_PlayerCat`](./Miscellaneous.md#context-conditional_playercat) | Block | Examples: `{ ... }` | 1 |
 | [`ShowText`](./Strings.md#string-showtext) | String | Examples: `"COMBAT_POPUP_REPAIRED"` | 1 |
 | `BleedThorns` | Number | Examples: `3` | 1 |
 | `ChanceToBreak` | Number | Examples: `5` | 1 |
@@ -30086,7 +29917,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#context-applytorandompartymemberifpossible) | Block | Examples: `{ ... }` | 1 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Block | Examples: `{ ... }` | 1 |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Examples: `TallGrassTile` | 1 |
-| [`Conditional_Corpse`](./Miscellaneous.md#context-conditional_corpse) | Block | Examples: `{ ... }` | 1 |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Examples: `Chungus` | 1 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Examples: `tk_ButterBean_Mega` | 1 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 1 |
@@ -30535,13 +30365,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_BadRoll`](./Miscellaneous.md#context-conditional_badroll) | Block | Examples: `{ ... }` | 5 |
 | [`FillMana`](./Arrays.md#array-fillmana) | Array | Examples: `[ 1 .10 ], [ 1 .25 ]` | 2 |
 | [`Quivered`](./Arrays.md#array-quivered) | Array | Examples: `[ 1 0.1 ]` | 2 |
 | `IntelligenceUp` | Number | Examples: `1` | 2 |
 | `RandomStatUp` | Number | Examples: `3, 2` | 2 |
 | `SpeedUp` | Number | Examples: `2, 1` | 2 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Examples: `[ 1 .15 ]` | 1 |
 | [`ForceUseAbility`](./Miscellaneous.md#context-forceuseability) | Block | Examples: `{ ... }` | 1 |
 | [`ManaGainRange`](./Miscellaneous.md#context-managainrange) | Block | Examples: `{ ... }` | 1 |
@@ -31012,7 +30840,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](./Miscellaneous.md#context-conditional_hasstatus) | Block | Examples: `{ ... }` | 6 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 4 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Examples: `Petrify` | 4 |
 | `OverrideDamage` | Number | Examples: `25, 10` | 4 |
@@ -31225,7 +31052,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `chapter, dove_pool, blackbird_pool` | 16 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 2 |
 | [`RandomStatusFromPool`](./Miscellaneous.md#context-randomstatusfrompool) | Block | Examples: `{ ... }` | 1 |
 
 </details>
@@ -31324,7 +31150,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Enemy`](./Miscellaneous.md#context-conditional_enemy) | Block | Examples: `{ ... }` | 2 |
 | `CaptureFamiliar` | Number | Examples: `1` | 2 |
 | `Doomed` | Number | Examples: `1` | 2 |
 | `ExplodeCharacter_RockCrusher` | Number | Examples: `9, 5` | 2 |
@@ -31332,7 +31157,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `VaporizeInanimate` | Number | Examples: `1` | 2 |
 | `Vaporize` | Number | Examples: `1` | 2 |
 | [`CanApplyToInanimate`](./Miscellaneous.md#context-canapplytoinanimate) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#context-conditional_healththreshold) | Block | Examples: `{ ... }` | 1 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Examples: `[ 1 .3 ]` | 1 |
 | `PermanentCharm` | Number | Examples: `1` | 1 |
 
@@ -31704,8 +31528,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](./Miscellaneous.md#context-conditional_hasstatus) | Block | Examples: `{ ... }` | 3 |
-| [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag) | Block | Examples: `{ ... }` | 3 |
 | `must_do_damage` | Boolean | Examples: `true` | 3 |
 | `LeaveBehindRockOnKnockback` | Number | Examples: `1` | 2 |
 | [`KnockbackIfCrit`](./Miscellaneous.md#context-knockbackifcrit) | Block | Examples: `{ ... }` | 1 |
@@ -31912,7 +31734,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `IgnoreDamage` | Number | Examples: `1` | 3 |
-| [`Conditional_HealthThreshold`](./Miscellaneous.md#context-conditional_healththreshold) | Block | Examples: `{ ... }` | 2 |
 | `BonusDamageBasedOnDistance` | Number | Examples: `1` | 2 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 | `BonusDamage` | Number | Examples: `-1` | 1 |
@@ -31938,7 +31759,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Examples: `Coin, RandomPickup` | 5 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Examples: `1, [ 1 .25 ], [ 1 .33 ]` | 3 |
 | `Weakness` | Number | Examples: `2, 1` | 3 |
-| [`Conditional_HasStatus`](./Miscellaneous.md#context-conditional_hasstatus) | Block | Examples: `{ ... }` | 2 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 2 |
 | `Bleed` | Number | Examples: `1` | 1 |
 | `Bruise` | Number | Examples: `1` | 1 |
@@ -32242,7 +32062,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `OverrideDamage` | Number | Examples: `0` | 2 |
 | `SafeDoomed` | Number | Examples: `1` | 2 |
 | `TakeExtraTurn` | Number | Examples: `1` | 2 |
-| [`Conditional_Enemy`](./Miscellaneous.md#context-conditional_enemy) | Block | Examples: `{ ... }` | 1 |
 | `DamageUp` | Number | Examples: `2` | 1 |
 | `FlatAIBonus` | Number | Examples: `100` | 1 |
 | `HealRandomInjury` | Number | Examples: `1` | 1 |
@@ -32573,8 +32392,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Charge` | Number | Examples: `2` | 3 |
 | `SpeedUp` | Number | Examples: `1` | 3 |
 | `ForceAttack` | Number | Examples: `1` | 2 |
-| [`Conditional_FirstApplicationThisTurn`](./Miscellaneous.md#context-conditional_firstapplicationthisturn) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Examples: `head_MagnetoAttract` | 1 |
 | [`RemoveStatusStacks`](./Miscellaneous.md#context-removestatusstacks) | Block | Examples: `{ ... }` | 1 |
 | `DivineShield` | Number | Examples: `1` | 1 |
@@ -32866,7 +32683,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ScatterCoins`](./Arrays.md#array-scattercoins) | Array | Examples: `5, [ 1 .5 ]` | 6 |
-| [`Conditional_RandomChance`](./Miscellaneous.md#context-conditional_randomchance) | Block | Examples: `{ ... }` | 1 |
 | [`CreateGlobalModifiers`](./Miscellaneous.md#context-createglobalmodifiers) | Block | Examples: `{ ... }` | 1 |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum | Examples: `chapter_common` | 1 |
 | [`GainCoinsRange`](./Miscellaneous.md#context-gaincoinsrange) | Block | Examples: `{ ... }` | 1 |
@@ -33024,7 +32840,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Stun` | Number | Examples: `1` | 2 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 | `AllStatsUp` | Number | Examples: `1` | 1 |
-| `Conditional_Flying` | Block | Examples: `{ ... }` | 1 |
 | `Stealth` | Number | Examples: `1` | 1 |
 
 </details>
@@ -33437,7 +33252,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `threshold_percent` | Number | Examples: `50, 25` | 2 |
 | [`ApplyToSource`](./Miscellaneous.md#context-applytosource) | Block | Examples: `{ ... }` | 1 |
 | [`BonusDamage`](./Math_Equations.md) | Equation | Examples: `20+bonus_melee_damage` | 1 |
-| [`Conditional_OncePerBattle`](./Miscellaneous.md#context-conditional_onceperbattle) | Block | Examples: `{ ... }` | 1 |
 | [`threshold_expr`](./Math_Equations.md) | Equation | Examples: `item_aux` | 1 |
 | `CaptureFamiliar` | Number | Examples: `1` | 1 |
 | `DieViolently` | Number | Examples: `1` | 1 |
@@ -33723,7 +33537,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `shapeshift, musical` | 7 |
 | `RefreshActPoints` | Number | Examples: `1` | 3 |
-| [`Conditional_FirstApplicationThisTurn`](./Miscellaneous.md#context-conditional_firstapplicationthisturn) | Block | Examples: `{ ... }` | 2 |
 | `DamageUp` | Number | Examples: `1` | 2 |
 | `exclude_basicattack` | Boolean | Examples: `true` | 2 |
 | `HealthGain` | Number | Examples: `1` | 1 |
@@ -33967,8 +33780,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Gravity` | 6 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Examples: `FloatingGlassTile` | 2 |
-| [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_Enemy`](./Miscellaneous.md#context-conditional_enemy) | Block | Examples: `{ ... }` | 2 |
 | `Bleed` | Number | Examples: `1` | 1 |
 
 </details>
@@ -33988,7 +33799,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, Electric` | 6 |
 | `Burn` | Number | Examples: `3, 1` | 3 |
-| [`Conditional_Corpse`](./Miscellaneous.md#context-conditional_corpse) | Block | Examples: `{ ... }` | 2 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Examples: `[ 1 .1 ]` | 1 |
 
 </details>
@@ -34060,7 +33870,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag) | Block | Examples: `{ ... }` | 3 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 3 |
 | [`CanApplyToInanimate`](./Miscellaneous.md#context-canapplytoinanimate) | Block | Examples: `{ ... }` | 1 |
 | `RepairWeapon` | Number | Examples: `1` | 1 |
@@ -34080,7 +33889,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](./Miscellaneous.md#context-conditional_isself) | Block | Examples: `{ ... }` | 3 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 3 |
 | `Charmed` | Number | Examples: `5` | 2 |
 | [`ApplyPassives`](./Miscellaneous.md#context-applypassives) | Block | Examples: `{ ... }` | 1 |
@@ -34712,8 +34520,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_PartyMember`](./Miscellaneous.md#context-conditional_partymember) | Block | Examples: `{ ... }` | 3 |
-| [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally) | Block | Examples: `{ ... }` | 2 |
 
 </details>
 
@@ -34885,10 +34691,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Boss`](./Miscellaneous.md#context-conditional_boss) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_PartyMember`](./Miscellaneous.md#context-conditional_partymember) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
-| `Conditional_Tiny` | Block | Examples: `{ ... }` | 1 |
 | `Poison` | Number | Examples: `1` | 1 |
 
 </details>
@@ -34906,9 +34709,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_RandomChance`](./Miscellaneous.md#context-conditional_randomchance) | Block | Examples: `{ ... }` | 2 |
 | `AutoReanimate` | Number | Examples: `50, 100` | 2 |
-| [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -35277,7 +35078,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `Leech` | Number | Examples: `2, 1` | 2 |
-| [`Conditional_Enemy`](./Miscellaneous.md#context-conditional_enemy) | Block | Examples: `{ ... }` | 1 |
 | `LeechPercent` | Number | Examples: `50` | 1 |
 
 </details>
@@ -35483,8 +35283,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Bleed` | Number | Examples: `2, 1` | 2 |
 | `BonusCritChance` | Number | Examples: `50, 25` | 2 |
 | `BonusDamage` | Number | Examples: `3, 2` | 2 |
-| [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally) | Block | Examples: `{ ... }` | 1 |
-| [`Conditional_PlayerCat`](./Miscellaneous.md#context-conditional_playercat) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -35977,7 +35775,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array | Examples: `[ 1 .5 ], [ 1 .33 ]` | 2 |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 | `Metronome` | Number | Examples: `1` | 1 |
 
 </details>
@@ -36127,7 +35924,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag) | Block | Examples: `{ ... }` | 1 |
 | `AllStatsUp` | Number | Examples: `2` | 1 |
 | `Burn` | Number | Examples: `4` | 1 |
 | `HealthGain` | Number | Examples: `8` | 1 |
@@ -36918,7 +36714,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, Water` | 3 |
 | `BonusCritChance` | Number | Examples: `100` | 2 |
-| [`Conditional_Speculative`](./Miscellaneous.md#context-conditional_speculative) | Block | Examples: `{ ... }` | 1 |
 | `Burn` | Number | Examples: `2` | 1 |
 
 </details>
@@ -37353,7 +37148,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 |
 | `FloatingRockTrap` | Number | Examples: `1` | 1 |
 | `Thorns` | Number | Examples: `1` | 1 |
@@ -37392,8 +37186,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Boss`](./Miscellaneous.md#context-conditional_boss) | Block | Examples: `{ ... }` | 2 |
-| [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss) | Block | Examples: `{ ... }` | 2 |
 | `Confusion` | Number | Examples: `10` | 1 |
 
 </details>
@@ -38320,7 +38112,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_InForm`](./Miscellaneous.md#context-conditional_inform) | Block | Examples: `{ ... }` | 1 |
 | [`Consumed`](./Miscellaneous.md#context-consumed) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 
@@ -39944,7 +39735,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Adjacent`](./Miscellaneous.md#context-conditional_adjacent) | Block | Examples: `{ ... }` | 1 |
 | `RandomStatUp` | Number | Examples: `3` | 1 |
 | `exclude_self` | Boolean | Examples: `false` | 1 |
 
@@ -40017,7 +39807,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 | [`Madness`](./Arrays.md#array-madness) | Array | Examples: `[ 1 .25 ]` | 1 |
 
@@ -43293,7 +43082,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](./Miscellaneous.md#context-conditional_isself) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 
 </details>
@@ -43311,7 +43099,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsPhysicalAttack`](./Miscellaneous.md#context-conditional_isphysicalattack) | Block | Examples: `{ ... }` | 1 |
 | [`Else`](./Miscellaneous.md#context-else) | Block | Examples: `{ ... }` | 1 |
 
 </details>
@@ -43329,7 +43116,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_DoesDamage`](./Miscellaneous.md#context-conditional_doesdamage) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -44598,7 +44384,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally) | Block | Examples: `{ ... }` | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `crow` | 1 |
 
 </details>
@@ -47743,7 +47528,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Adjacent`](./Miscellaneous.md#context-conditional_adjacent) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -48739,7 +48523,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_OncePerBattle`](./Miscellaneous.md#context-conditional_onceperbattle) | Block | Examples: `{ ... }` | 1 |
 
 </details>
 
@@ -73780,12 +73563,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Poison`](./Arrays.md#array-poison) | Array | Applies the 'Poison' effect. | 12 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 8 |
 | `Knockback` | Number | Applies the 'Knockback' effect. | 7 |
-| [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 5 |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 5 |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Spawns a physics object that visually bounces off the target. | 4 |
 | [`DistanceBonusDamage`](./Passives_and_Statuses.md#context-distancebonusdamage) | Block | Applies the 'DistanceBonusDamage' effect. | 4 |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 4 |
-| [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 3 |
 | [`SpreadDisease`](./Passives_and_Statuses.md#context-spreaddisease) | Block | Provides a chance to transmit a disease status to adjacent targets. | 3 |
 | `Burn` | Number | Applies the 'Burn' effect. | 3 |
 | `Leech` | Number | Applies the 'Leech' effect. | 3 |
@@ -73794,8 +73575,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyStatusIfCrit`](./Passives_and_Statuses.md#context-applystatusifcrit) | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 2 |
 | [`ChangeTile`](./Passives_and_Statuses.md#context-changetile) | Block | Transforms the terrain tile under the target. | 2 |
 | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies the 'Charmed' effect. | 2 |
-| [`Conditional_Adjacent`](./Passives_and_Statuses.md#context-conditional_adjacent) | Block | Conditional block: Executes nested logic only if the target is/has Adjacent. | 2 |
-| [`Conditional_Shielded`](./Passives_and_Statuses.md#context-conditional_shielded) | Block | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 2 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies the 'Fear' effect. | 2 |
 | [`Freeze`](./Arrays.md#array-freeze) | Array | Applies the 'Freeze' effect. | 2 |
 | [`KnockOutCoin`](./Arrays.md#array-knockoutcoin) | Array | Forces the target to drop coins. | 2 |
@@ -73808,8 +73587,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SoulLink` | Number | Applies the 'SoulLink' effect. | 2 |
 | `SpawnBearTrapOnMiss` | Number | Applies the 'SpawnBearTrapOnMiss' effect. | 2 |
 | [`ApplyToSource`](./Passives_and_Statuses.md#context-applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 |
-| [`Conditional_HasTag`](./Passives_and_Statuses.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 1 |
-| [`Conditional_SourceHasTag`](./Passives_and_Statuses.md#context-conditional_sourcehastag) | Block | Conditional block: Executes nested logic only if the target is/has SourceHasTag. | 1 |
 | [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `BigSplashDamage` | Number | Applies the 'BigSplashDamage' effect. | 1 |
 | `Blind` | Number | Applies the 'Blind' effect. | 1 |
@@ -73939,7 +73716,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Shield` | Number | Applies the 'Shield' effect. | 2 |
 | `StrengthUp` | Number | Applies the 'StrengthUp' effect. | 2 |
 | `TempDamageUp` | Number | Applies the 'TempDamageUp' effect. | 2 |
-| [`Conditional_HasStatus`](./Passives_and_Statuses.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 1 |
 | [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 1 |
 | `DiminishingHealthRegen` | Number | Applies the 'DiminishingHealthRegen' effect. | 1 |
@@ -74017,7 +73793,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 2 |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum | Applies the 'EquipPermanentItem' effect. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `RefreshActPoints` | Number | Applies the 'RefreshActPoints' effect. | 2 |
@@ -74105,11 +73880,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_BadRoll`](./Passives_and_Statuses.md#context-conditional_badroll) | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 3 |
 | [`FillMana`](./Arrays.md#array-fillmana) | Array | Applies the 'FillMana' effect. | 2 |
 | `IntelligenceUp` | Number | Applies the 'IntelligenceUp' effect. | 2 |
 | `RandomStatUp` | Number | Applies the 'RandomStatUp' effect. | 2 |
-| [`Conditional_GoodRoll`](./Passives_and_Statuses.md#context-conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 1 |
 | [`Fear`](./Arrays.md#array-fear) | Array | Applies the 'Fear' effect. | 1 |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#context-forceuseability) | Block | Applies the 'ForceUseAbility' effect. | 1 |
 
@@ -74156,7 +73929,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ObjectOnHitCharacter`](./Enums.md#enum-objectonhitcharacter) | Enum | Spawns a specific character or entity upon impact. | 5 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 3 |
 | `Weakness` | Number | Applies the 'Weakness' effect. | 3 |
-| [`Conditional_HasStatus`](./Passives_and_Statuses.md#context-conditional_hasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 2 |
 | [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
 | `Bruise` | Number | Applies the 'Bruise' effect. | 1 |
@@ -74375,7 +74147,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `Confusion` | Number | Applies the 'Confusion' effect. | 3 |
-| [`Conditional_PartyMember`](./Passives_and_Statuses.md#context-conditional_partymember) | Block | Conditional block: Executes nested logic only if the target is/has PartyMember. | 2 |
 | [`Else`](./Passives_and_Statuses.md#context-else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 2 |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool) | Block | Selects and applies a random status effect from the provided nested block. | 2 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies the 'Stun' effect. | 1 |
@@ -74522,7 +74293,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 7 |
 | `RefreshActPoints` | Number | Applies the 'RefreshActPoints' effect. | 3 |
-| [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#context-conditional_firstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 2 |
 | `DamageUp` | Number | Combat Trigger: Deals damage to up. | 2 |
 | `exclude_basicattack` | Boolean |  | 2 |
 | `HealthGain` | Number | Applies the 'HealthGain' effect. | 1 |
@@ -74545,8 +74315,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 6 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 2 |
-| [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 2 |
-| [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |
 | `Bleed` | Number | Applies the 'Bleed' effect. | 1 |
 
 </details>
@@ -74701,7 +74469,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `LeaveBehindRockOnKnockback` | Number | Applies the 'LeaveBehindRockOnKnockback' effect. | 2 |
-| [`Conditional_HasTag`](./Passives_and_Statuses.md#context-conditional_hastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 1 |
 | `Blind` | Number | Applies the 'Blind' effect. | 1 |
 | `NonLethal` | Number | Applies the 'NonLethal' effect. | 1 |
 
@@ -74819,7 +74586,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type required or applied. | 4 |
-| [`Conditional_Corpse`](./Passives_and_Statuses.md#context-conditional_corpse) | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 2 |
 | `Burn` | Number | Applies the 'Burn' effect. | 2 |
 
 </details>
@@ -75445,7 +75211,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `AutoReanimate` | Number | Applies the 'AutoReanimate' effect. | 2 |
-| [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 1 |
 
 </details>
 
@@ -76110,7 +75875,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 2 |
 
 </details>
 
@@ -76336,7 +76100,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 2 |
 
 </details>
 
@@ -77126,8 +76889,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Boss`](./Passives_and_Statuses.md#context-conditional_boss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 2 |
-| [`Conditional_NotBoss`](./Passives_and_Statuses.md#context-conditional_notboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 2 |
 
 </details>
 
@@ -77645,7 +77406,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage) | Block | Conditional block: Executes nested logic only if the target is/has DoesDamage. | 1 |
 
 </details>
 
@@ -77820,7 +77580,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Property Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 1 |
 
 </details>
