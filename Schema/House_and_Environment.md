@@ -7,47 +7,47 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/house.gon, data/house_weather.gon, data/weather.gon`
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 59
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1274 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1274 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array |  | 12 |
 | `height` | Integer |  | 8 |
 | `width` | Integer |  | 8 |
-| [`reverb_empty`](#context-reverb_empty) | Block |  | 7 |
-| [`reverb_full`](#context-reverb_full) | Block |  | 7 |
+| [`reverb_empty`](#object-reverb_empty) | Object |  | 7 |
+| [`reverb_full`](#object-reverb_full) | Object |  | 7 |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 4 |
 | `amount` | Float |  | 4 |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 3 |
 | [`n`](./Arrays.md#array-n) | Array |  | 2 |
 | `volume_adjustment` | Float |  | 2 |
-| [`BasementUpgrade2`](#context-basementupgrade2) | Block |  | 1 |
-| [`BasementUpgrade3`](#context-basementupgrade3) | Block |  | 1 |
-| [`BasementUpgrade4`](#context-basementupgrade4) | Block |  | 1 |
-| [`BasementUpgrade5`](#context-basementupgrade5) | Block |  | 1 |
-| [`BasementUpgrade`](#context-basementupgrade) | Block |  | 1 |
-| [`Default`](#context-default) | Block |  | 1 |
-| [`Floor1_Large`](#context-floor1_large) | Block |  | 1 |
-| [`Floor1_Small`](#context-floor1_small) | Block |  | 1 |
-| [`House1`](#context-house1) | Block |  | 1 |
-| [`House2`](#context-house2) | Block |  | 1 |
-| [`House3`](#context-house3) | Block |  | 1 |
-| [`LargeHouse_Floor2Large`](#context-largehouse_floor2large) | Block |  | 1 |
-| [`LargeHouse_Floor2Small`](#context-largehouse_floor2small) | Block |  | 1 |
-| [`LargeHouse`](#context-largehouse) | Block |  | 1 |
-| [`MediumHouse_SmallRoom`](#context-mediumhouse_smallroom) | Block |  | 1 |
-| [`MediumHouse`](#context-mediumhouse) | Block |  | 1 |
-| [`SmallAttic`](#context-smallattic) | Block |  | 1 |
-| [`SmallHouse_Attic`](#context-smallhouse_attic) | Block |  | 1 |
-| [`Thunderstorm`](#context-thunderstorm) | Block |  | 1 |
+| [`BasementUpgrade2`](#object-basementupgrade2) | Object |  | 1 |
+| [`BasementUpgrade3`](#object-basementupgrade3) | Object |  | 1 |
+| [`BasementUpgrade4`](#object-basementupgrade4) | Object |  | 1 |
+| [`BasementUpgrade5`](#object-basementupgrade5) | Object |  | 1 |
+| [`BasementUpgrade`](#object-basementupgrade) | Object |  | 1 |
+| [`Default`](#object-default) | Object |  | 1 |
+| [`Floor1_Large`](#object-floor1_large) | Object |  | 1 |
+| [`Floor1_Small`](#object-floor1_small) | Object |  | 1 |
+| [`House1`](#object-house1) | Object |  | 1 |
+| [`House2`](#object-house2) | Object |  | 1 |
+| [`House3`](#object-house3) | Object |  | 1 |
+| [`LargeHouse_Floor2Large`](#object-largehouse_floor2large) | Object |  | 1 |
+| [`LargeHouse_Floor2Small`](#object-largehouse_floor2small) | Object |  | 1 |
+| [`LargeHouse`](#object-largehouse) | Object |  | 1 |
+| [`MediumHouse_SmallRoom`](#object-mediumhouse_smallroom) | Object |  | 1 |
+| [`MediumHouse`](#object-mediumhouse) | Object |  | 1 |
+| [`SmallAttic`](#object-smallattic) | Object |  | 1 |
+| [`SmallHouse_Attic`](#object-smallhouse_attic) | Object |  | 1 |
+| [`Thunderstorm`](#object-thunderstorm) | Object |  | 1 |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array |  | 1 |
 | [`id`](./Enums.md#enum-id) | Enum |  | 1 |
 | [`p`](./Arrays.md#array-p) | Array |  | 1 |
@@ -56,7 +56,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `effects`
+### Object: `effects`
 
 
 <details>
@@ -64,29 +64,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 **Total Count:** 59
 
-> **Referenced by:** [`ROOT`](#context-root), [`SolarFlare`](#context-solarflare)
+> **Referenced by:** [`ROOT`](#object-root), [`SolarFlare`](#object-solarflare)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1886 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 552 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 59 |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1886 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 552 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 59 |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `SpawnExtraThingsOnBattleStart`
+### Object: `SpawnExtraThingsOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 28
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array |  | 27 |
 | [`object`](./Arrays.md#array-object) | Enum |  | 19 |
@@ -97,16 +97,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb_empty`
+### Object: `reverb_empty`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 9
 
-> **Referenced by:** [`Floor1_Large`](#context-floor1_large), [`Floor1_Small`](#context-floor1_small), [`ROOT`](#context-root)
+> **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 9 |
 | `amount` | Float |  | 9 |
@@ -116,16 +116,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `reverb_full`
+### Object: `reverb_full`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 9
 
-> **Referenced by:** [`Floor1_Large`](#context-floor1_large), [`Floor1_Small`](#context-floor1_small), [`ROOT`](#context-root)
+> **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`preset`](./Enums.md#enum-preset) | Enum |  | 9 |
 | `amount` | Float |  | 9 |
@@ -134,7 +134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else`
+### Object: `Else`
 
 
 <details>
@@ -142,28 +142,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 **Total Count:** 3
 
-> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#context-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#context-statuscharactersonroundstart)
+> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#object-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 71 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 20 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 71 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 
 </details>
 
 ---
 
-### Context: `SpawnVolcanoOnBattleStart`
+### Object: `SpawnVolcanoOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 3
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
 | [`min_radius`](./Enums.md#enum-min_radius) | Float |  | 2 |
@@ -175,35 +175,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusCharactersOnRoundEnd`
+### Object: `StatusCharactersOnRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 3
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
-### Context: `aux_positions`
+### Object: `aux_positions`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 3
 
-> **Referenced by:** [`House1`](#context-house1), [`House2`](#context-house2), [`House3`](#context-house3)
+> **Referenced by:** [`House1`](#object-house1), [`House2`](#object-house2), [`House3`](#object-house3)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ButchBox`](./Arrays.md#array-butchbox) | Array |  | 3 |
 | [`HousePipe`](./Arrays.md#array-housepipe) | Array |  | 3 |
@@ -216,16 +216,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `room_positions`
+### Object: `room_positions`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 3
 
-> **Referenced by:** [`House1`](#context-house1), [`House2`](#context-house2), [`House3`](#context-house3)
+> **Referenced by:** [`House1`](#object-house1), [`House2`](#object-house2), [`House3`](#object-house3)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`Floor1_Large`](./Arrays.md#array-floor1_large) | Array |  | 3 |
 | [`Basement0`](./Arrays.md#array-basement0) | Array |  | 2 |
@@ -243,34 +243,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyPassives`
+### Object: `ApplyPassives`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`Conditional_HasTag`](#context-conditional_hastag), [`Conditional_PartyMember`](#context-conditional_partymember)
+> **Referenced by:** [`Conditional_HasTag`](#object-conditional_hastag), [`Conditional_PartyMember`](#object-conditional_partymember)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
-### Context: `Big`
+### Object: `Big`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`SpecialGodRays`](#context-specialgodrays)
+> **Referenced by:** [`SpecialGodRays`](#object-specialgodrays)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`follow_character_tag`](./Enums.md#enum-follow_character_tag) | Enum |  | 2 |
 | [`position`](./Arrays.md#array-position) | Array |  | 2 |
@@ -279,55 +279,55 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CharacterTypeGainsStatusAtBattleStart`
+### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
-### Context: `Conditional_GoodRoll`
+### Object: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`StatusCharactersOnRoundEnd`](#context-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#context-statuscharactersonroundstart)
+> **Referenced by:** [`StatusCharactersOnRoundEnd`](#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 40 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 14 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
-### Context: `GlobalSpawnOnRoundEnd`
+### Object: `GlobalSpawnOnRoundEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 2 |
 | [`number`](./Arrays.md#array-number) | Array |  | 1 |
@@ -336,85 +336,87 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool`
+### Object: `RandomStatusFromPool`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`Conditional_GoodRoll`](#context-conditional_goodroll), [`Else`](#context-else)
+> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll), [`Else`](#object-else)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 </details>
 
 ---
 
-### Context: `SpecialGodRays`
+### Object: `SpecialGodRays`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Big`](#context-big) | Block |  | 2 |
+| [`Big`](#object-big) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusAllCharactersOnSpawn`
+### Object: `StatusAllCharactersOnSpawn`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusCharactersOnRoundStart`
+### Object: `StatusCharactersOnRoundStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`Madness`](./Arrays.md#array-madness) | Number | Applies the Madness debuff/status effect. | 0 |
+  | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 0 |
 
 </details>
 
 ---
 
-### Context: `AddPostProcessEffect`
+### Object: `AddPostProcessEffect`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`shader`](./Enums.md#enum-shader) | Enum |  | 1 |
 | `requires_framebuffer` | Boolean |  | 1 |
@@ -423,33 +425,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddTilesetObjects`
+### Object: `AddTilesetObjects`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](#context-floatingdebris) | Block |  | 1 |
+| [`FloatingDebris`](#object-floatingdebris) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `AllyInfested`
+### Object: `AllyInfested`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`Else`](#context-else)
+> **Referenced by:** [`Else`](#object-else)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 1 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 1 |
@@ -458,16 +460,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade`
+### Object: `BasementUpgrade`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -476,16 +478,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade2`
+### Object: `BasementUpgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -494,16 +496,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade3`
+### Object: `BasementUpgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -512,16 +514,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade4`
+### Object: `BasementUpgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -530,16 +532,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BasementUpgrade5`
+### Object: `BasementUpgrade5`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -548,70 +550,76 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Corpse`
+### Object: `Conditional_Corpse`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`Conditional_GoodRoll`](#context-conditional_goodroll)
+> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 </details>
 
 ---
 
-### Context: `Conditional_HasTag`
+### Object: `Conditional_HasTag`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`extra_statuses`](#context-extra_statuses)
+> **Referenced by:** [`extra_statuses`](#object-extra_statuses)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 63 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_PartyMember`
+### Object: `Conditional_PartyMember`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`StatusAllCharactersOnSpawn`](#context-statusallcharactersonspawn)
+> **Referenced by:** [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
+  | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
+  | [`Conditional_IsSelf`](#conditional_isself) | Object | Conditional trigger: Executes nested logic if the target is the caster themselves. | 0 |
 
 </details>
 
 ---
 
-### Context: `Default`
+### Object: `Default`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`set_house`](./Enums.md#enum-set_house) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -620,32 +628,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FactionUprising`
+### Object: `FactionUprising`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
+  | [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 0 |
+  | `SpawnExtraThingsOnBattleStart` | Object | Examples: `{ ... }` | 0 |
 
 </details>
 
 ---
 
-### Context: `FloatingDebris`
+### Object: `FloatingDebris`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`AddTilesetObjects`](#context-addtilesetobjects)
+> **Referenced by:** [`AddTilesetObjects`](#object-addtilesetobjects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `count` | Integer |  | 1 |
 
@@ -653,20 +662,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Floor1_Large`
+### Object: `Floor1_Large`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
-| [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
-| [`reverb_full`](#context-reverb_full) | Block |  | 1 |
+| [`reverb_empty`](#object-reverb_empty) | Object |  | 1 |
+| [`reverb_full`](#object-reverb_full) | Object |  | 1 |
 | `height` | Integer |  | 1 |
 | `width` | Integer |  | 1 |
 
@@ -674,20 +683,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Floor1_Small`
+### Object: `Floor1_Small`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
-| [`reverb_empty`](#context-reverb_empty) | Block |  | 1 |
-| [`reverb_full`](#context-reverb_full) | Block |  | 1 |
+| [`reverb_empty`](#object-reverb_empty) | Object |  | 1 |
+| [`reverb_full`](#object-reverb_full) | Object |  | 1 |
 | `height` | Integer |  | 1 |
 | `width` | Integer |  | 1 |
 
@@ -695,82 +704,82 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `House1`
+### Object: `House1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#context-aux_positions) | Block |  | 1 |
+| [`aux_positions`](#object-aux_positions) | Object |  | 1 |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](#context-room_positions) | Block |  | 1 |
+| [`room_positions`](#object-room_positions) | Object |  | 1 |
 | `zoomout_catvolume` | Float |  | 1 |
 
 </details>
 
 ---
 
-### Context: `House2`
+### Object: `House2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#context-aux_positions) | Block |  | 1 |
+| [`aux_positions`](#object-aux_positions) | Object |  | 1 |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](#context-room_positions) | Block |  | 1 |
+| [`room_positions`](#object-room_positions) | Object |  | 1 |
 | `zoomout_catvolume` | Float |  | 1 |
 
 </details>
 
 ---
 
-### Context: `House3`
+### Object: `House3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#context-aux_positions) | Block |  | 1 |
+| [`aux_positions`](#object-aux_positions) | Object |  | 1 |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](#context-room_positions) | Block |  | 1 |
+| [`room_positions`](#object-room_positions) | Object |  | 1 |
 | `zoomout_catvolume` | Float |  | 1 |
 
 </details>
 
 ---
 
-### Context: `LargeHouse`
+### Object: `LargeHouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`set_house`](./Enums.md#enum-set_house) | Enum |  | 1 |
@@ -779,16 +788,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LargeHouse_Floor2Large`
+### Object: `LargeHouse_Floor2Large`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -797,16 +806,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `LargeHouse_Floor2Small`
+### Object: `LargeHouse_Floor2Small`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -815,16 +824,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MediumHouse`
+### Object: `MediumHouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`set_house`](./Enums.md#enum-set_house) | Enum |  | 1 |
@@ -833,16 +842,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `MediumHouse_SmallRoom`
+### Object: `MediumHouse_SmallRoom`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -851,16 +860,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Rain`
+### Object: `Rain`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum |  | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
@@ -872,16 +881,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallAttic`
+### Object: `SmallAttic`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array |  | 1 |
 | [`id`](./Enums.md#enum-id) | Enum |  | 1 |
@@ -894,16 +903,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SmallHouse_Attic`
+### Object: `SmallHouse_Attic`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
@@ -912,16 +921,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Snow`
+### Object: `Snow`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum |  | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
@@ -933,35 +942,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SolarFlare`
+### Object: `SolarFlare`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `damage` | Integer |  | 1 |
 
 </details>
 
 ---
 
-### Context: `SpawnTilePuddleOnBattleStart`
+### Object: `SpawnTilePuddleOnBattleStart`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`effects`](#context-effects)
+> **Referenced by:** [`effects`](#object-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 1 |
 | `max_radius` | Float |  | 1 |
@@ -971,32 +980,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnBattleEnd`
+### Object: `StatusOnBattleEnd`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ApplyPassives`](#context-applypassives)
+> **Referenced by:** [`ApplyPassives`](#object-applypassives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 </details>
 
 ---
 
-### Context: `Thunderstorm`
+### Object: `Thunderstorm`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum |  | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
@@ -1009,16 +1018,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Windy`
+### Object: `Windy`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum |  | 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 1 |
@@ -1030,20 +1039,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `extra_statuses`
+### Object: `extra_statuses`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`FactionUprising`](#context-factionuprising)
+> **Referenced by:** [`FactionUprising`](#object-factionuprising)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
  | `AllStatsUp` | Number |  | 1 | 
- | [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag) | Block |  | 1 | 
+ | [`Conditional_HasTag`](./House_and_Environment.md#object-conditional_hastag) | Object |  | 1 | 
  | `HealthGain` | Number |  | 1 | 
 </details> 
 

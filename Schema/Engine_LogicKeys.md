@@ -2,7 +2,7 @@
 
 ## Engine: Logic Keys
 
-This document is the authoritative reference for Logic Blocks. All of the contexts below can appear as dynamic keys inside an `effects {}` block, or directly inside abilities. Many of these are conditional wrappers that evaluate a condition before executing their nested block, while others redirect execution flow (e.g. `ApplyToSource`).
+This document is the authoritative reference for Logic Blocks. All of the contexts below can appear as dynamic keys inside an `effects {}` block, or directly inside abilities. Many of these are conditional wrappers that evaluate a condition before executing their nested object, while others redirect execution flow (e.g. `ApplyToSource`).
 
 > **Note:** Because many of these contexts accept arbitrary nested Logic Blocks, any entry marked `{Logic Keys}` recursively refers back to this same document.
 
@@ -13,16 +13,16 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 <details>
 <summary><b>Expand</b></summary>
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 2166 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 2166 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 114 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 106 |
 | `Burn` | Number | Applies or references the 'Burn' effect/state. | 95 |
 | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 84 |
-| [`Else`](#else) | Block | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 76 |
+| [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 76 |
 | `IgnoreSelf` | Integer | Applies or references the 'IgnoreSelf' effect/state. | 75 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 72 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 72 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 62 |
 | `Shield` | Number | Applies or references the 'Shield' effect/state. | 59 |
 | [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 53 |
@@ -30,11 +30,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 50 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 49 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 48 |
-| [`ApplyToSource`](#applytosource) | Block | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 47 |
-| `Temporary` | Block | A wrapper block for applying status effects that automatically expire. | 46 |
-| [`Conditional_HasTag`](#conditionalhastag) | Block | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 42 |
+| [`ApplyToSource`](#applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 47 |
+| `Temporary` | Object | A wrapper block for applying status effects that automatically expire. | 46 |
+| [`Conditional_HasTag`](#conditionalhastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 42 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 40 |
-| [`Conditional_Enemy`](#conditionalenemy) | Block | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 38 |
+| [`Conditional_Enemy`](#conditionalenemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 38 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies or references the 'VisualFXTile' effect/state. | 36 |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Spawns a physics object that visually bounces off the target. | 35 |
 | [`Slow`](./Arrays.md#array-slow) | Array | Applies or references the 'Slow' effect/state. | 34 |
@@ -45,26 +45,26 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 29 |
 | `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 29 |
 | [`Petrify`](./Arrays.md#array-petrify) | Array | Applies or references the 'Petrify' effect/state. | 28 |
-| `SpawnExtraThingsOnBattleStart` | Block | Examples: `{ ... }` | 28 |
+| `SpawnExtraThingsOnBattleStart` | Object | Examples: `{ ... }` | 28 |
 | [`TransformAbility`](./Enums.md#enum-transformability) | Enum | Applies or references the 'TransformAbility' effect/state. | 28 |
-| [`Conditional_Ally`](#conditionalally) | Block | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 27 |
+| [`Conditional_Ally`](#conditionalally) | Object | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 27 |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array | Applies or references the 'ConstitutionUp' effect/state. | 26 |
 | [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 26 |
 | [`Weakness`](./Arrays.md#array-weakness) | Array | Applies or references the 'Weakness' effect/state. | 26 |
 | [`Blind`](./Arrays.md#array-blind) | Array | Applies or references the 'Blind' effect/state. | 25 |
 | [`Madness`](./Arrays.md#array-madness) | Number | Applies the Madness debuff/status effect. | 24 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 23 |
-| `KnockUpAndAway` | Block | Displaces the target vertically and horizontally away from the source. | 23 |
+| `KnockUpAndAway` | Object | Displaces the target vertically and horizontally away from the source. | 23 |
 | `Leech` | Number | Applies or references the 'Leech' effect/state. | 22 |
-| `RandomStatusFromPool` | Block | Selects and applies a random status effect from the provided nested block. | 22 |
+| `RandomStatusFromPool` | Object | Selects and applies a random status effect from the provided nested object. | 22 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 22 |
 | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 21 |
 | [`Sleep`](./Arrays.md#array-sleep) | Array | Applies or references the 'Sleep' effect/state. | 21 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 21 |
-| [`Consumed`](#consumed) | Block | State block triggered when this object or entity is eaten/consumed by another character. | 18 |
+| [`Consumed`](#consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 18 |
 | `VaporizeCorpse` | Integer | Applies or references the 'VaporizeCorpse' effect/state. | 18 |
 | `CollectsPickups` | Integer | Applies or references the 'CollectsPickups' effect/state. | 17 |
-| [`Conditional_Boss`](#conditionalboss) | Block | Conditional trigger: Executes nested logic if the target is a Boss. | 17 |
+| [`Conditional_Boss`](#conditionalboss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 17 |
 | [`OverrideKnockbackDamage`](./Enums.md#enum-overrideknockbackdamage) | Enum | Applies or references the 'OverrideKnockbackDamage' effect/state. | 17 |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 16 |
@@ -72,38 +72,38 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Leeches` | Number | Applies or references the 'Leeches' effect/state. | 16 |
 | `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. | 16 |
 | `Revive` | Number | Applies or references the 'Revive' effect/state. | 16 |
-| [`ApplyToSourceOnKill`](#applytosourceonkill) | Block | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 15 |
-| [`CanApplyToInanimate`](#canapplytoinanimate) | Block | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 15 |
-| `Cleave` | Block | Causes the attack to hit adjacent enemies alongside the primary target. | 15 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 15 |
+| [`ApplyToSourceOnKill`](#applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 15 |
+| [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 15 |
+| `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 15 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 15 |
 | `FaceAway` | Number | Applies or references the 'FaceAway' effect/state. | 15 |
 | `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. | 15 |
 | `RefreshMovePoints` | Number | Applies or references the 'RefreshMovePoints' effect/state. | 15 |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Applies or references the 'RemoveStatus' effect/state. | 15 |
 | `force_contact` | Boolean | If true, enforces physical overlap. | 15 |
-| `CatPartsTransform` | Block | Transforms specific body parts into different visual variants. | 14 |
+| `CatPartsTransform` | Object | Transforms specific body parts into different visual variants. | 14 |
 | [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Applies or references the 'ChangeCatClass' effect/state. | 14 |
-| [`Conditional_NotBoss`](#conditionalnotboss) | Block | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 14 |
+| [`Conditional_NotBoss`](#conditionalnotboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 14 |
 | `EndTurn` | Integer | Applies or references the 'EndTurn' effect/state. | 14 |
 | `RefreshActPoints` | Number | Applies or references the 'RefreshActPoints' effect/state. | 14 |
 | [`TransformBasicAttack`](./Enums.md#enum-transformbasicattack) | Enum | Applies or references the 'TransformBasicAttack' effect/state. | 14 |
-| [`ApplyPassives`](#applypassives) | Block | Grants the nested passive abilities dynamically. | 13 |
-| [`Conditional_HasStatus`](#conditionalhasstatus) | Block | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 13 |
+| [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 13 |
+| [`Conditional_HasStatus`](#conditionalhasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 13 |
 | [`Marked`](./Arrays.md#array-marked) | Array | Applies or references the 'Marked' effect/state. | 13 |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Applies or references the 'VisualFX' effect/state. | 13 |
 | `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 12 |
-| [`Conditional_Speculative`](#conditional_speculative) | Block | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 12 |
+| [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 12 |
 | `Displace` | Integer | Applies or references the 'Displace' effect/state. | 12 |
 | `instant` | Boolean | Examples: `true` | 12 |
 | [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 12 |
 | `rock` | Variable |  | 12 |
-| [`ChanceToBreakFree`](#chancetobreakfree) | Block | Provides a probability to escape a grapple or restraining effect. | 11 |
-| [`DoScreenShake`](#doscreenshake) | Block | Triggers a camera screen shake effect. | 11 |
+| [`ChanceToBreakFree`](#chancetobreakfree) | Object | Provides a probability to escape a grapple or restraining effect. | 11 |
+| [`DoScreenShake`](#doscreenshake) | Object | Triggers a camera screen shake effect. | 11 |
 | [`Instakill`](./Arrays.md#array-instakill) | Number | Applies or references the 'Instakill' effect/state. | 11 |
 | `PurgeAll` | Integer | Applies or references the 'PurgeAll' effect/state. | 11 |
 | `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |
 | [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean | Examples: `false, true, deferred` | 11 |
-| [`Conditional_FormulaIsPositive`](#conditional_formulaispositive) | Block | Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0. | 10 |
+| [`Conditional_FormulaIsPositive`](#conditional_formulaispositive) | Object | Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0. | 10 |
 | `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. | 10 |
 | `KnockbackDamageImmuneUntilSettled` | Integer | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 10 |
 | [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array | Applies or references the 'MagicWeakness' effect/state. | 10 |
@@ -112,26 +112,26 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `X` | Variable |  | 10 |
 | `Ammo` | Number | Applies or references the 'Ammo' effect/state. | 9 |
 | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 9 |
-| `Craft` | Block | Synthesizes or spawns a new item from a specific pool. | 9 |
+| `Craft` | Object | Synthesizes or spawns a new item from a specific pool. | 9 |
 | `DeferVaporize` | Integer | Applies or references the 'DeferVaporize' effect/state. | 9 |
 | `IgnoreDamage` | Integer | Applies or references the 'IgnoreDamage' effect/state. | 9 |
 | `OverrideChainKnockback` | Number | Applies or references the 'OverrideChainKnockback' effect/state. | 9 |
 | `SpawnCreep` | Integer | Applies or references the 'SpawnCreep' effect/state. | 9 |
 | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 8 |
-| [`Conditional_Corpse`](#conditionalcorpse) | Block | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 8 |
+| [`Conditional_Corpse`](#conditionalcorpse) | Object | Conditional trigger: Executes nested logic if the target is a dead body/corpse. | 8 |
 | [`Grappled`](./Arrays.md#array-grappled) | Integer | Applies or references the 'Grappled' effect/state. | 8 |
-| `SpreadDisease` | Block | Provides a chance to transmit a disease status to adjacent targets. | 8 |
+| `SpreadDisease` | Object | Provides a chance to transmit a disease status to adjacent targets. | 8 |
 | [`Tarred`](./Arrays.md#array-tarred) | Array | Applies or references the 'Tarred' effect/state. | 8 |
 | `Tech` | Number | Applies or references the 'Tech' effect/state. | 8 |
 | [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
 | `wet` | Boolean | Examples: `false, true` | 8 |
-| `ApplyStatusIfCrit` | Block | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 7 |
+| `ApplyStatusIfCrit` | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 7 |
 | `BramblesOnHit` | Integer | Applies or references the 'BramblesOnHit' effect/state. | 7 |
-| [`Conditional_InForm`](#conditional_inform) | Block | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 7 |
-| [`Conditional_PlayerCat`](#conditional_playercat) | Block | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 7 |
+| [`Conditional_InForm`](#conditional_inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 7 |
+| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 7 |
 | `ContextualHeal` | Integer | Applies or references the 'ContextualHeal' effect/state. | 7 |
 | `Drowsy` | Number | Applies or references the 'Drowsy' effect/state. | 7 |
-| `ForceAttack` | Block | Forces the character to execute an immediate attack. | 7 |
+| `ForceAttack` | Object | Forces the character to execute an immediate attack. | 7 |
 | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 7 |
 | `ManaSteal` | Integer | Applies or references the 'ManaSteal' effect/state. | 7 |
 | `SetHealth` | Number | Applies or references the 'SetHealth' effect/state. | 7 |
@@ -140,15 +140,15 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array | Applies or references the 'TriggerWerewolfTransform' effect/state. | 7 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 7 |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
-| `BackflipWhenTargeted` | Block | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 6 |
+| `BackflipWhenTargeted` | Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 6 |
 | [`BounceRock`](./Enums.md#enum-bouncerock) | Enum | Applies or references the 'BounceRock' effect/state. | 6 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 6 |
 | `ClearStarving` | Integer | Applies or references the 'ClearStarving' effect/state. | 6 |
-| [`Conditional_HealthThreshold`](#conditionalhealththreshold) | Block | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 6 |
-| [`Conditional_Object`](#conditional_object) | Block | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |
-| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Block | Adds a temporary bonus ability to the character's hand/deck. | 6 |
+| [`Conditional_HealthThreshold`](#conditionalhealththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 6 |
+| [`Conditional_Object`](#conditional_object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |
+| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Object | Adds a temporary bonus ability to the character's hand/deck. | 6 |
 | `Die` | Integer | Applies or references the 'Die' effect/state. | 6 |
-| [`DoDistortionRing`](#dodistortionring) | Block | Creates a visual distortion ring effect on the screen. | 6 |
+| [`DoDistortionRing`](#dodistortionring) | Object | Creates a visual distortion ring effect on the screen. | 6 |
 | `Doomed` | Number | Applies or references the 'Doomed' effect/state. | 6 |
 | `FactionConversion` | Integer | Applies or references the 'FactionConversion' effect/state. | 6 |
 | [`FillMana`](./Arrays.md#array-fillmana) | Number | Applies or references the 'FillMana' effect/state. | 6 |
@@ -164,13 +164,13 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `SpiderInfested` | Number | Applies or references the 'SpiderInfested' effect/state. | 6 |
 | [`TeamCastAbility`](./Enums.md#enum-teamcastability) | Enum | Requires or involves multiple characters to execute the ability. | 6 |
 | [`TempSpeedUp`](./Enums.md#enum-tempspeedup) | Enum | Applies or references the 'TempSpeedUp' effect/state. | 6 |
-| [`TwisterDisplaceWithDamage`](#twisterdisplacewithdamage) | Block | A whirlwind effect that randomly displaces targets and deals damage. | 6 |
+| [`TwisterDisplaceWithDamage`](#twisterdisplacewithdamage) | Object | A whirlwind effect that randomly displaces targets and deals damage. | 6 |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 6 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 6 |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 6 |
-| [`CollectsPickupsWithAltEffects`](#collectspickupswithalteffects) | Block | Triggers alternative nested effects when collecting items or pickups. | 5 |
-| [`Conditional_IsSelf`](#conditional_isself) | Block | Conditional trigger: Executes nested logic if the target is the caster themselves. | 5 |
-| `DestroyEquipmentAndAttachParasite` | Block | Removes an equipped item and replaces it with a parasite from a specified pool. | 5 |
+| [`CollectsPickupsWithAltEffects`](#collectspickupswithalteffects) | Object | Triggers alternative nested effects when collecting items or pickups. | 5 |
+| [`Conditional_IsSelf`](#conditional_isself) | Object | Conditional trigger: Executes nested logic if the target is the caster themselves. | 5 |
+| `DestroyEquipmentAndAttachParasite` | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 5 |
 | `DisplaceTowardsSource` | Integer | Applies or references the 'DisplaceTowardsSource' effect/state. | 5 |
 | `FaceCamera` | Integer | Applies or references the 'FaceCamera' effect/state. | 5 |
 | `ForceMoveAway` | Integer | Applies or references the 'ForceMoveAway' effect/state. | 5 |
@@ -192,14 +192,14 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`SpecificInjury`](./Enums.md#enum-specificinjury) | Enum | Applies or references the 'SpecificInjury' effect/state. | 5 |
 | [`Stealth`](./Arrays.md#array-stealth) | Number | Applies or references the 'Stealth' effect/state. | 5 |
 | `UpgradeRandomAbility` | Integer | Applies or references the 'UpgradeRandomAbility' effect/state. | 5 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 5 |
-| [`ApplyToConsumed`](#applytoconsumed) | Block | Redirects the nested effects to apply to the entity that just consumed this object. | 4 |
-| [`ArcLightning`](#arclightning) | Block | Executes a chain-lightning logic block that bounces between targets. | 4 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`ApplyToConsumed`](#applytoconsumed) | Object | Redirects the nested effects to apply to the entity that just consumed this object. | 4 |
+| [`ArcLightning`](#arclightning) | Object | Executes a chain-lightning logic block that bounces between targets. | 4 |
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array | Applies or references the 'BurgleCoin' effect/state. | 4 |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 4 |
-| [`Conditional_Adjacent`](#conditional_adjacent) | Block | Conditional constraint. Nested properties only trigger if this is true. | 4 |
-| [`Conditional_Familiar`](#conditional_familiar) | Block | Conditional trigger: Executes nested logic if the target is a familiar. | 4 |
+| [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional constraint. Nested properties only trigger if this is true. | 4 |
+| [`Conditional_Familiar`](#conditional_familiar) | Object | Conditional trigger: Executes nested logic if the target is a familiar. | 4 |
 | [`Default`](./Enums.md#enum-default) | 9 | `release` | 4 |
 | `DeleteObject` | Integer | Applies or references the 'DeleteObject' effect/state. | 4 |
 | `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. | 4 |
@@ -209,40 +209,40 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`FactionUprising`](./Enums.md#enum-factionuprising) | Enum | Examples: `alien, robot, ghost` | 4 |
 | [`ForceUseAbility_NonStack`](./Enums.md#enum-forceuseability_nonstack) | Enum | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 4 |
 | `FreeSpell` | Integer | Applies or references the 'FreeSpell' effect/state. | 4 |
-| [`LateStatusApplication`](#latestatusapplication) | Block | Applies a status effect after all primary damage and effects have fully resolved. | 4 |
-| `LowerAmbientLight` | Block | A visual effect that dims the map's lighting. | 4 |
+| [`LateStatusApplication`](#latestatusapplication) | Object | Applies a status effect after all primary damage and effects have fully resolved. | 4 |
+| `LowerAmbientLight` | Object | A visual effect that dims the map's lighting. | 4 |
 | `Rain` | Integer | Character Form: Behavior and stats for the 'Rain' state. | 4 |
 | `Reanimate` | Number | Applies or references the 'Reanimate' effect/state. | 4 |
 | `RefreshWeaponAbility` | Integer | Applies or references the 'RefreshWeaponAbility' effect/state. | 4 |
 | `RemoveActPoints` | Integer | Applies or references the 'RemoveActPoints' effect/state. | 4 |
 | `RepairAll` | Number | Applies or references the 'RepairAll' effect/state. | 4 |
 | `SendRock` | Integer | Applies or references the 'SendRock' effect/state. | 4 |
-| [`SwitchMusic`](#switchmusic) | Block | Changes the background music track or layer during combat. | 4 |
-| `TakeBonusTurnWithStatus` | Block | Grants the character an immediate extra turn while afflicted with specific statuses. | 4 |
-| [`TempPassiveWhileHasStatus`](#temppassivewhilehasstatus) | Block | Grants nested passives only while the character possesses the specified status. | 4 |
+| [`SwitchMusic`](#switchmusic) | Object | Changes the background music track or layer during combat. | 4 |
+| `TakeBonusTurnWithStatus` | Object | Grants the character an immediate extra turn while afflicted with specific statuses. | 4 |
+| [`TempPassiveWhileHasStatus`](#temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 4 |
 | `Thrash` | Variable |  | 4 |
-| [`TimeDelayStatusApplication`](#timedelaystatusapplication) | Block | Delays the nested effects by a specified amount of real-time seconds. | 4 |
+| [`TimeDelayStatusApplication`](#timedelaystatusapplication) | Object | Delays the nested effects by a specified amount of real-time seconds. | 4 |
 | `Windy` | Integer | Examples: `{ ... }` | 4 |
 | `moonhand` | Variable |  | 4 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 3 |
-| [`ApplyMultipleTimes`](#applymultipletimes) | Block | A loop block that executes its nested logic multiple times. | 3 |
+| [`ApplyMultipleTimes`](#applymultipletimes) | Object | A loop block that executes its nested logic multiple times. | 3 |
 | `Attraction` | Integer | Applies or references the 'Attraction' effect/state. | 3 |
 | `BlackShard` | Variable |  | 3 |
 | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. | 3 |
-| [`CatPartsSizeScaleStatus`](#catpartssizescalestatus) | Block | Visually scales specific body parts of a character. | 3 |
+| [`CatPartsSizeScaleStatus`](#catpartssizescalestatus) | Object | Visually scales specific body parts of a character. | 3 |
 | [`CollideWithConsumed`](./Math_Equations.md) | Equation | Applies or references the 'CollideWithConsumed' effect/state. | 3 |
-| [`Conditional_AffectedByElement`](#conditional_affectedbyelement) | Block | Conditional trigger: Executes nested logic if the target is currently afflicted by the specified element. | 3 |
-| [`Conditional_FirstApplicationThisTurn`](#conditionalfirstapplicationthisturn) | Block | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 3 |
-| [`Conditional_LastHit`](#conditional_lasthit) | Block | Conditional trigger: Executes nested logic if this attack is the final hit of a multi-hit sequence. | 3 |
-| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Block | Conditional trigger: Executes nested logic only once per encounter/battle. | 3 |
+| [`Conditional_AffectedByElement`](#conditional_affectedbyelement) | Object | Conditional trigger: Executes nested logic if the target is currently afflicted by the specified element. | 3 |
+| [`Conditional_FirstApplicationThisTurn`](#conditionalfirstapplicationthisturn) | Object | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 3 |
+| [`Conditional_LastHit`](#conditional_lasthit) | Object | Conditional trigger: Executes nested logic if this attack is the final hit of a multi-hit sequence. | 3 |
+| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Object | Conditional trigger: Executes nested logic only once per encounter/battle. | 3 |
 | `CorpseVaporizer` | Integer | Applies or references the 'CorpseVaporizer' effect/state. | 3 |
 | `CurrentWeaponDamageUp` | Number | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 |
 | `DestroyWeapon` | Integer | Applies or references the 'DestroyWeapon' effect/state. | 3 |
 | `DestroyWeaponThrow` | Integer | Applies or references the 'DestroyWeaponThrow' effect/state. | 3 |
 | `DisplaceToAbilityTarget` | Integer | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 3 |
-| `DoDamage` | Block | Explicitly triggers a secondary damage instance independent of the main attack. | 3 |
+| `DoDamage` | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 3 |
 | [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Applies or references the 'DoubleStatus' effect/state. | 3 |
-| [`DustOnHit`](#dustonhit) | Block | Spawns a specific particle or cloud object upon impact. | 3 |
+| [`DustOnHit`](#dustonhit) | Object | Spawns a specific particle or cloud object upon impact. | 3 |
 | `ExtraBasicAttacks_Status` | Number | Applies or references the 'ExtraBasicAttacks_Status' effect/state. | 3 |
 | `FlatAIBonus` | Integer | Applies or references the 'FlatAIBonus' effect/state. | 3 |
 | `ForceDisplace` | Integer | Applies or references the 'ForceDisplace' effect/state. | 3 |
@@ -257,16 +257,16 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 |
 | `RemoveMovePoints` | Integer | Applies or references the 'RemoveMovePoints' effect/state. | 3 |
 | `RepairOnKill` | Integer | Applies or references the 'RepairOnKill' effect/state. | 3 |
-| `ReviveNextRound` | Block | Queues the character to be resurrected at the start of the next combat round. | 3 |
-| [`SetCrazyEyeBackgroundWeights`](#setcrazyeyebackgroundweights) | Block | Adjusts visual rendering weights for the 'Crazy Eye' background effect. | 3 |
+| `ReviveNextRound` | Object | Queues the character to be resurrected at the start of the next combat round. | 3 |
+| [`SetCrazyEyeBackgroundWeights`](#setcrazyeyebackgroundweights) | Object | Adjusts visual rendering weights for the 'Crazy Eye' background effect. | 3 |
 | `SetShield` | Integer | Applies or references the 'SetShield' effect/state. | 3 |
 | `ShowText` | String | Applies or references the 'ShowText' effect/state. | 3 |
 | [`SpawnCustomTrap`](./Enums.md#enum-spawncustomtrap) | Enum | Applies or references the 'SpawnCustomTrap' effect/state. | 3 |
 | `SpawnNeutralWebTrapOnMiss` | Integer | Applies or references the 'SpawnNeutralWebTrapOnMiss' effect/state. | 3 |
-| [`SpawnVolcanoOnBattleStart`](#spawnvolcanoonbattlestart) | Block | Examples: `{ ... }` | 3 |
+| [`SpawnVolcanoOnBattleStart`](#spawnvolcanoonbattlestart) | Object | Examples: `{ ... }` | 3 |
 | `SpeculativeMoveSelfCorpseOffMap` | Integer | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 3 |
 | `StanceSwitchToMelee` | Integer | Applies or references the 'StanceSwitchToMelee' effect/state. | 3 |
-| [`StatusCharactersOnRoundEnd`](#statuscharactersonroundend) | Block | Examples: `{ ... }` | 3 |
+| [`StatusCharactersOnRoundEnd`](#statuscharactersonroundend) | Object | Examples: `{ ... }` | 3 |
 | `TempInitiativeChange` | Number | Applies or references the 'TempInitiativeChange' effect/state. | 3 |
 | `TempStrengthUp` | Equation | Applies or references the 'TempStrengthUp' effect/state. | 3 |
 | `TempTrampleUntilSettled` | Integer | Applies or references the 'TempTrampleUntilSettled' effect/state. | 3 |
@@ -276,32 +276,32 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ZombieCatFamiliar` | Variable |  | 3 |
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
-| [`extra_statuses`](#extra_statuses) | Block | Additional generic status applications. | 3 |
+| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
 | `poop` | 1 | Event Node: Story branch or dialog option representing the \'Poop\' action. | 3 |
 | `AddLeechesStatus` | Integer | Applies or references the 'AddLeechesStatus' effect/state. | 2 |
 | `AddSpiritBombCharges` | Integer | Applies or references the 'AddSpiritBombCharges' effect/state. | 2 |
-| [`ApplyToRandomPartyMemberIfPossible`](#applytorandompartymemberifpossible) | Block | Redirects the nested effects to apply to a random living member of the player's party. | 2 |
-| [`ApplyToTile`](#applytotile) | Block | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |
+| [`ApplyToRandomPartyMemberIfPossible`](#applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 |
+| [`ApplyToTile`](#applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 |
 | `AutoReanimate` | Number | Examples: `50` | 2 |
-| [`BodyGuard`](#bodyguard) | Block | Protects an ally by intercepting attacks directed at them. | 2 |
+| [`BodyGuard`](#bodyguard) | Object | Protects an ally by intercepting attacks directed at them. | 2 |
 | `BonusDamageBasedOnDistance` | Integer | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 |
 | `Bound` | Integer | Applies or references the 'Bound' effect/state. | 2 |
 | `CancelPrimedAbilities` | Integer | Applies or references the 'CancelPrimedAbilities' effect/state. | 2 |
 | [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Applies or references the 'ChangeFaction' effect/state. | 2 |
-| [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Block | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 2 |
+| [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 2 |
 | `CharmedForceAttack` | Integer | Applies or references the 'CharmedForceAttack' effect/state. | 2 |
 | `ClearNegativeEffects` | Integer | Applies the 'ClearNegativeEffects' effect. | 2 |
 | `CollideWithThrowTarget` | Integer | Applies or references the 'CollideWithThrowTarget' effect/state. | 2 |
-| [`Conditional_BadRoll`](#conditional_badroll) | Block | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 2 |
-| [`Conditional_BossOrBig`](#conditional_bossorbig) | Block | Conditional trigger: Executes nested logic if the target is a Boss or has a large size classification. | 2 |
-| [`Conditional_Buddy`](#conditional_buddy) | Block | Conditional trigger: Executes nested logic if the target is the caster's summoned buddy/familiar. | 2 |
-| [`Conditional_DestructibleCorpse`](#conditional_destructiblecorpse) | Block | Conditional trigger: Executes nested logic if the target is a corpse that can be destroyed or vaporized. | 2 |
-| [`Conditional_Displaceable`](#conditional_displaceable) | Block | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |
-| [`Conditional_NotAlly`](#conditional_notally) | Block | Conditional trigger: Executes nested logic if the target is NOT friendly to the caster. | 2 |
-| [`Conditional_NotBossOrBig`](#conditional_notbossorbig) | Block | Conditional trigger: Executes nested logic if the target is NEITHER a Boss nor large. | 2 |
-| [`Conditional_NotShielded`](#conditional_notshielded) | Block | Conditional trigger: Executes nested logic if the target does NOT currently have a Shield status. | 2 |
-| [`Conditional_PartyMember`](#conditional_partymember) | Block | Conditional constraint. Nested properties only trigger if this is true. | 2 |
-| [`Conditional_Shielded`](#conditional_shielded) | Block | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 2 |
+| [`Conditional_BadRoll`](#conditional_badroll) | Object | Conditional trigger: Executes nested logic based on a randomized bad outcome probability. | 2 |
+| [`Conditional_BossOrBig`](#conditional_bossorbig) | Object | Conditional trigger: Executes nested logic if the target is a Boss or has a large size classification. | 2 |
+| [`Conditional_Buddy`](#conditional_buddy) | Object | Conditional trigger: Executes nested logic if the target is the caster's summoned buddy/familiar. | 2 |
+| [`Conditional_DestructibleCorpse`](#conditional_destructiblecorpse) | Object | Conditional trigger: Executes nested logic if the target is a corpse that can be destroyed or vaporized. | 2 |
+| [`Conditional_Displaceable`](#conditional_displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 2 |
+| [`Conditional_NotAlly`](#conditional_notally) | Object | Conditional trigger: Executes nested logic if the target is NOT friendly to the caster. | 2 |
+| [`Conditional_NotBossOrBig`](#conditional_notbossorbig) | Object | Conditional trigger: Executes nested logic if the target is NEITHER a Boss nor large. | 2 |
+| [`Conditional_NotShielded`](#conditional_notshielded) | Object | Conditional trigger: Executes nested logic if the target does NOT currently have a Shield status. | 2 |
+| [`Conditional_PartyMember`](#conditional_partymember) | Object | Conditional constraint. Nested properties only trigger if this is true. | 2 |
+| [`Conditional_Shielded`](#conditional_shielded) | Object | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 2 |
 | `ConjureRandomAbilityFromCat` | Integer | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 |
 | `CopySpells` | Integer | Duplicates existing spells currently in the character's hand. | 2 |
 | `Counterspell` | Integer | Applies or references the 'Counterspell' effect/state. | 2 |
@@ -324,22 +324,22 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `FlatLeechIfDamaged` | Integer | Applies or references the 'FlatLeechIfDamaged' effect/state. | 2 |
 | `FlowersOnHit` | Integer | Applies or references the 'FlowersOnHit' effect/state. | 2 |
 | `ForceMoveNonAlliesInRangeTowardsTile` | Integer | Applies or references the 'ForceMoveNonAlliesInRangeTowardsTile' effect/state. | 2 |
-| [`ForceMoveTowardsTaggedObject`](#forcemovetowardstaggedobject) | Block | Forces the character to move towards the nearest object with a specific tag. | 2 |
-| [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Block | Logic: Applies a negative mutation/disorder from a specific pool. | 2 |
-| [`GlobalSpawnOnRoundEnd`](#globalspawnonroundend) | Block | Examples: `{ ... }` | 2 |
+| [`ForceMoveTowardsTaggedObject`](#forcemovetowardstaggedobject) | Object | Forces the character to move towards the nearest object with a specific tag. | 2 |
+| [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Object | Logic: Applies a negative mutation/disorder from a specific pool. | 2 |
+| [`GlobalSpawnOnRoundEnd`](#globalspawnonroundend) | Object | Examples: `{ ... }` | 2 |
 | `HealRandomInjury` | Integer | Applies or references the 'HealRandomInjury' effect/state. | 2 |
 | `HornCharge` | Variable |  | 2 |
 | [`ImmediateUseDirectionalAbility`](./Enums.md#enum-immediateusedirectionalability) | Enum | Applies or references the 'ImmediateUseDirectionalAbility' effect/state. | 2 |
 | `JohnnyCriesForWashers` | Integer | Applies or references the 'JohnnyCriesForWashers' effect/state. | 2 |
 | `LeaveBehindRockOnKnockback` | Number | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. | 2 |
 | `ManaLeeches` | Number | Applies or references the 'ManaLeeches' effect/state. | 2 |
-| [`Math`](#math) | Block | Triggers the Tinkerer's Math ability sequence. | 2 |
+| [`Math`](#math) | Object | Triggers the Tinkerer's Math ability sequence. | 2 |
 | `MaxHPUp` | Integer | Applies or references the 'MaxHPUp' effect/state. | 2 |
 | `NextAttackSpecialCrit` | Integer | Modifies the character's next attack to have special critical properties. | 2 |
 | `OffMap` | 3 | Character Form: Behavior and stats for the 'OffMap' state. | 2 |
 | `OilTile` | Variable |  | 2 |
 | `Ostracized` | Number | Applies or references the 'Ostracized' effect/state. | 2 |
-| [`OverHealToStatuses`](#overhealtostatuses) | Block | Converts excessive healing beyond maximum health into specific status effects. | 2 |
+| [`OverHealToStatuses`](#overhealtostatuses) | Object | Converts excessive healing beyond maximum health into specific status effects. | 2 |
 | `PartyExplosion` | Variable |  | 2 |
 | `PermanentStrength` | Number | Applies or references the 'PermanentStrength' effect/state. | 2 |
 | `PermanentUpgradeRandomActive` | Integer | Applies or references the 'PermanentUpgradeRandomActive' effect/state. | 2 |
@@ -347,15 +347,15 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Possessed` | Number | Applies or references the 'Possessed' effect/state. | 2 |
 | `PullSourceToKnockbackImmuneTarget` | Number | Applies or references the 'PullSourceToKnockbackImmuneTarget' effect/state. | 2 |
 | `Pulp2` | 1 | Character Form: Behavior and stats for the 'Pulp2' state. | 2 |
-| [`QuakeAreaChance`](#quakeareachance) | Block | Provides a probability to trigger an earthquake Area of Effect. | 2 |
+| [`QuakeAreaChance`](#quakeareachance) | Object | Provides a probability to trigger an earthquake Area of Effect. | 2 |
 | `RandomDistanceDisplace` | Integer | Displaces the target by a randomized distance. | 2 |
-| [`RandomKnockback`](#randomknockback) | Block | Applies a randomized amount of knockback force. | 2 |
+| [`RandomKnockback`](#randomknockback) | Object | Applies a randomized amount of knockback force. | 2 |
 | `RandomLightning` | Integer | Examples: `50` | 2 |
 | `RandomPickup` | Variable |  | 2 |
 | `RebukeDamage` | Integer | Applies or references the 'RebukeDamage' effect/state. | 2 |
 | `ReduceManaCost` | Number | Applies or references the 'ReduceManaCost' effect/state. | 2 |
 | `RemoveKnockback` | Integer | Applies or references the 'RemoveKnockback' effect/state. | 2 |
-| `RemoveStatusStacks` | Block | Removes a specific number of stacks of a status effect. | 2 |
+| `RemoveStatusStacks` | Object | Removes a specific number of stacks of a status effect. | 2 |
 | `RepairArmorCondition` | Integer | Applies or references the 'RepairArmorCondition' effect/state. | 2 |
 | `RepairWeaponCondition` | Number | Applies or references the 'RepairWeaponCondition' effect/state. | 2 |
 | `ResetArmorShield` | Integer | Applies or references the 'ResetArmorShield' effect/state. | 2 |
@@ -369,15 +369,15 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Snow` | Integer | Examples: `{ ... }` | 2 |
 | `SpawnBearTrapIfHitKills` | Integer | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 2 |
 | [`SpawnFlames`](./Arrays.md#array-spawnflames) | Array | Applies or references the 'SpawnFlames' effect/state. | 2 |
-| [`SpecialGodRays`](#specialgodrays) | Block | Examples: `{ ... }` | 2 |
-| [`StatusCharactersOnRoundStart`](#statuscharactersonroundstart) | Block | Examples: `{ ... }` | 2 |
+| [`SpecialGodRays`](#specialgodrays) | Object | Examples: `{ ... }` | 2 |
+| [`StatusCharactersOnRoundStart`](#statuscharactersonroundstart) | Object | Examples: `{ ... }` | 2 |
 | `SwallowSmallCharacter` | Integer | Applies or references the 'SwallowSmallCharacter' effect/state. | 2 |
-| [`TakeBonusTurnWithAIControl`](#takebonusturnwithaicontrol) | Block | Grants the character an immediate extra turn, but forces the AI to control them during it. | 2 |
+| [`TakeBonusTurnWithAIControl`](#takebonusturnwithaicontrol) | Object | Grants the character an immediate extra turn, but forces the AI to control them during it. | 2 |
 | `TallGrassTile` | 1 | Examples: `80, 15` | 2 |
 | `TempCritChanceUp` | Integer | Applies or references the 'TempCritChanceUp' effect/state. | 2 |
 | [`TempDexterityUp`](./Enums.md#enum-tempdexterityup) | Enum | Applies or references the 'TempDexterityUp' effect/state. | 2 |
 | `TempMovement` | Number | Applies or references the 'TempMovement' effect/state. | 2 |
-| `TempPassiveUntilSettled` | Block | Passive: Active only until the physics engine stops moving the character. | 2 |
+| `TempPassiveUntilSettled` | Object | Passive: Active only until the physics engine stops moving the character. | 2 |
 | `TempSpellDamageUp` | Number | Applies or references the 'TempSpellDamageUp' effect/state. | 2 |
 | `ThornsDamageImmuneUntilSettled` | Integer | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. | 2 |
 | `ThrowPoop` | Variable |  | 2 |
@@ -386,7 +386,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TrailBlazer` | Integer | Applies or references the 'TrailBlazer' effect/state. | 2 |
 | `TriggerDOTStatuses` | Integer | Applies or references the 'TriggerDOTStatuses' effect/state. | 2 |
 | `VisualFlySwarm` | Integer | Examples: `1` | 2 |
-| [`XIsTargetHealth`](#xistargethealth) | Block | Math variable assignment: Evaluates X as the target's current health. | 2 |
+| [`XIsTargetHealth`](#xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 2 |
 | `gamewin` | Variable |  | 2 |
 | `humanoid` | Variable |  | 2 |
 | `megadino` | Variable |  | 2 |
@@ -396,18 +396,18 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `AIFavorLowHealth` | Integer | Applies or references the 'AIFavorLowHealth' effect/state. | 1 |
 | `AcidRain` | Integer | Examples: `2` | 1 |
 | `AddExtraTurnsBeforeRun` | Integer | Examples: `2` | 1 |
-| [`AddPostProcessEffect`](#addpostprocesseffect) | Block | Examples: `{ ... }` | 1 |
-| [`AddTilesetObjects`](#addtilesetobjects) | Block | Examples: `{ ... }` | 1 |
+| [`AddPostProcessEffect`](#addpostprocesseffect) | Object | Examples: `{ ... }` | 1 |
+| [`AddTilesetObjects`](#addtilesetobjects) | Object | Examples: `{ ... }` | 1 |
 | `Adrenaline` | Integer | Applies or references the 'Adrenaline' effect/state. | 1 |
 | `AlliesTakeExtraTurn` | Integer | Applies or references the 'AlliesTakeExtraTurn' effect/state. | 1 |
-| [`AllyInfested`](#allyinfested) | Block | Examples: `{ ... }` | 1 |
+| [`AllyInfested`](#allyinfested) | Object | Examples: `{ ... }` | 1 |
 | [`AlternateIdleAnimation`](./Enums.md#enum-alternateidleanimation) | Enum | Applies or references the 'AlternateIdleAnimation' effect/state. | 1 |
 | `AntlerSwipe` | Variable |  | 1 |
 | `AntlerSwipe2` | Variable |  | 1 |
 | `ApplyShieldToApplierBasedOnMaxHealth` | Integer | Applies or references the 'ApplyShieldToApplierBasedOnMaxHealth' effect/state. | 1 |
-| [`ApplyStatusesNextTurnBegin`](#applystatusesnextturnbegin) | Block | Delays the application of the nested status effects until the start of the target's next turn. | 1 |
-| [`ApplyToOthersWithSharedTagAndFaction`](#applytootherswithsharedtagandfaction) | Block | Redirects the nested effects to apply to all other entities on the map that share the target's faction and specified tags. | 1 |
-| [`ApplyToRandomClosestAlly`](#applytorandomclosestally) | Block | Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them. | 1 |
+| [`ApplyStatusesNextTurnBegin`](#applystatusesnextturnbegin) | Object | Delays the application of the nested status effects until the start of the target's next turn. | 1 |
+| [`ApplyToOthersWithSharedTagAndFaction`](#applytootherswithsharedtagandfaction) | Object | Redirects the nested effects to apply to all other entities on the map that share the target's faction and specified tags. | 1 |
+| [`ApplyToRandomClosestAlly`](#applytorandomclosestally) | Object | Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them. | 1 |
 | `BasicDashAttackMove_NoKnockback` | Variable |  | 1 |
 | `BerserkDash` | Variable |  | 1 |
 | `BirthSquirrel` | Variable |  | 1 |
@@ -435,23 +435,23 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `CloneWeaponTemp` | Integer | Applies or references the 'CloneWeaponTemp' effect/state. | 1 |
 | `CockroachSwarm` | Integer | Examples: `1` | 1 |
 | [`CoinTossBounce`](./Enums.md#enum-cointossbounce) | Enum | Applies or references the 'CoinTossBounce' effect/state. | 1 |
-| [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
-| [`Conditional_ActiveWeather_Any`](#conditional_activeweather_any) | Block | Conditional trigger: Executes nested logic if the current map weather matches any in the list. | 1 |
-| [`Conditional_Backstab`](#conditional_backstab) | Block | Conditional trigger: Executes nested logic if the attacker is positioned behind the target. | 1 |
-| [`Conditional_CanBeHealed`](#conditional_canbehealed) | Block | Conditional trigger: Executes nested logic if the target's health is below maximum and they are capable of receiving healing. | 1 |
-| [`Conditional_DebuffRoll`](#conditional_debuffroll) | Block | Conditional trigger: Executes nested logic based on a randomized debuff probability. | 1 |
-| [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Block | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 1 |
-| `Conditional_HasCleansableDebuffs` | Block | Conditional trigger: Executes nested logic if the target currently has negative status effects that can be cleansed. | 1 |
-| [`Conditional_HasKnockback`](#conditional_hasknockback) | Block | Conditional: Executes logic if the triggering attack deals knockback. | 1 |
-| [`Conditional_IsPhysicalAttack`](#conditional_isphysicalattack) | Block | Conditional: Executes logic if the triggering attack is physical. | 1 |
-| [`Conditional_IsTrample`](#conditional_istrample) | Block | Conditional trigger: Executes nested logic if the current movement/attack is classified as a trample. | 1 |
-| [`Conditional_LivingPlayerCat`](#conditional_livingplayercat) | Block | Conditional trigger: Executes nested logic if the target is an alive player-controlled cat. | 1 |
-| [`Conditional_ManaThreshold`](#conditional_manathreshold) | Block | Conditional constraint. Nested properties only trigger if this is true. | 1 |
-| [`Conditional_NotBig`](#conditional_notbig) | Block | Conditional trigger: Executes nested logic if the target is NOT classified as large. | 1 |
-| [`Conditional_RandomChance`](#conditional_randomchance) | Block | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 1 |
-| [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Block | Conditional trigger: Executes nested logic if the ability that triggered this effect has the specified tag. | 1 |
-| [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Block | Conditional trigger: Executes nested logic if the caster currently has the specified status. | 1 |
-| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Block | Examples: `{ ... }` | 1 |
+| [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Object | Conditional constraint. Nested properties only trigger if this is true. | 1 |
+| [`Conditional_ActiveWeather_Any`](#conditional_activeweather_any) | Object | Conditional trigger: Executes nested logic if the current map weather matches any in the list. | 1 |
+| [`Conditional_Backstab`](#conditional_backstab) | Object | Conditional trigger: Executes nested logic if the attacker is positioned behind the target. | 1 |
+| [`Conditional_CanBeHealed`](#conditional_canbehealed) | Object | Conditional trigger: Executes nested logic if the target's health is below maximum and they are capable of receiving healing. | 1 |
+| [`Conditional_DebuffRoll`](#conditional_debuffroll) | Object | Conditional trigger: Executes nested logic based on a randomized debuff probability. | 1 |
+| [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 1 |
+| `Conditional_HasCleansableDebuffs` | Object | Conditional trigger: Executes nested logic if the target currently has negative status effects that can be cleansed. | 1 |
+| [`Conditional_HasKnockback`](#conditional_hasknockback) | Object | Conditional: Executes logic if the triggering attack deals knockback. | 1 |
+| [`Conditional_IsPhysicalAttack`](#conditional_isphysicalattack) | Object | Conditional: Executes logic if the triggering attack is physical. | 1 |
+| [`Conditional_IsTrample`](#conditional_istrample) | Object | Conditional trigger: Executes nested logic if the current movement/attack is classified as a trample. | 1 |
+| [`Conditional_LivingPlayerCat`](#conditional_livingplayercat) | Object | Conditional trigger: Executes nested logic if the target is an alive player-controlled cat. | 1 |
+| [`Conditional_ManaThreshold`](#conditional_manathreshold) | Object | Conditional constraint. Nested properties only trigger if this is true. | 1 |
+| [`Conditional_NotBig`](#conditional_notbig) | Object | Conditional trigger: Executes nested logic if the target is NOT classified as large. | 1 |
+| [`Conditional_RandomChance`](#conditional_randomchance) | Object | Conditional trigger: Executes nested logic based on a flat percentage random roll. | 1 |
+| [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Object | Conditional trigger: Executes nested logic if the ability that triggered this effect has the specified tag. | 1 |
+| [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Object | Conditional trigger: Executes nested logic if the caster currently has the specified status. | 1 |
+| [`Conditional_SourceHasTag`](#conditional_sourcehastag) | Object | Examples: `{ ... }` | 1 |
 | [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. | 1 |
 | `CrackMoonHead` | Integer | Applies or references the 'CrackMoonHead' effect/state. | 1 |
 | `CurrentWeaponAddElectricElement` | Integer | Applies or references the 'CurrentWeaponAddElectricElement' effect/state. | 1 |
@@ -459,7 +459,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `DeathWormEat` | Variable |  | 1 |
 | [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the 'DeathwormUnderground' effect/state. | 1 |
 | `DecoySwapper` | Integer | Applies or references the 'DecoySwapper' effect/state. | 1 |
-| [`DelayedWindCone`](#delayedwindcone) | Block | Creates a delayed Area of Effect cone. | 1 |
+| [`DelayedWindCone`](#delayedwindcone) | Object | Creates a delayed Area of Effect cone. | 1 |
 | `DeleteInanimateObjectsChance` | Integer | Examples: `25` | 1 |
 | `DeleteTraps` | Integer | Applies or references the 'DeleteTraps' effect/state. | 1 |
 | `DestroyNeckArmor` | Integer | Applies or references the 'DestroyNeckArmor' effect/state. | 1 |
@@ -476,7 +476,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `DualSword` | 1 | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
 | `DuplicateRandomEquippedItem` | Integer | Applies or references the 'DuplicateRandomEquippedItem' effect/state. | 1 |
 | `DybbukManualExitTag` | Variable |  | 1 |
-| [`DybbukPossessed`](#dybbukpossessed) | Block | Defines the abilities and behaviors available when possessing another entity. | 1 |
+| [`DybbukPossessed`](#dybbukpossessed) | Object | Defines the abilities and behaviors available when possessing another entity. | 1 |
 | `EggSackTrap` | Variable |  | 1 |
 | `EliteUpgradeNextMinion` | Integer | Applies or references the 'EliteUpgradeNextMinion' effect/state. | 1 |
 | `EmptyMind` | Integer | Applies or references the 'EmptyMind' effect/state. | 1 |
@@ -500,7 +500,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Fog` | Integer | Examples: `1` | 1 |
 | `ForceCollectsPickups` | Integer | Applies or references the 'ForceCollectsPickups' effect/state. | 1 |
 | `ForceImmediateMove` | Integer | Applies or references the 'ForceImmediateMove' effect/state. | 1 |
-| [`ForceImmediateMoveAndAttack`](#forceimmediatemoveandattack) | Block | Forces the character to immediately move to a target and use a specified ability. | 1 |
+| [`ForceImmediateMoveAndAttack`](#forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 1 |
 | `ForceMoveAndAttack` | Integer | Applies or references the 'ForceMoveAndAttack' effect/state. | 1 |
 | `ForceTransferWeapon` | Integer | Applies or references the 'ForceTransferWeapon' effect/state. | 1 |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. | 1 |
@@ -521,7 +521,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `IceArmor` | Integer | Applies or references the 'IceArmor' effect/state. | 1 |
 | `IgnoreDebuffs` | Integer | Applies or references the 'IgnoreDebuffs' effect/state. | 1 |
 | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 1 |
-| [`IncAuxCounterCycle`](#incauxcountercycle) | Block | Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum. | 1 |
+| [`IncAuxCounterCycle`](#incauxcountercycle) | Object | Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum. | 1 |
 | `IncreaseCumulativeBlastDamage` | Integer | Applies or references the 'IncreaseCumulativeBlastDamage' effect/state. | 1 |
 | `IncreaseItemAuxOnKill` | Integer | Applies or references the 'IncreaseItemAuxOnKill' effect/state. | 1 |
 | `Infested` | 1 | data/elite_buffs.gon | 1 |
@@ -543,7 +543,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `MassAttackThis` | Integer | Applies or references the 'MassAttackThis' effect/state. | 1 |
 | `Meaty` | Integer | Applies or references the 'Meaty' effect/state. | 1 |
 | `MegaGuppy` | Variable |  | 1 |
-| [`MergeDamageInstance`](#mergedamageinstance) | Block | Combines damage numbers or visual hit effects. | 1 |
+| [`MergeDamageInstance`](#mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 1 |
 | `MeteorShower` | Integer | Examples: `25` | 1 |
 | `MimicMetronome` | Integer | Applies or references the 'MimicMetronome' effect/state. | 1 |
 | `MockSong` | Variable |  | 1 |
@@ -557,8 +557,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Muted` | Integer | Applies or references the 'Muted' effect/state. | 1 |
 | `NextAbilityHeals` | Integer | Applies or references the 'NextAbilityHeals' effect/state. | 1 |
 | `NextActionLuckUp` | Integer | Applies or references the 'NextActionLuckUp' effect/state. | 1 |
-| [`NextBasicAttackCritsThisTurn`](#nextbasicattackcritsthisturn) | Block | Guarantees the next basic attack executed this turn will be a critical hit. | 1 |
-| [`NextBattleStatusStacks`](#nextbattlestatusstacks) | Block | Carries over the specified status effects into the next encounter/battle. | 1 |
+| [`NextBasicAttackCritsThisTurn`](#nextbasicattackcritsthisturn) | Object | Guarantees the next basic attack executed this turn will be a critical hit. | 1 |
+| [`NextBattleStatusStacks`](#nextbattlestatusstacks) | Object | Carries over the specified status effects into the next encounter/battle. | 1 |
 | `NextDamageReduceAndHealAllies` | Integer | Applies or references the 'NextDamageReduceAndHealAllies' effect/state. | 1 |
 | `NextTurnDoubleRangedDamage` | Integer | Applies or references the 'NextTurnDoubleRangedDamage' effect/state. | 1 |
 | `NoDeathrattle` | Variable |  | 1 |
@@ -572,7 +572,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `PermanentLuck` | Number | Applies or references the 'PermanentLuck' effect/state. | 1 |
 | `PermanentUpgradeRandomActiveOrPassive` | Integer | Applies or references the 'PermanentUpgradeRandomActiveOrPassive' effect/state. | 1 |
 | [`PersistentElement`](./Enums.md#enum-persistentelement) | Enum | Examples: `Holy` | 1 |
-| [`PoolMetronome`](#poolmetronome) | Block | Executes a random ability drawn from a specific pool. | 1 |
+| [`PoolMetronome`](#poolmetronome) | Object | Executes a random ability drawn from a specific pool. | 1 |
 | `Pounce` | Variable |  | 1 |
 | `Prance` | Variable |  | 1 |
 | `Prance2` | Variable |  | 1 |
@@ -595,24 +595,24 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Sandstorm` | Integer | Examples: `1` | 1 |
 | `Scavenge` | Variable |  | 1 |
 | `Scavenge2` | Variable |  | 1 |
-| [`ScrambleLastUsedSpell`](#scramblelastusedspell) | Block | Randomizes or scrambles the properties of the last spell cast. | 1 |
+| [`ScrambleLastUsedSpell`](#scramblelastusedspell) | Object | Randomizes or scrambles the properties of the last spell cast. | 1 |
 | `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. | 1 |
-| [`SetAnimationAlts`](#setanimationalts) | Block | Overrides specific animation states with alternative animations. | 1 |
+| [`SetAnimationAlts`](#setanimationalts) | Object | Overrides specific animation states with alternative animations. | 1 |
 | `ShadowCrit` | Integer | Applies or references the 'ShadowCrit' effect/state. | 1 |
 | `ShootHereCommand` | Integer | Applies or references the 'ShootHereCommand' effect/state. | 1 |
 | `ShootHereReceiver` | Integer | Applies or references the 'ShootHereReceiver' effect/state. | 1 |
 | `ShortCircuit` | Integer | Applies or references the 'ShortCircuit' effect/state. | 1 |
-| [`ShowFakeDamage`](#showfakedamage) | Block | Displays a visual damage number without actually modifying health. | 1 |
+| [`ShowFakeDamage`](#showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 1 |
 | `SleepParalysis` | Variable |  | 1 |
 | `Small` | 2 | Character Form: Behavior and stats for the \'Small\' state. | 1 |
 | `SmallHitExplosion` | Integer | Applies or references the 'SmallHitExplosion' effect/state. | 1 |
 | `SmallHolding` | 1 | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
 | `SmallHoldingCat` | 1 | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
 | `SmellBlood` | Integer | Applies or references the 'SmellBlood' effect/state. | 1 |
-| [`SolarFlare`](#solarflare) | Block | Examples: `{ ... }` | 1 |
+| [`SolarFlare`](#solarflare) | Object | Examples: `{ ... }` | 1 |
 | [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Applies or references the 'SoundEventOnHit' effect/state. | 1 |
 | [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. | 1 |
-| [`SpawnTilePuddleOnBattleStart`](#spawntilepuddleonbattlestart) | Block | Examples: `{ ... }` | 1 |
+| [`SpawnTilePuddleOnBattleStart`](#spawntilepuddleonbattlestart) | Object | Examples: `{ ... }` | 1 |
 | `SpawnWebTrap` | Integer | Applies or references the 'SpawnWebTrap' effect/state. | 1 |
 | [`SpecialBossMultipartInstakill`](./Enums.md#enum-specialbossmultipartinstakill) | Enum | Applies or references the 'SpecialBossMultipartInstakill' effect/state. | 1 |
 | `SpellShield` | Integer | Applies or references the 'SpellShield' effect/state. | 1 |
@@ -628,7 +628,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `StealTurn` | Integer | Applies or references the 'StealTurn' effect/state. | 1 |
 | `StealthCritChance` | Integer | Applies or references the 'StealthCritChance' effect/state. | 1 |
 | `SwapHighestAndLowestStat` | Number | Applies or references the 'SwapHighestAndLowestStat' effect/state. | 1 |
-| [`SwapWeapon`](#swapweapon) | Block | Replaces the character's currently equipped weapon with one from a specified pool. | 1 |
+| [`SwapWeapon`](#swapweapon) | Object | Replaces the character's currently equipped weapon with one from a specified pool. | 1 |
 | `Switcheroo` | Integer | Applies or references the 'Switcheroo' effect/state. | 1 |
 | `Synthesize` | Variable |  | 1 |
 | `Synthesize2` | Variable |  | 1 |
@@ -672,9 +672,9 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TowerDefenseStatus` | Integer | Applies or references the 'TowerDefenseStatus' effect/state. | 1 |
 | `TowerDefenseStatus2` | Integer | Applies or references the 'TowerDefenseStatus2' effect/state. | 1 |
 | [`TransformBasicMove`](./Enums.md#enum-transformbasicmove) | Enum | Applies or references the 'TransformBasicMove' effect/state. | 1 |
-| [`TransformEquipment`](#transformequipment) | Block | Upgrades or transforms a specific equipped item into another. | 1 |
+| [`TransformEquipment`](#transformequipment) | Object | Upgrades or transforms a specific equipped item into another. | 1 |
 | [`TransformNow`](./Enums.md#enum-transformnow) | Enum | Applies or references the 'TransformNow' effect/state. | 1 |
-| `TransformWeapon` | Block | Transforms the equipped weapon into another specific weapon state. | 1 |
+| `TransformWeapon` | Object | Transforms the equipped weapon into another specific weapon state. | 1 |
 | `Trapper_Status` | Integer | Applies or references the 'Trapper_Status' effect/state. | 1 |
 | `TriggerMotherConsume` | Integer | Applies or references the 'TriggerMotherConsume' effect/state. | 1 |
 | `TriggerMotherGrow` | Integer | Applies or references the 'TriggerMotherGrow' effect/state. | 1 |
@@ -682,12 +682,12 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Float | Applies or references the 'TurnControlDelay' effect/state. | 1 |
 | `TurnRight` | Integer | Applies or references the 'TurnRight' effect/state. | 1 |
 | `UndoDamage` | Integer | Applies or references the 'UndoDamage' effect/state. | 1 |
-| [`UseMoveAbilityWithAI`](#usemoveabilitywithai) | Block | Forces the character to execute a movement ability using specific AI weights. | 1 |
+| [`UseMoveAbilityWithAI`](#usemoveabilitywithai) | Object | Forces the character to execute a movement ability using specific AI weights. | 1 |
 | `UseRandomSpell_Madness` | Integer | Applies the 'UseRandomSpell_Madness' effect. | 1 |
 | [`VaporizeCorpseFlipAdvantage`](./Arrays.md#array-vaporizecorpseflipadvantage) | Array | Applies or references the 'VaporizeCorpseFlipAdvantage' effect/state. | 1 |
 | `VaporizeDice` | Integer | Applies or references the 'VaporizeDice' effect/state. | 1 |
-| [`VisualCountDownThenApplyStatus`](#visualcountdownthenapplystatus) | Block | Displays a visual countdown above the target before applying the nested effects. | 1 |
-| [`WaggleClone`](#waggleclone) | Block | Spawns visual clones or alternative hitbox variants of the projectile. | 1 |
+| [`VisualCountDownThenApplyStatus`](#visualcountdownthenapplystatus) | Object | Displays a visual countdown above the target before applying the nested effects. | 1 |
+| [`WaggleClone`](#waggleclone) | Object | Spawns visual clones or alternative hitbox variants of the projectile. | 1 |
 | `WaterTile_Current` | Variable |  | 1 |
 | [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |
 | `alien` | Variable |  | 1 |
@@ -730,9 +730,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 3
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -745,9 +746,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 59
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -760,9 +761,9 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 15
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -775,10 +776,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -791,11 +793,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 4
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. | 1 |
-| [`Conditional_PlayerCat`](#conditional_playercat) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
+| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -808,11 +811,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 3
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
-| [`Conditional_Speculative`](#conditional_speculative) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -825,11 +829,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 37
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. | 1 |
-| [`Conditional_PlayerCat`](#conditional_playercat) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
+| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -842,9 +847,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -857,10 +863,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 8
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`odds`](./Enums.md#enum-odds) | Equation | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. (Must be float values) | 8 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -873,10 +880,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 21
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. | 6 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 6 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -889,9 +897,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -904,10 +913,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_InForm`](#conditional_inform) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -920,9 +930,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -935,10 +946,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 11
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -951,10 +963,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of applying the debuff. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -967,9 +980,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -982,9 +996,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -997,12 +1012,13 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 44
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_NotBoss`](#conditional_notboss) | Block | Nested conditional. | 3 |
-| [`Conditional_PartyMember`](#conditional_partymember) | Block | Nested conditional. | 2 |
-| [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 3 |
+| [`Conditional_PartyMember`](#conditional_partymember) | Object | Nested conditional. | 2 |
+| [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1015,9 +1031,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 4
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1030,10 +1047,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 8
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1046,10 +1064,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 10
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1062,11 +1081,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 37
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 37 |
-| [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1079,9 +1099,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1094,10 +1115,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 20
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 20 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1110,13 +1132,14 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 47
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 46 |
-| [`Conditional_NotBoss`](#conditional_notboss) | Block | Nested conditional. | 6 |
-| [`Conditional_Boss`](#conditional_boss) | Block | Nested conditional. | 4 |
-| [`Conditional_InForm`](#conditional_inform) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 6 |
+| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 4 |
+| [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1129,13 +1152,14 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 7
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 5 |
 | `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
-| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Block | Nested conditional. | 1 |
+| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Object | Nested conditional. | 1 |
 | [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | `item_aux` | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1148,10 +1172,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 7
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1164,9 +1189,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1179,9 +1205,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 6
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1194,9 +1221,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1209,9 +1237,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 3
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1224,9 +1253,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1239,10 +1269,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `threshold_flat` | Integer | A flat numerical health value threshold. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1255,9 +1286,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1270,9 +1302,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1285,11 +1318,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 16
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. | 2 |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 2 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1302,9 +1336,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1317,9 +1352,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1332,10 +1368,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 6
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1348,10 +1385,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 4
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1364,10 +1402,13 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 6
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_IsSelf`](#conditional_isself) | Block | Nested conditional. | 3 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_IsSelf`](#conditional_isself) | Object | Nested conditional. | 3 |
+  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
+  | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
 
 </details>
 
@@ -1380,9 +1421,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 7
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1395,10 +1437,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 4
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 4 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1411,9 +1454,10 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 5
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1426,10 +1470,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1442,10 +1487,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1458,11 +1504,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1475,10 +1522,11 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 12
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. | 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1491,7 +1539,7 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 23
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 |
 | `force_contact` | Boolean | If true, enforces physical overlap. | 15 |
@@ -1500,12 +1548,12 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 | `do_not_pop_corpse` | Boolean | Examples: `true` | 11 |
 | [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean | Examples: `false, true, deferred` | 11 |
 | `wet` | Boolean | Examples: `false, true` | 8 |
-| [`extra_statuses`](#extra_statuses) | Block | Additional generic status applications. | 3 |
+| [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 |
 | `use_placeholder` | Boolean | Examples: `true` | 3 |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
 | `kill_on_consume` | Boolean | Examples: `true` | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1518,17 +1566,17 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 85
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. | 2 |
-| [`Conditional_Displaceable`](#conditional_displaceable) | Block | Nested conditional. | 1 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. | 1 |
-| [`Conditional_HasKnockback`](#conditional_hasknockback) | Block | Nested conditional. | 1 |
-| [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. | 1 |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. | 1 |
-| [`Conditional_Object`](#conditional_object) | Block | Nested conditional. | 1 |
-| [`Conditional_Speculative`](#conditional_speculative) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 2 |
+| [`Conditional_Displaceable`](#conditional_displaceable) | Object | Nested conditional. | 1 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 1 |
+| [`Conditional_HasKnockback`](#conditional_hasknockback) | Object | Nested conditional. | 1 |
+| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 1 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 1 |
+| [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 1 |
+| [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1541,51 +1589,51 @@ The following blocks all behave as `{Logic Keys}` containers. Each has its own u
 
 > **Total Count:** 2166
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](#conditional_hastag) | Block | Nested conditional. | 38 |
-| [`Conditional_Enemy`](#conditional_enemy) | Block | Nested conditional. | 35 |
-| [`Conditional_Ally`](#conditional_ally) | Block | Nested conditional. | 25 |
-| [`Conditional_GoodRoll`](#conditional_goodroll) | Block | Nested conditional. | 14 |
-| [`Conditional_Boss`](#conditional_boss) | Block | Nested conditional. | 13 |
-| [`Conditional_FormulaIsPositive`](#conditional_formulaispositive) | Block | Nested conditional. | 10 |
-| [`Conditional_Speculative`](#conditional_speculative) | Block | Nested conditional. | 10 |
-| [`Conditional_Corpse`](#conditional_corpse) | Block | Nested conditional. | 6 |
-| [`Conditional_HasStatus`](#conditional_hasstatus) | Block | Nested conditional. | 5 |
-| [`Conditional_InForm`](#conditional_inform) | Block | Nested conditional. | 5 |
-| [`Conditional_NotBoss`](#conditional_notboss) | Block | Nested conditional. | 5 |
-| [`Conditional_Object`](#conditional_object) | Block | Nested conditional. | 5 |
-| [`Conditional_PlayerCat`](#conditional_playercat) | Block | Nested conditional. | 5 |
-| [`Conditional_Familiar`](#conditional_familiar) | Block | Nested conditional. | 4 |
+| [`Conditional_HasTag`](#conditional_hastag) | Object | Nested conditional. | 38 |
+| [`Conditional_Enemy`](#conditional_enemy) | Object | Nested conditional. | 35 |
+| [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 25 |
+| [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Nested conditional. | 14 |
+| [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 13 |
+| [`Conditional_FormulaIsPositive`](#conditional_formulaispositive) | Object | Nested conditional. | 10 |
+| [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 10 |
+| [`Conditional_Corpse`](#conditional_corpse) | Object | Nested conditional. | 6 |
+| [`Conditional_HasStatus`](#conditional_hasstatus) | Object | Nested conditional. | 5 |
+| [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 5 |
+| [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 5 |
+| [`Conditional_Object`](#conditional_object) | Object | Nested conditional. | 5 |
+| [`Conditional_PlayerCat`](#conditional_playercat) | Object | Nested conditional. | 5 |
+| [`Conditional_Familiar`](#conditional_familiar) | Object | Nested conditional. | 4 |
 | `LowerAmbientLight` | Number | A visual effect that dims the map's lighting. | 4 |
-| [`Conditional_AffectedByElement`](#conditional_affectedbyelement) | Block | Nested conditional. | 3 |
-| [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Block | Nested conditional. | 3 |
-| [`Conditional_LastHit`](#conditional_lasthit) | Block | Nested conditional. | 3 |
-| [`Conditional_BadRoll`](#conditional_badroll) | Block | Nested conditional. | 2 |
-| [`Conditional_BossOrBig`](#conditional_bossorbig) | Block | Nested conditional. | 2 |
-| [`Conditional_Buddy`](#conditional_buddy) | Block | Nested conditional. | 2 |
-| [`Conditional_DestructibleCorpse`](#conditional_destructiblecorpse) | Block | Nested conditional. | 2 |
-| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Block | Nested conditional. | 2 |
-| [`Conditional_IsSelf`](#conditional_isself) | Block | Nested conditional. | 2 |
-| [`Conditional_NotAlly`](#conditional_notally) | Block | Nested conditional. | 2 |
-| [`Conditional_NotBossOrBig`](#conditional_notbossorbig) | Block | Nested conditional. | 2 |
-| [`Conditional_NotShielded`](#conditional_notshielded) | Block | Nested conditional. | 2 |
-| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Block | Nested conditional. | 2 |
-| [`Conditional_Shielded`](#conditional_shielded) | Block | Nested conditional. | 2 |
-| [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Block | Nested conditional. | 1 |
-| [`Conditional_ActiveWeather_Any`](#conditional_activeweather_any) | Block | Nested conditional. | 1 |
-| [`Conditional_Backstab`](#conditional_backstab) | Block | Nested conditional. | 1 |
-| [`Conditional_CanBeHealed`](#conditional_canbehealed) | Block | Nested conditional. | 1 |
-| [`Conditional_DebuffRoll`](#conditional_debuffroll) | Block | Nested conditional. | 1 |
-| [`Conditional_Displaceable`](#conditional_displaceable) | Block | Nested conditional. | 1 |
-| [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Block | Nested conditional. | 1 |
-| [`Conditional_IsTrample`](#conditional_istrample) | Block | Nested conditional. | 1 |
-| [`Conditional_LivingPlayerCat`](#conditional_livingplayercat) | Block | Nested conditional. | 1 |
-| [`Conditional_NotBig`](#conditional_notbig) | Block | Nested conditional. | 1 |
-| [`Conditional_RandomChance`](#conditional_randomchance) | Block | Nested conditional. | 1 |
-| [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Block | Nested conditional. | 1 |
-| [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Block | Nested conditional. | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`Conditional_AffectedByElement`](#conditional_affectedbyelement) | Object | Nested conditional. | 3 |
+| [`Conditional_FirstApplicationThisTurn`](#conditional_firstapplicationthisturn) | Object | Nested conditional. | 3 |
+| [`Conditional_LastHit`](#conditional_lasthit) | Object | Nested conditional. | 3 |
+| [`Conditional_BadRoll`](#conditional_badroll) | Object | Nested conditional. | 2 |
+| [`Conditional_BossOrBig`](#conditional_bossorbig) | Object | Nested conditional. | 2 |
+| [`Conditional_Buddy`](#conditional_buddy) | Object | Nested conditional. | 2 |
+| [`Conditional_DestructibleCorpse`](#conditional_destructiblecorpse) | Object | Nested conditional. | 2 |
+| [`Conditional_HealthThreshold`](#conditional_healththreshold) | Object | Nested conditional. | 2 |
+| [`Conditional_IsSelf`](#conditional_isself) | Object | Nested conditional. | 2 |
+| [`Conditional_NotAlly`](#conditional_notally) | Object | Nested conditional. | 2 |
+| [`Conditional_NotBossOrBig`](#conditional_notbossorbig) | Object | Nested conditional. | 2 |
+| [`Conditional_NotShielded`](#conditional_notshielded) | Object | Nested conditional. | 2 |
+| [`Conditional_OncePerBattle`](#conditional_onceperbattle) | Object | Nested conditional. | 2 |
+| [`Conditional_Shielded`](#conditional_shielded) | Object | Nested conditional. | 2 |
+| [`Conditional_AbilityTargetIsSelf`](#conditional_abilitytargetisself) | Object | Nested conditional. | 1 |
+| [`Conditional_ActiveWeather_Any`](#conditional_activeweather_any) | Object | Nested conditional. | 1 |
+| [`Conditional_Backstab`](#conditional_backstab) | Object | Nested conditional. | 1 |
+| [`Conditional_CanBeHealed`](#conditional_canbehealed) | Object | Nested conditional. | 1 |
+| [`Conditional_DebuffRoll`](#conditional_debuffroll) | Object | Nested conditional. | 1 |
+| [`Conditional_Displaceable`](#conditional_displaceable) | Object | Nested conditional. | 1 |
+| [`Conditional_HasCleansableDebuffs`](#conditional_hascleansabledebuffs) | Object | Nested conditional. | 1 |
+| [`Conditional_IsTrample`](#conditional_istrample) | Object | Nested conditional. | 1 |
+| [`Conditional_LivingPlayerCat`](#conditional_livingplayercat) | Object | Nested conditional. | 1 |
+| [`Conditional_NotBig`](#conditional_notbig) | Object | Nested conditional. | 1 |
+| [`Conditional_RandomChance`](#conditional_randomchance) | Object | Nested conditional. | 1 |
+| [`Conditional_SourceAbilityHasTag`](#conditional_sourceabilityhastag) | Object | Nested conditional. | 1 |
+| [`Conditional_SourceHasStatus`](#conditional_sourcehasstatus) | Object | Nested conditional. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 

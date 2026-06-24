@@ -7,16 +7,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/damage_text_styles.gon`
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 26
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |
 | [`color`](./Arrays.md#array-color) | Array |  | 26 |
 | [`right_icon`](./Enums.md#enum-right_icon) | String |  | 10 |
 | [`back_icon`](./Enums.md#enum-back_icon) | String |  | 8 |

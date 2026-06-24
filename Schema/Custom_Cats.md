@@ -7,18 +7,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/custom_cats.gon`
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 211
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `texture` | Integer |  | 211 |
 | `default_frame` | Integer |  | 210 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |
 | [`voice`](./Enums.md#enum-voice) | Enum |  | 200 |
 | `righteye` | Integer |  | 200 |
 | `lefteye` | Integer |  | 198 |
@@ -43,14 +43,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `arm1`
+### Object: `arm1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `frame` | Integer |  | 2 |
 | `texture` | Integer |  | 2 |
@@ -59,14 +59,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `arm2`
+### Object: `arm2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 2
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `frame` | Integer |  | 2 |
 | `texture` | Integer |  | 2 |

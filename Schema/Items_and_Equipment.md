@@ -6,16 +6,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/items/, data/item_setbonuses.gon`
 
 
-### Context: `ROOT`
-
+### Object: `ROOT`
+### Object: `ROOT`
 <details>
 <summary><b>Expand</b></summary>
 
 > **Total Count:** 1116
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1549 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1549 |
 | [`desc`](./Strings.md#string-desc) | String | Localization key for the item's desc. | 1116 |
 | `frame` | Number |  | 1106 |
 | [`kind`](./Enums.md#enum-kind) | Enum |  | 1106 |
@@ -51,7 +51,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 6 |
 | [`hint_prerequisite_flag`](./Enums.md#enum-hint_prerequisite_flag) | Enum |  | 5 |
 | `failable` | Boolean |  | 4 |
-| [`global_passives`](./Items_and_Equipment.md#context-global_passives) | Block |  | 4 |
+| [`global_passives`](./Items_and_Equipment.md#context-global_passives) | Object |  | 4 |
 | `randomize_piece_frames` | Boolean |  | 4 |
 | `str_aux_is_copy_passive` | Boolean |  | 4 |
 | `fragile` | Boolean |  | 3 |
@@ -60,12 +60,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `reset_aux_on_store` | Number |  | 3 |
 | `sticky` | Boolean |  | 3 |
 | `weightless` | Boolean |  | 3 |
-| [`keyword_tooltips`](./Items_and_Equipment.md#context-keyword_tooltips) | Block | Forces specific UI tooltips to appear when hovering over the ability. | 2 |
-| [`passive`](./Items_and_Equipment.md#context-passive) | Block |  | 2 |
+| [`keyword_tooltips`](./Items_and_Equipment.md#context-keyword_tooltips) | Object | Forces specific UI tooltips to appear when hovering over the ability. | 2 |
+| [`passive`](./Items_and_Equipment.md#context-passive) | Object |  | 2 |
 | `prevent_level_up` | Boolean |  | 2 |
 | [`quest_item_alias`](./Enums.md#enum-quest_item_alias) | Enum |  | 2 |
 | `speed` | Number |  | 2 |
-| [`str_aux_is_copy_ability`](./Items_and_Equipment.md#context-str_aux_is_copy_ability) | Block |  | 2 |
+| [`str_aux_is_copy_ability`](./Items_and_Equipment.md#context-str_aux_is_copy_ability) | Object |  | 2 |
 | `str_aux_is_copy_item_passive` | Boolean |  | 2 |
 | `aux_is_catid` | Boolean |  | 1 |
 | `cant_equip_to_colorless` | Boolean |  | 1 |
@@ -82,8 +82,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passives`
-
+### Object: `passives`
+### Object: `passives`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -91,16 +91,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`PassiveAfterXKills`](./Items_and_Equipment.md#context-passiveafterxkills), [`PassiveAtHealthThreshold`](./Items_and_Equipment.md#context-passiveathealththreshold), [`PassiveAtStatThreshold`](./Items_and_Equipment.md#context-passiveatstatthreshold), [`PassiveIfStrAuxEquals`](./Items_and_Equipment.md#context-passiveifstrauxequals), [`PassiveWhenAffectedByElement`](./Items_and_Equipment.md#context-passivewhenaffectedbyelement), [`PassiveWhenOnTile`](./Items_and_Equipment.md#context-passivewhenontile), [`ROOT`](./Items_and_Equipment.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2609 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2609 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToBasicAttack`
-
+### Object: `AddStatusToBasicAttack`
+### Object: `AddStatusToBasicAttack`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -108,15 +108,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddPassivesToMinions`](./Items_and_Equipment.md#context-addpassivestominions), [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 119 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 119 |
 
 </details>
 
 ---
 
-### Context: `effects`
+### Object: `effects`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -125,16 +125,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`DoDamage`](./Items_and_Equipment.md#context-dodamage), [`MeleeRevengeDamage`](./Items_and_Equipment.md#context-meleerevengedamage), [`RevengeDamage`](./Items_and_Equipment.md#context-revengedamage), [`damage_instance`](./Items_and_Equipment.md#context-damage_instance)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1886 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 552 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1886 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 552 |
+| `BounceObject` | `Enum/String` | Spawns a physics object that visually bounces off the target. | 0 |
+| `Conditional_GoodRoll` | `Block` | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 0 |
+| `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. | 0 |
+| `ForceUseAbility_NonStack` | Enum/String | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 0 |
+| `VisualFX` | `Enum/String` | Applies or references the 'VisualFX' effect/state. | 0 |
+| `VisualFXTile` | `Enum/String` | Applies or references the 'VisualFXTile' effect/state. | 0 |
+| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 0 |
 
 </details>
 
 ---
 
-### Context: `MeleeRevengeDamage`
+### Object: `MeleeRevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -143,18 +150,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 36 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 36 |
 | `knockback` | Number |  | 9 |
 | `damage` | Number | The base damage properties of an attack. | 4 |
+  | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
+  | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
+  | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
+  | [`StatusImmunity`](./Enums.md#enum-statusimmunity) | Enum | Applies or references the 'StatusImmunity' effect/state. | 0 |
+| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBattleEnd`
-
+### Object: `StatusOnBattleEnd`
+### Object: `StatusOnBattleEnd`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -162,17 +174,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ApplyPassives`](./Items_and_Equipment.md#context-applypassives), [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 56 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 56 |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 11 |
 
 </details>
 
 ---
 
-### Context: `StatusEachTurnEnd`
-
+### Object: `StatusEachTurnEnd`
+### Object: `StatusEachTurnEnd`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -180,16 +192,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 42 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 42 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBreak`
-
+### Object: `StatusOnBreak`
+### Object: `StatusOnBreak`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -197,16 +209,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 11 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
 
 </details>
 
 ---
 
-### Context: `SpawnOnBattleStart`
-
+### Object: `SpawnOnBattleStart`
+### Object: `SpawnOnBattleStart`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -214,7 +226,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 17 |
 | [`number`](./Arrays.md#array-number) | Array |  | 11 |
@@ -223,7 +235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_GoodRoll`
+### Object: `Conditional_GoodRoll`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -232,18 +244,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend), [`StatusOnKill`](./Items_and_Equipment.md#context-statusonkill), [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`effects`](./Items_and_Equipment.md#context-effects)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 40 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 17 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 14 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
+| `DestroyTrinket` | `Number` | Applies or references the 'DestroyTrinket' effect/state. | 0 |
+| `ForceUseAbility_NonStack` | `Enum/String` | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusOnKill`
-
+### Object: `StatusOnKill`
+### Object: `StatusOnKill`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -251,16 +265,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 20 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 |
+  | `BrittleCharismaUp` | Integer | Applies or references the 'BrittleCharismaUp' effect/state. | 0 |
+  | `BrittleConstitutionUp` | Integer | Applies or references the 'BrittleConstitutionUp' effect/state. | 0 |
+  | `BrittleDexterityUp` | Integer | Applies or references the 'BrittleDexterityUp' effect/state. | 0 |
+  | `BrittleIntelligenceUp` | Integer | Applies or references the 'BrittleIntelligenceUp' effect/state. | 0 |
+  | `BrittleLuckUp` | Integer | Applies or references the 'BrittleLuckUp' effect/state. | 0 |
+  | `BrittleSpeedUp` | Integer | Applies or references the 'BrittleSpeedUp' effect/state. | 0 |
+  | `BrittleStrengthUp` | Integer | Applies or references the 'BrittleStrengthUp' effect/state. | 0 |
+  | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Applies or references the 'UseAbility_NonStack' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTookDamage`
-
+### Object: `StatusOnTookDamage`
+### Object: `StatusOnTookDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -268,16 +290,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 30 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBattleStart`
-
+### Object: `StatusOnBattleStart`
+### Object: `StatusOnBattleStart`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -285,16 +307,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 
 </details>
 
 ---
 
-### Context: `SpawnThingOnDamage`
-
+### Object: `SpawnThingOnDamage`
+### Object: `SpawnThingOnDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -302,7 +324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 11 |
 | `good` | Boolean |  | 4 |
@@ -314,8 +336,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnEachTurn`
-
+### Object: `SpawnEachTurn`
+### Object: `SpawnEachTurn`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -323,7 +345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array |  | 10 |
 | `chance` | Mixed | Probability (0.0 to 1.0 or percentage) of this occurring. | 9 |
@@ -333,8 +355,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusEachTurnBegin`
-
+### Object: `StatusEachTurnBegin`
+### Object: `StatusEachTurnBegin`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -342,15 +364,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead), [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 
 </details>
 
 ---
 
-### Context: `RevengeDamage`
+### Object: `RevengeDamage`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -359,18 +381,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
 | `damage` | Number | The base damage properties of an attack. | 3 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
+  | [`InnateElement`](./Enums.md#enum-innateelement) | Enum | Applies the 'InnateElement' effect. | 0 |
+| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
 ---
 
-### Context: `AddSelfStatusToBasicAttack`
-
+### Object: `AddSelfStatusToBasicAttack`
+### Object: `AddSelfStatusToBasicAttack`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -378,16 +402,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
 
 </details>
 
 ---
 
-### Context: `DurabilityTransform`
-
+### Object: `DurabilityTransform`
+### Object: `DurabilityTransform`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -395,7 +419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`eq`](./Arrays.md#array-eq) | Array |  | 11 |
 | [`ge`](./Arrays.md#array-ge) | Array |  | 4 |
@@ -404,8 +428,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveIfStrAuxEquals`
-
+### Object: `PassiveIfStrAuxEquals`
+### Object: `PassiveIfStrAuxEquals`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -413,17 +437,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`value`](./Math_Equations.md) | Equation |  | 7 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusOnKillEnemy`
-
+### Object: `StatusOnKillEnemy`
+### Object: `StatusOnKillEnemy`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -431,16 +455,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToAllDamage`
-
+### Object: `AddStatusToAllDamage`
+### Object: `AddStatusToAllDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -448,17 +472,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 12 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `must_do_damage` | Boolean |  | 3 |
+  | [`Conditional_HasTag`](#conditionalhastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 0 |
+  | [`KnockbackIfCrit`](#knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 0 |
+  | `LeaveBehindRockOnKnockback` | Number | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. | 0 |
+  | [`Blind`](./Arrays.md#array-blind) | Array | Applies or references the 'Blind' effect/state. | 0 |
+  | `NonLethal` | Integer | Applies the 'NonLethal' effect. | 0 |
+  | [`Rot`](./Arrays.md#array-rot) | Array | Applies or references the 'Rot' effect/state. | 0 |
+  | [`Conditional_HasStatus`](#conditionalhasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 0 |
+  | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `ApplyToSource`
-
+### Object: `ApplyToSource`
+### Object: `ApplyToSource`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -466,16 +498,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus), [`Else`](./Items_and_Equipment.md#context-else)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 22 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
 
 </details>
 
 ---
 
-### Context: `GainCoinsRange`
-
+### Object: `GainCoinsRange`
+### Object: `GainCoinsRange`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -483,7 +515,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak), [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `max` | Number | Maximum coins granted. | 6 |
 | `min` | Number | Minimum coins granted. | 6 |
@@ -492,8 +524,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ItemAuxTransform`
-
+### Object: `ItemAuxTransform`
+### Object: `ItemAuxTransform`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -501,7 +533,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`le`](./Arrays.md#array-le) | Array |  | 6 |
 | [`ge`](./Arrays.md#array-ge) | Array |  | 2 |
@@ -511,8 +543,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveWhenOnTile`
-
+### Object: `PassiveWhenOnTile`
+### Object: `PassiveWhenOnTile`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -520,17 +552,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`tile`](./Arrays.md#array-tile) | Array |  | 6 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesOnBattleStart`
-
+### Object: `StatusAlliesOnBattleStart`
+### Object: `StatusAlliesOnBattleStart`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -538,16 +570,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 
 </details>
 
 ---
 
-### Context: `StatusOnDie`
-
+### Object: `StatusOnDie`
+### Object: `StatusOnDie`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -555,16 +587,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEndMove`
-
+### Object: `StatusOnEndMove`
+### Object: `StatusOnEndMove`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -572,16 +604,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | `RemoveStatusStacks` | Object | Removes a specific number of stacks of a status effect. | 0 |
+  | [`Conditional_FirstApplicationThisTurn`](#conditionalfirstapplicationthisturn) | Object | Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn. | 0 |
+  | [`DivineShield`](./Arrays.md#array-divineshield) | Number | Applies or references the 'DivineShield' effect/state. | 0 |
+  | [`Conditional_GoodRoll`](#conditional_goodroll) | Object | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 0 |
+  | [`ImmediateUseAbility`](./Enums.md#enum-immediateuseability) | Enum | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
+  | `Charge` | Number | Applies or references the 'Charge' effect/state. | 0 |
+  | `SpeedUp_WithoutInitiative` | Integer | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. | 0 |
+  | `ForceAttack` | Object | Forces the character to execute an immediate attack. | 0 |
+  | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `Temporary`
-
+### Object: `Temporary`
+### Object: `Temporary`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -589,7 +630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_BadRoll`](./Items_and_Equipment.md#context-conditional_badroll), [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | The status effect to apply. | 5 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 5 |
@@ -601,8 +642,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformItemOnElementInfluence`
-
+### Object: `TransformItemOnElementInfluence`
+### Object: `TransformItemOnElementInfluence`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -610,7 +651,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 5 |
 | [`item`](./Enums.md#enum-item) | Enum | Item ID to reference. | 5 |
@@ -620,8 +661,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddDamageToElementDamage`
-
+### Object: `AddDamageToElementDamage`
+### Object: `AddDamageToElementDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -629,7 +670,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 4 |
 | `damage` | Number | The base damage properties of an attack. | 4 |
@@ -638,8 +679,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddPassivesToMinions`
-
+### Object: `AddPassivesToMinions`
+### Object: `AddPassivesToMinions`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -647,16 +688,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 41 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 |
 
 </details>
 
 ---
 
-### Context: `ChanceToRevive`
-
+### Object: `ChanceToRevive`
+### Object: `ChanceToRevive`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -664,7 +705,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `health` | Number |  | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
@@ -673,7 +714,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_HasStatus`
+### Object: `Conditional_HasStatus`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -682,18 +723,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 23 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 22 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 4 |
+  | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 0 |
+| `ApplyToSource` | `Block` | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
+| `FlatLeechIfDamaged` | `Number` | Applies or references the 'FlatLeechIfDamaged' effect/state. | 0 |
+| `RemoveStatusStacks` | `Block` | Removes a specific number of stacks of a status effect. | 0 |
 
 </details>
 
 ---
 
-### Context: `Craft`
-
+### Object: `Craft`
+### Object: `Craft`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -701,7 +746,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusIfUnusedActPoints`](./Items_and_Equipment.md#context-statusifunusedactpoints), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum |  | 4 |
 | [`slot`](./Enums.md#enum-slot) | Enum | Equipment slot (weapon, hat, face, chest, etc.). | 4 |
@@ -711,8 +756,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `DelayedAutoRevive`
-
+### Object: `DelayedAutoRevive`
+### Object: `DelayedAutoRevive`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -720,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `health` | Number |  | 4 |
 | `rounds` | Number |  | 4 |
@@ -729,8 +774,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtHealthThreshold`
-
+### Object: `PassiveAtHealthThreshold`
+### Object: `PassiveAtHealthThreshold`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -738,17 +783,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 15 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 15 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 4 |
 
 </details>
 
 ---
 
-### Context: `SpawnObjectOnPopCorpse`
-
+### Object: `SpawnObjectOnPopCorpse`
+### Object: `SpawnObjectOnPopCorpse`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -756,7 +801,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 1 |
 | `count` | Number | Quantity. | 1 |
@@ -766,7 +811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusOnTakeHealthOrShieldDamage`
+### Object: `StatusOnTakeHealthOrShieldDamage`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -775,17 +820,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| `Conditional_GoodRoll` | `Block` | Conditional trigger: Executes nested logic based on a randomized favorable outcome probability. | 0 |
+| `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. | 0 |
+| `ForceUseAbility_NonStack` | Enum/String | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 0 |
+| `Metronome` | `Number` | Executes a random musical or metronome ability. | 0 |
+| `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusRandomEnemiesOnBattleStart`
-
+### Object: `StatusRandomEnemiesOnBattleStart`
+### Object: `StatusRandomEnemiesOnBattleStart`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -793,16 +843,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | `count` | Number | Quantity. | 4 |
 
 </details>
 
 ---
 
-### Context: `global_passives`
+### Object: `global_passives`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -811,18 +861,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `GlobalEnemyAutoRevive` | Number | Applies or references the 'GlobalEnemyAutoRevive' effect/state. | 2 |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `RealTimePressure` | Number | Applies or references the 'RealTimePressure' effect/state. | 1 |
+| `NoCorpses` | `Number` | Applies or references the 'NoCorpses' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `CatchProjectiles`
-
+### Object: `CatchProjectiles`
+### Object: `CatchProjectiles`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -830,9 +881,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | `ally_chance` | Number |  | 3 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 3 |
 
@@ -840,8 +891,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ClassManaCostReduction`
-
+### Object: `ClassManaCostReduction`
+### Object: `ClassManaCostReduction`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -849,7 +900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `reduction` | Number |  | 3 |
 | [`class`](./Enums.md#enum-class) | Enum | Character class identifier. | 2 |
@@ -858,8 +909,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_PartyMember`
-
+### Object: `Conditional_PartyMember`
+### Object: `Conditional_PartyMember`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -867,17 +918,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ExtraStatusWhenDealingDamage`](./Items_and_Equipment.md#context-extrastatuswhendealingdamage)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
+  | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
+  | [`Conditional_IsSelf`](#conditional_isself) | Object | Conditional trigger: Executes nested logic if the target is the caster themselves. | 0 |
 
 </details>
 
 ---
 
-### Context: `CounterAttack`
-
+### Object: `CounterAttack`
+### Object: `CounterAttack`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -885,7 +939,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 3 |
 | `melee_only` | Boolean |  | 1 |
@@ -895,8 +949,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Else`
-
+### Object: `Else`
+### Object: `Else`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -904,16 +958,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_PartyMember`](./Items_and_Equipment.md#context-conditional_partymember)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 20 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 |
 
 </details>
 
 ---
 
-### Context: `ExtraStatusWhenDealingDamage`
-
+### Object: `ExtraStatusWhenDealingDamage`
+### Object: `ExtraStatusWhenDealingDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -921,16 +975,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`Conditional_PartyMember`](#conditional_partymember) | Object | Conditional constraint. Nested properties only trigger if this is true. | 0 |
+  | [`Conditional_Ally`](#conditionalally) | Object | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 0 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhenDead`
-
+### Object: `PassiveWhenDead`
+### Object: `PassiveWhenDead`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -938,16 +994,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`StatusEachRoundEnd`](#statuseachroundend) | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 0 |
+  | [`StatusEachTurnBegin`](#statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 0 |
+  | [`AddStatusToTrampleDamage`](#addstatustotrampledamage) | Object | Applies the 'AddStatusToTrampleDamage' effect. | 0 |
+  | [`AutocastEachRound`](#autocasteachround) | Object | Forces the character to automatically cast a specific ability at the start of each combat round. | 0 |
 
 </details>
 
 ---
 
-### Context: `SetItemAux`
-
+### Object: `SetItemAux`
+### Object: `SetItemAux`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -955,7 +1015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_Shielded`](./Items_and_Equipment.md#context-conditional_shielded), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`slot`](./Enums.md#enum-slot) | Enum | Equipment slot (weapon, hat, face, chest, etc.). | 3 |
 | [`value`](./Math_Equations.md) | Equation |  | 3 |
@@ -964,8 +1024,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnExtraThingsOnBattleStart`
-
+### Object: `SpawnExtraThingsOnBattleStart`
+### Object: `SpawnExtraThingsOnBattleStart`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -973,7 +1033,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array |  | 3 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
@@ -982,8 +1042,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnOnBattleStartRandomEmptyTile`
-
+### Object: `SpawnOnBattleStartRandomEmptyTile`
+### Object: `SpawnOnBattleStartRandomEmptyTile`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -991,7 +1051,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array |  | 3 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
@@ -1000,8 +1060,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StackingFlowerTrail`
-
+### Object: `StackingFlowerTrail`
+### Object: `StackingFlowerTrail`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1009,7 +1069,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum |  | 3 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 3 |
@@ -1018,8 +1078,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAllCharactersOnSpawn`
-
+### Object: `StatusAllCharactersOnSpawn`
+### Object: `StatusAllCharactersOnSpawn`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1027,16 +1087,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusEveryXSpellCasts`
-
+### Object: `StatusEveryXSpellCasts`
+### Object: `StatusEveryXSpellCasts`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1044,17 +1104,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 3 |
 
 </details>
 
 ---
 
-### Context: `StatusOnPopCorpse`
-
+### Object: `StatusOnPopCorpse`
+### Object: `StatusOnPopCorpse`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1062,16 +1122,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 
 </details>
 
 ---
 
-### Context: `StatusOnTurnEndIfDidntCastAbilityTypes`
-
+### Object: `StatusOnTurnEndIfDidntCastAbilityTypes`
+### Object: `StatusOnTurnEndIfDidntCastAbilityTypes`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1079,17 +1139,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 3 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToElementDamage`
-
+### Object: `AddStatusToElementDamage`
+### Object: `AddStatusToElementDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1097,17 +1157,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 2 |
+  | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToKnockbackDamage`
-
+### Object: `AddStatusToKnockbackDamage`
+### Object: `AddStatusToKnockbackDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1115,16 +1176,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 0 |
+  | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToSpells`
-
+### Object: `AddStatusToSpells`
+### Object: `AddStatusToSpells`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1132,16 +1195,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | `Leech` | Number | Applies or references the 'Leech' effect/state. | 0 |
+  | `LeechPercent` | Integer | Applies the 'LeechPercent' effect. | 0 |
+  | [`Conditional_Enemy`](#conditionalenemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 0 |
 
 </details>
 
 ---
 
-### Context: `ApplyStatusesToRandomEnemiesEachTurn`
-
+### Object: `ApplyStatusesToRandomEnemiesEachTurn`
+### Object: `ApplyStatusesToRandomEnemiesEachTurn`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1149,17 +1215,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | `count` | Number | Quantity. | 1 |
 
 </details>
 
 ---
 
-### Context: `ArmorBreakOnHit`
-
+### Object: `ArmorBreakOnHit`
+### Object: `ArmorBreakOnHit`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1167,7 +1233,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `chance_to_break` | Number |  | 2 |
 | `durability_loss` | Number |  | 2 |
@@ -1176,7 +1242,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BoostWeaponDamage`
+### Object: `BoostWeaponDamage`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1185,17 +1251,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | `damage` | Number | The base damage properties of an attack. | 2 |
+| `crit_chance` | `Number` |  | 0 |
 
 </details>
 
 ---
 
-### Context: `ChanceToBackflip`
-
+### Object: `ChanceToBackflip`
+### Object: `ChanceToBackflip`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1203,7 +1270,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 2 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 2 |
@@ -1212,8 +1279,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToBlockAndCounter`
-
+### Object: `ChanceToBlockAndCounter`
+### Object: `ChanceToBlockAndCounter`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1221,7 +1288,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `backstab_only` | Boolean |  | 1 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
@@ -1230,7 +1297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Adjacent`
+### Object: `Conditional_Adjacent`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1239,17 +1306,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ScaledStatusAlliesOnSpendMana`](./Items_and_Equipment.md#context-scaledstatusalliesonspendmana), [`StatusAlliesEachTurn`](./Items_and_Equipment.md#context-statusallieseachturn)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+  | [`Conditional_PlayerCat`](#conditional_playercat) | Object | Conditional trigger: Executes nested logic if the target is a player-controlled cat. | 0 |
+  | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
+  | [`Bleed`](./Arrays.md#array-bleed) | Number | Applies or references the 'Bleed' effect/state. | 0 |
+  | [`Conditional_Ally`](#conditionalally) | Object | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 0 |
+  | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 0 |
+| `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `Conditional_BadRoll`
-
+### Object: `Conditional_BadRoll`
+### Object: `Conditional_BadRoll`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1257,17 +1330,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Boss`
-
+### Object: `Conditional_Boss`
+### Object: `Conditional_Boss`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1275,15 +1348,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusAllCharactersOnSpawn`](./Items_and_Equipment.md#context-statusallcharactersonspawn)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+  | `ExplodeCharacter_PartyBoss` | Integer | Applies or references the 'ExplodeCharacter_PartyBoss' effect/state. | 0 |
+  | `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | Applies or references the 'ExplodeCharacter_RockCrusher_PetrifyBreak' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `Conditional_OncePerBattle`
+### Object: `Conditional_OncePerBattle`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1292,17 +1367,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_HealthThreshold`](./Items_and_Equipment.md#context-conditional_healththreshold), [`StatusOnFullMana`](./Items_and_Equipment.md#context-statusonfullmana)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`key`](./Enums.md#enum-key) | Enum |  | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| `ShowText` | `String` | Applies or references the 'ShowText' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `CreateGlobalModifiers`
+### Object: `CreateGlobalModifiers`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1311,15 +1387,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie), [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| `NextPlayerCatTakesExtraTurn` | `Number` | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. | 0 |
+| `NoCorpses` | `Number` | Applies or references the 'NoCorpses' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `DoDamage`
+### Object: `DoDamage`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1328,19 +1406,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusEachRoundEnd`](./Items_and_Equipment.md#context-statuseachroundend), [`StatusOnBreakItem`](./Items_and_Equipment.md#context-statusonbreakitem)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 2 |
 | `damage` | Number | The flat damage amount. | 2 |
+| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 
 ---
 
-### Context: `ElementalManaCostReduction`
-
+### Object: `ElementalManaCostReduction`
+### Object: `ElementalManaCostReduction`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1348,7 +1427,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Arrays.md#array-element) | Array | Specific element type required or applied. | 2 |
 | `reduction` | Number |  | 2 |
@@ -1357,8 +1436,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ImmediateUseAbility`
-
+### Object: `ImmediateUseAbility`
+### Object: `ImmediateUseAbility`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1366,7 +1445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
 | `even_if_stunned` | Boolean |  | 1 |
@@ -1375,8 +1454,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ModifyAbility`
-
+### Object: `ModifyAbility`
+### Object: `ModifyAbility`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1384,17 +1463,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`bonus_passives`](./Items_and_Equipment.md#context-bonus_passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`cost`](./Items_and_Equipment.md#context-cost) | Block | Currency value in shops/merchants. | 2 |
-| [`meta`](./Items_and_Equipment.md#context-meta) | Block |  | 2 |
+| [`cost`](./Items_and_Equipment.md#context-cost) | Object | Currency value in shops/merchants. | 2 |
+| [`meta`](./Items_and_Equipment.md#context-meta) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `MovementReaction`
-
+### Object: `MovementReaction`
+### Object: `MovementReaction`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1402,7 +1481,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`PassiveWhileHasDurability`](./Items_and_Equipment.md#context-passivewhilehasdurability), [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 2 |
 | `create_temp_ability` | Boolean |  | 2 |
@@ -1413,8 +1492,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectOnHitCharacter`
-
+### Object: `ObjectOnHitCharacter`
+### Object: `ObjectOnHitCharacter`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1422,7 +1501,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusEveryXSpellCasts`](./Items_and_Equipment.md#context-statuseveryxspellcasts), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 2 |
 | `stacks` | Mixed | Number of stacks or intensity to apply. | 2 |
@@ -1431,8 +1510,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAtStatThreshold`
-
+### Object: `PassiveAtStatThreshold`
+### Object: `PassiveAtStatThreshold`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1440,17 +1519,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 31 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 31 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 2 |
 
 </details>
 
 ---
 
-### Context: `PassiveIfWeaponIsUsable`
-
+### Object: `PassiveIfWeaponIsUsable`
+### Object: `PassiveIfWeaponIsUsable`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1458,16 +1537,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
 ---
 
-### Context: `RefreshEquipmentAbilityOnElement`
-
+### Object: `RefreshEquipmentAbilityOnElement`
+### Object: `RefreshEquipmentAbilityOnElement`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1475,7 +1554,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 2 |
 | [`text`](./Strings.md#string-text) | String |  | 2 |
@@ -1484,8 +1563,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnItemLinkedFamiliar`
-
+### Object: `SpawnItemLinkedFamiliar`
+### Object: `SpawnItemLinkedFamiliar`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1493,7 +1572,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 2 |
 | `break_on_pop_only` | Boolean |  | 2 |
@@ -1502,8 +1581,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatusAfterCastSpell`
-
+### Object: `StatusAfterCastSpell`
+### Object: `StatusAfterCastSpell`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1511,16 +1590,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAfterXStacks`
-
+### Object: `StatusAfterXStacks`
+### Object: `StatusAfterXStacks`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1528,18 +1607,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ScaledStatusOnSpendMana`](./Items_and_Equipment.md#context-scaledstatusonspendmana), [`StatusOnCollectPickup`](./Items_and_Equipment.md#context-statusoncollectpickup)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum |  | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `expires_on_end_turn` | Boolean |  | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusIfUnusedActPoints`
-
+### Object: `StatusIfUnusedActPoints`
+### Object: `StatusIfUnusedActPoints`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1547,16 +1626,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | `Craft` | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
+  | `BackflipWhenTargeted` | Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusOnAllyCatDeath`
-
+### Object: `StatusOnAllyCatDeath`
+### Object: `StatusOnAllyCatDeath`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1564,16 +1645,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBackstab`
-
+### Object: `StatusOnBackstab`
+### Object: `StatusOnBackstab`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1581,17 +1662,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `SerratedClaws` | Number | Applies or references the 'SerratedClaws' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnBreakItem`
-
+### Object: `StatusOnBreakItem`
+### Object: `StatusOnBreakItem`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1599,16 +1680,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
 ---
 
-### Context: `StatusOnCastSpell`
-
+### Object: `StatusOnCastSpell`
+### Object: `StatusOnCastSpell`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1616,16 +1697,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 
 </details>
 
 ---
 
-### Context: `StatusOnGainCoins`
-
+### Object: `StatusOnGainCoins`
+### Object: `StatusOnGainCoins`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1633,16 +1714,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 
 </details>
 
 ---
 
-### Context: `bonus_passives`
-
+### Object: `bonus_passives`
+### Object: `bonus_passives`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1650,16 +1731,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`str_aux_is_copy_ability`](./Items_and_Equipment.md#context-str_aux_is_copy_ability)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 125 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 125 |
 
 </details>
 
 ---
 
-### Context: `cost`
-
+### Object: `cost`
+### Object: `cost`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1667,7 +1748,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#context-modifyability)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `charge` | Number |  | 2 |
 | `mana` | Number |  | 2 |
@@ -1676,8 +1757,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `keyword_tooltips`
-
+### Object: `keyword_tooltips`
+### Object: `keyword_tooltips`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1685,16 +1766,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
 
 </details>
 
 ---
 
-### Context: `meta`
-
+### Object: `meta`
+### Object: `meta`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1702,7 +1783,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#context-modifyability)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `is_basic_attack` | Boolean |  | 2 |
 | `is_weapon` | Boolean |  | 2 |
@@ -1711,8 +1792,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `passive`
-
+### Object: `passive`
+### Object: `passive`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1720,16 +1801,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
 ---
 
-### Context: `str_aux_is_copy_ability`
-
+### Object: `str_aux_is_copy_ability`
+### Object: `str_aux_is_copy_ability`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1737,16 +1818,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`bonus_passives`](./Items_and_Equipment.md#context-bonus_passives) | Block | Passives granted to the character while this ability is equipped. | 2 |
+| [`bonus_passives`](./Items_and_Equipment.md#context-bonus_passives) | Object | Passives granted to the character while this ability is equipped. | 2 |
 
 </details>
 
 ---
 
-### Context: `threshold`
-
+### Object: `threshold`
+### Object: `threshold`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1754,7 +1835,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`PassiveAtStatThreshold`](./Items_and_Equipment.md#context-passiveatstatthreshold)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `con` | Number |  | 1 |
 | `int` | Number |  | 1 |
@@ -1763,8 +1844,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AIControlNextTurn`
-
+### Object: `AIControlNextTurn`
+### Object: `AIControlNextTurn`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1772,7 +1853,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `include_spells` | Boolean |  | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
@@ -1781,8 +1862,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityHealthThreshold`
-
+### Object: `AbilityHealthThreshold`
+### Object: `AbilityHealthThreshold`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1790,9 +1871,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 12 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
 | `aux` | Number |  | 1 |
 | `even_if_stunned` | Boolean |  | 1 |
@@ -1802,8 +1883,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AbilityOnRoundEndOnce`
-
+### Object: `AbilityOnRoundEndOnce`
+### Object: `AbilityOnRoundEndOnce`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1811,7 +1892,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
 | `even_of_stunned` | Boolean |  | 1 |
@@ -1820,8 +1901,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `AddAdvantageToEvent`
-
+### Object: `AddAdvantageToEvent`
+### Object: `AddAdvantageToEvent`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1829,18 +1910,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
 | `add` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+  | `treasure_box` | Any | Explicit empirical property. | 0 |
 
 </details>
 
 ---
 
-### Context: `AddPassivesToCharmed`
-
+### Object: `AddPassivesToCharmed`
+### Object: `AddPassivesToCharmed`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1848,16 +1929,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
 
 </details>
 
 ---
 
-### Context: `AddSelfStatusToWeapons`
-
+### Object: `AddSelfStatusToWeapons`
+### Object: `AddSelfStatusToWeapons`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1865,16 +1946,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 0 |
+  | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Number | Applies or references the 'RepairWeapon' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToBackstabs`
-
+### Object: `AddStatusToBackstabs`
+### Object: `AddStatusToBackstabs`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1882,16 +1965,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `AddStatusToWeapons`
-
+### Object: `AddStatusToWeapons`
+### Object: `AddStatusToWeapons`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1899,16 +1982,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 
 </details>
 
 ---
 
-### Context: `AddTemporaryEffectsToBasicAttack`
-
+### Object: `AddTemporaryEffectsToBasicAttack`
+### Object: `AddTemporaryEffectsToBasicAttack`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1916,16 +1999,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`CastAgainWithStatus`](./Items_and_Equipment.md#context-castagainwithstatus) | Block | Applies or references the 'CastAgainWithStatus' effect/state. | 1 |
+| [`CastAgainWithStatus`](./Items_and_Equipment.md#context-castagainwithstatus) | Object | Applies or references the 'CastAgainWithStatus' effect/state. | 1 |
 
 </details>
 
 ---
 
-### Context: `AlluringDoodieEater`
-
+### Object: `AlluringDoodieEater`
+### Object: `AlluringDoodieEater`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1933,17 +2016,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage_instance`](./Items_and_Equipment.md#context-damage_instance) | Block |  | 1 |
+| [`damage_instance`](./Items_and_Equipment.md#context-damage_instance) | Object |  | 1 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 
 </details>
 
 ---
 
-### Context: `AllyDodgeChanceAura`
-
+### Object: `AllyDodgeChanceAura`
+### Object: `AllyDodgeChanceAura`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1951,7 +2034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | `range` | Number | Distance or area of effect in tiles. | 1 |
@@ -1960,8 +2043,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ApplyPassives`
-
+### Object: `ApplyPassives`
+### Object: `ApplyPassives`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1969,16 +2052,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_RandomChance`](./Items_and_Equipment.md#context-conditional_randomchance)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
 
 </details>
 
 ---
 
-### Context: `ApplyToRandomPartyMemberIfPossible`
-
+### Object: `ApplyToRandomPartyMemberIfPossible`
+### Object: `ApplyToRandomPartyMemberIfPossible`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1986,16 +2069,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
+  | [`GainDisorderFromPool`](./Enums.md#enum-gaindisorderfrompool) | Object | Logic: Applies a negative mutation/disorder from a specific pool. | 0 |
 
 </details>
 
 ---
 
-### Context: `AutocastEachRound`
-
+### Object: `AutocastEachRound`
+### Object: `AutocastEachRound`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2003,7 +2088,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to autocast. | 1 |
 | `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 1 |
@@ -2012,8 +2097,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BackflipWhenTargeted`
-
+### Object: `BackflipWhenTargeted`
+### Object: `BackflipWhenTargeted`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2021,7 +2106,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
@@ -2030,8 +2115,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BouncyProjectiles`
-
+### Object: `BouncyProjectiles`
+### Object: `BouncyProjectiles`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2039,7 +2124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `max_bounces` | Number |  | 1 |
 | `max_range` | Number |  | 1 |
@@ -2048,8 +2133,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BuffImmunity`
-
+### Object: `BuffImmunity`
+### Object: `BuffImmunity`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2057,7 +2142,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`exclude`](./Enums.md#enum-exclude) | Enum |  | 1 |
 
@@ -2065,7 +2150,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `CastAgainWithStatus`
+### Object: `CastAgainWithStatus`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2074,17 +2159,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddTemporaryEffectsToBasicAttack`](./Items_and_Equipment.md#context-addtemporaryeffectstobasicattack)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
+| `OverrideDamage` | `Number` | Applies or references the 'OverrideDamage' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `CatPartsSizeScale`
-
+### Object: `CatPartsSizeScale`
+### Object: `CatPartsSizeScale`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2092,7 +2178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `head` | Number |  | 1 |
 
@@ -2100,8 +2186,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ChanceToForceEvent`
-
+### Object: `ChanceToForceEvent`
+### Object: `ChanceToForceEvent`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2109,7 +2195,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`event`](./Enums.md#enum-event) | Enum |  | 1 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
@@ -2118,8 +2204,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Conditional_Ally`
-
+### Object: `Conditional_Ally`
+### Object: `Conditional_Ally`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2127,16 +2213,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 16 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Corpse`
-
+### Object: `Conditional_Corpse`
+### Object: `Conditional_Corpse`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2144,16 +2230,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Enemy`
-
+### Object: `Conditional_Enemy`
+### Object: `Conditional_Enemy`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2161,16 +2247,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToSpells`](./Items_and_Equipment.md#context-addstatustospells)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
+  | [`Conditional_FinishedSpawning`](#conditional_finishedspawning) | Object | Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence. | 0 |
+  | `DisplaceToAbilityTarget` | Integer | Applies or references the 'DisplaceToAbilityTarget' effect/state. | 0 |
+  | `DontHealEnemies` | Integer | Applies or references the 'DontHealEnemies' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HasTag`
-
+### Object: `Conditional_HasTag`
+### Object: `Conditional_HasTag`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2178,16 +2267,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 49 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 49 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 1 |
+  | `EventBounty` | Integer | Applies or references the 'EventBounty' effect/state. | 0 |
+  | [`MergeDamageInstance`](#mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 0 |
+  | [`SetAnimationAlts`](#setanimationalts) | Object | Overrides specific animation states with alternative animations. | 0 |
 
 </details>
 
 ---
 
-### Context: `Conditional_HealthThreshold`
+### Object: `Conditional_HealthThreshold`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2196,17 +2288,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 1 |
+| `Conditional_OncePerBattle` | `Block` | Conditional trigger: Executes nested logic only once per encounter/battle. | 0 |
+| `ShowText` | String | Applies or references the 'ShowText' effect/state. | 0 |
+| `key` | Enum/String |  | 0 |
 
 </details>
 
 ---
 
-### Context: `Conditional_ManaThreshold`
-
+### Object: `Conditional_ManaThreshold`
+### Object: `Conditional_ManaThreshold`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2214,17 +2310,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `threshold_flat` | Number |  | 1 |
 
 </details>
 
 ---
 
-### Context: `Conditional_PlayerCat`
-
+### Object: `Conditional_PlayerCat`
+### Object: `Conditional_PlayerCat`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2232,15 +2328,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
 ---
 
-### Context: `Conditional_RandomChance`
+### Object: `Conditional_RandomChance`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2249,17 +2345,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
+| `ApplyPassives` | `Block` | Grants the nested passive abilities dynamically. | 0 |
 
 </details>
 
 ---
 
-### Context: `Conditional_Shielded`
-
+### Object: `Conditional_Shielded`
+### Object: `Conditional_Shielded`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2267,16 +2365,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | `SetItemAux` | Object | Applies or references the 'SetItemAux' effect/state. | 0 |
+  | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
+  | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 0 |
+  | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 0 |
+  | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 0 |
 
 </details>
 
 ---
 
-### Context: `ConvertDamageToScaledStatus`
-
+### Object: `ConvertDamageToScaledStatus`
+### Object: `ConvertDamageToScaledStatus`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2284,17 +2387,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
 ---
 
-### Context: `CritsApplyStatus`
-
+### Object: `CritsApplyStatus`
+### Object: `CritsApplyStatus`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2302,16 +2405,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 
 </details>
 
 ---
 
-### Context: `DestroyEquipmentAndAttachParasite`
-
+### Object: `DestroyEquipmentAndAttachParasite`
+### Object: `DestroyEquipmentAndAttachParasite`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2319,7 +2422,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Enum | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | [`pool`](./Arrays.md#array-pool) | Array | The item pool to draw the parasite from. | 1 |
@@ -2328,8 +2431,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `Eternal`
-
+### Object: `Eternal`
+### Object: `Eternal`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2337,7 +2440,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `health_percent` | Number |  | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
@@ -2346,8 +2449,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `FlyDamageIncrease`
-
+### Object: `FlyDamageIncrease`
+### Object: `FlyDamageIncrease`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2355,7 +2458,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean |  | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
@@ -2364,8 +2467,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ForceUseAbilityOnTarget`
-
+### Object: `ForceUseAbilityOnTarget`
+### Object: `ForceUseAbilityOnTarget`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2373,7 +2476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 1 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
@@ -2382,8 +2485,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `GlobalMeleeRevengeDamage`
-
+### Object: `GlobalMeleeRevengeDamage`
+### Object: `GlobalMeleeRevengeDamage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2391,7 +2494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `knockback` | Number |  | 1 |
 
@@ -2399,8 +2502,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockUpAndAway`
-
+### Object: `KnockUpAndAway`
+### Object: `KnockUpAndAway`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2408,7 +2511,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `distance` | Number | The distance in tiles to knock the target away. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
@@ -2417,8 +2520,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `KnockbackIfCrit`
-
+### Object: `KnockbackIfCrit`
+### Object: `KnockbackIfCrit`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2426,7 +2529,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `knockback` | Number |  | 1 |
 | `override_chain_knockback` | Number |  | 1 |
@@ -2435,8 +2538,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ManaGainRange`
-
+### Object: `ManaGainRange`
+### Object: `ManaGainRange`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2444,7 +2547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `max` | Number |  | 1 |
 | `min` | Number |  | 1 |
@@ -2453,8 +2556,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ObjectDetector`
-
+### Object: `ObjectDetector`
+### Object: `ObjectDetector`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2462,7 +2565,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 1 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
@@ -2471,8 +2574,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `PassiveAfterXKills`
-
+### Object: `PassiveAfterXKills`
+### Object: `PassiveAfterXKills`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2480,17 +2583,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhenAffectedByElement`
-
+### Object: `PassiveWhenAffectedByElement`
+### Object: `PassiveWhenAffectedByElement`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2498,17 +2601,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 30 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileHasDurability`
-
+### Object: `PassiveWhileHasDurability`
+### Object: `PassiveWhileHasDurability`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2516,16 +2619,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`MovementReaction`](#movementreaction) | Object | Reaction: Triggers an effect or ability when forced to move. | 0 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileInMonkMeleeStance`
-
+### Object: `PassiveWhileInMonkMeleeStance`
+### Object: `PassiveWhileInMonkMeleeStance`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2533,16 +2637,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
 ---
 
-### Context: `PassiveWhileShielded`
-
+### Object: `PassiveWhileShielded`
+### Object: `PassiveWhileShielded`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2550,16 +2654,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `PoopWhenHit`
-
+### Object: `PoopWhenHit`
+### Object: `PoopWhenHit`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2567,7 +2671,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 1 |
 | `chance` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
@@ -2576,8 +2680,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `RandomStatusFromPool`
-
+### Object: `RandomStatusFromPool`
+### Object: `RandomStatusFromPool`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2585,16 +2689,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 31 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 31 |
 
 </details>
 
 ---
 
-### Context: `RemoveStatusStacks`
-
+### Object: `RemoveStatusStacks`
+### Object: `RemoveStatusStacks`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2602,7 +2706,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 1 |
 | `stacks` | Number | The number of stacks to remove. | 1 |
@@ -2611,8 +2715,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `ReviveNextRound`
-
+### Object: `ReviveNextRound`
+### Object: `ReviveNextRound`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2620,16 +2724,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `revive_health` | Number | The flat amount of health to revive with. | 1 |
 
 </details>
 
 ---
 
-### Context: `ScaldingOrbMoonBossOneShot`
+### Object: `ScaldingOrbMoonBossOneShot`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2638,16 +2742,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| `CompleteItemQuest` | `Enum/String` | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
+| `RemoveItem` | `Enum/String` | Applies or references the 'RemoveItem' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusAlliesOnSpendMana`
-
+### Object: `ScaledStatusAlliesOnSpendMana`
+### Object: `ScaledStatusAlliesOnSpendMana`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2655,16 +2761,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional constraint. Nested properties only trigger if this is true. | 0 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusOnHolyShieldBlock`
-
+### Object: `ScaledStatusOnHolyShieldBlock`
+### Object: `ScaledStatusOnHolyShieldBlock`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2672,16 +2779,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `ScaledStatusOnSpendMana`
-
+### Object: `ScaledStatusOnSpendMana`
+### Object: `ScaledStatusOnSpendMana`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2689,16 +2796,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
 ---
 
-### Context: `SpawnOnDeath`
-
+### Object: `SpawnOnDeath`
+### Object: `SpawnOnDeath`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2706,7 +2813,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 1 |
 | [`obj`](./Enums.md#enum-obj) | Enum |  | 1 |
@@ -2715,8 +2822,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `SpawnRandomPickupsOnTaggedUnitKilled`
-
+### Object: `SpawnRandomPickupsOnTaggedUnitKilled`
+### Object: `SpawnRandomPickupsOnTaggedUnitKilled`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2724,7 +2831,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array | Quantity. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
@@ -2733,8 +2840,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `StatDependentPassive`
-
+### Object: `StatDependentPassive`
+### Object: `StatDependentPassive`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2742,15 +2849,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAdjacentOnTheirTurnEnd`
+### Object: `StatusAdjacentOnTheirTurnEnd`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2759,16 +2866,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| `ForceMoveAway` | `Number` | Applies or references the 'ForceMoveAway' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusAfterXTurns`
-
+### Object: `StatusAfterXTurns`
+### Object: `StatusAfterXTurns`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2776,17 +2884,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesEachTurn`
-
+### Object: `StatusAlliesEachTurn`
+### Object: `StatusAlliesEachTurn`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2794,16 +2902,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+  | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 0 |
+  | `exclude_self` | Boolean | `false` | 0 |
+  | [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional constraint. Nested properties only trigger if this is true. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusAlliesOnDeath`
-
+### Object: `StatusAlliesOnDeath`
+### Object: `StatusAlliesOnDeath`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2811,16 +2922,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 
 </details>
 
 ---
 
-### Context: `StatusEachRoundEnd`
-
+### Object: `StatusEachRoundEnd`
+### Object: `StatusEachRoundEnd`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2828,15 +2939,117 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
 ---
 
-### Context: `StatusEachTurnEndForEachTurn`
+### Object: `StatusEachTurnEndForEachTurn`
+### Object: `StatusEachTurnEndForEachTurn`
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+
+</details>
+
+---
+
+### Object: `StatusIfUnusedMovePoints`
+### Object: `StatusIfUnusedMovePoints`
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+
+</details>
+
+---
+
+### Object: `StatusOnCollectPickup`
+### Object: `StatusOnCollectPickup`
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+
+</details>
+
+---
+
+### Object: `StatusOnDodge`
+### Object: `StatusOnDodge`
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+
+</details>
+
+---
+
+### Object: `StatusOnEatFood`
+### Object: `StatusOnEatFood`
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+
+</details>
+
+---
+
+### Object: `StatusOnEnemyDeath`
+### Object: `StatusOnEnemyDeath`
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+
+</details>
+
+---
+
+### Object: `StatusOnFallAsleep`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2845,15 +3058,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+  | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 0 |
+  | [`FillMana`](./Arrays.md#array-fillmana) | Number | Applies or references the 'FillMana' effect/state. | 0 |
+  | `HealRandomInjury` | Integer | Applies or references the 'HealRandomInjury' effect/state. | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusIfUnusedMovePoints`
+### Object: `StatusOnFullMana`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2862,16 +3079,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 7 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| `Conditional_OncePerBattle` | `Block` | Conditional trigger: Executes nested logic only once per encounter/battle. | 0 |
+| `ShowText` | String | Applies or references the 'ShowText' effect/state. | 0 |
+| `key` | Enum/String |  | 0 |
 
 </details>
 
 ---
 
-### Context: `StatusOnCollectPickup`
-
+### Object: `StatusOnHealed`
+### Object: `StatusOnHealed`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2879,16 +3099,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
 ---
 
-### Context: `StatusOnDodge`
-
+### Object: `StatusOnPickupCoins`
+### Object: `StatusOnPickupCoins`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2896,16 +3116,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEatFood`
-
+### Object: `StatusOnUseBasicAttack`
+### Object: `StatusOnUseBasicAttack`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2913,16 +3133,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
 ---
 
-### Context: `StatusOnEnemyDeath`
-
+### Object: `StatusWhenAllySpendsMana`
+### Object: `StatusWhenAllySpendsMana`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2930,119 +3150,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
 ---
 
-### Context: `StatusOnFallAsleep`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
-
-</details>
-
----
-
-### Context: `StatusOnFullMana`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-
-</details>
-
----
-
-### Context: `StatusOnHealed`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-
-</details>
-
----
-
-### Context: `StatusOnPickupCoins`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
-
-</details>
-
----
-
-### Context: `StatusOnUseBasicAttack`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-
-</details>
-
----
-
-### Context: `StatusWhenAllySpendsMana`
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
-
-| Property Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 3 |
-
-</details>
-
----
-
-### Context: `TempPassiveUntilSettled`
-
+### Object: `TempPassiveUntilSettled`
+### Object: `TempPassiveUntilSettled`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3050,16 +3167,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnEatFood`](./Items_and_Equipment.md#context-statusoneatfood)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
 ---
 
-### Context: `TintItem`
-
+### Object: `TintItem`
+### Object: `TintItem`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3067,7 +3184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`add`](./Arrays.md#array-add) | Array |  | 1 |
 | [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum |  | 1 |
@@ -3077,8 +3194,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TransformWeapon`
-
+### Object: `TransformWeapon`
+### Object: `TransformWeapon`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3086,7 +3203,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`from`](./Enums.md#enum-from) | Enum | The original weapon ID. | 1 |
 | [`to`](./Enums.md#enum-to) | Enum | The transformed weapon ID. | 1 |
@@ -3095,7 +3212,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `TunnelVision`
+### Object: `TunnelVision`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3104,15 +3221,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| `crit_chance` | `Number` |  | 0 |
 
 </details>
 
 ---
 
-### Context: `damage_instance`
+### Object: `damage_instance`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3121,11 +3239,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`AlluringDoodieEater`](./Items_and_Equipment.md#context-alluringdoodieeater)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1731 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1731 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
 | `damage` | Number | The base damage properties of an attack. | 1 |
+| `effects` | `Block` | Non-damaging status applications and logic triggers executed on impact. | 0 |
 
 </details>
 

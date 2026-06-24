@@ -11,16 +11,16 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 <details>
 <summary><b>Expand</b></summary>
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage_instance`](#damage_instance) | Block | Block defining the combat math and status effects applied upon successful hit. | 2346 |
-| `effects` | Block | Non-damaging status applications and logic triggers executed on impact. | 2005 |
+| [`damage_instance`](#damage_instance) | Object | Block defining the combat math and status effects applied upon successful hit. | 2346 |
+| `effects` | Object | Non-damaging status applications and logic triggers executed on impact. | 2005 |
 | [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 1527 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 382 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 369 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 277 |
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 226 |
-| [`self_damage`](./Arrays.md#array-self_damage) | Block | Recoil or self-inflicted damage/effects applied to the caster. | 220 |
+| [`self_damage`](./Arrays.md#array-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 220 |
 | `heal` | Number | Restores health instead of dealing damage. | 128 |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 120 |
 | `false` | Variable |  | 103 |
@@ -31,7 +31,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | [`spell`](./Enums.md#enum-spell) | 1 | `MCHadouken` | 78 |
 | `piercing` | Boolean | Ignores a percentage of target defense/armor. | 64 |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 46 |
-| [`splash_damage`](#splash_damage) | Block | Secondary Area of Effect blast parameters. | 35 |
+| [`splash_damage`](#splash_damage) | Object | Secondary Area of Effect blast parameters. | 35 |
 | [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 27 |
 | [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. | 24 |
 | [`raw_damage`](./Math_Equations.md) | Equation | Unmitigated, unscaled base numbers. | 22 |
@@ -40,7 +40,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `override_trample_damage` | Boolean | Custom damage value for trample moves. | 17 |
 | `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 14 |
 | `ranged` | Boolean | Boolean flagging the damage as explicitly ranged. | 10 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 10 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
 | `tile_has_no_known_traps` | Variable |  | 9 |
 | `can_revive` | Boolean | Healing instance that can bring dead allies back to life. | 8 |
 | `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. | 6 |
@@ -70,9 +70,9 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `tile_exists` | Variable |  | 2 |
 | `toss_farthest` | Variable |  | 2 |
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `avoid_redundant_debuffs` | Variable |  | 1 |
-| [`bonk_damage`](#bonk_damage) | Block | Damage dealt when knocked into a wall or obstacle. | 1 |
+| [`bonk_damage`](#bonk_damage) | Object | Damage dealt when knocked into a wall or obstacle. | 1 |
 | `catch` | 1 | Event Node: Story branch or dialog option representing the \'Catch\' action. | 1 |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. | 1 |
 | [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 1 |
@@ -96,7 +96,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `tile_close_to_enemy_soft` | Variable |  | 1 |
 | `toss_far` | Variable |  | 1 |
 | `toss_towards_bottomleft` | Variable |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -113,11 +113,11 @@ The following blocks all behave as `{Damaging Keys}` containers. Each has its ow
 
 > **Total Count:** 1
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 1 |
 | [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -130,9 +130,9 @@ The following blocks all behave as `{Damaging Keys}` containers. Each has its ow
 
 > **Total Count:** 2346
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 1787 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 1787 |
 | [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 1447 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 359 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 254 |
@@ -170,7 +170,7 @@ The following blocks all behave as `{Damaging Keys}` containers. Each has its ow
 | `force_no_knockback` | Boolean | Prevents the target from being pushed. | 1 |
 | `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -183,9 +183,9 @@ The following blocks all behave as `{Damaging Keys}` containers. Each has its ow
 
 > **Total Count:** 264
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 200 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 200 |
 | [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 47 |
 | `piercing` | Boolean | Ignores a percentage of target defense/armor. | 12 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 |
@@ -195,7 +195,7 @@ The following blocks all behave as `{Damaging Keys}` containers. Each has its ow
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 2 |
 | `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -208,10 +208,10 @@ The following blocks all behave as `{Damaging Keys}` containers. Each has its ow
 
 > **Total Count:** 35
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 32 |
-| [`effects`](#effects) | Block | Non-damaging status applications and logic triggers executed on impact. | 17 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 17 |
 | `knockback` | Integer | Knockback force of the splash blast. | 13 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 12 |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 6 |
@@ -222,7 +222,7 @@ The following blocks all behave as `{Damaging Keys}` containers. Each has its ow
 | `force_no_knockback` | Boolean | Prevents the target from being pushed. | 1 |
 | `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. | 1 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 

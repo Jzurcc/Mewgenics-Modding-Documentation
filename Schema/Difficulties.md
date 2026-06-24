@@ -7,18 +7,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/difficulties.gon`
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 8
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
-| [`easy`](#context-easy) | Block |  | 8 |
-| [`hard`](#context-hard) | Block |  | 8 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |
+| [`easy`](#object-easy) | Object |  | 8 |
+| [`hard`](#object-hard) | Object |  | 8 |
 | `bonus_itemroll_luck` | Integer |  | 8 |
 | `boss_health_multiplier` | Float |  | 8 |
 | `coins_multiplier` | Float |  | 8 |
@@ -31,16 +31,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `easy`
+### Object: `easy`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 8
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `champ_budget` | Float |  | 8 |
 | `elite_budget` | Integer |  | 8 |
@@ -53,16 +53,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `hard`
+### Object: `hard`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 8
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `champ_budget` | Float |  | 8 |
 | `champ_chance_mini` | Float |  | 8 |

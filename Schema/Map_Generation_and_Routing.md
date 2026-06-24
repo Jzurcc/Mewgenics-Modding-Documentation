@@ -6,17 +6,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/maps/`
 
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 > **Total Count:** 39
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
-| [`boss`](./Map_Generation_and_Routing.md#context-boss) | Block |  | 39 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 890 |
+| [`boss`](./Map_Generation_and_Routing.md#context-boss) | Object |  | 39 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 27 |
 | [`easy`](./Arrays.md#array-easy) | Array |  | 20 |
 | [`folder`](./Enums.md#enum-folder) | Enum |  | 20 |
@@ -29,92 +29,92 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`medium`](./Arrays.md#array-medium) | Array |  | 19 |
 | [`small`](./Arrays.md#array-small) | Array |  | 19 |
 | [`special`](./Arrays.md#array-special) | Array |  | 19 |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 15 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 15 |
 | [`level`](./Enums.md#enum-level) | Enum |  | 12 |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 12 |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 9 |
-| [`time_machine`](./Map_Generation_and_Routing.md#context-time_machine) | Block |  | 4 |
-| [`exit1`](./Map_Generation_and_Routing.md#context-exit1) | Block |  | 3 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 9 |
+| [`time_machine`](./Map_Generation_and_Routing.md#context-time_machine) | Object |  | 4 |
+| [`exit1`](./Map_Generation_and_Routing.md#context-exit1) | Object |  | 3 |
 | [`jestercat`](./Enums.md#enum-jestercat) | Enum |  | 3 |
-| [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#context-bothobelisksunlocked) | Block | Applies or references the 'BothObelisksUnlocked' effect/state. | 2 |
-| [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#context-dimensionxunlocked) | Block | Applies or references the 'DimensionXUnlocked' effect/state. | 2 |
-| [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#context-endoftimeunlocked) | Block | Applies or references the 'EndOfTimeUnlocked' effect/state. | 2 |
-| [`hard_initial`](./Map_Generation_and_Routing.md#context-hard_initial) | Block |  | 2 |
-| [`HardPathUnlocked`](./Map_Generation_and_Routing.md#context-hardpathunlocked) | Block | Applies or references the 'HardPathUnlocked' effect/state. | 2 |
-| [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked) | Block | Applies or references the 'MeatWorldUnlocked' effect/state. | 2 |
-| [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached) | Block | Applies or references the 'VolcanoAntennaAttached' effect/state. | 2 |
+| [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#context-bothobelisksunlocked) | Object | Applies or references the 'BothObelisksUnlocked' effect/state. | 2 |
+| [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#context-dimensionxunlocked) | Object | Applies or references the 'DimensionXUnlocked' effect/state. | 2 |
+| [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#context-endoftimeunlocked) | Object | Applies or references the 'EndOfTimeUnlocked' effect/state. | 2 |
+| [`hard_initial`](./Map_Generation_and_Routing.md#context-hard_initial) | Object |  | 2 |
+| [`HardPathUnlocked`](./Map_Generation_and_Routing.md#context-hardpathunlocked) | Object | Applies or references the 'HardPathUnlocked' effect/state. | 2 |
+| [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked) | Object | Applies or references the 'MeatWorldUnlocked' effect/state. | 2 |
+| [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached) | Object | Applies or references the 'VolcanoAntennaAttached' effect/state. | 2 |
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum |  | 1 |
 | `advance` | Number |  | 1 |
-| `alley` | Block |  | 1 |
-| `boneyard` | Block |  | 1 |
-| [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#context-boneyardunlocked) | Block | Applies or references the 'BoneyardUnlocked' effect/state. | 1 |
+| `alley` | Object |  | 1 |
+| `boneyard` | Object |  | 1 |
+| [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#context-boneyardunlocked) | Object | Applies or references the 'BoneyardUnlocked' effect/state. | 1 |
 | [`bumblefoot`](./Enums.md#enum-bumblefoot) | Enum |  | 1 |
-| `bunker` | Block |  | 1 |
-| [`BunkerUnlocked`](./Map_Generation_and_Routing.md#context-bunkerunlocked) | Block | Applies or references the 'BunkerUnlocked' effect/state. | 1 |
+| `bunker` | Object |  | 1 |
+| [`BunkerUnlocked`](./Map_Generation_and_Routing.md#context-bunkerunlocked) | Object | Applies or references the 'BunkerUnlocked' effect/state. | 1 |
 | [`butchercat`](./Enums.md#enum-butchercat) | Enum |  | 1 |
 | [`cancreeper`](./Enums.md#enum-cancreeper) | Enum |  | 1 |
 | [`cavecatfamily`](./Enums.md#enum-cavecatfamily) | Enum |  | 1 |
-| `caves` | Block |  | 1 |
-| [`CavesUnlocked`](./Map_Generation_and_Routing.md#context-cavesunlocked) | Block | Applies or references the 'CavesUnlocked' effect/state. | 1 |
+| `caves` | Object |  | 1 |
+| [`CavesUnlocked`](./Map_Generation_and_Routing.md#context-cavesunlocked) | Object | Applies or references the 'CavesUnlocked' effect/state. | 1 |
 | [`cerberubs`](./Enums.md#enum-cerberubs) | Enum |  | 1 |
-| [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#context-chaosantennaattached) | Block | Applies or references the 'ChaosAntennaAttached' effect/state. | 1 |
+| [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#context-chaosantennaattached) | Object | Applies or references the 'ChaosAntennaAttached' effect/state. | 1 |
 | [`choose_one`](./Arrays.md#array-choose_one) | Array |  | 1 |
 | [`clericcat`](./Enums.md#enum-clericcat) | Enum |  | 1 |
-| `core` | Block |  | 1 |
-| [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#context-coreobeliskunlocked) | Block | Applies or references the 'CoreObeliskUnlocked' effect/state. | 1 |
-| [`CoreUnlocked`](./Map_Generation_and_Routing.md#context-coreunlocked) | Block | Applies or references the 'CoreUnlocked' effect/state. | 1 |
-| `crater` | Block |  | 1 |
-| [`CraterUnlocked`](./Map_Generation_and_Routing.md#context-craterunlocked) | Block | Applies or references the 'CraterUnlocked' effect/state. | 1 |
-| `desert` | Block |  | 1 |
-| [`dimensionx`](./Map_Generation_and_Routing.md#context-dimensionx) | Block |  | 1 |
+| `core` | Object |  | 1 |
+| [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#context-coreobeliskunlocked) | Object | Applies or references the 'CoreObeliskUnlocked' effect/state. | 1 |
+| [`CoreUnlocked`](./Map_Generation_and_Routing.md#context-coreunlocked) | Object | Applies or references the 'CoreUnlocked' effect/state. | 1 |
+| `crater` | Object |  | 1 |
+| [`CraterUnlocked`](./Map_Generation_and_Routing.md#context-craterunlocked) | Object | Applies or references the 'CraterUnlocked' effect/state. | 1 |
+| `desert` | Object |  | 1 |
+| [`dimensionx`](./Map_Generation_and_Routing.md#context-dimensionx) | Object |  | 1 |
 | [`dinocouple`](./Enums.md#enum-dinocouple) | Enum |  | 1 |
 | [`drmangler`](./Enums.md#enum-drmangler) | Enum |  | 1 |
 | [`druidcat`](./Enums.md#enum-druidcat) | Enum |  | 1 |
-| [`endoftime`](./Map_Generation_and_Routing.md#context-endoftime) | Block |  | 1 |
-| [`event`](./Map_Generation_and_Routing.md#context-event) | Block |  | 1 |
-| [`exit_desert`](./Map_Generation_and_Routing.md#context-exit_desert) | Block |  | 1 |
-| [`exit_lab`](./Map_Generation_and_Routing.md#context-exit_lab) | Block |  | 1 |
+| [`endoftime`](./Map_Generation_and_Routing.md#context-endoftime) | Object |  | 1 |
+| [`event`](./Map_Generation_and_Routing.md#context-event) | Object |  | 1 |
+| [`exit_desert`](./Map_Generation_and_Routing.md#context-exit_desert) | Object |  | 1 |
+| [`exit_lab`](./Map_Generation_and_Routing.md#context-exit_lab) | Object |  | 1 |
 | [`fightercat`](./Enums.md#enum-fightercat) | Enum |  | 1 |
 | [`flushmaster`](./Enums.md#enum-flushmaster) | Enum |  | 1 |
-| [`future`](./Map_Generation_and_Routing.md#context-future) | Block |  | 1 |
-| [`FutureUnlocked`](./Map_Generation_and_Routing.md#context-futureunlocked) | Block | Applies or references the 'FutureUnlocked' effect/state. | 1 |
+| [`future`](./Map_Generation_and_Routing.md#context-future) | Object |  | 1 |
+| [`FutureUnlocked`](./Map_Generation_and_Routing.md#context-futureunlocked) | Object | Applies or references the 'FutureUnlocked' effect/state. | 1 |
 | [`gambit`](./Enums.md#enum-gambit) | Enum |  | 1 |
-| [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#context-genflag_boss_spewer) | Block | Applies or references the 'GenFlag_Boss_Spewer' effect/state. | 1 |
-| [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy) | Block | Applies or references the 'GenFlag_Boss_Stacy' effect/state. | 1 |
+| [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#context-genflag_boss_spewer) | Object | Applies or references the 'GenFlag_Boss_Spewer' effect/state. | 1 |
+| [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy) | Object | Applies or references the 'GenFlag_Boss_Stacy' effect/state. | 1 |
 | `head_start` | Number |  | 1 |
-| [`home`](./Map_Generation_and_Routing.md#context-home) | Block |  | 1 |
+| [`home`](./Map_Generation_and_Routing.md#context-home) | Object |  | 1 |
 | [`huntercat`](./Enums.md#enum-huntercat) | Enum |  | 1 |
-| [`iceage`](./Map_Generation_and_Routing.md#context-iceage) | Block |  | 1 |
-| [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#context-iceageunlocked) | Block | Applies or references the 'IceAgeUnlocked' effect/state. | 1 |
+| [`iceage`](./Map_Generation_and_Routing.md#context-iceage) | Object |  | 1 |
+| [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#context-iceageunlocked) | Object | Applies or references the 'IceAgeUnlocked' effect/state. | 1 |
 | [`iceelemental`](./Enums.md#enum-iceelemental) | Enum |  | 1 |
 | [`infestedduo`](./Enums.md#enum-infestedduo) | Enum |  | 1 |
-| `junkyard` | Block |  | 1 |
-| [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#context-junkyardunlocked) | Block | Applies or references the 'JunkyardUnlocked' effect/state. | 1 |
-| [`jurassic`](./Map_Generation_and_Routing.md#context-jurassic) | Block |  | 1 |
-| [`JurassicUnlocked`](./Map_Generation_and_Routing.md#context-jurassicunlocked) | Block | Applies or references the 'JurassicUnlocked' effect/state. | 1 |
-| `lab` | Block |  | 1 |
+| `junkyard` | Object |  | 1 |
+| [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#context-junkyardunlocked) | Object | Applies or references the 'JunkyardUnlocked' effect/state. | 1 |
+| [`jurassic`](./Map_Generation_and_Routing.md#context-jurassic) | Object |  | 1 |
+| [`JurassicUnlocked`](./Map_Generation_and_Routing.md#context-jurassicunlocked) | Object | Applies or references the 'JurassicUnlocked' effect/state. | 1 |
+| `lab` | Object |  | 1 |
 | [`lenny`](./Enums.md#enum-lenny) | Enum |  | 1 |
 | [`lightningelemental`](./Enums.md#enum-lightningelemental) | Enum |  | 1 |
 | `locked` | Boolean |  | 1 |
 | [`magecat`](./Enums.md#enum-magecat) | Enum |  | 1 |
 | [`mamamaggot`](./Enums.md#enum-mamamaggot) | Enum |  | 1 |
-| `meatworld` | Block |  | 1 |
-| [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull) | Block | Applies or references the 'MeatWorldUnlockedFull' effect/state. | 1 |
-| [`miniboss_event`](./Map_Generation_and_Routing.md#context-miniboss_event) | Block |  | 1 |
+| `meatworld` | Object |  | 1 |
+| [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull) | Object | Applies or references the 'MeatWorldUnlockedFull' effect/state. | 1 |
+| [`miniboss_event`](./Map_Generation_and_Routing.md#context-miniboss_event) | Object |  | 1 |
 | [`monkcat`](./Enums.md#enum-monkcat) | Enum |  | 1 |
-| `moon` | Block |  | 1 |
-| [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#context-moonobeliskunlocked) | Block | Applies or references the 'MoonObeliskUnlocked' effect/state. | 1 |
-| [`MoonUnlocked`](./Map_Generation_and_Routing.md#context-moonunlocked) | Block | Applies or references the 'MoonUnlocked' effect/state. | 1 |
+| `moon` | Object |  | 1 |
+| [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#context-moonobeliskunlocked) | Object | Applies or references the 'MoonObeliskUnlocked' effect/state. | 1 |
+| [`MoonUnlocked`](./Map_Generation_and_Routing.md#context-moonunlocked) | Object | Applies or references the 'MoonUnlocked' effect/state. | 1 |
 | [`musiclayer`](./Enums.md#enum-musiclayer) | Enum |  | 1 |
-| [`mw_altar`](./Map_Generation_and_Routing.md#context-mw_altar) | Block |  | 1 |
-| [`mw_battle1`](./Map_Generation_and_Routing.md#context-mw_battle1) | Block |  | 1 |
-| [`mw_boss`](./Map_Generation_and_Routing.md#context-mw_boss) | Block |  | 1 |
-| [`mw_earlyhome`](./Map_Generation_and_Routing.md#context-mw_earlyhome) | Block |  | 1 |
-| [`mw_event1`](./Map_Generation_and_Routing.md#context-mw_event1) | Block |  | 1 |
-| [`mw_hard1`](./Map_Generation_and_Routing.md#context-mw_hard1) | Block |  | 1 |
-| [`mw_home`](./Map_Generation_and_Routing.md#context-mw_home) | Block |  | 1 |
-| [`mw_quest_event`](./Map_Generation_and_Routing.md#context-mw_quest_event) | Block |  | 1 |
-| [`mw_treasure`](./Map_Generation_and_Routing.md#context-mw_treasure) | Block |  | 1 |
+| [`mw_altar`](./Map_Generation_and_Routing.md#context-mw_altar) | Object |  | 1 |
+| [`mw_battle1`](./Map_Generation_and_Routing.md#context-mw_battle1) | Object |  | 1 |
+| [`mw_boss`](./Map_Generation_and_Routing.md#context-mw_boss) | Object |  | 1 |
+| [`mw_earlyhome`](./Map_Generation_and_Routing.md#context-mw_earlyhome) | Object |  | 1 |
+| [`mw_event1`](./Map_Generation_and_Routing.md#context-mw_event1) | Object |  | 1 |
+| [`mw_hard1`](./Map_Generation_and_Routing.md#context-mw_hard1) | Object |  | 1 |
+| [`mw_home`](./Map_Generation_and_Routing.md#context-mw_home) | Object |  | 1 |
+| [`mw_quest_event`](./Map_Generation_and_Routing.md#context-mw_quest_event) | Object |  | 1 |
+| [`mw_treasure`](./Map_Generation_and_Routing.md#context-mw_treasure) | Object |  | 1 |
 | [`necrocat`](./Enums.md#enum-necrocat) | Enum |  | 1 |
 | [`nemesis`](./Arrays.md#array-nemesis) | Array |  | 1 |
 | [`psychiccat`](./Enums.md#enum-psychiccat) | Enum |  | 1 |
@@ -123,34 +123,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ratking`](./Enums.md#enum-ratking) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
 | [`rockybobo`](./Enums.md#enum-rockybobo) | Enum |  | 1 |
-| `sewers` | Block |  | 1 |
-| [`SewersUnlocked`](./Map_Generation_and_Routing.md#context-sewersunlocked) | Block | Applies or references the 'SewersUnlocked' effect/state. | 1 |
-| [`shop_cheapwater`](./Map_Generation_and_Routing.md#context-shop_cheapwater) | Block |  | 1 |
-| [`shop_water`](./Map_Generation_and_Routing.md#context-shop_water) | Block |  | 1 |
+| `sewers` | Object |  | 1 |
+| [`SewersUnlocked`](./Map_Generation_and_Routing.md#context-sewersunlocked) | Object | Applies or references the 'SewersUnlocked' effect/state. | 1 |
+| [`shop_cheapwater`](./Map_Generation_and_Routing.md#context-shop_cheapwater) | Object |  | 1 |
+| [`shop_water`](./Map_Generation_and_Routing.md#context-shop_water) | Object |  | 1 |
 | [`slime`](./Enums.md#enum-slime) | Enum |  | 1 |
 | [`spawn_node`](./Enums.md#enum-spawn_node) | Enum |  | 1 |
 | [`spewer`](./Enums.md#enum-spewer) | Enum |  | 1 |
 | [`stacy`](./Enums.md#enum-stacy) | Enum |  | 1 |
-| [`start`](./Map_Generation_and_Routing.md#context-start) | Block |  | 1 |
+| [`start`](./Map_Generation_and_Routing.md#context-start) | Object |  | 1 |
 | [`tankcat`](./Enums.md#enum-tankcat) | Enum |  | 1 |
 | [`thebloat`](./Enums.md#enum-thebloat) | Enum |  | 1 |
-| [`theend`](./Map_Generation_and_Routing.md#context-theend) | Block |  | 1 |
-| [`TheEndUnlocked`](./Map_Generation_and_Routing.md#context-theendunlocked) | Block | Applies or references the 'TheEndUnlocked' effect/state. | 1 |
+| [`theend`](./Map_Generation_and_Routing.md#context-theend) | Object |  | 1 |
+| [`TheEndUnlocked`](./Map_Generation_and_Routing.md#context-theendunlocked) | Object | Applies or references the 'TheEndUnlocked' effect/state. | 1 |
 | [`thiefcat`](./Enums.md#enum-thiefcat) | Enum |  | 1 |
-| [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#context-throbbingarterydone) | Block | Applies or references the 'ThrobbingArteryDone' effect/state. | 1 |
+| [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#context-throbbingarterydone) | Object | Applies or references the 'ThrobbingArteryDone' effect/state. | 1 |
 | [`tinkerercat`](./Enums.md#enum-tinkerercat) | Enum |  | 1 |
 | [`trampy`](./Enums.md#enum-trampy) | Enum |  | 1 |
-| [`treasure`](./Map_Generation_and_Routing.md#context-treasure) | Block |  | 1 |
-| [`WallOfFleshDone`](./Map_Generation_and_Routing.md#context-walloffleshdone) | Block | Applies or references the 'WallOfFleshDone' effect/state. | 1 |
-| [`weather_event`](./Map_Generation_and_Routing.md#context-weather_event) | Block |  | 1 |
+| [`treasure`](./Map_Generation_and_Routing.md#context-treasure) | Object |  | 1 |
+| [`WallOfFleshDone`](./Map_Generation_and_Routing.md#context-walloffleshdone) | Object | Applies or references the 'WallOfFleshDone' effect/state. | 1 |
+| [`weather_event`](./Map_Generation_and_Routing.md#context-weather_event) | Object |  | 1 |
 | [`zodiac`](./Enums.md#enum-zodiac) | Enum |  | 1 |
+| `battle` | `Block` | | Field Key | Inferred Type | Example Values | Definition | | :--- | :--- | :--- | :--- | | `type` | Enum/String | `battle` | Classification type. | | 0 |
+| `rare` | `Array` |  | 0 |
 
 </details>
 
 ---
 
-### Context: `boss`
-
+### Object: `boss`
+### Object: `boss`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -158,7 +160,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#context-genflag_boss_spewer), [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 19 |
 | [`boss_cutscene`](./Enums.md#enum-boss_cutscene) | Enum |  | 16 |
@@ -172,8 +174,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit0`
-
+### Object: `exit0`
+### Object: `exit0`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -181,7 +183,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#context-boneyardunlocked), [`BunkerUnlocked`](./Map_Generation_and_Routing.md#context-bunkerunlocked), [`CavesUnlocked`](./Map_Generation_and_Routing.md#context-cavesunlocked), [`CoreUnlocked`](./Map_Generation_and_Routing.md#context-coreunlocked), [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#context-endoftimeunlocked), [`JurassicUnlocked`](./Map_Generation_and_Routing.md#context-jurassicunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonUnlocked`](./Map_Generation_and_Routing.md#context-moonunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`SewersUnlocked`](./Map_Generation_and_Routing.md#context-sewersunlocked), [`TheEndUnlocked`](./Map_Generation_and_Routing.md#context-theendunlocked)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `locked` | Boolean |  | 17 |
 | [`next_map`](./Enums.md#enum-next_map) | Enum |  | 15 |
@@ -193,8 +195,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `quest_event`
-
+### Object: `quest_event`
+### Object: `quest_event`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -202,7 +204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#context-bothobelisksunlocked), [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#context-chaosantennaattached), [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#context-coreobeliskunlocked), [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#context-dimensionxunlocked), [`FutureUnlocked`](./Map_Generation_and_Routing.md#context-futureunlocked), [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#context-iceageunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#context-moonobeliskunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#context-throbbingarterydone), [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached), [`WallOfFleshDone`](./Map_Generation_and_Routing.md#context-walloffleshdone)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 24 |
 | [`level`](./Enums.md#enum-level) | Enum |  | 19 |
@@ -212,8 +214,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit1`
-
+### Object: `exit1`
+### Object: `exit1`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -221,7 +223,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`CraterUnlocked`](./Map_Generation_and_Routing.md#context-craterunlocked), [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#context-junkyardunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `locked` | Boolean |  | 5 |
 | [`next_map`](./Enums.md#enum-next_map) | Enum |  | 3 |
@@ -232,8 +234,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `hard_initial`
-
+### Object: `hard_initial`
+### Object: `hard_initial`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -241,7 +243,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`HardPathUnlocked`](./Map_Generation_and_Routing.md#context-hardpathunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `locked` | Boolean |  | 4 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 2 |
@@ -250,8 +252,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `time_machine`
-
+### Object: `time_machine`
+### Object: `time_machine`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -259,7 +261,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum |  | 4 |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 4 |
@@ -269,8 +271,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BothObelisksUnlocked`
-
+### Object: `BothObelisksUnlocked`
+### Object: `BothObelisksUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -278,16 +280,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 2 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `DimensionXUnlocked`
-
+### Object: `DimensionXUnlocked`
+### Object: `DimensionXUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -295,16 +297,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 2 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `EndOfTimeUnlocked`
-
+### Object: `EndOfTimeUnlocked`
+### Object: `EndOfTimeUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -312,16 +314,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 2 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `HardPathUnlocked`
-
+### Object: `HardPathUnlocked`
+### Object: `HardPathUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -329,16 +331,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`hard_initial`](./Map_Generation_and_Routing.md#context-hard_initial) | Block |  | 2 |
+| [`hard_initial`](./Map_Generation_and_Routing.md#context-hard_initial) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `MeatWorldUnlocked`
-
+### Object: `MeatWorldUnlocked`
+### Object: `MeatWorldUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -346,17 +348,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 2 |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 2 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 2 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `VolcanoAntennaAttached`
-
+### Object: `VolcanoAntennaAttached`
+### Object: `VolcanoAntennaAttached`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -364,16 +366,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 2 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 2 |
 
 </details>
 
 ---
 
-### Context: `miniboss_event`
-
+### Object: `miniboss_event`
+### Object: `miniboss_event`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -381,7 +383,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 2 |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
@@ -390,8 +392,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_battle1`
-
+### Object: `mw_battle1`
+### Object: `mw_battle1`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -399,7 +401,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
@@ -408,8 +410,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_boss`
-
+### Object: `mw_boss`
+### Object: `mw_boss`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -417,7 +419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean |  | 2 |
 | [`boss_cutscene`](./Enums.md#enum-boss_cutscene) | Enum |  | 1 |
@@ -428,8 +430,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_earlyhome`
-
+### Object: `mw_earlyhome`
+### Object: `mw_earlyhome`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -437,7 +439,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
 | `hidden` | Boolean |  | 1 |
@@ -446,8 +448,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_event1`
-
+### Object: `mw_event1`
+### Object: `mw_event1`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -455,7 +457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
@@ -464,8 +466,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_hard1`
-
+### Object: `mw_hard1`
+### Object: `mw_hard1`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -473,7 +475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean |  | 2 |
 | [`musiclayer`](./Enums.md#enum-musiclayer) | Enum |  | 1 |
@@ -483,8 +485,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_home`
-
+### Object: `mw_home`
+### Object: `mw_home`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -492,7 +494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
@@ -501,8 +503,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_quest_event`
-
+### Object: `mw_quest_event`
+### Object: `mw_quest_event`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -510,7 +512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean |  | 2 |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
@@ -521,8 +523,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_treasure`
-
+### Object: `mw_treasure`
+### Object: `mw_treasure`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -530,7 +532,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
@@ -539,8 +541,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `BoneyardUnlocked`
-
+### Object: `BoneyardUnlocked`
+### Object: `BoneyardUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -548,16 +550,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `BunkerUnlocked`
-
+### Object: `BunkerUnlocked`
+### Object: `BunkerUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -565,16 +567,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `CavesUnlocked`
-
+### Object: `CavesUnlocked`
+### Object: `CavesUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -582,16 +584,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `ChaosAntennaAttached`
-
+### Object: `ChaosAntennaAttached`
+### Object: `ChaosAntennaAttached`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -599,16 +601,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 1 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `CoreObeliskUnlocked`
-
+### Object: `CoreObeliskUnlocked`
+### Object: `CoreObeliskUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -616,16 +618,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 1 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `CoreUnlocked`
-
+### Object: `CoreUnlocked`
+### Object: `CoreUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -633,16 +635,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `CraterUnlocked`
-
+### Object: `CraterUnlocked`
+### Object: `CraterUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -650,16 +652,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit1`](./Map_Generation_and_Routing.md#context-exit1) | Block |  | 1 |
+| [`exit1`](./Map_Generation_and_Routing.md#context-exit1) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `FutureUnlocked`
-
+### Object: `FutureUnlocked`
+### Object: `FutureUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -667,16 +669,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 1 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `GenFlag_Boss_Spewer`
-
+### Object: `GenFlag_Boss_Spewer`
+### Object: `GenFlag_Boss_Spewer`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -684,16 +686,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`boss`](./Map_Generation_and_Routing.md#context-boss) | Block |  | 1 |
+| [`boss`](./Map_Generation_and_Routing.md#context-boss) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `GenFlag_Boss_Stacy`
-
+### Object: `GenFlag_Boss_Stacy`
+### Object: `GenFlag_Boss_Stacy`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -701,17 +703,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`boss`](./Map_Generation_and_Routing.md#context-boss) | Block |  | 1 |
-| [`miniboss_event`](./Map_Generation_and_Routing.md#context-miniboss_event) | Block |  | 1 |
+| [`boss`](./Map_Generation_and_Routing.md#context-boss) | Object |  | 1 |
+| [`miniboss_event`](./Map_Generation_and_Routing.md#context-miniboss_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `IceAgeUnlocked`
-
+### Object: `IceAgeUnlocked`
+### Object: `IceAgeUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -719,16 +721,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 1 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `JunkyardUnlocked`
-
+### Object: `JunkyardUnlocked`
+### Object: `JunkyardUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -736,16 +738,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit1`](./Map_Generation_and_Routing.md#context-exit1) | Block |  | 1 |
+| [`exit1`](./Map_Generation_and_Routing.md#context-exit1) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `JurassicUnlocked`
-
+### Object: `JurassicUnlocked`
+### Object: `JurassicUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -753,16 +755,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `MeatWorldUnlockedFull`
-
+### Object: `MeatWorldUnlockedFull`
+### Object: `MeatWorldUnlockedFull`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -770,23 +772,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`mw_battle1`](./Map_Generation_and_Routing.md#context-mw_battle1) | Block |  | 1 |
-| [`mw_boss`](./Map_Generation_and_Routing.md#context-mw_boss) | Block |  | 1 |
-| [`mw_earlyhome`](./Map_Generation_and_Routing.md#context-mw_earlyhome) | Block |  | 1 |
-| [`mw_event1`](./Map_Generation_and_Routing.md#context-mw_event1) | Block |  | 1 |
-| [`mw_hard1`](./Map_Generation_and_Routing.md#context-mw_hard1) | Block |  | 1 |
-| [`mw_home`](./Map_Generation_and_Routing.md#context-mw_home) | Block |  | 1 |
-| [`mw_quest_event`](./Map_Generation_and_Routing.md#context-mw_quest_event) | Block |  | 1 |
-| [`mw_treasure`](./Map_Generation_and_Routing.md#context-mw_treasure) | Block |  | 1 |
+| [`mw_battle1`](./Map_Generation_and_Routing.md#context-mw_battle1) | Object |  | 1 |
+| [`mw_boss`](./Map_Generation_and_Routing.md#context-mw_boss) | Object |  | 1 |
+| [`mw_earlyhome`](./Map_Generation_and_Routing.md#context-mw_earlyhome) | Object |  | 1 |
+| [`mw_event1`](./Map_Generation_and_Routing.md#context-mw_event1) | Object |  | 1 |
+| [`mw_hard1`](./Map_Generation_and_Routing.md#context-mw_hard1) | Object |  | 1 |
+| [`mw_home`](./Map_Generation_and_Routing.md#context-mw_home) | Object |  | 1 |
+| [`mw_quest_event`](./Map_Generation_and_Routing.md#context-mw_quest_event) | Object |  | 1 |
+| [`mw_treasure`](./Map_Generation_and_Routing.md#context-mw_treasure) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `MoonObeliskUnlocked`
-
+### Object: `MoonObeliskUnlocked`
+### Object: `MoonObeliskUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -794,16 +796,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 1 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `MoonUnlocked`
-
+### Object: `MoonUnlocked`
+### Object: `MoonUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -811,16 +813,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `SewersUnlocked`
-
+### Object: `SewersUnlocked`
+### Object: `SewersUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -828,16 +830,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `TheEndUnlocked`
-
+### Object: `TheEndUnlocked`
+### Object: `TheEndUnlocked`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -845,16 +847,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Block |  | 1 |
+| [`exit0`](./Map_Generation_and_Routing.md#context-exit0) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `ThrobbingArteryDone`
-
+### Object: `ThrobbingArteryDone`
+### Object: `ThrobbingArteryDone`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -862,16 +864,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 1 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `WallOfFleshDone`
-
+### Object: `WallOfFleshDone`
+### Object: `WallOfFleshDone`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -879,16 +881,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Block |  | 1 |
+| [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event) | Object |  | 1 |
 
 </details>
 
 ---
 
-### Context: `battle`
-
+### Object: `battle`
+### Object: `battle`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -896,7 +898,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
 
@@ -904,8 +906,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `dimensionx`
-
+### Object: `dimensionx`
+### Object: `dimensionx`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -913,7 +915,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `spin_cats` | Boolean |  | 1 |
 
@@ -921,8 +923,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `endoftime`
-
+### Object: `endoftime`
+### Object: `endoftime`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -930,7 +932,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `spin_cats` | Boolean |  | 1 |
 
@@ -938,8 +940,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `event`
-
+### Object: `event`
+### Object: `event`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -947,7 +949,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
@@ -956,8 +958,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit_desert`
-
+### Object: `exit_desert`
+### Object: `exit_desert`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -965,7 +967,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`next_map`](./Enums.md#enum-next_map) | Enum |  | 1 |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 1 |
@@ -977,8 +979,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `exit_lab`
-
+### Object: `exit_lab`
+### Object: `exit_lab`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -986,7 +988,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`next_map`](./Enums.md#enum-next_map) | Enum |  | 1 |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 1 |
@@ -998,8 +1000,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `future`
-
+### Object: `future`
+### Object: `future`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1007,7 +1009,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `spin_cats` | Boolean |  | 1 |
 
@@ -1015,8 +1017,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `home`
-
+### Object: `home`
+### Object: `home`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1024,7 +1026,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
 
@@ -1032,8 +1034,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `iceage`
-
+### Object: `iceage`
+### Object: `iceage`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1041,7 +1043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `spin_cats` | Boolean |  | 1 |
 
@@ -1049,8 +1051,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jurassic`
-
+### Object: `jurassic`
+### Object: `jurassic`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1058,7 +1060,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `spin_cats` | Boolean |  | 1 |
 
@@ -1066,8 +1068,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `mw_altar`
-
+### Object: `mw_altar`
+### Object: `mw_altar`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1075,7 +1077,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 1 |
@@ -1085,8 +1087,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `shop_cheapwater`
-
+### Object: `shop_cheapwater`
+### Object: `shop_cheapwater`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1094,7 +1096,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 1 |
@@ -1104,8 +1106,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `shop_water`
-
+### Object: `shop_water`
+### Object: `shop_water`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1113,7 +1115,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
 | [`override_art`](./Enums.md#enum-override_art) | Enum |  | 1 |
@@ -1123,8 +1125,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `start`
-
+### Object: `start`
+### Object: `start`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1132,7 +1134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
 
@@ -1140,8 +1142,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `theend`
-
+### Object: `theend`
+### Object: `theend`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1149,7 +1151,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `spin_cats` | Boolean |  | 1 |
 
@@ -1157,8 +1159,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `treasure`
-
+### Object: `treasure`
+### Object: `treasure`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1166,7 +1168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |
@@ -1175,8 +1177,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `weather_event`
-
+### Object: `weather_event`
+### Object: `weather_event`
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1184,7 +1186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum |  | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 |

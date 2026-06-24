@@ -11,25 +11,25 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 <details>
 <summary><b>Expand</b></summary>
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 1730 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 897 |
-| [`common`](./Enums.md#enum-common) | Block | Event Node: Story branch or dialog option representing the 'Common' action. | 634 |
-| [`reward`](#reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 633 |
-| [`rare`](./Enums.md#enum-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 629 |
-| [`good`](#good) | Block | `false`, `true` | 550 |
-| [`main`](#main) | Block | Event Node: The central hub or recurring menu of a story event. | 215 |
+| [`common`](./Enums.md#enum-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 634 |
+| [`reward`](#reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 633 |
+| [`rare`](./Enums.md#enum-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 629 |
+| [`good`](#good) | Object | `false`, `true` | 550 |
+| [`main`](#main) | Object | Event Node: The central hub or recurring menu of a story event. | 215 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 214 |
-| [`options`](./Arrays.md#array-options) | Block | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
+| [`options`](./Arrays.md#array-options) | Object | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Enum | Examples: `resultVeryGood, resultBad` | 160 |
-| [`self_status_next_fight`](#self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 138 |
-| [`permanent_stats`](#permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 126 |
+| [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 138 |
+| [`permanent_stats`](#permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 126 |
 | [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 92 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 85 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 83 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 79 |
-| [`conditional_reward`](#conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 78 |
+| [`conditional_reward`](#conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 78 |
 | `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 77 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 67 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 63 |
@@ -42,7 +42,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array | Examples: `[ 4 15 ], 5` | 47 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 41 |
 | [`self_damage`](./Arrays.md#array-self_damage) | Integer | Recoil or self-inflicted damage/effects applied to the caster. | 40 |
-| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 40 |
+| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 40 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 39 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 36 |
 | `resultHole` | Variable |  | 32 |
@@ -50,12 +50,12 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`gain_food`](./Arrays.md#array-gain_food) | Array | Examples: `[ 5 10 ]` | 28 |
 | [`party_damage`](./Arrays.md#array-party_damage) | Array | Examples: `[ 5 10 ]` | 26 |
 | `party_heal` | Integer | Examples: `10` | 26 |
-| [`mutation`](#mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 23 |
-| [`party_status_next_fight`](#party_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 23 |
-| [`setup`](#setup) | Block | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
+| [`mutation`](#mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 23 |
+| [`party_status_next_fight`](#party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 23 |
+| [`setup`](#setup) | Object | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
 | `cutscene` | String | Event Node: Triggers a narrative cutscene. | 22 |
 | `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 21 |
-| [`random_mutation_from_set`](#random_mutation_from_set) | Block | Event Reward: Applies a random mutation to a character from a specific pool. | 21 |
+| [`random_mutation_from_set`](#random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 21 |
 | `random` | 8 | Examples: `4` | 19 |
 | `AdventureToken_HasTakenNeedle` | Variable |  | 18 |
 | [`complete_chapter`](./Enums.md#enum-complete_chapter) | 2 | `alley`, `boneyard`, `bunker`, `caves`, `core` | 18 |
@@ -69,7 +69,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `AdventureToken_RedNeedle` | Variable |  | 14 |
 | `cat` | Variable |  | 14 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 14 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 14 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`battle`](./Math_Equations.md) | Equation | Examples: `{ ... }` | 13 |
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 13 |
 | [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Examples: `end_of_time_unlock, meat_world_unlock` | 13 |
@@ -81,14 +81,14 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `HasPlayedMysteriousStranger` | Variable |  | 10 |
 | `auto` | Variable |  | 10 |
 | `consumables` | 1 | Examples: `60, 10` | 10 |
-| [`global_effect_next_fight`](#global_effect_next_fight) | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 10 |
+| [`global_effect_next_fight`](#global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 10 |
 | [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Examples: `CobraStyle, PoisonTips, DeathProof` | 10 |
 | [`set_subject`](./Enums.md#enum-set_subject) | Enum | Examples: `subject_frame, wall_of_flesh_noartery, throbbing_artery_noflesh` | 10 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 8 |
 | `parasites` | Variable |  | 8 |
 | `party_random_mutation` | Integer | Examples: `1` | 8 |
 | `heal_disorder` | Integer | Examples: `2` | 7 |
-| [`leave_party_temporarily`](#leave_party_temporarily) | Block | Event Action: Removes a character from the active team until the next hub area. | 7 |
+| [`leave_party_temporarily`](#leave_party_temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 |
 | [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 7 |
 | `spd` | 43 | `aux` | 7 |
 | `QEVENT_OBELISK_IGNORE` | Variable |  | 6 |
@@ -113,7 +113,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `MysteriousStranger_HasLostFinger` | Variable |  | 4 |
 | `QEVENT_THROBBINGARTERY_REW3` | Variable |  | 4 |
 | `WorldEventLegacyCounter_ToiletFlushes` | Variable |  | 4 |
-| [`bad`](#bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
+| [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | `con` | 45 | `aux` | 4 |
 | `diseases` | Variable |  | 4 |
 | `fleshhead_items` | Variable |  | 4 |
@@ -122,9 +122,9 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `inventory` | Variable |  | 4 |
 | [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | Examples: `BarfBall, FutureSight` | 4 |
 | [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array | Examples: `Necromancer` | 4 |
-| [`outcome`](#outcome) | Block | Event Block: Logic and text executed after selecting a specific dialog option. | 4 |
+| [`outcome`](#outcome) | Object | Event Block: Logic and text executed after selecting a specific dialog option. | 4 |
 | `party_heal_disorder` | Integer | Examples: `2` | 4 |
-| [`party_permanent_stats_exclude_self`](#party_permanent_stats_exclude_self) | Block | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
+| [`party_permanent_stats_exclude_self`](#party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
 | `pills` | 1 | Examples: `7` | 4 |
 | [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | Examples: `[ { prompt "EVENT_TRACY_REW11" weight 1 get_item_from_poo..., [ { prompt "EVE...` | 4 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 4 |
@@ -187,14 +187,14 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `map_unlock_dimensionx` | Variable |  | 2 |
 | [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | Examples: `[ Dwarfism ], [ Gigantism ]` | 2 |
 | `party_heal_injury` | Integer | Examples: `99` | 2 |
-| [`party_permanent_stats`](#party_permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 2 |
-| [`party_random_mutation_from_set`](#party_random_mutation_from_set) | Block | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`party_permanent_stats`](#party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 2 |
+| [`party_random_mutation_from_set`](#party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | `poop_items` | Variable |  | 2 |
 | `resultBad` | Variable |  | 2 |
 | [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 2 |
 | `set_age` | Integer | Examples: `1` | 2 |
 | [`spin`](./Enums.md#enum-spin) | Enum | Examples: `again` | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `AdventureToken_HasRunFromDeath` | Variable |  | 1 |
 | `AdventureToken_MysteriousCave_FamiliarVoice` | Variable |  | 1 |
 | `AdventureToken_MysteriousJarRepeat` | Variable |  | 1 |
@@ -358,7 +358,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`dimensionx`](./Enums.md#enum-dimensionx) | 3 | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` | 1 |
 | `dimensionx.gon` | Variable |  | 1 |
 | [`future`](./Enums.md#enum-future) | 3 | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` | 1 |
-| [`gain_clone_familiar`](#gain_clone_familiar) | Block | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`gain_clone_familiar`](#gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`general_common`](./Enums.md#enum-general_common) | 1 | `auto` | 1 |
 | [`general_rare`](./Enums.md#enum-general_rare) | 1 | `auto` | 1 |
 | [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | Examples: `common` | 1 |
@@ -371,7 +371,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `junkyard_items` | Variable |  | 1 |
 | [`jurassic`](./Enums.md#enum-jurassic) | 3 | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` | 1 |
 | [`lab`](./Enums.md#enum-lab) | 2 | `AREA_NAME_LAB`, `mapflag_LabUnlocked` | 1 |
-| [`leave`](#leave) | Block | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
+| [`leave`](#leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
 | `legacy_event_unlock_momsknife` | Variable |  | 1 |
 | [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | Examples: `cat` | 1 |
 | `map_unlock_iceage` | Variable |  | 1 |
@@ -390,7 +390,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `parasite` | 4 | `true` | 1 |
 | [`party_injury`](./Enums.md#enum-party_injury) | Enum | Examples: `random` | 1 |
 | [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | Examples: `resultVeryGood` | 1 |
-| [`random_chance`](#random_chance) | Block | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
+| [`random_chance`](#random_chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
 | `raptor_nest_eggs` | Variable |  | 1 |
 | [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 1 |
 | `resultConfused` | Variable |  | 1 |
@@ -406,7 +406,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `time_machine_quest_finalstep` | Variable |  | 1 |
 | `time_machine_quest_trigger` | Variable |  | 1 |
 | `trigger_butterfly_effect` | Integer | Examples: `1` | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -423,19 +423,19 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 
 > **Total Count:** 343
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`reward`](#reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 307 |
+| [`reward`](#reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 307 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 224 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 42 |
-| [`conditional_reward`](#conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 9 |
+| [`conditional_reward`](#conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 |
 | [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 8 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array | Examples: `resultVeryGood, resultBad` | 5 |
 | [`battle`](./Math_Equations.md) | Equation | Examples: `{ ... }` | 4 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 4 |
 | [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 4 |
-| [`self_status_next_fight`](#self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 |
-| [`cutscene`](#cutscene) | Block | Event Node: Triggers a narrative cutscene. | 3 |
+| [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 |
+| [`cutscene`](#cutscene) | Object | Event Node: Triggers a narrative cutscene. | 3 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 3 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 3 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 3 |
@@ -443,11 +443,11 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Examples: `CharmedFleaSpecial` | 1 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 1 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 1 |
-| [`party_random_mutation_from_set`](#party_random_mutation_from_set) | Block | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
-| [`permanent_stats`](#permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 1 |
+| [`party_random_mutation_from_set`](#party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
+| [`permanent_stats`](#permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 1 |
 | [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | Examples: `glitched_items` | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -460,13 +460,13 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 
 > **Total Count:** 1197
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 609 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 151 |
-| [`self_status_next_fight`](#self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
+| [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 64 |
-| [`permanent_stats`](#permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
+| [`permanent_stats`](#permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
 | [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 27 |
 | `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 25 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 |
@@ -475,26 +475,25 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`self_damage`](./Arrays.md#array-self_damage) | Integer | Recoil or self-inflicted damage/effects applied to the caster. | 22 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 21 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 19 |
-| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 |
+| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 |
 | `party_heal` | Integer | Examples: `10` | 15 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 14 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array | Examples: `resultVeryGood, resultBad` | 13 |
-| `heal` | Integer | Restores health instead of dealing damage. | 13 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 12 |
-| [`party_status_next_fight`](#party_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
+| [`party_status_next_fight`](#party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
 | `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 11 |
 | `ally_ambush_next_fights` | Integer | Examples: `1` | 10 |
 | `full_heal` | Integer | Examples: `1` | 10 |
-| [`conditional_reward`](#conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 9 |
+| [`conditional_reward`](#conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 9 |
 | [`party_damage`](./Arrays.md#array-party_damage) | Array | Examples: `[ 5 10 ]` | 9 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 9 |
 | `ambush_next_basic_fights` | Integer | Examples: `1` | 9 |
-| [`random_mutation_from_set`](#random_mutation_from_set) | Block | Event Reward: Applies a random mutation to a character from a specific pool. | 8 |
+| [`random_mutation_from_set`](#random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 8 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 7 |
 | `next_event_bonus` | Integer | Examples: `2` | 7 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array | Examples: `[ 4 15 ], 5` | 6 |
-| [`global_effect_next_fight`](#global_effect_next_fight) | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 |
+| [`global_effect_next_fight`](#global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 6 |
 | [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 5 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 5 |
@@ -503,14 +502,14 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`gain_food`](./Arrays.md#array-gain_food) | Array | Examples: `[ 5 10 ]` | 3 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 2 |
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 2 |
-| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Block | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 |
-| [`party_permanent_stats_exclude_self`](#party_permanent_stats_exclude_self) | Block | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
+| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 |
+| [`party_permanent_stats_exclude_self`](#party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
 | [`spin`](./Enums.md#enum-spin) | Enum | Examples: `again` | 2 |
 | `party_heal_disorder` | Integer | Examples: `2` | 2 |
 | [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall` | 1 |
 | [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Examples: `FlyLarva` | 1 |
 | [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum | Examples: `Necromancer` | 1 |
-| [`mutation`](#mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| [`mutation`](#mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 1 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 1 |
 | `clear_result_animation` | Integer | Examples: `1` | 1 |
@@ -518,7 +517,7 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | `heal_injury` | Integer | Examples: `1` | 1 |
 | `self_heal` | Integer | Examples: `10` | 1 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -531,13 +530,13 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 
 > **Total Count:** 572
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`reward`](#reward) | Block | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
+| [`reward`](#reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 285 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 185 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 52 |
-| [`conditional_reward`](#conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 38 |
+| [`conditional_reward`](#conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 38 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 26 |
 | [`play_animation`](./Enums.md#enum-play_animation) | Enum | Examples: `resultVeryGood, resultBad` | 20 |
 | `cutscene` | String | Event Node: Triggers a narrative cutscene. | 19 |
@@ -556,8 +555,8 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | `heal_disorder` | Integer | Examples: `2` | 5 |
 | [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 4 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 4 |
-| [`mutation`](#mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
-| [`rare`](./Enums.md#enum-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |
+| [`mutation`](#mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
+| [`rare`](./Enums.md#enum-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 3 |
 | [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 3 |
 | [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | Examples: `CryogenicTimeChamber_Full, JarOfChaos, JarOfRadiatedBlood` | 3 |
@@ -567,13 +566,13 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 2 |
 | `full_heal` | Integer | Examples: `1` | 2 |
 | `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 2 |
-| [`gain_clone_familiar`](#gain_clone_familiar) | Block | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`gain_clone_familiar`](#gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | Examples: `common` | 1 |
-| [`global_effect_next_fight`](#global_effect_next_fight) | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 |
+| [`global_effect_next_fight`](#global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 |
 | [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array | Examples: `Necromancer` | 1 |
 | [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array | Examples: `AnyUnlocked` | 1 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 1 |
-| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Block | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
+| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
 | [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 1 |
 | [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | Examples: `all` | 1 |
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 1 |
@@ -583,7 +582,6 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | `clone_self_to_party` | Integer | Examples: `1` | 1 |
 | `copy_items_to_party` | Integer | Examples: `1` | 1 |
 | `copy_party_items` | Integer | Examples: `1` | 1 |
-| `heal` | Integer | Restores health instead of dealing damage. | 1 |
 | `next_event_bonus` | Integer | Examples: `2` | 1 |
 | `trigger_butterfly_effect` | Integer | Examples: `1` | 1 |
 | [`gain_food`](./Arrays.md#array-gain_food) | Array | Examples: `[ 5 10 ]` | 0 |
@@ -591,7 +589,7 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | Examples: `[ { prompt "EVENT_TRACY_REW11" weight 1 get_item_from_poo..., [ { prompt "EVE...` | 0 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 |
 | [`transform_item`](./Arrays.md#array-transform_item) | Array | Examples: `[ CryogenicTimeChamber_Empty CryogenicTimeChamber_Full ], [ JarOfRadiation Ja...` | 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -604,31 +602,31 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 
 > **Total Count:** 215
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`options`](./Arrays.md#array-options) | Block | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
+| [`options`](./Arrays.md#array-options) | Object | Event Block: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 208 |
-| [`setup`](#setup) | Block | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
-| [`bad`](#bad) | Block | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
+| [`setup`](#setup) | Object | Event Block: Pre-initialization logic executed before the event UI is drawn. | 23 |
+| [`bad`](#bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`goto`](./Enums.md#enum-goto) | Enum | Examples: `end` | 4 |
-| [`outcome`](#outcome) | Block | Event Block: Logic and text executed after selecting a specific dialog option. | 4 |
+| [`outcome`](#outcome) | Object | Event Block: Logic and text executed after selecting a specific dialog option. | 4 |
 | `max_options` | Integer | Examples: `3, 2` | 3 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 3 |
 | `shuffle_options` | Boolean | Examples: `true` | 3 |
 | [`weight`](./Enums.md#enum-weight) | Float | Probability weight for this outcome. | 2 |
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 1 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 1 |
-| [`leave`](#leave) | Block | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
+| [`leave`](#leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
 | [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
-| [`party_permanent_stats`](#party_permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
+| [`party_permanent_stats`](#party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array | Examples: `resultVeryGood, resultBad` | 1 |
-| [`rare`](./Enums.md#enum-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
+| [`rare`](./Enums.md#enum-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
 | [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 1 |
-| [`self_status_next_fight`](#self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
+| [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 1 |
 | `party_heal` | Integer | Examples: `10` | 1 |
 | [`self_damage`](./Arrays.md#array-self_damage) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -641,30 +639,30 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 
 > **Total Count:** 996
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 613 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 180 |
 | [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 113 |
-| [`permanent_stats`](#permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
+| [`permanent_stats`](#permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 65 |
 | [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 51 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 45 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 41 |
-| [`self_status_next_fight`](#self_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
+| [`self_status_next_fight`](#self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
 | `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 40 |
 | [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 30 |
 | [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 30 |
 | [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 29 |
-| [`conditional_reward`](#conditional_reward) | Block | Event Action: Provides a reward only if a specific condition is met. | 22 |
+| [`conditional_reward`](#conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 22 |
 | [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 22 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 21 |
-| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |
-| [`mutation`](#mutation) | Block | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 |
+| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |
+| [`mutation`](#mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 |
 | [`damage`](./Arrays.md#array-damage) | Integer | Event Node: Story branch or dialog option representing the 'Damage' action. | 15 |
 | `next_event_bonus` | Integer | Examples: `2` | 14 |
-| [`random_mutation_from_set`](#random_mutation_from_set) | Block | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
-| [`party_status_next_fight`](#party_status_next_fight) | Block | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 |
+| [`random_mutation_from_set`](#random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
+| [`party_status_next_fight`](#party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 |
 | [`self_damage`](./Arrays.md#array-self_damage) | Integer | Recoil or self-inflicted damage/effects applied to the caster. | 12 |
 | [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Examples: `CobraStyle, PoisonTips, DeathProof` | 10 |
 | [`play_animation`](./Arrays.md#array-play_animation) | Array | Examples: `resultVeryGood, resultBad` | 10 |
@@ -674,7 +672,7 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 8 |
 | [`party_damage`](./Arrays.md#array-party_damage) | Integer | Examples: `[ 5 10 ]` | 8 |
 | `party_random_mutation` | Integer | Examples: `1` | 8 |
-| [`leave_party_temporarily`](#leave_party_temporarily) | Block | Event Action: Removes a character from the active team until the next hub area. | 7 |
+| [`leave_party_temporarily`](#leave_party_temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 |
 | [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 7 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 7 |
 | `ambush_next_basic_fights` | Integer | Examples: `1` | 7 |
@@ -686,7 +684,7 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 4 |
 | [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | Examples: `BarfBall, FutureSight` | 4 |
 | `full_heal` | Integer | Examples: `1` | 4 |
-| [`global_effect_next_fight`](#global_effect_next_fight) | Block | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 |
+| [`global_effect_next_fight`](#global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 |
 | [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 3 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 3 |
 | [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | Examples: `cat` | 3 |
@@ -697,7 +695,7 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 2 |
 | [`gain_food`](./Arrays.md#array-gain_food) | Array | Examples: `[ 5 10 ]` | 2 |
 | [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 2 |
-| [`party_permanent_stats_exclude_self`](#party_permanent_stats_exclude_self) | Block | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
+| [`party_permanent_stats_exclude_self`](#party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
 | [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 2 |
 | [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | Examples: `random` | 2 |
 | `party_heal_disorder` | Integer | Examples: `2` | 2 |
@@ -710,8 +708,8 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Enum | Examples: `AnyUnlocked` | 1 |
 | [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | Examples: `cat` | 1 |
 | [`party_injury`](./Enums.md#enum-party_injury) | Enum | Examples: `random` | 1 |
-| [`party_permanent_stats`](#party_permanent_stats) | Block | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
-| [`party_random_mutation_from_set`](#party_random_mutation_from_set) | Block | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
+| [`party_permanent_stats`](#party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
+| [`party_random_mutation_from_set`](#party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
 | [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | Examples: `resultVeryGood` | 1 |
 | [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 1 |
 | [`scramble_basic_attack`](./Enums.md#enum-scramble_basic_attack) | Enum | Examples: `all` | 1 |
@@ -719,7 +717,7 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | `clear_result_animation` | Integer | Examples: `1` | 1 |
 | `heal_disorder` | Integer | Examples: `2` | 1 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -732,10 +730,10 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 
 > **Total Count:** 760
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`common`](./Enums.md#enum-common) | Block | Event Node: Story branch or dialog option representing the 'Common' action. | 634 |
-| [`rare`](./Enums.md#enum-rare) | Block | Event Node: Story branch or dialog option representing the 'Rare' action. | 624 |
+| [`common`](./Enums.md#enum-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 634 |
+| [`rare`](./Enums.md#enum-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 624 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 73 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 54 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 |
@@ -748,19 +746,19 @@ The following blocks all behave as `{Event Keys}` containers. Each has its own u
 | [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | Examples: `infinite_intro` | 3 |
 | [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 2 |
 | [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 2 |
-| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Block | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 |
+| [`spawn_unit_next_fight`](#spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 |
 | [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 1 |
 | [`gain_coins`](./Arrays.md#array-gain_coins) | Array | Examples: `[ 4 15 ], 5` | 1 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 1 |
 | [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 1 |
 | [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 1 |
-| [`random_chance`](#random_chance) | Block | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
+| [`random_chance`](#random_chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 1 |
 | `ambush_next_basic_fights` | Integer | Examples: `1` | 1 |
 | [`weight`](./Enums.md#enum-weight) | Float | Probability weight for this outcome. | 1 |
 | [`party_damage`](./Arrays.md#array-party_damage) | Array | Examples: `[ 5 10 ]` | 0 |
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 

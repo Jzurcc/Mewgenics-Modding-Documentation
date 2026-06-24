@@ -6,14 +6,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/ai_presets/`
 
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 > **Total Count:** 55
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `distance_to_ally` | Number | Examples: `1, -1, 0` | 55 |
 | `distance_to_character` | Number | Examples: `1, -1, 0` | 55 |

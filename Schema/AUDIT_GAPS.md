@@ -184,17 +184,17 @@ Use this to spot any completely undocumented keys.
 | `Hiss` | 219 |  |
 | `Death` | 219 |  |
 | `Purr` | 218 |  |
-| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Graphics Keys}`](./Engine_GraphicsKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. |  |
 | `distinctly_male` | 103 | `true` |
 | `type` | 87 | `attack`, `battle`, `blankcollar`, `bonus_rare_item`, `boss` |
 | `damage` | 75 | `(15+bonus_melee_damage)*.5`, `(4+bonus_ranged_damage+1)/2`, `(5+bonus_melee_ability_damage)*.5`, `(5+bonus_melee_ability_damage)/2`, `(5+bonus_melee_damage+1)/2` |
 | `object` | 74 | `AlbinoTomTom`, `AlbinoTomTom_Elite`, `AlienBeast`, `AlienEgg`, `AllyRotFly` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. |  |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. |  |
 | `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` |
 | `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` |
 | `stacks` | 52 | `5+bonus_melee_ability_damage`, `X`, `floor(lck/4)`, `item_aux`, `max(min(X+1, item_aux), 0)` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. |  |
 | `variant_of` | 47 | `Absorb`, `AbsorbSoul`, `Adoubement`, `Aftershock`, `AirBurst` |
 | `speed` | 47 |  |
 | `ability` | 47 | `AZ_LoseHead`, `AlienBeam`, `AlienBeastGoop`, `AlienBeastMoveOne`, `BBPullBomb` |
@@ -297,7 +297,7 @@ Use this to spot any completely undocumented keys.
 | `type_icon` | 16 | `attack`, `buff`, `debuff`, `defense`, `heal` |
 | `range_excludes_blocking` | 15 | `false`, `true` |
 | `move_points` | 15 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. |  |
 | `keyword_tooltips` | 15 |  |
 | `multihit` | 15 | `X`, `X*2+1`, `X+1` |
 | `pattern` | 15 |  |
@@ -626,7 +626,7 @@ Use this to spot any completely undocumented keys.
 | `works_with_tech` | 3 | `true` |
 | `time` | 3 |  |
 | `new_song` | 3 | `same` |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | All valid keys from the specified engine key are applicable to this context/block. |  |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. |  |
 | `shuffle_tile_order` | 3 | `true` |
 | `face_camera` | 3 | `true` |
 | `throw_consumed_character` | 3 | `true` |

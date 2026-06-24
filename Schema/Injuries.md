@@ -7,36 +7,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/injuries.gon`
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 13
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |
 | `id` | Integer |  | 13 |
-| [`stats`](#context-stats) | Block |  | 12 |
-| [`scars`](#context-scars) | Block |  | 10 |
+| [`stats`](#object-stats) | Object |  | 12 |
+| [`scars`](#object-scars) | Object |  | 10 |
 
 </details>
 
 ---
 
-### Context: `stats`
+### Object: `stats`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 12
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `con` | Integer |  | 3 |
 | `lck` | Integer |  | 3 |
@@ -50,16 +50,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `scars`
+### Object: `scars`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 10
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`head`](./Arrays.md#array-head) | Array |  | 6 |
 | [`body`](./Arrays.md#array-body) | Array |  | 3 |

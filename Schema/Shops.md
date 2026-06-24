@@ -6,30 +6,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > **Associated Files:** `data/shops/`
 
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 > **Total Count:** 25
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`meta`](./Shops.md#context-meta) | Block | Examples: `{ ... }` | 25 |
-| [`breakdown`](./Shops.md#context-breakdown) | Block | Examples: `{ ... }` | 24 |
-| [`item_groups`](./Shops.md#context-item_groups) | Block | Examples: `{ ... }` | 24 |
-| [`item_rarity_costs`](./Shops.md#context-item_rarity_costs) | Block | Examples: `{ ... }` | 9 |
-| `stock_fill_order` | Block | Examples: `{ ... }` | 9 |
-| [`button_nav`](./Shops.md#context-button_nav) | Block | Examples: `{ ... }` | 7 |
-| [`breakdown2`](./Shops.md#context-breakdown2) | Block | Examples: `{ ... }` | 2 |
-| [`breakdown3`](./Shops.md#context-breakdown3) | Block | Examples: `{ ... }` | 2 |
-| [`breakdown4`](./Shops.md#context-breakdown4) | Block | Examples: `{ ... }` | 2 |
+| [`meta`](./Shops.md#context-meta) | Object | Examples: `{ ... }` | 25 |
+| [`breakdown`](./Shops.md#context-breakdown) | Object | Examples: `{ ... }` | 24 |
+| [`item_groups`](./Shops.md#context-item_groups) | Object | Examples: `{ ... }` | 24 |
+| [`item_rarity_costs`](./Shops.md#context-item_rarity_costs) | Object | Examples: `{ ... }` | 9 |
+| `stock_fill_order` | Object | Examples: `{ ... }` | 9 |
+| [`button_nav`](./Shops.md#context-button_nav) | Object | Examples: `{ ... }` | 7 |
+| [`breakdown2`](./Shops.md#context-breakdown2) | Object | Examples: `{ ... }` | 2 |
+| [`breakdown3`](./Shops.md#context-breakdown3) | Object | Examples: `{ ... }` | 2 |
+| [`breakdown4`](./Shops.md#context-breakdown4) | Object | Examples: `{ ... }` | 2 |
 
 </details>
 
 ---
 
-### Context: `Item`
+### Object: `Item`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -38,18 +38,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`common_item`](./Shops.md#context-common_item), [`consumable`](./Shops.md#context-consumable), [`empty`](./Shops.md#context-empty), [`item`](./Shops.md#context-item), [`mandatory`](./Shops.md#context-mandatory), [`mostly_food`](./Shops.md#context-mostly_food), [`pool`](./Shops.md#context-pool), [`treasure`](./Shops.md#context-treasure)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum | Examples: `rare, shop_common, treasure_easy` | 37 |
 | `cost` | Number | Examples: `0, 15, 10` | 21 |
 | `mandatory` | Boolean | Examples: `true` | 14 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
 ---
 
-### Context: `meta`
+### Object: `meta`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -58,7 +58,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`movieclip`](./Enums.md#enum-movieclip) | Enum | Examples: `Shop, JackOffice, TreasureRoom` | 25 |
 | `treasure_room` | Boolean | Examples: `true` | 14 |
@@ -74,7 +74,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `breakdown`
+### Object: `breakdown`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -83,7 +83,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `treasure` | Number | Examples: `1` | 14 |
 | `pool` | Number | Examples: `3, 2, 5` | 6 |
@@ -99,7 +99,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `item_groups`
+### Object: `item_groups`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -108,24 +108,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`treasure`](./Shops.md#context-treasure) | Block | Examples: `{ ... }` | 14 |
-| [`pool`](./Shops.md#context-pool) | Block | Examples: `{ ... }` | 6 |
-| [`mandatory`](./Shops.md#context-mandatory) | Block | Examples: `{ ... }` | 5 |
-| [`levelup`](./Shops.md#context-levelup) | Block | Examples: `{ ... }` | 3 |
-| [`common_item`](./Shops.md#context-common_item) | Block | Examples: `{ ... }` | 2 |
-| [`consumable`](./Shops.md#context-consumable) | Block | Examples: `{ ... }` | 2 |
-| [`guaranteed_food`](./Shops.md#context-guaranteed_food) | Block | Examples: `{ ... }` | 2 |
-| [`item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 2 |
-| [`mostly_food`](./Shops.md#context-mostly_food) | Block | Examples: `{ ... }` | 2 |
-| [`empty`](./Shops.md#context-empty) | Block | Examples: `{ ... }` | 1 |
+| [`treasure`](./Shops.md#context-treasure) | Object | Examples: `{ ... }` | 14 |
+| [`pool`](./Shops.md#context-pool) | Object | Examples: `{ ... }` | 6 |
+| [`mandatory`](./Shops.md#context-mandatory) | Object | Examples: `{ ... }` | 5 |
+| [`levelup`](./Shops.md#context-levelup) | Object | Examples: `{ ... }` | 3 |
+| [`common_item`](./Shops.md#context-common_item) | Object | Examples: `{ ... }` | 2 |
+| [`consumable`](./Shops.md#context-consumable) | Object | Examples: `{ ... }` | 2 |
+| [`guaranteed_food`](./Shops.md#context-guaranteed_food) | Object | Examples: `{ ... }` | 2 |
+| [`item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
+| [`mostly_food`](./Shops.md#context-mostly_food) | Object | Examples: `{ ... }` | 2 |
+| [`empty`](./Shops.md#context-empty) | Object | Examples: `{ ... }` | 1 |
 
 </details>
 
 ---
 
-### Context: `treasure`
+### Object: `treasure`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -134,15 +134,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 14 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 14 |
 
 </details>
 
 ---
 
-### Context: `item_rarity_costs`
+### Object: `item_rarity_costs`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -151,9 +151,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 9 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
 | `consumable_common` | Number | Examples: `3, 5, 10` | 9 |
 | `consumable_rare` | Number | Examples: `20, 8, 10` | 9 |
 | `consumable_uncommon` | Number | Examples: `14, 5, 7` | 9 |
@@ -165,7 +165,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `button_nav`
+### Object: `button_nav`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -174,15 +174,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`default`](./Miscellaneous.md#context-default) | Block | Examples: `{ ... }` | 7 |
+| [`default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 7 |
 
 </details>
 
 ---
 
-### Context: `pool`
+### Object: `pool`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -191,15 +191,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 10 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 10 |
 
 </details>
 
 ---
 
-### Context: `mandatory`
+### Object: `mandatory`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -208,16 +208,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 4 |
-| `Furniture` | Block | Examples: `{ ... }` | 1 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 4 |
+| `Furniture` | Object | Examples: `{ ... }` | 1 |
 
 </details>
 
 ---
 
-### Context: `Food`
+### Object: `Food`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -226,18 +226,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`guaranteed_food`](./Shops.md#context-guaranteed_food), [`mostly_food`](./Shops.md#context-mostly_food)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `allow_duplicates` | Boolean | Examples: `true` | 4 |
 | `amount` | Number | Examples: `10` | 4 |
 | `cost` | Number | Examples: `5` | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
 ---
 
-### Context: `LevelUp`
+### Object: `LevelUp`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -246,7 +246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`levelup`](./Shops.md#context-levelup)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `cost` | Number | Examples: `10` | 3 |
 
@@ -254,7 +254,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `levelup`
+### Object: `levelup`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -263,15 +263,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`LevelUp`](./Shops.md#context-levelup) | Block | Examples: `{ ... }` | 3 |
+| [`LevelUp`](./Shops.md#context-levelup) | Object | Examples: `{ ... }` | 3 |
 
 </details>
 
 ---
 
-### Context: `breakdown2`
+### Object: `breakdown2`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -280,7 +280,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `common_item` | Number | Examples: `1` | 2 |
 | `consumable` | Number | Examples: `1` | 2 |
@@ -292,7 +292,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `breakdown3`
+### Object: `breakdown3`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -301,7 +301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `common_item` | Number | Examples: `2` | 2 |
 | `consumable` | Number | Examples: `1` | 2 |
@@ -312,7 +312,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `breakdown4`
+### Object: `breakdown4`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -321,7 +321,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `common_item` | Number | Examples: `2` | 2 |
 | `consumable` | Number | Examples: `1` | 2 |
@@ -332,7 +332,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `common_item`
+### Object: `common_item`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -341,15 +341,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 2 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
 
 </details>
 
 ---
 
-### Context: `consumable`
+### Object: `consumable`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -358,15 +358,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 2 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
 
 </details>
 
 ---
 
-### Context: `guaranteed_food`
+### Object: `guaranteed_food`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -375,15 +375,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Food`](./Shops.md#context-food) | Block | Examples: `{ ... }` | 2 |
+| [`Food`](./Shops.md#context-food) | Object | Examples: `{ ... }` | 2 |
 
 </details>
 
 ---
 
-### Context: `item`
+### Object: `item`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -392,15 +392,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 2 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
 
 </details>
 
 ---
 
-### Context: `mostly_food`
+### Object: `mostly_food`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -409,16 +409,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Food`](./Shops.md#context-food) | Block | Examples: `{ ... }` | 2 |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 2 |
+| [`Food`](./Shops.md#context-food) | Object | Examples: `{ ... }` | 2 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 2 |
 
 </details>
 
 ---
 
-### Context: `empty`
+### Object: `empty`
 
 <details>
 <summary><b>Expand</b></summary>
@@ -427,9 +427,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#context-item) | Block | Examples: `{ ... }` | 1 |
+| [`Item`](./Shops.md#context-item) | Object | Examples: `{ ... }` | 1 |
 
 </details>
 

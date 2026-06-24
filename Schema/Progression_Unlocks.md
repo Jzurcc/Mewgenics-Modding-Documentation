@@ -7,18 +7,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 > **Associated Files:** `data/adventure_progression_unlocks.gon, data/npc_favor_unlocks.gon`
 
-### Context: `ROOT`
+### Object: `ROOT`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 266
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 890 |
-| [`popup`](#context-popup) | Block |  | 266 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 206 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 890 |
+| [`popup`](#object-popup) | Object |  | 266 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum |  | 127 |
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum |  | 55 |
@@ -56,100 +56,100 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`require_mapgen_flag`](./Enums.md#enum-require_mapgen_flag) | Enum |  | 2 |
 | [`surviving_kaiju`](./Enums.md#enum-surviving_kaiju) | Enum |  | 2 |
 | [`unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup) | Enum |  | 2 |
-| [`beanies_quests_intro`](#context-beanies_quests_intro) | Block |  | 1 |
-| [`beanies_quests_repeat`](#context-beanies_quests_repeat) | Block |  | 1 |
-| [`destinations`](#context-destinations) | Block |  | 1 |
+| [`beanies_quests_intro`](#object-beanies_quests_intro) | Object |  | 1 |
+| [`beanies_quests_repeat`](#object-beanies_quests_repeat) | Object |  | 1 |
+| [`destinations`](#object-destinations) | Object |  | 1 |
 | [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum |  | 1 |
 | [`finish_quest`](./Enums.md#enum-finish_quest) | Enum |  | 1 |
-| [`frank_max_intro`](#context-frank_max_intro) | Block |  | 1 |
-| [`frank_max_repeating`](#context-frank_max_repeating) | Block |  | 1 |
-| [`house_upgrade_4throom`](#context-house_upgrade_4throom) | Block |  | 1 |
-| [`house_upgrade_attic`](#context-house_upgrade_attic) | Block |  | 1 |
-| [`house_upgrade_largehouse`](#context-house_upgrade_largehouse) | Block |  | 1 |
-| [`house_upgrade_mediumhouse`](#context-house_upgrade_mediumhouse) | Block |  | 1 |
+| [`frank_max_intro`](#object-frank_max_intro) | Object |  | 1 |
+| [`frank_max_repeating`](#object-frank_max_repeating) | Object |  | 1 |
+| [`house_upgrade_4throom`](#object-house_upgrade_4throom) | Object |  | 1 |
+| [`house_upgrade_attic`](#object-house_upgrade_attic) | Object |  | 1 |
+| [`house_upgrade_largehouse`](#object-house_upgrade_largehouse) | Object |  | 1 |
+| [`house_upgrade_mediumhouse`](#object-house_upgrade_mediumhouse) | Object |  | 1 |
 | [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String |  | 1 |
 | [`intro`](./Arrays.md#array-intro) | Array |  | 1 |
-| [`jack_max_intro`](#context-jack_max_intro) | Block |  | 1 |
-| [`jack_max_repeating`](#context-jack_max_repeating) | Block |  | 1 |
-| [`jack_shopupgrade1`](#context-jack_shopupgrade1) | Block |  | 1 |
-| [`jack_shopupgrade2`](#context-jack_shopupgrade2) | Block |  | 1 |
-| [`jack_shopupgrade3`](#context-jack_shopupgrade3) | Block |  | 1 |
-| [`jack_shopupgrade4`](#context-jack_shopupgrade4) | Block |  | 1 |
+| [`jack_max_intro`](#object-jack_max_intro) | Object |  | 1 |
+| [`jack_max_repeating`](#object-jack_max_repeating) | Object |  | 1 |
+| [`jack_shopupgrade1`](#object-jack_shopupgrade1) | Object |  | 1 |
+| [`jack_shopupgrade2`](#object-jack_shopupgrade2) | Object |  | 1 |
+| [`jack_shopupgrade3`](#object-jack_shopupgrade3) | Object |  | 1 |
+| [`jack_shopupgrade4`](#object-jack_shopupgrade4) | Object |  | 1 |
 | [`main_pool`](./Arrays.md#array-main_pool) | Array |  | 1 |
-| [`organ_max_intro`](#context-organ_max_intro) | Block |  | 1 |
-| [`organ_max_repeating`](#context-organ_max_repeating) | Block |  | 1 |
-| [`organ_unlock`](#context-organ_unlock) | Block |  | 1 |
-| [`organ_upgrade1`](#context-organ_upgrade1) | Block |  | 1 |
-| [`organ_upgrade2`](#context-organ_upgrade2) | Block |  | 1 |
-| [`organ_upgrade3`](#context-organ_upgrade3) | Block |  | 1 |
-| [`organ_upgrade4`](#context-organ_upgrade4) | Block |  | 1 |
-| [`organ_upgrade5`](#context-organ_upgrade5) | Block |  | 1 |
-| [`organ_upgrade6`](#context-organ_upgrade6) | Block |  | 1 |
-| [`prereqs`](#context-prereqs) | Block |  | 1 |
+| [`organ_max_intro`](#object-organ_max_intro) | Object |  | 1 |
+| [`organ_max_repeating`](#object-organ_max_repeating) | Object |  | 1 |
+| [`organ_unlock`](#object-organ_unlock) | Object |  | 1 |
+| [`organ_upgrade1`](#object-organ_upgrade1) | Object |  | 1 |
+| [`organ_upgrade2`](#object-organ_upgrade2) | Object |  | 1 |
+| [`organ_upgrade3`](#object-organ_upgrade3) | Object |  | 1 |
+| [`organ_upgrade4`](#object-organ_upgrade4) | Object |  | 1 |
+| [`organ_upgrade5`](#object-organ_upgrade5) | Object |  | 1 |
+| [`organ_upgrade6`](#object-organ_upgrade6) | Object |  | 1 |
+| [`prereqs`](#object-prereqs) | Object |  | 1 |
 | [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum |  | 1 |
-| [`steven_milliontrashed`](#context-steven_milliontrashed) | Block |  | 1 |
-| [`tink_aggression`](#context-tink_aggression) | Block |  | 1 |
-| [`tink_basestats`](#context-tink_basestats) | Block |  | 1 |
-| [`tink_inbreeding`](#context-tink_inbreeding) | Block |  | 1 |
-| [`tink_max_intro`](#context-tink_max_intro) | Block |  | 1 |
-| [`tink_max_repeating`](#context-tink_max_repeating) | Block |  | 1 |
-| [`tink_prettybow`](#context-tink_prettybow) | Block |  | 1 |
-| [`tink_relationships`](#context-tink_relationships) | Block |  | 1 |
-| [`tink_sexuality`](#context-tink_sexuality) | Block |  | 1 |
-| [`tink_tags`](#context-tink_tags) | Block |  | 1 |
-| [`tracy_blankcollar1`](#context-tracy_blankcollar1) | Block |  | 1 |
-| [`tracy_blankcollar2`](#context-tracy_blankcollar2) | Block |  | 1 |
-| [`tracy_blankcollar3`](#context-tracy_blankcollar3) | Block |  | 1 |
-| [`tracy_foodstorage10`](#context-tracy_foodstorage10) | Block |  | 1 |
-| [`tracy_foodstorage1`](#context-tracy_foodstorage1) | Block |  | 1 |
-| [`tracy_foodstorage2`](#context-tracy_foodstorage2) | Block |  | 1 |
-| [`tracy_foodstorage3`](#context-tracy_foodstorage3) | Block |  | 1 |
-| [`tracy_foodstorage4`](#context-tracy_foodstorage4) | Block |  | 1 |
-| [`tracy_foodstorage5`](#context-tracy_foodstorage5) | Block |  | 1 |
-| [`tracy_foodstorage6`](#context-tracy_foodstorage6) | Block |  | 1 |
-| [`tracy_foodstorage7`](#context-tracy_foodstorage7) | Block |  | 1 |
-| [`tracy_foodstorage8`](#context-tracy_foodstorage8) | Block |  | 1 |
-| [`tracy_foodstorage9`](#context-tracy_foodstorage9) | Block |  | 1 |
-| [`tracy_idol1`](#context-tracy_idol1) | Block |  | 1 |
-| [`tracy_idol2`](#context-tracy_idol2) | Block |  | 1 |
-| [`tracy_idol3`](#context-tracy_idol3) | Block |  | 1 |
-| [`tracy_idol4`](#context-tracy_idol4) | Block |  | 1 |
-| [`tracy_idol5`](#context-tracy_idol5) | Block |  | 1 |
-| [`tracy_idol6`](#context-tracy_idol6) | Block |  | 1 |
-| [`tracy_idol7`](#context-tracy_idol7) | Block |  | 1 |
-| [`tracy_max_intro`](#context-tracy_max_intro) | Block |  | 1 |
-| [`tracy_max_repeating`](#context-tracy_max_repeating) | Block |  | 1 |
+| [`steven_milliontrashed`](#object-steven_milliontrashed) | Object |  | 1 |
+| [`tink_aggression`](#object-tink_aggression) | Object |  | 1 |
+| [`tink_basestats`](#object-tink_basestats) | Object |  | 1 |
+| [`tink_inbreeding`](#object-tink_inbreeding) | Object |  | 1 |
+| [`tink_max_intro`](#object-tink_max_intro) | Object |  | 1 |
+| [`tink_max_repeating`](#object-tink_max_repeating) | Object |  | 1 |
+| [`tink_prettybow`](#object-tink_prettybow) | Object |  | 1 |
+| [`tink_relationships`](#object-tink_relationships) | Object |  | 1 |
+| [`tink_sexuality`](#object-tink_sexuality) | Object |  | 1 |
+| [`tink_tags`](#object-tink_tags) | Object |  | 1 |
+| [`tracy_blankcollar1`](#object-tracy_blankcollar1) | Object |  | 1 |
+| [`tracy_blankcollar2`](#object-tracy_blankcollar2) | Object |  | 1 |
+| [`tracy_blankcollar3`](#object-tracy_blankcollar3) | Object |  | 1 |
+| [`tracy_foodstorage10`](#object-tracy_foodstorage10) | Object |  | 1 |
+| [`tracy_foodstorage1`](#object-tracy_foodstorage1) | Object |  | 1 |
+| [`tracy_foodstorage2`](#object-tracy_foodstorage2) | Object |  | 1 |
+| [`tracy_foodstorage3`](#object-tracy_foodstorage3) | Object |  | 1 |
+| [`tracy_foodstorage4`](#object-tracy_foodstorage4) | Object |  | 1 |
+| [`tracy_foodstorage5`](#object-tracy_foodstorage5) | Object |  | 1 |
+| [`tracy_foodstorage6`](#object-tracy_foodstorage6) | Object |  | 1 |
+| [`tracy_foodstorage7`](#object-tracy_foodstorage7) | Object |  | 1 |
+| [`tracy_foodstorage8`](#object-tracy_foodstorage8) | Object |  | 1 |
+| [`tracy_foodstorage9`](#object-tracy_foodstorage9) | Object |  | 1 |
+| [`tracy_idol1`](#object-tracy_idol1) | Object |  | 1 |
+| [`tracy_idol2`](#object-tracy_idol2) | Object |  | 1 |
+| [`tracy_idol3`](#object-tracy_idol3) | Object |  | 1 |
+| [`tracy_idol4`](#object-tracy_idol4) | Object |  | 1 |
+| [`tracy_idol5`](#object-tracy_idol5) | Object |  | 1 |
+| [`tracy_idol6`](#object-tracy_idol6) | Object |  | 1 |
+| [`tracy_idol7`](#object-tracy_idol7) | Object |  | 1 |
+| [`tracy_max_intro`](#object-tracy_max_intro) | Object |  | 1 |
+| [`tracy_max_repeating`](#object-tracy_max_repeating) | Object |  | 1 |
 | [`unlock_item`](./Enums.md#enum-unlock_item) | Enum |  | 1 |
-| [`upgrade_storage_1`](#context-upgrade_storage_1) | Block |  | 1 |
-| [`upgrade_storage_2`](#context-upgrade_storage_2) | Block |  | 1 |
-| [`upgrade_storage_3`](#context-upgrade_storage_3) | Block |  | 1 |
-| [`upgrade_storage_4`](#context-upgrade_storage_4) | Block |  | 1 |
-| [`upgrade_storage_5`](#context-upgrade_storage_5) | Block |  | 1 |
-| [`upgrade_storage_6`](#context-upgrade_storage_6) | Block |  | 1 |
-| [`upgrade_storage_7`](#context-upgrade_storage_7) | Block |  | 1 |
-| [`upgrade_storage_repeating_crazy`](#context-upgrade_storage_repeating_crazy) | Block |  | 1 |
-| [`upgrade_storage_repeating_hard`](#context-upgrade_storage_repeating_hard) | Block |  | 1 |
-| [`upgrade_storage_repeating_impossible`](#context-upgrade_storage_repeating_impossible) | Block |  | 1 |
-| [`upgrade_storage_repeating_intro`](#context-upgrade_storage_repeating_intro) | Block |  | 1 |
-| [`upgrade_storage_repeating_normal`](#context-upgrade_storage_repeating_normal) | Block |  | 1 |
+| [`upgrade_storage_1`](#object-upgrade_storage_1) | Object |  | 1 |
+| [`upgrade_storage_2`](#object-upgrade_storage_2) | Object |  | 1 |
+| [`upgrade_storage_3`](#object-upgrade_storage_3) | Object |  | 1 |
+| [`upgrade_storage_4`](#object-upgrade_storage_4) | Object |  | 1 |
+| [`upgrade_storage_5`](#object-upgrade_storage_5) | Object |  | 1 |
+| [`upgrade_storage_6`](#object-upgrade_storage_6) | Object |  | 1 |
+| [`upgrade_storage_7`](#object-upgrade_storage_7) | Object |  | 1 |
+| [`upgrade_storage_repeating_crazy`](#object-upgrade_storage_repeating_crazy) | Object |  | 1 |
+| [`upgrade_storage_repeating_hard`](#object-upgrade_storage_repeating_hard) | Object |  | 1 |
+| [`upgrade_storage_repeating_impossible`](#object-upgrade_storage_repeating_impossible) | Object |  | 1 |
+| [`upgrade_storage_repeating_intro`](#object-upgrade_storage_repeating_intro) | Object |  | 1 |
+| [`upgrade_storage_repeating_normal`](#object-upgrade_storage_repeating_normal) | Object |  | 1 |
 | `requires_hard_path` | Boolean |  | 1 |
 
 </details>
 
 ---
 
-### Context: `popup`
+### Object: `popup`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 266
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Block | All valid keys from the specified engine key are applicable to this context/block. | 266 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 266 |
 | `immediate` | Boolean |  | 221 |
 | [`frame`](./Enums.md#enum-frame) | Enum |  | 159 |
 
@@ -157,16 +157,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_special_item`
+### Object: `tracy_special_item`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 22
 
-> **Referenced by:** [`tracy_blankcollar1`](#context-tracy_blankcollar1), [`tracy_blankcollar2`](#context-tracy_blankcollar2), [`tracy_blankcollar3`](#context-tracy_blankcollar3), [`tracy_foodstorage1`](#context-tracy_foodstorage1), [`tracy_foodstorage10`](#context-tracy_foodstorage10), [`tracy_foodstorage2`](#context-tracy_foodstorage2), [`tracy_foodstorage3`](#context-tracy_foodstorage3), [`tracy_foodstorage4`](#context-tracy_foodstorage4), [`tracy_foodstorage5`](#context-tracy_foodstorage5), [`tracy_foodstorage6`](#context-tracy_foodstorage6), [`tracy_foodstorage7`](#context-tracy_foodstorage7), [`tracy_foodstorage8`](#context-tracy_foodstorage8), [`tracy_foodstorage9`](#context-tracy_foodstorage9), [`tracy_idol1`](#context-tracy_idol1), [`tracy_idol2`](#context-tracy_idol2), [`tracy_idol3`](#context-tracy_idol3), [`tracy_idol4`](#context-tracy_idol4), [`tracy_idol5`](#context-tracy_idol5), [`tracy_idol6`](#context-tracy_idol6), [`tracy_idol7`](#context-tracy_idol7), [`tracy_max_intro`](#context-tracy_max_intro), [`tracy_max_repeating`](#context-tracy_max_repeating)
+> **Referenced by:** [`tracy_blankcollar1`](#object-tracy_blankcollar1), [`tracy_blankcollar2`](#object-tracy_blankcollar2), [`tracy_blankcollar3`](#object-tracy_blankcollar3), [`tracy_foodstorage1`](#object-tracy_foodstorage1), [`tracy_foodstorage10`](#object-tracy_foodstorage10), [`tracy_foodstorage2`](#object-tracy_foodstorage2), [`tracy_foodstorage3`](#object-tracy_foodstorage3), [`tracy_foodstorage4`](#object-tracy_foodstorage4), [`tracy_foodstorage5`](#object-tracy_foodstorage5), [`tracy_foodstorage6`](#object-tracy_foodstorage6), [`tracy_foodstorage7`](#object-tracy_foodstorage7), [`tracy_foodstorage8`](#object-tracy_foodstorage8), [`tracy_foodstorage9`](#object-tracy_foodstorage9), [`tracy_idol1`](#object-tracy_idol1), [`tracy_idol2`](#object-tracy_idol2), [`tracy_idol3`](#object-tracy_idol3), [`tracy_idol4`](#object-tracy_idol4), [`tracy_idol5`](#object-tracy_idol5), [`tracy_idol6`](#object-tracy_idol6), [`tracy_idol7`](#object-tracy_idol7), [`tracy_max_intro`](#object-tracy_max_intro), [`tracy_max_repeating`](#object-tracy_max_repeating)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum |  | 22 |
 | `cost` | Integer |  | 22 |
@@ -175,16 +175,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `beanies_quests_intro`
+### Object: `beanies_quests_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -194,16 +194,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `beanies_quests_repeat`
+### Object: `beanies_quests_repeat`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`generate_beanies_quest`](./Enums.md#enum-generate_beanies_quest) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
@@ -215,16 +215,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `destinations`
+### Object: `destinations`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `boneyard` | Integer |  | 1 |
 | `caves` | Integer |  | 1 |
@@ -240,16 +240,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `frank_max_intro`
+### Object: `frank_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
@@ -260,16 +260,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `frank_max_repeating`
+### Object: `frank_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`gift_item_from_pool`](./Enums.md#enum-gift_item_from_pool) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
@@ -281,16 +281,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_4throom`
+### Object: `house_upgrade_4throom`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -300,16 +300,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_attic`
+### Object: `house_upgrade_attic`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -319,16 +319,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_largehouse`
+### Object: `house_upgrade_largehouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 2 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -338,16 +338,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `house_upgrade_mediumhouse`
+### Object: `house_upgrade_mediumhouse`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`house_upgrade`](./Enums.md#enum-house_upgrade) | Enum |  | 2 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -357,16 +357,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_max_intro`
+### Object: `jack_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -377,16 +377,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_max_repeating`
+### Object: `jack_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
@@ -398,16 +398,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade1`
+### Object: `jack_shopupgrade1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -417,16 +417,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade2`
+### Object: `jack_shopupgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -436,16 +436,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade3`
+### Object: `jack_shopupgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -455,16 +455,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `jack_shopupgrade4`
+### Object: `jack_shopupgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -474,16 +474,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_max_intro`
+### Object: `organ_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`gift_item`](./Enums.md#enum-gift_item) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
@@ -494,16 +494,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_max_repeating`
+### Object: `organ_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`gift_item`](./Enums.md#enum-gift_item) | Enum |  | 1 |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
@@ -515,16 +515,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_unlock`
+### Object: `organ_unlock`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -534,16 +534,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade1`
+### Object: `organ_upgrade1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -553,16 +553,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade2`
+### Object: `organ_upgrade2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -572,16 +572,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade3`
+### Object: `organ_upgrade3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -591,16 +591,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade4`
+### Object: `organ_upgrade4`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -610,16 +610,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade5`
+### Object: `organ_upgrade5`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -629,16 +629,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `organ_upgrade6`
+### Object: `organ_upgrade6`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -648,16 +648,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `prereqs`
+### Object: `prereqs`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`core`](./Enums.md#enum-core) | Enum |  | 1 |
 | [`dimensionx`](./Enums.md#enum-dimensionx) | Enum |  | 1 |
@@ -670,16 +670,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `steven_milliontrashed`
+### Object: `steven_milliontrashed`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
@@ -689,16 +689,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_aggression`
+### Object: `tink_aggression`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
@@ -708,16 +708,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_basestats`
+### Object: `tink_basestats`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
@@ -727,16 +727,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_inbreeding`
+### Object: `tink_inbreeding`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
@@ -746,16 +746,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_max_intro`
+### Object: `tink_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -766,16 +766,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_max_repeating`
+### Object: `tink_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
@@ -787,16 +787,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_prettybow`
+### Object: `tink_prettybow`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`gift_item`](./Enums.md#enum-gift_item) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -806,16 +806,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_relationships`
+### Object: `tink_relationships`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
@@ -825,16 +825,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_sexuality`
+### Object: `tink_sexuality`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
@@ -844,16 +844,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tink_tags`
+### Object: `tink_tags`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String |  | 1 |
@@ -863,19 +863,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_blankcollar1`
+### Object: `tracy_blankcollar1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -884,19 +884,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_blankcollar2`
+### Object: `tracy_blankcollar2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -905,19 +905,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_blankcollar3`
+### Object: `tracy_blankcollar3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -926,19 +926,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage1`
+### Object: `tracy_foodstorage1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -947,19 +947,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage10`
+### Object: `tracy_foodstorage10`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -968,19 +968,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage2`
+### Object: `tracy_foodstorage2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -989,19 +989,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage3`
+### Object: `tracy_foodstorage3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1010,19 +1010,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage4`
+### Object: `tracy_foodstorage4`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1031,19 +1031,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage5`
+### Object: `tracy_foodstorage5`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1052,19 +1052,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage6`
+### Object: `tracy_foodstorage6`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1073,19 +1073,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage7`
+### Object: `tracy_foodstorage7`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1094,19 +1094,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage8`
+### Object: `tracy_foodstorage8`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1115,19 +1115,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_foodstorage9`
+### Object: `tracy_foodstorage9`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1136,19 +1136,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol1`
+### Object: `tracy_idol1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1157,19 +1157,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol2`
+### Object: `tracy_idol2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1178,19 +1178,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol3`
+### Object: `tracy_idol3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1199,19 +1199,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol4`
+### Object: `tracy_idol4`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1220,19 +1220,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol5`
+### Object: `tracy_idol5`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1241,19 +1241,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol6`
+### Object: `tracy_idol6`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1262,19 +1262,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_idol7`
+### Object: `tracy_idol7`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 | `shop_level_up` | Integer |  | 1 |
@@ -1283,20 +1283,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_max_intro`
+### Object: `tracy_max_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 
@@ -1304,21 +1304,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `tracy_max_repeating`
+### Object: `tracy_max_repeating`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
-| [`tracy_special_item`](#context-tracy_special_item) | Block |  | 1 |
+| [`tracy_special_item`](#object-tracy_special_item) | Object |  | 1 |
 | `favor` | Integer |  | 1 |
 | `required_age` | Integer |  | 1 |
 
@@ -1326,16 +1326,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_1`
+### Object: `upgrade_storage_1`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -1347,16 +1347,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_2`
+### Object: `upgrade_storage_2`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -1368,16 +1368,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_3`
+### Object: `upgrade_storage_3`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -1389,16 +1389,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_4`
+### Object: `upgrade_storage_4`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -1410,16 +1410,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_5`
+### Object: `upgrade_storage_5`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -1431,16 +1431,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_6`
+### Object: `upgrade_storage_6`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -1452,16 +1452,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_7`
+### Object: `upgrade_storage_7`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
 | `favor` | Integer |  | 1 |
@@ -1473,16 +1473,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_crazy`
+### Object: `upgrade_storage_repeating_crazy`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -1497,16 +1497,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_hard`
+### Object: `upgrade_storage_repeating_hard`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -1521,16 +1521,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_impossible`
+### Object: `upgrade_storage_repeating_impossible`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 1 |
@@ -1545,16 +1545,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_intro`
+### Object: `upgrade_storage_repeating_intro`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
@@ -1568,16 +1568,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Context: `upgrade_storage_repeating_normal`
+### Object: `upgrade_storage_repeating_normal`
 
 <details>
 <summary><b>Expand</b></summary>
 
 **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](#context-root)
+> **Referenced by:** [`ROOT`](#object-root)
 
-| Property Key | Type | Definition | Count |
+| Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`level_display`](./Enums.md#enum-level_display) | Enum |  | 1 |
 | [`reward_text`](./Strings.md#string-reward_text) | String |  | 1 |
