@@ -14,7 +14,7 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`CreateGlobalModifiers`](#createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 5 |
-| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. | 3 |
+| `BloodRain` | Integer | Applies or references the 'BloodRain' effect/state. | 2 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
 | `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the 'NextPlayerCatTakesExtraTurn' effect/state. | 1 |
 | `NoCorpses` | Integer | Applies or references the 'NoCorpses' effect/state. | 1 |

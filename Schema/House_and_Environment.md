@@ -17,39 +17,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1274 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 199 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array |  | 12 |
-| `height` | Integer |  | 8 |
-| `width` | Integer |  | 8 |
-| [`reverb_empty`](#object-reverb_empty) | Object |  | 7 |
-| [`reverb_full`](#object-reverb_full) | Object |  | 7 |
-| [`preset`](./Enums.md#enum-preset) | Enum |  | 4 |
-| `amount` | Float |  | 4 |
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 3 |
+| `height` | Integer |  | 16 |
+| `width` | Integer |  | 16 |
+| [`reverb_empty`](#object-reverb_empty) | Object |  | 16 |
+| [`reverb_full`](#object-reverb_full) | Object |  | 16 |
+| [`preset`](./Enums.md#enum-preset) | Enum |  | 8 |
+| `amount` | Float |  | 8 |
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 6 |
 | [`n`](./Arrays.md#array-n) | Array |  | 2 |
-| `volume_adjustment` | Float |  | 2 |
-| [`BasementUpgrade2`](#object-basementupgrade2) | Object |  | 1 |
-| [`BasementUpgrade3`](#object-basementupgrade3) | Object |  | 1 |
-| [`BasementUpgrade4`](#object-basementupgrade4) | Object |  | 1 |
-| [`BasementUpgrade5`](#object-basementupgrade5) | Object |  | 1 |
-| [`BasementUpgrade`](#object-basementupgrade) | Object |  | 1 |
-| [`Default`](#object-default) | Object |  | 1 |
-| [`Floor1_Large`](#object-floor1_large) | Object |  | 1 |
-| [`Floor1_Small`](#object-floor1_small) | Object |  | 1 |
-| [`House1`](#object-house1) | Object |  | 1 |
-| [`House2`](#object-house2) | Object |  | 1 |
-| [`House3`](#object-house3) | Object |  | 1 |
-| [`LargeHouse_Floor2Large`](#object-largehouse_floor2large) | Object |  | 1 |
-| [`LargeHouse_Floor2Small`](#object-largehouse_floor2small) | Object |  | 1 |
-| [`LargeHouse`](#object-largehouse) | Object |  | 1 |
-| [`MediumHouse_SmallRoom`](#object-mediumhouse_smallroom) | Object |  | 1 |
-| [`MediumHouse`](#object-mediumhouse) | Object |  | 1 |
-| [`SmallAttic`](#object-smallattic) | Object |  | 1 |
-| [`SmallHouse_Attic`](#object-smallhouse_attic) | Object |  | 1 |
+| `volume_adjustment` | Float |  | 4 |
+| [`BasementUpgrade2`](#object-basementupgrade2) | Object |  | 2 |
+| [`BasementUpgrade3`](#object-basementupgrade3) | Object |  | 2 |
+| [`BasementUpgrade4`](#object-basementupgrade4) | Object |  | 2 |
+| [`BasementUpgrade5`](#object-basementupgrade5) | Object |  | 2 |
+| [`BasementUpgrade`](#object-basementupgrade) | Object |  | 2 |
+| [`Default`](#object-default) | Object |  | 199 |
+| [`Floor1_Large`](#object-floor1_large) | Object |  | 2 |
+| [`Floor1_Small`](#object-floor1_small) | Object |  | 2 |
+| [`House1`](#object-house1) | Object |  | 2 |
+| [`House2`](#object-house2) | Object |  | 2 |
+| [`House3`](#object-house3) | Object |  | 2 |
+| [`LargeHouse_Floor2Large`](#object-largehouse_floor2large) | Object |  | 2 |
+| [`LargeHouse_Floor2Small`](#object-largehouse_floor2small) | Object |  | 2 |
+| [`LargeHouse`](#object-largehouse) | Object |  | 2 |
+| [`MediumHouse_SmallRoom`](#object-mediumhouse_smallroom) | Object |  | 2 |
+| [`MediumHouse`](#object-mediumhouse) | Object |  | 2 |
+| [`SmallAttic`](#object-smallattic) | Object |  | 2 |
+| [`SmallHouse_Attic`](#object-smallhouse_attic) | Object |  | 2 |
 | [`Thunderstorm`](#object-thunderstorm) | Object |  | 1 |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array |  | 1 |
-| [`id`](./Enums.md#enum-id) | Enum |  | 1 |
+| [`id`](./Enums.md#enum-id) | Enum |  | 16 |
 | [`p`](./Arrays.md#array-p) | Array |  | 1 |
 
 </details>
@@ -88,7 +88,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`number`](./Arrays.md#array-number) | Array |  | 27 |
+| [`number`](./Arrays.md#array-number) | Array |  | 3 |
 | [`object`](./Arrays.md#array-object) | Enum |  | 19 |
 | [`tile`](./Enums.md#enum-tile) | Enum |  | 7 |
 | [`trap`](./Enums.md#enum-trap) | Enum |  | 2 |
@@ -108,9 +108,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`preset`](./Enums.md#enum-preset) | Enum |  | 9 |
-| `amount` | Float |  | 9 |
-| `volume_adjustment` | Float |  | 9 |
+| [`preset`](./Enums.md#enum-preset) | Enum |  | 18 |
+| `amount` | Float |  | 18 |
+| `volume_adjustment` | Float |  | 18 |
 
 </details>
 
@@ -127,8 +127,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`preset`](./Enums.md#enum-preset) | Enum |  | 9 |
-| `amount` | Float |  | 9 |
+| [`preset`](./Enums.md#enum-preset) | Enum |  | 18 |
+| `amount` | Float |  | 18 |
 
 </details>
 
@@ -167,7 +167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 3 |
 | [`min_radius`](./Enums.md#enum-min_radius) | Float |  | 2 |
-| [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array |  | 2 |
+| [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array |  | 1 |
 | `max_radius` | Float |  | 2 |
 | [`number`](./Arrays.md#array-number) | Array |  | 1 |
 
@@ -290,8 +290,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| [`tag`](./Enums.md#enum-tag) | Enum |  | 8 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
@@ -309,9 +309,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 72 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 14 |
-| [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
+| [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 72 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
@@ -471,8 +471,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -489,8 +489,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -507,8 +507,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -525,8 +525,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -543,8 +543,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -579,9 +579,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 91 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 91 |
+| [`tag`](./Enums.md#enum-tag) | Enum |  | 91 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
 
 </details>
@@ -621,8 +621,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`set_house`](./Enums.md#enum-set_house) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`set_house`](./Enums.md#enum-set_house) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -673,11 +673,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
-| [`reverb_empty`](#object-reverb_empty) | Object |  | 1 |
-| [`reverb_full`](#object-reverb_full) | Object |  | 1 |
-| `height` | Integer |  | 1 |
-| `width` | Integer |  | 1 |
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 2 |
+| [`reverb_empty`](#object-reverb_empty) | Object |  | 2 |
+| [`reverb_full`](#object-reverb_full) | Object |  | 2 |
+| `height` | Integer |  | 2 |
+| `width` | Integer |  | 2 |
 
 </details>
 
@@ -694,11 +694,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
-| [`reverb_empty`](#object-reverb_empty) | Object |  | 1 |
-| [`reverb_full`](#object-reverb_full) | Object |  | 1 |
-| `height` | Integer |  | 1 |
-| `width` | Integer |  | 1 |
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 2 |
+| [`reverb_empty`](#object-reverb_empty) | Object |  | 2 |
+| [`reverb_full`](#object-reverb_full) | Object |  | 2 |
+| `height` | Integer |  | 2 |
+| `width` | Integer |  | 2 |
 
 </details>
 
@@ -715,12 +715,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object |  | 1 |
-| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
-| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
-| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](#object-room_positions) | Object |  | 1 |
-| `zoomout_catvolume` | Float |  | 1 |
+| [`aux_positions`](#object-aux_positions) | Object |  | 2 |
+| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 2 |
+| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 2 |
+| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 2 |
+| [`room_positions`](#object-room_positions) | Object |  | 2 |
+| `zoomout_catvolume` | Float |  | 2 |
 
 </details>
 
@@ -737,12 +737,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object |  | 1 |
-| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
-| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
-| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](#object-room_positions) | Object |  | 1 |
-| `zoomout_catvolume` | Float |  | 1 |
+| [`aux_positions`](#object-aux_positions) | Object |  | 2 |
+| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 2 |
+| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 2 |
+| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 2 |
+| [`room_positions`](#object-room_positions) | Object |  | 2 |
+| `zoomout_catvolume` | Float |  | 2 |
 
 </details>
 
@@ -759,12 +759,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object |  | 1 |
-| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 1 |
-| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 1 |
-| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 1 |
-| [`room_positions`](#object-room_positions) | Object |  | 1 |
-| `zoomout_catvolume` | Float |  | 1 |
+| [`aux_positions`](#object-aux_positions) | Object |  | 2 |
+| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum |  | 2 |
+| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum |  | 2 |
+| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum |  | 2 |
+| [`room_positions`](#object-room_positions) | Object |  | 2 |
+| `zoomout_catvolume` | Float |  | 2 |
 
 </details>
 
@@ -781,8 +781,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`set_house`](./Enums.md#enum-set_house) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`set_house`](./Enums.md#enum-set_house) | Enum |  | 2 |
 
 </details>
 
@@ -799,8 +799,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -817,8 +817,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -835,8 +835,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`set_house`](./Enums.md#enum-set_house) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`set_house`](./Enums.md#enum-set_house) | Enum |  | 2 |
 
 </details>
 
@@ -853,8 +853,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 
@@ -893,11 +893,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array |  | 1 |
-| [`id`](./Enums.md#enum-id) | Enum |  | 1 |
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 1 |
+| [`id`](./Enums.md#enum-id) | Enum |  | 2 |
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum |  | 2 |
 | [`n`](./Arrays.md#array-n) | Array |  | 1 |
-| `height` | Integer |  | 1 |
-| `width` | Integer |  | 1 |
+| `height` | Integer |  | 2 |
+| `width` | Integer |  | 2 |
 
 </details>
 
@@ -914,8 +914,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 1 |
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 1 |
+| [`prereq`](./Enums.md#enum-prereq) | Enum |  | 2 |
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum |  | 2 |
 
 </details>
 

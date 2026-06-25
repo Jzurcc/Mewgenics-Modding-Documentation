@@ -15,21 +15,21 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 2166 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | [`FormChange`](./Enums.md#enum-formchange) | Enum | Transforms the character into a different state or form (e.g., Rage, HasCat). | 114 |
 | [`Stun`](./Arrays.md#array-stun) | Array | Applies or references the 'Stun' effect/state. | 106 |
-| `Burn` | Number | Applies or references the 'Burn' effect/state. | 95 |
-| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 84 |
-| [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 76 |
+| `Burn` | Number | Applies or references the 'Burn' effect/state. | 1 |
+| `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 8 |
+| [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 |
 | `IgnoreSelf` | Integer | Applies or references the 'IgnoreSelf' effect/state. | 75 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 72 |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum | Transforms the terrain tile under the target. | 62 |
-| `Shield` | Number | Applies or references the 'Shield' effect/state. | 59 |
-| [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 53 |
-| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 52 |
+| `Shield` | Number | Applies or references the 'Shield' effect/state. | 422 |
+| [`Confusion`](./Arrays.md#array-confusion) | Number | Applies or references the 'Confusion' effect/state. | 6 |
+| `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 2 |
 | [`odds`](./Enums.md#enum-odds) | Float | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 50 |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Number | Applies or references the 'AllStatsUp' effect/state. | 49 |
-| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 48 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 981 |
 | [`ApplyToSource`](#applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 47 |
 | `Temporary` | Object | A wrapper object for applying status effects that automatically expire. | 46 |
 | [`Conditional_HasTag`](#conditionalhastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 42 |
@@ -37,25 +37,25 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Conditional_Enemy`](#conditionalenemy) | Object | Conditional trigger: Executes nested logic if the target is hostile to the caster. | 38 |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Applies or references the 'VisualFXTile' effect/state. | 36 |
 | [`BounceObject`](./Enums.md#enum-bounceobject) | Enum | Spawns a physics object that visually bounces off the target. | 35 |
-| [`Slow`](./Arrays.md#array-slow) | Array | Applies or references the 'Slow' effect/state. | 34 |
+| [`Slow`](./Arrays.md#array-slow) | Array | Applies or references the 'Slow' effect/state. | 4 |
 | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 33 |
-| [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 32 |
+| [`Immobile`](./Arrays.md#array-immobile) | Number | Applies or references the 'Immobile' effect/state. | 4 |
 | `ManaGain` | Number | Applies or references the 'ManaGain' effect/state. | 31 |
 | [`Freeze`](./Arrays.md#array-freeze) | Array | Applies or references the 'Freeze' effect/state. | 29 |
 | `StrengthUp` | Number | Applies or references the 'StrengthUp' effect/state. | 29 |
 | `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 29 |
 | [`Petrify`](./Arrays.md#array-petrify) | Array | Applies or references the 'Petrify' effect/state. | 28 |
-| `SpawnExtraThingsOnBattleStart` | Object | Examples: `{ ... }` | 28 |
+| `SpawnExtraThingsOnBattleStart` | Object | Examples: `{ ... }` | 2 |
 | [`TransformAbility`](./Enums.md#enum-transformability) | Enum | Applies or references the 'TransformAbility' effect/state. | 28 |
 | [`Conditional_Ally`](#conditionalally) | Object | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 27 |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array | Applies or references the 'ConstitutionUp' effect/state. | 26 |
 | [`EvolveAbilityFromPool`](./Enums.md#enum-evolveabilityfrompool) | Enum | Upgrades or transforms an existing ability into a new one from the specified pool. | 26 |
-| [`Weakness`](./Arrays.md#array-weakness) | Array | Applies or references the 'Weakness' effect/state. | 26 |
-| [`Blind`](./Arrays.md#array-blind) | Array | Applies or references the 'Blind' effect/state. | 25 |
+| [`Weakness`](./Arrays.md#array-weakness) | Array | Applies or references the 'Weakness' effect/state. | 4 |
+| [`Blind`](./Arrays.md#array-blind) | Array | Applies or references the 'Blind' effect/state. | 6 |
 | [`Madness`](./Arrays.md#array-madness) | Number | Applies the Madness debuff/status effect. | 24 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 23 |
 | `KnockUpAndAway` | Object | Displaces the target vertically and horizontally away from the source. | 23 |
-| `Leech` | Number | Applies or references the 'Leech' effect/state. | 22 |
+| `Leech` | Number | Applies or references the 'Leech' effect/state. | 6 |
 | `RandomStatusFromPool` | Object | Selects and applies a random status effect from the provided nested object. | 22 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 22 |
 | `IntelligenceUp` | Number | Applies or references the 'IntelligenceUp' effect/state. | 21 |
@@ -69,9 +69,9 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 17 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 16 |
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 16 |
-| `Leeches` | Number | Applies or references the 'Leeches' effect/state. | 16 |
+| `Leeches` | Number | Applies or references the 'Leeches' effect/state. | 2 |
 | `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. | 16 |
-| `Revive` | Number | Applies or references the 'Revive' effect/state. | 16 |
+| `Revive` | Number | Applies or references the 'Revive' effect/state. | 2 |
 | [`ApplyToSourceOnKill`](#applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 15 |
 | [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 15 |
 | `Cleave` | Object | Causes the attack to hit adjacent enemies alongside the primary target. | 15 |
@@ -91,12 +91,12 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Conditional_HasStatus`](#conditionalhasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 13 |
 | [`Marked`](./Arrays.md#array-marked) | Array | Applies or references the 'Marked' effect/state. | 13 |
 | [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Applies or references the 'VisualFX' effect/state. | 13 |
-| `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 12 |
+| `AlphaCat` | Number | Applies or references the 'AlphaCat' effect/state. | 2 |
 | [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 12 |
 | `Displace` | Integer | Applies or references the 'Displace' effect/state. | 12 |
 | `instant` | Boolean | Examples: `true` | 12 |
 | [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean | If true, treats the consumption as riding/mounting instead of eating. | 12 |
-| `rock` | Variable |  | 12 |
+| `rock` | Variable |  | 46 |
 | [`ChanceToBreakFree`](#chancetobreakfree) | Object | Provides a probability to escape a grapple or restraining effect. | 11 |
 | [`DoScreenShake`](#doscreenshake) | Object | Triggers a camera screen shake effect. | 11 |
 | [`Instakill`](./Arrays.md#array-instakill) | Number | Applies or references the 'Instakill' effect/state. | 11 |
@@ -106,13 +106,13 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Conditional_FormulaIsPositive`](#conditional_formulaispositive) | Object | Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0. | 10 |
 | `DexterityUp` | Number | Applies or references the 'DexterityUp' effect/state. | 10 |
 | `KnockbackDamageImmuneUntilSettled` | Integer | Applies or references the 'KnockbackDamageImmuneUntilSettled' effect/state. | 10 |
-| [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array | Applies or references the 'MagicWeakness' effect/state. | 10 |
+| [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array | Applies or references the 'MagicWeakness' effect/state. | 2 |
 | `PartialPurge` | Integer | Applies or references the 'PartialPurge' effect/state. | 10 |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 10 |
 | `X` | Variable |  | 10 |
 | `Ammo` | Number | Applies or references the 'Ammo' effect/state. | 9 |
 | `ChanceToBreak` | Number | Applies or references the 'ChanceToBreak' effect/state. | 9 |
-| `Craft` | Object | Synthesizes or spawns a new item from a specific pool. | 9 |
+| `Craft` | Object | Synthesizes or spawns a new item from a specific pool. | 2 |
 | `DeferVaporize` | Integer | Applies or references the 'DeferVaporize' effect/state. | 9 |
 | `IgnoreDamage` | Integer | Applies or references the 'IgnoreDamage' effect/state. | 9 |
 | `OverrideChainKnockback` | Number | Applies or references the 'OverrideChainKnockback' effect/state. | 9 |
@@ -122,7 +122,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Grappled`](./Arrays.md#array-grappled) | Integer | Applies or references the 'Grappled' effect/state. | 8 |
 | `SpreadDisease` | Object | Provides a chance to transmit a disease status to adjacent targets. | 8 |
 | [`Tarred`](./Arrays.md#array-tarred) | Array | Applies or references the 'Tarred' effect/state. | 8 |
-| `Tech` | Number | Applies or references the 'Tech' effect/state. | 8 |
+| `Tech` | Number | Applies or references the 'Tech' effect/state. | 2 |
 | [`formula`](./Enums.md#enum-formula) | Enum | The math expression to evaluate. | 8 |
 | `wet` | Boolean | Examples: `false, true` | 8 |
 | `ApplyStatusIfCrit` | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 7 |
@@ -140,13 +140,13 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array | Applies or references the 'TriggerWerewolfTransform' effect/state. | 7 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 7 |
 | [`form`](./Enums.md#enum-form) | Enum | The specific form ID to check for. | 7 |
-| `BackflipWhenTargeted` | Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 6 |
+| `BackflipWhenTargeted` | Object | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 2 |
 | [`BounceRock`](./Enums.md#enum-bouncerock) | Enum | Applies or references the 'BounceRock' effect/state. | 6 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 6 |
 | `ClearStarving` | Integer | Applies or references the 'ClearStarving' effect/state. | 6 |
 | [`Conditional_HealthThreshold`](#conditionalhealththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 6 |
 | [`Conditional_Object`](#conditional_object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 6 |
-| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Object | Adds a temporary bonus ability to the character's hand/deck. | 6 |
+| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Object | Adds a temporary bonus ability to the character's hand/deck. | 2 |
 | `Die` | Integer | Applies or references the 'Die' effect/state. | 6 |
 | [`DoDistortionRing`](#dodistortionring) | Object | Creates a visual distortion ring effect on the screen. | 6 |
 | `Doomed` | Number | Applies or references the 'Doomed' effect/state. | 6 |
@@ -155,7 +155,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `FlatLeech` | Number | Applies or references the 'FlatLeech' effect/state. | 6 |
 | `FloatingRockTrap` | Integer | Applies or references the 'FloatingRockTrap' effect/state. | 6 |
 | `ForceMoveTowards` | Integer | Applies or references the 'ForceMoveTowards' effect/state. | 6 |
-| `Metronome` | Integer | Executes a random musical or metronome ability. | 6 |
+| `Metronome` | Integer | Executes a random musical or metronome ability. | 4 |
 | [`PopAndSpawn`](./Enums.md#enum-popandspawn) | Enum | Destroys the target and replaces it with a new spawned entity. | 6 |
 | `RandomInjury` | Number | Applies or references the 'RandomInjury' effect/state. | 6 |
 | [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array | Applies or references the 'RandomStatDown' effect/state. | 6 |
@@ -183,14 +183,14 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`ObjectOnHit`](./Enums.md#enum-objectonhit) | Enum | Spawns a specific physics/item object upon impact. | 5 |
 | [`ObjectOnHitEmpty`](./Enums.md#enum-objectonhitempty) | Enum | Applies or references the 'ObjectOnHitEmpty' effect/state. | 5 |
 | `PermanentCharm` | Integer | Applies the 'PermanentCharm' effect. | 5 |
-| `Purge` | Number | Applies or references the 'Purge' effect/state. | 5 |
+| `Purge` | Number | Applies or references the 'Purge' effect/state. | 2 |
 | `RefreshMovePointsIfHit` | Integer | Applies or references the 'RefreshMovePointsIfHit' effect/state. | 5 |
 | `SafeDie` | Number | Applies or references the 'SafeDie' effect/state. | 5 |
-| `SoulLink` | Number | Applies or references the 'SoulLink' effect/state. | 5 |
+| `SoulLink` | Number | Applies or references the 'SoulLink' effect/state. | 2 |
 | `SpawnBearTrap` | Integer | Applies or references the 'SpawnBearTrap' effect/state. | 5 |
 | [`SpawnRock`](./Arrays.md#array-spawnrock) | Integer | Applies or references the 'SpawnRock' effect/state. | 5 |
 | [`SpecificInjury`](./Enums.md#enum-specificinjury) | Enum | Applies or references the 'SpecificInjury' effect/state. | 5 |
-| [`Stealth`](./Arrays.md#array-stealth) | Number | Applies or references the 'Stealth' effect/state. | 5 |
+| [`Stealth`](./Arrays.md#array-stealth) | Number | Applies or references the 'Stealth' effect/state. | 2 |
 | `UpgradeRandomAbility` | Integer | Applies or references the 'UpgradeRandomAbility' effect/state. | 5 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 5 |
@@ -200,7 +200,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 4 |
 | [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional constraint. Nested properties only trigger if this is true. | 4 |
 | [`Conditional_Familiar`](#conditional_familiar) | Object | Conditional trigger: Executes nested logic if the target is a familiar. | 4 |
-| [`Default`](./Enums.md#enum-default) | Enum | `release` | 4 |
+| [`Default`](./Enums.md#enum-default) | Enum | `release` | 199 |
 | `DeleteObject` | Integer | Applies or references the 'DeleteObject' effect/state. | 4 |
 | `DestroyTrinket` | Number | Applies or references the 'DestroyTrinket' effect/state. | 4 |
 | `DieViolently` | Integer | Applies or references the 'DieViolently' effect/state. | 4 |
@@ -211,7 +211,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `FreeSpell` | Integer | Applies or references the 'FreeSpell' effect/state. | 4 |
 | [`LateStatusApplication`](#latestatusapplication) | Object | Applies a status effect after all primary damage and effects have fully resolved. | 4 |
 | `LowerAmbientLight` | Object | A visual effect that dims the map's lighting. | 4 |
-| `Rain` | Integer | Character Form: Behavior and stats for the 'Rain' state. | 4 |
+| `Rain` | Integer | Character Form: Behavior and stats for the 'Rain' state. | 1 |
 | `Reanimate` | Number | Applies or references the 'Reanimate' effect/state. | 4 |
 | `RefreshWeaponAbility` | Integer | Applies or references the 'RefreshWeaponAbility' effect/state. | 4 |
 | `RemoveActPoints` | Integer | Applies or references the 'RemoveActPoints' effect/state. | 4 |
@@ -222,12 +222,12 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`TempPassiveWhileHasStatus`](#temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 4 |
 | `Thrash` | Variable |  | 4 |
 | [`TimeDelayStatusApplication`](#timedelaystatusapplication) | Object | Delays the nested effects by a specified amount of real-time seconds. | 4 |
-| `Windy` | Integer | Examples: `{ ... }` | 4 |
+| `Windy` | Integer | Examples: `{ ... }` | 1 |
 | `moonhand` | Variable |  | 4 |
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 3 |
 | [`ApplyMultipleTimes`](#applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 3 |
 | `Attraction` | Integer | Applies or references the 'Attraction' effect/state. | 3 |
-| `BlackShard` | Variable |  | 3 |
+| `BlackShard` | Variable |  | 8 |
 | `BonusKnockbackDamage` | Number | Applies or references the 'BonusKnockbackDamage' effect/state. | 3 |
 | [`CatPartsSizeScaleStatus`](#catpartssizescalestatus) | Object | Visually scales specific body parts of a character. | 3 |
 | [`CollideWithConsumed`](./Math_Equations.md) | Equation | Applies or references the 'CollideWithConsumed' effect/state. | 3 |
@@ -252,7 +252,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Meteornado` | Integer | Examples: `1` | 3 |
 | `NextAttackBonusRange` | Integer | Applies or references the 'NextAttackBonusRange' effect/state. | 3 |
 | `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. | 3 |
-| `PoisonLace` | Number | Applies or references the 'PoisonLace' effect/state. | 3 |
+| `PoisonLace` | Number | Applies or references the 'PoisonLace' effect/state. | 2 |
 | `PullSourceToTarget` | Number | Applies or references the 'PullSourceToTarget' effect/state. | 3 |
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 |
 | `RemoveMovePoints` | Integer | Applies or references the 'RemoveMovePoints' effect/state. | 3 |
@@ -273,11 +273,11 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TriggerGameEnding` | Integer | Applies or references the 'TriggerGameEnding' effect/state. | 3 |
 | `VaporizeTarget` | Integer | Applies or references the 'VaporizeTarget' effect/state. | 3 |
 | `WaterTile` | Variable |  | 3 |
-| `ZombieCatFamiliar` | Variable |  | 3 |
+| `ZombieCatFamiliar` | Variable |  | 4 |
 | `drop_on_self_death` | Boolean | Examples: `true` | 3 |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
 | [`extra_statuses`](#extra_statuses) | Object | Additional generic status applications. | 3 |
-| `poop` | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 3 |
+| `poop` | Object | Event Object: Story branch or dialog option representing the \'Poop\' action. | 2 |
 | `AddLeechesStatus` | Integer | Applies or references the 'AddLeechesStatus' effect/state. | 2 |
 | `AddSpiritBombCharges` | Integer | Applies or references the 'AddSpiritBombCharges' effect/state. | 2 |
 | [`ApplyToRandomPartyMemberIfPossible`](#applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 2 |
@@ -288,7 +288,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Bound` | Integer | Applies or references the 'Bound' effect/state. | 2 |
 | `CancelPrimedAbilities` | Integer | Applies or references the 'CancelPrimedAbilities' effect/state. | 2 |
 | [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Applies or references the 'ChangeFaction' effect/state. | 2 |
-| [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 2 |
+| [`CharacterTypeGainsStatusAtBattleStart`](#charactertypegainsstatusatbattlestart) | Object | Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle. | 1 |
 | `CharmedForceAttack` | Integer | Applies or references the 'CharmedForceAttack' effect/state. | 2 |
 | `ClearNegativeEffects` | Integer | Applies the 'ClearNegativeEffects' effect. | 2 |
 | `CollideWithThrowTarget` | Integer | Applies or references the 'CollideWithThrowTarget' effect/state. | 2 |
@@ -365,8 +365,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `SetKnockback` | Integer | Applies or references the 'SetKnockback' effect/state. | 2 |
 | `Shatter` | Integer | Applies or references the 'Shatter' effect/state. | 2 |
 | `SignalFinalBossShieldBroke` | Integer | Applies or references the 'SignalFinalBossShieldBroke' effect/state. | 2 |
-| `SmartMetronome` | Integer | Executes a 'smart' random ability that aims to be beneficial based on context. | 2 |
-| `Snow` | Integer | Examples: `{ ... }` | 2 |
+| `SmartMetronome` | Integer | Executes a 'smart' random ability that aims to be beneficial based on context. | 4 |
+| `Snow` | Integer | Examples: `{ ... }` | 1 |
 | `SpawnBearTrapIfHitKills` | Integer | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 2 |
 | [`SpawnFlames`](./Arrays.md#array-spawnflames) | Array | Applies or references the 'SpawnFlames' effect/state. | 2 |
 | [`SpecialGodRays`](#specialgodrays) | Object | Examples: `{ ... }` | 2 |
@@ -389,8 +389,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`XIsTargetHealth`](#xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 2 |
 | `gamewin` | Variable |  | 2 |
 | `humanoid` | Variable |  | 2 |
-| `megadino` | Variable |  | 2 |
-| `moonhead` | Variable |  | 2 |
+| `megadino` | Variable |  | 1 |
+| `moonhead` | Variable |  | 1 |
 | `the_coven` | Variable |  | 2 |
 | `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 |
 | `AIFavorLowHealth` | Integer | Applies or references the 'AIFavorLowHealth' effect/state. | 1 |
@@ -402,22 +402,22 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `AlliesTakeExtraTurn` | Integer | Applies or references the 'AlliesTakeExtraTurn' effect/state. | 1 |
 | [`AllyInfested`](#allyinfested) | Object | Examples: `{ ... }` | 1 |
 | [`AlternateIdleAnimation`](./Enums.md#enum-alternateidleanimation) | Enum | Applies or references the 'AlternateIdleAnimation' effect/state. | 1 |
-| `AntlerSwipe` | Variable |  | 1 |
+| `AntlerSwipe` | Variable |  | 2 |
 | `AntlerSwipe2` | Variable |  | 1 |
 | `ApplyShieldToApplierBasedOnMaxHealth` | Integer | Applies or references the 'ApplyShieldToApplierBasedOnMaxHealth' effect/state. | 1 |
 | [`ApplyStatusesNextTurnBegin`](#applystatusesnextturnbegin) | Object | Delays the application of the nested status effects until the start of the target's next turn. | 1 |
 | [`ApplyToOthersWithSharedTagAndFaction`](#applytootherswithsharedtagandfaction) | Object | Redirects the nested effects to apply to all other entities on the map that share the target's faction and specified tags. | 1 |
 | [`ApplyToRandomClosestAlly`](#applytorandomclosestally) | Object | Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them. | 1 |
 | `BasicDashAttackMove_NoKnockback` | Variable |  | 1 |
-| `BerserkDash` | Variable |  | 1 |
-| `BirthSquirrel` | Variable |  | 1 |
+| `BerserkDash` | Variable |  | 2 |
+| `BirthSquirrel` | Variable |  | 4 |
 | `BlackHoleSuck` | Integer | Applies or references the 'BlackHoleSuck' effect/state. | 1 |
-| `BlankTile` | Number | Examples: `5` | 1 |
+| `BlankTile` | Number | Examples: `5` | 2 |
 | `Bloodzerked` | Integer | Applies or references the 'Bloodzerked' effect/state. | 1 |
 | `BombRatTurtle` | Integer | Applies or references the 'BombRatTurtle' effect/state. | 1 |
 | `BonusDamageBasedOnMana` | Integer | Applies or references the 'BonusDamageBasedOnMana' effect/state. | 1 |
 | [`Boris`](./Enums.md#enum-boris) | Enum | `MegaGuppy_TransformBoris` | 1 |
-| `Boulder` | Variable |  | 1 |
+| `Boulder` | Variable |  | 2 |
 | `BrambleTile` | Variable |  | 1 |
 | `ButterflySwarm` | Integer | Examples: `2` | 1 |
 | `BypassRockKnockback` | Integer | Applies or references the 'BypassRockKnockback' effect/state. | 1 |
@@ -426,8 +426,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ChampionUpgradeNextMinion` | Integer | Applies or references the 'ChampionUpgradeNextMinion' effect/state. | 1 |
 | `ChaosBossFlipMidTeleport` | Integer | Applies or references the 'ChaosBossFlipMidTeleport' effect/state. | 1 |
 | `ChaosBossFormChange` | Integer | Applies or references the 'ChaosBossFormChange' effect/state. | 1 |
-| `ChargeFists` | Integer | Applies or references the 'ChargeFists' effect/state. | 1 |
-| `CharmTrap` | Variable |  | 1 |
+| `ChargeFists` | Integer | Applies or references the 'ChargeFists' effect/state. | 2 |
+| `CharmTrap` | Variable |  | 2 |
 | `CharmedFacingForceAttack` | Integer | Applies or references the 'CharmedFacingForceAttack' effect/state. | 1 |
 | `Chitter` | Variable |  | 1 |
 | `ClearDefaultDebris` | Integer | Examples: `1` | 1 |
@@ -472,15 +472,15 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `DoubleCast` | Integer | Applies or references the 'DoubleCast' effect/state. | 1 |
 | `DoubleCastSpellsEachTurn_Status` | Number | Applies or references the 'DoubleCastSpellsEachTurn_Status' effect/state. | 1 |
 | `DrainAllyCatsForFleshGolem` | Integer | Applies or references the 'DrainAllyCatsForFleshGolem' effect/state. | 1 |
-| [`Druid`](./Arrays.md#array-druid) | Object | Applies or references the 'Druid' effect/state. | 1 |
+| [`Druid`](./Arrays.md#array-druid) | Object | Applies or references the 'Druid' effect/state. | 80 |
 | `DualSword` | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 |
 | `DuplicateRandomEquippedItem` | Integer | Applies or references the 'DuplicateRandomEquippedItem' effect/state. | 1 |
 | `DybbukManualExitTag` | Variable |  | 1 |
 | [`DybbukPossessed`](#dybbukpossessed) | Object | Defines the abilities and behaviors available when possessing another entity. | 1 |
 | `EggSackTrap` | Variable |  | 1 |
 | `EliteUpgradeNextMinion` | Integer | Applies or references the 'EliteUpgradeNextMinion' effect/state. | 1 |
-| `EmptyMind` | Integer | Applies or references the 'EmptyMind' effect/state. | 1 |
-| `Enlarge` | Integer | Applies or references the 'Enlarge' effect/state. | 1 |
+| `EmptyMind` | Integer | Applies or references the 'EmptyMind' effect/state. | 2 |
+| `Enlarge` | Integer | Applies or references the 'Enlarge' effect/state. | 2 |
 | [`EnterMount`](./Enums.md#enum-entermount) | Enum | Applies or references the 'EnterMount' effect/state. | 1 |
 | `EtherSoakedRag` | Variable |  | 1 |
 | `EventBounty` | Integer | Applies or references the 'EventBounty' effect/state. | 1 |
@@ -491,12 +491,12 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Explosive`](./Enums.md#enum-explosive) | Enum | `MegaGuppy_TransformExplosive` | 1 |
 | `FactionDisguiseSource` | Integer | Applies or references the 'FactionDisguiseSource' effect/state. | 1 |
 | `FastKnockback` | Integer | Applies or references the 'FastKnockback' effect/state. | 1 |
-| [`Fighter`](./Arrays.md#array-fighter) | Object | Applies or references the 'Fighter' effect/state. | 1 |
+| [`Fighter`](./Arrays.md#array-fighter) | Object | Applies or references the 'Fighter' effect/state. | 80 |
 | `FinalBossQueueBeam` | Integer | Applies or references the 'FinalBossQueueBeam' effect/state. | 1 |
 | `FireArmor` | Integer | Applies or references the 'FireArmor' effect/state. | 1 |
 | `FireArmor2` | Integer | Applies or references the 'FireArmor2' effect/state. | 1 |
 | `FireflySwarm` | Integer | Examples: `2` | 1 |
-| `FlySwarm` | Integer | Examples: `50` | 1 |
+| `FlySwarm` | Integer | Examples: `50` | 5 |
 | `Fog` | Integer | Examples: `1` | 1 |
 | `ForceCollectsPickups` | Integer | Applies or references the 'ForceCollectsPickups' effect/state. | 1 |
 | `ForceImmediateMove` | Integer | Applies or references the 'ForceImmediateMove' effect/state. | 1 |
@@ -511,14 +511,14 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 |
 | `Grown` | Object | Character Form: Behavior and stats for the \'Grown\' state. | 1 |
 | `HalfDead` | Object | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 |
-| `HardenSkin` | Variable |  | 1 |
+| `HardenSkin` | Variable |  | 2 |
 | `HardenSkin2` | Variable |  | 1 |
-| `HeadTumor` | Variable |  | 1 |
+| `HeadTumor` | Variable |  | 3 |
 | `HealPercentMaxHP` | Integer | Applies or references the 'HealPercentMaxHP' effect/state. | 1 |
 | `HealTo` | Integer | Applies or references the 'HealTo' effect/state. | 1 |
 | `HeatWave` | Integer | Examples: `1` | 1 |
 | `HeavyHits` | Integer | Applies or references the 'HeavyHits' effect/state. | 1 |
-| `IceArmor` | Integer | Applies or references the 'IceArmor' effect/state. | 1 |
+| `IceArmor` | Integer | Applies or references the 'IceArmor' effect/state. | 2 |
 | `IgnoreDebuffs` | Integer | Applies or references the 'IgnoreDebuffs' effect/state. | 1 |
 | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 1 |
 | [`IncAuxCounterCycle`](#incauxcountercycle) | Object | Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum. | 1 |
@@ -548,10 +548,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `MimicMetronome` | Integer | Applies or references the 'MimicMetronome' effect/state. | 1 |
 | `MockSong` | Variable |  | 1 |
 | `MockSong2` | Variable |  | 1 |
-| [`Monk`](./Arrays.md#array-monk) | Object | Applies or references the 'Monk' effect/state. | 1 |
-| `MonkeyThrow` | Variable |  | 1 |
+| [`Monk`](./Arrays.md#array-monk) | Object | Applies or references the 'Monk' effect/state. | 66 |
+| `MonkeyThrow` | Variable |  | 2 |
 | `MonkeyThrow2` | Variable |  | 1 |
-| `MoonHandDrop` | Variable |  | 1 |
+| `MoonHandDrop` | Variable |  | 2 |
 | `MoonHeadFlail` | Variable |  | 1 |
 | `MotherTumorDebugForcePass` | Integer | Applies or references the 'MotherTumorDebugForcePass' effect/state. | 1 |
 | `Muted` | Integer | Applies or references the 'Muted' effect/state. | 1 |
@@ -562,8 +562,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `NextDamageReduceAndHealAllies` | Integer | Applies or references the 'NextDamageReduceAndHealAllies' effect/state. | 1 |
 | `NextTurnDoubleRangedDamage` | Integer | Applies or references the 'NextTurnDoubleRangedDamage' effect/state. | 1 |
 | `NoDeathrattle` | Variable |  | 1 |
-| `Normal` | Number | Character Form: Behavior and stats for the \'Normal\' state. | 1 |
-| `Nuke` | Object | Character Form: Behavior and stats for the 'Nuke' state. | 1 |
+| `Normal` | Number | Character Form: Behavior and stats for the \'Normal\' state. | 24 |
+| `Nuke` | Object | Character Form: Behavior and stats for the 'Nuke' state. | 10 |
 | [`ObjectOnHitFullyEmpty`](./Enums.md#enum-objectonhitfullyempty) | Enum | Applies or references the 'ObjectOnHitFullyEmpty' effect/state. | 1 |
 | `OverHealToShield` | Integer | Applies or references the 'OverHealToShield' effect/state. | 1 |
 | `OverrideChainKnockbackDamage` | Equation | Applies or references the 'OverrideChainKnockbackDamage' effect/state. | 1 |
@@ -573,8 +573,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `PermanentUpgradeRandomActiveOrPassive` | Integer | Applies or references the 'PermanentUpgradeRandomActiveOrPassive' effect/state. | 1 |
 | [`PersistentElement`](./Enums.md#enum-persistentelement) | Enum | Examples: `Holy` | 1 |
 | [`PoolMetronome`](#poolmetronome) | Object | Executes a random ability drawn from a specific pool. | 1 |
-| `Pounce` | Variable |  | 1 |
-| `Prance` | Variable |  | 1 |
+| `Pounce` | Variable |  | 2 |
+| `Prance` | Variable |  | 2 |
 | `Prance2` | Variable |  | 1 |
 | `ProbeCharmed` | Number | Applies or references the 'ProbeCharmed' effect/state. | 1 |
 | [`QueueUseAbility`](./Enums.md#enum-queueuseability) | Enum | Applies or references the 'QueueUseAbility' effect/state. | 1 |
@@ -587,13 +587,13 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `RefreshItemAbilities` | Integer | Applies or references the 'RefreshItemAbilities' effect/state. | 1 |
 | `RefreshNonManaItemAbilities` | Integer | Applies or references the 'RefreshNonManaItemAbilities' effect/state. | 1 |
 | `RefreshOncePerFightAbilities` | Integer | Applies or references the 'RefreshOncePerFightAbilities' effect/state. | 1 |
-| `Regurge` | Integer | Applies or references the 'Regurge' effect/state. | 1 |
+| `Regurge` | Integer | Applies or references the 'Regurge' effect/state. | 2 |
 | `RemoveTurnsThisRound` | Integer | Applies or references the 'RemoveTurnsThisRound' effect/state. | 1 |
 | `RepairAllCondition` | Integer | Applies or references the 'RepairAllCondition' effect/state. | 1 |
 | `RerollEnemy` | Integer | Applies or references the 'RerollEnemy' effect/state. | 1 |
 | `ReturnDinoLegs` | Integer | Applies or references the 'ReturnDinoLegs' effect/state. | 1 |
-| `Sandstorm` | Integer | Examples: `1` | 1 |
-| `Scavenge` | Variable |  | 1 |
+| `Sandstorm` | Integer | Examples: `1` | 2 |
+| `Scavenge` | Variable |  | 2 |
 | `Scavenge2` | Variable |  | 1 |
 | [`ScrambleLastUsedSpell`](#scramblelastusedspell) | Object | Randomizes or scrambles the properties of the last spell cast. | 1 |
 | `Scrambled` | Number | Applies or references the 'Scrambled' effect/state. | 1 |
@@ -601,14 +601,14 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `ShadowCrit` | Integer | Applies or references the 'ShadowCrit' effect/state. | 1 |
 | `ShootHereCommand` | Integer | Applies or references the 'ShootHereCommand' effect/state. | 1 |
 | `ShootHereReceiver` | Integer | Applies or references the 'ShootHereReceiver' effect/state. | 1 |
-| `ShortCircuit` | Integer | Applies or references the 'ShortCircuit' effect/state. | 1 |
+| `ShortCircuit` | Integer | Applies or references the 'ShortCircuit' effect/state. | 2 |
 | [`ShowFakeDamage`](#showfakedamage) | Object | Displays a visual damage number without actually modifying health. | 1 |
 | `SleepParalysis` | Variable |  | 1 |
 | `Small` | Object | Character Form: Behavior and stats for the \'Small\' state. | 1 |
 | `SmallHitExplosion` | Integer | Applies or references the 'SmallHitExplosion' effect/state. | 1 |
 | `SmallHolding` | Object | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 |
 | `SmallHoldingCat` | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 |
-| `SmellBlood` | Integer | Applies or references the 'SmellBlood' effect/state. | 1 |
+| `SmellBlood` | Integer | Applies or references the 'SmellBlood' effect/state. | 2 |
 | [`SolarFlare`](#solarflare) | Object | Examples: `{ ... }` | 1 |
 | [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Applies or references the 'SoundEventOnHit' effect/state. | 1 |
 | [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Applies or references the 'SourceSwapsBackEndOfTurn' effect/state. | 1 |
@@ -618,7 +618,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `SpellShield` | Integer | Applies or references the 'SpellShield' effect/state. | 1 |
 | `SpitConsumed` | Integer | Applies or references the 'SpitConsumed' effect/state. | 1 |
 | `SplashDamage` | Number | Applies or references the 'SplashDamage' effect/state. | 1 |
-| `SquirrelForm` | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 1 |
+| `SquirrelForm` | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 |
 | `StackingSandstorm` | Number | Applies or references the 'StackingSandstorm' effect/state. | 1 |
 | `StanceSwitchToRanged` | Integer | Applies or references the 'StanceSwitchToRanged' effect/state. | 1 |
 | `Standing` | Object | Character Form: Behavior and stats for the 'Standing' state. | 1 |
@@ -627,23 +627,23 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`StealEquipment`](./Enums.md#enum-stealequipment) | Enum | Applies or references the 'StealEquipment' effect/state. | 1 |
 | `StealTurn` | Integer | Applies or references the 'StealTurn' effect/state. | 1 |
 | `StealthCritChance` | Integer | Applies or references the 'StealthCritChance' effect/state. | 1 |
-| `SwapHighestAndLowestStat` | Number | Applies or references the 'SwapHighestAndLowestStat' effect/state. | 1 |
+| `SwapHighestAndLowestStat` | Number | Applies or references the 'SwapHighestAndLowestStat' effect/state. | 2 |
 | [`SwapWeapon`](#swapweapon) | Object | Replaces the character's currently equipped weapon with one from a specified pool. | 1 |
-| `Switcheroo` | Integer | Applies or references the 'Switcheroo' effect/state. | 1 |
-| `Synthesize` | Variable |  | 1 |
+| `Switcheroo` | Integer | Applies or references the 'Switcheroo' effect/state. | 2 |
+| `Synthesize` | Variable |  | 2 |
 | `Synthesize2` | Variable |  | 1 |
 | `T2CopyCat` | Integer | Applies or references the 'T2CopyCat' effect/state. | 1 |
 | `T2CopyCatInternal` | Variable |  | 1 |
 | `T3HitlerTriggerInitialSpawns` | Integer | Applies or references the 'T3HitlerTriggerInitialSpawns' effect/state. | 1 |
 | [`TagMetronome`](./Enums.md#enum-tagmetronome) | Enum | Applies or references the 'TagMetronome' effect/state. | 1 |
-| `TaintedOffering` | Variable |  | 1 |
+| `TaintedOffering` | Variable |  | 2 |
 | `TaintedOffering2` | Variable |  | 1 |
 | `TakeExtraTurnEndOfRound` | Integer | Applies or references the 'TakeExtraTurnEndOfRound' effect/state. | 1 |
 | `TallFlowerTile` | Variable |  | 1 |
 | `TargetedMetronome` | Integer | Applies or references the 'TargetedMetronome' effect/state. | 1 |
 | `Taunting` | Integer | Applies or references the 'Taunting' effect/state. | 1 |
 | [`TeamBonusAbility`](./Enums.md#enum-teambonusability) | Enum | Applies or references the 'TeamBonusAbility' effect/state. | 1 |
-| `Tease` | Variable |  | 1 |
+| `Tease` | Variable |  | 2 |
 | `Tease2` | Variable |  | 1 |
 | [`TeleportBackAtTurnEnd`](./Enums.md#enum-teleportbackatturnend) | Enum | Applies or references the 'TeleportBackAtTurnEnd' effect/state. | 1 |
 | `TempBackstab` | Integer | Applies or references the 'TempBackstab' effect/state. | 1 |
@@ -658,9 +658,9 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `TempManaCostReduction` | Integer | Applies or references the 'TempManaCostReduction' effect/state. | 1 |
 | `TempPenetrate` | Integer | Applies or references the 'TempPenetrate' effect/state. | 1 |
 | `TempPreEmptiveCounterAttack` | Integer | Applies or references the 'TempPreEmptiveCounterAttack' effect/state. | 1 |
-| `TheDestroyer` | Variable |  | 1 |
+| `TheDestroyer` | Variable |  | 2 |
 | [`TickDownStatus`](./Enums.md#enum-tickdownstatus) | Enum | Applies or references the 'TickDownStatus' effect/state. | 1 |
-| `TigerSwipes` | Variable |  | 1 |
+| `TigerSwipes` | Variable |  | 2 |
 | `TigerSwipes2` | Variable |  | 1 |
 | `TilesMovedToCritChance` | Integer | Applies or references the 'TilesMovedToCritChance' effect/state. | 1 |
 | `TilesMovedToMana` | Integer | Applies or references the 'TilesMovedToMana' effect/state. | 1 |
@@ -688,7 +688,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `VaporizeDice` | Integer | Applies or references the 'VaporizeDice' effect/state. | 1 |
 | [`VisualCountDownThenApplyStatus`](#visualcountdownthenapplystatus) | Object | Displays a visual countdown above the target before applying the nested effects. | 1 |
 | [`WaggleClone`](#waggleclone) | Object | Spawns visual clones or alternative hitbox variants of the projectile. | 1 |
-| `WaterTile_Current` | Variable |  | 1 |
+| `WaterTile_Current` | Variable |  | 4 |
 | [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 |
 | `alien` | Variable |  | 1 |
 | `angeljunk` | Variable |  | 1 |
@@ -699,7 +699,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `container` | Variable |  | 1 |
 | `deferred` | Boolean | `true` | 1 |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 |
-| `flip` | Variable |  | 1 |
+| `flip` | Variable |  | 2 |
 | `ghost` | Variable |  | 1 |
 | `god` | Variable |  | 1 |
 | `grown_hitler_clone` | Variable |  | 1 |
@@ -814,7 +814,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
+| [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 1 |
 | [`Conditional_Speculative`](#conditional_speculative) | Object | Nested conditional. | 1 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
@@ -1135,7 +1135,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 46 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 981 |
 | [`Conditional_NotBoss`](#conditional_notboss) | Object | Nested conditional. | 6 |
 | [`Conditional_Boss`](#conditional_boss) | Object | Nested conditional. | 4 |
 | [`Conditional_InForm`](#conditional_inform) | Object | Nested conditional. | 1 |
@@ -1473,7 +1473,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 981 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
@@ -1508,7 +1508,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`Conditional_Ally`](#conditional_ally) | Object | Nested conditional. | 1 |
-| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 1 |
+| [`tag`](./Enums.md#enum-tag) | Enum | The specific entity tag required or applied. | 981 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>

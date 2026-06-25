@@ -16,20 +16,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`editor`](#object-editor) | Object |  | 550 |
-| [`object`](./Enums.md#enum-object) | Enum |  | 543 |
-| `value` | Float |  | 377 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
+| [`editor`](#object-editor) | Object |  | 578 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 545 |
+| `value` | Float |  | 485 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
 | `early_spawn` | Boolean |  | 10 |
-| [`orientation`](./Enums.md#enum-orientation) | Enum |  | 6 |
+| [`orientation`](./Enums.md#enum-orientation) | Enum |  | 10 |
 | [`tag_location`](./Enums.md#enum-tag_location) | Enum |  | 5 |
 | `forced_placement` | Boolean |  | 3 |
 | [`trap`](./Enums.md#enum-trap) | Enum |  | 2 |
-| [`image`](./Strings.md#string-image) | String |  | 1 |
+| [`image`](./Strings.md#string-image) | String |  | 2 |
 | [`reserved`](./Enums.md#enum-reserved) | Enum |  | 1 |
 | [`utility`](./Enums.md#enum-utility) | Enum |  | 1 |
 | [`weather_element_alt`](#object-weather_element_alt) | Object |  | 1 |
-| [`element`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Specific element type required or applied. | 0 |
+| [`element`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Specific element type required or applied. | 1 |
 
 </details>
 
@@ -46,13 +46,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `category` | Integer |  | 551 |
-| [`image`](./Arrays.md#array-image) | Array |  | 550 |
-| `paint` | Boolean |  | 550 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 538 |
-| [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 196 |
-| `subcategory` | Integer |  | 9 |
-| `layer` | `Number` |  | 0 |
+| `category` | Integer |  | 577 |
+| [`image`](./Arrays.md#array-image) | Array |  | 2 |
+| `paint` | Boolean |  | 576 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+| [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 3 |
+| `subcategory` | Integer |  | 35 |
+| `layer` | `Number` |  | 3 |
 
 </details>
 

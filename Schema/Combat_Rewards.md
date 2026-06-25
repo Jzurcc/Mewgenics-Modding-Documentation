@@ -19,9 +19,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| `item_chance` | Float |  | 12 |
+| `item_chance` | Float |  | 6 |
 
 </details>
 
@@ -39,9 +39,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
+| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
 
@@ -59,9 +59,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
+| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
 
@@ -79,9 +79,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
-| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 12 |
+| [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
 

@@ -19,8 +19,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |
-| `id` | Integer |  | 13 |
-| [`stats`](#object-stats) | Object |  | 12 |
+| `id` | Integer |  | 16 |
+| [`stats`](#object-stats) | Object |  | 982 |
 | [`scars`](#object-scars) | Object |  | 10 |
 
 </details>
@@ -38,13 +38,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `con` | Integer |  | 3 |
-| `lck` | Integer |  | 3 |
-| `cha` | Integer |  | 2 |
-| `dex` | Integer |  | 2 |
-| `int` | Integer |  | 2 |
-| `str` | Integer |  | 2 |
-| `spd` | Integer |  | 1 |
+| `con` | Integer |  | 65 |
+| `lck` | Integer |  | 29 |
+| `cha` | Integer |  | 46 |
+| `dex` | Integer |  | 34 |
+| `int` | Integer |  | 46 |
+| `str` | Integer |  | 42 |
+| `spd` | Integer |  | 53 |
 
 </details>
 

@@ -15,7 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`meta`](./Shops.md#context-meta) | Object | Examples: `{ ... }` | 25 |
+| [`meta`](./Shops.md#context-meta) | Object | Examples: `{ ... }` | 4719 |
 | [`breakdown`](./Shops.md#context-breakdown) | Object | Examples: `{ ... }` | 24 |
 | [`item_groups`](./Shops.md#context-item_groups) | Object | Examples: `{ ... }` | 24 |
 | [`item_rarity_costs`](./Shops.md#context-item_rarity_costs) | Object | Examples: `{ ... }` | 9 |
@@ -40,7 +40,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum | Examples: `rare, shop_common, treasure_easy` | 37 |
+| [`pool`](./Enums.md#enum-pool) | Enum | Examples: `rare, shop_common, treasure_easy` | 18 |
 | `cost` | Number | Examples: `0, 15, 10` | 21 |
 | `mandatory` | Boolean | Examples: `true` | 14 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |

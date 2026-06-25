@@ -17,15 +17,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
-| [`easy`](#object-easy) | Object |  | 8 |
-| [`hard`](#object-hard) | Object |  | 8 |
-| `bonus_itemroll_luck` | Integer |  | 8 |
-| `boss_health_multiplier` | Float |  | 8 |
-| `coins_multiplier` | Float |  | 8 |
-| `event_difficulty` | Integer |  | 8 |
-| `food_multiplier` | Float |  | 8 |
-| `wallet_size` | Integer |  | 8 |
-| `boss_elite_buffs` | Integer |  | 7 |
+| [`easy`](#object-easy) | Object |  | 16 |
+| [`hard`](#object-hard) | Object |  | 42 |
+| `bonus_itemroll_luck` | Integer |  | 16 |
+| `boss_health_multiplier` | Float |  | 16 |
+| `coins_multiplier` | Float |  | 16 |
+| `event_difficulty` | Integer |  | 16 |
+| `food_multiplier` | Float |  | 16 |
+| `wallet_size` | Integer |  | 16 |
+| `boss_elite_buffs` | Integer |  | 14 |
 
 </details>
 
@@ -42,12 +42,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `champ_budget` | Float |  | 8 |
-| `elite_budget` | Integer |  | 8 |
-| `elite_buffs` | Integer |  | 8 |
-| `rare_elite_buffs` | Integer |  | 8 |
-| `champ_chance_mini` | Float |  | 7 |
-| `elite_chance_mini` | Float |  | 6 |
+| `champ_budget` | Float |  | 16 |
+| `elite_budget` | Integer |  | 16 |
+| `elite_buffs` | Integer |  | 16 |
+| `rare_elite_buffs` | Integer |  | 16 |
+| `champ_chance_mini` | Float |  | 14 |
+| `elite_chance_mini` | Float |  | 12 |
 
 </details>
 
@@ -64,12 +64,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `champ_budget` | Float |  | 8 |
-| `champ_chance_mini` | Float |  | 8 |
-| `elite_buffs` | Integer |  | 8 |
-| `rare_elite_buffs` | Integer |  | 8 |
-| `elite_budget` | Integer |  | 7 |
-| `elite_chance_mini` | Float |  | 7 |
+| `champ_budget` | Float |  | 16 |
+| `champ_chance_mini` | Float |  | 16 |
+| `elite_buffs` | Integer |  | 16 |
+| `rare_elite_buffs` | Integer |  | 16 |
+| `elite_budget` | Integer |  | 14 |
+| `elite_chance_mini` | Float |  | 14 |
 
 </details>
 

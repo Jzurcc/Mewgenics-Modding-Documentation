@@ -19,7 +19,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Comfort` | Integer | Applies or references the 'Comfort' effect/state. | 406 |
 | `Appeal` | Integer | Applies or references the 'Appeal' effect/state. | 338 |
 | `Stimulation` | Integer | Applies or references the 'Stimulation' effect/state. | 268 |
-| [`set`](./Enums.md#enum-set) | Enum |  | 220 |
+| [`set`](./Enums.md#enum-set) | Enum |  | 1504 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
 | `Health` | Integer | Applies or references the 'Health' effect/state. | 67 |
 | `Evolution` | Integer | Applies or references the 'Evolution' effect/state. | 53 |

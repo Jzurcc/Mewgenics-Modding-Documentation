@@ -18,15 +18,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1549 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
-| `icon_frame` | Integer |  | 54 |
-| `value` | Float |  | 54 |
-| `unique` | Boolean |  | 36 |
-| `specific_chapter` | Integer |  | 8 |
-| [`minion_alt`](./Enums.md#enum-minion_alt) | Enum |  | 5 |
-| `rollable` | Boolean |  | 5 |
-| `only_at_battle_start` | Boolean |  | 2 |
-| `requires_corpse` | Boolean |  | 2 |
-| `roll_limit` | Integer |  | 2 |
+| `icon_frame` | Integer |  | 128 |
+| `value` | Float |  | 485 |
+| `unique` | Boolean |  | 72 |
+| `specific_chapter` | Integer |  | 16 |
+| [`minion_alt`](./Enums.md#enum-minion_alt) | Enum |  | 10 |
+| `rollable` | Boolean |  | 10 |
+| `only_at_battle_start` | Boolean |  | 4 |
+| `requires_corpse` | Boolean |  | 4 |
+| `roll_limit` | Integer |  | 4 |
 
 </details>
 
@@ -96,9 +96,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `aura_effects_allies` | Boolean |  | 4 |
-| `range` | Integer |  | 4 |
-| `stacks` | Integer |  | 4 |
+| `aura_effects_allies` | Boolean |  | 8 |
+| `range` | Integer |  | 8 |
+| `stacks` | Integer |  | 8 |
 
 </details>
 
@@ -115,8 +115,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
-| `knockback` | Integer |  | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 49 |
+| `knockback` | Integer |  | 48 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
   | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
   | [`AddStatusToElementDamage`](#addstatustoelementdamage) | Object | Applies the 'AddStatusToElementDamage' effect. | 0 |
@@ -138,9 +138,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`statuses`](#object-statuses) | Object |  | 2 |
-| `health` | Integer |  | 2 |
-| `stacks` | Integer |  | 2 |
+| [`statuses`](#object-statuses) | Object |  | 6 |
+| `health` | Integer |  | 8 |
+| `stacks` | Integer |  | 10 |
 
 </details>
 
@@ -157,10 +157,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 18 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
-| [`type`](./Enums.md#enum-type) | Enum |  | 2 |
-| `damage` | Integer |  | 2 |
+| [`type`](./Enums.md#enum-type) | Enum |  | 8 |
+| `damage` | Integer |  | 8 |
 
 </details>
 
@@ -195,8 +195,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 2 |
-| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum |  | 2 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 72 |
+| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum |  | 4 |
 
 </details>
 

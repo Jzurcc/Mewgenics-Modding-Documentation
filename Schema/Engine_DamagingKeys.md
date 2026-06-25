@@ -13,26 +13,26 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage_instance`](#damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 2346 |
-| `effects` | Object | Non-damaging status applications and logic triggers executed on impact. | 2005 |
-| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 1527 |
-| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 382 |
+| [`damage_instance`](#damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 4688 |
+| `effects` | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
+| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 54 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 369 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 277 |
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 226 |
-| [`self_damage`](./Arrays.md#array-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 220 |
+| [`self_damage`](./Arrays.md#array-self_damage) | Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | `heal` | Number | Restores health instead of dealing damage. | 128 |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 120 |
-| `false` | Variable |  | 103 |
+| `false` | Variable |  | 655 |
 | `incidentally_collects_pickups` | Boolean | Automatically grabs items in the AoE. | 103 |
 | `melee` | Variable |  | 102 |
 | `status_spell` | Variable |  | 87 |
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). | 82 |
-| [`spell`](./Enums.md#enum-spell) | Enum | `MCHadouken` | 78 |
+| [`spell`](./Enums.md#enum-spell) | Enum | `MCHadouken` | 924 |
 | `piercing` | Boolean | Ignores a percentage of target defense/armor. | 64 |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 46 |
-| [`splash_damage`](#splash_damage) | Object | Secondary Area of Effect blast parameters. | 35 |
-| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 27 |
+| [`splash_damage`](#splash_damage) | Object | Secondary Area of Effect blast parameters. | 68 |
+| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 3 |
 | [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. | 24 |
 | [`raw_damage`](./Math_Equations.md) | Equation | Unmitigated, unscaled base numbers. | 22 |
 | `characters` | Variable |  | 17 |
@@ -53,15 +53,15 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `magnetize_favorlineup` | Variable |  | 3 |
 | `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. | 3 |
 | `spell_cost` | Variable |  | 3 |
-| `str` | Number | `aux` | 3 |
+| `str` | Number | `aux` | 337 |
 | `tiles` | Variable |  | 3 |
 | `can_instapop` | Boolean | Allows the attack to instantly destroy specific weak entities. | 2 |
 | `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. | 2 |
-| `durability` | Number | Consumes item durability. | 2 |
+| `durability` | Number | Consumes item durability. | 264 |
 | `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). | 2 |
 | `force_no_knockback` | Boolean | Prevents the target from being pushed. | 2 |
 | `knockblock` | Variable |  | 2 |
-| [`level`](./Enums.md#enum-level) | Enum | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` | 2 |
+| [`level`](./Enums.md#enum-level) | Enum | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` | 33 |
 | `physical_spell` | Variable |  | 2 |
 | `pickups` | Variable |  | 2 |
 | `raw_heal` | String | Unmitigated, unscaled base numbers. | 2 |
@@ -72,7 +72,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
 | `avoid_redundant_debuffs` | Variable |  | 1 |
-| [`bonk_damage`](#bonk_damage) | Object | Damage dealt when knocked into a wall or obstacle. | 1 |
+| [`bonk_damage`](#bonk_damage) | Object | Damage dealt when knocked into a wall or obstacle. | 2 |
 | `catch` | Object | Event Object: Story branch or dialog option representing the \'Catch\' action. | 1 |
 | `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. | 1 |
 | [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 1 |
@@ -115,8 +115,8 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 1 |
-| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 1 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
+| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
@@ -132,9 +132,9 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 1787 |
-| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 1447 |
-| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 359 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
+| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
+| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 54 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 254 |
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 223 |
 | `heal` | Integer | Restores health instead of dealing damage. | 122 |
@@ -143,7 +143,7 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). | 82 |
 | `piercing` | Boolean | Ignores a percentage of target defense/armor. | 52 |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 40 |
-| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 26 |
+| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 3 |
 | [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. | 24 |
 | [`raw_damage`](./Math_Equations.md) | Equation | Unmitigated, unscaled base numbers. | 22 |
 | [`crit_chance`](./Enums.md#enum-crit_chance) | Float | Override for base critical hit probability. | 16 |
@@ -185,10 +185,10 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 200 |
-| [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 47 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
+| [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 2 |
 | `piercing` | Boolean | Ignores a percentage of target defense/armor. | 12 |
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |
 | `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 10 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 10 |
 | `heal` | Integer | Restores health instead of dealing damage. | 6 |
@@ -210,13 +210,13 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 32 |
-| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 17 |
+| [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
+| [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | `knockback` | Integer | Knockback force of the splash blast. | 13 |
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 12 |
+| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 6 |
 | `override_trample_damage` | Boolean | Custom damage value for trample moves. | 2 |
-| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 1 |
+| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 3 |
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 1 |
 | [`crit_chance`](./Enums.md#enum-crit_chance) | Float | Override for base critical hit probability. | 1 |
 | `force_no_knockback` | Boolean | Prevents the target from being pushed. | 1 |
