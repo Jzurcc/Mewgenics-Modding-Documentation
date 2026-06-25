@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `texture` | Integer |  | 422 |
 | `default_frame` | Integer |  | 420 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`voice`](./Enums.md#enum-voice) | Enum |  | 400 |
 | `righteye` | Integer |  | 400 |
 | `lefteye` | Integer |  | 396 |
@@ -45,10 +45,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `arm1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -61,10 +65,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `arm2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |

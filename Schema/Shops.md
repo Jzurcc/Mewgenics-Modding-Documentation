@@ -31,10 +31,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Item`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 37
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 37
 
 > **Referenced by:** [`common_item`](./Shops.md#context-common_item), [`consumable`](./Shops.md#context-consumable), [`empty`](./Shops.md#context-empty), [`item`](./Shops.md#context-item), [`mandatory`](./Shops.md#context-mandatory), [`mostly_food`](./Shops.md#context-mostly_food), [`pool`](./Shops.md#context-pool), [`treasure`](./Shops.md#context-treasure)
 
@@ -43,7 +47,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`pool`](./Enums.md#enum-pool) | Enum | Examples: `rare, shop_common, treasure_easy` | 18 |
 | `cost` | Number | Examples: `0, 15, 10` | 21 |
 | `mandatory` | Boolean | Examples: `true` | 14 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -51,10 +55,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `meta`
 
+
+
+**Definition:** Object defining UI display data (Name, Description, Icon).  
+**Total Count:** 25
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 25
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -76,10 +84,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `breakdown`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 24
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 24
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -101,10 +113,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `item_groups`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 24
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 24
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -127,10 +143,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `treasure`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 14
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 14
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -144,16 +164,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `item_rarity_costs`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 9
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 9
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 9 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `consumable_common` | Number | Examples: `3, 5, 10` | 9 |
 | `consumable_rare` | Number | Examples: `20, 8, 10` | 9 |
 | `consumable_uncommon` | Number | Examples: `14, 5, 7` | 9 |
@@ -167,10 +191,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `button_nav`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -184,10 +212,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `pool`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 6
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -201,10 +233,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mandatory`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 5
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 5
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -219,10 +255,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Food`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`guaranteed_food`](./Shops.md#context-guaranteed_food), [`mostly_food`](./Shops.md#context-mostly_food)
 
@@ -231,7 +271,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `allow_duplicates` | Boolean | Examples: `true` | 4 |
 | `amount` | Number | Examples: `10` | 4 |
 | `cost` | Number | Examples: `5` | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -239,10 +279,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `LevelUp`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`levelup`](./Shops.md#context-levelup)
 
@@ -256,10 +300,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `levelup`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -273,10 +321,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `breakdown2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -294,10 +346,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `breakdown3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -314,10 +370,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `breakdown4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Shops.md#context-root)
 
@@ -334,10 +394,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `common_item`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -351,10 +415,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `consumable`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -368,10 +436,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `guaranteed_food`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -385,10 +457,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `item`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -402,10 +478,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mostly_food`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 
@@ -420,10 +500,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `empty`
 
+
+
+**Definition:** Character Form: Behavior and stats for the \'Empty\' state.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
 

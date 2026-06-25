@@ -16,9 +16,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 90 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`popup`](#object-popup) | Object |  | 532 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum |  | 254 |
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum |  | 110 |
@@ -140,16 +140,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `popup`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 266
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 266 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `immediate` | Boolean |  | 442 |
 | [`frame`](./Enums.md#enum-frame) | Enum |  | 318 |
 
@@ -159,10 +163,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_special_item`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 22
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`tracy_blankcollar1`](#object-tracy_blankcollar1), [`tracy_blankcollar2`](#object-tracy_blankcollar2), [`tracy_blankcollar3`](#object-tracy_blankcollar3), [`tracy_foodstorage1`](#object-tracy_foodstorage1), [`tracy_foodstorage10`](#object-tracy_foodstorage10), [`tracy_foodstorage2`](#object-tracy_foodstorage2), [`tracy_foodstorage3`](#object-tracy_foodstorage3), [`tracy_foodstorage4`](#object-tracy_foodstorage4), [`tracy_foodstorage5`](#object-tracy_foodstorage5), [`tracy_foodstorage6`](#object-tracy_foodstorage6), [`tracy_foodstorage7`](#object-tracy_foodstorage7), [`tracy_foodstorage8`](#object-tracy_foodstorage8), [`tracy_foodstorage9`](#object-tracy_foodstorage9), [`tracy_idol1`](#object-tracy_idol1), [`tracy_idol2`](#object-tracy_idol2), [`tracy_idol3`](#object-tracy_idol3), [`tracy_idol4`](#object-tracy_idol4), [`tracy_idol5`](#object-tracy_idol5), [`tracy_idol6`](#object-tracy_idol6), [`tracy_idol7`](#object-tracy_idol7), [`tracy_max_intro`](#object-tracy_max_intro), [`tracy_max_repeating`](#object-tracy_max_repeating)
 
@@ -177,10 +185,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_quests_intro`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -196,10 +208,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_quests_repeat`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -217,10 +233,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `destinations`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -242,10 +262,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max_intro`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -262,10 +286,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max_repeating`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -283,10 +311,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_4throom`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -302,10 +334,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_attic`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -321,10 +357,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_largehouse`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -340,10 +380,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_mediumhouse`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -359,10 +403,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max_intro`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -379,10 +427,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max_repeating`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -400,10 +452,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -419,10 +475,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -438,10 +498,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -457,10 +521,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade4`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -476,10 +544,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max_intro`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -496,10 +568,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max_repeating`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -517,10 +593,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_unlock`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -536,10 +616,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -555,10 +639,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -574,10 +662,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -593,10 +685,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade4`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -612,10 +708,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade5`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -631,10 +731,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade6`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -650,10 +754,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `prereqs`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -672,10 +780,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_milliontrashed`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -691,10 +803,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_aggression`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -710,10 +826,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_basestats`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -729,10 +849,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_inbreeding`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -748,10 +872,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max_intro`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -768,10 +896,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max_repeating`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -789,10 +921,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_prettybow`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -808,10 +944,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_relationships`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -827,10 +967,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_sexuality`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -846,10 +990,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tags`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -865,10 +1013,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_blankcollar1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -886,10 +1038,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_blankcollar2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -907,10 +1063,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_blankcollar3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -928,10 +1088,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -949,10 +1113,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage10`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -970,10 +1138,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -991,10 +1163,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1012,10 +1188,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage4`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1033,10 +1213,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage5`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1054,10 +1238,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage6`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1075,10 +1263,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage7`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1096,10 +1288,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage8`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1117,10 +1313,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage9`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1138,10 +1338,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1159,10 +1363,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1180,10 +1388,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1201,10 +1413,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol4`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1222,10 +1438,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol5`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1243,10 +1463,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol6`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1264,10 +1488,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol7`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1285,10 +1513,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max_intro`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1306,10 +1538,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max_repeating`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1328,10 +1564,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1349,10 +1589,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1370,10 +1614,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1391,10 +1639,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_4`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1412,10 +1664,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_5`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1433,10 +1689,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_6`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1454,10 +1714,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_7`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1475,10 +1739,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_crazy`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1499,10 +1767,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_hard`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1523,10 +1795,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_impossible`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1547,10 +1823,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_intro`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1570,10 +1850,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_normal`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 

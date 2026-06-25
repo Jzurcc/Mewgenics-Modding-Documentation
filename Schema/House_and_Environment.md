@@ -16,8 +16,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1274 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 199 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array |  | 12 |
 | `height` | Integer |  | 16 |
@@ -59,19 +59,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `effects`
 
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Non-damaging status applications and logic triggers executed on impact.  
 **Total Count:** 2166
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root), [`SolarFlare`](#object-solarflare)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1886 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 552 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 59 |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | Game-state flag identifiers for tracking world progression and event states. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | Game-state flag identifiers for tracking world progression and event states. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -79,10 +83,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnExtraThingsOnBattleStart`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 32
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -99,10 +107,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `reverb_empty`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 11
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
 
@@ -118,10 +130,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `reverb_full`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 11
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
 
@@ -137,18 +153,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Else`
 
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
 **Total Count:** 85
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#object-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 71 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 20 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -156,10 +176,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnVolcanoOnBattleStart`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -177,17 +201,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusCharactersOnRoundEnd`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -195,10 +223,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `aux_positions`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`House1`](#object-house1), [`House2`](#object-house2), [`House3`](#object-house3)
 
@@ -217,10 +249,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `room_positions`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`House1`](#object-house1), [`House2`](#object-house2), [`House3`](#object-house3)
 
@@ -244,16 +280,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyPassives`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Grants the nested passive abilities dynamically.  
 **Total Count:** 13
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`Conditional_HasTag`](#object-conditional_hastag), [`Conditional_PartyMember`](#object-conditional_partymember)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 13 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -261,10 +301,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Big`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Character Form / AI State: Behavior and stats for the \'Big\' state.  
 **Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`SpecialGodRays`](#object-specialgodrays)
 
@@ -279,16 +323,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle.  
 **Total Count:** 8
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 8 |
 
 </details>
@@ -297,17 +345,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_GoodRoll`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
 **Total Count:** 37
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`StatusCharactersOnRoundEnd`](#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 72 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 14 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 72 |
 
 </details>
@@ -316,10 +368,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `GlobalSpawnOnRoundEnd`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -334,10 +390,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `RandomStatusFromPool`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Selects and applies a random status effect from the provided nested object.  
 **Total Count:** 35
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll), [`Else`](#object-else)
 
@@ -349,10 +409,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpecialGodRays`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -366,16 +430,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusAllCharactersOnSpawn`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Applies or references the 'StatusAllCharactersOnSpawn' effect/state.  
 **Total Count:** 5
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -383,10 +451,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusCharactersOnRoundStart`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -399,10 +471,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AddPostProcessEffect`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -417,10 +493,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AddTilesetObjects`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -434,10 +514,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AllyInfested`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`Else`](#object-else)
 
@@ -452,10 +536,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BasementUpgrade`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -470,10 +558,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BasementUpgrade2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -488,10 +580,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BasementUpgrade3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -506,10 +602,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BasementUpgrade4`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -524,10 +624,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BasementUpgrade5`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -542,35 +646,43 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_Corpse`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is a dead body/corpse.  
 **Total Count:** 11
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 </details>
 
 ---
 
 ### Object: `Conditional_HasTag`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target possesses the specified entity tag.  
 **Total Count:** 47
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`extra_statuses`](#object-extra_statuses)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 91 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 91 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 91 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -578,10 +690,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_PartyMember`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Conditional constraint. Nested properties only trigger if this is true.  
 **Total Count:** 6
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn)
 
@@ -594,10 +710,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Default`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Character Form: The baseline default behavior state.  
 **Total Count:** 38
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -612,10 +732,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FactionUprising`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -627,10 +751,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FloatingDebris`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`AddTilesetObjects`](#object-addtilesetobjects)
 
@@ -644,10 +772,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Floor1_Large`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -665,10 +797,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Floor1_Small`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -686,10 +822,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `House1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -708,10 +848,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `House2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -730,10 +874,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `House3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -752,10 +900,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `LargeHouse`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -770,10 +922,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `LargeHouse_Floor2Large`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -788,10 +944,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `LargeHouse_Floor2Small`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -806,10 +966,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MediumHouse`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -824,10 +988,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MediumHouse_SmallRoom`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -842,10 +1010,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Rain`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Character Form: Behavior and stats for the 'Rain' state.  
 **Total Count:** 6
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -863,10 +1035,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SmallAttic`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -885,10 +1061,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SmallHouse_Attic`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -903,10 +1083,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Snow`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -924,17 +1108,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SolarFlare`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `damage` | Integer |  | 1 |
 
 </details>
@@ -943,10 +1131,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnTilePuddleOnBattleStart`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -962,10 +1154,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnBattleEnd`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Applies the nested status effects when the encounter finishes.  
 **Total Count:** 53
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ApplyPassives`](#object-applypassives)
 
@@ -977,10 +1173,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Thunderstorm`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -999,10 +1199,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Windy`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1020,10 +1224,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `extra_statuses`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Additional generic status applications.  
 **Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`FactionUprising`](#object-factionuprising)
 
@@ -1036,3 +1244,127 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
+
+<details>
+<summary><b>ApplyPassives</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>CharacterTypeGainsStatusAtBattleStart</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>Conditional_Corpse</b></summary>
+
+> **Total Count:** 11
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 |
+
+</details>
+
+<details>
+<summary><b>Conditional_GoodRoll</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>Conditional_PartyMember</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2 |
+
+</details>
+
+<details>
+<summary><b>RandomStatusFromPool</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>StatusAllCharactersOnSpawn</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>StatusCharactersOnRoundEnd</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>StatusCharactersOnRoundStart</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>StatusOnBattleEnd</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>extra_statuses</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>

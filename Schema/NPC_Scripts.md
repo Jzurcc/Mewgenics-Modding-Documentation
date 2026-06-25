@@ -505,10 +505,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `states`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 12
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 12
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -537,10 +541,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `transitions`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 12
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 12
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -575,10 +583,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 9
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 9
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -596,10 +608,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `also`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 8
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 8
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -613,10 +629,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unknown`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 8
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 8
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -634,10 +654,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `hide_text`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -652,10 +676,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -672,10 +700,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tooltip`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -691,10 +723,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_a`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -709,10 +745,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_b`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -727,10 +767,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_c`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -745,10 +789,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_d`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -763,10 +811,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_e`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -781,10 +833,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_f`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -799,10 +855,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_g`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -817,10 +877,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_h`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -835,10 +899,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted_i`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -853,10 +921,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -873,10 +945,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `forward_to_tips`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -890,10 +966,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `out_of_stock`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -908,10 +988,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Jack_Gainaltfurniture`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -928,10 +1012,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_begin_accepting_cats`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -947,10 +1035,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -965,10 +1057,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -984,10 +1080,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_amnesia`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1003,10 +1103,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_begin`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1022,10 +1126,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_fail_jarofblood`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1041,10 +1149,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_fail_jarofchaos`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1060,10 +1172,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_fail_jarofradiation`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1079,10 +1195,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_bombquest_fail_nuke`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1098,10 +1218,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_future_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1116,10 +1240,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_hitler3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1134,10 +1262,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_hitler3_defeat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1153,10 +1285,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_iloveyou`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1170,10 +1306,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_infinite_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1190,10 +1330,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_jurassic_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1208,10 +1352,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_lab_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1229,10 +1377,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_quest_complete`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1247,10 +1399,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_quest_fail`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1265,10 +1421,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_quests_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1286,10 +1446,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_quests_repeat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1307,10 +1471,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_rift_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1327,10 +1495,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_screenshake_test`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1346,10 +1518,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_seefuture`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1364,10 +1540,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_seetheend`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1382,10 +1562,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_terminator1_defeat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1401,10 +1585,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_terminator2_defeat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1420,10 +1608,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_theend_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1438,10 +1630,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_timemachine_2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1456,10 +1652,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_timemachine_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1475,10 +1675,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_vscreator1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1494,10 +1698,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_vscreator2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1513,10 +1721,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_vscreator3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1532,10 +1744,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_vscreator4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1552,10 +1768,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beanies_vscreatorintro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1571,10 +1791,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_AI`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1590,10 +1814,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_AirHorn`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1609,10 +1837,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_AngryFace`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1628,10 +1860,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_AnimalHands`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1647,10 +1883,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_BubbleBoy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1666,10 +1906,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_ChadImplant`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1685,10 +1929,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_ChaosDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1704,10 +1952,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_DimensionalDivider`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1723,10 +1975,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_DiseaseJar`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1742,10 +1998,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_ExperimentalTreatment`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1761,10 +2021,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_FartFace`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1780,10 +2044,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_FigLeaf`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1799,10 +2067,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_Generic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1817,10 +2089,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_GlassCannon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1836,10 +2112,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_HardPill`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1855,10 +2135,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_HiveMind`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1874,10 +2158,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_MagicMirror`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1893,10 +2181,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_MeStone`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1912,10 +2204,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_MultilinkCable`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1931,10 +2227,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_MysteriousDice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1950,10 +2250,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_MysteriousGlasses`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1969,10 +2273,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_NDEDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -1988,10 +2296,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_NuclearKnife`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2007,10 +2319,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_PartialLobotomy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2026,10 +2342,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_PartyDetonator`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2045,10 +2365,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_PersonalHeater`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2064,10 +2388,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_PersuasionDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2083,10 +2411,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_PrincessHat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2102,10 +2434,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_RealityScrambler`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2121,10 +2457,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_Redacted`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2140,10 +2480,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_SpiderInjector`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2159,10 +2503,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_Stopwatch`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2178,10 +2526,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_StorageLocker`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2197,10 +2549,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_TheIOU`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2216,10 +2572,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_TheLoner`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2235,10 +2595,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_Trapfest99`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2254,10 +2618,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_complete_UltraVision3000`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2273,10 +2641,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_AI`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2292,10 +2664,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_AirHorn`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2311,10 +2687,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_AngryFace`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2330,10 +2710,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_AnimalHands`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2348,10 +2732,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_BubbleBoy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2367,10 +2755,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_ChadImplant`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2386,10 +2778,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_ChaosDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2405,10 +2801,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_DimensionalDivider`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2424,10 +2824,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_DiseaseJar`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2443,10 +2847,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_ExperimentalTreatment`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2462,10 +2870,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_FartFace`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2481,10 +2893,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_FigLeaf`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2500,10 +2916,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_Generic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2518,10 +2938,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_GlassCannon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2537,10 +2961,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_HardPill`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2556,10 +2984,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_HiveMind`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2575,10 +3007,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_MagicMirror`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2594,10 +3030,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_MeStone`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2613,10 +3053,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_MultilinkCable`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2632,10 +3076,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_MysteriousDice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2651,10 +3099,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_MysteriousGlasses`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2670,10 +3122,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_NDEDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2689,10 +3145,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_NuclearKnife`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2708,10 +3168,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_PartialLobotomy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2727,10 +3191,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_PartyDetonator`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2746,10 +3214,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_PersonalHeater`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2765,10 +3237,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_PersuasionDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2784,10 +3260,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_PrincessHat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2803,10 +3283,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_RealityScrambler`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2822,10 +3306,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_Redacted`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2841,10 +3329,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_SpiderInjector`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2860,10 +3352,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_Stopwatch`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2879,10 +3375,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_StorageLocker`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2898,10 +3398,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_TheIOU`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2917,10 +3421,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_TheLoner`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2936,10 +3444,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_Trapfest99`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2955,10 +3467,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_fail_UltraVision3000`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2974,10 +3490,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_AI`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -2992,10 +3512,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_AirHorn`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3010,10 +3534,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_AngryFace`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3028,10 +3556,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_AnimalHands`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3046,10 +3578,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_BubbleBoy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3064,10 +3600,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_ChadImplant`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3082,10 +3622,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_ChaosDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3100,10 +3644,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_DimensionalDivider`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3118,10 +3666,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_DiseaseJar`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3136,10 +3688,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_ExperimentalTreatment`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3154,10 +3710,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_FartFace`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3172,10 +3732,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_FigLeaf`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3190,10 +3754,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_Generic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3207,10 +3775,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_GlassCannon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3225,10 +3797,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_HardPill`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3243,10 +3819,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_HiveMind`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3261,10 +3841,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_MagicMirror`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3279,10 +3863,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_MeStone`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3297,10 +3885,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_MultilinkCable`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3315,10 +3907,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_MysteriousDice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3333,10 +3929,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_MysteriousGlasses`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3351,10 +3951,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_NDEDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3369,10 +3973,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_NuclearKnife`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3387,10 +3995,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_PartialLobotomy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3405,10 +4017,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_PartyDetonator`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3423,10 +4039,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_PersonalHeater`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3441,10 +4061,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_PersuasionDevice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3459,10 +4083,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_PrincessHat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3477,10 +4105,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_RealityScrambler`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3495,10 +4127,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_Redacted`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3513,10 +4149,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_SpiderInjector`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3531,10 +4171,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_Stopwatch`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3549,10 +4193,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_StorageLocker`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3567,10 +4215,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_TheIOU`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3585,10 +4237,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_TheLoner`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3602,10 +4258,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_Trapfest99`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3620,10 +4280,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `beaniesquest_intro_UltraVision3000`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3638,10 +4302,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `boss_fight_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3658,10 +4326,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `boss_fight_round2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3677,10 +4349,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_begin_accepting_cats`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3696,10 +4372,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_boneyard_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3714,10 +4394,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_first_house_boss_beat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3732,10 +4416,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_pyro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3750,10 +4438,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tina1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3768,10 +4460,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_backstab`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3785,10 +4481,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_charisma`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3802,10 +4502,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_combat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3819,10 +4523,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_disorders`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3836,10 +4544,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_drafting`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3853,10 +4565,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_elements`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3870,10 +4586,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_hard`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3887,10 +4607,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_headhome`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3904,10 +4628,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_houseboss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3921,10 +4649,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_info`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3938,10 +4670,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_intelligence`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3955,10 +4691,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3973,10 +4713,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_items`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -3990,10 +4734,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_lesscats`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4007,10 +4755,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_magicdamage`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4024,10 +4776,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_passives`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4041,10 +4797,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_reorient`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4058,10 +4818,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_rewards`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4075,10 +4839,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_tacticalview`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4092,10 +4860,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_turnorder`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4109,10 +4881,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `butch_tips_wellrounded`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4126,10 +4902,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `can_still_use_attack`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4149,10 +4929,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `can_still_use_attack_didntspell`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4172,10 +4956,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_a`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4191,10 +4979,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_b`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4210,10 +5002,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_c`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4229,10 +5025,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_d`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4248,10 +5048,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_iceage`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4267,10 +5071,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_jurassic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4286,10 +5094,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_moon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4305,10 +5117,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cant_afford_theend`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4324,10 +5140,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_butcher`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4343,10 +5163,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_druid`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4361,10 +5185,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_jester`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4380,10 +5208,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_medic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4399,10 +5231,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_monk`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4418,10 +5254,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_necromancer`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4437,10 +5277,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_psychic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4456,10 +5300,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_thief`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4475,10 +5323,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `class_unlock_tinkerer`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4494,10 +5346,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `collected_new_items`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4516,10 +5372,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `collected_nothing`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4537,10 +5397,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `do_not_end_turn`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4557,10 +5421,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `done_spitting_fail_ally`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4576,10 +5444,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `done_spitting_fail_miss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4595,10 +5467,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `done_spitting_fail_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4614,10 +5490,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `done_spitting_success`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4633,10 +5513,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ending`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4652,10 +5536,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `finish_adventure`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4671,10 +5559,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `first_fight_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4695,10 +5587,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `first_house_boss_tomorrow`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4714,10 +5610,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `first_house_hint_retired`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4733,10 +5633,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_caves_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4751,10 +5655,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_ending`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4769,10 +5677,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4788,10 +5700,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4807,10 +5723,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4826,10 +5746,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4845,10 +5769,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4864,10 +5792,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4883,10 +5815,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_max_repeating`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4900,10 +5836,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_terminator2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4918,10 +5858,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4935,10 +5879,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_10`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4952,10 +5900,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4969,10 +5921,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -4986,10 +5942,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5003,10 +5963,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5020,10 +5984,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5037,10 +6005,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_7`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5054,10 +6026,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_8`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5071,10 +6047,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `frank_tips_9`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5088,10 +6068,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `gone`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5105,10 +6089,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5128,10 +6116,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_kitten_box`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5147,10 +6139,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_pass_day`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5166,10 +6162,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_pass_day2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5185,10 +6185,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_pipe`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5204,10 +6208,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_retired_cat_box`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5223,10 +6231,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_starred_box`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5242,10 +6254,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_strays`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5266,10 +6282,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_4throom`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5285,10 +6305,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_attic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5304,10 +6328,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_basement`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5322,10 +6350,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_basement2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5340,10 +6372,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_basement3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5358,10 +6394,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_basement4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5376,10 +6416,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_basement5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5394,10 +6438,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_largehouse`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5413,10 +6461,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `house_upgrade_mediumhouse`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5432,10 +6484,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5457,10 +6513,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `introduce_hard_path`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5476,10 +6536,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_begin_accepting_cats`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5497,10 +6561,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_desert_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5517,10 +6585,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_introduction`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5541,10 +6613,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5562,10 +6638,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5583,10 +6663,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5604,10 +6688,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5625,10 +6713,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5646,10 +6738,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5667,10 +6763,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_max_repeating`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5684,10 +6784,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5705,10 +6809,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5726,10 +6834,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5747,10 +6859,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_shopupgrade4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5768,10 +6884,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jack_zara`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5788,10 +6908,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `level_up_didnt_select_sunburn`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5807,10 +6931,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `level_up_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5831,10 +6959,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `level_up_selected_sunburn`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5850,10 +6982,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `low_on_food`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5869,10 +7005,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `map_click_node`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5890,10 +7030,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `map_equip_items`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5912,10 +7056,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `map_equip_items2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5934,10 +7082,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_attack_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5957,10 +7109,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_cat_spit`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -5979,10 +7135,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_cat_spit_fail_ally`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6001,10 +7161,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_cat_spit_fail_miss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6023,10 +7187,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_cat_spit_fail_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6045,10 +7213,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_cat_spit_ignore`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6068,10 +7240,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_cat_spit_success`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6090,10 +7266,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_killed_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6112,10 +7292,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_move2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6135,10 +7319,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `melee_out_of_actions`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6157,10 +7345,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `new_adventure`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6176,10 +7368,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_boneyard_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6196,10 +7392,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6219,10 +7419,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6240,10 +7444,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6261,10 +7469,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6282,10 +7494,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6303,10 +7519,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6324,10 +7544,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6345,10 +7569,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_max_repeating`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6362,10 +7590,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_rename`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6383,10 +7615,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_throbbingdomain_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6403,10 +7639,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_tina3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6423,10 +7663,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_unlock`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6444,10 +7688,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6465,10 +7713,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6486,10 +7738,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6507,10 +7763,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6528,10 +7788,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6549,10 +7813,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `organ_upgrade6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6570,10 +7838,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_a`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6589,10 +7861,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_b`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6608,10 +7884,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_c`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6627,10 +7907,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_d`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6646,10 +7930,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_iceage`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6665,10 +7953,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_jurassic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6684,10 +7976,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_moon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6703,10 +7999,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purchase_item_theend`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6722,10 +8022,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_attack_tomtom`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6741,10 +8045,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_attack_tomtom_fail_ally`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6760,10 +8068,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_attack_tomtom_fail_miss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6779,10 +8091,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_attack_tomtom_fail_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6798,10 +8114,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_attack`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6819,10 +8139,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_early_attack2_ally`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6838,10 +8162,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_early_attack2_miss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6857,10 +8185,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_early_attack2_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6876,10 +8208,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_early_attack_ally`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6895,10 +8231,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_early_attack_miss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6914,10 +8254,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_early_attack_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6933,10 +8277,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_failmove`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6952,10 +8300,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6974,10 +8326,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_roll`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -6996,10 +8352,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ranged_cat_rolled_first`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7018,10 +8378,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_100`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7038,10 +8402,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_introduction`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7059,10 +8427,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_milliontrashed`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7078,10 +8450,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_postendgame`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7098,10 +8474,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_resummon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7117,10 +8497,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7134,10 +8518,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_100`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7153,10 +8541,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_1alt1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7172,10 +8564,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_1alt2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7191,10 +8587,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_1alt3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7210,10 +8610,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7227,10 +8631,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_2alt1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7246,10 +8654,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_2alt2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7265,10 +8677,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_2alt3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7284,10 +8700,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7301,10 +8721,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_3alt1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7320,10 +8744,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_3alt2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7339,10 +8767,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_3alt3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7358,10 +8790,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7375,10 +8811,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_4alt1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7394,10 +8834,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_4alt2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7413,10 +8857,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_4alt3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7432,10 +8880,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_houseboss_1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7451,10 +8903,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_houseboss_100`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7470,10 +8926,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_houseboss_2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7489,10 +8949,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_houseboss_3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7508,10 +8972,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7527,10 +8995,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_savescum_intro_houseboss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7546,10 +9018,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act1_crazy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7566,10 +9042,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act1_impossible`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7586,10 +9066,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act2_crazy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7606,10 +9090,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act2_hard`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7626,10 +9114,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act2_impossible`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7646,10 +9138,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act3_crazy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7666,10 +9162,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act3_hard`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7686,10 +9186,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `steven_unlock_act3_impossible`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7706,10 +9210,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `take_cats_inside`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7726,10 +9234,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `test_gamepad_prompts`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7743,10 +9255,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_aggression`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7762,10 +9278,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_basestats`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7781,10 +9301,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_begin_accepting_cats`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7800,10 +9324,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_inbreeding`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7819,10 +9347,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7838,10 +9370,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max10`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7857,10 +9393,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7876,10 +9416,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7895,10 +9439,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7914,10 +9462,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7933,10 +9485,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7951,10 +9507,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max7`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7970,10 +9530,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max8`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -7989,10 +9553,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max9`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8008,10 +9576,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8027,10 +9599,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_max_repeating`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8044,10 +9620,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_prettybow`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8063,10 +9643,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_relationships`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8082,10 +9666,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_sexuality`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8101,10 +9689,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tags`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8120,10 +9712,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_terminator`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8138,10 +9734,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tina2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8156,10 +9756,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_appeal`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8173,10 +9777,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_basestats`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8190,10 +9798,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_cleaning`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8207,10 +9819,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_comfort`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8224,10 +9840,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_health`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8241,10 +9861,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_inbreeding`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8258,10 +9882,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8276,10 +9904,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_multiclassing`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8293,10 +9925,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_mutation`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8310,10 +9946,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tink_tips_stimulation`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8327,10 +9967,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_blankcollar1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8348,10 +9992,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_blankcollar2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8369,10 +10017,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_blankcollar3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8390,10 +10042,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodbonus1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8411,10 +10067,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8432,10 +10092,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage10`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8453,10 +10117,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8474,10 +10142,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8495,10 +10167,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8516,10 +10192,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8537,10 +10217,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8558,10 +10242,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage7`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8579,10 +10267,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage8`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8600,10 +10292,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_foodstorage9`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8621,10 +10317,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8642,10 +10342,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8663,10 +10367,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8684,10 +10392,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8705,10 +10417,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8726,10 +10442,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8747,10 +10467,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_idol7`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8768,10 +10492,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_introduction`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8789,10 +10517,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_kaijufight`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8809,10 +10541,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8830,10 +10566,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8851,10 +10591,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8872,10 +10616,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8893,10 +10641,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8914,10 +10666,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8935,10 +10691,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tracy_max_repeating`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8952,10 +10712,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `try_again_attack_rat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8976,10 +10740,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `try_again_melee_move`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -8997,10 +10765,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tutorial_cat_dies`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9016,10 +10788,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9033,10 +10809,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9050,10 +10830,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9067,10 +10851,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9084,10 +10872,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9101,10 +10893,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `unprompted6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9118,10 +10914,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9137,10 +10937,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9156,10 +10960,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9175,10 +10983,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9194,10 +11006,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9213,10 +11029,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9232,10 +11052,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_7`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9251,10 +11075,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_max1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9270,10 +11098,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_max2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9288,10 +11120,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_max3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9307,10 +11143,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_max4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9326,10 +11166,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_max5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9345,10 +11189,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_crazy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9362,10 +11210,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_hard`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9379,10 +11231,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_impossible`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9396,10 +11252,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9415,10 +11275,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_storage_repeating_normal`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9432,10 +11296,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `use_attack_after_used_weapon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9455,10 +11323,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `use_weapon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9478,10 +11350,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9499,10 +11375,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_boneyard`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9520,10 +11400,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_bunker`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9541,10 +11425,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_caves`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9562,10 +11450,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_core`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9582,10 +11474,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_crater`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9603,10 +11499,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_desert`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9623,10 +11523,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_future`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9643,10 +11547,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_iceage`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9664,10 +11572,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_junkyard`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9684,10 +11596,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_jurassic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9705,10 +11621,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_lab`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9726,10 +11646,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_moon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9746,10 +11670,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_sewers`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9767,10 +11695,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_theend`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9789,10 +11721,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_water`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 
@@ -9809,10 +11745,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `welcome_water_cheap`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
 

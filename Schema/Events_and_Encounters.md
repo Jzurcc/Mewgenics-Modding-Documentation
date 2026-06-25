@@ -15,7 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`intro`](./Events_and_Encounters.md#context-intro) | Object | Event Node: The initial text block when a story event first loads. | 216 |
 | [`main`](./Events_and_Encounters.md#context-main) | Object | Event Node: The central hub or recurring menu of a story event. | 214 |
 | [`label`](./Strings.md#string-label) | String |  | 16 |
@@ -86,16 +86,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Object: Story branch or dialog option representing the 'Reward' action.  
+**Total Count:** 757
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 757
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`bad`](./Events_and_Encounters.md#context-bad), [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward), [`good`](./Events_and_Encounters.md#context-good)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1879 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `ambush_next_basic_fights` | Number |  | 1 |
 | [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 24 |
 | [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
@@ -145,16 +149,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Node: Story branch or dialog option representing the 'Common' action.  
+**Total Count:** 633
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 633
 
 > **Referenced by:** [`reward`](./Events_and_Encounters.md#context-reward)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1273 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`damage`](./Arrays.md#array-damage) | Array | Event Node: Story branch or dialog option representing the 'Damage' action. | 24 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
 | `ally_ambush_next_fights` | `Number` |  | 10 |
@@ -223,16 +231,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Node: Story branch or dialog option representing the 'Rare' action.  
+**Total Count:** 633
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 633
 
 > **Referenced by:** [`attack`](./Events_and_Encounters.md#context-attack), [`good`](./Events_and_Encounters.md#context-good), [`loot`](./Events_and_Encounters.md#context-loot), [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options), [`reward`](./Events_and_Encounters.md#context-reward)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1444 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 15 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
 | `ally_ambush_next_fights` | `Number` |  | 5 |
@@ -321,16 +333,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** `false`, `true`  
+**Total Count:** 550
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 550
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`a`](./Events_and_Encounters.md#context-a), [`activate_p`](./Events_and_Encounters.md#context-activate_p), [`activate_z`](./Events_and_Encounters.md#context-activate_z), [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice), [`arm`](./Events_and_Encounters.md#context-arm), [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#context-attach_leech), [`attack`](./Events_and_Encounters.md#context-attack), [`b`](./Events_and_Encounters.md#context-b), [`bash`](./Events_and_Encounters.md#context-bash), [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt), [`bite`](./Events_and_Encounters.md#context-bite), [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off), [`blue_needle`](./Events_and_Encounters.md#context-blue_needle), [`boogers`](./Events_and_Encounters.md#context-boogers), [`book`](./Events_and_Encounters.md#context-book), [`brace`](./Events_and_Encounters.md#context-brace), [`break_ice`](./Events_and_Encounters.md#context-break_ice), and 177 more...
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1435 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 6 |
 | `ally_ambush_next_fights` | Number |  | 1 |
 | [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
@@ -407,16 +423,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Object: Story branch or dialog option representing the 'Bad' action.  
+**Total Count:** 341
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 341
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`arm`](./Events_and_Encounters.md#context-arm), [`attack`](./Events_and_Encounters.md#context-attack), [`bash`](./Events_and_Encounters.md#context-bash), [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt), [`bite`](./Events_and_Encounters.md#context-bite), [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off), [`blue_needle`](./Events_and_Encounters.md#context-blue_needle), [`body`](./Events_and_Encounters.md#context-body), [`break_ice`](./Events_and_Encounters.md#context-break_ice), [`break_lock`](./Events_and_Encounters.md#context-break_lock), [`bribe`](./Events_and_Encounters.md#context-bribe), [`catch`](./Events_and_Encounters.md#context-catch), [`challenge_to_game`](./Events_and_Encounters.md#context-challenge_to_game), [`charm`](./Events_and_Encounters.md#context-charm), [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt), [`climb`](./Events_and_Encounters.md#context-climb), [`comfort`](./Events_and_Encounters.md#context-comfort), [`communicate`](./Events_and_Encounters.md#context-communicate), [`concheck`](./Events_and_Encounters.md#context-concheck), and 106 more...
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1529 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |
 | [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | `con` | Number |  | 1 |
@@ -455,10 +475,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `intro`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 214
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 214
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root)
 
@@ -469,7 +493,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`subject_clip`](./Enums.md#enum-subject_clip) | Enum |  | 214 |
 | [`subject_frame`](./Enums.md#enum-subject_frame) | Enum |  | 214 |
 | [`title`](./Strings.md#string-title) | String |  | 214 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum |  | 9 |
 | `different_from_last_x_cats` | Number |  | 3 |
 | `subject_frame_inner` | Number |  | 3 |
@@ -486,16 +510,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `main`
 
+
+
+**Definition:** Event Object: The central hub or recurring menu of a story event.  
+**Total Count:** 214
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 214
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1350 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
@@ -543,16 +571,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Object: Lists the available clickable dialog choices for the current story node.  
+**Total Count:** 210
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 210
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 24 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 |
 | [`examine`](./Events_and_Encounters.md#context-examine) | Object | Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 |
 | [`loot`](./Events_and_Encounters.md#context-loot) | Object | Event Node: Story branch or dialog option representing the \'Loot\' action. | 25 |
@@ -806,20 +838,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `get_item_from_pool`
 
 
+
+
 **Definition:** Event Action: Rewards the player with an item drawn from a specific loot pool.  
 **Total Count:** 40
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum |  | 40 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`restrict`](./Arrays.md#array-restrict) | Array |  | 17 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
 
@@ -829,10 +862,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `requirements`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 203
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 203
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`activate_p`](./Events_and_Encounters.md#context-activate_p), [`activate_z`](./Events_and_Encounters.md#context-activate_z), [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#context-attach_leech), [`bash`](./Events_and_Encounters.md#context-bash), [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt), [`blue_needle`](./Events_and_Encounters.md#context-blue_needle), [`charm`](./Events_and_Encounters.md#context-charm), [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt), [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward), [`dig`](./Events_and_Encounters.md#context-dig), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`fiddle`](./Events_and_Encounters.md#context-fiddle), [`fight`](./Events_and_Encounters.md#context-fight), [`fill_jar`](./Events_and_Encounters.md#context-fill_jar), and 31 more...
 
@@ -860,19 +897,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `self_status_next_fight`
 
 
+
+
 **Definition:** Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter.  
 **Total Count:** 143
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`bad`](./Events_and_Encounters.md#context-bad), [`buy1`](./Events_and_Encounters.md#context-buy1), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 103 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -881,13 +919,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `permanent_stats`
 
 
+
+
 **Definition:** Event Reward: Permanently increases (or decreases) the core stats of a single character.  
 **Total Count:** 134
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -909,19 +948,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `conditional_reward`
 
 
+
+
 **Definition:** Event Action: Provides a reward only if a specific condition is met.  
 **Total Count:** 126
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`setup`](./Events_and_Encounters.md#context-setup)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 498 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 125 |
 | [`else`](./Events_and_Encounters.md#context-else) | Object | Event Node: Story branch or dialog option representing the \'Else\' action. | 37 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
@@ -940,13 +980,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `random_mutation`
 
 
+
+
 **Definition:** Event Reward: Applies a completely random mutation to a character.  
 **Total Count:** 19
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -962,16 +1003,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ignore`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 57
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 57
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1281 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 57 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 56 |
@@ -1002,16 +1047,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `examine`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 44
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 44
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1293 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 43 |
 | [`stat`](./Math_Equations.md) | Equation |  | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
@@ -1042,13 +1091,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `spawn_unit_next_fight`
 
 
+
+
 **Definition:** Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter.  
 **Total Count:** 41
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
 
@@ -1065,16 +1115,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `else`
 
+
+
+**Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
+**Total Count:** 37
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 37
 
 > **Referenced by:** [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 252 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
@@ -1097,16 +1151,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Node: Story branch or dialog option representing the 'Leave' action.  
+**Total Count:** 32
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 32
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1253 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 30 |
@@ -1135,16 +1193,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `loot`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 25
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 25
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1377 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 25 |
@@ -1187,10 +1249,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Object: Story branch or dialog option representing the 'Mutation' action.  
+**Total Count:** 24
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 24
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`spawn_reflection_next_fight`](./Events_and_Encounters.md#context-spawn_reflection_next_fight)
 
@@ -1218,16 +1284,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `eat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 23
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 23
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1266 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |
 | [`stat`](./Math_Equations.md) | Equation |  | 23 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 23 |
@@ -1256,19 +1326,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_status_next_fight`
 
 
+
+
 **Definition:** Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter.  
 **Total Count:** 24
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1278,16 +1349,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Object: Pre-initialization logic executed before the event UI is drawn.  
+**Total Count:** 23
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 23
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 129 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 42 |
 | `set_frame` | `Number` |  | 3 |
 
@@ -1299,16 +1374,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Object: Triggers a narrative cutscene.  
+**Total Count:** 22
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 22
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`good`](./Events_and_Encounters.md#context-good)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 21 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `skip_result_screen` | Boolean |  | 21 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 21 |
 
@@ -1319,13 +1398,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `random_mutation_from_set`
 
 
+
+
 **Definition:** Event Reward: Applies a random mutation to a character from a specific pool.  
 **Total Count:** 22
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -1352,16 +1432,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `smash`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 16
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 16
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1246 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
@@ -1390,16 +1474,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `destroy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 14
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 14
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1247 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
 | [`stat`](./Math_Equations.md) | Equation |  | 14 |
@@ -1427,16 +1515,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `bash`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 12
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 12
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1244 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |
 | [`label`](./Strings.md#string-label) | String |  | 12 |
 | [`stat`](./Math_Equations.md) | Equation |  | 12 |
@@ -1465,16 +1557,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `open`
 
+
+
+**Definition:** Character Form: Behavior and stats for the 'Open' state.  
+**Total Count:** 11
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 11
 
 > **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1234 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
@@ -1503,16 +1599,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sneak`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 11
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 11
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1242 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |
 | [`stat`](./Math_Equations.md) | Equation |  | 11 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 11 |
@@ -1542,19 +1642,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `global_effect_next_fight`
 
 
+
+
 **Definition:** Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter.  
 **Total Count:** 11
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 |
 
 </details>
@@ -1563,16 +1664,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `take`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 8
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 8
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1236 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
@@ -1601,10 +1706,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `a`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1621,16 +1730,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `attack`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1339 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
@@ -1668,10 +1781,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `b`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1688,10 +1805,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `c`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1708,16 +1829,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `charm`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1234 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
@@ -1746,16 +1871,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `fight`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1233 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
@@ -1785,13 +1914,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `leave_party_temporarily`
 
 
+
+
 **Definition:** Event Action: Removes a character from the active team until the next hub area.  
 **Total Count:** 9
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -1807,10 +1937,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `touch`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 7
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 7
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1820,7 +1954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1233 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -1845,10 +1979,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `activate_p`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1866,10 +2004,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `activate_z`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1887,10 +2029,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `d`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1907,16 +2053,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `enter`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1231 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 5 |
@@ -1946,10 +2096,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `inspect`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -1958,7 +2112,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`stat`](./Math_Equations.md) | Equation |  | 6 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1232 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -1983,16 +2137,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `lick`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 6
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 6
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1231 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 6 |
@@ -2023,13 +2181,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `next_event_from_set`
 
 
+
+
 **Definition:** Event Action: Chains immediately into a randomly selected subsequent story event.  
 **Total Count:** 6
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2045,16 +2204,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
+
+
+**Definition:** Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle.  
+**Total Count:** 5
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 5
 
 > **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 8 |
 
 </details>
@@ -2063,16 +2226,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `drink`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 5
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 5
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1230 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 5 |
@@ -2100,16 +2267,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `kiss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 5
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 5
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1230 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
@@ -2137,16 +2308,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `run`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 5
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 5
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1230 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
@@ -2176,10 +2351,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `bite`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2189,7 +2368,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1228 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -2214,10 +2393,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage`
 
+
+
+**Definition:** The base damage properties of an attack.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2234,16 +2417,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `go_around`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1228 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 3 |
@@ -2272,10 +2459,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `home`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2295,17 +2486,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Object: Logic and text executed after selecting a specific dialog option.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`weather_roll`](./Arrays.md#array-weather_roll) | Array |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 
 </details>
@@ -2315,13 +2510,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_permanent_stats_exclude_self`
 
 
+
+
 **Definition:** Event Reward: Permanently modifies stats for all party members except the one who initiated the action.  
 **Total Count:** 4
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2341,10 +2537,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `past`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2363,10 +2563,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `skip`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2375,7 +2579,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 409 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
@@ -2388,16 +2592,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusRandomEnemiesOnBattleStart`
 
+
+
+**Definition:** Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `count` | Number | Quantity. | 11 |
 
 </details>
@@ -2406,10 +2614,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `investigate`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2418,7 +2630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1226 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -2443,16 +2655,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `repell`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1226 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
@@ -2480,10 +2696,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `spawn_reflection_next_fight`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 3
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 3
 
 > **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2496,10 +2716,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `KillEnemyOfTypeAtBattleStart`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
 
@@ -2514,10 +2738,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `attach_antenna`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2535,10 +2763,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `boogers`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2555,10 +2787,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `copy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2573,10 +2809,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `find_another_way`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2584,7 +2824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1224 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
@@ -2611,16 +2851,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `move_closer`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1224 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
@@ -2649,13 +2893,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_permanent_stats`
 
 
+
+
 **Definition:** Event Reward: Permanently increases (or decreases) the core stats of all party members.  
 **Total Count:** 3
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2670,13 +2915,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `party_random_mutation_from_set`
 
 
+
+
 **Definition:** Event Reward: Applies a random mutation to the entire party from a specific pool.  
 **Total Count:** 2
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`rare`](./Events_and_Encounters.md#context-rare)
 
@@ -2694,16 +2940,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `play`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1224 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
@@ -2731,10 +2981,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `poop`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2751,10 +3005,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `print`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2769,10 +3027,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `protection`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2789,10 +3051,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `repair`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2802,7 +3068,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Mixed |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 2 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -2827,10 +3093,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sacrifice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2841,7 +3111,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -2866,10 +3136,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `scale`
 
+
+
+**Definition:** Examples: `.75, 1.33, 1`  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2884,10 +3158,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `turnon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2896,7 +3174,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1224 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -2921,10 +3199,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `altar_sacrifice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2940,16 +3222,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `arm`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -2977,10 +3263,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `attach_amplifier`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -2998,10 +3288,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `attach_leech`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3019,16 +3313,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `bash_past_alt`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3057,16 +3355,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `bite_it_off`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3094,10 +3396,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `blue`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3115,16 +3421,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `blue_needle`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3153,10 +3463,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `body`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3164,7 +3478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 406 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
@@ -3177,10 +3491,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `book`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3197,10 +3515,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `brace`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3217,10 +3539,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `break_ice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3235,10 +3561,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `break_lock`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3247,7 +3577,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3272,16 +3602,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `bribe`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3309,10 +3643,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `button`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3330,16 +3668,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `buy1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1095 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -3369,16 +3711,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `catch`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3406,10 +3752,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `challenge_to_game`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3418,7 +3768,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3443,10 +3793,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `chaos_ending`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3462,10 +3816,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `chapter_cutscene`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3481,16 +3839,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `charm_past_alt`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -3519,16 +3881,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `climb`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3556,16 +3922,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `comfort`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3593,10 +3963,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `communicate`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3605,7 +3979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3630,10 +4004,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `concheck`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3642,7 +4020,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3667,10 +4045,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `counter`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3687,10 +4069,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `crack_open`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3699,7 +4085,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3724,10 +4110,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cross`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3735,7 +4125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3759,16 +4149,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cut_wires`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3796,16 +4190,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage_1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3833,10 +4231,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage_full`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3845,7 +4247,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3870,16 +4272,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage_half`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -3907,10 +4313,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `desert_cutscene`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3926,10 +4336,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `dexcheck`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -3938,7 +4352,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3963,16 +4377,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `dig`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4001,16 +4419,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `disarm`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4038,16 +4460,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `dive`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4075,10 +4501,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `donate`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4095,16 +4525,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `donate_10`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4138,16 +4572,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `donate_15`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4181,16 +4619,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `donate_20`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4224,16 +4666,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `donate_5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4267,10 +4713,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `double`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4287,16 +4737,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `eat_meat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4324,10 +4778,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `enter_crater`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4343,10 +4801,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `face`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4361,10 +4823,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `fiddle`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4381,10 +4847,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `fill_jar`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4402,10 +4872,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `find`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4421,10 +4895,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `fire`
 
+
+
+**Definition:** Character Form: Behavior and stats for the 'Fire' state.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4441,10 +4919,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `flush_yourself`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4460,16 +4942,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `follow`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4497,16 +4983,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `free`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4536,10 +5026,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** Event Node: Story branch or dialog option representing the 'Future' action.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4559,13 +5053,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `gain_clone_familiar`
 
 
+
+
 **Definition:** Event Action: Adds a clone of a character to the party as a familiar.  
 **Total Count:** 1
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
 
@@ -4580,13 +5075,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `gain_familiar`
 
 
+
+
 **Definition:** Event Action: Adds a specific familiar to the party.  
 **Total Count:** 2
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -4599,16 +5095,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `give_parasite`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4636,10 +5136,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `hack`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4655,10 +5159,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `head`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4673,10 +5181,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `holy`
 
+
+
+**Definition:** Character Form: Behavior and stats for the \'Holy\' state.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4693,10 +5205,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `hp`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4713,10 +5229,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ice`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4733,10 +5253,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `infinite`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4755,10 +5279,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `intcheck`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4774,10 +5302,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `intimidation`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4794,10 +5326,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `itchies`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4806,7 +5342,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 406 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
@@ -4819,16 +5355,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `join`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4856,16 +5396,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jump`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4893,16 +5437,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jump_over`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4930,10 +5478,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `keep_going`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -4941,7 +5493,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -4965,16 +5517,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `kiss_meat`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5002,10 +5558,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `knife`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5022,16 +5582,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `leave_it_in`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
@@ -5060,16 +5624,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `leg`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5097,16 +5665,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `lever`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | `fixed_chance` | Number |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -5136,16 +5708,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `lick_alt`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -5174,10 +5750,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `lightning`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5194,10 +5774,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `listen`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5213,10 +5797,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `looks`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5232,10 +5820,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `loot_heart`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5253,10 +5845,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `makeup`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5273,10 +5869,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mind`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5291,10 +5891,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `neck`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5309,10 +5913,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `nothanks`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5329,10 +5937,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `outsmart`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5348,10 +5960,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `patch_up`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5360,7 +5976,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5385,16 +6001,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `pick_lock`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5422,10 +6042,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `pilfer`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5434,7 +6058,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5459,10 +6083,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `pirouette`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5479,10 +6107,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `place_gristle`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5500,10 +6132,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `power`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5519,10 +6155,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `pull`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5531,7 +6171,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5556,16 +6196,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `pull_it_out`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
@@ -5593,16 +6237,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `pull_lever`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -5628,16 +6276,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `purify`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5665,16 +6317,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `push_buttons`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1220 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -5700,10 +6356,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `push_through`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5712,7 +6372,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5737,10 +6397,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `put_in_coins`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5753,7 +6417,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1223 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5779,10 +6443,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `put_out_of_misery`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5791,7 +6459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5817,19 +6485,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `random_chance`
 
 
+
+
 **Definition:** Event Logic: Executes the nested outcome based on a percentage roll.  
 **Total Count:** 2
 
+
 <details>
 <summary><b>Expand</b></summary>
-
-
 
 > **Referenced by:** [`reward`](./Events_and_Encounters.md#context-reward)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | `chance` | Number | Probability weight for this outcome. | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Enum/String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 |
 
@@ -5839,10 +6508,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `reach_inside`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5858,10 +6531,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `read`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5870,7 +6547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5895,10 +6572,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `receive`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -5916,16 +6597,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `red`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | `fixed_chance` | Number |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -5955,16 +6640,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `red_needle`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -5993,10 +6682,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `reflect`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6013,10 +6706,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `remove`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6025,7 +6722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -6050,16 +6747,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `remove_the_nail`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6087,10 +6788,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `repair_quest`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6107,10 +6812,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `rest`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6126,10 +6835,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `revive`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6145,10 +6858,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `rub`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6164,16 +6881,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `run_again`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
@@ -6203,10 +6924,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `run_away`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6215,7 +6940,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -6240,10 +6965,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sacrifice_full_favor`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6261,10 +6990,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sacrifice_normal`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6282,10 +7015,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sacrifice_partial_favor`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6296,7 +7033,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -6321,10 +7058,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sacrifice_quest`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6342,10 +7083,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `scream`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6361,10 +7106,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `shake`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6380,16 +7129,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `slip_through`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6417,16 +7170,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sneak_by`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6454,16 +7211,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sneak_past_alt`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -6492,10 +7253,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `soul`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6510,10 +7275,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `speed`
 
+
+
+**Definition:** Examples: `.5, 2, 20`  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6530,10 +7299,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `surprise`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6550,16 +7323,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `sweet_talk`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6587,16 +7364,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `swim`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6624,16 +7405,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tail`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6661,10 +7446,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `take_blood`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6682,16 +7471,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `talk`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6719,10 +7512,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `talk_to`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6731,7 +7528,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -6756,10 +7553,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `tappytoes`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6776,16 +7577,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `teleport`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6813,10 +7618,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `thorns`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6833,10 +7642,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `throw`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6852,10 +7665,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `timemachine`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6871,16 +7688,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `traverse`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 938 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
@@ -6902,16 +7723,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `upgrade_yourself`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6939,10 +7764,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `use_item`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -6951,7 +7780,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -6976,16 +7805,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `use_toilet_con`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7013,10 +7846,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `use_toilet_str`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7025,7 +7862,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -7050,10 +7887,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `use_weapon`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7069,10 +7910,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `w1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7089,10 +7934,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `w2`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7109,10 +7958,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `w3`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7129,10 +7982,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `w4`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7149,10 +8006,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `w5`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7169,10 +8030,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `w6`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7189,10 +8054,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `wealth`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7208,10 +8077,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `wheezies`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7220,7 +8093,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 406 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
@@ -7233,10 +8106,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `wish_genes`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7253,10 +8130,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `wish_items`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7273,10 +8154,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `wish_levelups`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7293,10 +8178,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `wish_strength`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
@@ -7313,16 +8202,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `withstand`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7350,16 +8243,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `yank_it_out`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7387,16 +8284,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `yellow_needle`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |

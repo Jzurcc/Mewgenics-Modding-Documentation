@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`easy`](#object-easy) | Object |  | 16 |
 | [`hard`](#object-hard) | Object |  | 42 |
 | `bonus_itemroll_luck` | Integer |  | 16 |
@@ -33,10 +33,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `easy`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 8
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -55,10 +59,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `hard`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 21
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 

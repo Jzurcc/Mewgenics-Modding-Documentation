@@ -16,8 +16,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1549 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `icon_frame` | Integer |  | 128 |
 | `value` | Float |  | 485 |
 | `unique` | Boolean |  | 72 |
@@ -34,17 +34,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `passives`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Object listing intrinsic passive modifiers.  
 **Total Count:** 2805
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2609 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 173 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -52,16 +56,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusEachRoundBegin`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 8
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -70,27 +78,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `effects`
 
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Non-damaging status applications and logic triggers executed on impact.  
 **Total Count:** 2166
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`DamageNeighborsAfterMove`](#object-damageneighborsaftermove), [`MeleeRevengeDamage`](#object-meleerevengedamage), [`RevengeDamage`](#object-revengedamage)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1886 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 59 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 </details>
 
 ---
 
 ### Object: `DepressionAura`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `1`  
 **Total Count:** 5
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -106,16 +122,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MeleeRevengeDamage`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
 **Total Count:** 73
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 49 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `knockback` | Integer |  | 48 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
 
@@ -125,10 +145,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChanceToRevive`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 5
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -144,16 +168,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DamageNeighborsAfterMove`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 18 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 8 |
 | `damage` | Integer |  | 8 |
@@ -164,16 +192,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `RevengeDamage`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Reaction trigger: Deals damage to the attacker when hit.  
 **Total Count:** 31
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 10 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -181,10 +213,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpawnOnBattleStart`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 38
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -199,10 +235,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusEachTurnEnd`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Applies or references the 'StatusEachTurnEnd' effect/state.  
 **Total Count:** 57
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -214,10 +254,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `statuses`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Status effects possessed by the character.  
 **Total Count:** 14
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ChanceToRevive`](#object-chancetorevive)
 
@@ -230,10 +274,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `AddStatusToBasicAttack`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
 **Total Count:** 248
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -245,10 +293,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ReflectProjectiles`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 8
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -261,26 +313,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusEachRoundEnd`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Applies or references the 'StatusEachRoundEnd' effect/state.  
 **Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 </details>
 
 ---
 
 ### Object: `StatusOnDie`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 9
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -292,16 +352,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnEnemyCastSpell`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -309,10 +373,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `StatusOnKill`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 40
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -322,3 +390,49 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
+
+<details>
+<summary><b>AddStatusToBasicAttack</b></summary>
+
+> **Total Count:** 187
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 187 |
+
+</details>
+
+<details>
+<summary><b>StatusEachTurnEnd</b></summary>
+
+> **Total Count:** 0
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+<details>
+<summary><b>StatusOnDie</b></summary>
+
+> **Total Count:** 6
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 6 |
+
+</details>
+
+<details>
+<summary><b>StatusOnKill</b></summary>
+
+> **Total Count:** 36
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |
+| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 36 |
+
+</details>

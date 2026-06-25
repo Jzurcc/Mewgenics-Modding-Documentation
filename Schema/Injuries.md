@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |
 | `id` | Integer |  | 16 |
@@ -29,10 +29,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `stats`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Core character metrics (Health, Strength, etc.).  
 **Total Count:** 497
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -52,10 +56,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `scars`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 10
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 

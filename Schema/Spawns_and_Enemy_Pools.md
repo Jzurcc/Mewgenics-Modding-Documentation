@@ -19,7 +19,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`editor`](#object-editor) | Object |  | 578 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 545 |
 | `value` | Float |  | 485 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `early_spawn` | Boolean |  | 10 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 10 |
 | [`tag_location`](./Enums.md#enum-tag_location) | Enum |  | 5 |
@@ -37,10 +37,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `editor`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 578
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -49,7 +53,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `category` | Integer |  | 577 |
 | [`image`](./Arrays.md#array-image) | Array |  | 2 |
 | `paint` | Boolean |  | 576 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 3 |
 | `subcategory` | Integer |  | 35 |
 | `layer` | `Number` |  | 3 |
@@ -60,10 +64,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `weather_element_alt`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 1
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 

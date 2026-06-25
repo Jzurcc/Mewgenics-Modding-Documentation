@@ -15,7 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 967 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`boss`](./Map_Generation_and_Routing.md#context-boss) | Object |  | 63 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 54 |
 | [`easy`](./Arrays.md#array-easy) | Array |  | 16 |
@@ -153,10 +153,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `boss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 41
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 41
 
 > **Referenced by:** [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#context-genflag_boss_spewer), [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -176,10 +180,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `exit0`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 27
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 27
 
 > **Referenced by:** [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#context-boneyardunlocked), [`BunkerUnlocked`](./Map_Generation_and_Routing.md#context-bunkerunlocked), [`CavesUnlocked`](./Map_Generation_and_Routing.md#context-cavesunlocked), [`CoreUnlocked`](./Map_Generation_and_Routing.md#context-coreunlocked), [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#context-endoftimeunlocked), [`JurassicUnlocked`](./Map_Generation_and_Routing.md#context-jurassicunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonUnlocked`](./Map_Generation_and_Routing.md#context-moonunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`SewersUnlocked`](./Map_Generation_and_Routing.md#context-sewersunlocked), [`TheEndUnlocked`](./Map_Generation_and_Routing.md#context-theendunlocked)
 
@@ -197,10 +205,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `quest_event`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 24
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 24
 
 > **Referenced by:** [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#context-bothobelisksunlocked), [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#context-chaosantennaattached), [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#context-coreobeliskunlocked), [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#context-dimensionxunlocked), [`FutureUnlocked`](./Map_Generation_and_Routing.md#context-futureunlocked), [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#context-iceageunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#context-moonobeliskunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#context-throbbingarterydone), [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached), [`WallOfFleshDone`](./Map_Generation_and_Routing.md#context-walloffleshdone)
 
@@ -216,10 +228,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `exit1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 5
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 5
 
 > **Referenced by:** [`CraterUnlocked`](./Map_Generation_and_Routing.md#context-craterunlocked), [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#context-junkyardunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -236,10 +252,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `hard_initial`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`HardPathUnlocked`](./Map_Generation_and_Routing.md#context-hardpathunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -254,10 +274,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `time_machine`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 4
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 4
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -273,10 +297,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BothObelisksUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -290,10 +318,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DimensionXUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -307,10 +339,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `EndOfTimeUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -324,10 +360,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `HardPathUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -341,10 +381,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MeatWorldUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -359,10 +403,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `VolcanoAntennaAttached`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -376,10 +424,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `miniboss_event`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -394,10 +446,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_battle1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -412,10 +468,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_boss`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -432,10 +492,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_earlyhome`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -450,10 +514,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_event1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -468,10 +536,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_hard1`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -487,10 +559,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_home`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -505,10 +581,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_quest_event`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -525,10 +605,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_treasure`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 2
 
 > **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -543,10 +627,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BoneyardUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -560,10 +648,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `BunkerUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -577,10 +669,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CavesUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -594,10 +690,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChaosAntennaAttached`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -611,10 +711,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CoreObeliskUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -628,10 +732,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CoreUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -645,10 +753,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CraterUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -662,10 +774,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FutureUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -679,10 +795,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `GenFlag_Boss_Spewer`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -696,10 +816,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `GenFlag_Boss_Stacy`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -714,10 +838,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `IceAgeUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -731,10 +859,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `JunkyardUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -748,10 +880,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `JurassicUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -765,10 +901,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MeatWorldUnlockedFull`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -789,10 +929,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MoonObeliskUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -806,10 +950,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MoonUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -823,10 +971,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SewersUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -840,10 +992,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TheEndUnlocked`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -857,10 +1013,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ThrobbingArteryDone`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -874,10 +1034,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `WallOfFleshDone`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -893,10 +1057,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -910,10 +1078,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `dimensionx`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -927,10 +1099,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `endoftime`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -944,10 +1120,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `event`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -962,10 +1142,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `exit_desert`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -983,10 +1167,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `exit_lab`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1004,10 +1192,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `future`
 
+
+
+**Definition:** Event Node: Story branch or dialog option representing the 'Future' action.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1021,10 +1213,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `home`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1038,10 +1234,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `iceage`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1055,10 +1255,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `jurassic`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1072,10 +1276,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mw_altar`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1091,10 +1299,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `shop_cheapwater`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1110,10 +1322,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `shop_water`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1129,10 +1345,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `start`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1146,10 +1366,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `theend`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1163,10 +1387,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `treasure`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 
@@ -1181,10 +1409,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `weather_event`
 
+
+
+**Definition:** No definition provided.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
 

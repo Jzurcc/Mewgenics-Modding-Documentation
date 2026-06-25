@@ -39,14 +39,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `graphics`
 
-**Definition:** Examples: `{ ... }`  
 
+
+**Definition:** Object defining visual animations and sequence timings.  
+**Total Count:** 2609
 
 
 <details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2609
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -64,14 +64,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `meta`
 
-**Definition:** Examples: `{ ... }`  
-**Total Count:** 2374
 
+
+**Definition:** Object defining UI display data (Name, Description, Icon).  
+**Total Count:** 2374
 
 
 <details>
 <summary><b>Expand</b></summary>
-
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -86,14 +86,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `stat_mods`
 
+
+
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 13
 
 
-
 <details>
 <summary><b>Expand</b></summary>
-
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -113,14 +113,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ability_groups`
 
+
+
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 12
 
 
-
 <details>
 <summary><b>Expand</b></summary>
-
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -137,20 +137,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `innate_passives`
 
+
+
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 4
-
 
 
 <details>
 <summary><b>Expand</b></summary>
 
-
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 |
 
 </details>
@@ -159,14 +159,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `innate_items`
 
+
+
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 2
 
 
-
 <details>
 <summary><b>Expand</b></summary>
-
 
 > **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
 
@@ -181,10 +181,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TinkererBasicAttackSwitching`
 
+
+
+**Definition:** Logic: Allows Tinkerer to swap basic attacks.  
+**Total Count:** 1
+
+
 <details>
 <summary><b>Expand</b></summary>
-
-> **Total Count:** 1
 
 > **Referenced by:** [`innate_passives`](./Cat_Classes.md#object-innate_passives)
 

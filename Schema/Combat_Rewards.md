@@ -9,10 +9,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `boss`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 33
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
 
@@ -29,10 +33,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `hard`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 21
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
 
@@ -49,10 +57,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `miniboss`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 13
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
 
@@ -69,10 +81,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `normal`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** Character Form: Behavior and stats for the \'Normal\' state.  
 **Total Count:** 12
+
+
+<details>
+<summary><b>Expand</b></summary
 
 > **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
 
@@ -93,10 +109,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `1`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -114,10 +134,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `2`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -135,10 +159,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `3`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 4
+
+
+<details>
+<summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
@@ -156,10 +184,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `4`
 
-<details>
-<summary><b>Expand</b></summary>
 
+
+**Definition:** No definition provided.  
 **Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
