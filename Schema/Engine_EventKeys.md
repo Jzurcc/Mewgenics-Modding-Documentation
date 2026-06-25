@@ -401,22 +401,6 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `WorldEventLegacyToken_MonkeyPawKnowledge` | Variable |  | 1 |
 | `WorldEventLegacyToken_MonkeyPawStrength` | Variable |  | 1 |
 | `WorldEventLegacyToken_StacyMutant` | Variable |  | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-
-| `bad` | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
-| `common` | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 0 |
-| `cutscene` | String | Event Node: Triggers a narrative cutscene. | 0 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 0 |
-| `gain_familiar` | Enum | Event Action: Adds a specific familiar to the party. | 0 |
-| `good` | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 0 |
-| `mutation` | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 0 |
-| `options` | Object | Event Block: Lists the available clickable dialog choices for the current story node. | 0 |
-| `outcome` | Object | Event Block: Logic and text executed after selecting a specific dialog option. | 0 |
-| `rare` | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 0 |
-| `reward` | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 0 |
-| `setup` | Object | Event Block: Pre-initialization logic executed before the event UI is drawn. | 0 |
 | `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 |
 | `StatusDamagers` | Object | Event Trigger: Applies nested statuses to damagers. | 0 |
 | `StatusEachTurnBegin` | Object | Event Trigger: Applies nested statuses to each turn begin. | 0 |
@@ -437,7 +421,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 249 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |
 | [`permanent_stats`](#permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 |
@@ -474,7 +457,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 658 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |
 | [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 |
@@ -543,7 +525,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`rare`](./Enums.md#enum-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 464 |
 | [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 52 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |
@@ -615,7 +596,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`rare`](./Enums.md#enum-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 220 |
 | [`options`](./Arrays.md#array-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |
 | `set_frame` | Integer | Examples: `4, 2, 5` | 36 |
@@ -649,7 +629,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 705 |
 | [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 65 |
 | [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 41 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |
@@ -738,7 +717,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1364 |
 | [`common`](./Enums.md#enum-common) | Object | Event Object: Story branch or dialog option representing the 'Common' action. | 1067 |
 | [`rare`](./Enums.md#enum-rare) | Object | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |

@@ -94,9 +94,6 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `tile_close_to_enemy_soft` | Variable |  | 1 |
 | `toss_far` | Variable |  | 1 |
 | `toss_towards_bottomleft` | Variable |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -117,7 +114,6 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | :--- | :--- | :--- | :--- |
 | [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | [`damage`](./Arrays.md#array-damage) | Integer | The base damage properties of an attack. | 2 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
 
 </details>
 
@@ -132,7 +128,6 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1731 |
 | `knockback` | Integer | The base physics pushing power (in tiles). | 254 |
 | `ai_base_score` | Integer | How highly the AI values using this ability. | 223 |
 | `heal` | Integer | Restores health instead of dealing damage. | 122 |
@@ -185,7 +180,6 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 65 |
 | [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |
 | `piercing` | Boolean | Ignores a percentage of target defense/armor. | 12 |
@@ -212,7 +206,6 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | :--- | :--- | :--- | :--- |
 | [`effects`](#effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 33 |
 | `knockback` | Integer | Knockback force of the splash blast. | 13 |
 | `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 6 |
 | [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 3 |
