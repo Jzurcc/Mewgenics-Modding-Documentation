@@ -1,5 +1,7 @@
 # Localization Keys Guide
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 > **Associated Files:** `data/text/combined.csv`
 
 This document aggregates all internal translation keys by their primary prefix. Modders should follow these conventions when creating custom items, abilities, and UI strings.

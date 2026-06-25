@@ -1,4 +1,6 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
@@ -25,7 +27,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `forced_placement` | Boolean |  | 3 |
 | [`image`](./Strings.md#string-image) | String |  | 2 |
 | [`trap`](./Enums.md#enum-trap) | Enum |  | 2 |
-| [`element`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Specific element type required or applied. | 1 |
+| [`element`](./Engine_LogicKeys.md#valid-property-keys) | String | Specific element type required or applied. | 1 |
 | [`reserved`](./Enums.md#enum-reserved) | Enum |  | 1 |
 | [`utility`](./Enums.md#enum-utility) | Enum |  | 1 |
 | [`weather_element_alt`](#object-weather_element_alt) | Object |  | 1 |

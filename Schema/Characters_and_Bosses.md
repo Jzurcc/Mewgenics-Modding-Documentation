@@ -1,4 +1,6 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 ## Characters & Bosses
@@ -189,7 +191,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`banned_elite_buffs`](./Arrays.md#array-banned_elite_buffs) | Array |  | 45 |
 | `can_be_champion` | Boolean |  | 40 |
 | [`ai_scale`](./Enums.md#enum-ai_scale) | Enum |  | 36 |
-| [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | `Enum/String` |  | 34 |
+| [`layer`](./Engine_DamagingKeys.md#valid-property-keys) | `String` |  | 34 |
 | [`auto_run_priority`](./Enums.md#enum-auto_run_priority) | Enum |  | 32 |
 | `inanimate` | Boolean |  | 32 |
 | `disperse_main_turns` | Boolean |  | 30 |
@@ -357,7 +359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum |  | 866 |
 | [`spells`](./Arrays.md#array-spells) | Array |  | 381 |
 | `can_get_bonus` | Boolean |  | 60 |
-| `BoneWormShotSmall` | Flag |  | 2 |
+| `BoneWormShotSmall` | Boolean |  | 2 |
 
 </details>
 
@@ -1015,8 +1017,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`common`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 40 |
-| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 32 |
+| [`common`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 40 |
+| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 32 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 |
 
 </details>
@@ -1926,13 +1928,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Ability triggered by the consumed entity while inside the consumer. | 34 |
+| [`struggle_ability`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Ability triggered by the consumed entity while inside the consumer. | 34 |
 | `force_contact` | `Boolean` | If true, enforces physical overlap. | 30 |
 | `instant` | `Boolean` |  | 24 |
-| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | If true, treats the consumption as riding/mounting instead of eating. | 24 |
+| [`mount_mode`](./Engine_LogicKeys.md#valid-property-keys) | `String` | If true, treats the consumption as riding/mounting instead of eating. | 24 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 24 |
 | `do_not_pop_corpse` | `Boolean` |  | 22 |
-| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` |  | 22 |
+| [`drop_on_death`](./Engine_LogicKeys.md#valid-property-keys) | `String` |  | 22 |
 | `use_placeholder` | Boolean |  | 6 |
 
 </details>
@@ -5041,7 +5043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`GlobalSpawnCharacter`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'GlobalSpawnCharacter' effect/state. | 2 |
+| [`GlobalSpawnCharacter`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Applies or references the 'GlobalSpawnCharacter' effect/state. | 2 |
 | `PlayBackground` | `Number` | Applies or references the 'PlayBackground' effect/state. | 2 |
 | [`SwitchMusic`](./Characters_and_Bosses.md#object-switchmusic) | Object | Event Trigger: Changes background music track. | 2 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |

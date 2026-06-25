@@ -1,5 +1,7 @@
 # Mewgenics Mod Developer Documentation: Engine: Status and Passive Keys
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 ## Engine: Status and Passive Keys
 
 This document lists every confirmed Status and Passive ID found across all game data files. These IDs are used as **dynamic keys** in any Status or Passive Container block (e.g. `statuses`, `passives`, `AddStatusToBasicAttack`, `bonus_passives`). The value paired with each key depends on the context: typically a stack count or duration for statuses, or a boolean/nested object for passives.
@@ -1337,7 +1339,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Charge` | Number | Applies or references the 'Charge' effect/state. | 0 |
 | `Charmed` | Array | Applies or references the 'Charmed' effect/state. | 0 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
-| `CompleteItemQuest` | Enum/String | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
+| `CompleteItemQuest` | String | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
 | `Conditional_HasStatus` | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 0 |
 | `Confusion` | Number | Applies or references the 'Confusion' effect/state. | 0 |
 | `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 0 |
@@ -1375,23 +1377,23 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ForceImmediateMove` | Number | Applies or references the 'ForceImmediateMove' effect/state. | 0 |
 | `ForceMoveAway` | Integer | Applies or references the 'ForceMoveAway' effect/state. | 0 |
 | `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 0 |
-| `ForceUseAbility_NonStack` | Enum/String | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 0 |
+| `ForceUseAbility_NonStack` | String | Applies or references the 'ForceUseAbility_NonStack' effect/state. | 0 |
 | `ForceUseAbilityOnTarget` | Object | Applies or references the 'ForceUseAbilityOnTarget' effect/state. | 0 |
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
-| `GainDisorder` | Enum/String | Applies or references the 'GainDisorder' effect/state. | 0 |
-| `GainDisorderFromPool_PostCast` | Enum/String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
+| `GainDisorder` | String | Applies or references the 'GainDisorder' effect/state. | 0 |
+| `GainDisorderFromPool_PostCast` | String | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 0 |
 | `GenericDebuff` | Number | Applies or references the 'GenericDebuff' effect/state. | 0 |
 | `HealRandomInjury` | Integer | Applies or references the 'HealRandomInjury' effect/state. | 0 |
 | `HealthGain` | Number | Applies or references the 'HealthGain' effect/state. | 0 |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 0 |
-| `ImmediateUseAbility` | Enum/String | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
+| `ImmediateUseAbility` | String | Applies or references the 'ImmediateUseAbility' effect/state. | 0 |
 | `ImmediateUseAbility_Instant` | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 0 |
 | `Immobile` | Number | Applies or references the 'Immobile' effect/state. | 0 |
-| `Imprison` | Enum/String | Applies or references the 'Imprison' effect/state. | 0 |
+| `Imprison` | String | Applies or references the 'Imprison' effect/state. | 0 |
 | `InnateElement` | Enum | Applies the 'InnateElement' effect. | 0 |
 | `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 0 |
 | `KnockbackIfCrit` | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 0 |
-| `KnockOutClone` | Enum/String | Applies or references the 'KnockOutClone' effect/state. | 0 |
+| `KnockOutClone` | String | Applies or references the 'KnockOutClone' effect/state. | 0 |
 | `LaunchOffScreen` | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 0 |
 | `LaunchOffScreenInstakill` | Integer | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 0 |
 | `LeaveBehindRockOnKnockback` | Number | Applies or references the 'LeaveBehindRockOnKnockback' effect/state. | 0 |
@@ -1418,10 +1420,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `RemoteLeech` | Integer | Applies or references the 'RemoteLeech' effect/state. | 0 |
 | `RemoveAmbientLightEffects` | Float | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 0 |
 | `RemoveGlobalModifiers` | Array | Applies or references the 'RemoveGlobalModifiers' effect/state. | 0 |
-| `RemoveItem` | Enum/String | Applies or references the 'RemoveItem' effect/state. | 0 |
+| `RemoveItem` | String | Applies or references the 'RemoveItem' effect/state. | 0 |
 | `RemoveKnockback` | Number | Applies or references the 'RemoveKnockback' effect/state. | 0 |
 | `RemoveMovePoints` | Number | Applies or references the 'RemoveMovePoints' effect/state. | 0 |
-| `RemoveStatus` | Enum/String | Applies or references the 'RemoveStatus' effect/state. | 0 |
+| `RemoveStatus` | String | Applies or references the 'RemoveStatus' effect/state. | 0 |
 | `RemoveStatusStacks` | Object | Removes a specific number of stacks of a status effect. | 0 |
 | `RemoveTurnsThisRound` | Number | Applies or references the 'RemoveTurnsThisRound' effect/state. | 0 |
 | `RepairWeapon` | Number | Applies or references the 'RepairWeapon' effect/state. | 0 |
@@ -1440,15 +1442,15 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
 | `SpawnBearTrapOnMiss` | Integer | Applies the 'SpawnBearTrapOnMiss' effect. | 0 |
 | `SpawnFlames` | `Array` | Applies or references the 'SpawnFlames' effect/state. | 0 |
-| `SpawnThingIfHitKills` | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| `SpecificInjury` | Enum/String | Applies or references the 'SpecificInjury' effect/state. | 0 |
+| `SpawnThingIfHitKills` | String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
+| `SpecificInjury` | String | Applies or references the 'SpecificInjury' effect/state. | 0 |
 | `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
 | `SpeedUp` | Number | Applies or references the 'SpeedUp' effect/state. | 0 |
 | `SpeedUp_WithoutInitiative` | Integer | Applies or references the 'SpeedUp_WithoutInitiative' effect/state. | 0 |
 | `StackingSandstorm` | Number | Applies or references the 'StackingSandstorm' effect/state. | 0 |
 | `StanceSwitchToMelee` | Number | Applies or references the 'StanceSwitchToMelee' effect/state. | 0 |
 | `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
-| `status` | Enum/String | The status effect to apply. | 0 |
+| `status` | String | The status effect to apply. | 0 |
 | `StatusEachRoundEnd` | Object | Applies or references the 'StatusEachRoundEnd' effect/state. | 0 |
 | `StatusImmunity` | Enum | Applies or references the 'StatusImmunity' effect/state. | 0 |
 | `StatusRandomEnemiesOnBattleStart` | Object | Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state. | 0 |
@@ -1470,9 +1472,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 0 |
 | `VaporizeCorpseFlipAdvantage` | `Array` | Applies or references the 'VaporizeCorpseFlipAdvantage' effect/state. | 0 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
-| `VisualFX` | Enum/String | Applies or references the 'VisualFX' effect/state. | 0 |
+| `VisualFX` | String | Applies or references the 'VisualFX' effect/state. | 0 |
 | `Weakness` | Array | Applies or references the 'Weakness' effect/state. | 0 |
-| `WeaponAuxMultiplier` | Enum/String | Applies or references the 'WeaponAuxMultiplier' effect/state. | 0 |
+| `WeaponAuxMultiplier` | String | Applies or references the 'WeaponAuxMultiplier' effect/state. | 0 |
 </details>
 
 ### Valid Nested Objects

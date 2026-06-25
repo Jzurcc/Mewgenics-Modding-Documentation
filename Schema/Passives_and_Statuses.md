@@ -1,4 +1,6 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 ## Passives & Statuses
@@ -2234,7 +2236,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Engine_DamagingKeys.md#valid-property-keys) | `Enum/String` |  | 8 |
+| [`crit_chance`](./Engine_DamagingKeys.md#valid-property-keys) | `String` |  | 8 |
 | `damage` | Number | The base damage properties of an attack. | 8 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 
@@ -3119,7 +3121,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |
 | [`mode`](./Enums.md#enum-mode) | Enum |  | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
@@ -3406,7 +3408,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Engine_DamagingKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| [`crit_chance`](./Engine_DamagingKeys.md#valid-property-keys) | `String` |  | 4 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
@@ -4036,7 +4038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `cap` | Number |  | 4 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 

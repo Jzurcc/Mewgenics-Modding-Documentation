@@ -1,5 +1,7 @@
 # Passives vs Effects Block Analysis
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 This document shows which properties appear inside `passives` and `effects` blocks, broken down by `.gon` file category.
 
 Three tiers are used:

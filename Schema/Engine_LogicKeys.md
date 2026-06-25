@@ -1,5 +1,7 @@
 # Mewgenics Mod Developer Documentation: Engine: Logic Keys
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 ## Engine: Logic Keys
 
 This document is the authoritative reference for Logic Blocks. All of the contexts below can appear as dynamic keys inside an `effects {}` block, or directly inside abilities. Many of these are conditional wrappers that evaluate a condition before executing their nested object, while others redirect execution flow (e.g. `ApplyToSource`).
@@ -741,19 +743,19 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `DoDamage` | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
 | `effects` | Object | Non-damaging status applications and logic triggers executed on impact. | 0 |
 | `Else` | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-| `EvolveAbilityFromPool` | Enum/String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
+| `EvolveAbilityFromPool` | String | Upgrades or transforms an existing ability into a new one from the specified pool. | 0 |
 | `ForceAttack` | Object | Forces the character to execute an immediate attack. | 0 |
 | `ForceImmediateMoveAndAttack` | Object | Forces the character to immediately move to a target and use a specified ability. | 0 |
-| `form` | Enum/String | The specific form ID to check for. | 0 |
-| `FormChange` | Enum/String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
+| `form` | String | The specific form ID to check for. | 0 |
+| `FormChange` | String | Transforms the character into a different state or form (e.g., Rage, HasCat). | 0 |
 | `KnockUpAndAway` | Object | Displaces the target vertically and horizontally away from the source. | 0 |
-| `mount_mode` | Enum/String | If true, treats the consumption as riding/mounting instead of eating. | 0 |
+| `mount_mode` | String | If true, treats the consumption as riding/mounting instead of eating. | 0 |
 | `MovementReaction` | Object | Reaction: Triggers an effect or ability when forced to move. | 0 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 0 |
-| `struggle_ability` | Enum/String | Ability triggered by the consumed entity while inside the consumer. | 0 |
+| `struggle_ability` | String | Ability triggered by the consumed entity while inside the consumer. | 0 |
 | `TransformWeapon` | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
 | `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 0 |
-| `UseAbility` | Enum/String | Forces the character or target to instantly use a specified ability. | 0 |
+| `UseAbility` | String | Forces the character or target to instantly use a specified ability. | 0 |
 | `XIsTargetHealth` | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
 </details>
 

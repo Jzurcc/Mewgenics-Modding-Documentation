@@ -1,5 +1,7 @@
 # Passive Identifiers Audit Report
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 > Analysis of `Passive Identifiers.txt` against the generated Schema.
 
 **Total Identifiers Checked:** 1867

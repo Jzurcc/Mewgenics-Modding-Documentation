@@ -1,5 +1,7 @@
 # Engine: Uncategorized & Structural Resources
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 > These identifiers appear in the `Passive Identifiers.txt` list but are **not** part of the standard `passive_pool`. They exist as structural property contexts or known scalar values in other sections. Entries with a full property table have their own structured block; others are listed with the contexts where they appear as a property key value.
 
 ---
@@ -18761,9 +18763,9 @@
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `cWaggle` | Flag |  | 2 |
-| `cWaggle2x2` | Flag |  | 2 |
-| `cWaggle3x3` | Flag |  | 1 |
+| `cWaggle` | Boolean |  | 2 |
+| `cWaggle2x2` | Boolean |  | 2 |
+| `cWaggle3x3` | Boolean |  | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>

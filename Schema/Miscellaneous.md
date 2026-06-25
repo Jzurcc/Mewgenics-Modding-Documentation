@@ -1,4 +1,6 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 ## Miscellaneous
@@ -2336,7 +2338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`move`](./Enums.md#enum-move) | Enum | Examples: `DefaultMove, None, DustMove` | 866 |
 | [`spells`](./Arrays.md#array-spells) | Array | Examples: `[ TrampleDash MoveOne ], [ SpawnBomb BombRatTurtle RockToss_BomberRat ], [ Bi...` | 381 |
 | `can_get_bonus` | Boolean | Examples: `true` | 60 |
-| `BoneWormShotSmall` | Flag |  | 2 |
+| `BoneWormShotSmall` | Boolean |  | 2 |
 | [`spell0`](./Enums.md#enum-spell0) | Enum | Examples: `Spit, Roll` | 2 |
 
 </details>
@@ -40141,10 +40143,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`cWaggle`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Flag |  | 2 |
-| [`cWaggle2x2`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Flag |  | 2 |
+| [`cWaggle`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Boolean |  | 2 |
+| [`cWaggle2x2`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Boolean |  | 2 |
 | `stacks` | Number | Examples: `5` | 2 |
-| [`cWaggle3x3`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Flag |  | 1 |
+| [`cWaggle3x3`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Boolean |  | 1 |
 
 </details>
 

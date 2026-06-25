@@ -1,5 +1,7 @@
 # Mewgenics Mod Developer Documentation: String Dictionary
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 This document provides exhaustive lists of all pure string values found in the base game's `.gon` files for every applicable property key.
 
 > **Note on Values:** The lists below represent *Confirmed Values* extracted directly from the base game's source files. Because these are strings, they can often be virtually infinite in possibility (like names, dialog, or filepath references). Use these as examples of formatting rather than an exhaustive constraint.

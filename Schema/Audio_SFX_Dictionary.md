@@ -1,5 +1,7 @@
 # Audio SFX Dictionary
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 > **Associated Files:** `audio/*.gon`
 
 This document lists all valid Sound Effect triggers parsed from the unpacked audio `.gon` files. These keys can be used in `sounds {}` blocks or triggered via `PlaySound()` scripts.

@@ -1,5 +1,7 @@
 # Engine: Hidden Passives & Statuses
 
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+
 > This document lists passives and statuses that are proven to exist or work in the engine but are completely absent from the `.gon` schema extraction. They may be hardcoded, deprecated, or exist only as internal engine state strings.
 
 ## Part 1: Completely Hidden (228)
