@@ -21,14 +21,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`template`](./Enums.md#enum-template) | Enum | Examples: `targeted_status, spell, melee_attack` | 2174 |
 | [`target`](./Miscellaneous.md#context-target) | Object | Examples: `{ ... }` | 1862 |
 | [`cost`](./Miscellaneous.md#context-cost) | Object | Examples: `{ ... }` | 1851 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1549 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1274 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2193 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2767 |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum | Examples: `BloodBounce, BloodPoofCrit, BloodPoof` | 1195 |
 | `frame` | Number | Examples: `23, 12, 2` | 1106 |
 | [`kind`](./Enums.md#enum-kind) | Enum | Examples: `face, neck, head` | 1106 |
 | [`set`](./Enums.md#enum-set) | Enum | Examples: `sewn, spider, junk` | 985 |
 | [`rarity`](./Enums.md#enum-rarity) | Enum | Examples: `uncommon, rare, common` | 967 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 890 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1222 |
 | [`class`](./Enums.md#enum-class) | Enum | Examples: `PlaceholderMeleeAttackAbility, SuplexAbility, MultiHitMeleeAttackAbility` | 600 |
 | [`properties`](./Miscellaneous.md#context-properties) | Object | Examples: `{ ... }` | 600 |
 | `editor` | Object | Examples: `{ ... }` | 578 |
@@ -57,7 +57,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `con` | Number | Examples: `3, 2, 1` | 210 |
 | `default_frame` | Number | Examples: `1000, 1002, 1001` | 210 |
 | `palette` | Number | Examples: `9, 16, 137` | 210 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 754 |
 | `int` | Number | Examples: `1, -1, -2` | 200 |
 | `righteye` | Number | Examples: `1, 1006, 1001` | 200 |
 | [`voice`](./Enums.md#enum-voice) | Enum | Examples: `female2, male1, male4` | 200 |
@@ -1575,7 +1575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2609 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`ArmorPickup`](./Miscellaneous.md#context-armorpickup) | Object | Examples: `{ ... }` | 3 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BoneWormShotMed, BasicMelee_4Hits` | 2 |
@@ -1811,8 +1811,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1789 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1731 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2412 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2650 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1448 |
 | `damage` | Number | Examples: `4, 2, 0` | 1447 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `melee, physical_spell, status_spell` | 359 |
@@ -2083,7 +2083,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 539 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 801 |
 | [`faction`](./Enums.md#enum-faction) | Enum | Examples: `none, enemies, birds` | 505 |
 | `health` | Number | Examples: `16, 2, 7` | 427 |
 | [`tag`](./Arrays.md#array-tag) | Array | Examples: `[ cat blob ], rat, animal` | 399 |
@@ -2392,7 +2392,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 65 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 74 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 47 |
 | [`damage`](./Miscellaneous.md#object-damage) | Mixed | Examples: `"floor(X*.25)", 2, 0` | 47 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `spell, none, melee` | 11 |
@@ -2475,7 +2475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 144 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ignore`](./Miscellaneous.md#context-ignore) | Object | Examples: `{ ... }` | 55 |
 | [`examine`](./Miscellaneous.md#context-examine) | Object | Examples: `{ ... }` | 43 |
 | [`loot`](./Miscellaneous.md#context-loot) | Object | Examples: `{ ... }` | 25 |
@@ -2752,7 +2752,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `Food, PlayerCat_ThiefShade, RANDOM_1X1_ENEMY` | 184 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 86 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 90 |
 | [`faction`](./Enums.md#enum-faction) | Enum | Examples: `solitary_enemies, self, default` | 59 |
 | `ai_base_score` | Number | Examples: `999999, 9999, 99999` | 31 |
 | [`additional_passives`](./Miscellaneous.md#context-additional_passives) | Object | Examples: `{ ... }` | 20 |
@@ -2888,7 +2888,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 120 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`initial_form`](./Enums.md#enum-initial_form) | Enum | Examples: `Flop, Default, Up` | 56 |
 | [`Default`](./Miscellaneous.md#context-default) | Object | Examples: `{ ... }` | 37 |
 | [`Normal`](./Miscellaneous.md#context-normal) | Object | Examples: `{ ... }` | 11 |
@@ -2921,7 +2921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Small`](./Miscellaneous.md#context-small) | Object | Examples: `{ ... }` | 2 |
 | [`SquirrelForm`](./Miscellaneous.md#context-squirrelform) | Object | Examples: `{ ... }` | 2 |
 | [`Turtled`](./Miscellaneous.md#context-turtled) | Object | Examples: `{ ... }` | 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 39 |
 | [`Alert`](./Miscellaneous.md#context-alert) | Object | Examples: `{ ... }` | 1 |
 | [`Angry`](./Miscellaneous.md#context-angry) | Object | Examples: `{ ... }` | 1 |
 | [`Attacker`](./Miscellaneous.md#context-attacker) | Object | Examples: `{ ... }` | 1 |
@@ -3127,8 +3127,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 45 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 36 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 66 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 66 |
 | `knockback` | Number | Examples: `3, 2, 1` | 24 |
 | `damage` | Number | Examples: `1, 5, 0` | 22 |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Ice ], [ Fire ]` | 10 |
@@ -3249,7 +3249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 59 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 57 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_IGNORE_ANSW", "EVENT_LEAVE_ANSW", EVENT_IGNORE_ANSW` | 57 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `con, none` | 56 |
@@ -3291,7 +3291,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 56 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 25 |
 | `even_if_dead` | Boolean | Examples: `true` | 25 |
 
 </details>
@@ -3354,8 +3354,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 49 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 46 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 46 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `humanoid, bonusbird, food` | 46 |
   | `EventBounty` | Integer | Applies or references the 'EventBounty' effect/state. | 0 |
   | [`MergeDamageInstance`](#mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 0 |
@@ -3457,7 +3457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_EXAMINE_ANSW", EVENT_EXAMINE_ANSW` | 43 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck, int` | 43 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 41 |
@@ -3618,7 +3618,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 10 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`turns`](./Miscellaneous.md#context-turns) | Object | Examples: `{ ... }` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `LennyShove` | 1 |
 | [`move`](./Enums.md#enum-move) | Enum | Examples: `LennyTrampleMove` | 1 |
@@ -3703,7 +3703,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 37 |
 | `odds` | Number | Examples: `25, 15, 100` | 37 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 
@@ -3840,7 +3840,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 33 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 71 |
 | `damage` | Number | Examples: `4, 0, 8` | 32 |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Water ], [ Fire Napalm Explosion ], [ Fire Explosion ]` | 13 |
 | `knockback` | Number | Examples: `2, 0, 1` | 13 |
@@ -3927,7 +3927,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 30 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_IGNORE_ANSW", "EVENT_WALKAWAY_ANSW", "EVENT_LEAVE_ANSW"` | 30 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none, spd` | 30 |
@@ -3988,7 +3988,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
 | `damage` | Number | Examples: `1, 0` | 8 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 5 |
 | `knockback` | Number | Examples: `5, 10` | 3 |
@@ -4111,7 +4111,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 25 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_dex_alt, choice_misc` | 25 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 25 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `QEVENT_DEADKING_LOOTCORPSE_ANSW, EVENT_LOOT_ANSW, "EVENT_LOOT_ANSW"` | 25 |
@@ -4262,7 +4262,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 66 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 23 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 23 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_DRINK_ANSW", EVENT_EAT_ANSW, "EVENT_EAT_ANSW"` | 23 |
@@ -4536,8 +4536,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 20 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Undead, Freeze, Petrify` | 20 |
   | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 0 |
 
@@ -4610,7 +4610,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, water` | 18 |
 
 </details>
@@ -4731,7 +4731,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
   | `FactionConversion` | Integer | Applies or references the 'FactionConversion' effect/state. | 0 |
   | `PermanentCharm` | Integer | Applies the 'PermanentCharm' effect. | 0 |
   | `ExplodeCharacter_RockCrusher` | Integer | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 0 |
-  | [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+  | [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
   | `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 0 |
   | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
   | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
@@ -4828,7 +4828,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GOLEMSMASH_ANSW", "EVENT_MYSTERIOUSTOMB_ANSW", "EVENT_SMASH_ANSW"` | 15 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `str, none, dex` | 15 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 14 |
@@ -4984,7 +4984,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 14 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DESTROY_ANSW"` | 14 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 14 |
@@ -5062,7 +5062,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | `must_do_damage` | Boolean | Examples: `true` | 3 |
   | [`Conditional_HasTag`](#conditionalhastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 0 |
   | [`KnockbackIfCrit`](#knockbackifcrit) | Object | Applies or references the 'KnockbackIfCrit' effect/state. | 0 |
@@ -5128,7 +5128,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 31 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
 | [`mode`](./Enums.md#enum-mode) | Enum | Examples: `less_or_equal` | 13 |
 
 </details>
@@ -5368,7 +5368,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 12 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BASH_ANSW", "EVENT_BASHOPEN_ANSW"` | 12 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 12 |
@@ -5645,7 +5645,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 5 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `TinaBasicBigMeleeA, SpewerLobbed_Normal` | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Up"` | 1 |
 | [`turns`](./Miscellaneous.md#context-turns) | Object | Examples: `{ ... }` | 1 |
@@ -5719,7 +5719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_OPEN_ANSW"` | 8 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 8 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |
@@ -5740,7 +5740,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 11 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex, spd` | 11 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_SNEAKBY_ANSW", EVENT_SNEAKBY_ANSW, EVENT_RUN_ANSW` | 11 |
@@ -5780,7 +5780,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`formula`](./Math_Equations.md) | Equation | Examples: `X-1, X, X+1` | 8 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
   | `X` | Variable |  | 0 |
@@ -5820,7 +5820,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 8 |
 | [`turns`](./Miscellaneous.md#context-turns) | Object | Examples: `{ ... }` | 6 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | Examples: `"Rage"` | 4 |
@@ -6097,7 +6097,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 15 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
 | [`mode`](./Enums.md#enum-mode) | Enum | Examples: `greater, equal, less_or_equal` | 9 |
 
 </details>
@@ -6303,7 +6303,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`odds`](./Engine_LogicKeys.md#valid-property-keys) | Mixed | Examples: `0.5, .16666666, .3` | 8 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 
@@ -6322,7 +6322,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`key`](./Enums.md#enum-key) | Enum | Examples: `TaintedOffering, EtherSoakedRag, TaintedOffering2` | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
@@ -6432,7 +6432,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `triggers_limit` | Number | Examples: `1` | 2 |
 
 </details>
@@ -6467,7 +6467,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | `stacks` | Number | Examples: `3, 4, 8` | 8 |
 
 </details>
@@ -6553,7 +6553,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 17 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 8 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_GOAROUND_ANSW", "EVENT_TAKE_ANSW"` | 8 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck, con, spd` | 8 |
@@ -6653,7 +6653,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | `threshold_flat` | Number | Examples: `3, 5, 10` | 5 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `threshold_percent` | Number | Examples: `50, 25` | 2 |
@@ -6712,7 +6712,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 7 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 15 |
 | `damage` | Number | Examples: `0` | 7 |
 | `knockback` | Number | Examples: `1` | 1 |
 
@@ -6732,7 +6732,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `generic_physical, spell, melee` | 7 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
 | `damage` | Number | Examples: `0, 5, 8` | 7 |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | Examples: `all` | 4 |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ], [ Water ]` | 2 |
@@ -6983,7 +6983,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BASH_ANSW", "EVENT_BREAK_ANSW", "EVENT_ATTACK_ANSW"` | 7 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 7 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |
@@ -7060,7 +7060,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 7 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `EVENT_CHARM_ANSW, "EVENT_CHARM_ANSW"` | 7 |
@@ -7081,7 +7081,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 7 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 7 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `EVENT_FIGHT_ANSW, "EVENT_FIGHT_ANSW"` | 7 |
@@ -7125,7 +7125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_MYSTERIOUSOBELISK_TOUCH_ANSW", QEVENT_OBELISK_CORE_TOUCH_ANSW, QEVENT_...` | 7 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none, cha` | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 6 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 
 </details>
 
@@ -7160,7 +7160,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, Electric` | 6 |
   | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
 
@@ -7253,7 +7253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
   | [`Charmed`](./Arrays.md#array-charmed) | Array | Applies or references the 'Charmed' effect/state. | 0 |
   | [`ApplyPassives`](#applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
   | [`Conditional_IsSelf`](#conditional_isself) | Object | Conditional trigger: Executes nested logic if the target is the caster themselves. | 0 |
@@ -7438,7 +7438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `DemonicGlyph_Fire, DemonicGlyph_Bite, DemonicGlyph_Summon` | 6 |
 
 </details>
@@ -7627,7 +7627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `QEVENT_DIMENSIONXPORTAL_ENTER_ANSW, "EVENT_ENTER_ANSW", "EVENT_HOLEINTHEEARTH...` | 6 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, con, none` | 5 |
@@ -7669,7 +7669,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 6 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `QEVENT_GLOWINGORB_LICK_ANSW, "EVENT_LICK_ANSW", "EVENT_GOLEMLICK_ANSW"` | 6 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `con, none, cha` | 6 |
@@ -7763,7 +7763,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
 | `ally_chance` | Number | Examples: `15, 100` | 5 |
 | `chance` | Number | Examples: `50, 33, 15` | 5 |
 
@@ -7896,7 +7896,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 5 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `MoonHandSqueeze, MoonHead_ChewCat, PteroPeck` | 5 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Grabbing", "Cat"` | 4 |
@@ -8138,7 +8138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Arrays.md#array-type) | Array | Examples: `[ attack move spell ], move, attack` | 5 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 
 </details>
 
@@ -8213,7 +8213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 4 |
 | [`label`](./Enums.md#enum-label) | Enum | Examples: `QEVENT_THROBBINGARTERY_BITE_ANSW, QEVENT_WALLOFFLESH_BITE2_ANSW, QEVENT_WALLO...` | 4 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str, con` | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | `eyebrow_rotation` | Number | Examples: `30` | 1 |
 | `eyebrow_up` | Number | Examples: `10` | 1 |
 | [`eyes`](./Enums.md#enum-eyes) | Enum | Examples: `closed` | 1 |
@@ -8225,7 +8225,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage`
 
-> **Definition:** Examples: `X, 1`
 
 
 <details>
@@ -8259,7 +8258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 5 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck, con` | 5 |
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `"EVENT_DRINK_ANSW", EVENT_DRINK_ANSW` | 5 |
@@ -8321,7 +8320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 5 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_KISS_ANSW"` | 5 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 5 |
@@ -8359,7 +8358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 5 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_RUN_ANSW"` | 5 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 5 |
@@ -8473,7 +8472,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `count` | Number | Examples: `2, 1` | 2 |
 
 </details>
@@ -8546,7 +8545,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`follow_character_tag`](./Enums.md#enum-follow_character_tag) | Enum | Examples: `zaratana` | 2 |
 | [`position`](./Arrays.md#array-position) | Array | Examples: `[ 4.5 4.5 ]` | 2 |
 | [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `"Big", Big` | 2 |
@@ -8642,7 +8641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`key`](./Enums.md#enum-key) | Enum | Examples: `JewelOfDrog, gamewin` | 3 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
@@ -8684,7 +8683,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Electric ]` | 4 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `spell` | 4 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`damage`](./Miscellaneous.md#object-damage) | Mixed | Examples: `X, 1` | 4 |
 
 </details>
@@ -8850,7 +8849,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | `stacks` | Number | Examples: `3` | 4 |
 
 </details>
@@ -9272,7 +9271,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 4 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TAKELONGWAY_ANSW", "EVENT_GOAROUND_ANSW"` | 4 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none, spd` | 3 |
@@ -9329,7 +9328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Hot"` | 4 |
 | [`name`](./Strings.md#string-name) | String | Examples: `"OBJECT_HOTBOULDER_NAME", "OBJECT_HOTPETROCK_NAME", "OBJECT_HOTROCK_NAME"` | 4 |
 
@@ -9815,7 +9814,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | Examples: `4, X, 8` | 3 |
 
 </details>
@@ -9997,10 +9996,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `Fire, Water` | 3 |
-  | [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+  | [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
   | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 0 |
   | `Burn` | Number | Applies or references the 'Burn' effect/state. | 0 |
 
@@ -10075,7 +10074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | `health_percent` | Number | Examples: `50, 100` | 3 |
 | `stacks` | Number | Examples: `1` | 3 |
 
@@ -10661,7 +10660,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Up"` | 2 |
 | [`tooltip`](./Strings.md#string-tooltip) | String | Examples: `"OBJECT_TIREUP_DESC"` | 1 |
@@ -10682,7 +10681,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`AOEPuddle`](./Math_Equations.md) | Equation | Examples: `X-1` | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | Examples: `"Water"` | 1 |
 
 </details>
@@ -10813,7 +10812,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 3 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_INVESTIGATE_ANSW"` | 3 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 3 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
@@ -10882,7 +10881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 3 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCAVE3_CLIMB_ANSW", "EVENT_MYSTERIOUSCAVE1_TALKTO_ANSW", "EVE...` | 3 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str, dex, cha` | 3 |
@@ -11328,7 +11327,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"SpearCaveMan"` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `CaveManThrowSpear` | 2 |
@@ -11390,8 +11389,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
   | [`Conditional_InForm`](#conditional_inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 0 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-  | [`Consumed`](#consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 
 </details>
 
@@ -12123,7 +12122,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `stacks` | Number | Examples: `3, 5` | 2 |
 
 </details>
@@ -12176,7 +12175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `stacks` | Number | Examples: `1` | 2 |
 
 </details>
@@ -12414,7 +12413,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`mode`](./Enums.md#enum-mode) | Enum | Examples: `greater_or_equal` | 2 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
@@ -12519,7 +12518,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `DemonicGlyph_Movement, ExistUntilIdleUpkeep` | 2 |
 
 </details>
@@ -12824,7 +12823,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Holy ]` | 2 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `spell` | 2 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | `damage` | Number | Examples: `10` | 2 |
 
 </details>
@@ -12931,7 +12930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BasicMelee` | 2 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | Examples: `ENEMY_DRAVENSQUIRRELFORM_DESC` | 1 |
@@ -13007,7 +13006,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `exclude_self` | Boolean | Examples: `false` | 1 |
   | `RandomStatUp` | Number | Applies or references the 'RandomStatUp' effect/state. | 0 |
   | [`Conditional_Adjacent`](#conditional_adjacent) | Object | Conditional constraint. Nested properties only trigger if this is true. | 0 |
@@ -13564,7 +13563,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 2 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | Examples: `Turtle` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `None` | 2 |
@@ -14028,7 +14027,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT2_ANSW1"` | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `spell` | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
@@ -14202,7 +14201,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT2_ANSW2"` | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `spell` | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
@@ -14404,7 +14403,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String | Examples: `"QEVENT_STACYMUTANT2_ANSW3"` | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `spell` | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
@@ -14457,7 +14456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ELEPHANTSFOOT_ANSW", "EVENT_ELEPHANTSFOOTCLOSER_ANSW"` | 2 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 2 |
@@ -14913,7 +14912,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_ANSW"` | 2 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 2 |
@@ -14995,7 +14994,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Mixed | Examples: `EVENT_REPAIR_ANSW, "EVENT_REPAIR_ANSW"` | 2 |
 | [`stat`](./Enums.md#enum-stat) | Mixed | Examples: `lck, none` | 2 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -15017,7 +15016,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -15025,7 +15024,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `scale`
 
-> **Definition:** Examples: `.75, 1.33, 1`
 
 
 <details>
@@ -15901,7 +15899,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 2 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TURNONTV_ANSW", "EVENT_MYSTERIOUSMACHINE_TURNITON_ANSW"` | 2 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck, int` | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -16347,7 +16345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
   | [`Conditional_IsSelf`](#conditional_isself) | Object | Conditional trigger: Executes nested logic if the target is the caster themselves. | 0 |
 
 </details>
@@ -16367,7 +16365,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
   | [`Conditional_IsPhysicalAttack`](#conditional_isphysicalattack) | Object | Conditional: Executes logic if the triggering attack is physical. | 0 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
 
 </details>
 
@@ -16402,7 +16400,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Heat Fire ]` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -16420,7 +16418,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Heat Fire ]` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
   | [`AddStatusesIfPersistentWeatherElement`](#addstatusesifpersistentweatherelement) | Object | Applies the 'AddStatusesIfPersistentWeatherElement' effect. | 0 |
 
 </details>
@@ -16948,7 +16946,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | Examples: `Button` | 1 |
 
 </details>
@@ -17558,9 +17556,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
   | [`ApplyToSource`](#applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
-  | [`Consumed`](#consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+  | [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
   | `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. | 0 |
 
 </details>
@@ -17614,7 +17612,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `weapon_throw` | 1 |
 
 </details>
@@ -17632,7 +17630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `AlphaCat` | 1 |
   | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
 
@@ -17651,7 +17649,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Examples: `crow` | 1 |
   | [`Conditional_Ally`](#conditionalally) | Object | Conditional trigger: Executes nested logic if the target is friendly to the caster. | 0 |
 
@@ -17739,7 +17737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Cultist"` | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BasicMelee` | 1 |
@@ -18014,7 +18012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `DestroyerAttack2` | 1 |
 | `move_speed_multiplier` | Number | Examples: `1.5` | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String | Examples: `"ENEMY_DESTROYER2_DESC"` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -18036,7 +18034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `DestroyerAttack2` | 1 |
 | `move_speed_multiplier` | Number | Examples: `1.5` | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String | Examples: `"ENEMY_DESTROYER2_DESC"` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -18125,7 +18123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | Examples: `Expl` | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `ToxExplode` | 1 |
@@ -18530,7 +18528,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | Examples: `Host` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -19182,7 +19180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Insane"` | 1 |
 | [`turns`](./Miscellaneous.md#context-turns) | Object | Examples: `{ ... }` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -19276,7 +19274,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | Examples: `Host` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -19827,7 +19825,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String | Examples: `"MouthFull"` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -20110,7 +20108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 
 </details>
@@ -20236,7 +20234,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | Examples: `Nuke` | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `None` | 1 |
@@ -20531,7 +20529,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Possessing"` | 1 |
 | [`turns`](./Miscellaneous.md#context-turns) | Object | Examples: `{ ... }` | 1 |
 
@@ -20988,7 +20986,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum | Examples: `Chair` | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `DoNothing` | 1 |
@@ -21127,7 +21125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ]` | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `damage` | Number | Examples: `5` | 1 |
 
 </details>
@@ -21837,7 +21835,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `BackflipWhenTargeted` | 1 |
   | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 0 |
 
@@ -22277,7 +22275,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | Examples: `Host` | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -22550,7 +22548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum | Examples: `Unlit` | 1 |
 
 </details>
@@ -22777,7 +22775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ai`](./Miscellaneous.md#context-ai) | Object | Examples: `{ ... }` | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String | Examples: `"Zealot"` | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `BBStabby` | 1 |
@@ -22897,7 +22895,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ARMINSIDE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |
@@ -23036,7 +23034,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BASH_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -25725,7 +25723,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BIGTOE_BITE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |
@@ -25807,7 +25805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_NEEDLES_BLUE_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -26003,7 +26001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_BRIBE_ANSW` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |
@@ -26514,7 +26512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_one` | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
@@ -26736,7 +26734,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CATCH_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |
@@ -26814,7 +26812,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CHARM_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -27005,7 +27003,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CLIMB_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -27068,7 +27066,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_COMFORT_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |
@@ -27228,7 +27226,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_CUTWIRES_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `int` | 1 |
@@ -27248,7 +27246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEMONICIDOL_1DAMAGE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |
@@ -27288,7 +27286,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEMONICIDOL_HALFDAMAGE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |
@@ -27494,7 +27492,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DIG_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -27515,7 +27513,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DISARM_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -27557,7 +27555,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DIVE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -27617,7 +27615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_ten` | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
@@ -27642,7 +27640,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_ten` | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
@@ -27667,7 +27665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_twentyfive` | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
@@ -27692,7 +27690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_coins_one` | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Examples: `choice_no_coins` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
@@ -27981,7 +27979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `melee` | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `damage` | Number | Examples: `0` | 1 |
 
 </details>
@@ -27999,7 +27997,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LEAKINGMEAT_EAT_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |
@@ -29221,7 +29219,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_FOLLOW_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |
@@ -29560,7 +29558,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_FREE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |
@@ -29613,7 +29611,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BODYOFGLORG_PARASITE_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -30431,7 +30429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JOININ_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |
@@ -30451,7 +30449,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JUMPOVER_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `spd` | 1 |
@@ -30471,7 +30469,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JUMPOVER_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -30510,7 +30508,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LEAKINGMEAT_KISS_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |
@@ -30550,7 +30548,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JAGGEDPATHWAY_STALACTITE_ANSW2"` | 1 |
@@ -30571,7 +30569,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LEGINSIDE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |
@@ -30653,7 +30651,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |
 | `fixed_chance` | Number | Examples: `50` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
@@ -30675,7 +30673,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LICK_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -31664,7 +31662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_LOCKEDCRATE_PICK_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -31826,7 +31824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_JAGGEDPATHWAY_STALACTITE_ANSW1"` | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum | Examples: `none` | 1 |
@@ -31846,7 +31844,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ODDDEVICE_PULLLEVER_ANSW"` | 1 |
 
@@ -32017,7 +32015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCHAMBER_PURIFY_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |
@@ -32037,7 +32035,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ODDDEVICE_PUSHBUTTONS_ANSW"` | 1 |
 
@@ -32536,7 +32534,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_misc` | 1 |
 | `fixed_chance` | Number | Examples: `50` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
@@ -32558,7 +32556,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_NEEDLES_RED_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -32619,7 +32617,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BIGTOE_NAIL_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -32735,7 +32733,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum | Examples: `choice_leave` | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_RUN_ANSW"` | 1 |
@@ -33067,7 +33065,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SLIPTHROUGH_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -33146,7 +33144,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SNEAKBY_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `dex` | 1 |
@@ -33166,7 +33164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SNEAKBY_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |
@@ -33197,7 +33195,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `speed`
 
-> **Definition:** Examples: `.5, 2, 20`
 
 
 <details>
@@ -33975,7 +33972,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_DEATH_SWEETTALK_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |
@@ -33995,7 +33992,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_SWIM_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |
@@ -34015,7 +34012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TAILINSIDE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |
@@ -34076,7 +34073,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Enums.md#enum-label) | Enum | Examples: `EVENT_TALKTO_ANSW` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `cha` | 1 |
@@ -34179,7 +34176,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCHAMBER_TELEPORT_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |
@@ -34920,7 +34917,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_TRAVERSETHENECROPOLIS_ANSW"` | 1 |
 
@@ -34941,7 +34938,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire Ice Electric ]` | 1 |
 | [`type`](./Enums.md#enum-type) | Enum | Examples: `spell` | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | `damage` | Number | Examples: `6` | 1 |
 
 </details>
@@ -35219,7 +35216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_MYSTERIOUSCHAMBER_UPGRADE_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `lck` | 1 |
@@ -35282,7 +35279,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_USETOILET_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |
@@ -35990,7 +35987,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_ELEPHANTSFOOTEVENCLOSER_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `con` | 1 |
@@ -36053,7 +36050,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_BIGTOE_YANK_ANSW"` | 1 |
 | [`stat`](./Math_Equations.md) | Equation | Examples: `str` | 1 |
@@ -36073,7 +36070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Miscellaneous.md#context-good) | Object | Examples: `{ ... }` | 1 |
 | [`label`](./Strings.md#string-label) | String | Examples: `"EVENT_NEEDLES_YELLOW_ANSW"` | 1 |
 | [`requirements`](./Miscellaneous.md#context-requirements) | Object | Examples: `{ ... }` | 1 |

@@ -17,7 +17,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1274 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum |  | 13 |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array |  | 12 |
 | `height` | Integer |  | 8 |
@@ -62,7 +62,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 59
+**Total Count:** 2166
 
 > **Referenced by:** [`ROOT`](#object-root), [`SolarFlare`](#object-solarflare)
 
@@ -82,7 +82,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 28
+**Total Count:** 32
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -102,7 +102,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 9
+**Total Count:** 11
 
 > **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
 
@@ -121,7 +121,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 9
+**Total Count:** 11
 
 > **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
 
@@ -140,7 +140,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 3
+**Total Count:** 85
 
 > **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#object-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
 
@@ -248,7 +248,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 13
 
 > **Referenced by:** [`Conditional_HasTag`](#object-conditional_hastag), [`Conditional_PartyMember`](#object-conditional_partymember)
 
@@ -266,7 +266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 4
 
 > **Referenced by:** [`SpecialGodRays`](#object-specialgodrays)
 
@@ -284,13 +284,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 8
 
 > **Referenced by:** [`effects`](#object-effects)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 2 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
@@ -303,13 +303,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 37
 
 > **Referenced by:** [`StatusCharactersOnRoundEnd`](#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 40 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 14 |
 | [`odds`](./Math_Equations.md) | Equation |  (Must be float values) | 2 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
@@ -341,7 +341,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 35
 
 > **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll), [`Else`](#object-else)
 
@@ -374,7 +374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 5
 
 > **Referenced by:** [`effects`](#object-effects)
 
@@ -447,7 +447,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`Else`](#object-else)
 
@@ -555,7 +555,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 11
 
 > **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll)
 
@@ -573,14 +573,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 47
 
 > **Referenced by:** [`extra_statuses`](#object-extra_statuses)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 63 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum |  | 1 |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
 
@@ -593,7 +593,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 6
 
 > **Referenced by:** [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn)
 
@@ -615,7 +615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 38
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -865,7 +865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 6
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -926,7 +926,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 4
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -947,14 +947,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`effects`](#object-effects)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 2 |
 | `damage` | Integer |  | 1 |
 
 </details>
@@ -985,7 +985,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 53
 
 > **Referenced by:** [`ApplyPassives`](#object-applypassives)
 
@@ -1001,7 +1001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 3
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1023,7 +1023,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1044,7 +1044,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 4
 
 > **Referenced by:** [`FactionUprising`](#object-factionuprising)
 

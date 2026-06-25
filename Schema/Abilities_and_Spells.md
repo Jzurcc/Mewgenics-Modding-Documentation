@@ -15,15 +15,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance) | Object | Block defining the combat math and status effects applied upon successful hit. | 2343 |
-| [`meta`](./Abilities_and_Spells.md#object-meta) | Object | Block defining UI display data (Name, Description, Icon). | 2333 |
+| [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 2343 |
+| [`meta`](./Abilities_and_Spells.md#object-meta) | Object | Object defining UI display data (Name, Description, Icon). | 2333 |
 | [`template`](./Enums.md#enum-template) | Enum | Inherits baseline internal logic from a hardcoded engine template. | 2174 |
-| [`graphics`](./Abilities_and_Spells.md#object-graphics) | Object | Block defining visual animations and sequence timings. | 2037 |
-| [`target`](./Abilities_and_Spells.md#object-target) | Object | Block defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
-| [`cost`](./Abilities_and_Spells.md#object-cost) | Object | Block defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1274 |
+| [`graphics`](./Abilities_and_Spells.md#object-graphics) | Object | Object defining visual animations and sequence timings. | 2037 |
+| [`target`](./Abilities_and_Spells.md#object-target) | Object | Object defining the shape, range, and restrictions of the ability's aiming phase. | 1862 |
+| [`cost`](./Abilities_and_Spells.md#object-cost) | Object | Object defining resource requirements (Mana, Act Points, Moves) needed to cast. | 1851 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2379 |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum | Inherits properties from a previously defined ability (used for upgrading tiers). | 900 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 890 |
 | [`tags`](./Arrays.md#array-tags) | Array | Array of string categories used by the engine for filtering (e.g. [weapon_throw, spell]). | 238 |
 | [`spawn`](./Abilities_and_Spells.md#object-spawn) | Object | Parameters for summoning new characters, objects, or entities. | 192 |
 | [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives) | Object | Passives granted to the character while this ability is equipped. | 136 |
@@ -86,8 +85,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage_instance`
 
-**Definition:** Block defining the combat math and status effects applied upon successful hit.
-**Total Count:** 2344
+**Definition:** Object defining the combat math and status effects applied upon successful hit.  
+**Total Count:** 2346
 
 
 <details>
@@ -98,9 +97,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1789 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1731 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1448 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2410 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2648 |
 | `damage` | Number | The base damage properties of an attack. | 1446 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 358 |
 | [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 352 |
@@ -146,8 +144,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `meta`
 
 
-**Definition:** Block defining UI display data (Name, Description, Icon).
-**Total Count:** 2333
+**Definition:** Object defining UI display data (Name, Description, Icon).  
+**Total Count:** 2374
 
 
 <details>
@@ -184,15 +182,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `graphics`
 
 
-**Definition:** Block defining visual animations and sequence timings.
-**Total Count:** 2012
+**Definition:** Object defining visual animations and sequence timings.  
+**Total Count:** 2609
 
 
 
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2037
+**Total Count:** 2609
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -323,7 +321,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `effects`
 
-> **Definition:** Non-damaging status applications and logic triggers executed on impact.
 
 
 <details>
@@ -342,7 +339,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `AddWeaponAux` | Number | Applies or references the 'AddWeaponAux' effect/state. | 0 |
 | `AlliesTakeExtraTurn` | `Number` | Applies or references the 'AlliesTakeExtraTurn' effect/state. | 0 |
 | [`AlternateIdleAnimation`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'AlternateIdleAnimation' effect/state. | 0 |
-| [`ApplyMultipleTimes`](./Abilities_and_Spells.md#object-applymultipletimes) | Object | A loop block that executes its nested logic multiple times. | 0 |
+| [`ApplyMultipleTimes`](./Abilities_and_Spells.md#object-applymultipletimes) | Object | A loop object that executes its nested logic multiple times. | 0 |
 | [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
 | `ApplyShieldToApplierBasedOnMaxHealth` | `Number` | Applies or references the 'ApplyShieldToApplierBasedOnMaxHealth' effect/state. | 0 |
 | [`ApplyStatusIfCrit`](./Abilities_and_Spells.md#object-applystatusifcrit) | Object | Conditional trigger: Executes the nested logic only if the triggering action was a critical hit. | 0 |
@@ -367,7 +364,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `BramblesOnHit` | `Number` | Applies or references the 'BramblesOnHit' effect/state. | 0 |
 | `BurgleCoin` | `Number` | Applies or references the 'BurgleCoin' effect/state. | 0 |
 | `BypassRockKnockback` | `Number` | Applies or references the 'BypassRockKnockback' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | `CancelPrimedAbilities` | `Number` | Applies or references the 'CancelPrimedAbilities' effect/state. | 0 |
 | `CanceledQueuedInput` | `Number` | Applies or references the 'CanceledQueuedInput' effect/state. | 0 |
 | `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 0 |
@@ -434,11 +431,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_Shielded`](./Abilities_and_Spells.md#object-conditional-shielded) | Object | Conditional trigger: Executes nested logic if the target currently has a Shield status. | 0 |
 | [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#object-conditional-sourceabilityhastag) | Object | Conditional trigger: Executes nested logic if the ability that triggered this effect has the specified tag. | 0 |
 | [`Conditional_SourceHasStatus`](./Abilities_and_Spells.md#object-conditional-sourcehasstatus) | Object | Conditional trigger: Executes nested logic if the caster currently has the specified status. | 0 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
 | [`ConjureBonusAbility`](./Abilities_and_Spells.md#object-conjurebonusability) | `Enum/String` | Adds a temporary bonus ability to the character's hand/deck. | 0 |
 | `ConjureRandomAbilityFromCat` | Number | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 0 |
 | [`ConjureSingleUseBonusAbility`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'ConjureSingleUseBonusAbility' effect/state. | 0 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | `ContextualHeal` | `Number` | Applies or references the 'ContextualHeal' effect/state. | 0 |
 | `CopySpells` | `Number` | Duplicates existing spells currently in the character's hand. | 0 |
 | `CorpseVaporizer` | `Number` | Applies or references the 'CorpseVaporizer' effect/state. | 0 |
@@ -483,7 +480,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `DrainAllyCatsForFleshGolem` | `Number` | Applies or references the 'DrainAllyCatsForFleshGolem' effect/state. | 0 |
 | `DuplicateRandomEquippedItem` | `Number` | Applies or references the 'DuplicateRandomEquippedItem' effect/state. | 0 |
 | [`DustOnHit`](./Abilities_and_Spells.md#object-dustonhit) | Object | Spawns a specific particle or cloud object upon impact. | 0 |
-| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
 | [`EnableWeather`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'EnableWeather' effect/state. | 0 |
 | `EndTurn` | `Number` | Applies or references the 'EndTurn' effect/state. | 0 |
 | `Enlarge` | `Number` | Applies or references the 'Enlarge' effect/state. | 0 |
@@ -700,7 +697,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 0 |
 | `TempPenetrate` | `Number` | Applies or references the 'TempPenetrate' effect/state. | 0 |
 | `TempTrampleUntilSettled` | `Number` | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | `ThornsDamageImmuneUntilSettled` | `Number` | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. | 0 |
 | [`TickDownStatus`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'TickDownStatus' effect/state. | 0 |
 | `TileDamageImmuneUntilSettled` | `Number` | Applies or references the 'TileDamageImmuneUntilSettled' effect/state. | 0 |
@@ -768,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `target`
 
-**Definition:** Block defining the shape, range, and restrictions of the ability's aiming phase.
+**Definition:** Object defining the shape, range, and restrictions of the ability's aiming phase.  
 **Total Count:** 1862
 
 
@@ -889,8 +886,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `cost`
 
 
-**Definition:** Block defining resource requirements (Mana, Act Points, Moves) needed to cast.
-**Total Count:** 1851
+**Definition:** Object defining resource requirements (Mana, Act Points, Moves) needed to cast.  
+**Total Count:** 1853
 
 
 <details>
@@ -951,6 +948,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `self_damage`
 
+
+**Definition:** Recoil or self-inflicted damage/effects applied to the caster.  
+**Total Count:** 220
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -960,8 +961,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 65 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 47 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 74 |
 | [`damage`](./Abilities_and_Spells.md#object-damage) | Mixed | The base damage properties of an attack. | 47 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 11 |
 | `knockback` | Number |  | 10 |
@@ -983,7 +983,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `spawn`
 
-**Definition:** Parameters for summoning new characters, objects, or entities.
+**Definition:** Parameters for summoning new characters, objects, or entities.  
 **Total Count:** 192
 
 
@@ -997,7 +997,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum |  | 184 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 86 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 90 |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 59 |
 | `ai_base_score` | Number |  | 31 |
 | [`additional_passives`](./Abilities_and_Spells.md#object-additional_passives) | Object | Passives granted intrinsically to a spawned entity. | 20 |
@@ -1027,8 +1027,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bonus_passives`
 
 
-**Definition:** Passives granted to the character while this ability is equipped.
-**Total Count:** 136
+**Definition:** Passives granted to the character while this ability is equipped.  
+**Total Count:** 138
 
 
 <details>
@@ -1048,7 +1048,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `temporary_effects`
 
 
-**Definition:** Status applications that wear off automatically or at the end of the turn.
+**Definition:** Status applications that wear off automatically or at the end of the turn.  
 **Total Count:** 88
 
 
@@ -1078,7 +1078,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Else`
 
-> **Definition:** Fallback block that executes if the preceding `Conditional_` block evaluated to false.
 
 
 <details>
@@ -1099,7 +1098,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
 | [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'BonusDamage' effect/state. | 0 |
 | `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
@@ -1110,7 +1109,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
 | [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional-inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 0 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 0 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | `CrackMoonHead` | Number | Applies or references the 'CrackMoonHead' effect/state. | 0 |
 | [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
 | `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 0 |
@@ -1171,7 +1170,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
 | `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | Enum/String | Forces the character or target to instantly use a specified ability. | 0 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 0 |
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 0 |
@@ -1202,7 +1201,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyToSource`
 
-> **Definition:** Redirects the nested effects to apply to the caster/source of the ability instead of the target.
 
 
 <details>
@@ -1242,6 +1240,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_HasTag`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target possesses the specified entity tag.  
+**Total Count:** 47
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1251,8 +1253,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 49 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 |
 | [`tag`](./Enums.md#enum-tag) | Enum | The specific string tag to check for. | 41 |
   | `EventBounty` | Integer | Applies or references the 'EventBounty' effect/state. | 0 |
   | [`MergeDamageInstance`](#mergedamageinstance) | Object | Combines damage numbers or visual hit effects. | 0 |
@@ -1263,7 +1265,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
@@ -1276,8 +1278,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
 | [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional-inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 0 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 0 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | `CrackMoonHead` | `Number` | Applies or references the 'CrackMoonHead' effect/state. | 0 |
 | [`Craft`](./Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 0 |
 | `DeleteObject` | `Number` | Applies or references the 'DeleteObject' effect/state. | 0 |
@@ -1335,7 +1337,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
 | `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | `Enum/String` | Forces the character or target to instantly use a specified ability. | 0 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 0 |
@@ -1352,7 +1354,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Temporary`
 
-> **Definition:** A wrapper block for applying status effects that automatically expire.
 
 
 <details>
@@ -1380,7 +1381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sounds`
 
 
-**Definition:** Audio cues triggered by the ability.
+**Definition:** Audio cues triggered by the ability.  
 **Total Count:** 39
 
 
@@ -1403,6 +1404,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_Enemy`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is hostile to the caster.  
+**Total Count:** 44
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1422,7 +1427,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
 | `BonusDamage` | `Number` | Applies or references the 'BonusDamage' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
@@ -1450,7 +1455,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
 | `TakeExtraTurn` | `Number` | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
 | `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
@@ -1463,7 +1468,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `splash_damage`
 
-**Definition:** Secondary Area of Effect blast parameters.
+**Definition:** Secondary Area of Effect blast parameters.  
 **Total Count:** 35
 
 
@@ -1476,7 +1481,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 33 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 71 |
 | `damage` | Number | The base damage properties of an attack. | 32 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 13 |
 | `knockback` | Number | Knockback force of the splash blast. | 13 |
@@ -1495,6 +1500,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_Ally`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target is friendly to the caster.  
+**Total Count:** 37
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1544,7 +1553,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `T2CopyCat` | Number | Applies or references the 'T2CopyCat' effect/state. | 0 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
 | `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | `ThornsDamageImmuneUntilSettled` | `Number` | Applies or references the 'ThornsDamageImmuneUntilSettled' effect/state. | 0 |
 | `TileDamageImmuneUntilSettled` | `Number` | Applies or references the 'TileDamageImmuneUntilSettled' effect/state. | 0 |
 | [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 0 |
@@ -1558,8 +1567,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `keyword_tooltips`
 
 
-**Definition:** Forces specific UI tooltips to appear when hovering over the ability.
-**Total Count:** 23
+**Definition:** Forces specific UI tooltips to appear when hovering over the ability.  
+**Total Count:** 35
 
 
 <details>
@@ -1579,7 +1588,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `EvolveAbilityFromPool`
 
-> **Definition:** Upgrades or transforms an existing ability into a new one from the specified pool.
 
 
 <details>
@@ -1600,7 +1608,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `KnockUpAndAway`
 
-> **Definition:** Displaces the target vertically and horizontally away from the source.
 
 
 <details>
@@ -1624,7 +1631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `additional_passives`
 
 
-**Definition:** Passives granted intrinsically to a spawned entity.
+**Definition:** Passives granted intrinsically to a spawned entity.  
 **Total Count:** 20
 
 
@@ -1644,7 +1651,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `RandomStatusFromPool`
 
-> **Definition:** Selects and applies a random status effect from the provided nested block.
 
 
 <details>
@@ -1664,7 +1670,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Consumed`
 
-> **Definition:** State block triggered when this object or entity is eaten/consumed by another character.
 
 
 <details>
@@ -1696,6 +1701,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_Boss`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is a Boss.  
+**Total Count:** 21
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1712,7 +1721,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | [`BonusDamage`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'BonusDamage' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 0 |
@@ -1720,12 +1729,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional-hasstatus) | Object | Conditional trigger: Executes nested logic if the target currently has the specified status effect. | 0 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 0 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
 | `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
 | [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
-| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
 | `ExplodeCharacter` | Number | Applies or references the 'ExplodeCharacter' effect/state. | 0 |
 | `ExplodeCharacter_NoDie` | `Number` | Applies or references the 'ExplodeCharacter_NoDie' effect/state. | 0 |
 | `ExplodeCharacter_Party` | Number | Applies or references the 'ExplodeCharacter_Party' effect/state. | 0 |
@@ -1753,7 +1762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
 | `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
 | [`VisualFX`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'VisualFX' effect/state. | 0 |
@@ -1766,7 +1775,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `FormChange`
 
-> **Definition:** Transforms the character into a different state or form (e.g., Rage, HasCat).
 
 
 <details>
@@ -1787,7 +1795,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyToSourceOnKill`
 
-> **Definition:** Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action.
 
 
 <details>
@@ -1817,7 +1824,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CanApplyToInanimate`
 
-> **Definition:** Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters.
 
 
 <details>
@@ -1854,7 +1860,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `StanceSwitchToRanged` | Number | Applies or references the 'StanceSwitchToRanged' effect/state. | 0 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
 | `TempTrampleUntilSettled` | Number | Applies or references the 'TempTrampleUntilSettled' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | `Vaporize` | `Number` | Applies or references the 'Vaporize' effect/state. | 0 |
 | [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The status effect to apply. | 0 |
 
@@ -1864,7 +1870,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CatPartsTransform`
 
-> **Definition:** Transforms specific body parts into different visual variants.
 
 
 <details>
@@ -1899,6 +1904,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_NotBoss`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is NOT a Boss.  
+**Total Count:** 16
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1913,7 +1922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
   | `FactionConversion` | Integer | Applies or references the 'FactionConversion' effect/state. | 0 |
   | `PermanentCharm` | Integer | Applies the 'PermanentCharm' effect. | 0 |
   | `ExplodeCharacter_RockCrusher` | Integer | Applies or references the 'ExplodeCharacter_RockCrusher' effect/state. | 0 |
-  | [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+  | [`CanApplyToInanimate`](#canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
   | `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 0 |
   | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
   | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
@@ -1928,7 +1937,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `FullHeal` | Number | Applies or references the 'FullHeal' effect/state. | 0 |
 | `Instakill` | Number | Applies or references the 'Instakill' effect/state. | 0 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | [`threshold_expr`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 0 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 0 |
@@ -1939,6 +1948,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_HasStatus`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target currently has the specified status effect.  
+**Total Count:** 20
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1948,7 +1961,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
 | [`status`](./Enums.md#enum-status) | Enum | The specific status ID to check for. | 13 |
   | [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Applies or references the 'ImmediateUseAbility_Instant' effect/state. | 0 |
 
@@ -1976,6 +1989,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_GoodRoll`
 
+
+**Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
+**Total Count:** 37
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1985,7 +2002,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 40 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | `odds` | Number | The probability (0.0 to 1.0) of triggering the 'good roll' success state. | 12 |
 | `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
@@ -2021,6 +2038,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_Speculative`
 
+
+**Definition:** A simulation object used by the AI to test hypothetical outcomes before committing to an action.  
+**Total Count:** 12
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2036,7 +2057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
 | `BonusDamageBasedOnDistance` | `Number` | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | `CapDamage` | `Number` | Applies or references the 'CapDamage' effect/state. | 0 |
 | `CaptureFamiliar` | Number | Applies or references the 'CaptureFamiliar' effect/state. | 0 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
@@ -2047,8 +2068,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional-hastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 0 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 0 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
 | `Die` | Number | Applies or references the 'Die' effect/state. | 0 |
 | `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
@@ -2082,7 +2103,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
 | `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
 | [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object | Math variable assignment: Evaluates X as the target's current health. | 0 |
@@ -2096,7 +2117,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DoScreenShake`
 
-> **Definition:** Triggers a camera screen shake effect.
 
 
 <details>
@@ -2117,7 +2137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ChanceToBreakFree`
 
-> **Definition:** Provides a probability to escape a grapple or restraining effect.
 
 
 <details>
@@ -2138,6 +2157,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `ChangeTile`
+
+
+**Definition:** Transforms the terrain tile under the target.  
+**Total Count:** 12
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2173,7 +2196,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyPassives`
 
-> **Definition:** Grants the nested passive abilities dynamically.
 
 
 <details>
@@ -2193,6 +2215,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_FormulaIsPositive`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the evaluated mathematical formula returns a value greater than 0.  
+**Total Count:** 10
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2202,7 +2228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
   | `X` | Variable |  | 0 |
@@ -2214,7 +2240,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Craft`
 
-> **Definition:** Synthesizes or spawns a new item from a specific pool.
 
 
 <details>
@@ -2237,7 +2262,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyStatusIfCrit`
 
-> **Definition:** Conditional trigger: Executes the nested logic only if the triggering action was a critical hit.
 
 
 <details>
@@ -2256,6 +2280,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_Corpse`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target is a dead body/corpse.  
+**Total Count:** 11
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2279,13 +2307,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ForceMoveTowards` | Number | Applies or references the 'ForceMoveTowards' effect/state. | 0 |
 | `Revive` | `Number` | Applies or references the 'Revive' effect/state. | 0 |
 | `TakeExtraTurn` | Number | Applies or references the 'TakeExtraTurn' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 
 </details>
 
 ---
 
 ### Object: `Conditional_InForm`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target is currently in the specified transformation form.  
+**Total Count:** 7
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2344,6 +2376,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_HealthThreshold`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target's health falls below the specified threshold.  
+**Total Count:** 7
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2353,7 +2389,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | `threshold_flat` | Number | A flat numerical health value threshold. | 4 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `threshold_percent` | Number | A percentage-based health threshold (e.g. 50%). | 2 |
@@ -2394,6 +2430,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_Object`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is an inanimate object or furniture.  
+**Total Count:** 6
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2409,7 +2449,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object | Conditional redirect: Applies the nested effects to the caster, but only if the target was killed by the action. | 0 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional-boss) | Object | Conditional trigger: Executes nested logic if the target is a Boss. | 0 |
@@ -2421,8 +2461,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional-inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 0 |
 | [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional-notboss) | Object | Conditional trigger: Executes nested logic if the target is NOT a Boss. | 0 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 0 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
-| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | `CrackMoonHead` | Number | Applies or references the 'CrackMoonHead' effect/state. | 0 |
 | `DeleteObject` | Number | Applies or references the 'DeleteObject' effect/state. | 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
@@ -2464,7 +2504,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
 | `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | Enum/String | Forces the character or target to instantly use a specified ability. | 0 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
 | `VaporizeCorpse` | Number | Applies or references the 'VaporizeCorpse' effect/state. | 0 |
@@ -2477,6 +2517,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_PlayerCat`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target is a player-controlled cat.  
+**Total Count:** 7
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2520,6 +2564,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ConjureBonusAbility`
 
+
+**Definition:** Adds a temporary bonus ability to the character's hand/deck.  
+**Total Count:** 2
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2538,7 +2586,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DoDistortionRing`
 
-> **Definition:** Creates a visual distortion ring effect on the screen.
 
 
 <details>
@@ -2596,7 +2643,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SwitchMusic`
 
-> **Definition:** Changes the background music track or layer during combat.
 
 
 <details>
@@ -2618,7 +2664,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TwisterDisplaceWithDamage`
 
-> **Definition:** A whirlwind effect that randomly displaces targets and deals damage.
 
 
 <details>
@@ -2641,7 +2686,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CollectsPickupsWithAltEffects`
 
-> **Definition:** Triggers alternative nested effects when collecting items or pickups.
 
 
 <details>
@@ -2662,7 +2706,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DestroyEquipmentAndAttachParasite`
 
-> **Definition:** Removes an equipped item and replaces it with a parasite from a specified pool.
 
 
 <details>
@@ -2683,7 +2726,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DoDamage`
 
-> **Definition:** Explicitly triggers a secondary damage instance independent of the main attack.
 
 
 <details>
@@ -2695,7 +2737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 5 |
 | `damage` | Number | The flat damage amount. | 5 |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum |  | 2 |
@@ -2709,8 +2751,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LeaveBehind`
 
 
-**Definition:** Spawns a specific object at the character's previous location when they move.
-**Total Count:** 5
+**Definition:** Spawns a specific object at the character's previous location when they move.  
+**Total Count:** 4
 
 
 <details>
@@ -2729,7 +2771,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ObjectOnHit`
 
-> **Definition:** Spawns a specific physics/item object upon impact.
 
 
 <details>
@@ -2749,7 +2790,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyToConsumed`
 
-> **Definition:** Redirects the nested effects to apply to the entity that just consumed this object.
 
 
 <details>
@@ -2771,7 +2811,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ArcLightning`
 
-> **Definition:** Executes a chain-lightning logic block that bounces between targets.
 
 
 <details>
@@ -2794,6 +2833,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_Familiar`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target is a familiar.  
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary>
@@ -2830,7 +2873,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `LateStatusApplication`
 
-> **Definition:** Applies a status effect after all primary damage and effects have fully resolved.
 
 
 <details>
@@ -2889,7 +2931,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TakeBonusTurnWithStatus`
 
-> **Definition:** Grants the character an immediate extra turn while afflicted with specific statuses.
 
 
 <details>
@@ -2909,7 +2950,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TempPassiveWhileHasStatus`
 
-> **Definition:** Grants nested passives only while the character possesses the specified status.
 
 
 <details>
@@ -2930,7 +2970,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TimeDelayStatusApplication`
 
-> **Definition:** Delays the nested effects by a specified amount of real-time seconds.
 
 
 <details>
@@ -2961,7 +3000,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `post_spawn_statuses`
 
-**Definition:** Status effects applied immediately after an entity spawns.
+**Definition:** Status effects applied immediately after an entity spawns.  
 **Total Count:** 4
 
 
@@ -3005,7 +3044,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyMultipleTimes`
 
-> **Definition:** A loop block that executes its nested logic multiple times.
 
 
 <details>
@@ -3017,7 +3055,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed | The number of times the nested effects block should be repeatedly executed. | 3 |
 
 </details>
@@ -3025,6 +3063,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BounceObject`
+
+
+**Definition:** Spawns a physics object that visually bounces off the target.  
+**Total Count:** 3
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3043,7 +3085,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `CatPartsSizeScaleStatus`
 
-> **Definition:** Visually scales specific body parts of a character.
 
 
 <details>
@@ -3066,6 +3107,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_AffectedByElement`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is currently afflicted by the specified element.  
+**Total Count:** 3
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3075,17 +3120,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`element`](./Enums.md#enum-element) | Enum | The specific element type to check for. | 3 |
-  | [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+  | [`Conditional_Speculative`](#conditional_speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
   | `BonusCritChance` | Integer | Applies the 'BonusCritChance' effect. | 0 |
   | `Burn` | Number | Applies or references the 'Burn' effect/state. | 0 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
 | `BonusDamageBasedOnDistance` | Number | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 0 |
 | `CapDamage` | Number | Applies or references the 'CapDamage' effect/state. | 0 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
-| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
 | `IgnoreDamage` | Number | Applies or references the 'IgnoreDamage' effect/state. | 0 |
 | `RandomBonusDamage` | Number | Applies or references the 'RandomBonusDamage' effect/state. | 0 |
 
@@ -3095,6 +3140,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_FirstApplicationThisTurn`
 
+
+**Definition:** Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn.  
+**Total Count:** 8
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3105,7 +3154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 3 |
 | [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 0 |
 | [`status`](./Engine_DamagingKeys.md#valid-property-keys) | Enum/String | The required status effect. | 0 |
@@ -3115,6 +3164,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_LastHit`
+
+
+**Definition:** Conditional trigger: Executes nested logic if this attack is the final hit of a multi-hit sequence.  
+**Total Count:** 3
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3137,7 +3190,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DustOnHit`
 
-> **Definition:** Spawns a specific particle or cloud object upon impact.
 
 
 <details>
@@ -3175,7 +3227,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SetCrazyEyeBackgroundWeights`
 
-> **Definition:** Adjusts visual rendering weights for the 'Crazy Eye' background effect.
 
 
 <details>
@@ -3204,7 +3255,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 56 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | `even_if_dead` | Boolean | If true, triggers the effect even if the character died during the battle. | 3 |
 
 </details>
@@ -3230,6 +3281,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `extra_statuses`
+
+
+**Definition:** Additional generic status applications.  
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3283,7 +3338,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyToRandomPartyMemberIfPossible`
 
-> **Definition:** Redirects the nested effects to apply to a random living member of the player's party.
 
 
 <details>
@@ -3305,7 +3359,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyToTile`
 
-> **Definition:** Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself.
 
 
 <details>
@@ -3363,6 +3416,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_BadRoll`
 
+
+**Definition:** Conditional trigger: Executes nested logic based on a randomized bad outcome probability.  
+**Total Count:** 8
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3372,7 +3429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`odds`](./Enums.md#enum-odds) | Enum | The probability (0.0 to 1.0) of triggering the 'bad roll' failure state. | 2 |
 | `DieViolently` | `Number` | Applies or references the 'DieViolently' effect/state. | 0 |
@@ -3383,6 +3440,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_BossOrBig`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target is a Boss or has a large size classification.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3403,6 +3464,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_Buddy`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is the caster's summoned buddy/familiar.  
+**Total Count:** 2
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3415,12 +3480,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
   | [`Conditional_InForm`](#conditional_inform) | Object | Conditional trigger: Executes nested logic if the target is currently in the specified transformation form. | 0 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
-  | [`Consumed`](#consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
 | [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 0 |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
 | `BonusDamage` | Number | Applies or references the 'BonusDamage' effect/state. | 0 |
-| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier block that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 0 |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms specific body parts into different visual variants. | 0 |
 | `Cleanse` | Number | Applies or references the 'Cleanse' effect/state. | 0 |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional-displaceable) | Object | Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement. | 0 |
@@ -3429,7 +3494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional-hastag) | Object | Conditional trigger: Executes nested logic if the target possesses the specified entity tag. | 0 |
 | [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional-healththreshold) | Object | Conditional trigger: Executes nested logic if the target's health falls below the specified threshold. | 0 |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional-object) | Object | Conditional trigger: Executes nested logic if the target is an inanimate object or furniture. | 0 |
-| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation block used by the AI to test hypothetical outcomes before committing to an action. | 0 |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional-speculative) | Object | A simulation object used by the AI to test hypothetical outcomes before committing to an action. | 0 |
 | [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 0 |
 | `DieViolently` | Number | Applies or references the 'DieViolently' effect/state. | 0 |
 | [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object | Explicitly triggers a secondary damage instance independent of the main attack. | 0 |
@@ -3459,7 +3524,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `SpawnBearTrapIfHitKills` | Number | Applies or references the 'SpawnBearTrapIfHitKills' effect/state. | 0 |
 | [`SpawnThingIfHitKills`](./Engine_LogicKeys.md#valid-property-keys) | Enum/String | Applies or references the 'SpawnThingIfHitKills' effect/state. | 0 |
 | `SpeculativeMoveSelfCorpseOffMap` | Number | Applies or references the 'SpeculativeMoveSelfCorpseOffMap' effect/state. | 0 |
-| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper block for applying status effects that automatically expire. | 0 |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 0 |
 | [`UseAbility`](./Abilities_and_Spells.md#object-useability) | Enum/String | Forces the character or target to instantly use a specified ability. | 0 |
 | `Vaporize` | Number | Applies or references the 'Vaporize' effect/state. | 0 |
 | `VaporizeInanimate` | Number | Applies or references the 'VaporizeInanimate' effect/state. | 0 |
@@ -3484,6 +3549,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_DestructibleCorpse`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is a corpse that can be destroyed or vaporized.  
+**Total Count:** 2
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3506,6 +3575,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_Displaceable`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is not immune to knockback or forced movement.  
+**Total Count:** 2
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3527,6 +3600,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_IsSelf`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is the caster themselves.  
+**Total Count:** 6
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3546,6 +3623,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_NotAlly`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is NOT friendly to the caster.  
+**Total Count:** 2
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3562,6 +3643,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_NotBossOrBig`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target is NEITHER a Boss nor large.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3581,6 +3666,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_NotShielded`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target does NOT currently have a Shield status.  
+**Total Count:** 2
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3598,6 +3687,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_OncePerBattle`
 
+
+**Definition:** Conditional trigger: Executes nested logic only once per encounter/battle.  
+**Total Count:** 4
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3608,7 +3701,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`key`](./Enums.md#enum-key) | Enum |  | 2 |
 | [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `Enum/String` | Applies or references the 'CompleteItemQuest' effect/state. | 0 |
 | `TriggerGameEnding` | `Number` | Applies or references the 'TriggerGameEnding' effect/state. | 0 |
@@ -3618,6 +3711,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_Shielded`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target currently has a Shield status.  
+**Total Count:** 5
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3696,7 +3793,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ForceMoveTowardsTaggedObject`
 
-> **Definition:** Forces the character to move towards the nearest object with a specific tag.
 
 
 <details>
@@ -3735,7 +3831,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `LowerAmbientLight`
 
-> **Definition:** A visual effect that dims the map's lighting.
 
 
 <details>
@@ -3756,7 +3851,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Math`
 
-> **Definition:** Triggers the Tinkerer's Math ability sequence.
 
 
 <details>
@@ -3768,7 +3862,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 2 |
 
 </details>
@@ -3837,7 +3931,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `OverHealToStatuses`
 
-> **Definition:** Converts excessive healing beyond maximum health into specific status effects.
 
 
 <details>
@@ -3858,7 +3951,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `QuakeAreaChance`
 
-> **Definition:** Provides a probability to trigger an earthquake Area of Effect.
 
 
 <details>
@@ -3897,7 +3989,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `RandomKnockback`
 
-> **Definition:** Applies a randomized amount of knockback force.
 
 
 <details>
@@ -3954,7 +4045,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TakeBonusTurnWithAIControl`
 
-> **Definition:** Grants the character an immediate extra turn, but forces the AI to control them during it.
 
 
 <details>
@@ -3973,6 +4063,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TeamCastAbility`
+
+
+**Definition:** Requires or involves multiple characters to execute the ability.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4009,7 +4103,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `XIsTargetHealth`
 
-> **Definition:** Math variable assignment: Evaluates X as the target's current health.
 
 
 <details>
@@ -4030,7 +4123,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `empty_self_damage`
 
-**Definition:** Recoil damage specifically applied when the attack misses all targets.
+**Definition:** Recoil damage specifically applied when the attack misses all targets.  
 **Total Count:** 2
 
 
@@ -4086,7 +4179,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyStatusesNextTurnBegin`
 
-> **Definition:** Delays the application of the nested status effects until the start of the target's next turn.
 
 
 <details>
@@ -4106,7 +4198,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyToOthersWithSharedTagAndFaction`
 
-> **Definition:** Redirects the nested effects to apply to all other entities on the map that share the target's faction and specified tags.
 
 
 <details>
@@ -4127,7 +4218,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ApplyToRandomClosestAlly`
 
-> **Definition:** Redirects the nested effects to apply to the nearest friendly unit. If tied, chooses randomly among them.
 
 
 <details>
@@ -4148,6 +4238,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_ActiveWeather_Any`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the current map weather matches any in the list.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4165,6 +4259,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_Backstab`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the attacker is positioned behind the target.  
+**Total Count:** 1
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4185,6 +4283,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_CanBeHealed`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target's health is below maximum and they are capable of receiving healing.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4202,6 +4304,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_DebuffRoll`
+
+
+**Definition:** Conditional trigger: Executes nested logic based on a randomized debuff probability.  
+**Total Count:** 1
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4222,6 +4328,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_FinishedSpawning`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target has fully completed its spawn animation/sequence.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4240,6 +4350,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_HasCleansableDebuffs`
+
+
+**Definition:** Conditional trigger: Executes nested logic if the target currently has negative status effects that can be cleansed.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4267,6 +4381,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_IsTrample`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the current movement/attack is classified as a trample.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4286,6 +4404,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_LivingPlayerCat`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is an alive player-controlled cat.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4297,9 +4419,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
   | [`ApplyToSource`](#applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 0 |
-  | [`Consumed`](#consumed) | Object | State block triggered when this object or entity is eaten/consumed by another character. | 0 |
+  | [`Consumed`](#consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 0 |
   | `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. | 0 |
 | `AddLeechesStatus` | Number | Applies or references the 'AddLeechesStatus' effect/state. | 0 |
 | [`AddWeaponAux`](./Engine_LogicKeys.md#valid-property-keys) | String | Applies or references the 'AddWeaponAux' effect/state. | 0 |
@@ -4341,6 +4463,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_NotBig`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the target is NOT classified as large.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4360,6 +4486,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_RandomChance`
 
+
+**Definition:** Conditional trigger: Executes nested logic based on a flat percentage random roll.  
+**Total Count:** 4
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4370,7 +4500,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `odds` | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 |
 | [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives) | Object | Grants the nested passive abilities dynamically. | 0 |
 
@@ -4380,6 +4510,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_SourceAbilityHasTag`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the ability that triggered this effect has the specified tag.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4389,7 +4523,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 1 |
 
 </details>
@@ -4398,6 +4532,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Conditional_SourceHasStatus`
 
+
+**Definition:** Conditional trigger: Executes nested logic if the caster currently has the specified status.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4407,7 +4545,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
   | `Bruise` | Number | Applies or references the 'Bruise' effect/state. | 0 |
 
@@ -4417,7 +4555,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DelayCastAbility`
 
-> **Definition:** Queues an ability to be cast automatically after a certain delay or trigger.
 
 
 <details>
@@ -4439,7 +4576,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `DelayedWindCone`
 
-> **Definition:** Creates a delayed Area of Effect cone.
 
 
 <details>
@@ -4478,7 +4614,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ForceImmediateMoveAndAttack`
 
-> **Definition:** Forces the character to immediately move to a target and use a specified ability.
 
 
 <details>
@@ -4499,7 +4634,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `IncAuxCounterCycle`
 
-> **Definition:** Increments a generic auxiliary counter, looping back to 0 when it exceeds the maximum.
 
 
 <details>
@@ -4536,7 +4670,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `MergeDamageInstance`
 
-> **Definition:** Combines damage numbers or visual hit effects.
 
 
 <details>
@@ -4558,7 +4691,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `NextBasicAttackCritsThisTurn`
 
-> **Definition:** Guarantees the next basic attack executed this turn will be a critical hit.
 
 
 <details>
@@ -4581,7 +4713,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `NextBattleStatusStacks`
 
-> **Definition:** Carries over the specified status effects into the next encounter/battle.
 
 
 <details>
@@ -4621,7 +4752,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `PoolMetronome`
 
-> **Definition:** Executes a random ability drawn from a specific pool.
 
 
 <details>
@@ -4641,7 +4771,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `PopAndSpawn`
 
-> **Definition:** Destroys the target and replaces it with a new spawned entity.
 
 
 <details>
@@ -4664,7 +4793,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `RemoveStatusStacks`
 
-> **Definition:** Removes a specific number of stacks of a status effect.
 
 
 <details>
@@ -4704,7 +4832,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ScrambleLastUsedSpell`
 
-> **Definition:** Randomizes or scrambles the properties of the last spell cast.
 
 
 <details>
@@ -4724,7 +4851,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SetAnimationAlts`
 
-> **Definition:** Overrides specific animation states with alternative animations.
 
 
 <details>
@@ -4745,7 +4871,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ShowFakeDamage`
 
-> **Definition:** Displays a visual damage number without actually modifying health.
 
 
 <details>
@@ -4766,7 +4891,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SpreadDisease`
 
-> **Definition:** Provides a chance to transmit a disease status to adjacent targets.
 
 
 <details>
@@ -4824,7 +4948,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SwapWeapon`
 
-> **Definition:** Replaces the character's currently equipped weapon with one from a specified pool.
 
 
 <details>
@@ -4844,7 +4967,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TransformEquipment`
 
-> **Definition:** Upgrades or transforms a specific equipped item into another.
 
 
 <details>
@@ -4865,7 +4987,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TransformWeapon`
 
-> **Definition:** Transforms the equipped weapon into another specific weapon state.
 
 
 <details>
@@ -4886,7 +5007,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `UseAbility`
 
-> **Definition:** Forces the character or target to instantly use a specified ability.
 
 
 <details>
@@ -4905,7 +5025,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `UseMoveAbilityWithAI`
 
-> **Definition:** Forces the character to execute a movement ability using specific AI weights.
 
 
 <details>
@@ -4926,7 +5045,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `VisualCountDownThenApplyStatus`
 
-> **Definition:** Displays a visual countdown above the target before applying the nested effects.
 
 
 <details>
@@ -4946,7 +5064,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `WaggleClone`
 
-> **Definition:** Spawns visual clones or alternative hitbox variants of the projectile.
 
 
 <details>
@@ -4969,7 +5086,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `bonk_damage`
 
-**Definition:** Damage dealt when knocked into a wall or obstacle.
+**Definition:** Damage dealt when knocked into a wall or obstacle.  
 **Total Count:** 1
 
 
@@ -4993,8 +5110,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage`
 
 
-**Definition:** The base damage properties of an attack.
-**Total Count:** 1
+**Definition:** The base damage properties of an attack.  
+**Total Count:** 5
 
 
 <details>

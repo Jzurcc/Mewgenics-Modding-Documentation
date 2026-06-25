@@ -32,7 +32,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 12
+**Total Count:** 497
 
 > **Referenced by:** [`ROOT`](#object-root)
 

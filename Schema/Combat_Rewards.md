@@ -12,7 +12,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 12
+**Total Count:** 33
 
 > **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
 
@@ -32,7 +32,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 12
+**Total Count:** 21
 
 > **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
 
@@ -52,7 +52,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 12
+**Total Count:** 13
 
 > **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
 

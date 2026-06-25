@@ -15,7 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1549 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 470 |
 | [`properties`](./Characters_and_Bosses.md#object-properties) | Object | General engine properties. | 600 |
 | [`graphics`](./Characters_and_Bosses.md#object-graphics) | Object | Visual parameters and animation bindings. | 558 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 464 |
@@ -55,7 +55,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2609 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`ArmorPickup`](./Characters_and_Bosses.md#object-armorpickup) | Object | Pickup Logic: Defines what happens when an armor item is collected. | 3 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Examples: `{ ... }` | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
@@ -69,7 +69,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `properties`
 
-**Definition:** General engine properties.
+**Definition:** General engine properties.  
 **Total Count:** 600
 
 
@@ -82,7 +82,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 539 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 801 |
 | [`faction`](./Enums.md#enum-faction) | Enum |  | 505 |
 | `health` | Number |  | 427 |
 | [`tag`](./Arrays.md#array-tag) | Array | Specific entity tag required. | 399 |
@@ -189,7 +189,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ai`
 
 
-**Definition:** Core block defining the AI behavior logic and weights.
+**Definition:** Core block defining the AI behavior logic and weights.  
 **Total Count:** 583
 
 
@@ -236,13 +236,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `graphics`
 
 
-**Definition:** Visual parameters and animation bindings.
+**Definition:** Visual parameters and animation bindings.  
 
 
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 558
+**Total Count:** 2609
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -295,8 +295,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `abilities`
 
 
-**Definition:** Lists the ability IDs the character possesses.
-**Total Count:** 458
+**Definition:** Lists the ability IDs the character possesses.  
+**Total Count:** 460
 
 
 <details>
@@ -320,8 +320,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `stats`
 
 
-**Definition:** Core character metrics (Health, Strength, etc.).
-**Total Count:** 388
+**Definition:** Core character metrics (Health, Strength, etc.).  
+**Total Count:** 497
 
 
 <details>
@@ -347,7 +347,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pattern`
 
 
-**Definition:** AI sequence logic.
+**Definition:** AI sequence logic.  
 **Total Count:** 296
 
 
@@ -389,7 +389,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 120 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`initial_form`](./Enums.md#enum-initial_form) | Enum |  | 56 |
 | [`Default`](./Characters_and_Bosses.md#object-default) | Object | Character Form: The baseline default behavior state. | 37 |
 | [`Normal`](./Characters_and_Bosses.md#object-normal) | Object | Character Form: Behavior and stats for the \'Normal\' state. | 11 |
@@ -422,7 +422,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Small`](./Characters_and_Bosses.md#object-small) | Object | Character Form: Behavior and stats for the \'Small\' state. | 2 |
 | [`SquirrelForm`](./Characters_and_Bosses.md#object-squirrelform) | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 |
 | [`Turtled`](./Characters_and_Bosses.md#object-turtled) | Object | Character Form: Behavior and stats for the 'Turtled' state. | 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 39 |
 | [`Alert`](./Characters_and_Bosses.md#object-alert) | Object | AI State: The behavior profile used when the character is alerted to enemies. | 1 |
 | [`Angry`](./Characters_and_Bosses.md#object-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 1 |
 | [`Attacker`](./Characters_and_Bosses.md#object-attacker) | Object | AI Role: Designates the character as an attacker rather than support. | 1 |
@@ -575,7 +575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sound`
 
 
-**Definition:** Audio bindings.
+**Definition:** Audio bindings.  
 **Total Count:** 62
 
 
@@ -614,7 +614,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `turns`
 
 
-**Definition:** Turn counter tracking.
+**Definition:** Turn counter tracking.  
 **Total Count:** 45
 
 
@@ -641,7 +641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `equipment`
 
 
-**Definition:** List of item IDs the character spawns equipped with.
+**Definition:** List of item IDs the character spawns equipped with.  
 **Total Count:** 44
 
 
@@ -665,7 +665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `mainturn_pattern`
 
 
-**Definition:** AI Logic: Determines standard ability usage during the main turn.
+**Definition:** AI Logic: Determines standard ability usage during the main turn.  
 **Total Count:** 44
 
 
@@ -690,8 +690,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Default`
 
 
-**Definition:** Baseline configuration.
-**Total Count:** 37
+**Definition:** Baseline configuration.  
+**Total Count:** 38
 
 
 <details>
@@ -703,7 +703,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 10 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Object | Turn counter tracking. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | [`move`](./Enums.md#enum-move) | Enum |  | 1 |
@@ -735,7 +735,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `virtual_abilities`
 
 
-**Definition:** Abilities that are evaluated but not directly castable by the player.
+**Definition:** Abilities that are evaluated but not directly castable by the player.  
 **Total Count:** 35
 
 
@@ -824,7 +824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bonusturn_pattern`
 
 
-**Definition:** AI Logic: Determines ability usage during bonus turns.
+**Definition:** AI Logic: Determines ability usage during bonus turns.  
 **Total Count:** 27
 
 
@@ -878,7 +878,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `fallback`
 
 
-**Definition:** Logic executed if primary options fail.
+**Definition:** Logic executed if primary options fail.  
 **Total Count:** 23
 
 
@@ -959,7 +959,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 36 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 33 |
 | `damage` | Number | The base damage properties of an attack. | 11 |
 | `knockback` | Number |  | 9 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 8 |
@@ -996,7 +996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ally_rewards`
 
 
-**Definition:** Loot logic triggered if an ally dies.
+**Definition:** Loot logic triggered if an ally dies.  
 **Total Count:** 18
 
 
@@ -1017,7 +1017,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `alt_spawn_pool`
 
 
-**Definition:** Alternative pools to draw minions from.
+**Definition:** Alternative pools to draw minions from.  
 **Total Count:** 18
 
 
@@ -1145,7 +1145,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `effects`
 
-> **Definition:** Non-damaging impact triggers.
 
 
 <details>
@@ -1233,7 +1232,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `round_end_bonusturn_pattern`
 
 
-**Definition:** AI Logic: Ability usage pattern during round-end bonus turns.
+**Definition:** AI Logic: Ability usage pattern during round-end bonus turns.  
 **Total Count:** 12
 
 
@@ -1259,8 +1258,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Normal`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Normal\' state.
-**Total Count:** 11
+**Definition:** Character Form: Behavior and stats for the \'Normal\' state.  
+**Total Count:** 231
 
 
 <details>
@@ -1272,7 +1271,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 5 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Object | Turn counter tracking. | 1 |
@@ -1320,7 +1319,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Rage`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Rage\' state.
+**Definition:** Character Form: Behavior and stats for the \'Rage\' state.  
 **Total Count:** 10
 
 
@@ -1332,7 +1331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 8 |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Object | Turn counter tracking. | 6 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 4 |
@@ -1441,8 +1440,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `statuses`
 
 
-**Definition:** Status effects possessed by the character.
-**Total Count:** 9
+**Definition:** Status effects possessed by the character.  
+**Total Count:** 14
 
 
 <details>
@@ -1627,7 +1626,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `HasCat`
 
 
-**Definition:** Character Form: Behavior and stats for the \'HasCat\' state.
+**Definition:** Character Form: Behavior and stats for the \'HasCat\' state.  
 **Total Count:** 5
 
 
@@ -1639,7 +1638,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 5 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 5 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 4 |
@@ -1679,7 +1678,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 5 |
 
 </details>
@@ -1766,7 +1765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveAway`
 
 
-**Definition:** AI Movement: Moves away from the target.
+**Definition:** AI Movement: Moves away from the target.  
 **Total Count:** 4
 
 
@@ -1788,7 +1787,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveClose`
 
 
-**Definition:** AI Movement: Moves into melee range.
+**Definition:** AI Movement: Moves into melee range.  
 **Total Count:** 4
 
 
@@ -1811,7 +1810,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `OffMap`
 
 
-**Definition:** Character Form: Behavior and stats for the 'OffMap' state.
+**Definition:** Character Form: Behavior and stats for the 'OffMap' state.  
 **Total Count:** 4
 
 
@@ -1929,8 +1928,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `default`
 
 
-**Definition:** Baseline configuration.
-**Total Count:** 4
+**Definition:** Baseline configuration.  
+**Total Count:** 13
 
 
 <details>
@@ -1950,7 +1949,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `hot`
 
 
-**Definition:** Visual effect indicator.
+**Definition:** Visual effect indicator.  
 **Total Count:** 4
 
 
@@ -1962,7 +1961,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 4 |
 | [`name`](./Strings.md#string-name) | String | Localization key for the character's name. | 4 |
 
@@ -1973,8 +1972,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `keyword_tooltips`
 
 
-**Definition:** Forces specific UI tooltips to appear.
-**Total Count:** 4
+**Definition:** Forces specific UI tooltips to appear.  
+**Total Count:** 35
 
 
 <details>
@@ -1997,7 +1996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AllAlive`
 
 
-**Definition:** Encounter State: Logic executed when all specific entities are currently alive.
+**Definition:** Encounter State: Logic executed when all specific entities are currently alive.  
 **Total Count:** 3
 
 
@@ -2018,7 +2017,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ArmorPickup`
 
 
-**Definition:** Pickup Logic: Defines what happens when an armor item is collected.
+**Definition:** Pickup Logic: Defines what happens when an armor item is collected.  
 **Total Count:** 3
 
 
@@ -2057,7 +2056,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Cat`
 
 
-**Definition:** Character Form: Base form for standard cats.
+**Definition:** Character Form: Base form for standard cats.  
 **Total Count:** 3
 
 
@@ -2080,7 +2079,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Down`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Down\' state.
+**Definition:** Character Form: Behavior and stats for the \'Down\' state.  
 **Total Count:** 3
 
 
@@ -2125,7 +2124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Full`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Full\' state.
+**Definition:** Character Form: Behavior and stats for the \'Full\' state.  
 **Total Count:** 3
 
 
@@ -2168,7 +2167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NonCat`
 
 
-**Definition:** Character Form: Behavior and stats for the 'NonCat' state.
+**Definition:** Character Form: Behavior and stats for the 'NonCat' state.  
 **Total Count:** 3
 
 
@@ -2191,7 +2190,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `OneAlive`
 
 
-**Definition:** Encounter State: Logic executed when exactly one target is alive.
+**Definition:** Encounter State: Logic executed when exactly one target is alive.  
 **Total Count:** 3
 
 
@@ -2268,7 +2267,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TwoAlive`
 
 
-**Definition:** Encounter State: Logic executed when exactly two targets are alive.
+**Definition:** Encounter State: Logic executed when exactly two targets are alive.  
 **Total Count:** 3
 
 
@@ -2290,7 +2289,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Up`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Up\' state.
+**Definition:** Character Form: Behavior and stats for the \'Up\' state.  
 **Total Count:** 3
 
 
@@ -2302,7 +2301,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
@@ -2386,8 +2385,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Big`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'Big\' state.
-**Total Count:** 2
+**Definition:** Character Form / AI State: Behavior and stats for the \'Big\' state.  
+**Total Count:** 4
 
 
 <details>
@@ -2398,7 +2397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Mixed |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 
@@ -2409,7 +2408,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Boris`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'Boris\' state.
+**Definition:** Character Form / AI State: Behavior and stats for the \'Boris\' state.  
 **Total Count:** 2
 
 
@@ -2451,8 +2450,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CaveMan`
 
 
-**Definition:** Character Form: Behavior and stats for the \'CaveMan\' state.
-**Total Count:** 2
+**Definition:** Character Form: Behavior and stats for the \'CaveMan\' state.  
+**Total Count:** 3
 
 
 <details>
@@ -2477,7 +2476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CaveManSpear`
 
 
-**Definition:** Character Form: Behavior and stats for the \'CaveManSpear\' state.
+**Definition:** Character Form: Behavior and stats for the \'CaveManSpear\' state.  
 **Total Count:** 2
 
 
@@ -2489,7 +2488,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
@@ -2539,7 +2538,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DashRandomly`
 
 
-**Definition:** AI Movement: Dashes to a random valid tile.
+**Definition:** AI Movement: Dashes to a random valid tile.  
 **Total Count:** 2
 
 
@@ -2580,7 +2579,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Empty`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Empty\' state.
+**Definition:** Character Form: Behavior and stats for the \'Empty\' state.  
 **Total Count:** 2
 
 
@@ -2601,7 +2600,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Escape`
 
 
-**Definition:** AI Movement: Logic for fleeing or escaping the map.
+**Definition:** AI Movement: Logic for fleeing or escaping the map.  
 **Total Count:** 2
 
 
@@ -2623,7 +2622,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Explosive`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Explosive\' state.
+**Definition:** Character Form: Behavior and stats for the \'Explosive\' state.  
 **Total Count:** 2
 
 
@@ -2680,7 +2679,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Holding`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Holding\' state.
+**Definition:** Character Form: Behavior and stats for the \'Holding\' state.  
 **Total Count:** 2
 
 
@@ -2704,8 +2703,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Holy`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Holy\' state.
-**Total Count:** 2
+**Definition:** Character Form: Behavior and stats for the \'Holy\' state.  
+**Total Count:** 4
 
 
 <details>
@@ -2725,7 +2724,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `KnockUpAndAway`
 
-> **Definition:** Logic: Applies vertical and horizontal displacement.
 
 
 <details>
@@ -2772,7 +2770,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveCenter`
 
 
-**Definition:** AI Movement: Moves toward the center of the map.
+**Definition:** AI Movement: Moves toward the center of the map.  
 **Total Count:** 2
 
 
@@ -2794,7 +2792,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveForThrow`
 
 
-**Definition:** AI Movement: Repositions to gain line of sight for throwing.
+**Definition:** AI Movement: Repositions to gain line of sight for throwing.  
 **Total Count:** 2
 
 
@@ -2817,7 +2815,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NotPriming`
 
 
-**Definition:** Character Form: Behavior and stats when not charging an ability.
+**Definition:** Character Form: Behavior and stats when not charging an ability.  
 **Total Count:** 2
 
 
@@ -2847,7 +2845,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 |
 
 </details>
@@ -2857,7 +2855,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Priming`
 
 
-**Definition:** Character Form: Behavior and stats when charging an ability.
+**Definition:** Character Form: Behavior and stats when charging an ability.  
 **Total Count:** 2
 
 
@@ -2896,7 +2894,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Rain`
 
-> **Definition:** Character Form: Behavior and stats for the 'Rain' state.
 
 
 <details>
@@ -2955,7 +2952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Small`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Small\' state.
+**Definition:** Character Form: Behavior and stats for the \'Small\' state.  
 **Total Count:** 2
 
 
@@ -2977,7 +2974,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpearRun`
 
 
-**Definition:** AI Movement: Specific movement logic for Spear enemies.
+**Definition:** AI Movement: Specific movement logic for Spear enemies.  
 **Total Count:** 2
 
 
@@ -3000,8 +2997,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SquirrelForm`
 
 
-**Definition:** Character Form: Behavior and stats for the 'SquirrelForm' state.
-**Total Count:** 2
+**Definition:** Character Form: Behavior and stats for the 'SquirrelForm' state.  
+**Total Count:** 3
 
 
 <details>
@@ -3012,7 +3009,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum |  | 1 |
@@ -3076,7 +3073,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `TempPassiveUntilSettled`
 
-> **Definition:** Passive: Active only until the physics engine stops moving the character.
 
 
 <details>
@@ -3133,7 +3129,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Turtled`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Turtled' state.
+**Definition:** Character Form: Behavior and stats for the 'Turtled' state.  
 **Total Count:** 2
 
 
@@ -3145,7 +3141,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 2 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 2 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 2 |
@@ -3158,7 +3154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `active`
 
 
-**Definition:** Defines actively executed abilities.
+**Definition:** Defines actively executed abilities.  
 **Total Count:** 2
 
 
@@ -3179,7 +3175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `alternate_energized_effect`
 
 
-**Definition:** Overrides default energized visuals.
+**Definition:** Overrides default energized visuals.  
 **Total Count:** 2
 
 
@@ -3200,7 +3196,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `dispersed_bonusturn_pattern`
 
 
-**Definition:** AI Logic: Alternative bonus turn ability pattern.
+**Definition:** AI Logic: Alternative bonus turn ability pattern.  
 **Total Count:** 2
 
 
@@ -3221,8 +3217,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `passive`
 
 
-**Definition:** Intrinsic passive modifier.
-**Total Count:** 2
+**Definition:** Intrinsic passive modifier.  
+**Total Count:** 4
 
 
 <details>
@@ -3242,7 +3238,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `statuses_on_enter_form`
 
 
-**Definition:** Status effects instantly applied upon transitioning into this form.
+**Definition:** Status effects instantly applied upon transitioning into this form.  
 **Total Count:** 2
 
 
@@ -3274,7 +3270,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
   | [`Conditional_IsPhysicalAttack`](#conditional_isphysicalattack) | Object | Conditional: Executes logic if the triggering attack is physical. | 0 |
-  | [`Else`](#else) | Object | Fallback block that executes if the preceding `Conditional_` block evaluated to false. | 0 |
+  | [`Else`](#else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 0 |
 
 </details>
 
@@ -3373,7 +3369,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Alert`
 
 
-**Definition:** AI State: The behavior profile used when the character is alerted to enemies.
+**Definition:** AI State: The behavior profile used when the character is alerted to enemies.  
 **Total Count:** 1
 
 
@@ -3415,8 +3411,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Angry`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'Angry\' state.
-**Total Count:** 1
+**Definition:** Character Form / AI State: Behavior and stats for the \'Angry\' state.  
+**Total Count:** 221
 
 
 <details>
@@ -3437,7 +3433,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Attacker`
 
 
-**Definition:** AI Role: Designates the character as an attacker rather than support.
+**Definition:** AI Role: Designates the character as an attacker rather than support.  
 **Total Count:** 1
 
 
@@ -3497,7 +3493,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BellyFull`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'BellyFull\' state.
+**Definition:** Character Form / AI State: Behavior and stats for the \'BellyFull\' state.  
 **Total Count:** 1
 
 
@@ -3520,7 +3516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BigHolding`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'BigHolding\' state.
+**Definition:** Character Form / AI State: Behavior and stats for the \'BigHolding\' state.  
 **Total Count:** 1
 
 
@@ -3542,7 +3538,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BigHoldingCat`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state.
+**Definition:** Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state.  
 **Total Count:** 1
 
 
@@ -3564,8 +3560,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Bishop`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'Bishop\' state.
-**Total Count:** 1
+**Definition:** Character Form / AI State: Behavior and stats for the \'Bishop\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -3592,8 +3588,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `BlackHole`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the \'BlackHole\' state.
-**Total Count:** 1
+**Definition:** Character Form / AI State: Behavior and stats for the \'BlackHole\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -3617,8 +3613,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Bomb`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the 'Bomb' state.
-**Total Count:** 1
+**Definition:** Character Form / AI State: Behavior and stats for the 'Bomb' state.  
+**Total Count:** 3
 
 
 <details>
@@ -3629,7 +3625,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
 
 </details>
@@ -3639,7 +3635,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Bully`
 
 
-**Definition:** Character Form / AI State: Behavior and stats for the 'Bully' state.
+**Definition:** Character Form / AI State: Behavior and stats for the 'Bully' state.  
 **Total Count:** 1
 
 
@@ -3683,8 +3679,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CaveBaby`
 
 
-**Definition:** Character Form: Behavior and stats for the \'CaveBaby\' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the \'CaveBaby\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -3709,8 +3705,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CaveWoman`
 
 
-**Definition:** Character Form: Behavior and stats for the \'CaveWoman\' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the \'CaveWoman\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -3735,7 +3731,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CaveWomanHasCat`
 
 
-**Definition:** Character Form: Behavior and stats for the \'CaveWomanHasCat\' state.
+**Definition:** Character Form: Behavior and stats for the \'CaveWomanHasCat\' state.  
 **Total Count:** 1
 
 
@@ -3779,7 +3775,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CerberubsJumpBlind`
 
 
-**Definition:** AI Logic: Blind jump attack pattern for Cerberubs.
+**Definition:** AI Logic: Blind jump attack pattern for Cerberubs.  
 **Total Count:** 1
 
 
@@ -3801,7 +3797,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CerberubsJumpNormal`
 
 
-**Definition:** AI Logic: Normal jump attack pattern for Cerberubs.
+**Definition:** AI Logic: Normal jump attack pattern for Cerberubs.  
 **Total Count:** 1
 
 
@@ -3915,7 +3911,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Charging`
 
 
-**Definition:** Character Form / AI State: Behavior when charging an attack.
+**Definition:** Character Form / AI State: Behavior when charging an attack.  
 **Total Count:** 1
 
 
@@ -3939,7 +3935,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Close`
 
 
-**Definition:** AI Movement logic: Maneuvers into close/melee range.
+**Definition:** AI Movement logic: Maneuvers into close/melee range.  
 **Total Count:** 1
 
 
@@ -3960,7 +3956,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CloseConvert`
 
 
-**Definition:** AI State: Logic for converting adjacent units.
+**Definition:** AI State: Logic for converting adjacent units.  
 **Total Count:** 1
 
 
@@ -3998,6 +3994,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `Conditional_HasKnockback`
+
+
+**Definition:** Conditional: Executes logic if the triggering attack deals knockback.  
+**Total Count:** 1
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4077,8 +4077,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Cultist`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Cultist\' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the \'Cultist\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -4089,7 +4089,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
@@ -4103,7 +4103,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Damaged`
 
 
-**Definition:** Character Form / AI State: Behavior when health is critically low.
+**Definition:** Character Form / AI State: Behavior when health is critically low.  
 **Total Count:** 1
 
 
@@ -4124,7 +4124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Default_Ceiling`
 
 
-**Definition:** Character Form: The baseline behavior state while attached to the ceiling.
+**Definition:** Character Form: The baseline behavior state while attached to the ceiling.  
 **Total Count:** 1
 
 
@@ -4147,7 +4147,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Default_Ground`
 
 
-**Definition:** Character Form: The baseline behavior state while on the ground.
+**Definition:** Character Form: The baseline behavior state while on the ground.  
 **Total Count:** 1
 
 
@@ -4188,7 +4188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DesireMech`
 
 
-**Definition:** Character Form: Behavior and stats for the 'DesireMech' state.
+**Definition:** Character Form: Behavior and stats for the 'DesireMech' state.  
 **Total Count:** 1
 
 
@@ -4226,7 +4226,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `Die`
 
-> **Definition:** Character Form / Logic: Forces the character to die.
 
 
 <details>
@@ -4282,7 +4281,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Drunker`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Drunker' state.
+**Definition:** Character Form: Behavior and stats for the 'Drunker' state.  
 **Total Count:** 1
 
 
@@ -4303,7 +4302,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DualSword`
 
 
-**Definition:** Character Form: Behavior and stats for the \'DualSword\' state.
+**Definition:** Character Form: Behavior and stats for the \'DualSword\' state.  
 **Total Count:** 1
 
 
@@ -4320,7 +4319,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | `move_speed_multiplier` | Number |  | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -4329,7 +4328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `DualSword_Primed`
 
 
-**Definition:** Character Form: Behavior and stats for the \'DualSword_Primed\' state.
+**Definition:** Character Form: Behavior and stats for the \'DualSword_Primed\' state.  
 **Total Count:** 1
 
 
@@ -4346,7 +4345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
 | `move_speed_multiplier` | Number |  | 1 |
 | [`tooltip`](./Strings.md#string-tooltip) | String |  | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -4355,7 +4354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Dumb`
 
 
-**Definition:** AI Profile: A simplified, less optimal decision-making profile.
+**Definition:** AI Profile: A simplified, less optimal decision-making profile.  
 **Total Count:** 1
 
 
@@ -4416,7 +4415,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Explody`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Explody' state.
+**Definition:** Character Form: Behavior and stats for the 'Explody' state.  
 **Total Count:** 1
 
 
@@ -4428,7 +4427,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
@@ -4460,7 +4459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FightPhase`
 
 
-**Definition:** Boss Logic: Main combat phase.
+**Definition:** Boss Logic: Main combat phase.  
 **Total Count:** 1
 
 
@@ -4642,8 +4641,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Fire`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Fire' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the 'Fire' state.  
+**Total Count:** 3
 
 
 <details>
@@ -4665,8 +4664,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FireFull`
 
 
-**Definition:** Character Form: Behavior and stats for the 'FireFull' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the 'FireFull' state.  
+**Total Count:** 2
 
 
 <details>
@@ -4689,7 +4688,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Flop`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Flop\' state.
+**Definition:** Character Form: Behavior and stats for the \'Flop\' state.  
 **Total Count:** 1
 
 
@@ -4712,7 +4711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Flop2`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Flop2\' state.
+**Definition:** Character Form: Behavior and stats for the \'Flop2\' state.  
 **Total Count:** 1
 
 
@@ -4735,8 +4734,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Flush`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Flush' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the 'Flush' state.  
+**Total Count:** 2
 
 
 <details>
@@ -4756,7 +4755,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FlushBubs`
 
 
-**Definition:** Character Form: Behavior and stats for the 'FlushBubs' state.
+**Definition:** Character Form: Behavior and stats for the 'FlushBubs' state.  
 **Total Count:** 1
 
 
@@ -4778,7 +4777,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FlushHost`
 
 
-**Definition:** Character Form: Behavior and stats for the 'FlushHost' state.
+**Definition:** Character Form: Behavior and stats for the 'FlushHost' state.  
 **Total Count:** 1
 
 
@@ -4792,7 +4791,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -4801,7 +4800,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FlushNettle`
 
 
-**Definition:** Character Form: Behavior and stats for the 'FlushNettle' state.
+**Definition:** Character Form: Behavior and stats for the 'FlushNettle' state.  
 **Total Count:** 1
 
 
@@ -4823,7 +4822,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `FoodMove`
 
 
-**Definition:** AI Movement: Logic for seeking out food items.
+**Definition:** AI Movement: Logic for seeking out food items.  
 **Total Count:** 1
 
 
@@ -4845,7 +4844,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ForceTrample`
 
 
-**Definition:** Logic: Forces movement to act as a trample attack.
+**Definition:** Logic: Forces movement to act as a trample attack.  
 **Total Count:** 1
 
 
@@ -4885,7 +4884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Grappling`
 
 
-**Definition:** Character Form / AI State: Behavior while grappling an opponent.
+**Definition:** Character Form / AI State: Behavior while grappling an opponent.  
 **Total Count:** 1
 
 
@@ -4907,7 +4906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Grown`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Grown\' state.
+**Definition:** Character Form: Behavior and stats for the \'Grown\' state.  
 **Total Count:** 1
 
 
@@ -4934,7 +4933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `GuaranteedJackpot`
 
 
-**Definition:** Loot Logic: Guarantees a high-tier drop.
+**Definition:** Loot Logic: Guarantees a high-tier drop.  
 **Total Count:** 1
 
 
@@ -4955,7 +4954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Guarding`
 
 
-**Definition:** Character Form / AI State: Defensive behavior state.
+**Definition:** Character Form / AI State: Defensive behavior state.  
 **Total Count:** 1
 
 
@@ -4996,7 +4995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `HalfDead`
 
 
-**Definition:** Character Form: Behavior and stats for the \'HalfDead\' state.
+**Definition:** Character Form: Behavior and stats for the \'HalfDead\' state.  
 **Total Count:** 1
 
 
@@ -5020,7 +5019,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `HasDeadCat`
 
 
-**Definition:** Character Form: Behavior and stats for the \'HasDeadCat\' state.
+**Definition:** Character Form: Behavior and stats for the \'HasDeadCat\' state.  
 **Total Count:** 1
 
 
@@ -5044,7 +5043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `HasRock`
 
 
-**Definition:** Character Form: Behavior and stats for the \'HasRock\' state.
+**Definition:** Character Form: Behavior and stats for the \'HasRock\' state.  
 **Total Count:** 1
 
 
@@ -5067,7 +5066,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Headless`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Headless\' state.
+**Definition:** Character Form: Behavior and stats for the \'Headless\' state.  
 **Total Count:** 1
 
 
@@ -5108,7 +5107,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Hint_CrackedVisuals`
 
 
-**Definition:** Visual: Overlay effects for cracked/damaged terrain or objects.
+**Definition:** Visual: Overlay effects for cracked/damaged terrain or objects.  
 **Total Count:** 1
 
 
@@ -5129,7 +5128,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Hint_CrackedVisuals2`
 
 
-**Definition:** Visual: Secondary cracked visual overlay.
+**Definition:** Visual: Secondary cracked visual overlay.  
 **Total Count:** 1
 
 
@@ -5150,7 +5149,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Hint_CrackedVisuals3`
 
 
-**Definition:** Visual: Tertiary cracked visual overlay.
+**Definition:** Visual: Tertiary cracked visual overlay.  
 **Total Count:** 1
 
 
@@ -5190,7 +5189,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `HumanDead`
 
 
-**Definition:** Character Form: Behavior and stats for the \'HumanDead\' state.
+**Definition:** Character Form: Behavior and stats for the \'HumanDead\' state.  
 **Total Count:** 1
 
 
@@ -5232,7 +5231,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `InitialPhase`
 
 
-**Definition:** Boss Logic: The starting phase of an encounter.
+**Definition:** Boss Logic: The starting phase of an encounter.  
 **Total Count:** 1
 
 
@@ -5257,7 +5256,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Insane_Ceiling`
 
 
-**Definition:** Character Form: Insane behavior state while attached to the ceiling.
+**Definition:** Character Form: Insane behavior state while attached to the ceiling.  
 **Total Count:** 1
 
 
@@ -5272,7 +5271,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Object | Turn counter tracking. | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -5281,7 +5280,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Insane_Ground`
 
 
-**Definition:** Character Form: Insane behavior state while on the ground.
+**Definition:** Character Form: Insane behavior state while on the ground.  
 **Total Count:** 1
 
 
@@ -5305,8 +5304,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Johnny`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Johnny' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the 'Johnny' state.  
+**Total Count:** 2
 
 
 <details>
@@ -5326,7 +5325,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `JohnnyBubs`
 
 
-**Definition:** Character Form: Behavior and stats for the 'JohnnyBubs' state.
+**Definition:** Character Form: Behavior and stats for the 'JohnnyBubs' state.  
 **Total Count:** 1
 
 
@@ -5348,7 +5347,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `JohnnyHost`
 
 
-**Definition:** Character Form: Behavior and stats for the 'JohnnyHost' state.
+**Definition:** Character Form: Behavior and stats for the 'JohnnyHost' state.  
 **Total Count:** 1
 
 
@@ -5362,7 +5361,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -5389,7 +5388,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `JohnnyNettle`
 
 
-**Definition:** Character Form: Behavior and stats for the 'JohnnyNettle' state.
+**Definition:** Character Form: Behavior and stats for the 'JohnnyNettle' state.  
 **Total Count:** 1
 
 
@@ -5411,7 +5410,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Joystick`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Joystick\' state.
+**Definition:** Character Form: Behavior and stats for the \'Joystick\' state.  
 **Total Count:** 1
 
 
@@ -5433,8 +5432,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LastHit`
 
 
-**Definition:** Logic: Executes logic on the final hit of a multi-hit attack.
-**Total Count:** 1
+**Definition:** Logic: Executes logic on the final hit of a multi-hit attack.  
+**Total Count:** 2
 
 
 <details>
@@ -5454,7 +5453,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `LeapClose`
 
 
-**Definition:** AI Movement: Executes a jumping maneuver to close distance.
+**Definition:** AI Movement: Executes a jumping maneuver to close distance.  
 **Total Count:** 1
 
 
@@ -5476,7 +5475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Lifted`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Lifted\' state.
+**Definition:** Character Form: Behavior and stats for the \'Lifted\' state.  
 **Total Count:** 1
 
 
@@ -5501,7 +5500,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Lit`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Lit' state.
+**Definition:** Character Form: Behavior and stats for the 'Lit' state.  
 **Total Count:** 1
 
 
@@ -5522,7 +5521,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `LowerAmbientLight`
 
-> **Definition:** Visual: Dims the map lighting.
 
 
 <details>
@@ -5661,7 +5659,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Mounted`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Mounted\' state.
+**Definition:** Character Form: Behavior and stats for the \'Mounted\' state.  
 **Total Count:** 1
 
 
@@ -5682,7 +5680,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MouthFull`
 
 
-**Definition:** Character Form: Behavior and stats for the \'MouthFull\' state.
+**Definition:** Character Form: Behavior and stats for the \'MouthFull\' state.  
 **Total Count:** 1
 
 
@@ -5696,7 +5694,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -5758,7 +5756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveForBarrage`
 
 
-**Definition:** AI Movement: Repositions to optimize a barrage attack.
+**Definition:** AI Movement: Repositions to optimize a barrage attack.  
 **Total Count:** 1
 
 
@@ -5781,7 +5779,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveForDash`
 
 
-**Definition:** AI Movement: Repositions to set up a dash attack line.
+**Definition:** AI Movement: Repositions to set up a dash attack line.  
 **Total Count:** 1
 
 
@@ -5804,7 +5802,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveForGrass`
 
 
-**Definition:** AI Movement: Moves toward grass tiles.
+**Definition:** AI Movement: Moves toward grass tiles.  
 **Total Count:** 1
 
 
@@ -5827,7 +5825,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveForPounce`
 
 
-**Definition:** AI Movement: Repositions to optimize a pounce trajectory.
+**Definition:** AI Movement: Repositions to optimize a pounce trajectory.  
 **Total Count:** 1
 
 
@@ -5850,7 +5848,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveForSpin`
 
 
-**Definition:** AI Movement: Repositions into a cluster of enemies for a spin attack.
+**Definition:** AI Movement: Repositions into a cluster of enemies for a spin attack.  
 **Total Count:** 1
 
 
@@ -5873,7 +5871,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveOneForPuke`
 
 
-**Definition:** AI Movement: Specific positioning logic for puke attacks.
+**Definition:** AI Movement: Specific positioning logic for puke attacks.  
 **Total Count:** 1
 
 
@@ -5896,7 +5894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveSpaced`
 
 
-**Definition:** AI Movement: Moves to maintain a specific distance from targets.
+**Definition:** AI Movement: Moves to maintain a specific distance from targets.  
 **Total Count:** 1
 
 
@@ -5918,7 +5916,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveToHead`
 
 
-**Definition:** AI Movement: Navigates toward the 'head' or primary target.
+**Definition:** AI Movement: Navigates toward the 'head' or primary target.  
 **Total Count:** 1
 
 
@@ -5941,7 +5939,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveTowards`
 
 
-**Definition:** AI Movement: Moves toward the nearest target.
+**Definition:** AI Movement: Moves toward the nearest target.  
 **Total Count:** 1
 
 
@@ -5982,8 +5980,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Mutant`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Mutant\' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the \'Mutant\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -6010,7 +6008,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NCGravecrawlFAR`
 
 
-**Definition:** AI Movement: Specific grapple/crawl logic.
+**Definition:** AI Movement: Specific grapple/crawl logic.  
 **Total Count:** 1
 
 
@@ -6032,8 +6030,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NeutronStar`
 
 
-**Definition:** Character Form: Behavior and stats for the 'NeutronStar' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the 'NeutronStar' state.  
+**Total Count:** 2
 
 
 <details>
@@ -6044,7 +6042,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 
 </details>
@@ -6054,7 +6052,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NoEyes`
 
 
-**Definition:** Character Form: Behavior and stats for the \'NoEyes\' state.
+**Definition:** Character Form: Behavior and stats for the \'NoEyes\' state.  
 **Total Count:** 1
 
 
@@ -6075,7 +6073,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NoStick`
 
 
-**Definition:** Character Form: Behavior and stats for the 'NoStick' state.
+**Definition:** Character Form: Behavior and stats for the 'NoStick' state.  
 **Total Count:** 1
 
 
@@ -6097,7 +6095,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `NormalFull`
 
 
-**Definition:** Character Form: Behavior and stats for the 'NormalFull' state.
+**Definition:** Character Form: Behavior and stats for the 'NormalFull' state.  
 **Total Count:** 1
 
 
@@ -6121,7 +6119,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Nothing`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Nothing' state.
+**Definition:** Character Form: Behavior and stats for the 'Nothing' state.  
 **Total Count:** 1
 
 
@@ -6142,8 +6140,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Nuke`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Nuke' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the 'Nuke' state.  
+**Total Count:** 2
 
 
 <details>
@@ -6154,7 +6152,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
@@ -6168,7 +6166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Obey`
 
 
-**Definition:** AI State: Enforced compliance logic (e.g., when Charmed).
+**Definition:** AI State: Enforced compliance logic (e.g., when Charmed).  
 **Total Count:** 1
 
 
@@ -6190,7 +6188,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Off`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Off' state.
+**Definition:** Character Form: Behavior and stats for the 'Off' state.  
 **Total Count:** 1
 
 
@@ -6211,7 +6209,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `OffScreen`
 
 
-**Definition:** Character Form: Behavior and stats for the 'OffScreen' state.
+**Definition:** Character Form: Behavior and stats for the 'OffScreen' state.  
 **Total Count:** 1
 
 
@@ -6233,7 +6231,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `OneEye`
 
 
-**Definition:** Character Form: Behavior and stats for the \'OneEye\' state.
+**Definition:** Character Form: Behavior and stats for the \'OneEye\' state.  
 **Total Count:** 1
 
 
@@ -6255,7 +6253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Open`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Open' state.
+**Definition:** Character Form: Behavior and stats for the 'Open' state.  
 **Total Count:** 1
 
 
@@ -6279,7 +6277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `OpenCat`
 
 
-**Definition:** Character Form: Behavior and stats for the 'OpenCat' state.
+**Definition:** Character Form: Behavior and stats for the 'OpenCat' state.  
 **Total Count:** 1
 
 
@@ -6301,7 +6299,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Out`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Out' state.
+**Definition:** Character Form: Behavior and stats for the 'Out' state.  
 **Total Count:** 1
 
 
@@ -6330,7 +6328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`element`](./Enums.md#enum-element) | Enum | Specific element type required or applied. | 1 |
 
 </details>
@@ -6361,7 +6359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Possessing`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Possessing\' state.
+**Definition:** Character Form: Behavior and stats for the \'Possessing\' state.  
 **Total Count:** 1
 
 
@@ -6373,7 +6371,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Object | Turn counter tracking. | 1 |
 
@@ -6384,7 +6382,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Primed`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Primed' state.
+**Definition:** Character Form: Behavior and stats for the 'Primed' state.  
 **Total Count:** 1
 
 
@@ -6408,7 +6406,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Pulp2`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Pulp2' state.
+**Definition:** Character Form: Behavior and stats for the 'Pulp2' state.  
 **Total Count:** 1
 
 
@@ -6435,7 +6433,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Pulp3`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Pulp3' state.
+**Definition:** Character Form: Behavior and stats for the 'Pulp3' state.  
 **Total Count:** 1
 
 
@@ -6462,7 +6460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Pulp4`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Pulp4' state.
+**Definition:** Character Form: Behavior and stats for the 'Pulp4' state.  
 **Total Count:** 1
 
 
@@ -6489,7 +6487,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Pulp5`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Pulp5' state.
+**Definition:** Character Form: Behavior and stats for the 'Pulp5' state.  
 **Total Count:** 1
 
 
@@ -6516,7 +6514,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Pulp6`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Pulp6' state.
+**Definition:** Character Form: Behavior and stats for the 'Pulp6' state.  
 **Total Count:** 1
 
 
@@ -6543,7 +6541,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Pulp7`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Pulp7' state.
+**Definition:** Character Form: Behavior and stats for the 'Pulp7' state.  
 **Total Count:** 1
 
 
@@ -6587,7 +6585,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ReturnA`
 
 
-**Definition:** Boss Logic: Specific phase return trigger.
+**Definition:** Boss Logic: Specific phase return trigger.  
 **Total Count:** 1
 
 
@@ -6628,7 +6626,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RunFar`
 
 
-**Definition:** AI Movement: Maximize distance from targets.
+**Definition:** AI Movement: Maximize distance from targets.  
 **Total Count:** 1
 
 
@@ -6703,7 +6701,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Sitting`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Sitting' state.
+**Definition:** Character Form: Behavior and stats for the 'Sitting' state.  
 **Total Count:** 1
 
 
@@ -6715,7 +6713,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
@@ -6747,7 +6745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SmallHolding`
 
 
-**Definition:** Character Form: Behavior and stats for the \'SmallHolding\' state.
+**Definition:** Character Form: Behavior and stats for the \'SmallHolding\' state.  
 **Total Count:** 1
 
 
@@ -6769,7 +6767,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SmallHoldingCat`
 
 
-**Definition:** Character Form: Behavior and stats for the \'SmallHoldingCat\' state.
+**Definition:** Character Form: Behavior and stats for the \'SmallHoldingCat\' state.  
 **Total Count:** 1
 
 
@@ -6791,7 +6789,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawningPhase`
 
 
-**Definition:** Boss Logic: Phase focused on summoning minions.
+**Definition:** Boss Logic: Phase focused on summoning minions.  
 **Total Count:** 1
 
 
@@ -7039,7 +7037,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Standing`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Standing' state.
+**Definition:** Character Form: Behavior and stats for the 'Standing' state.  
 **Total Count:** 1
 
 
@@ -7064,7 +7062,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Standing2`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Standing2' state.
+**Definition:** Character Form: Behavior and stats for the 'Standing2' state.  
 **Total Count:** 1
 
 
@@ -7089,7 +7087,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Start_Ceiling`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Start_Ceiling' state.
+**Definition:** Character Form: Behavior and stats for the 'Start_Ceiling' state.  
 **Total Count:** 1
 
 
@@ -7118,7 +7116,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | `stacks` | Number | Number of stacks or intensity to apply. | 1 |
 
 </details>
@@ -7285,7 +7283,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 |
   | [`UseAbility`](./Enums.md#enum-useability) | Enum | Forces the character or target to instantly use a specified ability. | 0 |
 
@@ -7296,7 +7294,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Stop`
 
 
-**Definition:** AI Movement: Forces the character to cease movement.
+**Definition:** AI Movement: Forces the character to cease movement.  
 **Total Count:** 1
 
 
@@ -7318,7 +7316,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SuckMF`
 
 
-**Definition:** Character Form: Behavior and stats for the 'SuckMF' state.
+**Definition:** Character Form: Behavior and stats for the 'SuckMF' state.  
 **Total Count:** 1
 
 
@@ -7376,7 +7374,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `SwitchMusic`
 
-> **Definition:** Event Trigger: Changes background music track.
 
 
 <details>
@@ -7398,7 +7395,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SwordAndShield`
 
 
-**Definition:** Character Form: Behavior and stats for the 'SwordAndShield' state.
+**Definition:** Character Form: Behavior and stats for the 'SwordAndShield' state.  
 **Total Count:** 1
 
 
@@ -7421,7 +7418,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SwordAndShield_Primed`
 
 
-**Definition:** Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state.
+**Definition:** Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state.  
 **Total Count:** 1
 
 
@@ -7479,7 +7476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TF_TargetAllies`
 
 
-**Definition:** AI Targeting: Prioritizes allies.
+**Definition:** AI Targeting: Prioritizes allies.  
 **Total Count:** 1
 
 
@@ -7501,7 +7498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TF_TargetEnemies`
 
 
-**Definition:** AI Targeting: Prioritizes enemies.
+**Definition:** AI Targeting: Prioritizes enemies.  
 **Total Count:** 1
 
 
@@ -7546,7 +7543,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Tar`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Tar' state.
+**Definition:** Character Form: Behavior and stats for the 'Tar' state.  
 **Total Count:** 1
 
 
@@ -7569,7 +7566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TarFull`
 
 
-**Definition:** Character Form: Behavior and stats for the 'TarFull' state.
+**Definition:** Character Form: Behavior and stats for the 'TarFull' state.  
 **Total Count:** 1
 
 
@@ -7647,7 +7644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Throb`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Throb' state.
+**Definition:** Character Form: Behavior and stats for the 'Throb' state.  
 **Total Count:** 1
 
 
@@ -7668,7 +7665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ThrobBubs`
 
 
-**Definition:** Character Form: Behavior and stats for the 'ThrobBubs' state.
+**Definition:** Character Form: Behavior and stats for the 'ThrobBubs' state.  
 **Total Count:** 1
 
 
@@ -7690,7 +7687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ThrobHost`
 
 
-**Definition:** Character Form: Behavior and stats for the 'ThrobHost' state.
+**Definition:** Character Form: Behavior and stats for the 'ThrobHost' state.  
 **Total Count:** 1
 
 
@@ -7704,7 +7701,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 
 </details>
 
@@ -7713,7 +7710,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ThrobNettle`
 
 
-**Definition:** Character Form: Behavior and stats for the 'ThrobNettle' state.
+**Definition:** Character Form: Behavior and stats for the 'ThrobNettle' state.  
 **Total Count:** 1
 
 
@@ -7754,7 +7751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Transformed`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Transformed' state.
+**Definition:** Character Form: Behavior and stats for the 'Transformed' state.  
 **Total Count:** 1
 
 
@@ -7794,7 +7791,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `TwoEyes`
 
 
-**Definition:** Character Form: Behavior and stats for the 'TwoEyes' state.
+**Definition:** Character Form: Behavior and stats for the 'TwoEyes' state.  
 **Total Count:** 1
 
 
@@ -7815,7 +7812,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Unflip`
 
 
-**Definition:** Logic: Reverses a flipped state.
+**Definition:** Logic: Reverses a flipped state.  
 **Total Count:** 1
 
 
@@ -7856,7 +7853,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Unlit`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Unlit' state.
+**Definition:** Character Form: Behavior and stats for the 'Unlit' state.  
 **Total Count:** 1
 
 
@@ -7868,7 +7865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum |  | 1 |
 
 </details>
@@ -7878,7 +7875,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Unwashed`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Unwashed' state.
+**Definition:** Character Form: Behavior and stats for the 'Unwashed' state.  
 **Total Count:** 1
 
 
@@ -7936,7 +7933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Washed`
 
 
-**Definition:** Character Form: Behavior and stats for the 'Washed' state.
+**Definition:** Character Form: Behavior and stats for the 'Washed' state.  
 **Total Count:** 1
 
 
@@ -7958,7 +7955,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Washer`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Washer\' state.
+**Definition:** Character Form: Behavior and stats for the \'Washer\' state.  
 **Total Count:** 1
 
 
@@ -7984,8 +7981,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Water`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Water\' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the \'Water\' state.  
+**Total Count:** 3
 
 
 <details>
@@ -7996,7 +7993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | String |  | 1 |
 
 </details>
@@ -8006,8 +8003,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `WereMan`
 
 
-**Definition:** Character Form: Behavior and stats for the \'WereMan\' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the \'WereMan\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -8032,8 +8029,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Zealot`
 
 
-**Definition:** Character Form: Behavior and stats for the \'Zealot\' state.
-**Total Count:** 1
+**Definition:** Character Form: Behavior and stats for the \'Zealot\' state.  
+**Total Count:** 2
 
 
 <details>
@@ -8044,7 +8041,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 1 |
 | [`animation_suffix`](./Strings.md#string-animation_suffix) | String |  | 1 |
 | [`attack`](./Enums.md#enum-attack) | Enum |  | 1 |
@@ -8058,7 +8055,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ZealotBomb`
 
 
-**Definition:** Character Form: Behavior and stats for the \'ZealotBomb\' state.
+**Definition:** Character Form: Behavior and stats for the \'ZealotBomb\' state.  
 **Total Count:** 1
 
 
@@ -8084,7 +8081,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `additional_statuses`
 
 
-**Definition:** Generic statuses added to the character.
+**Definition:** Generic statuses added to the character.  
 **Total Count:** 1
 
 
@@ -8105,7 +8102,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ai_if_spawned_as_enemy`
 
 
-**Definition:** AI logic override used only if the character is spawned as an enemy.
+**Definition:** AI logic override used only if the character is spawned as an enemy.  
 **Total Count:** 1
 
 
@@ -8128,8 +8125,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `damage_instance`
 
-**Definition:** Defines damage logic on contact.
-**Total Count:** 1
+**Definition:** Defines damage logic on contact.  
+**Total Count:** 2346
 
 
 
@@ -8150,7 +8147,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `eat_damage`
 
-**Definition:** Damage dealt when this entity consumes another.
+**Definition:** Damage dealt when this entity consumes another.  
 **Total Count:** 1
 
 
@@ -8164,7 +8161,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 1 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `damage` | Number | The base damage properties of an attack. | 1 |
 | `cant_miss` | `Boolean` |  | 0 |
 | [`effects`](./Characters_and_Bosses.md#object-effects) | Object | Non-damaging impact triggers. | 0 |
@@ -8178,7 +8175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `exit_animations`
 
 
-**Definition:** Animations played when leaving a form/state.
+**Definition:** Animations played when leaving a form/state.  
 **Total Count:** 1
 
 
@@ -8199,7 +8196,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `other_form_change_abilities`
 
 
-**Definition:** Lists secondary abilities used to change forms.
+**Definition:** Lists secondary abilities used to change forms.  
 **Total Count:** 1
 
 
@@ -8222,7 +8219,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `round_start_bonusturn_pattern`
 
 
-**Definition:** AI Logic: Ability usage pattern during round-start bonus turns.
+**Definition:** AI Logic: Ability usage pattern during round-start bonus turns.  
 **Total Count:** 1
 
 

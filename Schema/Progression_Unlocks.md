@@ -16,7 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 890 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 36 |
 | [`popup`](#object-popup) | Object |  | 266 |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array |  | 129 |
@@ -180,7 +180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -199,7 +199,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -245,7 +245,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -265,7 +265,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -286,7 +286,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -305,7 +305,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -324,7 +324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -343,7 +343,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -362,7 +362,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -382,7 +382,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -403,7 +403,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -422,7 +422,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -441,7 +441,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -460,7 +460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -479,7 +479,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -499,7 +499,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -520,7 +520,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -539,7 +539,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -558,7 +558,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -577,7 +577,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -596,7 +596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -615,7 +615,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -634,7 +634,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -675,7 +675,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -694,7 +694,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -713,7 +713,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -732,7 +732,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -751,7 +751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -771,7 +771,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -792,7 +792,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -811,7 +811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -830,7 +830,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -849,7 +849,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -868,7 +868,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -889,7 +889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -910,7 +910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -931,7 +931,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -952,7 +952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -973,7 +973,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -994,7 +994,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1015,7 +1015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1036,7 +1036,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1057,7 +1057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1078,7 +1078,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1099,7 +1099,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1120,7 +1120,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1141,7 +1141,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1162,7 +1162,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1183,7 +1183,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1204,7 +1204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1225,7 +1225,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1246,7 +1246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1267,7 +1267,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1288,7 +1288,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1309,7 +1309,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1331,7 +1331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1352,7 +1352,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1373,7 +1373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1394,7 +1394,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1415,7 +1415,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1436,7 +1436,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1457,7 +1457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1478,7 +1478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1502,7 +1502,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1526,7 +1526,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1550,7 +1550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -1573,7 +1573,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 2
 
 > **Referenced by:** [`ROOT`](#object-root)
 

@@ -15,7 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 890 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 229 |
 | [`intro`](./Events_and_Encounters.md#context-intro) | Object | Event Node: The initial text block when a story event first loads. | 214 |
 | [`main`](./Events_and_Encounters.md#context-main) | Object | Event Node: The central hub or recurring menu of a story event. | 214 |
 | [`label`](./Strings.md#string-label) | String |  | 16 |
@@ -135,7 +135,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `reward`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Reward' action.
 
 
 <details>
@@ -241,7 +240,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `common`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Common' action.
 
 
 <details>
@@ -322,7 +320,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `rare`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Rare' action.
 
 
 <details>
@@ -423,7 +420,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `good`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Good' action.
 
 
 <details>
@@ -544,7 +540,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `bad`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Bad' action.
 
 
 <details>
@@ -747,7 +742,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `options`
 
-> **Definition:** Event Object: Lists the available clickable dialog choices for the current story node.
 
 
 <details>
@@ -759,7 +753,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 144 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 |
 | [`examine`](./Events_and_Encounters.md#context-examine) | Object | Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 |
 | [`loot`](./Events_and_Encounters.md#context-loot) | Object | Event Node: Story branch or dialog option representing the \'Loot\' action. | 25 |
@@ -1058,6 +1052,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `get_item_from_pool`
 
+
+**Definition:** Event Action: Rewards the player with an item drawn from a specific loot pool.  
+**Total Count:** 40
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1108,6 +1106,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `self_status_next_fight`
 
+
+**Definition:** Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter.  
+**Total Count:** 143
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1124,6 +1126,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `permanent_stats`
+
+
+**Definition:** Event Reward: Permanently increases (or decreases) the core stats of a single character.  
+**Total Count:** 134
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1148,6 +1154,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `conditional_reward`
+
+
+**Definition:** Event Action: Provides a reward only if a specific condition is met.  
+**Total Count:** 126
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1197,6 +1207,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `random_mutation`
 
+
+**Definition:** Event Reward: Applies a completely random mutation to a character.  
+**Total Count:** 19
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1225,7 +1239,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 59 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 57 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 56 |
@@ -1314,7 +1328,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 43 |
 | [`stat`](./Math_Equations.md) | Equation |  | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
@@ -1394,6 +1408,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `spawn_unit_next_fight`
 
+
+**Definition:** Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter.  
+**Total Count:** 41
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1446,7 +1464,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `leave`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Leave' action.
 
 
 <details>
@@ -1458,7 +1475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 30 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 30 |
@@ -1545,7 +1562,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 25 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 25 |
@@ -1656,7 +1673,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `mutation`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Mutation' action.
 
 
 <details>
@@ -1699,7 +1715,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 66 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |
 | [`stat`](./Math_Equations.md) | Equation |  | 23 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 23 |
@@ -1776,6 +1792,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `party_status_next_fight`
 
+
+**Definition:** Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter.  
+**Total Count:** 24
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1793,7 +1813,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `setup`
 
-> **Definition:** Event Object: Pre-initialization logic executed before the event UI is drawn.
 
 
 <details>
@@ -1817,7 +1836,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `cutscene`
 
-> **Definition:** Event Node: Triggers a narrative cutscene.
 
 
 <details>
@@ -1838,6 +1856,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `random_mutation_from_set`
+
+
+**Definition:** Event Reward: Applies a random mutation to a character from a specific pool.  
+**Total Count:** 22
 
 <details>
 <summary><b>Expand</b></summary>
@@ -1878,7 +1900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
@@ -1965,7 +1987,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
 | [`stat`](./Math_Equations.md) | Equation |  | 14 |
@@ -2051,7 +2073,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |
 | [`label`](./Strings.md#string-label) | String |  | 12 |
 | [`stat`](./Math_Equations.md) | Equation |  | 12 |
@@ -2138,7 +2160,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
@@ -2225,7 +2247,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |
 | [`stat`](./Math_Equations.md) | Equation |  | 11 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 11 |
@@ -2303,6 +2325,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `global_effect_next_fight`
 
+
+**Definition:** Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter.  
+**Total Count:** 11
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2333,7 +2359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 17 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
@@ -2440,7 +2466,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
@@ -2598,7 +2624,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
@@ -2685,7 +2711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`stat`](./Math_Equations.md) | Equation |  | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
@@ -2763,6 +2789,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `leave_party_temporarily`
 
+
+**Definition:** Event Action: Removes a character from the active team until the next hub area.  
+**Total Count:** 9
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2795,7 +2825,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
@@ -2940,7 +2970,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 5 |
@@ -3114,7 +3144,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 6 |
@@ -3193,6 +3223,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `next_event_from_set`
 
+
+**Definition:** Event Action: Chains immediately into a randomly selected subsequent story event.  
+**Total Count:** 6
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3221,7 +3255,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 5 |
 
 </details>
@@ -3239,7 +3273,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 5 |
@@ -3325,7 +3359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
@@ -3411,7 +3445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
@@ -3503,7 +3537,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
@@ -3606,7 +3640,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 3 |
@@ -3705,7 +3739,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `outcome`
 
-> **Definition:** Event Object: Logic and text executed after selecting a specific dialog option.
 
 
 <details>
@@ -3728,6 +3761,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `party_permanent_stats_exclude_self`
+
+
+**Definition:** Event Reward: Permanently modifies stats for all party members except the one who initiated the action.  
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary>
@@ -3826,7 +3863,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | `count` | Number | Quantity. | 3 |
 
 </details>
@@ -3847,7 +3884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
@@ -3930,7 +3967,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
@@ -4198,7 +4235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
@@ -4275,6 +4312,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `party_permanent_stats`
 
+
+**Definition:** Event Reward: Permanently increases (or decreases) the core stats of all party members.  
+**Total Count:** 3
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4291,6 +4332,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `party_random_mutation_from_set`
+
+
+**Definition:** Event Reward: Applies a random mutation to the entire party from a specific pool.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
@@ -4322,7 +4367,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
@@ -4470,7 +4515,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | Mixed |  | 2 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 2 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
@@ -4558,7 +4603,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
@@ -4662,7 +4707,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`stat`](./Math_Equations.md) | Equation |  | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
 | `ally_ambush_next_fights` | Number |  | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 0 |
@@ -4764,7 +4809,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -4892,7 +4937,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -4979,7 +5024,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5086,7 +5131,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -5360,7 +5405,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5467,7 +5512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -5551,7 +5596,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5761,7 +5806,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -5848,7 +5893,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -5934,7 +5979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6383,7 +6428,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6469,7 +6514,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6641,7 +6686,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -6832,7 +6877,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -6919,7 +6964,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7005,7 +7050,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7111,7 +7156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7202,7 +7247,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7293,7 +7338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7384,7 +7429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7495,7 +7540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7717,7 +7762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7803,7 +7848,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -7880,7 +7925,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `future`
 
-> **Definition:** Event Node: Story branch or dialog option representing the 'Future' action.
 
 
 <details>
@@ -7905,6 +7949,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `gain_clone_familiar`
 
+
+**Definition:** Event Action: Adds a clone of a character to the party as a familiar.  
+**Total Count:** 1
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7921,6 +7969,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `gain_familiar`
+
+
+**Definition:** Event Action: Adds a specific familiar to the party.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
@@ -7947,7 +7999,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -8236,7 +8288,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -8322,7 +8374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -8408,7 +8460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -8579,7 +8631,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -8685,7 +8737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
@@ -8772,7 +8824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -8858,7 +8910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | `fixed_chance` | Number |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -8946,7 +8998,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -9295,7 +9347,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -9613,7 +9665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
@@ -9699,7 +9751,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
@@ -9784,7 +9836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -9870,7 +9922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
@@ -10208,6 +10260,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `random_chance`
 
+
+**Definition:** Event Logic: Executes the nested outcome based on a percentage roll.  
+**Total Count:** 2
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -10362,7 +10418,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | `fixed_chance` | Number |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -10450,7 +10506,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -10643,7 +10699,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -10808,7 +10864,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
@@ -11173,7 +11229,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -11259,7 +11315,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -11345,7 +11401,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
@@ -11491,7 +11547,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -11577,7 +11633,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -11663,7 +11719,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -11770,7 +11826,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -11962,7 +12018,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -12107,7 +12163,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 0 |
@@ -12184,7 +12240,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -12356,7 +12412,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -12816,7 +12872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -12902,7 +12958,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
@@ -12988,7 +13044,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |

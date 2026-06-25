@@ -15,7 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 890 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 17 |
 | [`boss`](./Map_Generation_and_Routing.md#context-boss) | Object |  | 39 |
 | [`type`](./Enums.md#enum-type) | Enum | Classification type. | 27 |
 | [`easy`](./Arrays.md#array-easy) | Array |  | 20 |
@@ -891,7 +891,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `battle`
 
-> **Definition:** | Field Key | Inferred Type | Example Values | Definition | | :--- | :--- | :--- | :--- | | `type` | Enum/String | `battle` | Classification type. |
 
 
 <details>

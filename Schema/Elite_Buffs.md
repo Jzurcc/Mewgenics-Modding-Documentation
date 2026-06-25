@@ -37,7 +37,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 54
+**Total Count:** 2805
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -73,7 +73,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 5
+**Total Count:** 2166
 
 > **Referenced by:** [`DamageNeighborsAfterMove`](#object-damageneighborsaftermove), [`MeleeRevengeDamage`](#object-meleerevengedamage), [`RevengeDamage`](#object-revengedamage)
 
@@ -90,7 +90,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 4
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -109,13 +109,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 3
+**Total Count:** 73
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 36 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 3 |
 | `knockback` | Integer |  | 2 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 1 |
   | [`AddDamageToElementDamage`](#adddamagetoelementdamage) | Object | Applies or references the 'AddDamageToElementDamage' effect/state. | 0 |
@@ -132,7 +132,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 5
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -151,13 +151,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 4
 
 > **Referenced by:** [`passives`](#object-passives)
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 4 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 6 |
 | [`elements`](./Arrays.md#array-elements) | Array |  | 2 |
 | [`type`](./Enums.md#enum-type) | Enum |  | 2 |
 | `damage` | Integer |  | 2 |
@@ -171,7 +171,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 31
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -189,7 +189,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 38
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -207,7 +207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 57
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -227,7 +227,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 2
+**Total Count:** 14
 
 > **Referenced by:** [`ChanceToRevive`](#object-chancetorevive)
 
@@ -249,7 +249,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 248
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -277,7 +277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 8
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -294,7 +294,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 3
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -310,7 +310,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 9
 
 > **Referenced by:** [`passives`](#object-passives)
 
@@ -354,7 +354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 1
+**Total Count:** 40
 
 > **Referenced by:** [`passives`](#object-passives)
 

@@ -39,14 +39,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `graphics`
 
-**Definition:** Examples: `{ ... }`
+**Definition:** Examples: `{ ... }`  
 
 
 
 <details>
 <summary><b>Expand</b></summary>
 
-**Total Count:** 14
+**Total Count:** 2609
 
 > **Referenced by:** [`ROOT`](#object-root)
 
@@ -64,8 +64,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `meta`
 
-**Definition:** Examples: `{ ... }`
-**Total Count:** 14
+**Definition:** Examples: `{ ... }`  
+**Total Count:** 2374
 
 
 
@@ -86,7 +86,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `stat_mods`
 
-**Definition:** Examples: `{ ... }`
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 13
 
 
@@ -113,7 +113,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `ability_groups`
 
-**Definition:** Examples: `{ ... }`
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 12
 
 
@@ -137,7 +137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `innate_passives`
 
-**Definition:** Examples: `{ ... }`
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 4
 
 
@@ -159,7 +159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ### Object: `innate_items`
 
-**Definition:** Examples: `{ ... }`
+**Definition:** Examples: `{ ... }`  
 **Total Count:** 2
 
 
