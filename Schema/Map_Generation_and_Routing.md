@@ -15,6 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 883 |
 | [`rare`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 673 |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 66 |
 | [`boss`](./Map_Generation_and_Routing.md#context-boss) | Object |  | 63 |
@@ -145,7 +146,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`choose_one`](./Arrays.md#array-choose_one) | Array |  | 1 |
 | [`nemesis`](./Arrays.md#array-nemesis) | Array |  | 1 |
 | [`battle`](./Map_Generation_and_Routing.md#object-battle) | Object | | Field Key | Inferred Type | Example Values | Definition | | :--- | :--- | :--- | :--- | | `type` | Enum/String | `battle` | Classification type. | | 0 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 

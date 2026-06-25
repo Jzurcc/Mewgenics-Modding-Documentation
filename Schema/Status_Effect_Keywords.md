@@ -15,6 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
 | `icon_frame` | Integer |  | 128 |
 | [`tooltip_stackless`](./Strings.md#string-tooltip_stackless) | String |  | 76 |
 | [`tooltip_stacks`](./Strings.md#string-tooltip_stacks) | String |  | 69 |
@@ -27,7 +28,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip_reference_applier`](./Strings.md#string-tooltip_reference_applier) | String |  | 3 |
 | [`tooltip_stackless_neg`](./Strings.md#string-tooltip_stackless_neg) | String |  | 3 |
 | [`tooltip_stackless_pos`](./Strings.md#string-tooltip_stackless_pos) | String |  | 2 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 

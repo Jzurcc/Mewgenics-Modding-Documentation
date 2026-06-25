@@ -18,6 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`editor`](#object-editor) | Object |  | 578 |
 | [`object`](./Enums.md#enum-object) | Enum |  | 545 |
 | `value` | Float |  | 485 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
 | `early_spawn` | Boolean |  | 10 |
 | [`orientation`](./Enums.md#enum-orientation) | Enum |  | 10 |
 | [`tag_location`](./Enums.md#enum-tag_location) | Enum |  | 5 |
@@ -28,7 +29,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reserved`](./Enums.md#enum-reserved) | Enum |  | 1 |
 | [`utility`](./Enums.md#enum-utility) | Enum |  | 1 |
 | [`weather_element_alt`](#object-weather_element_alt) | Object |  | 1 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
@@ -50,11 +50,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | `category` | Integer |  | 577 |
 | `paint` | Boolean |  | 576 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 538 |
 | `subcategory` | Integer |  | 35 |
 | [`image_tint`](./Arrays.md#array-image_tint) | Array |  | 3 |
 | `layer` | `Number` |  | 3 |
 | [`image`](./Arrays.md#array-image) | Array |  | 2 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 

@@ -15,6 +15,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 206 |
 | [`hard`](#object-hard) | Object |  | 42 |
 | `bonus_itemroll_luck` | Integer |  | 16 |
 | `boss_health_multiplier` | Float |  | 16 |
@@ -24,7 +25,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `food_multiplier` | Float |  | 16 |
 | `wallet_size` | Integer |  | 16 |
 | `boss_elite_buffs` | Integer |  | 14 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 

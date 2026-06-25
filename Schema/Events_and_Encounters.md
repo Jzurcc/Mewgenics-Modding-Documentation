@@ -16,6 +16,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 1067 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 883 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | `cha` | Number |  | 468 |
 | [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
@@ -76,7 +77,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_heal` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -96,6 +96,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1364 |
 | [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
@@ -136,7 +137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `weight` | `Number` | Probability weight for this outcome. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -156,6 +156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 658 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 609 |
 | `set_frame` | `Number` |  | 151 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
@@ -215,7 +216,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `spd` | Number |  | 1 |
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -235,6 +235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 705 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 613 |
 | `set_frame` | `Number` |  | 180 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Enum/String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 113 |
@@ -314,7 +315,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -334,6 +334,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 464 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
 | `set_frame` | `Number` |  | 285 |
@@ -401,7 +402,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `trigger_butterfly_effect` | `Number` |  | 1 |
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -422,6 +422,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 249 |
 | `set_frame` | `Number` |  | 219 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
@@ -452,7 +453,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `spd` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -477,6 +477,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`subject_clip`](./Enums.md#enum-subject_clip) | Enum |  | 214 |
 | [`subject_frame`](./Enums.md#enum-subject_frame) | Enum |  | 214 |
 | [`title`](./Strings.md#string-title) | String |  | 214 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 214 |
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum |  | 9 |
 | `different_from_last_x_cats` | Number |  | 3 |
 | `subject_frame_inner` | Number |  | 3 |
@@ -486,7 +487,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `choose_cat_with_most_injuries` | Boolean |  | 1 |
 | `choose_cat_with_parasite` | Boolean |  | 1 |
 | `set_frame` | `Number` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -507,6 +507,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | `Array` | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 220 |
 | [`options`](./Events_and_Encounters.md#object-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 208 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
@@ -544,7 +545,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requires_flag`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Prerequisite: Must meet this condition. | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -565,6 +565,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 144 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
@@ -809,7 +810,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`withstand`](./Events_and_Encounters.md#context-withstand) | Object | Event Node: Story branch or dialog option representing the \'Withstand\' action. | 1 |
 | [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out) | Object | Event Node: Story branch or dialog option representing the \'Yank It Out\' action. | 1 |
 | [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle) | Object | Event Node: Story branch or dialog option representing the \'Yellow Needle\' action. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -862,7 +862,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 133 |
 
 </details>
 
@@ -909,6 +909,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 175 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 125 |
@@ -919,7 +920,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 19 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -943,6 +943,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 59 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 57 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 56 |
@@ -962,7 +963,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -986,6 +986,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 43 |
 | [`stat`](./Math_Equations.md) | Equation |  | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
@@ -1004,7 +1005,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1048,9 +1048,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`pool`](./Enums.md#enum-pool) | Enum |  | 40 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
 | [`restrict`](./Arrays.md#array-restrict) | Array |  | 17 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1071,6 +1071,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Array` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 20 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
@@ -1083,7 +1084,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1110,6 +1110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 30 |
@@ -1124,7 +1125,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1148,6 +1148,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 63 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
@@ -1177,7 +1178,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_heal` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1231,7 +1231,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 |
 
 </details>
 
@@ -1255,6 +1255,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 66 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
@@ -1271,7 +1272,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1293,7 +1293,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 42 |
 | `set_frame` | `Number` |  | 3 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 
 </details>
 
@@ -1313,9 +1313,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 21 |
 | `skip_result_screen` | Boolean |  | 21 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1397,6 +1397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
@@ -1411,7 +1412,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1438,6 +1438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
 | [`stat`](./Math_Equations.md) | Equation |  | 14 |
@@ -1451,7 +1452,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1478,6 +1478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |
 | [`label`](./Strings.md#string-label) | String |  | 12 |
@@ -1492,7 +1493,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1512,8 +1512,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 16 |
 | [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1540,6 +1540,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
@@ -1554,7 +1555,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1581,6 +1581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |
@@ -1595,7 +1596,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1644,6 +1644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 17 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |
@@ -1658,7 +1659,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1711,6 +1711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `set_frame` | Number |  | 36 |
 | [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`label`](./Strings.md#string-label) | String |  | 7 |
@@ -1731,7 +1732,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_heal` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1804,6 +1804,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 18 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
@@ -1818,7 +1819,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1845,6 +1845,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
@@ -1859,7 +1860,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1900,7 +1900,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -1999,6 +1999,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 10 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
@@ -2013,7 +2014,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2046,6 +2046,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 6 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`stat`](./Math_Equations.md) | Equation |  | 6 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
@@ -2053,7 +2054,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2081,6 +2081,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
@@ -2095,7 +2096,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2138,7 +2138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 8 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 
 </details>
 
@@ -2165,6 +2165,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
@@ -2178,7 +2179,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2205,6 +2205,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 13 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
@@ -2218,7 +2219,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2246,6 +2246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 9 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
@@ -2260,7 +2261,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2297,11 +2297,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2352,6 +2352,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
@@ -2365,7 +2366,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2411,7 +2411,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`weather_roll`](./Arrays.md#array-weather_roll) | Array |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -2489,8 +2489,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2526,11 +2526,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2578,6 +2578,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
@@ -2590,7 +2591,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2630,7 +2630,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `count` | Number | Quantity. | 11 |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 |
 
 </details>
 
@@ -2733,13 +2733,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`label`](./Strings.md#string-label) | String |  | 2 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2809,6 +2809,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
@@ -2819,7 +2820,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2873,6 +2873,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
@@ -2883,7 +2884,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2970,9 +2970,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | `chance` | Number | Probability weight for this outcome. | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Enum/String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3013,7 +3013,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -3055,7 +3055,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -3116,7 +3116,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -3170,6 +3170,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -3178,7 +3179,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3258,6 +3258,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -3267,7 +3268,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3299,6 +3299,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -3307,7 +3308,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3363,6 +3363,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -3372,7 +3373,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3399,7 +3399,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -3506,7 +3506,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -3536,6 +3536,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -3546,7 +3547,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3598,6 +3598,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -3612,7 +3613,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 | `weight` | `Number` | Probability weight for this outcome. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3644,6 +3644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -3652,7 +3653,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3692,7 +3692,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -3766,6 +3766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -3777,7 +3778,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3807,6 +3807,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -3817,7 +3818,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3847,6 +3847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -3857,7 +3858,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3897,7 +3897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -3937,7 +3937,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -4000,7 +4000,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -4038,7 +4038,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -4070,6 +4070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4078,7 +4079,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4110,6 +4110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4118,7 +4119,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4158,7 +4158,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -4190,6 +4190,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4198,7 +4199,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4260,7 +4260,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -4292,6 +4292,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4301,7 +4302,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4331,6 +4331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -4341,7 +4342,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4373,6 +4373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4381,7 +4382,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4436,6 +4436,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -4450,7 +4451,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4482,6 +4482,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -4496,7 +4497,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4528,6 +4528,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -4542,7 +4543,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4574,6 +4574,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -4588,7 +4589,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4641,6 +4641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -4651,7 +4652,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4840,6 +4840,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4848,7 +4849,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4880,6 +4880,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4888,7 +4889,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4965,6 +4965,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -4973,7 +4974,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5183,7 +5183,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -5213,6 +5213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -5223,7 +5224,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5253,6 +5253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -5263,7 +5264,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5295,6 +5295,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -5303,7 +5304,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5341,7 +5341,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -5373,6 +5373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -5381,7 +5382,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5436,6 +5436,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
@@ -5445,7 +5446,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5477,6 +5477,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -5485,7 +5486,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5517,6 +5517,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | `fixed_chance` | Number |  | 1 |
@@ -5527,7 +5528,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5557,6 +5557,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -5568,7 +5569,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5809,7 +5809,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -5841,6 +5841,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -5849,7 +5850,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5889,7 +5889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -5998,7 +5998,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6030,6 +6030,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -6038,7 +6039,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6069,6 +6069,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -6076,7 +6077,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6108,6 +6108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -6116,7 +6117,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6147,6 +6147,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -6154,7 +6155,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6194,7 +6194,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6239,7 +6239,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6279,7 +6279,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6341,7 +6341,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6397,6 +6397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | `fixed_chance` | Number |  | 1 |
@@ -6407,7 +6408,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6439,6 +6439,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -6448,7 +6449,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6511,7 +6511,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6541,6 +6541,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -6551,7 +6552,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6670,6 +6670,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
@@ -6682,7 +6683,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6722,7 +6722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6812,7 +6812,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -6910,6 +6910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -6920,7 +6921,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6952,6 +6952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -6960,7 +6961,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6990,6 +6990,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -7001,7 +7002,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7100,6 +7100,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7108,7 +7109,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7140,6 +7140,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7148,7 +7149,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7180,6 +7180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7188,7 +7189,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7242,6 +7242,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -7252,7 +7253,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7292,7 +7292,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -7347,6 +7347,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7355,7 +7356,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7449,6 +7449,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
@@ -7456,7 +7457,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7488,6 +7488,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7496,7 +7497,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7536,7 +7536,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -7568,6 +7568,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7576,7 +7577,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7616,7 +7616,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -7826,7 +7826,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 |
 
 </details>
 
@@ -7948,6 +7948,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
@@ -7958,7 +7959,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7990,6 +7990,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -7998,7 +7999,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `next_event_bonus` | Number |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -8030,6 +8030,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
@@ -8039,7 +8040,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
