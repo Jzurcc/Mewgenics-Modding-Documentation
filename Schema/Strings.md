@@ -14,8 +14,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"{itemname}"` | |
 | `""` | |
 | `"ABILITY_STARTER_PLACEHOLDER_NAME"` | |
@@ -4097,8 +4097,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `""` | |
 | `"hewind"` | |
 | `"ABILITY_SWAP_DESC"` | |
@@ -8042,8 +8042,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"EVENT_MIRAGE_REW1"` | |
 | `"EVENT_JACK_NOTENOUGHMONEY"` | |
 | `"EVENT_JACK_REW4"` | |
@@ -9632,8 +9632,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"ENEMY_DESTROYER2_DESC"` | |
 | `"ENEMY_DINOLOVER_DESC"` | |
 | `"ENEMY_FETUSGUSHER_DESC"` | |
@@ -10180,8 +10180,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"EVENT_EXAMINE_ANSW"` | |
 | `"EVENT_IGNORE_ANSW"` | |
 | `"EVENT_LEAVE_ANSW"` | |
@@ -10412,8 +10412,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"misc"` | |
 | `"buff"` | |
 | `"defense"` | |
@@ -10441,8 +10441,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"EVENT_MYSTERIOUSTOMB_NAME"` | |
 | `"EVENT_BUTCH_NAME"` | |
 | `"EVENT_MONKEYPAW_NAME"` | |
@@ -10629,8 +10629,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_AMMO_DESC"` | |
 | `"KEYWORD_ATTRACTION_DESC"` | |
 | `"KEYWORD_AUTOREVIVE_DESC"` | |
@@ -10714,8 +10714,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"FAVOR_BUTCH_UPGRADE"` | |
 | `"FAVOR_TRACY_FOOD"` | |
 | `"FAVOR_GRINDER_UPGRADE"` | |
@@ -10752,8 +10752,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"2"` | |
 | `"Cat"` | |
 | `"Down"` | |
@@ -10809,8 +10809,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"Default"` | |
 | `"Normal"` | |
 | `"Rage"` | |
@@ -10866,8 +10866,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_CONFUSION_DESC_STACKLESS"` | |
 | `"KEYWORD_ALPHA_DESC_STACKLESS"` | |
 | `"KEYWORD_ATTRACTION_DESC_STACKLESS"` | |
@@ -10935,8 +10935,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"chaos_ending_good"` | |
 | `"king_ending_good"` | |
 | `"time_machine"` | |
@@ -10970,8 +10970,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` | |
 | `"EVENT_LOCKEDDOOR_PROMPT1"` | |
 | `"EVENT_LOCKEDDOOR_PROMPT2"` | |
@@ -10999,8 +10999,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"standard_nodes.gon"` | |
 
 </details>
@@ -11016,8 +11016,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"COMBAT_POPUP_RECHARGED"` | |
 | `""` | |
 | `"INJURY_NAME_BROKENLEG"` | |
@@ -11046,8 +11046,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"CAT_CLASS_BUTCHER_DESC"` | |
 | `"CAT_CLASS_COLORLESS_DESC"` | |
 | `"CAT_CLASS_DRUID_DESC"` | |
@@ -11076,8 +11076,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"Rage"` | |
 | `""` | |
 | `"Angry"` | |
@@ -11103,8 +11103,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_ALLSTATSDOWN_DESC"` | |
 | `"KEYWORD_CHADOWN_DESC"` | |
 | `"KEYWORD_CONDOWN_DESC"` | |
@@ -11132,8 +11132,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"` | |
 | `"KEYWORD_BLIND_DESC_STACKLESS"` | |
 | `"KEYWORD_BONUSMOVE_DESC"` | |
@@ -11161,8 +11161,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_ALLSTATSDOWN_NAME"` | |
 | `"KEYWORD_CHADOWN_NAME"` | |
 | `"KEYWORD_CONDOWN_NAME"` | |
@@ -11188,8 +11188,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"PASSIVE_BARBED2_MULTICLASS_DESC"` | |
 | `"PASSIVE_BARBED_MULTICLASS_DESC"` | |
 | `"PASSIVE_GRAPPLINGHOOK2_MULTICLASS_DESC"` | |
@@ -11214,8 +11214,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"CAT_NAME_MOD_AMOEBA"` | |
 | `"CAT_NAME_MOD_COOL"` | |
 | `"CAT_NAME_MOD_DWARF"` | |
@@ -11240,8 +11240,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_ALLSTATSUP_DESC"` | |
 | `"KEYWORD_CHAUP_DESC"` | |
 | `"KEYWORD_CONUP_DESC"` | |
@@ -11266,8 +11266,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1"` | |
 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2"` | |
 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3"` | |
@@ -11291,8 +11291,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"Toss"` | |
 | `"BreakShortCircuit"` | |
 | `"Escape"` | |
@@ -11314,8 +11314,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"?"` | |
 | `"0-25"` | |
 | `"0-50"` | |
@@ -11335,8 +11335,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"digUp"` | |
 | `"howl"` | |
 
@@ -11353,8 +11353,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"COMBAT_POPUP_BRAINSTORM"` | |
 | `"COMBAT_POPUP_RELOAD"` | |
 | `"COMBAT_POPUP_REPAIRED"` | |
@@ -11372,8 +11372,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_ATTRACTION_REF"` | |
 | `"KEYWORD_LEECHES_NAME_APPLIER"` | |
 | `"KEYWORD_MANALEECHES_NAME_APPLIER"` | |
@@ -11391,8 +11391,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_ATTRACTION_DESC_REF"` | |
 | `"KEYWORD_LEECHES_DESC_APPLIER"` | |
 | `"KEYWORD_MANALEECHES_DESC_APPLIER"` | |
@@ -11410,8 +11410,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_DAMAGEDOWN_DESC_STACKLESS"` | |
 | `"KEYWORD_MOVEMENTDOWN_DESC_STACKLESS"` | |
 | `"KEYWORD_TEMPINITDOWN_DESC"` | |
@@ -11429,8 +11429,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"bat"` | |
 | `"rally"` | |
 
@@ -11447,8 +11447,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"events/GlowingBear"` | |
 | `"putalevelhere.lvl"` | |
 
@@ -11465,8 +11465,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"x10"` | |
 | `"x2"` | |
 
@@ -11483,8 +11483,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"empty.png"` | |
 
 </details>
@@ -11500,8 +11500,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"shootPrimed"` | |
 
 </details>
@@ -11517,8 +11517,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"KEYWORD_DAMAGEUP_DESC_STACKLESS"` | |
 | `"KEYWORD_MOVEMENTUP_DESC_STACKLESS"` | |
 
@@ -11535,8 +11535,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `""` | |
 
 </details>
@@ -11552,8 +11552,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `""` | |
 
 </details>
@@ -11569,8 +11569,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"durability"` | |
 
 </details>
@@ -11586,8 +11586,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"Unknown"` | |
 
 </details>
@@ -11603,8 +11603,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"TEAMNAME_FORMAT"` | |
 
 </details>
@@ -11620,8 +11620,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"TEAMNAME_FORMAT2"` | |
 
 </details>
@@ -11637,8 +11637,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"attack"` | |
 
 </details>
@@ -11652,8 +11652,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"special/ratlevels"` | |
 
 </details>
@@ -11669,8 +11669,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"cats"` | |
 
 </details>
@@ -11686,8 +11686,8 @@ This document provides exhaustive lists of all pure string values found in the b
 
 **Confirmed Values:**
 
-| Value | Definition |
 | :--- | :--- |
+| Value | Definition |
 | `"!!!"` | |
 
 </details>

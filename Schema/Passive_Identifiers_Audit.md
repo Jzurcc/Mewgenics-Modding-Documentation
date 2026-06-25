@@ -9,8 +9,8 @@
 
 These identifiers are missing from the `passive_pool` enum, but they DO exist as property keys or contexts in the listed schema sections. This might indicate they are hardcoded structures rather than enum values.
 
-| Identifier | Found In Sections |
 | :--- | :--- |
+| Identifier | Found In Sections |
 | `AIControlNextTurn` | Items & Equipment, Miscellaneous |
 | `AIFavorLowHealth` | Abilities & Spells, Miscellaneous |
 | `AOEBonus` | Items & Equipment, Miscellaneous |
@@ -1602,8 +1602,8 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 
 These identifiers were not found in `passive_pool` OR anywhere as a property key in the entire Master Schema. They may be totally undocumented, deprecated, or solely referenced by the engine in a way the schema generator cannot currently extract.
 
-| Missing Identifier |
 | :--- |
+| Missing Identifier |
 | `AbilityCritChance` |
 | `AbilityDodgeChance` |
 | `AbilityOnEnemyCastSpell` |

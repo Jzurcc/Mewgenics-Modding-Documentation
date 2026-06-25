@@ -9,8 +9,8 @@ These identifiers are proven to exist or work in the engine but are completely a
 <details>
 <summary><b>View All Hidden Identifiers</b></summary>
 
-| Identifier |
 | :--- |
+| Identifier |
 | `AbilityCritChance` |
 | `AbilityDodgeChance` |
 | `AbilityOnEnemyCastSpell` |

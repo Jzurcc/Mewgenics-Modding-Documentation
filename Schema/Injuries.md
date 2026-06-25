@@ -2,7 +2,6 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-
 ## Injuries
 
 > **Associated Files:** `data/injuries.gon`
@@ -16,19 +15,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`stats`](#object-stats) | Object |  | 982 |
+| `id` | Integer |  | 16 |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum |  | 13 |
 | [`text`](./Strings.md#string-text) | String |  | 13 |
-| `id` | Integer |  | 16 |
-| [`stats`](#object-stats) | Object |  | 982 |
 | [`scars`](#object-scars) | Object |  | 10 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `stats`
-
 
 
 **Definition:** Core character metrics (Health, Strength, etc.).  
@@ -43,19 +41,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | `con` | Integer |  | 65 |
-| `lck` | Integer |  | 29 |
+| `spd` | Integer |  | 53 |
 | `cha` | Integer |  | 46 |
-| `dex` | Integer |  | 34 |
 | `int` | Integer |  | 46 |
 | `str` | Integer |  | 42 |
-| `spd` | Integer |  | 53 |
+| `dex` | Integer |  | 34 |
+| `lck` | Integer |  | 29 |
 
 </details>
 
 ---
 
 ### Object: `scars`
-
 
 
 **Definition:** No definition provided.  

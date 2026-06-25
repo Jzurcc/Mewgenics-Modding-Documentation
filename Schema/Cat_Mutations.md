@@ -15,28 +15,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 981 |
 | [`desc`](./Strings.md#string-desc) | String | Examples: `"MUTATION_BODY_309_DESC", "MUTATION_BODY_312_DESC", "MUTATION_BODY_301_DESC"` | 5441 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `common, melted, animal` | 981 |
 | `cha` | Number | Examples: `2, -1, 1` | 468 |
 | `spd` | Number | Examples: `1, -1, -2` | 424 |
-| `int` | Number | Examples: `2, -1, 1` | 401 |
-| `con` | Number | Examples: `-2, -3, 1` | 416 |
-| `str` | Number | Examples: `2, -1, 1` | 337 |
-| `lck` | Number | Examples: `2, -1, 1` | 351 |
-| `dex` | Number | Examples: `2, -1, -2` | 301 |
 | `shield` | Number | Examples: `12, 5, 10` | 422 |
+| `con` | Number | Examples: `-2, -3, 1` | 416 |
+| `int` | Number | Examples: `2, -1, 1` | 401 |
+| `lck` | Number | Examples: `2, -1, 1` | 351 |
+| `str` | Number | Examples: `2, -1, 1` | 337 |
+| `dex` | Number | Examples: `2, -1, -2` | 301 |
 | `divine_shield` | Number | Examples: `1` | 54 |
-| [`override_move`](./Enums.md#enum-override_move) | Enum | Examples: `BasicJump` | 4 |
 | [`attack`](./Enums.md#enum-attack) | Enum | Examples: `FetusSpit` | 26 |
 | `speed` | Number | Examples: `-4` | 6 |
+| [`override_move`](./Enums.md#enum-override_move) | Enum | Examples: `BasicJump` | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `passives`
-
 
 
 **Definition:** Object listing intrinsic passive modifiers.  
@@ -59,7 +58,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AddStatusToBasicAttack`
 
 
-
 **Definition:** Injects a status effect payload that applies whenever the character performs a basic attack.  
 **Total Count:** 52
 
@@ -80,7 +78,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PassiveWhenAffectedByElement`
 
 
-
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 12
 
@@ -92,15 +89,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`element`](./Enums.md#enum-element) | Enum | Examples: `water` | 36 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `effects`
-
 
 
 **Definition:** Non-damaging status applications and logic triggers executed on impact.  
@@ -123,7 +119,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RevengeDamage`
 
 
-
 **Definition:** Reaction trigger: Deals damage to the attacker when hit.  
 **Total Count:** 9
 
@@ -135,16 +130,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 10 |
 | `damage` | Number | Examples: `0` | 16 |
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 10 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `MeleeRevengeDamage`
-
 
 
 **Definition:** Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack.  
@@ -158,18 +152,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `knockback` | Number | Examples: `2, 1` | 48 |
-| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 20 |
 | `damage` | Number | Examples: `0` | 44 |
+| [`type`](./Enums.md#enum-type) | Enum | Examples: `status` | 20 |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `SpawnThingOnDamage`
-
 
 
 **Definition:** Applies or references the 'SpawnThingOnDamage' effect/state.  
@@ -184,15 +177,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `CharmedFlea, SmallRock, Coin` | 76 |
-| `chance` | Number | Examples: `20, 100, 10` | 24 |
 | `good` | Boolean | Examples: `false` | 40 |
+| `chance` | Number | Examples: `20, 100, 10` | 24 |
 
 </details>
 
 ---
 
 ### Object: `AddStatusToBasicMeleeAttack`
-
 
 
 **Definition:** Examples: `{ ... }`  
@@ -215,7 +207,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnTookDamage`
 
 
-
 **Definition:** Event Trigger: Applies nested statuses when took damage.  
 **Total Count:** 6
 
@@ -234,7 +225,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnBegin`
-
 
 
 **Definition:** Event Trigger: Applies nested statuses to each turn begin.  
@@ -257,7 +247,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `RandomStatusFromPool`
 
 
-
 **Definition:** Selects and applies a random status effect from the provided nested object.  
 **Total Count:** 4
 
@@ -278,7 +267,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `SpawnEachTurn`
 
 
-
 **Definition:** Applies or references the 'SpawnEachTurn' effect/state.  
 **Total Count:** 4
 
@@ -290,8 +278,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 34 |
 | `chance` | Number | Examples: `50, 5, 25` | 40 |
+| [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup, CharmedFly, CharmedMaggot` | 34 |
 | `good` | Boolean | Examples: `false` | 4 |
 
 </details>
@@ -299,7 +287,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusEachTurnEnd`
-
 
 
 **Definition:** Applies or references the 'StatusEachTurnEnd' effect/state.  
@@ -320,7 +307,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `SpawnOnBattleStartRandomEmptyTile`
-
 
 
 **Definition:** Applies or references the 'SpawnOnBattleStartRandomEmptyTile' effect/state.  
@@ -344,7 +330,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_RandomChance`
 
 
-
 **Definition:** Conditional trigger: Executes nested logic based on a flat percentage random roll.  
 **Total Count:** 2
 
@@ -365,7 +350,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusEveryXSpellCasts`
 
 
-
 **Definition:** Applies or references the 'StatusEveryXSpellCasts' effect/state.  
 **Total Count:** 2
 
@@ -377,15 +361,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `stacks` | Number | Examples: `4, 8` | 16 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `StatusKilledCharacters`
-
 
 
 **Definition:** Event Trigger: Applies nested statuses to killed characters.  
@@ -405,7 +388,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnBattleEnd`
-
 
 
 **Definition:** Applies the nested status effects when the encounter finishes.  
@@ -428,7 +410,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnEndMove`
 
 
-
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
 **Total Count:** 2
 
@@ -446,7 +427,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnTookDamageFromAbility`
-
 
 
 **Definition:** Event Trigger: Applies statuses when taking damage from an ability.  
@@ -469,7 +449,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
-
 **Definition:** AI Trigger: Executes an ability when a character with a specific tag moves adjacent.  
 **Total Count:** 1
 
@@ -482,15 +461,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Examples: `move` | 10 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 10 |
 | `range` | Number | Examples: `2` | 10 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Examples: `food` | 10 |
 
 </details>
 
 ---
 
 ### Object: `AddDamageToElementDamage`
-
 
 
 **Definition:** Applies or references the 'AddDamageToElementDamage' effect/state.  
@@ -504,15 +482,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 18 |
 | `damage` | Number | Examples: `1` | 18 |
+| [`element`](./Enums.md#enum-element) | Enum | Examples: `Electric` | 18 |
 
 </details>
 
 ---
 
 ### Object: `AddTemporaryEffectsToBasicAttack`
-
 
 
 **Definition:** Applies the 'AddTemporaryEffectsToBasicAttack' effect.  
@@ -533,7 +510,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `BackflipWhenTargeted`
-
 
 
 **Definition:** No definition provided.  
@@ -557,7 +533,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ChanceToBackflip`
 
 
-
 **Definition:** Applies or references the 'ChanceToBackflip' effect/state.  
 **Total Count:** 1
 
@@ -579,7 +554,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ClassManaCostReduction`
 
 
-
 **Definition:** Applies or references the 'ClassManaCostReduction' effect/state.  
 **Total Count:** 1
 
@@ -591,15 +565,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`class`](./Enums.md#enum-class) | Enum | Examples: `Colorless` | 12 |
 | `reduction` | Number | Examples: `1` | 14 |
+| [`class`](./Enums.md#enum-class) | Enum | Examples: `Colorless` | 12 |
 
 </details>
 
 ---
 
 ### Object: `Conditional_FirstApplicationThisTurn`
-
 
 
 **Definition:** Conditional trigger: Executes nested logic only if this is the first time this specific effect has been applied this turn.  
@@ -622,7 +595,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `Conditional_GoodRoll`
 
 
-
 **Definition:** Conditional trigger: Executes nested logic based on a randomized favorable outcome probability.  
 **Total Count:** 1
 
@@ -634,15 +606,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `odds` | Number | Examples: `25` | 72 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `CounterAttack`
-
 
 
 **Definition:** No definition provided.  
@@ -666,7 +637,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `KnockUpAndAway`
 
 
-
 **Definition:** Displaces the target vertically and horizontally away from the source.  
 **Total Count:** 1
 
@@ -688,7 +658,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `MoveWhenDamaged`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -700,15 +669,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `MoveOne` | 4 |
 | [`weights`](./Enums.md#enum-weights) | Enum | Examples: `chaotic` | 18 |
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Examples: `MoveOne` | 4 |
 
 </details>
 
 ---
 
 ### Object: `PassiveWhenAtFullMana`
-
 
 
 **Definition:** State Trigger: Grants nested passives when at full mana.  
@@ -731,7 +699,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `PassiveWhileHasStatus`
 
 
-
 **Definition:** Passive: Activates only while the character has the specified status.  
 **Total Count:** 1
 
@@ -743,15 +710,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | [`status`](./Enums.md#enum-status) | Enum | Examples: `Bleed` | 12 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `SpawnExtraThingsOnBattleStart`
-
 
 
 **Definition:** No definition provided.  
@@ -765,15 +731,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 3 |
 | [`object`](./Enums.md#enum-object) | Enum | Examples: `RandomPickup` | 19 |
+| [`number`](./Arrays.md#array-number) | Array | Examples: `[ 1 2 ]` | 3 |
 
 </details>
 
 ---
 
 ### Object: `StatusEachRoundEnd`
-
 
 
 **Definition:** Applies or references the 'StatusEachRoundEnd' effect/state.  
@@ -796,7 +761,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusEveryXSpellCastsEachTurn`
 
 
-
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 1
 
@@ -808,15 +772,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `stacks` | Number | Examples: `3` | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
 ---
 
 ### Object: `StatusIfDidntMove`
-
 
 
 **Definition:** Examples: `{ ... }`  
@@ -839,7 +802,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusIfUnusedMovePoints`
 
 
-
 **Definition:** Event Trigger: Applies nested statuses to if unused move points.  
 **Total Count:** 1
 
@@ -858,7 +820,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnAllyCatDeath`
-
 
 
 **Definition:** Event Trigger: Applies nested statuses when ally cat death.  
@@ -881,7 +842,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnCastSpell`
 
 
-
 **Definition:** Event Trigger: Applies nested statuses when cast spell.  
 **Total Count:** 1
 
@@ -900,7 +860,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnDie`
-
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  
@@ -923,7 +882,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `StatusOnEatFood`
 
 
-
 **Definition:** Event Trigger: Applies nested statuses when eat food.  
 **Total Count:** 1
 
@@ -942,7 +900,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `StatusOnKill`
-
 
 
 **Definition:** Event Trigger: Applies statuses when this action occurs.  

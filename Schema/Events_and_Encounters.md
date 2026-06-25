@@ -15,77 +15,74 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 1067 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| `cha` | Number |  | 468 |
+| [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| `spd` | Number |  | 424 |
+| `con` | Number |  | 416 |
+| `int` | Number |  | 401 |
+| `lck` | Number |  | 351 |
+| `str` | Number |  | 337 |
+| `dex` | Number |  | 301 |
 | [`intro`](./Events_and_Encounters.md#context-intro) | Object | Event Node: The initial text block when a story event first loads. | 216 |
 | [`main`](./Events_and_Encounters.md#context-main) | Object | Event Node: The central hub or recurring menu of a story event. | 214 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | `Number` |  | 36 |
+| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 18 |
 | [`label`](./Strings.md#string-label) | String |  | 16 |
+| [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 16 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 16 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 13 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 11 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 |
+| `weight` | `Number` | Probability weight for this outcome. | 10 |
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 8 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
+| [`requires_flag`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Prerequisite: Must meet this condition. | 5 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 4 |
 | `stat_max` | Number |  | 4 |
 | `stat_min` | Number |  | 4 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 3 |
 | [`open`](./Events_and_Encounters.md#context-open) | Object | Examples: `{ ... }` | 3 |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
 | `pick` | Object | Examples: `{ ... }` | 3 |
-| `cha` | Number |  | 468 |
-| `con` | Number |  | 416 |
+| [`smash`](./Events_and_Encounters.md#context-smash) | Object | Examples: `{ ... }` | 3 |
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 2 |
-| `int` | Number |  | 401 |
-| `lck` | Number |  | 351 |
-| `spd` | Number |  | 424 |
-| `str` | Number |  | 337 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
+| `ally_ambush_next_fights` | Number |  | 1 |
 | `buy2` | Object | Examples: `{ ... }` | 1 |
 | `buy3` | Object | Examples: `{ ... }` | 1 |
-| [`destroy`](./Events_and_Encounters.md#context-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 |
-| `dex` | Number |  | 301 |
-| [`examine`](./Events_and_Encounters.md#context-examine) | Object | Examples: `{ ... }` | 1 |
-| [`smash`](./Events_and_Encounters.md#context-smash) | Object | Examples: `{ ... }` | 3 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
-| `ally_ambush_next_fights` | Number |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
-| [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 1067 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 18 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 1 |
+| [`destroy`](./Events_and_Encounters.md#context-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 |
+| [`examine`](./Events_and_Encounters.md#context-examine) | Object | Examples: `{ ... }` | 1 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 3 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 16 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | `party_heal` | Number |  | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`requires_flag`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Prerequisite: Must meet this condition. | 5 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | Array | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| `set_frame` | `Number` |  | 36 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| `weight` | `Number` | Probability weight for this outcome. | 10 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `reward`
-
-
-
 
 
 **Definition:** Event Object: Story branch or dialog option representing the 'Reward' action.  
@@ -99,56 +96,53 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| `ambush_next_basic_fights` | Number |  | 1 |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 24 |
 | [`common`](./Events_and_Encounters.md#object-common) | Object | Event Node: Story branch or dialog option representing the 'Common' action. | 633 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 1 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 13 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 5 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| `party_heal` | Number |  | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 4 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 73 |
-| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 73 |
 | `set_frame` | `Number` |  | 54 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 24 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 13 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 10 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 |
-| [`spin`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
+| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| `next_event_bonus` | Number |  | 5 |
 | [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 4 |
+| [`spin`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
+| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 |
+| `ambush_next_basic_fights` | Number |  | 1 |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 1 |
+| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `party_heal` | Number |  | 1 |
+| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `weight` | `Number` | Probability weight for this outcome. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `common`
-
-
-
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Common' action.  
@@ -162,75 +156,72 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`damage`](./Arrays.md#array-damage) | Array | Event Node: Story branch or dialog option representing the 'Damage' action. | 24 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
-| `ally_ambush_next_fights` | `Number` |  | 10 |
-| `ambush_next_basic_fights` | `Number` |  | 9 |
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 24 |
-| `clear_result_animation` | `Number` |  | 1 |
-| `con` | Number |  | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 21 |
-| `full_heal` | `Number` |  | 10 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 6 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 23 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `Enum/String` | Event Action: Adds a specific familiar to the party. | 19 |
-| `gain_food` | `Number` |  | 3 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 14 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 609 |
+| `set_frame` | `Number` |  | 151 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Enum/String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 64 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 |
-| `heal` | `Number` |  | 13 |
-| `heal_disorder` | `Number` |  | 1 |
-| `heal_injury` | `Number` |  | 1 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 27 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | `Number` |  | 7 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 11 |
-| `party_damage` | `Number` |  | 9 |
+| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 25 |
+| [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 24 |
+| [`damage`](./Arrays.md#array-damage) | Array | Event Node: Story branch or dialog option representing the 'Damage' action. | 24 |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 23 |
+| `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 22 |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 21 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `Enum/String` | Event Action: Adds a specific familiar to the party. | 19 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 |
 | `party_heal` | `Number` |  | 15 |
+| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 14 |
+| `heal` | `Number` |  | 13 |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 13 |
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
+| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 11 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
+| `ally_ambush_next_fights` | `Number` |  | 10 |
+| `full_heal` | `Number` |  | 10 |
+| `ambush_next_basic_fights` | `Number` |  | 9 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
+| `party_damage` | `Number` |  | 9 |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 8 |
+| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
+| `next_event_bonus` | `Number` |  | 7 |
+| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 6 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 |
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
+| `random` | Number |  | 5 |
+| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| `gain_food` | `Number` |  | 3 |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
+| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 |
 | `party_heal_disorder` | `Number` |  | 2 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 41 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 13 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 609 |
-| `random` | Number |  | 5 |
-| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 25 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 8 |
-| `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 22 |
-| `self_heal` | `Number` |  | 1 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 93 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
-| `set_frame` | `Number` |  | 151 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 |
-| `spd` | Number |  | 1 |
 | [`spin`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| `clear_result_animation` | `Number` |  | 1 |
+| `con` | Number |  | 1 |
+| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| `heal_disorder` | `Number` |  | 1 |
+| `heal_injury` | `Number` |  | 1 |
+| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `self_heal` | `Number` |  | 1 |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| `spd` | Number |  | 1 |
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `rare`
-
-
-
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Rare' action.  
@@ -244,95 +235,92 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 15 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
-| `ally_ambush_next_fights` | `Number` |  | 5 |
-| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
-| `ambush_next_basic_fights` | `Number` |  | 7 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 9 |
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
-| `clear_result_animation` | `Number` |  | 1 |
-| `con` | Number |  | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 22 |
-| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 30 |
-| `full_heal` | `Number` |  | 4 |
-| `gain_cat_familiar` | `Number` |  | 3 |
-| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 6 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 65 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 45 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `Enum/String` | Event Action: Adds a specific familiar to the party. | 29 |
-| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 2 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 41 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 613 |
+| `set_frame` | `Number` |  | 180 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Enum/String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 113 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 30 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 21 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 |
-| `heal_disorder` | `Number` |  | 1 |
-| `hide_appearance_changes` | `Number` |  | 6 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 65 |
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 51 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
-| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
-| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 10 |
-| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
-| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
-| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
-| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 45 |
+| [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 41 |
+| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 40 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 30 |
+| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 30 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `Enum/String` | Event Action: Adds a specific familiar to the party. | 29 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 22 |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 22 |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 21 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 |
+| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 15 |
 | `next_event_bonus` | `Number` |  | 14 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | `Enum/String` | Event Action: Chains immediately into a randomly selected subsequent story event. | 3 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 |
+| `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 12 |
+| [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 10 |
+| `party_heal` | `Number` |  | 10 |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 10 |
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 9 |
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 9 |
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 8 |
 | `party_damage` | `Number` |  | 8 |
-| `party_heal` | `Number` |  | 10 |
+| `party_random_mutation` | `Number` |  | 8 |
+| `ambush_next_basic_fights` | `Number` |  | 7 |
+| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 |
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
+| `random` | Number |  | 7 |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
+| [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 6 |
+| `hide_appearance_changes` | `Number` |  | 6 |
+| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
+| `ally_ambush_next_fights` | `Number` |  | 5 |
+| [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 5 |
+| `spd` | Number |  | 5 |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| `full_heal` | `Number` |  | 4 |
+| [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
+| `gain_cat_familiar` | `Number` |  | 3 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
+| [`lose_item_from_inventory`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
+| [`make_old`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | `Enum/String` | Event Action: Chains immediately into a randomly selected subsequent story event. | 3 |
+| `spawn_reflection_next_fight` | `Number` | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
+| [`gain_food`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 2 |
+| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
 | `party_heal_disorder` | `Number` |  | 2 |
 | `party_heal_injury` | `Number` |  | 2 |
-| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
 | [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 |
-| `party_random_mutation` | `Number` |  | 8 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Array` |  | 10 |
-| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 613 |
-| `random` | Number |  | 7 |
-| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 40 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 13 |
-| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 12 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 22 |
 | `set_age` | `Number` |  | 2 |
-| `set_frame` | `Number` |  | 180 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
-| [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
-| `spawn_reflection_next_fight` | `Number` | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 |
-| `spd` | Number |  | 5 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
+| [`ambush`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
+| `clear_result_animation` | `Number` |  | 1 |
+| `con` | Number |  | 1 |
+| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`get_and_equip_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| `heal_disorder` | `Number` |  | 1 |
+| [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
+| [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `good`
-
-
-
 
 
 **Definition:** `false`, `true`  
@@ -346,83 +334,80 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 6 |
-| `ally_ambush_next_fights` | Number |  | 1 |
-| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
-| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
-| `clone_self_to_party` | `Number` |  | 1 |
-| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
+| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
+| `set_frame` | `Number` |  | 285 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 185 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 52 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 38 |
-| `copy_items_to_party` | `Number` |  | 1 |
-| `copy_party_items` | `Number` |  | 1 |
+| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 26 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 20 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 19 |
-| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
+| [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 12 |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
+| `weight` | Number | Probability weight for this outcome. | 10 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 9 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 9 |
-| `full_heal` | Number |  | 2 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 8 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 8 |
+| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 6 |
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 5 |
+| `heal_disorder` | Number |  | 5 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
+| `heal_injury` | `Number` |  | 3 |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
+| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
+| [`clear_surviving_kaiju`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
+| [`cutscene_on_exit`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| `full_heal` | Number |  | 2 |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
+| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
+| `ally_ambush_next_fights` | Number |  | 1 |
+| `clone_self_to_party` | `Number` |  | 1 |
+| `copy_items_to_party` | `Number` |  | 1 |
+| `copy_party_items` | `Number` |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 |
 | `heal` | `Number` |  | 1 |
-| `heal_disorder` | Number |  | 5 |
-| `heal_injury` | `Number` |  | 3 |
-| [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 52 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
 | [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 8 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
-| [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
 | `party_heal` | Number |  | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 20 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 185 |
-| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 12 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 4 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 |
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 12 |
-| `set_frame` | `Number` |  | 285 |
-| [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 26 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`trigger_adventure_unlock`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 7 |
 | `trigger_butterfly_effect` | `Number` |  | 1 |
-| [`unlock_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| `weight` | Number | Probability weight for this outcome. | 10 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `bad`
-
-
-
 
 
 **Definition:** Event Object: Story branch or dialog option representing the 'Bad' action.  
@@ -436,45 +421,44 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| `con` | Number |  | 1 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
+| `set_frame` | `Number` |  | 219 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `weight` | Number | Probability weight for this outcome. | 10 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 8 |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 4 |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
+| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 3 |
-| `dex` | Number |  | 1 |
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 3 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 4 |
-| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 3 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 8 |
-| [`kill`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
-| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | `next_event_bonus` | Number |  | 2 |
+| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| `con` | Number |  | 1 |
+| `dex` | Number |  | 1 |
+| [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 |
 | [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 1 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random` | Number |  | 1 |
-| [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 303 |
 | [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 |
-| `set_frame` | `Number` |  | 219 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
 | `spd` | Number |  | 1 |
-| `weight` | Number | Probability weight for this outcome. | 10 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `intro`
-
 
 
 **Definition:** No definition provided.  
@@ -493,7 +477,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`subject_clip`](./Enums.md#enum-subject_clip) | Enum |  | 214 |
 | [`subject_frame`](./Enums.md#enum-subject_frame) | Enum |  | 214 |
 | [`title`](./Strings.md#string-title) | String |  | 214 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum |  | 9 |
 | `different_from_last_x_cats` | Number |  | 3 |
 | `subject_frame_inner` | Number |  | 3 |
@@ -503,13 +486,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `choose_cat_with_most_injuries` | Boolean |  | 1 |
 | `choose_cat_with_parasite` | Boolean |  | 1 |
 | `set_frame` | `Number` |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `main`
-
 
 
 **Definition:** Event Object: The central hub or recurring menu of a story event.  
@@ -523,54 +506,51 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
+| [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | `Array` | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| [`options`](./Events_and_Encounters.md#object-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 208 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
+| [`setup`](./Events_and_Encounters.md#object-setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
+| [`goto`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| [`outcome`](./Events_and_Encounters.md#object-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
+| `max_options` | `Number` |  | 3 |
+| `set_frame` | Number |  | 3 |
+| `shuffle_options` | `Boolean` |  | 3 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`weight`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Probability weight for this outcome. | 2 |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`future`](./Events_and_Encounters.md#object-future) | Object | Event Node: Story branch or dialog option representing the 'Future' action. | 1 |
 | [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`goto`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
 | [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 1 |
-| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| `max_options` | `Number` |  | 3 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 |
-| [`options`](./Events_and_Encounters.md#object-options) | Object | Event Object: Lists the available clickable dialog choices for the current story node. | 210 |
-| [`outcome`](./Events_and_Encounters.md#object-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 |
 | `party_heal` | Number |  | 1 |
 | [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Array |  | 1 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 208 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
 | [`requires_flag`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Prerequisite: Must meet this condition. | 1 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_damage`](./Engine_DamagingKeys.md#valid-property-keys) | `Array` | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| `set_frame` | Number |  | 3 |
-| [`setup`](./Events_and_Encounters.md#object-setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
-| `shuffle_options` | `Boolean` |  | 3 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`weight`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Probability weight for this outcome. | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `options`
-
-
-
 
 
 **Definition:** Event Object: Lists the available clickable dialog choices for the current story node.  
@@ -584,15 +564,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`ignore`](./Events_and_Encounters.md#context-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 |
 | [`examine`](./Events_and_Encounters.md#context-examine) | Object | Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
+| [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 29 |
 | [`loot`](./Events_and_Encounters.md#context-loot) | Object | Event Node: Story branch or dialog option representing the \'Loot\' action. | 25 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`eat`](./Events_and_Encounters.md#context-eat) | Object | Event Node: Story branch or dialog option representing the \'Eat\' action. | 23 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
 | [`smash`](./Events_and_Encounters.md#context-smash) | Object | Event Node: Story branch or dialog option representing the \'Smash\' action. | 15 |
 | [`destroy`](./Events_and_Encounters.md#context-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 13 |
 | [`bash`](./Events_and_Encounters.md#context-bash) | Object | Event Node: Story branch or dialog option representing the \'Bash\' action. | 12 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`sneak`](./Events_and_Encounters.md#context-sneak) | Object | Event Node: Story branch or dialog option representing the \'Sneak\' action. | 11 |
+| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
 | [`open`](./Events_and_Encounters.md#context-open) | Object | Event Node: Story branch or dialog option representing the \'Open\' action. | 8 |
 | [`take`](./Events_and_Encounters.md#context-take) | Object | Event Node: Story branch or dialog option representing the \'Take\' action. | 8 |
 | [`a`](./Events_and_Encounters.md#context-a) | Object | Event Node: Story branch or dialog option representing the \'A\' action. | 7 |
@@ -608,22 +597,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`enter`](./Events_and_Encounters.md#context-enter) | Object | Event Node: Story branch or dialog option representing the \'Enter\' action. | 6 |
 | [`inspect`](./Events_and_Encounters.md#context-inspect) | Object | Event Node: Story branch or dialog option representing the \'Inspect\' action. | 6 |
 | [`lick`](./Events_and_Encounters.md#context-lick) | Object | Event Node: Story branch or dialog option representing the \'Lick\' action. | 6 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
 | [`drink`](./Events_and_Encounters.md#context-drink) | Object | Event Node: Story branch or dialog option representing the \'Drink\' action. | 5 |
 | [`kiss`](./Events_and_Encounters.md#context-kiss) | Object | Event Node: Story branch or dialog option representing the \'Kiss\' action. | 5 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`run`](./Events_and_Encounters.md#context-run) | Object | Event Node: Story branch or dialog option representing the \'Run\' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`bite`](./Events_and_Encounters.md#context-bite) | Object | Event Node: Story branch or dialog option representing the 'Bite' action. | 4 |
 | [`damage`](./Events_and_Encounters.md#context-damage) | Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 4 |
 | [`go_around`](./Events_and_Encounters.md#context-go_around) | Object | Event Node: Story branch or dialog option representing the \'Go Around\' action. | 4 |
 | [`home`](./Events_and_Encounters.md#context-home) | Object | Event Node: Story branch or dialog option representing the 'Home' action. | 4 |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
 | [`past`](./Events_and_Encounters.md#context-past) | Object | Event Node: Story branch or dialog option representing the 'Past' action. | 4 |
 | [`skip`](./Events_and_Encounters.md#context-skip) | Object | Event Node: Story branch or dialog option representing the \'Skip\' action. | 4 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 3 |
 | [`investigate`](./Events_and_Encounters.md#context-investigate) | Object | Event Node: Story branch or dialog option representing the \'Investigate\' action. | 3 |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 3 |
 | [`repell`](./Events_and_Encounters.md#context-repell) | Object | Event Node: Story branch or dialog option representing the \'Repell\' action. | 3 |
 | [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna) | Object | Event Node: Story branch or dialog option representing the 'Attach Antenna' action. | 2 |
+| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
 | [`boogers`](./Events_and_Encounters.md#context-boogers) | Object | Event Node: Story branch or dialog option representing the \'Boogers\' action. | 2 |
 | [`copy`](./Events_and_Encounters.md#context-copy) | Object | Event Node: Story branch or dialog option representing the \'Copy\' action. | 2 |
 | [`find_another_way`](./Events_and_Encounters.md#context-find_another_way) | Object | Event Node: Story branch or dialog option representing the \'Find Another Way\' action. | 2 |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`move_closer`](./Events_and_Encounters.md#context-move_closer) | Object | Event Node: Story branch or dialog option representing the \'Move Closer\' action. | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`play`](./Events_and_Encounters.md#context-play) | Object | Event Node: Story branch or dialog option representing the \'Play\' action. | 2 |
 | [`poop`](./Events_and_Encounters.md#context-poop) | Object | Event Node: Story branch or dialog option representing the \'Poop\' action. | 2 |
 | [`print`](./Events_and_Encounters.md#context-print) | Object | Event Node: Story branch or dialog option representing the \'Print\' action. | 2 |
@@ -632,6 +634,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sacrifice`](./Events_and_Encounters.md#context-sacrifice) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice\' action. | 2 |
 | [`scale`](./Events_and_Encounters.md#context-scale) | Object | Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 |
 | [`turnon`](./Events_and_Encounters.md#context-turnon) | Object | Event Node: Story branch or dialog option representing the \'Turnon\' action. | 2 |
+| [`weight`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Probability weight for this outcome. | 2 |
+| `ally_ambush_next_fights` | Number |  | 1 |
 | [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice) | Object | Event Action: Triggers the altar sacrifice progression logic. | 1 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
@@ -663,6 +667,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`crack_open`](./Events_and_Encounters.md#context-crack_open) | Object | Event Node: Story branch or dialog option representing the \'Crack Open\' action. | 1 |
 | [`cross`](./Events_and_Encounters.md#context-cross) | Object | Event Node: Story branch or dialog option representing the \'Cross\' action. | 1 |
 | [`cut_wires`](./Events_and_Encounters.md#context-cut_wires) | Object | Event Node: Story branch or dialog option representing the \'Cut Wires\' action. | 1 |
+| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 1 |
 | [`damage_1`](./Events_and_Encounters.md#context-damage_1) | Object | Event Node: Story branch or dialog option representing the \'Damage 1\' action. | 1 |
 | [`damage_full`](./Events_and_Encounters.md#context-damage_full) | Object | Event Node: Story branch or dialog option representing the \'Damage Full\' action. | 1 |
 | [`damage_half`](./Events_and_Encounters.md#context-damage_half) | Object | Event Node: Story branch or dialog option representing the \'Damage Half\' action. | 1 |
@@ -688,6 +693,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`follow`](./Events_and_Encounters.md#context-follow) | Object | Event Node: Story branch or dialog option representing the \'Follow\' action. | 1 |
 | [`free`](./Events_and_Encounters.md#context-free) | Object | Event Node: Story branch or dialog option representing the \'Free\' action. | 1 |
 | [`future`](./Events_and_Encounters.md#context-future) | Object | Event Node: Story branch or dialog option representing the 'Future' action. | 1 |
+| `gain_cat_familiar` | Number |  | 1 |
+| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 1 |
 | [`give_parasite`](./Events_and_Encounters.md#context-give_parasite) | Object | Event Action: Equips a parasite item to a character. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the 'Good' action. | 1 |
 | [`hack`](./Events_and_Encounters.md#context-hack) | Object | Event Node: Story branch or dialog option representing the \'Hack\' action. | 1 |
@@ -696,6 +704,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`hp`](./Events_and_Encounters.md#context-hp) | Object | Event Node: Story branch or dialog option representing the \'Hp\' action. | 1 |
 | [`ice`](./Events_and_Encounters.md#context-ice) | Object | Event Node: Story branch or dialog option representing the \'Ice\' action. | 1 |
 | [`infinite`](./Events_and_Encounters.md#context-infinite) | Object | Event Node: A looping or endlessly repeating story branch. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`intcheck`](./Events_and_Encounters.md#context-intcheck) | Object | Event Node: Stat check branch evaluating the \'int\' attribute. | 1 |
 | [`intimidation`](./Events_and_Encounters.md#context-intimidation) | Object | Event Node: Story branch or dialog option representing the \'Intimidation\' action. | 1 |
 | [`itchies`](./Events_and_Encounters.md#context-itchies) | Object | Event Node: Story branch or dialog option representing the \'Itchies\' action. | 1 |
@@ -716,14 +725,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`loot_heart`](./Events_and_Encounters.md#context-loot_heart) | Object | Event Node: Story branch or dialog option representing the 'Loot Heart' action. | 1 |
 | [`makeup`](./Events_and_Encounters.md#context-makeup) | Object | Event Node: Story branch or dialog option representing the \'Makeup\' action. | 1 |
 | [`mind`](./Events_and_Encounters.md#context-mind) | Object | Event Node: Story branch or dialog option representing the 'Mind' action. | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | [`neck`](./Events_and_Encounters.md#context-neck) | Object | Event Node: Story branch or dialog option representing the \'Neck\' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
 | [`nothanks`](./Events_and_Encounters.md#context-nothanks) | Object | Event Node: Story branch or dialog option representing the \'Nothanks\' action. | 1 |
 | [`outsmart`](./Events_and_Encounters.md#context-outsmart) | Object | Event Node: Story branch or dialog option representing the \'Outsmart\' action. | 1 |
+| `party_heal` | Number |  | 1 |
 | [`patch_up`](./Events_and_Encounters.md#context-patch_up) | Object | Event Node: Story branch or dialog option representing the \'Patch Up\' action. | 1 |
 | [`pick_lock`](./Events_and_Encounters.md#context-pick_lock) | Object | Event Node: Story branch or dialog option representing the \'Pick Lock\' action. | 1 |
 | [`pilfer`](./Events_and_Encounters.md#context-pilfer) | Object | Event Node: Story branch or dialog option representing the \'Pilfer\' action. | 1 |
 | [`pirouette`](./Events_and_Encounters.md#context-pirouette) | Object | Event Node: Story branch or dialog option representing the \'Pirouette\' action. | 1 |
 | [`place_gristle`](./Events_and_Encounters.md#context-place_gristle) | Object | Event Node: Story branch or dialog option representing the 'Place Gristle' action. | 1 |
+| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`power`](./Events_and_Encounters.md#context-power) | Object | Event Node: Story branch or dialog option representing the 'Power' action. | 1 |
 | [`pull`](./Events_and_Encounters.md#context-pull) | Object | Event Node: Story branch or dialog option representing the \'Pull\' action. | 1 |
 | [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out) | Object | Event Node: Story branch or dialog option representing the \'Pull It Out\' action. | 1 |
@@ -733,6 +746,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`push_through`](./Events_and_Encounters.md#context-push_through) | Object | Event Node: Story branch or dialog option representing the \'Push Through\' action. | 1 |
 | [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins) | Object | Event Node: Story branch or dialog option representing the \'Put In Coins\' action. | 1 |
 | [`put_out_of_misery`](./Events_and_Encounters.md#context-put_out_of_misery) | Object | Event Node: Story branch or dialog option representing the \'Put Out Of Misery\' action. | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`reach_inside`](./Events_and_Encounters.md#context-reach_inside) | Object | Event Node: Story branch or dialog option representing the \'Reach Inside\' action. | 1 |
 | [`read`](./Events_and_Encounters.md#context-read) | Object | Event Node: Story branch or dialog option representing the \'Read\' action. | 1 |
 | [`receive`](./Events_and_Encounters.md#context-receive) | Object | Event Node: Story branch or dialog option representing the \'Receive\' action. | 1 |
@@ -752,6 +766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice Partial Favor\' action. | 1 |
 | [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest) | Object | Event Node: Story branch or dialog option representing the 'Sacrifice Quest' action. | 1 |
 | [`scream`](./Events_and_Encounters.md#context-scream) | Object | Event Node: Story branch or dialog option representing the \'Scream\' action. | 1 |
+| `set_frame` | Number |  | 1 |
 | [`shake`](./Events_and_Encounters.md#context-shake) | Object | Event Node: Story branch or dialog option representing the \'Shake\' action. | 1 |
 | [`slip_through`](./Events_and_Encounters.md#context-slip_through) | Object | Event Node: Story branch or dialog option representing the \'Slip Through\' action. | 1 |
 | [`sneak_by`](./Events_and_Encounters.md#context-sneak_by) | Object | Event Node: Story branch or dialog option representing the \'Sneak By\' action. | 1 |
@@ -794,74 +809,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`withstand`](./Events_and_Encounters.md#context-withstand) | Object | Event Node: Story branch or dialog option representing the \'Withstand\' action. | 1 |
 | [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out) | Object | Event Node: Story branch or dialog option representing the \'Yank It Out\' action. | 1 |
 | [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle) | Object | Event Node: Story branch or dialog option representing the \'Yellow Needle\' action. | 1 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 5 |
-| `ally_ambush_next_fights` | Number |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`battle`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | Object | Event Node: Triggers a narrative cutscene. | 1 |
-| `gain_cat_familiar` | Number |  | 1 |
-| [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 3 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`leave`](./Events_and_Encounters.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 29 |
-| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| `party_heal` | Number |  | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 3 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 3 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 1 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-| [`weight`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` | Probability weight for this outcome. | 2 |
-
-</details>
-
----
-
-### Object: `get_item_from_pool`
-
-
-
-
-**Definition:** Event Action: Rewards the player with an item drawn from a specific loot pool.  
-**Total Count:** 40
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Enum |  | 40 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`restrict`](./Arrays.md#array-restrict) | Array |  | 17 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
 
 </details>
 
 ---
 
 ### Object: `requirements`
-
 
 
 **Definition:** No definition provided.  
@@ -886,8 +840,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`not_cat_has_item_equipped`](./Enums.md#enum-not_cat_has_item_equipped) | Enum |  | 3 |
 | `minimum_party_size` | Number |  | 2 |
 | `not_on_quest` | Number |  | 2 |
-| [`cat_has_item_slot_equipped`](./Enums.md#enum-cat_has_item_slot_equipped) | Enum |  | 1 |
 | `cat_has_injury_count_min` | Number |  | 1 |
+| [`cat_has_item_slot_equipped`](./Enums.md#enum-cat_has_item_slot_equipped) | Enum |  | 1 |
 | `cat_has_parasite` | Boolean |  | 1 |
 
 </details>
@@ -895,8 +849,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `self_status_next_fight`
-
-
 
 
 **Definition:** Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter.  
@@ -917,8 +869,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `permanent_stats`
-
-
 
 
 **Definition:** Event Reward: Permanently increases (or decreases) the core stats of a single character.  
@@ -948,8 +898,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `conditional_reward`
 
 
-
-
 **Definition:** Event Action: Provides a reward only if a specific condition is met.  
 **Total Count:** 126
 
@@ -961,48 +909,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 125 |
-| [`else`](./Events_and_Encounters.md#context-else) | Object | Event Node: Story branch or dialog option representing the \'Else\' action. | 37 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 125 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 125 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`else`](./Events_and_Encounters.md#context-else) | Object | Event Node: Story branch or dialog option representing the \'Else\' action. | 37 |
+| [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 19 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 2 |
 | [`random_chance`](./Events_and_Encounters.md#object-random-chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 2 |
-| [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 19 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 125 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
-
-</details>
-
----
-
-### Object: `random_mutation`
-
-
-
-
-**Definition:** Event Reward: Applies a completely random mutation to a character.  
-**Total Count:** 19
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `count` | Number | Quantity. | 15 |
-| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 12 |
-| `asymmetric` | Boolean |  | 8 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `ignore`
-
 
 
 **Definition:** No definition provided.  
@@ -1016,37 +939,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 57 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 56 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 55 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 |
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 2 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `examine`
-
 
 
 **Definition:** No definition provided.  
@@ -1060,37 +982,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 43 |
 | [`stat`](./Math_Equations.md) | Equation |  | 43 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 2 |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 2 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `spawn_unit_next_fight`
-
-
 
 
 **Definition:** Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter.  
@@ -1104,8 +1024,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array |  | 31 |
 | [`count`](./Arrays.md#array-count) | Array | Quantity. | 32 |
+| [`object`](./Arrays.md#array-object) | Array |  | 31 |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum |  | 31 |
 | [`side`](./Enums.md#enum-side) | Enum |  | 3 |
 
@@ -1113,8 +1033,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Object: `else`
+### Object: `get_item_from_pool`
 
+
+**Definition:** Event Action: Rewards the player with an item drawn from a specific loot pool.  
+**Total Count:** 40
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`pool`](./Enums.md#enum-pool) | Enum |  | 40 |
+| [`restrict`](./Arrays.md#array-restrict) | Array |  | 17 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
+### Object: `else`
 
 
 **Definition:** Fallback object that executes if the preceding `Conditional_` block evaluated to false.  
@@ -1128,29 +1070,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |
-| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
-| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
-| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Array` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| `next_event_bonus` | `Number` |  | 1 |
-| `party_damage` | `Number` |  | 5 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 20 |
+| [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
+| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
+| `party_damage` | `Number` |  | 5 |
+| `set_frame` | `Number` |  | 5 |
+| [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 4 |
+| [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 2 |
+| `damage` | Number | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 |
+| `next_event_bonus` | `Number` |  | 1 |
 | [`random_mutation`](./Events_and_Encounters.md#object-random-mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 6 |
-| `set_frame` | `Number` |  | 5 |
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `leave`
-
-
-
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Leave' action.  
@@ -1164,35 +1103,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 30 |
 | [`label`](./Strings.md#string-label) | String |  | 30 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 30 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 28 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `loot`
-
 
 
 **Definition:** No definition provided.  
@@ -1206,49 +1144,46 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 25 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 25 |
 | [`stat`](./Math_Equations.md) | Equation |  | 25 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
+| [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | `party_heal` | Number |  | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
 | [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
-| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `mutation`
-
-
-
 
 
 **Definition:** Event Object: Story branch or dialog option representing the 'Mutation' action.  
@@ -1282,50 +1217,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Object: `eat`
-
-
-
-**Definition:** No definition provided.  
-**Total Count:** 23
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |
-| [`stat`](./Math_Equations.md) | Equation |  | 23 |
-| [`label`](./Strings.md#string-label) | Mixed |  | 23 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
-
-</details>
-
----
-
 ### Object: `party_status_next_fight`
-
-
 
 
 **Definition:** Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter.  
@@ -1345,10 +1237,47 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
+### Object: `eat`
+
+
+**Definition:** No definition provided.  
+**Total Count:** 23
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 |
+| [`label`](./Strings.md#string-label) | Mixed |  | 23 |
+| [`stat`](./Math_Equations.md) | Equation |  | 23 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
 ### Object: `setup`
-
-
-
 
 
 **Definition:** Event Object: Pre-initialization logic executed before the event UI is drawn.  
@@ -1362,18 +1291,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 42 |
 | `set_frame` | `Number` |  | 3 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `cutscene`
-
-
-
 
 
 **Definition:** Event Object: Triggers a narrative cutscene.  
@@ -1387,17 +1313,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| `skip_result_screen` | Boolean |  | 21 |
 | [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 21 |
+| `skip_result_screen` | Boolean |  | 21 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `random_mutation_from_set`
-
-
 
 
 **Definition:** Event Reward: Applies a random mutation to a character from a specific pool.  
@@ -1430,8 +1354,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Object: `smash`
+### Object: `random_mutation`
 
+
+**Definition:** Event Reward: Applies a completely random mutation to a character.  
+**Total Count:** 19
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `count` | Number | Quantity. | 15 |
+| [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 12 |
+| `asymmetric` | Boolean |  | 8 |
+
+</details>
+
+---
+
+### Object: `smash`
 
 
 **Definition:** No definition provided.  
@@ -1445,35 +1390,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
 | [`label`](./Strings.md#string-label) | String |  | 15 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 15 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `destroy`
-
 
 
 **Definition:** No definition provided.  
@@ -1487,34 +1431,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 |
 | [`label`](./Strings.md#string-label) | String |  | 14 |
 | [`stat`](./Math_Equations.md) | Equation |  | 14 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 13 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `bash`
-
 
 
 **Definition:** No definition provided.  
@@ -1528,120 +1471,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 |
 | [`label`](./Strings.md#string-label) | String |  | 12 |
 | [`stat`](./Math_Equations.md) | Equation |  | 12 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
-
-</details>
-
----
-
-### Object: `open`
-
-
-
-**Definition:** Character Form: Behavior and stats for the 'Open' state.  
-**Total Count:** 11
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`label`](./Strings.md#string-label) | String |  | 8 |
-| [`stat`](./Math_Equations.md) | Equation |  | 8 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
-| [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
-
-</details>
-
----
-
-### Object: `sneak`
-
-
-
-**Definition:** No definition provided.  
-**Total Count:** 11
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |
-| [`stat`](./Math_Equations.md) | Equation |  | 11 |
-| [`label`](./Strings.md#string-label) | Mixed |  | 11 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
 
 </details>
 
 ---
 
 ### Object: `global_effect_next_fight`
-
-
 
 
 **Definition:** Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter.  
@@ -1655,15 +1512,118 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
+### Object: `open`
+
+
+**Definition:** Character Form: Behavior and stats for the 'Open' state.  
+**Total Count:** 11
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Events_and_Encounters.md#context-root), [`options`](./Events_and_Encounters.md#context-options)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`label`](./Strings.md#string-label) | String |  | 8 |
+| [`stat`](./Math_Equations.md) | Equation |  | 8 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`copy_results`](./Enums.md#enum-copy_results) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
+### Object: `sneak`
+
+
+**Definition:** No definition provided.  
+**Total Count:** 11
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`options`](./Events_and_Encounters.md#context-options)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 |
+| [`label`](./Strings.md#string-label) | Mixed |  | 11 |
+| [`stat`](./Math_Equations.md) | Equation |  | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
+### Object: `leave_party_temporarily`
+
+
+**Definition:** Event Action: Removes a character from the active team until the next hub area.  
+**Total Count:** 9
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `fights_skipped` | Number |  | 7 |
+| [`return_as`](./Enums.md#enum-return_as) | Enum |  | 3 |
+| [`return_during`](./Enums.md#enum-return_during) | Enum |  | 3 |
 
 </details>
 
 ---
 
 ### Object: `take`
-
 
 
 **Definition:** No definition provided.  
@@ -1677,35 +1637,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 |
 | [`label`](./Strings.md#string-label) | String |  | 8 |
 | [`stat`](./Math_Equations.md) | Equation |  | 8 |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `a`
-
 
 
 **Definition:** No definition provided.  
@@ -1731,7 +1690,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `attack`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 7
 
@@ -1743,44 +1701,43 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`label`](./Strings.md#string-label) | String |  | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| `party_heal` | Number |  | 1 |
-| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
-| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | `self_damage` | Number | Recoil or self-inflicted damage/effects applied to the caster. | 436 |
 | [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn-unit-next-fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 41 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 24 |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 22 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave-party-temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 9 |
+| [`label`](./Strings.md#string-label) | String |  | 7 |
+| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Enum/String | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party-permanent-stats-exclude-self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 3 |
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | Enum/String | Event Action: Adds a specific familiar to the party. | 2 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `party_heal` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `b`
-
 
 
 **Definition:** No definition provided.  
@@ -1806,7 +1763,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `c`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 7
 
@@ -1830,7 +1786,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `charm`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 7
 
@@ -1842,28 +1797,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
-| [`label`](./Strings.md#string-label) | Mixed |  | 7 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`label`](./Strings.md#string-label) | Mixed |  | 7 |
+| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1872,7 +1827,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `fight`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 7
 
@@ -1884,52 +1838,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
-| [`stat`](./Math_Equations.md) | Equation |  | 7 |
-| [`label`](./Strings.md#string-label) | Mixed |  | 7 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
+| [`label`](./Strings.md#string-label) | Mixed |  | 7 |
+| [`stat`](./Math_Equations.md) | Equation |  | 7 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
-
-</details>
-
----
-
-### Object: `leave_party_temporarily`
-
-
-
-
-**Definition:** Event Action: Removes a character from the active team until the next hub area.  
-**Total Count:** 9
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `fights_skipped` | Number |  | 7 |
-| [`return_as`](./Enums.md#enum-return_as) | Enum |  | 3 |
-| [`return_during`](./Enums.md#enum-return_during) | Enum |  | 3 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -1938,7 +1868,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `touch`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 7
 
@@ -1950,35 +1879,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 7 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 7 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 6 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `activate_p`
-
 
 
 **Definition:** No definition provided.  
@@ -2005,7 +1933,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `activate_z`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 6
 
@@ -2028,7 +1955,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `d`
-
 
 
 **Definition:** No definition provided.  
@@ -2054,7 +1980,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `enter`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 6
 
@@ -2066,29 +1991,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
-| [`stat`](./Enums.md#enum-stat) | Mixed |  | 5 |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`stat`](./Enums.md#enum-stat) | Mixed |  | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum |  | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2097,7 +2022,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `inspect`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 6
 
@@ -2109,27 +2033,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | String |  | 6 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`stat`](./Math_Equations.md) | Equation |  | 6 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2138,7 +2062,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `lick`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 6
 
@@ -2150,37 +2073,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 6 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 6 |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `next_event_from_set`
-
-
 
 
 **Definition:** Event Action: Chains immediately into a randomly selected subsequent story event.  
@@ -2205,7 +2126,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
-
 **Definition:** Encounter Modifier: Applies a status effect to all characters of a specific type (e.g., Cats, Bosses) at the start of battle.  
 **Total Count:** 5
 
@@ -2217,8 +2137,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`tag`](./Enums.md#enum-tag) | Enum | Specific entity tag required. | 8 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2227,7 +2147,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `drink`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 5
 
@@ -2239,27 +2158,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
-| [`stat`](./Math_Equations.md) | Equation |  | 5 |
-| [`label`](./Strings.md#string-label) | Mixed |  | 5 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
+| [`label`](./Strings.md#string-label) | Mixed |  | 5 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`stat`](./Math_Equations.md) | Equation |  | 5 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2268,7 +2187,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `kiss`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 5
 
@@ -2280,27 +2198,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2309,7 +2227,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `run`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 5
 
@@ -2321,36 +2238,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 |
 | [`label`](./Strings.md#string-label) | String |  | 5 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`stat`](./Math_Equations.md) | Equation |  | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `bite`
-
 
 
 **Definition:** No definition provided.  
@@ -2364,35 +2280,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 4 |
 | [`stat`](./Math_Equations.md) | Equation |  | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `damage`
-
 
 
 **Definition:** The base damage properties of an attack.  
@@ -2418,7 +2333,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `go_around`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 4
 
@@ -2430,35 +2344,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Mixed |  | 3 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 2 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `home`
-
 
 
 **Definition:** No definition provided.  
@@ -2485,9 +2398,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `outcome`
 
 
-
-
-
 **Definition:** Event Object: Logic and text executed after selecting a specific dialog option.  
 **Total Count:** 4
 
@@ -2499,17 +2409,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`weather_roll`](./Arrays.md#array-weather_roll) | Array |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 
 </details>
 
 ---
 
 ### Object: `party_permanent_stats_exclude_self`
-
-
 
 
 **Definition:** Event Reward: Permanently modifies stats for all party members except the one who initiated the action.  
@@ -2538,7 +2446,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `past`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 4
 
@@ -2564,7 +2471,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `skip`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 4
 
@@ -2576,37 +2482,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 4 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
 | [`label`](./Strings.md#string-label) | String |  | 4 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 4 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
 | [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-
-</details>
-
----
-
-### Object: `StatusRandomEnemiesOnBattleStart`
-
-
-
-**Definition:** Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state.  
-**Total Count:** 3
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| `count` | Number | Quantity. | 11 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -2615,7 +2499,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `investigate`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 3
 
@@ -2627,27 +2510,47 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
+### Object: `party_permanent_stats`
+
+
+**Definition:** Event Reward: Permanently increases (or decreases) the core stats of all party members.  
+**Total Count:** 3
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `con` | Number |  | 2 |
 
 </details>
 
@@ -2656,7 +2559,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `repell`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 3
 
@@ -2668,34 +2570,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 |
 | [`label`](./Strings.md#string-label) | String |  | 3 |
 | [`stat`](./Math_Equations.md) | Equation |  | 3 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `spawn_reflection_next_fight`
-
 
 
 **Definition:** No definition provided.  
@@ -2714,12 +2615,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Object: `KillEnemyOfTypeAtBattleStart`
+### Object: `StatusRandomEnemiesOnBattleStart`
 
 
-
-**Definition:** No definition provided.  
-**Total Count:** 2
+**Definition:** Applies or references the 'StatusRandomEnemiesOnBattleStart' effect/state.  
+**Total Count:** 3
 
 
 <details>
@@ -2729,15 +2629,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum |  | 2 |
-| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array |  | 1 |
+| `count` | Number | Quantity. | 11 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `attach_antenna`
-
 
 
 **Definition:** No definition provided.  
@@ -2764,7 +2663,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `boogers`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -2788,7 +2686,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `copy`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -2810,7 +2707,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `find_another_way`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -2822,28 +2718,68 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
+### Object: `gain_familiar`
+
+
+**Definition:** Event Action: Adds a specific familiar to the party.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `initial_health` | Number |  | 1 |
+| [`object`](./Enums.md#enum-object) | Enum |  | 1 |
+
+</details>
+
+---
+
+### Object: `KillEnemyOfTypeAtBattleStart`
+
+
+**Definition:** No definition provided.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum |  | 2 |
+| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array |  | 1 |
 
 </details>
 
@@ -2852,7 +2788,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `move_closer`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -2864,57 +2799,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
-
-</details>
-
----
-
-### Object: `party_permanent_stats`
-
-
-
-
-**Definition:** Event Reward: Permanently increases (or decreases) the core stats of all party members.  
-**Total Count:** 3
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| `con` | Number |  | 2 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `party_random_mutation_from_set`
-
-
 
 
 **Definition:** Event Reward: Applies a random mutation to the entire party from a specific pool.  
@@ -2941,7 +2852,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `play`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -2953,34 +2863,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `poop`
-
 
 
 **Definition:** No definition provided.  
@@ -3006,7 +2915,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `print`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -3026,7 +2934,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `protection`
-
 
 
 **Definition:** No definition provided.  
@@ -3049,8 +2956,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Object: `repair`
+### Object: `random_chance`
 
+
+**Definition:** Event Logic: Executes the nested outcome based on a percentage roll.  
+**Total Count:** 2
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`reward`](./Events_and_Encounters.md#context-reward)
+
+| Key | Type | Definition | Count |
+| :--- | :--- | :--- | :--- |
+| `chance` | Number | Probability weight for this outcome. | 1 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Enum/String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+
+</details>
+
+---
+
+### Object: `repair`
 
 
 **Definition:** No definition provided.  
@@ -3064,28 +2992,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | Mixed |  | 2 |
-| [`stat`](./Enums.md#enum-stat) | Mixed |  | 2 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`stat`](./Enums.md#enum-stat) | Mixed |  | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3094,7 +3022,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -3106,36 +3033,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
 
 </details>
 
 ---
 
 ### Object: `scale`
-
 
 
 **Definition:** Examples: `.75, 1.33, 1`  
@@ -3159,7 +3085,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `turnon`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 2
 
@@ -3171,34 +3096,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 |
 | [`label`](./Strings.md#string-label) | String |  | 2 |
-| [`stat`](./Math_Equations.md) | Equation |  | 2 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`stat`](./Math_Equations.md) | Equation |  | 2 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `altar_sacrifice`
-
 
 
 **Definition:** No definition provided.  
@@ -3223,7 +3147,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `arm`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3235,34 +3158,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `attach_amplifier`
-
 
 
 **Definition:** No definition provided.  
@@ -3289,7 +3211,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `attach_leech`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3314,7 +3235,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bash_past_alt`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3326,28 +3246,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3356,7 +3276,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bite_it_off`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3368,34 +3287,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `blue`
-
 
 
 **Definition:** No definition provided.  
@@ -3422,7 +3340,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `blue_needle`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3434,28 +3351,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3464,7 +3381,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `body`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3476,21 +3392,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 
 </details>
 
 ---
 
 ### Object: `book`
-
 
 
 **Definition:** No definition provided.  
@@ -3516,7 +3431,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `brace`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3540,7 +3454,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `break_ice`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3562,7 +3475,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `break_lock`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3574,27 +3486,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3603,7 +3515,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `bribe`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3615,34 +3526,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `button`
-
 
 
 **Definition:** No definition provided.  
@@ -3669,7 +3579,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `buy1`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3681,29 +3590,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 |
-| `set_frame` | Number |  | 36 |
 | `weight` | `Number` | Probability weight for this outcome. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3712,7 +3621,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `catch`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3724,27 +3632,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3753,7 +3661,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `challenge_to_game`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3765,34 +3672,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `chaos_ending`
-
 
 
 **Definition:** No definition provided.  
@@ -3817,7 +3723,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `chapter_cutscene`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3840,7 +3745,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `charm_past_alt`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3852,28 +3756,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3882,7 +3786,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `climb`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3894,27 +3797,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3923,7 +3826,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `comfort`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3935,27 +3837,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -3964,7 +3866,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `communicate`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -3976,27 +3877,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4005,7 +3906,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `concheck`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4017,34 +3917,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `counter`
-
 
 
 **Definition:** No definition provided.  
@@ -4070,7 +3969,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `crack_open`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4082,27 +3980,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4111,7 +4009,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `cross`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4123,25 +4020,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4150,7 +4047,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `cut_wires`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4162,27 +4058,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4191,7 +4087,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_1`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4203,27 +4098,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4232,7 +4127,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_full`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4244,27 +4138,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4273,7 +4167,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `damage_half`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4285,34 +4178,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `desert_cutscene`
-
 
 
 **Definition:** No definition provided.  
@@ -4337,7 +4229,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `dexcheck`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4349,27 +4240,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4378,7 +4269,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `dig`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4390,28 +4280,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4420,7 +4310,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `disarm`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4432,27 +4321,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4461,7 +4350,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `dive`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4473,34 +4361,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `donate`
-
 
 
 **Definition:** No definition provided.  
@@ -4526,7 +4413,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_10`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4538,33 +4424,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4573,7 +4459,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_15`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4585,33 +4470,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4620,7 +4505,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_20`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4632,33 +4516,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4667,7 +4551,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `donate_5`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4679,40 +4562,39 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `double`
-
 
 
 **Definition:** No definition provided.  
@@ -4738,7 +4620,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `eat_meat`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4750,34 +4631,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `enter_crater`
-
 
 
 **Definition:** No definition provided.  
@@ -4802,7 +4682,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `face`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4822,7 +4701,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `fiddle`
-
 
 
 **Definition:** No definition provided.  
@@ -4846,7 +4724,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `fill_jar`
-
 
 
 **Definition:** No definition provided.  
@@ -4873,7 +4750,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `find`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4894,7 +4770,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `fire`
-
 
 
 **Definition:** Character Form: Behavior and stats for the 'Fire' state.  
@@ -4920,7 +4795,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `flush_yourself`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4943,7 +4817,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `follow`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4955,27 +4828,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -4984,7 +4857,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `free`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -4996,36 +4868,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `future`
-
-
-
 
 
 **Definition:** Event Node: Story branch or dialog option representing the 'Future' action.  
@@ -5053,8 +4922,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `gain_clone_familiar`
 
 
-
-
 **Definition:** Event Action: Adds a clone of a character to the party as a familiar.  
 **Total Count:** 1
 
@@ -5072,29 +4939,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 ---
 
-### Object: `gain_familiar`
-
-
-
-
-**Definition:** Event Action: Adds a specific familiar to the party.  
-**Total Count:** 2
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Enum |  | 1 |
-| `initial_health` | Number |  | 1 |
-
-</details>
-
----
-
 ### Object: `give_parasite`
-
 
 
 **Definition:** No definition provided.  
@@ -5108,34 +4953,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `hack`
-
 
 
 **Definition:** No definition provided.  
@@ -5160,7 +5004,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `head`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5180,7 +5023,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `holy`
-
 
 
 **Definition:** Character Form: Behavior and stats for the \'Holy\' state.  
@@ -5206,7 +5048,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `hp`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5230,7 +5071,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ice`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5252,7 +5092,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `infinite`
-
 
 
 **Definition:** No definition provided.  
@@ -5280,7 +5119,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `intcheck`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5301,7 +5139,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `intimidation`
-
 
 
 **Definition:** No definition provided.  
@@ -5327,7 +5164,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `itchies`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5339,15 +5175,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 
 </details>
 
@@ -5356,7 +5192,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `join`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5368,27 +5203,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5397,7 +5232,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `jump`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5409,27 +5243,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5438,7 +5272,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `jump_over`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5450,27 +5283,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5479,7 +5312,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `keep_going`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5491,25 +5323,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5518,7 +5350,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `kiss_meat`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5530,34 +5361,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `knife`
-
 
 
 **Definition:** No definition provided.  
@@ -5583,7 +5413,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `leave_it_in`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5595,28 +5424,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5625,7 +5454,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `leg`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5637,27 +5465,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5666,7 +5494,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `lever`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5678,29 +5505,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | `fixed_chance` | Number |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -5709,7 +5536,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `lick_alt`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5721,35 +5547,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `lightning`
-
 
 
 **Definition:** No definition provided.  
@@ -5775,7 +5600,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `listen`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5798,7 +5622,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `looks`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5819,7 +5642,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `loot_heart`
-
 
 
 **Definition:** No definition provided.  
@@ -5846,7 +5668,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `makeup`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5870,7 +5691,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `mind`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5892,7 +5712,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `neck`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5912,7 +5731,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `nothanks`
-
 
 
 **Definition:** No definition provided.  
@@ -5938,7 +5756,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `outsmart`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5961,7 +5778,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `patch_up`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -5973,27 +5789,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6002,7 +5818,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pick_lock`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6014,27 +5829,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6043,7 +5858,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pilfer`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6055,34 +5869,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `pirouette`
-
 
 
 **Definition:** No definition provided.  
@@ -6106,7 +5919,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `place_gristle`
-
 
 
 **Definition:** No definition provided.  
@@ -6133,7 +5945,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `power`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6156,7 +5967,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pull`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6168,27 +5978,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6197,7 +6007,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pull_it_out`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6209,27 +6018,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6238,7 +6047,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `pull_lever`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6250,25 +6058,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6277,7 +6085,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `purify`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6289,27 +6096,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6318,7 +6125,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `push_buttons`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6330,25 +6136,25 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6357,7 +6163,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `push_through`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6369,27 +6174,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6398,7 +6203,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `put_in_coins`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6410,32 +6214,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | `stat_max` | Number |  | 1 |
 | `stat_min` | Number |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`injury`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 1 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
 
 </details>
 
@@ -6444,7 +6248,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `put_out_of_misery`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6456,58 +6259,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
-
-</details>
-
----
-
-### Object: `random_chance`
-
-
-
-
-**Definition:** Event Logic: Executes the nested outcome based on a percentage roll.  
-**Total Count:** 2
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`reward`](./Events_and_Encounters.md#context-reward)
-
-| Key | Type | Definition | Count |
-| :--- | :--- | :--- | :--- |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| `chance` | Number | Probability weight for this outcome. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Enum/String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 |
 
 </details>
 
 ---
 
 ### Object: `reach_inside`
-
 
 
 **Definition:** No definition provided.  
@@ -6532,7 +6310,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `read`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6544,34 +6321,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `receive`
-
 
 
 **Definition:** No definition provided.  
@@ -6598,7 +6374,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `red`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6610,29 +6385,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | `fixed_chance` | Number |  | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6641,7 +6416,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `red_needle`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6653,35 +6427,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `reflect`
-
 
 
 **Definition:** No definition provided.  
@@ -6707,7 +6480,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `remove`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6719,27 +6491,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6748,7 +6520,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `remove_the_nail`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6760,34 +6531,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `repair_quest`
-
 
 
 **Definition:** No definition provided.  
@@ -6813,7 +6583,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `rest`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6834,7 +6603,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `revive`
-
 
 
 **Definition:** No definition provided.  
@@ -6859,7 +6627,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `rub`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6882,7 +6649,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `run_again`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6894,29 +6660,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -6925,7 +6691,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `run_away`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -6937,34 +6702,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `sacrifice_full_favor`
-
 
 
 **Definition:** No definition provided.  
@@ -6991,7 +6755,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice_normal`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7016,7 +6779,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sacrifice_partial_favor`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7028,36 +6790,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
+| `next_event_bonus` | Number |  | 1 |
+| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
 | [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
-| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
-| `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
 
 </details>
 
 ---
 
 ### Object: `sacrifice_quest`
-
 
 
 **Definition:** No definition provided.  
@@ -7084,7 +6845,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `scream`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7105,7 +6865,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `shake`
-
 
 
 **Definition:** No definition provided.  
@@ -7130,7 +6889,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `slip_through`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7142,27 +6900,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7171,7 +6929,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sneak_by`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7183,27 +6940,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7212,7 +6969,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sneak_past_alt`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7224,35 +6980,34 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `soul`
-
 
 
 **Definition:** No definition provided.  
@@ -7274,7 +7029,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `speed`
-
 
 
 **Definition:** Examples: `.5, 2, 20`  
@@ -7300,7 +7054,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `surprise`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7324,7 +7077,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `sweet_talk`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7336,27 +7088,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7365,7 +7117,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `swim`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7377,27 +7128,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7406,7 +7157,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `tail`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7418,34 +7168,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `take_blood`
-
 
 
 **Definition:** No definition provided.  
@@ -7472,7 +7221,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `talk`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7484,27 +7232,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Enums.md#enum-label) | Enum |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7513,7 +7261,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `talk_to`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7525,34 +7272,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `tappytoes`
-
 
 
 **Definition:** No definition provided.  
@@ -7578,7 +7324,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `teleport`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7590,34 +7335,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `thorns`
-
 
 
 **Definition:** No definition provided.  
@@ -7643,7 +7387,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `throw`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7664,7 +7407,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `timemachine`
-
 
 
 **Definition:** No definition provided.  
@@ -7689,7 +7431,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `traverse`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7701,21 +7442,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
-| [`label`](./Strings.md#string-label) | String |  | 1 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| `set_frame` | Number |  | 36 |
 | [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
+| [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
+| [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` |  | 1 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| `set_frame` | Number |  | 36 |
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `Enum/String` |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7724,7 +7465,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `upgrade_yourself`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7736,27 +7476,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7765,7 +7505,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `use_item`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7777,27 +7516,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7806,7 +7545,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `use_toilet_con`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7818,27 +7556,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -7847,7 +7585,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `use_toilet_str`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7859,34 +7596,33 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `use_weapon`
-
 
 
 **Definition:** No definition provided.  
@@ -7909,7 +7645,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `w1`
-
 
 
 **Definition:** No definition provided.  
@@ -7935,7 +7670,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w2`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -7957,7 +7691,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `w3`
-
 
 
 **Definition:** No definition provided.  
@@ -7983,7 +7716,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w4`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8005,7 +7737,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `w5`
-
 
 
 **Definition:** No definition provided.  
@@ -8031,7 +7762,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `w6`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8053,7 +7783,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `wealth`
-
 
 
 **Definition:** No definition provided.  
@@ -8078,7 +7807,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wheezies`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8090,22 +7818,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
 | [`animation`](./Enums.md#enum-animation) | Enum |  | 1 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
 | [`stat`](./Enums.md#enum-stat) | Enum |  | 1 |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
 
 </details>
 
 ---
 
 ### Object: `wish_genes`
-
 
 
 **Definition:** No definition provided.  
@@ -8131,7 +7858,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wish_items`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8153,7 +7879,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `wish_levelups`
-
 
 
 **Definition:** No definition provided.  
@@ -8179,7 +7904,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `wish_strength`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8203,7 +7927,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `withstand`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8215,27 +7938,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -8244,7 +7967,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `yank_it_out`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8256,27 +7978,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
@@ -8285,7 +8007,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `yellow_needle`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 1
 
@@ -8297,28 +8018,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
+| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
+| `set_frame` | Number |  | 36 |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
+| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
 | [`good`](./Events_and_Encounters.md#context-good) | Object | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 |
 | [`label`](./Strings.md#string-label) | String |  | 1 |
-| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
-| [`stat`](./Math_Equations.md) | Equation |  | 1 |
-| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 |
-| [`conditional_reward`](./Events_and_Encounters.md#object-conditional-reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 126 |
-| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain-clone-familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | Enum/String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 40 |
-| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global-effect-next-fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 11 |
-| [`level_up`](./Engine_EventKeys.md#valid-property-keys) | Enum/String |  | 2 |
 | [`mutation`](./Events_and_Encounters.md#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 |
 | `next_event_bonus` | Number |  | 1 |
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 6 |
-| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party-random-mutation-from-set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 |
-| [`permanent_stats`](./Events_and_Encounters.md#object-permanent-stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 134 |
-| [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String |  | 38 |
 | `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 1 |
-| [`rare`](./Events_and_Encounters.md#object-rare) | Object | Event Node: Story branch or dialog option representing the 'Rare' action. | 673 |
-| [`reward`](./Events_and_Encounters.md#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 5 |
-| [`self_status_next_fight`](./Events_and_Encounters.md#object-self-status-next-fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 143 |
-| `set_frame` | Number |  | 36 |
+| [`requirements`](./Events_and_Encounters.md#context-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 |
+| [`stat`](./Math_Equations.md) | Equation |  | 1 |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 

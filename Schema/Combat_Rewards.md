@@ -2,13 +2,11 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-
 ## Combat Rewards
 
 > **Associated Files:** `data/combat_reward_table.gon`
 
 ### Object: `boss`
-
 
 
 **Definition:** No definition provided.  
@@ -23,8 +21,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | `item_chance` | Float |  | 6 |
 
 </details>
@@ -32,7 +30,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `hard`
-
 
 
 **Definition:** No definition provided.  
@@ -47,8 +44,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
@@ -56,7 +53,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `miniboss`
-
 
 
 **Definition:** No definition provided.  
@@ -71,8 +67,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
@@ -80,7 +76,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `normal`
-
 
 
 **Definition:** Character Form: Behavior and stats for the \'Normal\' state.  
@@ -95,8 +90,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`coins`](./Arrays.md#array-coins) | Array |  | 12 |
-| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`food`](./Arrays.md#array-food) | Array |  | 12 |
+| [`consumable_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 | [`item_chance`](./Math_Equations.md) | Equation |  (Must be float values) | 6 |
 
 </details>
@@ -108,7 +103,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 > The following objects are numeric keys or array indices.
 
 ### Object: `1`
-
 
 
 **Definition:** No definition provided.  
@@ -135,7 +129,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `2`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 4
 
@@ -158,7 +151,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `3`
-
 
 
 **Definition:** No definition provided.  
@@ -185,7 +177,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `4`
 
 
-
 **Definition:** No definition provided.  
 **Total Count:** 3
 
@@ -196,11 +187,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
 | [`boss`](#object-boss) | Object |  | 3 |
+| `coins_bonus` | Float |  | 3 |
+| `food_bonus` | Float |  | 3 |
 | [`hard`](#object-hard) | Object |  | 3 |
 | [`miniboss`](#object-miniboss) | Object |  | 3 |
 | [`normal`](#object-normal) | Object |  | 3 |
-| `coins_bonus` | Float |  | 3 |
-| `food_bonus` | Float |  | 3 |
 
 </details>
 

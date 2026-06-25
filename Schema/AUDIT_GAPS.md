@@ -13,71 +13,71 @@ Keys found in `.gon` files that are **not documented** in any context of their s
 
 ### Cat Classes — **2 undocumented keys**
 
-| Undocumented Key | # Files | Example Sources |
 | :--- | :--- | :--- |
-| `throw_ability` | 1 | data/classes/advanced_classes.gon |
 | `craft_ability` | 1 | data/classes/advanced_classes.gon |
+| `throw_ability` | 1 | data/classes/advanced_classes.gon |
+| Undocumented Key | # Files | Example Sources |
 
 ### Cat Mutations ✅ (no gaps)
 
 ### Characters & Bosses — **54 undocumented keys**
 
-| Undocumented Key | # Files | Example Sources |
 | :--- | :--- | :--- |
-| `consider_aoe` | 1 | data/ai_presets/decision_presets.gon |
-| `flat_cast_bonus` | 1 | data/ai_presets/decision_presets.gon |
-| `buff_self` | 1 | data/ai_presets/decision_presets.gon |
-| `buff_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `debuff_self` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object_distance_to_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `consider_secondary_damage` | 1 | data/ai_presets/decision_presets.gon |
-| `heal_self` | 1 | data/ai_presets/decision_presets.gon |
-| `negative_weight_scale` | 1 | data/ai_presets/decision_presets.gon |
-| `debuff_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `revive_ally_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `simple` | 1 | data/ai_presets/decision_presets.gon |
-| `heal_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `consider_overkill` | 1 | data/ai_presets/decision_presets.gon |
-| `buff_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `heal_ally` | 1 | data/ai_presets/decision_presets.gon |
 | `accurate_knockback` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `spend_mana_scale` | 1 | data/ai_presets/decision_presets.gon |
-| `revive_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_self` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object_distance_to_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `damage_ally_corpse` | 1 | data/ai_presets/decision_presets.gon |
-| `debuff_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `consider_total_damage` | 1 | data/ai_presets/decision_presets.gon |
-| `kill_ally` | 1 | data/ai_presets/decision_presets.gon |
-| `kill_enemy` | 1 | data/ai_presets/decision_presets.gon |
-| `spawn_object_preferred_distance` | 1 | data/ai_presets/decision_presets.gon |
-| `face_camera` | 1 | data/ai_presets/move_presets.gon |
-| `tall_grass` | 1 | data/ai_presets/move_presets.gon |
-| `face_aggro_target` | 1 | data/ai_presets/move_presets.gon |
-| `face_closest_enemy` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_aggro_target` | 1 | data/ai_presets/move_presets.gon |
-| `danger_avoidance` | 1 | data/ai_presets/move_presets.gon |
-| `lava` | 1 | data/ai_presets/move_presets.gon |
-| `exclude_characters_tagged` | 1 | data/ai_presets/move_presets.gon |
-| `preferred_distance` | 1 | data/ai_presets/move_presets.gon |
-| `cap_total_distance_moved` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_water` | 1 | data/ai_presets/move_presets.gon |
+| `buff_ally` | 1 | data/ai_presets/decision_presets.gon |
+| `buff_enemy` | 1 | data/ai_presets/decision_presets.gon |
+| `buff_self` | 1 | data/ai_presets/decision_presets.gon |
 | `cap_distance_to_ally` | 1 | data/ai_presets/move_presets.gon |
 | `cap_distance_to_character` | 1 | data/ai_presets/move_presets.gon |
-| `total_distance_moved` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_center` | 1 | data/ai_presets/move_presets.gon |
 | `cap_distance_to_enemy` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_character` | 1 | data/ai_presets/move_presets.gon |
-| `count_nomove_in_eval` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_enemy` | 1 | data/ai_presets/move_presets.gon |
+| `cap_total_distance_moved` | 1 | data/ai_presets/move_presets.gon |
 | `consider_aggro_target_enemy` | 1 | data/ai_presets/move_presets.gon |
-| `randomness` | 1 | data/ai_presets/move_presets.gon |
-| `distance_to_corpse` | 1 | data/ai_presets/move_presets.gon |
+| `consider_aoe` | 1 | data/ai_presets/decision_presets.gon |
+| `consider_overkill` | 1 | data/ai_presets/decision_presets.gon |
+| `consider_secondary_damage` | 1 | data/ai_presets/decision_presets.gon |
+| `consider_total_damage` | 1 | data/ai_presets/decision_presets.gon |
+| `count_nomove_in_eval` | 1 | data/ai_presets/move_presets.gon |
+| `damage_ally` | 1 | data/ai_presets/decision_presets.gon |
+| `damage_ally_corpse` | 1 | data/ai_presets/decision_presets.gon |
+| `damage_enemy` | 1 | data/ai_presets/decision_presets.gon |
+| `damage_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon |
+| `damage_self` | 1 | data/ai_presets/decision_presets.gon |
+| `danger_avoidance` | 1 | data/ai_presets/move_presets.gon |
+| `debuff_ally` | 1 | data/ai_presets/decision_presets.gon |
+| `debuff_enemy` | 1 | data/ai_presets/decision_presets.gon |
+| `debuff_self` | 1 | data/ai_presets/decision_presets.gon |
+| `distance_to_aggro_target` | 1 | data/ai_presets/move_presets.gon |
 | `distance_to_ally` | 1 | data/ai_presets/move_presets.gon |
+| `distance_to_center` | 1 | data/ai_presets/move_presets.gon |
+| `distance_to_character` | 1 | data/ai_presets/move_presets.gon |
+| `distance_to_corpse` | 1 | data/ai_presets/move_presets.gon |
+| `distance_to_enemy` | 1 | data/ai_presets/move_presets.gon |
+| `distance_to_water` | 1 | data/ai_presets/move_presets.gon |
+| `exclude_characters_tagged` | 1 | data/ai_presets/move_presets.gon |
+| `face_aggro_target` | 1 | data/ai_presets/move_presets.gon |
+| `face_camera` | 1 | data/ai_presets/move_presets.gon |
+| `face_closest_enemy` | 1 | data/ai_presets/move_presets.gon |
+| `flat_cast_bonus` | 1 | data/ai_presets/decision_presets.gon |
+| `heal_ally` | 1 | data/ai_presets/decision_presets.gon |
+| `heal_enemy` | 1 | data/ai_presets/decision_presets.gon |
+| `heal_self` | 1 | data/ai_presets/decision_presets.gon |
+| `kill_ally` | 1 | data/ai_presets/decision_presets.gon |
+| `kill_enemy` | 1 | data/ai_presets/decision_presets.gon |
+| `lava` | 1 | data/ai_presets/move_presets.gon |
+| `negative_weight_scale` | 1 | data/ai_presets/decision_presets.gon |
+| `preferred_distance` | 1 | data/ai_presets/move_presets.gon |
+| `randomness` | 1 | data/ai_presets/move_presets.gon |
+| `revive_ally_corpse` | 1 | data/ai_presets/decision_presets.gon |
+| `revive_enemy_corpse` | 1 | data/ai_presets/decision_presets.gon |
+| `simple` | 1 | data/ai_presets/decision_presets.gon |
+| `spawn_object` | 1 | data/ai_presets/decision_presets.gon |
+| `spawn_object_distance_to_ally` | 1 | data/ai_presets/decision_presets.gon |
+| `spawn_object_distance_to_enemy` | 1 | data/ai_presets/decision_presets.gon |
+| `spawn_object_preferred_distance` | 1 | data/ai_presets/decision_presets.gon |
+| `spend_mana_scale` | 1 | data/ai_presets/decision_presets.gon |
+| `tall_grass` | 1 | data/ai_presets/move_presets.gon |
+| `total_distance_moved` | 1 | data/ai_presets/move_presets.gon |
+| Undocumented Key | # Files | Example Sources |
 
 ### Enemy AI ✅ (no gaps)
 
@@ -85,10 +85,10 @@ Keys found in `.gon` files that are **not documented** in any context of their s
 
 ### Item Pools — **2 undocumented keys**
 
-| Undocumented Key | # Files | Example Sources |
 | :--- | :--- | :--- |
-| `WishBone` | 1 | data/item_pools/bird_pools.gon |
 | `Turkey` | 1 | data/item_pools/bird_pools.gon |
+| Undocumented Key | # Files | Example Sources |
+| `WishBone` | 1 | data/item_pools/bird_pools.gon |
 
 ### Items & Equipment ✅ (no gaps)
 
@@ -110,7 +110,6 @@ Values found in `.gon` files that are **not in their Enum** in `Enums.md`.
 
 ### Enum: `elite_buff` — **33 missing values**
 
-| Missing Value | # Files | Example Sources |
 | :--- | :--- | :--- |
 | `Absorbant` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Bouncy` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
@@ -126,6 +125,7 @@ Values found in `.gon` files that are **not in their Enum** in `Enums.md`.
 | `Mad` | 1 | data/elite_buffs.gon |
 | `Mega` | 1 | data/elite_buffs.gon |
 | `Mirror` | 1 | data/elite_buffs.gon |
+| Missing Value | # Files | Example Sources |
 | `Plow` | 1 | data/elite_buffs.gon |
 | `Protected` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
 | `Reactive` | 2 | data/boss_elite_buffs.gon, data/elite_buffs.gon |
@@ -163,7832 +163,7832 @@ Values found in `.gon` files that are **not in their Enum** in `Enums.md`.
 All unique property keys seen across ALL `.gon` files, sorted by frequency.
 Use this to spot any completely undocumented keys.
 
-| Property Key | # Files | Sample Values |
 | :--- | :--- | :--- |
-| `files` | 232 | `AlienBeast_attack.wav`, `AlienBeast_dying.wav`, `AlienBeast_dying_land.wav`, `AlienBeast_eat.wav`, `AlienBeast_howl.wav` |
-| `Normal` | 223 |  |
-| `Angry` | 221 |  |
-| `DEATH_PARAMS` | 220 |  |
-| `Hit` | 220 |  |
-| `ANGRY_PARAMS` | 220 |  |
-| `NORMAL_PARAMS` | 220 |  |
-| `HISS_PARAMS` | 220 |  |
-| `HIT_PARAMS` | 220 |  |
-| `SING_PARAMS` | 220 |  |
-| `Sad` | 220 |  |
-| `HAPPY_PARAMS` | 220 |  |
-| `PURR_PARAMS` | 220 |  |
-| `Happy` | 220 |  |
-| `SAD_PARAMS` | 220 |  |
-| `Sing` | 220 |  |
-| `Hiss` | 219 |  |
-| `Death` | 219 |  |
-| `Purr` | 218 |  |
-| `distinctly_male` | 103 | `true` |
-| `type` | 87 | `attack`, `battle`, `blankcollar`, `bonus_rare_item`, `boss` |
-| `damage` | 75 | `(15+bonus_melee_damage)*.5`, `(4+bonus_ranged_damage+1)/2`, `(5+bonus_melee_ability_damage)*.5`, `(5+bonus_melee_ability_damage)/2`, `(5+bonus_melee_damage+1)/2` |
-| `object` | 74 | `AlbinoTomTom`, `AlbinoTomTom_Elite`, `AlienBeast`, `AlienEgg`, `AllyRotFly` |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
-| `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` |
-| `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` |
-| `stacks` | 52 | `5+bonus_melee_ability_damage`, `X`, `floor(lck/4)`, `item_aux`, `max(min(X+1, item_aux), 0)` |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
-| `variant_of` | 47 | `Absorb`, `AbsorbSoul`, `Adoubement`, `Aftershock`, `AirBurst` |
-| `speed` | 47 |  |
-| `ability` | 47 | `AZ_LoseHead`, `AlienBeam`, `AlienBeastGoop`, `AlienBeastMoveOne`, `BBPullBomb` |
-| `knockback` | 45 | `2*X`, `X`, `X*2`, `X+1`, `ceil(X*.25/5)` |
-| `con` | 45 | `aux` |
-| `elements` | 44 |  |
-| `class` | 43 | `AOESpellAbility`, `BounceDashAbility`, `Butcher`, `CloneAbility`, `Colorless` |
-| `spd` | 43 | `aux` |
-| `distinctly_female` | 41 | `true` |
-| `good` | 41 | `false`, `true` |
-| `int` | 41 | `aux` |
-| `main` | 40 |  |
-| `meta` | 40 |  |
-| `lck` | 40 | `aux` |
-| `mana` | 39 | `10-X`, `10-X*6`, `15-X`, `15-X*2`, `16-X*16` |
-| `cha` | 39 | `+1`, `aux` |
-| `str` | 39 | `aux` |
-| `faction` | 37 | `allies`, `auto`, `birds`, `cavemen`, `default` |
-| `attack` | 36 | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` |
-| `cost` | 35 |  |
-| `status` | 35 | `AddKnockbackToEverything`, `AllDamageCrits`, `AllDamageImmune`, `AllStatsUp`, `AlphaCat` |
-| `max_range` | 34 | `1+X`, `1+X*2`, `1+bonus_melee_range`, `1+bonus_range`, `2*X` |
-| `damage_instance` | 34 |  |
-| `dex` | 34 | `aux` |
-| `template` | 33 | `dash_attack`, `jump_attack`, `jump_move`, `laser`, `leave` |
-| `stats` | 33 |  |
-| `target` | 32 |  |
-| `target_mode` | 32 | `direction`, `direction8`, `none`, `random_closest_tile`, `random_farthest_tile` |
-| `chance` | 32 |  |
-| `intro` | 31 | `alley/eatinrats_intro.ogg`, `boneyard/boneyard_intro.ogg`, `bunker/bunker_intro.ogg`, `caves/caves_intro.ogg`, `chaos/chaos_boss_intro.ogg` |
-| `shield` | 31 | `aux`, `max((aux-1)*2, 0)` |
-| `max_aoe` | 30 | `(X+1)/2`, `1+bonus_melee_range`, `10+bonus_range`, `2+X`, `3+bonus_range` |
-| `knockback_mode` | 29 | `back_orientation`, `character_to_target`, `character_to_tile`, `character_to_tile_4snap`, `none` |
-| `aoe_mode` | 29 | `8cross`, `all`, `all_except_edges`, `all_except_random_empty`, `area_around_all_player_cats` |
-| `restrictions` | 29 | `aoe_must_be_displaceable`, `aoe_must_be_force_displaceable`, `aoe_must_exist`, `cant_target_behind`, `dash_must_move` |
-| `aoe_considers_character_size` | 28 | `false`, `true` |
-| `pool` | 28 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` |
-| `min_aoe` | 27 | `1+size`, `2+X`, `2+size` |
-| `turns` | 27 |  |
-| `count` | 27 |  |
-| `cat_choice` | 27 | `random` |
-| `subject_frame` | 27 | `a_beggar`, `a_few_coins`, `a_large_poop`, `a_mega_large_poop`, `a_poop` |
-| `event_clip` | 27 | `NonWheelEvent` |
-| `subject_clip` | 27 | `EventSubject` |
-| `title` | 27 | `Ability Pool Test`, `Blessing!`, `EVENT_ABEGGAR_NAME`, `EVENT_ACAT_NAME`, `EVENT_AFEWCOINS_NAME` |
-| `health` | 26 |  |
-| `stat` | 26 | `cha`, `coins`, `con`, `dex`, `int` |
-| `label` | 26 | `1 injury`, `A`, `B`, `C`, `D` |
-| `tags` | 25 | `consumable` |
-| `move` | 25 | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` |
+| `abandonedones` | 1 | `auto` |
 | `abilities` | 24 |  |
-| `brain` | 24 | `DicerBrain`, `GenericBrain`, `MountBrain`, `NoBrain`, `PatternBrain` |
-| `aoe_excludes_self` | 23 | `false`, `true` |
-| `range_mode` | 23 | `8cross`, `cross`, `custom`, `diagcross`, `ground_move` |
-| `cantrip` | 23 | `false`, `true` |
-| `ai` | 23 |  |
-| `properties` | 23 |  |
-| `boss` | 22 | `alley/eatinrats_boss.ogg`, `boneyard/boneyard_boss.ogg`, `caves/caves_boss.ogg`, `chaos/chaos_boss.ogg`, `core/core_boss.ogg` |
-| `cat_speaks` | 22 | `true` |
-| `infcantrip` | 22 | `false`, `true` |
-| `move_weights` | 22 | `bird`, `blind_move_far`, `chaos_always_move`, `chaotic`, `chaotic_runaway` |
-| `strength` | 22 |  |
-| `spells` | 22 |  |
-| `hard` | 22 |  |
-| `aoe_restrictions` | 21 | `allies_only`, `checker_parity_even`, `enemies_only`, `exclude_allies`, `exclude_direct_target` |
-| `element` | 21 | `Electric`, `Fire`, `Gravity`, `Greater_Water`, `Holy` |
-| `decision_weights` | 21 | `always_cast`, `always_cast_careless`, `angry`, `blind`, `careless` |
-| `normal` | 21 |  |
-| `miniboss` | 21 |  |
-| `easy` | 21 |  |
-| `spawn` | 20 |  |
-| `bonus_passives` | 20 |  |
-| `size` | 20 | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` |
-| `dexterity` | 20 |  |
-| `intelligence` | 20 |  |
-| `charisma` | 20 |  |
-| `constitution` | 20 |  |
-| `special` | 20 | `true` |
-| `folder` | 20 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
-| `odds` | 19 |  |
-| `corpse_health` | 19 | `indestructible` |
-| `requirements` | 19 |  |
-| `medium` | 19 |  |
-| `include` | 19 | `standard_nodes.gon`, `voice_template.gon` |
-| `large` | 19 |  |
-| `chapter_item_pool` | 19 | `alleyitems`, `boneyarditems`, `bunkeritems`, `cavesitems`, `coreitems` |
-| `override_art` | 19 | `MapNodeExit_Boneyard`, `MapNodeExit_Bunker`, `MapNodeExit_Caves`, `MapNodeExit_Core`, `MapNodeExit_Crater` |
-| `small` | 19 |  |
-| `custom_aoe` | 18 |  |
-| `X_is` | 18 | `alpha_exists`, `basic_attack_damage`, `cast_count`, `current_health`, `current_mana` |
-| `frame` | 18 | `QuestUnlock_Amplifier`, `QuestUnlock_Cooler`, `QuestUnlock_Gristle`, `QuestUnlock_Head`, `QuestUnlock_Jar` |
-| `movement` | 18 |  |
-| `act_points` | 17 |  |
-| `temporary_effects` | 17 |  |
-| `divine_shield` | 17 |  |
-| `level` | 17 | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` |
-| `number` | 17 |  |
-| `boss_cutscene` | 17 | `alienqueen`, `boris`, `chaos`, `chubsandnubs`, `coven` |
-| `ai_base_score` | 16 |  |
-| `type_icon` | 16 | `attack`, `buff`, `debuff`, `defense`, `heal` |
-| `range_excludes_blocking` | 15 | `false`, `true` |
-| `move_points` | 15 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
-| `keyword_tooltips` | 15 |  |
-| `multihit` | 15 | `X`, `X*2+1`, `X+1` |
-| `pattern` | 15 |  |
-| `do` | 15 | `**BombRatTurtle`, `**G3Shake`, `**RockySlam`, `**SimonFlopper_WiggleChance`, `**SimonFlopper_WiggleFake` |
-| `kind` | 15 | `face`, `head`, `modifier`, `neck`, `trinket` |
-| `next_map` | 15 | `boneyard.gon`, `bunker.gon`, `caves.gon`, `core.gon`, `crater.gon` |
-| `exit0` | 15 |  |
-| `mode` | 14 | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` |
-| `mouth` | 14 | `closed`, `open`, `smile` |
-| `initiative` | 14 | `keep_turns_end_turn` |
-| `luck` | 14 |  |
-| `parent` | 13 | `environment`, `none` |
-| `volume` | 13 | `SE_Interstitial_RaiseSwish`, `and`, `between`, `extra_events`, `for` |
-| `max_sounds` | 13 |  |
-| `do_falloff` | 13 | `false`, `true` |
-| `target_requires_tag` | 13 | `bishop_hat`, `bowling_ball`, `food`, `hitler_clone`, `hitler_clone_fetus` |
-| `slot` | 13 | `face`, `head`, `neck`, `random_empty`, `random_empty_armor` |
-| `once_per_fight` | 13 | `3-X`, `false`, `true` |
-| `max_targets` | 13 | `-X` |
-| `range` | 13 | `global` |
-| `takes_turns` | 13 | `false`, `true` |
-| `ignore` | 13 |  |
-| `set` | 13 | `80s`, `90s`, `AdvancedAlloy`, `Alloy`, `Amoeba` |
-| `rarity` | 13 | `common`, `consumable_common`, `consumable_rare`, `consumable_uncommon`, `consumable_very_rare` |
-| `speed_of_sound` | 12 |  |
-| `channel` | 12 | `actchooser`, `cat_foley`, `johnny_idle`, `no_falloff`, `non_spatial` |
-| `distance_scale` | 12 |  |
-| `pan_falloff_range` | 12 |  |
-| `volume_falloff_range` | 12 |  |
-| `do_doppler` | 12 | `false`, `true` |
-| `icon_shell_frame` | 12 | `attack`, `big_damage`, `damage`, `multihit_attack`, `nodamage` |
-| `even_if_stunned` | 12 | `true` |
-| `hidden_tag` | 12 | `angeljunk`, `bird`, `bloateye`, `bungawarrior`, `cavefamily` |
-| `dispersed_bonus_turns` | 12 |  |
-| `has_token` | 12 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_HasTakenNeedle`, `AdventureToken_Mirage1`, `AdventureToken_Mirage2` |
-| `transitions` | 12 |  |
-| `states` | 12 |  |
-| `dialog` | 12 | `NPC_BEANIES_ALSO_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_10`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_3` |
-| `cat_speak` | 11 | `true` |
-| `splash_damage` | 11 |  |
-| `straight_shot` | 11 | `false`, `true` |
-| `expires_on_begin_turn` | 11 | `true` |
-| `even_if_dead` | 11 | `true` |
-| `durability` | 11 |  |
-| `head` | 11 | `BabyHair`, `Banana`, `BulbHead`, `CoinBag`, `CoinBag_Terminator` |
-| `tail` | 11 |  |
-| `move_block` | 11 | `everything_even_when_dead`, `nothing` |
-| `spawn_side` | 11 | `anywhere`, `cats`, `enemies` |
-| `not_has_token` | 11 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_MysteriousJarRepeat`, `AdventureToken_RedNeedle`, `AdventureToken_StevenTryAgain` |
-| `voice` | 10 | `ankylosaurus`, `female1`, `female10`, `female12`, `female17` |
-| `mute_during_explicit_scenarios` | 10 | `true` |
-| `distance` | 10 |  |
-| `expires_on_end_turn` | 10 | `true` |
-| `tile` | 10 | `BrambleTile`, `CreepTile`, `DirtTile`, `FireTile`, `FlowerTile` |
-| `obj` | 10 | `BeefyCharmedLeech`, `Dice`, `Maggot`, `PyrophinaVS`, `RiftKitten` |
-| `eyes` | 10 | `close`, `closed`, `open` |
-| `kill_required` | 10 | `false`, `true` |
-| `do_all` | 10 |  |
-| `flying` | 10 | `true` |
-| `do_priority` | 10 |  |
-| `banned_elite_buffs` | 10 |  |
-| `can_be_backstabbed` | 10 | `false` |
-| `base_mana_regen` | 10 |  |
-| `weak_threshold` | 10 |  |
-| `locked` | 10 | `false`, `true` |
-| `idle` | 10 |  |
-| `set_state` | 10 | `beanies_intensestatic`, `beanies_right`, `blocking`, `butch_left`, `butch_levelup` |
-| `do_random_sequence` | 10 |  |
-| `voice_x` | 9 |  |
-| `voice_s` | 9 |  |
-| `voice_a` | 9 |  |
-| `voice_8` | 9 |  |
-| `voice_v` | 9 |  |
-| `voice_h` | 9 |  |
-| `voice_g` | 9 |  |
-| `voice_k` | 9 |  |
-| `voice_u` | 9 |  |
-| `voice_2` | 9 |  |
-| `voice_7` | 9 |  |
-| `voice_c` | 9 |  |
-| `voice_l` | 9 |  |
-| `voice_r` | 9 |  |
-| `voice_y` | 9 |  |
-| `voice_n` | 9 |  |
-| `voice_q` | 9 |  |
-| `voice_4` | 9 |  |
-| `voice_e` | 9 |  |
-| `voice_5` | 9 |  |
-| `voice_j` | 9 |  |
-| `voice_0` | 9 |  |
-| `voice_6` | 9 |  |
-| `voice_9` | 9 |  |
-| `voice_3` | 9 |  |
-| `voice_1` | 9 |  |
-| `voice_b` | 9 |  |
-| `voice_m` | 9 |  |
-| `voice_o` | 9 |  |
-| `voice_p` | 9 |  |
-| `voice_w` | 9 |  |
-| `voice_t` | 9 |  |
-| `voice_z` | 9 |  |
-| `voice_d` | 9 |  |
-| `voice_i` | 9 |  |
-| `voice_f` | 9 |  |
-| `catdata` | 9 | `Beaver`, `Bigfoot`, `Bunny`, `Dog`, `Edmund` |
-| `max` | 9 |  |
-| `X_cant_be_zero` | 9 | `true` |
-| `body` | 9 |  |
-| `enemies_only` | 9 | `false`, `true` |
-| `sound` | 9 |  |
-| `move_ability` | 9 | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` |
-| `stun_advances_pattern` | 9 | `false`, `true` |
-| `fallback_advances_pattern` | 9 | `false`, `true` |
-| `Default` | 9 | `release` |
-| `color` | 9 | `black`, `gray`, `white` |
-| `reduction` | 9 |  |
-| `quest_event` | 9 |  |
-| `cat_swears` | 8 | `true` |
-| `clone_items` | 8 | `false`, `true` |
-| `additional_passives` | 8 |  |
-| `can_multihit` | 8 | `false`, `true` |
-| `CastAgain` | 8 | `9+X` |
-| `delayed_trigger` | 8 | `false`, `true` |
-| `min` | 8 |  |
-| `sounds` | 8 |  |
-| `Fury` | 8 |  |
-| `allow_diagonals` | 8 | `true` |
-| `first_turn` | 8 | `end_of_round`, `initiative`, `keep_turns`, `next_round`, `next_turn` |
-| `radius` | 8 |  |
-| `form` | 8 | `Angry`, `Big`, `Bishop`, `BlackHole`, `Bomb` |
-| `alt_sounds` | 8 |  |
-| `virtual_abilities` | 8 |  |
-| `fallback` | 8 |  |
-| `round_end_bonus_turns` | 8 |  |
-| `bonusturn_pattern` | 8 |  |
-| `animation_suffix` | 8 | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` |
-| `mana_regen` | 8 |  |
-| `else` | 8 |  |
-| `ears` | 8 |  |
-| `random` | 8 |  |
-| `loot` | 8 |  |
-| `cursed` | 8 | `true` |
-| `hidden` | 8 | `false`, `true` |
-| `also` | 8 |  |
-| `unknown` | 8 |  |
-| `get` | 8 | `npc_reward`, `sidequest_fail`, `sidequest_reward` |
-| `unprompted` | 8 |  |
-| `aoe_symmetry` | 7 | `eight_way`, `four_way`, `none` |
-| `cant_cast` | 7 | `1-X`, `2-X`, `3-X`, `5-X`, `X` |
-| `arm1` | 7 |  |
-| `requires_reload` | 7 | `true` |
-| `disallow_cost_modification` | 7 | `true` |
-| `prioritize_face_camera` | 7 | `true` |
-| `amount` | 7 |  |
-| `allow_any_orientation` | 7 | `true` |
-| `default` | 7 | `bite1` |
-| `move_for_ability` | 7 | `AlienBeastPuke`, `CaveManPickupSpear`, `G3GrabHead`, `PyrophinaSoloCatThrow`, `PyrophinaVSCatThrow` |
-| `mainturn_pattern` | 7 |  |
-| `spawn_on_death_hit` | 7 | `false` |
-| `initial_form` | 7 | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` |
-| `do_random` | 7 |  |
-| `end_turn_on_formswitch` | 7 | `false`, `true` |
-| `takes_main_turn` | 7 | `false`, `true` |
-| `can_collect_coins` | 7 | `false`, `true` |
-| `counter_minimum` | 7 |  |
-| `examine` | 7 |  |
-| `eat` | 7 |  |
-| `aux` | 7 |  |
-| `event` | 6 | `Blessing`, `Death`, `Tragedy`, `alley/eatinrats_event.ogg`, `boneyard/boneyard_event.ogg` |
-| `requires_destructible_weapon` | 6 | `true` |
-| `range_display_include_character_size` | 6 | `true` |
-| `charge` | 6 | `1-clamp(spd,0,1)` |
-| `chain_ability` | 6 | `BoyDinoDash`, `ChaosStacyAttackChain`, `ControlPlantsPartTwo`, `ControlPlantsPartTwo2`, `ControlWaterPartTwo` |
-| `allow_offmap_casts` | 6 | `true` |
-| `prioritize_dont_change_direction` | 6 | `true` |
-| `arm2` | 6 |  |
-| `intensity` | 6 |  |
-| `weights` | 6 | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` |
-| `range_considers_character_size` | 6 | `false` |
-| `prime` | 6 |  |
-| `upgrade_straight_shot_to_piercing` | 6 | `true` |
-| `value` | 6 | `cha`, `con`, `dex`, `int`, `item_aux+1` |
-| `statuses` | 6 |  |
-| `round_end_bonusturn_pattern` | 6 |  |
-| `knockback_immune` | 6 | `true` |
-| `form_hasnot` | 6 | `Big`, `CaveWoman`, `Close`, `Default`, `Empty` |
-| `auto_orient` | 6 | `false` |
-| `reset_pattern_on_formswitch` | 6 | `false`, `true` |
-| `held_coins` | 6 |  |
-| `evenly_dispersed_bonus_turns` | 6 |  |
-| `form_has` | 6 | `BellyFull`, `CaveWomanHasCat`, `FireFull`, `Full`, `Grappling` |
-| `partial_animation_suffix` | 6 | ``, `Alert`, `Angry`, `Belly`, `Button` |
-| `face` | 6 | `AtomicMark`, `ButcherMask`, `ButcherMask_Terminator`, `HuntersPatch`, `HuntersPatch_Terminator` |
-| `can_get_bonus` | 6 | `true` |
-| `can_be_overkilled` | 6 | `false`, `true` |
-| `inherit_faction` | 6 | `false`, `true` |
-| `asymmetric` | 6 | `false`, `true` |
-| `charm` | 6 |  |
-| `bash` | 6 |  |
-| `eyebrows` | 6 |  |
-| `lock_controls` | 6 |  |
-| `dialog_and_autopass` | 6 | ``, `NPC_BEANIES_INTRO_15`, `NPC_JACK_CANT_AFFORD_1`, `NPC_JACK_PURCHASE_ITEM_1`, `NPC_JACK_UNPROMPTED_1` |
-| `unlock_controls` | 6 |  |
-| `begin_accepting_cats` | 6 | `beanies`, `butch`, `jack`, `organgrinder`, `tink` |
-| `ability_icon` | 5 | `BasicButcherMeleeWideSpin`, `BasicMelee`, `BasicRanged`, `BasicStraightShot`, `BreakShortCircuit` |
-| `can_cast_while_dead` | 5 | `true` |
-| `always_bounce` | 5 | `true` |
-| `is_move` | 5 | `auto`, `true` |
-| `threshold_flat` | 5 |  |
-| `main_turn_only` | 5 | `true` |
-| `multihit_min` | 5 |  |
-| `multihit_max` | 5 |  |
-| `min_targets` | 5 |  |
-| `ontrigger` | 5 | `OldHose_Start_Trigger`, `SE_AnkylosaurusAttack`, `SE_AstroTaserPoke`, `SE_BullRushDash`, `SE_CatWeaponPoke_Chainsaw` |
-| `coins` | 5 |  |
-| `dont_orient_aoe` | 5 | `true` |
-| `leg1` | 5 |  |
-| `custom_range` | 5 |  |
-| `ear1` | 5 |  |
-| `icon_damage_display_eq` | 5 | `1+bonus_spell_damage_display`, `10+bonus_melee_ability_damage`, `3+bonus_melee_ability_damage`, `X*10`, `item_aux` |
-| `stagger_multihit_targets` | 5 | `true` |
-| `max_bounces` | 5 |  |
-| `immediate` | 5 | `false`, `true` |
-| `eye1` | 5 |  |
-| `can_be_champion` | 5 | `false`, `true` |
-| `disperse_main_turns` | 5 | `false`, `true` |
+| `ability` | 47 | `AZ_LoseHead`, `AlienBeam`, `AlienBeastGoop`, `AlienBeastMoveOne`, `BBPullBomb` |
 | `ability_damage_only` | 5 | `true` |
-| `pop_corpse` | 5 | `false` |
-| `move_then_do` | 5 | `CHuskCatShade`, `CerberubsBarrage`, `CerberubsCalm`, `NubsJump`, `RatKingSpawn` |
-| `allies_only` | 5 | `false`, `true` |
-| `initial_health` | 5 |  |
-| `can_eat_food` | 5 | `false`, `true` |
-| `exclude_from_hallucinate` | 5 | `true` |
-| `equipment` | 5 |  |
-| `mana_matters` | 5 | `false`, `true` |
-| `glow` | 5 |  |
-| `sfx` | 5 | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` |
-| `restrict` | 5 | `armor`, `consumables`, `trinket`, `weapon` |
-| `counter_maximum` | 5 |  |
-| `counter_range` | 5 |  |
-| `inspect` | 5 |  |
-| `fight` | 5 |  |
-| `lick` | 5 |  |
-| `smash` | 5 |  |
-| `enter` | 5 |  |
-| `kiss` | 5 |  |
-| `str_aux_initialize` | 5 | `random_class_ability`, `random_class_passive`, `random_copyable_class_ability`, `random_copyable_colorless_ability`, `random_copyable_colorless_passive` |
-| `override_basic_attack` | 5 | `BasicButcherMeleeWideDoubleSpin`, `BasicButcherMeleeWideSpin`, `BasicDruidAbilityVersatile`, `BasicMagicMissile`, `BasicMedicRanged` |
-| `pitch` | 4 | `and`, `between`, `for`, `pitch_range`, `randomized` |
-| `cat_gimmick` | 4 | `true` |
-| `upgraded` | 4 | `true` |
-| `must_not_be_a_summon` | 4 | `true` |
-| `must_be_offmap` | 4 | `true` |
-| `is_basic_attack` | 4 | `false`, `true` |
-| `mouse_offset` | 4 |  |
-| `texture` | 4 |  |
-| `leg2` | 4 |  |
-| `range_display_include_aoe` | 4 | `true` |
-| `sub_ability` | 4 | `CollectiveCounterImpl`, `CollectiveSpinImpl`, `HomingBlasts2_sub`, `HomingBlasts_sub`, `Huddle_Impl` |
-| `distance_sort_targets` | 4 | `true` |
-| `consider_trample` | 4 | `false`, `true` |
-| `new_layer` | 4 | `battle`, `event`, `map` |
-| `ai_ability` | 4 | `AZ_Jump_AI`, `BasicBigMelee`, `BasicMelee`, `BungaSwipe_ai`, `CerberubsJump_AI` |
-| `icon_damage_display` | 4 | `?` |
-| `damage_tiles` | 4 | `all` |
-| `include_spells` | 4 | `true` |
-| `custom_aoe_util` | 4 |  |
-| `min_dist` | 4 |  |
-| `max_dist` | 4 |  |
-| `eye2` | 4 |  |
-| `prevent_chain_tag` | 4 | `ancestorset_shade`, `eb_twin`, `minime_clone`, `necroset_shade` |
-| `alt_spawn_pool` | 4 |  |
-| `inanimate` | 4 | `true` |
-| `lock_orientation` | 4 |  |
-| `base_crit_chance` | 4 |  |
-| `round_start_bonus_turns` | 4 |  |
-| `Rage` | 4 |  |
-| `form_offmap` | 4 | `Default_Ceiling`, `Insane_Ceiling`, `OffMap`, `SpawningPhase`, `Start_Ceiling` |
-| `dispersed_bonus_turns_before_cats` | 4 | `false`, `true` |
-| `do_strict` | 4 |  |
-| `form_onmap` | 4 | `Default`, `Default_Ground`, `FightPhase`, `Insane_Ground` |
-| `dispersed_bonus_turns_consider_initiative` | 4 | `false` |
-| `neck` | 4 | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` |
-| `consider_spells` | 4 | `false` |
-| `weapon` | 4 | `AstroTaser`, `ButcherHook`, `CaveCatClub`, `GunslingerPistol`, `MonkFist` |
-| `access_to_player_inventory` | 4 | `false`, `true` |
-| `ai_scale` | 4 |  |
-| `rounds` | 4 |  |
-| `allow_passive_spelltransforming` | 4 | `true` |
-| `take` | 4 |  |
-| `is_not_chapter` | 4 |  |
-| `go_around` | 4 |  |
-| `legs` | 4 |  |
-| `stack_key` | 4 | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` |
-| `consumable` | 4 | `true` |
-| `parasite` | 4 | `true` |
-| `time_machine` | 4 |  |
-| `unprompted_i` | 4 |  |
-| `unprompted_a` | 4 |  |
-| `unprompted_g` | 4 |  |
-| `unprompted_e` | 4 |  |
-| `unprompted_h` | 4 |  |
-| `unprompted_b` | 4 |  |
-| `unprompted_c` | 4 |  |
-| `unprompted_d` | 4 |  |
-| `unprompted_f` | 4 |  |
-| `hide_text` | 4 |  |
-| `cancelable` | 4 | `true` |
-| `purchase_item` | 4 |  |
-| `tooltip_dialog` | 4 | `NPC_JACK_SHOP_TOOLTIP`, `NPC_ORGANGRINDER_SHOP_TOOLTIP`, `NPC_TRACY_SHOP_TOOLTIP` |
-| `wait_for_cancel` | 4 |  |
-| `stock_fill_order` | 4 |  |
-| `button_nav` | 4 |  |
-| `extra_events` | 3 | `-`, `CardboardBox_ItemReveal`, `Cat_Shadowstep_anime`, `ChakramProjectileSpin`, `Combat_ButtonsHide` |
-| `pitch_range` | 3 |  |
-| `limit_amount` | 3 | `amount`, `at`, `can`, `limit`, `of` |
-| `limit` | 3 | `actchooser`, `channel` |
-| `as_the_crow_flies` | 3 | `true` |
-| `key` | 3 | `EtherSoakedRag`, `JewelOfDrog`, `TaintedOffering`, `TaintedOffering2`, `gamewin` |
-| `LeaveBehind` | 3 | `Bait` |
-| `to` | 3 | `JarOfNothing`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |
-| `from` | 3 | `JarOfChaos`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |
-| `aoe_tile_requires_element` | 3 | `Earth`, `Grass`, `Water` |
-| `ear2` | 3 |  |
-| `JustInCaseTrample` | 3 |  |
-| `works_with_tech` | 3 | `true` |
-| `time` | 3 |  |
-| `new_song` | 3 | `same` |
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | Game-state flag identifiers for tracking world progression and event states. Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
-| `shuffle_tile_order` | 3 | `true` |
-| `face_camera` | 3 | `true` |
-| `throw_consumed_character` | 3 | `true` |
-| `DisableTrample` | 3 |  |
-| `must_be_consuming` | 3 | `true` |
-| `must_be_first_nonmove_action` | 3 | `true` |
-| `aoe_chance` | 3 | `.4+.2*level` |
-| `track_target` | 3 | `true` |
-| `temporary` | 3 | `false` |
-| `start_reloaded` | 3 | `true` |
-| `height` | 3 |  |
-| `shotgun_mode` | 3 | `true` |
-| `post_spawn_statuses` | 3 |  |
-| `splash_damage_aoe_begin` | 3 |  |
-| `formula` | 3 | `X`, `X*10`, `X+1`, `X-1`, `X-2` |
-| `revive_health` | 3 |  |
-| `tag_restriction` | 3 | `collective`, `dc_cat`, `dinofamily` |
-| `oncast` | 3 | `AbilitySnd_Assassinate`, `AbilitySnd_BoulderDrop` |
-| `repeat` | 3 | `infinite`, `never` |
-| `icon_frame` | 3 |  |
-| `core` | 3 | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` |
-| `dimensionx` | 3 | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` |
-| `future` | 3 | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` |
-| `endoftime` | 3 | `AREA_NAME_ENDOFTIME`, `endoftime`, `mapflag_EndOfTimeUnlocked` |
-| `boneyard` | 3 | `AREA_NAME_BONEYARD`, `mapflag_BoneyardUnlocked` |
-| `moon` | 3 | `AREA_NAME_MOON`, `mapflag_IceAgeUnlocked`, `mapflag_MoonUnlocked` |
-| `jurassic` | 3 | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` |
-| `meatworld` | 3 | `AREA_NAME_MEATWORLD`, `mapflag_MeatWorldUnlockedFull` |
-| `caves` | 3 | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` |
-| `theend` | 3 | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` |
-| `Chicken` | 3 |  |
-| `health_threshold` | 3 |  |
-| `move_far` | 3 | `false` |
-| `form_above` | 3 | `Default`, `Full`, `Standing` |
-| `MoveAway` | 3 |  |
-| `is_dying_animation` | 3 | `true` |
-| `priming` | 3 | `DualSword_Primed`, `Priming`, `SwordAndShield_Primed` |
-| `OffMap` | 3 |  |
-| `HasCat` | 3 |  |
-| `on_self_move_too` | 3 | `true` |
-| `form_below` | 3 | `Damaged`, `DesireMech`, `Standing2` |
-| `Up` | 3 |  |
-| `backstabs_only` | 3 | `true` |
-| `last_turn_is_main_turn` | 3 | `true` |
-| `Big` | 3 |  |
-| `flat_chance` | 3 |  |
-| `Down` | 3 |  |
-| `not_priming` | 3 | `DualSword`, `NotPriming`, `SwordAndShield` |
-| `do_nothing` | 3 |  |
-| `craft_ability` | 3 | `TinkererCraft` |
-| `auto_run_priority` | 3 | `default`, `stationary`, `support` |
-| `throw_ability` | 3 | `TinkererThrow` |
-| `base_movement` | 3 |  |
-| `base_initiative` | 3 |  |
-| `animate_choice` | 3 | `false`, `true` |
-| `is_player_cat` | 3 | `false`, `true` |
-| `chain` | 3 | `AcidSplash`, `CaveSplash`, `FireFullSmall`, `Kingblood2`, `MeatCaveSplash` |
-| `move_then_do_random` | 3 |  |
-| `passive` | 3 |  |
-| `fights_skipped` | 3 |  |
-| `skip_result_screen` | 3 | `true` |
-| `same_cat` | 3 | `true` |
-| `copy_results` | 3 | `examine`, `lever`, `open`, `red`, `smash` |
-| `open` | 3 |  |
-| `run` | 3 |  |
-| `drink` | 3 |  |
-| `stat_min` | 3 |  |
-| `animation_fail` | 3 | `choice_no_coins` |
-| `stat_max` | 3 |  |
-| `sneak` | 3 |  |
-| `id` | 3 | `Attic`, `Wind` |
-| `text` | 3 | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` |
-| `uncommon` | 3 |  |
-| `very_rare` | 3 |  |
-| `ge` | 3 |  |
-| `on_store` | 3 | `become_aux_coins`, `become_furniture`, `become_rare_furniture` |
-| `dont_destroy_on_0` | 3 | `true` |
-| `jestercat` | 3 | `auto` |
-| `exit1` | 3 |  |
-| `override_music` | 3 | `chaos_boss`, `finalboss`, `throbbingking` |
-| `verycloseup` | 3 |  |
-| `closeup` | 3 |  |
-| `zoomedout` | 3 |  |
-| `forward_to_tips` | 3 |  |
-| `do_sequence` | 3 | `butch_tips_intelligence`, `forward_to_tips`, `tink_tips_comfort` |
-| `out_of_stock` | 3 |  |
-| `cant_afford` | 3 |  |
-| `bonus_items` | 3 |  |
-| `item_groups` | 3 |  |
-| `breakdown` | 3 |  |
-| `house_shop` | 3 | `true` |
-| `Example` | 2 |  |
-| `pan_falloff` | 2 | `by`, `global`, `multiplied`, `need`, `not` |
-| `triggering` | 2 | `at`, `chooses`, `file`, `from`, `here` |
-| `volume_range` | 2 |  |
-| `the` | 2 | `Example`, `PlaySound`, `access`, `effect`, `engine` |
-| `should` | 2 | `need`, `not` |
-| `falloff_range` | 2 |  |
-| `results` | 2 | `a`, `in`, `new`, `of`, `range` |
-| `constant` | 2 | `pitch`, `volume` |
-| `same` | 2 | `a`, `as`, `but`, `range` |
-| `delay_frames` | 2 |  |
-| `falloff` | 2 | `by`, `global`, `multiplied`, `setting`, `volume_falloff_range` |
-| `with` | 2 | `a`, `base`, `of`, `setting`, `settingh` |
-| `begin` | 2 |  |
-| `Purrx` | 2 |  |
-| `hint_can_target_pickups` | 2 | `true` |
-| `trample_allies_too` | 2 | `true` |
-| `must_have_weapon` | 2 | `true` |
-| `tooltip_values` | 2 |  |
-| `target_requires_element` | 2 |  |
-| `is_trinket` | 2 | `true` |
-| `recalc_target_on_castpoint` | 2 | `true` |
-| `aoe_hint_teamcast` | 2 | `true` |
-| `DashFury` | 2 |  |
-| `icon_damage_display_suffix` | 2 | `x10`, `x2` |
-| `special_tile_tag` | 2 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation` |
-| `inherit_elite_buffs` | 2 | `false` |
-| `start_dead` | 2 | `true` |
-| `redirect_location_if_blocked` | 2 | `true` |
-| `contact_requires_adjacency` | 2 | `false` |
-| `must_not_be_consuming` | 2 | `true` |
-| `reorient_thrown_character` | 2 | `true` |
-| `must_be_first_action` | 2 | `false`, `true` |
-| `aoe` | 2 |  |
-| `hint_can_target_empty` | 2 | `false`, `true` |
-| `low_gravity_boostable` | 2 | `false`, `true` |
-| `fights` | 2 |  |
-| `low_health_character_threshold` | 2 | `item_aux` |
-| `max_distance` | 2 |  |
-| `upgrade_straight_shot_to_boomerang` | 2 | `true` |
-| `is_weapon` | 2 | `true` |
-| `requires_exact_character_aux` | 2 |  |
-| `randomize_target_within_range` | 2 |  |
-| `skilltemp` | 2 | `true` |
-| `BreakIntoRocks` | 2 | `Coin`, `SmallRock` |
-| `oncastpoint` | 2 | `AirHorn`, `Batterup_Swing_Castpoint` |
-| `aoe_leading_edge_only` | 2 | `true` |
-| `cantrip_group` | 2 | `THC_CoinRoll`, `cavemomtoss`, `kaiju_roar`, `spewer_suck` |
-| `toss_direction_restriction` | 2 | `backwards`, `forwards` |
-| `threshold_percent` | 2 |  |
-| `icon_damage_type` | 2 | `magic`, `physical` |
-| `empty_self_damage` | 2 |  |
-| `chapter` | 2 | `alley` |
-| `eyebrow1` | 2 |  |
-| `force_ai_target_as_spell` | 2 | `true` |
-| `range_display_include_direction` | 2 | `true` |
-| `disease` | 2 | `BirdFlu`, `Cancer`, `CommonCold`, `Covid`, `Ebola` |
-| `exit_ability` | 2 | `DybbukReturn` |
-| `respect_prime` | 2 | `true` |
-| `required_difficulty` | 2 |  |
-| `complete_chapter` | 2 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
-| `set_savefile_flag` | 2 | `AlienInvasionUnlocked`, `HauntedNightUnlocked`, `PlotFlag_Beanies_Homeless`, `PlotFlag_FrankBeanies`, `RestlessDeadUnlocked` |
-| `roll_limit` | 2 |  |
-| `only_at_battle_start` | 2 | `true` |
-| `specific_chapter` | 2 |  |
-| `aura_effects_allies` | 2 | `false` |
-| `minion_alt` | 2 | `SlightlyDepressing`, `SubTwin`, `SubUndying` |
-| `rollable` | 2 | `false` |
-| `unique` | 2 | `true` |
-| `bite` | 2 |  |
-| `Hunter` | 2 |  |
-| `Druid` | 2 |  |
-| `Butcher` | 2 |  |
-| `Necromancer` | 2 |  |
-| `Monk` | 2 |  |
-| `Colorless` | 2 |  |
-| `Mage` | 2 |  |
-| `Medic` | 2 |  |
-| `Tank` | 2 |  |
-| `Thief` | 2 |  |
-| `Tinkerer` | 2 |  |
-| `Fighter` | 2 |  |
-| `Psychic` | 2 |  |
-| `lab` | 2 | `AREA_NAME_LAB`, `mapflag_LabUnlocked` |
-| `alley` | 2 | `AREA_NAME_ALLEY`, `departed_first_real_adventure` |
-| `sewers` | 2 | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` |
-| `iceage` | 2 | `AREA_NAME_ICEAGE`, `mapflag_IceAgeUnlocked` |
-| `desert` | 2 | `AREA_NAME_DESERT`, `mapflag_DesertUnlocked` |
-| `bunker` | 2 | `AREA_NAME_BUNKER`, `mapflag_BunkerUnlocked` |
-| `crater` | 2 | `AREA_NAME_CRATER`, `mapflag_CraterUnlocked` |
-| `junkyard` | 2 | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` |
-| `ally_rewards` | 2 |  |
-| `Mutant` | 2 |  |
-| `Turkey` | 2 |  |
-| `visually_spiky` | 2 | `true` |
-| `do_all_shuffle` | 2 |  |
-| `check_in_form` | 2 | `Boris`, `Default` |
-| `use_ai` | 2 | `true` |
-| `Priming` | 2 |  |
-| `do_best` | 2 |  |
-| `boss_minions_runaway` | 2 | `false` |
-| `dispersed_bonusturn_pattern` | 2 |  |
-| `cancel_knockback` | 2 | `true` |
-| `clamp_pattern` | 2 | `true` |
-| `Small` | 2 |  |
-| `warrior_tag` | 2 | `bungawarrior`, `finalboss_clonecat` |
-| `use_turn_animations` | 2 | `true` |
-| `wait_till_next_round_to_update_turns` | 2 | `true` |
-| `NotPriming` | 2 |  |
-| `random_orient` | 2 | `true` |
-| `view_bleeding_characters_as_enemies` | 2 | `true` |
-| `consider_all_layers` | 2 | `true` |
-| `target_filter` | 2 | `Kitten`, `any` |
-| `SquirrelForm` | 2 |  |
-| `trinket` | 2 | `MCHadouken`, `MonkStyleChanger` |
-| `playercat_health` | 2 |  |
-| `base_mana` | 2 |  |
-| `base_health_regen` | 2 |  |
-| `base_initial_mana` | 2 |  |
-| `base_health` | 2 |  |
-| `Leave` | 2 | `CherubimLeave`, `LELeave` |
-| `thresholds` | 2 |  |
-| `ranged_only` | 2 | `true` |
-| `cancel_movement` | 2 | `false` |
-| `Return` | 2 | `CherubimReturn`, `LEReturn` |
-| `MoveClose` | 2 |  |
-| `force_not_familiar` | 2 | `true` |
-| `deathpoof_size` | 2 |  |
-| `only_when_not_your_turn` | 2 | `true` |
-| `always_triggers_traps` | 2 | `true` |
-| `MoveCenter` | 2 |  |
-| `Water` | 2 |  |
-| `chance_per_damage` | 2 |  |
-| `can_grant_extra_turns` | 2 | `false` |
-| `alternate_energized_effect` | 2 |  |
-| `icon` | 2 | `DejaVu2`, `DejaVu3` |
-| `force_display_name` | 2 | `true` |
-| `Holy` | 2 | `MegaGuppy_TransformHoly` |
-| `aoe_pierce_mode` | 2 | `block` |
-| `pathfinding_avoidance` | 2 |  |
-| `exclude` | 2 | `SpellDamageUp`, `fire`, `water` |
-| `tall` | 2 | `true` |
-| `blocking` | 2 | `false`, `idlenoani` |
-| `active` | 2 |  |
-| `objects_too` | 2 | `true` |
-| `Fire` | 2 |  |
-| `Catnip` | 2 |  |
-| `Food` | 2 |  |
-| `Antidote` | 2 |  |
-| `can_run` | 2 | `false` |
-| `attack_pool` | 2 |  |
-| `description` | 2 | `CAT_CLASS_BUTCHER_DESC`, `CAT_CLASS_COLORLESS_DESC`, `CAT_CLASS_DRUID_DESC`, `CAT_CLASS_FIGHTER_DESC`, `CAT_CLASS_HUNTER_DESC` |
-| `defense` | 2 |  |
-| `starter_abilities` | 2 |  |
-| `stat_mods` | 2 |  |
-| `passive_pool` | 2 |  |
 | `ability_groups` | 2 |  |
-| `levelup_stats` | 2 |  |
+| `ability_icon` | 5 | `BasicButcherMeleeWideSpin`, `BasicMelee`, `BasicRanged`, `BasicStraightShot`, `BreakShortCircuit` |
 | `ability_pool` | 2 |  |
-| `misc` | 2 |  |
-| `not_cat_has_item_equipped` | 2 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `Horns` |
-| `cat_has_item_equipped` | 2 | `CryogenicTimeChamber_Empty`, `CryogenicTimeChamber_Full`, `FaceCovering`, `GuillotinasHead`, `JarOfRadiatedBlood` |
-| `choose_cat_with_min_health` | 2 |  |
-| `return_as` | 2 | `enemy` |
-| `return_during` | 2 | `boss` |
-| `pick` | 2 |  |
-| `KillEnemyOfTypeAtBattleStart` | 2 |  |
-| `enemy_type` | 2 | `any`, `cat` |
-| `ice` | 2 |  |
-| `lightning` | 2 |  |
-| `fire` | 2 |  |
-| `move_closer` | 2 |  |
-| `find_another_way` | 2 |  |
-| `use_weapon` | 2 |  |
-| `play` | 2 |  |
-| `is_chapter` | 2 |  |
-| `destroy` | 2 |  |
-| `free` | 2 | `false` |
-| `minimum_party_size` | 2 |  |
-| `not_on_quest` | 2 |  |
-| `arms` | 2 |  |
-| `investigate` | 2 |  |
-| `sacrifice` | 2 |  |
-| `repair` | 2 |  |
-| `touch` | 2 |  |
-| `turnon` | 2 |  |
-| `home` | 2 |  |
-| `Stimulation` | 2 |  |
-| `Comfort` | 2 |  |
-| `Appeal` | 2 |  |
-| `volume_adjustment` | 2 |  |
-| `preset` | 2 | `AUDITORIUM`, `Alley`, `Cave`, `Forest`, `LIVINGROOM` |
-| `ambient_sound` | 2 | `amb_acidrain.ogg`, `amb_blizzard.ogg`, `amb_butterflyswarm.ogg`, `amb_flyswarm.ogg`, `amb_heavyrain.ogg` |
-| `basic_consumables` | 2 |  |
-| `name_mod` | 2 | `CAT_NAME_MOD_AMOEBA`, `CAT_NAME_MOD_COOL`, `CAT_NAME_MOD_DEMONIC`, `CAT_NAME_MOD_DWARF`, `CAT_NAME_MOD_GIGANTISM` |
-| `allow_energize_self` | 2 | `true` |
-| `ally_chance` | 2 |  |
-| `str_aux_is_copy_passive` | 2 | `true` |
-| `global_tags` | 2 |  |
-| `global_passives` | 2 |  |
-| `quest_item_alias` | 2 | `BlackShard`, `NuclearKnife` |
-| `quest_item` | 2 | `false`, `true` |
-| `chance_to_break` | 2 |  |
-| `durability_loss` | 2 |  |
-| `indestructible` | 2 | `true` |
-| `prevent_level_up` | 2 | `true` |
-| `eq` | 2 |  |
-| `health_percent` | 2 |  |
-| `max_durability` | 2 |  |
-| `item` | 2 | `EstusFlask_Full`, `GallonOfWater`, `WaterBottle_Full` |
-| `randomize_piece_frames` | 2 | `true` |
-| `hard_initial` | 2 |  |
-| `HardPathUnlocked` | 2 |  |
-| `is_final_boss` | 2 | `true` |
-| `MeatWorldUnlocked` | 2 |  |
-| `BothObelisksUnlocked` | 2 |  |
-| `DimensionXUnlocked` | 2 |  |
-| `VolcanoAntennaAttached` | 2 |  |
-| `EndOfTimeUnlocked` | 2 |  |
-| `musiclayer` | 2 | `boss` |
-| `treasure` | 2 |  |
-| `tracy_foodstorage10` | 2 |  |
-| `organ_upgrade2` | 2 |  |
-| `upgrade_storage_repeating_hard` | 2 |  |
-| `upgrade_storage_6` | 2 |  |
-| `upgrade_storage_repeating_crazy` | 2 |  |
-| `jack_shopupgrade1` | 2 |  |
-| `upgrade_storage_4` | 2 |  |
-| `upgrade_storage_repeating_impossible` | 2 |  |
-| `tracy_foodstorage7` | 2 |  |
-| `upgrade_storage_1` | 2 |  |
-| `tink_max_intro` | 2 |  |
-| `tracy_blankcollar2` | 2 |  |
-| `house_upgrade_attic` | 2 |  |
-| `tracy_foodstorage2` | 2 |  |
-| `upgrade_storage_2` | 2 |  |
-| `frank_max_intro` | 2 |  |
-| `organ_upgrade5` | 2 |  |
-| `tracy_idol4` | 2 |  |
-| `tracy_foodstorage1` | 2 |  |
-| `steven_milliontrashed` | 2 |  |
-| `jack_max_intro` | 2 |  |
-| `tink_relationships` | 2 |  |
-| `tink_basestats` | 2 |  |
-| `tracy_foodstorage6` | 2 |  |
-| `upgrade_storage_3` | 2 |  |
-| `organ_upgrade3` | 2 |  |
-| `tink_inbreeding` | 2 |  |
-| `tracy_foodstorage4` | 2 |  |
-| `tracy_foodstorage5` | 2 |  |
-| `tracy_foodstorage9` | 2 |  |
-| `tracy_idol6` | 2 |  |
-| `organ_upgrade1` | 2 |  |
-| `tracy_idol1` | 2 |  |
-| `tracy_foodstorage8` | 2 |  |
-| `beanies_quests_repeat` | 2 |  |
-| `tink_prettybow` | 2 |  |
-| `organ_upgrade6` | 2 |  |
-| `tracy_foodstorage3` | 2 |  |
-| `house_upgrade_4throom` | 2 |  |
-| `jack_shopupgrade3` | 2 |  |
-| `tink_sexuality` | 2 |  |
-| `organ_max_intro` | 2 |  |
-| `jack_shopupgrade2` | 2 |  |
-| `tracy_max_intro` | 2 |  |
-| `upgrade_storage_repeating_normal` | 2 |  |
-| `house_upgrade_mediumhouse` | 2 |  |
-| `frank_max_repeating` | 2 |  |
-| `organ_max_repeating` | 2 |  |
-| `tracy_idol3` | 2 |  |
-| `tracy_idol7` | 2 |  |
-| `upgrade_storage_7` | 2 |  |
-| `tink_aggression` | 2 |  |
-| `tracy_blankcollar3` | 2 |  |
-| `jack_shopupgrade4` | 2 |  |
-| `upgrade_storage_repeating_intro` | 2 |  |
-| `jack_max_repeating` | 2 |  |
-| `organ_unlock` | 2 |  |
-| `tracy_blankcollar1` | 2 |  |
-| `tracy_idol5` | 2 |  |
-| `tink_tags` | 2 |  |
-| `organ_upgrade4` | 2 |  |
-| `upgrade_storage_5` | 2 |  |
-| `house_upgrade_largehouse` | 2 |  |
-| `tracy_idol2` | 2 |  |
-| `tracy_max_repeating` | 2 |  |
-| `beanies_quests_intro` | 2 |  |
-| `tink_max_repeating` | 2 |  |
-| `screenshake` | 2 |  |
-| `set_mood` | 2 | `default`, `happy`, `pondering`, `sad`, `veryhappy` |
-| `wait_for` | 2 | `action_selected`, `cat_turn`, `choose_cat1`, `choose_cat2`, `click` |
-| `alpha` | 2 |  |
-| `particle_lifetime` | 2 |  |
-| `dampening` | 2 |  |
-| `force` | 2 |  |
-| `alpha_in` | 2 |  |
-| `speed_start` | 2 |  |
-| `emit_direction` | 2 |  |
-| `render_layer` | 2 | `background`, `sorted_distortions`, `splatters`, `top` |
-| `friction_start` | 2 |  |
-| `position` | 2 |  |
-| `friction` | 2 |  |
-| `combo` | 2 |  |
-| `size_start` | 2 |  |
-| `size_out` | 2 |  |
-| `simulation_space` | 2 | `global` |
-| `emit_spread` | 2 |  |
-| `render_mode` | 2 | `default`, `separate` |
-| `live_bounds` | 2 |  |
-| `rotation` | 2 |  |
-| `emit_box` | 2 |  |
-| `size_end` | 2 |  |
-| `alpha_out` | 2 |  |
-| `emit_amount` | 2 |  |
-| `rotation_speed` | 2 |  |
-| `ParticleBouncePlane` | 2 |  |
-| `size_in` | 2 |  |
-| `friction_end` | 2 |  |
-| `face_moving_direction` | 2 | `false`, `true` |
-| `rotation_speed_end` | 2 |  |
-| `ParticleRandomForce` | 2 |  |
-| `projection_matrix` | 2 | `default` |
-| `scripts` | 2 |  |
-| `emit_rate` | 2 |  |
-| `speed_scale` | 2 |  |
-| `cycle_start` | 2 |  |
-| `Item` | 2 |  |
-| `consumable_uncommon` | 2 |  |
-| `consumable_very_rare` | 2 |  |
-| `consumable_common` | 2 |  |
-| `mandatory` | 2 | `true` |
-| `item_rarity_costs` | 2 |  |
-| `consumable_rare` | 2 |  |
-| `editor` | 2 |  |
-| `category` | 2 |  |
-| `image_tint` | 2 | `blue`, `red` |
-| `image` | 2 | `empty.png` |
-| `orientation` | 2 | `east`, `north`, `south`, `west` |
-| `trap` | 2 | `BearTrap`, `LandMine`, `WaterKittenTrap`, `WebTrap` |
-| `paint` | 2 | `false`, `true` |
-| `subcategory` | 2 |  |
-| `Ani_Moth_dying_Frame42` | 1 |  |
-| `Ani_CaveChief_yell_Frame34` | 1 |  |
-| `Ani_Rager_dying_Frame2` | 1 |  |
-| `Ani_AngelicCatFetus_charm_Frame9` | 1 |  |
-| `Ani_LightningElemental_hit_Frame2` | 1 |  |
-| `Ani_ThrobbingKing2_shoot_Frame6` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame112` | 1 |  |
-| `Ani_MoonHand_dying_Frame2` | 1 |  |
-| `Ani_HitlerHead_yell3_Frame5` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame889` | 1 |  |
-| `Ani_Angel_attack_Frame42` | 1 |  |
-| `Obj_HolyPickupLand` | 1 |  |
-| `Ani_Cat_eatTrinket_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_pulse2_Frame2` | 1 |  |
-| `Ani_Trampy_poop_Frame14` | 1 |  |
-| `Ani_Zaratana_revenge_Frame2` | 1 |  |
-| `Ani_Gambit_walk_Frame13` | 1 |  |
-| `Ani_Sprout_dying_Frame2` | 1 |  |
-| `Ani_BigSlimeX_dying_Frame19` | 1 |  |
-| `Ani_Zaratana_magnet_Frame2` | 1 |  |
-| `Ani_TheBloat_shootForward_Frame39` | 1 |  |
-| `Ani_Scary_dying_Frame2` | 1 |  |
-| `Ani_Carcus_spawn_Frame2` | 1 |  |
-| `Ani_FleshLad_attack_Frame75` | 1 |  |
-| `Ani_Guillotina2Body_tantrum_Frame88` | 1 |  |
-| `Ani_SlotMachine_hit_Frame2` | 1 |  |
-| `Ani_Cat_weaponAbsorb_Frame5` | 1 |  |
-| `Ani_FlySwarm_dying4_Frame2` | 1 |  |
-| `Ani_Gasser_shoot_Frame10` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame366` | 1 |  |
-| `Ani_Interstitial_fight_Frame2` | 1 |  |
-| `Ani_MotherTumor_grow_Frame2` | 1 |  |
-| `Ani_BabyShark_walk_Frame2` | 1 |  |
-| `Ani_SlotMachine_dying_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackL1_Frame7` | 1 |  |
-| `Ani_Whisperer_dying_Frame2` | 1 |  |
-| `ProjectileHitNothing_LightningBallProjectile` | 1 |  |
-| `Ani_Interstitial_itemGet_Frame112` | 1 |  |
-| `Ani_MegaFetus_weakLB_Frame460` | 1 |  |
-| `Ani_Guillotina2Body_tantrum_Frame58` | 1 |  |
-| `Ani_GeoLad_dying_Frame9` | 1 |  |
-| `Ani_Cat_ButcherStartTurn_Frame22` | 1 |  |
-| `Ani_BoyDino_hit_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_hit3_Frame2` | 1 |  |
-| `Ani_HumanCat_dyingDH_Frame2` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame59` | 1 |  |
-| `Ani_Parasiter_hit_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame25` | 1 |  |
-| `Ani_Dybbuk_attack_Frame2` | 1 |  |
-| `Ani_BoyDino_walk_Frame2` | 1 |  |
-| `Ani_FlySwarm_dying_Frame8` | 1 |  |
-| `Ani_CavePerson_dyingCaveBaby_Frame46` | 1 |  |
-| `Ani_Cat_MageStartTurn_Frame7` | 1 |  |
-| `Ani_Cat_shadowStepOut_Frame2` | 1 |  |
-| `Ani_Cat_tripleswat_Frame6` | 1 |  |
-| `Ani_FleshLad_idle_Frame153` | 1 |  |
-| `Ani_Peashy_blocked_Frame7` | 1 |  |
-| `Ani_Shambler_reassemble_Frame2` | 1 |  |
-| `Ani_SnakeyBones_shoot3_Frame41` | 1 |  |
-| `Ani_TracyX_hitRF_Frame3` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame16` | 1 |  |
-| `Ani_MegaDinoLeg_return_Frame13` | 1 |  |
-| `Ani_Interstitial_girlRejectBoy_Frame65` | 1 |  |
-| `Ani_Guillotina1_enrage_Frame33` | 1 |  |
-| `Ani_PokerDemon_dying_Frame6` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame20` | 1 |  |
-| `Ani_LoveBot_walk_Frame2` | 1 |  |
-| `Ani_TallBot_suplex_Frame2` | 1 |  |
-| `Ani_Interstitial_learn_Frame71` | 1 |  |
-| `Ani_Interstitial_breed1_Frame302` | 1 |  |
-| `Ani_Cat_kicksand_Frame45` | 1 |  |
-| `SE_Interstitial_Fight` | 1 |  |
-| `Ani_TarBaby_hit_Frame2` | 1 |  |
-| `Ani_Kirby_dyingFull_Frame2` | 1 |  |
-| `Ani_Trampy_poop_Frame3` | 1 |  |
-| `Ani_Cat_stompwalk_Frame44` | 1 |  |
-| `Ani_MegaDinoLeg_poop_Frame2` | 1 |  |
-| `Ani_Cat_groundpound_Frame30` | 1 |  |
-| `Ani_MegaDinoLeg_stomp_Frame2` | 1 |  |
-| `Ani_Chubs_rage_Frame244` | 1 |  |
-| `Ani_JarHead_hit_Frame7` | 1 |  |
-| `Ani_GambitDice_land_Frame36` | 1 |  |
-| `Ani_Zaratana_attack_Frame3` | 1 |  |
-| `Ani_TheBloat_shootForward1_Frame39` | 1 |  |
-| `SE_BirdMed_DyingCall` | 1 |  |
-| `Ani_BirdMed_idle_Frame351` | 1 |  |
-| `Ani_Bear_walk_Frame14` | 1 |  |
-| `Ani_Punchbot_dying_Frame2` | 1 |  |
-| `Ani_Cat_FighterStartTurn_Frame35` | 1 |  |
-| `Ani_TracyX_hitRF_Frame2` | 1 |  |
-| `Ani_SpiderQueen_attackInsane_Frame2` | 1 |  |
-| `Ani_MotherTumor_grabBig_Frame28` | 1 |  |
-| `Obj_ManaPickupLand` | 1 |  |
-| `Ani_ShadeMShadow_dying_Frame42` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame329` | 1 |  |
-| `Ani_Trex_hit_Frame6` | 1 |  |
-| `Ani_MoonHead_digestCatSwallowedCracked_Frame2` | 1 |  |
-| `Ani_Tormentor_dying_Frame2` | 1 |  |
-| `Ani_FatWoman_slam_Frame2` | 1 |  |
-| `Ani_TracyX_hitLF_Frame2` | 1 |  |
-| `Ani_Pile_hit_Frame2` | 1 |  |
-| `Ani_AlienBeast_walk_Frame7` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame76` | 1 |  |
-| `Ani_Lenny_grabCorpse_Frame3` | 1 |  |
-| `Ani_OrganGrinderX_dying_Frame3` | 1 |  |
-| `Ani_CatHuman_hit_Frame7` | 1 |  |
-| `Ani_TheBloat_spawn1_Frame3` | 1 |  |
-| `Ani_Cat_attack_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_chargeholy3_Frame2` | 1 |  |
-| `Ani_Cat_dashatk_Frame2` | 1 |  |
-| `Ani_CavePerson_dyingCaveBaby_Frame2` | 1 |  |
-| `Ani_Guillotina3Head_shoot_Frame3` | 1 |  |
-| `Ani_MamaMaggot_tinaspawnin_Frame2` | 1 |  |
-| `Ani_HitlerHead_yell1_Frame5` | 1 |  |
-| `Ani_GraveWorm_hit_Frame2` | 1 |  |
-| `Ani_CavePerson_growupCaveBaby_Frame48` | 1 |  |
-| `ProjectileHitNothing_spitprojectile` | 1 |  |
-| `ProjectileSpawn_LobbedProjectile` | 1 |  |
-| `Ani_AcidOoze_shoot_Frame2` | 1 |  |
-| `Ani_CavePerson_hitCaveWoman_Frame9` | 1 |  |
-| `Ani_Lenny_grabCorpse_Frame92` | 1 |  |
-| `Ani_MechSuit_hit_Frame3` | 1 |  |
-| `Ani_GirlDino_spawn_Frame7` | 1 |  |
-| `Ani_FetusNoJar_hit_Frame3` | 1 |  |
-| `Ani_ManglersMonster_explodeRB_Frame148` | 1 |  |
-| `Ani_ManglersMonster_hitLB_Frame3` | 1 |  |
-| `Ani_Pinky_walk_Frame2` | 1 |  |
-| `Ani_FetusNoJar_lickGrown_Frame17` | 1 |  |
-| `Ani_TracyX_hitLB_Frame3` | 1 |  |
-| `Ani_FinalBossPhase2_walk2_Frame2` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame692` | 1 |  |
-| `DamageDivineShield` | 1 |  |
-| `Ani_Cat_flipCoinFail_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame90` | 1 |  |
-| `Ani_HangerBot_portout_Frame4` | 1 |  |
-| `Ani_CavePerson_attackCatCaveWoman_Frame31` | 1 |  |
-| `Ani_Cat_cartwheel_Frame71` | 1 |  |
-| `Ani_MechSuit_ramStart_Frame2` | 1 |  |
-| `Ani_MegaFetus_attackLF_Frame9` | 1 |  |
-| `Ani_CavePerson_kickCaveWoman_Frame21` | 1 |  |
-| `Ani_BunkerBoy_idleBombZealot_Loop` | 1 |  |
-| `Ani_BungaElite2_hitCaveMan_Frame8` | 1 |  |
-| `Ani_AstroSkull_scream_Frame2` | 1 |  |
-| `Ani_AstroZombie_dying_Frame32` | 1 |  |
-| `Ani_Cat_meditate_Frame41` | 1 |  |
-| `Ani_SmallSlime_dying_Frame3` | 1 |  |
-| `ProjectileHitNothing_Projectile` | 1 |  |
-| `Ani_MoonHead_yellCracked_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame89` | 1 |  |
-| `Ani_BirdMed_runAway_Frame9` | 1 |  |
-| `Ani_Triceratops_walk_Frame56` | 1 |  |
-| `Ani_Bomb_dying_Frame2` | 1 |  |
-| `Ani_Pyrophina_throwboss_Frame51` | 1 |  |
-| `Ani_Pterodactyl_struggle_Frame59` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame217` | 1 |  |
-| `Ani_TheBloat_shoot1_Frame8` | 1 |  |
-| `Ani_LordBunga_hitChair_Frame3` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame22` | 1 |  |
-| `Ani_Bumblefoot_cryUp_Frame2` | 1 |  |
-| `Ani_Trampy_attack_Frame4` | 1 |  |
-| `Ani_Husk_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame414` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame355` | 1 |  |
-| `SpellSpawn_Icequake` | 1 |  |
-| `Ani_BabyShark_dying_Frame2` | 1 |  |
-| `ProjectileSpawn_BoneProjectile` | 1 |  |
-| `Tick_Immobile` | 1 |  |
-| `Ani_Cat_fastthrowstart_Frame5` | 1 |  |
-| `Ani_Floast_spawn_Frame2` | 1 |  |
-| `Ani_TumorBarrier_hit_Frame3` | 1 |  |
-| `Ani_Pterodactyl_dropCat_Frame19` | 1 |  |
-| `Ani_Cat_donkeykick_Frame13` | 1 |  |
-| `Ani_Johnny_idle_Frame2` | 1 |  |
-| `StatusApply_Quivered` | 1 |  |
-| `Ani_Spookie_walk_Frame2` | 1 |  |
-| `Ani_Floater_hit_Frame9` | 1 |  |
-| `Ani_Zaratana_exitTurtle_Frame2` | 1 |  |
-| `Ani_Guillotina2Body_hit_Frame2` | 1 |  |
-| `Ani_HitlerHead_yell2_Frame4` | 1 |  |
-| `Ani_DrMangler_monsterdeathJoystick_Frame2` | 1 |  |
-| `Ani_Trampy_dodge_Frame40` | 1 |  |
-| `Ani_RattleSnake_walk_Frame14` | 1 |  |
-| `Ani_ShamblingShade_consumeCat_Frame100` | 1 |  |
-| `Ani_CanCreeperOut_enterWater_Frame2` | 1 |  |
-| `Ani_CatHuman_dying_Frame10` | 1 |  |
-| `Ani_TheBloat_jump_Frame2` | 1 |  |
-| `ProjectileHitCharacter_BoneProjectile` | 1 |  |
-| `Ani_BungaElite1_pickupCaveMan_Frame14` | 1 |  |
-| `Ani_AstroZombie_dyingHeadless_Frame2` | 1 |  |
-| `Ani_LordBunga_roar_Frame17` | 1 |  |
-| `DamageHealthMedCrit` | 1 |  |
-| `Ani_Triceratops_walk_Frame27` | 1 |  |
-| `Ani_FlySwarm_dying_Frame31` | 1 |  |
-| `Ani_Cat_pray_Frame2` | 1 |  |
-| `SpellSpawn_Earthquake` | 1 |  |
-| `Ani_MegaFetus_idleRF_Frame120` | 1 |  |
-| `Ani_CavePerson_walkCaveBaby_Frame20` | 1 |  |
-| `Ani_Cat_buildRobotProjectile_Frame77` | 1 |  |
-| `Ani_TheBloat_spawn0_Frame41` | 1 |  |
-| `Ani_Trampy_dying_Frame2` | 1 |  |
-| `Ani_MoonHand_grab_Frame2` | 1 |  |
-| `Ani_BigAsteroid_dying_Frame39` | 1 |  |
-| `Ani_TheBloat_dying0_Frame3` | 1 |  |
-| `Ani_TinyTumorB_hit_Frame2` | 1 |  |
-| `Ani_OrganGrinderX_walk_Frame24` | 1 |  |
-| `Ani_LordBunga_attack_Frame2` | 1 |  |
-| `Ani_Trex_eat_Frame30` | 1 |  |
-| `Ani_DeathWorm_walk_Frame2` | 1 |  |
-| `Ani_CavePerson_walkCatCaveWoman_Frame21` | 1 |  |
-| `Ani_FinalBossPhase2_dyingHoly_Frame2` | 1 |  |
-| `Ani_Parasiter_shoot_Frame2` | 1 |  |
-| `Ani_Cat_pointout_Frame2` | 1 |  |
-| `Ani_Cat_tripleswat_Frame15` | 1 |  |
-| `Ani_MoonHead_grab_Frame2` | 1 |  |
-| `Ani_TallTumor_hit_Frame2` | 1 |  |
-| `Ani_TarBaby_walk_Frame2` | 1 |  |
-| `Ani_AlienBeast_walk_Frame13` | 1 |  |
-| `Ani_CloakedDemon_flames_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame55` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame283` | 1 |  |
-| `Ani_ConjoinedHusk_dyingCat_Frame6` | 1 |  |
-| `Ani_Interstitial_breed1_Frame53` | 1 |  |
-| `Ani_BunkeryBoy_hitBombZealot_Frame2` | 1 |  |
-| `Ani_BungaElite1_dyingSpearCaveMan_Frame10` | 1 |  |
-| `Ani_Cerberubs_walk_Frame35` | 1 |  |
-| `Ani_Guillotina1_bellypound_Frame7` | 1 |  |
-| `Ani_MegaFetus_attackRB_Frame9` | 1 |  |
-| `Ani_Cat_flex_Frame12` | 1 |  |
-| `Ani_Chubs_dyingRage_Frame56` | 1 |  |
-| `FireExtinguish` | 1 |  |
-| `Ani_CavePerson_walkCaveBaby_Frame4` | 1 |  |
-| `Ani_LordBunga_dying_Frame105` | 1 |  |
-| `Ani_PokerDemon_dying_Frame12` | 1 |  |
-| `Ani_Trex_dying_Frame2` | 1 |  |
-| `Ani_ConjoinedHusk_useCat_Frame2` | 1 |  |
-| `ProjectileSpawn_MagicMissileProjectile` | 1 |  |
-| `Ani_BigDemon_walk_Frame36` | 1 |  |
-| `Ani_Gasser_hit_Frame2` | 1 |  |
-| `Ani_MoonHead_crackSwallowed_Frame2` | 1 |  |
-| `Ani_Spewer_walkFull_Frame2` | 1 |  |
-| `ProjectileSpawn_Creepball` | 1 |  |
-| `Ani_FlySwarm_shrink3_Frame2` | 1 |  |
-| `Ani_Guillotina1_jumpattackRage_Frame10` | 1 |  |
-| `Ani_AlienBeast_hit_Frame3` | 1 |  |
-| `Ani_Zaratana_hit_Frame2` | 1 |  |
-| `Ani_Moth_fast_Frame2` | 1 |  |
-| `Ani_RatKing_New_transform_Frame7` | 1 |  |
-| `Ani_FetusGusher_attack_Frame2` | 1 |  |
-| `Ani_Slag_dying_Frame2` | 1 |  |
-| `Ani_Cat_walk_Frame20` | 1 |  |
-| `Ani_Cat_eagleeye_Frame63` | 1 |  |
-| `Spawn_Donate` | 1 |  |
-| `Ani_FinalBossPhase3_transform31_Frame21` | 1 |  |
-| `Ani_Cat_castspell_Frame42` | 1 |  |
-| `Ani_DrMangler_walkJoystick_Frame20` | 1 |  |
-| `Ani_GreyAlien_walk_Frame2` | 1 |  |
-| `Ani_Gatekeeper_dying_Frame5` | 1 |  |
-| `Ani_MoonHand_dashstart_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame145` | 1 |  |
-| `Ani_Revalark_portout_Frame2` | 1 |  |
-| `Ani_FinalBossPhase1_reaction_Frame14` | 1 |  |
-| `Ani_CavePerson_hitCaveBaby_Frame2` | 1 |  |
-| `Ani_Lenny_catdyingCat_Frame217` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame28` | 1 |  |
-| `Ani_Lenny_attackCatDead_Frame30` | 1 |  |
-| `ProjectileHitCharacter_LightningBallProjectile` | 1 |  |
-| `SE_CatFightWhoosh` | 1 |  |
-| `Ani_BirdLarge_moveLoop_Frame2` | 1 |  |
-| `Ani_DaddyShark_walk_Frame2` | 1 |  |
-| `Ani_ShamblingShade_consume_Frame73` | 1 |  |
-| `Ani_MoonHead_digestCatSwallowedCracked_Frame3` | 1 |  |
-| `Ani_MoonHand_dashend_Frame2` | 1 |  |
-| `Ani_Guillotina1_dying_Frame13` | 1 |  |
-| `Ani_SpiderQueen_dying_Frame2` | 1 |  |
-| `Ani_Guillotina1_shoot_Frame30` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackR2_Frame7` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame116` | 1 |  |
-| `Ani_MegaFetus_walkLF_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackR3_Frame12` | 1 |  |
-| `Ani_TallBot_launch_Frame27` | 1 |  |
-| `Ani_ThrobbingKing2_hit_Frame5` | 1 |  |
-| `Ani_Spewer_transformFull_Frame2` | 1 |  |
-| `Ani_Guillotina1_walkBelly_Frame10` | 1 |  |
-| `Ani_BirdLarge_idle_Frame736` | 1 |  |
-| `Ani_Cat_zombieWalk_Frame2` | 1 |  |
-| `Ani_MegaDinoHead_raise_Frame3` | 1 |  |
-| `Ani_Cat_proud_Frame58` | 1 |  |
-| `Ani_Cat_tapatk_Frame2` | 1 |  |
-| `Ani_Floater_attack_Frame2` | 1 |  |
-| `Ani_Angel_dying_Frame29` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame136` | 1 |  |
-| `Ani_MegaDinoLeg_lowerLift_Frame44` | 1 |  |
-| `Ani_EventCat_choice_str_Frame22` | 1 |  |
-| `DamageCatCorpse` | 1 |  |
-| `Ani_Interstitial_breed2_Frame41` | 1 |  |
-| `Ani_Interstitial_breed2_Frame344` | 1 |  |
-| `Ani_BigAsteroid_puke_Frame38` | 1 |  |
-| `Ani_HeadTumor_hit_Frame5` | 1 |  |
-| `Ani_FatMan_walk_Frame13` | 1 |  |
-| `Ani_Cat_throwsmallelement_Frame7` | 1 |  |
-| `EquipmentBrokeInCombat` | 1 |  |
-| `Ani_Cat_jump2_Frame16` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying2_Frame23` | 1 |  |
-| `Ani_Floast_hit_Frame4` | 1 |  |
-| `Ani_OrganGrinderX_crazy_Frame3` | 1 |  |
-| `Ani_Lenny_spawnin_Frame3` | 1 |  |
-| `Ani_FetusGusher_hit_Frame3` | 1 |  |
-| `Ani_TracyX_walkLF_Frame13` | 1 |  |
-| `Ani_MoonHead_idleCracked_Loop` | 1 |  |
-| `Ani_BunkerBoy_hitMutant_Frame5` | 1 |  |
-| `Ani_Zaratana_dashstartTurtle_Frame2` | 1 |  |
-| `Ani_Interstitial_eatPoop_Frame25` | 1 |  |
-| `Ani_BunkerBoy_blessBishop_Frame65` | 1 |  |
-| `StatusApply_Reduce` | 1 |  |
-| `Ani_Flushmaster_portin_Frame2` | 1 |  |
-| `Ani_Pyrophina_throwboss_Frame66` | 1 |  |
-| `Ani_DeathWorm_dashstart_Frame2` | 1 |  |
-| `Ani_Guillotina1_walk_Frame30` | 1 |  |
-| `Tick_Reflect` | 1 |  |
-| `Ani_Peashy_blockedRage_Frame2` | 1 |  |
-| `Ani_Wisp_hit_Frame2` | 1 |  |
-| `Ani_MegaFetus_spinRF_Frame16` | 1 |  |
-| `Ani_Interstitial_friendship_Frame68` | 1 |  |
-| `SE_StickBroke` | 1 |  |
-| `Ani_Floast_throw_Frame2` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame96` | 1 |  |
-| `Ani_RattleSnake_attack_Frame2` | 1 |  |
-| `Ani_ConjoinedHusk_grab_Frame12` | 1 |  |
-| `Ani_Decoy2_hit_Frame3` | 1 |  |
-| `ProjectileHitCharacter_Fishball` | 1 |  |
-| `Ani_Cat_knockswatatk_Frame2` | 1 |  |
-| `Ani_HumanCat_walkDH_Frame7` | 1 |  |
-| `Ani_BirdSmall_moveLoop_Frame21` | 1 |  |
-| `Ani_BunkerBoy_pickupZealot_Frame50` | 1 |  |
-| `Ani_Bumblefoot_hitUp_Frame2` | 1 |  |
-| `Ani_Trampy_sleepEnd_Frame30` | 1 |  |
-| `Ani_FetusNoJar_walkGrown_Frame48` | 1 |  |
-| `Ani_ManglersMonster_explodeLF_Frame2` | 1 |  |
-| `Ani_RockyBobo_walkslow_Frame77` | 1 |  |
-| `Ani_FinalBossPhase3_pulse3_Frame2` | 1 |  |
-| `ProjectileHitNothing_Firecracker` | 1 |  |
-| `Ani_Cat_liquidmetaldodge_Frame2` | 1 |  |
-| `SE_BirdDying_Hummingbird` | 1 |  |
-| `Ani_CanCreeper_shoot_Frame46` | 1 |  |
-| `Ani_Cat_tinkerAdjacent_Frame25` | 1 |  |
-| `Ani_TheBloat_walk1_Frame2` | 1 |  |
-| `Ani_CatHuman_throwCat_Frame21` | 1 |  |
-| `Ani_Yeti_bite_Frame7` | 1 |  |
-| `Ani_Chubs_attack_Frame4` | 1 |  |
-| `Ani_Trex_stomp_Frame23` | 1 |  |
-| `Ani_TheMother_consume_Frame2` | 1 |  |
-| `Ani_MechSuit_ramStartCat_Frame2` | 1 |  |
-| `Ani_CopBot_reload_Frame2` | 1 |  |
-| `Ani_ManglersMonster_primerushRB_Frame2` | 1 |  |
-| `Ani_FetusNoJar_dying_Frame3` | 1 |  |
-| `Ani_BunkerBoy_walkCultist_Frame10` | 1 |  |
-| `Ani_CavePerson_dyingCatCaveWoman_Frame21` | 1 |  |
-| `Ani_ConjoinedHusk_useCat_Frame98` | 1 |  |
-| `Ani_GirlDino_attack_Frame20` | 1 |  |
-| `Ani_Gatekeeper_dying_Frame2` | 1 |  |
-| `Ani_Trampy_attack_Frame15` | 1 |  |
-| `Ani_Chubs_rage_Frame76` | 1 |  |
-| `Ani_Guillotina1_jumpmove_Frame10` | 1 |  |
-| `Ani_FinalBossPhase2_holyHoly2_Frame2` | 1 |  |
-| `Ani_SmallAsteroid_dying_Frame22` | 1 |  |
-| `Ani_Cat_slidekick_Frame22` | 1 |  |
-| `Ani_Cat_MonkStartTurn_Frame52` | 1 |  |
-| `Ani_Amoeba_hitrock_Frame46` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame818` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame506` | 1 |  |
-| `Ani_JarHead_walk_Loop` | 1 |  |
-| `Ani_Pyrophina_throwbossNospin_Frame43` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame65` | 1 |  |
-| `Ani_Cat_legslide_Frame47` | 1 |  |
-| `Ani_Tox_spawn_Frame65` | 1 |  |
-| `Ani_Tox_hit_Frame2` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame68` | 1 |  |
-| `Ani_ShadeM_portin_Frame14` | 1 |  |
-| `Ani_BomberRat_turtlestart_Frame3` | 1 |  |
-| `Ani_BungaElite2_transformCaveMan_Frame14` | 1 |  |
-| `Ani_MegaMutant_walk_Frame2` | 1 |  |
-| `Ani_BunkerBoy_walkZealot_Frame18` | 1 |  |
-| `Ani_BoyDino_walk_Frame15` | 1 |  |
-| `SE_CatSwishThrowBig` | 1 |  |
-| `Ani_HitlerMech_pulp2_Frame31` | 1 |  |
-| `Ani_Interstitial_breed2_Frame392` | 1 |  |
-| `Ani_MedSlime_dying_Frame2` | 1 |  |
-| `Ani_Johnny_mindcontrol_Frame2` | 1 |  |
-| `Ani_ShadeF_spitOpenCat_Frame11` | 1 |  |
-| `Ani_Yeti_beatchest_Frame56` | 1 |  |
-| `ProjectileHitCharacter_Meatball` | 1 |  |
-| `Ani_Zaratana_dying_Frame166` | 1 |  |
-| `Ani_BungaElite2_attackCaveMan_Frame56` | 1 |  |
-| `Ani_FatMan_dying_Frame7` | 1 |  |
-| `Ani_MeatSlime_xspawnin_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame963` | 1 |  |
-| `Ani_Cat_catch_Frame2` | 1 |  |
-| `SE_CatJumpBig` | 1 |  |
-| `Ani_ManglersMonster_explodeLF_Frame138` | 1 |  |
-| `Ani_HitlerMech_pulp_Frame135` | 1 |  |
-| `Tick_Bound` | 1 |  |
-| `Ani_Cat_weaponspell2_Frame39` | 1 |  |
-| `Ani_YellowBlaster_walk_Frame2` | 1 |  |
-| `Ani_ManglersMonster_walkRB_Loop` | 1 |  |
-| `Ani_CaveChief_walk_Frame3` | 1 |  |
-| `Ani_Waggle_dying_Frame2` | 1 |  |
-| `Ani_RockyBobo_walkslow_Frame113` | 1 |  |
-| `Ani_Guillotina2Body_tantrum_Frame2` | 1 |  |
-| `Ani_TenTickles_dying_Frame68` | 1 |  |
-| `Ani_Fatso_dashstart_Frame2` | 1 |  |
-| `Ani_ThrobbingKing2_hop_Frame63` | 1 |  |
-| `Ani_MegaMutant_slam_Frame10` | 1 |  |
-| `Ani_BoyDino_throw_Frame13` | 1 |  |
-| `Ani_HangerBot_attack_Frame4` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame15` | 1 |  |
-| `Ani_Lenny_catdyingCat_Frame154` | 1 |  |
-| `Ani_SoldierBot_pre_backflip_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame324` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame43` | 1 |  |
-| `Ani_PokerDemon_poke_Frame2` | 1 |  |
-| `Ani_Angel_revive_Frame56` | 1 |  |
-| `Ani_Cat_whistleSummon_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame681` | 1 |  |
-| `Ani_DaddyShark_attack_Frame2` | 1 |  |
-| `StatusApply_Webbed` | 1 |  |
-| `Ani_Peashy_hitRage_Frame4` | 1 |  |
-| `Ani_SnakeyBones_grow1_Frame15` | 1 |  |
-| `Ani_Guillotina2Body_attack_Frame94` | 1 |  |
-| `Ani_TheCoven_dying4_Frame8` | 1 |  |
-| `Ani_Lenny_hit_Frame2` | 1 |  |
-| `Ani_CopBot_reload_Frame3` | 1 |  |
-| `Obj_TireLand` | 1 |  |
-| `Ani_Yeti_beatchest_Frame27` | 1 |  |
-| `Ani_FetusNoJar_walk_Frame2` | 1 |  |
-| `ProjectileHitCharacter_MagicSpikeProjectile` | 1 |  |
-| `Ani_C1000Clot_walk_Frame20` | 1 |  |
-| `Ani_BirdSmall_moveEnd_Frame2` | 1 |  |
-| `Ani_SpiderQueen_walkInsane_Frame24` | 1 |  |
-| `Ani_Interstitial_fight_Frame91` | 1 |  |
-| `Ani_BirdLarge_idle_Frame549` | 1 |  |
-| `Ani_Tormentor_throw_Frame2` | 1 |  |
-| `Ani_ShamblingShade_consume_Frame88` | 1 |  |
-| `Ani_Cat_earthquakeSlam_Frame22` | 1 |  |
-| `Ani_FinalBossPhase2_turnRev_Frame2` | 1 |  |
-| `Ani_MoonHand_throwGrabbing_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame208` | 1 |  |
-| `Ani_Chubs_idleRage_Frame44` | 1 |  |
-| `Ani_SpiderQueen_walkInsane_Frame18` | 1 |  |
-| `Ani_Guillotina1_grab_Frame3` | 1 |  |
-| `MoonHead_Uncrack` | 1 |  |
-| `Ani_AstroZombie_moonjump_Frame116` | 1 |  |
-| `Ani_Guillotina1_attackBelly_Frame15` | 1 |  |
-| `Ani_HitlerMech_yellb_Frame24` | 1 |  |
-| `SpellSpawn_thinlasercap` | 1 |  |
-| `Ani_LightningElemental_dying_Frame2` | 1 |  |
-| `Cockroach_Squish` | 1 |  |
-| `Ani_Bumblefoot_shootDown_Frame2` | 1 |  |
-| `SE_BuildBot_Deploy` | 1 |  |
-| `Ani_BunkerBoy_attackMutant_Frame56` | 1 |  |
-| `Ani_AngelicCatFetus_doom_Frame90` | 1 |  |
-| `Ani_Cat_throwsmallelement_Frame28` | 1 |  |
-| `Ani_SecurityBot_hitAngry_Frame2` | 1 |  |
-| `Ani_Cat_heaviestMelee_Frame2` | 1 |  |
-| `Ani_Pooter_dying_Frame2` | 1 |  |
-| `Ani_Revalark_crash_Frame3` | 1 |  |
-| `ProjectileHitCharacter_spitprojectile` | 1 |  |
-| `Ani_Spewer_transformFull_Frame60` | 1 |  |
-| `Ani_BrambleBaby_portout_Frame2` | 1 |  |
-| `Ani_Zodiac_reload_Frame2` | 1 |  |
-| `Ani_MoonHand_dashstart2_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame471` | 1 |  |
-| `Ani_HangerBot_spawn_Frame4` | 1 |  |
-| `Ani_Interstitial_starve_Frame62` | 1 |  |
-| `Ani_Cat_throwArrow_Frame11` | 1 |  |
-| `Injury_BrokenLeg` | 1 |  |
-| `Ani_Carnibulb_hit_Frame2` | 1 |  |
-| `Ani_BeaniesX_attack_Frame45` | 1 |  |
-| `Ani_MotherTumor_receiveRBBig_Frame13` | 1 |  |
-| `Ani_Interstitial_breed2_Frame97` | 1 |  |
-| `Ani_SpiderQueen_walk_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame109` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame7` | 1 |  |
-| `Ani_FetusJar_hit2_Frame10` | 1 |  |
-| `Ani_Tormentor_bite_Frame2` | 1 |  |
-| `Ani_Floast_throwCat_Frame76` | 1 |  |
-| `Ani_ShamblingShade_consumeCat_Frame60` | 1 |  |
-| `Ani_TallTumor_dying_Frame2` | 1 |  |
-| `Ani_Birthwort_heal_Frame2` | 1 |  |
-| `Ani_Interstitial_girlRejectBoy_Frame141` | 1 |  |
-| `Ani_Guillotina3Body_walk_Frame37` | 1 |  |
-| `Ani_FatMan_dying2_Frame2` | 1 |  |
-| `Ani_MegaDinoLeg_return_Frame2` | 1 |  |
-| `Ani_TheBloat_jump_Frame85` | 1 |  |
-| `Ani_BungaElite2_walkSpearCaveMan_Frame21` | 1 |  |
-| `Ani_Bombchu_dying_Frame3` | 1 |  |
-| `Ani_BirdSmall_moveLoop_Frame31` | 1 |  |
-| `Ani_PokerDemon_dying_Frame36` | 1 |  |
-| `Ani_ThrobbingKing_command1_Frame2` | 1 |  |
-| `Ani_Interstitial_breed1_Frame153` | 1 |  |
-| `SpellSpawn_DustPoofLarge` | 1 |  |
-| `Ani_SpiderQueen_webInsane_Frame2` | 1 |  |
-| `Ani_Cerberubs_hitAlert_Frame2` | 1 |  |
-| `Ani_ManglersMonster_primerushRB_Frame3` | 1 |  |
-| `Ani_MoonHead_grabChargingCracked_Frame2` | 1 |  |
-| `Ani_BunkerBoy_walkBombZealot_Loop` | 1 |  |
-| `Ani_MotherTumor_hit_Frame3` | 1 |  |
-| `Ani_Carnibulb_dying_Frame2` | 1 |  |
-| `Ani_BungaElite2_transformSpearCaveMan_Frame17` | 1 |  |
-| `Ani_TracyX_hitRB_Frame3` | 1 |  |
-| `Ani_Interstitial_mutate_Frame12` | 1 |  |
-| `Ani_AstroSkull_dying_Frame2` | 1 |  |
-| `Ani_NubsCat_attack_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_call_Frame20` | 1 |  |
-| `Ani_BungaElite1_transformSpearCaveMan_Frame17` | 1 |  |
-| `Ani_BunkerBoy_bombZealot_Frame21` | 1 |  |
-| `Ani_Tox_puff_Frame17` | 1 |  |
-| `Ani_MechSuit_ramLoop_Loop` | 1 |  |
-| `Ani_TracyX_dyingLB_Frame3` | 1 |  |
-| `Ani_ShamblingShade_consumeCat_Frame73` | 1 |  |
-| `Ani_Cat_tinkerSelf_Frame54` | 1 |  |
-| `Ani_MegaMutant_grabCat_Frame114` | 1 |  |
-| `SpellSpawn_ArrowFromAbove` | 1 |  |
-| `Ani_HangerBot_portin_Frame2` | 1 |  |
-| `Ani_MegaDinoHead_raise_Frame114` | 1 |  |
-| `Ani_DeathWorm_dash_Loop` | 1 |  |
-| `Ani_TheBloat_shoot_Frame8` | 1 |  |
-| `Ani_Hitler_walk_Frame2` | 1 |  |
-| `Ani_Cat_dash_Frame19` | 1 |  |
-| `Ani_Cat_buttScootLoop_Frame2` | 1 |  |
-| `Ani_FlySwarm_shrink3_Frame15` | 1 |  |
-| `Ani_AstroZombie_moonjump_Frame15` | 1 |  |
-| `Ani_ManglersMonster_explodeLF_Frame148` | 1 |  |
-| `Ani_Trampy_drink_Frame202` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame12` | 1 |  |
-| `Ani_GreyAlien_megablast_Frame2` | 1 |  |
-| `Ani_FrankX_dying_Frame3` | 1 |  |
-| `Ani_MotherTumor_spawnHoldingCat_Frame2` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame270` | 1 |  |
-| `Ani_Lenny_cry_Frame5` | 1 |  |
-| `Tick_SoulLink` | 1 |  |
-| `Ani_Yeti_bite_Frame16` | 1 |  |
-| `Ani_Chubs_dying_Frame2` | 1 |  |
-| `Ani_Chubs_dying_Frame106` | 1 |  |
-| `Ani_TheCoven_dying3_Frame12` | 1 |  |
-| `Ani_Cat_flashkick_Frame10` | 1 |  |
-| `ProjectileSpawn_LightningBallProjectile` | 1 |  |
-| `Ani_Cat_heabuttdashStart_Frame2` | 1 |  |
-| `StatusApply_Bound` | 1 |  |
-| `Ani_Amoeba_hitrock_Frame29` | 1 |  |
-| `Ani_Zodiac_crazy_Frame2` | 1 |  |
-| `Ani_Guillotina2Body_attack_Frame50` | 1 |  |
-| `Ani_BigDemon_necksnapCat_Frame14` | 1 |  |
-| `Ani_CopBot_shoot_Frame3` | 1 |  |
-| `Ani_Gambit_attack_Frame17` | 1 |  |
-| `Ani_Johnny_idle_Frame110` | 1 |  |
-| `Ani_CoreFreak_walk_Frame2` | 1 |  |
-| `Ani_GirlDino_throwCat_Frame12` | 1 |  |
-| `Ani_SpiderQueen_walk_Frame12` | 1 |  |
-| `Ani_BirdLarge_moveStart_Frame18` | 1 |  |
-| `Ani_Dybbuk_zombie_Frame2` | 1 |  |
-| `Ani_Zaratana_hitBig_Frame2` | 1 |  |
-| `Ani_FetusGusher_dying_Frame39` | 1 |  |
-| `Ani_Triceratops_primed_Frame52` | 1 |  |
-| `non_spatial` | 1 |  |
-| `Ani_BungaElite2_throwSpearCaveMan_Frame30` | 1 |  |
-| `Ani_Worm_shoot_Frame2` | 1 |  |
-| `Ani_Mammoth_attack_Frame2` | 1 |  |
-| `Ani_ShamblingShade_dying_Frame66` | 1 |  |
-| `Ani_Chubs_walk_Frame28` | 1 |  |
-| `Ani_Cat_blowUp_Frame2` | 1 |  |
-| `Ani_MegaMutant_grabCat_Frame111` | 1 |  |
-| `Ani_FlySwarm_shrink5_Frame2` | 1 |  |
-| `Ani_CaveChief_dying_Frame2` | 1 |  |
-| `SE_SabertoothCatPounce` | 1 |  |
-| `Ani_ShadeF_chewOpenCat_Frame2` | 1 |  |
-| `Ani_Cat_catch_Frame10` | 1 |  |
-| `Ani_MindFetus_dying_Frame3` | 1 |  |
-| `Ani_HumanCat_hit_Frame2` | 1 |  |
-| `Ani_FetusNoJar_dying_Frame2` | 1 |  |
-| `Ani_Revalark_hit_Frame2` | 1 |  |
-| `ProjectileSpawn_Mjolnir` | 1 |  |
-| `Ani_AngelicCatFetus_kiss_Frame13` | 1 |  |
-| `Ani_ManglersMonster_explodeRB_Frame115` | 1 |  |
-| `Ani_MegaDinoHead_weak_Frame2` | 1 |  |
-| `Ani_MotherTumor_passRFBigHolding_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleLF_Frame204` | 1 |  |
-| `ChakramProjectileCatch` | 1 |  |
-| `Ani_Pterodactyl_escapeCat_Frame54` | 1 |  |
-| `Ani_Cat_statup_Frame2` | 1 |  |
-| `Ani_Moth_dying_Frame2` | 1 |  |
-| `Ani_DocBot_spawn_Frame2` | 1 |  |
-| `Ani_Guillotina1_shootRage_Frame2` | 1 |  |
-| `Ani_Cat_dramaticpoint_Frame2` | 1 |  |
-| `Ani_Guillotina1_shoot_Frame2` | 1 |  |
-| `Ani_BoyDino_dying_Frame2` | 1 |  |
-| `Ani_MoonHand_walk_Frame2` | 1 |  |
-| `SE_CatBodyfall` | 1 |  |
-| `Ani_BunkerBoy_hitZealot_Frame6` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame1028` | 1 |  |
-| `Ani_Birthwort_walk_Frame17` | 1 |  |
-| `Ani_Peashy_attackRage_Frame15` | 1 |  |
-| `TextPopup_Reload` | 1 |  |
-| `Ani_Gambit_beam_Frame192` | 1 |  |
-| `Ani_Guillotina2Head_callRage_Frame19` | 1 |  |
-| `Ani_WaterLeech_hitWater_Frame3` | 1 |  |
-| `Ani_CavePerson_throwCatCaveWoman_Frame24` | 1 |  |
-| `Ani_CopBot_shoot_Frame2` | 1 |  |
-| `Ani_CloakedDemon_walk_Frame2` | 1 |  |
-| `Ani_Burfer_hit_Frame2` | 1 |  |
-| `Ani_Spookie_portin_Frame2` | 1 |  |
-| `Ani_ManglersMonster_dyingLF_Frame3` | 1 |  |
-| `Ani_Interstitial_breed0_Frame41` | 1 |  |
-| `Ani_HouseCat_scratching_Frame56` | 1 |  |
-| `Ani_BomberRat_walk_Frame2` | 1 |  |
-| `Ani_Guillotina1_melee_Frame2` | 1 |  |
-| `Ani_TallTumor_curse_Frame2` | 1 |  |
-| `Ani_FlySwarm_shrink2_Frame15` | 1 |  |
-| `Ani_Hitler_suicide_Frame210` | 1 |  |
-| `Ani_OrganGrinderX_crazy_Frame2` | 1 |  |
-| `Ani_Cat_lickAttack_Frame2` | 1 |  |
-| `Ani_DeathWorm_hit_Frame2` | 1 |  |
-| `Ani_ChargeyMaggot_hit_Frame2` | 1 |  |
-| `Ani_EmptyV_dyingOff_Frame2` | 1 |  |
-| `Injury_TornTendon` | 1 |  |
-| `Ani_Chubs_rage_Frame7` | 1 |  |
-| `Ani_GraveWorm_portin_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame152` | 1 |  |
-| `Ani_Interstitial_eatCat_Frame15` | 1 |  |
-| `Obj_TrashBagLand` | 1 |  |
-| `Ani_BigUFO_walk_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame169` | 1 |  |
-| `Ani_AstroZombie_breakneckCatHeadless_Frame2` | 1 |  |
-| `Ani_HitlerMech_portin_Frame2` | 1 |  |
-| `Ani_CaveChief_bat_Frame10` | 1 |  |
-| `SE_BirdDying_Turkey` | 1 |  |
-| `Ani_MindFetus_hit_Frame3` | 1 |  |
-| `Ani_Waggle_hit_Frame2` | 1 |  |
-| `Ani_HouseCat_puking_Frame57` | 1 |  |
-| `Ani_Carnibulb_eat_Frame2` | 1 |  |
-| `SpellSpawn_PartyExplosion` | 1 |  |
-| `Ani_DrMangler_dying_Frame113` | 1 |  |
-| `Ani_Lenny_escapeCat_Frame115` | 1 |  |
-| `Ani_BunkerBoy_walkMutant_Frame17` | 1 |  |
-| `SE_WeaponShoot_Crossbow` | 1 |  |
-| `Ani_WaterLeech_dying_Frame2` | 1 |  |
-| `Ani_Gambit_djump_Frame12` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame608` | 1 |  |
-| `Ani_FinalBossPhase2_swipe2_Frame2` | 1 |  |
-| `Ani_Chubs_shootRage_Frame2` | 1 |  |
-| `Ani_Thump_dyingRB_Frame2` | 1 |  |
-| `Ani_JarHead_hit2_Frame2` | 1 |  |
-| `Ani_FetusNoJar_transform_Frame2` | 1 |  |
-| `Ani_BabySpider_attack_Frame8` | 1 |  |
-| `Ani_DocBot_heal_Frame2` | 1 |  |
-| `Ani_MoonHead_hitCharging_Frame2` | 1 |  |
-| `Ani_SoldierBot_walk_Frame21` | 1 |  |
-| `Ani_ThrobbingKing_vomitrain_Frame24` | 1 |  |
-| `Ani_MegaFetus_weakRF_Frame381` | 1 |  |
-| `Ani_Fatso_dashstart_Frame5` | 1 |  |
-| `Ani_Pyrophina_stomp_Frame20` | 1 |  |
-| `Ani_Cat_backflipLoop_Frame2` | 1 |  |
-| `Ani_Turret_hit_Frame3` | 1 |  |
-| `Ani_BrambleBaby_shoot_Frame2` | 1 |  |
-| `Ani_OrganGrinderX_dying_Frame2` | 1 |  |
-| `Ani_Cat_fattyWalk_Frame12` | 1 |  |
-| `SE_TerminatorCatWalkA` | 1 |  |
-| `Ani_TheCoven_rise_Frame4` | 1 |  |
-| `Ani_GreyAlien_walk_Frame16` | 1 |  |
-| `SpellSpawn_fx_GravitySlam` | 1 |  |
-| `Ani_Cat_coinFlip_Frame69` | 1 |  |
-| `Ani_GirlDino_cry_Frame25` | 1 |  |
-| `Ani_MoonHead_weakChargingCracked_Loop` | 1 |  |
-| `Ani_Cerberubs_attack_Frame2` | 1 |  |
-| `Ani_Zaratana_dying_Frame2` | 1 |  |
-| `Ani_Nubs_attack_Frame45` | 1 |  |
-| `Ani_MegaDinoLeg_walk_Frame2` | 1 |  |
-| `Ani_Chaos_dying_Frame27` | 1 |  |
-| `Ani_Cat_slidekick_Frame15` | 1 |  |
-| `Ani_CatHuman_throw_Frame21` | 1 |  |
-| `Ani_AstroZombie_breakneckCat_Frame30` | 1 |  |
-| `ProjectileSpawn_spitprojectile` | 1 |  |
-| `Ani_FinalBossPhase2_dying_Frame2` | 1 |  |
-| `Ani_Johnny_cry2_Frame5` | 1 |  |
-| `Ani_Interstitial_breed1_Frame310` | 1 |  |
-| `Ani_PokerDemon_walk_Frame21` | 1 |  |
-| `Ani_TheBloat_dying1_Frame2` | 1 |  |
-| `Ani_SecurityBot_recharge_Frame2` | 1 |  |
-| `ChakramProjectileSpin` | 1 |  |
-| `Ani_Johnny_dying2_Frame3` | 1 |  |
-| `SE_BramblesSpawn` | 1 |  |
-| `Ani_Cat_buildRobot_Frame2` | 1 |  |
-| `Ani_AlienBeast_attack_Frame2` | 1 |  |
-| `SE_BirdDying_Mutant` | 1 |  |
-| `Ani_TinyTumorC_walk_Frame19` | 1 |  |
-| `Ani_Carnibulb_walk_Frame2` | 1 |  |
-| `Ani_Flea_dying_Frame2` | 1 |  |
-| `Ani_Mammoth_walk_Frame21` | 1 |  |
-| `ProjectileHitCharacter_GlassBall` | 1 |  |
-| `Ani_AcidOoze_dying_Frame2` | 1 |  |
-| `Ani_Stegosaurus_counter_Frame2` | 1 |  |
-| `Ani_ManglersMonster_hitRB_Frame3` | 1 |  |
-| `Ani_KillDozer_dying_Frame2` | 1 |  |
-| `Ani_Guillotina1_grab_Frame10` | 1 |  |
-| `Ani_Cat_roll_Frame2` | 1 |  |
-| `ProjectileHitNothing_BrambleProjectile` | 1 |  |
-| `Ani_MedSlimeX_dying_Frame3` | 1 |  |
-| `Ani_Cat_chewcud_Frame17` | 1 |  |
-| `Ani_BunkerBoy_attackMutant_Frame10` | 1 |  |
-| `Ani_Cat_timberEnd_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleRF_Frame204` | 1 |  |
-| `Ani_Whisperer_walk_Frame2` | 1 |  |
-| `Ani_ManglersMonster_explodeRF_Frame2` | 1 |  |
-| `Ani_Mammoth_dashstart_Frame2` | 1 |  |
-| `Ani_Cat_fallingClawsFland_Frame6` | 1 |  |
-| `Ani_FinalBossPhase2_dodgebackward2_Frame2` | 1 |  |
-| `Ani_Cat_metronome_Frame85` | 1 |  |
-| `Ani_MegaDinoHead_dying_Frame110` | 1 |  |
-| `Ani_BigSlime_walk_Frame2` | 1 |  |
-| `Ani_Lenny_escapeCat_Frame116` | 1 |  |
-| `Ani_Guillotina1_walkMouthFull_Frame10` | 1 |  |
-| `Ani_BunkerBoy_becomemutantCultist_Frame2` | 1 |  |
-| `Ani_Cat_uziShoot_Frame2` | 1 |  |
-| `Ani_BabySpider_attack_Frame39` | 1 |  |
-| `Ani_CavePerson_dyingCaveMan_Frame37` | 1 |  |
-| `Ani_Cat_coinFlip_Frame28` | 1 |  |
-| `Ani_Tremblo_walk_Frame32` | 1 |  |
-| `Ani_HemlockFetus_fetus_dying_transition_Frame2` | 1 |  |
-| `Ani_BishopHat_walk_Frame2` | 1 |  |
-| `Ani_Cat_jump_Frame14` | 1 |  |
-| `Ani_WaterLeech_dashstartWater_Frame14` | 1 |  |
-| `Ani_BrambleBaby_portin_Frame2` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame61` | 1 |  |
-| `Ani_DustDevil_walk_Frame34` | 1 |  |
-| `Ani_Cat_skeletonRevive_Frame5` | 1 |  |
-| `Ani_Lenny_attackCat_Frame25` | 1 |  |
-| `Ani_MechSuit_dyingCat_Frame2` | 1 |  |
-| `Ani_FrankX_hitFull_Frame2` | 1 |  |
-| `ProjectileHitNothing_Heartball` | 1 |  |
-| `Ani_Cat_bigdoubleswat_Frame5` | 1 |  |
-| `Ani_Cat_throwbigelement_Frame8` | 1 |  |
-| `Ani_TenTickles_portOut_Frame2` | 1 |  |
-| `Ani_RockyBobo_walk_Frame2` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame51` | 1 |  |
-| `Ani_DrMangler_joystick_Frame3` | 1 |  |
-| `Ani_Cat_dying_Frame2` | 1 |  |
-| `SE_MagicStart` | 1 |  |
-| `johnny_idle` | 1 |  |
-| `Ani_ThrobbingKing_gutball_Frame66` | 1 |  |
-| `Ani_DrDitto_revive_Frame11` | 1 |  |
-| `Ani_Cerberubs_throw_Frame10` | 1 |  |
-| `Ani_MegaFetus_weakRF_Frame460` | 1 |  |
-| `Ani_Johnny_idleUnwashed_Frame95` | 1 |  |
-| `Ani_LoveBot_hit_Frame3` | 1 |  |
-| `Ani_FinalBossPhase2_walk2_Frame100` | 1 |  |
-| `Ani_BungaElite2_chestpoundCaveMan_Frame57` | 1 |  |
-| `Ani_CloakedDemon_transition_Frame15` | 1 |  |
-| `Ani_DrMangler_hitJoystick_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleRB_Frame120` | 1 |  |
-| `Ani_Chubs_idleRage_Frame107` | 1 |  |
-| `Ani_Lenny_hugCat_Frame20` | 1 |  |
-| `Ani_Cerberubs_walk_Frame17` | 1 |  |
-| `Ani_Mammoth_dashend_Frame2` | 1 |  |
-| `Ani_Cat_scorpionSting_Frame2` | 1 |  |
-| `Ani_HitlerMech_attack_Frame40` | 1 |  |
-| `Ani_Scary_hit_Frame2` | 1 |  |
-| `Ani_Johnny_weak_Frame2` | 1 |  |
-| `Ani_Cat_pay_Frame34` | 1 |  |
-| `Ani_TheBloat_spawn1_Frame41` | 1 |  |
-| `Ani_GroundZombie_dyingDown_Frame2` | 1 |  |
-| `Ani_FleshyMind_walk_Frame16` | 1 |  |
-| `Ani_AstroSkull_hit_Frame8` | 1 |  |
-| `ProjectileSpawn_LeechProjectile` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame29` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame129` | 1 |  |
-| `Ani_Cat_meditate_Frame5` | 1 |  |
-| `SE_CatWeaponPoke` | 1 |  |
-| `ProjectileHitNothing_Gutball` | 1 |  |
-| `Ani_Chaos_order_Frame4` | 1 |  |
-| `Ani_TinyTumorB_attack_Frame2` | 1 |  |
-| `Ani_Johnny_dying_Frame4` | 1 |  |
-| `Ani_MechSuit_thrustersEndCat_Frame2` | 1 |  |
-| `Ani_MegaMutant_hitguard_Frame4` | 1 |  |
-| `Ani_CavePerson_attackCaveMan_Frame44` | 1 |  |
-| `Ani_BoyDino_dashStart_Frame2` | 1 |  |
-| `Ani_SlotMachine_resultLose_Frame60` | 1 |  |
-| `Ani_Tormentor_dying_Frame94` | 1 |  |
-| `Ani_BabyDeathWorm_hit_Frame4` | 1 |  |
-| `Ani_Trampy_drink_Frame151` | 1 |  |
-| `Ani_DrDitto_glare_Frame12` | 1 |  |
-| `Ani_Spewer_hit_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakLB_Frame381` | 1 |  |
-| `Ani_BungaThrone_dying_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_primingHoly_Loop` | 1 |  |
-| `Ani_Cat_karateKid_Frame42` | 1 |  |
-| `Ani_BirdLarge_dying_Frame2` | 1 |  |
-| `Ani_TheCoven_summon4_Frame510` | 1 |  |
-| `Ani_CoreFreak_fury_Frame32` | 1 |  |
-| `Ani_Gambit_beam_Frame3` | 1 |  |
-| `Ani_Cat_uppercutatk_Frame23` | 1 |  |
-| `Ani_Pyrophina_jump_Frame20` | 1 |  |
-| `Ani_TheCoven_hit1_Frame3` | 1 |  |
-| `Ani_FinalBossMegaGuppy_critical2_Frame7` | 1 |  |
-| `Ani_WaterLeech_walk_Frame133` | 1 |  |
-| `Ani_Cat_fartoom_Frame10` | 1 |  |
-| `Ani_FinalBossPhase3_transform23_Frame21` | 1 |  |
-| `Ani_Worm_portout_Frame2` | 1 |  |
-| `Ani_Dip_dying_Frame2` | 1 |  |
-| `Ani_Crow_walk_Frame13` | 1 |  |
-| `Ani_KillDozer_dying_Frame5` | 1 |  |
-| `Ani_GreenProber_attack_Frame42` | 1 |  |
-| `Ani_BigSlime_attack_Frame2` | 1 |  |
-| `Ani_Amoeba_bashrock_Frame12` | 1 |  |
-| `Ani_MoonHead_chew_Frame2` | 1 |  |
-| `Ani_MoonHead_yellSwallowedCracked_Frame2` | 1 |  |
-| `Ani_DiggyMaggot_portout_Frame2` | 1 |  |
-| `Ani_SlotMachine_resultExplode_Frame40` | 1 |  |
-| `Ani_CanCreeper_walk_Frame2` | 1 |  |
-| `Ani_Guillotina1_walkMouthFull_Frame30` | 1 |  |
-| `Ani_CavePerson_attackCaveBaby_Frame8` | 1 |  |
-| `Ani_Cat_suplex_Frame11` | 1 |  |
-| `Ani_TracyX_dyingLF_Frame60` | 1 |  |
-| `Ani_Cat_peekaBoo_Frame50` | 1 |  |
-| `Ani_DrDitto_dying_Frame19` | 1 |  |
-| `Ani_BungaElite1_dyingCaveMan_Frame37` | 1 |  |
-| `Ani_Guillotina2Head_attackrage_Frame115` | 1 |  |
-| `AbilitySnd_BoulderDrop` | 1 |  |
-| `Ani_Peashy_blocked_Frame2` | 1 |  |
-| `Ani_Peashy_dying_Frame2` | 1 |  |
-| `Ani_TinyTumorA_walk_Frame9` | 1 |  |
-| `Ani_SpiderQueen_eggInsane_Frame69` | 1 |  |
-| `Ani_Dybbuk_dying_Frame2` | 1 |  |
-| `Injury_Poison` | 1 |  |
-| `Ani_ManglersMonster_explodeRB_Frame131` | 1 |  |
-| `Ani_FinalBossPhase2_blocked_Frame2` | 1 |  |
-| `Ani_Lenny_struggleCat_Frame2` | 1 |  |
-| `Ani_Bat_dodge_Frame2` | 1 |  |
-| `Ani_BigAsteroid_walk_Frame45` | 1 |  |
-| `Ani_ThrobbingTurret_dying_Frame2` | 1 |  |
-| `SE_PoopCatWalk` | 1 |  |
-| `Ani_Sprout_spawnin_Frame2` | 1 |  |
-| `Ani_Cat_invthrow_Frame25` | 1 |  |
-| `Ani_MedSlimeX_dying_Frame2` | 1 |  |
-| `Ani_Boulder_dying_Frame2` | 1 |  |
-| `Ani_Shambler_walk_Frame34` | 1 |  |
-| `Ani_Interstitial_fightresult_Dead_Dead_Frame2` | 1 |  |
-| `SE_PoopCatHug` | 1 |  |
-| `Ani_DocBot_hit_Frame4` | 1 |  |
-| `Ani_MamaMaggot_dying_Frame2` | 1 |  |
-| `DamageBlocked_CanCreeper` | 1 |  |
-| `Ani_AlienBeast_walk_Frame52` | 1 |  |
-| `Ani_MotherTumor_tossHoldingCat_Frame2` | 1 |  |
-| `Ani_MotherTumor_receiveLFCatBig_Frame13` | 1 |  |
-| `SE_CatRoll` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame79` | 1 |  |
-| `Ani_TallBot_idle2primed_Frame2` | 1 |  |
-| `Ani_TheCoven_rise3_Frame11` | 1 |  |
-| `Ani_Pterodactyl_grab_Frame2` | 1 |  |
-| `Ani_MindFetus_pulse2_Frame2` | 1 |  |
-| `Ani_TumorBarrier_dying_Frame2` | 1 |  |
-| `Ani_AngelicCatFetus_charm_Frame12` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame177` | 1 |  |
-| `Ani_SpiderQueen_walkInsane_Frame8` | 1 |  |
-| `Ani_Interstitial_goodbye_Frame84` | 1 |  |
-| `Ani_Shambler_walk_Frame25` | 1 |  |
-| `Ani_TenTickles_dying_Frame2` | 1 |  |
-| `Ani_Reaper_hit_Frame2` | 1 |  |
-| `Ani_GambitDice_land_Frame42` | 1 |  |
-| `Ani_Bumblefoot_diginDown_Frame2` | 1 |  |
-| `Ani_Cat_groundpound_Frame5` | 1 |  |
-| `Ani_Roomba_ramLoop_Loop` | 1 |  |
-| `Ani_FlySwarm_attack5_Frame9` | 1 |  |
-| `Ani_DrDitto_revive_Frame19` | 1 |  |
-| `Ani_LordBunga_dyingChair_Frame140` | 1 |  |
-| `Ani_RockyBobo_dying_Frame71` | 1 |  |
-| `Ani_Cat_death6_Frame2` | 1 |  |
-| `Ani_Johnny_telekinesis_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_gutball_Frame16` | 1 |  |
-| `Ani_Hitler_suicide_Frame2` | 1 |  |
-| `Ani_BunkerBoy_becomezealotCultist_Frame3` | 1 |  |
-| `Ani_FatMan_dying2_Frame7` | 1 |  |
-| `Ani_TheCoven_dying4_Frame3` | 1 |  |
-| `Ani_Peashy_hit_Frame4` | 1 |  |
-| `Ani_CavePerson_attackCaveMan_Frame79` | 1 |  |
-| `Ani_GreenProber_attack_Frame46` | 1 |  |
-| `Ani_Cat_drinkTrinket_Frame10` | 1 |  |
-| `Ani_TinyTumorC_attack_Frame2` | 1 |  |
-| `Ani_CaveChief_attack_Frame12` | 1 |  |
-| `Ani_Cat_eagleeye_Frame2` | 1 |  |
-| `Ani_Cat_chuckle_Frame5` | 1 |  |
-| `Ani_Nettle_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_breed0_Frame18` | 1 |  |
-| `Ani_Cat_weaponshoot_Frame62` | 1 |  |
-| `Ani_PetBoulder_dying_Frame2` | 1 |  |
-| `Ani_MotherTumor_dying_Frame2` | 1 |  |
-| `Ani_MegaMutant_swat_Frame16` | 1 |  |
-| `Ani_TheCoven_spell3_Frame16` | 1 |  |
-| `Ani_FinalBossPhase2_dying2_Frame2` | 1 |  |
-| `AirHorn` | 1 |  |
-| `Ani_BirdLarge_idle_Frame751` | 1 |  |
-| `ProjectileSpawn_Meatball` | 1 |  |
-| `Ani_BunkerBoy_dyingCultist_Frame4` | 1 |  |
-| `Ani_MoonHead_yellChargingCracked_Frame10` | 1 |  |
-| `Ani_BomberRat_attack_Frame25` | 1 |  |
-| `Ani_Guillotina1_throw_Frame23` | 1 |  |
-| `Ani_LordBunga_bigbooChair_Frame120` | 1 |  |
-| `ProjectileHitCharacter_Tarshot` | 1 |  |
-| `Ani_Cat_headbuttdashStart_Frame6` | 1 |  |
-| `Ani_Bombchu_dash_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_command3_Frame16` | 1 |  |
-| `Ani_Thump_dyingLF_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_OK_Frame137` | 1 |  |
-| `Ani_Cat_liquidmetalspear_Frame2` | 1 |  |
-| `Ani_BungaElite2_transformCaveMan_Frame17` | 1 |  |
-| `Ani_Crow_fast_Frame8` | 1 |  |
-| `SE_ScorpionCatAngry` | 1 |  |
-| `Ani_Fetus_heal_Frame2` | 1 |  |
-| `Ani_FlySwarm_shrink4_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_breakshield_Frame2` | 1 |  |
-| `Ani_TheBloat_spawn0_Frame3` | 1 |  |
-| `Ani_Johnny_cry1_Frame5` | 1 |  |
-| `Ani_Trampy_drink_Frame191` | 1 |  |
-| `Ani_Cat_suplex_Frame2` | 1 |  |
-| `Ani_Kirby_walk_Frame16` | 1 |  |
-| `Ani_ManglersMonster_explodeLB_Frame138` | 1 |  |
-| `Ani_Interstitial_friendship_Frame6` | 1 |  |
-| `Ani_BungaElite2_dyingSpearCaveMan_Frame10` | 1 |  |
-| `Ani_SpiderQueen_dyingInsane_Frame117` | 1 |  |
-| `Ani_Cat_buttScootEnd_Frame24` | 1 |  |
-| `Ani_FetusNoJar_dyingGrown_Frame2` | 1 |  |
-| `Ani_Chubs_idleRage_Frame26` | 1 |  |
-| `Ani_BombFly_dying_Frame10` | 1 |  |
-| `Ani_Hitler_heil_Frame80` | 1 |  |
-| `Ani_Cat_createmagic_Frame2` | 1 |  |
-| `SE_CatWalkWater` | 1 |  |
-| `Ani_ShamblingShade_walk_Frame5` | 1 |  |
-| `Ani_Trampy_drink_Frame10` | 1 |  |
-| `Ani_TallBot_idle2primed_Frame4` | 1 |  |
-| `Ani_Guillotina2Body_walk_Frame4` | 1 |  |
-| `Ani_Interstitial_breed0_Frame109` | 1 |  |
-| `Ani_Waggle_attack_Frame2` | 1 |  |
-| `Ani_CavePerson_dyingWereMan_Frame32` | 1 |  |
-| `Ani_ShamblingShade_dying_Frame16` | 1 |  |
-| `Ani_SpiderQueen_dying_Frame117` | 1 |  |
-| `Ani_Cat_weaponthrowstraight_Frame12` | 1 |  |
-| `Ani_Cat_selfHarm_Frame29` | 1 |  |
-| `Ani_Pyrophina_attack_Frame4` | 1 |  |
-| `Ani_MegaDinoHead_drop_Frame19` | 1 |  |
-| `Ani_YellowBlaster_charge_Frame4` | 1 |  |
-| `Ani_Guillotina1_walkRage_Frame30` | 1 |  |
-| `Ani_Hitler_idleNuke_Frame2` | 1 |  |
-| `Ani_Trampy_sleepStart_Frame2` | 1 |  |
-| `SE_BirdDying_Blackbird` | 1 |  |
-| `Ani_RattleSnake_walk_Frame4` | 1 |  |
-| `Ani_Birthwort_walk_Frame5` | 1 |  |
-| `Ani_Cat_walk_Frame6` | 1 |  |
-| `SE_WeaponShoot_SpiderWebber` | 1 |  |
-| `Ani_NubsCat_nuke_Frame2` | 1 |  |
-| `Ani_YellowBlaster_jetend_Frame1` | 1 |  |
-| `Ani_OrganGrinderX_shoot_Frame14` | 1 |  |
-| `Ani_Cat_sliceOpen_Frame23` | 1 |  |
-| `Ani_Interstitial_fight_Frame64` | 1 |  |
-| `Ani_WaterLeech_walk_Frame15` | 1 |  |
-| `Ani_CavePerson_attackCaveBaby_Frame28` | 1 |  |
-| `Ani_Pterodactyl_dying_Frame13` | 1 |  |
-| `Ani_TheCoven_summon4_Frame32` | 1 |  |
-| `Ani_FlySwarm_shrink2_Frame2` | 1 |  |
-| `Ani_Bumblefoot_hitDown_Frame2` | 1 |  |
-| `Ani_Cat_throwobject_Frame26` | 1 |  |
-| `Ani_HitlerMech_shoot_Frame39` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame517` | 1 |  |
-| `Ani_CloakedDemon_transition_Frame5` | 1 |  |
-| `Ani_FleshLad_walk_Frame65` | 1 |  |
-| `Ani_TarBaby_dying_Frame2` | 1 |  |
-| `Ani_Tremblo_suck_Frame5` | 1 |  |
-| `Ani_Pyrophina_firestorm_Frame33` | 1 |  |
-| `Ani_Floast_spawn_Frame56` | 1 |  |
-| `Ani_Hive_dying_Frame32` | 1 |  |
-| `Ani_Turtle_dying_Frame2` | 1 |  |
-| `Ani_BungaElite2_pickupCaveMan_Frame14` | 1 |  |
-| `Ani_BabyDeathWorm_portin_Frame4` | 1 |  |
-| `Ani_Guillotina1_walkBelly_Frame30` | 1 |  |
-| `Ani_LordBunga_dying_Frame267` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackR1_Frame12` | 1 |  |
-| `Ani_Interstitial_fight_Frame80` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame129` | 1 |  |
-| `Ani_Caterpillar_dying_Frame2` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame97` | 1 |  |
-| `SE_Terminator1_WalkStep` | 1 |  |
-| `Ani_BirdMed_idle_Frame326` | 1 |  |
-| `Ani_SmallRock_dying_Frame2` | 1 |  |
-| `Ani_GreenProber_dying_Frame5` | 1 |  |
-| `Ani_Burfer_walk_Frame3` | 1 |  |
-| `Ani_CanCreeperOut_dying_Frame2` | 1 |  |
-| `Ani_Shambler_attack2_Frame2` | 1 |  |
-| `Ani_SmallSlime_attack_Frame2` | 1 |  |
-| `Ani_Carcus_dying_Frame2` | 1 |  |
-| `Ani_ShamblingShade_run_Frame2` | 1 |  |
-| `Ani_Lenny_attackCat_Frame4` | 1 |  |
-| `Ani_Guillotina2Head_dying_Frame8` | 1 |  |
-| `Ani_Cat_digDown_Frame11` | 1 |  |
-| `Ani_Gambit_djump_Frame52` | 1 |  |
-| `Ani_Reaper_dying_Frame2` | 1 |  |
-| `Ani_Cat_propelStart_Frame2` | 1 |  |
-| `Ani_HouseCat_scratching_Frame121` | 1 |  |
-| `Tick_ManaLeeches` | 1 |  |
-| `SE_CatFoleyShort` | 1 |  |
-| `Ani_MeatSlime_walk_Frame2` | 1 |  |
-| `Ani_Cat_pickpocket_Frame48` | 1 |  |
-| `Ani_Cat_MonkStartTurn_Frame20` | 1 |  |
-| `Ani_Chubs_idleRage_Frame2` | 1 |  |
-| `Ani_BeaniesX_turtleend_Frame16` | 1 |  |
-| `Ani_Interstitial_breed2_Frame360` | 1 |  |
-| `Ani_WaterLeech_dashendWater_Frame54` | 1 |  |
-| `Ani_BungaElite2_walkCaveMan_Frame13` | 1 |  |
-| `Ani_TracyX_attackRF_Frame8` | 1 |  |
-| `Ani_Reaper_attack_Frame2` | 1 |  |
-| `Ani_Tormentor_bite_Frame24` | 1 |  |
-| `Ani_BunkerBoy_summonspawninCultist_Frame3` | 1 |  |
-| `Ani_Turtle_hide_Frame2` | 1 |  |
-| `Ani_ManglersMonster_dashendLF_Frame2` | 1 |  |
-| `Ani_MegaMutant_walk_Frame23` | 1 |  |
-| `Ani_YellowBlaster_dying_Frame20` | 1 |  |
-| `SpellSpawn_SlotMachine_DeathExplode` | 1 |  |
-| `SE_Interstitial_BreedingPG` | 1 |  |
-| `Ani_Boulder_hit_Frame3` | 1 |  |
-| `Ani_Clot_dying_Frame2` | 1 |  |
-| `Ani_DaddyShark_walk_Frame18` | 1 |  |
-| `Ani_FinalBossPhase3_transform13_Frame21` | 1 |  |
-| `Ani_Cat_headbutt_Frame2` | 1 |  |
-| `Ani_Cat_fallingClawsBland_Frame6` | 1 |  |
-| `Ani_Guillotina1_shootRage_Frame3` | 1 |  |
-| `Ani_Spewer_transformFull_Frame31` | 1 |  |
-| `Ani_BirdLarge_walk_Frame16` | 1 |  |
-| `Ani_Trampy_scratch_Frame4` | 1 |  |
-| `Ani_Flea_attack_Frame3` | 1 |  |
-| `Ani_MechSuit_ramEndCat_Frame2` | 1 |  |
-| `SE_CatSwishPunchBig` | 1 |  |
-| `Ani_Amoeba_dyingrock_Frame2` | 1 |  |
-| `Ani_Chaos_megablast_Frame2` | 1 |  |
-| `Ani_CavePerson_birthCaveWoman_Frame55` | 1 |  |
-| `Ani_Waggle_spawn_Frame2` | 1 |  |
-| `Ani_Guillotina3Body_run_Frame34` | 1 |  |
-| `ProjectileHitNothing_AcidshotProjectile` | 1 |  |
-| `Ani_Snake_walk_Frame2` | 1 |  |
-| `Ani_PokerDemon_attack_Frame9` | 1 |  |
-| `SpellSpawn_SlotMachine_Explode` | 1 |  |
-| `Ani_CavePerson_throwSpearCaveMan_Frame28` | 1 |  |
-| `Ani_CatHuman_throw_Frame27` | 1 |  |
-| `Ani_HitlerMech_pulp3_Frame23` | 1 |  |
-| `Ani_SmallSlimeX_dying_Frame3` | 1 |  |
-| `Tick_Webbed` | 1 |  |
-| `Ani_Snake_attack_Frame2` | 1 |  |
-| `Ani_SpiderQueen_walk_Frame24` | 1 |  |
-| `Ani_Cat_headbuttdash_Frame8` | 1 |  |
-| `Ani_Cat_fallingClawsFland_Frame23` | 1 |  |
-| `Ani_Dybbuk_depossess_Frame2` | 1 |  |
-| `Ani_FinalBossPhase1_transform_Frame18` | 1 |  |
-| `Ani_BoyDino_throw_Frame43` | 1 |  |
-| `Ani_CoreFreak_fury_Frame35` | 1 |  |
-| `Ani_Chaos_lava_Frame5` | 1 |  |
-| `Ani_TenTickles_attack_Frame3` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame155` | 1 |  |
-| `Ani_BunkerBoy_spellBishop_Frame2` | 1 |  |
-| `Ani_BigUFO_chargeEnd_Frame2` | 1 |  |
-| `Ani_Chubs_walkRage_Frame17` | 1 |  |
-| `Ani_HitlerMech_yella_Frame78` | 1 |  |
-| `Ani_MegaFetus_idleLF_Frame338` | 1 |  |
-| `ProjectileHitNothing_Tarshot` | 1 |  |
-| `Ani_Guillotina2Body_tantrum_Frame79` | 1 |  |
-| `Ani_ManglersMonster_explodeRF_Frame163` | 1 |  |
-| `Ani_Cat_tinkerAdjacent_Frame2` | 1 |  |
-| `Ani_ChargeyMaggot_dashend_Frame2` | 1 |  |
-| `Ani_Gamete_transform_Frame2` | 1 |  |
-| `Ani_RockyBobo_turnFlip_Frame10` | 1 |  |
-| `Ani_Zaratana_win_Frame3` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame414` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame259` | 1 |  |
-| `Ani_Cat_poopfart_Frame2` | 1 |  |
-| `Ani_Cat_poofOutOfExistance_Frame2` | 1 |  |
-| `Ani_DaddyShark_dying_Frame25` | 1 |  |
-| `Ani_TallBot_suplex_Frame4` | 1 |  |
-| `Ani_MoonHead_hit_Frame2` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame45` | 1 |  |
-| `Ani_Zaratana_walk_Frame86` | 1 |  |
-| `Ani_ConjoinedHusk_hit_Frame3` | 1 |  |
-| `Ani_MegaDinoHead_idle_Frame2` | 1 |  |
-| `Ani_Interstitial_breed0_Frame111` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying3_Frame212` | 1 |  |
-| `Ani_Cat_stompwalk_Frame14` | 1 |  |
-| `Ani_FetusNoJar_lickGrown_Frame45` | 1 |  |
-| `Ani_LordBunga_consume_Frame155` | 1 |  |
-| `Ani_FatRat_hit_Frame4` | 1 |  |
-| `Ani_Trampy_dodge_Frame2` | 1 |  |
-| `Ani_ShamblingShade_consume_Frame10` | 1 |  |
-| `Ani_Chubs_rage_Frame245` | 1 |  |
-| `Ani_Cat_swipeatk_Frame16` | 1 |  |
-| `Ani_LoveBot_hit_Frame2` | 1 |  |
-| `Ani_BomberRat_attack_Frame2` | 1 |  |
-| `Tick_Sleeping` | 1 |  |
-| `Ani_Cat_selfHarm_Frame4` | 1 |  |
-| `Ani_Cat_digUp_Frame2` | 1 |  |
-| `Ani_RockyBobo_dying_Frame145` | 1 |  |
-| `Ani_Interstitial_goodbye_Frame92` | 1 |  |
-| `Ani_ThrobbingKing2_hop_Frame16` | 1 |  |
-| `Ani_SnakeyBones_hit2_Frame2` | 1 |  |
-| `Ani_CavePerson_walkWereMan_Frame21` | 1 |  |
-| `Ani_Revalark_weak_Frame17` | 1 |  |
-| `Ani_Guillotina3Body_walkHolding_Frame37` | 1 |  |
-| `Ani_TinyTumorC_walk_Frame9` | 1 |  |
-| `Ani_Chubs_dyingRage_Frame12` | 1 |  |
-| `ProjectileSpawn_ManaLeechProjectile` | 1 |  |
-| `Ani_ManglersMonster_dashendRF_Frame2` | 1 |  |
-| `Ani_SpiderQueen_walk_Frame8` | 1 |  |
-| `Ani_QueenHippo_walk_Frame8` | 1 |  |
-| `Ani_BunkerBoy_becomezealotCultist_Frame2` | 1 |  |
-| `Ani_SlotMachine_resultExplode_Frame2` | 1 |  |
-| `Ani_Chaos_intro_Frame140` | 1 |  |
-| `Ani_FleshyMind_dying_Frame3` | 1 |  |
-| `Ani_Guillotina2Head_walkRage_Frame27` | 1 |  |
-| `Ani_CavePerson_dyingCaveWoman_Frame2` | 1 |  |
-| `Ani_Cat_metronome_Frame70` | 1 |  |
-| `Ani_ConjoinedHusk_walkCat_Frame9` | 1 |  |
-| `Ani_Nubs_walk_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakLF_Frame277` | 1 |  |
-| `Injury_Bleed` | 1 |  |
-| `Ani_BishopHat_dying_Frame26` | 1 |  |
-| `Ani_Guillotina2Body_attackRage_Frame59` | 1 |  |
-| `Ani_FatMan_dying2_Frame57` | 1 |  |
-| `Ani_GirlDino_walk_Frame30` | 1 |  |
-| `Ani_MedSlimeX_spawnin_Frame2` | 1 |  |
-| `Ani_Rat_walk_Frame2` | 1 |  |
-| `Ani_Stegosaurus_hit_Frame2` | 1 |  |
-| `Ani_RockyBobo_turn180_Frame10` | 1 |  |
-| `Ani_ShamblingShade_dying_Frame6` | 1 |  |
-| `ProjectileSpawn_Projectile` | 1 |  |
-| `Ani_EmptyV_hit_Frame2` | 1 |  |
-| `Ani_Cat_fallingClawsBland_Frame23` | 1 |  |
-| `Ani_BungaElite1_walkSpearCaveMan_Frame5` | 1 |  |
-| `Ani_Lenny_escapeCat_Frame63` | 1 |  |
-| `SE_ScorpionCatWalk` | 1 |  |
-| `Ani_TheCoven_idle1_Loop` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame70` | 1 |  |
-| `ProjectileHitCharacter_Webball` | 1 |  |
-| `Ani_MegaFetus_weakRF_Frame163` | 1 |  |
-| `Ani_TracyX_hitRB_Frame2` | 1 |  |
-| `Ani_Gambit_fizzle_Frame100` | 1 |  |
-| `Ani_Gambit_groundpound_Frame29` | 1 |  |
-| `Ani_Floater_walk_Frame2` | 1 |  |
-| `Ani_Johnny_idleUnwashed_Frame2` | 1 |  |
-| `SE_Terminator_Pummel` | 1 |  |
-| `Ani_Pyrophina_throwbossNospin_Frame6` | 1 |  |
-| `Ani_Cat_floatingmagic_Frame81` | 1 |  |
-| `Ani_Triceratops_attack_Frame19` | 1 |  |
-| `Ani_CavePerson_hitSpearCaveMan_Frame8` | 1 |  |
-| `Ani_AstroZombie_breaklegCat_Frame2` | 1 |  |
-| `Ani_MechSuit_dyingCat_Frame23` | 1 |  |
-| `Ani_FatWoman_hit_Frame2` | 1 |  |
-| `Ani_Zaratana_revenge_Frame3` | 1 |  |
-| `Ani_BabySpider_attack_Frame54` | 1 |  |
-| `Ani_MoonWorm_hit_Frame2` | 1 |  |
-| `Ani_BirdSmall_runAway_Frame17` | 1 |  |
-| `Ani_BomberRat_dying_Frame2` | 1 |  |
-| `Ani_Pyrophina_win_Frame11` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame116` | 1 |  |
-| `ProjectileSpawn_bounceshot` | 1 |  |
-| `Ani_Interstitial_breed0_Frame97` | 1 |  |
-| `Ani_MegaMutant_swat_Frame27` | 1 |  |
-| `Ani_LoveBot_attack_Frame2` | 1 |  |
-| `Ani_Stegosaurus_bite_Frame24` | 1 |  |
-| `Ani_MegaFetus_idleLF_Frame120` | 1 |  |
-| `Ani_FetusGusher_dying_Frame2` | 1 |  |
-| `Ani_GreyAlien_dyingprimed_Frame3` | 1 |  |
-| `Ani_RatKing_New_throw_Frame20` | 1 |  |
-| `Ani_Pyrophina_dying_Frame2` | 1 |  |
-| `Ani_MegaFetus_spinRB_Frame5` | 1 |  |
-| `Ani_ConjoinedHusk_hitCat_Frame3` | 1 |  |
-| `Ani_TracyX_dyingLF_Frame2` | 1 |  |
-| `Ani_Cat_tailwhip_Frame14` | 1 |  |
-| `Ani_FinalBossPhase2_dodgeright2_Frame2` | 1 |  |
-| `Ani_Guillotina1_digest_Frame2` | 1 |  |
-| `Ani_Yeti_dying_Frame2` | 1 |  |
-| `Ani_HumanCat_attackDH_Frame13` | 1 |  |
-| `Ani_MegaMutant_grabCat_Frame43` | 1 |  |
-| `Ani_ManglersMonster_explodeRB_Frame138` | 1 |  |
-| `Ani_FloatingHive_dying_Frame34` | 1 |  |
-| `Ani_Zodiac_empty_Frame2` | 1 |  |
-| `Ani_Guillotina1_digest_Frame7` | 1 |  |
-| `Ani_Triceratops_attack_Frame24` | 1 |  |
-| `Ani_CavePerson_grabCaveWoman_Frame32` | 1 |  |
-| `Ani_Cat_weaponTina_Frame5` | 1 |  |
-| `Ani_ChumBag_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_breed0_Frame125` | 1 |  |
-| `Ani_BeaniesX_dying_Frame2` | 1 |  |
-| `SpellSpawn_fx_heretic` | 1 |  |
-| `Ani_Cat_fastthrowend_Frame7` | 1 |  |
-| `Ani_Cat_legslide_Frame2` | 1 |  |
-| `SE_PickupCoinSack` | 1 |  |
-| `Ani_Guillotina1_suck1_Frame13` | 1 |  |
-| `Ani_ShadeF_attack_Frame13` | 1 |  |
-| `Ani_Chaos_intro_Frame200` | 1 |  |
-| `Ani_Cat_jump2_Frame2` | 1 |  |
-| `Ani_Mammoth_attack_Frame28` | 1 |  |
-| `Ani_FrankX_walk_Frame2` | 1 |  |
-| `Ani_FleshLad_doublepunch_Frame14` | 1 |  |
-| `Ani_SlotMachine_resultJackpot_Frame106` | 1 |  |
-| `Ani_Pyrophina_run_Frame30` | 1 |  |
-| `Ani_HumanCat_counter_Frame7` | 1 |  |
-| `Ani_Chaos_dying_Frame4` | 1 |  |
-| `Ani_Chaos_flush_Frame8` | 1 |  |
-| `SE_SabertoothCatSwipe` | 1 |  |
-| `Ani_TracyX_spinRB_Frame10` | 1 |  |
-| `Ani_CavePerson_transformSpearCaveMan_Frame17` | 1 |  |
-| `SE_WP_UziShot` | 1 |  |
-| `Ani_ManglersMonster_dashstartRF_Frame4` | 1 |  |
-| `Ani_TheBloat_shoot0_Frame2` | 1 |  |
-| `Ani_TheCoven_spell2_Frame9` | 1 |  |
-| `Ani_Slag_shoot_Frame37` | 1 |  |
-| `Ani_TinyTumorC_hit_Frame2` | 1 |  |
-| `Ani_LordBunga_consume_Frame167` | 1 |  |
-| `Ani_Cat_buildRobot_Frame162` | 1 |  |
-| `Ani_EmptyV_changechannelOff_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_holy1_Frame20` | 1 |  |
-| `Ani_BoyDino_attack_Frame39` | 1 |  |
-| `Ani_KillDozer_idle_Frame35` | 1 |  |
-| `Ani_MoonWorm_curlup_Frame2` | 1 |  |
-| `SpellSpawn_fx_magicSplash` | 1 |  |
-| `Ani_BirdSmall_runAway_Frame30` | 1 |  |
-| `Ani_BunkerBoy_walkMutant_Frame64` | 1 |  |
-| `Ani_SmallUFO_attack_Frame2` | 1 |  |
-| `Ani_BoyDino_dashing_Frame22` | 1 |  |
-| `Ani_MoonHead_idleSwallowedCracked_Loop` | 1 |  |
-| `Injury_Concussion` | 1 |  |
-| `Ani_Cat_ButcherStartTurn_Frame74` | 1 |  |
-| `Ani_BungaElite2_transformCaveMan_Frame52` | 1 |  |
-| `Ani_Cerberubs_idle2primed_Frame2` | 1 |  |
-| `Ani_BishopHat_walk_Frame16` | 1 |  |
-| `Ani_TheBloat_shootForward1_Frame2` | 1 |  |
-| `Ani_HouseCat_hairballCough_Frame42` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame98` | 1 |  |
-| `Ani_MegaFetus_idleLB_Frame204` | 1 |  |
-| `Ani_MoonHead_digestSwallowedCracked_Frame2` | 1 |  |
-| `Ani_BunkerBoy_dyingMutant_Frame12` | 1 |  |
-| `Ani_BunkerBoy_hitBishop_Frame6` | 1 |  |
-| `Ani_PetRock_hit_Frame3` | 1 |  |
-| `Ani_BigDemon_necksnapCat_Frame140` | 1 |  |
-| `Ani_Bumblefoot_leapattackUp_Frame2` | 1 |  |
-| `Ani_ShamblingShade_walk_Frame4` | 1 |  |
-| `Ani_Lenny_grabCorpse_Frame198` | 1 |  |
-| `ProjectileHitNothing_Snowball` | 1 |  |
-| `Ani_Cat_riseFromDowned_Frame2` | 1 |  |
-| `Ani_Lenny_dying_Frame2` | 1 |  |
-| `Ani_TheCoven_summon4_Frame188` | 1 |  |
-| `Ani_RatKing_New_dying_Frame2` | 1 |  |
-| `Ani_HeadTumor_attack_Frame2` | 1 |  |
-| `Ani_Interstitial_breed1_Frame136` | 1 |  |
-| `Ani_Nettle_spikes_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame160` | 1 |  |
-| `Ani_Yeti_dying_Frame39` | 1 |  |
-| `Ani_Cat_spinattackstart_Frame2` | 1 |  |
-| `Ani_Gambit_groundpound_Frame33` | 1 |  |
-| `Ani_AcidOoze_walk_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_raise2_Frame2` | 1 |  |
-| `Ani_Cat_statdown_Frame2` | 1 |  |
-| `Ani_DeathWorm_dashend_Frame2` | 1 |  |
-| `Ani_GreenProber_hit_Frame5` | 1 |  |
-| `Ani_Cat_pointheal_Frame2` | 1 |  |
-| `Injury_Disfigured` | 1 |  |
-| `Ani_ManglersMonster_dyingRF_Frame3` | 1 |  |
-| `Ani_ShadeF_attack_Frame33` | 1 |  |
-| `Ani_Snake_dying_Frame2` | 1 |  |
-| `Ani_Cat_whistle_Frame20` | 1 |  |
-| `Ani_CatHuman_walk_Frame27` | 1 |  |
-| `Ani_Cat_death2_Frame2` | 1 |  |
-| `Ani_Wisp_attack_Frame2` | 1 |  |
-| `Ani_Gatekeeper_leap_Frame44` | 1 |  |
-| `Ani_BunkerBoy_dyingMutant_Frame93` | 1 |  |
-| `Ani_SpiderQueen_walk_Frame18` | 1 |  |
-| `Ani_BungaElite1_transformCaveMan_Frame52` | 1 |  |
-| `Ani_Cat_fallingClawsFstart_Frame2` | 1 |  |
-| `Ani_Lenny_attackCatDead_Frame3` | 1 |  |
-| `Ani_CloakedDemon_flames_Frame8` | 1 |  |
-| `SE_Interstitial_RaiseSwish` | 1 |  |
-| `Ani_DiggyMaggot_hit_Frame5` | 1 |  |
-| `Ani_MamaMaggot_walk_Frame2` | 1 |  |
-| `Ani_LightningElemental_scream_Frame2` | 1 |  |
-| `Ani_Tremblo_chewing_Frame2` | 1 |  |
-| `Ani_Crow_walk_Frame2` | 1 |  |
-| `Ani_Cat_death9_Frame2` | 1 |  |
-| `Ani_BunkerBoy_explodeBombZealot_Frame27` | 1 |  |
-| `Ani_GroundZombie_flip_Frame3` | 1 |  |
-| `Ani_Zaratana_roar_Frame126` | 1 |  |
-| `Ani_FleshLad_weak_Frame115` | 1 |  |
-| `Ani_MegaFetus_dyingRB_Frame40` | 1 |  |
-| `Ani_Interstitial_breed0_Frame64` | 1 |  |
-| `SpellSpawn_Purge` | 1 |  |
-| `Ani_LordBunga_land_Frame2` | 1 |  |
-| `Ani_TheCoven_hit4_Frame2` | 1 |  |
-| `Ani_Interstitial_mutate_Frame2` | 1 |  |
-| `Ani_RattleSnake_walk_Frame6` | 1 |  |
-| `Ani_MotherSpike_tumor_Frame2` | 1 |  |
-| `Ani_Cat_bigkick_Frame2` | 1 |  |
-| `Ani_SecurityBot_hit_Frame2` | 1 |  |
-| `Ani_Bat_dying_Frame2` | 1 |  |
-| `Ani_LordBunga_attack_Frame7` | 1 |  |
-| `Ani_BirdMed_moveLoop_Frame2` | 1 |  |
-| `Ani_Thump_jumpRF_Frame48` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame297` | 1 |  |
-| `Ani_MoonHead_dying_Frame2` | 1 |  |
-| `Ani_Floast_throw_Frame76` | 1 |  |
-| `Ani_SmallAsteroid_puke_Frame43` | 1 |  |
-| `Ani_Turret_shoot_Frame2` | 1 |  |
-| `Ani_CopBot_shutdown_Frame2` | 1 |  |
-| `Ani_Cat_flashkick_Frame38` | 1 |  |
-| `Ani_Mammoth_attack_Frame71` | 1 |  |
-| `Injury_BrokenRib` | 1 |  |
-| `Ani_DrMangler_hit_Frame2` | 1 |  |
-| `Ani_MoonHead_crack_Frame3` | 1 |  |
-| `Ani_Stegosaurus_spin_Frame12` | 1 |  |
-| `Ani_Interstitial_breed2_Frame220` | 1 |  |
-| `DamageMiss` | 1 |  |
-| `Ani_Cat_doubleswat_Frame22` | 1 |  |
-| `SE_BirdDying_Dove` | 1 |  |
-| `Ani_Cat_robotWalk_Frame14` | 1 |  |
-| `Ani_Gambit_power_Frame2` | 1 |  |
-| `Ani_ShadeF_spitOpenCat_Frame12` | 1 |  |
-| `Ani_Cat_kicksand_Frame29` | 1 |  |
-| `Ani_Lenny_cry_Frame78` | 1 |  |
-| `SE_CatSwishKickBig` | 1 |  |
-| `Ani_Gambit_throw_Frame52` | 1 |  |
-| `Ani_FatMan_hit_Frame7` | 1 |  |
-| `Ani_CatHuman_cry_Frame73` | 1 |  |
-| `Ani_Hitler_dying_Frame3` | 1 |  |
-| `Ani_Hitler_hitNuke_Frame9` | 1 |  |
-| `Ani_ShamblingShade_run_Frame17` | 1 |  |
-| `Ani_Pyrophina_roar_Frame20` | 1 |  |
-| `Ani_Cat_metronome_Frame38` | 1 |  |
-| `Ani_BunkerBoy_becomemutantZealot_Frame3` | 1 |  |
-| `Injury_BrokenPaw` | 1 |  |
-| `Ani_Cat_death4_Frame2` | 1 |  |
-| `Ani_CloningVat_hit_Frame2` | 1 |  |
-| `Ani_SpewerPill_dying_Frame2` | 1 |  |
-| `Ani_RatKing_New_dashend2_Frame8` | 1 |  |
-| `Ani_MotherTumor_grabCat_Frame28` | 1 |  |
-| `Ani_PetBoulder_hit_Frame3` | 1 |  |
-| `Ani_Chubs_idleRage_Frame76` | 1 |  |
-| `Ani_Cat_robotWalk_Frame9` | 1 |  |
-| `Ani_Dybbuk_possess_Frame2` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame40` | 1 |  |
-| `Ani_ManglersMonster_walkRF_Loop` | 1 |  |
-| `SE_WolfCatLeap` | 1 |  |
-| `Ani_AstroZombie_breakneck_Frame30` | 1 |  |
-| `Ani_MoonHead_yell_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame537` | 1 |  |
-| `Ani_AstroZombie_breakarmCat_Frame30` | 1 |  |
-| `Ani_MegaFetus_spinLB_Frame16` | 1 |  |
-| `Ani_SoldierBot_backflip_Frame4` | 1 |  |
-| `Ani_ButchTinkX_dashend_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame119` | 1 |  |
-| `Ani_Pterodactyl_grab_Frame9` | 1 |  |
-| `Ani_ManglersMonster_hitLB_Frame4` | 1 |  |
-| `Ani_BunkerBoy_becomemutantZealot_Frame2` | 1 |  |
-| `Ani_Cat_clapTogether_Frame6` | 1 |  |
-| `Ani_AstroZombie_breakleg_Frame30` | 1 |  |
-| `Ani_BombFly_attack_Frame34` | 1 |  |
-| `Ani_Guillotina3Head_call_Frame15` | 1 |  |
-| `ProjectileSpawn_Gutball` | 1 |  |
-| `Ani_Thump_dyingLB_Frame2` | 1 |  |
-| `Ani_GlowingMushroom_puff_Frame2` | 1 |  |
-| `Ani_MegaFetus_spinLF_Frame16` | 1 |  |
-| `Ani_TheCoven_dying2_Frame14` | 1 |  |
-| `SE_CatWalk` | 1 |  |
-| `Ani_LordBunga_entrance_upChair_Frame2` | 1 |  |
-| `Ani_Pyrophina_grab_Frame8` | 1 |  |
-| `Ani_Interstitial_die_Frame173` | 1 |  |
-| `SE_TerminatorSwapWeapon` | 1 |  |
-| `Ani_BigUFO_hit_Frame2` | 1 |  |
-| `ProjectileHitCharacter_BrambleProjectile` | 1 |  |
-| `Ani_DeathWorm_bonk_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleLB_Frame338` | 1 |  |
-| `Ani_RockyBobo_walkslow_Frame153` | 1 |  |
-| `Ani_FinalBossPhase2_turn180_Frame2` | 1 |  |
-| `Ani_DiggyMaggot_dying_Frame7` | 1 |  |
-| `Ani_Yeti_hit_Frame8` | 1 |  |
-| `Ani_ShadeF_shriekOpen_Frame13` | 1 |  |
-| `Ani_FlySwarm_attack4_Frame18` | 1 |  |
-| `Ani_MegaFetus_weakLB_Frame81` | 1 |  |
-| `Ani_Cat_scratchear_Frame2` | 1 |  |
-| `Ani_Cat_poopfartbehind_Frame40` | 1 |  |
-| `Ani_BunkerBoy_walkCultist_Frame31` | 1 |  |
-| `Ani_BunkerBoy_dyingCultist_Frame2` | 1 |  |
-| `Ani_CavePerson_dyingCaveWoman_Frame9` | 1 |  |
-| `Ani_FleshLad_dying_Frame27` | 1 |  |
-| `Ani_ManglersMonster_explodeRF_Frame115` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame449` | 1 |  |
-| `Ani_MoonHead_spit_Frame2` | 1 |  |
-| `Ani_LordBunga_dying_Frame826` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame305` | 1 |  |
-| `Ani_Guillotina2Body_hitRage_Frame2` | 1 |  |
-| `Ani_RattleSnake_walk_Frame12` | 1 |  |
-| `Ani_Spewer_dying_Frame2` | 1 |  |
-| `Ani_Zaratana_walk_Frame7` | 1 |  |
-| `Ani_Interstitial_breed2_Frame129` | 1 |  |
-| `Ani_MedSlime_dying_Frame3` | 1 |  |
-| `Ani_Lenny_walkCatDead_Frame29` | 1 |  |
-| `Ani_ThrobbingKing_command4_Frame2` | 1 |  |
-| `Ani_Zodiac_shoot_Frame2` | 1 |  |
-| `Ani_TheCoven_idle3_Loop` | 1 |  |
-| `Ani_Guillotina2Body_tantrum_Frame48` | 1 |  |
-| `SE_WeaponShoot_TeslaCannon` | 1 |  |
-| `Ani_Birthwort_shoot_Frame2` | 1 |  |
-| `SE_CatQuickThrow` | 1 |  |
-| `Ani_BunkerBoy_blessBishop_Frame2` | 1 |  |
-| `Ani_Hemlock_shoot_Frame2` | 1 |  |
-| `Ani_DrMangler_jab_Frame2` | 1 |  |
-| `Ani_KillDozer_ramEnd_Frame4` | 1 |  |
-| `Ani_Cat_weaponslam_Frame12` | 1 |  |
-| `Ani_SecurityBot_recharge_Frame60` | 1 |  |
-| `Ani_MegaFetus_weakRB_Frame2` | 1 |  |
-| `Ani_Birthwort_dash_Frame9` | 1 |  |
-| `Ani_MegaFetus_walkLB_Frame2` | 1 |  |
-| `SE_CatThrowSharp` | 1 |  |
-| `Ani_ChargeyMaggot_dying_Frame2` | 1 |  |
-| `Ani_Parasiter_walk_Frame8` | 1 |  |
-| `Ani_BigUFO_laserShoot_Frame2` | 1 |  |
-| `Ani_GroundZombie_dying_Frame2` | 1 |  |
-| `Ani_MoonHead_idleChargingCracked_Loop` | 1 |  |
-| `Ani_Interstitial_girlRejectBoy_Frame122` | 1 |  |
-| `Ani_Cat_splashatk_Frame25` | 1 |  |
-| `Ani_Gamete_dying_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakRF_Frame277` | 1 |  |
-| `Ani_ChargeyMaggot_dashstart_Frame9` | 1 |  |
-| `Ani_ManglersMonster_explodeRF_Frame122` | 1 |  |
-| `Ani_NubsCat_hit_Frame2` | 1 |  |
-| `Tick_Confusion` | 1 |  |
-| `Ani_CavePerson_transformSpearCaveMan_Frame12` | 1 |  |
-| `Ani_MamaMaggot_spawn_Frame2` | 1 |  |
-| `Ani_MoonHead_openmouth_Frame40` | 1 |  |
-| `Ani_Cat_splashatk_Frame2` | 1 |  |
-| `Ani_YellowBlaster_jetbegin_Frame2` | 1 |  |
-| `Ani_BirdMed_idle_Frame246` | 1 |  |
-| `Ani_SlotMachine_resultWin_Frame20` | 1 |  |
-| `Ani_TheCoven_hit1_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_walk2_Frame2` | 1 |  |
-| `Ani_EmptyV_turnOff_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame324` | 1 |  |
-| `Ani_Trampy_scratch_Frame146` | 1 |  |
-| `Ani_DustDevil_dash_Frame19` | 1 |  |
-| `SE_WeaponShoot_Taser` | 1 |  |
-| `Ani_BunkerBoy_pickupCultist_Frame50` | 1 |  |
-| `Ani_ConjoinedHusk_shoot_Frame14` | 1 |  |
-| `Ani_GroundZombie_flipDown_Frame2` | 1 |  |
-| `Ani_Gambit_djump_Frame2` | 1 |  |
-| `Ani_DustDevil_portin_Frame2` | 1 |  |
-| `Ani_HemlockFetus_fetus_dying_land_Frame9` | 1 |  |
-| `Injury_Cursed` | 1 |  |
-| `SE_CatSwishThrow` | 1 |  |
-| `Ani_SmallAsteroid_puke_Frame68` | 1 |  |
-| `Ani_Revalark_heal_Frame40` | 1 |  |
-| `Ani_TheCoven_rise2_Frame11` | 1 |  |
-| `Ani_CloakedDemon_counter_Frame12` | 1 |  |
-| `Ani_TheCoven_dying2_Frame3` | 1 |  |
-| `Ani_ThrobbingKing_walk_Frame53` | 1 |  |
-| `Ani_BoyDino_dying_Frame14` | 1 |  |
-| `Ani_TheMother_dying_Frame3` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand2_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame88` | 1 |  |
-| `Ani_MoonWorm_portout_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand1_Frame2` | 1 |  |
-| `Ani_TinyTumorB_dying_Frame2` | 1 |  |
-| `Ani_MoonHead_grabChargingCracked_Frame3` | 1 |  |
-| `Ani_MoonHead_uncrackSwallowedCracked_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Injured_Frame107` | 1 |  |
-| `Ani_Pinky_dying_Frame2` | 1 |  |
-| `Ani_Cerberubs_dying_Frame2` | 1 |  |
-| `Ani_TallBot_hitPrimed_Frame2` | 1 |  |
-| `Ani_TheCoven_summon4_Frame433` | 1 |  |
-| `ProjectileSpawn_Fishball` | 1 |  |
-| `Ani_Amoeba_dying_Frame2` | 1 |  |
-| `Ani_ShadeF_walk_Frame38` | 1 |  |
-| `Ani_FetusGusher_walk_Frame2` | 1 |  |
-| `Ani_Triceratops_ram_Frame9` | 1 |  |
-| `Ani_SmallUFO_dying_Frame2` | 1 |  |
-| `Ani_Guillotina1_throw_Frame16` | 1 |  |
-| `Ani_Trampy_poop_Frame42` | 1 |  |
-| `Ani_Interstitial_itemGet_Frame41` | 1 |  |
-| `Ani_GraveWorm_portout_Frame2` | 1 |  |
-| `Ani_FatWoman_dying2_Frame7` | 1 |  |
-| `Ani_Peashy_attackRage_Frame2` | 1 |  |
-| `Ani_GambitDice_land_Frame28` | 1 |  |
-| `Ani_TinyTumorA_dying_Frame2` | 1 |  |
-| `Ani_Cat_robotWalk_Frame3` | 1 |  |
-| `Ani_ManglersMonster_dyingLF_Frame2` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame89` | 1 |  |
-| `Ani_Pyrophina_stomp_Frame7` | 1 |  |
-| `Ani_Cat_headbuttdashStart_Frame15` | 1 |  |
-| `Ani_GroundZombie_dying_Frame3` | 1 |  |
-| `Ani_Flushmaster_hit_Frame2` | 1 |  |
-| `Ani_Cat_punchSelf_Frame25` | 1 |  |
-| `Ani_SmallAsteroid_dying_Frame46` | 1 |  |
-| `Ani_MegaTumor_hit_Frame2` | 1 |  |
-| `Ani_Amoeba_attach_Frame6` | 1 |  |
-| `Ani_Peashy_walkRage_Frame10` | 1 |  |
-| `Ani_Cat_knockup_Frame2` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame325` | 1 |  |
-| `Ani_FetusJar_hit2_Frame2` | 1 |  |
-| `Ani_SmallUFO_walk_Frame2` | 1 |  |
-| `Ani_Gatekeeper_spawn_Frame28` | 1 |  |
-| `Ani_Interstitial_loseDisorder_Frame14` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame277` | 1 |  |
-| `Ani_Zodiac_dying_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_dyingHoly2_Frame2` | 1 |  |
-| `Ani_Chummy_walk_Frame2` | 1 |  |
-| `Ani_MegaMutant_guard_Frame14` | 1 |  |
-| `Ani_Cat_weaponspell_Frame2` | 1 |  |
-| `Ani_Revalark_walk_Frame2` | 1 |  |
-| `DamageHealthLowCrit` | 1 |  |
-| `Ani_Interstitial_fight_Frame70` | 1 |  |
-| `Ani_LoveBot_dying_Frame2` | 1 |  |
-| `Ani_YellowBlaster_jetloop_Loop` | 1 |  |
-| `Ani_HangerBot_spawn_Frame2` | 1 |  |
-| `Ani_Frog_dying_Frame2` | 1 |  |
-| `SE_Terminator_bearHug` | 1 |  |
-| `Ani_Sprout_hit_Frame3` | 1 |  |
-| `Ani_Interstitial_fight_Frame75` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame37` | 1 |  |
-| `Tick_Poison` | 1 |  |
-| `Ani_BigDemon_walk_Frame14` | 1 |  |
-| `Ani_CavePerson_growupCaveBaby_Frame4` | 1 |  |
-| `Ani_PinkyX_walk_Frame2` | 1 |  |
-| `Ani_Trex_stomp_Frame60` | 1 |  |
-| `Ani_ThrobbingKing2_hop_Frame18` | 1 |  |
-| `Ani_BigAsteroid_hit_Frame4` | 1 |  |
-| `JohnnyWashSoothe` | 1 |  |
-| `Status_Unfreeze` | 1 |  |
-| `Ani_MegaTumor_powerup_Frame2` | 1 |  |
-| `Ani_SpiderQueen_egg_Frame2` | 1 |  |
-| `Ani_TheCoven_dying1_Frame4` | 1 |  |
-| `Ani_Cat_weaponthrowhigh_Frame12` | 1 |  |
-| `Ani_Guillotina3Body_throw_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_vomitrain_Frame23` | 1 |  |
-| `Ani_Interstitial_friendship_Frame66` | 1 |  |
-| `Ani_Tombstone_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame382` | 1 |  |
-| `Ani_Pooter_dying_Frame12` | 1 |  |
-| `Ani_Lenny_hugCat_Frame2` | 1 |  |
-| `Ani_Pile_dying_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackL2_Frame7` | 1 |  |
-| `Ani_Cat_druidTransform_Frame2` | 1 |  |
-| `Ani_Reaper_attack2_Frame2` | 1 |  |
-| `ProjectileSpawn_FireProjectile` | 1 |  |
-| `Ani_FleshLad_idle_Frame26` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame87` | 1 |  |
-| `ProjectileSpawn_ChakramProjectile` | 1 |  |
-| `Ani_Spewer_walk_Frame11` | 1 |  |
-| `Ani_LordBunga_dying_Frame486` | 1 |  |
-| `Ani_FleshLad_walk_Frame17` | 1 |  |
-| `Ani_ManglersMonster_hitRF_Frame3` | 1 |  |
-| `Ani_SpiderQueen_portout_Frame16` | 1 |  |
-| `Ani_Guillotina2Head_walkRage_Frame2` | 1 |  |
-| `ProjectileHitCharacter_Joystick` | 1 |  |
-| `Ani_MegaFetus_idleRF_Frame280` | 1 |  |
-| `Ani_Pyrophina_attack_Frame26` | 1 |  |
-| `Ani_Slag_walk_Frame2` | 1 |  |
-| `Ani_Flushmaster_attack_Frame198` | 1 |  |
-| `Ani_Cat_pay_Frame2` | 1 |  |
-| `Ani_SlotMachine_resultJackpot_Frame60` | 1 |  |
-| `Ani_Chubs_attack_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_hit2_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_dying2_Frame2` | 1 |  |
-| `Ani_Tormentor_hit_Frame8` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame1311` | 1 |  |
-| `Ani_Cat_dryHeave_Frame55` | 1 |  |
-| `Ani_Trampy_walk_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_transform21_Frame21` | 1 |  |
-| `Ani_ThrobbingKing2_shoot_Frame26` | 1 |  |
-| `Ani_Cat_thumbsup_Frame2` | 1 |  |
-| `Ani_Cat_cheat_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleRB_Frame2` | 1 |  |
-| `Ani_Cat_brace_Frame2` | 1 |  |
-| `Ani_MegaFetus_hitLB_Frame2` | 1 |  |
-| `Ani_CavePerson_chestpoundCaveMan_Frame57` | 1 |  |
-| `Ani_SpiderQueen_walkInsane_Frame15` | 1 |  |
-| `Ani_CoreFreak_attack_Frame5` | 1 |  |
-| `Ani_LightningElemental_strike_Frame2` | 1 |  |
-| `Ani_Cat_quarterswipe_Frame8` | 1 |  |
-| `Ani_FinalBossPhase2_chargeholy_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Dead_Dead_Frame13` | 1 |  |
-| `Ani_HumanCat_dodge_Frame9` | 1 |  |
-| `Ani_BigDemon_attack_Frame15` | 1 |  |
-| `Ani_Mammoth_walk_Frame42` | 1 |  |
-| `ProjectileHitCharacter_Bullet` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame207` | 1 |  |
-| `Ani_Cat_buildRobot_Frame106` | 1 |  |
-| `Ani_Gatekeeper_attack_Frame2` | 1 |  |
-| `Ani_Zodiac_shoot_Frame14` | 1 |  |
-| `SE_PickupCoin` | 1 |  |
-| `Ani_CanCreeperOut_shoot_Frame2` | 1 |  |
-| `SE_BodyCollapse` | 1 |  |
-| `Ani_FinalBossMegaGuppy_critical3_Frame7` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame327` | 1 |  |
-| `Ani_FinalBossPhase3_wrath3_Frame15` | 1 |  |
-| `Ani_ShamblingShade_walk_Frame16` | 1 |  |
-| `Ani_Roomba_ramStart_Frame2` | 1 |  |
-| `Ani_GreyAlien_hit_Frame2` | 1 |  |
-| `Ani_Lenny_dying_Frame31` | 1 |  |
-| `Ani_Zaratana_roar_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackL1_Frame12` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame117` | 1 |  |
-| `Ani_AstroZombie_breakneckHeadless_Frame2` | 1 |  |
-| `Ani_Pterodactyl_peckCat_Frame3` | 1 |  |
-| `Ani_Cat_weaponspell_Frame56` | 1 |  |
-| `Ani_FlySwarm_dying5_Frame2` | 1 |  |
-| `Ani_MegaFetus_spinLF_Frame5` | 1 |  |
-| `Ani_SpiderQueen_egg_Frame27` | 1 |  |
-| `Ani_Trex_walk_Frame37` | 1 |  |
-| `Ani_BirdSmall_moveLoop_Frame40` | 1 |  |
-| `ProjectileSpawn_SpikeProjectile` | 1 |  |
-| `Ani_Cat_cannonball_Frame12` | 1 |  |
-| `Ani_Turret_shoot_Frame9` | 1 |  |
-| `Ani_TallHaunt_buff_Frame2` | 1 |  |
-| `Ani_Gatekeeper_attack_Frame14` | 1 |  |
-| `Ani_CavePerson_walkCatCaveWoman_Frame5` | 1 |  |
-| `Ani_TheBloat_spawn_Frame41` | 1 |  |
-| `Ani_DrMangler_spin_Frame5` | 1 |  |
-| `Ani_CaveChief_yell_Frame28` | 1 |  |
-| `Ani_Cat_cartwheel_Frame77` | 1 |  |
-| `ProjectileHitNothing_LeechProjectile` | 1 |  |
-| `Ani_Pterodactyl_hitCat_Frame2` | 1 |  |
-| `Ani_Tormentor_throw_Frame75` | 1 |  |
-| `Ani_FinalBossPhase2_walk2_Frame61` | 1 |  |
-| `Ani_FinalBossPhase3_spawnin1_Frame2` | 1 |  |
-| `Ani_Slag_dying_Frame37` | 1 |  |
-| `Ani_GeoLad_jumpsmash_Frame2` | 1 |  |
-| `ProjectileHitCharacter_LobbedProjectile` | 1 |  |
-| `Ani_BabySpider_walk_Frame18` | 1 |  |
-| `Ani_BunkerBoy_walkZealot_Frame5` | 1 |  |
-| `Ani_FinalBossPhase3_transform12_Frame21` | 1 |  |
-| `Ani_FinalBossMegaGuppy_hit1_Frame10` | 1 |  |
-| `Ani_BigDemon_shoot_Frame2` | 1 |  |
-| `play_chance` | 1 | `chance`, `play`, `that`, `this`, `triggered` |
-| `Ani_MegaFetus_dyingLB_Frame40` | 1 |  |
-| `Ani_BrambleBaby_entangle_Frame2` | 1 |  |
-| `Ani_Cat_hitup_Frame2` | 1 |  |
-| `SE_FuturebotSuplex` | 1 |  |
-| `SE_WeaponShoot_TractorBeam` | 1 |  |
-| `Ani_Lenny_walkCat_Frame29` | 1 |  |
-| `Ani_Thump_jumpLB_Frame48` | 1 |  |
-| `Ani_Thump_smileLF_Frame2` | 1 |  |
-| `Ani_Carcus_hit_Frame2` | 1 |  |
-| `Ani_Cat_weaponSpinAttack_Frame2` | 1 |  |
-| `Ani_GreyAlien_shoot_Frame25` | 1 |  |
-| `Ani_OrganGrinderX_hit_Frame3` | 1 |  |
-| `Ani_Caterpillar_attack_Frame2` | 1 |  |
-| `Ani_HumanCat_walkDH_Frame19` | 1 |  |
-| `Ani_Cat_tinkerSelf_Frame73` | 1 |  |
-| `Ani_DrMangler_controlmonsterJoystick_Frame3` | 1 |  |
-| `Ani_FinalBossPhase2_walk_Frame2` | 1 |  |
-| `ProjectileHitCharacter_HookProjectile` | 1 |  |
-| `Ani_MegaFetus_attackLF_Frame60` | 1 |  |
-| `cat_foley` | 1 |  |
-| `Ani_Trampy_scratch_Frame50` | 1 |  |
-| `SpellSpawn_StalactiteFall` | 1 |  |
-| `Ani_Cat_shadowStepIn_Frame2` | 1 |  |
-| `Ani_DrMangler_dying_Frame95` | 1 |  |
-| `Ani_CaveChief_yell_Frame10` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame120` | 1 |  |
-| `Ani_MotherTumor_tossBigHoldingCat_Frame2` | 1 |  |
-| `Ani_Mammoth_hit_Frame6` | 1 |  |
-| `Ani_FinalBossPhase2_pulseHoly_Frame16` | 1 |  |
-| `Ani_BirdMed_moveStart_Frame18` | 1 |  |
-| `ProjectileHitNothing_Creepball` | 1 |  |
-| `Ani_Cat_pukeatk_Frame2` | 1 |  |
-| `Ani_GirlDino_throwCat_Frame25` | 1 |  |
-| `Ani_TheBloat_spawn1_Frame2` | 1 |  |
-| `Ani_MindFetus_pulse2_Frame54` | 1 |  |
-| `Ani_Revalark_weak_Frame38` | 1 |  |
-| `Ani_Pyrophina_throwboss_Frame120` | 1 |  |
-| `SpellSpawn_fx_slow` | 1 |  |
-| `Ani_SecurityBot_hit_Frame4` | 1 |  |
-| `Ani_TheCoven_idle4_Loop` | 1 |  |
-| `Ani_SmallAsteroid_puke_Frame42` | 1 |  |
-| `Ani_Triceratops_hit_Frame2` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame2` | 1 |  |
-| `Ani_CatHuman_fart_Frame12` | 1 |  |
-| `Ani_IceElemental_blizzard_Frame2` | 1 |  |
-| `Ani_TallBot_suplex_Frame45` | 1 |  |
-| `Ani_Caterpillar_hit_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame30` | 1 |  |
-| `Ani_CavePerson_transformCatCaveWoman_Frame56` | 1 |  |
-| `Ani_Gambit_walk_Frame5` | 1 |  |
-| `Ani_Clot_walk_Frame4` | 1 |  |
-| `Ani_Zaratana_dashstart_Frame2` | 1 |  |
-| `Ani_Zaratana_dyingTurtle_Frame171` | 1 |  |
-| `Ani_Trex_alertstart_Frame2` | 1 |  |
-| `Ani_FatWoman_hit_Frame7` | 1 |  |
-| `Ani_Chubs_attackRage_Frame2` | 1 |  |
-| `Ani_Tormentor_walk_Loop` | 1 |  |
-| `SE_Cat_StompLegMove` | 1 |  |
-| `Ani_CavePerson_chestpoundCaveMan_Frame29` | 1 |  |
-| `Ani_FinalBossPhase2_pulseHoly2_Frame2` | 1 |  |
-| `ProjectileHitCharacter_Tumorball` | 1 |  |
-| `Ani_Crow_dying_Frame2` | 1 |  |
-| `Ani_Bombchu_walk_FrameLoop` | 1 |  |
-| `Ani_JarHead_hit2_Frame7` | 1 |  |
-| `Ani_TheBloat_shoot1_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_walk_Frame27` | 1 |  |
-| `Ani_BungaElite2_attackCaveMan_Frame49` | 1 |  |
-| `Ani_FrankX_dying_Frame2` | 1 |  |
-| `Ani_Cat_transformPoof_Frame2` | 1 |  |
-| `Ani_GroundZombie_portinDown_Frame11` | 1 |  |
-| `Ani_MechSuit_thrustersStartCat_Frame2` | 1 |  |
-| `Ani_TheBloat_jump1_Frame3` | 1 |  |
-| `SE_TerminatorCatWalkB` | 1 |  |
-| `Ani_TinyTumorC_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame53` | 1 |  |
-| `Ani_Cat_death10_Frame2` | 1 |  |
-| `Ani_BeaniesX_turtleend_Frame6` | 1 |  |
-| `Ani_ManglersMonster_dashstartRF_Frame3` | 1 |  |
-| `Ani_TheCoven_dying3_Frame3` | 1 |  |
-| `Ani_FinalBossMegaGuppy_hit2_Frame10` | 1 |  |
-| `Ani_Pyrophina_grabCat_Frame3` | 1 |  |
-| `Ani_Guillotina2Body_dying_Frame126` | 1 |  |
-| `Ani_Chaos_hitHost_Frame6` | 1 |  |
-| `Ani_Cat_weaponstab_Frame12` | 1 |  |
-| `Ani_FinalBossPhase3_holy2_Frame20` | 1 |  |
-| `Ani_SmallAsteroid_dying_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_walk_Frame25` | 1 |  |
-| `Ani_ThrobbingKing_gutball_Frame4` | 1 |  |
-| `Ani_Cat_karateKid_Frame2` | 1 |  |
-| `Ani_MindFetus_counterspell_Frame19` | 1 |  |
-| `Ani_BigDemon_attack_Frame12` | 1 |  |
-| `Ani_RatKing_New_hit_Frame5` | 1 |  |
-| `Ani_BungaElite1_throwSpearCaveMan_Frame28` | 1 |  |
-| `Ani_BungaElite2_transformSpearCaveMan_Frame12` | 1 |  |
-| `Ani_Hitler_suicide_Frame100` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame314` | 1 |  |
-| `Ani_FinalBossPhase2_throwshield_Frame108` | 1 |  |
-| `Ani_QueenHippo_attack_Frame2` | 1 |  |
-| `Ani_MegaDinoLeg_leave_Frame2` | 1 |  |
-| `Ani_TheMother_consume_Frame6` | 1 |  |
-| `Ani_MoonHead_dyingCracked_Frame2` | 1 |  |
-| `Ani_MoonHead_weakCracked_Loop` | 1 |  |
-| `Ani_BirdSmall_moveLoop_Frame11` | 1 |  |
-| `Ani_Pooter_walk_Loop` | 1 |  |
-| `Ani_Lenny_hitCat_Frame2` | 1 |  |
-| `Ani_Guillotina3Body_walkRage_Frame11` | 1 |  |
-| `Ani_Gatekeeper_hit_Frame3` | 1 |  |
-| `Ani_Guillotina1_shoot_Frame32` | 1 |  |
-| `Ani_Peashy_blockedRage_Frame6` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame471` | 1 |  |
-| `ProjectileHitNothing_GlassBall` | 1 |  |
-| `Ani_CavePerson_walkCaveMan_Frame4` | 1 |  |
-| `SE_Cat_ShadowStepIn` | 1 |  |
-| `Ani_TheBloat_jump_Frame3` | 1 |  |
-| `Ani_Interstitial_enraged_Frame2` | 1 |  |
-| `Ani_TallBot_dyingPrimed_Frame4` | 1 |  |
-| `Ani_TheMother_pullin_Frame2` | 1 |  |
-| `Ani_Yeti_icebreath_Frame39` | 1 |  |
-| `Ani_RattleSnake_walk_Frame18` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame59` | 1 |  |
-| `Ani_RattleSnake_walk_Frame20` | 1 |  |
-| `Ani_Bombchu_dying_Frame2` | 1 |  |
-| `Ani_BungaElite2_throwSpearCaveMan_Frame28` | 1 |  |
-| `Ani_Lenny_spawnin_Frame2` | 1 |  |
-| `Ani_MindFetus_pulse3_Frame2` | 1 |  |
-| `Ani_DrMangler_spin_Frame2` | 1 |  |
-| `Ani_Peashy_throwobject_Frame24` | 1 |  |
-| `Ani_HouseCat_scratching_Frame26` | 1 |  |
-| `Ani_Scary_attack_Frame2` | 1 |  |
-| `Tick_Hex` | 1 |  |
-| `Ani_Chaos_hit_Frame6` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame400` | 1 |  |
-| `Ani_Kirby_walk_Frame2` | 1 |  |
-| `Ani_ShadeF_dying_Frame3` | 1 |  |
-| `Ani_FleshLad_dying_Frame2` | 1 |  |
-| `Ani_BirdMed_idle_Frame268` | 1 |  |
-| `Ani_TracyX_attackRB_Frame10` | 1 |  |
-| `Ani_MindFetus_pulse3_Frame9` | 1 |  |
-| `Ani_FlySwarm_shrink5_Frame15` | 1 |  |
-| `Ani_Trex_stomp_Frame35` | 1 |  |
-| `Ani_Trex_dying_Frame6` | 1 |  |
-| `Ani_MegaFetus_dyingLB_Frame2` | 1 |  |
-| `Ani_TheMother_hit_Frame3` | 1 |  |
-| `Ani_Lenny_grabCorpse_Frame273` | 1 |  |
-| `Ani_FinalBossPhase2_walk_Frame25` | 1 |  |
-| `Ani_Guillotina3Body_dying_Frame2` | 1 |  |
-| `Ani_Hitler_idleNuke_Frame3` | 1 |  |
-| `Ani_Interstitial_breed2_Frame136` | 1 |  |
-| `Ani_Guillotina3Body_runStart_Frame2` | 1 |  |
-| `ProjectileHitNothing_Tumorball` | 1 |  |
-| `Ani_Kirby_dying_Frame2` | 1 |  |
-| `Ani_WaterLeech_walk_Frame116` | 1 |  |
-| `Ani_AlienBeast_dying_Frame2` | 1 |  |
-| `Ani_Zaratana_attack_Frame2` | 1 |  |
-| `Ani_Angel_weak_Frame47` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame235` | 1 |  |
-| `DamageHealthHighCrit` | 1 |  |
-| `Ani_FleshLad_idle_Frame290` | 1 |  |
-| `Ani_LordBunga_littlebooChair_Frame6` | 1 |  |
-| `Ani_Cat_throwobject_Frame7` | 1 |  |
-| `Ani_Cat_liquidunclone_Frame2` | 1 |  |
-| `Ani_ChumBag_shoot_Frame2` | 1 |  |
-| `Ani_Gamete_walk_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_transform32_Frame21` | 1 |  |
-| `Ani_Bear_dying_Frame3` | 1 |  |
-| `Ani_BombFly_walk_Frame2` | 1 |  |
-| `ProjectileHitNothing_SmallRock` | 1 |  |
-| `Ani_BungaElite1_attackCaveMan_Frame49` | 1 |  |
-| `Ani_BirdLarge_idle_Frame636` | 1 |  |
-| `Ani_MegaFetus_walkRB_Frame2` | 1 |  |
-| `Ani_FlySwarm_attack2_Frame48` | 1 |  |
-| `Ani_Birthwort_walk_Frame22` | 1 |  |
-| `Ani_FinalBossPhase2_throwshield_Frame67` | 1 |  |
-| `Ani_Hive_dying_Frame2` | 1 |  |
-| `Ani_BoyDino_dashing_Frame14` | 1 |  |
-| `Ani_Caterpillar_attack_Frame23` | 1 |  |
-| `Ani_AstroZombie_breakneckCat_Frame2` | 1 |  |
-| `Ani_Cat_eatTrinket_Frame37` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame356` | 1 |  |
-| `Ani_Interstitial_breed1_Frame167` | 1 |  |
-| `Ani_FetusNoJar_pullremote_Frame2` | 1 |  |
-| `Ani_Cat_headbuttdashEnd_Frame2` | 1 |  |
-| `Ani_GroundZombie_portinDown_Frame2` | 1 |  |
-| `Ani_SpiderQueen_walk_Frame15` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame82` | 1 |  |
-| `SE_ThrowGrenade` | 1 |  |
-| `Ani_BungaElite1_chestpoundCaveMan_Frame29` | 1 |  |
-| `Ani_Guillotina1_attackRage_Frame25` | 1 |  |
-| `Ani_YellowBlaster_reload_Frame79` | 1 |  |
-| `Ani_Hitler_walk_Frame51` | 1 |  |
-| `Ani_Birthwort_dash_Frame6` | 1 |  |
-| `Ani_BigAsteroid_dying_Frame10` | 1 |  |
-| `Ani_Cat_zombieWalk_Frame19` | 1 |  |
-| `Ani_BoyDino_throwCat_Frame43` | 1 |  |
-| `Ani_ShadeM_attack_Frame2` | 1 |  |
-| `Ani_Cat_hadouken_Frame2` | 1 |  |
-| `Ani_Trampy_dodge_Frame5` | 1 |  |
-| `ProjectileSpawn_SpiderBall` | 1 |  |
-| `Ani_Cat_sleepStart_Frame2` | 1 |  |
-| `Ani_Moth_spawnin_Frame2` | 1 |  |
-| `Ani_Cat_uppercutatk_Frame58` | 1 |  |
-| `Ani_Bear_hit_Frame3` | 1 |  |
-| `Ani_HitlerMech_pulp_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame207` | 1 |  |
-| `Ani_GroundZombie_portoutDown_Frame2` | 1 |  |
-| `Ani_Bat_attack_Frame13` | 1 |  |
-| `Ani_CoreFreak_dying_Frame31` | 1 |  |
-| `Ani_FatRat_land_Frame2` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame46` | 1 |  |
-| `Ani_ShadeF_walkOpen_Frame28` | 1 |  |
-| `Ani_GirlDino_throw_Frame12` | 1 |  |
-| `Ani_Cat_weaponshoot_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand2_Frame6` | 1 |  |
-| `Ani_TracyX_dyingRF_Frame60` | 1 |  |
-| `Ani_Pterodactyl_dropCat_Frame50` | 1 |  |
-| `Ani_CavePerson_transformCaveWoman_Frame2` | 1 |  |
-| `Ani_Interstitial_breed0_Frame6` | 1 |  |
-| `Ani_DrMangler_fumbleJoystick_Frame2` | 1 |  |
-| `Ani_Cat_scratchear_Frame46` | 1 |  |
-| `Ani_Nubs_dying_Frame2` | 1 |  |
-| `Ani_Chubs_walk_Frame10` | 1 |  |
-| `Ani_Interstitial_breed2_Frame318` | 1 |  |
-| `Ani_TheBloat_jump1_Frame2` | 1 |  |
-| `ProjectileSpawn_MaggotBall` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame2` | 1 |  |
-| `Ani_Mammoth_attack_Frame18` | 1 |  |
-| `ProjectileHitCharacter_ManaLeechProjectile` | 1 |  |
-| `Ani_LordBunga_consume_Frame51` | 1 |  |
-| `Ani_ShadeF_attackOpen_Frame8` | 1 |  |
-| `Ani_ManglersMonster_explodeRF_Frame148` | 1 |  |
-| `Ani_Cat_tripleswat_Frame30` | 1 |  |
-| `Ani_BungaElite2_attackCaveMan_Frame44` | 1 |  |
-| `Ani_FatRat_dying_Frame2` | 1 |  |
-| `Ani_RattleSnake_walk_Frame10` | 1 |  |
-| `Twister_move` | 1 |  |
-| `Ani_Cat_megaslap_Frame274` | 1 |  |
-| `Ani_Frog_jump_Frame2` | 1 |  |
-| `Ani_Cat_weaponspell3_Frame25` | 1 |  |
-| `Ani_CoreFreak_fury_Frame69` | 1 |  |
-| `Ani_CavePerson_transformCaveWoman_Frame35` | 1 |  |
-| `Ani_Gambit_fizzle_Frame10` | 1 |  |
-| `Ani_EventCat_choice_str_Frame48` | 1 |  |
-| `Ani_CopBot_dying_Frame2` | 1 |  |
-| `Ani_Guillotina2Body_walk_Frame24` | 1 |  |
-| `Ani_ButchTinkX_hit_Frame3` | 1 |  |
-| `Ani_Cat_raptorWalk_Frame2` | 1 |  |
-| `Ani_FlySwarm_attack5_Frame49` | 1 |  |
-| `Ani_Tox_walk_Frame10` | 1 |  |
-| `Ani_Pyrophina_throwbossNospin_Frame2` | 1 |  |
-| `Ani_BabySpider_walk_Frame9` | 1 |  |
-| `Ani_Triceratops_walk_Frame32` | 1 |  |
-| `Ani_Interstitial_fight_Frame137` | 1 |  |
-| `Ani_SmallUFO_shield_Frame2` | 1 |  |
-| `Ani_Interstitial_eatPoop_Frame285` | 1 |  |
-| `DamageHealthHigh` | 1 |  |
-| `Ani_MegaDinoHead_idle_Frame100` | 1 |  |
-| `DeathPoof_PlayerCat` | 1 |  |
-| `Ani_Maggot_ballLand_Frame3` | 1 |  |
-| `Ani_MoonHead_shootCracked_Frame3` | 1 |  |
-| `Ani_MotherSpike_dying_Frame9` | 1 |  |
-| `Ani_MotherSpike_hit_Frame2` | 1 |  |
-| `Ani_MechSuit_thrustersLoopCat_Loop` | 1 |  |
-| `Ani_Whisperer_whisper_Frame102` | 1 |  |
-| `Ani_GreyAlien_walkprimed_Frame16` | 1 |  |
-| `Ani_FatWoman_dying_Frame7` | 1 |  |
-| `Ani_TenTickles_dying_Frame19` | 1 |  |
-| `Ani_FlySwarm_dying3_Frame2` | 1 |  |
-| `Ani_Cat_castspell_Frame2` | 1 |  |
-| `Ani_SmallUFO_identify_Frame48` | 1 |  |
-| `Ani_CavePerson_attackCatCaveWoman_Frame10` | 1 |  |
-| `Ani_BungaElite2_chestpoundSpearCaveMan_Frame29` | 1 |  |
-| `Ani_Reaper_walk_Frame2` | 1 |  |
-| `Ani_TracyX_attackRB_Frame8` | 1 |  |
-| `Ani_Fuzzer_dying_Frame2` | 1 |  |
-| `Ani_Cat_timberStart_Frame66` | 1 |  |
-| `SpellSpawn_MeteorFall` | 1 |  |
-| `Ani_ShadeF_open_Frame18` | 1 |  |
-| `Ani_Dip_attack_Frame2` | 1 |  |
-| `SE_CatSwishJump` | 1 |  |
-| `Ani_Shambler_walk_Frame2` | 1 |  |
-| `Ani_Cat_stompwalk_Frame2` | 1 |  |
-| `Ani_Cerberubs_attack_Frame58` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand1_Frame10` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame24` | 1 |  |
-| `ProjectileHitCharacter_PukeBall` | 1 |  |
-| `Ani_ManglersMonster_dyingRB_Frame2` | 1 |  |
-| `Ani_HumanCat_walk_Frame19` | 1 |  |
-| `Ani_MegaFetus_idleLB_Frame280` | 1 |  |
-| `Ani_Spewer_suck_Frame72` | 1 |  |
-| `Ani_Cat_extendRange_Frame7` | 1 |  |
-| `Ani_BigSlime_dying_Frame3` | 1 |  |
-| `Ani_MoonHead_yellChargingCracked_Frame2` | 1 |  |
-| `Ani_Hitler_suicide_Frame302` | 1 |  |
-| `Ani_MegaFetus_attackRB_Frame60` | 1 |  |
-| `Ani_ManglersMonster_hitRF_Frame4` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame10` | 1 |  |
-| `Ani_BunkerBoy_pickupCultist_Frame2` | 1 |  |
-| `Ani_DrMangler_dying_Frame142` | 1 |  |
-| `Ani_BirdSmall_walk_Frame6` | 1 |  |
-| `Ani_FatMan_slam_Frame26` | 1 |  |
-| `Ani_GirlDino_dying_Frame2` | 1 |  |
-| `Ani_BomberRat_dying_Frame4` | 1 |  |
-| `Ani_Mammoth_dying_Frame2` | 1 |  |
-| `Ani_FloatingHive_dying_Frame2` | 1 |  |
-| `PickupCoin` | 1 |  |
-| `Ani_BunkerBoy_walkBombZealot_Frame6` | 1 |  |
-| `Ani_DrMangler_dying_Frame317` | 1 |  |
-| `Ani_Interstitial_girlRejectBoy_Frame77` | 1 |  |
-| `Ani_ManglersMonster_explodeLB_Frame131` | 1 |  |
-| `Ani_Fuzzer_attack_Frame2` | 1 |  |
-| `ProjectileSpawn_Firecracker` | 1 |  |
-| `TextPopup_COMBAT_POPUP_RUN` | 1 |  |
-| `Ani_Gamete_dying_Frame3` | 1 |  |
-| `Ani_Pinky_attack_Frame2` | 1 |  |
-| `Ani_HitlerHead_dying_Frame2` | 1 |  |
-| `Bomb_FuseLoop` | 1 |  |
-| `Ani_Chubs_idleRage_Frame141` | 1 |  |
-| `Obj_BoulderLand` | 1 |  |
-| `Ani_OrganGrinderX_walk_Frame4` | 1 |  |
-| `Ani_MotherTumor_growHoldingCat_Frame2` | 1 |  |
-| `Ani_Flushmaster_attack_Frame80` | 1 |  |
-| `Ani_SecurityBot_dying_Frame3` | 1 |  |
-| `Ani_Thump_hitRB_Frame4` | 1 |  |
-| `Ani_Flushmaster_attack_Frame2` | 1 |  |
-| `Ani_Shambler_disassemble_Frame2` | 1 |  |
-| `Ani_BigSlimeX_hit_Frame2` | 1 |  |
-| `SpellSpawn_IceBlast` | 1 |  |
-| `Ani_CavePerson_walkSpearCaveMan_Frame5` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame295` | 1 |  |
-| `Ani_GreenProber_dying_Frame29` | 1 |  |
-| `Ani_ChumBag_shoot_Frame52` | 1 |  |
-| `Ani_Yeti_beatchest_Frame54` | 1 |  |
-| `Ani_TallHaunt_shoot_Frame2` | 1 |  |
-| `Ani_Punchbot_hit_Frame4` | 1 |  |
-| `Ani_RattleSnake_walk_Frame2` | 1 |  |
-| `Ani_WaterLeech_hit_Frame3` | 1 |  |
-| `Ani_TheBloat_jump0_Frame85` | 1 |  |
-| `Ani_AstroZombie_dying_Frame2` | 1 |  |
-| `Ani_HitlerMech_portout_Frame15` | 1 |  |
-| `Ani_AlienBeast_howl_Frame2` | 1 |  |
-| `Ani_Cat_metronome_Frame55` | 1 |  |
-| `SpellSpawn_PoisonPoof` | 1 |  |
-| `Ani_DeathWorm_appear_Frame2` | 1 |  |
-| `Ani_BungaElite1_chestpoundSpearCaveMan_Frame29` | 1 |  |
-| `Ani_MegaDinoLeg_lift_Frame4` | 1 |  |
-| `Ani_ButchTinkX_dashstart_Frame3` | 1 |  |
-| `Ani_MegaMutant_hit_Frame3` | 1 |  |
-| `Ani_Guillotina1_melee_Frame12` | 1 |  |
-| `Ani_Cat_spinattackend_Frame2` | 1 |  |
-| `Ani_HouseCat_scratching_Frame108` | 1 |  |
-| `Ani_MamaMaggot_whistle_Frame2` | 1 |  |
-| `Ani_MindFetus_dying_Frame2` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame10` | 1 |  |
-| `Ani_Interstitial_fight_Frame112` | 1 |  |
-| `Ani_FlySwarm_attack2_Frame17` | 1 |  |
-| `Ani_Lenny_dyingCat_Frame31` | 1 |  |
-| `Ani_Guillotina3Body_shakeRage_Frame2` | 1 |  |
-| `Ani_BirdSmall_moveStart_Frame18` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackL3_Frame7` | 1 |  |
-| `Ani_MoonHead_weakSwallowedCracked_Loop` | 1 |  |
-| `Ani_TheCoven_spell2_Frame10` | 1 |  |
-| `Ani_MoonHead_crackCharging_Frame2` | 1 |  |
-| `Ani_Cat_tinker_Frame2` | 1 |  |
-| `Ani_DrDitto_glare_Frame2` | 1 |  |
-| `Ani_EmptyV_hitOff_Frame2` | 1 |  |
-| `Ani_MegaDinoLeg_stomp_Frame38` | 1 |  |
-| `Ani_Interstitial_hungry_Frame2` | 1 |  |
-| `Ani_DinoEggs_dying_Frame2` | 1 |  |
-| `Ani_DrMangler_dying_Frame70` | 1 |  |
-| `Ani_ManglersMonster_dyingLB_Frame3` | 1 |  |
-| `Ani_BomberRat_attack_Frame45` | 1 |  |
-| `Ani_Cat_tripleswat_Frame39` | 1 |  |
-| `Ani_MegaFetus_hitRF_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackR3_Frame7` | 1 |  |
-| `Ani_GirlDino_cry_Frame5` | 1 |  |
-| `Ani_FinalBossPhase3_dying1_Frame2` | 1 |  |
-| `Ani_Rat_dying_Frame2` | 1 |  |
-| `Ani_CoreFreak_fury_Frame9` | 1 |  |
-| `Ani_BunkerBoy_spinZealot_Frame11` | 1 |  |
-| `Ani_Interstitial_fight_Frame47` | 1 |  |
-| `Ani_Cat_hit_land_Frame6` | 1 |  |
-| `Ani_AstroZombie_dying_Frame148` | 1 |  |
-| `Ani_BigUFO_idle2primed_Frame2` | 1 |  |
-| `Ani_Husk_walk_Frame33` | 1 |  |
-| `Ani_AlienBeast_rampage_Frame17` | 1 |  |
-| `Ani_Cat_pissYourself_Frame2` | 1 |  |
-| `Ani_Cat_cartwheelEnd_Frame5` | 1 |  |
-| `Ani_Cerberubs_shootLava_Frame16` | 1 |  |
-| `Ani_FinalBossMegaGuppy_spawnin1_Frame10` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame57` | 1 |  |
-| `Ani_Dybbuk_hit_Frame2` | 1 |  |
-| `Ani_PokerDemon_walk_Frame25` | 1 |  |
-| `DeathExplode` | 1 |  |
-| `Ani_DaddyShark_walk_Frame7` | 1 |  |
-| `Ani_SlotMachine_resultWin_Frame60` | 1 |  |
-| `DeathPoof3` | 1 |  |
-| `Ani_Bear_attack_Frame31` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame4` | 1 |  |
-| `Ani_Chubs_shoot_Frame2` | 1 |  |
-| `Ani_WaterLeech_walk_Frame96` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame167` | 1 |  |
-| `SE_BirdSmall_DyingCall` | 1 |  |
-| `Ani_TheCoven_spell1_Frame9` | 1 |  |
-| `Ani_Chubs_shootRage_Frame5` | 1 |  |
-| `Ani_Cat_tailwhip_Frame7` | 1 |  |
-| `Ani_Guillotina1_suck1_Frame19` | 1 |  |
-| `Ani_BigDemon_dying_Frame90` | 1 |  |
-| `Ani_Gamete_hitBig_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_raise_Frame2` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame100` | 1 |  |
-| `Ani_Guillotina3Body_walk_Frame10` | 1 |  |
-| `Ani_FinalBossPhase2_dodgeforward2_Frame2` | 1 |  |
-| `Ani_Cat_tauntwiggle_Frame2` | 1 |  |
-| `Ani_CoreFreak_fury_Frame8` | 1 |  |
-| `Ani_MotherTumor_tossBigHolding_Frame2` | 1 |  |
-| `Ani_Yeti_beatchest_Frame33` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame55` | 1 |  |
-| `SpellSpawn_NukeBlastLarge` | 1 |  |
-| `Ani_CoreFreak_attack_Frame44` | 1 |  |
-| `Ani_Dybbuk_walk_Frame2` | 1 |  |
-| `Ani_BigUFO_hit_Frame5` | 1 |  |
-| `Ani_Floast_throwCat_Frame77` | 1 |  |
-| `Ani_CavePerson_growupCaveBaby_Frame3` | 1 |  |
-| `Ani_TheCoven_summon4_Frame575` | 1 |  |
-| `Ani_Yeti_walk_Frame23` | 1 |  |
-| `Ani_MegaMutant_grabCat_Frame28` | 1 |  |
-| `Ani_Pterodactyl_dyingCat_Frame2` | 1 |  |
-| `Ani_Cat_tinyPunch_Frame2` | 1 |  |
-| `Ani_BigDemon_shoot_Frame29` | 1 |  |
-| `Ani_FatMan_dying_Frame2` | 1 |  |
-| `Ani_TarBaby_shoot_Frame2` | 1 |  |
-| `Ani_WaterLeech_dashendWater_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame64` | 1 |  |
-| `Ani_MotherTumor_receiveLBBig_Frame13` | 1 |  |
-| `Ani_Tox_spawn_Frame35` | 1 |  |
-| `Ani_BigDemon_hit_Frame2` | 1 |  |
-| `Ani_Guillotina3Body_run_Frame11` | 1 |  |
-| `Ani_Cat_MonkStartTurn_Frame42` | 1 |  |
-| `Ani_Fetus_shoot_Frame2` | 1 |  |
-| `DeathPoof2` | 1 |  |
-| `Ani_Hitler_heil_Frame5` | 1 |  |
-| `Ani_DrMangler_walk_Frame26` | 1 |  |
-| `Ani_Lenny_escapeCat_Frame2` | 1 |  |
-| `Ani_Squirrel_dying_Frame2` | 1 |  |
-| `Ani_ConjoinedHusk_useCat_Frame4` | 1 |  |
-| `Ani_FleshLad_dying_Frame62` | 1 |  |
-| `Ani_Nettle_walk_Frame25` | 1 |  |
-| `Cat_Shadowstep_anime` | 1 |  |
-| `Ani_ManglersMonster_explodeRF_Frame131` | 1 |  |
-| `Ani_HumanCat_dodge_Frame2` | 1 |  |
-| `Ani_BunkerBoy_throwCultist_Frame3` | 1 |  |
-| `Ani_FinalBossPhase2_pulseHoly_Frame2` | 1 |  |
-| `Ani_Deathbot_attack_Frame2` | 1 |  |
-| `Ani_Cat_sleepEnd_Frame2` | 1 |  |
-| `Ani_Gamete_dyingBig_Frame3` | 1 |  |
-| `Ani_Gambit_attack_Frame15` | 1 |  |
-| `ProjectileSpawn_ArrowProjectile` | 1 |  |
-| `Ani_Crow_wind_Frame2` | 1 |  |
-| `Ani_Flea_walk_Frame2` | 1 |  |
-| `Ani_Nettle_hit_Frame3` | 1 |  |
-| `Ani_GroundZombie_flip_Frame2` | 1 |  |
-| `Ani_SlotMachine_resultJackpot_Frame40` | 1 |  |
-| `Ani_Dip_attack_Frame44` | 1 |  |
-| `Ani_Interstitial_fight_Frame98` | 1 |  |
-| `Ani_MegaFetus_idleRF_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame59` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame703` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Fram42` | 1 |  |
-| `Ani_Shambler_hitDisassemble_Frame2` | 1 |  |
-| `Ani_Hive_dying_Frame16` | 1 |  |
-| `Ani_Punchbot_attack_Frame2` | 1 |  |
-| `Ani_Rager_bite3_Frame2` | 1 |  |
-| `Ani_FatMan_slam_Frame2` | 1 |  |
-| `Ani_Whisperer_hit_Frame25` | 1 |  |
-| `Ani_AstroSkull_dying_Frame38` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame158` | 1 |  |
-| `Ani_Chubs_dying_Frame56` | 1 |  |
-| `Ani_ThrobbingTurret_spawn_Frame2` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame193` | 1 |  |
-| `Ani_Floast_shoot_Frame8` | 1 |  |
-| `Ani_MotherTumor_receiveRFCatBig_Frame13` | 1 |  |
-| `Ani_DustDevil_spin_Frame2` | 1 |  |
-| `Ani_Cat_dryHeave_Frame15` | 1 |  |
-| `Ani_Shambler_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame297` | 1 |  |
-| `Ani_HangerBot_portin_Frame4` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame1378` | 1 |  |
-| `Ani_YellowBlaster_shoot_Frame8` | 1 |  |
-| `Ani_FinalBossPhase2_holyHoly_Frame2` | 1 |  |
-| `Ani_Lenny_hugCat_Frame5` | 1 |  |
-| `ProjectileHitCharacter_FireProjectile` | 1 |  |
-| `Ani_Floast_throw_Frame3` | 1 |  |
-| `Ani_ConjoinedHusk_dying_Frame2` | 1 |  |
-| `MoonHead_hitrocks` | 1 |  |
-| `Ani_Cat_jump_Frame2` | 1 |  |
-| `Ani_BigDemon_walk_Frame45` | 1 |  |
-| `Ani_Cat_teleportIn_Frame2` | 1 |  |
-| `Ani_GreenProber_attack_Frame35` | 1 |  |
-| `Ani_CaveChief_attack_Frame27` | 1 |  |
-| `Ani_BungaElite1_pickupCaveMan_Frame4` | 1 |  |
-| `Ani_Cat_showTrinket_Frame2` | 1 |  |
-| `Ani_ShadeM_dying_Frame42` | 1 |  |
-| `Ani_EventCat_choice_str_Frame3` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame430` | 1 |  |
-| `Ani_Chubs_attackRage_Frame18` | 1 |  |
-| `Ani_Rager_bite1_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame24` | 1 |  |
-| `SpellSpawn_Wave` | 1 |  |
-| `Ani_CavePerson_attackCaveMan_Frame56` | 1 |  |
-| `Ani_ShadeMShadow_portout_Frame2` | 1 |  |
-| `Ani_FlySwarm_attack4_Frame10` | 1 |  |
-| `Ani_Johnny_blast2_Frame2` | 1 |  |
-| `Ani_Husk_grow_Frame2` | 1 |  |
-| `Ani_KillDozer_walk_Frame3` | 1 |  |
-| `Ani_DrMangler_walk_Frame51` | 1 |  |
-| `Ani_MoonHead_digest_Frame2` | 1 |  |
-| `Ani_Bombchu_dash_FrameLoop` | 1 |  |
-| `Obj_FoodLand` | 1 |  |
-| `Ani_CavePerson_attackCatCaveWoman_Frame30` | 1 |  |
-| `Ani_BungaElite1_hitCaveMan_Frame8` | 1 |  |
-| `Ani_SlotMachine_resultLose_Frame40` | 1 |  |
-| `Ani_QueenHippo_heartattack_Frame2` | 1 |  |
-| `Ani_Triceratops_dying_Frame57` | 1 |  |
-| `Ani_ThrobbingTurret_hit_Frame2` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame81` | 1 |  |
-| `Ani_Tormentor_megabite_Frame5` | 1 |  |
-| `Ani_GreenProber_probe_Frame25` | 1 |  |
-| `Ani_FleshLad_walk_Frame30` | 1 |  |
-| `Ani_Roomba_walk_Frame2` | 1 |  |
-| `Ani_Cat_swatupatk_Frame10` | 1 |  |
-| `Ani_Cat_knead_Frame91` | 1 |  |
-| `Ani_Spookie_hit_Frame2` | 1 |  |
-| `Ani_CanCreeper_launchStart_Frame60` | 1 |  |
-| `Ani_Zaratana_dyingTurtle_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame1168` | 1 |  |
-| `Ani_TallBot_suplexCat_Frame2` | 1 |  |
-| `SpellSpawn_FireBlastMushroom` | 1 |  |
-| `SE_ManaDrain` | 1 |  |
-| `Ani_MegaMutant_grab_Frame7` | 1 |  |
-| `Ani_Johnny_blast2_Frame4` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame142` | 1 |  |
-| `Ani_Cat_heavyMelee_Frame19` | 1 |  |
-| `Ani_MedSlimeX_walk_Frame2` | 1 |  |
-| `Ani_MegaDinoLeg_lift_Frame2` | 1 |  |
-| `Ani_Gambit_groundpound_Frame21` | 1 |  |
-| `Ani_Hitler_hitNuke_Frame3` | 1 |  |
-| `Ani_AstroZombie_moonjump_Frame25` | 1 |  |
-| `ProjectileSpawn_knifeprojectile` | 1 |  |
-| `Ani_ThrobbingKing_command1_Frame13` | 1 |  |
-| `Ani_Cat_dryHeave_Frame2` | 1 |  |
-| `SE_FuturebotPunch` | 1 |  |
-| `Ani_DustDevil_spin_Frame3` | 1 |  |
-| `Ani_ConjoinedHusk_grab_Frame21` | 1 |  |
-| `Ani_MegaFetus_idleLB_Frame60` | 1 |  |
-| `Ani_Cat_psyAttack1_Frame10` | 1 |  |
-| `Ani_TracyX_walkRB_Frame13` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame441` | 1 |  |
-| `Ani_FetusNoJar_walkGrown_Frame20` | 1 |  |
-| `Ani_Cat_knead_Frame19` | 1 |  |
-| `Ani_Zodiac_hit_Frame2` | 1 |  |
-| `Ani_AstroSkull_hit_Frame2` | 1 |  |
-| `Ani_Crow_attack_Frame2` | 1 |  |
-| `Ani_BoyDino_dashEnd_Frame2` | 1 |  |
-| `Ani_QueenHippo_breathing_Frame2` | 1 |  |
-| `Ani_Guillotina1_dying_Frame83` | 1 |  |
-| `Ani_Interstitial_learn_Frame5` | 1 |  |
-| `Ani_Cat_dashbite_Frame2` | 1 |  |
-| `Ani_BirdLarge_idle_Frame566` | 1 |  |
-| `SE_BirdDying_Raven` | 1 |  |
-| `Ani_SmallAsteroid_puke_Frame15` | 1 |  |
-| `Ani_Invader_walk_Frame16` | 1 |  |
-| `Ani_TinyTumorA_hit_Frame2` | 1 |  |
-| `Ani_ShadeF_suckOpen_Frame6` | 1 |  |
-| `Ani_Guillotina2Head_dying_Frame55` | 1 |  |
-| `Ani_Fetus_walk_Frame2` | 1 |  |
-| `Ani_Lenny_escapeCat_Frame11` | 1 |  |
-| `SE_TerminatorCatWalkF` | 1 |  |
-| `Ani_Tox_spawn_Frame7` | 1 |  |
-| `Ani_FinalBossPhase2_turnFlip_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame2` | 1 |  |
-| `Ani_Cat_radiant_Frame12` | 1 |  |
-| `Ani_Moth_powder_Frame2` | 1 |  |
-| `Ani_Hive_hit_Frame4` | 1 |  |
-| `Ani_Pterodactyl_dyingCat_Frame13` | 1 |  |
-| `Ani_ThrobbingKing_hit_Frame5` | 1 |  |
-| `Ani_MegaFetus_idleLB_Frame2` | 1 |  |
-| `Ani_TracyX_walkLB_Frame2` | 1 |  |
-| `Ani_TracyX_attackLB_Frame8` | 1 |  |
-| `Bomb_Land` | 1 |  |
-| `Ani_TracyX_walkRF_Frame2` | 1 |  |
-| `Ani_Guillotina1_jumpattack_Frame10` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame356` | 1 |  |
-| `Ani_Interstitial_breed1_Frame78` | 1 |  |
-| `Ani_Peashy_walkRage_Frame3` | 1 |  |
-| `Ani_Peashy_dyingRage_Frame7` | 1 |  |
-| `Ani_Tox_dyingExpl_Frame74` | 1 |  |
-| `Ani_Fuzzer_fuzzjump_Frame5` | 1 |  |
-| `Ani_Trampy_sleepEnd_Frame2` | 1 |  |
-| `Ani_DeathWorm_dying_Frame2` | 1 |  |
-| `Ani_Cat_equipWeapon_Frame2` | 1 |  |
-| `Ani_Cat_whistleSummon_Frame36` | 1 |  |
-| `Ani_DrMangler_dying_Frame141` | 1 |  |
-| `Ani_Lenny_grabCorpse_Frame66` | 1 |  |
-| `Ani_TallBot_launch_Frame2` | 1 |  |
-| `Ani_HumanCat_dying_Frame8` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame126` | 1 |  |
-| `Ani_Interstitial_breed0_Frame30` | 1 |  |
-| `Ani_GreenProber_walk_Frame2` | 1 |  |
-| `ProjectileHitNothing_Fishball` | 1 |  |
-| `Ani_MegaMutant_dying_Frame34` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame2` | 1 |  |
-| `Ani_FlySwarm_attack4_Frame29` | 1 |  |
-| `Ani_CaveChief_hit_Frame7` | 1 |  |
-| `Ani_BigUFO_primed_Frame2` | 1 |  |
-| `Ani_AstroSkull_scream_Frame51` | 1 |  |
-| `Ani_LightningElemental_portout_Frame2` | 1 |  |
-| `Ani_FetusJar_hit_Frame7` | 1 |  |
-| `Ani_MeatSlime_hit_Frame2` | 1 |  |
-| `OldHose_Start_Trigger` | 1 |  |
-| `Ani_Gamete_walk_Frame10` | 1 |  |
-| `Ani_ThrobbingKing_command4_Frame20` | 1 |  |
-| `Ani_Revalark_portout_Frame20` | 1 |  |
-| `Ani_Spookie_portout_Frame2` | 1 |  |
-| `Ani_TheBloat_spawn_Frame3` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame137` | 1 |  |
-| `Ani_BungaElite2_dyingCaveMan_Frame37` | 1 |  |
-| `Ani_FinalBossMegaGuppy_transform13_Frame12` | 1 |  |
-| `Ani_SmallRock_hit_Frame3` | 1 |  |
-| `Ani_Bumblefoot_revengeDown_Frame2` | 1 |  |
-| `Ani_Gamete_walkBig_Frame2` | 1 |  |
-| `Ani_EmptyV_changechannel_Frame2` | 1 |  |
-| `Ani_GreenProber_attack_Frame2` | 1 |  |
-| `Ani_FlySwarm_shrink4_Frame15` | 1 |  |
-| `Ani_Roomba_suck_Frame2` | 1 |  |
-| `Ani_FinalBossPhase1_transform_Frame120` | 1 |  |
-| `Ani_MegaFetus_idleLF_Frame60` | 1 |  |
-| `Ani_Floast_spawn_Frame54` | 1 |  |
-| `Ani_BomberRat_turtleend_Frame16` | 1 |  |
-| `Ani_Chummy_dashstart_Frame2` | 1 |  |
-| `Ani_Cat_selfHarm_Frame25` | 1 |  |
-| `Ani_CavePerson_attackCaveBaby_Frame25` | 1 |  |
-| `Ani_Triceratops_ram_Frame16` | 1 |  |
-| `Ani_Zodiac_walk_Frame4` | 1 |  |
-| `Ani_BabyDeathWorm_portout_Frame2` | 1 |  |
-| `Ani_MotherTumor_passLFBigHolding_Frame2` | 1 |  |
-| `Ani_Tormentor_throw_Frame68` | 1 |  |
-| `Ani_FinalBossMegaGuppy_transform21_Frame12` | 1 |  |
-| `Ani_BirdLarge_idle_Frame745` | 1 |  |
-| `Ani_RatKing_New_walk_Frame2` | 1 |  |
-| `SE_CE_Astro_Jump` | 1 |  |
-| `Ani_SoldierBot_walk_Frame3` | 1 |  |
-| `Ani_Cat_weaponspell2_Frame35` | 1 |  |
-| `Ani_HitlerMech_shoot_Frame15` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame3` | 1 |  |
-| `Ani_SmallSlime_walk_Frame2` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame86` | 1 |  |
-| `Ani_Guillotina1_suck2_Frame19` | 1 |  |
-| `Ani_Revalark_hit_Frame3` | 1 |  |
-| `Ani_CavePerson_transformCaveMan_Frame14` | 1 |  |
-| `Ani_Amoeba_attach_Frame35` | 1 |  |
-| `Ani_HangerBot_dying_Frame2` | 1 |  |
-| `Ani_Cat_trip_Frame8` | 1 |  |
-| `Ani_Decoy2_dying_Frame2` | 1 |  |
-| `Ani_Cat_pickpocket_Frame45` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame15` | 1 |  |
-| `Ani_Cat_propelLoop_Frame2` | 1 |  |
-| `Ani_ShamblingShade_consume_Frame54` | 1 |  |
-| `Ani_Decoy2_idle_Frame2` | 1 |  |
-| `Ani_Johnny_dying2_Frame4` | 1 |  |
-| `Ani_Tormentor_hit_Frame4` | 1 |  |
-| `Ani_Cat_catchAndThrow_Frame22` | 1 |  |
-| `Ani_SnakeyBones_grow1_Frame2` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame14` | 1 |  |
-| `Ani_DiggyMaggot_attack_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame186` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame307` | 1 |  |
-| `Ani_BunkerBoy_dyingMutant_Frame45` | 1 |  |
-| `Ani_Thump_smileRF_Frame2` | 1 |  |
-| `SE_FuturebotWalk` | 1 |  |
-| `Ani_Revalark_crash_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame114` | 1 |  |
-| `Ani_Interstitial_starve_Frame8` | 1 |  |
-| `Ani_Cat_groundpound_Frame25` | 1 |  |
-| `Ani_FetusJar_dying_Frame2` | 1 |  |
-| `Ani_Cat_scratchear_Frame19` | 1 |  |
-| `Ani_HitlerMech_walk_Loop` | 1 |  |
-| `Ani_Burfer_shoot_Frame2` | 1 |  |
-| `Ani_YellowBlaster_jetbegin_Frame28` | 1 |  |
-| `Ani_CatHuman_cry_Frame28` | 1 |  |
-| `Ani_Gambit_djump_Frame155` | 1 |  |
-| `Ani_Cat_knockup_Frame14` | 1 |  |
-| `Ani_HumanCat_dying_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakRb_Frame381` | 1 |  |
-| `Ani_FrankX_exhaleFull_Frame50` | 1 |  |
-| `Ani_MechSuit_ramLoopCat_Frame2` | 1 |  |
-| `Ani_BigUFO_spawn_Frame2` | 1 |  |
-| `Ani_AstroSkull_attack_Frame21` | 1 |  |
-| `Ani_AstroZombie_hit_Frame4` | 1 |  |
-| `Ani_Punchbot_hit_Frame3` | 1 |  |
-| `Ani_CanCreeper_dying_Frame3` | 1 |  |
-| `Ani_BishopHat_hit_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleRB_Frame338` | 1 |  |
-| `Ani_CavePerson_dyingCatCaveWoman_Frame29` | 1 |  |
-| `Ani_TheCoven_rise1_Frame18` | 1 |  |
-| `Ani_RatKing_New_transform_Frame107` | 1 |  |
-| `Ani_FinalBossPhase2_disappointment_Frame2` | 1 |  |
-| `Ani_Bombchu_hit_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame64` | 1 |  |
-| `Ani_ShadeF_walkOpen_Frame14` | 1 |  |
-| `Ani_Tox_dying_Frame74` | 1 |  |
-| `Ani_ConjoinedHusk_dyingCat_Frame2` | 1 |  |
-| `SE_PetBoulder_Dash` | 1 |  |
-| `Ani_Gambit_throw_Frame12` | 1 |  |
-| `Ani_TracyX_hitLF_Frame3` | 1 |  |
-| `Ani_CoreFreak_hit_Frame2` | 1 |  |
-| `Ani_Hitler_shoot_Frame44` | 1 |  |
-| `Ani_MegaFetus_attackRF_Frame9` | 1 |  |
-| `Ani_BeaniesX_walk_Frame22` | 1 |  |
-| `SpellSpawn_Bolt` | 1 |  |
-| `Ani_Interstitial_breed0_Frame90` | 1 |  |
-| `Ani_TracyX_spinRF_Frame7` | 1 |  |
-| `Ani_Cat_liquidclone_Frame2` | 1 |  |
-| `Ani_Lenny_attackCat_Frame3` | 1 |  |
-| `Ani_TheMother_dying_Frame2` | 1 |  |
-| `Ani_Revalark_dying_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakRF_Frame81` | 1 |  |
-| `Ani_Peashy_dying_Frame7` | 1 |  |
-| `Ani_TheCoven_summon4_Frame470` | 1 |  |
-| `SE_FuturebotPunchSwing` | 1 |  |
-| `Ani_TracyX_spinLB_Frame7` | 1 |  |
-| `Ani_Chubs_shoot_Frame5` | 1 |  |
-| `Ani_FinalBossPhase3_dying3_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_walk2_Frame81` | 1 |  |
-| `Ani_SmallAsteroid_dying_Frame84` | 1 |  |
-| `Ani_FetusJar_walk_Loop` | 1 |  |
-| `Ani_Cerberubs_walk_Frame6` | 1 |  |
-| `Ani_Lenny_cry_Frame8` | 1 |  |
-| `Ani_Nubs_shoot_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_hit_Frame2` | 1 |  |
-| `Ani_TallBot_hit_Frame2` | 1 |  |
-| `Ani_Crate_dying_Frame2` | 1 |  |
-| `Ani_Dip_walk_Frame14` | 1 |  |
-| `Ani_Cat_JesterStartTurn_Frame5` | 1 |  |
-| `BigUFO_ambient_looping` | 1 |  |
-| `Ani_TracyX_dyingRB_Frame3` | 1 |  |
-| `Ani_Husk_walk_Frame21` | 1 |  |
-| `Ani_HumanCat_attack_Frame38` | 1 |  |
-| `Ani_Floast_throwCat_Frame3` | 1 |  |
-| `Ani_ManglersMonster_dashendLB_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame109` | 1 |  |
-| `Ani_RattleSnake_dying_Frame2` | 1 |  |
-| `Ani_BoyDino_dashing_Frame4` | 1 |  |
-| `Ani_Guillotina2Body_attackRage_Frame110` | 1 |  |
-| `Ani_SecurityBot_attack_Frame15` | 1 |  |
-| `Ani_BunkerBoy_attackMutant_Frame9` | 1 |  |
-| `Ani_TheBloat_walk_Frame2` | 1 |  |
-| `Ani_TheBloat_spawn0_Frame2` | 1 |  |
-| `Ani_LordBunga_consume_Frame86` | 1 |  |
-| `Twister_fling` | 1 |  |
-| `Ani_ShadeM_spawn_Frame2` | 1 |  |
-| `Ani_Chubs_hit_Frame5` | 1 |  |
-| `Ani_CopBot_reload_Frame96` | 1 |  |
-| `Ani_BoyDino_cry_Frame151` | 1 |  |
-| `Ani_Cat_weaponpoke_Frame12` | 1 |  |
-| `Ani_Roomba_dying_Frame2` | 1 |  |
-| `Ani_CavePerson_walkCaveMan_Frame13` | 1 |  |
-| `Ani_FleshyMind_dying_Frame6` | 1 |  |
-| `Ani_ShamblingShade_run_Frame10` | 1 |  |
-| `Ani_MegaFetus_dyingRF_Frame2` | 1 |  |
-| `Ani_TracyX_dyingRF_Frame3` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand4_Frame2` | 1 |  |
-| `Ani_Revalark_idle_Frame40` | 1 |  |
-| `SE_TerminatorCatWalkC` | 1 |  |
-| `Ani_BunkerBoy_attackCultist_Frame18` | 1 |  |
-| `Ani_DrMangler_dying_Frame3` | 1 |  |
-| `Ani_Cat_catchAndThrow_Frame2` | 1 |  |
-| `Ani_Trampy_walk_Frame6` | 1 |  |
-| `Ani_NubsCat_attack_Frame45` | 1 |  |
-| `SE_PetRock_Dash` | 1 |  |
-| `Ani_HumanCat_humandie_Frame4` | 1 |  |
-| `Ani_Cerberubs_throwCat_Frame10` | 1 |  |
-| `Ani_Gambit_fizzle_Frame13` | 1 |  |
-| `Ani_FinalBossPhase3_chargeholy1_Frame2` | 1 |  |
-| `Ani_Amoeba_hitrock_Frame3` | 1 |  |
-| `Ani_Cat_knead_Frame43` | 1 |  |
-| `Ani_Gambit_dying_Frame2` | 1 |  |
-| `Ani_BirdMed_moveStart_Frame9` | 1 |  |
-| `ProjectileHitCharacter_Gutball` | 1 |  |
-| `Ani_AngelicCatFetus_dying_Frame13` | 1 |  |
-| `Ani_SlotMachine_resultJackpot_Frame20` | 1 |  |
-| `Ani_SmallSlimeX_dying_Frame2` | 1 |  |
-| `Ani_RockyBobo_dying_Frame17` | 1 |  |
-| `Ani_MoonHead_yell_Frame5` | 1 |  |
-| `Ani_BungaElite1_attackCaveMan_Frame79` | 1 |  |
-| `Ani_Cat_fartoom_Frame75` | 1 |  |
-| `Ani_Cat_propelEnd_Frame16` | 1 |  |
-| `Ani_ConjoinedHusk_walk_Frame31` | 1 |  |
-| `Ani_MoonHead_crack_Frame2` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame94` | 1 |  |
-| `Ani_DiggyMaggot_attack_Frame3` | 1 |  |
-| `pyrophina_backgroundfootstep` | 1 |  |
-| `Ani_Burfer_dying_Frame2` | 1 |  |
-| `Ani_Guillotina2Body_tantrum_Frame95` | 1 |  |
-| `Ani_Hitler_hitNuke_Frame11` | 1 |  |
-| `Ani_RatKing_New_throw_Frame56` | 1 |  |
-| `SE_CatSpinAttack` | 1 |  |
-| `Ani_Cat_fallingClawsBstart_Frame2` | 1 |  |
-| `ProjectileHitNothing_bounceshot` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame64` | 1 |  |
-| `Ani_ButchTinkX_dashstart_Frame2` | 1 |  |
-| `Ani_Nettle_walk_Frame9` | 1 |  |
-| `SE_Cat_bearHug` | 1 |  |
-| `Ani_BigUFO_ramStart_Frame2` | 1 |  |
-| `Ani_CavePerson_walkCaveWoman_Frame21` | 1 |  |
-| `Ani_Zaratana_dashslow_Loop` | 1 |  |
-| `Ani_Interstitial_girlRejectBoy_Frame43` | 1 |  |
-| `Ani_Invader_attack_Frame2` | 1 |  |
-| `Ani_MotherTumor_passRBBigHoldingCat_Frame2` | 1 |  |
-| `Ani_Fatso_hit_Frame2` | 1 |  |
-| `Ani_ShadeMShadow_hit_Frame2` | 1 |  |
-| `Ani_DrMangler_throwJoystick_Frame2` | 1 |  |
-| `Ani_MoonHead_digestSwallowedCracked_Frame3` | 1 |  |
-| `SpellSpawn_fx_DigUp` | 1 |  |
-| `Ani_Interstitial_breed1_Frame97` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame293` | 1 |  |
-| `Ani_LordBunga_dyingChair_Frame2` | 1 |  |
-| `Ani_Thump_jumpLB_Frame6` | 1 |  |
-| `Ani_ConjoinedHusk_walkCat_Frame21` | 1 |  |
-| `Ani_DrMangler_fumble2Joystick_Frame10` | 1 |  |
-| `Ani_BunkerBoy_dyingMutant_Frame71` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame124` | 1 |  |
-| `Ani_MegaFetus_dyingLF_Frame2` | 1 |  |
-| `Ani_RatKing_New_walk2_Frame2` | 1 |  |
-| `Ani_AlienBeast_spit_Frame2` | 1 |  |
-| `Ani_TheCoven_summon4_Frame14` | 1 |  |
-| `ProjectileSpawn_DamageTrap` | 1 |  |
-| `Ani_MotherTumor_grabCatBig_Frame28` | 1 |  |
-| `Ani_ShadeF_attackOpen_Frame33` | 1 |  |
-| `Ani_Gamete_hitBig_Frame4` | 1 |  |
-| `Ani_Interstitial_breed2_Frame64` | 1 |  |
-| `Ani_Cat_singleSpin_Frame2` | 1 |  |
-| `Ani_TracyX_attackRF_Frame10` | 1 |  |
-| `Ani_Cat_scorpionSting_Frame18` | 1 |  |
-| `Ani_Cat_dramaticpoint_Frame102` | 1 |  |
-| `Ani_Tremblo_hit_Frame3` | 1 |  |
-| `Ani_Yeti_kick_Frame12` | 1 |  |
-| `Ani_GirlDino_attack_Frame48` | 1 |  |
-| `Ani_SpiderQueen_eggInsane_Frame27` | 1 |  |
-| `Ani_MotherTumor_passLBBigHolding_Frame2` | 1 |  |
-| `Ani_Floast_throwCat_Frame2` | 1 |  |
-| `Ani_TracyX_walkLB_Frame13` | 1 |  |
-| `Ani_Lenny_grabCorpse_Frame25` | 1 |  |
-| `SpellSpawn_fx_statdown` | 1 |  |
-| `Ani_Birthwort_dash_Frame10` | 1 |  |
-| `Ani_Peashy_walk_Frame11` | 1 |  |
-| `Ani_Interstitial_starve_Frame110` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame649` | 1 |  |
-| `Ani_MegaFetus_attackLB_Frame60` | 1 |  |
-| `SE_SmallRockBreak` | 1 |  |
-| `ProjectileSpawn_Bullet` | 1 |  |
-| `Ani_Invader_walk_Frame28` | 1 |  |
-| `Obj_Rock_Land` | 1 |  |
-| `Ani_BabyDeathWorm_hit_Frame2` | 1 |  |
-| `Ani_Hitler_walk_Frame25` | 1 |  |
-| `Ani_BirdMed_attack_Frame5` | 1 |  |
-| `Ani_CavePerson_pounceWereMan_Frame21` | 1 |  |
-| `Ani_Worm_portin_Frame24` | 1 |  |
-| `Ani_MotherTumor_tossHolding_Frame2` | 1 |  |
-| `Ani_ShamblingShade_consumeCat_Frame22` | 1 |  |
-| `Ani_Hitler_heil_Frame40` | 1 |  |
-| `SE_Interstitial_MutateSlam` | 1 |  |
-| `Ani_Rat_dashstart_Frame4` | 1 |  |
-| `Ani_DrMangler_monsterdeathJoystick_Frame3` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand3_Frame2` | 1 |  |
-| `Ani_FrankX_dyingFull_Frame3` | 1 |  |
-| `SE_CatWeaponPoke_Chainsaw` | 1 |  |
-| `Ani_Cat_buildRobotProjectile_Frame124` | 1 |  |
-| `Ani_BunkerBoy_summonspawninCultist_Frame2` | 1 |  |
-| `Ani_Gamete_birthBig_Frame2` | 1 |  |
-| `Ani_CopBot_attack_Frame2` | 1 |  |
-| `Ani_ManglersMonster_dashstartLB_Frame4` | 1 |  |
-| `Ani_BirdSmall_dying_Frame45` | 1 |  |
-| `Ani_BeaniesX_hit_Frame4` | 1 |  |
-| `fextra_events` | 1 | `SE_CatWalk` |
-| `Ani_MotherTumor_grab_Frame28` | 1 |  |
-| `Ani_Gamete_hit_Frame4` | 1 |  |
-| `SE_WP_SwapRifle` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame14` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying1_Frame23` | 1 |  |
-| `SE_CatSwishSpin` | 1 |  |
-| `Ani_C1000Clot_pulse_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_OK_Frame3` | 1 |  |
-| `Ani_SmallAsteroid_puke_Frame16` | 1 |  |
-| `Ani_Nubs_nuke_Frame2` | 1 |  |
-| `Ani_FleshyMind_walk_Frame2` | 1 |  |
-| `Ani_TracyX_dyingLB_Frame2` | 1 |  |
-| `Ani_Pyrophina_throwbossNospin_Frame102` | 1 |  |
-| `Ani_Guillotina2Head_throw_Frame9` | 1 |  |
-| `Ani_FinalBossPhase3_pulse1_Frame2` | 1 |  |
-| `Ani_Cat_majormagic_Frame2` | 1 |  |
-| `SE_ThinLaserHit` | 1 |  |
-| `Ani_MegaMutant_grab_Frame43` | 1 |  |
-| `Ani_HumanCat_attackDH_Frame18` | 1 |  |
-| `Ani_ManglersMonster_hitLF_Frame3` | 1 |  |
-| `Ani_SmallSlimeX_spawnin_Frame2` | 1 |  |
-| `Ani_MoonHead_uncrackCracked_Frame2` | 1 |  |
-| `Ani_Amoeba_attach_Frame48` | 1 |  |
-| `Ani_BungaElite1_walkCaveMan_Frame13` | 1 |  |
-| `Ani_BunkerBoy_spinZealot_Frame18` | 1 |  |
-| `Ani_HangerBot_attack_Frame2` | 1 |  |
-| `Ani_Whisperer_walk_Frame31` | 1 |  |
-| `Ani_Pyrophina_throw_Frame32` | 1 |  |
-| `Ani_TheBloat_walk0_Frame2` | 1 |  |
-| `Ani_CoreFreak_walk_Frame21` | 1 |  |
-| `Ani_TheBloat_dying1_Frame3` | 1 |  |
-| `Ani_Cat_falconPunch_Frame2` | 1 |  |
-| `Spiderweb_Break` | 1 |  |
-| `Ani_FinalBossPhase3_chargeholy2_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_holyHoly2_Frame199` | 1 |  |
-| `Ani_BirdLarge_idle_Frame576` | 1 |  |
-| `Ani_Cat_pissYourself_Frame8` | 1 |  |
-| `Ani_FatWoman_walk_Loop` | 1 |  |
-| `SpellSpawn_FireSpin` | 1 |  |
-| `Ani_Nettle_walk_Frame21` | 1 |  |
-| `Ani_AcidOoze_walk_Frame35` | 1 |  |
-| `Ani_SmallAsteroid_dying_Frame134` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame95` | 1 |  |
-| `Ani_Lenny_dyingCat_Frame5` | 1 |  |
-| `Ani_LordBunga_swing_Frame19` | 1 |  |
-| `Ani_LordBunga_consume_Frame2` | 1 |  |
-| `Ani_Interstitial_breed1_Frame212` | 1 |  |
-| `Ani_DrDitto_walk_Frame13` | 1 |  |
-| `Ani_Spookie_dying_Frame2` | 1 |  |
-| `Ani_Angel_revive_Frame2` | 1 |  |
-| `SE_ChainDash` | 1 |  |
-| `Ani_TheCoven_idle2_Loop` | 1 |  |
-| `Ani_Chaos_portout_Frame2` | 1 |  |
-| `Ani_CoreFreak_dying_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_pulseHoly2_Frame16` | 1 |  |
-| `Ani_FrankX_hitFull_Frame3` | 1 |  |
-| `Ani_BunkerBoy_cutZealot_Frame46` | 1 |  |
-| `Ani_Pile_shoot_Frame2` | 1 |  |
-| `Ani_MegaFetus_attackLB_Frame32` | 1 |  |
-| `Ani_ShadeF_attack_Frame2` | 1 |  |
-| `Ani_Crow_fast_Frame23` | 1 |  |
-| `Ani_EventCat_choice_str_Frame15` | 1 |  |
-| `Ani_ChargeyMaggot_walk_Frame2` | 1 |  |
-| `Ani_Roomba_ramStart_Frame4` | 1 |  |
-| `Ani_Chubs_walk_Frame23` | 1 |  |
-| `Ani_Trex_alertend_Frame2` | 1 |  |
-| `Ani_FetusJar_dying_Frame24` | 1 |  |
-| `Ani_DocBot_dying_Frame4` | 1 |  |
-| `Ani_Yeti_beatchest_Frame11` | 1 |  |
-| `Ani_Hive_shoot_Frame2` | 1 |  |
-| `Ani_AstroZombie_breakarm_Frame2` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame130` | 1 |  |
-| `Ani_Triceratops_ram_Frame25` | 1 |  |
-| `Ani_Gatekeeper_leap_Frame14` | 1 |  |
-| `Ani_Trampy_poop_Frame7` | 1 |  |
-| `Ani_Lenny_walkCat_Frame10` | 1 |  |
-| `Ani_ManglersMonster_walkLF_Loop` | 1 |  |
-| `Ani_OrganGrinderX_shoot_Frame2` | 1 |  |
-| `Ani_TheCoven_summon4_Frame355` | 1 |  |
-| `Ani_Deathbot_hit_Frame3` | 1 |  |
-| `Ani_Interstitial_friendship_Frame69` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame1242` | 1 |  |
-| `StatusApply_Freeze` | 1 |  |
-| `Ani_DeathWorm_eat_Frame2` | 1 |  |
-| `Ani_DrDitto_spell_Frame2` | 1 |  |
-| `Ani_YellowBlaster_dying_Frame2` | 1 |  |
-| `Ani_GreyAlien_dying_Frame17` | 1 |  |
-| `Ani_Guillotina1_attackRage_Frame2` | 1 |  |
-| `Ani_Fuzzer_fuzzjump_Frame12` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Injured_Frame3` | 1 |  |
-| `Ani_Cat_TinkererStartTurn_Frame2` | 1 |  |
-| `Ani_ManglersMonster_explodeLB_Frame163` | 1 |  |
-| `Ani_Fatso_dashend_Frame2` | 1 |  |
-| `Ani_MoonHead_hitSwallowed_Frame2` | 1 |  |
-| `SE_Terminator_WeaponLower` | 1 |  |
-| `Ani_LordBunga_jump_Frame2` | 1 |  |
-| `Ani_AstroZombie_walk_Frame2` | 1 |  |
-| `Ani_Thump_jumpLF_Frame6` | 1 |  |
-| `Ani_FleshLad_walk_Frame50` | 1 |  |
-| `SpellSpawn_FireBlastMedium` | 1 |  |
-| `Ani_TallBot_suplexCat_Frame4` | 1 |  |
-| `Ani_Gambit_hit_Frame3` | 1 |  |
-| `Ani_Flushmaster_portout_Frame2` | 1 |  |
-| `Ani_TheBloat_shootForward0_Frame39` | 1 |  |
-| `Ani_LordBunga_hit_Frame2` | 1 |  |
-| `Batterup_Connect` | 1 |  |
-| `Ani_Hitler_suicide_Frame50` | 1 |  |
-| `Ani_FetusNoJar_shotGrown_Frame2` | 1 |  |
-| `Ani_Whisperer_whisper_Frame15` | 1 |  |
-| `Ani_TheCoven_spell3_Frame10` | 1 |  |
-| `Ani_Cat_walk_Frame3` | 1 |  |
-| `Ani_Cat_portout_Frame2` | 1 |  |
-| `Ani_BunkerBoy_smileBishop_Frame2` | 1 |  |
-| `Ani_Shambler_throw_Frame2` | 1 |  |
-| `Ani_Floast_dying_Frame7` | 1 |  |
-| `Ani_Lenny_dying_Frame5` | 1 |  |
-| `Ani_Interstitial_breed2_Frame252` | 1 |  |
-| `Ani_LordBunga_dying_Frame900` | 1 |  |
-| `Ani_BunkerBoy_dyingBishop_Frame10` | 1 |  |
-| `DeathPoof4` | 1 |  |
-| `Ani_GroundZombie_hitDown_Frame2` | 1 |  |
-| `Ani_Spewer_walk_Frame34` | 1 |  |
-| `Ani_RatKing_New_shoot2_Frame7` | 1 |  |
-| `Ani_TheBloat_shootForward_Frame2` | 1 |  |
-| `Ani_BloatRat_walk_Frame2` | 1 |  |
-| `Ani_CavePerson_pounceWereMan_Frame2` | 1 |  |
-| `Ani_AstroSkull_spawnin_Frame162` | 1 |  |
-| `Ani_FinalBossPhase2_chargeholy2_Frame2` | 1 |  |
-| `SE_CatFoleyFlip` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame413` | 1 |  |
-| `Ani_ButchTinkX_walk_Frame2` | 1 |  |
-| `Ani_BigSlimeX_attack_Frame2` | 1 |  |
-| `Ani_KillDozer_idle_Frame110` | 1 |  |
-| `Ani_TallBot_walk_Frame3` | 1 |  |
-| `Ani_Cat_metronome_Frame2` | 1 |  |
-| `Ani_SecurityBot_attackAngry_Frame15` | 1 |  |
-| `Ani_SlotMachine_resultExplode_Frame20` | 1 |  |
-| `Ani_DrMangler_dying_Frame112` | 1 |  |
-| `Ani_Spewer_spitFull_Frame2` | 1 |  |
-| `Ani_RatKing_New_shoot_Frame5` | 1 |  |
-| `Ani_ManglersMonster_dyingRF_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Injured_Frame2` | 1 |  |
-| `Ani_Gambit_djump_Frame62` | 1 |  |
-| `Ani_Interstitial_breed0_Frame78` | 1 |  |
-| `SpellSpawn_HealBig` | 1 |  |
-| `Ani_Lenny_cry_Frame85` | 1 |  |
-| `Ani_FinalBossPhase2_breakshield_Frame102` | 1 |  |
-| `Ani_Maggot_walk_Frame2` | 1 |  |
-| `Ani_MoonHead_crackSwallowed_Frame3` | 1 |  |
-| `ProjectileSpawn_AcidshotProjectile` | 1 |  |
-| `Ani_ManglersMonster_primerushLF_Frame3` | 1 |  |
-| `Ani_Chubs_rage_Frame94` | 1 |  |
-| `DeathPoof1` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame368` | 1 |  |
-| `Ani_MegaFetus_idleRF_Frame60` | 1 |  |
-| `Ani_CopBot_shutdown_Frame3` | 1 |  |
-| `SE_BirdDying_Seagull` | 1 |  |
-| `Ani_Shambler_look_Frame2` | 1 |  |
-| `Ani_BungaElite1_chestpoundSpearCaveMan_Frame57` | 1 |  |
-| `Ani_MotherTumor_passLBBigHoldingCat_Frame2` | 1 |  |
-| `Ani_SlotMachine_resultWin_Frame2` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame251` | 1 |  |
-| `Ani_Cat_skeletonDie_Frame2` | 1 |  |
-| `Ani_MoonHead_yellCracked_Frame10` | 1 |  |
-| `Ani_ShadeF_dying_Frame42` | 1 |  |
-| `Ani_ButchTinkX_dying_Frame3` | 1 |  |
-| `Ani_Trampy_scratch_Frame2` | 1 |  |
-| `Ani_FatWoman_dying2_Frame2` | 1 |  |
-| `Ani_SpiderQueen_portinInsane_Frame2` | 1 |  |
-| `Ani_QueenHippo_uppercut_Frame2` | 1 |  |
-| `SE_Prep_HyperBeam` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame714` | 1 |  |
-| `Ani_Whisperer_shoot_Frame82` | 1 |  |
-| `Ani_YellowBlaster_walk_Frame17` | 1 |  |
-| `Ani_HouseCat_hairballCough_Frame12` | 1 |  |
-| `Ani_AstroZombie_breakneck_Frame2` | 1 |  |
-| `Ani_HouseCat_licking_Frame13` | 1 |  |
-| `Ani_BungaElite1_walkSpearCaveMan_Frame21` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame2` | 1 |  |
-| `SE_BirdLarge_DyingCall` | 1 |  |
-| `Ani_MegaFetus_weakRF_Frame2` | 1 |  |
-| `Ani_HangerBot_dying_Frame4` | 1 |  |
-| `Ani_Cat_buildRobotProjectile_Frame86` | 1 |  |
-| `Ani_Maggot_attack_Frame5` | 1 |  |
-| `Ani_DocBot_heal_Frame4` | 1 |  |
-| `Ani_Cat_land_Frame6` | 1 |  |
-| `Ani_Guillotina2Body_react_Frame124` | 1 |  |
-| `Ani_Hitler_walk_Frame26` | 1 |  |
-| `Ani_Guillotina1_enrage_Frame3` | 1 |  |
-| `Ani_Amoeba_walk_Frame24` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame60` | 1 |  |
-| `Ani_BungaElite2_walkCaveMan_Frame4` | 1 |  |
-| `Ani_Tormentor_attack_Frame11` | 1 |  |
-| `Ani_DrDitto_hit_Frame4` | 1 |  |
-| `Ani_Gambit_beam_Frame52` | 1 |  |
-| `Ani_Guillotina3Body_walkHolding_Frame10` | 1 |  |
-| `Ani_LordBunga_entrance_upChair_Frame3` | 1 |  |
-| `Ani_FetusNoJar_missileButton_Frame2` | 1 |  |
-| `Ani_Fetus_dying_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame292` | 1 |  |
-| `Ani_ManglersMonster_primerushRF_Frame2` | 1 |  |
-| `Ani_WaterLeech_walk_Frame83` | 1 |  |
-| `Ani_MegaFetus_idleLF_Frame2` | 1 |  |
-| `Ani_Peashy_walk_Frame21` | 1 |  |
-| `Ani_SlotMachine_resultLose_Frame20` | 1 |  |
-| `SE_BirdDying_Pigeon` | 1 |  |
-| `Ani_PinkyX_attack_Frame2` | 1 |  |
-| `Ani_Johnny_hit_Frame2` | 1 |  |
-| `Ani_BabyDeathWorm_dash_Loop` | 1 |  |
-| `Ani_CaveChief_walk_Frame20` | 1 |  |
-| `Ani_Cat_ButcherStartTurn_Frame32` | 1 |  |
-| `Ani_Bumblefoot_dyingUp_Frame132` | 1 |  |
-| `Ani_FinalBossPhase3_wrath1_Frame15` | 1 |  |
-| `Ani_ManglersMonster_explodeLB_Frame115` | 1 |  |
-| `Ani_MegaFetus_walkRF_Frame2` | 1 |  |
-| `Ani_Yeti_kick_Frame6` | 1 |  |
-| `Ani_Stegosaurus_walk2_Frame19` | 1 |  |
-| `SpellSpawn_ManaHeal` | 1 |  |
-| `Ani_Tremblo_puke_Frame2` | 1 |  |
-| `Ani_FinalBossPhase3_walk3_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame440` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame307` | 1 |  |
-| `Status_Unpetrify` | 1 |  |
-| `Ani_HumanCat_hit_Frame12` | 1 |  |
-| `Ani_TallBot_hitPrimed_Frame4` | 1 |  |
-| `Ani_Triceratops_dying_Frame4` | 1 |  |
-| `Ani_PokerDemon_poke_Frame18` | 1 |  |
-| `Ani_FatMan_hit_Frame2` | 1 |  |
-| `Ani_LordBunga_bigbooChair_Frame86` | 1 |  |
-| `Ani_FatRat_walk_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakLF_Frame460` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame50` | 1 |  |
-| `Ani_Triceratops_ram_Frame19` | 1 |  |
-| `Ani_GreenProber_summonspawnin_Frame2` | 1 |  |
-| `Ani_SpiderQueen_attack_Frame9` | 1 |  |
-| `Ani_CatHuman_walk_Frame51` | 1 |  |
-| `Ani_LoveBot_heal_Frame2` | 1 |  |
-| `AbilitySnd_Assassinate` | 1 |  |
-| `Ani_Chubs_attack_Frame25` | 1 |  |
-| `SpellSpawn_IcePoof` | 1 |  |
-| `Ani_BoyDino_cry_Frame6` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame346` | 1 |  |
-| `Ani_FlySwarm_attack3_Frame29` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame399` | 1 |  |
-| `Ani_Interstitial_mutate_Frame238` | 1 |  |
-| `Ani_LordBunga_bigcheerChair_Frame30` | 1 |  |
-| `Ani_Tox_idleExpl_Frame172` | 1 |  |
-| `ProjectileHitNothing_NeedleProjectile` | 1 |  |
-| `Ani_MeatSlime_attack_Frame2` | 1 |  |
-| `Ani_MeatSlime_dying_Frame2` | 1 |  |
-| `Ani_TenTickles_attack_Frame2` | 1 |  |
-| `SpellSpawn_T2Clone` | 1 |  |
-| `Ani_Gatekeeper_attackCat_Frame120` | 1 |  |
-| `SE_Terminator2_WalkLeg` | 1 |  |
-| `Ani_FleshyMind_attack_Frame21` | 1 |  |
-| `Ani_Interstitial_breed1_Frame242` | 1 |  |
-| `Ani_HumanCat_walk_Frame13` | 1 |  |
-| `Ani_CavePerson_hitCaveMan_Frame8` | 1 |  |
-| `Ani_Stegosaurus_walk_Frame65` | 1 |  |
-| `Ani_Chubs_dying_Frame12` | 1 |  |
-| `Ani_BeaniesX_attack_Frame25` | 1 |  |
-| `Ani_Pyrophina_grabCat_Frame4` | 1 |  |
-| `Ani_MegaFetus_attackLB_Frame9` | 1 |  |
-| `Ani_Gasser_dying_Frame2` | 1 |  |
-| `Ani_MegaFetus_dyingRF_Frame40` | 1 |  |
-| `Ani_MotherTumor_receiveLFBig_Frame13` | 1 |  |
-| `Ani_Guillotina1_jumpattack_Frame15` | 1 |  |
-| `Ani_BirdMed_attack_Frame11` | 1 |  |
-| `Ani_Tox_explodeExpl_Frame12` | 1 |  |
-| `Ani_Gambit_beam_Frame2` | 1 |  |
-| `Ani_Thump_smileLB_Frame2` | 1 |  |
-| `Ani_BunkerBoy_spellBishop_Frame40` | 1 |  |
-| `ProjectileHitNothing_BoneProjectile` | 1 |  |
-| `Ani_MegaDinoLeg_leaveLift_Frame2` | 1 |  |
-| `Ani_Cat_fail_Frame2` | 1 |  |
-| `Ani_Cat_equipTrinket_Frame2` | 1 |  |
-| `Ani_Chaos_change_Frame40` | 1 |  |
-| `Ani_Gatekeeper_attackCat_Frame2` | 1 |  |
-| `Ani_Cat_skeletonDying_Frame2` | 1 |  |
-| `Ani_BigDemon_walk_Frame89` | 1 |  |
-| `Ani_BabyDeathWorm_dying_Frame8` | 1 |  |
-| `Ani_Deathbot_walk_Loop` | 1 |  |
-| `ProjectileHitNothing_LobbedProjectile` | 1 |  |
-| `Ani_FrankX_inhale_Frame10` | 1 |  |
-| `Ani_Wisp_dodge_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_walk2_Frame42` | 1 |  |
-| `Ani_Guillotina3Body_walkRage_Frame37` | 1 |  |
-| `Ani_DocBot_hit_Frame2` | 1 |  |
-| `Chaos_Growl` | 1 |  |
-| `SE_CatSwishKickSmall` | 1 |  |
-| `Ani_HitlerMech_yellb_Frame12` | 1 |  |
-| `Ani_MoonHead_spitSwallowedCracked_Frame2` | 1 |  |
-| `Ani_Cat_block_Frame2` | 1 |  |
-| `Ani_TallBot_walk_Frame52` | 1 |  |
-| `Ani_AstroZombie_breaklegCat_Frame30` | 1 |  |
-| `Ani_BigDemon_shoot_Frame28` | 1 |  |
-| `Tick_Burn` | 1 |  |
-| `Tick_Bleed` | 1 |  |
-| `Ani_CavePerson_dyingWereMan_Frame5` | 1 |  |
-| `ProjectileHitNothing_Poisonball` | 1 |  |
-| `Ani_MotherTumor_receiveLBCatBig_Frame13` | 1 |  |
-| `Ani_Chubs_hit_Frame3` | 1 |  |
-| `Ani_MotherTumor_hitHolding_Frame3` | 1 |  |
-| `Ani_Fly_dying_Frame2` | 1 |  |
-| `Ani_Guillotina3Head_shoot_Frame36` | 1 |  |
-| `Ani_MegaMutant_slam_Frame13` | 1 |  |
-| `Ani_BirdMed_idle_Frame280` | 1 |  |
-| `Ani_MoonWorm_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame120` | 1 |  |
-| `Ani_Tatters_hit_Frame3` | 1 |  |
-| `Ani_MegaDinoLeg_leaveLift_Frame12` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame455` | 1 |  |
-| `ProjectileHitNothing_CupidsArrowProjectile` | 1 |  |
-| `ProjectileHitNothing_Webball` | 1 |  |
-| `Ani_Mammoth_dashend_Frame33` | 1 |  |
-| `Ani_Cat_psyAttack2_Frame87` | 1 |  |
-| `Ani_Cat_uppercutatk_Frame21` | 1 |  |
-| `Ani_FloatingHive_dying_Frame18` | 1 |  |
-| `ProjectileSpawn_CupidsArrowProjectile` | 1 |  |
-| `Ani_Cat_psyAttack1_Frame26` | 1 |  |
-| `Ani_Birthwort_dying_Frame2` | 1 |  |
-| `Ani_TracyX_walkRF_Frame13` | 1 |  |
-| `Ani_SecurityBot_dyingAngry_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame349` | 1 |  |
-| `Ani_Trampy_dying_Frame13` | 1 |  |
-| `Ani_LordBunga_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_breed0_Frame53` | 1 |  |
-| `Ani_Interstitial_breed1_Frame6` | 1 |  |
-| `Ani_BirdLarge_idle_Frame559` | 1 |  |
-| `Ani_Kirby_inhale_Frame2` | 1 |  |
-| `Ani_AstroZombie_dying_Frame20` | 1 |  |
-| `Ani_Floast_dying_Frame2` | 1 |  |
-| `Ani_BigUFO_dying_Frame2` | 1 |  |
-| `Ani_SlotMachine_resultLose_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_walk_Frame35` | 1 |  |
-| `Ani_BirdLarge_idle_Frame628` | 1 |  |
-| `ProjectileHitNothing_PukeBall` | 1 |  |
-| `Ani_BungaElite2_chestpoundCaveMan_Frame29` | 1 |  |
-| `Ani_Cat_scratchear_Frame35` | 1 |  |
-| `Ani_BungaElite2_chestpoundSpearCaveMan_Frame57` | 1 |  |
-| `Ani_TallHaunt_walk_Frame2` | 1 |  |
-| `Ani_FleshLad_attack_Frame4` | 1 |  |
-| `Ani_Yeti_beatchest_Frame39` | 1 |  |
-| `Ani_LordBunga_dying_Frame80` | 1 |  |
-| `Ani_Guillotina3Body_scream_Frame11` | 1 |  |
-| `Ani_Cat_swipeatk_Frame6` | 1 |  |
-| `Ani_AngelicCatFetus_walk_Loop` | 1 |  |
-| `Ani_ButchTinkX_dash_Loop` | 1 |  |
-| `Ani_MegaMutant_unguard_Frame5` | 1 |  |
-| `Ani_WaterLeech_dashend_Frame54` | 1 |  |
-| `Ani_BirdSmall_runAway_Frame10` | 1 |  |
-| `Ani_Zaratana_dash_Loop` | 1 |  |
-| `Ani_ShadeF_open_Frame12` | 1 |  |
-| `Ani_RatCat_dashstart_Frame4` | 1 |  |
-| `Ani_Amoeba_walk_Frame5` | 1 |  |
-| `Ani_LordBunga_entrance_land_Frame35` | 1 |  |
-| `Ani_CatHuman_fart_Frame35` | 1 |  |
-| `Ani_AstroZombie_breaklegCat_Frame71` | 1 |  |
-| `Ani_Thump_hitRF_Frame4` | 1 |  |
-| `Ani_JarHead_order_Frame6` | 1 |  |
-| `Ani_TracyX_spinLF_Frame7` | 1 |  |
-| `Ani_FleshyMind_attack_Frame6` | 1 |  |
-| `Ani_ManglersMonster_primerushRF_Frame3` | 1 |  |
-| `Ani_Lenny_walk_Frame29` | 1 |  |
-| `Ani_GreyAlien_walkprimed_Frame31` | 1 |  |
-| `Ani_HumanCat_attack_Frame43` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame83` | 1 |  |
-| `Ani_MotherTumor_receiveRBCatBig_Frame13` | 1 |  |
-| `Ani_DrMangler_dying_Frame2` | 1 |  |
-| `Ani_BunkerBoy_weakBombZealot_Loop` | 1 |  |
-| `Ani_Gatekeeper_attack_Frame120` | 1 |  |
-| `Ani_TheCoven_spell3_Frame9` | 1 |  |
-| `Ani_DrMangler_dying_Frame94` | 1 |  |
-| `Ani_AstroZombie_walk_Frame21` | 1 |  |
-| `Ani_FinalBossPhase3_wrath2_Frame15` | 1 |  |
-| `Ani_BigSlime_dying_Frame19` | 1 |  |
-| `Ani_DustDevil_dash_Frame2` | 1 |  |
-| `Ani_LightningElemental_portin_Frame2` | 1 |  |
-| `Ani_SmallAsteroid_puke_Frame67` | 1 |  |
-| `Ani_BabySpider_walk_Frame27` | 1 |  |
-| `Ani_MedSlime_walk_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_attack_Frame16` | 1 |  |
-| `Ani_LordBunga_dying_Frame320` | 1 |  |
-| `Ani_ShadeF_suckOpen_Frame12` | 1 |  |
-| `Ani_Pterodactyl_peckCat_Frame19` | 1 |  |
-| `Ani_Cat_catchAndThrow_Frame14` | 1 |  |
-| `Ani_Cat_createmagic_Frame41` | 1 |  |
-| `Ani_FleshyMind_hit_Frame2` | 1 |  |
-| `Ani_Cat_cartwheelEnd_Frame30` | 1 |  |
-| `Ani_Lenny_catdyingCat_Frame115` | 1 |  |
-| `Ani_Interstitial_fight_Frame105` | 1 |  |
-| `Obj_PoopLand` | 1 |  |
-| `Ani_Cat_backflipEnd_Frame6` | 1 |  |
-| `Ani_Stegosaurus_dying_Frame18` | 1 |  |
-| `Ani_BigDemon_walk_Frame30` | 1 |  |
-| `Ani_BigDemon_shoot_Frame73` | 1 |  |
-| `Ani_BoyDino_cry_Frame42` | 1 |  |
-| `Ani_BunkerBoy_cutZealot_Frame9` | 1 |  |
-| `Ani_MegaFetus_idleRB_Frame204` | 1 |  |
-| `Ani_DrMangler_walkJoystick_Frame26` | 1 |  |
-| `Ani_Guillotina2Head_react_Frame5` | 1 |  |
-| `Ani_Cat_weaponswing_Frame12` | 1 |  |
-| `Ani_ConjoinedHusk_struggleCat_Frame22` | 1 |  |
-| `Ani_YellowBlaster_shoot_Frame16` | 1 |  |
-| `Ani_TheBloat_spawn_Frame2` | 1 |  |
-| `Ani_DrMangler_walk_Frame2` | 1 |  |
-| `Ani_MotherTumor_passRBBigHolding_Frame2` | 1 |  |
-| `Ani_Cat_weaponspell_Frame26` | 1 |  |
-| `Ani_BunkerBoy_cutZealot_Frame89` | 1 |  |
-| `Ani_Interstitial_breed1_Frame129` | 1 |  |
-| `Ani_Guillotina3Body_grab_Frame4` | 1 |  |
-| `Ani_SmallSlime_dying_Frame2` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame2` | 1 |  |
-| `Ani_LoveBot_attack_Frame3` | 1 |  |
-| `Ani_RatCat_dash_Frame2` | 1 |  |
-| `Ani_Thump_smileRB_Frame2` | 1 |  |
-| `Ani_GreyAlien_dyingprimed_Frame2` | 1 |  |
-| `Ani_Angel_idle_Frame47` | 1 |  |
-| `Ani_TheCoven_hit3_Frame2` | 1 |  |
-| `ProjectileHitNothing_Meatball` | 1 |  |
-| `Ani_TenTickles_portIn_Frame2` | 1 |  |
-| `Ani_SpiderQueen_egg_Frame69` | 1 |  |
-| `Ani_FinalBossPhase3_walk1_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Dead_Dead_Frame12` | 1 |  |
-| `Ani_FlySwarm_dying_Frame21` | 1 |  |
-| `ProjectileHitCharacter_Meteor` | 1 |  |
-| `Ani_Thump_jumpRB_Frame6` | 1 |  |
-| `Ani_BunkerBoy_walkBombZealot_Frame25` | 1 |  |
-| `Ani_Cat_TankStartTurn_Frame27` | 1 |  |
-| `Ani_Rager_walk_Frame2` | 1 |  |
-| `SE_SabertoothCubLick` | 1 |  |
-| `Ani_SnakeyBones_shrink3_Frame2` | 1 |  |
-| `Ani_Fuzzer_fuzzjump_Frame65` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame263` | 1 |  |
-| `Ani_Lenny_grab_Frame25` | 1 |  |
-| `Ani_BigSlimeX_dying_Frame3` | 1 |  |
-| `SE_Interstitial_BreedingBump` | 1 |  |
-| `Ani_MechSuit_ejectCat_Frame2` | 1 |  |
-| `Ani_Fatso_dying_Frame2` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame2` | 1 |  |
-| `Ani_DaddyShark_walk_Fram23` | 1 |  |
-| `Ani_TheBloat_shoot0_Frame8` | 1 |  |
-| `Ani_AstroZombie_breakarmCat_Frame2` | 1 |  |
-| `Ani_TracyX_spinRF_Frame10` | 1 |  |
-| `Ani_Hitler_suicide_Frame315` | 1 |  |
-| `Ani_Yeti_icebreath_Frame4` | 1 |  |
-| `Ani_Cat_pickpocket_Frame49` | 1 |  |
-| `Ani_Cat_cartwheelLoop_Frame2` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame2` | 1 |  |
-| `Ani_SmallUFO_identify_Frame8` | 1 |  |
-| `Ani_Stegosaurus_walk_Frame32` | 1 |  |
-| `Ani_Birthwort_dash_Frame5` | 1 |  |
-| `ProjectileHitCharacter_Bottleshot` | 1 |  |
-| `Ani_QueenHippo_walk_Frame35` | 1 |  |
-| `Ani_TinyTumorB_walk_Frame9` | 1 |  |
-| `Ani_ThrobbingKing_command2_Frame24` | 1 |  |
-| `Ani_Guillotina3Head_call_Frame16` | 1 |  |
-| `Ani_FetusNoJar_attackGrown_Frame15` | 1 |  |
-| `Ani_RatCat_dying_Frame2` | 1 |  |
-| `Ani_Cat_splashattack_Frame7` | 1 |  |
-| `Ani_BunkerBoy_walkBishop_Loop` | 1 |  |
-| `Ani_HangerBot_hit_Frame4` | 1 |  |
-| `Ani_Yeti_beatchest_Frame45` | 1 |  |
-| `Ani_Angel_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_fight_Frame129` | 1 |  |
-| `Ani_KillDozer_hit_Frame2` | 1 |  |
-| `Ani_Husk_walk_Frame43` | 1 |  |
-| `Ani_Guillotina3Head_call_Frame44` | 1 |  |
-| `Ani_BirdLarge_idle_Frame606` | 1 |  |
-| `Ani_MegaFetus_attackRB_Frame32` | 1 |  |
-| `Ani_TracyX_spinRB_Frame7` | 1 |  |
-| `ProjectileHitCharacter_SpikeProjectile` | 1 |  |
-| `Ani_Trampy_sleepStart_Frame34` | 1 |  |
-| `Ani_SpiderQueen_dying_offmap_Frame11` | 1 |  |
-| `Ani_Chubs_rage_Frame2` | 1 |  |
-| `Ani_Tormentor_throw_Frame3` | 1 |  |
-| `Ani_MotherTumor_dyingBig_Frame2` | 1 |  |
-| `Ani_BigAsteroid_puke_Frame7` | 1 |  |
-| `Ani_MotherTumor_passRFBigHoldingCat_Frame2` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame37` | 1 |  |
-| `Ani_Cat_skeletonRevive_Frame73` | 1 |  |
-| `Ani_Zaratana_hitBig_Frame3` | 1 |  |
-| `Ani_Roomba_ramEnd_Frame4` | 1 |  |
-| `Ani_Cat_buildRobotProjectile_Frame120` | 1 |  |
-| `SpellSpawn_greenlasercap` | 1 |  |
-| `Ani_DrMangler_walk_Frame20` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame652` | 1 |  |
-| `Ani_Rager_hit_Frame6` | 1 |  |
-| `Ani_ManglersMonster_explodeLB_Frame148` | 1 |  |
-| `Ani_Shambler_attack_Frame2` | 1 |  |
-| `Ani_Peashy_throwobject_Frame6` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame71` | 1 |  |
-| `Ani_TheBloat_dying0_Frame2` | 1 |  |
-| `Ani_Roomba_hit_Frame2` | 1 |  |
-| `SE_BirdDying_Chicken` | 1 |  |
-| `Ani_GroundZombie_dyingDown_Frame13` | 1 |  |
-| `Ani_Tox_reflex_Frame2` | 1 |  |
-| `ProjectileHitCharacter_LavaBall` | 1 |  |
-| `Ani_Kirby_hit_Frame2` | 1 |  |
-| `Ani_MechSuit_enter_Frame2` | 1 |  |
-| `Ani_Cat_bigkick_Frame9` | 1 |  |
-| `Ani_SnakeyBones_hit1_Frame2` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame116` | 1 |  |
-| `Ani_ManglersMonster_dashstartLF_Frame3` | 1 |  |
-| `Ani_Invader_dying_Frame2` | 1 |  |
-| `Ani_Zaratana_dashstart_Frame38` | 1 |  |
-| `Ani_Turret_dying_Frame2` | 1 |  |
-| `SpellSpawn_fx_bloatlasercap` | 1 |  |
-| `Ani_HangerBot_hit_Frame2` | 1 |  |
-| `Ani_Lenny_walk_Frame10` | 1 |  |
-| `SpellSpawn_fx_statup` | 1 |  |
-| `Ani_BombFly_attack_Frame5` | 1 |  |
-| `Ani_Birthwort_walk_Frame29` | 1 |  |
-| `Ani_MegaFetus_attackRF_Frame60` | 1 |  |
-| `Ani_Cat_stompwalk_Frame32` | 1 |  |
-| `Ani_CaveChief_dying_Frame31` | 1 |  |
-| `Ani_Whisperer_dying_Frame10` | 1 |  |
-| `Ani_Cat_knockupatk_Frame14` | 1 |  |
-| `Ani_ShadeF_walk_Frame18` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame113` | 1 |  |
-| `Ani_LordBunga_consume_Frame100` | 1 |  |
-| `Ani_BigDemon_walk_Frame61` | 1 |  |
-| `Ani_Cat_FighterStartTurn_Frame7` | 1 |  |
-| `Ani_SpiderQueen_walkInsane_Frame12` | 1 |  |
-| `Ani_Cat_timberStart_Frame2` | 1 |  |
-| `ProjectileHitNothing_Joystick` | 1 |  |
-| `Ani_TracyX_spinLB_Frame10` | 1 |  |
-| `Ani_Guillotina1_jumpmove_Frame59` | 1 |  |
-| `Ani_DrDitto_spell_Frame76` | 1 |  |
-| `Ani_KillDozer_idle_Frame5` | 1 |  |
-| `Ani_ShadeMShadow_attack_Frame3` | 1 |  |
-| `SE_Cat_equipWeapon` | 1 |  |
-| `SE_T2_Clone` | 1 |  |
-| `Ani_ManglersMonster_explodeLB_Frame122` | 1 |  |
-| `Ani_TallBot_dying_Frame2` | 1 |  |
-| `Ani_CanCreeper_hit_Frame4` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying1_Frame212` | 1 |  |
-| `Ani_MoonHand_dyingGrabbing_Frame2` | 1 |  |
-| `Ani_Tox_reflex_Frame4` | 1 |  |
-| `Ani_Events_NonWheelEvent_Frame24` | 1 |  |
-| `Ani_EventCat_choice_str_Frame28` | 1 |  |
-| `Ani_OrganGrinderX_reload_Frame3` | 1 |  |
-| `Ani_BabyShark_attack_Frame2` | 1 |  |
-| `Ani_Zaratana_cleanse_Frame3` | 1 |  |
-| `Ani_BirdSmall_moveLoop_Frame50` | 1 |  |
-| `Ani_ConjoinedHusk_dying_Frame6` | 1 |  |
-| `Ani_GroundZombie_portout_Frame3` | 1 |  |
-| `Ani_SoldierBot_dying_Frame2` | 1 |  |
-| `Ani_Turtle_unhide_Frame2` | 1 |  |
-| `Ani_Cat_headbuttdashStart_Frame11` | 1 |  |
-| `Ani_GlowingMushroom_dying_Frame2` | 1 |  |
-| `Ani_CopBot_hit_Frame2` | 1 |  |
-| `Ani_Stegosaurus_bite_Frame2` | 1 |  |
-| `Ani_ThrobbingTurret_shoot_Frame2` | 1 |  |
-| `Ani_DrMangler_dying_Frame307` | 1 |  |
-| `Ani_Moth_hit_Frame2` | 1 |  |
-| `Ani_BirdMed_idle_Frame293` | 1 |  |
-| `Ani_Interstitial_fight_Frame190` | 1 |  |
-| `Ani_PokerDemon_hit_Frame10` | 1 |  |
-| `Ani_Yeti_icebreath_Frame40` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame146` | 1 |  |
-| `Ani_BirdSmall_moveStart_Frame29` | 1 |  |
-| `Ani_SecurityBot_attack_Frame2` | 1 |  |
-| `Ani_CavePerson_transformCatCaveWoman_Frame25` | 1 |  |
-| `Ani_MegaFetus_weakLF_Frame2` | 1 |  |
-| `Ani_Angel_attack_Frame2` | 1 |  |
-| `Twister_loop` | 1 |  |
-| `Ani_Cat_invthrow_Frame38` | 1 |  |
-| `Ani_Cat_heabutt_Frame2` | 1 |  |
-| `SE_CatFoleyAttack` | 1 |  |
-| `Ani_ManglersMonster_primerushLF_Frame2` | 1 |  |
-| `Ani_SmallSlimeX_hit_Frame2` | 1 |  |
-| `Ani_Punchbot_dying_Frame3` | 1 |  |
-| `Ani_TheBloat_hit_Frame5` | 1 |  |
-| `Ani_RockyBobo_walkslow_Frame35` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame242` | 1 |  |
-| `Ani_Moth_walk_Frame2` | 1 |  |
-| `Ani_Cat_throwArrow_Frame36` | 1 |  |
-| `Ani_DiggyMaggot_portin_Frame2` | 1 |  |
-| `Ani_Guillotina2Body_dying_Frame2` | 1 |  |
-| `Ani_Floast_walk_Frame2` | 1 |  |
-| `Ani_ShadeM_portin_Frame2` | 1 |  |
-| `Ani_Dip_land_Frame2` | 1 |  |
-| `Ani_CavePerson_chestpoundSpearCaveMan_Frame57` | 1 |  |
-| `Ani_Cat_propelEnd_Frame2` | 1 |  |
-| `Ani_PinkyX_dying_Frame2` | 1 |  |
-| `Ani_AlienBeast_rampage_Frame31` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Injured_Frame105` | 1 |  |
-| `Ani_SnakeyBones_shoot2_Frame9` | 1 |  |
-| `Ani_FinalBossMegaGuppy_hit3_Frame10` | 1 |  |
-| `Ani_Tatters_dying_Frame2` | 1 |  |
-| `Ani_AstroZombie_breakneck_Frame71` | 1 |  |
-| `Ani_MegaFetus_dyingRB_Frame2` | 1 |  |
-| `Ani_Cat_heaviestMelee_Frame23` | 1 |  |
-| `Ani_AngelicCatFetus_doom_Frame47` | 1 |  |
-| `Ani_ConjoinedHusk_walk_Frame19` | 1 |  |
-| `Ani_Zaratana_hitTurtle_Frame2` | 1 |  |
-| `Ani_GreyAlien_megablast_Frame41` | 1 |  |
-| `Ani_LordBunga_consume_Frame68` | 1 |  |
-| `Ani_Fuzzer_hit_Frame5` | 1 |  |
-| `Ani_Bear_dying_Frame73` | 1 |  |
-| `Ani_Slag_shoot_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackR1_Frame7` | 1 |  |
-| `Ani_MoonHead_openmouthCracked_Frame2` | 1 |  |
-| `Ani_Crow_fast_Frame16` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame70` | 1 |  |
-| `ProjectileSpawn_Dip` | 1 |  |
-| `SE_BuildBot_Land` | 1 |  |
-| `Ani_FlySwarm_hit5_Frame2` | 1 |  |
-| `Ani_Roomba_walk_Loop` | 1 |  |
-| `Ani_BrambleBaby_hit_Frame3` | 1 |  |
-| `Ani_MamaMaggot_hit_Frame2` | 1 |  |
-| `Ani_CopBot_shoot_Frame46` | 1 |  |
-| `Ani_GreyAlien_megablast_Frame4` | 1 |  |
-| `Ani_AstroZombie_breakarmCat_Frame71` | 1 |  |
-| `Ani_Cat_death8_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_suck_Frame10` | 1 |  |
-| `Ani_KillDozer_ramLoop_Frame2` | 1 |  |
-| `Ani_Punchbot_attack_Frame3` | 1 |  |
-| `Ani_Cat_proud_Frame2` | 1 |  |
-| `Ani_MegaFetus_hitLF_Frame2` | 1 |  |
-| `Ani_TheMother_consumeCat_Frame6` | 1 |  |
-| `Ani_Whisperer_hit_Frame2` | 1 |  |
-| `Ani_CavePerson_hitCatCaveWoman_Frame9` | 1 |  |
-| `Ani_Zodiac_walk_Frame23` | 1 |  |
-| `Ani_CavePerson_pickupCaveMan_Frame4` | 1 |  |
-| `Ani_MoonHead_openmouthCracked_Frame40` | 1 |  |
-| `Ani_SpewerTube_shoot_Frame2` | 1 |  |
-| `Ani_GirlDino_hit_Frame3` | 1 |  |
-| `Ani_Pyrophina_walk_Frame71` | 1 |  |
-| `Ani_ManglersMonster_explodeLF_Frame122` | 1 |  |
-| `Ani_MegaDinoLeg_lowerLift_Frame2` | 1 |  |
-| `SE_Terminator_WeaponRaise` | 1 |  |
-| `Ani_BungaElite2_dyingCaveMan_Frame10` | 1 |  |
-| `Ani_Cat_backflipLoop_Frame3` | 1 |  |
-| `Ani_SnakeyBones_shoot1_Frame9` | 1 |  |
-| `Ani_BoyDino_dashing_Frame33` | 1 |  |
-| `Ani_ManglersMonster_primerushLB_Frame3` | 1 |  |
-| `Ani_FlySwarm_attack3_Frame49` | 1 |  |
-| `Ani_TallTumor_walk_Frame2` | 1 |  |
-| `Ani_TallBot_walk_Frame34` | 1 |  |
-| `Ani_Interstitial_breed1_Frame30` | 1 |  |
-| `Ani_Trampy_shoot_Frame62` | 1 |  |
-| `Ani_Carnibulb_spawn_Frame2` | 1 |  |
-| `SpellSpawn_BigMagicMissileBlast` | 1 |  |
-| `Ani_DustDevil_portout_Frame2` | 1 |  |
-| `Ani_Guillotina1_dying_Frame14` | 1 |  |
-| `Ani_Cat_shred_Frame30` | 1 |  |
-| `Ani_CloakedDemon_dying_Frame8` | 1 |  |
-| `Ani_IceElemental_hit_Frame2` | 1 |  |
-| `Ani_WaterLeech_walk_Frame2` | 1 |  |
-| `Tick_Stealth` | 1 |  |
-| `Ani_IceElemental_dying_Frame84` | 1 |  |
-| `Ani_MoonHead_shoot_Frame2` | 1 |  |
-| `Ani_Tox_idleExpl_Frame276` | 1 |  |
-| `Ani_GreyAlien_counterspell_Frame16` | 1 |  |
-| `Ani_C1000Clot_hit_Frame2` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame110` | 1 |  |
-| `Ani_RatCat_dashatk_Frame3` | 1 |  |
-| `Ani_MegaMutant_guard_Frame9` | 1 |  |
-| `Ani_Cat_death1_Frame2` | 1 |  |
-| `ProjectileSpawn_PukeBall` | 1 |  |
-| `Ani_Peashy_rage_Frame10` | 1 |  |
-| `Ani_TracyX_hitLB_Frame2` | 1 |  |
-| `Ani_SpiderQueen_calmdownInsane_Frame2` | 1 |  |
-| `Ani_RatKing_New_hit2_Frame5` | 1 |  |
-| `Obj_CoinLand` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame240` | 1 |  |
-| `Ani_FinalBossPhase3_hit1_Frame2` | 1 |  |
-| `Ani_Gamete_transform_Frame3` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame89` | 1 |  |
-| `Ani_Cat_weaponshoot_Frame4` | 1 |  |
-| `Ani_Flea_attack_Frame18` | 1 |  |
-| `Ani_TheCoven_rise1_Frame11` | 1 |  |
-| `Ani_DocBot_dying_Frame2` | 1 |  |
-| `Ani_MegaFetus_attackRF_Frame32` | 1 |  |
-| `Ani_Bat_bite_Frame14` | 1 |  |
-| `Ani_SoldierBot_dying_Frame4` | 1 |  |
-| `Ani_ManglersMonster_dyingRB_Frame3` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame247` | 1 |  |
-| `Ani_AngelicCatFetus_dying_Frame2` | 1 |  |
-| `Ani_TallBot_dyingPrimed_Frame2` | 1 |  |
-| `SE_CatSwishArm` | 1 |  |
-| `Ani_GreenProber_probe_Frame18` | 1 |  |
-| `Ani_SpiderQueen_revengeInsane_Frame2` | 1 |  |
-| `Ani_Zaratana_win_Frame2` | 1 |  |
-| `Ani_MegaMutant_dying_Frame2` | 1 |  |
-| `Ani_Cat_psyAttack3_Frame21` | 1 |  |
-| `Ani_HumanCat_hitDH_Frame12` | 1 |  |
-| `Ani_Slag_spawn_Frame2` | 1 |  |
-| `Ani_Yeti_walk_Frame4` | 1 |  |
-| `Ani_Bat_walk_Frame2` | 1 |  |
-| `Ani_BungaElite1_transformCaveMan_Frame17` | 1 |  |
-| `SpellSpawn_TwistingFlames` | 1 |  |
-| `Ani_Cat_ButcherStartTurn_Frame5` | 1 |  |
-| `Ani_FinalBossPhase2_dashing2_Loop` | 1 |  |
-| `Ani_Shambler_walk_Frame40` | 1 |  |
-| `SE_Cat_ShadowStepOut` | 1 |  |
-| `Ani_CavePerson_pickupCaveMan_Frame14` | 1 |  |
-| `Ani_Cat_megaslap_Frame242` | 1 |  |
-| `Ani_ConjoinedHusk_struggleCat_Frame2` | 1 |  |
-| `Ani_Pyrophina_throwbossNospin_Frame98` | 1 |  |
-| `Ani_CavePerson_growupCaveBaby_Frame50` | 1 |  |
-| `Ani_FatMan_reflect_projectile_Frame15` | 1 |  |
-| `SpellSpawn_HyperBeam` | 1 |  |
-| `MjolnirProjectileCatch` | 1 |  |
-| `Ani_MegaMutant_grab_Frame36` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame65` | 1 |  |
-| `Tick_Fear` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame168` | 1 |  |
-| `Ani_Cat_prouder_Frame50` | 1 |  |
-| `Ani_Cat_throwelement_Frame64` | 1 |  |
-| `Ani_ThrobbingKing_command3_Frame2` | 1 |  |
-| `Ani_Cat_evilMagic_Frame2` | 1 |  |
-| `Ani_BunkerBoy_dyingMutant_Frame4` | 1 |  |
-| `Ani_IceElemental_freeze_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleRF_Frame338` | 1 |  |
-| `Ani_Tox_dyingExpl_Frame12` | 1 |  |
-| `Ani_BungaElite1_attackCaveMan_Frame44` | 1 |  |
-| `Ani_Guillotina1_jumpattackRage_Frame59` | 1 |  |
-| `Injury_Burn` | 1 |  |
-| `Ani_AstroZombie_dying_Frame49` | 1 |  |
-| `Ani_Lenny_dyingCatDead_Frame2` | 1 |  |
-| `Ani_Cat_kicksand_Frame8` | 1 |  |
-| `Ani_Pyrophina_throwboss_Frame2` | 1 |  |
-| `Ani_DrDitto_dying_Frame2` | 1 |  |
-| `DamageHealthMed` | 1 |  |
-| `Ani_BoyDino_dashEnd_Frame4` | 1 |  |
-| `Ani_MotherTumor_dyingBigHolding_Frame2` | 1 |  |
-| `Ani_Interstitial_breed1_Frame109` | 1 |  |
-| `SE_Interstitial_Cough` | 1 |  |
-| `Ani_NubsCat_shoot_Frame2` | 1 |  |
-| `Ani_Cat_knead_Frame31` | 1 |  |
-| `Ani_MegaDinoHead_hit_Frame2` | 1 |  |
-| `Ani_Clot_walk_Frame20` | 1 |  |
-| `Ani_BomberRat_turtleend_Frame6` | 1 |  |
-| `Ani_DustDevil_portout_Frame12` | 1 |  |
-| `ProjectileHitNothing_SpiderBall` | 1 |  |
-| `Ani_CaveChief_bat_Frame59` | 1 |  |
-| `Lenny_HereKitty` | 1 |  |
-| `Ani_Cat_chewcud_Frame125` | 1 |  |
-| `Ani_Guillotina2Body_react_Frame105` | 1 |  |
-| `Ani_HouseCat_scratching_Frame41` | 1 |  |
-| `Ani_CopBot_hit_Frame3` | 1 |  |
-| `Ani_Bumblefoot_dyingDown_Frame2` | 1 |  |
-| `Ani_TheMother_grow_Frame2` | 1 |  |
-| `SE_ParasaurolophusAttack` | 1 |  |
-| `SE_SkeletonCatWalk` | 1 |  |
-| `Ani_Mammoth_walk_Frame24` | 1 |  |
-| `Ani_Cat_celebrate_Frame2` | 1 |  |
-| `Ani_LordBunga_consumeCat_Frame115` | 1 |  |
-| `Ani_ShadeF_chewOpenCat_Frame5` | 1 |  |
-| `Ani_ShadeMShadow_dying_Frame2` | 1 |  |
-| `Ani_Trampy_drink_Frame3` | 1 |  |
-| `Ani_Nubs_attack_Frame2` | 1 |  |
-| `Ani_CavePerson_birthCaveWoman_Frame13` | 1 |  |
-| `Ani_Guillotina1_walk_Frame10` | 1 |  |
-| `Ani_Lenny_attackCatDead_Frame4` | 1 |  |
-| `Ani_FinalBossPhase2_dashattack2_Frame2` | 1 |  |
-| `Ani_Fatso_walk_Frame2` | 1 |  |
-| `zaratana_backgroundfootstep` | 1 |  |
-| `Ani_MechSuit_walkCat_Loop` | 1 |  |
-| `Ani_MoonWorm_portin_Frame2` | 1 |  |
-| `Ani_Cat_clapTogether_Frame40` | 1 |  |
-| `Ani_GroundZombie_flipDown_Frame35` | 1 |  |
-| `Ani_Hitler_dyingNuke_Frame2` | 1 |  |
-| `Ani_Cat_liquidteleportOut_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame382` | 1 |  |
-| `SpellSpawn_Holybeam` | 1 |  |
-| `Ani_Chaos_intro_Frame3` | 1 |  |
-| `Ani_Zaratana_hit_land_Frame4` | 1 |  |
-| `Ani_Pyrophina_grabCat_Frame66` | 1 |  |
-| `Ani_LordBunga_consume_Frame129` | 1 |  |
-| `Ani_Host_shoot_Frame2` | 1 |  |
-| `Ani_MegaFetus_spinRB_Frame16` | 1 |  |
-| `Ani_GreyAlien_shoot_Frame2` | 1 |  |
-| `Ani_CopBot_walk_Frame2` | 1 |  |
-| `Ani_TracyX_dyingRB_Frame2` | 1 |  |
-| `Tick_Exhaustion` | 1 |  |
-| `Ani_Johnny_telekinesis_Frame3` | 1 |  |
-| `Ani_FloatingHive_shoot_Frame2` | 1 |  |
-| `Ani_HitlerHead_transform_Frame2` | 1 |  |
-| `Ani_GambitDice_land_Frame2` | 1 |  |
-| `Ani_DrDitto_walk_Frame3` | 1 |  |
-| `Ani_FleshLad_idle_Frame47` | 1 |  |
-| `Ani_Trampy_walk_Frame3` | 1 |  |
-| `ProjectileSpawn_Tarshot` | 1 |  |
-| `Ani_Revalark_dying_Frame4` | 1 |  |
-| `Ani_DrMangler_dying_Frame399` | 1 |  |
-| `Obj_TumorLand` | 1 |  |
-| `Ani_Cerberubs_shoot_Frame2` | 1 |  |
-| `Ani_Cat_cartwheel_Frame24` | 1 |  |
-| `Ani_CavePerson_walkCaveWoman_Frame5` | 1 |  |
-| `Ani_SlotMachine_resultExplode_Frame66` | 1 |  |
-| `Ani_FinalBossPhase2_chargedodges2_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_dashbegin2_Frame2` | 1 |  |
-| `ProjectileHitCharacter_Heartball` | 1 |  |
-| `Ani_Interstitial_fight_Frame180` | 1 |  |
-| `Ani_ManglersMonster_explodeRB_Frame122` | 1 |  |
-| `Ani_DustDevil_dying_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_swipe_Frame2` | 1 |  |
-| `Ani_MechSuit_dying_Frame2` | 1 |  |
-| `Ani_ConjoinedHusk_shoot_Frame59` | 1 |  |
-| `Ani_Pterodactyl_walkCat_Frame2` | 1 |  |
-| `Ani_MoonHand_squeezeGrabbing_Frame2` | 1 |  |
-| `SpellSpawn_FireBlastSmall` | 1 |  |
-| `Ani_Lenny_cry_Frame133` | 1 |  |
-| `Ani_FleshLad_idle_Frame57` | 1 |  |
-| `Ani_Lenny_hitCatDead_Frame2` | 1 |  |
-| `Ani_Hitler_hitNuke_Frame14` | 1 |  |
-| `Ani_GambitDice_land_Frame17` | 1 |  |
-| `Ani_Interstitial_fight_Frame84` | 1 |  |
-| `Ani_CaveChief_rally_Frame73` | 1 |  |
-| `Ani_ShadeM_dying_Frame2` | 1 |  |
-| `Ani_Lenny_attackCat_Frame31` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand3_Frame11` | 1 |  |
-| `Ani_MoonHead_crack_Frame10` | 1 |  |
-| `Ani_BoyDino_dashStart_Frame12` | 1 |  |
-| `Ani_Guillotina3Body_enrage_Frame2` | 1 |  |
-| `SpellSpawn_fx_sandBlows` | 1 |  |
-| `ProjectileHitNothing_Meteor` | 1 |  |
-| `Ani_MotherTumor_hitBigHolding_Frame3` | 1 |  |
-| `Ani_Cat_headbuttUppercut_Frame2` | 1 |  |
-| `Ani_ManglersMonster_explodeLB_Frame2` | 1 |  |
-| `Ani_Parasiter_spawn_Frame2` | 1 |  |
-| `Ani_Gambit_power_Frame11` | 1 |  |
-| `Ani_BirdSmall_moveLoop_Frame60` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame468` | 1 |  |
-| `Ani_ShadeF_dyingOpen_Frame59` | 1 |  |
-| `Ani_BigDemon_dying_Frame60` | 1 |  |
-| `Ani_FrankX_inhale_Frame12` | 1 |  |
-| `Ani_Turtle_headbuttdashEnd_Frame2` | 1 |  |
-| `Ani_LightningElemental_prime_Frame2` | 1 |  |
-| `Ani_CaveChief_rally_Frame75` | 1 |  |
-| `Ani_MoonHead_spitSwallowedCracked_Frame3` | 1 |  |
-| `Ani_Cat_walk_Frame17` | 1 |  |
-| `Ani_Lenny_grab_Frame3` | 1 |  |
-| `Ani_Cat_bigdoubleswat_Frame22` | 1 |  |
-| `Ani_ManglersMonster_dyingLB_Frame2` | 1 |  |
-| `Ani_GroundZombie_hit_Frame3` | 1 |  |
-| `Ani_MegaMutant_grabCat_Frame36` | 1 |  |
-| `Ani_Reaper_portout_Frame2` | 1 |  |
-| `Ani_FlySwarm_attack5_Frame19` | 1 |  |
-| `Ani_Cerberubs_shootAlert_Frame11` | 1 |  |
-| `Ani_BunkerBoy_hitCultist_Frame3` | 1 |  |
-| `Ani_Thump_hitLF_Frame4` | 1 |  |
-| `Ani_Gamete_birthBig_Frame3` | 1 |  |
-| `Ani_Johnny_dying_Frame5` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame105` | 1 |  |
-| `Ani_TallHaunt_dying_Frame2` | 1 |  |
-| `Ani_LordBunga_consume_Frame115` | 1 |  |
-| `Ani_TallBot_dying_Frame4` | 1 |  |
-| `Ani_FinalBossPhase2_throwshield_Frame2` | 1 |  |
-| `Ani_HumanCat_attack_Frame17` | 1 |  |
-| `Ani_SecurityBot_walkAngry_Frame15` | 1 |  |
-| `Ani_FetusNoJar_walkGrown_Frame26` | 1 |  |
-| `Ani_FlySwarm_attack5_Frame29` | 1 |  |
-| `Ani_GreyAlien_suggest_Frame2` | 1 |  |
-| `Ani_Cat_buttScootStart_Frame2` | 1 |  |
-| `Ani_Pyrophina_throwCat_Frame17` | 1 |  |
-| `Ani_DrMangler_walkJoystick_Frame2` | 1 |  |
-| `Ani_BigDemon_walk_Frame74` | 1 |  |
-| `Ani_SecurityBot_dyingAngry_Frame3` | 1 |  |
-| `Ani_Gatekeeper_walk_Frame4` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame436` | 1 |  |
-| `Ani_FinalBossPhase1_summon_Frame58` | 1 |  |
-| `Ani_Interstitial_breed2_Frame6` | 1 |  |
-| `Ani_Pyrophina_throwboss_Frame121` | 1 |  |
-| `Ani_Guillotina2Body_drag_Loop` | 1 |  |
-| `Ani_Floater_dying_Frame3` | 1 |  |
-| `Ani_Cat_knead_Frame61` | 1 |  |
-| `Ani_Tox_dying_Frame12` | 1 |  |
-| `Ani_SnakeyBones_shoot3_Frame9` | 1 |  |
-| `Ani_BigDemon_necksnapCat_Frame25` | 1 |  |
-| `Ani_BigDemon_dying_Frame6` | 1 |  |
-| `Ani_RattleSnake_walk_Frame16` | 1 |  |
-| `Ani_Invader_walk_Frame4` | 1 |  |
-| `Ani_BungaElite1_transformCaveMan_Frame14` | 1 |  |
-| `Ani_DrMangler_jab_Frame5` | 1 |  |
-| `Ani_MegaFetus_weakRB_Frame277` | 1 |  |
-| `Ani_SmallUFO_attack_Frame90` | 1 |  |
-| `Ani_HumanCat_walk_Frame4` | 1 |  |
-| `Ani_BungaElite1_attackCaveMan_Frame56` | 1 |  |
-| `Ani_ManglersMonster_hitLF_Frame4` | 1 |  |
-| `Ani_Cat_catchAndThrow_Frame37` | 1 |  |
-| `Ani_Guillotina2Head_dying_Frame6` | 1 |  |
-| `Ani_RatKing_New_dashstart2_Frame2` | 1 |  |
-| `Ani_KillDozer_idle_Frame90` | 1 |  |
-| `Ani_ManglersMonster_explodeRB_Frame2` | 1 |  |
-| `Ani_ManglersMonster_explodeLF_Frame115` | 1 |  |
-| `Ani_Interstitial_breed1_Frame64` | 1 |  |
-| `Ani_IceElemental_walk_Frame2` | 1 |  |
-| `Ani_TheCoven_dying1_Frame27` | 1 |  |
-| `Ani_FlySwarm_attack3_Frame11` | 1 |  |
-| `SE_BullRushDash` | 1 |  |
-| `Ani_Nubs_hit_Frame2` | 1 |  |
-| `Ani_DustDevil_hit_Frame2` | 1 |  |
-| `Ani_Floast_throw_Frame30` | 1 |  |
-| `Ani_Clot_hit_Frame2` | 1 |  |
-| `Ani_CatHuman_dying_Frame8` | 1 |  |
-| `Ani_Cat_doubleswat_Frame7` | 1 |  |
-| `Ani_LordBunga_littlecheerChair_Frame10` | 1 |  |
-| `Ani_MedSlimeX_attack_Frame2` | 1 |  |
-| `Ani_Scary_haunt_Frame2` | 1 |  |
-| `Ani_BloatRat_hit_Frame2` | 1 |  |
-| `Ani_AstroZombie_breakneckCat_Frame71` | 1 |  |
-| `Ani_MoonHead_uncrackChargingCracked_Frame2` | 1 |  |
-| `Ani_Cat_headbuttdash_Frame19` | 1 |  |
-| `Ani_SmallSlime_spawnin_Frame2` | 1 |  |
-| `Ani_FinalBossPhase1_hit_Frame2` | 1 |  |
-| `Ani_Cat_castspell_Frame15` | 1 |  |
-| `Ani_LordBunga_bigbooChair_Frame12` | 1 |  |
-| `Ani_TallHaunt_hit_Frame2` | 1 |  |
-| `Ani_Cat_HealerStartTurn_Frame33` | 1 |  |
-| `Ani_BungaElite1_throwSpearCaveMan_Frame30` | 1 |  |
-| `Ani_Guillotina1_shootRage_Frame13` | 1 |  |
-| `Ani_FloatingHive_hit_Frame4` | 1 |  |
-| `Ani_CanCreeperOut_hit_Frame2` | 1 |  |
-| `ProjectileHitNothing_Bottleshot` | 1 |  |
-| `Ani_FrankX_hit_Frame3` | 1 |  |
-| `SpellSpawn_BurnTrigger` | 1 |  |
-| `SpellSpawn_TakeAim` | 1 |  |
-| `SE_WP_SwapShotgun` | 1 |  |
-| `Ani_Cat_fattyWalk_Frame28` | 1 |  |
-| `Ani_Cat_knead_Frame73` | 1 |  |
-| `Ani_Fly_attack_Frame2` | 1 |  |
-| `Ani_DustDevil_dashstart_Frame2` | 1 |  |
-| `Ani_LordBunga_walk_Frame22` | 1 |  |
-| `Ani_Cat_psyMegaAttack_Frame9` | 1 |  |
-| `Ani_Cat_spinattackloop_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame18` | 1 |  |
-| `Ani_SpiderQueen_dyingInsane_Frame2` | 1 |  |
-| `DamageCorpse` | 1 |  |
-| `Ani_BungaElite1_transformSpearCaveMan_Frame14` | 1 |  |
-| `Ani_Trampy_hit_Frame3` | 1 |  |
-| `Ani_Cat_tauntwiggle_Frame18` | 1 |  |
-| `Ani_BirdMed_attack_Frame23` | 1 |  |
-| `Ani_Rat_hit_Frame3` | 1 |  |
-| `Ani_Stegosaurus_dying_Frame2` | 1 |  |
-| `Ani_Hitler_heil_Frame17` | 1 |  |
-| `Ani_Fuzzer_attack_Frame10` | 1 |  |
-| `Ani_Host_dying_Frame2` | 1 |  |
-| `Ani_GreenProber_probe_Frame66` | 1 |  |
-| `Ani_Yeti_beatchest_Frame50` | 1 |  |
-| `Ani_ConjoinedHusk_escapeCat_Frame16` | 1 |  |
-| `Ani_BoyDino_throwCat_Frame2` | 1 |  |
-| `Ani_Pile_spawn_Frame2` | 1 |  |
-| `Ani_Chummy_dashend_Frame2` | 1 |  |
-| `SpellSpawn_fx_DigDown` | 1 |  |
-| `Ani_Cat_JesterStartTurn_Frame78` | 1 |  |
-| `Ani_LordBunga_bigcheerChair_Frame10` | 1 |  |
-| `Ani_GirlDino_dying_Frame4` | 1 |  |
-| `Ani_Stegosaurus_walk2_Frame8` | 1 |  |
-| `Ani_TheBloat_jump0_Frame3` | 1 |  |
-| `Ani_MoonHead_yellSwallowedCracked_Frame10` | 1 |  |
-| `SE_Obj_GrenadeLand` | 1 |  |
-| `Ani_BishopHat_dying_Frame2` | 1 |  |
-| `Ani_FlySwarm_dying_Frame9` | 1 |  |
-| `SE_CatSwishPunchSmall` | 1 |  |
-| `Obj_AntidotePickupLand` | 1 |  |
-| `Ani_FinalBossPhase2_blockHoly_Frame2` | 1 |  |
-| `Ani_MegaMutant_grabCat_Frame7` | 1 |  |
-| `Ani_TracyX_attackLF_Frame8` | 1 |  |
-| `Ani_SpiderQueen_portin_Frame2` | 1 |  |
-| `Ani_CavePerson_dyingSpearCaveMan_Frame10` | 1 |  |
-| `Ani_SmallSlime_hit_Frame2` | 1 |  |
-| `Ani_Cat_showTrinket_Frame33` | 1 |  |
-| `Ani_FatWoman_slam_Frame26` | 1 |  |
-| `Ani_BigAsteroid_walk_Frame2` | 1 |  |
-| `ProjectileSpawn_LavaBall` | 1 |  |
-| `Ani_Rat_dash_Frame2` | 1 |  |
-| `Ani_Chubs_rage_Frame119` | 1 |  |
-| `Ani_Cat_flipCoinFail_Frame40` | 1 |  |
-| `Ani_HeadTumor_fart_Frame2` | 1 |  |
-| `Ani_ConjoinedHusk_escapeCat_Frame2` | 1 |  |
-| `Ani_MamaMaggot_fart_Frame2` | 1 |  |
-| `Ani_CavePerson_transformCaveWoman_Frame36` | 1 |  |
-| `Ani_Hemlock_walk_Frame2` | 1 |  |
-| `SE_Cat_WeaponLower` | 1 |  |
-| `Ani_MechSuit_ramEnd_Frame2` | 1 |  |
-| `ProjectileHitNothing_FireProjectile` | 1 |  |
-| `Ani_GroundZombie_hitDown_Frame7` | 1 |  |
-| `Ani_FleshyMind_pulse_Frame7` | 1 |  |
-| `Ani_SmallSlimeX_walk_Frame2` | 1 |  |
-| `Ani_BomberRat_hit_Frame4` | 1 |  |
-| `Ani_DrMangler_controlmonsterJoystick_Frame2` | 1 |  |
-| `Ani_PokerDemon_walk_Frame9` | 1 |  |
-| `Ani_Crow_fast_Frame2` | 1 |  |
-| `Ani_BunkerBoy_attackCultist_Frame25` | 1 |  |
-| `Ani_ChargeyMaggot_dashstart_Frame2` | 1 |  |
-| `Ani_Host_attack_Frame2` | 1 |  |
-| `Ani_ButchTinkX_dying_Frame2` | 1 |  |
-| `Ani_Cat_shoulder_Frame7` | 1 |  |
-| `Ani_TallBot_hit_Frame4` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame595` | 1 |  |
-| `Ani_FlySwarm_dying2_Frame2` | 1 |  |
-| `Ani_Tox_puff_Frame5` | 1 |  |
-| `Ani_ShamblingShade_walk_Frame29` | 1 |  |
-| `Ani_TracyX_attackLF_Frame10` | 1 |  |
-| `Ani_RockyBobo_attack2_Frame2` | 1 |  |
-| `Ani_DustDevil_walk_Frame15` | 1 |  |
-| `Ani_Cat_burp_Frame26` | 1 |  |
-| `Ani_GroundZombie_portout_Frame2` | 1 |  |
-| `Ani_Tox_dyingExpl_Frame2` | 1 |  |
-| `Ani_TenTickles_hit_Frame4` | 1 |  |
-| `Ani_MegaFetus_attackLF_Frame32` | 1 |  |
-| `Ani_SpiderQueen_web_Frame2` | 1 |  |
-| `Ani_Chubs_walkRage_Frame4` | 1 |  |
-| `SE_SabertoothCubSwipe` | 1 |  |
-| `Ani_Tremblo_walk_Frame12` | 1 |  |
-| `Ani_CavePerson_grabCaveWoman_Frame24` | 1 |  |
-| `SpellSpawn_greenmegalasercap` | 1 |  |
-| `Ani_Cat_land2_Frame6` | 1 |  |
-| `Ani_Guillotina1_attackBelly_Frame2` | 1 |  |
-| `Ani_MotherTumor_growHolding_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying3_Frame23` | 1 |  |
-| `Ani_BloatRat_shoot_Frame2` | 1 |  |
-| `Ani_MotherTumor_dyingHolding_Frame2` | 1 |  |
-| `Ani_SoldierBot_reload_Frame2` | 1 |  |
-| `Ani_Yeti_kick_Frame11` | 1 |  |
-| `Ani_HeadTumor_dying_Frame2` | 1 |  |
-| `Ani_Bumblefoot_leapattackwindupUp_Frame2` | 1 |  |
-| `Ani_Guillotina1_hitMouthFull_Frame2` | 1 |  |
-| `Ani_Johnny_blast1_Frame2` | 1 |  |
-| `Ani_Pyrophina_throwCat_Frame2` | 1 |  |
-| `Ani_Cat_buttScoot_Frame2` | 1 |  |
-| `Ani_BirdLarge_attack_Frame5` | 1 |  |
-| `Ani_FinalBossMegaGuppy_transform23_Frame12` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame401` | 1 |  |
-| `Ani_GroundZombie_portin_Frame59` | 1 |  |
-| `Ani_FinalBossPhase2_walk2_Frame22` | 1 |  |
-| `Ani_GroundZombie_portoutDown_Frame3` | 1 |  |
-| `ProjectileHitNothing_Bullet` | 1 |  |
-| `Ani_Frog_land_Frame2` | 1 |  |
-| `Ani_ManglersMonster_explodeLF_Frame131` | 1 |  |
-| `Ani_Dybbuk_walk_Frame10` | 1 |  |
-| `Ani_ManglersMonster_explodeRB_Frame163` | 1 |  |
-| `Ani_MoonHead_hitSwallowedCracked_Frame2` | 1 |  |
-| `Ani_Guillotina3Body_shake_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_transform12_Frame12` | 1 |  |
-| `Ani_ThrobbingKing2_spawn_Frame10` | 1 |  |
-| `Ani_GeoLad_walk_Frame2` | 1 |  |
-| `Ani_Rager_bite2_Frame2` | 1 |  |
-| `Intro_WakingUp` | 1 |  |
-| `Tick_Stun` | 1 |  |
-| `SE_StickRaise` | 1 |  |
-| `SE_CrateDamage` | 1 |  |
-| `Ani_TheCoven_hit2_Frame3` | 1 |  |
-| `Ani_MegaFetus_spinLB_Frame5` | 1 |  |
-| `Ani_BigUFO_shield_Frame2` | 1 |  |
-| `Ani_BoyDino_throw_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame1099` | 1 |  |
-| `Ani_Thump_dyingRF_Frame2` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame142` | 1 |  |
-| `Ani_Gambit_dying_Frame5` | 1 |  |
-| `Ani_Lenny_walkCatDead_Frame10` | 1 |  |
-| `Ani_IceElemental_ice_Frame2` | 1 |  |
-| `Ani_SpiderQueen_hitInsane_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame284` | 1 |  |
-| `Ani_Cat_earthquakeSlam_Frame5` | 1 |  |
-| `Ani_Tatters_portin_Frame2` | 1 |  |
-| `Ani_DrMangler_fumble2Joystick_Frame2` | 1 |  |
-| `Ani_Twister_dying_Frame2` | 1 |  |
-| `Ani_SpiderQueen_insane_Frame2` | 1 |  |
-| `Ani_Cat_floatingmagic_Frame2` | 1 |  |
-| `Ani_Cat_soulLeavingBodyDeath_Frame2` | 1 |  |
-| `Ani_MindFetus_dying_Frame43` | 1 |  |
-| `Ani_Tox_spawn_Frame2` | 1 |  |
-| `Ani_Interstitial_breed1_Frame119` | 1 |  |
-| `SE_CatLand` | 1 |  |
-| `Ani_CavePerson_kickCaveWoman_Frame24` | 1 |  |
-| `SE_Terminator_ShadowStepOut` | 1 |  |
-| `Ani_Lenny_dyingCatDead_Frame31` | 1 |  |
-| `Ani_TheMother_spike_Frame6` | 1 |  |
-| `Ani_MegaFetus_idleRB_Frame60` | 1 |  |
-| `Ani_BungaElite1_walkCaveMan_Frame4` | 1 |  |
-| `Ani_Cat_buildRobotProjectile_Frame44` | 1 |  |
-| `Ani_Wisp_dying_Frame20` | 1 |  |
-| `Ani_FlySwarm_attack4_Frame39` | 1 |  |
-| `Ani_CavePerson_transformCaveMan_Frame17` | 1 |  |
-| `Ani_MegaFetus_hitRB_Frame2` | 1 |  |
-| `Ani_Hitler_dying_Frame2` | 1 |  |
-| `Ani_CloakedDemon_counter_Frame2` | 1 |  |
-| `Ani_TheMother_spike_Frame2` | 1 |  |
-| `Ani_MoonHead_hitCracked_Frame2` | 1 |  |
-| `Ani_YellowBlaster_charge_Frame33` | 1 |  |
-| `Ani_Cat_uziShoot_Frame67` | 1 |  |
-| `Ani_Amoeba_hide_Frame6` | 1 |  |
-| `Ani_CavePerson_dyingSpearCaveMan_Frame37` | 1 |  |
-| `Ani_Cat_clotTransform_Frame2` | 1 |  |
-| `Ani_ShadeMShadow_attack_Frame2` | 1 |  |
-| `Ani_IceElemental_dying_Frame2` | 1 |  |
-| `Ani_MotherSpike_spawnin_Frame2` | 1 |  |
-| `Ani_GreyAlien_dying_Frame2` | 1 |  |
-| `Ani_SecurityBot_walk_Loop` | 1 |  |
-| `Ani_SnakeyBones_shoot1_Frame41` | 1 |  |
-| `Ani_AlienBeast_rampage_Frame19` | 1 |  |
-| `Ani_Pyrophina_throwboss_Frame4` | 1 |  |
-| `SpellSpawn_Cleanse` | 1 |  |
-| `DeathPoof5` | 1 |  |
-| `Ani_BunkerBoy_throwCultist_Frame2` | 1 |  |
-| `SE_WolfCatAttack` | 1 |  |
-| `Ani_SoldierBot_hit_Frame2` | 1 |  |
-| `Ani_Hemlock_heal_Frame5` | 1 |  |
-| `Ani_Cat_buildRobotProjectile_Frame144` | 1 |  |
-| `Ani_CaveChief_bat_Frame67` | 1 |  |
-| `SE_Cat_StompWalk` | 1 |  |
-| `Ani_Cat_headbuttdash_Frame2` | 1 |  |
-| `Ani_Shambler_walk_Frame20` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame256` | 1 |  |
-| `Ani_Cat_knockswatatk_Frame10` | 1 |  |
-| `ProjectileHitCharacter_Projectile` | 1 |  |
-| `Ani_CanCreeper_dying_Frame8` | 1 |  |
-| `Ani_Chummy_dying_Frame2` | 1 |  |
-| `Ani_TumorBarrier_land_Frame2` | 1 |  |
-| `Ani_Lenny_dyingCat_Frame2` | 1 |  |
-| `Ani_HitlerMech_ripandtear_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackL3_Frame12` | 1 |  |
-| `Ani_MedSlimeX_hit_Frame2` | 1 |  |
-| `Ani_SecurityBot_attackAngry_Frame2` | 1 |  |
-| `Ani_Pyrophina_firestorm_Frame38` | 1 |  |
-| `Ani_Gambit_throw_Frame51` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackR2_Frame12` | 1 |  |
-| `Ani_Parasiter_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame146` | 1 |  |
-| `Ani_LordBunga_land_Frame8` | 1 |  |
-| `Ani_BirdSmall_moveStart_Frame9` | 1 |  |
-| `Ani_DaddyShark_hit_Frame4` | 1 |  |
-| `Ani_BunkerBoy_dyingBishop_Frame63` | 1 |  |
-| `Ani_Johnny_mindcontrol_Frame4` | 1 |  |
-| `Ani_Cat_flashkick_Frame12` | 1 |  |
-| `limit_period` | 1 |  |
-| `Ani_Cat_Quiver_Frame2` | 1 |  |
-| `Ani_Moth_shoot_Frame2` | 1 |  |
-| `Ani_Cat_pawground_Frame2` | 1 |  |
-| `Ani_MegaMutant_grab_Frame111` | 1 |  |
-| `SE_T2_UnClone` | 1 |  |
-| `Ani_SpiderQueen_insane_Frame88` | 1 |  |
-| `Ani_AstroSkull_spawnin_Frame2` | 1 |  |
-| `Ani_Interstitial_breed2_Frame167` | 1 |  |
-| `Ani_Scary_portin_Frame2` | 1 |  |
-| `Ani_PokerDemon_attack_Frame47` | 1 |  |
-| `ProjectileSpawn_CoinProjectile` | 1 |  |
-| `Ani_BabyDeathWorm_portin_Frame2` | 1 |  |
-| `Ani_DrMangler_throwJoystick_Frame29` | 1 |  |
-| `Ani_TracyX_dyingRF_Frame2` | 1 |  |
-| `Ani_ShadeM_hit_Frame2` | 1 |  |
-| `Ani_Cat_DruidStartTurn_Frame2` | 1 |  |
-| `Ani_Gatekeeper_spawn_Frame38` | 1 |  |
-| `Ani_Cat_metronome_Frame99` | 1 |  |
-| `Ani_CopBot_attack_Frame3` | 1 |  |
-| `Ani_C1000Clot_dying_Frame2` | 1 |  |
-| `Ani_MoonHead_shootCracked_Frame2` | 1 |  |
-| `Ani_WaterLeech_idle_Frame174` | 1 |  |
-| `Ani_TinyTumorB_walk_Frame19` | 1 |  |
-| `ProjectileSpawn_HookProjectile` | 1 |  |
-| `Ani_TinyTumorA_walk_Frame19` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame70` | 1 |  |
-| `Ani_Cat_poopfart_Frame40` | 1 |  |
-| `Ani_CavePerson_attackCaveBaby_Frame64` | 1 |  |
-| `Ani_GirlDino_walk_Frame2` | 1 |  |
-| `Ani_DocBot_loot_Frame4` | 1 |  |
-| `Ani_BeaniesX_attack_Frame2` | 1 |  |
-| `Ani_Cat_death5_Frame2` | 1 |  |
-| `Ani_Cat_suplex_Frame27` | 1 |  |
-| `Ani_Cat_hithard_Frame2` | 1 |  |
-| `Ani_BeaniesX_turtlestart_Frame3` | 1 |  |
-| `Ani_Chubs_dyingRage_Frame106` | 1 |  |
-| `Ani_FinalBossPhase2_primingHoly2_Loop` | 1 |  |
-| `Ani_MegaFetus_weakLB_Frame163` | 1 |  |
-| `Ani_Guillotina2Body_tantrum_Frame68` | 1 |  |
-| `Ani_Amoeba_attach_Frame14` | 1 |  |
-| `Ani_Cat_butcherAttack_Frame13` | 1 |  |
-| `SE_CatWalk_House` | 1 |  |
-| `SE_BirdDying_Eagle` | 1 |  |
-| `Ani_PokerDemon_poke_Frame63` | 1 |  |
-| `Ani_GroundZombie_attackDown_Frame2` | 1 |  |
-| `Ani_BigUFO_ramLoop_Frame2` | 1 |  |
-| `Ani_Stegosaurus_walk2_Frame22` | 1 |  |
-| `Ani_OrganGrinderX_reload_Frame2` | 1 |  |
-| `Ani_Cat_MonkStartTurn_Frame18` | 1 |  |
-| `Ani_Thump_hitLB_Frame4` | 1 |  |
-| `Ani_BungaElite1_dyingSpearCaveMan_Frame37` | 1 |  |
-| `Ani_BigSlime_dying_Frame2` | 1 |  |
-| `Ani_TheCoven_rise3_Frame7` | 1 |  |
-| `Ani_FinalBossPhase2_bash_Frame2` | 1 |  |
-| `Ani_LordBunga_dying_Frame789` | 1 |  |
-| `Ani_MotherTumor_hitHoldingCat_Frame3` | 1 |  |
-| `Ani_RockyBobo_turnRev_Frame10` | 1 |  |
-| `Ani_BabyDeathWorm_dashstart_Frame2` | 1 |  |
-| `Ani_Cat_biteattack_Frame12` | 1 |  |
-| `SE_WeaponShoot_Slingshot` | 1 |  |
-| `ProjectileSpawn_NeedleProjectile` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame52` | 1 |  |
-| `Ani_DrDitto_spell_Frame42` | 1 |  |
-| `Ani_Spewer_spit_Frame2` | 1 |  |
-| `Ani_MedSlime_spawnin_Frame2` | 1 |  |
-| `Ani_BeaniesX_walk_Frame2` | 1 |  |
-| `Ani_Tormentor_attack_Frame2` | 1 |  |
-| `Ani_Cat_thumbsup_Frame30` | 1 |  |
-| `Ani_Mammoth_dash_Frame4` | 1 |  |
-| `Ani_MotherTumor_hitBig_Frame3` | 1 |  |
-| `Ani_Spewer_walk_Frame2` | 1 |  |
-| `Ani_Cat_psyMegaAttack_Frame27` | 1 |  |
-| `Ani_Chaos_change_Frame2` | 1 |  |
-| `Ani_ThrobbingKing2_spawn_Frame2` | 1 |  |
-| `Ani_FinalBossPhase2_dodgeleft2_Frame2` | 1 |  |
-| `Ani_Fly_walk_Loop` | 1 |  |
-| `Ani_MegaFetus_weakLF_Frame163` | 1 |  |
-| `Ani_Reaper_portin_Frame2` | 1 |  |
-| `ProjectileHitNothing_DamageTrap` | 1 |  |
-| `Ani_BungaElite2_transformSpearCaveMan_Frame52` | 1 |  |
-| `Ani_Guillotina2Head_throw_Frame52` | 1 |  |
-| `Ani_Johnny_blast1_Frame4` | 1 |  |
-| `Ani_Pterodactyl_hit_Frame2` | 1 |  |
-| `Ani_FetusGusher_walk_Frame19` | 1 |  |
-| `Ani_ChargeyMaggot_dashend_Frame96` | 1 |  |
-| `Ani_DrMangler_dying_Frame130` | 1 |  |
-| `Ani_AlienBeast_walk_Frame43` | 1 |  |
-| `Ani_Cat_gulp_Frame2` | 1 |  |
-| `Ani_Lenny_attack_Frame9` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame2` | 1 |  |
-| `Ani_BunkerBoy_dyingZealot_Frame20` | 1 |  |
-| `Ani_Tormentor_idle2primed_Frame2` | 1 |  |
-| `Ani_ManglersMonster_dashstartLF_Frame4` | 1 |  |
-| `Ani_CavePerson_attackCaveBaby_Frame68` | 1 |  |
-| `Ani_SpiderQueen_eggInsane_Frame2` | 1 |  |
-| `Ani_SoldierBot_hit_Frame4` | 1 |  |
-| `Ani_ManglersMonster_walkLB_Loop` | 1 |  |
-| `Ani_DrMangler_fumbleJoystick_Frame10` | 1 |  |
-| `Ani_Stegosaurus_walk_Frame12` | 1 |  |
-| `Ani_FinalBossMegaGuppy_transform31_Frame12` | 1 |  |
-| `Ani_Interstitial_eatCat_Frame125` | 1 |  |
-| `Ani_TracyX_dyingLB_Frame60` | 1 |  |
-| `Ani_ShamblingShade_consume_Frame60` | 1 |  |
-| `Ani_BirdMed_dying_Frame2` | 1 |  |
-| `Ani_BunkerBoy_hitBombZealot_Frame6` | 1 |  |
-| `Tick_Leeches` | 1 |  |
-| `Ani_SnakeyBones_grow2_Frame2` | 1 |  |
-| `Ani_ShadeMShadow_portin_Frame14` | 1 |  |
-| `Ani_Cat_death3_Frame2` | 1 |  |
-| `Ani_Gambit_poop_Frame2` | 1 |  |
-| `Ani_BigSlimeX_dying_Frame2` | 1 |  |
-| `Ani_PetRock_dying_Frame2` | 1 |  |
-| `Ani_Whisperer_shoot_Frame14` | 1 |  |
-| `Ani_TheCoven_hit4_Frame3` | 1 |  |
-| `Ani_FatRat_jump_Frame2` | 1 |  |
-| `Ani_TheBloat_shootForward0_Frame2` | 1 |  |
-| `Ani_ChargeyMaggot_hit_Frame3` | 1 |  |
-| `Ani_FinalBossMegaGuppy_critical1_Frame7` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame356` | 1 |  |
-| `Ani_Amoeba_walkrock_Frame25` | 1 |  |
-| `Ani_BungaElite2_walkSpearCaveMan_Frame5` | 1 |  |
-| `Ani_Cat_hairballatk_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying1_Frame112` | 1 |  |
-| `Ani_GraveWorm_shoot_Frame2` | 1 |  |
-| `Ani_AstroZombie_breakarm_Frame30` | 1 |  |
-| `Ani_Cat_dodge_Frame2` | 1 |  |
-| `Ani_ManglersMonster_hitRB_Frame4` | 1 |  |
-| `SE_Interstitial_BreedingFast` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame117` | 1 |  |
-| `Ani_AcidOoze_hit_Frame2` | 1 |  |
-| `Ani_MindFetus_hit_Frame4` | 1 |  |
-| `Ani_FetusNoJar_heilGrown_Frame2` | 1 |  |
-| `StatusApply_Charmed` | 1 |  |
-| `Ani_BungaElite2_transformSpearCaveMan_Frame14` | 1 |  |
-| `Ani_Pterodactyl_escapeCat_Frame20` | 1 |  |
-| `SE_TerminatorCatWalkE` | 1 |  |
-| `Ani_MedSlime_attack_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_releaseCommand4_Frame15` | 1 |  |
-| `Ani_FatMan_walk_Loop` | 1 |  |
-| `Ani_FleshyMind_pulse_Frame53` | 1 |  |
-| `Ani_Cat_dig_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_attack_Frame115` | 1 |  |
-| `Ani_Fetus_hit_Frame3` | 1 |  |
-| `Ani_BunkerBoy_dyingZealot_Frame34` | 1 |  |
-| `Ani_BungaElite1_hitSpearCaveMan_Frame8` | 1 |  |
-| `Ani_GroundZombie_hit_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakLB_Frame2` | 1 |  |
-| `Ani_FetusGusher_attack_Frame136` | 1 |  |
-| `ProjectileHitCharacter_Creepball` | 1 |  |
-| `Ani_Guillotina2Body_attack_Frame2` | 1 |  |
-| `Ani_Cat_terminatorPunch_Frame2` | 1 |  |
-| `Ani_Guillotina1_attackBelly_Frame47` | 1 |  |
-| `Ani_MegaFetus_idleLF_Frame280` | 1 |  |
-| `Ani_HouseCat_swat_Frame15` | 1 |  |
-| `Ani_Scary_portout_Frame2` | 1 |  |
-| `Ani_BungaElite2_pickupCaveMan_Frame4` | 1 |  |
-| `Ani_Bear_walk_Frame30` | 1 |  |
-| `Ani_Pyrophina_stomp_Frame64` | 1 |  |
-| `Ani_GreyAlien_shootprimed_Frame2` | 1 |  |
-| `Ani_LordBunga_swing_Frame2` | 1 |  |
-| `Ani_Lenny_grabCorpse_Frame147` | 1 |  |
-| `Ani_SoldierBot_backflip_Frame2` | 1 |  |
-| `SE_Interstitial_Breeding` | 1 |  |
-| `Obj_AngelJunkLand` | 1 |  |
-| `TextPopup_ReloadMove` | 1 |  |
-| `Ani_Guillotina1_jumpattackRage_Frame15` | 1 |  |
-| `Ani_SpiderQueen_portoutInsane_Frame16` | 1 |  |
-| `Ani_Cat_raptorWalk_Frame16` | 1 |  |
-| `Ani_MegaFetus_spinRF_Frame5` | 1 |  |
-| `Ani_CavePerson_transformCatCaveWoman_Frame11` | 1 |  |
-| `Ani_Guillotina2Body_react_Frame2` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame483` | 1 |  |
-| `Ani_MotherTumor_spawnHolding_Frame2` | 1 |  |
-| `Ani_FrankX_exhaleFull_Frame22` | 1 |  |
-| `Ani_Pterodactyl_walk_Frame2` | 1 |  |
-| `Ani_Cat_PsychicStartTurn_Frame22` | 1 |  |
-| `Ani_DrMangler_monsterdeathJoystick_Frame160` | 1 |  |
-| `Ani_Guillotina1_hit_Frame2` | 1 |  |
-| `Ani_ShadeM_portout_Frame2` | 1 |  |
-| `Ani_BirdLarge_idle_Frame724` | 1 |  |
-| `Ani_QueenHippo_dying_Frame2` | 1 |  |
-| `Ani_Dybbuk_wisps_Frame2` | 1 |  |
-| `PartyBlower` | 1 |  |
-| `SpellSpawn_Slash` | 1 |  |
-| `Ani_Cat_psyAttack3_Frame2` | 1 |  |
-| `Ani_Cat_headBash_Frame36` | 1 |  |
-| `Ani_MechSuit_hitCat_Frame3` | 1 |  |
-| `Ani_NubsCat_dying_Frame2` | 1 |  |
-| `Ani_Guillotina2Body_attackRage_Frame2` | 1 |  |
-| `Ani_MoonHand_spawnin_Frame2` | 1 |  |
-| `Ani_Cat_cartwheelStart_Frame5` | 1 |  |
-| `Ani_TheBloat_shoot_Frame2` | 1 |  |
-| `Ani_Deathbot_attack_Frame12` | 1 |  |
-| `Ani_Peashy_rage_Frame2` | 1 |  |
-| `Ani_Pterodactyl_dying_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_spawnin1_Frame100` | 1 |  |
-| `SpellSpawn_fx_haste` | 1 |  |
-| `Ani_Cat_cartwheel_Frame5` | 1 |  |
-| `Ani_TinyTumorA_attack_Frame2` | 1 |  |
-| `Ani_Zaratana_walk_Frame105` | 1 |  |
-| `Ani_BungaElite2_hitSpearCaveMan_Frame8` | 1 |  |
-| `Ani_BeaniesX_dying_Frame4` | 1 |  |
-| `Ani_BungaElite1_transformSpearCaveMan_Frame12` | 1 |  |
-| `Ani_BungaElite2_dyingSpearCaveMan_Frame37` | 1 |  |
-| `Ani_SlotMachine_resultJackpot_Frame2` | 1 |  |
-| `Ani_MotherTumor_hitBigHoldingCat_Frame3` | 1 |  |
-| `Ani_CavePerson_throwCatCaveWoman_Frame18` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame70` | 1 |  |
-| `Ani_Hitler_hitNuke_Frame6` | 1 |  |
-| `Ani_FinalBossPhase2_breakshield_Frame135` | 1 |  |
-| `Ani_PinkyX_hit_Frame2` | 1 |  |
-| `Ani_CavePerson_walkCaveBaby_Frame16` | 1 |  |
-| `Ani_HitlerMech_beamin_Frame43` | 1 |  |
-| `Ani_AstroZombie_breakleg_Frame2` | 1 |  |
-| `Ani_LordBunga_walk_Frame51` | 1 |  |
-| `Ani_RatKing_New_dying2_Frame2` | 1 |  |
-| `Ani_FatWoman_dying_Frame2` | 1 |  |
-| `Ani_CavePerson_walkWereMan_Frame5` | 1 |  |
-| `Ani_HitlerMech_yella_Frame35` | 1 |  |
-| `Ani_Hemlock_hit_Frame3` | 1 |  |
-| `Ani_NubsCat_walk_Frame2` | 1 |  |
-| `SpellSpawn_HealSmall` | 1 |  |
-| `Ani_TheCoven_rise_Frame6` | 1 |  |
-| `Ani_JarHead_hit_Frame2` | 1 |  |
-| `Ani_TheCoven_walk_Frame2` | 1 |  |
-| `Ani_Mammoth_stompy_Frame2` | 1 |  |
-| `Ani_Cat_revive_Frame2` | 1 |  |
-| `Ani_Cat_buildRobotProjectile_Frame5` | 1 |  |
-| `Ani_FinalBossMegaGuppy_attackL2_Frame12` | 1 |  |
-| `Ani_AngelicCatFetus_hit_Frame3` | 1 |  |
-| `Ani_FlySwarm_dying_Frame2` | 1 |  |
-| `SE_WeaponShoot_Nailgun` | 1 |  |
-| `Ani_BirdLarge_moveStart_Frame9` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame377` | 1 |  |
-| `Ani_Invader_walk_Frame19` | 1 |  |
-| `Ani_Cat_flipCoinFail_Frame59` | 1 |  |
-| `Ani_TracyX_dyingRB_Frame60` | 1 |  |
-| `Ani_Trampy_walk_Frame40` | 1 |  |
-| `Ani_CavePerson_throwSpearCaveMan_Frame30` | 1 |  |
-| `Ani_CanCreeperOut_exitWater_Frame2` | 1 |  |
-| `Ani_Lenny_attack_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Dead_Dead_Frame80` | 1 |  |
-| `Ani_Tox_hitExpl_Frame7` | 1 |  |
-| `Ani_TheCoven_hit2_Frame2` | 1 |  |
-| `Ani_Cat_spinAttack_Frame2` | 1 |  |
-| `Ani_Lenny_dyingCatDead_Frame5` | 1 |  |
-| `Ani_Zodiac_dying_Frame5` | 1 |  |
-| `Ani_Guillotina1_hitBelly_Frame2` | 1 |  |
-| `Ani_TracyX_attackLB_Frame10` | 1 |  |
-| `Ani_YellowBlaster_dying_Frame30` | 1 |  |
-| `SE_WP_SwapUzi` | 1 |  |
-| `ProjectileHitCharacter_SpiderBall` | 1 |  |
-| `Ani_FrankX_dyingFull_Frame2` | 1 |  |
-| `Ani_Cat_buildRobot_Frame123` | 1 |  |
-| `Ani_Zodiac_reload_Frame5` | 1 |  |
-| `Ani_Interstitial_breed1_Frame18` | 1 |  |
-| `Ani_Cat_clapTogether_Frame65` | 1 |  |
-| `Ani_CavePerson_transformSpearCaveMan_Frame52` | 1 |  |
-| `Ani_Interstitial_breed2_Frame153` | 1 |  |
-| `Ani_KillDozer_ramStart_Frame3` | 1 |  |
-| `Ani_Frog_throwobject_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying3_Frame112` | 1 |  |
-| `Ani_BirdSmall_walk_Frame2` | 1 |  |
-| `Ani_FinalBossPhase1_transform_Frame10` | 1 |  |
-| `Ani_ShadeF_hit_Frame3` | 1 |  |
-| `Ani_WaterLeech_walkWater_Frame133` | 1 |  |
-| `Ani_WaterLeech_walk_Frame52` | 1 |  |
-| `Ani_CavePerson_pounceWereMan_Frame47` | 1 |  |
-| `Ani_BirdLarge_idle_Frame598` | 1 |  |
-| `Ani_Guillotina3Head_dying_Frame3` | 1 |  |
-| `Ani_SecurityBot_rechargeAngry_Frame2` | 1 |  |
-| `Ani_BunkerBoy_attackZealot_Frame83` | 1 |  |
-| `SE_ChalkDraw` | 1 |  |
-| `Ani_ShadeMShadow_portin_Frame2` | 1 |  |
-| `Ani_BirdSmall_moveLoop_Frame2` | 1 |  |
-| `Ani_DeathWorm_dying_offmap_Frame2` | 1 |  |
-| `Ani_BabyShark_dying_Frame42` | 1 |  |
-| `Ani_Trampy_shoot_Frame5` | 1 |  |
-| `Ani_WaterLeech_walk_Frame70` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame113` | 1 |  |
-| `Ani_Guillotina1_walkRage_Frame10` | 1 |  |
-| `Ani_CatHuman_cry_Frame4` | 1 |  |
-| `Ani_BoyDino_attack_Frame2` | 1 |  |
-| `Ani_CanCreeperOut_walk_Frame2` | 1 |  |
-| `Ani_BirdLarge_moveLoop_Frame8` | 1 |  |
-| `ProjectileSpawn_MagicMissileProjectileSmall` | 1 |  |
-| `Ani_BabyDeathWorm_dying_Frame2` | 1 |  |
-| `Ani_MegaMutant_grab_Frame28` | 1 |  |
-| `Ani_ThrobbingKing_walk_Frame7` | 1 |  |
-| `Ani_Gambit_fizzle_Frame101` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame21` | 1 |  |
-| `Ani_Hitler_shoot_Frame17` | 1 |  |
-| `ProjectileHitNothing_LavaBall` | 1 |  |
-| `Ani_WaterLeech_dyingWater_Frame2` | 1 |  |
-| `Ani_Angel_hit_Frame2` | 1 |  |
-| `ProjectileSpawn_Poisonball` | 1 |  |
-| `Ani_Flushmaster_dying_Frame2` | 1 |  |
-| `Ani_DrMangler_dying_Frame129` | 1 |  |
-| `Ani_ManglersMonster_dashstartLB_Frame3` | 1 |  |
-| `Ani_Cat_cheat_Frame78` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame141` | 1 |  |
-| `Ani_SnakeyBones_grow2_Frame15` | 1 |  |
-| `Ani_Cat_megaslap_Frame28` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame45` | 1 |  |
-| `Ani_Nettle_attack_Frame10` | 1 |  |
-| `Ani_Pyrophina_run_Frame15` | 1 |  |
-| `Ani_Zaratana_dashend_Frame3` | 1 |  |
-| `Ani_Birthwort_hit_Frame3` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame441` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame355` | 1 |  |
-| `Ani_GasCloud_spawnin_Frame2` | 1 |  |
-| `Ani_CanCreeper_launchStart_Frame14` | 1 |  |
-| `Ani_FetusNoJar_walkGrown_Frame2` | 1 |  |
-| `Ani_BirdLarge_dying_Frame32` | 1 |  |
-| `ProjectileSpawn_GlassBall` | 1 |  |
-| `Ani_Lenny_catdyingCat_Frame2` | 1 |  |
-| `Ani_Guillotina1_suck2_Frame22` | 1 |  |
-| `Ani_Husk_hit_Frame2` | 1 |  |
-| `Ani_Tatters_revenge_Frame2` | 1 |  |
-| `Ani_Amoeba_attach_Frame20` | 1 |  |
-| `Ani_Zaratana_magnet_Frame71` | 1 |  |
-| `Ani_Amoeba_hit_Frame3` | 1 |  |
-| `Ani_Stegosaurus_walk2_Frame2` | 1 |  |
-| `Ani_TracyX_walkLF_Frame2` | 1 |  |
-| `Ani_MoonHead_digestCat_Frame2` | 1 |  |
-| `Ani_TheBloat_jump1_Frame85` | 1 |  |
-| `Ani_Stegosaurus_counter_Frame15` | 1 |  |
-| `Ani_Clot_pulse_Frame2` | 1 |  |
-| `Ani_Cat_poopfart_Frame65` | 1 |  |
-| `Ani_CanCreeperOut_hit_Frame14` | 1 |  |
-| `Ani_Tremblo_attack_Frame2` | 1 |  |
-| `Ani_Lenny_catdyingCat_Frame130` | 1 |  |
-| `Ani_Decoy2_idle_Frame48` | 1 |  |
-| `Ani_SnakeyBones_shrink2_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_suck_Frame9` | 1 |  |
-| `SpellSpawn_WaterConduct` | 1 |  |
-| `Ani_BirdSmall_dying_Frame2` | 1 |  |
-| `DamageBlocked` | 1 |  |
-| `Ani_Maggot_attack_Frame15` | 1 |  |
-| `Ani_BunkerBoy_lungeCultist_Frame2` | 1 |  |
-| `Ani_Thump_jumpRB_Frame48` | 1 |  |
-| `Ani_HitlerMech_attack_Frame15` | 1 |  |
-| `Ani_DustDevil_dash_Frame10` | 1 |  |
-| `Ani_MegaDinoLeg_walk_Frame48` | 1 |  |
-| `Ani_SecurityBot_dying_Frame2` | 1 |  |
-| `Ani_CloakedDemon_dying_Frame2` | 1 |  |
-| `Ani_BungaElite1_chestpoundCaveMan_Frame57` | 1 |  |
-| `Ani_Cat_stoneFists_Frame2` | 1 |  |
-| `Ani_MegaDinoHead_raise_Frame51` | 1 |  |
-| `Ani_TheCoven_hit3_Frame3` | 1 |  |
-| `Ani_Guillotina2Head_attack_Frame66` | 1 |  |
-| `Ani_LordBunga_jump_Frame16` | 1 |  |
-| `Ani_AstroZombie_dying_Frame253` | 1 |  |
-| `Ani_HeadTumor_walk_Frame2` | 1 |  |
-| `Ani_CopBot_dying_Frame3` | 1 |  |
-| `Ani_Trampy_scratch_Frame164` | 1 |  |
-| `Ani_Revalark_idle_Frame18` | 1 |  |
-| `Ani_MegaFetus_idleRB_Frame280` | 1 |  |
-| `Ani_Fatso_deadhit_Frame2` | 1 |  |
-| `Ani_DinoEggs_spawn_Frame2` | 1 |  |
-| `Ani_GreyAlien_walkprimed_Frame2` | 1 |  |
-| `Ani_Tatters_portout_Frame2` | 1 |  |
-| `Ani_LoveBot_dying_Frame3` | 1 |  |
-| `Ani_CavePerson_attackCaveMan_Frame49` | 1 |  |
-| `Ani_ShadeF_closeOpen_Frame15` | 1 |  |
-| `Ani_Rat_dashatk_Frame3` | 1 |  |
-| `ProjectileSpawn_Projectile_Rocket` | 1 |  |
-| `Ani_Cat_fattyWalk_Frame36` | 1 |  |
-| `Ani_SecurityBot_rechargeAngry_Frame60` | 1 |  |
-| `Ani_Lenny_struggleCat_Frame69` | 1 |  |
-| `SE_TerminatorCatWalkD` | 1 |  |
-| `Ani_Floast_throw_Frame77` | 1 |  |
-| `Ani_Cat_throwbigelement_Frame57` | 1 |  |
-| `Ani_Peashy_throwobjectRage_Frame2` | 1 |  |
-| `Ani_GraveWorm_dying_Frame2` | 1 |  |
-| `Ani_GroundZombie_attackDown_Frame24` | 1 |  |
-| `Ani_CavePerson_chestpoundSpearCaveMan_Frame29` | 1 |  |
-| `Ani_SmallUFO_attack_Frame59` | 1 |  |
-| `Ani_BirdMed_dying_Frame25` | 1 |  |
-| `Ani_Bat_attack2_Frame13` | 1 |  |
-| `Ani_Zaratana_turtlestart_Frame8` | 1 |  |
-| `Ani_BunkerBoy_lungeCultist_Frame3` | 1 |  |
-| `Ani_ManglersMonster_dashstartRB_Frame3` | 1 |  |
-| `Ani_AngelicCatFetus_kiss_Frame18` | 1 |  |
-| `Ani_MoonHand_hit_Frame3` | 1 |  |
-| `Ani_ThrobbingKing2_dying_Frame322` | 1 |  |
-| `Ani_Guillotina2Head_attackRage_Frame64` | 1 |  |
-| `Ani_Cat_rocketRun_Frame2` | 1 |  |
-| `ProjectileSpawn_MagicSpikeProjectile` | 1 |  |
-| `Ani_BunkerBoy_becomemutantCultist_Frame3` | 1 |  |
-| `Ani_ConjoinedHusk_grab_Frame54` | 1 |  |
-| `Ani_Birthwort_attack_Frame2` | 1 |  |
-| `Ani_MegaDinoHead_raise_Frame2` | 1 |  |
-| `Ani_LordBunga_entrance_land_Frame2` | 1 |  |
-| `Ani_Pyrophina_grab_Frame4` | 1 |  |
-| `Ani_AngelicCatFetus_doom_Frame2` | 1 |  |
-| `Ani_Bear_attack_Frame3` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame43` | 1 |  |
-| `Ani_Tormentor_dying_Frame550` | 1 |  |
-| `Ani_AlienBeast_puke_Frame2` | 1 |  |
-| `Ani_Deathbot_dying_Frame2` | 1 |  |
-| `Ani_Cat_driveWalk_Loop` | 1 |  |
-| `Ani_HangerBot_portout_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Injured_Frame752` | 1 |  |
-| `Ani_MegaFetus_weakLF_Frame381` | 1 |  |
-| `Ani_Trex_eat_Frame2` | 1 |  |
-| `Ani_ShadeF_hitOpen_Frame4` | 1 |  |
-| `Ani_Cat_buildRobot_Frame69` | 1 |  |
-| `Ani_Bumblefoot_dyingDown_Frame132` | 1 |  |
-| `Ani_Waggle_walk_Frame10` | 1 |  |
-| `Ani_Trampy_poop_Frame74` | 1 |  |
-| `Ani_Rager_dying_Frame78` | 1 |  |
-| `SE_StalactiteImpact` | 1 |  |
-| `Ani_Caterpillar_walk_Frame4` | 1 |  |
-| `Ani_Cat_hit_land2_Frame6` | 1 |  |
-| `Ani_Rager_walk_Frame21` | 1 |  |
-| `Ani_ManglersMonster_dashstartRB_Frame4` | 1 |  |
-| `Ani_AlienBeast_eat_Frame2` | 1 |  |
-| `Ani_Chaos_megablast_Frame44` | 1 |  |
-| `Ani_Hemlock_bounce_Frame2` | 1 |  |
-| `Ani_Interstitial_breed1_Frame41` | 1 |  |
-| `Ani_BoyDino_throwCat_Frame13` | 1 |  |
-| `Ani_GirlDino_spawn_Frame39` | 1 |  |
-| `Ani_QueenHippo_hit_Frame2` | 1 |  |
-| `Ani_Gatekeeper_leap_Frame18` | 1 |  |
-| `Ani_CavePerson_transformCatCaveWoman_Frame55` | 1 |  |
-| `Ani_Tatters_attack_Frame2` | 1 |  |
-| `SE_AnkylosaurusAttack` | 1 |  |
-| `Ani_Mammoth_stompy_Frame23` | 1 |  |
-| `Ani_RockyBobo_walk_Frame25` | 1 |  |
-| `Ani_Cat_zombieWalk_Frame12` | 1 |  |
-| `Ani_Cat_Quiver_Frame45` | 1 |  |
-| `Ani_AstroSkull_walk_Frame2` | 1 |  |
-| `Ani_Cat_weaponspell2_Frame3` | 1 |  |
-| `Ani_Cerberubs_hit_Frame3` | 1 |  |
-| `Ani_Mammoth_walk_Frame3` | 1 |  |
-| `Ani_Cat_portin_Frame2` | 1 |  |
-| `SE_Interstitial_BreedUnstick` | 1 |  |
-| `Ani_Interstitial_goodbye_Frame16` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame5` | 1 |  |
-| `Ani_Tox_dying_Frame2` | 1 |  |
-| `Ani_SecurityBot_walkAngry_Frame4` | 1 |  |
-| `Ani_Peashy_dyingRage_Frame2` | 1 |  |
-| `Ani_GreyAlien_walkprimed_Frame46` | 1 |  |
-| `Ani_DocBot_loot_Frame2` | 1 |  |
-| `Ani_DrMangler_walkJoystick_Frame51` | 1 |  |
-| `Ani_Hitler_heil_Frame19` | 1 |  |
-| `Ani_BirdLarge_attack_Frame31` | 1 |  |
-| `Ani_Shambler_hit_Frame2` | 1 |  |
-| `Ani_BunkerBoy_dyingZealot_Frame4` | 1 |  |
-| `Ani_Stegosaurus_spin_Frame2` | 1 |  |
-| `Ani_WaterLeech_dashstartWater_Frame2` | 1 |  |
-| `Ani_Fuzzer_dying_Frame39` | 1 |  |
-| `Ani_ManglersMonster_explodeRF_Frame138` | 1 |  |
-| `Ani_SlotMachine_resultWin_Frame40` | 1 |  |
-| `Ani_HumanCat_dodge_Frame5` | 1 |  |
-| `ProjectileHitNothing_ManaLeechProjectile` | 1 |  |
-| `Ani_CaveChief_rally_Frame10` | 1 |  |
-| `Ani_FetusNoJar_heilGrown_Frame18` | 1 |  |
-| `Ani_MegaTumor_dying_Frame2` | 1 |  |
-| `Ani_Tox_hit_Frame7` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame350` | 1 |  |
-| `Ani_FrankX_exhaleFull_Frame24` | 1 |  |
-| `Ani_Lenny_attackCatDead_Frame25` | 1 |  |
-| `Ani_BigDemon_necksnapCat_Frame81` | 1 |  |
-| `SE_AstroTaserPoke` | 1 |  |
-| `Ani_CoreFreak_fury_Frame73` | 1 |  |
-| `Ani_SmallAsteroid_hit_Frame2` | 1 |  |
-| `ProjectileHitCharacter_LeechProjectile` | 1 |  |
-| `Ani_OrganGrinderX_empty_Frame2` | 1 |  |
-| `Ani_BunkerBoy_spellBishop_Frame3` | 1 |  |
-| `SE_Terminator_ShadowStepIn` | 1 |  |
-| `Ani_Tox_explodeExpl_Frame13` | 1 |  |
-| `Ani_Worm_dying_Frame2` | 1 |  |
-| `Ani_MegaDinoHead_weak_Frame140` | 1 |  |
-| `ProjectileSpawn_Snowball` | 1 |  |
-| `Ani_CavePerson_hitWereMan_Frame7` | 1 |  |
-| `Ani_Guillotina2Body_react_Frame143` | 1 |  |
-| `Ani_RockyBobo_attack2_Frame10` | 1 |  |
-| `Ani_Bumblefoot_dyingUp_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_throw_Frame2` | 1 |  |
-| `Ani_Kirby_exhaleFull_Frame2` | 1 |  |
-| `Ani_MegaMutant_slam_Frame40` | 1 |  |
-| `Ani_MoonHead_dyingCracked_Frame3` | 1 |  |
-| `Ani_Interstitial_breed1_Frame90` | 1 |  |
-| `Ani_MegaDinoLeg_walk_Frame4` | 1 |  |
-| `Ani_Cat_fastthrowloop_Frame2` | 1 |  |
-| `Ani_BunkerBoy_pickupZealot_Frame2` | 1 |  |
-| `Ani_Pyrophina_fire_Frame27` | 1 |  |
-| `Ani_CavePerson_transformSpearCaveMan_Frame14` | 1 |  |
-| `Ani_BirdLarge_walk_Frame2` | 1 |  |
-| `Ani_BoyDino_dying_Frame48` | 1 |  |
-| `Ani_ShamblingShade_consumeCat_Frame88` | 1 |  |
-| `Ani_Shambler_dyingDisassembled_Frame2` | 1 |  |
-| `Ani_SpiderQueen_hit_Frame2` | 1 |  |
-| `Ani_BigSlimeX_walk_Frame2` | 1 |  |
-| `ProjectileHitNothing_MagicSpikeProjectile` | 1 |  |
-| `Ani_DocBot_walk_Frame19` | 1 |  |
-| `Ani_SecurityBot_walkAngry_Frame23` | 1 |  |
-| `Ani_Tox_idleExpl_Frame15` | 1 |  |
-| `Ani_Zaratana_exitTurtle_Frame19` | 1 |  |
-| `SE_ScorpionCatHug` | 1 |  |
-| `Ani_Cat_headBash_Frame19` | 1 |  |
-| `Ani_Hitler_suicide_Frame164` | 1 |  |
-| `Ani_SpiderQueen_walkInsane_Frame2` | 1 |  |
-| `Ani_MegaFetus_idleLB_Frame120` | 1 |  |
-| `ProjectileHitCharacter_SmallRock` | 1 |  |
-| `ProjectileSpawn_Webball` | 1 |  |
-| `Ani_Pyrophina_throw_Frame2` | 1 |  |
-| `Ani_Cat_headbuttdashStart_Frame8` | 1 |  |
-| `Ani_Floast_throwCat_Frame30` | 1 |  |
-| `ProjectileHitCharacter_Poisonball` | 1 |  |
-| `Ani_TheMother_pullin_Frame3` | 1 |  |
-| `Ani_Trex_eatCat_Frame2` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying2_Frame212` | 1 |  |
-| `Ani_BunkerBoy_blessBishop_Frame3` | 1 |  |
-| `Ani_Cat_weaponspell3_Frame61` | 1 |  |
-| `Ani_AstroSkull_spawnin_Frame207` | 1 |  |
-| `Ani_LordBunga_dying_Frame758` | 1 |  |
-| `Ani_Slag_hit_Frame2` | 1 |  |
-| `Ani_AlienBeast_rampage_Frame2` | 1 |  |
-| `Ani_MoonHead_openmouth_Frame2` | 1 |  |
-| `Ani_HangerBot_dying_Frame96` | 1 |  |
-| `Ani_GreenProber_walk_Frame15` | 1 |  |
-| `Ani_WaterLeech_dashend_Frame2` | 1 |  |
-| `Ani_MegaTumor_dash_Frame2` | 1 |  |
-| `Ani_MoonHead_hitChargingCracked_Frame2` | 1 |  |
-| `Ani_MotherTumor_spawn_Frame2` | 1 |  |
-| `Ani_Zaratana_walk_Frame56` | 1 |  |
-| `Ani_Waggle_shoot_Frame2` | 1 |  |
-| `Ani_Gamete_hit_Frame2` | 1 |  |
-| `Ani_Cat_MageStartTurn_Frame43` | 1 |  |
-| `Ani_BunkerBoy_wash_Frame218` | 1 |  |
-| `Ani_FleshLad_hit_Frame15` | 1 |  |
-| `Ani_ManglersMonster_primerushLB_Frame2` | 1 |  |
-| `Ani_Bird_dying_Frame25` | 1 |  |
-| `Ani_ManglersMonster_explodeLF_Frame163` | 1 |  |
-| `Ani_Pyrophina_fire_Frame22` | 1 |  |
-| `Ani_Pyrophina_walk_Frame25` | 1 |  |
-| `Ani_FinalBossMegaGuppy_dying2_Frame112` | 1 |  |
-| `Ani_Cat_terminatorPunchCat_Frame2` | 1 |  |
-| `Ani_SpiderQueen_dying_offmap_Frame2` | 1 |  |
-| `Ani_CloningVat_dying_Frame2` | 1 |  |
-| `Ani_Cat_dryHeave_Frame35` | 1 |  |
-| `Ani_Interstitial_mutate_Frame202` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame30` | 1 |  |
-| `Ani_Chubs_dyingRage_Frame2` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame152` | 1 |  |
-| `Ani_TracyX_dyingLF_Frame3` | 1 |  |
-| `Ani_Cat_poofIntoExistance_Frame2` | 1 |  |
-| `Ani_AstroZombie_breakarm_Frame71` | 1 |  |
-| `Ani_Gatekeeper_walk_Frame18` | 1 |  |
-| `Ani_SnakeyBones_dying_Frame2` | 1 |  |
-| `Ani_Pinky_hit_Frame2` | 1 |  |
-| `Ani_LordBunga_enterbattleChair_Frame531` | 1 |  |
-| `Ani_Chubs_walk_Frame4` | 1 |  |
-| `Ani_Interstitial_boyRejectGirl_Frame537` | 1 |  |
-| `Ani_BomberRat_walk_Frame22` | 1 |  |
-| `Ani_SnakeyBones_hit3_Frame2` | 1 |  |
-| `Ani_BigDemon_necksnapCat_Frame107` | 1 |  |
-| `SE_Terminator2_WalkStep` | 1 |  |
-| `Obj_JunkLand` | 1 |  |
-| `Ani_KillDozer_walk_Frame28` | 1 |  |
-| `Ani_Bombchu_dashStart_Frame2` | 1 |  |
-| `Ani_MoonHead_chewSwallowedCracked_Frame2` | 1 |  |
-| `Ani_BigDemon_dying_Frame31` | 1 |  |
-| `Ani_BigUFO_ramEnd_Frame2` | 1 |  |
-| `Ani_Invader_hit_Frame2` | 1 |  |
-| `Ani_GreyAlien_prime_Frame3` | 1 |  |
-| `ProjectileHitNothing_SpikeProjectile` | 1 |  |
-| `Ani_Cat_teleportOut_Frame2` | 1 |  |
-| `DamageShield` | 1 |  |
-| `Ani_Cat_weaponswingup_Frame12` | 1 |  |
-| `Ani_Nettle_walk_Frame13` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame2` | 1 |  |
-| `SpellSpawn_fx_windSpell` | 1 |  |
-| `Ani_Rager_angry_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakRB_Frame81` | 1 |  |
-| `Ani_Bird_dying_Frame2` | 1 |  |
-| `Ani_CloakedDemon_hit_Frame3` | 1 |  |
-| `Ani_Trex_eatCat_Frame30` | 1 |  |
-| `Ani_Johnny_idleUnwashed_Frame136` | 1 |  |
-| `Ani_HouseCat_scratching_Frame95` | 1 |  |
-| `Ani_TheBloat_jump0_Frame2` | 1 |  |
-| `Ani_Shambler_dyingDisassemble_Frame2` | 1 |  |
-| `Ani_Bumblefoot_digoutDown_Frame2` | 1 |  |
-| `Ani_Interstitial_depressed_Frame2` | 1 |  |
-| `Ani_ConjoinedHusk_shoot_Frame2` | 1 |  |
-| `Ani_Fuzzer_react_Frame2` | 1 |  |
-| `Ani_TracyX_spinLF_Frame10` | 1 |  |
-| `Ani_BungaElite1_transformSpearCaveMan_Frame52` | 1 |  |
-| `Ani_ManglersMonster_dashendRB_Frame2` | 1 |  |
-| `Ani_CavePerson_transformCaveMan_Frame52` | 1 |  |
-| `Ani_MegaDinoHead_dying_Frame2` | 1 |  |
-| `SpellSpawn_HealMed` | 1 |  |
-| `Ani_Cat_shred_Frame2` | 1 |  |
-| `Ani_HitlerMech_beamin_Frame2` | 1 |  |
-| `Ani_TheBloat_dying_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame240` | 1 |  |
-| `Ani_Triceratops_idle2primed_Frame25` | 1 |  |
-| `Ani_Maggot_dying_Frame2` | 1 |  |
-| `Ani_CavePerson_birthCaveWoman_Frame73` | 1 |  |
-| `Ani_CoreFreak_attack_Frame24` | 1 |  |
-| `Ani_SnakeyBones_shoot2_Frame41` | 1 |  |
-| `ProjectileSpawn_Heartball` | 1 |  |
-| `Ani_Tox_hitExpl_Frame2` | 1 |  |
-| `Ani_ShamblingShade_hit_Frame4` | 1 |  |
-| `Ani_FatMan_reflect_projectile_Frame2` | 1 |  |
-| `Ani_DrMangler_dyingJoystick_Frame317` | 1 |  |
-| `Ani_DustDevil_attack_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_Injured_Dead_Frame263` | 1 |  |
-| `Ani_Cat_JesterStartTurn_Frame18` | 1 |  |
-| `Ani_Gamete_dyingBig_Frame2` | 1 |  |
-| `Ani_Cat_blowKiss_Frame25` | 1 |  |
-| `Ani_GeoLad_attack_Frame2` | 1 |  |
-| `Ani_Tox_walk_Frame31` | 1 |  |
-| `Ani_ConjoinedHusk_escapeCat_Frame85` | 1 |  |
-| `Ani_Cat_dash_Frame7` | 1 |  |
-| `Ani_Moth_fast_Loop` | 1 |  |
-| `Ani_Zaratana_bombardment_Frame150` | 1 |  |
-| `Ani_HumanCat_walk_Frame7` | 1 |  |
-| `Ani_GreyAlien_suggest_Frame3` | 1 |  |
-| `Ani_SoldierBot_reload_Frame4` | 1 |  |
-| `Ani_FleshLad_walk_Frame34` | 1 |  |
-| `Ani_AstroZombie_walkHeadless_Frame2` | 1 |  |
-| `Ani_Spewer_suck_Frame2` | 1 |  |
-| `Ani_Lenny_catdyingCat_Frame336` | 1 |  |
-| `Ani_Gatekeeper_attackCat_Frame60` | 1 |  |
-| `Ani_AlienBeast_dying_Frame138` | 1 |  |
-| `Ani_Mammoth_dying_Frame22` | 1 |  |
-| `Ani_RattleSnake_walk_Frame8` | 1 |  |
-| `Ani_Angel_walk_Frame12` | 1 |  |
-| `Ani_Roomba_dying_Frame4` | 1 |  |
-| `Ani_BunkerBoy_cutZealot_Frame48` | 1 |  |
-| `Ani_AstroZombie_walkHeadless_Frame21` | 1 |  |
-| `Ani_Cat_liquidteleportIn_Frame2` | 1 |  |
-| `Ani_Roomba_suck_Frame3` | 1 |  |
-| `Ani_Cat_death7_Frame2` | 1 |  |
-| `Ani_JarHead_dying_Frame2` | 1 |  |
-| `Ani_MegaFetus_weakLF_Frame81` | 1 |  |
-| `Ani_DrMangler_dying_Frame71` | 1 |  |
-| `Ani_SpiderQueen_revenge_Frame2` | 1 |  |
-| `Ani_Cat_tinyPunch_Frame11` | 1 |  |
-| `Ani_Slag_spawnx_Frame2` | 1 |  |
-| `Ani_ShamblingShade_consume_Frame22` | 1 |  |
-| `Ani_TheCoven_summon4_Frame525` | 1 |  |
-| `Ani_Trex_walk_Frame12` | 1 |  |
-| `Ani_Cat_tinkerAdjacent_Frame23` | 1 |  |
-| `Ani_ThrobbingKing2_walk_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_hitRage_Frame2` | 1 |  |
-| `Ani_SecurityBot_walkAngry_Frame35` | 1 |  |
-| `Tick_Doomed` | 1 |  |
-| `Tick_DejaVu` | 1 |  |
-| `Ani_GroundZombie_portin_Frame2` | 1 |  |
-| `Ani_SoldierBot_pre_backflip_Frame4` | 1 |  |
-| `Ani_DrMangler_joystick_Frame2` | 1 |  |
-| `Ani_MotherTumor_dyingHoldingCat_Frame2` | 1 |  |
-| `SE_Cat_WeaponRaise` | 1 |  |
-| `Ani_MegaMutant_grab_Frame114` | 1 |  |
-| `Ani_GirlDino_dying_Frame44` | 1 |  |
-| `Ani_Cat_bearHug_Frame2` | 1 |  |
-| `Ani_SmallSlimeX_attack_Frame2` | 1 |  |
-| `Ani_ShamblingShade_run_Frame13` | 1 |  |
-| `Ani_Zaratana_meteorshower_Frame215` | 1 |  |
-| `Ani_BirdMed_idle_Frame338` | 1 |  |
-| `Ani_Cat_punchSelf_Frame2` | 1 |  |
-| `Ani_FetusJar_hit_Frame2` | 1 |  |
-| `Ani_MoonHead_crackCharging_Frame3` | 1 |  |
-| `Ani_TheMother_consumeCat_Frame2` | 1 |  |
-| `Ani_Guillotina2Head_walk_Frame2` | 1 |  |
-| `Ani_TallBot_walk_Frame19` | 1 |  |
-| `Ani_FleshLad_hit_Frame3` | 1 |  |
-| `Ani_Spewer_walk_Frame26` | 1 |  |
-| `Ani_TheBloat_dying_Frame3` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame439` | 1 |  |
-| `Ani_MotherTumor_passLFBigHoldingCat_Frame2` | 1 |  |
-| `Ani_Cat_angryfail_Frame2` | 1 |  |
-| `Ani_CatHuman_throwCat_Frame27` | 1 |  |
-| `Ani_Cat_bruise_Frame2` | 1 |  |
-| `Ani_Cat_summonriseup_Frame2` | 1 |  |
-| `Ani_Cat_TankStartTurn_Frame6` | 1 |  |
-| `Ani_Wisp_dying_Frame2` | 1 |  |
-| `Ani_Moth_fast_Frame7` | 1 |  |
-| `Ani_Pyrophina_hitBig_Frame3` | 1 |  |
-| `Ani_FatWoman_reflect_projectile_Frame2` | 1 |  |
-| `Ani_ShamblingShade_consume_Frame100` | 1 |  |
-| `Tick_Freeze` | 1 |  |
-| `Ani_ShadeF_dyingOpen_Frame3` | 1 |  |
-| `Ani_Trampy_poop_Frame73` | 1 |  |
-| `Ani_MoonHand_hitGrabbing_Frame3` | 1 |  |
-| `Ani_Cat_tinkerAdjacent_Frame49` | 1 |  |
-| `Ani_Cat_spinattackend_Frame28` | 1 |  |
-| `Ani_Interstitial_breed2_Frame78` | 1 |  |
-| `Ani_BigDemon_necksnapCat_Frame128` | 1 |  |
-| `Ani_MegaFetus_weakRB_Frame460` | 1 |  |
-| `SpellSpawn_Explosion` | 1 |  |
-| `SpellSpawn_MagicMissleBlast` | 1 |  |
-| `Ani_Interstitial_styleChange_Frame172` | 1 |  |
-| `Tick_Rot` | 1 |  |
-| `DamageHealthLow` | 1 |  |
-| `Ani_Floast_shoot_Frame9` | 1 |  |
-| `Ani_BirdMed_walk_Frame2` | 1 |  |
-| `Ani_CavePerson_dyingCatCaveWoman_Frame12` | 1 |  |
-| `Ani_Tormentor_megabite_Frame95` | 1 |  |
-| `Ani_BirdMed_walk_Frame16` | 1 |  |
-| `Ani_Fuzzer_attack_Frame56` | 1 |  |
-| `Ani_Revalark_heal_Frame2` | 1 |  |
-| `Ani_MotherTumor_dyingBigHoldingCat_Frame2` | 1 |  |
-| `Ani_Interstitial_eatCat_Frame213` | 1 |  |
-| `Ani_DocBot_walk_Frame2` | 1 |  |
-| `Ani_MechSuit_shootCat_Frame13` | 1 |  |
-| `Ani_Chubs_rage_Frame51` | 1 |  |
-| `Ani_Stegosaurus_walk_Frame57` | 1 |  |
-| `Ani_BungaElite2_attackCaveMan_Frame79` | 1 |  |
-| `Ani_DaddyShark_dying_Frame2` | 1 |  |
-| `Ani_TheCoven_rise2_Frame7` | 1 |  |
-| `Ani_Cat_weaponspell3_Frame2` | 1 |  |
-| `ProjectileHitNothing_ArrowProjectile` | 1 |  |
-| `Ani_GreyAlien_hitprimed_Frame2` | 1 |  |
-| `Ani_BabyDeathWorm_dashatk_Frame4` | 1 |  |
-| `Ani_Cerberubs_walk_Frame43` | 1 |  |
-| `Ani_HitlerMech_yella_Frame8` | 1 |  |
-| `Ani_FleshLad_doublepunch_Frame41` | 1 |  |
-| `Ani_Interstitial_breed0_Frame119` | 1 |  |
-| `Ani_TallBot_suplexCat_Frame45` | 1 |  |
-| `Ani_HitlerMech_beamin_Frame88` | 1 |  |
-| `Ani_DocBot_spawn_Frame4` | 1 |  |
-| `Ani_FinalBossMegaGuppy_transform32_Frame12` | 1 |  |
-| `Ani_ThrobbingKing2_walk_Frame17` | 1 |  |
-| `Ani_Gambit_groundpound_Frame5` | 1 |  |
-| `Ani_TheCoven_summon4_Frame562` | 1 |  |
-| `Ani_BigDemon_shoot_Frame70` | 1 |  |
-| `Ani_Johnny_idleUnwashed_Frame44` | 1 |  |
-| `Ani_C1000Clot_walk_Frame4` | 1 |  |
-| `Ani_FlySwarm_attack5_Frame39` | 1 |  |
-| `Ani_FinalBossPhase3_holy3_Frame20` | 1 |  |
-| `Ani_Thump_jumpLF_Frame48` | 1 |  |
-| `Ani_TracyX_walkRB_Frame2` | 1 |  |
-| `Ani_Spewer_dyingFull_Frame2` | 1 |  |
-| `Ani_MegaFetus_dyingLF_Frame40` | 1 |  |
-| `Batterup_Swing_Castpoint` | 1 |  |
-| `Ani_GirlDino_throw_Frame25` | 1 |  |
-| `Ani_MegaFetus_weakLB_Frame277` | 1 |  |
-| `SE_Terminator1_WalkLeg` | 1 |  |
-| `Ani_Cat_megaslap_Frame5` | 1 |  |
-| `Ani_Pterodactyl_struggle_Frame2` | 1 |  |
-| `Ani_MedSlime_hit_Frame2` | 1 |  |
-| `Ani_SecurityBot_hitAngry_Frame4` | 1 |  |
-| `Ani_KillDozer_ram_Frame36` | 1 |  |
-| `Ani_CavePerson_dyingCaveMan_Frame10` | 1 |  |
-| `Ani_BrambleBaby_dying_Frame2` | 1 |  |
-| `Ani_BigSlime_hit_Frame2` | 1 |  |
-| `Ani_CavePerson_walkSpearCaveMan_Frame21` | 1 |  |
-| `Ani_WaterLeech_walk_Frame37` | 1 |  |
-| `Ani_Guillotina3Body_spawnmama_Frame2` | 1 |  |
-| `Ani_Johnny_weak_Frame200` | 1 |  |
-| `Ani_ShamblingShade_run_Frame5` | 1 |  |
-| `Ani_Roomba_ramEnd_Frame2` | 1 |  |
-| `Ani_TallTumor_thrash_Frame2` | 1 |  |
-| `SE_WP_ShotgunShot` | 1 |  |
-| `Ani_BunkerBoy_explodeBombZealot_Frame2` | 1 |  |
-| `Ani_Sprout_spore_Frame2` | 1 |  |
-| `Ani_Guillotina3Head_shoot_Frame35` | 1 |  |
-| `Ani_TheMother_grow_Frame6` | 1 |  |
-| `Ani_AstroSkull_attack_Frame3` | 1 |  |
-| `Status_Unwebbed` | 1 |  |
-| `Ani_BirdLarge_runAway_Frame5` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_OK_Frame2` | 1 |  |
-| `Ani_Cat_headbuttdashStart_Frame2` | 1 |  |
-| `Ani_Cat_earthquakeSlam_Frame26` | 1 |  |
-| `Ani_LordBunga_bigbooChair_Frame31` | 1 |  |
-| `ProjectileSpawn_Tumorball` | 1 |  |
-| `Ani_Zaratana_turtlestart_Frame2` | 1 |  |
-| `Ani_Interstitial_fightresult_OK_Dead_Frame177` | 1 |  |
-| `Ani_Cat_throwelement_Frame2` | 1 |  |
-| `Ani_Triceratops_ram_Frame2` | 1 |  |
-| `Ani_EmptyV_dying_Frame2` | 1 |  |
-| `Ani_Cat_sleepEnd_Frame76` | 1 |  |
-| `Ani_AstroZombie_breakleg_Frame71` | 1 |  |
-| `Ani_Spookie_attack_Frame2` | 1 |  |
-| `Ani_Parasiter_walk_Frame26` | 1 |  |
-| `Ani_Triceratops_walk_Frame12` | 1 |  |
-| `Ani_GreyAlien_prime_Frame2` | 1 |  |
-| `Ani_FatWoman_dying2_Frame57` | 1 |  |
-| `Ani_SlotMachine_resultExplode_Frame60` | 1 |  |
-| `Ani_Cat_cannonBallSplash_Frame9` | 1 |  |
-| `Ani_Hemlock_dying_Frame2` | 1 |  |
-| `ProjectileSpawn_SmallRock` | 1 |  |
-| `Ani_Thump_jumpRF_Frame6` | 1 |  |
-| `Ani_Whisperer_whisper_Frame43` | 1 |  |
-| `Ani_Amoeba_walkrock_Frame5` | 1 |  |
-| `Ani_Cat_extendRange_Frame71` | 1 |  |
-| `Ani_BloatRat_dying_Frame2` | 1 |  |
-| `Ani_BungaElite1_dyingCaveMan_Frame10` | 1 |  |
-| `Ani_ThrobbingKing_command2_Frame2` | 1 |  |
-| `Ani_Guillotina1_hitRage_Frame2` | 1 |  |
-| `Ani_JarHead_attack_Frame2` | 1 |  |
-| `Ani_Tremblo_dying_Frame2` | 1 |  |
-| `Ani_Spewer_barf_Frame2` | 1 |  |
-| `Ani_Cat_prouder_Frame2` | 1 |  |
-| `Ani_Zaratana_meteorshower_Frame2` | 1 |  |
-| `Ani_ThrobbingKing_dying_Frame13` | 1 |  |
-| `Ani_ShadeF_attack_Frame36` | 1 |  |
-| `Ani_Guillotina1_jumpattack_Frame59` | 1 |  |
-| `ProjectileHitNothing_MaggotBall` | 1 |  |
-| `Ani_MegaFetus_weakRB_Frame163` | 1 |  |
-| `Ani_BirdLarge_attack_Frame2` | 1 |  |
-| `Ani_Peashy_throwobjectRage_Frame3` | 1 |  |
-| `SE_WeaponShoot_GlassCannon` | 1 |  |
-| `Ani_Cat_celebrate_Frame39` | 1 |  |
-| `Cat_Impact_Furniture_Soft` | 1 |  |
-| `Cat_Jump_From_Floor` | 1 |  |
-| `Cat_Placed_In_Pipe` | 1 |  |
-| `Pop_Poop` | 1 |  |
-| `Cat_Impact_Furniture_Hard` | 1 |  |
-| `Cat_Impact_Floor_Hard` | 1 |  |
-| `Cat_Impact_Floor_Soft` | 1 |  |
-| `Cat_Trashed` | 1 |  |
-| `Cat_Placed_In_Box` | 1 |  |
-| `Cat_Ejected_From_Pipe` | 1 |  |
-| `Cat_Jump_From_Furniture` | 1 |  |
-| `no_falloff` | 1 |  |
-| `Cat_Impact_Lawn_Hard` | 1 |  |
-| `Cat_Donated_To_NPC` | 1 |  |
-| `Cat_Impact_Lawn_Soft` | 1 |  |
-| `Cat_PickedUp` | 1 |  |
-| `midi` | 1 | `alley/eatinrats_midi.mid`, `boneyard/boneyard_midi.mid`, `bunker/bunker_midi.mid`, `caves/caves_midi.mid`, `core/core_midi.mid` |
-| `outros` | 1 |  |
-| `map` | 1 | `alley/eatinrats_map.ogg`, `boneyard/boneyard_map.ogg`, `bunker/bunker_map.ogg`, `caves/caves_map.ogg`, `core/core_map.ogg` |
-| `intros` | 1 |  |
-| `outro` | 1 |  |
-| `songs_only` | 1 |  |
-| `call_letter` | 1 |  |
-| `dj_segment` | 1 |  |
-| `playlist` | 1 | `call_letters`, `commercialbreak`, `commercials`, `segments`, `songs` |
-| `special_playlist` | 1 | `intros`, `outros` |
-| `commercial_intro` | 1 |  |
-| `next` | 1 |  |
-| `commercial` | 1 |  |
-| `transitional` | 1 |  |
-| `song` | 1 |  |
-| `ChestButton_alley_Click` | 1 |  |
-| `EventOutcome_Good_Crit` | 1 |  |
-| `Button_HouseBossResummon_a2h2_Hover` | 1 |  |
-| `InventoryButton_weapon_Hover` | 1 |  |
-| `LoseMana` | 1 |  |
-| `Intro_CatSelected` | 1 |  |
-| `Button_LowerDifficulty_Hover` | 1 |  |
-| `LevelUpScreen_Thief` | 1 |  |
-| `PauseMenu_Open` | 1 |  |
-| `MapZoomerFood_Begin` | 1 |  |
-| `DrawerClose_Stats` | 1 |  |
-| `NPC_Location_Tracy_Open` | 1 |  |
-| `MainMenu_Button_Quit_Press` | 1 |  |
-| `GainDivineShield` | 1 |  |
-| `TimerChallengeCountdown_3` | 1 |  |
-| `Button_HouseBossResummon_a3h2_Click` | 1 |  |
-| `Button_HouseBossResummon_a2h3_Click` | 1 |  |
-| `Ani_EventCat_choice_dex_alt_Frame6` | 1 |  |
-| `SuccessfulEquipItem_face` | 1 |  |
-| `LevelUpScreen_Hunter` | 1 |  |
-| `CurrentTurnIndicator_GoToEnemy` | 1 |  |
-| `SaveFile_TerminateButton_Hover` | 1 |  |
-| `Ani_EventCat_get_hit_Frame2` | 1 |  |
-| `HouseCatVolume_Button_Left_Press` | 1 |  |
-| `MusicVolume_Button_Left_Click` | 1 |  |
-| `Combat_ExamineButton_Click` | 1 |  |
-| `ChestButton_crater_Click` | 1 |  |
-| `EquippedButton_neck_Click` | 1 |  |
-| `Extra_CrowdGasp` | 1 |  |
-| `RunesAppear3` | 1 |  |
-| `Button_PauseMenu_Resume_Press` | 1 |  |
-| `MainMenu_Button_Settings_Hover` | 1 |  |
-| `TransitionExit_CircleTransition` | 1 |  |
-| `DrawerClose_Store` | 1 |  |
-| `Button_PauseMenu_Resume_Hover` | 1 |  |
-| `MasterVolume_Button_Left_Press` | 1 |  |
-| `BeaniesEnding_Banging` | 1 |  |
-| `UISFX_BeaniesAppear` | 1 |  |
-| `LevelUpScreen_Medic` | 1 |  |
-| `HouseCatVolume_Button_Right_Hover` | 1 |  |
-| `Button_HouseBossResummon_a2h1_Hover` | 1 |  |
-| `FurniturePiece_PickedUpFromRoom` | 1 |  |
-| `CurrentTurnIndicator_GoToAlly` | 1 |  |
-| `Button_HouseBossResummon_a1h3_Hover` | 1 |  |
-| `Combat_SpellButton_Hover` | 1 |  |
-| `Button_HouseBossResummon_a1h1_Click` | 1 |  |
-| `UISFX_BeaniesAway` | 1 |  |
 | `AbilityBanner` | 1 |  |
-| `Combat_EndTurnButton_Click` | 1 |  |
-| `Cutscene_AdventureEmbark` | 1 |  |
-| `TransitionExit_BattleInTransition` | 1 |  |
-| `TimerChallengeCountdown_2` | 1 |  |
-| `CombatMessage_Ambushing` | 1 |  |
-| `SelectorWidget_Button_Right_Press` | 1 |  |
-| `Combat_AttackButton_Hover` | 1 |  |
-| `UISFX_EndTurnShow` | 1 |  |
-| `Victory_Cheer5` | 1 |  |
-| `Ani_EventCat_resultBlessingIntroless_Frame5` | 1 |  |
-| `EquippedButton_head_Hover` | 1 |  |
-| `ToggleButton_Off_Click` | 1 |  |
-| `TransitionExit_LevelUpInTransition` | 1 |  |
-| `CombatMessage_Ambushed` | 1 |  |
-| `Ani_EventCat_get_cursed_weapon_Frame2` | 1 |  |
-| `TransitionEnter_ItemInTransition` | 1 |  |
-| `Ani_AdventureReturnEarlyCutscene_Frame340` | 1 |  |
-| `CatSelector_Right_Hover` | 1 |  |
-| `Button_Controls_Gamepad_Hover` | 1 |  |
+| `AbilitySnd_Assassinate` | 1 |  |
+| `AbilitySnd_BoulderDrop` | 1 |  |
 | `AbilityTargetConfirm_Attack` | 1 |  |
-| `Treasure_ExitButton_Click` | 1 |  |
-| `SaveFile_Continue` | 1 |  |
-| `ChestButton_caves_Click` | 1 |  |
-| `SE_SaveFile_HoverTick` | 1 |  |
-| `Combat_SpellButton_Click` | 1 |  |
-| `Screen_FadeOut` | 1 |  |
-| `Screen_FadeIn` | 1 |  |
-| `SFXVolume_Button_Right_Hover` | 1 |  |
-| `FurniturePiece_PickedUpFromDrawer` | 1 |  |
-| `Levelup_Boon_Click` | 1 |  |
-| `CatVolume_Button_Right_Click` | 1 |  |
-| `FurniturePiece_PlacedInRoom` | 1 |  |
-| `MusicVolume_Button_Right_Click` | 1 |  |
-| `Ani_EventCat_choice_cha_Frame5` | 1 |  |
-| `EatFood` | 1 |  |
-| `Button_PauseMenu_GiveUp_Hover` | 1 |  |
-| `TransitionEnter_ItemOutTransition` | 1 |  |
-| `Ani_AdventureReturnCutscene_Frame173` | 1 |  |
-| `Combat_MoveButton_Hover` | 1 |  |
-| `Ani_AdventureReturnEarlyCutscene_Frame79` | 1 |  |
-| `ToggleButton_On_Hover` | 1 |  |
-| `EquippedButton_trinket_Hover` | 1 |  |
-| `ChestButton_junkyard_Click` | 1 |  |
-| `EquippedButton_face_Hover` | 1 |  |
-| `TimerChallengeCountdown_0` | 1 |  |
-| `Button_Settings_Back_Click` | 1 |  |
-| `Button_PauseMenu_QuitToDesktop_Hover` | 1 |  |
-| `SFXVolume_Button_Left_Click` | 1 |  |
-| `LevelUpScreen_Necromancer` | 1 |  |
-| `TransitionEnter_EndDayTransition` | 1 |  |
-| `RunesAppear4` | 1 |  |
-| `DrawerOpen_Storage` | 1 |  |
-| `Map_Node_Click` | 1 |  |
-| `Ani_VSBossIntro_Frame118` | 1 |  |
-| `Ani_EventCat_get_hit_big_Frame2` | 1 |  |
-| `UISFX_ButchHint` | 1 |  |
-| `ToggleButton_Off_Hover` | 1 |  |
-| `Ani_MinibossIntro_Frame280` | 1 |  |
-| `MasterVolume_Button_Right_Hover` | 1 |  |
-| `ChestButton_core_Click` | 1 |  |
-| `ChestButton_theinfinite_Click` | 1 |  |
-| `SelectorWidget_Button_Left_Click` | 1 |  |
-| `TransitionExit_QuickSwipeTransition` | 1 |  |
-| `LevelUpScreen_Monk` | 1 |  |
-| `DrawerOpen_Map` | 1 |  |
-| `SelectorWidget_Button_Left_Press` | 1 |  |
-| `Extra_CrowdMinorGasp` | 1 |  |
-| `ChestButton_theend_Click` | 1 |  |
-| `SaveFile_Hover1` | 1 |  |
-| `Victory_Cheer6` | 1 |  |
-| `MasterVolume_Button_Left_Click` | 1 |  |
-| `MainMenu_Button_Quit_Click` | 1 |  |
-| `TransitionEnter_QuitToMenuTransition` | 1 |  |
-| `ChestButton_moon_Click` | 1 |  |
-| `Button_HouseBossResummon_a1h2_Hover` | 1 |  |
-| `EquippedButton_weapon_Click` | 1 |  |
-| `UISFX_ButchMoveAway` | 1 |  |
-| `MapZoomerFood_End` | 1 |  |
-| `SFXVolume_Button_Left_Press` | 1 |  |
-| `Button_HouseBossResummon_a3h3_Click` | 1 |  |
-| `InventoryButton_head_Click` | 1 |  |
-| `Ani_EventCat_get_item_Frame5` | 1 |  |
-| `EndDay_Sign_Hover` | 1 |  |
-| `Button_Settings_Game_Hover` | 1 |  |
-| `Button_HouseBossResummon_a3h3_Hover` | 1 |  |
-| `MasterVolume_Button_Left_Hover` | 1 |  |
-| `Ani_EventCat_choice_con_Frame8` | 1 |  |
-| `MapCats_Move` | 1 |  |
-| `MainMenu_Button_Settings_Press` | 1 |  |
-| `CatVolume_Button_Left_Hover` | 1 |  |
-| `InventoryButton_Collar_Hover` | 1 |  |
-| `InventoryButton_trinket_Click` | 1 |  |
-| `Paper_Appear` | 1 |  |
-| `EventOutcome_Bad_Crit` | 1 |  |
-| `ActSelect_Choose_1` | 1 |  |
-| `Paper_Away` | 1 |  |
-| `ChestButton_graves_Click` | 1 |  |
-| `StevenRadioIntro` | 1 |  |
-| `Ani_EventCat_resultLeave_Frame13` | 1 |  |
-| `Button_PauseMenu_QuitToMenu_Press` | 1 |  |
-| `Ani_AdventureReturnCutscene_Frame79` | 1 |  |
-| `TransitionEnter_LevelUpOutTransition` | 1 |  |
-| `ChestButton_sewers_Click` | 1 |  |
-| `GainShield` | 1 |  |
-| `ChestButton_iceage_Click` | 1 |  |
-| `Ani_CombatMessage_Defeat_Frame374` | 1 |  |
-| `CloseButton_Click` | 1 |  |
-| `TransitionExit_EventBattleTransition` | 1 |  |
-| `Ani_EventCat_resultWeather_Frame5` | 1 |  |
-| `DrawerOpen_Stats` | 1 |  |
-| `CompleteItemSet` | 1 |  |
-| `EquippedButton_weapon_Hover` | 1 |  |
-| `Button_HouseBossResummon_a2h1_Click` | 1 |  |
-| `Transition_Adventure_Depart` | 1 |  |
-| `TransitionEnter_EventOutTransition` | 1 |  |
-| `Ani_VSBossIntro_Frame281` | 1 |  |
-| `Ani_EventCat_choice_coins_ten_Frame5` | 1 |  |
-| `Event_ExitButton_Click` | 1 |  |
-| `EquippedButton_head_Click` | 1 |  |
-| `TransitionExit_EndDayTransition` | 1 |  |
-| `MapZoomerItem_Begin` | 1 |  |
-| `UISFX_ButchMove` | 1 |  |
-| `Treasure_ExitButton_Hover` | 1 |  |
-| `Button_Controls_Rebind_Hover` | 1 |  |
-| `CombatMessage_VictoryWithRewards` | 1 |  |
-| `SetDifficulty_1` | 1 |  |
-| `Combat_ExamineButton_Hover` | 1 |  |
-| `Event_ExitButton_Hover` | 1 |  |
-| `FurniturePiece_PlacedInDrawer` | 1 |  |
-| `InventoryButton_face_Click` | 1 |  |
-| `TimerChallengeCountdown_5` | 1 |  |
-| `Button_Settings_Game_Press` | 1 |  |
-| `SetDifficulty_3` | 1 |  |
-| `Ani_EventCat_choice_no_coins_Frame5` | 1 |  |
-| `preempt` | 1 |  |
-| `LevelUpScreen_Fighter` | 1 |  |
-| `Extra_EventBadCrit` | 1 |  |
-| `NPC_Location_Open` | 1 |  |
-| `Ani_CombatMessage_Defeat_Frame390` | 1 |  |
-| `ChestButton_jurassic_Click` | 1 |  |
-| `Ani_VSBossIntro_Frame25` | 1 |  |
-| `FurniturePiece_PlacedInAir` | 1 |  |
-| `TransitionExit_LevelUpOutTransition` | 1 |  |
-| `UISFX_ButchMoveHint2` | 1 |  |
-| `ToggleButton_On_Press` | 1 |  |
-| `MainMenu_Button_Quit_Hover` | 1 |  |
-| `NPC_Location_Exit` | 1 |  |
-| `SuccessfulUnequipItem_Collar` | 1 |  |
-| `Button_Controls_Keyboard_Hover` | 1 |  |
-| `ActSelect_Hover_1` | 1 |  |
-| `Ani_EventCat_get_mutation_Frame5` | 1 |  |
-| `Button_HouseBossResummon_a2h3_Hover` | 1 |  |
-| `ChestButton_lab_Click` | 1 |  |
-| `InventoryButton_trinket_Hover` | 1 |  |
-| `SFXVolume_Button_Left_Hover` | 1 |  |
-| `Shop_ExitButton_Hover` | 1 |  |
-| `Button_Settings_Back_Hover` | 1 |  |
-| `LevelUpScreen_Druid` | 1 |  |
-| `TransitionExit_DefendHouseTransition` | 1 |  |
-| `MainMenu_Button_Play_Press` | 1 |  |
-| `HouseCatVolume_Button_Right_Press` | 1 |  |
-| `Shop_BuyButton_Hover` | 1 |  |
-| `SaveFile_TerminateButton_Click` | 1 |  |
-| `ChestButton_future_Click` | 1 |  |
-| `Map_Backpack_Hover` | 1 |  |
-| `TimerChallengeCountdown_4` | 1 |  |
-| `Shop_StealButton_Hover` | 1 |  |
-| `RunesAppear2` | 1 |  |
-| `MusicVolume_Button_Left_Hover` | 1 |  |
-| `CombatMessage_Exhaustion` | 1 |  |
-| `LevelUpScreen_Colorless` | 1 |  |
-| `MasterVolume_Button_Right_Click` | 1 |  |
-| `SE_Zoomer_FoodTone` | 1 |  |
-| `DrawerOpen_Furniture` | 1 |  |
-| `SE_Cintro_Lightning` | 1 |  |
-| `EquippedButton_neck_Hover` | 1 |  |
-| `ControlRebind_Success` | 1 |  |
-| `UISFX_ButchHintDelay1` | 1 |  |
-| `InventoryButton_Collar_Click` | 1 |  |
-| `Intro_LabDisposal` | 1 |  |
-| `HouseThunder` | 1 |  |
-| `actchooser` | 1 |  |
-| `CombatMessage_Defeat` | 1 |  |
-| `Button_HouseBossResummon_a3h2_Hover` | 1 |  |
-| `InventoryButton_neck_Hover` | 1 |  |
-| `TransitionEnter_CircleTransition` | 1 |  |
-| `Steven_Leave` | 1 |  |
-| `SuccessfulEquipItem_Collar` | 1 |  |
-| `Ani_EventCat_get_cursed_item_Frame2` | 1 |  |
-| `Shop_CantAfford` | 1 |  |
-| `Button_Controls_ResetDefault_Hover` | 1 |  |
-| `Shop_ExitButton_Click` | 1 |  |
-| `Victory_Cheer1` | 1 |  |
-| `EventOutcome_Good` | 1 |  |
-| `EatBlessing` | 1 |  |
-| `SaveFile_TerminateButton_Press` | 1 |  |
-| `Ani_BossIntro_Frame60` | 1 |  |
-| `Combat_MoveButton_Click` | 1 |  |
-| `ToggleButton_On_Click` | 1 |  |
-| `TransitionExit_EventInTransition` | 1 |  |
-| `InventoryButton_head_Hover` | 1 |  |
-| `Ani_MinibossIntro_Frame61` | 1 |  |
-| `Ani_EventCat_choice_dex_Frame73` | 1 |  |
-| `DrawerOpen_Store` | 1 |  |
-| `InventoryButton_neck_Click` | 1 |  |
-| `TransitionEnter_BattleInTransition` | 1 |  |
-| `DrawerClose_Storage` | 1 |  |
-| `CombatMessage_Victory` | 1 |  |
-| `FurniturePiece_PickedUpFromAir` | 1 |  |
-| `Victory_Cheer2` | 1 |  |
-| `MainMenu_Button_Meow_Hover` | 1 |  |
-| `Button_RaiseDifficulty_Hover` | 1 |  |
-| `EquippedButton_Collar_Click` | 1 |  |
-| `Button_PauseMenu_Settings_Hover` | 1 |  |
-| `Steven_Appear` | 1 |  |
-| `Button_HouseBossResummon_a3h1_Click` | 1 |  |
-| `Ani_MinibossIntro_Frame115` | 1 |  |
-| `EatScrap` | 1 |  |
-| `CatVolume_Button_Left_Click` | 1 |  |
-| `Victory_Cheer3` | 1 |  |
-| `Shop_BuyItem` | 1 |  |
-| `Button_PauseMenu_GiveUp_Click` | 1 |  |
-| `Button_HouseBossResummon_a1h1_Hover` | 1 |  |
-| `CatVolume_Button_Right_Hover` | 1 |  |
-| `TransitionExit_EventOutTransition` | 1 |  |
-| `PauseMenu_Close` | 1 |  |
-| `Combat_EndTurnButton_Hover` | 1 |  |
-| `MapZoomerCoin_Begin` | 1 |  |
-| `Ani_AdventureEmbarkCutscene_Frame286` | 1 |  |
-| `DrawerMoveTo_Trash` | 1 |  |
-| `Button_Settings_Back_Press` | 1 |  |
-| `SelectorWidget_Button_Left_Hover` | 1 |  |
-| `TransitionEnter_QuickSwipeTransition` | 1 |  |
-| `SFXVolume_Button_Right_Press` | 1 |  |
-| `Ani_EventCat_get_disorder_Frame5` | 1 |  |
-| `Ani_EventCat_resultTragedyIntroless_Frame5` | 1 |  |
-| `Button_HouseBossResummon_a2h2_Click` | 1 |  |
-| `ControlRebind_Failed` | 1 |  |
-| `Ani_EventCat_choice_coins_twentyfive_Frame5` | 1 |  |
-| `MapZoomerCoin_End` | 1 |  |
-| `SE_Cintro_Spaceship` | 1 |  |
-| `Button_Settings_Audio_Hover` | 1 |  |
-| `EatCatnip` | 1 |  |
-| `Button_Settings_Controls_Click` | 1 |  |
-| `Combat_ItemButton_Click` | 1 |  |
-| `TransitionEnter_LevelUpInTransition` | 1 |  |
-| `Map_Node_Hover` | 1 |  |
-| `Ani_CombatMessage_Defeat_Frame377` | 1 |  |
-| `Ani_EventCat_resultConfused_Frame5` | 1 |  |
-| `Combat_AttackButton_Click` | 1 |  |
-| `ChestButton_meatworld_Click` | 1 |  |
-| `Ani_AdventureEmbarkCutscene_Frame5` | 1 |  |
-| `MasterVolume_Button_Right_Press` | 1 |  |
-| `Ani_AdventureEmbarkCutscene_Frame35` | 1 |  |
-| `Combat_PassiveButton_Hover` | 1 |  |
-| `LevelUpScreen_Psychic` | 1 |  |
-| `TransitionExit_ItemInTransition` | 1 |  |
-| `Ani_EventCat_resultTragedy_Frame46` | 1 |  |
-| `Button_RaiseDifficulty_Click` | 1 |  |
-| `Button_LowerDifficulty_Click` | 1 |  |
-| `Ani_EventCat_resultHole_Frame5` | 1 |  |
-| `ChestButton_bunker_Click` | 1 |  |
-| `CombatMessage_BattleStart` | 1 |  |
-| `Button_PauseMenu_QuitToDesktop_Click` | 1 |  |
-| `Button_HouseBossResummon_a1h3_Click` | 1 |  |
-| `delay_range` | 1 |  |
-| `Ani_BossIntro_Frame150` | 1 |  |
-| `Button_HouseBossResummon_a3h1_Hover` | 1 |  |
-| `Button_Settings_Video_Hover` | 1 |  |
-| `ChestButton_desert_Click` | 1 |  |
-| `Depart_Sign_Move` | 1 |  |
-| `Ani_EventCat_choice_misc_Frame7` | 1 |  |
-| `Ani_EventCat_choice_int_Frame2` | 1 |  |
-| `SE_Cintro_Scary` | 1 |  |
-| `MainMenu_Button_Settings_Click` | 1 |  |
-| `Button_Settings_Game_Click` | 1 |  |
-| `Button_PauseMenu_Resume_Click` | 1 |  |
-| `TransitionEnter_ShopInTransition` | 1 |  |
-| `EquippedButton_face_Click` | 1 |  |
-| `GainMana` | 1 |  |
-| `Ani_AdventureReturnEarlyCutscene_Frame173` | 1 |  |
-| `HouseCatVolume_Button_Right_Click` | 1 |  |
-| `Button_Settings_Controls_Press` | 1 |  |
-| `Button_Settings_Audio_Click` | 1 |  |
-| `Combat_ButtonsHide` | 1 |  |
-| `Combat_PassiveButton_Click` | 1 |  |
-| `SFXVolume_Button_Right_Click` | 1 |  |
-| `Button_PauseMenu_Settings_Press` | 1 |  |
-| `MusicVolume_Button_Right_Press` | 1 |  |
-| `EquippedButton_Collar_Hover` | 1 |  |
-| `Ani_EventCat_choice_coins_Frame5` | 1 |  |
-| `LevelUpScreen_Mage` | 1 |  |
-| `LevelUpScreen_Butcher` | 1 |  |
-| `Ani_MinibossIntro_Frame60` | 1 |  |
-| `InventoryButton_face_Hover` | 1 |  |
-| `ChestButton_therift_Click` | 1 |  |
-| `Ani_BossIntro_Frame202` | 1 |  |
-| `LevelUpScreen_Tinkerer` | 1 |  |
-| `ActSelect_Hover_2` | 1 |  |
-| `UISFX_ButchMoveHint` | 1 |  |
 | `AbilityTargetConfirm_Move` | 1 |  |
-| `HouseCatVolume_Button_Left_Click` | 1 |  |
-| `Ani_VSBossIntro_Frame170` | 1 |  |
-| `SE_Cintro_Junk` | 1 |  |
-| `TimerChallengeCountdown_1` | 1 |  |
-| `MainMenu_Button_Play_Click` | 1 |  |
-| `Button_PauseMenu_GiveUp_Press` | 1 |  |
-| `SelectorWidget_Button_Right_Click` | 1 |  |
-| `Ani_EventCat_resultBlessing_Frame5` | 1 |  |
-| `SetDifficulty_2` | 1 |  |
-| `Button_HouseBossResummon_a1h2_Click` | 1 |  |
-| `Combat_ButtonsAppear` | 1 |  |
-| `DrawerClose_Furniture` | 1 |  |
-| `SaveFile_Hover2` | 1 |  |
-| `TransitionEnter_EventInTransition` | 1 |  |
-| `SaveFile_Hover0` | 1 |  |
-| `Button_PauseMenu_Settings_Click` | 1 |  |
-| `CardboardBox_ItemReveal` | 1 |  |
-| `Ani_EventCat_choice_spd_Frame2` | 1 |  |
-| `EndDay_Sign_Click` | 1 |  |
-| `Combat_ItemButton_Hover` | 1 |  |
-| `CatSelector_Left_Hover` | 1 |  |
-| `Depart_Sign_Hover` | 1 |  |
-| `Ani_EventCat_choice_leave_Frame2` | 1 |  |
-| `Event_ChoiceButton_Hover` | 1 |  |
-| `RunesAppear5` | 1 |  |
-| `Ani_AdventureReturnCutscene_Frame340` | 1 |  |
-| `Ani_EventCat_get_weapon_Frame2` | 1 |  |
-| `Ani_EventCat_choice_dex_Frame50` | 1 |  |
-| `ChestButton_alley_Hover` | 1 |  |
-| `ChestButton_tutorial_Click` | 1 |  |
-| `EquippedButton_trinket_Click` | 1 |  |
-| `LevelUpScreen_Jester` | 1 |  |
-| `Ani_CombatMessage_Defeat_Frame199` | 1 |  |
-| `EventOutcome_Bad` | 1 |  |
-| `Button_Settings_Video_Press` | 1 |  |
-| `Event_ChoiceButton_Click` | 1 |  |
-| `TransitionExit_ShopInTransition` | 1 |  |
-| `Button_Settings_Controls_Hover` | 1 |  |
-| `DrawerMoveTo_Storage` | 1 |  |
-| `LevelUpButton_Hover` | 1 |  |
-| `Ani_AdventureEmbarkCutscene_Frame76` | 1 |  |
-| `Victory_Cheer4` | 1 |  |
-| `Ani_EventCat_get_coin_Frame5` | 1 |  |
-| `HouseButton_Hover` | 1 |  |
-| `SelectorWidget_Button_Right_Hover` | 1 |  |
-| `Button_Settings_Video_Click` | 1 |  |
-| `Ani_EventCat_choice_coins_one_Frame6` | 1 |  |
-| `CatSelector_Right_Click` | 1 |  |
-| `Button_PauseMenu_QuitToMenu_Hover` | 1 |  |
-| `SaveFile_New` | 1 |  |
-| `ControlRebind_RemovedBinding` | 1 |  |
-| `MainMenu_Button_Play_Hover` | 1 |  |
 | `AbilityTargetConfirm_Spell` | 1 |  |
-| `TransitionExit_ShopOutTransition` | 1 |  |
-| `Ani_EventCat_choice_lck_Frame3` | 1 |  |
-| `Map_Backpack_Click` | 1 |  |
-| `TransitionExit_DepartTransition` | 1 |  |
-| `TransitionEnter_EventBattleTransition` | 1 |  |
-| `CatVolume_Button_Left_Press` | 1 |  |
-| `MusicVolume_Button_Left_Press` | 1 |  |
-| `CatSelector_Left_Click` | 1 |  |
-| `InventoryButton_weapon_Click` | 1 |  |
-| `LevelUpScreen_Tank` | 1 |  |
-| `TransitionExit_QuitToMenuTransition` | 1 |  |
-| `Button_Settings_Audio_Press` | 1 |  |
-| `Ani_BossIntro_Frame307` | 1 |  |
-| `TransitionExit_ItemOutTransition` | 1 |  |
-| `CatVolume_Button_Right_Press` | 1 |  |
-| `ActSelect_Choose_3` | 1 |  |
-| `ToggleButton_Off_Press` | 1 |  |
-| `MusicVolume_Button_Right_Hover` | 1 |  |
-| `UISFX_ButchHintDelay4` | 1 |  |
-| `SetDifficulty_0` | 1 |  |
-| `HouseCatVolume_Button_Left_Hover` | 1 |  |
-| `TransitionEnter_DefendHouseTransition` | 1 |  |
-| `RunesAppear1` | 1 |  |
-| `Levelup_Boon_Hover` | 1 |  |
-| `Ani_AdventureEmbarkCutscene_Frame48` | 1 |  |
-| `UISFX_ButchHintDelay2` | 1 |  |
-| `MapZoomerItem_End` | 1 |  |
-| `SaveFile_Delete` | 1 |  |
-| `Button_PauseMenu_QuitToMenu_Click` | 1 |  |
-| `TransitionEnter_ShopOutTransition` | 1 |  |
-| `ActSelect_Choose_2` | 1 |  |
-| `CombatMessage_RoundStart` | 1 |  |
-| `Button_PauseMenu_QuitToDesktop_Press` | 1 |  |
-| `DrawerClose_Map` | 1 |  |
-| `Depart_Sign_Click` | 1 |  |
-| `TransitionEnter_DepartTransition` | 1 |  |
-| `ActSelect_Hover_3` | 1 |  |
-| `Hissx` | 1 |  |
-| `Deathx` | 1 |  |
-| `cat_lowquality` | 1 | `true` |
-| `TemporaryItem` | 1 | `BonusAbility`, `TinkererThrow` |
-| `heaviestMelee` | 1 |  |
-| `heavyMelee` | 1 |  |
-| `CurrentWeaponAddPoison` | 1 |  |
-| `requires_empty_trinket` | 1 | `true` |
-| `requires_consumed_trinket` | 1 | `true` |
-| `reverse_target_direction` | 1 | `true` |
-| `minimum_con` | 1 |  |
-| `minimum_spd` | 1 |  |
-| `range_max` | 1 |  |
-| `crit_multiplier_bonus` | 1 |  |
-| `luck_increase` | 1 |  |
-| `extra_coins_per_stack` | 1 |  |
-| `range_min` | 1 |  |
-| `fail_ability` | 1 | `CHuskDropFail`, `LennyStruggleFail`, `XXX` |
-| `damage_cant_be_zero` | 1 | `true` |
-| `manacost_cant_be_zero` | 1 | `true` |
-| `trigger_battle_start` | 1 | `true` |
-| `restructions` | 1 | `aoe_must_exist` |
-| `requires_hp_threshold` | 1 |  |
-| `even_if_cant_reach` | 1 | `true` |
-| `damage_collided_only` | 1 | `true` |
-| `BearTrapTrail` | 1 |  |
-| `permanent` | 1 | `true` |
-| `threshold_expr` | 1 | `item_aux` |
-| `range_symmetry` | 1 | `eight_way` |
-| `can_self_refresh` | 1 | `false` |
-| `stackable` | 1 | `true` |
-| `ignore_self` | 1 | `true` |
-| `cloned_ability` | 1 | `attack` |
-| `can_be_refreshed` | 1 | `false` |
-| `hint_can_target_static` | 1 | `true` |
-| `aoe_display_exclude_restrictions` | 1 | `true` |
-| `data` | 1 |  |
-| `range_excludes_self` | 1 | `false` |
-| `spin_steps` | 1 |  |
-| `full_size` | 1 | `true` |
-| `requires_attack_damage_threshold` | 1 |  |
-| `require_default_size` | 1 | `true` |
-| `reset_percent` | 1 |  |
-| `knockback_modifier` | 1 | `rotate_cw` |
-| `range_bonuses` | 1 | `include_alpha` |
-| `randomize_knockback_direction_except_for_finisher` | 1 | `true` |
-| `DelayedWindTrail` | 1 |  |
-| `include_passives` | 1 | `true` |
-| `appearance` | 1 | `GolemCat` |
-| `PreventDeathTransforms` | 1 |  |
-| `eyebrow2` | 1 |  |
-| `remain_off_map` | 1 | `true` |
-| `change` | 1 |  |
-| `auto_cast_on_spawn` | 1 | `Dash_Enemy` |
-| `ally_priority` | 1 |  |
-| `lingering` | 1 | `true` |
-| `circular_variance` | 1 |  |
-| `uncounterable` | 1 | `true` |
-| `style` | 1 |  |
-| `enemy_priority` | 1 |  |
-| `prioritize_change_direction` | 1 | `true` |
-| `bonk_damage` | 1 |  |
-| `relative` | 1 | `false` |
-| `bonus_pathing_leniency` | 1 |  |
-| `cWaggle` | 1 |  |
-| `same_orientation` | 1 | `true` |
-| `ontrigger_intentional` | 1 | `Lenny_HereKitty` |
-| `clone_referenced_catdata` | 1 | `true` |
-| `cWaggle2x2` | 1 |  |
-| `allow_diagonal_passthrough` | 1 | `true` |
-| `punch_self_ability` | 1 | `Dybbuk_StopHittingYourself` |
-| `slide` | 1 |  |
-| `JumpAttackLeaveBehind` | 1 | `BungaThrone` |
-| `aoe_rotate_around_character_center` | 1 | `true` |
-| `exclude_prefix` | 1 | `Twister` |
-| `stack_scale` | 1 |  |
-| `cWaggle3x3` | 1 |  |
-| `GetAggroTarget` | 1 |  |
-| `corpse_priority` | 1 |  |
-| `banned_abilities` | 1 |  |
-| `force_no_hit_animation` | 1 | `true` |
-| `initial_charge` | 1 |  |
-| `prioritize_throw_target_with_passive` | 1 | `NubbyTossPriority` |
-| `expires_on_move` | 1 | `true` |
-| `expires_on_appliers_turn` | 1 | `true` |
-| `crossfade_speed` | 1 |  |
-| `adjust_target` | 1 | `stalk` |
-| `alt_art` | 1 | `TangledMeat` |
-| `tickdown_this_turn` | 1 | `true` |
-| `enabled_formula` | 1 | `1-X`, `X` |
-| `custom_aoe_mirror` | 1 |  |
-| `requires_weapon` | 1 | `true` |
-| `can_pay_over_multiple_turns` | 1 | `true` |
-| `mirror_custom_aoe` | 1 | `true` |
-| `custom_aoe_util_mirror` | 1 |  |
-| `weather` | 1 |  |
-| `beat_house_boss` | 1 | `any`, `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina` |
-| `unlock_boss` | 1 | `bumblefoot`, `gambit`, `infestedduo`, `jestercat`, `queenhippo` |
-| `trigger_npc_sequence` | 1 | `beanies_begin_accepting_cats`, `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin` |
-| `popup` | 1 |  |
-| `beat_chapter_boss` | 1 | `alley`, `boneyard`, `bunker`, `core`, `crater` |
-| `trigger_npc_sequence_tomorrow` | 1 | `butch_boneyard_intro`, `frank_caves_intro`, `jack_desert_intro`, `organ_boneyard_intro` |
-| `unlock_item` | 1 | `MomsKnife` |
-| `complete_adventure` | 1 | `anywhere` |
-| `reset_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin`, `beanies_bombquest_fail_jarofblood` |
-| `complete_chapter_with_class` | 1 |  |
-| `unlock_ability` | 1 | `BallOfSpiders`, `Bump`, `Ethereal`, `HundredHandSlap`, `HyperBeam` |
-| `complete_checklist_with_class` | 1 | `Butcher`, `Colorless`, `Druid`, `Fighter`, `Hunter` |
-| `requires_unlocked_npc` | 1 | `frank`, `jack`, `tracy` |
-| `unlock_quest_item` | 1 | `BlackShard`, `CryogenicTimeChamber_Empty`, `GuillotinasHead`, `JarOfRadiation`, `Nuke` |
-| `fail_adventure` | 1 | `anywhere` |
-| `unlock_item_immediate` | 1 | `AnointingOil`, `BagOfBags`, `BagOfSeeds`, `BallOfYarn`, `BallPeenHammer` |
-| `fully_complete_difficulty` | 1 |  |
-| `surviving_kaiju` | 1 | `pyrophina`, `zaratana` |
-| `complete_act_difficulty` | 1 |  |
-| `require_mapgen_flag` | 1 | `CoreObeliskUnlocked`, `MoonObeliskUnlocked` |
-| `increment_savefile_counter` | 1 | `GameStat_CountNukeQuestCompletions` |
-| `trigger_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` |
-| `requires_monoclass_run` | 1 | `true` |
-| `unlock_passive` | 1 | `AlphaStrike`, `ArmorSpecialist`, `Bouncer`, `ButchersSoul`, `ClericsSoul` |
-| `preempt_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia` |
-| `finish_quest` | 1 | `JarOfChaos` |
-| `unlock_levelgroup` | 1 | `bigsharklevels` |
-| `requires_hard_path` | 1 | `true` |
-| `visit_chapter` | 1 | `dimensionx`, `future`, `iceage`, `theend` |
-| `require_beat_house_boss` | 1 | `pyrophina`, `zaratana` |
-| `reset_unlock` | 1 | `nuke_quest_begin` |
-| `fail_item_quest` | 1 | `JarOfChaos`, `JarOfRadiatedBlood`, `JarOfRadiation`, `Nuke` |
-| `complete_chapters` | 1 |  |
-| `post_combat_cutscene` | 1 | `obelisk1_core`, `obelisk1_moon`, `obelisk2_core`, `obelisk2_moon` |
-| `repeatable` | 1 | `true` |
-| `unlock_npc_tomorrow` | 1 | `beanies`, `jack`, `steven`, `tracy` |
-| `set_mapgen_flag` | 1 | `BoneyardUnlocked`, `BothObelisksUnlocked`, `BunkerUnlocked`, `CavesUnlocked`, `CoreObeliskUnlocked` |
-| `unlock_act_difficulty` | 1 |  |
-| `unlock_song` | 1 | `alone_in_the_dark`, `angel_wings`, `bolt_of_lightning`, `brush_your_teeth`, `chaos` |
-| `queue_cutscene_immediate` | 1 | `caves_intro`, `core_intro`, `desert_intro`, `dybbuk`, `jurassic_intro` |
-| `consider_aoe` | 1 | `false`, `true` |
-| `flat_cast_bonus` | 1 |  |
-| `buff_self` | 1 |  |
-| `buff_ally` | 1 |  |
-| `debuff_self` | 1 |  |
-| `spawn_object_distance_to_ally` | 1 |  |
-| `consider_secondary_damage` | 1 | `false`, `true` |
-| `heal_self` | 1 |  |
-| `negative_weight_scale` | 1 |  |
-| `debuff_enemy` | 1 |  |
-| `revive_ally_corpse` | 1 |  |
-| `simple` | 1 | `true` |
-| `heal_enemy` | 1 |  |
-| `consider_overkill` | 1 | `false`, `true` |
-| `buff_enemy` | 1 |  |
-| `heal_ally` | 1 |  |
+| `access_to_player_inventory` | 4 | `false`, `true` |
 | `accurate_knockback` | 1 | `false` |
-| `spawn_object` | 1 |  |
-| `damage_enemy` | 1 |  |
-| `damage_ally` | 1 |  |
-| `spend_mana_scale` | 1 |  |
-| `revive_enemy_corpse` | 1 |  |
-| `damage_self` | 1 |  |
-| `damage_enemy_corpse` | 1 |  |
-| `spawn_object_distance_to_enemy` | 1 |  |
-| `damage_ally_corpse` | 1 |  |
-| `debuff_ally` | 1 |  |
-| `consider_total_damage` | 1 | `false`, `true` |
-| `kill_ally` | 1 |  |
-| `kill_enemy` | 1 |  |
-| `spawn_object_preferred_distance` | 1 |  |
-| `tall_grass` | 1 |  |
-| `face_aggro_target` | 1 |  |
-| `face_closest_enemy` | 1 |  |
-| `distance_to_aggro_target` | 1 |  |
-| `danger_avoidance` | 1 |  |
-| `lava` | 1 |  |
-| `exclude_characters_tagged` | 1 | `siren` |
-| `preferred_distance` | 1 | `mov`, `mov+1`, `mov+5`, `mov+reach`, `mov-2` |
-| `cap_total_distance_moved` | 1 |  |
-| `distance_to_water` | 1 |  |
-| `cap_distance_to_ally` | 1 |  |
-| `cap_distance_to_character` | 1 |  |
-| `total_distance_moved` | 1 |  |
-| `distance_to_center` | 1 |  |
-| `cap_distance_to_enemy` | 1 |  |
-| `distance_to_character` | 1 |  |
-| `count_nomove_in_eval` | 1 | `false` |
-| `distance_to_enemy` | 1 |  |
-| `consider_aggro_target_enemy` | 1 | `true` |
-| `randomness` | 1 |  |
-| `distance_to_corpse` | 1 |  |
-| `distance_to_ally` | 1 |  |
-| `quotes` | 1 |  |
-| `frame_label` | 1 | `AlienBeast`, `ColorlessCat_Tutorial`, `DrMangler`, `GirlDino`, `LightningElemental` |
-| `eyes_closed` | 1 |  |
-| `male58` | 1 |  |
-| `male1` | 1 |  |
-| `faceupleft` | 1 |  |
-| `happy` | 1 |  |
-| `male89` | 1 |  |
-| `male120` | 1 |  |
-| `facecenter_right` | 1 |  |
-| `male86` | 1 |  |
-| `male56` | 1 |  |
-| `faceright_back` | 1 |  |
-| `wink` | 1 |  |
-| `male81` | 1 |  |
-| `ears_down_overshoot` | 1 |  |
-| `male107` | 1 |  |
-| `male55` | 1 |  |
-| `female8` | 1 |  |
-| `jester_portrait` | 1 |  |
-| `male7` | 1 |  |
-| `male15` | 1 |  |
-| `female40` | 1 |  |
-| `male135` | 1 |  |
-| `angry` | 1 |  |
-| `bored` | 1 |  |
-| `male32` | 1 |  |
-| `female19` | 1 |  |
-| `female32` | 1 |  |
-| `female25` | 1 |  |
-| `male68` | 1 |  |
-| `male13` | 1 |  |
-| `male112` | 1 |  |
-| `female5` | 1 |  |
-| `faceleft_mouth_open` | 1 |  |
-| `male6` | 1 |  |
-| `female28` | 1 |  |
-| `face_down_wince` | 1 |  |
-| `mouth_open` | 1 |  |
-| `male133` | 1 |  |
-| `male41` | 1 |  |
-| `male91` | 1 |  |
-| `concentrate` | 1 |  |
-| `fighter_portrait` | 1 |  |
-| `male106` | 1 |  |
-| `male125` | 1 |  |
-| `female39` | 1 |  |
-| `face_far_down_right` | 1 |  |
-| `male48` | 1 |  |
-| `male72` | 1 |  |
-| `eyebrow_up` | 1 |  |
-| `yeticat` | 1 |  |
-| `male21` | 1 |  |
-| `terror` | 1 |  |
-| `male17` | 1 |  |
-| `devious` | 1 |  |
-| `insane` | 1 |  |
-| `hunter_portrait` | 1 |  |
-| `female36` | 1 |  |
-| `face_far_down` | 1 |  |
-| `facecenter_happy` | 1 |  |
-| `female21` | 1 |  |
-| `shock` | 1 |  |
-| `dreamworks` | 1 |  |
-| `male27` | 1 |  |
-| `mad` | 1 |  |
-| `male129` | 1 |  |
-| `female24` | 1 |  |
-| `face_far_up_right` | 1 |  |
-| `male88` | 1 |  |
-| `facecenter_happy_overshoot` | 1 |  |
-| `distraught` | 1 |  |
-| `male50` | 1 |  |
-| `male64` | 1 |  |
-| `male102` | 1 |  |
-| `male43` | 1 |  |
-| `facedownright_more` | 1 |  |
-| `ears_up` | 1 |  |
-| `female63` | 1 |  |
-| `facedown_eyes_closed_overshoot` | 1 |  |
-| `male2` | 1 |  |
-| `female42` | 1 |  |
-| `faceupright_supermad` | 1 |  |
-| `poopcat` | 1 |  |
-| `male85` | 1 |  |
-| `female54` | 1 |  |
-| `male25` | 1 |  |
-| `facedownleft` | 1 |  |
-| `female3` | 1 |  |
-| `female18` | 1 |  |
-| `male37` | 1 |  |
-| `female46` | 1 |  |
-| `faceup` | 1 |  |
-| `male131` | 1 |  |
-| `focused` | 1 |  |
-| `male29` | 1 |  |
-| `smile` | 1 |  |
-| `faceupright` | 1 |  |
-| `spidercat` | 1 |  |
-| `male49` | 1 |  |
-| `female61` | 1 |  |
-| `male80` | 1 |  |
-| `female48` | 1 |  |
-| `facedownright` | 1 |  |
-| `male138` | 1 |  |
-| `male11` | 1 |  |
-| `male62` | 1 |  |
-| `female37` | 1 |  |
-| `male34` | 1 |  |
-| `female45` | 1 |  |
-| `male23` | 1 |  |
-| `shake1` | 1 |  |
-| `tank_portrait` | 1 |  |
-| `sad_left` | 1 |  |
-| `shock_left` | 1 |  |
-| `eyebrow_rotation` | 1 |  |
-| `female2` | 1 |  |
-| `happy_eyes_closed` | 1 |  |
-| `ears_right` | 1 |  |
-| `female11` | 1 |  |
-| `male108` | 1 |  |
-| `druid_portrait` | 1 |  |
-| `male122` | 1 |  |
-| `female56` | 1 |  |
-| `male116` | 1 |  |
-| `male5` | 1 |  |
-| `psychic_portrait` | 1 |  |
-| `cough` | 1 |  |
-| `female52` | 1 |  |
-| `faceleft_back` | 1 |  |
-| `female16` | 1 |  |
-| `male90` | 1 |  |
-| `female13` | 1 |  |
-| `futurebot` | 1 |  |
-| `robotom` | 1 |  |
-| `female57` | 1 |  |
-| `face_far_up` | 1 |  |
-| `male63` | 1 |  |
-| `male70` | 1 |  |
-| `petted` | 1 |  |
-| `sad` | 1 |  |
-| `female55` | 1 |  |
-| `male38` | 1 |  |
-| `facecenter_eyes_closed` | 1 |  |
-| `male31` | 1 |  |
-| `male71` | 1 |  |
-| `male59` | 1 |  |
-| `male136` | 1 |  |
-| `female33` | 1 |  |
-| `male74` | 1 |  |
-| `female29` | 1 |  |
-| `male119` | 1 |  |
-| `female53` | 1 |  |
-| `dreamworks2` | 1 |  |
-| `male36` | 1 |  |
-| `male82` | 1 |  |
-| `male83` | 1 |  |
-| `male114` | 1 |  |
-| `smug_left` | 1 |  |
-| `ankylosaurus` | 1 |  |
-| `face_far_left` | 1 |  |
-| `female12` | 1 |  |
-| `faceright` | 1 |  |
-| `happy_left` | 1 |  |
-| `male127` | 1 |  |
-| `female34` | 1 |  |
-| `male105` | 1 |  |
-| `female23` | 1 |  |
-| `male93` | 1 |  |
-| `male4` | 1 |  |
-| `female14` | 1 |  |
-| `one_eye_wink` | 1 |  |
-| `female10` | 1 |  |
-| `male73` | 1 |  |
-| `shake2` | 1 |  |
-| `male87` | 1 |  |
-| `male26` | 1 |  |
-| `male128` | 1 |  |
-| `female43` | 1 |  |
-| `female26` | 1 |  |
-| `faceupleft_eyes_closed` | 1 |  |
-| `male142` | 1 |  |
-| `facecenter_suprise` | 1 |  |
-| `hardblink` | 1 |  |
-| `male54` | 1 |  |
-| `male97` | 1 |  |
-| `raptorbaby` | 1 |  |
-| `male110` | 1 |  |
-| `mage_portrait` | 1 |  |
-| `worried` | 1 |  |
-| `male69` | 1 |  |
-| `male99` | 1 |  |
-| `facecenter_shock` | 1 |  |
-| `female4` | 1 |  |
-| `male45` | 1 |  |
-| `male46` | 1 |  |
-| `facedownleft_eyes_closed` | 1 |  |
-| `male44` | 1 |  |
-| `female49` | 1 |  |
-| `wince` | 1 |  |
-| `male111` | 1 |  |
-| `suprise` | 1 |  |
-| `ear_rotation` | 1 |  |
-| `male141` | 1 |  |
-| `terminator_boss` | 1 |  |
-| `supermad` | 1 |  |
-| `necromancer_portrait` | 1 |  |
-| `butcher_portrait` | 1 |  |
-| `terminator` | 1 |  |
-| `male40` | 1 |  |
-| `male8` | 1 |  |
-| `female27` | 1 |  |
-| `faceup_back` | 1 |  |
-| `male109` | 1 |  |
-| `male113` | 1 |  |
-| `wolfcat` | 1 |  |
-| `male65` | 1 |  |
-| `face_far_right` | 1 |  |
-| `euphoric` | 1 |  |
-| `male28` | 1 |  |
-| `male79` | 1 |  |
-| `male124` | 1 |  |
-| `male12` | 1 |  |
-| `male57` | 1 |  |
-| `dead_facecenter` | 1 |  |
-| `male84` | 1 |  |
-| `male10` | 1 |  |
-| `faceleft` | 1 |  |
-| `facedownright_eyes_closed` | 1 |  |
-| `male66` | 1 |  |
-| `female7` | 1 |  |
-| `female64` | 1 |  |
-| `male39` | 1 |  |
-| `female59` | 1 |  |
-| `faceup_shock` | 1 |  |
-| `female17` | 1 |  |
-| `male53` | 1 |  |
-| `female51` | 1 |  |
-| `male47` | 1 |  |
-| `male101` | 1 |  |
-| `parasaurolophus` | 1 |  |
-| `facedown` | 1 |  |
-| `monk_portrait` | 1 |  |
-| `male118` | 1 |  |
-| `female38` | 1 |  |
-| `real_wink_overshoot` | 1 |  |
-| `facedown_back` | 1 |  |
-| `male100` | 1 |  |
-| `tantrum_cry` | 1 |  |
-| `male35` | 1 |  |
-| `female6` | 1 |  |
-| `male126` | 1 |  |
-| `female9` | 1 |  |
-| `female15` | 1 |  |
-| `mammothbaby` | 1 |  |
-| `medic_portrait` | 1 |  |
-| `facecenter_worried` | 1 |  |
-| `male9` | 1 |  |
-| `face_far_up_left` | 1 |  |
-| `male117` | 1 |  |
-| `thief_portrait` | 1 |  |
-| `female35` | 1 |  |
-| `back` | 1 | `false`, `true` |
-| `female60` | 1 |  |
-| `facedown_eyes_closed` | 1 |  |
-| `male52` | 1 |  |
-| `female62` | 1 |  |
-| `male115` | 1 |  |
-| `happy_up_eyes_closed` | 1 |  |
-| `male95` | 1 |  |
-| `male61` | 1 |  |
-| `male103` | 1 |  |
-| `male132` | 1 |  |
-| `male77` | 1 |  |
-| `male98` | 1 |  |
-| `female44` | 1 |  |
-| `sabertoothcat` | 1 |  |
-| `male33` | 1 |  |
-| `facecenter_hardblink` | 1 |  |
-| `male94` | 1 |  |
-| `male14` | 1 |  |
-| `female1` | 1 |  |
-| `barf` | 1 |  |
-| `smug` | 1 |  |
-| `raptor` | 1 |  |
-| `tinkerer_portrait` | 1 |  |
-| `bloodthirsty_eyes_closed` | 1 |  |
-| `facecenter` | 1 |  |
-| `petted2` | 1 |  |
-| `faceleft_eyes_closed` | 1 |  |
-| `male67` | 1 |  |
-| `scorpioncat` | 1 |  |
-| `male3` | 1 |  |
-| `male22` | 1 |  |
-| `male51` | 1 |  |
-| `male24` | 1 |  |
-| `face_far_left_eyes_closed` | 1 |  |
-| `female31` | 1 |  |
-| `bloodthirsty` | 1 |  |
-| `female50` | 1 |  |
-| `male30` | 1 |  |
-| `real_wink` | 1 |  |
-| `ears_down` | 1 |  |
-| `face_offset` | 1 |  |
-| `female20` | 1 |  |
-| `male20` | 1 |  |
-| `facedownright_focused` | 1 |  |
-| `male42` | 1 |  |
-| `face_left_wince` | 1 |  |
-| `male137` | 1 |  |
-| `verymad` | 1 |  |
-| `barf_prep` | 1 |  |
-| `male76` | 1 |  |
-| `male16` | 1 |  |
-| `male134` | 1 |  |
-| `female58` | 1 |  |
-| `male123` | 1 |  |
-| `female30` | 1 |  |
-| `ears_left` | 1 |  |
-| `male19` | 1 |  |
-| `male130` | 1 |  |
-| `male96` | 1 |  |
-| `face_center` | 1 |  |
-| `male18` | 1 |  |
-| `male60` | 1 |  |
-| `male140` | 1 |  |
-| `ears_up_overshoot` | 1 |  |
-| `male78` | 1 |  |
-| `faceup_eyes_closed` | 1 |  |
-| `facecenter_back` | 1 |  |
-| `female22` | 1 |  |
-| `female41` | 1 |  |
-| `dead_faceleft` | 1 |  |
-| `male139` | 1 |  |
-| `worried_left` | 1 |  |
-| `female47` | 1 |  |
-| `male75` | 1 |  |
-| `male92` | 1 |  |
-| `devious2` | 1 |  |
-| `barf_attack` | 1 |  |
-| `Singlular_Team_EmptyHouse` | 1 |  |
-| `Plural_Team` | 1 |  |
-| `Colorless_Tutorial` | 1 |  |
-| `Jester` | 1 |  |
-| `One_Cat_EmptyHouse` | 1 |  |
-| `Singlular_Team` | 1 |  |
-| `Plural_Team_EmptyHouse` | 1 |  |
-| `One_Cat` | 1 |  |
-| `tutorial` | 1 | `AREA_NAME_TUTORIAL` |
-| `SmallCompletionCheckmarkTooltip` | 1 |  |
-| `major_class_checkmarks` | 1 |  |
-| `map_areas` | 1 |  |
-| `debug` | 1 | `Unknown` |
-| `CompletionCheckmarkTooltip` | 1 |  |
-| `nuke` | 1 | `PlotFlag_FrankBeanies` |
-| `Harpy` | 1 |  |
-| `Eagle` | 1 |  |
-| `Seagull` | 1 |  |
-| `Cherub` | 1 |  |
-| `Raven` | 1 |  |
-| `Dove` | 1 |  |
-| `BlackBird` | 1 |  |
-| `MedBirdPool` | 1 |  |
-| `Pigeon` | 1 |  |
-| `LargeBirdPool` | 1 |  |
-| `SmallBirdPool` | 1 |  |
-| `HummingBird` | 1 |  |
-| `form_unwashed` | 1 | `Unwashed` |
-| `SmallHoldingCat` | 1 |  |
-| `eat_damage` | 1 |  |
-| `character_filter` | 1 |  |
-| `override_hit_animation` | 1 | `true` |
-| `Charging` | 1 |  |
-| `can_be_elite` | 1 | `false` |
-| `Drunker` | 1 |  |
-| `NonCat` | 1 |  |
-| `stable_legs` | 1 |  |
-| `Lifted` | 1 |  |
-| `ignore_tagged_sources` | 1 | `megadino` |
-| `tumor_object` | 1 | `MotherTumor` |
-| `leg_leave` | 1 | `MD_LegLeave` |
-| `considered_forms` | 1 |  |
-| `even_on_0_damage_if_knockback` | 1 | `true` |
-| `do_not_move_on_top` | 1 | `true` |
-| `Standing2` | 1 |  |
-| `Default_Ground` | 1 |  |
-| `mouseover_priority` | 1 |  |
-| `formchange` | 1 | `BigHolding`, `BigHoldingCat`, `SmallHolding`, `SmallHoldingCat` |
-| `Standing` | 1 |  |
-| `Unwashed` | 1 |  |
-| `Hint_CrackedVisuals3` | 1 |  |
-| `MoveOneForPuke` | 1 |  |
-| `SuckMF` | 1 |  |
-| `enemy_dead` | 1 | `bigcheer` |
-| `Cat` | 1 |  |
-| `ally_damage` | 1 | `littleboo` |
-| `cleanse_on_apply` | 1 | `false` |
-| `receive_ani` | 1 | `receive` |
-| `Possessing` | 1 |  |
-| `match_knockback_direction` | 1 | `true` |
-| `face_towards_after` | 1 | `true` |
-| `LastHit` | 1 |  |
-| `Hint_CrackedVisuals` | 1 |  |
-| `auto_cast` | 1 | `Dash_Enemy` |
-| `ignore_tiles` | 1 | `true` |
-| `Sitting` | 1 |  |
-| `Nothing` | 1 |  |
-| `SmallHolding` | 1 |  |
-| `Nuke` | 1 |  |
-| `Default_Ceiling` | 1 |  |
-| `pass_ani` | 1 | `pass` |
-| `forward_only` | 1 | `true` |
-| `Insane_Ceiling` | 1 |  |
-| `can_move_zero` | 1 | `true` |
-| `Hint_CrackedVisuals2` | 1 |  |
-| `grow_ability` | 1 | `MotherTumorGrow` |
-| `Start_Ceiling` | 1 |  |
-| `reset_pattern_on_round_begin` | 1 | `true` |
-| `Escape` | 1 |  |
-| `form_washed` | 1 | `Washed` |
-| `move_short` | 1 | `true` |
-| `head_drop` | 1 | `MD_HeadDrop` |
-| `ally_dead` | 1 | `bigboo` |
-| `Bully` | 1 |  |
-| `Insane_Ground` | 1 |  |
-| `BigHoldingCat` | 1 |  |
-| `Flop2` | 1 |  |
-| `leg_return` | 1 | `MD_LegReturn` |
-| `Washed` | 1 |  |
-| `Flop` | 1 |  |
-| `BigHolding` | 1 |  |
-| `enemy_damage` | 1 | `littlecheer` |
-| `self_move_exclude_self_abilities` | 1 | `true` |
-| `pop_chance` | 1 |  |
-| `MoveTowards` | 1 |  |
-| `do_priority_alternating` | 1 |  |
-| `spell` | 1 | `MCHadouken` |
-| `MoveForPounce` | 1 |  |
-| `OneAlive` | 1 |  |
-| `TwoAlive` | 1 |  |
-| `NCGravecrawlFAR` | 1 |  |
-| `allow_decision_mid_turn` | 1 | `true` |
-| `legacy_savekey` | 1 | `Legacy_Marshmallow_StolenCatID` |
-| `AllAlive` | 1 |  |
-| `DesireMech` | 1 |  |
-| `CloseConvert` | 1 |  |
-| `count_shield` | 1 | `true` |
-| `Turtle` | 1 |  |
-| `Bear` | 1 |  |
-| `Snake` | 1 |  |
-| `Toad` | 1 |  |
-| `Squirrel` | 1 |  |
-| `view_bugs_as_enemies` | 1 | `true` |
-| `Catepillar` | 1 |  |
-| `without_orienting` | 1 | `true` |
-| `melee_ability_only` | 1 | `true` |
-| `Fuck` | 1 |  |
-| `Grown` | 1 |  |
-| `blind_spot` | 1 | `true` |
-| `must_target_killer` | 1 | `true` |
-| `randomize_pattern_start` | 1 | `true` |
-| `Off` | 1 |  |
-| `Out` | 1 |  |
-| `alt_dead_ani` | 1 | `off` |
-| `LeapClose` | 1 |  |
-| `Open` | 1 |  |
-| `target_furthest_valid` | 1 | `true` |
-| `TF_TargetAllies` | 1 |  |
-| `ZealotBomb` | 1 |  |
-| `WereMan` | 1 |  |
-| `TF_TargetEnemies` | 1 |  |
-| `Bishop` | 1 |  |
-| `statuses_on_enter_form` | 1 |  |
-| `Empty` | 1 |  |
-| `Explody` | 1 |  |
-| `move_then_do_priority` | 1 |  |
-| `CaveWoman` | 1 |  |
-| `BoneWormShotSmall` | 1 |  |
-| `Unflip` | 1 |  |
-| `HasRock` | 1 |  |
-| `ReturnA` | 1 |  |
-| `Shit` | 1 |  |
-| `form_out` | 1 | `Out` |
-| `CaveManSpear` | 1 |  |
-| `threshold_min` | 1 | `X` |
-| `ForceTrample` | 1 |  |
-| `Dumb` | 1 |  |
-| `CaveMan` | 1 |  |
-| `Damaged` | 1 |  |
-| `Full` | 1 |  |
-| `Primed` | 1 |  |
-| `TVBotDumb` | 1 |  |
-| `hint_no_corpse` | 1 | `true` |
-| `Stop` | 1 |  |
-| `Zealot` | 1 |  |
-| `SpearRun` | 1 |  |
-| `alt_dying_ani` | 1 | `shutdown` |
-| `TVBotStop` | 1 |  |
-| `OpenCat` | 1 |  |
-| `MoveForGrass` | 1 |  |
-| `DashRandomly` | 1 |  |
-| `sync_brain_patterns` | 1 | `true` |
-| `Obey` | 1 |  |
-| `FoodMove` | 1 |  |
-| `form_in` | 1 | `Water` |
-| `wait_till_turn` | 1 | `true` |
-| `once_per_turn` | 1 | `true` |
-| `aura_requires_tag` | 1 | `humanoid` |
-| `Attacker` | 1 |  |
-| `TVBotDie` | 1 |  |
-| `TVBotObey` | 1 |  |
-| `Cultist` | 1 |  |
-| `Guarding` | 1 |  |
-| `CaveBaby` | 1 |  |
-| `consume` | 1 | `true` |
-| `HumanDead` | 1 |  |
-| `Bomb` | 1 |  |
-| `verify_target` | 1 | `true` |
-| `two_fronts` | 1 | `true` |
-| `Close` | 1 |  |
-| `target_killer` | 1 | `true` |
-| `CaveWomanHasCat` | 1 |  |
-| `two_fronts_switch` | 1 | `true` |
-| `Washer` | 1 |  |
-| `Unmounted` | 1 |  |
-| `eject_ability` | 1 | `MechSuitEject` |
-| `never_hit_ally_corpses` | 1 | `true` |
-| `ai_if_spawned_as_enemy` | 1 |  |
-| `CharmedFloater` | 1 |  |
-| `enter_ability` | 1 | `EnterMech` |
-| `CharmedDip` | 1 |  |
-| `CharmedPile` | 1 |  |
-| `include_coins` | 1 | `true` |
-| `Mounted` | 1 |  |
-| `queue` | 1 | `TheChild_TargetBeam` |
-| `Explosive` | 1 | `MegaGuppy_TransformExplosive` |
-| `teleport_tracking_halflife` | 1 |  |
-| `even_on_0_damage` | 1 | `true` |
-| `reset_center_because_no_target_halflife` | 1 |  |
-| `allow_offmap_corpse` | 1 | `true` |
-| `transform` | 1 | `TheChild_TransformBoris` |
-| `SwordAndShield` | 1 |  |
-| `even_if_blocked` | 1 | `true` |
-| `other_character` | 1 | `MegaGuppy` |
-| `other_form_change_abilities` | 1 |  |
-| `check_has_status` | 1 | `FinalBossHitCountdownBoris` |
-| `tracking_acquisition_halflife` | 1 |  |
-| `look_at_offset` | 1 |  |
-| `release` | 1 | `TheChild_ReleaseBeams` |
-| `SwordAndShield_Primed` | 1 |  |
-| `show_name` | 1 | `true` |
-| `reset_center_because_of_animation_halflife` | 1 |  |
-| `state_health` | 1 |  |
-| `DualSword_Primed` | 1 |  |
-| `icon_ready` | 1 |  |
-| `virtual_head_position` | 1 |  |
-| `break_ability` | 1 | `DestroyerBreakShield` |
-| `disallow_items` | 1 | `Nuke`, `all` |
-| `champion` | 1 | `true` |
-| `elite` | 1 | `true` |
-| `Boris` | 1 | `MegaGuppy_TransformBoris` |
-| `DualSword` | 1 |  |
-| `MouthFull` | 1 |  |
-| `MoveToHead` | 1 |  |
-| `Holding` | 1 |  |
-| `BellyFull` | 1 |  |
-| `no_buddy` | 1 | `Rage` |
-| `also_use_if_buddy_is_dead` | 1 | `true` |
-| `DemonicGlyph_Bite` | 1 |  |
-| `always_face_forward` | 1 | `true` |
-| `DemonicGlyph_Movement` | 1 |  |
-| `Lit` | 1 |  |
-| `DemonicGlyph_Bounce` | 1 |  |
-| `SlotResult_Jackpot_Coins` | 1 |  |
-| `BlackHole` | 1 |  |
-| `inanimate_can_receive_specific_statuses` | 1 |  |
-| `deferred` | 1 | `true` |
-| `speculative_inanimate` | 1 | `false` |
-| `DemonicGlyph_Fire` | 1 |  |
-| `hot` | 1 |  |
-| `tile_desire_cost` | 1 |  |
-| `SlotResult_Explode` | 1 |  |
-| `dice_size` | 1 |  |
-| `DemonicGlyph_Summon` | 1 |  |
-| `clipname` | 1 | `poopmain` |
-| `knockback_damage` | 1 |  |
-| `NeutronStar` | 1 |  |
-| `SlotResult_RandomPickup` | 1 |  |
-| `additional_statuses` | 1 |  |
-| `exit_animations` | 1 |  |
-| `SlotResult_Nothing` | 1 |  |
-| `GuaranteedJackpot` | 1 |  |
-| `Grappling` | 1 |  |
-| `Unlit` | 1 |  |
-| `displace` | 1 | `true` |
-| `MoveForThrow` | 1 |  |
-| `RunFar` | 1 |  |
-| `must_start_facing_camera` | 1 | `false` |
-| `buddy_damage_only` | 1 | `true` |
-| `Turtled` | 1 |  |
-| `do_one` | 1 |  |
-| `MoveForSpin` | 1 |  |
-| `MoveForBarrage` | 1 |  |
-| `damage_threshold` | 1 |  |
-| `CerberubsJumpNormal` | 1 |  |
-| `TarFull` | 1 |  |
-| `NormalFull` | 1 |  |
-| `Alert` | 1 |  |
-| `Tar` | 1 |  |
-| `Joystick` | 1 |  |
-| `round_start_bonusturn_pattern` | 1 |  |
-| `TwoEyes` | 1 |  |
-| `reclaim_if_lost` | 1 | `true` |
-| `OneEye` | 1 |  |
-| `not_on_kill` | 1 | `true` |
-| `default_form` | 1 | `Normal` |
-| `HasDeadCat` | 1 |  |
-| `CerberubsJumpBlind` | 1 |  |
-| `post_absorb_move_weights` | 1 | `minimum_move` |
-| `FireFull` | 1 |  |
-| `NoStick` | 1 |  |
-| `NoEyes` | 1 |  |
-| `MoveForDash` | 1 |  |
-| `Headless` | 1 |  |
-| `alert_form` | 1 | `Alert` |
-| `NoDeathRattle` | 1 |  |
-| `dice_abilities` | 1 |  |
-| `move_then_do_all` | 1 |  |
-| `HalfDead` | 1 |  |
-| `roll_ability` | 1 | `RollDice` |
-| `ignore_mouseover` | 1 | `true` |
-| `static` | 1 | `true` |
-| `sound_event` | 1 | `EatAntidote` |
-| `Scrap` | 1 |  |
-| `pickup_type` | 1 |  |
-| `Coin4` | 1 |  |
-| `RandomArmorPickup` | 1 |  |
-| `RandomBiggerFoodPickup` | 1 |  |
-| `Coin3` | 1 |  |
-| `Coin` | 1 |  |
-| `MedScrap` | 1 |  |
-| `RandomBiggerCatnipPickup` | 1 |  |
-| `BigFood` | 1 |  |
-| `Coin2` | 1 |  |
-| `RandomFoodPickup` | 1 |  |
-| `BigScrap` | 1 |  |
-| `RandomCatnipPickup` | 1 |  |
-| `Coin10` | 1 |  |
-| `Blessing` | 1 |  |
-| `BiggestFood` | 1 |  |
-| `anything_eats` | 1 | `true` |
-| `BigCatnip` | 1 |  |
-| `MedCatnip` | 1 |  |
-| `force_frame` | 1 |  |
-| `frame_range` | 1 |  |
-| `RandomBiggerArmorPickup` | 1 |  |
-| `stored_food_value` | 1 |  |
-| `allow_flying_effect` | 1 | `true` |
-| `uncapturable` | 1 | `false`, `true` |
-| `capture_as_cat` | 1 | `true` |
-| `catdata_ignore_skills` | 1 | `true` |
-| `ThrobBubs` | 1 |  |
-| `Flush` | 1 |  |
-| `ThrobHost` | 1 |  |
-| `passives_health_threshold` | 1 |  |
-| `JohnnyHost` | 1 |  |
-| `ThrobNettle` | 1 |  |
-| `JohnnyBubs` | 1 |  |
-| `FlushBubs` | 1 |  |
-| `passive_pieces` | 1 |  |
-| `FlushNettle` | 1 |  |
-| `Throb` | 1 |  |
-| `Johnny` | 1 |  |
-| `new_music` | 1 | `chaos_boss_part2` |
-| `OffScreen` | 1 |  |
-| `FlushHost` | 1 |  |
-| `JohnnyNettle` | 1 |  |
-| `active_pieces` | 1 |  |
-| `animation_prefix` | 1 | `RattleSnake` |
-| `InitialPhase` | 1 |  |
-| `FightPhase` | 1 |  |
-| `SpawningPhase` | 1 |  |
-| `Pulp2` | 1 |  |
-| `groups` | 1 |  |
-| `Transformed` | 1 |  |
-| `spell_use_groups` | 1 |  |
-| `Pulp6` | 1 |  |
-| `do_best_multiple` | 1 |  |
-| `MoveSpaced` | 1 |  |
-| `first_turn_is_main_turn` | 1 | `true` |
-| `hidden_tags` | 1 | `terminator_mini` |
-| `Pulp4` | 1 |  |
-| `Pulp3` | 1 |  |
-| `Pulp5` | 1 |  |
-| `Pulp7` | 1 |  |
-| `allow_replacebrain` | 1 | `false` |
-| `aggro_target_is_enemy` | 1 | `true` |
-| `MonkStances` | 1 |  |
-| `innate_items` | 1 |  |
-| `innate_passives` | 1 |  |
-| `tutorial_levelup_passive_pool` | 1 |  |
-| `complicated_abilities` | 1 |  |
-| `move_pool` | 1 |  |
-| `tutorial_levelup_active_pool_2` | 1 |  |
-| `tutorial_levelup_active_pool` | 1 |  |
-| `complicated_passives` | 1 |  |
-| `food_bonus` | 1 |  |
-| `chapters` | 1 |  |
-| `consumable_chance` | 1 |  |
-| `item_chance` | 1 |  |
-| `coins_bonus` | 1 |  |
-| `food` | 1 |  |
-| `righteye` | 1 |  |
-| `claws` | 1 |  |
-| `default_frame` | 1 |  |
-| `rightear` | 1 |  |
-| `leftear` | 1 |  |
-| `lefteye` | 1 |  |
-| `lefteyebrow` | 1 |  |
-| `class_anis` | 1 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` |
-| `righteyebrow` | 1 |  |
-| `outline_color` | 1 | `white` |
-| `back_icon` | 1 | `bleed`, `burn`, `confusion`, `knockback`, `leech` |
-| `right_icon` | 1 | `coin`, `divineshield`, `heal`, `mana`, `shield` |
-| `suffix` | 1 | `!!!` |
-| `bonus_itemroll_luck` | 1 |  |
-| `elite_buffs` | 1 |  |
-| `champ_chance_mini` | 1 |  |
-| `elite_budget` | 1 |  |
-| `coins_multiplier` | 1 |  |
-| `boss_health_multiplier` | 1 |  |
-| `champ_budget` | 1 |  |
-| `rare_elite_buffs` | 1 |  |
-| `food_multiplier` | 1 |  |
-| `event_difficulty` | 1 |  |
-| `elite_chance_mini` | 1 |  |
-| `wallet_size` | 1 |  |
-| `boss_elite_buffs` | 1 |  |
-| `requires_corpse` | 1 | `true` |
-| `has_parasite` | 1 | `true` |
-| `pull` | 1 |  |
-| `communicate` | 1 |  |
-| `remove_the_nail` | 1 |  |
-| `traverse` | 1 |  |
-| `pilfer` | 1 |  |
-| `bite_it_off` | 1 |  |
-| `yank_it_out` | 1 |  |
-| `holy` | 1 |  |
-| `double` | 1 |  |
-| `counter` | 1 |  |
-| `skip` | 1 |  |
-| `thorns` | 1 |  |
-| `brace` | 1 |  |
-| `hp` | 1 |  |
-| `reflect` | 1 |  |
-| `different_from_last_x_cats` | 1 |  |
-| `read` | 1 |  |
-| `break_lock` | 1 |  |
-| `pick_lock` | 1 |  |
-| `comfort` | 1 |  |
-| `kiss_meat` | 1 |  |
-| `cat_has_item_slot_equipped` | 1 | `weapon` |
-| `eat_meat` | 1 |  |
-| `choose_cat_with_item_slot_equipped` | 1 | `weapon` |
-| `patch_up` | 1 |  |
-| `remove` | 1 |  |
-| `put_out_of_misery` | 1 |  |
-| `keep_going` | 1 |  |
-| `damage_full` | 1 |  |
-| `push_through` | 1 |  |
-| `damage_half` | 1 |  |
-| `damage_1` | 1 |  |
-| `crack_open` | 1 |  |
-| `enter_crater` | 1 |  |
-| `jump_over` | 1 |  |
-| `side` | 1 | `enemies` |
-| `lick_alt` | 1 |  |
-| `fallback_spawn` | 1 |  |
-| `chaos_ending` | 1 |  |
-| `donate` | 1 |  |
-| `receive` | 1 |  |
-| `timemachine` | 1 |  |
-| `desert_cutscene` | 1 |  |
-| `altar_sacrifice` | 1 |  |
-| `chapter_cutscene` | 1 |  |
-| `knife` | 1 |  |
-| `upgrade_yourself` | 1 |  |
-| `teleport` | 1 |  |
-| `hack` | 1 |  |
-| `put_in_coins` | 1 |  |
-| `purify` | 1 |  |
-| `shake` | 1 |  |
-| `break_ice` | 1 |  |
-| `revive` | 1 |  |
-| `arm` | 1 |  |
-| `cut_wires` | 1 |  |
-| `leg` | 1 |  |
-| `slip_through` | 1 |  |
-| `dig` | 1 |  |
-| `cross` | 1 |  |
-| `red_needle` | 1 |  |
-| `yellow_needle` | 1 |  |
-| `push_buttons` | 1 |  |
-| `blue_needle` | 1 |  |
-| `pull_lever` | 1 |  |
-| `find` | 1 |  |
-| `scream` | 1 |  |
-| `jump` | 1 |  |
-| `catch` | 1 |  |
-| `dexcheck` | 1 |  |
-| `cat_has_injury_count_min` | 1 |  |
-| `throw` | 1 |  |
-| `join` | 1 |  |
-| `sweet_talk` | 1 |  |
-| `choose_cat_with_most_injuries` | 1 | `true` |
-| `rest` | 1 |  |
-| `challenge_to_game` | 1 |  |
-| `swim` | 1 |  |
-| `intcheck` | 1 |  |
-| `run_again` | 1 |  |
-| `climb` | 1 |  |
-| `concheck` | 1 |  |
-| `talk_to` | 1 |  |
-| `listen` | 1 |  |
-| `disarm` | 1 |  |
-| `bash_past_alt` | 1 |  |
-| `bribe` | 1 |  |
-| `charm_past_alt` | 1 |  |
-| `talk` | 1 |  |
-| `sneak_past_alt` | 1 |  |
-| `reach_inside` | 1 |  |
-| `choose_cat_with_parasite` | 1 | `true` |
-| `book` | 1 |  |
-| `red` | 1 |  |
-| `donate_5` | 1 |  |
-| `buy1` | 1 |  |
-| `tappytoes` | 1 |  |
-| `boogers` | 1 |  |
-| `button` | 1 |  |
-| `itchies` | 1 |  |
-| `blue` | 1 |  |
-| `wheezies` | 1 |  |
-| `follow` | 1 |  |
-| `cat_has_parasite` | 1 | `true` |
-| `pirouette` | 1 |  |
-| `nothanks` | 1 |  |
-| `protection` | 1 |  |
-| `buy3` | 1 |  |
-| `fixed_chance` | 1 |  |
-| `poop` | 1 |  |
-| `intimidation` | 1 |  |
-| `donate_10` | 1 |  |
-| `buy2` | 1 |  |
-| `give_parasite` | 1 |  |
-| `makeup` | 1 |  |
-| `surprise` | 1 |  |
-| `donate_20` | 1 |  |
-| `lever` | 1 |  |
-| `donate_15` | 1 |  |
-| `loot_heart` | 1 |  |
-| `fiddle` | 1 |  |
-| `attach_leech` | 1 |  |
-| `sacrifice_partial_favor` | 1 |  |
-| `repair_quest` | 1 |  |
-| `take_blood` | 1 |  |
-| `infinite` | 1 |  |
-| `place_gristle` | 1 |  |
-| `sacrifice_full_favor` | 1 |  |
-| `fill_jar` | 1 |  |
-| `attach_antenna` | 1 |  |
-| `hint_chapter_exit` | 1 | `dimensionx`, `endoftime`, `future`, `home`, `iceage` |
-| `attach_amplifier` | 1 |  |
-| `sacrifice_normal` | 1 |  |
+| `act` | 1 |  |
+| `act_points` | 17 |  |
+| `actchooser` | 1 |  |
 | `activate_p` | 1 |  |
 | `activate_z` | 1 |  |
-| `choose_cat_with_item` | 1 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `PutridLeech`, `ReceiverAntenna`, `ThrobbingGristle` |
-| `sacrifice_quest` | 1 |  |
-| `past` | 1 |  |
-| `mind` | 1 |  |
-| `wealth` | 1 |  |
-| `print` | 1 |  |
-| `pull_it_out` | 1 |  |
-| `soul` | 1 |  |
-| `wish_genes` | 1 |  |
-| `copy` | 1 |  |
-| `wish_levelups` | 1 |  |
-| `wish_items` | 1 |  |
-| `subject_frame_inner` | 1 |  |
-| `power` | 1 |  |
-| `repell` | 1 |  |
-| `leave_it_in` | 1 |  |
-| `withstand` | 1 |  |
-| `wish_strength` | 1 |  |
-| `looks` | 1 |  |
-| `use_item` | 1 |  |
-| `use_toilet_con` | 1 |  |
-| `flush_yourself` | 1 |  |
-| `dive` | 1 |  |
-| `use_toilet_str` | 1 |  |
-| `run_away` | 1 |  |
-| `sneak_by` | 1 |  |
-| `weather_roll` | 1 |  |
-| `w1` | 1 |  |
-| `w6` | 1 |  |
-| `w4` | 1 |  |
-| `outsmart` | 1 |  |
-| `w2` | 1 |  |
-| `choose_cat_with_highest_stat` | 1 | `int` |
-| `w5` | 1 |  |
-| `w3` | 1 |  |
-| `rub` | 1 |  |
-| `can_be_rare` | 1 | `false` |
-| `FoodStorage` | 1 |  |
-| `FightBonusRewards` | 1 |  |
-| `Health` | 1 |  |
-| `removed` | 1 | `true` |
-| `FightRisk` | 1 |  |
-| `BreedSuppression` | 1 |  |
-| `Evolution` | 1 |  |
-| `ButchBox` | 1 |  |
-| `Basement0` | 1 |  |
-| `width` | 1 |  |
-| `House3` | 1 |  |
-| `movieclip_fg` | 1 | `HouseForeground1`, `HouseForeground2`, `HouseForeground3` |
-| `prereq` | 1 | `BasementUpgrade`, `BasementUpgrade2`, `BasementUpgrade3`, `BasementUpgrade4`, `Default` |
-| `Basement4` | 1 |  |
-| `movieclip_bg` | 1 | `HouseBackground1`, `HouseBackground2`, `HouseBackground3` |
-| `Roof_RightEdge` | 1 |  |
-| `Floor2_Large` | 1 |  |
-| `interstitial_bg_frame` | 1 | `attic`, `room1`, `room2`, `room3`, `room4` |
-| `BasementUpgrade3` | 1 |  |
-| `zoomout_catvolume` | 1 |  |
-| `LargeHouse` | 1 |  |
-| `Floor1_Small` | 1 |  |
-| `Floor1_Large` | 1 |  |
-| `reverb_full` | 1 |  |
-| `Basement2` | 1 |  |
-| `SmallHouse_Attic` | 1 |  |
-| `House2` | 1 |  |
-| `MediumHouse` | 1 |  |
-| `built_in_collision` | 1 |  |
-| `bg_placements_frame` | 1 | `large`, `small` |
-| `SmallAttic` | 1 |  |
-| `extra_bound_planes` | 1 |  |
-| `aux_positions` | 1 |  |
-| `Basement3` | 1 |  |
-| `LargeHouse_Floor2Large` | 1 |  |
-| `BasementUpgrade5` | 1 |  |
-| `Roof_LeftEdge` | 1 |  |
-| `BasementUpgrade2` | 1 |  |
-| `BasementUpgrade` | 1 |  |
-| `LargeAttic` | 1 |  |
-| `room_positions` | 1 |  |
-| `set_house` | 1 | `House1`, `House2`, `House3` |
-| `BasementUpgrade4` | 1 |  |
-| `Roof_Top` | 1 |  |
-| `unlock_room` | 1 | `Attic`, `Basement0`, `Basement1`, `Basement2`, `Basement3` |
-| `Basement1` | 1 |  |
-| `Floor2_Small` | 1 |  |
-| `HousePipe` | 1 |  |
-| `House1` | 1 |  |
-| `StraySpawn` | 1 |  |
-| `LargeHouse_Floor2Small` | 1 |  |
-| `MediumHouse_SmallRoom` | 1 |  |
-| `reverb_empty` | 1 |  |
-| `savefile_string` | 1 | `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3`, `SAVE_FILE_FIGHT_HOUSEBOSS_KAIJUFIGHT`, `SAVE_FILE_FIGHT_HOUSEBOSS_PYROPHINA` |
-| `ending_cutscene2` | 1 | `credits_3` |
-| `music` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
-| `rematch_cutscene_night` | 1 | `house_boss_returns_t1`, `house_boss_returns_t2`, `house_boss_returns_t3`, `house_boss_returns_tina1`, `house_boss_returns_tina2` |
-| `rematch_cooldown` | 1 |  |
-| `arrival_unlock` | 1 | `npc_houseboss_intro_guillotina_1`, `npc_houseboss_intro_guillotina_2`, `npc_houseboss_intro_guillotina_3`, `npc_houseboss_intro_pyrophina`, `npc_houseboss_intro_pyrophina_vs_zaratana` |
-| `index` | 1 |  |
-| `rematch_cutscene_day` | 1 | `house_boss_returns_kaijufight`, `house_boss_returns_pyro`, `house_boss_returns_zara` |
-| `ending_cutscene` | 1 | `hitler_end` |
-| `act` | 1 |  |
-| `lead_time` | 1 |  |
-| `initial_cutscene_night` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `hitler_intro`, `t1000_intro` |
-| `initial_cutscene_day` | 1 | `kaiju_fight`, `moonboss_intro`, `pyro_intro` |
-| `initial_cooldown` | 1 |  |
-| `Thunderstorm` | 1 |  |
-| `lightning_fx` | 1 | `true` |
-| `skybox_frame` | 1 | `day_rain`, `day_snow`, `day_thunderstorm`, `day_windy` |
-| `prewarm` | 1 |  |
-| `particles` | 1 |  |
-| `adventure_weather` | 1 | `Rain`, `Snow`, `Thunderstorm`, `Windy` |
-| `deathsound` | 1 | `Injury_Bleed`, `Injury_BrokenLeg`, `Injury_BrokenPaw`, `Injury_BrokenRib`, `Injury_Burn` |
-| `limbs` | 1 |  |
-| `scars` | 1 |  |
-| `WeirdEgg` | 1 |  |
-| `chapter_common` | 1 |  |
-| `RavenFeather` | 1 |  |
-| `BirdPoopHat` | 1 |  |
-| `MagicSeed` | 1 |  |
-| `LostSoul` | 1 |  |
-| `HarpysClaw` | 1 |  |
-| `Parousworm` | 1 |  |
-| `TieDyeBandana` | 1 |  |
-| `GlowingSeed` | 1 |  |
-| `PeaceSymbol` | 1 |  |
-| `chapter_rare` | 1 |  |
-| `RaptorEgg` | 1 |  |
-| `WishBone` | 1 |  |
-| `DeadHummingbird` | 1 |  |
-| `PeaceSymbolFacePaint` | 1 |  |
-| `BirdFeed` | 1 |  |
-| `BagOfSeeds` | 1 |  |
-| `GoldenEgg` | 1 |  |
-| `consumables_consumable_uncommon` | 1 |  |
-| `consumables_consumable_rare` | 1 |  |
-| `FoodMedium` | 1 |  |
-| `consumables_consumable_common` | 1 |  |
-| `CatnipBig` | 1 |  |
-| `pills` | 1 |  |
-| `FoodBig` | 1 |  |
-| `consumables_consumable_very_rare` | 1 |  |
-| `current_chapter_common` | 1 | `auto` |
-| `general_very_rare` | 1 | `auto` |
-| `shop_common` | 1 |  |
-| `general_rare` | 1 | `auto` |
-| `current_chapter_very_rare` | 1 | `auto` |
-| `current_chapter_rare` | 1 | `auto` |
-| `consumables` | 1 |  |
-| `general_common` | 1 | `auto` |
-| `general_uncommon` | 1 | `auto` |
-| `current_chapter_uncommon` | 1 | `auto` |
-| `end_of_round` | 1 | `true` |
-| `shield_only` | 1 | `true` |
-| `pieces_required` | 1 |  |
-| `max_health` | 1 |  |
-| `weightless` | 1 | `true` |
-| `except_tiny` | 1 | `true` |
-| `must_do_damage` | 1 | `true` |
-| `melee_only` | 1 | `true` |
-| `quest_reward_item` | 1 | `AirHorn_Fixed`, `AngryFace_Fixed`, `BubbleBoy_Fixed`, `ChaosDevice_Fixed`, `ExperimentalTreatment_Fixed` |
-| `cant_equip_to_colorless` | 1 | `true` |
-| `lt` | 1 |  |
-| `RealTimePressure` | 1 |  |
-| `Set` | 1 | `Monk` |
-| `override_chain_knockback` | 1 |  |
-| `backstab_only` | 1 | `true` |
-| `force_sticky` | 1 | `true` |
-| `GlobalEnemyAutoRevive` | 1 |  |
-| `legacy_quest` | 1 | `true` |
-| `hint_prerequisite_flag` | 1 | `mapflag_BothObelisksUnlocked`, `mapflag_DimensionXUnlocked`, `mapflag_MeatWorldUnlocked`, `mapflag_MeatWorldUnlockedFull` |
-| `failable` | 1 | `true` |
-| `break_on_pop_only` | 1 | `true` |
-| `even_of_stunned` | 1 | `true` |
-| `hint_destination` | 1 | `boneyard`, `caves`, `core`, `dimensionx`, `endoftime` |
-| `degrade_after_adventure` | 1 | `false` |
-| `icon_hint` | 1 | `ability_syringe`, `passive_syringe` |
-| `SerratedClaws` | 1 |  |
-| `CastAgainWithStatus` | 1 |  |
-| `fragile` | 1 | `true` |
-| `sticky` | 1 | `true` |
-| `full_repair` | 1 | `true` |
-| `aux_is_catid` | 1 | `true` |
-| `ignore_if_str_aux_equals` | 1 | `ModelingClay_Default` |
-| `le` | 1 |  |
-| `str_aux_is_copy_item_icon` | 1 | `true` |
-| `str_aux_is_copy_item_active` | 1 | `true` |
-| `reset_aux_on_store` | 1 |  |
-| `str_aux_is_copy_item_passive` | 1 | `true` |
-| `mul` | 1 |  |
-| `create_temp_ability` | 1 | `true` |
-| `str_aux_is_copy_ability` | 1 |  |
-| `str_aux` | 1 | `ModelingClay_Default` |
+| `active` | 2 |  |
+| `active_pieces` | 1 |  |
+| `ActSelect_Choose_1` | 1 |  |
+| `ActSelect_Choose_2` | 1 |  |
+| `ActSelect_Choose_3` | 1 |  |
+| `ActSelect_Hover_1` | 1 |  |
+| `ActSelect_Hover_2` | 1 |  |
+| `ActSelect_Hover_3` | 1 |  |
 | `add` | 1 |  |
-| `equip_sound` | 1 | `SE_CatWeaponPoke_Chainsaw` |
-| `reset_str_aux_on_store` | 1 | `ModelingClay_Default` |
-| `tooltip_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_DESC`, `KEYWORD_CHADOWN_DESC`, `KEYWORD_CONDOWN_DESC`, `KEYWORD_DAMAGEDOWN_DESC`, `KEYWORD_DEXDOWN_DESC` |
-| `tooltip_stacks_pos` | 1 | `KEYWORD_ALLSTATSUP_DESC`, `KEYWORD_CHAUP_DESC`, `KEYWORD_CONUP_DESC`, `KEYWORD_DAMAGEUP_DESC`, `KEYWORD_DEXUP_DESC` |
-| `tooltip_stackless` | 1 | `KEYWORD_ALPHA_DESC_STACKLESS`, `KEYWORD_ATTRACTION_DESC_STACKLESS`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC_STACKLESS`, `KEYWORD_BLEEDTHORNS_DESC_STACKLESS` |
-| `tooltip_stacks_singular` | 1 | `KEYWORD_AUTOREVIVE_DESC_SINGULAR`, `KEYWORD_BLIND_DESC_STACKLESS`, `KEYWORD_BONUSMOVE_DESC`, `KEYWORD_CHARGEFISTS_DESC_SINGULAR`, `KEYWORD_COUNTER_DESC` |
-| `alias` | 1 | `AllStatsUp`, `Brace`, `Brittle`, `Charmed`, `CritChanceUp` |
-| `tooltip_stackless_neg` | 1 | `KEYWORD_DAMAGEDOWN_DESC_STACKLESS`, `KEYWORD_MOVEMENTDOWN_DESC_STACKLESS`, `KEYWORD_TEMPINITDOWN_DESC` |
-| `name_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_NAME`, `KEYWORD_CHADOWN_NAME`, `KEYWORD_CONDOWN_NAME`, `KEYWORD_DAMAGEDOWN_NAME`, `KEYWORD_DEXDOWN_NAME` |
-| `name_reference_applier` | 1 | `KEYWORD_ATTRACTION_REF`, `KEYWORD_LEECHES_NAME_APPLIER`, `KEYWORD_MANALEECHES_NAME_APPLIER` |
-| `tooltip_stacks` | 1 | `KEYWORD_AMMO_DESC`, `KEYWORD_ATTRACTION_DESC`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC`, `KEYWORD_BLEEDTHORNS_DESC` |
-| `tooltip_reference_applier` | 1 | `KEYWORD_ATTRACTION_DESC_REF`, `KEYWORD_LEECHES_DESC_APPLIER`, `KEYWORD_MANALEECHES_DESC_APPLIER` |
-| `tooltip_stackless_pos` | 1 | `KEYWORD_DAMAGEUP_DESC_STACKLESS`, `KEYWORD_MOVEMENTUP_DESC_STACKLESS` |
-| `huntercat` | 1 | `auto` |
-| `exit_desert` | 1 |  |
-| `radicalrat` | 1 | `auto` |
-| `SewersUnlocked` | 1 |  |
-| `exit_lab` | 1 |  |
-| `queenhippo` | 1 | `auto` |
-| `magecat` | 1 | `auto` |
-| `unlockcheck_on_complete` | 1 | `map_unlock_junkyard` |
-| `JunkyardUnlocked` | 1 |  |
-| `tankcat` | 1 | `auto` |
-| `fightercat` | 1 | `auto` |
-| `ThrobbingArteryDone` | 1 |  |
-| `mamamaggot` | 1 | `auto` |
-| `bumblefoot` | 1 | `auto` |
-| `CoreUnlocked` | 1 |  |
-| `lenny` | 1 | `auto` |
-| `slime` | 1 | `auto` |
-| `WallOfFleshDone` | 1 |  |
-| `cerberubs` | 1 | `auto` |
-| `CoreObeliskUnlocked` | 1 |  |
-| `infestedduo` | 1 | `auto` |
-| `rockybobo` | 1 | `auto` |
-| `weather_event` | 1 |  |
-| `MoonUnlocked` | 1 |  |
-| `zodiac` | 1 | `auto` |
-| `BunkerUnlocked` | 1 |  |
-| `CraterUnlocked` | 1 |  |
-| `thiefcat` | 1 | `auto` |
-| `gambit` | 1 | `auto` |
-| `necrocat` | 1 | `auto` |
-| `butchercat` | 1 | `auto` |
-| `shop_water` | 1 |  |
-| `clericcat` | 1 | `auto` |
-| `shop_cheapwater` | 1 |  |
-| `ChaosAntennaAttached` | 1 |  |
-| `tileset` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
+| `AddElement` | 1 | `Fire`, `Napalm` |
+| `AddElementsToWeapon` | 1 | `Electric` |
+| `AddFilledMaxHealth` | 1 |  |
+| `additional_passives` | 8 |  |
+| `additional_statuses` | 1 |  |
+| `addstacks` | 1 |  |
+| `adjectives` | 1 |  |
+| `adjust_target` | 1 | `stalk` |
 | `advance` | 1 |  |
-| `spawn_node` | 1 | `start` |
-| `nemesis` | 1 |  |
-| `head_start` | 1 |  |
-| `drmangler` | 1 | `auto` |
-| `TheEndUnlocked` | 1 |  |
-| `lightningelemental` | 1 | `auto` |
-| `cavecatfamily` | 1 | `auto` |
-| `JurassicUnlocked` | 1 |  |
-| `iceelemental` | 1 | `auto` |
-| `BoneyardUnlocked` | 1 |  |
-| `cancreeper` | 1 | `auto` |
-| `trampy` | 1 | `auto` |
-| `dinocouple` | 1 | `auto` |
-| `stacy` | 1 | `auto` |
-| `druidcat` | 1 | `auto` |
-| `monkcat` | 1 | `auto` |
-| `choose_one` | 1 |  |
-| `IceAgeUnlocked` | 1 |  |
-| `GenFlag_Boss_Stacy` | 1 |  |
-| `psychiccat` | 1 | `auto` |
-| `tinkerercat` | 1 | `auto` |
-| `FutureUnlocked` | 1 |  |
-| `miniboss_event` | 1 |  |
-| `spewer` | 1 | `auto` |
-| `GenFlag_Boss_Spewer` | 1 |  |
-| `mw_altar` | 1 |  |
-| `MeatWorldUnlockedFull` | 1 |  |
-| `mw_quest_event` | 1 |  |
-| `mw_treasure` | 1 |  |
-| `mw_event1` | 1 |  |
-| `mw_boss` | 1 |  |
-| `mw_hard1` | 1 |  |
-| `mw_home` | 1 |  |
-| `mw_earlyhome` | 1 |  |
-| `mw_battle1` | 1 |  |
-| `abandonedones` | 1 | `auto` |
-| `MoonObeliskUnlocked` | 1 |  |
-| `ratking` | 1 | `auto` |
-| `flushmaster` | 1 | `auto` |
-| `CavesUnlocked` | 1 |  |
-| `thebloat` | 1 | `auto` |
-| `spin_cats` | 1 | `true` |
-| `override_move` | 1 | `BasicJump` |
-| `gift_item` | 1 | `TinksBow`, `disorder_needle` |
-| `gift_item_from_pool` | 1 | `parasites` |
-| `favor` | 1 |  |
-| `required_age` | 1 |  |
-| `shop_level_up` | 1 |  |
-| `house_upgrade` | 1 | `LargeHouse`, `LargeHouse_Floor2Large`, `LargeHouse_Floor2Small`, `MediumHouse`, `MediumHouse_SmallRoom` |
-| `tracy_special_item` | 1 |  |
-| `generate_beanies_quest` | 1 | `intro`, `main_pool` |
-| `level_display` | 1 | `max` |
-| `required_act` | 1 |  |
-| `storage_expansion` | 1 |  |
-| `main_pool` | 1 |  |
-| `destinations` | 1 |  |
-| `rep_reward_count` | 1 |  |
-| `required_chapter` | 1 |  |
-| `prereqs` | 1 |  |
-| `reward_text` | 1 | `FAVOR_BEANIES_INTRO`, `FAVOR_BEANIES_REPEAT`, `FAVOR_BUTCH_UPGRADE`, `FAVOR_FRANK_ATTIC`, `FAVOR_FRANK_PARASITE` |
-| `ending` | 1 |  |
-| `choosecats` | 1 |  |
-| `closerup` | 1 |  |
-| `beaniesquest_fail_AirHorn` | 1 |  |
-| `beaniesquest_intro_MagicMirror` | 1 |  |
-| `beaniesquest_fail_StorageLocker` | 1 |  |
-| `beaniesquest_fail_TheLoner` | 1 |  |
-| `unprompted5` | 1 |  |
-| `beanies_bombquest_2` | 1 |  |
-| `beaniesquest_intro_Redacted` | 1 |  |
-| `beaniesquest_intro_GlassCannon` | 1 |  |
-| `beaniesquest_complete_UltraVision3000` | 1 |  |
-| `beaniesquest_intro_RealityScrambler` | 1 |  |
-| `unprompted4` | 1 |  |
-| `beaniesquest_intro_MeStone` | 1 |  |
-| `beaniesquest_complete_NDEDevice` | 1 |  |
-| `beaniesquest_intro_ExperimentalTreatment` | 1 |  |
-| `beaniesquest_fail_UltraVision3000` | 1 |  |
-| `beanies_seetheend` | 1 |  |
-| `beaniesquest_intro_PartialLobotomy` | 1 |  |
-| `beaniesquest_complete_PartialLobotomy` | 1 |  |
-| `beanies_hitler3_defeat` | 1 |  |
+| `advantage_polarity` | 1 |  |
+| `advantage_softcap` | 1 |  |
+| `adventure_unlock` | 1 | `class_unlock_monocolorless_face`, `class_unlock_monocolorless_head`, `class_unlock_monocolorless_neck`, `map_unlock_iceage`, `nuke_quest_complete` |
+| `adventure_weather` | 1 | `Rain`, `Snow`, `Thunderstorm`, `Windy` |
+| `aggro_target_is_enemy` | 1 | `true` |
+| `ai` | 23 |  |
+| `ai_ability` | 4 | `AZ_Jump_AI`, `BasicBigMelee`, `BasicMelee`, `BungaSwipe_ai`, `CerberubsJump_AI` |
+| `ai_base_score` | 16 |  |
+| `ai_if_spawned_as_enemy` | 1 |  |
+| `ai_scale` | 4 |  |
+| `AirHorn` | 1 |  |
+| `Alert` | 1 |  |
+| `alert_form` | 1 | `Alert` |
+| `alias` | 1 | `AllStatsUp`, `Brace`, `Brittle`, `Charmed`, `CritChanceUp` |
+| `AllAlive` | 1 |  |
+| `alley` | 2 | `AREA_NAME_ALLEY`, `departed_first_real_adventure` |
+| `allies_only` | 5 | `false`, `true` |
+| `allow_any_orientation` | 7 | `true` |
+| `allow_decision_mid_turn` | 1 | `true` |
+| `allow_diagonal_passthrough` | 1 | `true` |
+| `allow_diagonals` | 8 | `true` |
+| `allow_duplicates` | 1 | `true` |
+| `allow_energize_self` | 2 | `true` |
+| `allow_flying_effect` | 1 | `true` |
+| `allow_offmap_casts` | 6 | `true` |
+| `allow_offmap_corpse` | 1 | `true` |
+| `allow_passive_spelltransforming` | 4 | `true` |
+| `allow_replacebrain` | 1 | `false` |
+| `ally_chance` | 2 |  |
+| `ally_damage` | 1 | `littleboo` |
+| `ally_dead` | 1 | `bigboo` |
+| `ally_multiplier` | 1 |  |
+| `ally_priority` | 1 |  |
+| `ally_rewards` | 2 |  |
+| `alpha` | 2 |  |
+| `alpha_end` | 1 |  |
+| `alpha_in` | 2 |  |
+| `alpha_out` | 2 |  |
+| `alpha_start` | 1 |  |
+| `also` | 8 |  |
+| `also_use_if_buddy_is_dead` | 1 | `true` |
+| `alt_art` | 1 | `TangledMeat` |
+| `alt_dead_ani` | 1 | `off` |
+| `alt_dying_ani` | 1 | `shutdown` |
+| `alt_sounds` | 8 |  |
+| `alt_spawn_pool` | 4 |  |
+| `altar_sacrifice` | 1 |  |
+| `alternate_energized_effect` | 2 |  |
+| `always_bounce` | 5 | `true` |
+| `always_face_forward` | 1 | `true` |
+| `always_triggers_traps` | 2 | `true` |
+| `ambient` | 1 |  |
+| `ambient_sound` | 2 | `amb_acidrain.ogg`, `amb_blizzard.ogg`, `amb_butterflyswarm.ogg`, `amb_flyswarm.ogg`, `amb_heavyrain.ogg` |
+| `amount` | 7 |  |
+| `Angry` | 221 |  |
+| `angry` | 1 |  |
+| `ANGRY_PARAMS` | 220 |  |
+| `Ani_AcidOoze_dying_Frame2` | 1 |  |
+| `Ani_AcidOoze_hit_Frame2` | 1 |  |
+| `Ani_AcidOoze_shoot_Frame2` | 1 |  |
+| `Ani_AcidOoze_walk_Frame2` | 1 |  |
+| `Ani_AcidOoze_walk_Frame35` | 1 |  |
+| `Ani_AdventureEmbarkCutscene_Frame286` | 1 |  |
+| `Ani_AdventureEmbarkCutscene_Frame35` | 1 |  |
+| `Ani_AdventureEmbarkCutscene_Frame48` | 1 |  |
+| `Ani_AdventureEmbarkCutscene_Frame5` | 1 |  |
+| `Ani_AdventureEmbarkCutscene_Frame76` | 1 |  |
+| `Ani_AdventureReturnCutscene_Frame173` | 1 |  |
+| `Ani_AdventureReturnCutscene_Frame340` | 1 |  |
+| `Ani_AdventureReturnCutscene_Frame79` | 1 |  |
+| `Ani_AdventureReturnEarlyCutscene_Frame173` | 1 |  |
+| `Ani_AdventureReturnEarlyCutscene_Frame340` | 1 |  |
+| `Ani_AdventureReturnEarlyCutscene_Frame79` | 1 |  |
+| `Ani_AlienBeast_attack_Frame2` | 1 |  |
+| `Ani_AlienBeast_dying_Frame138` | 1 |  |
+| `Ani_AlienBeast_dying_Frame2` | 1 |  |
+| `Ani_AlienBeast_eat_Frame2` | 1 |  |
+| `Ani_AlienBeast_hit_Frame3` | 1 |  |
+| `Ani_AlienBeast_howl_Frame2` | 1 |  |
+| `Ani_AlienBeast_puke_Frame2` | 1 |  |
+| `Ani_AlienBeast_rampage_Frame17` | 1 |  |
+| `Ani_AlienBeast_rampage_Frame19` | 1 |  |
+| `Ani_AlienBeast_rampage_Frame2` | 1 |  |
+| `Ani_AlienBeast_rampage_Frame31` | 1 |  |
+| `Ani_AlienBeast_spit_Frame2` | 1 |  |
+| `Ani_AlienBeast_walk_Frame13` | 1 |  |
+| `Ani_AlienBeast_walk_Frame43` | 1 |  |
+| `Ani_AlienBeast_walk_Frame52` | 1 |  |
+| `Ani_AlienBeast_walk_Frame7` | 1 |  |
+| `Ani_Amoeba_attach_Frame14` | 1 |  |
+| `Ani_Amoeba_attach_Frame20` | 1 |  |
+| `Ani_Amoeba_attach_Frame35` | 1 |  |
+| `Ani_Amoeba_attach_Frame48` | 1 |  |
+| `Ani_Amoeba_attach_Frame6` | 1 |  |
+| `Ani_Amoeba_bashrock_Frame12` | 1 |  |
+| `Ani_Amoeba_dying_Frame2` | 1 |  |
+| `Ani_Amoeba_dyingrock_Frame2` | 1 |  |
+| `Ani_Amoeba_hide_Frame6` | 1 |  |
+| `Ani_Amoeba_hit_Frame3` | 1 |  |
+| `Ani_Amoeba_hitrock_Frame29` | 1 |  |
+| `Ani_Amoeba_hitrock_Frame3` | 1 |  |
+| `Ani_Amoeba_hitrock_Frame46` | 1 |  |
+| `Ani_Amoeba_walk_Frame24` | 1 |  |
+| `Ani_Amoeba_walk_Frame5` | 1 |  |
+| `Ani_Amoeba_walkrock_Frame25` | 1 |  |
+| `Ani_Amoeba_walkrock_Frame5` | 1 |  |
+| `Ani_Angel_attack_Frame2` | 1 |  |
+| `Ani_Angel_attack_Frame42` | 1 |  |
+| `Ani_Angel_dying_Frame2` | 1 |  |
+| `Ani_Angel_dying_Frame29` | 1 |  |
+| `Ani_Angel_hit_Frame2` | 1 |  |
+| `Ani_Angel_idle_Frame47` | 1 |  |
+| `Ani_Angel_revive_Frame2` | 1 |  |
+| `Ani_Angel_revive_Frame56` | 1 |  |
+| `Ani_Angel_walk_Frame12` | 1 |  |
+| `Ani_Angel_weak_Frame47` | 1 |  |
+| `Ani_AngelicCatFetus_charm_Frame12` | 1 |  |
+| `Ani_AngelicCatFetus_charm_Frame9` | 1 |  |
+| `Ani_AngelicCatFetus_doom_Frame2` | 1 |  |
+| `Ani_AngelicCatFetus_doom_Frame47` | 1 |  |
+| `Ani_AngelicCatFetus_doom_Frame90` | 1 |  |
+| `Ani_AngelicCatFetus_dying_Frame13` | 1 |  |
+| `Ani_AngelicCatFetus_dying_Frame2` | 1 |  |
+| `Ani_AngelicCatFetus_hit_Frame3` | 1 |  |
+| `Ani_AngelicCatFetus_kiss_Frame13` | 1 |  |
+| `Ani_AngelicCatFetus_kiss_Frame18` | 1 |  |
+| `Ani_AngelicCatFetus_walk_Loop` | 1 |  |
+| `Ani_AstroSkull_attack_Frame21` | 1 |  |
+| `Ani_AstroSkull_attack_Frame3` | 1 |  |
+| `Ani_AstroSkull_dying_Frame2` | 1 |  |
+| `Ani_AstroSkull_dying_Frame38` | 1 |  |
+| `Ani_AstroSkull_hit_Frame2` | 1 |  |
+| `Ani_AstroSkull_hit_Frame8` | 1 |  |
+| `Ani_AstroSkull_scream_Frame2` | 1 |  |
+| `Ani_AstroSkull_scream_Frame51` | 1 |  |
+| `Ani_AstroSkull_spawnin_Frame162` | 1 |  |
+| `Ani_AstroSkull_spawnin_Frame2` | 1 |  |
+| `Ani_AstroSkull_spawnin_Frame207` | 1 |  |
+| `Ani_AstroSkull_walk_Frame2` | 1 |  |
+| `Ani_AstroZombie_breakarm_Frame2` | 1 |  |
+| `Ani_AstroZombie_breakarm_Frame30` | 1 |  |
+| `Ani_AstroZombie_breakarm_Frame71` | 1 |  |
+| `Ani_AstroZombie_breakarmCat_Frame2` | 1 |  |
+| `Ani_AstroZombie_breakarmCat_Frame30` | 1 |  |
+| `Ani_AstroZombie_breakarmCat_Frame71` | 1 |  |
+| `Ani_AstroZombie_breakleg_Frame2` | 1 |  |
+| `Ani_AstroZombie_breakleg_Frame30` | 1 |  |
+| `Ani_AstroZombie_breakleg_Frame71` | 1 |  |
+| `Ani_AstroZombie_breaklegCat_Frame2` | 1 |  |
+| `Ani_AstroZombie_breaklegCat_Frame30` | 1 |  |
+| `Ani_AstroZombie_breaklegCat_Frame71` | 1 |  |
+| `Ani_AstroZombie_breakneck_Frame2` | 1 |  |
+| `Ani_AstroZombie_breakneck_Frame30` | 1 |  |
+| `Ani_AstroZombie_breakneck_Frame71` | 1 |  |
+| `Ani_AstroZombie_breakneckCat_Frame2` | 1 |  |
+| `Ani_AstroZombie_breakneckCat_Frame30` | 1 |  |
+| `Ani_AstroZombie_breakneckCat_Frame71` | 1 |  |
+| `Ani_AstroZombie_breakneckCatHeadless_Frame2` | 1 |  |
+| `Ani_AstroZombie_breakneckHeadless_Frame2` | 1 |  |
+| `Ani_AstroZombie_dying_Frame148` | 1 |  |
+| `Ani_AstroZombie_dying_Frame2` | 1 |  |
+| `Ani_AstroZombie_dying_Frame20` | 1 |  |
+| `Ani_AstroZombie_dying_Frame253` | 1 |  |
+| `Ani_AstroZombie_dying_Frame32` | 1 |  |
+| `Ani_AstroZombie_dying_Frame49` | 1 |  |
+| `Ani_AstroZombie_dyingHeadless_Frame2` | 1 |  |
+| `Ani_AstroZombie_hit_Frame4` | 1 |  |
+| `Ani_AstroZombie_moonjump_Frame116` | 1 |  |
+| `Ani_AstroZombie_moonjump_Frame15` | 1 |  |
+| `Ani_AstroZombie_moonjump_Frame25` | 1 |  |
+| `Ani_AstroZombie_walk_Frame2` | 1 |  |
+| `Ani_AstroZombie_walk_Frame21` | 1 |  |
+| `Ani_AstroZombie_walkHeadless_Frame2` | 1 |  |
+| `Ani_AstroZombie_walkHeadless_Frame21` | 1 |  |
+| `Ani_BabyDeathWorm_dash_Loop` | 1 |  |
+| `Ani_BabyDeathWorm_dashatk_Frame4` | 1 |  |
+| `Ani_BabyDeathWorm_dashstart_Frame2` | 1 |  |
+| `Ani_BabyDeathWorm_dying_Frame2` | 1 |  |
+| `Ani_BabyDeathWorm_dying_Frame8` | 1 |  |
+| `Ani_BabyDeathWorm_hit_Frame2` | 1 |  |
+| `Ani_BabyDeathWorm_hit_Frame4` | 1 |  |
+| `Ani_BabyDeathWorm_portin_Frame2` | 1 |  |
+| `Ani_BabyDeathWorm_portin_Frame4` | 1 |  |
+| `Ani_BabyDeathWorm_portout_Frame2` | 1 |  |
+| `Ani_BabyShark_attack_Frame2` | 1 |  |
+| `Ani_BabyShark_dying_Frame2` | 1 |  |
+| `Ani_BabyShark_dying_Frame42` | 1 |  |
+| `Ani_BabyShark_walk_Frame2` | 1 |  |
+| `Ani_BabySpider_attack_Frame39` | 1 |  |
+| `Ani_BabySpider_attack_Frame54` | 1 |  |
+| `Ani_BabySpider_attack_Frame8` | 1 |  |
+| `Ani_BabySpider_walk_Frame18` | 1 |  |
+| `Ani_BabySpider_walk_Frame27` | 1 |  |
+| `Ani_BabySpider_walk_Frame9` | 1 |  |
+| `Ani_Bat_attack2_Frame13` | 1 |  |
+| `Ani_Bat_attack_Frame13` | 1 |  |
+| `Ani_Bat_bite_Frame14` | 1 |  |
+| `Ani_Bat_dodge_Frame2` | 1 |  |
+| `Ani_Bat_dying_Frame2` | 1 |  |
+| `Ani_Bat_walk_Frame2` | 1 |  |
+| `Ani_BeaniesX_attack_Frame2` | 1 |  |
+| `Ani_BeaniesX_attack_Frame25` | 1 |  |
+| `Ani_BeaniesX_attack_Frame45` | 1 |  |
+| `Ani_BeaniesX_dying_Frame2` | 1 |  |
+| `Ani_BeaniesX_dying_Frame4` | 1 |  |
+| `Ani_BeaniesX_hit_Frame4` | 1 |  |
+| `Ani_BeaniesX_turtleend_Frame16` | 1 |  |
+| `Ani_BeaniesX_turtleend_Frame6` | 1 |  |
+| `Ani_BeaniesX_turtlestart_Frame3` | 1 |  |
+| `Ani_BeaniesX_walk_Frame2` | 1 |  |
+| `Ani_BeaniesX_walk_Frame22` | 1 |  |
+| `Ani_Bear_attack_Frame3` | 1 |  |
+| `Ani_Bear_attack_Frame31` | 1 |  |
+| `Ani_Bear_dying_Frame3` | 1 |  |
+| `Ani_Bear_dying_Frame73` | 1 |  |
+| `Ani_Bear_hit_Frame3` | 1 |  |
+| `Ani_Bear_walk_Frame14` | 1 |  |
+| `Ani_Bear_walk_Frame30` | 1 |  |
+| `Ani_BigAsteroid_dying_Frame10` | 1 |  |
+| `Ani_BigAsteroid_dying_Frame39` | 1 |  |
+| `Ani_BigAsteroid_hit_Frame4` | 1 |  |
+| `Ani_BigAsteroid_puke_Frame38` | 1 |  |
+| `Ani_BigAsteroid_puke_Frame7` | 1 |  |
+| `Ani_BigAsteroid_walk_Frame2` | 1 |  |
+| `Ani_BigAsteroid_walk_Frame45` | 1 |  |
+| `Ani_BigDemon_attack_Frame12` | 1 |  |
+| `Ani_BigDemon_attack_Frame15` | 1 |  |
+| `Ani_BigDemon_dying_Frame31` | 1 |  |
+| `Ani_BigDemon_dying_Frame6` | 1 |  |
+| `Ani_BigDemon_dying_Frame60` | 1 |  |
+| `Ani_BigDemon_dying_Frame90` | 1 |  |
+| `Ani_BigDemon_hit_Frame2` | 1 |  |
+| `Ani_BigDemon_necksnapCat_Frame107` | 1 |  |
+| `Ani_BigDemon_necksnapCat_Frame128` | 1 |  |
+| `Ani_BigDemon_necksnapCat_Frame14` | 1 |  |
+| `Ani_BigDemon_necksnapCat_Frame140` | 1 |  |
+| `Ani_BigDemon_necksnapCat_Frame25` | 1 |  |
+| `Ani_BigDemon_necksnapCat_Frame81` | 1 |  |
+| `Ani_BigDemon_shoot_Frame2` | 1 |  |
+| `Ani_BigDemon_shoot_Frame28` | 1 |  |
+| `Ani_BigDemon_shoot_Frame29` | 1 |  |
+| `Ani_BigDemon_shoot_Frame70` | 1 |  |
+| `Ani_BigDemon_shoot_Frame73` | 1 |  |
+| `Ani_BigDemon_walk_Frame14` | 1 |  |
+| `Ani_BigDemon_walk_Frame30` | 1 |  |
+| `Ani_BigDemon_walk_Frame36` | 1 |  |
+| `Ani_BigDemon_walk_Frame45` | 1 |  |
+| `Ani_BigDemon_walk_Frame61` | 1 |  |
+| `Ani_BigDemon_walk_Frame74` | 1 |  |
+| `Ani_BigDemon_walk_Frame89` | 1 |  |
+| `Ani_BigSlime_attack_Frame2` | 1 |  |
+| `Ani_BigSlime_dying_Frame19` | 1 |  |
+| `Ani_BigSlime_dying_Frame2` | 1 |  |
+| `Ani_BigSlime_dying_Frame3` | 1 |  |
+| `Ani_BigSlime_hit_Frame2` | 1 |  |
+| `Ani_BigSlime_walk_Frame2` | 1 |  |
+| `Ani_BigSlimeX_attack_Frame2` | 1 |  |
+| `Ani_BigSlimeX_dying_Frame19` | 1 |  |
+| `Ani_BigSlimeX_dying_Frame2` | 1 |  |
+| `Ani_BigSlimeX_dying_Frame3` | 1 |  |
+| `Ani_BigSlimeX_hit_Frame2` | 1 |  |
+| `Ani_BigSlimeX_walk_Frame2` | 1 |  |
+| `Ani_BigUFO_chargeEnd_Frame2` | 1 |  |
+| `Ani_BigUFO_dying_Frame2` | 1 |  |
+| `Ani_BigUFO_hit_Frame2` | 1 |  |
+| `Ani_BigUFO_hit_Frame5` | 1 |  |
+| `Ani_BigUFO_idle2primed_Frame2` | 1 |  |
+| `Ani_BigUFO_laserShoot_Frame2` | 1 |  |
+| `Ani_BigUFO_primed_Frame2` | 1 |  |
+| `Ani_BigUFO_ramEnd_Frame2` | 1 |  |
+| `Ani_BigUFO_ramLoop_Frame2` | 1 |  |
+| `Ani_BigUFO_ramStart_Frame2` | 1 |  |
+| `Ani_BigUFO_shield_Frame2` | 1 |  |
+| `Ani_BigUFO_spawn_Frame2` | 1 |  |
+| `Ani_BigUFO_walk_Frame2` | 1 |  |
+| `Ani_Bird_dying_Frame2` | 1 |  |
+| `Ani_Bird_dying_Frame25` | 1 |  |
+| `Ani_BirdLarge_attack_Frame2` | 1 |  |
+| `Ani_BirdLarge_attack_Frame31` | 1 |  |
+| `Ani_BirdLarge_attack_Frame5` | 1 |  |
+| `Ani_BirdLarge_dying_Frame2` | 1 |  |
+| `Ani_BirdLarge_dying_Frame32` | 1 |  |
+| `Ani_BirdLarge_idle_Frame549` | 1 |  |
+| `Ani_BirdLarge_idle_Frame559` | 1 |  |
+| `Ani_BirdLarge_idle_Frame566` | 1 |  |
+| `Ani_BirdLarge_idle_Frame576` | 1 |  |
+| `Ani_BirdLarge_idle_Frame598` | 1 |  |
+| `Ani_BirdLarge_idle_Frame606` | 1 |  |
+| `Ani_BirdLarge_idle_Frame628` | 1 |  |
+| `Ani_BirdLarge_idle_Frame636` | 1 |  |
+| `Ani_BirdLarge_idle_Frame724` | 1 |  |
+| `Ani_BirdLarge_idle_Frame736` | 1 |  |
+| `Ani_BirdLarge_idle_Frame745` | 1 |  |
+| `Ani_BirdLarge_idle_Frame751` | 1 |  |
+| `Ani_BirdLarge_moveLoop_Frame2` | 1 |  |
+| `Ani_BirdLarge_moveLoop_Frame8` | 1 |  |
+| `Ani_BirdLarge_moveStart_Frame18` | 1 |  |
+| `Ani_BirdLarge_moveStart_Frame9` | 1 |  |
+| `Ani_BirdLarge_runAway_Frame5` | 1 |  |
+| `Ani_BirdLarge_walk_Frame16` | 1 |  |
+| `Ani_BirdLarge_walk_Frame2` | 1 |  |
+| `Ani_BirdMed_attack_Frame11` | 1 |  |
+| `Ani_BirdMed_attack_Frame23` | 1 |  |
+| `Ani_BirdMed_attack_Frame5` | 1 |  |
+| `Ani_BirdMed_dying_Frame2` | 1 |  |
+| `Ani_BirdMed_dying_Frame25` | 1 |  |
+| `Ani_BirdMed_idle_Frame246` | 1 |  |
+| `Ani_BirdMed_idle_Frame268` | 1 |  |
+| `Ani_BirdMed_idle_Frame280` | 1 |  |
+| `Ani_BirdMed_idle_Frame293` | 1 |  |
+| `Ani_BirdMed_idle_Frame326` | 1 |  |
+| `Ani_BirdMed_idle_Frame338` | 1 |  |
+| `Ani_BirdMed_idle_Frame351` | 1 |  |
+| `Ani_BirdMed_moveLoop_Frame2` | 1 |  |
+| `Ani_BirdMed_moveStart_Frame18` | 1 |  |
+| `Ani_BirdMed_moveStart_Frame9` | 1 |  |
+| `Ani_BirdMed_runAway_Frame9` | 1 |  |
+| `Ani_BirdMed_walk_Frame16` | 1 |  |
+| `Ani_BirdMed_walk_Frame2` | 1 |  |
+| `Ani_BirdSmall_dying_Frame2` | 1 |  |
+| `Ani_BirdSmall_dying_Frame45` | 1 |  |
+| `Ani_BirdSmall_moveEnd_Frame2` | 1 |  |
+| `Ani_BirdSmall_moveLoop_Frame11` | 1 |  |
+| `Ani_BirdSmall_moveLoop_Frame2` | 1 |  |
+| `Ani_BirdSmall_moveLoop_Frame21` | 1 |  |
+| `Ani_BirdSmall_moveLoop_Frame31` | 1 |  |
+| `Ani_BirdSmall_moveLoop_Frame40` | 1 |  |
+| `Ani_BirdSmall_moveLoop_Frame50` | 1 |  |
+| `Ani_BirdSmall_moveLoop_Frame60` | 1 |  |
+| `Ani_BirdSmall_moveStart_Frame18` | 1 |  |
+| `Ani_BirdSmall_moveStart_Frame29` | 1 |  |
+| `Ani_BirdSmall_moveStart_Frame9` | 1 |  |
+| `Ani_BirdSmall_runAway_Frame10` | 1 |  |
+| `Ani_BirdSmall_runAway_Frame17` | 1 |  |
+| `Ani_BirdSmall_runAway_Frame30` | 1 |  |
+| `Ani_BirdSmall_walk_Frame2` | 1 |  |
+| `Ani_BirdSmall_walk_Frame6` | 1 |  |
+| `Ani_Birthwort_attack_Frame2` | 1 |  |
+| `Ani_Birthwort_dash_Frame10` | 1 |  |
+| `Ani_Birthwort_dash_Frame5` | 1 |  |
+| `Ani_Birthwort_dash_Frame6` | 1 |  |
+| `Ani_Birthwort_dash_Frame9` | 1 |  |
+| `Ani_Birthwort_dying_Frame2` | 1 |  |
+| `Ani_Birthwort_heal_Frame2` | 1 |  |
+| `Ani_Birthwort_hit_Frame3` | 1 |  |
+| `Ani_Birthwort_shoot_Frame2` | 1 |  |
+| `Ani_Birthwort_walk_Frame17` | 1 |  |
+| `Ani_Birthwort_walk_Frame22` | 1 |  |
+| `Ani_Birthwort_walk_Frame29` | 1 |  |
+| `Ani_Birthwort_walk_Frame5` | 1 |  |
+| `Ani_BishopHat_dying_Frame2` | 1 |  |
+| `Ani_BishopHat_dying_Frame26` | 1 |  |
+| `Ani_BishopHat_hit_Frame2` | 1 |  |
+| `Ani_BishopHat_walk_Frame16` | 1 |  |
+| `Ani_BishopHat_walk_Frame2` | 1 |  |
+| `Ani_BloatRat_dying_Frame2` | 1 |  |
+| `Ani_BloatRat_hit_Frame2` | 1 |  |
+| `Ani_BloatRat_shoot_Frame2` | 1 |  |
+| `Ani_BloatRat_walk_Frame2` | 1 |  |
+| `Ani_Bomb_dying_Frame2` | 1 |  |
+| `Ani_Bombchu_dash_Frame2` | 1 |  |
+| `Ani_Bombchu_dash_FrameLoop` | 1 |  |
+| `Ani_Bombchu_dashStart_Frame2` | 1 |  |
+| `Ani_Bombchu_dying_Frame2` | 1 |  |
+| `Ani_Bombchu_dying_Frame3` | 1 |  |
+| `Ani_Bombchu_hit_Frame2` | 1 |  |
+| `Ani_Bombchu_walk_FrameLoop` | 1 |  |
+| `Ani_BomberRat_attack_Frame2` | 1 |  |
+| `Ani_BomberRat_attack_Frame25` | 1 |  |
+| `Ani_BomberRat_attack_Frame45` | 1 |  |
+| `Ani_BomberRat_dying_Frame2` | 1 |  |
+| `Ani_BomberRat_dying_Frame4` | 1 |  |
+| `Ani_BomberRat_hit_Frame4` | 1 |  |
+| `Ani_BomberRat_turtleend_Frame16` | 1 |  |
+| `Ani_BomberRat_turtleend_Frame6` | 1 |  |
+| `Ani_BomberRat_turtlestart_Frame3` | 1 |  |
+| `Ani_BomberRat_walk_Frame2` | 1 |  |
+| `Ani_BomberRat_walk_Frame22` | 1 |  |
+| `Ani_BombFly_attack_Frame34` | 1 |  |
+| `Ani_BombFly_attack_Frame5` | 1 |  |
+| `Ani_BombFly_dying_Frame10` | 1 |  |
+| `Ani_BombFly_walk_Frame2` | 1 |  |
+| `Ani_BossIntro_Frame150` | 1 |  |
+| `Ani_BossIntro_Frame202` | 1 |  |
+| `Ani_BossIntro_Frame307` | 1 |  |
+| `Ani_BossIntro_Frame60` | 1 |  |
+| `Ani_Boulder_dying_Frame2` | 1 |  |
+| `Ani_Boulder_hit_Frame3` | 1 |  |
+| `Ani_BoyDino_attack_Frame2` | 1 |  |
+| `Ani_BoyDino_attack_Frame39` | 1 |  |
+| `Ani_BoyDino_cry_Frame151` | 1 |  |
+| `Ani_BoyDino_cry_Frame42` | 1 |  |
+| `Ani_BoyDino_cry_Frame6` | 1 |  |
+| `Ani_BoyDino_dashEnd_Frame2` | 1 |  |
+| `Ani_BoyDino_dashEnd_Frame4` | 1 |  |
+| `Ani_BoyDino_dashing_Frame14` | 1 |  |
+| `Ani_BoyDino_dashing_Frame22` | 1 |  |
+| `Ani_BoyDino_dashing_Frame33` | 1 |  |
+| `Ani_BoyDino_dashing_Frame4` | 1 |  |
+| `Ani_BoyDino_dashStart_Frame12` | 1 |  |
+| `Ani_BoyDino_dashStart_Frame2` | 1 |  |
+| `Ani_BoyDino_dying_Frame14` | 1 |  |
+| `Ani_BoyDino_dying_Frame2` | 1 |  |
+| `Ani_BoyDino_dying_Frame48` | 1 |  |
+| `Ani_BoyDino_hit_Frame2` | 1 |  |
+| `Ani_BoyDino_throw_Frame13` | 1 |  |
+| `Ani_BoyDino_throw_Frame2` | 1 |  |
+| `Ani_BoyDino_throw_Frame43` | 1 |  |
+| `Ani_BoyDino_throwCat_Frame13` | 1 |  |
+| `Ani_BoyDino_throwCat_Frame2` | 1 |  |
+| `Ani_BoyDino_throwCat_Frame43` | 1 |  |
+| `Ani_BoyDino_walk_Frame15` | 1 |  |
+| `Ani_BoyDino_walk_Frame2` | 1 |  |
+| `Ani_BrambleBaby_dying_Frame2` | 1 |  |
+| `Ani_BrambleBaby_entangle_Frame2` | 1 |  |
+| `Ani_BrambleBaby_hit_Frame3` | 1 |  |
+| `Ani_BrambleBaby_portin_Frame2` | 1 |  |
+| `Ani_BrambleBaby_portout_Frame2` | 1 |  |
+| `Ani_BrambleBaby_shoot_Frame2` | 1 |  |
+| `Ani_Bumblefoot_cryUp_Frame2` | 1 |  |
+| `Ani_Bumblefoot_diginDown_Frame2` | 1 |  |
+| `Ani_Bumblefoot_digoutDown_Frame2` | 1 |  |
+| `Ani_Bumblefoot_dyingDown_Frame132` | 1 |  |
+| `Ani_Bumblefoot_dyingDown_Frame2` | 1 |  |
+| `Ani_Bumblefoot_dyingUp_Frame132` | 1 |  |
+| `Ani_Bumblefoot_dyingUp_Frame2` | 1 |  |
+| `Ani_Bumblefoot_hitDown_Frame2` | 1 |  |
+| `Ani_Bumblefoot_hitUp_Frame2` | 1 |  |
+| `Ani_Bumblefoot_leapattackUp_Frame2` | 1 |  |
+| `Ani_Bumblefoot_leapattackwindupUp_Frame2` | 1 |  |
+| `Ani_Bumblefoot_revengeDown_Frame2` | 1 |  |
+| `Ani_Bumblefoot_shootDown_Frame2` | 1 |  |
+| `Ani_BungaElite1_attackCaveMan_Frame44` | 1 |  |
+| `Ani_BungaElite1_attackCaveMan_Frame49` | 1 |  |
+| `Ani_BungaElite1_attackCaveMan_Frame56` | 1 |  |
+| `Ani_BungaElite1_attackCaveMan_Frame79` | 1 |  |
+| `Ani_BungaElite1_chestpoundCaveMan_Frame29` | 1 |  |
+| `Ani_BungaElite1_chestpoundCaveMan_Frame57` | 1 |  |
+| `Ani_BungaElite1_chestpoundSpearCaveMan_Frame29` | 1 |  |
+| `Ani_BungaElite1_chestpoundSpearCaveMan_Frame57` | 1 |  |
+| `Ani_BungaElite1_dyingCaveMan_Frame10` | 1 |  |
+| `Ani_BungaElite1_dyingCaveMan_Frame37` | 1 |  |
+| `Ani_BungaElite1_dyingSpearCaveMan_Frame10` | 1 |  |
+| `Ani_BungaElite1_dyingSpearCaveMan_Frame37` | 1 |  |
+| `Ani_BungaElite1_hitCaveMan_Frame8` | 1 |  |
+| `Ani_BungaElite1_hitSpearCaveMan_Frame8` | 1 |  |
+| `Ani_BungaElite1_pickupCaveMan_Frame14` | 1 |  |
+| `Ani_BungaElite1_pickupCaveMan_Frame4` | 1 |  |
+| `Ani_BungaElite1_throwSpearCaveMan_Frame28` | 1 |  |
+| `Ani_BungaElite1_throwSpearCaveMan_Frame30` | 1 |  |
+| `Ani_BungaElite1_transformCaveMan_Frame14` | 1 |  |
+| `Ani_BungaElite1_transformCaveMan_Frame17` | 1 |  |
+| `Ani_BungaElite1_transformCaveMan_Frame52` | 1 |  |
+| `Ani_BungaElite1_transformSpearCaveMan_Frame12` | 1 |  |
+| `Ani_BungaElite1_transformSpearCaveMan_Frame14` | 1 |  |
+| `Ani_BungaElite1_transformSpearCaveMan_Frame17` | 1 |  |
+| `Ani_BungaElite1_transformSpearCaveMan_Frame52` | 1 |  |
+| `Ani_BungaElite1_walkCaveMan_Frame13` | 1 |  |
+| `Ani_BungaElite1_walkCaveMan_Frame4` | 1 |  |
+| `Ani_BungaElite1_walkSpearCaveMan_Frame21` | 1 |  |
+| `Ani_BungaElite1_walkSpearCaveMan_Frame5` | 1 |  |
+| `Ani_BungaElite2_attackCaveMan_Frame44` | 1 |  |
+| `Ani_BungaElite2_attackCaveMan_Frame49` | 1 |  |
+| `Ani_BungaElite2_attackCaveMan_Frame56` | 1 |  |
+| `Ani_BungaElite2_attackCaveMan_Frame79` | 1 |  |
+| `Ani_BungaElite2_chestpoundCaveMan_Frame29` | 1 |  |
+| `Ani_BungaElite2_chestpoundCaveMan_Frame57` | 1 |  |
+| `Ani_BungaElite2_chestpoundSpearCaveMan_Frame29` | 1 |  |
+| `Ani_BungaElite2_chestpoundSpearCaveMan_Frame57` | 1 |  |
+| `Ani_BungaElite2_dyingCaveMan_Frame10` | 1 |  |
+| `Ani_BungaElite2_dyingCaveMan_Frame37` | 1 |  |
+| `Ani_BungaElite2_dyingSpearCaveMan_Frame10` | 1 |  |
+| `Ani_BungaElite2_dyingSpearCaveMan_Frame37` | 1 |  |
+| `Ani_BungaElite2_hitCaveMan_Frame8` | 1 |  |
+| `Ani_BungaElite2_hitSpearCaveMan_Frame8` | 1 |  |
+| `Ani_BungaElite2_pickupCaveMan_Frame14` | 1 |  |
+| `Ani_BungaElite2_pickupCaveMan_Frame4` | 1 |  |
+| `Ani_BungaElite2_throwSpearCaveMan_Frame28` | 1 |  |
+| `Ani_BungaElite2_throwSpearCaveMan_Frame30` | 1 |  |
+| `Ani_BungaElite2_transformCaveMan_Frame14` | 1 |  |
+| `Ani_BungaElite2_transformCaveMan_Frame17` | 1 |  |
+| `Ani_BungaElite2_transformCaveMan_Frame52` | 1 |  |
+| `Ani_BungaElite2_transformSpearCaveMan_Frame12` | 1 |  |
+| `Ani_BungaElite2_transformSpearCaveMan_Frame14` | 1 |  |
+| `Ani_BungaElite2_transformSpearCaveMan_Frame17` | 1 |  |
+| `Ani_BungaElite2_transformSpearCaveMan_Frame52` | 1 |  |
+| `Ani_BungaElite2_walkCaveMan_Frame13` | 1 |  |
+| `Ani_BungaElite2_walkCaveMan_Frame4` | 1 |  |
+| `Ani_BungaElite2_walkSpearCaveMan_Frame21` | 1 |  |
+| `Ani_BungaElite2_walkSpearCaveMan_Frame5` | 1 |  |
+| `Ani_BungaThrone_dying_Frame2` | 1 |  |
+| `Ani_BunkerBoy_attackCultist_Frame18` | 1 |  |
+| `Ani_BunkerBoy_attackCultist_Frame25` | 1 |  |
+| `Ani_BunkerBoy_attackMutant_Frame10` | 1 |  |
+| `Ani_BunkerBoy_attackMutant_Frame56` | 1 |  |
+| `Ani_BunkerBoy_attackMutant_Frame9` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Fram42` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame12` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame16` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame22` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame28` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame43` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame46` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame61` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame64` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame65` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame79` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame81` | 1 |  |
+| `Ani_BunkerBoy_attackZealot_Frame83` | 1 |  |
+| `Ani_BunkerBoy_becomemutantCultist_Frame2` | 1 |  |
+| `Ani_BunkerBoy_becomemutantCultist_Frame3` | 1 |  |
+| `Ani_BunkerBoy_becomemutantZealot_Frame2` | 1 |  |
+| `Ani_BunkerBoy_becomemutantZealot_Frame3` | 1 |  |
+| `Ani_BunkerBoy_becomezealotCultist_Frame2` | 1 |  |
+| `Ani_BunkerBoy_becomezealotCultist_Frame3` | 1 |  |
+| `Ani_BunkerBoy_blessBishop_Frame2` | 1 |  |
+| `Ani_BunkerBoy_blessBishop_Frame3` | 1 |  |
+| `Ani_BunkerBoy_blessBishop_Frame65` | 1 |  |
+| `Ani_BunkerBoy_bombZealot_Frame21` | 1 |  |
+| `Ani_BunkerBoy_cutZealot_Frame46` | 1 |  |
+| `Ani_BunkerBoy_cutZealot_Frame48` | 1 |  |
+| `Ani_BunkerBoy_cutZealot_Frame89` | 1 |  |
+| `Ani_BunkerBoy_cutZealot_Frame9` | 1 |  |
+| `Ani_BunkerBoy_dyingBishop_Frame10` | 1 |  |
+| `Ani_BunkerBoy_dyingBishop_Frame63` | 1 |  |
+| `Ani_BunkerBoy_dyingCultist_Frame2` | 1 |  |
+| `Ani_BunkerBoy_dyingCultist_Frame4` | 1 |  |
+| `Ani_BunkerBoy_dyingMutant_Frame12` | 1 |  |
+| `Ani_BunkerBoy_dyingMutant_Frame4` | 1 |  |
+| `Ani_BunkerBoy_dyingMutant_Frame45` | 1 |  |
+| `Ani_BunkerBoy_dyingMutant_Frame71` | 1 |  |
+| `Ani_BunkerBoy_dyingMutant_Frame93` | 1 |  |
+| `Ani_BunkerBoy_dyingZealot_Frame20` | 1 |  |
+| `Ani_BunkerBoy_dyingZealot_Frame34` | 1 |  |
+| `Ani_BunkerBoy_dyingZealot_Frame4` | 1 |  |
+| `Ani_BunkerBoy_explodeBombZealot_Frame2` | 1 |  |
+| `Ani_BunkerBoy_explodeBombZealot_Frame27` | 1 |  |
+| `Ani_BunkerBoy_hitBishop_Frame6` | 1 |  |
+| `Ani_BunkerBoy_hitBombZealot_Frame6` | 1 |  |
+| `Ani_BunkerBoy_hitCultist_Frame3` | 1 |  |
+| `Ani_BunkerBoy_hitMutant_Frame5` | 1 |  |
+| `Ani_BunkerBoy_hitZealot_Frame6` | 1 |  |
+| `Ani_BunkerBoy_idleBombZealot_Loop` | 1 |  |
+| `Ani_BunkerBoy_lungeCultist_Frame2` | 1 |  |
+| `Ani_BunkerBoy_lungeCultist_Frame3` | 1 |  |
+| `Ani_BunkerBoy_pickupCultist_Frame2` | 1 |  |
+| `Ani_BunkerBoy_pickupCultist_Frame50` | 1 |  |
+| `Ani_BunkerBoy_pickupZealot_Frame2` | 1 |  |
+| `Ani_BunkerBoy_pickupZealot_Frame50` | 1 |  |
+| `Ani_BunkerBoy_smileBishop_Frame2` | 1 |  |
+| `Ani_BunkerBoy_spellBishop_Frame2` | 1 |  |
+| `Ani_BunkerBoy_spellBishop_Frame3` | 1 |  |
+| `Ani_BunkerBoy_spellBishop_Frame40` | 1 |  |
+| `Ani_BunkerBoy_spinZealot_Frame11` | 1 |  |
+| `Ani_BunkerBoy_spinZealot_Frame18` | 1 |  |
+| `Ani_BunkerBoy_summonspawninCultist_Frame2` | 1 |  |
+| `Ani_BunkerBoy_summonspawninCultist_Frame3` | 1 |  |
+| `Ani_BunkerBoy_throwCultist_Frame2` | 1 |  |
+| `Ani_BunkerBoy_throwCultist_Frame3` | 1 |  |
+| `Ani_BunkerBoy_walkBishop_Loop` | 1 |  |
+| `Ani_BunkerBoy_walkBombZealot_Frame25` | 1 |  |
+| `Ani_BunkerBoy_walkBombZealot_Frame6` | 1 |  |
+| `Ani_BunkerBoy_walkBombZealot_Loop` | 1 |  |
+| `Ani_BunkerBoy_walkCultist_Frame10` | 1 |  |
+| `Ani_BunkerBoy_walkCultist_Frame31` | 1 |  |
+| `Ani_BunkerBoy_walkMutant_Frame17` | 1 |  |
+| `Ani_BunkerBoy_walkMutant_Frame64` | 1 |  |
+| `Ani_BunkerBoy_walkZealot_Frame18` | 1 |  |
+| `Ani_BunkerBoy_walkZealot_Frame5` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame142` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame15` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame168` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame2` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame218` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame247` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame283` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame43` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame59` | 1 |  |
+| `Ani_BunkerBoy_wash_Frame98` | 1 |  |
+| `Ani_BunkerBoy_weakBombZealot_Loop` | 1 |  |
+| `Ani_BunkeryBoy_hitBombZealot_Frame2` | 1 |  |
+| `Ani_Burfer_dying_Frame2` | 1 |  |
+| `Ani_Burfer_hit_Frame2` | 1 |  |
+| `Ani_Burfer_shoot_Frame2` | 1 |  |
+| `Ani_Burfer_walk_Frame3` | 1 |  |
+| `Ani_ButchTinkX_dash_Loop` | 1 |  |
+| `Ani_ButchTinkX_dashend_Frame2` | 1 |  |
+| `Ani_ButchTinkX_dashstart_Frame2` | 1 |  |
+| `Ani_ButchTinkX_dashstart_Frame3` | 1 |  |
+| `Ani_ButchTinkX_dying_Frame2` | 1 |  |
+| `Ani_ButchTinkX_dying_Frame3` | 1 |  |
+| `Ani_ButchTinkX_hit_Frame3` | 1 |  |
+| `Ani_ButchTinkX_walk_Frame2` | 1 |  |
+| `Ani_C1000Clot_dying_Frame2` | 1 |  |
+| `Ani_C1000Clot_hit_Frame2` | 1 |  |
+| `Ani_C1000Clot_pulse_Frame2` | 1 |  |
+| `Ani_C1000Clot_walk_Frame20` | 1 |  |
+| `Ani_C1000Clot_walk_Frame4` | 1 |  |
+| `Ani_CanCreeper_dying_Frame3` | 1 |  |
+| `Ani_CanCreeper_dying_Frame8` | 1 |  |
+| `Ani_CanCreeper_hit_Frame4` | 1 |  |
+| `Ani_CanCreeper_launchStart_Frame14` | 1 |  |
+| `Ani_CanCreeper_launchStart_Frame60` | 1 |  |
+| `Ani_CanCreeper_shoot_Frame46` | 1 |  |
+| `Ani_CanCreeper_walk_Frame2` | 1 |  |
+| `Ani_CanCreeperOut_dying_Frame2` | 1 |  |
+| `Ani_CanCreeperOut_enterWater_Frame2` | 1 |  |
+| `Ani_CanCreeperOut_exitWater_Frame2` | 1 |  |
+| `Ani_CanCreeperOut_hit_Frame14` | 1 |  |
+| `Ani_CanCreeperOut_hit_Frame2` | 1 |  |
+| `Ani_CanCreeperOut_shoot_Frame2` | 1 |  |
+| `Ani_CanCreeperOut_walk_Frame2` | 1 |  |
+| `Ani_Carcus_dying_Frame2` | 1 |  |
+| `Ani_Carcus_hit_Frame2` | 1 |  |
+| `Ani_Carcus_spawn_Frame2` | 1 |  |
+| `Ani_Carnibulb_dying_Frame2` | 1 |  |
+| `Ani_Carnibulb_eat_Frame2` | 1 |  |
+| `Ani_Carnibulb_hit_Frame2` | 1 |  |
+| `Ani_Carnibulb_spawn_Frame2` | 1 |  |
+| `Ani_Carnibulb_walk_Frame2` | 1 |  |
+| `Ani_Cat_angryfail_Frame2` | 1 |  |
+| `Ani_Cat_attack_Frame2` | 1 |  |
+| `Ani_Cat_backflipEnd_Frame6` | 1 |  |
+| `Ani_Cat_backflipLoop_Frame2` | 1 |  |
+| `Ani_Cat_backflipLoop_Frame3` | 1 |  |
+| `Ani_Cat_bearHug_Frame2` | 1 |  |
+| `Ani_Cat_bigdoubleswat_Frame22` | 1 |  |
+| `Ani_Cat_bigdoubleswat_Frame5` | 1 |  |
+| `Ani_Cat_bigkick_Frame2` | 1 |  |
+| `Ani_Cat_bigkick_Frame9` | 1 |  |
+| `Ani_Cat_biteattack_Frame12` | 1 |  |
+| `Ani_Cat_block_Frame2` | 1 |  |
+| `Ani_Cat_blowKiss_Frame25` | 1 |  |
+| `Ani_Cat_blowUp_Frame2` | 1 |  |
+| `Ani_Cat_brace_Frame2` | 1 |  |
+| `Ani_Cat_bruise_Frame2` | 1 |  |
+| `Ani_Cat_buildRobot_Frame106` | 1 |  |
+| `Ani_Cat_buildRobot_Frame123` | 1 |  |
+| `Ani_Cat_buildRobot_Frame162` | 1 |  |
+| `Ani_Cat_buildRobot_Frame2` | 1 |  |
+| `Ani_Cat_buildRobot_Frame69` | 1 |  |
+| `Ani_Cat_buildRobotProjectile_Frame120` | 1 |  |
+| `Ani_Cat_buildRobotProjectile_Frame124` | 1 |  |
+| `Ani_Cat_buildRobotProjectile_Frame144` | 1 |  |
+| `Ani_Cat_buildRobotProjectile_Frame44` | 1 |  |
+| `Ani_Cat_buildRobotProjectile_Frame5` | 1 |  |
+| `Ani_Cat_buildRobotProjectile_Frame77` | 1 |  |
+| `Ani_Cat_buildRobotProjectile_Frame86` | 1 |  |
+| `Ani_Cat_burp_Frame26` | 1 |  |
+| `Ani_Cat_butcherAttack_Frame13` | 1 |  |
+| `Ani_Cat_ButcherStartTurn_Frame22` | 1 |  |
+| `Ani_Cat_ButcherStartTurn_Frame32` | 1 |  |
+| `Ani_Cat_ButcherStartTurn_Frame5` | 1 |  |
+| `Ani_Cat_ButcherStartTurn_Frame74` | 1 |  |
+| `Ani_Cat_buttScoot_Frame2` | 1 |  |
+| `Ani_Cat_buttScootEnd_Frame24` | 1 |  |
+| `Ani_Cat_buttScootLoop_Frame2` | 1 |  |
+| `Ani_Cat_buttScootStart_Frame2` | 1 |  |
+| `Ani_Cat_cannonball_Frame12` | 1 |  |
+| `Ani_Cat_cannonBallSplash_Frame9` | 1 |  |
+| `Ani_Cat_cartwheel_Frame24` | 1 |  |
+| `Ani_Cat_cartwheel_Frame5` | 1 |  |
+| `Ani_Cat_cartwheel_Frame71` | 1 |  |
+| `Ani_Cat_cartwheel_Frame77` | 1 |  |
+| `Ani_Cat_cartwheelEnd_Frame30` | 1 |  |
+| `Ani_Cat_cartwheelEnd_Frame5` | 1 |  |
+| `Ani_Cat_cartwheelLoop_Frame2` | 1 |  |
+| `Ani_Cat_cartwheelStart_Frame5` | 1 |  |
+| `Ani_Cat_castspell_Frame15` | 1 |  |
+| `Ani_Cat_castspell_Frame2` | 1 |  |
+| `Ani_Cat_castspell_Frame42` | 1 |  |
+| `Ani_Cat_catch_Frame10` | 1 |  |
+| `Ani_Cat_catch_Frame2` | 1 |  |
+| `Ani_Cat_catchAndThrow_Frame14` | 1 |  |
+| `Ani_Cat_catchAndThrow_Frame2` | 1 |  |
+| `Ani_Cat_catchAndThrow_Frame22` | 1 |  |
+| `Ani_Cat_catchAndThrow_Frame37` | 1 |  |
+| `Ani_Cat_celebrate_Frame2` | 1 |  |
+| `Ani_Cat_celebrate_Frame39` | 1 |  |
+| `Ani_Cat_cheat_Frame2` | 1 |  |
+| `Ani_Cat_cheat_Frame78` | 1 |  |
+| `Ani_Cat_chewcud_Frame125` | 1 |  |
+| `Ani_Cat_chewcud_Frame17` | 1 |  |
+| `Ani_Cat_chuckle_Frame5` | 1 |  |
+| `Ani_Cat_clapTogether_Frame40` | 1 |  |
+| `Ani_Cat_clapTogether_Frame6` | 1 |  |
+| `Ani_Cat_clapTogether_Frame65` | 1 |  |
+| `Ani_Cat_clotTransform_Frame2` | 1 |  |
+| `Ani_Cat_coinFlip_Frame28` | 1 |  |
+| `Ani_Cat_coinFlip_Frame69` | 1 |  |
+| `Ani_Cat_createmagic_Frame2` | 1 |  |
+| `Ani_Cat_createmagic_Frame41` | 1 |  |
+| `Ani_Cat_dash_Frame19` | 1 |  |
+| `Ani_Cat_dash_Frame7` | 1 |  |
+| `Ani_Cat_dashatk_Frame2` | 1 |  |
+| `Ani_Cat_dashbite_Frame2` | 1 |  |
+| `Ani_Cat_death10_Frame2` | 1 |  |
+| `Ani_Cat_death1_Frame2` | 1 |  |
+| `Ani_Cat_death2_Frame2` | 1 |  |
+| `Ani_Cat_death3_Frame2` | 1 |  |
+| `Ani_Cat_death4_Frame2` | 1 |  |
+| `Ani_Cat_death5_Frame2` | 1 |  |
+| `Ani_Cat_death6_Frame2` | 1 |  |
+| `Ani_Cat_death7_Frame2` | 1 |  |
+| `Ani_Cat_death8_Frame2` | 1 |  |
+| `Ani_Cat_death9_Frame2` | 1 |  |
+| `Ani_Cat_dig_Frame2` | 1 |  |
+| `Ani_Cat_digDown_Frame11` | 1 |  |
+| `Ani_Cat_digUp_Frame2` | 1 |  |
+| `Ani_Cat_dodge_Frame2` | 1 |  |
+| `Ani_Cat_donkeykick_Frame13` | 1 |  |
+| `Ani_Cat_doubleswat_Frame22` | 1 |  |
+| `Ani_Cat_doubleswat_Frame7` | 1 |  |
+| `Ani_Cat_dramaticpoint_Frame102` | 1 |  |
+| `Ani_Cat_dramaticpoint_Frame2` | 1 |  |
+| `Ani_Cat_drinkTrinket_Frame10` | 1 |  |
+| `Ani_Cat_driveWalk_Loop` | 1 |  |
+| `Ani_Cat_DruidStartTurn_Frame2` | 1 |  |
+| `Ani_Cat_druidTransform_Frame2` | 1 |  |
+| `Ani_Cat_dryHeave_Frame15` | 1 |  |
+| `Ani_Cat_dryHeave_Frame2` | 1 |  |
+| `Ani_Cat_dryHeave_Frame35` | 1 |  |
+| `Ani_Cat_dryHeave_Frame55` | 1 |  |
+| `Ani_Cat_dying_Frame2` | 1 |  |
+| `Ani_Cat_eagleeye_Frame2` | 1 |  |
+| `Ani_Cat_eagleeye_Frame63` | 1 |  |
+| `Ani_Cat_earthquakeSlam_Frame22` | 1 |  |
+| `Ani_Cat_earthquakeSlam_Frame26` | 1 |  |
+| `Ani_Cat_earthquakeSlam_Frame5` | 1 |  |
+| `Ani_Cat_eatTrinket_Frame2` | 1 |  |
+| `Ani_Cat_eatTrinket_Frame37` | 1 |  |
+| `Ani_Cat_equipTrinket_Frame2` | 1 |  |
+| `Ani_Cat_equipWeapon_Frame2` | 1 |  |
+| `Ani_Cat_evilMagic_Frame2` | 1 |  |
+| `Ani_Cat_extendRange_Frame7` | 1 |  |
+| `Ani_Cat_extendRange_Frame71` | 1 |  |
+| `Ani_Cat_fail_Frame2` | 1 |  |
+| `Ani_Cat_falconPunch_Frame2` | 1 |  |
+| `Ani_Cat_fallingClawsBland_Frame23` | 1 |  |
+| `Ani_Cat_fallingClawsBland_Frame6` | 1 |  |
+| `Ani_Cat_fallingClawsBstart_Frame2` | 1 |  |
+| `Ani_Cat_fallingClawsFland_Frame23` | 1 |  |
+| `Ani_Cat_fallingClawsFland_Frame6` | 1 |  |
+| `Ani_Cat_fallingClawsFstart_Frame2` | 1 |  |
+| `Ani_Cat_fartoom_Frame10` | 1 |  |
+| `Ani_Cat_fartoom_Frame75` | 1 |  |
+| `Ani_Cat_fastthrowend_Frame7` | 1 |  |
+| `Ani_Cat_fastthrowloop_Frame2` | 1 |  |
+| `Ani_Cat_fastthrowstart_Frame5` | 1 |  |
+| `Ani_Cat_fattyWalk_Frame12` | 1 |  |
+| `Ani_Cat_fattyWalk_Frame28` | 1 |  |
+| `Ani_Cat_fattyWalk_Frame36` | 1 |  |
+| `Ani_Cat_FighterStartTurn_Frame35` | 1 |  |
+| `Ani_Cat_FighterStartTurn_Frame7` | 1 |  |
+| `Ani_Cat_flashkick_Frame10` | 1 |  |
+| `Ani_Cat_flashkick_Frame12` | 1 |  |
+| `Ani_Cat_flashkick_Frame38` | 1 |  |
+| `Ani_Cat_flex_Frame12` | 1 |  |
+| `Ani_Cat_flipCoinFail_Frame2` | 1 |  |
+| `Ani_Cat_flipCoinFail_Frame40` | 1 |  |
+| `Ani_Cat_flipCoinFail_Frame59` | 1 |  |
+| `Ani_Cat_floatingmagic_Frame2` | 1 |  |
+| `Ani_Cat_floatingmagic_Frame81` | 1 |  |
+| `Ani_Cat_groundpound_Frame25` | 1 |  |
+| `Ani_Cat_groundpound_Frame30` | 1 |  |
+| `Ani_Cat_groundpound_Frame5` | 1 |  |
+| `Ani_Cat_gulp_Frame2` | 1 |  |
+| `Ani_Cat_hadouken_Frame2` | 1 |  |
+| `Ani_Cat_hairballatk_Frame2` | 1 |  |
+| `Ani_Cat_heabutt_Frame2` | 1 |  |
+| `Ani_Cat_heabuttdashStart_Frame2` | 1 |  |
+| `Ani_Cat_headBash_Frame19` | 1 |  |
+| `Ani_Cat_headBash_Frame36` | 1 |  |
+| `Ani_Cat_headbutt_Frame2` | 1 |  |
+| `Ani_Cat_headbuttdash_Frame19` | 1 |  |
+| `Ani_Cat_headbuttdash_Frame2` | 1 |  |
+| `Ani_Cat_headbuttdash_Frame8` | 1 |  |
+| `Ani_Cat_headbuttdashEnd_Frame2` | 1 |  |
+| `Ani_Cat_headbuttdashStart_Frame11` | 1 |  |
+| `Ani_Cat_headbuttdashStart_Frame15` | 1 |  |
+| `Ani_Cat_headbuttdashStart_Frame2` | 1 |  |
+| `Ani_Cat_headbuttdashStart_Frame6` | 1 |  |
+| `Ani_Cat_headbuttdashStart_Frame8` | 1 |  |
+| `Ani_Cat_headbuttUppercut_Frame2` | 1 |  |
+| `Ani_Cat_HealerStartTurn_Frame33` | 1 |  |
+| `Ani_Cat_heaviestMelee_Frame2` | 1 |  |
+| `Ani_Cat_heaviestMelee_Frame23` | 1 |  |
+| `Ani_Cat_heavyMelee_Frame19` | 1 |  |
+| `Ani_Cat_hit_land2_Frame6` | 1 |  |
+| `Ani_Cat_hit_land_Frame6` | 1 |  |
+| `Ani_Cat_hithard_Frame2` | 1 |  |
+| `Ani_Cat_hitup_Frame2` | 1 |  |
+| `Ani_Cat_invthrow_Frame25` | 1 |  |
+| `Ani_Cat_invthrow_Frame38` | 1 |  |
+| `Ani_Cat_JesterStartTurn_Frame18` | 1 |  |
+| `Ani_Cat_JesterStartTurn_Frame5` | 1 |  |
+| `Ani_Cat_JesterStartTurn_Frame78` | 1 |  |
+| `Ani_Cat_jump2_Frame16` | 1 |  |
+| `Ani_Cat_jump2_Frame2` | 1 |  |
+| `Ani_Cat_jump_Frame14` | 1 |  |
+| `Ani_Cat_jump_Frame2` | 1 |  |
+| `Ani_Cat_karateKid_Frame2` | 1 |  |
+| `Ani_Cat_karateKid_Frame42` | 1 |  |
+| `Ani_Cat_kicksand_Frame29` | 1 |  |
+| `Ani_Cat_kicksand_Frame45` | 1 |  |
+| `Ani_Cat_kicksand_Frame8` | 1 |  |
+| `Ani_Cat_knead_Frame19` | 1 |  |
+| `Ani_Cat_knead_Frame31` | 1 |  |
+| `Ani_Cat_knead_Frame43` | 1 |  |
+| `Ani_Cat_knead_Frame61` | 1 |  |
+| `Ani_Cat_knead_Frame73` | 1 |  |
+| `Ani_Cat_knead_Frame91` | 1 |  |
+| `Ani_Cat_knockswatatk_Frame10` | 1 |  |
+| `Ani_Cat_knockswatatk_Frame2` | 1 |  |
+| `Ani_Cat_knockup_Frame14` | 1 |  |
+| `Ani_Cat_knockup_Frame2` | 1 |  |
+| `Ani_Cat_knockupatk_Frame14` | 1 |  |
+| `Ani_Cat_land2_Frame6` | 1 |  |
+| `Ani_Cat_land_Frame6` | 1 |  |
+| `Ani_Cat_legslide_Frame2` | 1 |  |
+| `Ani_Cat_legslide_Frame47` | 1 |  |
+| `Ani_Cat_lickAttack_Frame2` | 1 |  |
+| `Ani_Cat_liquidclone_Frame2` | 1 |  |
+| `Ani_Cat_liquidmetaldodge_Frame2` | 1 |  |
+| `Ani_Cat_liquidmetalspear_Frame2` | 1 |  |
+| `Ani_Cat_liquidteleportIn_Frame2` | 1 |  |
+| `Ani_Cat_liquidteleportOut_Frame2` | 1 |  |
+| `Ani_Cat_liquidunclone_Frame2` | 1 |  |
+| `Ani_Cat_MageStartTurn_Frame43` | 1 |  |
+| `Ani_Cat_MageStartTurn_Frame7` | 1 |  |
+| `Ani_Cat_majormagic_Frame2` | 1 |  |
+| `Ani_Cat_meditate_Frame41` | 1 |  |
+| `Ani_Cat_meditate_Frame5` | 1 |  |
+| `Ani_Cat_megaslap_Frame242` | 1 |  |
+| `Ani_Cat_megaslap_Frame274` | 1 |  |
+| `Ani_Cat_megaslap_Frame28` | 1 |  |
+| `Ani_Cat_megaslap_Frame5` | 1 |  |
+| `Ani_Cat_metronome_Frame2` | 1 |  |
+| `Ani_Cat_metronome_Frame38` | 1 |  |
+| `Ani_Cat_metronome_Frame55` | 1 |  |
+| `Ani_Cat_metronome_Frame70` | 1 |  |
+| `Ani_Cat_metronome_Frame85` | 1 |  |
+| `Ani_Cat_metronome_Frame99` | 1 |  |
+| `Ani_Cat_MonkStartTurn_Frame18` | 1 |  |
+| `Ani_Cat_MonkStartTurn_Frame20` | 1 |  |
+| `Ani_Cat_MonkStartTurn_Frame42` | 1 |  |
+| `Ani_Cat_MonkStartTurn_Frame52` | 1 |  |
+| `Ani_Cat_pawground_Frame2` | 1 |  |
+| `Ani_Cat_pay_Frame2` | 1 |  |
+| `Ani_Cat_pay_Frame34` | 1 |  |
+| `Ani_Cat_peekaBoo_Frame50` | 1 |  |
+| `Ani_Cat_pickpocket_Frame45` | 1 |  |
+| `Ani_Cat_pickpocket_Frame48` | 1 |  |
+| `Ani_Cat_pickpocket_Frame49` | 1 |  |
+| `Ani_Cat_pissYourself_Frame2` | 1 |  |
+| `Ani_Cat_pissYourself_Frame8` | 1 |  |
+| `Ani_Cat_pointheal_Frame2` | 1 |  |
+| `Ani_Cat_pointout_Frame2` | 1 |  |
+| `Ani_Cat_poofIntoExistance_Frame2` | 1 |  |
+| `Ani_Cat_poofOutOfExistance_Frame2` | 1 |  |
+| `Ani_Cat_poopfart_Frame2` | 1 |  |
+| `Ani_Cat_poopfart_Frame40` | 1 |  |
+| `Ani_Cat_poopfart_Frame65` | 1 |  |
+| `Ani_Cat_poopfartbehind_Frame40` | 1 |  |
+| `Ani_Cat_portin_Frame2` | 1 |  |
+| `Ani_Cat_portout_Frame2` | 1 |  |
+| `Ani_Cat_pray_Frame2` | 1 |  |
+| `Ani_Cat_propelEnd_Frame16` | 1 |  |
+| `Ani_Cat_propelEnd_Frame2` | 1 |  |
+| `Ani_Cat_propelLoop_Frame2` | 1 |  |
+| `Ani_Cat_propelStart_Frame2` | 1 |  |
+| `Ani_Cat_proud_Frame2` | 1 |  |
+| `Ani_Cat_proud_Frame58` | 1 |  |
+| `Ani_Cat_prouder_Frame2` | 1 |  |
+| `Ani_Cat_prouder_Frame50` | 1 |  |
+| `Ani_Cat_psyAttack1_Frame10` | 1 |  |
+| `Ani_Cat_psyAttack1_Frame26` | 1 |  |
+| `Ani_Cat_psyAttack2_Frame87` | 1 |  |
+| `Ani_Cat_psyAttack3_Frame2` | 1 |  |
+| `Ani_Cat_psyAttack3_Frame21` | 1 |  |
+| `Ani_Cat_PsychicStartTurn_Frame22` | 1 |  |
+| `Ani_Cat_psyMegaAttack_Frame27` | 1 |  |
+| `Ani_Cat_psyMegaAttack_Frame9` | 1 |  |
+| `Ani_Cat_pukeatk_Frame2` | 1 |  |
+| `Ani_Cat_punchSelf_Frame2` | 1 |  |
+| `Ani_Cat_punchSelf_Frame25` | 1 |  |
+| `Ani_Cat_quarterswipe_Frame8` | 1 |  |
+| `Ani_Cat_Quiver_Frame2` | 1 |  |
+| `Ani_Cat_Quiver_Frame45` | 1 |  |
+| `Ani_Cat_radiant_Frame12` | 1 |  |
+| `Ani_Cat_raptorWalk_Frame16` | 1 |  |
+| `Ani_Cat_raptorWalk_Frame2` | 1 |  |
+| `Ani_Cat_revive_Frame2` | 1 |  |
+| `Ani_Cat_riseFromDowned_Frame2` | 1 |  |
+| `Ani_Cat_robotWalk_Frame14` | 1 |  |
+| `Ani_Cat_robotWalk_Frame3` | 1 |  |
+| `Ani_Cat_robotWalk_Frame9` | 1 |  |
+| `Ani_Cat_rocketRun_Frame2` | 1 |  |
+| `Ani_Cat_roll_Frame2` | 1 |  |
+| `Ani_Cat_scorpionSting_Frame18` | 1 |  |
+| `Ani_Cat_scorpionSting_Frame2` | 1 |  |
+| `Ani_Cat_scratchear_Frame19` | 1 |  |
+| `Ani_Cat_scratchear_Frame2` | 1 |  |
+| `Ani_Cat_scratchear_Frame35` | 1 |  |
+| `Ani_Cat_scratchear_Frame46` | 1 |  |
+| `Ani_Cat_selfHarm_Frame25` | 1 |  |
+| `Ani_Cat_selfHarm_Frame29` | 1 |  |
+| `Ani_Cat_selfHarm_Frame4` | 1 |  |
+| `Ani_Cat_shadowStepIn_Frame2` | 1 |  |
+| `Ani_Cat_shadowStepOut_Frame2` | 1 |  |
+| `Ani_Cat_shoulder_Frame7` | 1 |  |
+| `Ani_Cat_showTrinket_Frame2` | 1 |  |
+| `Ani_Cat_showTrinket_Frame33` | 1 |  |
+| `Ani_Cat_shred_Frame2` | 1 |  |
+| `Ani_Cat_shred_Frame30` | 1 |  |
+| `Ani_Cat_singleSpin_Frame2` | 1 |  |
+| `Ani_Cat_skeletonDie_Frame2` | 1 |  |
+| `Ani_Cat_skeletonDying_Frame2` | 1 |  |
+| `Ani_Cat_skeletonRevive_Frame5` | 1 |  |
+| `Ani_Cat_skeletonRevive_Frame73` | 1 |  |
+| `Ani_Cat_sleepEnd_Frame2` | 1 |  |
+| `Ani_Cat_sleepEnd_Frame76` | 1 |  |
+| `Ani_Cat_sleepStart_Frame2` | 1 |  |
+| `Ani_Cat_sliceOpen_Frame23` | 1 |  |
+| `Ani_Cat_slidekick_Frame15` | 1 |  |
+| `Ani_Cat_slidekick_Frame22` | 1 |  |
+| `Ani_Cat_soulLeavingBodyDeath_Frame2` | 1 |  |
+| `Ani_Cat_spinAttack_Frame2` | 1 |  |
+| `Ani_Cat_spinattackend_Frame2` | 1 |  |
+| `Ani_Cat_spinattackend_Frame28` | 1 |  |
+| `Ani_Cat_spinattackloop_Frame2` | 1 |  |
+| `Ani_Cat_spinattackstart_Frame2` | 1 |  |
+| `Ani_Cat_splashatk_Frame2` | 1 |  |
+| `Ani_Cat_splashatk_Frame25` | 1 |  |
+| `Ani_Cat_splashattack_Frame7` | 1 |  |
+| `Ani_Cat_statdown_Frame2` | 1 |  |
+| `Ani_Cat_statup_Frame2` | 1 |  |
+| `Ani_Cat_stompwalk_Frame14` | 1 |  |
+| `Ani_Cat_stompwalk_Frame2` | 1 |  |
+| `Ani_Cat_stompwalk_Frame32` | 1 |  |
+| `Ani_Cat_stompwalk_Frame44` | 1 |  |
+| `Ani_Cat_stoneFists_Frame2` | 1 |  |
+| `Ani_Cat_summonriseup_Frame2` | 1 |  |
+| `Ani_Cat_suplex_Frame11` | 1 |  |
+| `Ani_Cat_suplex_Frame2` | 1 |  |
+| `Ani_Cat_suplex_Frame27` | 1 |  |
+| `Ani_Cat_swatupatk_Frame10` | 1 |  |
+| `Ani_Cat_swipeatk_Frame16` | 1 |  |
+| `Ani_Cat_swipeatk_Frame6` | 1 |  |
+| `Ani_Cat_tailwhip_Frame14` | 1 |  |
+| `Ani_Cat_tailwhip_Frame7` | 1 |  |
+| `Ani_Cat_TankStartTurn_Frame27` | 1 |  |
+| `Ani_Cat_TankStartTurn_Frame6` | 1 |  |
+| `Ani_Cat_tapatk_Frame2` | 1 |  |
+| `Ani_Cat_tauntwiggle_Frame18` | 1 |  |
+| `Ani_Cat_tauntwiggle_Frame2` | 1 |  |
+| `Ani_Cat_teleportIn_Frame2` | 1 |  |
+| `Ani_Cat_teleportOut_Frame2` | 1 |  |
+| `Ani_Cat_terminatorPunch_Frame2` | 1 |  |
+| `Ani_Cat_terminatorPunchCat_Frame2` | 1 |  |
+| `Ani_Cat_throwArrow_Frame11` | 1 |  |
+| `Ani_Cat_throwArrow_Frame36` | 1 |  |
+| `Ani_Cat_throwbigelement_Frame57` | 1 |  |
+| `Ani_Cat_throwbigelement_Frame8` | 1 |  |
+| `Ani_Cat_throwelement_Frame2` | 1 |  |
+| `Ani_Cat_throwelement_Frame64` | 1 |  |
+| `Ani_Cat_throwobject_Frame26` | 1 |  |
+| `Ani_Cat_throwobject_Frame7` | 1 |  |
+| `Ani_Cat_throwsmallelement_Frame28` | 1 |  |
+| `Ani_Cat_throwsmallelement_Frame7` | 1 |  |
+| `Ani_Cat_thumbsup_Frame2` | 1 |  |
+| `Ani_Cat_thumbsup_Frame30` | 1 |  |
+| `Ani_Cat_timberEnd_Frame2` | 1 |  |
+| `Ani_Cat_timberStart_Frame2` | 1 |  |
+| `Ani_Cat_timberStart_Frame66` | 1 |  |
+| `Ani_Cat_tinker_Frame2` | 1 |  |
+| `Ani_Cat_tinkerAdjacent_Frame2` | 1 |  |
+| `Ani_Cat_tinkerAdjacent_Frame23` | 1 |  |
+| `Ani_Cat_tinkerAdjacent_Frame25` | 1 |  |
+| `Ani_Cat_tinkerAdjacent_Frame49` | 1 |  |
+| `Ani_Cat_TinkererStartTurn_Frame2` | 1 |  |
+| `Ani_Cat_tinkerSelf_Frame54` | 1 |  |
+| `Ani_Cat_tinkerSelf_Frame73` | 1 |  |
+| `Ani_Cat_tinyPunch_Frame11` | 1 |  |
+| `Ani_Cat_tinyPunch_Frame2` | 1 |  |
+| `Ani_Cat_transformPoof_Frame2` | 1 |  |
+| `Ani_Cat_trip_Frame8` | 1 |  |
+| `Ani_Cat_tripleswat_Frame15` | 1 |  |
+| `Ani_Cat_tripleswat_Frame30` | 1 |  |
+| `Ani_Cat_tripleswat_Frame39` | 1 |  |
+| `Ani_Cat_tripleswat_Frame6` | 1 |  |
+| `Ani_Cat_uppercutatk_Frame21` | 1 |  |
+| `Ani_Cat_uppercutatk_Frame23` | 1 |  |
+| `Ani_Cat_uppercutatk_Frame58` | 1 |  |
+| `Ani_Cat_uziShoot_Frame2` | 1 |  |
+| `Ani_Cat_uziShoot_Frame67` | 1 |  |
+| `Ani_Cat_walk_Frame17` | 1 |  |
+| `Ani_Cat_walk_Frame20` | 1 |  |
+| `Ani_Cat_walk_Frame3` | 1 |  |
+| `Ani_Cat_walk_Frame6` | 1 |  |
+| `Ani_Cat_weaponAbsorb_Frame5` | 1 |  |
+| `Ani_Cat_weaponpoke_Frame12` | 1 |  |
+| `Ani_Cat_weaponshoot_Frame2` | 1 |  |
+| `Ani_Cat_weaponshoot_Frame4` | 1 |  |
+| `Ani_Cat_weaponshoot_Frame62` | 1 |  |
+| `Ani_Cat_weaponslam_Frame12` | 1 |  |
+| `Ani_Cat_weaponspell2_Frame3` | 1 |  |
+| `Ani_Cat_weaponspell2_Frame35` | 1 |  |
+| `Ani_Cat_weaponspell2_Frame39` | 1 |  |
+| `Ani_Cat_weaponspell3_Frame2` | 1 |  |
+| `Ani_Cat_weaponspell3_Frame25` | 1 |  |
+| `Ani_Cat_weaponspell3_Frame61` | 1 |  |
+| `Ani_Cat_weaponspell_Frame2` | 1 |  |
+| `Ani_Cat_weaponspell_Frame26` | 1 |  |
+| `Ani_Cat_weaponspell_Frame56` | 1 |  |
+| `Ani_Cat_weaponSpinAttack_Frame2` | 1 |  |
+| `Ani_Cat_weaponstab_Frame12` | 1 |  |
+| `Ani_Cat_weaponswing_Frame12` | 1 |  |
+| `Ani_Cat_weaponswingup_Frame12` | 1 |  |
+| `Ani_Cat_weaponthrowhigh_Frame12` | 1 |  |
+| `Ani_Cat_weaponthrowstraight_Frame12` | 1 |  |
+| `Ani_Cat_weaponTina_Frame5` | 1 |  |
+| `Ani_Cat_whistle_Frame20` | 1 |  |
+| `Ani_Cat_whistleSummon_Frame2` | 1 |  |
+| `Ani_Cat_whistleSummon_Frame36` | 1 |  |
+| `Ani_Cat_zombieWalk_Frame12` | 1 |  |
+| `Ani_Cat_zombieWalk_Frame19` | 1 |  |
+| `Ani_Cat_zombieWalk_Frame2` | 1 |  |
+| `Ani_Caterpillar_attack_Frame2` | 1 |  |
+| `Ani_Caterpillar_attack_Frame23` | 1 |  |
+| `Ani_Caterpillar_dying_Frame2` | 1 |  |
+| `Ani_Caterpillar_hit_Frame2` | 1 |  |
+| `Ani_Caterpillar_walk_Frame4` | 1 |  |
+| `Ani_CatHuman_cry_Frame28` | 1 |  |
+| `Ani_CatHuman_cry_Frame4` | 1 |  |
+| `Ani_CatHuman_cry_Frame73` | 1 |  |
+| `Ani_CatHuman_dying_Frame10` | 1 |  |
+| `Ani_CatHuman_dying_Frame8` | 1 |  |
+| `Ani_CatHuman_fart_Frame12` | 1 |  |
+| `Ani_CatHuman_fart_Frame35` | 1 |  |
+| `Ani_CatHuman_hit_Frame7` | 1 |  |
+| `Ani_CatHuman_throw_Frame21` | 1 |  |
+| `Ani_CatHuman_throw_Frame27` | 1 |  |
+| `Ani_CatHuman_throwCat_Frame21` | 1 |  |
+| `Ani_CatHuman_throwCat_Frame27` | 1 |  |
+| `Ani_CatHuman_walk_Frame27` | 1 |  |
+| `Ani_CatHuman_walk_Frame51` | 1 |  |
+| `Ani_CaveChief_attack_Frame12` | 1 |  |
+| `Ani_CaveChief_attack_Frame27` | 1 |  |
+| `Ani_CaveChief_bat_Frame10` | 1 |  |
+| `Ani_CaveChief_bat_Frame59` | 1 |  |
+| `Ani_CaveChief_bat_Frame67` | 1 |  |
+| `Ani_CaveChief_dying_Frame2` | 1 |  |
+| `Ani_CaveChief_dying_Frame31` | 1 |  |
+| `Ani_CaveChief_hit_Frame7` | 1 |  |
+| `Ani_CaveChief_rally_Frame10` | 1 |  |
+| `Ani_CaveChief_rally_Frame73` | 1 |  |
+| `Ani_CaveChief_rally_Frame75` | 1 |  |
+| `Ani_CaveChief_walk_Frame20` | 1 |  |
+| `Ani_CaveChief_walk_Frame3` | 1 |  |
+| `Ani_CaveChief_yell_Frame10` | 1 |  |
+| `Ani_CaveChief_yell_Frame28` | 1 |  |
+| `Ani_CaveChief_yell_Frame34` | 1 |  |
+| `Ani_CavePerson_attackCatCaveWoman_Frame10` | 1 |  |
+| `Ani_CavePerson_attackCatCaveWoman_Frame30` | 1 |  |
+| `Ani_CavePerson_attackCatCaveWoman_Frame31` | 1 |  |
+| `Ani_CavePerson_attackCaveBaby_Frame25` | 1 |  |
+| `Ani_CavePerson_attackCaveBaby_Frame28` | 1 |  |
+| `Ani_CavePerson_attackCaveBaby_Frame64` | 1 |  |
+| `Ani_CavePerson_attackCaveBaby_Frame68` | 1 |  |
+| `Ani_CavePerson_attackCaveBaby_Frame8` | 1 |  |
+| `Ani_CavePerson_attackCaveMan_Frame44` | 1 |  |
+| `Ani_CavePerson_attackCaveMan_Frame49` | 1 |  |
+| `Ani_CavePerson_attackCaveMan_Frame56` | 1 |  |
+| `Ani_CavePerson_attackCaveMan_Frame79` | 1 |  |
+| `Ani_CavePerson_birthCaveWoman_Frame13` | 1 |  |
+| `Ani_CavePerson_birthCaveWoman_Frame55` | 1 |  |
+| `Ani_CavePerson_birthCaveWoman_Frame73` | 1 |  |
+| `Ani_CavePerson_chestpoundCaveMan_Frame29` | 1 |  |
+| `Ani_CavePerson_chestpoundCaveMan_Frame57` | 1 |  |
+| `Ani_CavePerson_chestpoundSpearCaveMan_Frame29` | 1 |  |
+| `Ani_CavePerson_chestpoundSpearCaveMan_Frame57` | 1 |  |
+| `Ani_CavePerson_dyingCatCaveWoman_Frame12` | 1 |  |
+| `Ani_CavePerson_dyingCatCaveWoman_Frame21` | 1 |  |
+| `Ani_CavePerson_dyingCatCaveWoman_Frame29` | 1 |  |
+| `Ani_CavePerson_dyingCaveBaby_Frame2` | 1 |  |
+| `Ani_CavePerson_dyingCaveBaby_Frame46` | 1 |  |
+| `Ani_CavePerson_dyingCaveMan_Frame10` | 1 |  |
+| `Ani_CavePerson_dyingCaveMan_Frame37` | 1 |  |
+| `Ani_CavePerson_dyingCaveWoman_Frame2` | 1 |  |
+| `Ani_CavePerson_dyingCaveWoman_Frame9` | 1 |  |
+| `Ani_CavePerson_dyingSpearCaveMan_Frame10` | 1 |  |
+| `Ani_CavePerson_dyingSpearCaveMan_Frame37` | 1 |  |
+| `Ani_CavePerson_dyingWereMan_Frame32` | 1 |  |
+| `Ani_CavePerson_dyingWereMan_Frame5` | 1 |  |
+| `Ani_CavePerson_grabCaveWoman_Frame24` | 1 |  |
+| `Ani_CavePerson_grabCaveWoman_Frame32` | 1 |  |
+| `Ani_CavePerson_growupCaveBaby_Frame3` | 1 |  |
+| `Ani_CavePerson_growupCaveBaby_Frame4` | 1 |  |
+| `Ani_CavePerson_growupCaveBaby_Frame48` | 1 |  |
+| `Ani_CavePerson_growupCaveBaby_Frame50` | 1 |  |
+| `Ani_CavePerson_hitCatCaveWoman_Frame9` | 1 |  |
+| `Ani_CavePerson_hitCaveBaby_Frame2` | 1 |  |
+| `Ani_CavePerson_hitCaveMan_Frame8` | 1 |  |
+| `Ani_CavePerson_hitCaveWoman_Frame9` | 1 |  |
+| `Ani_CavePerson_hitSpearCaveMan_Frame8` | 1 |  |
+| `Ani_CavePerson_hitWereMan_Frame7` | 1 |  |
+| `Ani_CavePerson_kickCaveWoman_Frame21` | 1 |  |
+| `Ani_CavePerson_kickCaveWoman_Frame24` | 1 |  |
+| `Ani_CavePerson_pickupCaveMan_Frame14` | 1 |  |
+| `Ani_CavePerson_pickupCaveMan_Frame4` | 1 |  |
+| `Ani_CavePerson_pounceWereMan_Frame2` | 1 |  |
+| `Ani_CavePerson_pounceWereMan_Frame21` | 1 |  |
+| `Ani_CavePerson_pounceWereMan_Frame47` | 1 |  |
+| `Ani_CavePerson_throwCatCaveWoman_Frame18` | 1 |  |
+| `Ani_CavePerson_throwCatCaveWoman_Frame24` | 1 |  |
+| `Ani_CavePerson_throwSpearCaveMan_Frame28` | 1 |  |
+| `Ani_CavePerson_throwSpearCaveMan_Frame30` | 1 |  |
+| `Ani_CavePerson_transformCatCaveWoman_Frame11` | 1 |  |
+| `Ani_CavePerson_transformCatCaveWoman_Frame25` | 1 |  |
+| `Ani_CavePerson_transformCatCaveWoman_Frame55` | 1 |  |
+| `Ani_CavePerson_transformCatCaveWoman_Frame56` | 1 |  |
+| `Ani_CavePerson_transformCaveMan_Frame14` | 1 |  |
+| `Ani_CavePerson_transformCaveMan_Frame17` | 1 |  |
+| `Ani_CavePerson_transformCaveMan_Frame52` | 1 |  |
+| `Ani_CavePerson_transformCaveWoman_Frame2` | 1 |  |
+| `Ani_CavePerson_transformCaveWoman_Frame35` | 1 |  |
+| `Ani_CavePerson_transformCaveWoman_Frame36` | 1 |  |
+| `Ani_CavePerson_transformSpearCaveMan_Frame12` | 1 |  |
+| `Ani_CavePerson_transformSpearCaveMan_Frame14` | 1 |  |
+| `Ani_CavePerson_transformSpearCaveMan_Frame17` | 1 |  |
+| `Ani_CavePerson_transformSpearCaveMan_Frame52` | 1 |  |
+| `Ani_CavePerson_walkCatCaveWoman_Frame21` | 1 |  |
+| `Ani_CavePerson_walkCatCaveWoman_Frame5` | 1 |  |
+| `Ani_CavePerson_walkCaveBaby_Frame16` | 1 |  |
+| `Ani_CavePerson_walkCaveBaby_Frame20` | 1 |  |
+| `Ani_CavePerson_walkCaveBaby_Frame4` | 1 |  |
+| `Ani_CavePerson_walkCaveMan_Frame13` | 1 |  |
+| `Ani_CavePerson_walkCaveMan_Frame4` | 1 |  |
+| `Ani_CavePerson_walkCaveWoman_Frame21` | 1 |  |
+| `Ani_CavePerson_walkCaveWoman_Frame5` | 1 |  |
+| `Ani_CavePerson_walkSpearCaveMan_Frame21` | 1 |  |
+| `Ani_CavePerson_walkSpearCaveMan_Frame5` | 1 |  |
+| `Ani_CavePerson_walkWereMan_Frame21` | 1 |  |
+| `Ani_CavePerson_walkWereMan_Frame5` | 1 |  |
+| `Ani_Cerberubs_attack_Frame2` | 1 |  |
+| `Ani_Cerberubs_attack_Frame58` | 1 |  |
+| `Ani_Cerberubs_dying_Frame2` | 1 |  |
+| `Ani_Cerberubs_hit_Frame3` | 1 |  |
+| `Ani_Cerberubs_hitAlert_Frame2` | 1 |  |
+| `Ani_Cerberubs_idle2primed_Frame2` | 1 |  |
+| `Ani_Cerberubs_shoot_Frame2` | 1 |  |
+| `Ani_Cerberubs_shootAlert_Frame11` | 1 |  |
+| `Ani_Cerberubs_shootLava_Frame16` | 1 |  |
+| `Ani_Cerberubs_throw_Frame10` | 1 |  |
+| `Ani_Cerberubs_throwCat_Frame10` | 1 |  |
+| `Ani_Cerberubs_walk_Frame17` | 1 |  |
+| `Ani_Cerberubs_walk_Frame35` | 1 |  |
+| `Ani_Cerberubs_walk_Frame43` | 1 |  |
+| `Ani_Cerberubs_walk_Frame6` | 1 |  |
+| `Ani_Chaos_change_Frame2` | 1 |  |
+| `Ani_Chaos_change_Frame40` | 1 |  |
+| `Ani_Chaos_dying_Frame27` | 1 |  |
+| `Ani_Chaos_dying_Frame4` | 1 |  |
+| `Ani_Chaos_flush_Frame8` | 1 |  |
+| `Ani_Chaos_hit_Frame6` | 1 |  |
+| `Ani_Chaos_hitHost_Frame6` | 1 |  |
+| `Ani_Chaos_intro_Frame140` | 1 |  |
+| `Ani_Chaos_intro_Frame200` | 1 |  |
+| `Ani_Chaos_intro_Frame3` | 1 |  |
+| `Ani_Chaos_lava_Frame5` | 1 |  |
+| `Ani_Chaos_megablast_Frame2` | 1 |  |
+| `Ani_Chaos_megablast_Frame44` | 1 |  |
+| `Ani_Chaos_order_Frame4` | 1 |  |
+| `Ani_Chaos_portout_Frame2` | 1 |  |
+| `Ani_ChargeyMaggot_dashend_Frame2` | 1 |  |
+| `Ani_ChargeyMaggot_dashend_Frame96` | 1 |  |
+| `Ani_ChargeyMaggot_dashstart_Frame2` | 1 |  |
+| `Ani_ChargeyMaggot_dashstart_Frame9` | 1 |  |
+| `Ani_ChargeyMaggot_dying_Frame2` | 1 |  |
+| `Ani_ChargeyMaggot_hit_Frame2` | 1 |  |
+| `Ani_ChargeyMaggot_hit_Frame3` | 1 |  |
+| `Ani_ChargeyMaggot_walk_Frame2` | 1 |  |
+| `Ani_Chubs_attack_Frame2` | 1 |  |
+| `Ani_Chubs_attack_Frame25` | 1 |  |
+| `Ani_Chubs_attack_Frame4` | 1 |  |
+| `Ani_Chubs_attackRage_Frame18` | 1 |  |
+| `Ani_Chubs_attackRage_Frame2` | 1 |  |
+| `Ani_Chubs_dying_Frame106` | 1 |  |
+| `Ani_Chubs_dying_Frame12` | 1 |  |
+| `Ani_Chubs_dying_Frame2` | 1 |  |
+| `Ani_Chubs_dying_Frame56` | 1 |  |
+| `Ani_Chubs_dyingRage_Frame106` | 1 |  |
+| `Ani_Chubs_dyingRage_Frame12` | 1 |  |
+| `Ani_Chubs_dyingRage_Frame2` | 1 |  |
+| `Ani_Chubs_dyingRage_Frame56` | 1 |  |
+| `Ani_Chubs_hit_Frame3` | 1 |  |
+| `Ani_Chubs_hit_Frame5` | 1 |  |
+| `Ani_Chubs_idleRage_Frame107` | 1 |  |
+| `Ani_Chubs_idleRage_Frame141` | 1 |  |
+| `Ani_Chubs_idleRage_Frame2` | 1 |  |
+| `Ani_Chubs_idleRage_Frame26` | 1 |  |
+| `Ani_Chubs_idleRage_Frame44` | 1 |  |
+| `Ani_Chubs_idleRage_Frame76` | 1 |  |
+| `Ani_Chubs_rage_Frame119` | 1 |  |
+| `Ani_Chubs_rage_Frame2` | 1 |  |
+| `Ani_Chubs_rage_Frame244` | 1 |  |
+| `Ani_Chubs_rage_Frame245` | 1 |  |
+| `Ani_Chubs_rage_Frame51` | 1 |  |
+| `Ani_Chubs_rage_Frame7` | 1 |  |
+| `Ani_Chubs_rage_Frame76` | 1 |  |
+| `Ani_Chubs_rage_Frame94` | 1 |  |
+| `Ani_Chubs_shoot_Frame2` | 1 |  |
+| `Ani_Chubs_shoot_Frame5` | 1 |  |
+| `Ani_Chubs_shootRage_Frame2` | 1 |  |
+| `Ani_Chubs_shootRage_Frame5` | 1 |  |
+| `Ani_Chubs_walk_Frame10` | 1 |  |
+| `Ani_Chubs_walk_Frame23` | 1 |  |
+| `Ani_Chubs_walk_Frame28` | 1 |  |
+| `Ani_Chubs_walk_Frame4` | 1 |  |
+| `Ani_Chubs_walkRage_Frame17` | 1 |  |
+| `Ani_Chubs_walkRage_Frame4` | 1 |  |
+| `Ani_ChumBag_dying_Frame2` | 1 |  |
+| `Ani_ChumBag_shoot_Frame2` | 1 |  |
+| `Ani_ChumBag_shoot_Frame52` | 1 |  |
+| `Ani_Chummy_dashend_Frame2` | 1 |  |
+| `Ani_Chummy_dashstart_Frame2` | 1 |  |
+| `Ani_Chummy_dying_Frame2` | 1 |  |
+| `Ani_Chummy_walk_Frame2` | 1 |  |
+| `Ani_CloakedDemon_counter_Frame12` | 1 |  |
+| `Ani_CloakedDemon_counter_Frame2` | 1 |  |
+| `Ani_CloakedDemon_dying_Frame2` | 1 |  |
+| `Ani_CloakedDemon_dying_Frame8` | 1 |  |
+| `Ani_CloakedDemon_flames_Frame2` | 1 |  |
+| `Ani_CloakedDemon_flames_Frame8` | 1 |  |
+| `Ani_CloakedDemon_hit_Frame3` | 1 |  |
+| `Ani_CloakedDemon_transition_Frame15` | 1 |  |
+| `Ani_CloakedDemon_transition_Frame5` | 1 |  |
+| `Ani_CloakedDemon_walk_Frame2` | 1 |  |
+| `Ani_CloningVat_dying_Frame2` | 1 |  |
+| `Ani_CloningVat_hit_Frame2` | 1 |  |
+| `Ani_Clot_dying_Frame2` | 1 |  |
+| `Ani_Clot_hit_Frame2` | 1 |  |
+| `Ani_Clot_pulse_Frame2` | 1 |  |
+| `Ani_Clot_walk_Frame20` | 1 |  |
+| `Ani_Clot_walk_Frame4` | 1 |  |
+| `Ani_CombatMessage_Defeat_Frame199` | 1 |  |
+| `Ani_CombatMessage_Defeat_Frame374` | 1 |  |
+| `Ani_CombatMessage_Defeat_Frame377` | 1 |  |
+| `Ani_CombatMessage_Defeat_Frame390` | 1 |  |
+| `Ani_ConjoinedHusk_dying_Frame2` | 1 |  |
+| `Ani_ConjoinedHusk_dying_Frame6` | 1 |  |
+| `Ani_ConjoinedHusk_dyingCat_Frame2` | 1 |  |
+| `Ani_ConjoinedHusk_dyingCat_Frame6` | 1 |  |
+| `Ani_ConjoinedHusk_escapeCat_Frame16` | 1 |  |
+| `Ani_ConjoinedHusk_escapeCat_Frame2` | 1 |  |
+| `Ani_ConjoinedHusk_escapeCat_Frame85` | 1 |  |
+| `Ani_ConjoinedHusk_grab_Frame12` | 1 |  |
+| `Ani_ConjoinedHusk_grab_Frame21` | 1 |  |
+| `Ani_ConjoinedHusk_grab_Frame54` | 1 |  |
+| `Ani_ConjoinedHusk_hit_Frame3` | 1 |  |
+| `Ani_ConjoinedHusk_hitCat_Frame3` | 1 |  |
+| `Ani_ConjoinedHusk_shoot_Frame14` | 1 |  |
+| `Ani_ConjoinedHusk_shoot_Frame2` | 1 |  |
+| `Ani_ConjoinedHusk_shoot_Frame59` | 1 |  |
+| `Ani_ConjoinedHusk_struggleCat_Frame2` | 1 |  |
+| `Ani_ConjoinedHusk_struggleCat_Frame22` | 1 |  |
+| `Ani_ConjoinedHusk_useCat_Frame2` | 1 |  |
+| `Ani_ConjoinedHusk_useCat_Frame4` | 1 |  |
+| `Ani_ConjoinedHusk_useCat_Frame98` | 1 |  |
+| `Ani_ConjoinedHusk_walk_Frame19` | 1 |  |
+| `Ani_ConjoinedHusk_walk_Frame31` | 1 |  |
+| `Ani_ConjoinedHusk_walkCat_Frame21` | 1 |  |
+| `Ani_ConjoinedHusk_walkCat_Frame9` | 1 |  |
+| `Ani_CopBot_attack_Frame2` | 1 |  |
+| `Ani_CopBot_attack_Frame3` | 1 |  |
+| `Ani_CopBot_dying_Frame2` | 1 |  |
+| `Ani_CopBot_dying_Frame3` | 1 |  |
+| `Ani_CopBot_hit_Frame2` | 1 |  |
+| `Ani_CopBot_hit_Frame3` | 1 |  |
+| `Ani_CopBot_reload_Frame2` | 1 |  |
+| `Ani_CopBot_reload_Frame3` | 1 |  |
+| `Ani_CopBot_reload_Frame96` | 1 |  |
+| `Ani_CopBot_shoot_Frame2` | 1 |  |
+| `Ani_CopBot_shoot_Frame3` | 1 |  |
+| `Ani_CopBot_shoot_Frame46` | 1 |  |
+| `Ani_CopBot_shutdown_Frame2` | 1 |  |
+| `Ani_CopBot_shutdown_Frame3` | 1 |  |
+| `Ani_CopBot_walk_Frame2` | 1 |  |
+| `Ani_CoreFreak_attack_Frame24` | 1 |  |
+| `Ani_CoreFreak_attack_Frame44` | 1 |  |
+| `Ani_CoreFreak_attack_Frame5` | 1 |  |
+| `Ani_CoreFreak_dying_Frame2` | 1 |  |
+| `Ani_CoreFreak_dying_Frame31` | 1 |  |
+| `Ani_CoreFreak_fury_Frame32` | 1 |  |
+| `Ani_CoreFreak_fury_Frame35` | 1 |  |
+| `Ani_CoreFreak_fury_Frame69` | 1 |  |
+| `Ani_CoreFreak_fury_Frame73` | 1 |  |
+| `Ani_CoreFreak_fury_Frame8` | 1 |  |
+| `Ani_CoreFreak_fury_Frame9` | 1 |  |
+| `Ani_CoreFreak_hit_Frame2` | 1 |  |
+| `Ani_CoreFreak_walk_Frame2` | 1 |  |
+| `Ani_CoreFreak_walk_Frame21` | 1 |  |
+| `Ani_Crate_dying_Frame2` | 1 |  |
+| `Ani_Crow_attack_Frame2` | 1 |  |
+| `Ani_Crow_dying_Frame2` | 1 |  |
+| `Ani_Crow_fast_Frame16` | 1 |  |
+| `Ani_Crow_fast_Frame2` | 1 |  |
+| `Ani_Crow_fast_Frame23` | 1 |  |
+| `Ani_Crow_fast_Frame8` | 1 |  |
+| `Ani_Crow_walk_Frame13` | 1 |  |
+| `Ani_Crow_walk_Frame2` | 1 |  |
+| `Ani_Crow_wind_Frame2` | 1 |  |
+| `Ani_DaddyShark_attack_Frame2` | 1 |  |
+| `Ani_DaddyShark_dying_Frame2` | 1 |  |
+| `Ani_DaddyShark_dying_Frame25` | 1 |  |
+| `Ani_DaddyShark_hit_Frame4` | 1 |  |
+| `Ani_DaddyShark_walk_Fram23` | 1 |  |
+| `Ani_DaddyShark_walk_Frame18` | 1 |  |
+| `Ani_DaddyShark_walk_Frame2` | 1 |  |
+| `Ani_DaddyShark_walk_Frame7` | 1 |  |
+| `Ani_Deathbot_attack_Frame12` | 1 |  |
+| `Ani_Deathbot_attack_Frame2` | 1 |  |
+| `Ani_Deathbot_dying_Frame2` | 1 |  |
+| `Ani_Deathbot_hit_Frame3` | 1 |  |
+| `Ani_Deathbot_walk_Loop` | 1 |  |
+| `Ani_DeathWorm_appear_Frame2` | 1 |  |
+| `Ani_DeathWorm_bonk_Frame2` | 1 |  |
+| `Ani_DeathWorm_dash_Loop` | 1 |  |
+| `Ani_DeathWorm_dashend_Frame2` | 1 |  |
+| `Ani_DeathWorm_dashstart_Frame2` | 1 |  |
+| `Ani_DeathWorm_dying_Frame2` | 1 |  |
+| `Ani_DeathWorm_dying_offmap_Frame2` | 1 |  |
+| `Ani_DeathWorm_eat_Frame2` | 1 |  |
+| `Ani_DeathWorm_hit_Frame2` | 1 |  |
+| `Ani_DeathWorm_walk_Frame2` | 1 |  |
+| `Ani_Decoy2_dying_Frame2` | 1 |  |
+| `Ani_Decoy2_hit_Frame3` | 1 |  |
+| `Ani_Decoy2_idle_Frame2` | 1 |  |
+| `Ani_Decoy2_idle_Frame48` | 1 |  |
+| `Ani_DiggyMaggot_attack_Frame2` | 1 |  |
+| `Ani_DiggyMaggot_attack_Frame3` | 1 |  |
+| `Ani_DiggyMaggot_dying_Frame7` | 1 |  |
+| `Ani_DiggyMaggot_hit_Frame5` | 1 |  |
+| `Ani_DiggyMaggot_portin_Frame2` | 1 |  |
+| `Ani_DiggyMaggot_portout_Frame2` | 1 |  |
+| `Ani_DinoEggs_dying_Frame2` | 1 |  |
+| `Ani_DinoEggs_spawn_Frame2` | 1 |  |
+| `Ani_Dip_attack_Frame2` | 1 |  |
+| `Ani_Dip_attack_Frame44` | 1 |  |
+| `Ani_Dip_dying_Frame2` | 1 |  |
+| `Ani_Dip_land_Frame2` | 1 |  |
+| `Ani_Dip_walk_Frame14` | 1 |  |
+| `Ani_DocBot_dying_Frame2` | 1 |  |
+| `Ani_DocBot_dying_Frame4` | 1 |  |
+| `Ani_DocBot_heal_Frame2` | 1 |  |
+| `Ani_DocBot_heal_Frame4` | 1 |  |
+| `Ani_DocBot_hit_Frame2` | 1 |  |
+| `Ani_DocBot_hit_Frame4` | 1 |  |
+| `Ani_DocBot_loot_Frame2` | 1 |  |
+| `Ani_DocBot_loot_Frame4` | 1 |  |
+| `Ani_DocBot_spawn_Frame2` | 1 |  |
+| `Ani_DocBot_spawn_Frame4` | 1 |  |
+| `Ani_DocBot_walk_Frame19` | 1 |  |
+| `Ani_DocBot_walk_Frame2` | 1 |  |
+| `Ani_DrDitto_dying_Frame19` | 1 |  |
+| `Ani_DrDitto_dying_Frame2` | 1 |  |
+| `Ani_DrDitto_glare_Frame12` | 1 |  |
+| `Ani_DrDitto_glare_Frame2` | 1 |  |
+| `Ani_DrDitto_hit_Frame4` | 1 |  |
+| `Ani_DrDitto_revive_Frame11` | 1 |  |
+| `Ani_DrDitto_revive_Frame19` | 1 |  |
+| `Ani_DrDitto_spell_Frame2` | 1 |  |
+| `Ani_DrDitto_spell_Frame42` | 1 |  |
+| `Ani_DrDitto_spell_Frame76` | 1 |  |
+| `Ani_DrDitto_walk_Frame13` | 1 |  |
+| `Ani_DrDitto_walk_Frame3` | 1 |  |
+| `Ani_DrMangler_controlmonsterJoystick_Frame2` | 1 |  |
+| `Ani_DrMangler_controlmonsterJoystick_Frame3` | 1 |  |
+| `Ani_DrMangler_dying_Frame112` | 1 |  |
+| `Ani_DrMangler_dying_Frame113` | 1 |  |
+| `Ani_DrMangler_dying_Frame129` | 1 |  |
+| `Ani_DrMangler_dying_Frame130` | 1 |  |
+| `Ani_DrMangler_dying_Frame141` | 1 |  |
+| `Ani_DrMangler_dying_Frame142` | 1 |  |
+| `Ani_DrMangler_dying_Frame2` | 1 |  |
+| `Ani_DrMangler_dying_Frame3` | 1 |  |
+| `Ani_DrMangler_dying_Frame307` | 1 |  |
+| `Ani_DrMangler_dying_Frame317` | 1 |  |
+| `Ani_DrMangler_dying_Frame399` | 1 |  |
+| `Ani_DrMangler_dying_Frame70` | 1 |  |
+| `Ani_DrMangler_dying_Frame71` | 1 |  |
+| `Ani_DrMangler_dying_Frame94` | 1 |  |
+| `Ani_DrMangler_dying_Frame95` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame112` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame113` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame129` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame130` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame141` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame142` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame2` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame3` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame307` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame317` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame399` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame70` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame71` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame94` | 1 |  |
+| `Ani_DrMangler_dyingJoystick_Frame95` | 1 |  |
+| `Ani_DrMangler_fumble2Joystick_Frame10` | 1 |  |
+| `Ani_DrMangler_fumble2Joystick_Frame2` | 1 |  |
+| `Ani_DrMangler_fumbleJoystick_Frame10` | 1 |  |
+| `Ani_DrMangler_fumbleJoystick_Frame2` | 1 |  |
+| `Ani_DrMangler_hit_Frame2` | 1 |  |
+| `Ani_DrMangler_hitJoystick_Frame2` | 1 |  |
+| `Ani_DrMangler_jab_Frame2` | 1 |  |
+| `Ani_DrMangler_jab_Frame5` | 1 |  |
+| `Ani_DrMangler_joystick_Frame2` | 1 |  |
+| `Ani_DrMangler_joystick_Frame3` | 1 |  |
+| `Ani_DrMangler_monsterdeathJoystick_Frame160` | 1 |  |
+| `Ani_DrMangler_monsterdeathJoystick_Frame2` | 1 |  |
+| `Ani_DrMangler_monsterdeathJoystick_Frame3` | 1 |  |
+| `Ani_DrMangler_spin_Frame2` | 1 |  |
+| `Ani_DrMangler_spin_Frame5` | 1 |  |
+| `Ani_DrMangler_throwJoystick_Frame2` | 1 |  |
+| `Ani_DrMangler_throwJoystick_Frame29` | 1 |  |
+| `Ani_DrMangler_walk_Frame2` | 1 |  |
+| `Ani_DrMangler_walk_Frame20` | 1 |  |
+| `Ani_DrMangler_walk_Frame26` | 1 |  |
+| `Ani_DrMangler_walk_Frame51` | 1 |  |
+| `Ani_DrMangler_walkJoystick_Frame2` | 1 |  |
+| `Ani_DrMangler_walkJoystick_Frame20` | 1 |  |
+| `Ani_DrMangler_walkJoystick_Frame26` | 1 |  |
+| `Ani_DrMangler_walkJoystick_Frame51` | 1 |  |
+| `Ani_DustDevil_attack_Frame2` | 1 |  |
+| `Ani_DustDevil_dash_Frame10` | 1 |  |
+| `Ani_DustDevil_dash_Frame19` | 1 |  |
+| `Ani_DustDevil_dash_Frame2` | 1 |  |
+| `Ani_DustDevil_dashstart_Frame2` | 1 |  |
+| `Ani_DustDevil_dying_Frame2` | 1 |  |
+| `Ani_DustDevil_hit_Frame2` | 1 |  |
+| `Ani_DustDevil_portin_Frame2` | 1 |  |
+| `Ani_DustDevil_portout_Frame12` | 1 |  |
+| `Ani_DustDevil_portout_Frame2` | 1 |  |
+| `Ani_DustDevil_spin_Frame2` | 1 |  |
+| `Ani_DustDevil_spin_Frame3` | 1 |  |
+| `Ani_DustDevil_walk_Frame15` | 1 |  |
+| `Ani_DustDevil_walk_Frame34` | 1 |  |
+| `Ani_Dybbuk_attack_Frame2` | 1 |  |
+| `Ani_Dybbuk_depossess_Frame2` | 1 |  |
+| `Ani_Dybbuk_dying_Frame2` | 1 |  |
+| `Ani_Dybbuk_hit_Frame2` | 1 |  |
+| `Ani_Dybbuk_possess_Frame2` | 1 |  |
+| `Ani_Dybbuk_walk_Frame10` | 1 |  |
+| `Ani_Dybbuk_walk_Frame2` | 1 |  |
+| `Ani_Dybbuk_wisps_Frame2` | 1 |  |
+| `Ani_Dybbuk_zombie_Frame2` | 1 |  |
+| `Ani_EmptyV_changechannel_Frame2` | 1 |  |
+| `Ani_EmptyV_changechannelOff_Frame2` | 1 |  |
+| `Ani_EmptyV_dying_Frame2` | 1 |  |
+| `Ani_EmptyV_dyingOff_Frame2` | 1 |  |
+| `Ani_EmptyV_hit_Frame2` | 1 |  |
+| `Ani_EmptyV_hitOff_Frame2` | 1 |  |
+| `Ani_EmptyV_turnOff_Frame2` | 1 |  |
+| `Ani_EventCat_choice_cha_Frame5` | 1 |  |
+| `Ani_EventCat_choice_coins_Frame5` | 1 |  |
+| `Ani_EventCat_choice_coins_one_Frame6` | 1 |  |
+| `Ani_EventCat_choice_coins_ten_Frame5` | 1 |  |
+| `Ani_EventCat_choice_coins_twentyfive_Frame5` | 1 |  |
+| `Ani_EventCat_choice_con_Frame8` | 1 |  |
+| `Ani_EventCat_choice_dex_alt_Frame6` | 1 |  |
+| `Ani_EventCat_choice_dex_Frame50` | 1 |  |
+| `Ani_EventCat_choice_dex_Frame73` | 1 |  |
+| `Ani_EventCat_choice_int_Frame2` | 1 |  |
+| `Ani_EventCat_choice_lck_Frame3` | 1 |  |
+| `Ani_EventCat_choice_leave_Frame2` | 1 |  |
+| `Ani_EventCat_choice_misc_Frame7` | 1 |  |
+| `Ani_EventCat_choice_no_coins_Frame5` | 1 |  |
+| `Ani_EventCat_choice_spd_Frame2` | 1 |  |
+| `Ani_EventCat_choice_str_Frame15` | 1 |  |
+| `Ani_EventCat_choice_str_Frame22` | 1 |  |
+| `Ani_EventCat_choice_str_Frame28` | 1 |  |
+| `Ani_EventCat_choice_str_Frame3` | 1 |  |
+| `Ani_EventCat_choice_str_Frame48` | 1 |  |
+| `Ani_EventCat_get_coin_Frame5` | 1 |  |
+| `Ani_EventCat_get_cursed_item_Frame2` | 1 |  |
+| `Ani_EventCat_get_cursed_weapon_Frame2` | 1 |  |
+| `Ani_EventCat_get_disorder_Frame5` | 1 |  |
+| `Ani_EventCat_get_hit_big_Frame2` | 1 |  |
+| `Ani_EventCat_get_hit_Frame2` | 1 |  |
+| `Ani_EventCat_get_item_Frame5` | 1 |  |
+| `Ani_EventCat_get_mutation_Frame5` | 1 |  |
+| `Ani_EventCat_get_weapon_Frame2` | 1 |  |
+| `Ani_EventCat_resultBlessing_Frame5` | 1 |  |
+| `Ani_EventCat_resultBlessingIntroless_Frame5` | 1 |  |
+| `Ani_EventCat_resultConfused_Frame5` | 1 |  |
+| `Ani_EventCat_resultHole_Frame5` | 1 |  |
+| `Ani_EventCat_resultLeave_Frame13` | 1 |  |
+| `Ani_EventCat_resultTragedy_Frame46` | 1 |  |
+| `Ani_EventCat_resultTragedyIntroless_Frame5` | 1 |  |
+| `Ani_EventCat_resultWeather_Frame5` | 1 |  |
+| `Ani_Events_NonWheelEvent_Frame24` | 1 |  |
+| `Ani_FatMan_dying2_Frame2` | 1 |  |
+| `Ani_FatMan_dying2_Frame57` | 1 |  |
+| `Ani_FatMan_dying2_Frame7` | 1 |  |
+| `Ani_FatMan_dying_Frame2` | 1 |  |
+| `Ani_FatMan_dying_Frame7` | 1 |  |
+| `Ani_FatMan_hit_Frame2` | 1 |  |
+| `Ani_FatMan_hit_Frame7` | 1 |  |
+| `Ani_FatMan_reflect_projectile_Frame15` | 1 |  |
+| `Ani_FatMan_reflect_projectile_Frame2` | 1 |  |
+| `Ani_FatMan_slam_Frame2` | 1 |  |
+| `Ani_FatMan_slam_Frame26` | 1 |  |
+| `Ani_FatMan_walk_Frame13` | 1 |  |
+| `Ani_FatMan_walk_Loop` | 1 |  |
+| `Ani_FatRat_dying_Frame2` | 1 |  |
+| `Ani_FatRat_hit_Frame4` | 1 |  |
+| `Ani_FatRat_jump_Frame2` | 1 |  |
+| `Ani_FatRat_land_Frame2` | 1 |  |
+| `Ani_FatRat_walk_Frame2` | 1 |  |
+| `Ani_Fatso_dashend_Frame2` | 1 |  |
+| `Ani_Fatso_dashstart_Frame2` | 1 |  |
+| `Ani_Fatso_dashstart_Frame5` | 1 |  |
+| `Ani_Fatso_deadhit_Frame2` | 1 |  |
+| `Ani_Fatso_dying_Frame2` | 1 |  |
+| `Ani_Fatso_hit_Frame2` | 1 |  |
+| `Ani_Fatso_walk_Frame2` | 1 |  |
+| `Ani_FatWoman_dying2_Frame2` | 1 |  |
+| `Ani_FatWoman_dying2_Frame57` | 1 |  |
+| `Ani_FatWoman_dying2_Frame7` | 1 |  |
+| `Ani_FatWoman_dying_Frame2` | 1 |  |
+| `Ani_FatWoman_dying_Frame7` | 1 |  |
+| `Ani_FatWoman_hit_Frame2` | 1 |  |
+| `Ani_FatWoman_hit_Frame7` | 1 |  |
+| `Ani_FatWoman_reflect_projectile_Frame2` | 1 |  |
+| `Ani_FatWoman_slam_Frame2` | 1 |  |
+| `Ani_FatWoman_slam_Frame26` | 1 |  |
+| `Ani_FatWoman_walk_Loop` | 1 |  |
+| `Ani_Fetus_dying_Frame2` | 1 |  |
+| `Ani_Fetus_heal_Frame2` | 1 |  |
+| `Ani_Fetus_hit_Frame3` | 1 |  |
+| `Ani_Fetus_shoot_Frame2` | 1 |  |
+| `Ani_Fetus_walk_Frame2` | 1 |  |
+| `Ani_FetusGusher_attack_Frame136` | 1 |  |
+| `Ani_FetusGusher_attack_Frame2` | 1 |  |
+| `Ani_FetusGusher_dying_Frame2` | 1 |  |
+| `Ani_FetusGusher_dying_Frame39` | 1 |  |
+| `Ani_FetusGusher_hit_Frame3` | 1 |  |
+| `Ani_FetusGusher_walk_Frame19` | 1 |  |
+| `Ani_FetusGusher_walk_Frame2` | 1 |  |
+| `Ani_FetusJar_dying_Frame2` | 1 |  |
+| `Ani_FetusJar_dying_Frame24` | 1 |  |
+| `Ani_FetusJar_hit2_Frame10` | 1 |  |
+| `Ani_FetusJar_hit2_Frame2` | 1 |  |
+| `Ani_FetusJar_hit_Frame2` | 1 |  |
+| `Ani_FetusJar_hit_Frame7` | 1 |  |
+| `Ani_FetusJar_walk_Loop` | 1 |  |
+| `Ani_FetusNoJar_attackGrown_Frame15` | 1 |  |
+| `Ani_FetusNoJar_dying_Frame2` | 1 |  |
+| `Ani_FetusNoJar_dying_Frame3` | 1 |  |
+| `Ani_FetusNoJar_dyingGrown_Frame2` | 1 |  |
+| `Ani_FetusNoJar_heilGrown_Frame18` | 1 |  |
+| `Ani_FetusNoJar_heilGrown_Frame2` | 1 |  |
+| `Ani_FetusNoJar_hit_Frame3` | 1 |  |
+| `Ani_FetusNoJar_lickGrown_Frame17` | 1 |  |
+| `Ani_FetusNoJar_lickGrown_Frame45` | 1 |  |
+| `Ani_FetusNoJar_missileButton_Frame2` | 1 |  |
+| `Ani_FetusNoJar_pullremote_Frame2` | 1 |  |
+| `Ani_FetusNoJar_shotGrown_Frame2` | 1 |  |
+| `Ani_FetusNoJar_transform_Frame2` | 1 |  |
+| `Ani_FetusNoJar_walk_Frame2` | 1 |  |
+| `Ani_FetusNoJar_walkGrown_Frame2` | 1 |  |
+| `Ani_FetusNoJar_walkGrown_Frame20` | 1 |  |
+| `Ani_FetusNoJar_walkGrown_Frame26` | 1 |  |
+| `Ani_FetusNoJar_walkGrown_Frame48` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackL1_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackL1_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackL2_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackL2_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackL3_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackL3_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackR1_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackR1_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackR2_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackR2_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackR3_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_attackR3_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_critical1_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_critical2_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_critical3_Frame7` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying1_Frame112` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying1_Frame212` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying1_Frame23` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying2_Frame112` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying2_Frame212` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying2_Frame23` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying3_Frame112` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying3_Frame212` | 1 |  |
+| `Ani_FinalBossMegaGuppy_dying3_Frame23` | 1 |  |
+| `Ani_FinalBossMegaGuppy_hit1_Frame10` | 1 |  |
+| `Ani_FinalBossMegaGuppy_hit2_Frame10` | 1 |  |
+| `Ani_FinalBossMegaGuppy_hit3_Frame10` | 1 |  |
+| `Ani_FinalBossMegaGuppy_spawnin1_Frame10` | 1 |  |
+| `Ani_FinalBossMegaGuppy_spawnin1_Frame100` | 1 |  |
+| `Ani_FinalBossMegaGuppy_transform12_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_transform13_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_transform21_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_transform23_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_transform31_Frame12` | 1 |  |
+| `Ani_FinalBossMegaGuppy_transform32_Frame12` | 1 |  |
+| `Ani_FinalBossPhase1_hit_Frame2` | 1 |  |
+| `Ani_FinalBossPhase1_reaction_Frame14` | 1 |  |
+| `Ani_FinalBossPhase1_summon_Frame58` | 1 |  |
+| `Ani_FinalBossPhase1_transform_Frame10` | 1 |  |
+| `Ani_FinalBossPhase1_transform_Frame120` | 1 |  |
+| `Ani_FinalBossPhase1_transform_Frame18` | 1 |  |
+| `Ani_FinalBossPhase2_bash_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_blocked_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_blockHoly_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_breakshield_Frame102` | 1 |  |
+| `Ani_FinalBossPhase2_breakshield_Frame135` | 1 |  |
+| `Ani_FinalBossPhase2_breakshield_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_chargedodges2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_chargeholy2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_chargeholy_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dashattack2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dashbegin2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dashing2_Loop` | 1 |  |
+| `Ani_FinalBossPhase2_disappointment_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dodgebackward2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dodgeforward2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dodgeleft2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dodgeright2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dying2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dying_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dyingHoly2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_dyingHoly_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_holyHoly2_Frame199` | 1 |  |
+| `Ani_FinalBossPhase2_holyHoly2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_holyHoly_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_primingHoly2_Loop` | 1 |  |
+| `Ani_FinalBossPhase2_primingHoly_Loop` | 1 |  |
+| `Ani_FinalBossPhase2_pulseHoly2_Frame16` | 1 |  |
+| `Ani_FinalBossPhase2_pulseHoly2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_pulseHoly_Frame16` | 1 |  |
+| `Ani_FinalBossPhase2_pulseHoly_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_raise2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_raise_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_swipe2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_swipe_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_throwshield_Frame108` | 1 |  |
+| `Ani_FinalBossPhase2_throwshield_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_throwshield_Frame67` | 1 |  |
+| `Ani_FinalBossPhase2_turn180_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_turnFlip_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_turnRev_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_walk2_Frame100` | 1 |  |
+| `Ani_FinalBossPhase2_walk2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_walk2_Frame22` | 1 |  |
+| `Ani_FinalBossPhase2_walk2_Frame42` | 1 |  |
+| `Ani_FinalBossPhase2_walk2_Frame61` | 1 |  |
+| `Ani_FinalBossPhase2_walk2_Frame81` | 1 |  |
+| `Ani_FinalBossPhase2_walk_Frame2` | 1 |  |
+| `Ani_FinalBossPhase2_walk_Frame25` | 1 |  |
+| `Ani_FinalBossPhase3_chargeholy1_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_chargeholy2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_chargeholy3_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_dying1_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_dying2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_dying3_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_hit1_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_hit2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_hit3_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_holy1_Frame20` | 1 |  |
+| `Ani_FinalBossPhase3_holy2_Frame20` | 1 |  |
+| `Ani_FinalBossPhase3_holy3_Frame20` | 1 |  |
+| `Ani_FinalBossPhase3_pulse1_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_pulse2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_pulse3_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_spawnin1_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_transform12_Frame21` | 1 |  |
+| `Ani_FinalBossPhase3_transform13_Frame21` | 1 |  |
+| `Ani_FinalBossPhase3_transform21_Frame21` | 1 |  |
+| `Ani_FinalBossPhase3_transform23_Frame21` | 1 |  |
+| `Ani_FinalBossPhase3_transform31_Frame21` | 1 |  |
+| `Ani_FinalBossPhase3_transform32_Frame21` | 1 |  |
+| `Ani_FinalBossPhase3_walk1_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_walk2_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_walk3_Frame2` | 1 |  |
+| `Ani_FinalBossPhase3_wrath1_Frame15` | 1 |  |
+| `Ani_FinalBossPhase3_wrath2_Frame15` | 1 |  |
+| `Ani_FinalBossPhase3_wrath3_Frame15` | 1 |  |
+| `Ani_Flea_attack_Frame18` | 1 |  |
+| `Ani_Flea_attack_Frame3` | 1 |  |
+| `Ani_Flea_dying_Frame2` | 1 |  |
+| `Ani_Flea_walk_Frame2` | 1 |  |
+| `Ani_FleshLad_attack_Frame4` | 1 |  |
+| `Ani_FleshLad_attack_Frame75` | 1 |  |
+| `Ani_FleshLad_doublepunch_Frame14` | 1 |  |
+| `Ani_FleshLad_doublepunch_Frame41` | 1 |  |
+| `Ani_FleshLad_dying_Frame2` | 1 |  |
+| `Ani_FleshLad_dying_Frame27` | 1 |  |
+| `Ani_FleshLad_dying_Frame62` | 1 |  |
+| `Ani_FleshLad_hit_Frame15` | 1 |  |
+| `Ani_FleshLad_hit_Frame3` | 1 |  |
+| `Ani_FleshLad_idle_Frame153` | 1 |  |
+| `Ani_FleshLad_idle_Frame26` | 1 |  |
+| `Ani_FleshLad_idle_Frame290` | 1 |  |
+| `Ani_FleshLad_idle_Frame47` | 1 |  |
+| `Ani_FleshLad_idle_Frame57` | 1 |  |
+| `Ani_FleshLad_walk_Frame17` | 1 |  |
+| `Ani_FleshLad_walk_Frame30` | 1 |  |
+| `Ani_FleshLad_walk_Frame34` | 1 |  |
+| `Ani_FleshLad_walk_Frame50` | 1 |  |
+| `Ani_FleshLad_walk_Frame65` | 1 |  |
+| `Ani_FleshLad_weak_Frame115` | 1 |  |
+| `Ani_FleshyMind_attack_Frame21` | 1 |  |
+| `Ani_FleshyMind_attack_Frame6` | 1 |  |
+| `Ani_FleshyMind_dying_Frame3` | 1 |  |
+| `Ani_FleshyMind_dying_Frame6` | 1 |  |
+| `Ani_FleshyMind_hit_Frame2` | 1 |  |
+| `Ani_FleshyMind_pulse_Frame53` | 1 |  |
+| `Ani_FleshyMind_pulse_Frame7` | 1 |  |
+| `Ani_FleshyMind_walk_Frame16` | 1 |  |
+| `Ani_FleshyMind_walk_Frame2` | 1 |  |
+| `Ani_Floast_dying_Frame2` | 1 |  |
+| `Ani_Floast_dying_Frame7` | 1 |  |
+| `Ani_Floast_hit_Frame4` | 1 |  |
+| `Ani_Floast_shoot_Frame8` | 1 |  |
+| `Ani_Floast_shoot_Frame9` | 1 |  |
+| `Ani_Floast_spawn_Frame2` | 1 |  |
+| `Ani_Floast_spawn_Frame54` | 1 |  |
+| `Ani_Floast_spawn_Frame56` | 1 |  |
+| `Ani_Floast_throw_Frame2` | 1 |  |
+| `Ani_Floast_throw_Frame3` | 1 |  |
+| `Ani_Floast_throw_Frame30` | 1 |  |
+| `Ani_Floast_throw_Frame76` | 1 |  |
+| `Ani_Floast_throw_Frame77` | 1 |  |
+| `Ani_Floast_throwCat_Frame2` | 1 |  |
+| `Ani_Floast_throwCat_Frame3` | 1 |  |
+| `Ani_Floast_throwCat_Frame30` | 1 |  |
+| `Ani_Floast_throwCat_Frame76` | 1 |  |
+| `Ani_Floast_throwCat_Frame77` | 1 |  |
+| `Ani_Floast_walk_Frame2` | 1 |  |
+| `Ani_Floater_attack_Frame2` | 1 |  |
+| `Ani_Floater_dying_Frame3` | 1 |  |
+| `Ani_Floater_hit_Frame9` | 1 |  |
+| `Ani_Floater_walk_Frame2` | 1 |  |
+| `Ani_FloatingHive_dying_Frame18` | 1 |  |
+| `Ani_FloatingHive_dying_Frame2` | 1 |  |
+| `Ani_FloatingHive_dying_Frame34` | 1 |  |
+| `Ani_FloatingHive_hit_Frame4` | 1 |  |
+| `Ani_FloatingHive_shoot_Frame2` | 1 |  |
+| `Ani_Flushmaster_attack_Frame198` | 1 |  |
+| `Ani_Flushmaster_attack_Frame2` | 1 |  |
+| `Ani_Flushmaster_attack_Frame80` | 1 |  |
+| `Ani_Flushmaster_dying_Frame2` | 1 |  |
+| `Ani_Flushmaster_hit_Frame2` | 1 |  |
+| `Ani_Flushmaster_portin_Frame2` | 1 |  |
+| `Ani_Flushmaster_portout_Frame2` | 1 |  |
+| `Ani_Fly_attack_Frame2` | 1 |  |
+| `Ani_Fly_dying_Frame2` | 1 |  |
+| `Ani_Fly_walk_Loop` | 1 |  |
+| `Ani_FlySwarm_attack2_Frame17` | 1 |  |
+| `Ani_FlySwarm_attack2_Frame48` | 1 |  |
+| `Ani_FlySwarm_attack3_Frame11` | 1 |  |
+| `Ani_FlySwarm_attack3_Frame29` | 1 |  |
+| `Ani_FlySwarm_attack3_Frame49` | 1 |  |
+| `Ani_FlySwarm_attack4_Frame10` | 1 |  |
+| `Ani_FlySwarm_attack4_Frame18` | 1 |  |
+| `Ani_FlySwarm_attack4_Frame29` | 1 |  |
+| `Ani_FlySwarm_attack4_Frame39` | 1 |  |
+| `Ani_FlySwarm_attack5_Frame19` | 1 |  |
+| `Ani_FlySwarm_attack5_Frame29` | 1 |  |
+| `Ani_FlySwarm_attack5_Frame39` | 1 |  |
+| `Ani_FlySwarm_attack5_Frame49` | 1 |  |
+| `Ani_FlySwarm_attack5_Frame9` | 1 |  |
+| `Ani_FlySwarm_dying2_Frame2` | 1 |  |
+| `Ani_FlySwarm_dying3_Frame2` | 1 |  |
+| `Ani_FlySwarm_dying4_Frame2` | 1 |  |
+| `Ani_FlySwarm_dying5_Frame2` | 1 |  |
+| `Ani_FlySwarm_dying_Frame2` | 1 |  |
+| `Ani_FlySwarm_dying_Frame21` | 1 |  |
+| `Ani_FlySwarm_dying_Frame31` | 1 |  |
+| `Ani_FlySwarm_dying_Frame8` | 1 |  |
+| `Ani_FlySwarm_dying_Frame9` | 1 |  |
+| `Ani_FlySwarm_hit5_Frame2` | 1 |  |
+| `Ani_FlySwarm_shrink2_Frame15` | 1 |  |
+| `Ani_FlySwarm_shrink2_Frame2` | 1 |  |
+| `Ani_FlySwarm_shrink3_Frame15` | 1 |  |
+| `Ani_FlySwarm_shrink3_Frame2` | 1 |  |
+| `Ani_FlySwarm_shrink4_Frame15` | 1 |  |
+| `Ani_FlySwarm_shrink4_Frame2` | 1 |  |
+| `Ani_FlySwarm_shrink5_Frame15` | 1 |  |
+| `Ani_FlySwarm_shrink5_Frame2` | 1 |  |
+| `Ani_FrankX_dying_Frame2` | 1 |  |
+| `Ani_FrankX_dying_Frame3` | 1 |  |
+| `Ani_FrankX_dyingFull_Frame2` | 1 |  |
+| `Ani_FrankX_dyingFull_Frame3` | 1 |  |
+| `Ani_FrankX_exhaleFull_Frame22` | 1 |  |
+| `Ani_FrankX_exhaleFull_Frame24` | 1 |  |
+| `Ani_FrankX_exhaleFull_Frame50` | 1 |  |
+| `Ani_FrankX_hit_Frame3` | 1 |  |
+| `Ani_FrankX_hitFull_Frame2` | 1 |  |
+| `Ani_FrankX_hitFull_Frame3` | 1 |  |
+| `Ani_FrankX_inhale_Frame10` | 1 |  |
+| `Ani_FrankX_inhale_Frame12` | 1 |  |
+| `Ani_FrankX_walk_Frame2` | 1 |  |
+| `Ani_Frog_dying_Frame2` | 1 |  |
+| `Ani_Frog_jump_Frame2` | 1 |  |
+| `Ani_Frog_land_Frame2` | 1 |  |
+| `Ani_Frog_throwobject_Frame2` | 1 |  |
+| `Ani_Fuzzer_attack_Frame10` | 1 |  |
+| `Ani_Fuzzer_attack_Frame2` | 1 |  |
+| `Ani_Fuzzer_attack_Frame56` | 1 |  |
+| `Ani_Fuzzer_dying_Frame2` | 1 |  |
+| `Ani_Fuzzer_dying_Frame39` | 1 |  |
+| `Ani_Fuzzer_fuzzjump_Frame12` | 1 |  |
+| `Ani_Fuzzer_fuzzjump_Frame5` | 1 |  |
+| `Ani_Fuzzer_fuzzjump_Frame65` | 1 |  |
+| `Ani_Fuzzer_hit_Frame5` | 1 |  |
+| `Ani_Fuzzer_react_Frame2` | 1 |  |
+| `Ani_Gambit_attack_Frame15` | 1 |  |
+| `Ani_Gambit_attack_Frame17` | 1 |  |
+| `Ani_Gambit_beam_Frame192` | 1 |  |
+| `Ani_Gambit_beam_Frame2` | 1 |  |
+| `Ani_Gambit_beam_Frame3` | 1 |  |
+| `Ani_Gambit_beam_Frame52` | 1 |  |
+| `Ani_Gambit_djump_Frame12` | 1 |  |
+| `Ani_Gambit_djump_Frame155` | 1 |  |
+| `Ani_Gambit_djump_Frame2` | 1 |  |
+| `Ani_Gambit_djump_Frame52` | 1 |  |
+| `Ani_Gambit_djump_Frame62` | 1 |  |
+| `Ani_Gambit_dying_Frame2` | 1 |  |
+| `Ani_Gambit_dying_Frame5` | 1 |  |
+| `Ani_Gambit_fizzle_Frame10` | 1 |  |
+| `Ani_Gambit_fizzle_Frame100` | 1 |  |
+| `Ani_Gambit_fizzle_Frame101` | 1 |  |
+| `Ani_Gambit_fizzle_Frame13` | 1 |  |
+| `Ani_Gambit_groundpound_Frame21` | 1 |  |
+| `Ani_Gambit_groundpound_Frame29` | 1 |  |
+| `Ani_Gambit_groundpound_Frame33` | 1 |  |
+| `Ani_Gambit_groundpound_Frame5` | 1 |  |
+| `Ani_Gambit_hit_Frame3` | 1 |  |
+| `Ani_Gambit_poop_Frame2` | 1 |  |
+| `Ani_Gambit_power_Frame11` | 1 |  |
+| `Ani_Gambit_power_Frame2` | 1 |  |
+| `Ani_Gambit_throw_Frame12` | 1 |  |
+| `Ani_Gambit_throw_Frame51` | 1 |  |
+| `Ani_Gambit_throw_Frame52` | 1 |  |
+| `Ani_Gambit_walk_Frame13` | 1 |  |
+| `Ani_Gambit_walk_Frame5` | 1 |  |
+| `Ani_GambitDice_land_Frame17` | 1 |  |
+| `Ani_GambitDice_land_Frame2` | 1 |  |
+| `Ani_GambitDice_land_Frame28` | 1 |  |
+| `Ani_GambitDice_land_Frame36` | 1 |  |
+| `Ani_GambitDice_land_Frame42` | 1 |  |
+| `Ani_Gamete_birthBig_Frame2` | 1 |  |
+| `Ani_Gamete_birthBig_Frame3` | 1 |  |
+| `Ani_Gamete_dying_Frame2` | 1 |  |
+| `Ani_Gamete_dying_Frame3` | 1 |  |
+| `Ani_Gamete_dyingBig_Frame2` | 1 |  |
+| `Ani_Gamete_dyingBig_Frame3` | 1 |  |
+| `Ani_Gamete_hit_Frame2` | 1 |  |
+| `Ani_Gamete_hit_Frame4` | 1 |  |
+| `Ani_Gamete_hitBig_Frame2` | 1 |  |
+| `Ani_Gamete_hitBig_Frame4` | 1 |  |
+| `Ani_Gamete_transform_Frame2` | 1 |  |
+| `Ani_Gamete_transform_Frame3` | 1 |  |
+| `Ani_Gamete_walk_Frame10` | 1 |  |
+| `Ani_Gamete_walk_Frame2` | 1 |  |
+| `Ani_Gamete_walkBig_Frame2` | 1 |  |
+| `Ani_GasCloud_spawnin_Frame2` | 1 |  |
+| `Ani_Gasser_dying_Frame2` | 1 |  |
+| `Ani_Gasser_hit_Frame2` | 1 |  |
+| `Ani_Gasser_shoot_Frame10` | 1 |  |
+| `Ani_Gatekeeper_attack_Frame120` | 1 |  |
+| `Ani_Gatekeeper_attack_Frame14` | 1 |  |
+| `Ani_Gatekeeper_attack_Frame2` | 1 |  |
+| `Ani_Gatekeeper_attackCat_Frame120` | 1 |  |
+| `Ani_Gatekeeper_attackCat_Frame2` | 1 |  |
+| `Ani_Gatekeeper_attackCat_Frame60` | 1 |  |
+| `Ani_Gatekeeper_dying_Frame2` | 1 |  |
+| `Ani_Gatekeeper_dying_Frame5` | 1 |  |
+| `Ani_Gatekeeper_hit_Frame3` | 1 |  |
+| `Ani_Gatekeeper_leap_Frame14` | 1 |  |
+| `Ani_Gatekeeper_leap_Frame18` | 1 |  |
+| `Ani_Gatekeeper_leap_Frame44` | 1 |  |
+| `Ani_Gatekeeper_spawn_Frame28` | 1 |  |
+| `Ani_Gatekeeper_spawn_Frame38` | 1 |  |
+| `Ani_Gatekeeper_walk_Frame18` | 1 |  |
+| `Ani_Gatekeeper_walk_Frame4` | 1 |  |
+| `Ani_GeoLad_attack_Frame2` | 1 |  |
+| `Ani_GeoLad_dying_Frame9` | 1 |  |
+| `Ani_GeoLad_jumpsmash_Frame2` | 1 |  |
+| `Ani_GeoLad_walk_Frame2` | 1 |  |
+| `Ani_GirlDino_attack_Frame20` | 1 |  |
+| `Ani_GirlDino_attack_Frame48` | 1 |  |
+| `Ani_GirlDino_cry_Frame25` | 1 |  |
+| `Ani_GirlDino_cry_Frame5` | 1 |  |
+| `Ani_GirlDino_dying_Frame2` | 1 |  |
+| `Ani_GirlDino_dying_Frame4` | 1 |  |
+| `Ani_GirlDino_dying_Frame44` | 1 |  |
+| `Ani_GirlDino_hit_Frame3` | 1 |  |
+| `Ani_GirlDino_spawn_Frame39` | 1 |  |
+| `Ani_GirlDino_spawn_Frame7` | 1 |  |
+| `Ani_GirlDino_throw_Frame12` | 1 |  |
+| `Ani_GirlDino_throw_Frame25` | 1 |  |
+| `Ani_GirlDino_throwCat_Frame12` | 1 |  |
+| `Ani_GirlDino_throwCat_Frame25` | 1 |  |
+| `Ani_GirlDino_walk_Frame2` | 1 |  |
+| `Ani_GirlDino_walk_Frame30` | 1 |  |
+| `Ani_GlowingMushroom_dying_Frame2` | 1 |  |
+| `Ani_GlowingMushroom_puff_Frame2` | 1 |  |
+| `Ani_GraveWorm_dying_Frame2` | 1 |  |
+| `Ani_GraveWorm_hit_Frame2` | 1 |  |
+| `Ani_GraveWorm_portin_Frame2` | 1 |  |
+| `Ani_GraveWorm_portout_Frame2` | 1 |  |
+| `Ani_GraveWorm_shoot_Frame2` | 1 |  |
+| `Ani_GreenProber_attack_Frame2` | 1 |  |
+| `Ani_GreenProber_attack_Frame35` | 1 |  |
+| `Ani_GreenProber_attack_Frame42` | 1 |  |
+| `Ani_GreenProber_attack_Frame46` | 1 |  |
+| `Ani_GreenProber_dying_Frame29` | 1 |  |
+| `Ani_GreenProber_dying_Frame5` | 1 |  |
+| `Ani_GreenProber_hit_Frame5` | 1 |  |
+| `Ani_GreenProber_probe_Frame18` | 1 |  |
+| `Ani_GreenProber_probe_Frame25` | 1 |  |
+| `Ani_GreenProber_probe_Frame66` | 1 |  |
+| `Ani_GreenProber_summonspawnin_Frame2` | 1 |  |
+| `Ani_GreenProber_walk_Frame15` | 1 |  |
+| `Ani_GreenProber_walk_Frame2` | 1 |  |
+| `Ani_GreyAlien_counterspell_Frame16` | 1 |  |
+| `Ani_GreyAlien_dying_Frame17` | 1 |  |
+| `Ani_GreyAlien_dying_Frame2` | 1 |  |
+| `Ani_GreyAlien_dyingprimed_Frame2` | 1 |  |
+| `Ani_GreyAlien_dyingprimed_Frame3` | 1 |  |
+| `Ani_GreyAlien_hit_Frame2` | 1 |  |
+| `Ani_GreyAlien_hitprimed_Frame2` | 1 |  |
+| `Ani_GreyAlien_megablast_Frame2` | 1 |  |
+| `Ani_GreyAlien_megablast_Frame4` | 1 |  |
+| `Ani_GreyAlien_megablast_Frame41` | 1 |  |
+| `Ani_GreyAlien_prime_Frame2` | 1 |  |
+| `Ani_GreyAlien_prime_Frame3` | 1 |  |
+| `Ani_GreyAlien_shoot_Frame2` | 1 |  |
+| `Ani_GreyAlien_shoot_Frame25` | 1 |  |
+| `Ani_GreyAlien_shootprimed_Frame2` | 1 |  |
+| `Ani_GreyAlien_suggest_Frame2` | 1 |  |
+| `Ani_GreyAlien_suggest_Frame3` | 1 |  |
+| `Ani_GreyAlien_walk_Frame16` | 1 |  |
+| `Ani_GreyAlien_walk_Frame2` | 1 |  |
+| `Ani_GreyAlien_walkprimed_Frame16` | 1 |  |
+| `Ani_GreyAlien_walkprimed_Frame2` | 1 |  |
+| `Ani_GreyAlien_walkprimed_Frame31` | 1 |  |
+| `Ani_GreyAlien_walkprimed_Frame46` | 1 |  |
+| `Ani_GroundZombie_attackDown_Frame2` | 1 |  |
+| `Ani_GroundZombie_attackDown_Frame24` | 1 |  |
+| `Ani_GroundZombie_dying_Frame2` | 1 |  |
+| `Ani_GroundZombie_dying_Frame3` | 1 |  |
+| `Ani_GroundZombie_dyingDown_Frame13` | 1 |  |
+| `Ani_GroundZombie_dyingDown_Frame2` | 1 |  |
+| `Ani_GroundZombie_flip_Frame2` | 1 |  |
+| `Ani_GroundZombie_flip_Frame3` | 1 |  |
+| `Ani_GroundZombie_flipDown_Frame2` | 1 |  |
+| `Ani_GroundZombie_flipDown_Frame35` | 1 |  |
+| `Ani_GroundZombie_hit_Frame2` | 1 |  |
+| `Ani_GroundZombie_hit_Frame3` | 1 |  |
+| `Ani_GroundZombie_hitDown_Frame2` | 1 |  |
+| `Ani_GroundZombie_hitDown_Frame7` | 1 |  |
+| `Ani_GroundZombie_portin_Frame2` | 1 |  |
+| `Ani_GroundZombie_portin_Frame59` | 1 |  |
+| `Ani_GroundZombie_portinDown_Frame11` | 1 |  |
+| `Ani_GroundZombie_portinDown_Frame2` | 1 |  |
+| `Ani_GroundZombie_portout_Frame2` | 1 |  |
+| `Ani_GroundZombie_portout_Frame3` | 1 |  |
+| `Ani_GroundZombie_portoutDown_Frame2` | 1 |  |
+| `Ani_GroundZombie_portoutDown_Frame3` | 1 |  |
+| `Ani_Guillotina1_attackBelly_Frame15` | 1 |  |
+| `Ani_Guillotina1_attackBelly_Frame2` | 1 |  |
+| `Ani_Guillotina1_attackBelly_Frame47` | 1 |  |
+| `Ani_Guillotina1_attackRage_Frame2` | 1 |  |
+| `Ani_Guillotina1_attackRage_Frame25` | 1 |  |
+| `Ani_Guillotina1_bellypound_Frame7` | 1 |  |
+| `Ani_Guillotina1_digest_Frame2` | 1 |  |
+| `Ani_Guillotina1_digest_Frame7` | 1 |  |
+| `Ani_Guillotina1_dying_Frame13` | 1 |  |
+| `Ani_Guillotina1_dying_Frame14` | 1 |  |
+| `Ani_Guillotina1_dying_Frame83` | 1 |  |
+| `Ani_Guillotina1_enrage_Frame3` | 1 |  |
+| `Ani_Guillotina1_enrage_Frame33` | 1 |  |
+| `Ani_Guillotina1_grab_Frame10` | 1 |  |
+| `Ani_Guillotina1_grab_Frame3` | 1 |  |
+| `Ani_Guillotina1_hit_Frame2` | 1 |  |
+| `Ani_Guillotina1_hitBelly_Frame2` | 1 |  |
+| `Ani_Guillotina1_hitMouthFull_Frame2` | 1 |  |
+| `Ani_Guillotina1_hitRage_Frame2` | 1 |  |
+| `Ani_Guillotina1_jumpattack_Frame10` | 1 |  |
+| `Ani_Guillotina1_jumpattack_Frame15` | 1 |  |
+| `Ani_Guillotina1_jumpattack_Frame59` | 1 |  |
+| `Ani_Guillotina1_jumpattackRage_Frame10` | 1 |  |
+| `Ani_Guillotina1_jumpattackRage_Frame15` | 1 |  |
+| `Ani_Guillotina1_jumpattackRage_Frame59` | 1 |  |
+| `Ani_Guillotina1_jumpmove_Frame10` | 1 |  |
+| `Ani_Guillotina1_jumpmove_Frame59` | 1 |  |
+| `Ani_Guillotina1_melee_Frame12` | 1 |  |
+| `Ani_Guillotina1_melee_Frame2` | 1 |  |
+| `Ani_Guillotina1_shoot_Frame2` | 1 |  |
+| `Ani_Guillotina1_shoot_Frame30` | 1 |  |
+| `Ani_Guillotina1_shoot_Frame32` | 1 |  |
+| `Ani_Guillotina1_shootRage_Frame13` | 1 |  |
+| `Ani_Guillotina1_shootRage_Frame2` | 1 |  |
+| `Ani_Guillotina1_shootRage_Frame3` | 1 |  |
+| `Ani_Guillotina1_suck1_Frame13` | 1 |  |
+| `Ani_Guillotina1_suck1_Frame19` | 1 |  |
+| `Ani_Guillotina1_suck2_Frame19` | 1 |  |
+| `Ani_Guillotina1_suck2_Frame22` | 1 |  |
+| `Ani_Guillotina1_throw_Frame16` | 1 |  |
+| `Ani_Guillotina1_throw_Frame23` | 1 |  |
+| `Ani_Guillotina1_walk_Frame10` | 1 |  |
+| `Ani_Guillotina1_walk_Frame30` | 1 |  |
+| `Ani_Guillotina1_walkBelly_Frame10` | 1 |  |
+| `Ani_Guillotina1_walkBelly_Frame30` | 1 |  |
+| `Ani_Guillotina1_walkMouthFull_Frame10` | 1 |  |
+| `Ani_Guillotina1_walkMouthFull_Frame30` | 1 |  |
+| `Ani_Guillotina1_walkRage_Frame10` | 1 |  |
+| `Ani_Guillotina1_walkRage_Frame30` | 1 |  |
+| `Ani_Guillotina2Body_attack_Frame2` | 1 |  |
+| `Ani_Guillotina2Body_attack_Frame50` | 1 |  |
+| `Ani_Guillotina2Body_attack_Frame94` | 1 |  |
+| `Ani_Guillotina2Body_attackRage_Frame110` | 1 |  |
+| `Ani_Guillotina2Body_attackRage_Frame2` | 1 |  |
+| `Ani_Guillotina2Body_attackRage_Frame59` | 1 |  |
+| `Ani_Guillotina2Body_drag_Loop` | 1 |  |
+| `Ani_Guillotina2Body_dying_Frame126` | 1 |  |
+| `Ani_Guillotina2Body_dying_Frame2` | 1 |  |
+| `Ani_Guillotina2Body_hit_Frame2` | 1 |  |
+| `Ani_Guillotina2Body_hitRage_Frame2` | 1 |  |
+| `Ani_Guillotina2Body_react_Frame105` | 1 |  |
+| `Ani_Guillotina2Body_react_Frame124` | 1 |  |
+| `Ani_Guillotina2Body_react_Frame143` | 1 |  |
+| `Ani_Guillotina2Body_react_Frame2` | 1 |  |
+| `Ani_Guillotina2Body_tantrum_Frame2` | 1 |  |
+| `Ani_Guillotina2Body_tantrum_Frame48` | 1 |  |
+| `Ani_Guillotina2Body_tantrum_Frame58` | 1 |  |
+| `Ani_Guillotina2Body_tantrum_Frame68` | 1 |  |
+| `Ani_Guillotina2Body_tantrum_Frame79` | 1 |  |
+| `Ani_Guillotina2Body_tantrum_Frame88` | 1 |  |
+| `Ani_Guillotina2Body_tantrum_Frame95` | 1 |  |
+| `Ani_Guillotina2Body_walk_Frame24` | 1 |  |
+| `Ani_Guillotina2Body_walk_Frame4` | 1 |  |
+| `Ani_Guillotina2Head_attack_Frame115` | 1 |  |
+| `Ani_Guillotina2Head_attack_Frame16` | 1 |  |
+| `Ani_Guillotina2Head_attack_Frame66` | 1 |  |
+| `Ani_Guillotina2Head_attackrage_Frame115` | 1 |  |
+| `Ani_Guillotina2Head_attackRage_Frame64` | 1 |  |
+| `Ani_Guillotina2Head_call_Frame20` | 1 |  |
+| `Ani_Guillotina2Head_callRage_Frame19` | 1 |  |
+| `Ani_Guillotina2Head_dying_Frame55` | 1 |  |
+| `Ani_Guillotina2Head_dying_Frame6` | 1 |  |
+| `Ani_Guillotina2Head_dying_Frame8` | 1 |  |
+| `Ani_Guillotina2Head_hit_Frame2` | 1 |  |
+| `Ani_Guillotina2Head_hitRage_Frame2` | 1 |  |
+| `Ani_Guillotina2Head_react_Frame5` | 1 |  |
+| `Ani_Guillotina2Head_suck_Frame10` | 1 |  |
+| `Ani_Guillotina2Head_suck_Frame9` | 1 |  |
+| `Ani_Guillotina2Head_throw_Frame2` | 1 |  |
+| `Ani_Guillotina2Head_throw_Frame52` | 1 |  |
+| `Ani_Guillotina2Head_throw_Frame9` | 1 |  |
+| `Ani_Guillotina2Head_walk_Frame2` | 1 |  |
+| `Ani_Guillotina2Head_walk_Frame27` | 1 |  |
+| `Ani_Guillotina2Head_walkRage_Frame2` | 1 |  |
+| `Ani_Guillotina2Head_walkRage_Frame27` | 1 |  |
+| `Ani_Guillotina3Body_dying_Frame2` | 1 |  |
+| `Ani_Guillotina3Body_enrage_Frame2` | 1 |  |
+| `Ani_Guillotina3Body_grab_Frame4` | 1 |  |
+| `Ani_Guillotina3Body_run_Frame11` | 1 |  |
+| `Ani_Guillotina3Body_run_Frame34` | 1 |  |
+| `Ani_Guillotina3Body_runStart_Frame2` | 1 |  |
+| `Ani_Guillotina3Body_scream_Frame11` | 1 |  |
+| `Ani_Guillotina3Body_shake_Frame2` | 1 |  |
+| `Ani_Guillotina3Body_shakeRage_Frame2` | 1 |  |
+| `Ani_Guillotina3Body_spawnmama_Frame2` | 1 |  |
+| `Ani_Guillotina3Body_throw_Frame2` | 1 |  |
+| `Ani_Guillotina3Body_walk_Frame10` | 1 |  |
+| `Ani_Guillotina3Body_walk_Frame37` | 1 |  |
+| `Ani_Guillotina3Body_walkHolding_Frame10` | 1 |  |
+| `Ani_Guillotina3Body_walkHolding_Frame37` | 1 |  |
+| `Ani_Guillotina3Body_walkRage_Frame11` | 1 |  |
+| `Ani_Guillotina3Body_walkRage_Frame37` | 1 |  |
+| `Ani_Guillotina3Head_call_Frame15` | 1 |  |
+| `Ani_Guillotina3Head_call_Frame16` | 1 |  |
+| `Ani_Guillotina3Head_call_Frame44` | 1 |  |
+| `Ani_Guillotina3Head_dying_Frame3` | 1 |  |
+| `Ani_Guillotina3Head_shoot_Frame3` | 1 |  |
+| `Ani_Guillotina3Head_shoot_Frame35` | 1 |  |
+| `Ani_Guillotina3Head_shoot_Frame36` | 1 |  |
+| `Ani_HangerBot_attack_Frame2` | 1 |  |
+| `Ani_HangerBot_attack_Frame4` | 1 |  |
+| `Ani_HangerBot_dying_Frame2` | 1 |  |
+| `Ani_HangerBot_dying_Frame4` | 1 |  |
+| `Ani_HangerBot_dying_Frame96` | 1 |  |
+| `Ani_HangerBot_hit_Frame2` | 1 |  |
+| `Ani_HangerBot_hit_Frame4` | 1 |  |
+| `Ani_HangerBot_portin_Frame2` | 1 |  |
+| `Ani_HangerBot_portin_Frame4` | 1 |  |
+| `Ani_HangerBot_portout_Frame2` | 1 |  |
+| `Ani_HangerBot_portout_Frame4` | 1 |  |
+| `Ani_HangerBot_spawn_Frame2` | 1 |  |
+| `Ani_HangerBot_spawn_Frame4` | 1 |  |
+| `Ani_HeadTumor_attack_Frame2` | 1 |  |
+| `Ani_HeadTumor_dying_Frame2` | 1 |  |
+| `Ani_HeadTumor_fart_Frame2` | 1 |  |
+| `Ani_HeadTumor_hit_Frame5` | 1 |  |
+| `Ani_HeadTumor_walk_Frame2` | 1 |  |
+| `Ani_Hemlock_bounce_Frame2` | 1 |  |
+| `Ani_Hemlock_dying_Frame2` | 1 |  |
+| `Ani_Hemlock_heal_Frame5` | 1 |  |
+| `Ani_Hemlock_hit_Frame3` | 1 |  |
+| `Ani_Hemlock_shoot_Frame2` | 1 |  |
+| `Ani_Hemlock_walk_Frame2` | 1 |  |
+| `Ani_HemlockFetus_fetus_dying_land_Frame9` | 1 |  |
+| `Ani_HemlockFetus_fetus_dying_transition_Frame2` | 1 |  |
+| `Ani_Hitler_dying_Frame2` | 1 |  |
+| `Ani_Hitler_dying_Frame3` | 1 |  |
+| `Ani_Hitler_dyingNuke_Frame2` | 1 |  |
+| `Ani_Hitler_heil_Frame17` | 1 |  |
+| `Ani_Hitler_heil_Frame19` | 1 |  |
+| `Ani_Hitler_heil_Frame40` | 1 |  |
+| `Ani_Hitler_heil_Frame5` | 1 |  |
+| `Ani_Hitler_heil_Frame80` | 1 |  |
+| `Ani_Hitler_hitNuke_Frame11` | 1 |  |
+| `Ani_Hitler_hitNuke_Frame14` | 1 |  |
+| `Ani_Hitler_hitNuke_Frame3` | 1 |  |
+| `Ani_Hitler_hitNuke_Frame6` | 1 |  |
+| `Ani_Hitler_hitNuke_Frame9` | 1 |  |
+| `Ani_Hitler_idleNuke_Frame2` | 1 |  |
+| `Ani_Hitler_idleNuke_Frame3` | 1 |  |
+| `Ani_Hitler_shoot_Frame17` | 1 |  |
+| `Ani_Hitler_shoot_Frame44` | 1 |  |
+| `Ani_Hitler_suicide_Frame100` | 1 |  |
+| `Ani_Hitler_suicide_Frame164` | 1 |  |
+| `Ani_Hitler_suicide_Frame2` | 1 |  |
+| `Ani_Hitler_suicide_Frame210` | 1 |  |
+| `Ani_Hitler_suicide_Frame302` | 1 |  |
+| `Ani_Hitler_suicide_Frame315` | 1 |  |
+| `Ani_Hitler_suicide_Frame50` | 1 |  |
+| `Ani_Hitler_walk_Frame2` | 1 |  |
+| `Ani_Hitler_walk_Frame25` | 1 |  |
+| `Ani_Hitler_walk_Frame26` | 1 |  |
+| `Ani_Hitler_walk_Frame51` | 1 |  |
+| `Ani_HitlerHead_dying_Frame2` | 1 |  |
+| `Ani_HitlerHead_transform_Frame2` | 1 |  |
+| `Ani_HitlerHead_yell1_Frame5` | 1 |  |
+| `Ani_HitlerHead_yell2_Frame4` | 1 |  |
+| `Ani_HitlerHead_yell3_Frame5` | 1 |  |
+| `Ani_HitlerMech_attack_Frame15` | 1 |  |
+| `Ani_HitlerMech_attack_Frame40` | 1 |  |
+| `Ani_HitlerMech_beamin_Frame2` | 1 |  |
+| `Ani_HitlerMech_beamin_Frame43` | 1 |  |
+| `Ani_HitlerMech_beamin_Frame88` | 1 |  |
+| `Ani_HitlerMech_portin_Frame2` | 1 |  |
+| `Ani_HitlerMech_portout_Frame15` | 1 |  |
+| `Ani_HitlerMech_pulp2_Frame31` | 1 |  |
+| `Ani_HitlerMech_pulp3_Frame23` | 1 |  |
+| `Ani_HitlerMech_pulp_Frame135` | 1 |  |
+| `Ani_HitlerMech_pulp_Frame2` | 1 |  |
+| `Ani_HitlerMech_ripandtear_Frame2` | 1 |  |
+| `Ani_HitlerMech_shoot_Frame15` | 1 |  |
+| `Ani_HitlerMech_shoot_Frame39` | 1 |  |
+| `Ani_HitlerMech_walk_Loop` | 1 |  |
+| `Ani_HitlerMech_yella_Frame35` | 1 |  |
+| `Ani_HitlerMech_yella_Frame78` | 1 |  |
+| `Ani_HitlerMech_yella_Frame8` | 1 |  |
+| `Ani_HitlerMech_yellb_Frame12` | 1 |  |
+| `Ani_HitlerMech_yellb_Frame24` | 1 |  |
+| `Ani_Hive_dying_Frame16` | 1 |  |
+| `Ani_Hive_dying_Frame2` | 1 |  |
+| `Ani_Hive_dying_Frame32` | 1 |  |
+| `Ani_Hive_hit_Frame4` | 1 |  |
+| `Ani_Hive_shoot_Frame2` | 1 |  |
+| `Ani_Host_attack_Frame2` | 1 |  |
+| `Ani_Host_dying_Frame2` | 1 |  |
+| `Ani_Host_shoot_Frame2` | 1 |  |
+| `Ani_HouseCat_hairballCough_Frame12` | 1 |  |
+| `Ani_HouseCat_hairballCough_Frame42` | 1 |  |
+| `Ani_HouseCat_licking_Frame13` | 1 |  |
+| `Ani_HouseCat_puking_Frame57` | 1 |  |
+| `Ani_HouseCat_scratching_Frame108` | 1 |  |
+| `Ani_HouseCat_scratching_Frame121` | 1 |  |
+| `Ani_HouseCat_scratching_Frame26` | 1 |  |
+| `Ani_HouseCat_scratching_Frame41` | 1 |  |
+| `Ani_HouseCat_scratching_Frame56` | 1 |  |
+| `Ani_HouseCat_scratching_Frame95` | 1 |  |
+| `Ani_HouseCat_swat_Frame15` | 1 |  |
+| `Ani_HumanCat_attack_Frame17` | 1 |  |
+| `Ani_HumanCat_attack_Frame38` | 1 |  |
+| `Ani_HumanCat_attack_Frame43` | 1 |  |
+| `Ani_HumanCat_attackDH_Frame13` | 1 |  |
+| `Ani_HumanCat_attackDH_Frame18` | 1 |  |
+| `Ani_HumanCat_counter_Frame7` | 1 |  |
+| `Ani_HumanCat_dodge_Frame2` | 1 |  |
+| `Ani_HumanCat_dodge_Frame5` | 1 |  |
+| `Ani_HumanCat_dodge_Frame9` | 1 |  |
+| `Ani_HumanCat_dying_Frame2` | 1 |  |
+| `Ani_HumanCat_dying_Frame8` | 1 |  |
+| `Ani_HumanCat_dyingDH_Frame2` | 1 |  |
+| `Ani_HumanCat_hit_Frame12` | 1 |  |
+| `Ani_HumanCat_hit_Frame2` | 1 |  |
+| `Ani_HumanCat_hitDH_Frame12` | 1 |  |
+| `Ani_HumanCat_humandie_Frame4` | 1 |  |
+| `Ani_HumanCat_walk_Frame13` | 1 |  |
+| `Ani_HumanCat_walk_Frame19` | 1 |  |
+| `Ani_HumanCat_walk_Frame4` | 1 |  |
+| `Ani_HumanCat_walk_Frame7` | 1 |  |
+| `Ani_HumanCat_walkDH_Frame19` | 1 |  |
+| `Ani_HumanCat_walkDH_Frame7` | 1 |  |
+| `Ani_Husk_dying_Frame2` | 1 |  |
+| `Ani_Husk_grow_Frame2` | 1 |  |
+| `Ani_Husk_hit_Frame2` | 1 |  |
+| `Ani_Husk_walk_Frame21` | 1 |  |
+| `Ani_Husk_walk_Frame33` | 1 |  |
+| `Ani_Husk_walk_Frame43` | 1 |  |
+| `Ani_IceElemental_blizzard_Frame2` | 1 |  |
+| `Ani_IceElemental_dying_Frame2` | 1 |  |
+| `Ani_IceElemental_dying_Frame84` | 1 |  |
+| `Ani_IceElemental_freeze_Frame2` | 1 |  |
+| `Ani_IceElemental_hit_Frame2` | 1 |  |
+| `Ani_IceElemental_ice_Frame2` | 1 |  |
+| `Ani_IceElemental_walk_Frame2` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame126` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame152` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame193` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame242` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame270` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame295` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame325` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame346` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame355` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame377` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame4` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame401` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame430` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame455` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame483` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame506` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame537` | 1 |  |
+| `Ani_Interstitial_boyRejectGirl_Frame7` | 1 |  |
+| `Ani_Interstitial_breed0_Frame109` | 1 |  |
+| `Ani_Interstitial_breed0_Frame111` | 1 |  |
+| `Ani_Interstitial_breed0_Frame119` | 1 |  |
+| `Ani_Interstitial_breed0_Frame125` | 1 |  |
+| `Ani_Interstitial_breed0_Frame18` | 1 |  |
+| `Ani_Interstitial_breed0_Frame30` | 1 |  |
+| `Ani_Interstitial_breed0_Frame41` | 1 |  |
+| `Ani_Interstitial_breed0_Frame53` | 1 |  |
+| `Ani_Interstitial_breed0_Frame6` | 1 |  |
+| `Ani_Interstitial_breed0_Frame64` | 1 |  |
+| `Ani_Interstitial_breed0_Frame78` | 1 |  |
+| `Ani_Interstitial_breed0_Frame90` | 1 |  |
+| `Ani_Interstitial_breed0_Frame97` | 1 |  |
+| `Ani_Interstitial_breed1_Frame109` | 1 |  |
+| `Ani_Interstitial_breed1_Frame119` | 1 |  |
+| `Ani_Interstitial_breed1_Frame129` | 1 |  |
+| `Ani_Interstitial_breed1_Frame136` | 1 |  |
+| `Ani_Interstitial_breed1_Frame153` | 1 |  |
+| `Ani_Interstitial_breed1_Frame167` | 1 |  |
+| `Ani_Interstitial_breed1_Frame18` | 1 |  |
+| `Ani_Interstitial_breed1_Frame212` | 1 |  |
+| `Ani_Interstitial_breed1_Frame242` | 1 |  |
+| `Ani_Interstitial_breed1_Frame30` | 1 |  |
+| `Ani_Interstitial_breed1_Frame302` | 1 |  |
+| `Ani_Interstitial_breed1_Frame310` | 1 |  |
+| `Ani_Interstitial_breed1_Frame41` | 1 |  |
+| `Ani_Interstitial_breed1_Frame53` | 1 |  |
+| `Ani_Interstitial_breed1_Frame6` | 1 |  |
+| `Ani_Interstitial_breed1_Frame64` | 1 |  |
+| `Ani_Interstitial_breed1_Frame78` | 1 |  |
+| `Ani_Interstitial_breed1_Frame90` | 1 |  |
+| `Ani_Interstitial_breed1_Frame97` | 1 |  |
+| `Ani_Interstitial_breed2_Frame109` | 1 |  |
+| `Ani_Interstitial_breed2_Frame119` | 1 |  |
+| `Ani_Interstitial_breed2_Frame129` | 1 |  |
+| `Ani_Interstitial_breed2_Frame136` | 1 |  |
+| `Ani_Interstitial_breed2_Frame153` | 1 |  |
+| `Ani_Interstitial_breed2_Frame167` | 1 |  |
+| `Ani_Interstitial_breed2_Frame18` | 1 |  |
+| `Ani_Interstitial_breed2_Frame208` | 1 |  |
+| `Ani_Interstitial_breed2_Frame220` | 1 |  |
+| `Ani_Interstitial_breed2_Frame252` | 1 |  |
+| `Ani_Interstitial_breed2_Frame284` | 1 |  |
+| `Ani_Interstitial_breed2_Frame30` | 1 |  |
+| `Ani_Interstitial_breed2_Frame318` | 1 |  |
+| `Ani_Interstitial_breed2_Frame344` | 1 |  |
+| `Ani_Interstitial_breed2_Frame360` | 1 |  |
+| `Ani_Interstitial_breed2_Frame392` | 1 |  |
+| `Ani_Interstitial_breed2_Frame41` | 1 |  |
+| `Ani_Interstitial_breed2_Frame53` | 1 |  |
+| `Ani_Interstitial_breed2_Frame6` | 1 |  |
+| `Ani_Interstitial_breed2_Frame64` | 1 |  |
+| `Ani_Interstitial_breed2_Frame78` | 1 |  |
+| `Ani_Interstitial_breed2_Frame90` | 1 |  |
+| `Ani_Interstitial_breed2_Frame97` | 1 |  |
+| `Ani_Interstitial_depressed_Frame2` | 1 |  |
+| `Ani_Interstitial_die_Frame173` | 1 |  |
+| `Ani_Interstitial_eatCat_Frame125` | 1 |  |
+| `Ani_Interstitial_eatCat_Frame15` | 1 |  |
+| `Ani_Interstitial_eatCat_Frame213` | 1 |  |
+| `Ani_Interstitial_eatPoop_Frame25` | 1 |  |
+| `Ani_Interstitial_eatPoop_Frame285` | 1 |  |
+| `Ani_Interstitial_enraged_Frame2` | 1 |  |
+| `Ani_Interstitial_fight_Frame105` | 1 |  |
+| `Ani_Interstitial_fight_Frame112` | 1 |  |
+| `Ani_Interstitial_fight_Frame120` | 1 |  |
+| `Ani_Interstitial_fight_Frame129` | 1 |  |
+| `Ani_Interstitial_fight_Frame137` | 1 |  |
+| `Ani_Interstitial_fight_Frame145` | 1 |  |
+| `Ani_Interstitial_fight_Frame152` | 1 |  |
+| `Ani_Interstitial_fight_Frame160` | 1 |  |
+| `Ani_Interstitial_fight_Frame169` | 1 |  |
+| `Ani_Interstitial_fight_Frame180` | 1 |  |
+| `Ani_Interstitial_fight_Frame190` | 1 |  |
+| `Ani_Interstitial_fight_Frame2` | 1 |  |
+| `Ani_Interstitial_fight_Frame47` | 1 |  |
+| `Ani_Interstitial_fight_Frame55` | 1 |  |
+| `Ani_Interstitial_fight_Frame59` | 1 |  |
+| `Ani_Interstitial_fight_Frame64` | 1 |  |
+| `Ani_Interstitial_fight_Frame70` | 1 |  |
+| `Ani_Interstitial_fight_Frame75` | 1 |  |
+| `Ani_Interstitial_fight_Frame80` | 1 |  |
+| `Ani_Interstitial_fight_Frame84` | 1 |  |
+| `Ani_Interstitial_fight_Frame91` | 1 |  |
+| `Ani_Interstitial_fight_Frame98` | 1 |  |
+| `Ani_Interstitial_fightresult_Dead_Dead_Frame12` | 1 |  |
+| `Ani_Interstitial_fightresult_Dead_Dead_Frame13` | 1 |  |
+| `Ani_Interstitial_fightresult_Dead_Dead_Frame2` | 1 |  |
+| `Ani_Interstitial_fightresult_Dead_Dead_Frame80` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame117` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame146` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame177` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame2` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame207` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame24` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame240` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame263` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame297` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame324` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame356` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame382` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame414` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame441` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame471` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame64` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Dead_Frame89` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Injured_Frame105` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Injured_Frame107` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Injured_Frame2` | 1 |  |
+| `Ani_Interstitial_fightresult_Injured_Injured_Frame3` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame117` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame146` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame177` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame2` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame207` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame24` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame240` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame263` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame297` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame324` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame356` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame382` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame414` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame441` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame471` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame64` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Dead_Frame89` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame1028` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame1099` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame116` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame1168` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame1242` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame1311` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame1378` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame186` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame2` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame259` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame327` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame400` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame468` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame537` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame57` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame608` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame681` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame752` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame818` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame889` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_Injured_Frame963` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_OK_Frame137` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_OK_Frame2` | 1 |  |
+| `Ani_Interstitial_fightresult_OK_OK_Frame3` | 1 |  |
+| `Ani_Interstitial_friendship_Frame6` | 1 |  |
+| `Ani_Interstitial_friendship_Frame66` | 1 |  |
+| `Ani_Interstitial_friendship_Frame68` | 1 |  |
+| `Ani_Interstitial_friendship_Frame69` | 1 |  |
+| `Ani_Interstitial_girlRejectBoy_Frame122` | 1 |  |
+| `Ani_Interstitial_girlRejectBoy_Frame141` | 1 |  |
+| `Ani_Interstitial_girlRejectBoy_Frame43` | 1 |  |
+| `Ani_Interstitial_girlRejectBoy_Frame65` | 1 |  |
+| `Ani_Interstitial_girlRejectBoy_Frame77` | 1 |  |
+| `Ani_Interstitial_goodbye_Frame16` | 1 |  |
+| `Ani_Interstitial_goodbye_Frame84` | 1 |  |
+| `Ani_Interstitial_goodbye_Frame92` | 1 |  |
+| `Ani_Interstitial_hungry_Frame2` | 1 |  |
+| `Ani_Interstitial_itemGet_Frame112` | 1 |  |
+| `Ani_Interstitial_itemGet_Frame41` | 1 |  |
+| `Ani_Interstitial_learn_Frame5` | 1 |  |
+| `Ani_Interstitial_learn_Frame71` | 1 |  |
+| `Ani_Interstitial_loseDisorder_Frame14` | 1 |  |
+| `Ani_Interstitial_mutate_Frame12` | 1 |  |
+| `Ani_Interstitial_mutate_Frame2` | 1 |  |
+| `Ani_Interstitial_mutate_Frame202` | 1 |  |
+| `Ani_Interstitial_mutate_Frame238` | 1 |  |
+| `Ani_Interstitial_starve_Frame110` | 1 |  |
+| `Ani_Interstitial_starve_Frame62` | 1 |  |
+| `Ani_Interstitial_starve_Frame8` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame10` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame110` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame116` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame172` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame20` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame30` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame59` | 1 |  |
+| `Ani_Interstitial_styleChange_Frame87` | 1 |  |
+| `Ani_Invader_attack_Frame2` | 1 |  |
+| `Ani_Invader_dying_Frame2` | 1 |  |
+| `Ani_Invader_hit_Frame2` | 1 |  |
+| `Ani_Invader_walk_Frame16` | 1 |  |
+| `Ani_Invader_walk_Frame19` | 1 |  |
+| `Ani_Invader_walk_Frame28` | 1 |  |
+| `Ani_Invader_walk_Frame4` | 1 |  |
+| `Ani_JarHead_attack_Frame2` | 1 |  |
+| `Ani_JarHead_dying_Frame2` | 1 |  |
+| `Ani_JarHead_hit2_Frame2` | 1 |  |
+| `Ani_JarHead_hit2_Frame7` | 1 |  |
+| `Ani_JarHead_hit_Frame2` | 1 |  |
+| `Ani_JarHead_hit_Frame7` | 1 |  |
+| `Ani_JarHead_order_Frame6` | 1 |  |
+| `Ani_JarHead_walk_Loop` | 1 |  |
+| `Ani_Johnny_blast1_Frame2` | 1 |  |
+| `Ani_Johnny_blast1_Frame4` | 1 |  |
+| `Ani_Johnny_blast2_Frame2` | 1 |  |
+| `Ani_Johnny_blast2_Frame4` | 1 |  |
+| `Ani_Johnny_cry1_Frame5` | 1 |  |
+| `Ani_Johnny_cry2_Frame5` | 1 |  |
+| `Ani_Johnny_dying2_Frame3` | 1 |  |
+| `Ani_Johnny_dying2_Frame4` | 1 |  |
+| `Ani_Johnny_dying_Frame4` | 1 |  |
+| `Ani_Johnny_dying_Frame5` | 1 |  |
+| `Ani_Johnny_hit_Frame2` | 1 |  |
+| `Ani_Johnny_idle_Frame110` | 1 |  |
+| `Ani_Johnny_idle_Frame2` | 1 |  |
+| `Ani_Johnny_idleUnwashed_Frame136` | 1 |  |
+| `Ani_Johnny_idleUnwashed_Frame2` | 1 |  |
+| `Ani_Johnny_idleUnwashed_Frame44` | 1 |  |
+| `Ani_Johnny_idleUnwashed_Frame95` | 1 |  |
+| `Ani_Johnny_mindcontrol_Frame2` | 1 |  |
+| `Ani_Johnny_mindcontrol_Frame4` | 1 |  |
+| `Ani_Johnny_telekinesis_Frame2` | 1 |  |
+| `Ani_Johnny_telekinesis_Frame3` | 1 |  |
+| `Ani_Johnny_weak_Frame2` | 1 |  |
+| `Ani_Johnny_weak_Frame200` | 1 |  |
+| `Ani_KillDozer_dying_Frame2` | 1 |  |
+| `Ani_KillDozer_dying_Frame5` | 1 |  |
+| `Ani_KillDozer_hit_Frame2` | 1 |  |
+| `Ani_KillDozer_idle_Frame110` | 1 |  |
+| `Ani_KillDozer_idle_Frame35` | 1 |  |
+| `Ani_KillDozer_idle_Frame5` | 1 |  |
+| `Ani_KillDozer_idle_Frame90` | 1 |  |
+| `Ani_KillDozer_ram_Frame36` | 1 |  |
+| `Ani_KillDozer_ramEnd_Frame4` | 1 |  |
+| `Ani_KillDozer_ramLoop_Frame2` | 1 |  |
+| `Ani_KillDozer_ramStart_Frame3` | 1 |  |
+| `Ani_KillDozer_walk_Frame28` | 1 |  |
+| `Ani_KillDozer_walk_Frame3` | 1 |  |
+| `Ani_Kirby_dying_Frame2` | 1 |  |
+| `Ani_Kirby_dyingFull_Frame2` | 1 |  |
+| `Ani_Kirby_exhaleFull_Frame2` | 1 |  |
+| `Ani_Kirby_hit_Frame2` | 1 |  |
+| `Ani_Kirby_inhale_Frame2` | 1 |  |
+| `Ani_Kirby_walk_Frame16` | 1 |  |
+| `Ani_Kirby_walk_Frame2` | 1 |  |
+| `Ani_Lenny_attack_Frame2` | 1 |  |
+| `Ani_Lenny_attack_Frame9` | 1 |  |
+| `Ani_Lenny_attackCat_Frame25` | 1 |  |
+| `Ani_Lenny_attackCat_Frame3` | 1 |  |
+| `Ani_Lenny_attackCat_Frame31` | 1 |  |
+| `Ani_Lenny_attackCat_Frame4` | 1 |  |
+| `Ani_Lenny_attackCatDead_Frame25` | 1 |  |
+| `Ani_Lenny_attackCatDead_Frame3` | 1 |  |
+| `Ani_Lenny_attackCatDead_Frame30` | 1 |  |
+| `Ani_Lenny_attackCatDead_Frame4` | 1 |  |
+| `Ani_Lenny_catdyingCat_Frame115` | 1 |  |
+| `Ani_Lenny_catdyingCat_Frame130` | 1 |  |
+| `Ani_Lenny_catdyingCat_Frame154` | 1 |  |
+| `Ani_Lenny_catdyingCat_Frame2` | 1 |  |
+| `Ani_Lenny_catdyingCat_Frame217` | 1 |  |
+| `Ani_Lenny_catdyingCat_Frame336` | 1 |  |
+| `Ani_Lenny_cry_Frame133` | 1 |  |
+| `Ani_Lenny_cry_Frame5` | 1 |  |
+| `Ani_Lenny_cry_Frame78` | 1 |  |
+| `Ani_Lenny_cry_Frame8` | 1 |  |
+| `Ani_Lenny_cry_Frame85` | 1 |  |
+| `Ani_Lenny_dying_Frame2` | 1 |  |
+| `Ani_Lenny_dying_Frame31` | 1 |  |
+| `Ani_Lenny_dying_Frame5` | 1 |  |
+| `Ani_Lenny_dyingCat_Frame2` | 1 |  |
+| `Ani_Lenny_dyingCat_Frame31` | 1 |  |
+| `Ani_Lenny_dyingCat_Frame5` | 1 |  |
+| `Ani_Lenny_dyingCatDead_Frame2` | 1 |  |
+| `Ani_Lenny_dyingCatDead_Frame31` | 1 |  |
+| `Ani_Lenny_dyingCatDead_Frame5` | 1 |  |
+| `Ani_Lenny_escapeCat_Frame11` | 1 |  |
+| `Ani_Lenny_escapeCat_Frame115` | 1 |  |
+| `Ani_Lenny_escapeCat_Frame116` | 1 |  |
+| `Ani_Lenny_escapeCat_Frame2` | 1 |  |
+| `Ani_Lenny_escapeCat_Frame63` | 1 |  |
+| `Ani_Lenny_grab_Frame25` | 1 |  |
+| `Ani_Lenny_grab_Frame3` | 1 |  |
+| `Ani_Lenny_grabCorpse_Frame147` | 1 |  |
+| `Ani_Lenny_grabCorpse_Frame198` | 1 |  |
+| `Ani_Lenny_grabCorpse_Frame25` | 1 |  |
+| `Ani_Lenny_grabCorpse_Frame273` | 1 |  |
+| `Ani_Lenny_grabCorpse_Frame3` | 1 |  |
+| `Ani_Lenny_grabCorpse_Frame66` | 1 |  |
+| `Ani_Lenny_grabCorpse_Frame92` | 1 |  |
+| `Ani_Lenny_hit_Frame2` | 1 |  |
+| `Ani_Lenny_hitCat_Frame2` | 1 |  |
+| `Ani_Lenny_hitCatDead_Frame2` | 1 |  |
+| `Ani_Lenny_hugCat_Frame2` | 1 |  |
+| `Ani_Lenny_hugCat_Frame20` | 1 |  |
+| `Ani_Lenny_hugCat_Frame5` | 1 |  |
+| `Ani_Lenny_spawnin_Frame2` | 1 |  |
+| `Ani_Lenny_spawnin_Frame3` | 1 |  |
+| `Ani_Lenny_struggleCat_Frame2` | 1 |  |
+| `Ani_Lenny_struggleCat_Frame69` | 1 |  |
+| `Ani_Lenny_walk_Frame10` | 1 |  |
+| `Ani_Lenny_walk_Frame29` | 1 |  |
+| `Ani_Lenny_walkCat_Frame10` | 1 |  |
+| `Ani_Lenny_walkCat_Frame29` | 1 |  |
+| `Ani_Lenny_walkCatDead_Frame10` | 1 |  |
+| `Ani_Lenny_walkCatDead_Frame29` | 1 |  |
+| `Ani_LightningElemental_dying_Frame2` | 1 |  |
+| `Ani_LightningElemental_hit_Frame2` | 1 |  |
+| `Ani_LightningElemental_portin_Frame2` | 1 |  |
+| `Ani_LightningElemental_portout_Frame2` | 1 |  |
+| `Ani_LightningElemental_prime_Frame2` | 1 |  |
+| `Ani_LightningElemental_scream_Frame2` | 1 |  |
+| `Ani_LightningElemental_strike_Frame2` | 1 |  |
+| `Ani_LordBunga_attack_Frame2` | 1 |  |
+| `Ani_LordBunga_attack_Frame7` | 1 |  |
+| `Ani_LordBunga_bigbooChair_Frame12` | 1 |  |
+| `Ani_LordBunga_bigbooChair_Frame120` | 1 |  |
+| `Ani_LordBunga_bigbooChair_Frame31` | 1 |  |
+| `Ani_LordBunga_bigbooChair_Frame86` | 1 |  |
+| `Ani_LordBunga_bigcheerChair_Frame10` | 1 |  |
+| `Ani_LordBunga_bigcheerChair_Frame30` | 1 |  |
+| `Ani_LordBunga_consume_Frame100` | 1 |  |
+| `Ani_LordBunga_consume_Frame115` | 1 |  |
+| `Ani_LordBunga_consume_Frame129` | 1 |  |
+| `Ani_LordBunga_consume_Frame155` | 1 |  |
+| `Ani_LordBunga_consume_Frame167` | 1 |  |
+| `Ani_LordBunga_consume_Frame2` | 1 |  |
+| `Ani_LordBunga_consume_Frame51` | 1 |  |
+| `Ani_LordBunga_consume_Frame68` | 1 |  |
+| `Ani_LordBunga_consume_Frame86` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame100` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame115` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame129` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame155` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame167` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame2` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame51` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame68` | 1 |  |
+| `Ani_LordBunga_consumeCat_Frame86` | 1 |  |
+| `Ani_LordBunga_dying_Frame105` | 1 |  |
+| `Ani_LordBunga_dying_Frame2` | 1 |  |
+| `Ani_LordBunga_dying_Frame267` | 1 |  |
+| `Ani_LordBunga_dying_Frame320` | 1 |  |
+| `Ani_LordBunga_dying_Frame486` | 1 |  |
+| `Ani_LordBunga_dying_Frame758` | 1 |  |
+| `Ani_LordBunga_dying_Frame789` | 1 |  |
+| `Ani_LordBunga_dying_Frame80` | 1 |  |
+| `Ani_LordBunga_dying_Frame826` | 1 |  |
+| `Ani_LordBunga_dying_Frame900` | 1 |  |
+| `Ani_LordBunga_dyingChair_Frame140` | 1 |  |
+| `Ani_LordBunga_dyingChair_Frame2` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame10` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame120` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame235` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame314` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame356` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame413` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame517` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame531` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame595` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame649` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame652` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame692` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame703` | 1 |  |
+| `Ani_LordBunga_enterbattleChair_Frame714` | 1 |  |
+| `Ani_LordBunga_entrance_land_Frame2` | 1 |  |
+| `Ani_LordBunga_entrance_land_Frame35` | 1 |  |
+| `Ani_LordBunga_entrance_upChair_Frame2` | 1 |  |
+| `Ani_LordBunga_entrance_upChair_Frame3` | 1 |  |
+| `Ani_LordBunga_hit_Frame2` | 1 |  |
+| `Ani_LordBunga_hitChair_Frame3` | 1 |  |
+| `Ani_LordBunga_jump_Frame16` | 1 |  |
+| `Ani_LordBunga_jump_Frame2` | 1 |  |
+| `Ani_LordBunga_land_Frame2` | 1 |  |
+| `Ani_LordBunga_land_Frame8` | 1 |  |
+| `Ani_LordBunga_littlebooChair_Frame6` | 1 |  |
+| `Ani_LordBunga_littlecheerChair_Frame10` | 1 |  |
+| `Ani_LordBunga_roar_Frame17` | 1 |  |
+| `Ani_LordBunga_swing_Frame19` | 1 |  |
+| `Ani_LordBunga_swing_Frame2` | 1 |  |
+| `Ani_LordBunga_walk_Frame22` | 1 |  |
+| `Ani_LordBunga_walk_Frame51` | 1 |  |
+| `Ani_LoveBot_attack_Frame2` | 1 |  |
+| `Ani_LoveBot_attack_Frame3` | 1 |  |
+| `Ani_LoveBot_dying_Frame2` | 1 |  |
+| `Ani_LoveBot_dying_Frame3` | 1 |  |
+| `Ani_LoveBot_heal_Frame2` | 1 |  |
+| `Ani_LoveBot_hit_Frame2` | 1 |  |
+| `Ani_LoveBot_hit_Frame3` | 1 |  |
+| `Ani_LoveBot_walk_Frame2` | 1 |  |
+| `Ani_Maggot_attack_Frame15` | 1 |  |
+| `Ani_Maggot_attack_Frame5` | 1 |  |
+| `Ani_Maggot_ballLand_Frame3` | 1 |  |
+| `Ani_Maggot_dying_Frame2` | 1 |  |
+| `Ani_Maggot_walk_Frame2` | 1 |  |
+| `Ani_MamaMaggot_dying_Frame2` | 1 |  |
+| `Ani_MamaMaggot_fart_Frame2` | 1 |  |
+| `Ani_MamaMaggot_hit_Frame2` | 1 |  |
+| `Ani_MamaMaggot_spawn_Frame2` | 1 |  |
+| `Ani_MamaMaggot_tinaspawnin_Frame2` | 1 |  |
+| `Ani_MamaMaggot_walk_Frame2` | 1 |  |
+| `Ani_MamaMaggot_whistle_Frame2` | 1 |  |
+| `Ani_Mammoth_attack_Frame18` | 1 |  |
+| `Ani_Mammoth_attack_Frame2` | 1 |  |
+| `Ani_Mammoth_attack_Frame28` | 1 |  |
+| `Ani_Mammoth_attack_Frame71` | 1 |  |
+| `Ani_Mammoth_dash_Frame4` | 1 |  |
+| `Ani_Mammoth_dashend_Frame2` | 1 |  |
+| `Ani_Mammoth_dashend_Frame33` | 1 |  |
+| `Ani_Mammoth_dashstart_Frame2` | 1 |  |
+| `Ani_Mammoth_dying_Frame2` | 1 |  |
+| `Ani_Mammoth_dying_Frame22` | 1 |  |
+| `Ani_Mammoth_hit_Frame6` | 1 |  |
+| `Ani_Mammoth_stompy_Frame2` | 1 |  |
+| `Ani_Mammoth_stompy_Frame23` | 1 |  |
+| `Ani_Mammoth_walk_Frame21` | 1 |  |
+| `Ani_Mammoth_walk_Frame24` | 1 |  |
+| `Ani_Mammoth_walk_Frame3` | 1 |  |
+| `Ani_Mammoth_walk_Frame42` | 1 |  |
+| `Ani_ManglersMonster_dashendLB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dashendLF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dashendRB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dashendRF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dashstartLB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_dashstartLB_Frame4` | 1 |  |
+| `Ani_ManglersMonster_dashstartLF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_dashstartLF_Frame4` | 1 |  |
+| `Ani_ManglersMonster_dashstartRB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_dashstartRB_Frame4` | 1 |  |
+| `Ani_ManglersMonster_dashstartRF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_dashstartRF_Frame4` | 1 |  |
+| `Ani_ManglersMonster_dyingLB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dyingLB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_dyingLF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dyingLF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_dyingRB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dyingRB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_dyingRF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_dyingRF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_explodeLB_Frame115` | 1 |  |
+| `Ani_ManglersMonster_explodeLB_Frame122` | 1 |  |
+| `Ani_ManglersMonster_explodeLB_Frame131` | 1 |  |
+| `Ani_ManglersMonster_explodeLB_Frame138` | 1 |  |
+| `Ani_ManglersMonster_explodeLB_Frame148` | 1 |  |
+| `Ani_ManglersMonster_explodeLB_Frame163` | 1 |  |
+| `Ani_ManglersMonster_explodeLB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_explodeLF_Frame115` | 1 |  |
+| `Ani_ManglersMonster_explodeLF_Frame122` | 1 |  |
+| `Ani_ManglersMonster_explodeLF_Frame131` | 1 |  |
+| `Ani_ManglersMonster_explodeLF_Frame138` | 1 |  |
+| `Ani_ManglersMonster_explodeLF_Frame148` | 1 |  |
+| `Ani_ManglersMonster_explodeLF_Frame163` | 1 |  |
+| `Ani_ManglersMonster_explodeLF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_explodeRB_Frame115` | 1 |  |
+| `Ani_ManglersMonster_explodeRB_Frame122` | 1 |  |
+| `Ani_ManglersMonster_explodeRB_Frame131` | 1 |  |
+| `Ani_ManglersMonster_explodeRB_Frame138` | 1 |  |
+| `Ani_ManglersMonster_explodeRB_Frame148` | 1 |  |
+| `Ani_ManglersMonster_explodeRB_Frame163` | 1 |  |
+| `Ani_ManglersMonster_explodeRB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_explodeRF_Frame115` | 1 |  |
+| `Ani_ManglersMonster_explodeRF_Frame122` | 1 |  |
+| `Ani_ManglersMonster_explodeRF_Frame131` | 1 |  |
+| `Ani_ManglersMonster_explodeRF_Frame138` | 1 |  |
+| `Ani_ManglersMonster_explodeRF_Frame148` | 1 |  |
+| `Ani_ManglersMonster_explodeRF_Frame163` | 1 |  |
+| `Ani_ManglersMonster_explodeRF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_hitLB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_hitLB_Frame4` | 1 |  |
+| `Ani_ManglersMonster_hitLF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_hitLF_Frame4` | 1 |  |
+| `Ani_ManglersMonster_hitRB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_hitRB_Frame4` | 1 |  |
+| `Ani_ManglersMonster_hitRF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_hitRF_Frame4` | 1 |  |
+| `Ani_ManglersMonster_primerushLB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_primerushLB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_primerushLF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_primerushLF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_primerushRB_Frame2` | 1 |  |
+| `Ani_ManglersMonster_primerushRB_Frame3` | 1 |  |
+| `Ani_ManglersMonster_primerushRF_Frame2` | 1 |  |
+| `Ani_ManglersMonster_primerushRF_Frame3` | 1 |  |
+| `Ani_ManglersMonster_walkLB_Loop` | 1 |  |
+| `Ani_ManglersMonster_walkLF_Loop` | 1 |  |
+| `Ani_ManglersMonster_walkRB_Loop` | 1 |  |
+| `Ani_ManglersMonster_walkRF_Loop` | 1 |  |
+| `Ani_MeatSlime_attack_Frame2` | 1 |  |
+| `Ani_MeatSlime_dying_Frame2` | 1 |  |
+| `Ani_MeatSlime_hit_Frame2` | 1 |  |
+| `Ani_MeatSlime_walk_Frame2` | 1 |  |
+| `Ani_MeatSlime_xspawnin_Frame2` | 1 |  |
+| `Ani_MechSuit_dying_Frame2` | 1 |  |
+| `Ani_MechSuit_dyingCat_Frame2` | 1 |  |
+| `Ani_MechSuit_dyingCat_Frame23` | 1 |  |
+| `Ani_MechSuit_ejectCat_Frame2` | 1 |  |
+| `Ani_MechSuit_enter_Frame2` | 1 |  |
+| `Ani_MechSuit_hit_Frame3` | 1 |  |
+| `Ani_MechSuit_hitCat_Frame3` | 1 |  |
+| `Ani_MechSuit_ramEnd_Frame2` | 1 |  |
+| `Ani_MechSuit_ramEndCat_Frame2` | 1 |  |
+| `Ani_MechSuit_ramLoop_Loop` | 1 |  |
+| `Ani_MechSuit_ramLoopCat_Frame2` | 1 |  |
+| `Ani_MechSuit_ramStart_Frame2` | 1 |  |
+| `Ani_MechSuit_ramStartCat_Frame2` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame13` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame2` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame21` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame29` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame37` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame45` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame5` | 1 |  |
+| `Ani_MechSuit_shootCat_Frame70` | 1 |  |
+| `Ani_MechSuit_thrustersEndCat_Frame2` | 1 |  |
+| `Ani_MechSuit_thrustersLoopCat_Loop` | 1 |  |
+| `Ani_MechSuit_thrustersStartCat_Frame2` | 1 |  |
+| `Ani_MechSuit_walkCat_Loop` | 1 |  |
+| `Ani_MedSlime_attack_Frame2` | 1 |  |
+| `Ani_MedSlime_dying_Frame2` | 1 |  |
+| `Ani_MedSlime_dying_Frame3` | 1 |  |
+| `Ani_MedSlime_hit_Frame2` | 1 |  |
+| `Ani_MedSlime_spawnin_Frame2` | 1 |  |
+| `Ani_MedSlime_walk_Frame2` | 1 |  |
+| `Ani_MedSlimeX_attack_Frame2` | 1 |  |
+| `Ani_MedSlimeX_dying_Frame2` | 1 |  |
+| `Ani_MedSlimeX_dying_Frame3` | 1 |  |
+| `Ani_MedSlimeX_hit_Frame2` | 1 |  |
+| `Ani_MedSlimeX_spawnin_Frame2` | 1 |  |
+| `Ani_MedSlimeX_walk_Frame2` | 1 |  |
+| `Ani_MegaDinoHead_drop_Frame19` | 1 |  |
+| `Ani_MegaDinoHead_dying_Frame110` | 1 |  |
+| `Ani_MegaDinoHead_dying_Frame2` | 1 |  |
+| `Ani_MegaDinoHead_hit_Frame2` | 1 |  |
+| `Ani_MegaDinoHead_idle_Frame100` | 1 |  |
+| `Ani_MegaDinoHead_idle_Frame2` | 1 |  |
+| `Ani_MegaDinoHead_raise_Frame114` | 1 |  |
+| `Ani_MegaDinoHead_raise_Frame2` | 1 |  |
+| `Ani_MegaDinoHead_raise_Frame3` | 1 |  |
+| `Ani_MegaDinoHead_raise_Frame51` | 1 |  |
+| `Ani_MegaDinoHead_weak_Frame140` | 1 |  |
+| `Ani_MegaDinoHead_weak_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_leave_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_leaveLift_Frame12` | 1 |  |
+| `Ani_MegaDinoLeg_leaveLift_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_lift_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_lift_Frame4` | 1 |  |
+| `Ani_MegaDinoLeg_lowerLift_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_lowerLift_Frame44` | 1 |  |
+| `Ani_MegaDinoLeg_poop_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_return_Frame13` | 1 |  |
+| `Ani_MegaDinoLeg_return_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_stomp_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_stomp_Frame38` | 1 |  |
+| `Ani_MegaDinoLeg_walk_Frame2` | 1 |  |
+| `Ani_MegaDinoLeg_walk_Frame4` | 1 |  |
+| `Ani_MegaDinoLeg_walk_Frame48` | 1 |  |
+| `Ani_MegaFetus_attackLB_Frame32` | 1 |  |
+| `Ani_MegaFetus_attackLB_Frame60` | 1 |  |
+| `Ani_MegaFetus_attackLB_Frame9` | 1 |  |
+| `Ani_MegaFetus_attackLF_Frame32` | 1 |  |
+| `Ani_MegaFetus_attackLF_Frame60` | 1 |  |
+| `Ani_MegaFetus_attackLF_Frame9` | 1 |  |
+| `Ani_MegaFetus_attackRB_Frame32` | 1 |  |
+| `Ani_MegaFetus_attackRB_Frame60` | 1 |  |
+| `Ani_MegaFetus_attackRB_Frame9` | 1 |  |
+| `Ani_MegaFetus_attackRF_Frame32` | 1 |  |
+| `Ani_MegaFetus_attackRF_Frame60` | 1 |  |
+| `Ani_MegaFetus_attackRF_Frame9` | 1 |  |
+| `Ani_MegaFetus_dyingLB_Frame2` | 1 |  |
+| `Ani_MegaFetus_dyingLB_Frame40` | 1 |  |
+| `Ani_MegaFetus_dyingLF_Frame2` | 1 |  |
+| `Ani_MegaFetus_dyingLF_Frame40` | 1 |  |
+| `Ani_MegaFetus_dyingRB_Frame2` | 1 |  |
+| `Ani_MegaFetus_dyingRB_Frame40` | 1 |  |
+| `Ani_MegaFetus_dyingRF_Frame2` | 1 |  |
+| `Ani_MegaFetus_dyingRF_Frame40` | 1 |  |
+| `Ani_MegaFetus_hitLB_Frame2` | 1 |  |
+| `Ani_MegaFetus_hitLF_Frame2` | 1 |  |
+| `Ani_MegaFetus_hitRB_Frame2` | 1 |  |
+| `Ani_MegaFetus_hitRF_Frame2` | 1 |  |
+| `Ani_MegaFetus_idleLB_Frame120` | 1 |  |
+| `Ani_MegaFetus_idleLB_Frame2` | 1 |  |
+| `Ani_MegaFetus_idleLB_Frame204` | 1 |  |
+| `Ani_MegaFetus_idleLB_Frame280` | 1 |  |
+| `Ani_MegaFetus_idleLB_Frame338` | 1 |  |
+| `Ani_MegaFetus_idleLB_Frame60` | 1 |  |
+| `Ani_MegaFetus_idleLF_Frame120` | 1 |  |
+| `Ani_MegaFetus_idleLF_Frame2` | 1 |  |
+| `Ani_MegaFetus_idleLF_Frame204` | 1 |  |
+| `Ani_MegaFetus_idleLF_Frame280` | 1 |  |
+| `Ani_MegaFetus_idleLF_Frame338` | 1 |  |
+| `Ani_MegaFetus_idleLF_Frame60` | 1 |  |
+| `Ani_MegaFetus_idleRB_Frame120` | 1 |  |
+| `Ani_MegaFetus_idleRB_Frame2` | 1 |  |
+| `Ani_MegaFetus_idleRB_Frame204` | 1 |  |
+| `Ani_MegaFetus_idleRB_Frame280` | 1 |  |
+| `Ani_MegaFetus_idleRB_Frame338` | 1 |  |
+| `Ani_MegaFetus_idleRB_Frame60` | 1 |  |
+| `Ani_MegaFetus_idleRF_Frame120` | 1 |  |
+| `Ani_MegaFetus_idleRF_Frame2` | 1 |  |
+| `Ani_MegaFetus_idleRF_Frame204` | 1 |  |
+| `Ani_MegaFetus_idleRF_Frame280` | 1 |  |
+| `Ani_MegaFetus_idleRF_Frame338` | 1 |  |
+| `Ani_MegaFetus_idleRF_Frame60` | 1 |  |
+| `Ani_MegaFetus_spinLB_Frame16` | 1 |  |
+| `Ani_MegaFetus_spinLB_Frame5` | 1 |  |
+| `Ani_MegaFetus_spinLF_Frame16` | 1 |  |
+| `Ani_MegaFetus_spinLF_Frame5` | 1 |  |
+| `Ani_MegaFetus_spinRB_Frame16` | 1 |  |
+| `Ani_MegaFetus_spinRB_Frame5` | 1 |  |
+| `Ani_MegaFetus_spinRF_Frame16` | 1 |  |
+| `Ani_MegaFetus_spinRF_Frame5` | 1 |  |
+| `Ani_MegaFetus_walkLB_Frame2` | 1 |  |
+| `Ani_MegaFetus_walkLF_Frame2` | 1 |  |
+| `Ani_MegaFetus_walkRB_Frame2` | 1 |  |
+| `Ani_MegaFetus_walkRF_Frame2` | 1 |  |
+| `Ani_MegaFetus_weakLB_Frame163` | 1 |  |
+| `Ani_MegaFetus_weakLB_Frame2` | 1 |  |
+| `Ani_MegaFetus_weakLB_Frame277` | 1 |  |
+| `Ani_MegaFetus_weakLB_Frame381` | 1 |  |
+| `Ani_MegaFetus_weakLB_Frame460` | 1 |  |
+| `Ani_MegaFetus_weakLB_Frame81` | 1 |  |
+| `Ani_MegaFetus_weakLF_Frame163` | 1 |  |
+| `Ani_MegaFetus_weakLF_Frame2` | 1 |  |
+| `Ani_MegaFetus_weakLF_Frame277` | 1 |  |
+| `Ani_MegaFetus_weakLF_Frame381` | 1 |  |
+| `Ani_MegaFetus_weakLF_Frame460` | 1 |  |
+| `Ani_MegaFetus_weakLF_Frame81` | 1 |  |
+| `Ani_MegaFetus_weakRB_Frame163` | 1 |  |
+| `Ani_MegaFetus_weakRB_Frame2` | 1 |  |
+| `Ani_MegaFetus_weakRB_Frame277` | 1 |  |
+| `Ani_MegaFetus_weakRb_Frame381` | 1 |  |
+| `Ani_MegaFetus_weakRB_Frame460` | 1 |  |
+| `Ani_MegaFetus_weakRB_Frame81` | 1 |  |
+| `Ani_MegaFetus_weakRF_Frame163` | 1 |  |
+| `Ani_MegaFetus_weakRF_Frame2` | 1 |  |
+| `Ani_MegaFetus_weakRF_Frame277` | 1 |  |
+| `Ani_MegaFetus_weakRF_Frame381` | 1 |  |
+| `Ani_MegaFetus_weakRF_Frame460` | 1 |  |
+| `Ani_MegaFetus_weakRF_Frame81` | 1 |  |
+| `Ani_MegaMutant_dying_Frame2` | 1 |  |
+| `Ani_MegaMutant_dying_Frame34` | 1 |  |
+| `Ani_MegaMutant_grab_Frame111` | 1 |  |
+| `Ani_MegaMutant_grab_Frame114` | 1 |  |
+| `Ani_MegaMutant_grab_Frame28` | 1 |  |
+| `Ani_MegaMutant_grab_Frame36` | 1 |  |
+| `Ani_MegaMutant_grab_Frame43` | 1 |  |
+| `Ani_MegaMutant_grab_Frame7` | 1 |  |
+| `Ani_MegaMutant_grabCat_Frame111` | 1 |  |
+| `Ani_MegaMutant_grabCat_Frame114` | 1 |  |
+| `Ani_MegaMutant_grabCat_Frame28` | 1 |  |
+| `Ani_MegaMutant_grabCat_Frame36` | 1 |  |
+| `Ani_MegaMutant_grabCat_Frame43` | 1 |  |
+| `Ani_MegaMutant_grabCat_Frame7` | 1 |  |
+| `Ani_MegaMutant_guard_Frame14` | 1 |  |
+| `Ani_MegaMutant_guard_Frame9` | 1 |  |
+| `Ani_MegaMutant_hit_Frame3` | 1 |  |
+| `Ani_MegaMutant_hitguard_Frame4` | 1 |  |
+| `Ani_MegaMutant_slam_Frame10` | 1 |  |
+| `Ani_MegaMutant_slam_Frame13` | 1 |  |
+| `Ani_MegaMutant_slam_Frame40` | 1 |  |
+| `Ani_MegaMutant_swat_Frame16` | 1 |  |
+| `Ani_MegaMutant_swat_Frame27` | 1 |  |
+| `Ani_MegaMutant_unguard_Frame5` | 1 |  |
+| `Ani_MegaMutant_walk_Frame2` | 1 |  |
+| `Ani_MegaMutant_walk_Frame23` | 1 |  |
+| `Ani_MegaTumor_dash_Frame2` | 1 |  |
+| `Ani_MegaTumor_dying_Frame2` | 1 |  |
+| `Ani_MegaTumor_hit_Frame2` | 1 |  |
+| `Ani_MegaTumor_powerup_Frame2` | 1 |  |
+| `Ani_MindFetus_counterspell_Frame19` | 1 |  |
+| `Ani_MindFetus_dying_Frame2` | 1 |  |
+| `Ani_MindFetus_dying_Frame3` | 1 |  |
+| `Ani_MindFetus_dying_Frame43` | 1 |  |
+| `Ani_MindFetus_hit_Frame3` | 1 |  |
+| `Ani_MindFetus_hit_Frame4` | 1 |  |
+| `Ani_MindFetus_pulse2_Frame2` | 1 |  |
+| `Ani_MindFetus_pulse2_Frame54` | 1 |  |
+| `Ani_MindFetus_pulse3_Frame2` | 1 |  |
+| `Ani_MindFetus_pulse3_Frame9` | 1 |  |
+| `Ani_MinibossIntro_Frame115` | 1 |  |
+| `Ani_MinibossIntro_Frame280` | 1 |  |
+| `Ani_MinibossIntro_Frame60` | 1 |  |
+| `Ani_MinibossIntro_Frame61` | 1 |  |
+| `Ani_MoonHand_dashend_Frame2` | 1 |  |
+| `Ani_MoonHand_dashstart2_Frame2` | 1 |  |
+| `Ani_MoonHand_dashstart_Frame2` | 1 |  |
+| `Ani_MoonHand_dying_Frame2` | 1 |  |
+| `Ani_MoonHand_dyingGrabbing_Frame2` | 1 |  |
+| `Ani_MoonHand_grab_Frame2` | 1 |  |
+| `Ani_MoonHand_hit_Frame3` | 1 |  |
+| `Ani_MoonHand_hitGrabbing_Frame3` | 1 |  |
+| `Ani_MoonHand_spawnin_Frame2` | 1 |  |
+| `Ani_MoonHand_squeezeGrabbing_Frame2` | 1 |  |
+| `Ani_MoonHand_throwGrabbing_Frame2` | 1 |  |
+| `Ani_MoonHand_walk_Frame2` | 1 |  |
+| `Ani_MoonHead_chew_Frame2` | 1 |  |
+| `Ani_MoonHead_chewSwallowedCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_crack_Frame10` | 1 |  |
+| `Ani_MoonHead_crack_Frame2` | 1 |  |
+| `Ani_MoonHead_crack_Frame3` | 1 |  |
+| `Ani_MoonHead_crackCharging_Frame2` | 1 |  |
+| `Ani_MoonHead_crackCharging_Frame3` | 1 |  |
+| `Ani_MoonHead_crackSwallowed_Frame2` | 1 |  |
+| `Ani_MoonHead_crackSwallowed_Frame3` | 1 |  |
+| `Ani_MoonHead_digest_Frame2` | 1 |  |
+| `Ani_MoonHead_digestCat_Frame2` | 1 |  |
+| `Ani_MoonHead_digestCatSwallowedCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_digestCatSwallowedCracked_Frame3` | 1 |  |
+| `Ani_MoonHead_digestSwallowedCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_digestSwallowedCracked_Frame3` | 1 |  |
+| `Ani_MoonHead_dying_Frame2` | 1 |  |
+| `Ani_MoonHead_dyingCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_dyingCracked_Frame3` | 1 |  |
+| `Ani_MoonHead_grab_Frame2` | 1 |  |
+| `Ani_MoonHead_grabChargingCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_grabChargingCracked_Frame3` | 1 |  |
+| `Ani_MoonHead_hit_Frame2` | 1 |  |
+| `Ani_MoonHead_hitCharging_Frame2` | 1 |  |
+| `Ani_MoonHead_hitChargingCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_hitCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_hitSwallowed_Frame2` | 1 |  |
+| `Ani_MoonHead_hitSwallowedCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_idleChargingCracked_Loop` | 1 |  |
+| `Ani_MoonHead_idleCracked_Loop` | 1 |  |
+| `Ani_MoonHead_idleSwallowedCracked_Loop` | 1 |  |
+| `Ani_MoonHead_openmouth_Frame2` | 1 |  |
+| `Ani_MoonHead_openmouth_Frame40` | 1 |  |
+| `Ani_MoonHead_openmouthCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_openmouthCracked_Frame40` | 1 |  |
+| `Ani_MoonHead_shoot_Frame2` | 1 |  |
+| `Ani_MoonHead_shootCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_shootCracked_Frame3` | 1 |  |
+| `Ani_MoonHead_spit_Frame2` | 1 |  |
+| `Ani_MoonHead_spitSwallowedCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_spitSwallowedCracked_Frame3` | 1 |  |
+| `Ani_MoonHead_uncrackChargingCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_uncrackCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_uncrackSwallowedCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_weakChargingCracked_Loop` | 1 |  |
+| `Ani_MoonHead_weakCracked_Loop` | 1 |  |
+| `Ani_MoonHead_weakSwallowedCracked_Loop` | 1 |  |
+| `Ani_MoonHead_yell_Frame2` | 1 |  |
+| `Ani_MoonHead_yell_Frame5` | 1 |  |
+| `Ani_MoonHead_yellChargingCracked_Frame10` | 1 |  |
+| `Ani_MoonHead_yellChargingCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_yellCracked_Frame10` | 1 |  |
+| `Ani_MoonHead_yellCracked_Frame2` | 1 |  |
+| `Ani_MoonHead_yellSwallowedCracked_Frame10` | 1 |  |
+| `Ani_MoonHead_yellSwallowedCracked_Frame2` | 1 |  |
+| `Ani_MoonWorm_curlup_Frame2` | 1 |  |
+| `Ani_MoonWorm_dying_Frame2` | 1 |  |
+| `Ani_MoonWorm_hit_Frame2` | 1 |  |
+| `Ani_MoonWorm_portin_Frame2` | 1 |  |
+| `Ani_MoonWorm_portout_Frame2` | 1 |  |
+| `Ani_Moth_dying_Frame2` | 1 |  |
+| `Ani_Moth_dying_Frame42` | 1 |  |
+| `Ani_Moth_fast_Frame2` | 1 |  |
+| `Ani_Moth_fast_Frame7` | 1 |  |
+| `Ani_Moth_fast_Loop` | 1 |  |
+| `Ani_Moth_hit_Frame2` | 1 |  |
+| `Ani_Moth_powder_Frame2` | 1 |  |
+| `Ani_Moth_shoot_Frame2` | 1 |  |
+| `Ani_Moth_spawnin_Frame2` | 1 |  |
+| `Ani_Moth_walk_Frame2` | 1 |  |
+| `Ani_MotherSpike_dying_Frame9` | 1 |  |
+| `Ani_MotherSpike_hit_Frame2` | 1 |  |
+| `Ani_MotherSpike_spawnin_Frame2` | 1 |  |
+| `Ani_MotherSpike_tumor_Frame2` | 1 |  |
+| `Ani_MotherTumor_dying_Frame2` | 1 |  |
+| `Ani_MotherTumor_dyingBig_Frame2` | 1 |  |
+| `Ani_MotherTumor_dyingBigHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_dyingBigHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_dyingHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_dyingHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_grab_Frame28` | 1 |  |
+| `Ani_MotherTumor_grabBig_Frame28` | 1 |  |
+| `Ani_MotherTumor_grabCat_Frame28` | 1 |  |
+| `Ani_MotherTumor_grabCatBig_Frame28` | 1 |  |
+| `Ani_MotherTumor_grow_Frame2` | 1 |  |
+| `Ani_MotherTumor_growHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_growHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_hit_Frame3` | 1 |  |
+| `Ani_MotherTumor_hitBig_Frame3` | 1 |  |
+| `Ani_MotherTumor_hitBigHolding_Frame3` | 1 |  |
+| `Ani_MotherTumor_hitBigHoldingCat_Frame3` | 1 |  |
+| `Ani_MotherTumor_hitHolding_Frame3` | 1 |  |
+| `Ani_MotherTumor_hitHoldingCat_Frame3` | 1 |  |
+| `Ani_MotherTumor_passLBBigHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_passLBBigHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_passLFBigHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_passLFBigHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_passRBBigHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_passRBBigHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_passRFBigHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_passRFBigHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_receiveLBBig_Frame13` | 1 |  |
+| `Ani_MotherTumor_receiveLBCatBig_Frame13` | 1 |  |
+| `Ani_MotherTumor_receiveLFBig_Frame13` | 1 |  |
+| `Ani_MotherTumor_receiveLFCatBig_Frame13` | 1 |  |
+| `Ani_MotherTumor_receiveRBBig_Frame13` | 1 |  |
+| `Ani_MotherTumor_receiveRBCatBig_Frame13` | 1 |  |
+| `Ani_MotherTumor_receiveRFCatBig_Frame13` | 1 |  |
+| `Ani_MotherTumor_spawn_Frame2` | 1 |  |
+| `Ani_MotherTumor_spawnHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_spawnHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_tossBigHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_tossBigHoldingCat_Frame2` | 1 |  |
+| `Ani_MotherTumor_tossHolding_Frame2` | 1 |  |
+| `Ani_MotherTumor_tossHoldingCat_Frame2` | 1 |  |
+| `Ani_Nettle_attack_Frame10` | 1 |  |
+| `Ani_Nettle_dying_Frame2` | 1 |  |
+| `Ani_Nettle_hit_Frame3` | 1 |  |
+| `Ani_Nettle_spikes_Frame2` | 1 |  |
+| `Ani_Nettle_walk_Frame13` | 1 |  |
+| `Ani_Nettle_walk_Frame21` | 1 |  |
+| `Ani_Nettle_walk_Frame25` | 1 |  |
+| `Ani_Nettle_walk_Frame9` | 1 |  |
+| `Ani_Nubs_attack_Frame2` | 1 |  |
+| `Ani_Nubs_attack_Frame45` | 1 |  |
+| `Ani_Nubs_dying_Frame2` | 1 |  |
+| `Ani_Nubs_hit_Frame2` | 1 |  |
+| `Ani_Nubs_nuke_Frame2` | 1 |  |
+| `Ani_Nubs_shoot_Frame2` | 1 |  |
+| `Ani_Nubs_walk_Frame2` | 1 |  |
+| `Ani_NubsCat_attack_Frame2` | 1 |  |
+| `Ani_NubsCat_attack_Frame45` | 1 |  |
+| `Ani_NubsCat_dying_Frame2` | 1 |  |
+| `Ani_NubsCat_hit_Frame2` | 1 |  |
+| `Ani_NubsCat_nuke_Frame2` | 1 |  |
+| `Ani_NubsCat_shoot_Frame2` | 1 |  |
+| `Ani_NubsCat_walk_Frame2` | 1 |  |
+| `Ani_OrganGrinderX_crazy_Frame2` | 1 |  |
+| `Ani_OrganGrinderX_crazy_Frame3` | 1 |  |
+| `Ani_OrganGrinderX_dying_Frame2` | 1 |  |
+| `Ani_OrganGrinderX_dying_Frame3` | 1 |  |
+| `Ani_OrganGrinderX_empty_Frame2` | 1 |  |
+| `Ani_OrganGrinderX_hit_Frame3` | 1 |  |
+| `Ani_OrganGrinderX_reload_Frame2` | 1 |  |
+| `Ani_OrganGrinderX_reload_Frame3` | 1 |  |
+| `Ani_OrganGrinderX_shoot_Frame14` | 1 |  |
+| `Ani_OrganGrinderX_shoot_Frame2` | 1 |  |
+| `Ani_OrganGrinderX_walk_Frame24` | 1 |  |
+| `Ani_OrganGrinderX_walk_Frame4` | 1 |  |
+| `Ani_Parasiter_dying_Frame2` | 1 |  |
+| `Ani_Parasiter_hit_Frame2` | 1 |  |
+| `Ani_Parasiter_shoot_Frame2` | 1 |  |
+| `Ani_Parasiter_spawn_Frame2` | 1 |  |
+| `Ani_Parasiter_walk_Frame26` | 1 |  |
+| `Ani_Parasiter_walk_Frame8` | 1 |  |
+| `Ani_Peashy_attackRage_Frame15` | 1 |  |
+| `Ani_Peashy_attackRage_Frame2` | 1 |  |
+| `Ani_Peashy_blocked_Frame2` | 1 |  |
+| `Ani_Peashy_blocked_Frame7` | 1 |  |
+| `Ani_Peashy_blockedRage_Frame2` | 1 |  |
+| `Ani_Peashy_blockedRage_Frame6` | 1 |  |
+| `Ani_Peashy_dying_Frame2` | 1 |  |
+| `Ani_Peashy_dying_Frame7` | 1 |  |
+| `Ani_Peashy_dyingRage_Frame2` | 1 |  |
+| `Ani_Peashy_dyingRage_Frame7` | 1 |  |
+| `Ani_Peashy_hit_Frame4` | 1 |  |
+| `Ani_Peashy_hitRage_Frame4` | 1 |  |
+| `Ani_Peashy_rage_Frame10` | 1 |  |
+| `Ani_Peashy_rage_Frame2` | 1 |  |
+| `Ani_Peashy_throwobject_Frame24` | 1 |  |
+| `Ani_Peashy_throwobject_Frame6` | 1 |  |
+| `Ani_Peashy_throwobjectRage_Frame2` | 1 |  |
+| `Ani_Peashy_throwobjectRage_Frame3` | 1 |  |
+| `Ani_Peashy_walk_Frame11` | 1 |  |
+| `Ani_Peashy_walk_Frame21` | 1 |  |
+| `Ani_Peashy_walkRage_Frame10` | 1 |  |
+| `Ani_Peashy_walkRage_Frame3` | 1 |  |
+| `Ani_PetBoulder_dying_Frame2` | 1 |  |
+| `Ani_PetBoulder_hit_Frame3` | 1 |  |
+| `Ani_PetRock_dying_Frame2` | 1 |  |
+| `Ani_PetRock_hit_Frame3` | 1 |  |
+| `Ani_Pile_dying_Frame2` | 1 |  |
+| `Ani_Pile_hit_Frame2` | 1 |  |
+| `Ani_Pile_shoot_Frame2` | 1 |  |
+| `Ani_Pile_spawn_Frame2` | 1 |  |
+| `Ani_Pinky_attack_Frame2` | 1 |  |
+| `Ani_Pinky_dying_Frame2` | 1 |  |
+| `Ani_Pinky_hit_Frame2` | 1 |  |
+| `Ani_Pinky_walk_Frame2` | 1 |  |
+| `Ani_PinkyX_attack_Frame2` | 1 |  |
+| `Ani_PinkyX_dying_Frame2` | 1 |  |
+| `Ani_PinkyX_hit_Frame2` | 1 |  |
+| `Ani_PinkyX_walk_Frame2` | 1 |  |
+| `Ani_PokerDemon_attack_Frame47` | 1 |  |
+| `Ani_PokerDemon_attack_Frame9` | 1 |  |
+| `Ani_PokerDemon_dying_Frame12` | 1 |  |
+| `Ani_PokerDemon_dying_Frame36` | 1 |  |
+| `Ani_PokerDemon_dying_Frame6` | 1 |  |
+| `Ani_PokerDemon_hit_Frame10` | 1 |  |
+| `Ani_PokerDemon_poke_Frame18` | 1 |  |
+| `Ani_PokerDemon_poke_Frame2` | 1 |  |
+| `Ani_PokerDemon_poke_Frame63` | 1 |  |
+| `Ani_PokerDemon_walk_Frame21` | 1 |  |
+| `Ani_PokerDemon_walk_Frame25` | 1 |  |
+| `Ani_PokerDemon_walk_Frame9` | 1 |  |
+| `Ani_Pooter_dying_Frame12` | 1 |  |
+| `Ani_Pooter_dying_Frame2` | 1 |  |
+| `Ani_Pooter_walk_Loop` | 1 |  |
+| `Ani_Pterodactyl_dropCat_Frame19` | 1 |  |
+| `Ani_Pterodactyl_dropCat_Frame50` | 1 |  |
+| `Ani_Pterodactyl_dying_Frame13` | 1 |  |
+| `Ani_Pterodactyl_dying_Frame2` | 1 |  |
+| `Ani_Pterodactyl_dyingCat_Frame13` | 1 |  |
+| `Ani_Pterodactyl_dyingCat_Frame2` | 1 |  |
+| `Ani_Pterodactyl_escapeCat_Frame20` | 1 |  |
+| `Ani_Pterodactyl_escapeCat_Frame54` | 1 |  |
+| `Ani_Pterodactyl_grab_Frame2` | 1 |  |
+| `Ani_Pterodactyl_grab_Frame9` | 1 |  |
+| `Ani_Pterodactyl_hit_Frame2` | 1 |  |
+| `Ani_Pterodactyl_hitCat_Frame2` | 1 |  |
+| `Ani_Pterodactyl_peckCat_Frame19` | 1 |  |
+| `Ani_Pterodactyl_peckCat_Frame3` | 1 |  |
+| `Ani_Pterodactyl_struggle_Frame2` | 1 |  |
+| `Ani_Pterodactyl_struggle_Frame59` | 1 |  |
+| `Ani_Pterodactyl_walk_Frame2` | 1 |  |
+| `Ani_Pterodactyl_walkCat_Frame2` | 1 |  |
+| `Ani_Punchbot_attack_Frame2` | 1 |  |
+| `Ani_Punchbot_attack_Frame3` | 1 |  |
+| `Ani_Punchbot_dying_Frame2` | 1 |  |
+| `Ani_Punchbot_dying_Frame3` | 1 |  |
+| `Ani_Punchbot_hit_Frame3` | 1 |  |
+| `Ani_Punchbot_hit_Frame4` | 1 |  |
+| `Ani_Pyrophina_attack_Frame26` | 1 |  |
+| `Ani_Pyrophina_attack_Frame4` | 1 |  |
+| `Ani_Pyrophina_dying_Frame2` | 1 |  |
+| `Ani_Pyrophina_fire_Frame22` | 1 |  |
+| `Ani_Pyrophina_fire_Frame27` | 1 |  |
+| `Ani_Pyrophina_firestorm_Frame33` | 1 |  |
+| `Ani_Pyrophina_firestorm_Frame38` | 1 |  |
+| `Ani_Pyrophina_grab_Frame4` | 1 |  |
+| `Ani_Pyrophina_grab_Frame8` | 1 |  |
+| `Ani_Pyrophina_grabCat_Frame3` | 1 |  |
+| `Ani_Pyrophina_grabCat_Frame4` | 1 |  |
+| `Ani_Pyrophina_grabCat_Frame66` | 1 |  |
+| `Ani_Pyrophina_hitBig_Frame3` | 1 |  |
+| `Ani_Pyrophina_jump_Frame20` | 1 |  |
+| `Ani_Pyrophina_roar_Frame20` | 1 |  |
+| `Ani_Pyrophina_run_Frame15` | 1 |  |
+| `Ani_Pyrophina_run_Frame30` | 1 |  |
+| `Ani_Pyrophina_stomp_Frame20` | 1 |  |
+| `Ani_Pyrophina_stomp_Frame64` | 1 |  |
+| `Ani_Pyrophina_stomp_Frame7` | 1 |  |
+| `Ani_Pyrophina_throw_Frame2` | 1 |  |
+| `Ani_Pyrophina_throw_Frame32` | 1 |  |
+| `Ani_Pyrophina_throwboss_Frame120` | 1 |  |
+| `Ani_Pyrophina_throwboss_Frame121` | 1 |  |
+| `Ani_Pyrophina_throwboss_Frame2` | 1 |  |
+| `Ani_Pyrophina_throwboss_Frame4` | 1 |  |
+| `Ani_Pyrophina_throwboss_Frame51` | 1 |  |
+| `Ani_Pyrophina_throwboss_Frame66` | 1 |  |
+| `Ani_Pyrophina_throwbossNospin_Frame102` | 1 |  |
+| `Ani_Pyrophina_throwbossNospin_Frame2` | 1 |  |
+| `Ani_Pyrophina_throwbossNospin_Frame43` | 1 |  |
+| `Ani_Pyrophina_throwbossNospin_Frame6` | 1 |  |
+| `Ani_Pyrophina_throwbossNospin_Frame98` | 1 |  |
+| `Ani_Pyrophina_throwCat_Frame17` | 1 |  |
+| `Ani_Pyrophina_throwCat_Frame2` | 1 |  |
+| `Ani_Pyrophina_walk_Frame25` | 1 |  |
+| `Ani_Pyrophina_walk_Frame71` | 1 |  |
+| `Ani_Pyrophina_win_Frame11` | 1 |  |
+| `Ani_QueenHippo_attack_Frame2` | 1 |  |
+| `Ani_QueenHippo_breathing_Frame2` | 1 |  |
+| `Ani_QueenHippo_dying_Frame2` | 1 |  |
+| `Ani_QueenHippo_heartattack_Frame2` | 1 |  |
+| `Ani_QueenHippo_hit_Frame2` | 1 |  |
+| `Ani_QueenHippo_uppercut_Frame2` | 1 |  |
+| `Ani_QueenHippo_walk_Frame35` | 1 |  |
+| `Ani_QueenHippo_walk_Frame8` | 1 |  |
+| `Ani_Rager_angry_Frame2` | 1 |  |
+| `Ani_Rager_bite1_Frame2` | 1 |  |
+| `Ani_Rager_bite2_Frame2` | 1 |  |
+| `Ani_Rager_bite3_Frame2` | 1 |  |
+| `Ani_Rager_dying_Frame2` | 1 |  |
+| `Ani_Rager_dying_Frame78` | 1 |  |
+| `Ani_Rager_hit_Frame6` | 1 |  |
+| `Ani_Rager_walk_Frame2` | 1 |  |
+| `Ani_Rager_walk_Frame21` | 1 |  |
+| `Ani_Rat_dash_Frame2` | 1 |  |
+| `Ani_Rat_dashatk_Frame3` | 1 |  |
+| `Ani_Rat_dashstart_Frame4` | 1 |  |
+| `Ani_Rat_dying_Frame2` | 1 |  |
+| `Ani_Rat_hit_Frame3` | 1 |  |
+| `Ani_Rat_walk_Frame2` | 1 |  |
+| `Ani_RatCat_dash_Frame2` | 1 |  |
+| `Ani_RatCat_dashatk_Frame3` | 1 |  |
+| `Ani_RatCat_dashstart_Frame4` | 1 |  |
+| `Ani_RatCat_dying_Frame2` | 1 |  |
+| `Ani_RatKing_New_dashend2_Frame8` | 1 |  |
+| `Ani_RatKing_New_dashstart2_Frame2` | 1 |  |
+| `Ani_RatKing_New_dying2_Frame2` | 1 |  |
+| `Ani_RatKing_New_dying_Frame2` | 1 |  |
+| `Ani_RatKing_New_hit2_Frame5` | 1 |  |
+| `Ani_RatKing_New_hit_Frame5` | 1 |  |
+| `Ani_RatKing_New_shoot2_Frame7` | 1 |  |
+| `Ani_RatKing_New_shoot_Frame5` | 1 |  |
+| `Ani_RatKing_New_throw_Frame20` | 1 |  |
+| `Ani_RatKing_New_throw_Frame56` | 1 |  |
+| `Ani_RatKing_New_transform_Frame107` | 1 |  |
+| `Ani_RatKing_New_transform_Frame7` | 1 |  |
+| `Ani_RatKing_New_walk2_Frame2` | 1 |  |
+| `Ani_RatKing_New_walk_Frame2` | 1 |  |
+| `Ani_RattleSnake_attack_Frame2` | 1 |  |
+| `Ani_RattleSnake_dying_Frame2` | 1 |  |
+| `Ani_RattleSnake_walk_Frame10` | 1 |  |
+| `Ani_RattleSnake_walk_Frame12` | 1 |  |
+| `Ani_RattleSnake_walk_Frame14` | 1 |  |
+| `Ani_RattleSnake_walk_Frame16` | 1 |  |
+| `Ani_RattleSnake_walk_Frame18` | 1 |  |
+| `Ani_RattleSnake_walk_Frame2` | 1 |  |
+| `Ani_RattleSnake_walk_Frame20` | 1 |  |
+| `Ani_RattleSnake_walk_Frame4` | 1 |  |
+| `Ani_RattleSnake_walk_Frame6` | 1 |  |
+| `Ani_RattleSnake_walk_Frame8` | 1 |  |
+| `Ani_Reaper_attack2_Frame2` | 1 |  |
+| `Ani_Reaper_attack_Frame2` | 1 |  |
+| `Ani_Reaper_dying_Frame2` | 1 |  |
+| `Ani_Reaper_hit_Frame2` | 1 |  |
+| `Ani_Reaper_portin_Frame2` | 1 |  |
+| `Ani_Reaper_portout_Frame2` | 1 |  |
+| `Ani_Reaper_walk_Frame2` | 1 |  |
+| `Ani_Revalark_crash_Frame2` | 1 |  |
+| `Ani_Revalark_crash_Frame3` | 1 |  |
+| `Ani_Revalark_dying_Frame2` | 1 |  |
+| `Ani_Revalark_dying_Frame4` | 1 |  |
+| `Ani_Revalark_heal_Frame2` | 1 |  |
+| `Ani_Revalark_heal_Frame40` | 1 |  |
+| `Ani_Revalark_hit_Frame2` | 1 |  |
+| `Ani_Revalark_hit_Frame3` | 1 |  |
+| `Ani_Revalark_idle_Frame18` | 1 |  |
+| `Ani_Revalark_idle_Frame40` | 1 |  |
+| `Ani_Revalark_portout_Frame2` | 1 |  |
+| `Ani_Revalark_portout_Frame20` | 1 |  |
+| `Ani_Revalark_walk_Frame2` | 1 |  |
+| `Ani_Revalark_weak_Frame17` | 1 |  |
+| `Ani_Revalark_weak_Frame38` | 1 |  |
+| `Ani_RockyBobo_attack2_Frame10` | 1 |  |
+| `Ani_RockyBobo_attack2_Frame2` | 1 |  |
+| `Ani_RockyBobo_dying_Frame145` | 1 |  |
+| `Ani_RockyBobo_dying_Frame17` | 1 |  |
+| `Ani_RockyBobo_dying_Frame71` | 1 |  |
+| `Ani_RockyBobo_turn180_Frame10` | 1 |  |
+| `Ani_RockyBobo_turnFlip_Frame10` | 1 |  |
+| `Ani_RockyBobo_turnRev_Frame10` | 1 |  |
+| `Ani_RockyBobo_walk_Frame2` | 1 |  |
+| `Ani_RockyBobo_walk_Frame25` | 1 |  |
+| `Ani_RockyBobo_walkslow_Frame113` | 1 |  |
+| `Ani_RockyBobo_walkslow_Frame153` | 1 |  |
+| `Ani_RockyBobo_walkslow_Frame35` | 1 |  |
+| `Ani_RockyBobo_walkslow_Frame77` | 1 |  |
+| `Ani_Roomba_dying_Frame2` | 1 |  |
+| `Ani_Roomba_dying_Frame4` | 1 |  |
+| `Ani_Roomba_hit_Frame2` | 1 |  |
+| `Ani_Roomba_ramEnd_Frame2` | 1 |  |
+| `Ani_Roomba_ramEnd_Frame4` | 1 |  |
+| `Ani_Roomba_ramLoop_Loop` | 1 |  |
+| `Ani_Roomba_ramStart_Frame2` | 1 |  |
+| `Ani_Roomba_ramStart_Frame4` | 1 |  |
+| `Ani_Roomba_suck_Frame2` | 1 |  |
+| `Ani_Roomba_suck_Frame3` | 1 |  |
+| `Ani_Roomba_walk_Frame2` | 1 |  |
+| `Ani_Roomba_walk_Loop` | 1 |  |
+| `Ani_Scary_attack_Frame2` | 1 |  |
+| `Ani_Scary_dying_Frame2` | 1 |  |
+| `Ani_Scary_haunt_Frame2` | 1 |  |
+| `Ani_Scary_hit_Frame2` | 1 |  |
+| `Ani_Scary_portin_Frame2` | 1 |  |
+| `Ani_Scary_portout_Frame2` | 1 |  |
+| `Ani_SecurityBot_attack_Frame15` | 1 |  |
+| `Ani_SecurityBot_attack_Frame2` | 1 |  |
+| `Ani_SecurityBot_attackAngry_Frame15` | 1 |  |
+| `Ani_SecurityBot_attackAngry_Frame2` | 1 |  |
+| `Ani_SecurityBot_dying_Frame2` | 1 |  |
+| `Ani_SecurityBot_dying_Frame3` | 1 |  |
+| `Ani_SecurityBot_dyingAngry_Frame2` | 1 |  |
+| `Ani_SecurityBot_dyingAngry_Frame3` | 1 |  |
+| `Ani_SecurityBot_hit_Frame2` | 1 |  |
+| `Ani_SecurityBot_hit_Frame4` | 1 |  |
+| `Ani_SecurityBot_hitAngry_Frame2` | 1 |  |
+| `Ani_SecurityBot_hitAngry_Frame4` | 1 |  |
+| `Ani_SecurityBot_recharge_Frame2` | 1 |  |
+| `Ani_SecurityBot_recharge_Frame60` | 1 |  |
+| `Ani_SecurityBot_rechargeAngry_Frame2` | 1 |  |
+| `Ani_SecurityBot_rechargeAngry_Frame60` | 1 |  |
+| `Ani_SecurityBot_walk_Loop` | 1 |  |
+| `Ani_SecurityBot_walkAngry_Frame15` | 1 |  |
+| `Ani_SecurityBot_walkAngry_Frame23` | 1 |  |
+| `Ani_SecurityBot_walkAngry_Frame35` | 1 |  |
+| `Ani_SecurityBot_walkAngry_Frame4` | 1 |  |
+| `Ani_ShadeF_attack_Frame13` | 1 |  |
+| `Ani_ShadeF_attack_Frame2` | 1 |  |
+| `Ani_ShadeF_attack_Frame33` | 1 |  |
+| `Ani_ShadeF_attack_Frame36` | 1 |  |
+| `Ani_ShadeF_attackOpen_Frame33` | 1 |  |
+| `Ani_ShadeF_attackOpen_Frame8` | 1 |  |
+| `Ani_ShadeF_chewOpenCat_Frame2` | 1 |  |
+| `Ani_ShadeF_chewOpenCat_Frame5` | 1 |  |
+| `Ani_ShadeF_closeOpen_Frame15` | 1 |  |
+| `Ani_ShadeF_dying_Frame3` | 1 |  |
+| `Ani_ShadeF_dying_Frame42` | 1 |  |
+| `Ani_ShadeF_dyingOpen_Frame3` | 1 |  |
+| `Ani_ShadeF_dyingOpen_Frame59` | 1 |  |
+| `Ani_ShadeF_hit_Frame3` | 1 |  |
+| `Ani_ShadeF_hitOpen_Frame4` | 1 |  |
+| `Ani_ShadeF_open_Frame12` | 1 |  |
+| `Ani_ShadeF_open_Frame18` | 1 |  |
+| `Ani_ShadeF_shriekOpen_Frame13` | 1 |  |
+| `Ani_ShadeF_spitOpenCat_Frame11` | 1 |  |
+| `Ani_ShadeF_spitOpenCat_Frame12` | 1 |  |
+| `Ani_ShadeF_suckOpen_Frame12` | 1 |  |
+| `Ani_ShadeF_suckOpen_Frame6` | 1 |  |
+| `Ani_ShadeF_walk_Frame18` | 1 |  |
+| `Ani_ShadeF_walk_Frame38` | 1 |  |
+| `Ani_ShadeF_walkOpen_Frame14` | 1 |  |
+| `Ani_ShadeF_walkOpen_Frame28` | 1 |  |
+| `Ani_ShadeM_attack_Frame2` | 1 |  |
+| `Ani_ShadeM_dying_Frame2` | 1 |  |
+| `Ani_ShadeM_dying_Frame42` | 1 |  |
+| `Ani_ShadeM_hit_Frame2` | 1 |  |
+| `Ani_ShadeM_portin_Frame14` | 1 |  |
+| `Ani_ShadeM_portin_Frame2` | 1 |  |
+| `Ani_ShadeM_portout_Frame2` | 1 |  |
+| `Ani_ShadeM_spawn_Frame2` | 1 |  |
+| `Ani_ShadeMShadow_attack_Frame2` | 1 |  |
+| `Ani_ShadeMShadow_attack_Frame3` | 1 |  |
+| `Ani_ShadeMShadow_dying_Frame2` | 1 |  |
+| `Ani_ShadeMShadow_dying_Frame42` | 1 |  |
+| `Ani_ShadeMShadow_hit_Frame2` | 1 |  |
+| `Ani_ShadeMShadow_portin_Frame14` | 1 |  |
+| `Ani_ShadeMShadow_portin_Frame2` | 1 |  |
+| `Ani_ShadeMShadow_portout_Frame2` | 1 |  |
+| `Ani_Shambler_attack2_Frame2` | 1 |  |
+| `Ani_Shambler_attack_Frame2` | 1 |  |
+| `Ani_Shambler_disassemble_Frame2` | 1 |  |
+| `Ani_Shambler_dying_Frame2` | 1 |  |
+| `Ani_Shambler_dyingDisassemble_Frame2` | 1 |  |
+| `Ani_Shambler_dyingDisassembled_Frame2` | 1 |  |
+| `Ani_Shambler_hit_Frame2` | 1 |  |
+| `Ani_Shambler_hitDisassemble_Frame2` | 1 |  |
+| `Ani_Shambler_look_Frame2` | 1 |  |
+| `Ani_Shambler_reassemble_Frame2` | 1 |  |
+| `Ani_Shambler_throw_Frame2` | 1 |  |
+| `Ani_Shambler_walk_Frame2` | 1 |  |
+| `Ani_Shambler_walk_Frame20` | 1 |  |
+| `Ani_Shambler_walk_Frame25` | 1 |  |
+| `Ani_Shambler_walk_Frame34` | 1 |  |
+| `Ani_Shambler_walk_Frame40` | 1 |  |
+| `Ani_ShamblingShade_consume_Frame10` | 1 |  |
+| `Ani_ShamblingShade_consume_Frame100` | 1 |  |
+| `Ani_ShamblingShade_consume_Frame22` | 1 |  |
+| `Ani_ShamblingShade_consume_Frame54` | 1 |  |
+| `Ani_ShamblingShade_consume_Frame60` | 1 |  |
+| `Ani_ShamblingShade_consume_Frame73` | 1 |  |
+| `Ani_ShamblingShade_consume_Frame88` | 1 |  |
+| `Ani_ShamblingShade_consumeCat_Frame100` | 1 |  |
+| `Ani_ShamblingShade_consumeCat_Frame22` | 1 |  |
+| `Ani_ShamblingShade_consumeCat_Frame60` | 1 |  |
+| `Ani_ShamblingShade_consumeCat_Frame73` | 1 |  |
+| `Ani_ShamblingShade_consumeCat_Frame88` | 1 |  |
+| `Ani_ShamblingShade_dying_Frame16` | 1 |  |
+| `Ani_ShamblingShade_dying_Frame6` | 1 |  |
+| `Ani_ShamblingShade_dying_Frame66` | 1 |  |
+| `Ani_ShamblingShade_hit_Frame4` | 1 |  |
+| `Ani_ShamblingShade_run_Frame10` | 1 |  |
+| `Ani_ShamblingShade_run_Frame13` | 1 |  |
+| `Ani_ShamblingShade_run_Frame17` | 1 |  |
+| `Ani_ShamblingShade_run_Frame2` | 1 |  |
+| `Ani_ShamblingShade_run_Frame5` | 1 |  |
+| `Ani_ShamblingShade_walk_Frame16` | 1 |  |
+| `Ani_ShamblingShade_walk_Frame29` | 1 |  |
+| `Ani_ShamblingShade_walk_Frame4` | 1 |  |
+| `Ani_ShamblingShade_walk_Frame5` | 1 |  |
+| `Ani_Slag_dying_Frame2` | 1 |  |
+| `Ani_Slag_dying_Frame37` | 1 |  |
+| `Ani_Slag_hit_Frame2` | 1 |  |
+| `Ani_Slag_shoot_Frame2` | 1 |  |
+| `Ani_Slag_shoot_Frame37` | 1 |  |
+| `Ani_Slag_spawn_Frame2` | 1 |  |
+| `Ani_Slag_spawnx_Frame2` | 1 |  |
+| `Ani_Slag_walk_Frame2` | 1 |  |
+| `Ani_SlotMachine_dying_Frame2` | 1 |  |
+| `Ani_SlotMachine_hit_Frame2` | 1 |  |
+| `Ani_SlotMachine_resultExplode_Frame2` | 1 |  |
+| `Ani_SlotMachine_resultExplode_Frame20` | 1 |  |
+| `Ani_SlotMachine_resultExplode_Frame40` | 1 |  |
+| `Ani_SlotMachine_resultExplode_Frame60` | 1 |  |
+| `Ani_SlotMachine_resultExplode_Frame66` | 1 |  |
+| `Ani_SlotMachine_resultJackpot_Frame106` | 1 |  |
+| `Ani_SlotMachine_resultJackpot_Frame2` | 1 |  |
+| `Ani_SlotMachine_resultJackpot_Frame20` | 1 |  |
+| `Ani_SlotMachine_resultJackpot_Frame40` | 1 |  |
+| `Ani_SlotMachine_resultJackpot_Frame60` | 1 |  |
+| `Ani_SlotMachine_resultLose_Frame2` | 1 |  |
+| `Ani_SlotMachine_resultLose_Frame20` | 1 |  |
+| `Ani_SlotMachine_resultLose_Frame40` | 1 |  |
+| `Ani_SlotMachine_resultLose_Frame60` | 1 |  |
+| `Ani_SlotMachine_resultWin_Frame2` | 1 |  |
+| `Ani_SlotMachine_resultWin_Frame20` | 1 |  |
+| `Ani_SlotMachine_resultWin_Frame40` | 1 |  |
+| `Ani_SlotMachine_resultWin_Frame60` | 1 |  |
+| `Ani_SmallAsteroid_dying_Frame134` | 1 |  |
+| `Ani_SmallAsteroid_dying_Frame2` | 1 |  |
+| `Ani_SmallAsteroid_dying_Frame22` | 1 |  |
+| `Ani_SmallAsteroid_dying_Frame46` | 1 |  |
+| `Ani_SmallAsteroid_dying_Frame84` | 1 |  |
+| `Ani_SmallAsteroid_hit_Frame2` | 1 |  |
+| `Ani_SmallAsteroid_puke_Frame15` | 1 |  |
+| `Ani_SmallAsteroid_puke_Frame16` | 1 |  |
+| `Ani_SmallAsteroid_puke_Frame42` | 1 |  |
+| `Ani_SmallAsteroid_puke_Frame43` | 1 |  |
+| `Ani_SmallAsteroid_puke_Frame67` | 1 |  |
+| `Ani_SmallAsteroid_puke_Frame68` | 1 |  |
+| `Ani_SmallRock_dying_Frame2` | 1 |  |
+| `Ani_SmallRock_hit_Frame3` | 1 |  |
+| `Ani_SmallSlime_attack_Frame2` | 1 |  |
+| `Ani_SmallSlime_dying_Frame2` | 1 |  |
+| `Ani_SmallSlime_dying_Frame3` | 1 |  |
+| `Ani_SmallSlime_hit_Frame2` | 1 |  |
+| `Ani_SmallSlime_spawnin_Frame2` | 1 |  |
+| `Ani_SmallSlime_walk_Frame2` | 1 |  |
+| `Ani_SmallSlimeX_attack_Frame2` | 1 |  |
+| `Ani_SmallSlimeX_dying_Frame2` | 1 |  |
+| `Ani_SmallSlimeX_dying_Frame3` | 1 |  |
+| `Ani_SmallSlimeX_hit_Frame2` | 1 |  |
+| `Ani_SmallSlimeX_spawnin_Frame2` | 1 |  |
+| `Ani_SmallSlimeX_walk_Frame2` | 1 |  |
+| `Ani_SmallUFO_attack_Frame2` | 1 |  |
+| `Ani_SmallUFO_attack_Frame59` | 1 |  |
+| `Ani_SmallUFO_attack_Frame90` | 1 |  |
+| `Ani_SmallUFO_dying_Frame2` | 1 |  |
+| `Ani_SmallUFO_identify_Frame48` | 1 |  |
+| `Ani_SmallUFO_identify_Frame8` | 1 |  |
+| `Ani_SmallUFO_shield_Frame2` | 1 |  |
+| `Ani_SmallUFO_walk_Frame2` | 1 |  |
+| `Ani_Snake_attack_Frame2` | 1 |  |
+| `Ani_Snake_dying_Frame2` | 1 |  |
+| `Ani_Snake_walk_Frame2` | 1 |  |
+| `Ani_SnakeyBones_dying_Frame2` | 1 |  |
+| `Ani_SnakeyBones_grow1_Frame15` | 1 |  |
+| `Ani_SnakeyBones_grow1_Frame2` | 1 |  |
+| `Ani_SnakeyBones_grow2_Frame15` | 1 |  |
+| `Ani_SnakeyBones_grow2_Frame2` | 1 |  |
+| `Ani_SnakeyBones_hit1_Frame2` | 1 |  |
+| `Ani_SnakeyBones_hit2_Frame2` | 1 |  |
+| `Ani_SnakeyBones_hit3_Frame2` | 1 |  |
+| `Ani_SnakeyBones_shoot1_Frame41` | 1 |  |
+| `Ani_SnakeyBones_shoot1_Frame9` | 1 |  |
+| `Ani_SnakeyBones_shoot2_Frame41` | 1 |  |
+| `Ani_SnakeyBones_shoot2_Frame9` | 1 |  |
+| `Ani_SnakeyBones_shoot3_Frame41` | 1 |  |
+| `Ani_SnakeyBones_shoot3_Frame9` | 1 |  |
+| `Ani_SnakeyBones_shrink2_Frame2` | 1 |  |
+| `Ani_SnakeyBones_shrink3_Frame2` | 1 |  |
+| `Ani_SoldierBot_backflip_Frame2` | 1 |  |
+| `Ani_SoldierBot_backflip_Frame4` | 1 |  |
+| `Ani_SoldierBot_dying_Frame2` | 1 |  |
+| `Ani_SoldierBot_dying_Frame4` | 1 |  |
+| `Ani_SoldierBot_hit_Frame2` | 1 |  |
+| `Ani_SoldierBot_hit_Frame4` | 1 |  |
+| `Ani_SoldierBot_pre_backflip_Frame2` | 1 |  |
+| `Ani_SoldierBot_pre_backflip_Frame4` | 1 |  |
+| `Ani_SoldierBot_reload_Frame2` | 1 |  |
+| `Ani_SoldierBot_reload_Frame4` | 1 |  |
+| `Ani_SoldierBot_walk_Frame21` | 1 |  |
+| `Ani_SoldierBot_walk_Frame3` | 1 |  |
+| `Ani_Spewer_barf_Frame2` | 1 |  |
+| `Ani_Spewer_dying_Frame2` | 1 |  |
+| `Ani_Spewer_dyingFull_Frame2` | 1 |  |
+| `Ani_Spewer_hit_Frame2` | 1 |  |
+| `Ani_Spewer_spit_Frame2` | 1 |  |
+| `Ani_Spewer_spitFull_Frame2` | 1 |  |
+| `Ani_Spewer_suck_Frame2` | 1 |  |
+| `Ani_Spewer_suck_Frame72` | 1 |  |
+| `Ani_Spewer_transformFull_Frame2` | 1 |  |
+| `Ani_Spewer_transformFull_Frame31` | 1 |  |
+| `Ani_Spewer_transformFull_Frame60` | 1 |  |
+| `Ani_Spewer_walk_Frame11` | 1 |  |
+| `Ani_Spewer_walk_Frame2` | 1 |  |
+| `Ani_Spewer_walk_Frame26` | 1 |  |
+| `Ani_Spewer_walk_Frame34` | 1 |  |
+| `Ani_Spewer_walkFull_Frame2` | 1 |  |
+| `Ani_SpewerPill_dying_Frame2` | 1 |  |
+| `Ani_SpewerTube_shoot_Frame2` | 1 |  |
+| `Ani_SpiderQueen_attack_Frame9` | 1 |  |
+| `Ani_SpiderQueen_attackInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_calmdownInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_dying_Frame117` | 1 |  |
+| `Ani_SpiderQueen_dying_Frame2` | 1 |  |
+| `Ani_SpiderQueen_dying_offmap_Frame11` | 1 |  |
+| `Ani_SpiderQueen_dying_offmap_Frame2` | 1 |  |
+| `Ani_SpiderQueen_dyingInsane_Frame117` | 1 |  |
+| `Ani_SpiderQueen_dyingInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_egg_Frame2` | 1 |  |
+| `Ani_SpiderQueen_egg_Frame27` | 1 |  |
+| `Ani_SpiderQueen_egg_Frame69` | 1 |  |
+| `Ani_SpiderQueen_eggInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_eggInsane_Frame27` | 1 |  |
+| `Ani_SpiderQueen_eggInsane_Frame69` | 1 |  |
+| `Ani_SpiderQueen_hit_Frame2` | 1 |  |
+| `Ani_SpiderQueen_hitInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_insane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_insane_Frame88` | 1 |  |
+| `Ani_SpiderQueen_portin_Frame2` | 1 |  |
+| `Ani_SpiderQueen_portinInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_portout_Frame16` | 1 |  |
+| `Ani_SpiderQueen_portoutInsane_Frame16` | 1 |  |
+| `Ani_SpiderQueen_revenge_Frame2` | 1 |  |
+| `Ani_SpiderQueen_revengeInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_walk_Frame12` | 1 |  |
+| `Ani_SpiderQueen_walk_Frame15` | 1 |  |
+| `Ani_SpiderQueen_walk_Frame18` | 1 |  |
+| `Ani_SpiderQueen_walk_Frame2` | 1 |  |
+| `Ani_SpiderQueen_walk_Frame24` | 1 |  |
+| `Ani_SpiderQueen_walk_Frame8` | 1 |  |
+| `Ani_SpiderQueen_walkInsane_Frame12` | 1 |  |
+| `Ani_SpiderQueen_walkInsane_Frame15` | 1 |  |
+| `Ani_SpiderQueen_walkInsane_Frame18` | 1 |  |
+| `Ani_SpiderQueen_walkInsane_Frame2` | 1 |  |
+| `Ani_SpiderQueen_walkInsane_Frame24` | 1 |  |
+| `Ani_SpiderQueen_walkInsane_Frame8` | 1 |  |
+| `Ani_SpiderQueen_web_Frame2` | 1 |  |
+| `Ani_SpiderQueen_webInsane_Frame2` | 1 |  |
+| `Ani_Spookie_attack_Frame2` | 1 |  |
+| `Ani_Spookie_dying_Frame2` | 1 |  |
+| `Ani_Spookie_hit_Frame2` | 1 |  |
+| `Ani_Spookie_portin_Frame2` | 1 |  |
+| `Ani_Spookie_portout_Frame2` | 1 |  |
+| `Ani_Spookie_walk_Frame2` | 1 |  |
+| `Ani_Sprout_dying_Frame2` | 1 |  |
+| `Ani_Sprout_hit_Frame3` | 1 |  |
+| `Ani_Sprout_spawnin_Frame2` | 1 |  |
+| `Ani_Sprout_spore_Frame2` | 1 |  |
+| `Ani_Squirrel_dying_Frame2` | 1 |  |
+| `Ani_Stegosaurus_bite_Frame2` | 1 |  |
+| `Ani_Stegosaurus_bite_Frame24` | 1 |  |
+| `Ani_Stegosaurus_counter_Frame15` | 1 |  |
+| `Ani_Stegosaurus_counter_Frame2` | 1 |  |
+| `Ani_Stegosaurus_dying_Frame18` | 1 |  |
+| `Ani_Stegosaurus_dying_Frame2` | 1 |  |
+| `Ani_Stegosaurus_hit_Frame2` | 1 |  |
+| `Ani_Stegosaurus_spin_Frame12` | 1 |  |
+| `Ani_Stegosaurus_spin_Frame2` | 1 |  |
+| `Ani_Stegosaurus_walk2_Frame19` | 1 |  |
+| `Ani_Stegosaurus_walk2_Frame2` | 1 |  |
+| `Ani_Stegosaurus_walk2_Frame22` | 1 |  |
+| `Ani_Stegosaurus_walk2_Frame8` | 1 |  |
+| `Ani_Stegosaurus_walk_Frame12` | 1 |  |
+| `Ani_Stegosaurus_walk_Frame32` | 1 |  |
+| `Ani_Stegosaurus_walk_Frame57` | 1 |  |
+| `Ani_Stegosaurus_walk_Frame65` | 1 |  |
+| `Ani_TallBot_dying_Frame2` | 1 |  |
+| `Ani_TallBot_dying_Frame4` | 1 |  |
+| `Ani_TallBot_dyingPrimed_Frame2` | 1 |  |
+| `Ani_TallBot_dyingPrimed_Frame4` | 1 |  |
+| `Ani_TallBot_hit_Frame2` | 1 |  |
+| `Ani_TallBot_hit_Frame4` | 1 |  |
+| `Ani_TallBot_hitPrimed_Frame2` | 1 |  |
+| `Ani_TallBot_hitPrimed_Frame4` | 1 |  |
+| `Ani_TallBot_idle2primed_Frame2` | 1 |  |
+| `Ani_TallBot_idle2primed_Frame4` | 1 |  |
+| `Ani_TallBot_launch_Frame2` | 1 |  |
+| `Ani_TallBot_launch_Frame27` | 1 |  |
+| `Ani_TallBot_suplex_Frame2` | 1 |  |
+| `Ani_TallBot_suplex_Frame4` | 1 |  |
+| `Ani_TallBot_suplex_Frame45` | 1 |  |
+| `Ani_TallBot_suplexCat_Frame2` | 1 |  |
+| `Ani_TallBot_suplexCat_Frame4` | 1 |  |
+| `Ani_TallBot_suplexCat_Frame45` | 1 |  |
+| `Ani_TallBot_walk_Frame19` | 1 |  |
+| `Ani_TallBot_walk_Frame3` | 1 |  |
+| `Ani_TallBot_walk_Frame34` | 1 |  |
+| `Ani_TallBot_walk_Frame52` | 1 |  |
+| `Ani_TallHaunt_buff_Frame2` | 1 |  |
+| `Ani_TallHaunt_dying_Frame2` | 1 |  |
+| `Ani_TallHaunt_hit_Frame2` | 1 |  |
+| `Ani_TallHaunt_shoot_Frame2` | 1 |  |
+| `Ani_TallHaunt_walk_Frame2` | 1 |  |
+| `Ani_TallTumor_curse_Frame2` | 1 |  |
+| `Ani_TallTumor_dying_Frame2` | 1 |  |
+| `Ani_TallTumor_hit_Frame2` | 1 |  |
+| `Ani_TallTumor_thrash_Frame2` | 1 |  |
+| `Ani_TallTumor_walk_Frame2` | 1 |  |
+| `Ani_TarBaby_dying_Frame2` | 1 |  |
+| `Ani_TarBaby_hit_Frame2` | 1 |  |
+| `Ani_TarBaby_shoot_Frame2` | 1 |  |
+| `Ani_TarBaby_walk_Frame2` | 1 |  |
+| `Ani_Tatters_attack_Frame2` | 1 |  |
+| `Ani_Tatters_dying_Frame2` | 1 |  |
+| `Ani_Tatters_hit_Frame3` | 1 |  |
+| `Ani_Tatters_portin_Frame2` | 1 |  |
+| `Ani_Tatters_portout_Frame2` | 1 |  |
+| `Ani_Tatters_revenge_Frame2` | 1 |  |
+| `Ani_TenTickles_attack_Frame2` | 1 |  |
+| `Ani_TenTickles_attack_Frame3` | 1 |  |
+| `Ani_TenTickles_dying_Frame19` | 1 |  |
+| `Ani_TenTickles_dying_Frame2` | 1 |  |
+| `Ani_TenTickles_dying_Frame68` | 1 |  |
+| `Ani_TenTickles_hit_Frame4` | 1 |  |
+| `Ani_TenTickles_portIn_Frame2` | 1 |  |
+| `Ani_TenTickles_portOut_Frame2` | 1 |  |
+| `Ani_TheBloat_dying0_Frame2` | 1 |  |
+| `Ani_TheBloat_dying0_Frame3` | 1 |  |
+| `Ani_TheBloat_dying1_Frame2` | 1 |  |
+| `Ani_TheBloat_dying1_Frame3` | 1 |  |
+| `Ani_TheBloat_dying_Frame2` | 1 |  |
+| `Ani_TheBloat_dying_Frame3` | 1 |  |
+| `Ani_TheBloat_hit_Frame5` | 1 |  |
+| `Ani_TheBloat_jump0_Frame2` | 1 |  |
+| `Ani_TheBloat_jump0_Frame3` | 1 |  |
+| `Ani_TheBloat_jump0_Frame85` | 1 |  |
+| `Ani_TheBloat_jump1_Frame2` | 1 |  |
+| `Ani_TheBloat_jump1_Frame3` | 1 |  |
+| `Ani_TheBloat_jump1_Frame85` | 1 |  |
+| `Ani_TheBloat_jump_Frame2` | 1 |  |
+| `Ani_TheBloat_jump_Frame3` | 1 |  |
+| `Ani_TheBloat_jump_Frame85` | 1 |  |
+| `Ani_TheBloat_shoot0_Frame2` | 1 |  |
+| `Ani_TheBloat_shoot0_Frame8` | 1 |  |
+| `Ani_TheBloat_shoot1_Frame2` | 1 |  |
+| `Ani_TheBloat_shoot1_Frame8` | 1 |  |
+| `Ani_TheBloat_shoot_Frame2` | 1 |  |
+| `Ani_TheBloat_shoot_Frame8` | 1 |  |
+| `Ani_TheBloat_shootForward0_Frame2` | 1 |  |
+| `Ani_TheBloat_shootForward0_Frame39` | 1 |  |
+| `Ani_TheBloat_shootForward1_Frame2` | 1 |  |
+| `Ani_TheBloat_shootForward1_Frame39` | 1 |  |
+| `Ani_TheBloat_shootForward_Frame2` | 1 |  |
+| `Ani_TheBloat_shootForward_Frame39` | 1 |  |
+| `Ani_TheBloat_spawn0_Frame2` | 1 |  |
+| `Ani_TheBloat_spawn0_Frame3` | 1 |  |
+| `Ani_TheBloat_spawn0_Frame41` | 1 |  |
+| `Ani_TheBloat_spawn1_Frame2` | 1 |  |
+| `Ani_TheBloat_spawn1_Frame3` | 1 |  |
+| `Ani_TheBloat_spawn1_Frame41` | 1 |  |
+| `Ani_TheBloat_spawn_Frame2` | 1 |  |
+| `Ani_TheBloat_spawn_Frame3` | 1 |  |
+| `Ani_TheBloat_spawn_Frame41` | 1 |  |
+| `Ani_TheBloat_walk0_Frame2` | 1 |  |
+| `Ani_TheBloat_walk1_Frame2` | 1 |  |
+| `Ani_TheBloat_walk_Frame2` | 1 |  |
+| `Ani_TheCoven_dying1_Frame27` | 1 |  |
+| `Ani_TheCoven_dying1_Frame4` | 1 |  |
+| `Ani_TheCoven_dying2_Frame14` | 1 |  |
+| `Ani_TheCoven_dying2_Frame3` | 1 |  |
+| `Ani_TheCoven_dying3_Frame12` | 1 |  |
+| `Ani_TheCoven_dying3_Frame3` | 1 |  |
+| `Ani_TheCoven_dying4_Frame3` | 1 |  |
+| `Ani_TheCoven_dying4_Frame8` | 1 |  |
+| `Ani_TheCoven_hit1_Frame2` | 1 |  |
+| `Ani_TheCoven_hit1_Frame3` | 1 |  |
+| `Ani_TheCoven_hit2_Frame2` | 1 |  |
+| `Ani_TheCoven_hit2_Frame3` | 1 |  |
+| `Ani_TheCoven_hit3_Frame2` | 1 |  |
+| `Ani_TheCoven_hit3_Frame3` | 1 |  |
+| `Ani_TheCoven_hit4_Frame2` | 1 |  |
+| `Ani_TheCoven_hit4_Frame3` | 1 |  |
+| `Ani_TheCoven_idle1_Loop` | 1 |  |
+| `Ani_TheCoven_idle2_Loop` | 1 |  |
+| `Ani_TheCoven_idle3_Loop` | 1 |  |
+| `Ani_TheCoven_idle4_Loop` | 1 |  |
+| `Ani_TheCoven_rise1_Frame11` | 1 |  |
+| `Ani_TheCoven_rise1_Frame18` | 1 |  |
+| `Ani_TheCoven_rise2_Frame11` | 1 |  |
+| `Ani_TheCoven_rise2_Frame7` | 1 |  |
+| `Ani_TheCoven_rise3_Frame11` | 1 |  |
+| `Ani_TheCoven_rise3_Frame7` | 1 |  |
+| `Ani_TheCoven_rise_Frame4` | 1 |  |
+| `Ani_TheCoven_rise_Frame6` | 1 |  |
+| `Ani_TheCoven_spell1_Frame9` | 1 |  |
+| `Ani_TheCoven_spell2_Frame10` | 1 |  |
+| `Ani_TheCoven_spell2_Frame9` | 1 |  |
+| `Ani_TheCoven_spell3_Frame10` | 1 |  |
+| `Ani_TheCoven_spell3_Frame16` | 1 |  |
+| `Ani_TheCoven_spell3_Frame9` | 1 |  |
+| `Ani_TheCoven_summon4_Frame14` | 1 |  |
+| `Ani_TheCoven_summon4_Frame188` | 1 |  |
+| `Ani_TheCoven_summon4_Frame32` | 1 |  |
+| `Ani_TheCoven_summon4_Frame355` | 1 |  |
+| `Ani_TheCoven_summon4_Frame433` | 1 |  |
+| `Ani_TheCoven_summon4_Frame470` | 1 |  |
+| `Ani_TheCoven_summon4_Frame510` | 1 |  |
+| `Ani_TheCoven_summon4_Frame525` | 1 |  |
+| `Ani_TheCoven_summon4_Frame562` | 1 |  |
+| `Ani_TheCoven_summon4_Frame575` | 1 |  |
+| `Ani_TheCoven_walk_Frame2` | 1 |  |
+| `Ani_TheMother_consume_Frame2` | 1 |  |
+| `Ani_TheMother_consume_Frame6` | 1 |  |
+| `Ani_TheMother_consumeCat_Frame2` | 1 |  |
+| `Ani_TheMother_consumeCat_Frame6` | 1 |  |
+| `Ani_TheMother_dying_Frame2` | 1 |  |
+| `Ani_TheMother_dying_Frame3` | 1 |  |
+| `Ani_TheMother_grow_Frame2` | 1 |  |
+| `Ani_TheMother_grow_Frame6` | 1 |  |
+| `Ani_TheMother_hit_Frame3` | 1 |  |
+| `Ani_TheMother_pullin_Frame2` | 1 |  |
+| `Ani_TheMother_pullin_Frame3` | 1 |  |
+| `Ani_TheMother_spike_Frame2` | 1 |  |
+| `Ani_TheMother_spike_Frame6` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame137` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame14` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame158` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame2` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame251` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame256` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame305` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame322` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame355` | 1 |  |
+| `Ani_ThrobbingKing2_dying_Frame436` | 1 |  |
+| `Ani_ThrobbingKing2_hit_Frame5` | 1 |  |
+| `Ani_ThrobbingKing2_hop_Frame16` | 1 |  |
+| `Ani_ThrobbingKing2_hop_Frame18` | 1 |  |
+| `Ani_ThrobbingKing2_hop_Frame63` | 1 |  |
+| `Ani_ThrobbingKing2_shoot_Frame26` | 1 |  |
+| `Ani_ThrobbingKing2_shoot_Frame6` | 1 |  |
+| `Ani_ThrobbingKing2_spawn_Frame10` | 1 |  |
+| `Ani_ThrobbingKing2_spawn_Frame2` | 1 |  |
+| `Ani_ThrobbingKing2_walk_Frame17` | 1 |  |
+| `Ani_ThrobbingKing2_walk_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_command1_Frame13` | 1 |  |
+| `Ani_ThrobbingKing_command1_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_command2_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_command2_Frame24` | 1 |  |
+| `Ani_ThrobbingKing_command3_Frame16` | 1 |  |
+| `Ani_ThrobbingKing_command3_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_command4_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_command4_Frame20` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame109` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame114` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame13` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame217` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame25` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame277` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame292` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame293` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame307` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame329` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame349` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame350` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame366` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame368` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame439` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame440` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame449` | 1 |  |
+| `Ani_ThrobbingKing_dying_Frame88` | 1 |  |
+| `Ani_ThrobbingKing_gutball_Frame16` | 1 |  |
+| `Ani_ThrobbingKing_gutball_Frame4` | 1 |  |
+| `Ani_ThrobbingKing_gutball_Frame66` | 1 |  |
+| `Ani_ThrobbingKing_hit_Frame5` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand1_Frame10` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand1_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand2_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand2_Frame6` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand3_Frame11` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand3_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand4_Frame15` | 1 |  |
+| `Ani_ThrobbingKing_releaseCommand4_Frame2` | 1 |  |
+| `Ani_ThrobbingKing_vomitrain_Frame23` | 1 |  |
+| `Ani_ThrobbingKing_vomitrain_Frame24` | 1 |  |
+| `Ani_ThrobbingKing_walk_Frame25` | 1 |  |
+| `Ani_ThrobbingKing_walk_Frame35` | 1 |  |
+| `Ani_ThrobbingKing_walk_Frame53` | 1 |  |
+| `Ani_ThrobbingKing_walk_Frame7` | 1 |  |
+| `Ani_ThrobbingTurret_dying_Frame2` | 1 |  |
+| `Ani_ThrobbingTurret_hit_Frame2` | 1 |  |
+| `Ani_ThrobbingTurret_shoot_Frame2` | 1 |  |
+| `Ani_ThrobbingTurret_spawn_Frame2` | 1 |  |
+| `Ani_Thump_dyingLB_Frame2` | 1 |  |
+| `Ani_Thump_dyingLF_Frame2` | 1 |  |
+| `Ani_Thump_dyingRB_Frame2` | 1 |  |
+| `Ani_Thump_dyingRF_Frame2` | 1 |  |
+| `Ani_Thump_hitLB_Frame4` | 1 |  |
+| `Ani_Thump_hitLF_Frame4` | 1 |  |
+| `Ani_Thump_hitRB_Frame4` | 1 |  |
+| `Ani_Thump_hitRF_Frame4` | 1 |  |
+| `Ani_Thump_jumpLB_Frame48` | 1 |  |
+| `Ani_Thump_jumpLB_Frame6` | 1 |  |
+| `Ani_Thump_jumpLF_Frame48` | 1 |  |
+| `Ani_Thump_jumpLF_Frame6` | 1 |  |
+| `Ani_Thump_jumpRB_Frame48` | 1 |  |
+| `Ani_Thump_jumpRB_Frame6` | 1 |  |
+| `Ani_Thump_jumpRF_Frame48` | 1 |  |
+| `Ani_Thump_jumpRF_Frame6` | 1 |  |
+| `Ani_Thump_smileLB_Frame2` | 1 |  |
+| `Ani_Thump_smileLF_Frame2` | 1 |  |
+| `Ani_Thump_smileRB_Frame2` | 1 |  |
+| `Ani_Thump_smileRF_Frame2` | 1 |  |
+| `Ani_TinyTumorA_attack_Frame2` | 1 |  |
+| `Ani_TinyTumorA_dying_Frame2` | 1 |  |
+| `Ani_TinyTumorA_hit_Frame2` | 1 |  |
+| `Ani_TinyTumorA_walk_Frame19` | 1 |  |
+| `Ani_TinyTumorA_walk_Frame9` | 1 |  |
+| `Ani_TinyTumorB_attack_Frame2` | 1 |  |
+| `Ani_TinyTumorB_dying_Frame2` | 1 |  |
+| `Ani_TinyTumorB_hit_Frame2` | 1 |  |
+| `Ani_TinyTumorB_walk_Frame19` | 1 |  |
+| `Ani_TinyTumorB_walk_Frame9` | 1 |  |
+| `Ani_TinyTumorC_attack_Frame2` | 1 |  |
+| `Ani_TinyTumorC_dying_Frame2` | 1 |  |
+| `Ani_TinyTumorC_hit_Frame2` | 1 |  |
+| `Ani_TinyTumorC_walk_Frame19` | 1 |  |
+| `Ani_TinyTumorC_walk_Frame9` | 1 |  |
+| `Ani_Tombstone_dying_Frame2` | 1 |  |
+| `Ani_Tormentor_attack_Frame11` | 1 |  |
+| `Ani_Tormentor_attack_Frame2` | 1 |  |
+| `Ani_Tormentor_bite_Frame2` | 1 |  |
+| `Ani_Tormentor_bite_Frame24` | 1 |  |
+| `Ani_Tormentor_dying_Frame2` | 1 |  |
+| `Ani_Tormentor_dying_Frame550` | 1 |  |
+| `Ani_Tormentor_dying_Frame94` | 1 |  |
+| `Ani_Tormentor_hit_Frame4` | 1 |  |
+| `Ani_Tormentor_hit_Frame8` | 1 |  |
+| `Ani_Tormentor_idle2primed_Frame2` | 1 |  |
+| `Ani_Tormentor_megabite_Frame5` | 1 |  |
+| `Ani_Tormentor_megabite_Frame95` | 1 |  |
+| `Ani_Tormentor_throw_Frame2` | 1 |  |
+| `Ani_Tormentor_throw_Frame3` | 1 |  |
+| `Ani_Tormentor_throw_Frame68` | 1 |  |
+| `Ani_Tormentor_throw_Frame75` | 1 |  |
+| `Ani_Tormentor_walk_Loop` | 1 |  |
+| `Ani_Tox_dying_Frame12` | 1 |  |
+| `Ani_Tox_dying_Frame2` | 1 |  |
+| `Ani_Tox_dying_Frame74` | 1 |  |
+| `Ani_Tox_dyingExpl_Frame12` | 1 |  |
+| `Ani_Tox_dyingExpl_Frame2` | 1 |  |
+| `Ani_Tox_dyingExpl_Frame74` | 1 |  |
+| `Ani_Tox_explodeExpl_Frame12` | 1 |  |
+| `Ani_Tox_explodeExpl_Frame13` | 1 |  |
+| `Ani_Tox_hit_Frame2` | 1 |  |
+| `Ani_Tox_hit_Frame7` | 1 |  |
+| `Ani_Tox_hitExpl_Frame2` | 1 |  |
+| `Ani_Tox_hitExpl_Frame7` | 1 |  |
+| `Ani_Tox_idleExpl_Frame15` | 1 |  |
+| `Ani_Tox_idleExpl_Frame172` | 1 |  |
+| `Ani_Tox_idleExpl_Frame276` | 1 |  |
+| `Ani_Tox_puff_Frame17` | 1 |  |
+| `Ani_Tox_puff_Frame5` | 1 |  |
+| `Ani_Tox_reflex_Frame2` | 1 |  |
+| `Ani_Tox_reflex_Frame4` | 1 |  |
+| `Ani_Tox_spawn_Frame2` | 1 |  |
+| `Ani_Tox_spawn_Frame35` | 1 |  |
+| `Ani_Tox_spawn_Frame65` | 1 |  |
+| `Ani_Tox_spawn_Frame7` | 1 |  |
+| `Ani_Tox_walk_Frame10` | 1 |  |
+| `Ani_Tox_walk_Frame31` | 1 |  |
+| `Ani_TracyX_attackLB_Frame10` | 1 |  |
+| `Ani_TracyX_attackLB_Frame8` | 1 |  |
+| `Ani_TracyX_attackLF_Frame10` | 1 |  |
+| `Ani_TracyX_attackLF_Frame8` | 1 |  |
+| `Ani_TracyX_attackRB_Frame10` | 1 |  |
+| `Ani_TracyX_attackRB_Frame8` | 1 |  |
+| `Ani_TracyX_attackRF_Frame10` | 1 |  |
+| `Ani_TracyX_attackRF_Frame8` | 1 |  |
+| `Ani_TracyX_dyingLB_Frame2` | 1 |  |
+| `Ani_TracyX_dyingLB_Frame3` | 1 |  |
+| `Ani_TracyX_dyingLB_Frame60` | 1 |  |
+| `Ani_TracyX_dyingLF_Frame2` | 1 |  |
+| `Ani_TracyX_dyingLF_Frame3` | 1 |  |
+| `Ani_TracyX_dyingLF_Frame60` | 1 |  |
+| `Ani_TracyX_dyingRB_Frame2` | 1 |  |
+| `Ani_TracyX_dyingRB_Frame3` | 1 |  |
+| `Ani_TracyX_dyingRB_Frame60` | 1 |  |
+| `Ani_TracyX_dyingRF_Frame2` | 1 |  |
+| `Ani_TracyX_dyingRF_Frame3` | 1 |  |
+| `Ani_TracyX_dyingRF_Frame60` | 1 |  |
+| `Ani_TracyX_hitLB_Frame2` | 1 |  |
+| `Ani_TracyX_hitLB_Frame3` | 1 |  |
+| `Ani_TracyX_hitLF_Frame2` | 1 |  |
+| `Ani_TracyX_hitLF_Frame3` | 1 |  |
+| `Ani_TracyX_hitRB_Frame2` | 1 |  |
+| `Ani_TracyX_hitRB_Frame3` | 1 |  |
+| `Ani_TracyX_hitRF_Frame2` | 1 |  |
+| `Ani_TracyX_hitRF_Frame3` | 1 |  |
+| `Ani_TracyX_spinLB_Frame10` | 1 |  |
+| `Ani_TracyX_spinLB_Frame7` | 1 |  |
+| `Ani_TracyX_spinLF_Frame10` | 1 |  |
+| `Ani_TracyX_spinLF_Frame7` | 1 |  |
+| `Ani_TracyX_spinRB_Frame10` | 1 |  |
+| `Ani_TracyX_spinRB_Frame7` | 1 |  |
+| `Ani_TracyX_spinRF_Frame10` | 1 |  |
+| `Ani_TracyX_spinRF_Frame7` | 1 |  |
+| `Ani_TracyX_walkLB_Frame13` | 1 |  |
+| `Ani_TracyX_walkLB_Frame2` | 1 |  |
+| `Ani_TracyX_walkLF_Frame13` | 1 |  |
+| `Ani_TracyX_walkLF_Frame2` | 1 |  |
+| `Ani_TracyX_walkRB_Frame13` | 1 |  |
+| `Ani_TracyX_walkRB_Frame2` | 1 |  |
+| `Ani_TracyX_walkRF_Frame13` | 1 |  |
+| `Ani_TracyX_walkRF_Frame2` | 1 |  |
+| `Ani_Trampy_attack_Frame15` | 1 |  |
+| `Ani_Trampy_attack_Frame4` | 1 |  |
+| `Ani_Trampy_dodge_Frame2` | 1 |  |
+| `Ani_Trampy_dodge_Frame40` | 1 |  |
+| `Ani_Trampy_dodge_Frame5` | 1 |  |
+| `Ani_Trampy_drink_Frame10` | 1 |  |
+| `Ani_Trampy_drink_Frame151` | 1 |  |
+| `Ani_Trampy_drink_Frame191` | 1 |  |
+| `Ani_Trampy_drink_Frame202` | 1 |  |
+| `Ani_Trampy_drink_Frame3` | 1 |  |
+| `Ani_Trampy_dying_Frame13` | 1 |  |
+| `Ani_Trampy_dying_Frame2` | 1 |  |
+| `Ani_Trampy_hit_Frame3` | 1 |  |
+| `Ani_Trampy_poop_Frame14` | 1 |  |
+| `Ani_Trampy_poop_Frame3` | 1 |  |
+| `Ani_Trampy_poop_Frame42` | 1 |  |
+| `Ani_Trampy_poop_Frame7` | 1 |  |
+| `Ani_Trampy_poop_Frame73` | 1 |  |
+| `Ani_Trampy_poop_Frame74` | 1 |  |
+| `Ani_Trampy_scratch_Frame146` | 1 |  |
+| `Ani_Trampy_scratch_Frame164` | 1 |  |
+| `Ani_Trampy_scratch_Frame2` | 1 |  |
+| `Ani_Trampy_scratch_Frame4` | 1 |  |
+| `Ani_Trampy_scratch_Frame50` | 1 |  |
+| `Ani_Trampy_shoot_Frame5` | 1 |  |
+| `Ani_Trampy_shoot_Frame62` | 1 |  |
+| `Ani_Trampy_sleepEnd_Frame2` | 1 |  |
+| `Ani_Trampy_sleepEnd_Frame30` | 1 |  |
+| `Ani_Trampy_sleepStart_Frame2` | 1 |  |
+| `Ani_Trampy_sleepStart_Frame34` | 1 |  |
+| `Ani_Trampy_walk_Frame2` | 1 |  |
+| `Ani_Trampy_walk_Frame3` | 1 |  |
+| `Ani_Trampy_walk_Frame40` | 1 |  |
+| `Ani_Trampy_walk_Frame6` | 1 |  |
+| `Ani_Tremblo_attack_Frame2` | 1 |  |
+| `Ani_Tremblo_chewing_Frame2` | 1 |  |
+| `Ani_Tremblo_dying_Frame2` | 1 |  |
+| `Ani_Tremblo_hit_Frame3` | 1 |  |
+| `Ani_Tremblo_puke_Frame2` | 1 |  |
+| `Ani_Tremblo_suck_Frame5` | 1 |  |
+| `Ani_Tremblo_walk_Frame12` | 1 |  |
+| `Ani_Tremblo_walk_Frame32` | 1 |  |
+| `Ani_Trex_alertend_Frame2` | 1 |  |
+| `Ani_Trex_alertstart_Frame2` | 1 |  |
+| `Ani_Trex_dying_Frame2` | 1 |  |
+| `Ani_Trex_dying_Frame6` | 1 |  |
+| `Ani_Trex_eat_Frame2` | 1 |  |
+| `Ani_Trex_eat_Frame30` | 1 |  |
+| `Ani_Trex_eatCat_Frame2` | 1 |  |
+| `Ani_Trex_eatCat_Frame30` | 1 |  |
+| `Ani_Trex_hit_Frame6` | 1 |  |
+| `Ani_Trex_stomp_Frame23` | 1 |  |
+| `Ani_Trex_stomp_Frame35` | 1 |  |
+| `Ani_Trex_stomp_Frame60` | 1 |  |
+| `Ani_Trex_walk_Frame12` | 1 |  |
+| `Ani_Trex_walk_Frame37` | 1 |  |
+| `Ani_Triceratops_attack_Frame19` | 1 |  |
+| `Ani_Triceratops_attack_Frame24` | 1 |  |
+| `Ani_Triceratops_dying_Frame4` | 1 |  |
+| `Ani_Triceratops_dying_Frame57` | 1 |  |
+| `Ani_Triceratops_hit_Frame2` | 1 |  |
+| `Ani_Triceratops_idle2primed_Frame25` | 1 |  |
+| `Ani_Triceratops_primed_Frame52` | 1 |  |
+| `Ani_Triceratops_ram_Frame16` | 1 |  |
+| `Ani_Triceratops_ram_Frame19` | 1 |  |
+| `Ani_Triceratops_ram_Frame2` | 1 |  |
+| `Ani_Triceratops_ram_Frame25` | 1 |  |
+| `Ani_Triceratops_ram_Frame9` | 1 |  |
+| `Ani_Triceratops_walk_Frame12` | 1 |  |
+| `Ani_Triceratops_walk_Frame27` | 1 |  |
+| `Ani_Triceratops_walk_Frame32` | 1 |  |
+| `Ani_Triceratops_walk_Frame56` | 1 |  |
+| `Ani_TumorBarrier_dying_Frame2` | 1 |  |
+| `Ani_TumorBarrier_hit_Frame3` | 1 |  |
+| `Ani_TumorBarrier_land_Frame2` | 1 |  |
+| `Ani_Turret_dying_Frame2` | 1 |  |
+| `Ani_Turret_hit_Frame3` | 1 |  |
+| `Ani_Turret_shoot_Frame2` | 1 |  |
+| `Ani_Turret_shoot_Frame9` | 1 |  |
+| `Ani_Turtle_dying_Frame2` | 1 |  |
+| `Ani_Turtle_headbuttdashEnd_Frame2` | 1 |  |
+| `Ani_Turtle_hide_Frame2` | 1 |  |
+| `Ani_Turtle_unhide_Frame2` | 1 |  |
+| `Ani_Twister_dying_Frame2` | 1 |  |
+| `Ani_VSBossIntro_Frame118` | 1 |  |
+| `Ani_VSBossIntro_Frame170` | 1 |  |
+| `Ani_VSBossIntro_Frame25` | 1 |  |
+| `Ani_VSBossIntro_Frame281` | 1 |  |
+| `Ani_Waggle_attack_Frame2` | 1 |  |
+| `Ani_Waggle_dying_Frame2` | 1 |  |
+| `Ani_Waggle_hit_Frame2` | 1 |  |
+| `Ani_Waggle_shoot_Frame2` | 1 |  |
+| `Ani_Waggle_spawn_Frame2` | 1 |  |
+| `Ani_Waggle_walk_Frame10` | 1 |  |
+| `Ani_WaterLeech_dashend_Frame2` | 1 |  |
+| `Ani_WaterLeech_dashend_Frame54` | 1 |  |
+| `Ani_WaterLeech_dashendWater_Frame2` | 1 |  |
+| `Ani_WaterLeech_dashendWater_Frame54` | 1 |  |
+| `Ani_WaterLeech_dashstartWater_Frame14` | 1 |  |
+| `Ani_WaterLeech_dashstartWater_Frame2` | 1 |  |
+| `Ani_WaterLeech_dying_Frame2` | 1 |  |
+| `Ani_WaterLeech_dyingWater_Frame2` | 1 |  |
+| `Ani_WaterLeech_hit_Frame3` | 1 |  |
+| `Ani_WaterLeech_hitWater_Frame3` | 1 |  |
+| `Ani_WaterLeech_idle_Frame174` | 1 |  |
+| `Ani_WaterLeech_walk_Frame116` | 1 |  |
+| `Ani_WaterLeech_walk_Frame133` | 1 |  |
+| `Ani_WaterLeech_walk_Frame15` | 1 |  |
+| `Ani_WaterLeech_walk_Frame2` | 1 |  |
+| `Ani_WaterLeech_walk_Frame37` | 1 |  |
+| `Ani_WaterLeech_walk_Frame52` | 1 |  |
+| `Ani_WaterLeech_walk_Frame70` | 1 |  |
+| `Ani_WaterLeech_walk_Frame83` | 1 |  |
+| `Ani_WaterLeech_walk_Frame96` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame116` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame133` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame15` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame2` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame37` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame52` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame70` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame83` | 1 |  |
+| `Ani_WaterLeech_walkWater_Frame96` | 1 |  |
+| `Ani_Whisperer_dying_Frame10` | 1 |  |
+| `Ani_Whisperer_dying_Frame2` | 1 |  |
+| `Ani_Whisperer_hit_Frame2` | 1 |  |
+| `Ani_Whisperer_hit_Frame25` | 1 |  |
+| `Ani_Whisperer_shoot_Frame14` | 1 |  |
+| `Ani_Whisperer_shoot_Frame82` | 1 |  |
+| `Ani_Whisperer_walk_Frame2` | 1 |  |
+| `Ani_Whisperer_walk_Frame31` | 1 |  |
+| `Ani_Whisperer_whisper_Frame102` | 1 |  |
+| `Ani_Whisperer_whisper_Frame15` | 1 |  |
+| `Ani_Whisperer_whisper_Frame43` | 1 |  |
+| `Ani_Wisp_attack_Frame2` | 1 |  |
+| `Ani_Wisp_dodge_Frame2` | 1 |  |
+| `Ani_Wisp_dying_Frame2` | 1 |  |
+| `Ani_Wisp_dying_Frame20` | 1 |  |
+| `Ani_Wisp_hit_Frame2` | 1 |  |
+| `Ani_Worm_dying_Frame2` | 1 |  |
+| `Ani_Worm_portin_Frame24` | 1 |  |
+| `Ani_Worm_portout_Frame2` | 1 |  |
+| `Ani_Worm_shoot_Frame2` | 1 |  |
+| `Ani_YellowBlaster_charge_Frame33` | 1 |  |
+| `Ani_YellowBlaster_charge_Frame4` | 1 |  |
+| `Ani_YellowBlaster_dying_Frame2` | 1 |  |
+| `Ani_YellowBlaster_dying_Frame20` | 1 |  |
+| `Ani_YellowBlaster_dying_Frame30` | 1 |  |
+| `Ani_YellowBlaster_jetbegin_Frame2` | 1 |  |
+| `Ani_YellowBlaster_jetbegin_Frame28` | 1 |  |
+| `Ani_YellowBlaster_jetend_Frame1` | 1 |  |
+| `Ani_YellowBlaster_jetloop_Loop` | 1 |  |
+| `Ani_YellowBlaster_reload_Frame79` | 1 |  |
+| `Ani_YellowBlaster_shoot_Frame16` | 1 |  |
+| `Ani_YellowBlaster_shoot_Frame8` | 1 |  |
+| `Ani_YellowBlaster_walk_Frame17` | 1 |  |
+| `Ani_YellowBlaster_walk_Frame2` | 1 |  |
+| `Ani_Yeti_beatchest_Frame11` | 1 |  |
+| `Ani_Yeti_beatchest_Frame27` | 1 |  |
+| `Ani_Yeti_beatchest_Frame33` | 1 |  |
+| `Ani_Yeti_beatchest_Frame39` | 1 |  |
+| `Ani_Yeti_beatchest_Frame45` | 1 |  |
+| `Ani_Yeti_beatchest_Frame50` | 1 |  |
+| `Ani_Yeti_beatchest_Frame54` | 1 |  |
+| `Ani_Yeti_beatchest_Frame56` | 1 |  |
+| `Ani_Yeti_bite_Frame16` | 1 |  |
+| `Ani_Yeti_bite_Frame7` | 1 |  |
+| `Ani_Yeti_dying_Frame2` | 1 |  |
+| `Ani_Yeti_dying_Frame39` | 1 |  |
+| `Ani_Yeti_hit_Frame8` | 1 |  |
+| `Ani_Yeti_icebreath_Frame39` | 1 |  |
+| `Ani_Yeti_icebreath_Frame4` | 1 |  |
+| `Ani_Yeti_icebreath_Frame40` | 1 |  |
+| `Ani_Yeti_kick_Frame11` | 1 |  |
+| `Ani_Yeti_kick_Frame12` | 1 |  |
+| `Ani_Yeti_kick_Frame6` | 1 |  |
+| `Ani_Yeti_walk_Frame23` | 1 |  |
+| `Ani_Yeti_walk_Frame4` | 1 |  |
+| `Ani_Zaratana_attack_Frame2` | 1 |  |
+| `Ani_Zaratana_attack_Frame3` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame105` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame113` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame124` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame136` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame14` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame150` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame2` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame40` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame45` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame50` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame55` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame60` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame65` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame70` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame76` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame82` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame89` | 1 |  |
+| `Ani_Zaratana_bombardment_Frame97` | 1 |  |
+| `Ani_Zaratana_cleanse_Frame3` | 1 |  |
+| `Ani_Zaratana_dash_Loop` | 1 |  |
+| `Ani_Zaratana_dashend_Frame3` | 1 |  |
+| `Ani_Zaratana_dashslow_Loop` | 1 |  |
+| `Ani_Zaratana_dashstart_Frame2` | 1 |  |
+| `Ani_Zaratana_dashstart_Frame38` | 1 |  |
+| `Ani_Zaratana_dashstartTurtle_Frame2` | 1 |  |
+| `Ani_Zaratana_dying_Frame166` | 1 |  |
+| `Ani_Zaratana_dying_Frame2` | 1 |  |
+| `Ani_Zaratana_dyingTurtle_Frame171` | 1 |  |
+| `Ani_Zaratana_dyingTurtle_Frame2` | 1 |  |
+| `Ani_Zaratana_exitTurtle_Frame19` | 1 |  |
+| `Ani_Zaratana_exitTurtle_Frame2` | 1 |  |
+| `Ani_Zaratana_hit_Frame2` | 1 |  |
+| `Ani_Zaratana_hit_land_Frame4` | 1 |  |
+| `Ani_Zaratana_hitBig_Frame2` | 1 |  |
+| `Ani_Zaratana_hitBig_Frame3` | 1 |  |
+| `Ani_Zaratana_hitTurtle_Frame2` | 1 |  |
+| `Ani_Zaratana_magnet_Frame2` | 1 |  |
+| `Ani_Zaratana_magnet_Frame71` | 1 |  |
+| `Ani_Zaratana_meteorshower_Frame2` | 1 |  |
+| `Ani_Zaratana_meteorshower_Frame215` | 1 |  |
+| `Ani_Zaratana_revenge_Frame2` | 1 |  |
+| `Ani_Zaratana_revenge_Frame3` | 1 |  |
+| `Ani_Zaratana_roar_Frame126` | 1 |  |
+| `Ani_Zaratana_roar_Frame2` | 1 |  |
+| `Ani_Zaratana_turtlestart_Frame2` | 1 |  |
+| `Ani_Zaratana_turtlestart_Frame8` | 1 |  |
+| `Ani_Zaratana_walk_Frame105` | 1 |  |
+| `Ani_Zaratana_walk_Frame56` | 1 |  |
+| `Ani_Zaratana_walk_Frame7` | 1 |  |
+| `Ani_Zaratana_walk_Frame86` | 1 |  |
+| `Ani_Zaratana_win_Frame2` | 1 |  |
+| `Ani_Zaratana_win_Frame3` | 1 |  |
+| `Ani_Zodiac_crazy_Frame2` | 1 |  |
+| `Ani_Zodiac_dying_Frame2` | 1 |  |
+| `Ani_Zodiac_dying_Frame5` | 1 |  |
+| `Ani_Zodiac_empty_Frame2` | 1 |  |
+| `Ani_Zodiac_hit_Frame2` | 1 |  |
+| `Ani_Zodiac_reload_Frame2` | 1 |  |
+| `Ani_Zodiac_reload_Frame5` | 1 |  |
+| `Ani_Zodiac_shoot_Frame14` | 1 |  |
+| `Ani_Zodiac_shoot_Frame2` | 1 |  |
+| `Ani_Zodiac_walk_Frame23` | 1 |  |
+| `Ani_Zodiac_walk_Frame4` | 1 |  |
+| `animate_choice` | 3 | `false`, `true` |
+| `animation_fail` | 3 | `choice_no_coins` |
+| `animation_prefix` | 1 | `RattleSnake` |
+| `animation_suffix` | 8 | ``, `Big`, `BigHolding`, `BigHoldingCat`, `Bishop` |
+| `ankylosaurus` | 1 |  |
+| `Antidote` | 2 |  |
+| `anything_eats` | 1 | `true` |
+| `aoe` | 2 |  |
+| `aoe_chance` | 3 | `.4+.2*level` |
+| `aoe_considers_character_size` | 28 | `false`, `true` |
+| `aoe_display_exclude_restrictions` | 1 | `true` |
+| `aoe_excludes_self` | 23 | `false`, `true` |
+| `aoe_hint_teamcast` | 2 | `true` |
+| `aoe_leading_edge_only` | 2 | `true` |
+| `aoe_mode` | 29 | `8cross`, `all`, `all_except_edges`, `all_except_random_empty`, `area_around_all_player_cats` |
+| `aoe_pierce_mode` | 2 | `block` |
+| `aoe_restrictions` | 21 | `allies_only`, `checker_parity_even`, `enemies_only`, `exclude_allies`, `exclude_direct_target` |
+| `aoe_rotate_around_character_center` | 1 | `true` |
+| `aoe_symmetry` | 7 | `eight_way`, `four_way`, `none` |
+| `aoe_tile_requires_element` | 3 | `Earth`, `Grass`, `Water` |
+| `AOEPuddle` | 1 | `X-1` |
+| `Appeal` | 2 |  |
+| `appearance` | 1 | `GolemCat` |
+| `areas` | 1 |  |
+| `arm` | 1 |  |
+| `arm1` | 7 |  |
+| `arm2` | 6 |  |
+| `arms` | 2 |  |
+| `arrival_unlock` | 1 | `npc_houseboss_intro_guillotina_1`, `npc_houseboss_intro_guillotina_2`, `npc_houseboss_intro_guillotina_3`, `npc_houseboss_intro_pyrophina`, `npc_houseboss_intro_pyrophina_vs_zaratana` |
+| `as_the_crow_flies` | 3 | `true` |
+| `asymmetric` | 6 | `false`, `true` |
+| `attach_amplifier` | 1 |  |
+| `attach_antenna` | 1 |  |
+| `attach_leech` | 1 |  |
+| `attack` | 36 | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` |
+| `attack_pool` | 2 |  |
+| `Attacker` | 1 |  |
+| `aura_effects_allies` | 2 | `false` |
+| `aura_requires_tag` | 1 | `humanoid` |
+| `auto_cast` | 1 | `Dash_Enemy` |
+| `auto_cast_on_spawn` | 1 | `Dash_Enemy` |
+| `auto_orient` | 6 | `false` |
+| `auto_plus_signs_on_name` | 1 | `false` |
+| `auto_run_priority` | 3 | `default`, `stationary`, `support` |
+| `autosave` | 1 | `adventure`, `housebossprep` |
+| `aux` | 7 |  |
+| `aux_is_catid` | 1 | `true` |
+| `aux_positions` | 1 |  |
+| `axis` | 1 |  |
+| `back` | 1 | `false`, `true` |
+| `back_icon` | 1 | `bleed`, `burn`, `confusion`, `knockback`, `leech` |
+| `background_extra_shader` | 1 | `crazyeye`, `meatpulse`, `water` |
+| `background_shader` | 1 | `meatpulse_ground` |
+| `backstab_only` | 1 | `true` |
+| `backstabs_only` | 3 | `true` |
+| `BagOfSeeds` | 1 |  |
+| `banned_abilities` | 1 |  |
+| `banned_elite_buffs` | 10 |  |
+| `barf` | 1 |  |
+| `barf_attack` | 1 |  |
+| `barf_prep` | 1 |  |
+| `base_crit_chance` | 4 |  |
+| `base_health` | 2 |  |
+| `base_health_regen` | 2 |  |
+| `base_initial_mana` | 2 |  |
+| `base_initiative` | 3 |  |
+| `base_mana` | 2 |  |
+| `base_mana_regen` | 10 |  |
+| `base_movement` | 3 |  |
+| `base_stats` | 1 |  |
+| `Basement0` | 1 |  |
+| `Basement1` | 1 |  |
+| `Basement2` | 1 |  |
+| `Basement3` | 1 |  |
+| `Basement4` | 1 |  |
+| `BasementUpgrade` | 1 |  |
+| `BasementUpgrade2` | 1 |  |
+| `BasementUpgrade3` | 1 |  |
+| `BasementUpgrade4` | 1 |  |
+| `BasementUpgrade5` | 1 |  |
+| `bash` | 6 |  |
+| `bash_past_alt` | 1 |  |
+| `basic_consumables` | 2 |  |
+| `Batterup_Connect` | 1 |  |
+| `Batterup_Swing_Castpoint` | 1 |  |
 | `beanies_begin_accepting_cats` | 1 |  |
-| `beaniesquest_fail_SpiderInjector` | 1 |  |
-| `beaniesquest_intro_PrincessHat` | 1 |  |
-| `beanies_future_intro` | 1 |  |
-| `beaniesquest_fail_GlassCannon` | 1 |  |
-| `beaniesquest_fail_FartFace` | 1 |  |
-| `beanies_lab_intro` | 1 |  |
-| `beanies_jurassic_intro` | 1 |  |
-| `beaniesquest_complete_SpiderInjector` | 1 |  |
-| `beaniesquest_intro_FigLeaf` | 1 |  |
-| `beaniesquest_intro_Generic` | 1 |  |
+| `beanies_bombquest_2` | 1 |  |
 | `beanies_bombquest_3` | 1 |  |
-| `beanies_seefuture` | 1 |  |
-| `beanies_quest_complete` | 1 |  |
-| `beaniesquest_intro_SpiderInjector` | 1 |  |
-| `beaniesquest_complete_ChadImplant` | 1 |  |
-| `beaniesquest_fail_AI` | 1 |  |
-| `beaniesquest_fail_HiveMind` | 1 |  |
-| `play_cutscene` | 1 | `credits_1` |
-| `beaniesquest_intro_ChaosDevice` | 1 |  |
-| `beaniesquest_complete_DimensionalDivider` | 1 |  |
-| `beanies_theend_intro` | 1 |  |
-| `beaniesquest_complete_ExperimentalTreatment` | 1 |  |
-| `beaniesquest_intro_AirHorn` | 1 |  |
-| `beaniesquest_complete_PersuasionDevice` | 1 |  |
-| `beaniesquest_complete_Trapfest99` | 1 |  |
-| `beaniesquest_complete_MagicMirror` | 1 |  |
-| `beaniesquest_complete_MeStone` | 1 |  |
-| `beaniesquest_intro_AngryFace` | 1 |  |
-| `beaniesquest_complete_PartyDetonator` | 1 |  |
-| `beaniesquest_fail_DimensionalDivider` | 1 |  |
-| `beaniesquest_intro_MysteriousDice` | 1 |  |
-| `beaniesquest_intro_DiseaseJar` | 1 |  |
-| `beaniesquest_fail_AnimalHands` | 1 |  |
-| `beaniesquest_fail_NDEDevice` | 1 |  |
-| `beanies_terminator2_defeat` | 1 |  |
+| `beanies_bombquest_amnesia` | 1 |  |
+| `beanies_bombquest_begin` | 1 |  |
+| `beanies_bombquest_fail_jarofblood` | 1 |  |
+| `beanies_bombquest_fail_jarofchaos` | 1 |  |
+| `beanies_bombquest_fail_jarofradiation` | 1 |  |
 | `beanies_bombquest_fail_nuke` | 1 |  |
-| `beaniesquest_complete_HiveMind` | 1 |  |
-| `beaniesquest_intro_Stopwatch` | 1 |  |
-| `unprompted3` | 1 |  |
-| `beaniesquest_intro_FartFace` | 1 |  |
-| `beaniesquest_fail_FigLeaf` | 1 |  |
-| `beaniesquest_intro_MultilinkCable` | 1 |  |
-| `beaniesquest_intro_PersuasionDevice` | 1 |  |
-| `beaniesquest_intro_ChadImplant` | 1 |  |
+| `beanies_future_intro` | 1 |  |
+| `beanies_hitler3` | 1 |  |
+| `beanies_hitler3_defeat` | 1 |  |
+| `beanies_iloveyou` | 1 |  |
+| `beanies_infinite_intro` | 1 |  |
+| `beanies_intensestatic` | 1 |  |
+| `beanies_intensestatic_to_offscreen` | 1 |  |
+| `beanies_jurassic_intro` | 1 |  |
+| `beanies_lab_intro` | 1 |  |
+| `beanies_offscreen_to_intensestatic` | 1 |  |
+| `beanies_offscreen_to_right` | 1 |  |
+| `beanies_quest_complete` | 1 |  |
+| `beanies_quest_fail` | 1 |  |
+| `beanies_quests_intro` | 2 |  |
+| `beanies_quests_repeat` | 2 |  |
+| `beanies_rift_intro` | 1 |  |
+| `beanies_right` | 1 |  |
+| `beanies_right_to_offscreen` | 1 |  |
+| `beanies_screenshake_test` | 1 |  |
+| `beanies_seefuture` | 1 |  |
+| `beanies_seetheend` | 1 |  |
+| `beanies_terminator1_defeat` | 1 |  |
+| `beanies_terminator2_defeat` | 1 |  |
+| `beanies_theend_intro` | 1 |  |
+| `beanies_timemachine_2` | 1 |  |
+| `beanies_timemachine_intro` | 1 |  |
+| `beanies_vscreator1` | 1 |  |
+| `beanies_vscreator2` | 1 |  |
+| `beanies_vscreator3` | 1 |  |
+| `beanies_vscreator4` | 1 |  |
+| `beanies_vscreatorintro` | 1 |  |
+| `BeaniesEnding_Banging` | 1 |  |
+| `beaniesquest_complete_AI` | 1 |  |
 | `beaniesquest_complete_AirHorn` | 1 |  |
-| `beaniesquest_fail_PartyDetonator` | 1 |  |
-| `beaniesquest_fail_MysteriousDice` | 1 |  |
-| `beaniesquest_complete_Stopwatch` | 1 |  |
-| `beaniesquest_fail_Redacted` | 1 |  |
+| `beaniesquest_complete_AngryFace` | 1 |  |
+| `beaniesquest_complete_AnimalHands` | 1 |  |
+| `beaniesquest_complete_BubbleBoy` | 1 |  |
+| `beaniesquest_complete_ChadImplant` | 1 |  |
+| `beaniesquest_complete_ChaosDevice` | 1 |  |
+| `beaniesquest_complete_DimensionalDivider` | 1 |  |
+| `beaniesquest_complete_DiseaseJar` | 1 |  |
+| `beaniesquest_complete_ExperimentalTreatment` | 1 |  |
+| `beaniesquest_complete_FartFace` | 1 |  |
+| `beaniesquest_complete_FigLeaf` | 1 |  |
 | `beaniesquest_complete_Generic` | 1 |  |
 | `beaniesquest_complete_GlassCannon` | 1 |  |
-| `beaniesquest_intro_MysteriousGlasses` | 1 |  |
-| `beanies_timemachine_2` | 1 |  |
-| `beaniesquest_fail_DiseaseJar` | 1 |  |
-| `beaniesquest_intro_AnimalHands` | 1 |  |
-| `beanies_bombquest_fail_jarofradiation` | 1 |  |
-| `beaniesquest_intro_UltraVision3000` | 1 |  |
 | `beaniesquest_complete_HardPill` | 1 |  |
-| `beanies_hitler3` | 1 |  |
-| `unprompted2` | 1 |  |
-| `beaniesquest_complete_NuclearKnife` | 1 |  |
-| `beaniesquest_fail_HardPill` | 1 |  |
-| `beaniesquest_fail_PartialLobotomy` | 1 |  |
-| `beaniesquest_intro_StorageLocker` | 1 |  |
-| `beanies_quest_fail` | 1 |  |
-| `beaniesquest_fail_Trapfest99` | 1 |  |
-| `beaniesquest_complete_ChaosDevice` | 1 |  |
-| `beaniesquest_intro_AI` | 1 |  |
-| `beaniesquest_fail_PersonalHeater` | 1 |  |
-| `beaniesquest_complete_DiseaseJar` | 1 |  |
+| `beaniesquest_complete_HiveMind` | 1 |  |
+| `beaniesquest_complete_MagicMirror` | 1 |  |
+| `beaniesquest_complete_MeStone` | 1 |  |
+| `beaniesquest_complete_MultilinkCable` | 1 |  |
 | `beaniesquest_complete_MysteriousDice` | 1 |  |
-| `unprompted6` | 1 |  |
-| `beaniesquest_fail_NuclearKnife` | 1 |  |
+| `beaniesquest_complete_MysteriousGlasses` | 1 |  |
+| `beaniesquest_complete_NDEDevice` | 1 |  |
+| `beaniesquest_complete_NuclearKnife` | 1 |  |
+| `beaniesquest_complete_PartialLobotomy` | 1 |  |
+| `beaniesquest_complete_PartyDetonator` | 1 |  |
+| `beaniesquest_complete_PersonalHeater` | 1 |  |
+| `beaniesquest_complete_PersuasionDevice` | 1 |  |
+| `beaniesquest_complete_PrincessHat` | 1 |  |
+| `beaniesquest_complete_RealityScrambler` | 1 |  |
 | `beaniesquest_complete_Redacted` | 1 |  |
-| `beaniesquest_intro_HiveMind` | 1 |  |
-| `beaniesquest_intro_PersonalHeater` | 1 |  |
-| `beaniesquest_fail_TheIOU` | 1 |  |
-| `unprompted1` | 1 |  |
+| `beaniesquest_complete_SpiderInjector` | 1 |  |
+| `beaniesquest_complete_Stopwatch` | 1 |  |
+| `beaniesquest_complete_StorageLocker` | 1 |  |
+| `beaniesquest_complete_TheIOU` | 1 |  |
+| `beaniesquest_complete_TheLoner` | 1 |  |
+| `beaniesquest_complete_Trapfest99` | 1 |  |
+| `beaniesquest_complete_UltraVision3000` | 1 |  |
+| `beaniesquest_fail_AI` | 1 |  |
+| `beaniesquest_fail_AirHorn` | 1 |  |
+| `beaniesquest_fail_AngryFace` | 1 |  |
+| `beaniesquest_fail_AnimalHands` | 1 |  |
+| `beaniesquest_fail_BubbleBoy` | 1 |  |
+| `beaniesquest_fail_ChadImplant` | 1 |  |
+| `beaniesquest_fail_ChaosDevice` | 1 |  |
+| `beaniesquest_fail_DimensionalDivider` | 1 |  |
+| `beaniesquest_fail_DiseaseJar` | 1 |  |
+| `beaniesquest_fail_ExperimentalTreatment` | 1 |  |
+| `beaniesquest_fail_FartFace` | 1 |  |
+| `beaniesquest_fail_FigLeaf` | 1 |  |
+| `beaniesquest_fail_Generic` | 1 |  |
+| `beaniesquest_fail_GlassCannon` | 1 |  |
+| `beaniesquest_fail_HardPill` | 1 |  |
+| `beaniesquest_fail_HiveMind` | 1 |  |
 | `beaniesquest_fail_MagicMirror` | 1 |  |
 | `beaniesquest_fail_MeStone` | 1 |  |
-| `beaniesquest_fail_BubbleBoy` | 1 |  |
-| `gather_questitem_info` | 1 | `fail`, `newest`, `success` |
-| `beaniesquest_intro_DimensionalDivider` | 1 |  |
-| `beanies_iloveyou` | 1 |  |
-| `beanies_terminator1_defeat` | 1 |  |
-| `beaniesquest_fail_MysteriousGlasses` | 1 |  |
-| `beaniesquest_complete_FartFace` | 1 |  |
-| `beaniesquest_fail_ChadImplant` | 1 |  |
-| `beanies_screenshake_test` | 1 |  |
 | `beaniesquest_fail_MultilinkCable` | 1 |  |
-| `beaniesquest_complete_MysteriousGlasses` | 1 |  |
-| `beaniesquest_complete_PersonalHeater` | 1 |  |
-| `beaniesquest_complete_PrincessHat` | 1 |  |
-| `beaniesquest_fail_ExperimentalTreatment` | 1 |  |
-| `beaniesquest_complete_TheLoner` | 1 |  |
-| `beanies_bombquest_fail_jarofblood` | 1 |  |
-| `beaniesquest_intro_NDEDevice` | 1 |  |
-| `beaniesquest_fail_Generic` | 1 |  |
-| `restart_npc_music` | 1 |  |
-| `beanies_timemachine_intro` | 1 |  |
-| `beaniesquest_fail_AngryFace` | 1 |  |
-| `beaniesquest_intro_TheLoner` | 1 |  |
-| `beaniesquest_complete_TheIOU` | 1 |  |
-| `beaniesquest_complete_MultilinkCable` | 1 |  |
+| `beaniesquest_fail_MysteriousDice` | 1 |  |
+| `beaniesquest_fail_MysteriousGlasses` | 1 |  |
+| `beaniesquest_fail_NDEDevice` | 1 |  |
+| `beaniesquest_fail_NuclearKnife` | 1 |  |
+| `beaniesquest_fail_PartialLobotomy` | 1 |  |
+| `beaniesquest_fail_PartyDetonator` | 1 |  |
+| `beaniesquest_fail_PersonalHeater` | 1 |  |
 | `beaniesquest_fail_PersuasionDevice` | 1 |  |
-| `beaniesquest_complete_RealityScrambler` | 1 |  |
-| `beaniesquest_complete_BubbleBoy` | 1 |  |
-| `beanies_bombquest_amnesia` | 1 |  |
-| `beaniesquest_fail_RealityScrambler` | 1 |  |
 | `beaniesquest_fail_PrincessHat` | 1 |  |
-| `beaniesquest_complete_AngryFace` | 1 |  |
-| `beaniesquest_complete_FigLeaf` | 1 |  |
-| `beanies_bombquest_fail_jarofchaos` | 1 |  |
-| `beaniesquest_intro_TheIOU` | 1 |  |
-| `beaniesquest_complete_AI` | 1 |  |
-| `beanies_bombquest_begin` | 1 |  |
-| `beaniesquest_intro_PartyDetonator` | 1 |  |
-| `trigger_unlock` | 1 | `nuke_quest_get_nuke`, `nuke_quest_loop`, `quest_begin_amplifier2`, `quest_begin_receiver2`, `quest_begin_transmitter2` |
-| `beaniesquest_intro_NuclearKnife` | 1 |  |
+| `beaniesquest_fail_RealityScrambler` | 1 |  |
+| `beaniesquest_fail_Redacted` | 1 |  |
+| `beaniesquest_fail_SpiderInjector` | 1 |  |
 | `beaniesquest_fail_Stopwatch` | 1 |  |
-| `beaniesquest_intro_HardPill` | 1 |  |
-| `beaniesquest_intro_Trapfest99` | 1 |  |
-| `beaniesquest_complete_AnimalHands` | 1 |  |
+| `beaniesquest_fail_StorageLocker` | 1 |  |
+| `beaniesquest_fail_TheIOU` | 1 |  |
+| `beaniesquest_fail_TheLoner` | 1 |  |
+| `beaniesquest_fail_Trapfest99` | 1 |  |
+| `beaniesquest_fail_UltraVision3000` | 1 |  |
+| `beaniesquest_intro_AI` | 1 |  |
+| `beaniesquest_intro_AirHorn` | 1 |  |
+| `beaniesquest_intro_AngryFace` | 1 |  |
+| `beaniesquest_intro_AnimalHands` | 1 |  |
 | `beaniesquest_intro_BubbleBoy` | 1 |  |
-| `beaniesquest_complete_StorageLocker` | 1 |  |
-| `do_sidequest_sequence` | 1 | `beaniesquest_complete`, `beaniesquest_fail`, `beaniesquest_intro` |
-| `beaniesquest_fail_ChaosDevice` | 1 |  |
-| `test_gamepad_prompts` | 1 |  |
-| `class_unlock_tinkerer` | 1 |  |
-| `class_unlock_druid` | 1 |  |
-| `butch_tips_rewards` | 1 |  |
-| `butch_tina1` | 1 |  |
-| `butch_tips_tacticalview` | 1 |  |
-| `butch_tips_houseboss` | 1 |  |
-| `butch_tips_intro` | 1 |  |
-| `butch_tips_reorient` | 1 |  |
-| `butch_tips_intelligence` | 1 |  |
-| `upgrade_storage_max3` | 1 |  |
-| `butch_tips_lesscats` | 1 |  |
-| `class_unlock_jester` | 1 |  |
-| `unlock_class` | 1 | `Butcher`, `Druid`, `Jester`, `Medic`, `Monk` |
-| `upgrade_storage_max4` | 1 |  |
-| `upgrade_storage_max5` | 1 |  |
-| `class_unlock_medic` | 1 |  |
-| `butch_tips_combat` | 1 |  |
-| `butch_boneyard_intro` | 1 |  |
-| `butch_tips_hard` | 1 |  |
-| `butch_tips_drafting` | 1 |  |
-| `class_unlock_monk` | 1 |  |
-| `butch_first_house_boss_beat` | 1 |  |
-| `butch_tips_disorders` | 1 |  |
-| `upgrade_storage_max1` | 1 |  |
-| `butch_tips_headhome` | 1 |  |
-| `class_unlock_necromancer` | 1 |  |
-| `butch_tips_items` | 1 |  |
-| `butch_tips_charisma` | 1 |  |
-| `butch_tips_passives` | 1 |  |
-| `butch_pyro` | 1 |  |
-| `butch_tips_turnorder` | 1 |  |
-| `upgrade_storage_max2` | 1 |  |
-| `butch_tips_backstab` | 1 |  |
-| `class_unlock_psychic` | 1 |  |
-| `class_unlock_butcher` | 1 |  |
-| `butch_tips_wellrounded` | 1 |  |
-| `butch_tips_magicdamage` | 1 |  |
-| `butch_tips_elements` | 1 |  |
-| `butch_tips_info` | 1 |  |
-| `butch_begin_accepting_cats` | 1 |  |
-| `class_unlock_thief` | 1 |  |
-| `steven_savescum_3` | 1 |  |
-| `melee_cat_spit_fail_ally` | 1 |  |
-| `steven_savescum_2alt1` | 1 |  |
-| `steven_center` | 1 |  |
-| `tink_right_to_offscreen` | 1 |  |
-| `ranged_cat_early_attack2_rat` | 1 |  |
-| `frank_right` | 1 |  |
-| `first_fight_intro` | 1 |  |
-| `butch_left_to_right` | 1 |  |
-| `introduce_hard_path` | 1 |  |
-| `beanies_vscreatorintro` | 1 |  |
-| `beanies_infinite_intro` | 1 |  |
-| `beanies_right_to_offscreen` | 1 |  |
-| `ranged_cat_early_attack_miss` | 1 |  |
-| `ranged_attack_tomtom_fail_rat` | 1 |  |
-| `house_pass_day2` | 1 |  |
-| `melee_cat_spit_fail_rat` | 1 |  |
-| `lock_mouse` | 1 |  |
-| `tink_right_to_left` | 1 |  |
-| `tink_offscreen_to_right` | 1 |  |
-| `frank_offscreen_to_right` | 1 |  |
-| `do_not_end_turn` | 1 |  |
-| `ranged_cat_failmove` | 1 |  |
-| `map_equip_items` | 1 |  |
-| `first_house_hint_retired` | 1 |  |
-| `done_spitting_success` | 1 |  |
-| `butch_offscreen_to_right` | 1 |  |
-| `ranged_cat_roll` | 1 |  |
-| `tink_left_to_offscreen` | 1 |  |
-| `ranged_attack_tomtom_fail_ally` | 1 |  |
-| `butch_right_to_offscreen` | 1 |  |
+| `beaniesquest_intro_ChadImplant` | 1 |  |
+| `beaniesquest_intro_ChaosDevice` | 1 |  |
+| `beaniesquest_intro_DimensionalDivider` | 1 |  |
+| `beaniesquest_intro_DiseaseJar` | 1 |  |
+| `beaniesquest_intro_ExperimentalTreatment` | 1 |  |
+| `beaniesquest_intro_FartFace` | 1 |  |
+| `beaniesquest_intro_FigLeaf` | 1 |  |
+| `beaniesquest_intro_Generic` | 1 |  |
+| `beaniesquest_intro_GlassCannon` | 1 |  |
+| `beaniesquest_intro_HardPill` | 1 |  |
+| `beaniesquest_intro_HiveMind` | 1 |  |
+| `beaniesquest_intro_MagicMirror` | 1 |  |
+| `beaniesquest_intro_MeStone` | 1 |  |
+| `beaniesquest_intro_MultilinkCable` | 1 |  |
+| `beaniesquest_intro_MysteriousDice` | 1 |  |
+| `beaniesquest_intro_MysteriousGlasses` | 1 |  |
+| `beaniesquest_intro_NDEDevice` | 1 |  |
+| `beaniesquest_intro_NuclearKnife` | 1 |  |
+| `beaniesquest_intro_PartialLobotomy` | 1 |  |
+| `beaniesquest_intro_PartyDetonator` | 1 |  |
+| `beaniesquest_intro_PersonalHeater` | 1 |  |
+| `beaniesquest_intro_PersuasionDevice` | 1 |  |
+| `beaniesquest_intro_PrincessHat` | 1 |  |
+| `beaniesquest_intro_RealityScrambler` | 1 |  |
+| `beaniesquest_intro_Redacted` | 1 |  |
+| `beaniesquest_intro_SpiderInjector` | 1 |  |
+| `beaniesquest_intro_Stopwatch` | 1 |  |
+| `beaniesquest_intro_StorageLocker` | 1 |  |
+| `beaniesquest_intro_TheIOU` | 1 |  |
+| `beaniesquest_intro_TheLoner` | 1 |  |
+| `beaniesquest_intro_Trapfest99` | 1 |  |
+| `beaniesquest_intro_UltraVision3000` | 1 |  |
+| `Bear` | 1 |  |
+| `BearTrapTrail` | 1 |  |
+| `beat_chapter_boss` | 1 | `alley`, `boneyard`, `bunker`, `core`, `crater` |
+| `beat_house_boss` | 1 | `any`, `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina` |
+| `begin` | 2 |  |
+| `begin_accepting_cats` | 6 | `beanies`, `butch`, `jack`, `organgrinder`, `tink` |
+| `BellyFull` | 1 |  |
+| `bg_placements_frame` | 1 | `large`, `small` |
+| `Big` | 3 |  |
+| `BigCatnip` | 1 |  |
+| `BigFood` | 1 |  |
+| `BiggestFood` | 1 |  |
+| `BigHolding` | 1 |  |
+| `BigHoldingCat` | 1 |  |
+| `bigrays` | 1 |  |
+| `BigScrap` | 1 |  |
+| `BigUFO_ambient_looping` | 1 |  |
+| `BirdFeed` | 1 |  |
+| `BirdPoopHat` | 1 |  |
+| `Bishop` | 1 |  |
+| `bite` | 2 |  |
+| `bite_it_off` | 1 |  |
+| `BlackBird` | 1 |  |
+| `BlackHole` | 1 |  |
+| `BlankTile` | 1 |  |
+| `Blessing` | 1 |  |
+| `blind_spot` | 1 | `true` |
+| `blocking` | 2 | `false`, `idlenoani` |
+| `bloodthirsty` | 1 |  |
+| `bloodthirsty_eyes_closed` | 1 |  |
+| `blue` | 1 |  |
+| `blue_needle` | 1 |  |
+| `body` | 9 |  |
+| `Bomb` | 1 |  |
+| `Bomb_FuseLoop` | 1 |  |
+| `Bomb_Land` | 1 |  |
+| `BoneWormShotSmall` | 1 |  |
+| `boneyard` | 3 | `AREA_NAME_BONEYARD`, `mapflag_BoneyardUnlocked` |
+| `BoneyardUnlocked` | 1 |  |
+| `bonk_damage` | 1 |  |
+| `bonus_itemroll_luck` | 1 |  |
+| `bonus_items` | 3 |  |
+| `bonus_passives` | 20 |  |
+| `bonus_pathing_leniency` | 1 |  |
+| `bonusturn_pattern` | 8 |  |
+| `boogers` | 1 |  |
+| `book` | 1 |  |
+| `bored` | 1 |  |
+| `Boris` | 1 | `MegaGuppy_TransformBoris` |
+| `boss` | 22 | `alley/eatinrats_boss.ogg`, `boneyard/boneyard_boss.ogg`, `caves/caves_boss.ogg`, `chaos/chaos_boss.ogg`, `core/core_boss.ogg` |
+| `boss_background_alt` | 1 | `CoreBossBG` |
+| `boss_cutscene` | 17 | `alienqueen`, `boris`, `chaos`, `chubsandnubs`, `coven` |
+| `boss_elite_buffs` | 1 |  |
 | `boss_fight_intro` | 1 |  |
-| `tutorial_cat_dies` | 1 |  |
-| `use_attack_after_used_weapon` | 1 |  |
-| `finish_adventure` | 1 |  |
-| `beanies_offscreen_to_right` | 1 |  |
-| `first_house_boss_tomorrow` | 1 |  |
-| `butch_right_to_left` | 1 |  |
-| `steven_savescum_3alt2` | 1 |  |
-| `done_spitting_fail_miss` | 1 |  |
 | `boss_fight_round2` | 1 |  |
-| `melee_cat_spit_success` | 1 |  |
-| `can_still_use_attack` | 1 |  |
-| `try_again_attack_rat` | 1 |  |
-| `level_up_intro` | 1 |  |
-| `steven_savescum_houseboss_100` | 1 |  |
-| `steven_savescum_intro_houseboss` | 1 |  |
-| `done_spitting_fail_ally` | 1 |  |
-| `ranged_cat_attack` | 1 |  |
-| `steven_savescum_1` | 1 |  |
-| `steven_savescum_1alt1` | 1 |  |
-| `beanies_vscreator1` | 1 |  |
-| `unlock_mouse` | 1 |  |
-| `steven_savescum_2alt2` | 1 |  |
-| `new_adventure` | 1 |  |
-| `steven_savescum_2alt3` | 1 |  |
-| `ranged_attack_tomtom_fail_miss` | 1 |  |
-| `beanies_intensestatic` | 1 |  |
-| `melee_killed_rat` | 1 |  |
-| `level_up_selected_sunburn` | 1 |  |
-| `try_again_melee_move` | 1 |  |
-| `jack_offscreen_to_right` | 1 |  |
-| `ranged_cat_early_attack2_ally` | 1 |  |
-| `steven_savescum_intro` | 1 |  |
-| `frank_right_to_offscreen` | 1 |  |
-| `beanies_vscreator3` | 1 |  |
-| `force_current_cat_use_ability` | 1 | `neck_NukeBonus_remote` |
-| `steven_savescum_houseboss_3` | 1 |  |
-| `ranged_cat_early_attack_ally` | 1 |  |
-| `steven_savescum_4alt3` | 1 |  |
-| `map_click_node` | 1 |  |
-| `map_equip_items2` | 1 |  |
-| `steven_center_to_offscreen` | 1 |  |
-| `steven_savescum_2` | 1 |  |
-| `melee_out_of_actions` | 1 |  |
-| `ranged_cat_early_attack_rat` | 1 |  |
-| `melee_cat_spit_fail_miss` | 1 |  |
-| `ranged_cat_intro` | 1 |  |
-| `ranged_cat_early_attack2_miss` | 1 |  |
-| `beanies_right` | 1 |  |
-| `ranged_cat_rolled_first` | 1 |  |
-| `ranged_attack_tomtom` | 1 |  |
-| `level_up_didnt_select_sunburn` | 1 |  |
-| `steven_savescum_houseboss_1` | 1 |  |
-| `jack_right` | 1 |  |
-| `tink_left_to_right` | 1 |  |
-| `steven_savescum_3alt1` | 1 |  |
-| `house_intro` | 1 |  |
-| `melee_move2` | 1 |  |
-| `steven_savescum_3alt3` | 1 |  |
-| `beanies_vscreator2` | 1 |  |
+| `boss_health_multiplier` | 1 |  |
+| `boss_minions_runaway` | 2 | `false` |
+| `BothObelisksUnlocked` | 2 |  |
+| `brace` | 1 |  |
+| `brain` | 24 | `DicerBrain`, `GenericBrain`, `MountBrain`, `NoBrain`, `PatternBrain` |
+| `break_ability` | 1 | `DestroyerBreakShield` |
+| `break_ice` | 1 |  |
+| `break_lock` | 1 |  |
+| `break_on_pop_only` | 1 | `true` |
+| `breakdown` | 3 |  |
+| `breakdown2` | 1 |  |
+| `breakdown3` | 1 |  |
+| `breakdown4` | 1 |  |
+| `BreakIntoRocks` | 2 | `Coin`, `SmallRock` |
+| `BreedSuppression` | 1 |  |
+| `bribe` | 1 |  |
+| `buddy_damage_only` | 1 | `true` |
+| `buff_ally` | 1 |  |
+| `buff_enemy` | 1 |  |
+| `buff_self` | 1 |  |
+| `built_in_collision` | 1 |  |
+| `Bully` | 1 |  |
+| `bumblefoot` | 1 | `auto` |
+| `bunker` | 2 | `AREA_NAME_BUNKER`, `mapflag_BunkerUnlocked` |
+| `BunkerUnlocked` | 1 |  |
+| `butch_begin_accepting_cats` | 1 |  |
+| `butch_boneyard_intro` | 1 |  |
+| `butch_first_house_boss_beat` | 1 |  |
 | `butch_left` | 1 |  |
-| `offscreen` | 1 |  |
-| `get_token` | 1 | `can_still_use_attack`, `can_still_use_attack_didntspell`, `ranged_cat_attack`, `use_attack_after_used_weapon`, `use_weapon` |
-| `beanies_vscreator4` | 1 |  |
-| `tink_offscreen_to_left` | 1 |  |
-| `steven_savescum_4alt1` | 1 |  |
-| `house_pipe` | 1 |  |
-| `steven_savescum_1alt2` | 1 |  |
-| `take_cats_inside` | 1 |  |
-| `house_strays` | 1 |  |
-| `steven_savescum_1alt3` | 1 |  |
-| `low_on_food` | 1 |  |
-| `jack_right_to_offscreen` | 1 |  |
-| `butch_offscreen_to_left` | 1 |  |
-| `steven_savescum_houseboss_2` | 1 |  |
-| `tink_right` | 1 |  |
-| `done_spitting_fail_rat` | 1 |  |
-| `can_still_use_attack_didntspell` | 1 |  |
-| `house_pass_day` | 1 |  |
-| `request_cat_info` | 1 | `stray` |
-| `autosave` | 1 | `adventure`, `housebossprep` |
-| `house_starred_box` | 1 |  |
-| `beanies_rift_intro` | 1 |  |
-| `jack_introduction` | 1 |  |
-| `house_retired_cat_box` | 1 |  |
-| `steven_savescum_4` | 1 |  |
-| `melee_cat_spit_ignore` | 1 |  |
-| `beanies_offscreen_to_intensestatic` | 1 |  |
-| `butch_right` | 1 |  |
-| `steven_savescum_4alt2` | 1 |  |
-| `beanies_intensestatic_to_offscreen` | 1 |  |
-| `melee_cat_spit` | 1 |  |
-| `house_kitten_box` | 1 |  |
-| `melee_attack_rat` | 1 |  |
-| `tink_left` | 1 |  |
-| `get_random_furniture_piece` | 1 |  |
 | `butch_left_to_offscreen` | 1 |  |
-| `steven_offscreen_to_center` | 1 |  |
+| `butch_left_to_right` | 1 |  |
+| `butch_offscreen_to_left` | 1 |  |
+| `butch_offscreen_to_right` | 1 |  |
+| `butch_pyro` | 1 |  |
+| `butch_right` | 1 |  |
+| `butch_right_to_left` | 1 |  |
+| `butch_right_to_offscreen` | 1 |  |
+| `butch_tina1` | 1 |  |
+| `butch_tips_backstab` | 1 |  |
+| `butch_tips_charisma` | 1 |  |
+| `butch_tips_combat` | 1 |  |
+| `butch_tips_disorders` | 1 |  |
+| `butch_tips_drafting` | 1 |  |
+| `butch_tips_elements` | 1 |  |
+| `butch_tips_hard` | 1 |  |
+| `butch_tips_headhome` | 1 |  |
+| `butch_tips_houseboss` | 1 |  |
+| `butch_tips_info` | 1 |  |
+| `butch_tips_intelligence` | 1 |  |
+| `butch_tips_intro` | 1 |  |
+| `butch_tips_items` | 1 |  |
+| `butch_tips_lesscats` | 1 |  |
+| `butch_tips_magicdamage` | 1 |  |
+| `butch_tips_passives` | 1 |  |
+| `butch_tips_reorient` | 1 |  |
+| `butch_tips_rewards` | 1 |  |
+| `butch_tips_tacticalview` | 1 |  |
+| `butch_tips_turnorder` | 1 |  |
+| `butch_tips_wellrounded` | 1 |  |
+| `ButchBox` | 1 |  |
+| `Butcher` | 2 |  |
+| `butcher_portrait` | 1 |  |
+| `butchercat` | 1 | `auto` |
+| `button` | 1 |  |
+| `Button_Controls_Gamepad_Hover` | 1 |  |
+| `Button_Controls_Keyboard_Hover` | 1 |  |
+| `Button_Controls_Rebind_Hover` | 1 |  |
+| `Button_Controls_ResetDefault_Hover` | 1 |  |
+| `Button_HouseBossResummon_a1h1_Click` | 1 |  |
+| `Button_HouseBossResummon_a1h1_Hover` | 1 |  |
+| `Button_HouseBossResummon_a1h2_Click` | 1 |  |
+| `Button_HouseBossResummon_a1h2_Hover` | 1 |  |
+| `Button_HouseBossResummon_a1h3_Click` | 1 |  |
+| `Button_HouseBossResummon_a1h3_Hover` | 1 |  |
+| `Button_HouseBossResummon_a2h1_Click` | 1 |  |
+| `Button_HouseBossResummon_a2h1_Hover` | 1 |  |
+| `Button_HouseBossResummon_a2h2_Click` | 1 |  |
+| `Button_HouseBossResummon_a2h2_Hover` | 1 |  |
+| `Button_HouseBossResummon_a2h3_Click` | 1 |  |
+| `Button_HouseBossResummon_a2h3_Hover` | 1 |  |
+| `Button_HouseBossResummon_a3h1_Click` | 1 |  |
+| `Button_HouseBossResummon_a3h1_Hover` | 1 |  |
+| `Button_HouseBossResummon_a3h2_Click` | 1 |  |
+| `Button_HouseBossResummon_a3h2_Hover` | 1 |  |
+| `Button_HouseBossResummon_a3h3_Click` | 1 |  |
+| `Button_HouseBossResummon_a3h3_Hover` | 1 |  |
+| `Button_LowerDifficulty_Click` | 1 |  |
+| `Button_LowerDifficulty_Hover` | 1 |  |
+| `button_nav` | 4 |  |
+| `Button_PauseMenu_GiveUp_Click` | 1 |  |
+| `Button_PauseMenu_GiveUp_Hover` | 1 |  |
+| `Button_PauseMenu_GiveUp_Press` | 1 |  |
+| `Button_PauseMenu_QuitToDesktop_Click` | 1 |  |
+| `Button_PauseMenu_QuitToDesktop_Hover` | 1 |  |
+| `Button_PauseMenu_QuitToDesktop_Press` | 1 |  |
+| `Button_PauseMenu_QuitToMenu_Click` | 1 |  |
+| `Button_PauseMenu_QuitToMenu_Hover` | 1 |  |
+| `Button_PauseMenu_QuitToMenu_Press` | 1 |  |
+| `Button_PauseMenu_Resume_Click` | 1 |  |
+| `Button_PauseMenu_Resume_Hover` | 1 |  |
+| `Button_PauseMenu_Resume_Press` | 1 |  |
+| `Button_PauseMenu_Settings_Click` | 1 |  |
+| `Button_PauseMenu_Settings_Hover` | 1 |  |
+| `Button_PauseMenu_Settings_Press` | 1 |  |
+| `Button_RaiseDifficulty_Click` | 1 |  |
+| `Button_RaiseDifficulty_Hover` | 1 |  |
+| `Button_Settings_Audio_Click` | 1 |  |
+| `Button_Settings_Audio_Hover` | 1 |  |
+| `Button_Settings_Audio_Press` | 1 |  |
+| `Button_Settings_Back_Click` | 1 |  |
+| `Button_Settings_Back_Hover` | 1 |  |
+| `Button_Settings_Back_Press` | 1 |  |
+| `Button_Settings_Controls_Click` | 1 |  |
+| `Button_Settings_Controls_Hover` | 1 |  |
+| `Button_Settings_Controls_Press` | 1 |  |
+| `Button_Settings_Game_Click` | 1 |  |
+| `Button_Settings_Game_Hover` | 1 |  |
+| `Button_Settings_Game_Press` | 1 |  |
+| `Button_Settings_Video_Click` | 1 |  |
+| `Button_Settings_Video_Hover` | 1 |  |
+| `Button_Settings_Video_Press` | 1 |  |
+| `buy1` | 1 |  |
+| `buy2` | 1 |  |
+| `buy3` | 1 |  |
+| `call_letter` | 1 |  |
+| `can_apply_to_anything` | 1 | `true` |
+| `can_be_backstabbed` | 10 | `false` |
+| `can_be_champion` | 5 | `false`, `true` |
+| `can_be_elite` | 1 | `false` |
+| `can_be_overkilled` | 6 | `false`, `true` |
+| `can_be_rare` | 1 | `false` |
+| `can_be_refreshed` | 1 | `false` |
+| `can_cast_while_dead` | 5 | `true` |
+| `can_collect_coins` | 7 | `false`, `true` |
+| `can_eat_food` | 5 | `false`, `true` |
+| `can_get_bonus` | 6 | `true` |
+| `can_grant_extra_turns` | 2 | `false` |
+| `can_move_zero` | 1 | `true` |
+| `can_multihit` | 8 | `false`, `true` |
+| `can_pay_over_multiple_turns` | 1 | `true` |
+| `can_run` | 2 | `false` |
+| `can_self_refresh` | 1 | `false` |
+| `can_still_use_attack` | 1 |  |
+| `can_still_use_attack_didntspell` | 1 |  |
+| `cancel_knockback` | 2 | `true` |
+| `cancel_movement` | 2 | `false` |
+| `cancelable` | 4 | `true` |
+| `cancreeper` | 1 | `auto` |
+| `cant_afford` | 3 |  |
+| `cant_afford_a` | 1 |  |
+| `cant_afford_b` | 1 |  |
+| `cant_afford_c` | 1 |  |
+| `cant_afford_d` | 1 |  |
+| `cant_afford_iceage` | 1 |  |
+| `cant_afford_jurassic` | 1 |  |
+| `cant_afford_moon` | 1 |  |
+| `cant_afford_theend` | 1 |  |
+| `cant_cast` | 7 | `1-X`, `2-X`, `3-X`, `5-X`, `X` |
+| `cant_equip_to_colorless` | 1 | `true` |
+| `cantrip` | 23 | `false`, `true` |
+| `cantrip_group` | 2 | `THC_CoinRoll`, `cavemomtoss`, `kaiju_roar`, `spewer_suck` |
+| `cap` | 1 |  |
+| `cap_distance_to_ally` | 1 |  |
+| `cap_distance_to_character` | 1 |  |
+| `cap_distance_to_enemy` | 1 |  |
+| `cap_total_distance_moved` | 1 |  |
+| `capture_as_cat` | 1 | `true` |
+| `CardboardBox_ItemReveal` | 1 |  |
+| `CastAgain` | 8 | `9+X` |
+| `CastAgainWithStatus` | 1 |  |
+| `Cat` | 1 |  |
+| `cat_choice` | 27 | `random` |
+| `Cat_Donated_To_NPC` | 1 |  |
+| `Cat_Ejected_From_Pipe` | 1 |  |
+| `cat_foley` | 1 |  |
+| `cat_gimmick` | 4 | `true` |
+| `cat_has_injury_count_min` | 1 |  |
+| `cat_has_item_equipped` | 2 | `CryogenicTimeChamber_Empty`, `CryogenicTimeChamber_Full`, `FaceCovering`, `GuillotinasHead`, `JarOfRadiatedBlood` |
+| `cat_has_item_slot_equipped` | 1 | `weapon` |
+| `cat_has_parasite` | 1 | `true` |
+| `Cat_Impact_Floor_Hard` | 1 |  |
+| `Cat_Impact_Floor_Soft` | 1 |  |
+| `Cat_Impact_Furniture_Hard` | 1 |  |
+| `Cat_Impact_Furniture_Soft` | 1 |  |
+| `Cat_Impact_Lawn_Hard` | 1 |  |
+| `Cat_Impact_Lawn_Soft` | 1 |  |
+| `Cat_Jump_From_Floor` | 1 |  |
+| `Cat_Jump_From_Furniture` | 1 |  |
+| `cat_lowquality` | 1 | `true` |
+| `Cat_PickedUp` | 1 |  |
+| `Cat_Placed_In_Box` | 1 |  |
+| `Cat_Placed_In_Pipe` | 1 |  |
+| `Cat_Shadowstep_anime` | 1 |  |
+| `cat_speak` | 11 | `true` |
+| `cat_speaks` | 22 | `true` |
+| `cat_swears` | 8 | `true` |
+| `Cat_Trashed` | 1 |  |
+| `catch` | 1 |  |
+| `catdata` | 9 | `Beaver`, `Bigfoot`, `Bunny`, `Dog`, `Edmund` |
+| `catdata_ignore_skills` | 1 | `true` |
+| `category` | 2 |  |
+| `Catepillar` | 1 |  |
+| `Catnip` | 2 |  |
+| `CatnipBig` | 1 |  |
+| `CatSelector_Left_Click` | 1 |  |
+| `CatSelector_Left_Hover` | 1 |  |
+| `CatSelector_Right_Click` | 1 |  |
+| `CatSelector_Right_Hover` | 1 |  |
+| `CatVolume_Button_Left_Click` | 1 |  |
+| `CatVolume_Button_Left_Hover` | 1 |  |
+| `CatVolume_Button_Left_Press` | 1 |  |
+| `CatVolume_Button_Right_Click` | 1 |  |
+| `CatVolume_Button_Right_Hover` | 1 |  |
+| `CatVolume_Button_Right_Press` | 1 |  |
+| `CaveBaby` | 1 |  |
+| `cavecatfamily` | 1 | `auto` |
+| `CaveMan` | 1 |  |
+| `CaveManSpear` | 1 |  |
+| `caves` | 3 | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` |
+| `CavesUnlocked` | 1 |  |
+| `CaveWoman` | 1 |  |
+| `CaveWomanHasCat` | 1 |  |
+| `cerberubs` | 1 | `auto` |
+| `CerberubsJumpBlind` | 1 |  |
+| `CerberubsJumpNormal` | 1 |  |
+| `cha` | 39 | `+1`, `aux` |
+| `chain` | 3 | `AcidSplash`, `CaveSplash`, `FireFullSmall`, `Kingblood2`, `MeatCaveSplash` |
+| `chain_ability` | 6 | `BoyDinoDash`, `ChaosStacyAttackChain`, `ControlPlantsPartTwo`, `ControlPlantsPartTwo2`, `ControlWaterPartTwo` |
+| `chain_chance` | 1 |  |
+| `ChakramProjectileCatch` | 1 |  |
+| `ChakramProjectileSpin` | 1 |  |
+| `challenge_to_game` | 1 |  |
+| `champ_budget` | 1 |  |
+| `champ_chance_mini` | 1 |  |
+| `champion` | 1 | `true` |
+| `chance` | 32 |  |
+| `chance_per_damage` | 2 |  |
+| `chance_to_break` | 2 |  |
+| `change` | 1 |  |
+| `channel` | 12 | `actchooser`, `cat_foley`, `johnny_idle`, `no_falloff`, `non_spatial` |
+| `chaos_ending` | 1 |  |
+| `Chaos_Growl` | 1 |  |
+| `ChaosAntennaAttached` | 1 |  |
+| `chapter` | 2 | `alley` |
+| `chapter_common` | 1 |  |
+| `chapter_cutscene` | 1 |  |
+| `chapter_item_pool` | 19 | `alleyitems`, `boneyarditems`, `bunkeritems`, `cavesitems`, `coreitems` |
+| `chapter_rare` | 1 |  |
+| `chapters` | 1 |  |
+| `character_filter` | 1 |  |
+| `character_sphere_offset` | 1 |  |
+| `charge` | 6 | `1-clamp(spd,0,1)` |
+| `Charging` | 1 |  |
+| `charisma` | 20 |  |
+| `charm` | 6 |  |
+| `charm_past_alt` | 1 |  |
+| `CharmedDip` | 1 |  |
+| `CharmedFloater` | 1 |  |
+| `CharmedPile` | 1 |  |
+| `check_has_status` | 1 | `FinalBossHitCountdownBoris` |
+| `check_in_form` | 2 | `Boris`, `Default` |
+| `Cherub` | 1 |  |
+| `ChestButton_alley_Click` | 1 |  |
+| `ChestButton_alley_Hover` | 1 |  |
+| `ChestButton_bunker_Click` | 1 |  |
+| `ChestButton_caves_Click` | 1 |  |
+| `ChestButton_core_Click` | 1 |  |
+| `ChestButton_crater_Click` | 1 |  |
+| `ChestButton_desert_Click` | 1 |  |
+| `ChestButton_future_Click` | 1 |  |
+| `ChestButton_graves_Click` | 1 |  |
+| `ChestButton_iceage_Click` | 1 |  |
+| `ChestButton_junkyard_Click` | 1 |  |
+| `ChestButton_jurassic_Click` | 1 |  |
+| `ChestButton_lab_Click` | 1 |  |
+| `ChestButton_meatworld_Click` | 1 |  |
+| `ChestButton_moon_Click` | 1 |  |
+| `ChestButton_sewers_Click` | 1 |  |
+| `ChestButton_theend_Click` | 1 |  |
+| `ChestButton_theinfinite_Click` | 1 |  |
+| `ChestButton_therift_Click` | 1 |  |
+| `ChestButton_tutorial_Click` | 1 |  |
+| `Chicken` | 3 |  |
+| `choose_cat_with_highest_stat` | 1 | `int` |
+| `choose_cat_with_item` | 1 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `PutridLeech`, `ReceiverAntenna`, `ThrobbingGristle` |
+| `choose_cat_with_item_slot_equipped` | 1 | `weapon` |
+| `choose_cat_with_min_health` | 2 |  |
+| `choose_cat_with_most_injuries` | 1 | `true` |
+| `choose_cat_with_parasite` | 1 | `true` |
+| `choose_one` | 1 |  |
+| `choosecats` | 1 |  |
+| `circular_variance` | 1 |  |
+| `clamp_pattern` | 2 | `true` |
+| `class` | 43 | `AOESpellAbility`, `BounceDashAbility`, `Butcher`, `CloneAbility`, `Colorless` |
+| `class_anis` | 1 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` |
+| `class_unlock_butcher` | 1 |  |
+| `class_unlock_druid` | 1 |  |
+| `class_unlock_jester` | 1 |  |
+| `class_unlock_medic` | 1 |  |
+| `class_unlock_monk` | 1 |  |
+| `class_unlock_necromancer` | 1 |  |
+| `class_unlock_psychic` | 1 |  |
+| `class_unlock_thief` | 1 |  |
+| `class_unlock_tinkerer` | 1 |  |
+| `classes` | 1 |  |
+| `claws` | 1 |  |
+| `cleanse_on_apply` | 1 | `false` |
 | `clear_token` | 1 | `do_not_end_turn`, `map_equip_items2`, `melee_cat_spit_ignore`, `melee_move2`, `take_cats_inside` |
-| `reset_turn` | 1 | `act`, `both` |
-| `steven_savescum_100` | 1 |  |
-| `frank_max5` | 1 |  |
-| `frank_max3` | 1 |  |
-| `house_upgrade_basement` | 1 |  |
-| `frank_tips_10` | 1 |  |
-| `frank_tips_3` | 1 |  |
-| `house_upgrade_basement5` | 1 |  |
-| `frank_max2` | 1 |  |
-| `frank_tips_1` | 1 |  |
-| `house_upgrade_basement4` | 1 |  |
-| `frank_tips_2` | 1 |  |
-| `house_upgrade_basement2` | 1 |  |
+| `clericcat` | 1 | `auto` |
+| `climb` | 1 |  |
+| `clipname` | 1 | `poopmain` |
+| `clone_items` | 8 | `false`, `true` |
+| `clone_referenced_catdata` | 1 | `true` |
+| `cloned_ability` | 1 | `attack` |
+| `Close` | 1 |  |
+| `CloseButton_Click` | 1 |  |
+| `CloseConvert` | 1 |  |
+| `closerup` | 1 |  |
+| `closeup` | 3 |  |
+| `Cockroach` | 1 |  |
+| `Cockroach_Squish` | 1 |  |
+| `Coin` | 1 |  |
+| `Coin10` | 1 |  |
+| `Coin2` | 1 |  |
+| `Coin3` | 1 |  |
+| `Coin4` | 1 |  |
+| `coins` | 5 |  |
+| `coins_bonus` | 1 |  |
+| `coins_multiplier` | 1 |  |
+| `collected_new_items` | 1 |  |
+| `collected_nothing` | 1 |  |
+| `color` | 9 | `black`, `gray`, `white` |
+| `Colorless` | 2 |  |
+| `Colorless_Tutorial` | 1 |  |
+| `Combat_AttackButton_Click` | 1 |  |
+| `Combat_AttackButton_Hover` | 1 |  |
+| `combat_background` | 1 | `AlleyBGTest`, `BoneYardBG`, `BunkerBG`, `CavesBG`, `CoreBG` |
+| `Combat_ButtonsAppear` | 1 |  |
+| `Combat_ButtonsHide` | 1 |  |
+| `Combat_EndTurnButton_Click` | 1 |  |
+| `Combat_EndTurnButton_Hover` | 1 |  |
+| `Combat_ExamineButton_Click` | 1 |  |
+| `Combat_ExamineButton_Hover` | 1 |  |
+| `Combat_ItemButton_Click` | 1 |  |
+| `Combat_ItemButton_Hover` | 1 |  |
+| `Combat_MoveButton_Click` | 1 |  |
+| `Combat_MoveButton_Hover` | 1 |  |
+| `Combat_PassiveButton_Click` | 1 |  |
+| `Combat_PassiveButton_Hover` | 1 |  |
+| `Combat_SpellButton_Click` | 1 |  |
+| `Combat_SpellButton_Hover` | 1 |  |
+| `combat_ui_background` | 1 | `CoreUI`, `DesertUI`, `LabUI`, `MoonUI`, `UI_Background` |
+| `CombatMessage_Ambushed` | 1 |  |
+| `CombatMessage_Ambushing` | 1 |  |
+| `CombatMessage_BattleStart` | 1 |  |
+| `CombatMessage_Defeat` | 1 |  |
+| `CombatMessage_Exhaustion` | 1 |  |
+| `CombatMessage_RoundStart` | 1 |  |
+| `CombatMessage_Victory` | 1 |  |
+| `CombatMessage_VictoryWithRewards` | 1 |  |
+| `combo` | 2 |  |
+| `Comfort` | 2 |  |
+| `comfort` | 1 |  |
+| `commercial` | 1 |  |
+| `commercial_intro` | 1 |  |
+| `common_item` | 1 |  |
+| `communicate` | 1 |  |
+| `complete_act_difficulty` | 1 |  |
+| `complete_adventure` | 1 | `anywhere` |
+| `complete_chapter` | 2 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
+| `complete_chapter_with_class` | 1 |  |
+| `complete_chapters` | 1 |  |
+| `complete_checklist_with_class` | 1 | `Butcher`, `Colorless`, `Druid`, `Fighter`, `Hunter` |
+| `complete_checkmarks` | 1 |  |
+| `complete_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` |
+| `CompleteItemSet` | 1 |  |
+| `CompletionCheckmarkTooltip` | 1 |  |
+| `complicated_abilities` | 1 |  |
+| `complicated_passives` | 1 |  |
+| `con` | 45 | `aux` |
+| `concentrate` | 1 |  |
+| `concheck` | 1 |  |
+| `consider_aggro_target_enemy` | 1 | `true` |
+| `consider_all_layers` | 2 | `true` |
+| `consider_aoe` | 1 | `false`, `true` |
+| `consider_overkill` | 1 | `false`, `true` |
+| `consider_secondary_damage` | 1 | `false`, `true` |
+| `consider_spells` | 4 | `false` |
+| `consider_total_damage` | 1 | `false`, `true` |
+| `consider_trample` | 4 | `false`, `true` |
+| `considered_forms` | 1 |  |
+| `constant` | 2 | `pitch`, `volume` |
+| `constitution` | 20 |  |
+| `consumable` | 4 | `true` |
+| `consumable_chance` | 1 |  |
+| `consumable_common` | 2 |  |
+| `consumable_rare` | 2 |  |
+| `consumable_uncommon` | 2 |  |
+| `consumable_very_rare` | 2 |  |
+| `consumables` | 1 |  |
+| `consumables_consumable_common` | 1 |  |
+| `consumables_consumable_rare` | 1 |  |
+| `consumables_consumable_uncommon` | 1 |  |
+| `consumables_consumable_very_rare` | 1 |  |
+| `consume` | 1 | `true` |
+| `contact_requires_adjacency` | 2 | `false` |
+| `continual_emission` | 1 | `true` |
+| `ControlRebind_Failed` | 1 |  |
+| `ControlRebind_RemovedBinding` | 1 |  |
+| `ControlRebind_Success` | 1 |  |
+| `cooldown` | 1 |  |
+| `copy` | 1 |  |
+| `copy_results` | 3 | `examine`, `lever`, `open`, `red`, `smash` |
+| `core` | 3 | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` |
+| `CoreObeliskUnlocked` | 1 |  |
+| `CoreUnlocked` | 1 |  |
+| `corpse_health` | 19 | `indestructible` |
+| `corpse_priority` | 1 |  |
+| `cost` | 35 |  |
+| `cough` | 1 |  |
+| `count` | 27 |  |
+| `count_nomove_in_eval` | 1 | `false` |
+| `count_overkill` | 1 | `true` |
+| `count_self` | 1 | `true` |
+| `count_shield` | 1 | `true` |
+| `counter` | 1 |  |
+| `counter_maximum` | 5 |  |
+| `counter_minimum` | 7 |  |
+| `counter_range` | 5 |  |
+| `crack_open` | 1 |  |
+| `craft_ability` | 3 | `TinkererCraft` |
+| `crater` | 2 | `AREA_NAME_CRATER`, `mapflag_CraterUnlocked` |
+| `CraterUnlocked` | 1 |  |
+| `create_temp_ability` | 1 | `true` |
+| `crit_multiplier_bonus` | 1 |  |
+| `cross` | 1 |  |
+| `crossfade_speed` | 1 |  |
+| `Cultist` | 1 |  |
+| `current_chapter_common` | 1 | `auto` |
+| `current_chapter_rare` | 1 | `auto` |
+| `current_chapter_uncommon` | 1 | `auto` |
+| `current_chapter_very_rare` | 1 | `auto` |
+| `CurrentTurnIndicator_GoToAlly` | 1 |  |
+| `CurrentTurnIndicator_GoToEnemy` | 1 |  |
+| `CurrentWeaponAddPoison` | 1 |  |
+| `cursed` | 8 | `true` |
+| `custom_aoe` | 18 |  |
+| `custom_aoe_mirror` | 1 |  |
+| `custom_aoe_util` | 4 |  |
+| `custom_aoe_util_mirror` | 1 |  |
+| `custom_range` | 5 |  |
+| `cut_wires` | 1 |  |
+| `Cutscene_AdventureEmbark` | 1 |  |
+| `cWaggle` | 1 |  |
+| `cWaggle2x2` | 1 |  |
+| `cWaggle3x3` | 1 |  |
+| `cycle_start` | 2 |  |
+| `damage` | 75 | `(15+bonus_melee_damage)*.5`, `(4+bonus_ranged_damage+1)/2`, `(5+bonus_melee_ability_damage)*.5`, `(5+bonus_melee_ability_damage)/2`, `(5+bonus_melee_damage+1)/2` |
+| `damage_1` | 1 |  |
+| `damage_ally` | 1 |  |
+| `damage_ally_corpse` | 1 |  |
+| `damage_cant_be_zero` | 1 | `true` |
+| `damage_collided_only` | 1 | `true` |
+| `damage_enemy` | 1 |  |
+| `damage_enemy_corpse` | 1 |  |
+| `damage_full` | 1 |  |
+| `damage_half` | 1 |  |
+| `damage_instance` | 34 |  |
+| `damage_multiplier` | 1 |  |
+| `damage_self` | 1 |  |
+| `damage_threshold` | 1 |  |
+| `damage_tiles` | 4 | `all` |
+| `DamageBlocked` | 1 |  |
+| `DamageBlocked_CanCreeper` | 1 |  |
+| `DamageCatCorpse` | 1 |  |
+| `DamageCorpse` | 1 |  |
+| `Damaged` | 1 |  |
+| `DamageDivineShield` | 1 |  |
+| `DamageHealthHigh` | 1 |  |
+| `DamageHealthHighCrit` | 1 |  |
+| `DamageHealthLow` | 1 |  |
+| `DamageHealthLowCrit` | 1 |  |
+| `DamageHealthMed` | 1 |  |
+| `DamageHealthMedCrit` | 1 |  |
+| `DamageMiss` | 1 |  |
+| `DamageShield` | 1 |  |
+| `dampening` | 2 |  |
+| `danger_avoidance` | 1 |  |
+| `DashFury` | 2 |  |
+| `DashRandomly` | 1 |  |
+| `data` | 1 |  |
+| `dead_facecenter` | 1 |  |
+| `dead_faceleft` | 1 |  |
+| `DeadHummingbird` | 1 |  |
+| `Death` | 219 |  |
+| `DEATH_PARAMS` | 220 |  |
+| `DeathExplode` | 1 |  |
+| `DeathPoof1` | 1 |  |
+| `DeathPoof2` | 1 |  |
+| `DeathPoof3` | 1 |  |
+| `DeathPoof4` | 1 |  |
+| `DeathPoof5` | 1 |  |
+| `DeathPoof_PlayerCat` | 1 |  |
+| `deathpoof_size` | 2 |  |
+| `deathsound` | 1 | `Injury_Bleed`, `Injury_BrokenLeg`, `Injury_BrokenPaw`, `Injury_BrokenRib`, `Injury_Burn` |
+| `Deathx` | 1 |  |
+| `debris` | 1 | `CaveDebris`, `Debris`, `Debris10`, `Debris11`, `Debris12` |
+| `debuff_ally` | 1 |  |
+| `debuff_enemy` | 1 |  |
+| `debuff_self` | 1 |  |
+| `debug` | 1 | `Unknown` |
+| `DecayTime` | 1 |  |
+| `decision_weights` | 21 | `always_cast`, `always_cast_careless`, `angry`, `blind`, `careless` |
+| `Default` | 9 | `release` |
+| `default` | 7 | `bite1` |
+| `Default_Ceiling` | 1 |  |
+| `default_form` | 1 | `Normal` |
+| `default_frame` | 1 |  |
+| `Default_Ground` | 1 |  |
+| `defense` | 2 |  |
+| `deferred` | 1 | `true` |
+| `degrade_after_adventure` | 1 | `false` |
+| `delay_enable_tooltips` | 1 | `true` |
+| `delay_frames` | 2 |  |
+| `delay_range` | 1 |  |
+| `delayed_trigger` | 8 | `false`, `true` |
+| `DelayedWind` | 1 |  |
+| `DelayedWindTrail` | 1 |  |
+| `DemonicGlyph_Bite` | 1 |  |
+| `DemonicGlyph_Bounce` | 1 |  |
+| `DemonicGlyph_Fire` | 1 |  |
+| `DemonicGlyph_Movement` | 1 |  |
+| `DemonicGlyph_Summon` | 1 |  |
+| `Depart_Sign_Click` | 1 |  |
+| `Depart_Sign_Hover` | 1 |  |
+| `Depart_Sign_Move` | 1 |  |
+| `depth_bias` | 1 |  |
+| `desc_multiclass` | 1 | `PASSIVE_BARBED2_MULTICLASS_DESC`, `PASSIVE_BARBED_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK2_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK_MULTICLASS_DESC`, `PASSIVE_HARPOONER2_MULTICLASS_DESC` |
+| `description` | 2 | `CAT_CLASS_BUTCHER_DESC`, `CAT_CLASS_COLORLESS_DESC`, `CAT_CLASS_DRUID_DESC`, `CAT_CLASS_FIGHTER_DESC`, `CAT_CLASS_HUNTER_DESC` |
+| `desert` | 2 | `AREA_NAME_DESERT`, `mapflag_DesertUnlocked` |
+| `desert_cutscene` | 1 |  |
+| `DesireMech` | 1 |  |
+| `destinations` | 1 |  |
+| `destroy` | 2 |  |
+| `devious` | 1 |  |
+| `devious2` | 1 |  |
+| `dex` | 34 | `aux` |
+| `dexcheck` | 1 |  |
+| `dexterity` | 20 |  |
+| `dialog` | 12 | `NPC_BEANIES_ALSO_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_10`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2`, `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_3` |
+| `dialog_and_autopass` | 6 | ``, `NPC_BEANIES_INTRO_15`, `NPC_JACK_CANT_AFFORD_1`, `NPC_JACK_PURCHASE_ITEM_1`, `NPC_JACK_UNPROMPTED_1` |
+| `dice_abilities` | 1 |  |
+| `dice_size` | 1 |  |
+| `different_from_last_x_cats` | 1 |  |
+| `dig` | 1 |  |
+| `dimensionx` | 3 | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` |
+| `DimensionXUnlocked` | 2 |  |
+| `dinocouple` | 1 | `auto` |
+| `DisableTrample` | 3 |  |
+| `disallow_cost_modification` | 7 | `true` |
+| `disallow_items` | 1 | `Nuke`, `all` |
+| `disarm` | 1 |  |
+| `disease` | 2 | `BirdFlu`, `Cancer`, `CommonCold`, `Covid`, `Ebola` |
+| `disperse_main_turns` | 5 | `false`, `true` |
+| `dispersed_bonus_turns` | 12 |  |
+| `dispersed_bonus_turns_before_cats` | 4 | `false`, `true` |
+| `dispersed_bonus_turns_consider_initiative` | 4 | `false` |
+| `dispersed_bonusturn_pattern` | 2 |  |
+| `displace` | 1 | `true` |
+| `distance` | 10 |  |
+| `distance_scale` | 12 |  |
+| `distance_sort_targets` | 4 | `true` |
+| `distance_to_aggro_target` | 1 |  |
+| `distance_to_ally` | 1 |  |
+| `distance_to_center` | 1 |  |
+| `distance_to_character` | 1 |  |
+| `distance_to_corpse` | 1 |  |
+| `distance_to_enemy` | 1 |  |
+| `distance_to_water` | 1 |  |
+| `distinctly_female` | 41 | `true` |
+| `distinctly_male` | 103 | `true` |
+| `distraught` | 1 |  |
+| `dive` | 1 |  |
+| `divine_shield` | 17 |  |
+| `dj_segment` | 1 |  |
+| `do` | 15 | `**BombRatTurtle`, `**G3Shake`, `**RockySlam`, `**SimonFlopper_WiggleChance`, `**SimonFlopper_WiggleFake` |
+| `do_all` | 10 |  |
+| `do_all_shuffle` | 2 |  |
+| `do_best` | 2 |  |
+| `do_best_multiple` | 1 |  |
+| `do_doppler` | 12 | `false`, `true` |
+| `do_falloff` | 13 | `false`, `true` |
+| `do_not_end_turn` | 1 |  |
+| `do_not_move_on_top` | 1 | `true` |
+| `do_nothing` | 3 |  |
+| `do_one` | 1 |  |
+| `do_priority` | 10 |  |
+| `do_priority_alternating` | 1 |  |
+| `do_random` | 7 |  |
+| `do_random_sequence` | 10 |  |
+| `do_sequence` | 3 | `butch_tips_intelligence`, `forward_to_tips`, `tink_tips_comfort` |
+| `do_sidequest_sequence` | 1 | `beaniesquest_complete`, `beaniesquest_fail`, `beaniesquest_intro` |
+| `do_strict` | 4 |  |
+| `donate` | 1 |  |
+| `donate_10` | 1 |  |
+| `donate_15` | 1 |  |
+| `donate_20` | 1 |  |
+| `donate_5` | 1 |  |
+| `done_spitting_fail_ally` | 1 |  |
+| `done_spitting_fail_miss` | 1 |  |
+| `done_spitting_fail_rat` | 1 |  |
+| `done_spitting_success` | 1 |  |
+| `dont_destroy_on_0` | 3 | `true` |
+| `dont_orient_aoe` | 5 | `true` |
+| `double` | 1 |  |
+| `Dove` | 1 |  |
+| `Down` | 3 |  |
+| `Drag` | 1 |  |
+| `DrawerClose_Furniture` | 1 |  |
+| `DrawerClose_Map` | 1 |  |
+| `DrawerClose_Stats` | 1 |  |
+| `DrawerClose_Storage` | 1 |  |
+| `DrawerClose_Store` | 1 |  |
+| `DrawerMoveTo_Storage` | 1 |  |
+| `DrawerMoveTo_Trash` | 1 |  |
+| `DrawerOpen_Furniture` | 1 |  |
+| `DrawerOpen_Map` | 1 |  |
+| `DrawerOpen_Stats` | 1 |  |
+| `DrawerOpen_Storage` | 1 |  |
+| `DrawerOpen_Store` | 1 |  |
+| `dreamworks` | 1 |  |
+| `dreamworks2` | 1 |  |
+| `drink` | 3 |  |
+| `drmangler` | 1 | `auto` |
+| `Druid` | 2 |  |
+| `druid_portrait` | 1 |  |
+| `druidcat` | 1 | `auto` |
+| `Drunker` | 1 |  |
+| `DualSword` | 1 |  |
+| `DualSword_Primed` | 1 |  |
+| `Dumb` | 1 |  |
+| `durability` | 11 |  |
+| `durability_loss` | 2 |  |
+| `Eagle` | 1 |  |
+| `ear1` | 5 |  |
+| `ear2` | 3 |  |
+| `ear_rotation` | 1 |  |
+| `early_spawn` | 1 | `true` |
+| `ears` | 8 |  |
+| `ears_down` | 1 |  |
+| `ears_down_overshoot` | 1 |  |
+| `ears_left` | 1 |  |
+| `ears_right` | 1 |  |
+| `ears_up` | 1 |  |
+| `ears_up_overshoot` | 1 |  |
+| `Earth` | 1 |  |
+| `easy` | 21 |  |
+| `eat` | 7 |  |
+| `eat_damage` | 1 |  |
+| `eat_meat` | 1 |  |
+| `EatBlessing` | 1 |  |
+| `EatCatnip` | 1 |  |
+| `EatFood` | 1 |  |
+| `EatScrap` | 1 |  |
+| `editor` | 2 |  |
+| `eject_ability` | 1 | `MechSuitEject` |
+| `Electric` | 1 |  |
+| `element` | 21 | `Electric`, `Fire`, `Gravity`, `Greater_Water`, `Holy` |
+| `elements` | 44 |  |
+| `elite` | 1 | `true` |
+| `elite_budget` | 1 |  |
+| `elite_buffs` | 1 |  |
+| `elite_chance_mini` | 1 |  |
+| `else` | 8 |  |
+| `emit_amount` | 2 |  |
+| `emit_box` | 2 |  |
+| `emit_direction` | 2 |  |
+| `emit_radius` | 1 |  |
+| `emit_rate` | 2 |  |
+| `emit_shell` | 1 |  |
+| `emit_spread` | 2 |  |
+| `emit_timespread` | 1 |  |
+| `emit_timespread_curve` | 1 | `ease_out` |
+| `emitshape_scale` | 1 |  |
+| `Empty` | 1 |  |
+| `empty` | 1 |  |
+| `empty_armor_scaled_stats` | 1 |  |
+| `empty_self_damage` | 2 |  |
+| `enabled_formula` | 1 | `1-X`, `X` |
+| `end_of_round` | 1 | `true` |
+| `end_on_collision` | 1 | `true` |
+| `end_turn_on_formswitch` | 7 | `false`, `true` |
+| `EndDay_Sign_Click` | 1 |  |
+| `EndDay_Sign_Hover` | 1 |  |
+| `ending` | 1 |  |
+| `ending_cutscene` | 1 | `hitler_end` |
+| `ending_cutscene2` | 1 | `credits_3` |
+| `endoftime` | 3 | `AREA_NAME_ENDOFTIME`, `endoftime`, `mapflag_EndOfTimeUnlocked` |
+| `EndOfTimeUnlocked` | 2 |  |
+| `enemies_only` | 9 | `false`, `true` |
+| `enemy_damage` | 1 | `littlecheer` |
+| `enemy_dead` | 1 | `bigcheer` |
+| `enemy_priority` | 1 |  |
+| `enemy_type` | 2 | `any`, `cat` |
+| `enter` | 5 |  |
+| `enter_ability` | 1 | `EnterMech` |
+| `enter_crater` | 1 |  |
+| `eq` | 2 |  |
+| `equip_sound` | 1 | `SE_CatWeaponPoke_Chainsaw` |
+| `equipment` | 5 |  |
+| `EquipmentBrokeInCombat` | 1 |  |
+| `EquippedButton_Collar_Click` | 1 |  |
+| `EquippedButton_Collar_Hover` | 1 |  |
+| `EquippedButton_face_Click` | 1 |  |
+| `EquippedButton_face_Hover` | 1 |  |
+| `EquippedButton_head_Click` | 1 |  |
+| `EquippedButton_head_Hover` | 1 |  |
+| `EquippedButton_neck_Click` | 1 |  |
+| `EquippedButton_neck_Hover` | 1 |  |
+| `EquippedButton_trinket_Click` | 1 |  |
+| `EquippedButton_trinket_Hover` | 1 |  |
+| `EquippedButton_weapon_Click` | 1 |  |
+| `EquippedButton_weapon_Hover` | 1 |  |
+| `Escape` | 1 |  |
+| `euphoric` | 1 |  |
+| `even_if_blocked` | 1 | `true` |
+| `even_if_cant_reach` | 1 | `true` |
+| `even_if_dead` | 11 | `true` |
+| `even_if_stunned` | 12 | `true` |
+| `even_of_stunned` | 1 | `true` |
+| `even_on_0_damage` | 1 | `true` |
+| `even_on_0_damage_if_knockback` | 1 | `true` |
+| `evenly_dispersed_bonus_turns` | 6 |  |
+| `event` | 6 | `Blessing`, `Death`, `Tragedy`, `alley/eatinrats_event.ogg`, `boneyard/boneyard_event.ogg` |
+| `Event_ChoiceButton_Click` | 1 |  |
+| `Event_ChoiceButton_Hover` | 1 |  |
+| `event_clip` | 27 | `NonWheelEvent` |
+| `event_difficulty` | 1 |  |
+| `Event_ExitButton_Click` | 1 |  |
+| `Event_ExitButton_Hover` | 1 |  |
+| `event_piece_frame` | 1 | `alley`, `bunker`, `caves`, `core`, `crater` |
+| `EventOutcome_Bad` | 1 |  |
+| `EventOutcome_Bad_Crit` | 1 |  |
+| `EventOutcome_Good` | 1 |  |
+| `EventOutcome_Good_Crit` | 1 |  |
+| `Evolution` | 1 |  |
+| `examine` | 7 |  |
+| `Example` | 2 |  |
+| `except_tiny` | 1 | `true` |
+| `exclude` | 2 | `SpellDamageUp`, `fire`, `water` |
+| `exclude_basicattack` | 1 | `true` |
+| `exclude_characters_tagged` | 1 | `siren` |
+| `exclude_from_hallucinate` | 5 | `true` |
+| `exclude_prefix` | 1 | `Twister` |
+| `exclude_self` | 1 | `false` |
+| `exit0` | 15 |  |
+| `exit1` | 3 |  |
+| `exit_ability` | 2 | `DybbukReturn` |
+| `exit_animations` | 1 |  |
+| `exit_desert` | 1 |  |
+| `exit_lab` | 1 |  |
+| `expires_on_appliers_turn` | 1 | `true` |
+| `expires_on_begin_turn` | 11 | `true` |
+| `expires_on_end_turn` | 10 | `true` |
+| `expires_on_move` | 1 | `true` |
+| `Explody` | 1 |  |
+| `Explosive` | 1 | `MegaGuppy_TransformExplosive` |
+| `extra_bound_planes` | 1 |  |
+| `extra_coins_per_stack` | 1 |  |
+| `Extra_CrowdGasp` | 1 |  |
+| `Extra_CrowdMinorGasp` | 1 |  |
+| `Extra_EventBadCrit` | 1 |  |
+| `extra_events` | 3 | `-`, `CardboardBox_ItemReveal`, `Cat_Shadowstep_anime`, `ChakramProjectileSpin`, `Combat_ButtonsHide` |
+| `eye1` | 5 |  |
+| `eye2` | 4 |  |
+| `eyebrow1` | 2 |  |
+| `eyebrow2` | 1 |  |
+| `eyebrow_rotation` | 1 |  |
+| `eyebrow_up` | 1 |  |
+| `eyebrows` | 6 |  |
+| `eyes` | 10 | `close`, `closed`, `open` |
+| `eyes_closed` | 1 |  |
+| `face` | 6 | `AtomicMark`, `ButcherMask`, `ButcherMask_Terminator`, `HuntersPatch`, `HuntersPatch_Terminator` |
+| `face_aggro_target` | 1 |  |
+| `face_camera` | 3 | `true` |
+| `face_center` | 1 |  |
+| `face_closest_enemy` | 1 |  |
+| `face_down_wince` | 1 |  |
+| `face_far_down` | 1 |  |
+| `face_far_down_right` | 1 |  |
+| `face_far_left` | 1 |  |
+| `face_far_left_eyes_closed` | 1 |  |
+| `face_far_right` | 1 |  |
+| `face_far_up` | 1 |  |
+| `face_far_up_left` | 1 |  |
+| `face_far_up_right` | 1 |  |
+| `face_left_wince` | 1 |  |
+| `face_moving_direction` | 2 | `false`, `true` |
+| `face_offset` | 1 |  |
+| `face_towards_after` | 1 | `true` |
+| `facecenter` | 1 |  |
+| `facecenter_back` | 1 |  |
+| `facecenter_eyes_closed` | 1 |  |
+| `facecenter_happy` | 1 |  |
+| `facecenter_happy_overshoot` | 1 |  |
+| `facecenter_hardblink` | 1 |  |
+| `facecenter_right` | 1 |  |
+| `facecenter_shock` | 1 |  |
+| `facecenter_suprise` | 1 |  |
+| `facecenter_worried` | 1 |  |
+| `facedown` | 1 |  |
+| `facedown_back` | 1 |  |
+| `facedown_eyes_closed` | 1 |  |
+| `facedown_eyes_closed_overshoot` | 1 |  |
+| `facedownleft` | 1 |  |
+| `facedownleft_eyes_closed` | 1 |  |
+| `facedownright` | 1 |  |
+| `facedownright_eyes_closed` | 1 |  |
+| `facedownright_focused` | 1 |  |
+| `facedownright_more` | 1 |  |
+| `faceleft` | 1 |  |
+| `faceleft_back` | 1 |  |
+| `faceleft_eyes_closed` | 1 |  |
+| `faceleft_mouth_open` | 1 |  |
+| `faceright` | 1 |  |
+| `faceright_back` | 1 |  |
+| `faceup` | 1 |  |
+| `faceup_back` | 1 |  |
+| `faceup_eyes_closed` | 1 |  |
+| `faceup_shock` | 1 |  |
+| `faceupleft` | 1 |  |
+| `faceupleft_eyes_closed` | 1 |  |
+| `faceupright` | 1 |  |
+| `faceupright_supermad` | 1 |  |
+| `faction` | 37 | `allies`, `auto`, `birds`, `cavemen`, `default` |
+| `fail_ability` | 1 | `CHuskDropFail`, `LennyStruggleFail`, `XXX` |
+| `fail_adventure` | 1 | `anywhere` |
+| `fail_item_quest` | 1 | `JarOfChaos`, `JarOfRadiatedBlood`, `JarOfRadiation`, `Nuke` |
+| `failable` | 1 | `true` |
+| `fallback` | 8 |  |
+| `fallback_advances_pattern` | 9 | `false`, `true` |
+| `fallback_spawn` | 1 |  |
+| `falloff` | 2 | `by`, `global`, `multiplied`, `setting`, `volume_falloff_range` |
+| `falloff_range` | 2 |  |
+| `favor` | 1 |  |
+| `female1` | 1 |  |
+| `female10` | 1 |  |
+| `female11` | 1 |  |
+| `female12` | 1 |  |
+| `female13` | 1 |  |
+| `female14` | 1 |  |
+| `female15` | 1 |  |
+| `female16` | 1 |  |
+| `female17` | 1 |  |
+| `female18` | 1 |  |
+| `female19` | 1 |  |
+| `female2` | 1 |  |
+| `female20` | 1 |  |
+| `female21` | 1 |  |
+| `female22` | 1 |  |
+| `female23` | 1 |  |
+| `female24` | 1 |  |
+| `female25` | 1 |  |
+| `female26` | 1 |  |
+| `female27` | 1 |  |
+| `female28` | 1 |  |
+| `female29` | 1 |  |
+| `female3` | 1 |  |
+| `female30` | 1 |  |
+| `female31` | 1 |  |
+| `female32` | 1 |  |
+| `female33` | 1 |  |
+| `female34` | 1 |  |
+| `female35` | 1 |  |
+| `female36` | 1 |  |
+| `female37` | 1 |  |
+| `female38` | 1 |  |
+| `female39` | 1 |  |
+| `female4` | 1 |  |
+| `female40` | 1 |  |
+| `female41` | 1 |  |
+| `female42` | 1 |  |
+| `female43` | 1 |  |
+| `female44` | 1 |  |
+| `female45` | 1 |  |
+| `female46` | 1 |  |
+| `female47` | 1 |  |
+| `female48` | 1 |  |
+| `female49` | 1 |  |
+| `female5` | 1 |  |
+| `female50` | 1 |  |
+| `female51` | 1 |  |
+| `female52` | 1 |  |
+| `female53` | 1 |  |
+| `female54` | 1 |  |
+| `female55` | 1 |  |
+| `female56` | 1 |  |
+| `female57` | 1 |  |
+| `female58` | 1 |  |
+| `female59` | 1 |  |
+| `female6` | 1 |  |
+| `female60` | 1 |  |
+| `female61` | 1 |  |
+| `female62` | 1 |  |
+| `female63` | 1 |  |
+| `female64` | 1 |  |
+| `female7` | 1 |  |
+| `female8` | 1 |  |
+| `female9` | 1 |  |
+| `fextra_events` | 1 | `SE_CatWalk` |
+| `fiddle` | 1 |  |
+| `fight` | 5 |  |
+| `FightBonusRewards` | 1 |  |
+| `Fighter` | 2 |  |
+| `fighter_portrait` | 1 |  |
+| `fightercat` | 1 | `auto` |
+| `FightPhase` | 1 |  |
+| `FightRisk` | 1 |  |
+| `fights` | 2 |  |
+| `fights_skipped` | 3 |  |
+| `files` | 232 | `AlienBeast_attack.wav`, `AlienBeast_dying.wav`, `AlienBeast_dying_land.wav`, `AlienBeast_eat.wav`, `AlienBeast_howl.wav` |
+| `fill_jar` | 1 |  |
+| `find` | 1 |  |
+| `find_another_way` | 2 |  |
+| `finish_adventure` | 1 |  |
+| `finish_quest` | 1 | `JarOfChaos` |
+| `Fire` | 2 |  |
+| `fire` | 2 |  |
+| `FireExtinguish` | 1 |  |
+| `Firefly` | 1 |  |
+| `FireFull` | 1 |  |
+| `first_fight_intro` | 1 |  |
+| `first_house_boss_tomorrow` | 1 |  |
+| `first_house_hint_retired` | 1 |  |
+| `first_turn` | 8 | `end_of_round`, `initiative`, `keep_turns`, `next_round`, `next_turn` |
+| `first_turn_is_main_turn` | 1 | `true` |
+| `fixed_chance` | 1 |  |
+| `flat_cast_bonus` | 1 |  |
+| `flat_chance` | 3 |  |
+| `flat_movement` | 1 | `true` |
+| `FloatingDebris` | 1 |  |
+| `Floor1_Large` | 1 |  |
+| `Floor1_Small` | 1 |  |
+| `Floor2_Large` | 1 |  |
+| `Floor2_Small` | 1 |  |
+| `Flop` | 1 |  |
+| `Flop2` | 1 |  |
+| `Flush` | 1 |  |
+| `flush_yourself` | 1 |  |
+| `FlushBubs` | 1 |  |
+| `FlushHost` | 1 |  |
+| `flushmaster` | 1 | `auto` |
+| `FlushNettle` | 1 |  |
+| `Fly` | 1 |  |
+| `flying` | 10 | `true` |
+| `focused` | 1 |  |
+| `folder` | 20 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
+| `follow` | 1 |  |
+| `follow_character_tag` | 1 | `zaratana` |
+| `Food` | 2 |  |
+| `food` | 1 |  |
+| `food_bonus` | 1 |  |
+| `food_multiplier` | 1 |  |
+| `FoodBig` | 1 |  |
+| `FoodMedium` | 1 |  |
+| `FoodMove` | 1 |  |
+| `FoodStorage` | 1 |  |
+| `force` | 2 |  |
+| `force_ai_target_as_spell` | 2 | `true` |
+| `force_current_cat_use_ability` | 1 | `neck_NukeBonus_remote` |
+| `force_display_name` | 2 | `true` |
+| `force_end` | 1 |  |
+| `force_frame` | 1 |  |
+| `force_no_hit_animation` | 1 | `true` |
+| `force_not_familiar` | 2 | `true` |
+| `force_start` | 1 |  |
+| `force_sticky` | 1 | `true` |
+| `forced_placement` | 1 | `true` |
+| `ForceTrample` | 1 |  |
+| `form` | 8 | `Angry`, `Big`, `Bishop`, `BlackHole`, `Bomb` |
+| `form_above` | 3 | `Default`, `Full`, `Standing` |
+| `form_below` | 3 | `Damaged`, `DesireMech`, `Standing2` |
+| `form_has` | 6 | `BellyFull`, `CaveWomanHasCat`, `FireFull`, `Full`, `Grappling` |
+| `form_hasnot` | 6 | `Big`, `CaveWoman`, `Close`, `Default`, `Empty` |
+| `form_in` | 1 | `Water` |
+| `form_offmap` | 4 | `Default_Ceiling`, `Insane_Ceiling`, `OffMap`, `SpawningPhase`, `Start_Ceiling` |
+| `form_onmap` | 4 | `Default`, `Default_Ground`, `FightPhase`, `Insane_Ground` |
+| `form_out` | 1 | `Out` |
+| `form_unwashed` | 1 | `Unwashed` |
+| `form_washed` | 1 | `Washed` |
+| `format` | 1 | `TEAMNAME_FORMAT` |
+| `format2` | 1 | `TEAMNAME_FORMAT2` |
+| `formchange` | 1 | `BigHolding`, `BigHoldingCat`, `SmallHolding`, `SmallHoldingCat` |
+| `formula` | 3 | `X`, `X*10`, `X+1`, `X-1`, `X-2` |
+| `forward_only` | 1 | `true` |
+| `forward_to_tips` | 3 |  |
+| `fragile` | 1 | `true` |
+| `frame` | 18 | `QuestUnlock_Amplifier`, `QuestUnlock_Cooler`, `QuestUnlock_Gristle`, `QuestUnlock_Head`, `QuestUnlock_Jar` |
+| `frame_label` | 1 | `AlienBeast`, `ColorlessCat_Tutorial`, `DrMangler`, `GirlDino`, `LightningElemental` |
+| `frame_range` | 1 |  |
 | `frank_caves_intro` | 1 |  |
-| `frank_tips_8` | 1 |  |
-| `house_upgrade_basement3` | 1 |  |
-| `frank_terminator2` | 1 |  |
 | `frank_ending` | 1 |  |
-| `frank_tips_9` | 1 |  |
-| `frank_tips_4` | 1 |  |
+| `frank_max1` | 1 |  |
+| `frank_max2` | 1 |  |
+| `frank_max3` | 1 |  |
 | `frank_max4` | 1 |  |
+| `frank_max5` | 1 |  |
+| `frank_max_intro` | 2 |  |
+| `frank_max_repeating` | 2 |  |
+| `frank_offscreen_to_right` | 1 |  |
+| `frank_right` | 1 |  |
+| `frank_right_to_offscreen` | 1 |  |
+| `frank_terminator2` | 1 |  |
+| `frank_tips_1` | 1 |  |
+| `frank_tips_10` | 1 |  |
+| `frank_tips_2` | 1 |  |
+| `frank_tips_3` | 1 |  |
+| `frank_tips_4` | 1 |  |
 | `frank_tips_5` | 1 |  |
 | `frank_tips_6` | 1 |  |
 | `frank_tips_7` | 1 |  |
-| `frank_max1` | 1 |  |
+| `frank_tips_8` | 1 |  |
+| `frank_tips_9` | 1 |  |
+| `free` | 2 | `false` |
+| `friction` | 2 |  |
+| `friction_end` | 2 |  |
+| `friction_start` | 2 |  |
+| `from` | 3 | `JarOfChaos`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |
+| `Fuck` | 1 |  |
+| `Full` | 1 |  |
+| `full_repair` | 1 | `true` |
+| `full_size` | 1 | `true` |
+| `fully_complete_difficulty` | 1 |  |
+| `Furniture` | 1 |  |
+| `FurniturePiece_PickedUpFromAir` | 1 |  |
+| `FurniturePiece_PickedUpFromDrawer` | 1 |  |
+| `FurniturePiece_PickedUpFromRoom` | 1 |  |
+| `FurniturePiece_PlacedInAir` | 1 |  |
+| `FurniturePiece_PlacedInDrawer` | 1 |  |
+| `FurniturePiece_PlacedInRoom` | 1 |  |
+| `Fury` | 8 |  |
+| `future` | 3 | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` |
+| `futurebot` | 1 |  |
+| `FutureUnlocked` | 1 |  |
+| `GainDivineShield` | 1 |  |
+| `GainMana` | 1 |  |
+| `GainShield` | 1 |  |
+| `gambit` | 1 | `auto` |
+| `gather_questitem_info` | 1 | `fail`, `newest`, `success` |
+| `ge` | 3 |  |
+| `gender` | 1 | `any`, `male` |
+| `general_common` | 1 | `auto` |
+| `general_rare` | 1 | `auto` |
+| `general_uncommon` | 1 | `auto` |
+| `general_very_rare` | 1 | `auto` |
+| `generate_beanies_quest` | 1 | `intro`, `main_pool` |
+| `GenFlag_Boss_Spewer` | 1 |  |
+| `GenFlag_Boss_Stacy` | 1 |  |
+| `get` | 8 | `npc_reward`, `sidequest_fail`, `sidequest_reward` |
+| `get_random_furniture_piece` | 1 |  |
+| `get_token` | 1 | `can_still_use_attack`, `can_still_use_attack_didntspell`, `ranged_cat_attack`, `use_attack_after_used_weapon`, `use_weapon` |
+| `GetAggroTarget` | 1 |  |
+| `gift_item` | 1 | `TinksBow`, `disorder_needle` |
+| `gift_item_from_pool` | 1 | `parasites` |
+| `give_parasite` | 1 |  |
+| `global_objects` | 1 |  |
+| `global_particles` | 1 |  |
+| `global_passives` | 2 |  |
+| `global_tags` | 2 |  |
+| `GlobalEnemyAutoRevive` | 1 |  |
+| `glow` | 5 |  |
+| `GlowingSeed` | 1 |  |
+| `go_around` | 4 |  |
+| `GoldenEgg` | 1 |  |
+| `gone` | 1 |  |
+| `good` | 41 | `false`, `true` |
+| `grant_ability` | 1 | `Rest` |
+| `graphics` | 57 | `Map_Alley`, `Map_Bunker`, `Map_Caves`, `Map_Core`, `Map_Crater` |
+| `Grappling` | 1 |  |
+| `Grass` | 1 |  |
+| `GrassTile` | 1 |  |
+| `Gravity` | 1 |  |
+| `groups` | 1 |  |
+| `grow_ability` | 1 | `MotherTumorGrow` |
+| `Grown` | 1 |  |
+| `guaranteed_food` | 1 |  |
+| `GuaranteedJackpot` | 1 |  |
+| `Guarding` | 1 |  |
+| `hack` | 1 |  |
+| `HalfDead` | 1 |  |
+| `Happy` | 220 |  |
+| `happy` | 1 |  |
+| `happy_eyes_closed` | 1 |  |
+| `happy_left` | 1 |  |
+| `HAPPY_PARAMS` | 220 |  |
+| `happy_up_eyes_closed` | 1 |  |
+| `hard` | 22 |  |
+| `hard_initial` | 2 |  |
+| `hardblink` | 1 |  |
+| `HardPathUnlocked` | 2 |  |
+| `Harpy` | 1 |  |
+| `HarpysClaw` | 1 |  |
+| `has_parasite` | 1 | `true` |
+| `has_token` | 12 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_HasTakenNeedle`, `AdventureToken_Mirage1`, `AdventureToken_Mirage2` |
+| `HasCat` | 3 |  |
+| `HasDeadCat` | 1 |  |
+| `HasRock` | 1 |  |
+| `head` | 11 | `BabyHair`, `Banana`, `BulbHead`, `CoinBag`, `CoinBag_Terminator` |
+| `head_drop` | 1 | `MD_HeadDrop` |
+| `head_start` | 1 |  |
+| `Headless` | 1 |  |
+| `heal_ally` | 1 |  |
+| `heal_enemy` | 1 |  |
+| `heal_self` | 1 |  |
+| `HealAlliesEachTurn` | 1 |  |
+| `health` | 26 |  |
+| `Health` | 1 |  |
+| `health_percent` | 2 |  |
+| `health_threshold` | 3 |  |
+| `heaviestMelee` | 1 |  |
+| `heavyMelee` | 1 |  |
+| `height` | 3 |  |
+| `held_coins` | 6 |  |
+| `hidden` | 8 | `false`, `true` |
+| `hidden_tag` | 12 | `angeljunk`, `bird`, `bloateye`, `bungawarrior`, `cavefamily` |
+| `hidden_tags` | 1 | `terminator_mini` |
+| `hide_text` | 4 |  |
+| `hint_can_target_empty` | 2 | `false`, `true` |
+| `hint_can_target_pickups` | 2 | `true` |
+| `hint_can_target_static` | 1 | `true` |
+| `hint_chapter_exit` | 1 | `dimensionx`, `endoftime`, `future`, `home`, `iceage` |
+| `Hint_CrackedVisuals` | 1 |  |
+| `Hint_CrackedVisuals2` | 1 |  |
+| `Hint_CrackedVisuals3` | 1 |  |
+| `hint_destination` | 1 | `boneyard`, `caves`, `core`, `dimensionx`, `endoftime` |
+| `hint_no_corpse` | 1 | `true` |
+| `hint_persistent_elements` | 1 |  |
+| `hint_prerequisite_flag` | 1 | `mapflag_BothObelisksUnlocked`, `mapflag_DimensionXUnlocked`, `mapflag_MeatWorldUnlocked`, `mapflag_MeatWorldUnlockedFull` |
+| `Hiss` | 219 |  |
+| `HISS_PARAMS` | 220 |  |
+| `Hissx` | 1 |  |
+| `Hit` | 220 |  |
+| `HIT_PARAMS` | 220 |  |
+| `Holding` | 1 |  |
+| `Holy` | 2 | `MegaGuppy_TransformHoly` |
+| `holy` | 1 |  |
+| `HolyDamageBlessing` | 1 |  |
+| `home` | 2 |  |
+| `hot` | 1 |  |
+| `House1` | 1 |  |
+| `House2` | 1 |  |
+| `House3` | 1 |  |
+| `house_intro` | 1 |  |
+| `house_kitten_box` | 1 |  |
+| `house_pass_day` | 1 |  |
+| `house_pass_day2` | 1 |  |
+| `house_pipe` | 1 |  |
+| `house_retired_cat_box` | 1 |  |
+| `house_shop` | 3 | `true` |
+| `house_starred_box` | 1 |  |
+| `house_strays` | 1 |  |
+| `house_upgrade` | 1 | `LargeHouse`, `LargeHouse_Floor2Large`, `LargeHouse_Floor2Small`, `MediumHouse`, `MediumHouse_SmallRoom` |
+| `house_upgrade_4throom` | 2 |  |
+| `house_upgrade_attic` | 2 |  |
+| `house_upgrade_basement` | 1 |  |
+| `house_upgrade_basement2` | 1 |  |
+| `house_upgrade_basement3` | 1 |  |
+| `house_upgrade_basement4` | 1 |  |
+| `house_upgrade_basement5` | 1 |  |
+| `house_upgrade_largehouse` | 2 |  |
+| `house_upgrade_mediumhouse` | 2 |  |
+| `HouseButton_Hover` | 1 |  |
+| `HouseCatVolume_Button_Left_Click` | 1 |  |
+| `HouseCatVolume_Button_Left_Hover` | 1 |  |
+| `HouseCatVolume_Button_Left_Press` | 1 |  |
+| `HouseCatVolume_Button_Right_Click` | 1 |  |
+| `HouseCatVolume_Button_Right_Hover` | 1 |  |
+| `HouseCatVolume_Button_Right_Press` | 1 |  |
+| `HousePipe` | 1 |  |
+| `HouseThunder` | 1 |  |
+| `hp` | 1 |  |
+| `HumanDead` | 1 |  |
+| `HummingBird` | 1 |  |
+| `Hunter` | 2 |  |
+| `hunter_portrait` | 1 |  |
+| `huntercat` | 1 | `auto` |
+| `ice` | 2 |  |
+| `Ice` | 1 |  |
+| `iceage` | 2 | `AREA_NAME_ICEAGE`, `mapflag_IceAgeUnlocked` |
+| `IceAgeUnlocked` | 1 |  |
+| `iceelemental` | 1 | `auto` |
+| `icon` | 2 | `DejaVu2`, `DejaVu3` |
+| `icon_damage_display` | 4 | `?` |
+| `icon_damage_display_eq` | 5 | `1+bonus_spell_damage_display`, `10+bonus_melee_ability_damage`, `3+bonus_melee_ability_damage`, `X*10`, `item_aux` |
+| `icon_damage_display_suffix` | 2 | `x10`, `x2` |
+| `icon_damage_type` | 2 | `magic`, `physical` |
+| `icon_frame` | 3 |  |
+| `icon_hint` | 1 | `ability_syringe`, `passive_syringe` |
+| `icon_ready` | 1 |  |
+| `icon_shell_frame` | 12 | `attack`, `big_damage`, `damage`, `multihit_attack`, `nodamage` |
+| `id` | 3 | `Attic`, `Wind` |
+| `ID` | 1 | `empty`, `for`, `is`, `reserved` |
+| `idle` | 10 |  |
+| `ignore` | 13 |  |
+| `ignore_during_movement` | 1 | `true` |
+| `ignore_if_str_aux_equals` | 1 | `ModelingClay_Default` |
+| `ignore_mouseover` | 1 | `true` |
+| `ignore_self` | 1 | `true` |
+| `ignore_tagged_sources` | 1 | `megadino` |
+| `ignore_tiles` | 1 | `true` |
+| `image` | 2 | `empty.png` |
+| `image_tint` | 2 | `blue`, `red` |
+| `immediate` | 5 | `false`, `true` |
+| `inanimate` | 4 | `true` |
+| `inanimate_can_receive_specific_statuses` | 1 |  |
+| `include` | 19 | `standard_nodes.gon`, `voice_template.gon` |
+| `include_coins` | 1 | `true` |
+| `include_passives` | 1 | `true` |
+| `include_spells` | 4 | `true` |
+| `increment_savefile_counter` | 1 | `GameStat_CountNukeQuestCompletions` |
+| `indestructible` | 2 | `true` |
+| `index` | 1 |  |
+| `infcantrip` | 22 | `false`, `true` |
+| `infestedduo` | 1 | `auto` |
+| `infinite` | 1 |  |
+| `inherit_elite_buffs` | 2 | `false` |
+| `inherit_faction` | 6 | `false`, `true` |
+| `inherit_speed` | 1 |  |
+| `inherit_velocity` | 1 |  |
+| `initial_charge` | 1 |  |
+| `initial_cooldown` | 1 |  |
+| `initial_cutscene_day` | 1 | `kaiju_fight`, `moonboss_intro`, `pyro_intro` |
+| `initial_cutscene_night` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `hitler_intro`, `t1000_intro` |
+| `initial_form` | 7 | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` |
+| `initial_health` | 5 |  |
+| `InitialPhase` | 1 |  |
+| `initiative` | 14 | `keep_turns_end_turn` |
+| `Injury_Bleed` | 1 |  |
+| `Injury_BrokenLeg` | 1 |  |
+| `Injury_BrokenPaw` | 1 |  |
+| `Injury_BrokenRib` | 1 |  |
+| `Injury_Burn` | 1 |  |
+| `Injury_Concussion` | 1 |  |
+| `Injury_Cursed` | 1 |  |
+| `Injury_Disfigured` | 1 |  |
+| `Injury_Poison` | 1 |  |
+| `Injury_TornTendon` | 1 |  |
+| `innate` | 1 |  |
+| `innate_items` | 1 |  |
+| `innate_passives` | 1 |  |
+| `insane` | 1 |  |
+| `Insane_Ceiling` | 1 |  |
+| `Insane_Ground` | 1 |  |
+| `inspect` | 5 |  |
+| `int` | 41 | `aux` |
+| `intcheck` | 1 |  |
+| `intelligence` | 20 |  |
+| `intensity` | 6 |  |
+| `interstitial_bg_frame` | 1 | `attic`, `room1`, `room2`, `room3`, `room4` |
+| `intimidation` | 1 |  |
+| `intro` | 31 | `alley/eatinrats_intro.ogg`, `boneyard/boneyard_intro.ogg`, `bunker/bunker_intro.ogg`, `caves/caves_intro.ogg`, `chaos/chaos_boss_intro.ogg` |
+| `Intro_CatSelected` | 1 |  |
+| `Intro_LabDisposal` | 1 |  |
+| `Intro_WakingUp` | 1 |  |
+| `introduce_hard_path` | 1 |  |
+| `intros` | 1 |  |
+| `InventoryButton_Collar_Click` | 1 |  |
+| `InventoryButton_Collar_Hover` | 1 |  |
+| `InventoryButton_face_Click` | 1 |  |
+| `InventoryButton_face_Hover` | 1 |  |
+| `InventoryButton_head_Click` | 1 |  |
+| `InventoryButton_head_Hover` | 1 |  |
+| `InventoryButton_neck_Click` | 1 |  |
+| `InventoryButton_neck_Hover` | 1 |  |
+| `InventoryButton_trinket_Click` | 1 |  |
+| `InventoryButton_trinket_Hover` | 1 |  |
+| `InventoryButton_weapon_Click` | 1 |  |
+| `InventoryButton_weapon_Hover` | 1 |  |
+| `investigate` | 2 |  |
+| `is_3D` | 1 | `false` |
+| `is_basic_attack` | 4 | `false`, `true` |
+| `is_chapter` | 2 |  |
+| `is_dying_animation` | 3 | `true` |
+| `is_final_boss` | 2 | `true` |
+| `is_move` | 5 | `auto`, `true` |
+| `is_not_chapter` | 4 |  |
+| `is_player_cat` | 3 | `false`, `true` |
+| `is_trinket` | 2 | `true` |
+| `is_weapon` | 2 | `true` |
+| `itchies` | 1 |  |
+| `item` | 2 | `EstusFlask_Full`, `GallonOfWater`, `WaterBottle_Full` |
+| `Item` | 2 |  |
+| `item_chance` | 1 |  |
+| `item_groups` | 3 |  |
+| `item_rarity_costs` | 2 |  |
+| `jack_begin_accepting_cats` | 1 |  |
 | `jack_desert_intro` | 1 |  |
-| `jack_zara` | 1 |  |
-| `jack_max4` | 1 |  |
 | `Jack_Gainaltfurniture` | 1 |  |
+| `jack_introduction` | 1 |  |
+| `jack_max1` | 1 |  |
 | `jack_max2` | 1 |  |
 | `jack_max3` | 1 |  |
-| `jack_begin_accepting_cats` | 1 |  |
-| `jack_max1` | 1 |  |
+| `jack_max4` | 1 |  |
 | `jack_max5` | 1 |  |
-| `collected_nothing` | 1 |  |
-| `organ_rename` | 1 |  |
+| `jack_max_intro` | 2 |  |
+| `jack_max_repeating` | 2 |  |
+| `jack_offscreen_to_right` | 1 |  |
+| `jack_right` | 1 |  |
+| `jack_right_to_offscreen` | 1 |  |
+| `jack_shopupgrade1` | 2 |  |
+| `jack_shopupgrade2` | 2 |  |
+| `jack_shopupgrade3` | 2 |  |
+| `jack_shopupgrade4` | 2 |  |
+| `jack_zara` | 1 |  |
+| `Jester` | 1 |  |
+| `jester_portrait` | 1 |  |
+| `jestercat` | 3 | `auto` |
+| `Johnny` | 1 |  |
+| `johnny_idle` | 1 |  |
+| `JohnnyBubs` | 1 |  |
+| `JohnnyHost` | 1 |  |
+| `JohnnyNettle` | 1 |  |
+| `JohnnyWashSoothe` | 1 |  |
+| `join` | 1 |  |
+| `JoinSpawnerFaction` | 1 |  |
+| `Joystick` | 1 |  |
+| `jump` | 1 |  |
+| `jump_over` | 1 |  |
+| `JumpAttackLeaveBehind` | 1 | `BungaThrone` |
+| `junkyard` | 2 | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` |
+| `JunkyardUnlocked` | 1 |  |
+| `jurassic` | 3 | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` |
+| `JurassicUnlocked` | 1 |  |
+| `JustInCaseTrample` | 3 |  |
+| `keep_going` | 1 |  |
+| `keeper` | 1 |  |
+| `key` | 3 | `EtherSoakedRag`, `JewelOfDrog`, `TaintedOffering`, `TaintedOffering2`, `gamewin` |
+| `keyword_tooltips` | 15 |  |
+| `kill_ally` | 1 |  |
+| `kill_enemy` | 1 |  |
+| `kill_required` | 10 | `false`, `true` |
+| `KillEnemyOfTypeAtBattleStart` | 2 |  |
+| `kills` | 1 |  |
+| `kind` | 15 | `face`, `head`, `modifier`, `neck`, `trinket` |
+| `kiss` | 5 |  |
+| `kiss_meat` | 1 |  |
+| `knife` | 1 |  |
+| `knockback` | 45 | `2*X`, `X`, `X*2`, `X+1`, `ceil(X*.25/5)` |
+| `knockback_damage` | 1 |  |
+| `knockback_immune` | 6 | `true` |
+| `knockback_mode` | 29 | `back_orientation`, `character_to_target`, `character_to_tile`, `character_to_tile_4snap`, `none` |
+| `knockback_modifier` | 1 | `rotate_cw` |
+| `lab` | 2 | `AREA_NAME_LAB`, `mapflag_LabUnlocked` |
+| `label` | 26 | `1 injury`, `A`, `B`, `C`, `D` |
+| `large` | 19 |  |
+| `LargeAttic` | 1 |  |
+| `LargeBirdPool` | 1 |  |
+| `LargeHouse` | 1 |  |
+| `LargeHouse_Floor2Large` | 1 |  |
+| `LargeHouse_Floor2Small` | 1 |  |
+| `last_turn_is_main_turn` | 3 | `true` |
+| `LastHit` | 1 |  |
+| `lava` | 1 |  |
+| `lck` | 40 | `aux` |
+| `le` | 1 |  |
+| `lead_time` | 1 |  |
+| `LeapClose` | 1 |  |
+| `learned` | 1 |  |
+| `Leave` | 2 | `CherubimLeave`, `LELeave` |
+| `leave_it_in` | 1 |  |
+| `LeaveBehind` | 3 | `Bait` |
+| `leftear` | 1 |  |
+| `lefteye` | 1 |  |
+| `lefteyebrow` | 1 |  |
+| `leg` | 1 |  |
+| `leg1` | 5 |  |
+| `leg2` | 4 |  |
+| `leg_leave` | 1 | `MD_LegLeave` |
+| `leg_return` | 1 | `MD_LegReturn` |
+| `legacy_quest` | 1 | `true` |
+| `legacy_savekey` | 1 | `Legacy_Marshmallow_StolenCatID` |
+| `legs` | 4 |  |
+| `lenny` | 1 | `auto` |
+| `Lenny_HereKitty` | 1 |  |
+| `level` | 17 | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` |
+| `level_display` | 1 | `max` |
+| `level_up_didnt_select_sunburn` | 1 |  |
+| `level_up_intro` | 1 |  |
+| `level_up_selected_sunburn` | 1 |  |
+| `levelup` | 1 |  |
+| `LevelUp` | 1 |  |
+| `Levelup_Boon_Click` | 1 |  |
+| `Levelup_Boon_Hover` | 1 |  |
+| `levelup_stats` | 2 |  |
+| `LevelUpButton_Hover` | 1 |  |
+| `LevelUpScreen_Butcher` | 1 |  |
+| `LevelUpScreen_Colorless` | 1 |  |
+| `LevelUpScreen_Druid` | 1 |  |
+| `LevelUpScreen_Fighter` | 1 |  |
+| `LevelUpScreen_Hunter` | 1 |  |
+| `LevelUpScreen_Jester` | 1 |  |
+| `LevelUpScreen_Mage` | 1 |  |
+| `LevelUpScreen_Medic` | 1 |  |
+| `LevelUpScreen_Monk` | 1 |  |
+| `LevelUpScreen_Necromancer` | 1 |  |
+| `LevelUpScreen_Psychic` | 1 |  |
+| `LevelUpScreen_Tank` | 1 |  |
+| `LevelUpScreen_Thief` | 1 |  |
+| `LevelUpScreen_Tinkerer` | 1 |  |
+| `lever` | 1 |  |
+| `lick` | 5 |  |
+| `lick_alt` | 1 |  |
+| `Lifted` | 1 |  |
+| `Lighting` | 1 |  |
+| `lightning` | 2 |  |
+| `lightning_fx` | 1 | `true` |
+| `lightningelemental` | 1 | `auto` |
+| `limbs` | 1 |  |
+| `limit` | 3 | `actchooser`, `channel` |
+| `limit_amount` | 3 | `amount`, `at`, `can`, `limit`, `of` |
+| `limit_period` | 1 |  |
+| `lingering` | 1 | `true` |
+| `listen` | 1 |  |
+| `Lit` | 1 |  |
+| `live_bounds` | 2 |  |
+| `lock_controls` | 6 |  |
+| `lock_item_slot` | 1 |  |
+| `lock_mouse` | 1 |  |
+| `lock_orientation` | 4 |  |
+| `locked` | 10 | `false`, `true` |
+| `look_at_offset` | 1 |  |
+| `looks` | 1 |  |
+| `loot` | 8 |  |
+| `loot_heart` | 1 |  |
+| `LoseMana` | 1 |  |
+| `LostSoul` | 1 |  |
+| `low_gravity_boostable` | 2 | `false`, `true` |
+| `low_health_character_threshold` | 2 | `item_aux` |
+| `low_on_food` | 1 |  |
+| `lt` | 1 |  |
+| `luck` | 14 |  |
+| `luck_increase` | 1 |  |
+| `mad` | 1 |  |
+| `Mage` | 2 |  |
+| `mage_portrait` | 1 |  |
+| `magecat` | 1 | `auto` |
+| `MagicSeed` | 1 |  |
+| `main` | 40 |  |
+| `main_pool` | 1 |  |
+| `main_turn_only` | 5 | `true` |
+| `MainMenu_Button_Meow_Hover` | 1 |  |
+| `MainMenu_Button_Play_Click` | 1 |  |
+| `MainMenu_Button_Play_Hover` | 1 |  |
+| `MainMenu_Button_Play_Press` | 1 |  |
+| `MainMenu_Button_Quit_Click` | 1 |  |
+| `MainMenu_Button_Quit_Hover` | 1 |  |
+| `MainMenu_Button_Quit_Press` | 1 |  |
+| `MainMenu_Button_Settings_Click` | 1 |  |
+| `MainMenu_Button_Settings_Hover` | 1 |  |
+| `MainMenu_Button_Settings_Press` | 1 |  |
+| `mainturn_pattern` | 7 |  |
+| `major_class_checkmarks` | 1 |  |
+| `makeup` | 1 |  |
+| `male1` | 1 |  |
+| `male10` | 1 |  |
+| `male100` | 1 |  |
+| `male101` | 1 |  |
+| `male102` | 1 |  |
+| `male103` | 1 |  |
+| `male105` | 1 |  |
+| `male106` | 1 |  |
+| `male107` | 1 |  |
+| `male108` | 1 |  |
+| `male109` | 1 |  |
+| `male11` | 1 |  |
+| `male110` | 1 |  |
+| `male111` | 1 |  |
+| `male112` | 1 |  |
+| `male113` | 1 |  |
+| `male114` | 1 |  |
+| `male115` | 1 |  |
+| `male116` | 1 |  |
+| `male117` | 1 |  |
+| `male118` | 1 |  |
+| `male119` | 1 |  |
+| `male12` | 1 |  |
+| `male120` | 1 |  |
+| `male122` | 1 |  |
+| `male123` | 1 |  |
+| `male124` | 1 |  |
+| `male125` | 1 |  |
+| `male126` | 1 |  |
+| `male127` | 1 |  |
+| `male128` | 1 |  |
+| `male129` | 1 |  |
+| `male13` | 1 |  |
+| `male130` | 1 |  |
+| `male131` | 1 |  |
+| `male132` | 1 |  |
+| `male133` | 1 |  |
+| `male134` | 1 |  |
+| `male135` | 1 |  |
+| `male136` | 1 |  |
+| `male137` | 1 |  |
+| `male138` | 1 |  |
+| `male139` | 1 |  |
+| `male14` | 1 |  |
+| `male140` | 1 |  |
+| `male141` | 1 |  |
+| `male142` | 1 |  |
+| `male15` | 1 |  |
+| `male16` | 1 |  |
+| `male17` | 1 |  |
+| `male18` | 1 |  |
+| `male19` | 1 |  |
+| `male2` | 1 |  |
+| `male20` | 1 |  |
+| `male21` | 1 |  |
+| `male22` | 1 |  |
+| `male23` | 1 |  |
+| `male24` | 1 |  |
+| `male25` | 1 |  |
+| `male26` | 1 |  |
+| `male27` | 1 |  |
+| `male28` | 1 |  |
+| `male29` | 1 |  |
+| `male3` | 1 |  |
+| `male30` | 1 |  |
+| `male31` | 1 |  |
+| `male32` | 1 |  |
+| `male33` | 1 |  |
+| `male34` | 1 |  |
+| `male35` | 1 |  |
+| `male36` | 1 |  |
+| `male37` | 1 |  |
+| `male38` | 1 |  |
+| `male39` | 1 |  |
+| `male4` | 1 |  |
+| `male40` | 1 |  |
+| `male41` | 1 |  |
+| `male42` | 1 |  |
+| `male43` | 1 |  |
+| `male44` | 1 |  |
+| `male45` | 1 |  |
+| `male46` | 1 |  |
+| `male47` | 1 |  |
+| `male48` | 1 |  |
+| `male49` | 1 |  |
+| `male5` | 1 |  |
+| `male50` | 1 |  |
+| `male51` | 1 |  |
+| `male52` | 1 |  |
+| `male53` | 1 |  |
+| `male54` | 1 |  |
+| `male55` | 1 |  |
+| `male56` | 1 |  |
+| `male57` | 1 |  |
+| `male58` | 1 |  |
+| `male59` | 1 |  |
+| `male6` | 1 |  |
+| `male60` | 1 |  |
+| `male61` | 1 |  |
+| `male62` | 1 |  |
+| `male63` | 1 |  |
+| `male64` | 1 |  |
+| `male65` | 1 |  |
+| `male66` | 1 |  |
+| `male67` | 1 |  |
+| `male68` | 1 |  |
+| `male69` | 1 |  |
+| `male7` | 1 |  |
+| `male70` | 1 |  |
+| `male71` | 1 |  |
+| `male72` | 1 |  |
+| `male73` | 1 |  |
+| `male74` | 1 |  |
+| `male75` | 1 |  |
+| `male76` | 1 |  |
+| `male77` | 1 |  |
+| `male78` | 1 |  |
+| `male79` | 1 |  |
+| `male8` | 1 |  |
+| `male80` | 1 |  |
+| `male81` | 1 |  |
+| `male82` | 1 |  |
+| `male83` | 1 |  |
+| `male84` | 1 |  |
+| `male85` | 1 |  |
+| `male86` | 1 |  |
+| `male87` | 1 |  |
+| `male88` | 1 |  |
+| `male89` | 1 |  |
+| `male9` | 1 |  |
+| `male90` | 1 |  |
+| `male91` | 1 |  |
+| `male92` | 1 |  |
+| `male93` | 1 |  |
+| `male94` | 1 |  |
+| `male95` | 1 |  |
+| `male96` | 1 |  |
+| `male97` | 1 |  |
+| `male98` | 1 |  |
+| `male99` | 1 |  |
+| `mamamaggot` | 1 | `auto` |
+| `mammothbaby` | 1 |  |
+| `mana` | 39 | `10-X`, `10-X*6`, `15-X`, `15-X*2`, `16-X*16` |
+| `mana_matters` | 5 | `false`, `true` |
+| `mana_regen` | 8 |  |
+| `manacost_cant_be_zero` | 1 | `true` |
+| `mandatory` | 2 | `true` |
+| `map` | 1 | `alley/eatinrats_map.ogg`, `boneyard/boneyard_map.ogg`, `bunker/bunker_map.ogg`, `caves/caves_map.ogg`, `core/core_map.ogg` |
+| `map_areas` | 1 |  |
+| `Map_Backpack_Click` | 1 |  |
+| `Map_Backpack_Hover` | 1 |  |
+| `map_click_node` | 1 |  |
+| `map_equip_items` | 1 |  |
+| `map_equip_items2` | 1 |  |
+| `Map_Node_Click` | 1 |  |
+| `Map_Node_Hover` | 1 |  |
+| `MapCats_Move` | 1 |  |
+| `MapZoomerCoin_Begin` | 1 |  |
+| `MapZoomerCoin_End` | 1 |  |
+| `MapZoomerFood_Begin` | 1 |  |
+| `MapZoomerFood_End` | 1 |  |
+| `MapZoomerItem_Begin` | 1 |  |
+| `MapZoomerItem_End` | 1 |  |
+| `marked` | 1 |  |
+| `MasterVolume_Button_Left_Click` | 1 |  |
+| `MasterVolume_Button_Left_Hover` | 1 |  |
+| `MasterVolume_Button_Left_Press` | 1 |  |
+| `MasterVolume_Button_Right_Click` | 1 |  |
+| `MasterVolume_Button_Right_Hover` | 1 |  |
+| `MasterVolume_Button_Right_Press` | 1 |  |
+| `match_knockback_direction` | 1 | `true` |
+| `material` | 1 | `distorter`, `mist` |
+| `max` | 9 |  |
+| `max_aoe` | 30 | `(X+1)/2`, `1+bonus_melee_range`, `10+bonus_range`, `2+X`, `3+bonus_range` |
+| `max_bounces` | 5 |  |
+| `max_dist` | 4 |  |
+| `max_distance` | 2 |  |
+| `max_durability` | 2 |  |
+| `max_health` | 1 |  |
+| `max_npc` | 1 | `Beanies`, `Butch`, `Frank`, `Jack`, `OrganGrinder` |
+| `max_particles` | 1 |  |
+| `max_radius` | 1 |  |
+| `max_range` | 34 | `1+X`, `1+X*2`, `1+bonus_melee_range`, `1+bonus_range`, `2*X` |
+| `max_sounds` | 13 |  |
+| `max_targets` | 13 | `-X` |
+| `meatworld` | 3 | `AREA_NAME_MEATWORLD`, `mapflag_MeatWorldUnlockedFull` |
+| `MeatWorldUnlocked` | 2 |  |
+| `MeatWorldUnlockedFull` | 1 |  |
+| `MedBirdPool` | 1 |  |
+| `MedCatnip` | 1 |  |
+| `Medic` | 2 |  |
+| `medic_portrait` | 1 |  |
+| `medium` | 19 |  |
+| `MediumHouse` | 1 |  |
+| `MediumHouse_SmallRoom` | 1 |  |
+| `MedScrap` | 1 |  |
+| `melee_ability_only` | 1 | `true` |
+| `melee_attack_rat` | 1 |  |
+| `melee_cat_spit` | 1 |  |
+| `melee_cat_spit_fail_ally` | 1 |  |
+| `melee_cat_spit_fail_miss` | 1 |  |
+| `melee_cat_spit_fail_rat` | 1 |  |
+| `melee_cat_spit_ignore` | 1 |  |
+| `melee_cat_spit_success` | 1 |  |
+| `melee_killed_rat` | 1 |  |
+| `melee_move2` | 1 |  |
+| `melee_only` | 1 | `true` |
+| `melee_out_of_actions` | 1 |  |
+| `meta` | 40 |  |
+| `midi` | 1 | `alley/eatinrats_midi.mid`, `boneyard/boneyard_midi.mid`, `bunker/bunker_midi.mid`, `caves/caves_midi.mid`, `core/core_midi.mid` |
+| `min` | 8 |  |
+| `min_aoe` | 27 | `1+size`, `2+X`, `2+size` |
+| `min_difficulty` | 1 |  |
+| `min_dist` | 4 |  |
+| `min_radius` | 1 |  |
+| `min_targets` | 5 |  |
+| `mind` | 1 |  |
+| `miniboss` | 21 |  |
+| `miniboss_event` | 1 |  |
+| `minimum_con` | 1 |  |
+| `minimum_party_size` | 2 |  |
+| `minimum_spd` | 1 |  |
+| `minion_alt` | 2 | `SlightlyDepressing`, `SubTwin`, `SubUndying` |
+| `mirror_custom_aoe` | 1 | `true` |
+| `misc` | 2 |  |
+| `MjolnirProjectileCatch` | 1 |  |
+| `mode` | 14 | `equal`, `greater`, `greater_or_equal`, `less_or_equal`, `yeet` |
+| `Monk` | 2 |  |
+| `monk_portrait` | 1 |  |
+| `monkcat` | 1 | `auto` |
+| `MonkStances` | 1 |  |
+| `mono_cat_run` | 1 | `false`, `true` |
+| `moon` | 3 | `AREA_NAME_MOON`, `mapflag_IceAgeUnlocked`, `mapflag_MoonUnlocked` |
+| `MoonHead_hitrocks` | 1 |  |
+| `MoonHead_Uncrack` | 1 |  |
+| `MoonObeliskUnlocked` | 1 |  |
+| `MoonUnlocked` | 1 |  |
+| `mostly_food` | 1 |  |
+| `Mounted` | 1 |  |
+| `mouse_offset` | 4 |  |
+| `mouseover_priority` | 1 |  |
+| `mouth` | 14 | `closed`, `open`, `smile` |
+| `mouth_open` | 1 |  |
+| `MouthFull` | 1 |  |
+| `move` | 25 | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` |
+| `move_ability` | 9 | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` |
+| `move_block` | 11 | `everything_even_when_dead`, `nothing` |
+| `move_closer` | 2 |  |
+| `move_far` | 3 | `false` |
+| `move_for_ability` | 7 | `AlienBeastPuke`, `CaveManPickupSpear`, `G3GrabHead`, `PyrophinaSoloCatThrow`, `PyrophinaVSCatThrow` |
+| `move_points` | 15 |  |
+| `move_pool` | 1 |  |
+| `move_short` | 1 | `true` |
+| `move_then_do` | 5 | `CHuskCatShade`, `CerberubsBarrage`, `CerberubsCalm`, `NubsJump`, `RatKingSpawn` |
+| `move_then_do_all` | 1 |  |
+| `move_then_do_priority` | 1 |  |
+| `move_then_do_random` | 3 |  |
+| `move_weights` | 22 | `bird`, `blind_move_far`, `chaos_always_move`, `chaotic`, `chaotic_runaway` |
+| `MoveAway` | 3 |  |
+| `MoveCenter` | 2 |  |
+| `MoveClose` | 2 |  |
+| `MoveForBarrage` | 1 |  |
+| `MoveForDash` | 1 |  |
+| `MoveForGrass` | 1 |  |
+| `MoveForPounce` | 1 |  |
+| `MoveForSpin` | 1 |  |
+| `MoveForThrow` | 1 |  |
+| `movement` | 18 |  |
+| `MoveOneForPuke` | 1 |  |
+| `MoveSpaced` | 1 |  |
+| `MoveToHead` | 1 |  |
+| `MoveTowards` | 1 |  |
+| `movieclip_bg` | 1 | `HouseBackground1`, `HouseBackground2`, `HouseBackground3` |
+| `movieclip_fg` | 1 | `HouseForeground1`, `HouseForeground2`, `HouseForeground3` |
+| `movieclip_timescale` | 1 |  |
+| `mul` | 1 |  |
+| `multihit` | 15 | `X`, `X*2+1`, `X+1` |
+| `multihit_max` | 5 |  |
+| `multihit_min` | 5 |  |
+| `multiplier` | 1 |  |
+| `music` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
+| `musiclayer` | 2 | `boss` |
+| `MusicVolume_Button_Left_Click` | 1 |  |
+| `MusicVolume_Button_Left_Hover` | 1 |  |
+| `MusicVolume_Button_Left_Press` | 1 |  |
+| `MusicVolume_Button_Right_Click` | 1 |  |
+| `MusicVolume_Button_Right_Hover` | 1 |  |
+| `MusicVolume_Button_Right_Press` | 1 |  |
+| `must_be_consuming` | 3 | `true` |
+| `must_be_first_action` | 2 | `false`, `true` |
+| `must_be_first_nonmove_action` | 3 | `true` |
+| `must_be_offmap` | 4 | `true` |
+| `must_do_damage` | 1 | `true` |
+| `must_have_weapon` | 2 | `true` |
+| `must_not_be_a_summon` | 4 | `true` |
+| `must_not_be_consuming` | 2 | `true` |
+| `must_start_facing_camera` | 1 | `false` |
+| `must_target_killer` | 1 | `true` |
+| `Mutant` | 2 |  |
+| `mute_during_explicit_scenarios` | 10 | `true` |
+| `mw_altar` | 1 |  |
+| `mw_battle1` | 1 |  |
+| `mw_boss` | 1 |  |
+| `mw_earlyhome` | 1 |  |
+| `mw_event1` | 1 |  |
+| `mw_hard1` | 1 |  |
+| `mw_home` | 1 |  |
+| `mw_quest_event` | 1 |  |
+| `mw_treasure` | 1 |  |
+| `name_mod` | 2 | `CAT_NAME_MOD_AMOEBA`, `CAT_NAME_MOD_COOL`, `CAT_NAME_MOD_DEMONIC`, `CAT_NAME_MOD_DWARF`, `CAT_NAME_MOD_GIGANTISM` |
+| `name_reference_applier` | 1 | `KEYWORD_ATTRACTION_REF`, `KEYWORD_LEECHES_NAME_APPLIER`, `KEYWORD_MANALEECHES_NAME_APPLIER` |
+| `name_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_NAME`, `KEYWORD_CHADOWN_NAME`, `KEYWORD_CONDOWN_NAME`, `KEYWORD_DAMAGEDOWN_NAME`, `KEYWORD_DEXDOWN_NAME` |
+| `NCGravecrawlFAR` | 1 |  |
+| `neck` | 4 | `AngelicAura`, `AngelicAura_Terminator`, `DruidNeck`, `DruidNeck_Terminator`, `MageCollar` |
+| `necrocat` | 1 | `auto` |
+| `Necromancer` | 2 |  |
+| `necromancer_portrait` | 1 |  |
+| `negative_weight_scale` | 1 |  |
+| `nemesis` | 1 |  |
+| `NeutronStar` | 1 |  |
+| `never_hit_ally_corpses` | 1 | `true` |
+| `new_adventure` | 1 |  |
+| `new_layer` | 4 | `battle`, `event`, `map` |
+| `new_music` | 1 | `chaos_boss_part2` |
+| `new_song` | 3 | `same` |
+| `next` | 1 |  |
+| `next_map` | 15 | `boneyard.gon`, `bunker.gon`, `caves.gon`, `core.gon`, `crater.gon` |
+| `no_breed` | 1 | `true` |
+| `no_buddy` | 1 | `Rage` |
+| `no_falloff` | 1 |  |
+| `NoDeathRattle` | 1 |  |
+| `NoEyes` | 1 |  |
+| `non_spatial` | 1 |  |
+| `NonCat` | 1 |  |
+| `Normal` | 223 |  |
+| `normal` | 21 |  |
+| `NORMAL_PARAMS` | 220 |  |
+| `NormalFull` | 1 |  |
+| `NoStick` | 1 |  |
+| `not_cat_has_item_equipped` | 2 | `CryogenicTimeChamber_Full`, `GuillotinasHead`, `Horns` |
+| `not_has_token` | 11 | `AdventureToken_BlueNeedle`, `AdventureToken_HasRunFromDeath`, `AdventureToken_MysteriousJarRepeat`, `AdventureToken_RedNeedle`, `AdventureToken_StevenTryAgain` |
+| `not_on_kill` | 1 | `true` |
+| `not_on_quest` | 2 |  |
+| `not_priming` | 3 | `DualSword`, `NotPriming`, `SwordAndShield` |
+| `nothanks` | 1 |  |
+| `Nothing` | 1 |  |
+| `NotPriming` | 2 |  |
+| `nouns` | 1 |  |
+| `NPC_Location_Exit` | 1 |  |
+| `NPC_Location_Open` | 1 |  |
+| `NPC_Location_Tracy_Open` | 1 |  |
+| `npc_script` | 1 | `tracy_adventure_shop_script.gon` |
+| `nuke` | 1 | `PlotFlag_FrankBeanies` |
+| `Nuke` | 1 |  |
+| `number` | 17 |  |
+| `Obey` | 1 |  |
+| `obj` | 10 | `BeefyCharmedLeech`, `Dice`, `Maggot`, `PyrophinaVS`, `RiftKitten` |
+| `Obj_AngelJunkLand` | 1 |  |
+| `Obj_AntidotePickupLand` | 1 |  |
+| `Obj_BoulderLand` | 1 |  |
+| `Obj_CoinLand` | 1 |  |
+| `Obj_FoodLand` | 1 |  |
+| `Obj_HolyPickupLand` | 1 |  |
+| `Obj_JunkLand` | 1 |  |
+| `Obj_ManaPickupLand` | 1 |  |
+| `Obj_PoopLand` | 1 |  |
+| `Obj_Rock_Land` | 1 |  |
+| `Obj_TireLand` | 1 |  |
+| `Obj_TrashBagLand` | 1 |  |
+| `Obj_TumorLand` | 1 |  |
+| `object` | 74 | `AlbinoTomTom`, `AlbinoTomTom_Elite`, `AlienBeast`, `AlienEgg`, `AllyRotFly` |
+| `objects_too` | 2 | `true` |
+| `odds` | 19 |  |
+| `Off` | 1 |  |
+| `OffMap` | 3 |  |
+| `OffScreen` | 1 |  |
+| `offscreen` | 1 |  |
+| `OldHose_Start_Trigger` | 1 |  |
+| `on_break` | 1 |  |
+| `on_self_move_too` | 3 | `true` |
+| `on_store` | 3 | `become_aux_coins`, `become_furniture`, `become_rare_furniture` |
+| `on_throw` | 1 |  |
+| `oncast` | 3 | `AbilitySnd_Assassinate`, `AbilitySnd_BoulderDrop` |
+| `oncastpoint` | 2 | `AirHorn`, `Batterup_Swing_Castpoint` |
+| `once_per_fight` | 13 | `3-X`, `false`, `true` |
+| `once_per_turn` | 1 | `true` |
+| `One_Cat` | 1 |  |
+| `One_Cat_EmptyHouse` | 1 |  |
+| `one_eye_wink` | 1 |  |
+| `OneAlive` | 1 |  |
+| `OneEye` | 1 |  |
+| `only_at_battle_start` | 2 | `true` |
+| `only_when_not_your_turn` | 2 | `true` |
+| `ontrigger` | 5 | `OldHose_Start_Trigger`, `SE_AnkylosaurusAttack`, `SE_AstroTaserPoke`, `SE_BullRushDash`, `SE_CatWeaponPoke_Chainsaw` |
+| `ontrigger_intentional` | 1 | `Lenny_HereKitty` |
+| `open` | 3 |  |
+| `Open` | 1 |  |
+| `OpenCat` | 1 |  |
+| `organ_boneyard_intro` | 1 |  |
+| `organ_intro` | 1 |  |
+| `organ_max1` | 1 |  |
+| `organ_max2` | 1 |  |
 | `organ_max3` | 1 |  |
 | `organ_max4` | 1 |  |
-| `organ_intro` | 1 |  |
 | `organ_max5` | 1 |  |
-| `organ_max1` | 1 |  |
-| `organ_tina3` | 1 |  |
+| `organ_max_intro` | 2 |  |
+| `organ_max_repeating` | 2 |  |
+| `organ_rename` | 1 |  |
 | `organ_throbbingdomain_intro` | 1 |  |
-| `set_organ_name` | 1 | `Tyler` |
-| `organ_boneyard_intro` | 1 |  |
-| `collected_new_items` | 1 |  |
-| `organ_max2` | 1 |  |
-| `gone` | 1 |  |
-| `steven_unlock_act1_impossible` | 1 |  |
-| `steven_unlock_act2_hard` | 1 |  |
-| `steven_unlock_act3_impossible` | 1 |  |
-| `steven_unlock_act2_crazy` | 1 |  |
-| `steven_unlock_act3_crazy` | 1 |  |
-| `steven_100` | 1 |  |
-| `steven_unlock_act2_impossible` | 1 |  |
-| `steven_introduction` | 1 |  |
-| `steven_unlock_act1_crazy` | 1 |  |
-| `steven_resummon` | 1 |  |
-| `steven_postendgame` | 1 |  |
-| `steven_unlock_act3_hard` | 1 |  |
-| `tink_max3` | 1 |  |
-| `tink_max8` | 1 |  |
-| `tink_tips_mutation` | 1 |  |
-| `tink_max2` | 1 |  |
-| `tink_max5` | 1 |  |
-| `tink_max1` | 1 |  |
-| `tink_tina2` | 1 |  |
-| `tink_max6` | 1 |  |
-| `tink_max4` | 1 |  |
-| `tink_max9` | 1 |  |
-| `tink_tips_appeal` | 1 |  |
-| `tink_begin_accepting_cats` | 1 |  |
-| `tink_tips_cleaning` | 1 |  |
-| `tink_tips_basestats` | 1 |  |
-| `tink_tips_intro` | 1 |  |
-| `tink_tips_comfort` | 1 |  |
-| `tink_terminator` | 1 |  |
-| `tink_max7` | 1 |  |
-| `tink_tips_health` | 1 |  |
-| `tink_max10` | 1 |  |
-| `tink_tips_multiclassing` | 1 |  |
-| `tink_tips_inbreeding` | 1 |  |
-| `tink_tips_stimulation` | 1 |  |
-| `welcome` | 1 |  |
-| `purchase_item_moon` | 1 |  |
-| `welcome_caves` | 1 |  |
-| `welcome_jurassic` | 1 |  |
-| `cant_afford_jurassic` | 1 |  |
+| `organ_tina3` | 1 |  |
+| `organ_unlock` | 2 |  |
+| `organ_upgrade1` | 2 |  |
+| `organ_upgrade2` | 2 |  |
+| `organ_upgrade3` | 2 |  |
+| `organ_upgrade4` | 2 |  |
+| `organ_upgrade5` | 2 |  |
+| `organ_upgrade6` | 2 |  |
+| `orientation` | 2 | `east`, `north`, `south`, `west` |
+| `other_character` | 1 | `MegaGuppy` |
+| `other_form_change_abilities` | 1 |  |
+| `Out` | 1 |  |
+| `out_of_stock` | 3 |  |
+| `outline_color` | 1 | `white` |
+| `outro` | 1 |  |
+| `outros` | 1 |  |
+| `outsmart` | 1 |  |
+| `override_art` | 19 | `MapNodeExit_Boneyard`, `MapNodeExit_Bunker`, `MapNodeExit_Caves`, `MapNodeExit_Core`, `MapNodeExit_Crater` |
+| `override_basic_attack` | 5 | `BasicButcherMeleeWideDoubleSpin`, `BasicButcherMeleeWideSpin`, `BasicDruidAbilityVersatile`, `BasicMagicMissile`, `BasicMedicRanged` |
+| `override_chain_knockback` | 1 |  |
+| `override_hit_animation` | 1 | `true` |
+| `override_move` | 1 | `BasicJump` |
+| `override_music` | 3 | `chaos_boss`, `finalboss`, `throbbingking` |
+| `ownership` | 1 | `local` |
+| `paint` | 2 | `false`, `true` |
+| `pan_falloff` | 2 | `by`, `global`, `multiplied`, `need`, `not` |
+| `pan_falloff_range` | 12 |  |
+| `Paper_Appear` | 1 |  |
+| `Paper_Away` | 1 |  |
+| `parasaurolophus` | 1 |  |
+| `parasite` | 4 | `true` |
+| `parent` | 13 | `environment`, `none` |
+| `Parousworm` | 1 |  |
+| `partial_animation_suffix` | 6 | ``, `Alert`, `Angry`, `Belly`, `Button` |
+| `particle_lifetime` | 2 |  |
+| `ParticleAttractor` | 1 |  |
+| `ParticleBouncePlane` | 2 |  |
+| `ParticleCharacterCollision` | 1 |  |
+| `ParticleGlobalForce` | 1 |  |
+| `ParticleLineCollisions` | 1 |  |
+| `ParticleRandomForce` | 2 |  |
+| `particles` | 1 |  |
+| `ParticleTornadoForce` | 1 |  |
+| `PartyBlower` | 1 |  |
+| `pass_ani` | 1 | `pass` |
+| `passive` | 3 |  |
+| `passive0` | 1 | `HotBlooded`, `SelfAssured` |
+| `passive_pieces` | 1 |  |
+| `passive_pool` | 2 |  |
+| `passives_health_threshold` | 1 |  |
+| `past` | 1 |  |
+| `patch_up` | 1 |  |
+| `pathfinding_avoidance` | 2 |  |
+| `pattern` | 15 |  |
+| `PauseMenu_Close` | 1 |  |
+| `PauseMenu_Open` | 1 |  |
+| `PeaceSymbol` | 1 |  |
+| `PeaceSymbolFacePaint` | 1 |  |
+| `period` | 1 |  |
+| `permanent` | 1 | `true` |
+| `petted` | 1 |  |
+| `petted2` | 1 |  |
+| `pick` | 2 |  |
+| `pick_lock` | 1 |  |
+| `pick_n` | 1 |  |
+| `pickup_type` | 1 |  |
+| `PickupCoin` | 1 |  |
+| `pieces_required` | 1 |  |
+| `Pigeon` | 1 |  |
+| `pilfer` | 1 |  |
+| `pills` | 1 |  |
+| `pirouette` | 1 |  |
+| `pitch` | 4 | `and`, `between`, `for`, `pitch_range`, `randomized` |
+| `pitch_range` | 3 |  |
+| `place_gristle` | 1 |  |
+| `plane` | 1 | `back`, `right` |
+| `play` | 2 |  |
+| `play_chance` | 1 | `chance`, `play`, `that`, `this`, `triggered` |
+| `play_cutscene` | 1 | `credits_1` |
+| `playercat_health` | 2 |  |
+| `playlist` | 1 | `call_letters`, `commercialbreak`, `commercials`, `segments`, `songs` |
+| `Plural_Team` | 1 |  |
+| `Plural_Team_EmptyHouse` | 1 |  |
+| `point` | 1 |  |
+| `pool` | 28 | `Butcher`, `Druid`, `Fighter`, `Hunter`, `Jester` |
+| `poop` | 1 |  |
+| `poopcat` | 1 |  |
+| `pop_chance` | 1 |  |
+| `pop_corpse` | 5 | `false` |
+| `pop_corpses` | 1 | `true` |
+| `Pop_Poop` | 1 |  |
+| `popup` | 1 |  |
+| `position` | 2 |  |
+| `Possessing` | 1 |  |
+| `post_absorb_move_weights` | 1 | `minimum_move` |
+| `post_combat_cutscene` | 1 | `obelisk1_core`, `obelisk1_moon`, `obelisk2_core`, `obelisk2_moon` |
+| `post_spawn_statuses` | 3 |  |
+| `power` | 1 |  |
+| `preempt` | 1 |  |
+| `preempt_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia` |
+| `preferred_distance` | 1 | `mov`, `mov+1`, `mov+5`, `mov+reach`, `mov-2` |
+| `prereq` | 1 | `BasementUpgrade`, `BasementUpgrade2`, `BasementUpgrade3`, `BasementUpgrade4`, `Default` |
+| `prereqs` | 1 |  |
+| `preset` | 2 | `AUDITORIUM`, `Alley`, `Cave`, `Forest`, `LIVINGROOM` |
+| `prevent_chain_tag` | 4 | `ancestorset_shade`, `eb_twin`, `minime_clone`, `necroset_shade` |
+| `prevent_level_up` | 2 | `true` |
+| `PreventDeathTransforms` | 1 |  |
+| `prewarm` | 1 |  |
+| `prime` | 6 |  |
+| `Primed` | 1 |  |
+| `priming` | 3 | `DualSword_Primed`, `Priming`, `SwordAndShield_Primed` |
+| `Priming` | 2 |  |
+| `print` | 1 |  |
+| `prioritize_change_direction` | 1 | `true` |
+| `prioritize_dont_change_direction` | 6 | `true` |
+| `prioritize_face_camera` | 7 | `true` |
+| `prioritize_throw_target_with_passive` | 1 | `NubbyTossPriority` |
+| `ProjectileHitCharacter_BoneProjectile` | 1 |  |
+| `ProjectileHitCharacter_Bottleshot` | 1 |  |
+| `ProjectileHitCharacter_BrambleProjectile` | 1 |  |
+| `ProjectileHitCharacter_Bullet` | 1 |  |
+| `ProjectileHitCharacter_Creepball` | 1 |  |
+| `ProjectileHitCharacter_FireProjectile` | 1 |  |
+| `ProjectileHitCharacter_Fishball` | 1 |  |
+| `ProjectileHitCharacter_GlassBall` | 1 |  |
+| `ProjectileHitCharacter_Gutball` | 1 |  |
+| `ProjectileHitCharacter_Heartball` | 1 |  |
+| `ProjectileHitCharacter_HookProjectile` | 1 |  |
+| `ProjectileHitCharacter_Joystick` | 1 |  |
+| `ProjectileHitCharacter_LavaBall` | 1 |  |
+| `ProjectileHitCharacter_LeechProjectile` | 1 |  |
+| `ProjectileHitCharacter_LightningBallProjectile` | 1 |  |
+| `ProjectileHitCharacter_LobbedProjectile` | 1 |  |
+| `ProjectileHitCharacter_MagicSpikeProjectile` | 1 |  |
+| `ProjectileHitCharacter_ManaLeechProjectile` | 1 |  |
+| `ProjectileHitCharacter_Meatball` | 1 |  |
+| `ProjectileHitCharacter_Meteor` | 1 |  |
+| `ProjectileHitCharacter_Poisonball` | 1 |  |
+| `ProjectileHitCharacter_Projectile` | 1 |  |
+| `ProjectileHitCharacter_PukeBall` | 1 |  |
+| `ProjectileHitCharacter_SmallRock` | 1 |  |
+| `ProjectileHitCharacter_SpiderBall` | 1 |  |
+| `ProjectileHitCharacter_SpikeProjectile` | 1 |  |
+| `ProjectileHitCharacter_spitprojectile` | 1 |  |
+| `ProjectileHitCharacter_Tarshot` | 1 |  |
+| `ProjectileHitCharacter_Tumorball` | 1 |  |
+| `ProjectileHitCharacter_Webball` | 1 |  |
+| `ProjectileHitNothing_AcidshotProjectile` | 1 |  |
+| `ProjectileHitNothing_ArrowProjectile` | 1 |  |
+| `ProjectileHitNothing_BoneProjectile` | 1 |  |
+| `ProjectileHitNothing_Bottleshot` | 1 |  |
+| `ProjectileHitNothing_bounceshot` | 1 |  |
+| `ProjectileHitNothing_BrambleProjectile` | 1 |  |
+| `ProjectileHitNothing_Bullet` | 1 |  |
+| `ProjectileHitNothing_Creepball` | 1 |  |
+| `ProjectileHitNothing_CupidsArrowProjectile` | 1 |  |
+| `ProjectileHitNothing_DamageTrap` | 1 |  |
+| `ProjectileHitNothing_Firecracker` | 1 |  |
+| `ProjectileHitNothing_FireProjectile` | 1 |  |
+| `ProjectileHitNothing_Fishball` | 1 |  |
+| `ProjectileHitNothing_GlassBall` | 1 |  |
+| `ProjectileHitNothing_Gutball` | 1 |  |
+| `ProjectileHitNothing_Heartball` | 1 |  |
+| `ProjectileHitNothing_Joystick` | 1 |  |
+| `ProjectileHitNothing_LavaBall` | 1 |  |
+| `ProjectileHitNothing_LeechProjectile` | 1 |  |
+| `ProjectileHitNothing_LightningBallProjectile` | 1 |  |
+| `ProjectileHitNothing_LobbedProjectile` | 1 |  |
+| `ProjectileHitNothing_MaggotBall` | 1 |  |
+| `ProjectileHitNothing_MagicSpikeProjectile` | 1 |  |
+| `ProjectileHitNothing_ManaLeechProjectile` | 1 |  |
+| `ProjectileHitNothing_Meatball` | 1 |  |
+| `ProjectileHitNothing_Meteor` | 1 |  |
+| `ProjectileHitNothing_NeedleProjectile` | 1 |  |
+| `ProjectileHitNothing_Poisonball` | 1 |  |
+| `ProjectileHitNothing_Projectile` | 1 |  |
+| `ProjectileHitNothing_PukeBall` | 1 |  |
+| `ProjectileHitNothing_SmallRock` | 1 |  |
+| `ProjectileHitNothing_Snowball` | 1 |  |
+| `ProjectileHitNothing_SpiderBall` | 1 |  |
+| `ProjectileHitNothing_SpikeProjectile` | 1 |  |
+| `ProjectileHitNothing_spitprojectile` | 1 |  |
+| `ProjectileHitNothing_Tarshot` | 1 |  |
+| `ProjectileHitNothing_Tumorball` | 1 |  |
+| `ProjectileHitNothing_Webball` | 1 |  |
+| `ProjectileSpawn_AcidshotProjectile` | 1 |  |
+| `ProjectileSpawn_ArrowProjectile` | 1 |  |
+| `ProjectileSpawn_BoneProjectile` | 1 |  |
+| `ProjectileSpawn_bounceshot` | 1 |  |
+| `ProjectileSpawn_Bullet` | 1 |  |
+| `ProjectileSpawn_ChakramProjectile` | 1 |  |
+| `ProjectileSpawn_CoinProjectile` | 1 |  |
+| `ProjectileSpawn_Creepball` | 1 |  |
+| `ProjectileSpawn_CupidsArrowProjectile` | 1 |  |
+| `ProjectileSpawn_DamageTrap` | 1 |  |
+| `ProjectileSpawn_Dip` | 1 |  |
+| `ProjectileSpawn_Firecracker` | 1 |  |
+| `ProjectileSpawn_FireProjectile` | 1 |  |
+| `ProjectileSpawn_Fishball` | 1 |  |
+| `ProjectileSpawn_GlassBall` | 1 |  |
+| `ProjectileSpawn_Gutball` | 1 |  |
+| `ProjectileSpawn_Heartball` | 1 |  |
+| `ProjectileSpawn_HookProjectile` | 1 |  |
+| `ProjectileSpawn_knifeprojectile` | 1 |  |
+| `ProjectileSpawn_LavaBall` | 1 |  |
+| `ProjectileSpawn_LeechProjectile` | 1 |  |
+| `ProjectileSpawn_LightningBallProjectile` | 1 |  |
+| `ProjectileSpawn_LobbedProjectile` | 1 |  |
+| `ProjectileSpawn_MaggotBall` | 1 |  |
+| `ProjectileSpawn_MagicMissileProjectile` | 1 |  |
+| `ProjectileSpawn_MagicMissileProjectileSmall` | 1 |  |
+| `ProjectileSpawn_MagicSpikeProjectile` | 1 |  |
+| `ProjectileSpawn_ManaLeechProjectile` | 1 |  |
+| `ProjectileSpawn_Meatball` | 1 |  |
+| `ProjectileSpawn_Mjolnir` | 1 |  |
+| `ProjectileSpawn_NeedleProjectile` | 1 |  |
+| `ProjectileSpawn_Poisonball` | 1 |  |
+| `ProjectileSpawn_Projectile` | 1 |  |
+| `ProjectileSpawn_Projectile_Rocket` | 1 |  |
+| `ProjectileSpawn_PukeBall` | 1 |  |
+| `ProjectileSpawn_SmallRock` | 1 |  |
+| `ProjectileSpawn_Snowball` | 1 |  |
+| `ProjectileSpawn_SpiderBall` | 1 |  |
+| `ProjectileSpawn_SpikeProjectile` | 1 |  |
+| `ProjectileSpawn_spitprojectile` | 1 |  |
+| `ProjectileSpawn_Tarshot` | 1 |  |
+| `ProjectileSpawn_Tumorball` | 1 |  |
+| `ProjectileSpawn_Webball` | 1 |  |
+| `projection_matrix` | 2 | `default` |
+| `properties` | 23 |  |
+| Property Key | # Files | Sample Values |
+| `protection` | 1 |  |
+| `Psychic` | 2 |  |
+| `psychic_portrait` | 1 |  |
+| `psychiccat` | 1 | `auto` |
+| `puddle_tile` | 1 | `LavaTile` |
+| `pull` | 1 |  |
+| `pull_it_out` | 1 |  |
+| `pull_lever` | 1 |  |
+| `Pulp2` | 1 |  |
+| `Pulp3` | 1 |  |
+| `Pulp4` | 1 |  |
+| `Pulp5` | 1 |  |
+| `Pulp6` | 1 |  |
+| `Pulp7` | 1 |  |
+| `punch_self_ability` | 1 | `Dybbuk_StopHittingYourself` |
+| `purchase_item` | 4 |  |
+| `purchase_item_a` | 1 |  |
+| `purchase_item_b` | 1 |  |
+| `purchase_item_c` | 1 |  |
+| `purchase_item_d` | 1 |  |
+| `purchase_item_iceage` | 1 |  |
 | `purchase_item_jurassic` | 1 |  |
-| `welcome_water_cheap` | 1 |  |
+| `purchase_item_moon` | 1 |  |
+| `purchase_item_theend` | 1 |  |
+| `purify` | 1 |  |
+| `Purr` | 218 |  |
+| `PURR_PARAMS` | 220 |  |
+| `Purrx` | 2 |  |
+| `push_buttons` | 1 |  |
+| `push_through` | 1 |  |
+| `pushforce` | 1 |  |
+| `put_in_coins` | 1 |  |
+| `put_out_of_misery` | 1 |  |
+| `pyrophina_backgroundfootstep` | 1 |  |
+| `queenhippo` | 1 | `auto` |
+| `quest_event` | 9 |  |
+| `quest_item` | 2 | `false`, `true` |
+| `quest_item_alias` | 2 | `BlackShard`, `NuclearKnife` |
+| `quest_reward_item` | 1 | `AirHorn_Fixed`, `AngryFace_Fixed`, `BubbleBoy_Fixed`, `ChaosDevice_Fixed`, `ExperimentalTreatment_Fixed` |
+| `queue` | 1 | `TheChild_TargetBeam` |
+| `queue_cutscene_immediate` | 1 | `caves_intro`, `core_intro`, `desert_intro`, `dybbuk`, `jurassic_intro` |
+| `quotes` | 1 |  |
+| `radicalrat` | 1 | `auto` |
+| `radius` | 8 |  |
+| `Rage` | 4 |  |
+| `random` | 8 |  |
+| `random_orient` | 2 | `true` |
+| `RandomArmorPickup` | 1 |  |
+| `RandomBiggerArmorPickup` | 1 |  |
+| `RandomBiggerCatnipPickup` | 1 |  |
+| `RandomBiggerFoodPickup` | 1 |  |
+| `RandomCatnipPickup` | 1 |  |
+| `RandomFoodPickup` | 1 |  |
+| `randomize_knockback_direction_except_for_finisher` | 1 | `true` |
+| `randomize_pattern_start` | 1 | `true` |
+| `randomize_piece_frames` | 2 | `true` |
+| `randomize_target_within_range` | 2 |  |
+| `randomness` | 1 |  |
+| `range` | 13 | `global` |
+| `range_bonuses` | 1 | `include_alpha` |
+| `range_considers_character_size` | 6 | `false` |
+| `range_display_include_aoe` | 4 | `true` |
+| `range_display_include_character_size` | 6 | `true` |
+| `range_display_include_direction` | 2 | `true` |
+| `range_excludes_blocking` | 15 | `false`, `true` |
+| `range_excludes_self` | 1 | `false` |
+| `range_max` | 1 |  |
+| `range_min` | 1 |  |
+| `range_mode` | 23 | `8cross`, `cross`, `custom`, `diagcross`, `ground_move` |
+| `range_symmetry` | 1 | `eight_way` |
+| `ranged_attack_tomtom` | 1 |  |
+| `ranged_attack_tomtom_fail_ally` | 1 |  |
+| `ranged_attack_tomtom_fail_miss` | 1 |  |
+| `ranged_attack_tomtom_fail_rat` | 1 |  |
+| `ranged_cat_attack` | 1 |  |
+| `ranged_cat_early_attack2_ally` | 1 |  |
+| `ranged_cat_early_attack2_miss` | 1 |  |
+| `ranged_cat_early_attack2_rat` | 1 |  |
+| `ranged_cat_early_attack_ally` | 1 |  |
+| `ranged_cat_early_attack_miss` | 1 |  |
+| `ranged_cat_early_attack_rat` | 1 |  |
+| `ranged_cat_failmove` | 1 |  |
+| `ranged_cat_intro` | 1 |  |
+| `ranged_cat_roll` | 1 |  |
+| `ranged_cat_rolled_first` | 1 |  |
+| `ranged_only` | 2 | `true` |
+| `raptor` | 1 |  |
+| `raptorbaby` | 1 |  |
+| `RaptorEgg` | 1 |  |
+| `rare_elite_buffs` | 1 |  |
+| `rarity` | 13 | `common`, `consumable_common`, `consumable_rare`, `consumable_uncommon`, `consumable_very_rare` |
+| `ratking` | 1 | `auto` |
+| `Raven` | 1 |  |
+| `RavenFeather` | 1 |  |
+| `reach_inside` | 1 |  |
+| `read` | 1 |  |
+| `real_wink` | 1 |  |
+| `real_wink_overshoot` | 1 |  |
+| `RealTimePressure` | 1 |  |
+| `recalc_target_on_castpoint` | 2 | `true` |
+| `receive` | 1 |  |
+| `receive_ani` | 1 | `receive` |
+| `reclaim_if_lost` | 1 | `true` |
+| `red` | 1 |  |
+| `red_needle` | 1 |  |
+| `redirect_location_if_blocked` | 2 | `true` |
+| `reduction` | 9 |  |
+| `reflect` | 1 |  |
+| `relative` | 1 | `false` |
+| `release` | 1 | `TheChild_ReleaseBeams` |
+| `remain_off_map` | 1 | `true` |
+| `rematch_cooldown` | 1 |  |
+| `rematch_cutscene_day` | 1 | `house_boss_returns_kaijufight`, `house_boss_returns_pyro`, `house_boss_returns_zara` |
+| `rematch_cutscene_night` | 1 | `house_boss_returns_t1`, `house_boss_returns_t2`, `house_boss_returns_t3`, `house_boss_returns_tina1`, `house_boss_returns_tina2` |
+| `remove` | 1 |  |
+| `remove_the_nail` | 1 |  |
+| `removed` | 1 | `true` |
+| `render_layer` | 2 | `background`, `sorted_distortions`, `splatters`, `top` |
+| `render_mode` | 2 | `default`, `separate` |
+| `reorient_thrown_character` | 2 | `true` |
+| `rep_reward_count` | 1 |  |
+| `repair` | 2 |  |
+| `repair_quest` | 1 |  |
+| `repeat` | 3 | `infinite`, `never` |
+| `repeatable` | 1 | `true` |
+| `repell` | 1 |  |
+| `RepressedMemoriesMetronome` | 1 |  |
+| `request_cat_info` | 1 | `stray` |
+| `require_beat_house_boss` | 1 | `pyrophina`, `zaratana` |
+| `require_default_size` | 1 | `true` |
+| `require_mapgen_flag` | 1 | `CoreObeliskUnlocked`, `MoonObeliskUnlocked` |
+| `required_act` | 1 |  |
+| `required_age` | 1 |  |
+| `required_chapter` | 1 |  |
+| `required_difficulty` | 2 |  |
+| `requirements` | 19 |  |
+| `requires_attack_damage_threshold` | 1 |  |
+| `requires_consumed_trinket` | 1 | `true` |
+| `requires_corpse` | 1 | `true` |
+| `requires_destructible_weapon` | 6 | `true` |
+| `requires_empty_trinket` | 1 | `true` |
+| `requires_exact_character_aux` | 2 |  |
+| `requires_framebuffer` | 1 | `false` |
+| `requires_hard_path` | 1 | `true` |
+| `requires_hp_threshold` | 1 |  |
+| `requires_monoclass_run` | 1 | `true` |
+| `requires_reload` | 7 | `true` |
+| `requires_unlocked_npc` | 1 | `frank`, `jack`, `tracy` |
+| `requires_weapon` | 1 | `true` |
+| `reset_aux_on_store` | 1 |  |
+| `reset_center_because_no_target_halflife` | 1 |  |
+| `reset_center_because_of_animation_halflife` | 1 |  |
+| `reset_npc_sequence` | 1 | `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin`, `beanies_bombquest_fail_jarofblood` |
+| `reset_pattern_on_formswitch` | 6 | `false`, `true` |
+| `reset_pattern_on_round_begin` | 1 | `true` |
+| `reset_percent` | 1 |  |
+| `reset_str_aux_on_store` | 1 | `ModelingClay_Default` |
+| `reset_turn` | 1 | `act`, `both` |
+| `reset_unlock` | 1 | `nuke_quest_begin` |
+| `respect_prime` | 2 | `true` |
+| `rest` | 1 |  |
+| `restart_npc_music` | 1 |  |
+| `restrict` | 5 | `armor`, `consumables`, `trinket`, `weapon` |
+| `restrictions` | 29 | `aoe_must_be_displaceable`, `aoe_must_be_force_displaceable`, `aoe_must_exist`, `cant_target_behind`, `dash_must_move` |
+| `restructions` | 1 | `aoe_must_exist` |
+| `results` | 2 | `a`, `in`, `new`, `of`, `range` |
+| `Return` | 2 | `CherubimReturn`, `LEReturn` |
+| `return_as` | 2 | `enemy` |
+| `return_during` | 2 | `boss` |
+| `ReturnA` | 1 |  |
+| `reverb` | 1 |  |
+| `reverb_empty` | 1 |  |
+| `reverb_full` | 1 |  |
+| `ReverbDelay` | 1 |  |
+| `reverse_target_direction` | 1 | `true` |
+| `revive` | 1 |  |
+| `revive_ally_corpse` | 1 |  |
+| `revive_enemy_corpse` | 1 |  |
+| `revive_health` | 3 |  |
+| `reward_text` | 1 | `FAVOR_BEANIES_INTRO`, `FAVOR_BEANIES_REPEAT`, `FAVOR_BUTCH_UPGRADE`, `FAVOR_FRANK_ATTIC`, `FAVOR_FRANK_PARASITE` |
+| `right_icon` | 1 | `coin`, `divineshield`, `heal`, `mana`, `shield` |
+| `rightear` | 1 |  |
+| `righteye` | 1 |  |
+| `righteyebrow` | 1 |  |
+| `robotom` | 1 |  |
+| `rockybobo` | 1 | `auto` |
+| `roll_ability` | 1 | `RollDice` |
+| `roll_limit` | 2 |  |
+| `rollable` | 2 | `false` |
+| `Roof_LeftEdge` | 1 |  |
+| `Roof_RightEdge` | 1 |  |
+| `Roof_Top` | 1 |  |
+| `room_positions` | 1 |  |
+| `rotation` | 2 |  |
+| `rotation_dampening` | 1 |  |
+| `rotation_speed` | 2 |  |
+| `rotation_speed_end` | 2 |  |
+| `rotation_speed_start` | 1 |  |
+| `rotation_start` | 1 |  |
+| `round_end_bonus_turns` | 8 |  |
+| `round_end_bonusturn_pattern` | 6 |  |
+| `round_start_bonus_turns` | 4 |  |
+| `round_start_bonusturn_pattern` | 1 |  |
+| `rounds` | 4 |  |
+| `rub` | 1 |  |
+| `run` | 3 |  |
+| `run_again` | 1 |  |
+| `run_away` | 1 |  |
+| `RunesAppear1` | 1 |  |
+| `RunesAppear2` | 1 |  |
+| `RunesAppear3` | 1 |  |
+| `RunesAppear4` | 1 |  |
+| `RunesAppear5` | 1 |  |
+| `RunFar` | 1 |  |
+| `sabertoothcat` | 1 |  |
+| `sacrifice` | 2 |  |
+| `sacrifice_full_favor` | 1 |  |
+| `sacrifice_normal` | 1 |  |
+| `sacrifice_partial_favor` | 1 |  |
+| `sacrifice_quest` | 1 |  |
+| `Sad` | 220 |  |
+| `sad` | 1 |  |
+| `sad_left` | 1 |  |
+| `SAD_PARAMS` | 220 |  |
+| `SafeExplosionIfHitSomething` | 1 |  |
+| `same` | 2 | `a`, `as`, `but`, `range` |
+| `same_cat` | 3 | `true` |
+| `same_orientation` | 1 | `true` |
+| `save_file_flag` | 1 | `AntennaQuest_Orb`, `AntennaQuest_Rift`, `AntennaQuest_Volcano`, `MeatWorldQuest_Gristle`, `MeatWorldQuest_Leech` |
+| `SaveFile_Continue` | 1 |  |
+| `SaveFile_Delete` | 1 |  |
+| `SaveFile_Hover0` | 1 |  |
+| `SaveFile_Hover1` | 1 |  |
+| `SaveFile_Hover2` | 1 |  |
+| `SaveFile_New` | 1 |  |
+| `savefile_string` | 1 | `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2`, `SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3`, `SAVE_FILE_FIGHT_HOUSEBOSS_KAIJUFIGHT`, `SAVE_FILE_FIGHT_HOUSEBOSS_PYROPHINA` |
+| `SaveFile_TerminateButton_Click` | 1 |  |
+| `SaveFile_TerminateButton_Hover` | 1 |  |
+| `SaveFile_TerminateButton_Press` | 1 |  |
+| `scaled` | 1 | `true` |
+| `scars` | 1 |  |
+| `schadenfreude_scaled_stats` | 1 |  |
+| `scorpioncat` | 1 |  |
+| `Scrap` | 1 |  |
+| `scream` | 1 |  |
+| `Screen_FadeIn` | 1 |  |
+| `Screen_FadeOut` | 1 |  |
+| `screenshake` | 2 |  |
+| `scripts` | 2 |  |
+| `SE_AnkylosaurusAttack` | 1 |  |
+| `SE_AstroTaserPoke` | 1 |  |
+| `SE_BirdDying_Blackbird` | 1 |  |
+| `SE_BirdDying_Chicken` | 1 |  |
+| `SE_BirdDying_Dove` | 1 |  |
+| `SE_BirdDying_Eagle` | 1 |  |
+| `SE_BirdDying_Hummingbird` | 1 |  |
+| `SE_BirdDying_Mutant` | 1 |  |
+| `SE_BirdDying_Pigeon` | 1 |  |
+| `SE_BirdDying_Raven` | 1 |  |
+| `SE_BirdDying_Seagull` | 1 |  |
+| `SE_BirdDying_Turkey` | 1 |  |
+| `SE_BirdLarge_DyingCall` | 1 |  |
+| `SE_BirdMed_DyingCall` | 1 |  |
+| `SE_BirdSmall_DyingCall` | 1 |  |
+| `SE_BodyCollapse` | 1 |  |
+| `SE_BramblesSpawn` | 1 |  |
+| `SE_BuildBot_Deploy` | 1 |  |
+| `SE_BuildBot_Land` | 1 |  |
+| `SE_BullRushDash` | 1 |  |
+| `SE_Cat_bearHug` | 1 |  |
+| `SE_Cat_equipWeapon` | 1 |  |
+| `SE_Cat_ShadowStepIn` | 1 |  |
+| `SE_Cat_ShadowStepOut` | 1 |  |
+| `SE_Cat_StompLegMove` | 1 |  |
+| `SE_Cat_StompWalk` | 1 |  |
+| `SE_Cat_WeaponLower` | 1 |  |
+| `SE_Cat_WeaponRaise` | 1 |  |
+| `SE_CatBodyfall` | 1 |  |
+| `SE_CatFightWhoosh` | 1 |  |
+| `SE_CatFoleyAttack` | 1 |  |
+| `SE_CatFoleyFlip` | 1 |  |
+| `SE_CatFoleyShort` | 1 |  |
+| `SE_CatJumpBig` | 1 |  |
+| `SE_CatLand` | 1 |  |
+| `SE_CatQuickThrow` | 1 |  |
+| `SE_CatRoll` | 1 |  |
+| `SE_CatSpinAttack` | 1 |  |
+| `SE_CatSwishArm` | 1 |  |
+| `SE_CatSwishJump` | 1 |  |
+| `SE_CatSwishKickBig` | 1 |  |
+| `SE_CatSwishKickSmall` | 1 |  |
+| `SE_CatSwishPunchBig` | 1 |  |
+| `SE_CatSwishPunchSmall` | 1 |  |
+| `SE_CatSwishSpin` | 1 |  |
+| `SE_CatSwishThrow` | 1 |  |
+| `SE_CatSwishThrowBig` | 1 |  |
+| `SE_CatThrowSharp` | 1 |  |
+| `SE_CatWalk` | 1 |  |
+| `SE_CatWalk_House` | 1 |  |
+| `SE_CatWalkWater` | 1 |  |
+| `SE_CatWeaponPoke` | 1 |  |
+| `SE_CatWeaponPoke_Chainsaw` | 1 |  |
+| `SE_CE_Astro_Jump` | 1 |  |
+| `SE_ChainDash` | 1 |  |
+| `SE_ChalkDraw` | 1 |  |
+| `SE_Cintro_Junk` | 1 |  |
+| `SE_Cintro_Lightning` | 1 |  |
+| `SE_Cintro_Scary` | 1 |  |
+| `SE_Cintro_Spaceship` | 1 |  |
+| `SE_CrateDamage` | 1 |  |
+| `SE_FuturebotPunch` | 1 |  |
+| `SE_FuturebotPunchSwing` | 1 |  |
+| `SE_FuturebotSuplex` | 1 |  |
+| `SE_FuturebotWalk` | 1 |  |
+| `SE_Interstitial_Breeding` | 1 |  |
+| `SE_Interstitial_BreedingBump` | 1 |  |
+| `SE_Interstitial_BreedingFast` | 1 |  |
+| `SE_Interstitial_BreedingPG` | 1 |  |
+| `SE_Interstitial_BreedUnstick` | 1 |  |
+| `SE_Interstitial_Cough` | 1 |  |
+| `SE_Interstitial_Fight` | 1 |  |
+| `SE_Interstitial_MutateSlam` | 1 |  |
+| `SE_Interstitial_RaiseSwish` | 1 |  |
+| `SE_MagicStart` | 1 |  |
+| `SE_ManaDrain` | 1 |  |
+| `SE_Obj_GrenadeLand` | 1 |  |
+| `SE_ParasaurolophusAttack` | 1 |  |
+| `SE_PetBoulder_Dash` | 1 |  |
+| `SE_PetRock_Dash` | 1 |  |
+| `SE_PickupCoin` | 1 |  |
+| `SE_PickupCoinSack` | 1 |  |
+| `SE_PoopCatHug` | 1 |  |
+| `SE_PoopCatWalk` | 1 |  |
+| `SE_Prep_HyperBeam` | 1 |  |
+| `SE_SabertoothCatPounce` | 1 |  |
+| `SE_SabertoothCatSwipe` | 1 |  |
+| `SE_SabertoothCubLick` | 1 |  |
+| `SE_SabertoothCubSwipe` | 1 |  |
+| `SE_SaveFile_HoverTick` | 1 |  |
+| `SE_ScorpionCatAngry` | 1 |  |
+| `SE_ScorpionCatHug` | 1 |  |
+| `SE_ScorpionCatWalk` | 1 |  |
+| `SE_SkeletonCatWalk` | 1 |  |
+| `SE_SmallRockBreak` | 1 |  |
+| `SE_StalactiteImpact` | 1 |  |
+| `SE_StickBroke` | 1 |  |
+| `SE_StickRaise` | 1 |  |
+| `SE_T2_Clone` | 1 |  |
+| `SE_T2_UnClone` | 1 |  |
+| `SE_Terminator1_WalkLeg` | 1 |  |
+| `SE_Terminator1_WalkStep` | 1 |  |
+| `SE_Terminator2_WalkLeg` | 1 |  |
+| `SE_Terminator2_WalkStep` | 1 |  |
+| `SE_Terminator_bearHug` | 1 |  |
+| `SE_Terminator_Pummel` | 1 |  |
+| `SE_Terminator_ShadowStepIn` | 1 |  |
+| `SE_Terminator_ShadowStepOut` | 1 |  |
+| `SE_Terminator_WeaponLower` | 1 |  |
+| `SE_Terminator_WeaponRaise` | 1 |  |
+| `SE_TerminatorCatWalkA` | 1 |  |
+| `SE_TerminatorCatWalkB` | 1 |  |
+| `SE_TerminatorCatWalkC` | 1 |  |
+| `SE_TerminatorCatWalkD` | 1 |  |
+| `SE_TerminatorCatWalkE` | 1 |  |
+| `SE_TerminatorCatWalkF` | 1 |  |
+| `SE_TerminatorSwapWeapon` | 1 |  |
+| `SE_ThinLaserHit` | 1 |  |
+| `SE_ThrowGrenade` | 1 |  |
+| `SE_WeaponShoot_Crossbow` | 1 |  |
+| `SE_WeaponShoot_GlassCannon` | 1 |  |
+| `SE_WeaponShoot_Nailgun` | 1 |  |
+| `SE_WeaponShoot_Slingshot` | 1 |  |
+| `SE_WeaponShoot_SpiderWebber` | 1 |  |
+| `SE_WeaponShoot_Taser` | 1 |  |
+| `SE_WeaponShoot_TeslaCannon` | 1 |  |
+| `SE_WeaponShoot_TractorBeam` | 1 |  |
+| `SE_WolfCatAttack` | 1 |  |
+| `SE_WolfCatLeap` | 1 |  |
+| `SE_WP_ShotgunShot` | 1 |  |
+| `SE_WP_SwapRifle` | 1 |  |
+| `SE_WP_SwapShotgun` | 1 |  |
+| `SE_WP_SwapUzi` | 1 |  |
+| `SE_WP_UziShot` | 1 |  |
+| `SE_Zoomer_FoodTone` | 1 |  |
+| `Seagull` | 1 |  |
+| `SelectorWidget_Button_Left_Click` | 1 |  |
+| `SelectorWidget_Button_Left_Hover` | 1 |  |
+| `SelectorWidget_Button_Left_Press` | 1 |  |
+| `SelectorWidget_Button_Right_Click` | 1 |  |
+| `SelectorWidget_Button_Right_Hover` | 1 |  |
+| `SelectorWidget_Button_Right_Press` | 1 |  |
+| `self_move_exclude_self_abilities` | 1 | `true` |
+| `SerratedClaws` | 1 |  |
+| `set` | 13 | `80s`, `90s`, `AdvancedAlloy`, `Alloy`, `Amoeba` |
+| `Set` | 1 | `Monk` |
+| `set_house` | 1 | `House1`, `House2`, `House3` |
+| `set_mapgen_flag` | 1 | `BoneyardUnlocked`, `BothObelisksUnlocked`, `BunkerUnlocked`, `CavesUnlocked`, `CoreObeliskUnlocked` |
+| `set_mood` | 2 | `default`, `happy`, `pondering`, `sad`, `veryhappy` |
+| `set_npc_voice` | 1 | `beanies` |
+| `set_organ_name` | 1 | `Tyler` |
+| `set_savefile_flag` | 2 | `AlienInvasionUnlocked`, `HauntedNightUnlocked`, `PlotFlag_Beanies_Homeless`, `PlotFlag_FrankBeanies`, `RestlessDeadUnlocked` |
+| `set_state` | 10 | `beanies_intensestatic`, `beanies_right`, `blocking`, `butch_left`, `butch_levelup` |
+| `SetDifficulty_0` | 1 |  |
+| `SetDifficulty_1` | 1 |  |
+| `SetDifficulty_2` | 1 |  |
+| `SetDifficulty_3` | 1 |  |
+| `sewers` | 2 | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` |
+| `SewersUnlocked` | 1 |  |
+| `sfx` | 5 | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` |
+| `SFXVolume_Button_Left_Click` | 1 |  |
+| `SFXVolume_Button_Left_Hover` | 1 |  |
+| `SFXVolume_Button_Left_Press` | 1 |  |
+| `SFXVolume_Button_Right_Click` | 1 |  |
+| `SFXVolume_Button_Right_Hover` | 1 |  |
+| `SFXVolume_Button_Right_Press` | 1 |  |
+| `shader` | 1 | `shimmervignette` |
+| `Shadow` | 1 |  |
+| `shake` | 1 |  |
+| `shake1` | 1 |  |
+| `shake2` | 1 |  |
+| `shield` | 31 | `aux`, `max((aux-1)*2, 0)` |
+| `shield_only` | 1 | `true` |
+| `Shit` | 1 |  |
+| `shock` | 1 |  |
+| `shock_left` | 1 |  |
+| `Shop_BuyButton_Hover` | 1 |  |
+| `Shop_BuyItem` | 1 |  |
+| `Shop_CantAfford` | 1 |  |
+| `shop_cheapwater` | 1 |  |
+| `shop_common` | 1 |  |
+| `Shop_ExitButton_Click` | 1 |  |
+| `Shop_ExitButton_Hover` | 1 |  |
+| `shop_level_up` | 1 |  |
+| `Shop_StealButton_Hover` | 1 |  |
+| `shop_water` | 1 |  |
+| `shopkeeper_fights` | 1 |  |
+| `shotgun_mode` | 3 | `true` |
+| `should` | 2 | `need`, `not` |
+| `show_name` | 1 | `true` |
+| `shuffle_tile_order` | 3 | `true` |
+| `side` | 1 | `enemies` |
+| `simple` | 1 | `true` |
+| `simulation_space` | 2 | `global` |
+| `Sing` | 220 |  |
+| `SING_PARAMS` | 220 |  |
+| `Singlular_Team` | 1 |  |
+| `Singlular_Team_EmptyHouse` | 1 |  |
+| `Sitting` | 1 |  |
+| `size` | 20 | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` |
+| `size_end` | 2 |  |
+| `size_in` | 2 |  |
+| `size_out` | 2 |  |
+| `size_start` | 2 |  |
+| `SizeScalePercent` | 1 | `sqrt(1.0+(.05*(X-1)))*100` |
+| `skilltemp` | 2 | `true` |
+| `skip` | 1 |  |
+| `skip_result_screen` | 3 | `true` |
+| `skybox_frame` | 1 | `day_rain`, `day_snow`, `day_thunderstorm`, `day_windy` |
+| `slide` | 1 |  |
+| `slime` | 1 | `auto` |
+| `slip_through` | 1 |  |
+| `slot` | 13 | `face`, `head`, `neck`, `random_empty`, `random_empty_armor` |
+| `SlotResult_Explode` | 1 |  |
+| `SlotResult_Jackpot_Coins` | 1 |  |
+| `SlotResult_Nothing` | 1 |  |
+| `SlotResult_RandomPickup` | 1 |  |
+| `small` | 19 |  |
+| `Small` | 2 |  |
+| `SmallAttic` | 1 |  |
+| `SmallBirdPool` | 1 |  |
+| `SmallCompletionCheckmarkTooltip` | 1 |  |
+| `SmallHolding` | 1 |  |
+| `SmallHoldingCat` | 1 |  |
+| `SmallHouse_Attic` | 1 |  |
+| `smallray_clip` | 1 | `Bunkerlight`, `labligtht` |
+| `smallrays` | 1 |  |
+| `smash` | 5 |  |
+| `smile` | 1 |  |
+| `smug` | 1 |  |
+| `smug_left` | 1 |  |
+| `Snake` | 1 |  |
+| `sneak` | 3 |  |
+| `sneak_by` | 1 |  |
+| `sneak_past_alt` | 1 |  |
+| `solo_cat_run` | 1 | `false`, `true` |
+| `song` | 1 |  |
+| `songs_only` | 1 |  |
+| `soul` | 1 |  |
+| `sound` | 9 |  |
+| `sound_event` | 1 | `EatAntidote` |
+| `sounds` | 8 |  |
+| `spawn` | 20 |  |
+| `Spawn_Donate` | 1 |  |
+| `spawn_node` | 1 | `start` |
+| `spawn_object` | 1 |  |
+| `spawn_object_distance_to_ally` | 1 |  |
+| `spawn_object_distance_to_enemy` | 1 |  |
+| `spawn_object_preferred_distance` | 1 |  |
+| `spawn_on_death_hit` | 7 | `false` |
+| `spawn_side` | 11 | `anywhere`, `cats`, `enemies` |
+| `SpawningPhase` | 1 |  |
+| `SpawnScaledRotFly` | 1 |  |
+| `spd` | 43 | `aux` |
+| `SpearRun` | 1 |  |
+| `special` | 20 | `true` |
+| `special_playlist` | 1 | `intros`, `outros` |
+| `special_tile_tag` | 2 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation` |
+| `specific_chapter` | 2 |  |
+| `speculative_inanimate` | 1 | `false` |
+| `speed` | 47 |  |
+| `speed_end` | 1 |  |
+| `speed_of_sound` | 12 |  |
+| `speed_scale` | 2 |  |
+| `speed_start` | 2 |  |
+| `spell` | 1 | `MCHadouken` |
+| `spell0` | 1 | `Roll`, `Spit` |
+| `spell_graphics_override` | 1 |  |
+| `spell_use_groups` | 1 |  |
+| `spells` | 22 |  |
+| `SpellSpawn_ArrowFromAbove` | 1 |  |
+| `SpellSpawn_BigMagicMissileBlast` | 1 |  |
+| `SpellSpawn_Bolt` | 1 |  |
+| `SpellSpawn_BurnTrigger` | 1 |  |
+| `SpellSpawn_Cleanse` | 1 |  |
+| `SpellSpawn_DustPoofLarge` | 1 |  |
+| `SpellSpawn_Earthquake` | 1 |  |
+| `SpellSpawn_Explosion` | 1 |  |
+| `SpellSpawn_FireBlastMedium` | 1 |  |
+| `SpellSpawn_FireBlastMushroom` | 1 |  |
+| `SpellSpawn_FireBlastSmall` | 1 |  |
+| `SpellSpawn_FireSpin` | 1 |  |
+| `SpellSpawn_fx_bloatlasercap` | 1 |  |
+| `SpellSpawn_fx_DigDown` | 1 |  |
+| `SpellSpawn_fx_DigUp` | 1 |  |
+| `SpellSpawn_fx_GravitySlam` | 1 |  |
+| `SpellSpawn_fx_haste` | 1 |  |
+| `SpellSpawn_fx_heretic` | 1 |  |
+| `SpellSpawn_fx_magicSplash` | 1 |  |
+| `SpellSpawn_fx_sandBlows` | 1 |  |
+| `SpellSpawn_fx_slow` | 1 |  |
+| `SpellSpawn_fx_statdown` | 1 |  |
+| `SpellSpawn_fx_statup` | 1 |  |
+| `SpellSpawn_fx_windSpell` | 1 |  |
+| `SpellSpawn_greenlasercap` | 1 |  |
+| `SpellSpawn_greenmegalasercap` | 1 |  |
+| `SpellSpawn_HealBig` | 1 |  |
+| `SpellSpawn_HealMed` | 1 |  |
+| `SpellSpawn_HealSmall` | 1 |  |
+| `SpellSpawn_Holybeam` | 1 |  |
+| `SpellSpawn_HyperBeam` | 1 |  |
+| `SpellSpawn_IceBlast` | 1 |  |
+| `SpellSpawn_IcePoof` | 1 |  |
+| `SpellSpawn_Icequake` | 1 |  |
+| `SpellSpawn_MagicMissleBlast` | 1 |  |
+| `SpellSpawn_ManaHeal` | 1 |  |
+| `SpellSpawn_MeteorFall` | 1 |  |
+| `SpellSpawn_NukeBlastLarge` | 1 |  |
+| `SpellSpawn_PartyExplosion` | 1 |  |
+| `SpellSpawn_PoisonPoof` | 1 |  |
+| `SpellSpawn_Purge` | 1 |  |
+| `SpellSpawn_Slash` | 1 |  |
+| `SpellSpawn_SlotMachine_DeathExplode` | 1 |  |
+| `SpellSpawn_SlotMachine_Explode` | 1 |  |
+| `SpellSpawn_StalactiteFall` | 1 |  |
+| `SpellSpawn_T2Clone` | 1 |  |
+| `SpellSpawn_TakeAim` | 1 |  |
+| `SpellSpawn_thinlasercap` | 1 |  |
+| `SpellSpawn_TwistingFlames` | 1 |  |
+| `SpellSpawn_WaterConduct` | 1 |  |
+| `SpellSpawn_Wave` | 1 |  |
+| `spend_mana_scale` | 1 |  |
+| `spewer` | 1 | `auto` |
+| `spidercat` | 1 |  |
+| `Spiderweb_Break` | 1 |  |
+| `spin_cats` | 1 | `true` |
+| `spin_steps` | 1 |  |
+| `splash_damage` | 11 |  |
+| `splash_damage_aoe_begin` | 3 |  |
+| `spurt` | 1 | `GibsBloodSpurt`, `GibsBloodSpurtHuge`, `PassiveTarSplat`, `VolcanoSpurt_Trail` |
+| `square` | 1 | `true` |
+| `Squirrel` | 1 |  |
+| `SquirrelForm` | 2 |  |
+| `stable_legs` | 1 |  |
+| `stack_key` | 4 | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` |
+| `stack_scale` | 1 |  |
+| `stackable` | 1 | `true` |
+| `stacks` | 52 | `5+bonus_melee_ability_damage`, `X`, `floor(lck/4)`, `item_aux`, `max(min(X+1, item_aux), 0)` |
+| `stacy` | 1 | `auto` |
+| `stagger_multihit_targets` | 5 | `true` |
+| `Standing` | 1 |  |
+| `Standing2` | 1 |  |
+| `Start_Ceiling` | 1 |  |
+| `start_dead` | 2 | `true` |
+| `start_reloaded` | 3 | `true` |
+| `starter_abilities` | 2 |  |
+| `stat` | 26 | `cha`, `coins`, `con`, `dex`, `int` |
+| `stat_max` | 3 |  |
+| `stat_min` | 3 |  |
+| `stat_mods` | 2 |  |
+| `state_health` | 1 |  |
+| `states` | 12 |  |
+| `static` | 1 | `true` |
+| `static_1x1_a` | 1 | `BunkerObjects1`, `CaveRock1`, `CoreObjects1`, `CraterObjects1`, `DesertRocks` |
+| `static_1x1_b` | 1 | `Bricks`, `Bricks3`, `BunkerObjects2`, `CaveRock2`, `CoreObjects2` |
+| `static_1x1_c` | 1 | `Bricks`, `CaveRock3`, `CoreObjects3`, `CraterObjects1`, `DesertRocks` |
+| `static_2x2_a` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigPipes`, `Bunker2x2`, `Core2x2` |
+| `static_2x2_b` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigGravelPile`, `Desert2x2`, `Dumpster` |
+| `static_tall_a` | 1 | `BunkerTall1`, `CoreTall1`, `CraterTall1`, `DesertTall`, `Iceagetall1` |
+| `static_tall_b` | 1 | `BunkerTall2`, `CoreTall2`, `CraterTall2`, `DesertTall2`, `Endt` |
+| `stats` | 33 |  |
+| `status` | 35 | `AddKnockbackToEverything`, `AllDamageCrits`, `AllDamageImmune`, `AllStatsUp`, `AlphaCat` |
+| `status_explosion_override` | 1 | `WaterConduct` |
+| `Status_Unfreeze` | 1 |  |
+| `Status_Unpetrify` | 1 |  |
+| `Status_Unwebbed` | 1 |  |
+| `StatusApply_Bound` | 1 |  |
+| `StatusApply_Charmed` | 1 |  |
+| `StatusApply_Freeze` | 1 |  |
+| `StatusApply_Quivered` | 1 |  |
+| `StatusApply_Reduce` | 1 |  |
+| `StatusApply_Webbed` | 1 |  |
+| `statuses` | 6 |  |
+| `statuses_on_enter_form` | 1 |  |
+| `steven_100` | 1 |  |
+| `Steven_Appear` | 1 |  |
+| `steven_center` | 1 |  |
+| `steven_center_to_offscreen` | 1 |  |
+| `steven_introduction` | 1 |  |
+| `Steven_Leave` | 1 |  |
+| `steven_milliontrashed` | 2 |  |
+| `steven_offscreen_to_center` | 1 |  |
+| `steven_postendgame` | 1 |  |
+| `steven_resummon` | 1 |  |
+| `steven_savescum_1` | 1 |  |
+| `steven_savescum_100` | 1 |  |
+| `steven_savescum_1alt1` | 1 |  |
+| `steven_savescum_1alt2` | 1 |  |
+| `steven_savescum_1alt3` | 1 |  |
+| `steven_savescum_2` | 1 |  |
+| `steven_savescum_2alt1` | 1 |  |
+| `steven_savescum_2alt2` | 1 |  |
+| `steven_savescum_2alt3` | 1 |  |
+| `steven_savescum_3` | 1 |  |
+| `steven_savescum_3alt1` | 1 |  |
+| `steven_savescum_3alt2` | 1 |  |
+| `steven_savescum_3alt3` | 1 |  |
+| `steven_savescum_4` | 1 |  |
+| `steven_savescum_4alt1` | 1 |  |
+| `steven_savescum_4alt2` | 1 |  |
+| `steven_savescum_4alt3` | 1 |  |
+| `steven_savescum_houseboss_1` | 1 |  |
+| `steven_savescum_houseboss_100` | 1 |  |
+| `steven_savescum_houseboss_2` | 1 |  |
+| `steven_savescum_houseboss_3` | 1 |  |
+| `steven_savescum_intro` | 1 |  |
+| `steven_savescum_intro_houseboss` | 1 |  |
+| `steven_unlock_act1_crazy` | 1 |  |
+| `steven_unlock_act1_impossible` | 1 |  |
+| `steven_unlock_act2_crazy` | 1 |  |
+| `steven_unlock_act2_hard` | 1 |  |
+| `steven_unlock_act2_impossible` | 1 |  |
+| `steven_unlock_act3_crazy` | 1 |  |
+| `steven_unlock_act3_hard` | 1 |  |
+| `steven_unlock_act3_impossible` | 1 |  |
+| `StevenRadioIntro` | 1 |  |
+| `sticky` | 1 | `true` |
+| `Stimulation` | 2 |  |
+| `stock_fill_order` | 4 |  |
+| `Stop` | 1 |  |
+| `storage_expansion` | 1 |  |
+| `stored_food_value` | 1 |  |
+| `str` | 39 | `aux` |
+| `str_aux` | 1 | `ModelingClay_Default` |
+| `str_aux_initialize` | 5 | `random_class_ability`, `random_class_passive`, `random_copyable_class_ability`, `random_copyable_colorless_ability`, `random_copyable_colorless_passive` |
+| `str_aux_is_copy_ability` | 1 |  |
+| `str_aux_is_copy_item_active` | 1 | `true` |
+| `str_aux_is_copy_item_icon` | 1 | `true` |
+| `str_aux_is_copy_item_passive` | 1 | `true` |
+| `str_aux_is_copy_passive` | 2 | `true` |
+| `straight_shot` | 11 | `false`, `true` |
+| `StraySpawn` | 1 |  |
+| `strength` | 22 |  |
+| `stun_advances_pattern` | 9 | `false`, `true` |
+| `style` | 1 |  |
+| `sub_ability` | 4 | `CollectiveCounterImpl`, `CollectiveSpinImpl`, `HomingBlasts2_sub`, `HomingBlasts_sub`, `Huddle_Impl` |
+| `subcategory` | 2 |  |
+| `subject_clip` | 27 | `EventSubject` |
+| `subject_frame` | 27 | `a_beggar`, `a_few_coins`, `a_large_poop`, `a_mega_large_poop`, `a_poop` |
+| `subject_frame_inner` | 1 |  |
+| `SuccessfulEquipItem_Collar` | 1 |  |
+| `SuccessfulEquipItem_face` | 1 |  |
+| `SuccessfulUnequipItem_Collar` | 1 |  |
+| `SuckMF` | 1 |  |
+| `suffix` | 1 | `!!!` |
+| `supermad` | 1 |  |
+| `suprise` | 1 |  |
+| `surprise` | 1 |  |
+| `surviving_kaiju` | 1 | `pyrophina`, `zaratana` |
+| `sweet_talk` | 1 |  |
+| `swim` | 1 |  |
+| `SwordAndShield` | 1 |  |
+| `SwordAndShield_Primed` | 1 |  |
+| `sync_brain_patterns` | 1 | `true` |
+| `tag` | 55 | `alien`, `angeljunk`, `animal`, `any`, `bird` |
+| `tag_location` | 1 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation`, `HitlerMiniInitial` |
+| `tag_restriction` | 3 | `collective`, `dc_cat`, `dinofamily` |
+| `tags` | 25 | `consumable` |
+| `tail` | 11 |  |
+| `take` | 4 |  |
+| `take_blood` | 1 |  |
+| `take_cats_inside` | 1 |  |
+| `TakeExtraDamage` | 1 |  |
+| `takes_main_turn` | 7 | `false`, `true` |
+| `takes_turns` | 13 | `false`, `true` |
+| `talk` | 1 |  |
+| `talk_to` | 1 |  |
+| `tall` | 2 | `true` |
+| `tall_grass` | 1 |  |
+| `TallGrassTile` | 1 |  |
+| `Tank` | 2 |  |
+| `tank_portrait` | 1 |  |
+| `tankcat` | 1 | `auto` |
+| `tantrum_cry` | 1 |  |
+| `tappytoes` | 1 |  |
+| `Tar` | 1 |  |
+| `TarFull` | 1 |  |
+| `target` | 32 |  |
+| `target_filter` | 2 | `Kitten`, `any` |
+| `target_furthest_valid` | 1 | `true` |
+| `target_killer` | 1 | `true` |
+| `target_mode` | 32 | `direction`, `direction8`, `none`, `random_closest_tile`, `random_farthest_tile` |
+| `target_requires_element` | 2 |  |
+| `target_requires_tag` | 13 | `bishop_hat`, `bowling_ball`, `food`, `hitler_clone`, `hitler_clone_fetus` |
+| `teleport` | 1 |  |
+| `teleport_tracking_halflife` | 1 |  |
+| `template` | 33 | `dash_attack`, `jump_attack`, `jump_move`, `laser`, `leave` |
+| `temporary` | 3 | `false` |
+| `temporary_effects` | 17 |  |
+| `TemporaryItem` | 1 | `BonusAbility`, `TinkererThrow` |
+| `terminator` | 1 |  |
+| `terminator_boss` | 1 |  |
+| `terror` | 1 |  |
+| `test_gamepad_prompts` | 1 |  |
+| `text` | 3 | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` |
+| `TextPopup_COMBAT_POPUP_RUN` | 1 |  |
+| `TextPopup_Reload` | 1 |  |
+| `TextPopup_ReloadMove` | 1 |  |
+| `texture` | 4 |  |
+| `TF_TargetAllies` | 1 |  |
+| `TF_TargetEnemies` | 1 |  |
+| `the` | 2 | `Example`, `PlaySound`, `access`, `effect`, `engine` |
+| `thebloat` | 1 | `auto` |
+| `theend` | 3 | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` |
+| `TheEndUnlocked` | 1 |  |
+| `theshold` | 1 |  |
+| `Thief` | 2 |  |
+| `thief_portrait` | 1 |  |
+| `thiefcat` | 1 | `auto` |
+| `thorns` | 1 |  |
+| `threshold_expr` | 1 | `item_aux` |
+| `threshold_flat` | 5 |  |
+| `threshold_min` | 1 | `X` |
+| `threshold_percent` | 2 |  |
+| `thresholds` | 2 |  |
+| `Throb` | 1 |  |
+| `ThrobbingArteryDone` | 1 |  |
+| `ThrobBubs` | 1 |  |
+| `ThrobHost` | 1 |  |
+| `ThrobNettle` | 1 |  |
+| `throw` | 1 |  |
+| `throw_ability` | 3 | `TinkererThrow` |
+| `throw_consumed_character` | 3 | `true` |
+| `Thunderstorm` | 1 |  |
+| `Tick_Bleed` | 1 |  |
+| `Tick_Bound` | 1 |  |
+| `Tick_Burn` | 1 |  |
+| `Tick_Confusion` | 1 |  |
+| `Tick_DejaVu` | 1 |  |
+| `Tick_Doomed` | 1 |  |
+| `Tick_Exhaustion` | 1 |  |
+| `Tick_Fear` | 1 |  |
+| `Tick_Freeze` | 1 |  |
+| `Tick_Hex` | 1 |  |
+| `Tick_Immobile` | 1 |  |
+| `Tick_Leeches` | 1 |  |
+| `Tick_ManaLeeches` | 1 |  |
+| `Tick_Poison` | 1 |  |
+| `Tick_Reflect` | 1 |  |
+| `Tick_Rot` | 1 |  |
+| `Tick_Sleeping` | 1 |  |
+| `Tick_SoulLink` | 1 |  |
+| `Tick_Stealth` | 1 |  |
+| `Tick_Stun` | 1 |  |
+| `Tick_Webbed` | 1 |  |
+| `tickdown_this_turn` | 1 | `true` |
+| `TieDyeBandana` | 1 |  |
+| `tile` | 10 | `BrambleTile`, `CreepTile`, `DirtTile`, `FireTile`, `FlowerTile` |
+| `tile_desire_cost` | 1 |  |
+| `tile_layer` | 1 |  |
+| `tileset` | 1 | `alley`, `boneyard`, `bunker`, `caves`, `core` |
+| `time` | 3 |  |
+| `time_machine` | 4 |  |
+| `timemachine` | 1 |  |
+| `TimerChallengeCountdown_0` | 1 |  |
+| `TimerChallengeCountdown_1` | 1 |  |
+| `TimerChallengeCountdown_2` | 1 |  |
+| `TimerChallengeCountdown_3` | 1 |  |
+| `TimerChallengeCountdown_4` | 1 |  |
+| `TimerChallengeCountdown_5` | 1 |  |
+| `tink_aggression` | 2 |  |
+| `tink_basestats` | 2 |  |
+| `tink_begin_accepting_cats` | 1 |  |
+| `tink_inbreeding` | 2 |  |
+| `tink_left` | 1 |  |
+| `tink_left_to_offscreen` | 1 |  |
+| `tink_left_to_right` | 1 |  |
+| `tink_max1` | 1 |  |
+| `tink_max10` | 1 |  |
+| `tink_max2` | 1 |  |
+| `tink_max3` | 1 |  |
+| `tink_max4` | 1 |  |
+| `tink_max5` | 1 |  |
+| `tink_max6` | 1 |  |
+| `tink_max7` | 1 |  |
+| `tink_max8` | 1 |  |
+| `tink_max9` | 1 |  |
+| `tink_max_intro` | 2 |  |
+| `tink_max_repeating` | 2 |  |
+| `tink_offscreen_to_left` | 1 |  |
+| `tink_offscreen_to_right` | 1 |  |
+| `tink_prettybow` | 2 |  |
+| `tink_relationships` | 2 |  |
+| `tink_right` | 1 |  |
+| `tink_right_to_left` | 1 |  |
+| `tink_right_to_offscreen` | 1 |  |
+| `tink_sexuality` | 2 |  |
+| `tink_tags` | 2 |  |
+| `tink_terminator` | 1 |  |
+| `tink_tina2` | 1 |  |
+| `tink_tips_appeal` | 1 |  |
+| `tink_tips_basestats` | 1 |  |
+| `tink_tips_cleaning` | 1 |  |
+| `tink_tips_comfort` | 1 |  |
+| `tink_tips_health` | 1 |  |
+| `tink_tips_inbreeding` | 1 |  |
+| `tink_tips_intro` | 1 |  |
+| `tink_tips_multiclassing` | 1 |  |
+| `tink_tips_mutation` | 1 |  |
+| `tink_tips_stimulation` | 1 |  |
+| `Tinkerer` | 2 |  |
+| `tinkerer_0` | 1 | `tinkerer_0_bombs` |
+| `tinkerer_1` | 1 | `tinkerer_1_bombs` |
+| `tinkerer_portrait` | 1 |  |
+| `tinkerercat` | 1 | `auto` |
+| `title` | 27 | `Ability Pool Test`, `Blessing!`, `EVENT_ABEGGAR_NAME`, `EVENT_ACAT_NAME`, `EVENT_AFEWCOINS_NAME` |
+| `to` | 3 | `JarOfNothing`, `Necro_SoulDagger_Charged`, `Necro_SoulDagger_Uncharged` |
+| `Toad` | 1 |  |
+| `TogglableRoundEndExtraTurn` | 1 |  |
+| `ToggleButton_Off_Click` | 1 |  |
+| `ToggleButton_Off_Hover` | 1 |  |
+| `ToggleButton_Off_Press` | 1 |  |
+| `ToggleButton_On_Click` | 1 |  |
+| `ToggleButton_On_Hover` | 1 |  |
+| `ToggleButton_On_Press` | 1 |  |
+| `tooltip_dialog` | 4 | `NPC_JACK_SHOP_TOOLTIP`, `NPC_ORGANGRINDER_SHOP_TOOLTIP`, `NPC_TRACY_SHOP_TOOLTIP` |
+| `tooltip_reference_applier` | 1 | `KEYWORD_ATTRACTION_DESC_REF`, `KEYWORD_LEECHES_DESC_APPLIER`, `KEYWORD_MANALEECHES_DESC_APPLIER` |
+| `tooltip_stackless` | 1 | `KEYWORD_ALPHA_DESC_STACKLESS`, `KEYWORD_ATTRACTION_DESC_STACKLESS`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC_STACKLESS`, `KEYWORD_BLEEDTHORNS_DESC_STACKLESS` |
+| `tooltip_stackless_neg` | 1 | `KEYWORD_DAMAGEDOWN_DESC_STACKLESS`, `KEYWORD_MOVEMENTDOWN_DESC_STACKLESS`, `KEYWORD_TEMPINITDOWN_DESC` |
+| `tooltip_stackless_pos` | 1 | `KEYWORD_DAMAGEUP_DESC_STACKLESS`, `KEYWORD_MOVEMENTUP_DESC_STACKLESS` |
+| `tooltip_stacks` | 1 | `KEYWORD_AMMO_DESC`, `KEYWORD_ATTRACTION_DESC`, `KEYWORD_AUTOREVIVE_DESC`, `KEYWORD_BLASTRESISTANCE_DESC`, `KEYWORD_BLEEDTHORNS_DESC` |
+| `tooltip_stacks_neg` | 1 | `KEYWORD_ALLSTATSDOWN_DESC`, `KEYWORD_CHADOWN_DESC`, `KEYWORD_CONDOWN_DESC`, `KEYWORD_DAMAGEDOWN_DESC`, `KEYWORD_DEXDOWN_DESC` |
+| `tooltip_stacks_pos` | 1 | `KEYWORD_ALLSTATSUP_DESC`, `KEYWORD_CHAUP_DESC`, `KEYWORD_CONUP_DESC`, `KEYWORD_DAMAGEUP_DESC`, `KEYWORD_DEXUP_DESC` |
+| `tooltip_stacks_singular` | 1 | `KEYWORD_AUTOREVIVE_DESC_SINGULAR`, `KEYWORD_BLIND_DESC_STACKLESS`, `KEYWORD_BONUSMOVE_DESC`, `KEYWORD_CHARGEFISTS_DESC_SINGULAR`, `KEYWORD_COUNTER_DESC` |
+| `tooltip_values` | 2 |  |
+| `toss_direction_restriction` | 2 | `backwards`, `forwards` |
+| `total_distance_moved` | 1 |  |
+| `touch` | 2 |  |
+| `towards` | 1 |  |
+| `track_target` | 3 | `true` |
+| `tracking_acquisition_halflife` | 1 |  |
+| `tracy_blankcollar1` | 2 |  |
+| `tracy_blankcollar2` | 2 |  |
+| `tracy_blankcollar3` | 2 |  |
+| `tracy_foodbonus1` | 1 |  |
+| `tracy_foodstorage1` | 2 |  |
+| `tracy_foodstorage10` | 2 |  |
+| `tracy_foodstorage2` | 2 |  |
+| `tracy_foodstorage3` | 2 |  |
+| `tracy_foodstorage4` | 2 |  |
+| `tracy_foodstorage5` | 2 |  |
+| `tracy_foodstorage6` | 2 |  |
+| `tracy_foodstorage7` | 2 |  |
+| `tracy_foodstorage8` | 2 |  |
+| `tracy_foodstorage9` | 2 |  |
+| `tracy_idol1` | 2 |  |
+| `tracy_idol2` | 2 |  |
+| `tracy_idol3` | 2 |  |
+| `tracy_idol4` | 2 |  |
+| `tracy_idol5` | 2 |  |
+| `tracy_idol6` | 2 |  |
+| `tracy_idol7` | 2 |  |
+| `tracy_introduction` | 1 |  |
+| `tracy_kaijufight` | 1 |  |
+| `tracy_max1` | 1 |  |
+| `tracy_max2` | 1 |  |
+| `tracy_max3` | 1 |  |
+| `tracy_max4` | 1 |  |
+| `tracy_max5` | 1 |  |
+| `tracy_max_intro` | 2 |  |
+| `tracy_max_repeating` | 2 |  |
+| `tracy_special_item` | 1 |  |
+| `trample_allies_too` | 2 | `true` |
+| `trampy` | 1 | `auto` |
+| `transform` | 1 | `TheChild_TransformBoris` |
+| `Transformed` | 1 |  |
+| `Transition_Adventure_Depart` | 1 |  |
+| `transitional` | 1 |  |
+| `TransitionEnter_BattleInTransition` | 1 |  |
+| `TransitionEnter_CircleTransition` | 1 |  |
+| `TransitionEnter_DefendHouseTransition` | 1 |  |
+| `TransitionEnter_DepartTransition` | 1 |  |
+| `TransitionEnter_EndDayTransition` | 1 |  |
+| `TransitionEnter_EventBattleTransition` | 1 |  |
+| `TransitionEnter_EventInTransition` | 1 |  |
+| `TransitionEnter_EventOutTransition` | 1 |  |
+| `TransitionEnter_ItemInTransition` | 1 |  |
+| `TransitionEnter_ItemOutTransition` | 1 |  |
+| `TransitionEnter_LevelUpInTransition` | 1 |  |
+| `TransitionEnter_LevelUpOutTransition` | 1 |  |
+| `TransitionEnter_QuickSwipeTransition` | 1 |  |
+| `TransitionEnter_QuitToMenuTransition` | 1 |  |
+| `TransitionEnter_ShopInTransition` | 1 |  |
+| `TransitionEnter_ShopOutTransition` | 1 |  |
+| `TransitionExit_BattleInTransition` | 1 |  |
+| `TransitionExit_CircleTransition` | 1 |  |
+| `TransitionExit_DefendHouseTransition` | 1 |  |
+| `TransitionExit_DepartTransition` | 1 |  |
+| `TransitionExit_EndDayTransition` | 1 |  |
+| `TransitionExit_EventBattleTransition` | 1 |  |
+| `TransitionExit_EventInTransition` | 1 |  |
+| `TransitionExit_EventOutTransition` | 1 |  |
+| `TransitionExit_ItemInTransition` | 1 |  |
+| `TransitionExit_ItemOutTransition` | 1 |  |
+| `TransitionExit_LevelUpInTransition` | 1 |  |
+| `TransitionExit_LevelUpOutTransition` | 1 |  |
+| `TransitionExit_QuickSwipeTransition` | 1 |  |
+| `TransitionExit_QuitToMenuTransition` | 1 |  |
+| `TransitionExit_ShopInTransition` | 1 |  |
+| `TransitionExit_ShopOutTransition` | 1 |  |
+| `transitions` | 12 |  |
+| `trap` | 2 | `BearTrap`, `LandMine`, `WaterKittenTrap`, `WebTrap` |
+| `traverse` | 1 |  |
+| `treasure` | 2 |  |
+| `Treasure_ExitButton_Click` | 1 |  |
+| `Treasure_ExitButton_Hover` | 1 |  |
+| `treasure_room` | 1 | `true` |
+| `triattack` | 1 |  |
+| `trigger_battle_start` | 1 | `true` |
+| `trigger_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` |
+| `trigger_npc_sequence` | 1 | `beanies_begin_accepting_cats`, `beanies_bombquest_2`, `beanies_bombquest_3`, `beanies_bombquest_amnesia`, `beanies_bombquest_begin` |
+| `trigger_npc_sequence_tomorrow` | 1 | `butch_boneyard_intro`, `frank_caves_intro`, `jack_desert_intro`, `organ_boneyard_intro` |
+| `trigger_unlock` | 1 | `nuke_quest_get_nuke`, `nuke_quest_loop`, `quest_begin_amplifier2`, `quest_begin_receiver2`, `quest_begin_transmitter2` |
+| `triggering` | 2 | `at`, `chooses`, `file`, `from`, `here` |
+| `triggers_limit` | 1 |  |
+| `trinket` | 2 | `MCHadouken`, `MonkStyleChanger` |
+| `try_again_attack_rat` | 1 |  |
+| `try_again_melee_move` | 1 |  |
+| `tumor_object` | 1 | `MotherTumor` |
+| `Turkey` | 2 |  |
+| `turnon` | 2 |  |
+| `turns` | 27 |  |
+| `Turtle` | 1 |  |
+| `Turtled` | 1 |  |
+| `tutorial` | 1 | `AREA_NAME_TUTORIAL` |
+| `tutorial_cat_dies` | 1 |  |
+| `tutorial_levelup_active_pool` | 1 |  |
+| `tutorial_levelup_active_pool_2` | 1 |  |
+| `tutorial_levelup_passive_pool` | 1 |  |
+| `TVBotDie` | 1 |  |
+| `TVBotDumb` | 1 |  |
+| `TVBotObey` | 1 |  |
+| `TVBotStop` | 1 |  |
+| `Twister_fling` | 1 |  |
+| `Twister_loop` | 1 |  |
+| `Twister_move` | 1 |  |
+| `two_fronts` | 1 | `true` |
+| `two_fronts_switch` | 1 | `true` |
+| `TwoAlive` | 1 |  |
+| `TwoEyes` | 1 |  |
+| `type` | 87 | `attack`, `battle`, `blankcollar`, `bonus_rare_item`, `boss` |
+| `type_icon` | 16 | `attack`, `buff`, `debuff`, `defense`, `heal` |
+| `UISFX_BeaniesAppear` | 1 |  |
+| `UISFX_BeaniesAway` | 1 |  |
+| `UISFX_ButchHint` | 1 |  |
+| `UISFX_ButchHintDelay1` | 1 |  |
+| `UISFX_ButchHintDelay2` | 1 |  |
+| `UISFX_ButchHintDelay4` | 1 |  |
+| `UISFX_ButchMove` | 1 |  |
+| `UISFX_ButchMoveAway` | 1 |  |
+| `UISFX_ButchMoveHint` | 1 |  |
+| `UISFX_ButchMoveHint2` | 1 |  |
+| `UISFX_EndTurnShow` | 1 |  |
+| `uncapturable` | 1 | `false`, `true` |
+| `uncommon` | 3 |  |
+| `uncounterable` | 1 | `true` |
+| `Unflip` | 1 |  |
+| `unique` | 2 | `true` |
+| `unknown` | 8 |  |
+| `Unlit` | 1 |  |
+| `unlit` | 1 | `true` |
+| `unlock_ability` | 1 | `BallOfSpiders`, `Bump`, `Ethereal`, `HundredHandSlap`, `HyperBeam` |
+| `unlock_act_difficulty` | 1 |  |
+| `unlock_boss` | 1 | `bumblefoot`, `gambit`, `infestedduo`, `jestercat`, `queenhippo` |
+| `unlock_class` | 1 | `Butcher`, `Druid`, `Jester`, `Medic`, `Monk` |
+| `unlock_controls` | 6 |  |
+| `unlock_item` | 1 | `MomsKnife` |
+| `unlock_item_immediate` | 1 | `AnointingOil`, `BagOfBags`, `BagOfSeeds`, `BallOfYarn`, `BallPeenHammer` |
+| `unlock_levelgroup` | 1 | `bigsharklevels` |
+| `unlock_mouse` | 1 |  |
+| `unlock_npc_tomorrow` | 1 | `beanies`, `jack`, `steven`, `tracy` |
+| `unlock_passive` | 1 | `AlphaStrike`, `ArmorSpecialist`, `Bouncer`, `ButchersSoul`, `ClericsSoul` |
+| `unlock_quest_item` | 1 | `BlackShard`, `CryogenicTimeChamber_Empty`, `GuillotinasHead`, `JarOfRadiation`, `Nuke` |
+| `unlock_room` | 1 | `Attic`, `Basement0`, `Basement1`, `Basement2`, `Basement3` |
+| `unlock_song` | 1 | `alone_in_the_dark`, `angel_wings`, `bolt_of_lightning`, `brush_your_teeth`, `chaos` |
+| `unlockcheck_on_complete` | 1 | `map_unlock_junkyard` |
+| `Unmounted` | 1 |  |
+| `unprompted` | 8 |  |
+| `unprompted1` | 1 |  |
+| `unprompted2` | 1 |  |
+| `unprompted3` | 1 |  |
+| `unprompted4` | 1 |  |
+| `unprompted5` | 1 |  |
+| `unprompted6` | 1 |  |
+| `unprompted_a` | 4 |  |
+| `unprompted_b` | 4 |  |
+| `unprompted_c` | 4 |  |
+| `unprompted_d` | 4 |  |
+| `unprompted_e` | 4 |  |
+| `unprompted_f` | 4 |  |
+| `unprompted_g` | 4 |  |
+| `unprompted_h` | 4 |  |
+| `unprompted_i` | 4 |  |
+| `Unwashed` | 1 |  |
+| `Up` | 3 |  |
+| `upgrade_storage_1` | 2 |  |
+| `upgrade_storage_2` | 2 |  |
+| `upgrade_storage_3` | 2 |  |
+| `upgrade_storage_4` | 2 |  |
+| `upgrade_storage_5` | 2 |  |
+| `upgrade_storage_6` | 2 |  |
+| `upgrade_storage_7` | 2 |  |
+| `upgrade_storage_max1` | 1 |  |
+| `upgrade_storage_max2` | 1 |  |
+| `upgrade_storage_max3` | 1 |  |
+| `upgrade_storage_max4` | 1 |  |
+| `upgrade_storage_max5` | 1 |  |
+| `upgrade_storage_repeating_crazy` | 2 |  |
+| `upgrade_storage_repeating_hard` | 2 |  |
+| `upgrade_storage_repeating_impossible` | 2 |  |
+| `upgrade_storage_repeating_intro` | 2 |  |
+| `upgrade_storage_repeating_normal` | 2 |  |
+| `upgrade_straight_shot_to_boomerang` | 2 | `true` |
+| `upgrade_straight_shot_to_piercing` | 6 | `true` |
+| `upgrade_yourself` | 1 |  |
+| `upgraded` | 4 | `true` |
+| `use_ai` | 2 | `true` |
+| `use_attack_after_used_weapon` | 1 |  |
+| `use_item` | 1 |  |
+| `use_toilet_con` | 1 |  |
+| `use_toilet_str` | 1 |  |
+| `use_turn_animations` | 2 | `true` |
+| `use_weapon` | 2 |  |
+| `utility` | 1 | `PlayerSpawn` |
+| `value` | 6 | `cha`, `con`, `dex`, `int`, `item_aux+1` |
+| `variant_of` | 47 | `Absorb`, `AbsorbSoul`, `Adoubement`, `Aftershock`, `AirBurst` |
+| `verify_target` | 1 | `true` |
+| `very_rare` | 3 |  |
+| `verycloseup` | 3 |  |
+| `verymad` | 1 |  |
+| `Victory_Cheer1` | 1 |  |
+| `Victory_Cheer2` | 1 |  |
+| `Victory_Cheer3` | 1 |  |
+| `Victory_Cheer4` | 1 |  |
+| `Victory_Cheer5` | 1 |  |
+| `Victory_Cheer6` | 1 |  |
+| `view_bleeding_characters_as_enemies` | 2 | `true` |
+| `view_bugs_as_enemies` | 1 | `true` |
+| `virtual_abilities` | 8 |  |
+| `virtual_head_position` | 1 |  |
+| `visit_chapter` | 1 | `dimensionx`, `future`, `iceage`, `theend` |
+| `visually_spiky` | 2 | `true` |
+| `voice` | 10 | `ankylosaurus`, `female1`, `female10`, `female12`, `female17` |
+| `voice_0` | 9 |  |
+| `voice_1` | 9 |  |
+| `voice_2` | 9 |  |
+| `voice_3` | 9 |  |
+| `voice_4` | 9 |  |
+| `voice_5` | 9 |  |
+| `voice_6` | 9 |  |
+| `voice_7` | 9 |  |
+| `voice_8` | 9 |  |
+| `voice_9` | 9 |  |
+| `voice_a` | 9 |  |
+| `voice_b` | 9 |  |
+| `voice_c` | 9 |  |
+| `voice_d` | 9 |  |
+| `voice_e` | 9 |  |
+| `voice_f` | 9 |  |
+| `voice_g` | 9 |  |
+| `voice_h` | 9 |  |
+| `voice_i` | 9 |  |
+| `voice_j` | 9 |  |
+| `voice_k` | 9 |  |
+| `voice_l` | 9 |  |
+| `voice_m` | 9 |  |
+| `voice_n` | 9 |  |
+| `voice_o` | 9 |  |
+| `voice_p` | 9 |  |
+| `voice_q` | 9 |  |
+| `voice_r` | 9 |  |
+| `voice_s` | 9 |  |
+| `voice_t` | 9 |  |
+| `voice_u` | 9 |  |
+| `voice_v` | 9 |  |
+| `voice_w` | 9 |  |
+| `voice_x` | 9 |  |
+| `voice_y` | 9 |  |
+| `voice_z` | 9 |  |
+| `VolcanoAntennaAttached` | 2 |  |
+| `volume` | 13 | `SE_Interstitial_RaiseSwish`, `and`, `between`, `extra_events`, `for` |
+| `volume_adjustment` | 2 |  |
+| `volume_falloff_range` | 12 |  |
+| `volume_range` | 2 |  |
+| `w1` | 1 |  |
+| `w2` | 1 |  |
+| `w3` | 1 |  |
+| `w4` | 1 |  |
+| `w5` | 1 |  |
+| `w6` | 1 |  |
+| `wait_for` | 2 | `action_selected`, `cat_turn`, `choose_cat1`, `choose_cat2`, `click` |
+| `wait_for_cancel` | 4 |  |
+| `wait_till_next_round_to_update_turns` | 2 | `true` |
+| `wait_till_turn` | 1 | `true` |
+| `wallet_size` | 1 |  |
+| `WallOfFleshDone` | 1 |  |
+| `warrior_tag` | 2 | `bungawarrior`, `finalboss_clonecat` |
+| `Washed` | 1 |  |
+| `Washer` | 1 |  |
+| `Water` | 2 |  |
+| `water_alt_shader` | 1 | `blood` |
+| `water_alt_shroud` | 1 | `BloodShroud` |
+| `water_alt_tile` | 1 | `BloodTile` |
+| `weak_threshold` | 10 |  |
+| `wealth` | 1 |  |
+| `weapon` | 4 | `AstroTaser`, `ButcherHook`, `CaveCatClub`, `GunslingerPistol`, `MonkFist` |
+| `weather` | 1 |  |
+| `weather_element_alt` | 1 |  |
+| `weather_event` | 1 |  |
+| `weather_roll` | 1 |  |
+| `weightless` | 1 | `true` |
+| `weights` | 6 | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` |
+| `WeirdEgg` | 1 |  |
+| `welcome` | 1 |  |
+| `welcome_boneyard` | 1 |  |
+| `welcome_bunker` | 1 |  |
+| `welcome_caves` | 1 |  |
+| `welcome_core` | 1 |  |
 | `welcome_crater` | 1 |  |
 | `welcome_desert` | 1 |  |
-| `welcome_iceage` | 1 |  |
-| `purchase_item_a` | 1 |  |
-| `cant_afford_moon` | 1 |  |
-| `cant_afford_iceage` | 1 |  |
-| `cant_afford_b` | 1 |  |
-| `welcome_theend` | 1 |  |
-| `welcome_junkyard` | 1 |  |
-| `purchase_item_theend` | 1 |  |
-| `welcome_core` | 1 |  |
-| `welcome_lab` | 1 |  |
-| `set_npc_voice` | 1 | `beanies` |
-| `cant_afford_c` | 1 |  |
-| `cant_afford_theend` | 1 |  |
-| `purchase_item_iceage` | 1 |  |
-| `welcome_boneyard` | 1 |  |
-| `purchase_item_c` | 1 |  |
-| `cant_afford_a` | 1 |  |
-| `purchase_item_d` | 1 |  |
 | `welcome_future` | 1 |  |
-| `welcome_bunker` | 1 |  |
-| `welcome_moon` | 1 |  |
-| `welcome_water` | 1 |  |
-| `purchase_item_b` | 1 |  |
-| `welcome_sewers` | 1 |  |
-| `cant_afford_d` | 1 |  |
-| `tracy_max3` | 1 |  |
-| `tracy_max5` | 1 |  |
-| `tracy_introduction` | 1 |  |
-| `tracy_foodbonus1` | 1 |  |
-| `tracy_max2` | 1 |  |
-| `tracy_kaijufight` | 1 |  |
-| `tracy_max4` | 1 |  |
-| `tracy_max1` | 1 |  |
-| `movieclip_timescale` | 1 |  |
-| `ParticleAttractor` | 1 |  |
-| `max_particles` | 1 |  |
-| `ownership` | 1 | `local` |
-| `axis` | 1 |  |
-| `emit_timespread` | 1 |  |
-| `alpha_start` | 1 |  |
-| `emit_shell` | 1 |  |
-| `is_3D` | 1 | `false` |
-| `continual_emission` | 1 | `true` |
-| `speed_end` | 1 |  |
-| `depth_bias` | 1 |  |
-| `towards` | 1 |  |
-| `emit_radius` | 1 |  |
-| `pushforce` | 1 |  |
-| `emit_timespread_curve` | 1 | `ease_out` |
-| `rotation_speed_start` | 1 |  |
-| `plane` | 1 | `back`, `right` |
-| `ParticleGlobalForce` | 1 |  |
-| `spurt` | 1 | `GibsBloodSpurt`, `GibsBloodSpurtHuge`, `PassiveTarSplat`, `VolcanoSpurt_Trail` |
-| `flat_movement` | 1 | `true` |
-| `chain_chance` | 1 |  |
-| `inherit_speed` | 1 |  |
-| `force_end` | 1 |  |
-| `force_start` | 1 |  |
-| `ParticleTornadoForce` | 1 |  |
-| `point` | 1 |  |
-| `ParticleCharacterCollision` | 1 |  |
-| `unlit` | 1 | `true` |
-| `character_sphere_offset` | 1 |  |
-| `rotation_dampening` | 1 |  |
-| `inherit_velocity` | 1 |  |
-| `alpha_end` | 1 |  |
-| `material` | 1 | `distorter`, `mist` |
-| `emitshape_scale` | 1 |  |
-| `rotation_start` | 1 |  |
-| `end_on_collision` | 1 | `true` |
-| `ParticleLineCollisions` | 1 |  |
-| `square` | 1 | `true` |
-| `SpawnScaledRotFly` | 1 |  |
-| `schadenfreude_scaled_stats` | 1 |  |
-| `desc_multiclass` | 1 | `PASSIVE_BARBED2_MULTICLASS_DESC`, `PASSIVE_BARBED_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK2_MULTICLASS_DESC`, `PASSIVE_GRAPPLINGHOOK_MULTICLASS_DESC`, `PASSIVE_HARPOONER2_MULTICLASS_DESC` |
-| `advantage_softcap` | 1 |  |
-| `TakeExtraDamage` | 1 |  |
-| `marked` | 1 |  |
-| `count_self` | 1 | `true` |
-| `addstacks` | 1 |  |
-| `can_apply_to_anything` | 1 | `true` |
-| `advantage_polarity` | 1 |  |
-| `cooldown` | 1 |  |
-| `innate` | 1 |  |
-| `auto_plus_signs_on_name` | 1 | `false` |
-| `SizeScalePercent` | 1 | `sqrt(1.0+(.05*(X-1)))*100` |
-| `learned` | 1 |  |
-| `lock_item_slot` | 1 |  |
-| `grant_ability` | 1 | `Rest` |
-| `exclude_basicattack` | 1 | `true` |
-| `TogglableRoundEndExtraTurn` | 1 |  |
-| `count_overkill` | 1 | `true` |
-| `ignore_during_movement` | 1 | `true` |
-| `cap` | 1 |  |
-| `ally_multiplier` | 1 |  |
-| `kills` | 1 |  |
-| `multiplier` | 1 |  |
-| `Electric` | 1 |  |
-| `Earth` | 1 |  |
-| `Wind` | 1 |  |
-| `AOEPuddle` | 1 | `X-1` |
-| `period` | 1 |  |
-| `Gravity` | 1 |  |
-| `Grass` | 1 |  |
-| `Shadow` | 1 |  |
-| `triattack` | 1 |  |
-| `Ice` | 1 |  |
-| `HealAlliesEachTurn` | 1 |  |
-| `scaled` | 1 | `true` |
-| `theshold` | 1 |  |
-| `damage_multiplier` | 1 |  |
-| `HolyDamageBlessing` | 1 |  |
-| `exclude_self` | 1 | `false` |
-| `DelayedWind` | 1 |  |
-| `empty_armor_scaled_stats` | 1 |  |
-| `triggers_limit` | 1 |  |
-| `Drag` | 1 |  |
-| `RepressedMemoriesMetronome` | 1 |  |
-| `JoinSpawnerFaction` | 1 |  |
-| `AddFilledMaxHealth` | 1 |  |
-| `pop_corpses` | 1 | `true` |
-| `on_break` | 1 |  |
-| `on_throw` | 1 |  |
-| `AddElement` | 1 | `Fire`, `Napalm` |
-| `AddElementsToWeapon` | 1 | `Electric` |
-| `tinkerer_0` | 1 | `tinkerer_0_bombs` |
-| `spell_graphics_override` | 1 |  |
-| `SafeExplosionIfHitSomething` | 1 |  |
-| `status_explosion_override` | 1 | `WaterConduct` |
-| `tinkerer_1` | 1 | `tinkerer_1_bombs` |
-| `min_difficulty` | 1 |  |
-| `classes` | 1 |  |
-| `save_file_flag` | 1 | `AntennaQuest_Orb`, `AntennaQuest_Rift`, `AntennaQuest_Volcano`, `MeatWorldQuest_Gristle`, `MeatWorldQuest_Leech` |
-| `areas` | 1 |  |
-| `complete_house_boss` | 1 | `guillotina_1`, `guillotina_2`, `guillotina_3`, `pyrophina`, `pyrophina_vs_zaratana` |
-| `adventure_unlock` | 1 | `class_unlock_monocolorless_face`, `class_unlock_monocolorless_head`, `class_unlock_monocolorless_neck`, `map_unlock_iceage`, `nuke_quest_complete` |
-| `solo_cat_run` | 1 | `false`, `true` |
-| `mono_cat_run` | 1 | `false`, `true` |
-| `max_npc` | 1 | `Beanies`, `Butch`, `Frank`, `Jack`, `OrganGrinder` |
-| `complete_checkmarks` | 1 |  |
-| `levelup` | 1 |  |
-| `keeper` | 1 |  |
-| `treasure_room` | 1 | `true` |
-| `LevelUp` | 1 |  |
-| `npc_script` | 1 | `tracy_adventure_shop_script.gon` |
+| `welcome_iceage` | 1 |  |
+| `welcome_junkyard` | 1 |  |
+| `welcome_jurassic` | 1 |  |
+| `welcome_lab` | 1 |  |
 | `welcome_message` | 1 | `welcome_water`, `welcome_water_cheap` |
-| `shopkeeper_fights` | 1 |  |
-| `delay_enable_tooltips` | 1 | `true` |
-| `empty` | 1 |  |
-| `Furniture` | 1 |  |
-| `pick_n` | 1 |  |
-| `common_item` | 1 |  |
-| `guaranteed_food` | 1 |  |
-| `breakdown2` | 1 |  |
-| `breakdown3` | 1 |  |
-| `allow_duplicates` | 1 | `true` |
-| `mostly_food` | 1 |  |
-| `breakdown4` | 1 |  |
-| `ID` | 1 | `empty`, `for`, `is`, `reserved` |
-| `utility` | 1 | `PlayerSpawn` |
-| `tag_location` | 1 | `ChaosValidPosition`, `FinalBossCloneSpot`, `FinalBossTheChildLocation`, `HitlerMiniInitial` |
-| `weather_element_alt` | 1 |  |
-| `early_spawn` | 1 | `true` |
-| `forced_placement` | 1 | `true` |
-| `gender` | 1 | `any`, `male` |
-| `no_breed` | 1 | `true` |
-| `nouns` | 1 |  |
-| `format2` | 1 | `TEAMNAME_FORMAT2` |
-| `format` | 1 | `TEAMNAME_FORMAT` |
-| `adjectives` | 1 |  |
-| `tile_layer` | 1 |  |
-| `BlankTile` | 1 |  |
-| `GrassTile` | 1 |  |
-| `TallGrassTile` | 1 |  |
-| `static_tall_b` | 1 | `BunkerTall2`, `CoreTall2`, `CraterTall2`, `DesertTall2`, `Endt` |
-| `static_2x2_a` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigPipes`, `Bunker2x2`, `Core2x2` |
-| `Firefly` | 1 |  |
-| `smallray_clip` | 1 | `Bunkerlight`, `labligtht` |
-| `static_1x1_b` | 1 | `Bricks`, `Bricks3`, `BunkerObjects2`, `CaveRock2`, `CoreObjects2` |
-| `DecayTime` | 1 |  |
-| `reverb` | 1 |  |
-| `Lighting` | 1 |  |
-| `global_particles` | 1 |  |
-| `ambient` | 1 |  |
-| `boss_background_alt` | 1 | `CoreBossBG` |
-| `background_shader` | 1 | `meatpulse_ground` |
-| `background_extra_shader` | 1 | `crazyeye`, `meatpulse`, `water` |
-| `static_tall_a` | 1 | `BunkerTall1`, `CoreTall1`, `CraterTall1`, `DesertTall`, `Iceagetall1` |
-| `static_1x1_a` | 1 | `BunkerObjects1`, `CaveRock1`, `CoreObjects1`, `CraterObjects1`, `DesertRocks` |
-| `ReverbDelay` | 1 |  |
-| `debris` | 1 | `CaveDebris`, `Debris`, `Debris10`, `Debris11`, `Debris12` |
-| `water_alt_tile` | 1 | `BloodTile` |
-| `global_objects` | 1 |  |
-| `Fly` | 1 |  |
-| `water_alt_shroud` | 1 | `BloodShroud` |
-| `event_piece_frame` | 1 | `alley`, `bunker`, `caves`, `core`, `crater` |
-| `Cockroach` | 1 |  |
-| `combat_ui_background` | 1 | `CoreUI`, `DesertUI`, `LabUI`, `MoonUI`, `UI_Background` |
-| `combat_background` | 1 | `AlleyBGTest`, `BoneYardBG`, `BunkerBG`, `CavesBG`, `CoreBG` |
-| `static_2x2_b` | 1 | `BigCaveRock1`, `BigGraveRocks1`, `BigGravelPile`, `Desert2x2`, `Dumpster` |
-| `water_alt_shader` | 1 | `blood` |
-| `static_1x1_c` | 1 | `Bricks`, `CaveRock3`, `CoreObjects3`, `CraterObjects1`, `DesertRocks` |
-| `bigrays` | 1 |  |
-| `smallrays` | 1 |  |
-| `spell0` | 1 | `Roll`, `Spit` |
-| `passive0` | 1 | `HotBlooded`, `SelfAssured` |
-| `base_stats` | 1 |  |
-| `puddle_tile` | 1 | `LavaTile` |
-| `min_radius` | 1 |  |
-| `shader` | 1 | `shimmervignette` |
-| `FloatingDebris` | 1 |  |
-| `requires_framebuffer` | 1 | `false` |
-| `max_radius` | 1 |  |
-| `hint_persistent_elements` | 1 |  |
-| `follow_character_tag` | 1 | `zaratana` |
+| `welcome_moon` | 1 |  |
+| `welcome_sewers` | 1 |  |
+| `welcome_theend` | 1 |  |
+| `welcome_water` | 1 |  |
+| `welcome_water_cheap` | 1 |  |
+| `WereMan` | 1 |  |
+| `wheezies` | 1 |  |
+| `width` | 1 |  |
+| `wince` | 1 |  |
+| `Wind` | 1 |  |
+| `wink` | 1 |  |
+| `wish_genes` | 1 |  |
+| `wish_items` | 1 |  |
+| `wish_levelups` | 1 |  |
+| `wish_strength` | 1 |  |
+| `WishBone` | 1 |  |
+| `with` | 2 | `a`, `base`, `of`, `setting`, `settingh` |
+| `without_orienting` | 1 | `true` |
+| `withstand` | 1 |  |
+| `wolfcat` | 1 |  |
+| `works_with_tech` | 3 | `true` |
+| `worried` | 1 |  |
+| `worried_left` | 1 |  |
+| `X_cant_be_zero` | 9 | `true` |
+| `X_is` | 18 | `alpha_exists`, `basic_attack_damage`, `cast_count`, `current_health`, `current_mana` |
+| `yank_it_out` | 1 |  |
+| `yellow_needle` | 1 |  |
+| `yeticat` | 1 |  |
+| `zaratana_backgroundfootstep` | 1 |  |
+| `Zealot` | 1 |  |
+| `ZealotBomb` | 1 |  |
+| `zodiac` | 1 | `auto` |
+| `zoomedout` | 3 |  |
+| `zoomout_catvolume` | 1 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Properties for configuring event outcomes (rewards, penalties, dialog options, status applications). Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | Game-state flag identifiers for tracking world progression and event states. Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object.|  |
 
 ---
 **Summary: 58 undocumented property keys, 33 missing Enum values**

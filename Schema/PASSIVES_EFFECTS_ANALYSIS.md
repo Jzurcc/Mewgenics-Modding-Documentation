@@ -21,303 +21,303 @@ Three tiers are used:
 
 ### Partially Shared Properties
 
-| Property | Categories | Total Uses |
 | :--- | :--- | :---: |
-| `Brace` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 104 |
-| `Thorns` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 83 |
-| `MeleeRevengeDamage` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 69 |
-| `StatusEachTurnEnd` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 57 |
-| `ElementImmune` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 47 |
-| `Fire` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 35 |
 | `AddStatusToBasicAttack` | `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 222 |
+| `Brace` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 104 |
 | `Trample` | `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 95 |
+| `Metal` | `items`, `passives` | 91 |
+| `Thorns` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 83 |
+| `SpawnOnDeath` | `characters`, `elite_buffs.gon`, `items` | 81 |
+| `MeleeRevengeDamage` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 69 |
 | `HealthRegenUp` | `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 65 |
+| `StatusEachTurnEnd` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 57 |
+| `SpawnOnBattleStart` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 53 |
+| `Robot` | `characters`, `item_setbonuses.gon`, `passives` | 48 |
+| `StatusOnBattleEnd` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 48 |
+| `ElementImmune` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 47 |
+| `StatusOnTookDamage` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 46 |
+| `SpawnThingOnDamage` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 38 |
+| `StatusImmunity` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 38 |
 | `StatusOnKill` | `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 38 |
+| `AddPassivesToMinions` | `item_setbonuses.gon`, `items`, `passives` | 36 |
+| `CounterAttack` | `characters`, `items`, `mutations`, `passives` | 36 |
+| `DeathRattle` | `characters`, `item_setbonuses.gon`, `items`, `passives` | 36 |
+| `Fire` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 35 |
 | `CritChanceUp` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 34 |
+| `EliteTint` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 30 |
 | `RevengeDamage` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `items`, `mutations`, `passives` | 30 |
 | `DodgeChance` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `items`, `mutations`, `passives` | 29 |
-| `DamageUp` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 24 |
-| `InnateElement` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 18 |
-| `SpawnOnBattleStart` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 53 |
-| `StatusOnTookDamage` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 46 |
-| `StatusImmunity` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 38 |
-| `SpawnThingOnDamage` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 38 |
-| `AddElementsToBasicAttack` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 23 |
-| `AddCorpseHealth` | `characters`, `elite_buffs.gon`, `items`, `mutations`, `passives` | 20 |
-| `KineticSpikes` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `items`, `mutations` | 18 |
-| `Poison` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 16 |
-| `PoisonThorns` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 12 |
-| `DepressionAura` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `items`, `mutations`, `passives` | 10 |
-| `KnockbackImmunity` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 8 |
-| `PermanentMadness` | `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 8 |
-| `StatusOnBattleEnd` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 48 |
-| `DeathRattle` | `characters`, `item_setbonuses.gon`, `items`, `passives` | 36 |
-| `CounterAttack` | `characters`, `items`, `mutations`, `passives` | 36 |
+| `AddBonusRange` | `items`, `mutations`, `passives` | 28 |
+| `MulticlassLevelUp` | `mutations`, `passives` | 28 |
+| `StatusEachTurnBegin` | `items`, `mutations`, `passives` | 26 |
 | `AbilityReaction` | `characters`, `items`, `mutations`, `passives` | 25 |
+| `Undead` | `characters`, `items` | 25 |
+| `DamageUp` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 24 |
+| `AddElementsToBasicAttack` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 23 |
+| `AddMovement` | `characters`, `mutations`, `passives` | 23 |
 | `SpawnEachTurn` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 22 |
 | `MissChance` | `characters`, `items`, `mutations`, `passives` | 21 |
-| `Ice` | `characters`, `items`, `mutations`, `passives` | 17 |
-| `PassiveWhenAffectedByElement` | `characters`, `items`, `mutations`, `passives` | 16 |
-| `ReplaceBasicMove` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 16 |
-| `BleedThorns` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 15 |
-| `AllStatsUp` | `characters`, `items`, `mutations`, `passives` | 14 |
-| `AddLevelUpRerolls` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 14 |
-| `ReflectProjectiles` | `characters`, `elite_buffs.gon`, `items`, `mutations` | 14 |
-| `Bleed` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 13 |
-| `Bruise` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 12 |
-| `IgnoreTiles` | `characters`, `items`, `mutations`, `passives` | 12 |
-| `AlphaTurns` | `characters`, `items`, `mutations`, `passives` | 12 |
-| `BackstabImmunity` | `characters`, `item_setbonuses.gon`, `mutations`, `passives` | 12 |
-| `Quivered` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 11 |
-| `MoveTowardsDamageSource` | `characters`, `elite_buffs.gon`, `items`, `passives` | 11 |
-| `SpawnOnBattleStartRandomEmptyTile` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 11 |
-| `StatusOnEndMove` | `characters`, `items`, `mutations`, `passives` | 10 |
-| `Electric` | `characters`, `item_setbonuses.gon`, `mutations`, `passives` | 10 |
-| `Flying` | `characters`, `item_setbonuses.gon`, `items`, `passives` | 10 |
-| `StatusOnDie` | `characters`, `elite_buffs.gon`, `items`, `mutations` | 9 |
-| `ChanceToRevive` | `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 9 |
-| `TileTrail` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `passives` | 8 |
-| `AddKnockbackDamage` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 8 |
-| `StatusIfUnusedMovePoints` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 8 |
-| `AddInitiative` | `characters`, `items`, `mutations`, `passives` | 8 |
-| `MoveOne` | `characters`, `elite_buffs.gon`, `items`, `passives` | 8 |
-| `ClassManaCostReduction` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 7 |
-| `SpeedUp` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `passives` | 7 |
-| `AddTemporaryEffectsToBasicAttack` | `characters`, `items`, `mutations`, `passives` | 7 |
-| `ChanceToBackflip` | `characters`, `items`, `mutations`, `passives` | 6 |
-| `SpawnOnDeath` | `characters`, `elite_buffs.gon`, `items` | 81 |
-| `Robot` | `characters`, `item_setbonuses.gon`, `passives` | 48 |
-| `AddPassivesToMinions` | `item_setbonuses.gon`, `items`, `passives` | 36 |
-| `AddBonusRange` | `items`, `mutations`, `passives` | 28 |
-| `StatusEachTurnBegin` | `items`, `mutations`, `passives` | 26 |
-| `AddMovement` | `characters`, `mutations`, `passives` | 23 |
+| `AddCorpseHealth` | `characters`, `elite_buffs.gon`, `items`, `mutations`, `passives` | 20 |
 | `ArmorDodgeChance` | `item_setbonuses.gon`, `items`, `passives` | 20 |
+| `EliteParticle` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 19 |
 | `WaterWalk` | `characters`, `mutations`, `passives` | 19 |
+| `AddCritMultiplier` | `items`, `passives` | 18 |
+| `InnateElement` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 18 |
+| `KineticSpikes` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `items`, `mutations` | 18 |
+| `Ice` | `characters`, `items`, `mutations`, `passives` | 17 |
+| `attack` | `characters`, `passives` | 16 |
+| `PassiveWhenAffectedByElement` | `characters`, `items`, `mutations`, `passives` | 16 |
+| `Poison` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 16 |
+| `ReplaceBasicMove` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 16 |
 | `SizeScale` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `passives` | 16 |
 | `SpawnThingOnDeath` | `characters`, `items`, `passives` | 16 |
-| `AddManaRegen` | `items`, `mutations`, `passives` | 15 |
-| `ExtraBasicAttacks` | `items`, `mutations`, `passives` | 14 |
-| `AddStatusToAllDamage` | `item_setbonuses.gon`, `items`, `passives` | 13 |
-| `PassiveAtStatThreshold` | `item_setbonuses.gon`, `items`, `passives` | 13 |
-| `DeathRattleRevive` | `characters`, `item_setbonuses.gon`, `items` | 13 |
-| `MoveWhenDamaged` | `characters`, `mutations`, `passives` | 12 |
-| `AddBonusMeleeRange` | `items`, `mutations`, `passives` | 11 |
-| `StatusOnKillEnemy` | `item_setbonuses.gon`, `items`, `passives` | 11 |
-| `StatusAlliesOnBattleStart` | `item_setbonuses.gon`, `items`, `passives` | 10 |
-| `MovementReaction` | `characters`, `items`, `passives` | 10 |
-| `TrinketPassiveMultiplierBonus` | `item_setbonuses.gon`, `items`, `passives` | 10 |
-| `AddTag` | `characters`, `items`, `passives` | 10 |
-| `AddDamageToElementDamage` | `items`, `mutations`, `passives` | 9 |
-| `StatusOnTookDamageFromAbility` | `characters`, `mutations`, `passives` | 9 |
-| `PassiveAtHealthThreshold` | `item_setbonuses.gon`, `items`, `passives` | 9 |
-| `Water` | `characters`, `mutations`, `passives` | 9 |
-| `BoostWeaponDamage` | `items`, `mutations`, `passives` | 9 |
-| `Food` | `characters`, `items`, `passives` | 9 |
-| `ManaCostReduction` | `items`, `mutations`, `passives` | 9 |
-| `StatusEveryXSpellCasts` | `items`, `mutations`, `passives` | 8 |
-| `AddStatusToWeapons` | `characters`, `items`, `passives` | 8 |
-| `DebuffImmunity` | `characters`, `items`, `passives` | 8 |
-| `SetSpellCosts` | `characters`, `items`, `passives` | 8 |
-| `ExtraMovePoints` | `characters`, `items`, `passives` | 8 |
-| `StatusOnCastSpell` | `items`, `mutations`, `passives` | 8 |
-| `MinimumKnockbackFromAllDamage` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon` | 7 |
-| `Burn` | `characters`, `items`, `passives` | 7 |
-| `AutocastEachRound` | `characters`, `item_setbonuses.gon`, `passives` | 7 |
-| `DodgeChance_Status` | `characters`, `items`, `mutations` | 7 |
-| `DelayedAutoRevive` | `characters`, `item_setbonuses.gon`, `items` | 6 |
-| `BackstabCritChance` | `item_setbonuses.gon`, `items`, `passives` | 6 |
-| `AddHiddenTag` | `characters`, `items`, `passives` | 6 |
-| `StunImmunity` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon` | 6 |
-| `StatusOnGainCoins` | `characters`, `items`, `passives` | 6 |
-| `TrinketActiveEffectsMultiplierBonus` | `item_setbonuses.gon`, `items`, `passives` | 6 |
-| `StatusOnAllyCatDeath` | `items`, `mutations`, `passives` | 6 |
-| `FreezePiercing` | `item_setbonuses.gon`, `items`, `passives` | 6 |
-| `FaceShield` | `characters`, `items`, `passives` | 6 |
-| `InjuryImmunity` | `characters`, `items`, `passives` | 6 |
-| `food` | `characters`, `mutations`, `passives` | 5 |
-| `FreePathfindElement` | `characters`, `mutations`, `passives` | 5 |
-| `StatusOnTurnEndIfDidntCastAbilityTypes` | `item_setbonuses.gon`, `items`, `passives` | 5 |
-| `AbilityWhenTaggedCharacterMovesNear` | `characters`, `mutations`, `passives` | 5 |
-| `StatusOnEatFood` | `items`, `mutations`, `passives` | 5 |
-| `DamageNeighborsAfterMove` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `passives` | 4 |
-| `Poop` | `items`, `mutations`, `passives` | 4 |
-| `PassiveAfterXKills` | `item_setbonuses.gon`, `items`, `passives` | 4 |
-| `BuffImmunity` | `characters`, `items`, `passives` | 4 |
-| `FlowersOnEndTurn` | `item_setbonuses.gon`, `items`, `passives` | 4 |
-| `AutoEquipConsumables` | `item_setbonuses.gon`, `items`, `passives` | 4 |
-| `IncreaseSpellRange` | `item_setbonuses.gon`, `items`, `passives` | 4 |
-| `PoopWhenHit` | `items`, `mutations`, `passives` | 4 |
-| `AddStatusToSpells` | `characters`, `items`, `passives` | 4 |
-| `FireTile` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon` | 3 |
-| `ExtraBasicMoves_Status` | `item_setbonuses.gon`, `items`, `passives` | 3 |
-| `MoveAwayFromDamageSource` | `characters`, `mutations`, `passives` | 3 |
-| `LuckUp` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `items` | 3 |
-| `CanRemoveCursedItems` | `items`, `mutations`, `passives` | 3 |
-| `Metal` | `items`, `passives` | 91 |
-| `EliteTint` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 30 |
-| `MulticlassLevelUp` | `mutations`, `passives` | 28 |
-| `Undead` | `characters`, `items` | 25 |
-| `EliteParticle` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 19 |
-| `AddCritMultiplier` | `items`, `passives` | 18 |
-| `attack` | `characters`, `passives` | 16 |
 | `StatusOnBattleStart` | `items`, `passives` | 16 |
-| `HealthMultiplier` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 15 |
+| `AddManaRegen` | `items`, `mutations`, `passives` | 15 |
+| `BleedThorns` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 15 |
 | `Creep` | `characters`, `elite_buffs.gon` | 15 |
+| `HealthMultiplier` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 15 |
 | `ReplaceSpawnedObjects` | `items`, `passives` | 15 |
 | `AbilityOnBattleStart` | `items`, `passives` | 14 |
-| `BonusAbility` | `items`, `passives` | 13 |
+| `AddLevelUpRerolls` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 14 |
+| `AllStatsUp` | `characters`, `items`, `mutations`, `passives` | 14 |
+| `ExtraBasicAttacks` | `items`, `mutations`, `passives` | 14 |
+| `ReflectProjectiles` | `characters`, `elite_buffs.gon`, `items`, `mutations` | 14 |
 | `AbilityHealthThreshold` | `characters`, `items` | 13 |
+| `AddStatusToAllDamage` | `item_setbonuses.gon`, `items`, `passives` | 13 |
+| `Bleed` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 13 |
+| `BonusAbility` | `items`, `passives` | 13 |
+| `DeathRattleRevive` | `characters`, `item_setbonuses.gon`, `items` | 13 |
+| `PassiveAtStatThreshold` | `item_setbonuses.gon`, `items`, `passives` | 13 |
+| `AlphaTurns` | `characters`, `items`, `mutations`, `passives` | 12 |
 | `AmplifyStatus` | `items`, `passives` | 12 |
-| `AddStatusToBasicMeleeAttack` | `mutations`, `passives` | 11 |
-| `EliteFlatTint` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 11 |
-| `CritsApplyStatus` | `items`, `passives` | 11 |
+| `BackstabImmunity` | `characters`, `item_setbonuses.gon`, `mutations`, `passives` | 12 |
+| `Bruise` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 12 |
+| `IgnoreTiles` | `characters`, `items`, `mutations`, `passives` | 12 |
+| `MoveWhenDamaged` | `characters`, `mutations`, `passives` | 12 |
+| `PoisonThorns` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 12 |
+| `AddBonusMeleeRange` | `items`, `mutations`, `passives` | 11 |
 | `AddSelfStatusToBasicAttack` | `items`, `passives` | 11 |
-| `LimitDamage` | `characters`, `passives` | 10 |
-| `ReplaceBasicAttack` | `items`, `passives` | 10 |
+| `AddStatusToBasicMeleeAttack` | `mutations`, `passives` | 11 |
+| `CritsApplyStatus` | `items`, `passives` | 11 |
+| `EliteFlatTint` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 11 |
+| `MoveTowardsDamageSource` | `characters`, `elite_buffs.gon`, `items`, `passives` | 11 |
+| `Quivered` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 11 |
+| `SpawnOnBattleStartRandomEmptyTile` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 11 |
+| `StatusOnKillEnemy` | `item_setbonuses.gon`, `items`, `passives` | 11 |
+| `AddTag` | `characters`, `items`, `passives` | 10 |
+| `DepressionAura` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `items`, `mutations`, `passives` | 10 |
+| `Electric` | `characters`, `item_setbonuses.gon`, `mutations`, `passives` | 10 |
 | `EquipTemporaryItem` | `mutations`, `passives` | 10 |
 | `ExtraWeaponAttacks` | `items`, `passives` | 10 |
+| `Flying` | `characters`, `item_setbonuses.gon`, `items`, `passives` | 10 |
+| `LimitDamage` | `characters`, `passives` | 10 |
+| `MovementReaction` | `characters`, `items`, `passives` | 10 |
+| `ReplaceBasicAttack` | `items`, `passives` | 10 |
+| `StatusAlliesOnBattleStart` | `item_setbonuses.gon`, `items`, `passives` | 10 |
+| `StatusOnEndMove` | `characters`, `items`, `mutations`, `passives` | 10 |
+| `TrinketPassiveMultiplierBonus` | `item_setbonuses.gon`, `items`, `passives` | 10 |
+| `AddDamageToElementDamage` | `items`, `mutations`, `passives` | 9 |
 | `BoostHeals` | `items`, `passives` | 9 |
-| `SmallRockBehavior` | `characters`, `passives` | 9 |
+| `BoostWeaponDamage` | `items`, `mutations`, `passives` | 9 |
+| `ChanceToRevive` | `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 9 |
+| `Food` | `characters`, `items`, `passives` | 9 |
 | `LimitHeal` | `characters`, `passives` | 9 |
+| `ManaCostReduction` | `items`, `mutations`, `passives` | 9 |
+| `PassiveAtHealthThreshold` | `item_setbonuses.gon`, `items`, `passives` | 9 |
+| `SmallRockBehavior` | `characters`, `passives` | 9 |
+| `StatusOnDie` | `characters`, `elite_buffs.gon`, `items`, `mutations` | 9 |
+| `StatusOnTookDamageFromAbility` | `characters`, `mutations`, `passives` | 9 |
+| `Water` | `characters`, `mutations`, `passives` | 9 |
 | `YOffset` | `characters`, `mutations` | 9 |
+| `AddInitiative` | `characters`, `items`, `mutations`, `passives` | 8 |
+| `AddKnockbackDamage` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 8 |
+| `AddStatusToWeapons` | `characters`, `items`, `passives` | 8 |
+| `DebuffImmunity` | `characters`, `items`, `passives` | 8 |
+| `ExtraMovePoints` | `characters`, `items`, `passives` | 8 |
+| `KnockbackImmunity` | `characters`, `item_setbonuses.gon`, `items`, `mutations`, `passives` | 8 |
+| `MoveOne` | `characters`, `elite_buffs.gon`, `items`, `passives` | 8 |
+| `NonStackingShield` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 8 |
+| `PermanentMadness` | `characters`, `elite_buffs.gon`, `item_setbonuses.gon`, `items`, `passives` | 8 |
+| `SecurityBotProtect` | `characters`, `passives` | 8 |
+| `SetSpellCosts` | `characters`, `items`, `passives` | 8 |
+| `SpawnOnDowned` | `items`, `mutations` | 8 |
 | `StatusAlliesOnDeath` | `items`, `passives` | 8 |
 | `StatusEachRoundBegin` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 8 |
-| `NonStackingShield` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 8 |
-| `SpawnOnDowned` | `items`, `mutations` | 8 |
-| `SecurityBotProtect` | `characters`, `passives` | 8 |
-| `SetFragileImmune` | `item_setbonuses.gon`, `items` | 7 |
-| `PassiveWhenOnTile` | `item_setbonuses.gon`, `items` | 7 |
-| `OverrideMaxHealth` | `characters`, `passives` | 7 |
+| `StatusEveryXSpellCasts` | `items`, `mutations`, `passives` | 8 |
+| `StatusIfUnusedMovePoints` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 8 |
+| `StatusOnCastSpell` | `items`, `mutations`, `passives` | 8 |
+| `TileTrail` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `passives` | 8 |
+| `AddTemporaryEffectsToBasicAttack` | `characters`, `items`, `mutations`, `passives` | 7 |
+| `AutocastEachRound` | `characters`, `item_setbonuses.gon`, `passives` | 7 |
+| `Burn` | `characters`, `items`, `passives` | 7 |
+| `ClassManaCostReduction` | `item_setbonuses.gon`, `items`, `mutations`, `passives` | 7 |
+| `DodgeChance_Status` | `characters`, `items`, `mutations` | 7 |
+| `MinimumKnockbackFromAllDamage` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon` | 7 |
 | `OverrideBasicAttack` | `items`, `passives` | 7 |
-| `MoveQuivered` | `items`, `passives` | 6 |
+| `OverrideMaxHealth` | `characters`, `passives` | 7 |
+| `PassiveWhenOnTile` | `item_setbonuses.gon`, `items` | 7 |
+| `SetFragileImmune` | `item_setbonuses.gon`, `items` | 7 |
+| `SpeedUp` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon`, `passives` | 7 |
+| `AddHiddenTag` | `characters`, `items`, `passives` | 6 |
 | `AddStatusToElementDamage` | `items`, `passives` | 6 |
+| `BackstabCritChance` | `item_setbonuses.gon`, `items`, `passives` | 6 |
 | `BasicJump` | `items`, `mutations` | 6 |
-| `PassiveWhileHasStatus` | `characters`, `mutations` | 6 |
-| `SpawnObjectOnPopCorpse` | `items`, `passives` | 6 |
-| `SetBrittleImmune` | `item_setbonuses.gon`, `items` | 6 |
-| `LevelUpClassOverride` | `items`, `passives` | 6 |
-| `IncreaseExplosionDamage` | `items`, `passives` | 6 |
 | `BeefyCharmedLeech` | `item_setbonuses.gon`, `passives` | 6 |
-| `CatchProjectiles` | `items`, `passives` | 5 |
-| `AmplifyKnockback` | `items`, `passives` | 5 |
-| `StatusOnTurnEndIfCastNSpells` | `item_setbonuses.gon`, `passives` | 5 |
+| `ChanceToBackflip` | `characters`, `items`, `mutations`, `passives` | 6 |
+| `DelayedAutoRevive` | `characters`, `item_setbonuses.gon`, `items` | 6 |
+| `FaceShield` | `characters`, `items`, `passives` | 6 |
+| `FreezePiercing` | `item_setbonuses.gon`, `items`, `passives` | 6 |
+| `IncreaseExplosionDamage` | `items`, `passives` | 6 |
+| `InjuryImmunity` | `characters`, `items`, `passives` | 6 |
+| `LevelUpClassOverride` | `items`, `passives` | 6 |
+| `MoveQuivered` | `items`, `passives` | 6 |
+| `PassiveWhileHasStatus` | `characters`, `mutations` | 6 |
+| `SetBrittleImmune` | `item_setbonuses.gon`, `items` | 6 |
+| `SpawnObjectOnPopCorpse` | `items`, `passives` | 6 |
+| `StatusOnAllyCatDeath` | `items`, `mutations`, `passives` | 6 |
+| `StatusOnGainCoins` | `characters`, `items`, `passives` | 6 |
+| `StunImmunity` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon` | 6 |
+| `TrinketActiveEffectsMultiplierBonus` | `item_setbonuses.gon`, `items`, `passives` | 6 |
+| `AbilityWhenTaggedCharacterMovesNear` | `characters`, `mutations`, `passives` | 5 |
 | `AddPassivesToCharmed` | `items`, `passives` | 5 |
-| `PassiveWhenAtFullMana` | `mutations`, `passives` | 5 |
-| `StatusOnPopCorpse` | `items`, `passives` | 5 |
+| `AmplifyKnockback` | `items`, `passives` | 5 |
+| `BlacklistPickupType` | `mutations`, `passives` | 5 |
+| `CatchProjectiles` | `items`, `passives` | 5 |
+| `Confusion` | `items`, `mutations` | 5 |
+| `DisableAbilitiesWithTag` | `mutations`, `passives` | 5 |
+| `ElementalManaCostReduction` | `items`, `passives` | 5 |
+| `ExtraStatusWhenDealingDamage` | `items`, `passives` | 5 |
+| `food` | `characters`, `mutations`, `passives` | 5 |
+| `FreePathfindElement` | `characters`, `mutations`, `passives` | 5 |
 | `HeadArmorPassiveMultiplierBonus` | `items`, `passives` | 5 |
 | `IncreaseExplosionSize` | `items`, `passives` | 5 |
-| `BlacklistPickupType` | `mutations`, `passives` | 5 |
 | `MakeSpellsRequireCharge` | `items`, `passives` | 5 |
-| `ElementalManaCostReduction` | `items`, `passives` | 5 |
-| `Confusion` | `items`, `mutations` | 5 |
-| `ExtraStatusWhenDealingDamage` | `items`, `passives` | 5 |
+| `PassiveWhenAtFullMana` | `mutations`, `passives` | 5 |
 | `SharkySmellsBlood` | `characters`, `items` | 5 |
 | `StatusKilledCharacters` | `mutations`, `passives` | 5 |
-| `DisableAbilitiesWithTag` | `mutations`, `passives` | 5 |
-| `StatusOnBreakItem` | `items`, `passives` | 4 |
-| `Jester` | `items`, `passives` | 4 |
-| `CreepTile` | `characters`, `elite_buffs.gon` | 4 |
+| `StatusOnEatFood` | `items`, `mutations`, `passives` | 5 |
+| `StatusOnPopCorpse` | `items`, `passives` | 5 |
+| `StatusOnTurnEndIfCastNSpells` | `item_setbonuses.gon`, `passives` | 5 |
+| `StatusOnTurnEndIfDidntCastAbilityTypes` | `item_setbonuses.gon`, `items`, `passives` | 5 |
+| `AddStatusToSpells` | `characters`, `items`, `passives` | 4 |
 | `AllyDamageReduction` | `items`, `passives` | 4 |
-| `PassiveWhenDead` | `characters`, `items` | 4 |
-| `RandomPassivePool` | `characters`, `passives` | 4 |
-| `SpawnCatCopyOnBattleStart` | `item_setbonuses.gon`, `passives` | 4 |
-| `KillsToMeat` | `items`, `passives` | 4 |
-| `StatusAfterCastSpell` | `items`, `passives` | 4 |
-| `rock` | `items`, `passives` | 4 |
-| `bug` | `item_setbonuses.gon`, `items` | 4 |
-| `SpawnExtraThingsOnBattleStart` | `items`, `mutations` | 4 |
-| `ShowHiddenThings` | `mutations`, `passives` | 4 |
-| `ChanceToBlockAndCounter` | `items`, `passives` | 4 |
-| `WeaponsDontLoseDurability` | `characters`, `passives` | 4 |
 | `ApplyStatusesToRandomEnemiesEachTurn` | `items`, `passives` | 4 |
-| `DisableAbilities` | `items`, `passives` | 4 |
-| `FaceArmorPassiveMultiplierBonus` | `items`, `passives` | 4 |
+| `AutoEquipConsumables` | `item_setbonuses.gon`, `items`, `passives` | 4 |
 | `Blind` | `items`, `mutations` | 4 |
-| `ProtectTargetedAllies` | `characters`, `passives` | 4 |
-| `RangedTrueShot` | `items`, `passives` | 4 |
+| `BuffImmunity` | `characters`, `items`, `passives` | 4 |
+| `bug` | `item_setbonuses.gon`, `items` | 4 |
+| `ChanceToBlockAndCounter` | `items`, `passives` | 4 |
+| `CreepTile` | `characters`, `elite_buffs.gon` | 4 |
+| `DamageNeighborsAfterMove` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `passives` | 4 |
+| `DisableAbilities` | `items`, `passives` | 4 |
 | `ExtraDispersedTurns` | `characters`, `elite_buffs.gon` | 4 |
+| `FaceArmorPassiveMultiplierBonus` | `items`, `passives` | 4 |
+| `FlowersOnEndTurn` | `item_setbonuses.gon`, `items`, `passives` | 4 |
+| `IncreaseSpellRange` | `item_setbonuses.gon`, `items`, `passives` | 4 |
+| `Jester` | `items`, `passives` | 4 |
+| `KillsToMeat` | `items`, `passives` | 4 |
+| `PassiveAfterXKills` | `item_setbonuses.gon`, `items`, `passives` | 4 |
+| `PassiveWhenDead` | `characters`, `items` | 4 |
+| `Poop` | `items`, `mutations`, `passives` | 4 |
+| `PoopWhenHit` | `items`, `mutations`, `passives` | 4 |
+| `ProtectTargetedAllies` | `characters`, `passives` | 4 |
+| `RandomPassivePool` | `characters`, `passives` | 4 |
+| `RangedTrueShot` | `items`, `passives` | 4 |
+| `rock` | `items`, `passives` | 4 |
+| `ShowHiddenThings` | `mutations`, `passives` | 4 |
+| `SpawnCatCopyOnBattleStart` | `item_setbonuses.gon`, `passives` | 4 |
+| `SpawnExtraThingsOnBattleStart` | `items`, `mutations` | 4 |
+| `StatusAfterCastSpell` | `items`, `passives` | 4 |
+| `StatusOnBreakItem` | `items`, `passives` | 4 |
 | `StatusOnHealed` | `items`, `passives` | 4 |
 | `TauntAlways` | `items`, `passives` | 4 |
-| `DoubleCastWeapons` | `items`, `passives` | 3 |
-| `UncappedHP` | `characters`, `passives` | 3 |
-| `Mage` | `mutations`, `passives` | 3 |
-| `StrengthUp` | `characters`, `passives` | 3 |
-| `MoveAndUseAbilityEachTurnBeginIfPossible` | `items`, `passives` | 3 |
-| `StatusEachTurnEndForEachTurn` | `items`, `passives` | 3 |
-| `Lava_Distortion` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 3 |
-| `RemoveLineOfSightRestrictions` | `items`, `passives` | 3 |
-| `StatusOnUseBasicAttack` | `items`, `passives` | 3 |
-| `InfiniteRebirth` | `characters`, `passives` | 3 |
-| `NeckArmorPassiveMultiplierBonus` | `items`, `passives` | 3 |
-| `HouseFoodRequirementMultiplier` | `mutations`, `passives` | 3 |
-| `CCImmunity` | `characters`, `passives` | 3 |
-| `BouncyProjectiles` | `items`, `passives` | 3 |
-| `ConsumableEffectsMultiplierBonus` | `items`, `passives` | 3 |
-| `SharePickups` | `characters`, `passives` | 3 |
-| `BoomerCatExplode` | `characters`, `passives` | 3 |
-| `Eternal` | `items`, `passives` | 3 |
-| `SetDefaultFacePassive` | `items`, `passives` | 3 |
-| `ScaledStatusOnSpendMana` | `items`, `passives` | 3 |
-| `FlyDamageIncrease` | `items`, `passives` | 3 |
-| `BasicAttackCritChance` | `items`, `passives` | 3 |
-| `StatusOnCollectPickup` | `items`, `passives` | 3 |
-| `AddStatusToKnockbackDamage` | `items`, `passives` | 3 |
-| `Wind` | `characters`, `mutations` | 3 |
-| `Shadowstep` | `mutations`, `passives` | 3 |
-| `Hunter` | `mutations`, `passives` | 3 |
-| `StatusOnPickupCoins` | `items`, `passives` | 3 |
-| `StatusWhenAllySpendsMana` | `items`, `passives` | 3 |
+| `WeaponsDontLoseDurability` | `characters`, `passives` | 4 |
 | `AddSelfStatusToWeapons` | `items`, `passives` | 3 |
-| `WeaponDamageMultiplierBonus` | `items`, `passives` | 3 |
-| `TowerDefenseReflex` | `characters`, `passives` | 3 |
 | `AddStartingMana` | `item_setbonuses.gon`, `passives` | 3 |
-| `Thief` | `mutations`, `passives` | 3 |
-| `Vegan` | `mutations`, `passives` | 3 |
-| `GainExtraShield` | `items`, `passives` | 3 |
-| `ToadJump_BasicMove` | `mutations`, `passives` | 3 |
-| `musical` | `items`, `mutations` | 3 |
+| `AddStatusToKnockbackDamage` | `items`, `passives` | 3 |
 | `AddUnfilledMaxHealth` | `elite_buffs.gon`, `passives` | 3 |
+| `BasicAttackCritChance` | `items`, `passives` | 3 |
+| `BoomerCatExplode` | `characters`, `passives` | 3 |
+| `BouncyProjectiles` | `items`, `passives` | 3 |
+| `CanRemoveCursedItems` | `items`, `mutations`, `passives` | 3 |
+| `CCImmunity` | `characters`, `passives` | 3 |
 | `consumable` | `mutations`, `passives` | 3 |
-| `SpawnCreepOnHit` | `characters`, `passives` | 3 |
-| `int` | `items`, `passives` | 3 |
+| `ConsumableEffectsMultiplierBonus` | `items`, `passives` | 3 |
+| `DoubleCastWeapons` | `items`, `passives` | 3 |
+| `Eternal` | `items`, `passives` | 3 |
+| `ExtraBasicMoves_Status` | `item_setbonuses.gon`, `items`, `passives` | 3 |
 | `Fighter` | `mutations`, `passives` | 3 |
-| `UpgradeSpawnedPickups` | `item_setbonuses.gon`, `passives` | 3 |
+| `FireTile` | `boss_elite_buffs.gon`, `characters`, `elite_buffs.gon` | 3 |
+| `FlyDamageIncrease` | `items`, `passives` | 3 |
+| `GainExtraShield` | `items`, `passives` | 3 |
+| `HouseFoodRequirementMultiplier` | `mutations`, `passives` | 3 |
+| `Hunter` | `mutations`, `passives` | 3 |
+| `InfiniteRebirth` | `characters`, `passives` | 3 |
+| `int` | `items`, `passives` | 3 |
+| `Lava_Distortion` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 3 |
+| `LuckUp` | `boss_elite_buffs.gon`, `elite_buffs.gon`, `items` | 3 |
+| `Mage` | `mutations`, `passives` | 3 |
+| `MoveAndUseAbilityEachTurnBeginIfPossible` | `items`, `passives` | 3 |
+| `MoveAwayFromDamageSource` | `characters`, `mutations`, `passives` | 3 |
+| `musical` | `items`, `mutations` | 3 |
+| `NeckArmorPassiveMultiplierBonus` | `items`, `passives` | 3 |
 | `PassiveWhileInMonkMeleeStance` | `items`, `passives` | 3 |
-| `pills` | `item_setbonuses.gon`, `mutations` | 2 |
-| `ExplosionImmunity` | `items`, `passives` | 2 |
-| `MakeBasicAttackPull` | `items`, `mutations` | 2 |
-| `StatusEachRoundEnd` | `elite_buffs.gon`, `mutations` | 2 |
-| `HPGainBlock` | `items`, `passives` | 2 |
-| `NonStackingDivineShield` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
-| `StatusOnEatPill` | `item_setbonuses.gon`, `passives` | 2 |
-| `ConjureBonusAbility` | `characters`, `mutations` | 2 |
-| `Slow` | `mutations`, `passives` | 2 |
-| `all_items` | `items`, `passives` | 2 |
-| `Holy` | `item_setbonuses.gon`, `items` | 2 |
-| `AlphaCat` | `items`, `passives` | 2 |
-| `PassiveTar` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
-| `MoveSpeedMultiplier` | `items`, `passives` | 2 |
-| `ZombieCatFamiliar` | `items`, `passives` | 2 |
-| `WeaponPassiveMultiplierBonus` | `item_setbonuses.gon`, `passives` | 2 |
-| `Phasing` | `characters`, `passives` | 2 |
-| `StatusAfterXTurns` | `characters`, `items` | 2 |
-| `CreateGlobalModifiers` | `characters`, `items` | 2 |
-| `BackflipWhenTargeted` | `items`, `mutations` | 2 |
-| `ExtraTrinketUses` | `items`, `passives` | 2 |
-| `GlobalManaBurnAura` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
-| `DoNothing` | `item_setbonuses.gon`, `items` | 2 |
-| `FindExtraItemFromPoolOnBattleEnd` | `item_setbonuses.gon`, `items` | 2 |
-| `BasicAttackCantMiss` | `items`, `mutations` | 2 |
-| `CapMovementAbilityRange` | `items`, `passives` | 2 |
-| `random` | `characters`, `mutations` | 2 |
-| `SpikeBuff` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
-| `PassiveEnergized` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
-| `SparkleBuff` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
-| `BellyFlop_BasicMove` | `items`, `passives` | 2 |
-| `EquipRandomTemporaryItemFromPool` | `mutations`, `passives` | 2 |
-| `red` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `RemoveLineOfSightRestrictions` | `items`, `passives` | 3 |
+| `ScaledStatusOnSpendMana` | `items`, `passives` | 3 |
+| `SetDefaultFacePassive` | `items`, `passives` | 3 |
+| `Shadowstep` | `mutations`, `passives` | 3 |
+| `SharePickups` | `characters`, `passives` | 3 |
+| `SpawnCreepOnHit` | `characters`, `passives` | 3 |
+| `StatusEachTurnEndForEachTurn` | `items`, `passives` | 3 |
+| `StatusOnCollectPickup` | `items`, `passives` | 3 |
+| `StatusOnPickupCoins` | `items`, `passives` | 3 |
+| `StatusOnUseBasicAttack` | `items`, `passives` | 3 |
+| `StatusWhenAllySpendsMana` | `items`, `passives` | 3 |
+| `StrengthUp` | `characters`, `passives` | 3 |
+| `Thief` | `mutations`, `passives` | 3 |
+| `ToadJump_BasicMove` | `mutations`, `passives` | 3 |
+| `TowerDefenseReflex` | `characters`, `passives` | 3 |
+| `UncappedHP` | `characters`, `passives` | 3 |
+| `UpgradeSpawnedPickups` | `item_setbonuses.gon`, `passives` | 3 |
+| `Vegan` | `mutations`, `passives` | 3 |
+| `WeaponDamageMultiplierBonus` | `items`, `passives` | 3 |
+| `Wind` | `characters`, `mutations` | 3 |
 | `AbsorbBuff` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `all_items` | `items`, `passives` | 2 |
+| `AlphaCat` | `items`, `passives` | 2 |
+| `BackflipWhenTargeted` | `items`, `mutations` | 2 |
+| `BasicAttackCantMiss` | `items`, `mutations` | 2 |
+| `BellyFlop_BasicMove` | `items`, `passives` | 2 |
+| `CapMovementAbilityRange` | `items`, `passives` | 2 |
+| `ConjureBonusAbility` | `characters`, `mutations` | 2 |
+| `CreateGlobalModifiers` | `characters`, `items` | 2 |
+| `DoNothing` | `item_setbonuses.gon`, `items` | 2 |
+| `EquipRandomTemporaryItemFromPool` | `mutations`, `passives` | 2 |
+| `ExplosionImmunity` | `items`, `passives` | 2 |
+| `ExtraTrinketUses` | `items`, `passives` | 2 |
+| `FindExtraItemFromPoolOnBattleEnd` | `item_setbonuses.gon`, `items` | 2 |
+| `GlobalManaBurnAura` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `Holy` | `item_setbonuses.gon`, `items` | 2 |
+| `HPGainBlock` | `items`, `passives` | 2 |
+| `MakeBasicAttackPull` | `items`, `mutations` | 2 |
+| `MoveSpeedMultiplier` | `items`, `passives` | 2 |
+| `NonStackingDivineShield` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `PassiveEnergized` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `PassiveTar` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `Phasing` | `characters`, `passives` | 2 |
+| `pills` | `item_setbonuses.gon`, `mutations` | 2 |
+| `random` | `characters`, `mutations` | 2 |
+| `red` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `Slow` | `mutations`, `passives` | 2 |
+| `SparkleBuff` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `SpikeBuff` | `boss_elite_buffs.gon`, `elite_buffs.gon` | 2 |
+| `StatusAfterXTurns` | `characters`, `items` | 2 |
+| `StatusEachRoundEnd` | `elite_buffs.gon`, `mutations` | 2 |
+| `StatusOnEatPill` | `item_setbonuses.gon`, `passives` | 2 |
 | `WeaponActiveEffectsMultiplierBonus` | `item_setbonuses.gon`, `passives` | 2 |
+| `WeaponPassiveMultiplierBonus` | `item_setbonuses.gon`, `passives` | 2 |
+| `ZombieCatFamiliar` | `items`, `passives` | 2 |
+| Property | Categories | Total Uses |
 
 ### Truly Exclusive Properties (one category only)
 
@@ -325,8 +325,8 @@ Three tiers are used:
 
 #### `characters` (418 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `FormChanger` | 106 |
 | `RandomArmorPickup` | 56 |
 | `FormChangeWhileHasStatus` | 35 |
@@ -748,8 +748,8 @@ Three tiers are used:
 
 #### `elite_buffs.gon` (10 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `ToxicBubbles` | 1 |
 | `NonChampionFlySwarm` | 1 |
 | `SmokeBuff` | 1 |
@@ -763,8 +763,8 @@ Three tiers are used:
 
 #### `item_setbonuses.gon` (28 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `SpawnCatCopyWhenDowned` | 2 |
 | `Paper` | 2 |
 | `StatusOnSetPieceBreak` | 2 |
@@ -796,8 +796,8 @@ Three tiers are used:
 
 #### `items` (156 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `Brittle` | 24 |
 | `Fragile` | 22 |
 | `StatusOnBreak` | 22 |
@@ -957,8 +957,8 @@ Three tiers are used:
 
 #### `mutations` (21 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `CharmedKitten` | 4 |
 | `ReplaceBasicMove_Mutation` | 3 |
 | `CharmedFly` | 3 |
@@ -983,8 +983,8 @@ Three tiers are used:
 
 #### `passives` (354 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `PassiveLevelUpAtCombatEnd` | 10 |
 | `ForceSpecificInjury` | 8 |
 | `StatusOnCrit` | 8 |
@@ -1342,8 +1342,8 @@ Three tiers are used:
 
 #### `tutorial_cats.gon` (3 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `passive0` | 2 |
 | `HotBlooded` | 1 |
 | `SelfAssured` | 1 |
@@ -1362,50 +1362,50 @@ Three tiers are used:
 
 ### Partially Shared Properties
 
-| Property | Categories | Total Uses |
 | :--- | :--- | :---: |
-| `Burn` | `abilities`, `boss_elite_buffs.gon`, `characters`, `items`, `passives`, `weather.gon` | 90 |
-| `VisualFXTile` | `abilities`, `boss_elite_buffs.gon`, `elite_buffs.gon`, `items`, `passives` | 36 |
-| `WaterConduct` | `abilities`, `boss_elite_buffs.gon`, `elite_buffs.gon`, `items`, `passives` | 15 |
 | `Stun` | `abilities`, `characters`, `items`, `passives` | 99 |
+| `Burn` | `abilities`, `boss_elite_buffs.gon`, `characters`, `items`, `passives`, `weather.gon` | 90 |
 | `Bruise` | `abilities`, `item_setbonuses.gon`, `items`, `passives` | 80 |
-| `Confusion` | `abilities`, `characters`, `items`, `mutations` | 39 |
-| `Fear` | `abilities`, `items`, `mutations`, `passives` | 32 |
-| `Blind` | `abilities`, `items`, `mutations`, `weather.gon` | 25 |
 | `Poison` | `abilities`, `items`, `passives` | 70 |
-| `Slow` | `abilities`, `items`, `passives` | 30 |
-| `Immobile` | `abilities`, `items`, `passives` | 25 |
-| `Charmed` | `abilities`, `mutations`, `passives` | 23 |
-| `Freeze` | `abilities`, `items`, `passives` | 20 |
-| `Petrify` | `abilities`, `mutations`, `passives` | 16 |
-| `Tarred` | `abilities`, `boss_elite_buffs.gon`, `elite_buffs.gon` | 8 |
 | `Bleed` | `abilities`, `passives` | 56 |
+| `Confusion` | `abilities`, `characters`, `items`, `mutations` | 39 |
+| `VisualFXTile` | `abilities`, `boss_elite_buffs.gon`, `elite_buffs.gon`, `items`, `passives` | 36 |
 | `BounceObject` | `abilities`, `items` | 35 |
+| `Fear` | `abilities`, `items`, `mutations`, `passives` | 32 |
+| `Slow` | `abilities`, `items`, `passives` | 30 |
+| `Blind` | `abilities`, `items`, `mutations`, `weather.gon` | 25 |
+| `Immobile` | `abilities`, `items`, `passives` | 25 |
 | `Weakness` | `abilities`, `passives` | 24 |
+| `Charmed` | `abilities`, `mutations`, `passives` | 23 |
 | `ConstitutionUp` | `abilities`, `characters` | 22 |
 | `Vaporize` | `abilities`, `characters` | 21 |
+| `Freeze` | `abilities`, `items`, `passives` | 20 |
 | `Madness` | `abilities`, `passives` | 20 |
-| `Leeches` | `abilities`, `passives` | 14 |
+| `Petrify` | `abilities`, `mutations`, `passives` | 16 |
+| `WaterConduct` | `abilities`, `boss_elite_buffs.gon`, `elite_buffs.gon`, `items`, `passives` | 15 |
 | `Conditional_GoodRoll` | `abilities`, `items` | 14 |
+| `Leeches` | `abilities`, `passives` | 14 |
 | `RandomStatusFromPool` | `abilities`, `mutations` | 14 |
-| `Thorns` | `abilities`, `characters` | 12 |
 | `Cleave` | `abilities`, `items` | 12 |
-| `VisualFX` | `abilities`, `items` | 10 |
+| `Thorns` | `abilities`, `characters` | 12 |
 | `Marked` | `abilities`, `passives` | 10 |
+| `VisualFX` | `abilities`, `items` | 10 |
 | `Grappled` | `abilities`, `items` | 8 |
 | `SpreadDisease` | `abilities`, `passives` | 8 |
+| `Tarred` | `abilities`, `boss_elite_buffs.gon`, `elite_buffs.gon` | 8 |
 | `BurnTrigger` | `abilities`, `passives` | 5 |
 | `Holy` | `abilities`, `weather.gon` | 3 |
-| `VisualFlySwarm` | `abilities`, `weather.gon` | 2 |
 | `Bolt` | `abilities`, `items` | 2 |
 | `CharmedDip` | `abilities`, `items` | 2 |
+| `VisualFlySwarm` | `abilities`, `weather.gon` | 2 |
+| Property | Categories | Total Uses |
 
 ### Truly Exclusive Properties (one category only)
 
 #### `abilities` (674 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `FormChange` | 102 |
 | `IgnoreSelf` | 75 |
 | `ChangeTile` | 62 |
@@ -2085,8 +2085,8 @@ Three tiers are used:
 
 #### `characters` (1 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `BlackHoleSuck` | 1 |
 
 #### `elite_buffs.gon` — no truly exclusive properties
@@ -2095,22 +2095,22 @@ Three tiers are used:
 
 #### `items` (1 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `RandomPickup` | 3 |
 
 #### `mutations` — no truly exclusive properties
 
 #### `passives` (1 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `IcePoof` | 4 |
 
 #### `weather.gon` (42 truly exclusive)
 
-| Property | Count |
 | :--- | :---: |
+| Property | Count |
 | `SpawnExtraThingsOnBattleStart` | 28 |
 | `Windy` | 4 |
 | `LowerAmbientLight` | 4 |

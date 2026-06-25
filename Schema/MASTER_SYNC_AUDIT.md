@@ -4,8 +4,8 @@
 
 These contexts exist in a split file but have no matching entry in Master.
 
-| Split File | Context Name |
 | :--- | :--- |
+| Split File | Context Name |
 | `Combat_Rewards.md` | `1` |
 | `Combat_Rewards.md` | `2` |
 | `Combat_Rewards.md` | `3` |

@@ -15,22 +15,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`ability_pool`](./Arrays.md#array-ability_pool) | Array | Examples: `[ HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate Sk..., [ Propell Hadou...` | 14 |
-| [`attack_pool`](./Arrays.md#array-attack_pool) | Array | Examples: `[ BasicButcherMelee ], [ BasicDruidAbility ], [ BasicMonkMelee ]` | 14 |
 | [`graphics`](./Cat_Classes.md#object-graphics) | Object | Examples: `{ ... }` | 5218 |
-| [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array | Examples: `[ int str lck ], [ con str lck ], [ cha int str ]` | 14 |
 | [`meta`](./Cat_Classes.md#object-meta) | Object | Examples: `{ ... }` | 4719 |
-| [`passive_pool`](./Arrays.md#array-passive_pool) | Array | Examples: `[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutto..., [ SafeSwitching...` | 14 |
 | [`stat_mods`](./Cat_Classes.md#object-stat_mods) | Object | Examples: `{ ... }` | 26 |
 | [`ability_groups`](./Cat_Classes.md#object-ability_groups) | Object | Examples: `{ ... }` | 24 |
+| [`ability_pool`](./Arrays.md#array-ability_pool) | Array | Examples: `[ HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate Sk..., [ Propell Hadou...` | 14 |
+| [`attack_pool`](./Arrays.md#array-attack_pool) | Array | Examples: `[ BasicButcherMelee ], [ BasicDruidAbility ], [ BasicMonkMelee ]` | 14 |
+| [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array | Examples: `[ int str lck ], [ con str lck ], [ cha int str ]` | 14 |
+| [`passive_pool`](./Arrays.md#array-passive_pool) | Array | Examples: `[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutto..., [ SafeSwitching...` | 14 |
 | [`starter_abilities`](./Arrays.md#array-starter_abilities) | Array | Examples: `[ SummonSquirrel SummonToad Encourage Protection SongOfSp..., [ Succ HogRush ...` | 12 |
+| [`innate_passives`](./Cat_Classes.md#object-innate_passives) | Object | Examples: `{ ... }` | 8 |
 | [`complicated_abilities`](./Arrays.md#array-complicated_abilities) | Array | Examples: `[ FalconPunch Exert Challenge Stoopzerk Grapple ThinkTooH..., [ DealWithTheDe...` | 6 |
 | [`complicated_passives`](./Arrays.md#array-complicated_passives) | Array | Examples: `[ ElementalAttunement LatentEnergy MagicGuru One Two Four..., [ ShoulderCheck...` | 6 |
-| [`innate_passives`](./Cat_Classes.md#object-innate_passives) | Object | Examples: `{ ... }` | 8 |
 | [`innate_items`](./Cat_Classes.md#object-innate_items) | Object | Examples: `{ ... }` | 4 |
 | [`move_pool`](./Arrays.md#array-move_pool) | Array | Examples: `[ DefaultMove ]` | 1 |
-| [`tutorial_levelup_active_pool_2`](./Arrays.md#array-tutorial_levelup_active_pool_2) | Array | Examples: `[ GainThorns ButtScoot Burst HireHitman ]` | 1 |
 | [`tutorial_levelup_active_pool`](./Arrays.md#array-tutorial_levelup_active_pool) | Array | Examples: `[ Block LickHeal Dump ]` | 1 |
+| [`tutorial_levelup_active_pool_2`](./Arrays.md#array-tutorial_levelup_active_pool_2) | Array | Examples: `[ GainThorns ButtScoot Burst HireHitman ]` | 1 |
 | [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array | Examples: `[ Furious PressurePoints LateBloomer ZenkaiBoost ]` | 1 |
 
 </details>
@@ -38,7 +38,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `graphics`
-
 
 
 **Definition:** Object defining visual animations and sequence timings.  
@@ -52,9 +51,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |
 | `palette` | Number |  | 66 |
 | [`portrait_face`](./Enums.md#enum-portrait_face) | Enum |  | 26 |
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array |  | 14 |
 | [`default_face`](./Enums.md#enum-default_face) | Enum |  | 2 |
 | `hud_palette` | Number |  | 2 |
 
@@ -63,7 +62,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `meta`
-
 
 
 **Definition:** Object defining UI display data (Name, Description, Icon).  
@@ -77,15 +75,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`description`](./Strings.md#string-description) | String | Examples: `"CAT_CLASS_DRUID_DESC", "CAT_CLASS_MONK_DESC", "CAT_CLASS_BUTCHER_DESC"` | 28 |
 | [`name`](./Strings.md#string-name) | String | Examples: `"CAT_CLASS_MONK_NAME", "CAT_CLASS_BUTCHER_NAME", "CAT_CLASS_DRUID_NAME"` | 3222 |
+| [`description`](./Strings.md#string-description) | String | Examples: `"CAT_CLASS_DRUID_DESC", "CAT_CLASS_MONK_DESC", "CAT_CLASS_BUTCHER_DESC"` | 28 |
 
 </details>
 
 ---
 
 ### Object: `stat_mods`
-
 
 
 **Definition:** Examples: `{ ... }`  
@@ -114,7 +111,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `ability_groups`
 
 
-
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 12
 
@@ -138,7 +134,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ### Object: `innate_passives`
 
 
-
 **Definition:** Examples: `{ ... }`  
 **Total Count:** 4
 
@@ -150,15 +145,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 | [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 0 |
 
 </details>
 
 ---
 
 ### Object: `innate_items`
-
 
 
 **Definition:** Examples: `{ ... }`  
@@ -180,7 +174,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 ---
 
 ### Object: `TinkererBasicAttackSwitching`
-
 
 
 **Definition:** Logic: Allows Tinkerer to swap basic attacks.  

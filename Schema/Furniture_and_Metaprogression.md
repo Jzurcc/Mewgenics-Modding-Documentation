@@ -2,7 +2,6 @@
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
 
-
 ## Furniture & Metaprogression
 
 > **Associated Files:** `data/furniture_effects.gon`
@@ -16,11 +15,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| [`set`](./Enums.md#enum-set) | Enum |  | 1504 |
 | `Comfort` | Integer | Applies or references the 'Comfort' effect/state. | 406 |
 | `Appeal` | Integer | Applies or references the 'Appeal' effect/state. | 338 |
 | `Stimulation` | Integer | Applies or references the 'Stimulation' effect/state. | 268 |
-| [`set`](./Enums.md#enum-set) | Enum |  | 1504 |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 | `Health` | Integer | Applies or references the 'Health' effect/state. | 67 |
 | `Evolution` | Integer | Applies or references the 'Evolution' effect/state. | 53 |
 | `can_be_rare` | Boolean |  | 10 |
@@ -30,6 +28,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `FightRisk` | Integer | Applies or references the 'FightRisk' effect/state. | 1 |
 | `FoodStorage` | Integer | Applies or references the 'FoodStorage' effect/state. | 1 |
 | `removed` | Boolean |  | 1 |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Object | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object.| 0 |
 
 </details>
 
